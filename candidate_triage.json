@@ -1,0 +1,1223 @@
+[
+  {
+    "app": "Salesforce",
+    "candidates": [
+      {
+        "url": "https://login.salesforce.com/",
+        "status": 200,
+        "possible_claim_context": {}
+      },
+      {
+        "url": "https://www.salesforce.com/in/?ir=1&bc=OTH",
+        "status": 200,
+        "possible_claim_context": {
+          "credential_gate": "t and easy to ground our agents in the right data and test as we went. We knew we could trust the outputs. Lashowna Dukes Senior Salesforce Administrator, Good360 Learn more Keep up with the latest in CRM with guides, research, and insights Guide The Beginner’s Guide to CRM The Beginner’s Guide to CRM Learn more Demo Experience Salesforce with an interactive demo Experie",
+          "official_mcp": "rchitecture. Explore Headless Toolkit Claudeforce Put Salesforce to work inside Claude. Salesforce in Claude combines a prebuilt Salesforce MCP server with 37 ready-to-use sales skills, from prospecting to pipeline hygiene — bringing Salesforce context and actions directly into Claude without complex setup. Explore Claudeforce Slackforce Turn Slack into a live, multip"
+        }
+      }
+    ],
+    "assessment": "unreviewed snippets; not claim evidence"
+  },
+  {
+    "app": "HubSpot",
+    "candidates": [
+      {
+        "url": "https://www.hubspot.com/",
+        "status": 200,
+        "possible_claim_context": {}
+      },
+      {
+        "url": "https://app.hubspot.com/login",
+        "status": 200,
+        "possible_claim_context": {}
+      }
+    ],
+    "assessment": "unreviewed snippets; not claim evidence"
+  },
+  {
+    "app": "Pipedrive",
+    "candidates": [
+      {
+        "url": "https://www.pipedrive.com/",
+        "status": 200,
+        "possible_claim_context": {
+          "credential_gate": "k your sales pipeline, optimize leads, manage deals with AI and automate your entire sales process so you can focus on selling. 14-day free trial, no credit card required Trusted by over 100,000 companies 500+ integrations to boost workflows Built-in AI to close deals faster GDPR compliant and secure Try it free Contact sales Enter your work email Try it free By "
+        }
+      },
+      {
+        "url": "https://partners.pipedrive.com/login",
+        "status": 200,
+        "possible_claim_context": {}
+      }
+    ],
+    "assessment": "unreviewed snippets; not claim evidence"
+  },
+  {
+    "app": "Attio",
+    "candidates": [],
+    "assessment": "unreviewed snippets; not claim evidence"
+  },
+  {
+    "app": "Twenty",
+    "candidates": [
+      {
+        "url": "https://twenty.com/",
+        "status": 200,
+        "possible_claim_context": {
+          "auth": "Does Twenty work with Claude, ChatGPT, and Cursor? Yes. Every Cloud workspace ships with a native MCP server. Connect your AI assistant via OAuth and it can read and write your CRM data in natural language. What does Twenty cost? Cloud Pro is $9/user/month and Organization is $39/user/month, billed yearly. Organization adds 5x more AI usage per member, custom rol",
+          "credential_gate": " on our managed cloud for a zero-ops setup. How long does it take to get started? Sign up for Cloud in under a minute and start your 30-day trial. For larger rollouts, our team can support you along the way. Reach out to discuss what you need. Can I migrate from Salesforce or HubSpot? Yes. Import your data via CSV, or use our API for 50,000+ records. Our partners",
+          "official_mcp": " TypeScript, deployable to any workspace. Does Twenty work with Claude, ChatGPT, and Cursor? Yes. Every Cloud workspace ships with a native MCP server. Connect your AI assistant via OAuth and it can read and write your CRM data in natural language. What does Twenty cost? Cloud Pro is $9/user/month and Organization is $39/user/month, billed yearly. Organization adds 5x"
+        }
+      },
+      {
+        "url": "https://twenty.com/product",
+        "status": 200,
+        "possible_claim_context": {
+          "auth": "Does Twenty work with Claude, ChatGPT, and Cursor? Yes. Every Cloud workspace ships with a native MCP server. Connect your AI assistant via OAuth and it can read and write your CRM data in natural language. What does Twenty cost? Cloud Pro is $9/user/month and Organization is $39/user/month, billed yearly. Organization adds 5x more AI usage per member, custom rol",
+          "credential_gate": " on our managed cloud for a zero-ops setup. How long does it take to get started? Sign up for Cloud in under a minute and start your 30-day trial. For larger rollouts, our team can support you along the way. Reach out to discuss what you need. Can I migrate from Salesforce or HubSpot? Yes. Import your data via CSV, or use our API for 50,000+ records. Our partners",
+          "official_mcp": " TypeScript, deployable to any workspace. Does Twenty work with Claude, ChatGPT, and Cursor? Yes. Every Cloud workspace ships with a native MCP server. Connect your AI assistant via OAuth and it can read and write your CRM data in natural language. What does Twenty cost? Cloud Pro is $9/user/month and Organization is $39/user/month, billed yearly. Organization adds 5x"
+        }
+      }
+    ],
+    "assessment": "unreviewed snippets; not claim evidence"
+  },
+  {
+    "app": "Podio",
+    "candidates": [
+      {
+        "url": "https://podio.com/login",
+        "status": 200,
+        "possible_claim_context": {}
+      },
+      {
+        "url": "https://www.podio.com/",
+        "status": 200,
+        "possible_claim_context": {
+          "credential_gate": "r systems of records Trigger actions across systems with API-first flexibility Generate pdf documents from templates Initiate signature and approval requests Automate email and SMS delivery using dynamic content Collaborate Real-time collaboration with comments, file sharing and mentions Shared workspaces among team members Client Access with free external licenses "
+        }
+      }
+    ],
+    "assessment": "unreviewed snippets; not claim evidence"
+  },
+  {
+    "app": "Zoho CRM",
+    "candidates": [
+      {
+        "url": "https://www.zoho.com/login.html",
+        "status": 200,
+        "possible_claim_context": {}
+      },
+      {
+        "url": "https://www.zoho.com/",
+        "status": 200,
+        "possible_claim_context": {}
+      }
+    ],
+    "assessment": "unreviewed snippets; not claim evidence"
+  },
+  {
+    "app": "Close",
+    "candidates": [
+      {
+        "url": "https://close.com/",
+        "status": 200,
+        "possible_claim_context": {
+          "credential_gate": "ra Whitfield Company Size 38 employees — Industry B2B Software — Funding Seed, $6M — Founded 2022 — Timeline November GTM launch — Services Paid media, creative — Expansion Ongoing services interest — Budget $50k/month — Meeting booked with Mara Whitfield · Tuesday, Aug 18 at 3:30 pm MW Event name: Demo with Orbitwell Event type: 15 minute demo JL Invitees: Jord"
+        }
+      }
+    ],
+    "assessment": "unreviewed snippets; not claim evidence"
+  },
+  {
+    "app": "Copper",
+    "candidates": [],
+    "assessment": "unreviewed snippets; not claim evidence"
+  },
+  {
+    "app": "DealCloud",
+    "candidates": [],
+    "assessment": "unreviewed snippets; not claim evidence"
+  },
+  {
+    "app": "Zendesk",
+    "candidates": [
+      {
+        "url": "https://www.zendesk.com/in/#georedirect",
+        "status": 200,
+        "possible_claim_context": {
+          "credential_gate": "ces Government Reliable support that serves every citizen Education Create better student experiences Manufacturing Strengthen customer and partner relationships Healthcare Build healthier patient experiences Telecommunications Improve retention with seamless support Resources Learn Customer stories Success stories from customers who love Zendesk Blog Content focus"
+        }
+      },
+      {
+        "url": "https://www.zendesk.com/in/login/#georedirect",
+        "status": 200,
+        "possible_claim_context": {
+          "credential_gate": " service. Watch now View demo Sign in to Zendesk yoursubdomain.zendesk.com .zendesk.com Forgot your subdomain? Sign in New here? Start free trial Sign in to Chat Sign in to Sell Sign in to Sunshine Conversations"
+        }
+      }
+    ],
+    "assessment": "unreviewed snippets; not claim evidence"
+  },
+  {
+    "app": "Intercom",
+    "candidates": [],
+    "assessment": "unreviewed snippets; not claim evidence"
+  },
+  {
+    "app": "Freshdesk",
+    "candidates": [
+      {
+        "url": "https://support.freshdesk.com/support/home",
+        "status": 200,
+        "possible_claim_context": {
+          "credential_gate": "ase notes Stay updated on new features and product changes. Subscribe to get alerts Sign up for Freshdesk Omni today Start your 14-day free trial. No credit card required. No strings attached! Start free trial"
+        }
+      },
+      {
+        "url": "https://support.freshdesk.com/support/solutions",
+        "status": 200,
+        "possible_claim_context": {
+          "credential_gate": "h popular business apps such as Quickbooks, Xero, and simplify your business tasks. Sign up for Freshdesk Omni today Start your 14-day free trial. No credit card required. No strings attached! Start free trial"
+        }
+      }
+    ],
+    "assessment": "unreviewed snippets; not claim evidence"
+  },
+  {
+    "app": "Front",
+    "candidates": [
+      {
+        "url": "https://front.com/",
+        "status": 200,
+        "possible_claim_context": {
+          "credential_gate": "endations on how to improve any agent, even the ones you've connected from other platforms. Enterprise-grade trust that'll get the stamp of approval from IT Your business runs on customer trust. Front helps you keep it with enterprise-ready security, encryption, and compliance certifications, plus top G2 reviews from the teams using it. AES-256 bit encryption and TL"
+        }
+      },
+      {
+        "url": "https://front.com/download",
+        "status": 200,
+        "possible_claim_context": {}
+      }
+    ],
+    "assessment": "unreviewed snippets; not claim evidence"
+  },
+  {
+    "app": "Pylon",
+    "candidates": [],
+    "assessment": "unreviewed snippets; not claim evidence"
+  },
+  {
+    "app": "LiveAgent",
+    "candidates": [],
+    "assessment": "unreviewed snippets; not claim evidence"
+  },
+  {
+    "app": "Plain",
+    "candidates": [
+      {
+        "url": "https://www.plain.com/",
+        "status": 200,
+        "possible_claim_context": {}
+      }
+    ],
+    "assessment": "unreviewed snippets; not claim evidence"
+  },
+  {
+    "app": "Help Scout",
+    "candidates": [],
+    "assessment": "unreviewed snippets; not claim evidence"
+  },
+  {
+    "app": "Gorgias",
+    "candidates": [],
+    "assessment": "unreviewed snippets; not claim evidence"
+  },
+  {
+    "app": "Gladly",
+    "candidates": [],
+    "assessment": "unreviewed snippets; not claim evidence"
+  },
+  {
+    "app": "Slack",
+    "candidates": [],
+    "assessment": "unreviewed snippets; not claim evidence"
+  },
+  {
+    "app": "Twilio",
+    "candidates": [],
+    "assessment": "unreviewed snippets; not claim evidence"
+  },
+  {
+    "app": "Zoho Cliq",
+    "candidates": [
+      {
+        "url": "https://www.zoho.com/login.html",
+        "status": 200,
+        "possible_claim_context": {}
+      },
+      {
+        "url": "https://www.zoho.com/",
+        "status": 200,
+        "possible_claim_context": {}
+      }
+    ],
+    "assessment": "unreviewed snippets; not claim evidence"
+  },
+  {
+    "app": "Lark (Larksuite)",
+    "candidates": [
+      {
+        "url": "https://www.larksuite.com/en_us/download",
+        "status": 200,
+        "possible_claim_context": {}
+      },
+      {
+        "url": "https://www.larksuite.com/messages",
+        "status": 200,
+        "possible_claim_context": {}
+      }
+    ],
+    "assessment": "unreviewed snippets; not claim evidence"
+  },
+  {
+    "app": "Pumble",
+    "candidates": [
+      {
+        "url": "https://pumble.com/",
+        "status": 200,
+        "possible_claim_context": {
+          "official_mcp": "ussions. Packed with Useful Features From integrations to security, Pumble has everything a modern team needs. Integrations External Guests MCP Server Voice Messages Video Messages Scheduling Permissions Analytics Integrations Integrate with different apps so you can collaborate from one place. Learn more External Guests Simplify the way you collaborate with external "
+        }
+      },
+      {
+        "url": "https://pumble.com/login?identifier=mail",
+        "status": 200,
+        "possible_claim_context": {}
+      }
+    ],
+    "assessment": "unreviewed snippets; not claim evidence"
+  },
+  {
+    "app": "Discord",
+    "candidates": [
+      {
+        "url": "https://discord.com/",
+        "status": 200,
+        "possible_claim_context": {}
+      },
+      {
+        "url": "https://discord.com/store",
+        "status": 200,
+        "possible_claim_context": {}
+      }
+    ],
+    "assessment": "unreviewed snippets; not claim evidence"
+  },
+  {
+    "app": "Telegram",
+    "candidates": [
+      {
+        "url": "https://telegram.org/",
+        "status": 200,
+        "possible_claim_context": {}
+      },
+      {
+        "url": "https://desktop.telegram.org/",
+        "status": 200,
+        "possible_claim_context": {}
+      }
+    ],
+    "assessment": "unreviewed snippets; not claim evidence"
+  },
+  {
+    "app": "WhatsApp Business",
+    "candidates": [],
+    "assessment": "unreviewed snippets; not claim evidence"
+  },
+  {
+    "app": "Aircall",
+    "candidates": [],
+    "assessment": "unreviewed snippets; not claim evidence"
+  },
+  {
+    "app": "Vonage",
+    "candidates": [
+      {
+        "url": "https://www.vonage.com/",
+        "status": 403,
+        "possible_claim_context": {}
+      },
+      {
+        "url": "https://www.vonage.com/log-in/",
+        "status": 403,
+        "possible_claim_context": {}
+      }
+    ],
+    "assessment": "unreviewed snippets; not claim evidence"
+  },
+  {
+    "app": "Google Ads",
+    "candidates": [
+      {
+        "url": "https://www.google.com/",
+        "status": 200,
+        "possible_claim_context": {}
+      }
+    ],
+    "assessment": "unreviewed snippets; not claim evidence"
+  },
+  {
+    "app": "Meta Ads",
+    "candidates": [
+      {
+        "url": "https://business.facebook.com/business/loginpage/?next=https%3A%2F%2Fbusiness.facebook.com%2F%3Fnav_ref%3Dbiz_unified_f3_login_page_to_mbs&login_options%5B0%5D=FB&login_options%5B1%5D=IG&login_options%5B2%5D=SSO&config_ref=biz_login_tool_flavor_mbs",
+        "status": 200,
+        "possible_claim_context": {}
+      },
+      {
+        "url": "https://www.facebook.com/Meta/home/",
+        "status": 200,
+        "possible_claim_context": {}
+      }
+    ],
+    "assessment": "unreviewed snippets; not claim evidence"
+  },
+  {
+    "app": "LinkedIn Ads",
+    "candidates": [],
+    "assessment": "unreviewed snippets; not claim evidence"
+  },
+  {
+    "app": "GoHighLevel",
+    "candidates": [],
+    "assessment": "unreviewed snippets; not claim evidence"
+  },
+  {
+    "app": "Mailchimp",
+    "candidates": [
+      {
+        "url": "https://mailchimp.com/?msockid=1760902a064362e7192c8830078f63fa",
+        "status": 200,
+        "possible_claim_context": {
+          "credential_gate": "r tool No thank you Customize my experience Businesses like yours are thriving with Mailchimp View all case studies Request demo Start Free Trial Try our Standard plan for 50% off ! Spend less to grow more with 50% off for 12 months, even if you change to our Premium or Essentials plans. Cancel or downgrade to our basic Free plan at any time. Enjoy 50% off for 12"
+        }
+      },
+      {
+        "url": "https://login.mailchimp.com/?msockid=1760902a064362e7192c8830078f63fa",
+        "status": 200,
+        "possible_claim_context": {}
+      }
+    ],
+    "assessment": "unreviewed snippets; not claim evidence"
+  },
+  {
+    "app": "Klaviyo",
+    "candidates": [
+      {
+        "url": "https://www.klaviyo.com/",
+        "status": 200,
+        "possible_claim_context": {
+          "credential_gate": "nsights and one-click execution. How much does Klaviyo cost? Is there a free plan? Yes. Klaviyo offers a free plan with core features , and paid plans scale based on the number of contacts and channel usage (such as email and SMS). Enterprise pricing is also available for large organizations with advanced needs. What integrations does Klaviyo offer? Klaviyo offe",
+          "official_mcp": "ptimizes interactions, and supports customers 24/7 with tools and agents that do the work for you. Explore AI Composer Customer Agent Remix MCP Server Service that solves and sells With service and marketing on one platform, your support team has all the data it needs for faster resolutions, smarter recommendations, and opportunities to upsell and build loyalty. Explo"
+        }
+      },
+      {
+        "url": "https://www.klaviyo.com/sso/login",
+        "status": 200,
+        "possible_claim_context": {}
+      }
+    ],
+    "assessment": "unreviewed snippets; not claim evidence"
+  },
+  {
+    "app": "systeme.io",
+    "candidates": [],
+    "assessment": "unreviewed snippets; not claim evidence"
+  },
+  {
+    "app": "Pinterest",
+    "candidates": [
+      {
+        "url": "https://www.pinterest.com/",
+        "status": 200,
+        "possible_claim_context": {}
+      },
+      {
+        "url": "https://www.pinterest.com/pinterest/",
+        "status": 200,
+        "possible_claim_context": {}
+      }
+    ],
+    "assessment": "unreviewed snippets; not claim evidence"
+  },
+  {
+    "app": "Threads (Meta)",
+    "candidates": [],
+    "assessment": "unreviewed snippets; not claim evidence"
+  },
+  {
+    "app": "SendGrid",
+    "candidates": [
+      {
+        "url": "https://www.twilio.com/en-us/sendgrid",
+        "status": 200,
+        "possible_claim_context": {
+          "credential_gate": "hevron English An icon of a checkmark French German Japanese Portuguese Spanish Support An icon of a down chevron Help Center Support Plans Partner Solutions Login An icon of a down chevron Log in to Twilio Console Conversations, Communications and Authentication Or log in to access: Twilio Segment Customer Data Platform Twilio SendGrid Email and Marketing Campaign"
+        }
+      },
+      {
+        "url": "https://app.sendgrid.com/",
+        "status": 200,
+        "possible_claim_context": {}
+      }
+    ],
+    "assessment": "unreviewed snippets; not claim evidence"
+  },
+  {
+    "app": "Shopify",
+    "candidates": [],
+    "assessment": "unreviewed snippets; not claim evidence"
+  },
+  {
+    "app": "WooCommerce",
+    "candidates": [
+      {
+        "url": "https://woocommerce.com/",
+        "status": 200,
+        "possible_claim_context": {
+          "credential_gate": " conversion by a whopping 35% — and boosted average order value . Read full case study “The Woo Customer Success team has been a tremendous partner of ours… Our numbers and conversion rates are skyrocketing right now as a result.” Peter Huh CIO and CTO, Nutribullet House of Malt: A double shot of success Now one of the top online sellers of alcohol in the UK, House"
+        }
+      },
+      {
+        "url": "https://woocommerce.com/?locale=en",
+        "status": 200,
+        "possible_claim_context": {}
+      }
+    ],
+    "assessment": "unreviewed snippets; not claim evidence"
+  },
+  {
+    "app": "BigCommerce",
+    "candidates": [],
+    "assessment": "unreviewed snippets; not claim evidence"
+  },
+  {
+    "app": "Salesforce Commerce Cloud",
+    "candidates": [
+      {
+        "url": "https://login.salesforce.com/",
+        "status": 200,
+        "possible_claim_context": {}
+      },
+      {
+        "url": "https://www.salesforce.com/in/?ir=1&bc=OTH",
+        "status": 200,
+        "possible_claim_context": {
+          "credential_gate": "t and easy to ground our agents in the right data and test as we went. We knew we could trust the outputs. Lashowna Dukes Senior Salesforce Administrator, Good360 Learn more Keep up with the latest in CRM with guides, research, and insights Guide The Beginner’s Guide to CRM The Beginner’s Guide to CRM Learn more Demo Experience Salesforce with an interactive demo Experie",
+          "official_mcp": "rchitecture. Explore Headless Toolkit Claudeforce Put Salesforce to work inside Claude. Salesforce in Claude combines a prebuilt Salesforce MCP server with 37 ready-to-use sales skills, from prospecting to pipeline hygiene — bringing Salesforce context and actions directly into Claude without complex setup. Explore Claudeforce Slackforce Turn Slack into a live, multip"
+        }
+      }
+    ],
+    "assessment": "unreviewed snippets; not claim evidence"
+  },
+  {
+    "app": "Magento (Adobe Commerce)",
+    "candidates": [],
+    "assessment": "unreviewed snippets; not claim evidence"
+  },
+  {
+    "app": "Squarespace",
+    "candidates": [
+      {
+        "url": "https://www.squarespace.com/",
+        "status": 200,
+        "possible_claim_context": {
+          "credential_gate": "ur Own Website — Squarespace Skip to Main Content → Log In undefined undefined Account Dashboard Domains Log Out Get started → Start a Free Trial → Products Website Websites → Website Templates → AI Website Builder → Design Intelligence → Ecommerce → Portfolios → Blogs → Analytics → Business Services → Online Stores → Invoicing → Scheduling → Limited Releases → C"
+        }
+      },
+      {
+        "url": "https://login.squarespace.com/api/1/login/oauth/provider/authorize?client_id=wAHMs0yNCd2CyyoI0Eclva4GmZ1qqRPx&redirect_uri=https%3A%2F%2Faccount.squarespace.com%2Foauth-connect&state=v2.local.PCAprKPw2EyFi3nyT8oAjTVZANmzN4gHuHSstov7Iuya_TC5iqYobuJjLc-uGVtnGWAbZI6bMG2aGSjR87deqZQpJXgF7w0PkTJeD0QhOa4Vju3GxNuJoqIN-cMykE_e7YXUa9lNdgTqNxp_nUsi1p7APUYAWeSZwVONsnkFze7iq2qiqkUKqJpgwcV1q0DIWsKcZmvW1gBkPPC9lLrd3YX0EVLu66WWZz5vyI5eMwGIW0xN&options=%7B%22isCloseVisible%22%3Afalse%2C%22isCreateAccountViewActive%22%3Afalse%7D&force_login=false",
+        "status": 200,
+        "possible_claim_context": {}
+      }
+    ],
+    "assessment": "unreviewed snippets; not claim evidence"
+  },
+  {
+    "app": "Ecwid",
+    "candidates": [
+      {
+        "url": "https://www.ecwid.com/login-sign-up",
+        "status": 200,
+        "possible_claim_context": {
+          "credential_gate": "ounts to my Ecwid store? As the store owner you can provide your staff members (fulfillment staff, theme designer, developer, etc.) or your partner with their personal login account to access your Ecwid admin panel. Each member you invite will have permission to manage your store, but will not be able to access your financial information or invite additional staff "
+        }
+      },
+      {
+        "url": "https://www.ecwid.com/",
+        "status": 200,
+        "possible_claim_context": {
+          "credential_gate": "Taxes don't have to be a hassle. Calculate tax rates automatically at checkout based on the store and customer's location in real-time. Get paid easily. Customers complete their purchases in your store, and your selected payment provider handles the processing and verification of funds before transferring them to your account. Automate shipping costs at checkout"
+        }
+      }
+    ],
+    "assessment": "unreviewed snippets; not claim evidence"
+  },
+  {
+    "app": "Gumroad",
+    "candidates": [
+      {
+        "url": "https://gumroad.com/",
+        "status": 200,
+        "possible_claim_context": {
+          "credential_gate": "law Log in Start selling Go from 0 to $1 Anyone can earn their first dollar online. Just start with what you know, see what sticks, and get paid. It's that easy. Start selling Search marketplace Contribute or fork on GitHub Sell anything Video lessons. Monthly subscriptions. Whatever! Gumroad was created to help you experiment with all kinds of ideas and formats"
+        }
+      },
+      {
+        "url": "https://gumroad.com/login",
+        "status": 200,
+        "possible_claim_context": {}
+      }
+    ],
+    "assessment": "unreviewed snippets; not claim evidence"
+  },
+  {
+    "app": "Amazon Selling Partner",
+    "candidates": [
+      {
+        "url": "https://www.amazon.com/",
+        "status": 202,
+        "possible_claim_context": {}
+      },
+      {
+        "url": "https://amc.amazon.com/ap/signin?openid.return_to=https%3A%2F%2Famc.amazon.com%2F&openid.identity=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&openid.assoc_handle=amzn_amcentral_us&openid.mode=checkid_setup&language=en_US&openid.claimed_id=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&openid.ns=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0",
+        "status": 200,
+        "possible_claim_context": {}
+      }
+    ],
+    "assessment": "unreviewed snippets; not claim evidence"
+  },
+  {
+    "app": "fanbasis",
+    "candidates": [],
+    "assessment": "unreviewed snippets; not claim evidence"
+  },
+  {
+    "app": "DataForSEO",
+    "candidates": [
+      {
+        "url": "https://dataforseo.com/",
+        "status": 200,
+        "possible_claim_context": {
+          "credential_gate": "ity Backlink Checker powered by fresh and robust data. See what features you can build with DataForSEO Backlinks API Twinword Wins 35% More Paid Customers After Switching To DataForSEO APIs Reputation Management tools help users keep track of online mentions, and monitor customer reviews on various platforms, such as Yelp and Google Business Profile. Check our d"
+        }
+      },
+      {
+        "url": "https://app.dataforseo.com/signin",
+        "status": 200,
+        "possible_claim_context": {}
+      }
+    ],
+    "assessment": "unreviewed snippets; not claim evidence"
+  },
+  {
+    "app": "SE Ranking",
+    "candidates": [],
+    "assessment": "unreviewed snippets; not claim evidence"
+  },
+  {
+    "app": "Ahrefs",
+    "candidates": [],
+    "assessment": "unreviewed snippets; not claim evidence"
+  },
+  {
+    "app": "MrScraper",
+    "candidates": [],
+    "assessment": "unreviewed snippets; not claim evidence"
+  },
+  {
+    "app": "Apify",
+    "candidates": [],
+    "assessment": "unreviewed snippets; not claim evidence"
+  },
+  {
+    "app": "Firecrawl",
+    "candidates": [
+      {
+        "url": "https://www.firecrawl.dev/",
+        "status": 200,
+        "possible_claim_context": {
+          "auth": "flows. You can also call the REST API directly from any language. All SDKs support search, scrape, interact, and crawl. Where can I find my API key? Click on the dashboard button on the top navigation menu when logged in and you will find your API key in the main screen and under API Keys. If you are an AI agent or coding assistant and your platform can mint a Work",
+          "credential_gate": "ify to Firecrawl because it benchmarked 50x faster with AgentOps.\" Pranav Pai Vernekar @ppv999 \"Finally upgraded my plan of @firecrawl to a paid plan. Totally worth it. One of the best products for your AI workflows.\" Tom - Morpho @TomReppelin \"I found gold today. Thank you @firecrawl \" Shaan Ali @kshaaneali \"quietly swapped the scraping layer to firecrawl today",
+          "api_surface": "able? Firecrawl has official SDKs for Python, Node.js, Go, Rust, Java, and Elixir, plus a CLI for terminal workflows. You can also call the REST API directly from any language. All SDKs support search, scrape, interact, and crawl. Where can I find my API key? Click on the dashboard button on the top navigation menu when logged in and you will find your API key in th",
+          "official_mcp": "e AI systems a complete way to understand and use the live web. Does Firecrawl work with AI agents and MCPs? Yes. Firecrawl has an official MCP server so agents in Cursor, Claude, Windsurf, and other MCP-compatible tools can search, scrape, and interact with the web directly. There's also a CLI for terminal workflows and agent skills for Claude Code and Codex that han"
+        }
+      },
+      {
+        "url": "https://www.firecrawl.dev/pricing",
+        "status": 200,
+        "possible_claim_context": {
+          "auth": " content after the request, on approved use cases. – Not available – Not available – Not available – Not available – Not available Included API key restrictions You can lock one key to the formats and endpoints you choose, and no request can override it. – Not available – Not available – Not available – Not available – Not available Included API key IP restrictions",
+          "credential_gate": "eep accessing web data with search and scrape when your credits run out. We add credits in 5 USD increments, up to a monthly limit you set. Paid plans only. Enable pay-as-you-go Pricing at a glance Credit unit 1 credit = 1 page on a basic scrape or crawl, and 1 credit per Map call. Search costs 2 credits per 10 results; Interact costs 2 credits per browser minut"
+        }
+      }
+    ],
+    "assessment": "unreviewed snippets; not claim evidence"
+  },
+  {
+    "app": "Bright Data",
+    "candidates": [],
+    "assessment": "unreviewed snippets; not claim evidence"
+  },
+  {
+    "app": "Sherlock",
+    "candidates": [],
+    "assessment": "unreviewed snippets; not claim evidence"
+  },
+  {
+    "app": "Waterfall.io",
+    "candidates": [],
+    "assessment": "unreviewed snippets; not claim evidence"
+  },
+  {
+    "app": "Clay",
+    "candidates": [],
+    "assessment": "unreviewed snippets; not claim evidence"
+  },
+  {
+    "app": "GitHub",
+    "candidates": [
+      {
+        "url": "https://github.com/education",
+        "status": 200,
+        "possible_claim_context": {
+          "credential_gate": "t Developer Pack From cloud hosting to development platforms and premium educational content, the Student Developer Pack includes dozens of partner offers and resources that will allow students to use professional tools at no cost. See the pack Community Discussions Have questions or need help? Join in on the conversation and meet fellow students and teachers all l"
+        }
+      },
+      {
+        "url": "https://cli.github.com/",
+        "status": 200,
+        "possible_claim_context": {
+          "official_mcp": "──────────────────────────────────────╯ ● Environment loaded: 2 custom instructions, 19 skills, 6 MCP servers, 4 plugins, 3 agents ● GitHub MCP Server: Connected gh issue list Showing 4 of 4 issues in cli/cli #16 Improving interactions with protected branches #14 PR commands on a detached head #13 Support for GitHub Enterprise (enhancement) #8 Add an easier upgrade co"
+        }
+      }
+    ],
+    "assessment": "unreviewed snippets; not claim evidence"
+  },
+  {
+    "app": "Vercel",
+    "candidates": [
+      {
+        "url": "https://vercel.com/",
+        "status": 200,
+        "possible_claim_context": {
+          "credential_gate": "rces Learn Docs About Blog Changelog Knowledge Base Build AI Apps Web Apps Marketing Sites Platforms Commerce Explore Customers Marketplace Partner Finder AWS Community ↗ Enterprise Pricing Get a Demo Log In Sign Up Drop to deploy Loading Agentic Infrastructure To ship apps and agents For coding agents For coding agents to ship apps and agents automated by agents. "
+        }
+      },
+      {
+        "url": "https://vercel.com/login",
+        "status": 200,
+        "possible_claim_context": {}
+      }
+    ],
+    "assessment": "unreviewed snippets; not claim evidence"
+  },
+  {
+    "app": "Netlify",
+    "candidates": [
+      {
+        "url": "https://www.netlify.com/",
+        "status": 200,
+        "possible_claim_context": {}
+      },
+      {
+        "url": "https://app.netlify.com/login",
+        "status": 200,
+        "possible_claim_context": {}
+      }
+    ],
+    "assessment": "unreviewed snippets; not claim evidence"
+  },
+  {
+    "app": "Cloudflare",
+    "candidates": [
+      {
+        "url": "https://www.cloudflare.com/",
+        "status": 200,
+        "possible_claim_context": {
+          "credential_gate": "k at every tier. You only pay for the depth your site needs. Visitor traffic Your site CDN DDoS SSL WAF Bot Same protection at every tier — paid plans add depth Free for hobby projects $0 /month Unmetered DDoS Universal SSL Global CDN See Free plan Pro for pro websites $20 /mo billed annually or $25/mo billed monthly Image optimization Bot protection Ticket supp"
+        }
+      },
+      {
+        "url": "https://dash.cloudflare.com/login",
+        "status": 403,
+        "possible_claim_context": {}
+      }
+    ],
+    "assessment": "unreviewed snippets; not claim evidence"
+  },
+  {
+    "app": "Supabase",
+    "candidates": [],
+    "assessment": "unreviewed snippets; not claim evidence"
+  },
+  {
+    "app": "Neo4j",
+    "candidates": [
+      {
+        "url": "https://neo4j.com/",
+        "status": 200,
+        "possible_claim_context": {
+          "credential_gate": "t Master data management Network & IT Real-time recommendations Supply chain PARTNERS AWS Databricks Google Cloud Microsoft Azure Snowflake Partner directory Become a partner Customer success stories Case studies, customer videos, proof points, and more Neo4j Startup Program Why Neo4j FOR EXECUTIVES Executive insights AI systems IDC business value study Business va",
+          "official_mcp": "eo4j experts. DEV RESOURCES Community Discord Developer blog Documentation Deployment Center BUILD WITH AI AI + graph GraphRAG Agent memory Model Context Protocol (MCP) Customer support Resources LEARN Blog Announcements, guides, and best practices Customer success stories Case studies, customer videos, proof points, and more Events hub Live and on-demand events, training, webina"
+        }
+      },
+      {
+        "url": "https://neo4j.com/download/",
+        "status": 200,
+        "possible_claim_context": {
+          "credential_gate": "t Master data management Network & IT Real-time recommendations Supply chain PARTNERS AWS Databricks Google Cloud Microsoft Azure Snowflake Partner directory Become a partner Customer success stories Case studies, customer videos, proof points, and more Neo4j Startup Program Why Neo4j FOR EXECUTIVES Executive insights AI systems IDC business value study Business va",
+          "official_mcp": "eo4j experts. DEV RESOURCES Community Discord Developer blog Documentation Deployment Center BUILD WITH AI AI + graph GraphRAG Agent memory Model Context Protocol (MCP) Customer support Resources LEARN Blog Announcements, guides, and best practices Customer success stories Case studies, customer videos, proof points, and more Events hub Live and on-demand events, training, webina"
+        }
+      }
+    ],
+    "assessment": "unreviewed snippets; not claim evidence"
+  },
+  {
+    "app": "Snowflake",
+    "candidates": [
+      {
+        "url": "https://www.snowflake.com/en/",
+        "status": 403,
+        "possible_claim_context": {}
+      },
+      {
+        "url": "https://app.snowflake.com/",
+        "status": 200,
+        "possible_claim_context": {}
+      }
+    ],
+    "assessment": "unreviewed snippets; not claim evidence"
+  },
+  {
+    "app": "MongoDB Atlas",
+    "candidates": [
+      {
+        "url": "https://www.mongodb.com/?msockid=05d16ee950576a842a1a76f351856b46",
+        "status": 200,
+        "possible_claim_context": {
+          "credential_gate": " videos to master MongoDB Atlas and its features. Learn more Build Smarter with AI Learn to build intelligent apps with AI tools and our AI partner ecosystem. Visit the Learning Hub Voyage AI State-of-the art embedding models and rerankers made for building, scaling, and deploying intelligent applications. Learn more MongoDB University Take free, expert-led courses"
+        }
+      },
+      {
+        "url": "https://www.mongodb.com/try/download/community?msockid=05d16ee950576a842a1a76f351856b46",
+        "status": 200,
+        "possible_claim_context": {}
+      }
+    ],
+    "assessment": "unreviewed snippets; not claim evidence"
+  },
+  {
+    "app": "Datadog",
+    "candidates": [],
+    "assessment": "unreviewed snippets; not claim evidence"
+  },
+  {
+    "app": "Sentry",
+    "candidates": [
+      {
+        "url": "https://sentry.io/welcome/",
+        "status": 200,
+        "possible_claim_context": {
+          "official_mcp": "e the spend and performance across all your agents. Stay in the flow From GitHub , Slack , Jira , and Linear to coding agents with Sentry's MCP server , Sentry brings full context to every fix from dev to prod. Previous Next Monitor in five lines Drop in the SDK . No agents to install. No performance surprises. Automatically root-cause any issue Find root causes and f"
+        }
+      },
+      {
+        "url": "https://sentry.io/pricing/",
+        "status": 200,
+        "possible_claim_context": {
+          "credential_gate": " Free $0 Limited to one user One user Error Monitoring and Tracing Alerts and notifications via email 10 custom dashboards MCP access start trial team Everything to monitor your application as it scales $26/mo $26/mo When billed annually with default pre-paid data Developer features + Unlimited users API & third-party integrations 20 custom dashboards Seer: AI de"
+        }
+      }
+    ],
+    "assessment": "unreviewed snippets; not claim evidence"
+  },
+  {
+    "app": "Notion",
+    "candidates": [
+      {
+        "url": "https://www.notion.com/",
+        "status": 200,
+        "possible_claim_context": {}
+      },
+      {
+        "url": "https://app.notion.com/",
+        "status": 200,
+        "possible_claim_context": {}
+      }
+    ],
+    "assessment": "unreviewed snippets; not claim evidence"
+  },
+  {
+    "app": "Airtable",
+    "candidates": [
+      {
+        "url": "https://www.airtable.com/",
+        "status": 200,
+        "possible_claim_context": {}
+      },
+      {
+        "url": "https://airtable.com/login",
+        "status": 200,
+        "possible_claim_context": {}
+      }
+    ],
+    "assessment": "unreviewed snippets; not claim evidence"
+  },
+  {
+    "app": "Linear",
+    "candidates": [],
+    "assessment": "unreviewed snippets; not claim evidence"
+  },
+  {
+    "app": "Jira",
+    "candidates": [
+      {
+        "url": "https://www.atlassian.com/software/jira",
+        "status": 200,
+        "possible_claim_context": {}
+      },
+      {
+        "url": "https://id.atlassian.com/login",
+        "status": 202,
+        "possible_claim_context": {}
+      }
+    ],
+    "assessment": "unreviewed snippets; not claim evidence"
+  },
+  {
+    "app": "Asana",
+    "candidates": [
+      {
+        "url": "https://asana.com/",
+        "status": 200,
+        "possible_claim_context": {
+          "credential_gate": "mer stories Resource center Asana Academy Certifications Trainings SUPPORT Help Center Community Templates SERVICES Customer Success Find a partner Become a partner Contact sales View demo Download app Products Solutions Learning & support Pricing Contact sales View demo Download app Log in Contact sales Get started Launch Asana Upgrade Contact sales Supercharge yo"
+        }
+      },
+      {
+        "url": "https://app.asana.com/-/login",
+        "status": 403,
+        "possible_claim_context": {}
+      }
+    ],
+    "assessment": "unreviewed snippets; not claim evidence"
+  },
+  {
+    "app": "Monday.com",
+    "candidates": [
+      {
+        "url": "https://monday.com/",
+        "status": 200,
+        "possible_claim_context": {
+          "credential_gate": "s, risks, and blockers automatically. Get Started Executive Digest Scans project tasks to flag items behind schedule or requiring immediate approval. Get Started Goal Tracker Tracks leads and signups against set goals and reports on progress automatically. Get Started Risk Analyzer Flags tasks nearing deadlines and notifies owners to keep projects on schedule. Get S"
+        }
+      },
+      {
+        "url": "https://auth.monday.com/auth/login_monday",
+        "status": 406,
+        "possible_claim_context": {}
+      }
+    ],
+    "assessment": "unreviewed snippets; not claim evidence"
+  },
+  {
+    "app": "ClickUp",
+    "candidates": [
+      {
+        "url": "https://clickup.com/",
+        "status": 200,
+        "possible_claim_context": {
+          "credential_gate": "ndling Deep Search Ask something complex. Brain² checks your workspace, apps, and the web for answers. Growth & Acquisition, Week of Apr 21 Paid ROAS holding at 4.2x across search, up from 3.8x last week. Activation rate hit 38%, up 4pts month-over-month — best since December. Growth & Acquisition Update for the Week of April 21 This week, we are excited to repo"
+        }
+      },
+      {
+        "url": "https://clickup.com/download",
+        "status": 200,
+        "possible_claim_context": {}
+      }
+    ],
+    "assessment": "unreviewed snippets; not claim evidence"
+  },
+  {
+    "app": "Coda",
+    "candidates": [
+      {
+        "url": "https://coda.io/",
+        "status": 200,
+        "possible_claim_context": {
+          "credential_gate": ". See all → Resources Resources Learn Guides Interactive sessions Courses FEATURED Connect Help center Superhuman community Hire a Services Partner Partner with us Extend Pack Studio Formula list API Featured guide Get started with Superhuman Docs AI See all → Gallery Blog Pricing Request a demo Get started Coda is now Superhuman Docs: The best place for teams and "
+        }
+      },
+      {
+        "url": "https://coda.io/signin",
+        "status": 200,
+        "possible_claim_context": {}
+      }
+    ],
+    "assessment": "unreviewed snippets; not claim evidence"
+  },
+  {
+    "app": "Smartsheet",
+    "candidates": [
+      {
+        "url": "https://app.smartsheet.com/login",
+        "status": 200,
+        "possible_claim_context": {}
+      },
+      {
+        "url": "https://www.smartsheet.com/",
+        "status": 200,
+        "possible_claim_context": {
+          "credential_gate": "nd IT Digital and IT portfolio leadership Milestone and dependency tracking Workload balancing and capacity planning Centralized intake and approval workflows Role-based visibility (Gantt, Kanban, Dashboards) IT portfolio management Operations Operational excellence Scale with ease Deliver excellence Unlock insights Confidently mitigate risk Operations management Cl"
+        }
+      }
+    ],
+    "assessment": "unreviewed snippets; not claim evidence"
+  },
+  {
+    "app": "Harvest",
+    "candidates": [],
+    "assessment": "unreviewed snippets; not claim evidence"
+  },
+  {
+    "app": "Stripe",
+    "candidates": [
+      {
+        "url": "https://dashboard.stripe.com/login",
+        "status": 200,
+        "possible_claim_context": {}
+      },
+      {
+        "url": "https://stripe.com/in",
+        "status": 200,
+        "possible_claim_context": {
+          "credential_gate": " Stripe on implementation, complex integrations, or major migrations. View services Stripe-certified experts. Work with a Stripe consulting partner that can integrate and deploy Stripe solutions on your behalf. View partners Support plans. Receive ongoing assistance and day-to-day support for technical questions with tiered plans based on your needs. View plans Bui",
+          "official_mcp": "our directory of platforms that integrate Stripe with website-building tools. See directory Build your own integration. Use our SDKs, APIs, MCP server and AI developer tools to build and maintain your own integration with Stripe. Get started What's happening See the latest from Stripe. Businesses on Stripe generated US$1.9tn in 2025. Our annual letter explores the tre"
+        }
+      }
+    ],
+    "assessment": "unreviewed snippets; not claim evidence"
+  },
+  {
+    "app": "Plaid",
+    "candidates": [],
+    "assessment": "unreviewed snippets; not claim evidence"
+  },
+  {
+    "app": "Binance",
+    "candidates": [],
+    "assessment": "unreviewed snippets; not claim evidence"
+  },
+  {
+    "app": "Paygent Connect",
+    "candidates": [],
+    "assessment": "unreviewed snippets; not claim evidence"
+  },
+  {
+    "app": "iPayX",
+    "candidates": [],
+    "assessment": "unreviewed snippets; not claim evidence"
+  },
+  {
+    "app": "QuickBooks",
+    "candidates": [],
+    "assessment": "unreviewed snippets; not claim evidence"
+  },
+  {
+    "app": "Xero",
+    "candidates": [
+      {
+        "url": "https://www.xero.com/?msockid=34f816b7b14361ce1ba50eadb0e5604c",
+        "status": 200,
+        "possible_claim_context": {
+          "credential_gate": "ts. With AI tools designed to help on the routine work, accountants and bookkeepers can spend more time helping clients thrive. Explore the partner program Your first month, on us. 30-day free trial See what all the fuss is about. Try Xero for free Explore all features 30-day free trial $ 0 USD Included Access Xero features Included Set up with your data or a demo "
+        }
+      },
+      {
+        "url": "https://www.xero.com/login/?msockid=34f816b7b14361ce1ba50eadb0e5604c",
+        "status": 200,
+        "possible_claim_context": {}
+      }
+    ],
+    "assessment": "unreviewed snippets; not claim evidence"
+  },
+  {
+    "app": "Brex",
+    "candidates": [
+      {
+        "url": "https://www.brex.com/",
+        "status": 200,
+        "possible_claim_context": {
+          "credential_gate": "ugh our program banks. Explore Brex business accounts Pay vendors faster and easier. Save time with AI-powered automation of invoice entry, approval, and payments. Issue vendor-specific cards for any teams with per-transaction limits and procurement approval flows. Explore Brex bill pay Accelerate accounting with AI. Save time with AI-generated suggestions and 1,000"
+        }
+      },
+      {
+        "url": "https://www.brex.com/support/signing-into-brex",
+        "status": 200,
+        "possible_claim_context": {}
+      }
+    ],
+    "assessment": "unreviewed snippets; not claim evidence"
+  },
+  {
+    "app": "Ramp",
+    "candidates": [],
+    "assessment": "unreviewed snippets; not claim evidence"
+  },
+  {
+    "app": "PitchBook",
+    "candidates": [
+      {
+        "url": "https://pitchbook.com/",
+        "status": 403,
+        "possible_claim_context": {}
+      },
+      {
+        "url": "https://my.pitchbook.com/",
+        "status": 403,
+        "possible_claim_context": {}
+      }
+    ],
+    "assessment": "unreviewed snippets; not claim evidence"
+  },
+  {
+    "app": "NotebookLM",
+    "candidates": [
+      {
+        "url": "https://notebook.google.com/",
+        "status": 200,
+        "possible_claim_context": {
+          "credential_gate": "Gemini Notebook Sign in Understand anything Your research and thinking partner, grounded in the information you trust, built with the latest Gemini models. Get the app Sign in to Gemini Notebook Turn your files into Slide decks Turn your brainstorms into Mind Maps Turn Assignments into Audio Overv"
+        }
+      },
+      {
+        "url": "https://labs.google.com/search/experiment/23",
+        "status": 200,
+        "possible_claim_context": {
+          "credential_gate": "rganize and understand the information that matters most to you. Join to try Understand Anything with NotebookLM Your research and thinking partner, grounded in the information you trust, built with the latest Gemini models. Upload your sources: Upload PDFs, websites, YouTube videos, audio files, Google Docs, or Google Slides, and NotebookLM will summarize them and"
+        }
+      }
+    ],
+    "assessment": "unreviewed snippets; not claim evidence"
+  },
+  {
+    "app": "Otter AI",
+    "candidates": [
+      {
+        "url": "https://otter.ai/?msockid=110d89892f8f6bb0040591932e296ab0",
+        "status": 200,
+        "possible_claim_context": {
+          "credential_gate": "aries Unlimited meetings Basic Integrations (Zoom, Google Meet, Teams, Slack) Start for free Business From $19.99/month per user 7-day free trial included Ideal for teams that want to collaborate seamlessly and turn meetings into actionable outcomes Features - Everything in Basic, plus 6000 monthly transcription minutes - 4 hours per conversation Collaborative no",
+          "official_mcp": "ng knowledge into your favorite AI chat ChatGPT, Claude, and other AI chat tools can securely access your meeting knowledge through Otter’s MCP Server for deeper analysis and smarter workflows. Trusted by teams, loved by people But don’t take our word for it. Otter is a must-have. Just being conservative - our team is getting 33% time back — Laura Brown, Vice Presiden"
+        }
+      },
+      {
+        "url": "https://otter.ai/author/otter?msockid=110d89892f8f6bb0040591932e296ab0",
+        "status": 200,
+        "possible_claim_context": {
+          "credential_gate": "st AI Notetakers for Zoom in 2026 Compare the 8 best AI notetakers for Zoom in 2026 by connection method, free-plan limits, pricing, and IT approval, including Otter, Fathom, and Fireflies. Otter 6 min How To All-Hands Meetings: What They Are and How to Run a Great One What an all-hands meeting is, how it differs from a town hall, how to build the agenda, and how to"
+        }
+      }
+    ],
+    "assessment": "unreviewed snippets; not claim evidence"
+  },
+  {
+    "app": "Fathom",
+    "candidates": [
+      {
+        "url": "https://help.fathom.video/en/articles/449088",
+        "status": 200,
+        "possible_claim_context": {}
+      }
+    ],
+    "assessment": "unreviewed snippets; not claim evidence"
+  },
+  {
+    "app": "Consensus",
+    "candidates": [
+      {
+        "url": "https://consensus.app/",
+        "status": 200,
+        "possible_claim_context": {}
+      },
+      {
+        "url": "https://consensus.app/sign-in/",
+        "status": 403,
+        "possible_claim_context": {}
+      }
+    ],
+    "assessment": "unreviewed snippets; not claim evidence"
+  },
+  {
+    "app": "Reducto",
+    "candidates": [],
+    "assessment": "unreviewed snippets; not claim evidence"
+  },
+  {
+    "app": "Devin",
+    "candidates": [
+      {
+        "url": "https://devin.ai/",
+        "status": 200,
+        "possible_claim_context": {}
+      },
+      {
+        "url": "https://devin.ai/download",
+        "status": 200,
+        "possible_claim_context": {}
+      }
+    ],
+    "assessment": "unreviewed snippets; not claim evidence"
+  },
+  {
+    "app": "higgsfield",
+    "candidates": [
+      {
+        "url": "https://higgsfield.ai/",
+        "status": 200,
+        "possible_claim_context": {}
+      },
+      {
+        "url": "https://higgsfield.ai/ai-video",
+        "status": 200,
+        "possible_claim_context": {}
+      }
+    ],
+    "assessment": "unreviewed snippets; not claim evidence"
+  },
+  {
+    "app": "Mermaid CLI",
+    "candidates": [],
+    "assessment": "unreviewed snippets; not claim evidence"
+  },
+  {
+    "app": "YouTube Transcript",
+    "candidates": [],
+    "assessment": "unreviewed snippets; not claim evidence"
+  },
+  {
+    "app": "Grain",
+    "candidates": [
+      {
+        "url": "https://grain.com/",
+        "status": 200,
+        "possible_claim_context": {
+          "credential_gate": "ree forever. Capture every meeting. Enrich your transcripts. Feed your AI. Transcribe and summarize meetings, no bots required. 14-day free trial Free and paid seats Cancel anytime Get started free Book a demo Try for free Learn more Start a 14-day free Trial 97% of teams stay on Grain after 12 months.",
+          "official_mcp": "Claude, ChatGPT, or any AI tool One-click AI export Bulk download enriched Markdown transcripts or open them directly in Claude or ChatGPT. MCP Server & API Let your AI agents query transcripts, search across meetings, and access your full meeting history. Ask anything inside Grain Ask questions across your entire meeting library and get answers with precise citations"
+        }
+      }
+    ],
+    "assessment": "unreviewed snippets; not claim evidence"
+  }
+]

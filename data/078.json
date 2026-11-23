@@ -1,0 +1,80 @@
+{
+  "app": {
+    "number": 78,
+    "name": "Coda",
+    "category": "Productivity and Project Management",
+    "hint": "coda.io/developers"
+  },
+  "checked_at": "2026-11-23T13:42:06.833429+00:00",
+  "query": "Coda developer API authentication documentation",
+  "search_results": [
+    {
+      "title": "Coda : Your all-in-one collaborative workspace.",
+      "url": "https://coda.io/",
+      "snippet": "coda.io https:// coda .io Coda : Your all-in-one collaborative workspace. Coda is an all-in-one platform that blends the flexibility of docs, structure of spreadsheets, power of applications, and intelligence of AI."
+    },
+    {
+      "title": "Superhuman Docs | Welcome back - Coda",
+      "url": "https://coda.io/signin",
+      "snippet": "coda.io https:// coda .io › signin Superhuman Docs | Welcome back - Coda Make a new doc to bring your words, data, and teams together. For free. We'll email you a link for a password-free sign in. Or sign in … Read more"
+    },
+    {
+      "title": "CODA (2021 film ) - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/CODA_(2021_film)",
+      "snippet": "wikipedia.org https:// en.wikipedia.org › wiki CODA (2021 film ) - Wikipedia CODA is a 2021 comedy-drama film written and directed by Sian Heder."
+    },
+    {
+      "title": "Accept Payments, Build Webstores & Expand Distribution Globally",
+      "url": "https://www.coda.co/",
+      "snippet": "coda.co https://www. coda .co Accept Payments, Build Webstores & Expand Distribution Globally Unlock 400+ local payment methods, launch branded webstores, and reach millions through a unified platform. Coda manages the … Read more"
+    },
+    {
+      "title": "Explore our Products & Services | Coda",
+      "url": "https://docs.coda.co/",
+      "snippet": "coda.co https://docs. coda .co Explore our Products & Services | Coda Coda offers a full range of solutions that together form the Operating System for monetizing digital goods. Our solutions are … Read more"
+    },
+    {
+      "title": "Coda - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Coda",
+      "snippet": "wikipedia.org https:// en.wikipedia.org › wiki › Coda Coda - Wikipedia This disambiguation page lists articles associated with the title Coda. If an internal link incorrectly led you here, you may wish to … Read more"
+    },
+    {
+      "title": "About Coda | Digital Commerce & Monetization Solutions",
+      "url": "https://www.coda.co/about-us/",
+      "snippet": "coda.co https://www. coda .co › about-us About Coda | Digital Commerce & Monetization Solutions Learn about Coda, a global digital commerce company helping publishers and brands simplify monetization, distribution, and … Read more"
+    },
+    {
+      "title": "Coda AI, the work assistant your team deserves - Coda",
+      "url": "https://coda.io/product/ai",
+      "snippet": "coda.io https:// coda .io › product › ai Coda AI, the work assistant your team deserves - Coda Coda AI is the connected work assistant that knows your team—and can take action for you. Free for all Doc Makers. Discover … Read more"
+    },
+    {
+      "title": "What is Coda ? The all-in-one platform for teams. - Coda",
+      "url": "https://coda.io/product/",
+      "snippet": "coda.io https:// coda .io › product What is Coda ? The all-in-one platform for teams. - Coda Coda is the collaborative all-in-one platform that blends the best of docs, spreadsheets, and applications. Learn why 40,000+ teams … Read more"
+    },
+    {
+      "title": "About us - Coda",
+      "url": "https://coda.io/about",
+      "snippet": "coda.io https:// coda .io › about About us - Coda 80% of the Fortune 100 use Coda to improve their work. Docs were just the beginning. We created a new kind of doc that … Read more"
+    }
+  ],
+  "retrievals": [],
+  "errors": [
+    "No candidate documentation on hint domain found; review required"
+  ],
+  "first_pass": {
+    "auth": "unknown",
+    "credential_gate": "unknown",
+    "api_surface": "unknown",
+    "official_mcp": "unknown",
+    "composio_toolkit": "unknown",
+    "verdict": "unclear",
+    "blocker": "Claim-specific documentation not assessed",
+    "next_action": "Review official documentation and validate each claim",
+    "confidence": "unresolved"
+  },
+  "validation_errors": [
+    "All claim fields require source-specific review"
+  ]
+}

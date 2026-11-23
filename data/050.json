@@ -1,0 +1,80 @@
+{
+  "app": {
+    "number": 50,
+    "name": "fanbasis",
+    "category": "Ecommerce",
+    "hint": "fanbasis.com"
+  },
+  "checked_at": "2026-11-23T13:42:02.039905+00:00",
+  "query": "fanbasis developer API authentication documentation",
+  "search_results": [
+    {
+      "title": "Gmail",
+      "url": "https://mail.google.com/mail?hl=en",
+      "snippet": "google.com https:// mail.google.com › mail Gmail We would like to show you a description here but the site won’t allow us. Learn more"
+    },
+    {
+      "title": "google mail",
+      "url": "https://mail.google.com/mail/u/0/",
+      "snippet": "google.com https:// mail.google.com › mail google mail google mail"
+    },
+    {
+      "title": "Outlook",
+      "url": "https://outlook.office.com/mail/inbox",
+      "snippet": "office.com https:// outlook .office.com › mail › inbox Outlook Sign in to Outlook to access and manage your email efficiently."
+    },
+    {
+      "title": "Sign in - Google Accounts",
+      "url": "https://accounts.google.com/",
+      "snippet": "google.com https:// accounts.google.com Sign in - Google Accounts Not your computer? Use a private browsing window to sign in. Learn more about using Guest mode Next Create account"
+    },
+    {
+      "title": "Yahoo Mail | Email with smart features and top-notch security",
+      "url": "https://mail.yahoo.com/",
+      "snippet": "yahoo.com https:// mail.yahoo.com Yahoo Mail | Email with smart features and top-notch security Yahoo Mail: Your smarter, faster, free email solution. Organize your inbox, protect your privacy, and tackle tasks efficiently with AI …"
+    },
+    {
+      "title": "Microsoft Outlook Personal Email and Calendar | Microsoft 365",
+      "url": "https://www.microsoft.com/en-us/microsoft-365/outlook/email-and-calendar-software-microsoft-outlook?msockid=20d56cb1867863f41ff874ab876762d2",
+      "snippet": "microsoft.com https:// www.microsoft.com › en-us › outlook Microsoft Outlook Personal Email and Calendar | Microsoft 365 Download free Microsoft Outlook email and calendar, plus Office Online apps like Word, Excel, and PowerPoint. Sign in to access …"
+    },
+    {
+      "title": "Sign in | Yahoo",
+      "url": "https://login.yahoo.com/",
+      "snippet": "yahoo.com https:// login.yahoo.com Sign in | Yahoo Sign in to access the best in class Yahoo Mail, breaking local, national and global news, finance, sports, music, movies... You get …"
+    },
+    {
+      "title": "Rediffmail",
+      "url": "https://mail.rediff.com/cgi-bin/login.cgi",
+      "snippet": "rediff.com https://mail.rediff.com › cgi-bin › login.cgi Rediffmail Login page of the website rediffmail. Asking for user name and password."
+    },
+    {
+      "title": "Microsoft account | Sign In or Create Your Account Today – Microsoft",
+      "url": "https://account.microsoft.com/account",
+      "snippet": "microsoft.com https://account.microsoft.com › account Microsoft account | Sign In or Create Your Account Today – Microsoft A Microsoft account does not need a Microsoft email The email address used to sign into your Microsoft account can be from …"
+    },
+    {
+      "title": "Sign in to Gmail - Computer - Gmail Help - Google Help",
+      "url": "https://support.google.com/mail/answer/8494?hl=en&co=genie.platform=desktop",
+      "snippet": "google.com https:// support.google.com › mail › answer Sign in to Gmail - Computer - Gmail Help - Google Help Enter your Google Account email or phone number and password. If information is already filled in and you have to sign in to a …"
+    }
+  ],
+  "retrievals": [],
+  "errors": [
+    "No candidate documentation on hint domain found; review required"
+  ],
+  "first_pass": {
+    "auth": "unknown",
+    "credential_gate": "unknown",
+    "api_surface": "unknown",
+    "official_mcp": "unknown",
+    "composio_toolkit": "unknown",
+    "verdict": "unclear",
+    "blocker": "Claim-specific documentation not assessed",
+    "next_action": "Review official documentation and validate each claim",
+    "confidence": "unresolved"
+  },
+  "validation_errors": [
+    "All claim fields require source-specific review"
+  ]
+}

@@ -1,0 +1,80 @@
+{
+  "app": {
+    "number": 1,
+    "name": "Salesforce",
+    "category": "CRM and Sales",
+    "hint": "salesforce.com"
+  },
+  "checked_at": "2026-11-23T13:41:50.785402+00:00",
+  "query": "Salesforce developer API authentication documentation",
+  "search_results": [
+    {
+      "title": "Log In with Email | Salesforce",
+      "url": "https://login.salesforce.com/",
+      "snippet": "salesforce.com https:// login.salesforce.com Log In with Email | Salesforce Log into your account securely using your registered credentials. For existing users only."
+    },
+    {
+      "title": "Salesforce : The #1 AI CRM",
+      "url": "https://www.salesforce.com/",
+      "snippet": "salesforce.com https:// www.salesforce.com Salesforce : The #1 AI CRM Salesforce is the #1 AI CRM (customer relationship management) platform. We bring companies and customers together by … Read more"
+    },
+    {
+      "title": "Log in to your Salesforce Account",
+      "url": "https://www.salesforce.com/in/login/",
+      "snippet": "salesforce.com https:// www.salesforce.com › in › login Log in to your Salesforce Account Go to salesforce.com/in/login/ — or use your organisation's custom domain (e.g., yourcompany.my.salesforce.com). Ask your … Read more"
+    },
+    {
+      "title": "Salesforce",
+      "url": "https://login.salesforce.com/logos/",
+      "snippet": "salesforce.com https:// login.salesforce.com › logos Salesforce case change_status log a_call_chatter"
+    },
+    {
+      "title": "Salesforce - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Salesforce",
+      "snippet": "wikipedia.org https:// en.wikipedia.org › wiki › Salesforce Salesforce - Wikipedia Salesforce launched a suite of features called Salesforce Foundations in September 2024, bundling connected functionality across … Read more"
+    },
+    {
+      "title": "Trailhead | The fun way to learn",
+      "url": "https://trailhead.salesforce.com/",
+      "snippet": "salesforce.com https://trailhead. salesforce .com Trailhead | The fun way to learn Get hands-on experience in real Salesforce environments as you solve business scenarios, automate workflows, build AI agents, … Read more"
+    },
+    {
+      "title": "What is - Salesforce",
+      "url": "https://www.salesforce.com/products/what-is-salesforce/",
+      "snippet": "salesforce.com https:// www.salesforce.com › products › what-is- salesforce What is - Salesforce Salesforce helps businesses connect customers, employees, and operations on one unified platform using trusted AI, best-in-class … Read more"
+    },
+    {
+      "title": "Salesforce : The #1 AI CRM | Salesforce IN",
+      "url": "https://www.salesforce.com/in/",
+      "snippet": "salesforce.com https:// www.salesforce.com › in Salesforce : The #1 AI CRM | Salesforce IN Salesforce is the #1 AI CRM, helping companies connect with customers in a whole new way — uniting the data, apps, and agents … Read more"
+    },
+    {
+      "title": "Salesforce : The #1 Agentic AI CRM",
+      "url": "https://www.salesforce.com/homepage/",
+      "snippet": "salesforce.com https:// www.salesforce.com › homepage Salesforce : The #1 Agentic AI CRM Salesforce is the #1 AI CRM (customer relationship management) platform. We bring companies and customers together by … Read more"
+    },
+    {
+      "title": "Salesforce Careers | Build the Future of AI with Us | Salesforce",
+      "url": "https://www.salesforce.com/company/careers/",
+      "snippet": "salesforce.com https:// www.salesforce.com › company › careers Salesforce Careers | Build the Future of AI with Us | Salesforce Discover career opportunities at Salesforce, the world's #1 AI CRM. We're driving innovation in AI, creating meaningful impact, and … Read more"
+    }
+  ],
+  "retrievals": [],
+  "errors": [
+    "No candidate documentation on hint domain found; review required"
+  ],
+  "first_pass": {
+    "auth": "unknown",
+    "credential_gate": "unknown",
+    "api_surface": "unknown",
+    "official_mcp": "unknown",
+    "composio_toolkit": "unknown",
+    "verdict": "unclear",
+    "blocker": "Claim-specific documentation not assessed",
+    "next_action": "Review official documentation and validate each claim",
+    "confidence": "unresolved"
+  },
+  "validation_errors": [
+    "All claim fields require source-specific review"
+  ]
+}

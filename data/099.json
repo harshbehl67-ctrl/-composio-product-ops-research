@@ -1,0 +1,80 @@
+{
+  "app": {
+    "number": 99,
+    "name": "YouTube Transcript",
+    "category": "AI, Research and Media-native",
+    "hint": "transcriptapi.com"
+  },
+  "checked_at": "2026-11-23T13:42:08.796386+00:00",
+  "query": "YouTube Transcript developer API authentication documentation",
+  "search_results": [
+    {
+      "title": "YouTube",
+      "url": "https://www.youtube.com/?gl=IN",
+      "snippet": "youtube.com https://www.youtube.com YouTube Enjoy the videos and music you love, upload original content and share it all with friends, family and the world on YouTube."
+    },
+    {
+      "title": "YouTube",
+      "url": "https://www.youtube.com/",
+      "snippet": "youtube.com https:// www.youtube.com YouTube Enjoy the videos and music you love, upload original content, and share it all with friends, family, and the world on YouTube."
+    },
+    {
+      "title": "About YouTube - YouTube",
+      "url": "https://about.youtube/",
+      "snippet": "about.youtube https://about. youtube About YouTube - YouTube YouTube's mission is to give everyone a voice and show them the world. Learn about our brand, community, careers and more."
+    },
+    {
+      "title": "YouTube ( YouTube channel) - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/YouTube_(YouTube_channel)",
+      "snippet": "wikipedia.org https:// en.wikipedia.org › wiki › YouTube _( YouTube _channel) YouTube ( YouTube channel) - Wikipedia YouTube, formerly named YouTube Spotlight, [1] is the official YouTube channel for the American video-sharing platform of the …"
+    },
+    {
+      "title": "YouTube - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/YouTube",
+      "snippet": "wikipedia.org https:// en.wikipedia.org › wiki › YouTube YouTube - Wikipedia On November 13, 2006, YouTube was purchased by Google for 1.65 billion USD (equivalent to $ 2.44 billion in 2025). Google …"
+    },
+    {
+      "title": "Official YouTube Blog for Latest YouTube News & Insights",
+      "url": "https://blog.youtube/",
+      "snippet": "blog.youtube https://blog. youtube Official YouTube Blog for Latest YouTube News & Insights 4 days ago · Explore our official blog for the latest news about YouTube, creator and artist profiles, culture and trends analyses, and …"
+    },
+    {
+      "title": "YouTube",
+      "url": "https://music.youtube.com/channel/UCBR8-60-B28hp2BmDPdntcQ",
+      "snippet": "youtube.com https:// music.youtube.com › channel YouTube Sep 12, 2024 · Celebrate 50 years of Hip-Hop with 50 Deep Playlist • YouTube • 1.1M views Synth sensations Playlist • YouTube • …"
+    },
+    {
+      "title": "YouTube - Google Accounts",
+      "url": "https://accounts.google.com/InteractiveLogin?service=youtube",
+      "snippet": "google.com https:// accounts.google.com › InteractiveLogin YouTube - Google Accounts Share your videos with friends, family, and the world."
+    },
+    {
+      "title": "YouTube - Apps on Google Play",
+      "url": "https://play.google.com/store/apps/details?id=com.google.android.youtube&hl=en-IN",
+      "snippet": "google.com https:// play.google.com › store › apps › details YouTube - Apps on Google Play Get the official YouTube app on Android phones and tablets. See what the world is watching -- from the hottest music videos to …"
+    },
+    {
+      "title": "YouTube | History, Founders, Purchase, Google, Music, Videos, & Facts ...",
+      "url": "https://www.britannica.com/topic/YouTube",
+      "snippet": "britannica.com https:// www.britannica.com › topic › YouTube YouTube | History, Founders, Purchase, Google, Music, Videos, & Facts ... 1 day ago · YouTube is a social media platform and video-sharing website owned by Alphabet, Inc. It was registered on February 14, …"
+    }
+  ],
+  "retrievals": [],
+  "errors": [
+    "No candidate documentation on hint domain found; review required"
+  ],
+  "first_pass": {
+    "auth": "unknown",
+    "credential_gate": "unknown",
+    "api_surface": "unknown",
+    "official_mcp": "unknown",
+    "composio_toolkit": "unknown",
+    "verdict": "unclear",
+    "blocker": "Claim-specific documentation not assessed",
+    "next_action": "Review official documentation and validate each claim",
+    "confidence": "unresolved"
+  },
+  "validation_errors": [
+    "All claim fields require source-specific review"
+  ]
+}

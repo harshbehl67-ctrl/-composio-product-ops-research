@@ -1,0 +1,80 @@
+{
+  "app": {
+    "number": 11,
+    "name": "Zendesk",
+    "category": "Support and Helpdesk",
+    "hint": "zendesk.com"
+  },
+  "checked_at": "2026-11-23T13:41:51.644995+00:00",
+  "query": "Zendesk developer API authentication documentation",
+  "search_results": [
+    {
+      "title": "AI-Powered Customer Service Platform | Zendesk",
+      "url": "https://www.zendesk.com/",
+      "snippet": "zendesk.com https://www. zendesk .com AI-Powered Customer Service Platform | Zendesk Zendesk is an AI-first service platform powered by self-learning AI agents and the Zendesk Resolution Platform. With Zendesk, …"
+    },
+    {
+      "title": "Login | Zendesk",
+      "url": "https://www.zendesk.com/login/",
+      "snippet": "zendesk.com https://www. zendesk .com › login Login | Zendesk Terms of Use Privacy Notice Cookie Notice Cookie settings Trust Center © 2026 Zendesk, Inc."
+    },
+    {
+      "title": "Sign in to Zendesk",
+      "url": "https://shmaudit.zendesk.com/auth/v3/signin",
+      "snippet": "zendesk.com https://shmaudit. zendesk .com › auth › signin Sign in to Zendesk Sign in to Zendesk Switch to agent sign-in Email* (required)"
+    },
+    {
+      "title": "Sign in to YourCompany - Zendesk",
+      "url": "https://yourcompany.zendesk.com/access/unauthenticated",
+      "snippet": "zendesk.com https://yourcompany. zendesk .com › access › unauthenticated Sign in to YourCompany - Zendesk Sign in to YourCompany Switch to agent sign-in Email* (required)"
+    },
+    {
+      "title": "Zendesk - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Zendesk",
+      "snippet": "wikipedia.org https:// en.wikipedia.org › wiki › Zendesk Zendesk - Wikipedia Zendesk's sales automation software was revamped with Zendesk Sell in 2020, improving integration with Zendesk's customer …"
+    },
+    {
+      "title": "Zendesk help",
+      "url": "https://support.zendesk.com/hc/en-us",
+      "snippet": "zendesk.com https://support. zendesk .com Zendesk help 3 days ago · Welcome to Zendesk help Find articles and discussions to help answer your Zendesk questions"
+    },
+    {
+      "title": "AI-powered service platform | Zendesk",
+      "url": "https://www.zendesk.co.uk/",
+      "snippet": "zendesk.co.uk https://www. zendesk .co.uk AI-powered service platform | Zendesk Zendesk is an AI-first service platform powered by self-learning AI agents and the Zendesk Resolution Platform. With Zendesk, …"
+    },
+    {
+      "title": "Sign in to Zendesk",
+      "url": "https://oauth-bridge.zendesk.com/oauth_bridge/start",
+      "snippet": "zendesk.com https://oauth-bridge. zendesk .com › oauth_bridge › start Sign in to Zendesk Sign in to Zendesk Select your account below, or enter your details. Your Zendesk subdomain .zendesk.com Sign in"
+    },
+    {
+      "title": "Login | Zendesk India",
+      "url": "https://www.zendesk.com/in/login/",
+      "snippet": "zendesk.com https://www. zendesk .com › in › login Login | Zendesk India By submitting my personal data, I consent to Zendesk collecting, processing, and storing my information in accordance with the …"
+    },
+    {
+      "title": "Transform Customer & Employee Service with AI Agents - Zendesk",
+      "url": "https://www.zendesk.com/in/",
+      "snippet": "zendesk.com https://www. zendesk .com › in Transform Customer & Employee Service with AI Agents - Zendesk Zendesk is an AI-first service platform powered by self-learning AI agents and the Zendesk Resolution Platform. With Zendesk, …"
+    }
+  ],
+  "retrievals": [],
+  "errors": [
+    "No candidate documentation on hint domain found; review required"
+  ],
+  "first_pass": {
+    "auth": "unknown",
+    "credential_gate": "unknown",
+    "api_surface": "unknown",
+    "official_mcp": "unknown",
+    "composio_toolkit": "unknown",
+    "verdict": "unclear",
+    "blocker": "Claim-specific documentation not assessed",
+    "next_action": "Review official documentation and validate each claim",
+    "confidence": "unresolved"
+  },
+  "validation_errors": [
+    "All claim fields require source-specific review"
+  ]
+}

@@ -1,0 +1,84 @@
+{
+  "app": {
+    "number": 63,
+    "name": "Netlify",
+    "category": "Developer, Infra and Data platforms",
+    "hint": "docs.netlify.com/api"
+  },
+  "checked_at": "2026-11-23T13:42:04.443840+00:00",
+  "query": "Netlify developer API authentication documentation",
+  "search_results": [
+    {
+      "title": "Where apps come to life | Netlify",
+      "url": "https://www.netlify.com/",
+      "snippet": "netlify.com https://www. netlify .com Where apps come to life | Netlify Start with a prompt, agent, or code. Netlify gives you everything you need to create, share, and run your app at any scale."
+    },
+    {
+      "title": "Log in | Netlify",
+      "url": "https://app.netlify.com/login",
+      "snippet": "netlify.com https://app. netlify .com › login Log in | Netlify One platform to build and ship."
+    },
+    {
+      "title": "Netlify",
+      "url": "https://app.netlify.com/",
+      "snippet": "netlify.com https://app. netlify .com Netlify One platform to build and ship."
+    },
+    {
+      "title": "Netlify",
+      "url": "https://www.netlify.com/%5E",
+      "snippet": "netlify.com https://www. netlify .com Netlify Redirecting to https://www.netlify.com/%5E"
+    },
+    {
+      "title": "Netlify Create",
+      "url": "https://create.netlify.com/login?redirect=%2Fsso-login",
+      "snippet": "netlify.com https://create. netlify .com › login Netlify Create Create with AI or code, deploy instantly on production infrastructure. One platform to build and ship."
+    },
+    {
+      "title": "What is Netlify ? | Netlify Docs",
+      "url": "https://docs.netlify.com/start/what-is-netlify/",
+      "snippet": "netlify.com https://docs. netlify .com › start › what-is- netlify What is Netlify ? | Netlify Docs 5 days ago · Netlify is the AI app platform designed for all, whether you are an experienced developer, a new kind of builder, or a …"
+    },
+    {
+      "title": "Netlify Documentation | Netlify Docs",
+      "url": "https://docs.netlify.com/",
+      "snippet": "netlify.com https://docs. netlify .com Netlify Documentation | Netlify Docs Customize with powerful developer tools including the Netlify API, CLI, and SDK—designed to automate workflows and integrate …"
+    },
+    {
+      "title": "Sign up | Netlify",
+      "url": "https://app.netlify.com/signup",
+      "snippet": "netlify.com https://app. netlify .com › signup Sign up | Netlify Already have an account? Log in By signing up with Netlify, you agree to our terms of service and privacy policy, and that Netlify can …"
+    },
+    {
+      "title": "Netlify Drop",
+      "url": "https://app.netlify.com/drop",
+      "snippet": "netlify.com https://app. netlify .com › drop Netlify Drop Drag and drop a folder, zip file, or single HTML file to publish a website instantly — no account required. Get a live, shareable link in …"
+    },
+    {
+      "title": "Netlify Platform — Every building block your app needs",
+      "url": "https://www.netlify.com/platform/",
+      "snippet": "netlify.com https://www. netlify .com › platform Netlify Platform — Every building block your app needs Netlify runs the frontend, backend, and data for an app on one platform. That includes serverless functions, long-running servers, a …"
+    }
+  ],
+  "retrievals": [
+    {
+      "url": "https://docs.netlify.com/start/what-is-netlify/",
+      "status": 200,
+      "text": "What is Netlify? | Netlify Docs Skip to content Netlify Docs D o c s For the complete Netlify documentation index, see llms.txt . Markdown versions of any documentation page are available by appending .md to its URL. The new Netlify experience is here. Learn more or join the waitlist . What is Netlify? Copy page View as Markdown Copy as Markdown View as Markdown Netlify is the AI app platform designed for all, whether you are an experienced developer, a new kind of builder, or a global business. We’ll help you ship for one or millions. Our platform is built on production-grade infrastructure that grows with you, from your first prompt to your most complex codebase. Anyone on your team can build on Netlify, with guardrails that keep your live production version safe. Netlify is designed for how you, your team, and agents work together. How Netlify helps you Section titled “How Netlify helps you” Netlify helps you create, share, and run apps on one platform. Start with a prompt, start with your own code and agents, or bring something you started elsewhere. Wherever you start, your team can share the app, improve it, and not worry about outgrowing our platform. Create whatever you can imagine Section titled “Create whatever you can imagine” A working app needs more than screens. It needs somewhere to store data, a way for people to log in, forms that send submissions somewhere useful, and a real address. On Netlify, those pieces are already connected, so the person who knows what the app should do can focus on that. Describe your app and then build it with the agent and model of your choice. Learn more about what’s possible with Agent Runners Agent Runners An AI coding tool that makes changes to your site on your behalf, right from the Netlify dashboard. × . Connect the services you already use, such as Linear, Notion, Stripe, and Snowflake, so your agent can build from your existing specs and data or set up features like payments. Learn more about connectors . Bring your own code, tools, and agents, with support for any modern framework. Use Netlify’s platform primitives (core building blocks) like Netlify Database , Netlify Identity , Netlify Forms , serverless functions , and AI Gateway , without assembling or managing servers. You don’t need to know the building blocks to use them You don’t need to understand primitives to use them. You can ask your agent to build a membership area on your app with a Stripe checkout flow for paid access, and Netlify will use Netlify Identity without you needing to mention it. Our platform gives developers and agents working with code production-grade performance and flexibility so you can keep building on Netlify from day 1 to day 1,000. Collaborate and share Section titled “Collaborate and share” Once an app matters, more people want to work on it. Teammates want to use it, a developer may want to improve it, and nobody wants to break the version the team relies on. On Netlify, people who write code and people who don’t can work on the same app, so bringing someone new in never means starting over. You can move between agents on Netlify and your own external agents, and every change follows the same safe path to your live production version: Every change, including changes made by agents, gets a Deploy Preview Deploy Preview A type of deploy that lets you preview and share changes for feedback before they go live. × so others can review before it goes live. Each Deploy Preview gets its own database branch , so testing a change never touches production data. Any published change can be undone with a one-click rollback . Developers can keep working through Git, the Netlify CLI, and their preferred agent integrations. Run it with confidence Section titled “Run it with confidence” Ship to production, keep it fast and secure, understand what is happening, and stay in control as your team grows. Netlify is built to simplify running your apps in production, well beyond the first prototype. From the millions of apps and sites we already support, we know that launching is just the beginning. Production : Ship changes, preview updates before going live, and quickly undo changes when needed. Manage : Stay in control as your apps and organization grow. Manage your team, domains domains The web address people use to visit your site, such as yoursite.com. × , billing, and access from one place. Performance : Keep your app fast wherever your users are and keep content fresh with caching , Image CDN CDN A network of servers around the world that delivers your site’s files from the location closest to each visitor. × , and routing and redirects . Security : Protect your apps, users, and sensitive data with Firewall traffic rules , Secrets Controller Secrets Sensitive credentials, like passwords and API keys, that must be kept private. × , Content Security Policy , and automatic DDoS protection. Learn more in our security overview . Observability : Understand what is happening and quickly find what went wrong. Learn more in our monitoring overview and logs docs . Security and governance at scale Section titled “Security and governance at scale” Netlify lets more people build while keeping control on one platform, instead of leaving unprotected apps scattered across your organization. Enterprises get the security, compliance, and access controls IT teams expect, including: SOC 2 compliance and other certifications, documented in the Netlify Trust Center. SAML single sign-on (SSO) and Directory Sync (SCIM) to manage who can access your team. Domain capture to bring everyone who signs up with your company’s email domain into your organization, so new apps don’t end up in unmanaged personal accounts. Role-based access controls and team audit logs to see who changed what. Private sites and password protection to keep internal apps internal. Observability and log drains to monitor how your apps perform in production and send logs to your own tools. Learn more about security on Netlify: Netlify Trust Center Security overview Questions? Section titled “Questions?” Ask Netlify is an AI-powered way to search the docs. Ask it how to get started, troubleshoot an issue, or learn about a specific feature. It draws on product docs, the CLI reference, and key blog posts. To use it, select the search icon on this page and start typing your question. You can also set up the Netlify App for Slack and ask in any channel where the app is added. For account-specific help or issues that need a human, reach out to the Netlify Support team . Join our community Section titled “Join our community” Want to share your app, learn from other builders, or give us feedback? Join our Netlify Builders community . Did you find this doc useful? Your feedback helps us improve our docs. Yes No Do not fill in this field Email (optional) What else would you like to tell us about this doc? I consent to being contacted regarding my feedback Send Ask Netlify"
+    }
+  ],
+  "errors": [],
+  "first_pass": {
+    "auth": "unknown",
+    "credential_gate": "unknown",
+    "api_surface": "unknown",
+    "official_mcp": "unknown",
+    "composio_toolkit": "unknown",
+    "verdict": "unclear",
+    "blocker": "Claim-specific documentation not assessed",
+    "next_action": "Review official documentation and validate each claim",
+    "confidence": "unresolved"
+  },
+  "validation_errors": [
+    "All claim fields require source-specific review"
+  ]
+}

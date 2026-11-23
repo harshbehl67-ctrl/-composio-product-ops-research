@@ -1,0 +1,84 @@
+{
+  "app": {
+    "number": 42,
+    "name": "WooCommerce",
+    "category": "Ecommerce",
+    "hint": "woocommerce.com/document/woocommerce-rest-api"
+  },
+  "checked_at": "2026-11-23T13:42:00.269994+00:00",
+  "query": "WooCommerce developer API authentication documentation",
+  "search_results": [
+    {
+      "title": "WooCommerce",
+      "url": "https://woocommerce.com/",
+      "snippet": "woocommerce.com https:// woocommerce .com WooCommerce WooCommerce is the Open Source commerce platform for WordPress that gives you full control: of your checkout, your data, your … Read more"
+    },
+    {
+      "title": "WooCommerce",
+      "url": "https://woocommerce.com/?locale=en",
+      "snippet": "woocommerce.com https:// woocommerce .com WooCommerce Become a Woo agency. Become a Marketplace partner. Become an affiliate. Resources. Blog. Documentation. WooCommerce site … Read more"
+    },
+    {
+      "title": "WooCommerce – WordPress plugin | WordPress.org",
+      "url": "https://wordpress.org/plugins/woocommerce/",
+      "snippet": "wordpress.org https://wordpress.org › plugins › woocommerce WooCommerce – WordPress plugin | WordPress.org WooCommerce is the open-source ecommerce platform for WordPress. Our core platform is free, flexible, and amplified by a global … Read more"
+    },
+    {
+      "title": "WooCommerce Plugin — WordPress.com",
+      "url": "https://wordpress.com/plugins/woocommerce",
+      "snippet": "wordpress.com https:// wordpress.com › plugins › woocommerce WooCommerce Plugin — WordPress.com WooCommerce is the open-source ecommerce platform for WordPress. Our core platform is free, flexible, and amplified by a global … Read more"
+    },
+    {
+      "title": "Homepage - WooCommerce",
+      "url": "https://sandbox.woocommerce.com/",
+      "snippet": "woocommerce.com https://sandbox. woocommerce .com Homepage - WooCommerce No matter what success looks like for you, you can do it with WooCommerce. Our WordPress-based ecommerce platform helps … Read more"
+    },
+    {
+      "title": "WooCommerce - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/WooCommerce",
+      "snippet": "wikipedia.org https:// en.wikipedia.org › wiki › WooCommerce WooCommerce - Wikipedia WooCommerce is an application-layer extension for WordPress and operates independently of the underlying hosting infrastructure. … Read more"
+    },
+    {
+      "title": "Set up an online store with WooCommerce - WordPress.com Support",
+      "url": "https://wordpress.com/support/introduction-to-woocommerce/",
+      "snippet": "wordpress.com https:// wordpress.com › support › introduction-to- woocommerce Set up an online store with WooCommerce - WordPress.com Support Oct 21, 2026 · WooCommerce is an e-commerce plugin for WordPress that turns your site into an online store. It adds product … Read more"
+    },
+    {
+      "title": "GitHub - woocommerce / woocommerce : A customizable, open …",
+      "url": "https://github.com/woocommerce/woocommerce",
+      "snippet": "github.com https:// github.com › woocommerce › woocommerce GitHub - woocommerce / woocommerce : A customizable, open … Welcome to the WooCommerce monorepo on GitHub. Here you can find all of the plugins, packages, and tools used in the … Read more"
+    },
+    {
+      "title": "WooCommerce 10.8.0 Release Notes",
+      "url": "https://developer.woocommerce.com/2026/05/26/woocommerce-10-8-0-release/",
+      "snippet": "woocommerce.com https://developer. woocommerce .com WooCommerce 10.8.0 Release Notes May 26, 2026 · WooCommerce 10.8 adds custom shipping providers: define your own shipping carriers with name and tracking URL … Read more"
+    },
+    {
+      "title": "WooCommerce 11.2.0: Release notes",
+      "url": "https://developer.woocommerce.com/2026/10/07/woocommerce-11-2-0-release-notes/",
+      "snippet": "woocommerce.com https://developer. woocommerce .com WooCommerce 11.2.0: Release notes Oct 7, 2026 · Browse our update guide for more details on how to update to the latest version of WooCommerce."
+    }
+  ],
+  "retrievals": [
+    {
+      "url": "https://developer.woocommerce.com/2026/05/26/woocommerce-10-8-0-release/",
+      "status": 200,
+      "text": "WooCommerce 10.8.0 Release Notes Releases – The WooCommerce Developer Blog WooCommerce 10.8.0 Release Notes Shani Banerjee • May 26, 2026 Releases WooCommerce 10.8 has been released on May 26, 2026. This post highlights what’s new in this version of WooCommerce. See our update guide . Download directly from WordPress.org. Other important information: 📀 This release does include database updates . See more Current Stable Tag 👉 WooCommerce 10.8.1 About: ✅ Backwards compatible PRs : 176 Contributors : 67 What’s in the 10.8 release New since the beta Ready for WordPress 7.0 An offline-aware admin Storefront performance Other notable updates: API updates Database updates Changelog Get WooCommerce 10.8 Code Contributors New since the beta If you tested the 10.8 beta, a few things changed before final release that are worth knowing about. Checkout evidence validation was reverted. The checkout evidence validation added to WC_Order::payment_complete() during the 10.8 cycle ( #62843 ) has been reverted ( #64687 ). If you were tracking that change, it is not part of the 10.8 release. An order meta index regression was fixed. A change earlier in the cycle modified the meta_key_value index on the wc_orders_meta table. 10.8 restores the meta_value column to that index to fix a performance regression in order meta lookups ( #65162 ). WordPress 6.9 is now the minimum. WooCommerce 10.8 requires WordPress 6.9 or greater ( #65211 ). Make sure WordPress is up to date before updating WooCommerce. Ready for WordPress 7.0 10.8 includes around fifteen pull requests aligning Woo’s admin with WordPress 7.0 styling: form control sizing, Select2 dropdowns, button radii, notice colors, and meta box styling. Hardcoded admin blues in legacy Select2 and address autocomplete stylesheets were also replaced with the admin theme color variable, so borders and hover states follow whatever color scheme you’ve set. Update WordPress and Woo together and the admin looks consistent. An offline-aware admin WooCommerce admin now shows a banner when your browser loses its connection, and surfaces a clear notice when save requests fail because of network loss ( #64334 ). No more silent save failures on an unreliable connection. Storefront performance 10.8 continues the query-reduction work from 10.7: New indexes on the wc_orders table (transaction ID lookups) and wc_reserved_stock table (peak-sales stock reservation) Cache priming across product archives, the product edit screen, the classic cart, grouped products, and the Store API product schema, so these paths batch-load data instead of querying row by row Fewer SQL queries to populate cart data in the Store API Coupon _used_by meta is now lazy-loaded, so coupons with thousands of usages no longer load the entire usage history into memory on construction Layered navigation filter caches are capped by default to protect wp_options from unbounded growth Other notable updates: Customer review request email Add – New Customer Review Request email: automated post-purchase review requests with accessible 5-star rating controls and a Review Order page. #64701 10.8 adds an optional transactional email that invites customers to review the products they bought. It’s disabled by default and feature-gated, configurable under WooCommerce → Settings → Emails. The email is scheduled through Action Scheduler a configurable number of days after an order completes, and is cancelled automatically if the order is later cancelled, refunded, or trashed. Customers land on a tokenized, read-only review page with an accessible 5-star rating control, and submissions become verified-buyer product reviews. Fully refunded items are excluded so customers can’t review products they no longer own. This feature is off by default in 10.8; if you want to try it, enable it in your store’s feature settings. Coupon code auto-generation in email blocks Add – Coupon code email block now supports auto-generation mode: configure coupon rules to generate unique codes at email send time. #64342 The coupon code email block now supports auto-generation mode. Store owners can configure coupon rules (discount amount, type, expiry) and WooCommerce will generate a unique code for each recipient at email send time, making personalized coupon campaigns much easier to manage. Email template sync & reset Add – Email template sync metadata and reset: reset block email content to the original plugin state and track template divergence with version stamping. #64355 WooCommerce 10.8 introduces a new email template sync system: block email posts now carry version metadata (version, source hash, synced-at), enabling automatic detection of template divergence. A new reset action lets store owners restore email content to the original plugin-distributed state with one click. Performance improvements Performance – Multiple N+1 query reductions: cart data, REST API order serialization, linked products meta box, and HPOS order queries now batch-load data via cache priming. #63440 This release brings performance improvements: cache priming for HPOS order queries eliminates N+1 queries in REST API serialization, Store API product last-modified timestamps are now cached, shipping table indexes improve cart and checkout performance, and multiple batch-loading improvements reduce SQL queries across the codebase. Custom Shipping Providers Add – Custom shipping providers: new settings UI to define custom providers with tracking URL templates. #63879 WooCommerce 10.8 adds custom shipping providers: define your own shipping carriers with name and tracking URL template, filter orders by provider, and track shipments with customized links. Customer Account Dropdown Navigation Enhancement – Customer Account block now supports optional dropdown navigation: display account menu links in a dropdown. #63301 The Customer Account block in 10.8 supports optional dropdown navigation, allowing store owners to display account menu links in a collapsible dropdown for a cleaner header on mobile and desktop. See more info API updates PUT /wc/v(2|3)/orders/{id} now rejects requests against non- shop_order records instead of converting them into orders ( #64050 ) Checkout-draft orders are excluded from default REST API order queries ( status=any ); consumers must now request them explicitly with status=checkout-draft ( #63743 ) Orders REST API schema descriptions clarify tax inclusion/exclusion, and a total_tax field was added to inline refund data ( #63692 ) Sensitive fields (downloads, COGS, purchase note) are now stripped from the V4 products REST API response for users without product management capabilities ( #63895 ) Fixed missing handling for null meta keys/values in POST/PUT endpoints ( #63971 ) Fixed unauthenticated access to guest order fulfillments via the REST API ( #64130 ) Fixed the Store API products endpoint allowing transient bloat via arbitrary product IDs in the related query parameter ( #63846 ) Introduced the dual code + GraphQL API for WooCommerce ( #63772 ) Added a GraphQL settings section under Advanced with a toggle for the GET endpoint ( #64293 ) Made the GraphQL engine externally usable ( #64390 ) Internalized the webonyx GraphQL package ( #64317 ) New product.published webhook topic that runs when a product is published ( #63555 ) New server-side POST /woocommerce-email-editor/v1/emails/{id}/reset endpoint that rewrites an email post to its current core template render and stamps sync metadata ( #64355 ) Database updates wc_update_1080_backfill_email_template_sync_meta ( #64364 ) — Backfills sync metadata onto pre-existing block email posts so 10.8’s divergence detector can safely classify whether each one has drifted from its source template. wc_update_1080_migrate_analytics_import_option ( #63808 ) — Restores the scheduled analytics import preference that was lost when the underlying option was renamed in WooCommerce 10.5.0. wc_update_1080_slim_orders_meta_key_index ( #63897 ) — Modifies the meta_key_value index on the wp_wc_orders_meta table to track only the meta_key column (note: later corrected by #65162 , which restores the meta_value column after a performance regression). wc_update_1080_create_review_order_page ( #64628 ) — Creates the tokenized, read-only landing page used by the new Customer Review Request feature. Changelog View the full changelog . Get WooCommerce 10.8 👉 To upgrade: See our update guide or download the latest release from WordPress.org . 🐞 Found a Bug? Please submit a report it on GitHub . Code Contributors KokkieH deepaklalwani97 Mayisha amitraj2203 Lovor01 ralucaStan oaratovskyi chihsuan annchichi masteradhoc faisuc triple0t senadir htdat kalessil dinhtungdu bhavz-10 louwie17 PZ01 mikejolley jamesckemp dmallory42 samueljseay albarin prettyboymp pavel-mailpoet sunyatasattva Abdalsalaam yuliyan robfelty lucatume nerrad raicem davidmcguiredesign lysyjan NeosinneR arcangelini jorgeatorres dilirity Copilot ObliviousHarmony kmanijak Ferdev hannahtinkler j111q SantosGuillamot webdados Konamiman tpaksu mehrazmorshed gigitux bacoords Aljullu opr tyxla bor0 bruberries kraftbj wjrosa mcliwanow rafael-minuesa vladolaru budzanowski shsajalchowdhury allilevine elazzabi Share this: Share on Tumblr (Opens in new window) Tumblr Share on X (Opens in new window) X Share on LinkedIn (Opens in new window) LinkedIn Share on Facebook (Opens in new window) Facebook Like this: Like Loading… Leave a Reply Cancel reply Your email address will not be published. Required fields are marked * Comment * Name * Email * Website Save my name, email, and website in this browser for the next time I comment. Notify me of follow-up comments by email. Notify me of new posts by email. Δ %d"
+    }
+  ],
+  "errors": [],
+  "first_pass": {
+    "auth": "unknown",
+    "credential_gate": "unknown",
+    "api_surface": "unknown",
+    "official_mcp": "unknown",
+    "composio_toolkit": "unknown",
+    "verdict": "unclear",
+    "blocker": "Claim-specific documentation not assessed",
+    "next_action": "Review official documentation and validate each claim",
+    "confidence": "unresolved"
+  },
+  "validation_errors": [
+    "All claim fields require source-specific review"
+  ]
+}

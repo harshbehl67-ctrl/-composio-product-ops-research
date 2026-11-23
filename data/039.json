@@ -1,0 +1,80 @@
+{
+  "app": {
+    "number": 39,
+    "name": "Threads (Meta)",
+    "category": "Marketing, Ads, Email and Social",
+    "hint": "developers.facebook.com/docs/threads"
+  },
+  "checked_at": "2026-11-23T13:41:59.409594+00:00",
+  "query": "Threads (Meta) developer API authentication documentation",
+  "search_results": [
+    {
+      "title": "Google",
+      "url": "https://www.google.com/",
+      "snippet": "google.com https://www.google.com Google Search the world's information, including webpages, images, videos and more. Google has many special features to help you find … Read more"
+    },
+    {
+      "title": "Google Search",
+      "url": "https://ogs.google.com/widget/empty",
+      "snippet": "google.com https://ogs.google.com › widget › empty Google Search Google Search provides a fast, easy way to find information, images, videos and more across the web."
+    },
+    {
+      "title": "Google račun Pomoć",
+      "url": "https://support.google.com/accounts/?hl=hr",
+      "snippet": "google.com https://support.google.com › accounts Google račun Pomoć Službeni Google račun Centar za pomoć u kojem možete pronaći savjete i poduku o korištenju proizvoda i druge odgovore na često … Read more"
+    },
+    {
+      "title": "Welcome To Colab - Colab",
+      "url": "https://colab.research.google.com/drive/",
+      "snippet": "google.com https://colab.research.google.com › drive Welcome To Colab - Colab Colab, or \"Colaboratory\", allows you to write and execute Python in your browser, with Zero configuration required Access to GPUs … Read more"
+    },
+    {
+      "title": "Google Bilder",
+      "url": "https://images.google.com/?hl=no",
+      "snippet": "google.com https://images.google.com Google Bilder Google Foto. Det mest omfattende bildesøket på Internett."
+    },
+    {
+      "title": "Google Store med enheder og tilbehør fra Google",
+      "url": "https://store.google.com/dk/?hl=da",
+      "snippet": "google.com https://store.google.com › dk Google Store med enheder og tilbehør fra Google Find de nyeste Chromecasts, telefoner, højttalere og smartskærme i Google Store."
+    },
+    {
+      "title": "Share profile - Google Skills Help",
+      "url": "https://support.google.com/qwiklabs/answer/9222527?hl=en",
+      "snippet": "google.com https://support.google.com › qwiklabs › answer Share profile - Google Skills Help Why make your profile public? When you make your profile public, you can share your accomplishments with others. Your public … Read more"
+    },
+    {
+      "title": "Google បកប្រែ",
+      "url": "https://translate.google.com/?hl=km",
+      "snippet": "google.com https://translate.google.com Google បកប្រែ សេវាកម្មរបស់ Google ដែលត្រូវបានផ្ដល់ជូនដោយឥតគិតថ្លៃ ... Read more"
+    },
+    {
+      "title": "مرحبًا بك في \"نشاطي\"",
+      "url": "https://myactivity.google.com/?hl=ar",
+      "snippet": "google.com https://myactivity.google.com مرحبًا بك في \"نشاطي\" مرحبًا بك في \"نشاطي\" تساعد البيانات في جعل خدمات Google مفيدة أكثر بالنسبة لك. يمكنك تسجيل الدخول لمراجعة نشاطك وإدارته، بما في ذلك المواضيع التي بحثت عنها والمواقع الإلكترونية التي … Read more"
+    },
+    {
+      "title": "Google Dashboard",
+      "url": "https://account.google.com/dashboard",
+      "snippet": "google.com https://account.google.com › dashboard Google Dashboard Sign in to see and manage the data in your Google Account"
+    }
+  ],
+  "retrievals": [],
+  "errors": [
+    "No candidate documentation on hint domain found; review required"
+  ],
+  "first_pass": {
+    "auth": "unknown",
+    "credential_gate": "unknown",
+    "api_surface": "unknown",
+    "official_mcp": "unknown",
+    "composio_toolkit": "unknown",
+    "verdict": "unclear",
+    "blocker": "Claim-specific documentation not assessed",
+    "next_action": "Review official documentation and validate each claim",
+    "confidence": "unresolved"
+  },
+  "validation_errors": [
+    "All claim fields require source-specific review"
+  ]
+}

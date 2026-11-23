@@ -1,0 +1,80 @@
+{
+  "app": {
+    "number": 15,
+    "name": "Pylon",
+    "category": "Support and Helpdesk",
+    "hint": "usepylon.com"
+  },
+  "checked_at": "2026-11-23T13:41:52.106471+00:00",
+  "query": "Pylon developer API authentication documentation",
+  "search_results": [
+    {
+      "title": "butterfly 中文音译歌词 - 百度知道",
+      "url": "https://zhidao.baidu.com/question/409663379.html",
+      "snippet": "baidu.com https://zhidao.baidu.com › question butterfly 中文音译歌词 - 百度知道 butterfly 中文音译歌词建议楼主稍微学下五十音，你喜欢的日本歌不会只有一个吧？难道要一次一次的音译？中文音译尤其让人 ... Read more"
+    },
+    {
+      "title": "荧光强度英文在图中怎么表示 - 百度知道",
+      "url": "https://zhidao.baidu.com/question/929572146582927179.html",
+      "snippet": "baidu.com https://zhidao.baidu.com › question 荧光强度英文在图中怎么表示 - 百度知道 Jun 12, 2023 · FI。荧光强度的英文可以用FluorescenceIntensity来表示，缩写为FI。在图中，可以使用FI或FluorescenceIntensity来标 … Read more"
+    },
+    {
+      "title": "dnf光属性强化宝珠20叫什么 - 百度知道",
+      "url": "https://zhidao.baidu.com/question/660438037244299605.html",
+      "snippet": "baidu.com https://zhidao.baidu.com › question dnf光属性强化宝珠20叫什么 - 百度知道 Dec 20, 2024 · 在《地下城与勇士》（DNF）中，光属性强化宝珠的等级分为18光强和20光强两种。18光强的宝珠可以通过升级方式 … Read more"
+    },
+    {
+      "title": "rfu是什么意思 - 百度知道",
+      "url": "https://zhidao.baidu.com/question/1894630501756244108.html",
+      "snippet": "baidu.com https://zhidao.baidu.com › question rfu是什么意思 - 百度知道 Jul 18, 2024 · rfu是什么意思RFU（Relative Fluorescence Units）是一种计量方法，用于测量荧光的强度。荧光是很多生物学实验中 … Read more"
+    },
+    {
+      "title": "\"荧光\"的英文是什么? - 百度知道",
+      "url": "https://zhidao.baidu.com/question/2913496.html",
+      "snippet": "baidu.com https://zhidao.baidu.com › question \"荧光\"的英文是什么? - 百度知道 百度网友2b307f36b 2006-01-17 · 超过32用户采纳过TA的回答"
+    },
+    {
+      "title": "荧光的英文 - 百度知道",
+      "url": "https://zhidao.baidu.com/question/2085360540069532108.html",
+      "snippet": "baidu.com https://zhidao.baidu.com › question 荧光的英文 - 百度知道 荧光的英文fluorescence。一、Fluorescent lamps的短语。1、cold cathode fluorescent lamps 冷阴极荧光灯 ; 冷阴极荧光灯管 ; 冷阴 … Read more"
+    },
+    {
+      "title": "荧光绿是什么颜色 - 百度知道",
+      "url": "https://zhidao.baidu.com/question/1506955247970580179.html",
+      "snippet": "baidu.com https://zhidao.baidu.com › question 荧光绿是什么颜色 - 百度知道 May 21, 2024 · 荧光绿是什么颜色荧光绿是一种明亮且充满活力的颜色，它在色彩搭配中极为抢眼，只需适量使用，便能让造型显得时 … Read more"
+    },
+    {
+      "title": "锦鲤抄歌词 - 百度知道",
+      "url": "https://zhidao.baidu.com/question/587637912.html",
+      "snippet": "baidu.com https://zhidao.baidu.com › question 锦鲤抄歌词 - 百度知道 Aug 31, 2013 · 锦鲤抄 歌手：洛天依 所属专辑：洛天依作品集 蝉声陪伴着行云流浪 回忆开始后安静遥望远方 荒草复没的古井枯塘 匀 … Read more"
+    },
+    {
+      "title": "火箭队出场的经典台词？ - 百度知道",
+      "url": "https://zhidao.baidu.com/question/298410128.html",
+      "snippet": "baidu.com https://zhidao.baidu.com › question 火箭队出场的经典台词？ - 百度知道 火箭队简介： 1、火箭队是《神奇宝贝》口袋妖怪里的一个邪恶组织，由一个老板 (也就是 坂木)统治着几只小队，以颜色命名，通常 … Read more"
+    },
+    {
+      "title": "恰好的歌词是什么？ - 百度知道",
+      "url": "https://zhidao.baidu.com/question/1586192130419292820.html",
+      "snippet": "baidu.com https://zhidao.baidu.com › question 恰好的歌词是什么？ - 百度知道 Apr 4, 2024 · 恰好的歌词是： 只怪 荧光太斑驳 空气中 太多琢磨 怎样相觑 才不为过火 碾碎 累赘的线索 为情景 放任交错 不屑结果 只 … Read more"
+    }
+  ],
+  "retrievals": [],
+  "errors": [
+    "No candidate documentation on hint domain found; review required"
+  ],
+  "first_pass": {
+    "auth": "unknown",
+    "credential_gate": "unknown",
+    "api_surface": "unknown",
+    "official_mcp": "unknown",
+    "composio_toolkit": "unknown",
+    "verdict": "unclear",
+    "blocker": "Claim-specific documentation not assessed",
+    "next_action": "Review official documentation and validate each claim",
+    "confidence": "unresolved"
+  },
+  "validation_errors": [
+    "All claim fields require source-specific review"
+  ]
+}

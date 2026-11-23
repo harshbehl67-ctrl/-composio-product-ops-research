@@ -1,0 +1,55 @@
+{
+  "app": {
+    "number": 60,
+    "name": "Clay",
+    "category": "Data, SEO and Scraping",
+    "hint": "clay.com"
+  },
+  "checked_at": "2026-11-23T13:42:03.607397+00:00",
+  "query": "Clay developer API authentication documentation",
+  "search_results": [
+    {
+      "title": "Home [partner.fino.bank.in]",
+      "url": "https://partner.fino.bank.in/index.html",
+      "snippet": "bank.in https://partner.fino.bank.in › index.html Home [partner.fino.bank.in] Important Announcement Dear Merchant, Insurance Products are live now on web portal (main portal) & Mitra App. Merchants are … Read more"
+    },
+    {
+      "title": "Banking Services - FINO Payment Bank",
+      "url": "https://partner.fino.bank.in/?redirect=CMS/&user=170256560823",
+      "snippet": "bank.in https://partner.fino.bank.in Banking Services - FINO Payment Bank Dear customer, if you are interested to buy insurance from Fino Payments Bank, then please login and choose Insurance from the … Read more"
+    },
+    {
+      "title": "Walkin Customer - DMT Charges wef 6st Oct 25 - partner.fino.bank.in",
+      "url": "https://partner.fino.bank.in/Resources/Revised-Customer-Charges-WalkinDMT-&-FullKYCSuvidha.pdf",
+      "snippet": "bank.in https://partner.fino.bank.in › Resources › Revised-Customer-Ch… · PDF file Walkin Customer - DMT Charges wef 6st Oct 25 - partner.fino.bank.in Walkin Customer – DMT Charges with effect from 6th Oct 25"
+    },
+    {
+      "title": "Banking Services - FINO Payment Bank",
+      "url": "https://partner.fino.bank.in/?redirect=CMS/&user=148527294",
+      "snippet": "bank.in https://partner.fino.bank.in Banking Services - FINO Payment Bank Angularjs, Html5, Music, Landing, 4 in 1 ui kits package"
+    },
+    {
+      "title": "partner.fino.bank.in",
+      "url": "https://partner.fino.bank.in/TestCameraBio.html",
+      "snippet": "bank.in https://partner.fino.bank.in › TestCameraBio.html partner.fino.bank.in Micro Atm Pax Host Resolve Download Mantra Setup"
+    }
+  ],
+  "retrievals": [],
+  "errors": [
+    "No candidate documentation on hint domain found; review required"
+  ],
+  "first_pass": {
+    "auth": "unknown",
+    "credential_gate": "unknown",
+    "api_surface": "unknown",
+    "official_mcp": "unknown",
+    "composio_toolkit": "unknown",
+    "verdict": "unclear",
+    "blocker": "Claim-specific documentation not assessed",
+    "next_action": "Review official documentation and validate each claim",
+    "confidence": "unresolved"
+  },
+  "validation_errors": [
+    "All claim fields require source-specific review"
+  ]
+}

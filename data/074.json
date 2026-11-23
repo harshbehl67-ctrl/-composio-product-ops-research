@@ -1,0 +1,80 @@
+{
+  "app": {
+    "number": 74,
+    "name": "Jira",
+    "category": "Productivity and Project Management",
+    "hint": "developer.atlassian.com"
+  },
+  "checked_at": "2026-11-23T13:42:06.393152+00:00",
+  "query": "Jira developer API authentication documentation",
+  "search_results": [
+    {
+      "title": "Jira : Project Management for the AI Era - Atlassian",
+      "url": "https://www.atlassian.com/software/jira",
+      "snippet": "atlassian.com https://www. atlassian .com › software › jira Jira : Project Management for the AI Era - Atlassian Jira brings teams together to reach the next level of productivity with AI agents that orchestrate, plan, and track projects at scale."
+    },
+    {
+      "title": "Log in with Atlassian account",
+      "url": "https://id.atlassian.com/login",
+      "snippet": "atlassian.com https://id.atlassian.com Log in with Atlassian account Log in to Jira, Confluence, and all other Atlassian Cloud products here. Not an Atlassian user? Sign up for free."
+    },
+    {
+      "title": "Jira",
+      "url": "https://appdirect.jira.com/secure/Dashboard.jspa",
+      "snippet": "jira.com https://appdirect. jira .com › secure › Dashboard .jspa Jira Jira ... Jira"
+    },
+    {
+      "title": "Unlock your team's best work with Jira Software",
+      "url": "https://jira.atlassian.com/",
+      "snippet": "atlassian.com https:// jira .atlassian.com Unlock your team's best work with Jira Software Find issues, track progress, and collaborate efficiently."
+    },
+    {
+      "title": "Jira - Atlassian",
+      "url": "https://connect.atlassian.net/jira/your-work",
+      "snippet": "atlassian.net https://connect.atlassian.net › jira › your-work Jira - Atlassian Access and manage your tasks, projects, and team collaboration efficiently with Jira by Atlassian."
+    },
+    {
+      "title": "Jira (software ) - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Jira_(software)",
+      "snippet": "wikipedia.org https:// en.wikipedia.org › wiki › Jira_(software ) Jira (software ) - Wikipedia Jira (/ ˈdʒiːrə / JEE-rə, [4] formerly stylized JIRA) is a software product developed by Atlassian that allows bug tracking, issue … Read more"
+    },
+    {
+      "title": "Jira Software",
+      "url": "https://jira.atlassian.com/i",
+      "snippet": "atlassian.com https:// jira .atlassian.com Jira Software Jira Software is a powerful tool for agile project management, issue tracking, and team collaboration, designed to enhance … Read more"
+    },
+    {
+      "title": "Spaces - Open Studio - JIRA Studio for OSS",
+      "url": "https://open.jira.com/",
+      "snippet": "jira.com https://open. jira .com Spaces - Open Studio - JIRA Studio for OSS Atlassian uses cookies to improve your browsing experience, perform analytics and research, and conduct advertising. Accept all … Read more"
+    },
+    {
+      "title": "How to Use Jira : An Introduction | Atlassian",
+      "url": "https://www.atlassian.com/software/jira/guides/getting-started/basics",
+      "snippet": "atlassian.com https://www. atlassian .com › software › jira › guides › getting-started › basics How to Use Jira : An Introduction | Atlassian Jira is a project management tool for any team in your organization—from product to marketing and beyond—that needs to plan, … Read more"
+    },
+    {
+      "title": "Collaboration software for software, IT and business teams | Atlassian",
+      "url": "https://www.atlassian.com/software/jira/free",
+      "snippet": "atlassian.com https://www. atlassian .com › software › jira › free Collaboration software for software, IT and business teams | Atlassian Collaboration software for software, IT and business teams | Atlassian"
+    }
+  ],
+  "retrievals": [],
+  "errors": [
+    "No candidate documentation on hint domain found; review required"
+  ],
+  "first_pass": {
+    "auth": "unknown",
+    "credential_gate": "unknown",
+    "api_surface": "unknown",
+    "official_mcp": "unknown",
+    "composio_toolkit": "unknown",
+    "verdict": "unclear",
+    "blocker": "Claim-specific documentation not assessed",
+    "next_action": "Review official documentation and validate each claim",
+    "confidence": "unresolved"
+  },
+  "validation_errors": [
+    "All claim fields require source-specific review"
+  ]
+}

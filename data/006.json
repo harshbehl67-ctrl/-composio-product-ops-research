@@ -1,0 +1,84 @@
+{
+  "app": {
+    "number": 6,
+    "name": "Podio",
+    "category": "CRM and Sales",
+    "hint": "podio.com"
+  },
+  "checked_at": "2026-11-23T13:41:50.792990+00:00",
+  "query": "Podio developer API authentication documentation",
+  "search_results": [
+    {
+      "title": "Login | Podio",
+      "url": "https://podio.com/login",
+      "snippet": "podio.com https:// podio .com › login Login | Podio Progress Podio is the online work platform. Manage, share, and get your work done smarter together with tools that work like you. … Read more"
+    },
+    {
+      "title": "Work Management Platform | Streamline Collaboration & Workflows | Podio",
+      "url": "https://www.podio.com/",
+      "snippet": "podio.com https://www. podio .com Work Management Platform | Streamline Collaboration & Workflows | Podio Podio supports building digital workspaces tailored to your team's unique processes. Whether you're tracking leads, managing … Read more"
+    },
+    {
+      "title": "Podio - Progress Software",
+      "url": "https://www.progress.com/podio",
+      "snippet": "progress.com https://www.progress.com › podio Podio - Progress Software Build custom workspaces, automate workflows, and boost team productivity with Podio—your flexible no-code platform for smarter … Read more"
+    },
+    {
+      "title": "Welcome to Podio - Progress Software",
+      "url": "https://www.progress.com/podio/documentation/welcome",
+      "snippet": "progress.com https://www.progress.com › podio › documentation Welcome to Podio - Progress Software Podio is a flexible work platform that helps teams organize projects, processes, and information in one place. Build a workspace that … Read more"
+    },
+    {
+      "title": "Podio - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Podio",
+      "snippet": "wikipedia.org https:// en.wikipedia.org › wiki › Podio Podio - Wikipedia Podio supplies a web-based platform for creating no code solutions and automated workflows. The feature set includes organizing … Read more"
+    },
+    {
+      "title": "Progress Podio Workflow Automation",
+      "url": "https://workflow-automation.podio.com/",
+      "snippet": "podio.com https://workflow-automation. podio .com Progress Podio Workflow Automation Boost productivity and save man hours by automating pretty much anything you can think of in your Progress Podio account. … Read more"
+    },
+    {
+      "title": "Log In to your Podio account",
+      "url": "https://workflow-automation.podio.com/login.php",
+      "snippet": "podio.com https://workflow-automation. podio .com › login.php Log In to your Podio account Nov 26, 2018 · Progress Podio workflow automation. Set Automatic Triggers, Filters, and Actions. And Build Charts and Graphs of … Read more"
+    },
+    {
+      "title": "Developers - Podio API Documentation",
+      "url": "https://developers.podio.com/",
+      "snippet": "podio.com https://developers. podio .com Developers - Podio API Documentation The Podio API is a complete programmable interface to all Podio functionality. We currently provide wrappers for PHP, .NET, Ruby, … Read more"
+    },
+    {
+      "title": "Concepts and conventions: The core concepts of Podio - Podio API ...",
+      "url": "https://developers.podio.com/index/overview",
+      "snippet": "podio.com https://developers. podio .com › index › overview Concepts and conventions: The core concepts of Podio - Podio API ... Tasks can be added to almost anything in Podio. They will appear in relation to the item but will also be aggregated to the user's … Read more"
+    },
+    {
+      "title": "Podio",
+      "url": "https://podio.com/signup",
+      "snippet": "podio.com https:// podio .com › signup Podio Podio Good decision. Create your free account and join over 500,000 teams getting their work done on Podio. Your work email … Read more"
+    }
+  ],
+  "retrievals": [
+    {
+      "url": "https://developers.podio.com/",
+      "status": 200,
+      "text": "Developers - Podio API Documentation Podio Getting started The core concepts of Podio API conventions and structure Rate limits FAQ Get an API key Authentication API Reference Tutorials Client Libraries Developer Forums Partner Extensions Terms of Use Getting started with Podio API The Podio API lets you integrate with other services and build tools and applications on top of Podio 1 Get an API Key Get started right away - generate your API key . 2 Browse the documentation Learn how the API works and what it can do . 3 Go live! Share your project - get featured in our showcase . What is the Podio API? The Podio API is a complete programmable interface to all Podio functionality. We currently provide wrappers for PHP , .NET , Ruby , Java , Python , Android and Objective-C which make working with common API operations very simple. What can you do with it? Quite a lot! In fact, the entire Podio frontend is built on the API, and we've exposed it all for you to use too. If you want to build event-driven applications, you have the ability to register webhooks in your Podio apps. There are some sensible rate-limits in place, but if you need us to raise them for your app, get in touch. How do I get started? You'll need a Podio account, first of all. Then you should review our Terms of API use and then grab an API key for each app you want to build from your account settings page. We recommend that you start out by getting to know the concepts and conventions of Podio and its API and learn how to authenticate with us, before you dive into the tutorials and the documentation . You will probably also want to look at our client libraries to see if we have one available for your prefered language or platform. If you need a hand, please post in the API developer forum ."
+    }
+  ],
+  "errors": [],
+  "first_pass": {
+    "auth": "unknown",
+    "credential_gate": "unknown",
+    "api_surface": "unknown",
+    "official_mcp": "unknown",
+    "composio_toolkit": "unknown",
+    "verdict": "unclear",
+    "blocker": "Claim-specific documentation not assessed",
+    "next_action": "Review official documentation and validate each claim",
+    "confidence": "unresolved"
+  },
+  "validation_errors": [
+    "All claim fields require source-specific review"
+  ]
+}

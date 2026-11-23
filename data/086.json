@@ -1,0 +1,75 @@
+{
+  "app": {
+    "number": 86,
+    "name": "QuickBooks",
+    "category": "Finance and Fintech",
+    "hint": "developer.intuit.com"
+  },
+  "checked_at": "2026-11-23T13:42:07.503062+00:00",
+  "query": "QuickBooks developer API authentication documentation",
+  "search_results": [
+    {
+      "title": "QuickBooks Online Login: Sign in to Access Your QuickBooks Account",
+      "url": "https://quickbooks.intuit.com/login/?msockid=0e5b541f0a4f63142a894c050b7f6212",
+      "snippet": "intuit.com https:// quickbooks.intuit.com › login QuickBooks Online Login: Sign in to Access Your QuickBooks Account QuickBooks makes online accounting easy. Log in to your QuickBooks Online account to keep track of the money you spend and to …"
+    },
+    {
+      "title": "QuickBooks ®: Official Site | Smart Tools. Better Business.",
+      "url": "https://quickbooks.intuit.com/?msockid=0e5b541f0a4f63142a894c050b7f6212",
+      "snippet": "intuit.com https:// quickbooks.intuit.com QuickBooks ®: Official Site | Smart Tools. Better Business. QuickBooks connects to your bank and apps to automate bookkeeping, invoicing, bill pay, payroll, and financial reporting. Built-in …"
+    },
+    {
+      "title": "Intuit Accounts - Sign In",
+      "url": "https://accounts.quickbooks.com/index.html",
+      "snippet": "quickbooks.com https://accounts. quickbooks .com › index.html Intuit Accounts - Sign In Intuit, QuickBooks, QB, TurboTax, ProConnect, Credit Karma, and Mailchimp are registered trademarks of Intuit Inc. Terms and …"
+    },
+    {
+      "title": "Intuit Accounts - Sign In - QuickBooks",
+      "url": "https://pws.quickbooks.com/sub/getsvckey",
+      "snippet": "quickbooks.com https://pws. quickbooks .com › sub › getsvckey Intuit Accounts - Sign In - QuickBooks Intuit, QuickBooks, QB, TurboTax, ProConnect, Credit Karma, and Mailchimp are registered trademarks of Intuit Inc. Terms and …"
+    },
+    {
+      "title": "QuickBooks Downloads",
+      "url": "https://downloads.quickbooks.com/app/qbdt/products",
+      "snippet": "quickbooks.com https://downloads. quickbooks .com › app › qbdt › products QuickBooks Downloads Note: If you recently bought QuickBooks from a retail store, use standard setup."
+    },
+    {
+      "title": "QuickBooks - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/QuickBooks",
+      "snippet": "wikipedia.org https:// en.wikipedia.org › wiki › QuickBooks QuickBooks - Wikipedia QuickBooks is an accounting software package developed and marketed by Intuit. First introduced in 1992, QuickBooks is primarily …"
+    },
+    {
+      "title": "Intuit - Your QuickBooks Account",
+      "url": "https://camps.intuit.com/",
+      "snippet": "intuit.com https://camps.intuit.com Intuit - Your QuickBooks Account Welcome to Customer Account Management Portal You can manage all your account maintenance related information for …"
+    },
+    {
+      "title": "QuickBooks Online",
+      "url": "https://qbdtipd.qbinproduct.intuit.com/online/qbo-simple-start/",
+      "snippet": "intuit.com https://qbdtipd.qbinproduct.intuit.com › online › qbo-simple-start QuickBooks Online Can you switch from QuickBooks Desktop to QuickBooks Online easily? Migrate your data quickly and efficiently from any version of …"
+    },
+    {
+      "title": "Intuit QuickBooks Online® Accounting Software Online",
+      "url": "https://onboard.app.intuit.com/",
+      "snippet": "intuit.com https://onboard.app.intuit.com Intuit QuickBooks Online® Accounting Software Online QuickBooks Online offers intuitive accounting software to manage finances, track expenses, and streamline business operations for …"
+    }
+  ],
+  "retrievals": [],
+  "errors": [
+    "No candidate documentation on hint domain found; review required"
+  ],
+  "first_pass": {
+    "auth": "unknown",
+    "credential_gate": "unknown",
+    "api_surface": "unknown",
+    "official_mcp": "unknown",
+    "composio_toolkit": "unknown",
+    "verdict": "unclear",
+    "blocker": "Claim-specific documentation not assessed",
+    "next_action": "Review official documentation and validate each claim",
+    "confidence": "unresolved"
+  },
+  "validation_errors": [
+    "All claim fields require source-specific review"
+  ]
+}

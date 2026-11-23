@@ -1,0 +1,80 @@
+{
+  "app": {
+    "number": 35,
+    "name": "Mailchimp",
+    "category": "Marketing, Ads, Email and Social",
+    "hint": "mailchimp.com/developer"
+  },
+  "checked_at": "2026-11-23T13:41:59.120527+00:00",
+  "query": "Mailchimp developer API authentication documentation",
+  "search_results": [
+    {
+      "title": "Email & SMS Marketing Platform | Mailchimp",
+      "url": "https://mailchimp.com/?msockid=14cca3e31fed66573b0fbbf91e1c6711",
+      "snippet": "mailchimp.com https:// mailchimp.com Email & SMS Marketing Platform | Mailchimp See how Mailchimp helps businesses organize audiences, design emails, and use AI-powered tools to save time. The tour takes just … Read more"
+    },
+    {
+      "title": "Mailchimp",
+      "url": "https://login.mailchimp.com/?msockid=14cca3e31fed66573b0fbbf91e1c6711",
+      "snippet": "mailchimp.com https://login. mailchimp .com Mailchimp We would like to show you a description here but the site won’t allow us. Learn more"
+    },
+    {
+      "title": "Mailchimp",
+      "url": "https://forms.admin.mailchimp.com/Public/Login",
+      "snippet": "mailchimp.com https://forms.admin. mailchimp .com › Public › Login Mailchimp Mailchimp ... Mailchimp"
+    },
+    {
+      "title": "Sign Up for Mailchimp",
+      "url": "https://login.mailchimp.com/signup/?msockid=14cca3e31fed66573b0fbbf91e1c6711",
+      "snippet": "mailchimp.com https://login. mailchimp .com › signup Sign Up for Mailchimp ©2026 Intuit Inc. All rights reserved. Mailchimp® is a registered trademark of The Rocket Science Group, Cookie Preferences, … Read more"
+    },
+    {
+      "title": "The All-in-one Marketing Platform Built for Small Businesses | Mailchimp",
+      "url": "https://mailchimp.com/marketing-platform/?msockid=14cca3e31fed66573b0fbbf91e1c6711",
+      "snippet": "mailchimp.com https:// mailchimp.com › marketing-platform The All-in-one Marketing Platform Built for Small Businesses | Mailchimp Mailchimp started as an email tool and expanded into a full platform. A well-connected marketing ecosystem means less time … Read more"
+    },
+    {
+      "title": "Login | Mailchimp",
+      "url": "https://mailchimp.app.link/aTLHBibqQR",
+      "snippet": "app.link https:// mailchimp .app.link › aTLHBibqQR Login | Mailchimp Mailchimp Login | Mailchimp Become the brand you want to be with smarter marketing built for big things."
+    },
+    {
+      "title": "Welcome to Mailchimp",
+      "url": "https://ls-us.mailchimpapp.com/signup",
+      "snippet": "mailchimpapp.com https://ls-us. mailchimp app.com Welcome to Mailchimp By creating an account, you agree to our and have read and acknowledge the ."
+    },
+    {
+      "title": "Mailchimp Tools & Apps Integration Directory | Mailchimp",
+      "url": "https://connect.mailchimp.com/",
+      "snippet": "mailchimp.com https://connect. mailchimp .com Mailchimp Tools & Apps Integration Directory | Mailchimp Our talented roster of Mailchimp experts can design and implement beautiful, data-driven templates for your brand. Not to mention … Read more"
+    },
+    {
+      "title": "Mailchimp - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Mailchimp",
+      "snippet": "wikipedia.org https:// en.wikipedia.org › wiki › Mailchimp Mailchimp - Wikipedia In addition to needing to purchase Mandrill credits, customers now need to be on a paid Mailchimp monthly plan (the minimum … Read more"
+    },
+    {
+      "title": "Mailchimp Support Options",
+      "url": "https://mailchimp.com/help/mailchimp-support-options/?msockid=14cca3e31fed66573b0fbbf91e1c6711",
+      "snippet": "mailchimp.com https:// mailchimp.com › help › mailchimp -support-options Mailchimp Support Options Learn how to find help with your account, and contact Mailchimp Support through chat or email."
+    }
+  ],
+  "retrievals": [],
+  "errors": [
+    "No candidate documentation on hint domain found; review required"
+  ],
+  "first_pass": {
+    "auth": "unknown",
+    "credential_gate": "unknown",
+    "api_surface": "unknown",
+    "official_mcp": "unknown",
+    "composio_toolkit": "unknown",
+    "verdict": "unclear",
+    "blocker": "Claim-specific documentation not assessed",
+    "next_action": "Review official documentation and validate each claim",
+    "confidence": "unresolved"
+  },
+  "validation_errors": [
+    "All claim fields require source-specific review"
+  ]
+}

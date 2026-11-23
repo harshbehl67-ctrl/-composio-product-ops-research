@@ -1,0 +1,80 @@
+{
+  "app": {
+    "number": 53,
+    "name": "Ahrefs",
+    "category": "Data, SEO and Scraping",
+    "hint": "ahrefs.com/api"
+  },
+  "checked_at": "2026-11-23T13:42:02.880084+00:00",
+  "query": "Ahrefs developer API authentication documentation",
+  "search_results": [
+    {
+      "title": "Summer Vacation (2026) - MyDramaList",
+      "url": "https://mydramalist.com/732363-summer-vacation",
+      "snippet": "mydramalist.com https://mydramalist.com Summer Vacation (2026) - MyDramaList Oct 26, 2026 · Kim Ha Yeon is an ordinary 18-year-old girl who dreams of a life as dramatic as the ones she sees on screen. Her life … Read more"
+    },
+    {
+      "title": "39 Best Places To Visit In Summer In India: Summer Holiday",
+      "url": "https://www.holidify.com/collections/places-to-visit-in-summer-in-india",
+      "snippet": "holidify.com https://www.holidify.com › collections › places-to-visit-in- summer -in-india 39 Best Places To Visit In Summer In India: Summer Holiday Summer is genuinely the best time to be in Kashmir - the Dal Lake is calm and clear, Gulmarg's meadows are green, Pahalgam's … Read more"
+    },
+    {
+      "title": "Summer vacation - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Summer_vacation",
+      "snippet": "wikipedia.org https:// en.wikipedia.org › wiki › Summer_vacation Summer vacation - Wikipedia The terms summer vacation, summer break and summer holiday refer to a school break in the summer between school years and … Read more"
+    },
+    {
+      "title": "Summer Vacation (2026): Episode Guide, Cast & Ending Explained",
+      "url": "https://kdramaworlds.com/k-drama-guide/summer-vacation-2026-episode-guide-cast-ending-explained/",
+      "snippet": "kdramaworlds.com https://kdramaworlds.com › k-drama-guide Summer Vacation (2026): Episode Guide, Cast & Ending Explained 5 days ago · Ha-yeon, an ordinary second-year high school student, heads to Upo-ri with her parents for summer vacation. … Read more"
+    },
+    {
+      "title": "Summer Vacation | Watch with English Subtitles & More | Viki",
+      "url": "https://www.viki.com/tv/41747c-summer-vacation",
+      "snippet": "viki.com https:// www.viki.com › tv Summer Vacation | Watch with English Subtitles & More | Viki Cho Yi Hyun is an ordinary teen who longs for something new – will meeting Jin Young in a countryside village change her life in … Read more"
+    },
+    {
+      "title": "20 Best Places to Visit in Summer in India with Family (Updated 2026)",
+      "url": "https://www.tripplannersindia.com/blog/places-to-visit-in-summer-in-india-with-family",
+      "snippet": "tripplannersindia.com https://www.tripplannersindia.com › blog › places-to-visit-in- summer -in... 20 Best Places to Visit in Summer in India with Family (Updated 2026) Apr 15, 2025 · Explore the best places to visit in India in summer with family 2026! From hill stations to beach getaways, explore top … Read more"
+    },
+    {
+      "title": "30 Best Places to Visit in India in Summers for a Cool Escape!",
+      "url": "https://www.thrillophilia.com/places-to-visit-in-india-in-summers",
+      "snippet": "thrillophilia.com https://www.thrillophilia.com › places-to-visit-in-india-in-summers 30 Best Places to Visit in India in Summers for a Cool Escape! Kashmir, Leh Ladakh, Manali, Gangtok, and Shimla are some cool cities for summer travel in India. These cold places to visit in … Read more"
+    },
+    {
+      "title": "10 Best Summer Holiday Destinations In India (2026)",
+      "url": "https://www.tripplannersindia.com/blog/summer-holiday-destinations-in-india",
+      "snippet": "tripplannersindia.com https://www.tripplannersindia.com › blog › summer -holiday-destinations-in-india 10 Best Summer Holiday Destinations In India (2026) Mar 30, 2026 · A summer vacation spot in India offers a mix of scenic landscapes, peaceful retreats, and engaging activities suitable … Read more"
+    },
+    {
+      "title": "Summer Vacation (TV Series 2026– ) - IMDb",
+      "url": "https://www.imdb.com/title/tt47596978/",
+      "snippet": "imdb.com https:// www.imdb.com › title Summer Vacation (TV Series 2026– ) - IMDb Tells the story of an ordinary 18-year-old high school girl returning to reality after having her mysterious experiences on her summer … Read more"
+    },
+    {
+      "title": "Summer Destinations in India, List of Top 20 Summer Destinations India",
+      "url": "https://www.goindigo.in/get-inspired/must-visit-summer-destinations-in-india.html",
+      "snippet": "goindigo.in https://www.goindigo.in › get-inspired › must-visit- summer -destinations-in... Summer Destinations in India, List of Top 20 Summer Destinations India Apr 4, 2024 · India offers a lot of picturesque beaches as well as calming hill stations. Explore the list of 20 popular summer … Read more"
+    }
+  ],
+  "retrievals": [],
+  "errors": [
+    "No candidate documentation on hint domain found; review required"
+  ],
+  "first_pass": {
+    "auth": "unknown",
+    "credential_gate": "unknown",
+    "api_surface": "unknown",
+    "official_mcp": "unknown",
+    "composio_toolkit": "unknown",
+    "verdict": "unclear",
+    "blocker": "Claim-specific documentation not assessed",
+    "next_action": "Review official documentation and validate each claim",
+    "confidence": "unresolved"
+  },
+  "validation_errors": [
+    "All claim fields require source-specific review"
+  ]
+}

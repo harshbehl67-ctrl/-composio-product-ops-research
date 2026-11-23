@@ -1,0 +1,80 @@
+{
+  "app": {
+    "number": 16,
+    "name": "LiveAgent",
+    "category": "Support and Helpdesk",
+    "hint": "liveagent.com"
+  },
+  "checked_at": "2026-11-23T13:41:52.781997+00:00",
+  "query": "LiveAgent developer API authentication documentation",
+  "search_results": [
+    {
+      "title": "Provider Self-Service - infocenter. humana - military .com",
+      "url": "https://infocenter.humana-military.com/prov/service/Account/Login",
+      "snippet": "humana-military.com https://infocenter. humana - military .com › prov › service › Account › Login Provider Self-Service - infocenter. humana - military .com You will be asked to provide the TIN / EIN and correlating NPI for providers you are adding to your account. Most tools and features …"
+    },
+    {
+      "title": "Log in - Humana Military",
+      "url": "https://www.humanamilitary.com/hmlogin",
+      "snippet": "humanamilitary.com https://www. humanamilitary .com › hmlogin Log in - Humana Military Humana Military offers self-service tools for beneficiaries, providers and government associates. Log in here."
+    },
+    {
+      "title": "TRICARE East Providers | Humana Military",
+      "url": "https://www.humanamilitary.com/provider",
+      "snippet": "humanamilitary.com https://www. humanamilitary .com › provider TRICARE East Providers | Humana Military TRICARE East providers learn more about the programs Humana Military offers to improve and sustain the health of our beneficiaries."
+    },
+    {
+      "title": "Humana Military | TRICARE East",
+      "url": "https://www.humanamilitary.com/",
+      "snippet": "humanamilitary.com https://www. humanamilitary .com Humana Military | TRICARE East Beneficiaries and providers can log into their self-service portals to easily access health care information. You can check claims, …"
+    },
+    {
+      "title": "Humana Healthcare for Providers | Humana",
+      "url": "https://provider.humana.com/",
+      "snippet": "humana.com https:// provider . humana .com Humana Healthcare for Providers | Humana We welcome healthcare providers to receive both professional and practice support. Access key information to help do business with …"
+    },
+    {
+      "title": "Sign up or sign in - provider -account. humana - military .com",
+      "url": "https://provider-account.humana-military.com/prov/sign-in",
+      "snippet": "humana-military.com https:// provider -account. humana - military .com › prov › sign-in Sign up or sign in - provider -account. humana - military .com Log in Log in"
+    },
+    {
+      "title": "Provider Self-Service - infocenter. humana - military .com",
+      "url": "https://infocenter.humana-military.com/prov/service/Account/CreateAccount",
+      "snippet": "humana-military.com https://infocenter. humana - military .com › prov › service › Account › CreateAc… Provider Self-Service - infocenter. humana - military .com This site is for the exclusive use of Humana Military providers, their employees or those rendering services for those providers. …"
+    },
+    {
+      "title": "Provider Certification Status Portal - Humana Military",
+      "url": "https://infocenter.humana-military.com/HGBProvider/ProviderCertificationStatusPortal",
+      "snippet": "humana-military.com https://infocenter. humana - military .com › HGB Provider › Provider ... Provider Certification Status Portal - Humana Military When requesting a status update, please provide the practitioner/facility/ACSP NPI and ZIP Code. If you submitted a certification …"
+    },
+    {
+      "title": "Referrals and Authorizations | Humana Military",
+      "url": "https://www.humanamilitary.com/provider/refsauths",
+      "snippet": "humanamilitary.com https://www. humanamilitary .com › provider › refsauths Referrals and Authorizations | Humana Military Humana Military requires prior authorization for the below services. A reduction in provider payment will be applied for non …"
+    },
+    {
+      "title": "Contact | Humana Military",
+      "url": "https://www.humanamilitary.com/contact",
+      "snippet": "humanamilitary.com https://www. humanamilitary .com › contact Contact | Humana Military Verify patient eligibility, create and review referrals and authorizations, submit claims and check claim status, look up codes, view …"
+    }
+  ],
+  "retrievals": [],
+  "errors": [
+    "No candidate documentation on hint domain found; review required"
+  ],
+  "first_pass": {
+    "auth": "unknown",
+    "credential_gate": "unknown",
+    "api_surface": "unknown",
+    "official_mcp": "unknown",
+    "composio_toolkit": "unknown",
+    "verdict": "unclear",
+    "blocker": "Claim-specific documentation not assessed",
+    "next_action": "Review official documentation and validate each claim",
+    "confidence": "unresolved"
+  },
+  "validation_errors": [
+    "All claim fields require source-specific review"
+  ]
+}

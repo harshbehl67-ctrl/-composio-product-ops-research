@@ -1,0 +1,70 @@
+{
+  "app": "Meta Ads",
+  "query": "site:facebook.com Meta Ads API developer documentation authentication",
+  "checked_at": "2026-11-23T13:45:42.788336+00:00",
+  "results": [
+    {
+      "title": "About Meta | Our Company, Mission, Apps & Products",
+      "url": "https://www.meta.com/about/",
+      "snippet": "meta.com https://www. meta .com › about About Meta | Our Company, Mission, Apps & Products Learn about Meta: our mission, principles, leadership, who owns the company, apps (Instagram, Facebook, WhatsApp, Threads) … Read more"
+    },
+    {
+      "title": "Meta for Business (formerly Facebook for Business)",
+      "url": "https://business.facebook.com/",
+      "snippet": "facebook.com https://business.facebook.com Meta for Business (formerly Facebook for Business) By logging in, you can navigate to all business tools like Meta Business Suite, Ads Manager and more to help you connect with your … Read more"
+    },
+    {
+      "title": "Meta - Facebook",
+      "url": "https://www.facebook.com/Meta/home/",
+      "snippet": "facebook.com https:// www.facebook.com › Meta › home Meta - Facebook 2 days ago · Jerry lost his sight in 2015, and five years later he made his dream of a Texas Hill Country rescue come true. with Ray … Read more"
+    },
+    {
+      "title": "Meta AI - Your AI Assistant for Images, Shopping and More",
+      "url": "https://www.meta.ai/",
+      "snippet": "meta.ai https://www. meta .ai Meta AI - Your AI Assistant for Images, Shopping and More Use Meta AI to get things done. Create AI-generated images for free, edit photos, shop, find places to go, and get answers to any … Read more"
+    },
+    {
+      "title": "Meta Account: Single Login for All Meta Apps and Devices",
+      "url": "https://www.meta.com/account/",
+      "snippet": "meta.com https://www. meta .com › account Meta Account: Single Login for All Meta Apps and Devices Discover Meta Account, your single login for all Meta technologies. Enjoy enhanced security, control, and convenience. Get started … Read more"
+    },
+    {
+      "title": "AI at Meta : Meta AI Products, Models and Research",
+      "url": "https://ai.meta.com/",
+      "snippet": "meta.com https://ai. meta .com AI at Meta : Meta AI Products, Models and Research Sep 8, 2026 · Explore AI at Meta. Meet Muse, our new AI agent that takes tasks off your plate. Use Meta AI for questions and … Read more"
+    },
+    {
+      "title": "Meta",
+      "url": "https://auth.meta.com/login",
+      "snippet": "meta.com https://auth. meta .com › login Meta Meta ... Meta"
+    },
+    {
+      "title": "Meta for Business: Marketing Solutions on Facebook and Instagram",
+      "url": "https://ads.facebook.com/",
+      "snippet": "facebook.com https://ads.facebook.com Meta for Business: Marketing Solutions on Facebook and Instagram Meta for Business provides marketing and advertising tools, tips, best practices, and case studies for using Facebook and Instagram … Read more"
+    },
+    {
+      "title": "Meta AI: Your personal AI assistant & chatbot | Ask, chat & more",
+      "url": "https://ai.meta.com/meta-ai/assistant/",
+      "snippet": "meta.com https://ai. meta .com › meta -ai Meta AI: Your personal AI assistant & chatbot | Ask, chat & more Meta AI is your free personal AI chatbot and assistant. Ask questions, do research, shop, and complete tasks in app, on the web, in … Read more"
+    },
+    {
+      "title": "Meta Platforms - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Meta_Platforms",
+      "snippet": "wikipedia.org https:// en.wikipedia.org › wiki › Meta_Platforms Meta Platforms - Wikipedia Meta Platforms, Inc. (doing business as Meta), headquartered in Menlo Park, California, is an American multinational technology … Read more"
+    }
+  ],
+  "fetches": [
+    {
+      "url": "https://business.facebook.com/business/loginpage/?next=https%3A%2F%2Fbusiness.facebook.com%2F%3Fnav_ref%3Dbiz_unified_f3_login_page_to_mbs&login_options%5B0%5D=FB&login_options%5B1%5D=IG&login_options%5B2%5D=SSO&config_ref=biz_login_tool_flavor_mbs",
+      "status": 200,
+      "text": "Meta for Business (formerly Facebook for Business)"
+    },
+    {
+      "url": "https://www.facebook.com/Meta/home/",
+      "status": 200,
+      "text": "Meta"
+    }
+  ],
+  "errors": []
+}

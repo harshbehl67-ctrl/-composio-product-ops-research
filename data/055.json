@@ -1,0 +1,84 @@
+{
+  "app": {
+    "number": 55,
+    "name": "Apify",
+    "category": "Data, SEO and Scraping",
+    "hint": "docs.apify.com"
+  },
+  "checked_at": "2026-11-23T13:42:03.280425+00:00",
+  "query": "Apify developer API authentication documentation",
+  "search_results": [
+    {
+      "title": "Apify : Marketplace of ready-to-run tools for AI",
+      "url": "https://apify.com/",
+      "snippet": "apify.com https:// apify .com Apify : Marketplace of ready-to-run tools for AI Apify is a marketplace of ready-to-run tools for AI. Get real-time web data, track competitors, generate leads, monitor social media, … Read more"
+    },
+    {
+      "title": "Apify",
+      "url": "https://apify.com/apify",
+      "snippet": "apify.com https:// apify .com › apify Apify Extract Instagram posts, reels, profiles, places, hashtags, carousels, and comments. Get data from Instagram using one or more … Read more"
+    },
+    {
+      "title": "Apify Console",
+      "url": "https://console.apify.com/",
+      "snippet": "apify.com https://console. apify .com Apify Console Manage the Apify platform and your account."
+    },
+    {
+      "title": "Apify MCP server",
+      "url": "https://mcp.apify.com/",
+      "snippet": "apify.com https://mcp. apify .com Apify MCP server Connect Claude, Cursor, and your AI agents with thousands of web scraping and automation tools. Run Actors, access results, and … Read more"
+    },
+    {
+      "title": "What Is Apify ? A Plain Answer, and What It Costs | Use Apify",
+      "url": "https://use-apify.com/docs/what-is-apify",
+      "snippet": "use-apify.com https://use- apify .com › docs › what-is- apify What Is Apify ? A Plain Answer, and What It Costs | Use Apify Sep 9, 2026 · Apify is a cloud platform for web scraping and automation. It runs 70,000+ ready-to-use scrapers (\"Actors\") on … Read more"
+    },
+    {
+      "title": "Apify API | Apify Documentation",
+      "url": "https://docs.apify.com/api/v2",
+      "snippet": "apify.com https://docs. apify .com › api Apify API | Apify Documentation 5 days ago · Apify API The Apify API (version 2) provides programmatic access to the Apify platform. The API is organized around … Read more"
+    },
+    {
+      "title": "Apify Documentation",
+      "url": "https://docs.apify.com/",
+      "snippet": "apify.com https://docs. apify .com Apify Documentation Getting started Apify is all about Actors—a new way to package your code to make it easy to share, integrate, and build upon."
+    },
+    {
+      "title": "Apify Store - 127,000+ web data and automation tools · Apify",
+      "url": "https://apify.com/store",
+      "snippet": "apify.com https:// apify .com › store Apify Store - 127,000+ web data and automation tools · Apify Extract data from TikTok videos, hashtags, and users. Use URLs or search queries to scrape TikTok profiles, hashtags, posts, URLs, … Read more"
+    },
+    {
+      "title": "Web Scraper · Apify",
+      "url": "https://apify.com/apify/web-scraper",
+      "snippet": "apify.com https:// apify .com › apify › web-scraper Web Scraper · Apify The Apify API gives you programmatic access to the Apify platform. The API is organized around RESTful HTTP endpoints that … Read more"
+    },
+    {
+      "title": "Turn any website into an API · Apify",
+      "url": "https://apify.com/api",
+      "snippet": "apify.com https:// apify .com › api Turn any website into an API · Apify Turn any website into an API One API for thousands of tools that get web data, automate workflows, and power AI agents. On Apify, … Read more"
+    }
+  ],
+  "retrievals": [
+    {
+      "url": "https://apify.com/",
+      "status": 200,
+      "text": "Apify: Marketplace of ready-to-run tools for AI Skip to content 131,504 tools for your AI Apify is a marketplace of ready-to-run tools for AI. Get real-time web data, track competitors,\n generate leads, monitor social media, and integrate your apps and agents. Find your Actor Copy setup for AI Copied! Paste it to your agent Popular Actors TikTok Scraper clockworks / tiktok-scraper Extract data from TikTok videos, hashtags, and users. Use URLs or search queries to scrape TikTok profiles, hashtags, posts, URLs, shares, followers, hearts, names, video, and music-related data. Export scraped data, run the scraper via API, schedule and monitor runs or integrate with other tools. Clockworks 402K 4.8 (370) Google Maps Scraper compass / crawler-google-places Extract data from thousands of Google Maps locations and businesses, including reviews, reviewer details, images, contact info, including full name, email, and job title, opening hours, prices & more. Export data, run via API, schedule and monitor runs, or integrate with other tools. Compass 710K 4.7 (1,820) Instagram Scraper apify / instagram-scraper Extract Instagram posts, reels, profiles, places, hashtags, carousels, and comments. Get data from Instagram using one or more Instagram URLs or search queries: content, context, metrics, metadata. Export scraped data, run the scraper via API, schedule and monitor runs or integrate with other tools. Apify 499K 4.7 (607) Website Content Crawler apify / website-content-crawler Crawl websites and extract text content to feed AI models, LLM applications, vector databases, or RAG pipelines. The Actor supports rich formatting using Markdown, cleans the HTML, downloads files, and integrates well with 🦜🔗 LangChain, LlamaIndex, and the wider LLM ecosystem. Apify 181K 4.6 (235) E-commerce Scraping Tool apify / e-commerce-scraping-tool Scrape data from e-commerce websites with E-commerce Scraping Tool. Scrape almost any retail site in minutes, extract e-commerce data and use it to monitor price details over time or compare different e-commerce sites’ offerings. Apify 17K 4.3 (53) Facebook Posts Scraper apify / facebook-posts-scraper Extract posts, videos, and engagement metrics from Facebook pages. Get text captions, reactions, video transcripts, images, external links, collaborators, and more from Facebook pages and profiles. Export ad data, schedule runs via API, and integrate with other tools or AI workflows. Apify 146K 4.7 (236) TikTok Scraper clockworks / tiktok-scraper Extract data from TikTok videos, hashtags, and users. Use URLs or search queries to scrape TikTok profiles, hashtags, posts, URLs, shares, followers, hearts, names, video, and music-related data. Export scraped data, run the scraper via API, schedule and monitor runs or integrate with other tools. Clockworks 402K 4.8 (370) Google Maps Scraper compass / crawler-google-places Extract data from thousands of Google Maps locations and businesses, including reviews, reviewer details, images, contact info, including full name, email, and job title, opening hours, prices & more. Export data, run via API, schedule and monitor runs, or integrate with other tools. Compass 710K 4.7 (1,820) Instagram Scraper apify / instagram-scraper Extract Instagram posts, reels, profiles, places, hashtags, carousels, and comments. Get data from Instagram using one or more Instagram URLs or search queries: content, context, metrics, metadata. Export scraped data, run the scraper via API, schedule and monitor runs or integrate with other tools. Apify 499K 4.7 (607) Website Content Crawler apify / website-content-crawler Crawl websites and extract text content to feed AI models, LLM applications, vector databases, or RAG pipelines. The Actor supports rich formatting using Markdown, cleans the HTML, downloads files, and integrates well with 🦜🔗 LangChain, LlamaIndex, and the wider LLM ecosystem. Apify 181K 4.6 (235) E-commerce Scraping Tool apify / e-commerce-scraping-tool Scrape data from e-commerce websites with E-commerce Scraping Tool. Scrape almost any retail site in minutes, extract e-commerce data and use it to monitor price details over time or compare different e-commerce sites’ offerings. Apify 17K 4.3 (53) Facebook Posts Scraper apify / facebook-posts-scraper Extract posts, videos, and engagement metrics from Facebook pages. Get text captions, reactions, video transcripts, images, external links, collaborators, and more from Facebook pages and profiles. Export ad data, schedule runs via API, and integrate with other tools or AI workflows. Apify 146K 4.7 (236) Browse Apify Store Trusted by global technology leaders Find an Actor or build your own Thousands of pre-built Actors Feed your AI, generate leads, track prices. Whatever the job on the web, there's an Actor for it. Visit Apify Store Build and deploy your own Have a new use case? Start building new Actors with our code templates and extensive guides. Start building Or we can build it for you Rely on our experts to build and maintain custom Actors for you. Learn more Easily connect with your AI agents One step. Connect your agent to Apify via our MCP, CLI or Skills. MCP CLI Skills { \"mcpServers\" : { \"apify\" : { \"type\" : \"http\" , \"url\" : \"https://mcp.apify.com\" } } } Add this to your MCP client's config file. View the MCP guide Agent onboarding. Are you an AI agent? Fetch our quickstart to get started. cURL curl -s https://apify.com/agents.md Read the quickstart Build, deploy, and scale your own Actors Open-source tools Proxies Unblocking Cloud deployment Monitoring Data processing We love open source Apify works great with both Python and JavaScript, as well as Playwright, Puppeteer, Selenium, Scrapy, and Crawlee - our own web crawling and browser automation library. Star 26,525 JavaScript Python 1 import { PuppeteerCrawler , Dataset } from \"crawlee\" ; 2 3 const crawler = new PuppeteerCrawler ( { 4 async requestHandler ( { request , page , enqueueLinks } ) { 5 await Dataset . pushData ( { 6 url : request . url , 7 title : await page . title ( ) , 8 } ) ; 9 await enqueueLinks ( ) ; 10 } , 11 } ) ; 12 13 await crawler . run ( [ \"https://crawlee.dev\" ] ) ; LlamaIndex LangChain Playwright Puppeteer Cheerio Selenium Scrapy BeautifulSoup Learn. Web Scraping Academy Classes for beginners and experts. Learn about web scraping and automation with our free courses. Visit Academy Code. Code templates JavaScript, TypeScript, and Python templates to quick-start your own Actors. Get started Connect. Discord community Get help from the Apify developer community of more than 15,000 members. Join community Publish Actors. Get paid. Reach thousands of new customers Building and running a SaaS is hard. Building an Actor and selling it on Apify Store is 10x easier. Get users from day one. Learn more No upfront costs Publishing your Actor is free of charge—the customers pay for the computing resources. New creators get $500 free platform credits. Rely on Apify infra Actors scale automatically as you gain new users. You don’t need to worry about compute, storage, proxies, or authentication. Billing is on us Handling payments, taxes, and invoicing is a painful part of running a SaaS. Apify does all that and sends you a net payout every month. Enterprise-grade solution Accurate and secure web data from any website, at any scale. 99.95% uptime. SOC2, GDPR, and CCPA compliant. Contact sales Learn more We looked at several providers, and Apify was the most complete, reliant solution we found. It was miles ahead of everything else we reviewed. Pranav Singh Former Engineering Manager at Intercom We selected Apify because of their vast experience with web data collection to empower our sales team with fresh, unique leads. Filip Popovic Former COO at Groupon Our collaboration with Apify proves that advanced IT tools leveraging AI can be the key in detecting infringements of consumer protection legislation. Marie-Paule Benassi Consumer Affairs Director at EU Read more customer stories Integrate Zapier GitHub Google Sheets Claude any app n8n MCP clients Google Drive Slack Zapier with Actors Browse integrations View SDKs It's time to run \nyour first Actor. Get started Get a demo"
+    }
+  ],
+  "errors": [],
+  "first_pass": {
+    "auth": "unknown",
+    "credential_gate": "unknown",
+    "api_surface": "unknown",
+    "official_mcp": "unknown",
+    "composio_toolkit": "unknown",
+    "verdict": "unclear",
+    "blocker": "Claim-specific documentation not assessed",
+    "next_action": "Review official documentation and validate each claim",
+    "confidence": "unresolved"
+  },
+  "validation_errors": [
+    "All claim fields require source-specific review"
+  ]
+}

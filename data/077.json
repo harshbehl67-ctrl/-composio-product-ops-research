@@ -1,0 +1,80 @@
+{
+  "app": {
+    "number": 77,
+    "name": "ClickUp",
+    "category": "Productivity and Project Management",
+    "hint": "clickup.com/api"
+  },
+  "checked_at": "2026-11-23T13:42:06.798359+00:00",
+  "query": "ClickUp developer API authentication documentation",
+  "search_results": [
+    {
+      "title": "ClickUp ™ | Maximize productivity • Software, AI, and humans converge",
+      "url": "https://clickup.com/",
+      "snippet": "clickup.com https:// clickup .com ClickUp ™ | Maximize productivity • Software, AI, and humans converge Brain² keeps track of how you like to work, and gets smarter every time you use ClickUp. GPT, Claude Opus, Gemini, and more. …"
+    },
+    {
+      "title": "Download ClickUp ™ for Mac, Windows, iOS & Android",
+      "url": "https://clickup.com/download",
+      "snippet": "clickup.com https:// clickup .com › download Download ClickUp ™ for Mac, Windows, iOS & Android Download ClickUp on any device and access your work from anywhere. Use ClickUp on mobile, desktop, or add as a Chrome …"
+    },
+    {
+      "title": "ClickUp",
+      "url": "https://clickup.app.link/v4vtkbtqHib",
+      "snippet": "app.link https:// clickup .app.link ClickUp Built for teams of all sizes and industries, ClickUp is a powerful productivity platform that helps teams manage tasks, workflows, …"
+    },
+    {
+      "title": "Sign Up | ClickUp ™",
+      "url": "https://clickup.com/signup",
+      "snippet": "clickup.com https:// clickup .com › signup Sign Up | ClickUp ™ Sign up for free and start using ClickUp in seconds. Save one day every week. Guaranteed."
+    },
+    {
+      "title": "ClickUp Pricing and Plans",
+      "url": "https://clickup.com/pricing",
+      "snippet": "clickup.com https:// clickup .com › pricing ClickUp Pricing and Plans ClickUp automatically bills you at a prorated price based on the time left in your cycle for any paid users added to your Workspace. …"
+    },
+    {
+      "title": "ClickUp ™ for Project Management Solutions",
+      "url": "https://clickup.com/teams/project-management",
+      "snippet": "clickup.com https:// clickup .com › teams › project-management ClickUp ™ for Project Management Solutions ClickUp separates itself from other project management tools like Asana, Trello, Jira, Notion, and Slack by combining tasks, docs, …"
+    },
+    {
+      "title": "ClickUp ™ | About",
+      "url": "https://clickup.com/about",
+      "snippet": "clickup.com https:// clickup .com › about ClickUp ™ | About Millions of teams around the world already rely on ClickUp to power all of their work. We're laser-focused on removing the busywork …"
+    },
+    {
+      "title": "ClickUp",
+      "url": "https://msteams.clickup.com/production/",
+      "snippet": "clickup.com https://msteams. clickup .com › production ClickUp For more info or for help integrating Microsoft Teams with your ClickUp Account click here . If you don't already have an account, …"
+    },
+    {
+      "title": "ClickUp - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/ClickUp",
+      "snippet": "wikipedia.org https:// en.wikipedia.org › wiki › ClickUp ClickUp - Wikipedia ClickUp was founded by Alex Yurkowski and Zeb Evans in 2017. The original intent was to use it as an internal tool before being …"
+    },
+    {
+      "title": "ClickUp University",
+      "url": "https://university.clickup.com/",
+      "snippet": "clickup.com https://university. clickup .com ClickUp University In this course, you will learn about how ClickUp is revolutionizing the Project Management world with ClickUp AI. Learn about the …"
+    }
+  ],
+  "retrievals": [],
+  "errors": [
+    "No candidate documentation on hint domain found; review required"
+  ],
+  "first_pass": {
+    "auth": "unknown",
+    "credential_gate": "unknown",
+    "api_surface": "unknown",
+    "official_mcp": "unknown",
+    "composio_toolkit": "unknown",
+    "verdict": "unclear",
+    "blocker": "Claim-specific documentation not assessed",
+    "next_action": "Review official documentation and validate each claim",
+    "confidence": "unresolved"
+  },
+  "validation_errors": [
+    "All claim fields require source-specific review"
+  ]
+}

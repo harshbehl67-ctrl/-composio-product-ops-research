@@ -1,0 +1,80 @@
+{
+  "app": {
+    "number": 68,
+    "name": "MongoDB Atlas",
+    "category": "Developer, Infra and Data platforms",
+    "hint": "mongodb.com/docs/atlas/api"
+  },
+  "checked_at": "2026-11-23T13:42:05.763804+00:00",
+  "query": "MongoDB Atlas developer API authentication documentation",
+  "search_results": [
+    {
+      "title": "MongoDB | The Intelligent Data Platform for the AI Era",
+      "url": "https://www.mongodb.com/?msockid=0a3bb272d94e6df10659aa68d8c36cec",
+      "snippet": "mongodb.com https://www. mongodb .com MongoDB | The Intelligent Data Platform for the AI Era MongoDB is the intelligent data platform for the AI era. Get your ideas to market faster with flexible, real-time data that scales across … Read more"
+    },
+    {
+      "title": "Download MongoDB Community Server",
+      "url": "https://www.mongodb.com/try/download/community?msockid=0a3bb272d94e6df10659aa68d8c36cec",
+      "snippet": "mongodb.com https://www. mongodb .com › try › download › community Download MongoDB Community Server mongot is the full-text search and vector search engine for MongoDB Community Server. It seamlessly integrates with your … Read more"
+    },
+    {
+      "title": "Log in | MongoDB",
+      "url": "https://account.mongodb.com/account",
+      "snippet": "mongodb.com https://account. mongodb .com › account Log in | MongoDB Experience up to 2x throughput, enhanced scalability, and unmatched resilience."
+    },
+    {
+      "title": "MongoDB Tutorial - W3Schools",
+      "url": "https://www.w3schools.com/mongodb/",
+      "snippet": "w3schools.com https:// www.w3schools.com › mongodb MongoDB Tutorial - W3Schools MongoDB is a document database. It stores data in a type of JSON format called BSON. If you are unfamiliar with JSON, check out … Read more"
+    },
+    {
+      "title": "Resources | MongoDB",
+      "url": "https://discover.mongodb.com/",
+      "snippet": "mongodb.com https://discover. mongodb .com Resources | MongoDB Learn more about MongoDB by exploring our latest resources, including webinars, video presentations, white papers, and more."
+    },
+    {
+      "title": "MongoDB Courses and Trainings | MongoDB University",
+      "url": "https://learn.mongodb.com/",
+      "snippet": "mongodb.com https://learn. mongodb .com MongoDB Courses and Trainings | MongoDB University Learn the fundamentals of MongoDB Search, including lexical search, indexing strategies, and query optimization. Discover our … Read more"
+    },
+    {
+      "title": "MongoDB Tutorial - GeeksforGeeks",
+      "url": "https://www.geeksforgeeks.org/mongodb/mongodb-tutorial/",
+      "snippet": "geeksforgeeks.org https://www.geeksforgeeks.org › mongodb › mongodb-tutorial MongoDB Tutorial - GeeksforGeeks Apr 17, 2026 · In this section, you will learn how to install and configure MongoDB across different operating systems, building a … Read more"
+    },
+    {
+      "title": "MongoDB - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/MongoDB",
+      "snippet": "wikipedia.org https:// en.wikipedia.org › wiki › MongoDB MongoDB - Wikipedia Classified as a NoSQL database product, MongoDB uses JSON -like documents (called BSON) with optional schemas. Released in … Read more"
+    },
+    {
+      "title": "MongoDB - Overview - Online Tutorials Library",
+      "url": "https://www.tutorialspoint.com/mongodb/mongodb_overview.htm",
+      "snippet": "tutorialspoint.com https:// www.tutorialspoint.com › mongodb › mongodb_overview .htm MongoDB - Overview - Online Tutorials Library MongoDB is a cross-platform, document oriented database that provides, high performance, high availability, and easy scalability. … Read more"
+    },
+    {
+      "title": "MongoDB - Working and Features - GeeksforGeeks",
+      "url": "https://www.geeksforgeeks.org/mongodb/what-is-mongodb-working-and-features/",
+      "snippet": "geeksforgeeks.org https://www.geeksforgeeks.org › mongodb › what-is-mongodb-working-an … MongoDB - Working and Features - GeeksforGeeks Sep 30, 2025 · MongoDB is well-suited for real-time analytics applications due to its high-performance data ingestion and querying … Read more"
+    }
+  ],
+  "retrievals": [],
+  "errors": [
+    "No candidate documentation on hint domain found; review required"
+  ],
+  "first_pass": {
+    "auth": "unknown",
+    "credential_gate": "unknown",
+    "api_surface": "unknown",
+    "official_mcp": "unknown",
+    "composio_toolkit": "unknown",
+    "verdict": "unclear",
+    "blocker": "Claim-specific documentation not assessed",
+    "next_action": "Review official documentation and validate each claim",
+    "confidence": "unresolved"
+  },
+  "validation_errors": [
+    "All claim fields require source-specific review"
+  ]
+}

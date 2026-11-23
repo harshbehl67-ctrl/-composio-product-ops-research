@@ -1,0 +1,80 @@
+{
+  "app": {
+    "number": 5,
+    "name": "Twenty",
+    "category": "CRM and Sales",
+    "hint": "twenty.com (open-source CRM)"
+  },
+  "checked_at": "2026-11-23T13:41:50.792990+00:00",
+  "query": "Twenty developer API authentication documentation",
+  "search_results": [
+    {
+      "title": "Twenty | #1 Open Source CRM",
+      "url": "https://twenty.com/",
+      "snippet": "twenty.com https:// twenty .com Twenty | #1 Open Source CRM It is just such a nicer experience than dealing with a Salesforce or a HubSpot. My mission has been to get every tool API-accessible, …"
+    },
+    {
+      "title": "TWENTY Definition & Meaning - Merriam-Webster",
+      "url": "https://www.merriam-webster.com/dictionary/twenty",
+      "snippet": "merriam-webster.com https:// www.merriam-webster.com › dictionary › twenty TWENTY Definition & Meaning - Merriam-Webster 1 day ago · The meaning of TWENTY is a number equal to two times 10."
+    },
+    {
+      "title": "Twenty - an addictive game of numbers",
+      "url": "http://twenty.frenchguys.net/",
+      "snippet": "frenchguys.net http:// twenty .frenchguys.net Twenty - an addictive game of numbers Welcome to Twenty! (best played with touch, but works with a mouse) To play, pick up tiles and drop them onto tiles with the same …"
+    },
+    {
+      "title": "20 (number) - Wikipedia",
+      "url": "https://en.m.wikipedia.org/wiki/20_(number)",
+      "snippet": "wikipedia.org https://en.m. wikipedia.org › wiki 20 (number) - Wikipedia 20 (twenty) is the natural number following 19 and preceding 21. A group of twenty units is sometimes referred to as a score. [1][2] …"
+    },
+    {
+      "title": "Twenty CRM Features — Modern Open Source CRM Platform",
+      "url": "https://twenty.com/product",
+      "snippet": "twenty.com https:// twenty .com › product Twenty CRM Features — Modern Open Source CRM Platform Pipelines, custom objects, AI assistants, and a native API on top of Postgres. Twenty is the open source CRM with the modern UX …"
+    },
+    {
+      "title": "TWENTY | English meaning - Cambridge Dictionary",
+      "url": "https://dictionary.cambridge.org/dictionary/english/twenty",
+      "snippet": "cambridge.org https://dictionary.cambridge.org › dictionary › english › twenty TWENTY | English meaning - Cambridge Dictionary It takes me twenty minutes to get to work. I found a twenty pence piece in the phone booth. She practised medicine for twenty years …"
+    },
+    {
+      "title": "Twenty",
+      "url": "https://app-main.twenty.com/",
+      "snippet": "twenty.com https://app-main. twenty .com Twenty A modern open-source CRM"
+    },
+    {
+      "title": "Home Page | Twenty",
+      "url": "https://twenty.io/",
+      "snippet": "twenty.io https:// twenty .io Home Page | Twenty Twenty builds and scales the software and capabilities of modern cyber conflict, industrializing the American arsenal for the war of …"
+    },
+    {
+      "title": "twenty - Wiktionary, the free dictionary",
+      "url": "https://en.m.wiktionary.org/wiki/twenty",
+      "snippet": "wiktionary.org https://en.m.wiktionary.org › wiki › twenty twenty - Wiktionary, the free dictionary Oct 30, 2026 · From Middle English twenty, twenti, from Old English twēntiġ (“twenty”, literally “two tens”), from Proto-Germanic …"
+    },
+    {
+      "title": "Ordinal Numbers in English – Rules, List, Usage & Examples",
+      "url": "https://vocaberry.com/vocabulary/ordinal-numbers-in-english/",
+      "snippet": "vocaberry.com https://vocaberry.com › vocabulary › ordinal-numbers-in-english Ordinal Numbers in English – Rules, List, Usage & Examples Ordinal numbers in English show the position or order of things—like first, second, third, and so on. They’re used all the time in …"
+    }
+  ],
+  "retrievals": [],
+  "errors": [
+    "No candidate documentation on hint domain found; review required"
+  ],
+  "first_pass": {
+    "auth": "unknown",
+    "credential_gate": "unknown",
+    "api_surface": "unknown",
+    "official_mcp": "unknown",
+    "composio_toolkit": "unknown",
+    "verdict": "unclear",
+    "blocker": "Claim-specific documentation not assessed",
+    "next_action": "Review official documentation and validate each claim",
+    "confidence": "unresolved"
+  },
+  "validation_errors": [
+    "All claim fields require source-specific review"
+  ]
+}

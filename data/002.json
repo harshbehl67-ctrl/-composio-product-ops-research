@@ -1,0 +1,80 @@
+{
+  "app": {
+    "number": 2,
+    "name": "HubSpot",
+    "category": "CRM and Sales",
+    "hint": "hubspot.com"
+  },
+  "checked_at": "2026-11-23T13:41:50.792990+00:00",
+  "query": "HubSpot developer API authentication documentation",
+  "search_results": [
+    {
+      "title": "HubSpot | Software & Tools for your Business - Homepage",
+      "url": "https://www.hubspot.com/",
+      "snippet": "hubspot.com https://www. hubspot .com HubSpot | Software & Tools for your Business - Homepage HubSpot connects your teams, tools, and data on the same platform, so every customer interaction drives growth. Whether you work … Read more"
+    },
+    {
+      "title": "HubSpot Login and Sign in",
+      "url": "https://app.hubspot.com/login",
+      "snippet": "hubspot.com https://app. hubspot .com › login HubSpot Login and Sign in Sign into your HubSpot account through HubSpot's login page. No login? Signup for a free account."
+    },
+    {
+      "title": "Log in to HubSpot",
+      "url": "https://knowledge.hubspot.com/account-management/log-in-to-hubspot",
+      "snippet": "hubspot.com https://knowledge. hubspot .com › account-management › log-in-to- hubspot Log in to HubSpot Nov 11, 2026 · HubSpot determines the correct login screen based on your email address and the login methods your admin has … Read more"
+    },
+    {
+      "title": "HubSpot Academy - Homepage",
+      "url": "https://academy.hubspot.com/",
+      "snippet": "hubspot.com https://academy. hubspot .com HubSpot Academy - Homepage Explore all that HubSpot Academy has to offer, from on-demand training to live workshops and user groups. Learn everything you … Read more"
+    },
+    {
+      "title": "Free CRM Software for Small Businesses | HubSpot",
+      "url": "https://www.hubspot.com/products/crm",
+      "snippet": "hubspot.com https://www. hubspot .com › products › crm Free CRM Software for Small Businesses | HubSpot HubSpot's free CRM unifies all your customer data on one platform, with AI that makes it easy to understand. And unlike a free trial, … Read more"
+    },
+    {
+      "title": "Courses & Lessons | HubSpot Academy",
+      "url": "https://academy.hubspot.com/courses",
+      "snippet": "hubspot.com https://academy. hubspot .com › courses Courses & Lessons | HubSpot Academy Explore all that HubSpot Academy has to offer, from on-demand training to live workshops and user groups. Learn everything you … Read more"
+    },
+    {
+      "title": "HubSpot - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/HubSpot",
+      "snippet": "wikipedia.org https:// en.wikipedia.org › wiki › HubSpot HubSpot - Wikipedia HubSpot refers to itself as a marketing technology company that provides tools for social media marketing and search engine … Read more"
+    },
+    {
+      "title": "HubSpot Careers",
+      "url": "https://www.hubspot.com/careers",
+      "snippet": "hubspot.com https://www. hubspot .com › careers HubSpot Careers Ready to do your best work? Explore career opportunities globally and learn more about HubSpot culture."
+    },
+    {
+      "title": "HubSpot | Software, Tools, Resources for Your Business",
+      "url": "https://www.hubspot.com/hp-0",
+      "snippet": "hubspot.com https://www. hubspot .com HubSpot | Software, Tools, Resources for Your Business HubSpot's CRM platform contains the marketing, sales, service, operations, and website-building software you need to grow your … Read more"
+    },
+    {
+      "title": "HubSpot Academy - Certifications",
+      "url": "https://academy.hubspot.com/certification-overview",
+      "snippet": "hubspot.com https://academy. hubspot .com › certific HubSpot Academy - Certifications Three types of programs to learn HubSpot, build with it, and connect with your user community."
+    }
+  ],
+  "retrievals": [],
+  "errors": [
+    "No candidate documentation on hint domain found; review required"
+  ],
+  "first_pass": {
+    "auth": "unknown",
+    "credential_gate": "unknown",
+    "api_surface": "unknown",
+    "official_mcp": "unknown",
+    "composio_toolkit": "unknown",
+    "verdict": "unclear",
+    "blocker": "Claim-specific documentation not assessed",
+    "next_action": "Review official documentation and validate each claim",
+    "confidence": "unresolved"
+  },
+  "validation_errors": [
+    "All claim fields require source-specific review"
+  ]
+}

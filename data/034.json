@@ -1,0 +1,65 @@
+{
+  "app": {
+    "number": 34,
+    "name": "GoHighLevel",
+    "category": "Marketing, Ads, Email and Social",
+    "hint": "highlevel.stoplight.io"
+  },
+  "checked_at": "2026-11-23T13:41:58.162658+00:00",
+  "query": "GoHighLevel developer API authentication documentation",
+  "search_results": [
+    {
+      "title": "GoHighLevel - It's time to take your Agency to the Next Level",
+      "url": "https://www.gohighlevel.com/?msockid=3f831d79c06866460b260563c1966771",
+      "snippet": "gohighlevel.com https://www. gohighlevel .com GoHighLevel - It's time to take your Agency to the Next Level HighLevel is the AI-powered operating system powering the growth of businesses around the world. All the tools you need in one AI …"
+    },
+    {
+      "title": "GoHighLevel - It's time to take your Agency to the Next Level",
+      "url": "https://www.gohighlevel.com/home-page-ver3?msockid=3f831d79c06866460b260563c1966771",
+      "snippet": "gohighlevel.com https://www. gohighlevel .com GoHighLevel - It's time to take your Agency to the Next Level HighLevel is the first-ever all-in-one platform that will give you the tools, support and resources you need to succeed with your …"
+    },
+    {
+      "title": "Sign in | HighLevel",
+      "url": "https://community.gohighlevel.com/",
+      "snippet": "gohighlevel.com https://community. gohighlevel .com Sign in | HighLevel Sign in to access your account."
+    },
+    {
+      "title": "Dashboard - HighLevel",
+      "url": "https://ideas.gohighlevel.com/dashboard",
+      "snippet": "gohighlevel.com https://ideas. gohighlevel .com › dashboard Dashboard - HighLevel Add a feature-rich project management tool within GoHighLevel to help agencies and clients manage tasks, deadlines, and …"
+    },
+    {
+      "title": "Home | Support : HighLevel Support Portal",
+      "url": "https://help.gohighlevel.com/",
+      "snippet": "gohighlevel.com https://help. gohighlevel .com Home | Support : HighLevel Support Portal How do I find my Client's Location ID?"
+    },
+    {
+      "title": "GoHighLevel Free Trial",
+      "url": "https://go-highlevel.com/",
+      "snippet": "go-highlevel.com https:// go-highlevel .com GoHighLevel Free Trial HighLevel is a Full Suite Platform for Marketers. Included in the Platform is a full featured Page Builder to capture leads. Our intuitive …"
+    },
+    {
+      "title": "Knowledge base : HighLevel Support Portal",
+      "url": "https://help.gohighlevel.com/support/solutions",
+      "snippet": "gohighlevel.com https://help. gohighlevel .com › support › solutions Knowledge base : HighLevel Support Portal To enable it, navigate to Agency or Sub-Account Settings → Labs and toggle on Project Management to access the new experience. …"
+    }
+  ],
+  "retrievals": [],
+  "errors": [
+    "No candidate documentation on hint domain found; review required"
+  ],
+  "first_pass": {
+    "auth": "unknown",
+    "credential_gate": "unknown",
+    "api_surface": "unknown",
+    "official_mcp": "unknown",
+    "composio_toolkit": "unknown",
+    "verdict": "unclear",
+    "blocker": "Claim-specific documentation not assessed",
+    "next_action": "Review official documentation and validate each claim",
+    "confidence": "unresolved"
+  },
+  "validation_errors": [
+    "All claim fields require source-specific review"
+  ]
+}

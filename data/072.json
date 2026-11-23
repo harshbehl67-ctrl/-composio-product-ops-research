@@ -1,0 +1,80 @@
+{
+  "app": {
+    "number": 72,
+    "name": "Airtable",
+    "category": "Productivity and Project Management",
+    "hint": "airtable.com/developers"
+  },
+  "checked_at": "2026-11-23T13:42:06.311176+00:00",
+  "query": "Airtable developer API authentication documentation",
+  "search_results": [
+    {
+      "title": "Airtable : Build Enterprise-ready AI Workflows, Apps & Agents",
+      "url": "https://www.airtable.com/",
+      "snippet": "airtable.com https://www. airtable .com Airtable : Build Enterprise-ready AI Workflows, Apps & Agents 500,000+ brands use Airtable to enable real-time collaboration, automate repetitive tasks & manual work, and streamline business …"
+    },
+    {
+      "title": "Sign in - Airtable",
+      "url": "https://airtable.com/login",
+      "snippet": "airtable.com https:// airtable .com › login Sign in - Airtable Airtable is a low-code platform for building collaborative apps. Customize your workflow, collaborate, and achieve ambitious …"
+    },
+    {
+      "title": "What is Airtable ? [A detailed guide for beginners] | Zapier",
+      "url": "https://zapier.com/blog/what-is-airtable/?msockid=341eb34da43a606c0e39ab57a5646183",
+      "snippet": "zapier.com https://zapier.com › blog › what-is-airtable What is Airtable ? [A detailed guide for beginners] | Zapier Oct 1, 2025 · Airtable is a cloud-based platform for creating and sharing relational databases. But unlike other relational databases, it …"
+    },
+    {
+      "title": "Welcome to Airtable",
+      "url": "https://academy.airtable.com/welcome-to-airtable",
+      "snippet": "airtable.com https://academy. airtable .com › welcome-to- airtable Welcome to Airtable An introductory course to learn about Airtable, user personas, workspaces, and apps, providing foundational knowledge for …"
+    },
+    {
+      "title": "Airtable - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Airtable",
+      "snippet": "wikipedia.org https:// en.wikipedia.org › wiki › Airtable Airtable - Wikipedia Airtable is an American cloud collaboration service company headquartered in San Francisco. It was founded in 2012 by Howie Liu, …"
+    },
+    {
+      "title": "Airtable Academy | Home",
+      "url": "https://academy.airtable.com/",
+      "snippet": "airtable.com https://academy. airtable .com Airtable Academy | Home Learn how to use Airtable MCP server to connect AI tools, like Claude, directly to your Airtable bases."
+    },
+    {
+      "title": "Downloads | Airtable",
+      "url": "https://www.airtable.com/downloads",
+      "snippet": "airtable.com https://www. airtable .com › download Downloads | Airtable Airtable is a low-code platform for building collaborative apps. Customize your workflow, collaborate, and achieve ambitious …"
+    },
+    {
+      "title": "The digital operations platform | Airtable",
+      "url": "https://www.airtable.com/platform",
+      "snippet": "airtable.com https://www. airtable .com › platform The digital operations platform | Airtable A platform proven for the enterprise, not retrofitted for the moment. Whatever comes next, you need a mature platform that’s …"
+    },
+    {
+      "title": "What is Airtable ? | Airtable",
+      "url": "https://www.airtable.com/guides/start/what-is-airtable",
+      "snippet": "airtable.com https://www. airtable .com › guides › start › what-is- airtable What is Airtable ? | Airtable Today, over 300,000 organizations use Airtable to move fast, stay connected and increase business impact. From LinkedIn to Hearst …"
+    },
+    {
+      "title": "Airtable Pricing | Compare Plans, Features & Costs",
+      "url": "https://airtable.com/pricing",
+      "snippet": "airtable.com https:// airtable .com › pricing Airtable Pricing | Compare Plans, Features & Costs Learn about Airtable's flexible pricing options, from free to enterprise. Browse special plans for nonprofit and education organizations!"
+    }
+  ],
+  "retrievals": [],
+  "errors": [
+    "No candidate documentation on hint domain found; review required"
+  ],
+  "first_pass": {
+    "auth": "unknown",
+    "credential_gate": "unknown",
+    "api_surface": "unknown",
+    "official_mcp": "unknown",
+    "composio_toolkit": "unknown",
+    "verdict": "unclear",
+    "blocker": "Claim-specific documentation not assessed",
+    "next_action": "Review official documentation and validate each claim",
+    "confidence": "unresolved"
+  },
+  "validation_errors": [
+    "All claim fields require source-specific review"
+  ]
+}

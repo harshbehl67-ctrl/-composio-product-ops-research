@@ -1,0 +1,80 @@
+{
+  "app": {
+    "number": 95,
+    "name": "Reducto",
+    "category": "AI, Research and Media-native",
+    "hint": "reducto.ai (document parsing)"
+  },
+  "checked_at": "2026-11-23T13:42:08.312521+00:00",
+  "query": "Reducto developer API authentication documentation",
+  "search_results": [
+    {
+      "title": "tradingview怎么添加多条MA均线？ - 知乎",
+      "url": "https://www.zhihu.com/question/66755181",
+      "snippet": "zhihu.com https://www.zhihu.com › question tradingview怎么添加多条MA均线？ - 知乎 选定股票后，右上角点击“ 全功能图表 ”，点击最上方菜单栏“指标”，搜索移动平均线，想要几条均线就点几次，默认是9，在图表上对 …"
+    },
+    {
+      "title": "国内有类似tradingview的网站吗？ - 知乎",
+      "url": "https://www.zhihu.com/question/48452307",
+      "snippet": "zhihu.com https://www.zhihu.com › question 国内有类似tradingview的网站吗？ - 知乎 我做了一个本地可实现以Tradingview作为内核的金融量化平台，python flask 作为 web框架。参考 ： 阿岛格专栏：低门槛搭建个人量 …"
+    },
+    {
+      "title": "New Home Upgrade Pricing - RedFlagDeals.com Forums",
+      "url": "https://forums.redflagdeals.com/new-home-upgrade-pricing-785563/",
+      "snippet": "redflagdeals.com https://forums.redflagdeals.com New Home Upgrade Pricing - RedFlagDeals.com Forums Sep 4, 2009 · I just purchased a new home still under construction and will be closing next year. Went to their design studio to look at …"
+    },
+    {
+      "title": "between Jeep Liberty and Ford Escape - RedFlagDeals.com",
+      "url": "https://forums.redflagdeals.com/between-jeep-liberty-ford-escape-428980/",
+      "snippet": "redflagdeals.com https://forums.redflagdeals.com between Jeep Liberty and Ford Escape - RedFlagDeals.com Apr 9, 2007 · The 2007 Consumer Reports Annual Auto magazine recommends the 2007 Jeep Liberty. Average reliability. Worse …"
+    },
+    {
+      "title": "国内版的TradingView你们怎么看？ - 知乎",
+      "url": "https://www.zhihu.com/question/2045186305148056171",
+      "snippet": "zhihu.com https://www.zhihu.com › question 国内版的TradingView你们怎么看？ - 知乎 国内版 TradingView，你们怎么看？ 如果把“国内版 TradingView”理解成一个问题，我觉得核心不是： 国内有没有一个软件长得像 …"
+    },
+    {
+      "title": "有大神编写tradingview缠论脚本吗？怎么编写啊？ - 知乎",
+      "url": "https://www.zhihu.com/question/401274786",
+      "snippet": "zhihu.com https://www.zhihu.com › question 有大神编写tradingview缠论脚本吗？怎么编写啊？ - 知乎 tradingview上超级牛逼的缠论策略脚步，支持加密货币美股A股外汇等市场，自动生成笔线段中枢和本次级别123买卖信号共振信号 …"
+    },
+    {
+      "title": "国内有没有像Tradingview一样的交易软件？或者国内都有哪些画线功能 …",
+      "url": "https://www.zhihu.com/question/614634206",
+      "snippet": "zhihu.com https://www.zhihu.com › question 国内有没有像Tradingview一样的交易软件？或者国内都有哪些画线功能 … Tradingview免费提供了图标库，含各种自定义功能项，几乎所有想到的、和没有想到的图表分析、技术指标，都已经集成 …"
+    },
+    {
+      "title": "三十岁一事无成是种怎样的体验？ - 知乎",
+      "url": "https://www.zhihu.com/question/36031359",
+      "snippet": "zhihu.com https://www.zhihu.com › question 三十岁一事无成是种怎样的体验？ - 知乎 匿了，被朋友看到不好意思。 91年的 09年考了个985，报志愿报错了。没有听从自己的内心去学计算机，而是听了父亲的话，选了一 …"
+    },
+    {
+      "title": "有人用tradingview做股市分析工具吗？ - 知乎",
+      "url": "https://www.zhihu.com/question/42991310",
+      "snippet": "zhihu.com https://www.zhihu.com › question 有人用tradingview做股市分析工具吗？ - 知乎 我是2015年11月开始用TradingView（TV）的，个人一直用它关注黄金（XAUUSD）、白银（XAGUSD）、USOIL、NG1!等商品价 …"
+    },
+    {
+      "title": "请教，怎样才能使用tradingview查看国内期货数据？ - 知乎",
+      "url": "https://www.zhihu.com/question/548316345",
+      "snippet": "zhihu.com https://www.zhihu.com › question 请教，怎样才能使用tradingview查看国内期货数据？ - 知乎 请教，怎样才能使用tradingview查看国内期货数据？ 这几天知乎看了几个大神的解答，可能是我水平太低了，感觉都不是我想要的。  …"
+    }
+  ],
+  "retrievals": [],
+  "errors": [
+    "No candidate documentation on hint domain found; review required"
+  ],
+  "first_pass": {
+    "auth": "unknown",
+    "credential_gate": "unknown",
+    "api_surface": "unknown",
+    "official_mcp": "unknown",
+    "composio_toolkit": "unknown",
+    "verdict": "unclear",
+    "blocker": "Claim-specific documentation not assessed",
+    "next_action": "Review official documentation and validate each claim",
+    "confidence": "unresolved"
+  },
+  "validation_errors": [
+    "All claim fields require source-specific review"
+  ]
+}

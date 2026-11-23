@@ -1,0 +1,80 @@
+{
+  "app": {
+    "number": 10,
+    "name": "DealCloud",
+    "category": "CRM and Sales",
+    "hint": "api.docs.dealcloud.com"
+  },
+  "checked_at": "2026-11-23T13:41:51.261087+00:00",
+  "query": "DealCloud developer API authentication documentation",
+  "search_results": [
+    {
+      "title": "YouTube",
+      "url": "https://www.youtube.com/",
+      "snippet": "youtube.com https:// www.youtube.com YouTube Explore and share videos, music, and more on YouTube, the leading platform for online video streaming and sharing."
+    },
+    {
+      "title": "YouTube - YouTube",
+      "url": "https://www.youtube.com/youtube",
+      "snippet": "youtube.com https:// www.youtube.com › youtube YouTube - YouTube YouTube's official YouTube channel GTAVI is out now, and so are exclusive themed gifts on YouTube Live 🎁 React, celebrate, and …"
+    },
+    {
+      "title": "YouTube",
+      "url": "https://www.youtube.com/feed",
+      "snippet": "youtube.com https:// www.youtube.com › feed YouTube AboutPressCopyrightContact usCreatorsAdvertiseDevelopersTermsPrivacyPolicy & SafetyHow YouTube worksTest new …"
+    },
+    {
+      "title": "YouTube Music",
+      "url": "https://music.youtube.com/",
+      "snippet": "youtube.com https:// music.youtube.com YouTube Music With the YouTube Music app, enjoy over 100 million songs at your fingertips, plus albums, playlists, remixes, music videos, live …"
+    },
+    {
+      "title": "Y - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Y",
+      "snippet": "wikipedia.org https:// en.wikipedia.org › wiki › Y Y - Wikipedia The letter y represents the sounds /y/ or /ʏ/ (sometimes long) in Old Norse and their descendants such as Danish, Norwegian, and …"
+    },
+    {
+      "title": "Y - Simple English Wikipedia , the free encyclopedia",
+      "url": "https://simple.wikipedia.org/wiki/Y",
+      "snippet": "wikipedia.org https:// simple.wikipedia.org › wiki › Y Y - Simple English Wikipedia , the free encyclopedia Y ... Y or y is the twenty-fifth (number 25) letter in the English alphabet. [1] Its name in English is \" wye \" (pronounced / ˈwaɪ /). [2] In …"
+    },
+    {
+      "title": "YouTube - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/YouTube",
+      "snippet": "wikipedia.org https:// en.wikipedia.org › wiki › YouTube YouTube - Wikipedia Chen, Annie Y.; Nyhan, Brendan; Reifler, Jason; Robertson, Ronald E.; Wilson, Christo (April 22, 2022). \"Subscriptions and external …"
+    },
+    {
+      "title": "YouTube – Apps on Google Play",
+      "url": "https://play.google.com/store/apps/details?id=com.google.android.youtube&raii=com.google.android.youtube&hl=en-GB&raii=com.google.android.youtube&rapt=AEjHL4Nocd__YTB0i2MZHIAnAbod4gO1_azkGr4Q8es0j01UfpQmhON_Kz4PFK8PW63MShs1Jl4Nb1eUY_2mXDHSE30Y0g7wY2wDGfzA6WBNBmTAgU8xQfyA32KX4Vkvoz56L5XWjgn7",
+      "snippet": "google.com https:// play.google.com › store › apps › details YouTube – Apps on Google Play Enjoy your favorite videos and channels with the official YouTube app."
+    },
+    {
+      "title": "Y - YouTube",
+      "url": "https://www.youtube.com/y/homepage",
+      "snippet": "youtube.com https:// www.youtube.com › y › homepage Y - YouTube Y 9 months ago Silence cuts the deepest when remembering is the only sound 16 Y 10 months ago hello 47"
+    },
+    {
+      "title": "Yahoo",
+      "url": "https://www.yahoo.com/",
+      "snippet": "yahoo.com https:// www.yahoo.com Yahoo News, email and search are just the beginning. Discover more every day. Find your yodel."
+    }
+  ],
+  "retrievals": [],
+  "errors": [
+    "No candidate documentation on hint domain found; review required"
+  ],
+  "first_pass": {
+    "auth": "unknown",
+    "credential_gate": "unknown",
+    "api_surface": "unknown",
+    "official_mcp": "unknown",
+    "composio_toolkit": "unknown",
+    "verdict": "unclear",
+    "blocker": "Claim-specific documentation not assessed",
+    "next_action": "Review official documentation and validate each claim",
+    "confidence": "unresolved"
+  },
+  "validation_errors": [
+    "All claim fields require source-specific review"
+  ]
+}

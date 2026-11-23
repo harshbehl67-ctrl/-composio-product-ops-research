@@ -1,0 +1,80 @@
+{
+  "app": {
+    "number": 36,
+    "name": "Klaviyo",
+    "category": "Marketing, Ads, Email and Social",
+    "hint": "developers.klaviyo.com"
+  },
+  "checked_at": "2026-11-23T13:41:59.209697+00:00",
+  "query": "Klaviyo developer API authentication documentation",
+  "search_results": [
+    {
+      "title": "Klaviyo : AI Email Marketing & SMS | B2C CRM",
+      "url": "https://www.klaviyo.com/",
+      "snippet": "klaviyo.com https://www. klaviyo .com Klaviyo : AI Email Marketing & SMS | B2C CRM Klaviyo is the autonomous B2C CRM and AI marketing platform that unifies customer data and automates email, SMS, RCS, …"
+    },
+    {
+      "title": "Klaviyo",
+      "url": "https://www.klaviyo.com/sso/login",
+      "snippet": "klaviyo.com https://www. klaviyo .com › sso › login Klaviyo Klaviyo is email platform powered by data built for commerce and web businesses."
+    },
+    {
+      "title": "Klaviyo - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Klaviyo",
+      "snippet": "wikipedia.org https:// en.wikipedia.org › wiki › Klaviyo Klaviyo - Wikipedia Klaviyo is an international SaaS technology company headquartered in Boston, Massachusetts [6], that provides an omnichannel, …"
+    },
+    {
+      "title": "Klaviyo Academy",
+      "url": "https://academy.klaviyo.com/en-us",
+      "snippet": "klaviyo.com https://academy. klaviyo .com Klaviyo Academy Learn how to grow your business with Klaviyo. Get started with our courses, certifications, and guides to help you succeed with Klaviyo."
+    },
+    {
+      "title": "Klaviyo Help Center",
+      "url": "https://help.klaviyo.com/hc/en-us",
+      "snippet": "klaviyo.com https://help. klaviyo .com Klaviyo Help Center Search our knowledge base to find answers to the most commonly asked questions. Browse our articles, community forum, live and …"
+    },
+    {
+      "title": "Klaviyo : AI Marketing Platform & B2C CRM | Email, SMS, WhatsApp",
+      "url": "https://www.klaviyo.com/uk/",
+      "snippet": "klaviyo.com https://www. klaviyo .com › uk Klaviyo : AI Marketing Platform & B2C CRM | Email, SMS, WhatsApp Klaviyo is the autonomous B2C CRM and AI marketing platform that unifies customer data and automates email, SMS, RCS, …"
+    },
+    {
+      "title": "Klaviyo : Sign Up for Free Today",
+      "url": "https://www.klaviyo.com/sign-up",
+      "snippet": "klaviyo.com https://www. klaviyo .com › sign-up Klaviyo : Sign Up for Free Today Get started today. Send your first campaign in minutes and put your marketing on autopilot with targeted SMS and email messages …"
+    },
+    {
+      "title": "What is Klaviyo : About Our B2C CRM Platform - Klaviyo",
+      "url": "https://www.klaviyo.com/about",
+      "snippet": "klaviyo.com https://www. klaviyo .com › about What is Klaviyo : About Our B2C CRM Platform - Klaviyo Klaviyo is the AI-first CRM built for B2C brands. Powered by its built-in data platform and AI insights, Klaviyo combines marketing …"
+    },
+    {
+      "title": "Klaviyo Inc. - Investor Relations",
+      "url": "https://investors.klaviyo.com/overview/default.aspx",
+      "snippet": "klaviyo.com https://investors. klaviyo .com Klaviyo Inc. - Investor Relations Built on a flexible, scalable data platform, Klaviyo delivers intelligence that gets smarter with every interaction, and action across …"
+    },
+    {
+      "title": "Klaviyo - LinkedIn",
+      "url": "https://www.linkedin.com/company/klaviyo/",
+      "snippet": "linkedin.com https://www.linkedin.com › company › klaviyo Klaviyo - LinkedIn Klaviyo (NYSE: KVYO) is the autonomous B2C CRM. Powered by its built-in data platform and AI, Klaviyo combines marketing …"
+    }
+  ],
+  "retrievals": [],
+  "errors": [
+    "No candidate documentation on hint domain found; review required"
+  ],
+  "first_pass": {
+    "auth": "unknown",
+    "credential_gate": "unknown",
+    "api_surface": "unknown",
+    "official_mcp": "unknown",
+    "composio_toolkit": "unknown",
+    "verdict": "unclear",
+    "blocker": "Claim-specific documentation not assessed",
+    "next_action": "Review official documentation and validate each claim",
+    "confidence": "unresolved"
+  },
+  "validation_errors": [
+    "All claim fields require source-specific review"
+  ]
+}

@@ -1,0 +1,70 @@
+{
+  "app": {
+    "number": 79,
+    "name": "Smartsheet",
+    "category": "Productivity and Project Management",
+    "hint": "smartsheet.com/developers"
+  },
+  "checked_at": "2026-11-23T13:42:06.874416+00:00",
+  "query": "Smartsheet developer API authentication documentation",
+  "search_results": [
+    {
+      "title": "Log In | Smartsheet",
+      "url": "https://app.smartsheet.com/b/home",
+      "snippet": "smartsheet.com https://app. smartsheet .com Log In | Smartsheet Log in to Smartsheet to access your workspace and collaborate on projects. Sign in with your email, Google, Apple, Microsoft, or … Read more"
+    },
+    {
+      "title": "The Execution Hub for Enterprise Work | Smartsheet",
+      "url": "https://www.smartsheet.com/",
+      "snippet": "smartsheet.com https:// www.smartsheet.com The Execution Hub for Enterprise Work | Smartsheet Smartsheet is the Execution Hub where people and AI get work done together, with the governance and visibility enterprises need."
+    },
+    {
+      "title": "Product | Smartsheet",
+      "url": "https://www.smartsheet.com/platform",
+      "snippet": "smartsheet.com https:// www.smartsheet.com › platform Product | Smartsheet Discover Smartsheet, the enterprise-grade work management platform. Built to scale with your needs, Smartsheet empowers … Read more"
+    },
+    {
+      "title": "Log In | Smartsheet",
+      "url": "https://app.smartsheet.com/login/verify",
+      "snippet": "smartsheet.com https://app. smartsheet .com › login › verify Log In | Smartsheet Check your email We sent a verification code to: user@smartsheet.com Resend code in 26s"
+    },
+    {
+      "title": "Smartsheet - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Smartsheet",
+      "snippet": "wikipedia.org https:// en.wikipedia.org › wiki › Smartsheet Smartsheet - Wikipedia Smartsheet is a software as a service (SaaS) offering for collaboration and work management, developed and marketed by … Read more"
+    },
+    {
+      "title": "Plataforma de gestión inteligente del trabajo | Smartsheet",
+      "url": "https://es.smartsheet.com/",
+      "snippet": "smartsheet.com https://es. smartsheet .com Plataforma de gestión inteligente del trabajo | Smartsheet Personalice los flujos de trabajo, anticipe resultados y agilice sus procesos con Smartsheet, una plataforma diseñada para … Read more"
+    },
+    {
+      "title": "Log In | Smartsheet",
+      "url": "https://app.smartsheetgov.com/b/home",
+      "snippet": "smartsheetgov.com https://app. smartsheet gov.com Log In | Smartsheet Log into your Smartsheet account. Or, sign-up for a free 30 day trial, no credit card required."
+    },
+    {
+      "title": "What is Smartsheet ? | Smartsheet",
+      "url": "https://www.smartsheet.com/why-smartsheet",
+      "snippet": "smartsheet.com https:// www.smartsheet.com › why- smartsheet What is Smartsheet ? | Smartsheet What is Smartsheet and why is it different? Smartsheet scales from a single project to end-to-end work management — with AI that … Read more"
+    }
+  ],
+  "retrievals": [],
+  "errors": [
+    "No candidate documentation on hint domain found; review required"
+  ],
+  "first_pass": {
+    "auth": "unknown",
+    "credential_gate": "unknown",
+    "api_surface": "unknown",
+    "official_mcp": "unknown",
+    "composio_toolkit": "unknown",
+    "verdict": "unclear",
+    "blocker": "Claim-specific documentation not assessed",
+    "next_action": "Review official documentation and validate each claim",
+    "confidence": "unresolved"
+  },
+  "validation_errors": [
+    "All claim fields require source-specific review"
+  ]
+}

@@ -1,0 +1,112 @@
+[
+  {
+    "app": "Slack",
+    "field": "auth",
+    "original": "unknown",
+    "checked": "OAuth 2.0 and scoped tokens",
+    "rating": "unresolved",
+    "correction": "OAuth 2.0 and scoped tokens",
+    "why": "First pass intentionally abstained; no claim-specific extraction",
+    "url": "https://docs.slack.dev/authentication/"
+  },
+  {
+    "app": "Slack",
+    "field": "official_mcp",
+    "original": "unknown",
+    "checked": "Yes: Slack documents its own MCP server; workspace admins can manage access",
+    "rating": "unresolved",
+    "correction": "yes",
+    "why": "No claim-specific extraction",
+    "url": "https://docs.slack.dev/ai/slack-mcp-server/"
+  },
+  {
+    "app": "Google Ads",
+    "field": "credential_gate",
+    "original": "unknown",
+    "checked": "Test access on API enablement; production access requires applying for Explorer or another suitable access level",
+    "rating": "unresolved",
+    "correction": "approval for production access",
+    "why": "No claim-specific extraction",
+    "url": "https://developers.google.com/google-ads/api/docs/api-policy/access-levels"
+  },
+  {
+    "app": "GitHub",
+    "field": "api_surface",
+    "original": "unknown",
+    "checked": "Documented REST API; endpoints cover multiple resources and operations",
+    "rating": "unresolved",
+    "correction": "REST API",
+    "why": "No claim-specific extraction",
+    "url": "https://docs.github.com/en/rest/using-the-rest-api/getting-started-with-the-rest-api"
+  },
+  {
+    "app": "HubSpot",
+    "field": "auth",
+    "original": "unknown",
+    "checked": "Service Keys for account-level system-to-system integrations are in public beta",
+    "rating": "unresolved",
+    "correction": "Service Keys for account-level system-to-system integrations are in public beta",
+    "why": "First-pass abstention: source discovery did not extract claim-specific facts",
+    "url": "https://developers.hubspot.com/changelog/service-keys"
+  },
+  {
+    "app": "Zendesk",
+    "field": "auth",
+    "original": "unknown",
+    "checked": "OAuth access tokens are supported for Zendesk API requests; existing basic/API token integrations must migrate",
+    "rating": "unresolved",
+    "correction": "OAuth access tokens are supported for Zendesk API requests; existing basic/API token integrations must migrate",
+    "why": "First-pass abstention: source discovery did not extract claim-specific facts",
+    "url": "https://developer.zendesk.com/api-reference/introduction/security-and-auth/"
+  },
+  {
+    "app": "Shopify",
+    "field": "api_surface",
+    "original": "unknown",
+    "checked": "GraphQL Admin API reads and writes store data including products and orders",
+    "rating": "unresolved",
+    "correction": "GraphQL Admin API reads and writes store data including products and orders",
+    "why": "First-pass abstention: source discovery did not extract claim-specific facts",
+    "url": "https://shopify.dev/docs/api/usage/authentication"
+  },
+  {
+    "app": "Apify",
+    "field": "auth",
+    "original": "unknown",
+    "checked": "API token can be sent as a bearer token",
+    "rating": "unresolved",
+    "correction": "API token can be sent as a bearer token",
+    "why": "First-pass abstention: source discovery did not extract claim-specific facts",
+    "url": "https://docs.apify.com/api/v2"
+  },
+  {
+    "app": "Notion",
+    "field": "auth",
+    "original": "unknown",
+    "checked": "The create-view endpoint accepts a bearer auth token",
+    "rating": "unresolved",
+    "correction": "The create-view endpoint accepts a bearer auth token",
+    "why": "First-pass abstention: source discovery did not extract claim-specific facts",
+    "url": "https://developers.notion.com/reference/create-view"
+  },
+  {
+    "app": "Stripe",
+    "field": "auth",
+    "original": "unknown",
+    "checked": "Secret API keys authenticate API requests; test and live modes use separate keys",
+    "rating": "unresolved",
+    "correction": "Secret API keys authenticate API requests; test and live modes use separate keys",
+    "why": "First-pass abstention: source discovery did not extract claim-specific facts",
+    "url": "https://docs.stripe.com/keys"
+  },
+  {
+    "app": "Reducto",
+    "field": "auth",
+    "original": "unknown",
+    "checked": "Office licensing setup uses a Reducto API key; this does not establish access to every Reducto product",
+    "rating": "unresolved",
+    "correction": "Office licensing setup uses a Reducto API key; this does not establish access to every Reducto product",
+    "why": "First-pass abstention: source discovery did not extract claim-specific facts",
+    "url": "https://docs.reducto.ai/office/licensing/setup"
+  }
+]

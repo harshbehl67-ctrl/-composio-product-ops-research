@@ -1,0 +1,80 @@
+{
+  "app": {
+    "number": 21,
+    "name": "Slack",
+    "category": "Communications and Messaging",
+    "hint": "slack.com"
+  },
+  "checked_at": "2026-11-23T13:41:55.430268+00:00",
+  "query": "Slack developer API authentication documentation",
+  "search_results": [
+    {
+      "title": "वीज देयक अवलोकन/भरणा",
+      "url": "https://wss.mahadiscom.in/wss/wss?uiActionName=getViewPayBill",
+      "snippet": "mahadiscom.in https://wss.mahadiscom.in › wss › wss वीज देयक अवलोकन/भरणा Enter OTP:* View Energy Bill OTP has been successfully sent to your registered email address and mobile number. Please enter the …"
+    },
+    {
+      "title": "Welcome to Web Self Service",
+      "url": "https://wss.mahadiscom.in/wss/wss?uiActionName=getHome&action=logout&Lang=English",
+      "snippet": "mahadiscom.in https://wss.mahadiscom.in › wss › wss Welcome to Web Self Service Welcome to Web Self Service (WSS) facility of MSEDCL. It is a self service solution, to manage your various consumer numbers …"
+    },
+    {
+      "title": "पूर्वमाहिती पहा",
+      "url": "https://wss.mahadiscom.in/wss/wss_onlinepayment_detail.aspx",
+      "snippet": "mahadiscom.in https://wss.mahadiscom.in › wss › wss_onlinepayment_detail.aspx पूर्वमाहिती पहा OCCS Payment History No records found View Details Line Graphs View Details View Bar Graph"
+    },
+    {
+      "title": "Energy Bill Calculator",
+      "url": "https://wss.mahadiscom.in/wss/images/WssHelp/Energy_Bill_Calculator.htm",
+      "snippet": "mahadiscom.in https://wss.mahadiscom.in › wss › images › WssHelp › Energy_Bill_Calculator… Energy Bill Calculator Home > Web Self Service (WSS) > Energy Bill Calculator Energy Bill Calculator The Energy Bill Calculator enables you to calculate …"
+    },
+    {
+      "title": "Mahavitaran - HT Meter Reading Details",
+      "url": "https://wss.mahadiscom.in/wss/wss_HTMeterReadingDet.aspx",
+      "snippet": "mahadiscom.in https://wss.mahadiscom.in › wss › wss_HTMeterReadingDet.aspx Mahavitaran - HT Meter Reading Details ऑनलाइन पेमेंटशी संबंधित कोणत्याही शंका/ तक्रारीसाठी, ग्राहक ..."
+    },
+    {
+      "title": "नवीन जोडणीची मागणी",
+      "url": "https://wss.mahadiscom.in/wss/wss?uiActionName=getNewConnectionRequest",
+      "snippet": "mahadiscom.in https://wss.mahadiscom.in › wss › wss नवीन जोडणीची मागणी फॉर्म भरण्यासाठी सूचनाः कृपया संबंधित स्तंभात पूर्ण आणि योग्य माहिती भरा. अपूर्ण किंवा …"
+    },
+    {
+      "title": "Mahavitaran - ICRS Register Complaint",
+      "url": "https://wss.mahadiscom.in/ICRS/RegisterComplaint.aspx?Lang=en-US",
+      "snippet": "mahadiscom.in https://wss.mahadiscom.in › ICRS › RegisterComplaint.aspx Mahavitaran - ICRS Register Complaint Internal Complaint Redressal System (As per Maharashtra Electricity Regulatory commission (Consumer Grievance Redressal …"
+    },
+    {
+      "title": "Viewing and Paying bills",
+      "url": "https://wss.mahadiscom.in/wss/images/WssHelp/Viewing_and_Paying_bills.htm",
+      "snippet": "mahadiscom.in https://wss.mahadiscom.in › wss › images › WssHelp › Viewing_and_Paying_… Viewing and Paying bills Home > Web Self Service (WSS) > Viewing and Paying bills Viewing and Paying bills For a particular consumer number, you can …"
+    },
+    {
+      "title": "Viewing Billing Summary",
+      "url": "https://wss.mahadiscom.in/wss/images/WssHelp/Viewing_Billing_Summary.htm",
+      "snippet": "mahadiscom.in https://wss.mahadiscom.in › wss › images › WssHelp › Viewing_Billing_Summ… Viewing Billing Summary Viewing Billing Summary You can view the billing details of a consumer number present in your account. To view the billing details of …"
+    },
+    {
+      "title": "वीज देयक परिगणक",
+      "url": "https://wss.mahadiscom.in/wss/wss?uiActionName=getEnergyBillCalculator",
+      "snippet": "mahadiscom.in https://wss.mahadiscom.in › wss › wss वीज देयक परिगणक हा गणक १ महिन्याच्या देयाकाचे अंदाजे गणित सांगेल * दर्शविलेली ..."
+    }
+  ],
+  "retrievals": [],
+  "errors": [
+    "No candidate documentation on hint domain found; review required"
+  ],
+  "first_pass": {
+    "auth": "unknown",
+    "credential_gate": "unknown",
+    "api_surface": "unknown",
+    "official_mcp": "unknown",
+    "composio_toolkit": "unknown",
+    "verdict": "unclear",
+    "blocker": "Claim-specific documentation not assessed",
+    "next_action": "Review official documentation and validate each claim",
+    "confidence": "unresolved"
+  },
+  "validation_errors": [
+    "All claim fields require source-specific review"
+  ]
+}

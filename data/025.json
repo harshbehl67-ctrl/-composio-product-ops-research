@@ -1,0 +1,80 @@
+{
+  "app": {
+    "number": 25,
+    "name": "Pumble",
+    "category": "Communications and Messaging",
+    "hint": "pumble.com"
+  },
+  "checked_at": "2026-11-23T13:41:56.716327+00:00",
+  "query": "Pumble developer API authentication documentation",
+  "search_results": [
+    {
+      "title": "Pumble ™ - FREE Business Communication Tool",
+      "url": "https://pumble.com/",
+      "snippet": "pumble.com https:// pumble .com Pumble ™ - FREE Business Communication Tool Simplify the way you collaborate with external guests and invite them to a Pumble meeting even if they don’t have a Pumble account. …"
+    },
+    {
+      "title": "Pumble ™ - Login",
+      "url": "https://mail.pumble.com/",
+      "snippet": "pumble.com https://mail. pumble .com Pumble ™ - Login Log in to Pumble - Free Chat & Collaboration App for Teams."
+    },
+    {
+      "title": "Apps - Pumble",
+      "url": "https://pumble.com/apps",
+      "snippet": "pumble.com https:// pumble .com › apps Apps - Pumble Download Pumble to collaborate with your team from any device. Team chat apps for iOS, Android, Desktop and Web."
+    },
+    {
+      "title": "Pumble",
+      "url": "https://join.pumble.com/",
+      "snippet": "pumble.com https://join. pumble .com Pumble Get started with Pumble, a free chat and communication app for teams to collaborate efficiently through voice notes, text, and virtual …"
+    },
+    {
+      "title": "Pumble ™ - Join Pumble",
+      "url": "https://invite.pumble.com/login.html",
+      "snippet": "pumble.com https://invite. pumble .com › login.html Pumble ™ - Join Pumble This invitation link has expired."
+    },
+    {
+      "title": "Pumble - Apps on Google Play",
+      "url": "https://play.google.com/store/apps/details?id=com.pumble&hl=en-US",
+      "snippet": "google.com https:// play.google.com › store › apps › details Pumble - Apps on Google Play Pumble is a team messaging app built for businesses that need clear communication and an unlimited message history. Create …"
+    },
+    {
+      "title": "Pumble for Desktop (Windows, Mac, Linux) - Pumble Help",
+      "url": "https://pumble.com/help/getting-started/pumble-apps/pumble-for-desktop/",
+      "snippet": "pumble.com https:// pumble .com › help › getting-started › pumble -apps › pumble -for-deskt… Pumble for Desktop (Windows, Mac, Linux) - Pumble Help You can download Pumble for your computer and use it as a desktop app. It's available for Windows, Linux and Mac operating systems."
+    },
+    {
+      "title": "Pumble ™ - Login",
+      "url": "https://pumble.com/login-selection.html",
+      "snippet": "pumble.com https:// pumble .com › login-selection.html Pumble ™ - Login Don’t see your workspace? Not working? You can also use Pumble in your browser."
+    },
+    {
+      "title": "Pricing - Pumble ™",
+      "url": "https://pumble.com/pricing",
+      "snippet": "pumble.com https:// pumble .com › pricing Pricing - Pumble ™ Get access to file upload, member, video call, and public channel analytics, along with basic stats about membership, activity, and … Reviews: 234"
+    },
+    {
+      "title": "Features - Pumble ™",
+      "url": "https://pumble.com/feature-list",
+      "snippet": "pumble.com https:// pumble .com › feature-list Features - Pumble ™ Pumble features make work and business easier. One app for your communication and collaboration in teams. Start private one-on …"
+    }
+  ],
+  "retrievals": [],
+  "errors": [
+    "No candidate documentation on hint domain found; review required"
+  ],
+  "first_pass": {
+    "auth": "unknown",
+    "credential_gate": "unknown",
+    "api_surface": "unknown",
+    "official_mcp": "unknown",
+    "composio_toolkit": "unknown",
+    "verdict": "unclear",
+    "blocker": "Claim-specific documentation not assessed",
+    "next_action": "Review official documentation and validate each claim",
+    "confidence": "unresolved"
+  },
+  "validation_errors": [
+    "All claim fields require source-specific review"
+  ]
+}

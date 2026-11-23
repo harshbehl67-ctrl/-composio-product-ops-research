@@ -1,0 +1,80 @@
+{
+  "app": {
+    "number": 57,
+    "name": "Bright Data",
+    "category": "Data, SEO and Scraping",
+    "hint": "brightdata.com"
+  },
+  "checked_at": "2026-11-23T13:42:03.379069+00:00",
+  "query": "Bright Data developer API authentication documentation",
+  "search_results": [
+    {
+      "title": "YouTube",
+      "url": "https://www.youtube.com/?gl=IN",
+      "snippet": "youtube.com https://www.youtube.com YouTube Enjoy the videos and music you love, upload original content and share it all with friends, family and the world on YouTube."
+    },
+    {
+      "title": "Keyboard shortcuts for YouTube - Google Help",
+      "url": "https://support.google.com/youtube/answer/7631406?hl=en",
+      "snippet": "google.com https://support.google.com › youtube › answer Keyboard shortcuts for YouTube - Google Help Subscribe to the YouTube Viewers channel for the latest news, updates, and tips. Keyboard shortcuts If you're using the new … Read more"
+    },
+    {
+      "title": "How to earn money on YouTube",
+      "url": "https://support.google.com/youtube/answer/72857?hl=en",
+      "snippet": "google.com https://support.google.com › youtube › answer How to earn money on YouTube Your YouTube earnings and tax liability Earning money on YouTube or receiving Shorts bonuses are a great way to be rewarded for … Read more"
+    },
+    {
+      "title": "YouTube公司 - 知乎",
+      "url": "https://www.zhihu.com/topic/19550532",
+      "snippet": "zhihu.com https://www.zhihu.com › topic YouTube公司 - 知乎 YouTube，全球最大的视频分享网站，早期公司总部位于加利福尼亚州的圣布里诺。公司由华裔美籍华人陈士骏等人创立并于2005年2 … Read more"
+    },
+    {
+      "title": "YouTube TV Help - Google Help",
+      "url": "https://support.google.com/youtubetv/?hl=en",
+      "snippet": "google.com https://support.google.com › youtubetv YouTube TV Help - Google Help Official YouTube TV Help Center where you can find tips and tutorials on using YouTube TV and other answers to frequently asked … Read more"
+    },
+    {
+      "title": "YouTube Help - Google Help",
+      "url": "https://support.google.com/youtube/?Hl=en",
+      "snippet": "google.com https://support.google.com › youtube YouTube Help - Google Help Official YouTube Help Center where you can find tips and tutorials on using YouTube and other answers to frequently asked questions."
+    },
+    {
+      "title": "Report inappropriate videos, channels & other content on YouTube ...",
+      "url": "https://support.google.com/youtube/answer/2802027?hl=en&co=GENIE.Platform%3DDesktop",
+      "snippet": "google.com https://support.google.com › youtube › answer Report inappropriate videos, channels & other content on YouTube ... We rely on YouTube community members to report or flag content that they find inappropriate. Reporting content is anonymous, so … Read more"
+    },
+    {
+      "title": "Upload YouTube videos - Computer - YouTube Help - Google Help",
+      "url": "https://support.google.com/youtube/answer/57407?hl=en&co=GENIE.Platform%3DDesktop",
+      "snippet": "google.com https://support.google.com › youtube › answer Upload YouTube videos - Computer - YouTube Help - Google Help You can’t upload audio files to create a YouTube video. Here is a list of supported file formats for content that can be uploaded to … Read more"
+    },
+    {
+      "title": "YouTube 고객센터 - Google Help",
+      "url": "https://support.google.com/youtube/?hl=ko",
+      "snippet": "google.com https://support.google.com › youtube YouTube 고객센터 - Google Help 제품 사용에 대한 도움말과 자습서 및 기타 자주 묻는 질문 (FAQ)에 대한 답변이 있는 공식 YouTube 도움말 센터입니다."
+    },
+    {
+      "title": "View or delete your YouTube search history",
+      "url": "https://support.google.com/youtube/answer/57711?hl=en&co=GENIE.Platform%3DAndroid",
+      "snippet": "google.com https://support.google.com › youtube › answer View or delete your YouTube search history You can manage your search history by deleting individual searches or clearing or pausing search history. Learn more about your … Read more"
+    }
+  ],
+  "retrievals": [],
+  "errors": [
+    "No candidate documentation on hint domain found; review required"
+  ],
+  "first_pass": {
+    "auth": "unknown",
+    "credential_gate": "unknown",
+    "api_surface": "unknown",
+    "official_mcp": "unknown",
+    "composio_toolkit": "unknown",
+    "verdict": "unclear",
+    "blocker": "Claim-specific documentation not assessed",
+    "next_action": "Review official documentation and validate each claim",
+    "confidence": "unresolved"
+  },
+  "validation_errors": [
+    "All claim fields require source-specific review"
+  ]
+}

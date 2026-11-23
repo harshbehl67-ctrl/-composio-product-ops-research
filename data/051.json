@@ -1,0 +1,84 @@
+{
+  "app": {
+    "number": 51,
+    "name": "DataForSEO",
+    "category": "Data, SEO and Scraping",
+    "hint": "docs.dataforseo.com"
+  },
+  "checked_at": "2026-11-23T13:42:02.302293+00:00",
+  "query": "DataForSEO developer API authentication documentation",
+  "search_results": [
+    {
+      "title": "Powerful API Stack For Data-Driven SEO Tools – DataForSEO",
+      "url": "https://dataforseo.com/",
+      "snippet": "dataforseo.com https:// dataforseo .com Powerful API Stack For Data-Driven SEO Tools – DataForSEO We provide comprehensive data solutions for SEO and SEM analytics via API. DataForSEO is a trusted partner for 750+ SEO … Read more"
+    },
+    {
+      "title": "DataForSEO",
+      "url": "https://app.dataforseo.com/signin",
+      "snippet": "dataforseo.com https://app. dataforseo .com › signin DataForSEO Put Claude Code to work on SEO. Create SEO reports, find backlink opportunities, and build content plans with ready-made … Read more"
+    },
+    {
+      "title": "DataForSEO Databases – SEO and SEM Intel at Your Fingertips",
+      "url": "https://dataforseo.com/databases",
+      "snippet": "dataforseo.com https:// dataforseo .com › databases DataForSEO Databases – SEO and SEM Intel at Your Fingertips DataForSEO Databases is the biggest commercially available datasource of accurate SEO data. Available for dozens of countries … Read more"
+    },
+    {
+      "title": "DataForSEO API v.3",
+      "url": "https://docs.dataforseo.com/v3/",
+      "snippet": "dataforseo.com https://docs. dataforseo .com DataForSEO API v.3 Welcome to DataForSEO API! This is the starting point on your journey towards building powerful SEO software, data analysis … Read more"
+    },
+    {
+      "title": "Authentication – DataForSEO API v.3",
+      "url": "https://docs.dataforseo.com/v3/auth/",
+      "snippet": "dataforseo.com https://docs. dataforseo .com › auth Authentication – DataForSEO API v.3 DataForSEO is using the Basic Authentication, which makes it possible to call our APIs with almost any programming language, … Read more"
+    },
+    {
+      "title": "DataForSEO Academy",
+      "url": "https://academy.dataforseo.com/",
+      "snippet": "dataforseo.com https://academy. dataforseo .com DataForSEO Academy Learn how to work with SERP, keyword, backlink, on-page, and Google Ads data in ways you can apply immediately. Start with API … Read more"
+    },
+    {
+      "title": "DataForSEO - Register",
+      "url": "https://app.dataforseo.com/register",
+      "snippet": "dataforseo.com https://app. dataforseo .com › register DataForSEO - Register Get wire transfer, PO-based billing, and custom invoice cycles tailored to your financial requirements. You can sign a contract with … Read more"
+    },
+    {
+      "title": "OpenSEO - Open Source SEO Platform",
+      "url": "https://openseo.so/",
+      "snippet": "openseo.so https://openseo.so OpenSEO - Open Source SEO Platform Keyword research, competitor analysis, backlinks, rank tracking, technical audits, and AI-search visibility, all on real DataForSEO … Read more"
+    },
+    {
+      "title": "GitHub - dataforseo /PythonClient: Official DataForSEO python client",
+      "url": "https://github.com/dataforseo/PythonClient",
+      "snippet": "github.com https:// github.com › dataforseo › PythonClient GitHub - dataforseo /PythonClient: Official DataForSEO python client Feb 1, 2010 · This is a Python client providing you, as a developer, with a tool for obtaining the necessary data from DataForSEO … Read more"
+    },
+    {
+      "title": "Status DataForSEO",
+      "url": "https://status.dataforseo.com/",
+      "snippet": "dataforseo.com https://status. dataforseo .com Status DataForSEO Check the current operational status of DataForSEO services and stay updated on any ongoing issues or maintenance activities."
+    }
+  ],
+  "retrievals": [
+    {
+      "url": "https://docs.dataforseo.com/v3/",
+      "status": 200,
+      "text": "DataForSEO API v.3 Search ⌘ K Ask AI Menu Example Introduction Welcome to DataForSEO API! This is the starting point on your journey towards building powerful SEO software, data analysis pipelines, and robust no-code automations. With DataForSEO you can get all the data you need while saving your time and budget. Getting started Follow our recommended learning path to master DataForSEO APIs. 1. Kickstart Guide to our APIs 2. Dashboard Guide 3. Test with API Playground 4. Free Unlimited Trial Info 5. Sandbox Best Practices REST technology DataForSEO API is using the REST technology for interchanging data between your application and our service. The data exchange is made through the widely used HTTP protocol, which allows applying our API to almost all programming languages. Client libraries You can create your REST class or use the following ready-made classes: PHP DataForSEO Client Recommended: officially supported PHP Client. Author – Vitaliy Lyabakh – jovixv C# DataForSEO Client Recommended: officially supported C# Client. Author – DataForSEO team Java DataForSEO Client Recommended: officially supported Java Client. Author – DataForSEO team Python DataForSEO Client Recommended: officially supported Python Client. Author – DataForSEO team TypeScript DataForSEO Client Recommended: officially supported TypeScript Client. Author – DataForSEO team PHP Simple Rest Client PHP REST Client build with cURL. Author – Fabio Agostinho Boris. Python Simple Rest Client Python REST Client. Author – DataForSEO. PHP, Python, C# and Postman examples Choose your preferred programming language or API testing tool. PHP Examples PHP code examples Python Examples Python code examples C# Examples C# code examples POSTMAN Examples POSTMAN examples POSTMAN Documenter Online POSTMAN Documenter Data encoding All data you send to DataForSEO API should be UTF-8 encoded. If you use one of the Clients listed in the first table, gzip will be the default format of data exchange. You will see Content-Encoding: gzip in the header. All the responses are returned in the JSON format by default, but we also support responses in the XML format – just append .xml to the end of your request. In addition to that, you can request HTML results from endpoints that return HTML-encoded results by appending .html to the end of the request’s URL path. For example, the following requests will return response encoded in XML or HTML accordingly: https://api.dataforseo.com/v3/appendix/user_data.xml https://api.dataforseo.com/v3/serp/google/organic/task_get/html/09061543-1535-0066-0000-6240830f56ba.html Rate limits Each of DataForSEO APIs has a certain rate limit, which you can find in the HTTP header of every endpoint. Rate limit HTTP headers we use: X-RateLimit-Limit – the rate limit ceiling per minute for the given endpoint; X-RateLimit-Remaining – the number of requests remaining in the current rate limit window. If your system requires rate limits to be increased, please contact our support team. Results storage The term for storing API results in our system depends on the API and method of data retrieval. Standard method: results are stored for 30 days * Live method: results are not stored * HTML results: results are stored for 7 days * for SERP API in both Standard and Live methods, the results in JSON format are stored for 30 days. To learn more about the terms of results storage, check this Help Center article . DataForSEO Help Center Need guidance? Visit our Help Center for integration tips, troubleshooting info, and product FAQs. • Live vs Standard method • What’s task ID? • Task completion & lists of completed tasks • Using filters in DataForSEO APIs • Set multiple tasks in one request • Webhooks & callbacks • SERP API best practices • Keyword Data API best practices • On-Page API best practices • Live endpoints best practices Additional resources LLMs.txt standard LLM-friendly docs version OpenAPI specification YAML-formatted specification for all APIs LangChain integration DataForSEO API Wrapper To get detailed information about current system status, past and pending incidents, associated endpoints, incident gravity, and time to resolution, visit a dedicated DataForSEO Status Page. cURL php Node.js Python cSharp"
+    }
+  ],
+  "errors": [],
+  "first_pass": {
+    "auth": "unknown",
+    "credential_gate": "unknown",
+    "api_surface": "unknown",
+    "official_mcp": "unknown",
+    "composio_toolkit": "unknown",
+    "verdict": "unclear",
+    "blocker": "Claim-specific documentation not assessed",
+    "next_action": "Review official documentation and validate each claim",
+    "confidence": "unresolved"
+  },
+  "validation_errors": [
+    "All claim fields require source-specific review"
+  ]
+}

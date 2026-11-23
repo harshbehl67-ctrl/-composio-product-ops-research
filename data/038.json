@@ -1,0 +1,65 @@
+{
+  "app": {
+    "number": 38,
+    "name": "Pinterest",
+    "category": "Marketing, Ads, Email and Social",
+    "hint": "developers.pinterest.com"
+  },
+  "checked_at": "2026-11-23T13:41:59.209697+00:00",
+  "query": "Pinterest developer API authentication documentation",
+  "search_results": [
+    {
+      "title": "Pinterest",
+      "url": "https://www.pinterest.com/",
+      "snippet": "pinterest.com https:// www.pinterest.com Pinterest Bring your favorite ideas to life With Pinterest, you can unlock tools that spark your creativity and help you find more inspiration"
+    },
+    {
+      "title": "Profile - Pinterest",
+      "url": "https://www.pinterest.com/pinterest/",
+      "snippet": "pinterest.com https:// www.pinterest.com › pinterest Profile - Pinterest Pinterest | Find your reason to go offline. 📌"
+    },
+    {
+      "title": "Pinterest India (pinterestindia) – Profile | Pinterest",
+      "url": "https://in.pinterest.com/pinterestindia/",
+      "snippet": "pinterest.com https://in. pinterest .com › pinterest india Pinterest India (pinterestindia) – Profile | Pinterest Pinterest India | Discover endless ideas on Pinterest - recipes, styling tips, home decor, travel, and more. Get inspired and bring your … Read more"
+    },
+    {
+      "title": "All about Pinterest | Pinterest help",
+      "url": "https://help.pinterest.com/en/guide/all-about-pinterest",
+      "snippet": "pinterest.com https://help. pinterest .com › en › guide › all-about- pinterest All about Pinterest | Pinterest help With billions of Pins on Pinterest, you'll always find ideas to spark inspiration. When you discover Pins you love, save them to boards … Read more"
+    },
+    {
+      "title": "Pinterest UK (PinterestUK) – Profile | Pinterest",
+      "url": "https://uk.pinterest.com/pinterestuk/",
+      "snippet": "pinterest.com https://uk. pinterest .com › pinterest uk Pinterest UK (PinterestUK) – Profile | Pinterest 44Pins 4d Easy appetisers and snacks for festive hosting Pinterest UK 53Pins 4d Creative gift wrapping ideas"
+    },
+    {
+      "title": "Pinterest - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Pinterest",
+      "snippet": "wikipedia.org https:// en.wikipedia.org › wiki › Pinterest Pinterest - Wikipedia According to the 2023 Comscore report, the audience of Pinterest users are known to be 70% women and 30% men. [‡ 16] Despite … Read more"
+    },
+    {
+      "title": "Pinterest - Apps on Google Play",
+      "url": "https://play.google.com/store/apps/details?id=com.pinterest&hl=en-US",
+      "snippet": "google.com https:// play.google.com › store › apps › details Pinterest - Apps on Google Play Pinterest is a place of endless possibilities. You can: - Discover everyday inspiration - Shop styles you love - Try and learn … Read more"
+    }
+  ],
+  "retrievals": [],
+  "errors": [
+    "No candidate documentation on hint domain found; review required"
+  ],
+  "first_pass": {
+    "auth": "unknown",
+    "credential_gate": "unknown",
+    "api_surface": "unknown",
+    "official_mcp": "unknown",
+    "composio_toolkit": "unknown",
+    "verdict": "unclear",
+    "blocker": "Claim-specific documentation not assessed",
+    "next_action": "Review official documentation and validate each claim",
+    "confidence": "unresolved"
+  },
+  "validation_errors": [
+    "All claim fields require source-specific review"
+  ]
+}

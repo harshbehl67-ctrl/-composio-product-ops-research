@@ -1,0 +1,84 @@
+{
+  "app": {
+    "number": 66,
+    "name": "Neo4j",
+    "category": "Developer, Infra and Data platforms",
+    "hint": "neo4j.com/docs/api"
+  },
+  "checked_at": "2026-11-23T13:42:04.678080+00:00",
+  "query": "Neo4j developer API authentication documentation",
+  "search_results": [
+    {
+      "title": "Neo4j Graph Intelligence Platform",
+      "url": "https://neo4j.com/",
+      "snippet": "neo4j.com https:// neo4j .com Neo4j Graph Intelligence Platform Connect data as it's stored with Neo4j. Perform powerful, complex queries at scale and speed with our graph data platform."
+    },
+    {
+      "title": "Neo4j Desktop download | Free graph database download",
+      "url": "https://neo4j.com/download/",
+      "snippet": "neo4j.com https:// neo4j .com › download Neo4j Desktop download | Free graph database download Experience Neo4j 5 on your desktop. Get started with the free graph database download today and avoid the costs of self-hosted … Read more"
+    },
+    {
+      "title": "Neo4j : The Graph Database - GeeksforGeeks",
+      "url": "https://www.geeksforgeeks.org/dbms/neo4j-introduction/",
+      "snippet": "geeksforgeeks.org https://www.geeksforgeeks.org › dbms Neo4j : The Graph Database - GeeksforGeeks Jul 9, 2026 · Neo4j is a leading open-source graph database management system and a NoSQL database designed to store, … Read more"
+    },
+    {
+      "title": "Neo4j Tutorial",
+      "url": "https://www.tutorialspoint.com/neo4j/index.htm",
+      "snippet": "tutorialspoint.com https:// www.tutorialspoint.com Neo4j Tutorial This tutorial has been prepared for beginners to help them understand the basic to advanced concepts of Neo4j. It will give you … Read more"
+    },
+    {
+      "title": "Neo4j - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Neo4j",
+      "snippet": "wikipedia.org https:// en.wikipedia.org › wiki Neo4j - Wikipedia Neo4j is developed by Neo4j, Inc., headquartered in San Mateo, California, United States, with locations in Sweden, Germany, the … Read more"
+    },
+    {
+      "title": "GraphAcademy — Learn Neo4j Free: Hands-On Training & Courses",
+      "url": "https://graphacademy.neo4j.com/",
+      "snippet": "neo4j.com https://graphacademy. neo4j .com GraphAcademy — Learn Neo4j Free: Hands-On Training & Courses Free, self-paced, hands-on Neo4j courses from the people who build the graph database. Learn to design, optimize and launch … Read more"
+    },
+    {
+      "title": "Native Graph Database | Neo4j Graph Database Platform",
+      "url": "https://neo4j.com/product/neo4j-graph-database/",
+      "snippet": "neo4j.com https:// neo4j .com › product Native Graph Database | Neo4j Graph Database Platform You started with Neo4j Community Edition because you experienced a challenge that relationships could solve: a fraud pattern to … Read more"
+    },
+    {
+      "title": "Neo4j documentation - Neo4j Documentation",
+      "url": "https://neo4j.com/docs/",
+      "snippet": "neo4j.com https:// neo4j .com › docs Neo4j documentation - Neo4j Documentation Neo4j Tools Use Neo4j’s tools to explore, visualize, manage, monitor, and import data to your graph."
+    },
+    {
+      "title": "Neo4j Community Edition",
+      "url": "https://neo4j.com/product/community-edition/",
+      "snippet": "neo4j.com https:// neo4j .com › product › community-edition Neo4j Community Edition Unlike traditional databases that strip away context, Neo4j preserves relationships by storing data as connected nodes. Neo4j … Read more"
+    },
+    {
+      "title": "Learn Neo4j",
+      "url": "https://neo4j.com/learn-neo4j/",
+      "snippet": "neo4j.com https:// neo4j .com Learn Neo4j Learn Neo4j hands-on with the free Neo4j Sandbox, then put your skills to work on a free-forever AuraDB cloud database. No credit … Read more"
+    }
+  ],
+  "retrievals": [
+    {
+      "url": "https://neo4j.com/docs/",
+      "status": 200,
+      "text": "Neo4j documentation - Neo4j Documentation Neo4j documentation Getting started Get started with Neo4j Explore the capabilities of graph databases. Get started CTA cards Deployment options Choose from fully and self-managed local and cloud deployments. Run Neo4j on Docker or Kubernetes. Get a Neo4j instance Cypher Learn how to write Cypher®, Neo4j’s declarative query language. Query your data Neo4j Tools Use Neo4j’s tools to explore, visualize, manage, monitor, and import data to your graph. Discover the products Graph Data Science Run graph algorithms and machine learning models to analyze your data at scale. Get insights from data Create applications Discover the client libraries and APIs to develop applications with Neo4j and AuraDB. Start developing Connect data sources Learn how to use connectors and other tools to connect Neo4j with other data sources. Connect to Neo4j Tailored for you Keep exploring Developer Choose your deployment Learn Cypher Start querying Create applications Connect data sources Integrate GenAI functions Improve app performance Extend Neo4j Database Admin Manage your database Deploy and manage a cluster Database internals Manage users, roles, and privileges Monitor your database Backup and restore Upgrade and migration Data Scientist Analyze your data Set up your deployment Create data visualizations Use machine learning algorithms Set up a Python client Manage your graph Data Engineer Graph database concepts Model your data Connect data sources Import your dataset Monitor data changes Data modeling tools Tutorials & How-to guides Tutorials & How-to guides Embedding & Vector Indexes Tutorial Import data from a relational database into Neo4j Build a Cypher recommendation engine Set up and use a composite database Capture and track changes in real-time Apply centrality algorithms to your graph All tutorials GraphAcademy courses GraphAcademy courses Introduction to Neo4j and graph databases Cypher query language fundamentals How to import data to Neo4j Neo4j & GenerativeAI Fundamentals Vector indexes and unstructured data Introduction to Graph Data Science All courses Other resources Join forums and discussions Community forum Discord Developer blogs, articles and books Developer blog Other resources"
+    }
+  ],
+  "errors": [],
+  "first_pass": {
+    "auth": "unknown",
+    "credential_gate": "unknown",
+    "api_surface": "unknown",
+    "official_mcp": "unknown",
+    "composio_toolkit": "unknown",
+    "verdict": "unclear",
+    "blocker": "Claim-specific documentation not assessed",
+    "next_action": "Review official documentation and validate each claim",
+    "confidence": "unresolved"
+  },
+  "validation_errors": [
+    "All claim fields require source-specific review"
+  ]
+}

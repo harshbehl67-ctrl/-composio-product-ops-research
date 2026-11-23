@@ -1,0 +1,80 @@
+{
+  "app": {
+    "number": 89,
+    "name": "Ramp",
+    "category": "Finance and Fintech",
+    "hint": "docs.ramp.com"
+  },
+  "checked_at": "2026-11-23T13:42:07.695045+00:00",
+  "query": "Ramp developer API authentication documentation",
+  "search_results": [
+    {
+      "title": "Spend Management, Corporate Cards & Accounts Payable Solutions | Ramp",
+      "url": "https://ramp.com/",
+      "snippet": "ramp.com https:// ramp .com Spend Management, Corporate Cards & Accounts Payable Solutions | Ramp Make expense management easy with Ramp's spend management platform. Combine global corporate cards, travel, expenses and …"
+    },
+    {
+      "title": "Ramp Login Page: Time is money. Save both.",
+      "url": "https://app.ramp.com/sign-in",
+      "snippet": "ramp.com https://app. ramp .com › sign-in Ramp Login Page: Time is money. Save both. Master expense management with Ramp's finance platform. Experience corporate card flexibility and streamline your accounts …"
+    },
+    {
+      "title": "Welcome | MSME RAMP PORTAL",
+      "url": "https://ramp.msme.gov.in/ramp/",
+      "snippet": "msme.gov.in https:// ramp .msme.gov.in Welcome | MSME RAMP PORTAL Sep 22, 2026 · RAMP is a World Bank-supported Central Sector Scheme implemented by MoMSME over 2022–27, targeting the …"
+    },
+    {
+      "title": "About Us - Different By Design | Ramp",
+      "url": "https://ramp.com/about-us/",
+      "snippet": "ramp.com https:// ramp .com › about-us About Us - Different By Design | Ramp Ramp is the ultimate platform for modern finance teams. From corporate cards and expense management software, to bill payments …"
+    },
+    {
+      "title": "Ramp (company) - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Ramp_(company)",
+      "snippet": "wikipedia.org https:// en.wikipedia.org › wiki › Ramp _(company) Ramp (company) - Wikipedia Ramp Business Corporation is an American multinational financial technology company that offers corporate charge cards, expense …"
+    },
+    {
+      "title": "Ramp — The corporate card that helps you spend less",
+      "url": "https://app.ramp.com/sign-in/saml/fc2a2fbb-b136-4326-8f22-0b63c58c2953",
+      "snippet": "ramp.com https://app. ramp .com › sign-in › saml Ramp — The corporate card that helps you spend less Experience corporate card flexibility and streamline your accounts payable processes for optimal financial efficiency and automation."
+    },
+    {
+      "title": "About RAMP | MSME RAMP PORTAL",
+      "url": "https://ramp.msme.gov.in/ramp/about-us/about-ramp",
+      "snippet": "msme.gov.in https:// ramp .msme.gov.in › ramp › about-us › about- ramp About RAMP | MSME RAMP PORTAL Jul 6, 2026 · Considering the above, the Ministry of MSME, Government of India designed and launched a new Central Sector …"
+    },
+    {
+      "title": "Ramp - LinkedIn",
+      "url": "https://www.linkedin.com/company/ramp",
+      "snippet": "linkedin.com https://www. linkedin .com › company › ramp Ramp - LinkedIn Ramp is an all-in-one financial operations platform designed to save businesses time and money. Combining corporate cards, …"
+    },
+    {
+      "title": "Ramp Help Center",
+      "url": "https://support.ramp.com/",
+      "snippet": "ramp.com https://support. ramp .com Ramp Help Center Join live webinars and explore self-paced training on Ramp. Connect with other Ramp customers, share tips, and get advice. …"
+    },
+    {
+      "title": "About RAMP - msme1connect.up.gov.in",
+      "url": "https://msme1connect.up.gov.in/about-ramp",
+      "snippet": "up.gov.in https://msme1connect.up.gov.in › about- ramp About RAMP - msme1connect.up.gov.in “Raising and Accelerating MSME Performance (RAMP)” is a World Bank-supported Central Sector strategic initiative to enhance the …"
+    }
+  ],
+  "retrievals": [],
+  "errors": [
+    "No candidate documentation on hint domain found; review required"
+  ],
+  "first_pass": {
+    "auth": "unknown",
+    "credential_gate": "unknown",
+    "api_surface": "unknown",
+    "official_mcp": "unknown",
+    "composio_toolkit": "unknown",
+    "verdict": "unclear",
+    "blocker": "Claim-specific documentation not assessed",
+    "next_action": "Review official documentation and validate each claim",
+    "confidence": "unresolved"
+  },
+  "validation_errors": [
+    "All claim fields require source-specific review"
+  ]
+}

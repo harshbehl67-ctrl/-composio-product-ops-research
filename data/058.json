@@ -1,0 +1,80 @@
+{
+  "app": {
+    "number": 58,
+    "name": "Sherlock",
+    "category": "Data, SEO and Scraping",
+    "hint": "github.com/sherlock-project/sherlock"
+  },
+  "checked_at": "2026-11-23T13:42:03.542470+00:00",
+  "query": "Sherlock developer API authentication documentation",
+  "search_results": [
+    {
+      "title": "Sherlock (TV series ) - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Sherlock_(TV_series)",
+      "snippet": "wikipedia.org https:// en.wikipedia.org › wiki › Sherlock_(TV_series ) Sherlock (TV series ) - Wikipedia Sherlock is a British mystery crime drama television series based on Sir Arthur Conan Doyle 's Sherlock Holmes detective stories. …"
+    },
+    {
+      "title": "Sherlock (TV Series 2010–2017) - IMDb",
+      "url": "https://www.imdb.com/title/tt1475582",
+      "snippet": "imdb.com https:// www.imdb.com › title Sherlock (TV Series 2010–2017) - IMDb In modern-day London, brilliant but eccentric detective Sherlock Holmes teams with war veteran Dr. John Watson to crack baffling …"
+    },
+    {
+      "title": "Watch Sherlock | Netflix",
+      "url": "https://www.netflix.com/title/70202589",
+      "snippet": "netflix.com https:// www.netflix.com › title Watch Sherlock | Netflix In this updated take on Sir Arthur Conan Doyle's beloved mystery tales, the eccentric sleuth prowls the streets of modern London in …"
+    },
+    {
+      "title": "Sherlock Online: Free Username Search & OSINT Tool",
+      "url": "https://sherlock-osint.com/",
+      "snippet": "sherlock-osint.com https:// sherlock -osint.com Sherlock Online: Free Username Search & OSINT Tool Sherlock is a free, open-source OSINT tool that hunts down a person's accounts by username across social networks. The original …"
+    },
+    {
+      "title": "Sherlock | Watch Full Episodes - Disney+",
+      "url": "https://www.disneyplus.com/browse/entity-d1c9628e-f21e-4369-bdb6-42ef4fd8d8b3?msockid=002cf62ea1416b4b0754ee34a0ea6a0d",
+      "snippet": "disneyplus.com https://www.disneyplus.com › browse Sherlock | Watch Full Episodes - Disney+ When a chance encounter brings former soldier and doctor John Watson into Sherlock's life, it's apparent the two men couldn't be …"
+    },
+    {
+      "title": "Prime Video: Sherlock : Series 1",
+      "url": "https://www.primevideo.com/detail/0HL9G19NUPUPN3BQNGN67IY6DD",
+      "snippet": "primevideo.com https://www.primevideo.com › detail Prime Video: Sherlock : Series 1 Sherlock Holmes meets Dr Watson, and tackle the case of the Impossible Suicides."
+    },
+    {
+      "title": "Sherlock Holmes - The Official Website",
+      "url": "https://sherlockholmes.com/",
+      "snippet": "sherlockholmes.com https:// sherlock holmes.com Sherlock Holmes - The Official Website Before Gotham had Batman, London had Sherlock Holmes. Explore how Doyle’s Victorian detective became the original caped …"
+    },
+    {
+      "title": "List of Sherlock episodes - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/List_of_Sherlock_episodes",
+      "snippet": "wikipedia.org https:// en.wikipedia.org › wiki › List_of_Sherlock_episodes List of Sherlock episodes - Wikipedia Sherlock is a mystery crime drama television series that presents a contemporary adaptation of Sir Arthur Conan Doyle 's Sherlock …"
+    },
+    {
+      "title": "Watch Sherlock | Full episodes - Disney+",
+      "url": "https://www.disneyplus.com/en-gb/browse/entity-d1c9628e-f21e-4369-bdb6-42ef4fd8d8b3?msockid=002cf62ea1416b4b0754ee34a0ea6a0d",
+      "snippet": "disneyplus.com https://www.disneyplus.com › en-gb › browse Watch Sherlock | Full episodes - Disney+ When a chance encounter brings former soldier and doctor John Watson into Sherlock's life, it's apparent the two men couldn't be …"
+    },
+    {
+      "title": "Sherlock - watch tv show streaming online - JustWatch",
+      "url": "https://www.justwatch.com/us/tv-show/sherlock",
+      "snippet": "justwatch.com https://www.justwatch.com › us › tv-show › sherlock Sherlock - watch tv show streaming online - JustWatch 2 days ago · Sherlock is a high-functioning sociopath who solves seemingly unsolvable mysteries through a series of observation, …"
+    }
+  ],
+  "retrievals": [],
+  "errors": [
+    "No candidate documentation on hint domain found; review required"
+  ],
+  "first_pass": {
+    "auth": "unknown",
+    "credential_gate": "unknown",
+    "api_surface": "unknown",
+    "official_mcp": "unknown",
+    "composio_toolkit": "unknown",
+    "verdict": "unclear",
+    "blocker": "Claim-specific documentation not assessed",
+    "next_action": "Review official documentation and validate each claim",
+    "confidence": "unresolved"
+  },
+  "validation_errors": [
+    "All claim fields require source-specific review"
+  ]
+}

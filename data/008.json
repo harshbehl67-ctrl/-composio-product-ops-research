@@ -1,0 +1,80 @@
+{
+  "app": {
+    "number": 8,
+    "name": "Close",
+    "category": "CRM and Sales",
+    "hint": "close.com"
+  },
+  "checked_at": "2026-11-23T13:41:50.802912+00:00",
+  "query": "Close developer API authentication documentation",
+  "search_results": [
+    {
+      "title": "Close CRM | The CRM That Does the Work",
+      "url": "https://www.close.com/",
+      "snippet": "close.com https://www. close .com Close CRM | The CRM That Does the Work What is Close? Close is a sales CRM built for teams that sell. It combines calling, email, SMS, pipeline management, reporting, and …"
+    },
+    {
+      "title": "CLOSE Definition & Meaning - Merriam-Webster",
+      "url": "https://www.merriam-webster.com/dictionary/close",
+      "snippet": "merriam-webster.com https:// www.merriam-webster.com › dictionary › close CLOSE Definition & Meaning - Merriam-Webster 3 days ago · The meaning of CLOSE is to move so as to bar passage through something. How to use close in a sentence. Synonym …"
+    },
+    {
+      "title": "CLOSE | English meaning - Cambridge Dictionary",
+      "url": "https://dictionary.cambridge.org/dictionary/english/close",
+      "snippet": "cambridge.org https://dictionary.cambridge.org › dictionary › english › close CLOSE | English meaning - Cambridge Dictionary CLOSE definition: 1. to change from being open to not being open, or to cause something to do this: 2. When a shop…. Learn more."
+    },
+    {
+      "title": "' Close ' or 'Closed'? What Is the Difference? | Mastering Grammar",
+      "url": "https://www.masteringgrammar.com/2023/08/close-or-closed.html",
+      "snippet": "masteringgrammar.com https://www.masteringgrammar.com › close -or- close d.html ' Close ' or 'Closed'? What Is the Difference? | Mastering Grammar Aug 18, 2023 · Close and closed are two words that often cause confusion among English learners. In this blog post, we will explore …"
+    },
+    {
+      "title": "close (2) - Linux manual page - man7.org",
+      "url": "https://www.man7.org/linux/man-pages/man2/close.2.html",
+      "snippet": "man7.org https://www.man7.org › linux › man-pages close (2) - Linux manual page - man7.org close () closes a file descriptor, so that it no longer refers to any file and may be reused. Any record locks (see fcntl (2)) held on the …"
+    },
+    {
+      "title": "Clos",
+      "url": "https://clos.co.in/",
+      "snippet": "clos.co.in https://clos.co.in Clos Clos FLOW DROP 2 Fluid, Celebratory, Free. Our new collection with unique prints that follow the idea of flow, of colour, form, & …"
+    },
+    {
+      "title": "CLOSE Synonyms: 566 Similar and Opposite Words - Merriam-Webster",
+      "url": "https://www.merriam-webster.com/thesaurus/close",
+      "snippet": "merriam-webster.com https:// www.merriam-webster.com › thesaurus › close CLOSE Synonyms: 566 Similar and Opposite Words - Merriam-Webster Some common synonyms of close are miserly, niggardly, parsimonious, penurious, and stingy. While all these words mean \"being …"
+    },
+    {
+      "title": "Close vs. Close - Difference & Meaning - GRAMMARIST",
+      "url": "https://grammarist.com/heteronyms/close-vs-close/",
+      "snippet": "grammarist.com https:// grammarist.com › heteronyms › close-vs-close Close vs. Close - Difference & Meaning - GRAMMARIST While “close” may seem like a simple word, it is pronounced and spelled in two different ways. It can be used as both a verb and an …"
+    },
+    {
+      "title": "Close (2022 film) - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Close_(2022_film)",
+      "snippet": "wikipedia.org https:// en.wikipedia.org › wiki Close (2022 film) - Wikipedia Starring Eden Dambrine, Gustav De Waele, Émilie Dequenne and Léa Drucker, it follows two teenage boys whose close friendship …"
+    },
+    {
+      "title": "Close vs. Closed: Learn the Differences in 30 Seconds!",
+      "url": "https://www.esl-lounge.com/student/confused-words/close-vs-close-vs-closed.php",
+      "snippet": "esl-lounge.com https://www.esl-lounge.com › student › confused-words › close -vs- close -vs... Close vs. Closed: Learn the Differences in 30 Seconds! Learn the difference between close (as verb), close (as adjective), and closed. Clear explanation with real-world examples to help …"
+    }
+  ],
+  "retrievals": [],
+  "errors": [
+    "No candidate documentation on hint domain found; review required"
+  ],
+  "first_pass": {
+    "auth": "unknown",
+    "credential_gate": "unknown",
+    "api_surface": "unknown",
+    "official_mcp": "unknown",
+    "composio_toolkit": "unknown",
+    "verdict": "unclear",
+    "blocker": "Claim-specific documentation not assessed",
+    "next_action": "Review official documentation and validate each claim",
+    "confidence": "unresolved"
+  },
+  "validation_errors": [
+    "All claim fields require source-specific review"
+  ]
+}

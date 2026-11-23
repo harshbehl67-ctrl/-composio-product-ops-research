@@ -1,0 +1,62 @@
+[
+  {
+    "app": "GitHub",
+    "field": "official_mcp",
+    "original": "unknown",
+    "checked": "yes",
+    "correction": "yes",
+    "rating": "abstained",
+    "why": "Baseline abstained",
+    "url": "https://github.com/github/github-mcp-server"
+  },
+  {
+    "app": "Google Ads",
+    "field": "official_mcp",
+    "original": "unknown",
+    "checked": "yes",
+    "correction": "yes",
+    "rating": "abstained",
+    "why": "Baseline abstained",
+    "url": "https://developers.google.com/google-ads/api/docs/developer-toolkit/mcp-server"
+  },
+  {
+    "app": "HubSpot",
+    "field": "official_mcp",
+    "original": "unknown",
+    "checked": "yes",
+    "correction": "yes",
+    "rating": "abstained",
+    "why": "Baseline abstained",
+    "url": "https://developers.hubspot.com/docs/apps/developer-platform/build-apps/integrate-with-the-remote-hubspot-mcp-server"
+  },
+  {
+    "app": "Stripe",
+    "field": "official_mcp",
+    "original": "unknown",
+    "checked": "yes",
+    "correction": "yes",
+    "rating": "abstained",
+    "why": "Baseline abstained",
+    "url": "https://docs.stripe.com/mcp"
+  },
+  {
+    "app": "Sherlock",
+    "field": "api_surface",
+    "original": "unknown",
+    "checked": "local command-line tool",
+    "correction": "local command-line tool",
+    "rating": "abstained",
+    "why": "Baseline abstained",
+    "url": "https://github.com/sherlock-project/sherlock"
+  },
+  {
+    "app": "Mermaid CLI",
+    "field": "api_surface",
+    "original": "unknown",
+    "checked": "local command-line tool",
+    "correction": "local command-line tool",
+    "rating": "abstained",
+    "why": "Baseline abstained",
+    "url": "https://github.com/mermaid-js/mermaid-cli"
+  }
+]

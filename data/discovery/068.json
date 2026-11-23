@@ -1,0 +1,70 @@
+{
+  "app": "MongoDB Atlas",
+  "query": "site:mongodb.com MongoDB Atlas API developer documentation authentication",
+  "checked_at": "2026-11-23T13:45:48.175852+00:00",
+  "results": [
+    {
+      "title": "MongoDB | The Intelligent Data Platform for the AI Era",
+      "url": "https://www.mongodb.com/?msockid=05d16ee950576a842a1a76f351856b46",
+      "snippet": "mongodb.com https://www. mongodb .com MongoDB | The Intelligent Data Platform for the AI Era MongoDB is the intelligent data platform for the AI era. Get your ideas to market faster with flexible, real-time data that scales across … Read more"
+    },
+    {
+      "title": "Download MongoDB Community Server",
+      "url": "https://www.mongodb.com/try/download/community?msockid=05d16ee950576a842a1a76f351856b46",
+      "snippet": "mongodb.com https://www. mongodb .com › try › download › community Download MongoDB Community Server mongot is the full-text search and vector search engine for MongoDB Community Server. It seamlessly integrates with your … Read more"
+    },
+    {
+      "title": "Log in | MongoDB",
+      "url": "https://account.mongodb.com/account",
+      "snippet": "mongodb.com https://account. mongodb .com › account Log in | MongoDB Experience up to 2x throughput, enhanced scalability, and unmatched resilience."
+    },
+    {
+      "title": "MongoDB Tutorial - W3Schools",
+      "url": "https://www.w3schools.com/mongodb/",
+      "snippet": "w3schools.com https:// www.w3schools.com › mongodb MongoDB Tutorial - W3Schools MongoDB is a document database. It stores data in a type of JSON format called BSON. If you are unfamiliar with JSON, check out … Read more"
+    },
+    {
+      "title": "Resources | MongoDB",
+      "url": "https://discover.mongodb.com/",
+      "snippet": "mongodb.com https://discover. mongodb .com Resources | MongoDB Learn more about MongoDB by exploring our latest resources, including webinars, video presentations, white papers, and more."
+    },
+    {
+      "title": "MongoDB Courses and Trainings | MongoDB University",
+      "url": "https://learn.mongodb.com/",
+      "snippet": "mongodb.com https://learn. mongodb .com MongoDB Courses and Trainings | MongoDB University Learn the fundamentals of MongoDB Search, including lexical search, indexing strategies, and query optimization. Discover our … Read more"
+    },
+    {
+      "title": "MongoDB Tutorial - GeeksforGeeks",
+      "url": "https://www.geeksforgeeks.org/mongodb/mongodb-tutorial/",
+      "snippet": "geeksforgeeks.org https://www.geeksforgeeks.org › mongodb › mongodb-tutorial MongoDB Tutorial - GeeksforGeeks Apr 17, 2026 · In this section, you will learn how to install and configure MongoDB across different operating systems, building a … Read more"
+    },
+    {
+      "title": "MongoDB - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/MongoDB",
+      "snippet": "wikipedia.org https:// en.wikipedia.org › wiki › MongoDB MongoDB - Wikipedia Classified as a NoSQL database product, MongoDB uses JSON -like documents (called BSON) with optional schemas. Released in … Read more"
+    },
+    {
+      "title": "MongoDB - Overview - Online Tutorials Library",
+      "url": "https://www.tutorialspoint.com/mongodb/mongodb_overview.htm",
+      "snippet": "tutorialspoint.com https:// www.tutorialspoint.com › mongodb › mongodb_overview .htm MongoDB - Overview - Online Tutorials Library MongoDB is a cross-platform, document oriented database that provides, high performance, high availability, and easy scalability. … Read more"
+    },
+    {
+      "title": "MongoDB - Working and Features - GeeksforGeeks",
+      "url": "https://www.geeksforgeeks.org/mongodb/what-is-mongodb-working-and-features/",
+      "snippet": "geeksforgeeks.org https://www.geeksforgeeks.org › mongodb › what-is-mongodb-working-an … MongoDB - Working and Features - GeeksforGeeks Sep 30, 2025 · MongoDB is well-suited for real-time analytics applications due to its high-performance data ingestion and querying … Read more"
+    }
+  ],
+  "fetches": [
+    {
+      "url": "https://www.mongodb.com/?msockid=05d16ee950576a842a1a76f351856b46",
+      "status": 200,
+      "text": "MongoDB | The Intelligent Data Platform for the AI Era | MongoDB Gartner MongoDB named a Leader in the 2026 Gartner® Magic Quadrant™ for Cloud Databases. Read the Gartner report > >> MONGODB ATLAS Every workload. Any cloud. One platform. Combine real-time operational data, vectors, and elastic scale in a single intelligent data platform built on the document model—deploy across any cloud or your own infrastructure. Get Started Documentation TRUSTED BY Level Up Your MongoDB Skills Access the tools, guides, and training you need to build faster and smarter with MongoDB. Product documentation Atlas Learning Hub Discover tutorials, guides, and videos to master MongoDB Atlas and its features. Learn more Build Smarter with AI Learn to build intelligent apps with AI tools and our AI partner ecosystem. Visit the Learning Hub Voyage AI State-of-the art embedding models and rerankers made for building, scaling, and deploying intelligent applications. Learn more MongoDB University Take free, expert-led courses to sharpen your skills and earn industry-recognized badges. Start learning MongoDB Atlas The multi-cloud, intelligent data platform for any use case Learn about the platform Vector Search Stream Processing Operational Transactional Text Search Analytical Graph Geospatial Vector Search Use Cases MongoDB Atlas integrates operational and vector databases in a single, unified platform. Use vector representations of your data to perform semantic search, build recommendation engines, design Q&A systems, detect anomalies, or provide context for generative AI Apps. Learn More Documentation Stream Processing Use Cases Build scalable event-driven applications that react and respond in near real-time. Atlas Stream Processing unifies the developer experience, enabling you to work with high-velocity data streams from sources like Apache Kafka using the same familiar MongoDB Aggregation Pipeline stages you use for your database. Learn More Tutorial Operational Use Cases Optimize write performance with a document data model that maps to your application’s access patterns. Meet a wide range of query requirements via a single query API that supports everything from simple lookups to complex processing pipelines for data analytics and transformations. Learn More Documentation Transactional Use Cases Guarantee millisecond response times at scale with a flexible document data model and rich query capabilities—including secondary indexing, joins, multi-document ACID transactions, and more. Learn More Documentation Search Use Cases Combine three systems—database, search engine, and sync mechanisms—into one and deliver 30%-50% faster. Build catalog and content search, in-app search, and single view into your application with MongoDB Search on Atlas. Learn More Documentation Analytical Use Cases Unify the core capabilities needed for application-driven analytics with MongoDB Atlas. Perform powerful aggregations and transformations in place and in real time. Leverage optimized indexes, storage, data formats, and an extensive ecosystem of native and integrated analytics services to build smarter applications and achieve real-time business visibility. Learn More Documentation Graph Use Cases Elevate your applications by leveraging MongoDB's native graph data support. Efficiently analyze relationships between data entities in your collections for pattern discovery and intelligent predictions. It’s ideal for powering recommendation systems, fraud detection mechanisms, and managing networks. Learn More Documentation Geospatial Use Cases Easily build applications that leverage geospatial data with MongoDB's native support for GeoJSON and simple coordinate pairs. Harness specialized indexes for blazing-fast queries. It’s your one-stop solution for logistics, location-based services, and spatial analysis. Learn More Documentation Loved by builders, trusted by enterprises View all customer stories 200 databases migrated to Atlas in 4 months 240% improvement in API performance Retail “MongoDB and everything that comes with it was great. On MongoDB, we could automate our deployments and scalability monitoring, and we had advanced features like search charts and an online vector store that didn’t exist in the CouchDB ecosystem.” Read Case Study MongoDB for Retail 200 databases migrated to Atlas in 4 months 240% improvement in API performance Retail “MongoDB and everything that comes with it was great. On MongoDB, we could automate our deployments and scalability monitoring, and we had advanced features like search charts and an online vector store that didn’t exist in the CouchDB ecosystem.” Read Case Study MongoDB for Retail 99.99% availability for customers 9M+ vehicles serviced AUTOMOTIVE “We use MongoDB as the core database for our services, so any new innovative idea or new service we build, we automatically say, ‘We’re going to use MongoDB as the core platform,’ knowing that it’s going to give us the reliability and the scalability that we’re going to need.” Read Case Study MongoDB for Automotive 30% improvement in resource efficiency 3.5 M customer service calls per month Telecommunications “Managing both vector and operational data in MongoDB opened a new world to our team. By migrating operational data from PostgreSQL to MongoDB, we eliminated redundant processes and streamlined data queries.” Read Case Study MongoDB for Telecommunications 3.25 times faster cluster deployments 60% reduction in scaling time Financial Services “Now that we have these automatic systems in place, we have more time. We can focus on providing value for both engineers at Coinbase and our end users.” Read Case Study MongoDB for Financial Services What’s New at MongoDB See what’s new across the MongoDB platform, including the newest releases and updates. All recent updates Atlas Agent Engine MongoDB’s unified execution, memory, and governance layer for running production AI agent on MongoDB Atlas, built to avoid locking you into any individual model or framework. Build with Atlas Agent Engine MongoDB Atlas Infinite Compute and storage scale independently, absorbing sudden spikes with a 96% reduction in scaling time—built for demand you can't predict. Scale with Atlas Infinite MongoDB 9.0 Up to 2x higher throughput, 35% faster find-one queries, 30% faster update-one queries—built to handle today’s transactional workloads and emerging AI applications. Get started with 9.0 Works seamlessly with your tech stack MongoDB integrates with 100+ of your favorite technologies Explore our ecosystem The Intelligent Data Platform for Builders START TODAY Give your agents the whole picture History tells agents what happened. Real-time data tells them what’s happening. Retrieval and memory help them act with context. Get Started MORE INFORMATION Atlas Learning Hub Docs MongoDB University Pricing Contact Us"
+    },
+    {
+      "url": "https://www.mongodb.com/try/download/community?msockid=05d16ee950576a842a1a76f351856b46",
+      "status": 200,
+      "text": "Download MongoDB Community Server | MongoDB BLOG Run AI wherever your compliance framework demands. Read blog > >> BLOG Retrieval accuracy is now a competitive advantage Read blog > >> Try MongoDB Community Edition The community version of our distributed document database provides powerful ways to query and analyze your data."
+    }
+  ],
+  "errors": []
+}

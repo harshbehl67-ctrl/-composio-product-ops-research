@@ -1,0 +1,80 @@
+{
+  "app": {
+    "number": 46,
+    "name": "Squarespace",
+    "category": "Ecommerce",
+    "hint": "developers.squarespace.com"
+  },
+  "checked_at": "2026-11-23T13:42:01.213291+00:00",
+  "query": "Squarespace developer API authentication documentation",
+  "search_results": [
+    {
+      "title": "Website Builder – Easily Create Your Own Website — Squarespace",
+      "url": "https://www.squarespace.com/",
+      "snippet": "squarespace.com https:// www.squarespace.com Website Builder – Easily Create Your Own Website — Squarespace Squarespace offers a range of tools to help sellers manage their online stores, including payment processing, inventory …"
+    },
+    {
+      "title": "Squarespace — Login",
+      "url": "https://account.squarespace.com/",
+      "snippet": "squarespace.com https://account. squarespace .com Squarespace — Login Log into your Squarespace account. Squarespace is the all-in-one solution for anyone looking to create a beautiful website."
+    },
+    {
+      "title": "Create Your Website — Squarespace",
+      "url": "https://www.squarespace.com/websites-start",
+      "snippet": "squarespace.com https:// www.squarespace.com › websites-start Create Your Website — Squarespace Create your website Easy-to-edit website templates, no coding needed Full commerce and marketing features to run your business …"
+    },
+    {
+      "title": "Power your entire business | Square",
+      "url": "https://squareup.com/us/en?msockid=362170335f5165fa2fb568295ea16420",
+      "snippet": "squareup.com https:// squareup.com Power your entire business | Square Sell anywhere. Diversify revenue streams. Streamline operations. Manage your staff. Get paid faster. Sign up for Square today."
+    },
+    {
+      "title": "Squarespace - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Squarespace",
+      "snippet": "wikipedia.org https:// en.wikipedia.org › wiki › Squarespace Squarespace - Wikipedia Squarespace, Inc. is an American website building, hosting, and domain registration company based in New York City. [2] It provides …"
+    },
+    {
+      "title": "Squarespace Help Center",
+      "url": "https://support.squarespace.com/hc/en-us",
+      "snippet": "squarespace.com https://support. squarespace .com Squarespace Help Center Squarespace webinars Free online sessions where you'll learn the basics and refine your Squarespace skills. Everyone is …"
+    },
+    {
+      "title": "Login — Squarespace",
+      "url": "http://template-selector.squarespace.com/login",
+      "snippet": "squarespace.com http://template-selector. squarespace .com › login Login — Squarespace about Get Started Our website is running on the same platform and infrastructure as all of our customer sites, and was created using …"
+    },
+    {
+      "title": "Squarespace Pricing Plans & Features — Squarespace",
+      "url": "https://www.squarespace.com/pricing",
+      "snippet": "squarespace.com https:// www.squarespace.com › pricing Squarespace Pricing Plans & Features — Squarespace Start a 14-day free trial with Squarespace today, no credit card required. Then pick the plan that works for your website."
+    },
+    {
+      "title": "Website Builder: Start Your Website for Free — Squarespace",
+      "url": "https://www.squarespace.com/websites",
+      "snippet": "squarespace.com https:// www.squarespace.com › websites Website Builder: Start Your Website for Free — Squarespace Squarespace includes professionally designed templates, no-code editing, built-in hosting and security, SEO and analytics, and …"
+    },
+    {
+      "title": "Design a Website: The Leader in Website Design — Squarespace",
+      "url": "https://www.squarespace.com/website-design",
+      "snippet": "squarespace.com https:// www.squarespace.com › website-design Design a Website: The Leader in Website Design — Squarespace Build a website that stands out with professional website design templates and tools from Squarespace, fit for portfolios, blogs, …"
+    }
+  ],
+  "retrievals": [],
+  "errors": [
+    "No candidate documentation on hint domain found; review required"
+  ],
+  "first_pass": {
+    "auth": "unknown",
+    "credential_gate": "unknown",
+    "api_surface": "unknown",
+    "official_mcp": "unknown",
+    "composio_toolkit": "unknown",
+    "verdict": "unclear",
+    "blocker": "Claim-specific documentation not assessed",
+    "next_action": "Review official documentation and validate each claim",
+    "confidence": "unresolved"
+  },
+  "validation_errors": [
+    "All claim fields require source-specific review"
+  ]
+}

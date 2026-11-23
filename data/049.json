@@ -1,0 +1,80 @@
+{
+  "app": {
+    "number": 49,
+    "name": "Amazon Selling Partner",
+    "category": "Ecommerce",
+    "hint": "developer-docs.amazon.com/sp-api"
+  },
+  "checked_at": "2026-11-23T13:42:01.895321+00:00",
+  "query": "Amazon Selling Partner developer API authentication documentation",
+  "search_results": [
+    {
+      "title": "Amazon .in - Online Shopping site in India: Shop Online for Mobiles ...",
+      "url": "https://www.amazon.in/",
+      "snippet": "amazon.in https://www. amazon .in Amazon .in - Online Shopping site in India: Shop Online for Mobiles ... Amazon.in: Online Shopping India - Buy mobiles, laptops, cameras, books, watches, apparel, shoes and e-Gift Cards. Free Shipping … Read more"
+    },
+    {
+      "title": "Amazon .in: Home",
+      "url": "https://www.amazon.in/stores/Home/page/F406DA97-A41F-4396-B494-23C4F95051C4",
+      "snippet": "amazon.in https://www. amazon .in › stores › Home › page Amazon .in: Home AbeBooks Books, art & collectibles Amazon Web Services Scalable Cloud Computing Services Audible Download Audio Books … Read more"
+    },
+    {
+      "title": "Amazon .com. Spend less. Smile more.",
+      "url": "https://www.amazon.com/",
+      "snippet": "amazon.com https://www. amazon .com Amazon .com. Spend less. Smile more. Up to 60% off Amazon devices Ring Spotlight Cam 2K (newest model), Plug-In, Home or business security, Wide-Angle Retinal 2K … Read more"
+    },
+    {
+      "title": "Amazon Sign-In",
+      "url": "https://amc.amazon.com/",
+      "snippet": "amazon.com https://amc. amazon .com Amazon Sign-In By continuing, you agree to Amazon's Conditions of Use and Privacy Notice. Need help?"
+    },
+    {
+      "title": "Amazon .com",
+      "url": "https://www.amazon.com/gp/css/homepage.html",
+      "snippet": "amazon.com https://www. amazon .com › gp › css › homepage.html Amazon .com Amazon.com"
+    },
+    {
+      "title": "Amazon .com: Prime Video: Prime Video",
+      "url": "https://www.primevideo.com/collection/IncludedwithPrime",
+      "snippet": "primevideo.com https://www.primevideo.com › collection › IncludedwithPrime Amazon .com: Prime Video: Prime Video Find, shop for and buy Prime Video at Amazon.com"
+    },
+    {
+      "title": "Amazon (company) - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Amazon_(company)",
+      "snippet": "wikipedia.org https:// en.wikipedia.org › wiki › Amazon _(company) Amazon (company) - Wikipedia In January 2026, Amazon announced it would close all of its Amazon Go and Amazon Fresh stores to shift focus to its online same … Read more"
+    },
+    {
+      "title": "Amazon",
+      "url": "https://selection.amazon.com/sign-in?redirect_to=%2F&mons_redirect=sign_in",
+      "snippet": "amazon.com https://selection. amazon .com › sign-in Amazon Choose Your Login Please select your Identity Provider below."
+    },
+    {
+      "title": "Amazon Sign-In",
+      "url": "https://spcentral.amazon.in/account/",
+      "snippet": "amazon.in https://spcentral. amazon .in › account Amazon Sign-In Sign in to Amazon to access your account and manage orders, payments, addresses, and subscriptions."
+    },
+    {
+      "title": "Amazon .com: Amazon Prime",
+      "url": "https://www.amazon.com/amazonprime",
+      "snippet": "amazon.com https://www. amazon .com › amazon prime Amazon .com: Amazon Prime Can I share my Prime benefits with other household members? Prime members can share certain benefits with another adult in their … Read more"
+    }
+  ],
+  "retrievals": [],
+  "errors": [
+    "No candidate documentation on hint domain found; review required"
+  ],
+  "first_pass": {
+    "auth": "unknown",
+    "credential_gate": "unknown",
+    "api_surface": "unknown",
+    "official_mcp": "unknown",
+    "composio_toolkit": "unknown",
+    "verdict": "unclear",
+    "blocker": "Claim-specific documentation not assessed",
+    "next_action": "Review official documentation and validate each claim",
+    "confidence": "unresolved"
+  },
+  "validation_errors": [
+    "All claim fields require source-specific review"
+  ]
+}

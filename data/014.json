@@ -1,0 +1,80 @@
+{
+  "app": {
+    "number": 14,
+    "name": "Front",
+    "category": "Support and Helpdesk",
+    "hint": "front.com"
+  },
+  "checked_at": "2026-11-23T13:41:52.104439+00:00",
+  "query": "Front developer API authentication documentation",
+  "search_results": [
+    {
+      "title": "Front | Customer service platform, powered by AI",
+      "url": "https://front.com/",
+      "snippet": "front.com https:// front .com Front | Customer service platform, powered by AI Deliver exceptional service with Front, the platform where support, sales, operations, and AI agents come together to resolve …"
+    },
+    {
+      "title": "Download Front on Desktop & Mobile",
+      "url": "https://front.com/download",
+      "snippet": "front.com https:// front .com › download Download Front on Desktop & Mobile Stay connected from any device. Whether you’re at your desk or on the go, Front keeps your messages, apps, and teammates at …"
+    },
+    {
+      "title": "FRONT | English meaning - Cambridge Dictionary",
+      "url": "https://dictionary.cambridge.org/dictionary/english/front",
+      "snippet": "cambridge.org https://dictionary.cambridge.org › dictionary › english › front FRONT | English meaning - Cambridge Dictionary FRONT definition: 1. the part of a building, object, or person's body that faces forward or is most often seen or…. Learn more."
+    },
+    {
+      "title": "FrontWars",
+      "url": "https://frontwars.io/",
+      "snippet": "frontwars.io https:// front wars.io FrontWars Expand your nation, eliminate opponents, and dominate the map in this fast-paced IO game."
+    },
+    {
+      "title": "FRONT Definition & Meaning - Merriam-Webster",
+      "url": "https://www.merriam-webster.com/dictionary/front",
+      "snippet": "merriam-webster.com https:// www.merriam-webster.com › dictionary › front FRONT Definition & Meaning - Merriam-Webster 3 days ago · The meaning of FRONT is forehead; also : the whole face. How to use front in a sentence."
+    },
+    {
+      "title": "Font Generator - Fancy Text (𝒞𝑜𝓅𝓎 𝒶𝓃𝒹 𝒫𝒶𝓈𝓉𝑒) | Quicktools by Picsart",
+      "url": "https://tools.picsart.com/text/font-generator/",
+      "snippet": "picsart.com https://tools.picsart.com › text › font-generator Font Generator - Fancy Text (𝒞𝑜𝓅𝓎 𝒶𝓃𝒹 𝒫𝒶𝓈𝓉𝑒) | Quicktools by Picsart Font generators are Unicode characters transformed into fonts that can be copied and pasted online (Unicode is an online protocol …"
+    },
+    {
+      "title": "DaFont - Download fonts",
+      "url": "https://www.dafont.com/",
+      "snippet": "dafont.com https:// www.dafont.com DaFont - Download fonts Archive of freely downloadable fonts. Browse by alphabetical listing, by style, by author or by popularity."
+    },
+    {
+      "title": "front - फ्रन्ट का अर्थ, मतलब, अनुवाद, उच्चारण",
+      "url": "https://www.shabdkosh.com/hi/dictionary/english-hindi/front/front-meaning-in-hindi",
+      "snippet": "shabdkosh.com https://www.shabdkosh.com › hi › dictionary › english-hindi › front › front ... front - फ्रन्ट का अर्थ, मतलब, अनुवाद, उच्चारण front - फ्रन्ट का अर्थ क्या है? front (फ्रन्ट) का अर्थ, अनुवाद, उदाहरण, पर्यायवाची, विपरीत, परिभाषा और …"
+    },
+    {
+      "title": "Openfront ️ Play on CrazyGames",
+      "url": "https://www.crazygames.com/game/openfront-gsw",
+      "snippet": "crazygames.com https://www.crazygames.com › game › open front -gsw Openfront ️ Play on CrazyGames Nov 9, 2026 · Factories connect cities and ports via train networks, generating passive income that increases when trading with …"
+    },
+    {
+      "title": "Home - Front",
+      "url": "https://front.global/",
+      "snippet": "front.global https:// front .global Home - Front View slide 1 View slide 2 View slide 3 View slide 4 View slide 5 View slide 6 View slide 7 View slide 8 View slide 9 View slide 10 …"
+    }
+  ],
+  "retrievals": [],
+  "errors": [
+    "No candidate documentation on hint domain found; review required"
+  ],
+  "first_pass": {
+    "auth": "unknown",
+    "credential_gate": "unknown",
+    "api_surface": "unknown",
+    "official_mcp": "unknown",
+    "composio_toolkit": "unknown",
+    "verdict": "unclear",
+    "blocker": "Claim-specific documentation not assessed",
+    "next_action": "Review official documentation and validate each claim",
+    "confidence": "unresolved"
+  },
+  "validation_errors": [
+    "All claim fields require source-specific review"
+  ]
+}

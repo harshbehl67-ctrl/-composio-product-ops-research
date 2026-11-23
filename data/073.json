@@ -1,0 +1,80 @@
+{
+  "app": {
+    "number": 73,
+    "name": "Linear",
+    "category": "Productivity and Project Management",
+    "hint": "developers.linear.app"
+  },
+  "checked_at": "2026-11-23T13:42:06.324543+00:00",
+  "query": "Linear developer API authentication documentation",
+  "search_results": [
+    {
+      "title": "‎Google Gemini",
+      "url": "https://gemini.google.com/?hl=cs",
+      "snippet": "google.com https://gemini.google.com ‎Google Gemini Seznamte se s Gemini, AI asistentem od Googlu. Dokáže pomoct s psaním, plánováním, brainstormingem a spoustou dalších … Read more"
+    },
+    {
+      "title": "‎Google Gemini",
+      "url": "https://gemini.google.com/?hl=fr",
+      "snippet": "google.com https://gemini.google.com ‎Google Gemini Voici Gemini, l'assistant IA de Google. Faites-vous aider pour rédiger, planifier, trouver des idées et plus encore. Découvrez la … Read more"
+    },
+    {
+      "title": "‎Google Gemini",
+      "url": "https://gemini.google.com/?hl=sv",
+      "snippet": "google.com https://gemini.google.com ‎Google Gemini Det här är Gemini, Googles AI-assistent. Få hjälp med att skriva, planera, brainstorma idéer med mera. Upplev kraften i generativ AI."
+    },
+    {
+      "title": "‎Google Gemini",
+      "url": "https://gemini.google.com/?hl=es",
+      "snippet": "google.com https://gemini.google.com ‎Google Gemini Descubre Gemini, el asistente de IA de Google. Puedes pedirle que te ayude a escribir, a hacer planes o a explorar ideas, entre … Read more"
+    },
+    {
+      "title": "‎Google Gemini",
+      "url": "https://gemini.google.com/?hl=de",
+      "snippet": "google.com https://gemini.google.com ‎Google Gemini Chatte mit Gemini, dem KI-Assistenten von Google. Lass dich beim Schreiben, Planen, Sammeln von Ideen und vielem mehr von … Read more"
+    },
+    {
+      "title": "‎Google Gemini",
+      "url": "https://gemini.google.com/",
+      "snippet": "google.com https://gemini.google.com ‎Google Gemini Meet Gemini, Google’s AI assistant. Get help with writing, planning, brainstorming, and more. Experience the power of generative AI."
+    },
+    {
+      "title": "‎Google Gemini",
+      "url": "https://gemini.google.com/?hl=pt-PT",
+      "snippet": "google.com https://gemini.google.com ‎Google Gemini Conheça o Gemini, o assistente de IA da Google. Receba ajuda para escrever, planear, debater ideias e muito mais. Experimente o … Read more"
+    },
+    {
+      "title": "‎Google Gemini",
+      "url": "https://gemini.google.com/?hl=vi",
+      "snippet": "google.com https://gemini.google.com ‎Google Gemini Làm quen với Gemini, trợ lý AI của Google. Gemini có thể giúp bạn viết nội dung, lên kế hoạch, học tập và nhiều việc khác. Trải … Read more"
+    },
+    {
+      "title": "‎Google Gemini",
+      "url": "https://gemini.google.com/?hl=hu",
+      "snippet": "google.com https://gemini.google.com ‎Google Gemini Ismerje meg a Geminit, a Google AI-alapú asszisztensét. Segítséget nyújt az írásban, a tervezésben, az ötletelésben és sok minden … Read more"
+    },
+    {
+      "title": "‎Google Gemini",
+      "url": "https://gemini.google.com/?hl=th",
+      "snippet": "google.com https://gemini.google.com ‎Google Gemini พบกับ Gemini ผู้ช่วย AI ของ Google รับความช่วยเหลือในการเขียน วางแผน ระดมความคิด และอีกมากมาย สัมผัสพลังของ … Read more"
+    }
+  ],
+  "retrievals": [],
+  "errors": [
+    "No candidate documentation on hint domain found; review required"
+  ],
+  "first_pass": {
+    "auth": "unknown",
+    "credential_gate": "unknown",
+    "api_surface": "unknown",
+    "official_mcp": "unknown",
+    "composio_toolkit": "unknown",
+    "verdict": "unclear",
+    "blocker": "Claim-specific documentation not assessed",
+    "next_action": "Review official documentation and validate each claim",
+    "confidence": "unresolved"
+  },
+  "validation_errors": [
+    "All claim fields require source-specific review"
+  ]
+}

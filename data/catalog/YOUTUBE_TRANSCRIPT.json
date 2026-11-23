@@ -1,0 +1,7 @@
+{
+  "app": "YouTube Transcript",
+  "url": "https://docs.composio.dev/toolkits/youtube_transcript",
+  "checked_at": "2026-11-23T13:46:42.735545+00:00",
+  "status": 200,
+  "text": "YouTube Transcript - Composio Toolkit | Composio All Toolkits YouTube Transcript YOUTUBE_TRANSCRIPT Latest version 20261014_00 Retrieve and store captions for one video or a bounded batch, read job and batch status, access stored transcripts and languages, and resolve playlist or channel video metadata through the YouTube Transcript REST API. Copy page Authentication Details API Key Tools ( 9 ) Get Stored Transcript YOUTUBE_TRANSCRIPT_GET_STORED_TRANSCRIPT Get Video Transcript YOUTUBE_TRANSCRIPT_GET_VIDEO_TRANSCRIPT Get Video Transcript Job Status YOUTUBE_TRANSCRIPT_GET_VIDEO_TRANSCRIPT_JOB_STATUS Get Video Transcripts Batch YOUTUBE_TRANSCRIPT_GET_VIDEO_TRANSCRIPTS_BATCH Get Video Transcripts Batch Status YOUTUBE_TRANSCRIPT_GET_VIDEO_TRANSCRIPTS_BATCH_STATUS List Stored Transcripts YOUTUBE_TRANSCRIPT_LIST_STORED_TRANSCRIPTS List Transcript Languages YOUTUBE_TRANSCRIPT_LIST_TRANSCRIPT_LANGUAGES Resolve Channel Videos YOUTUBE_TRANSCRIPT_RESOLVE_CHANNEL_VIDEOS Resolve Playlist Videos YOUTUBE_TRANSCRIPT_RESOLVE_PLAYLIST_VIDEOS Edit this page on GitHub"
+}

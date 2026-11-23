@@ -1,0 +1,80 @@
+{
+  "app": {
+    "number": 48,
+    "name": "Gumroad",
+    "category": "Ecommerce",
+    "hint": "gumroad.com/api"
+  },
+  "checked_at": "2026-11-23T13:42:01.555894+00:00",
+  "query": "Gumroad developer API authentication documentation",
+  "search_results": [
+    {
+      "title": "Earn your first dollar online with Gumroad",
+      "url": "https://gumroad.com/",
+      "snippet": "gumroad.com https:// gumroad .com Earn your first dollar online with Gumroad Gumroad was created to help you experiment with all kinds of ideas and formats. Whether you need more balance, flexibility, or just …"
+    },
+    {
+      "title": "Log in to Gumroad",
+      "url": "https://gumroad.com/login",
+      "snippet": "gumroad.com https:// gumroad .com › login Log in to Gumroad Log in to your Gumroad account to access your dashboard, library, and sales."
+    },
+    {
+      "title": "Gumroad",
+      "url": "https://gumroad.gumroad.com/",
+      "snippet": "gumroad.com https:// gumroad . gumroad .com Gumroad Practical tools and ideas for digital entrepreneurs. Subscribe for resources for creators who’d rather build than wait, straight to your …"
+    },
+    {
+      "title": "Gumroad - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Gumroad",
+      "snippet": "wikipedia.org https:// en.wikipedia.org › wiki › Gumroad Gumroad - Wikipedia Gumroad, Inc. is an American online marketplace platform that allows creators to sell products directly to their audience. It was …"
+    },
+    {
+      "title": "Gumroad is open source!",
+      "url": "https://gumroad.gumroad.com/p/gumroad-is-now-open-source",
+      "snippet": "gumroad.com https:// gumroad . gumroad .com › gumroad -is-now-open-source Gumroad is open source! Apr 4, 2025 · Today, as we celebrate our 14th birthday, we're thrilled to announce something big: Gumroad is now open source! …"
+    },
+    {
+      "title": "Discover digital products from independent creators | Gumroad",
+      "url": "https://gumroad.com/discover?category=everything",
+      "snippet": "gumroad.com https:// gumroad .com › discover Discover digital products from independent creators | Gumroad Browse over 1.6 million free and premium digital products in education, tech, design, and more categories from Gumroad creators …"
+    },
+    {
+      "title": "Sign up for Gumroad",
+      "url": "https://gumroad.com/signup",
+      "snippet": "gumroad.com https:// gumroad .com › signup Sign up for Gumroad Create a free Gumroad account. Sell digital products, memberships, and courses with no monthly fee. Direct sales: 10% + 50¢. …"
+    },
+    {
+      "title": "Gumroad features: Sell digital products, memberships & courses",
+      "url": "https://gumroad.com/features",
+      "snippet": "gumroad.com https:// gumroad .com › features Gumroad features: Sell digital products, memberships & courses Gumroad is a powerful, but simple, e-commerce platform that puts a wide selection of tools at your fingertips. Now you can sell the …"
+    },
+    {
+      "title": "TM Real Walk Plugin - ETS2 & ATS - izuanbakar. gumroad .com",
+      "url": "https://izuanbakar.gumroad.com/l/tmrealwalk",
+      "snippet": "gumroad.com https://izuanbakar. gumroad .com › tmrealwalk TM Real Walk Plugin - ETS2 & ATS - izuanbakar. gumroad .com TM Real Walk is a product of modern AI-assisted development combined with meticulous hands-on design and hundreds of hours of … Reviews: 2.7K"
+    },
+    {
+      "title": "Gumroad - Apps on Google Play",
+      "url": "https://play.google.com/store/apps/details?id=com.gumroad.app&hl=en-US",
+      "snippet": "google.com https:// play.google.com › store › apps › details Gumroad - Apps on Google Play Gumroad is the simplest way to sell digital products — courses, ebooks, podcasts, music, software, and more. The app is for both …"
+    }
+  ],
+  "retrievals": [],
+  "errors": [
+    "No candidate documentation on hint domain found; review required"
+  ],
+  "first_pass": {
+    "auth": "unknown",
+    "credential_gate": "unknown",
+    "api_surface": "unknown",
+    "official_mcp": "unknown",
+    "composio_toolkit": "unknown",
+    "verdict": "unclear",
+    "blocker": "Claim-specific documentation not assessed",
+    "next_action": "Review official documentation and validate each claim",
+    "confidence": "unresolved"
+  },
+  "validation_errors": [
+    "All claim fields require source-specific review"
+  ]
+}

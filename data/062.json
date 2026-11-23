@@ -1,0 +1,84 @@
+{
+  "app": {
+    "number": 62,
+    "name": "Vercel",
+    "category": "Developer, Infra and Data platforms",
+    "hint": "vercel.com/docs/rest-api"
+  },
+  "checked_at": "2026-11-23T13:42:04.441827+00:00",
+  "query": "Vercel developer API authentication documentation",
+  "search_results": [
+    {
+      "title": "Agentic Infrastructure - Vercel",
+      "url": "https://vercel.com/",
+      "snippet": "vercel.com https:// vercel .com Agentic Infrastructure - Vercel For coding agents to deploy in their native language, with Vercel's API, CLI, MCP, and Skills. To ship apps and agents in Sandboxed … Read more"
+    },
+    {
+      "title": "Login – Vercel",
+      "url": "https://vercel.com/login",
+      "snippet": "vercel.com https:// vercel .com › login Login – Vercel Log in to Vercel Continue with Email Continue with Google Continue with GitHub Continue with ChatGPT Continue with SAML SSO"
+    },
+    {
+      "title": "Sign Up – Vercel",
+      "url": "https://vercel.com/signup",
+      "snippet": "vercel.com https:// vercel .com › signup Sign Up – Vercel Create a Vercel account to build, ship, and run AI agents and applications."
+    },
+    {
+      "title": "New Project - Vercel",
+      "url": "https://vercel.com/new",
+      "snippet": "vercel.com https:// vercel .com › new New Project - Vercel If you don't have a Vercel account, by proceeding, you agree to creating a Vercel account subject to our Terms of Service and … Read more"
+    },
+    {
+      "title": "Vercel Pricing: Hobby, Pro, and Enterprise plans",
+      "url": "https://vercel.com/pricing",
+      "snippet": "vercel.com https:// vercel .com › pricing Vercel Pricing: Hobby, Pro, and Enterprise plans From early-stage startups to growing enterprises, Vercel has you covered. Find a plan to power your projects."
+    },
+    {
+      "title": "Vercel Documentation",
+      "url": "https://vercel.com/docs",
+      "snippet": "vercel.com https:// vercel .com › docs Vercel Documentation Find guides and reference documentation for building, deploying, and managing applications with Vercel, including the CLI, SDKs, … Read more"
+    },
+    {
+      "title": "v0 by Vercel - Build Full-Stack Web Apps with AI",
+      "url": "https://v0.app/",
+      "snippet": "v0.app https://v0.app v0 by Vercel - Build Full-Stack Web Apps with AI Deploy to Vercel Go live instantly with one-click deployment to production in seconds."
+    },
+    {
+      "title": "Vercel - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Vercel",
+      "snippet": "wikipedia.org https:// en.wikipedia.org › wiki › Vercel Vercel - Wikipedia Vercel's architecture is built around composable architecture, and deployments are handled through Git repositories, the Vercel CLI, … Read more"
+    },
+    {
+      "title": "Vercel landing",
+      "url": "https://vercel-landing-page.vercel.app/",
+      "snippet": "vercel.app https:// vercel -landing-page. vercel .app Vercel landing The Vercel platform makes it a collaborative experience with deploy previews for every code change, by seamlessly integrating with … Read more"
+    },
+    {
+      "title": "Vercel - LinkedIn",
+      "url": "https://www.linkedin.com/company/vercel",
+      "snippet": "linkedin.com https://www.linkedin.com › company › vercel Vercel - LinkedIn Vercel is the platform where humans and AI agents build, ship, and scale software together. Trusted by OpenAI, Meta, Ramp, and … Read more"
+    }
+  ],
+  "retrievals": [
+    {
+      "url": "https://vercel.com/docs",
+      "status": 200,
+      "text": "---\ntitle: Vercel Documentation\nproduct: vercel\nurl: /docs\ncanonical_url: \"https://vercel.com/docs\"\nlast_updated: 2026-09-13\ntype: conceptual\nprerequisites:\n  []\nrelated:\n  - /docs/agent-resources/vercel-plugin\n  - /docs/agent-resources/skills\n  - /docs/agent-resources/vercel-mcp\n  - /docs/connect\n  - /docs/deployments/claim-deployments\nsummary: Find guides and reference documentation for building, deploying, and managing applications with Vercel, including the CLI, SDKs, and APIs.\ninstall_vercel_plugin: npx plugins add vercel/vercel-plugin\nsearch_with_vercel_cli: npx vercel@latest docs search \" \"\n---\n\n# Vercel Documentation\n\n## Ship anything with Vercel\n\nDeploy your first app, set up your coding agent to build and deploy on Vercel, or call any AI model through AI Gateway.\n\n#### Deploy an app\n\n```bash filename=\"terminal\"\nnpm i -g vercel\nvercel login\nvercel\n```\n\n#### Set up your agent\n\n```bash filename=\"terminal\"\n# Plugin for Claude Code, Codex, Grok Build, Cursor, Copilot, Kimi Code\nnpx plugins add vercel/vercel-plugin\n\n# Plugin for OpenCode\nopencode plugin add github:vercel/vercel-plugin\n\n# Skills for any other agent\nnpx skills add vercel-labs/agent-skills\n\n# Let your agent manage projects, deployments, and logs\nnpx -y add-mcp https://mcp.vercel.com -g\n\n# Route your agent's model calls through AI Gateway\nnpx vercel ai-gateway setup\n```\n\n#### Call a model\n\n```bash filename=\"terminal\"\n# Create an API key and export the key it prints\nvercel ai-gateway api-keys create\nexport AI_GATEWAY_API_KEY=\"your-ai-gateway-api-key\"\n\n# Call any model through one endpoint\ncurl https://ai-gateway.vercel.sh/v1/chat/completions \\\n  -H \"Authorization: Bearer $AI_GATEWAY_API_KEY\" \\\n  -H \"Content-Type: application/json\" \\\n  -d '{\n    \"model\": \"anthropic/claude-opus-5\",\n    \"messages\": [{ \"role\": \"user\", \"content\": \"Why is the sky blue?\" }]\n  }'\n```\n\n## Set up your coding agent\n\nSet up the agent you code with, and the platform for the agents you ship. This prompt hands your agent the [Vercel agent setup playbook](https://vercel.com/get-started.md), the same one the Onboard your agent button uses:\n\n**Agent prompt**\n\n```text\nSet up Vercel for me. Fetch https://vercel.com/get-started.md and follow it.\n```\n\n**Vercel Plugin**: Give your coding agent deployment skills, framework best practices, and slash commands. Works with Claude Code, OpenAI Codex, Grok Build, Cursor, GitHub Copilot, Kimi Code, and OpenCode. [Learn more →](/docs/agent-resources/vercel-plugin)\n\n**Agent Skills**: Install skills for any agent that supports them, covering Next.js, the AI SDK, Turborepo, and deploying to Vercel. [Learn more →](/docs/agent-resources/skills)\n\n**Vercel MCP**: Let your agent search the docs, manage projects and deployments, and query Web Analytics through the Vercel MCP server. [Learn more →](/docs/agent-resources/vercel-mcp)\n\n**Vercel Connect**: Give your agent short-lived tokens to call Slack, GitHub, Microsoft, Snowflake, or any OAuth or API-key service, and act on behalf of users, without storing provider secrets. [Learn more →](/docs/connect)\n\n**Claim Deployments**: Let your agent deploy apps for users, then transfer ownership with a claim URL so each deployment lands in the user's own Vercel account. [Learn more →](/docs/deployments/claim-deployments)\n\n**Containers**: Run your agent's runtime and tools from a Docker image on Vercel Functions, or give Sandbox a custom image for the code your agent executes. [Learn more →](/docs/container-registry)\n\n## What's new\n\nThe latest changes across the Vercel platform. Browse the full [changelog](https://vercel.com/changelog) for everything that shipped.\n\n- Nov 23, 2026: [AI Gateway now runs canary ZDR audits](https://vercel.com/changelog/ai-gateway-now-runs-canary-zdr-audits). Vercel now runs Zero Data Retention canary audits on AI Gateway. \n- Nov 23, 2026: [Catch missing feature flags before they reach production](https://vercel.com/changelog/catch-missing-feature-flags-before-they-reach-production). A new deployment check finds flags declared in code but missing from your Vercel project.\n- Nov 23, 2026: [Choose AI Gateway providers by headquarters country](https://vercel.com/changelog/choose-ai-gateway-providers-by-headquarters-country). Vercel AI Gateway now lets you limit providers by headquarters country. \n- Nov 20, 2026: [Vercel Functions now support request bodies up to 20MiB](https://vercel.com/changelog/vercel-functions-now-support-request-bodies-up-to-20mib). Vercel Functions now accept request bodies up to 20MiB in Public Beta, up from 4.5MB, for larger uploads, webhooks, and API payloads.\n\nView the latest Vercel updates from your terminal:\n\n```bash filename=\"terminal\"\nvercel changelog\n```\n\n[Explore changelog filters and options →](/docs/cli/changelog)\n\n## Build with AI\n\n**AI Gateway**: Call 400+ models through one endpoint with the AI SDK, any OpenAI-compatible SDK, or cURL, with budgets, fallbacks, and usage monitoring. [Learn more →](/docs/ai-gateway)\n\n**AI SDK**: Build chat, agents, and structured output in TypeScript with streaming and tool calling across React, Next.js, Vue, Svelte, and Node.js. [Learn more →](/docs/ai-sdk)\n\n**eve**: Deploy and run durable backend AI agents built with eve, an open-source, filesystem-first agent framework. [Learn more →](/docs/frameworks/agents/eve)\n\n**Sandbox**: Run untrusted or agent-generated code in isolated, ephemeral execution environments. [Learn more →](/docs/sandbox)\n\n**Workflows**: Build durable, observable applications and AI agents with the Workflow SDK on a fully managed platform. [Learn more →](/docs/workflows)\n\n**MCP Servers**: Build and deploy Model Context Protocol servers so agents can call your APIs and systems as tools. [Learn more →](/docs/mcp)\n\n## Build your app\n\n**Next.js**: Deploy Next.js with zero configuration, or bring one of 40+ supported frameworks. [Learn more →](/docs/frameworks/full-stack/nextjs)\n\n**Functions**: Run server-side code on demand with Fluid compute, which scales concurrency for AI and I/O-heavy workloads. [Learn more →](/docs/functions)\n\n**Routing Middleware**: Run code before a request completes to rewrite, redirect, or personalize responses. [Learn more →](/docs/routing-middleware)\n\n**Incremental Static Regeneration**: Regenerate static pages on a schedule or on demand without rebuilding your whole site. [Learn more →](/docs/incremental-static-regeneration)\n\n**Image Optimization**: Resize and convert images on demand and serve them from the CDN in modern formats. [Learn more →](/docs/image-optimization)\n\n**Environments**: Manage local, preview, production, and custom environments and the variables each one uses. [Learn more →](/docs/deployments/environments)\n\n## Secure your app\n\n**Web Application Firewall**: Block attacks, scrapers, and unwanted traffic with custom rules, IP blocking, and managed rulesets. [Learn more →](/docs/vercel-firewall/vercel-waf)\n\n**Bot Management**: Detect automated traffic and decide which bots can reach your app. [Learn more →](/docs/bot-management)\n\n**BotID**: Protect sensitive routes from sophisticated bots with an invisible check instead of a CAPTCHA. [Learn more →](/docs/botid)\n\n**Deployment Protection**: Control who can open your preview and production URLs with Vercel Authentication, passwords, or trusted IPs. [Learn more →](/docs/deployment-protection)\n\n## Deploy and operate\n\n**Deploy from Git**: Connect GitHub, GitLab, or Bitbucket to deploy on every push, with a preview URL for every branch. [Learn more →](/docs/git)\n\n**Domains**: Add a custom domain, manage DNS records, and get SSL certificates automatically. [Learn more →](/docs/domains)\n\n**CDN**: Cache responses close to your users and control routing, compression, and revalidation for every deployment. [Learn more →](/docs/cdn)\n\n**Rolling Releases** (Pro and Enterprise): Send a new deployment to a percentage of traffic first, then promote it or roll back. [Learn more →](/docs/rolling-releases)\n\n**Instant Rollback**: Revert production to a previous deployment without a rebuild when something breaks. [Learn more →](/docs/instant-rollback)\n\n**Observability**: Monitor traffic, function performance, and errors with framework-aware insights across your apps and AI workflows. [Learn more →](/docs/observability)\n\n## Guides and tutorials\n\nGo deeper with guides, videos, and tutorials from the [Vercel Knowledge Base](/kb):\n\n**Agent Stack**: Build AI agents, integrate language models, and deploy AI-powered apps. [Learn more →](/kb/agent-stack)\n\n**Backend**: Server-side patterns, API routes, database connections, and compute. [Learn more →](/kb/backend)\n\n**Services**: Deploy multiple frontends and backends within a single Vercel project. [Learn more →](/kb/vercel-services)\n\n**Security**: Protect your apps with authentication, firewall rules, and compliance guides. [Learn more →](/kb/security)\n\n**Integrations**: Connect third-party tools, CMSs, and services to your Vercel project. [Learn more →](/kb/integrations)\n\n**Migrations**: Bring your existing apps, agents, and workflows to Vercel. [Learn more →](/kb/migrations)\n\n## Search the docs from your terminal\n\nSearch the Vercel docs and read pages as Markdown with the Vercel CLI. No login required.\n\n```bash\n# Find docs pages by keyword\nnpx vercel@latest docs search \"environment variables\"\nnpx vercel@latest docs search \"function timeout\"\n\n# Print a docs page as Markdown, by path or URL\nnpx vercel@latest docs inspect ```\n\n---\n\n[View full sitemap](/docs/sitemap)\n\n\nIf you encounter incorrect information, can’t find what you need, need a capability Vercel doesn’t currently offer, or have any other feedback to report, please do it by following the instructions at https://vercel.com/feedback.md."
+    }
+  ],
+  "errors": [],
+  "first_pass": {
+    "auth": "unknown",
+    "credential_gate": "unknown",
+    "api_surface": "unknown",
+    "official_mcp": "unknown",
+    "composio_toolkit": "unknown",
+    "verdict": "unclear",
+    "blocker": "Claim-specific documentation not assessed",
+    "next_action": "Review official documentation and validate each claim",
+    "confidence": "unresolved"
+  },
+  "validation_errors": [
+    "All claim fields require source-specific review"
+  ]
+}

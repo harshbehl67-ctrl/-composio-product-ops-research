@@ -1,0 +1,70 @@
+{
+  "app": "Discord",
+  "query": "site:discord.com Discord API developer documentation authentication",
+  "checked_at": "2026-11-23T13:45:42.101317+00:00",
+  "results": [
+    {
+      "title": "Discord - Group Chat That’s All Fun & Games",
+      "url": "https://discord.com/",
+      "snippet": "discord.com https:// discord .com Discord - Group Chat That’s All Fun & Games Discord is great for playing games and chilling with friends, or even building a worldwide community. Customize your own space to …"
+    },
+    {
+      "title": "Discord",
+      "url": "https://discord.com/store",
+      "snippet": "discord.com https:// discord .com › store Discord Forgot your password? Need an account? Scan this with the Discord mobile app to log in instantly."
+    },
+    {
+      "title": "Discord - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Discord",
+      "snippet": "wikipedia.org https:// en.wikipedia.org › wiki › Discord Discord - Wikipedia Discord is an American instant messaging and VoIP social platform that allows communication through voice calls, video calls, text …"
+    },
+    {
+      "title": "Download Discord to Talk, Play, and Hang Out",
+      "url": "https://discord.com/download",
+      "snippet": "discord.com https:// discord .com › download Download Discord to Talk, Play, and Hang Out Download Discord to talk, play, and hang out with friends over voice, video, or text. Available for Windows, macOS, Linux, iOS, …"
+    },
+    {
+      "title": "Discord",
+      "url": "https://discord.com/discovery/applications/1",
+      "snippet": "discord.com https:// discord .com › discovery › applications Discord The App Directory lets you search, browse, and explore thousands of apps to customize your server!"
+    },
+    {
+      "title": "Discord",
+      "url": "https://support.discord.com/hc/en-us",
+      "snippet": "discord.com https://support. discord .com Discord Read all about how you can use, discover, and add Apps as a Discord user! Have a quick question? Hit us up on X!"
+    },
+    {
+      "title": "Discord",
+      "url": "https://discordapp.com/.well-known/openid-configuration",
+      "snippet": "discordapp.com https:// discord app.com › .well-known › openid-configuration Discord { \"issuer\": \"https://discord.com\", \"authorization_endpoint\": \"https://discord.com/api/oauth2/authorize\", \"token_endpoint\": …"
+    },
+    {
+      "title": "Getting Started – Discord",
+      "url": "https://support.discord.com/hc/en-us/articles/360033931551-Getting-Started",
+      "snippet": "discord.com https://support. discord .com › hc › en-us › articles Getting Started – Discord Hello weary traveler and welcome to Discord! If you are here, you must be wondering how you can get started on Discord. You can …"
+    },
+    {
+      "title": "Discord - Simple English Wikipedia , the free encyclopedia",
+      "url": "https://simple.wikipedia.org/wiki/Discord",
+      "snippet": "wikipedia.org https:// simple.wikipedia.org › wiki › Discord Discord - Simple English Wikipedia , the free encyclopedia Discord is free to use, and it runs on Windows, macOS, Android, iOS, Linux, and in most web browsers it can also be used on …"
+    },
+    {
+      "title": "Discord – Talk, Play, Hang Out – Apps on Google Play",
+      "url": "https://play.google.com/store/apps/details?id=com.discord&hl=en-GB",
+      "snippet": "google.com https:// play.google.com › store › apps › details Discord – Talk, Play, Hang Out – Apps on Google Play 4 days ago · Discord is designed for gaming and great for just chilling with friends or building a community. Customise your own …"
+    }
+  ],
+  "fetches": [
+    {
+      "url": "https://discord.com/",
+      "status": 200,
+      "text": "Discord - Group Chat That’s All Fun & Games Skip to main content Download 1 of 9 Nitro 2 of 9 Discover 3 of 9 Safety 4 of 9 Quests 5 of 9 Support 6 of 9 Blog 7 of 9 Developers 8 of 9 Careers 9 of 9 Log In Log in Download Nitro Discover Safety Quests Support Blog Developers Careers Log In App Store Group chat that’s all fun & games Discord is great for playing games and chilling with friends, or even building a worldwide community. Customize your own space to talk, play, and hang out. Download for Windows Open Discord in your browser find your friends on discord. Download MAKE YOUR GROUP CHATS MORE FUN Use custom emoji, stickers, soundboard effects and more to add your personality to your voice, video, or text chat. Set your avatar and a custom status, and write your own profile to show up in chat your way. stream like you’re in the same room High quality and low latency streaming makes it feel like you're hanging out on the couch with friends while playing a game, watching shows, looking at photos, or idk doing homework or something. Hop in when you're free, no need to call Easily hop in and out of voice or text chats without having to call or invite anyone, so your party chat lasts before, during, and after your game session. talk play chat hang out talk play chat hang out talk play chat hang out talk play chat hang out See who's around to chill See who's around, playing games, or just hanging out. For supported games, you can see what modes or characters your friends are playing and directly join up. always have something to do together Watch videos, play built-in games, listen to music, or just scroll together and spam memes. Seamlessly text, call, video chat, and play games, all in one group chat. wherever YOU GAME, HANG OUT HERE On your PC, phone, or console, you can still hang out on Discord. Easily switch between devices and use tools to manage multiple group chats with friends. YOU CAN'T SCROLL ANYMORE. BETTER GO CHAT. Download for Mac Language English (US) Social Menu Product Product Company Company Resources Resources Policies Policies Social"
+    },
+    {
+      "url": "https://discord.com/store",
+      "status": 200,
+      "text": "Discord You need to enable JavaScript to run this app."
+    }
+  ],
+  "errors": []
+}

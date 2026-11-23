@@ -1,0 +1,80 @@
+{
+  "app": {
+    "number": 98,
+    "name": "Mermaid CLI",
+    "category": "AI, Research and Media-native",
+    "hint": "github.com/mermaid-js/mermaid-cli"
+  },
+  "checked_at": "2026-11-23T13:42:08.794370+00:00",
+  "query": "Mermaid CLI developer API authentication documentation",
+  "search_results": [
+    {
+      "title": "Online FlowChart & Diagrams Editor - Mermaid Live Editor",
+      "url": "https://mermaid.live/",
+      "snippet": "mermaid.live https:// mermaid .live Online FlowChart & Diagrams Editor - Mermaid Live Editor Commonly used for explaining your code! Mermaid is a simple markdown-like script language for generating charts from text via …"
+    },
+    {
+      "title": "Mermaid | Diagramming and charting tool",
+      "url": "https://mermaid.js.org/",
+      "snippet": "js.org https:// mermaid .js.org Mermaid | Diagramming and charting tool Mermaid is a JavaScript diagramming and charting tool that renders Markdown-inspired text definitions into flowcharts, sequence …"
+    },
+    {
+      "title": "Mermaid : AI-Powered Diagramming & Text-to-Chart Tool",
+      "url": "https://mermaid.ai/",
+      "snippet": "mermaid.ai https:// mermaid .ai Mermaid : AI-Powered Diagramming & Text-to-Chart Tool What is Mermaid? Mermaid is a collaborative diagramming platform that lets you create diagrams using AI, code, or clicks. Upload a …"
+    },
+    {
+      "title": "Mermaid Viewer - Online Diagram Editor with Live Preview",
+      "url": "https://mermaidviewer.com/",
+      "snippet": "mermaidviewer.com https:// mermaid viewer.com Mermaid Viewer - Online Diagram Editor with Live Preview Preview, read, and view Mermaid code or .mmd / .md files online. Edit diagrams in the browser, export SVG, PNG, or PDF, and …"
+    },
+    {
+      "title": "Free Mermaid Online Editor | Graph TD and Live Preview",
+      "url": "https://mermaid-drawing.com/",
+      "snippet": "mermaid-drawing.com https:// mermaid -drawing.com Free Mermaid Online Editor | Graph TD and Live Preview Free Mermaid live editor in your browser. Write graph TD or flowchart TD, preview, export PNG, SVG or PDF, and share a link. No …"
+    },
+    {
+      "title": "Mermaid AI | Generate Complex Diagrams with a Single Prompt",
+      "url": "https://mermaid.ai/mermaid-ai",
+      "snippet": "mermaid.ai https:// mermaid .ai › mermaid -ai Mermaid AI | Generate Complex Diagrams with a Single Prompt Mermaid is a diagramming platform that lets you create diagrams from simple Markdown-style syntax or with AI. The Live Editor is a …"
+    },
+    {
+      "title": "Mermaid - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Mermaid",
+      "snippet": "wikipedia.org https:// en.wikipedia.org › wiki › Mermaid Mermaid - Wikipedia While there is no evidence that mermaids exist outside folklore, reports of mermaid sightings continue to the present day. Mermaids …"
+    },
+    {
+      "title": "Live Mermaids Swimming in Our Pool! - YouTube",
+      "url": "https://www.youtube.com/watch?v=uFqd3mqm-Zg",
+      "snippet": "youtube.com https:// www.youtube.com › watch Live Mermaids Swimming in Our Pool! - YouTube Jun 4, 2014 · These are the most realistic mermaid suits I have ever seen, and I've seen lots of \"Little Mermaid\" plays and even fish …"
+    },
+    {
+      "title": "Diagram Syntax | Mermaid",
+      "url": "https://mermaid.js.org/intro/syntax-reference.html",
+      "snippet": "js.org https:// mermaid .js.org › intro › syntax-reference.html Diagram Syntax | Mermaid Mermaid's syntax is used to create diagrams. You'll find that it is not too tricky and can be learned in a day. The next sections dive …"
+    },
+    {
+      "title": "What is Mermaid ? — Mermaid Chart",
+      "url": "https://mermaid.ai/docs/getting-started/what-is-mermaid",
+      "snippet": "mermaid.ai https:// mermaid .ai › docs › getting-started › what-is- mermaid What is Mermaid ? — Mermaid Chart An introduction to Mermaid and Mermaid Chart. What is Mermaid? Most diagramming tools make you place and connect things by …"
+    }
+  ],
+  "retrievals": [],
+  "errors": [
+    "No candidate documentation on hint domain found; review required"
+  ],
+  "first_pass": {
+    "auth": "unknown",
+    "credential_gate": "unknown",
+    "api_surface": "unknown",
+    "official_mcp": "unknown",
+    "composio_toolkit": "unknown",
+    "verdict": "unclear",
+    "blocker": "Claim-specific documentation not assessed",
+    "next_action": "Review official documentation and validate each claim",
+    "confidence": "unresolved"
+  },
+  "validation_errors": [
+    "All claim fields require source-specific review"
+  ]
+}

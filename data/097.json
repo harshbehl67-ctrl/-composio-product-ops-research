@@ -1,0 +1,80 @@
+{
+  "app": {
+    "number": 97,
+    "name": "higgsfield",
+    "category": "AI, Research and Media-native",
+    "hint": "higgsfield.ai/cli (content suite)"
+  },
+  "checked_at": "2026-11-23T13:42:08.761329+00:00",
+  "query": "higgsfield developer API authentication documentation",
+  "search_results": [
+    {
+      "title": "Higgsfield AI — AI-native creative suite",
+      "url": "https://higgsfield.ai/",
+      "snippet": "higgsfield.ai https:// higgsfield .ai Higgsfield AI — AI-native creative suite Create images, videos, and voice content with Higgsfield AI from text prompts or references. Edit and upscale media, automate …"
+    },
+    {
+      "title": "AI Video Generator - Kling, Veo, Seedance & More | Higgsfield",
+      "url": "https://higgsfield.ai/ai-video",
+      "snippet": "higgsfield.ai https:// higgsfield .ai › ai-video AI Video Generator - Kling, Veo, Seedance & More | Higgsfield Higgsfield is the generative platform for creative production, combining multiple AI video models and specialized creative tools. …"
+    },
+    {
+      "title": "Higgsfield AI – AI Video & Image Generator",
+      "url": "https://higsfield.io/",
+      "snippet": "higsfield.io https://higsfield.io Higgsfield AI – AI Video & Image Generator Higgsfield AI generates video and images from a text prompt using models like Seedance and Kling, and also cleans up existing …"
+    },
+    {
+      "title": "Open Higgsfield AI | Official Higgsfield API Platform",
+      "url": "https://open.higgsfield.ai/explore",
+      "snippet": "higgsfield.ai https://open. higgsfield .ai Open Higgsfield AI | Official Higgsfield API Platform Access the official Higgsfield API for image and video generation. Explore models and pricing, get an API key, and start building."
+    },
+    {
+      "title": "Higgsfield",
+      "url": "https://higgsfield.ai/upscale",
+      "snippet": "higgsfield.ai https:// higgsfield .ai › upscale Higgsfield The ultimate AI-powered camera control for creators by creators."
+    },
+    {
+      "title": "Pricing plans — Higgsfield AI Video & Image Generator",
+      "url": "https://higgsfield.ai/pricing",
+      "snippet": "higgsfield.ai https:// higgsfield .ai › pricing Pricing plans — Higgsfield AI Video & Image Generator Higgsfield offers a Free plan with limited access to selected AI models, no monthly credits, and one generation at a time. Paid plans …"
+    },
+    {
+      "title": "About Higgsfield AI • Higgsfield",
+      "url": "https://higgsfield.ai/about",
+      "snippet": "higgsfield.ai https:// higgsfield .ai › about About Higgsfield AI • Higgsfield Higgsfield brings together cinematic intelligence and a unified creative workflow – giving creators, marketing agencies, and …"
+    },
+    {
+      "title": "Higgsfield AI - Create Cinematic Videos & Images with AI",
+      "url": "https://higgsfiield.com/",
+      "snippet": "higgsfiield.com https://higgsfiield.com Higgsfield AI - Create Cinematic Videos & Images with AI Create cinematic AI video, images & visual worlds with Higgsfield. Higgsfield AI brings video, image, audio and creative production …"
+    },
+    {
+      "title": "Higgsfield - Transform Video Creation with AI",
+      "url": "https://higgsfield.cc/",
+      "snippet": "higgsfield.cc https:// higgsfield .cc Higgsfield - Transform Video Creation with AI Higgsfield redefines the art of video creation by harnessing the power of cutting-edge generative AI. With Higgsfield, static images …"
+    },
+    {
+      "title": "Higgsfield AI – Cinematic Video, Image & Shorts Studio",
+      "url": "https://higgsfieldai.pro/",
+      "snippet": "higgsfieldai.pro https:// higgsfield ai.pro Higgsfield AI – Cinematic Video, Image & Shorts Studio Higgsfield AI brings cinematic video models, image generators, Shorts Studio presets and community galleries into one creative …"
+    }
+  ],
+  "retrievals": [],
+  "errors": [
+    "No candidate documentation on hint domain found; review required"
+  ],
+  "first_pass": {
+    "auth": "unknown",
+    "credential_gate": "unknown",
+    "api_surface": "unknown",
+    "official_mcp": "unknown",
+    "composio_toolkit": "unknown",
+    "verdict": "unclear",
+    "blocker": "Claim-specific documentation not assessed",
+    "next_action": "Review official documentation and validate each claim",
+    "confidence": "unresolved"
+  },
+  "validation_errors": [
+    "All claim fields require source-specific review"
+  ]
+}

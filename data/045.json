@@ -1,0 +1,80 @@
+{
+  "app": {
+    "number": 45,
+    "name": "Magento (Adobe Commerce)",
+    "category": "Ecommerce",
+    "hint": "developer.adobe.com/commerce"
+  },
+  "checked_at": "2026-11-23T13:42:00.971890+00:00",
+  "query": "Magento (Adobe Commerce) developer API authentication documentation",
+  "search_results": [
+    {
+      "title": "Télécharger et utiliser Google Traduction",
+      "url": "https://support.google.com/translate/answer/6350850?hl=fr&co=GENIE.Platform%3DDesktop",
+      "snippet": "google.com https://support.google.com › translate › answer Télécharger et utiliser Google Traduction Télécharger et utiliser Google Traduction Vous pouvez traduire du texte saisi au clavier, en écriture manuscrite, sur une photo ou … Read more"
+    },
+    {
+      "title": "Google Help",
+      "url": "https://support.google.com/",
+      "snippet": "google.com https://support.google.com Google Help Blogger Finance Streaming Google Pixel Buds Google Maps Gmail Google Search Google Calendar Google Docs Editors Google … Read more"
+    },
+    {
+      "title": "Google translate - Disable translating of a part of my text",
+      "url": "https://stackoverflow.com/questions/14862291/google-translate-disable-translating-of-a-part-of-my-text",
+      "snippet": "stackoverflow.com https://stackoverflow.com › questions Google translate - Disable translating of a part of my text The thing is that I could have sometimes bbcode inside my text: \"Voulez-vous [b]coucher [/b] avec moi ce soir ?\". So, is there a way … Read more"
+    },
+    {
+      "title": "javascript - How can I tell Google Translate to not translate a section ...",
+      "url": "https://stackoverflow.com/questions/9628507/how-can-i-tell-google-translate-to-not-translate-a-section-of-a-website",
+      "snippet": "stackoverflow.com https://stackoverflow.com › questions javascript - How can I tell Google Translate to not translate a section ... Google Translate has a developer tool that will enable google translate on a website. Is there a way to tell Google Translate to not … Read more"
+    },
+    {
+      "title": "Download & use Google Translate",
+      "url": "https://support.google.com/translate/answer/6350850?hl=en&co=GENIE.Platform%3DDesktop",
+      "snippet": "google.com https://support.google.com › translate › answer Download & use Google Translate You can translate text, handwriting, photos, and speech in over 200 languages with the Google Translate app. You can also use … Read more"
+    },
+    {
+      "title": "Descargar y usar el Traductor de Google",
+      "url": "https://support.google.com/translate/answer/6350850?hl=es&co=GENIE.Platform%3DDesktop",
+      "snippet": "google.com https://support.google.com › translate › answer Descargar y usar el Traductor de Google Con la versión web o la aplicación del Traductor de Google, puedes traducir texto, frases escritas a mano, fotos y voz en más de … Read more"
+    },
+    {
+      "title": "Translate written words - Android phone & tablet - Google Help",
+      "url": "https://support.google.com/translate/answer/6142478?hl=en&co=GENIE.Platform%3DAndroid",
+      "snippet": "google.com https://support.google.com › translate › answer Translate written words - Android phone & tablet - Google Help On your Android phone or tablet, open the Translate app . Choose a language to translate to and from. From: At the bottom left, tap … Read more"
+    },
+    {
+      "title": "Translate pages and change Chrome languages - Google Help",
+      "url": "https://support.google.com/chrome/answer/173424?hl=en&co=GENIE.Platform%3DAndroid",
+      "snippet": "google.com https://support.google.com › chrome › answer Translate pages and change Chrome languages - Google Help On your Android device, open Chrome . Go to a page you want to translate. In the notification at the top of the screen, tap the … Read more"
+    },
+    {
+      "title": "Translate documents & websites - Computer - Google Help",
+      "url": "https://support.google.com/translate/answer/2534559?hl=en&co=GENIE.Platform%3DDesktop",
+      "snippet": "google.com https://support.google.com › translate › answer Translate documents & websites - Computer - Google Help In your browser, go to Google Translate. At the top, click Documents. Choose the languages to translate to and from. To … Read more"
+    },
+    {
+      "title": "Hear live speech to speech translations with live translate - Google Help",
+      "url": "https://support.google.com/translate/answer/6142474?hl=en&co=GENIE.Platform%3DAndroid",
+      "snippet": "google.com https://support.google.com › translate › answer Hear live speech to speech translations with live translate - Google Help Open the Translate app . If you'd like to use live translate with headphones on your Android phone or tablet, connect your … Read more"
+    }
+  ],
+  "retrievals": [],
+  "errors": [
+    "No candidate documentation on hint domain found; review required"
+  ],
+  "first_pass": {
+    "auth": "unknown",
+    "credential_gate": "unknown",
+    "api_surface": "unknown",
+    "official_mcp": "unknown",
+    "composio_toolkit": "unknown",
+    "verdict": "unclear",
+    "blocker": "Claim-specific documentation not assessed",
+    "next_action": "Review official documentation and validate each claim",
+    "confidence": "unresolved"
+  },
+  "validation_errors": [
+    "All claim fields require source-specific review"
+  ]
+}

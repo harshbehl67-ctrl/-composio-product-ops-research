@@ -1,0 +1,84 @@
+{
+  "app": {
+    "number": 47,
+    "name": "Ecwid",
+    "category": "Ecommerce",
+    "hint": "api-docs.ecwid.com"
+  },
+  "checked_at": "2026-11-23T13:42:01.213291+00:00",
+  "query": "Ecwid developer API authentication documentation",
+  "search_results": [
+    {
+      "title": "Login to Your Ecwid Store or Sign Up to Sell Online",
+      "url": "https://www.ecwid.com/login-sign-up",
+      "snippet": "ecwid.com https://www. ecwid .com › login-sign-up Login to Your Ecwid Store or Sign Up to Sell Online Looking for an ecommerce platform to start selling? Sign up with Ecwid to sell online, on social media, and in person. Or log in to … Read more"
+    },
+    {
+      "title": "#1 Ecommerce Shopping Cart & Online Store - Try Ecwid !",
+      "url": "https://www.ecwid.com/",
+      "snippet": "ecwid.com https://www. ecwid .com #1 Ecommerce Shopping Cart & Online Store - Try Ecwid ! WordPress Ecwid integrates natively with your existing WordPress site using official plugin, zero coding required. Learn more"
+    },
+    {
+      "title": "Login | Ecwid Ecommerce",
+      "url": "https://my.ecwid.com/cp/",
+      "snippet": "ecwid.com https://my. ecwid .com › cp Login | Ecwid Ecommerce Log in to your Ecwid account to manage your online business"
+    },
+    {
+      "title": "Build with Ecwid apps | Ecwid Documentation",
+      "url": "https://docs.ecwid.com/",
+      "snippet": "ecwid.com https://docs. ecwid .com Build with Ecwid apps | Ecwid Documentation Contact Ecwid API support Get help with API docs, update your app settings and more. Join Slack community Connect and … Read more"
+    },
+    {
+      "title": "Ecwid Developers | Build an e-commerce app for Ecwid merchants",
+      "url": "https://developers.ecwid.com/",
+      "snippet": "ecwid.com https://developers. ecwid .com Ecwid Developers | Build an e-commerce app for Ecwid merchants Build powerful solutions that integrate with Ecwid — and become part of thousands of merchants’ online selling success — with … Read more"
+    },
+    {
+      "title": "Build Ecwid apps | Ecwid Developers",
+      "url": "https://developers.ecwid.com/build-apps",
+      "snippet": "ecwid.com https://developers. ecwid .com › build-apps Build Ecwid apps | Ecwid Developers Create a new app or bring your existing app to over a million Ecwid users around the globe. With our robust APIs and developer … Read more"
+    },
+    {
+      "title": "Ecwid overview - Ecwid Help Center",
+      "url": "https://support.ecwid.com/hc/en-us/articles/115005609945-Ecwid-overview",
+      "snippet": "ecwid.com https://support. ecwid .com › hc › en-us › articles Ecwid overview - Ecwid Help Center Ecwid provides all the tools you need to create a professional online store and grow your ecommerce business. You can sell … Read more"
+    },
+    {
+      "title": "Ecwid Help Center",
+      "url": "https://support.ecwid.com/hc/en-us",
+      "snippet": "ecwid.com https://support. ecwid .com Ecwid Help Center With Ecwid E-commerce, you can sell services, digital or physical products that you manufacture yourself, resell products of other … Read more"
+    },
+    {
+      "title": "About ECWID - Add an online store for FREE in 5 minutes",
+      "url": "https://www.ecwids.co.uk/company/",
+      "snippet": "ecwids.co.uk https://www. ecwids .co.uk › company About ECWID - Add an online store for FREE in 5 minutes No need to abandon your existing site – using Ecwid you have the freedom to operate multiple online stores including on your … Read more"
+    },
+    {
+      "title": "Ecwid by Lightspeed Ecommerce Shopping Cart - WordPress.org",
+      "url": "https://wordpress.org/plugins/ecwid-shopping-cart/",
+      "snippet": "wordpress.org https://wordpress.org › plugins › ecwid -shopping-cart Ecwid by Lightspeed Ecommerce Shopping Cart - WordPress.org Ecwid Shopping Cart provides mobile applications for iOS and Android to manage your store and sell on the go. Scan products, track … Read more"
+    }
+  ],
+  "retrievals": [
+    {
+      "url": "https://docs.ecwid.com/",
+      "status": 200,
+      "text": "Build with Ecwid apps | Ecwid Documentation For the complete documentation index, see llms.txt . Markdown versions of documentation pages are available by appending .md to page URLs. Skip to content ⌘ Ctrl k Ask AI Assistant I'm here to help you with the docs. What is this page about? What should I read next? Can you give an example? ⌘ Ctrl i AI Based on your context Send Build with Ecwid apps Ecwid API features Get started Set up your dev environment in Ecwid Make your first API request Add more features to your custom app API glossary Develop apps What is an Ecwid app Private and public Ecwid apps App settings Community libraries Launch apps Public apps overview FAQ about public applications Monetize public apps Steps to go live with a public app Native and external apps Contact Ecwid API support team On this page Ask On this page Build with Ecwid apps Explore our guides and examples to integrate Ecwid Ecommerce Customize your store Get access to API with an app Learn app settings Develop public apps FAQ about public applications Submit your app idea Get human support Ask your questions and get answers from our API specialists. Contact Ecwid API support Get help with API docs, update your app settings and more. Join Slack community Connect and collaborate with the Ecwid team and fellow developers. Automate integrations Webhooks Automate your business logic Automation examples Check out code and flow for syncing orders or product stock Build websites Site templates Complete website overhaul Custom sections Building blocks for the website Customize storefront List of JS API calls Find full list of available JS API calls JS API: track events Use pre-built event handlers on the storefront JS API: manage cart and checkout Add or remove products from the cart, set customer's email, comments, and more JS API: Open page Create redirects to products or search results JS API: manage customers Check who is logged in, automate logouts and cookie consent JS API: Generate carts Create pre-filled carts as links and share them with your customers Create discounts Accept tips Add tips selector to the checkout Launch promos Highly customizeable discounts for your store Discount coupons Create personal offers for your customers Browse guides Sync new orders Export order data to external services Extra fields Collect additional data with orders Create orders with API calls Calculate order details and place orders in the store on behalf of your clients Payment API Connect any payment provider with your Ecwid store Shipping API Calculate online shipping rates at the checkout Next Ecwid API features Last updated 1 year ago Was this helpful? Get human support Automate integrations Build websites Customize storefront Create discounts Browse guides Was this helpful?"
+    }
+  ],
+  "errors": [],
+  "first_pass": {
+    "auth": "unknown",
+    "credential_gate": "unknown",
+    "api_surface": "unknown",
+    "official_mcp": "unknown",
+    "composio_toolkit": "unknown",
+    "verdict": "unclear",
+    "blocker": "Claim-specific documentation not assessed",
+    "next_action": "Review official documentation and validate each claim",
+    "confidence": "unresolved"
+  },
+  "validation_errors": [
+    "All claim fields require source-specific review"
+  ]
+}

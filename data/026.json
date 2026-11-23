@@ -1,0 +1,80 @@
+{
+  "app": {
+    "number": 26,
+    "name": "Discord",
+    "category": "Communications and Messaging",
+    "hint": "discord.com"
+  },
+  "checked_at": "2026-11-23T13:41:56.771326+00:00",
+  "query": "Discord developer API authentication documentation",
+  "search_results": [
+    {
+      "title": "Discord - Group Chat That’s All Fun & Games",
+      "url": "https://discord.com/",
+      "snippet": "discord.com https:// discord .com Discord - Group Chat That’s All Fun & Games Discord is great for playing games and chilling with friends, or even building a worldwide community. Customize your own space to … Read more"
+    },
+    {
+      "title": "Discord",
+      "url": "https://discord.com/store",
+      "snippet": "discord.com https:// discord .com › store Discord Forgot your password? Need an account? Scan this with the Discord mobile app to log in instantly."
+    },
+    {
+      "title": "Discord - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Discord",
+      "snippet": "wikipedia.org https:// en.wikipedia.org › wiki › Discord Discord - Wikipedia Discord is an American instant messaging and VoIP social platform that allows communication through voice calls, video calls, text … Read more"
+    },
+    {
+      "title": "Download Discord to Talk, Play, and Hang Out",
+      "url": "https://discord.com/download",
+      "snippet": "discord.com https:// discord .com › download Download Discord to Talk, Play, and Hang Out Download Discord to talk, play, and hang out with friends over voice, video, or text. Available for Windows, macOS, Linux, iOS, … Read more"
+    },
+    {
+      "title": "Discord",
+      "url": "https://discord.com/discovery/applications/1",
+      "snippet": "discord.com https:// discord .com › discovery › applications Discord The App Directory lets you search, browse, and explore thousands of apps to customize your server!"
+    },
+    {
+      "title": "Discord",
+      "url": "https://support.discord.com/hc/en-us",
+      "snippet": "discord.com https://support. discord .com Discord Read all about how you can use, discover, and add Apps as a Discord user! Have a quick question? Hit us up on X!"
+    },
+    {
+      "title": "Discord",
+      "url": "https://discordapp.com/.well-known/openid-configuration",
+      "snippet": "discordapp.com https:// discord app.com › .well-known › openid-configuration Discord { \"issuer\": \"https://discord.com\", \"authorization_endpoint\": \"https://discord.com/api/oauth2/authorize\", \"token_endpoint\": … Read more"
+    },
+    {
+      "title": "Getting Started – Discord",
+      "url": "https://support.discord.com/hc/en-us/articles/360033931551-Getting-Started",
+      "snippet": "discord.com https://support. discord .com › hc › en-us › articles Getting Started – Discord Hello weary traveler and welcome to Discord! If you are here, you must be wondering how you can get started on Discord. You can … Read more"
+    },
+    {
+      "title": "Discord - Simple English Wikipedia , the free encyclopedia",
+      "url": "https://simple.wikipedia.org/wiki/Discord",
+      "snippet": "wikipedia.org https:// simple.wikipedia.org › wiki › Discord Discord - Simple English Wikipedia , the free encyclopedia Discord is free to use, and it runs on Windows, macOS, Android, iOS, Linux, and in most web browsers it can also be used on … Read more"
+    },
+    {
+      "title": "Discord – Talk, Play, Hang Out – Apps on Google Play",
+      "url": "https://play.google.com/store/apps/details?id=com.discord&hl=en-GB",
+      "snippet": "google.com https:// play.google.com › store › apps › details Discord – Talk, Play, Hang Out – Apps on Google Play 4 days ago · Discord is designed for gaming and great for just chilling with friends or building a community. Customise your own … Read more"
+    }
+  ],
+  "retrievals": [],
+  "errors": [
+    "No candidate documentation on hint domain found; review required"
+  ],
+  "first_pass": {
+    "auth": "unknown",
+    "credential_gate": "unknown",
+    "api_surface": "unknown",
+    "official_mcp": "unknown",
+    "composio_toolkit": "unknown",
+    "verdict": "unclear",
+    "blocker": "Claim-specific documentation not assessed",
+    "next_action": "Review official documentation and validate each claim",
+    "confidence": "unresolved"
+  },
+  "validation_errors": [
+    "All claim fields require source-specific review"
+  ]
+}

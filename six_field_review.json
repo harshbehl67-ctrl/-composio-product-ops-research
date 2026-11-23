@@ -1,0 +1,712 @@
+[
+  {
+    "app": "HubSpot",
+    "category": "CRM and Sales",
+    "field": "auth",
+    "original": "unknown",
+    "rating": "abstained",
+    "documentation_establishes": "Service Keys for account-level system-to-system integrations are in public beta",
+    "sources": [
+      "https://developers.hubspot.com/changelog/service-keys"
+    ],
+    "correction": "Service Keys for account-level system-to-system integrations are in public beta",
+    "reason": "First pass intentionally abstained; documentation may still be unresolved"
+  },
+  {
+    "app": "HubSpot",
+    "category": "CRM and Sales",
+    "field": "credential_gate",
+    "original": "unknown",
+    "rating": "abstained",
+    "documentation_establishes": "unknown",
+    "sources": [],
+    "correction": "unknown",
+    "reason": "First pass intentionally abstained; documentation may still be unresolved"
+  },
+  {
+    "app": "HubSpot",
+    "category": "CRM and Sales",
+    "field": "api_surface",
+    "original": "unknown",
+    "rating": "abstained",
+    "documentation_establishes": "unknown",
+    "sources": [],
+    "correction": "unknown",
+    "reason": "First pass intentionally abstained; documentation may still be unresolved"
+  },
+  {
+    "app": "HubSpot",
+    "category": "CRM and Sales",
+    "field": "official_mcp",
+    "original": "unknown",
+    "rating": "abstained",
+    "documentation_establishes": "yes",
+    "sources": [
+      "https://developers.hubspot.com/docs/apps/developer-platform/build-apps/integrate-with-the-remote-hubspot-mcp-server"
+    ],
+    "correction": "yes",
+    "reason": "First pass intentionally abstained; documentation may still be unresolved"
+  },
+  {
+    "app": "HubSpot",
+    "category": "CRM and Sales",
+    "field": "composio_toolkit",
+    "original": "unknown",
+    "rating": "abstained",
+    "documentation_establishes": "listed",
+    "sources": [
+      "https://docs.composio.dev/toolkits/hubspot"
+    ],
+    "correction": "listed",
+    "reason": "First pass intentionally abstained; documentation may still be unresolved"
+  },
+  {
+    "app": "HubSpot",
+    "category": "CRM and Sales",
+    "field": "verdict",
+    "original": "unclear",
+    "rating": "abstained",
+    "documentation_establishes": "unknown",
+    "sources": [],
+    "correction": "unknown",
+    "reason": "First pass intentionally abstained; documentation may still be unresolved"
+  },
+  {
+    "app": "Zendesk",
+    "category": "Support and Helpdesk",
+    "field": "auth",
+    "original": "unknown",
+    "rating": "abstained",
+    "documentation_establishes": "OAuth access tokens are supported for Zendesk API requests; existing basic/API token integrations must migrate",
+    "sources": [
+      "https://developer.zendesk.com/api-reference/introduction/security-and-auth/"
+    ],
+    "correction": "OAuth access tokens are supported for Zendesk API requests; existing basic/API token integrations must migrate",
+    "reason": "First pass intentionally abstained; documentation may still be unresolved"
+  },
+  {
+    "app": "Zendesk",
+    "category": "Support and Helpdesk",
+    "field": "credential_gate",
+    "original": "unknown",
+    "rating": "abstained",
+    "documentation_establishes": "unknown",
+    "sources": [],
+    "correction": "unknown",
+    "reason": "First pass intentionally abstained; documentation may still be unresolved"
+  },
+  {
+    "app": "Zendesk",
+    "category": "Support and Helpdesk",
+    "field": "api_surface",
+    "original": "unknown",
+    "rating": "abstained",
+    "documentation_establishes": "unknown",
+    "sources": [],
+    "correction": "unknown",
+    "reason": "First pass intentionally abstained; documentation may still be unresolved"
+  },
+  {
+    "app": "Zendesk",
+    "category": "Support and Helpdesk",
+    "field": "official_mcp",
+    "original": "unknown",
+    "rating": "abstained",
+    "documentation_establishes": "unknown",
+    "sources": [],
+    "correction": "unknown",
+    "reason": "First pass intentionally abstained; documentation may still be unresolved"
+  },
+  {
+    "app": "Zendesk",
+    "category": "Support and Helpdesk",
+    "field": "composio_toolkit",
+    "original": "unknown",
+    "rating": "abstained",
+    "documentation_establishes": "listed",
+    "sources": [
+      "https://docs.composio.dev/toolkits/zendesk"
+    ],
+    "correction": "listed",
+    "reason": "First pass intentionally abstained; documentation may still be unresolved"
+  },
+  {
+    "app": "Zendesk",
+    "category": "Support and Helpdesk",
+    "field": "verdict",
+    "original": "unclear",
+    "rating": "abstained",
+    "documentation_establishes": "unknown",
+    "sources": [],
+    "correction": "unknown",
+    "reason": "First pass intentionally abstained; documentation may still be unresolved"
+  },
+  {
+    "app": "Slack",
+    "category": "Communications and Messaging",
+    "field": "auth",
+    "original": "unknown",
+    "rating": "abstained",
+    "documentation_establishes": "OAuth 2.0 and scoped tokens",
+    "sources": [
+      "https://docs.slack.dev/authentication/"
+    ],
+    "correction": "OAuth 2.0 and scoped tokens",
+    "reason": "First pass intentionally abstained; documentation may still be unresolved"
+  },
+  {
+    "app": "Slack",
+    "category": "Communications and Messaging",
+    "field": "credential_gate",
+    "original": "unknown",
+    "rating": "abstained",
+    "documentation_establishes": "unknown",
+    "sources": [],
+    "correction": "unknown",
+    "reason": "First pass intentionally abstained; documentation may still be unresolved"
+  },
+  {
+    "app": "Slack",
+    "category": "Communications and Messaging",
+    "field": "api_surface",
+    "original": "unknown",
+    "rating": "abstained",
+    "documentation_establishes": "unknown",
+    "sources": [],
+    "correction": "unknown",
+    "reason": "First pass intentionally abstained; documentation may still be unresolved"
+  },
+  {
+    "app": "Slack",
+    "category": "Communications and Messaging",
+    "field": "official_mcp",
+    "original": "unknown",
+    "rating": "abstained",
+    "documentation_establishes": "yes",
+    "sources": [
+      "https://docs.slack.dev/ai/slack-mcp-server/"
+    ],
+    "correction": "yes",
+    "reason": "First pass intentionally abstained; documentation may still be unresolved"
+  },
+  {
+    "app": "Slack",
+    "category": "Communications and Messaging",
+    "field": "composio_toolkit",
+    "original": "unknown",
+    "rating": "abstained",
+    "documentation_establishes": "listed",
+    "sources": [
+      "https://docs.composio.dev/toolkits/slack"
+    ],
+    "correction": "listed",
+    "reason": "First pass intentionally abstained; documentation may still be unresolved"
+  },
+  {
+    "app": "Slack",
+    "category": "Communications and Messaging",
+    "field": "verdict",
+    "original": "unclear",
+    "rating": "abstained",
+    "documentation_establishes": "unknown",
+    "sources": [],
+    "correction": "unknown",
+    "reason": "First pass intentionally abstained; documentation may still be unresolved"
+  },
+  {
+    "app": "Google Ads",
+    "category": "Marketing, Ads, Email and Social",
+    "field": "auth",
+    "original": "unknown",
+    "rating": "abstained",
+    "documentation_establishes": "unknown",
+    "sources": [],
+    "correction": "unknown",
+    "reason": "First pass intentionally abstained; documentation may still be unresolved"
+  },
+  {
+    "app": "Google Ads",
+    "category": "Marketing, Ads, Email and Social",
+    "field": "credential_gate",
+    "original": "unknown",
+    "rating": "abstained",
+    "documentation_establishes": "approval for production access",
+    "sources": [
+      "https://developers.google.com/google-ads/api/docs/api-policy/access-levels"
+    ],
+    "correction": "approval for production access",
+    "reason": "First pass intentionally abstained; documentation may still be unresolved"
+  },
+  {
+    "app": "Google Ads",
+    "category": "Marketing, Ads, Email and Social",
+    "field": "api_surface",
+    "original": "unknown",
+    "rating": "abstained",
+    "documentation_establishes": "unknown",
+    "sources": [],
+    "correction": "unknown",
+    "reason": "First pass intentionally abstained; documentation may still be unresolved"
+  },
+  {
+    "app": "Google Ads",
+    "category": "Marketing, Ads, Email and Social",
+    "field": "official_mcp",
+    "original": "unknown",
+    "rating": "abstained",
+    "documentation_establishes": "yes",
+    "sources": [
+      "https://developers.google.com/google-ads/api/docs/developer-toolkit/mcp-server"
+    ],
+    "correction": "yes",
+    "reason": "First pass intentionally abstained; documentation may still be unresolved"
+  },
+  {
+    "app": "Google Ads",
+    "category": "Marketing, Ads, Email and Social",
+    "field": "composio_toolkit",
+    "original": "unknown",
+    "rating": "abstained",
+    "documentation_establishes": "listed",
+    "sources": [
+      "https://docs.composio.dev/toolkits/googleads"
+    ],
+    "correction": "listed",
+    "reason": "First pass intentionally abstained; documentation may still be unresolved"
+  },
+  {
+    "app": "Google Ads",
+    "category": "Marketing, Ads, Email and Social",
+    "field": "verdict",
+    "original": "unclear",
+    "rating": "abstained",
+    "documentation_establishes": "needs approval for production access",
+    "sources": [
+      "https://developers.google.com/google-ads/api/docs/api-policy/access-levels"
+    ],
+    "correction": "needs approval for production access",
+    "reason": "First pass intentionally abstained; documentation may still be unresolved"
+  },
+  {
+    "app": "Shopify",
+    "category": "Ecommerce",
+    "field": "auth",
+    "original": "unknown",
+    "rating": "abstained",
+    "documentation_establishes": "unknown",
+    "sources": [],
+    "correction": "unknown",
+    "reason": "First pass intentionally abstained; documentation may still be unresolved"
+  },
+  {
+    "app": "Shopify",
+    "category": "Ecommerce",
+    "field": "credential_gate",
+    "original": "unknown",
+    "rating": "abstained",
+    "documentation_establishes": "unknown",
+    "sources": [],
+    "correction": "unknown",
+    "reason": "First pass intentionally abstained; documentation may still be unresolved"
+  },
+  {
+    "app": "Shopify",
+    "category": "Ecommerce",
+    "field": "api_surface",
+    "original": "unknown",
+    "rating": "abstained",
+    "documentation_establishes": "GraphQL Admin API reads and writes store data including products and orders",
+    "sources": [
+      "https://shopify.dev/docs/api/usage/authentication"
+    ],
+    "correction": "GraphQL Admin API reads and writes store data including products and orders",
+    "reason": "First pass intentionally abstained; documentation may still be unresolved"
+  },
+  {
+    "app": "Shopify",
+    "category": "Ecommerce",
+    "field": "official_mcp",
+    "original": "unknown",
+    "rating": "abstained",
+    "documentation_establishes": "unknown",
+    "sources": [],
+    "correction": "unknown",
+    "reason": "First pass intentionally abstained; documentation may still be unresolved"
+  },
+  {
+    "app": "Shopify",
+    "category": "Ecommerce",
+    "field": "composio_toolkit",
+    "original": "unknown",
+    "rating": "abstained",
+    "documentation_establishes": "listed",
+    "sources": [
+      "https://docs.composio.dev/toolkits/shopify"
+    ],
+    "correction": "listed",
+    "reason": "First pass intentionally abstained; documentation may still be unresolved"
+  },
+  {
+    "app": "Shopify",
+    "category": "Ecommerce",
+    "field": "verdict",
+    "original": "unclear",
+    "rating": "abstained",
+    "documentation_establishes": "unknown",
+    "sources": [],
+    "correction": "unknown",
+    "reason": "First pass intentionally abstained; documentation may still be unresolved"
+  },
+  {
+    "app": "Apify",
+    "category": "Data, SEO and Scraping",
+    "field": "auth",
+    "original": "unknown",
+    "rating": "abstained",
+    "documentation_establishes": "API token can be sent as a bearer token",
+    "sources": [
+      "https://docs.apify.com/api/v2"
+    ],
+    "correction": "API token can be sent as a bearer token",
+    "reason": "First pass intentionally abstained; documentation may still be unresolved"
+  },
+  {
+    "app": "Apify",
+    "category": "Data, SEO and Scraping",
+    "field": "credential_gate",
+    "original": "unknown",
+    "rating": "abstained",
+    "documentation_establishes": "unknown",
+    "sources": [],
+    "correction": "unknown",
+    "reason": "First pass intentionally abstained; documentation may still be unresolved"
+  },
+  {
+    "app": "Apify",
+    "category": "Data, SEO and Scraping",
+    "field": "api_surface",
+    "original": "unknown",
+    "rating": "abstained",
+    "documentation_establishes": "unknown",
+    "sources": [],
+    "correction": "unknown",
+    "reason": "First pass intentionally abstained; documentation may still be unresolved"
+  },
+  {
+    "app": "Apify",
+    "category": "Data, SEO and Scraping",
+    "field": "official_mcp",
+    "original": "unknown",
+    "rating": "abstained",
+    "documentation_establishes": "unknown",
+    "sources": [],
+    "correction": "unknown",
+    "reason": "First pass intentionally abstained; documentation may still be unresolved"
+  },
+  {
+    "app": "Apify",
+    "category": "Data, SEO and Scraping",
+    "field": "composio_toolkit",
+    "original": "unknown",
+    "rating": "abstained",
+    "documentation_establishes": "listed",
+    "sources": [
+      "https://docs.composio.dev/toolkits/apify"
+    ],
+    "correction": "listed",
+    "reason": "First pass intentionally abstained; documentation may still be unresolved"
+  },
+  {
+    "app": "Apify",
+    "category": "Data, SEO and Scraping",
+    "field": "verdict",
+    "original": "unclear",
+    "rating": "abstained",
+    "documentation_establishes": "unknown",
+    "sources": [],
+    "correction": "unknown",
+    "reason": "First pass intentionally abstained; documentation may still be unresolved"
+  },
+  {
+    "app": "GitHub",
+    "category": "Developer, Infra and Data platforms",
+    "field": "auth",
+    "original": "unknown",
+    "rating": "abstained",
+    "documentation_establishes": "unknown",
+    "sources": [],
+    "correction": "unknown",
+    "reason": "First pass intentionally abstained; documentation may still be unresolved"
+  },
+  {
+    "app": "GitHub",
+    "category": "Developer, Infra and Data platforms",
+    "field": "credential_gate",
+    "original": "unknown",
+    "rating": "abstained",
+    "documentation_establishes": "unknown",
+    "sources": [],
+    "correction": "unknown",
+    "reason": "First pass intentionally abstained; documentation may still be unresolved"
+  },
+  {
+    "app": "GitHub",
+    "category": "Developer, Infra and Data platforms",
+    "field": "api_surface",
+    "original": "unknown",
+    "rating": "abstained",
+    "documentation_establishes": "REST API",
+    "sources": [
+      "https://docs.github.com/en/rest/using-the-rest-api/getting-started-with-the-rest-api"
+    ],
+    "correction": "REST API",
+    "reason": "First pass intentionally abstained; documentation may still be unresolved"
+  },
+  {
+    "app": "GitHub",
+    "category": "Developer, Infra and Data platforms",
+    "field": "official_mcp",
+    "original": "unknown",
+    "rating": "abstained",
+    "documentation_establishes": "yes",
+    "sources": [
+      "https://github.com/github/github-mcp-server"
+    ],
+    "correction": "yes",
+    "reason": "First pass intentionally abstained; documentation may still be unresolved"
+  },
+  {
+    "app": "GitHub",
+    "category": "Developer, Infra and Data platforms",
+    "field": "composio_toolkit",
+    "original": "unknown",
+    "rating": "abstained",
+    "documentation_establishes": "listed",
+    "sources": [
+      "https://docs.composio.dev/toolkits/github"
+    ],
+    "correction": "listed",
+    "reason": "First pass intentionally abstained; documentation may still be unresolved"
+  },
+  {
+    "app": "GitHub",
+    "category": "Developer, Infra and Data platforms",
+    "field": "verdict",
+    "original": "unclear",
+    "rating": "abstained",
+    "documentation_establishes": "unknown",
+    "sources": [],
+    "correction": "unknown",
+    "reason": "First pass intentionally abstained; documentation may still be unresolved"
+  },
+  {
+    "app": "Notion",
+    "category": "Productivity and Project Management",
+    "field": "auth",
+    "original": "unknown",
+    "rating": "abstained",
+    "documentation_establishes": "The create-view endpoint accepts a bearer auth token",
+    "sources": [
+      "https://developers.notion.com/reference/create-view"
+    ],
+    "correction": "The create-view endpoint accepts a bearer auth token",
+    "reason": "First pass intentionally abstained; documentation may still be unresolved"
+  },
+  {
+    "app": "Notion",
+    "category": "Productivity and Project Management",
+    "field": "credential_gate",
+    "original": "unknown",
+    "rating": "abstained",
+    "documentation_establishes": "unknown",
+    "sources": [],
+    "correction": "unknown",
+    "reason": "First pass intentionally abstained; documentation may still be unresolved"
+  },
+  {
+    "app": "Notion",
+    "category": "Productivity and Project Management",
+    "field": "api_surface",
+    "original": "unknown",
+    "rating": "abstained",
+    "documentation_establishes": "unknown",
+    "sources": [],
+    "correction": "unknown",
+    "reason": "First pass intentionally abstained; documentation may still be unresolved"
+  },
+  {
+    "app": "Notion",
+    "category": "Productivity and Project Management",
+    "field": "official_mcp",
+    "original": "unknown",
+    "rating": "abstained",
+    "documentation_establishes": "unknown",
+    "sources": [],
+    "correction": "unknown",
+    "reason": "First pass intentionally abstained; documentation may still be unresolved"
+  },
+  {
+    "app": "Notion",
+    "category": "Productivity and Project Management",
+    "field": "composio_toolkit",
+    "original": "unknown",
+    "rating": "abstained",
+    "documentation_establishes": "listed",
+    "sources": [
+      "https://docs.composio.dev/toolkits/notion"
+    ],
+    "correction": "listed",
+    "reason": "First pass intentionally abstained; documentation may still be unresolved"
+  },
+  {
+    "app": "Notion",
+    "category": "Productivity and Project Management",
+    "field": "verdict",
+    "original": "unclear",
+    "rating": "abstained",
+    "documentation_establishes": "unknown",
+    "sources": [],
+    "correction": "unknown",
+    "reason": "First pass intentionally abstained; documentation may still be unresolved"
+  },
+  {
+    "app": "Stripe",
+    "category": "Finance and Fintech",
+    "field": "auth",
+    "original": "unknown",
+    "rating": "abstained",
+    "documentation_establishes": "Secret API keys authenticate API requests; test and live modes use separate keys",
+    "sources": [
+      "https://docs.stripe.com/keys"
+    ],
+    "correction": "Secret API keys authenticate API requests; test and live modes use separate keys",
+    "reason": "First pass intentionally abstained; documentation may still be unresolved"
+  },
+  {
+    "app": "Stripe",
+    "category": "Finance and Fintech",
+    "field": "credential_gate",
+    "original": "unknown",
+    "rating": "abstained",
+    "documentation_establishes": "unknown",
+    "sources": [],
+    "correction": "unknown",
+    "reason": "First pass intentionally abstained; documentation may still be unresolved"
+  },
+  {
+    "app": "Stripe",
+    "category": "Finance and Fintech",
+    "field": "api_surface",
+    "original": "unknown",
+    "rating": "abstained",
+    "documentation_establishes": "unknown",
+    "sources": [],
+    "correction": "unknown",
+    "reason": "First pass intentionally abstained; documentation may still be unresolved"
+  },
+  {
+    "app": "Stripe",
+    "category": "Finance and Fintech",
+    "field": "official_mcp",
+    "original": "unknown",
+    "rating": "abstained",
+    "documentation_establishes": "yes",
+    "sources": [
+      "https://docs.stripe.com/mcp"
+    ],
+    "correction": "yes",
+    "reason": "First pass intentionally abstained; documentation may still be unresolved"
+  },
+  {
+    "app": "Stripe",
+    "category": "Finance and Fintech",
+    "field": "composio_toolkit",
+    "original": "unknown",
+    "rating": "abstained",
+    "documentation_establishes": "listed",
+    "sources": [
+      "https://docs.composio.dev/toolkits/stripe"
+    ],
+    "correction": "listed",
+    "reason": "First pass intentionally abstained; documentation may still be unresolved"
+  },
+  {
+    "app": "Stripe",
+    "category": "Finance and Fintech",
+    "field": "verdict",
+    "original": "unclear",
+    "rating": "abstained",
+    "documentation_establishes": "unknown",
+    "sources": [],
+    "correction": "unknown",
+    "reason": "First pass intentionally abstained; documentation may still be unresolved"
+  },
+  {
+    "app": "Reducto",
+    "category": "AI, Research and Media-native",
+    "field": "auth",
+    "original": "unknown",
+    "rating": "abstained",
+    "documentation_establishes": "Office licensing setup uses a Reducto API key; this does not establish access to every Reducto product",
+    "sources": [
+      "https://docs.reducto.ai/office/licensing/setup"
+    ],
+    "correction": "Office licensing setup uses a Reducto API key; this does not establish access to every Reducto product",
+    "reason": "First pass intentionally abstained; documentation may still be unresolved"
+  },
+  {
+    "app": "Reducto",
+    "category": "AI, Research and Media-native",
+    "field": "credential_gate",
+    "original": "unknown",
+    "rating": "abstained",
+    "documentation_establishes": "unknown",
+    "sources": [],
+    "correction": "unknown",
+    "reason": "First pass intentionally abstained; documentation may still be unresolved"
+  },
+  {
+    "app": "Reducto",
+    "category": "AI, Research and Media-native",
+    "field": "api_surface",
+    "original": "unknown",
+    "rating": "abstained",
+    "documentation_establishes": "unknown",
+    "sources": [],
+    "correction": "unknown",
+    "reason": "First pass intentionally abstained; documentation may still be unresolved"
+  },
+  {
+    "app": "Reducto",
+    "category": "AI, Research and Media-native",
+    "field": "official_mcp",
+    "original": "unknown",
+    "rating": "abstained",
+    "documentation_establishes": "unknown",
+    "sources": [],
+    "correction": "unknown",
+    "reason": "First pass intentionally abstained; documentation may still be unresolved"
+  },
+  {
+    "app": "Reducto",
+    "category": "AI, Research and Media-native",
+    "field": "composio_toolkit",
+    "original": "unknown",
+    "rating": "abstained",
+    "documentation_establishes": "unknown",
+    "sources": [],
+    "correction": "unknown",
+    "reason": "First pass intentionally abstained; documentation may still be unresolved"
+  },
+  {
+    "app": "Reducto",
+    "category": "AI, Research and Media-native",
+    "field": "verdict",
+    "original": "unclear",
+    "rating": "abstained",
+    "documentation_establishes": "unknown",
+    "sources": [],
+    "correction": "unknown",
+    "reason": "First pass intentionally abstained; documentation may still be unresolved"
+  }
+]

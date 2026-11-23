@@ -1,0 +1,80 @@
+{
+  "app": {
+    "number": 41,
+    "name": "Shopify",
+    "category": "Ecommerce",
+    "hint": "shopify.dev"
+  },
+  "checked_at": "2026-11-23T13:42:00.261714+00:00",
+  "query": "Shopify developer API authentication documentation",
+  "search_results": [
+    {
+      "title": "Search Images - Bing",
+      "url": "https://www.bing.com/camera",
+      "snippet": "bing.com https://www.bing.com › camera Search Images - Bing Intelligent search from Bing makes it easier to quickly find what you’re looking for and rewards you."
+    },
+    {
+      "title": "Zoeken - Microsoft Bing",
+      "url": "https://nl.bing.com/",
+      "snippet": "bing.com https://nl.bing.com Zoeken - Microsoft Bing Zoek met Microsoft Bing, gebruik AI om informatie te vinden en ontdek webpagina's, afbeeldingen, video's, kaarten en meer. Een …"
+    },
+    {
+      "title": "Búsqueda: Microsoft Bing",
+      "url": "https://es.bing.com/",
+      "snippet": "bing.com https://es.bing.com Búsqueda: Microsoft Bing Descubre información, explora páginas web, imágenes, vídeos y mapas con la inteligencia artificial de Bing, el motor de búsqueda …"
+    },
+    {
+      "title": "Search - Microsoft Bing",
+      "url": "https://www.uk.bing.com/",
+      "snippet": "bing.com https://www.uk.bing.com Search - Microsoft Bing Search with Microsoft Bing and use AI to find information, explore webpages, images, videos, maps, and more. A smart search …"
+    },
+    {
+      "title": "Visual Search from Bing now lets you search what you see",
+      "url": "https://blogs.bing.com/search/2018/6/Visual-search-from-Bing-now-lets-you-search-what-you-see/",
+      "snippet": "bing.com https://blogs.bing.com › search › Visual-search-from-Bing-now-lets-you-searc… Visual Search from Bing now lets you search what you see Jun 21, 2018 · Today we're launching new Visual Search capabilities that build upon the visual technology already in Bing so you …"
+    },
+    {
+      "title": "AI Tools - Bing",
+      "url": "https://www.bing.com/tools/ai",
+      "snippet": "bing.com https://www.bing.com › tools › ai AI Tools - Bing Use Microsoft's free AI tools to instantly create stickers, outfit try-ons, and more. Just upload and generate - no skills required. Start …"
+    },
+    {
+      "title": "Search - Bing",
+      "url": "https://www.bing.com/spotlight/imagepuzzle",
+      "snippet": "bing.com https://www.bing.com › spotlight › imagepuzzle Search - Bing Explore Bing's image puzzle for a fun and engaging way to test your visual skills."
+    },
+    {
+      "title": "Beyond text queries: Searching with Bing Visual Search",
+      "url": "https://blogs.bing.com/search-quality-insights/2017/6/beyond-text-queries-searching-with-bing-visual-search/",
+      "snippet": "bing.com https://blogs.bing.com › ... › beyond-text-queries-searching-with-bing-visual-se… Beyond text queries: Searching with Bing Visual Search Jun 1, 2017 · Over the years people have come to expect search engines to automatically detect intent and provide great search …"
+    },
+    {
+      "title": "APIs for Developers Series – Bing Search APIs",
+      "url": "https://blogs.bing.com/search-quality-insights/2016/11/apis-for-developers-series-bing-search-apis/",
+      "snippet": "bing.com https://blogs.bing.com › search-quality-insights › apis-for-developers-series-bi… APIs for Developers Series – Bing Search APIs Nov 29, 2016 · For example, app developer WildWorld uses the intelligence of the Bing APIs to power search for their online social …"
+    },
+    {
+      "title": "This month on Bing: Visual Search expanded, Education, American...",
+      "url": "https://blogs.bing.com/search/2018/9/This-month-on-Bing-Visual-Search-expanded,-Education,-American-Sign-Language,-and-more/",
+      "snippet": "bing.com https://blogs.bing.com › search › This-month-on-Bing-Visual-Search-expanded... This month on Bing: Visual Search expanded, Education, American... Sep 17, 2018 · We’re excited to announce several new features this September at Bing including improvements and extensions of …"
+    }
+  ],
+  "retrievals": [],
+  "errors": [
+    "No candidate documentation on hint domain found; review required"
+  ],
+  "first_pass": {
+    "auth": "unknown",
+    "credential_gate": "unknown",
+    "api_surface": "unknown",
+    "official_mcp": "unknown",
+    "composio_toolkit": "unknown",
+    "verdict": "unclear",
+    "blocker": "Claim-specific documentation not assessed",
+    "next_action": "Review official documentation and validate each claim",
+    "confidence": "unresolved"
+  },
+  "validation_errors": [
+    "All claim fields require source-specific review"
+  ]
+}

@@ -1,0 +1,80 @@
+{
+  "app": {
+    "number": 93,
+    "name": "Fathom",
+    "category": "AI, Research and Media-native",
+    "hint": "fathom.video"
+  },
+  "checked_at": "2026-11-23T13:42:08.291201+00:00",
+  "query": "Fathom developer API authentication documentation",
+  "search_results": [
+    {
+      "title": "Fathom AI Notetaker - Never Take Notes Again",
+      "url": "https://www.fathom.ai/",
+      "snippet": "fathom.ai https://www. fathom .ai Fathom AI Notetaker - Never Take Notes Again Fathom captures, transcribes, and summarizes Zoom, Google Meet, and Microsoft Teams calls. Free for individuals, with AI … Read more"
+    },
+    {
+      "title": "Fathom | Reporting Forecasting and Consolidation Software",
+      "url": "https://www.fathomhq.com/",
+      "snippet": "fathomhq.com https://www. fathom hq.com Fathom | Reporting Forecasting and Consolidation Software Fathom combines insightful reporting, fast cash flow forecasting and actionable financial insights into one refreshingly easy business … Read more"
+    },
+    {
+      "title": "Fathom Desktop App",
+      "url": "https://help.fathom.video/en/articles/449088",
+      "snippet": "fathom.video https://help. fathom .video › en › articles Fathom Desktop App How do I deploy the Fathom desktop app across my organization? IT teams and account admins can install Fathom on Windows … Read more"
+    },
+    {
+      "title": "FATHOM | Food Dehydrator, Dehydrator & Food Dryer",
+      "url": "https://www.fathomstore.in/",
+      "snippet": "fathomstore.in https://www. fathom store.in FATHOM | Food Dehydrator, Dehydrator & Food Dryer FATHOM — Buy the best Food Dehydrator, Dehydrator & Food Dryer online in India: 5 Tray, 8 Tray 1200W, 12 Tray 1500W & 24 … Read more"
+    },
+    {
+      "title": "Fathom",
+      "url": "https://fathom.org/",
+      "snippet": "fathom.org https:// fathom .org Fathom Fathom is an independent nonprofit that finds, builds, and scales policy and technical innovations designed for the AI century. Our … Read more"
+    },
+    {
+      "title": "FATHOM | English meaning - Cambridge Dictionary",
+      "url": "https://dictionary.cambridge.org/dictionary/english/fathom",
+      "snippet": "cambridge.org https://dictionary.cambridge.org › dictionary › english › fathom FATHOM | English meaning - Cambridge Dictionary Up to a few hundred yards of the coast there are 30 fathoms of water. They need at least 40 fathoms for main construction, 100 … Read more"
+    },
+    {
+      "title": "AI Note Taker for Zoom, Meet, Teams & Slack | Fathom",
+      "url": "https://www.fathom.ai/overview",
+      "snippet": "fathom.ai https://www. fathom .ai › overview AI Note Taker for Zoom, Meet, Teams & Slack | Fathom Fathom is the free AI notetaker for Zoom, Google Meet, Teams, Slack huddles, and in-person meetings. Summaries, action items, … Read more"
+    },
+    {
+      "title": "Fathom - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Fathom",
+      "snippet": "wikipedia.org https:// en.wikipedia.org › wiki › Fathom Fathom - Wikipedia A fathom line or fathom curve, a usually sinuous line on a nautical chart, joins all points having the same depth of water, thereby … Read more"
+    },
+    {
+      "title": "Fathom | Global Flood Mapping & Water Risk Intelligence",
+      "url": "https://www.fathom.global/",
+      "snippet": "fathom.global https://www. fathom .global Fathom | Global Flood Mapping & Water Risk Intelligence Fathom provides quality flood risk intelligence for sectors across the globe, providing a new benchmark in flood hazard mapping, … Read more"
+    },
+    {
+      "title": "FATHOM Definition & Meaning - Merriam-Webster",
+      "url": "https://www.merriam-webster.com/dictionary/fathom",
+      "snippet": "merriam-webster.com https:// www.merriam-webster.com › dictionary › fathom FATHOM Definition & Meaning - Merriam-Webster The meaning of FATHOM is a unit of length equal to six feet (1.83 meters) used especially for measuring the depth of water … Read more"
+    }
+  ],
+  "retrievals": [],
+  "errors": [
+    "No candidate documentation on hint domain found; review required"
+  ],
+  "first_pass": {
+    "auth": "unknown",
+    "credential_gate": "unknown",
+    "api_surface": "unknown",
+    "official_mcp": "unknown",
+    "composio_toolkit": "unknown",
+    "verdict": "unclear",
+    "blocker": "Claim-specific documentation not assessed",
+    "next_action": "Review official documentation and validate each claim",
+    "confidence": "unresolved"
+  },
+  "validation_errors": [
+    "All claim fields require source-specific review"
+  ]
+}

@@ -1,0 +1,80 @@
+{
+  "app": {
+    "number": 4,
+    "name": "Attio",
+    "category": "CRM and Sales",
+    "hint": "attio.com"
+  },
+  "checked_at": "2026-11-23T13:41:50.792990+00:00",
+  "query": "Attio developer API authentication documentation",
+  "search_results": [
+    {
+      "title": "IRCTC Next Generation eTicketing System",
+      "url": "http://www.irctc.co.in/",
+      "snippet": "irctc.co.in http://www.irctc.co.in IRCTC Next Generation eTicketing System IRCTC's Next Generation eTicketing System enables online booking of train tickets for Indian Railways, offering a seamless and user … Read more"
+    },
+    {
+      "title": "CRPF Home Page - IRCTC",
+      "url": "https://www.pmf.irctc.co.in/crm/jsp/index",
+      "snippet": "irctc.co.in https://www.pmf.irctc.co.in › crm › jsp › index CRPF Home Page - IRCTC Meri Yatra - Train booking portal for CRPF This is an initiative between CRPF and IRCTC to ease Bookings for travel of Jawans to … Read more"
+    },
+    {
+      "title": "User Login - IRCTC",
+      "url": "https://www.operations.irctc.co.in/AgentInterface/loginHome.jsf",
+      "snippet": "irctc.co.in https://www.operations.irctc.co.in › AgentInterface User Login - IRCTC User Login User ID : Password : Captcha : I have read the IRCTC Rules and Regulations for booking e-tickets to customers I Accept"
+    },
+    {
+      "title": "Helicopter Yatra to Shri Kedarnath Dham & Shri Hemkund Sahib",
+      "url": "https://www.heliyatra.irctc.co.in/auth",
+      "snippet": "irctc.co.in https://www.heliyatra.irctc.co.in › auth Helicopter Yatra to Shri Kedarnath Dham & Shri Hemkund Sahib About Us Indian Railway Catering and Tourism Corporation Ltd. (IRCTC) is Central Public Sector Enterprise under Ministry of … Read more"
+    },
+    {
+      "title": "Air Ticket Booking | Book Flight Tickets | Cheap Air Fare - IRCTC Air",
+      "url": "https://www.air.irctc.co.in/user/myAccount",
+      "snippet": "irctc.co.in https://www.air.irctc.co.in › user › myAccount Air Ticket Booking | Book Flight Tickets | Cheap Air Fare - IRCTC Air Book Flights ticket online for domestic and International destinations and also book LTC airplane ticket at the Lowest Prices* at … Read more"
+    },
+    {
+      "title": "Contact Us - IRCTC Next Generation eTicketing System",
+      "url": "https://contents.irctc.co.in/en/ContactUsEn.html",
+      "snippet": "irctc.co.in https://contents.irctc.co.in › en › ContactUsEn.html Contact Us - IRCTC Next Generation eTicketing System Contact Us - IRCTC Next Generation eTicketing System 📞 Dial 14646 (Within India) Support is available in the following languages: … Read more"
+    },
+    {
+      "title": "IRCTC SBI Card",
+      "url": "https://contents.irctc.co.in/en/AboutSBICobrandCard.html",
+      "snippet": "irctc.co.in https://contents.irctc.co.in › en › AboutSBICobrandCard.html IRCTC SBI Card IRCTC SBI Credit Card offers rewards, discounts, and benefits for frequent travelers booking tickets through IRCTC's e-ticketing portal."
+    },
+    {
+      "title": "20666-65 VB Menu - IRCTC",
+      "url": "https://www.menurates.irctc.co.in/PDFFiles/VandeBharat/20665.pdf",
+      "snippet": "irctc.co.in https://www.menurates.irctc.co.in › PDFFiles › VandeBharat · PDF file 20666-65 VB Menu - IRCTC Menu for Vande Bharat Express Train No.20666-65– TEN-MS-TEN (for EC Classes)"
+    },
+    {
+      "title": "Authorized eCatering IRCTC for Food delivery in train",
+      "url": "https://ecatering.irctc.co.in/blog/authorized-ecatering-irctc-partners-for-food-delivery-in-train",
+      "snippet": "irctc.co.in https://ecatering.irctc.co.in › blog › authorized-ecatering-irctc-partners-for-food... Authorized eCatering IRCTC for Food delivery in train Sep 23, 2022 · Authorized eCatering IRCTC for Food delivery in train 23-Sep-2022 Authorized eCatering IRCTC Partners for Food … Read more"
+    },
+    {
+      "title": "विकल्प नियम और शर्तें",
+      "url": "https://contents.irctc.co.in/hi/vikalpTerms.html",
+      "snippet": "irctc.co.in https://contents.irctc.co.in › hi › vikalpTerms.html विकल्प नियम और शर्तें यात्री महत्वपूर्ण जानकारी : कृप्या नोट करें विकल्प का चयन करने का मतलब यह नहीं है कि यात्री को … Read more"
+    }
+  ],
+  "retrievals": [],
+  "errors": [
+    "No candidate documentation on hint domain found; review required"
+  ],
+  "first_pass": {
+    "auth": "unknown",
+    "credential_gate": "unknown",
+    "api_surface": "unknown",
+    "official_mcp": "unknown",
+    "composio_toolkit": "unknown",
+    "verdict": "unclear",
+    "blocker": "Claim-specific documentation not assessed",
+    "next_action": "Review official documentation and validate each claim",
+    "confidence": "unresolved"
+  },
+  "validation_errors": [
+    "All claim fields require source-specific review"
+  ]
+}

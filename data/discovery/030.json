@@ -1,0 +1,70 @@
+{
+  "app": "Vonage",
+  "query": "site:vonage.com Vonage API developer documentation authentication",
+  "checked_at": "2026-11-23T13:45:42.340943+00:00",
+  "results": [
+    {
+      "title": "Business Phone, VoIP, Communication APIs, Contact Center | Vonage",
+      "url": "https://www.vonage.com/",
+      "snippet": "vonage.com https:// www.vonage.com Business Phone, VoIP, Communication APIs, Contact Center | Vonage Vonage offers flexible and scalable voice, messaging, video and data capabilities across Unified Communications, Contact Centers … Read more"
+    },
+    {
+      "title": "Log in - Vonage",
+      "url": "https://www.vonage.com/log-in/",
+      "snippet": "vonage.com https:// www.vonage.com › log-in Log in - Vonage Vonage Business Communications Portal Login Fully manage and customize your company’s phone system, set company wide … Read more"
+    },
+    {
+      "title": "Vonage Business",
+      "url": "https://app.vonage.com/login",
+      "snippet": "vonage.com https://app. vonage .com Vonage Business Log in to manage your Vonage Business account and access its features."
+    },
+    {
+      "title": "Vonage - Login",
+      "url": "https://admin.vonage.com/",
+      "snippet": "vonage.com https://admin. vonage .com Vonage - Login Manage and customize your Vonage Business Communications account settings with the VBC Admin Portal."
+    },
+    {
+      "title": "Vonage Online Account - Login",
+      "url": "https://secure.vonage.com/account/login.html",
+      "snippet": "vonage.com https://secure. vonage .com › account Vonage Online Account - Login Home | Privacy Policy | Terms Of Service | 911 Dialing | Contact Us | Support | Vonage Community © 2016 Vonage"
+    },
+    {
+      "title": "Vonage for Home | Residential Home Phone Service",
+      "url": "https://www.vonageforhome.com/",
+      "snippet": "vonageforhome.com https://www. vonage forhome.com Vonage for Home | Residential Home Phone Service Reach friends and family anywhere and enjoy low rates on domestic and international calling plans with Vonage home phone … Read more"
+    },
+    {
+      "title": "Vonage - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Vonage",
+      "snippet": "wikipedia.org https:// en.wikipedia.org › wiki › Vonage Vonage - Wikipedia Vonage became a wholly owned subsidiary of Ericsson but continues to operate under its existing name and reported as a separate … Read more"
+    },
+    {
+      "title": "Vonage Business",
+      "url": "https://legacy.app.vonage.com/login",
+      "snippet": "vonage.com https://legacy.app. vonage .com › login Vonage Business Vonage Business ... Vonage Business"
+    },
+    {
+      "title": "Vonage Authentication",
+      "url": "https://ui.idp.vonage.com/ui/auth/registration?context=eyJoeWRyYUZsb3ciOiIxNDliZjc3ZTNjNzE0ZDk4YjY3ZTk1YThlMWFmYmU2NiIsInN1YmplY3QiOiIiLCJmb3JjZUlkUCI6IiIsIm9pZGNDb250ZXh0Ijp7ImFjcl92YWx1ZXMiOm51bGwsInVpX2xvY2FsZXMiOm51bGx9LCJjbGllbnRJRCI6ImR0LWRhc2hib2FyZC1tYWluIiwicmVnaXN0cmF0aW9uRmxvdyI6IiIsImxvZ2luRmxvdyI6IkhXYjluY0FsMTdOQk1obDErNlZLeWxOQ29yN2ZhZ21yMmNxc3lIQjBjUnBxZ25vK1pMMERmVXcxc3dXZVVucTlFYmRUelZjdjUzM2YvbVFxMFdVZVRyR3NnOGxlYUI4cFpiY2NDaEUrdDRzZ2pGR0lSMFArd2I4azQyNFExa0ZQIiwiaW52aXRlRGF0YSI6eyJmb3JjZUxvZ2luIjp0cnVlLCJJZ25vcmVSZWFkT25seSI6dHJ1ZSwicXVlcnlQYXJhbXMiOiJyZWRpcmVjdGVkPTEifSwiYWRkcmVzc1ZlcmlmeSI6bnVsbCwiZm9yY2VMb2dnZWRPdXQiOmZhbHNlLCJmbG93VHJhY2VJZCI6ImE0MDkwMWIxLTgzZmEtNDk5YS1hZWQwLWFhNjY4MzVjYWY5NCIsInBob25lVmVyaWZpZWQiOmZhbHNlfQ==&redirected=1",
+      "snippet": "vonage.com https://ui.idp. vonage .com › ui › auth › registration Vonage Authentication Sign up for a Vonage account No credit card required. Already have an account? Log in."
+    },
+    {
+      "title": "Download Apps | Vonage",
+      "url": "https://www.vonage.com/downloads/",
+      "snippet": "vonage.com https:// www.vonage.com › downloads Download Apps | Vonage Download and start using these Vonage® Business Business Cloud or Enterprise apps and plugins today."
+    }
+  ],
+  "fetches": [
+    {
+      "url": "https://www.vonage.com/",
+      "status": 403,
+      "text": "Just a moment... Enable JavaScript and cookies to continue"
+    },
+    {
+      "url": "https://www.vonage.com/log-in/",
+      "status": 403,
+      "text": "Just a moment... Enable JavaScript and cookies to continue"
+    }
+  ],
+  "errors": []
+}

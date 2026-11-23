@@ -1,0 +1,80 @@
+{
+  "app": {
+    "number": 71,
+    "name": "Notion",
+    "category": "Productivity and Project Management",
+    "hint": "developers.notion.com"
+  },
+  "checked_at": "2026-11-23T13:42:06.308714+00:00",
+  "query": "Notion developer API authentication documentation",
+  "search_results": [
+    {
+      "title": "The AI workspace that works for you. | Notion",
+      "url": "https://www.notion.com/",
+      "snippet": "notion.com https://www. notion .com The AI workspace that works for you. | Notion Capture context, find answers, and automate tasks with AI built for your team. The most ambitious companies run on Notion. AI …"
+    },
+    {
+      "title": "Notion - Log in",
+      "url": "https://app.notion.com/",
+      "snippet": "notion.com https://app. notion .com Notion - Log in A collaborative AI workspace, built on your company context. Build and orchestrate agents right alongside your team's projects, …"
+    },
+    {
+      "title": "Notion - Sign up",
+      "url": "https://app.notion.com/signup",
+      "snippet": "notion.com https://app. notion .com › signup Notion - Sign up A collaborative AI workspace, built on your company context. Build and orchestrate agents right alongside your team's projects, …"
+    },
+    {
+      "title": "Download Notion for desktop",
+      "url": "https://www.notion.com/desktop",
+      "snippet": "notion.com https://www. notion .com › desktop Download Notion for desktop A faster experience on Notion Desktop. Fast and minimal. Work without distractions."
+    },
+    {
+      "title": "Notion",
+      "url": "https://mobile.www.notion.so/community",
+      "snippet": "notion.so https://mobile.www. notion .so › community Notion A collaborative AI workspace, built on your company context. Build and orchestrate agents right alongside your team's projects, …"
+    },
+    {
+      "title": "Notion (productivity software ) - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Notion_(productivity_software)",
+      "snippet": "wikipedia.org https:// en.wikipedia.org › wiki › Notion_(productivity_software ) Notion (productivity software ) - Wikipedia Notion is a productivity and note-taking application developed by Notion Labs, Inc. It serves as a workspace for notetaking, …"
+    },
+    {
+      "title": "Notion - Download and install on Windows | Microsoft Store",
+      "url": "https://apps.microsoft.com/detail/xpdbvss44r0l9h",
+      "snippet": "microsoft.com https:// apps.microsoft.com › detail Notion - Download and install on Windows | Microsoft Store Notion is the AI workspace that works for you. It's the one place to write, plan, centralize knowledge, and get projects done—with AI …"
+    },
+    {
+      "title": "Notion",
+      "url": "https://www.notion.com/explore",
+      "snippet": "notion.com https://www. notion .com › explore Notion Build, learn, and explore the richness of what Notion’s suite of features has to offer."
+    },
+    {
+      "title": "What is Notion ? | Notion",
+      "url": "https://www.notion.com/product/notion",
+      "snippet": "notion.com https://www. notion .com › product › notion What is Notion ? | Notion Notion is a connected workspace that brings docs, wikis, projects, and databases together in one place. With Notion AI and custom …"
+    },
+    {
+      "title": "Notion – The all-in-one workspace for your notes, tasks, wikis, and ...",
+      "url": "https://app.notion.com/index.html",
+      "snippet": "notion.com https://app. notion .com › index.html Notion – The all-in-one workspace for your notes, tasks, wikis, and ... It's the all-in-one workspace for you and your team."
+    }
+  ],
+  "retrievals": [],
+  "errors": [
+    "No candidate documentation on hint domain found; review required"
+  ],
+  "first_pass": {
+    "auth": "unknown",
+    "credential_gate": "unknown",
+    "api_surface": "unknown",
+    "official_mcp": "unknown",
+    "composio_toolkit": "unknown",
+    "verdict": "unclear",
+    "blocker": "Claim-specific documentation not assessed",
+    "next_action": "Review official documentation and validate each claim",
+    "confidence": "unresolved"
+  },
+  "validation_errors": [
+    "All claim fields require source-specific review"
+  ]
+}

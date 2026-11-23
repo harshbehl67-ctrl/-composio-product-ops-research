@@ -1,0 +1,80 @@
+{
+  "app": {
+    "number": 85,
+    "name": "iPayX",
+    "category": "Finance and Fintech",
+    "hint": "ipayx.ai/docs"
+  },
+  "checked_at": "2026-11-23T13:42:07.503062+00:00",
+  "query": "iPayX developer API authentication documentation",
+  "search_results": [
+    {
+      "title": "Sports Activities | Campus Life | VIT",
+      "url": "https://vit.ac.in/campuslife/sports",
+      "snippet": "vit.ac.in https://vit.ac.in › campuslife › sports Sports Activities | Campus Life | VIT VIT provides state-of-the-art facilities for sports and games and get trained to compete at various National and International Sports … Read more"
+    },
+    {
+      "title": "CAREERS @ VIT Chennai - Vellore Institute of Technology",
+      "url": "https://careerscc.vit.ac.in/vitcc-careers/findJobDetailsById/334",
+      "snippet": "vit.ac.in https://careerscc.vit.ac.in › vitcc-careers › findJobDetailsById CAREERS @ VIT Chennai - Vellore Institute of Technology VIT was established with the aim of providing quality higher education on par with international standards. It persistently seeks and … Read more"
+    },
+    {
+      "title": "VIT Chennai Faculty Dashboard",
+      "url": "https://directorycc.vit.ac.in/faculty/54506-g-jayaraman",
+      "snippet": "vit.ac.in https://directorycc.vit.ac.in › faculty VIT Chennai Faculty Dashboard Faculty Dashboard for VIT Chennai with faculty profiles, publications, research details, and academic information."
+    },
+    {
+      "title": "Mega Fests | Campus Life",
+      "url": "https://vit.ac.in/campus-category/Clubs",
+      "snippet": "vit.ac.in https://vit.ac.in › campus-category › Clubs Mega Fests | Campus Life The clubs here at VIT suits everyone’s enthusiasms and fits everyone on campus. VIT is enhanced with many such clubs. These … Read more"
+    },
+    {
+      "title": "Nirmala Grace A - stage.vit.ac.in",
+      "url": "https://stage.vit.ac.in/nirmala-grace",
+      "snippet": "vit.ac.in https://stage.vit.ac.in › nirmala-grace Nirmala Grace A - stage.vit.ac.in Energy materials (2D materials and carbon-based materials viz. Graphene, MXenes, CNTs, Porous carbons and functional electrode … Read more"
+    },
+    {
+      "title": "Counselling Division - chennai.vit.ac.in",
+      "url": "https://chennai.vit.ac.in/counselling-division/",
+      "snippet": "vit.ac.in https://chennai.vit.ac.in › counselling-division Counselling Division - chennai.vit.ac.in Counselling is a type of learning about oneself, one’s feelings, and one’s relationships with others. As in any learning environment, … Read more"
+    },
+    {
+      "title": "Guest House - VIT",
+      "url": "https://chennai.vit.ac.in/guest-house/",
+      "snippet": "vit.ac.in https://chennai.vit.ac.in › guest-house Guest House - VIT Greetings! The Main guest house, kitchen and Dining hall temporarily closed for Under Renovation and Kindly avoid booking a … Read more"
+    },
+    {
+      "title": "MCA/M.Sc. Online Counselling - admissionresults.vit.ac.in",
+      "url": "https://admissionresults.vit.ac.in/vitmeemcamsc/index.jsp",
+      "snippet": "vit.ac.in https://admissionresults.vit.ac.in › vitmeemcamsc › index.jsp MCA/M.Sc. Online Counselling - admissionresults.vit.ac.in Candidates are advised to use the latest version of Google Chrome or Mozilla Firefox for a smooth counselling experience. Login … Read more"
+    },
+    {
+      "title": "Guest House | Home",
+      "url": "https://guesthouse.vit.ac.in/",
+      "snippet": "vit.ac.in https://guesthouse.vit.ac.in Guest House | Home Guest House Greetings! We warmly welcome you to experience the comfort and charm of the VIT Guest House, your home away … Read more"
+    },
+    {
+      "title": "International B.Tech Foreign Students 2026-27 Admissions",
+      "url": "https://admissions.vit.ac.in/btechforeignapplication/login",
+      "snippet": "vit.ac.in https://admissions.vit.ac.in › btechforeignapplication › login International B.Tech Foreign Students 2026-27 Admissions International B.Tech 2026 Applications Open for B.Tech Foreign Candidates 2026-27 Admissions. Apply International B.Tech … Read more"
+    }
+  ],
+  "retrievals": [],
+  "errors": [
+    "No candidate documentation on hint domain found; review required"
+  ],
+  "first_pass": {
+    "auth": "unknown",
+    "credential_gate": "unknown",
+    "api_surface": "unknown",
+    "official_mcp": "unknown",
+    "composio_toolkit": "unknown",
+    "verdict": "unclear",
+    "blocker": "Claim-specific documentation not assessed",
+    "next_action": "Review official documentation and validate each claim",
+    "confidence": "unresolved"
+  },
+  "validation_errors": [
+    "All claim fields require source-specific review"
+  ]
+}

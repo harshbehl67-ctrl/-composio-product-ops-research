@@ -1,0 +1,70 @@
+{
+  "app": "Podio",
+  "query": "site:podio.com Podio API developer documentation authentication",
+  "checked_at": "2026-11-23T13:45:37.615070+00:00",
+  "results": [
+    {
+      "title": "Login | Podio",
+      "url": "https://podio.com/login",
+      "snippet": "podio.com https:// podio .com › login Login | Podio Progress Podio is the online work platform. Manage, share, and get your work done smarter together with tools that work like you. …"
+    },
+    {
+      "title": "Work Management Platform | Streamline Collaboration & Workflows | Podio",
+      "url": "https://www.podio.com/",
+      "snippet": "podio.com https://www. podio .com Work Management Platform | Streamline Collaboration & Workflows | Podio Podio supports building digital workspaces tailored to your team's unique processes. Whether you're tracking leads, managing …"
+    },
+    {
+      "title": "Podio - Progress Software",
+      "url": "https://www.progress.com/podio",
+      "snippet": "progress.com https://www.progress.com › podio Podio - Progress Software Build custom workspaces, automate workflows, and boost team productivity with Podio—your flexible no-code platform for smarter …"
+    },
+    {
+      "title": "Welcome to Podio - Progress Software",
+      "url": "https://www.progress.com/podio/documentation/welcome",
+      "snippet": "progress.com https://www.progress.com › podio › documentation Welcome to Podio - Progress Software Podio is a flexible work platform that helps teams organize projects, processes, and information in one place. Build a workspace that …"
+    },
+    {
+      "title": "Podio - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Podio",
+      "snippet": "wikipedia.org https:// en.wikipedia.org › wiki › Podio Podio - Wikipedia Podio supplies a web-based platform for creating no code solutions and automated workflows. The feature set includes organizing …"
+    },
+    {
+      "title": "Progress Podio Workflow Automation",
+      "url": "https://workflow-automation.podio.com/",
+      "snippet": "podio.com https://workflow-automation. podio .com Progress Podio Workflow Automation Boost productivity and save man hours by automating pretty much anything you can think of in your Progress Podio account. …"
+    },
+    {
+      "title": "Log In to your Podio account",
+      "url": "https://workflow-automation.podio.com/login.php",
+      "snippet": "podio.com https://workflow-automation. podio .com › login.php Log In to your Podio account Nov 26, 2018 · Progress Podio workflow automation. Set Automatic Triggers, Filters, and Actions. And Build Charts and Graphs of …"
+    },
+    {
+      "title": "Developers - Podio API Documentation",
+      "url": "https://developers.podio.com/",
+      "snippet": "podio.com https://developers. podio .com Developers - Podio API Documentation The Podio API is a complete programmable interface to all Podio functionality. We currently provide wrappers for PHP, .NET, Ruby, …"
+    },
+    {
+      "title": "Concepts and conventions: The core concepts of Podio - Podio API ...",
+      "url": "https://developers.podio.com/index/overview",
+      "snippet": "podio.com https://developers. podio .com › index › overview Concepts and conventions: The core concepts of Podio - Podio API ... Tasks can be added to almost anything in Podio. They will appear in relation to the item but will also be aggregated to the user's …"
+    },
+    {
+      "title": "Podio",
+      "url": "https://podio.com/signup",
+      "snippet": "podio.com https:// podio .com › signup Podio Podio Good decision. Create your free account and join over 500,000 teams getting their work done on Podio. Your work email …"
+    }
+  ],
+  "fetches": [
+    {
+      "url": "https://podio.com/login",
+      "status": 200,
+      "text": "Login | Podio Podio English Dansk Deutsch Français Español Italiano Português brasileiro Nederlands 日本語 Svenska English Dansk Deutsch Français Español Italiano Português brasileiro Nederlands 日本語 Svenska About Podio Terms of Service Privacy Policy Cookie preferences {\"environment\":\"production\",\"use_bundled_assets\":true,\"serverTime\":1795441538,\"base_domain\":\"podio.com\",\"uploadURL\":\"https://files.podio.com/upload\",\"asset_host\":\"https://d3apguah0u98pa.cloudfront.net\",\"decimalSeparator\":\".\",\"endpoints\":{\"api\":\"https://api.podio.com\",\"apiProxy\":\"https://podio.com/_proxy\",\"workflowAutomation\":\"https://workflow-automation.podio.com\"},\"gtm\":{\"account\":\"GTM-WGNRBW\",\"dimensions\":{}},\"smrtPhone\":\"o58MJ3pKDphv3wGT2Sft2PG1IIHBi0sI\",\"activeFeatures\":[\"new_flat_modal_theme\",\"uncheck_calender_by_default\",\"tooltip_remove_escaping\",\"limit_to_500_items\",\"hide_completedtasks_enabled\",\"use_braintree_dropin\",\"show_mfa_tab\",\"new_ui\",\"new_app_view_sidebar\",\"clear_browser_cache\",\"conversation_message_delete\",\"new_table_layout\",\"app_share_with_users\",\"stream_activity_group_limit\"],\"podioRequestId\":\"e0b780e6\",\"on_employee_network\":false,\"isBrowserDeprecated\":true,\"conversions\":{},\"podio_text_editor_stylesheet_url\":\"https://d3apguah0u98pa.cloudfront.net/stylesheets-visual-refresh/_bf0ef479/compressed/text_editor_inner.css\",\"jammit_asset_suffix\":\"/_bf0ef479\"} {} {\"locale\":\"en_GB\",\"moment\":{\"longDateFormat\":{\"LT\":\"HH:mm\",\"L\":\"DD/MM/YYYY\",\"LL\":\"D MMMM YYYY\",\"LLL\":\"D MMMM YYYY LT\",\"LLLL\":\"dddd, D MMMM YYYY LT\"},\"week\":{\"dow\":\"1\",\"doy\":\"4\"}},\"fullCalendar\":{\"timeFormat\":\"HH:mm\",\"slotLabelFormat\":\"HH:mm\",\"columnHeaderFormat\":{\"month\":\"ddd\",\"week\":\"ddd D/M\",\"day\":\"dddd D/M\"}},\"datePicker\":{\"dateFormat\":\"dd/mm/yy\",\"firstDay\":\"1\"},\"timeEntry\":{\"show24Hours\":true},\"validations\":{\"date_regexp\":\"^(0[1-9]|[12][0-9]|3[01])\\\\/(0[1-9]|1[012])\\\\/(1|2)\\\\d\\\\d\\\\d$\",\"number_regexp\":\"^-?(?:[\\\\d,]*)(?:\\\\.\\\\d+)?$\"},\"number\":{\"format\":{\"separator\":\".\",\"delimiter\":\",\",\"precision\":3},\"currencySymbol\":\"£\"},\"placeholders\":{\"date\":\"DD/MM/YYYY\"},\"customDateTimeFormats\":{\"longDateWithoutYear\":\"D MMMM\"}}"
+    },
+    {
+      "url": "https://www.podio.com/",
+      "status": 200,
+      "text": "Work Management Platform | Streamline Collaboration & Workflows | Podio Welcome to the new Progress Podio! Now find more product info at our new website here or read the blog to learn more. Simplify Work, Amplify Results with Progress Podio Unify and automate work with no-code tools, flexible workflows and\r\n                            customizable business solutions. Sign Up Log In Structure, Automate and ScaleâYour Way Podio supports building digital workspaces tailored to your team's unique\r\n                            processes. Whether you're tracking leads, managing projects, streamlining operations or\r\n                            automating approvals, Podio is built to support a wide range of workflows. With powerful\r\n                            no-code tools, automation and real-time collaboration, Podio helps you structure, scale and\r\n                            simplify work—on your terms. Key Capabilities: Customize No-code drag and drop builder to customize your data structure Personalized dashboards and workspace layouts Multiple data views: table, kanban, calendar and badge Pre-built templates to jumpstart setup Bidirectional relationship fields to link related data items Webforms for data intake to capture external submissions Automate Customize powerful workflows with If-This-Then-That rules Automate task assignments, status updates and notifications Use calculations and custom rules to power dynamic workflows Integrate with 3rd party tools and other systems of records Trigger actions across systems with API-first flexibility Generate pdf documents from templates Initiate signature and approval requests Automate email and SMS delivery using dynamic content Collaborate Real-time collaboration with comments, file sharing and mentions Shared workspaces among team members Client Access with free external licenses Mobile apps for iOS, Android and iPad Contextual search to find relevant content, conversations and records Multi-level permissions to support controlled sharing and focused teamwork Detailed user activity and revision history to support transparency and audit\r\n                                preparation Trusted Leader in Flexible Work Management Solutions Progress Podio\r\n                                Reviews 2025: Details, Pricing & Features | G2 2025 G2 Easiest\r\n                                Setup 2025 G2 Best Est.\r\n                                ROI 2025 Capterra\r\n                                Shortlist for Team Communication 2024 Capterra\r\n                                Shortlist for Digital Workplace 2024 TrustRadius\r\n                                Tech Cares Awards Best Team Management\r\n                                Softwares The Business Benefit Boost Efficiency, Empower Teams and Scale with Confidence Podio supports businesses of all sizes streamline operations, improve\r\n                            visibility and make more informed decisions. Whether you're a startup or a global\r\n                            enterprise, Podio is built to support a range of needs with advanced automation and\r\n                            customizable workflowsâleaving teams to focus on high-impact work. Boost Productivity Automate repetitive tasks and streamline handoffs with structured\r\n                            workflows that save time and minimize errors. Improve Collaboration Break down silos with shared workspaces, client access, real-time\r\n                            updates and mobile-ready tools. Enhance Visibility Centralize data, conversations and project updates in one place for\r\n                            real-time insights and accountability. Scale with Flexibility Tailor Podio to your evolving business needs with flexible\r\n                            architecture, robust APIs and security features designed to support enterprise needs. Accelerate Time to Value Quickly launch custom apps and workspaces using no-code\r\n                            tools. One Platform. Endless Possibilities. Support multiple work types—CRM, project tracking, approvals,\r\n                            and more—on a single platform to help reduce tool sprawl and license costs. Trusted by Thousands of Organisations... All Around the World! What Our Customers Say Real Teams. Real Results. Grew 30x with Podio generating 5x ROI in six months We wanted to have something custom,\r\n                                            and Anders (from Workways) told me about his Podio experience and how you\r\n                                            can build whatever you want and his recommendation on where to start.\r\n                                            Without Podio and its automations, my company would be a lot less\r\n                                            profitable. Stefan\r\n                                            Stojkovic, Founder, GulvKanonen In collaboration with trusted\r\n                                            Podio Partner, Workways Read full story Automate to operate without boundaries What can easily take 4-to-6-person\r\n                                            team in comparable companies, is handled by 0.25 of an employee in our\r\n                                            organization with Podio. Kasper\r\n                                            Dam Founder and CEO, Kandio Read full story Managing growth with technology I now have a product that is as\r\n                                            simple or as complex as I want it to be. My favorite thing about Podio, is\r\n                                            how it does only what I need it to do and nothing more and nothing\r\n                                            less. Matthew\r\n                                            Markoff Founder and Tax Partner, Markoff\r\n                                            & Malatesta CPAs PLLC Read full\r\n                                        story Podio keeps Integrity's teams connected and informed We needed an intuitive solution to\r\n                                            the problem of collaborating across diverse operating contexts and\r\n                                            time-zones, and to reduce the pain points of sharing spreadsheets back and\r\n                                            forth. Podio transformed our entire information environment and instilled a\r\n                                            culture of collaborative knowledge management. Will Lowrie Head of Data and Knowledge\r\n                                            Management, Integrity Read full\r\n                                        story Enterprise collaboration and business process automation Everything in Podio has enabled us\r\n                                            to take the tool, make it ours and do exactly what we want with it as\r\n                                            opposed to trying to fit our business into something else and does it in a\r\n                                            way that is simple enough that most people can figure it out. Chris\r\n                                            Blanchard Director of IT, Schuster Companies Read full\r\n                                        story Giving a voice to the voiceless with Podio We shared those records with the\r\n                                            hospital and identified that the person needed insulin. If that hadn’t\r\n                                            gotten picked up from his Podio records, who knows what could’ve\r\n                                            happened there. Jaquie Mills Managing Director, Microboards\r\n                                            Australia Read full\r\n                                        story Get Started on Podio For streamlined work that will drive your business forward. Get Started"
+    }
+  ],
+  "errors": []
+}

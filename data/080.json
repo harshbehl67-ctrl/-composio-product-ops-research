@@ -1,0 +1,80 @@
+{
+  "app": {
+    "number": 80,
+    "name": "Harvest",
+    "category": "Productivity and Project Management",
+    "hint": "harvestapp.com (help.getharvest.com/api-v2)"
+  },
+  "checked_at": "2026-11-23T13:42:06.907187+00:00",
+  "query": "Harvest developer API authentication documentation",
+  "search_results": [
+    {
+      "title": "ChatGPTPromptGenius - Reddit",
+      "url": "https://www.reddit.com/r/ChatGPTPromptGenius/",
+      "snippet": "reddit.com https://www.reddit.com › ChatGPTPromptGenius ChatGPTPromptGenius - Reddit Welcome to r/ChatGPTPromptGenius, the subreddit where you can find and share the best AI prompts! Our community is dedicated … Read more"
+    },
+    {
+      "title": "ChatGPT-Bypass - GitHub",
+      "url": "https://github.com/LongpanZhou/ChatGPT-Bypass",
+      "snippet": "github.com https://github.com › LongpanZhou › ChatGPT-Bypass ChatGPT-Bypass - GitHub ChatGPT will feedback with if each character knows about the information, since one of the character replies 'yes'. It will generate on … Read more"
+    },
+    {
+      "title": "关于在中国地区使用的问题汇总 · lencx ChatGPT · Discussion #133 · …",
+      "url": "https://github.com/lencx/ChatGPT/discussions/133",
+      "snippet": "github.com https://github.com › lencx › ChatGPT › discussions 关于在中国地区使用的问题汇总 · lencx ChatGPT · Discussion #133 · … 请大家不要再开新的 issues 了，因为它们的问题都是一样的。可以在这里进行讨论，感谢配合！ 总结：所有的访问出错，归根结底都 … Read more"
+    },
+    {
+      "title": "ChatGPT - 知乎",
+      "url": "https://www.zhihu.com/topic/26691895",
+      "snippet": "zhihu.com https://www.zhihu.com › topic ChatGPT - 知乎 ChatGPT是由OpenAI推出的一款AI聊天对话机器人，能够进行自然语言交互，帮助用户完成问答、写作、编程等多种任务。"
+    },
+    {
+      "title": "普通人应该如何用ChatGPT？ - 知乎",
+      "url": "https://www.zhihu.com/question/604991158",
+      "snippet": "zhihu.com https://www.zhihu.com › question 普通人应该如何用ChatGPT？ - 知乎 普通人对于ChatGPT的使用，我觉得应该有三重境界。 第一重是压根没有听说过ChatGPT的，这部分人不多，毕竟就连防沉迷系统都 … Read more"
+    },
+    {
+      "title": "r/ChatGPT on Reddit: New jailbreak! Proudly unveiling the tried and ...",
+      "url": "https://www.reddit.com/r/ChatGPT/comments/10tevu1/new_jailbreak_proudly_unveiling_the_tried_and/",
+      "snippet": "reddit.com https://www.reddit.com › ChatGPT › comments r/ChatGPT on Reddit: New jailbreak! Proudly unveiling the tried and ... Feb 4, 2023 · New jailbreak! Proudly unveiling the tried and tested DAN 5.0 - it actually works - Returning to DAN, and assessing its … Read more"
+    },
+    {
+      "title": "GitHub Help: GitHub Documentation, AI Search & Support",
+      "url": "https://support.github.com/",
+      "snippet": "github.com https://support.github.com GitHub Help: GitHub Documentation, AI Search & Support Welcome to the GitHub Help. Search documentation, ask AI-powered questions, troubleshoot issues, explore learning resources, or … Read more"
+    },
+    {
+      "title": "Changing the AI model for GitHub Copilot Chat",
+      "url": "https://docs.github.com/en/copilot/how-tos/copilot-in-your-ide/chat-with-copilot/change-the-chat-model",
+      "snippet": "github.com https://docs.github.com › en › copilot › how-tos › copilot-in-your-ide › chat-with … Changing the AI model for GitHub Copilot Chat Choose from a selection of models, each with its own particular strengths. You may have a favorite model that you like to use, or you … Read more"
+    },
+    {
+      "title": "GitHub Pages documentation - GitHub Docs",
+      "url": "https://docs.github.com/pages",
+      "snippet": "github.com https://docs.github.com › pages GitHub Pages documentation - GitHub Docs About custom domains and GitHub Pages GitHub Pages supports using custom domains, or changing the root of your site's URL … Read more"
+    },
+    {
+      "title": "GitHub - lichaode/ChatGPT: ChatGPT_CN ChatGPT桌面中文版",
+      "url": "https://github.com/lichaode/ChatGPT",
+      "snippet": "github.com https://github.com › lichaode › ChatGPT GitHub - lichaode/ChatGPT: ChatGPT_CN ChatGPT桌面中文版 ChatGPT_CN ChatGPT桌面中文版. Contribute to lichaode/ChatGPT development by creating an account on GitHub."
+    }
+  ],
+  "retrievals": [],
+  "errors": [
+    "No candidate documentation on hint domain found; review required"
+  ],
+  "first_pass": {
+    "auth": "unknown",
+    "credential_gate": "unknown",
+    "api_surface": "unknown",
+    "official_mcp": "unknown",
+    "composio_toolkit": "unknown",
+    "verdict": "unclear",
+    "blocker": "Claim-specific documentation not assessed",
+    "next_action": "Review official documentation and validate each claim",
+    "confidence": "unresolved"
+  },
+  "validation_errors": [
+    "All claim fields require source-specific review"
+  ]
+}

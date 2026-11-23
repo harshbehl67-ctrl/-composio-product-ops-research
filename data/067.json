@@ -1,0 +1,84 @@
+{
+  "app": {
+    "number": 67,
+    "name": "Snowflake",
+    "category": "Developer, Infra and Data platforms",
+    "hint": "docs.snowflake.com"
+  },
+  "checked_at": "2026-11-23T13:42:05.284127+00:00",
+  "query": "Snowflake developer API authentication documentation",
+  "search_results": [
+    {
+      "title": "Snowflake AI Data Cloud",
+      "url": "https://www.snowflake.com/en/",
+      "snippet": "snowflake.com https://www. snowflake .com Snowflake AI Data Cloud With Snowflake, Novo unifies commercial and research data, empowering 40,000 users with self-service insights and laying the … Read more"
+    },
+    {
+      "title": "Snowflake",
+      "url": "https://app.snowflake.com/",
+      "snippet": "snowflake.com https://app. snowflake .com Snowflake Sign in Sign up"
+    },
+    {
+      "title": "The Snowflake Platform",
+      "url": "https://www.snowflake.com/en/product/platform/",
+      "snippet": "snowflake.com https://www. snowflake .com › en › product › platform The Snowflake Platform Snowflake's serverless, managed platform makes enterprise data & AI easy, connected & trusted, featuring built-in governance, … Read more"
+    },
+    {
+      "title": "Snowflake Documentation",
+      "url": "https://docs.snowflake.com/en/",
+      "snippet": "snowflake.com https://docs. snowflake .com Snowflake Documentation Tutorials to help you learn the basics of using Snowflake. Overview of the new features, enhancements, and important fixes … Read more"
+    },
+    {
+      "title": "Snowflake Inc . - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Snowflake_Inc.",
+      "snippet": "wikipedia.org https:// en.wikipedia.org › wiki › Snowflake_Inc . Snowflake Inc . - Wikipedia Snowflake develops and sells a cloud-based data platform known as the Data Cloud. The platform allows organizations to unify data … Read more"
+    },
+    {
+      "title": "What is Snowflake ? - GeeksforGeeks",
+      "url": "https://www.geeksforgeeks.org/cloud-computing/what-is-snowflake/",
+      "snippet": "geeksforgeeks.org https://www.geeksforgeeks.org › cloud-computing › what-is- snowflake What is Snowflake ? - GeeksforGeeks Dec 20, 2023 · Snowflake is a cloud-based data warehousing platform known for its scalability and flexibility. It separates storage … Read more"
+    },
+    {
+      "title": "Snowflake key concepts and architecture",
+      "url": "https://docs.snowflake.com/en/user-guide/intro-key-concepts",
+      "snippet": "snowflake.com https://docs. snowflake .com › en › user-guide › intro-key-concepts Snowflake key concepts and architecture Snowflake’s data platform brings together data storage, processing, and analytic solutions that are faster, easier to use, and far more … Read more"
+    },
+    {
+      "title": "Snowflake Trial",
+      "url": "https://signup.snowflake.com/",
+      "snippet": "snowflake.com https://signup. snowflake .com Snowflake Trial Snowflake AI Data Cloud Build enterprise-grade AI and apps on your data in minutes Gain immediate access to the AI Data Cloud … Read more"
+    },
+    {
+      "title": "Snowflake",
+      "url": "https://app.snowflake.com/marketplace",
+      "snippet": "snowflake.com https://app. snowflake .com › marketplace Snowflake Connect external sources within minutes and extend what’s possible with Snowflake through apps and agentic products."
+    },
+    {
+      "title": "Snowflake Tutorial - Online Tutorials Library",
+      "url": "https://www.tutorialspoint.com/snowflake/index.htm",
+      "snippet": "tutorialspoint.com https:// www.tutorialspoint.com › snowflake Snowflake Tutorial - Online Tutorials Library This is a brief tutorial that introduces the readers to the basic features and usage of Snowflake. The tutorial will guide the users on … Read more"
+    }
+  ],
+  "retrievals": [
+    {
+      "url": "https://docs.snowflake.com/en/",
+      "status": 200,
+      "text": "Snowflake Documentation For AI agents: documentation index at /llms.txt — fetch to discover all Snowflake documentation pages. Markdown version of this page: /en/.md Snowflake Documentation Streamline your Snowflake journey with comprehensive documentation and learning resources Featured Resources Dive into our top picks user guide Connecting to Snowflake Learn about the applications and tools that you can use to access Snowflake user guide Working with Virtual Warehouses Learn how to create and manage warehouses, which are used to process queries user guide Databases, Tables and Views Learn how to create and manage databases, tables, and views for storing and accessing your data user guide Load Data into Snowflake Learn about the different options for getting data into Snowflake and setting up a pipeline to transform your data Discover the Most Popular Resources Getting Started Basic information and instructions for first-time users of Snowflake. Getting a Trial Account Snowflake in 20 Minutes Key Concepts and Architecture Connecting to Snowflake See all User Guides Instructions on performing various Snowflake operations. Understanding & Using Time Travel Working with Temporary and Transient Tables Working with Materialized Views About Snowflake Openflow See all Developer Guides Write applications that extend Snowflake, act as a client, or act as an integrating component. Snowflake Native App Framework Snowpark API User-defined Functions (UDFs) and Stored Procedures Drivers See all Reference Reference for SQL data types, SQL commands, SQL functions, SQL classes, scripting, views, and other areas SQL Data Types SQL Commands SQL Functions SQL Classes Snowflake Scripting See all Tutorials Tutorials to help you learn the basics of using Snowflake Snowflake in 20 Minutes Bulk Loading from a Local File System Bulk Loading from Amazon S3 Using COPY See all Releases Overview of the new features, enhancements, and important fixes introduced in the most recent releases of Snowflake. New features Behavior change log Snowflake connector, driver, and library monthly releases See all What's New New features, enhancements, and important behavior changes introduced in the most recent Snowflake releases. See all Recent Release Highlights preview On September 30th, 2025 Declarative Sharing - Preview Snowflake is pleased to announce the preview of Declarative Sharing. Declarative Sharing in the Snowflake Native App Framework enables providers to share and sell data products, and to enhance those apps by including notebooks that help Snowflake consumers visualize data. preview On June 2nd, 2025 Snowpipe Streaming with High-Performance Architecture Snowflake is pleased to announce the preview of the Snowpipe Streaming high-performance architecture. This next-generation implementation delivers significantly enhanced throughput and optimized streaming performance with a predictable, throughput-based pricing model. generally available On May 5th, 2025 Release channels for Snowflake Native Apps generally available On May 23rd, 2025 Search optimization: Support for Apache Iceberg™ tables generally available On May 23rd, 2025 Query Acceleration Service: Support for Apache Iceberg™ tables generally available On May 23rd, 2025 Triggered tasks: Support for streams hosted on directory tables and data shares Announcements Stay informed and discover the latest updates, improvements, and enhancements Behavior Changes Behavior changes that may impact your usage Performance Improvements All features that can improve performance and make queries run faster"
+    }
+  ],
+  "errors": [],
+  "first_pass": {
+    "auth": "unknown",
+    "credential_gate": "unknown",
+    "api_surface": "unknown",
+    "official_mcp": "unknown",
+    "composio_toolkit": "unknown",
+    "verdict": "unclear",
+    "blocker": "Claim-specific documentation not assessed",
+    "next_action": "Review official documentation and validate each claim",
+    "confidence": "unresolved"
+  },
+  "validation_errors": [
+    "All claim fields require source-specific review"
+  ]
+}

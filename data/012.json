@@ -1,0 +1,80 @@
+{
+  "app": {
+    "number": 12,
+    "name": "Intercom",
+    "category": "Support and Helpdesk",
+    "hint": "intercom.com"
+  },
+  "checked_at": "2026-11-23T13:41:51.711190+00:00",
+  "query": "Intercom developer API authentication documentation",
+  "search_results": [
+    {
+      "title": "Détection d'IA - Vérificateur d'IA de confiance pour ... - ZeroGPT",
+      "url": "https://www.zerogpt.com/fr/",
+      "snippet": "zerogpt.com https://www.zerogpt.com › fr Détection d'IA - Vérificateur d'IA de confiance pour ... - ZeroGPT Détection de contenu IA et détecteur ChatGPT, une manière simple avec une grande précision. Vérificateur IA & Détecteur IA gratuit … Read more"
+    },
+    {
+      "title": "ZeroGPT",
+      "url": "https://www.zerogpt.com/",
+      "snippet": "zerogpt.com https://www.zerogpt.com ZeroGPT ZeroGPT is now available on WhatsApp and Telegram. Chat With ZeroGPT: Advanced ChatBot, Detect AI, Summarize, Paraphrase, … Read more"
+    },
+    {
+      "title": "ZeroGPT Business API - Swagger UI",
+      "url": "https://api.zerogpt.com/docs",
+      "snippet": "zerogpt.com https://api.zerogpt.com › docs ZeroGPT Business API - Swagger UI ZeroGPT Business API provides a paid service for integrating AI detection and other tools into custom solutions for businesses."
+    },
+    {
+      "title": "ZeroGPT",
+      "url": "https://api.zerogpt.com/openapi.json",
+      "snippet": "zerogpt.com https://api.zerogpt.com › openapi.json ZeroGPT {\"openapi\":\"3.1.0\",\"info\":{\"title\":\"ZeroGPT Business API\",\"description\":\"API Description for Business Users of ZeroGPT. This is a paid … Read more"
+    },
+    {
+      "title": "ZeroGPT - Preços",
+      "url": "https://www.zerogpt.com/pt/pricing",
+      "snippet": "zerogpt.com https://www.zerogpt.com › pt › pricing ZeroGPT - Preços Com o ZeroGPT, você pode: Detectar texto gerado por IA em nível de documento, parágrafo e frase. Obter probabilidades e … Read more"
+    },
+    {
+      "title": "ZeroGPT - Minha Conta do Detector Open AI",
+      "url": "https://www.zerogpt.com/pt/my-account",
+      "snippet": "zerogpt.com https://www.zerogpt.com › pt › my-account ZeroGPT - Minha Conta do Detector Open AI ZeroGPT - Detecção de IA, verificação de plágio e ferramentas de escrita. Confiado por milhões de usuários em todo o mundo."
+    },
+    {
+      "title": "Free Instant AI Background Remover with ZeroGPT",
+      "url": "https://www.zerogpt.com/background-remover",
+      "snippet": "zerogpt.com https://www.zerogpt.com › background-remover Free Instant AI Background Remover with ZeroGPT Why Choose ZeroGPT for Background Removal? Instant AI Background Removal Online Remove backgrounds from photos … Read more"
+    },
+    {
+      "title": "ZeroGPT - Chat GPT, Open AI and AI text detector Free Tool",
+      "url": "https://www.zerogpt.com/welcome",
+      "snippet": "zerogpt.com https://www.zerogpt.com › welcome ZeroGPT - Chat GPT, Open AI and AI text detector Free Tool With ZeroGPT, you can: Detect AI-generated text at a document, paragraph, and sentence level. Get probabilities and detailed … Read more"
+    },
+    {
+      "title": "Humanizing AI: Free Tool to Humanize AI Generated Text - zerogpt.com",
+      "url": "https://www.zerogpt.com/ai-humanizer",
+      "snippet": "zerogpt.com https://www.zerogpt.com › ai-humanizer Humanizing AI: Free Tool to Humanize AI Generated Text - zerogpt.com ZeroGPT’s free AI Humanizer is the simplest way to transform AI-generated text from ChatGPT, Gemini, Claude, DeepSeek, and … Read more"
+    },
+    {
+      "title": "Humaniser l’IA : Outil gratuit pour humaniser le texte généré par l’IA",
+      "url": "https://www.zerogpt.com/fr/ai-humanizer",
+      "snippet": "zerogpt.com https://www.zerogpt.com › fr › ai-humanizer Humaniser l’IA : Outil gratuit pour humaniser le texte généré par l’IA Humanisez le texte généré par l’IA avec notre humaniseur gratuit. Notre IA d’humanisation transforme rapidement le texte IA en … Read more"
+    }
+  ],
+  "retrievals": [],
+  "errors": [
+    "No candidate documentation on hint domain found; review required"
+  ],
+  "first_pass": {
+    "auth": "unknown",
+    "credential_gate": "unknown",
+    "api_surface": "unknown",
+    "official_mcp": "unknown",
+    "composio_toolkit": "unknown",
+    "verdict": "unclear",
+    "blocker": "Claim-specific documentation not assessed",
+    "next_action": "Review official documentation and validate each claim",
+    "confidence": "unresolved"
+  },
+  "validation_errors": [
+    "All claim fields require source-specific review"
+  ]
+}

@@ -1,0 +1,84 @@
+{
+  "app": {
+    "number": 3,
+    "name": "Pipedrive",
+    "category": "CRM and Sales",
+    "hint": "pipedrive.com"
+  },
+  "checked_at": "2026-11-23T13:41:50.792990+00:00",
+  "query": "Pipedrive developer API authentication documentation",
+  "search_results": [
+    {
+      "title": "Sales CRM & Pipeline Management Software | Pipedrive",
+      "url": "https://www.pipedrive.com/",
+      "snippet": "pipedrive.com https://www. pipedrive .com Sales CRM & Pipeline Management Software | Pipedrive Pipedrive lets you track your sales pipeline, optimize leads, manage deals with AI and automate your entire sales process so you … Read more"
+    },
+    {
+      "title": "Pipedrive",
+      "url": "https://partners.pipedrive.com/login",
+      "snippet": "pipedrive.com https://partners. pipedrive .com › login Pipedrive Sign in to your account Or register as a partner"
+    },
+    {
+      "title": "Best CRM Products From Pipedrive",
+      "url": "https://www.pipedrive.com/en/products",
+      "snippet": "pipedrive.com https://www. pipedrive .com › en › products Best CRM Products From Pipedrive We’ve developed Pipedrive’s customer relationship management (CRM) products and features around activity-based selling. We … Read more Reviews: 1.6K"
+    },
+    {
+      "title": "Pipedrive - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Pipedrive",
+      "snippet": "wikipedia.org https:// en.wikipedia.org › wiki › Pipedrive Pipedrive - Wikipedia Pipedrive is a private, cloud-based customer relationship management (CRM) software company founded in Estonia in 2010 and … Read more"
+    },
+    {
+      "title": "Conversation Intelligence Software for Sales | Nova | Pipedrive",
+      "url": "https://www.pipedrive.com/en/nova",
+      "snippet": "pipedrive.com https://www. pipedrive .com › en › nova Conversation Intelligence Software for Sales | Nova | Pipedrive Scale your sales with Pipedrive Nova. Use Conversational Intelligence to automate CRM data entry, detect deal signals and draft … Read more"
+    },
+    {
+      "title": "Logging into Pipedrive using Google",
+      "url": "https://support.pipedrive.com/en/article/logging-into-pipedrive-using-google",
+      "snippet": "pipedrive.com https://support. pipedrive .com › en › article › logging-into- pipedrive -using... Logging into Pipedrive using Google Sep 2, 2026 · Discover how to log into Pipedrive using Google. Enable seamless authentication, improve security and simplify your … Read more"
+    },
+    {
+      "title": "CRM Pricing Plans | Affordable CRM Software Costs | Pipedrive",
+      "url": "https://www.pipedrive.com/en/pricing",
+      "snippet": "pipedrive.com https://www. pipedrive .com › en › pricing CRM Pricing Plans | Affordable CRM Software Costs | Pipedrive To find the best CRM software prices, research and compare CRM providers based on their pricing plans and features. Pipedrive … Read more"
+    },
+    {
+      "title": "CRM Features - Pipedrive",
+      "url": "https://www.pipedrive.com/en/crm/features",
+      "snippet": "pipedrive.com https://www. pipedrive .com › en › crm › features CRM Features - Pipedrive A modern CRM should include contact management, sales automation, AI-driven insights, and visual reporting to act as a single … Read more"
+    },
+    {
+      "title": "Free trial of Pipedrive - sign up",
+      "url": "https://www.pipedrive.com/en/register",
+      "snippet": "pipedrive.com https://www. pipedrive .com › en › register Free trial of Pipedrive - sign up Start with access to Pipedrive CRM plus the premium LeadBooster, Smart Docs and Projects Features (subject to supplemental … Read more"
+    },
+    {
+      "title": "Pipedrive Developers Corner | Pipedrive API sandbox",
+      "url": "https://developers.pipedrive.com/",
+      "snippet": "pipedrive.com https://developers. pipedrive .com Pipedrive Developers Corner | Pipedrive API sandbox Pipedrive is an amazing tool! Their developer API, well-documented API reference page and easy use of webhooks allow developers … Read more"
+    }
+  ],
+  "retrievals": [
+    {
+      "url": "https://developers.pipedrive.com/",
+      "status": 200,
+      "text": "Pipedrive Developers Corner | Pipedrive API sandbox Developers' Corner Easily build integrations with our API and developer platform to reach over 100,000 companies through the Pipedrive Marketplace Build apps & integrations Create a test environment Sign up for a Sandbox Account today to begin experimenting and developing in a risk free environment E-mail First Name Sign up for a Sandbox account By signing up, you accept our Terms of Service , Developer Agreement and Privacy Notice Would you like to subscribe to our Changelog updates? We love working with Pipedrive! The documentation is great, their communication is proactive and the Pipedrive Marketplace exposes us to an SMB audience who is actively looking for solutions. Andrus Purde, Co-founder/CEO of Outfunnel Pipedrive is an amazing tool! Their developer API, well-documented API reference page and easy use of webhooks allow developers to easily build solutions in the Pipedrive Developer Platform. Kelly Bernardino, Software Engineer at Gamifier Developing our Pipedrive integration was a breeze! Their documentation, along with the support we received, is excellent. Pipedrive is one of our best integrations, and we've made many. Ales Kocjancic, VP of Engineering at Plecto Pipedrive API clients Kick-start your development by using one of the many API clients available on GitHub. Here are some of the most popular repositories. OFFICIAL client-nodejs Javascript 233 88 OFFICIAL client-php PHP 63 64 COMMUNITY pipedrive PHP 172 59 COMMUNITY python-pipedrive Python 102 44 COMMUNITY pipedrive-dotnet .NET 38 49 COMMUNITY pipedrive.rb Ruby 35 53 Example Apps Hit the ground running by checking out some of our example apps and getting yourself inspired! create-pipedrive-app Create a Pipedrive app with a single command 4 3 pipedrive-laravel A Pipedrive App boilerplate with Laravel 12 2 example-apps Example apps for Pipedrive Marketplace 14 20 Want to stay in the loop? Your email Subscribe We promise to only send you relevant Pipedrive developer news, updates and content. You may unsubscribe anytime using the unsubscribe link in our emails. For more information, please see our privacy notice ."
+    }
+  ],
+  "errors": [],
+  "first_pass": {
+    "auth": "unknown",
+    "credential_gate": "unknown",
+    "api_surface": "unknown",
+    "official_mcp": "unknown",
+    "composio_toolkit": "unknown",
+    "verdict": "unclear",
+    "blocker": "Claim-specific documentation not assessed",
+    "next_action": "Review official documentation and validate each claim",
+    "confidence": "unresolved"
+  },
+  "validation_errors": [
+    "All claim fields require source-specific review"
+  ]
+}

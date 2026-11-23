@@ -1,0 +1,80 @@
+{
+  "app": {
+    "number": 100,
+    "name": "Grain",
+    "category": "AI, Research and Media-native",
+    "hint": "grain.com (meeting notes)"
+  },
+  "checked_at": "2026-11-23T13:42:09.070977+00:00",
+  "query": "Grain developer API authentication documentation",
+  "search_results": [
+    {
+      "title": "Grain - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Grain",
+      "snippet": "wikipedia.org https:// en.wikipedia.org › wiki › Grain Grain - Wikipedia A grain is a small, hard, dry fruit (caryopsis)–with or without an attached hull layer–harvested for human or animal consumption. [1] . …"
+    },
+    {
+      "title": "Types of Grains: 15 Common Grains Used in Cooking",
+      "url": "https://www.webstaurantstore.com/guide/1014/types-of-grains.html?msockid=36e0ef37f1d76bf83ef8f72df0916af9",
+      "snippet": "webstaurantstore.com https:// www.webstaurantstore.com › guide › types-of- grains .html Types of Grains: 15 Common Grains Used in Cooking Jan 12, 2026 · Grains are edible seeds from cereal plants, and they can be classified as either whole or refined. A whole grain …"
+    },
+    {
+      "title": "Igrain",
+      "url": "https://www.igrain.in/",
+      "snippet": "igrain.in https://www.i grain .in Igrain India's premier grain & agri commodity intelligence platform, trusted by traders, millers, and analysts nationwide."
+    },
+    {
+      "title": "Grain | The AI Notetaker Built for Growing Teams",
+      "url": "https://grain.com/",
+      "snippet": "grain.com https:// grain .com Grain | The AI Notetaker Built for Growing Teams Grain gives you accurate meeting summaries, account insights, and coaching suggestions in an easy-to-use product built for growing …"
+    },
+    {
+      "title": "Grain - Buy Grain Online at Best Prices In India | Flipkart.com",
+      "url": "https://www.flipkart.com/food-products/grain/pr?sid=eat,znz",
+      "snippet": "flipkart.com https:// www.flipkart.com › food-products › grain › pr Grain - Buy Grain Online at Best Prices In India | Flipkart.com 13 hours ago · Grain - Shop Grain at India's Best Online Shopping Store. Check Price and Buy Online. Free Shipping Cash on …"
+    },
+    {
+      "title": "GRAIN | English meaning - Cambridge Dictionary",
+      "url": "https://dictionary.cambridge.org/dictionary/english/grain",
+      "snippet": "cambridge.org https://dictionary.cambridge.org › dictionary › english › grain GRAIN | English meaning - Cambridge Dictionary GRAIN definition: 1. a seed or seeds from a plant, especially a plant like a grass such as rice or wheat: 2. a very…. Learn more."
+    },
+    {
+      "title": "GRAIN | grain .org",
+      "url": "https://grain.org/",
+      "snippet": "grain.org https:// grain .org GRAIN | grain .org Jul 30, 2026 · GRAIN is a small international non-profit organisation that works to support small farmers and social movements in …"
+    },
+    {
+      "title": "grain - अर्थ, मतलब, अनुवाद, उच्चारण",
+      "url": "https://www.shabdkosh.com/hi/dictionary/english-hindi/grain/grain-meaning-in-hindi",
+      "snippet": "shabdkosh.com https://www.shabdkosh.com › hi › dictionary › english-hindi › grain › grain ... grain - अर्थ, मतलब, अनुवाद, उच्चारण grain का अर्थ क्या है? grain का अर्थ, अनुवाद, उदाहरण, पर्यायवाची, विपरीत, परिभाषा और तुकांत शब्द। grain …"
+    },
+    {
+      "title": "GRAIN Definition & Meaning - Merriam-Webster",
+      "url": "https://www.merriam-webster.com/dictionary/grain",
+      "snippet": "merriam-webster.com https:// www.merriam-webster.com › dictionary › grain GRAIN Definition & Meaning - Merriam-Webster 1 day ago · The meaning of GRAIN is a single small hard seed. How to use grain in a sentence."
+    },
+    {
+      "title": "Grain - Agriculture Dictionary",
+      "url": "https://agriculturedictionary.com/grain/",
+      "snippet": "agriculturedictionary.com https://agriculturedictionary.com › grain Grain - Agriculture Dictionary Sep 7, 2026 · Grain refers to the seeds of cereal crops such as wheat, rice, maize (corn), barley, oats, and sorghum that are …"
+    }
+  ],
+  "retrievals": [],
+  "errors": [
+    "No candidate documentation on hint domain found; review required"
+  ],
+  "first_pass": {
+    "auth": "unknown",
+    "credential_gate": "unknown",
+    "api_surface": "unknown",
+    "official_mcp": "unknown",
+    "composio_toolkit": "unknown",
+    "verdict": "unclear",
+    "blocker": "Claim-specific documentation not assessed",
+    "next_action": "Review official documentation and validate each claim",
+    "confidence": "unresolved"
+  },
+  "validation_errors": [
+    "All claim fields require source-specific review"
+  ]
+}

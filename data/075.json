@@ -1,0 +1,80 @@
+{
+  "app": {
+    "number": 75,
+    "name": "Asana",
+    "category": "Productivity and Project Management",
+    "hint": "developers.asana.com"
+  },
+  "checked_at": "2026-11-23T13:42:06.518370+00:00",
+  "query": "Asana developer API authentication documentation",
+  "search_results": [
+    {
+      "title": "Work & Project Management for Human-Agent Teams • Asana",
+      "url": "https://asana.com/",
+      "snippet": "asana.com https:// asana .com Work & Project Management for Human-Agent Teams • Asana Agentic Work Management brings together AI Teammates, AI Studio, Asana Dash, and MCP and AI Connectors — so your team …"
+    },
+    {
+      "title": "Log in - Asana",
+      "url": "https://app.asana.com/-/login",
+      "snippet": "asana.com https://app. asana .com › login Log in - Asana Log in to Asana to manage your work, projects, and tasks."
+    },
+    {
+      "title": "Download the Asana App for Mobile and Desktop • Asana",
+      "url": "https://asana.com/download",
+      "snippet": "asana.com https:// asana .com › download Download the Asana App for Mobile and Desktop • Asana Download the Asana desktop or mobile app with support for Windows, Mac, iPhone, iPad, or Android devices."
+    },
+    {
+      "title": "Login - Asana",
+      "url": "https://events.asana.com/v0/accounts/login/",
+      "snippet": "asana.com https://events. asana .com › accounts › login Login - Asana Join our interactive trainings, meetups, and webinars—available online and in person. Explore opportunities to connect, learn, and …"
+    },
+    {
+      "title": "Asana , Inc. - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Asana,_Inc.",
+      "snippet": "wikipedia.org https:// en.wikipedia.org › wiki › Asana ,_Inc. Asana , Inc. - Wikipedia Asana, Inc. (/ əˈsɑːnə / or / ˈɑːsənə /) is an American software company based in San Francisco, California whose flagship Asana …"
+    },
+    {
+      "title": "Asana Academy",
+      "url": "https://academy.asana.com/",
+      "snippet": "asana.com https://academy. asana .com Asana Academy Erfahren Sie, wie Sie auf der erstklassigen Work-Management-Plattform von Asana Projekte erstellen, Aufgaben verwalten und …"
+    },
+    {
+      "title": "How Asana works: organize & track all your work | Help Center",
+      "url": "https://help.asana.com/s/article/how-asana-works?language=en_US",
+      "snippet": "asana.com https://help. asana .com › article › how- asana -works How Asana works: organize & track all your work | Help Center In this article, you’ll learn what's possible with Asana and understand how Asana is structured. Get started with a free Asana trial …"
+    },
+    {
+      "title": "Asana Work Management - Features, Uses & Product • Asana",
+      "url": "https://asana.com/product",
+      "snippet": "asana.com https:// asana .com › product Asana Work Management - Features, Uses & Product • Asana Asana is a leader in collaborative project management software for teams, no matter their size or locational distribution. Asana helps …"
+    },
+    {
+      "title": "Create Account - Try Asana for free • Asana",
+      "url": "https://asana.com/create-account",
+      "snippet": "asana.com https:// asana .com › create Create Account - Try Asana for free • Asana Easily organize and plan workflows, projects, and more, so you can keep your team's work on schedule. Start using Asana as your …"
+    },
+    {
+      "title": "Browse all courses - Asana Academy",
+      "url": "https://academy.asana.com/page/all-courses",
+      "snippet": "asana.com https://academy. asana .com › page › all-courses Browse all courses - Asana Academy Learn how Asana brings people and AI together to help you and your team tackle critical work. Build and manage projects, organize …"
+    }
+  ],
+  "retrievals": [],
+  "errors": [
+    "No candidate documentation on hint domain found; review required"
+  ],
+  "first_pass": {
+    "auth": "unknown",
+    "credential_gate": "unknown",
+    "api_surface": "unknown",
+    "official_mcp": "unknown",
+    "composio_toolkit": "unknown",
+    "verdict": "unclear",
+    "blocker": "Claim-specific documentation not assessed",
+    "next_action": "Review official documentation and validate each claim",
+    "confidence": "unresolved"
+  },
+  "validation_errors": [
+    "All claim fields require source-specific review"
+  ]
+}

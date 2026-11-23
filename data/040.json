@@ -1,0 +1,80 @@
+{
+  "app": {
+    "number": 40,
+    "name": "SendGrid",
+    "category": "Marketing, Ads, Email and Social",
+    "hint": "sendgrid.com"
+  },
+  "checked_at": "2026-11-23T13:42:00.215721+00:00",
+  "query": "SendGrid developer API authentication documentation",
+  "search_results": [
+    {
+      "title": "SendGrid Email API and Email Marketing Campaigns | Twilio",
+      "url": "https://sendgrid.com/en-us",
+      "snippet": "sendgrid.com https:// sendgrid .com SendGrid Email API and Email Marketing Campaigns | Twilio May 18, 2026 · SendGrid's trusted email API and marketing campaigns platform is now available through Twilio.com."
+    },
+    {
+      "title": "SendGrid - login",
+      "url": "https://app.sendgrid.com/",
+      "snippet": "sendgrid.com https://app. sendgrid .com SendGrid - login Web site for login SendGrid Username (this may be your email address)"
+    },
+    {
+      "title": "login - SendGrid",
+      "url": "https://login.sendgrid.com/login/identifier",
+      "snippet": "sendgrid.com https://login. sendgrid .com login - SendGrid Web site for login SendGrid Username (this may be your email address)"
+    },
+    {
+      "title": "New Account | SendGrid",
+      "url": "https://signup.sendgrid.com/%EF%BC%89",
+      "snippet": "sendgrid.com https://signup. sendgrid .com New Account | SendGrid New Account | SendGrid"
+    },
+    {
+      "title": "SendGrid - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/SendGrid",
+      "snippet": "wikipedia.org https:// en.wikipedia.org › wiki › SendGrid SendGrid - Wikipedia Twilio SendGrid, commonly known as SendGrid, is an American communication platform for transactional and marketing email …"
+    },
+    {
+      "title": "login - SendGrid",
+      "url": "https://login.sendgrid.com/ssologin",
+      "snippet": "sendgrid.com https://login. sendgrid .com › ssologin login - SendGrid Web site for login SendGrid"
+    },
+    {
+      "title": "SendGrid",
+      "url": "https://mc.sendgrid.com/",
+      "snippet": "sendgrid.com https://mc. sendgrid .com SendGrid SendGrid ... SendGrid"
+    },
+    {
+      "title": "Email API Pricing | Twilio",
+      "url": "https://www.twilio.com/en-us/products/email-api/pricing",
+      "snippet": "twilio.com https://www.twilio.com › en-us › products › email-api › pricing Email API Pricing | Twilio May 18, 2026 · Get started with zero commitment Discover the power of Twilio SendGrid with no upfront cost. Start with our free plan …"
+    },
+    {
+      "title": "SendGrid Docs - Twilio",
+      "url": "https://www.twilio.com/docs/sendgrid",
+      "snippet": "twilio.com https://www.twilio.com › docs › sendgrid SendGrid Docs - Twilio Learn to send transactional and marketing emails at scale with the platform that offers a 99% deliverability rate. From quickstarts and …"
+    },
+    {
+      "title": "login - app. sendgrid .com",
+      "url": "https://app.sendgrid.com/settings/auth",
+      "snippet": "sendgrid.com https://app. sendgrid .com › settings › auth login - app. sendgrid .com Web site for login SendGrid Username (this may be your email address)"
+    }
+  ],
+  "retrievals": [],
+  "errors": [
+    "No candidate documentation on hint domain found; review required"
+  ],
+  "first_pass": {
+    "auth": "unknown",
+    "credential_gate": "unknown",
+    "api_surface": "unknown",
+    "official_mcp": "unknown",
+    "composio_toolkit": "unknown",
+    "verdict": "unclear",
+    "blocker": "Claim-specific documentation not assessed",
+    "next_action": "Review official documentation and validate each claim",
+    "confidence": "unresolved"
+  },
+  "validation_errors": [
+    "All claim fields require source-specific review"
+  ]
+}

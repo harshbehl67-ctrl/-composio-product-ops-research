@@ -1,0 +1,80 @@
+{
+  "app": {
+    "number": 27,
+    "name": "Telegram",
+    "category": "Communications and Messaging",
+    "hint": "core.telegram.org"
+  },
+  "checked_at": "2026-11-23T13:41:56.787388+00:00",
+  "query": "Telegram developer API authentication documentation",
+  "search_results": [
+    {
+      "title": "Telegram Messenger",
+      "url": "https://telegram.org/",
+      "snippet": "telegram.org https:// telegram .org Telegram Messenger Rich Text Editor, Communities, Ephemeral Messages in Groups, 350 Million GIFs Introducing a rich text editor to format and …"
+    },
+    {
+      "title": "Telegram Desktop",
+      "url": "https://desktop.telegram.org/",
+      "snippet": "telegram.org https://desktop. telegram .org Telegram Desktop Get Telegram for Windows x64 Portable version Get Telegram for macOS Mac App Store Get Telegram for Linux x64 Flatpak • Snap …"
+    },
+    {
+      "title": "Telegram Web",
+      "url": "https://web.telegram.org/js/locales/en-us.json",
+      "snippet": "telegram.org https://web. telegram .org › js › locales › en-us.json Telegram Web To sign up for Telegram, use one of our {apps-link: mobile apps}.\", \"login_incorrect_number\": \"Incorrect phone number\", …"
+    },
+    {
+      "title": "Telegram A Desktop",
+      "url": "https://web.telegram.org/a/get/",
+      "snippet": "telegram.org https://web. telegram .org › get Telegram A Desktop Access Telegram on your desktop, synced with your mobile, for seamless messaging and communication."
+    },
+    {
+      "title": "Telegram : View @desktop",
+      "url": "https://telegram.me/desktop",
+      "snippet": "telegram.me https:// telegram .me › desktop Telegram : View @desktop The official Telegram Desktop channel, firsthand information from the developer. https://desktop.telegram.org"
+    },
+    {
+      "title": "Telegram Applications",
+      "url": "https://telegram.org/apps",
+      "snippet": "telegram.org https:// telegram .org › apps Telegram Applications Telegram apps are open source and support reproducible builds. Anyone can independently verify that Telegram apps you download …"
+    },
+    {
+      "title": "Telegram - Apps on Google Play",
+      "url": "https://play.google.com/store/apps/details?id=org.telegram.messenger&hl=en",
+      "snippet": "google.com https:// play.google.com › store › apps › details Telegram - Apps on Google Play Telegram is the perfect tool for hosting online communities and coordinating teamwork. RELIABLE: Built to deliver your messages …"
+    },
+    {
+      "title": "Support - Telegram",
+      "url": "https://telegram.org/support",
+      "snippet": "telegram.org https:// telegram .org › support Support - Telegram Telegram is a cloud-based mobile and desktop messaging app with a focus on security and speed."
+    },
+    {
+      "title": "Telegram Web",
+      "url": "https://web.telegram.org/k/pageSignIn-c5a80999.js.map",
+      "snippet": "telegram.org https://web. telegram .org Telegram Web {\"version\":3,\"mappings\":\"siBAgCA,IAAIA,EAA6B,KAAMC,EAEvC,MAAMC,EAAe,IAAM,CAoBnB,QAAe,SAAS,cAAc,KAAK,EACpCC,YAAU,IAAI,eAAe,EAE1C,IAAIC,EAAkCC,EAChC,QAAoB,IAAIC,EAAkB ..."
+    },
+    {
+      "title": "Telegram - Download",
+      "url": "https://telegram.en.softonic.com/",
+      "snippet": "softonic.com https:// telegram .en.softonic.com Telegram - Download Nov 11, 2026 · Telegram retains its minimalist interface keeps things sleek and clean; it’s packed with features that appeal to both …"
+    }
+  ],
+  "retrievals": [],
+  "errors": [
+    "No candidate documentation on hint domain found; review required"
+  ],
+  "first_pass": {
+    "auth": "unknown",
+    "credential_gate": "unknown",
+    "api_surface": "unknown",
+    "official_mcp": "unknown",
+    "composio_toolkit": "unknown",
+    "verdict": "unclear",
+    "blocker": "Claim-specific documentation not assessed",
+    "next_action": "Review official documentation and validate each claim",
+    "confidence": "unresolved"
+  },
+  "validation_errors": [
+    "All claim fields require source-specific review"
+  ]
+}

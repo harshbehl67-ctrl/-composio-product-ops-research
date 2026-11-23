@@ -1,0 +1,80 @@
+{
+  "app": {
+    "number": 54,
+    "name": "MrScraper",
+    "category": "Data, SEO and Scraping",
+    "hint": "docs.mrscraper.com"
+  },
+  "checked_at": "2026-11-23T13:42:03.008299+00:00",
+  "query": "MrScraper developer API authentication documentation",
+  "search_results": [
+    {
+      "title": "Outlook",
+      "url": "https://www.outlook.com/owa/cridf.iledefrance.fr",
+      "snippet": "outlook.com https://www.outlook.com › owa › cridf.iledefrance.fr Outlook Outlook"
+    },
+    {
+      "title": "Outlook",
+      "url": "https://www.outlook.com/owa/VirginiaWestern.mail.onmicrosoft.com",
+      "snippet": "outlook.com https://www.outlook.com › owa › VirginiaWestern.mail.onmicrosoft.com Outlook Outlook"
+    },
+    {
+      "title": "Outlook",
+      "url": "https://www.outlook.com/owa/alumno.uned.es",
+      "snippet": "outlook.com https://www.outlook.com › owa › alumno.uned.es Outlook Outlook"
+    },
+    {
+      "title": "Outlook",
+      "url": "https://outlook.com/owa/queensu.ca",
+      "snippet": "outlook.com https://outlook.com › owa › queensu.ca Outlook Outlook"
+    },
+    {
+      "title": "Outlook",
+      "url": "https://www.outlook.com/owa/ad.ucla.edu",
+      "snippet": "outlook.com https://www.outlook.com › owa › ad.ucla.edu Outlook Outlook"
+    },
+    {
+      "title": "Outlook",
+      "url": "https://www.outlook.com/owa/uninsubria.it/",
+      "snippet": "outlook.com https://www.outlook.com › owa › uninsubria.it Outlook Outlook"
+    },
+    {
+      "title": "Outlook",
+      "url": "https://www.outlook.com/bharatividyapeeth.edu",
+      "snippet": "outlook.com https://www.outlook.com › bharatividyapeeth.edu Outlook Outlook"
+    },
+    {
+      "title": "Outlook",
+      "url": "https://www.outlook.com/moe.om",
+      "snippet": "outlook.com https://www.outlook.com › moe.om Outlook Outlook"
+    },
+    {
+      "title": "Outlook",
+      "url": "https://outlook.com/owa/som.umaryland.edu/",
+      "snippet": "outlook.com https://outlook.com › owa › som.umaryland.edu Outlook Outlook"
+    },
+    {
+      "title": "Outlook",
+      "url": "https://www.outlook.com/owa/albany.k12.ny.us",
+      "snippet": "outlook.com https://www.outlook.com › owa Outlook Outlook"
+    }
+  ],
+  "retrievals": [],
+  "errors": [
+    "No candidate documentation on hint domain found; review required"
+  ],
+  "first_pass": {
+    "auth": "unknown",
+    "credential_gate": "unknown",
+    "api_surface": "unknown",
+    "official_mcp": "unknown",
+    "composio_toolkit": "unknown",
+    "verdict": "unclear",
+    "blocker": "Claim-specific documentation not assessed",
+    "next_action": "Review official documentation and validate each claim",
+    "confidence": "unresolved"
+  },
+  "validation_errors": [
+    "All claim fields require source-specific review"
+  ]
+}

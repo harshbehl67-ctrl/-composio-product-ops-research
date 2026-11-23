@@ -1,0 +1,80 @@
+{
+  "app": {
+    "number": 92,
+    "name": "Otter AI",
+    "category": "AI, Research and Media-native",
+    "hint": "help.otter.ai (MCP server)"
+  },
+  "checked_at": "2026-11-23T13:42:08.126322+00:00",
+  "query": "Otter AI developer API authentication documentation",
+  "search_results": [
+    {
+      "title": "Otter Meeting Agent - AI Notetaker, Transcription, Insights",
+      "url": "https://otter.ai/?msockid=32f1ff2d29a765f21d5fe73728a1647f",
+      "snippet": "otter.ai https:// otter .ai Otter Meeting Agent - AI Notetaker, Transcription, Insights Whether you automatically send your AI Notetaker to meetings, record bot-free on desktop or Chrome, or capture on mobile, Otter … Read more"
+    },
+    {
+      "title": "Otter | Otter .ai",
+      "url": "https://otter.ai/author/otter?msockid=32f1ff2d29a765f21d5fe73728a1647f",
+      "snippet": "otter.ai https:// otter .ai › author › otter Otter | Otter .ai Otter.ai, the leading AI notetaker and conversational knowledge platform, today announced a new set of capabilities that brings its … Read more"
+    },
+    {
+      "title": "Otter - Wikipedia",
+      "url": "https://en.m.wikipedia.org/wiki/Otter",
+      "snippet": "wikipedia.org https://en.m. wikipedia.org › wiki › Otter Otter - Wikipedia Otters are distinguished by their long, slim bodies, powerful webbed feet for swimming, and their dense fur, which keeps them warm … Read more"
+    },
+    {
+      "title": "Sea otter - Wikipedia",
+      "url": "https://en.m.wikipedia.org/wiki/Sea_otter",
+      "snippet": "wikipedia.org https://en.m. wikipedia.org › wiki › Sea_otter Sea otter - Wikipedia The sea otter (Enhydra lutris) is a marine mammal native to the coasts of the northern and eastern North Pacific Ocean. Adult sea … Read more"
+    },
+    {
+      "title": "Otter AI Chat: AI that makes you more productive",
+      "url": "https://get.otter.ai/otter_ai_chat/",
+      "snippet": "otter.ai https://get. otter .ai › otter _ai_chat Otter AI Chat: AI that makes you more productive Connect Otter® to your Google or Microsoft calendar and it can automatically join and record your meetings on Zoom, Microsoft … Read more"
+    },
+    {
+      "title": "The AI Meeting Assistant from Otter .ai",
+      "url": "https://get.otter.ai/ai-meeting-agent/",
+      "snippet": "otter.ai https://get. otter .ai › ai-meeting-agent The AI Meeting Assistant from Otter .ai Connect Otter to your Google or Microsoft calendar and the AI Agent can automatically join and record your meetings on Zoom, … Read more"
+    },
+    {
+      "title": "Otter | Description, Habitat, Species, Distribution, Food, & Facts ...",
+      "url": "https://www.britannica.com/animal/otter",
+      "snippet": "britannica.com https:// www.britannica.com › animal › otter Otter | Description, Habitat, Species, Distribution, Food, & Facts ... Oct 28, 2026 · Two otter species are strictly marine: the sea otter (Enhydra lutris) of the Pacific Coast of North America and the much … Read more"
+    },
+    {
+      "title": "ऊदबिलाव - विकिपीडिया",
+      "url": "https://hi.m.wikipedia.org/wiki/%E0%A4%8A%E0%A4%A6%E0%A4%AC%E0%A4%BF%E0%A4%B2%E0%A4%BE%E0%A4%B5",
+      "snippet": "wikipedia.org https://hi.m.wikipedia.org › wiki › ऊदबिलाव ऊदबिलाव - विकिपीडिया ऊदबिलाव (अंग्रेज़ी: Otter) एक अर्धजलीय (जल और स्थल में समय बांटने वाला) स्तनधारी जानवर है। यह एक … Read more"
+    },
+    {
+      "title": "Otter Desktop App (Mac & Windows) – Help Center",
+      "url": "https://help.otter.ai/hc/en-us/articles/35973988280215-Otter-Desktop-App-Mac-Windows",
+      "snippet": "otter.ai https://help. otter .ai › hc › en-us › articles Otter Desktop App (Mac & Windows) – Help Center Use this guide to install Otter Desktop, record meetings without a bot, configure desktop settings, and troubleshoot recording issues. … Read more"
+    },
+    {
+      "title": "Otters - Types, Size, Habitat, Diet, Lifespan, Predators, & Pictures",
+      "url": "https://animalfact.com/otters/",
+      "snippet": "animalfact.com https://animalfact.com › otters Otters - Types, Size, Habitat, Diet, Lifespan, Predators, & Pictures Jul 10, 2026 · An otter refers to a semiaquatic carnivorous mammal of the subfamily Lutrinae under Mustelidae, a family that also … Read more"
+    }
+  ],
+  "retrievals": [],
+  "errors": [
+    "No candidate documentation on hint domain found; review required"
+  ],
+  "first_pass": {
+    "auth": "unknown",
+    "credential_gate": "unknown",
+    "api_surface": "unknown",
+    "official_mcp": "unknown",
+    "composio_toolkit": "unknown",
+    "verdict": "unclear",
+    "blocker": "Claim-specific documentation not assessed",
+    "next_action": "Review official documentation and validate each claim",
+    "confidence": "unresolved"
+  },
+  "validation_errors": [
+    "All claim fields require source-specific review"
+  ]
+}

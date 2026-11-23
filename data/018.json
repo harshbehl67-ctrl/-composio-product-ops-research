@@ -1,0 +1,80 @@
+{
+  "app": {
+    "number": 18,
+    "name": "Help Scout",
+    "category": "Support and Helpdesk",
+    "hint": "helpscout.com"
+  },
+  "checked_at": "2026-11-23T13:41:53.542015+00:00",
+  "query": "Help Scout developer API authentication documentation",
+  "search_results": [
+    {
+      "title": "Google Help",
+      "url": "https://support.google.com/?hl=en",
+      "snippet": "google.com https:// support.google.com Google Help How can we help you? ... Google Chrome Google Account YouTube Gmail Google Play Google Search Google AdSense Gemini … Read more"
+    },
+    {
+      "title": "How to get help in Windows | Microsoft Support",
+      "url": "https://support.microsoft.com/en-us/windows/experience/how-to-get-help-in-windows",
+      "snippet": "microsoft.com https:// support.microsoft.com › en-us › windows › experience › how-to-get- h … How to get help in Windows | Microsoft Support Here are a few different ways to find help for Windows Search for help - Enter a question or keywords in the search box on the … Read more"
+    },
+    {
+      "title": "Help | National Portal of India",
+      "url": "https://www.india.gov.in/help",
+      "snippet": "india.gov.in https://www.india.gov.in › help Help | National Portal of India 6 days ago · Help Are you finding it difficult to access/navigate through the content/pages of this Portal? This section attempts to help … Read more"
+    },
+    {
+      "title": "Help ! - Wikipedia",
+      "url": "https://en.m.wikipedia.org/wiki/Help!",
+      "snippet": "wikipedia.org https://en.m. wikipedia.org › wiki › Help ! Help ! - Wikipedia In the US, Help! marked the start of artistic recognition for the Beatles from mainstream critics, including comparisons to the … Read more"
+    },
+    {
+      "title": "About Get Help | Microsoft Support",
+      "url": "https://support.microsoft.com/en-us/support/get-help/about-get-help",
+      "snippet": "microsoft.com https:// support.microsoft.com › en-us › support › get- help › about-get- help About Get Help | Microsoft Support The Windows Get Help app is a centralized hub for accessing a wide range of resources, including tutorials, FAQs, community … Read more"
+    },
+    {
+      "title": "Help - Wikipedia",
+      "url": "https://en.m.wikipedia.org/wiki/Help",
+      "snippet": "wikipedia.org https://en.m. wikipedia.org › wiki › Help Help - Wikipedia This disambiguation page lists articles associated with the title Help. If an internal link incorrectly led you here, you may wish to … Read more"
+    },
+    {
+      "title": "HELP | English meaning - Cambridge Dictionary",
+      "url": "https://dictionary.cambridge.org/dictionary/english/help",
+      "snippet": "cambridge.org https://dictionary.cambridge.org › dictionary › english › help HELP | English meaning - Cambridge Dictionary HELP definition: 1. to make it possible or easier for someone to do something, by doing part of the work yourself or…. Learn more."
+    },
+    {
+      "title": "Windows Help & Support: Find Quick Answers & Helpful Resources ...",
+      "url": "https://www.microsoft.com/en-us/windows/help-and-support?msockid=390783b206d560142fa99ba80708618d",
+      "snippet": "microsoft.com https:// www.microsoft.com › en-us › windows › help -and-support Windows Help & Support: Find Quick Answers & Helpful Resources ... Find the Windows help and support you need. From account setup to device support, search for quick answers and helpful resources … Read more"
+    },
+    {
+      "title": "Gmail Help",
+      "url": "https://support.google.com/mail/?hl=en",
+      "snippet": "google.com https:// support.google.com › mail Gmail Help Official Gmail Help Center where you can find tips and tutorials on using Gmail and other answers to frequently asked questions."
+    },
+    {
+      "title": "Official HP ® Support",
+      "url": "https://support.hp.com/in-en",
+      "snippet": "hp.com https://support. hp .com › in-en Official HP ® Support Find support and customer service options to help with your HP products including the latest drivers and troubleshooting articles."
+    }
+  ],
+  "retrievals": [],
+  "errors": [
+    "No candidate documentation on hint domain found; review required"
+  ],
+  "first_pass": {
+    "auth": "unknown",
+    "credential_gate": "unknown",
+    "api_surface": "unknown",
+    "official_mcp": "unknown",
+    "composio_toolkit": "unknown",
+    "verdict": "unclear",
+    "blocker": "Claim-specific documentation not assessed",
+    "next_action": "Review official documentation and validate each claim",
+    "confidence": "unresolved"
+  },
+  "validation_errors": [
+    "All claim fields require source-specific review"
+  ]
+}

@@ -1,0 +1,80 @@
+{
+  "app": {
+    "number": 91,
+    "name": "NotebookLM",
+    "category": "AI, Research and Media-native",
+    "hint": "cloud.google.com/gemini (Enterprise API)"
+  },
+  "checked_at": "2026-11-23T13:42:07.996255+00:00",
+  "query": "NotebookLM developer API authentication documentation",
+  "search_results": [
+    {
+      "title": "Gemini Notebook",
+      "url": "https://notebook.google.com/",
+      "snippet": "google.com https://notebook.google.com Gemini Notebook Your research and thinking partner, grounded in the information you trust, built with the latest Gemini models. Use the power of AI for …"
+    },
+    {
+      "title": "Gemini Notebook | AI Research Tool & Thinking Partner",
+      "url": "https://notebook.google/",
+      "snippet": "notebook.google https://notebook.google Gemini Notebook | AI Research Tool & Thinking Partner Gemini Notebook exists so you can use your notes more efficiently. Ask about anything. The responses you get will always be …"
+    },
+    {
+      "title": "NotebookLM - Search Labs",
+      "url": "https://labs.google.com/search/experiment/23",
+      "snippet": "google.com https://labs.google.com › search › experiment NotebookLM - Search Labs Upload your sources: Upload PDFs, websites, YouTube videos, audio files, Google Docs, or Google Slides, and NotebookLM will …"
+    },
+    {
+      "title": "Gemini Notebook | AI Study Tool for Students",
+      "url": "https://notebook.google/students",
+      "snippet": "notebook.google https://notebook.google › students Gemini Notebook | AI Study Tool for Students Generate flashcards from your documents, practice active learning, and ask Notebook for detailed explanations to master key …"
+    },
+    {
+      "title": "NotebookLM Direct | Generate PPT, Infographics, and Videos",
+      "url": "https://notebooklm.localaihub.com/",
+      "snippet": "localaihub.com https:// notebooklm .localaihub.com NotebookLM Direct | Generate PPT, Infographics, and Videos NotebookLM Direct helps users upload source materials and generate PPT slides, infographics, and AI explainer videos with stable …"
+    },
+    {
+      "title": "NotebookLM - AI Research Assistant & Smart Note-Taking Tool",
+      "url": "https://notebooklm.xin/en/",
+      "snippet": "notebooklm.xin https:// notebooklm .xin › en NotebookLM - AI Research Assistant & Smart Note-Taking Tool NotebookLM is Google’s source-grounded AI research assistant and smart note-taking tool. Get AI answers backed by verifiable …"
+    },
+    {
+      "title": "Gemini Notebook (formerly NotebookLM ): AI research and learning ...",
+      "url": "https://workspace.google.com/products/gemini-notebook/",
+      "snippet": "google.com https://workspace.google.com › products › gemini-notebook Gemini Notebook (formerly NotebookLM ): AI research and learning ... Discover how Gemini Notebook (formerly NotebookLM) helps teams learn new topics and get to insights faster with helpful AI from …"
+    },
+    {
+      "title": "Gemini Notebook ( NoteBookLM ) - Gizmodo",
+      "url": "https://gizmodo.com/download/notebooklm",
+      "snippet": "gizmodo.com https:// gizmodo.com › download › notebooklm Gemini Notebook ( NoteBookLM ) - Gizmodo 3 days ago · Turn your notes into insights with Gemini Notebook (NoteBookLM)—a user-friendly, AI-powered tool that helps you …"
+    },
+    {
+      "title": "NotebookLM is now Gemini Notebook - The Keyword",
+      "url": "https://blog.google/innovation-and-ai/products/gemini-notebook/notebooklm-gemini-notebook/",
+      "snippet": "blog.google https://blog.google › ... › gemini-notebook › notebooklm -gemini-notebook NotebookLM is now Gemini Notebook - The Keyword Jul 16, 2026 · Google renamed NotebookLM to Gemini Notebook to show it’s part of their bigger AI family. It’s still a great tool for …"
+    },
+    {
+      "title": "NotebookLM (now Gemini Notebook): Google's AI Notebook",
+      "url": "https://tooldirectory.ai/tools/notebook-lm",
+      "snippet": "tooldirectory.ai https://tooldirectory.ai › tools › notebook-lm NotebookLM (now Gemini Notebook): Google's AI Notebook Aug 14, 2026 · NotebookLM is now Gemini Notebook. Source-grounded AI research with cited answers, Audio and Video …"
+    }
+  ],
+  "retrievals": [],
+  "errors": [
+    "No candidate documentation on hint domain found; review required"
+  ],
+  "first_pass": {
+    "auth": "unknown",
+    "credential_gate": "unknown",
+    "api_surface": "unknown",
+    "official_mcp": "unknown",
+    "composio_toolkit": "unknown",
+    "verdict": "unclear",
+    "blocker": "Claim-specific documentation not assessed",
+    "next_action": "Review official documentation and validate each claim",
+    "confidence": "unresolved"
+  },
+  "validation_errors": [
+    "All claim fields require source-specific review"
+  ]
+}

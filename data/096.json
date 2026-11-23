@@ -1,0 +1,84 @@
+{
+  "app": {
+    "number": 96,
+    "name": "Devin",
+    "category": "AI, Research and Media-native",
+    "hint": "docs.devin.ai (MCP)"
+  },
+  "checked_at": "2026-11-23T13:42:08.630353+00:00",
+  "query": "Devin developer API authentication documentation",
+  "search_results": [
+    {
+      "title": "Devin : the autonomous software engineer",
+      "url": "https://devin.ai/",
+      "snippet": "devin.ai https:// devin .ai Devin : the autonomous software engineer Devin is an AI coding agent and software engineer that helps developers build better software faster. Parallel cloud agents for … Read more"
+    },
+    {
+      "title": "Download - Devin",
+      "url": "https://devin.ai/download",
+      "snippet": "devin.ai https:// devin .ai › download Download - Devin Devin Desktop is the new name for Windsurf. We’re building on the IDE foundation of Windsurf to introduce the command center for … Read more"
+    },
+    {
+      "title": "Log in - Devin",
+      "url": "https://app.devin.ai/login",
+      "snippet": "devin.ai https://app. devin .ai › login Log in - Devin Don't have an account? Sign up."
+    },
+    {
+      "title": "Introducing Devin - Devin Docs",
+      "url": "https://docs.devin.ai/get-started/devin-intro",
+      "snippet": "devin.ai https://docs. devin .ai Introducing Devin - Devin Docs Devin is designed to be a conversational user interface, and allows you to follow and take over Devin’s development process in the … Read more"
+    },
+    {
+      "title": "Devin AI - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Devin_AI",
+      "snippet": "wikipedia.org https:// en.wikipedia.org › wiki › Devin _AI Devin AI - Wikipedia Devin AI has received both praise and skepticism regarding its capabilities and its implications for the future of artificial intelligence … Read more"
+    },
+    {
+      "title": "Devin University",
+      "url": "https://learndevin.com/",
+      "snippet": "learndevin.com https://learn devin .com Devin University Interactive courses that take you from your first task to shipping real work with Devin. Meet Devin and learn to work with a cloud … Read more"
+    },
+    {
+      "title": "What is Devin AI - GeeksforGeeks",
+      "url": "https://www.geeksforgeeks.org/artificial-intelligence/what-is-devin-ai/",
+      "snippet": "geeksforgeeks.org https://www.geeksforgeeks.org › artificial-intelligence › what-is- devin -ai What is Devin AI - GeeksforGeeks Jul 23, 2025 · Devin AI, a new AI software engineer created by Cognition (the company behind Devin AI), is turning up software … Read more"
+    },
+    {
+      "title": "Devin 2.0 | The next generation of DevOps for FileMaker",
+      "url": "https://www.devin.fm/",
+      "snippet": "devin.fm https://www. devin .fm Devin 2.0 | The next generation of DevOps for FileMaker Devin 2.0 uses Devin Cloud for orchestration, version control and coordination between environments. Your FileMaker Servers can … Read more"
+    },
+    {
+      "title": "Sign up - Devin",
+      "url": "https://app.devin.ai/signup",
+      "snippet": "devin.ai https://app. devin .ai › signup Sign up - Devin Already have an account?"
+    },
+    {
+      "title": "Introducing Devin , the first AI software engineer - Cognition",
+      "url": "https://cognition.com/blog/introducing-devin",
+      "snippet": "cognition.com https://cognition.com › blog › introducing- devin Introducing Devin , the first AI software engineer - Cognition Mar 12, 2024 · Devin is a tireless, skilled teammate, equally ready to build alongside you or independently complete tasks for you to … Read more"
+    }
+  ],
+  "retrievals": [
+    {
+      "url": "https://docs.devin.ai/get-started/devin-intro",
+      "status": 200,
+      "text": "Introducing Devin - Devin Docs Documentation Index Fetch the complete documentation index at: /llms.txt Use this file to discover all available pages before exploring further. Skip to main content Assistant Responses are generated using AI and may contain mistakes. Devin Docs home page English Search... ⌘ K Ask Assistant ⌘ I Search... Navigation Get Started Introducing Devin Cloud CLI Desktop Enterprise Use Cases API Federal Get Started Introducing Devin Copy page Copy page Devin is the AI software engineer, built to help ambitious engineering teams crush their backlogs. Copy page Copy page A quick tour of Devin Devin is an autonomous AI software engineer that can write, run and test code. Devin can handle most tasks, excluding extremely difficult tasks. As a rule of thumb, if you can do it in three hours, Devin can most likely do it. Ask Devin to tackle Linear/Jira tickets, implement entirely new features, repro and fix bugs, build internal tools, and more! See what’s new with Devin in our release notes ! In some cases Devin may not function exactly as referenced, or documentation may be out of date. Already Signed Up? Get Started Now: Browse use cases What are Devin’s strengths? Here are the types of tasks where Devin excels: Tackling many tasks in parallel, before they end up in your backlog Linear/Jira tickets Entire features from scratch Bug reports App testing Code migrations, refactors, and modernization Language migrations (e.g. JavaScript to TypeScript) Framework upgrades (e.g. Angular 16 -> 18) Monorepo to submodule conversions Removing unused feature flags Extracting common code into libraries Common, repetitive engineering tasks PR Review Codebase Q&A Reproducing & fixing bugs Writing unit tests Maintaining documentation Customer engineering support Building new integrations and working with unfamiliar APIs Creating customized demos Prototyping solutions Building internal tools To get the best results from Devin: Write clear prompts with explicit completion criteria — the clearer the task, the higher the success rate, especially for complex work. Make tasks easy to verify — e.g. checking that CI passes or testing an automatic deployment. For harder tasks, break them into well-scoped steps and provide relevant context or examples. Follow our best practices and pre-task checklist . The most successful workflows include: Tagging Devin on a Slack or Teams thread about a bug you’re discussing with coworkers Delegating a more complex task via the web application and taking over in Devin’s IDE once it gives you a good first draft. Running Devin for Terminal in your local environment for quick fixes, code exploration, and interactive coding right from the command line — then using /handoff to send longer tasks to cloud Devin. Carving out tasks from your todo list at the start of your day and returning to draft PRs waiting for review. Devin is most effective when it’s part of your team and your existing workflow. Devin in Slack General Product Features The Devin Interface Devin is designed to be a conversational user interface, and allows you to follow and take over Devin’s development process in the embedded IDE. Devin is also available via the Devin API . In Devin’s Workspace, you’ll find developer tools that Devin will use to complete your task. Shell Devin’s terminal, where you can watch commands being executed and view output logs. You can also copy the shell output for debugging purposes. To run commands directly, use the IDE’s shell. IDE Devin’s embedded code editor equipped with all the IDE tools and shortcuts you’re familiar with. Follow Devin’s work real-time and take over to run commands, make direct code edits or test Devin’s code. Browser Watch Devin browse through documentation, test web applications it builds, download/upload information, and more. You can jump in to help Devin navigate through browsing tasks via the Interactive Browser. You can find Devin's tools in the sidebar or by clicking any progress steps in the session Getting Access To access Devin, sign up at app.devin.ai . Individual and Teams plans are available. You can also install Devin CLI to use Devin directly from your command line: curl -fsSL https://cli.devin.ai/install.sh | bash If your company is already working with Cognition, you can request permissions from your Administrator or Cognition directly and access Devin via the web application at app.devin.ai . Feedback We’re learning and our customers’ input is crucial! You can share your feedback to support@cognition.ai , via Slack Connect (available to Teams users), or directly in the web app by clicking the Help (question mark) icon at the bottom of the sidebar and selecting Contact support . We log all feedback provided by customers and use it to make quick improvements to Devin and inform our product priorities and roadmap. Demo To learn more check out our blog . About Cognition We are an applied AI lab building end-to-end software agents. We’re building AI software engineers that help ambitious engineering teams crush their backlogs."
+    }
+  ],
+  "errors": [],
+  "first_pass": {
+    "auth": "unknown",
+    "credential_gate": "unknown",
+    "api_surface": "unknown",
+    "official_mcp": "unknown",
+    "composio_toolkit": "unknown",
+    "verdict": "unclear",
+    "blocker": "Claim-specific documentation not assessed",
+    "next_action": "Review official documentation and validate each claim",
+    "confidence": "unresolved"
+  },
+  "validation_errors": [
+    "All claim fields require source-specific review"
+  ]
+}

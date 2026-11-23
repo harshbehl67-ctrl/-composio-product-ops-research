@@ -1,0 +1,84 @@
+{
+  "app": {
+    "number": 70,
+    "name": "Sentry",
+    "category": "Developer, Infra and Data platforms",
+    "hint": "docs.sentry.io/api"
+  },
+  "checked_at": "2026-11-23T13:42:06.278902+00:00",
+  "query": "Sentry developer API authentication documentation",
+  "search_results": [
+    {
+      "title": "Application Performance Monitoring & Error Tracking Software | Sentry",
+      "url": "https://sentry.io/",
+      "snippet": "sentry.io https:// sentry .io Application Performance Monitoring & Error Tracking Software | Sentry Application performance monitoring for developers & software teams to see errors clearer, solve issues faster & continue learning … Read more"
+    },
+    {
+      "title": "Sentry (Robert Reynolds ) - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Sentry_(Robert_Reynolds)",
+      "snippet": "wikipedia.org https:// en.wikipedia.org › wiki › Sentry_(Robert_Reynolds ) Sentry (Robert Reynolds ) - Wikipedia Created by Paul Jenkins and Jae Lee, with uncredited conceptual contributions by Rick Veitch, the characters first appeared in The … Read more"
+    },
+    {
+      "title": "Pricing : Free Developer Plan, Pay as You Grow | Sentry",
+      "url": "https://sentry.io/pricing/",
+      "snippet": "sentry.io https:// sentry .io › pricing Pricing : Free Developer Plan, Pay as You Grow | Sentry Get started with the only application monitoring platform that empowers developers to fix application problems without compromising … Read more"
+    },
+    {
+      "title": "Sentry - Application Performance Monitoring & Error Tracking Software",
+      "url": "https://docs.sentry.io/",
+      "snippet": "sentry.io https://docs. sentry .io Sentry - Application Performance Monitoring & Error Tracking Software Self-hosted and cloud-based application performance monitoring & error tracking that helps software teams see clearer, solve … Read more"
+    },
+    {
+      "title": "Sentry - LinkedIn",
+      "url": "https://www.linkedin.com/company/getsentry/",
+      "snippet": "linkedin.com https://www.linkedin.com › company › get sentry Sentry - LinkedIn #SeerChats are real, unfiltered convos between us and our own agent debugger, straight from the Sentry trenches."
+    },
+    {
+      "title": "About Sentry",
+      "url": "https://sentry.io/about/",
+      "snippet": "sentry.io https:// sentry .io › about About Sentry Our platform helps every developer diagnose, fix, and optimize the performance of their code. With Sentry, developers around the … Read more"
+    },
+    {
+      "title": "Getting Started With Sentry",
+      "url": "https://docs.sentry.io/product/sentry-basics/",
+      "snippet": "sentry.io https://docs. sentry .io › product › sentry-basics Getting Started With Sentry Sentry captures errors, logs, traces, replays, profiles, and metrics from your application — and connects them all through distributed … Read more"
+    },
+    {
+      "title": "Your Sentry retirement account | Sentry Insurance",
+      "url": "https://www.sentry.com/customers/retirement-participants",
+      "snippet": "sentry.com https://www. sentry .com › customers › retirement-participants Your Sentry retirement account | Sentry Insurance If your employer offers a Sentry retirement plan, this is where you can access your account, enroll in your employer’s plan, and find … Read more"
+    },
+    {
+      "title": "We're Fairly Open | Sentry",
+      "url": "https://open.sentry.io/",
+      "snippet": "sentry.io https://open. sentry .io We're Fairly Open | Sentry A library written in Rust which is used at Sentry to implement symbolication of native stack traces, sourcemap handling for minified … Read more"
+    },
+    {
+      "title": "Commercial and small business insurance | Sentry Insurance",
+      "url": "https://www.sentry.com/",
+      "snippet": "sentry.com https://www. sentry .com Commercial and small business insurance | Sentry Insurance At Sentry, we work to understand your business. We offer customizable business insurance, employee 401 (k) plans, business life … Read more"
+    }
+  ],
+  "retrievals": [
+    {
+      "url": "https://docs.sentry.io/",
+      "status": 200,
+      "text": "Sentry Docs | Application Performance Monitoring & Error Tracking Software Skip to content Go to Sentry Get started with Sentry Everything you need to catch errors, trace performance, and fix broken agents. Set up with Sentry CLI Install method: cURL curl https://cli.sentry.dev/install -fsS | bash Learn more about the Sentry CLI Set up with Sentry CLI Set up Sentry with the Sentry CLI. Install the CLI with one of these commands, then follow the Sentry CLI docs to finish setup. cURL curl https://cli.sentry.dev/install -fsS | bash PowerShell irm https://cli.sentry.dev/install.ps1 | iex Homebrew brew install getsentry/tools/sentry npx npx sentry@latest Learn more about the Sentry CLI or Set up manually Pick your platform below and follow our step-by-step guides to install the SDK and send your first event. Platform-specific docs If you use it, we probably support it. Android Apple Dart Elixir Go Godot Engine Java JavaScript Kotlin Native .NET Nintendo Switch PHP PlayStation PowerShell Python React Native Ruby Rust Unity Unreal Engine Xbox Integrations Connect your favorite apps and services to add features that help track and triage your errors. See all integrations GitHub GitHub Suspect commits, stack traces, and PR comments. Slack Slack Alerts, issue actions, and Seer in Slack. Jira Jira Create and sync Jira issues from Sentry. Vercel Vercel Deploy notifications and source map uploads. Cursor Cursor Launch Cursor Cloud Agents from Seer. Start debugging your agents with one of these agent integrations. Anthropic Trace Claude agents and the Messages API. No code needed. OpenAI Instrument the OpenAI SDK. Vercel AI Instrument the Vercel AI SDK. Mastra Export Mastra AI tracing to Sentry. Eve Send Eve agent traces, conversations, and errors to Sentry. Flue Send Flue traces, logs, and errors to Sentry. Pi Durable Send Pi Durable agent runs, tool calls, and errors to Sentry. Learn More What is Sentry? Error monitoring, tracing, and more. Fix faster with Seer AI debugging, root cause, and autofix. Pricing & Billing How our pricing and quotas work. API Access Sentry programmatically. Sentry for AI See all the ways Sentry plugs into your agents and workflows."
+    }
+  ],
+  "errors": [],
+  "first_pass": {
+    "auth": "unknown",
+    "credential_gate": "unknown",
+    "api_surface": "unknown",
+    "official_mcp": "unknown",
+    "composio_toolkit": "unknown",
+    "verdict": "unclear",
+    "blocker": "Claim-specific documentation not assessed",
+    "next_action": "Review official documentation and validate each claim",
+    "confidence": "unresolved"
+  },
+  "validation_errors": [
+    "All claim fields require source-specific review"
+  ]
+}

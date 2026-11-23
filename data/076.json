@@ -1,0 +1,80 @@
+{
+  "app": {
+    "number": 76,
+    "name": "Monday.com",
+    "category": "Productivity and Project Management",
+    "hint": "developer.monday.com"
+  },
+  "checked_at": "2026-11-23T13:42:06.740729+00:00",
+  "query": "Monday.com developer API authentication documentation",
+  "search_results": [
+    {
+      "title": "The AI Workspace for People & Agents | monday .com",
+      "url": "https://monday.com/",
+      "snippet": "monday.com https:// monday .com The AI Workspace for People & Agents | monday .com Use your favorite AI tools Ask your AI assistant to get work done in monday - without leaving the tool or switching context."
+    },
+    {
+      "title": "monday .com: Where Teams Get Work Done",
+      "url": "https://auth.monday.com/auth/login_monday",
+      "snippet": "monday.com https://auth. monday .com › auth › login_ monday monday .com: Where Teams Get Work Done monday.com is a work OS that powers teams to run processes, projects and workflows in one digital workspace"
+    },
+    {
+      "title": "monday team management features - monday .com | Product",
+      "url": "https://monday.com/new-product",
+      "snippet": "monday.com https:// monday .com › new-product monday team management features - monday .com | Product monday.com is a tool that simplify the way teams work together. Manage workload, track projects, move work forward, communicate … Read more"
+    },
+    {
+      "title": "Introduction to monday .com - Support",
+      "url": "https://support.monday.com/hc/en-us/articles/115005310945-Introduction-to-monday-com",
+      "snippet": "monday.com https://support. monday .com › hc › en-us › articles Introduction to monday .com - Support Sep 20, 2026 · monday AI brings intelligent, context-aware assistance into monday.com, helping you think, create, and take action in … Read more"
+    },
+    {
+      "title": "Monday - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Monday",
+      "snippet": "wikipedia.org https:// en.wikipedia.org › wiki › Monday Monday - Wikipedia Monday is the day in which is celebrated Easter Monday, the day after Easter Sunday and the second day of Eastertide. Easter … Read more"
+    },
+    {
+      "title": "monday .com: Where Teams Get Work Done",
+      "url": "https://auth.monday.com/login_help",
+      "snippet": "monday.com https://auth. monday .com › login_help monday .com: Where Teams Get Work Done monday.com is a work OS that powers teams to run processes, projects and workflows in one digital workspace"
+    },
+    {
+      "title": "monday .com's desktop app - Support",
+      "url": "https://support.monday.com/hc/en-us/articles/115005316885-monday-com-s-desktop-app",
+      "snippet": "monday.com https://support. monday .com › hc › en-us › articles monday .com's desktop app - Support Nov 11, 2026 · The monday.com desktop app brings your workspace right to your computer for faster access and focused work. It … Read more"
+    },
+    {
+      "title": "monday .com - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Monday.com",
+      "snippet": "wikipedia.org https:// en.wikipedia.org › wiki › Monday .com monday .com - Wikipedia In February 2026, monday.com's stock dropped 21% amid broader investor concerns about agentic AI tools potentially disrupting … Read more"
+    },
+    {
+      "title": "Direct Log in - The official monday .com community:",
+      "url": "https://community.monday.com/auth/login/direct",
+      "snippet": "monday.com https://community. monday .com › auth › login › direct Direct Log in - The official monday .com community: Your space to connect with users, ask questions, and level up your platform."
+    },
+    {
+      "title": "monday .com Status",
+      "url": "https://status.monday.com/",
+      "snippet": "monday.com https://status. monday .com monday .com Status Welcome to monday.com's status page where you can follow the operational status of our platform as well as other key features and … Read more"
+    }
+  ],
+  "retrievals": [],
+  "errors": [
+    "No candidate documentation on hint domain found; review required"
+  ],
+  "first_pass": {
+    "auth": "unknown",
+    "credential_gate": "unknown",
+    "api_surface": "unknown",
+    "official_mcp": "unknown",
+    "composio_toolkit": "unknown",
+    "verdict": "unclear",
+    "blocker": "Claim-specific documentation not assessed",
+    "next_action": "Review official documentation and validate each claim",
+    "confidence": "unresolved"
+  },
+  "validation_errors": [
+    "All claim fields require source-specific review"
+  ]
+}

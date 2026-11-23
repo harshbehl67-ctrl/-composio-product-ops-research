@@ -1,0 +1,80 @@
+{
+  "app": {
+    "number": 19,
+    "name": "Gorgias",
+    "category": "Support and Helpdesk",
+    "hint": "gorgias.com"
+  },
+  "checked_at": "2026-11-23T13:41:54.512976+00:00",
+  "query": "Gorgias developer API authentication documentation",
+  "search_results": [
+    {
+      "title": "Google",
+      "url": "https://www.google.com/",
+      "snippet": "google.com https://www.google.com Google Search the world's information, including webpages, images, videos and more. Google has many special features to help you find … Read more"
+    },
+    {
+      "title": "Family Link",
+      "url": "https://familylink.google.com/?authuser=2",
+      "snippet": "google.com https://familylink.google.com Family Link Healthy digital habits for your family start with the Google Family Link app. With easy-to-use tools, you can understand how your … Read more"
+    },
+    {
+      "title": "Google Search",
+      "url": "https://ogs.google.com/widget/empty",
+      "snippet": "google.com https://ogs.google.com › widget › empty Google Search Google Search provides a fast, easy way to find information, images, videos and more across the web."
+    },
+    {
+      "title": "Welcome To Colab - Colab",
+      "url": "https://colab.research.google.com/drive/",
+      "snippet": "google.com https://colab.research.google.com › drive Welcome To Colab - Colab Colab, or \"Colaboratory\", allows you to write and execute Python in your browser, with Zero configuration required Access to GPUs … Read more"
+    },
+    {
+      "title": "Google Images",
+      "url": "https://images.google.com/?hl=en-GB",
+      "snippet": "google.com https://images.google.com Google Images Google Images. The most comprehensive image search on the web."
+    },
+    {
+      "title": "Google Bilder",
+      "url": "https://images.google.com/?hl=no",
+      "snippet": "google.com https://images.google.com Google Bilder Google Foto. Det mest omfattende bildesøket på Internett."
+    },
+    {
+      "title": "Google Store med enheder og tilbehør fra Google",
+      "url": "https://store.google.com/dk/?hl=da",
+      "snippet": "google.com https://store.google.com › dk Google Store med enheder og tilbehør fra Google Find de nyeste Chromecasts, telefoner, højttalere og smartskærme i Google Store."
+    },
+    {
+      "title": "Google បកប្រែ",
+      "url": "https://translate.google.com/?hl=km",
+      "snippet": "google.com https://translate.google.com Google បកប្រែ សេវាកម្មរបស់ Google ដែលត្រូវបានផ្ដល់ជូនដោយឥតគិតថ្លៃ ... Read more"
+    },
+    {
+      "title": "مرحبًا بك في \"نشاطي\"",
+      "url": "https://myactivity.google.com/?hl=ar",
+      "snippet": "google.com https://myactivity.google.com مرحبًا بك في \"نشاطي\" مرحبًا بك في \"نشاطي\" تساعد البيانات في جعل خدمات Google مفيدة أكثر بالنسبة لك. يمكنك تسجيل الدخول لمراجعة نشاطك وإدارته، بما في ذلك المواضيع التي بحثت عنها والمواقع الإلكترونية التي … Read more"
+    },
+    {
+      "title": "Google Dashboard",
+      "url": "https://account.google.com/dashboard",
+      "snippet": "google.com https://account.google.com › dashboard Google Dashboard Sign in to see and manage the data in your Google Account"
+    }
+  ],
+  "retrievals": [],
+  "errors": [
+    "No candidate documentation on hint domain found; review required"
+  ],
+  "first_pass": {
+    "auth": "unknown",
+    "credential_gate": "unknown",
+    "api_surface": "unknown",
+    "official_mcp": "unknown",
+    "composio_toolkit": "unknown",
+    "verdict": "unclear",
+    "blocker": "Claim-specific documentation not assessed",
+    "next_action": "Review official documentation and validate each claim",
+    "confidence": "unresolved"
+  },
+  "validation_errors": [
+    "All claim fields require source-specific review"
+  ]
+}

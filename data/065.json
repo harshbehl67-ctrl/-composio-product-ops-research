@@ -1,0 +1,84 @@
+{
+  "app": {
+    "number": 65,
+    "name": "Supabase",
+    "category": "Developer, Infra and Data platforms",
+    "hint": "supabase.com/docs"
+  },
+  "checked_at": "2026-11-23T13:42:04.451529+00:00",
+  "query": "Supabase developer API authentication documentation",
+  "search_results": [
+    {
+      "title": "Supabase | The Postgres Development Platform",
+      "url": "https://supabase.com/",
+      "snippet": "supabase.com https:// supabase .com Supabase | The Postgres Development Platform Powering millions of AI-generated apps with a complete Supabase backend. Lovable is about unlocking creativity for anyone. Only … Read more"
+    },
+    {
+      "title": "Postgres Database | Supabase",
+      "url": "https://supabase.com/database",
+      "snippet": "supabase.com https:// supabase .com › database Postgres Database | Supabase Jan 15, 2024 · Every Supabase project is a Postgres database. Use our relational database on its own, or with the rest of the … Read more"
+    },
+    {
+      "title": "Sign in | Supabase Dashboard",
+      "url": "https://supabase.com/dashboard/sign-in",
+      "snippet": "supabase.com https:// supabase .com › dashboard › sign-in Sign in | Supabase Dashboard Sign into the Supabase dashboard. Build production-grade applications with a Postgres database, Authentication, instant APIs, … Read more"
+    },
+    {
+      "title": "Supabase Docs",
+      "url": "https://supabase.com/docs",
+      "snippet": "supabase.com https:// supabase .com › docs Supabase Docs Supabase provides a full Postgres database for every project with Realtime functionality, database backups, extensions, and more. … Read more"
+    },
+    {
+      "title": "What Is Supabase ? The Open-Source Firebase Alternative Explained",
+      "url": "https://www.mindstudio.ai/blog/what-is-supabase",
+      "snippet": "mindstudio.ai https://www.mindstudio.ai › blog › what-is- supabase What Is Supabase ? The Open-Source Firebase Alternative Explained Apr 14, 2026 · Supabase is an open-source backend platform with a Postgres database, auth, and storage. Here's what it is, how it … Read more"
+    },
+    {
+      "title": "Pricing & Fees | Supabase",
+      "url": "https://supabase.com/pricing",
+      "snippet": "supabase.com https:// supabase .com › pricing Pricing & Fees | Supabase Explore Supabase fees and pricing information. Find our competitive pricing Plans, with no hidden pricing. We have a generous Free … Read more"
+    },
+    {
+      "title": "Sign up | Supabase Dashboard",
+      "url": "https://supabase.com/dashboard/sign-up",
+      "snippet": "supabase.com https:// supabase .com › dashboard › sign-up Sign up | Supabase Dashboard Sign up for Supabase. Start for free. Build production-grade applications with a Postgres database, Authentication, instant APIs, … Read more"
+    },
+    {
+      "title": "Auth | Supabase",
+      "url": "https://supabase.com/auth",
+      "snippet": "supabase.com https:// supabase .com › auth Auth | Supabase Supabase is not only super easy to get started, but also provides all the backend solutions we require as we continue to grow. The … Read more"
+    },
+    {
+      "title": "Supabase Hackathon",
+      "url": "https://hackathon.supabase.com/",
+      "snippet": "supabase.com https://hackathon. supabase .com Supabase Hackathon Oct 5, 2025 · A series of Supabase Hackathons run in person and online."
+    },
+    {
+      "title": "Supabase",
+      "url": "https://supabase.store/",
+      "snippet": "supabase.store https:// supabase .store Supabase Supabase is an open source Firebase alternative. Create a backend in less than 2 minutes. Start your project with a Postgres … Read more"
+    }
+  ],
+  "retrievals": [
+    {
+      "url": "https://supabase.com/docs",
+      "status": 200,
+      "text": "Supabase Docs Skip to content Supabase Documentation Learn how to get up and running with Supabase through tutorials, APIs and platform resources. Agent Prompt CLI Help me get set up with Supabase. Do the following: Install the Supabase CLI as a project dev dependency with npm install supabase --save-dev , so the version is pinned per project. Install the Supabase Plugin with npx plugins add supabase-community/supabase-plugin . Review my project and determine whether Supabase is already initialized. If it is not initialized, run npx supabase init . Suggest the most relevant next steps. Show more npm install supabase --save-dev npx plugins add supabase-community/supabase-plugin Connect a framework Start with a quickstart guide to connect your project in minutes. React Next.js TanStack Start Astro Vue Nuxt SvelteKit SolidJS RedwoodJS Refine Hono iOS Swift Android Kotlin Expo React Native Flutter Python Reflex Laravel Ruby on Rails Spring Boot Build your backend Build with a complete backend platform, from your database to your application logic. Database Supabase provides a full Postgres database for every project with Realtime functionality, database backups, extensions, and more. Auth Add and manage email and password, passwordless, OAuth, and mobile logins to your project through a suite of identity providers and APIs. Storage Store, organize, transform, and serve large files—fully integrated with your Postgres database with Row Level Security access policies. Realtime Listen to database changes, store and sync user states across clients, broadcast data to clients subscribed to a channel, and more. Edge Functions Globally distributed, server-side functions to execute your code closest to your users for the lowest latency. Extend your database Extend your database with built-in tools for AI, APIs, scheduled jobs, and queues. AI & Vectors Cron Queues Data REST API GraphQL API Use a client library Use Supabase from the language and framework your application is built with. JavaScript Flutter Python C# Swift Kotlin Migrate to Supabase Bring your existing data, auth and storage to Supabase following our migration guides. Explore more resources about /guides/resources Explore more resources Amazon RDS Auth0 Firebase Auth Firebase Storage Firestore Data Heroku Microsoft SQL Server MySQL Neon Postgres Render Vercel Postgres Explore more Explore the tools, integrations, and guides that help you get more from Supabase. AI tools Develop with Supabase AI-first using plugins, MCP, and skills. Platform guides Learn more about the tools and services powering Supabase. Supabase CLI Use the CLI to develop, manage and deploy your projects. Management API Manage your Supabase projects and organizations. Integrations Explore a variety of integrations from Supabase partners. Supabase Library A collection of pre-built Supabase components to speed up your project. Troubleshooting Our troubleshooting guide for solutions to common Supabase issues. Self-host Supabase Get started with self-hosting Supabase. More on self-hosting about /guides/self-hosting More on self-hosting Auth Realtime Storage Analytics"
+    }
+  ],
+  "errors": [],
+  "first_pass": {
+    "auth": "unknown",
+    "credential_gate": "unknown",
+    "api_surface": "unknown",
+    "official_mcp": "unknown",
+    "composio_toolkit": "unknown",
+    "verdict": "unclear",
+    "blocker": "Claim-specific documentation not assessed",
+    "next_action": "Review official documentation and validate each claim",
+    "confidence": "unresolved"
+  },
+  "validation_errors": [
+    "All claim fields require source-specific review"
+  ]
+}

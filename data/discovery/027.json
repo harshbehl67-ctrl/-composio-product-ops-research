@@ -1,0 +1,70 @@
+{
+  "app": "Telegram",
+  "query": "site:telegram.org Telegram API developer documentation authentication",
+  "checked_at": "2026-11-23T13:45:42.106144+00:00",
+  "results": [
+    {
+      "title": "Telegram Messenger",
+      "url": "https://telegram.org/",
+      "snippet": "telegram.org https:// telegram .org Telegram Messenger Telegram is a cloud-based mobile and desktop messaging app with a focus on security and speed."
+    },
+    {
+      "title": "Telegram Desktop",
+      "url": "https://desktop.telegram.org/",
+      "snippet": "telegram.org https://desktop. telegram .org Telegram Desktop Get Telegram for Windows x64 Portable version Get Telegram for macOS Mac App Store Get Telegram for Linux x64 Flatpak • Snap … Read more"
+    },
+    {
+      "title": "Telegram Web",
+      "url": "https://web.telegram.org/js/locales/en-us.json",
+      "snippet": "telegram.org https://web. telegram .org › js › locales › en-us.json Telegram Web To sign up for Telegram, use one of our {apps-link: mobile apps}.\", \"login_incorrect_number\": \"Incorrect phone number\", … Read more"
+    },
+    {
+      "title": "Telegram : View @desktop",
+      "url": "https://telegram.me/desktop",
+      "snippet": "telegram.me https:// telegram .me › desktop Telegram : View @desktop The official Telegram Desktop channel, firsthand information from the developer. https://desktop.telegram.org"
+    },
+    {
+      "title": "Telegram A Desktop",
+      "url": "https://web.telegram.org/a/get/",
+      "snippet": "telegram.org https://web. telegram .org › get Telegram A Desktop Access Telegram on your desktop, synced with your mobile, for seamless messaging and communication."
+    },
+    {
+      "title": "Telegram Applications",
+      "url": "https://telegram.org/apps",
+      "snippet": "telegram.org https:// telegram .org › apps Telegram Applications Telegram apps are open source and support reproducible builds. Anyone can independently verify that Telegram apps you download … Read more"
+    },
+    {
+      "title": "Telegram - Apps on Google Play",
+      "url": "https://play.google.com/store/apps/details?id=org.telegram.messenger&hl=en",
+      "snippet": "google.com https:// play.google.com › store › apps › details Telegram - Apps on Google Play Telegram is the perfect tool for hosting online communities and coordinating teamwork. RELIABLE: Built to deliver your messages … Read more"
+    },
+    {
+      "title": "Telegram (software ) - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Telegram_(software)",
+      "snippet": "wikipedia.org https:// en.wikipedia.org › wiki › Telegram_(software ) Telegram (software ) - Wikipedia Telegram (also known as Telegram Messenger) is a Russian-Emirati cloud-based, cross-platform social media and instant … Read more"
+    },
+    {
+      "title": "Telegram Messenger",
+      "url": "https://telegram.org/web?setln=es",
+      "snippet": "telegram.org https:// telegram .org › web Telegram Messenger 11 de jun Apps para relojes inteligentes, texto enriquecido para bots, guardianes con IA para grupos y mucho más una nueva era de … Read more"
+    },
+    {
+      "title": "Telegram Web",
+      "url": "https://web.telegram.org/k/pageSignIn-c5a80999.js.map",
+      "snippet": "telegram.org https://web. telegram .org Telegram Web {\"version\":3,\"mappings\":\"siBAgCA,IAAIA,EAA6B,KAAMC,EAEvC,MAAMC,EAAe,IAAM,CAoBnB,QAAe,SAAS,cAAc,KAAK,EACpCC,YAAU,IAAI,eAAe,EAE1C,IAAIC,EAAkCC,EAChC,QAAoB,IAAIC,EAAkB ... Read more"
+    }
+  ],
+  "fetches": [
+    {
+      "url": "https://telegram.org/",
+      "status": 200,
+      "text": "Telegram Messenger English Bahasa Indonesia Bahasa Melayu Deutsch Español Français Italiano Nederlands O‘zbek Polski Português (Brasil) Türkçe Беларуская Русский Українська Қазақша العربية فارسی 한국어 Follow on X Home FAQ Apps API Safety Recent News Aug 25 Welcome Messages, Buttons in Messages and Signed Gifts Jul 14 Rich Text Editor, Communities, Ephemeral Messages in Groups, 350 Million GIFs Jun 11 Smartwatch Apps, Rich Text for Bots, AI Guardians for Groups, and Much More a new era of messaging Telegram for Android Telegram for iPhone / iPad Telegram for Windows / Mac / Linux Browse more Telegram apps Telegram for PC / Linux Telegram for macOS Recent News Welcome Messages, Buttons in Messages and Signed Gifts Introducing Welcome Messages to greet new members of groups or channels, Buttons in Messages to make any text interactive, Inline Documents… Aug 25, 2026 Rich Text Editor, Communities, Ephemeral Messages in Groups, 350 Million GIFs Introducing a rich text editor to format and generate text, Telegram Communities linking together several groups, channels and bots, ephemeral… Jul 14, 2026 Why Telegram? Simple Telegram is so simple you already know how to use it. Private Telegram messages are heavily encrypted and can self-destruct. Synced Telegram lets you access your chats from multiple devices. Fast Telegram delivers messages faster than any other application. Powerful Telegram has no limits on the size of your media and chats. Open Telegram has an open API and source code free for everyone. Secure Telegram keeps your messages safe from hacker attacks. Social Telegram groups can hold up to 200,000 members. Expressive Telegram lets you completely customize your messenger. Telegram Telegram is a cloud-based mobile and desktop messaging app with a focus on security and speed. About FAQ Privacy Press Mobile Apps iPhone/iPad Android Mobile Web Desktop Apps PC/Mac/Linux macOS Web-browser Platform API Translations Instant View About Blog Press Safety"
+    },
+    {
+      "url": "https://desktop.telegram.org/",
+      "status": 200,
+      "text": "Telegram Desktop English Bahasa Indonesia Bahasa Melayu Deutsch Español Français Italiano Nederlands O‘zbek Polski Português (Brasil) Türkçe Беларуская Русский Українська Қазақша العربية فارسی 한국어 Follow on X Home FAQ Apps API Safety Telegram Desktop Fast and secure desktop app, perfectly synced with your mobile phone. Get Telegram for Windows x64 Portable version Get Telegram for macOS Mac App Store Get Telegram for Linux x64 Flatpak • Snap Get Telegram for Windows Portable version Show all platforms This software is available under GPL v3 license. Source code is available on GitHub . Follow us on Twitter – Beta version"
+    }
+  ],
+  "errors": []
+}
