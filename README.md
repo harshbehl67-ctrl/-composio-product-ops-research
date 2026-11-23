@@ -2,6 +2,10 @@
 
 Final official-documentation audit for the [AI Product Ops take-home assignment](https://composio.notion.site/AI-Product-Ops-Intern-The-take-home-assignment-391f261a6dfe80e9946bee899d3a3762). The self-contained case study is `index.html`; every displayed count is generated from `checked_dataset_v4.json`.
 
+## Live page
+
+https://harshbehl67-ctrl.github.io/-composio-product-ops-research/
+
 ## Results
 
 | Measure | Result |
