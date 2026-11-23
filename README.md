@@ -46,6 +46,7 @@ Vendor MCP is classified separately from Composio listings. `no_vendor_server_do
 - `source_review_v4.json` and `data/source_review_group_*_v4.json`: exact replacements, reclassifications, record updates, and rendered-page keeps.
 - `research_pass_manifest.json`: hash manifest for preserved research artifacts.
 - `security_example_review.json`: first-commit Zendesk bearer-example audit.
+- `redaction_log.json`: public documentation token examples redacted before publication, including two GitHub push-protection findings.
 
 ## Independent six-field review
 
@@ -96,6 +97,6 @@ The suite checks 1440px and 390px layouts, all filters, empty search, sorting, k
 - 592 unique dataset evidence URLs: zero broken checked links and zero unreviewed checked quote failures.
 - 123 independent-review URLs: zero unresolved; four Salesforce 403 responses are rendered-browser verified.
 - 1,728 files scanned: 42 credential-shaped occurrences, all inside preserved research; zero outside.
-- Desktop and mobile Playwright tests pass with no script errors.
+- Desktop and mobile Playwright tests pass locally and on the live GitHub Pages URL with no script errors.
 
 See `research_diagnostics.md` for the full diagnosis, final counts, and limitations.

@@ -72,12 +72,12 @@ Abstained and unresolved claims are excluded from accuracy denominators. The bas
 
 ## Security review
 
-The bearer-shaped value in the first Git commit exactly matches a publicly labeled Zendesk documentation example. It was not established as a user-owned credential, so no history rewrite or revocation was performed. `security_example_review.json` records the finding.
+The bearer-shaped value in the first Git commit exactly matches a publicly labeled Zendesk documentation example. It was not established as a user-owned credential, so no history rewrite or revocation was performed. `security_example_review.json` records the finding. GitHub push protection later flagged two additional public documentation examples in preserved raw passes (Vercel access token and Twilio Conversations JWT); both were redacted in a replacement local commit before the first successful push. Published history was not rewritten, and no real credential was established.
 
 `scan_secrets.py` stores only file, line, category, and SHA-256 fingerprint. Final scan: 1,728 files, 42 credential-shaped occurrences, all inside preserved research, zero outside. The public page payload excludes those raw passes.
 
 ## Regression and browser tests
 
-The Python suite has 41 passing tests. Playwright passes at 1440px and 390px for 100 rows, all filters, empty search, sorting, keyboard evidence details, no horizontal overflow, parsed JSON/CSV exports, raw-research exclusion, and the 60-claim holdout view. No script errors were observed.
+The Python suite has 41 passing tests. Playwright passes at 1440px and 390px for 100 rows, all filters, empty search, sorting, keyboard evidence details, no horizontal overflow, parsed JSON/CSV exports, raw-research exclusion, and the 60-claim holdout view. No script errors were observed. The live GitHub Pages URL passes the same suite: https://harshbehl67-ctrl.github.io/-composio-product-ops-research/.
 
 No live token, paid plan, admin approval, partner agreement, production connection, Composio SDK runtime, or MCP runtime was tested.

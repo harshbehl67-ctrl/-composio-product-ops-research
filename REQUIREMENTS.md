@@ -17,8 +17,9 @@
 | Single page and interaction | `index.html`; 1440px/390px Playwright tests pass for filters, sort, empty search, keyboard details, exports, and overflow |
 | Source links | `link_checks_v4.json`: 592 URLs, zero broken checked links; `independent_link_checks_v4.json`: 123 URLs, zero unresolved |
 | Historical bearer-shaped string | `security_example_review.json`: exact public Zendesk documentation example; no evidence of a user-owned credential, so history was not rewritten |
+| GitHub push protection | Two additional public documentation token examples in raw passes were redacted before the first successful push; `redaction_log.json` records them |
 | Secret scan | `secret_scan_v4.json`: 1,728 files, 42 preserved-research occurrences, zero outside preserved research |
-| Live link / repository | Source: https://github.com/harshbehl67-ctrl/-composio-product-ops-research; GitHub Pages live verification pending |
-| Submission readiness | Research, page, validation, and browser tests complete; publication awaits final Pages live test |
+| Live link / repository | Live and tested: https://harshbehl67-ctrl.github.io/-composio-product-ops-research/; source: https://github.com/harshbehl67-ctrl/-composio-product-ops-research |
+| Submission readiness | Complete and published; the live URL passes the same 1440px/390px Playwright suite with no script errors |
 
 The only unresolved core fields are Fanbasis authentication, credential gate, API surface, and verdict. Current first-party Commas pages document the Fanbasis rebrand, APIs/SDKs, and an MCP beta, but do not publish those API details; the legacy Fanbasis API Docs site remains password-protected. This is a specific evidence boundary, not a generic incomplete-research label.
