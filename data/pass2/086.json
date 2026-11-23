@@ -1,0 +1,227 @@
+{
+  "app": {
+    "number": 86,
+    "name": "QuickBooks",
+    "category": "Finance and Fintech",
+    "hint": "developer.intuit.com"
+  },
+  "checked_at": "2026-11-23T14:09:33.849967+00:00",
+  "source_search": "data/new_search/086.json",
+  "candidates": [
+    {
+      "url": "https://help.developer.intuit.com/s/question/0D5TR00001aSGzX0AW/our-workspace-is-in-india-are-quickbooks-api-calls-for-our-production-app-free-or-do-we-need-a-paid-plan",
+      "title": "Our workspace is in India. Are QuickBooks API calls for our production app free, or do we need a paid plan? (https://help.developer.intuit.com/s/question/0D5TR00001aSGzX0AW/our-workspace-is-in-india-are-quickbooks-api-calls-for-our-production-app-free-or-do-we-need-a-paid-plan)",
+      "snippet": "Our workspace is in India. Are QuickBooks API calls for our production app free, or do we need a paid plan? (https://help.developer.intuit.com/s/question/0D5TR00001aSGzX0AW/our-workspace-is-in-india-are-quickbooks-api-calls-for-our-production-app-free-or-do-we-need-a-paid-plan)\n【turn98search0】 [wordlim: 200] Published: 2 weeks ago; Crawled: 2 days ago; Are QuickBooks API calls for our production app free, or do we need a paid plan? ... To go beyond it, you can upgrade to the Silver tier by adding a valid payment method in your Workspace on the developer portal.\n"
+    },
+    {
+      "url": "https://developer.intuit.com/app/developer/qbo/docs/get-started/get-client-id-and-client-secret",
+      "title": "Get the Client ID and Client Secret for your app · QuickBooks Online (https://developer.intuit.com/app/developer/qbo/docs/get-started/get-client-id-and-client-secret)",
+      "snippet": "Get the Client ID and Client Secret for your app · QuickBooks Online (https://developer.intuit.com/app/developer/qbo/docs/get-started/get-client-id-and-client-secret)\n【turn98search2】 [wordlim: 200] Crawled: last week; Each app has two sets of credentials: one for live production code and another for sandbox and testing environments. ... Sign in to your developer account. ... The client ID and client secret will be accessible only after completing the Production Key questionnaire and its approval.\n"
+    },
+    {
+      "url": "https://static.developer.intuit.com/output_html/qbo/docs/develop/authentication-and-authorization/faq.html",
+      "title": " (https://static.developer.intuit.com/output_html/qbo/docs/develop/authentication-and-authorization/faq.html)",
+      "snippet": " (https://static.developer.intuit.com/output_html/qbo/docs/develop/authentication-and-authorization/faq.html)\n【turn98search3】 [wordlim: 200] Crawled: today; This generates credentials you’ll use to connect to the Intuit OAuth 2.0 server, get access tokens, and make API calls. ... Only registered apps can connect to the Intuit OAuth2.0 server, call our API, and end-users’ QuickBooks Online companies. ... If you have a multi-threaded app, make sure the developer’s application is not using the same parameter name `code` for other purposes. ... How can my app protect against cross-site request forgery (CSRF) from authentication requests?\n"
+    },
+    {
+      "url": "https://developer.intuit.com/app/developer/qbo/docs/",
+      "title": "Get started · QuickBooks Online (https://developer.intuit.com/app/developer/qbo/docs/)",
+      "snippet": "Get started · QuickBooks Online (https://developer.intuit.com/app/developer/qbo/docs/)\n【turn98search5】 [wordlim: 200] Crawled: last week; Set up your Intuit Developer Account and developer environment ... The QuickBooks Online Accounting API utilizes the REST architecture and GraphQL so you can seamlessly integrate your app with QuickBooks Online and the Intuit Financial Ecosystem. ... Silver, Gold, and Platinum partners have access to Premium APIs including the Projects API, Custom Fields API, Sales Tax API, and Payroll Compensation API.\n"
+    },
+    {
+      "url": "https://static.developer.intuit.com/output_html/qbo/docs/develop/authentication-and-authorization/oauth-2.0.html",
+      "title": " (https://static.developer.intuit.com/output_html/qbo/docs/develop/authentication-and-authorization/oauth-2.0.html)",
+      "snippet": " (https://static.developer.intuit.com/output_html/qbo/docs/develop/authentication-and-authorization/oauth-2.0.html)\n【turn98search6】 [wordlim: 200] Crawled: today; Your app needs access tokens to make API calls and interact with QuickBooks Online data. ... Start by signing in to your developer account and creating an app on the Intuit Developer Portal. ... OAuth 2.0 requires multiple URLs for authentication and requests for resources like tokens, user info, and credentials. ... It’s also sometimes called the “company ID.- Use the `realmId` for subsequent API endpoint URLs to get data from QuickBooks Online companies.\n"
+    },
+    {
+      "url": "https://static.developer.intuit.com/output_html/qbo/docs/get-started/mcp-connector.html",
+      "title": " (https://static.developer.intuit.com/output_html/qbo/docs/get-started/mcp-connector.html)",
+      "snippet": " (https://static.developer.intuit.com/output_html/qbo/docs/get-started/mcp-connector.html)\n【turn98search8】 [wordlim: 200] Crawled: today; Use Intuit Developer Plugin to set up your developer workspace, create an app, configure scopes, authenticate, and make your first QuickBooks API call from an AI-enabled development environment. ...   * Looking for a guided path from account setup to a successful sandbox API call ...   * Access to a developer workspace ... Do not use production credentials or production company data for initial setup.\n"
+    },
+    {
+      "url": "https://static.developer.intuit.com/output_html/qbo/docs/get-started/start-developing-your-app.html",
+      "title": " (https://static.developer.intuit.com/output_html/qbo/docs/get-started/start-developing-your-app.html)",
+      "snippet": " (https://static.developer.intuit.com/output_html/qbo/docs/get-started/start-developing-your-app.html)\n【turn98search9】 [wordlim: 200] Crawled: today; MCP helps to set up your developer workspace, create an app, configure scopes, authenticate, and make your first QuickBooks API call. ... The apps you create on our developer portal generate unique credentials and info you’ll need during development.\n"
+    },
+    {
+      "url": "https://static.developer.intuit.com/output_html/qbo/docs/go-live/publish-app.html",
+      "title": " (https://static.developer.intuit.com/output_html/qbo/docs/go-live/publish-app.html)",
+      "snippet": " (https://static.developer.intuit.com/output_html/qbo/docs/go-live/publish-app.html)\n【turn98search10】 [wordlim: 200] Crawled: yesterday; Publish your app and put it into production. ... With the app still open on your developer account: ... This givesy our app access QuickBooks Online data and our API.\n"
+    },
+    {
+      "url": "https://help.developer.intuit.com/s/question/0D5TR00001b3Iav0AE/im-building-a-private-readonly-quickbooks-api-app-for-my-own-company-is-there-a-simplified-production-approval-process-for-internaluse-apps-or-must-i-complete-the-full-security-and-compliance-assessment",
+      "title": "I'm building a private, read-only QuickBooks API app for my own company. Is there a simplified production approval process for internal-use apps, or must I complete the full security and compliance assessment? (https://help.developer.intuit.com/s/question/0D5TR00001b3Iav0AE/im-building-a-private-rea",
+      "snippet": "I'm building a private, read-only QuickBooks API app for my own company. Is there a simplified production approval process for internal-use apps, or must I complete the full security and compliance assessment? (https://help.developer.intuit.com/s/question/0D5TR00001b3Iav0AE/im-building-a-private-readonly-quickbooks-api-app-for-my-own-company-is-there-a-simplified-production-approval-process-for-internaluse-apps-or-must-i-complete-the-full-security-and-compliance-assessment)\n【turn98search11】 [wordlim: 200] Published: last week; Crawled: today; I'm building a private, read-only QuickBooks API app for my own company. Is there a simplified production approval process for internal-use apps, or must I complete the full security and compliance assessment? ... If you are planning to build an integration just to access data from your QBO company and not publish it to the app store, then you can put any dummy value there, perhaps your company's website, and proceed to obtain the Production keys. ... You can replace xyz with your actual domain name.Determine the most appropriate category that describes your app’s functionality on the Intuit Developer dashboard.\n"
+    },
+    {
+      "url": "https://help.developer.intuit.com/s/question/0D5TR00001Xf1Xe0AJ/i-want-to-introduce-an-api-driven-software-that-can-sync-to-quickbooks",
+      "title": "I want to introduce an API driven software that can sync to quickbooks (https://help.developer.intuit.com/s/question/0D5TR00001Xf1Xe0AJ/i-want-to-introduce-an-api-driven-software-that-can-sync-to-quickbooks)",
+      "snippet": "I want to introduce an API driven software that can sync to quickbooks (https://help.developer.intuit.com/s/question/0D5TR00001Xf1Xe0AJ/i-want-to-introduce-an-api-driven-software-that-can-sync-to-quickbooks)\n【turn98search12】 [wordlim: 200] Published: last month; Crawled: last week; The key is used to access production QBO companies via APIs. ... https://developer.intuit.com/app/developer/qbo/docs/api/accounting/all-entities/account ... The QuickBooks SDK (QBXML SDK) allows you to develop desktop software solutions that integrate with QuickBooksDesktop—the most common small business accounting platform.\n"
+    },
+    {
+      "url": "https://developer.intuit.com/app/developer/qbo/docs/develop/authentication-and-authorization/oauth-2.0?utm%3Cem%3Ecampaign=integrations-break-year-2&utm%3Cem%3Esource=stoa-agency",
+      "title": "Set up OAuth 2.0 · QuickBooks Online (https://developer.intuit.com/app/developer/qbo/docs/develop/authentication-and-authorization/oauth-2.0?utm%3Cem%3Ecampaign=integrations-break-year-2&utm%3Cem%3Esource=stoa-agency)",
+      "snippet": "Set up OAuth 2.0 · QuickBooks Online (https://developer.intuit.com/app/developer/qbo/docs/develop/authentication-and-authorization/oauth-2.0?utm%3Cem%3Ecampaign=integrations-break-year-2&utm%3Cem%3Esource=stoa-agency)\n【turn98search13】 [wordlim: 200] Crawled: last week; Your app needs access tokens to make API calls and interact with QuickBooks Online data. ... OAuth 2.0 requires multiple URLs for authentication and requests for resources like tokens, user info, and credentials. ...     POST https://developer.api.intuit.com/v2/oauth2/tokens/revoke HTTP/1.1\n"
+    },
+    {
+      "url": "https://developer.intuit.com/app/developer/qbo/docs/develop/sdks-and-samples-collections/java",
+      "title": "Java · QuickBooks Online (https://developer.intuit.com/app/developer/qbo/docs/develop/sdks-and-samples-collections/java)",
+      "snippet": "Java · QuickBooks Online (https://developer.intuit.com/app/developer/qbo/docs/develop/sdks-and-samples-collections/java)\n【turn98search15】 [wordlim: 200] Crawled: 2 weeks ago; At the end of the authorization flow an access token is generated, which is used to make QuickBooks Online API requests. ... Select Keys and credentials. ... The example data query can be modified to execute any QuickBooks Online API-supported query as a string in the `sql` parameter. ... ## More documentation\n"
+    },
+    {
+      "url": "https://static.developer.intuit.com/output_html/qbo/docs/learn/rest-api-features.html",
+      "title": " (https://static.developer.intuit.com/output_html/qbo/docs/learn/rest-api-features.html)",
+      "snippet": " (https://static.developer.intuit.com/output_html/qbo/docs/learn/rest-api-features.html)\n【turn98search16】 [wordlim: 200] Crawled: today; Individual entity references in the API Explorer note the supported content types. ... `Authorization`  | The authentication credentials for HTTP authentication. ... It represents the end-user’s permission to let your app share access to their QuickBooks Online company data.\n"
+    },
+    {
+      "url": "https://static.developer.intuit.com/output_html/qbo/docs/get-started/partner-faq.html",
+      "title": " (https://static.developer.intuit.com/output_html/qbo/docs/get-started/partner-faq.html)",
+      "snippet": " (https://static.developer.intuit.com/output_html/qbo/docs/get-started/partner-faq.html)\n【turn98search17】 [wordlim: 200] Published: 3 weeks ago; Crawled: today; The App Partner Program includes access to several useful premium APIs, providing you with richer functionality and deeper integration with Intuit QuickBooks Online and Intuit Enterprise Suite: Projects API, Custom Fields API, Sales Tax API, Intuit QuickBooks Workforce API, and Dimensions API. ... To make additional API calls beyond this allotment, partners can upgrade to the Silver tier by providing a valid payment method in their account on the Intuit Developer Portal within your Workspace. ... If you have multiple production apps within one workspace, all usage will be aggregated and weighed against the pricing table and to determine your eligibility for a specific tier. ... All developers are required to provide a company address associated with each Intuit Developer Portal workspace as part of your account creation. ... Net Terms are subject to credit approval, ongoing eligibility requirements, and program policies, which may change over time.\n"
+    },
+    {
+      "url": "https://help.developer.intuit.com/s/question/0D5TR00001Z93zt0AB/quickbooks-api-for-updating-client-records",
+      "title": "QuickBooks API For Updating Client Records (https://help.developer.intuit.com/s/question/0D5TR00001Z93zt0AB/quickbooks-api-for-updating-client-records)",
+      "snippet": "QuickBooks API For Updating Client Records (https://help.developer.intuit.com/s/question/0D5TR00001Z93zt0AB/quickbooks-api-for-updating-client-records)\n【turn98search18】 [wordlim: 200] Published: last month; Crawled: 6 days ago; API scope: The QuickBooks Online Accounting API updates data inside each client's QBO company (Customers, Vendors, Company Info). ... A user with access to each client company approves your app, and each company gets its own tokens. Production keys require completing the app assessment questionnaire. ... Costs and limits: The developer account and Builder tier are free, with 500,000 CorePlus (read) calls per month; calls above that are blocked.\n"
+    },
+    {
+      "url": "https://help.developer.intuit.com/s/question/0D5TR00001azc3P0AQ/can-an-existing-intuit-developer-app-or-codex-access-quickbooks-labs-bankfeedlisttransactions-tool-without-a-claude-account",
+      "title": "Can an existing Intuit developer app or Codex access QuickBooks Labs’ bank_feed_list_transactions tool without a Claude account? (https://help.developer.intuit.com/s/question/0D5TR00001azc3P0AQ/can-an-existing-intuit-developer-app-or-codex-access-quickbooks-labs-bankfeedlisttransactions-tool-without",
+      "snippet": "Can an existing Intuit developer app or Codex access QuickBooks Labs’ bank_feed_list_transactions tool without a Claude account? (https://help.developer.intuit.com/s/question/0D5TR00001azc3P0AQ/can-an-existing-intuit-developer-app-or-codex-access-quickbooks-labs-bankfeedlisttransactions-tool-without-a-claude-account)\n【turn98search22】 [wordlim: 200] Published: last week; Crawled: 3 days ago; Can an existing Intuit developer app or Codex access QuickBooks Labs’ bank_feed_list_transactions tool without a Claude account? ... The same goes for Labs-specific scopes, access duration, pricing and scheduled reads. ...     * Connecting to a production company requires the app assessment questionnaire.\n    * Cost: US apps default to the free Builder tier, with no platform fee and a cap of 500,000 CorePlus API calls per month: App Partner Program FAQ\n"
+    }
+  ],
+  "selected": [
+    {
+      "url": "https://static.developer.intuit.com/output_html/qbo/docs/develop/authentication-and-authorization/faq.html",
+      "title": " (https://static.developer.intuit.com/output_html/qbo/docs/develop/authentication-and-authorization/faq.html)",
+      "snippet": " (https://static.developer.intuit.com/output_html/qbo/docs/develop/authentication-and-authorization/faq.html)\n【turn98search3】 [wordlim: 200] Crawled: today; This generates credentials you’ll use to connect to the Intuit OAuth 2.0 server, get access tokens, and make API calls. ... Only registered apps can connect to the Intuit OAuth2.0 server, call our API, and end-users’ QuickBooks Online companies. ... If you have a multi-threaded app, make sure the developer’s application is not using the same parameter name `code` for other purposes. ... How can my app protect against cross-site request forgery (CSRF) from authentication requests?\n"
+    },
+    {
+      "url": "https://help.developer.intuit.com/s/question/0D5TR00001aSGzX0AW/our-workspace-is-in-india-are-quickbooks-api-calls-for-our-production-app-free-or-do-we-need-a-paid-plan",
+      "title": "Our workspace is in India. Are QuickBooks API calls for our production app free, or do we need a paid plan? (https://help.developer.intuit.com/s/question/0D5TR00001aSGzX0AW/our-workspace-is-in-india-are-quickbooks-api-calls-for-our-production-app-free-or-do-we-need-a-paid-plan)",
+      "snippet": "Our workspace is in India. Are QuickBooks API calls for our production app free, or do we need a paid plan? (https://help.developer.intuit.com/s/question/0D5TR00001aSGzX0AW/our-workspace-is-in-india-are-quickbooks-api-calls-for-our-production-app-free-or-do-we-need-a-paid-plan)\n【turn98search0】 [wordlim: 200] Published: 2 weeks ago; Crawled: 2 days ago; Are QuickBooks API calls for our production app free, or do we need a paid plan? ... To go beyond it, you can upgrade to the Silver tier by adding a valid payment method in your Workspace on the developer portal.\n"
+    },
+    {
+      "url": "https://static.developer.intuit.com/output_html/qbo/docs/get-started/mcp-connector.html",
+      "title": " (https://static.developer.intuit.com/output_html/qbo/docs/get-started/mcp-connector.html)",
+      "snippet": " (https://static.developer.intuit.com/output_html/qbo/docs/get-started/mcp-connector.html)\n【turn98search8】 [wordlim: 200] Crawled: today; Use Intuit Developer Plugin to set up your developer workspace, create an app, configure scopes, authenticate, and make your first QuickBooks API call from an AI-enabled development environment. ...   * Looking for a guided path from account setup to a successful sandbox API call ...   * Access to a developer workspace ... Do not use production credentials or production company data for initial setup.\n"
+    },
+    {
+      "url": "https://help.developer.intuit.com/s/question/0D5TR00001b3Iav0AE/im-building-a-private-readonly-quickbooks-api-app-for-my-own-company-is-there-a-simplified-production-approval-process-for-internaluse-apps-or-must-i-complete-the-full-security-and-compliance-assessment",
+      "title": "I'm building a private, read-only QuickBooks API app for my own company. Is there a simplified production approval process for internal-use apps, or must I complete the full security and compliance assessment? (https://help.developer.intuit.com/s/question/0D5TR00001b3Iav0AE/im-building-a-private-rea",
+      "snippet": "I'm building a private, read-only QuickBooks API app for my own company. Is there a simplified production approval process for internal-use apps, or must I complete the full security and compliance assessment? (https://help.developer.intuit.com/s/question/0D5TR00001b3Iav0AE/im-building-a-private-readonly-quickbooks-api-app-for-my-own-company-is-there-a-simplified-production-approval-process-for-internaluse-apps-or-must-i-complete-the-full-security-and-compliance-assessment)\n【turn98search11】 [wordlim: 200] Published: last week; Crawled: today; I'm building a private, read-only QuickBooks API app for my own company. Is there a simplified production approval process for internal-use apps, or must I complete the full security and compliance assessment? ... If you are planning to build an integration just to access data from your QBO company and not publish it to the app store, then you can put any dummy value there, perhaps your company's website, and proceed to obtain the Production keys. ... You can replace xyz with your actual domain name.Determine the most appropriate category that describes your app’s functionality on the Intuit Developer dashboard.\n"
+    },
+    {
+      "url": "https://developer.intuit.com/app/developer/qbo/docs/get-started/get-client-id-and-client-secret",
+      "title": "Get the Client ID and Client Secret for your app · QuickBooks Online (https://developer.intuit.com/app/developer/qbo/docs/get-started/get-client-id-and-client-secret)",
+      "snippet": "Get the Client ID and Client Secret for your app · QuickBooks Online (https://developer.intuit.com/app/developer/qbo/docs/get-started/get-client-id-and-client-secret)\n【turn98search2】 [wordlim: 200] Crawled: last week; Each app has two sets of credentials: one for live production code and another for sandbox and testing environments. ... Sign in to your developer account. ... The client ID and client secret will be accessible only after completing the Production Key questionnaire and its approval.\n"
+    },
+    {
+      "url": "https://developer.intuit.com/app/developer/qbo/docs/",
+      "title": "Get started · QuickBooks Online (https://developer.intuit.com/app/developer/qbo/docs/)",
+      "snippet": "Get started · QuickBooks Online (https://developer.intuit.com/app/developer/qbo/docs/)\n【turn98search5】 [wordlim: 200] Crawled: last week; Set up your Intuit Developer Account and developer environment ... The QuickBooks Online Accounting API utilizes the REST architecture and GraphQL so you can seamlessly integrate your app with QuickBooks Online and the Intuit Financial Ecosystem. ... Silver, Gold, and Platinum partners have access to Premium APIs including the Projects API, Custom Fields API, Sales Tax API, and Payroll Compensation API.\n"
+    }
+  ],
+  "pages": [
+    {
+      "url": "https://static.developer.intuit.com/output_html/qbo/docs/develop/authentication-and-authorization/faq.html",
+      "requested_url": "https://static.developer.intuit.com/output_html/qbo/docs/develop/authentication-and-authorization/faq.html",
+      "status": 200,
+      "title": " (https://static.developer.intuit.com/output_html/qbo/docs/develop/authentication-and-authorization/faq.html)",
+      "text": "Authorization FAQ Hereâs a deeper dive into the OAuth 2.0 and authorization process to connect apps with the Intuit Financial Ecosystem. Do I need to authorize my app to integrate it with QuickBooks? Yes. The first step is to create an app on the Intuit Developer Platform. This generates credentials youâll use to connect to the Intuit OAuth 2.0 server , get access tokens, and make API calls. OAuth 2.0 is our authorization standard. Only registered apps can connect to the Intuit OAuth2.0 server, call our API, and end-usersâ QuickBooks Online companies. What credentials do I need to connect to OAuth? Hereâs what you need to get started. Keep in mind, different API entities and features may require additional info: Client ID and Client secret : The unique credentials that identify your app Scope : The level of data access of your app Redirect URI : The URI your app sends users to when they connect to your app State/CSRF token : This is required - the Intuit OAuth 2.0 Server server wonât accept requests without these parameters How do access tokens work? Access tokens work behind the scenes. They allow the connection between your app, the Intuit OAuth 2.0 server, our API, and an end-userâs device. Tokening starts when users connect to your app. Your app sends users an authorization request. This request redirects users to sign in to their QuickBooks Online company. We ask if theyâre willing to give your app permission to access their data. This flow is called âuser consent.â If a user grants permission, the Intuit OAuth 2.0 Server sends an authorization code to your app. Your app then sends the authorization code back to the server to get an access token. Use the access token to call our API and query objects or perform operations. If the user doesnât grant the permission, the server returns an error and your app canât call our API. How long do access and refresh tokens last? Access tokens Access tokens are valid for 3,600 seconds (or one hour). When it expires, use the latest refresh_token value from the most recent server response to ârefreshâ it. If an API request returns a 401 unauthorized message, it means the access token has expired. Refresh tokens Refresh tokens are valid for 100 days .\nThis expiry date is rolling and gets extended each time itâs used to refresh an access token. Refresh tokens are only for getting new access tokens. As long as the refresh token itself hasnât expired, each time you refresh your access token, your app periodically updates the refresh_token value.\nThis is for security. When you get a new refresh token, the previous refresh token value automatically expires. All refresh tokens have a maximum validity period of five years. Important Tip : We update the value of the refresh_token value every 24 hours hours, or the next time you refresh the access tokens after 24 hours. This is an additional security measure by Intuit to reduce risk of compromise. We recommend you always store and use the latest access_token and refresh_token value from the most recent server response when you refresh access tokens. If the refresh token hasnât been used in the last 100 days, meaning a user hasnât connected to your app and thus no API calls have been made, the refresh token expires. Your appâs access to the QuickBooks company terminates. Users will need to sign in and authorize your app again. Why does the refresh_token value change after 24 hours? Each time you make an API call and refresh your appâs access token, our server also sends your app a new value for the refresh_token . Keep in mind, we periodically update and change refresh refresh_token values. This is an additional security measure by Intuit to reduce risk of compromise. While the refresh token itself doesnât expire, the value changes every 24 hours. This makes the previous refresh_token value stale. We recommend you always store and use the latest access_token and refresh_token value from the most recent server response when you refresh access tokens. Why is my access token invalid? Access tokens may stop working for a few reasons: The access token expired : If your app uses an access token thatâs 60 min or older to make an API call, youâll get a 401 error. You need to use your refresh token to renew the access token . The user revoked access : If a user disconnects their QuickBooks Online company from your app, it invalidates the access token and refresh token. Your app needs to ask users to reauthorize the connection . The refresh token hasnât been used for 100 days : Refresh tokens are valid for 100 days. After that, your app must ask users to reauthorize the connection . The refresh token hard limit has been exceeded : Refresh tokens have a hard limit of 5 years. After that, your app must ask users to reauthorize the connection . As a best practice, write your code to anticipate situations where granted access tokens become invalid. How do I fix âinvalid_grantâ errors? You may see an invalid_grant error when exchanging your authorization code for access tokens or refreshing access tokens. When exchanging the authorization code for access tokens Review the redirect URI for your app. It should match with the redirect URI used in queries to the Intuit OAuth 2.0 server. Redirect URIs shouldnât have any query parameters. If query parameters are required, pass them as state variables. If you have a multi-threaded app, make sure the developerâs application is not using the same parameter name code for other purposes. Code canât be reused multiple times. If Intuit OAuth 2.0 server sends data with the code parameter to your app, used by a different thread, this can create a conflict. Check the Client ID and Client secret for your app. Also make sure you use the correct set of keys: development keys should be used for development environments, production keys are for your live code. Only exchange access tokens one at a time. If two attempts are made to exchange for access tokens, the first attempt will succeed but the second will return invalid_grant . Our servers may see this as a possible security issue and revoke your refresh tokens for the first successful call. Your next attempt to refresh tokens will return the invalid_grant error. At this point, youâll need to start the authorization process from the beginning. When refreshing an access token Make sure the refresh token hasnât expired. If you use an old refresh token, youâll get an invalid_grant error. Go to the developer group status page to see if there are any API service outages, or if our servers are undergoing maintenance. Service outages may return an invalid_grant error. Check your appâs code to see if itâs not sending stale or cached values, instead of the latest ones sent via responses from the Intuit OAuth 2.0 Server. If youâre using a QuickBooks Online SDK , make sure the client object is updated with the latest token object. Make sure the refresh token hasnât been revoked. Using a revoked refresh token will result in an error. Review the returned error message to make changes. Requests to refresh tokens require the current refresh_token . The result should be a newly generated access token. Refresh tokens one at a time. If two attempts are made with the same parameter, the first attempt will succeed, but the second will return an invalid_grant error. Multiple attempts may invalidate your refresh token. Important Important : We periodically update refresh_token values. Itâs a good idea to always store and use the latest refresh_token value from the most recent server response. Whatâs a redirect URI? Do I need one? Redirect URIs are used for authorization. Itâs where the Intuit OAuth 2.0 Server sends users after they agree to authenticate your app during the authorization process. Itâs also where your app sends requests from and our servers return responses after users connect to your app. Code at the URI location needs to process the initial authorization server request, construct requests for access and refresh tokens, and manage tokens. The Intuit OAuth 2.0 Server can only redirect and send responses to registered URIs. How do I register a redirect URI? Apps have two URIs: one for development (sandbox) environments and one for your production app. Follow these steps to set your appâs URI . Note Important : HTTP redirect URIs must be protected with TLS security. The Intuit OAuth 2.0 Server can only redirect to URIs beginning with https . IP addresses arenât allowed. This prevents access token interception during the authorization process. During development, you also need to register redirect URIs for any third-party testing platforms (Postman, Insomnia, etc) or other apps when testing with your sandbox company . What are the current scopes for the QuickBooks API? Scopes determine the type and level of access your app gets to QuickBooks Online company data. This also decides which API entities your app can use. When you set up OAuth 2.0 , youâll list your appâs scopes in the authorization request. We recommend requesting scopes incrementally, based on your current data requirements, rather than requesting all scopes up front. Keep in mind, you must initiate the authorization workflow again with the new list of scopes and get new access and refresh tokens. Users also need to reauthorize your app each time you change your appâs scopes. How do I create the UI where users connect to my app, and how does it start the authorization process? Before you start, review the rules for using branded images . Here are a few examples of basic UI that lets users connect their QuickBooks Online company to your app. Pick the method thatâs best for you. Create a button and use it as an in-app connection point, using the accounting scope Create a button and use it as an in-app connection point, using the accounting scope This example covers creating UI so users can connect from within your app. Weâll use the following scopes: com.intuit.quickbooks.accounting These scopes let your app make calls to our Accounting API . Design your app to include a â Connect to QuickBooks â button somewhere in the UI. When users select this button, your app starts the authorization process and sends an authorization request. Create a URL for the chosen scopes. Use your appâs Client ID and Client Secret from your developers account. Youâll also need the redirect URI . Example Authorize URL for the accounting scope 1 2 3 4 5 6 https://appcenter.intuit.com/connect/oauth2? client_id = <Client ID from developer portal> & response_type = code & redirect_uri = <redirect URI for your app> & scope = com.intuit.quickbooks.accounting & state = security_token%3D138r5719ru3e1 After your user selects the â Connect to QuickBooks â button, theyâre taken to a sign-on page. This is where they authorize the connection and give your app access to their data. Authorization_page_example x Create a button and use it as an in-app connection point, using the OpenID scope (single sign-on) Create a button and use it as an in-app connection point, using the OpenID scope (single sign-on) This example covers creating UI so users can connect from within your app. Weâll use the following scopes: openid At least one of the following: profile , email , phone , address These scopes let your app get user profile info . Design your app to include a â Sign in with Intuit â button somewhere in the UI. When users select this button, your app starts the authorization process and sends an authorization request. Create a URL for the chosen scopes. Use your appâs Client ID and Client Secret from your developers account. Youâll also need the redirect URI . Example Authorize URL for OpenID Connect 1 2 3 4 5 6 7 https://appcenter.intuit.com/connect/oauth2? client_id = <Client ID from developer portal> & scope = openid%20email%20address & redirect_uri = <redirect URI for your app> & response_type = code & state = 138r5719ru3e1 & claims = %7B%22id_token%22%3A%7B%22realmId%22%3Anull%7D%7D In this example, the user should already be signed in to the QuickBooks Online company they want to connect. If not, the realmId wonât be presented back in the redirect URI. After your user selects the â Sign in with Intuit â button, theyâre taken to a sign-on page. This is where they authorize the connection and give your app access to their data. Use the provided âGet app nowâ button from the QuickBooks App Store Use the provided âGet app nowâ button from the QuickBooks App Store This example assumes you want to list your app on the QuickBooks App store . Instead of creating a button, youâll use the UI we provide so users can connect to your app. Weâll use the following scopes: openid , profile , email , phone , address com.intuit.quickbooks.accounting These scopes let your app make calls to our Accounting API and get user profile info . In this case, the authorization process starts when users visit the QuickBooks App Store and select the â Get app now â button. Create a URL for the chosen scopes. Use your appâs Client ID and Client Secret from your developers account. Youâll also need the redirect URI . Example Authorize URL for the accounting scope and OpenID Connect 1 2 3 4 5 6 7 https://appcenter.intuit.com/connect/oauth2? client_id = <Client ID from developer portal> & scope = openid%20email%20address%20com.intuit.quickbooks.accounting & redirect_uri = <redirect URI from developer portal> & response_type = code & state = 138r5719ru3e1 & claims = %7B%22id_token%22%3A%7B%22realmId%22%3Anull%7D%7D To preview what this flow looks, get your app ID and visit the following URL: Sign in to your developer account. Select the Dashboard link on the toolbar. Find your app on the list. Copy the App ID . Visit https://appcenter.intuit.com/app/connect/oauth2/request?appId=djQuMTo6OGQzYmJlYTI3Yg:<App_ID_of_your_app> This URL takes you to the Production Connect or Development Connect Request URL. This is specified in List on the app store section of your developer account. Note Note : To test the â Get app now â button in a sandbox environment, append the query parameter with sandbox_app=true . Learn more about the âGet app nowâ button integration . How can my app protect against cross-site request forgery (CSRF) from authentication requests? You must protect the security of your users by preventing cross-site request forgery ( CSRF ) attacks. To mitigate attacks, include a unique session token in your appâs authorization request (often referred to as cross-site request forgery [CSRF] tokens). A good way is to create a string of 30 or so characters constructed using a high-quality random-number generator. Another is creating a hash and comparing it to a key kept secret on your back end. Use the âstateâ parameter in your authorization request to add your unique session token. Your app will match the unique session token with the one returned in the Intuit OAuth 2.0 server response. This verifies the user, not a malicious attacker or bot, started the authorization process. See our available SDKs and sample integrations Language Does it have a client library Does it have integration examples Java Yes Using client library Without library .Net Yes Yes MVC5 Without library PHP Yes Using client library Without library Ruby No Yes Using client library Node.js Yes Using client library Using 3rd Party Library Without library Python Yes Using client library Without library GoLang No Yes"
+    },
+    {
+      "url": "https://help.developer.intuit.com/s/question/0D5TR00001aSGzX0AW/our-workspace-is-in-india-are-quickbooks-api-calls-for-our-production-app-free-or-do-we-need-a-paid-plan",
+      "requested_url": "https://help.developer.intuit.com/s/question/0D5TR00001aSGzX0AW/our-workspace-is-in-india-are-quickbooks-api-calls-for-our-production-app-free-or-do-we-need-a-paid-plan",
+      "status": 200,
+      "title": "Our workspace is in India. Are QuickBooks API calls for our production app free, or do we need a paid plan? (https://help.developer.intuit.com/s/question/0D5TR00001aSGzX0AW/our-workspace-is-in-india-are-quickbooks-api-calls-for-our-production-app-free-or-do-we-need-a-paid-plan)",
+      "text": "Intuit Developer Support Loading × Sorry to interrupt CSS Error Refresh"
+    },
+    {
+      "url": "https://static.developer.intuit.com/output_html/qbo/docs/get-started/mcp-connector.html",
+      "requested_url": "https://static.developer.intuit.com/output_html/qbo/docs/get-started/mcp-connector.html",
+      "status": 200,
+      "title": " (https://static.developer.intuit.com/output_html/qbo/docs/get-started/mcp-connector.html)",
+      "text": "Build with Intuit Developer Plugin Use Intuit Developer Plugin to set up your developer workspace, create an app, configure scopes, authenticate, and make your first QuickBooks API call from an AI-enabled development environment.\nIntuit Developer Plugin helps you complete the setup steps required to call Intuit APIs without switching between the Developer Portal, API docs, OAuth guides, and your IDE. What is Intuit Developer Plugin? Intuit Developer Plugin is an AI-assisted onboarding experience for developers building with Intuit APIs.\nIt guides you through the setup flow for your first API call: Intuit Developer Plugin is designed for developer setup and API onboarding. Who should use this guide? Use this guide if you are: New to Intuit Developer and want to make your first QuickBooks API call Building a QuickBooks Online API integration for the first time Using an existing workspace to set up an app, scopes, credentials, and sandbox Using an AI-enabled IDE or development assistant to help build your integration Looking for a guided path from account setup to a successful sandbox API call Before you begin Before you begin, be sure you have the following: An Intuit Developer account Access to a developer workspace A clear first API goal, such as listing invoices, retrieving company information, or testing a basic sandbox request Use sandbox data while building and testing.\nDo not use production credentials or production company data for initial setup. Security best practices Follow these practices when using Intuit Developer Plugin: Use sandbox while building and testing Use least-privilege scopes Review any scope change before approving it Keep client secrets and tokens private Do not paste secrets into AI prompts or public tools Do not commit credentials to source control Rotate credentials if they are exposed Review generated requests and code before using them Complete required compliance steps before production use"
+    },
+    {
+      "url": "https://help.developer.intuit.com/s/question/0D5TR00001b3Iav0AE/im-building-a-private-readonly-quickbooks-api-app-for-my-own-company-is-there-a-simplified-production-approval-process-for-internaluse-apps-or-must-i-complete-the-full-security-and-compliance-assessment",
+      "requested_url": "https://help.developer.intuit.com/s/question/0D5TR00001b3Iav0AE/im-building-a-private-readonly-quickbooks-api-app-for-my-own-company-is-there-a-simplified-production-approval-process-for-internaluse-apps-or-must-i-complete-the-full-security-and-compliance-assessment",
+      "status": 200,
+      "title": "I'm building a private, read-only QuickBooks API app for my own company. Is there a simplified production approval process for internal-use apps, or must I complete the full security and compliance assessment? (https://help.developer.intuit.com/s/question/0D5TR00001b3Iav0AE/im-building-a-private-rea",
+      "text": "Intuit Developer Support Loading × Sorry to interrupt CSS Error Refresh"
+    },
+    {
+      "url": "https://developer.intuit.com/app/developer/qbo/docs/get-started/get-client-id-and-client-secret",
+      "requested_url": "https://developer.intuit.com/app/developer/qbo/docs/get-started/get-client-id-and-client-secret",
+      "status": 200,
+      "title": "Get the Client ID and Client Secret for your app · QuickBooks Online (https://developer.intuit.com/app/developer/qbo/docs/get-started/get-client-id-and-client-secret)",
+      "text": "Intuit Developer Compiling and pre-filling your Intuit info..."
+    },
+    {
+      "url": "https://developer.intuit.com/app/developer/qbo/docs/",
+      "requested_url": "https://developer.intuit.com/app/developer/qbo/docs/",
+      "status": 200,
+      "title": "Get started · QuickBooks Online (https://developer.intuit.com/app/developer/qbo/docs/)",
+      "text": "Intuit Developer Compiling and pre-filling your Intuit info..."
+    }
+  ],
+  "claims": {
+    "auth": {
+      "value": [
+        "OAuth 2.0"
+      ],
+      "sources": [
+        "https://static.developer.intuit.com/output_html/qbo/docs/develop/authentication-and-authorization/faq.html"
+      ],
+      "evidence": [
+        {
+          "url": "https://static.developer.intuit.com/output_html/qbo/docs/develop/authentication-and-authorization/faq.html",
+          "excerpt": "Authorization FAQ Hereâs a deeper dive into the OAuth 2.0 and authorization process to connect apps with the Intuit Financial Ecosystem. Do I need to authorize my app to integrate it with QuickBooks? Yes. The first step is to create an app on the Intuit Developer Platform. Thi",
+          "method": "OAuth 2.0"
+        }
+      ],
+      "reason": ""
+    },
+    "credential_gate": {
+      "value": "unknown",
+      "sources": [],
+      "evidence": [],
+      "reason": "No reliable automated access-tier extraction; targeted search results require claim-specific review"
+    },
+    "api_surface": {
+      "value": "unknown",
+      "sources": [],
+      "evidence": [],
+      "reason": "Targeted search found no usable, claim-specific official documentation"
+    },
+    "official_mcp": {
+      "value": "unknown",
+      "sources": [],
+      "evidence": [],
+      "reason": "Targeted search found no usable, claim-specific official documentation"
+    },
+    "composio_toolkit": {
+      "value": "listed",
+      "sources": [
+        "https://docs.composio.dev/toolkits/quickbooks"
+      ],
+      "evidence": [
+        {
+          "url": "https://docs.composio.dev/toolkits/quickbooks",
+          "excerpt": "Composio catalog match; verify product scope"
+        }
+      ],
+      "reason": ""
+    },
+    "verdict": {
+      "value": "unknown",
+      "sources": [],
+      "evidence": [],
+      "reason": "Insufficient independently verified authentication, API and access evidence for a build decision"
+    }
+  },
+  "validation": [
+    "Automatic extraction is provisional and must be checked independently",
+    "Unknown does not mean the capability is absent"
+  ]
+}

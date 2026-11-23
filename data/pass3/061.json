@@ -1,0 +1,20 @@
+{
+  "app": "GitHub",
+  "source_pass": "data\\pass2\\061.json",
+  "access_candidates": [
+    {
+      "value": "administrator-controlled credential mentioned",
+      "url": "https://docs.github.com/en/rest/using-the-rest-api/getting-started-with-the-rest-api",
+      "excerpt": "ace {repo} with the name of the repository where you would like to create a new issue, and replace {owner} with the name of the account that owns the repository. 3. Create authentication credentials Create an access token to authenticate your request. You can save your token and use it for multiple requests. Give the token any scopes or permissions that are required to access the endpoint. You will send this token in an A",
+      "status": "provisional; check scope, negation and plan details"
+    },
+    {
+      "value": "administrator-controlled credential mentioned",
+      "url": "https://docs.github.com/en/rest/using-the-rest-api/getting-started-with-the-rest-api",
+      "excerpt": "ace {repo} with the name of the repository where you would like to create a new issue, and replace {owner} with the name of the account that owns the repository. 3. Create an access token Create an access token to authenticate your request. You can save your token and use it for multiple requests. Give the token any scopes or permissions that are required to access the endpoint. You will send this token in an A",
+      "status": "provisional; check scope, negation and plan details"
+    }
+  ],
+  "reason_if_unknown": "",
+  "warning": "A phrase match is not a verified credential gate or a buildability verdict."
+}

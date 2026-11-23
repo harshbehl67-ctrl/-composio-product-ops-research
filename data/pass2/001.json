@@ -1,0 +1,257 @@
+{
+  "app": {
+    "number": 1,
+    "name": "Salesforce",
+    "category": "CRM and Sales",
+    "hint": "salesforce.com"
+  },
+  "checked_at": "2026-11-23T14:08:13.221973+00:00",
+  "source_search": "data/new_search/001.json",
+  "candidates": [
+    {
+      "url": "https://developer.salesforce.com/docs/platform/api-rest/guide/quickstart-oauth.html",
+      "title": "Salesforce Developers (https://developer.salesforce.com/docs/platform/api-rest/guide/quickstart-oauth.html)",
+      "snippet": "Salesforce Developers (https://developer.salesforce.com/docs/platform/api-rest/guide/quickstart-oauth.html)\n【turn19search1】 [wordlim: 200] Crawled: 5 days ago; To successfully send requests, REST API requires an access token obtained by authentication. ... In the browser, log in to your Developer org or sandbox with your user’s credentials. ... After you’ve authenticated successfully, try out these optional shortcuts in your cURL workflow to streamline future authentication with the Salesforce CLI.\n"
+    },
+    {
+      "url": "https://developer.salesforce.com/docs/platform/api-rest/guide/quickstart.html",
+      "title": "Salesforce Developers (https://developer.salesforce.com/docs/platform/api-rest/guide/quickstart.html)",
+      "snippet": "Salesforce Developers (https://developer.salesforce.com/docs/platform/api-rest/guide/quickstart.html)\n【turn19search2】 [wordlim: 200] Crawled: yesterday; To set up and run REST API, send a few basic requests to Salesforce. ... Developer Edition provides a free and easy solution so that you can use Salesforce for testing and development. ... To successfully send requests, REST API requires an access token obtained by authentication.\n"
+    },
+    {
+      "url": "https://developer.salesforce.com/docs/platform/salesforce-code-analyzer/guide/mcp.html",
+      "title": "Salesforce Developers (https://developer.salesforce.com/docs/platform/salesforce-code-analyzer/guide/mcp.html)",
+      "snippet": "Salesforce Developers (https://developer.salesforce.com/docs/platform/salesforce-code-analyzer/guide/mcp.html)\n【turn19search5】 [wordlim: 200] Crawled: today; Salesforce Code Analyzer includes MCP tools in the Salesforce DX MCP Server to scan your code. ... See the Install and Configure the Salesforce DX MCP Server (Beta) section in the Salesforce DX Dev Guide for complete details and examples.\n"
+    },
+    {
+      "url": "https://developer.salesforce.com/docs/platform/api-rest/guide/intro-rest-compatible-editions.html",
+      "title": "Salesforce Developers (https://developer.salesforce.com/docs/platform/api-rest/guide/intro-rest-compatible-editions.html)",
+      "snippet": "Salesforce Developers (https://developer.salesforce.com/docs/platform/api-rest/guide/intro-rest-compatible-editions.html)\n【turn19search6】 [wordlim: 200] Crawled: 2 weeks ago; There’s more than one Salesforce Edition that supports API access and multiple ways to grant API permission to a user. ... For more information, visit Salesforce Help: Add Products and Licenses with the Your Account App or contact a Salesforce account executive. ... To protect the configuration and live data in your production org, we recommend using an isolated environment for active development and testing, such as aDeveloper Edition org, sandbox, or scratch org.\n"
+    },
+    {
+      "url": "https://developer.salesforce.com/docs/platform/hosted-mcp-servers/guide/servers-reference.html",
+      "title": "Salesforce Developers (https://developer.salesforce.com/docs/platform/hosted-mcp-servers/guide/servers-reference.html)",
+      "snippet": "Salesforce Developers (https://developer.salesforce.com/docs/platform/hosted-mcp-servers/guide/servers-reference.html)\n【turn19search7】 [wordlim: 200] Crawled: 5 days ago; Salesforce provides a set of standard MCP servers that expose built-in platform and product capabilities. ... Archive Connect tools (search, unarchive, analysis, and compliance operations on archived records) are available through this server.\n"
+    },
+    {
+      "url": "https://developer.salesforce.com/docs/platform/hosted-mcp-servers/guide/hosted-mcp-servers-overview.html",
+      "title": "Salesforce Developers (https://developer.salesforce.com/docs/platform/hosted-mcp-servers/guide/hosted-mcp-servers-overview.html)",
+      "snippet": "Salesforce Developers (https://developer.salesforce.com/docs/platform/hosted-mcp-servers/guide/hosted-mcp-servers-overview.html)\n【turn19search8】 [wordlim: 200] Crawled: today; Think of it as a universal connector: instead of building custom API integrations for each AI tool your team uses, you configure a server once in Salesforce, and any MCP-compatible client can connect to it by using standard OAuth-based authentication. ...   * For detailed server documentation, see the Servers Reference\n"
+    },
+    {
+      "url": "https://developer.salesforce.com/docs/platform/hosted-mcp-servers/guide/activate-mcp-servers.html",
+      "title": "Salesforce Developers (https://developer.salesforce.com/docs/platform/hosted-mcp-servers/guide/activate-mcp-servers.html)",
+      "snippet": "Salesforce Developers (https://developer.salesforce.com/docs/platform/hosted-mcp-servers/guide/activate-mcp-servers.html)\n【turn19search9】 [wordlim: 200] Crawled: yesterday; From Setup, in the Quick Find box, enter MCP Servers, and then select MCP Servers under API Catalog. ... > Note: It can take up to 2 minutes for a server to become active after you enable it.\n"
+    },
+    {
+      "url": "https://developer.salesforce.com/docs/ai/agentforce/guide/agent-dx-mcp.html",
+      "title": "Salesforce Developers (https://developer.salesforce.com/docs/ai/agentforce/guide/agent-dx-mcp.html)",
+      "snippet": "Salesforce Developers (https://developer.salesforce.com/docs/ai/agentforce/guide/agent-dx-mcp.html)\n【turn19search10】 [wordlim: 200] Crawled: 6 days ago; The API Catalog is the centralized Setup hub for creating and managing Salesforce-Hosted MCP Servers. ... The commands aren’t generally available until Salesforce announces their general availability in documentation, press releases, or public statements. ... `agent mcp asset list`  | List the assets (tools, prompts, and resources) for an MCP server in the API Catalog.\n"
+    },
+    {
+      "url": "https://developer.salesforce.com/docs/platform/hosted-mcp-servers/guide/server-urls.html",
+      "title": "Salesforce Developers (https://developer.salesforce.com/docs/platform/hosted-mcp-servers/guide/server-urls.html)",
+      "snippet": "Salesforce Developers (https://developer.salesforce.com/docs/platform/hosted-mcp-servers/guide/server-urls.html)\n【turn19search13】 [wordlim: 200] Crawled: today; Production  | `https://api.salesforce.com/platform/mcp/v1/<SERVER-NAME>`  | `https://api.salesforce.com/platform/mcp/v1/d/<MY-DOMAIN-NAME>/<SERVER-NAME>`\n"
+    },
+    {
+      "url": "https://resources.docs.salesforce.com/latest/latest/en-us/sfdc/pdf/api_rest.pdf",
+      "title": "REST API Developer Guide (https://resources.docs.salesforce.com/latest/latest/en-us/sfdc/pdf/api_rest.pdf)",
+      "snippet": "REST API Developer Guide (https://resources.docs.salesforce.com/latest/latest/en-us/sfdc/pdf/api_rest.pdf)\n【turn19search36】 [wordlim: 200] Published: 7 months ago; There’s more than one Salesforce Edition that supports API access and multiple ways to grant API permission to a user. ... For more information, visit Salesforce Help: Add Products and Licenses with the Your Account App or contact a Salesforce account executive. ... To protect the configuration and live data in your production org, we recommend using an isolated environment for active development and testing, such as a Developer Edition org, sandbox, or scratch org.\n"
+    },
+    {
+      "url": "https://developer.salesforce.com/docs/platform/api-asynch/guide/authentication.html",
+      "title": "Salesforce Developers (https://developer.salesforce.com/docs/platform/api-asynch/guide/authentication.html)",
+      "snippet": "Salesforce Developers (https://developer.salesforce.com/docs/platform/api-asynch/guide/authentication.html)\n【turn19search17】 [wordlim: 200] Crawled: 5 days ago; Bulk API 2.0 is a REST-based API that supports all OAuth 2.0 flows supported by other Salesforce REST APIs. ... In the browser, log in to your Developer org or sandbox with your user’s credentials. ... After you’ve authenticated successfully, try out these optional shortcuts in your cURL workflow to streamline future authentication with the Salesforce CLI.\n"
+    },
+    {
+      "url": "https://resources.docs.salesforce.com/latest/latest/en-us/sfdc/pdf/api_meta.pdf",
+      "title": "Metadata API Developer Guide (https://resources.docs.salesforce.com/latest/latest/en-us/sfdc/pdf/api_meta.pdf)",
+      "snippet": "Metadata API Developer Guide (https://resources.docs.salesforce.com/latest/latest/en-us/sfdc/pdf/api_meta.pdf)\n【turn19search37】 [wordlim: 200] Published: 7 months ago; In VSCode, in the Agentforce panel, click the **Configure** tab and turn on the Salesforce API Context Server. ... Code block showing an `mcpServers` JSON configuration for `\"salesforce-api-context\"` with `\"command\": \"npx\"`, `\"args\"` including `\"-y\"`, `\"mcp-remote@0.1.18\"`, the Salesforce MCP URL `https://api.salesforce.com/platform/mcp/v1-beta.2/platform/salesforce-api-context`, port `\"8080\"`, and `--static-oauth-client-info` with `client_id` set to `YOUR_CONSUMER_KEY` and an empty `client_secret`.\n"
+    },
+    {
+      "url": "https://developer.salesforce.com/docs/platform/api/guide/sforce-api-calls-login.html",
+      "title": "Salesforce Developers (https://developer.salesforce.com/docs/platform/api/guide/sforce-api-calls-login.html)",
+      "snippet": "Salesforce Developers (https://developer.salesforce.com/docs/platform/api/guide/sforce-api-calls-login.html)\n【turn19search18】 [wordlim: 200] Crawled: today; Salesforce is retiring SOAP API `login()` in the Summer ‘27 release. `login()` remains available in API version 64.0 and earlier. ... Upon invocation, the API authenticates the credentials. ... The default Salesforce login URLs: `https://login.salesforce.com` for production and Developer Edition orgs and `https://test.salesforce.com` for sandboxes. ... Client apps can send login requests to these endpoints (using valid values for the authentication endpoint).\n"
+    },
+    {
+      "url": "https://resources.docs.salesforce.com/latest/latest/en-us/sfdc/pdf/apex_api.pdf",
+      "title": "SOAP API Developer Guide (https://resources.docs.salesforce.com/latest/latest/en-us/sfdc/pdf/apex_api.pdf)",
+      "snippet": "SOAP API Developer Guide (https://resources.docs.salesforce.com/latest/latest/en-us/sfdc/pdf/apex_api.pdf)\n【turn19search38】 [wordlim: 200] Published: 7 months ago; Client apps must log in using valid credentials. ... When users log in to Salesforce via the user interface, the API, or a desktop client such as Salesforce for Outlook, Connect Offline, Connect for Office, or the Data Loader, Salesforce authorizes the login as follows. ... If the user has the Multi-Factor Authentication for API Logins permission and connected an authenticator app to the account, the user must enter a verification code (TOTP) generated by the authenticator app.\n"
+    },
+    {
+      "url": "https://developer.salesforce.com/docs/atlas.en-us.api.meta/apiContent/sforce_api_concepts_security.htm",
+      "title": "Salesforce Developers (https://developer.salesforce.com/docs/atlas.en-us.api.meta/apiContent/sforce_api_concepts_security.htm)",
+      "snippet": "Salesforce Developers (https://developer.salesforce.com/docs/atlas.en-us.api.meta/apiContent/sforce_api_concepts_security.htm)\n【turn19search19】 [wordlim: 200] Crawled: last week; Client apps must log in using valid credentials. ... When users log in to Salesforce via the user interface, the API, or a desktop client such as Salesforce for Outlook, Connect Offline, Connect for Office, or the Data Loader, Salesforce authorizes the login as follows. ... If the user has the Multi-Factor Authentication for API Logins permission and connected an authenticator app to the account, the user must enter a verification code (TOTP) generated by the authenticator app.\n"
+    },
+    {
+      "url": "https://developer.salesforce.com/docs/platform/api-rest/guide/quickstart-dev-org.html",
+      "title": "Salesforce Developers (https://developer.salesforce.com/docs/platform/api-rest/guide/quickstart-dev-org.html)",
+      "snippet": "Salesforce Developers (https://developer.salesforce.com/docs/platform/api-rest/guide/quickstart-dev-org.html)\n【turn19search20】 [wordlim: 200] Crawled: today; To sign up for a Developer Edition account, go to developer.salesforce.com/signup. ...   * Knowledge Article: Salesforce editions with API access\n"
+    },
+    {
+      "url": "https://developer.salesforce.com/docs/platform/api/guide/sforce-api-concepts-security.html",
+      "title": "Salesforce Developers (https://developer.salesforce.com/docs/platform/api/guide/sforce-api-concepts-security.html)",
+      "snippet": "Salesforce Developers (https://developer.salesforce.com/docs/platform/api/guide/sforce-api-concepts-security.html)\n【turn19search21】 [wordlim: 200] Crawled: today; Client apps must log in using valid credentials. ... When users log in to Salesforce via the user interface, the API, or a desktop client such as Salesforce for Outlook, Connect Offline, Connect for Office, or the Data Loader, Salesforce authorizes the login as follows. ... If the user has the Multi-Factor Authentication for API Logins permission and connected an authenticator app to the account, the user must enter a verification code (TOTP) generated by the authenticator app.\n"
+    },
+    {
+      "url": "https://developer.salesforce.com/docs/platform/api/guide/sforce-api-quickstart-steps-obtain-dev-org.html",
+      "title": "Salesforce Developers (https://developer.salesforce.com/docs/platform/api/guide/sforce-api-quickstart-steps-obtain-dev-org.html)",
+      "snippet": "Salesforce Developers (https://developer.salesforce.com/docs/platform/api/guide/sforce-api-quickstart-steps-obtain-dev-org.html)\n【turn19search22】 [wordlim: 200] Crawled: today; Use Salesforce Developer Edition to develop, stage, and test your API code against sample data. ... After you’ve tested your code, you can implement it in an edition with API access.\n"
+    },
+    {
+      "url": "https://developer.salesforce.com/blogs/2023/03/using-the-client-credentials-flow-for-easier-api-authentication",
+      "title": "Using the Client Credentials Flow for Easier API Authentication | Salesforce Developers Blog (https://developer.salesforce.com/blogs/2023/03/using-the-client-credentials-flow-for-easier-api-authentication)",
+      "snippet": "Using the Client Credentials Flow for Easier API Authentication | Salesforce Developers Blog (https://developer.salesforce.com/blogs/2023/03/using-the-client-credentials-flow-for-easier-api-authentication)\n【turn19search25】 [wordlim: 200] Published: 3.7 years ago; Crawled: today; Salesforce lets you use that in several areas, such as your My Domain or Experience Cloud login pages, via an authentication provider. ... Note that Developer Edition orgs do not have the API Only permission, so if you’re on Spring ‘23, you’ll need a different edition. ... We’re in luck as the Salesforce API Collection (brought to you by the amazing Philippe Ozil) already contains a sample for client credentials.\n"
+    },
+    {
+      "url": "https://developer.salesforce.com/docs/platform/salesforce-app-limits-cheatsheet/guide/salesforce-app-limits-platform-api.html",
+      "title": "Salesforce Developers (https://developer.salesforce.com/docs/platform/salesforce-app-limits-cheatsheet/guide/salesforce-app-limits-platform-api.html)",
+      "snippet": "Salesforce Developers (https://developer.salesforce.com/docs/platform/salesforce-app-limits-cheatsheet/guide/salesforce-app-limits-platform-api.html)\n【turn19search26】 [wordlim: 200] Crawled: today; Production orgs and Sandboxes  | 25 ...   * Professional Edition with API access enabled ... API calls issued by certain Salesforce connected apps (for example, the Salesforce mobile app) don’t count. ... For more information, visit Salesforce Help: Add Products and Licenses with the Your Account App or contact your account executive. ...   * For a Developer Edition org that made 14,500 calls at 5:00 AM Wednesday, 499 calls at 11:00 PM Wednesday, only one more call can successfully be made until 5:00 AM Thursday.\n"
+    },
+    {
+      "url": "https://developer.salesforce.com/docs/platform/api-tooling/references/tooling-objects/tooling-externalcredential.html",
+      "title": "Salesforce Developers (https://developer.salesforce.com/docs/platform/api-tooling/references/tooling-objects/tooling-externalcredential.html)",
+      "snippet": "Salesforce Developers (https://developer.salesforce.com/docs/platform/api-tooling/references/tooling-objects/tooling-externalcredential.html)\n【turn19search30】 [wordlim: 200] Crawled: today; # ExternalCredential ... Salesforce encrypts your credentials by auto-creating org-specific keys. ... Introduced in API version 54.0. ... For Simple URL data sources, select `NoAuthentication`. ... With this field, a developer can change the object’s name in a managed package and the changes are reflected in a subscriber’s organization.\n"
+    },
+    {
+      "url": "https://developer.salesforce.com/blogs/2024/02/invoke-rest-apis-with-the-salesforce-integration-user-and-oauth-client-credentials",
+      "title": "Invoke REST APIs with the Salesforce Integration User and OAuth Client Credentials | Salesforce Developers Blog (https://developer.salesforce.com/blogs/2024/02/invoke-rest-apis-with-the-salesforce-integration-user-and-oauth-client-credentials)",
+      "snippet": "Invoke REST APIs with the Salesforce Integration User and OAuth Client Credentials | Salesforce Developers Blog (https://developer.salesforce.com/blogs/2024/02/invoke-rest-apis-with-the-salesforce-integration-user-and-oauth-client-credentials)\n【turn19search31】 [wordlim: 200] Published: 2.8 years ago; Crawled: today; ## Authentication using OAuth Client Credentials Flow ... You can read more about the implementation of the flow in the documentation. ... JWT access tokens have hard timeouts, and this allows you to inspect the token before making a call to the Salesforce API to check if it should still be valid.\n"
+    },
+    {
+      "url": "https://developer.salesforce.com/blogs/2024/11/api-limits-and-monitoring-your-api-usage",
+      "title": "API Limits and Monitoring Your API Usage | Salesforce Developers Blog (https://developer.salesforce.com/blogs/2024/11/api-limits-and-monitoring-your-api-usage)",
+      "snippet": "API Limits and Monitoring Your API Usage | Salesforce Developers Blog (https://developer.salesforce.com/blogs/2024/11/api-limits-and-monitoring-your-api-usage)\n【turn19search34】 [wordlim: 200] Published: 2.0 years ago; Crawled: today; The soft limit behavior of the Daily API Request Limit means that are you not blocked due to temporary and/or unplanned bursts in API activity — for example, when a production issue results in a runaway process that burns through API calls unexpectedly, or an unanticipated spike in traffic results from an over-performing campaign. ... In addition, using the My Account app in your org, you can purchase the `Additional API Calls - 10,000 per day` SKU to increase your Daily API Limit. ... You can also access the event log data via the API, and this is well described in the blog post An Important Update to Our Legacy API Retirement Plan. ... The blog post, Stop Manually Downloading Event Logs: Automate Your API Monitoring, describes how to do this using the Salesforce CLI and an open-source Python script provided by Salesforce.\n"
+    },
+    {
+      "url": "https://developer.salesforce.com/docs/atlas.en-us.api.meta/service/implementation_considerations.htm",
+      "title": "Salesforce Developers (https://developer.salesforce.com/docs/atlas.en-us.api.meta/service/implementation_considerations.htm)",
+      "snippet": "Salesforce Developers (https://developer.salesforce.com/docs/atlas.en-us.api.meta/service/implementation_considerations.htm)\n【turn19search35】 [wordlim: 200] Crawled: yesterday; To access your org’s sandbox via the API, use the following URLs to make login requests. ... Developer Edition and Trial orgs  | 5\nProduction orgs and Sandboxes  | 25 ...  | 100,000 + (number of licenses x calls per license type) + purchased API Call Add-Ons ... API calls issued by certain Salesforce connected apps (for example, the Salesforce mobile app) don’t count. ... To increase your allocation, contact your Salesforce account representative.\n"
+    }
+  ],
+  "selected": [
+    {
+      "url": "https://developer.salesforce.com/docs/platform/api-rest/guide/quickstart-oauth.html",
+      "title": "Salesforce Developers (https://developer.salesforce.com/docs/platform/api-rest/guide/quickstart-oauth.html)",
+      "snippet": "Salesforce Developers (https://developer.salesforce.com/docs/platform/api-rest/guide/quickstart-oauth.html)\n【turn19search1】 [wordlim: 200] Crawled: 5 days ago; To successfully send requests, REST API requires an access token obtained by authentication. ... In the browser, log in to your Developer org or sandbox with your user’s credentials. ... After you’ve authenticated successfully, try out these optional shortcuts in your cURL workflow to streamline future authentication with the Salesforce CLI.\n"
+    },
+    {
+      "url": "https://developer.salesforce.com/docs/platform/api-rest/guide/quickstart.html",
+      "title": "Salesforce Developers (https://developer.salesforce.com/docs/platform/api-rest/guide/quickstart.html)",
+      "snippet": "Salesforce Developers (https://developer.salesforce.com/docs/platform/api-rest/guide/quickstart.html)\n【turn19search2】 [wordlim: 200] Crawled: yesterday; To set up and run REST API, send a few basic requests to Salesforce. ... Developer Edition provides a free and easy solution so that you can use Salesforce for testing and development. ... To successfully send requests, REST API requires an access token obtained by authentication.\n"
+    },
+    {
+      "url": "https://developer.salesforce.com/docs/platform/salesforce-code-analyzer/guide/mcp.html",
+      "title": "Salesforce Developers (https://developer.salesforce.com/docs/platform/salesforce-code-analyzer/guide/mcp.html)",
+      "snippet": "Salesforce Developers (https://developer.salesforce.com/docs/platform/salesforce-code-analyzer/guide/mcp.html)\n【turn19search5】 [wordlim: 200] Crawled: today; Salesforce Code Analyzer includes MCP tools in the Salesforce DX MCP Server to scan your code. ... See the Install and Configure the Salesforce DX MCP Server (Beta) section in the Salesforce DX Dev Guide for complete details and examples.\n"
+    },
+    {
+      "url": "https://developer.salesforce.com/docs/platform/api-rest/guide/intro-rest-compatible-editions.html",
+      "title": "Salesforce Developers (https://developer.salesforce.com/docs/platform/api-rest/guide/intro-rest-compatible-editions.html)",
+      "snippet": "Salesforce Developers (https://developer.salesforce.com/docs/platform/api-rest/guide/intro-rest-compatible-editions.html)\n【turn19search6】 [wordlim: 200] Crawled: 2 weeks ago; There’s more than one Salesforce Edition that supports API access and multiple ways to grant API permission to a user. ... For more information, visit Salesforce Help: Add Products and Licenses with the Your Account App or contact a Salesforce account executive. ... To protect the configuration and live data in your production org, we recommend using an isolated environment for active development and testing, such as aDeveloper Edition org, sandbox, or scratch org.\n"
+    },
+    {
+      "url": "https://developer.salesforce.com/docs/platform/hosted-mcp-servers/guide/servers-reference.html",
+      "title": "Salesforce Developers (https://developer.salesforce.com/docs/platform/hosted-mcp-servers/guide/servers-reference.html)",
+      "snippet": "Salesforce Developers (https://developer.salesforce.com/docs/platform/hosted-mcp-servers/guide/servers-reference.html)\n【turn19search7】 [wordlim: 200] Crawled: 5 days ago; Salesforce provides a set of standard MCP servers that expose built-in platform and product capabilities. ... Archive Connect tools (search, unarchive, analysis, and compliance operations on archived records) are available through this server.\n"
+    },
+    {
+      "url": "https://developer.salesforce.com/docs/platform/hosted-mcp-servers/guide/hosted-mcp-servers-overview.html",
+      "title": "Salesforce Developers (https://developer.salesforce.com/docs/platform/hosted-mcp-servers/guide/hosted-mcp-servers-overview.html)",
+      "snippet": "Salesforce Developers (https://developer.salesforce.com/docs/platform/hosted-mcp-servers/guide/hosted-mcp-servers-overview.html)\n【turn19search8】 [wordlim: 200] Crawled: today; Think of it as a universal connector: instead of building custom API integrations for each AI tool your team uses, you configure a server once in Salesforce, and any MCP-compatible client can connect to it by using standard OAuth-based authentication. ...   * For detailed server documentation, see the Servers Reference\n"
+    }
+  ],
+  "pages": [
+    {
+      "url": "https://developer.salesforce.com/docs/platform/api-rest/guide/quickstart-oauth.html",
+      "requested_url": "https://developer.salesforce.com/docs/platform/api-rest/guide/quickstart-oauth.html",
+      "status": 403,
+      "title": "Salesforce Developers (https://developer.salesforce.com/docs/platform/api-rest/guide/quickstart-oauth.html)",
+      "text": "Oops Something went wrong Reference id: 0.7caf3b17.1795442891.1b6dc290"
+    },
+    {
+      "url": "https://developer.salesforce.com/docs/platform/api-rest/guide/quickstart.html",
+      "requested_url": "https://developer.salesforce.com/docs/platform/api-rest/guide/quickstart.html",
+      "status": 403,
+      "title": "Salesforce Developers (https://developer.salesforce.com/docs/platform/api-rest/guide/quickstart.html)",
+      "text": "Oops Something went wrong Reference id: 0.6caf3b17.1795442891.169f1722"
+    },
+    {
+      "url": "https://developer.salesforce.com/docs/platform/salesforce-code-analyzer/guide/mcp.html",
+      "requested_url": "https://developer.salesforce.com/docs/platform/salesforce-code-analyzer/guide/mcp.html",
+      "status": 403,
+      "title": "Salesforce Developers (https://developer.salesforce.com/docs/platform/salesforce-code-analyzer/guide/mcp.html)",
+      "text": "Oops Something went wrong Reference id: 0.6caf3b17.1795442891.169f179d"
+    },
+    {
+      "url": "https://developer.salesforce.com/docs/platform/api-rest/guide/intro-rest-compatible-editions.html",
+      "requested_url": "https://developer.salesforce.com/docs/platform/api-rest/guide/intro-rest-compatible-editions.html",
+      "status": 403,
+      "title": "Salesforce Developers (https://developer.salesforce.com/docs/platform/api-rest/guide/intro-rest-compatible-editions.html)",
+      "text": "Oops Something went wrong Reference id: 0.6caf3b17.1795442892.169f17e9"
+    },
+    {
+      "url": "https://developer.salesforce.com/docs/platform/hosted-mcp-servers/guide/servers-reference.html",
+      "requested_url": "https://developer.salesforce.com/docs/platform/hosted-mcp-servers/guide/servers-reference.html",
+      "status": 403,
+      "title": "Salesforce Developers (https://developer.salesforce.com/docs/platform/hosted-mcp-servers/guide/servers-reference.html)",
+      "text": "Oops Something went wrong Reference id: 0.6caf3b17.1795442892.169f185c"
+    },
+    {
+      "url": "https://developer.salesforce.com/docs/platform/hosted-mcp-servers/guide/hosted-mcp-servers-overview.html",
+      "requested_url": "https://developer.salesforce.com/docs/platform/hosted-mcp-servers/guide/hosted-mcp-servers-overview.html",
+      "status": 403,
+      "title": "Salesforce Developers (https://developer.salesforce.com/docs/platform/hosted-mcp-servers/guide/hosted-mcp-servers-overview.html)",
+      "text": "Oops Something went wrong Reference id: 0.7caf3b17.1795442892.1b6dc4d4"
+    }
+  ],
+  "claims": {
+    "auth": {
+      "value": "unknown",
+      "sources": [],
+      "evidence": [],
+      "reason": "Targeted search found no usable, claim-specific official documentation"
+    },
+    "credential_gate": {
+      "value": "unknown",
+      "sources": [],
+      "evidence": [],
+      "reason": "No reliable automated access-tier extraction; targeted search results require claim-specific review"
+    },
+    "api_surface": {
+      "value": "unknown",
+      "sources": [],
+      "evidence": [],
+      "reason": "Targeted search found no usable, claim-specific official documentation"
+    },
+    "official_mcp": {
+      "value": "unknown",
+      "sources": [],
+      "evidence": [],
+      "reason": "Targeted search found no usable, claim-specific official documentation"
+    },
+    "composio_toolkit": {
+      "value": "listed",
+      "sources": [
+        "https://docs.composio.dev/toolkits/salesforce"
+      ],
+      "evidence": [
+        {
+          "url": "https://docs.composio.dev/toolkits/salesforce",
+          "excerpt": "Composio catalog match; verify product scope"
+        }
+      ],
+      "reason": ""
+    },
+    "verdict": {
+      "value": "unknown",
+      "sources": [],
+      "evidence": [],
+      "reason": "Insufficient independently verified authentication, API and access evidence for a build decision"
+    }
+  },
+  "validation": [
+    "Automatic extraction is provisional and must be checked independently",
+    "Unknown does not mean the capability is absent"
+  ]
+}

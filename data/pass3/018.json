@@ -1,0 +1,14 @@
+{
+  "app": "Help Scout",
+  "source_pass": "data\\pass2\\018.json",
+  "access_candidates": [
+    {
+      "value": "self-serve / free or trial mentioned",
+      "url": "https://docs.helpscout.com/article/1140-mailbox-api",
+      "excerpt": "calls per minute All endpoints available Pro Up to 800 calls per minute All endpoints available The Free plan does not include access to the API or integrations. Links to Specific Documentation The developer documentation is your definitive source for complete information. https://developer.helpscout.com/mailbox-api/ will take you directly to the Inbox AP",
+      "status": "provisional; check scope, negation and plan details"
+    }
+  ],
+  "reason_if_unknown": "",
+  "warning": "A phrase match is not a verified credential gate or a buildability verdict."
+}

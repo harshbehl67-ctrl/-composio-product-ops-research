@@ -1,0 +1,554 @@
+[
+  {
+    "app": "Apify",
+    "field": "auth",
+    "value": "API token (Bearer)",
+    "url": "https://docs.apify.com/integrations/api",
+    "note": "Vendor documentation describes an API token for integrations."
+  },
+  {
+    "app": "Apify",
+    "field": "credential_gate",
+    "value": "Self-serve account; free plan includes monthly credits",
+    "url": "https://docs.apify.com/agents/quickstart",
+    "note": "The quickstart describes creating a token and the free-plan credits."
+  },
+  {
+    "app": "Apify",
+    "field": "verdict",
+    "value": "build now for development; usage limits apply",
+    "url": "https://docs.apify.com/agents/quickstart",
+    "note": "Product-ops inference from the documented self-serve token and free development credits; no credential was tested."
+  },
+  {
+    "app": "Shopify",
+    "field": "credential_gate",
+    "value": "Partner account or merchant store with developer permissions; development stores available",
+    "url": "https://shopify.dev/docs/apps/build/stores/development-stores",
+    "note": "A dev store is for development and testing; production store data needs the merchant's authorization."
+  },
+  {
+    "app": "Shopify",
+    "field": "verdict",
+    "value": "build with developer store; merchant authorization for production",
+    "url": "https://shopify.dev/docs/apps/build/stores/development-stores",
+    "note": "Product-ops inference for developer testing; merchant access and scopes are separate.",
+    "additional_sources": [
+      "https://shopify.dev/docs/api/usage/authentication"
+    ]
+  },
+  {
+    "app": "GitHub",
+    "field": "credential_gate",
+    "value": "Personal access token can be created for personal API use; organization policy may restrict access",
+    "url": "https://docs.github.com/en/rest/authentication/authenticating-to-the-rest-api",
+    "note": "Personal access token and application token paths are documented."
+  },
+  {
+    "app": "GitHub",
+    "field": "verdict",
+    "value": "build now for personal account; organization access may need approval",
+    "url": "https://docs.github.com/en/rest/authentication/authenticating-to-the-rest-api",
+    "note": "Product-ops inference from documented personal token path; organization permissions remain separate."
+  },
+  {
+    "app": "Reducto",
+    "field": "auth",
+    "value": "API key",
+    "url": "https://reducto.ai/developers",
+    "note": "The vendor developer page describes signing up and creating an API key."
+  },
+  {
+    "app": "Reducto",
+    "field": "credential_gate",
+    "value": "Self-serve signup and API key creation documented; pricing and plan limits unresolved",
+    "url": "https://reducto.ai/developers",
+    "note": "The developer page documents signup and key creation, not all plan restrictions."
+  },
+  {
+    "app": "HubSpot",
+    "field": "credential_gate",
+    "value": "Free developer test account; super admin required for public install or private app",
+    "url": "https://developers.hubspot.com/blog/harnessing-the-power-of-hubspots-public-apis-with-postman",
+    "note": "Test account path and install permissions are distinct."
+  },
+  {
+    "app": "HubSpot",
+    "field": "verdict",
+    "value": "build for developer test; customer super admin may be required for installation",
+    "url": "https://developers.hubspot.com/blog/harnessing-the-power-of-hubspots-public-apis-with-postman",
+    "note": "Scoped inference for developer testing and public or private app installation."
+  },
+  {
+    "app": "Zendesk",
+    "field": "credential_gate",
+    "value": "Legacy API-token creation requires an administrator; migration to OAuth is required",
+    "url": "https://support.zendesk.com/hc/en-us/articles/4408889192858-Managing-API-token-access-to-the-Zendesk-API",
+    "note": "This is the legacy token path; use current OAuth migration guidance."
+  },
+  {
+    "app": "Intercom",
+    "field": "credential_gate",
+    "value": "Free developer workspace is available for development",
+    "url": "https://www.intercom.com/help/en/articles/9071694-intercom-developer-faqs",
+    "note": "Developer workspaces are free and intended for development."
+  },
+  {
+    "app": "Intercom",
+    "field": "verdict",
+    "value": "build now for development in free developer workspace",
+    "url": "https://www.intercom.com/help/en/articles/9071694-intercom-developer-faqs",
+    "note": "Scoped inference: development access does not prove production customer permissions."
+  },
+  {
+    "app": "Freshdesk",
+    "field": "credential_gate",
+    "value": "MCP settings and API-key generation are controlled through administrator settings",
+    "url": "https://support.freshdesk.com/support/solutions/articles/50000014407-mcp-integration-frequently-asked-questions-faq-",
+    "note": "This finding applies specifically to Freshdesk MCP configuration."
+  },
+  {
+    "app": "Pylon",
+    "field": "credential_gate",
+    "value": "API token requires token-management permission or workspace admin assistance",
+    "url": "https://support.usepylon.com/articles/4735104435-how-do-i-create-an-api-token",
+    "note": "The vendor explains the permission and token creation path."
+  },
+  {
+    "app": "Pylon",
+    "field": "verdict",
+    "value": "needs customer token-management permission or admin access",
+    "url": "https://support.usepylon.com/articles/4735104435-how-do-i-create-an-api-token",
+    "note": "Inference for access to a customer workspace, not a claim that signup is unavailable."
+  },
+  {
+    "app": "Help Scout",
+    "field": "credential_gate",
+    "value": "Free plan excludes API and integrations; paid plan required",
+    "url": "https://docs.helpscout.com/article/1140-mailbox-api",
+    "note": "Vendor documentation explicitly excludes API access from Free plan."
+  },
+  {
+    "app": "Help Scout",
+    "field": "verdict",
+    "value": "needs paid plan with API access",
+    "url": "https://docs.helpscout.com/article/1140-mailbox-api",
+    "note": "Inference based on documented Free-plan exclusion."
+  },
+  {
+    "app": "Gorgias",
+    "field": "credential_gate",
+    "value": "An admin can generate an account access token; privileges follow the associated user",
+    "url": "https://developers.gorgias.com/docs/access-tokens-api-keys",
+    "note": "Applies to access-token path; OAuth marketplace requirements may differ."
+  },
+  {
+    "app": "Gorgias",
+    "field": "verdict",
+    "value": "needs customer account and appropriate administrator/user permissions",
+    "url": "https://developers.gorgias.com/docs/access-tokens-api-keys",
+    "note": "Scoped inference for the documented access-token path."
+  },
+  {
+    "app": "Gladly",
+    "field": "credential_gate",
+    "value": "A technical admin creates a token for a user with the API User role",
+    "url": "https://help.gladly.com/implementation/docs/get-your-api-tokens",
+    "note": "Vendor token setup describes an admin and API User role."
+  },
+  {
+    "app": "Gladly",
+    "field": "verdict",
+    "value": "needs customer administrator and API User role",
+    "url": "https://help.gladly.com/implementation/docs/get-your-api-tokens",
+    "note": "Scoped inference for token setup."
+  },
+  {
+    "app": "Pinterest",
+    "field": "credential_gate",
+    "value": "Trial access precedes Standard access; Standard requires application approval",
+    "url": "https://developer.pinterest.com/docs/key-concepts/access-tiers/",
+    "note": "Access levels and requirements vary by use case."
+  },
+  {
+    "app": "Pinterest",
+    "field": "verdict",
+    "value": "needs vendor review for Standard access",
+    "url": "https://developer.pinterest.com/docs/key-concepts/access-tiers/",
+    "note": "Inference for Standard access, not trial access."
+  },
+  {
+    "app": "Bright Data",
+    "field": "credential_gate",
+    "value": "MCP pricing page documents a free tier and account API-token creation",
+    "url": "https://brightdata.com/pricing/mcp-server",
+    "note": "This concerns MCP and stated usage limits, not all Bright Data products."
+  },
+  {
+    "app": "Clay",
+    "field": "credential_gate",
+    "value": "14-day trial includes HTTP API capabilities and limited data credits",
+    "url": "https://university.clay.com/docs/plans-and-billing",
+    "note": "The source does not establish all authentication or post-trial requirements."
+  },
+  {
+    "app": "Airtable",
+    "field": "credential_gate",
+    "value": "Free plan has a documented API call limit",
+    "url": "https://support.airtable.com/articles/2111090641-Airtable-API%3A-Common-troubleshooting",
+    "note": "An API usage limit is documented; this source alone does not establish credential setup."
+  },
+  {
+    "app": "Monday.com",
+    "field": "credential_gate",
+    "value": "Free developer account can be created for an API token and testing",
+    "url": "https://developer.monday.com/api-reference/docs/authentication",
+    "note": "Vendor docs describe creating a free developer account."
+  },
+  {
+    "app": "Monday.com",
+    "field": "verdict",
+    "value": "build now for developer testing; user permissions apply",
+    "url": "https://developer.monday.com/api-reference/docs/authentication",
+    "note": "Inference from free developer token path; production user permissions apply."
+  },
+  {
+    "app": "Grain",
+    "field": "credential_gate",
+    "value": "Personal API tokens available on Free; workspace API access requires Business or Enterprise and admin",
+    "url": "https://support.grain.com/en/articles/15507288-grain-api",
+    "note": "The vendor distinguishes personal and workspace tokens."
+  },
+  {
+    "app": "Grain",
+    "field": "verdict",
+    "value": "build personal-token path; workspace access needs paid plan and admin",
+    "url": "https://support.grain.com/en/articles/15507288-grain-api",
+    "note": "Scoped inference; team workspace integration has different requirements."
+  },
+  {
+    "app": "Notion",
+    "field": "credential_gate",
+    "value": "Connection owners can obtain API tokens; creation depends on plan and workspace settings",
+    "url": "https://www.notion.com/help/create-integrations-with-the-notion-api",
+    "note": "Do not infer a universal admin or payment gate."
+  },
+  {
+    "app": "Meta Ads",
+    "field": "credential_gate",
+    "value": "Business Manager admin or system-user credentials used for documented system-user token path",
+    "url": "https://developers.facebook.com/docs/business-management-apis/system-users/install-apps-and-generate-tokens?locale=en_US",
+    "note": "Scope limited to the system-user token path; additional app review may apply."
+  },
+  {
+    "app": "Pipedrive",
+    "field": "official_mcp",
+    "value": "yes",
+    "url": "https://www.pipedrive.com/en/features/mcp-server",
+    "note": "AI-assisted review of vendor page and extracted context; access and product scope require separate evaluation.",
+    "evidence_excerpt": "Pipedrive MCP Server | Connect Claude & ChatGPT to Your CRM | Pipedrive Skip to main content Connect your AI assistant to Pipedrive with MCP Empower AI assistants like ChatGPT and Claude to securely and reliably work with your Pipedrive dat"
+  },
+  {
+    "app": "Attio",
+    "field": "official_mcp",
+    "value": "yes",
+    "url": "https://attio.com/help/reference/how-to-guides/attio-mcp-prompts-and-best-practices",
+    "note": "AI-assisted review of vendor page and extracted context; access and product scope require separate evaluation.",
+    "evidence_excerpt": "CP (Model Context Protocol) is an open standard that lets AI assistants securely interact with other systems. Your AI assistant connects to Attio's MCP server, you sign in with your Attio account, and the assistant can then use a set of Attio tools: searching records, creating and updating records, working with notes and tasks, managing views, and reading emails and meeting d"
+  },
+  {
+    "app": "Zoho CRM",
+    "field": "official_mcp",
+    "value": "yes",
+    "url": "https://www.zoho.com/crm/developer/docs/mcp/overview.html",
+    "note": "AI-assisted review of vendor page and extracted context; access and product scope require separate evaluation.",
+    "evidence_excerpt": "with the AI agent. Provide instructions in natural language. The agent maps your request to the appropriate tool and executes the action in Zoho CRM. You do not need to learn API endpoints or write code. The MCP server translates your prompts into CRM operations. Note Zoho CRM MCP servers work with any AI tool that supports MCP, including Cursor , Claude Desktop , VS Code , and Windsurf . Pre-built MCP Servers Zoho CRM groups its MCP "
+  },
+  {
+    "app": "Close",
+    "field": "official_mcp",
+    "value": "yes",
+    "url": "https://developer.close.com/mcp",
+    "note": "AI-assisted review of vendor page and extracted context; access and product scope require separate evaluation.",
+    "evidence_excerpt": "Close MCP Server | Close | Developer API Documentation For AI agents: a documentation index is available at the root level at /llms.txt. Append /llms.txt to any URL for a page-level index, or .md for the markdown version of any page. Sk"
+  },
+  {
+    "app": "DealCloud",
+    "field": "official_mcp",
+    "value": "yes",
+    "url": "https://api.docs.dealcloud.com/mcp",
+    "note": "AI-assisted review of vendor page and extracted context; access and product scope require separate evaluation.",
+    "evidence_excerpt": "DealCloud MCP Server - DealCloud API Docs API Reference Getting Started API Keys Authorization Token Pagination Rate Limits Status Codes and Handling Core Schema EntryTypes All Entry Types Entry Type by ID Fields All Fields Fields by EntryT"
+  },
+  {
+    "app": "Freshdesk",
+    "field": "official_mcp",
+    "value": "yes",
+    "url": "https://support.freshdesk.com/support/solutions/articles/50000012670-model-context-protocol-mcp-integration-in-freshdesk",
+    "note": "AI-assisted review of vendor page and extracted context; access and product scope require separate evaluation.",
+    "evidence_excerpt": "Omni 2026. The Freshworks Model Context Protocol (MCP) server enables AI tools like Cursor and Claude to securely connect and interact with Freshdesk. The MCP server acts as middleware to expose specific capabilities, such as creating tickets, by using public APIs and supported authentication methods. This article provides details about supported MCP integrations and how to configur"
+  },
+  {
+    "app": "Help Scout",
+    "field": "official_mcp",
+    "value": "yes",
+    "url": "https://docs.helpscout.com/article/1779-help-scout-mcp-server",
+    "note": "AI-assisted review of vendor page and extracted context; access and product scope require separate evaluation.",
+    "evidence_excerpt": " steps to connect Help Scout to Claude: In Claude, go to Customize > Connectors > Add > and click Add custom connector . Name the connector Help Scout . Set the remote MCP server URL to https://mcp.helpscout.net/mcp . Leave Advanced settings empty. The OAuth Client ID and Client Secret fields are optional; the connector registers itself. Don't enter a Help Scout App ID or secret from My Apps her"
+  },
+  {
+    "app": "Gorgias",
+    "field": "official_mcp",
+    "value": "yes",
+    "url": "https://docs.gorgias.com/en-US/connect-your-ai-assistant-to-the-gorgias-mcp-6310546",
+    "note": "AI-assisted review of vendor page and extracted context; access and product scope require separate evaluation.",
+    "evidence_excerpt": "s by client, but the connection URL is the same: https://mcp.gorgias.com/mcp Refer to your AI client's documentation for how to add an HTTP MCP server, then complete the Gorgias authentication step when prompted: Claude Code (if you sign in with your Claude account, connectors you add in Claude on the web are also available in Claude Code) Codex Cursor VS Code Copilot What your AI assistant can"
+  },
+  {
+    "app": "Twilio",
+    "field": "official_mcp",
+    "value": "yes",
+    "url": "https://www.twilio.com/docs/ai/mcp",
+    "note": "AI-assisted review of vendor page and extracted context; access and product scope require separate evaluation.",
+    "evidence_excerpt": "Twilio MCP server | Twilio Skip to content Skip to navigation Skip to topbar Go to the Twilio Docs home page Twilio Docs Search Search Page tools Copy as markdown Useful for sharing or LLM Copy and view Copy as markdown View as markdown "
+  },
+  {
+    "app": "Zoho Cliq",
+    "field": "official_mcp",
+    "value": "yes",
+    "url": "https://www.zoho.com/cliq/help/platform/zoho-cliq-mcp.html",
+    "note": "AI-assisted review of vendor page and extracted context; access and product scope require separate evaluation.",
+    "evidence_excerpt": "Guide to Zoho Cliq's MCP Server Guide to Zoho Cliq's MCP Server Note: Explore Zoho MCP , and if you encounter any issues, please contact support@zohomcp.com or support@zohocliq.com for assistance. What is MCP? Model Context Protocol (MCP) is an open protocol that establishes the sta"
+  },
+  {
+    "app": "Pumble",
+    "field": "official_mcp",
+    "value": "yes",
+    "url": "https://pumble.com/help/integrations/automation-workflow-integrations/how-to-use-the-pumble-mcp-server/",
+    "note": "AI-assisted review of vendor page and extracted context; access and product scope require separate evaluation.",
+    "evidence_excerpt": "How to use the Pumble MCP server - Pumble Help Integrations Pumble Help Center Integrations How to use the Pumble MCP server In this article How to connect to an MCP server What can you do after connecting to the MCP server? Connect Pumble MCP to Claud"
+  },
+  {
+    "app": "Vonage",
+    "field": "official_mcp",
+    "value": "yes",
+    "url": "https://developer.vonage.com/en/mcp-server/overview",
+    "note": "AI-assisted review of vendor page and extracted context; access and product scope require separate evaluation.",
+    "evidence_excerpt": "Vonage MCP Server Overview | Vonage MCP Server Documenation Skip to Main Content Documentation Vonage MCP Server Vonage MCP Server The Vonage MCP Server enables AI agents and developer tools to discover, describe, and use Vonage capabilities via the Model Context Pr"
+  },
+  {
+    "app": "Mailchimp",
+    "field": "official_mcp",
+    "value": "yes",
+    "url": "https://mailchimp.com/developer/marketing/build/ai-tools/mcp-server/",
+    "note": "AI-assisted review of vendor page and extracted context; access and product scope require separate evaluation.",
+    "evidence_excerpt": "MCP server | Mailchimp | Developer For AI agents: a documentation index is available at the root level at /llms.txt. Append /llms.txt to any URL for a page-level index, or .md for the markdown version of any page. Skip to navigation On this p"
+  },
+  {
+    "app": "Klaviyo",
+    "field": "official_mcp",
+    "value": "yes",
+    "url": "https://developers.klaviyo.com/en/docs/klaviyo_mcp_server",
+    "note": "AI-assisted review of vendor page and extracted context; access and product scope require separate evaluation.",
+    "evidence_excerpt": "Klaviyo MCP server | Klaviyo Developers Skip to content This page is available as Markdown at https://developers.klaviyo.com/en/docs/klaviyo_mcp_server.md. An index of every page is at https://developers.klaviyo.com/llms.txt. You will lea"
+  },
+  {
+    "app": "systeme.io",
+    "field": "official_mcp",
+    "value": "yes",
+    "url": "https://help.systeme.io/article/11331-how-to-manage-your-contacts-with-the-systeme-io-mcp-server",
+    "note": "AI-assisted review of vendor page and extracted context; access and product scope require separate evaluation.",
+    "evidence_excerpt": "Loading How to manage your contacts with the systeme.io MCP server | systeme.io Help Center Categories Affiliation Blog Booking calendar Contact management Courses Customer support Deliverability Editor Emails General Migrating to systeme.io Model Context Protocol (MCP) › Payments Sale"
+  },
+  {
+    "app": "Pinterest",
+    "field": "official_mcp",
+    "value": "yes",
+    "url": "https://developer.pinterest.com/about-pinterest-mcp/",
+    "note": "AI-assisted review of vendor page and extracted context; access and product scope require separate evaluation.",
+    "evidence_excerpt": "Pinterest Developers Skip to content New announcement Your AI just got a new superpower Pinterest MCP Server brings the power of Pinterest data directly into the AI assistants, copilots, and agentic workflows you already use. Turn natural-language questions into fast, actionable insights, uncover performance opportunities in m"
+  },
+  {
+    "app": "WooCommerce",
+    "field": "official_mcp",
+    "value": "yes",
+    "url": "https://woocommerce.com/document/woocommerce-ai/mcp-server/",
+    "note": "AI-assisted review of vendor page and extracted context; access and product scope require separate evaluation.",
+    "evidence_excerpt": "Connect an AI client to the WooCommerce AI MCP server Documentation - WooCommerce Skip to navigation Skip to content Extensions Extensions Pre-Sales Support Stripe WooCommerce Square PayPal Braintree AutomateWoo Expand Product CSV Import Suite Order/Customer CSV Export Fac"
+  },
+  {
+    "app": "Squarespace",
+    "field": "official_mcp",
+    "value": "yes",
+    "url": "https://developers.squarespace.com/mcp/overview",
+    "note": "AI-assisted review of vendor page and extracted context; access and product scope require separate evaluation.",
+    "evidence_excerpt": "Squarespace Developer Platform: APIs, Apps, and Docs Menu Overview of the Squarespace MCP Server The Squarespace MCP server connects AI assistants to Squarespace. It's built on the Model Context Protocol , an open standard for connecting AI applications to outside tools, so assistants like Gemini, Claude, and ChatGPT can look things up and m"
+  },
+  {
+    "app": "Gumroad",
+    "field": "official_mcp",
+    "value": "yes",
+    "url": "https://gumroad.com/mcp",
+    "note": "AI-assisted review of vendor page and extracted context; access and product scope require separate evaluation.",
+    "evidence_excerpt": "never you want. 1. Add the connector Add Gumroad from your assistant’s connector directory, or open its connector settings and add a remote MCP server using the URL from its connector page. Gumroad MCP for Claude connector page Gumroad MCP for Cursor connector page Gumroad MCP for Google Antigravity connector page Gumroad MCP for ChatGPT connector page 2. Connect your Gumroad account Sign in to Gumroad when prompt"
+  },
+  {
+    "app": "DataForSEO",
+    "field": "official_mcp",
+    "value": "yes",
+    "url": "https://dataforseo.com/help-center/dataforseo-new-mcp-server-and-cli-connection-a-quickstart-guide",
+    "note": "AI-assisted review of vendor page and extracted context; access and product scope require separate evaluation.",
+    "evidence_excerpt": "DataForSEO New MCP Server and CLI Connection: A Quickstart Guide – DataForSEO Help Center Search the Help Center Search Can’t find an answer? Get AI guidance on your account, billing, or implementation. AI Chat → Add as a preferred source on Goo"
+  },
+  {
+    "app": "SE Ranking",
+    "field": "official_mcp",
+    "value": "yes",
+    "url": "https://seranking.com/api/integrations/mcp/",
+    "note": "AI-assisted review of vendor page and extracted context; access and product scope require separate evaluation.",
+    "evidence_excerpt": "SE Ranking MCP: Setup & Configuration API API integrations / MCP Server Documentation MCP Server Documentation New to SE Ranking MCP? What it does, pricing and use cases Start with 100K free credits → SE Ranking SEO MCP New · MCP Hub Explore the MCP Hub Whether you’re connecting MCP for the"
+  },
+  {
+    "app": "Ahrefs",
+    "field": "official_mcp",
+    "value": "yes",
+    "url": "https://help.ahrefs.com/en/articles/13913559-getting-started-with-ahrefs-mcp",
+    "note": "AI-assisted review of vendor page and extracted context; access and product scope require separate evaluation.",
+    "evidence_excerpt": " with Ahrefs MCP Chat with Ahrefs API for actionable SEO & marketing data Written by Constance Tan September 22, 2026 Table of contents The Ahrefs MCP server allows you to connect Ahrefs’ API to your AI tool of choice (ChatGPT, Claude, Copilot, etc.) No code required. Just chat in plain English to pull SEO insights, analyze competitors, create dashboards, and more — all with"
+  },
+  {
+    "app": "MrScraper",
+    "field": "official_mcp",
+    "value": "yes",
+    "url": "https://docs.mrscraper.com/docs/getting-started/mcp-server",
+    "note": "AI-assisted review of vendor page and extracted context; access and product scope require separate evaluation.",
+    "evidence_excerpt": "MCP Server | MrScraper Documentation Documentation Core Features Dashboard Getting Started Overview Quickstart Web Search Scraper API Token Plan CLI MCP Server Billing Features Workflow Workflow API Access Bulk Scraping Proxy Marketplace Sche"
+  },
+  {
+    "app": "Bright Data",
+    "field": "official_mcp",
+    "value": "yes",
+    "url": "https://brightdata.com/blog/ai/warp-cli-with-web-mcp",
+    "note": "AI-assisted review of vendor page and extracted context; access and product scope require separate evaluation.",
+    "evidence_excerpt": "How to Connect Warp CLI with Bright Data’s Web MCP Server Accessibility Menu skip to content NEW! Start with Bright Data's Web MCP and get 5,000\n               free monthly requests Start free Blog / AI AI Warp CLI with Bright Data MCP Discover how to link Warp CLI with Bright"
+  },
+  {
+    "app": "Clay",
+    "field": "official_mcp",
+    "value": "yes",
+    "url": "https://university.clay.com/docs/connect-to-clay-mcp",
+    "note": "AI-assisted review of vendor page and extracted context; access and product scope require separate evaluation.",
+    "evidence_excerpt": "s & admin / Connect your platform to Clay MCP Connect your platform to Clay MCP Register your platform as an OAuth client and connect it to Clay's MCP server. Overview Clay exposes a Model Context Protocol (MCP) server that lets an external platform — an AI assistant, IDE, agent host, or partner product — run Clay's find-and-enrich tools and custom functions on behalf of a s"
+  },
+  {
+    "app": "Vercel",
+    "field": "official_mcp",
+    "value": "yes",
+    "url": "https://vercel.com/changelog/chatgpt-is-now-supported-on-vercel-mcp",
+    "note": "AI-assisted review of vendor page and extracted context; access and product scope require separate evaluation.",
+    "evidence_excerpt": "de: Go to Settings → Connectors → Advanced → Developer mode. Add Vercel MCP Open ChatGPT settings In the Connectors tab, click Create Name: Vercel MCP server URL: https://mcp.vercel.com . Authentication: OAuth Click Create You should now be able to select Vercel as a connector in Developer Mode chats. With Vercel MCP you can give agents access to protected deployments , anal"
+  },
+  {
+    "app": "Supabase",
+    "field": "official_mcp",
+    "value": "yes",
+    "url": "https://supabase.com/docs/guides/ai-tools/mcp?client=windsurf",
+    "note": "AI-assisted review of vendor page and extracted context; access and product scope require separate evaluation.",
+    "evidence_excerpt": "Supabase MCP Server | Supabase Docs Skip to content Updated Nov 18, 2026 The Model Context Protocol (MCP) is a standard for connecting Large Language Models (LLMs) to platforms like Supabase. Once connected, your AI assistants can interact"
+  },
+  {
+    "app": "Neo4j",
+    "field": "official_mcp",
+    "value": "yes",
+    "url": "https://neo4j.com/docs/mcp/current/quickstart/",
+    "note": "AI-assisted review of vendor page and extracted context; access and product scope require separate evaluation.",
+    "evidence_excerpt": "erver URL: Under Instances in the left side navigation of the Aura Console, retrieve the ID of the Aura instance you would like to use with Neo4j MCP. Substitute the ID in the following template to get your MCP server URL: https://<INSTANCE_ID>.mcp-instances.neo4j.io . For a visual walkthrough, or to copy the URL directly from the instance details, see Find your MCP server URL . Then add Neo4j MCP to your client’s MCP configuration.\n"
+  },
+  {
+    "app": "Datadog",
+    "field": "official_mcp",
+    "value": "yes",
+    "url": "https://docs.datadoghq.com/mcp_server/",
+    "note": "AI-assisted review of vendor page and extracted context; access and product scope require separate evaluation.",
+    "evidence_excerpt": "Datadog MCP Server For AI agents: A markdown version of this page is available at https://docs.datadoghq.com/mcp_server.md .\nA documentation index is available at /llms.txt . Home Docs API Agents Essentials Getting Started Agent API APM T"
+  },
+  {
+    "app": "Asana",
+    "field": "official_mcp",
+    "value": "yes",
+    "url": "https://developers.asana.com/docs/mcp-server",
+    "note": "AI-assisted review of vendor page and extracted context; access and product scope require separate evaluation.",
+    "evidence_excerpt": "MCP Server For AI agents: the docs index is at https://developers.asana.com/llms.txt. Append .md to any documentation page URL to get its markdown version. Asana offers a Model Context Protocol (MCP) server, accessible via app integration, which allows AI assistants and other applications t"
+  },
+  {
+    "app": "Monday.com",
+    "field": "official_mcp",
+    "value": "yes",
+    "url": "https://developer.monday.com/api-reference/docs/integrate-with-monday-mcp",
+    "note": "AI-assisted review of vendor page and extracted context; access and product scope require separate evaluation.",
+    "evidence_excerpt": "Integrate with the monday MCP server For AI agents: the docs index is at https://developer.monday.com/api-reference/llms.txt. The index for every project on this site is at https://developer.monday.com/llms.txt. Append .md to any documentation page URL to get its markdown version. This guide walks you through connecting"
+  },
+  {
+    "app": "ClickUp",
+    "field": "official_mcp",
+    "value": "yes",
+    "url": "https://developer.clickup.com/docs/connect-an-ai-assistant-to-clickups-mcp-server-1",
+    "note": "AI-assisted review of vendor page and extracted context; access and product scope require separate evaluation.",
+    "evidence_excerpt": "wn version. Setup instructions Below are the setup instructions for some of the most popular AI assistants. Claude Set up Claude to use the ClickUp MCP server! Pro, Team, Enterprise If you're on the Pro, Team, or Enterprise plan: In a browser or the desktop app, navigate to Settings in the sidebar. Scroll to Connectors at the bottom and click Add. In the prompt, enter the fol"
+  },
+  {
+    "app": "Coda",
+    "field": "official_mcp",
+    "value": "yes",
+    "url": "https://help.coda.io/hc/en-us/articles/44722661982989-Connect-to-the-Coda-MCP",
+    "note": "AI-assisted review of vendor page and extracted context; access and product scope require separate evaluation.",
+    "evidence_excerpt": "r org ( see FAQ below ) so that it shows up in the connector list. Give your connector a name, then enter the following URL into the Remote MCP Server URL field: https://coda.io/apis/mcp Click Add Now find the newly added connector in the list, and click Connect Follow the prompts to allow Claude access to Coda Once authorized, you’re all set. You can start taking actions in Coda with Claude"
+  },
+  {
+    "app": "Smartsheet",
+    "field": "official_mcp",
+    "value": "yes",
+    "url": "https://www.smartsheet.com/content-center/smartsheet-mcp-server-now-generally-available",
+    "note": "AI-assisted review of vendor page and extracted context; access and product scope require separate evaluation.",
+    "evidence_excerpt": "Smartsheet MCP Server now generally available! | Smartsheet Skip to main content Article Smartsheet MCP Server now generally available! PM Product Marketing March 24, 2026 You can now connect Smartsheet to any MCP-compliant AI tool through t"
+  },
+  {
+    "app": "Brex",
+    "field": "official_mcp",
+    "value": "yes",
+    "url": "https://www.brex.com/journal/brex-mcp-connect-brex-to-ai-tools",
+    "note": "AI-assisted review of vendor page and extracted context; access and product scope require separate evaluation.",
+    "evidence_excerpt": " layer to wherever you work. Your Brex permissions carry over, so you only see what you're authorized to, nothing more. Get started Add the Brex MCP server URL to your client's configuration, authenticate with your Brex account, and start asking questions. For setup instructions, available tools, and the full developer reference, see the Brex MCP Developer Documentation . "
+  },
+  {
+    "app": "Otter AI",
+    "field": "official_mcp",
+    "value": "yes",
+    "url": "https://help.otter.ai/hc/en-us/articles/35287607569687-Otter-MCP-Server",
+    "note": "AI-assisted review of vendor page and extracted context; access and product scope require separate evaluation.",
+    "evidence_excerpt": "Otter MCP Server – Help Center Skip to main content Articles in this section Otter AI Chat Overview Asking Otter AI Chat questions Generate content with Otter AI Chat Image Enriched Conversation AI Chat Opt out of Otter AI Chat Otter AI Chat FAQs Otter AI Chat is not showing Otter AI Chat: Add Context (C"
+  },
+  {
+    "app": "Consensus",
+    "field": "official_mcp",
+    "value": "yes",
+    "url": "https://docs.consensus.app/consensus-mcp",
+    "note": "AI-assisted review of vendor page and extracted context; access and product scope require separate evaluation.",
+    "evidence_excerpt": "urf Config Supported Gemini Spark OAuth Supported Perplexity OAuth Supported Other MCP Clients Bearer token Supported FAQ Is there a PubMed MCP server with semantic search? Yes. Consensus covers all of PubMed plus the rest of science, ranked semantically rather than by keyword match alone. You can filter by study design, sample size, journal quartile and citation count. See Where the papers come from . W"
+  },
+  {
+    "app": "Grain",
+    "field": "official_mcp",
+    "value": "yes",
+    "url": "https://developers.grain.com/mcp/faq.html",
+    "note": "AI-assisted review of vendor page and extracted context; access and product scope require separate evaluation.",
+    "evidence_excerpt": "tails, visit the official MCP clients directory . Q: What Claude plan do I need to use MCP integrations? A: MCP integrations, including the Grain MCP server, are only available on paid Claude plans (Pro, Team, and Enterprise). Free Claude accounts do not support MCP integrations or the ability to connect external tools and data sources. You'll need to upgrade to a paid plan"
+  },
+  {
+    "app": "Aircall",
+    "field": "official_mcp",
+    "value": "no per vendor FAQ (as of its stated update)",
+    "url": "https://developer.aircall.io/docs/mcp-faqs",
+    "note": "The extractor said yes after matching a negated statement. Aircall FAQ states that it did not offer an MCP server at the time of writing; the page may change."
+  }
+]

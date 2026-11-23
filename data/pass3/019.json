@@ -1,0 +1,14 @@
+{
+  "app": "Gorgias",
+  "source_pass": "data\\pass2\\019.json",
+  "access_candidates": [
+    {
+      "value": "administrator-controlled credential mentioned",
+      "url": "https://developers.gorgias.com/docs/access-tokens-api-keys",
+      "excerpt": "n will act on behalf of a user and will have access to the resources their permissions allow. As an admin, you can easily generate and revoke your access token in the settings of your account. Example: If you use an Access Token for a user with an Observer Agent role, then you can only do the things that an Observer agent can. Learn more about roles here . How do I get my API",
+      "status": "provisional; check scope, negation and plan details"
+    }
+  ],
+  "reason_if_unknown": "",
+  "warning": "A phrase match is not a verified credential gate or a buildability verdict."
+}

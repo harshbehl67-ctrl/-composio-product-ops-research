@@ -1,0 +1,238 @@
+{
+  "app": {
+    "number": 6,
+    "name": "Podio",
+    "category": "CRM and Sales",
+    "hint": "podio.com"
+  },
+  "checked_at": "2026-11-23T14:08:18.701800+00:00",
+  "source_search": "data/new_search/006.json",
+  "candidates": [
+    {
+      "url": "https://developers.podio.com/authentication",
+      "title": "Authentication - Podio API Documentation (https://developers.podio.com/authentication)",
+      "snippet": "Authentication - Podio API Documentation (https://developers.podio.com/authentication)\n【turn26search0】 [wordlim: 200] Crawled: 2 weeks ago; The Podio API uses the OAuth2 protocol for authentication.\n\n# How to authenticate with Podio API\n\nThe Podio API uses the OAuth2 protocol for authentication. This allows external apps to request authorization to Podio without having direct access to the user's password. Our API supports different OAuth flows depending on what kind of integration you are making.\n\nBefore you can use the Podio API you must register your application. Your application is assigned a unique identifier, called \"Client ID\", together with a \"Client Secret\". You will need both of these to authenticate. The Client Secret should not be shared with anyone.\n\n### Authentication flows\n\nPodio supports four different ways of autheticating depending on what kind of application you are building:\n\nServer-side flow\n    This is the preferred way of authenticating for web apps.\nClient-side flow\n    Use the client-side flow if your application does not have a server. Examples: Browser extensions, web app running purely in the browser, mobile or desktop applications.\nUsername & password flow\n    Use this flow only if none of the other flows are suitable. It requires the user's username and password to be shared.\nApp authentication flow\n    Use app authentication if you only need to interact with a single Podio app and do not need to authenticate as a specific user. Examples: Automated scripts.\n\nAll of these authentication methods will provide you with an access token. You will be including this access token in any subsequent requests to the API. You will do this by including an HTTP header with the access token like so:\n\n`Authorization: OAuth2 ACCESS_TOKEN`\n\nWhere ACCESS_TOKEN should be replaced with the actual access token you have obtained. If you are using one of our client libraries this is handled for you automatically.\n\n### Token Expiry\n\nAll tokens received have an a"
+    },
+    {
+      "url": "https://developers.podio.com/authentication/server_side",
+      "title": "Authentication: Server-side flow - Podio API Documentation (https://developers.podio.com/authentication/server_side)",
+      "snippet": "Authentication: Server-side flow - Podio API Documentation (https://developers.podio.com/authentication/server_side)\n【turn26search4】 [wordlim: 200] Crawled: last month;           URL: https://api.podio.com/oauth/token/v 2 ...       return render('<h1>Podio Authentication sample</h1><p><a href=\"https://podio.com/oauth/authorize?\n\n# Authentication\n\n## Server-side flow\n\nThe server-side flow works by sending your user to Podio to authorize. It's a four step process:\n\n  1. You redirect your user to Podio for authorization\n  2. Podio redirects back to your web app with an authorization code\n  3. You use the authorization code to obtain an access token\n  4. You use the access token for all API requests\n\nThe first step is to redirect your user to Podio's authorization endpoint, providing your client_id and a redirect_uri. The redirect_uri must be on the same domain as the domain you specified when you applied for your API Key. The endpoint you must redirect to is:\n\n` https://podio.com/oauth/authorize?client_id=YOUR_APP_ID&redirect_uri=YOUR_URL&scope=SCOPE_STRING `\n\nNote: Repeated Request and Response parameters will be discarded and only the value of last Request and Response parameter is considered\n\nIf the user is not logged in to Podio he will be asked to login. Then we will present a screen showing what the user is granting access to:\n\nImage\n"
+    },
+    {
+      "url": "https://developers.podio.com/api-key",
+      "title": "Get API key - Podio API Documentation (https://developers.podio.com/api-key)",
+      "snippet": "Get API key - Podio API Documentation (https://developers.podio.com/api-key)\n【turn26search5】 [wordlim: 200] Crawled: last month; It's easy to get one or more API keys for accessing your Podio data.\n\n# Get API key\n\n## Generating API keys to Podio\n\nIt's easy to get one or more API keys for accessing your Podio data. You just have to sign in or sign up with Podio, and go to the API key tab in your settings."
+    },
+    {
+      "url": "https://developers.podio.com/doc/oauth-authorization",
+      "title": "OAuth authorization | API Documentation - Podio API Documentation (https://developers.podio.com/doc/oauth-authorization)",
+      "snippet": "OAuth authorization | API Documentation - Podio API Documentation (https://developers.podio.com/doc/oauth-authorization)\n【turn26search6】 [wordlim: 200] Crawled: 3 weeks ago; This API uses OAuth 2.0 (http://oauth.net/2/) for authentication users of the API. ... To be able to access the API, a third party will have to register with Podio.\n\n## OAuth authorization\n\n### Operations\n\n  * Get access token\n\n  * Get scope\n\n  * Invalidate grant\n\n  * Invalidate tokens\n\nThis API uses OAuth 2.0 (http://oauth.net/2/) for authentication users of the API. Currently supported is draft-10 of the specification. It is recommended to read http://tools.ietf.org/html/draft-ietf-oauth-v2-10.\n\n## Authorizing\n\nTo be able to access the API, a third party will have to register with Podio. This will result in a client being created, which can then be used when authenticating. Authentication can be done in one or two steps:\n\n### One step \n\nThis is only valid for trusted clients. When validating in one step, the token endpoint will be contacted directly with mail and password of the end-user, and will receive an access token in return.\n\n### Two step\n\nThis is for all other clients. When validating the user is sent to a Podio webpage along with the client id and any state. The user then logs in as normal and either grants or denies access for the client. If granted the user is sent back to the redirect url along with a authorization code. Secondly the client uses the token endpoint with the code from step one to get an access token.\n\nTwo step authorization is not yet completed!\n\n## Accessing\n\nWhen accessing any protected resource of the API, the access token will have be included as a parameter with the name \"oauth_token\" to the request. This can be either as part of the URI when posting or form-encoded otherwise."
+    },
+    {
+      "url": "https://developers.podio.com/authentication/username_password",
+      "title": "Authentication: Username & password flow - Podio API Documentation (https://developers.podio.com/authentication/username_password)",
+      "snippet": "Authentication: Username & password flow - Podio API Documentation (https://developers.podio.com/authentication/username_password)\n【turn26search7】 [wordlim: 200] Crawled: 3 weeks ago;           URL: https://api.podio.com/oauth/token/v 2 ...       Podio.client.authenticate_with_credentials('YOUR_USERNAME', 'YOUR_PASSWORD')\n    \n      # Authentication was a success, now you can start making API calls.\n\n# Authentication\n\n## Username and password flow\n\nThe username and password flow is suitable for clients capable of asking end-users for their usernames and passwords. The advantage over HTTP Basic, is that the user credentials are used in a single request and are exchanged for an access token and refresh token. This eliminates the need to store the username and password.\n\nUnlike the server-side flow there are no redirects to the Podio authorization page because the user provides their username and password directly. The access token is also provided immediately and there's no authorization code which must be exchanged for an access token.\n\nTo gain an access token, you make a POST request to our endpoint with your authentication parameters placed in the request body. The grant_type parameter set to password.\n    \n    `\n          HTTP METHOD: POST\n          URL: https://api.podio.com/oauth/token/v 2\n          HEADER:  \"Content-Type: application/json\"\n          BODY:\n          {\n            \"grant_type\": \"password\",\n"
+    },
+    {
+      "url": "https://developers.podio.com/authentication/app_auth",
+      "title": "Authentication: App authentication flow - Podio API Documentation (https://developers.podio.com/authentication/app_auth)",
+      "snippet": "Authentication: App authentication flow - Podio API Documentation (https://developers.podio.com/authentication/app_auth)\n【turn26search9】 [wordlim: 200] Crawled: last month;           URL: https://api.podio.com/oauth/token/v 2 ... You can find the Podio App ID and Podio App Token by going to your app in Podio and clicking the Developer link in the settings dropdown. ...       # Authentication was a success, now you can start making API calls.\n"
+    },
+    {
+      "url": "https://developers.podio.com/doc/oauth-authorization/get-access-token-22359",
+      "title": "OAuth authorization | Get access token - Podio API Documentation (https://developers.podio.com/doc/oauth-authorization/get-access-token-22359)",
+      "snippet": "OAuth authorization | Get access token - Podio API Documentation (https://developers.podio.com/doc/oauth-authorization/get-access-token-22359)\n【turn26search11】 [wordlim: 200] Crawled: 3 weeks ago; # Podio API Documentation\n"
+    },
+    {
+      "url": "https://developers.podio.com/index/api",
+      "title": "Concepts and conventions: Conventions and structure of the API - Podio API Documentation (https://developers.podio.com/index/api)",
+      "snippet": "Concepts and conventions: Conventions and structure of the API - Podio API Documentation (https://developers.podio.com/index/api)\n【turn26search13】 [wordlim: 200] Crawled: 3 weeks ago; The API is available at https://api.podio.com. ... OAuth2 is used for authorization and authentication.\n"
+    }
+  ],
+  "selected": [
+    {
+      "url": "https://developers.podio.com/authentication",
+      "title": "Authentication - Podio API Documentation (https://developers.podio.com/authentication)",
+      "snippet": "Authentication - Podio API Documentation (https://developers.podio.com/authentication)\n【turn26search0】 [wordlim: 200] Crawled: 2 weeks ago; The Podio API uses the OAuth2 protocol for authentication.\n\n# How to authenticate with Podio API\n\nThe Podio API uses the OAuth2 protocol for authentication. This allows external apps to request authorization to Podio without having direct access to the user's password. Our API supports different OAuth flows depending on what kind of integration you are making.\n\nBefore you can use the Podio API you must register your application. Your application is assigned a unique identifier, called \"Client ID\", together with a \"Client Secret\". You will need both of these to authenticate. The Client Secret should not be shared with anyone.\n\n### Authentication flows\n\nPodio supports four different ways of autheticating depending on what kind of application you are building:\n\nServer-side flow\n    This is the preferred way of authenticating for web apps.\nClient-side flow\n    Use the client-side flow if your application does not have a server. Examples: Browser extensions, web app running purely in the browser, mobile or desktop applications.\nUsername & password flow\n    Use this flow only if none of the other flows are suitable. It requires the user's username and password to be shared.\nApp authentication flow\n    Use app authentication if you only need to interact with a single Podio app and do not need to authenticate as a specific user. Examples: Automated scripts.\n\nAll of these authentication methods will provide you with an access token. You will be including this access token in any subsequent requests to the API. You will do this by including an HTTP header with the access token like so:\n\n`Authorization: OAuth2 ACCESS_TOKEN`\n\nWhere ACCESS_TOKEN should be replaced with the actual access token you have obtained. If you are using one of our client libraries this is handled for you automatically.\n\n### Token Expiry\n\nAll tokens received have an a"
+    },
+    {
+      "url": "https://developers.podio.com/authentication/server_side",
+      "title": "Authentication: Server-side flow - Podio API Documentation (https://developers.podio.com/authentication/server_side)",
+      "snippet": "Authentication: Server-side flow - Podio API Documentation (https://developers.podio.com/authentication/server_side)\n【turn26search4】 [wordlim: 200] Crawled: last month;           URL: https://api.podio.com/oauth/token/v 2 ...       return render('<h1>Podio Authentication sample</h1><p><a href=\"https://podio.com/oauth/authorize?\n\n# Authentication\n\n## Server-side flow\n\nThe server-side flow works by sending your user to Podio to authorize. It's a four step process:\n\n  1. You redirect your user to Podio for authorization\n  2. Podio redirects back to your web app with an authorization code\n  3. You use the authorization code to obtain an access token\n  4. You use the access token for all API requests\n\nThe first step is to redirect your user to Podio's authorization endpoint, providing your client_id and a redirect_uri. The redirect_uri must be on the same domain as the domain you specified when you applied for your API Key. The endpoint you must redirect to is:\n\n` https://podio.com/oauth/authorize?client_id=YOUR_APP_ID&redirect_uri=YOUR_URL&scope=SCOPE_STRING `\n\nNote: Repeated Request and Response parameters will be discarded and only the value of last Request and Response parameter is considered\n\nIf the user is not logged in to Podio he will be asked to login. Then we will present a screen showing what the user is granting access to:\n\nImage\n"
+    },
+    {
+      "url": "https://developers.podio.com/doc/oauth-authorization/get-access-token-22359",
+      "title": "OAuth authorization | Get access token - Podio API Documentation (https://developers.podio.com/doc/oauth-authorization/get-access-token-22359)",
+      "snippet": "OAuth authorization | Get access token - Podio API Documentation (https://developers.podio.com/doc/oauth-authorization/get-access-token-22359)\n【turn26search11】 [wordlim: 200] Crawled: 3 weeks ago; # Podio API Documentation\n"
+    },
+    {
+      "url": "https://developers.podio.com/api-key",
+      "title": "Get API key - Podio API Documentation (https://developers.podio.com/api-key)",
+      "snippet": "Get API key - Podio API Documentation (https://developers.podio.com/api-key)\n【turn26search5】 [wordlim: 200] Crawled: last month; It's easy to get one or more API keys for accessing your Podio data.\n\n# Get API key\n\n## Generating API keys to Podio\n\nIt's easy to get one or more API keys for accessing your Podio data. You just have to sign in or sign up with Podio, and go to the API key tab in your settings."
+    },
+    {
+      "url": "https://developers.podio.com/doc/oauth-authorization",
+      "title": "OAuth authorization | API Documentation - Podio API Documentation (https://developers.podio.com/doc/oauth-authorization)",
+      "snippet": "OAuth authorization | API Documentation - Podio API Documentation (https://developers.podio.com/doc/oauth-authorization)\n【turn26search6】 [wordlim: 200] Crawled: 3 weeks ago; This API uses OAuth 2.0 (http://oauth.net/2/) for authentication users of the API. ... To be able to access the API, a third party will have to register with Podio.\n\n## OAuth authorization\n\n### Operations\n\n  * Get access token\n\n  * Get scope\n\n  * Invalidate grant\n\n  * Invalidate tokens\n\nThis API uses OAuth 2.0 (http://oauth.net/2/) for authentication users of the API. Currently supported is draft-10 of the specification. It is recommended to read http://tools.ietf.org/html/draft-ietf-oauth-v2-10.\n\n## Authorizing\n\nTo be able to access the API, a third party will have to register with Podio. This will result in a client being created, which can then be used when authenticating. Authentication can be done in one or two steps:\n\n### One step \n\nThis is only valid for trusted clients. When validating in one step, the token endpoint will be contacted directly with mail and password of the end-user, and will receive an access token in return.\n\n### Two step\n\nThis is for all other clients. When validating the user is sent to a Podio webpage along with the client id and any state. The user then logs in as normal and either grants or denies access for the client. If granted the user is sent back to the redirect url along with a authorization code. Secondly the client uses the token endpoint with the code from step one to get an access token.\n\nTwo step authorization is not yet completed!\n\n## Accessing\n\nWhen accessing any protected resource of the API, the access token will have be included as a parameter with the name \"oauth_token\" to the request. This can be either as part of the URI when posting or form-encoded otherwise."
+    },
+    {
+      "url": "https://developers.podio.com/authentication/username_password",
+      "title": "Authentication: Username & password flow - Podio API Documentation (https://developers.podio.com/authentication/username_password)",
+      "snippet": "Authentication: Username & password flow - Podio API Documentation (https://developers.podio.com/authentication/username_password)\n【turn26search7】 [wordlim: 200] Crawled: 3 weeks ago;           URL: https://api.podio.com/oauth/token/v 2 ...       Podio.client.authenticate_with_credentials('YOUR_USERNAME', 'YOUR_PASSWORD')\n    \n      # Authentication was a success, now you can start making API calls.\n\n# Authentication\n\n## Username and password flow\n\nThe username and password flow is suitable for clients capable of asking end-users for their usernames and passwords. The advantage over HTTP Basic, is that the user credentials are used in a single request and are exchanged for an access token and refresh token. This eliminates the need to store the username and password.\n\nUnlike the server-side flow there are no redirects to the Podio authorization page because the user provides their username and password directly. The access token is also provided immediately and there's no authorization code which must be exchanged for an access token.\n\nTo gain an access token, you make a POST request to our endpoint with your authentication parameters placed in the request body. The grant_type parameter set to password.\n    \n    `\n          HTTP METHOD: POST\n          URL: https://api.podio.com/oauth/token/v 2\n          HEADER:  \"Content-Type: application/json\"\n          BODY:\n          {\n            \"grant_type\": \"password\",\n"
+    }
+  ],
+  "pages": [
+    {
+      "url": "https://developers.podio.com/authentication",
+      "requested_url": "https://developers.podio.com/authentication",
+      "status": 200,
+      "title": "Authentication - Podio API Documentation (https://developers.podio.com/authentication)",
+      "text": "Authentication - Podio API Documentation Getting started Get an API key Authentication Scopes & Permissions Server-side flow Client-side flow Username & password flow App authentication flow API Reference Tutorials Client Libraries Developer Forums Partner Extensions Terms of Use How to authenticate with Podio API The Podio API uses the OAuth2 protocol for authentication. This allows external apps to request authorization to Podio without having direct access to the user's password. Our API supports different OAuth flows depending on what kind of integration you are making. Before you can use the Podio API you must register your application . Your application is assigned a unique identifier, called \"Client ID\", together with a \"Client Secret\". You will need both of these to authenticate. The Client Secret should not be shared with anyone. Authentication flows Podio supports four different ways of autheticating depending on what kind of application you are building: Server-side flow This is the preferred way of authenticating for web apps. Client-side flow Use the client-side flow if your application does not have a server. Examples: Browser extensions, web app running purely in the browser, mobile or desktop applications. Username & password flow Use this flow only if none of the other flows are suitable. It requires the user's username and password to be shared. App authentication flow Use app authentication if you only need to interact with a single Podio app and do not need to authenticate as a specific user. Examples: Automated scripts. All of these authentication methods will provide you with an access token. You will be including this access token in any subsequent requests to the API. You will do this by including an HTTP header with the access token like so: Authorization: OAuth2 ACCESS_TOKEN Where ACCESS_TOKEN should be replaced with the actual access token you have obtained. If you are using one of our client libraries this is handled for you automatically. Token Expiry All tokens received have an associated expiry time. Access Token & refresh Token can be exchanged prior to expiry. Token Expiry Time: Access Token: 8 hours Refresh Token: 28 days Recommended Usage: By default, the access token is valid for 8 hours . So, you need NOT request a new token with each new API call. App Authentication flow, being more secure, is the preferred way of authentication over Username and Password flow. Refreshing expired tokens In addition to the access token, the response also contains a expires_in parameter, and a refresh_token parameter. The value of the expires_in parameter is the number of seconds until the token expires. This is an example of a full response when obtaining an access token: { \"access_token\" : ACCESS_TOKEN , \"token_type\" : \"bearer\" , \"expires_in\" : EXPIRES_IN , \"refresh_token\" : REFRESH_TOKEN , \"scope\" : GRANTED_SCOPE_STRING , \"ref\" : { \"type\" : \"user\" , \"id\" : USER_ID } } See Scopes & Permissions for details about the value of GRANTED_SCOPE_STRING When the access token expires, you can use the refresh_token to \"refresh\" your access, and gain another access_token. To use the refresh_token you need to do a POST request to our token-endpoint with the grant_type set to refresh_token : HTTP METHOD: POST URL: https://api.podio.com/oauth/token/v 2 HEADER: \"Content-Type: application/json\" BODY: { \"grant_type\" : \"refresh_token\" , \"client_id\" : YOUR_APP_ID , \"client_secret\" : YOUR_APP_SECRET , \"refresh_token\" : REFRESH_TOKEN , } This request returns the same data as above, and you can continue to do this over and over again, to keep your application authenticated without having to ask the user to re-authenticate. State parameter & Cross Site Request Forgery (CSRF) In order to avoid Cross Site Request Forgery attacks, we recommend you to use an optional state-parameter to pass an identifier, and then validate the state on the response you get from our API. When you make the request to obtain the authorization code include the state parameter like so: https://podio.com/oauth/authorize?client_id=YOUR_APP_ID&redirect_uri=YOUR_URL &state=YOUR_CSRF_TOKEN When the Podio API redirects the user back to your application the state parameter is included and you can validate it: http://YOUR_URL?code=A_CODE_GENERATED_BY_SERVER &state=YOUR_CSRF_TOKEN The state parameter is optional. Any string value can be used."
+    },
+    {
+      "url": "https://developers.podio.com/authentication/server_side",
+      "requested_url": "https://developers.podio.com/authentication/server_side",
+      "status": 200,
+      "title": "Authentication: Server-side flow - Podio API Documentation (https://developers.podio.com/authentication/server_side)",
+      "text": "Authentication: Server-side flow - Podio API Documentation Getting started Get an API key Authentication Scopes & Permissions Server-side flow Client-side flow Username & password flow App authentication flow API Reference Tutorials Client Libraries Developer Forums Partner Extensions Terms of Use Authentication Server-side flow The server-side flow works by sending your user to Podio to authorize. It's a four step process: You redirect your user to Podio for authorization Podio redirects back to your web app with an authorization code You use the authorization code to obtain an access token You use the access token for all API requests The first step is to redirect your user to Podio's authorization endpoint, providing your client_id and a redirect_uri. The redirect_uri must be on the same domain as the domain you specified when you applied for your API Key. The endpoint you must redirect to is: https://podio.com/oauth/authorize?client_id= YOUR_APP_ID &redirect_uri= YOUR_URL &scope= SCOPE_STRING Note: Repeated Request and Response parameters will be discarded and only the value of last Request and Response parameter is considered If the user is not logged in to Podio he will be asked to login. Then we will present a screen showing what the user is granting access to: If the user for some reason denies access, the application is not authorized, and the OAuth flow will redirect the user back to the URL, passed in the redirect_uri parameter with these parameters: http://YOUR_URL?error_reason= user_denied &error= access_denied &error_description= The+user+denied+your+request. After granting access the user will be redirected to the URL you passed in the redirect_uri parameter with an authorization code appended: http://YOUR_URL?code= THE_AUTHORIZATION_CODE You must then use the authorization code to obtain an access token. To authenticate your app, you must pass the authorization code and your client_secret to our endpoint. In return you will receive an access token. Make a POST like this: HTTP METHOD: POST URL: https://api.podio.com/oauth/token/v 2 HEADER: \"Content-Type: application/json\" BODY: { \"grant_type\" : \"authorization_code\" , \"client_id\" : YOUR_APP_ID , \"redirect_uri\" : YOUR_URL , \"client_secret\" : YOUR_APP_SECRET , \"code\" : THE_AUTHORIZATION_CODE , } If your app is successfully authenticated and the authorization code from the user is valid, the API will return the access token: { \"access_token\" : ACCESS_TOKEN , \"token_type\" : \"bearer\" , \"expires_in\" : EXPIRES_IN , \"refresh_token\" : REFRESH_TOKEN , \"scope\" : GRANTED_SCOPE_STRING , \"ref\" : { \"type\" : \"user\" , \"id\" : USER_ID } } See Scopes & Permissions for details about the value of GRANTED_SCOPE_STRING Example: Ruby Sinatra The following code example is written in Ruby, using Sinatra and the OAuth2 gem: require 'rubygems' require 'sinatra' require 'oauth2' require 'json' def podio_client client_id = 'YOUR_CLIENT_ID' client_secret = 'YOUR_CLIENT_SECRET' OAuth2 :: Client . new ( client_id , client_secret , :site => 'https://podio.com' , :authorize_path => '/oauth/authorize' , :access_token_path => '/oauth/token/v2' ) end def redirect_uri ( path = '/auth/podio/callback' , query = nil ) uri = URI . parse ( request . url ) uri . path = path uri . query = query uri . to_s end get \"/\" do %(<h1>Podio OAuth2 sample</h1> <p><a href=\"/auth/podio\">Try to authorize</a>.</p>) end # access this to request a token from Podio. get '/auth/podio' do url = podio_client . web_server . authorize_url ( :redirect_uri => redirect_uri ) puts \"Redirecting to URL: #{ url . inspect } \" redirect url end # If the user authorizes it, this request gets your access token # and makes a successful api call. get '/auth/podio/callback' do begin access_token = podio_client . web_server . get_access_token ( params [ :code ], :redirect_uri => redirect_uri ) \"<p>Your OAuth access token: #{ access_token . token } </p>\" rescue OAuth2 :: HTTPError %(<p>Outdated ?code= #{ params [ :code ] } :</p><p> #{ $! } </p><p><a href=\"/auth/podio\">Retry</a></p>) end end Example: PHP Limonade The following code example is written in PHP, using Limonade ( see full source code ): <? php require_once 'vendor/limonade.php' ; require_once 'vendor/podio-php/PodioAPI.php' ; function configure () { option ( 'CLIENT_ID' , 'YOUR_CLIENT_ID' ); // Replace with your client ID option ( 'CLIENT_SECRET' , 'YOUR_CLIENT_SECRET' ); // Replace with your client secret layout ( 'layout.php' ); error_layout ( 'layout.php' ); option ( 'REDIRECT_URI' , 'http://' . $_SERVER [ 'HTTP_HOST' ] . url_for ( 'authorize/callback' )); } dispatch ( '/' , 'root' ); function root () { return render ( '<h1>Podio Authentication sample</h1><p><a href=\"https://podio.com/oauth/authorize?response_type=code&client_id=' . option ( 'CLIENT_ID' ) . '&redirect_uri=' . rawurlencode ( option ( 'REDIRECT_URI' )) . '\">Try to authorize</a>.</p>' ); } dispatch ( '/authorize/callback' , 'authorize' ); function authorize () { try { Podio :: setup ( option ( 'CLIENT_ID' ), option ( 'CLIENT_SECRET' )); Podio :: authenticate ( 'authorization_code' , array ( 'code' => $_GET [ 'code' ], 'redirect_uri' => option ( 'REDIRECT_URI' ))); $access_token = Podio :: $oauth -> access_token ; return render ( \"<p>Your access token is { $access_token } </p>\" ); } catch ( PodioError $e ) { return render ( \"<p>There was an error. The API responded with the error type <b> { $e -> body [ 'error' ] } </b> and the message <b> { $e -> body [ 'error_description' ] } . <a href='\" . url_for ( '/' ) . \"'>Retry</a></p>\" ); } } run (); Example: Ruby on Rails with Omniauth The Rails sample application on Github demonstrates how to authenticate and read/write items to Podio."
+    },
+    {
+      "url": "https://developers.podio.com/doc/oauth-authorization/get-access-token-22359",
+      "requested_url": "https://developers.podio.com/doc/oauth-authorization/get-access-token-22359",
+      "status": 200,
+      "title": "OAuth authorization | Get access token - Podio API Documentation (https://developers.podio.com/doc/oauth-authorization/get-access-token-22359)",
+      "text": "OAuth authorization | Get access token - Podio API Documentation Getting started Get an API key Authentication API Reference Actions Alerts App market Applications Batch Calendar Comments Contacts Conversations Devices Email Embeds Files Flows Forms Friends Grants Hooks Importer Integrations Items Layout Linked Accounts Notifications OAuth authorization Organizations Questions Ratings Recurrence Reference Reminders Search Space members Spaces Status Stream Subscriptions Tags Tasks Users Views Voting Widgets Tutorials Client Libraries Developer Forums Partner Extensions Terms of Use Podio API Documentation OAuth authorization : Get access token Standard / Limit B Public Show other operations Operations in OAuth authorization Get access token Get scope Invalidate grant Invalidate tokens POST /oauth/token/v2 Gets a new access token for use when accessing the API. Podio supports 4 ways of obtaining an access token: password : Use the end users mail and password to access the API. This is only valid for trusted clients authorization_code : Use the authorization code obtained from step one of the authorization (see the area for more information) refresh_token : Use the refresh token obtained previously from one of the above methods. app : Login as an app with the id of the app and the apps login token This operation can return a wide variety of error codes. For details see the OAuth 2 specification. Usage Ruby Gem o_auth.rb Podio :: OAuth . get_access_token ( attributes ) Parameters app_id The id of the app to login as, if using \" app \" grant type app_token The token of the app, gotten from the app configuration, if using \" app \" grant type client_id The key of the API client client_secret The secret of the client. This will be generated by Podio and can be acquired in the API key area in Podio. code The authorization code if using \" authorization_code \" grant type grant_type The type of the grant, can be either \" password \", \" authorization_code \", \" refresh_token \" or \" app \" password The password of the end-user if using \" password \" grant type redirect_uri The redirect URL requested by the client if any. This has to match the domain associated with the client. refresh_token The refresh token acquired from an earlier create token request, if using \" refresh_token \" grant type username The mail of the end-user if using \" password \" grant type Request grant_type : The type of the grant, can be either \" password \", \" authorization_code \", \" refresh_token \" or \" app \" client_id : The id of the client. This will be the mail of the client requesting the access token client_secret : The secret of the client. This will be generated by Hoist and can be acquired by logging in to the Hoist API site. code : The authorization code if using \" authorization_code \" grant type redirect_uri : The redirect URI associated with the client, if using \" authorization_code \" grant type username : The mail of the end-user if using \" password \" grant type password : The password of the end-user if using \" password \" grant type app_id : The id of the app to login as app_token : The token of the app, gotten from the app configuration refresh_token : The refresh token acquired from an earlier create token request, if using \" refresh_token \" grant type Response { \"access_token\": The created access token. This is currently 128 characters long,\n  \"token_type\": The type of token, currently always \" bearer \", \"expires_in\": The number of seconds until the access token expires and cannot be used anymore, \"refresh_token\": The refresh token to use when a new access token is required because the access token expires,\n  \"ref\": The reference to the entity logged in,\n  {\n    \"type\": The type of the entity, either \" user \" or \" app \",\n    \"id\": The id of the entity, f.ex. the user id } } Sandbox The sandbox only handles GET operations for now."
+    },
+    {
+      "url": "https://developers.podio.com/api-key",
+      "requested_url": "https://developers.podio.com/api-key",
+      "status": 200,
+      "title": "Get API key - Podio API Documentation (https://developers.podio.com/api-key)",
+      "text": "Get API key - Podio API Documentation Getting started Get an API key Authentication API Reference Tutorials Client Libraries Developer Forums Partner Extensions Terms of Use Get API key Generating API keys to Podio It's easy to get one or more API keys for accessing your Podio data. You just have to sign in or sign up with Podio, and go to the API key tab in your settings. Get an API key now"
+    },
+    {
+      "url": "https://developers.podio.com/doc/oauth-authorization",
+      "requested_url": "https://developers.podio.com/doc/oauth-authorization",
+      "status": 200,
+      "title": "OAuth authorization | API Documentation - Podio API Documentation (https://developers.podio.com/doc/oauth-authorization)",
+      "text": "OAuth authorization | API Documentation - Podio API Documentation Getting started Get an API key Authentication API Reference Actions Alerts App market Applications Batch Calendar Comments Contacts Conversations Devices Email Embeds Files Flows Forms Friends Grants Hooks Importer Integrations Items Layout Linked Accounts Notifications OAuth authorization Organizations Questions Ratings Recurrence Reference Reminders Search Space members Spaces Status Stream Subscriptions Tags Tasks Users Views Voting Widgets Tutorials Client Libraries Developer Forums Partner Extensions Terms of Use Podio API Documentation OAuth authorization Operations Get access token Get scope Invalidate grant Invalidate tokens This API uses OAuth 2.0 (http://oauth.net/2/) for authentication users of the API. Currently supported is draft-10 of the specification. It is recommended to read http://tools.ietf.org/html/draft-ietf-oauth-v2-10. Authorizing To be able to access the API, a third party will have to register with Podio. This will result in a client being created, which can then be used when authenticating. Authentication can be done in one or two steps: One step This is only valid for trusted clients. When validating in one step, the token endpoint will be contacted directly with mail and password of the end-user, and will receive an access token in return. Two step This is for all other clients. When validating the user is sent to a Podio webpage along with the client id and any state. The user then logs in as normal and either grants or denies access for the client. If granted the user is sent back to the redirect url along with a authorization code. Secondly the client uses the token endpoint with the code from step one to get an access token. Two step authorization is not yet completed! Accessing When accessing any protected resource of the API, the access token will have be included as a parameter with the name \"oauth_token\" to the request. This can be either as part of the URI when posting or form-encoded otherwise."
+    },
+    {
+      "url": "https://developers.podio.com/authentication/username_password",
+      "requested_url": "https://developers.podio.com/authentication/username_password",
+      "status": 200,
+      "title": "Authentication: Username & password flow - Podio API Documentation (https://developers.podio.com/authentication/username_password)",
+      "text": "Authentication: Username & password flow - Podio API Documentation Getting started Get an API key Authentication Scopes & Permissions Server-side flow Client-side flow Username & password flow App authentication flow API Reference Tutorials Client Libraries Developer Forums Partner Extensions Terms of Use Authentication Username and password flow The username and password flow is suitable for clients capable of asking end-users for their usernames and passwords. The advantage over HTTP Basic, is that the user credentials are used in a single request and are exchanged for an access token and refresh token. This eliminates the need to store the username and password. Unlike the server-side flow there are no redirects to the Podio authorization page because the user provides their username and password directly. The access token is also provided immediately and there's no authorization code which must be exchanged for an access token. To gain an access token, you make a POST request to our endpoint with your authentication parameters placed in the request body . The grant_type parameter set to password . HTTP METHOD: POST URL: https://api.podio.com/oauth/token/v 2 HEADER: \"Content-Type: application/json\" BODY: { \"grant_type\" : \"password\" , \"username\" : YOUR_USERNAME , \"password\" : YOUR_PASSWORD , \"client_id\" : YOUR_APP_ID , \"redirect_uri\" : YOUR_URL , \"client_secret\" : YOUR_APP_SECRET } If your app is successfully authenticated and the credentials provided are valid, the API will return the access token: { \"access_token\" : ACCESS_TOKEN \"token_type\" : \"bearer\" , \"expires_in\" : EXPIRES_IN , \"refresh_token\" : REFRESH_TOKEN , \"ref\" : { \"type\" : \"user\" , \"id\" : USER_ID } } Example code The example code below show you how to do username authentication using the Ruby gem or PHP client. php ruby Podio . setup ( :api_key => 'YOUR_CLIENT_ID' , :api_secret => 'YOUR_CLIENT_SECRET' ) begin Podio . client . authenticate_with_credentials ( 'YOUR_USERNAME' , 'YOUR_PASSWORD' ) # Authentication was a success, now you can start making API calls. rescue Podio :: PodioError => ex # Something went wrong end Podio :: setup ( YOUR_CLIENT_ID , YOUR_CLIENT_SECRET ); try { Podio :: authenticate_with_password ( YOUR_USERNAME , YOUR_PASSWORD ); // Authentication was a success, now you can start making API calls. } catch ( PodioError $e ) { // Something went wrong. Examine $e->body['error_description'] for a description of the error. }"
+    }
+  ],
+  "claims": {
+    "auth": {
+      "value": [
+        "OAuth 2.0",
+        "API key"
+      ],
+      "sources": [
+        "https://developers.podio.com/authentication",
+        "https://developers.podio.com/authentication/server_side",
+        "https://developers.podio.com/doc/oauth-authorization/get-access-token-22359",
+        "https://developers.podio.com/api-key",
+        "https://developers.podio.com/doc/oauth-authorization",
+        "https://developers.podio.com/authentication/username_password"
+      ],
+      "evidence": [
+        {
+          "url": "https://developers.podio.com/authentication",
+          "excerpt": "rence Tutorials Client Libraries Developer Forums Partner Extensions Terms of Use How to authenticate with Podio API The Podio API uses the OAuth2 protocol for authentication. This allows external apps to request authorization to Podio without having direct access to the user's password. Our API supports different OAuth flows depending on what kind of integration ",
+          "method": "OAuth 2.0"
+        },
+        {
+          "url": "https://developers.podio.com/authentication",
+          "excerpt": "Authentication - Podio API Documentation Getting started Get an API key Authentication Scopes & Permissions Server-side flow Client-side flow Username & password flow App authentication flow API Reference Tutorials Client Libraries Developer Forums Partner Extensions Terms of Use How to aut",
+          "method": "API key"
+        },
+        {
+          "url": "https://developers.podio.com/authentication/server_side",
+          "excerpt": " details about the value of GRANTED_SCOPE_STRING Example: Ruby Sinatra The following code example is written in Ruby, using Sinatra and the OAuth2 gem: require 'rubygems' require 'sinatra' require 'oauth2' require 'json' def podio_client client_id = 'YOUR_CLIENT_ID' client_secret = 'YOUR_CLIENT_SECRET' OAuth2 :: Client . new ( client_id , client_secret , :site => ",
+          "method": "OAuth 2.0"
+        },
+        {
+          "url": "https://developers.podio.com/authentication/server_side",
+          "excerpt": "Authentication: Server-side flow - Podio API Documentation Getting started Get an API key Authentication Scopes & Permissions Server-side flow Client-side flow Username & password flow App authentication flow API Reference Tutorials Client Libraries Developer Forums Partner Extensions Terms of Use Authentica",
+          "method": "API key"
+        },
+        {
+          "url": "https://developers.podio.com/doc/oauth-authorization/get-access-token-22359",
+          "excerpt": "ogin as an app with the id of the app and the apps login token This operation can return a wide variety of error codes. For details see the OAuth 2 specification. Usage Ruby Gem o_auth.rb Podio :: OAuth . get_access_token ( attributes ) Parameters app_id The id of the app to login as, if using \" app \" grant type app_token The token of the app, gotten from the app c",
+          "method": "OAuth 2.0"
+        },
+        {
+          "url": "https://developers.podio.com/doc/oauth-authorization/get-access-token-22359",
+          "excerpt": "OAuth authorization | Get access token - Podio API Documentation Getting started Get an API key Authentication API Reference Actions Alerts App market Applications Batch Calendar Comments Contacts Conversations Devices Email Embeds Files Flows Forms Friends Grants Hooks Importer Integrations Items Layout Linked Ac",
+          "method": "API key"
+        },
+        {
+          "url": "https://developers.podio.com/api-key",
+          "excerpt": "Get API key - Podio API Documentation Getting started Get an API key Authentication API Reference Tutorials Client Libraries Developer Forums Partner Extensions Terms of Use Get API key Generating API keys to Podio It's easy to get",
+          "method": "API key"
+        },
+        {
+          "url": "https://developers.podio.com/doc/oauth-authorization",
+          "excerpt": "s of Use Podio API Documentation OAuth authorization Operations Get access token Get scope Invalidate grant Invalidate tokens This API uses OAuth 2.0 (http://oauth.net/2/) for authentication users of the API. Currently supported is draft-10 of the specification. It is recommended to read http://tools.ietf.org/html/draft-ietf-oauth-v2-10. Authorizing To be able to acc",
+          "method": "OAuth 2.0"
+        },
+        {
+          "url": "https://developers.podio.com/doc/oauth-authorization",
+          "excerpt": "OAuth authorization | API Documentation - Podio API Documentation Getting started Get an API key Authentication API Reference Actions Alerts App market Applications Batch Calendar Comments Contacts Conversations Devices Email Embeds Files Flows Forms Friends Grants Hooks Importer Integrations Items Layout Linked Ac",
+          "method": "API key"
+        },
+        {
+          "url": "https://developers.podio.com/authentication/username_password",
+          "excerpt": "Authentication: Username & password flow - Podio API Documentation Getting started Get an API key Authentication Scopes & Permissions Server-side flow Client-side flow Username & password flow App authentication flow API Reference Tutorials Client Libraries Developer Forums Partner Extensions Terms of Use Authentica",
+          "method": "API key"
+        }
+      ],
+      "reason": ""
+    },
+    "credential_gate": {
+      "value": "unknown",
+      "sources": [],
+      "evidence": [],
+      "reason": "No reliable automated access-tier extraction; targeted search results require claim-specific review"
+    },
+    "api_surface": {
+      "value": "unknown",
+      "sources": [],
+      "evidence": [],
+      "reason": "Targeted search found no usable, claim-specific official documentation"
+    },
+    "official_mcp": {
+      "value": "unknown",
+      "sources": [],
+      "evidence": [],
+      "reason": "Targeted search found no usable, claim-specific official documentation"
+    },
+    "composio_toolkit": {
+      "value": "listed",
+      "sources": [
+        "https://docs.composio.dev/toolkits/podio"
+      ],
+      "evidence": [
+        {
+          "url": "https://docs.composio.dev/toolkits/podio",
+          "excerpt": "Composio catalog match; verify product scope"
+        }
+      ],
+      "reason": ""
+    },
+    "verdict": {
+      "value": "unknown",
+      "sources": [],
+      "evidence": [],
+      "reason": "Insufficient independently verified authentication, API and access evidence for a build decision"
+    }
+  },
+  "validation": [
+    "Automatic extraction is provisional and must be checked independently",
+    "Unknown does not mean the capability is absent"
+  ]
+}

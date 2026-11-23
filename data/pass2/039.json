@@ -1,0 +1,62 @@
+{
+  "app": {
+    "number": 39,
+    "name": "Threads (Meta)",
+    "category": "Marketing, Ads, Email and Social",
+    "hint": "developers.facebook.com/docs/threads"
+  },
+  "checked_at": "2026-11-23T14:08:41.460331+00:00",
+  "source_search": "data/new_search/039.json",
+  "candidates": [],
+  "selected": [],
+  "pages": [],
+  "claims": {
+    "auth": {
+      "value": "unknown",
+      "sources": [],
+      "evidence": [],
+      "reason": "Targeted search found no usable, claim-specific official documentation"
+    },
+    "credential_gate": {
+      "value": "unknown",
+      "sources": [],
+      "evidence": [],
+      "reason": "No reliable automated access-tier extraction; targeted search results require claim-specific review"
+    },
+    "api_surface": {
+      "value": "unknown",
+      "sources": [],
+      "evidence": [],
+      "reason": "Targeted search found no usable, claim-specific official documentation"
+    },
+    "official_mcp": {
+      "value": "unknown",
+      "sources": [],
+      "evidence": [],
+      "reason": "Targeted search found no usable, claim-specific official documentation"
+    },
+    "composio_toolkit": {
+      "value": "listed",
+      "sources": [
+        "https://docs.composio.dev/toolkits/threads"
+      ],
+      "evidence": [
+        {
+          "url": "https://docs.composio.dev/toolkits/threads",
+          "excerpt": "Composio catalog match; verify product scope"
+        }
+      ],
+      "reason": ""
+    },
+    "verdict": {
+      "value": "unknown",
+      "sources": [],
+      "evidence": [],
+      "reason": "Insufficient independently verified authentication, API and access evidence for a build decision"
+    }
+  },
+  "validation": [
+    "Automatic extraction is provisional and must be checked independently",
+    "Unknown does not mean the capability is absent"
+  ]
+}

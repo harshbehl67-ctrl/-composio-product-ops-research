@@ -1,0 +1,20 @@
+{
+  "app": "Bright Data",
+  "source_pass": "data\\pass2\\057.json",
+  "access_candidates": [
+    {
+      "value": "self-serve / free or trial mentioned",
+      "url": "https://brightdata.com/pricing/mcp-server",
+      "excerpt": "t and experiment with live requests in a no-code environment. Are there limitations for Bright Data free tier? Yes, there is a limit of 5000 request per month. Where do I get my API keys? You can get your API token from the [user settings page](https://brightdata.com/cp/setting/users) in your Bright Data account. Make sure you have an account on [brightdata.com]",
+      "status": "provisional; check scope, negation and plan details"
+    },
+    {
+      "value": "self-serve / free or trial mentioned",
+      "url": "https://brightdata.com/pricing/mcp-server",
+      "excerpt": " always can do it. Is there a free access tier for the Bright Data MCP? Yes! Bright Data provides a free tier of 5K requests/month to new MCP users. How to set country for browser api mcp? Currently, the MCP (Model Context Protocol) integration does not support direct country targeting via a dedicated country parameter in the MCP c",
+      "status": "provisional; check scope, negation and plan details"
+    }
+  ],
+  "reason_if_unknown": "",
+  "warning": "A phrase match is not a verified credential gate or a buildability verdict."
+}

@@ -1,0 +1,20 @@
+{
+  "app": "Intercom",
+  "source_pass": "data\\pass2\\012.json",
+  "access_candidates": [
+    {
+      "value": "self-serve / free or trial mentioned",
+      "url": "https://www.intercom.com/help/en/articles/9071694-intercom-developer-faqs",
+      "excerpt": "s Intercom SDKs Canvas Kit Webhooks Inbox Apps Messenger Apps Setting up Intercom How do I create a developer account? You can create a new developer workspace for developing apps. Developer workspaces are free and intended for development purposes only. Once you've created the new workspace you can follow this guide to create an app and ",
+      "status": "provisional; check scope, negation and plan details"
+    },
+    {
+      "value": "approval condition mentioned",
+      "url": "https://developers.intercom.com/docs",
+      "excerpt": "ld specifically for your Intercom workspace that only access your own data. You can build a private app using your Access Token and it does not require a review. Install apps from the App Store Your team probably needs to integrate with other tools; we might have an app for it. Install connectors to tools you",
+      "status": "provisional; check scope, negation and plan details"
+    }
+  ],
+  "reason_if_unknown": "",
+  "warning": "A phrase match is not a verified credential gate or a buildability verdict."
+}

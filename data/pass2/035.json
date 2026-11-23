@@ -1,0 +1,248 @@
+{
+  "app": {
+    "number": 35,
+    "name": "Mailchimp",
+    "category": "Marketing, Ads, Email and Social",
+    "hint": "mailchimp.com/developer"
+  },
+  "checked_at": "2026-11-23T14:08:49.936875+00:00",
+  "source_search": "data/new_search/035.json",
+  "candidates": [
+    {
+      "url": "https://mailchimp.com/developer/marketing/api-concepts/authentication/",
+      "title": "Authentication | Mailchimp | Developer (https://mailchimp.com/developer/marketing/api-concepts/authentication/)",
+      "snippet": "Authentication | Mailchimp | Developer (https://mailchimp.com/developer/marketing/api-concepts/authentication/)\n【turn56search0】 [wordlim: 200] Crawled: yesterday; This page is for Mailchimp Marketing API.\n\nEvery request to the Marketing API carries a credential. ... Authentication is tied to the user who created the API key or authorized the OAuth 2 app, not to the account.\n\n# Authentication\n\nThis page is for Mailchimp Marketing API.\n\nEvery request to the Marketing API carries a credential. There are two kinds, and which one you need depends on whose account data you’re reaching for.\n\n## Choose a credential\n\nAn API key authenticates against the account that created it. Use one when your code couples your application’s data to your own Mailchimp account. It requires no server to handle a redirect, so it’s the fastest way to make a first request.\n\nOAuth 2 authenticates against an account belonging to someone else. Any integration a third party installs needs it.\n\nYou can start development against your own account with a key and move to OAuth 2 later; the request-signing mechanics below are identical for both.\n\nNote: We strongly discourage asking your users to paste their API key into your application. It gives you full control of their account, it can’t be revoked for your application alone, and it makes you responsible for storing someone else’s credential.\n\nIf you’re using one of the official client libraries, the library handles the signing details for you.\n\n## Authenticate with an API key or OAuth 2 token\n\nAPI keys and OAuth 2 access tokens are sent the same way. We’ll refer to both as tokens.\n\nYou can use either HTTP Basic Authentication or Bearer Authentication.\n\nHTTP Basic Authentication passes the token as the password, with any string as the username:\n    \n    curl --request GET \\\n    \n      --url 'https://api.mailchimp.com/3.0/' \\\n    \n      --user 'anystring:TOKEN'\n\nBearer Authentication passes it in the `Authorization` header:\n    \n    curl --request GET \\"
+    },
+    {
+      "url": "https://mailchimp.com/developer/marketing/build/ai-tools/mcp-server/",
+      "title": "MCP server | Mailchimp | Developer (https://mailchimp.com/developer/marketing/build/ai-tools/mcp-server/)",
+      "snippet": "MCP server | Mailchimp | Developer (https://mailchimp.com/developer/marketing/build/ai-tools/mcp-server/)\n【turn56search1】 [wordlim: 200] Crawled: last week; This documentation site is itself an MCP server. ...           \"url\": \"https://mailchimp.com/developer/_mcp/server\"\n"
+    },
+    {
+      "url": "https://mailchimp.com/legal/api_use/",
+      "title": "Mailchimp's API Use Policy (https://mailchimp.com/legal/api_use/)",
+      "snippet": "Mailchimp's API Use Policy (https://mailchimp.com/legal/api_use/)\n【turn56search2】 [wordlim: 200] Crawled: today; In this Policy, \"you\" and \"your\" mean any person or entity that accesses, uses, develops, operates, enables, or otherwise interacts with the Integration Interfaces, including Mailchimp customers, developers, agents (including artificial-intelligence agents and other automated systems), and third parties. ... Our APIs are available at: https://mailchimp.com/developer/ and https://mandrillapp.com/api/docs/. ... You'll follow all documentation we provide for the Integration Interfaces.\n"
+    },
+    {
+      "url": "https://mailchimp.com/developer/marketing/api-concepts/authentication/api-keys",
+      "title": "API keys | Mailchimp | Developer (https://mailchimp.com/developer/marketing/api-concepts/authentication/api-keys)",
+      "snippet": "API keys | Mailchimp | Developer (https://mailchimp.com/developer/marketing/api-concepts/authentication/api-keys)\n【turn56search3】 [wordlim: 200] Crawled: yesterday; Mailchimp Marketing API ... It’s the right credential when your application works with your own Mailchimp data.\n"
+    },
+    {
+      "url": "https://mailchimp.com/developer/transactional/guides/how-to-use-mailchimps-transactional-messaging-mcp/",
+      "title": "How to Use Mailchimp's Transactional Messaging MCP | Mailchimp | Developer (https://mailchimp.com/developer/transactional/guides/how-to-use-mailchimps-transactional-messaging-mcp/)",
+      "snippet": "How to Use Mailchimp's Transactional Messaging MCP | Mailchimp | Developer (https://mailchimp.com/developer/transactional/guides/how-to-use-mailchimps-transactional-messaging-mcp/)\n【turn56search4】 [wordlim: 200] Crawled: yesterday; # How to Use Mailchimp's Transactional Messaging MCP ... The MCP server URL is https://mandrillapp.com/mcp. ...   * Review the mcp.json file in your AI client of choice: https://code.claude.com/docs/en/mcp https://cursor.com/docs/mcp https://code.visualstudio.com/docs/copilot/customization/mcp-servers\n  * For API error responses, refer to our API error code documentation\n"
+    },
+    {
+      "url": "https://mailchimp.com/developer/marketing/build/get-started/create-an-account",
+      "title": "Create an account | Mailchimp | Developer (https://mailchimp.com/developer/marketing/build/get-started/create-an-account)",
+      "snippet": "Create an account | Mailchimp | Developer (https://mailchimp.com/developer/marketing/build/get-started/create-an-account)\n【turn56search5】 [wordlim: 200] Crawled: 5 days ago; The Mailchimp Marketing API provides programmatic access to Mailchimp data and functionality, allowing developers to build custom features to do things like sync email activity and campaign analytics with their database, manage audiences and campaigns, and more.\n"
+    },
+    {
+      "url": "https://mailchimp.com/developer/marketing/build/start-developing/set-up-an-oauth-app?msockid=29bdc574f2e667260679d34cf3e666e1",
+      "title": "Set up an OAuth app | Mailchimp | Developer (https://mailchimp.com/developer/marketing/build/start-developing/set-up-an-oauth-app?msockid=29bdc574f2e667260679d34cf3e666e1)",
+      "snippet": "Set up an OAuth app | Mailchimp | Developer (https://mailchimp.com/developer/marketing/build/start-developing/set-up-an-oauth-app?msockid=29bdc574f2e667260679d34cf3e666e1)\n【turn56search6】 [wordlim: 200] Crawled: 3 days ago; This page is for Mailchimp Marketing API.\n\nThis page walks through implementing OAuth 2 so your application can access the Marketing API on behalf of other Mailchimp users.\n"
+    },
+    {
+      "url": "https://mailchimp.com/developer/marketing/build/start-developing/set-up-an-oauth-app?msockid=2ba81bac28a06ff733260d5e29d36e1c",
+      "title": "Set up an OAuth app | Mailchimp | Developer (https://mailchimp.com/developer/marketing/build/start-developing/set-up-an-oauth-app?msockid=2ba81bac28a06ff733260d5e29d36e1c)",
+      "snippet": "Set up an OAuth app | Mailchimp | Developer (https://mailchimp.com/developer/marketing/build/start-developing/set-up-an-oauth-app?msockid=2ba81bac28a06ff733260d5e29d36e1c)\n【turn56search7】 [wordlim: 200] Crawled: 3 days ago; This page is for Mailchimp Marketing API.\n\nThis page walks through implementing OAuth 2 so your application can access the Marketing API on behalf of other Mailchimp users.\n"
+    },
+    {
+      "url": "https://mailchimp.com/help/about-api-keys/?msockid=2ba81bac28a06ff733260d5e29d36e1c",
+      "title": "About API Keys (https://mailchimp.com/help/about-api-keys/?msockid=2ba81bac28a06ff733260d5e29d36e1c)",
+      "snippet": "About API Keys (https://mailchimp.com/help/about-api-keys/?msockid=2ba81bac28a06ff733260d5e29d36e1c)\n【turn56search9】 [wordlim: 200] Crawled: today; If you're a developer who wants to build your own integration with Mailchimp, check out our API documentation.\n"
+    },
+    {
+      "url": "https://mailchimp.com/help/about-api-keys/?msockid=0e143ff0b0f06f6f2f7e2987b1416ef5",
+      "title": "About API Keys (https://mailchimp.com/help/about-api-keys/?msockid=0e143ff0b0f06f6f2f7e2987b1416ef5)",
+      "snippet": "About API Keys (https://mailchimp.com/help/about-api-keys/?msockid=0e143ff0b0f06f6f2f7e2987b1416ef5)\n【turn56search10】 [wordlim: 200] Crawled: 2 months ago; If you're a developer who wants to build your own integration with Mailchimp, check out our API documentation.\n"
+    },
+    {
+      "url": "https://mailchimp.com/developer/marketing/guides/quick-start/?msockid=2ba81bac28a06ff733260d5e29d36e1c",
+      "title": "Marketing API Quick Start Guide | Mailchimp Developer (https://mailchimp.com/developer/marketing/guides/quick-start/?msockid=2ba81bac28a06ff733260d5e29d36e1c)",
+      "snippet": "Marketing API Quick Start Guide | Mailchimp Developer (https://mailchimp.com/developer/marketing/guides/quick-start/?msockid=2ba81bac28a06ff733260d5e29d36e1c)\n【turn56search11】 [wordlim: 200] Crawled: 2 months ago; This guide will give you everything you need to start using the Mailchimp Marketing API to manage audiences, control automation workflows, sync email activity with your database, and more. ... If you’re creating integrations that require access to Mailchimp on behalf of other Mailchimp users, you’ll want to set up authentication via Oauth 2 instead. ... You may also want to familiarize yourself with the Marketing API docs, which outline some of the common conventions you’ll run into across the API, or browse the extensive API Reference documentation.\n"
+    },
+    {
+      "url": "https://mailchimp.com/developer/marketing/api-concepts/errors",
+      "title": "Errors | Mailchimp | Developer (https://mailchimp.com/developer/marketing/api-concepts/errors)",
+      "snippet": "Errors | Mailchimp | Developer (https://mailchimp.com/developer/marketing/api-concepts/errors)\n【turn56search12】 [wordlim: 200] Crawled: yesterday; If you need to contact support (apihelp@mailchimp.com), we recommend including the complete request you’re trying to make, the error code, and the response you’re receiving so they can help as quickly as possible. ... **Authorization Failure: User does not have access to the requested operation **Your account’s pricing plan may not permit access to a feature; upgrading the account’s plan may fix these errors.\n"
+    },
+    {
+      "url": "https://mailchimp.com/developer/marketing/build/start-developing/set-up-an-oauth-app?msockid=141ebf9ffb4d619525c3ad27fad660d6",
+      "title": "Set up an OAuth app | Mailchimp | Developer (https://mailchimp.com/developer/marketing/build/start-developing/set-up-an-oauth-app?msockid=141ebf9ffb4d619525c3ad27fad660d6)",
+      "snippet": "Set up an OAuth app | Mailchimp | Developer (https://mailchimp.com/developer/marketing/build/start-developing/set-up-an-oauth-app?msockid=141ebf9ffb4d619525c3ad27fad660d6)\n【turn56search15】 [wordlim: 200] Crawled: 4 days ago; Mailchimp Marketing API ... This page walks through implementing OAuth 2 so your application can access the Marketing API on behalf of other Mailchimp users.\n"
+    },
+    {
+      "url": "https://mailchimp.com/developer/marketing/api/root/list",
+      "title": "List API root resources | Mailchimp | Developer (https://mailchimp.com/developer/marketing/api/root/list)",
+      "snippet": "List API root resources | Mailchimp | Developer (https://mailchimp.com/developer/marketing/api/root/list)\n【turn56search19】 [wordlim: 200] Crawled: last week; Mailchimp Marketing API ... ### Authentication\n"
+    }
+  ],
+  "selected": [
+    {
+      "url": "https://mailchimp.com/developer/marketing/api-concepts/authentication/",
+      "title": "Authentication | Mailchimp | Developer (https://mailchimp.com/developer/marketing/api-concepts/authentication/)",
+      "snippet": "Authentication | Mailchimp | Developer (https://mailchimp.com/developer/marketing/api-concepts/authentication/)\n【turn56search0】 [wordlim: 200] Crawled: yesterday; This page is for Mailchimp Marketing API.\n\nEvery request to the Marketing API carries a credential. ... Authentication is tied to the user who created the API key or authorized the OAuth 2 app, not to the account.\n\n# Authentication\n\nThis page is for Mailchimp Marketing API.\n\nEvery request to the Marketing API carries a credential. There are two kinds, and which one you need depends on whose account data you’re reaching for.\n\n## Choose a credential\n\nAn API key authenticates against the account that created it. Use one when your code couples your application’s data to your own Mailchimp account. It requires no server to handle a redirect, so it’s the fastest way to make a first request.\n\nOAuth 2 authenticates against an account belonging to someone else. Any integration a third party installs needs it.\n\nYou can start development against your own account with a key and move to OAuth 2 later; the request-signing mechanics below are identical for both.\n\nNote: We strongly discourage asking your users to paste their API key into your application. It gives you full control of their account, it can’t be revoked for your application alone, and it makes you responsible for storing someone else’s credential.\n\nIf you’re using one of the official client libraries, the library handles the signing details for you.\n\n## Authenticate with an API key or OAuth 2 token\n\nAPI keys and OAuth 2 access tokens are sent the same way. We’ll refer to both as tokens.\n\nYou can use either HTTP Basic Authentication or Bearer Authentication.\n\nHTTP Basic Authentication passes the token as the password, with any string as the username:\n    \n    curl --request GET \\\n    \n      --url 'https://api.mailchimp.com/3.0/' \\\n    \n      --user 'anystring:TOKEN'\n\nBearer Authentication passes it in the `Authorization` header:\n    \n    curl --request GET \\"
+    },
+    {
+      "url": "https://mailchimp.com/legal/api_use/",
+      "title": "Mailchimp's API Use Policy (https://mailchimp.com/legal/api_use/)",
+      "snippet": "Mailchimp's API Use Policy (https://mailchimp.com/legal/api_use/)\n【turn56search2】 [wordlim: 200] Crawled: today; In this Policy, \"you\" and \"your\" mean any person or entity that accesses, uses, develops, operates, enables, or otherwise interacts with the Integration Interfaces, including Mailchimp customers, developers, agents (including artificial-intelligence agents and other automated systems), and third parties. ... Our APIs are available at: https://mailchimp.com/developer/ and https://mandrillapp.com/api/docs/. ... You'll follow all documentation we provide for the Integration Interfaces.\n"
+    },
+    {
+      "url": "https://mailchimp.com/developer/marketing/build/ai-tools/mcp-server/",
+      "title": "MCP server | Mailchimp | Developer (https://mailchimp.com/developer/marketing/build/ai-tools/mcp-server/)",
+      "snippet": "MCP server | Mailchimp | Developer (https://mailchimp.com/developer/marketing/build/ai-tools/mcp-server/)\n【turn56search1】 [wordlim: 200] Crawled: last week; This documentation site is itself an MCP server. ...           \"url\": \"https://mailchimp.com/developer/_mcp/server\"\n"
+    },
+    {
+      "url": "https://mailchimp.com/developer/marketing/api-concepts/authentication/api-keys",
+      "title": "API keys | Mailchimp | Developer (https://mailchimp.com/developer/marketing/api-concepts/authentication/api-keys)",
+      "snippet": "API keys | Mailchimp | Developer (https://mailchimp.com/developer/marketing/api-concepts/authentication/api-keys)\n【turn56search3】 [wordlim: 200] Crawled: yesterday; Mailchimp Marketing API ... It’s the right credential when your application works with your own Mailchimp data.\n"
+    },
+    {
+      "url": "https://mailchimp.com/developer/transactional/guides/how-to-use-mailchimps-transactional-messaging-mcp/",
+      "title": "How to Use Mailchimp's Transactional Messaging MCP | Mailchimp | Developer (https://mailchimp.com/developer/transactional/guides/how-to-use-mailchimps-transactional-messaging-mcp/)",
+      "snippet": "How to Use Mailchimp's Transactional Messaging MCP | Mailchimp | Developer (https://mailchimp.com/developer/transactional/guides/how-to-use-mailchimps-transactional-messaging-mcp/)\n【turn56search4】 [wordlim: 200] Crawled: yesterday; # How to Use Mailchimp's Transactional Messaging MCP ... The MCP server URL is https://mandrillapp.com/mcp. ...   * Review the mcp.json file in your AI client of choice: https://code.claude.com/docs/en/mcp https://cursor.com/docs/mcp https://code.visualstudio.com/docs/copilot/customization/mcp-servers\n  * For API error responses, refer to our API error code documentation\n"
+    },
+    {
+      "url": "https://mailchimp.com/developer/marketing/build/get-started/create-an-account",
+      "title": "Create an account | Mailchimp | Developer (https://mailchimp.com/developer/marketing/build/get-started/create-an-account)",
+      "snippet": "Create an account | Mailchimp | Developer (https://mailchimp.com/developer/marketing/build/get-started/create-an-account)\n【turn56search5】 [wordlim: 200] Crawled: 5 days ago; The Mailchimp Marketing API provides programmatic access to Mailchimp data and functionality, allowing developers to build custom features to do things like sync email activity and campaign analytics with their database, manage audiences and campaigns, and more.\n"
+    }
+  ],
+  "pages": [
+    {
+      "url": "https://mailchimp.com/developer/marketing/api-concepts/authentication/",
+      "requested_url": "https://mailchimp.com/developer/marketing/api-concepts/authentication/",
+      "status": 200,
+      "title": "Authentication | Mailchimp | Developer (https://mailchimp.com/developer/marketing/api-concepts/authentication/)",
+      "text": "Authentication | Mailchimp | Developer For AI agents: a documentation index is available at the root level at /llms.txt. Append /llms.txt to any URL for a page-level index, or .md for the markdown version of any page. Skip to navigation On this page Choose a credential Authenticate with an API key or OAuth 2 token User access and revocation Scroll to top This page is for Mailchimp Marketing API. Every request to the Marketing API carries a credential. There are two kinds,\nand which one you need depends on whose account data you’re reaching for. Choose a credential An API key authenticates\nagainst the account that created it. Use one when your code couples your application’s data to your own Mailchimp account. It requires no server to\nhandle a redirect, so it’s the fastest way to make a first request. OAuth 2 authenticates\nagainst an account belonging to someone else. Any integration a third party\ninstalls needs it. You can start development against your own account with a key and move to\nOAuth 2 later; the request-signing mechanics below are identical for both. Note : We strongly discourage asking your users to paste their API key into\nyour application. It gives you full control of their account, it can’t be\nrevoked for your application alone, and it makes you responsible for storing\nsomeone else’s credential. If you’re using one of the official client libraries ,\nthe library handles the signing details for you. Authenticate with an API key or OAuth 2 token API keys and OAuth 2 access tokens are sent the same way. We’ll refer to both\nas tokens. You can use either HTTP Basic Authentication or Bearer Authentication. HTTP Basic Authentication passes the token as the password, with any string as\nthe username: curl --request GET \\ --url ' https://api.mailchimp.com/3.0/ ' \\ --user ' anystring:TOKEN ' Bearer Authentication passes it in the Authorization header: curl --request GET \\ --url ' https://api.mailchimp.com/3.0/ ' \\ --header ' Authorization: Bearer TOKEN ' User access and revocation Authentication is tied to the user who created the API key or authorized the\nOAuth 2 app, not to the account. If that user is removed from the account, the\ntoken is revoked. Access is also bounded by the user level (role) of that user, and a role can change over time. An API action the role doesn’t\npermit returns a 403 . You can\ncheck the role attached to a token with the API Root endpoint ,\nand compare what each role allows in this chart . When creating a key or authorizing an app, use an admin user where you can. If\nyou’re building an integration, consider telling the user when their role is\ntoo limited for your application to work. Note : You are responsible for the security of your tokens; store them in a\nsecure location on your server. Because of the risks of exposing a token,\nMailchimp does not support client-side calls to the Marketing API using CORS\nrequests."
+    },
+    {
+      "url": "https://mailchimp.com/legal/api_use/",
+      "requested_url": "https://mailchimp.com/legal/api_use/",
+      "status": 200,
+      "title": "Mailchimp's API Use Policy (https://mailchimp.com/legal/api_use/)",
+      "text": "Mailchimp's API Use Policy | Mailchimp Skip to main content Save 50% for 12 months - limited time offer. Get started today. Legal API Use Policy Download Page Updated November 19, 2026 Thank you for using the Mailchimp application program interfaces (\"APIs\"), Model Context Protocol server (\"MCP Server\"), and related capabilities (collectively, the \"Integration Interfaces\"). By accessing or using the Integration Interfaces, you agree to this API Use Policy (the \"Policy\") and our Terms. In this Policy, \"you\" and \"your\" mean any person or entity that accesses, uses, develops, operates, enables, or otherwise interacts with the Integration Interfaces, including Mailchimp customers, developers, agents (including artificial-intelligence agents and other automated systems), and third parties. If you access or use an Integration Interface on behalf of another person or entity, you represent that you have authority to bind that person or entity to this Policy. Mailchimp provides the Integration Interfaces to allow people to build on and benefit from our Service by creating software, services, modules, or agents that connect to our platform or have access to the data within our platform via our Integration Interfaces (each an \"Integration\").  Our APIs are available at: https://mailchimp.com/developer/ and https://mandrillapp.com/api/docs/ . This Policy is and will be treated as part of our Terms. Capitalized terms used and not otherwise defined in this Policy have the meanings given to them in our Terms. 1. Login You'll only access the Integration Interfaces using OAuth or an API key. If you have an Integration, then users must have the option to log in via OAuth or their API key. You won't prompt users to provide their Mailchimp username, password, or security questions. 2. Permitted Use You won't use the Integration Interfaces to send spam or take any actions that violate our Acceptable Use Policy and our Standard Terms of Use .  You will comply with all applicable laws (including privacy laws and United States export control laws and regulations and economic sanctions laws and regulations). You'll follow all documentation we provide for the Integration Interfaces. You won't attempt to hack or change the way the Service functions.  We may throttle your use of the Integration Interfaces at any time. We may monitor your use of the Integration Interfaces for compliance with these rules, and we may deny you access to the Integration Interfaces if you violate this Policy. 3. Privacy You’ll respect the privacy of our users. You must obtain express permission from each user before you access their Mailchimp account. Your Integration must display a privacy policy for users detailing the information you’ll collect from them when they use the Integration. You will only access a user’s data to the extent permitted by the user and explained in your privacy policy. You must immediately delete a user’s data if the user requests deletion or terminates their account with you. Any user data which is collected by Mailchimp via your Integration will be treated in accordance with our Global Privacy Statement . 4. Security You will implement and maintain appropriate technical and organizational security measures to protect and to preserve the security, integrity and confidentiality of the data of your users. These security measures shall prevent the unauthorized access or disclosure of personal or confidential data that you process. You must promptly report any security deficiencies or security incidents that may impact or compromise our users, Integration Interfaces, or Service in writing to securityincidents@intuit.com. And, if there is a security incident, you will work with us to immediately correct the incident or deficiency. We reserve the right to review or audit your books, records, agreements, access logs, third-party audit and examination reports, systems, networks, facilities (including physical and remote access to data centers and cloud facilities), controls, policies and procedures related to your Integration to ensure compliance with this Policy. You will promptly correct any security flaws or deficiencies. Upon remediation, you will certify in writing that you are now in compliance. 5. License We grant you a non-exclusive, non-transferable, non-sublicensable, revocable, limited right to access and use the Integration Interfaces to develop, test and support your Integration and to distribute or allow access to your Integration to users of your service, provided that  you comply with this Policy and all applicable laws. You have no right to distribute or allow access to our stand-alone APIs. We may terminate your access to our Integration Interfaces at any time for any reason. 6. Ownership We own all rights, titles, and interest in the Service and the Integration Interfaces, including all intellectual property rights, marks, code, and features. You won't infringe, reverse engineer, or copy our code, design, or content. You will not access our Integration Interfaces in order to compete with our Service. Any rights not expressly granted by this Policy are withheld, so if you don't see it here, then it's not a right we're giving you. You own all rights, titles, and interest in the Integration, except for the Integration Interfaces, our marks, and the Service. If you provide feedback about the Integration Interfaces or the Service, we may copy, modify, create derivative works, display, disclose, distribute, or use that feedback without any obligation to you. 7. Use of Marks You may only use our name and marks (meaning our logos, mascots, and copyrighted images) according to our Brand Guidelines . You may not alter or remove any proprietary notices in our marks. You won’t use our name or marks in your Integration name or logo, or in any way that implies an endorsement by us (that includes putting your logo on Freddie). If you use our marks to create your logo or name, you’ll immediately assign those rights to us at no expense. 8. Disclaimer To the maximum extent permitted by law, we provide the Integration Interfaces as-is. That means we don't provide warranties of any kind, either express or implied, including but not limited to merchantability and fitness for a particular purpose. 9. Updates We may update or modify the Integration Interfaces and this Policy from time to time by posting the changes on this site or notifying you via email. These changes may affect your use of the Integration Interfaces or the way your Integration interacts with the Integration Interfaces. If we make a change that's unacceptable to you, you should stop using the Integration Interfaces. 10. Confidentiality You may have access to confidential, proprietary, and non-public information specific to the Integration Interfaces (\"Confidential Information\"). You may use Confidential Information only as necessary to develop, test, operate, support, and maintain your Integration and to exercise your rights under this Policy. You won't disclose the Confidential Information to anyone without our written consent, and you'll protect the Confidential Information from unauthorized use and disclosure in the same way you'd protect your own confidential information. 11. Indemnification You'll indemnify and hold us and our Team harmless from any losses (including attorney fees) that result from third-party claims that relate to your use of the Integration Interfaces. 12. Limitation of Liability To the maximum extent permitted by law, you acknowledge and agree that the Limitation of Liability in our Terms applies to your Agent's actions and your use of the Integration Interfaces. 13. MCP Server 13A. What This Section Covers Mailchimp may make available a MCP server. The MCP Server is an Integration Interface and is subject to this Policy. This Section 13 contains additional terms applicable to access to and use of the MCP Server. An \"Agent\" means any artificial-intelligence agent, assistant, automated tool, software, model, service, or other system that you connect to the MCP Server or allow someone else to connect, whether directly or through an Integration Interface. 13B. Agent Access You're responsible for Agents you connect to the Integration Interfaces. An Agent should only access the MCP Server if you authorize it through OAuth or another method we provide. You will grant each Agent only the permissions it needs. Anything an Agent does using access you granted is treated as your action under this Policy and our Terms, whether you approved the specific action or not. You should carefully configure your Agent's permissions, require human review before an Agent takes any action that can't easily be undone (like sending campaigns or deleting contacts), promptly revoke an Agent's access if it's acting outside your instructions or is no longer needed, and tell us immediately at securityincidents@intuit.com if you think an Agent has been compromised. Revoking access stops future actions. It doesn't reverse actions an Agent has already taken. 13C. Rules For Agents Agents must follow this Policy, our Terms and all applicable laws. You won't, and won't let any Agent or third party: (a) bypass or try to bypass controls on the MCP Server; (b) send spam or take any actions that violate our Acceptable Use Policy and our Standard Terms of Use; (c) access accounts, data, or features you aren't authorized to access; (d) use data from the MCP Server to train any AI or machine learning model; (e) share data from the MCP Server unless you have all required consents; or (f) retain data from the MCP Server longer than reasonably necessary to complete the requested task, except as required by applicable law or authorized by the applicable user. We may set and change limits and available tools for the MCP Server at any time. 13D. Automated Actions Are Your Responsibility Agents can make mistakes or take actions you didn't expect. You are responsible for your Agent's actions. We don't control Agents, and we aren't responsible for any Agent action. This includes drafting, sending, deleting, or changing campaigns, contacts, audiences, or account settings using the MCP Server. We have no duty to review, approve, or reverse any Agent action and we don't guarantee that we can restore data an Agent deletes or changes. To the maximum extent permitted by law, we provide the MCP Server as-is and as-available, and we don't promise that it, or any output or Agent's use of it, will be accurate, complete, secure, uninterrupted, or error-free. 14. The Rest This Policy doesn't create or imply any partnership, agency, or joint venture. This Policy will apply for as long as you use the Integration Interfaces or until terminated in accordance with our Terms.  In the event of a conflict between this Policy and the Standard Terms of Use, the Standard Terms of Use shall control."
+    },
+    {
+      "url": "https://mailchimp.com/developer/marketing/build/ai-tools/mcp-server/",
+      "requested_url": "https://mailchimp.com/developer/marketing/build/ai-tools/mcp-server/",
+      "status": 200,
+      "title": "MCP server | Mailchimp | Developer (https://mailchimp.com/developer/marketing/build/ai-tools/mcp-server/)",
+      "text": "MCP server | Mailchimp | Developer For AI agents: a documentation index is available at the root level at /llms.txt. Append /llms.txt to any URL for a page-level index, or .md for the markdown version of any page. Skip to navigation On this page Connect your agent Other ways agents can access these docs Related Scroll to top This page is for Mailchimp Marketing API. This searches documentation, not your Mailchimp account. The server\nanswers questions using this site’s published content, so it works without a\nMailchimp credential. To let an agent act on your account, call the API\ndirectly or use Agent skills . Model Context Protocol (MCP) is an open\nstandard that lets an AI agent discover and call an external server’s tools\nduring a conversation. This documentation site is itself an MCP server. Connect an agent to it and\nthe agent can search these docs directly from your editor or terminal instead\nof you copying passages into the conversation by hand. Ask it what you’d ask a person: “Search the docs for how Mailchimp scopes OAuth 2 tokens to a single\naccount.” “What does the Marketing API docs site say about pagination limits on the\nReports endpoints?” “Find the docs page on batch operations and summarize the request size\nlimit.” Connect your agent Claude Code claude mcp add --transport http fern_mcp_mailchimp-docs \\ https://mailchimp.com/developer/_mcp/server Cursor Add the URL to your MCP server configuration: https://mailchimp.com/developer/_mcp/server Claude Desktop Open Claude menu → Settings → Developer → Edit Config, then add the server\nunder mcpServers in claude_desktop_config.json : { \" mcpServers \" : { \" mailchimp-docs \" : { \" type \" : \" http \" , \" url \" : \" https://mailchimp.com/developer/_mcp/server \" } } } VS Code Add the same server to .vscode/mcp.json in your project: { \" servers \" : { \" mailchimp-docs \" : { \" type \" : \" http \" , \" url \" : \" https://mailchimp.com/developer/_mcp/server \" } } } Restart the client after saving. Each one surfaces a connection indicator\nonce the server responds. Other ways agents can access these docs An agent can also read this site directly. Every page has a Markdown\nversion at its own URL with .md appended, and an llms.txt index lists\nthose pages at every level of the docs, down to individual sections. This\nworks the same way on authenticated documentation sites and public ones like\nthis one. curl https://mailchimp.com/developer/marketing/build/ai-tools/mcp-server.md Searching and fetching solve different problems: the docs-search tool finds\nthe right page when an agent doesn’t know where to look, and a direct .md fetch reads a page you’ve already identified without spending tokens on\nHTML. Agents commonly use both in the same session. See llms.txt for the full index format and\nhow to scope one to just the section an agent needs. Related Agent skills package workflows\nthat call the Marketing API itself. Authentication covers the API\nkey and OAuth 2 credentials for calling the Marketing API directly."
+    },
+    {
+      "url": "https://mailchimp.com/developer/marketing/api-concepts/authentication/api-keys",
+      "requested_url": "https://mailchimp.com/developer/marketing/api-concepts/authentication/api-keys",
+      "status": 200,
+      "title": "API keys | Mailchimp | Developer (https://mailchimp.com/developer/marketing/api-concepts/authentication/api-keys)",
+      "text": "API keys | Mailchimp | Developer For AI agents: a documentation index is available at the root level at /llms.txt. Append /llms.txt to any URL for a page-level index, or .md for the markdown version of any page. Skip to navigation On this page What a key grants Where keys can’t be used Scroll to top This page is for Mailchimp Marketing API. An API key authenticates requests\nagainst the account it was created in. It’s the right credential when your\napplication works with your own Mailchimp data. To create one, see Generate your API key . What a key grants A key carries full access to the account it belongs to. There is no way to\nissue a read-only key or restrict one to particular endpoints, so treat a key\nthe way you’d treat a password. Keys don’t expire. A key stays valid until you delete it, or until the user who\ncreated it is removed from the account; see User access and revocation . Where keys can’t be used Because a key grants full account access, two environments are ruled out: Browsers. Mailchimp does not support client-side calls to the Marketing\nAPI using CORS requests. A key in front-end code is readable by anyone who\nloads the page. Mobile apps. A key shipped inside a distributed binary can be extracted\nfrom it. For iOS and Android, use the Mobile SDK , which is built\nagainst a mobile-focused subset of the API. Both cases have the same shape: the credential ends up somewhere you don’t\ncontrol. Keep keys on a server you own."
+    },
+    {
+      "url": "https://mailchimp.com/developer/transactional/guides/how-to-use-mailchimps-transactional-messaging-mcp/",
+      "requested_url": "https://mailchimp.com/developer/transactional/guides/how-to-use-mailchimps-transactional-messaging-mcp/",
+      "status": 200,
+      "title": "How to Use Mailchimp's Transactional Messaging MCP | Mailchimp | Developer (https://mailchimp.com/developer/transactional/guides/how-to-use-mailchimps-transactional-messaging-mcp/)",
+      "text": "How to Use Mailchimp's Transactional Messaging MCP | Mailchimp | Developer For AI agents: a documentation index is available at the root level at /llms.txt. Append /llms.txt to any URL for a page-level index, or .md for the markdown version of any page. Skip to navigation On this page What is an MCP? What can the MCP do? Prerequisites How do I set up the MCP? Managing MCP Access Troubleshooting Example Prompts Scroll to top This page is for Mailchimp Transactional. What is an MCP? An MCP (Model Context Protocol) allows AI agents to interact with API, knowledge bases, or other content. Our MCP specifically allows you to interact with the Transactional Messaging API, give onboarding help regarding Transactional Messaging, and submit feedback. What can the MCP do? Our MCP mirrors what our API can already do. Tool Description account_status Check account status build_template Build/construct a template call_api Call a Transactional Messaging API endpoint describe_api Describe a specific API endpoint (parameters, schema) diagnose_failed_send Diagnose why a send failed integrate_api Help integrate with the API list_api List available Transactional Messaging API endpoints onboarding Onboarding assistance submit_feedback Submit feedback Prerequisites In order to complete some of the MCP actions, we recommend to have the following setup in advance: Create an API key Authenticate a sending domain If you are using Transactional SMS, have an SMS number setup How do I set up the MCP? The MCP server URL is https://mandrillapp.com/mcp . Setup varies by client: Claude Desktop Open Claude Desktop, go to Claude menu → Settings → Developer → Edit Config. This opens claude_desktop_config.json. Add the following under mcpServers: { \" mcpServers \" : { \" mctx-mcp \" : { \" type \" : \" http \" , \" url \" : \" https://mandrillapp.com/mcp \" , \" headers \" : { \" Authorization \" : \" Bearer YOUR_API_KEY \" } } } } Save the file and restart Claude Desktop. You should see an MCP indicator in the bottom-right of the chat input. Claude Code (CLI) Run this command once: claude mcp add --transport http mctx-mcp https://mandrillapp.com/mcp \\ -H \" Authorization: Bearer YOUR_API_KEY \" Cursor Add to ~/.cursor/mcp.json (create it if it doesn’t exist): { \" mcpServers \" : { \" mctx-mcp \" : { \" type \" : \" http \" , \" url \" : \" https://mandrillapp.com/mcp \" , \" headers \" : { \" Authorization \" : \" Bearer YOUR_API_KEY \" } } } } VS Code Add to .vscode/mcp.json in your project: { \" servers \" : { \" mctx-mcp \" : { \" type \" : \" http \" , \" url \" : \" https://mandrillapp.com/mcp \" , \" headers \" : { \" Authorization \" : \" Bearer YOUR_API_KEY \" } } } } Managing MCP Access It is important that the API key used to authorize the MCP has the ability to complete the actions the MCP can do. If your API key is created with no restrictions, by default the MCP can be used. If you want to only allow the API key to use certain API calls and be able to use the MCP, the API key permissions must have the “AI Agents” group enabled. Troubleshooting API key issues Does it exist? Is it enabled?Does it have the correct permissions? Make sure you have your sending domain and/or SMS number setup before sending email and/or SMS messages Review the mcp.json file in your AI client of choice: https://code.claude.com/docs/en/mcp https://cursor.com/docs/mcp https://code.visualstudio.com/docs/copilot/customization/mcp-servers For API error responses, refer to our API error code documentation Example Prompts **Connection Check\n** “Verify that my Mandrill MCP integration is active and confirm that you can access my account.” **Send Email Test\n** “Send an email to sample@gmail.com with the message: ‘Hey, my MCP sent this!’” **Engagement Metrics Retrieval\n** “Retrieve open and click metrics from my account, including data for the last three emails sent.”"
+    },
+    {
+      "url": "https://mailchimp.com/developer/marketing/build/get-started/create-an-account",
+      "requested_url": "https://mailchimp.com/developer/marketing/build/get-started/create-an-account",
+      "status": 200,
+      "title": "Create an account | Mailchimp | Developer (https://mailchimp.com/developer/marketing/build/get-started/create-an-account)",
+      "text": "Create an account | Mailchimp | Developer For AI agents: a documentation index is available at the root level at /llms.txt. Append /llms.txt to any URL for a page-level index, or .md for the markdown version of any page. Skip to navigation On this page Create an account Scroll to top This page is for Mailchimp Marketing API. Create an account If you don’t have a Mailchimp account already, you’ll need to create one in order to use the API. The Mailchimp Marketing API provides programmatic access to Mailchimp data and functionality, allowing developers to build custom features to do things like sync email activity and campaign analytics with their database, manage audiences and campaigns, and more. To use the Marketing API, you need a Mailchimp account. What you can do with the API depends on what level of Mailchimp plan you have. Once you have an account and are logged in, you can get an API key and begin making calls to the API ."
+    }
+  ],
+  "claims": {
+    "auth": {
+      "value": [
+        "OAuth 2.0",
+        "API key",
+        "Bearer token",
+        "Basic auth"
+      ],
+      "sources": [
+        "https://mailchimp.com/developer/marketing/api-concepts/authentication/",
+        "https://mailchimp.com/developer/marketing/api-concepts/authentication/api-keys"
+      ],
+      "evidence": [
+        {
+          "url": "https://mailchimp.com/developer/marketing/api-concepts/authentication/",
+          "excerpt": "vel index, or .md for the markdown version of any page. Skip to navigation On this page Choose a credential Authenticate with an API key or OAuth 2 token User access and revocation Scroll to top This page is for Mailchimp Marketing API. Every request to the Marketing API carries a credential. There are two kinds,\nand which one you need depends on whose account data",
+          "method": "OAuth 2.0"
+        },
+        {
+          "url": "https://mailchimp.com/developer/marketing/api-concepts/authentication/",
+          "excerpt": "r a page-level index, or .md for the markdown version of any page. Skip to navigation On this page Choose a credential Authenticate with an API key or OAuth 2 token User access and revocation Scroll to top This page is for Mailchimp Marketing API. Every request to the Marketing API carries a credential. There are two kinds,\nand which one you need depends on whose a",
+          "method": "API key"
+        },
+        {
+          "url": "https://mailchimp.com/developer/marketing/api-concepts/authentication/",
+          "excerpt": "entication passes it in the Authorization header: curl --request GET \\ --url ' https://api.mailchimp.com/3.0/ ' \\ --header ' Authorization: Bearer TOKEN ' User access and revocation Authentication is tied to the user who created the API key or authorized the\nOAuth 2 app, not to the account. If that user is removed from the account, the\ntoken is revoked. Access is also b",
+          "method": "Bearer token"
+        },
+        {
+          "url": "https://mailchimp.com/developer/marketing/api-concepts/authentication/",
+          "excerpt": "n API key or OAuth 2 token API keys and OAuth 2 access tokens are sent the same way. We’ll refer to both\nas tokens. You can use either HTTP Basic Authentication or Bearer Authentication. HTTP Basic Authentication passes the token as the password, with any string as\nthe username: curl --request GET \\ --url ' https://api.mailchimp.com/3.0/ ' \\ --user ' anystring:TOKEN ' Bearer Au",
+          "method": "Basic auth"
+        },
+        {
+          "url": "https://mailchimp.com/developer/marketing/api-concepts/authentication/api-keys",
+          "excerpt": "page. Skip to navigation On this page What a key grants Where keys can’t be used Scroll to top This page is for Mailchimp Marketing API. An API key authenticates requests\nagainst the account it was created in. It’s the right credential when your\napplication works with your own Mailchimp data. To create one, see Generate your API key . What a key grants A key carrie",
+          "method": "API key"
+        }
+      ],
+      "reason": ""
+    },
+    "credential_gate": {
+      "value": "unknown",
+      "sources": [],
+      "evidence": [],
+      "reason": "No reliable automated access-tier extraction; targeted search results require claim-specific review"
+    },
+    "api_surface": {
+      "value": "unknown",
+      "sources": [],
+      "evidence": [],
+      "reason": "Targeted search found no usable, claim-specific official documentation"
+    },
+    "official_mcp": {
+      "value": "yes",
+      "sources": [
+        "https://mailchimp.com/developer/marketing/build/ai-tools/mcp-server/"
+      ],
+      "evidence": [
+        {
+          "url": "https://mailchimp.com/developer/marketing/build/ai-tools/mcp-server/",
+          "excerpt": "MCP server | Mailchimp | Developer For AI agents: a documentation index is available at the root level at /llms.txt. Append /llms.txt to any URL for a page-level index, or .md for the markdown version of any page. Skip to navigation On this p"
+        }
+      ],
+      "reason": ""
+    },
+    "composio_toolkit": {
+      "value": "listed",
+      "sources": [
+        "https://docs.composio.dev/toolkits/mailchimp"
+      ],
+      "evidence": [
+        {
+          "url": "https://docs.composio.dev/toolkits/mailchimp",
+          "excerpt": "Composio catalog match; verify product scope"
+        }
+      ],
+      "reason": ""
+    },
+    "verdict": {
+      "value": "unknown",
+      "sources": [],
+      "evidence": [],
+      "reason": "Insufficient independently verified authentication, API and access evidence for a build decision"
+    }
+  },
+  "validation": [
+    "Automatic extraction is provisional and must be checked independently",
+    "Unknown does not mean the capability is absent"
+  ]
+}

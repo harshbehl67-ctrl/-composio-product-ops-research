@@ -1,0 +1,14 @@
+{
+  "app": "Meta Ads",
+  "source_pass": "data\\pass2\\032.json",
+  "access_candidates": [
+    {
+      "value": "administrator-controlled credential mentioned",
+      "url": "https://developers.facebook.com/docs/business-management-apis/system-users/install-apps-and-generate-tokens?locale=en_US",
+      "excerpt": "eparated string containing extended permissions. access_token : token belonging to Business Manager admin, admin system user or regular system user. set_token_expires_in_60_days : set to true to generate an expiring system user access token. Recommended. Expiring tokens are a security best practice. Some businesses must use expiring tokens. If this requirement applies to your business, o",
+      "status": "provisional; check scope, negation and plan details"
+    }
+  ],
+  "reason_if_unknown": "",
+  "warning": "A phrase match is not a verified credential gate or a buildability verdict."
+}

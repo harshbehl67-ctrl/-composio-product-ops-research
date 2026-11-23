@@ -1,0 +1,89 @@
+{
+  "app": {
+    "number": 48,
+    "name": "Gumroad",
+    "category": "Ecommerce",
+    "hint": "gumroad.com/api"
+  },
+  "checked_at": "2026-11-23T14:08:49.519974+00:00",
+  "source_search": "data/new_search/048.json",
+  "candidates": [
+    {
+      "url": "https://gumroad.com/mcp",
+      "title": "Gumroad MCP | Sell digital products from your AI assistant (https://gumroad.com/mcp)",
+      "snippet": "Gumroad MCP | Sell digital products from your AI assistant (https://gumroad.com/mcp)\n【turn66search1】 [wordlim: 200] Crawled: last month; # Gumroad MCP ... An MCP server for selling digital products\n\nSell digital products with AI\n\n# Gumroad MCP\n\nConnect your Gumroad store to the AI assistant you already use. Check sales, draft products, publish them, and track payouts from your chat.\n\nSet up the connector\n\nYou’ll need a Gumroad account and an assistant that supports MCP.\n\nAn MCP server for selling digital products\n\n## What can you do with it?\n\nModel Context Protocol (MCP) lets your AI assistant work with your store. Manage ebooks, templates, courses, and other digital products without leaving the chat.\n\n### “Show my recent sales.”\n\nSee which products people bought and what they paid.\n\nImage\n\n### “Draft my next product.”\n\nAsk for a product name, price, and description. Add the product files in Gumroad before publishing.\n\nImage\n\n### “Check my latest payouts.”\n\nCheck recent payout amounts and their status.\n\nChoose your assistant\n\n## Which assistant can I connect?\n\n### Gumroad MCP for Muse\n\nSubmitted for review. The Gumroad connector is not yet available in Muse.\n\nRead the technical details\n\n### Gumroad MCP for Claude\n\nAvailable now as a custom connector.\n\nAvailable as a custom connector. Gumroad is not yet listed in Claude’s connector directory.\n\nSet up Gumroad MCP\n\n### ChatGPT\n\nNot available yet. We’ll announce it here when the Gumroad connector is ready in ChatGPT.\n\nSetup guide\n\nEvery assistant connects to its own URL and asks for OAuth access to your Gumroad account. Each connector page lists the exact address to paste.\n\nSet up Gumroad MCP\n\n## How do you connect?\n\nSetup takes three steps in the assistant you use. You stay signed in to Gumroad, and you can revoke access whenever you want.\n\n  1. ### 1. Add the connector\n\nOpen your assistant’s connector settings and add a remote MCP server using the URL from its connector page.\n\nGumroad MCP for Claude connector page\n  2"
+    }
+  ],
+  "selected": [
+    {
+      "url": "https://gumroad.com/mcp",
+      "title": "Gumroad MCP | Sell digital products from your AI assistant (https://gumroad.com/mcp)",
+      "snippet": "Gumroad MCP | Sell digital products from your AI assistant (https://gumroad.com/mcp)\n【turn66search1】 [wordlim: 200] Crawled: last month; # Gumroad MCP ... An MCP server for selling digital products\n\nSell digital products with AI\n\n# Gumroad MCP\n\nConnect your Gumroad store to the AI assistant you already use. Check sales, draft products, publish them, and track payouts from your chat.\n\nSet up the connector\n\nYou’ll need a Gumroad account and an assistant that supports MCP.\n\nAn MCP server for selling digital products\n\n## What can you do with it?\n\nModel Context Protocol (MCP) lets your AI assistant work with your store. Manage ebooks, templates, courses, and other digital products without leaving the chat.\n\n### “Show my recent sales.”\n\nSee which products people bought and what they paid.\n\nImage\n\n### “Draft my next product.”\n\nAsk for a product name, price, and description. Add the product files in Gumroad before publishing.\n\nImage\n\n### “Check my latest payouts.”\n\nCheck recent payout amounts and their status.\n\nChoose your assistant\n\n## Which assistant can I connect?\n\n### Gumroad MCP for Muse\n\nSubmitted for review. The Gumroad connector is not yet available in Muse.\n\nRead the technical details\n\n### Gumroad MCP for Claude\n\nAvailable now as a custom connector.\n\nAvailable as a custom connector. Gumroad is not yet listed in Claude’s connector directory.\n\nSet up Gumroad MCP\n\n### ChatGPT\n\nNot available yet. We’ll announce it here when the Gumroad connector is ready in ChatGPT.\n\nSetup guide\n\nEvery assistant connects to its own URL and asks for OAuth access to your Gumroad account. Each connector page lists the exact address to paste.\n\nSet up Gumroad MCP\n\n## How do you connect?\n\nSetup takes three steps in the assistant you use. You stay signed in to Gumroad, and you can revoke access whenever you want.\n\n  1. ### 1. Add the connector\n\nOpen your assistant’s connector settings and add a remote MCP server using the URL from its connector page.\n\nGumroad MCP for Claude connector page\n  2"
+    }
+  ],
+  "pages": [
+    {
+      "url": "https://gumroad.com/mcp",
+      "requested_url": "https://gumroad.com/mcp",
+      "status": 200,
+      "title": "Gumroad MCP | Sell digital products from your AI assistant (https://gumroad.com/mcp)",
+      "text": "Gumroad MCP | Sell digital products from your AI assistant 10.1K Discover Blog Pricing Features About Gumclaw Log in Start selling Discover Blog Pricing Features About Gumclaw Log in Start selling An MCP server for selling digital products What can you do with it? Model Context Protocol (MCP) lets your AI assistant work with your store. Manage ebooks, templates, courses, and other digital products without leaving the chat. “Show my recent sales.” See which products people bought and what they paid. “Draft my next product.” Ask for a product name, price, and description. Add the product files in Gumroad before publishing. “Check my latest payouts.” Check recent payout amounts and their status. Choose your assistant Which assistant can I connect? Gumroad MCP for Muse Submitted for review. The Gumroad connector is not yet available in Muse. Read the technical details Gumroad MCP for Claude Available now in Claude’s connector directory. Listed in Claude’s connector directory. You can also add it as a custom connector. Set up Gumroad MCP Gumroad MCP for Cursor Available now as a custom connector. Set up Gumroad MCP Gumroad MCP for Google Antigravity Available now as a custom connector. Set up Gumroad MCP Gumroad MCP for ChatGPT Available now in ChatGPT’s plugin directory. Listed in ChatGPT’s plugin directory. Set up Gumroad MCP Every assistant connects to its own URL and asks for OAuth access to your Gumroad account. Each connector page lists the exact address to paste. Set up Gumroad MCP How do you connect? Setup takes three steps in the assistant you use. You stay signed in to Gumroad, and you can revoke access whenever you want. 1. Add the connector Add Gumroad from your assistant’s connector directory, or open its connector settings and add a remote MCP server using the URL from its connector page. Gumroad MCP for Claude connector page Gumroad MCP for Cursor connector page Gumroad MCP for Google Antigravity connector page Gumroad MCP for ChatGPT connector page 2. Connect your Gumroad account Sign in to Gumroad when prompted. Review the requested permissions before you authorize access. 3. Start a conversation Select the connector in your chat. Try asking, “Show my Gumroad products.” Full step-by-step guide The help center covers the permissions you grant, revoking access, and what to do when publishing fails. Connecting AI assistants to your Gumroad store What access do you give your assistant? What data can it read? Your products, sales, buyer emails, and payouts, according to the permissions you grant. You can grant some and not others. Can it publish products? New products start as unpublished drafts. With product access, the connector can publish or unpublish them. Review these actions in your MCP client. How do customers buy? Share your product’s Gumroad link. Customers pay through Gumroad checkout. The MCP server does not take payments in your chat. How do I revoke access? Revoke the connection any time in Settings > Applications . Disconnecting the connector in your chat app does not revoke its access token, so revoke it here to end the connection. Subscribe to get tips and tactics to grow the way you want. → Ⓒ Gumroad, Inc. Discover Blog Pricing Features About Gumclaw Small Bets Gumroad MCP Help Board meetings Terms of Service Privacy Policy"
+    }
+  ],
+  "claims": {
+    "auth": {
+      "value": "unknown",
+      "sources": [],
+      "evidence": [],
+      "reason": "Targeted search found no usable, claim-specific official documentation"
+    },
+    "credential_gate": {
+      "value": "unknown",
+      "sources": [],
+      "evidence": [],
+      "reason": "No reliable automated access-tier extraction; targeted search results require claim-specific review"
+    },
+    "api_surface": {
+      "value": "unknown",
+      "sources": [],
+      "evidence": [],
+      "reason": "Targeted search found no usable, claim-specific official documentation"
+    },
+    "official_mcp": {
+      "value": "yes",
+      "sources": [
+        "https://gumroad.com/mcp"
+      ],
+      "evidence": [
+        {
+          "url": "https://gumroad.com/mcp",
+          "excerpt": "never you want. 1. Add the connector Add Gumroad from your assistant’s connector directory, or open its connector settings and add a remote MCP server using the URL from its connector page. Gumroad MCP for Claude connector page Gumroad MCP for Cursor connector page Gumroad MCP for Google Antigravity connector page Gumroad MCP for ChatGPT connector page 2. Connect your Gumroad account Sign in to Gumroad when prompt"
+        }
+      ],
+      "reason": ""
+    },
+    "composio_toolkit": {
+      "value": "listed",
+      "sources": [
+        "https://docs.composio.dev/toolkits/gumroad"
+      ],
+      "evidence": [
+        {
+          "url": "https://docs.composio.dev/toolkits/gumroad",
+          "excerpt": "Composio catalog match; verify product scope"
+        }
+      ],
+      "reason": ""
+    },
+    "verdict": {
+      "value": "unknown",
+      "sources": [],
+      "evidence": [],
+      "reason": "Insufficient independently verified authentication, API and access evidence for a build decision"
+    }
+  },
+  "validation": [
+    "Automatic extraction is provisional and must be checked independently",
+    "Unknown does not mean the capability is absent"
+  ]
+}

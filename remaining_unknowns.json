@@ -1,0 +1,2305 @@
+{
+  "apps": 100,
+  "provisional_answered_fields": {
+    "composio_toolkit": 77,
+    "auth": 56,
+    "official_mcp": 65,
+    "api_surface": 28
+  },
+  "http_statuses": {
+    "403": 18,
+    "200": 457,
+    "network error": 1
+  },
+  "note": "These extraction counts are not verified findings or population accuracy.",
+  "unresolved": [
+    {
+      "app": "Salesforce",
+      "category": "CRM and Sales",
+      "unknown_fields": [
+        {
+          "field": "auth",
+          "reason": "Candidate pages could not be retrieved successfully (HTTP error, network failure, or no selected page)."
+        },
+        {
+          "field": "credential_gate",
+          "reason": "Access-tier extraction is not implemented in the automated pass; targeted search results require review."
+        },
+        {
+          "field": "api_surface",
+          "reason": "Candidate pages could not be retrieved successfully (HTTP error, network failure, or no selected page)."
+        },
+        {
+          "field": "official_mcp",
+          "reason": "Candidate pages could not be retrieved successfully (HTTP error, network failure, or no selected page)."
+        },
+        {
+          "field": "verdict",
+          "reason": "Automated buildability classification is not implemented; documented auth, surface and access remain to be assessed."
+        }
+      ]
+    },
+    {
+      "app": "HubSpot",
+      "category": "CRM and Sales",
+      "unknown_fields": [
+        {
+          "field": "api_surface",
+          "reason": "Retrieved pages did not produce a matching extract for this field; documentation may still exist elsewhere."
+        }
+      ]
+    },
+    {
+      "app": "Pipedrive",
+      "category": "CRM and Sales",
+      "unknown_fields": [
+        {
+          "field": "auth",
+          "reason": "Automated pass proposed an answer, but it has not been independently reviewed."
+        },
+        {
+          "field": "credential_gate",
+          "reason": "Access-tier extraction is not implemented in the automated pass; targeted search results require review."
+        },
+        {
+          "field": "api_surface",
+          "reason": "Retrieved pages did not produce a matching extract for this field; documentation may still exist elsewhere."
+        },
+        {
+          "field": "verdict",
+          "reason": "Automated buildability classification is not implemented; documented auth, surface and access remain to be assessed."
+        }
+      ]
+    },
+    {
+      "app": "Attio",
+      "category": "CRM and Sales",
+      "unknown_fields": [
+        {
+          "field": "auth",
+          "reason": "Retrieved pages did not produce a matching extract for this field; documentation may still exist elsewhere."
+        },
+        {
+          "field": "credential_gate",
+          "reason": "Access-tier extraction is not implemented in the automated pass; targeted search results require review."
+        },
+        {
+          "field": "api_surface",
+          "reason": "Retrieved pages did not produce a matching extract for this field; documentation may still exist elsewhere."
+        },
+        {
+          "field": "verdict",
+          "reason": "Automated buildability classification is not implemented; documented auth, surface and access remain to be assessed."
+        }
+      ]
+    },
+    {
+      "app": "Twenty",
+      "category": "CRM and Sales",
+      "unknown_fields": [
+        {
+          "field": "auth",
+          "reason": "Targeted search produced no candidate on the allowed vendor domains."
+        },
+        {
+          "field": "credential_gate",
+          "reason": "Access-tier extraction is not implemented in the automated pass; targeted search results require review."
+        },
+        {
+          "field": "api_surface",
+          "reason": "Targeted search produced no candidate on the allowed vendor domains."
+        },
+        {
+          "field": "official_mcp",
+          "reason": "Targeted search produced no candidate on the allowed vendor domains."
+        },
+        {
+          "field": "verdict",
+          "reason": "Automated buildability classification is not implemented; documented auth, surface and access remain to be assessed."
+        }
+      ]
+    },
+    {
+      "app": "Podio",
+      "category": "CRM and Sales",
+      "unknown_fields": [
+        {
+          "field": "auth",
+          "reason": "Automated pass proposed an answer, but it has not been independently reviewed."
+        },
+        {
+          "field": "credential_gate",
+          "reason": "Access-tier extraction is not implemented in the automated pass; targeted search results require review."
+        },
+        {
+          "field": "api_surface",
+          "reason": "Retrieved pages did not produce a matching extract for this field; documentation may still exist elsewhere."
+        },
+        {
+          "field": "official_mcp",
+          "reason": "Retrieved pages did not produce a matching extract for this field; documentation may still exist elsewhere."
+        },
+        {
+          "field": "verdict",
+          "reason": "Automated buildability classification is not implemented; documented auth, surface and access remain to be assessed."
+        }
+      ]
+    },
+    {
+      "app": "Zoho CRM",
+      "category": "CRM and Sales",
+      "unknown_fields": [
+        {
+          "field": "auth",
+          "reason": "Automated pass proposed an answer, but it has not been independently reviewed."
+        },
+        {
+          "field": "credential_gate",
+          "reason": "Access-tier extraction is not implemented in the automated pass; targeted search results require review."
+        },
+        {
+          "field": "api_surface",
+          "reason": "Retrieved pages did not produce a matching extract for this field; documentation may still exist elsewhere."
+        },
+        {
+          "field": "composio_toolkit",
+          "reason": "No exact or reviewed alias match in the saved catalog; this does not establish absence."
+        },
+        {
+          "field": "verdict",
+          "reason": "Automated buildability classification is not implemented; documented auth, surface and access remain to be assessed."
+        }
+      ]
+    },
+    {
+      "app": "Close",
+      "category": "CRM and Sales",
+      "unknown_fields": [
+        {
+          "field": "auth",
+          "reason": "Automated pass proposed an answer, but it has not been independently reviewed."
+        },
+        {
+          "field": "credential_gate",
+          "reason": "Access-tier extraction is not implemented in the automated pass; targeted search results require review."
+        },
+        {
+          "field": "api_surface",
+          "reason": "Retrieved pages did not produce a matching extract for this field; documentation may still exist elsewhere."
+        },
+        {
+          "field": "verdict",
+          "reason": "Automated buildability classification is not implemented; documented auth, surface and access remain to be assessed."
+        }
+      ]
+    },
+    {
+      "app": "Copper",
+      "category": "CRM and Sales",
+      "unknown_fields": [
+        {
+          "field": "auth",
+          "reason": "Automated pass proposed an answer, but it has not been independently reviewed."
+        },
+        {
+          "field": "credential_gate",
+          "reason": "Access-tier extraction is not implemented in the automated pass; targeted search results require review."
+        },
+        {
+          "field": "api_surface",
+          "reason": "Retrieved pages did not produce a matching extract for this field; documentation may still exist elsewhere."
+        },
+        {
+          "field": "official_mcp",
+          "reason": "Retrieved pages did not produce a matching extract for this field; documentation may still exist elsewhere."
+        },
+        {
+          "field": "verdict",
+          "reason": "Automated buildability classification is not implemented; documented auth, surface and access remain to be assessed."
+        }
+      ]
+    },
+    {
+      "app": "DealCloud",
+      "category": "CRM and Sales",
+      "unknown_fields": [
+        {
+          "field": "auth",
+          "reason": "Automated pass proposed an answer, but it has not been independently reviewed."
+        },
+        {
+          "field": "credential_gate",
+          "reason": "Access-tier extraction is not implemented in the automated pass; targeted search results require review."
+        },
+        {
+          "field": "api_surface",
+          "reason": "Retrieved pages did not produce a matching extract for this field; documentation may still exist elsewhere."
+        },
+        {
+          "field": "composio_toolkit",
+          "reason": "No exact or reviewed alias match in the saved catalog; this does not establish absence."
+        },
+        {
+          "field": "verdict",
+          "reason": "Automated buildability classification is not implemented; documented auth, surface and access remain to be assessed."
+        }
+      ]
+    },
+    {
+      "app": "Zendesk",
+      "category": "Support and Helpdesk",
+      "unknown_fields": [
+        {
+          "field": "api_surface",
+          "reason": "Retrieved pages did not produce a matching extract for this field; documentation may still exist elsewhere."
+        },
+        {
+          "field": "verdict",
+          "reason": "Automated buildability classification is not implemented; documented auth, surface and access remain to be assessed."
+        }
+      ]
+    },
+    {
+      "app": "Intercom",
+      "category": "Support and Helpdesk",
+      "unknown_fields": [
+        {
+          "field": "auth",
+          "reason": "Automated pass proposed an answer, but it has not been independently reviewed."
+        },
+        {
+          "field": "api_surface",
+          "reason": "Automated pass proposed an answer, but it has not been independently reviewed."
+        },
+        {
+          "field": "official_mcp",
+          "reason": "Automated pass proposed an answer, but it has not been independently reviewed."
+        }
+      ]
+    },
+    {
+      "app": "Freshdesk",
+      "category": "Support and Helpdesk",
+      "unknown_fields": [
+        {
+          "field": "auth",
+          "reason": "Automated pass proposed an answer, but it has not been independently reviewed."
+        },
+        {
+          "field": "api_surface",
+          "reason": "Retrieved pages did not produce a matching extract for this field; documentation may still exist elsewhere."
+        },
+        {
+          "field": "verdict",
+          "reason": "Automated buildability classification is not implemented; documented auth, surface and access remain to be assessed."
+        }
+      ]
+    },
+    {
+      "app": "Front",
+      "category": "Support and Helpdesk",
+      "unknown_fields": [
+        {
+          "field": "auth",
+          "reason": "Retrieved pages did not produce a matching extract for this field; documentation may still exist elsewhere."
+        },
+        {
+          "field": "credential_gate",
+          "reason": "Access-tier extraction is not implemented in the automated pass; targeted search results require review."
+        },
+        {
+          "field": "api_surface",
+          "reason": "Retrieved pages did not produce a matching extract for this field; documentation may still exist elsewhere."
+        },
+        {
+          "field": "official_mcp",
+          "reason": "Automated pass proposed an answer, but it has not been independently reviewed."
+        },
+        {
+          "field": "verdict",
+          "reason": "Automated buildability classification is not implemented; documented auth, surface and access remain to be assessed."
+        }
+      ]
+    },
+    {
+      "app": "Pylon",
+      "category": "Support and Helpdesk",
+      "unknown_fields": [
+        {
+          "field": "auth",
+          "reason": "Retrieved pages did not produce a matching extract for this field; documentation may still exist elsewhere."
+        },
+        {
+          "field": "api_surface",
+          "reason": "Automated pass proposed an answer, but it has not been independently reviewed."
+        },
+        {
+          "field": "official_mcp",
+          "reason": "Automated pass proposed an answer, but it has not been independently reviewed."
+        }
+      ]
+    },
+    {
+      "app": "LiveAgent",
+      "category": "Support and Helpdesk",
+      "unknown_fields": [
+        {
+          "field": "auth",
+          "reason": "Automated pass proposed an answer, but it has not been independently reviewed."
+        },
+        {
+          "field": "credential_gate",
+          "reason": "Access-tier extraction is not implemented in the automated pass; targeted search results require review."
+        },
+        {
+          "field": "api_surface",
+          "reason": "Retrieved pages did not produce a matching extract for this field; documentation may still exist elsewhere."
+        },
+        {
+          "field": "official_mcp",
+          "reason": "Automated pass proposed an answer, but it has not been independently reviewed."
+        },
+        {
+          "field": "composio_toolkit",
+          "reason": "No exact or reviewed alias match in the saved catalog; this does not establish absence."
+        },
+        {
+          "field": "verdict",
+          "reason": "Automated buildability classification is not implemented; documented auth, surface and access remain to be assessed."
+        }
+      ]
+    },
+    {
+      "app": "Plain",
+      "category": "Support and Helpdesk",
+      "unknown_fields": [
+        {
+          "field": "auth",
+          "reason": "Automated pass proposed an answer, but it has not been independently reviewed."
+        },
+        {
+          "field": "credential_gate",
+          "reason": "Access-tier extraction is not implemented in the automated pass; targeted search results require review."
+        },
+        {
+          "field": "api_surface",
+          "reason": "Automated pass proposed an answer, but it has not been independently reviewed."
+        },
+        {
+          "field": "official_mcp",
+          "reason": "Automated pass proposed an answer, but it has not been independently reviewed."
+        },
+        {
+          "field": "verdict",
+          "reason": "Automated buildability classification is not implemented; documented auth, surface and access remain to be assessed."
+        }
+      ]
+    },
+    {
+      "app": "Help Scout",
+      "category": "Support and Helpdesk",
+      "unknown_fields": [
+        {
+          "field": "auth",
+          "reason": "Automated pass proposed an answer, but it has not been independently reviewed."
+        },
+        {
+          "field": "api_surface",
+          "reason": "Retrieved pages did not produce a matching extract for this field; documentation may still exist elsewhere."
+        }
+      ]
+    },
+    {
+      "app": "Gorgias",
+      "category": "Support and Helpdesk",
+      "unknown_fields": [
+        {
+          "field": "auth",
+          "reason": "Automated pass proposed an answer, but it has not been independently reviewed."
+        },
+        {
+          "field": "api_surface",
+          "reason": "Automated pass proposed an answer, but it has not been independently reviewed."
+        }
+      ]
+    },
+    {
+      "app": "Gladly",
+      "category": "Support and Helpdesk",
+      "unknown_fields": [
+        {
+          "field": "auth",
+          "reason": "Automated pass proposed an answer, but it has not been independently reviewed."
+        },
+        {
+          "field": "api_surface",
+          "reason": "Retrieved pages did not produce a matching extract for this field; documentation may still exist elsewhere."
+        },
+        {
+          "field": "official_mcp",
+          "reason": "Automated pass proposed an answer, but it has not been independently reviewed."
+        },
+        {
+          "field": "composio_toolkit",
+          "reason": "No exact or reviewed alias match in the saved catalog; this does not establish absence."
+        }
+      ]
+    },
+    {
+      "app": "Slack",
+      "category": "Communications and Messaging",
+      "unknown_fields": [
+        {
+          "field": "credential_gate",
+          "reason": "Access-tier extraction is not implemented in the automated pass; targeted search results require review."
+        },
+        {
+          "field": "api_surface",
+          "reason": "Retrieved pages did not produce a matching extract for this field; documentation may still exist elsewhere."
+        },
+        {
+          "field": "verdict",
+          "reason": "Automated buildability classification is not implemented; documented auth, surface and access remain to be assessed."
+        }
+      ]
+    },
+    {
+      "app": "Twilio",
+      "category": "Communications and Messaging",
+      "unknown_fields": [
+        {
+          "field": "auth",
+          "reason": "Automated pass proposed an answer, but it has not been independently reviewed."
+        },
+        {
+          "field": "credential_gate",
+          "reason": "Access-tier extraction is not implemented in the automated pass; targeted search results require review."
+        },
+        {
+          "field": "api_surface",
+          "reason": "Automated pass proposed an answer, but it has not been independently reviewed."
+        },
+        {
+          "field": "verdict",
+          "reason": "Automated buildability classification is not implemented; documented auth, surface and access remain to be assessed."
+        }
+      ]
+    },
+    {
+      "app": "Zoho Cliq",
+      "category": "Communications and Messaging",
+      "unknown_fields": [
+        {
+          "field": "auth",
+          "reason": "Automated pass proposed an answer, but it has not been independently reviewed."
+        },
+        {
+          "field": "credential_gate",
+          "reason": "Access-tier extraction is not implemented in the automated pass; targeted search results require review."
+        },
+        {
+          "field": "api_surface",
+          "reason": "Automated pass proposed an answer, but it has not been independently reviewed."
+        },
+        {
+          "field": "verdict",
+          "reason": "Automated buildability classification is not implemented; documented auth, surface and access remain to be assessed."
+        }
+      ]
+    },
+    {
+      "app": "Lark (Larksuite)",
+      "category": "Communications and Messaging",
+      "unknown_fields": [
+        {
+          "field": "auth",
+          "reason": "Retrieved pages did not produce a matching extract for this field; documentation may still exist elsewhere."
+        },
+        {
+          "field": "credential_gate",
+          "reason": "Access-tier extraction is not implemented in the automated pass; targeted search results require review."
+        },
+        {
+          "field": "api_surface",
+          "reason": "Retrieved pages did not produce a matching extract for this field; documentation may still exist elsewhere."
+        },
+        {
+          "field": "official_mcp",
+          "reason": "Retrieved pages did not produce a matching extract for this field; documentation may still exist elsewhere."
+        },
+        {
+          "field": "composio_toolkit",
+          "reason": "No exact or reviewed alias match in the saved catalog; this does not establish absence."
+        },
+        {
+          "field": "verdict",
+          "reason": "Automated buildability classification is not implemented; documented auth, surface and access remain to be assessed."
+        }
+      ]
+    },
+    {
+      "app": "Pumble",
+      "category": "Communications and Messaging",
+      "unknown_fields": [
+        {
+          "field": "auth",
+          "reason": "Automated pass proposed an answer, but it has not been independently reviewed."
+        },
+        {
+          "field": "credential_gate",
+          "reason": "Access-tier extraction is not implemented in the automated pass; targeted search results require review."
+        },
+        {
+          "field": "api_surface",
+          "reason": "Retrieved pages did not produce a matching extract for this field; documentation may still exist elsewhere."
+        },
+        {
+          "field": "verdict",
+          "reason": "Automated buildability classification is not implemented; documented auth, surface and access remain to be assessed."
+        }
+      ]
+    },
+    {
+      "app": "Discord",
+      "category": "Communications and Messaging",
+      "unknown_fields": [
+        {
+          "field": "auth",
+          "reason": "Retrieved pages did not produce a matching extract for this field; documentation may still exist elsewhere."
+        },
+        {
+          "field": "credential_gate",
+          "reason": "Access-tier extraction is not implemented in the automated pass; targeted search results require review."
+        },
+        {
+          "field": "api_surface",
+          "reason": "Retrieved pages did not produce a matching extract for this field; documentation may still exist elsewhere."
+        },
+        {
+          "field": "official_mcp",
+          "reason": "Retrieved pages did not produce a matching extract for this field; documentation may still exist elsewhere."
+        },
+        {
+          "field": "verdict",
+          "reason": "Automated buildability classification is not implemented; documented auth, surface and access remain to be assessed."
+        }
+      ]
+    },
+    {
+      "app": "Telegram",
+      "category": "Communications and Messaging",
+      "unknown_fields": [
+        {
+          "field": "auth",
+          "reason": "Retrieved pages did not produce a matching extract for this field; documentation may still exist elsewhere."
+        },
+        {
+          "field": "credential_gate",
+          "reason": "Access-tier extraction is not implemented in the automated pass; targeted search results require review."
+        },
+        {
+          "field": "api_surface",
+          "reason": "Retrieved pages did not produce a matching extract for this field; documentation may still exist elsewhere."
+        },
+        {
+          "field": "official_mcp",
+          "reason": "Retrieved pages did not produce a matching extract for this field; documentation may still exist elsewhere."
+        },
+        {
+          "field": "verdict",
+          "reason": "Automated buildability classification is not implemented; documented auth, surface and access remain to be assessed."
+        }
+      ]
+    },
+    {
+      "app": "WhatsApp Business",
+      "category": "Communications and Messaging",
+      "unknown_fields": [
+        {
+          "field": "auth",
+          "reason": "Targeted search produced no candidate on the allowed vendor domains."
+        },
+        {
+          "field": "credential_gate",
+          "reason": "Access-tier extraction is not implemented in the automated pass; targeted search results require review."
+        },
+        {
+          "field": "api_surface",
+          "reason": "Targeted search produced no candidate on the allowed vendor domains."
+        },
+        {
+          "field": "official_mcp",
+          "reason": "Targeted search produced no candidate on the allowed vendor domains."
+        },
+        {
+          "field": "verdict",
+          "reason": "Automated buildability classification is not implemented; documented auth, surface and access remain to be assessed."
+        }
+      ]
+    },
+    {
+      "app": "Aircall",
+      "category": "Communications and Messaging",
+      "unknown_fields": [
+        {
+          "field": "auth",
+          "reason": "Automated pass proposed an answer, but it has not been independently reviewed."
+        },
+        {
+          "field": "credential_gate",
+          "reason": "Access-tier extraction is not implemented in the automated pass; targeted search results require review."
+        },
+        {
+          "field": "api_surface",
+          "reason": "Automated pass proposed an answer, but it has not been independently reviewed."
+        },
+        {
+          "field": "verdict",
+          "reason": "Automated buildability classification is not implemented; documented auth, surface and access remain to be assessed."
+        }
+      ]
+    },
+    {
+      "app": "Vonage",
+      "category": "Communications and Messaging",
+      "unknown_fields": [
+        {
+          "field": "auth",
+          "reason": "Automated pass proposed an answer, but it has not been independently reviewed."
+        },
+        {
+          "field": "credential_gate",
+          "reason": "Access-tier extraction is not implemented in the automated pass; targeted search results require review."
+        },
+        {
+          "field": "api_surface",
+          "reason": "Retrieved pages did not produce a matching extract for this field; documentation may still exist elsewhere."
+        },
+        {
+          "field": "composio_toolkit",
+          "reason": "No exact or reviewed alias match in the saved catalog; this does not establish absence."
+        },
+        {
+          "field": "verdict",
+          "reason": "Automated buildability classification is not implemented; documented auth, surface and access remain to be assessed."
+        }
+      ]
+    },
+    {
+      "app": "Google Ads",
+      "category": "Marketing, Ads, Email and Social",
+      "unknown_fields": [
+        {
+          "field": "api_surface",
+          "reason": "Retrieved pages did not produce a matching extract for this field; documentation may still exist elsewhere."
+        }
+      ]
+    },
+    {
+      "app": "Meta Ads",
+      "category": "Marketing, Ads, Email and Social",
+      "unknown_fields": [
+        {
+          "field": "auth",
+          "reason": "Retrieved pages did not produce a matching extract for this field; documentation may still exist elsewhere."
+        },
+        {
+          "field": "api_surface",
+          "reason": "Automated pass proposed an answer, but it has not been independently reviewed."
+        },
+        {
+          "field": "official_mcp",
+          "reason": "Retrieved pages did not produce a matching extract for this field; documentation may still exist elsewhere."
+        },
+        {
+          "field": "verdict",
+          "reason": "Automated buildability classification is not implemented; documented auth, surface and access remain to be assessed."
+        }
+      ]
+    },
+    {
+      "app": "LinkedIn Ads",
+      "category": "Marketing, Ads, Email and Social",
+      "unknown_fields": [
+        {
+          "field": "auth",
+          "reason": "Retrieved pages did not produce a matching extract for this field; documentation may still exist elsewhere."
+        },
+        {
+          "field": "credential_gate",
+          "reason": "Access-tier extraction is not implemented in the automated pass; targeted search results require review."
+        },
+        {
+          "field": "api_surface",
+          "reason": "Retrieved pages did not produce a matching extract for this field; documentation may still exist elsewhere."
+        },
+        {
+          "field": "official_mcp",
+          "reason": "Retrieved pages did not produce a matching extract for this field; documentation may still exist elsewhere."
+        },
+        {
+          "field": "verdict",
+          "reason": "Automated buildability classification is not implemented; documented auth, surface and access remain to be assessed."
+        }
+      ]
+    },
+    {
+      "app": "GoHighLevel",
+      "category": "Marketing, Ads, Email and Social",
+      "unknown_fields": [
+        {
+          "field": "auth",
+          "reason": "Targeted search produced no candidate on the allowed vendor domains."
+        },
+        {
+          "field": "credential_gate",
+          "reason": "Access-tier extraction is not implemented in the automated pass; targeted search results require review."
+        },
+        {
+          "field": "api_surface",
+          "reason": "Targeted search produced no candidate on the allowed vendor domains."
+        },
+        {
+          "field": "official_mcp",
+          "reason": "Targeted search produced no candidate on the allowed vendor domains."
+        },
+        {
+          "field": "verdict",
+          "reason": "Automated buildability classification is not implemented; documented auth, surface and access remain to be assessed."
+        }
+      ]
+    },
+    {
+      "app": "Mailchimp",
+      "category": "Marketing, Ads, Email and Social",
+      "unknown_fields": [
+        {
+          "field": "auth",
+          "reason": "Automated pass proposed an answer, but it has not been independently reviewed."
+        },
+        {
+          "field": "credential_gate",
+          "reason": "Access-tier extraction is not implemented in the automated pass; targeted search results require review."
+        },
+        {
+          "field": "api_surface",
+          "reason": "Retrieved pages did not produce a matching extract for this field; documentation may still exist elsewhere."
+        },
+        {
+          "field": "verdict",
+          "reason": "Automated buildability classification is not implemented; documented auth, surface and access remain to be assessed."
+        }
+      ]
+    },
+    {
+      "app": "Klaviyo",
+      "category": "Marketing, Ads, Email and Social",
+      "unknown_fields": [
+        {
+          "field": "auth",
+          "reason": "Automated pass proposed an answer, but it has not been independently reviewed."
+        },
+        {
+          "field": "credential_gate",
+          "reason": "Access-tier extraction is not implemented in the automated pass; targeted search results require review."
+        },
+        {
+          "field": "api_surface",
+          "reason": "Retrieved pages did not produce a matching extract for this field; documentation may still exist elsewhere."
+        },
+        {
+          "field": "verdict",
+          "reason": "Automated buildability classification is not implemented; documented auth, surface and access remain to be assessed."
+        }
+      ]
+    },
+    {
+      "app": "systeme.io",
+      "category": "Marketing, Ads, Email and Social",
+      "unknown_fields": [
+        {
+          "field": "auth",
+          "reason": "Retrieved pages did not produce a matching extract for this field; documentation may still exist elsewhere."
+        },
+        {
+          "field": "credential_gate",
+          "reason": "Access-tier extraction is not implemented in the automated pass; targeted search results require review."
+        },
+        {
+          "field": "api_surface",
+          "reason": "Retrieved pages did not produce a matching extract for this field; documentation may still exist elsewhere."
+        },
+        {
+          "field": "composio_toolkit",
+          "reason": "No exact or reviewed alias match in the saved catalog; this does not establish absence."
+        },
+        {
+          "field": "verdict",
+          "reason": "Automated buildability classification is not implemented; documented auth, surface and access remain to be assessed."
+        }
+      ]
+    },
+    {
+      "app": "Pinterest",
+      "category": "Marketing, Ads, Email and Social",
+      "unknown_fields": [
+        {
+          "field": "auth",
+          "reason": "Automated pass proposed an answer, but it has not been independently reviewed."
+        },
+        {
+          "field": "api_surface",
+          "reason": "Automated pass proposed an answer, but it has not been independently reviewed."
+        }
+      ]
+    },
+    {
+      "app": "Threads (Meta)",
+      "category": "Marketing, Ads, Email and Social",
+      "unknown_fields": [
+        {
+          "field": "auth",
+          "reason": "Targeted search produced no candidate on the allowed vendor domains."
+        },
+        {
+          "field": "credential_gate",
+          "reason": "Access-tier extraction is not implemented in the automated pass; targeted search results require review."
+        },
+        {
+          "field": "api_surface",
+          "reason": "Targeted search produced no candidate on the allowed vendor domains."
+        },
+        {
+          "field": "official_mcp",
+          "reason": "Targeted search produced no candidate on the allowed vendor domains."
+        },
+        {
+          "field": "verdict",
+          "reason": "Automated buildability classification is not implemented; documented auth, surface and access remain to be assessed."
+        }
+      ]
+    },
+    {
+      "app": "SendGrid",
+      "category": "Marketing, Ads, Email and Social",
+      "unknown_fields": [
+        {
+          "field": "auth",
+          "reason": "Targeted search produced no candidate on the allowed vendor domains."
+        },
+        {
+          "field": "credential_gate",
+          "reason": "Access-tier extraction is not implemented in the automated pass; targeted search results require review."
+        },
+        {
+          "field": "api_surface",
+          "reason": "Targeted search produced no candidate on the allowed vendor domains."
+        },
+        {
+          "field": "official_mcp",
+          "reason": "Targeted search produced no candidate on the allowed vendor domains."
+        },
+        {
+          "field": "verdict",
+          "reason": "Automated buildability classification is not implemented; documented auth, surface and access remain to be assessed."
+        }
+      ]
+    },
+    {
+      "app": "Shopify",
+      "category": "Ecommerce",
+      "unknown_fields": [
+        {
+          "field": "official_mcp",
+          "reason": "Retrieved pages did not produce a matching extract for this field; documentation may still exist elsewhere."
+        }
+      ]
+    },
+    {
+      "app": "WooCommerce",
+      "category": "Ecommerce",
+      "unknown_fields": [
+        {
+          "field": "auth",
+          "reason": "Automated pass proposed an answer, but it has not been independently reviewed."
+        },
+        {
+          "field": "credential_gate",
+          "reason": "Access-tier extraction is not implemented in the automated pass; targeted search results require review."
+        },
+        {
+          "field": "api_surface",
+          "reason": "Automated pass proposed an answer, but it has not been independently reviewed."
+        },
+        {
+          "field": "composio_toolkit",
+          "reason": "No exact or reviewed alias match in the saved catalog; this does not establish absence."
+        },
+        {
+          "field": "verdict",
+          "reason": "Automated buildability classification is not implemented; documented auth, surface and access remain to be assessed."
+        }
+      ]
+    },
+    {
+      "app": "BigCommerce",
+      "category": "Ecommerce",
+      "unknown_fields": [
+        {
+          "field": "auth",
+          "reason": "Retrieved pages did not produce a matching extract for this field; documentation may still exist elsewhere."
+        },
+        {
+          "field": "credential_gate",
+          "reason": "Access-tier extraction is not implemented in the automated pass; targeted search results require review."
+        },
+        {
+          "field": "api_surface",
+          "reason": "Automated pass proposed an answer, but it has not been independently reviewed."
+        },
+        {
+          "field": "official_mcp",
+          "reason": "Automated pass proposed an answer, but it has not been independently reviewed."
+        },
+        {
+          "field": "verdict",
+          "reason": "Automated buildability classification is not implemented; documented auth, surface and access remain to be assessed."
+        }
+      ]
+    },
+    {
+      "app": "Salesforce Commerce Cloud",
+      "category": "Ecommerce",
+      "unknown_fields": [
+        {
+          "field": "auth",
+          "reason": "Candidate pages could not be retrieved successfully (HTTP error, network failure, or no selected page)."
+        },
+        {
+          "field": "credential_gate",
+          "reason": "Access-tier extraction is not implemented in the automated pass; targeted search results require review."
+        },
+        {
+          "field": "api_surface",
+          "reason": "Candidate pages could not be retrieved successfully (HTTP error, network failure, or no selected page)."
+        },
+        {
+          "field": "official_mcp",
+          "reason": "Candidate pages could not be retrieved successfully (HTTP error, network failure, or no selected page)."
+        },
+        {
+          "field": "composio_toolkit",
+          "reason": "No exact or reviewed alias match in the saved catalog; this does not establish absence."
+        },
+        {
+          "field": "verdict",
+          "reason": "Automated buildability classification is not implemented; documented auth, surface and access remain to be assessed."
+        }
+      ]
+    },
+    {
+      "app": "Magento (Adobe Commerce)",
+      "category": "Ecommerce",
+      "unknown_fields": [
+        {
+          "field": "auth",
+          "reason": "Automated pass proposed an answer, but it has not been independently reviewed."
+        },
+        {
+          "field": "credential_gate",
+          "reason": "Access-tier extraction is not implemented in the automated pass; targeted search results require review."
+        },
+        {
+          "field": "api_surface",
+          "reason": "Automated pass proposed an answer, but it has not been independently reviewed."
+        },
+        {
+          "field": "official_mcp",
+          "reason": "Retrieved pages did not produce a matching extract for this field; documentation may still exist elsewhere."
+        },
+        {
+          "field": "composio_toolkit",
+          "reason": "No exact or reviewed alias match in the saved catalog; this does not establish absence."
+        },
+        {
+          "field": "verdict",
+          "reason": "Automated buildability classification is not implemented; documented auth, surface and access remain to be assessed."
+        }
+      ]
+    },
+    {
+      "app": "Squarespace",
+      "category": "Ecommerce",
+      "unknown_fields": [
+        {
+          "field": "auth",
+          "reason": "Automated pass proposed an answer, but it has not been independently reviewed."
+        },
+        {
+          "field": "credential_gate",
+          "reason": "Access-tier extraction is not implemented in the automated pass; targeted search results require review."
+        },
+        {
+          "field": "api_surface",
+          "reason": "Retrieved pages did not produce a matching extract for this field; documentation may still exist elsewhere."
+        },
+        {
+          "field": "composio_toolkit",
+          "reason": "No exact or reviewed alias match in the saved catalog; this does not establish absence."
+        },
+        {
+          "field": "verdict",
+          "reason": "Automated buildability classification is not implemented; documented auth, surface and access remain to be assessed."
+        }
+      ]
+    },
+    {
+      "app": "Ecwid",
+      "category": "Ecommerce",
+      "unknown_fields": [
+        {
+          "field": "auth",
+          "reason": "Retrieved pages did not produce a matching extract for this field; documentation may still exist elsewhere."
+        },
+        {
+          "field": "credential_gate",
+          "reason": "Access-tier extraction is not implemented in the automated pass; targeted search results require review."
+        },
+        {
+          "field": "api_surface",
+          "reason": "Automated pass proposed an answer, but it has not been independently reviewed."
+        },
+        {
+          "field": "official_mcp",
+          "reason": "Retrieved pages did not produce a matching extract for this field; documentation may still exist elsewhere."
+        },
+        {
+          "field": "composio_toolkit",
+          "reason": "No exact or reviewed alias match in the saved catalog; this does not establish absence."
+        },
+        {
+          "field": "verdict",
+          "reason": "Automated buildability classification is not implemented; documented auth, surface and access remain to be assessed."
+        }
+      ]
+    },
+    {
+      "app": "Gumroad",
+      "category": "Ecommerce",
+      "unknown_fields": [
+        {
+          "field": "auth",
+          "reason": "Retrieved pages did not produce a matching extract for this field; documentation may still exist elsewhere."
+        },
+        {
+          "field": "credential_gate",
+          "reason": "Access-tier extraction is not implemented in the automated pass; targeted search results require review."
+        },
+        {
+          "field": "api_surface",
+          "reason": "Retrieved pages did not produce a matching extract for this field; documentation may still exist elsewhere."
+        },
+        {
+          "field": "verdict",
+          "reason": "Automated buildability classification is not implemented; documented auth, surface and access remain to be assessed."
+        }
+      ]
+    },
+    {
+      "app": "Amazon Selling Partner",
+      "category": "Ecommerce",
+      "unknown_fields": [
+        {
+          "field": "auth",
+          "reason": "Retrieved pages did not produce a matching extract for this field; documentation may still exist elsewhere."
+        },
+        {
+          "field": "credential_gate",
+          "reason": "Access-tier extraction is not implemented in the automated pass; targeted search results require review."
+        },
+        {
+          "field": "api_surface",
+          "reason": "Retrieved pages did not produce a matching extract for this field; documentation may still exist elsewhere."
+        },
+        {
+          "field": "official_mcp",
+          "reason": "Automated pass proposed an answer, but it has not been independently reviewed."
+        },
+        {
+          "field": "composio_toolkit",
+          "reason": "No exact or reviewed alias match in the saved catalog; this does not establish absence."
+        },
+        {
+          "field": "verdict",
+          "reason": "Automated buildability classification is not implemented; documented auth, surface and access remain to be assessed."
+        }
+      ]
+    },
+    {
+      "app": "fanbasis",
+      "category": "Ecommerce",
+      "unknown_fields": [
+        {
+          "field": "auth",
+          "reason": "Retrieved pages did not produce a matching extract for this field; documentation may still exist elsewhere."
+        },
+        {
+          "field": "credential_gate",
+          "reason": "Access-tier extraction is not implemented in the automated pass; targeted search results require review."
+        },
+        {
+          "field": "api_surface",
+          "reason": "Retrieved pages did not produce a matching extract for this field; documentation may still exist elsewhere."
+        },
+        {
+          "field": "official_mcp",
+          "reason": "Retrieved pages did not produce a matching extract for this field; documentation may still exist elsewhere."
+        },
+        {
+          "field": "composio_toolkit",
+          "reason": "No exact or reviewed alias match in the saved catalog; this does not establish absence."
+        },
+        {
+          "field": "verdict",
+          "reason": "Automated buildability classification is not implemented; documented auth, surface and access remain to be assessed."
+        }
+      ]
+    },
+    {
+      "app": "DataForSEO",
+      "category": "Data, SEO and Scraping",
+      "unknown_fields": [
+        {
+          "field": "auth",
+          "reason": "Automated pass proposed an answer, but it has not been independently reviewed."
+        },
+        {
+          "field": "credential_gate",
+          "reason": "Access-tier extraction is not implemented in the automated pass; targeted search results require review."
+        },
+        {
+          "field": "api_surface",
+          "reason": "Automated pass proposed an answer, but it has not been independently reviewed."
+        },
+        {
+          "field": "verdict",
+          "reason": "Automated buildability classification is not implemented; documented auth, surface and access remain to be assessed."
+        }
+      ]
+    },
+    {
+      "app": "SE Ranking",
+      "category": "Data, SEO and Scraping",
+      "unknown_fields": [
+        {
+          "field": "auth",
+          "reason": "Retrieved pages did not produce a matching extract for this field; documentation may still exist elsewhere."
+        },
+        {
+          "field": "credential_gate",
+          "reason": "Access-tier extraction is not implemented in the automated pass; targeted search results require review."
+        },
+        {
+          "field": "api_surface",
+          "reason": "Retrieved pages did not produce a matching extract for this field; documentation may still exist elsewhere."
+        },
+        {
+          "field": "composio_toolkit",
+          "reason": "No exact or reviewed alias match in the saved catalog; this does not establish absence."
+        },
+        {
+          "field": "verdict",
+          "reason": "Automated buildability classification is not implemented; documented auth, surface and access remain to be assessed."
+        }
+      ]
+    },
+    {
+      "app": "Ahrefs",
+      "category": "Data, SEO and Scraping",
+      "unknown_fields": [
+        {
+          "field": "auth",
+          "reason": "Automated pass proposed an answer, but it has not been independently reviewed."
+        },
+        {
+          "field": "credential_gate",
+          "reason": "Access-tier extraction is not implemented in the automated pass; targeted search results require review."
+        },
+        {
+          "field": "api_surface",
+          "reason": "Retrieved pages did not produce a matching extract for this field; documentation may still exist elsewhere."
+        },
+        {
+          "field": "verdict",
+          "reason": "Automated buildability classification is not implemented; documented auth, surface and access remain to be assessed."
+        }
+      ]
+    },
+    {
+      "app": "MrScraper",
+      "category": "Data, SEO and Scraping",
+      "unknown_fields": [
+        {
+          "field": "auth",
+          "reason": "Automated pass proposed an answer, but it has not been independently reviewed."
+        },
+        {
+          "field": "credential_gate",
+          "reason": "Access-tier extraction is not implemented in the automated pass; targeted search results require review."
+        },
+        {
+          "field": "api_surface",
+          "reason": "Retrieved pages did not produce a matching extract for this field; documentation may still exist elsewhere."
+        },
+        {
+          "field": "verdict",
+          "reason": "Automated buildability classification is not implemented; documented auth, surface and access remain to be assessed."
+        }
+      ]
+    },
+    {
+      "app": "Firecrawl",
+      "category": "Data, SEO and Scraping",
+      "unknown_fields": [
+        {
+          "field": "auth",
+          "reason": "Targeted search produced no candidate on the allowed vendor domains."
+        },
+        {
+          "field": "credential_gate",
+          "reason": "Access-tier extraction is not implemented in the automated pass; targeted search results require review."
+        },
+        {
+          "field": "api_surface",
+          "reason": "Targeted search produced no candidate on the allowed vendor domains."
+        },
+        {
+          "field": "official_mcp",
+          "reason": "Targeted search produced no candidate on the allowed vendor domains."
+        },
+        {
+          "field": "verdict",
+          "reason": "Automated buildability classification is not implemented; documented auth, surface and access remain to be assessed."
+        }
+      ]
+    },
+    {
+      "app": "Bright Data",
+      "category": "Data, SEO and Scraping",
+      "unknown_fields": [
+        {
+          "field": "auth",
+          "reason": "Retrieved pages did not produce a matching extract for this field; documentation may still exist elsewhere."
+        },
+        {
+          "field": "api_surface",
+          "reason": "Retrieved pages did not produce a matching extract for this field; documentation may still exist elsewhere."
+        },
+        {
+          "field": "verdict",
+          "reason": "Automated buildability classification is not implemented; documented auth, surface and access remain to be assessed."
+        }
+      ]
+    },
+    {
+      "app": "Sherlock",
+      "category": "Data, SEO and Scraping",
+      "unknown_fields": [
+        {
+          "field": "auth",
+          "reason": "Retrieved pages did not produce a matching extract for this field; documentation may still exist elsewhere."
+        },
+        {
+          "field": "credential_gate",
+          "reason": "Access-tier extraction is not implemented in the automated pass; targeted search results require review."
+        },
+        {
+          "field": "official_mcp",
+          "reason": "Retrieved pages did not produce a matching extract for this field; documentation may still exist elsewhere."
+        },
+        {
+          "field": "composio_toolkit",
+          "reason": "No exact or reviewed alias match in the saved catalog; this does not establish absence."
+        }
+      ]
+    },
+    {
+      "app": "Waterfall.io",
+      "category": "Data, SEO and Scraping",
+      "unknown_fields": [
+        {
+          "field": "auth",
+          "reason": "Targeted search produced no candidate on the allowed vendor domains."
+        },
+        {
+          "field": "credential_gate",
+          "reason": "Access-tier extraction is not implemented in the automated pass; targeted search results require review."
+        },
+        {
+          "field": "api_surface",
+          "reason": "Targeted search produced no candidate on the allowed vendor domains."
+        },
+        {
+          "field": "official_mcp",
+          "reason": "Targeted search produced no candidate on the allowed vendor domains."
+        },
+        {
+          "field": "composio_toolkit",
+          "reason": "No exact or reviewed alias match in the saved catalog; this does not establish absence."
+        },
+        {
+          "field": "verdict",
+          "reason": "Automated buildability classification is not implemented; documented auth, surface and access remain to be assessed."
+        }
+      ]
+    },
+    {
+      "app": "Clay",
+      "category": "Data, SEO and Scraping",
+      "unknown_fields": [
+        {
+          "field": "auth",
+          "reason": "Automated pass proposed an answer, but it has not been independently reviewed."
+        },
+        {
+          "field": "api_surface",
+          "reason": "Retrieved pages did not produce a matching extract for this field; documentation may still exist elsewhere."
+        },
+        {
+          "field": "verdict",
+          "reason": "Automated buildability classification is not implemented; documented auth, surface and access remain to be assessed."
+        }
+      ]
+    },
+    {
+      "app": "Vercel",
+      "category": "Developer, Infra and Data platforms",
+      "unknown_fields": [
+        {
+          "field": "auth",
+          "reason": "Automated pass proposed an answer, but it has not been independently reviewed."
+        },
+        {
+          "field": "credential_gate",
+          "reason": "Access-tier extraction is not implemented in the automated pass; targeted search results require review."
+        },
+        {
+          "field": "api_surface",
+          "reason": "Automated pass proposed an answer, but it has not been independently reviewed."
+        },
+        {
+          "field": "verdict",
+          "reason": "Automated buildability classification is not implemented; documented auth, surface and access remain to be assessed."
+        }
+      ]
+    },
+    {
+      "app": "Netlify",
+      "category": "Developer, Infra and Data platforms",
+      "unknown_fields": [
+        {
+          "field": "auth",
+          "reason": "Automated pass proposed an answer, but it has not been independently reviewed."
+        },
+        {
+          "field": "credential_gate",
+          "reason": "Access-tier extraction is not implemented in the automated pass; targeted search results require review."
+        },
+        {
+          "field": "api_surface",
+          "reason": "Automated pass proposed an answer, but it has not been independently reviewed."
+        },
+        {
+          "field": "official_mcp",
+          "reason": "Automated pass proposed an answer, but it has not been independently reviewed."
+        },
+        {
+          "field": "verdict",
+          "reason": "Automated buildability classification is not implemented; documented auth, surface and access remain to be assessed."
+        }
+      ]
+    },
+    {
+      "app": "Cloudflare",
+      "category": "Developer, Infra and Data platforms",
+      "unknown_fields": [
+        {
+          "field": "auth",
+          "reason": "Automated pass proposed an answer, but it has not been independently reviewed."
+        },
+        {
+          "field": "credential_gate",
+          "reason": "Access-tier extraction is not implemented in the automated pass; targeted search results require review."
+        },
+        {
+          "field": "api_surface",
+          "reason": "Retrieved pages did not produce a matching extract for this field; documentation may still exist elsewhere."
+        },
+        {
+          "field": "official_mcp",
+          "reason": "Automated pass proposed an answer, but it has not been independently reviewed."
+        },
+        {
+          "field": "verdict",
+          "reason": "Automated buildability classification is not implemented; documented auth, surface and access remain to be assessed."
+        }
+      ]
+    },
+    {
+      "app": "Supabase",
+      "category": "Developer, Infra and Data platforms",
+      "unknown_fields": [
+        {
+          "field": "auth",
+          "reason": "Automated pass proposed an answer, but it has not been independently reviewed."
+        },
+        {
+          "field": "credential_gate",
+          "reason": "Access-tier extraction is not implemented in the automated pass; targeted search results require review."
+        },
+        {
+          "field": "api_surface",
+          "reason": "Retrieved pages did not produce a matching extract for this field; documentation may still exist elsewhere."
+        },
+        {
+          "field": "verdict",
+          "reason": "Automated buildability classification is not implemented; documented auth, surface and access remain to be assessed."
+        }
+      ]
+    },
+    {
+      "app": "Neo4j",
+      "category": "Developer, Infra and Data platforms",
+      "unknown_fields": [
+        {
+          "field": "auth",
+          "reason": "Automated pass proposed an answer, but it has not been independently reviewed."
+        },
+        {
+          "field": "credential_gate",
+          "reason": "Access-tier extraction is not implemented in the automated pass; targeted search results require review."
+        },
+        {
+          "field": "api_surface",
+          "reason": "Retrieved pages did not produce a matching extract for this field; documentation may still exist elsewhere."
+        },
+        {
+          "field": "verdict",
+          "reason": "Automated buildability classification is not implemented; documented auth, surface and access remain to be assessed."
+        }
+      ]
+    },
+    {
+      "app": "Snowflake",
+      "category": "Developer, Infra and Data platforms",
+      "unknown_fields": [
+        {
+          "field": "auth",
+          "reason": "Automated pass proposed an answer, but it has not been independently reviewed."
+        },
+        {
+          "field": "credential_gate",
+          "reason": "Access-tier extraction is not implemented in the automated pass; targeted search results require review."
+        },
+        {
+          "field": "api_surface",
+          "reason": "Automated pass proposed an answer, but it has not been independently reviewed."
+        },
+        {
+          "field": "official_mcp",
+          "reason": "Automated pass proposed an answer, but it has not been independently reviewed."
+        },
+        {
+          "field": "verdict",
+          "reason": "Automated buildability classification is not implemented; documented auth, surface and access remain to be assessed."
+        }
+      ]
+    },
+    {
+      "app": "MongoDB Atlas",
+      "category": "Developer, Infra and Data platforms",
+      "unknown_fields": [
+        {
+          "field": "auth",
+          "reason": "Automated pass proposed an answer, but it has not been independently reviewed."
+        },
+        {
+          "field": "credential_gate",
+          "reason": "Access-tier extraction is not implemented in the automated pass; targeted search results require review."
+        },
+        {
+          "field": "api_surface",
+          "reason": "Retrieved pages did not produce a matching extract for this field; documentation may still exist elsewhere."
+        },
+        {
+          "field": "official_mcp",
+          "reason": "Automated pass proposed an answer, but it has not been independently reviewed."
+        },
+        {
+          "field": "composio_toolkit",
+          "reason": "No exact or reviewed alias match in the saved catalog; this does not establish absence."
+        },
+        {
+          "field": "verdict",
+          "reason": "Automated buildability classification is not implemented; documented auth, surface and access remain to be assessed."
+        }
+      ]
+    },
+    {
+      "app": "Datadog",
+      "category": "Developer, Infra and Data platforms",
+      "unknown_fields": [
+        {
+          "field": "auth",
+          "reason": "Automated pass proposed an answer, but it has not been independently reviewed."
+        },
+        {
+          "field": "credential_gate",
+          "reason": "Access-tier extraction is not implemented in the automated pass; targeted search results require review."
+        },
+        {
+          "field": "api_surface",
+          "reason": "Automated pass proposed an answer, but it has not been independently reviewed."
+        },
+        {
+          "field": "verdict",
+          "reason": "Automated buildability classification is not implemented; documented auth, surface and access remain to be assessed."
+        }
+      ]
+    },
+    {
+      "app": "Sentry",
+      "category": "Developer, Infra and Data platforms",
+      "unknown_fields": [
+        {
+          "field": "auth",
+          "reason": "Automated pass proposed an answer, but it has not been independently reviewed."
+        },
+        {
+          "field": "credential_gate",
+          "reason": "Access-tier extraction is not implemented in the automated pass; targeted search results require review."
+        },
+        {
+          "field": "api_surface",
+          "reason": "Retrieved pages did not produce a matching extract for this field; documentation may still exist elsewhere."
+        },
+        {
+          "field": "official_mcp",
+          "reason": "Retrieved pages did not produce a matching extract for this field; documentation may still exist elsewhere."
+        },
+        {
+          "field": "verdict",
+          "reason": "Automated buildability classification is not implemented; documented auth, surface and access remain to be assessed."
+        }
+      ]
+    },
+    {
+      "app": "Notion",
+      "category": "Productivity and Project Management",
+      "unknown_fields": [
+        {
+          "field": "api_surface",
+          "reason": "Retrieved pages did not produce a matching extract for this field; documentation may still exist elsewhere."
+        },
+        {
+          "field": "verdict",
+          "reason": "Automated buildability classification is not implemented; documented auth, surface and access remain to be assessed."
+        }
+      ]
+    },
+    {
+      "app": "Airtable",
+      "category": "Productivity and Project Management",
+      "unknown_fields": [
+        {
+          "field": "auth",
+          "reason": "Automated pass proposed an answer, but it has not been independently reviewed."
+        },
+        {
+          "field": "api_surface",
+          "reason": "Automated pass proposed an answer, but it has not been independently reviewed."
+        },
+        {
+          "field": "official_mcp",
+          "reason": "Automated pass proposed an answer, but it has not been independently reviewed."
+        },
+        {
+          "field": "verdict",
+          "reason": "Automated buildability classification is not implemented; documented auth, surface and access remain to be assessed."
+        }
+      ]
+    },
+    {
+      "app": "Linear",
+      "category": "Productivity and Project Management",
+      "unknown_fields": [
+        {
+          "field": "auth",
+          "reason": "Automated pass proposed an answer, but it has not been independently reviewed."
+        },
+        {
+          "field": "credential_gate",
+          "reason": "Access-tier extraction is not implemented in the automated pass; targeted search results require review."
+        },
+        {
+          "field": "api_surface",
+          "reason": "Automated pass proposed an answer, but it has not been independently reviewed."
+        },
+        {
+          "field": "official_mcp",
+          "reason": "Automated pass proposed an answer, but it has not been independently reviewed."
+        },
+        {
+          "field": "verdict",
+          "reason": "Automated buildability classification is not implemented; documented auth, surface and access remain to be assessed."
+        }
+      ]
+    },
+    {
+      "app": "Jira",
+      "category": "Productivity and Project Management",
+      "unknown_fields": [
+        {
+          "field": "auth",
+          "reason": "Automated pass proposed an answer, but it has not been independently reviewed."
+        },
+        {
+          "field": "credential_gate",
+          "reason": "Access-tier extraction is not implemented in the automated pass; targeted search results require review."
+        },
+        {
+          "field": "api_surface",
+          "reason": "Automated pass proposed an answer, but it has not been independently reviewed."
+        },
+        {
+          "field": "official_mcp",
+          "reason": "Automated pass proposed an answer, but it has not been independently reviewed."
+        },
+        {
+          "field": "verdict",
+          "reason": "Automated buildability classification is not implemented; documented auth, surface and access remain to be assessed."
+        }
+      ]
+    },
+    {
+      "app": "Asana",
+      "category": "Productivity and Project Management",
+      "unknown_fields": [
+        {
+          "field": "auth",
+          "reason": "Automated pass proposed an answer, but it has not been independently reviewed."
+        },
+        {
+          "field": "credential_gate",
+          "reason": "Access-tier extraction is not implemented in the automated pass; targeted search results require review."
+        },
+        {
+          "field": "api_surface",
+          "reason": "Automated pass proposed an answer, but it has not been independently reviewed."
+        },
+        {
+          "field": "verdict",
+          "reason": "Automated buildability classification is not implemented; documented auth, surface and access remain to be assessed."
+        }
+      ]
+    },
+    {
+      "app": "Monday.com",
+      "category": "Productivity and Project Management",
+      "unknown_fields": [
+        {
+          "field": "auth",
+          "reason": "Retrieved pages did not produce a matching extract for this field; documentation may still exist elsewhere."
+        },
+        {
+          "field": "api_surface",
+          "reason": "Automated pass proposed an answer, but it has not been independently reviewed."
+        }
+      ]
+    },
+    {
+      "app": "ClickUp",
+      "category": "Productivity and Project Management",
+      "unknown_fields": [
+        {
+          "field": "auth",
+          "reason": "Automated pass proposed an answer, but it has not been independently reviewed."
+        },
+        {
+          "field": "credential_gate",
+          "reason": "Access-tier extraction is not implemented in the automated pass; targeted search results require review."
+        },
+        {
+          "field": "api_surface",
+          "reason": "Retrieved pages did not produce a matching extract for this field; documentation may still exist elsewhere."
+        },
+        {
+          "field": "verdict",
+          "reason": "Automated buildability classification is not implemented; documented auth, surface and access remain to be assessed."
+        }
+      ]
+    },
+    {
+      "app": "Coda",
+      "category": "Productivity and Project Management",
+      "unknown_fields": [
+        {
+          "field": "auth",
+          "reason": "Retrieved pages did not produce a matching extract for this field; documentation may still exist elsewhere."
+        },
+        {
+          "field": "credential_gate",
+          "reason": "Access-tier extraction is not implemented in the automated pass; targeted search results require review."
+        },
+        {
+          "field": "api_surface",
+          "reason": "Retrieved pages did not produce a matching extract for this field; documentation may still exist elsewhere."
+        },
+        {
+          "field": "verdict",
+          "reason": "Automated buildability classification is not implemented; documented auth, surface and access remain to be assessed."
+        }
+      ]
+    },
+    {
+      "app": "Smartsheet",
+      "category": "Productivity and Project Management",
+      "unknown_fields": [
+        {
+          "field": "auth",
+          "reason": "Automated pass proposed an answer, but it has not been independently reviewed."
+        },
+        {
+          "field": "credential_gate",
+          "reason": "Access-tier extraction is not implemented in the automated pass; targeted search results require review."
+        },
+        {
+          "field": "api_surface",
+          "reason": "Automated pass proposed an answer, but it has not been independently reviewed."
+        },
+        {
+          "field": "verdict",
+          "reason": "Automated buildability classification is not implemented; documented auth, surface and access remain to be assessed."
+        }
+      ]
+    },
+    {
+      "app": "Harvest",
+      "category": "Productivity and Project Management",
+      "unknown_fields": [
+        {
+          "field": "auth",
+          "reason": "Targeted search produced no candidate on the allowed vendor domains."
+        },
+        {
+          "field": "credential_gate",
+          "reason": "Access-tier extraction is not implemented in the automated pass; targeted search results require review."
+        },
+        {
+          "field": "api_surface",
+          "reason": "Targeted search produced no candidate on the allowed vendor domains."
+        },
+        {
+          "field": "official_mcp",
+          "reason": "Targeted search produced no candidate on the allowed vendor domains."
+        },
+        {
+          "field": "verdict",
+          "reason": "Automated buildability classification is not implemented; documented auth, surface and access remain to be assessed."
+        }
+      ]
+    },
+    {
+      "app": "Stripe",
+      "category": "Finance and Fintech",
+      "unknown_fields": [
+        {
+          "field": "credential_gate",
+          "reason": "Access-tier extraction is not implemented in the automated pass; targeted search results require review."
+        },
+        {
+          "field": "api_surface",
+          "reason": "Retrieved pages did not produce a matching extract for this field; documentation may still exist elsewhere."
+        },
+        {
+          "field": "verdict",
+          "reason": "Automated buildability classification is not implemented; documented auth, surface and access remain to be assessed."
+        }
+      ]
+    },
+    {
+      "app": "Plaid",
+      "category": "Finance and Fintech",
+      "unknown_fields": [
+        {
+          "field": "auth",
+          "reason": "Automated pass proposed an answer, but it has not been independently reviewed."
+        },
+        {
+          "field": "credential_gate",
+          "reason": "Access-tier extraction is not implemented in the automated pass; targeted search results require review."
+        },
+        {
+          "field": "api_surface",
+          "reason": "Retrieved pages did not produce a matching extract for this field; documentation may still exist elsewhere."
+        },
+        {
+          "field": "official_mcp",
+          "reason": "Automated pass proposed an answer, but it has not been independently reviewed."
+        },
+        {
+          "field": "verdict",
+          "reason": "Automated buildability classification is not implemented; documented auth, surface and access remain to be assessed."
+        }
+      ]
+    },
+    {
+      "app": "Binance",
+      "category": "Finance and Fintech",
+      "unknown_fields": [
+        {
+          "field": "auth",
+          "reason": "Targeted search produced no candidate on the allowed vendor domains."
+        },
+        {
+          "field": "credential_gate",
+          "reason": "Access-tier extraction is not implemented in the automated pass; targeted search results require review."
+        },
+        {
+          "field": "api_surface",
+          "reason": "Targeted search produced no candidate on the allowed vendor domains."
+        },
+        {
+          "field": "official_mcp",
+          "reason": "Targeted search produced no candidate on the allowed vendor domains."
+        },
+        {
+          "field": "composio_toolkit",
+          "reason": "No exact or reviewed alias match in the saved catalog; this does not establish absence."
+        },
+        {
+          "field": "verdict",
+          "reason": "Automated buildability classification is not implemented; documented auth, surface and access remain to be assessed."
+        }
+      ]
+    },
+    {
+      "app": "Paygent Connect",
+      "category": "Finance and Fintech",
+      "unknown_fields": [
+        {
+          "field": "auth",
+          "reason": "Targeted search produced no candidate on the allowed vendor domains."
+        },
+        {
+          "field": "credential_gate",
+          "reason": "Access-tier extraction is not implemented in the automated pass; targeted search results require review."
+        },
+        {
+          "field": "api_surface",
+          "reason": "Targeted search produced no candidate on the allowed vendor domains."
+        },
+        {
+          "field": "official_mcp",
+          "reason": "Targeted search produced no candidate on the allowed vendor domains."
+        },
+        {
+          "field": "composio_toolkit",
+          "reason": "No exact or reviewed alias match in the saved catalog; this does not establish absence."
+        },
+        {
+          "field": "verdict",
+          "reason": "Automated buildability classification is not implemented; documented auth, surface and access remain to be assessed."
+        }
+      ]
+    },
+    {
+      "app": "iPayX",
+      "category": "Finance and Fintech",
+      "unknown_fields": [
+        {
+          "field": "auth",
+          "reason": "Retrieved pages did not produce a matching extract for this field; documentation may still exist elsewhere."
+        },
+        {
+          "field": "credential_gate",
+          "reason": "Access-tier extraction is not implemented in the automated pass; targeted search results require review."
+        },
+        {
+          "field": "api_surface",
+          "reason": "Retrieved pages did not produce a matching extract for this field; documentation may still exist elsewhere."
+        },
+        {
+          "field": "official_mcp",
+          "reason": "Retrieved pages did not produce a matching extract for this field; documentation may still exist elsewhere."
+        },
+        {
+          "field": "composio_toolkit",
+          "reason": "No exact or reviewed alias match in the saved catalog; this does not establish absence."
+        },
+        {
+          "field": "verdict",
+          "reason": "Automated buildability classification is not implemented; documented auth, surface and access remain to be assessed."
+        }
+      ]
+    },
+    {
+      "app": "QuickBooks",
+      "category": "Finance and Fintech",
+      "unknown_fields": [
+        {
+          "field": "auth",
+          "reason": "Automated pass proposed an answer, but it has not been independently reviewed."
+        },
+        {
+          "field": "credential_gate",
+          "reason": "Access-tier extraction is not implemented in the automated pass; targeted search results require review."
+        },
+        {
+          "field": "api_surface",
+          "reason": "Retrieved pages did not produce a matching extract for this field; documentation may still exist elsewhere."
+        },
+        {
+          "field": "official_mcp",
+          "reason": "Retrieved pages did not produce a matching extract for this field; documentation may still exist elsewhere."
+        },
+        {
+          "field": "verdict",
+          "reason": "Automated buildability classification is not implemented; documented auth, surface and access remain to be assessed."
+        }
+      ]
+    },
+    {
+      "app": "Xero",
+      "category": "Finance and Fintech",
+      "unknown_fields": [
+        {
+          "field": "auth",
+          "reason": "Automated pass proposed an answer, but it has not been independently reviewed."
+        },
+        {
+          "field": "credential_gate",
+          "reason": "Access-tier extraction is not implemented in the automated pass; targeted search results require review."
+        },
+        {
+          "field": "api_surface",
+          "reason": "Retrieved pages did not produce a matching extract for this field; documentation may still exist elsewhere."
+        },
+        {
+          "field": "official_mcp",
+          "reason": "Automated pass proposed an answer, but it has not been independently reviewed."
+        },
+        {
+          "field": "verdict",
+          "reason": "Automated buildability classification is not implemented; documented auth, surface and access remain to be assessed."
+        }
+      ]
+    },
+    {
+      "app": "Brex",
+      "category": "Finance and Fintech",
+      "unknown_fields": [
+        {
+          "field": "auth",
+          "reason": "Automated pass proposed an answer, but it has not been independently reviewed."
+        },
+        {
+          "field": "credential_gate",
+          "reason": "Access-tier extraction is not implemented in the automated pass; targeted search results require review."
+        },
+        {
+          "field": "api_surface",
+          "reason": "Retrieved pages did not produce a matching extract for this field; documentation may still exist elsewhere."
+        },
+        {
+          "field": "verdict",
+          "reason": "Automated buildability classification is not implemented; documented auth, surface and access remain to be assessed."
+        }
+      ]
+    },
+    {
+      "app": "Ramp",
+      "category": "Finance and Fintech",
+      "unknown_fields": [
+        {
+          "field": "auth",
+          "reason": "Retrieved pages did not produce a matching extract for this field; documentation may still exist elsewhere."
+        },
+        {
+          "field": "credential_gate",
+          "reason": "Access-tier extraction is not implemented in the automated pass; targeted search results require review."
+        },
+        {
+          "field": "api_surface",
+          "reason": "Retrieved pages did not produce a matching extract for this field; documentation may still exist elsewhere."
+        },
+        {
+          "field": "official_mcp",
+          "reason": "Retrieved pages did not produce a matching extract for this field; documentation may still exist elsewhere."
+        },
+        {
+          "field": "verdict",
+          "reason": "Automated buildability classification is not implemented; documented auth, surface and access remain to be assessed."
+        }
+      ]
+    },
+    {
+      "app": "PitchBook",
+      "category": "Finance and Fintech",
+      "unknown_fields": [
+        {
+          "field": "auth",
+          "reason": "Candidate pages could not be retrieved successfully (HTTP error, network failure, or no selected page)."
+        },
+        {
+          "field": "credential_gate",
+          "reason": "Access-tier extraction is not implemented in the automated pass; targeted search results require review."
+        },
+        {
+          "field": "api_surface",
+          "reason": "Candidate pages could not be retrieved successfully (HTTP error, network failure, or no selected page)."
+        },
+        {
+          "field": "official_mcp",
+          "reason": "Candidate pages could not be retrieved successfully (HTTP error, network failure, or no selected page)."
+        },
+        {
+          "field": "verdict",
+          "reason": "Automated buildability classification is not implemented; documented auth, surface and access remain to be assessed."
+        }
+      ]
+    },
+    {
+      "app": "NotebookLM",
+      "category": "AI, Research and Media-native",
+      "unknown_fields": [
+        {
+          "field": "auth",
+          "reason": "Retrieved pages did not produce a matching extract for this field; documentation may still exist elsewhere."
+        },
+        {
+          "field": "credential_gate",
+          "reason": "Access-tier extraction is not implemented in the automated pass; targeted search results require review."
+        },
+        {
+          "field": "api_surface",
+          "reason": "Retrieved pages did not produce a matching extract for this field; documentation may still exist elsewhere."
+        },
+        {
+          "field": "official_mcp",
+          "reason": "Retrieved pages did not produce a matching extract for this field; documentation may still exist elsewhere."
+        },
+        {
+          "field": "verdict",
+          "reason": "Automated buildability classification is not implemented; documented auth, surface and access remain to be assessed."
+        }
+      ]
+    },
+    {
+      "app": "Otter AI",
+      "category": "AI, Research and Media-native",
+      "unknown_fields": [
+        {
+          "field": "auth",
+          "reason": "Retrieved pages did not produce a matching extract for this field; documentation may still exist elsewhere."
+        },
+        {
+          "field": "credential_gate",
+          "reason": "Access-tier extraction is not implemented in the automated pass; targeted search results require review."
+        },
+        {
+          "field": "api_surface",
+          "reason": "Retrieved pages did not produce a matching extract for this field; documentation may still exist elsewhere."
+        },
+        {
+          "field": "verdict",
+          "reason": "Automated buildability classification is not implemented; documented auth, surface and access remain to be assessed."
+        }
+      ]
+    },
+    {
+      "app": "Fathom",
+      "category": "AI, Research and Media-native",
+      "unknown_fields": [
+        {
+          "field": "auth",
+          "reason": "Targeted search produced no candidate on the allowed vendor domains."
+        },
+        {
+          "field": "credential_gate",
+          "reason": "Access-tier extraction is not implemented in the automated pass; targeted search results require review."
+        },
+        {
+          "field": "api_surface",
+          "reason": "Targeted search produced no candidate on the allowed vendor domains."
+        },
+        {
+          "field": "official_mcp",
+          "reason": "Targeted search produced no candidate on the allowed vendor domains."
+        },
+        {
+          "field": "verdict",
+          "reason": "Automated buildability classification is not implemented; documented auth, surface and access remain to be assessed."
+        }
+      ]
+    },
+    {
+      "app": "Consensus",
+      "category": "AI, Research and Media-native",
+      "unknown_fields": [
+        {
+          "field": "auth",
+          "reason": "Retrieved pages did not produce a matching extract for this field; documentation may still exist elsewhere."
+        },
+        {
+          "field": "credential_gate",
+          "reason": "Access-tier extraction is not implemented in the automated pass; targeted search results require review."
+        },
+        {
+          "field": "api_surface",
+          "reason": "Retrieved pages did not produce a matching extract for this field; documentation may still exist elsewhere."
+        },
+        {
+          "field": "verdict",
+          "reason": "Automated buildability classification is not implemented; documented auth, surface and access remain to be assessed."
+        }
+      ]
+    },
+    {
+      "app": "Reducto",
+      "category": "AI, Research and Media-native",
+      "unknown_fields": [
+        {
+          "field": "api_surface",
+          "reason": "Retrieved pages did not produce a matching extract for this field; documentation may still exist elsewhere."
+        },
+        {
+          "field": "official_mcp",
+          "reason": "Retrieved pages did not produce a matching extract for this field; documentation may still exist elsewhere."
+        },
+        {
+          "field": "composio_toolkit",
+          "reason": "No exact or reviewed alias match in the saved catalog; this does not establish absence."
+        },
+        {
+          "field": "verdict",
+          "reason": "Automated buildability classification is not implemented; documented auth, surface and access remain to be assessed."
+        }
+      ]
+    },
+    {
+      "app": "Devin",
+      "category": "AI, Research and Media-native",
+      "unknown_fields": [
+        {
+          "field": "auth",
+          "reason": "Automated pass proposed an answer, but it has not been independently reviewed."
+        },
+        {
+          "field": "credential_gate",
+          "reason": "Access-tier extraction is not implemented in the automated pass; targeted search results require review."
+        },
+        {
+          "field": "api_surface",
+          "reason": "Retrieved pages did not produce a matching extract for this field; documentation may still exist elsewhere."
+        },
+        {
+          "field": "official_mcp",
+          "reason": "Retrieved pages did not produce a matching extract for this field; documentation may still exist elsewhere."
+        },
+        {
+          "field": "verdict",
+          "reason": "Automated buildability classification is not implemented; documented auth, surface and access remain to be assessed."
+        }
+      ]
+    },
+    {
+      "app": "higgsfield",
+      "category": "AI, Research and Media-native",
+      "unknown_fields": [
+        {
+          "field": "auth",
+          "reason": "Retrieved pages did not produce a matching extract for this field; documentation may still exist elsewhere."
+        },
+        {
+          "field": "credential_gate",
+          "reason": "Access-tier extraction is not implemented in the automated pass; targeted search results require review."
+        },
+        {
+          "field": "api_surface",
+          "reason": "Automated pass proposed an answer, but it has not been independently reviewed."
+        },
+        {
+          "field": "official_mcp",
+          "reason": "Retrieved pages did not produce a matching extract for this field; documentation may still exist elsewhere."
+        },
+        {
+          "field": "verdict",
+          "reason": "Automated buildability classification is not implemented; documented auth, surface and access remain to be assessed."
+        }
+      ]
+    },
+    {
+      "app": "Mermaid CLI",
+      "category": "AI, Research and Media-native",
+      "unknown_fields": [
+        {
+          "field": "auth",
+          "reason": "Retrieved pages did not produce a matching extract for this field; documentation may still exist elsewhere."
+        },
+        {
+          "field": "credential_gate",
+          "reason": "Access-tier extraction is not implemented in the automated pass; targeted search results require review."
+        },
+        {
+          "field": "official_mcp",
+          "reason": "Retrieved pages did not produce a matching extract for this field; documentation may still exist elsewhere."
+        },
+        {
+          "field": "composio_toolkit",
+          "reason": "No exact or reviewed alias match in the saved catalog; this does not establish absence."
+        }
+      ]
+    },
+    {
+      "app": "YouTube Transcript",
+      "category": "AI, Research and Media-native",
+      "unknown_fields": [
+        {
+          "field": "auth",
+          "reason": "Retrieved pages did not produce a matching extract for this field; documentation may still exist elsewhere."
+        },
+        {
+          "field": "credential_gate",
+          "reason": "Access-tier extraction is not implemented in the automated pass; targeted search results require review."
+        },
+        {
+          "field": "api_surface",
+          "reason": "Automated pass proposed an answer, but it has not been independently reviewed."
+        },
+        {
+          "field": "official_mcp",
+          "reason": "Automated pass proposed an answer, but it has not been independently reviewed."
+        },
+        {
+          "field": "verdict",
+          "reason": "Automated buildability classification is not implemented; documented auth, surface and access remain to be assessed."
+        }
+      ]
+    },
+    {
+      "app": "Grain",
+      "category": "AI, Research and Media-native",
+      "unknown_fields": [
+        {
+          "field": "auth",
+          "reason": "Automated pass proposed an answer, but it has not been independently reviewed."
+        },
+        {
+          "field": "api_surface",
+          "reason": "Retrieved pages did not produce a matching extract for this field; documentation may still exist elsewhere."
+        }
+      ]
+    }
+  ]
+}

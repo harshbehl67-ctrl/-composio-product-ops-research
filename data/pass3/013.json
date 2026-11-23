@@ -1,0 +1,14 @@
+{
+  "app": "Freshdesk",
+  "source_pass": "data\\pass2\\013.json",
+  "access_candidates": [
+    {
+      "value": "administrator-controlled credential mentioned",
+      "url": "https://support.freshdesk.com/support/solutions/articles/50000014407-mcp-integration-frequently-asked-questions-faq-",
+      "excerpt": "k administrator settings. Setup and configuration How do I find my MCP settings in Freshdesk? Go to Admin Settings > Apps & Integrations > MCP . On the MCP Details page, you can copy your MCP server URL, generate an API key, and manage your connection. Is MCP enabled by default? Yes. MCP is enabled by default for your Freshdesk instance. Administrators can disable it at ",
+      "status": "provisional; check scope, negation and plan details"
+    }
+  ],
+  "reason_if_unknown": "",
+  "warning": "A phrase match is not a verified credential gate or a buildability verdict."
+}

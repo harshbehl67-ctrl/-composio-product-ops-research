@@ -1,0 +1,14 @@
+{
+  "app": "Vonage",
+  "source_pass": "data\\pass2\\030.json",
+  "access_candidates": [
+    {
+      "value": "self-serve / free or trial mentioned",
+      "url": "https://developer.vonage.com/en/vonage-business-cloud/getting-started/create-an-access-token",
+      "excerpt": "ng password grant, you will need to append @vbc.prod to your username. Warning: Do not use your VBC Developer account credentials (*.api) for the token request. You must use your VBC User credentials for VBC_USERNAME and VBC_PASSWORD . curl --request POST 'https://api.vonage.com/token' \\ --header 'Co",
+      "status": "provisional; check scope, negation and plan details"
+    }
+  ],
+  "reason_if_unknown": "",
+  "warning": "A phrase match is not a verified credential gate or a buildability verdict."
+}

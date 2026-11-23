@@ -1,0 +1,20 @@
+{
+  "app": "Discord",
+  "source_pass": "data\\pass2\\026.json",
+  "access_candidates": [
+    {
+      "value": "self-serve / free or trial mentioned",
+      "url": "https://support-dev.discord.com/hc/en-us/articles/8562894815383-Discord-Developer-Terms-of-Service",
+      "excerpt": "Review; remove badges we’ve issued to you or your Application; require you to stop using and delete API Data; terminate, suspend, or limit your user or developer account with Discord or your developer credentials; terminate your other agreements with Discord or your ability to use other Discord services; report you or",
+      "status": "provisional; check scope, negation and plan details"
+    },
+    {
+      "value": "self-serve / free or trial mentioned",
+      "url": "https://support-dev.discord.com/hc/en-us/articles/25280523748759-2022-Discord-Developer-Terms-of-Service",
+      "excerpt": "Review; remove badges we’ve issued to you or your Application; require you to stop using and delete API Data; terminate, suspend, or limit your user or developer account with Discord or your developer credentials; terminate your other agreements with Discord or your ability to use other Discord services; report you or",
+      "status": "provisional; check scope, negation and plan details"
+    }
+  ],
+  "reason_if_unknown": "",
+  "warning": "A phrase match is not a verified credential gate or a buildability verdict."
+}

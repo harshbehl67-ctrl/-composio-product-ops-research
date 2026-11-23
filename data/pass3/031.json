@@ -1,0 +1,14 @@
+{
+  "app": "Google Ads",
+  "source_pass": "data\\pass2\\031.json",
+  "access_candidates": [
+    {
+      "value": "approval condition mentioned",
+      "url": "https://developers.google.com/google-ads/api/docs/productionize/access-levels",
+      "excerpt": "ns Save and categorize content based on your preferences. Page Summary outlined_flag The Google Ads API has access levels tied to the developer token and requires an application review to grant them. Start with Basic Access and apply for Standard Access as your application grows, allowing for the potential review time. The Required ",
+      "status": "provisional; check scope, negation and plan details"
+    }
+  ],
+  "reason_if_unknown": "",
+  "warning": "A phrase match is not a verified credential gate or a buildability verdict."
+}

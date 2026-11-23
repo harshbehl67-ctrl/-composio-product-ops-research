@@ -1,0 +1,184 @@
+{
+  "app": {
+    "number": 81,
+    "name": "Stripe",
+    "category": "Finance and Fintech",
+    "hint": "stripe.com/docs/api"
+  },
+  "checked_at": "2026-11-23T14:09:27.970133+00:00",
+  "source_search": "data/new_search/081.json",
+  "candidates": [
+    {
+      "url": "https://marketplace.stripe.com/apps/stripe-mcp",
+      "title": "Stripe MCP | Stripe Apps (https://marketplace.stripe.com/apps/stripe-mcp)",
+      "snippet": "Stripe MCP | Stripe Apps (https://marketplace.stripe.com/apps/stripe-mcp)\n【turn99search0】 [wordlim: 200] Crawled: 6 days ago; Enable AI agents to access the Stripe API and search Stripe documentation with Stripe’s MCP (Model Context Protocol) Server. ... The Stripe MCP Server connects with popular clients like Cursor, VS Code, Claude Code, Windsurf, ChatGPT, Claude, Lovable, Manus, Vercel v0, Replit, and more Get started at docs.stripe.com/mcp.\n"
+    },
+    {
+      "url": "https://stripe.com/legal/api-key-security",
+      "title": "User Notice—API Key Security (https://stripe.com/legal/api-key-security)",
+      "snippet": "User Notice—API Key Security (https://stripe.com/legal/api-key-security)\n【turn99search3】 [wordlim: 200] Published: 3 months ago; Crawled: today; Your Stripe API key is a credential that authenticates your account to Stripe - it is how Stripe verifies that a request is coming from you. ...   * unauthorized access to your systems, credentials, or Stripe account;\n"
+    },
+    {
+      "url": "https://support.stripe.com/questions/what-are-stripe-api-keys-and-how-to-find-them",
+      "title": "What are Stripe API keys and how to find them : Stripe: Help & Support (https://support.stripe.com/questions/what-are-stripe-api-keys-and-how-to-find-them)",
+      "snippet": "What are Stripe API keys and how to find them : Stripe: Help & Support (https://support.stripe.com/questions/what-are-stripe-api-keys-and-how-to-find-them)\n【turn99search4】 [wordlim: 200] Crawled: 2 months ago; See technical documentation on how to create, reveal, delete, and roll/change API keys ... Users with Administrator permissions can access a Stripe account’s API keys in the Developers Dashboard.\n"
+    },
+    {
+      "url": "https://support.stripe.com/questions/locate-api-keys-in-the-dashboard?trk=article-ssr-frontend-pulse_little-text-block",
+      "title": "What are Stripe API keys and how to find them : Stripe: Help & Support (https://support.stripe.com/questions/locate-api-keys-in-the-dashboard?trk=article-ssr-frontend-pulse_little-text-block)",
+      "snippet": "What are Stripe API keys and how to find them : Stripe: Help & Support (https://support.stripe.com/questions/locate-api-keys-in-the-dashboard?trk=article-ssr-frontend-pulse_little-text-block)\n【turn99search15】 [wordlim: 200] Crawled: last month; See technical documentation on how to create, reveal, delete, and roll/change API keys ... Users with Administrator permissions can access a Stripe account’s API keys in the Developers Dashboard.\n"
+    },
+    {
+      "url": "https://support.stripe.com/topics/api",
+      "title": "API : Stripe: Help & Support (https://support.stripe.com/topics/api)",
+      "snippet": "API : Stripe: Help & Support (https://support.stripe.com/topics/api)\n【turn99search18】 [wordlim: 200] Crawled: 5 days ago; The Stripe API allows developers to integrate Stripe's payment functionalities into their applications. ... See technical documentation on how to create, reveal, delete, and…\"rate_limit\" error when creating bulk API requests If you have received the rate_limit error message, you should limit background jobs, such as performing mass refunds, to a subset of the maximum.\n"
+    },
+    {
+      "url": "https://docs.stripe.com/mcp",
+      "title": "Previously independently reviewed source",
+      "snippet": ""
+    }
+  ],
+  "selected": [
+    {
+      "url": "https://stripe.com/legal/api-key-security",
+      "title": "User Notice—API Key Security (https://stripe.com/legal/api-key-security)",
+      "snippet": "User Notice—API Key Security (https://stripe.com/legal/api-key-security)\n【turn99search3】 [wordlim: 200] Published: 3 months ago; Crawled: today; Your Stripe API key is a credential that authenticates your account to Stripe - it is how Stripe verifies that a request is coming from you. ...   * unauthorized access to your systems, credentials, or Stripe account;\n"
+    },
+    {
+      "url": "https://marketplace.stripe.com/apps/stripe-mcp",
+      "title": "Stripe MCP | Stripe Apps (https://marketplace.stripe.com/apps/stripe-mcp)",
+      "snippet": "Stripe MCP | Stripe Apps (https://marketplace.stripe.com/apps/stripe-mcp)\n【turn99search0】 [wordlim: 200] Crawled: 6 days ago; Enable AI agents to access the Stripe API and search Stripe documentation with Stripe’s MCP (Model Context Protocol) Server. ... The Stripe MCP Server connects with popular clients like Cursor, VS Code, Claude Code, Windsurf, ChatGPT, Claude, Lovable, Manus, Vercel v0, Replit, and more Get started at docs.stripe.com/mcp.\n"
+    },
+    {
+      "url": "https://support.stripe.com/questions/what-are-stripe-api-keys-and-how-to-find-them",
+      "title": "What are Stripe API keys and how to find them : Stripe: Help & Support (https://support.stripe.com/questions/what-are-stripe-api-keys-and-how-to-find-them)",
+      "snippet": "What are Stripe API keys and how to find them : Stripe: Help & Support (https://support.stripe.com/questions/what-are-stripe-api-keys-and-how-to-find-them)\n【turn99search4】 [wordlim: 200] Crawled: 2 months ago; See technical documentation on how to create, reveal, delete, and roll/change API keys ... Users with Administrator permissions can access a Stripe account’s API keys in the Developers Dashboard.\n"
+    },
+    {
+      "url": "https://support.stripe.com/questions/locate-api-keys-in-the-dashboard?trk=article-ssr-frontend-pulse_little-text-block",
+      "title": "What are Stripe API keys and how to find them : Stripe: Help & Support (https://support.stripe.com/questions/locate-api-keys-in-the-dashboard?trk=article-ssr-frontend-pulse_little-text-block)",
+      "snippet": "What are Stripe API keys and how to find them : Stripe: Help & Support (https://support.stripe.com/questions/locate-api-keys-in-the-dashboard?trk=article-ssr-frontend-pulse_little-text-block)\n【turn99search15】 [wordlim: 200] Crawled: last month; See technical documentation on how to create, reveal, delete, and roll/change API keys ... Users with Administrator permissions can access a Stripe account’s API keys in the Developers Dashboard.\n"
+    },
+    {
+      "url": "https://support.stripe.com/topics/api",
+      "title": "API : Stripe: Help & Support (https://support.stripe.com/topics/api)",
+      "snippet": "API : Stripe: Help & Support (https://support.stripe.com/topics/api)\n【turn99search18】 [wordlim: 200] Crawled: 5 days ago; The Stripe API allows developers to integrate Stripe's payment functionalities into their applications. ... See technical documentation on how to create, reveal, delete, and…\"rate_limit\" error when creating bulk API requests If you have received the rate_limit error message, you should limit background jobs, such as performing mass refunds, to a subset of the maximum.\n"
+    },
+    {
+      "url": "https://docs.stripe.com/mcp",
+      "title": "Previously independently reviewed source",
+      "snippet": ""
+    }
+  ],
+  "pages": [
+    {
+      "url": "https://stripe.com/in/legal/api-key-security",
+      "requested_url": "https://stripe.com/legal/api-key-security",
+      "status": 200,
+      "title": "User Notice—API Key Security (https://stripe.com/legal/api-key-security)",
+      "text": "User Notice—API Key Security Last updated: August 14, 2026 Your Stripe API key is a credential that authenticates your account to Stripe - it is how Stripe verifies that a request is coming from you. If an unauthorized party obtains your key, they can impersonate you and carry out fraudulent activity on your account (or platform) that can result in financial losses to you and your customers. We want to help you keep your account safe. This notice outlines recommended steps for securing your API keys and reminds you that, under your agreement with Stripe, you bear responsibility for any losses arising from a key compromise. Taking these precautions now can help you avoid that risk. API key security and steps you should take Your API keys are so sensitive that even Stripe employees cannot access them. However, we want to help you keep them secure, and we’ve shared best practices below to make that as straightforward as possible. That said, because keys live and operate within your own environment, how they're stored, used, and shared is ultimately in your hands. If a key is ever exposed through your systems, code, or a third-party integration, it could allow unauthorized access to your account, which is why we encourage reviewing the guidance below and reaching out to Stripe support if you ever have concerns about a key's security. Stripe publishes detailed guidance on how you can best manage API key security. We recommend reviewing to try and avoid any incidents occuring: API key best practices - covers access controls, key rotation, and monitoring Additionally, Stripe recommends using Restricted API Keys (RAKs) rather than broad secret keys whenever possible. Unlike secret keys, which carry full account access, RAKs can be scoped to only the specific API resources and actions your integration actually needs — limiting the potential impact if a key is ever exposed or compromised. You can create a separate restricted key per service, environment, or third-party integration, granting each only the minimum permissions required. RAKs also support additional controls such as IP allowlisting, expiration, and scheduled rotation to further reduce your exposure window. For full details on creating and configuring restricted API keys, see Restricted API Keys. What a compromised key allows Anyone who gets access to your API key can take any action that the key is configured to allow. This can include: creating charges or subscriptions; issuing refunds; accessing customer data; changing payout destinations on connected accounts; creating payouts; and transferring funds between your platform and connected accounts. When a key on a platform account is compromised, the impact can extend to connected accounts and the consumers they serve, not only to the platform itself. Your responsibilities Under your Stripe Agreements, you are responsible for maintaining the security of your API keys and ensuring they are used only by authorized parties. As noted above, the storage and handling of keys within your own environment falls outside of Stripe’s control. As the account holder, you're in the best position to protect your account — and with that comes ownership of any losses that result from unauthorized activity tied to a compromised API key, whether on your own account or any connected accounts on your platform. This covers situations such as: unauthorized access to your systems, credentials, or Stripe account; tampering with or compromise of your keys; or gaps in anti-fraud or data security measures within your environment. We know that's a lot to manage, and the best practices in this policy are designed to help you address each of these areas proactively. If a key is compromised If you believe a key has been compromised, you should act promptly. Stripe provides step-by-step guidance on how to respond: Protecting against compromised API keys - covers stopping access, rotating keys, and reviewing account activity Working with Stripe Responsibility for losses resulting from API key compromises lies with the account holder, as outlined in your Stripe Agreements. That said, Stripe is committed to supporting our users wherever possible. When individual situations surface opportunities to strengthen security practices, we work collaboratively to help ensure the safety and integrity of Stripe's platform for all users. This is reflected in the responsibilities you agree to in your Stripe Agreements. Note: This notice supplements your Stripe Agreements and does not replace them. In the event of any conflict between this notice and the Stripe Agreements, the Stripe Agreements prevail."
+    },
+    {
+      "url": "https://marketplace.stripe.com/apps/stripe-mcp",
+      "requested_url": "https://marketplace.stripe.com/apps/stripe-mcp",
+      "status": 200,
+      "title": "Stripe MCP | Stripe Apps (https://marketplace.stripe.com/apps/stripe-mcp)",
+      "text": "Stripe App Marketplace Marketplace is taking longer than expected to load. Open the standard Marketplace , or reload the page to try again. Marketplace could not start. Reload the page to try again, or open the standard Marketplace ."
+    },
+    {
+      "url": "https://support.stripe.com/questions/what-are-stripe-api-keys-and-how-to-find-them",
+      "requested_url": "https://support.stripe.com/questions/what-are-stripe-api-keys-and-how-to-find-them",
+      "status": 200,
+      "title": "What are Stripe API keys and how to find them : Stripe: Help & Support (https://support.stripe.com/questions/what-are-stripe-api-keys-and-how-to-find-them)",
+      "text": "What are Stripe API keys and how to find them : Stripe: Help & Support JavaScript is currently disabled You need JavaScript for the best experience on Stripe. Please enable it in your browser settings. Find out how"
+    },
+    {
+      "url": "https://support.stripe.com/questions/what-are-stripe-api-keys-and-how-to-find-them",
+      "requested_url": "https://support.stripe.com/questions/locate-api-keys-in-the-dashboard?trk=article-ssr-frontend-pulse_little-text-block",
+      "status": 200,
+      "title": "What are Stripe API keys and how to find them : Stripe: Help & Support (https://support.stripe.com/questions/locate-api-keys-in-the-dashboard?trk=article-ssr-frontend-pulse_little-text-block)",
+      "text": "What are Stripe API keys and how to find them : Stripe: Help & Support JavaScript is currently disabled You need JavaScript for the best experience on Stripe. Please enable it in your browser settings. Find out how"
+    },
+    {
+      "url": "https://support.stripe.com/topics/api",
+      "requested_url": "https://support.stripe.com/topics/api",
+      "status": 200,
+      "title": "API : Stripe: Help & Support (https://support.stripe.com/topics/api)",
+      "text": "API : Stripe: Help & Support JavaScript is currently disabled You need JavaScript for the best experience on Stripe. Please enable it in your browser settings. Find out how"
+    },
+    {
+      "url": "https://docs.stripe.com/mcp",
+      "requested_url": "https://docs.stripe.com/mcp",
+      "status": 200,
+      "title": "Previously independently reviewed source",
+      "text": "Model Context Protocol (MCP) | Stripe Documentation Skip to content Model Context Protocol Create account or Sign in The Stripe Docs logo Search / Ask AI Create account Sign in APIs & SDKs Help Overview Versioning Changelog Upgrade your integration How API versioning works Essentials SDKs API Events Testing Stripe CLI Tools Stripe Dashboard Stripe Projects Provisioning Workbench Developers Dashboard Stripe for Visual Studio Code Terraform Stripe Discord server Features Workflows Batch Jobs Stripe health alerts File uploads AI tools Agent plugins Model Context Protocol Agent skills Stripe Directory Extend Stripe Overview Build Stripe apps Use apps from Stripe Build extensions Custom objects Security and privacy Security Activity logs Stripebot web crawler Privacy Partners Partner ecosystem Partner certification India English (United Kingdom) Public preview Model Context Protocol (MCP) Public preview Let your AI agents interact with the Stripe API by using our MCP server. Ask about this page Copy for LLM View as Markdown Set up agent The Stripe Model Context Protocol (MCP) server provides tools that AI agents can use to interact with the Stripe API and search the Stripe knowledge base, including documentation and support articles. Set up Stripe MCP with a plugin Recommended Agent plugins for Stripe automatically configure the Stripe MCP server, install our skills and make sure they’re up to date. You get our latest capabilities without configuration or maintenance. Install the Stripe CLI using the installation script for your operating system. Script installations enable automatic updates by default. On macOS or Linux: Command Line curl -fsSL https://cli.stripe.com/install.sh | sh export PATH = \" $HOME /.stripe/bin: $PATH \" On Windows, run the following command in PowerShell: irm https://cli.stripe.com/install.ps1 | iex After installation, open a new terminal and install the agent tooling: Command Line stripe agent setup This command automatically detects which agents you use, and runs the applicable commands. Manually set up Stripe MCP If your MCP client doesn’t support agent plugins for Stripe, or you prefer to configure the Stripe MCP server and install the skills manually, follow these instructions: Cursor Claude Code Claude Desktop Codex ChatGPT VS Code Other Install in Cursor Select Install in Cursor to open Cursor and add the Stripe MCP server. To configure it manually, add the following configuration to ~/ . cursor/mcp . json . For more information, see Cursor’s MCP documentation . { \"mcpServers\" : { \"stripe\" : { \"url\" : \" https://mcp.stripe.com \" } } } Manage MCP access and sessions Stripe’s MCP server supports two authentication methods: OAuth : Use OAuth when a client accesses Stripe on behalf of your Stripe user account. Agent API keys : Use an agent API key when an AI application needs independent, persistent access to Stripe. When you connect an MCP client with OAuth, the client opens Stripe’s OAuth consent page. You can grant access to one or more live mode accounts or sandboxes and set different permissions for each environment. See the MCP authorisation specification for details. OAuth session expiry OAuth refresh tokens expire after 14 days, and refreshing tokens doesn’t extend the session beyond 14 days from your initial authorisation. When your session expires, reconnect your MCP client to Stripe and authorise it again. If your organisation manages your device or network, your IT administrator might block connections to external MCP servers. When the Stripe MCP server doesn’t connect in a managed environment, ask your IT department to allow mcp . stripe . com . Manage MCP access for all team members If you’re an administrator, you can enable or disable MCP access for your entire team in the Dashboard. Configure access separately for live mode and sandbox environments. Manage your sessions Your authorised MCP clients appear under OAuth sessions in your user settings . To revoke a session: Find the client in the OAuth sessions list. Click the overflow menu ( ). Select Revoke access . Manage sessions as an administrator To view or revoke another user’s sessions, your role must include permissions to manage team members. The Administrator role includes these permissions. Open Team and security in the Dashboard. Select the team member you want to manage. Find the OAuth sessions table. To revoke one session, click its overflow menu and select Revoke access . To revoke every listed session, select Revoke all . Session management applies only to the account or organisation and environment – live mode or a sandbox – that you’re currently viewing. Revoking a session removes access only within that scope. The session remains active for accounts outside your current scope. When you view an organisation, the Accounts column shows the accounts associated with each session. Authenticate Stripe MCP Use OAuth for interactive MCP clients. OAuth lets you authorise and revoke a client without sharing an API key. For autonomous clients that can’t use OAuth, create an agent API key with only the permissions the client needs. You can identify agent API keys in the Dashboard by the Agent badge. Pass the agent API key as the bearer token in the Authorization header of your request. If you’re replacing an existing key, test the new configuration in a sandbox, then expire the old key. Update API key authentication before January 11, 2027 Starting January 11, 2027, Stripe MCP will no longer accept full-access secret keys or non-agent restricted API keys. Migrate to an agent API key or reconnect with OAuth before that date. Requests using an unsupported key receive a 401 response with an OAuth discovery challenge. Tools The server exposes the following MCP tools . Turn on your MCP client’s tool-approval setting so you can review tool calls before they run, and exercise caution when using the Stripe MCP with other servers to avoid prompt injection attacks. If you have feedback or want to see more tools, email us at mcp@stripe.com . Resource Tool Description API tools stripe _ api _ search Search for Stripe API methods by keyword stripe _ api _ details Get detailed parameter information for a specific Stripe API method. stripe _ api _ read Read data with any Stripe API GET method stripe _ api _ write Write data with any Stripe API POST , PATCH , PUT and DELETE method Account get _ stripe _ account _ info Retrieve account Atlas atlas _ company _ formation Prepare or resume an Atlas application for a Delaware C corporation or LLC Analytics stripe _ analytics Preview Find metrics, reporting tables and reports. Query metrics, analyse subscriptions and billing, and run financial reports. Build SQL queries based on natural language Stripe Directory Private preview stripe _ directory _ search Search for businesses and service providers on the Stripe Network, including their agent integration capabilities Treasury Public preview get _ balance _ summary Displays an interactive balance summary across the Stripe balance and Treasury accounts convert _ currency Converts funds between currencies within a Treasury account Human confirmation send _ money Sends money from a Treasury account to a recipient Human confirmation setup _ recipient Sets up a recipient account for sending money from a Treasury account transfer _ money Transfers money between supported Stripe balances Human confirmation Others search _ stripe _ documentation Search the Stripe documentation for the given question and language stripe _ implementation _ planner Guides the user through Stripe products to help users accept payments, sell products online, set up billing or build any Stripe integration send _ stripe _ feedback Share feedback about Stripe’s products To prepare a company incorporation application, ask your assistant: Help me prepare a Stripe Atlas application for a Delaware C corporation with two founders. Check for an existing application before creating one. You review documents, pay, sign and submit in the Dashboard. See Prepare an Atlas application with an agent or CLI . The Stripe MCP server exposes multiple APIs that you can call with the stripe _ api _ read and stripe _ api _ write tools. This access makes much of the API available through MCP without increasing the context window unnecessarily. Supported API methods Confirm actions by agents acting on your behalf When you connect an AI agent to Stripe through the MCP server using your user credentials, you authorise the agent to access data and take actions in Stripe on your behalf. Before an agent completes certain actions on your behalf, Stripe can require you to review and approve the request in the Dashboard. Look for the Human confirmation badge beside action descriptions in the Tools reference and Supported API methods . Your MCP client displays tool names that can group multiple actions. For example, creating a refund uses stripe _ api _ write , which also supports other actions that don’t use this confirmation flow. Confirmation depends on the action, not only the tool name. Stripe’s confirmation requirement is separate from your MCP client’s tool-approval setting. Account-specific approval rules can require review of additional actions. To confirm an action, click the URL provided by your agent and review the details of the request. Confirm a refund request When you click Approve , Stripe provides the agent with an approval token, but you need to tell the agent to retry the operation, which doesn’t require human confirmation. If you don’t approve the action within 24 hours, it expires. Use MCP with connected accounts By default, Stripe MCP tools operate on the Stripe account associated with your OAuth session or API key. If you only need your agent to work with your platform account, manually set up Stripe MCP . If you’re a Connect platform , you can also use MCP to retrieve or update resources for your connected accounts. For example, a support agent could retrieve a customer or investigate a payment for a specific connected account. MCP doesn’t support OAuth when acting on behalf of connected accounts. Instead, authenticate with an agent API key for your platform and grant only the connected-account permissions that your agent needs. To make an MCP call as a connected account, pass the Stripe-Account header. This is useful when you provide an agent that allows your connected accounts to make MCP calls through your platform. { \"mcpServers\" : { \"stripe\" : { \"url\" : \" https://mcp.stripe.com \" , \"headers\" : { \"Authorization\" : \"Bearer {{AGENT_API_KEY}} \" , \"Stripe-Account\" : \"acct_xxxxxxxxx\" } } } } See also Plugin for agents Agent skills View MCP tool call logs in Workbench On this page"
+    }
+  ],
+  "claims": {
+    "auth": {
+      "value": [
+        "API key"
+      ],
+      "sources": [
+        "https://stripe.com/in/legal/api-key-security"
+      ],
+      "evidence": [
+        {
+          "url": "https://stripe.com/in/legal/api-key-security",
+          "excerpt": "User Notice—API Key Security Last updated: August 14, 2026 Your Stripe API key is a credential that authenticates your account to Stripe - it is how Stripe verifies that a request is coming from you. If an unauthorized party obtains your k",
+          "method": "API key"
+        }
+      ],
+      "reason": ""
+    },
+    "credential_gate": {
+      "value": "unknown",
+      "sources": [],
+      "evidence": [],
+      "reason": "No reliable automated access-tier extraction; targeted search results require claim-specific review"
+    },
+    "api_surface": {
+      "value": "unknown",
+      "sources": [],
+      "evidence": [],
+      "reason": "Targeted search found no usable, claim-specific official documentation"
+    },
+    "official_mcp": {
+      "value": "yes",
+      "sources": [
+        "https://docs.stripe.com/mcp"
+      ],
+      "evidence": [
+        {
+          "url": "https://docs.stripe.com/mcp",
+          "excerpt": "ertification India English (United Kingdom) Public preview Model Context Protocol (MCP) Public preview Let your AI agents interact with the Stripe API by using our MCP server. Ask about this page Copy for LLM View as Markdown Set up agent The Stripe Model Context Protocol (MCP) server provides tools that AI agents can use to interact with the Stripe API and search the Stripe knowledge base, "
+        }
+      ],
+      "reason": ""
+    },
+    "composio_toolkit": {
+      "value": "listed",
+      "sources": [
+        "https://docs.composio.dev/toolkits/stripe"
+      ],
+      "evidence": [
+        {
+          "url": "https://docs.composio.dev/toolkits/stripe",
+          "excerpt": "Composio catalog match; verify product scope"
+        }
+      ],
+      "reason": ""
+    },
+    "verdict": {
+      "value": "unknown",
+      "sources": [],
+      "evidence": [],
+      "reason": "Insufficient independently verified authentication, API and access evidence for a build decision"
+    }
+  },
+  "validation": [
+    "Automatic extraction is provisional and must be checked independently",
+    "Unknown does not mean the capability is absent"
+  ]
+}

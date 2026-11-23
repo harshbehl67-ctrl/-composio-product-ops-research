@@ -1,0 +1,26 @@
+{
+  "app": "Monday.com",
+  "source_pass": "data\\pass2\\076.json",
+  "access_candidates": [
+    {
+      "value": "self-serve / free or trial mentioned",
+      "url": "https://developer.monday.com/api-reference/docs/authentication",
+      "excerpt": "your own user account. Their permissions mirror what you can do in the monday.com UI, ensuring that API access is consistent with your platform-level permissions. If you don't have a monday.com account yet, create a free developer account to get an API token and start testing. Token permissions Personal tokens mirror all permission levels set in the monday.com UI, including board , col",
+      "status": "provisional; check scope, negation and plan details"
+    },
+    {
+      "value": "administrator-controlled credential mentioned",
+      "url": "https://support.monday.com/hc/en-us/articles/360005144659-Does-monday-com-have-an-API",
+      "excerpt": "y request to our API must be accompanied by an API Token to verify who you are. API for admins Each admin on the account has their own API Token, so make sure to keep it safe. To generate your API Token: Log into your monday.com account. Select your avatar in the top right corner. Select the Administration tab. Select Connections on the left side of ",
+      "status": "provisional; check scope, negation and plan details"
+    },
+    {
+      "value": "self-serve / free or trial mentioned",
+      "url": "https://developer.monday.com/api-reference/docs/getting-started",
+      "excerpt": " account The first step is to sign up and create a trial account . For building and testing apps or API integrations, use a developer account ( sign up ). If you already have a monday.com account, skip to the next step! Enable Developer mode Developer mode is a valuable tool that makes deve",
+      "status": "provisional; check scope, negation and plan details"
+    }
+  ],
+  "reason_if_unknown": "",
+  "warning": "A phrase match is not a verified credential gate or a buildability verdict."
+}

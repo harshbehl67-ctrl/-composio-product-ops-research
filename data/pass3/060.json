@@ -1,0 +1,14 @@
+{
+  "app": "Clay",
+  "source_pass": "data\\pass2\\060.json",
+  "access_candidates": [
+    {
+      "value": "self-serve / free or trial mentioned",
+      "url": "https://university.clay.com/docs/plans-and-billing",
+      "excerpt": "ur changes and click Save Changes to finish updating your billing info. Trials Clay offers a 14-day free trial with 1,000 data credits, giving you access to webhooks, CRM integrations, email sequencers, and HTTP API capabilities. Phone number enrichments aren't available during the trial period. To access this feature, upgrade to a paid plan. If your team wants t",
+      "status": "provisional; check scope, negation and plan details"
+    }
+  ],
+  "reason_if_unknown": "",
+  "warning": "A phrase match is not a verified credential gate or a buildability verdict."
+}

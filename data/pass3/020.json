@@ -1,0 +1,14 @@
+{
+  "app": "Gladly",
+  "source_pass": "data\\pass2\\020.json",
+  "access_candidates": [
+    {
+      "value": "administrator-controlled credential mentioned",
+      "url": "https://help.gladly.com/implementation/docs/get-your-api-tokens",
+      "excerpt": "eated within the Gladly UI, for users who have the API User role. Goals Have at least one technical admin log in to Gladly and create a token. Estimated Effort 15 minutes Step-by-Step Tutorial & Best Practices Log in to Gladly. Click the menu icon on the top left, then click Settings . Unde",
+      "status": "provisional; check scope, negation and plan details"
+    }
+  ],
+  "reason_if_unknown": "",
+  "warning": "A phrase match is not a verified credential gate or a buildability verdict."
+}

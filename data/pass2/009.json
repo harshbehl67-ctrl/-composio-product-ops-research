@@ -1,0 +1,200 @@
+{
+  "app": {
+    "number": 9,
+    "name": "Copper",
+    "category": "CRM and Sales",
+    "hint": "copper.com"
+  },
+  "checked_at": "2026-11-23T14:08:19.495287+00:00",
+  "source_search": "data/new_search/009.json",
+  "candidates": [
+    {
+      "url": "https://www.developer.copper.com/introduction/authentication.html",
+      "title": "Overview - Copper Developer API (https://www.developer.copper.com/introduction/authentication.html)",
+      "snippet": "Overview - Copper Developer API (https://www.developer.copper.com/introduction/authentication.html)\n【turn30search0】 [wordlim: 200] Crawled: today; There are two ways to access the Copper Developer API: API keys and OAuth2.0. ... The Dev API uses token based authentication.\n\n# Authentication¶\n\nThere are two ways to access the Copper Developer API: API keys and OAuth2.0. API Keys are suitable for individual users, while OAuth2.0 is the preferred approach for partner integrations.\n\n## API Keys¶\n\nThe Dev API uses token based authentication. You have to include the token in the header of every request, along with the email address of the user who generated the token. Users can hold multiple valid tokens at the same time. Admins can see all user generated tokens and generate new ones.\n\nTo generate an API token, in the Copper web app go to System settings > API Keys and click the 'GENERATE API KEY' button. Copper allows you to label each key for its unique purpose. You'll need to generate an API key to make an API Request.\n\n## OAuth2.0¶\n\nClick here to get started."
+    },
+    {
+      "url": "https://developer.copper.com/introduction/oauth/index.html",
+      "title": "Overview - Copper Developer API (https://developer.copper.com/introduction/oauth/index.html)",
+      "snippet": "Overview - Copper Developer API (https://developer.copper.com/introduction/oauth/index.html)\n【turn30search3】 [wordlim: 200] Crawled: today; You can now access the Copper Developer API via OAuth2.0. This authentication method is an alternative to Copper's legacy API Keys, and is particularly well-suited for third-party integrations looking to create a seamless and secure link between their users and Copper. ... You will receive two credentials, `client_id` and `client_secret`, required for all authorization flows. ... The detailed Copper authorization flow documentation can be found here.\n\n# Authentication via OAuth2.0¶\n\n## 1. Introduction¶\n\nYou can now access the Copper Developer API via OAuth2.0. This authentication method is an alternative to Copper's legacy API Keys, and is particularly well-suited for third-party integrations looking to create a seamless and secure link between their users and Copper.\n\nOAuth2.0 offers several advantages over the API Key flow:\n\n  * Authentication is open to all users, not just administrators\n  * No need to generate and copy API keys from Copper to your application\n  * Readily available client libraries help with smooth integration\n\n## 2. Prerequisites¶\n\nTo use OAuth2.0 with Copper, you must first register your application. This step protects requests from forgery and keeps your users secure.\n\nTo register your application, contact us (partners@copper.com). You will need to provide the name and purpose of your application as well as a URL to an HTTPS endpoint that will handle the secure callback.\n\nYou will receive two credentials, `client_id` and `client_secret`, required for all authorization flows.\n\nParameter  | Description\n--- | ---\nclient_id  | A public alphanumeric string that uniquely identifies your application\nclient_secret  | A private alphanumeric secret that verifies your application's identity\nredirect_uri  | The callback endpoint of your application (e.g. `https://yourapp.com/callback`)\n\n## 3. Authorization Flow Overvi"
+    },
+    {
+      "url": "https://www.developer.copper.com/introduction/oauth/index.html",
+      "title": "Overview - Copper Developer API (https://www.developer.copper.com/introduction/oauth/index.html)",
+      "snippet": "Overview - Copper Developer API (https://www.developer.copper.com/introduction/oauth/index.html)\n【turn30search5】 [wordlim: 200] Crawled: last month; You can now access the Copper Developer API via OAuth2.0. This authentication method is an alternative to Copper's legacy API Keys, and is particularly well-suited for third-party integrations looking to create a seamless and secure link between their users and Copper. ... You will receive two credentials, `client_id` and `client_secret`, required for all authorization flows. ... The detailed Copper authorization flow documentation can be found here.\n\n# Authentication via OAuth2.0¶\n\n## 1. Introduction¶\n\nYou can now access the Copper Developer API via OAuth2.0. This authentication method is an alternative to Copper's legacy API Keys, and is particularly well-suited for third-party integrations looking to create a seamless and secure link between their users and Copper.\n\nOAuth2.0 offers several advantages over the API Key flow:\n\n  * Authentication is open to all users, not just administrators\n  * No need to generate and copy API keys from Copper to your application\n  * Readily available client libraries help with smooth integration\n\n## 2. Prerequisites¶\n\nTo use OAuth2.0 with Copper, you must first register your application. This step protects requests from forgery and keeps your users secure.\n\nTo register your application, contact us (partners@copper.com). You will need to provide the name and purpose of your application as well as a URL to an HTTPS endpoint that will handle the secure callback.\n\nYou will receive two credentials, `client_id` and `client_secret`, required for all authorization flows.\n\nParameter  | Description\n--- | ---\nclient_id  | A public alphanumeric string that uniquely identifies your application\nclient_secret  | A private alphanumeric secret that verifies your application's identity\nredirect_uri  | The callback endpoint of your application (e.g. `https://yourapp.com/callback`)\n\n## 3. Authorization Fl"
+    },
+    {
+      "url": "https://www.developer.copper.com/introduction/oauth/flow.html",
+      "title": "Documentation - Copper Developer API (https://www.developer.copper.com/introduction/oauth/flow.html)",
+      "snippet": "Documentation - Copper Developer API (https://www.developer.copper.com/introduction/oauth/flow.html)\n【turn30search6】 [wordlim: 200] Crawled: 3 weeks ago; Employing the widely used Authorization Code Grant flow, Copper ensures a seamless and quick authentication process. ...   * You have registered your application (partners@copper.com) and received your `client_id` and `client_secret` credentials ... Once you have successfully obtained a valid `access_token` in the previous step, you can start accessing the Copper Developer API endpoints.\n\n# Copper OAuth2.0 Flow¶\n\n## 1. Introduction¶\n\nThird-party integrations may take advantage of OAuth 2.0 for the purpose of authorizing and authenticating access to the Copper Developer API. Employing the widely used Authorization Code Grant flow, Copper ensures a seamless and quick authentication process. This approach is particularly well-suited for integrations that cater to existing Copper customers, facilitating the establishment of a robust and secure connection between the integration and Copper.\n\n### 1.1 Prerequisites¶\n\n  * Your application provides an HTTPS callback endpoint capable of receiving POST requests\n  * You have registered your application (partners@copper.com) and received your `client_id` and `client_secret` credentials\n\n### 1.2 The Authorization Flow¶\n\nThe authorization code grant flow involves the following steps:\n\n  1. Authorization Request: The application initiates the flow by redirecting the user to the authorization server's authorization endpoint.\nMust be `\"developer/v1/all\"`\nstate  | (optional) Any user-defined metadata to forward to the callback\n\n> Please note that the parameters must be form-encoded (`application/x-www-form-urlencoded`), similar to how they would appear in an HTML `<form>` element\n\n### 2.2 User Authentication¶\n\nAt this stage, the user will be prompted to login to their Copper account. If the user is already logged in, this step is skipped.\n\n### 2.3 Authorization Grant¶\n\nUpon logging i"
+    },
+    {
+      "url": "https://www.developer.copper.com/introduction/oauth/quickstart.html",
+      "title": "Quickstart Guide - Copper Developer API (https://www.developer.copper.com/introduction/oauth/quickstart.html)",
+      "snippet": "Quickstart Guide - Copper Developer API (https://www.developer.copper.com/introduction/oauth/quickstart.html)\n【turn30search17】 [wordlim: 200] Crawled: last month; You are now ready to make Dev API calls on behalf of the user by passing in `access_token` in an Authorization header! ...       https://api.copper.com/developer_api/v1/account\n"
+    }
+  ],
+  "selected": [
+    {
+      "url": "https://www.developer.copper.com/introduction/authentication.html",
+      "title": "Overview - Copper Developer API (https://www.developer.copper.com/introduction/authentication.html)",
+      "snippet": "Overview - Copper Developer API (https://www.developer.copper.com/introduction/authentication.html)\n【turn30search0】 [wordlim: 200] Crawled: today; There are two ways to access the Copper Developer API: API keys and OAuth2.0. ... The Dev API uses token based authentication.\n\n# Authentication¶\n\nThere are two ways to access the Copper Developer API: API keys and OAuth2.0. API Keys are suitable for individual users, while OAuth2.0 is the preferred approach for partner integrations.\n\n## API Keys¶\n\nThe Dev API uses token based authentication. You have to include the token in the header of every request, along with the email address of the user who generated the token. Users can hold multiple valid tokens at the same time. Admins can see all user generated tokens and generate new ones.\n\nTo generate an API token, in the Copper web app go to System settings > API Keys and click the 'GENERATE API KEY' button. Copper allows you to label each key for its unique purpose. You'll need to generate an API key to make an API Request.\n\n## OAuth2.0¶\n\nClick here to get started."
+    },
+    {
+      "url": "https://developer.copper.com/introduction/oauth/index.html",
+      "title": "Overview - Copper Developer API (https://developer.copper.com/introduction/oauth/index.html)",
+      "snippet": "Overview - Copper Developer API (https://developer.copper.com/introduction/oauth/index.html)\n【turn30search3】 [wordlim: 200] Crawled: today; You can now access the Copper Developer API via OAuth2.0. This authentication method is an alternative to Copper's legacy API Keys, and is particularly well-suited for third-party integrations looking to create a seamless and secure link between their users and Copper. ... You will receive two credentials, `client_id` and `client_secret`, required for all authorization flows. ... The detailed Copper authorization flow documentation can be found here.\n\n# Authentication via OAuth2.0¶\n\n## 1. Introduction¶\n\nYou can now access the Copper Developer API via OAuth2.0. This authentication method is an alternative to Copper's legacy API Keys, and is particularly well-suited for third-party integrations looking to create a seamless and secure link between their users and Copper.\n\nOAuth2.0 offers several advantages over the API Key flow:\n\n  * Authentication is open to all users, not just administrators\n  * No need to generate and copy API keys from Copper to your application\n  * Readily available client libraries help with smooth integration\n\n## 2. Prerequisites¶\n\nTo use OAuth2.0 with Copper, you must first register your application. This step protects requests from forgery and keeps your users secure.\n\nTo register your application, contact us (partners@copper.com). You will need to provide the name and purpose of your application as well as a URL to an HTTPS endpoint that will handle the secure callback.\n\nYou will receive two credentials, `client_id` and `client_secret`, required for all authorization flows.\n\nParameter  | Description\n--- | ---\nclient_id  | A public alphanumeric string that uniquely identifies your application\nclient_secret  | A private alphanumeric secret that verifies your application's identity\nredirect_uri  | The callback endpoint of your application (e.g. `https://yourapp.com/callback`)\n\n## 3. Authorization Flow Overvi"
+    },
+    {
+      "url": "https://www.developer.copper.com/introduction/oauth/index.html",
+      "title": "Overview - Copper Developer API (https://www.developer.copper.com/introduction/oauth/index.html)",
+      "snippet": "Overview - Copper Developer API (https://www.developer.copper.com/introduction/oauth/index.html)\n【turn30search5】 [wordlim: 200] Crawled: last month; You can now access the Copper Developer API via OAuth2.0. This authentication method is an alternative to Copper's legacy API Keys, and is particularly well-suited for third-party integrations looking to create a seamless and secure link between their users and Copper. ... You will receive two credentials, `client_id` and `client_secret`, required for all authorization flows. ... The detailed Copper authorization flow documentation can be found here.\n\n# Authentication via OAuth2.0¶\n\n## 1. Introduction¶\n\nYou can now access the Copper Developer API via OAuth2.0. This authentication method is an alternative to Copper's legacy API Keys, and is particularly well-suited for third-party integrations looking to create a seamless and secure link between their users and Copper.\n\nOAuth2.0 offers several advantages over the API Key flow:\n\n  * Authentication is open to all users, not just administrators\n  * No need to generate and copy API keys from Copper to your application\n  * Readily available client libraries help with smooth integration\n\n## 2. Prerequisites¶\n\nTo use OAuth2.0 with Copper, you must first register your application. This step protects requests from forgery and keeps your users secure.\n\nTo register your application, contact us (partners@copper.com). You will need to provide the name and purpose of your application as well as a URL to an HTTPS endpoint that will handle the secure callback.\n\nYou will receive two credentials, `client_id` and `client_secret`, required for all authorization flows.\n\nParameter  | Description\n--- | ---\nclient_id  | A public alphanumeric string that uniquely identifies your application\nclient_secret  | A private alphanumeric secret that verifies your application's identity\nredirect_uri  | The callback endpoint of your application (e.g. `https://yourapp.com/callback`)\n\n## 3. Authorization Fl"
+    },
+    {
+      "url": "https://www.developer.copper.com/introduction/oauth/flow.html",
+      "title": "Documentation - Copper Developer API (https://www.developer.copper.com/introduction/oauth/flow.html)",
+      "snippet": "Documentation - Copper Developer API (https://www.developer.copper.com/introduction/oauth/flow.html)\n【turn30search6】 [wordlim: 200] Crawled: 3 weeks ago; Employing the widely used Authorization Code Grant flow, Copper ensures a seamless and quick authentication process. ...   * You have registered your application (partners@copper.com) and received your `client_id` and `client_secret` credentials ... Once you have successfully obtained a valid `access_token` in the previous step, you can start accessing the Copper Developer API endpoints.\n\n# Copper OAuth2.0 Flow¶\n\n## 1. Introduction¶\n\nThird-party integrations may take advantage of OAuth 2.0 for the purpose of authorizing and authenticating access to the Copper Developer API. Employing the widely used Authorization Code Grant flow, Copper ensures a seamless and quick authentication process. This approach is particularly well-suited for integrations that cater to existing Copper customers, facilitating the establishment of a robust and secure connection between the integration and Copper.\n\n### 1.1 Prerequisites¶\n\n  * Your application provides an HTTPS callback endpoint capable of receiving POST requests\n  * You have registered your application (partners@copper.com) and received your `client_id` and `client_secret` credentials\n\n### 1.2 The Authorization Flow¶\n\nThe authorization code grant flow involves the following steps:\n\n  1. Authorization Request: The application initiates the flow by redirecting the user to the authorization server's authorization endpoint.\nMust be `\"developer/v1/all\"`\nstate  | (optional) Any user-defined metadata to forward to the callback\n\n> Please note that the parameters must be form-encoded (`application/x-www-form-urlencoded`), similar to how they would appear in an HTML `<form>` element\n\n### 2.2 User Authentication¶\n\nAt this stage, the user will be prompted to login to their Copper account. If the user is already logged in, this step is skipped.\n\n### 2.3 Authorization Grant¶\n\nUpon logging i"
+    },
+    {
+      "url": "https://www.developer.copper.com/introduction/oauth/quickstart.html",
+      "title": "Quickstart Guide - Copper Developer API (https://www.developer.copper.com/introduction/oauth/quickstart.html)",
+      "snippet": "Quickstart Guide - Copper Developer API (https://www.developer.copper.com/introduction/oauth/quickstart.html)\n【turn30search17】 [wordlim: 200] Crawled: last month; You are now ready to make Dev API calls on behalf of the user by passing in `access_token` in an Authorization header! ...       https://api.copper.com/developer_api/v1/account\n"
+    }
+  ],
+  "pages": [
+    {
+      "url": "https://www.developer.copper.com/introduction/authentication.html",
+      "requested_url": "https://www.developer.copper.com/introduction/authentication.html",
+      "status": 200,
+      "title": "Overview - Copper Developer API (https://www.developer.copper.com/introduction/authentication.html)",
+      "text": "Overview - Copper Developer API Skip to content Authentication ¶ There are two ways to access the Copper Developer API: API keys and OAuth2.0 .\nAPI Keys are suitable for individual users, while OAuth2.0 is the preferred approach for partner integrations. API Keys ¶ The Dev API uses token based authentication. You have to include the token in the header of every request, along \nwith the email address of the user who generated the token. Users can hold multiple valid tokens at the same time.\nAdmins can see all user generated tokens and generate new ones. To generate an API token, in the Copper web app go to System settings > API Keys and click the 'GENERATE API KEY' \nbutton. Copper allows you to label each key for its unique purpose. You'll need to generate an API key to make \nan API Request. OAuth2.0 ¶ Click here to get started."
+    },
+    {
+      "url": "https://developer.copper.com/introduction/oauth/index.html",
+      "requested_url": "https://developer.copper.com/introduction/oauth/index.html",
+      "status": 200,
+      "title": "Overview - Copper Developer API (https://developer.copper.com/introduction/oauth/index.html)",
+      "text": "Overview - Copper Developer API Skip to content Authentication via OAuth2.0 ¶ 1. Introduction ¶ You can now access the Copper Developer API via OAuth2.0 .\nThis authentication method is an alternative to Copper's legacy API Keys ,\nand is particularly well-suited for third-party integrations looking to create a seamless and secure\nlink between their users and Copper. OAuth2.0 offers several advantages over the API Key flow: Authentication is open to all users, not just administrators No need to generate and copy API keys from Copper to your application Readily available client libraries help with smooth integration 2. Prerequisites ¶ To use OAuth2.0 with Copper, you must first register your application. This step\nprotects requests from forgery and keeps your users secure. To register your application, contact us . You will need to provide\nthe name and purpose of your application as well as a URL to an HTTPS endpoint that will\nhandle the secure callback. You will receive two credentials, client_id and client_secret , required for all authorization flows. Parameter Description client_id A public alphanumeric string that uniquely identifies your application client_secret A private alphanumeric secret that verifies your application's identity redirect_uri The callback endpoint of your application (e.g. https://yourapp.com/callback ) 3. Authorization Flow Overview ¶ Copper implements the commonly-used Authorization Code Grant flow: Your application initiates the authorization flow by directing the user to Copper's authorization endpoint The user then logs into their Copper account, and accepts the permission scopes requested by your application The user is then redirected back to your application with a temporary authorization code Lastly, your application exchanges this code for an access token, which can be used to query Developer API endpoints For more details, click here . 4. Quickstart Guide ¶ Follow our quickstart guide to get up and running quickly. 5. Documentation ¶ The detailed Copper authorization flow documentation can be found here . 6. Access Token Management ¶ Active OAuth2.0 connections are shown in the Copper user interface, under Settings â¡ Integrations â¡ Active Integrations . This interface also lets\nusers revoke their tokens. Note: account administrators may revoke tokens on behalf of other users 7. Scopes ¶ Scopes define specific permissions your application wants to obtain from the user. Currently,\nonly the developer/v1/all scope is supported, which grants full read and modify access to the authenticated user's records.\nThis scope is backward compatible with our legacy API Key authentication. Scope Permissions developer/v1/all Read and modify user records Note: more granular scopes will be added in the future 8. Client Libraries ¶ Although it's entirely feasible to implement the OAuth 2.0 flow through plain REST,\nit's advisable to leverage a library tailored to your chosen application language or framework. Language Library Python requests-oauthlib Java Spring Security OAuth JavaScript (Node.js) simple-oauth2 Ruby omniauth , oauth2 PHP league/oauth2-client C# (.NET) DotNetOpenAuth Go (Golang) golang/oauth2 Swift (iOS/macOS) OAuthSwift 9. Resources ¶ OAuth 2.0 Specification RFC 6749 - The OAuth 2.0 Authorization Framework OAuth 2.0 Best Practices"
+    },
+    {
+      "url": "https://www.developer.copper.com/introduction/oauth/index.html",
+      "requested_url": "https://www.developer.copper.com/introduction/oauth/index.html",
+      "status": 200,
+      "title": "Overview - Copper Developer API (https://www.developer.copper.com/introduction/oauth/index.html)",
+      "text": "Overview - Copper Developer API Skip to content Authentication via OAuth2.0 ¶ 1. Introduction ¶ You can now access the Copper Developer API via OAuth2.0 .\nThis authentication method is an alternative to Copper's legacy API Keys ,\nand is particularly well-suited for third-party integrations looking to create a seamless and secure\nlink between their users and Copper. OAuth2.0 offers several advantages over the API Key flow: Authentication is open to all users, not just administrators No need to generate and copy API keys from Copper to your application Readily available client libraries help with smooth integration 2. Prerequisites ¶ To use OAuth2.0 with Copper, you must first register your application. This step\nprotects requests from forgery and keeps your users secure. To register your application, contact us . You will need to provide\nthe name and purpose of your application as well as a URL to an HTTPS endpoint that will\nhandle the secure callback. You will receive two credentials, client_id and client_secret , required for all authorization flows. Parameter Description client_id A public alphanumeric string that uniquely identifies your application client_secret A private alphanumeric secret that verifies your application's identity redirect_uri The callback endpoint of your application (e.g. https://yourapp.com/callback ) 3. Authorization Flow Overview ¶ Copper implements the commonly-used Authorization Code Grant flow: Your application initiates the authorization flow by directing the user to Copper's authorization endpoint The user then logs into their Copper account, and accepts the permission scopes requested by your application The user is then redirected back to your application with a temporary authorization code Lastly, your application exchanges this code for an access token, which can be used to query Developer API endpoints For more details, click here . 4. Quickstart Guide ¶ Follow our quickstart guide to get up and running quickly. 5. Documentation ¶ The detailed Copper authorization flow documentation can be found here . 6. Access Token Management ¶ Active OAuth2.0 connections are shown in the Copper user interface, under Settings â¡ Integrations â¡ Active Integrations . This interface also lets\nusers revoke their tokens. Note: account administrators may revoke tokens on behalf of other users 7. Scopes ¶ Scopes define specific permissions your application wants to obtain from the user. Currently,\nonly the developer/v1/all scope is supported, which grants full read and modify access to the authenticated user's records.\nThis scope is backward compatible with our legacy API Key authentication. Scope Permissions developer/v1/all Read and modify user records Note: more granular scopes will be added in the future 8. Client Libraries ¶ Although it's entirely feasible to implement the OAuth 2.0 flow through plain REST,\nit's advisable to leverage a library tailored to your chosen application language or framework. Language Library Python requests-oauthlib Java Spring Security OAuth JavaScript (Node.js) simple-oauth2 Ruby omniauth , oauth2 PHP league/oauth2-client C# (.NET) DotNetOpenAuth Go (Golang) golang/oauth2 Swift (iOS/macOS) OAuthSwift 9. Resources ¶ OAuth 2.0 Specification RFC 6749 - The OAuth 2.0 Authorization Framework OAuth 2.0 Best Practices"
+    },
+    {
+      "url": "https://www.developer.copper.com/introduction/oauth/flow.html",
+      "requested_url": "https://www.developer.copper.com/introduction/oauth/flow.html",
+      "status": 200,
+      "title": "Documentation - Copper Developer API (https://www.developer.copper.com/introduction/oauth/flow.html)",
+      "text": "Documentation - Copper Developer API Skip to content Copper OAuth2.0 Flow ¶ 1. Introduction ¶ Third-party integrations may take advantage of OAuth 2.0 for the purpose of authorizing and authenticating access to the Copper Developer API. Employing the widely used Authorization Code Grant flow, Copper ensures a seamless and quick authentication process. This approach is particularly well-suited for integrations that cater to existing Copper customers, facilitating the establishment of a robust and secure connection between the integration and Copper. 1.1 Prerequisites ¶ Your application provides an HTTPS callback endpoint capable of receiving POST requests You have registered your application and received your client_id and client_secret credentials 1.2 The Authorization Flow ¶ The authorization code grant flow involves the following steps: Authorization Request : The application initiates the flow by redirecting the user to the authorization server's authorization endpoint. User Authentication : The user logs in and grants permission to the application. Authorization Grant : The authorization server provides an authorization code to the application. Token Request : The application exchanges the authorization code for an access token from the token endpoint. Access Protected Resources : The application uses the access token to access the protected resources on behalf of the user. 1.3 Sequence Diagram ¶ 2. Flow Steps ¶ 2.1 Authorization Request ¶ Endpoint: GET https://app.copper.com/oauth/authorize Redirect the user to this endpoint to initiate the OAuth2.0 authorization flow. Request GET https://app.copper.com/oauth/authorize?response_type = code & client_id ={ client_id } & redirect_uri ={ redirect_uri } & scope ={ scope } & state ={ state } Parameter Description response_type Must be \"code\" client_id Your client_id redirect_uri Your redirect_uri scope Requested access scope. Must be \"developer/v1/all\" state (optional) Any user-defined metadata to forward to the callback Please note that the parameters must be form-encoded ( application/x-www-form-urlencoded ), similar to how they would appear in an HTML <form> element 2.2 User Authentication ¶ At this stage, the user will be prompted to login to their Copper account. If the user is already logged in, this step is skipped. 2.3 Authorization Grant ¶ Upon logging in successfully, the user is presented with an authorization screen displaying your app's name and requested permissions.\nThe user can grant or deny access by clicking 'Authorize' or 'Deny.' Afterward, the user is redirected to your app's redirect_uri via a POST request. If the authorization was successful, the payload includes a code parameter indicating the authorization code.\nIn case of denial or errors, the payload contains an error parameter. Parameter Description Notes code The authorization code Only present on success error Error code Only present on failure. See Common OAuth2.0 errors 2.4 Token Request ¶ Endpoint: POST https://app.copper.com/oauth/token After successfully acquiring an authorization code in the previous step, you may proceed to exchange it for an access token.\nThis access token provides your application with access to the Developer API. Once you have obtained the access token,\nyou may discard code . Currently, access tokens do not expire and do not need to be refreshed. Request Response (200) curl -X POST \\ -H \"Content-Type: application/x-www-form-urlencoded\" \\ -d \"grant_type=authorization_code\" \\ -d \"code={code}\" \\ -d \"redirect_uri={redirect_uri}\" \\ -d \"client_id={client_id}\" \\ -d \"client_secret={client_secret}\" \\ https://app.copper.com/oauth/token { \"access_token\" : \"MTQ0NjJkZmQ5OTM2NDE1ZTZjNGZmZjI3\" , \"token_type\" : \"Bearer\" , \"scope\" : \"developer/v1/all\" } Request parameters Parameter Description grant_type Must be \"authorization_code\" code Your code from the previous step redirect_uri Your redirect_uri client_id Your client_id client_secret Your client_secret Response parameters Parameter Description access_token The access token token_type Always \"Bearer\" scope The scope granted to the token Please note that the parameters must be form-encoded ( application/x-www-form-urlencoded ), similar to how they would appear in an HTML <form> element 2.5 Access Protected Resources ¶ Once you have successfully obtained a valid access_token in the previous step, you can start accessing\nthe Copper Developer API endpoints. To do so, you simply include the access_token in the Authorization header of your requests. For example, to fetch the Copper account details of the authenticated user: Request Response (200) curl -H \"Authorization: Bearer {access_token}\" \\ https://api.copper.com/developer_api/v1/account { \"id\" : 123 , \"name\" : \"Company Name\" , \"primary_timezone\" : \"America/New_York\" , \"settings\" : { \"setting_team_permissions_enabled\" : true , \"setting_enable_leads\" : true } }"
+    },
+    {
+      "url": "https://www.developer.copper.com/introduction/oauth/quickstart.html",
+      "requested_url": "https://www.developer.copper.com/introduction/oauth/quickstart.html",
+      "status": 200,
+      "title": "Quickstart Guide - Copper Developer API (https://www.developer.copper.com/introduction/oauth/quickstart.html)",
+      "text": "Quickstart Guide - Copper Developer API Skip to content OAuth2.0 Quickstart Guide ¶ Introduction ¶ This basic example demonstrates how to get started with Copper OAuth2.0.\nFor a detailed documentation of each step, click here . Prerequisites ¶ Your application provides an HTTPS callback endpoint redirect_uri capable of receiving POST requests You have registered your application and received your client_id and client_secret credentials Integration ¶ Once you have set up your redirect_uri and obtained a client_id and client_secret ,\nyou're ready to kick off the OAuth2.0 authorization process. Start by adding a form to your web application that makes a GET request to https://app.copper.com/oauth/authorize : < form action = \"https://app.copper.com/oauth/authorize\" method = \"GET\" > < input type = \"hidden\" name = \"response_type\" value = \"code\" > < input type = \"hidden\" name = \"client_id\" value = \"{client_id}\" > < input type = \"hidden\" name = \"redirect_uri\" value = \"{redirect_uri}\" > < input type = \"hidden\" name = \"scope\" value = \"developer/v1/all\" > < button type = \"submit\" > Integrate with Copper! </ button > </ form > When the user submits this form, the authorization process begins.\nFirst, the user will be prompted to log in to their Copper account, followed by a request to authorize your application. Once the user clicks \"Authorize\", they will be redirected back to your application's redirect_uri via a POST request.\nUse the code parameter supplied in the request body, and exchange it for an access token: curl -X POST \\ -H \"Content-Type: application/x-www-form-urlencoded\" \\ -d \"grant_type=authorization_code\" \\ -d \"code={code}\" \\ -d \"redirect_uri={redirect_uri}\" \\ -d \"client_id={client_id}\" \\ -d \"client_secret={client_secret}\" \\ https://app.copper.com/oauth/token A successful response is a JSON document that looks like this: { \"access_token\" : \"MTQ0NjJkZmQ5OTM2NDE1ZTZjNGZmZjI3\" , \"token_type\" : \"Bearer\" , \"scope\" : \"developer/v1/all\" } Extract access_token and store it somewhere safe. You are now ready to make Dev API calls on behalf of the user\nby passing in access_token in an Authorization header! curl -H \"Authorization: Bearer {access_token}\" \\ https://api.copper.com/developer_api/v1/account"
+    }
+  ],
+  "claims": {
+    "auth": {
+      "value": [
+        "OAuth 2.0",
+        "API key"
+      ],
+      "sources": [
+        "https://www.developer.copper.com/introduction/authentication.html",
+        "https://developer.copper.com/introduction/oauth/index.html",
+        "https://www.developer.copper.com/introduction/oauth/index.html",
+        "https://www.developer.copper.com/introduction/oauth/flow.html",
+        "https://www.developer.copper.com/introduction/oauth/quickstart.html"
+      ],
+      "evidence": [
+        {
+          "url": "https://www.developer.copper.com/introduction/authentication.html",
+          "excerpt": "Overview - Copper Developer API Skip to content Authentication ¶ There are two ways to access the Copper Developer API: API keys and OAuth2.0 .\nAPI Keys are suitable for individual users, while OAuth2.0 is the preferred approach for partner integrations. API Keys ¶ The Dev API uses token based authentication. You have to include the token in the header of eve",
+          "method": "OAuth 2.0"
+        },
+        {
+          "url": "https://www.developer.copper.com/introduction/authentication.html",
+          "excerpt": "ated tokens and generate new ones. To generate an API token, in the Copper web app go to System settings > API Keys and click the 'GENERATE API KEY' \nbutton. Copper allows you to label each key for its unique purpose. You'll need to generate an API key to make \nan API Request. OAuth2.0 ¶ Click here to get started.",
+          "method": "API key"
+        },
+        {
+          "url": "https://developer.copper.com/introduction/oauth/index.html",
+          "excerpt": "Overview - Copper Developer API Skip to content Authentication via OAuth2.0 ¶ 1. Introduction ¶ You can now access the Copper Developer API via OAuth2.0 .\nThis authentication method is an alternative to Copper's legacy API Keys ,\nand is particularly well-suited for third-party integrations look",
+          "method": "OAuth 2.0"
+        },
+        {
+          "url": "https://developer.copper.com/introduction/oauth/index.html",
+          "excerpt": "party integrations looking to create a seamless and secure\nlink between their users and Copper. OAuth2.0 offers several advantages over the API Key flow: Authentication is open to all users, not just administrators No need to generate and copy API keys from Copper to your application Readily available client libraries help with smooth integration 2. Prerequisites ¶",
+          "method": "API key"
+        },
+        {
+          "url": "https://www.developer.copper.com/introduction/oauth/index.html",
+          "excerpt": "Overview - Copper Developer API Skip to content Authentication via OAuth2.0 ¶ 1. Introduction ¶ You can now access the Copper Developer API via OAuth2.0 .\nThis authentication method is an alternative to Copper's legacy API Keys ,\nand is particularly well-suited for third-party integrations look",
+          "method": "OAuth 2.0"
+        },
+        {
+          "url": "https://www.developer.copper.com/introduction/oauth/index.html",
+          "excerpt": "party integrations looking to create a seamless and secure\nlink between their users and Copper. OAuth2.0 offers several advantages over the API Key flow: Authentication is open to all users, not just administrators No need to generate and copy API keys from Copper to your application Readily available client libraries help with smooth integration 2. Prerequisites ¶",
+          "method": "API key"
+        },
+        {
+          "url": "https://www.developer.copper.com/introduction/oauth/flow.html",
+          "excerpt": "Documentation - Copper Developer API Skip to content Copper OAuth2.0 Flow ¶ 1. Introduction ¶ Third-party integrations may take advantage of OAuth 2.0 for the purpose of authorizing and authenticating access to the Copper Developer API. Employing the widely used Authorization Code Grant ",
+          "method": "OAuth 2.0"
+        },
+        {
+          "url": "https://www.developer.copper.com/introduction/oauth/quickstart.html",
+          "excerpt": "Quickstart Guide - Copper Developer API Skip to content OAuth2.0 Quickstart Guide ¶ Introduction ¶ This basic example demonstrates how to get started with Copper OAuth2.0.\nFor a detailed documentation of each step, click here . Prerequisites ¶ Your application provides an HTTPS callb",
+          "method": "OAuth 2.0"
+        }
+      ],
+      "reason": ""
+    },
+    "credential_gate": {
+      "value": "unknown",
+      "sources": [],
+      "evidence": [],
+      "reason": "No reliable automated access-tier extraction; targeted search results require claim-specific review"
+    },
+    "api_surface": {
+      "value": "unknown",
+      "sources": [],
+      "evidence": [],
+      "reason": "Targeted search found no usable, claim-specific official documentation"
+    },
+    "official_mcp": {
+      "value": "unknown",
+      "sources": [],
+      "evidence": [],
+      "reason": "Targeted search found no usable, claim-specific official documentation"
+    },
+    "composio_toolkit": {
+      "value": "listed",
+      "sources": [
+        "https://docs.composio.dev/toolkits/copper"
+      ],
+      "evidence": [
+        {
+          "url": "https://docs.composio.dev/toolkits/copper",
+          "excerpt": "Composio catalog match; verify product scope"
+        }
+      ],
+      "reason": ""
+    },
+    "verdict": {
+      "value": "unknown",
+      "sources": [],
+      "evidence": [],
+      "reason": "Insufficient independently verified authentication, API and access evidence for a build decision"
+    }
+  },
+  "validation": [
+    "Automatic extraction is provisional and must be checked independently",
+    "Unknown does not mean the capability is absent"
+  ]
+}

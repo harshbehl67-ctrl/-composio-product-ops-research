@@ -1,0 +1,305 @@
+{
+  "app": {
+    "number": 19,
+    "name": "Gorgias",
+    "category": "Support and Helpdesk",
+    "hint": "gorgias.com"
+  },
+  "checked_at": "2026-11-23T14:08:33.703995+00:00",
+  "source_search": "data/new_search/019.json",
+  "candidates": [
+    {
+      "url": "https://developers.gorgias.com/reference/authentication",
+      "title": "Authentication (https://developers.gorgias.com/reference/authentication)",
+      "snippet": "Authentication (https://developers.gorgias.com/reference/authentication)\n【turn39search0】 [wordlim: 200] Crawled: today; The Gorgias API supports two authentication methods: ... 🔐 Private app → API key ... Go to any endpoint (e.g: \"Retrieve your account\")\n\n# Authentication\n\nThe Gorgias API supports two authentication methods:\n\n  1. 🔐 Private app → API key\n  2. 👥 Public app → OAuth2\n\nUsing OAuth2 is mandatory for public apps.\n\nFor testing purposes, you can perform requests directly from the API Reference using your API keys.\n\n  1. Go to any endpoint (e.g: \"Retrieve your account\")\n  2. Use your email (username) and your API key"
+    },
+    {
+      "url": "https://developers.gorgias.com/docs/access-tokens-api-keys",
+      "title": "Access Tokens (API Keys) (https://developers.gorgias.com/docs/access-tokens-api-keys)",
+      "snippet": "Access Tokens (API Keys) (https://developers.gorgias.com/docs/access-tokens-api-keys)\n【turn39search1】 [wordlim: 200] Crawled: 3 weeks ago; Access Tokens (API Keys) ...       --url https://your-customer-account.gorgias.com/api/account \\\n\nAccess Tokens (API Keys)\n\n# Access Tokens (API Keys)\n\n> ### 👉\n> \n> Please remember that the API key authentication method can be used only for private apps. If you plan to build a public app you have to use OAuth2.\n\nEach access token (or API key) is tied to a specific user and has the same permissions as the user that holds them. Requests made with an access token will act on behalf of a user and will have access to the resources their permissions allow. As an admin, you can easily generate and revoke your access token in the settings of your account.\n\nExample: If you use an Access Token for a user with an Observer Agent role, then you can only do the things that an Observer agent can. Learn more about roleshere.\n\nHow do I get my API key?\n\n  1. Log in to your Gorgias account\n  2. Navigate to Settings → REST API\n  3. Click the Create API key button\n\nOnce you have your credentials, you can start performing requests directly from the API documentation .\n\nRequest example\n\n[Button: cURL]\n    \n    `curl --request GET \\\n      --url https://your-customer-account.gorgias.com/api/account \\\n      --header 'Authorization: Basic base64encode(USERNAME:API_KEY)'`\n\n> ### 👉\n> \n> Since we're using HTTP Basic Authentication, the `USERNAME:API_KEY` pair has to be a base64 encoded string. Note the `:` between the `USERNAME` and `API_KEY` is a separator used to differentiate between the username and the password."
+    },
+    {
+      "url": "https://docs.gorgias.com/en-US/rest-api-208286",
+      "title": "Access your Gorgias REST API credentials (https://docs.gorgias.com/en-US/rest-api-208286)",
+      "snippet": "Access your Gorgias REST API credentials (https://docs.gorgias.com/en-US/rest-api-208286)\n【turn39search2】 [wordlim: 200] Crawled: 3 weeks ago; For full API documentation, visit the Gorgias Developer Documentation. ... Your API key grants full access to your account's data.\n\n# Access your Gorgias REST API credentials Updated 5 months ago\n\nThe Gorgias REST API lets you read and write data in your helpdesk programmatically. To authenticate API requests, Gorgias uses HTTP Basic Authentication with three pieces of information: your base API URL, your email address, and an API key. You can find and manage all three from the REST API settings page in your helpdesk.\n\nNote: API keys are tied to your individual account, not to the helpdesk as a whole.\n\nFor full API documentation, visit the Gorgias Developer Documentation.\n\n### Requirements\n\n  * Available on all Helpdesk plans\n  * The account owner and admins can access the API credentials and create API keys\n\n## Find your API credentials\n\nYou can find the Base API URL (`https://{your-domain}.gorgias.com/api/`), Username (the email address on your account), and API key in your Gorgias settings. If you don’t have an existing API key, you’ll have to create one first.\n"
+    },
+    {
+      "url": "https://helpcenter.gorgias.com/en-US/connect-your-ai-assistant-to-the-gorgias-mcp-6310546",
+      "title": "Connect your AI assistant to the Gorgias MCP | Gorgias Help Center (https://helpcenter.gorgias.com/en-US/connect-your-ai-assistant-to-the-gorgias-mcp-6310546)",
+      "snippet": "Connect your AI assistant to the Gorgias MCP | Gorgias Help Center (https://helpcenter.gorgias.com/en-US/connect-your-ai-assistant-to-the-gorgias-mcp-6310546)\n【turn39search3】 [wordlim: 200] Crawled: yesterday; Everyone can connect the Gorgias MCP, but the actions you can take with your AI assistant depend on the role assigned to your user in Gorgias. ... Owners can find the steps in Claude's connector documentation.\n\n# Connect your AI assistant to the Gorgias MCP\n\nUpdated October 26, 2026\n\n### Who can use this feature?\n\n \n\nAll roles\n\n \n\nAll Helpdesk plans (AI Agent isn't required)\n\nThe Gorgias MCP lets you work with your Gorgias helpdesk using an AI assistant, like Claude or ChatGPT. Once you connect the MCP, your AI assistant can access your Gorgias data and account, so you can manage your helpdesk through conversations. For example, you can use an AI assistant to read and analyze your tickets, audit your account, configure AI Agent, and update your settings.\n\nMCP (Model Context Protocol) is the standard that lets an AI tool connect to another app like Gorgias.\n\nYou can add the Gorgias MCP from Claude's connector directory or ChatGPT's plugin directory. If you use another AI client, such as Claude Code, Codex, Cursor, or Copilot, you can create a custom connector for the MCP instead. This article covers:\n\n  * Requirements\n  * Who can use the Gorgias MCP?\n  * Connecting an AI assistant to the Gorgias MCP\n"
+    },
+    {
+      "url": "https://docs.gorgias.com/en-US/articles/developer-resources-18370",
+      "title": "Developer resources (https://docs.gorgias.com/en-US/articles/developer-resources-18370)",
+      "snippet": "Developer resources (https://docs.gorgias.com/en-US/articles/developer-resources-18370)\n【turn39search6】 [wordlim: 200] Crawled: today; Access your Gorgias REST API credentials Gorgias has an open REST API - go to Settings → You → REST API to access your unique credentials. You can also take a look at our developer documentation for more information.Build a custom app Before you start creating your Gorgias app you need to choose between two types:. These apps should be used if you only plan to access your own Gorgias account data.\n"
+    },
+    {
+      "url": "https://docs.gorgias.com/en-US/connect-your-ai-assistant-to-the-gorgias-mcp-6310546",
+      "title": "Connect your AI assistant to the Gorgias MCP (https://docs.gorgias.com/en-US/connect-your-ai-assistant-to-the-gorgias-mcp-6310546)",
+      "snippet": "Connect your AI assistant to the Gorgias MCP (https://docs.gorgias.com/en-US/connect-your-ai-assistant-to-the-gorgias-mcp-6310546)\n【turn39search7】 [wordlim: 200] Crawled: today; In a managed ChatGPT workspace (Business, Enterprise, or Edu), ask your workspace admin to make the plugin available (admins can follow OpenAI's plugin controls documentation). ... When you connect the Gorgias MCP in your AI tool, use this URL as the remote MCP server URL.\n"
+    },
+    {
+      "url": "https://docs.gorgias.com/en-US/explore-gorgias-mcp-tools-9131180",
+      "title": "Explore Gorgias MCP tools (https://docs.gorgias.com/en-US/explore-gorgias-mcp-tools-9131180)",
+      "snippet": "Explore Gorgias MCP tools (https://docs.gorgias.com/en-US/explore-gorgias-mcp-tools-9131180)\n【turn39search8】 [wordlim: 200] Crawled: today; When you ask your AI assistant to do something in Gorgias, it uses tools in the Gorgias MCP.\n"
+    },
+    {
+      "url": "https://www.gorgias.com/legal/api-license-and-terms-of-use",
+      "title": "Developers are required to comply with this HubSpot Developer Policy (this “Policy”), our Developer Terms and our Acceptable Use Policy ... (https://www.gorgias.com/legal/api-license-and-terms-of-use)",
+      "snippet": "Developers are required to comply with this HubSpot Developer Policy (this “Policy”), our Developer Terms and our Acceptable Use Policy ... (https://www.gorgias.com/legal/api-license-and-terms-of-use)\n【turn39search9】 [wordlim: 200] Published: 7 months ago; Crawled: 2 months ago; Without limiting the foregoing and except as expressly set forth in this Agreement, you will not at any time, and will not permit or assist others to: (a) copy, modify, or create derivative works or improvements of the API, in whole or in part; (b) rent, lease, lend, sell, sublicense, assign, distribute, publish, transfer, or otherwise make available the API to any third party; (c) reverse engineer, disassemble, decompile, decode, adapt, or otherwise attempt to derive or gain access to any software component, underlying ideas algorithms, structure, or organizational form of the API, in whole or in part; (d) remove, destroy or modify any proprietary notices from the API; (e) use the API in any manner or for any purpose that infringes, misappropriates, or otherwise violates any Intellectual Property Rights or other right of any person, or that violates any applicable law; (f) combine or integrate the API with any software, technology, services, or materials not authorized by Gorgias; (g) design or permit the Application to disable, override, or otherwise interfere with any Gorgias-implemented communications to end users, consent screens, user settings, alerts, warning, or the like; (h) use the API in any Application to replicate or attempt to replace the user experience of the Services; (i) attempt to cloak or conceal your identity or the identity of the Application when requesting authorization to use the API; (j) interfere with, modify or disable any features, functionality or security controls of the API; (k) defeat, avoid, bypass, remove, deactivate or otherwise circumvent any protection mechanisms for the API; or (l) access or use the API to develop or distribute an Application in a way t"
+    },
+    {
+      "url": "https://developers.gorgias.com/reference/errors",
+      "title": "Errors (https://developers.gorgias.com/reference/errors)",
+      "snippet": "Errors (https://developers.gorgias.com/reference/errors)\n【turn39search10】 [wordlim: 200] Crawled: 2 months ago; The Gorgias API uses conventional HTTP response codes to indicate the success or failure of an API request. ... • missing API token Read Authentication section to know how to authenticate your requests.\n"
+    },
+    {
+      "url": "https://developers.gorgias.com/docs/set-up-oauth2-app-store",
+      "title": "3. Set up OAuth2 (https://developers.gorgias.com/docs/set-up-oauth2-app-store)",
+      "snippet": "3. Set up OAuth2 (https://developers.gorgias.com/docs/set-up-oauth2-app-store)\n【turn39search11】 [wordlim: 200] Crawled: today; These credentials are necessary to identify your app when a Gorgias user \"installs\" your app and authorizes the requests to get the `access_token` from Gorgias. ...   * `client_id`: The Client ID that you had got from the developer portal. ...       --url https://acme.gorgias.com/api/account \\ ... > We highly recommend using an official OAuth client library to handle the entire OAuth2 authentication flow - this is especially useful when dealing with expiring tokens.\n"
+    },
+    {
+      "url": "https://developers.gorgias.com/docs/overview",
+      "title": "Overview (https://developers.gorgias.com/docs/overview)",
+      "snippet": "Overview (https://developers.gorgias.com/docs/overview)\n【turn39search12】 [wordlim: 200] Crawled: 3 weeks ago; Register on the Developer Portal to submit your app and manage your listing. ... Get Gorgias Sandbox to test your app: create a trial account and reach out to [email protected] to convert it into a Sandbox account. ... Build your app using our API docs and test it.\n"
+    },
+    {
+      "url": "https://developers.gorgias.com/reference/introduction",
+      "title": "Introduction (https://developers.gorgias.com/reference/introduction)",
+      "snippet": "Introduction (https://developers.gorgias.com/reference/introduction)\n【turn39search14】 [wordlim: 200] Crawled: today; The Gorgias API is structured with REST in mind. Our API has predictable resource-oriented URLs, accepts JSON-encoded request bodies, returns JSON-encoded responses, and uses standard HTTP response codes, authentication, and verbs. ... > Resources, resources' attributes, and resources' operations not documented in this documentation should not be used and should be considered as non-existing. ... Please sign up for our monthly developer newsletter if you start using our API.\n"
+    },
+    {
+      "url": "https://developers.gorgias.com/reference/get-account",
+      "title": "Retrieve your account (https://developers.gorgias.com/reference/get-account)",
+      "snippet": "Retrieve your account (https://developers.gorgias.com/reference/get-account)\n【turn39search15】 [wordlim: 200] Crawled: last week; Append .md to any documentation page URL to get its markdown version. ... Credentials ...          --url https://your-domain.gorgias.com/api/account \\\n"
+    },
+    {
+      "url": "https://updates.gorgias.com/publications/gorgias-mcp-is-now-in-open-beta",
+      "title": "Gorgias MCP is now in Open Beta 🎉 - Gorgias Updates (https://updates.gorgias.com/publications/gorgias-mcp-is-now-in-open-beta)",
+      "snippet": "Gorgias MCP is now in Open Beta 🎉 - Gorgias Updates (https://updates.gorgias.com/publications/gorgias-mcp-is-now-in-open-beta)\n【turn39search16】 [wordlim: 200] Published: 5 months ago; Crawled: today; Gorgias MCP is in open beta today, a first-party server that plugs your workspace into Claude, ChatGPT, Cursor, and any MCP-compatible tool.\n"
+    },
+    {
+      "url": "https://developers.gorgias.com/docs/1-register-on-developer-portal",
+      "title": "1. Register on Developer Portal & Get Gorgias Sandbox Account (https://developers.gorgias.com/docs/1-register-on-developer-portal)",
+      "snippet": "1. Register on Developer Portal & Get Gorgias Sandbox Account (https://developers.gorgias.com/docs/1-register-on-developer-portal)\n【turn39search17】 [wordlim: 200] Crawled: last month; Register on Developer Portal & Get Gorgias Sandbox Account ... > Once you get access to your account, please reach out to [email protected] with your account URL to switch it to a Developer plan.\n"
+    },
+    {
+      "url": "https://developers.gorgias.com/reference/limitations",
+      "title": "Rate Limits (https://developers.gorgias.com/reference/limitations)",
+      "snippet": "Rate Limits (https://developers.gorgias.com/reference/limitations)\n【turn39search19】 [wordlim: 200] Crawled: today; `X-Gorgias-Account-Api-Call-Limit`  | The number of requests made in the current period, along with the limit for that period.\n"
+    },
+    {
+      "url": "https://www.gorgias.com/blog/gorgias-mcp",
+      "title": "Ask Your Helpdesk Anything: How to Use Claude or ChatGPT with Gorgias (https://www.gorgias.com/blog/gorgias-mcp)",
+      "snippet": "Ask Your Helpdesk Anything: How to Use Claude or ChatGPT with Gorgias (https://www.gorgias.com/blog/gorgias-mcp)\n【turn39search20】 [wordlim: 200] Published: 5 months ago; Crawled: today; When connecting the Gorgias MCP app in your AI tool, use this URL as the remote MCP server URL.\n"
+    },
+    {
+      "url": "https://developers.gorgias.com/docs/oauth2-bearer-token",
+      "title": "OAuth2 Bearer Token (https://developers.gorgias.com/docs/oauth2-bearer-token)",
+      "snippet": "OAuth2 Bearer Token (https://developers.gorgias.com/docs/oauth2-bearer-token)\n【turn39search23】 [wordlim: 200] Crawled: last month;       --url https://your-customer-account.gorgias.com/api/account \\ ... This is done because sometimes applications only need temporary access to the API (e.g.: one time data import).\n"
+    },
+    {
+      "url": "https://developers.gorgias.com/docs/oauth2-authentication-for-creating-apps-with-gorgias",
+      "title": "OAuth2 authentication for creating apps with Gorgias (https://developers.gorgias.com/docs/oauth2-authentication-for-creating-apps-with-gorgias)",
+      "snippet": "OAuth2 authentication for creating apps with Gorgias (https://developers.gorgias.com/docs/oauth2-authentication-for-creating-apps-with-gorgias)\n【turn39search25】 [wordlim: 200] Crawled: today; The Gorgias users will click on the button to initiate the app installation and they will be redirected to the app URL which was specified on the app submission form in the partners’ account. ... On these endpoints are sent all API requests, including the authorization requests. ... In order to test the OAuth2 flow before the application is submitted, you can access it through the partner portal, and on my apps page you can choose the preview option when selecting the additional options of the application, or you can use the following URL to start the installation process: https://`{subdomain}`.gorgias.com/app/settings/integrations/app/`{your_app_client_id}`\n"
+    }
+  ],
+  "selected": [
+    {
+      "url": "https://developers.gorgias.com/reference/authentication",
+      "title": "Authentication (https://developers.gorgias.com/reference/authentication)",
+      "snippet": "Authentication (https://developers.gorgias.com/reference/authentication)\n【turn39search0】 [wordlim: 200] Crawled: today; The Gorgias API supports two authentication methods: ... 🔐 Private app → API key ... Go to any endpoint (e.g: \"Retrieve your account\")\n\n# Authentication\n\nThe Gorgias API supports two authentication methods:\n\n  1. 🔐 Private app → API key\n  2. 👥 Public app → OAuth2\n\nUsing OAuth2 is mandatory for public apps.\n\nFor testing purposes, you can perform requests directly from the API Reference using your API keys.\n\n  1. Go to any endpoint (e.g: \"Retrieve your account\")\n  2. Use your email (username) and your API key"
+    },
+    {
+      "url": "https://developers.gorgias.com/docs/access-tokens-api-keys",
+      "title": "Access Tokens (API Keys) (https://developers.gorgias.com/docs/access-tokens-api-keys)",
+      "snippet": "Access Tokens (API Keys) (https://developers.gorgias.com/docs/access-tokens-api-keys)\n【turn39search1】 [wordlim: 200] Crawled: 3 weeks ago; Access Tokens (API Keys) ...       --url https://your-customer-account.gorgias.com/api/account \\\n\nAccess Tokens (API Keys)\n\n# Access Tokens (API Keys)\n\n> ### 👉\n> \n> Please remember that the API key authentication method can be used only for private apps. If you plan to build a public app you have to use OAuth2.\n\nEach access token (or API key) is tied to a specific user and has the same permissions as the user that holds them. Requests made with an access token will act on behalf of a user and will have access to the resources their permissions allow. As an admin, you can easily generate and revoke your access token in the settings of your account.\n\nExample: If you use an Access Token for a user with an Observer Agent role, then you can only do the things that an Observer agent can. Learn more about roleshere.\n\nHow do I get my API key?\n\n  1. Log in to your Gorgias account\n  2. Navigate to Settings → REST API\n  3. Click the Create API key button\n\nOnce you have your credentials, you can start performing requests directly from the API documentation .\n\nRequest example\n\n[Button: cURL]\n    \n    `curl --request GET \\\n      --url https://your-customer-account.gorgias.com/api/account \\\n      --header 'Authorization: Basic base64encode(USERNAME:API_KEY)'`\n\n> ### 👉\n> \n> Since we're using HTTP Basic Authentication, the `USERNAME:API_KEY` pair has to be a base64 encoded string. Note the `:` between the `USERNAME` and `API_KEY` is a separator used to differentiate between the username and the password."
+    },
+    {
+      "url": "https://helpcenter.gorgias.com/en-US/connect-your-ai-assistant-to-the-gorgias-mcp-6310546",
+      "title": "Connect your AI assistant to the Gorgias MCP | Gorgias Help Center (https://helpcenter.gorgias.com/en-US/connect-your-ai-assistant-to-the-gorgias-mcp-6310546)",
+      "snippet": "Connect your AI assistant to the Gorgias MCP | Gorgias Help Center (https://helpcenter.gorgias.com/en-US/connect-your-ai-assistant-to-the-gorgias-mcp-6310546)\n【turn39search3】 [wordlim: 200] Crawled: yesterday; Everyone can connect the Gorgias MCP, but the actions you can take with your AI assistant depend on the role assigned to your user in Gorgias. ... Owners can find the steps in Claude's connector documentation.\n\n# Connect your AI assistant to the Gorgias MCP\n\nUpdated October 26, 2026\n\n### Who can use this feature?\n\n \n\nAll roles\n\n \n\nAll Helpdesk plans (AI Agent isn't required)\n\nThe Gorgias MCP lets you work with your Gorgias helpdesk using an AI assistant, like Claude or ChatGPT. Once you connect the MCP, your AI assistant can access your Gorgias data and account, so you can manage your helpdesk through conversations. For example, you can use an AI assistant to read and analyze your tickets, audit your account, configure AI Agent, and update your settings.\n\nMCP (Model Context Protocol) is the standard that lets an AI tool connect to another app like Gorgias.\n\nYou can add the Gorgias MCP from Claude's connector directory or ChatGPT's plugin directory. If you use another AI client, such as Claude Code, Codex, Cursor, or Copilot, you can create a custom connector for the MCP instead. This article covers:\n\n  * Requirements\n  * Who can use the Gorgias MCP?\n  * Connecting an AI assistant to the Gorgias MCP\n"
+    },
+    {
+      "url": "https://docs.gorgias.com/en-US/rest-api-208286",
+      "title": "Access your Gorgias REST API credentials (https://docs.gorgias.com/en-US/rest-api-208286)",
+      "snippet": "Access your Gorgias REST API credentials (https://docs.gorgias.com/en-US/rest-api-208286)\n【turn39search2】 [wordlim: 200] Crawled: 3 weeks ago; For full API documentation, visit the Gorgias Developer Documentation. ... Your API key grants full access to your account's data.\n\n# Access your Gorgias REST API credentials Updated 5 months ago\n\nThe Gorgias REST API lets you read and write data in your helpdesk programmatically. To authenticate API requests, Gorgias uses HTTP Basic Authentication with three pieces of information: your base API URL, your email address, and an API key. You can find and manage all three from the REST API settings page in your helpdesk.\n\nNote: API keys are tied to your individual account, not to the helpdesk as a whole.\n\nFor full API documentation, visit the Gorgias Developer Documentation.\n\n### Requirements\n\n  * Available on all Helpdesk plans\n  * The account owner and admins can access the API credentials and create API keys\n\n## Find your API credentials\n\nYou can find the Base API URL (`https://{your-domain}.gorgias.com/api/`), Username (the email address on your account), and API key in your Gorgias settings. If you don’t have an existing API key, you’ll have to create one first.\n"
+    },
+    {
+      "url": "https://docs.gorgias.com/en-US/articles/developer-resources-18370",
+      "title": "Developer resources (https://docs.gorgias.com/en-US/articles/developer-resources-18370)",
+      "snippet": "Developer resources (https://docs.gorgias.com/en-US/articles/developer-resources-18370)\n【turn39search6】 [wordlim: 200] Crawled: today; Access your Gorgias REST API credentials Gorgias has an open REST API - go to Settings → You → REST API to access your unique credentials. You can also take a look at our developer documentation for more information.Build a custom app Before you start creating your Gorgias app you need to choose between two types:. These apps should be used if you only plan to access your own Gorgias account data.\n"
+    },
+    {
+      "url": "https://docs.gorgias.com/en-US/connect-your-ai-assistant-to-the-gorgias-mcp-6310546",
+      "title": "Connect your AI assistant to the Gorgias MCP (https://docs.gorgias.com/en-US/connect-your-ai-assistant-to-the-gorgias-mcp-6310546)",
+      "snippet": "Connect your AI assistant to the Gorgias MCP (https://docs.gorgias.com/en-US/connect-your-ai-assistant-to-the-gorgias-mcp-6310546)\n【turn39search7】 [wordlim: 200] Crawled: today; In a managed ChatGPT workspace (Business, Enterprise, or Edu), ask your workspace admin to make the plugin available (admins can follow OpenAI's plugin controls documentation). ... When you connect the Gorgias MCP in your AI tool, use this URL as the remote MCP server URL.\n"
+    }
+  ],
+  "pages": [
+    {
+      "url": "https://developers.gorgias.com/reference/authentication",
+      "requested_url": "https://developers.gorgias.com/reference/authentication",
+      "status": 200,
+      "title": "Authentication (https://developers.gorgias.com/reference/authentication)",
+      "text": "Authentication For AI agents: the docs index is at https://developers.gorgias.com/llms.txt. Append .md to any documentation page URL to get its markdown version. The Gorgias API supports two authentication methods: 🔐 Private app → API key 👥 Public app → OAuth2 Using OAuth2 is mandatory for public apps. For testing purposes, you can perform requests directly from the API Reference using your API keys. Go to any endpoint (e.g: \" Retrieve your account \") Use your email (username) and your API key Updated about 1 year ago Did this page help you? Yes No Updated about 1 year ago Did this page help you? Yes No"
+    },
+    {
+      "url": "https://developers.gorgias.com/docs/access-tokens-api-keys",
+      "requested_url": "https://developers.gorgias.com/docs/access-tokens-api-keys",
+      "status": 200,
+      "title": "Access Tokens (API Keys) (https://developers.gorgias.com/docs/access-tokens-api-keys)",
+      "text": "Access Tokens (API Keys) For AI agents: the docs index is at https://developers.gorgias.com/llms.txt. Append .md to any documentation page URL to get its markdown version. 👉 Please remember that the API key authentication method can be used only for private apps . If you plan to build a public app you have to use OAuth2. Each access token (or API key) is tied to a specific user and has the same permissions as the user that holds them. Requests made with an access token will act on behalf of a user and will have access to the resources their permissions allow. As an admin, you can easily generate and revoke your access token in the settings of your account. Example: If you use an Access Token for a user with an Observer Agent role, then you can only do the things that an Observer agent can. Learn more about roles here . How do I get my API key? Log in to your Gorgias account Navigate to Settings → REST API Click the Create API key button Once you have your credentials, you can start performing requests directly from the API documentation . Request example cURL curl --request GET \\\n  --url https://your-customer-account.gorgias.com/api/account \\\n  --header 'Authorization: Basic base64encode(USERNAME:API_KEY)' 👉 Since we're using HTTP Basic Authentication , the USERNAME:API_KEY pair has to be a base64 encoded string. Note the : between the USERNAME and API_KEY is a separator used to differentiate between the username and the password. Updated about 1 year ago Did this page help you? Yes No Copy Page"
+    },
+    {
+      "url": "https://helpcenter.gorgias.com/en-US/connect-your-ai-assistant-to-the-gorgias-mcp-6310546",
+      "requested_url": "https://helpcenter.gorgias.com/en-US/connect-your-ai-assistant-to-the-gorgias-mcp-6310546",
+      "status": 200,
+      "title": "Connect your AI assistant to the Gorgias MCP | Gorgias Help Center (https://helpcenter.gorgias.com/en-US/connect-your-ai-assistant-to-the-gorgias-mcp-6310546)",
+      "text": "Connect your AI assistant to the Gorgias MCP | Gorgias Help Center Ask anything Browse topics Get Started AI Agent & Automation Productivity Channels Integrations Account Setup Daily Operations Reporting & Analytics Resources Connect your AI assistant to the Gorgias MCP Updated October 26, 2026 On this page 8 sections Who can use this feature? All roles All Helpdesk plans (AI Agent isn't required) The Gorgias MCP lets you work with your Gorgias helpdesk using an AI assistant, like Claude or ChatGPT. Once you connect the MCP, your AI assistant can access your Gorgias data and account, so you can manage your helpdesk through conversations. For example, you can use an AI assistant to read and analyze your tickets, audit your account, configure AI Agent, and update your settings. MCP (Model Context Protocol) is the standard that lets an AI tool connect to another app like Gorgias. You can add the Gorgias MCP from Claude's connector directory or ChatGPT's plugin directory. If you use another AI client, such as Claude Code, Codex, Cursor, or Copilot, you can create a custom connector for the MCP instead. This article covers: Requirements Who can use the Gorgias MCP? Connecting an AI assistant to the Gorgias MCP Connecting Claude Connecting ChatGPT Authorizing your Gorgias account Connecting a different AI client, such as Claude Code What your AI assistant can do , with prompts to try Requirements A Gorgias account on any Helpdesk plan . An account with Claude, ChatGPT, or another MCP-compatible AI assistant. Your Gorgias subdomain. This is the your-brand part of your account URL ( your-brand.gorgias.com ). You'll enter it when you authorize the connection. Who can use the Gorgias MCP? Everyone can connect the Gorgias MCP, but the actions you can take with your AI assistant depend on the role assigned to your user in Gorgias. If your company uses Claude Team or Enterprise, or a managed ChatGPT workspace (Business, Enterprise, or Edu), an admin may need to make the Gorgias MCP available before you can connect. Connect an AI assistant to the Gorgias MCP Claude and ChatGPT both list the Gorgias MCP in their connector directories, so you can add it without any manual configuration. Follow the steps for the assistant you use, then authorize your Gorgias account to finish connecting. Connect Claude The Gorgias MCP is available in Claude's connector directory. You can connect the MCP using Claude on the web, desktop app, or mobile app. On Claude Team and Enterprise plans, an Owner or Primary Owner must enable the Gorgias MCP for your organization before members can connect it. Owners can find the steps in Claude's connector documentation . If you don't see the Gorgias MCP in your connectors list, ask your Owner to enable it. Note: Claude's menus change from time to time. For the most up-to-date steps, refer to Claude's connector documentation . In Claude, select Customize , then select Connectors . Browse the connector directory and search for Gorgias . Select Gorgias MCP , then select Connect . You're redirected to your browser. Authorize your Gorgias account . Connect ChatGPT The Gorgias MCP is available in ChatGPT as a plugin. If you use a managed ChatGPT workspace (Business, Enterprise, or Edu), an admin may need to make the Gorgias MCP available to your workspace first. Admins can find the steps in OpenAI's plugin controls documentation . If you can't find the Gorgias MCP in the directory, ask your workspace admin. Note: ChatGPT's menus change from time to time. For the most up-to-date steps, refer to OpenAI's plugin documentation . In ChatGPT, open the plugin directory and search for Gorgias MCP . Select Install plugin . Authorize your Gorgias account . Authorize your Gorgias account After you select Connect in Claude or Install plugin in ChatGPT, a browser window opens where you can authorize your AI assistant to connect with the Gorgias MCP. Enter your Gorgias subdomain (example: your-brand.gorgias.com ), then select Continue . Select Allow Access . Sign in to Gorgias. If you already have an active Gorgias session in your browser, you won't be prompted to sign in. Review the data the Gorgias MCP can access, then select Authorize . Return to Claude or ChatGPT. That's it. You're connected, and you can start prompting . Connect a different AI client Gorgias MCP works with any MCP-compatible AI client. The setup process varies by client, but the connection URL is the same: https://mcp.gorgias.com/mcp Refer to your AI client's documentation for how to add an HTTP MCP server, then complete the Gorgias authentication step when prompted: Claude Code (if you sign in with your Claude account, connectors you add in Claude on the web are also available in Claude Code) Codex Cursor VS Code Copilot What your AI assistant can do Once connected, your AI assistant can read your helpdesk data and take actions on your behalf, within the limits of your Gorgias role . It can work with: Tickets: search and read tickets, reply to customers, add internal notes, and update status, priority, and assignee, and add tags. Macros and rules: find stale or duplicate macros, create and update macros, and manage automation rules. AI Agent: audit your setup, edit tone of voice, guidance, skills, and handover topics, and preview replies before you turn anything on. Knowledge: review and draft Help Center articles and AI Agent knowledge. Customers and team: look up customer profiles and review your team. Insights: pull voice-of-customer trends, response times, ticket volume, and CSAT data. Some actions can reach your customers or go live, so check the details before you approve them. For example, replying to a ticket or applying a macro can send a message to a customer, and publishing guidance or skills changes how AI Agent responds. By default, Help Center articles and AI Agent guidance are saved as drafts until you publish them, and new rules and actions are created turned off. You can also explore every tool in the Gorgias MCP , including the Gorgias role each one needs. Try it out Now that you've connected the Gorgias MCP to your AI assistant, you're ready to start prompting. Here are a few examples to get you started: \"Audit my AI Agent setup and flag any handover conditions that seem too broad or likely to cause unnecessary escalations.\" \"Simulate how my AI Agent would respond to this message before I enable it: [paste a sample customer message].\" \"What are the top reasons customers are contacting us this month? Group them by theme.\" \"Find the macros we use least and suggest which ones we should update or retire.\" \"What was our average first response time last month, broken down by channel?\" \"Find recent tickets about refunds and summarize what customers are asking for.\" To see what else your AI assistant can do, explore the full list of Gorgias MCP tools . For more ideas, check out the Gorgias MCP Cookbook : a public GitHub repo of ready-to-fork recipes and prompt ideas for merchants using the Gorgias MCP. FAQ Can I do anything in Gorgias with my AI assistant? No. Your AI assistant acts as you, so it can only do what your Gorgias role allows. Some actions need a Lead or Admin role. If a request fails with an \"Insufficient role\" message, review the AI assistants section of user permissions or ask an Admin. What does my AI assistant see when I connect Gorgias? Your AI assistant receives the ticket, customer, and settings data it retrieves to answer your requests. That data is handled under your AI provider's terms and privacy settings, not Gorgias's. In ChatGPT, plugins can also receive parts of your conversation, such as chat context and memories. Review your provider's data controls before you connect, especially if your company has specific data-handling policies. What's the difference between the Gorgias MCP and AI Agent? AI Agent helps your shoppers browse, buy, and get support automatically and in your brand's voice. It works inside your helpdesk, across email, chat, SMS, and social media, resolving questions like returns, order changes, and shipping updates and helping new shoppers find products. The Gorgias MCP is different: it lets you manage your Gorgias account from an external AI tool, like Claude or ChatGPT. AI Agent talks to your shoppers, while the MCP lets you talk to your helpdesk. The two work together. For example, you can use your AI assistant to audit and improve your AI Agent's guidance, skills, and settings. I can't find the Gorgias MCP in Claude or ChatGPT. On Claude Team and Enterprise plans, an Owner or Primary Owner enables connectors for the organization. If you can't find Gorgias MCP under Customize > Connectors , ask them to add it from Organization settings > Connectors . In a managed ChatGPT workspace (Business, Enterprise, or Edu), ask your workspace admin to make the plugin available (admins can follow OpenAI's plugin controls documentation ). Once it's enabled, it appears in your directory. The connection URL shows a page saying \"This URL hosts an MCP endpoint\" when I open it in a browser. This is expected. The URL is a connection endpoint. It's designed to be added inside your AI client's connectors settings, not opened in a browser tab. When you connect the Gorgias MCP in your AI tool , use this URL as the remote MCP server URL. Can I connect the Gorgias MCP for multiple brands? Each connection works with one Gorgias account. To connect more than one brand in Claude, add a custom connector for each brand and use that brand's Gorgias subdomain in the connection URL, replacing YOUR_GORGIAS_SUBDOMAIN : https://mcp.gorgias.com/mcp?gorgias_subdomain=YOUR_GORGIAS_SUBDOMAIN Authenticate each connection with the Gorgias account that has access to the corresponding brand. For steps on adding a custom connector, refer to Claude's documentation . What did you think about this content? Leave feedback Back to AI Agent Actions"
+    },
+    {
+      "url": "https://docs.gorgias.com/en-US/rest-api-208286",
+      "requested_url": "https://docs.gorgias.com/en-US/rest-api-208286",
+      "status": 200,
+      "title": "Access your Gorgias REST API credentials (https://docs.gorgias.com/en-US/rest-api-208286)",
+      "text": "Access your Gorgias REST API credentials Search All articles Access your Gorgias REST API credentials Updated 5 months ago The Gorgias REST API lets you read and write data in your helpdesk programmatically. To authenticate API requests, Gorgias uses HTTP Basic Authentication with three pieces of information: your base API URL, your email address, and an API key. You can find and manage all three from the REST API settings page in your helpdesk. Note: API keys are tied to your individual account, not to the helpdesk as a whole. For full API documentation, visit the Gorgias Developer Documentation . Requirements Available on all Helpdesk plans The account owner and admins can access the API credentials and create API keys Find your API credentials You can find the Base API URL ( https://{your-domain}.gorgias.com/api/ ), Username (the email address on your account), and API key in your Gorgias settings. If you don’t have an existing API key, you’ll have to create one first. From your helpdesk, click the Settings icon in the bottom-left corner. In the menu, locate Account , then select REST API . Under API Access & Credentials , you'll find the Base API URL , your Username , and Password (API Key) . Click Copy next to any field to copy it to your clipboard. Create an API key If you haven't created an API key yet, the Password field will show a Create API key button instead of a key value. From your helpdesk, click the Settings icon in the bottom-left corner. In the menu, locate Account , then select REST API . Under Password (API Key) , click Create API Key . Your API key is generated immediately and displayed alongside the other credentials. Your API key grants full access to your account's data. Once you’ve copied it, store it somewhere secure and don’t share it with anyone. Reset your API key You can reset your API key at any time. Resetting generates a new key and immediately invalidates the old one. Any integrations or scripts using the old key will stop working until they're updated with the new one. From your helpdesk, click the Settings icon in the bottom-left corner. In the menu, locate Account , then select REST API . Next to the Password (API Key) field, click Reset . Click OK to confirm. Import the Postman collection The REST API settings page also includes a Run in Postman button. Clicking it imports the Gorgias Postman collection with your domain, email address, and API key pre-filled as environment variables, so you can start making requests immediately. Was this article helpful? Yes No"
+    },
+    {
+      "url": "https://docs.gorgias.com/en-US/articles/developer-resources-18370",
+      "requested_url": "https://docs.gorgias.com/en-US/articles/developer-resources-18370",
+      "status": 200,
+      "title": "Developer resources (https://docs.gorgias.com/en-US/articles/developer-resources-18370)",
+      "text": "Developer resources Search All articles Developer resources Access your Gorgias REST API credentials Gorgias has an open REST API - go to Settings → You → REST API to access your unique credentials. You can also take a look at our developer documentation for more information. Build a custom app Before you start creating your Gorgias app you need to choose between two types:. These apps should be used if you only plan to access your own Gorgias account data. These apps are published in our in-product and public App Stores and are available t"
+    },
+    {
+      "url": "https://docs.gorgias.com/en-US/connect-your-ai-assistant-to-the-gorgias-mcp-6310546",
+      "requested_url": "https://docs.gorgias.com/en-US/connect-your-ai-assistant-to-the-gorgias-mcp-6310546",
+      "status": 200,
+      "title": "Connect your AI assistant to the Gorgias MCP (https://docs.gorgias.com/en-US/connect-your-ai-assistant-to-the-gorgias-mcp-6310546)",
+      "text": "Connect your AI assistant to the Gorgias MCP Search All articles Connect your AI assistant to the Gorgias MCP Updated 23 days ago Who can use this feature? All roles All Helpdesk plans (AI Agent isn't required) The Gorgias MCP lets you work with your Gorgias helpdesk using an AI assistant, like Claude or ChatGPT. Once you connect the MCP, your AI assistant can access your Gorgias data and account, so you can manage your helpdesk through conversations. For example, you can use an AI assistant to read and analyze your tickets, audit your account, configure AI Agent, and update your settings. MCP (Model Context Protocol) is the standard that lets an AI tool connect to another app like Gorgias. You can add the Gorgias MCP from Claude's connector directory or ChatGPT's plugin directory. If you use another AI client, such as Claude Code, Codex, Cursor, or Copilot, you can create a custom connector for the MCP instead. This article covers: Requirements Who can use the Gorgias MCP? Connecting an AI assistant to the Gorgias MCP Connecting Claude Connecting ChatGPT Authorizing your Gorgias account Connecting a different AI client, such as Claude Code What your AI assistant can do , with prompts to try Requirements A Gorgias account on any Helpdesk plan . An account with Claude, ChatGPT, or another MCP-compatible AI assistant. Your Gorgias subdomain. This is the your-brand part of your account URL ( your-brand.gorgias.com ). You'll enter it when you authorize the connection. Who can use the Gorgias MCP? Everyone can connect the Gorgias MCP, but the actions you can take with your AI assistant depend on the role assigned to your user in Gorgias. If your company uses Claude Team or Enterprise, or a managed ChatGPT workspace (Business, Enterprise, or Edu), an admin may need to make the Gorgias MCP available before you can connect. Connect an AI assistant to the Gorgias MCP Claude and ChatGPT both list the Gorgias MCP in their connector directories, so you can add it without any manual configuration. Follow the steps for the assistant you use, then authorize your Gorgias account to finish connecting. Connect Claude The Gorgias MCP is available in Claude's connector directory. You can connect the MCP using Claude on the web, desktop app, or mobile app. On Claude Team and Enterprise plans, an Owner or Primary Owner must enable the Gorgias MCP for your organization before members can connect it. Owners can find the steps in Claude's connector documentation . If you don't see the Gorgias MCP in your connectors list, ask your Owner to enable it. Note: Claude's menus change from time to time. For the most up-to-date steps, refer to Claude's connector documentation . In Claude, select Customize , then select Connectors . Browse the connector directory and search for Gorgias . Select Gorgias MCP , then select Connect . You're redirected to your browser. Authorize your Gorgias account . Connect ChatGPT The Gorgias MCP is available in ChatGPT as a plugin. If you use a managed ChatGPT workspace (Business, Enterprise, or Edu), an admin may need to make the Gorgias MCP available to your workspace first. Admins can find the steps in OpenAI's plugin controls documentation . If you can't find the Gorgias MCP in the directory, ask your workspace admin. Note: ChatGPT's menus change from time to time. For the most up-to-date steps, refer to OpenAI's plugin documentation . In ChatGPT, open the plugin directory and search for Gorgias MCP . Select Install plugin . Authorize your Gorgias account . Authorize your Gorgias account After you select Connect in Claude or Install plugin in ChatGPT, a browser window opens where you can authorize your AI assistant to connect with the Gorgias MCP. Enter your Gorgias subdomain (example: your-brand.gorgias.com ), then select Continue . Select Allow Access . Sign in to Gorgias. If you already have an active Gorgias session in your browser, you won't be prompted to sign in. Review the data the Gorgias MCP can access, then select Authorize . Return to Claude or ChatGPT. That's it. You're connected, and you can start prompting . Connect a different AI client Gorgias MCP works with any MCP-compatible AI client. The setup process varies by client, but the connection URL is the same: https://mcp.gorgias.com/mcp Refer to your AI client's documentation for how to add an HTTP MCP server, then complete the Gorgias authentication step when prompted: Claude Code (if you sign in with your Claude account, connectors you add in Claude on the web are also available in Claude Code) Codex Cursor VS Code Copilot What your AI assistant can do Once connected, your AI assistant can read your helpdesk data and take actions on your behalf, within the limits of your Gorgias role . It can work with: Tickets: search and read tickets, reply to customers, add internal notes, and update status, priority, and assignee, and add tags. Macros and rules: find stale or duplicate macros, create and update macros, and manage automation rules. AI Agent: audit your setup, edit tone of voice, guidance, skills, and handover topics, and preview replies before you turn anything on. Knowledge: review and draft Help Center articles and AI Agent knowledge. Customers and team: look up customer profiles and review your team. Insights: pull voice-of-customer trends, response times, ticket volume, and CSAT data. Some actions can reach your customers or go live, so check the details before you approve them. For example, replying to a ticket or applying a macro can send a message to a customer, and publishing guidance or skills changes how AI Agent responds. By default, Help Center articles and AI Agent guidance are saved as drafts until you publish them, and new rules and actions are created turned off. You can also explore every tool in the Gorgias MCP , including the Gorgias role each one needs. Try it out Now that you've connected the Gorgias MCP to your AI assistant, you're ready to start prompting. Here are a few examples to get you started: \"Audit my AI Agent setup and flag any handover conditions that seem too broad or likely to cause unnecessary escalations.\" \"Simulate how my AI Agent would respond to this message before I enable it: [paste a sample customer message].\" \"What are the top reasons customers are contacting us this month? Group them by theme.\" \"Find the macros we use least and suggest which ones we should update or retire.\" \"What was our average first response time last month, broken down by channel?\" \"Find recent tickets about refunds and summarize what customers are asking for.\" To see what else your AI assistant can do, explore the full list of Gorgias MCP tools . For more ideas, check out the Gorgias MCP Cookbook : a public GitHub repo of ready-to-fork recipes and prompt ideas for merchants using the Gorgias MCP. FAQ Can I do anything in Gorgias with my AI assistant? No. Your AI assistant acts as you, so it can only do what your Gorgias role allows. Some actions need a Lead or Admin role. If a request fails with an \"Insufficient role\" message, review the AI assistants section of user permissions or ask an Admin. What does my AI assistant see when I connect Gorgias? Your AI assistant receives the ticket, customer, and settings data it retrieves to answer your requests. That data is handled under your AI provider's terms and privacy settings, not Gorgias's. In ChatGPT, plugins can also receive parts of your conversation, such as chat context and memories. Review your provider's data controls before you connect, especially if your company has specific data-handling policies. What's the difference between the Gorgias MCP and AI Agent? AI Agent helps your shoppers browse, buy, and get support automatically and in your brand's voice. It works inside your helpdesk, across email, chat, SMS, and social media, resolving questions like returns, order changes, and shipping updates and helping new shoppers find products. The Gorgias MCP is different: it lets you manage your Gorgias account from an external AI tool, like Claude or ChatGPT. AI Agent talks to your shoppers, while the MCP lets you talk to your helpdesk. The two work together. For example, you can use your AI assistant to audit and improve your AI Agent's guidance, skills, and settings. I can't find the Gorgias MCP in Claude or ChatGPT. On Claude Team and Enterprise plans, an Owner or Primary Owner enables connectors for the organization. If you can't find Gorgias MCP under Customize > Connectors , ask them to add it from Organization settings > Connectors . In a managed ChatGPT workspace (Business, Enterprise, or Edu), ask your workspace admin to make the plugin available (admins can follow OpenAI's plugin controls documentation ). Once it's enabled, it appears in your directory. The connection URL shows a page saying \"This URL hosts an MCP endpoint\" when I open it in a browser. This is expected. The URL is a connection endpoint. It's designed to be added inside your AI client's connectors settings, not opened in a browser tab. When you connect the Gorgias MCP in your AI tool , use this URL as the remote MCP server URL. Can I connect the Gorgias MCP for multiple brands? Each connection works with one Gorgias account. To connect more than one brand in Claude, add a custom connector for each brand and use that brand's Gorgias subdomain in the connection URL, replacing YOUR_GORGIAS_SUBDOMAIN : https://mcp.gorgias.com/mcp?gorgias_subdomain=YOUR_GORGIAS_SUBDOMAIN Authenticate each connection with the Gorgias account that has access to the corresponding brand. For steps on adding a custom connector, refer to Claude's documentation . Was this article helpful? Yes No"
+    }
+  ],
+  "claims": {
+    "auth": {
+      "value": [
+        "OAuth 2.0",
+        "API key",
+        "Basic auth"
+      ],
+      "sources": [
+        "https://developers.gorgias.com/reference/authentication",
+        "https://developers.gorgias.com/docs/access-tokens-api-keys",
+        "https://docs.gorgias.com/en-US/rest-api-208286"
+      ],
+      "evidence": [
+        {
+          "url": "https://developers.gorgias.com/reference/authentication",
+          "excerpt": "mentation page URL to get its markdown version. The Gorgias API supports two authentication methods: 🔐 Private app → API key 👥 Public app → OAuth2 Using OAuth2 is mandatory for public apps. For testing purposes, you can perform requests directly from the API Reference using your API keys. Go to any endpoint (e.g: \" Retrieve your account \") Use your email (username",
+          "method": "OAuth 2.0"
+        },
+        {
+          "url": "https://developers.gorgias.com/reference/authentication",
+          "excerpt": " Append .md to any documentation page URL to get its markdown version. The Gorgias API supports two authentication methods: 🔐 Private app → API key 👥 Public app → OAuth2 Using OAuth2 is mandatory for public apps. For testing purposes, you can perform requests directly from the API Reference using your API keys. Go to any endpoint (e.g: \" Retrieve your account \") Us",
+          "method": "API key"
+        },
+        {
+          "url": "https://developers.gorgias.com/docs/access-tokens-api-keys",
+          "excerpt": "lease remember that the API key authentication method can be used only for private apps . If you plan to build a public app you have to use OAuth2. Each access token (or API key) is tied to a specific user and has the same permissions as the user that holds them. Requests made with an access token will act on behalf of a user and will have access to the resources ",
+          "method": "OAuth 2.0"
+        },
+        {
+          "url": "https://developers.gorgias.com/docs/access-tokens-api-keys",
+          "excerpt": "t https://developers.gorgias.com/llms.txt. Append .md to any documentation page URL to get its markdown version. 👉 Please remember that the API key authentication method can be used only for private apps . If you plan to build a public app you have to use OAuth2. Each access token (or API key) is tied to a specific user and has the same permissions as the user that",
+          "method": "API key"
+        },
+        {
+          "url": "https://developers.gorgias.com/docs/access-tokens-api-keys",
+          "excerpt": "//your-customer-account.gorgias.com/api/account \\\n  --header 'Authorization: Basic base64encode(USERNAME:API_KEY)' 👉 Since we're using HTTP Basic Authentication , the USERNAME:API_KEY pair has to be a base64 encoded string. Note the : between the USERNAME and API_KEY is a separator used to differentiate between the username and the password. Updated about 1 year ago Did this pa",
+          "method": "Basic auth"
+        },
+        {
+          "url": "https://docs.gorgias.com/en-US/rest-api-208286",
+          "excerpt": "ticate API requests, Gorgias uses HTTP Basic Authentication with three pieces of information: your base API URL, your email address, and an API key. You can find and manage all three from the REST API settings page in your helpdesk. Note: API keys are tied to your individual account, not to the helpdesk as a whole. For full API documentation, visit the Gorgias Deve",
+          "method": "API key"
+        },
+        {
+          "url": "https://docs.gorgias.com/en-US/rest-api-208286",
+          "excerpt": "hs ago The Gorgias REST API lets you read and write data in your helpdesk programmatically. To authenticate API requests, Gorgias uses HTTP Basic Authentication with three pieces of information: your base API URL, your email address, and an API key. You can find and manage all three from the REST API settings page in your helpdesk. Note: API keys are tied to your individual acc",
+          "method": "Basic auth"
+        }
+      ],
+      "reason": ""
+    },
+    "credential_gate": {
+      "value": "unknown",
+      "sources": [],
+      "evidence": [],
+      "reason": "No reliable automated access-tier extraction; targeted search results require claim-specific review"
+    },
+    "api_surface": {
+      "value": [
+        "REST"
+      ],
+      "sources": [
+        "https://developers.gorgias.com/docs/access-tokens-api-keys",
+        "https://docs.gorgias.com/en-US/rest-api-208286",
+        "https://docs.gorgias.com/en-US/articles/developer-resources-18370"
+      ],
+      "evidence": [
+        {
+          "url": "https://developers.gorgias.com/docs/access-tokens-api-keys",
+          "excerpt": "gs that an Observer agent can. Learn more about roles here . How do I get my API key? Log in to your Gorgias account Navigate to Settings → REST API Click the Create API key button Once you have your credentials, you can start performing requests directly from the API documentation . Request example cURL curl --request GET \\\n  --url https://your-customer-account.gor",
+          "surface": "REST"
+        },
+        {
+          "url": "https://docs.gorgias.com/en-US/rest-api-208286",
+          "excerpt": "Access your Gorgias REST API credentials Search All articles Access your Gorgias REST API credentials Updated 5 months ago The Gorgias REST API lets you read and write data in your helpdesk programmatically. To authenticate API requests, Gorgias us",
+          "surface": "REST"
+        },
+        {
+          "url": "https://docs.gorgias.com/en-US/articles/developer-resources-18370",
+          "excerpt": "Developer resources Search All articles Developer resources Access your Gorgias REST API credentials Gorgias has an open REST API - go to Settings → You → REST API to access your unique credentials. You can also take a look at our developer documentation for more information. Build a custom app Before you s",
+          "surface": "REST"
+        }
+      ],
+      "reason": ""
+    },
+    "official_mcp": {
+      "value": "yes",
+      "sources": [
+        "https://docs.gorgias.com/en-US/connect-your-ai-assistant-to-the-gorgias-mcp-6310546"
+      ],
+      "evidence": [
+        {
+          "url": "https://docs.gorgias.com/en-US/connect-your-ai-assistant-to-the-gorgias-mcp-6310546",
+          "excerpt": "s by client, but the connection URL is the same: https://mcp.gorgias.com/mcp Refer to your AI client's documentation for how to add an HTTP MCP server, then complete the Gorgias authentication step when prompted: Claude Code (if you sign in with your Claude account, connectors you add in Claude on the web are also available in Claude Code) Codex Cursor VS Code Copilot What your AI assistant can"
+        }
+      ],
+      "reason": ""
+    },
+    "composio_toolkit": {
+      "value": "listed",
+      "sources": [
+        "https://docs.composio.dev/toolkits/gorgias"
+      ],
+      "evidence": [
+        {
+          "url": "https://docs.composio.dev/toolkits/gorgias",
+          "excerpt": "Composio catalog match; verify product scope"
+        }
+      ],
+      "reason": ""
+    },
+    "verdict": {
+      "value": "unknown",
+      "sources": [],
+      "evidence": [],
+      "reason": "Insufficient independently verified authentication, API and access evidence for a build decision"
+    }
+  },
+  "validation": [
+    "Automatic extraction is provisional and must be checked independently",
+    "Unknown does not mean the capability is absent"
+  ]
+}

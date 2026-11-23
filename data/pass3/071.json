@@ -1,0 +1,20 @@
+{
+  "app": "Notion",
+  "source_pass": "data\\pass2\\071.json",
+  "access_candidates": [
+    {
+      "value": "administrator-controlled credential mentioned",
+      "url": "https://www.notion.com/help/create-integrations-with-the-notion-api",
+      "excerpt": "resources, and connection management tools. Note: Each connection has one or more owners, and every owner can manage the connection and get its API token. Who can create a connection depends on your plan and your workspace's settings. Learn more about enterprise connection settings → Looking for admin ",
+      "status": "provisional; check scope, negation and plan details"
+    },
+    {
+      "value": "administrator-controlled credential mentioned",
+      "url": "https://www.notion.com/en-gb/help/create-integrations-with-the-notion-api?nxtPslug=create-integrations-with-the-notion-api",
+      "excerpt": "resources, and connection management tools. Note: Each connection has one or more owners, and every owner can manage the connection and get its API token. Who can create a connection depends on your plan and your workspace’s settings. Learn more about enterprise connection settings → Looking for admin ",
+      "status": "provisional; check scope, negation and plan details"
+    }
+  ],
+  "reason_if_unknown": "",
+  "warning": "A phrase match is not a verified credential gate or a buildability verdict."
+}

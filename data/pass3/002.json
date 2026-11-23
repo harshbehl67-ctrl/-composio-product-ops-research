@@ -1,0 +1,14 @@
+{
+  "app": "HubSpot",
+  "source_pass": "data\\pass2\\002.json",
+  "access_candidates": [
+    {
+      "value": "self-serve / free or trial mentioned",
+      "url": "https://developers.hubspot.com/blog/harnessing-the-power-of-hubspots-public-apis-with-postman",
+      "excerpt": "t developer test account. Need a HubSpot account? Create a test account after signing up for a free developer account . A HubSpot app associated with your HubSpot account (the app can be either public or private ). Please note that you must be a Super Admin to install a public app in a HubSpot account or create a private app. I",
+      "status": "provisional; check scope, negation and plan details"
+    }
+  ],
+  "reason_if_unknown": "",
+  "warning": "A phrase match is not a verified credential gate or a buildability verdict."
+}

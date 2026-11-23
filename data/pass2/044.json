@@ -1,0 +1,235 @@
+{
+  "app": {
+    "number": 44,
+    "name": "Salesforce Commerce Cloud",
+    "category": "Ecommerce",
+    "hint": "developer.salesforce.com/docs/commerce"
+  },
+  "checked_at": "2026-11-23T14:08:45.663899+00:00",
+  "source_search": "data/new_search/044.json",
+  "candidates": [
+    {
+      "url": "https://developer.salesforce.com/docs/commerce/commerce-api/references/about-commerce-api/about.html",
+      "title": "Salesforce Developers (https://developer.salesforce.com/docs/commerce/commerce-api/references/about-commerce-api/about.html)",
+      "snippet": "Salesforce Developers (https://developer.salesforce.com/docs/commerce/commerce-api/references/about-commerce-api/about.html)\n【turn62search0】 [wordlim: 200] Crawled: today;     * Improved tooling support: Widespread OAS tooling aids in generating client libraries, API validation, and interactive documentation. ... Visit Salesforce Commerce Cloud GitHub Repositories and Access for information about how to get access to the Commerce Cloud repositories. ... SCAPI support for the custom Client IP Header and Hybrid Authentication is now enabled on Sandbox and Development instances. ... Existing customers must update their implementation to include the `channel_id parameter` in the client credential call in guest flows. ...   * SLAS `[/authorize](https://developer.salesforce.com/docs/commerce/commerce-api/references/auth? ...   * As of July 31 2024, to enhance security for the Shopper Login API Access Service (SLAS), a `channel_id` (site) parameter is now required when requesting a guest access token with a `grant_type` of `client_credentials`.\n      * Repeated use of revoked, expired, or unknown tokens may also result in HTTP 429 responses.\n    * Action Required\n      * Review your integration to avoid reusing or concurrently exchanging the same refresh token, and ensure your application properly handles HTTP 429 responses.\n  * mTLS Enforcement\n    * To enhance the security of the SLAS authentication service, we’re enabling mutual TLS (mTLS) client-certificate enforcement at the SLAS gateway. Starting October 6, 2026, according to the new per-region schedule listed below, any request reaching the SLAS origin without a valid client certificate—including requests that bypass the SCAPI zone—will be rejected. This change was originally scheduled for September 1, and then September 23.\n    * Who is affected:\n      * No action required: for integrations using the standard, published Commerce Cloud SLAS endpoints through the SCAPI zone. This is the supported integration path and"
+    },
+    {
+      "url": "https://developer.salesforce.com/docs/commerce/commerce-api/guide/authorization.html",
+      "title": "Salesforce Developers (https://developer.salesforce.com/docs/commerce/commerce-api/guide/authorization.html)",
+      "snippet": "Salesforce Developers (https://developer.salesforce.com/docs/commerce/commerce-api/guide/authorization.html)\n【turn62search1】 [wordlim: 200] Crawled: 2 days ago; Authorization for the B2C Commerce API resources is handled not through user permissions, but through client permissions. ... Always check the Security section of the endpoint documentation, which is hidden by default. ... The JWT access tokens for both SCAPI Admin APIs and Shopper APIs are included in your API requests as an HTTP header that follows the Bearer authentication scheme.\n\n# Authorization\n\nAuthorization for the B2C Commerce API resources is handled not through user permissions, but through client permissions.\n\nA client for the B2C Commerce API can take many forms: anything from an online storefront to custom merchandising tools.\n\nTo authorize this wide range of client types, we’ve defined a set of scopes based on the OAuth 2.1 standard. The available scopes give you control over exactly what clients are authorized to do with the SCAPI Admin APIs and Shopper APIs.\n\nNot all endpoints use the same security scheme for authorization. Always check the Security section of the endpoint documentation, which is hidden by default.\n\nBoth the Admin and Shopper APIs are authorized using an access token in the form of a JSON Web Token (JWT).\n\nUsing JWTs offers the following benefits:\n\n  * Coarse-grained client permissions with read-only and read-write permissions.\n  * Allows you to grant the same permissions for multiple B2C Commerce instances.\n  * Standardized, mature, and established technology.\n"
+    },
+    {
+      "url": "https://developer.salesforce.com/docs/commerce/commerce-api/guide/custom-api-authentication.html",
+      "title": "Salesforce Developers (https://developer.salesforce.com/docs/commerce/commerce-api/guide/custom-api-authentication.html)",
+      "snippet": "Salesforce Developers (https://developer.salesforce.com/docs/commerce/commerce-api/guide/custom-api-authentication.html)\n【turn62search3】 [wordlim: 200] Crawled: 2 months ago; The Custom APIs DX endpoint uses an Account Manager OAuth 2.0 bearer token for authentication and you must specify one of the following scopes to access this API endpoint: ... The schemes are the same as those used for non-custom B2C Commerce APIs (SCAPI). ... While endpoint registration does not require the complete definition of the security schemes, it can be useful to have a complete and valid scheme to enable the creation of documentation, tests and code stubs, and mock requests. ... Image: Salesforce\n"
+    },
+    {
+      "url": "https://developer.salesforce.com/docs/commerce/commerce-api/guide/b2c-developer-tooling.html",
+      "title": "Salesforce Developers (https://developer.salesforce.com/docs/commerce/commerce-api/guide/b2c-developer-tooling.html)",
+      "snippet": "Salesforce Developers (https://developer.salesforce.com/docs/commerce/commerce-api/guide/b2c-developer-tooling.html)\n【turn62search7】 [wordlim: 200] Crawled: 3 days ago; For clients that require manual MCP configuration, use `npx` with arguments `--yes @salesforce/b2c-dx-mcp` as the local server command.\n\nThe MCP provides official B2C Commerce documentation search, live cartridge debugging, log investigation, deployment tools, and general-purpose SCAPI Admin API access.\n"
+    },
+    {
+      "url": "https://developer.salesforce.com/docs/commerce/commerce-api/guide/develop.html",
+      "title": "Salesforce Developers (https://developer.salesforce.com/docs/commerce/commerce-api/guide/develop.html)",
+      "snippet": "Salesforce Developers (https://developer.salesforce.com/docs/commerce/commerce-api/guide/develop.html)\n【turn62search8】 [wordlim: 200] Crawled: 5 days ago; This section provides resources for building applications and services using the B2C Commerce APIs (SCAPI), including use cases and code samples to guide you through API capabilities and best practices. ... Set up authentication: Configure SLAS authentication for your storefront ... Get Admin access: Set up Account Manager credentials ... Review Storefront Next architecture: Start with Storefront Next documentation\n"
+    },
+    {
+      "url": "https://developer.salesforce.com/docs/commerce/commerce-api/guide/security.html",
+      "title": "Salesforce Developers (https://developer.salesforce.com/docs/commerce/commerce-api/guide/security.html)",
+      "snippet": "Salesforce Developers (https://developer.salesforce.com/docs/commerce/commerce-api/guide/security.html)\n【turn62search9】 [wordlim: 200] Crawled: yesterday; Availability is implemented for headless commerce using DoS protection, API rate limiting, and eCDN controls on authentication traffic. ... Use the `cf.waf.credential_check.*` fields on storefront login and on SLAS login. ... OCAPI Shop `POST /dw/shop/{version}/customers/auth` also submits HTTP Basic credentials and is served on the storefront zone, not the SCAPI zone. ... Salesforce creates a login anomaly detector in Log Center for each realm.\n"
+    },
+    {
+      "url": "https://developer.salesforce.com/docs/commerce/b2c-commerce/references/b2c-commerce-ocapi/apiexplorer.html",
+      "title": "Salesforce Developers (https://developer.salesforce.com/docs/commerce/b2c-commerce/references/b2c-commerce-ocapi/apiexplorer.html)",
+      "snippet": "Salesforce Developers (https://developer.salesforce.com/docs/commerce/b2c-commerce/references/b2c-commerce-ocapi/apiexplorer.html)\n【turn62search11】 [wordlim: 200] Crawled: 3 weeks ago;   * Make sure that your user account has the Documentation User role.\n\n  * Navigate to https://api-explorer.commercecloud.salesforce.com. ... If you provide a different Swagger-compatible meta API instead of a Digital meta API, then the default Swagger behavior applies, and no credentials are required.\n"
+    },
+    {
+      "url": "https://developer.salesforce.com/docs/commerce/commerce-api/guide/cv-agentforce-commerce-vibes-intro.html",
+      "title": "Salesforce Developers (https://developer.salesforce.com/docs/commerce/commerce-api/guide/cv-agentforce-commerce-vibes-intro.html)",
+      "snippet": "Salesforce Developers (https://developer.salesforce.com/docs/commerce/commerce-api/guide/cv-agentforce-commerce-vibes-intro.html)\n【turn62search12】 [wordlim: 200] Crawled: last week; Use Commerce Vibes to develop and customize B2C storefronts, debug cartridges, manage B2C Commerce instance configuration, and automate administration tasks including managing site preferences, Business Manager configuration, and Salesforce B2C Commerce API (SCAPI) integrations. ...   * Model Context Protocol (MCP) Server: The B2C Commerce DX MCP server ships out of the box, giving the agent access to tools for documentation search, cartridge debugging, logs, deployment, and SCAPI Admin API operations.\n"
+    },
+    {
+      "url": "https://developer.salesforce.com/docs/commerce/commerce-solutions/guide/scapi-get-started.html",
+      "title": "Salesforce Developers (https://developer.salesforce.com/docs/commerce/commerce-solutions/guide/scapi-get-started.html)",
+      "snippet": "Salesforce Developers (https://developer.salesforce.com/docs/commerce/commerce-solutions/guide/scapi-get-started.html)\n【turn62search13】 [wordlim: 200] Crawled: 5 days ago; It also goes by “Salesforce Commerce API” or just “Commerce API.” ... Build backend or admin tools  | Use the SCAPI Admin APIs with an Account Manager token. ... Determine your environment (dev, staging, or production), or create an on-demand sandbox. ... Set up API access: Authorization.\n\n\nSCAPI consists of two API types, plus open-source SDKs and a developer tooling ecosystem.\n"
+    },
+    {
+      "url": "https://resources.docs.salesforce.com/latest/latest/en-us/sfdc/pdf/api_rest.pdf",
+      "title": "REST API Developer Guide (https://resources.docs.salesforce.com/latest/latest/en-us/sfdc/pdf/api_rest.pdf)",
+      "snippet": "REST API Developer Guide (https://resources.docs.salesforce.com/latest/latest/en-us/sfdc/pdf/api_rest.pdf)\n【turn62search31】 [wordlim: 200] Published: 7 months ago; There’s more than one Salesforce Edition that supports API access and multiple ways to grant API permission to a user. ... For more information, visit Salesforce Help: Add Products and Licenses with the Your Account App or contact a Salesforce account executive. ... To protect the configuration and live data in your production org, we recommend using an isolated environment for active development and testing, such as a Developer Edition org, sandbox, or scratch org.\n"
+    },
+    {
+      "url": "https://developer.salesforce.com/docs/commerce/b2c-commerce/guide/scapi-get-started.html",
+      "title": "Salesforce Developers (https://developer.salesforce.com/docs/commerce/b2c-commerce/guide/scapi-get-started.html)",
+      "snippet": "Salesforce Developers (https://developer.salesforce.com/docs/commerce/b2c-commerce/guide/scapi-get-started.html)\n【turn62search18】 [wordlim: 200] Crawled: 5 days ago; It also goes by “Salesforce Commerce API” or just “Commerce API.” ... Replace `{client_id}` and `{client_secret}` with your SLAS private client credentials. ... SCAPI consists of two API types, plus open-source SDKs and a developer tooling ecosystem. ... Authentication  | SLAS (OAuth 2.1)  | Account Manager\n"
+    },
+    {
+      "url": "https://developer.salesforce.com/docs/platform/hosted-mcp-servers/guide/servers-reference.html",
+      "title": "Salesforce Developers (https://developer.salesforce.com/docs/platform/hosted-mcp-servers/guide/servers-reference.html)",
+      "snippet": "Salesforce Developers (https://developer.salesforce.com/docs/platform/hosted-mcp-servers/guide/servers-reference.html)\n【turn62search20】 [wordlim: 200] Crawled: 5 days ago; Salesforce provides a set of standard MCP servers that expose built-in platform and product capabilities. ... Archive Connect tools (search, unarchive, analysis, and compliance operations on archived records) are available through this server.\n"
+    },
+    {
+      "url": "https://developer.salesforce.com/docs/commerce/b2c-commerce/guide/base-url.html",
+      "title": "Salesforce Developers (https://developer.salesforce.com/docs/commerce/b2c-commerce/guide/base-url.html)",
+      "snippet": "Salesforce Developers (https://developer.salesforce.com/docs/commerce/b2c-commerce/guide/base-url.html)\n【turn62search22】 [wordlim: 200] Crawled: 3 days ago; Log in using your Account Manager credentials. ... To learn more about realms, see Concepts and Terminology in the B2C Commerce documentation. ... It’s concatenated with `api.commercecloud.salesforce.com` to create the API host name for your API calls, for example: `u8ak193h.api.commercecloud.salesforce.com`. ... If you use SLAS hybrid authentication or encounter the error `Cannot construct SLAS session-bridge URL: no ACTIVE SCAPI short code found for this organization`, generate a dedicated short code to resolve the issue.\n"
+    },
+    {
+      "url": "https://developer.salesforce.com/docs/platform/hosted-mcp-servers/guide/server-urls.html",
+      "title": "Salesforce Developers (https://developer.salesforce.com/docs/platform/hosted-mcp-servers/guide/server-urls.html)",
+      "snippet": "Salesforce Developers (https://developer.salesforce.com/docs/platform/hosted-mcp-servers/guide/server-urls.html)\n【turn62search23】 [wordlim: 200] Crawled: today; Production  | `https://api.salesforce.com/platform/mcp/v1/<SERVER-NAME>`  | `https://api.salesforce.com/platform/mcp/v1/d/<MY-DOMAIN-NAME>/<SERVER-NAME>`\n"
+    },
+    {
+      "url": "https://developer.salesforce.com/docs/commerce/commerce-api/guide/get-started.html",
+      "title": "Salesforce Developers (https://developer.salesforce.com/docs/commerce/commerce-api/guide/get-started.html)",
+      "snippet": "Salesforce Developers (https://developer.salesforce.com/docs/commerce/commerce-api/guide/get-started.html)\n【turn62search24】 [wordlim: 200] Crawled: yesterday; We provide several resources to help you learn about Salesforce B2C Commerce. ... Ultimately, the developer is responsible for uploading code to the Staging instance. ... Developers never use the Development instance unless they are involved in the testing process for the production site. ...   * Account Manager–Lets your IT staff create user accounts on B2C Commerce, grant and revoke user access to B2C Commerce instan\n"
+    },
+    {
+      "url": "https://developer.salesforce.com/docs/commerce/commerce-api/guide/authorization-for-admin-apis.html",
+      "title": "Salesforce Developers (https://developer.salesforce.com/docs/commerce/commerce-api/guide/authorization-for-admin-apis.html)",
+      "snippet": "Salesforce Developers (https://developer.salesforce.com/docs/commerce/commerce-api/guide/authorization-for-admin-apis.html)\n【turn62search25】 [wordlim: 200] Crawled: 5 days ago;   * SCAPI Admin APIs are secured with Account Manager, but SCAPI Shopper APIs are secured with the Shopper Login and API Access Service (SLAS). ... Look for the Salesforce Commerce API category and select the `Salesforce Commerce API`.\n"
+    },
+    {
+      "url": "https://resources.docs.salesforce.com/latest/latest/en-us/sfdc/pdf/apex_api.pdf",
+      "title": "SOAP API Developer Guide (https://resources.docs.salesforce.com/latest/latest/en-us/sfdc/pdf/apex_api.pdf)",
+      "snippet": "SOAP API Developer Guide (https://resources.docs.salesforce.com/latest/latest/en-us/sfdc/pdf/apex_api.pdf)\n【turn62search34】 [wordlim: 200] Published: 7 months ago; Client apps must log in using valid credentials. ... When users log in to Salesforce via the user interface, the API, or a desktop client such as Salesforce for Outlook, Connect Offline, Connect for Office, or the Data Loader, Salesforce authorizes the login as follows. ... If the user has the Multi-Factor Authentication for API Logins permission and connected an authenticator app to the account, the user must enter a verification code (TOTP) generated by the authenticator app.\n"
+    },
+    {
+      "url": "https://developer.salesforce.com/docs/commerce/commerce-api/guide/slas.html",
+      "title": "Salesforce Developers (https://developer.salesforce.com/docs/commerce/commerce-api/guide/slas.html)",
+      "snippet": "Salesforce Developers (https://developer.salesforce.com/docs/commerce/commerce-api/guide/slas.html)\n【turn62search27】 [wordlim: 200] Crawled: 2 days ago; The Shopper Login and API Access Service (SLAS) enables secure access to the Shopper APIs of the B2C Commerce API and the Open Commerce API (OCAPI). ... Both admin tools use Account Manager for access control, and they both require that you have the SLAS Organization Administrator role and the correct filters applied for your B2C Commerce instances. ... For advice on how to use SLAS under high-volume situations, see this article on the Salesforce Developers blog: Shopper Login API: Techniques and Tricks to Get the Most Out of High-Volume Holidays. ... For production tenants, refresh tokens are valid for 90 days for registered shoppers and 30 days for guests.\n"
+    },
+    {
+      "url": "https://developer.salesforce.com/docs/commerce/b2c-commerce/references/b2c-commerce-ocapi/ocapisettings.html",
+      "title": "Salesforce Developers (https://developer.salesforce.com/docs/commerce/b2c-commerce/references/b2c-commerce-ocapi/ocapisettings.html)",
+      "snippet": "Salesforce Developers (https://developer.salesforce.com/docs/commerce/b2c-commerce/references/b2c-commerce-ocapi/ocapisettings.html)\n【turn62search28】 [wordlim: 200] Crawled: today; New customers should use SCAPI (the Salesforce Commerce API) as the REST API of choice for all custom implementations. Existing customers who provision a new realm after this date and need OCAPI settings enabled can file a support ticket to request access. ... In Business Manager: Administration > Site Development > Open Commerce API Settings.\n"
+    },
+    {
+      "url": "https://developer.salesforce.com/docs/commerce/b2c-commerce/guide/slas.html",
+      "title": "Salesforce Developers (https://developer.salesforce.com/docs/commerce/b2c-commerce/guide/slas.html)",
+      "snippet": "Salesforce Developers (https://developer.salesforce.com/docs/commerce/b2c-commerce/guide/slas.html)\n【turn62search29】 [wordlim: 200] Crawled: yesterday; The Shopper Login and API Access Service (SLAS) enables secure access to the Shopper APIs of the B2C Commerce API and the Open Commerce API (OCAPI). ... Both admin tools use Account Manager for access control, and they both require that you have the SLAS Organization Administrator role and the correct filters applied for your B2C Commerce instances. ... For advice on how to use SLAS under high-volume situations, see this article on the Salesforce Developers blog: Shopper Login API: Techniques and Tricks to Get the Most Out of High-Volume Holidays.\n"
+    },
+    {
+      "url": "https://www.salesforce.com/en-us/wp-content/uploads/sites/4/products/platform/forms/SFC_The-Guide-to-Agent-Application-and-Headless-Development-on-Salesforce.pdf?bc=OTH",
+      "title": "The Guide to Agent, Application, and Headless Development on Salesforce (https://www.salesforce.com/en-us/wp-content/uploads/sites/4/products/platform/forms/SFC_The-Guide-to-Agent-Application-and-Headless-Development-on-Salesforce.pdf?bc=OTH)",
+      "snippet": "The Guide to Agent, Application, and Headless Development on Salesforce (https://www.salesforce.com/en-us/wp-content/uploads/sites/4/products/platform/forms/SFC_The-Guide-to-Agent-Application-and-Headless-Development-on-Salesforce.pdf?bc=OTH)\n【turn62search40】 [wordlim: 200] Published: last month; Crawled: 2 weeks ago; **Salesforce DX MCP Server**\n"
+    }
+  ],
+  "selected": [
+    {
+      "url": "https://developer.salesforce.com/docs/commerce/commerce-api/guide/authorization.html",
+      "title": "Salesforce Developers (https://developer.salesforce.com/docs/commerce/commerce-api/guide/authorization.html)",
+      "snippet": "Salesforce Developers (https://developer.salesforce.com/docs/commerce/commerce-api/guide/authorization.html)\n【turn62search1】 [wordlim: 200] Crawled: 2 days ago; Authorization for the B2C Commerce API resources is handled not through user permissions, but through client permissions. ... Always check the Security section of the endpoint documentation, which is hidden by default. ... The JWT access tokens for both SCAPI Admin APIs and Shopper APIs are included in your API requests as an HTTP header that follows the Bearer authentication scheme.\n\n# Authorization\n\nAuthorization for the B2C Commerce API resources is handled not through user permissions, but through client permissions.\n\nA client for the B2C Commerce API can take many forms: anything from an online storefront to custom merchandising tools.\n\nTo authorize this wide range of client types, we’ve defined a set of scopes based on the OAuth 2.1 standard. The available scopes give you control over exactly what clients are authorized to do with the SCAPI Admin APIs and Shopper APIs.\n\nNot all endpoints use the same security scheme for authorization. Always check the Security section of the endpoint documentation, which is hidden by default.\n\nBoth the Admin and Shopper APIs are authorized using an access token in the form of a JSON Web Token (JWT).\n\nUsing JWTs offers the following benefits:\n\n  * Coarse-grained client permissions with read-only and read-write permissions.\n  * Allows you to grant the same permissions for multiple B2C Commerce instances.\n  * Standardized, mature, and established technology.\n"
+    },
+    {
+      "url": "https://developer.salesforce.com/docs/commerce/commerce-api/references/about-commerce-api/about.html",
+      "title": "Salesforce Developers (https://developer.salesforce.com/docs/commerce/commerce-api/references/about-commerce-api/about.html)",
+      "snippet": "Salesforce Developers (https://developer.salesforce.com/docs/commerce/commerce-api/references/about-commerce-api/about.html)\n【turn62search0】 [wordlim: 200] Crawled: today;     * Improved tooling support: Widespread OAS tooling aids in generating client libraries, API validation, and interactive documentation. ... Visit Salesforce Commerce Cloud GitHub Repositories and Access for information about how to get access to the Commerce Cloud repositories. ... SCAPI support for the custom Client IP Header and Hybrid Authentication is now enabled on Sandbox and Development instances. ... Existing customers must update their implementation to include the `channel_id parameter` in the client credential call in guest flows. ...   * SLAS `[/authorize](https://developer.salesforce.com/docs/commerce/commerce-api/references/auth? ...   * As of July 31 2024, to enhance security for the Shopper Login API Access Service (SLAS), a `channel_id` (site) parameter is now required when requesting a guest access token with a `grant_type` of `client_credentials`.\n      * Repeated use of revoked, expired, or unknown tokens may also result in HTTP 429 responses.\n    * Action Required\n      * Review your integration to avoid reusing or concurrently exchanging the same refresh token, and ensure your application properly handles HTTP 429 responses.\n  * mTLS Enforcement\n    * To enhance the security of the SLAS authentication service, we’re enabling mutual TLS (mTLS) client-certificate enforcement at the SLAS gateway. Starting October 6, 2026, according to the new per-region schedule listed below, any request reaching the SLAS origin without a valid client certificate—including requests that bypass the SCAPI zone—will be rejected. This change was originally scheduled for September 1, and then September 23.\n    * Who is affected:\n      * No action required: for integrations using the standard, published Commerce Cloud SLAS endpoints through the SCAPI zone. This is the supported integration path and"
+    },
+    {
+      "url": "https://developer.salesforce.com/docs/platform/hosted-mcp-servers/guide/servers-reference.html",
+      "title": "Salesforce Developers (https://developer.salesforce.com/docs/platform/hosted-mcp-servers/guide/servers-reference.html)",
+      "snippet": "Salesforce Developers (https://developer.salesforce.com/docs/platform/hosted-mcp-servers/guide/servers-reference.html)\n【turn62search20】 [wordlim: 200] Crawled: 5 days ago; Salesforce provides a set of standard MCP servers that expose built-in platform and product capabilities. ... Archive Connect tools (search, unarchive, analysis, and compliance operations on archived records) are available through this server.\n"
+    },
+    {
+      "url": "https://developer.salesforce.com/docs/commerce/commerce-api/guide/custom-api-authentication.html",
+      "title": "Salesforce Developers (https://developer.salesforce.com/docs/commerce/commerce-api/guide/custom-api-authentication.html)",
+      "snippet": "Salesforce Developers (https://developer.salesforce.com/docs/commerce/commerce-api/guide/custom-api-authentication.html)\n【turn62search3】 [wordlim: 200] Crawled: 2 months ago; The Custom APIs DX endpoint uses an Account Manager OAuth 2.0 bearer token for authentication and you must specify one of the following scopes to access this API endpoint: ... The schemes are the same as those used for non-custom B2C Commerce APIs (SCAPI). ... While endpoint registration does not require the complete definition of the security schemes, it can be useful to have a complete and valid scheme to enable the creation of documentation, tests and code stubs, and mock requests. ... Image: Salesforce\n"
+    },
+    {
+      "url": "https://developer.salesforce.com/docs/commerce/commerce-api/guide/b2c-developer-tooling.html",
+      "title": "Salesforce Developers (https://developer.salesforce.com/docs/commerce/commerce-api/guide/b2c-developer-tooling.html)",
+      "snippet": "Salesforce Developers (https://developer.salesforce.com/docs/commerce/commerce-api/guide/b2c-developer-tooling.html)\n【turn62search7】 [wordlim: 200] Crawled: 3 days ago; For clients that require manual MCP configuration, use `npx` with arguments `--yes @salesforce/b2c-dx-mcp` as the local server command.\n\nThe MCP provides official B2C Commerce documentation search, live cartridge debugging, log investigation, deployment tools, and general-purpose SCAPI Admin API access.\n"
+    },
+    {
+      "url": "https://developer.salesforce.com/docs/commerce/commerce-api/guide/develop.html",
+      "title": "Salesforce Developers (https://developer.salesforce.com/docs/commerce/commerce-api/guide/develop.html)",
+      "snippet": "Salesforce Developers (https://developer.salesforce.com/docs/commerce/commerce-api/guide/develop.html)\n【turn62search8】 [wordlim: 200] Crawled: 5 days ago; This section provides resources for building applications and services using the B2C Commerce APIs (SCAPI), including use cases and code samples to guide you through API capabilities and best practices. ... Set up authentication: Configure SLAS authentication for your storefront ... Get Admin access: Set up Account Manager credentials ... Review Storefront Next architecture: Start with Storefront Next documentation\n"
+    }
+  ],
+  "pages": [
+    {
+      "url": "https://developer.salesforce.com/docs/commerce/commerce-api/guide/authorization.html",
+      "requested_url": "https://developer.salesforce.com/docs/commerce/commerce-api/guide/authorization.html",
+      "status": 403,
+      "title": "Salesforce Developers (https://developer.salesforce.com/docs/commerce/commerce-api/guide/authorization.html)",
+      "text": "Oops Something went wrong Reference id: 0.7caf3b17.1795442923.1b6e126b"
+    },
+    {
+      "url": "https://developer.salesforce.com/docs/commerce/commerce-api/references/about-commerce-api/about.html",
+      "requested_url": "https://developer.salesforce.com/docs/commerce/commerce-api/references/about-commerce-api/about.html",
+      "status": 403,
+      "title": "Salesforce Developers (https://developer.salesforce.com/docs/commerce/commerce-api/references/about-commerce-api/about.html)",
+      "text": "Oops Something went wrong Reference id: 0.6caf3b17.1795442923.169f642e"
+    },
+    {
+      "url": "https://developer.salesforce.com/docs/platform/hosted-mcp-servers/guide/servers-reference.html",
+      "requested_url": "https://developer.salesforce.com/docs/platform/hosted-mcp-servers/guide/servers-reference.html",
+      "status": 403,
+      "title": "Salesforce Developers (https://developer.salesforce.com/docs/platform/hosted-mcp-servers/guide/servers-reference.html)",
+      "text": "Oops Something went wrong Reference id: 0.6caf3b17.1795442924.169f64f6"
+    },
+    {
+      "url": "https://developer.salesforce.com/docs/commerce/commerce-api/guide/custom-api-authentication.html",
+      "requested_url": "https://developer.salesforce.com/docs/commerce/commerce-api/guide/custom-api-authentication.html",
+      "status": 403,
+      "title": "Salesforce Developers (https://developer.salesforce.com/docs/commerce/commerce-api/guide/custom-api-authentication.html)",
+      "text": "Oops Something went wrong Reference id: 0.6caf3b17.1795442924.169f65c7"
+    },
+    {
+      "url": "https://developer.salesforce.com/docs/commerce/commerce-api/guide/b2c-developer-tooling.html",
+      "requested_url": "https://developer.salesforce.com/docs/commerce/commerce-api/guide/b2c-developer-tooling.html",
+      "status": 403,
+      "title": "Salesforce Developers (https://developer.salesforce.com/docs/commerce/commerce-api/guide/b2c-developer-tooling.html)",
+      "text": "Oops Something went wrong Reference id: 0.6caf3b17.1795442924.169f6654"
+    },
+    {
+      "url": "https://developer.salesforce.com/docs/commerce/commerce-api/guide/develop.html",
+      "requested_url": "https://developer.salesforce.com/docs/commerce/commerce-api/guide/develop.html",
+      "status": 403,
+      "title": "Salesforce Developers (https://developer.salesforce.com/docs/commerce/commerce-api/guide/develop.html)",
+      "text": "Oops Something went wrong Reference id: 0.6caf3b17.1795442924.169f66c4"
+    }
+  ],
+  "claims": {
+    "auth": {
+      "value": "unknown",
+      "sources": [],
+      "evidence": [],
+      "reason": "Targeted search found no usable, claim-specific official documentation"
+    },
+    "credential_gate": {
+      "value": "unknown",
+      "sources": [],
+      "evidence": [],
+      "reason": "No reliable automated access-tier extraction; targeted search results require claim-specific review"
+    },
+    "api_surface": {
+      "value": "unknown",
+      "sources": [],
+      "evidence": [],
+      "reason": "Targeted search found no usable, claim-specific official documentation"
+    },
+    "official_mcp": {
+      "value": "unknown",
+      "sources": [],
+      "evidence": [],
+      "reason": "Targeted search found no usable, claim-specific official documentation"
+    },
+    "composio_toolkit": {
+      "value": "unknown",
+      "sources": [],
+      "evidence": [],
+      "reason": "No exact or reviewed alias match in saved catalog; absence not established"
+    },
+    "verdict": {
+      "value": "unknown",
+      "sources": [],
+      "evidence": [],
+      "reason": "Insufficient independently verified authentication, API and access evidence for a build decision"
+    }
+  },
+  "validation": [
+    "Automatic extraction is provisional and must be checked independently",
+    "Unknown does not mean the capability is absent"
+  ]
+}

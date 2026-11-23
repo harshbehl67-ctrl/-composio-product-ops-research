@@ -1,0 +1,26 @@
+{
+  "app": "QuickBooks",
+  "source_pass": "data\\pass2\\086.json",
+  "access_candidates": [
+    {
+      "value": "self-serve / free or trial mentioned",
+      "url": "https://static.developer.intuit.com/output_html/qbo/docs/develop/authentication-and-authorization/faq.html",
+      "excerpt": "7D%7D To preview what this flow looks, get your app ID and visit the following URL: Sign in to your developer account. Select the Dashboard link on the toolbar. Find your app on the list. Copy the App ID . Visit https://appcenter.intuit.com/app/connect/oauth2/request?appId=djQuMTo6OGQzYmJlYTI3Yg:<App_ID_of_your_app> This URL takes you to the Production Connect or Development Connect Request ",
+      "status": "provisional; check scope, negation and plan details"
+    },
+    {
+      "value": "self-serve / free or trial mentioned",
+      "url": "https://static.developer.intuit.com/output_html/qbo/docs/develop/authentication-and-authorization/faq.html",
+      "excerpt": "nect or Development Connect Request URL. This is specified in List on the app store section of your developer account. Note Note : To test the â Get app now â button in a sandbox environment, append the query parameter with sandbox_app=true . Learn more about the âGet app nowâ button integration",
+      "status": "provisional; check scope, negation and plan details"
+    },
+    {
+      "value": "self-serve / free or trial mentioned",
+      "url": "https://static.developer.intuit.com/output_html/qbo/docs/get-started/mcp-connector.html",
+      "excerpt": "to help build your integration Looking for a guided path from account setup to a successful sandbox API call Before you begin Before you begin, be sure you have the following: An Intuit Developer account Access to a developer workspace A clear first API goal, such as listing invoices, retrieving company information, or testing a basic sandbox request ",
+      "status": "provisional; check scope, negation and plan details"
+    }
+  ],
+  "reason_if_unknown": "",
+  "warning": "A phrase match is not a verified credential gate or a buildability verdict."
+}

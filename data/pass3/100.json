@@ -1,0 +1,14 @@
+{
+  "app": "Grain",
+  "source_pass": "data\\pass2\\100.json",
+  "access_candidates": [
+    {
+      "value": "administrator-controlled credential mentioned",
+      "url": "https://support.grain.com/en/articles/15507288-grain-api",
+      "excerpt": "an, including Free. Workspace API access is available on Business and Enterprise plans and requires admin access to generate. Can I access recordings I did not attend? With a Personal Access Token, you can only access recordings within your own permission level. With a Workspace Access Token, you can access all recordings in the workspace. Can ",
+      "status": "provisional; check scope, negation and plan details"
+    }
+  ],
+  "reason_if_unknown": "",
+  "warning": "A phrase match is not a verified credential gate or a buildability verdict."
+}

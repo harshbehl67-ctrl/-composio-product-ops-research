@@ -1,0 +1,20 @@
+{
+  "app": "Zendesk",
+  "source_pass": "data\\pass2\\011.json",
+  "access_candidates": [
+    {
+      "value": "administrator-controlled credential mentioned",
+      "url": "https://support.zendesk.com/hc/en-us/articles/4408889192858-Managing-API-token-access-to-the-Zendesk-API",
+      "excerpt": "t logs for an API token (Enterprise) Generating API tokens To generate an API token, you must be an administrator and API token access must be turned on in your account. To generate an API token In Admin Center , click Apps and integrations in the sidebar, then select APIs > API tokens . A list of API tokens appears. Click Add API token . (Op",
+      "status": "provisional; check scope, negation and plan details"
+    },
+    {
+      "value": "administrator-controlled credential mentioned",
+      "url": "https://developer.zendesk.com/documentation/conversations/getting-started/api-authentication/",
+      "excerpt": "ry time to your credentials. Both authentication methods will require you to generate an API key in Admin Center. For instructions on how to generate an API key, see app-scoped keys and integration-scoped keys in Zendesk help. Access scopes The table below summarizes the various scopes of access supported by ",
+      "status": "provisional; check scope, negation and plan details"
+    }
+  ],
+  "reason_if_unknown": "",
+  "warning": "A phrase match is not a verified credential gate or a buildability verdict."
+}

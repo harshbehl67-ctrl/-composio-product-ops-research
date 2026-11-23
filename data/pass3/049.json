@@ -1,0 +1,14 @@
+{
+  "app": "Amazon Selling Partner",
+  "source_pass": "data\\pass2\\049.json",
+  "access_candidates": [
+    {
+      "value": "self-serve / free or trial mentioned",
+      "url": "https://developer-docs.amazon/sp-api/docs/onboarding-overview",
+      "excerpt": "icted roles: Handle general Amazon store data with standard security requirements When you create a developer account, you must request and qualify for the specific roles that align with your intended use of the SP-API. To learn which roles you need for your use case, refer to Roles in the Selling Partner API . To see which roles grant access to specific operations,",
+      "status": "provisional; check scope, negation and plan details"
+    }
+  ],
+  "reason_if_unknown": "",
+  "warning": "A phrase match is not a verified credential gate or a buildability verdict."
+}

@@ -1,0 +1,87 @@
+[
+  {
+    "file": "data/pass2/021.json",
+    "matches_redacted": 4,
+    "reason": "Credential-shaped string in publicly retrieved material; value not retained in project"
+  },
+  {
+    "file": "data/new_search/090.json",
+    "matches_redacted": 1,
+    "reason": "Credential-shaped string in publicly retrieved material; value not retained in project"
+  },
+  {
+    "file": "data/new_search/004.json",
+    "matches_redacted": 1,
+    "reason": "Credential-shaped string in publicly retrieved material; value not retained in project"
+  },
+  {
+    "file": "data/new_search/014.json",
+    "matches_redacted": 1,
+    "reason": "Credential-shaped string in publicly retrieved material; value not retained in project"
+  },
+  {
+    "file": "data/new_search/080.json",
+    "matches_redacted": 1,
+    "reason": "Credential-shaped string in publicly retrieved material; value not retained in project"
+  },
+  {
+    "file": "data/new_search/011.json",
+    "matches_redacted": 1,
+    "reason": "Bearer credential-shaped example from public documentation redacted before publishing updates"
+  },
+  {
+    "file": "data/new_search/018.json",
+    "matches_redacted": 1,
+    "reason": "Bearer credential-shaped example from public documentation redacted before publishing updates"
+  },
+  {
+    "file": "data/new_search/079.json",
+    "matches_redacted": 1,
+    "reason": "Bearer credential-shaped example from public documentation redacted before publishing updates"
+  },
+  {
+    "file": "data/new_search/085.json",
+    "matches_redacted": 1,
+    "reason": "Bearer credential-shaped example from public documentation redacted before publishing updates"
+  },
+  {
+    "file": "data/pass2/011.json",
+    "matches_redacted": 3,
+    "reason": "Bearer credential-shaped example from public documentation redacted before publishing updates"
+  },
+  {
+    "file": "data/pass2/018.json",
+    "matches_redacted": 4,
+    "reason": "Bearer credential-shaped example from public documentation redacted before publishing updates"
+  },
+  {
+    "file": "data/pass2/066.json",
+    "matches_redacted": 2,
+    "reason": "Bearer credential-shaped example from public documentation redacted before publishing updates"
+  },
+  {
+    "file": "data/pass2/078.json",
+    "matches_redacted": 1,
+    "reason": "Bearer credential-shaped example from public documentation redacted before publishing updates"
+  },
+  {
+    "file": "data/pass2/079.json",
+    "matches_redacted": 3,
+    "reason": "Bearer credential-shaped example from public documentation redacted before publishing updates"
+  },
+  {
+    "file": "data/pass2/085.json",
+    "matches_redacted": 2,
+    "reason": "Bearer credential-shaped example from public documentation redacted before publishing updates"
+  },
+  {
+    "file": "data/pass2/088.json",
+    "matches_redacted": 1,
+    "reason": "Bearer credential-shaped example from public documentation redacted before publishing updates"
+  },
+  {
+    "file": "data/review_sources/73874c42bbc1e9a0.json",
+    "matches_redacted": 2,
+    "reason": "Bearer credential-shaped example from public documentation redacted before publishing updates"
+  }
+]

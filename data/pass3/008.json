@@ -1,0 +1,14 @@
+{
+  "app": "Close",
+  "source_pass": "data\\pass2\\008.json",
+  "access_candidates": [
+    {
+      "value": "self-serve / free or trial mentioned",
+      "url": "https://help.close.com/integrations/close-mcp-server",
+      "excerpt": "d Close organization and scopes. Make sure to enable the tools in any new chats. Claude (Desktop) - Free plan In a few steps, you can access Close’s MCP server on the Claude desktop app on any plan: From the chat window, click the + button > Add Connectors (Manage Connectors > Browse Connectors if you already have existing connection",
+      "status": "provisional; check scope, negation and plan details"
+    }
+  ],
+  "reason_if_unknown": "",
+  "warning": "A phrase match is not a verified credential gate or a buildability verdict."
+}

@@ -1,0 +1,195 @@
+{
+  "app": {
+    "number": 24,
+    "name": "Lark (Larksuite)",
+    "category": "Communications and Messaging",
+    "hint": "open.larksuite.com"
+  },
+  "checked_at": "2026-11-23T14:08:32.047991+00:00",
+  "source_search": "data/new_search/024.json",
+  "candidates": [
+    {
+      "url": "https://open.larksuite.com/document/tools-and-resources/api-explorer-guide",
+      "title": "API Explorer Guide - Developer Guides - Documentation - Lark Developer (https://open.larksuite.com/document/tools-and-resources/api-explorer-guide)",
+      "snippet": "API Explorer Guide - Developer Guides - Documentation - Lark Developer (https://open.larksuite.com/document/tools-and-resources/api-explorer-guide)\n【turn37search0】 [wordlim: 200] Published: 2.8 years ago; Crawled: last week; You can enter API Explorer through the developer document by clicking \"Try it\" next to the description. ... To call the server-side API, you need to obtain an access token for the app from Lark Open Platform. ... Using API Explorer, you can obtain the authentication credentials required by the interface automatically without additionally calling the \"Get Tenant/User Access Credentials\" interface.\n\n# API Explorer Guide\n\nLast updated on 2024-02-08\n\n# API Explorer Guide\n\n# Overview\n\nAPI Explorer is a tool that can assist you in debugging, testing and using Lark Open APIs.\n\nThrough API Explorer, you can easily complete the interface call without writing codes. In addition, we provide the following functions to improve your interface debugging efficiency:\n\n  * Automatically obtain authentication credentials: Bind your application to obtain the token with one click, no additional request needed\n  * Built-in scope application: The scopes required for API are clearly stated, apply easily within the tool\n  * Sample code to help development: We provide multi-language sample codes, copy and quickly reuse it into your codes\n\n# Try it here\n\nYou can enter API Explorer through the developer document by clicking \"Try it\" next to the description. Also, you can access it through here.\n\nImage\n\n# Components\n\n## Choose your app\n\nThe first time you use API Explorer, you need to log in first. "
+    },
+    {
+      "url": "https://open.larksuite.com/document/server-docs/getting-started/terminology",
+      "title": "General parameters - Server API - Documentation - Lark Developer (https://open.larksuite.com/document/server-docs/getting-started/terminology)",
+      "snippet": "General parameters - Server API - Documentation - Lark Developer (https://open.larksuite.com/document/server-docs/getting-started/terminology)\n【turn37search1】 [wordlim: 200] Published: 3.0 years ago; Crawled: last week; You can check the `app_id` in the Credentials & Basic info page of the Developer Console.Image ... `app_ticket` is a field used by store apps to improve security.When you call the API to get `app_access_token` of the store app, you need to include `app_ticket` as one of the request parameters.After creating a store app and configuring the request address of the event, Lark Open Platform will push `app_ticket` to the app once per hour, and users can also call the API to actively trigger the push of `app_ticket`. ... For a comprehensive understanding of the Lark Open Platform's permission system, see Authentication and authorization.\n\n  * If data association between different apps is not required, `open_id` can be used.\n  * If data association between apps is needed, and the developers belong to the same organization, `union_id` can be used.\n  * If data associationbetween apps is needed, and the apps may be developed by different organizations, but the users of the apps belong to the same organization, `user_id` is the appropriate choice.\n\n## Access tokens related parameters\n\nTo enhance API call security, Lark Open Platform has implemented an access token mechanism. Before invoking an API, an app must obtain the necessary access credentials, also call `access_token`.\n\n`access_token` represents the authorization granted to an app by the platform, tenant (organization or team), or user. There are three types of access tokens:\n\n  * App access token, with the parameter name `app_access_token`.\n  * Tenant access token, with the parameter name `tenant_access_token`.\n  * User access token, with the parameter name `user_access_token`.\n\nTo learn how to get access tokens, see Get access token.\n"
+    },
+    {
+      "url": "https://open.larksuite.com/document/server-docs/getting-started/overview-of-app-scopes",
+      "title": "Apply for API permission - Server API - Documentation - Lark Developer (https://open.larksuite.com/document/server-docs/getting-started/overview-of-app-scopes)",
+      "snippet": "Apply for API permission - Server API - Documentation - Lark Developer (https://open.larksuite.com/document/server-docs/getting-started/overview-of-app-scopes)\n【turn37search2】 [wordlim: 200] Published: 3.0 years ago; Crawled: last week; When applying for API permissions in bulk, if a permission supports calling APIs using the app developer's user_access_token without review (as shown in the figure below), you can click Confirm to use the user_access_token to debug APIs without the need to publish the app. ... Instead, you can directly use the user_access_token of the app developer to debug the API. ... If you apply for permissions related to Contacts or Lark HR (Enterprise) APIs and need to call the corresponding APIs using the app identity (tenant_access_token), you also need to configure the corresponding data permissions for the app.\n"
+    },
+    {
+      "url": "https://open.larksuite.com/document/ukTMukTMukTM/uUDN04SN0QjL1QDN/docs-v1",
+      "title": "Get docs content - Server API - Documentation - Lark Developer (https://open.larksuite.com/document/ukTMukTMukTM/uUDN04SN0QjL1QDN/docs-v1)",
+      "snippet": "Get docs content - Server API - Documentation - Lark Developer (https://open.larksuite.com/document/ukTMukTMukTM/uUDN04SN0QjL1QDN/docs-v1)\n【turn37search3】 [wordlim: 200] Crawled: yesterday; HTTP URL  | https://open.larksuite.com/open-apis/docs/v1/content ... Authorization  | string  | Yes  | When calling an API, the app needs to authenticate its identity through an access token. ...     Curl --location --request GET https://open.larksuite.com/open-apis/docs/v1/content? ... [Button: Developer Guide]\n"
+    },
+    {
+      "url": "https://open.larksuite.com/document/mcp_open_tools/mcp-user-guide",
+      "title": "OpenAPI MCP overview - Lark CLI - Documentation - Lark Developer (https://open.larksuite.com/document/mcp_open_tools/mcp-user-guide)",
+      "snippet": "OpenAPI MCP overview - Lark CLI - Documentation - Lark Developer (https://open.larksuite.com/document/mcp_open_tools/mcp-user-guide)\n【turn37search4】 [wordlim: 200] Published: 1.4 years ago; Crawled: yesterday; OpenAPI MCP Tool (hereinafter referred to as \"MCP Tool\") can help you quickly integrate AI agents with Lark's open capabilities, enabling automated scenarios such as document processing, conversation management, and calendar scheduling based on agents. ... You can also determine if an API is supported within the MCP Tool through the API documentation. ... The MCP Tool follows the naming scheme of `biz.version.resource.method`, consistent with the method naming of the server-side Node SDK.\n"
+    },
+    {
+      "url": "https://open.larksuite.com/document/home/synchronize-corporate-organizational-structure-to-feishu/obtain-the-application-access-token",
+      "title": "Obtain access token - Synchronize corporate organizational structure to Lark - Documentation - Lark Developer (https://open.larksuite.com/document/home/synchronize-corporate-organizational-structure-to-feishu/obtain-the-application-access-token)",
+      "snippet": "Obtain access token - Synchronize corporate organizational structure to Lark - Documentation - Lark Developer (https://open.larksuite.com/document/home/synchronize-corporate-organizational-structure-to-feishu/obtain-the-application-access-token)\n【turn37search7】 [wordlim: 200] Published: 3.5 years ago; Crawled: 2 weeks ago; Before calling the Lark open platform interface, you need to obtain the access token (access_token) of the corresponding application. ... Log in to Developer Console, and click the app name to enter the app details page. ... In the API list, select Authentication Management > Access Credentials > Self-built Application Get tenant_access_token.\n"
+    },
+    {
+      "url": "https://open.larksuite.com/document/uAjLw4CM/ukTMukTMukTM/mcp_integration/mcp_installation",
+      "title": "Install and use OpenAPI MCP locally - Lark CLI - Documentation - Lark Developer (https://open.larksuite.com/document/uAjLw4CM/ukTMukTMukTM/mcp_integration/mcp_installation)",
+      "snippet": "Install and use OpenAPI MCP locally - Lark CLI - Documentation - Lark Developer (https://open.larksuite.com/document/uAjLw4CM/ukTMukTMukTM/mcp_integration/mcp_installation)\n【turn37search8】 [wordlim: 200] Published: 1.3 years ago; Crawled: last week; It is recommended to use the latest version provided by the Node.js official website. ... Some AI tools support one-click installation via URL, for example: Image: Install MCP Server ...     npx -y @larksuiteoapi/lark-mcp login -a <your_app_id> -s <your_app_secret> -d https://open.larksuite.com/ ... If the agent returns a URL to enable permissions for the app, you can directly visit that URL to go to the app details page and enable the missing permissions; or you can follow the API documentation (e.g., Create Bitable) to enable the required API permissions for the app.\n"
+    },
+    {
+      "url": "https://open.larksuite.com/document/mcp_open_tools",
+      "title": "Overview of Lark Agent Integration Capabilities - Lark CLI - Documentation - Lark Developer (https://open.larksuite.com/document/mcp_open_tools)",
+      "snippet": "Overview of Lark Agent Integration Capabilities - Lark CLI - Documentation - Lark Developer (https://open.larksuite.com/document/mcp_open_tools)\n【turn37search15】 [wordlim: 200] Published: 6 months ago; Crawled: yesterday; Credential Layer  | Quickly obtain app credentials (`App ID`, `App Secret`) and automatically configure initial permissions and event subscriptions. ... Goal: Obtain usable Lark credentials instantly  | Web QR Code SDK ... Install via `npx @larksuite/cli@latest install`  | Lark CLI\n"
+    },
+    {
+      "url": "https://open.larksuite.com/document/mcp_open_tools/call-feishu-mcp-server-in-remote-mode",
+      "title": "Call Lark MCP server in remote mode (Deprecated) - Lark CLI - Documentation - Lark Developer (https://open.larksuite.com/document/mcp_open_tools/call-feishu-mcp-server-in-remote-mode)",
+      "snippet": "Call Lark MCP server in remote mode (Deprecated) - Lark CLI - Documentation - Lark Developer (https://open.larksuite.com/document/mcp_open_tools/call-feishu-mcp-server-in-remote-mode)\n【turn37search17】 [wordlim: 200] Crawled: 4 days ago; Lark Open Platform provides a remote MCP Server configuration feature that supports the Streamable HTTP transmission protocol, allowing users to securely and efficiently integrate and use rich Lark open capabilities in cloud scenarios with AI agents such as Cursor, Trae, Claude, and n8n via one-click integration. ... Create a remote MCP service on the Lark MCP Configuration Platform and customize tools (i.e., Lark Open Platform server-side APIs) to flexibly build the MCP tools your business needs.\n"
+    },
+    {
+      "url": "https://open.larksuite.com/document/uAjLw4CM/ukTMukTMukTM/api-call-guide/api-billing",
+      "title": "Adjusting API call limits for custom apps - Server API - Documentation - Lark Developer (https://open.larksuite.com/document/uAjLw4CM/ukTMukTMukTM/api-call-guide/api-billing)",
+      "snippet": "Adjusting API call limits for custom apps - Server API - Documentation - Lark Developer (https://open.larksuite.com/document/uAjLw4CM/ukTMukTMukTM/api-call-guide/api-billing)\n【turn37search20】 [wordlim: 200] Published: 1.7 years ago; Crawled: yesterday; API Name  | Price unit  | Quota consumption ... For custom apps on the standard version of Lark, once the monthly Basic API call limit is exceeded, further Basic API calls will fail and return error code `99991403`. ... Additionally, on the 1st of each calendar month, the developer assistant will send a consumption report of the advanced API measurement package to the developers of custom apps.\n"
+    },
+    {
+      "url": "https://open.larksuite.com/document/server-docs/event-subscription/event-security-verification",
+      "title": "Apply for scopes - Documentation - Lark Developer (https://open.larksuite.com/document/server-docs/event-subscription/event-security-verification)",
+      "snippet": "Apply for scopes - Documentation - Lark Developer (https://open.larksuite.com/document/server-docs/event-subscription/event-security-verification)\n【turn37search26】 [wordlim: 200] Published: 1.4 years ago; Crawled: last week; For more details, see Apply for API permission. ... Log in to the Developer Console. ...   * If you are applying for auto approved scopes for a custom app, the application will take effect immediately without waiting for administrator approval.\n"
+    },
+    {
+      "url": "https://open.larksuite.com/document/server-docs/approval-v4/development-guide/third-party-approval-integration/tripartite-approval-and-access-preparation",
+      "title": "Preparation for third-party approval integration - Server API - Documentation - Lark Developer (https://open.larksuite.com/document/server-docs/approval-v4/development-guide/third-party-approval-integration/tripartite-approval-and-access-preparation)",
+      "snippet": "Preparation for third-party approval integration - Server API - Documentation - Lark Developer (https://open.larksuite.com/document/server-docs/approval-v4/development-guide/third-party-approval-integration/tripartite-approval-and-access-preparation)\n【turn37search27】 [wordlim: 200] Published: 3.4 years ago; Crawled: 2 weeks ago; The [Access Approval] permission scope needs to be enabled for the Approval Center API, and the new permission scope will only take effect after a new app version is released. ... The user_id in the open platform API of the Approval Center is the user_id in Lark Open Platform.\n"
+    },
+    {
+      "url": "https://open.larksuite.com/document/home/introduction-to-scope-and-authorization/permission",
+      "title": "Permission scope: What can I do? - Documentation - Lark Developer (https://open.larksuite.com/document/home/introduction-to-scope-and-authorization/permission)",
+      "snippet": "Permission scope: What can I do? - Documentation - Lark Developer (https://open.larksuite.com/document/home/introduction-to-scope-and-authorization/permission)\n【turn37search28】 [wordlim: 200] Published: 3.5 years ago; Crawled: 2 days ago; As shown in the following figure, the `userid` field is returned in the response body only when the \"access user's `userid`\" permission scope is available. ... In the Developer Console, we can view the list of permission scopes the app has been granted, and we can also apply for new permission scopes. ... In the event of failure to call the API, the developers can refer to the returned error code to determine if it is an error related to permission scope and check whether the permission scope for the API is available. ...   * Store app developed by ISV: Permission scopes request shall be subject to two reviews in the App launch process and Tenant app installation process on the Lark Open Platform.\n"
+    }
+  ],
+  "selected": [
+    {
+      "url": "https://open.larksuite.com/document/home/synchronize-corporate-organizational-structure-to-feishu/obtain-the-application-access-token",
+      "title": "Obtain access token - Synchronize corporate organizational structure to Lark - Documentation - Lark Developer (https://open.larksuite.com/document/home/synchronize-corporate-organizational-structure-to-feishu/obtain-the-application-access-token)",
+      "snippet": "Obtain access token - Synchronize corporate organizational structure to Lark - Documentation - Lark Developer (https://open.larksuite.com/document/home/synchronize-corporate-organizational-structure-to-feishu/obtain-the-application-access-token)\n【turn37search7】 [wordlim: 200] Published: 3.5 years ago; Crawled: 2 weeks ago; Before calling the Lark open platform interface, you need to obtain the access token (access_token) of the corresponding application. ... Log in to Developer Console, and click the app name to enter the app details page. ... In the API list, select Authentication Management > Access Credentials > Self-built Application Get tenant_access_token.\n"
+    },
+    {
+      "url": "https://open.larksuite.com/document/tools-and-resources/api-explorer-guide",
+      "title": "API Explorer Guide - Developer Guides - Documentation - Lark Developer (https://open.larksuite.com/document/tools-and-resources/api-explorer-guide)",
+      "snippet": "API Explorer Guide - Developer Guides - Documentation - Lark Developer (https://open.larksuite.com/document/tools-and-resources/api-explorer-guide)\n【turn37search0】 [wordlim: 200] Published: 2.8 years ago; Crawled: last week; You can enter API Explorer through the developer document by clicking \"Try it\" next to the description. ... To call the server-side API, you need to obtain an access token for the app from Lark Open Platform. ... Using API Explorer, you can obtain the authentication credentials required by the interface automatically without additionally calling the \"Get Tenant/User Access Credentials\" interface.\n\n# API Explorer Guide\n\nLast updated on 2024-02-08\n\n# API Explorer Guide\n\n# Overview\n\nAPI Explorer is a tool that can assist you in debugging, testing and using Lark Open APIs.\n\nThrough API Explorer, you can easily complete the interface call without writing codes. In addition, we provide the following functions to improve your interface debugging efficiency:\n\n  * Automatically obtain authentication credentials: Bind your application to obtain the token with one click, no additional request needed\n  * Built-in scope application: The scopes required for API are clearly stated, apply easily within the tool\n  * Sample code to help development: We provide multi-language sample codes, copy and quickly reuse it into your codes\n\n# Try it here\n\nYou can enter API Explorer through the developer document by clicking \"Try it\" next to the description. Also, you can access it through here.\n\nImage\n\n# Components\n\n## Choose your app\n\nThe first time you use API Explorer, you need to log in first. "
+    },
+    {
+      "url": "https://open.larksuite.com/document/mcp_open_tools/mcp-user-guide",
+      "title": "OpenAPI MCP overview - Lark CLI - Documentation - Lark Developer (https://open.larksuite.com/document/mcp_open_tools/mcp-user-guide)",
+      "snippet": "OpenAPI MCP overview - Lark CLI - Documentation - Lark Developer (https://open.larksuite.com/document/mcp_open_tools/mcp-user-guide)\n【turn37search4】 [wordlim: 200] Published: 1.4 years ago; Crawled: yesterday; OpenAPI MCP Tool (hereinafter referred to as \"MCP Tool\") can help you quickly integrate AI agents with Lark's open capabilities, enabling automated scenarios such as document processing, conversation management, and calendar scheduling based on agents. ... You can also determine if an API is supported within the MCP Tool through the API documentation. ... The MCP Tool follows the naming scheme of `biz.version.resource.method`, consistent with the method naming of the server-side Node SDK.\n"
+    },
+    {
+      "url": "https://open.larksuite.com/document/server-docs/approval-v4/development-guide/third-party-approval-integration/tripartite-approval-and-access-preparation",
+      "title": "Preparation for third-party approval integration - Server API - Documentation - Lark Developer (https://open.larksuite.com/document/server-docs/approval-v4/development-guide/third-party-approval-integration/tripartite-approval-and-access-preparation)",
+      "snippet": "Preparation for third-party approval integration - Server API - Documentation - Lark Developer (https://open.larksuite.com/document/server-docs/approval-v4/development-guide/third-party-approval-integration/tripartite-approval-and-access-preparation)\n【turn37search27】 [wordlim: 200] Published: 3.4 years ago; Crawled: 2 weeks ago; The [Access Approval] permission scope needs to be enabled for the Approval Center API, and the new permission scope will only take effect after a new app version is released. ... The user_id in the open platform API of the Approval Center is the user_id in Lark Open Platform.\n"
+    },
+    {
+      "url": "https://open.larksuite.com/document/server-docs/getting-started/terminology",
+      "title": "General parameters - Server API - Documentation - Lark Developer (https://open.larksuite.com/document/server-docs/getting-started/terminology)",
+      "snippet": "General parameters - Server API - Documentation - Lark Developer (https://open.larksuite.com/document/server-docs/getting-started/terminology)\n【turn37search1】 [wordlim: 200] Published: 3.0 years ago; Crawled: last week; You can check the `app_id` in the Credentials & Basic info page of the Developer Console.Image ... `app_ticket` is a field used by store apps to improve security.When you call the API to get `app_access_token` of the store app, you need to include `app_ticket` as one of the request parameters.After creating a store app and configuring the request address of the event, Lark Open Platform will push `app_ticket` to the app once per hour, and users can also call the API to actively trigger the push of `app_ticket`. ... For a comprehensive understanding of the Lark Open Platform's permission system, see Authentication and authorization.\n\n  * If data association between different apps is not required, `open_id` can be used.\n  * If data association between apps is needed, and the developers belong to the same organization, `union_id` can be used.\n  * If data associationbetween apps is needed, and the apps may be developed by different organizations, but the users of the apps belong to the same organization, `user_id` is the appropriate choice.\n\n## Access tokens related parameters\n\nTo enhance API call security, Lark Open Platform has implemented an access token mechanism. Before invoking an API, an app must obtain the necessary access credentials, also call `access_token`.\n\n`access_token` represents the authorization granted to an app by the platform, tenant (organization or team), or user. There are three types of access tokens:\n\n  * App access token, with the parameter name `app_access_token`.\n  * Tenant access token, with the parameter name `tenant_access_token`.\n  * User access token, with the parameter name `user_access_token`.\n\nTo learn how to get access tokens, see Get access token.\n"
+    },
+    {
+      "url": "https://open.larksuite.com/document/server-docs/getting-started/overview-of-app-scopes",
+      "title": "Apply for API permission - Server API - Documentation - Lark Developer (https://open.larksuite.com/document/server-docs/getting-started/overview-of-app-scopes)",
+      "snippet": "Apply for API permission - Server API - Documentation - Lark Developer (https://open.larksuite.com/document/server-docs/getting-started/overview-of-app-scopes)\n【turn37search2】 [wordlim: 200] Published: 3.0 years ago; Crawled: last week; When applying for API permissions in bulk, if a permission supports calling APIs using the app developer's user_access_token without review (as shown in the figure below), you can click Confirm to use the user_access_token to debug APIs without the need to publish the app. ... Instead, you can directly use the user_access_token of the app developer to debug the API. ... If you apply for permissions related to Contacts or Lark HR (Enterprise) APIs and need to call the corresponding APIs using the app identity (tenant_access_token), you also need to configure the corresponding data permissions for the app.\n"
+    }
+  ],
+  "pages": [
+    {
+      "url": "https://open.larksuite.com/document/home/synchronize-corporate-organizational-structure-to-feishu/obtain-the-application-access-token",
+      "requested_url": "https://open.larksuite.com/document/home/synchronize-corporate-organizational-structure-to-feishu/obtain-the-application-access-token",
+      "status": 200,
+      "title": "Obtain access token - Synchronize corporate organizational structure to Lark - Documentation - Lark Developer (https://open.larksuite.com/document/home/synchronize-corporate-organizational-structure-to-feishu/obtain-the-application-access-token)",
+      "text": "开发文档 - Lark开放平台"
+    },
+    {
+      "url": "https://open.larksuite.com/document/tools-and-resources/api-explorer-guide",
+      "requested_url": "https://open.larksuite.com/document/tools-and-resources/api-explorer-guide",
+      "status": 200,
+      "title": "API Explorer Guide - Developer Guides - Documentation - Lark Developer (https://open.larksuite.com/document/tools-and-resources/api-explorer-guide)",
+      "text": "开发文档 - Lark开放平台"
+    },
+    {
+      "url": "https://open.larksuite.com/document/mcp_open_tools/mcp-user-guide",
+      "requested_url": "https://open.larksuite.com/document/mcp_open_tools/mcp-user-guide",
+      "status": 200,
+      "title": "OpenAPI MCP overview - Lark CLI - Documentation - Lark Developer (https://open.larksuite.com/document/mcp_open_tools/mcp-user-guide)",
+      "text": "开发文档 - Lark开放平台"
+    },
+    {
+      "url": "https://open.larksuite.com/document/server-docs/approval-v4/development-guide/third-party-approval-integration/tripartite-approval-and-access-preparation",
+      "requested_url": "https://open.larksuite.com/document/server-docs/approval-v4/development-guide/third-party-approval-integration/tripartite-approval-and-access-preparation",
+      "status": 200,
+      "title": "Preparation for third-party approval integration - Server API - Documentation - Lark Developer (https://open.larksuite.com/document/server-docs/approval-v4/development-guide/third-party-approval-integration/tripartite-approval-and-access-preparation)",
+      "text": "开发文档 - Lark开放平台"
+    },
+    {
+      "url": "https://open.larksuite.com/document/server-docs/getting-started/terminology",
+      "requested_url": "https://open.larksuite.com/document/server-docs/getting-started/terminology",
+      "status": 200,
+      "title": "General parameters - Server API - Documentation - Lark Developer (https://open.larksuite.com/document/server-docs/getting-started/terminology)",
+      "text": "开发文档 - Lark开放平台"
+    },
+    {
+      "url": "https://open.larksuite.com/document/server-docs/getting-started/overview-of-app-scopes",
+      "requested_url": "https://open.larksuite.com/document/server-docs/getting-started/overview-of-app-scopes",
+      "status": 200,
+      "title": "Apply for API permission - Server API - Documentation - Lark Developer (https://open.larksuite.com/document/server-docs/getting-started/overview-of-app-scopes)",
+      "text": "开发文档 - Lark开放平台"
+    }
+  ],
+  "claims": {
+    "auth": {
+      "value": "unknown",
+      "sources": [],
+      "evidence": [],
+      "reason": "Targeted search found no usable, claim-specific official documentation"
+    },
+    "credential_gate": {
+      "value": "unknown",
+      "sources": [],
+      "evidence": [],
+      "reason": "No reliable automated access-tier extraction; targeted search results require claim-specific review"
+    },
+    "api_surface": {
+      "value": "unknown",
+      "sources": [],
+      "evidence": [],
+      "reason": "Targeted search found no usable, claim-specific official documentation"
+    },
+    "official_mcp": {
+      "value": "unknown",
+      "sources": [],
+      "evidence": [],
+      "reason": "Targeted search found no usable, claim-specific official documentation"
+    },
+    "composio_toolkit": {
+      "value": "unknown",
+      "sources": [],
+      "evidence": [],
+      "reason": "No exact or reviewed alias match in saved catalog; absence not established"
+    },
+    "verdict": {
+      "value": "unknown",
+      "sources": [],
+      "evidence": [],
+      "reason": "Insufficient independently verified authentication, API and access evidence for a build decision"
+    }
+  },
+  "validation": [
+    "Automatic extraction is provisional and must be checked independently",
+    "Unknown does not mean the capability is absent"
+  ]
+}

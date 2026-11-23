@@ -1,0 +1,14 @@
+{
+  "app": "ClickUp",
+  "source_pass": "data\\pass2\\077.json",
+  "access_candidates": [
+    {
+      "value": "self-serve / free or trial mentioned",
+      "url": "https://developer.clickup.com/docs/connect-an-ai-assistant-to-clickups-mcp-server-1",
+      "excerpt": "e following: Name: ClickUp Remote MCP Server URL: https://mcp.clickup.com/mcp Free If you're on the Free plan of Claude, you'll set up the MCP server from the Claude desktop app: Go to your Claude desktop settings page. Click on Developer section. Click on edit config then open the claude_desktop_config.json with your editor of choice. Add the following and restart the Claude desktop a",
+      "status": "provisional; check scope, negation and plan details"
+    }
+  ],
+  "reason_if_unknown": "",
+  "warning": "A phrase match is not a verified credential gate or a buildability verdict."
+}

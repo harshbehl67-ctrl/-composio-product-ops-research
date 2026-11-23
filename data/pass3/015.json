@@ -1,0 +1,14 @@
+{
+  "app": "Pylon",
+  "source_pass": "data\\pass2\\015.json",
+  "access_candidates": [
+    {
+      "value": "administrator-controlled credential mentioned",
+      "url": "https://support.usepylon.com/articles/4735104435-how-do-i-create-an-api-token",
+      "excerpt": "o manage API tokens, then open Settings → API Tokens . If you do not see that page, ask a workspace admin to create the token or update your access. Open Settings → API Tokens . Select Create . Enter a token name, then finish creation. Copy the token immediately and store it in a secure location. Pylon only shows the full token value once. Use the token to authenticate Pylon API requests with a Be",
+      "status": "provisional; check scope, negation and plan details"
+    }
+  ],
+  "reason_if_unknown": "",
+  "warning": "A phrase match is not a verified credential gate or a buildability verdict."
+}

@@ -1,0 +1,123 @@
+{
+  "app": {
+    "number": 14,
+    "name": "Front",
+    "category": "Support and Helpdesk",
+    "hint": "front.com"
+  },
+  "checked_at": "2026-11-23T14:08:19.174142+00:00",
+  "source_search": "data/new_search/014.json",
+  "candidates": [
+    {
+      "url": "https://community.front.com/announcements-63/meet-the-admin-mcp-server-a-faster-way-to-configure-front-with-ai-4148",
+      "title": "Meet the Admin MCP server, a faster way to configure Front with AI | Community (https://community.front.com/announcements-63/meet-the-admin-mcp-server-a-faster-way-to-configure-front-with-ai-4148)",
+      "snippet": "Meet the Admin MCP server, a faster way to configure Front with AI | Community (https://community.front.com/announcements-63/meet-the-admin-mcp-server-a-faster-way-to-configure-front-with-ai-4148)\n【turn29search5】 [wordlim: 200] Published: last week; Crawled: last week; # Meet the Admin MCP server, a faster way to configure Front with AI ... Today we’re opening the beta for the Admin MCP server.\n"
+    },
+    {
+      "url": "https://community.front.com/beta-mcp-server-83/welcome-to-the-front-mcp-server-beta-3814",
+      "title": "Welcome to the Front MCP server beta 👋 | Community (https://community.front.com/beta-mcp-server-83/welcome-to-the-front-mcp-server-beta-3814)",
+      "snippet": "Welcome to the Front MCP server beta 👋 | Community (https://community.front.com/beta-mcp-server-83/welcome-to-the-front-mcp-server-beta-3814)\n【turn29search11】 [wordlim: 200] Published: 6 months ago; Crawled: 2 months ago; # Welcome to the Front MCP server beta 👋\n"
+    },
+    {
+      "url": "https://community.front.com/api-news-updates-40/create-and-manage-apps-directly-in-front-99",
+      "title": "Create and manage apps directly in Front | Community (https://community.front.com/api-news-updates-40/create-and-manage-apps-directly-in-front-99)",
+      "snippet": "Create and manage apps directly in Front | Community (https://community.front.com/api-news-updates-40/create-and-manage-apps-directly-in-front-99)\n【turn29search26】 [wordlim: 200] Published: 4.0 years ago; Crawled: 2 months ago; Javier - Developer Relations ... ## Obtain OAuth or API token credentials without requiring assistance from Front Support\n"
+    }
+  ],
+  "selected": [
+    {
+      "url": "https://community.front.com/api-news-updates-40/create-and-manage-apps-directly-in-front-99",
+      "title": "Create and manage apps directly in Front | Community (https://community.front.com/api-news-updates-40/create-and-manage-apps-directly-in-front-99)",
+      "snippet": "Create and manage apps directly in Front | Community (https://community.front.com/api-news-updates-40/create-and-manage-apps-directly-in-front-99)\n【turn29search26】 [wordlim: 200] Published: 4.0 years ago; Crawled: 2 months ago; Javier - Developer Relations ... ## Obtain OAuth or API token credentials without requiring assistance from Front Support\n"
+    },
+    {
+      "url": "https://community.front.com/announcements-63/meet-the-admin-mcp-server-a-faster-way-to-configure-front-with-ai-4148",
+      "title": "Meet the Admin MCP server, a faster way to configure Front with AI | Community (https://community.front.com/announcements-63/meet-the-admin-mcp-server-a-faster-way-to-configure-front-with-ai-4148)",
+      "snippet": "Meet the Admin MCP server, a faster way to configure Front with AI | Community (https://community.front.com/announcements-63/meet-the-admin-mcp-server-a-faster-way-to-configure-front-with-ai-4148)\n【turn29search5】 [wordlim: 200] Published: last week; Crawled: last week; # Meet the Admin MCP server, a faster way to configure Front with AI ... Today we’re opening the beta for the Admin MCP server.\n"
+    },
+    {
+      "url": "https://community.front.com/beta-mcp-server-83/welcome-to-the-front-mcp-server-beta-3814",
+      "title": "Welcome to the Front MCP server beta 👋 | Community (https://community.front.com/beta-mcp-server-83/welcome-to-the-front-mcp-server-beta-3814)",
+      "snippet": "Welcome to the Front MCP server beta 👋 | Community (https://community.front.com/beta-mcp-server-83/welcome-to-the-front-mcp-server-beta-3814)\n【turn29search11】 [wordlim: 200] Published: 6 months ago; Crawled: 2 months ago; # Welcome to the Front MCP server beta 👋\n"
+    }
+  ],
+  "pages": [
+    {
+      "url": "https://community.front.com/api-news-updates-40/create-and-manage-apps-directly-in-front-99",
+      "requested_url": "https://community.front.com/api-news-updates-40/create-and-manage-apps-directly-in-front-99",
+      "status": 200,
+      "title": "Create and manage apps directly in Front | Community (https://community.front.com/api-news-updates-40/create-and-manage-apps-directly-in-front-99)",
+      "text": "Create and manage apps directly in Front | Community Skip to main content New post Login Home Discussions Developers API news & updates Create and manage apps directly in Front Javier - Developer Relations Community Manager 3 years ago Dec 12, 2022 11:27 PM UTC You can now create and manage apps directly in Front with the new Developers page! The Developers page is available in your company settings (you must be an admin to view). View and manage all your apps in one place Whether you're creating a Core API integration, a plugin, or a new channel type, the Developers page will be your one-stop shop for managing all the integrations you are developing or have published in the past. Read the full details in the Create, manage, and publish apps topic. Obtain OAuth or API token credentials without requiring assistance from Front Support You no longer have to contact Front Support to obtain OAuth credentials for your apps. You can now obtain your client ID, secret, and specify redirect URLs directly in Front for new apps. Note that existing OAuth credentials will continue to work, but will not appear in the app list. The new Developers page also lets you manage API tokens , which used to live under the Plugins & API section of the settings (removed by this update). Any existing API tokens have been migrated to the new page. Plugin integrations have been migrated to the new app experience All the plugins you have developed have been migrated to the new app experience. You should see them under the list of apps on your Developers page. The Plugins & API page has been removed by this update. In the new app experience, you create an app and then add plugins as a feature of that app. To learn how to add new plugin features to your apps, refer to the Create, manage, and publish apps topic. Channel integrations will be migrated soon Within the next few months, we will add the ability to add channel types to apps. For now, continue developing channel integrations using the existing process, which requires you to contact our team to request a new channel type. Plugins apps OAuth developer settings Like Reply Follow Share Powered by Gainsight Terms & Conditions Cookie settings Accessibility statement Sign up Already have an account? Login Use your Front credentials Log in with Front or Username * E-mail address * Company * Job Title * User Type (select all that apply) * Front admin Front end user Developer Partner Other Team Sales Customer Success Operations Support Marketing IT HR Finance Product Other First Name * Last Name (Private) Only you and moderators can see this information * Why are you joining the community? Password * I certify that I am not a bug bounty hunter, and that I have reviewed and accept the Front Community Terms and Conditions and the Front Privacy Notice . I will not engage in any sort of penetration testing. I understand that creating a community account as a bug bounty hunter forfeits my right to receive bounties, and opens me to legal, financial, and criminal prosecution. loginBox.register.email_repeat Register Login to the community No account yet? Create an account Use your Front credentials Log in with Front or Username or Email Password Remember me Log in Forgot password? Enter your E-mail address. We'll send you an e-mail with instructions to reset your password. Enter your e-mail address Send Back to overview"
+    },
+    {
+      "url": "https://community.front.com/announcements-63/meet-the-admin-mcp-server-a-faster-way-to-configure-front-with-ai-4148",
+      "requested_url": "https://community.front.com/announcements-63/meet-the-admin-mcp-server-a-faster-way-to-configure-front-with-ai-4148",
+      "status": 200,
+      "title": "Meet the Admin MCP server, a faster way to configure Front with AI | Community (https://community.front.com/announcements-63/meet-the-admin-mcp-server-a-faster-way-to-configure-front-with-ai-4148)",
+      "text": "Meet the Admin MCP server, a faster way to configure Front with AI | Community Skip to main content New post Login Home Discussions Get help Announcements Meet the Admin MCP server, a faster way to configure Front with AI fred_bidot Fronteer 10 days ago Nov 12, 2026 4:00 PM UTC Hi everyone, Today we’re opening the beta for the Admin MCP server. Front admins can now set up and manage Front by chatting with an AI assistant like Claude or ChatGPT. Instead of working through settings page by page or creating workflows manually, you describe what you need and your assistant handles the setup. Here are a few ways admins are already using it: Setting up an AI agent: Your assistant learns from an inbox's past conversations, then creates the AI agent, its instructions, tone, and playbooks, and the rule that assigns conversations to it. Testing before going live: Build simulations from real conversations, write the criteria they're scored on, run them, and see what failed and why. Improving AI agents over time: Find where replies went wrong, fix the playbook, instructions, tone, or article behind them, then run the simulations again to confirm the fix worked. Cleaning up your rules: Audit every rule for duplicates and conflicts, then merge them into fewer rules, and turn off the ones they replace. Handling configuration chores: Create or update tags, message templates, views, and shifts, or make the same change across dozens of rules, in one conversation. Your assistant can only do what your admin permissions allow, and every change shows up in your audit log. Get started below: Help Center article : an overview of the Admin MCP server and how to connect it to your AI assistant Developer Portal docs : technical setup details and the full list of available tools MCP server community space : share your workflows, ask questions, and tell us which tools you’d like to see next MCP mcp server admin mcp Like Reply Follow Share Powered by Gainsight Terms & Conditions Cookie settings Accessibility statement Sign up Already have an account? Login Use your Front credentials Log in with Front or Username * E-mail address * Company * Job Title * User Type (select all that apply) * Front admin Front end user Developer Partner Other Team Sales Customer Success Operations Support Marketing IT HR Finance Product Other First Name * Last Name (Private) Only you and moderators can see this information * Why are you joining the community? Password * I certify that I am not a bug bounty hunter, and that I have reviewed and accept the Front Community Terms and Conditions and the Front Privacy Notice . I will not engage in any sort of penetration testing. I understand that creating a community account as a bug bounty hunter forfeits my right to receive bounties, and opens me to legal, financial, and criminal prosecution. loginBox.register.email_repeat Register Login to the community No account yet? Create an account Use your Front credentials Log in with Front or Username or Email Password Remember me Log in Forgot password? Enter your E-mail address. We'll send you an e-mail with instructions to reset your password. Enter your e-mail address Send Back to overview"
+    },
+    {
+      "url": "https://community.front.com/closed-beta-mcp-server-83/welcome-to-the-front-mcp-server-beta-3814",
+      "requested_url": "https://community.front.com/beta-mcp-server-83/welcome-to-the-front-mcp-server-beta-3814",
+      "status": 403,
+      "title": "Welcome to the Front MCP server beta 👋 | Community (https://community.front.com/beta-mcp-server-83/welcome-to-the-front-mcp-server-beta-3814)",
+      "text": "Access Denied | Community Skip to main content New post Login Home You don't have access to this page Access forbidden Sorry, but this page requires special permissions to view. Please make sure that you are logged in and that you have been granted access. If you believe you are receiving this message in error, contact community@front.com to request access. Powered by Gainsight Terms & Conditions Cookie settings Accessibility statement Sign up Already have an account? Login Use your Front credentials Log in with Front or Username * E-mail address * Company * Job Title * User Type (select all that apply) * Front admin Front end user Developer Partner Other Team Sales Customer Success Operations Support Marketing IT HR Finance Product Other First Name * Last Name (Private) Only you and moderators can see this information * Why are you joining the community? Password * I certify that I am not a bug bounty hunter, and that I have reviewed and accept the Front Community Terms and Conditions and the Front Privacy Notice . I will not engage in any sort of penetration testing. I understand that creating a community account as a bug bounty hunter forfeits my right to receive bounties, and opens me to legal, financial, and criminal prosecution. loginBox.register.email_repeat Register Login to the community No account yet? Create an account Use your Front credentials Log in with Front or Username or Email Password Remember me Log in Forgot password? Enter your E-mail address. We'll send you an e-mail with instructions to reset your password. Enter your e-mail address Send Back to overview"
+    }
+  ],
+  "claims": {
+    "auth": {
+      "value": "unknown",
+      "sources": [],
+      "evidence": [],
+      "reason": "Targeted search found no usable, claim-specific official documentation"
+    },
+    "credential_gate": {
+      "value": "unknown",
+      "sources": [],
+      "evidence": [],
+      "reason": "No reliable automated access-tier extraction; targeted search results require claim-specific review"
+    },
+    "api_surface": {
+      "value": "unknown",
+      "sources": [],
+      "evidence": [],
+      "reason": "Targeted search found no usable, claim-specific official documentation"
+    },
+    "official_mcp": {
+      "value": "yes",
+      "sources": [
+        "https://community.front.com/announcements-63/meet-the-admin-mcp-server-a-faster-way-to-configure-front-with-ai-4148"
+      ],
+      "evidence": [
+        {
+          "url": "https://community.front.com/announcements-63/meet-the-admin-mcp-server-a-faster-way-to-configure-front-with-ai-4148",
+          "excerpt": "Meet the Admin MCP server, a faster way to configure Front with AI | Community Skip to main content New post Login Home Discussions Get help Announcements Meet the Admin MCP server, a faster way to configure Front with AI fred_bidot Fronteer 10 days ago Nov 12, 2026 4:00 PM UTC"
+        }
+      ],
+      "reason": ""
+    },
+    "composio_toolkit": {
+      "value": "listed",
+      "sources": [
+        "https://docs.composio.dev/toolkits/front"
+      ],
+      "evidence": [
+        {
+          "url": "https://docs.composio.dev/toolkits/front",
+          "excerpt": "Composio catalog match; verify product scope"
+        }
+      ],
+      "reason": ""
+    },
+    "verdict": {
+      "value": "unknown",
+      "sources": [],
+      "evidence": [],
+      "reason": "Insufficient independently verified authentication, API and access evidence for a build decision"
+    }
+  },
+  "validation": [
+    "Automatic extraction is provisional and must be checked independently",
+    "Unknown does not mean the capability is absent"
+  ]
+}

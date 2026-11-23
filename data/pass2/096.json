@@ -1,0 +1,92 @@
+{
+  "app": {
+    "number": 96,
+    "name": "Devin",
+    "category": "AI, Research and Media-native",
+    "hint": "docs.devin.ai (MCP)"
+  },
+  "checked_at": "2026-11-23T14:09:27.804126+00:00",
+  "source_search": "data/new_search/096.json",
+  "candidates": [
+    {
+      "url": "https://docs.devin.ai/es/api-reference/authentication",
+      "title": "Autenticación - Devin Docs (https://docs.devin.ai/es/api-reference/authentication)",
+      "snippet": "Autenticación - Devin Docs (https://docs.devin.ai/es/api-reference/authentication)\n【turn113search19】 [wordlim: 200] Crawled: 6 months ago; > Fetch the complete documentation index at: https://docs.devin.ai/llms.txt ...     `curl -X GET \"https://api.devin.ai/v3/organizations/$DEVIN_ORG_ID/sessions\" \\ ...       -d '{\"prompt\": \"Create a simple Python script\"}'\n"
+    }
+  ],
+  "selected": [
+    {
+      "url": "https://docs.devin.ai/es/api-reference/authentication",
+      "title": "Autenticación - Devin Docs (https://docs.devin.ai/es/api-reference/authentication)",
+      "snippet": "Autenticación - Devin Docs (https://docs.devin.ai/es/api-reference/authentication)\n【turn113search19】 [wordlim: 200] Crawled: 6 months ago; > Fetch the complete documentation index at: https://docs.devin.ai/llms.txt ...     `curl -X GET \"https://api.devin.ai/v3/organizations/$DEVIN_ORG_ID/sessions\" \\ ...       -d '{\"prompt\": \"Create a simple Python script\"}'\n"
+    }
+  ],
+  "pages": [
+    {
+      "url": "https://docs.devin.ai/es/api-reference/authentication",
+      "requested_url": "https://docs.devin.ai/es/api-reference/authentication",
+      "status": 200,
+      "title": "Autenticación - Devin Docs (https://docs.devin.ai/es/api-reference/authentication)",
+      "text": "Autenticación - Devin Docs Documentation Index Fetch the complete documentation index at: /llms.txt Use this file to discover all available pages before exploring further. Saltar al contenido principal Asistente Las respuestas son generadas por IA y pueden contener errores. La API de Devin usa un modelo de principal + token . Un principal es quien eres (tu identidad), y un token es la forma de demostrarlo (tu credencial). Comprender esta distinción es clave para elegir el método de autenticación adecuado para tu caso de uso. Principales y tokens Principal Token Descripción Usuario de servicio (no humano) Clave de API de usuario de servicio Para integraciones automatizadas y pipelines de CI/CD Usuario (humano) Token de acceso personal (PAT) Para acceso programático humano con tu propia identidad Todas las credenciales de API usan el formato de prefijo cog_ . Incluye tu token en el encabezado Authorization de cada solicitud: curl -X GET \"https://api.devin.ai/v3/organizations/ $DEVIN_ORG_ID /sessions\" \\ -H \"Authorization: Bearer cog_your_token_here\" La distinción clave es como qué principal autentica el token : Una clave de API de usuario de servicio autentica como el usuario de servicio — se aplican la identidad, los permisos y la pertenencia a orgs del usuario de servicio. Un token de acceso personal autentica como el usuario humano que lo creó — se aplican la identidad, los permisos y la pertenencia a orgs de ese usuario. ¿Token de acceso personal o usuario de servicio? Token de acceso personal Clave de API de usuario de servicio Actúa como Tú Una identidad independiente no humana Permisos Exactamente los tuyos, en todas las organizaciones a las que tienes acceso El rol que asignas al usuario de servicio, en las organizaciones a las que se agrega Ámbito Tu cuenta. Cada solicitud especifica la organización Se crea a nivel de organización o Enterprise Registro de auditoría Se te atribuye Se atribuye al usuario de servicio, incluso cuando crea una sesión en nombre de otra persona con create_as_user_id Ciclo de vida Vinculado a ti. Se revoca automáticamente si abandonas la cuenta No está vinculado a ninguna persona, por lo que sigue funcionando tras cambios en el equipo Ideal para Scripts personales, herramientas locales, Devin CLI y aplicaciones de escritorio CI/CD, integraciones de producción y automatización compartida Regla general: si la integración debe seguir funcionando después de que dejes el equipo o cambies de rol, usa un usuario de servicio. Si debe hacer exactamente lo mismo que tú puedes hacer, en tu nombre, usa un PAT. Usuarios de servicio (recomendados para la automatización) Los usuarios de servicio son cuentas no asociadas a personas, diseñadas para integraciones de API. Se les pueden asignar permisos específicos mediante RBAC y se pueden agregar a organizaciones de forma independiente de los usuarios humanos. Cómo funciona Aprovisiona un usuario de servicio en Settings > API de Devin (pestaña Usuarios de servicio ) para una organización, o en Enterprise settings > API de Devin (pestaña Usuarios de servicio ) para el Enterprise Asigna un rol que controle a qué endpoints puede acceder el usuario de servicio. Se elige un rol en un menú desplegable, no permisos individuales Elige el periodo de caducidad : el valor predeterminado es de 30 días; las demás opciones son 7 días, 90 días y, si tu cuenta lo permite, Never Copia la clave de API — la clave empieza por cog_ y solo se muestra una vez, justo después del aprovisionamiento Usa la clave en el encabezado Authorization de cada solicitud a la API curl -X POST \"https://api.devin.ai/v3/organizations/ $DEVIN_ORG_ID /sessions\" \\ -H \"Authorization: Bearer $DEVIN_API_KEY \" \\ -H \"Content-Type: application/json\" \\ -d '{\"prompt\": \"Create a simple Python script\"}' Ámbitos de usuarios de servicio Ámbito Creado en Acceso a la API Caso de uso Organization Settings > Devin API > Service users /v3/organizations/* Administración de sesiones, Knowledge, playbooks, secretos Enterprise Enterprise settings > Devin API > Service users /v3/enterprise/* + /v3/organizations/* Administración entre organizaciones, analítica, registros de auditoría, facturación Encuentra el ID de tu organización en la parte superior de la página Settings > Devin API . Atribución de sesiones con create_as_user_id Los usuarios de servicio son identidades separadas de los usuarios humanos. De forma predeterminada, las sesiones creadas por un usuario de servicio se atribuyen al propio usuario de servicio. Para crear sesiones en nombre de un usuario específico , pasa el parámetro create_as_user_id al crear una sesión. La sesión aparecerá en la lista de sesiones de ese usuario y contará en su uso. Esto requiere el permiso ImpersonateOrgSessions en el rol del usuario de servicio. Propiedades clave Las claves comienzan con cog_ y se muestran solo una vez al momento de su creación Los usuarios de servicio aparecen por separado de los usuarios humanos en los registros de auditoría Los permisos se controlan mediante RBAC — asigna únicamente lo que la integración necesita Los usuarios de servicio de Enterprise heredan permisos a nivel de organización en todas las organizaciones Para obtener instrucciones detalladas de configuración, consulta la guía de inicio rápido de Teams o la guía de inicio rápido de Enterprise . Tokens de acceso personal Los tokens de acceso personal (PAT) permiten a los usuarios humanos autenticarse de forma programática con su propia identidad. Cuando usas un PAT, la API te reconoce a ti : tus permisos, tu pertenencia a orgs y tu registro de auditoría. Esto resulta útil cuando quieres hacer llamadas a la API en tu propio nombre (p. ej., scripts personales, herramientas locales) en lugar de hacerlo mediante un usuario de servicio compartido. Un PAT no está limitado a una organización ni a una cuenta Enterprise. Te pertenece dentro de tu cuenta y funciona en todas las organizaciones a las que tienes acceso. Cada solicitud especifica una organización en la URL, y tu rol en esa organización determina lo que puede hacer la solicitud. Para las cuentas Enterprise, los PAT se rigen por una política a nivel Enterprise (deshabilitada de forma predeterminada) que los Admin de Enterprise configuran, incluido un flujo de aprobación y la expiración obligatoria de los tokens. Para obtener más información, consulta Tokens de acceso personal . Autenticación heredada (desaprobada) Las API keys heredadas están desaprobadas. Usa la API v3 con autenticación de usuario de servicio. Consulta la guía de migración . Las API keys heredadas se usan con las API v1 y v2. Siguen funcionando durante el período de desaprobación, pero no son compatibles con funciones nuevas como RBAC, atribución de sesión o paginación basada en cursores. Tipo de clave Prefijo Se usa con Descripción Clave de API personal apk_user_ v1, v2 Vinculada a una cuenta de usuario, hereda los permisos del usuario Clave de API de servicio apk_ v1 Con ámbito de organización, para automatización Dónde generarla: Settings > API Keys Prácticas recomendadas de seguridad Nunca compartas claves de API en áreas públicamente accesibles, como repositorios de GitHub, código del lado del cliente o registros. Almacena las claves de forma segura : Usa variables de entorno o sistemas de gestión de secretos Rota las claves con regularidad : Genera claves nuevas y revoca periódicamente las antiguas Usa usuarios de servicio para la automatización : Prefiere usuarios de servicio en lugar de claves personales para producción Aplica el principio de mínimo privilegio : Concede solo los permisos mínimos necesarios Supervisa el uso : Revisa los registros de auditoría para detectar actividad inesperada de la API Revoca de inmediato las claves comprometidas : Si se expone una clave, revócala y genera una nueva. En Settings > API de Devin , la clave de un usuario de servicio no tiene botón para revocarla ni rotarla: usa Delete service user en su fila, lo que invalida la clave de inmediato, y después aprovisiona un nuevo usuario de servicio. Las empresas también pueden revocar o rotar la clave de un usuario de servicio mediante la API (beta) Solución de problemas 401 No autorizado Posibles causas: API key no válida o caducada Falta el encabezado Authorization Formato incorrecto del token Bearer Usar una API key heredada ( apk_ / apk_user_ ) con Devin MCP : solo se admiten las claves con prefijo cog_ Solución: Verifica que tu API key sea correcta y esté correctamente formateada en el encabezado Authorization . Para usar MCP, asegúrate de usar una clave de API de usuario de servicio (no una clave heredada). 403 Prohibido Posibles causas: La API key no tiene los permisos necesarios Estás usando un tipo de API key incorrecto para el endpoint (por ejemplo, una API key heredada con endpoints v3) Estás intentando acceder a recursos fuera de tu ámbito de permisos Solución: Asegúrate de que tu usuario de servicio tenga el rol y los permisos correctos Para endpoints heredados v2: asegúrate de tener el rol de Enterprise Admin Para endpoints heredados v1: verifica que tengas acceso a la organización 404 No encontrado Posibles causas: URL del endpoint de la API incorrecta El recurso no existe o no tienes permiso de acceso Solución: Verifica la URL del endpoint y que el recurso exista. Próximos pasos Guía de inicio rápido de Teams — comienza en cuestión de minutos Guía de inicio rápido de Enterprise — configuración de RBAC y multi-organización Flujos comunes — ejemplos de flujos de trabajo de principio a fin Guía de migración — migra desde las versiones v1/v2"
+    }
+  ],
+  "claims": {
+    "auth": {
+      "value": [
+        "API key"
+      ],
+      "sources": [
+        "https://docs.devin.ai/es/api-reference/authentication"
+      ],
+      "evidence": [
+        {
+          "url": "https://docs.devin.ai/es/api-reference/authentication",
+          "excerpt": "n pueden revocar o rotar la clave de un usuario de servicio mediante la API (beta) Solución de problemas 401 No autorizado Posibles causas: API key no válida o caducada Falta el encabezado Authorization Formato incorrecto del token Bearer Usar una API key heredada ( apk_ / apk_user_ ) con Devin MCP : solo se admiten las claves con prefijo cog_ Solución: Verifica qu",
+          "method": "API key"
+        }
+      ],
+      "reason": ""
+    },
+    "credential_gate": {
+      "value": "unknown",
+      "sources": [],
+      "evidence": [],
+      "reason": "No reliable automated access-tier extraction; targeted search results require claim-specific review"
+    },
+    "api_surface": {
+      "value": "unknown",
+      "sources": [],
+      "evidence": [],
+      "reason": "Targeted search found no usable, claim-specific official documentation"
+    },
+    "official_mcp": {
+      "value": "unknown",
+      "sources": [],
+      "evidence": [],
+      "reason": "Targeted search found no usable, claim-specific official documentation"
+    },
+    "composio_toolkit": {
+      "value": "listed",
+      "sources": [
+        "https://docs.composio.dev/toolkits/devin_mcp"
+      ],
+      "evidence": [
+        {
+          "url": "https://docs.composio.dev/toolkits/devin_mcp",
+          "excerpt": "Composio catalog match; verify product scope"
+        }
+      ],
+      "reason": ""
+    },
+    "verdict": {
+      "value": "unknown",
+      "sources": [],
+      "evidence": [],
+      "reason": "Insufficient independently verified authentication, API and access evidence for a build decision"
+    }
+  },
+  "validation": [
+    "Automatic extraction is provisional and must be checked independently",
+    "Unknown does not mean the capability is absent"
+  ]
+}

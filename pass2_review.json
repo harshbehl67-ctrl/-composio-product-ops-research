@@ -1,0 +1,829 @@
+{
+  "sample": "Deliberately selected, one app per category; not random or a holdout",
+  "scoring": "correct=1, partial=0.5, incorrect=0; exclude abstained and unresolved from accuracy denominator",
+  "total_claims": 60,
+  "answered": 26,
+  "ratings": {
+    "partial": 7,
+    "abstained": 34,
+    "correct": 19
+  },
+  "scored_answered": 26,
+  "weighted_points": 22.5,
+  "weighted_accuracy": 0.8653846153846154,
+  "records": [
+    {
+      "app": "HubSpot",
+      "category": "CRM and Sales",
+      "field": "auth",
+      "pass2_answer": [
+        "OAuth 2.0"
+      ],
+      "pass2_sources": [
+        "https://developers.hubspot.com/changelog/new-oauth-v3-api-endpoints-and-standardized-error-responses"
+      ],
+      "rating": "partial",
+      "review_note": "OAuth is supported, and HubSpot also documents service keys for account-level integrations.",
+      "independent_source": "https://developers.hubspot.com/changelog/service-keys",
+      "additional_sources": [],
+      "correction": "OAuth plus service keys (scope-dependent)"
+    },
+    {
+      "app": "HubSpot",
+      "category": "CRM and Sales",
+      "field": "credential_gate",
+      "pass2_answer": "unknown",
+      "pass2_sources": [],
+      "rating": "abstained",
+      "review_note": "Pass abstained. Independent documentation review: Test account path and install permissions are distinct.",
+      "independent_source": "https://developers.hubspot.com/blog/harnessing-the-power-of-hubspots-public-apis-with-postman",
+      "additional_sources": [],
+      "correction": "Free developer test account; super admin required for public install or private app"
+    },
+    {
+      "app": "HubSpot",
+      "category": "CRM and Sales",
+      "field": "api_surface",
+      "pass2_answer": "unknown",
+      "pass2_sources": [],
+      "rating": "abstained",
+      "review_note": "The new pass abstained; the reviewed documentation does not change the score.",
+      "independent_source": "",
+      "additional_sources": [],
+      "correction": "unknown"
+    },
+    {
+      "app": "HubSpot",
+      "category": "CRM and Sales",
+      "field": "official_mcp",
+      "pass2_answer": "yes",
+      "pass2_sources": [
+        "https://community.hubspot.com/t/remote-hubspot-mcp-server-is-now-generally-available/148286"
+      ],
+      "rating": "correct",
+      "review_note": "Independent source supports the stated positive claim; this does not establish completeness of the whole integration.",
+      "independent_source": "https://developers.hubspot.com/docs/apps/developer-platform/build-apps/integrate-with-the-remote-hubspot-mcp-server",
+      "additional_sources": [],
+      "correction": "yes"
+    },
+    {
+      "app": "HubSpot",
+      "category": "CRM and Sales",
+      "field": "composio_toolkit",
+      "pass2_answer": "listed",
+      "pass2_sources": [
+        "https://docs.composio.dev/toolkits/hubspot"
+      ],
+      "rating": "correct",
+      "review_note": "Independent source supports the stated positive claim; this does not establish completeness of the whole integration.",
+      "independent_source": "https://docs.composio.dev/toolkits/hubspot",
+      "additional_sources": [],
+      "correction": "listed"
+    },
+    {
+      "app": "HubSpot",
+      "category": "CRM and Sales",
+      "field": "verdict",
+      "pass2_answer": "unknown",
+      "pass2_sources": [],
+      "rating": "abstained",
+      "review_note": "Pass abstained. Independent documentation review: Scoped inference for developer testing and public or private app installation.",
+      "independent_source": "https://developers.hubspot.com/blog/harnessing-the-power-of-hubspots-public-apis-with-postman",
+      "additional_sources": [],
+      "correction": "build for developer test; customer super admin may be required for installation"
+    },
+    {
+      "app": "Zendesk",
+      "category": "Support and Helpdesk",
+      "field": "auth",
+      "pass2_answer": [
+        "API key",
+        "Basic auth"
+      ],
+      "pass2_sources": [
+        "https://support.zendesk.com/hc/en-us/articles/4408831452954-How-can-I-authenticate-API-requests",
+        "https://developer.zendesk.com/api-reference/introduction/security-and-auth/",
+        "https://developer.zendesk.com/documentation/conversations/getting-started/api-authentication/"
+      ],
+      "rating": "partial",
+      "review_note": "OAuth access tokens are supported; legacy basic/API-token users are being directed to migrate. The extracted API-key excerpt was about RequestBin.",
+      "independent_source": "https://developer.zendesk.com/api-reference/introduction/security-and-auth/",
+      "additional_sources": [],
+      "correction": "OAuth access token; legacy basic/API token subject to migration"
+    },
+    {
+      "app": "Zendesk",
+      "category": "Support and Helpdesk",
+      "field": "credential_gate",
+      "pass2_answer": "unknown",
+      "pass2_sources": [],
+      "rating": "abstained",
+      "review_note": "Pass abstained. Independent documentation review: This is the legacy token path; use current OAuth migration guidance.",
+      "independent_source": "https://support.zendesk.com/hc/en-us/articles/4408889192858-Managing-API-token-access-to-the-Zendesk-API",
+      "additional_sources": [],
+      "correction": "Legacy API-token creation requires an administrator; migration to OAuth is required"
+    },
+    {
+      "app": "Zendesk",
+      "category": "Support and Helpdesk",
+      "field": "api_surface",
+      "pass2_answer": "unknown",
+      "pass2_sources": [],
+      "rating": "abstained",
+      "review_note": "The new pass abstained; the reviewed documentation does not change the score.",
+      "independent_source": "",
+      "additional_sources": [],
+      "correction": "unknown"
+    },
+    {
+      "app": "Zendesk",
+      "category": "Support and Helpdesk",
+      "field": "official_mcp",
+      "pass2_answer": "yes",
+      "pass2_sources": [
+        "https://support.zendesk.com/hc/en-us/articles/11105393853210-Announcing-the-general-availability-of-the-MCP-client"
+      ],
+      "rating": "partial",
+      "review_note": "Zendesk Bridge documents a Zendesk MCP server in early access, but the cited first-pass page describes Zendesk acting as a client.",
+      "independent_source": "https://support.zendesk.com/hc/en-us/articles/11400026079130-Connecting-external-AI-agents-to-the-Zendesk-MCP-server-or-Zendesk-AI-agents-EAP",
+      "additional_sources": [],
+      "correction": "yes, Zendesk Bridge MCP server (EAP)"
+    },
+    {
+      "app": "Zendesk",
+      "category": "Support and Helpdesk",
+      "field": "composio_toolkit",
+      "pass2_answer": "listed",
+      "pass2_sources": [
+        "https://docs.composio.dev/toolkits/zendesk"
+      ],
+      "rating": "correct",
+      "review_note": "Independent source supports the stated positive claim; this does not establish completeness of the whole integration.",
+      "independent_source": "https://docs.composio.dev/toolkits/zendesk",
+      "additional_sources": [],
+      "correction": "listed"
+    },
+    {
+      "app": "Zendesk",
+      "category": "Support and Helpdesk",
+      "field": "verdict",
+      "pass2_answer": "unknown",
+      "pass2_sources": [],
+      "rating": "abstained",
+      "review_note": "The new pass abstained; the reviewed documentation does not change the score.",
+      "independent_source": "",
+      "additional_sources": [],
+      "correction": "unknown"
+    },
+    {
+      "app": "Slack",
+      "category": "Communications and Messaging",
+      "field": "auth",
+      "pass2_answer": [
+        "OAuth 2.0",
+        "Basic auth"
+      ],
+      "pass2_sources": [
+        "https://docs.slack.dev/authentication/installing-with-oauth/",
+        "https://docs.slack.dev/reference/methods/oauth.access/"
+      ],
+      "rating": "partial",
+      "review_note": "Slack apps use OAuth and scoped tokens; Basic auth in the cited page concerns client authentication at an OAuth endpoint, not a general Web API method.",
+      "independent_source": "https://docs.slack.dev/authentication/",
+      "additional_sources": [],
+      "correction": "OAuth 2.0 and scoped tokens"
+    },
+    {
+      "app": "Slack",
+      "category": "Communications and Messaging",
+      "field": "credential_gate",
+      "pass2_answer": "unknown",
+      "pass2_sources": [],
+      "rating": "abstained",
+      "review_note": "The new pass abstained; the reviewed documentation does not change the score.",
+      "independent_source": "",
+      "additional_sources": [],
+      "correction": "unknown"
+    },
+    {
+      "app": "Slack",
+      "category": "Communications and Messaging",
+      "field": "api_surface",
+      "pass2_answer": "unknown",
+      "pass2_sources": [],
+      "rating": "abstained",
+      "review_note": "The new pass abstained; the reviewed documentation does not change the score.",
+      "independent_source": "",
+      "additional_sources": [],
+      "correction": "unknown"
+    },
+    {
+      "app": "Slack",
+      "category": "Communications and Messaging",
+      "field": "official_mcp",
+      "pass2_answer": "yes",
+      "pass2_sources": [
+        "https://docs.slack.dev/ai/slack-mcp-server/"
+      ],
+      "rating": "correct",
+      "review_note": "Independent source supports the stated positive claim; this does not establish completeness of the whole integration.",
+      "independent_source": "https://docs.slack.dev/ai/slack-mcp-server/",
+      "additional_sources": [],
+      "correction": "yes"
+    },
+    {
+      "app": "Slack",
+      "category": "Communications and Messaging",
+      "field": "composio_toolkit",
+      "pass2_answer": "listed",
+      "pass2_sources": [
+        "https://docs.composio.dev/toolkits/slack"
+      ],
+      "rating": "correct",
+      "review_note": "Independent source supports the stated positive claim; this does not establish completeness of the whole integration.",
+      "independent_source": "https://docs.composio.dev/toolkits/slack",
+      "additional_sources": [],
+      "correction": "listed"
+    },
+    {
+      "app": "Slack",
+      "category": "Communications and Messaging",
+      "field": "verdict",
+      "pass2_answer": "unknown",
+      "pass2_sources": [],
+      "rating": "abstained",
+      "review_note": "The new pass abstained; the reviewed documentation does not change the score.",
+      "independent_source": "",
+      "additional_sources": [],
+      "correction": "unknown"
+    },
+    {
+      "app": "Google Ads",
+      "category": "Marketing, Ads, Email and Social",
+      "field": "auth",
+      "pass2_answer": [
+        "OAuth 2.0"
+      ],
+      "pass2_sources": [
+        "https://developers.google.com/google-ads/api/rest/auth"
+      ],
+      "rating": "correct",
+      "review_note": "Independent source supports the stated positive claim; this does not establish completeness of the whole integration.",
+      "independent_source": "https://developers.google.com/google-ads/api/rest/auth",
+      "additional_sources": [],
+      "correction": [
+        "OAuth 2.0"
+      ]
+    },
+    {
+      "app": "Google Ads",
+      "category": "Marketing, Ads, Email and Social",
+      "field": "credential_gate",
+      "pass2_answer": "unknown",
+      "pass2_sources": [],
+      "rating": "abstained",
+      "review_note": "The new pass abstained; the reviewed documentation does not change the score.",
+      "independent_source": "https://developers.google.com/google-ads/api/docs/api-policy/access-levels",
+      "additional_sources": [],
+      "correction": "approval for production access"
+    },
+    {
+      "app": "Google Ads",
+      "category": "Marketing, Ads, Email and Social",
+      "field": "api_surface",
+      "pass2_answer": "unknown",
+      "pass2_sources": [],
+      "rating": "abstained",
+      "review_note": "The new pass abstained; the reviewed documentation does not change the score.",
+      "independent_source": "",
+      "additional_sources": [],
+      "correction": "unknown"
+    },
+    {
+      "app": "Google Ads",
+      "category": "Marketing, Ads, Email and Social",
+      "field": "official_mcp",
+      "pass2_answer": "yes",
+      "pass2_sources": [
+        "https://developers.google.com/google-ads/api/docs/developer-toolkit/mcp-server"
+      ],
+      "rating": "correct",
+      "review_note": "Independent source supports the stated positive claim; this does not establish completeness of the whole integration.",
+      "independent_source": "https://developers.google.com/google-ads/api/docs/developer-toolkit/mcp-server",
+      "additional_sources": [],
+      "correction": "yes"
+    },
+    {
+      "app": "Google Ads",
+      "category": "Marketing, Ads, Email and Social",
+      "field": "composio_toolkit",
+      "pass2_answer": "listed",
+      "pass2_sources": [
+        "https://docs.composio.dev/toolkits/googleads"
+      ],
+      "rating": "correct",
+      "review_note": "Independent source supports the stated positive claim; this does not establish completeness of the whole integration.",
+      "independent_source": "https://docs.composio.dev/toolkits/googleads",
+      "additional_sources": [],
+      "correction": "listed"
+    },
+    {
+      "app": "Google Ads",
+      "category": "Marketing, Ads, Email and Social",
+      "field": "verdict",
+      "pass2_answer": "unknown",
+      "pass2_sources": [],
+      "rating": "abstained",
+      "review_note": "The new pass abstained; the reviewed documentation does not change the score.",
+      "independent_source": "https://developers.google.com/google-ads/api/docs/api-policy/access-levels",
+      "additional_sources": [],
+      "correction": "needs approval for production access"
+    },
+    {
+      "app": "Shopify",
+      "category": "Ecommerce",
+      "field": "auth",
+      "pass2_answer": [
+        "OAuth 2.0"
+      ],
+      "pass2_sources": [
+        "https://shopify.dev/docs/api/usage/authentication"
+      ],
+      "rating": "partial",
+      "review_note": "Shopify has several API-specific token flows. OAuth applies to the Admin and Customer Account APIs; the extraction omits other token details.",
+      "independent_source": "https://shopify.dev/docs/api/usage/authentication",
+      "additional_sources": [],
+      "correction": "OAuth and API-specific scoped access tokens"
+    },
+    {
+      "app": "Shopify",
+      "category": "Ecommerce",
+      "field": "credential_gate",
+      "pass2_answer": "unknown",
+      "pass2_sources": [],
+      "rating": "abstained",
+      "review_note": "Pass abstained. Independent documentation review: A dev store is for development and testing; production store data needs the merchant's authorization.",
+      "independent_source": "https://shopify.dev/docs/apps/build/stores/development-stores",
+      "additional_sources": [],
+      "correction": "Partner account or merchant store with developer permissions; development stores available"
+    },
+    {
+      "app": "Shopify",
+      "category": "Ecommerce",
+      "field": "api_surface",
+      "pass2_answer": "unknown",
+      "pass2_sources": [],
+      "rating": "abstained",
+      "review_note": "The new pass abstained; the reviewed documentation does not change the score.",
+      "independent_source": "https://shopify.dev/docs/api/usage/authentication",
+      "additional_sources": [],
+      "correction": "GraphQL Admin API reads and writes store data including products and orders"
+    },
+    {
+      "app": "Shopify",
+      "category": "Ecommerce",
+      "field": "official_mcp",
+      "pass2_answer": "unknown",
+      "pass2_sources": [],
+      "rating": "abstained",
+      "review_note": "The new pass abstained; the reviewed documentation does not change the score.",
+      "independent_source": "",
+      "additional_sources": [],
+      "correction": "unknown"
+    },
+    {
+      "app": "Shopify",
+      "category": "Ecommerce",
+      "field": "composio_toolkit",
+      "pass2_answer": "listed",
+      "pass2_sources": [
+        "https://docs.composio.dev/toolkits/shopify"
+      ],
+      "rating": "correct",
+      "review_note": "Independent source supports the stated positive claim; this does not establish completeness of the whole integration.",
+      "independent_source": "https://docs.composio.dev/toolkits/shopify",
+      "additional_sources": [],
+      "correction": "listed"
+    },
+    {
+      "app": "Shopify",
+      "category": "Ecommerce",
+      "field": "verdict",
+      "pass2_answer": "unknown",
+      "pass2_sources": [],
+      "rating": "abstained",
+      "review_note": "Pass abstained. Independent documentation review: Product-ops inference for developer testing; merchant access and scopes are separate.",
+      "independent_source": "https://shopify.dev/docs/apps/build/stores/development-stores",
+      "additional_sources": [],
+      "correction": "build with developer store; merchant authorization for production"
+    },
+    {
+      "app": "Apify",
+      "category": "Data, SEO and Scraping",
+      "field": "auth",
+      "pass2_answer": "unknown",
+      "pass2_sources": [],
+      "rating": "abstained",
+      "review_note": "Pass abstained. Independent documentation review: Vendor documentation describes an API token for integrations.",
+      "independent_source": "https://docs.apify.com/integrations/api",
+      "additional_sources": [],
+      "correction": "API token (Bearer)"
+    },
+    {
+      "app": "Apify",
+      "category": "Data, SEO and Scraping",
+      "field": "credential_gate",
+      "pass2_answer": "unknown",
+      "pass2_sources": [],
+      "rating": "abstained",
+      "review_note": "Pass abstained. Independent documentation review: The quickstart describes creating a token and the free-plan credits.",
+      "independent_source": "https://docs.apify.com/agents/quickstart",
+      "additional_sources": [],
+      "correction": "Self-serve account; free plan includes monthly credits"
+    },
+    {
+      "app": "Apify",
+      "category": "Data, SEO and Scraping",
+      "field": "api_surface",
+      "pass2_answer": [
+        "REST"
+      ],
+      "pass2_sources": [
+        "https://docs.apify.com/integrations/api",
+        "https://docs.apify.com/api"
+      ],
+      "rating": "correct",
+      "review_note": "Independent source supports the stated positive claim; this does not establish completeness of the whole integration.",
+      "independent_source": "https://docs.apify.com/integrations/api",
+      "additional_sources": [],
+      "correction": [
+        "REST"
+      ]
+    },
+    {
+      "app": "Apify",
+      "category": "Data, SEO and Scraping",
+      "field": "official_mcp",
+      "pass2_answer": "yes",
+      "pass2_sources": [
+        "https://docs.apify.com/mcp"
+      ],
+      "rating": "correct",
+      "review_note": "Independent source supports the stated positive claim; this does not establish completeness of the whole integration.",
+      "independent_source": "https://docs.apify.com/mcp",
+      "additional_sources": [],
+      "correction": "yes"
+    },
+    {
+      "app": "Apify",
+      "category": "Data, SEO and Scraping",
+      "field": "composio_toolkit",
+      "pass2_answer": "listed",
+      "pass2_sources": [
+        "https://docs.composio.dev/toolkits/apify"
+      ],
+      "rating": "correct",
+      "review_note": "Independent source supports the stated positive claim; this does not establish completeness of the whole integration.",
+      "independent_source": "https://docs.composio.dev/toolkits/apify",
+      "additional_sources": [],
+      "correction": "listed"
+    },
+    {
+      "app": "Apify",
+      "category": "Data, SEO and Scraping",
+      "field": "verdict",
+      "pass2_answer": "unknown",
+      "pass2_sources": [],
+      "rating": "abstained",
+      "review_note": "Pass abstained. Independent documentation review: Product-ops inference from the documented self-serve token and free development credits; no credential was tested.",
+      "independent_source": "https://docs.apify.com/agents/quickstart",
+      "additional_sources": [],
+      "correction": "build now for development; usage limits apply"
+    },
+    {
+      "app": "GitHub",
+      "category": "Developer, Infra and Data platforms",
+      "field": "auth",
+      "pass2_answer": [
+        "Basic auth"
+      ],
+      "pass2_sources": [
+        "https://docs.github.com/en/rest/authentication/authenticating-to-the-rest-api?apiVersion=2022-11-28",
+        "https://docs.github.com/en/rest/authentication/authenticating-to-the-rest-api"
+      ],
+      "rating": "partial",
+      "review_note": "Basic applies to certain app endpoints; the main REST authentication docs also document personal access tokens and app tokens.",
+      "independent_source": "https://docs.github.com/en/rest/authentication/authenticating-to-the-rest-api",
+      "additional_sources": [],
+      "correction": "personal access tokens, app tokens, OAuth; Basic for some endpoints"
+    },
+    {
+      "app": "GitHub",
+      "category": "Developer, Infra and Data platforms",
+      "field": "credential_gate",
+      "pass2_answer": "unknown",
+      "pass2_sources": [],
+      "rating": "abstained",
+      "review_note": "Pass abstained. Independent documentation review: Personal access token and application token paths are documented.",
+      "independent_source": "https://docs.github.com/en/rest/authentication/authenticating-to-the-rest-api",
+      "additional_sources": [],
+      "correction": "Personal access token can be created for personal API use; organization policy may restrict access"
+    },
+    {
+      "app": "GitHub",
+      "category": "Developer, Infra and Data platforms",
+      "field": "api_surface",
+      "pass2_answer": [
+        "REST",
+        "GraphQL"
+      ],
+      "pass2_sources": [
+        "https://docs.github.com/en/rest/authentication/authenticating-to-the-rest-api?apiVersion=2022-11-28",
+        "https://docs.github.com/en/rest/authentication/authenticating-to-the-rest-api",
+        "https://github.com/github/github-mcp-server",
+        "https://docs.github.com/en/rest/authentication/keeping-your-api-credentials-secure?utm_campaign=secure-coding-agent-access-customer-tickets&utm_medium=content&utm_source=blog",
+        "https://docs.github.com/en/rest/using-the-rest-api/getting-started-with-the-rest-api"
+      ],
+      "rating": "correct",
+      "review_note": "Independent source supports the stated positive claim; this does not establish completeness of the whole integration.",
+      "independent_source": "https://docs.github.com/en/rest/using-the-rest-api/getting-started-with-the-rest-api",
+      "additional_sources": [
+        "https://docs.github.com/en/graphql"
+      ],
+      "correction": [
+        "REST",
+        "GraphQL"
+      ]
+    },
+    {
+      "app": "GitHub",
+      "category": "Developer, Infra and Data platforms",
+      "field": "official_mcp",
+      "pass2_answer": "yes",
+      "pass2_sources": [
+        "https://docs.github.com/en/copilot/how-tos/copilot-in-your-ide/customize-copilot/extend-copilot-with-tools-and-context/set-up-the-github-mcp-server"
+      ],
+      "rating": "correct",
+      "review_note": "Independent source supports the stated positive claim; this does not establish completeness of the whole integration.",
+      "independent_source": "https://github.com/github/github-mcp-server",
+      "additional_sources": [],
+      "correction": "yes"
+    },
+    {
+      "app": "GitHub",
+      "category": "Developer, Infra and Data platforms",
+      "field": "composio_toolkit",
+      "pass2_answer": "listed",
+      "pass2_sources": [
+        "https://docs.composio.dev/toolkits/github"
+      ],
+      "rating": "correct",
+      "review_note": "Independent source supports the stated positive claim; this does not establish completeness of the whole integration.",
+      "independent_source": "https://docs.composio.dev/toolkits/github",
+      "additional_sources": [],
+      "correction": "listed"
+    },
+    {
+      "app": "GitHub",
+      "category": "Developer, Infra and Data platforms",
+      "field": "verdict",
+      "pass2_answer": "unknown",
+      "pass2_sources": [],
+      "rating": "abstained",
+      "review_note": "Pass abstained. Independent documentation review: Product-ops inference from documented personal token path; organization permissions remain separate.",
+      "independent_source": "https://docs.github.com/en/rest/authentication/authenticating-to-the-rest-api",
+      "additional_sources": [],
+      "correction": "build now for personal account; organization access may need approval"
+    },
+    {
+      "app": "Notion",
+      "category": "Productivity and Project Management",
+      "field": "auth",
+      "pass2_answer": "unknown",
+      "pass2_sources": [],
+      "rating": "abstained",
+      "review_note": "The new pass abstained; the reviewed documentation does not change the score.",
+      "independent_source": "https://developers.notion.com/reference/create-view",
+      "additional_sources": [],
+      "correction": "The create-view endpoint accepts a bearer auth token"
+    },
+    {
+      "app": "Notion",
+      "category": "Productivity and Project Management",
+      "field": "credential_gate",
+      "pass2_answer": "unknown",
+      "pass2_sources": [],
+      "rating": "abstained",
+      "review_note": "Pass abstained. Independent documentation review: Do not infer a universal admin or payment gate.",
+      "independent_source": "https://www.notion.com/help/create-integrations-with-the-notion-api",
+      "additional_sources": [],
+      "correction": "Connection owners can obtain API tokens; creation depends on plan and workspace settings"
+    },
+    {
+      "app": "Notion",
+      "category": "Productivity and Project Management",
+      "field": "api_surface",
+      "pass2_answer": "unknown",
+      "pass2_sources": [],
+      "rating": "abstained",
+      "review_note": "The new pass abstained; the reviewed documentation does not change the score.",
+      "independent_source": "",
+      "additional_sources": [],
+      "correction": "unknown"
+    },
+    {
+      "app": "Notion",
+      "category": "Productivity and Project Management",
+      "field": "official_mcp",
+      "pass2_answer": "yes",
+      "pass2_sources": [
+        "https://www.notion.com/en-gb/help/connect-mcp-servers-to-your-notion-agent"
+      ],
+      "rating": "partial",
+      "review_note": "Notion MCP exists, but the cited source discusses Notion as an MCP client connecting to other services.",
+      "independent_source": "https://www.notion.com/help/notion-mcp",
+      "additional_sources": [],
+      "correction": "yes, Notion MCP"
+    },
+    {
+      "app": "Notion",
+      "category": "Productivity and Project Management",
+      "field": "composio_toolkit",
+      "pass2_answer": "listed",
+      "pass2_sources": [
+        "https://docs.composio.dev/toolkits/notion"
+      ],
+      "rating": "correct",
+      "review_note": "Independent source supports the stated positive claim; this does not establish completeness of the whole integration.",
+      "independent_source": "https://docs.composio.dev/toolkits/notion",
+      "additional_sources": [],
+      "correction": "listed"
+    },
+    {
+      "app": "Notion",
+      "category": "Productivity and Project Management",
+      "field": "verdict",
+      "pass2_answer": "unknown",
+      "pass2_sources": [],
+      "rating": "abstained",
+      "review_note": "The new pass abstained; the reviewed documentation does not change the score.",
+      "independent_source": "",
+      "additional_sources": [],
+      "correction": "unknown"
+    },
+    {
+      "app": "Stripe",
+      "category": "Finance and Fintech",
+      "field": "auth",
+      "pass2_answer": [
+        "API key"
+      ],
+      "pass2_sources": [
+        "https://stripe.com/in/legal/api-key-security"
+      ],
+      "rating": "correct",
+      "review_note": "Independent source supports the stated positive claim; this does not establish completeness of the whole integration.",
+      "independent_source": "https://docs.stripe.com/keys",
+      "additional_sources": [],
+      "correction": [
+        "API key"
+      ]
+    },
+    {
+      "app": "Stripe",
+      "category": "Finance and Fintech",
+      "field": "credential_gate",
+      "pass2_answer": "unknown",
+      "pass2_sources": [],
+      "rating": "abstained",
+      "review_note": "The new pass abstained; the reviewed documentation does not change the score.",
+      "independent_source": "",
+      "additional_sources": [],
+      "correction": "unknown"
+    },
+    {
+      "app": "Stripe",
+      "category": "Finance and Fintech",
+      "field": "api_surface",
+      "pass2_answer": "unknown",
+      "pass2_sources": [],
+      "rating": "abstained",
+      "review_note": "The new pass abstained; the reviewed documentation does not change the score.",
+      "independent_source": "",
+      "additional_sources": [],
+      "correction": "unknown"
+    },
+    {
+      "app": "Stripe",
+      "category": "Finance and Fintech",
+      "field": "official_mcp",
+      "pass2_answer": "yes",
+      "pass2_sources": [
+        "https://docs.stripe.com/mcp"
+      ],
+      "rating": "correct",
+      "review_note": "Independent source supports the stated positive claim; this does not establish completeness of the whole integration.",
+      "independent_source": "https://docs.stripe.com/mcp",
+      "additional_sources": [],
+      "correction": "yes"
+    },
+    {
+      "app": "Stripe",
+      "category": "Finance and Fintech",
+      "field": "composio_toolkit",
+      "pass2_answer": "listed",
+      "pass2_sources": [
+        "https://docs.composio.dev/toolkits/stripe"
+      ],
+      "rating": "correct",
+      "review_note": "Independent source supports the stated positive claim; this does not establish completeness of the whole integration.",
+      "independent_source": "https://docs.composio.dev/toolkits/stripe",
+      "additional_sources": [],
+      "correction": "listed"
+    },
+    {
+      "app": "Stripe",
+      "category": "Finance and Fintech",
+      "field": "verdict",
+      "pass2_answer": "unknown",
+      "pass2_sources": [],
+      "rating": "abstained",
+      "review_note": "The new pass abstained; the reviewed documentation does not change the score.",
+      "independent_source": "",
+      "additional_sources": [],
+      "correction": "unknown"
+    },
+    {
+      "app": "Reducto",
+      "category": "AI, Research and Media-native",
+      "field": "auth",
+      "pass2_answer": "unknown",
+      "pass2_sources": [],
+      "rating": "abstained",
+      "review_note": "Pass abstained. Independent documentation review: The vendor developer page describes signing up and creating an API key.",
+      "independent_source": "https://reducto.ai/developers",
+      "additional_sources": [],
+      "correction": "API key"
+    },
+    {
+      "app": "Reducto",
+      "category": "AI, Research and Media-native",
+      "field": "credential_gate",
+      "pass2_answer": "unknown",
+      "pass2_sources": [],
+      "rating": "abstained",
+      "review_note": "Pass abstained. Independent documentation review: The developer page documents signup and key creation, not all plan restrictions.",
+      "independent_source": "https://reducto.ai/developers",
+      "additional_sources": [],
+      "correction": "Self-serve signup and API key creation documented; pricing and plan limits unresolved"
+    },
+    {
+      "app": "Reducto",
+      "category": "AI, Research and Media-native",
+      "field": "api_surface",
+      "pass2_answer": "unknown",
+      "pass2_sources": [],
+      "rating": "abstained",
+      "review_note": "The new pass abstained; the reviewed documentation does not change the score.",
+      "independent_source": "",
+      "additional_sources": [],
+      "correction": "unknown"
+    },
+    {
+      "app": "Reducto",
+      "category": "AI, Research and Media-native",
+      "field": "official_mcp",
+      "pass2_answer": "unknown",
+      "pass2_sources": [],
+      "rating": "abstained",
+      "review_note": "The new pass abstained; the reviewed documentation does not change the score.",
+      "independent_source": "",
+      "additional_sources": [],
+      "correction": "unknown"
+    },
+    {
+      "app": "Reducto",
+      "category": "AI, Research and Media-native",
+      "field": "composio_toolkit",
+      "pass2_answer": "unknown",
+      "pass2_sources": [],
+      "rating": "abstained",
+      "review_note": "The new pass abstained; the reviewed documentation does not change the score.",
+      "independent_source": "",
+      "additional_sources": [],
+      "correction": "unknown"
+    },
+    {
+      "app": "Reducto",
+      "category": "AI, Research and Media-native",
+      "field": "verdict",
+      "pass2_answer": "unknown",
+      "pass2_sources": [],
+      "rating": "abstained",
+      "review_note": "The new pass abstained; the reviewed documentation does not change the score.",
+      "independent_source": "",
+      "additional_sources": [],
+      "correction": "unknown"
+    }
+  ]
+}

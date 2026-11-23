@@ -1,0 +1,250 @@
+{
+  "app": {
+    "number": 77,
+    "name": "ClickUp",
+    "category": "Productivity and Project Management",
+    "hint": "clickup.com/api"
+  },
+  "checked_at": "2026-11-23T14:09:24.710834+00:00",
+  "source_search": "data/new_search/077.json",
+  "candidates": [
+    {
+      "url": "https://developer.clickup.com/docs/connect-an-ai-assistant-to-clickups-mcp-server",
+      "title": "ClickUp's MCP Server (https://developer.clickup.com/docs/connect-an-ai-assistant-to-clickups-mcp-server)",
+      "snippet": "ClickUp's MCP Server (https://developer.clickup.com/docs/connect-an-ai-assistant-to-clickups-mcp-server)\n【turn104search0】 [wordlim: 200] Crawled: today; The Model Context Protocol (MCP) is a secure, standardized framework that lets external AI agents interact with ClickUp Workspace data—like tasks, lists, folders, and docs—using natural language. ... Our MCP server URL is `https://mcp.clickup.com/mcp`.\n\nClickUp's MCP Server\n\n# ClickUp's MCP Server\n\nLearn about ClickUp's MCP Server so you can use your AI assistant with ClickUp!\n\nThe Model Context Protocol (MCP) is a secure, standardized framework that lets external AI agents interact with ClickUp Workspace data—like tasks, lists, folders, and docs—using natural language. MCP helps users, especially developers, automate workflows, connect third-party AI tools, and enable agentic AI features in their preferred apps, all while keeping security and user control tight.\n\nClickUp's MCP Server is available on all plans.\n\nSetup instructions\n\nLearn how to setup your AI assistant with ClickUp's MCP server.\n\nOur MCP server URL is `https://mcp.clickup.com/mcp`.\n\nWhat you can do\n\nWith ClickUp's MCP server, you can:\n\n  * Orchestrate task workflows: Manage tasks with assignees, priorities, and due dates across lists and spaces.\n  * Build executive reports: Create release notes, status updates, and portfolio summaries from tasks and docs.\n"
+    },
+    {
+      "url": "https://help.clickup.com/hc/en-us/articles/33335772678423-What-is-ClickUp-MCP",
+      "title": "What is ClickUp MCP? – ClickUp Help (https://help.clickup.com/hc/en-us/articles/33335772678423-What-is-ClickUp-MCP)",
+      "snippet": "What is ClickUp MCP? – ClickUp Help (https://help.clickup.com/hc/en-us/articles/33335772678423-What-is-ClickUp-MCP)\n【turn104search1】 [wordlim: 200] Crawled: today; Without the Everything AI add-on, ClickUp MCP limits calls per rolling 24-hour period instead. ... ### Can I authenticate with my own API keys or access tokens?\n\n# FAQ\n\nFrequently asked questions about the ClickUp MCP server.\n\n### Can I monitor how many MCP calls my Workspace has used?\n\nNot at this time.\n\n### Can I authenticate with my own API keys or access tokens?\n\nNo, only OAuth is supported. OAuth is an industry-standard protocol that provides secure, delegated access. It lets you grant limited access to your resources without sharing credentials, supports granular permissions, and makes it easy to revoke access.\n\nAPI keys are less secure because they’re static, usually have broad access, and are harder to manage or revoke if compromised.\n\n### Can I use ClickUp MCP to search external apps I've connected to my ClickUp Workspace?\n\nNo, Connected Search can only be used from within your Workspace. For a list of all external apps that support Connected Search, read our Connected Search article.\n\n### Do admins need to take any action inside ClickUp before setting up an external tool like Claude or ChatGPT?\n\nNo action is needed inside ClickUp. ClickUp MCP will provide the list of available tools.\n\n### Will my custom LLM connect?\n\nYes, if your team builds an MCP client implementation that meets the following criteria:\n\n  * Implements the JSON-RPC 2.0 protocol over HTTP\n  * Supports OAuth 2.1 with PKCE authentication\n  * Follows the MCP specification\n"
+    },
+    {
+      "url": "https://developer.clickup.com/docs/Getting%20Started",
+      "title": "Get Started with the ClickUp API (https://developer.clickup.com/docs/Getting%20Started)",
+      "snippet": "Get Started with the ClickUp API (https://developer.clickup.com/docs/Getting%20Started)\n【turn104search2】 [wordlim: 200] Crawled: today; ClickUp API docs can all be executed against your ClickUp account. ... Both methods ensure that you and your users only have access to the information permitted by ClickUp.\n"
+    },
+    {
+      "url": "https://developer.clickup.com/docs/authentication",
+      "title": "Authentication (https://developer.clickup.com/docs/authentication)",
+      "snippet": "Authentication (https://developer.clickup.com/docs/authentication)\n【turn104search3】 [wordlim: 200] Crawled: today; > You'll need to sign in to your ClickUp account in order to generate or regenerate a token. ...   * Access Token URL: `https://api.clickup.com/api/v2/oauth/token`\n"
+    },
+    {
+      "url": "https://developer.clickup.com/docs/connect-an-ai-assistant-to-clickups-mcp-server-1",
+      "title": "MCP Server Setup Instructions (https://developer.clickup.com/docs/connect-an-ai-assistant-to-clickups-mcp-server-1)",
+      "snippet": "MCP Server Setup Instructions (https://developer.clickup.com/docs/connect-an-ai-assistant-to-clickups-mcp-server-1)\n【turn104search4】 [wordlim: 200] Crawled: today; Paste the following link into the Server URL field: https://mcp.clickup.com/mcp ... To manually set up VS Code for the ClickUp MCP server, open a terminal and run the following command:\n"
+    },
+    {
+      "url": "https://developer.clickup.com/docs/trytheapi",
+      "title": "Try the API in your web browser (https://developer.clickup.com/docs/trytheapi)",
+      "snippet": "Try the API in your web browser (https://developer.clickup.com/docs/trytheapi)\n【turn104search5】 [wordlim: 200] Crawled: today; Use the ClickUp API right from your web browser! ... Every API endpoint in our documentation can be tested directly from your browser using the interactive \"Try It\" panel on the right side of each endpoint. ... Authentication\n"
+    },
+    {
+      "url": "https://help.clickup.com/hc/en-us/articles/38503227973655-Connect-an-MCP-server-to-your-Workspace",
+      "title": "Connect an MCP server to your Workspace – ClickUp Help (https://help.clickup.com/hc/en-us/articles/38503227973655-Connect-an-MCP-server-to-your-Workspace)",
+      "snippet": "Connect an MCP server to your Workspace – ClickUp Help (https://help.clickup.com/hc/en-us/articles/38503227973655-Connect-an-MCP-server-to-your-Workspace)\n【turn104search6】 [wordlim: 200] Crawled: today; For MCP call limits by plan, read ClickUp AI feature availability and limits. ... Connecting to the ClickUp MCP server, where an external AI client connects to your ClickUp data, is a separate feature governed by Personal API Token permissions.\n"
+    },
+    {
+      "url": "https://clickup.com/blog/how-to-use-clickup-mcp-server/",
+      "title": "How to Use the ClickUp MCP Server: 2026 Setup Guide (https://clickup.com/blog/how-to-use-clickup-mcp-server/)",
+      "snippet": "How to Use the ClickUp MCP Server: 2026 Setup Guide (https://clickup.com/blog/how-to-use-clickup-mcp-server/)\n【turn104search8】 [wordlim: 200] Published: 2 months ago; Crawled: today; Lastly, in Antigravity, add the server entry to your `mcp_config.json` file following Google’s documentation for connecting custom MCP servers. ... Docs and Chat  | Working with Doc pages and ClickUp Chat  | Create Document, Get Document Pages, Update Document Page, Create Document Page, Get Chat Channels, Send Chat Message ... It can connect to external MCP servers as a client, which means ClickUp Brain and ClickUp Super Agents can call tools in your CRM, code repository, billing system—basically anywhere that exposes an MCP server. ... ClickUp’s official MCP server isn’t the only option.\n"
+    },
+    {
+      "url": "https://help.clickup.com/hc/en-us/articles/6303422883095-Create-your-own-app-with-the-ClickUp-API",
+      "title": "Create your own app with the ClickUp API – ClickUp Help (https://help.clickup.com/hc/en-us/articles/6303422883095-Create-your-own-app-with-the-ClickUp-API)",
+      "snippet": "Create your own app with the ClickUp API – ClickUp Help (https://help.clickup.com/hc/en-us/articles/6303422883095-Create-your-own-app-with-the-ClickUp-API)\n【turn104search9】 [wordlim: 200] Crawled: yesterday; # Create your own app with the ClickUp API ... Each user can only access the content available to their individual ClickUp user account.\n"
+    },
+    {
+      "url": "https://developer.clickup.com/docs/mcp-tools",
+      "title": "Supported Tools (https://developer.clickup.com/docs/mcp-tools)",
+      "snippet": "Supported Tools (https://developer.clickup.com/docs/mcp-tools)\n【turn104search10】 [wordlim: 200] Crawled: today; Create Document  | Creates a new Doc within the Workspace, usually in a specific location (like a Space or Folder) or in the private Docs area. ... `clickup_update_chat_message`  | Write  | Yes  | `message_id`, plus content, title, resolved or assignee  | Message ID  | Replaces the message text. ... `clickup_react_to_chat_message`  | Write  | No  | `message_id`, `add` or `remove`, emoji  | Success  | Adds or removes the user's own reaction. ...   * Daily MCP call limits by plan: see ClickUp's MCP Server.\n"
+    },
+    {
+      "url": "https://help.clickup.com/hc/en-us/sections/37731627018647-ClickUp-MCP",
+      "title": "ClickUp MCP – ClickUp Help (https://help.clickup.com/hc/en-us/sections/37731627018647-ClickUp-MCP)",
+      "snippet": "ClickUp MCP – ClickUp Help (https://help.clickup.com/hc/en-us/sections/37731627018647-ClickUp-MCP)\n【turn104search11】 [wordlim: 200] Crawled: 3 days ago; Use our official ClickUp MCP (Model Context Protocol) server to access your ClickUp data from your preferred AI models and agents.\n"
+    },
+    {
+      "url": "https://help.clickup.com/hc/en-us/categories/5735460831255-Integrations-API-and-MCP",
+      "title": "Integrations, API, and MCP – ClickUp Help (https://help.clickup.com/hc/en-us/categories/5735460831255-Integrations-API-and-MCP)",
+      "snippet": "Integrations, API, and MCP – ClickUp Help (https://help.clickup.com/hc/en-us/categories/5735460831255-Integrations-API-and-MCP)\n【turn104search14】 [wordlim: 200] Crawled: 5 days ago; Your AI models and agents can use our official MCP (Model Context Protocol) server to access your ClickUp data in a simple and secure w...\n"
+    },
+    {
+      "url": "https://developer.clickup.com/docs/common_errors",
+      "title": "Common Errors (https://developer.clickup.com/docs/common_errors)",
+      "snippet": "Common Errors (https://developer.clickup.com/docs/common_errors)\n【turn104search15】 [wordlim: 200] Crawled: today; Common errors you may encounter while using the ClickUp API. ... You can create a proxy script using any server-side language and then use Javascript to send requests. ... The redirect URI was not present during the OAuth authentication flow.\n"
+    },
+    {
+      "url": "https://clickup.com/integrations.html",
+      "title": "ClickUp™ | Integrations (https://clickup.com/integrations.html)",
+      "snippet": "ClickUp™ | Integrations (https://clickup.com/integrations.html)\n【turn104search17】 [wordlim: 200] Crawled: 5 days ago; Image: The ClickUp MCP server URL, https://mcp.clickup.com/mcp, in an mcp.json file\n"
+    },
+    {
+      "url": "https://developer.clickup.com/docs/faq",
+      "title": "Frequently asked questions (https://developer.clickup.com/docs/faq)",
+      "snippet": "Frequently asked questions (https://developer.clickup.com/docs/faq)\n【turn104search19】 [wordlim: 200] Crawled: today; FAQ about the ClickUp API. ... To get a list of team members that have access to a particular task or list, use the routes `GET /api/v2/task/{{task_id}}/member` and `GET /api/v2/list/{{list_id}}/member` under the \"Members\" section of this documentation.\n"
+    },
+    {
+      "url": "https://clickup.com/terms/developer-terms",
+      "title": "ClickUp™ | Developer Terms of Use (https://clickup.com/terms/developer-terms)",
+      "snippet": "ClickUp™ | Developer Terms of Use (https://clickup.com/terms/developer-terms)\n【turn104search20】 [wordlim: 200] Published: 2.4 years ago; Crawled: today; Each App must maintain absolute compatibility with the API in order to be granted access to the API and Services, including by (a) applying all SDK and API updates provided by ClickUp, (b) providing all functionalities identified as critical by ClickUp, and (c) supporting any standards (including encryption standards) required by ClickUp. ... After termination, you will have no further access to any ClickUp developer website or portal or to any data or content that you submitted to ClickUp relating to the Developer Platform. ... Treasury Department's list of Specially Designated Nationals and Consolidated Sanctions list (collectively, \"Prohibited Persons\"); (c) to any country to which such export or re-export is restricted or prohibited, or as to which the United States government or any agency thereof requires an export license or other governmental approval at the time of export or re-export without first obtaining such license or approval or (d) otherwise in violation of any export or import restrictions, laws or regulations of any United States or foreign agency or authority.\n"
+    },
+    {
+      "url": "https://clickup.com/blog/clickup-api/",
+      "title": "How to Build Two-Way Integrations With the ClickUp Public API (https://clickup.com/blog/clickup-api/)",
+      "snippet": "How to Build Two-Way Integrations With the ClickUp Public API (https://clickup.com/blog/clickup-api/)\n【turn104search23】 [wordlim: 200] Published: 11 months ago; Crawled: today; Headers    | Additional metadata sent to the server    | Authentication: Your API token or credentials to tell the server who is making the request. ... Image: ClickUp Public API: Integrate, automate, and innovate with ClickUp’s developer platform ClickUp Public API: Integrate, automate, and innovate with ClickUp’s developer platform ... 📚 Also Read: ClickUp Public API Documentation ... Image: Sample API request to retrieve authorized workspaces in ClickUp, demonstrating authentication and response structure Sample API request to retrieve authorized workspaces in ClickUp, demonstrating authentication and response structure\n"
+    },
+    {
+      "url": "https://developer.clickup.com/docs/rate-limits",
+      "title": "Rate Limits (https://developer.clickup.com/docs/rate-limits)",
+      "snippet": "Rate Limits (https://developer.clickup.com/docs/rate-limits)\n【turn104search26】 [wordlim: 200] Crawled: today; Understand the rate limits that apply to the ClickUp API.\n"
+    }
+  ],
+  "selected": [
+    {
+      "url": "https://developer.clickup.com/docs/authentication",
+      "title": "Authentication (https://developer.clickup.com/docs/authentication)",
+      "snippet": "Authentication (https://developer.clickup.com/docs/authentication)\n【turn104search3】 [wordlim: 200] Crawled: today; > You'll need to sign in to your ClickUp account in order to generate or regenerate a token. ...   * Access Token URL: `https://api.clickup.com/api/v2/oauth/token`\n"
+    },
+    {
+      "url": "https://developer.clickup.com/docs/Getting%20Started",
+      "title": "Get Started with the ClickUp API (https://developer.clickup.com/docs/Getting%20Started)",
+      "snippet": "Get Started with the ClickUp API (https://developer.clickup.com/docs/Getting%20Started)\n【turn104search2】 [wordlim: 200] Crawled: today; ClickUp API docs can all be executed against your ClickUp account. ... Both methods ensure that you and your users only have access to the information permitted by ClickUp.\n"
+    },
+    {
+      "url": "https://developer.clickup.com/docs/connect-an-ai-assistant-to-clickups-mcp-server",
+      "title": "ClickUp's MCP Server (https://developer.clickup.com/docs/connect-an-ai-assistant-to-clickups-mcp-server)",
+      "snippet": "ClickUp's MCP Server (https://developer.clickup.com/docs/connect-an-ai-assistant-to-clickups-mcp-server)\n【turn104search0】 [wordlim: 200] Crawled: today; The Model Context Protocol (MCP) is a secure, standardized framework that lets external AI agents interact with ClickUp Workspace data—like tasks, lists, folders, and docs—using natural language. ... Our MCP server URL is `https://mcp.clickup.com/mcp`.\n\nClickUp's MCP Server\n\n# ClickUp's MCP Server\n\nLearn about ClickUp's MCP Server so you can use your AI assistant with ClickUp!\n\nThe Model Context Protocol (MCP) is a secure, standardized framework that lets external AI agents interact with ClickUp Workspace data—like tasks, lists, folders, and docs—using natural language. MCP helps users, especially developers, automate workflows, connect third-party AI tools, and enable agentic AI features in their preferred apps, all while keeping security and user control tight.\n\nClickUp's MCP Server is available on all plans.\n\nSetup instructions\n\nLearn how to setup your AI assistant with ClickUp's MCP server.\n\nOur MCP server URL is `https://mcp.clickup.com/mcp`.\n\nWhat you can do\n\nWith ClickUp's MCP server, you can:\n\n  * Orchestrate task workflows: Manage tasks with assignees, priorities, and due dates across lists and spaces.\n  * Build executive reports: Create release notes, status updates, and portfolio summaries from tasks and docs.\n"
+    },
+    {
+      "url": "https://help.clickup.com/hc/en-us/articles/33335772678423-What-is-ClickUp-MCP",
+      "title": "What is ClickUp MCP? – ClickUp Help (https://help.clickup.com/hc/en-us/articles/33335772678423-What-is-ClickUp-MCP)",
+      "snippet": "What is ClickUp MCP? – ClickUp Help (https://help.clickup.com/hc/en-us/articles/33335772678423-What-is-ClickUp-MCP)\n【turn104search1】 [wordlim: 200] Crawled: today; Without the Everything AI add-on, ClickUp MCP limits calls per rolling 24-hour period instead. ... ### Can I authenticate with my own API keys or access tokens?\n\n# FAQ\n\nFrequently asked questions about the ClickUp MCP server.\n\n### Can I monitor how many MCP calls my Workspace has used?\n\nNot at this time.\n\n### Can I authenticate with my own API keys or access tokens?\n\nNo, only OAuth is supported. OAuth is an industry-standard protocol that provides secure, delegated access. It lets you grant limited access to your resources without sharing credentials, supports granular permissions, and makes it easy to revoke access.\n\nAPI keys are less secure because they’re static, usually have broad access, and are harder to manage or revoke if compromised.\n\n### Can I use ClickUp MCP to search external apps I've connected to my ClickUp Workspace?\n\nNo, Connected Search can only be used from within your Workspace. For a list of all external apps that support Connected Search, read our Connected Search article.\n\n### Do admins need to take any action inside ClickUp before setting up an external tool like Claude or ChatGPT?\n\nNo action is needed inside ClickUp. ClickUp MCP will provide the list of available tools.\n\n### Will my custom LLM connect?\n\nYes, if your team builds an MCP client implementation that meets the following criteria:\n\n  * Implements the JSON-RPC 2.0 protocol over HTTP\n  * Supports OAuth 2.1 with PKCE authentication\n  * Follows the MCP specification\n"
+    },
+    {
+      "url": "https://developer.clickup.com/docs/connect-an-ai-assistant-to-clickups-mcp-server-1",
+      "title": "MCP Server Setup Instructions (https://developer.clickup.com/docs/connect-an-ai-assistant-to-clickups-mcp-server-1)",
+      "snippet": "MCP Server Setup Instructions (https://developer.clickup.com/docs/connect-an-ai-assistant-to-clickups-mcp-server-1)\n【turn104search4】 [wordlim: 200] Crawled: today; Paste the following link into the Server URL field: https://mcp.clickup.com/mcp ... To manually set up VS Code for the ClickUp MCP server, open a terminal and run the following command:\n"
+    },
+    {
+      "url": "https://developer.clickup.com/docs/trytheapi",
+      "title": "Try the API in your web browser (https://developer.clickup.com/docs/trytheapi)",
+      "snippet": "Try the API in your web browser (https://developer.clickup.com/docs/trytheapi)\n【turn104search5】 [wordlim: 200] Crawled: today; Use the ClickUp API right from your web browser! ... Every API endpoint in our documentation can be tested directly from your browser using the interactive \"Try It\" panel on the right side of each endpoint. ... Authentication\n"
+    }
+  ],
+  "pages": [
+    {
+      "url": "https://developer.clickup.com/docs/authentication",
+      "requested_url": "https://developer.clickup.com/docs/authentication",
+      "status": 200,
+      "title": "Authentication (https://developer.clickup.com/docs/authentication)",
+      "text": "Authentication For AI agents: the docs index is at https://developer.clickup.com/llms.txt. Append .md to any documentation page URL to get its markdown version. Authentication To use the ClickUp API, you must authenticate every request. For personal use, authenticate with your personal API token . For apps or integrations that other people use, use the OAuth flow , allowing users to authorize Workspaces for your app. Include the token in the Authorization header of your requests. Both methods ensure that you and your users only have access to the information permitted by ClickUp. 👍 View the OAuth endpoints. Personal Token Use a personal API token for individual or testing purposes. Personal tokens begin with pk_ . Add the token to the header: Authorization: {personal_token} . This is also needed to use the Try-It feature in the API docs. Generate or regenerate a Personal API Token Log in to ClickUp. In the upper-right corner, click your avatar. Select Settings . In the sidebar, click Apps . Or click here to go directly to your settings. Under API Token , click Generate or Regenerate . 👀 Note You'll need to sign in to your ClickUp account in order to generate or regenerate a token. Click Copy to copy the personal token to your clipboard. Personal tokens never expire. Build Apps for others - OAuth Flow To allow others to use your app, implement the OAuth2 flow so each user has their own token for accessing their ClickUp resources. OAuth resources and specs: Authentication: OAuth 2.0 Grant Type: Authorization Code . Learn more . Authorization URL: https://app.clickup.com/api Access Token URL: https://api.clickup.com/api/v2/oauth/token 👀 Note ClickUp uses the authorization code grant type . Use your personal API key to use the Try-It feature in the API docs. Step 1: Create an OAuth app Only Workspace owners or admins can create OAuth apps. Log in to ClickUp. In the upper-right corner, click your avatar. Select Settings . In the sidebar, click Apps . Click Create new app . Name the app and add a redirect URL . You'll receive a client_id and secret . Step 2: Retrieve an Authorization Code Send users to this URL to connect their ClickUp account: https://app.clickup.com/api?client_id={client_id}&redirect_uri={redirect_uri} You can also add a state parameter: https://app.clickup.com/api?client_id={client_id}&redirect_uri={redirect_uri}&state={state} 👀 Note Non-SSL redirect URIs may not be supported in the future. Users will be redirected back to the redirect_uri with the authorization code after logging in. Select Workspaces Users can authorize one or more Workspaces. Use the Get Authorized Teams (Workspaces) endpoint to see which Workspaces are authorized. Redirect users to the authorization URL to modify Workspace permissions. Step 3: Request a Token Use the Get Access Token endpoint with client_id , client_secret , and code to get the access token. This token is used in the Authorization: Bearer {access_token} header for all API requests made on behalf of the user. The access token currently does not expire. This is subject to change. Learn more about OAuth: OAuth.net OAuth Simplified Digital Ocean Intro to OAuth 2.0 Updated 8 months ago Did this page help you? Yes No Copy Page"
+    },
+    {
+      "url": "https://developer.clickup.com/docs/Getting%20Started",
+      "requested_url": "https://developer.clickup.com/docs/Getting%20Started",
+      "status": 200,
+      "title": "Get Started with the ClickUp API (https://developer.clickup.com/docs/Getting%20Started)",
+      "text": "Get Started with the ClickUp API For AI agents: the docs index is at https://developer.clickup.com/llms.txt. Append .md to any documentation page URL to get its markdown version. ClickUp API 2.0 Build your own custom integrations and ClickUp apps with our public Application Programming Interface (API). Explore the ClickUp API ClickUp API docs can all be executed against your ClickUp account. Eith provide the UI with your personal API key or login and your credentials will be prefilled. The following guides give a quickstart on how to use the ClickUp API and expand on the features available. Sample Application We've created a sample application that demonstrates how to use the ClickUp API. See https://github.com/clickup/clickup-APIv2-demo . API v2 and v3 In the API reference section you will find a few individual endpoints that are defined as API v3. We're working on updating the rest of the API to v3 and provide a dedicated guide for API v3. In the meantime, please familiarize yourself with the differences between API v2 and v3 . Authentication To use the ClickUp API, you must authenticate every request. For personal use, authenticate with your personal API token . For apps or integrations that other people use, use the OAuth flow , allowing users to authorize Workspaces for your app. Include the token in the Authorization header of your requests. Both methods ensure that you and your users only have access to the information permitted by ClickUp. Rate limits The ClickUp API enforces request rate limits per token. Rate limits vary depending on your Workspace Plan . Plan limits API endpoints vary depending on your plan. Updated about 1 year ago Did this page help you? Yes No Copy Page"
+    },
+    {
+      "url": "https://developer.clickup.com/docs/connect-an-ai-assistant-to-clickups-mcp-server",
+      "requested_url": "https://developer.clickup.com/docs/connect-an-ai-assistant-to-clickups-mcp-server",
+      "status": 200,
+      "title": "ClickUp's MCP Server (https://developer.clickup.com/docs/connect-an-ai-assistant-to-clickups-mcp-server)",
+      "text": "ClickUp's MCP Server For AI agents: the docs index is at https://developer.clickup.com/llms.txt. Append .md to any documentation page URL to get its markdown version. The Model Context Protocol (MCP) is a secure, standardized framework that lets external AI agents interact with ClickUp Workspace data—like tasks, lists, folders, and docs—using natural language. MCP helps users, especially developers, automate workflows, connect third-party AI tools, and enable agentic AI features in their preferred apps, all while keeping security and user control tight. ClickUp's MCP Server is available on all plans . Setup instructions Learn how to setup your AI assistant with ClickUp's MCP server. Our MCP server URL is https://mcp.clickup.com/mcp . What you can do With ClickUp's MCP server, you can: Orchestrate task workflows : Manage tasks with assignees, priorities, and due dates across lists and spaces. Build executive reports : Create release notes, status updates, and portfolio summaries from tasks and docs. Track time : Log time entries and manage timers. Answer work questions : Search tasks, docs, and comments for quick answers. Collaborate in comments and chat : Summarize threads, extract action items, and post updates. And more! Supported MCP Clients ClickUp MCP supports all major MCP clients and Apps. Supported tools Learn about the tools available through ClickUp's MCP Server with example prompts you can use in your AI assistant. Rate limits ClickUp's MCP Server has rate limits that depend on two criteria: If your Workspace has purchased the Everything AI add-on. Your Workspace plan. 📘 Note: MCP usage and rate limits are subject to the terms of our fair use policy . Future restrictions may apply to ClickUp MCP features. ClickUp MCP usage and rate limits may change as we assess usage and costs. With the Everything AI add-on If your Workspace has purchased the Everything AI add-on , your MCP rate limits are the same as the rate limits for our Public API, which vary by plan. Without the Everything AI add-on If your Workspace has not purchased the Everything AI add-on, your MCP usage is subject to the following rate limits by plan: Plan MCP Calls per rolling 24 hours Free Forever 100 Core/Unlimited 300 Business 1,000 Business Plus 2,500 Enterprise 5,000 Enterprise Plus 25,000 Rolling 24-hour rate limits Limits are per Workspace and per client. Example: an Unlimited Workspace gets 300/24h for Claude and a separate 300/24h for Cursor. Each tool call counts as 1. initialize and tools/list don't count. When the limit is hit, the call returns RATE_LIMIT_EXCEEDED with retryAfter . Plans with no daily cap still follow the public API per-minute limits, and MCP shares that budget with the public API. MCP doesn't use AI Super Credits. The rolling 24-hour rate limits begin with your first request. For example, starting on Monday at 1 pm, you use the MCP to send 200 requests. On Tuesday, at 11 am, you send another 100 requests. You will be rate-limited and unable to send additional requests via MCP until 1 pm on Tuesday. Attempting to send requests while rate limited does not extend the 24 hour limit. Rate limits cannot be reset. FAQ Q. Can I authenticate with my own API keys or Auth access tokens? A. No, you cannot authenticate using your own API keys or Auth access tokens. We only support OAuth for authentication. Q. Why can't I delete things with the MCP? A. For the time being, we haven’t added any deletion tools as a safety measure. Feel free to leave your feedback here. Q. Can I search my apps with Connected Search using ClickUp MCP? A. No, it is not possible to search connected apps. Q. Can I connect my custom LLM Client? A. Yes, if your team builds an MCP client implementation that meets the following criteria: Implements the JSON-RPC 2.0 protocol over HTTP. Supports OAuth 2.1 with PKCE authentication. Follows the MCP specification. Updated about 2 months ago Did this page help you? Yes No Copy Page"
+    },
+    {
+      "url": "https://help.clickup.com/hc/en-us/articles/33335772678423-What-is-ClickUp-MCP",
+      "requested_url": "https://help.clickup.com/hc/en-us/articles/33335772678423-What-is-ClickUp-MCP",
+      "status": 200,
+      "title": "What is ClickUp MCP? – ClickUp Help (https://help.clickup.com/hc/en-us/articles/33335772678423-What-is-ClickUp-MCP)",
+      "text": "What is ClickUp MCP? – ClickUp Help Skip to main content Search Ask me anything Your AI models and agents can use our official MCP (Model Context Protocol) server to access your ClickUp data in a simple and secure way. It's designed to work seamlessly with popular AI assistants like ChatGPT, Cursor, and Claude. ClickUp MCP is available on all plans . You can set up the ClickUp MCP server with any app that supports MCP servers, like Claude, Cursor, or VS Code. Workspaces are being upgraded to our new plans. Not all Workspaces have been upgraded yet. Learn more What can I do with the ClickUp MCP server? Orchestrate task workflows : Create, enrich, and route tasks with assignees, Priorities, and due dates across Lists and Spaces. Build executive reports : Produce release notes, status updates, and portfolio rollups consolidated from tasks, comments, and Docs. Track time : Start and stop timers, log historical entries, and fetch entries. Answer questions from work : Search tasks, Docs, and comments to deliver quick, context-rich answers. Collaborate in comments and Chat : Summarize threads, extract action items, and post updates. Attach files and images to Channel messages, Posts, and Channel thread replies. Available tools ClickUp's MCP server enables AI assistants like ChatGPT, Claude, Cursor, or VS Code, to integrate with ClickUp's tools and data. This means your AI assistant can now execute actions, retrieve information, and provide intelligent, context-aware insights instantly. For a full list of supported tools, read this developer article . Before you connect an MCP client, review the rate limits section below to learn which rate limits apply to your Workspace and how usage is counted. Example requests Below are some examples of requests you could make after you've connected your AI assistant to ClickUp's MCP server: Create a task for this bug we're working on. Find all my incomplete tasks due this week. List all milestones in the Product Launch project. How many hours has the team spent on clients this month? Setup instructions For step-by-step setup instructions, read our MCP Server Setup Instructions article . Rate limits ClickUp's MCP Server has rate limits that depend on two criteria: If your Workspace has purchased the Everything AI add-on. Your Workspace plan. MCP rate limits and public API rate limits are two separate limits. The public API limits requests per minute, per token. Without the Everything AI add-on, ClickUp MCP limits calls per rolling 24-hour period instead. With the Everything AI add-on If your Workspace has purchased the Everything AI add-on , your MCP rate limits are the same as the rate limits for our Public API which vary by plan. On our new plans that include ClickUp AI , AI is included with your plan instead of as separate add-ons. With the add-on, the rolling 24-hour limit no longer applies. Your MCP requests count toward the same per-minute, per-token limit as the public API: Free Forever, Unlimited, and Business Plans : 100 requests per minute, per token. Business Plus Plan : 1,000 requests per minute, per token. Enterprise Plan : 10,000 requests per minute, per token. On our new plans that include ClickUp AI , daily MCP limits differ by plan. Without the Everything AI add-on If your Workspace has not purchased the Everything AI add-on, your MCP usage is subject to the following daily rate limits by plan: Free Forever Plan : 100 calls per 24 hours. Unlimited Plan : 300 calls per 24 hours. Business Plan : 1,000 calls per 24 hours. Business Plus Plan : 2,500 calls per 24 hours. Enterprise Plan : 5,000 calls per 24 hours. Each person has their own daily limit. All the MCP clients you connect, such as Claude and Cursor, share that limit. Every MCP request counts toward the limit, including everyday actions like reading, creating, and updating tasks. It isn't limited to AI-generated actions. Rolling 24 hour rate limits The rolling 24 hour rate limit begins with your first request. For example, if your first MCP request on Monday is at 1pm and you reach your plan's daily limit by Tuesday at 11am, you will be rate limited until 1pm on Tuesday, 24 hours after your first request. Attempting to send requests while rate limited does not extend the 24 hour window. Rate limits cannot be reset. When you reach the limit, MCP requests return a 429 RATE_LIMIT_EXCEEDED error until the rolling 24 hour window resets. FAQ Frequently asked questions about the ClickUp MCP server. Can I monitor how many MCP calls my Workspace has used? Not at this time. Can I authenticate with my own API keys or access tokens? No, only OAuth is supported. OAuth is an industry-standard protocol that provides secure, delegated access. It lets you grant limited access to your resources without sharing credentials, supports granular permissions, and makes it easy to revoke access. API keys are less secure because they’re static, usually have broad access, and are harder to manage or revoke if compromised. Can I use ClickUp MCP to search external apps I've connected to my ClickUp Workspace? No, Connected Search can only be used from within your Workspace. For a list of all external apps that support Connected Search, read our Connected Search article . Do admins need to take any action inside ClickUp before setting up an external tool like Claude or ChatGPT? No action is needed inside ClickUp. ClickUp MCP will provide the list of available tools. Will my custom LLM connect? Yes, if your team builds an MCP client implementation that meets the following criteria: Implements the JSON-RPC 2.0 protocol over HTTP Supports OAuth 2.1 with PKCE authentication Follows the MCP specification Was this article helpful? Articles in this section Connect the Box MCP server to your Workspace Connect the Salesforce MCP server to your Workspace Connect the Gong MCP server to your Workspace Connect an MCP server to your Workspace What is ClickUp MCP?"
+    },
+    {
+      "url": "https://developer.clickup.com/docs/connect-an-ai-assistant-to-clickups-mcp-server-1",
+      "requested_url": "https://developer.clickup.com/docs/connect-an-ai-assistant-to-clickups-mcp-server-1",
+      "status": 200,
+      "title": "MCP Server Setup Instructions (https://developer.clickup.com/docs/connect-an-ai-assistant-to-clickups-mcp-server-1)",
+      "text": "MCP Server Setup Instructions For AI agents: the docs index is at https://developer.clickup.com/llms.txt. Append .md to any documentation page URL to get its markdown version. Setup instructions Below are the setup instructions for some of the most popular AI assistants. Claude Set up Claude to use the ClickUp MCP server! Pro, Team, Enterprise If you're on the Pro, Team, or Enterprise plan: In a browser or the desktop app, navigate to Settings in the sidebar. Scroll to Connectors at the bottom and click Add. In the prompt, enter the following: Name: ClickUp Remote MCP Server URL: https://mcp.clickup.com/mcp Free If you're on the Free plan of Claude, you'll set up the MCP server from the Claude desktop app: Go to your Claude desktop settings page. Click on Developer section. Click on edit config then open the claude_desktop_config.json with your editor of choice. Add the following and restart the Claude desktop app: JSON {\n  \"mcpServers\": {\n    \"clickup\": {\n      \"command\": \"npx\",\n      \"args\": [\"-y\", \"mcp-remote\", \"https://mcp.clickup.com/mcp\"]\n    }\n  }\n} Claude Code Use the follow command: claude mcp add --transport http clickup https://mcp.clickup.com/mcp Once you've opened a Claude Code session, run /mcp to go through the authentication flow. Cursor Install here , or from Cursor's MCP directory page . Manual installation To manually set up Cursor for the ClickUp MCP server, add the following to your mcp.json file: JSON {\n  \"mcpServers\": {\n    \"clickup\": {\n      \"url\": \"https://mcp.clickup.com/mcp\"\n    }\n  }\n} Devin Set up Devin to use the ClickUp MCP Server. Manual installation Open your Devin settings . Navigate to the MCP Marketplace . Click the button to Add your own MCP . Enter a name for the server (e.g., \"ClickUp\"). Set the Transport Type to HTTP . Enter a short description. Paste the following link into the Server URL field: https://mcp.clickup.com/mcp For Authentication, select OAuth . Enable the server. The first time you use the integration, Devin will attempt to connect and ask for authorization. Click the link provided to authorize your ClickUp workspace. Microsoft Copilot Studio Set up Microsoft Copilot Studio to use the ClickUp MCP Server. Manual installation Open Microsoft Copilot Studio and navigate to your Agent. Scroll down to the Tools section. Click Add Tool . Then click New tool Select Model Context Protocol . Enter a Name for the tool, such as ClickUp Enter a short Description for the tool. Paste the Server URL: https://mcp.clickup.com/mcp For Authentication, select OAuth . Ensure the configuration is set to Dynamic Discovery (DCR) . Click Create to finish setting up the tool. VS Code Set up VS Code to use the ClickUp MCP server! Manual installation To manually set up VS Code for the ClickUp MCP server, open a terminal and run the following command: code --add-mcp '{\"type\":\"http\",\"name\":\"clickup\",\"url\":\"https://mcp.clickup.com/mcp\"}' Then, from inside VS Code, go to your extensions section. You will find ClickUp MCP at the bottom of the list of MCP servers. Click the settings cogwheel on the ClickUp MCP and click Start Server . Follow the links to finish the authentication flow. Windsurf To set up Windsurf for the ClickUp MCP server: Press Ctrl + , on Windows or Cmd + , on Mac to open your Windsurf settings. Under Scroll to Cascade, click MCP servers. Click Add Server, then select Add custom server. Copy the following JSON to your Windsurf MCP config file: JSON {\n  \"mcpServers\": {\n    \"clickup\": {\n      \"serverUrl\": \"https://mcp.clickup.com/mcp\"\n    }\n  }\n} ChatGPT 🔓 Note : In Team, Enterprise, and Edu workspaces, only owners and admins have permission to configure MCP servers. Use the ClickUp MCP app in ChatGPT. Learn more To connect the ClickUp app from ChatGPT: Navigate to Apps . Search for ClickUp , or browse the Productivity category. Select ClickUp, then click Connect . Click Connect ClickUp . Sign into your ClickUp account, and select the Workspace(s) you want to use with ChatGPT. 🔁 Note : You can update the available Workspaces or ClickUp account you want to use at any time by reconnecting the app. Click Connect Workspace . Click Start Chat to use ClickUp with ChatGPT. Reconnect or disconnect ClickUp in ChatGPT To reconnect or disconnect ClickUp and ChatGPT: From Apps, search or browse for the ClickUp app. Click the settings cog icon. Click the ellipsis icon, then Reconnect to reconnect ClickUp and ChatGPT. Click Disconnect to remove the app. Antigravity To set up Antigravity to use the ClickUp MCP Server, you can review the Antigravity Docs from Google here . Following the instructions under Connecting Custom MCP Servers , add the following to your mcp_config.json file: JSON {\n    \"mcpServers\": {\n        \"clickup\": {\n            \"serverUrl\": \"https://mcp.clickup.com/mcp\"\n        }\n    }\n} Other clients You can configure most other clients to use ClickUp's MCP server with the following settings: Command: npx\nArguments: -y mcp-remote https://mcp.clickup.com/mcp \nEnvironment: None Updated 3 months ago Did this page help you? Yes No Copy Page"
+    },
+    {
+      "url": "https://developer.clickup.com/docs/trytheapi",
+      "requested_url": "https://developer.clickup.com/docs/trytheapi",
+      "status": 200,
+      "title": "Try the API in your web browser (https://developer.clickup.com/docs/trytheapi)",
+      "text": "Try the API in your web browser For AI agents: the docs index is at https://developer.clickup.com/llms.txt. Append .md to any documentation page URL to get its markdown version. Try an endpoint Every API endpoint in our documentation can be tested directly from your browser using the interactive \"Try It\" panel on the right side of each endpoint. Requests are made against the Workspace from which the API token was generated. Navigate to any endpoint in the Reference section Look for the \"Try It\" panel on the right side Fill in the required parameters and customize optional ones in the API docs Click \"Try It\" to make the request Authentication Under Credentials , paste your personal API key to authenticate your requests. All API calls are made against the Workspace from which the API token was generated. Updated about 1 year ago Did this page help you? Yes No Copy Page"
+    }
+  ],
+  "claims": {
+    "auth": {
+      "value": [
+        "OAuth 2.0",
+        "API key"
+      ],
+      "sources": [
+        "https://developer.clickup.com/docs/authentication"
+      ],
+      "evidence": [
+        {
+          "url": "https://developer.clickup.com/docs/authentication",
+          "excerpt": "al token to your clipboard. Personal tokens never expire. Build Apps for others - OAuth Flow To allow others to use your app, implement the OAuth2 flow so each user has their own token for accessing their ClickUp resources. OAuth resources and specs: Authentication: OAuth 2.0 Grant Type: Authorization Code . Learn more . Authorization URL: https://app.clickup.com/",
+          "method": "OAuth 2.0"
+        },
+        {
+          "url": "https://developer.clickup.com/docs/authentication",
+          "excerpt": "/api Access Token URL: https://api.clickup.com/api/v2/oauth/token 👀 Note ClickUp uses the authorization code grant type . Use your personal API key to use the Try-It feature in the API docs. Step 1: Create an OAuth app Only Workspace owners or admins can create OAuth apps. Log in to ClickUp. In the upper-right corner, click your avatar. Select Settings . In the sid",
+          "method": "API key"
+        }
+      ],
+      "reason": ""
+    },
+    "credential_gate": {
+      "value": "unknown",
+      "sources": [],
+      "evidence": [],
+      "reason": "No reliable automated access-tier extraction; targeted search results require claim-specific review"
+    },
+    "api_surface": {
+      "value": "unknown",
+      "sources": [],
+      "evidence": [],
+      "reason": "Targeted search found no usable, claim-specific official documentation"
+    },
+    "official_mcp": {
+      "value": "yes",
+      "sources": [
+        "https://developer.clickup.com/docs/connect-an-ai-assistant-to-clickups-mcp-server-1"
+      ],
+      "evidence": [
+        {
+          "url": "https://developer.clickup.com/docs/connect-an-ai-assistant-to-clickups-mcp-server-1",
+          "excerpt": "wn version. Setup instructions Below are the setup instructions for some of the most popular AI assistants. Claude Set up Claude to use the ClickUp MCP server! Pro, Team, Enterprise If you're on the Pro, Team, or Enterprise plan: In a browser or the desktop app, navigate to Settings in the sidebar. Scroll to Connectors at the bottom and click Add. In the prompt, enter the fol"
+        }
+      ],
+      "reason": ""
+    },
+    "composio_toolkit": {
+      "value": "listed",
+      "sources": [
+        "https://docs.composio.dev/toolkits/clickup"
+      ],
+      "evidence": [
+        {
+          "url": "https://docs.composio.dev/toolkits/clickup",
+          "excerpt": "Composio catalog match; verify product scope"
+        }
+      ],
+      "reason": ""
+    },
+    "verdict": {
+      "value": "unknown",
+      "sources": [],
+      "evidence": [],
+      "reason": "Insufficient independently verified authentication, API and access evidence for a build decision"
+    }
+  },
+  "validation": [
+    "Automatic extraction is provisional and must be checked independently",
+    "Unknown does not mean the capability is absent"
+  ]
+}

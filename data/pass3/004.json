@@ -1,0 +1,20 @@
+{
+  "app": "Attio",
+  "source_pass": "data\\pass2\\004.json",
+  "access_candidates": [
+    {
+      "value": "self-serve / free or trial mentioned",
+      "url": "https://attio.com/legal/attio-developer-terms",
+      "excerpt": "Attio Developer Terms | Attio Attio Developer Terms By creating or logging into a developer account you agree to be bound by our Attio Developer Terms. Last updated: February 2026 Acceptable Use Attio Affiliate Program Terms Attio Data Processing Addendum Attio Developer Terms Cookie Policy De",
+      "status": "provisional; check scope, negation and plan details"
+    },
+    {
+      "value": "self-serve / free or trial mentioned",
+      "url": "https://attio.com/legal/attio-developer-terms",
+      "excerpt": "td (\" Attio \") (a) licenses the App SDK to Developers; (b) enables Developers to authenticate their API Apps to connect to the Attio API; and (c) may agree to publish Developed Apps in the App Marketplace. By creating a developer account at https://build.attio.com/, Developer agrees to these Attio Developer Terms. If the Licensed Components (as defined below) are being used by an indi",
+      "status": "provisional; check scope, negation and plan details"
+    }
+  ],
+  "reason_if_unknown": "",
+  "warning": "A phrase match is not a verified credential gate or a buildability verdict."
+}

@@ -1,0 +1,14 @@
+{
+  "app": "Airtable",
+  "source_pass": "data\\pass2\\072.json",
+  "access_candidates": [
+    {
+      "value": "self-serve / free or trial mentioned",
+      "url": "https://support.airtable.com/articles/2111090641-Airtable-API%3A-Common-troubleshooting",
+      "excerpt": "LIC_API_BILLING_LIMIT_EXCEEDED Error meaning - This error can appear if you've exceeded your plan's API call limit on the Free plan (1000 API calls per month) or Team plan (100000 API calls per month). Business and Enterprise plans have unlimited calls, so if you see a 429 error o",
+      "status": "provisional; check scope, negation and plan details"
+    }
+  ],
+  "reason_if_unknown": "",
+  "warning": "A phrase match is not a verified credential gate or a buildability verdict."
+}

@@ -1,8 +1,83 @@
 [
   {
+    "url": "https://api.docs.dealcloud.com/mcp",
+    "status": 200,
+    "final_url": "https://api.docs.dealcloud.com/mcp"
+  },
+  {
+    "url": "https://attio.com/help/reference/how-to-guides/attio-mcp-prompts-and-best-practices",
+    "status": 200,
+    "final_url": "https://attio.com/help/reference/how-to-guides/attio-mcp-prompts-and-best-practices"
+  },
+  {
+    "url": "https://brightdata.com/blog/ai/warp-cli-with-web-mcp",
+    "status": 200,
+    "final_url": "https://brightdata.com/blog/ai/warp-cli-with-web-mcp"
+  },
+  {
+    "url": "https://brightdata.com/pricing/mcp-server",
+    "status": 200,
+    "final_url": "https://brightdata.com/pricing/mcp-server"
+  },
+  {
+    "url": "https://dataforseo.com/help-center/dataforseo-new-mcp-server-and-cli-connection-a-quickstart-guide",
+    "status": 200,
+    "final_url": "https://dataforseo.com/help-center/dataforseo-new-mcp-server-and-cli-connection-a-quickstart-guide"
+  },
+  {
+    "url": "https://developer.aircall.io/docs/mcp-faqs",
+    "status": 200,
+    "final_url": "https://developer.aircall.io/docs/mcp-faqs"
+  },
+  {
+    "url": "https://developer.clickup.com/docs/connect-an-ai-assistant-to-clickups-mcp-server-1",
+    "status": 200,
+    "final_url": "https://developer.clickup.com/docs/connect-an-ai-assistant-to-clickups-mcp-server-1"
+  },
+  {
+    "url": "https://developer.close.com/mcp",
+    "status": 200,
+    "final_url": "https://developer.close.com/mcp"
+  },
+  {
+    "url": "https://developer.monday.com/api-reference/docs/authentication",
+    "status": 200,
+    "final_url": "https://developer.monday.com/api-reference/docs/authentication"
+  },
+  {
+    "url": "https://developer.monday.com/api-reference/docs/integrate-with-monday-mcp",
+    "status": 200,
+    "final_url": "https://developer.monday.com/api-reference/docs/integrate-with-monday-mcp"
+  },
+  {
+    "url": "https://developer.pinterest.com/about-pinterest-mcp/",
+    "status": 200,
+    "final_url": "https://developer.pinterest.com/about-pinterest-mcp/"
+  },
+  {
+    "url": "https://developer.pinterest.com/docs/key-concepts/access-tiers/",
+    "status": 200,
+    "final_url": "https://developer.pinterest.com/docs/key-concepts/access-tiers/"
+  },
+  {
+    "url": "https://developer.vonage.com/en/mcp-server/overview",
+    "status": 200,
+    "final_url": "https://developer.vonage.com/en/mcp-server/overview"
+  },
+  {
     "url": "https://developer.zendesk.com/api-reference/introduction/security-and-auth/",
     "status": 200,
     "final_url": "https://developer.zendesk.com/api-reference/introduction/security-and-auth/"
+  },
+  {
+    "url": "https://developers.asana.com/docs/mcp-server",
+    "status": 200,
+    "final_url": "https://developers.asana.com/docs/mcp-server"
+  },
+  {
+    "url": "https://developers.facebook.com/docs/business-management-apis/system-users/install-apps-and-generate-tokens?locale=en_US",
+    "status": 200,
+    "final_url": "https://developers.facebook.com/docs/business-management-apis/system-users/install-apps-and-generate-tokens?locale=en_US"
   },
   {
     "url": "https://developers.google.com/google-ads/api/docs/api-policy/access-levels",
@@ -15,6 +90,26 @@
     "final_url": "https://developers.google.com/google-ads/api/docs/developer-toolkit/mcp-server"
   },
   {
+    "url": "https://developers.google.com/google-ads/api/rest/auth",
+    "status": 200,
+    "final_url": "https://developers.google.com/google-ads/api/rest/auth"
+  },
+  {
+    "url": "https://developers.gorgias.com/docs/access-tokens-api-keys",
+    "status": 200,
+    "final_url": "https://developers.gorgias.com/docs/access-tokens-api-keys"
+  },
+  {
+    "url": "https://developers.grain.com/mcp/faq.html",
+    "status": 200,
+    "final_url": "https://developers.grain.com/mcp/faq.html"
+  },
+  {
+    "url": "https://developers.hubspot.com/blog/harnessing-the-power-of-hubspots-public-apis-with-postman",
+    "status": 200,
+    "final_url": "https://developers.hubspot.com/blog/harnessing-the-power-of-hubspots-public-apis-with-postman"
+  },
+  {
     "url": "https://developers.hubspot.com/changelog/service-keys",
     "status": 200,
     "final_url": "https://developers.hubspot.com/changelog/service-keys"
@@ -25,14 +120,34 @@
     "final_url": "https://developers.hubspot.com/docs/apps/developer-platform/build-apps/integrate-with-the-remote-hubspot-mcp-server"
   },
   {
+    "url": "https://developers.klaviyo.com/en/docs/klaviyo_mcp_server",
+    "status": 200,
+    "final_url": "https://developers.klaviyo.com/en/docs/klaviyo_mcp_server"
+  },
+  {
     "url": "https://developers.notion.com/reference/create-view",
     "status": 200,
     "final_url": "https://developers.notion.com/reference/create-view"
   },
   {
-    "url": "https://docs.apify.com/api/v2",
+    "url": "https://developers.squarespace.com/mcp/overview",
     "status": 200,
-    "final_url": "https://docs.apify.com/api/v2"
+    "final_url": "https://developers.squarespace.com/mcp/overview"
+  },
+  {
+    "url": "https://docs.apify.com/agents/quickstart",
+    "status": 200,
+    "final_url": "https://docs.apify.com/agents/quickstart"
+  },
+  {
+    "url": "https://docs.apify.com/integrations/api",
+    "status": 200,
+    "final_url": "https://docs.apify.com/integrations/api"
+  },
+  {
+    "url": "https://docs.apify.com/mcp",
+    "status": 200,
+    "final_url": "https://docs.apify.com/mcp"
   },
   {
     "url": "https://docs.composio.dev/toolkits/ahrefs",
@@ -420,14 +535,49 @@
     "final_url": "https://docs.composio.dev/toolkits/zoho_cliq"
   },
   {
+    "url": "https://docs.consensus.app/consensus-mcp",
+    "status": 403,
+    "final_url": "https://docs.consensus.app/consensus-mcp"
+  },
+  {
+    "url": "https://docs.datadoghq.com/mcp_server/",
+    "status": 200,
+    "final_url": "https://docs.datadoghq.com/mcp_server/"
+  },
+  {
+    "url": "https://docs.github.com/en/graphql",
+    "status": 200,
+    "final_url": "https://docs.github.com/en/graphql"
+  },
+  {
+    "url": "https://docs.github.com/en/rest/authentication/authenticating-to-the-rest-api",
+    "status": 200,
+    "final_url": "https://docs.github.com/en/rest/authentication/authenticating-to-the-rest-api"
+  },
+  {
     "url": "https://docs.github.com/en/rest/using-the-rest-api/getting-started-with-the-rest-api",
     "status": 200,
     "final_url": "https://docs.github.com/en/rest/using-the-rest-api/getting-started-with-the-rest-api"
   },
   {
-    "url": "https://docs.reducto.ai/office/licensing/setup",
+    "url": "https://docs.gorgias.com/en-US/connect-your-ai-assistant-to-the-gorgias-mcp-6310546",
     "status": 200,
-    "final_url": "https://docs.reducto.ai/office/licensing/setup"
+    "final_url": "https://docs.gorgias.com/en-US/connect-your-ai-assistant-to-the-gorgias-mcp-6310546"
+  },
+  {
+    "url": "https://docs.helpscout.com/article/1140-mailbox-api",
+    "status": 200,
+    "final_url": "https://docs.helpscout.com/article/1140-mailbox-api"
+  },
+  {
+    "url": "https://docs.helpscout.com/article/1779-help-scout-mcp-server",
+    "status": 200,
+    "final_url": "https://docs.helpscout.com/article/1779-help-scout-mcp-server"
+  },
+  {
+    "url": "https://docs.mrscraper.com/docs/getting-started/mcp-server",
+    "status": 200,
+    "final_url": "https://docs.mrscraper.com/docs/getting-started/mcp-server"
   },
   {
     "url": "https://docs.slack.dev/ai/slack-mcp-server/",
@@ -465,8 +615,173 @@
     "final_url": "https://github.com/sherlock-project/sherlock"
   },
   {
+    "url": "https://gumroad.com/mcp",
+    "status": 200,
+    "final_url": "https://gumroad.com/mcp"
+  },
+  {
+    "url": "https://help.ahrefs.com/en/articles/13913559-getting-started-with-ahrefs-mcp",
+    "status": 200,
+    "final_url": "https://help.ahrefs.com/en/articles/13913559-getting-started-with-ahrefs-mcp"
+  },
+  {
+    "url": "https://help.coda.io/hc/en-us/articles/44722661982989-Connect-to-the-Coda-MCP",
+    "status": 403,
+    "final_url": "https://help.coda.io/hc/en-us/articles/44722661982989-Connect-to-the-Coda-MCP"
+  },
+  {
+    "url": "https://help.gladly.com/implementation/docs/get-your-api-tokens",
+    "status": 200,
+    "final_url": "https://help.gladly.com/implementation/docs/get-your-api-tokens"
+  },
+  {
+    "url": "https://help.otter.ai/hc/en-us/articles/35287607569687-Otter-MCP-Server",
+    "status": 403,
+    "final_url": "https://help.otter.ai/hc/en-us/articles/35287607569687-Otter-MCP-Server"
+  },
+  {
+    "url": "https://help.systeme.io/article/11331-how-to-manage-your-contacts-with-the-systeme-io-mcp-server",
+    "status": 200,
+    "final_url": "https://help.systeme.io/article/11331-how-to-manage-your-contacts-with-the-systeme-io-mcp-server"
+  },
+  {
+    "url": "https://mailchimp.com/developer/marketing/build/ai-tools/mcp-server/",
+    "status": 200,
+    "final_url": "https://mailchimp.com/developer/marketing/build/ai-tools/mcp-server/"
+  },
+  {
+    "url": "https://neo4j.com/docs/mcp/current/quickstart/",
+    "status": 200,
+    "final_url": "https://neo4j.com/docs/mcp/current/quickstart/"
+  },
+  {
+    "url": "https://pumble.com/help/integrations/automation-workflow-integrations/how-to-use-the-pumble-mcp-server/",
+    "status": 200,
+    "final_url": "https://pumble.com/help/integrations/automation-workflow-integrations/how-to-use-the-pumble-mcp-server/"
+  },
+  {
+    "url": "https://reducto.ai/developers",
+    "status": 200,
+    "final_url": "https://reducto.ai/developers"
+  },
+  {
+    "url": "https://seranking.com/api/integrations/mcp/",
+    "status": 200,
+    "final_url": "https://seranking.com/api/integrations/mcp/"
+  },
+  {
     "url": "https://shopify.dev/docs/api/usage/authentication",
     "status": 200,
     "final_url": "https://shopify.dev/docs/api/usage/authentication"
+  },
+  {
+    "url": "https://shopify.dev/docs/apps/build/stores/development-stores",
+    "status": 200,
+    "final_url": "https://shopify.dev/docs/apps/build/stores/development-stores"
+  },
+  {
+    "url": "https://supabase.com/docs/guides/ai-tools/mcp?client=windsurf",
+    "status": 200,
+    "final_url": "https://supabase.com/docs/guides/ai-tools/mcp?client=windsurf"
+  },
+  {
+    "url": "https://support.airtable.com/articles/2111090641-Airtable-API%3A-Common-troubleshooting",
+    "status": 200,
+    "final_url": "https://support.airtable.com/articles/2111090641-Airtable-API%3A-Common-troubleshooting"
+  },
+  {
+    "url": "https://support.freshdesk.com/support/solutions/articles/50000012670-model-context-protocol-mcp-integration-in-freshdesk",
+    "status": 200,
+    "final_url": "https://support.freshdesk.com/support/solutions/articles/50000012670-model-context-protocol-mcp-integration-in-freshdesk"
+  },
+  {
+    "url": "https://support.freshdesk.com/support/solutions/articles/50000014407-mcp-integration-frequently-asked-questions-faq-",
+    "status": 200,
+    "final_url": "https://support.freshdesk.com/support/solutions/articles/50000014407-mcp-integration-frequently-asked-questions-faq-"
+  },
+  {
+    "url": "https://support.grain.com/en/articles/15507288-grain-api",
+    "status": 200,
+    "final_url": "https://support.grain.com/en/articles/15507288-grain-api"
+  },
+  {
+    "url": "https://support.usepylon.com/articles/4735104435-how-do-i-create-an-api-token",
+    "status": 200,
+    "final_url": "https://support.usepylon.com/articles/4735104435-how-do-i-create-an-api-token"
+  },
+  {
+    "url": "https://support.zendesk.com/hc/en-us/articles/11400026079130-Connecting-external-AI-agents-to-the-Zendesk-MCP-server-or-Zendesk-AI-agents-EAP",
+    "status": 200,
+    "final_url": "https://support.zendesk.com/hc/en-us/articles/11400026079130-Connecting-external-AI-agents-to-the-Zendesk-MCP-server-or-Zendesk-AI-agents-EAP"
+  },
+  {
+    "url": "https://support.zendesk.com/hc/en-us/articles/4408889192858-Managing-API-token-access-to-the-Zendesk-API",
+    "status": 200,
+    "final_url": "https://support.zendesk.com/hc/en-us/articles/4408889192858-Managing-API-token-access-to-the-Zendesk-API"
+  },
+  {
+    "url": "https://university.clay.com/docs/connect-to-clay-mcp",
+    "status": 200,
+    "final_url": "https://university.clay.com/docs/connect-to-clay-mcp"
+  },
+  {
+    "url": "https://university.clay.com/docs/plans-and-billing",
+    "status": 200,
+    "final_url": "https://university.clay.com/docs/plans-and-billing"
+  },
+  {
+    "url": "https://vercel.com/changelog/chatgpt-is-now-supported-on-vercel-mcp",
+    "status": 200,
+    "final_url": "https://vercel.com/changelog/chatgpt-is-now-supported-on-vercel-mcp"
+  },
+  {
+    "url": "https://woocommerce.com/document/woocommerce-ai/mcp-server/",
+    "status": 200,
+    "final_url": "https://woocommerce.com/document/woocommerce-ai/mcp-server/"
+  },
+  {
+    "url": "https://www.brex.com/journal/brex-mcp-connect-brex-to-ai-tools",
+    "status": 200,
+    "final_url": "https://www.brex.com/journal/brex-mcp-connect-brex-to-ai-tools"
+  },
+  {
+    "url": "https://www.intercom.com/help/en/articles/9071694-intercom-developer-faqs",
+    "status": 200,
+    "final_url": "https://www.intercom.com/help/en/articles/9071694-intercom-developer-faqs"
+  },
+  {
+    "url": "https://www.notion.com/help/create-integrations-with-the-notion-api",
+    "status": 200,
+    "final_url": "https://www.notion.com/help/create-integrations-with-the-notion-api"
+  },
+  {
+    "url": "https://www.notion.com/help/notion-mcp",
+    "status": 200,
+    "final_url": "https://www.notion.com/help/notion-mcp"
+  },
+  {
+    "url": "https://www.pipedrive.com/en/features/mcp-server",
+    "status": 200,
+    "final_url": "https://www.pipedrive.com/en/features/mcp-server"
+  },
+  {
+    "url": "https://www.smartsheet.com/content-center/smartsheet-mcp-server-now-generally-available",
+    "status": 200,
+    "final_url": "https://www.smartsheet.com/content-center/smartsheet-mcp-server-now-generally-available"
+  },
+  {
+    "url": "https://www.twilio.com/docs/ai/mcp",
+    "status": 200,
+    "final_url": "https://www.twilio.com/docs/ai/mcp"
+  },
+  {
+    "url": "https://www.zoho.com/cliq/help/platform/zoho-cliq-mcp.html",
+    "status": 200,
+    "final_url": "https://www.zoho.com/cliq/help/platform/zoho-cliq-mcp.html"
+  },
+  {
+    "url": "https://www.zoho.com/crm/developer/docs/mcp/overview.html",
+    "status": 200,
+    "final_url": "https://www.zoho.com/crm/developer/docs/mcp/overview.html"
   }
 ]

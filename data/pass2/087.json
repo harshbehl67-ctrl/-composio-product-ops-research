@@ -1,0 +1,194 @@
+{
+  "app": {
+    "number": 87,
+    "name": "Xero",
+    "category": "Finance and Fintech",
+    "hint": "developer.xero.com"
+  },
+  "checked_at": "2026-11-23T14:09:33.645213+00:00",
+  "source_search": "data/new_search/087.json",
+  "candidates": [
+    {
+      "url": "https://developer.xero.com/documentation/guides/remote-mcp/overview",
+      "title": "Xero Developer Remote MCP — Xero Developer (https://developer.xero.com/documentation/guides/remote-mcp/overview)",
+      "snippet": "Xero Developer Remote MCP — Xero Developer (https://developer.xero.com/documentation/guides/remote-mcp/overview)\n【turn102search2】 [wordlim: 200] Crawled: 2 weeks ago; You don’t need separate credentials, and a PKCE app that works with the Xero API also works with the Remote MCP Server. ... This will vary per client, so check its documentation.\n"
+    },
+    {
+      "url": "https://devblog.xero.com/the-xero-remote-mcp-is-now-generally-available-06008f6ab2a7",
+      "title": "The Xero Remote MCP (Model Context Protocol) now generally available | by Corey Leung | Oct, 2026 | Xero Developer (https://devblog.xero.com/the-xero-remote-mcp-is-now-generally-available-06008f6ab2a7)",
+      "snippet": "The Xero Remote MCP (Model Context Protocol) now generally available | by Corey Leung | Oct, 2026 | Xero Developer (https://devblog.xero.com/the-xero-remote-mcp-is-now-generally-available-06008f6ab2a7)\n【turn102search4】 [wordlim: 200] Published: last month; Crawled: today; Remote MCP is Xero’s official, supported server. ... Setup steps for each client are in the Remote MCP documentation, and the Remote MCP FAQ covers the questions we’ve had most often, including “which one should I use?”\n"
+    },
+    {
+      "url": "https://developer.xero.com/documentation/guides/oauth2/client-credentials/",
+      "title": "Client Credentials — Xero Developer (https://developer.xero.com/documentation/guides/oauth2/client-credentials/)",
+      "snippet": "Client Credentials — Xero Developer (https://developer.xero.com/documentation/guides/oauth2/client-credentials/)\n【turn102search7】 [wordlim: 200] Crawled: today; Xero’s API offers a client credentials grant-type for apps to manage their own app-data via non-tenanted endpoints. ... Both code flow and client credential tokens can both be obtained using the same client id and client secret.\n"
+    },
+    {
+      "url": "https://developer.xero.com/documentation/best-practices/data-integrity/managing-tokens/",
+      "title": "Managing Tokens and Ids — Xero Developer (https://developer.xero.com/documentation/best-practices/data-integrity/managing-tokens/)",
+      "snippet": "Managing Tokens and Ids — Xero Developer (https://developer.xero.com/documentation/best-practices/data-integrity/managing-tokens/)\n【turn102search11】 [wordlim: 200] Crawled: last week; The initial OAuth 2.0 Authorisation Code flow for authentication and authorisation involves three main steps: ... Access Tokens: These are credentials that mean a user has granted you access to one or more of their organisations (tenants). ... After you first authenticate a user and receive an access token, you can call the connections endpoint for information about the Xero organisations (tenants) the user has connected your app to GET https://api.xero.com/connections\n"
+    },
+    {
+      "url": "https://developer.xero.com/documentation/guides/oauth2/overview",
+      "title": "OAuth 2.0 — Xero Developer (https://developer.xero.com/documentation/guides/oauth2/overview)",
+      "snippet": "OAuth 2.0 — Xero Developer (https://developer.xero.com/documentation/guides/oauth2/overview)\n【turn102search14】 [wordlim: 200] Crawled: 5 days ago; Xero’s API supports the authorization code grant type using the standard authorization code flow or the Proof Key for Code Exchange (PKCE) extension. ... Xero’s Custom Connections leverage the client_credentials grant type and are designed to make it easier to build bespoke integrations. ... Many OAuth 2.0 libraries implement this standard, check the documentation of your preferred library to use it. ... Sign In with Xero leverages security features including two step authentication, anomalous login detection, email address verification and more.\n"
+    },
+    {
+      "url": "https://devblog.xero.com/updates-to-xero-developer-pricing-and-terms-conditions-3bad2f05215c",
+      "title": "Updates to Xero Developer pricing and Terms & Conditions | by Xero Developer | Xero Developer (https://devblog.xero.com/updates-to-xero-developer-pricing-and-terms-conditions-3bad2f05215c)",
+      "snippet": "Updates to Xero Developer pricing and Terms & Conditions | by Xero Developer | Xero Developer (https://devblog.xero.com/updates-to-xero-developer-pricing-and-terms-conditions-3bad2f05215c)\n【turn102search20】 [wordlim: 200] Published: last year; Crawled: 2 weeks ago; # Updates to Xero Developer pricing and Terms & Conditions ... On 2 March, 2026, we’ll be shifting from our existing revenue-share model to a new pricing structure based on connections and Xero API usage.\n"
+    },
+    {
+      "url": "https://developer.xero.com/documentation/guides/oauth2/token-types/",
+      "title": "Token types — Xero Developer (https://developer.xero.com/documentation/guides/oauth2/token-types/)",
+      "snippet": "Token types — Xero Developer (https://developer.xero.com/documentation/guides/oauth2/token-types/)\n【turn102search22】 [wordlim: 200] Crawled: last month; You can get a new one by either sending the user through the authentication process again, or by using a refresh token. ...     `GET https://api.xero.com/api.xro/2.0/Invoices ... `client_id`  | Your client ID from the Developer Portal ... It is recommended you check the documentation for your library of choice to see how it works.\n"
+    },
+    {
+      "url": "https://developer.xero.com/documentation/guides/oauth2/troubleshooting/",
+      "title": "Troubleshooting — Xero Developer (https://developer.xero.com/documentation/guides/oauth2/troubleshooting/)",
+      "snippet": "Troubleshooting — Xero Developer (https://developer.xero.com/documentation/guides/oauth2/troubleshooting/)\n【turn102search25】 [wordlim: 200] Crawled: 3 days ago;   * The redirect_uri doesn’t match one of the Redirect URIs saved against your app on developer.xero.com ... ### Authentication unsuccessful ...   * User permissions changed: if the user who has authorized the connection between the API application and the Xero tenant is removed from accessing that tenant, or their role changes so that they can longer authorize API connections, then the connection will no longer be authorized ... To solve this error, make sure you have the correct credentials for your app.\n"
+    }
+  ],
+  "selected": [
+    {
+      "url": "https://developer.xero.com/documentation/guides/oauth2/client-credentials/",
+      "title": "Client Credentials — Xero Developer (https://developer.xero.com/documentation/guides/oauth2/client-credentials/)",
+      "snippet": "Client Credentials — Xero Developer (https://developer.xero.com/documentation/guides/oauth2/client-credentials/)\n【turn102search7】 [wordlim: 200] Crawled: today; Xero’s API offers a client credentials grant-type for apps to manage their own app-data via non-tenanted endpoints. ... Both code flow and client credential tokens can both be obtained using the same client id and client secret.\n"
+    },
+    {
+      "url": "https://developer.xero.com/documentation/guides/remote-mcp/overview",
+      "title": "Xero Developer Remote MCP — Xero Developer (https://developer.xero.com/documentation/guides/remote-mcp/overview)",
+      "snippet": "Xero Developer Remote MCP — Xero Developer (https://developer.xero.com/documentation/guides/remote-mcp/overview)\n【turn102search2】 [wordlim: 200] Crawled: 2 weeks ago; You don’t need separate credentials, and a PKCE app that works with the Xero API also works with the Remote MCP Server. ... This will vary per client, so check its documentation.\n"
+    },
+    {
+      "url": "https://devblog.xero.com/updates-to-xero-developer-pricing-and-terms-conditions-3bad2f05215c",
+      "title": "Updates to Xero Developer pricing and Terms & Conditions | by Xero Developer | Xero Developer (https://devblog.xero.com/updates-to-xero-developer-pricing-and-terms-conditions-3bad2f05215c)",
+      "snippet": "Updates to Xero Developer pricing and Terms & Conditions | by Xero Developer | Xero Developer (https://devblog.xero.com/updates-to-xero-developer-pricing-and-terms-conditions-3bad2f05215c)\n【turn102search20】 [wordlim: 200] Published: last year; Crawled: 2 weeks ago; # Updates to Xero Developer pricing and Terms & Conditions ... On 2 March, 2026, we’ll be shifting from our existing revenue-share model to a new pricing structure based on connections and Xero API usage.\n"
+    },
+    {
+      "url": "https://devblog.xero.com/the-xero-remote-mcp-is-now-generally-available-06008f6ab2a7",
+      "title": "The Xero Remote MCP (Model Context Protocol) now generally available | by Corey Leung | Oct, 2026 | Xero Developer (https://devblog.xero.com/the-xero-remote-mcp-is-now-generally-available-06008f6ab2a7)",
+      "snippet": "The Xero Remote MCP (Model Context Protocol) now generally available | by Corey Leung | Oct, 2026 | Xero Developer (https://devblog.xero.com/the-xero-remote-mcp-is-now-generally-available-06008f6ab2a7)\n【turn102search4】 [wordlim: 200] Published: last month; Crawled: today; Remote MCP is Xero’s official, supported server. ... Setup steps for each client are in the Remote MCP documentation, and the Remote MCP FAQ covers the questions we’ve had most often, including “which one should I use?”\n"
+    },
+    {
+      "url": "https://developer.xero.com/documentation/best-practices/data-integrity/managing-tokens/",
+      "title": "Managing Tokens and Ids — Xero Developer (https://developer.xero.com/documentation/best-practices/data-integrity/managing-tokens/)",
+      "snippet": "Managing Tokens and Ids — Xero Developer (https://developer.xero.com/documentation/best-practices/data-integrity/managing-tokens/)\n【turn102search11】 [wordlim: 200] Crawled: last week; The initial OAuth 2.0 Authorisation Code flow for authentication and authorisation involves three main steps: ... Access Tokens: These are credentials that mean a user has granted you access to one or more of their organisations (tenants). ... After you first authenticate a user and receive an access token, you can call the connections endpoint for information about the Xero organisations (tenants) the user has connected your app to GET https://api.xero.com/connections\n"
+    },
+    {
+      "url": "https://developer.xero.com/documentation/guides/oauth2/overview",
+      "title": "OAuth 2.0 — Xero Developer (https://developer.xero.com/documentation/guides/oauth2/overview)",
+      "snippet": "OAuth 2.0 — Xero Developer (https://developer.xero.com/documentation/guides/oauth2/overview)\n【turn102search14】 [wordlim: 200] Crawled: 5 days ago; Xero’s API supports the authorization code grant type using the standard authorization code flow or the Proof Key for Code Exchange (PKCE) extension. ... Xero’s Custom Connections leverage the client_credentials grant type and are designed to make it easier to build bespoke integrations. ... Many OAuth 2.0 libraries implement this standard, check the documentation of your preferred library to use it. ... Sign In with Xero leverages security features including two step authentication, anomalous login detection, email address verification and more.\n"
+    }
+  ],
+  "pages": [
+    {
+      "url": "https://developer.xero.com/documentation/guides/oauth2/client-credentials/",
+      "requested_url": "https://developer.xero.com/documentation/guides/oauth2/client-credentials/",
+      "status": 200,
+      "title": "Client Credentials — Xero Developer (https://developer.xero.com/documentation/guides/oauth2/client-credentials/)",
+      "text": "Client Credentials â Xero Developer This app works with JavaScript enabled."
+    },
+    {
+      "url": "https://developer.xero.com/documentation/guides/remote-mcp/overview",
+      "requested_url": "https://developer.xero.com/documentation/guides/remote-mcp/overview",
+      "status": 200,
+      "title": "Xero Developer Remote MCP — Xero Developer (https://developer.xero.com/documentation/guides/remote-mcp/overview)",
+      "text": "Xero Developer Remote MCP â Xero Developer This app works with JavaScript enabled."
+    },
+    {
+      "url": "https://devblog.xero.com/updates-to-xero-developer-pricing-and-terms-conditions-3bad2f05215c?gi=c271932cd35c",
+      "requested_url": "https://devblog.xero.com/updates-to-xero-developer-pricing-and-terms-conditions-3bad2f05215c",
+      "status": 200,
+      "title": "Updates to Xero Developer pricing and Terms & Conditions | by Xero Developer | Xero Developer (https://devblog.xero.com/updates-to-xero-developer-pricing-and-terms-conditions-3bad2f05215c)",
+      "text": "Medium Updates to Xero Developer pricing and Terms & Conditions | by Xero Developer | Xero Developer Sitemap Open in app Sign up Sign in Medium Logo Get app Write Search Sign up Sign in Xero Developer · The API & app developer programs for global small business platform, Xero. developer.xero.com Updates to Xero Developer pricing and Terms & Conditions Xero Developer 3 min read · Dec 3, 2025 -- Listen Share Xero Developer | December 4, 2025 Press enter or click to view image in full size We are deeply committed to investing in our ecosystem, enabling solutions that seamlessly scale to meet our joint customer needs while prioritising the protection and responsible use of their data. As the Xero ecosystem grows, we want to ensure our platform supports your app development journey. That’s why we’re making two key updates to give you more control over how you build and scale with Xero. Introducing clear, API usage-based pricing On 2 March, 2026, we’ll be shifting from our existing revenue-share model to a new pricing structure based on connections and Xero API usage. We’re introducing a tiered pricing model based on your API connections and usage. This change is designed to meet you where you are in your development journey and scale with you as you grow. What this means for you: Accessible entry point: The starter tier starts at $0, making it accessible for new developers and early-stage apps Pay for what you use: Your costs scale with your business growth, not before More capabilities as you grow: Each tier unlocks features matched to your development needs Predictable costs: Better visibility and control over your API usage and expenses View the new pricing model Updated Terms and Conditions We’ve updated the Xero Developer Terms and Conditions to provide more clarity and protection, especially around new technologies like AI. If you registered as a Xero developer on or after December 4, 2025, these revised terms apply to you immediately. If you registered before this date, this version of the terms will apply to you from March 2, 2026. Get Xero Developer ’s stories in your inbox Join Medium for free to get updates from this writer. Subscribe Subscribe Remember me for faster sign in Key updates to the terms and conditions include: a new prohibition on using API data to train AI and machine learning models clarifying that apps must not use bots or browser extensions to undermine our security controls or simulate user actions updated commercial terms, consolidating the existing Xero App Store Terms and Xero Certified Integration Terms, to reflect the new pricing model Read the new Xero Developer Platform Terms and new Xero Developer Commercial Terms Support and next steps We’re deeply invested in your long-term success and are committed to partnering with you every step of the way to ensure a smooth transition. Migration of existing app partners to the new pricing plans will begin starting in mid-March 2026. Apps will receive notice 30 days prior to their migration with details of their new tier and any actions needed to complete migration. Join us for a live Q&A where we’ll walk through: The pricing structure and how to estimate your costs What you get at each tier Transition timelines and support available Webinar dates: Register for Session 1 : Thursday, December 11, 10am (NZDT) / Wednesday, December 10, 1pm (PST) Register for Session 2 : Thursday, December 11, 4pm (GMT) / 8am (PST) Find detailed pricing and more information on our website . While we realise this adjustment may have an impact on your app and how you interact with our platform, we want you to know that we are deeply invested in your long-term success and will partner with you every step of the way to ensure a smooth transition. At Xero Developer, we remain committed to our ecosystem and our values: enabling our app partners and developer community to grow their businesses alongside Xero, and maintaining an ecosystem that is designed to enable innovation. Written by Xero Developer 870 followers · 281 following The API, developer and app programs for global small business platform, Xero. Build the future of small business with us! Published in Xero Developer 783 followers · Last published Oct 28, 2026 The API & app developer programs for global small business platform, Xero. developer.xero.com Help Status About Careers Press Blog Store Privacy Rules Terms Text to speech"
+    },
+    {
+      "url": "https://devblog.xero.com/the-xero-remote-mcp-is-now-generally-available-06008f6ab2a7?gi=8073db1cd816",
+      "requested_url": "https://devblog.xero.com/the-xero-remote-mcp-is-now-generally-available-06008f6ab2a7",
+      "status": 200,
+      "title": "The Xero Remote MCP (Model Context Protocol) now generally available | by Corey Leung | Oct, 2026 | Xero Developer (https://devblog.xero.com/the-xero-remote-mcp-is-now-generally-available-06008f6ab2a7)",
+      "text": "Medium The Xero Remote MCP (Model Context Protocol) now generally available | by Corey Leung | Oct, 2026 | Xero Developer Sitemap Open in app Sign up Sign in Medium Logo Get app Write Search Sign up Sign in Xero Developer · The API & app developer programs for global small business platform, Xero. developer.xero.com Remote Mcp Server Mcp Server Xeroapi Xero AI Agent The Xero Remote MCP (Model Context Protocol) now generally available Corey Leung 5 min read · Oct 13, 2026 -- Listen Share Press enter or click to view image in full size Developers have been using the local Xero MCP server to let Claude, Cursor and other AI tools read and write real Xero data: pull an aged receivables report, draft an invoice, check who still owes you money, all from a chat window. There was one catch. You had to run it yourself. Download it, configure it, keep it updated and keep it running on your own machine. Fine for one developer experimenting at their desk. Awkward the moment you wanted a colleague, a client or a second organisation to use the same thing. Today that changes. Remote MCP is now generally available. It’s the same Xero MCP server, hosted and maintained by Xero. Add the URL and sign in. That’s the setup. What is MCP? If you’ve heard “MCP” a hundred times this year and still couldn’t define it, here it is: Model Context Protocol is a standard way for AI assistants to use tools. An MCP server is a menu of things an AI can do, with clear instructions for each one. Point an AI assistant at the Xero MCP server and it can list invoices, create contacts or run a profit and loss report, because we’ve described exactly how. Until now, that menu lived on your computer. Now it also lives at Xero. Local vs Remote: the same kind of tools, a different place to run them. Remote MCP launches with 39 tools, the catalogue the closed beta ran on, covering four groups of jobs: Invoicing basics: invoices, bank transactions, contacts, manual journals, accounts, tax rates and organisation details Full accounting: credit notes, quotes, items and tracking categories Reporting: profit and loss, balance sheet, trial balance, and aged receivables and payables Payments: creating and listing payments The difference is where the server runs, and that changes who it’s for. Local MCP runs on your own machine, which means it’s yours to look after. You install it, configure it, keep it running and update it every time a new version ships. If you want someone else to use it, they have to set it up on their machine too. It’s the classic trade-off of running software yourself instead of in the cloud: you take on the maintenance, and nothing works unless your machine is on. Remote MCP is hosted by Xero. There’s nothing to install or maintain, you’re on the current version without updating anything, and because it’s a URL rather than a program on your laptop, you can build MCP clients that several people use, across more than one Xero organisation. It suits anything you want to share, run across organisations or not look after yourself. There’s also a difference in where you can use it. The usual way to set up the local server is with a Custom Connection, and Custom Connections are currently only available in the US, UK, Australia and New Zealand. If you’re building from anywhere else, that’s been a real barrier. Remote MCP connects through a standard Xero app using PKCE sign-in instead, so it’s available everywhere. This is the official one Remote MCP is Xero’s official, supported server. It uses Xero’s standard OAuth 2.0 sign-in with PKCE, so users consent to which organisation an AI tool can see, and calls go through the same permissions and rate limits as the rest of the Xero API. The server itself runs on Xero’s infrastructure, so the piece sitting between your AI tool and your accounting data is one Xero builds, monitors and maintains. Get Corey Leung ’s stories in your inbox Join Medium for free to get updates from this writer. Subscribe Subscribe Remember me for faster sign in That’s the case for using the official server: it’s supported and maintained by the team that builds the API it sits on. Included in your paid plan , nothing new on your invoice. If your commercial app is on Core or above , Remote MCP is included. There’s no separate fee and no new line item. Tool calls count as API calls under your existing usage, so what you see on your invoice doesn’t change shape. Plan names and prices are on the developer pricing page . If you’re on the free Starter plan , you can use Remote MCP with the demo organisation . That means you can connect it, try the tools and decide whether it’s worth upgrading, without spending anything. Connecting: add one URL, sign in, pick an organisation. You’ll need an app in the Xero Developer portal set up for PKCE authorisation, and an MCP client that supports remote servers, such as Claude Desktop, Claude Code, Cursor and VS Code. Remote MCP is included on Core and above. Apps on the Starter plan can use it with the demo organisation only. Then add the server: https://api.xero.com/mcp/v1 Your client will send you to Xero to sign in and choose an organisation. Approve it and you’re connected. Ask your first question with live Xero data. In Claude Code, for example, that’s one command: claude mcp add — scope user — transport http — client-id <YOUR_CLIENT_ID> — callback-port 3000 xero-mcp https://api.xero.com/mcp/v1 Setup steps for each client are in the Remote MCP documentation , and the Remote MCP FAQ covers the questions we’ve had most often, including “which one should I use?” We connected it on camera, so you can see what “done” looks like. In episode four of Is Everyone a Developer Now?, Mae Nacario, the product manager behind Remote MCP, and our hosts put it to work on camera. They walk through connecting Claude Code to Remote MCP with a PKCE app, then wire it into Buzz.xyz, an open-source workspace from Block where AI agents sit in channels alongside people. One agent gets a single instruction: use the Xero MCP server, and only work in the demo company. Then it’s asked, in plain English, to quote a made-up customer US$1,000 for an item. It checks Xero, finds the customer doesn’t exist yet, creates the contact, drafts the quote and sends back a link to it in Xero. Along the way, Mae explains why the team built a hosted version and why connecting more than one organisation at once matters, and Regan shares what to check before you connect your financial data to any AI tool. Watch the episode: What’s next: more tools, and more ways to build. The 39 tools available today are the catalogue from the closed beta. More are in the pipeline, and because Remote MCP is hosted, they’ll appear for everyone when they ship, with nothing to update on your end. Local MCP keeps working today. When you’re ready to move, point your client at the Remote URL. Remote Mcp Server Mcp Server Xeroapi Xero AI Agent Written by Corey Leung 17 followers · 2 following Editor of Xero Developer Published in Xero Developer 783 followers · Last published Oct 28, 2026 The API & app developer programs for global small business platform, Xero. developer.xero.com Help Status About Careers Press Blog Store Privacy Rules Terms Text to speech"
+    },
+    {
+      "url": "https://developer.xero.com/documentation/best-practices/data-integrity/managing-tokens/",
+      "requested_url": "https://developer.xero.com/documentation/best-practices/data-integrity/managing-tokens/",
+      "status": 200,
+      "title": "Managing Tokens and Ids — Xero Developer (https://developer.xero.com/documentation/best-practices/data-integrity/managing-tokens/)",
+      "text": "Managing Tokens and Ids â Xero Developer This app works with JavaScript enabled."
+    },
+    {
+      "url": "https://developer.xero.com/documentation/guides/oauth2/overview",
+      "requested_url": "https://developer.xero.com/documentation/guides/oauth2/overview",
+      "status": 200,
+      "title": "OAuth 2.0 — Xero Developer (https://developer.xero.com/documentation/guides/oauth2/overview)",
+      "text": "OAuth 2.0 â Xero Developer This app works with JavaScript enabled."
+    }
+  ],
+  "claims": {
+    "auth": {
+      "value": [
+        "OAuth 2.0"
+      ],
+      "sources": [
+        "https://developer.xero.com/documentation/guides/oauth2/overview"
+      ],
+      "evidence": [
+        {
+          "url": "https://developer.xero.com/documentation/guides/oauth2/overview",
+          "excerpt": "OAuth 2.0 â Xero Developer This app works with JavaScript enabled.",
+          "method": "OAuth 2.0"
+        }
+      ],
+      "reason": ""
+    },
+    "credential_gate": {
+      "value": "unknown",
+      "sources": [],
+      "evidence": [],
+      "reason": "No reliable automated access-tier extraction; targeted search results require claim-specific review"
+    },
+    "api_surface": {
+      "value": "unknown",
+      "sources": [],
+      "evidence": [],
+      "reason": "Targeted search found no usable, claim-specific official documentation"
+    },
+    "official_mcp": {
+      "value": "yes",
+      "sources": [
+        "https://devblog.xero.com/the-xero-remote-mcp-is-now-generally-available-06008f6ab2a7?gi=8073db1cd816"
+      ],
+      "evidence": [
+        {
+          "url": "https://devblog.xero.com/the-xero-remote-mcp-is-now-generally-available-06008f6ab2a7?gi=8073db1cd816",
+          "excerpt": "n in Medium Logo Get app Write Search Sign up Sign in Xero Developer · The API & app developer programs for global small business platform, Xero. developer.xero.com Remote Mcp Server Mcp Server Xeroapi Xero AI Agent The Xero Remote MCP (Model Context Protocol) now generally available Corey Leung 5 min read · Oct 13, 2026 -- Listen Share Press enter or click to view image in full size Developers have been using"
+        }
+      ],
+      "reason": ""
+    },
+    "composio_toolkit": {
+      "value": "listed",
+      "sources": [
+        "https://docs.composio.dev/toolkits/xero"
+      ],
+      "evidence": [
+        {
+          "url": "https://docs.composio.dev/toolkits/xero",
+          "excerpt": "Composio catalog match; verify product scope"
+        }
+      ],
+      "reason": ""
+    },
+    "verdict": {
+      "value": "unknown",
+      "sources": [],
+      "evidence": [],
+      "reason": "Insufficient independently verified authentication, API and access evidence for a build decision"
+    }
+  },
+  "validation": [
+    "Automatic extraction is provisional and must be checked independently",
+    "Unknown does not mean the capability is absent"
+  ]
+}

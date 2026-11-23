@@ -1,0 +1,50 @@
+{
+  "app": "Pinterest",
+  "source_pass": "data\\pass2\\038.json",
+  "access_candidates": [
+    {
+      "value": "self-serve / free or trial mentioned",
+      "url": "https://developer.pinterest.com/docs/getting-started/set-up-authentication-and-authorization/",
+      "excerpt": "t: Use this grant type to access the API with your own credentials to: Get started faster using the API and trying out the endpoints before you access it on behalf of your users. Automate API calls for your developer account by setting up CRON jobs. Because the Client Credentials flow does not require a manual authorization approval step, it is less secure. Make sure to s",
+      "status": "provisional; check scope, negation and plan details"
+    },
+    {
+      "value": "approval condition mentioned",
+      "url": "https://developers.pinterest.com/docs/key-concepts/access-tiers/",
+      "excerpt": " are ready to build a product for more users, you should upgrade to Standard access. To ensure your app gets approved for Standard access make sure to prep the following: Your app must already be approved for Trial access and comply with our Developer Guidelines . Prepare a video recording of your app completing an action using the Pinterest API. We wi",
+      "status": "provisional; check scope, negation and plan details"
+    },
+    {
+      "value": "self-serve / free or trial mentioned",
+      "url": "https://dev.pinterest.com/docs/getting-started/set-up-authentication-and-authorization/",
+      "excerpt": "t: Use this grant type to access the API with your own credentials to: Get started faster using the API and trying out the endpoints before you access it on behalf of your users. Automate API calls for your developer account by setting up CRON jobs. Because the Client Credentials flow does not require a manual authorization approval step, it is less secure. Make sure to s",
+      "status": "provisional; check scope, negation and plan details"
+    },
+    {
+      "value": "self-serve / free or trial mentioned",
+      "url": "https://developer.pinterest.com/docs/developer-tools/quickstart-tools/",
+      "excerpt": "ns: generate a token with the following scopes pins:read boards:read and user_accounts:read Sandbox token: generate a token that will work against all scopes in our Sandbox environment only How to Get Started Log into your developer account and go to your My apps page Select Manage on the app which you'd like to create a test token for On the Configure tab, create a test token under the ",
+      "status": "provisional; check scope, negation and plan details"
+    },
+    {
+      "value": "approval condition mentioned",
+      "url": "https://developer.pinterest.com/docs/developer-tools/quickstart-tools/",
+      "excerpt": "ive applications that leverage Pinterest's features. Before getting started Access to the Pinterest API requires you to have business account To use our developer tools, your app must already be approved for access. Review the Connect app guide for details. Approved apps will have an active status and visible app secret in your apps management page. Test access tokens T",
+      "status": "provisional; check scope, negation and plan details"
+    },
+    {
+      "value": "self-serve / free or trial mentioned",
+      "url": "https://developers.pinterest.com/docs/developer-tools/quickstart-tools/",
+      "excerpt": "ns: generate a token with the following scopes pins:read boards:read and user_accounts:read Sandbox token: generate a token that will work against all scopes in our Sandbox environment only How to Get Started Log into your developer account and go to your My apps page Select Manage on the app which you'd like to create a test token for On the Configure tab, create a test token under the ",
+      "status": "provisional; check scope, negation and plan details"
+    },
+    {
+      "value": "approval condition mentioned",
+      "url": "https://developers.pinterest.com/docs/developer-tools/quickstart-tools/",
+      "excerpt": "ive applications that leverage Pinterest's features. Before getting started Access to the Pinterest API requires you to have business account To use our developer tools, your app must already be approved for access. Review the Connect app guide for details. Approved apps will have an active status and visible app secret in your apps management page. Test access tokens T",
+      "status": "provisional; check scope, negation and plan details"
+    }
+  ],
+  "reason_if_unknown": "",
+  "warning": "A phrase match is not a verified credential gate or a buildability verdict."
+}

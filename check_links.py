@@ -4,7 +4,7 @@ import json
 from pathlib import Path
 import requests
 
-rows = json.loads(Path('assessed_dataset.json').read_text(encoding='utf-8'))
+rows = json.loads(Path('reviewed_dataset.json').read_text(encoding='utf-8'))
 urls = sorted({url for row in rows for field in row['fields'].values() for url in field['sources']})
 
 

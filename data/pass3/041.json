@@ -1,0 +1,26 @@
+{
+  "app": "Shopify",
+  "source_pass": "data\\pass2\\041.json",
+  "access_candidates": [
+    {
+      "value": "paid-plan condition mentioned",
+      "url": "https://shopify.dev/docs/api",
+      "excerpt": "ect to the Shopify API License and Terms of Use . Authentication covers which token and header each API uses, and access scopes gate what that token can read and write. Some APIs also require Shopify's approval or a specific Shopify plan . API versioning explains how Shopify releases a new version each quarter and supports each one for a year. You can find new features, breaking chang",
+      "status": "provisional; check scope, negation and plan details"
+    },
+    {
+      "value": "approval condition mentioned",
+      "url": "https://shopify.dev/docs/api",
+      "excerpt": "ect to the Shopify API License and Terms of Use . Authentication covers which token and header each API uses, and access scopes gate what that token can read and write. Some APIs also require Shopify's approval or a specific Shopify plan . API versioning explains how Shopify releases a new version each quarter and supports each one for a year. You can find n",
+      "status": "provisional; check scope, negation and plan details"
+    },
+    {
+      "value": "approval condition mentioned",
+      "url": "https://shopify.dev/docs/api/ai-toolkit",
+      "excerpt": "t to handle the migration. For example: 1 Migrate the extensions/my-checkout-extension extension to API version 2026-04. The toolkit doesn't remove the need to review and test the result. It helps automate the bulk of the migration work so you can spend more time validating behavior and preparing the updated extens",
+      "status": "provisional; check scope, negation and plan details"
+    }
+  ],
+  "reason_if_unknown": "",
+  "warning": "A phrase match is not a verified credential gate or a buildability verdict."
+}
