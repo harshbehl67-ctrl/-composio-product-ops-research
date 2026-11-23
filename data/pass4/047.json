@@ -1,0 +1,122 @@
+{
+  "app": {
+    "number": 47,
+    "name": "Ecwid",
+    "category": "Ecommerce",
+    "hint": "api-docs.ecwid.com"
+  },
+  "checked_at": "2026-11-23T18:15:08.883798+00:00",
+  "prior_source": "data/pass2/047.json",
+  "search_source": "data/pass4_search/047.json",
+  "new_candidates": [
+    {
+      "url": "https://docs.ecwid.com/api-reference/advanced/rest-api-calls",
+      "title": "REST API calls | REST API Reference | Ecwid Documentation (https://docs.ecwid.com/api-reference/advanced/rest-api-calls)",
+      "published_label": null
+    },
+    {
+      "url": "https://docs.ecwid.com/ecwid-api-features",
+      "title": "Ecwid API features | Ecwid Documentation (https://docs.ecwid.com/ecwid-api-features)",
+      "published_label": null
+    }
+  ],
+  "selected": [
+    {
+      "url": "https://docs.ecwid.com/api-reference/advanced/rest-api-calls",
+      "title": "REST API calls | REST API Reference | Ecwid Documentation (https://docs.ecwid.com/api-reference/advanced/rest-api-calls)",
+      "published_label": null
+    }
+  ],
+  "new_pages": [
+    {
+      "url": "https://docs.ecwid.com/api-reference/advanced/rest-api-calls",
+      "requested_url": "https://docs.ecwid.com/api-reference/advanced/rest-api-calls",
+      "status": 200,
+      "title": "REST API calls | REST API Reference | Ecwid Documentation (https://docs.ecwid.com/api-reference/advanced/rest-api-calls)",
+      "text": "REST API calls | REST API Reference | Ecwid Documentation For the complete documentation index, see llms.txt . Markdown versions of documentation pages are available by appending .md to page URLs. Skip to content AI Assistant I'm here to help you with the docs. What is this page about? What should I read next? Can you give an example? ⌘ Ctrl i AI Based on your context Send REST API REST API overview REST API error codes Store Profile Orders Products Categories Customers Discounts Domains Dictionaries Staff accounts Application Batch requests Shipping options Payment options Checkout extra fields Storefront widget details On this page Base URL: https://app.ecwid.com/api/v3/{storeId} Full list of endpoints and calls below. Store profile, checkout extra fields, shipping options, payment options Endpoint | Supported HTTP calls /profile GET PUT /profile/staffScopes GET /profile/order_statuses GET /profile/order_status/{statusId} GET PUT /profile/extrafields GET POST /profile/extrafields/{key} GET PUT DELETE /profile/logo POST DELETE /profile/invoicelogo POST DELETE /profile/emaillogo POST DELETE /profile/shippingOptions GET POST /profile/shippingOptions/{shippingOptionId} PUT DELETE /profile/paymentOptions GET POST /profile/paymentOptions/{paymentOptionId} GET PUT DELETE Store stats, deleted items history, store reports GET /reports/{reportType} GET /latest-stats Orders GET POST /orders GET /orders/last GET /orders/deleted GET PUT DELETE /orders/{orderId} GET /orders/{orderId}/repeatURL GET /orders/{orderId}/invoice-pdf GET /orders/{orderId}/invoices GET POST /orders/{orderId}/extraFields PUT DELETE /orders/{orderId}/extraFields/{extraFieldId} POST /order/calculate POST /orders/{orderId}/invoices/create-invoice Abandoned carts GET /carts GET PUT /carts/{cartId} POST /carts/{cartId}/place Recurring subscriptions GET /subscriptions GET PUT /subscriptions/{subscriptionId} Products, product variations, brands, classes, swatches GET POST DELETE /products GET PUT DELETE /products/{productId} GET PUT DELETE products/{productId}/gallery/video/{galleryVideoId} GET POST DELETE /products/{productId}/combinations GET PUT DELETE /products/{productId}/combinations/{combinationId} GET PUT /products/sort GET /products/deleted PUT /products/{productId}/inventory PUT /products/{productId}/combinations/{combinationId}/inventory PUT /products/{productId}/media POST /products/filters POST DELETE /products/{productId}/files GET PUT DELETE /products/{productId}/files/{fileId} POST DELETE /products/{productId}/image POST /products/{productId}/image/async POST DELETE /products/{productId}/video POST DELETE /products/{productId}/gallery POST /products/{productId}/gallery/async POST /products/{productId}/gallery/video POST DELETE /products/{productId}/combinations/{combinationId}/image POST /products/{productId}/combinations/{combinationId}/image/async DELETE /products/{productId}/gallery/{galleryImageId} GET POST /classes GET PUT DELETE /classes/{classId} GET /brands GET /swatches Product reviews GET /reviews GET /reviews/filters_data GET /reviews/deleted PUT DELETE /reviews/{reviewId} PUT /reviews/mass_update Categories GET POST /categories GET /categoriesByPath GET PUT DELETE /categories/{categoryId} GET PUT /categories/sort POST DELETE /categories/{categoryId}/image POST /categories/{categoryId}/image/async POST /categories/{categoryId}/assignProducts POST /categories/{categoryId}/unassignProducts Customers, customer groups, customer extra fields GET POST /customers GET PUT DELETE /customers/{customerId} GET POST /customers/{customerId}/contacts GET PUT DELETE /customers/{customerId}/contacts/{contactId} GET POST /store_extrafields/customers GET PUT DELETE /store_extrafields/customers/{extrafield_key} GET POST /customer_groups GET PUT DELETE /customer_groups/{groupId} GET /customers/deleted Promotions, discount coupons Endpoint | Supported HTTP calls /promotions GET POST /promotions/{promotionId} PUT DELETE /discount_coupons/ GET POST /discount_coupons/{discountCouponId} GET PUT DELETE /coupons/deleted GET Domains GET PUT /domains GET /domains/search POST /domains/purchase POST /domains/send_domain_verification_email POST /domains/reset_domain_password Dictionaries GET /countries GET /currencies GET /currencyByCountry GET /states GET /taxClasses Staff accounts GET POST /staff GET PUT DELETE /staff/{staffAccountId} Last updated 1 year ago Was this helpful? Store profile, checkout extra fields, shipping options, payment options Store stats, deleted items history, store reports Orders Abandoned carts Recurring subscriptions Products, product variations, brands, classes, swatches Product reviews Categories Customers, customer groups, customer extra fields Promotions, discount coupons Domains Dictionaries Staff accounts Was this helpful?",
+      "published_label": null
+    }
+  ],
+  "claims": {
+    "auth": {
+      "value": "unknown",
+      "sources": [],
+      "evidence": [],
+      "reason": "No sufficiently specific positive evidence extracted; review targeted search results."
+    },
+    "credential_gate": {
+      "value": "unknown",
+      "sources": [],
+      "evidence": [],
+      "reason": "No sufficiently specific positive evidence extracted; review targeted search results."
+    },
+    "api_surface": {
+      "value": [
+        "REST"
+      ],
+      "sources": [
+        "https://docs.ecwid.com/get-started/make-your-first-api-request",
+        "https://docs.ecwid.com/api-reference",
+        "https://docs.ecwid.com/get-started/api-glossary",
+        "https://support.ecwid.com/hc/en-us/articles/4938302203932-Adding-more-features-to-your-store-via-Ecwid-s-API",
+        "https://docs.ecwid.com/api-reference/advanced/rest-api-calls"
+      ],
+      "evidence": [
+        {
+          "value": "REST",
+          "url": "https://docs.ecwid.com/get-started/make-your-first-api-request",
+          "excerpt": "blic app Native and external apps Contact Ecwid API support team On this page All requests to Ecwid REST API require an access token . Ecwid uses OAuth 2.0 to provide secure access to the store data for public apps. If you customize your own store, however, you can skip OAuth and easily ",
+          "published_label": null
+        },
+        {
+          "value": "REST",
+          "url": "https://docs.ecwid.com/api-reference",
+          "excerpt": "REST API overview | REST API Reference | Ecwid Documentation For the complete documentation index, see llms.txt . Markdown versions of documentation pages are available by appending .md to",
+          "published_label": null
+        },
+        {
+          "value": "REST",
+          "url": "https://docs.ecwid.com/get-started/api-glossary",
+          "excerpt": " In documentation, reffered as client_secret . Access tokens Secure app credentials for authorizing REST API requests. If an app is installed in several Ecwid stores, it has unique access tokens for every store. There are two tokens: secret_token and public_token . Learn more about app a",
+          "published_label": null
+        },
+        {
+          "value": "REST",
+          "url": "https://support.ecwid.com/hc/en-us/articles/4938302203932-Adding-more-features-to-your-store-via-Ecwid-s-API",
+          "excerpt": "rst app will be created and installed automatically, and you can start making requests to the Ecwid REST API. On the app page, you will find your public and secret access tokens as well as the app keys (Client ID and Client secret). Use our API documentation to develop the feature you ne",
+          "published_label": null
+        },
+        {
+          "value": "REST",
+          "url": "https://docs.ecwid.com/api-reference/advanced/rest-api-calls",
+          "excerpt": "REST API calls | REST API Reference | Ecwid Documentation For the complete documentation index, see llms.txt . Markdown versions of documentation pages are available by appending .md to pa",
+          "published_label": null
+        }
+      ],
+      "reason": "Provisional extraction: validate scope and completeness against the cited page."
+    },
+    "official_mcp": {
+      "value": "unknown",
+      "sources": [],
+      "evidence": [],
+      "reason": "No sufficiently specific positive evidence extracted; review targeted search results."
+    },
+    "composio_toolkit": {
+      "value": "unknown",
+      "sources": [],
+      "evidence": [],
+      "reason": "No exact or reviewed alias match; absence is not established."
+    },
+    "verdict": {
+      "value": "unknown",
+      "sources": [],
+      "evidence": [],
+      "reason": "A supported access path, authentication method and API surface were not all extracted."
+    }
+  },
+  "validation": [
+    "All claims are provisional",
+    "No vendor MCP inference from Composio catalog",
+    "Negated MCP or client-only source is not counted as vendor-server proof"
+  ]
+}

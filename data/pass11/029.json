@@ -1,0 +1,216 @@
+{
+  "app": {
+    "number": 29,
+    "name": "Aircall",
+    "category": "Communications and Messaging",
+    "hint": "aircall.io"
+  },
+  "replayed_at": "2026-11-23T18:45:10.222535+00:00",
+  "source_passes": [
+    "data/pass2/029.json",
+    "data/pass4/029.json"
+  ],
+  "source_searches": [
+    "data/new_search/029.json",
+    "data/pass4_search/029.json"
+  ],
+  "publication_date_note": "Search publication labels are retained exactly; null means no label was available. Relative labels are not exact dates.",
+  "claims": {
+    "auth": {
+      "value": [
+        "API key",
+        "Basic authentication",
+        "OAuth 2.0",
+        "API token",
+        "Bearer token"
+      ],
+      "status": "provisional",
+      "sources": [
+        "https://developer.aircall.io/docs/authentication",
+        "https://developers.aircall.io/api-references",
+        "https://developers.aircall.io/tutorials/basic-authentication",
+        "https://developer.aircall.io/docs/how-to-register"
+      ],
+      "evidence": [
+        {
+          "value": "API key",
+          "url": "https://developer.aircall.io/docs/authentication",
+          "excerpt": "xt Choose one of the guides below to continue setting up authentication Authenticate with API Keys Set Up OAuth for Your Integration Did this page help you? Yes No Copy Page",
+          "published_label": null
+        },
+        {
+          "value": "Basic authentication",
+          "url": "https://developer.aircall.io/docs/authentication",
+          "excerpt": "own version. Getting Started Aircall supports two ways to authenticate with the REST API: Basic Authentication and OAuth. Use Basic Authentication when you are connecting your own internal tools or private integration to Aircall. Use OAuth when your app needs to access Aircall da",
+          "published_label": null
+        },
+        {
+          "value": "OAuth 2.0",
+          "url": "https://developers.aircall.io/api-references",
+          "excerpt": "igure several instances of an integration on one Aircall account. Aircall implemented the OAuth 2.0 authentication protocol so you can easily build an app on top of Aircall and deploy it on Aircall's Marketplace. Beyond the added security and scalability, the Aircall O",
+          "published_label": null
+        },
+        {
+          "value": "API key",
+          "url": "https://developers.aircall.io/api-references",
+          "excerpt": "i_token are needed to use Aircall Public API: go to your Company's Settings page . In the API Keys section, click on Add a new API key and get your api_token and api_token . Do not forget to copy/paste your api_token somewhere safe, we won't be able to retrieve it fo",
+          "published_label": null
+        },
+        {
+          "value": "API token",
+          "url": "https://developers.aircall.io/api-references",
+          "excerpt": "List all Campaigns , Retrieve Campaign statistics , and List Campaign call outcomes . An API token has company-wide access to Campaigns. See Outbound Campaigns for details. 17-09-2026 Retrieve a Campaign List all Campaigns Retrieve Campaign statistics List Campaign ca",
+          "published_label": null
+        },
+        {
+          "value": "Bearer token",
+          "url": "https://developers.aircall.io/api-references",
+          "excerpt": "lic API access_token with the following request. This access_token will then be used as a Bearer token in the Authorization header of each Public API requests you will make and does not expire. Body params client_id String The client_id provided by Aircall. More informati",
+          "published_label": null
+        },
+        {
+          "value": "Basic authentication",
+          "url": "https://developers.aircall.io/api-references",
+          "excerpt": "please refer to the OAuth section . Public API requests must be authenticated using HTTP Basic Authentication . The api_id is the username and the api_token is the password for each Public API requests. The Authorization HTTP header is constructed as follows: The api_id and api_",
+          "published_label": null
+        },
+        {
+          "value": "API key",
+          "url": "https://developers.aircall.io/tutorials/basic-authentication",
+          "excerpt": "ken in the Aircall Dashboard. You can create some in your Company's Settings page. In the API Keys section , click on Add a new API key . Aircall will generate two strings, representing the Basic Authentication username and password . Once generated and before closin",
+          "published_label": null
+        },
+        {
+          "value": "API token",
+          "url": "https://developers.aircall.io/tutorials/basic-authentication",
+          "excerpt": "d with Aircall OAuth tutorial! Steps Basic Authentication description Get your API ID and API Token credentials Create a Base64 encoded string with your API credentials Use this encoded string in your HTTP requests 1 - Basic Authentication description Every request to",
+          "published_label": null
+        },
+        {
+          "value": "Basic authentication",
+          "url": "https://developers.aircall.io/tutorials/basic-authentication",
+          "excerpt": "Basic Authentication | Aircall Explore All Getting started Advanced Open source Categories authentication calls data sync messages partners webhooks workflow Basic Authentication Detailed st",
+          "published_label": null
+        },
+        {
+          "value": "OAuth 2.0",
+          "url": "https://developer.aircall.io/docs/how-to-register",
+          "excerpt": "Register a Public MCP For AI agents: the docs index is at https://developer.aircall.io/llms.txt. Append .md to any documentation page URL to get its markdown version. Overview Registering an MCP with Aircall makes your tools and resources available to every Aircall AI customer, s",
+          "published_label": null
+        }
+      ],
+      "reason": "Provisional extraction; validate scope and completeness against cited pages."
+    },
+    "credential_gate": {
+      "value": [
+        "partner_or_sales"
+      ],
+      "status": "provisional",
+      "sources": [
+        "https://developer.aircall.io/docs/how-to-register",
+        "https://developer.aircall.io/docs/oauth"
+      ],
+      "evidence": [
+        {
+          "value": "partner_or_sales",
+          "url": "https://developer.aircall.io/docs/how-to-register",
+          "excerpt": "ation. The process has three steps on your side: Build a compliant MCP. Apply to the tech partner program. Share the details we need to connect to it. From there, the work shifts to Aircall. Our team reviews your submission, registers the connector, and runs it through an ev",
+          "published_label": null
+        },
+        {
+          "value": "partner_or_sales",
+          "url": "https://developer.aircall.io/docs/oauth",
+          "excerpt": "ication overview. OAuth credentials — If you haven't received them yet, apply to the Tech Partner program . A web server with two public HTTPS endpoints ready: one for your install_uri and one for your redirect_uri . A local server works too, but it needs to be exposed via a",
+          "published_label": null
+        }
+      ],
+      "reason": "Provisional extraction; validate scope and completeness against cited pages."
+    },
+    "api_surface": {
+      "value": "REST; broad documented surface",
+      "status": "provisional",
+      "sources": [
+        "https://developer.aircall.io/docs/authentication",
+        "https://developers.aircall.io/api-references",
+        "https://aircall.io/call-center-software-features/webhooks-api/"
+      ],
+      "evidence": [
+        {
+          "value": [
+            "REST"
+          ],
+          "breadth": "narrow",
+          "url": "https://developer.aircall.io/docs/authentication",
+          "excerpt": "Overview For AI agents: the docs index is at https://developer.aircall.io/llms.txt. Append .md to any documentation page URL to get its markdown version. Getting Started Aircall supports two ways to authenticate with the REST API: Basic Authentication and OAuth. Use Basic Authent",
+          "published_label": null
+        },
+        {
+          "value": [
+            "REST"
+          ],
+          "breadth": "broad",
+          "url": "https://developers.aircall.io/api-references",
+          "excerpt": "API References | Aircall icon-light Created with Sketch. icon-dark Created with Sketch. REST API Authentication Introduction OAuth ï¹£ Technology Partners Basic Auth ï¹£ Aircall customers Rate limiting Pagination Errors Versioning Versioning Strategy Content-Type Announcements AP",
+          "published_label": null
+        },
+        {
+          "value": [
+            "REST"
+          ],
+          "breadth": "moderate",
+          "url": "https://aircall.io/call-center-software-features/webhooks-api/",
+          "excerpt": "Webhooks & API | Aircall Webhooks & API Every business has unique needs. Use our REST API and Webhooks to create customized workflows between Aircall and your tech stack. GET FREE ACCESS REQUEST A DEMO 24,000+ COMPANIES TRUST AIRCALL to power their customer communications Customi",
+          "published_label": null
+        }
+      ],
+      "reason": "Provisional extraction; validate scope and completeness against cited pages."
+    },
+    "official_mcp": {
+      "value": "no_vendor_server_documented",
+      "status": "provisional",
+      "sources": [
+        "https://developer.aircall.io/docs/mcp-faqs"
+      ],
+      "evidence": [
+        {
+          "value": "no_vendor_server_documented",
+          "url": "https://developer.aircall.io/docs/mcp-faqs",
+          "excerpt": "ircall contact for more information. Does Aircall offer an MCP server As of this writting we don't offer an MCP servier but stay tuned. We might have news soon. Updated 3 months ago Did this page help you? Yes No Copy Page",
+          "published_label": null,
+          "context_note": "Explicit dated/scoped negation; not a universal absence claim."
+        }
+      ],
+      "reason": "Provisional; check date, ownership and access scope."
+    },
+    "composio_toolkit": {
+      "value": "listed",
+      "status": "provisional",
+      "sources": [
+        "https://docs.composio.dev/toolkits/aircall"
+      ],
+      "evidence": [],
+      "reason": "Catalog match only; not vendor MCP evidence."
+    },
+    "verdict": {
+      "value": "partner_outreach",
+      "status": "provisional",
+      "sources": [
+        "https://developer.aircall.io/docs/authentication",
+        "https://developers.aircall.io/api-references",
+        "https://developers.aircall.io/tutorials/basic-authentication",
+        "https://developer.aircall.io/docs/how-to-register",
+        "https://aircall.io/call-center-software-features/webhooks-api/",
+        "https://developer.aircall.io/docs/oauth"
+      ],
+      "evidence": [],
+      "reason": "Inferred only from extracted auth, API and access evidence; independent review required."
+    }
+  },
+  "validation": [
+    "Automatic extraction is provisional until independently reviewed",
+    "Unknown is not evidence of absence",
+    "Composio evidence cannot establish vendor MCP",
+    "Client-only and negated MCP statements are not vendor-server proof",
+    "API breadth is a text-coverage heuristic, not an endpoint census"
+  ]
+}

@@ -1,0 +1,373 @@
+{
+  "checked_at": "2026-11-24",
+  "method": "Current rendered-page inspection with installed Chrome and Qoder in-app browser, direct official text/Markdown/JSON/XML retrieval, and exact quote comparison; no search snippets or credentials.",
+  "audit_summary": {
+    "flagged_uses": 21,
+    "actions": 18,
+    "replace": 13,
+    "reclassify": 4,
+    "keep": 1,
+    "unresolved": 0,
+    "note": "Stale wording is replaced, inaccessible or contradicted citations are removed, and the two dynamically rendered quotations are preserved as explicit browser keeps."
+  },
+  "actions": [
+    {
+      "app": "Help Scout",
+      "field": "api_surface",
+      "decision": "replace",
+      "old_url": "https://developer.helpscout.com/llms.txt",
+      "old_quote": "## Inbox API 2.0 (Primary API)\n\nThe primary REST API for managing Help Scout conversations, customers, and support operations.",
+      "new_url": "https://developer.helpscout.com/llms.txt",
+      "new_quote": "The primary REST API for managing Help Scout conversations, customers, and support operations.",
+      "published_at": null,
+      "published_label": "undated",
+      "review_note": "The current plain-text index inserts base URL, authentication, rate-limit, and format lines between the heading and sentence. The replacement is the exact contiguous REST description.",
+      "new_title": "Help Scout Developer APIs"
+    },
+    {
+      "app": "Intercom",
+      "field": "credential_gate",
+      "decision": "replace",
+      "old_url": "https://developers.intercom.com/docs/build-an-integration/getting-started",
+      "old_quote": "If you are building a private app for your paid Intercom workspace, log in through the Intercom app sign in and then go to the Developer Hub to create an app for that workspace, which we will show you in the next step.",
+      "new_url": "https://developers.intercom.com/docs/build-an-integration/getting-started",
+      "new_quote": "If you are building a private app for your paid Intercom workspace, log in through the Intercom app sign in and then go to the Developer Hub to create an app for that workspace, which we will show in the next step.",
+      "published_at": null,
+      "published_label": "undated",
+      "review_note": "Rendered official text now says \"show in the next step\" rather than \"show you in the next step\"; the paid-workspace requirement is unchanged.",
+      "new_title": "Set up a Workspace"
+    },
+    {
+      "app": "Intercom",
+      "field": "verdict",
+      "decision": "replace",
+      "old_url": "https://developers.intercom.com/docs/build-an-integration/getting-started",
+      "old_quote": "If you are building a private app for your paid Intercom workspace, log in through the Intercom app sign in and then go to the Developer Hub to create an app for that workspace, which we will show you in the next step.",
+      "new_url": "https://developers.intercom.com/docs/build-an-integration/getting-started",
+      "new_quote": "If you are building a private app for your paid Intercom workspace, log in through the Intercom app sign in and then go to the Developer Hub to create an app for that workspace, which we will show in the next step.",
+      "published_at": null,
+      "published_label": "undated",
+      "review_note": "Rendered official text now says \"show in the next step\" rather than \"show you in the next step\"; the paid-workspace requirement is unchanged.",
+      "new_title": "Set up a Workspace"
+    },
+    {
+      "app": "Front",
+      "field": "official_mcp",
+      "decision": "replace",
+      "old_url": "https://help.front.com/en/articles/4883136",
+      "old_quote": "If you want to use Front in an MCP client that doesn't (yet) have an official directory listing — or you're building your own internal agent — your workspace admin can create a private developer app in Front and use its credentials to connect.",
+      "new_url": "https://help.front.com/en/articles/4883136",
+      "new_quote": "If you want to use Front in an MCP client that doesn't (yet) have an official directory listing - or if you're building your own internal agent - your workspace admin can create a private developer app in Front and use its credentials to connect.",
+      "published_at": null,
+      "published_label": "undated",
+      "review_note": "The rendered article uses hyphens and includes \"if\" before the internal-agent clause; the replacement is the exact current sentence.",
+      "new_title": "Front MCP"
+    },
+    {
+      "app": "Gladly",
+      "field": "api_surface",
+      "decision": "replace",
+      "old_url": "https://help.gladly.com/developer-tutorials/docs/default-api-rate-limits.md",
+      "old_quote": "Note that individual APIs may have their own API Rate Limit and will be documented as such. Otherwise, the following default rate limits apply.",
+      "new_url": "https://help.gladly.com/developer-tutorials/docs/default-api-rate-limits.md",
+      "new_quote": "Note that individual APIs may have their API Rate Limit and will be documented as such. Otherwise, the following default rate limits apply.",
+      "published_at": null,
+      "published_label": "undated",
+      "review_note": "The current official Markdown omits \"own\"; the replacement matches the visible source exactly.",
+      "new_title": "Default API Rate Limits"
+    },
+    {
+      "app": "Gladly",
+      "field": "credential_gate",
+      "decision": "replace",
+      "old_url": "https://help.gladly.com/developer-tutorials/docs/setup-and-testing/",
+      "old_quote": "To allow a user to create API tokens and access the API:\n\n1. Log in to your **Gladly instance**.\n2. Open the **menu** on the top left-hand portion of the page.\n3. Navigate to **Settings > Users**.\n4. Search and click on the user profile that should have access.\n5. You'll see a permission called **API User**. Select it, while keeping the user's Agent role intact.\n6. Click **Save** to give access.",
+      "new_url": "https://help.gladly.com/developer-tutorials/docs/setup-and-testing/",
+      "new_quote": "To allow a user to create API tokens and access the API: Log in to your Gladly instance. Open the menu on the top left-hand corner of the page. Navigate to Settings > Users. Search and click the user profile that should have access. You'll see a permission called API User. Select it, while keeping the user's Agent role intact. Click Save to give access.",
+      "published_at": null,
+      "published_label": "undated",
+      "review_note": "The rendered guide says \"top left-hand corner\" rather than \"portion\"; list markers and bold markup are normalized to visible text.",
+      "new_title": "Set up and test your API integration"
+    },
+    {
+      "app": "LiveAgent",
+      "field": "api_surface",
+      "decision": "replace",
+      "old_url": "https://support.liveagent.com/802463-rest-api",
+      "old_quote": "REST API\n\n### API key\n\n### API v1\n\n### API v3",
+      "new_url": "https://support.liveagent.com/802463-rest-api",
+      "new_quote": "API key is an identity of your LiveAgent (like your username and password) which you can use to build your own custom integration solutions.",
+      "published_at": null,
+      "published_label": "undated",
+      "review_note": "The current page keeps the REST API title and API-key explanation but no longer exposes the old heading-only sequence as contiguous visible text.",
+      "new_title": "REST API"
+    },
+    {
+      "app": "LiveAgent",
+      "field": "api_surface",
+      "decision": "replace",
+      "old_url": "https://support.liveagent.com/840770-complete-api-reference",
+      "old_quote": "API version 1\nAgents\nApplication\nCompanies\nConversations\nCustomers\nCustomers groups",
+      "new_url": "https://support.liveagent.com/840770-complete-api-reference",
+      "new_quote": "Api v.1 Agents Retrieves agent info and auth token Application Return application installation date and latest version Companies Retrieve list of companies Retrieve company info Conversations Delete conversation Retrieves all conversations Retrieves conversation info Retrieves all conversation messages Create new message in conversation Change status of the conversation Unassign a tag from a conversation Retrieve a list of tags assigned to a conversation Assign tag to a conversation Customers Delete custom field value in user contact Add custom field value to customer Retrieve customer groups Customers groups Delete customers group Retrieve customers group info Retrieve all groups of all customers Add customers group Change customers group",
+      "published_at": null,
+      "published_label": "undated",
+      "review_note": "The current reference interleaves operation descriptions with resource names. The replacement is a contiguous visible excerpt preserving broad v1 resource coverage.",
+      "new_title": "Complete API reference"
+    },
+    {
+      "app": "LiveAgent",
+      "field": "credential_gate",
+      "decision": "replace",
+      "old_url": "https://www.liveagent.com/pricing/",
+      "old_quote": "API keys\n\n1\n\n5\n\n10\n\nUnlimited\n\nLet third-party apps retrieve and push data and manage tickets from outside LiveAgent.",
+      "new_url": "https://www.liveagent.com/pricing/",
+      "new_quote": "API keys 1 5 10 Unlimited",
+      "published_at": null,
+      "published_label": "undated",
+      "review_note": "The current visible comparison row contains the plan counts but no longer contains the old explanatory sentence; the replacement is the exact row text.",
+      "new_title": "LiveAgent pricing"
+    },
+    {
+      "app": "LiveAgent",
+      "field": "official_mcp",
+      "decision": "replace",
+      "old_url": "https://www.liveagent.com/pricing/",
+      "old_quote": "Business and Enterprise: connect LiveAgent’s MCP server to external AI tools such as Claude.",
+      "new_url": "https://www.liveagent.com/pricing/",
+      "new_quote": "AI MCP server for your own AI tools",
+      "published_at": null,
+      "published_label": "undated",
+      "review_note": "The current Business plan lists an AI MCP server for the customer's own AI tools; the older combined Business/Enterprise sentence is absent.",
+      "new_title": "LiveAgent Business plan"
+    },
+    {
+      "app": "Paygent Connect",
+      "field": "credential_gate",
+      "decision": "replace",
+      "old_url": "https://www.gopaygent.com/pricing",
+      "old_quote": "We offer a sandbox environment with full API access at no cost. You can test transactions, webhooks, and integrations before going live. No credit card required to start.",
+      "new_url": "https://www.gopaygent.com/",
+      "new_quote": "Start for free No credit card required. Free plan available.",
+      "published_at": null,
+      "published_label": "undated",
+      "review_note": "The current pricing page no longer contains the sandbox paragraph. The first-party homepage visibly states free no-card access; the separate homepage sandbox card remains documented on the page but is not needed for the gate classification.",
+      "new_title": "Paygent developer platform"
+    },
+    {
+      "app": "Paygent Connect",
+      "field": "verdict",
+      "decision": "replace",
+      "old_url": "https://www.gopaygent.com/pricing",
+      "old_quote": "We offer a sandbox environment with full API access at no cost. You can test transactions, webhooks, and integrations before going live. No credit card required to start.",
+      "new_url": "https://www.gopaygent.com/",
+      "new_quote": "Start for free No credit card required. Free plan available.",
+      "published_at": null,
+      "published_label": "undated",
+      "review_note": "The current pricing page no longer contains the sandbox paragraph. The first-party homepage visibly states free no-card access; the separate homepage sandbox card remains documented on the page but is not needed for the gate classification.",
+      "new_title": "Paygent developer platform"
+    },
+    {
+      "app": "Gorgias",
+      "field": "credential_gate",
+      "decision": "reclassify",
+      "claim": {
+        "status": "checked",
+        "value": "self_serve_trial",
+        "gate_class": "self_serve_trial",
+        "reason": "The official signup page states a seven-day all-features trial with no credit card. Private apps need no special creation process and can use access tokens. Public-app review and paid-plan MCP are separate distribution/feature gates. The signup page is undated; private-app guidance was updated 2025-09-16.",
+        "evidence": [
+          {
+            "url": "https://www.gorgias.com/signup",
+            "title": "Gorgias signup",
+            "quote": "Get started for free 7-day trial | All features unlocked | No credit card required.",
+            "retrieved_at": "2026-11-24",
+            "published_at": null,
+            "published_label": "undated"
+          },
+          {
+            "url": "https://developers.gorgias.com/docs/private-vs-public-app",
+            "title": "Private vs. Public App",
+            "quote": "You don't need to follow any special process to create a private app.",
+            "retrieved_at": "2026-11-24",
+            "published_at": "2025-09-16",
+            "published_label": "Updated September 16, 2025"
+          }
+        ]
+      },
+      "review_note": "The old pricing FAQ quotations are no longer visible. The current official signup page consolidates the seven-day, all-features, no-card trial evidence without duplicating three citations."
+    },
+    {
+      "app": "Gorgias",
+      "field": "verdict",
+      "decision": "replace",
+      "old_url": "https://www.gorgias.com/pricing",
+      "old_quote": "Yes, the Gorgias trial gives you access to all features so you can fully test the platform before committing.",
+      "new_url": "https://www.gorgias.com/signup",
+      "new_quote": "Get started for free 7-day trial | All features unlocked | No credit card required.",
+      "published_at": null,
+      "published_label": "undated",
+      "review_note": "The current signup page visibly states the trial duration, feature access, and no-card requirement in one exact sentence.",
+      "new_title": "Gorgias signup"
+    },
+    {
+      "app": "QuickBooks",
+      "field": "official_mcp",
+      "decision": "reclassify",
+      "claim": {
+        "status": "checked",
+        "value": "vendor_server",
+        "mcp_mode": "local",
+        "server_url": null,
+        "transport": "stdio",
+        "authentication": [
+          "OAuth 2.0 with an Intuit Developer Portal app and a one-time browser OAuth handshake"
+        ],
+        "reason": "Intuit's official intuit/quickbooks-online-mcp-server repository, with commits through 2026-09-15, documents a local MCP server that runs over stdio and authenticates to QuickBooks Online using OAuth 2.0 after registering an Intuit Developer Portal app. No Intuit-hosted remote MCP endpoint was verified; the official Intuit Developer Plugin material documents onboarding rather than a server.",
+        "evidence": [
+          {
+            "url": "https://github.com/intuit/quickbooks-online-mcp-server",
+            "title": "GitHub - intuit/quickbooks-online-mcp-server: The QuickBooks MCP Server lets AI assistants access QuickBooks data via a standard interface. It uses the Model Context Protocol to expose QBO features as callable tools, enabling developers to build AI apps that fetch real-time QBO data through MCP. · GitHub",
+            "quote": "This MCP server provides complete QuickBooks Online API integration for Claude Code and other MCP-compatible clients.",
+            "retrieved_at": "2026-11-24",
+            "published_at": null,
+            "published_label": "undated"
+          },
+          {
+            "url": "https://github.com/intuit/quickbooks-online-mcp-server",
+            "title": "GitHub - intuit/quickbooks-online-mcp-server: The QuickBooks MCP Server lets AI assistants access QuickBooks data via a standard interface. It uses the Model Context Protocol to expose QBO features as callable tools, enabling developers to build AI apps that fetch real-time QBO data through MCP. · GitHub",
+            "quote": "Note: this is a local MCP server. It runs as a stdio subprocess on the developer's or partner's machine and authenticates to a QuickBooks Online company.",
+            "retrieved_at": "2026-11-24",
+            "published_at": null,
+            "published_label": "undated"
+          },
+          {
+            "url": "https://github.com/intuit/quickbooks-online-mcp-server",
+            "title": "GitHub - intuit/quickbooks-online-mcp-server: The QuickBooks MCP Server lets AI assistants access QuickBooks data via a standard interface. It uses the Model Context Protocol to expose QBO features as callable tools, enabling developers to build AI apps that fetch real-time QBO data through MCP. · GitHub",
+            "quote": "This server uses OAuth 2.0 to authenticate to a QuickBooks Online company. You'll set up an app on the Intuit Developer Portal and connect it to either a sandbox (for development) or your production QBO company.",
+            "retrieved_at": "2026-11-24",
+            "published_at": null,
+            "published_label": "undated"
+          },
+          {
+            "url": "https://github.com/intuit/quickbooks-online-mcp-server",
+            "title": "GitHub - intuit/quickbooks-online-mcp-server: The QuickBooks MCP Server lets AI assistants access QuickBooks data via a standard interface. It uses the Model Context Protocol to expose QBO features as callable tools, enabling developers to build AI apps that fetch real-time QBO data through MCP. · GitHub",
+            "quote": "Before you start: This MCP server is easy to run once authenticated, but QuickBooks Online integration is gated by Intuit's OAuth app setup. You must register an app on the Intuit Developer Portal and complete a one-time, browser-based OAuth handshake. Sandbox supports http://localhost redirect URIs; production requires a public HTTPS callback for the initial authorization.",
+            "retrieved_at": "2026-11-24",
+            "published_at": null,
+            "published_label": "undated"
+          },
+          {
+            "url": "https://github.com/intuit/quickbooks-online-mcp-server/commits/main/",
+            "title": "Commits · intuit/quickbooks-online-mcp-server · GitHub",
+            "quote": "Commits on Sep 15, 2026\nfix: make tests and CI cross-platform (#136)",
+            "retrieved_at": "2026-11-24",
+            "published_at": "2026-09-15",
+            "published_label": "latest commit dated Sep 15, 2026"
+          },
+          {
+            "url": "https://static.developer.intuit.com/output_html/qbo/docs/get-started/mcp-connector.html",
+            "title": "Build with Intuit Developer Plugin",
+            "quote": "Intuit Developer Plugin is an AI-assisted onboarding experience for developers building with Intuit APIs.",
+            "retrieved_at": "2026-11-24",
+            "published_at": null,
+            "published_label": "undated"
+          }
+        ]
+      },
+      "review_note": "The dynamic release-notes route rendered an empty body in both direct and browser checks. The official repository and static Intuit connector guide already establish the local server and plugin distinction, so the inaccessible release-note citation is removed."
+    },
+    {
+      "app": "Aircall",
+      "field": "official_mcp",
+      "decision": "reclassify",
+      "claim": {
+        "status": "checked",
+        "value": "vendor_server",
+        "mcp_mode": "early_access",
+        "reason": "Aircall operates a remote MCP server at https://mcp.aircall.io/mcp using OAuth. It is in beta, requires Account Manager enrollment and an Admin connection, and is read-only for calls and conversation intelligence; the AI add-on is required for conversation-intelligence tools. The current support article is undated.",
+        "evidence": [
+          {
+            "url": "https://support.aircall.io/en-gb/articles/39677926959517",
+            "title": "Aircall MCP",
+            "quote": "Aircall MCP gives an AI assistant, like Claude or ChatGPT, read-only access to your company's calls and conversation intelligence data.",
+            "retrieved_at": "2026-11-24",
+            "published_at": null,
+            "published_label": "undated"
+          },
+          {
+            "url": "https://support.aircall.io/en-gb/articles/39677926959517",
+            "title": "Aircall MCP",
+            "quote": "Important: Aircall MCP is currently in beta. To join the beta, contact your Account Manager.",
+            "retrieved_at": "2026-11-24",
+            "published_at": null,
+            "published_label": "undated",
+            "verification_method": "headless Chromium rendered body innerText (installed Chrome; no raw HTML)",
+            "verification_note": "The rendered official page reproduced the normalized quotation. Direct HTTP retrieval missed JavaScript-rendered, redirect-sensitive, or charset-sensitive content; no search snippet or hidden raw HTML was used.",
+            "verified_at": "2026-11-24",
+            "source_review": "The rendered official page reproduced the normalized quotation. Direct HTTP retrieval missed JavaScript-rendered, redirect-sensitive, or charset-sensitive content; no search snippet or hidden raw HTML was used."
+          },
+          {
+            "url": "https://support.aircall.io/en-gb/articles/39677926959517",
+            "title": "Aircall MCP",
+            "quote": "Aircall's MCP server publishes a catalog of tools it can use, such as \"search calls,\" \"get transcripts,\" and \"get sentiment,\" each with a defined input and output.",
+            "retrieved_at": "2026-11-24",
+            "published_at": null,
+            "published_label": "undated"
+          }
+        ]
+      },
+      "review_note": "The second support URL now contains unrelated partner-MCP release notes and no longer reproduces the old Aircall beta quotations. The current dedicated Aircall MCP article remains sufficient and is retained without the stale release-note citations."
+    },
+    {
+      "app": "SendGrid",
+      "field": "official_mcp",
+      "decision": "reclassify",
+      "claim": {
+        "status": "checked",
+        "value": "no_vendor_server_documented",
+        "review_basis": "scoped_documentation_review",
+        "mcp_mode": "unknown",
+        "reason": "Scoped documentation review of SendGrid's official MCP route, merged SendGrid/Twilio product page, and Twilio's official MCP documentation found no vendor server for SendGrid execution. The SendGrid MCP route returns 404 and the product page contains no MCP server text. Twilio's hosted MCP is a read-only documentation server that indexes SendGrid docs but does not connect to an account or execute API calls, so it is not a SendGrid execution server. This is a point-in-time documentation finding, not a universal absence claim. The SendGrid pages are undated; Twilio labels its MCP Public Beta without a publication date.",
+        "evidence": [
+          {
+            "url": "https://sendgrid.com/en-us/mcp",
+            "resolved_url": "https://www.twilio.com/en-us/sendgrid",
+            "title": "SendGrid Email API and Email Marketing Campaigns | Twilio",
+            "quote": "We merged our websites to make things simpler. You can now find all our trusted email solutions, plus everything else Twilio offers, over on Twilio.com.",
+            "retrieved_at": "2026-11-24",
+            "published_at": null,
+            "published_label": "undated"
+          },
+          {
+            "url": "https://www.twilio.com/docs/ai/mcp",
+            "title": "Twilio MCP server",
+            "quote": "This server is read-only: it searches and retrieves public API documentation, and it does not connect to a Twilio account or execute any API calls.",
+            "retrieved_at": "2026-11-24",
+            "published_at": null,
+            "published_label": "Public Beta; undated"
+          },
+          {
+            "url": "https://www.twilio.com/docs/ai/mcp",
+            "title": "Twilio MCP indexed content",
+            "quote": "Twilio SendGrid docs and support articles",
+            "retrieved_at": "2026-11-24",
+            "published_at": null,
+            "published_label": "Public Beta; undated"
+          }
+        ]
+      },
+      "review_note": "The SendGrid MCP route is a broken 404 link, so it is removed from checked evidence. The scoped no-vendor-execution-server finding remains supported by the merged product page and Twilio's official read-only documentation MCP page; the 404 attempt stays described in the review note and reason."
+    },
+    {
+      "app": "iPayX",
+      "field": "credential_gate",
+      "decision": "keep",
+      "old_url": "https://www.ipayx.ai/pricing",
+      "old_quote": "$299USD / mo",
+      "verification_method": "headless Chromium rendered body innerText after extended wait (installed Chrome; no raw HTML)",
+      "review_note": "The current rendered pricing page shows \"$299 USD / mo\"; whitespace normalization reproduces the stored quotation. The shorter batch wait missed dynamically inserted pricing text."
+    }
+  ],
+  "unresolved": []
+}

@@ -1,0 +1,129 @@
+{
+  "app": {
+    "number": 81,
+    "name": "Stripe",
+    "category": "Finance and Fintech",
+    "hint": "stripe.com/docs/api"
+  },
+  "checked_at": "2026-11-23T18:15:32.188021+00:00",
+  "prior_source": "data/pass2/081.json",
+  "search_source": "data/pass4_search/081.json",
+  "new_candidates": [
+    {
+      "url": "https://support.stripe.com/questions/locate-api-keys",
+      "title": "What are Stripe API keys and how to find them : Stripe: Help & Support (https://support.stripe.com/questions/locate-api-keys)",
+      "published_label": null
+    },
+    {
+      "url": "https://support.stripe.com/topics/api?locale=en-GB",
+      "title": "API : Stripe: Help & Support (https://support.stripe.com/topics/api?locale=en-GB)",
+      "published_label": null
+    },
+    {
+      "url": "https://support.stripe.com/questions/invite-team-members-or-developers-to-access-your-stripe-account?locale=en-GB",
+      "title": "Invite team members or developers to access your Stripe account : Stripe: Help & Support (https://support.stripe.com/questions/invite-team-members-or-developers-to-access-your-stripe-account?locale=en-GB)",
+      "published_label": null
+    },
+    {
+      "url": "https://support.stripe.com/questions/protecting-against-compromised-api-keys?locale=en-GB",
+      "title": "Protecting against compromised API keys : Stripe: Help & Support (https://support.stripe.com/questions/protecting-against-compromised-api-keys?locale=en-GB)",
+      "published_label": null
+    }
+  ],
+  "selected": [
+    {
+      "url": "https://support.stripe.com/questions/locate-api-keys",
+      "title": "What are Stripe API keys and how to find them : Stripe: Help & Support (https://support.stripe.com/questions/locate-api-keys)",
+      "published_label": null
+    },
+    {
+      "url": "https://support.stripe.com/questions/invite-team-members-or-developers-to-access-your-stripe-account?locale=en-GB",
+      "title": "Invite team members or developers to access your Stripe account : Stripe: Help & Support (https://support.stripe.com/questions/invite-team-members-or-developers-to-access-your-stripe-account?locale=en-GB)",
+      "published_label": null
+    }
+  ],
+  "new_pages": [
+    {
+      "url": "https://support.stripe.com/questions/what-are-stripe-api-keys-and-how-to-find-them",
+      "requested_url": "https://support.stripe.com/questions/locate-api-keys",
+      "status": 200,
+      "title": "What are Stripe API keys and how to find them : Stripe: Help & Support (https://support.stripe.com/questions/locate-api-keys)",
+      "text": "What are Stripe API keys and how to find them : Stripe: Help & Support JavaScript is currently disabled You need JavaScript for the best experience on Stripe. Please enable it in your browser settings. Find out how",
+      "published_label": null
+    },
+    {
+      "url": "https://support.stripe.com/questions/invite-team-members-or-developers-to-access-your-stripe-account?locale=en-GB",
+      "requested_url": "https://support.stripe.com/questions/invite-team-members-or-developers-to-access-your-stripe-account?locale=en-GB",
+      "status": 200,
+      "title": "Invite team members or developers to access your Stripe account : Stripe: Help & Support (https://support.stripe.com/questions/invite-team-members-or-developers-to-access-your-stripe-account?locale=en-GB)",
+      "text": "Invite team members or developers to access your Stripe account : Stripe: Help & Support JavaScript is currently disabled You need JavaScript for the best experience on Stripe. Please enable it in your browser settings. Find out how",
+      "published_label": null
+    }
+  ],
+  "claims": {
+    "auth": {
+      "value": [
+        "API key"
+      ],
+      "sources": [
+        "https://stripe.com/in/legal/api-key-security"
+      ],
+      "evidence": [
+        {
+          "value": "API key",
+          "url": "https://stripe.com/in/legal/api-key-security",
+          "excerpt": "User Notice—API Key Security Last updated: August 14, 2026 Your Stripe API key is a credential that authenticates your account to Stripe - it is how Stripe verifies that a request is coming from you.",
+          "published_label": null
+        }
+      ],
+      "reason": "Provisional extraction: validate scope and completeness against the cited page."
+    },
+    "credential_gate": {
+      "value": "unknown",
+      "sources": [],
+      "evidence": [],
+      "reason": "No sufficiently specific positive evidence extracted; review targeted search results."
+    },
+    "api_surface": {
+      "value": "unknown",
+      "sources": [],
+      "evidence": [],
+      "reason": "No sufficiently specific positive evidence extracted; review targeted search results."
+    },
+    "official_mcp": {
+      "value": "yes (provisional)",
+      "sources": [
+        "https://docs.stripe.com/mcp"
+      ],
+      "evidence": [
+        {
+          "value": "yes (provisional)",
+          "url": "https://docs.stripe.com/mcp",
+          "excerpt": "odel Context Protocol (MCP) Public preview Let your AI agents interact with the Stripe API by using our MCP server. Ask about this page Copy for LLM View as Markdown Set up agent The Stripe Model Context Protocol (MCP) server provides tools that AI agents can use to interac",
+          "published_label": null,
+          "context_warning": "Review vendor ownership, dates, and scope."
+        }
+      ],
+      "reason": "Provisional; check source date, scope, and vendor ownership."
+    },
+    "composio_toolkit": {
+      "value": "listed",
+      "sources": [
+        "https://docs.composio.dev/toolkits/stripe"
+      ],
+      "evidence": [],
+      "reason": "Catalog match; scope needs review."
+    },
+    "verdict": {
+      "value": "unknown",
+      "sources": [],
+      "evidence": [],
+      "reason": "A supported access path, authentication method and API surface were not all extracted."
+    }
+  },
+  "validation": [
+    "All claims are provisional",
+    "No vendor MCP inference from Composio catalog",
+    "Negated MCP or client-only source is not counted as vendor-server proof"
+  ]
+}

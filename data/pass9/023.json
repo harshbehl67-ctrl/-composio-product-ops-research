@@ -1,0 +1,177 @@
+{
+  "app": {
+    "number": 23,
+    "name": "Zoho Cliq",
+    "category": "Communications and Messaging",
+    "hint": "zoho.com/cliq"
+  },
+  "replayed_at": "2026-11-23T18:41:31.574208+00:00",
+  "source_passes": [
+    "data/pass2/023.json",
+    "data/pass4/023.json"
+  ],
+  "source_searches": [
+    "data/new_search/023.json",
+    "data/pass4_search/023.json"
+  ],
+  "publication_date_note": "Search publication labels are retained exactly; null means no label was available. Relative labels are not exact dates.",
+  "claims": {
+    "auth": {
+      "value": [
+        "OAuth 2.0"
+      ],
+      "status": "provisional",
+      "sources": [
+        "https://www.zoho.com/cliq/help/restapi/v3/oauth/",
+        "https://www.zoho.com/cliq/help/restapi/v2/introduction/",
+        "https://www.zoho.com/cliq/help/restapi/v3/introduction/",
+        "https://www.zoho.com/cliq/help/restapi/v2/",
+        "https://www.zoho.com/cliq/help/restapi/v2/oauth/",
+        "https://www.zoho.com/cliq/help/restapi/v3/oascliq/"
+      ],
+      "evidence": [
+        {
+          "value": "OAuth 2.0",
+          "url": "https://www.zoho.com/cliq/help/restapi/v3/oauth/",
+          "excerpt": "Introduction to OAuth 2.0 | Zoho Cliq | API Documentation API Docs / No Results Found V3 (Latest) V2 V3 (Latest) Resources Help Docs FAQ Developer Platform Extensions Developer Community Plans &",
+          "published_label": null
+        },
+        {
+          "value": "OAuth 2.0",
+          "url": "https://www.zoho.com/cliq/help/restapi/v2/introduction/",
+          "excerpt": "ion Overview Authentication Networks Multiple Data Centers Authentication Introduction to OAuth 2.0 Overview Terminologies Scopes Register your application Overview API Reference HTTP Methods Overview Pagination Overview Token Reference Errors Overview Glossary Overvie",
+          "published_label": null
+        },
+        {
+          "value": "OAuth 2.0",
+          "url": "https://www.zoho.com/cliq/help/restapi/v3/introduction/",
+          "excerpt": "'s new in v3 Authentication Networks Multiple Data Centers Authentication Introduction to OAuth 2.0 Overview Terminologies Scopes Register your application Overview API Reference HTTP Methods Overview Pagination Overview next_token sync_token Combining Tokens Best Prac",
+          "published_label": null
+        },
+        {
+          "value": "OAuth 2.0",
+          "url": "https://www.zoho.com/cliq/help/restapi/v2/",
+          "excerpt": "le\r\n                accessing Zoho Cliq Authentication Zoho Cliq's Rest API's follows the OAuth 2.0 protocol to authorize and authenticate requests. Each API\r\n                request\r\n                must include an OAuth token in order to receive a success response. A",
+          "published_label": null
+        },
+        {
+          "value": "OAuth 2.0",
+          "url": "https://www.zoho.com/cliq/help/restapi/v2/oauth/",
+          "excerpt": "Introduction to OAuth 2.0 | Zoho Cliq | API Documentation API Docs / No Results Found V2 V2 V3 (Latest) Resources Help Docs FAQ Developer Platform Extensions Developer Community Plans & Pricing A",
+          "published_label": null
+        },
+        {
+          "value": "OAuth 2.0",
+          "url": "https://www.zoho.com/cliq/help/restapi/v3/oascliq/",
+          "excerpt": "'s new in v3 Authentication Networks Multiple Data Centers Authentication Introduction to OAuth 2.0 Overview Terminologies Scopes Register your application Overview API Reference HTTP Methods Overview Pagination Overview next_token sync_token Combining Tokens Best Prac",
+          "published_label": null
+        }
+      ],
+      "reason": "Provisional extraction; validate scope and completeness against cited pages."
+    },
+    "credential_gate": {
+      "value": [
+        "partner_or_sales"
+      ],
+      "status": "provisional",
+      "sources": [
+        "https://www.zoho.com/cliq/help/restapi/v2/"
+      ],
+      "evidence": [
+        {
+          "value": "partner_or_sales",
+          "url": "https://www.zoho.com/cliq/help/restapi/v2/",
+          "excerpt": "m/channel/T4000000040005_4435792_1498572169593/photo.do\",\r\n      \"level\": \"team\",\r\n      \"invite_only\":false,\r\n      \"status\": \"created\",\r\n      \"channel_id\": \"T4000000040005\",\r\n      \"organization_id\": \"4435792\",\r\n      \"creator_id\": \"4435866\",\r\n      \"creator_name\": \"P",
+          "published_label": null
+        }
+      ],
+      "reason": "Provisional extraction; validate scope and completeness against cited pages."
+    },
+    "api_surface": {
+      "value": "REST; broad documented surface",
+      "status": "provisional",
+      "sources": [
+        "https://www.zoho.com/cliq/help/restapi/v2/introduction/",
+        "https://www.zoho.com/cliq/help/restapi/v3/introduction/",
+        "https://www.zoho.com/cliq/help/restapi/v2/",
+        "https://www.zoho.com/cliq/help/restapi/v3/oascliq/"
+      ],
+      "evidence": [
+        {
+          "value": [
+            "REST"
+          ],
+          "breadth": "broad",
+          "url": "https://www.zoho.com/cliq/help/restapi/v2/introduction/",
+          "excerpt": "Introduction | Zoho Cliq | API Documentation API Docs / No Results Found V2 V2 V3 (Latest) Resources Help Docs FAQ Developer Platform Extensions Developer Community Plans & Pricing Access Zoho Cliq Sign In API Docs Versions V2 V3 (Latest) Resources Help Docs FAQ Developer Platfor",
+          "published_label": null
+        },
+        {
+          "value": [
+            "REST"
+          ],
+          "breadth": "moderate",
+          "url": "https://www.zoho.com/cliq/help/restapi/v3/introduction/",
+          "excerpt": "Introduction | Zoho Cliq | API Documentation API Docs / No Results Found V3 (Latest) V2 V3 (Latest) Resources Help Docs FAQ Developer Platform Extensions Developer Community Plans & Pricing Access Zoho Cliq Sign In API Docs Versions V2 V3 (Latest) Resources Help Docs FAQ Develope",
+          "published_label": null
+        },
+        {
+          "value": [
+            "REST"
+          ],
+          "breadth": "broad",
+          "url": "https://www.zoho.com/cliq/help/restapi/v2/",
+          "excerpt": "Rest API documentation | Cliq REST API Documentation Access\r\n            Cliq Pricing Help Center Introduction About Cliq REST API Authentication OAuth Token OpenAPI Specification (OAS) HTTP Methods Response Errors API Call Limit MAINTENANCE APIs Bulk Export Conversations Channel",
+          "published_label": null
+        },
+        {
+          "value": [
+            "REST"
+          ],
+          "breadth": "moderate",
+          "url": "https://www.zoho.com/cliq/help/restapi/v3/oascliq/",
+          "excerpt": "OpenAPI Specification (OAS) | Zoho Cliq | API Documentation API Docs / No Results Found V3 (Latest) V2 V3 (Latest) Resources Help Docs FAQ Developer Platform Extensions Developer Community Plans & Pricing Access Zoho Cliq Sign In API Docs Versions V2 V3 (Latest) Resources Help Do",
+          "published_label": null
+        }
+      ],
+      "reason": "Provisional extraction; validate scope and completeness against cited pages."
+    },
+    "official_mcp": {
+      "value": "unknown",
+      "status": "provisional",
+      "sources": [],
+      "evidence": [],
+      "reason": "No sufficiently specific official evidence extracted."
+    },
+    "composio_toolkit": {
+      "value": "listed",
+      "status": "provisional",
+      "sources": [
+        "https://docs.composio.dev/toolkits/zoho_cliq"
+      ],
+      "evidence": [],
+      "reason": "Catalog match only; not vendor MCP evidence."
+    },
+    "verdict": {
+      "value": "partner_outreach",
+      "status": "provisional",
+      "sources": [
+        "https://www.zoho.com/cliq/help/restapi/v3/oauth/",
+        "https://www.zoho.com/cliq/help/restapi/v2/introduction/",
+        "https://www.zoho.com/cliq/help/restapi/v3/introduction/",
+        "https://www.zoho.com/cliq/help/restapi/v2/",
+        "https://www.zoho.com/cliq/help/restapi/v2/oauth/",
+        "https://www.zoho.com/cliq/help/restapi/v3/oascliq/"
+      ],
+      "evidence": [],
+      "reason": "Inferred only from extracted auth, API and access evidence; independent review required."
+    }
+  },
+  "validation": [
+    "Automatic extraction is provisional until independently reviewed",
+    "Unknown is not evidence of absence",
+    "Composio evidence cannot establish vendor MCP",
+    "Client-only and negated MCP statements are not vendor-server proof",
+    "API breadth is a text-coverage heuristic, not an endpoint census"
+  ]
+}

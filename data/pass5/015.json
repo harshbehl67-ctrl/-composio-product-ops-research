@@ -1,0 +1,125 @@
+{
+  "app": {
+    "number": 15,
+    "name": "Pylon",
+    "category": "Support and Helpdesk",
+    "hint": "usepylon.com"
+  },
+  "replayed_at": "2026-11-23T18:16:36.301409+00:00",
+  "source_passes": [
+    "data/pass2/015.json",
+    "data/pass4/015.json"
+  ],
+  "source_search": "data/new_search/015.json",
+  "publication_date_note": "Published labels are retained exactly as supplied by search; missing labels are null. Relative labels must not be treated as exact publication dates.",
+  "claims": {
+    "auth": {
+      "value": [
+        "API token"
+      ],
+      "sources": [
+        "https://docs.usepylon.com/pylon-docs/developer/api/authentication",
+        "https://support.usepylon.com/articles/4735104435-how-do-i-create-an-api-token"
+      ],
+      "evidence": [
+        {
+          "value": "API token",
+          "url": "https://docs.usepylon.com/pylon-docs/developer/api/authentication",
+          "excerpt": " GitBook On this page The Pylon API uses Bearer authentication. This means you’ll need to pass your API token in the header of your request: Copy Authorization: Bearer <token> Generate an API token in the Pylon dashboard . API regions Pylon’s API is available in two regions. Use the base ",
+          "published_label": null
+        },
+        {
+          "value": "API token",
+          "url": "https://support.usepylon.com/articles/4735104435-how-do-i-create-an-api-token",
+          "excerpt": "How do I create a Pylon API token? | Pylon Knowledge Base Docs Changelog Go to Pylon Docs Changelog Go to Pylon How do I create a Pylon API token? Last updated 2 months ago Applies to: Pylon API access To create a",
+          "published_label": "2 months ago"
+        }
+      ],
+      "reason": "Provisional extraction: validate scope and completeness against the cited page."
+    },
+    "credential_gate": {
+      "value": "unknown",
+      "sources": [],
+      "evidence": [],
+      "reason": "No sufficiently specific positive evidence extracted; review targeted search results."
+    },
+    "api_surface": {
+      "value": [
+        "REST"
+      ],
+      "sources": [
+        "https://support.usepylon.com/articles/2407390554-connecting-to-the-pylon-mcp-server"
+      ],
+      "evidence": [
+        {
+          "value": "REST",
+          "url": "https://support.usepylon.com/articles/2407390554-connecting-to-the-pylon-mcp-server",
+          "excerpt": "rver today. If you need token-based access for a supported integration or automation, use the Pylon REST API instead of MCP. The REST API accepts Bearer API tokens, but that authentication method does not apply to the Pylon MCP server. Session Expiry and Reconnecting OAuth sessions expir",
+          "published_label": "3 weeks ago"
+        }
+      ],
+      "reason": "Provisional extraction: validate scope and completeness against the cited page."
+    },
+    "official_mcp": {
+      "value": "yes (provisional)",
+      "sources": [
+        "https://support.usepylon.com/articles/2407390554-connecting-to-the-pylon-mcp-server",
+        "https://support.usepylon.com/articles/1478561037-how-do-i-connect-a-custom-mcp-to-pylon",
+        "https://www.usepylon.com/integrations/mcp",
+        "https://www.usepylon.com/blog/connect-pylon-chatgpt-mcp"
+      ],
+      "evidence": [
+        {
+          "value": "yes (provisional)",
+          "url": "https://support.usepylon.com/articles/2407390554-connecting-to-the-pylon-mcp-server",
+          "excerpt": "How do I connect to the Pylon MCP Server? | Pylon Knowledge Base Docs Changelog Go to Pylon Docs Changelog Go to Pylon How do I connect to the Pylon MCP Server? Last updated 25 days ago The Pylon MCP ",
+          "published_label": "3 weeks ago",
+          "context_warning": "Review vendor ownership, dates, and scope."
+        },
+        {
+          "value": "yes (provisional)",
+          "url": "https://support.usepylon.com/articles/1478561037-how-do-i-connect-a-custom-mcp-to-pylon",
+          "excerpt": "ed automatically. Can I connect a public MCP server with no authentication? No. Pylon requires either an OAuth-capable MCP server or a supported static credential. A public MCP server with no authentication and no credential to store cannot be connected. What to do instead If your goal is",
+          "published_label": "3 weeks ago",
+          "context_warning": "Review vendor ownership, dates, and scope."
+        },
+        {
+          "value": "yes (provisional)",
+          "url": "https://www.usepylon.com/integrations/mcp",
+          "excerpt": "Pylon MCP server: connect ChatGPT, Claude, and Cursor The support metrics that matter in the age of AI Register now Pylon MCP server Connect ChatGPT, Claude, and Cursor to Pylo",
+          "published_label": null,
+          "context_warning": "Review vendor ownership, dates, and scope."
+        },
+        {
+          "value": "yes (provisional)",
+          "url": "https://www.usepylon.com/blog/connect-pylon-chatgpt-mcp",
+          "excerpt": "ry old iOS or Android apps, show Apps instead of Plugins) and sign in with your Pylon account. You can also add the Pylon MCP server to ChatGPT as a custom MCP server. Either way, ChatGPT authenticates with OAuth and uses tools that read or write the same data your user can already see in Py",
+          "published_label": "2 weeks ago",
+          "context_warning": "Review vendor ownership, dates, and scope."
+        }
+      ],
+      "reason": "Provisional; check source date, scope, and vendor ownership."
+    },
+    "composio_toolkit": {
+      "value": "listed",
+      "sources": [
+        "https://docs.composio.dev/toolkits/pylon_mcp"
+      ],
+      "evidence": [],
+      "reason": "Catalog match; scope needs review."
+    },
+    "verdict": {
+      "value": "unknown",
+      "sources": [],
+      "evidence": [],
+      "reason": "A supported access path, authentication method and API surface were not all extracted."
+    }
+  },
+  "validation": [
+    "Automatic extraction is provisional and not a verified final claim",
+    "Unknown is not evidence of absence",
+    "No Composio-to-vendor-MCP inference",
+    "Basic authentication may be endpoint-specific",
+    "Client-only and negated statements are not positive MCP evidence"
+  ]
+}

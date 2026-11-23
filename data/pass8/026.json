@@ -1,0 +1,116 @@
+{
+  "app": {
+    "number": 26,
+    "name": "Discord",
+    "category": "Communications and Messaging",
+    "hint": "discord.com"
+  },
+  "replayed_at": "2026-11-23T18:41:03.662545+00:00",
+  "source_passes": [
+    "data/pass2/026.json",
+    "data/pass4/026.json"
+  ],
+  "source_searches": [
+    "data/new_search/026.json",
+    "data/pass4_search/026.json"
+  ],
+  "publication_date_note": "Search publication labels are retained exactly; null means no label was available. Relative labels are not exact dates.",
+  "claims": {
+    "auth": {
+      "value": "unknown",
+      "status": "provisional",
+      "sources": [],
+      "evidence": [],
+      "reason": "No sufficiently specific official evidence extracted."
+    },
+    "credential_gate": {
+      "value": [
+        "admin_approval",
+        "partner_or_sales"
+      ],
+      "status": "provisional",
+      "sources": [
+        "https://support-dev.discord.com/hc/en-us/articles/8563934450327-Discord-Developer-Policy",
+        "https://support-dev.discord.com/hc/en-us/articles/8562894815383-Discord-Developer-Terms-of-Service",
+        "https://support-dev.discord.com/hc/en-us/articles/25280499088279-2022-Discord-Developer-Policy",
+        "https://support-dev.discord.com/hc/en-us/articles/25280523748759-2022-Discord-Developer-Terms-of-Service"
+      ],
+      "evidence": [
+        {
+          "value": "admin_approval",
+          "url": "https://support-dev.discord.com/hc/en-us/articles/8563934450327-Discord-Developer-Policy",
+          "excerpt": "urpose other than as necessary to provide your Application’s stated (and approved through App Review, as applicable) functionality; provided that you may also use API Data for the purpose of improving your Application only if it has been aggregated or de-identified such",
+          "published_label": "2.5 years ago"
+        },
+        {
+          "value": "partner_or_sales",
+          "url": "https://support-dev.discord.com/hc/en-us/articles/8562894815383-Discord-Developer-Terms-of-Service",
+          "excerpt": "tisements of your Application) regarding your access to or use of the APIs which suggests partnership with, sponsorship by, or endorsement by Discord without Discord prior written approval in each instance. d. Promotional and Marketing Use You grant us a non-exclusive, t",
+          "published_label": "1.7 years ago"
+        },
+        {
+          "value": "admin_approval",
+          "url": "https://support-dev.discord.com/hc/en-us/articles/8562894815383-Discord-Developer-Terms-of-Service",
+          "excerpt": "or as part of your continued use of the APIs (including in the Developer Portal or during App Review). You will ensure such information is accurate, complete, and up-to-date at all times. Without limiting the foregoing, you will maintain a clear and accurate description",
+          "published_label": "1.7 years ago"
+        },
+        {
+          "value": "admin_approval",
+          "url": "https://support-dev.discord.com/hc/en-us/articles/25280499088279-2022-Discord-Developer-Policy",
+          "excerpt": "urpose other than as necessary to provide your Application’s stated (and approved through App Review, as applicable) functionality; provided that you may also use API Data for the purpose of improving your Application only if it has been aggregated or de-identified such",
+          "published_label": "4.2 years ago"
+        },
+        {
+          "value": "partner_or_sales",
+          "url": "https://support-dev.discord.com/hc/en-us/articles/25280523748759-2022-Discord-Developer-Terms-of-Service",
+          "excerpt": "tisements of your Application) regarding your access to or use of the APIs which suggests partnership with, sponsorship by, or endorsement by Discord without Discord prior written approval in each instance. d. Promotional and Marketing Use You grant us a non-exclusive, t",
+          "published_label": "4.2 years ago"
+        },
+        {
+          "value": "admin_approval",
+          "url": "https://support-dev.discord.com/hc/en-us/articles/25280523748759-2022-Discord-Developer-Terms-of-Service",
+          "excerpt": "or as part of your continued use of the APIs (including in the Developer Portal or during App Review). You will ensure such information is accurate, complete, and up-to-date at all times. Without limiting the foregoing, you will maintain a clear and accurate description",
+          "published_label": "4.2 years ago"
+        }
+      ],
+      "reason": "Provisional extraction; validate scope and completeness against cited pages."
+    },
+    "api_surface": {
+      "value": "unknown",
+      "status": "provisional",
+      "sources": [],
+      "evidence": [],
+      "reason": "No sufficiently specific official evidence extracted."
+    },
+    "official_mcp": {
+      "value": "unknown",
+      "status": "provisional",
+      "sources": [],
+      "evidence": [],
+      "reason": "No sufficiently specific official evidence extracted."
+    },
+    "composio_toolkit": {
+      "value": "listed",
+      "status": "provisional",
+      "sources": [
+        "https://docs.composio.dev/toolkits/discord"
+      ],
+      "evidence": [],
+      "reason": "Catalog match only; not vendor MCP evidence."
+    },
+    "verdict": {
+      "value": "unknown",
+      "status": "provisional",
+      "sources": [],
+      "evidence": [],
+      "reason": "No sufficiently specific official evidence extracted."
+    }
+  },
+  "validation": [
+    "Automatic extraction is provisional until independently reviewed",
+    "Unknown is not evidence of absence",
+    "Composio evidence cannot establish vendor MCP",
+    "Client-only and negated MCP statements are not vendor-server proof",
+    "API breadth is a text-coverage heuristic, not an endpoint census"
+  ]
+}

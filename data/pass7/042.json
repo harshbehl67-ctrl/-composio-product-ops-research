@@ -1,0 +1,177 @@
+{
+  "app": {
+    "number": 42,
+    "name": "WooCommerce",
+    "category": "Ecommerce",
+    "hint": "woocommerce.com/document/woocommerce-rest-api"
+  },
+  "replayed_at": "2026-11-23T18:19:18.507239+00:00",
+  "source_passes": [
+    "data/pass2/042.json",
+    "data/pass4/042.json"
+  ],
+  "source_search": "data/new_search/042.json",
+  "publication_date_note": "Published labels are retained exactly as supplied by search; missing labels are null. Relative labels must not be treated as exact publication dates.",
+  "claims": {
+    "auth": {
+      "value": [
+        "API key",
+        "Basic authentication"
+      ],
+      "sources": [
+        "https://developer.woocommerce.com/docs/apis/rest-api/authentication",
+        "https://developer.woocommerce.com/docs/apis/rest-api/authentication/"
+      ],
+      "evidence": [
+        {
+          "value": "API key",
+          "url": "https://developer.woocommerce.com/docs/apis/rest-api/authentication",
+          "excerpt": "l conform to that user's WordPress roles and capabilities. Choose the level of access for this REST API key, which can be Read access, Write access or Read/Write access. Then click the \"Generate API Key\" button and WooCommerce will generate REST API keys for the selected user. Now that ",
+          "published_label": null
+        },
+        {
+          "value": "Basic authentication",
+          "url": "https://developer.woocommerce.com/docs/apis/rest-api/authentication",
+          "excerpt": "L generated must have all query string values encoded. Authentication over HTTPS ​ You may use HTTP Basic Auth by providing the REST API Consumer Key as the username and the REST API Consumer Secret as the password. HTTP Basic Auth example cURL JavaScript PHP Python Ruby curl https://www.e",
+          "published_label": null
+        },
+        {
+          "value": "API key",
+          "url": "https://developer.woocommerce.com/docs/apis/rest-api/authentication/",
+          "excerpt": "l conform to that user's WordPress roles and capabilities. Choose the level of access for this REST API key, which can be Read access, Write access or Read/Write access. Then click the \"Generate API Key\" button and WooCommerce will generate REST API keys for the selected user. Now that ",
+          "published_label": null
+        },
+        {
+          "value": "Basic authentication",
+          "url": "https://developer.woocommerce.com/docs/apis/rest-api/authentication/",
+          "excerpt": "L generated must have all query string values encoded. Authentication over HTTPS ​ You may use HTTP Basic Auth by providing the REST API Consumer Key as the username and the REST API Consumer Secret as the password. HTTP Basic Auth example cURL JavaScript PHP Python Ruby curl https://www.e",
+          "published_label": null
+        }
+      ],
+      "reason": "Provisional extraction: validate scope and completeness against the cited page."
+    },
+    "credential_gate": {
+      "value": "unknown",
+      "sources": [],
+      "evidence": [],
+      "reason": "No sufficiently specific positive evidence extracted; review targeted search results."
+    },
+    "api_surface": {
+      "value": [
+        "REST"
+      ],
+      "sources": [
+        "https://developer.woocommerce.com/docs/apis/rest-api/authentication",
+        "https://developer.woocommerce.com/docs/apis/rest-api/",
+        "https://developer.woocommerce.com/docs/features/mcp/",
+        "https://woocommerce.com/document/w7s-mcp/",
+        "https://woocommerce.com/document/woocommerce-ai/mcp-server/",
+        "https://developer.woocommerce.com/2026/10/21/woocommerce-11-3-mcp/",
+        "https://developer.woocommerce.com/docs/apis/rest-api/authentication/",
+        "https://developer.woocommerce.com/docs/apis/"
+      ],
+      "evidence": [
+        {
+          "value": "REST",
+          "url": "https://developer.woocommerce.com/docs/apis/rest-api/authentication",
+          "excerpt": "tent as markdown format to your clipboard WooCommerce includes two ways to authenticate with the WP REST API. It is also possible to authenticate using any WP REST API authentication plugin or method. REST API keys ​ Pre-generated keys can be used to authenticate use of the REST API endp",
+          "published_label": null
+        },
+        {
+          "value": "REST",
+          "url": "https://developer.woocommerce.com/docs/apis/rest-api/",
+          "excerpt": "WooCommerce REST API | WooCommerce developer docs Skip to main content On this page Copy markdown Copies the current page content as markdown format to your clipboard WooCommerce (WC) 2.6+ is fully in",
+          "published_label": null
+        },
+        {
+          "value": "REST",
+          "url": "https://developer.woocommerce.com/docs/features/mcp/",
+          "excerpt": " WordPress username and an Application Password . Do not use your account password or a WooCommerce REST API key. To create an Application Password: In the WordPress dashboard, navigate to Users → Profile . Under Application Passwords , enter a name for the MCP client. Click Add New Appl",
+          "published_label": null
+        },
+        {
+          "value": "REST",
+          "url": "https://woocommerce.com/document/w7s-mcp/",
+          "excerpt": "ced and select Verify site readiness (or Check again ). MCP for WooCommerce keeps using WooCommerce REST API keys, as it always has: They can be read-only. A read key cannot change anything in your store. An Application Password carries every permission of the user it belongs to, and has",
+          "published_label": null
+        },
+        {
+          "value": "REST",
+          "url": "https://woocommerce.com/document/woocommerce-ai/mcp-server/",
+          "excerpt": " see the available tools. Developers can connect directly to the store endpoint using a WooCommerce REST API key. Use the endpoint: https://your-store.example/wp-json/woocommerce-ai/mcp The direct transport accepts the X-MCP-API-Key header in consumer_key:consumer_secret format. Use a de",
+          "published_label": null
+        },
+        {
+          "value": "REST",
+          "url": "https://developer.woocommerce.com/2026/10/21/woocommerce-11-3-mcp/",
+          "excerpt": "rce 10.9 . If your MCP client connects to your store with the deprecated endpoint and a WooCommerce REST API key, you will need to update that connection to use the WordPress MCP Adapter plugin and a WordPress application password before testing or upgrading to 11.3. Enabling MCP in WooC",
+          "published_label": "last month"
+        },
+        {
+          "value": "REST",
+          "url": "https://developer.woocommerce.com/docs/apis/rest-api/authentication/",
+          "excerpt": "tent as markdown format to your clipboard WooCommerce includes two ways to authenticate with the WP REST API. It is also possible to authenticate using any WP REST API authentication plugin or method. REST API keys ​ Pre-generated keys can be used to authenticate use of the REST API endp",
+          "published_label": null
+        },
+        {
+          "value": "REST",
+          "url": "https://developer.woocommerce.com/docs/apis/",
+          "excerpt": "oard WooCommerce provides a number of programmatic APIs to interact with WooCommerce store data. WC REST API ​ The WC REST API is a powerful part of WooCommerce which lets you read and write various parts of WooCommerce data such as orders, products, coupons, customers, and shipping zone",
+          "published_label": null
+        }
+      ],
+      "reason": "Provisional extraction: validate scope and completeness against the cited page."
+    },
+    "official_mcp": {
+      "value": "yes (provisional)",
+      "sources": [
+        "https://developer.woocommerce.com/docs/features/mcp/",
+        "https://woocommerce.com/document/w7s-mcp/",
+        "https://woocommerce.com/document/woocommerce-ai/mcp-server/"
+      ],
+      "evidence": [
+        {
+          "value": "yes (provisional)",
+          "url": "https://developer.woocommerce.com/docs/features/mcp/",
+          "excerpt": "p-json/woocommerce/mcp endpoint was removed in WooCommerce 11.3. See Removed in WooCommerce 11.3 . Connecting to the MCP Server ​ Choose a connection method based on where the WordPress site is running. For a detailed overview and application-specific instructions, see Connecting AI app",
+          "published_label": null,
+          "context_warning": "Review vendor ownership, dates, and scope."
+        },
+        {
+          "value": "yes (provisional)",
+          "url": "https://woocommerce.com/document/w7s-mcp/",
+          "excerpt": "o set it up, what every setting does, and how developers can extend it. MCP for WooCommerce gives your store its own MCP server. MCP is the standard that lets an AI assistant call tools on your site. The plugin’s server lives at /wp-json/w7s-mcp/v1/mcp and runs on the MCP Adapter, a fre",
+          "published_label": null,
+          "context_warning": "Review vendor ownership, dates, and scope."
+        },
+        {
+          "value": "yes (provisional)",
+          "url": "https://woocommerce.com/document/woocommerce-ai/mcp-server/",
+          "excerpt": "Connect an AI client to the WooCommerce AI MCP server Documentation - WooCommerce Skip to navigation Skip to content Extensions Extensions Pre-Sales Support Stripe WooCommerce Square PayPal Braintree AutomateWoo E",
+          "published_label": null,
+          "context_warning": "Review vendor ownership, dates, and scope."
+        }
+      ],
+      "reason": "Provisional; check source date, scope, and vendor ownership."
+    },
+    "composio_toolkit": {
+      "value": "unknown",
+      "sources": [],
+      "evidence": [],
+      "reason": "No exact or reviewed alias match; absence is not established."
+    },
+    "verdict": {
+      "value": "unknown",
+      "sources": [],
+      "evidence": [],
+      "reason": "A supported access path, authentication method and API surface were not all extracted."
+    }
+  },
+  "validation": [
+    "Automatic extraction is provisional and not a verified final claim",
+    "Unknown is not evidence of absence",
+    "No Composio-to-vendor-MCP inference",
+    "Basic authentication may be endpoint-specific",
+    "Client-only and negated statements are not positive MCP evidence"
+  ]
+}

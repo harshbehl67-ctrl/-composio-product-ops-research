@@ -1,0 +1,102 @@
+{
+  "app": {
+    "number": 37,
+    "name": "systeme.io",
+    "category": "Marketing, Ads, Email and Social",
+    "hint": "systeme.io (funnel builder)"
+  },
+  "replayed_at": "2026-11-23T18:19:18.285648+00:00",
+  "source_passes": [
+    "data/pass2/037.json",
+    "data/pass4/037.json"
+  ],
+  "source_search": "data/new_search/037.json",
+  "publication_date_note": "Published labels are retained exactly as supplied by search; missing labels are null. Relative labels must not be treated as exact publication dates.",
+  "claims": {
+    "auth": {
+      "value": "unknown",
+      "sources": [],
+      "evidence": [],
+      "reason": "No sufficiently specific positive evidence extracted; review targeted search results."
+    },
+    "credential_gate": {
+      "value": "unknown",
+      "sources": [],
+      "evidence": [],
+      "reason": "No sufficiently specific positive evidence extracted; review targeted search results."
+    },
+    "api_surface": {
+      "value": "unknown",
+      "sources": [],
+      "evidence": [],
+      "reason": "No sufficiently specific positive evidence extracted; review targeted search results."
+    },
+    "official_mcp": {
+      "value": "yes (provisional)",
+      "sources": [
+        "https://help.systeme.io/article/9489-how-to-use-systeme-ios-mcp?sa=sa0024558361f5d7443882b1862ee00908b6e7c72a",
+        "https://help.systeme.io/article/11412-how-to-manage-your-price-plans-and-coupons-with-the-systeme-io-mcp-server",
+        "https://help.systeme.io/article/11414-how-to-manage-your-automation-rules-with-the-systeme-io-mcp-server",
+        "https://systeme.io/mcp",
+        "https://help.systeme.io/article/11331-how-to-manage-your-contacts-with-the-systeme-io-mcp-server"
+      ],
+      "evidence": [
+        {
+          "value": "yes (provisional)",
+          "url": "https://help.systeme.io/article/9489-how-to-use-systeme-ios-mcp?sa=sa0024558361f5d7443882b1862ee00908b6e7c72a",
+          "excerpt": "Loading How to use the systeme.io MCP server (Model Context Protocol) | systeme.io Help Center Categories Affiliation Blog Booking calendar Contact management Courses Customer support Deliverability Edito",
+          "published_label": "last week",
+          "context_warning": "Review vendor ownership, dates, and scope."
+        },
+        {
+          "value": "yes (provisional)",
+          "url": "https://help.systeme.io/article/11412-how-to-manage-your-price-plans-and-coupons-with-the-systeme-io-mcp-server",
+          "excerpt": "Loading How to manage your price plans and coupons with the systeme.io MCP server | systeme.io Help Center Categories Affiliation Blog Booking calendar Contact management Courses Customer support Deliverability Editor Emails General Migratin",
+          "published_label": "last month",
+          "context_warning": "Review vendor ownership, dates, and scope."
+        },
+        {
+          "value": "yes (provisional)",
+          "url": "https://help.systeme.io/article/11414-how-to-manage-your-automation-rules-with-the-systeme-io-mcp-server",
+          "excerpt": "Loading How to manage your automation rules and work flows with the systeme.io MCP server | systeme.io Help Center Categories Affiliation Blog Booking calendar Contact management Courses Customer support Deliverability Editor Emails General Migratin",
+          "published_label": "last week",
+          "context_warning": "Review vendor ownership, dates, and scope."
+        },
+        {
+          "value": "yes (provisional)",
+          "url": "https://systeme.io/mcp",
+          "excerpt": "Build and manage your business with AI | systeme.io MCP Server En ⌄ Why Systeme.io? Features Resources Pricing Sign in Why Systeme.io? Features Resources Tutorials Testimonials Podcast Blog Pricing Sign in Why systeme.io? ",
+          "published_label": null,
+          "context_warning": "Review vendor ownership, dates, and scope."
+        },
+        {
+          "value": "yes (provisional)",
+          "url": "https://help.systeme.io/article/11331-how-to-manage-your-contacts-with-the-systeme-io-mcp-server",
+          "excerpt": "Loading How to manage your contacts with the systeme.io MCP server | systeme.io Help Center Categories Affiliation Blog Booking calendar Contact management Courses Customer support Deliverability Editor Emails General Migratin",
+          "published_label": "3 days ago",
+          "context_warning": "Review vendor ownership, dates, and scope."
+        }
+      ],
+      "reason": "Provisional; check source date, scope, and vendor ownership."
+    },
+    "composio_toolkit": {
+      "value": "unknown",
+      "sources": [],
+      "evidence": [],
+      "reason": "No exact or reviewed alias match; absence is not established."
+    },
+    "verdict": {
+      "value": "unknown",
+      "sources": [],
+      "evidence": [],
+      "reason": "A supported access path, authentication method and API surface were not all extracted."
+    }
+  },
+  "validation": [
+    "Automatic extraction is provisional and not a verified final claim",
+    "Unknown is not evidence of absence",
+    "No Composio-to-vendor-MCP inference",
+    "Basic authentication may be endpoint-specific",
+    "Client-only and negated statements are not positive MCP evidence"
+  ]
+}

@@ -1,0 +1,106 @@
+{
+  "app": {
+    "number": 53,
+    "name": "Ahrefs",
+    "category": "Data, SEO and Scraping",
+    "hint": "ahrefs.com/api"
+  },
+  "replayed_at": "2026-11-23T18:19:19.146914+00:00",
+  "source_passes": [
+    "data/pass2/053.json",
+    "data/pass4/053.json"
+  ],
+  "source_search": "data/new_search/053.json",
+  "publication_date_note": "Published labels are retained exactly as supplied by search; missing labels are null. Relative labels must not be treated as exact publication dates.",
+  "claims": {
+    "auth": {
+      "value": [
+        "OAuth 2.0",
+        "API token",
+        "API key"
+      ],
+      "sources": [
+        "https://docs.ahrefs.com/en/ahrefs-connect/docs/oauth-guide",
+        "https://docs.ahrefs.com/en/api/docs/api-keys-creation-and-management"
+      ],
+      "evidence": [
+        {
+          "value": "OAuth 2.0",
+          "url": "https://docs.ahrefs.com/en/ahrefs-connect/docs/oauth-guide",
+          "excerpt": "refs user . To do this, your app must obtain an API access token for that user. Ahrefs Connect uses OAuth 2.0 Authorization Code Flow with Proof Key for Code Exchange (PKCE) . The process has two main steps: 1. Authorize the application Redirect the user to: https://app.ahrefs.com/web/oau",
+          "published_label": null
+        },
+        {
+          "value": "API token",
+          "url": "https://docs.ahrefs.com/en/ahrefs-connect/docs/oauth-guide",
+          "excerpt": "orization and are made on behalf of an authorized Ahrefs user . To do this, your app must obtain an API access token for that user. Ahrefs Connect uses OAuth 2.0 Authorization Code Flow with Proof Key for Code Exchange (PKCE) . The process has two main steps: 1. Authorize the application Redirec",
+          "published_label": null
+        },
+        {
+          "value": "API key",
+          "url": "https://docs.ahrefs.com/en/api/docs/api-keys-creation-and-management",
+          "excerpt": "lper Web Analytics GSC Insights Social Media Public API keys creation and management You'll need an API key to send requests via Ahrefs API v3. Provide it in the Authorization header when making requests: Authorization: Bearer YOUR_API_KEY . Creating API keys Create and manage existing ",
+          "published_label": null
+        }
+      ],
+      "reason": "Provisional extraction: validate scope and completeness against the cited page."
+    },
+    "credential_gate": {
+      "value": "unknown",
+      "sources": [],
+      "evidence": [],
+      "reason": "No sufficiently specific positive evidence extracted; review targeted search results."
+    },
+    "api_surface": {
+      "value": "unknown",
+      "sources": [],
+      "evidence": [],
+      "reason": "No sufficiently specific positive evidence extracted; review targeted search results."
+    },
+    "official_mcp": {
+      "value": "yes (provisional)",
+      "sources": [
+        "https://docs.ahrefs.com/en/mcp/docs/introduction",
+        "https://help.ahrefs.com/en/articles/13913559-getting-started-with-ahrefs-mcp"
+      ],
+      "evidence": [
+        {
+          "value": "yes (provisional)",
+          "url": "https://docs.ahrefs.com/en/mcp/docs/introduction",
+          "excerpt": "r case, it connects AI tools with Ahrefs, enabling things like this: Connect to Ahrefs MCP Ahrefs provides a hosted MCP server that allows users with a Lite plan or higher to connect their Ahrefs account to supported AI tools. Once connected, your setup is synced and available across a",
+          "published_label": null,
+          "context_warning": "Review vendor ownership, dates, and scope."
+        },
+        {
+          "value": "yes (provisional)",
+          "url": "https://help.ahrefs.com/en/articles/13913559-getting-started-with-ahrefs-mcp",
+          "excerpt": "arketing data Written by Constance Tan September 22, 2026 Table of contents The Ahrefs MCP server allows you to connect Ahrefs’ API to your AI tool of choice (ChatGPT, Claude, Copilot, etc.) No code required. Just chat in plain English to pull SEO insights,",
+          "published_label": "2 months ago",
+          "context_warning": "Review vendor ownership, dates, and scope."
+        }
+      ],
+      "reason": "Provisional; check source date, scope, and vendor ownership."
+    },
+    "composio_toolkit": {
+      "value": "listed",
+      "sources": [
+        "https://docs.composio.dev/toolkits/ahrefs"
+      ],
+      "evidence": [],
+      "reason": "Catalog match; scope needs review."
+    },
+    "verdict": {
+      "value": "unknown",
+      "sources": [],
+      "evidence": [],
+      "reason": "A supported access path, authentication method and API surface were not all extracted."
+    }
+  },
+  "validation": [
+    "Automatic extraction is provisional and not a verified final claim",
+    "Unknown is not evidence of absence",
+    "No Composio-to-vendor-MCP inference",
+    "Basic authentication may be endpoint-specific",
+    "Client-only and negated statements are not positive MCP evidence"
+  ]
+}

@@ -1,0 +1,213 @@
+{
+  "checked_at": "2026-11-24",
+  "method": "Read-only in-app browser inspection of the official Commas rebrand, homepage, and Enterprise pages, plus direct visible-text checks of the legacy Fanbasis API Docs login and official 404 routes; no sign-in or credentials.",
+  "audit_summary": {
+    "flagged_uses": 5,
+    "actions": 6,
+    "replace": 0,
+    "reclassify": 5,
+    "record_update": 1,
+    "keep": 0,
+    "unresolved": 4,
+    "note": "The Fanbasis-to-Commas rebrand and first-party MCP beta are resolved. Authentication, credential gate, API protocol/breadth, and build verdict remain unknown because current public pages do not publish those details and the legacy API Docs site is password-protected."
+  },
+  "actions": [
+    {
+      "app": "fanbasis",
+      "field": "auth",
+      "decision": "reclassify",
+      "claim": {
+        "value": "unknown",
+        "status": "unknown",
+        "reason": "FanBasis became Commas on 2026-07-14. Current first-party Commas pages document APIs, SDKs, and an MCP beta but publish no OAuth, API-key, bearer-token, or other authentication flow. The legacy Fanbasis API Docs site remains password-protected, so authentication cannot be verified from accessible official text. The rebrand page is undated as a publication; the login and product pages are undated.",
+        "evidence": [
+          {
+            "url": "https://commas.com/fanbasis-is-now-commas",
+            "title": "FanBasis is now Commas",
+            "quote": "On July 14, 2026, FanBasis became Commas. The name changed. The company did not.",
+            "retrieved_at": "2026-11-24",
+            "published_at": null,
+            "published_label": "rebrand effective 2026-07-14; page undated"
+          },
+          {
+            "url": "https://commas.com/",
+            "title": "Commas APIs and SDKs",
+            "quote": "Embedded checkouts, multi-rail payouts, APIs and SDKs. Everything you'd replace Stripe with, plus BNPL, recovery and lower effective rates.",
+            "retrieved_at": "2026-11-24",
+            "published_at": null,
+            "published_label": "undated"
+          },
+          {
+            "url": "https://dev-docs.fanbasis.com/",
+            "title": "FanBasis API Docs login",
+            "quote": "Sign in to access API Docs",
+            "retrieved_at": "2026-11-24",
+            "published_at": null,
+            "published_label": "undated"
+          }
+        ]
+      },
+      "review_note": "The product identity is now resolved to Commas, but no accessible first-party source states an API authentication method. The password wall is retained as a genuine unresolved boundary."
+    },
+    {
+      "app": "fanbasis",
+      "field": "credential_gate",
+      "decision": "reclassify",
+      "claim": {
+        "value": "unknown",
+        "gate_class": "unknown",
+        "status": "unknown",
+        "reason": "The current Commas Enterprise page markets APIs and a dedicated implementation engineer, but it does not state API credential issuance, pricing, approval, or whether API access is self-serve or sales-gated. The legacy Fanbasis API Docs site requires a password. Public account opening is not enough to classify API access. The reviewed pages are undated.",
+        "evidence": [
+          {
+            "url": "https://commas.com/enterprises",
+            "title": "Commas Enterprise API access",
+            "quote": "APIs and embeddable components, live in days not quarters.",
+            "retrieved_at": "2026-11-24",
+            "published_at": null,
+            "published_label": "undated"
+          },
+          {
+            "url": "https://commas.com/enterprises",
+            "title": "Commas Enterprise implementation support",
+            "quote": "Embedded checkout, smart routing, B2B financing and a dedicated implementation engineer behind your volume.",
+            "retrieved_at": "2026-11-24",
+            "published_at": null,
+            "published_label": "undated"
+          },
+          {
+            "url": "https://dev-docs.fanbasis.com/",
+            "title": "FanBasis API Docs access wall",
+            "quote": "Sign in to access API Docs",
+            "retrieved_at": "2026-11-24",
+            "published_at": null,
+            "published_label": "undated"
+          }
+        ]
+      },
+      "review_note": "Current official pages confirm enterprise API availability but not the credential gate. No free, paid, approval, or partner class is inferred from marketing language."
+    },
+    {
+      "app": "fanbasis",
+      "field": "api_surface",
+      "decision": "reclassify",
+      "claim": {
+        "value": "unknown",
+        "status": "unknown",
+        "api_types": [],
+        "breadth": "unknown",
+        "reason": "Current first-party Commas pages confirm APIs and SDKs, but no accessible official page publishes REST, GraphQL, HTTP, gRPC, SOAP, endpoint schemas, or resource breadth. The legacy Fanbasis API Docs v3 site is password-protected, and the tested Commas /api, /docs, /mcp, and /developers routes return 404. API type and breadth therefore remain unknown rather than inferred from the word API.",
+        "evidence": [
+          {
+            "url": "https://commas.com/",
+            "title": "Commas APIs and SDKs",
+            "quote": "Embedded checkouts, multi-rail payouts, APIs and SDKs. Everything you'd replace Stripe with, plus BNPL, recovery and lower effective rates.",
+            "retrieved_at": "2026-11-24",
+            "published_at": null,
+            "published_label": "undated"
+          },
+          {
+            "url": "https://dev-docs.fanbasis.com/",
+            "title": "FanBasis API Docs login",
+            "quote": "Sign in to access API Docs",
+            "retrieved_at": "2026-11-24",
+            "published_at": null,
+            "published_label": "undated"
+          },
+          {
+            "url": "https://commas.com/api",
+            "title": "Commas API route attempt",
+            "quote": "Sorry, the page you're looking for doesn't exist or has been moved.",
+            "retrieved_at": "2026-11-24",
+            "published_at": null,
+            "published_label": "undated"
+          }
+        ]
+      },
+      "review_note": "API existence is documented, but protocol and breadth are not publicly resolvable. The unknown is scoped to type/breadth, not to whether any API exists."
+    },
+    {
+      "app": "fanbasis",
+      "field": "official_mcp",
+      "decision": "reclassify",
+      "claim": {
+        "value": "vendor_server",
+        "mcp_mode": "early_access",
+        "status": "checked",
+        "reason": "The official rebrand page states that FanBasis became Commas and that Commas is operated by FanBasis, Inc. The current first-party Commas homepage labels an MCP integration beta and says it can create checkout links, issue refunds, and retrieve numbers from an AI assistant. This supports a vendor-operated early-access MCP product, but no public endpoint, transport, authentication flow, or tool schema is published. The homepage is undated; the rebrand was effective 2026-07-14.",
+        "evidence": [
+          {
+            "url": "https://commas.com/fanbasis-is-now-commas",
+            "title": "FanBasis is now Commas",
+            "quote": "Commas is operated by FanBasis, Inc. The public-facing brand is now Commas.",
+            "retrieved_at": "2026-11-24",
+            "published_at": null,
+            "published_label": "rebrand effective 2026-07-14; page undated"
+          },
+          {
+            "url": "https://commas.com/",
+            "title": "Commas MCP beta",
+            "quote": "MCP beta Run Commas from your AI assistant. Create checkout links, issue refunds and pull your numbers in plain English.",
+            "retrieved_at": "2026-11-24",
+            "published_at": null,
+            "published_label": "beta; undated"
+          }
+        ]
+      },
+      "review_note": "The former unknown was based on the old Fanbasis sitemap. The current first-party rebrand and homepage directly document a Commas MCP beta with execution actions; endpoint, transport, and authentication remain unspecified."
+    },
+    {
+      "app": "fanbasis",
+      "field": "verdict",
+      "decision": "reclassify",
+      "claim": {
+        "value": "unknown",
+        "status": "unknown",
+        "reason": "A checked build verdict is not supportable because current public Commas pages do not resolve API authentication, credential access, or API protocol/breadth, and the legacy API Docs site is password-protected. The MCP beta is documented but lacks public connection and access details. This does not establish that no public API exists. The reviewed pages are undated; the rebrand was effective 2026-07-14.",
+        "evidence": [
+          {
+            "url": "https://commas.com/fanbasis-is-now-commas",
+            "title": "FanBasis is now Commas",
+            "quote": "On July 14, 2026, FanBasis became Commas. The name changed. The company did not.",
+            "retrieved_at": "2026-11-24",
+            "published_at": null,
+            "published_label": "rebrand effective 2026-07-14; page undated"
+          },
+          {
+            "url": "https://commas.com/",
+            "title": "Commas MCP beta",
+            "quote": "MCP beta Run Commas from your AI assistant. Create checkout links, issue refunds and pull your numbers in plain English.",
+            "retrieved_at": "2026-11-24",
+            "published_at": null,
+            "published_label": "beta; undated"
+          },
+          {
+            "url": "https://dev-docs.fanbasis.com/",
+            "title": "FanBasis API Docs access wall",
+            "quote": "Sign in to access API Docs",
+            "retrieved_at": "2026-11-24",
+            "published_at": null,
+            "published_label": "undated"
+          }
+        ]
+      },
+      "review_note": "The MCP finding is resolved, but the three required build inputs remain genuinely inaccessible. The verdict stays unknown with current, specific evidence instead of a stale Fanbasis-only explanation."
+    },
+    {
+      "app": "fanbasis",
+      "decision": "record_update",
+      "updates": {
+        "summary": "FanBasis became Commas on 2026-07-14. Commas currently markets APIs and SDKs plus an early-access MCP beta that can create checkout links, issue refunds, and retrieve business numbers, but public pages do not document API authentication, credential access, protocol, or endpoint breadth. The complete Composio catalog has no exact fanbasis or Commas toolkit.",
+        "blocker": "Current public Commas pages do not publish API authentication, credential issuance, access terms, protocol, or endpoint schemas, and the legacy Fanbasis API Docs site is password-protected. The MCP beta has no public endpoint, transport, or authentication details.",
+        "next_action": "Request current Commas API and MCP beta documentation or sandbox access, then verify authentication, credential issuance, access terms, API protocol/breadth, and MCP connection details. Re-run the Composio catalog check before implementation."
+      },
+      "review_note": "Top-level fields now reflect the verified rebrand and current MCP beta while preserving the genuine public-documentation gaps."
+    }
+  ],
+  "unresolved": [
+    "fanbasis auth",
+    "fanbasis credential_gate",
+    "fanbasis api_surface",
+    "fanbasis verdict"
+  ]
+}

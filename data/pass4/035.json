@@ -1,0 +1,187 @@
+{
+  "app": {
+    "number": 35,
+    "name": "Mailchimp",
+    "category": "Marketing, Ads, Email and Social",
+    "hint": "mailchimp.com/developer"
+  },
+  "checked_at": "2026-11-23T18:15:04.970678+00:00",
+  "prior_source": "data/pass2/035.json",
+  "search_source": "data/pass4_search/035.json",
+  "new_candidates": [
+    {
+      "url": "https://mailchimp.com/help/about-api-keys/?msockid=0e143ff0b0f06f6f2f7e2987b1416ef5",
+      "title": "About API Keys (https://mailchimp.com/help/about-api-keys/?msockid=0e143ff0b0f06f6f2f7e2987b1416ef5)",
+      "published_label": null
+    },
+    {
+      "url": "https://mailchimp.com/help/about-api-keys/?msockid=2ba81bac28a06ff733260d5e29d36e1c",
+      "title": "About API Keys (https://mailchimp.com/help/about-api-keys/?msockid=2ba81bac28a06ff733260d5e29d36e1c)",
+      "published_label": null
+    },
+    {
+      "url": "https://mailchimp.com/developer/marketing/api-concepts/api-structure",
+      "title": "API structure | Mailchimp | Developer (https://mailchimp.com/developer/marketing/api-concepts/api-structure)",
+      "published_label": null
+    },
+    {
+      "url": "https://mailchimp.com/developer/marketing/build/start-developing/set-up-an-oauth-app?msockid=29bdc574f2e667260679d34cf3e666e1",
+      "title": "Set up an OAuth app | Mailchimp | Developer (https://mailchimp.com/developer/marketing/build/start-developing/set-up-an-oauth-app?msockid=29bdc574f2e667260679d34cf3e666e1)",
+      "published_label": null
+    },
+    {
+      "url": "https://mailchimp.com/developer/marketing/api/root/list",
+      "title": "List API root resources | Mailchimp | Developer (https://mailchimp.com/developer/marketing/api/root/list)",
+      "published_label": null
+    },
+    {
+      "url": "https://mailchimp.com/developer/marketing/guides/quick-start/?msockid=2ba81bac28a06ff733260d5e29d36e1c",
+      "title": "Marketing API Quick Start Guide | Mailchimp Developer (https://mailchimp.com/developer/marketing/guides/quick-start/?msockid=2ba81bac28a06ff733260d5e29d36e1c)",
+      "published_label": null
+    },
+    {
+      "url": "https://mailchimp.com/developer/marketing/api-concepts/methods-and-parameters",
+      "title": "Methods and parameters | Mailchimp | Developer (https://mailchimp.com/developer/marketing/api-concepts/methods-and-parameters)",
+      "published_label": null
+    },
+    {
+      "url": "https://mailchimp.com/developer/marketing/build/start-developing/set-up-an-oauth-app?msockid=2ba81bac28a06ff733260d5e29d36e1c",
+      "title": "Set up an OAuth app | Mailchimp | Developer (https://mailchimp.com/developer/marketing/build/start-developing/set-up-an-oauth-app?msockid=2ba81bac28a06ff733260d5e29d36e1c)",
+      "published_label": null
+    }
+  ],
+  "selected": [
+    {
+      "url": "https://mailchimp.com/developer/marketing/build/start-developing/set-up-an-oauth-app?msockid=29bdc574f2e667260679d34cf3e666e1",
+      "title": "Set up an OAuth app | Mailchimp | Developer (https://mailchimp.com/developer/marketing/build/start-developing/set-up-an-oauth-app?msockid=29bdc574f2e667260679d34cf3e666e1)",
+      "published_label": null
+    },
+    {
+      "url": "https://mailchimp.com/help/about-api-keys/?msockid=0e143ff0b0f06f6f2f7e2987b1416ef5",
+      "title": "About API Keys (https://mailchimp.com/help/about-api-keys/?msockid=0e143ff0b0f06f6f2f7e2987b1416ef5)",
+      "published_label": null
+    }
+  ],
+  "new_pages": [
+    {
+      "url": "https://mailchimp.com/developer/marketing/build/start-developing/set-up-an-oauth-app?msockid=29bdc574f2e667260679d34cf3e666e1",
+      "requested_url": "https://mailchimp.com/developer/marketing/build/start-developing/set-up-an-oauth-app?msockid=29bdc574f2e667260679d34cf3e666e1",
+      "status": 200,
+      "title": "Set up an OAuth app | Mailchimp | Developer (https://mailchimp.com/developer/marketing/build/start-developing/set-up-an-oauth-app?msockid=29bdc574f2e667260679d34cf3e666e1)",
+      "text": "Set up an OAuth app | Mailchimp | Developer For AI agents: a documentation index is available at the root level at /llms.txt. Append /llms.txt to any URL for a page-level index, or .md for the markdown version of any page. Skip to navigation On this page What you’ll need Register your application Implement the flow on your server Rotate a client secret Next steps Scroll to top This page is for Mailchimp Marketing API. This page walks through implementing OAuth 2 so your application can access the\nMarketing API on behalf of other Mailchimp users. For how the flow works and why\nit has the steps it does, see OAuth 2 . What you’ll need A Mailchimp account An API key ,\nif you want to test against your own account first A redirect URI for your application, the URL Mailchimp sends users back\nto after they authorize your application. It must be reachable by the user’s\nbrowser, but for local development http://127.0.0.1:3000/... is fine. Register your application Registering gives you the client_id and client_secret your server needs. Navigate to the Registered Apps page in your Mailchimp account Click Register An App Fill out the Register An App form Click Create You’ll see the client_id and client_secret at the bottom of the page. This is the only time you’ll be able to see client_secret , so you’ll need to\ncopy it and store it securely. Implement the flow on your server The sample below handles the whole flow: authenticating the user, exchanging the\ncode for an access token, then making a first authenticated request on their\nbehalf. Pick your language. TypeScript PHP Ruby Python const express = require ( \" express \" ) ; const querystring = require ( \" querystring \" ) ; const bodyParser = require ( \" body-parser \" ) ; const fetch = require ( \" node-fetch \" ) ; const { URLSearchParams } = require ( \" url \" ) ; const { MailchimpClient } = require ( \" @mailchimp/mailchimp-marketing \" ) ; // Basic express app setup const app = express () ; app . use ( bodyParser . json ()) ; app . use ( bodyParser . urlencoded ( { extended : true } ) ) ; // You should always store your client id and secret in environment variables for security — the exception: sample code. const MAILCHIMP_CLIENT_ID = \" YOUR_CLIENT_ID \" ; const MAILCHIMP_CLIENT_SECRET = \" YOUR_CLIENT_SECRET \" ; const BASE_URL = \" http://127.0.0.1:3000 \" ; const OAUTH_CALLBACK = ` ${ BASE_URL } /oauth/mailchimp/callback ` ; // 1. Navigate to http://127.0.0.1:3000 and click Login app . get ( \" / \" , function ( req , res ) { res . send ( ' <p>Welcome to the sample Mailchimp OAuth app! Click <a href=\"/auth/mailchimp\">here</a> to log in</p> ' ) ; } ) ; // 2. The login link above will direct the user here, which will redirect // to Mailchimp's OAuth login page. app . get ( \" /auth/mailchimp \" , ( req , res ) => { res . redirect ( ` https://login.mailchimp.com/oauth2/authorize? ${ querystring . stringify ( { response_type : \" code \" , client_id : MAILCHIMP_CLIENT_ID , redirect_uri : OAUTH_CALLBACK } ) } ` ) ; } ) ; // 3. Once // 3. Once the user authorizes your app, Mailchimp will redirect the user to // this endpoint, along with a code you can use to exchange for the user's // access token. app . get ( \" /oauth/mailchimp/callback \" , async ( req , res ) => { const { query : { code } } = req ; // Here we're exchanging the temporary code for the user's access token. const tokenResponse = await fetch ( \" https://login.mailchimp.com/oauth2/token \" , { method : \" POST \" , body : new URLSearchParams ( { grant_type : \" authorization_code \" , client_id : MAILCHIMP_CLIENT_ID , client_secret : MAILCHIMP_CLIENT_SECRET , redirect_uri : OAUTH_CALLBACK , code } ) } ) ; const { access_token } = await tokenResponse . json () ; console . log ( access_token ) ; // Below, we're using the access token to make an authenticated request on // behalf of the user who just granted OAuth access. You wouldn't keep this // in your production code, but it's here to demonstrate how the call is // made. const mailchimp = new MailchimpClient ( { token : access_token } ) ; const response = await mailchimp . ping . list () ; console . log ( response ) ; res . send ( ` <p>This user's access token is ${ access_token } .</p> <p>When pinging the Mailchimp Marketing API's ping endpoint, the server responded:<p> <code> ${ response } </code> ` ) ; // In reality, you'd want to store the access token somewhere in your // application. // fakeDB.getCurrentUser(); // fakeDB.storeMailchimpCredsForUser(user, { //   access_token // }); } ) ; app . listen ( 3000 , \" 127.0.0.1 \" , function () { console . log ( \" Server running on port 3000; visit http://127.0.0.1:3000 \" ) ; } ) ; The code above completes the flow and produces an access token, then uses it to\ncall the Ping endpoint , a trivial request that confirms the\ntoken works. It doesn’t persist anything; in a real application you’d store the\naccess token against your own user record. The two URLs involved, if you’re implementing this without the sample: Redirect the user to https://login.mailchimp.com/oauth2/authorize?response_type=code&client_id=YOUR_CLIENT_ID&redirect_uri=YOUR_REDIRECT_URI Exchange the returned code with a POST to https://login.mailchimp.com/oauth2/token Rotate a client secret If your client_secret is exposed, rotate it: Navigate to the Registered Apps page in your Mailchimp account. Click Edit for the registered app you need to update. In the Client secret field, click Rotate . On the pop-up modal, type ROTATE and click Rotate Client Secret . You’ll see a modal with the client_id and the updated client_secret . Update\nyour application with the new secret; once rotation completes, requests signed\nwith the old one fail with a 401 . This is the only time you’ll be able to see the updated client_secret , so\nyou’ll need to copy it and store it securely. Next steps API structure — conventions you’ll hit across the API Batch operations — syncing contacts in bulk once you have a token Webhooks — keeping your platform in step with changes made in Mailchimp",
+      "published_label": null
+    },
+    {
+      "url": "https://mailchimp.com/help/about-api-keys/?msockid=0e143ff0b0f06f6f2f7e2987b1416ef5",
+      "requested_url": "https://mailchimp.com/help/about-api-keys/?msockid=0e143ff0b0f06f6f2f7e2987b1416ef5",
+      "status": 200,
+      "title": "About API Keys (https://mailchimp.com/help/about-api-keys/?msockid=0e143ff0b0f06f6f2f7e2987b1416ef5)",
+      "text": "About API Keys | Mailchimp Skip to main content Save 50% for 12 months - limited time offer. Get started today. Get the job done with a pro From training to full-service marketing, our community of partners can help you make things happen. Hire A Partner In this article, we'll cover what an API is and how to generate an API key to grant access to your Mailchimp account. We’ll also cover where to go for support with questions about the Mailchimp Marketing API . Note This article refers only to API keys for the Mailchimp Marketing API . To learn more about the Mailchimp Transactional API , check out the Transactional API Quick Start Guide. What is an API? API stands for application programming interface . Think of an API as a way for different apps to talk to one another. You send and receive data between apps using API requests and responses. An API key is a unique series of characters that’s included in a request to verify that the requesting system is allowed to communicate with the receiving system. Generate an API key You’ll often need to generate an API key when you set up an integration with your Mailchimp account. Users with Manager permissions can generate their own API keys. Users with Admin permissions can also see the API keys other account users have generated. API key expiration: Effective June 22, 2026, any new API key you generate will expire 1 year after its creation date. API keys created before June 22, 2026 aren't affected by this change and won't expire. Note You’ll only be able to see the full API key immediately after you generate it. After that, you’ll only see the name you’ve given it and its first 4 digits. To generate an API key, follow these steps. Click your profile icon and choose Profile . Click the Extras drop-down then choose API keys . In the Your API Keys section, click Create A Key . Name your key. Be descriptive, so you know what app uses that key. Keep in mind that you’ll see only this name and the first 4 key digits on your list of API keys. Click Generate Key . Once we generate your key, click Copy Key to Clipboard . Save your key someplace secure–you won’t be able to see or copy it again. If you lose this key, you’ll need to generate a new key and update any integration that uses it. Click Done . Revoke an API key If an API key has been compromised, or you no longer use the integration that was accessing your account through it, you can revoke that API key. Once you’ve revoked an API key, it can’t be reactivated. You’ll need to generate a new key and update any integrations that use the original key. To revoke an API key, follow these steps. Click your profile icon and choose Profile . Click the Extras drop-down then choose API keys . Find the API key you want to revoke and click Revoke . In the pop-up modal, type REVOKE then click Revoke to confirm your action. API key security API keys grant full access to your Mailchimp account. You should protect them the same way you would protect your password. Keep these common scenarios in mind when working with API keys. Rotate your API keys regularly. We recommend generating a new API key and revoking the old one at least once a year. Regularly rotating your keys limits how long a compromised key could be used if it were ever exposed, even if you're not aware it's been compromised. Give each integration its own API key. Assign descriptive names to each key so you know which key goes with which app. If a specific API key is compromised, you can revoke that key without disabling access to your other integrations. Be careful not to expose the key to the public (such as in screenshots, videos, or help documents). Remember that blurring your data isn't always enough. It's best to remove the data completely. Because of the potential security risks that come with exposing account API keys, Mailchimp doesn’t support client-side implementation of our API using CORS requests or including API keys in mobile apps. If you need to share access to your account, generate a new key and name it so you’ll know which key to revoke, if needed. Never email an API key. This could allow access to your Mailchimp account if hackers were to compromise your email account. If you revoke a user's access to your Mailchimp account, we’ll remove any API keys that user generated from your account. The role of the user who generated the API key determines access to each endpoint. To learn more about user level permissions, visit Manage User Levels in Your Account . API support Our Mailchimp Support team isn't trained for in-depth API troubleshooting. If you need a developer to help you configure something using the API, check out our great Experts Directory . This lists third-party Mailchimp experts who can be hired to help out. If you're a developer who wants to build your own integration with Mailchimp, check out our API documentation . Technical Support Have a question? Paid users can log in to access email and chat support. Log In Was this article helpful? Yes No Awesome! Can you tell us more about your experience today? It was easy to find what I was looking for. I could easily scan a help article to find the information I needed. The help articles are easy to read. The help articles helped me resolve my issue. Mailchimp is easy to use. I just love Mailchimp! Other. Sorry we couldn't be more help. Can you tell us about your experience today? The help articles don't make sense. I wish there was a video that showed me how to do this. What I'm trying to do in Mailchimp doesn't work the way I think it should. It was hard to find what I was looking for. I never found what I was looking for at all. I have to contact Support to resolve my issue (for example, an account or billing problem). Other. Anything else we can do to improve our site? Submit Feedback Manage User Levels in Your Account Learn about user permission levels, how to grant access to a user, troubleshoot an invite, and change or remove user access.",
+      "published_label": null
+    }
+  ],
+  "claims": {
+    "auth": {
+      "value": [
+        "OAuth 2.0",
+        "API key",
+        "Bearer token",
+        "Basic authentication"
+      ],
+      "sources": [
+        "https://mailchimp.com/developer/marketing/api-concepts/authentication/",
+        "https://mailchimp.com/developer/marketing/api-concepts/authentication/api-keys",
+        "https://mailchimp.com/developer/marketing/build/start-developing/set-up-an-oauth-app?msockid=29bdc574f2e667260679d34cf3e666e1",
+        "https://mailchimp.com/help/about-api-keys/?msockid=0e143ff0b0f06f6f2f7e2987b1416ef5"
+      ],
+      "evidence": [
+        {
+          "value": "OAuth 2.0",
+          "url": "https://mailchimp.com/developer/marketing/api-concepts/authentication/",
+          "excerpt": "on of any page. Skip to navigation On this page Choose a credential Authenticate with an API key or OAuth 2 token User access and revocation Scroll to top This page is for Mailchimp Marketing API. Every request to the Marketing API carries a credential. There are two kinds,\nand which on",
+          "published_label": null
+        },
+        {
+          "value": "API key",
+          "url": "https://mailchimp.com/developer/marketing/api-concepts/authentication/",
+          "excerpt": "kdown version of any page. Skip to navigation On this page Choose a credential Authenticate with an API key or OAuth 2 token User access and revocation Scroll to top This page is for Mailchimp Marketing API. Every request to the Marketing API carries a credential. There are two kinds,\na",
+          "published_label": null
+        },
+        {
+          "value": "Bearer token",
+          "url": "https://mailchimp.com/developer/marketing/api-concepts/authentication/",
+          "excerpt": "n header: curl --request GET \\ --url ' https://api.mailchimp.com/3.0/ ' \\ --header ' Authorization: Bearer TOKEN ' User access and revocation Authentication is tied to the user who created the API key or authorized the\nOAuth 2 app, not to the account. If that user is removed from the account",
+          "published_label": null
+        },
+        {
+          "value": "Basic authentication",
+          "url": "https://mailchimp.com/developer/marketing/api-concepts/authentication/",
+          "excerpt": "OAuth 2 access tokens are sent the same way. We’ll refer to both\nas tokens. You can use either HTTP Basic Authentication or Bearer Authentication. HTTP Basic Authentication passes the token as the password, with any string as\nthe username: curl --request GET \\ --url ' https://api.mailchimp.com/3.0/ ",
+          "published_label": null
+        },
+        {
+          "value": "API key",
+          "url": "https://mailchimp.com/developer/marketing/api-concepts/authentication/api-keys",
+          "excerpt": "at a key grants Where keys can’t be used Scroll to top This page is for Mailchimp Marketing API. An API key authenticates requests\nagainst the account it was created in. It’s the right credential when your\napplication works with your own Mailchimp data. To create one, see Generate your ",
+          "published_label": null
+        },
+        {
+          "value": "OAuth 2.0",
+          "url": "https://mailchimp.com/developer/marketing/build/start-developing/set-up-an-oauth-app?msockid=29bdc574f2e667260679d34cf3e666e1",
+          "excerpt": " steps Scroll to top This page is for Mailchimp Marketing API. This page walks through implementing OAuth 2 so your application can access the\nMarketing API on behalf of other Mailchimp users. For how the flow works and why\nit has the steps it does, see OAuth 2 . What you’ll need A Mail",
+          "published_label": null
+        },
+        {
+          "value": "API key",
+          "url": "https://mailchimp.com/developer/marketing/build/start-developing/set-up-an-oauth-app?msockid=29bdc574f2e667260679d34cf3e666e1",
+          "excerpt": " flow works and why\nit has the steps it does, see OAuth 2 . What you’ll need A Mailchimp account An API key ,\nif you want to test against your own account first A redirect URI for your application, the URL Mailchimp sends users back\nto after they authorize your application. It must be r",
+          "published_label": null
+        },
+        {
+          "value": "API key",
+          "url": "https://mailchimp.com/help/about-api-keys/?msockid=0e143ff0b0f06f6f2f7e2987b1416ef5",
+          "excerpt": "ke things happen. Hire A Partner In this article, we'll cover what an API is and how to generate an API key to grant access to your Mailchimp account. We’ll also cover where to go for support with questions about the Mailchimp Marketing API . Note This article refers only to API keys fo",
+          "published_label": null
+        }
+      ],
+      "reason": "Provisional extraction: validate scope and completeness against the cited page."
+    },
+    "credential_gate": {
+      "value": "unknown",
+      "sources": [],
+      "evidence": [],
+      "reason": "No sufficiently specific positive evidence extracted; review targeted search results."
+    },
+    "api_surface": {
+      "value": "unknown",
+      "sources": [],
+      "evidence": [],
+      "reason": "No sufficiently specific positive evidence extracted; review targeted search results."
+    },
+    "official_mcp": {
+      "value": "unknown",
+      "sources": [],
+      "evidence": [],
+      "reason": "No sufficiently specific positive evidence extracted; review targeted search results."
+    },
+    "composio_toolkit": {
+      "value": "listed",
+      "sources": [
+        "https://docs.composio.dev/toolkits/mailchimp"
+      ],
+      "evidence": [],
+      "reason": "Catalog match; scope needs review."
+    },
+    "verdict": {
+      "value": "unknown",
+      "sources": [],
+      "evidence": [],
+      "reason": "A supported access path, authentication method and API surface were not all extracted."
+    }
+  },
+  "validation": [
+    "All claims are provisional",
+    "No vendor MCP inference from Composio catalog",
+    "Negated MCP or client-only source is not counted as vendor-server proof"
+  ]
+}

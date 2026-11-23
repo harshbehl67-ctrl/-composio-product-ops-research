@@ -1,0 +1,149 @@
+{
+  "app": {
+    "number": 43,
+    "name": "BigCommerce",
+    "category": "Ecommerce",
+    "hint": "developer.bigcommerce.com"
+  },
+  "replayed_at": "2026-11-23T18:19:18.585684+00:00",
+  "source_passes": [
+    "data/pass2/043.json",
+    "data/pass4/043.json"
+  ],
+  "source_search": "data/new_search/043.json",
+  "publication_date_note": "Published labels are retained exactly as supplied by search; missing labels are null. Relative labels must not be treated as exact publication dates.",
+  "claims": {
+    "auth": {
+      "value": [
+        "API token",
+        "Bearer token"
+      ],
+      "sources": [
+        "https://docs.bigcommerce.com/developer/api-reference/rest/b2b/management/authentication",
+        "https://docs.bigcommerce.com/developer/learn/courses/graphql-storefront-api/auth/authentication"
+      ],
+      "evidence": [
+        {
+          "value": "API token",
+          "url": "https://docs.bigcommerce.com/developer/api-reference/rest/b2b/management/authentication",
+          "excerpt": "sts made by individuals or integrations to the server. All Server to Server API requests require an API token in the header of the request. When using the X-Auth-Token header with B2B Edition Server to Server API requests, the X-Store-Hash header is also required. See B2B Authentication f",
+          "published_label": null
+        },
+        {
+          "value": "API token",
+          "url": "https://docs.bigcommerce.com/developer/learn/courses/graphql-storefront-api/auth/authentication",
+          "excerpt": "ver-to-server integrations, use Private Tokens instead. In general, this type of GraphQL Storefront API token is not considered sensitive, and it is safe to expose in web browsers, for example, in HTML documents. In a client-side context, this token can only expose information that an ind",
+          "published_label": null
+        },
+        {
+          "value": "Bearer token",
+          "url": "https://docs.bigcommerce.com/developer/learn/courses/graphql-storefront-api/auth/authentication",
+          "excerpt": "per. Plan: Developer Foundations Lesson 6 of 28 · 30 min The GraphQL API authorizes requests with a bearer token sent via the HTTP Authorization header: POST https :// { bigcommerce_storefront_domain } . com / graphql Accept : application / json Content - Type : application / json Authorizat",
+          "published_label": null
+        }
+      ],
+      "reason": "Provisional extraction: validate scope and completeness against the cited page."
+    },
+    "credential_gate": {
+      "value": "unknown",
+      "sources": [],
+      "evidence": [],
+      "reason": "No sufficiently specific positive evidence extracted; review targeted search results."
+    },
+    "api_surface": {
+      "value": [
+        "GraphQL",
+        "REST"
+      ],
+      "sources": [
+        "https://www.bigcommerce.com/articles/b2b-ecommerce/mcp-b2b-ecommerce/",
+        "https://docs.bigcommerce.com/developer/docs/overview/api-fundamentals/api-accounts",
+        "https://docs.bigcommerce.com/developer/changelog/2026/10/8",
+        "https://docs.bigcommerce.com/developer/learn/courses/graphql-storefront-api/auth/authentication",
+        "https://docs.bigcommerce.com/developer/api-reference/about-our-apis"
+      ],
+      "evidence": [
+        {
+          "value": "GraphQL",
+          "url": "https://www.bigcommerce.com/articles/b2b-ecommerce/mcp-b2b-ecommerce/",
+          "excerpt": "Fadyen Digital (September 2026) None REST and GraphQL: the system of record. B2B Edition's REST and GraphQL APIs remain the system of record for companies, price lists, invoices, and orders. Again, MCP is a layer agents use to act on that data, not a replacement for ERP or PIM integration. H",
+          "published_label": "4 days ago"
+        },
+        {
+          "value": "REST",
+          "url": "https://docs.bigcommerce.com/developer/docs/overview/api-fundamentals/api-accounts",
+          "excerpt": "Commerce offers three types of OAuth-based API accounts to developers who wish to use BigCommerce’s REST APIs: store-level credentials, app-level credentials, and account-level credentials. This section describes the difference between the three, how to obtain and revoke account credentia",
+          "published_label": null
+        },
+        {
+          "value": "GraphQL",
+          "url": "https://docs.bigcommerce.com/developer/docs/overview/api-fundamentals/api-accounts",
+          "excerpt": "API account App-level API account Account-level API account GraphQL Account API , including Users × GraphQL Admin API × × GraphQL Storefront API × B2B REST Management API × REST Store Management APIs × × REST Storefront API × Customer Login API × Current Customer API × Payments API × × Apps that ",
+          "published_label": null
+        },
+        {
+          "value": "GraphQL",
+          "url": "https://docs.bigcommerce.com/developer/changelog/2026/10/8",
+          "excerpt": "ncement October 8, 2026 GraphQL Enhancement Shipping option selection strategy for checkouts in the GraphQL Storefront API BigCommerce is rolling out an optional shippingOptionSelectionStrategy field on checkout shipping consignments in the GraphQL Storefront API, so a caller can have a shipping optio",
+          "published_label": "last month"
+        },
+        {
+          "value": "GraphQL",
+          "url": "https://docs.bigcommerce.com/developer/learn/courses/graphql-storefront-api/auth/authentication",
+          "excerpt": "s Scroll to top This page is for Developer. Plan: Developer Foundations Lesson 6 of 28 · 30 min The GraphQL API authorizes requests with a bearer token sent via the HTTP Authorization header: POST https :// { bigcommerce_storefront_domain } . com / graphql Accept : application / json Conten",
+          "published_label": null
+        },
+        {
+          "value": "REST",
+          "url": "https://docs.bigcommerce.com/developer/api-reference/about-our-apis",
+          "excerpt": "hQL Account API , including Users server GraphQL Admin API server GraphQL Storefront API storefront REST Management API server REST Storefront API storefront Customer Login API storefront Current Customer API storefront Payments API server Apps that host REST Provider APIs (provider apps) server Ap",
+          "published_label": null
+        },
+        {
+          "value": "GraphQL",
+          "url": "https://docs.bigcommerce.com/developer/api-reference/about-our-apis",
+          "excerpt": "page. Skip to navigation On this page Available APIs REST Store Management APIs REST Storefront API GraphQL Storefront API Customer Login API Current Customer API API authentication and context Scroll to top This page is for Developer. The BigCommerce suite of APIs empowers you to create apps, automat",
+          "published_label": null
+        }
+      ],
+      "reason": "Provisional extraction: validate scope and completeness against the cited page."
+    },
+    "official_mcp": {
+      "value": "yes (provisional)",
+      "sources": [
+        "https://www.bigcommerce.com/articles/b2b-ecommerce/mcp-b2b-ecommerce/"
+      ],
+      "evidence": [
+        {
+          "value": "yes (provisional)",
+          "url": "https://www.bigcommerce.com/articles/b2b-ecommerce/mcp-b2b-ecommerce/",
+          "excerpt": "'s B2B Storefront tool set adds 12 shopping-list tools and 5 quote tools to the BigCommerce MCP server, and it's available now in early access (beta). Contract pricing, custom catalogs, company roles, and payment terms are set in B2B Edition, and sales reps stil",
+          "published_label": "4 days ago",
+          "context_warning": "Review vendor ownership, dates, and scope."
+        }
+      ],
+      "reason": "Provisional; check source date, scope, and vendor ownership."
+    },
+    "composio_toolkit": {
+      "value": "listed",
+      "sources": [
+        "https://docs.composio.dev/toolkits/bigcommerce"
+      ],
+      "evidence": [],
+      "reason": "Catalog match; scope needs review."
+    },
+    "verdict": {
+      "value": "unknown",
+      "sources": [],
+      "evidence": [],
+      "reason": "A supported access path, authentication method and API surface were not all extracted."
+    }
+  },
+  "validation": [
+    "Automatic extraction is provisional and not a verified final claim",
+    "Unknown is not evidence of absence",
+    "No Composio-to-vendor-MCP inference",
+    "Basic authentication may be endpoint-specific",
+    "Client-only and negated statements are not positive MCP evidence"
+  ]
+}

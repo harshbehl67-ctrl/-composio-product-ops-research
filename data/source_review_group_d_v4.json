@@ -1,0 +1,74 @@
+{
+  "checked_at": "2026-11-24",
+  "method": "Read-only in-app browser inspection of Amazon's rendered Selling Partner plugin page and direct visible-text retrieval of the official About Amazon launch article and SP-API reference; no sign-in or credentials.",
+  "audit_summary": {
+    "flagged_uses": 2,
+    "actions": 2,
+    "replace": 0,
+    "reclassify": 1,
+    "record_update": 1,
+    "keep": 0,
+    "unresolved": 0,
+    "note": "The Selling Partner plugin is documented as an AI-agent integration, but Amazon's reviewed official pages publish no MCP server endpoint or transport for it. The separate Amazon Ads MCP Server was not substituted."
+  },
+  "actions": [
+    {
+      "app": "Amazon Selling Partner",
+      "field": "official_mcp",
+      "decision": "reclassify",
+      "claim": {
+        "value": "no_vendor_server_documented",
+        "review_basis": "scoped_documentation_review",
+        "mcp_mode": "unknown",
+        "status": "checked",
+        "reason": "Scoped documentation review of Amazon's Selling Partner plugin page, the official About Amazon launch article, and the SP-API reference found no vendor server for Amazon Selling Partner. The plugin is documented as an integration with AI agents and seller-approved actions, but no MCP endpoint or transport is published for it. Amazon Ads MCP is a separate product and was not substituted. This is a point-in-time documentation finding, not a universal absence claim. The plugin page is undated; the About Amazon article was published 2026-09-23 and the SP-API reference was updated 2026-10-28.",
+        "evidence": [
+          {
+            "url": "https://developer.amazonservices.com/amazon-selling-partner-plugin",
+            "title": "Amazon Selling Partner plugin",
+            "quote": "The Selling Partner plugin connects your Amazon data directly to your preferred AI agent: AWS Quick, Anthropic's Claude, and more to come.",
+            "retrieved_at": "2026-11-24",
+            "published_at": null,
+            "published_label": "undated"
+          },
+          {
+            "url": "https://developer.amazonservices.com/amazon-selling-partner-plugin",
+            "title": "Amazon Selling Partner plugin action approval",
+            "quote": "Your agent only acts when you approve.",
+            "retrieved_at": "2026-11-24",
+            "published_at": null,
+            "published_label": "undated"
+          },
+          {
+            "url": "https://www.aboutamazon.com/news/innovation-at-amazon/seller-assistant-plugin-amazon-quick-claude",
+            "title": "Amazon seller plugin launch",
+            "quote": "The plugin connects a seller's Amazon data, including their listing contributions, real-time performance metrics, inventory levels, and sales analytics, directly to their preferred AI agent.",
+            "retrieved_at": "2026-11-24",
+            "published_at": "2026-09-23",
+            "published_label": "published 2026-09-23"
+          },
+          {
+            "url": "https://developer-docs.amazon.com/sp-api/reference/welcome-to-api-references",
+            "title": "Amazon Selling Partner API reference",
+            "quote": "Welcome to the Selling Partner API reference.",
+            "retrieved_at": "2026-11-24",
+            "published_at": "2026-10-28",
+            "published_label": "updated 2026-10-28"
+          }
+        ]
+      },
+      "review_note": "The prior unknown was resolved by rendered first-party plugin documentation and corroborating official launch/API pages. No reviewed page identifies the Selling Partner plugin as an MCP server; the separate Ads MCP product is explicitly out of scope."
+    },
+    {
+      "app": "Amazon Selling Partner",
+      "decision": "record_update",
+      "updates": {
+        "summary": "Amazon's Selling Partner API provides broad REST operations and GraphQL reporting through Data Kiosk, with LWA OAuth, private self-authorization, and Restricted Data Tokens. Production access requires Amazon developer-profile approval. Amazon also documents a Selling Partner plugin for AI agents, but the reviewed official pages do not document an MCP server for that plugin.",
+        "blocker": "Production SP-API applications require an approved developer profile and approved roles, with seller authorization for public apps. The Selling Partner plugin has no published MCP endpoint or transport in the reviewed official documentation, so builds should use SP-API directly rather than assume the plugin is an MCP server.",
+        "next_action": "Create a developer profile, test with a sandbox application while review proceeds, then register a production client and obtain role and selling-partner authorization. Implement LWA and RDT flows against SP-API; request explicit plugin protocol documentation only if MCP is required."
+      },
+      "review_note": "Top-level summary, blocker, and next action now reflect the checked scoped no-vendor-server documentation finding and keep the plugin separate from Amazon Ads MCP."
+    }
+  ],
+  "unresolved": []
+}

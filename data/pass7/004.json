@@ -1,0 +1,99 @@
+{
+  "app": {
+    "number": 4,
+    "name": "Attio",
+    "category": "CRM and Sales",
+    "hint": "attio.com"
+  },
+  "replayed_at": "2026-11-23T18:19:16.954322+00:00",
+  "source_passes": [
+    "data/pass2/004.json",
+    "data/pass4/004.json"
+  ],
+  "source_search": "data/new_search/004.json",
+  "publication_date_note": "Published labels are retained exactly as supplied by search; missing labels are null. Relative labels must not be treated as exact publication dates.",
+  "claims": {
+    "auth": {
+      "value": [
+        "API key"
+      ],
+      "sources": [
+        "https://attio.com/help/reference/apps/generating-an-api-key"
+      ],
+      "evidence": [
+        {
+          "value": "API key",
+          "url": "https://attio.com/help/reference/apps/generating-an-api-key",
+          "excerpt": "Generate an API key | Attio Help Center Help / Reference / Apps / Generate an API key Table of Contents Generate an API key Manage API keys Keeping your data safe Available on all plans. Admins can c",
+          "published_label": null
+        }
+      ],
+      "reason": "Provisional extraction: validate scope and completeness against the cited page."
+    },
+    "credential_gate": {
+      "value": "unknown",
+      "sources": [],
+      "evidence": [],
+      "reason": "No sufficiently specific positive evidence extracted; review targeted search results."
+    },
+    "api_surface": {
+      "value": "unknown",
+      "sources": [],
+      "evidence": [],
+      "reason": "No sufficiently specific positive evidence extracted; review targeted search results."
+    },
+    "official_mcp": {
+      "value": "yes (provisional)",
+      "sources": [
+        "https://attio.com/apps/mcp",
+        "https://mcp.attio.com/mcp",
+        "https://attio.com/help/reference/how-to-guides/attio-mcp-prompts-and-best-practices"
+      ],
+      "evidence": [
+        {
+          "value": "yes (provisional)",
+          "url": "https://attio.com/apps/mcp",
+          "excerpt": "Category Analytics Resources Website Documentation Support Install app Overview Attio provides a hosted MCP server that gives AI tools secure access to your Attio workspace. It’s designed to work seamlessly with popular AI assistants like Claude, ChatGPT, Cursor, and more. ",
+          "published_label": null,
+          "context_warning": "Review vendor ownership, dates, and scope."
+        },
+        {
+          "value": "yes (provisional)",
+          "url": "https://mcp.attio.com/mcp",
+          "excerpt": "@@@ @@+ +@@@+#@@#\n :@@@@@+   #@@@@+:       :++++++++   :+++:  ++++ ++:   +++++: ATTIO MCP SERVER Connect your AI tools to Attio via Model Context Protocol.\n\n\nSETUP\n-----\n\n**For Claude Desktop or Claude.ai:**\n\n1. Open Settings -> Connectors -> Browse connec",
+          "published_label": null,
+          "context_warning": "Review vendor ownership, dates, and scope."
+        },
+        {
+          "value": "yes (provisional)",
+          "url": "https://attio.com/help/reference/how-to-guides/attio-mcp-prompts-and-best-practices",
+          "excerpt": " assistants securely interact with other systems. Your AI assistant connects to Attio's MCP server, you sign in with your Attio account, and the assistant can then use a set of Attio tools: searching records, creating and updating records, working with notes",
+          "published_label": null,
+          "context_warning": "Review vendor ownership, dates, and scope."
+        }
+      ],
+      "reason": "Provisional; check source date, scope, and vendor ownership."
+    },
+    "composio_toolkit": {
+      "value": "listed",
+      "sources": [
+        "https://docs.composio.dev/toolkits/attio"
+      ],
+      "evidence": [],
+      "reason": "Catalog match; scope needs review."
+    },
+    "verdict": {
+      "value": "unknown",
+      "sources": [],
+      "evidence": [],
+      "reason": "A supported access path, authentication method and API surface were not all extracted."
+    }
+  },
+  "validation": [
+    "Automatic extraction is provisional and not a verified final claim",
+    "Unknown is not evidence of absence",
+    "No Composio-to-vendor-MCP inference",
+    "Basic authentication may be endpoint-specific",
+    "Client-only and negated statements are not positive MCP evidence"
+  ]
+}

@@ -1,0 +1,182 @@
+{
+  "app": {
+    "number": 41,
+    "name": "Shopify",
+    "category": "Ecommerce",
+    "hint": "shopify.dev"
+  },
+  "replayed_at": "2026-11-23T18:41:05.234166+00:00",
+  "source_passes": [
+    "data/pass2/041.json",
+    "data/pass4/041.json"
+  ],
+  "source_searches": [
+    "data/new_search/041.json",
+    "data/pass4_search/041.json"
+  ],
+  "publication_date_note": "Search publication labels are retained exactly; null means no label was available. Relative labels are not exact dates.",
+  "claims": {
+    "auth": {
+      "value": [
+        "OAuth 2.0",
+        "Session authentication"
+      ],
+      "status": "provisional",
+      "sources": [
+        "https://shopify.dev/docs/api/usage/authentication",
+        "https://shopify.dev/docs/apps/build/authentication-authorization",
+        "https://shopify.dev/docs/apps/build/apis"
+      ],
+      "evidence": [
+        {
+          "value": "OAuth 2.0",
+          "url": "https://shopify.dev/docs/api/usage/authentication",
+          "excerpt": "hopify-Access-Token Customer Account API A buyer, on their own behalf Buyer signs in with OAuth 2.0 and PKCE Authorization The table covers the most commonly used APIs. For a complete list, see the Shopify API reference . Your app's client ID and client secret are on i",
+          "published_label": null
+        },
+        {
+          "value": "Session authentication",
+          "url": "https://shopify.dev/docs/apps/build/authentication-authorization",
+          "excerpt": "About app authentication Skip to main content Collapse sidebar Shopify apps call the GraphQL Admin API to read and write store data on behalf of merchants. Before your app can make those calls, it needs to authenticate: prove which app is calling, which merchant approved it, and ",
+          "published_label": null
+        },
+        {
+          "value": "Session authentication",
+          "url": "https://shopify.dev/docs/apps/build/apis",
+          "excerpt": "APIs for apps Skip to main content Collapse sidebar Your app's code runs in a few different places: on your own backend or storefront, in extensions that Shopify renders, and in Shopify Functions that run inside Shopify. Each place has its own kind of API, with its own authentica",
+          "published_label": null
+        }
+      ],
+      "reason": "Provisional extraction; validate scope and completeness against cited pages."
+    },
+    "credential_gate": {
+      "value": "unknown",
+      "status": "provisional",
+      "sources": [],
+      "evidence": [],
+      "reason": "No sufficiently specific official evidence extracted."
+    },
+    "api_surface": {
+      "value": "GraphQL, REST; broad documented surface",
+      "status": "provisional",
+      "sources": [
+        "https://shopify.dev/docs/api/usage/authentication",
+        "https://shopify.dev/docs/api/shopify-mcp",
+        "https://shopify.dev/docs/api/usage/access-scopes",
+        "https://shopify.dev/docs/api",
+        "https://shopify.dev/docs/api/ai-toolkit",
+        "https://shopify.dev/docs/apps/build/authentication-authorization",
+        "https://shopify.dev/docs/apps/build/apis",
+        "https://shopify.dev/docs/apps/build/authentication-authorization/access-tokens"
+      ],
+      "evidence": [
+        {
+          "value": [
+            "GraphQL"
+          ],
+          "breadth": "moderate",
+          "url": "https://shopify.dev/docs/api/usage/authentication",
+          "excerpt": "Shopify API authentication Skip to main content Collapse sidebar To call a Shopify API, your code sends an access token in a request header to authenticate the identity that token represents (your app or a buyer) and authorize what that identity can access. How you obtain the tok",
+          "published_label": null
+        },
+        {
+          "value": [
+            "GraphQL"
+          ],
+          "breadth": "narrow",
+          "url": "https://shopify.dev/docs/api/shopify-mcp",
+          "excerpt": "Shopify MCP Skip to main content Collapse sidebar Coming soon Shopify MCP isn't publicly available yet. This page shows where its documentation will live. Coming soon : Shopify MCP isn't publicly available yet. This page shows where its documentation will live. Shopify MCP is a r",
+          "published_label": null
+        },
+        {
+          "value": [
+            "REST",
+            "GraphQL"
+          ],
+          "breadth": "broad",
+          "url": "https://shopify.dev/docs/api/usage/access-scopes",
+          "excerpt": "Shopify API access scopes Skip to main content Collapse sidebar Access scopes control which store data your app can read and write. This guide lists available access scopes, grouped by scope type. The REST Admin API uses authenticated access scopes too, listed in access scopes fo",
+          "published_label": null
+        },
+        {
+          "value": [
+            "GraphQL"
+          ],
+          "breadth": "moderate",
+          "url": "https://shopify.dev/docs/api",
+          "excerpt": "Shopify APIs, libraries, and tools Skip to main content Collapse sidebar Shopify APIs, libraries, and tools Reference documentation for Shopify's APIs, libraries, and developer tools, plus the concepts that apply across all of them. Authentication How authentication works across ",
+          "published_label": null
+        },
+        {
+          "value": [
+            "GraphQL"
+          ],
+          "breadth": "moderate",
+          "url": "https://shopify.dev/docs/api/ai-toolkit",
+          "excerpt": "Shopify AI Toolkit Skip to main content Collapse sidebar AI coding agents can search the web, read documentation, and inspect your codebase, but they still need the right context at the right time to be effective. Shopify development depends on platform-specific details: which AP",
+          "published_label": null
+        },
+        {
+          "value": [
+            "GraphQL"
+          ],
+          "breadth": "moderate",
+          "url": "https://shopify.dev/docs/apps/build/authentication-authorization",
+          "excerpt": "About app authentication Skip to main content Collapse sidebar Shopify apps call the GraphQL Admin API to read and write store data on behalf of merchants. Before your app can make those calls, it needs to authenticate: prove which app is calling, which merchant approved it, and ",
+          "published_label": null
+        },
+        {
+          "value": [
+            "REST",
+            "GraphQL"
+          ],
+          "breadth": "moderate",
+          "url": "https://shopify.dev/docs/apps/build/apis",
+          "excerpt": "APIs for apps Skip to main content Collapse sidebar Your app's code runs in a few different places: on your own backend or storefront, in extensions that Shopify renders, and in Shopify Functions that run inside Shopify. Each place has its own kind of API, with its own authentica",
+          "published_label": null
+        },
+        {
+          "value": [
+            "REST",
+            "GraphQL"
+          ],
+          "breadth": "moderate",
+          "url": "https://shopify.dev/docs/apps/build/authentication-authorization/access-tokens",
+          "excerpt": "Access tokens Skip to main content Collapse sidebar An access token is a credential your app sends with each API request. It authenticates your app to the API and carries a set of access scopes that authorize what your app can access. Shopify enforces those scopes on every reques",
+          "published_label": null
+        }
+      ],
+      "reason": "Provisional extraction; validate scope and completeness against cited pages."
+    },
+    "official_mcp": {
+      "value": "unknown",
+      "status": "provisional",
+      "sources": [],
+      "evidence": [],
+      "reason": "No sufficiently specific official evidence extracted."
+    },
+    "composio_toolkit": {
+      "value": "listed",
+      "status": "provisional",
+      "sources": [
+        "https://docs.composio.dev/toolkits/shopify"
+      ],
+      "evidence": [],
+      "reason": "Catalog match only; not vendor MCP evidence."
+    },
+    "verdict": {
+      "value": "unknown",
+      "status": "provisional",
+      "sources": [],
+      "evidence": [],
+      "reason": "No sufficiently specific official evidence extracted."
+    }
+  },
+  "validation": [
+    "Automatic extraction is provisional until independently reviewed",
+    "Unknown is not evidence of absence",
+    "Composio evidence cannot establish vendor MCP",
+    "Client-only and negated MCP statements are not vendor-server proof",
+    "API breadth is a text-coverage heuristic, not an endpoint census"
+  ]
+}

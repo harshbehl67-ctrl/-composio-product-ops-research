@@ -1,0 +1,87 @@
+{
+  "app": {
+    "number": 97,
+    "name": "higgsfield",
+    "category": "AI, Research and Media-native",
+    "hint": "higgsfield.ai/cli (content suite)"
+  },
+  "replayed_at": "2026-11-23T18:19:20.993533+00:00",
+  "source_passes": [
+    "data/pass2/097.json",
+    "data/pass4/097.json"
+  ],
+  "source_search": "data/new_search/097.json",
+  "publication_date_note": "Published labels are retained exactly as supplied by search; missing labels are null. Relative labels must not be treated as exact publication dates.",
+  "claims": {
+    "auth": {
+      "value": "unknown",
+      "sources": [],
+      "evidence": [],
+      "reason": "No sufficiently specific positive evidence extracted; review targeted search results."
+    },
+    "credential_gate": {
+      "value": "unknown",
+      "sources": [],
+      "evidence": [],
+      "reason": "No sufficiently specific positive evidence extracted; review targeted search results."
+    },
+    "api_surface": {
+      "value": [
+        "REST"
+      ],
+      "sources": [
+        "https://higgsfield.ai/creator-hub/help-center/integrations/what-is-the-higgsfield-api",
+        "https://higgsfield.ai/creator-hub/help-center/integrations/what-is-the-higgsfield-api?fpr=adtestbench",
+        "https://higgsfield.ai/blog/higgsfield-api?trk=article-ssr-frontend-pulse_little-text-block"
+      ],
+      "evidence": [
+        {
+          "value": "REST",
+          "url": "https://higgsfield.ai/creator-hub/help-center/integrations/what-is-the-higgsfield-api",
+          "excerpt": "ing a key unlocks 20 concurrent requests. Connect through the Python or TypeScript SDK, or call the REST API directly from any language with an HTTP client, sending requests to api.higgsfield.ai . Each model page carries sample code, and if you work through a coding agent, ready setup pr",
+          "published_label": "2 months ago"
+        },
+        {
+          "value": "REST",
+          "url": "https://higgsfield.ai/creator-hub/help-center/integrations/what-is-the-higgsfield-api?fpr=adtestbench",
+          "excerpt": "ing a key unlocks 20 concurrent requests. Connect through the Python or TypeScript SDK, or call the REST API directly from any language with an HTTP client, sending requests to api.higgsfield.ai . Each model page carries sample code, and if you work through a coding agent, ready setup pr",
+          "published_label": "2 months ago"
+        },
+        {
+          "value": "REST",
+          "url": "https://higgsfield.ai/blog/higgsfield-api?trk=article-ssr-frontend-pulse_little-text-block",
+          "excerpt": "ing a key unlocks 20 concurrent requests. Integrate using the Python or TypeScript SDK, or call the REST API directly from any language with an HTTP client. Each model page includes ready code samples, plus prepared setup prompts for Claude Code, Cursor, and ChatGPT (Codex) that configur",
+          "published_label": "2 months ago"
+        }
+      ],
+      "reason": "Provisional extraction: validate scope and completeness against the cited page."
+    },
+    "official_mcp": {
+      "value": "unknown",
+      "sources": [],
+      "evidence": [],
+      "reason": "No sufficiently specific positive evidence extracted; review targeted search results."
+    },
+    "composio_toolkit": {
+      "value": "listed",
+      "sources": [
+        "https://docs.composio.dev/toolkits/higgsfield"
+      ],
+      "evidence": [],
+      "reason": "Catalog match; scope needs review."
+    },
+    "verdict": {
+      "value": "unknown",
+      "sources": [],
+      "evidence": [],
+      "reason": "A supported access path, authentication method and API surface were not all extracted."
+    }
+  },
+  "validation": [
+    "Automatic extraction is provisional and not a verified final claim",
+    "Unknown is not evidence of absence",
+    "No Composio-to-vendor-MCP inference",
+    "Basic authentication may be endpoint-specific",
+    "Client-only and negated statements are not positive MCP evidence"
+  ]
+}

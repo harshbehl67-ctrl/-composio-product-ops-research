@@ -1,0 +1,219 @@
+{
+  "app": {
+    "number": 43,
+    "name": "BigCommerce",
+    "category": "Ecommerce",
+    "hint": "developer.bigcommerce.com"
+  },
+  "replayed_at": "2026-11-23T18:45:51.161496+00:00",
+  "source_passes": [
+    "data/pass2/043.json",
+    "data/pass4/043.json"
+  ],
+  "source_searches": [
+    "data/new_search/043.json",
+    "data/pass4_search/043.json"
+  ],
+  "publication_date_note": "Search publication labels are retained exactly; null means no label was available. Relative labels are not exact dates.",
+  "claims": {
+    "auth": {
+      "value": [
+        "API token",
+        "OAuth 2.0",
+        "API key",
+        "Bearer token",
+        "Basic authentication",
+        "Session authentication"
+      ],
+      "status": "provisional",
+      "sources": [
+        "https://docs.bigcommerce.com/developer/api-reference/rest/b2b/management/authentication",
+        "https://docs.bigcommerce.com/developer/api-reference/mcp/overview/",
+        "https://docs.bigcommerce.com/developer/api-reference/mcp/store-management",
+        "https://docs.bigcommerce.com/developer/docs/overview/api-fundamentals/api-accounts",
+        "https://docs.bigcommerce.com/developer/learn/courses/graphql-storefront-api/auth/authentication"
+      ],
+      "evidence": [
+        {
+          "value": "API token",
+          "url": "https://docs.bigcommerce.com/developer/api-reference/rest/b2b/management/authentication",
+          "excerpt": "y individuals or integrations to the server. All Server to Server API requests require an API token in the header of the request. When using the X-Auth-Token header with B2B Edition Server to Server API requests, the X-Store-Hash header is also required. See B2B Authen",
+          "published_label": null
+        },
+        {
+          "value": "OAuth 2.0",
+          "url": "https://docs.bigcommerce.com/developer/api-reference/mcp/overview/",
+          "excerpt": "MCP Overview | BigCommerce Docs For AI agents: a documentation index is available at the root level at /llms.txt. Append /llms.txt to any URL for a page-level index, or .md for the markdown version of any page. Skip to navigation On this page Use cases Storefront MCP WebMCP Store",
+          "published_label": null
+        },
+        {
+          "value": "OAuth 2.0",
+          "url": "https://docs.bigcommerce.com/developer/api-reference/mcp/store-management",
+          "excerpt": "Store Management MCP | BigCommerce Docs For AI agents: a documentation index is available at the root level at /llms.txt. Append /llms.txt to any URL for a page-level index, or .md for the markdown version of any page. Skip to navigation On this page Before you begin Enable Store",
+          "published_label": null
+        },
+        {
+          "value": "API key",
+          "url": "https://docs.bigcommerce.com/developer/api-reference/mcp/store-management",
+          "excerpt": "ement MCP address and sign in through the BigCommerce login — you never paste a password, API key, or token into the client. Any client with standard MCP and OAuth support should work, even if it isn’t listed here. Menu names in third-party clients change often. If a",
+          "published_label": null
+        },
+        {
+          "value": "API token",
+          "url": "https://docs.bigcommerce.com/developer/docs/overview/api-fundamentals/api-accounts",
+          "excerpt": "r available OAuth scopes and provides a compelling list of reasons to migrate from legacy API tokens to OAuth credentials. Every parent set of API credentials that you request for your store is its own API account . At its simplest, an API account consists of the follo",
+          "published_label": null
+        },
+        {
+          "value": "Bearer token",
+          "url": "https://docs.bigcommerce.com/developer/docs/overview/api-fundamentals/api-accounts",
+          "excerpt": "s Payment Storefront API Tokens modify store_storefront_api Create GraphQL Storefront API bearer tokens Storefront API Token V3 Storefront API Customer Impersonation Tokens modify store_storefront_api_customer_impersonation Create GraphQL Storefront API bearer tokens that",
+          "published_label": null
+        },
+        {
+          "value": "Basic authentication",
+          "url": "https://docs.bigcommerce.com/developer/docs/overview/api-fundamentals/api-accounts",
+          "excerpt": "ted. How to migrate Before you update your API connections to use OAuth instead of legacy basic authentication, take the following actions: Create an API account appropriate to your use case. Keeping in mind the API endpoints your connections use, create either a store API accoun",
+          "published_label": null
+        },
+        {
+          "value": "API token",
+          "url": "https://docs.bigcommerce.com/developer/learn/courses/graphql-storefront-api/auth/authentication",
+          "excerpt": "ver integrations, use Private Tokens instead. In general, this type of GraphQL Storefront API token is not considered sensitive, and it is safe to expose in web browsers, for example, in HTML documents. In a client-side context, this token can only expose information t",
+          "published_label": null
+        },
+        {
+          "value": "Bearer token",
+          "url": "https://docs.bigcommerce.com/developer/learn/courses/graphql-storefront-api/auth/authentication",
+          "excerpt": "Developer Foundations Lesson 6 of 28 · 30 min The GraphQL API authorizes requests with a bearer token sent via the HTTP Authorization header: POST https :// { bigcommerce_storefront_domain } . com / graphql Accept : application / json Content - Type : application / json",
+          "published_label": null
+        },
+        {
+          "value": "Session authentication",
+          "url": "https://docs.bigcommerce.com/developer/learn/courses/graphql-storefront-api/auth/authentication",
+          "excerpt": "Authentication | BigCommerce Docs For AI agents: a documentation index is available at the root level at /llms.txt. Append /llms.txt to any URL for a page-level index, or .md for the markdown version of any page. Skip to navigation On this page Correlating Requests Creating a Sta",
+          "published_label": null
+        }
+      ],
+      "reason": "Provisional extraction; validate scope and completeness against cited pages."
+    },
+    "credential_gate": {
+      "value": [
+        "self_serve_trial"
+      ],
+      "status": "provisional",
+      "sources": [
+        "https://www.bigcommerce.com/articles/b2b-ecommerce/mcp-b2b-ecommerce/"
+      ],
+      "evidence": [
+        {
+          "value": "self_serve_trial",
+          "url": "https://www.bigcommerce.com/articles/b2b-ecommerce/mcp-b2b-ecommerce/",
+          "excerpt": "new website. See if the BigCommerce platform is a good fit for your business. Start your free trial No credit card required. Written by John Shieldsmith 11/19/2026 Share this article MCP for B2B Ecommerce: Supporting Quotes, Pricing, Accounts, and Complex Orders Get Th",
+          "published_label": "4 days ago"
+        }
+      ],
+      "reason": "Provisional extraction; validate scope and completeness against cited pages."
+    },
+    "api_surface": {
+      "value": "GraphQL, REST; broad documented surface",
+      "status": "provisional",
+      "sources": [
+        "https://www.bigcommerce.com/articles/b2b-ecommerce/mcp-b2b-ecommerce/",
+        "https://docs.bigcommerce.com/developer/docs/overview/api-fundamentals/api-accounts",
+        "https://docs.bigcommerce.com/developer/changelog/2026/10/8",
+        "https://docs.bigcommerce.com/developer/learn/courses/graphql-storefront-api/auth/authentication",
+        "https://docs.bigcommerce.com/developer/api-reference/about-our-apis"
+      ],
+      "evidence": [
+        {
+          "value": [
+            "GraphQL"
+          ],
+          "breadth": "broad",
+          "url": "https://www.bigcommerce.com/articles/b2b-ecommerce/mcp-b2b-ecommerce/",
+          "excerpt": "MCP for B2B Ecommerce: Quotes, Approvals, and Pricing Rules MCP for B2B Ecommerce: Supporting Quotes, Pricing, Accounts, and Complex Orders Create your store and start selling today. Try for free Create your new website. See if the BigCommerce platform is a good fit for your busi",
+          "published_label": "4 days ago"
+        },
+        {
+          "value": [
+            "REST",
+            "GraphQL"
+          ],
+          "breadth": "broad",
+          "url": "https://docs.bigcommerce.com/developer/docs/overview/api-fundamentals/api-accounts",
+          "excerpt": "API Accounts | BigCommerce Docs For AI agents: a documentation index is available at the root level at /llms.txt. Append /llms.txt to any URL for a page-level index, or .md for the markdown version of any page. Skip to navigation On this page API accounts Choosing the right kind ",
+          "published_label": null
+        },
+        {
+          "value": [
+            "GraphQL"
+          ],
+          "breadth": "narrow",
+          "url": "https://docs.bigcommerce.com/developer/changelog/2026/10/8",
+          "excerpt": "October 8, 2026 | BigCommerce Docs For AI agents: a documentation index is available at the root level at /llms.txt. Append /llms.txt to any URL for a page-level index, or .md for the markdown version of any page. Skip to navigation This page is for Developer. October 8, 2026 B2B",
+          "published_label": "last month"
+        },
+        {
+          "value": [
+            "GraphQL"
+          ],
+          "breadth": "broad",
+          "url": "https://docs.bigcommerce.com/developer/learn/courses/graphql-storefront-api/auth/authentication",
+          "excerpt": "Authentication | BigCommerce Docs For AI agents: a documentation index is available at the root level at /llms.txt. Append /llms.txt to any URL for a page-level index, or .md for the markdown version of any page. Skip to navigation On this page Correlating Requests Creating a Sta",
+          "published_label": null
+        },
+        {
+          "value": [
+            "REST",
+            "GraphQL"
+          ],
+          "breadth": "broad",
+          "url": "https://docs.bigcommerce.com/developer/api-reference/about-our-apis",
+          "excerpt": "About Our APIs | BigCommerce Docs For AI agents: a documentation index is available at the root level at /llms.txt. Append /llms.txt to any URL for a page-level index, or .md for the markdown version of any page. Skip to navigation On this page Available APIs REST Store Managemen",
+          "published_label": null
+        }
+      ],
+      "reason": "Provisional extraction; validate scope and completeness against cited pages."
+    },
+    "official_mcp": {
+      "value": "unknown",
+      "status": "provisional",
+      "sources": [],
+      "evidence": [],
+      "reason": "No sufficiently specific official evidence extracted."
+    },
+    "composio_toolkit": {
+      "value": "listed",
+      "status": "provisional",
+      "sources": [
+        "https://docs.composio.dev/toolkits/bigcommerce"
+      ],
+      "evidence": [],
+      "reason": "Catalog match only; not vendor MCP evidence."
+    },
+    "verdict": {
+      "value": "documented_build_candidate",
+      "status": "provisional",
+      "sources": [
+        "https://docs.bigcommerce.com/developer/api-reference/rest/b2b/management/authentication",
+        "https://docs.bigcommerce.com/developer/api-reference/mcp/overview/",
+        "https://docs.bigcommerce.com/developer/api-reference/mcp/store-management",
+        "https://docs.bigcommerce.com/developer/docs/overview/api-fundamentals/api-accounts",
+        "https://docs.bigcommerce.com/developer/learn/courses/graphql-storefront-api/auth/authentication",
+        "https://www.bigcommerce.com/articles/b2b-ecommerce/mcp-b2b-ecommerce/",
+        "https://docs.bigcommerce.com/developer/changelog/2026/10/8",
+        "https://docs.bigcommerce.com/developer/api-reference/about-our-apis"
+      ],
+      "evidence": [],
+      "reason": "Inferred only from extracted auth, API and access evidence; independent review required."
+    }
+  },
+  "validation": [
+    "Automatic extraction is provisional until independently reviewed",
+    "Unknown is not evidence of absence",
+    "Composio evidence cannot establish vendor MCP",
+    "Client-only and negated MCP statements are not vendor-server proof",
+    "API breadth is a text-coverage heuristic, not an endpoint census"
+  ]
+}

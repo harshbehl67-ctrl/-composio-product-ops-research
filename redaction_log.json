@@ -83,5 +83,15 @@
     "file": "data/review_sources/73874c42bbc1e9a0.json",
     "matches_redacted": 2,
     "reason": "Bearer credential-shaped example from public documentation redacted before publishing updates"
+  },
+  {
+    "file": "data/pass4_search/062.json",
+    "matches_redacted": 1,
+    "reason": "Public official-documentation access-token example redacted after GitHub push protection flagged the preserved raw pass; value not retained"
+  },
+  {
+    "file": "data/pass4/022.json",
+    "matches_redacted": 1,
+    "reason": "Public official-documentation access-token example redacted after GitHub push protection flagged the preserved raw pass; value not retained"
   }
 ]

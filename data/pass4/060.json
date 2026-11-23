@@ -1,0 +1,146 @@
+{
+  "app": {
+    "number": 60,
+    "name": "Clay",
+    "category": "Data, SEO and Scraping",
+    "hint": "clay.com"
+  },
+  "checked_at": "2026-11-23T18:15:13.477921+00:00",
+  "prior_source": "data/pass2/060.json",
+  "search_source": "data/pass4_search/060.json",
+  "new_candidates": [
+    {
+      "url": "https://university.clay.com/docs/workspace-administration-documentation",
+      "title": "Account and workspace settings - Clay Docs (https://university.clay.com/docs/workspace-administration-documentation)",
+      "published_label": null
+    },
+    {
+      "url": "https://university.clay.com/docs/ip-access-restrictions",
+      "title": "IP access restrictions - Clay Docs (https://university.clay.com/docs/ip-access-restrictions)",
+      "published_label": null
+    },
+    {
+      "url": "https://university.clay.com/fr/docs/plans-and-billing",
+      "title": "Plans & billing - Clay Docs (https://university.clay.com/fr/docs/plans-and-billing)",
+      "published_label": null
+    },
+    {
+      "url": "https://university.clay.com/docs/managing-integration-accounts",
+      "title": "Managing integration accounts - Clay Docs (https://university.clay.com/docs/managing-integration-accounts)",
+      "published_label": null
+    },
+    {
+      "url": "https://university.clay.com/docs/mcp-settings",
+      "title": "MCP in Clay - Clay Docs (https://university.clay.com/docs/mcp-settings)",
+      "published_label": null
+    },
+    {
+      "url": "https://university.clay.com/fr/docs/managing-integration-accounts",
+      "title": "Managing integration accounts - Clay Docs (https://university.clay.com/fr/docs/managing-integration-accounts)",
+      "published_label": null
+    },
+    {
+      "url": "https://university.clay.com/docs/using-clay-in-chatgpt",
+      "title": "Using Clay in ChatGPT - Clay Docs (https://university.clay.com/docs/using-clay-in-chatgpt)",
+      "published_label": null
+    }
+  ],
+  "selected": [
+    {
+      "url": "https://university.clay.com/docs/ip-access-restrictions",
+      "title": "IP access restrictions - Clay Docs (https://university.clay.com/docs/ip-access-restrictions)",
+      "published_label": null
+    }
+  ],
+  "new_pages": [
+    {
+      "url": "https://university.clay.com/docs/ip-access-restrictions",
+      "requested_url": "https://university.clay.com/docs/ip-access-restrictions",
+      "status": 200,
+      "title": "IP access restrictions - Clay Docs (https://university.clay.com/docs/ip-access-restrictions)",
+      "text": "IP access restrictions - Clay Docs Skip to main Review your year with Clay on Clayback.clay.com University home page Search University or ask AI. Learn your way. ⌘ K ​ Open workspace Log in Sign up All docs / Settings & admin / IP access restrictions IP access restrictions Limit which IP addresses can reach your workspace from the web app and the API, and allowlist the AI agents and integrations that call Clay. Overview IP access restrictions let workspace admins choose which IP addresses can reach a Clay workspace, such as your corporate network or VPN. Browser access and API access are restricted separately, so you can lock down one or both. ‍ Note: IP access restrictions are available on the Enterprise plan. Only workspace admins can view and change them. ‍ IP access restrictions cover two kinds of access: Web app: Anyone signed in to Clay in a browser, including opening tables and workbooks. API: Requests made with a Clay API key or an authorized connection, including MCP connections from AI agents and the Clay CLI, Clay's command-line tool. When a restriction is on, requests from an address that isn't on an allowlist for that access type are blocked. People using the web app see an Access restricted page with the option to switch to another workspace they belong to. API requests are rejected with a 403 error and the message Your IP address is not on the allowlist for this workspace. Setting up IP access restrictions Go to Settings → Workspace and scroll to the Security section. In the IP access restrictions card, click Add allowlist . Enter an Allowlist name , such as NYC HQ or VPN range . Under IP addresses , enter one IPv4 address, IPv6 address, or CIDR range per line (for example, 198.51.100.0/24 ). Click Add it next to You're connecting from… to add the address you're using right now. Each allowlist holds up to 50 addresses or ranges. Under Applies to , choose Web app or API , then click Add allowlist . An allowlist covers one access type. To cover both, create one allowlist for each. Turn on the switch next to Web app or API , then click Turn on to confirm. The confirmation shows how many addresses access will be limited to. The status changes from Unrestricted to Restricted . ‍ Note: Changes can take up to 10 minutes to apply to all requests. Give yourself that buffer before testing from a new network. ‍ Allowlisting AI agents and integrations API restrictions apply to every tool that calls Clay on your behalf, so add their addresses before you turn on API restrictions. AI agents connected through MCP: Hosted AI apps call Clay from the provider's servers, not from your browser. Add the provider's published outbound addresses: Anthropic (Claude) and OpenAI (ChatGPT) . For other AI providers, ask them for their outbound IP ranges. The Clay CLI: The CLI calls Clay from the network you're on, so your office or VPN ranges on an API allowlist cover it. Automations and scripts: Workflow automation tools, data pipelines, and custom scripts that use a Clay API key need their outbound IP addresses added to an API allowlist. Managing IP access restrictions Edit an allowlist: Click the pencil icon next to the allowlist to change its name, addresses, or access type, then click Save changes . Delete an allowlist: Click the trash icon, then click Delete . If you delete the last allowlist for an access type, restrictions for that access type turn off. Turn off restrictions: Turn off the switch next to Web app or API . Your allowlists are kept, so you can turn restrictions back on later. FAQs Can I set different IP restrictions for different users? No. IP access restrictions apply to everyone in the workspace. Each workspace has its own settings, so restrictions on one workspace don't affect your other workspaces. Can I lock myself out while setting this up? Clay won't save a Web app change that would block the address you're connecting from, and shows a message explaining why. Add your current address with Add it , or connect to your VPN, and try again. If your address changes later, for example when you leave your VPN, you'll see the Access restricted page. Reconnect to an allowed network, or ask another workspace admin on an allowed network to update the allowlist. Can Clay support still help if we're blocked? Yes. Clay support sessions aren't affected by IP access restrictions, so support can still access your workspace to help, including if you need restrictions turned off. Contact your Clay account team or Clay support. What if I need more than 50 addresses? Create another allowlist for the same access type. Access is allowed from any address on any of that access type's allowlists. A CIDR range such as 203.0.113.0/24 also counts as a single entry. Table of contents TOC Heading TOC Heading Plan Explore other docs Gen AI Clay MCP in ChatGPT Connect the Clay MCP to ChatGPT, sign in to your workspace, and see what you can build and run from a chat on your plan. View article View article View article Settings & admin Best practices before a member leaves your workspace Audit admin access, billing, connections, automated work, and sequencer senders before you remove a member from your workspace. View article View article View article Getting started Enhanced matching Enhanced matching is Clay's hashed email enrichment: it finds the personal email identifiers ad platforms recognize, so more of your audience matches when you sync it. View article View article View article Signals & triggers Ad lead form triggers Send LinkedIn and Meta lead generation submissions into a Clay workflow, so each new lead is qualified, routed, or written to Audiences automatically. View article View article View article Export Credit refunds Learn when Clay refunds Actions and Data Credits, and which actions refund when a provider returns no data. View article View article View article Enrich Definitive Healthcare integration Find US hospitals in Clay and enrich them with executives, physicians, networks, payor mix, technology, and financial metrics. View article View article View article Enrich Reusing saved enrichment data Keep the data your enrichments return so later runs can reuse it instead of paying for the same answer twice. View article View article View article Other popular resources Experts Find a Clay Expert Explore our network of Clay experts and agencies. View experts View experts View experts Community Join our slack community Find help in our slack community, and support channels. Go to slack Go to slack Go to slack Cohorts Join a cohort, learn Clay fast! The faster way to master Clay. Sign in if you're enrolled in a cohort (current or past) or apply! Learn more about cohorts Learn more about cohorts Learn more about cohorts Talents Hire GTME Talent Find and connect with GTM talent who've demonstrated expertise in building advanced workflows Explore GTME talents Explore GTME talents Explore GTME talents",
+      "published_label": null
+    }
+  ],
+  "claims": {
+    "auth": {
+      "value": [
+        "API key",
+        "Bearer token"
+      ],
+      "sources": [
+        "https://university.clay.com/docs/http-api-with-jwt-authentication-integration-overview",
+        "https://university.clay.com/docs/guide-find-clay-api-key"
+      ],
+      "evidence": [
+        {
+          "value": "API key",
+          "url": "https://university.clay.com/docs/http-api-with-jwt-authentication-integration-overview",
+          "excerpt": "uto-refreshed every ~55 minutes ‍ Use standard HTTP API when the API accepts static credentials (an API key, a permanent bearer token). Use HTTP API with JWT Authentication when the API issues a dynamically generated JWT — common in enterprise APIs like Gong and Snov.io . Setting up you",
+          "published_label": null
+        },
+        {
+          "value": "Bearer token",
+          "url": "https://university.clay.com/docs/http-api-with-jwt-authentication-integration-overview",
+          "excerpt": "55 minutes ‍ Use standard HTTP API when the API accepts static credentials (an API key, a permanent bearer token). Use HTTP API with JWT Authentication when the API issues a dynamically generated JWT — common in enterprise APIs like Gong and Snov.io . Setting up your JWT account Before addin",
+          "published_label": null
+        },
+        {
+          "value": "API key",
+          "url": "https://university.clay.com/docs/guide-find-clay-api-key",
+          "excerpt": "Find your Clay API key - Clay Docs Skip to main Review your year with Clay on Clayback.clay.com University home page Search University or ask AI. Learn your way. ⌘ K ​ Open workspace Log in Sign up All ",
+          "published_label": null
+        }
+      ],
+      "reason": "Provisional extraction: validate scope and completeness against the cited page."
+    },
+    "credential_gate": {
+      "value": [
+        "free or trial developer credential path"
+      ],
+      "sources": [
+        "https://university.clay.com/docs/plans-and-billing"
+      ],
+      "evidence": [
+        {
+          "value": "free or trial developer credential path",
+          "url": "https://university.clay.com/docs/plans-and-billing",
+          "excerpt": "ur changes and click Save Changes to finish updating your billing info. Trials Clay offers a 14-day free trial with 1,000 data credits, giving you access to webhooks, CRM integrations, email sequencers, and HTTP API capabilities. Phone number enrichments aren't available during the trial period. To access this feature, upgrade to a paid plan. If your team wants to do a trial, each team member",
+          "published_label": null
+        }
+      ],
+      "reason": "Provisional extraction: validate scope and completeness against the cited page."
+    },
+    "api_surface": {
+      "value": "unknown",
+      "sources": [],
+      "evidence": [],
+      "reason": "No sufficiently specific positive evidence extracted; review targeted search results."
+    },
+    "official_mcp": {
+      "value": "unknown",
+      "sources": [],
+      "evidence": [],
+      "reason": "No sufficiently specific positive evidence extracted; review targeted search results."
+    },
+    "composio_toolkit": {
+      "value": "listed",
+      "sources": [
+        "https://docs.composio.dev/toolkits/clay"
+      ],
+      "evidence": [],
+      "reason": "Catalog match; scope needs review."
+    },
+    "verdict": {
+      "value": "unknown",
+      "sources": [],
+      "evidence": [],
+      "reason": "A supported access path, authentication method and API surface were not all extracted."
+    }
+  },
+  "validation": [
+    "All claims are provisional",
+    "No vendor MCP inference from Composio catalog",
+    "Negated MCP or client-only source is not counted as vendor-server proof"
+  ]
+}

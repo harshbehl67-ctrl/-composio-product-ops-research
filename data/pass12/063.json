@@ -1,0 +1,158 @@
+{
+  "app": {
+    "number": 63,
+    "name": "Netlify",
+    "category": "Developer, Infra and Data platforms",
+    "hint": "docs.netlify.com/api"
+  },
+  "replayed_at": "2026-11-23T18:45:53.895792+00:00",
+  "source_passes": [
+    "data/pass2/063.json",
+    "data/pass4/063.json"
+  ],
+  "source_searches": [
+    "data/new_search/063.json",
+    "data/pass4_search/063.json"
+  ],
+  "publication_date_note": "Search publication labels are retained exactly; null means no label was available. Relative labels are not exact dates.",
+  "claims": {
+    "auth": {
+      "value": [
+        "OAuth 2.0",
+        "API key",
+        "Bearer token"
+      ],
+      "status": "provisional",
+      "sources": [
+        "https://docs.netlify.com/manage/security/secure-access-to-sites/oauth-provider-tokens/",
+        "https://docs.netlify.com/api-and-cli-guides/api-guides/get-started-with-api/",
+        "https://www.netlify.com/knowledge-base/how-to-build-and-deploy-an-mcp-server-on-netlify/",
+        "https://main--www.netlify.com/knowledge-base/how-to-build-and-deploy-an-mcp-server-on-netlify/",
+        "https://docs.netlify.com/build/data-and-storage/netlify-database/api/"
+      ],
+      "evidence": [
+        {
+          "value": "OAuth 2.0",
+          "url": "https://docs.netlify.com/manage/security/secure-access-to-sites/oauth-provider-tokens/",
+          "excerpt": "Use OAuth provider tokens on your site | Netlify Docs Skip to content For the complete Netlify documentation index, see llms.txt . Markdown versions of any documentation page are available by appending .md to its URL. The new Netlify experience is here. Learn more or join the wai",
+          "published_label": null
+        },
+        {
+          "value": "API key",
+          "url": "https://docs.netlify.com/manage/security/secure-access-to-sites/oauth-provider-tokens/",
+          "excerpt": "o the OAuth server, signed with a secret secret Sensitive credentials, like passwords and API keys, that must be kept private. × that you can never expose to the client side of your application. Netlify solves this problem by providing an integrated service that will",
+          "published_label": null
+        },
+        {
+          "value": "OAuth 2.0",
+          "url": "https://docs.netlify.com/api-and-cli-guides/api-guides/get-started-with-api/",
+          "excerpt": "Get started with the Netlify API | Netlify Docs Skip to content For the complete Netlify documentation index, see llms.txt . Markdown versions of any documentation page are available by appending .md to its URL. The new Netlify experience is here. Learn more or join the waitlist ",
+          "published_label": null
+        },
+        {
+          "value": "API key",
+          "url": "https://docs.netlify.com/api-and-cli-guides/api-guides/get-started-with-api/",
+          "excerpt": "plication client key and a client secret secret Sensitive credentials, like passwords and API keys, that must be kept private. × to integrate with the Netlify API. You can register a new application in your Netlify user settings for OAuth applications . Visit our blo",
+          "published_label": null
+        },
+        {
+          "value": "API key",
+          "url": "https://www.netlify.com/knowledge-base/how-to-build-and-deploy-an-mcp-server-on-netlify/",
+          "excerpt": ", means a single shared secret . Multiple people each acting as themselves means per-user API keys backed by Netlify Identity. If you’re unsure, start with the shared secret. It’s a few lines and you can layer per-user keys on later. Worked example npm install @model",
+          "published_label": "2 months ago"
+        },
+        {
+          "value": "Bearer token",
+          "url": "https://www.netlify.com/knowledge-base/how-to-build-and-deploy-an-mcp-server-on-netlify/",
+          "excerpt": "urn its Response . Run it stateless with sessionIdGenerator: undefined , gate it behind a bearer token, and add declarative rate limiting to the function’s config . Use WebStandardStreamableHTTPServerTransport . Older guides use the Node-flavored transport plus a fetch-to",
+          "published_label": "2 months ago"
+        },
+        {
+          "value": "API key",
+          "url": "https://main--www.netlify.com/knowledge-base/how-to-build-and-deploy-an-mcp-server-on-netlify/",
+          "excerpt": ", means a single shared secret . Multiple people each acting as themselves means per-user API keys backed by Netlify Identity. If you’re unsure, start with the shared secret. It’s a few lines and you can layer per-user keys on later. Worked example npm install @model",
+          "published_label": "2 months ago"
+        },
+        {
+          "value": "Bearer token",
+          "url": "https://main--www.netlify.com/knowledge-base/how-to-build-and-deploy-an-mcp-server-on-netlify/",
+          "excerpt": "urn its Response . Run it stateless with sessionIdGenerator: undefined , gate it behind a bearer token, and add declarative rate limiting to the function’s config . Use WebStandardStreamableHTTPServerTransport . Older guides use the Node-flavored transport plus a fetch-to",
+          "published_label": "2 months ago"
+        },
+        {
+          "value": "OAuth 2.0",
+          "url": "https://docs.netlify.com/build/data-and-storage/netlify-database/api/",
+          "excerpt": "API reference | Netlify Docs Skip to content For the complete Netlify documentation index, see llms.txt . Markdown versions of any documentation page are available by appending .md to its URL. The new Netlify experience is here. Learn more or join the waitlist . API reference Cop",
+          "published_label": null
+        }
+      ],
+      "reason": "Provisional extraction; validate scope and completeness against cited pages."
+    },
+    "credential_gate": {
+      "value": "unknown",
+      "status": "provisional",
+      "sources": [],
+      "evidence": [],
+      "reason": "No sufficiently specific official evidence extracted."
+    },
+    "api_surface": {
+      "value": "REST; broad documented surface",
+      "status": "provisional",
+      "sources": [
+        "https://docs.netlify.com/api-and-cli-guides/api-guides/get-started-with-api/",
+        "https://docs.netlify.com/build/data-and-storage/netlify-database/api/"
+      ],
+      "evidence": [
+        {
+          "value": [
+            "REST"
+          ],
+          "breadth": "broad",
+          "url": "https://docs.netlify.com/api-and-cli-guides/api-guides/get-started-with-api/",
+          "excerpt": "Get started with the Netlify API | Netlify Docs Skip to content For the complete Netlify documentation index, see llms.txt . Markdown versions of any documentation page are available by appending .md to its URL. The new Netlify experience is here. Learn more or join the waitlist ",
+          "published_label": null
+        },
+        {
+          "value": [
+            "REST"
+          ],
+          "breadth": "broad",
+          "url": "https://docs.netlify.com/build/data-and-storage/netlify-database/api/",
+          "excerpt": "API reference | Netlify Docs Skip to content For the complete Netlify documentation index, see llms.txt . Markdown versions of any documentation page are available by appending .md to its URL. The new Netlify experience is here. Learn more or join the waitlist . API reference Cop",
+          "published_label": null
+        }
+      ],
+      "reason": "Provisional extraction; validate scope and completeness against cited pages."
+    },
+    "official_mcp": {
+      "value": "unknown",
+      "status": "provisional",
+      "sources": [],
+      "evidence": [],
+      "reason": "No sufficiently specific official evidence extracted."
+    },
+    "composio_toolkit": {
+      "value": "listed",
+      "status": "provisional",
+      "sources": [
+        "https://docs.composio.dev/toolkits/netlify_mcp"
+      ],
+      "evidence": [],
+      "reason": "Catalog match only; not vendor MCP evidence."
+    },
+    "verdict": {
+      "value": "unknown",
+      "status": "provisional",
+      "sources": [],
+      "evidence": [],
+      "reason": "No sufficiently specific official evidence extracted."
+    }
+  },
+  "validation": [
+    "Automatic extraction is provisional until independently reviewed",
+    "Unknown is not evidence of absence",
+    "Composio evidence cannot establish vendor MCP",
+    "Client-only and negated MCP statements are not vendor-server proof",
+    "API breadth is a text-coverage heuristic, not an endpoint census"
+  ]
+}

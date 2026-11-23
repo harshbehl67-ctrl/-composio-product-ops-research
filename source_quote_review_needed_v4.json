@@ -1,0 +1,186 @@
+[
+  {
+    "app": "DataForSEO",
+    "field": "official_mcp",
+    "url": "https://dataforseo.com/help-center/setting-up-the-official-dataforseo-mcp-server-simple-guide",
+    "quote": "This simple guide will walk you through the process of setting up and using the official [DataForSEO MCP server](https://github.com/dataforseo/mcp-server-typescript).",
+    "start_fragment_found": true,
+    "end_fragment_found": false
+  },
+  {
+    "app": "Jira",
+    "field": "api_surface",
+    "url": "https://developer.atlassian.com/cloud/jira/platform/rest/v3/intro/",
+    "quote": "*   [Issues](/cloud/jira/platform/rest/v3/api-group-issues/#api-group-issues)",
+    "start_fragment_found": false,
+    "end_fragment_found": false
+  },
+  {
+    "app": "Jira",
+    "field": "api_surface",
+    "url": "https://developer.atlassian.com/cloud/jira/platform/rest/v3/intro/",
+    "quote": "*   [JQL](/cloud/jira/platform/rest/v3/api-group-jql/#api-group-jql)",
+    "start_fragment_found": false,
+    "end_fragment_found": false
+  },
+  {
+    "app": "Clay",
+    "field": "auth",
+    "url": "https://developers.clay.com/public-api/authentication.md",
+    "quote": "Create one under API and CLI → API keys, with `clay api-keys create --name \"<key name>\"` in the CLI, or by asking your agent after installing the agent plugin.",
+    "start_fragment_found": false,
+    "end_fragment_found": false
+  },
+  {
+    "app": "DataForSEO",
+    "field": "api_surface",
+    "url": "https://docs.dataforseo.com/v3/",
+    "quote": "DataForSEO API is using the [REST](https://en.wikipedia.org/wiki/Representational_state_transfer) technology for interchanging data between your application and our service.",
+    "start_fragment_found": false,
+    "end_fragment_found": true
+  },
+  {
+    "app": "DataForSEO",
+    "field": "api_surface",
+    "url": "https://docs.dataforseo.com/v3/",
+    "quote": "*   Keywords Data API\n    *   [Overview](/v3/keywords_data/overview/)",
+    "start_fragment_found": false,
+    "end_fragment_found": false
+  },
+  {
+    "app": "DataForSEO",
+    "field": "api_surface",
+    "url": "https://docs.dataforseo.com/v3/",
+    "quote": "*   Backlinks API\n    *   [Overview](/v3/backlinks/overview/)",
+    "start_fragment_found": false,
+    "end_fragment_found": false
+  },
+  {
+    "app": "DataForSEO",
+    "field": "verdict",
+    "url": "https://docs.dataforseo.com/v3/",
+    "quote": "DataForSEO API is using the [REST](https://en.wikipedia.org/wiki/Representational_state_transfer) technology for interchanging data between your application and our service.",
+    "start_fragment_found": false,
+    "end_fragment_found": true
+  },
+  {
+    "app": "MrScraper",
+    "field": "auth",
+    "url": "https://docs.mrscraper.com/docs/api/authentication",
+    "quote": "For [Marketplace endpoints](https://app.mrscraper.com/marketplace), authenticate using the standard RFC 6750 `Authorization` header with a Bearer token:",
+    "start_fragment_found": false,
+    "end_fragment_found": false
+  },
+  {
+    "app": "Reducto",
+    "field": "official_mcp",
+    "url": "https://docs.reducto.ai/mcp-server",
+    "quote": "The local server runs via [`uvx`](https://docs.astral.sh/uv/) and accepts local file paths, public URLs, and `reducto://` references.",
+    "start_fragment_found": false,
+    "end_fragment_found": false
+  },
+  {
+    "app": "Fathom",
+    "field": "api_surface",
+    "url": "https://help.fathom.video/en/articles/8368641",
+    "quote": "Fathom now has a public API that gives you developer-friendly access to meeting insights so you can build workflows and integrations that connect Fathom with the rest of your tools.",
+    "start_fragment_found": true,
+    "end_fragment_found": true
+  },
+  {
+    "app": "Harvest",
+    "field": "api_surface",
+    "url": "https://help.getharvest.com/api-v2/",
+    "quote": "### [Clients API](/api-v2/clients-api)",
+    "start_fragment_found": false,
+    "end_fragment_found": false
+  },
+  {
+    "app": "Mermaid CLI",
+    "field": "credential_gate",
+    "url": "https://mermaid.js.org/config/mermaidCLI.html",
+    "quote": "mermaid CLI has been moved to [mermaid-cli](https://github.com/mermaid-js/mermaid-cli). Please read its documentation instead.",
+    "start_fragment_found": false,
+    "end_fragment_found": false
+  },
+  {
+    "app": "Sherlock",
+    "field": "api_surface",
+    "url": "https://raw.githubusercontent.com/sherlock-project/sherlock/master/.actor/README.md",
+    "quote": "This Actor wraps the Sherlock Project to provide serverless username reconnaissance across social networks in the cloud.",
+    "start_fragment_found": false,
+    "end_fragment_found": true
+  },
+  {
+    "app": "Sherlock",
+    "field": "verdict",
+    "url": "https://raw.githubusercontent.com/sherlock-project/sherlock/master/.actor/README.md",
+    "quote": "This Actor wraps the Sherlock Project to provide serverless username reconnaissance across social networks in the cloud.",
+    "start_fragment_found": false,
+    "end_fragment_found": true
+  },
+  {
+    "app": "Sherlock",
+    "field": "auth",
+    "url": "https://raw.githubusercontent.com/sherlock-project/sherlock/master/docs/README.md",
+    "quote": "To search for only one user:\n\nsherlock user123",
+    "start_fragment_found": false,
+    "end_fragment_found": false
+  },
+  {
+    "app": "Reducto",
+    "field": "credential_gate",
+    "url": "https://reducto.ai/pricing",
+    "quote": "Free$150 in free usage",
+    "start_fragment_found": false,
+    "end_fragment_found": false
+  },
+  {
+    "app": "YouTube Transcript",
+    "field": "credential_gate",
+    "url": "https://transcriptapi.com/docs/getting-started/javascript/",
+    "quote": "**An API key.** [Sign up](https://transcriptapi.com/signup) to get 100 free credits (no card required), then copy a key from the [API Keys dashboard](/dashboard/api-keys).",
+    "start_fragment_found": false,
+    "end_fragment_found": false
+  },
+  {
+    "app": "YouTube Transcript",
+    "field": "verdict",
+    "url": "https://transcriptapi.com/docs/getting-started/javascript/",
+    "quote": "**An API key.** [Sign up](https://transcriptapi.com/signup) to get 100 free credits (no card required), then copy a key from the [API Keys dashboard](/dashboard/api-keys).",
+    "start_fragment_found": false,
+    "end_fragment_found": false
+  },
+  {
+    "app": "YouTube Transcript",
+    "field": "official_mcp",
+    "url": "https://transcriptapi.com/docs/mcp/",
+    "quote": "TranscriptAPI runs a hosted (remote) MCP server at `https://transcriptapi.com/mcp`. Add that URL to an MCP client and your AI assistant can fetch YouTube transcripts, search YouTube, and list a channel’s or playlist’s videos. There is nothing to install or host.",
+    "start_fragment_found": true,
+    "end_fragment_found": false
+  },
+  {
+    "app": "Clay",
+    "field": "official_mcp",
+    "url": "https://university.clay.com/docs/connect-to-clay-mcp",
+    "quote": "Send a `POST` to the registration endpoint, following [RFC 7591](https://datatracker.ietf.org/doc/html/rfc7591). Registration is open — there is no Clay-side approval step.",
+    "start_fragment_found": false,
+    "end_fragment_found": true
+  },
+  {
+    "app": "Smartsheet",
+    "field": "credential_gate",
+    "url": "https://www.smartsheet.com/pricing",
+    "quote": "[API calls](# \"A request to retrieve or send your organization's Smartsheet data.)  \\-  x  x  x",
+    "start_fragment_found": false,
+    "end_fragment_found": false
+  },
+  {
+    "app": "Smartsheet",
+    "field": "verdict",
+    "url": "https://www.smartsheet.com/pricing",
+    "quote": "[API calls](# \"A request to retrieve or send your organization's Smartsheet data.)  \\-  x  x  x",
+    "start_fragment_found": false,
+    "end_fragment_found": false
+  }
+]

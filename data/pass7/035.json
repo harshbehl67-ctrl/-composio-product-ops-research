@@ -1,0 +1,121 @@
+{
+  "app": {
+    "number": 35,
+    "name": "Mailchimp",
+    "category": "Marketing, Ads, Email and Social",
+    "hint": "mailchimp.com/developer"
+  },
+  "replayed_at": "2026-11-23T18:19:18.245127+00:00",
+  "source_passes": [
+    "data/pass2/035.json",
+    "data/pass4/035.json"
+  ],
+  "source_search": "data/new_search/035.json",
+  "publication_date_note": "Published labels are retained exactly as supplied by search; missing labels are null. Relative labels must not be treated as exact publication dates.",
+  "claims": {
+    "auth": {
+      "value": [
+        "OAuth 2.0",
+        "API key",
+        "Bearer token",
+        "Basic authentication"
+      ],
+      "sources": [
+        "https://mailchimp.com/developer/marketing/api-concepts/authentication/",
+        "https://mailchimp.com/developer/marketing/api-concepts/authentication/api-keys",
+        "https://mailchimp.com/developer/marketing/build/start-developing/set-up-an-oauth-app?msockid=29bdc574f2e667260679d34cf3e666e1",
+        "https://mailchimp.com/help/about-api-keys/?msockid=0e143ff0b0f06f6f2f7e2987b1416ef5"
+      ],
+      "evidence": [
+        {
+          "value": "OAuth 2.0",
+          "url": "https://mailchimp.com/developer/marketing/api-concepts/authentication/",
+          "excerpt": "on of any page. Skip to navigation On this page Choose a credential Authenticate with an API key or OAuth 2 token User access and revocation Scroll to top This page is for Mailchimp Marketing API. Every request to the Marketing API carries a credential. There are two kinds,\nand which on",
+          "published_label": null
+        },
+        {
+          "value": "API key",
+          "url": "https://mailchimp.com/developer/marketing/api-concepts/authentication/",
+          "excerpt": "kdown version of any page. Skip to navigation On this page Choose a credential Authenticate with an API key or OAuth 2 token User access and revocation Scroll to top This page is for Mailchimp Marketing API. Every request to the Marketing API carries a credential. There are two kinds,\na",
+          "published_label": null
+        },
+        {
+          "value": "Bearer token",
+          "url": "https://mailchimp.com/developer/marketing/api-concepts/authentication/",
+          "excerpt": "n header: curl --request GET \\ --url ' https://api.mailchimp.com/3.0/ ' \\ --header ' Authorization: Bearer TOKEN ' User access and revocation Authentication is tied to the user who created the API key or authorized the\nOAuth 2 app, not to the account. If that user is removed from the account",
+          "published_label": null
+        },
+        {
+          "value": "Basic authentication",
+          "url": "https://mailchimp.com/developer/marketing/api-concepts/authentication/",
+          "excerpt": "OAuth 2 access tokens are sent the same way. We’ll refer to both\nas tokens. You can use either HTTP Basic Authentication or Bearer Authentication. HTTP Basic Authentication passes the token as the password, with any string as\nthe username: curl --request GET \\ --url ' https://api.mailchimp.com/3.0/ ",
+          "published_label": null
+        },
+        {
+          "value": "API key",
+          "url": "https://mailchimp.com/developer/marketing/api-concepts/authentication/api-keys",
+          "excerpt": "at a key grants Where keys can’t be used Scroll to top This page is for Mailchimp Marketing API. An API key authenticates requests\nagainst the account it was created in. It’s the right credential when your\napplication works with your own Mailchimp data. To create one, see Generate your ",
+          "published_label": null
+        },
+        {
+          "value": "OAuth 2.0",
+          "url": "https://mailchimp.com/developer/marketing/build/start-developing/set-up-an-oauth-app?msockid=29bdc574f2e667260679d34cf3e666e1",
+          "excerpt": " steps Scroll to top This page is for Mailchimp Marketing API. This page walks through implementing OAuth 2 so your application can access the\nMarketing API on behalf of other Mailchimp users. For how the flow works and why\nit has the steps it does, see OAuth 2 . What you’ll need A Mail",
+          "published_label": null
+        },
+        {
+          "value": "API key",
+          "url": "https://mailchimp.com/developer/marketing/build/start-developing/set-up-an-oauth-app?msockid=29bdc574f2e667260679d34cf3e666e1",
+          "excerpt": " flow works and why\nit has the steps it does, see OAuth 2 . What you’ll need A Mailchimp account An API key ,\nif you want to test against your own account first A redirect URI for your application, the URL Mailchimp sends users back\nto after they authorize your application. It must be r",
+          "published_label": null
+        },
+        {
+          "value": "API key",
+          "url": "https://mailchimp.com/help/about-api-keys/?msockid=0e143ff0b0f06f6f2f7e2987b1416ef5",
+          "excerpt": "ke things happen. Hire A Partner In this article, we'll cover what an API is and how to generate an API key to grant access to your Mailchimp account. We’ll also cover where to go for support with questions about the Mailchimp Marketing API . Note This article refers only to API keys fo",
+          "published_label": null
+        }
+      ],
+      "reason": "Provisional extraction: validate scope and completeness against the cited page."
+    },
+    "credential_gate": {
+      "value": "unknown",
+      "sources": [],
+      "evidence": [],
+      "reason": "No sufficiently specific positive evidence extracted; review targeted search results."
+    },
+    "api_surface": {
+      "value": "unknown",
+      "sources": [],
+      "evidence": [],
+      "reason": "No sufficiently specific positive evidence extracted; review targeted search results."
+    },
+    "official_mcp": {
+      "value": "unknown",
+      "sources": [],
+      "evidence": [],
+      "reason": "No sufficiently specific positive evidence extracted; review targeted search results."
+    },
+    "composio_toolkit": {
+      "value": "listed",
+      "sources": [
+        "https://docs.composio.dev/toolkits/mailchimp"
+      ],
+      "evidence": [],
+      "reason": "Catalog match; scope needs review."
+    },
+    "verdict": {
+      "value": "unknown",
+      "sources": [],
+      "evidence": [],
+      "reason": "A supported access path, authentication method and API surface were not all extracted."
+    }
+  },
+  "validation": [
+    "Automatic extraction is provisional and not a verified final claim",
+    "Unknown is not evidence of absence",
+    "No Composio-to-vendor-MCP inference",
+    "Basic authentication may be endpoint-specific",
+    "Client-only and negated statements are not positive MCP evidence"
+  ]
+}

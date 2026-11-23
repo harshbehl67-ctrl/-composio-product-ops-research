@@ -1,0 +1,153 @@
+{
+  "app": {
+    "number": 15,
+    "name": "Pylon",
+    "category": "Support and Helpdesk",
+    "hint": "usepylon.com"
+  },
+  "checked_at": "2026-11-23T18:14:54.325901+00:00",
+  "prior_source": "data/pass2/015.json",
+  "search_source": "data/pass4_search/015.json",
+  "new_candidates": [
+    {
+      "url": "https://docs.usepylon.com/pylon-docs/developer/api",
+      "title": "API | Pylon (https://docs.usepylon.com/pylon-docs/developer/api)",
+      "published_label": null
+    },
+    {
+      "url": "https://www.usepylon.com/blog/connect-pylon-claude-mcp",
+      "title": "How to connect Claude to Pylon with MCP | Pylon (https://www.usepylon.com/blog/connect-pylon-claude-mcp)",
+      "published_label": "last week"
+    },
+    {
+      "url": "https://support.usepylon.com/articles/3815553804-how-to-connect-a-custom-mcp?lang=en",
+      "title": "How to connect a custom MCP connector? (https://support.usepylon.com/articles/3815553804-how-to-connect-a-custom-mcp?lang=en)",
+      "published_label": "3 weeks ago"
+    }
+  ],
+  "selected": [
+    {
+      "url": "https://docs.usepylon.com/pylon-docs/developer/api",
+      "title": "API | Pylon (https://docs.usepylon.com/pylon-docs/developer/api)",
+      "published_label": null
+    }
+  ],
+  "new_pages": [
+    {
+      "url": "https://docs.usepylon.com/pylon-docs/developer/api",
+      "requested_url": "https://docs.usepylon.com/pylon-docs/developer/api",
+      "status": 200,
+      "title": "API | Pylon (https://docs.usepylon.com/pylon-docs/developer/api)",
+      "text": "API | Pylon For the complete documentation index, see llms.txt . Markdown versions of documentation pages are available by appending .md to page URLs. Skip to content Getting Started Introduction Quick Start Setup Channel Configuration User Guide Pylonboarding Agents Assist Agent Automations Slack Agent Skills Connectors User Memories Support Agent Support Workflows Omnichannel Support Issues SLAs and Timers Support Hours CSAT Ticket Forms Assignment Rules Email Phone Support User QA Platform Custom Fields Tags Taxonomy Teams Triggers Macros Command Search Roles & User Management Resources AI Reports Surveys Audit Logs Languages & Localization Custom Objects Knowledge Base Overview Articles & Collections Translations Missing Content Analytics Styling & Customization Custom Authentication Search Redirects SEO & AI Crawlers Customer Portal Overview Styling & Customization Portal Experience Access Control Custom Authentication Chat Widget Overview Styling Functionality Chat Experience Chat Setup Custom Domain Identity Verification JavaScript API Mobile SDKs Account Intelligence Customer Overview Accounts Opportunities Notebooks Tasks & Projects Activities Fields Product Intelligence Feature Requests Closing the Loop Reporting & Analytics Analytics Default Dashboards Custom Dashboards Broadcasts Overview Create a Broadcast Analytics Integrations CRM Ticketing Alerting Chat Incident Management Call Recording Calendar Data Warehouse Codebase Pylon MCP Security Security Overview IP Addresses Developer API Authentication API conventions Errors Rate limits API reference External IDs SDKs CLI Custom Apps Embedded Iframes Webhooks Powered by GitBook On this page Pylon’s API can be used to programmatically access and take action on data within Pylon. Only Admin users can create API tokens. To learn more about Admins, see Roles & User Management . Some common use cases for our API include: Fetching information about customers Fetching information about issues Creating issues programmatically Check out our API Reference for specifications on all endpoints. To call the API from TypeScript, Python, or Go, use our SDKs , with pinned installation commands and upgrade guidance for each language. Prefer the terminal? Try our experimental Pylon CLI . It’s an early release and may change. Before you build an integration, read: Authentication for creating tokens, roles, and regions API conventions for IDs, timestamps, pagination, search filters, update behavior, files, and slugs Rate limits for request limits and how to handle 429 responses Errors for error codes and response format Previous IP Addresses Next Authentication Last updated 26 days ago Was this helpful? Was this helpful?",
+      "published_label": null
+    }
+  ],
+  "claims": {
+    "auth": {
+      "value": [
+        "API token"
+      ],
+      "sources": [
+        "https://docs.usepylon.com/pylon-docs/developer/api/authentication",
+        "https://support.usepylon.com/articles/4735104435-how-do-i-create-an-api-token"
+      ],
+      "evidence": [
+        {
+          "value": "API token",
+          "url": "https://docs.usepylon.com/pylon-docs/developer/api/authentication",
+          "excerpt": " GitBook On this page The Pylon API uses Bearer authentication. This means you’ll need to pass your API token in the header of your request: Copy Authorization: Bearer <token> Generate an API token in the Pylon dashboard . API regions Pylon’s API is available in two regions. Use the base ",
+          "published_label": null
+        },
+        {
+          "value": "API token",
+          "url": "https://support.usepylon.com/articles/4735104435-how-do-i-create-an-api-token",
+          "excerpt": "How do I create a Pylon API token? | Pylon Knowledge Base Docs Changelog Go to Pylon Docs Changelog Go to Pylon How do I create a Pylon API token? Last updated 2 months ago Applies to: Pylon API access To create a",
+          "published_label": null
+        }
+      ],
+      "reason": "Provisional extraction: validate scope and completeness against the cited page."
+    },
+    "credential_gate": {
+      "value": "unknown",
+      "sources": [],
+      "evidence": [],
+      "reason": "No sufficiently specific positive evidence extracted; review targeted search results."
+    },
+    "api_surface": {
+      "value": [
+        "REST"
+      ],
+      "sources": [
+        "https://support.usepylon.com/articles/2407390554-connecting-to-the-pylon-mcp-server"
+      ],
+      "evidence": [
+        {
+          "value": "REST",
+          "url": "https://support.usepylon.com/articles/2407390554-connecting-to-the-pylon-mcp-server",
+          "excerpt": "rver today. If you need token-based access for a supported integration or automation, use the Pylon REST API instead of MCP. The REST API accepts Bearer API tokens, but that authentication method does not apply to the Pylon MCP server. Session Expiry and Reconnecting OAuth sessions expir",
+          "published_label": null
+        }
+      ],
+      "reason": "Provisional extraction: validate scope and completeness against the cited page."
+    },
+    "official_mcp": {
+      "value": "yes (provisional)",
+      "sources": [
+        "https://support.usepylon.com/articles/2407390554-connecting-to-the-pylon-mcp-server",
+        "https://support.usepylon.com/articles/1478561037-how-do-i-connect-a-custom-mcp-to-pylon",
+        "https://www.usepylon.com/integrations/mcp",
+        "https://www.usepylon.com/blog/connect-pylon-chatgpt-mcp"
+      ],
+      "evidence": [
+        {
+          "value": "yes (provisional)",
+          "url": "https://support.usepylon.com/articles/2407390554-connecting-to-the-pylon-mcp-server",
+          "excerpt": "How do I connect to the Pylon MCP Server? | Pylon Knowledge Base Docs Changelog Go to Pylon Docs Changelog Go to Pylon How do I connect to the Pylon MCP Server? Last updated 25 days ago The Pylon MCP ",
+          "published_label": null,
+          "context_warning": "Review vendor ownership, dates, and scope."
+        },
+        {
+          "value": "yes (provisional)",
+          "url": "https://support.usepylon.com/articles/1478561037-how-do-i-connect-a-custom-mcp-to-pylon",
+          "excerpt": "ed automatically. Can I connect a public MCP server with no authentication? No. Pylon requires either an OAuth-capable MCP server or a supported static credential. A public MCP server with no authentication and no credential to store cannot be connected. What to do instead If your goal is",
+          "published_label": null,
+          "context_warning": "Review vendor ownership, dates, and scope."
+        },
+        {
+          "value": "yes (provisional)",
+          "url": "https://www.usepylon.com/integrations/mcp",
+          "excerpt": "Pylon MCP server: connect ChatGPT, Claude, and Cursor The support metrics that matter in the age of AI Register now Pylon MCP server Connect ChatGPT, Claude, and Cursor to Pylo",
+          "published_label": null,
+          "context_warning": "Review vendor ownership, dates, and scope."
+        },
+        {
+          "value": "yes (provisional)",
+          "url": "https://www.usepylon.com/blog/connect-pylon-chatgpt-mcp",
+          "excerpt": "ry old iOS or Android apps, show Apps instead of Plugins) and sign in with your Pylon account. You can also add the Pylon MCP server to ChatGPT as a custom MCP server. Either way, ChatGPT authenticates with OAuth and uses tools that read or write the same data your user can already see in Py",
+          "published_label": null,
+          "context_warning": "Review vendor ownership, dates, and scope."
+        }
+      ],
+      "reason": "Provisional; check source date, scope, and vendor ownership."
+    },
+    "composio_toolkit": {
+      "value": "listed",
+      "sources": [
+        "https://docs.composio.dev/toolkits/pylon_mcp"
+      ],
+      "evidence": [],
+      "reason": "Catalog match; scope needs review."
+    },
+    "verdict": {
+      "value": "unknown",
+      "sources": [],
+      "evidence": [],
+      "reason": "A supported access path, authentication method and API surface were not all extracted."
+    }
+  },
+  "validation": [
+    "All claims are provisional",
+    "No vendor MCP inference from Composio catalog",
+    "Negated MCP or client-only source is not counted as vendor-server proof"
+  ]
+}

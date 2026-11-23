@@ -1,0 +1,135 @@
+{
+  "app": {
+    "number": 97,
+    "name": "higgsfield",
+    "category": "AI, Research and Media-native",
+    "hint": "higgsfield.ai/cli (content suite)"
+  },
+  "replayed_at": "2026-11-23T18:41:11.898398+00:00",
+  "source_passes": [
+    "data/pass2/097.json",
+    "data/pass4/097.json"
+  ],
+  "source_searches": [
+    "data/new_search/097.json",
+    "data/pass4_search/097.json"
+  ],
+  "publication_date_note": "Search publication labels are retained exactly; null means no label was available. Relative labels are not exact dates.",
+  "claims": {
+    "auth": {
+      "value": [
+        "API key"
+      ],
+      "status": "provisional",
+      "sources": [
+        "https://higgsfield.ai/creator-hub/help-center/integrations/what-is-the-higgsfield-api",
+        "https://higgsfield.ai/creator-hub/help-center/integrations/what-is-higgsfield-mcp?fpr=lax-8e2251",
+        "https://higgsfield.ai/creator-hub/help-center/integrations/what-is-the-higgsfield-api?fpr=adtestbench",
+        "https://higgsfield.ai/blog/higgsfield-api?trk=article-ssr-frontend-pulse_little-text-block"
+      ],
+      "evidence": [
+        {
+          "value": "API key",
+          "url": "https://higgsfield.ai/creator-hub/help-center/integrations/what-is-the-higgsfield-api",
+          "excerpt": "tarted Back The Higgsfield API lets you generate video and images from your own code: one API key opens every model in the API catalog, and each request is paid in US dollars from a prepaid balance. No plan or subscription is involved: fund the balance, send requests",
+          "published_label": "2 months ago"
+        },
+        {
+          "value": "API key",
+          "url": "https://higgsfield.ai/creator-hub/help-center/integrations/what-is-higgsfield-mcp?fpr=lax-8e2251",
+          "excerpt": "d API: MCP connects to your existing account and uses your existing plan credits, with no API key required. For building generation into your own product with per-request billing, see What is the Higgsfield API, and how do I get started? Because MCP connects programm",
+          "published_label": "3 months ago"
+        },
+        {
+          "value": "API key",
+          "url": "https://higgsfield.ai/creator-hub/help-center/integrations/what-is-the-higgsfield-api?fpr=adtestbench",
+          "excerpt": "tarted Back The Higgsfield API lets you generate video and images from your own code: one API key opens every model in the API catalog, and each request is paid in US dollars from a prepaid balance. No plan or subscription is involved: fund the balance, send requests",
+          "published_label": "2 months ago"
+        },
+        {
+          "value": "API key",
+          "url": "https://higgsfield.ai/blog/higgsfield-api?trk=article-ssr-frontend-pulse_little-text-block",
+          "excerpt": "personal and company use. Add a payment method and top up your balance. Create your first API key. The key is shown once at creation, so store it securely. Creating a key unlocks 20 concurrent requests. Integrate using the Python or TypeScript SDK, or call the REST A",
+          "published_label": "2 months ago"
+        }
+      ],
+      "reason": "Provisional extraction; validate scope and completeness against cited pages."
+    },
+    "credential_gate": {
+      "value": "unknown",
+      "status": "provisional",
+      "sources": [],
+      "evidence": [],
+      "reason": "No sufficiently specific official evidence extracted."
+    },
+    "api_surface": {
+      "value": "REST; moderate documented surface",
+      "status": "provisional",
+      "sources": [
+        "https://higgsfield.ai/creator-hub/help-center/integrations/what-is-the-higgsfield-api",
+        "https://higgsfield.ai/creator-hub/help-center/integrations/what-is-the-higgsfield-api?fpr=adtestbench",
+        "https://higgsfield.ai/blog/higgsfield-api?trk=article-ssr-frontend-pulse_little-text-block"
+      ],
+      "evidence": [
+        {
+          "value": [
+            "REST"
+          ],
+          "breadth": "moderate",
+          "url": "https://higgsfield.ai/creator-hub/help-center/integrations/what-is-the-higgsfield-api",
+          "excerpt": "What Is the Higgsfield API and How Do I Get Started Back The Higgsfield API lets you generate video and images from your own code: one API key opens every model in the API catalog, and each request is paid in US dollars from a prepaid balance. No plan or subscription is involved:",
+          "published_label": "2 months ago"
+        },
+        {
+          "value": [
+            "REST"
+          ],
+          "breadth": "moderate",
+          "url": "https://higgsfield.ai/creator-hub/help-center/integrations/what-is-the-higgsfield-api?fpr=adtestbench",
+          "excerpt": "What Is the Higgsfield API and How Do I Get Started Back The Higgsfield API lets you generate video and images from your own code: one API key opens every model in the API catalog, and each request is paid in US dollars from a prepaid balance. No plan or subscription is involved:",
+          "published_label": "2 months ago"
+        },
+        {
+          "value": [
+            "REST"
+          ],
+          "breadth": "moderate",
+          "url": "https://higgsfield.ai/blog/higgsfield-api?trk=article-ssr-frontend-pulse_little-text-block",
+          "excerpt": "Meet the Higgsfield API: How It Works and What You Get Back The Higgsfield API is a self-serve API for developers that provides direct access to more than 50 current video and image generation models with pay-as-you-go billing in US dollars. There is no subscription: you top up a",
+          "published_label": "2 months ago"
+        }
+      ],
+      "reason": "Provisional extraction; validate scope and completeness against cited pages."
+    },
+    "official_mcp": {
+      "value": "unknown",
+      "status": "provisional",
+      "sources": [],
+      "evidence": [],
+      "reason": "No sufficiently specific official evidence extracted."
+    },
+    "composio_toolkit": {
+      "value": "listed",
+      "status": "provisional",
+      "sources": [
+        "https://docs.composio.dev/toolkits/higgsfield"
+      ],
+      "evidence": [],
+      "reason": "Catalog match only; not vendor MCP evidence."
+    },
+    "verdict": {
+      "value": "unknown",
+      "status": "provisional",
+      "sources": [],
+      "evidence": [],
+      "reason": "No sufficiently specific official evidence extracted."
+    }
+  },
+  "validation": [
+    "Automatic extraction is provisional until independently reviewed",
+    "Unknown is not evidence of absence",
+    "Composio evidence cannot establish vendor MCP",
+    "Client-only and negated MCP statements are not vendor-server proof",
+    "API breadth is a text-coverage heuristic, not an endpoint census"
+  ]
+}

@@ -1,0 +1,223 @@
+{
+  "app": {
+    "number": 45,
+    "name": "Magento (Adobe Commerce)",
+    "category": "Ecommerce",
+    "hint": "developer.adobe.com/commerce"
+  },
+  "checked_at": "2026-11-23T18:15:08.319010+00:00",
+  "prior_source": "data/pass2/045.json",
+  "search_source": "data/pass4_search/045.json",
+  "new_candidates": [
+    {
+      "url": "https://developer.adobe.com/commerce/webapi/graphql/reference/",
+      "title": "GraphQL API reference (https://developer.adobe.com/commerce/webapi/graphql/reference/)",
+      "published_label": null
+    },
+    {
+      "url": "https://developer.adobe.com/commerce/webapi/rest/",
+      "title": "REST API Overview (https://developer.adobe.com/commerce/webapi/rest/)",
+      "published_label": null
+    },
+    {
+      "url": "https://developer.adobe.com/commerce/webapi/",
+      "title": "Commerce Web API (https://developer.adobe.com/commerce/webapi/)",
+      "published_label": null
+    },
+    {
+      "url": "https://developer.adobe.com/commerce/webapi/graphql/usage/authorization-tokens",
+      "title": "GraphQL authorization (https://developer.adobe.com/commerce/webapi/graphql/usage/authorization-tokens)",
+      "published_label": null
+    },
+    {
+      "url": "https://experienceleague.adobe.com/en/docs/commerce-admin/start/commerce-account/commerce-account-create?lang=en",
+      "title": "Create and access your Commerce account | Adobe Commerce (https://experienceleague.adobe.com/en/docs/commerce-admin/start/commerce-account/commerce-account-create?lang=en)",
+      "published_label": "last month"
+    },
+    {
+      "url": "https://developer.adobe.com/commerce/webapi/get-started/rest-front",
+      "title": "Use REST APIs (https://developer.adobe.com/commerce/webapi/get-started/rest-front)",
+      "published_label": null
+    },
+    {
+      "url": "https://developer.adobe.com/commerce/webapi/get-started/authentication/gs-authentication-oauth",
+      "title": "OAuth-Based Authentication (https://developer.adobe.com/commerce/webapi/get-started/authentication/gs-authentication-oauth)",
+      "published_label": null
+    },
+    {
+      "url": "https://experienceleague.adobe.com/en/docs/commerce-on-cloud/start/access-storefront",
+      "title": "Access your Commerce Admin panel | Adobe Commerce (https://experienceleague.adobe.com/en/docs/commerce-on-cloud/start/access-storefront)",
+      "published_label": "3 months ago"
+    },
+    {
+      "url": "https://experienceleague.adobe.com/en/docs/commerce-admin/start/guide-overview",
+      "title": "Adobe Commerce Admin Getting Started Guide | Adobe Commerce (https://experienceleague.adobe.com/en/docs/commerce-admin/start/guide-overview)",
+      "published_label": "last month"
+    },
+    {
+      "url": "https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/prerequisites/authentication-keys?lang=en",
+      "title": "Get your authentication keys | Adobe Commerce (https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/prerequisites/authentication-keys?lang=en)",
+      "published_label": "last month"
+    },
+    {
+      "url": "https://experienceleague.adobe.com/en/docs/commerce/payment-services/get-started/connect",
+      "title": "Connect Your Instance | Adobe Commerce (https://experienceleague.adobe.com/en/docs/commerce/payment-services/get-started/connect)",
+      "published_label": null
+    },
+    {
+      "url": "https://experienceleague.adobe.com/en/docs/commerce-admin/start/admin/ims/adobe-ims-integration-overview",
+      "title": "Adobe Identity Management Service (IMS) integration overview | Adobe Commerce (https://experienceleague.adobe.com/en/docs/commerce-admin/start/admin/ims/adobe-ims-integration-overview)",
+      "published_label": "last month"
+    },
+    {
+      "url": "https://experienceleague.adobe.com/en/docs/commerce-admin/systems/integrations",
+      "title": "Integrations | Adobe Commerce (https://experienceleague.adobe.com/en/docs/commerce-admin/systems/integrations)",
+      "published_label": null
+    },
+    {
+      "url": "https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/project/user-access?lang=en",
+      "title": "Manage User Access | Adobe Commerce (https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/project/user-access?lang=en)",
+      "published_label": "last month"
+    },
+    {
+      "url": "https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/project/user-access",
+      "title": "Manage User Access | Adobe Commerce (https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/project/user-access)",
+      "published_label": "last month"
+    },
+    {
+      "url": "https://developer.adobe.com/vipmp/documents/developer-documentation/2-29-24%20External%20API%20Documentation.pdf",
+      "title": "Adobe Commerce Partner API Documentation (https://developer.adobe.com/vipmp/documents/developer-documentation/2-29-24%20External%20API%20Documentation.pdf)",
+      "published_label": "2.7 years ago"
+    }
+  ],
+  "selected": [
+    {
+      "url": "https://developer.adobe.com/commerce/webapi/graphql/usage/authorization-tokens",
+      "title": "GraphQL authorization (https://developer.adobe.com/commerce/webapi/graphql/usage/authorization-tokens)",
+      "published_label": null
+    },
+    {
+      "url": "https://developer.adobe.com/commerce/webapi/graphql/reference/",
+      "title": "GraphQL API reference (https://developer.adobe.com/commerce/webapi/graphql/reference/)",
+      "published_label": null
+    },
+    {
+      "url": "https://experienceleague.adobe.com/en/docs/commerce-admin/start/commerce-account/commerce-account-create?lang=en",
+      "title": "Create and access your Commerce account | Adobe Commerce (https://experienceleague.adobe.com/en/docs/commerce-admin/start/commerce-account/commerce-account-create?lang=en)",
+      "published_label": "last month"
+    }
+  ],
+  "new_pages": [
+    {
+      "url": "https://developer.adobe.com/commerce/webapi/graphql/usage/authorization-tokens",
+      "requested_url": "https://developer.adobe.com/commerce/webapi/graphql/usage/authorization-tokens",
+      "status": 200,
+      "title": "GraphQL authorization (https://developer.adobe.com/commerce/webapi/graphql/usage/authorization-tokens)",
+      "text": "GraphQL authorization GraphQL authorization Adobe Commerce and Magento Open Source provide two mechanisms for authorizing GraphQL calls: Authorization tokens . Commerce generates a JSON Web Token (JWT), a set of cryptographically signed credentials. All calls that perform an action on behalf of a logged-in customer or admin provide an authorization token. Authorization tokens are stateless. Commerce does not need to know the state of a client to execute a request--the token contains all of the information needed for authorization and authentication. Session cookies . A session cookie is information generated by Commerce that is stored in the client's browser. It contains details about the session, including the time period the user can access resources. Cookies are stateful, thereby increasing complexity and possibly latency. Adobe recommends that you use authorization tokens instead of session cookies for GraphQL requests. By default, session cookies are enabled. As of Commerce 2.4.5, you can disable session cookies, eliminating the chances of encountering problems caused by the differences between the two authorization methods. However, merchants with existing implementations that rely on cookies can continue using this method. Session cookies describes how to enable or disable cookies for GraphQL. Authorization tokens Adobe Commerce provides separate token services for customers and administrators. When you request a token from one of these services, the service returns a unique access token in exchange for the account's username and password. GraphQL provides a mutation that returns a token on behalf of a logged-in customer, but you must use a REST call to fetch an admin token. Any time you make a GraphQL or REST call that requires a token, specify the HTTP Authorization request header and assign the value as Bearer <token> . Request headers provides an example. Customer tokens The generateCustomerToken mutation requires the customer email address and password in the payload, as shown in the following example. By default, a customer token is valid for 1 hour. You can change these values from Admin by selecting Stores > Settings > Configuration > Services > OAuth > Access Token Expiration > Customer Token Lifetime . Request: mutation {\n  generateCustomerToken(email: \"customer@example.com\", password: \"password\") {\n    token\n  }\n} Response: {\n   \"data\": {\n     \"generateCustomerToken\": {\n       \"token\": \"hoyz7k697ubv5hcpq92yrtx39i7x10um\"\n     }\n   }\n } You can now use this token in the Authorization request header field for any queries and mutations. You can also revoke the customer's token when the customer logs out or changes their password. The generateCustomerTokenAsAdmin mutation generates a new customer token as an admin so that an administrator can perform remote shopping assistance. The customer must have enabled the allow_remote_shopping_assistance feature while creating the customer profile. The mutation requires the customer email address in the payload, as shown in the following example. Request: mutation{\n  generateCustomerTokenAsAdmin(input: {\n    customer_email: \"customer1@mail.com\"\n  }){\n    customer_token\n  }\n} Response: {\n  \"data\": {\n    \"generateCustomerTokenAsAdmin\": {\n      \"customer_token\": \"cr0717abzoagxty1xjn4lj13kim36r6x\"\n    }\n  }\n} Admin tokens In Adobe Commerce and Magento Open Source GraphQL, you specify an admin token only if you need to query products, categories, price rules, or other entities that are scheduled to be in a campaign (staged content). Staging is supported in Adobe Commerce only. See Staging queries for more information. Adobe Commerce and Magento Open Source do not provide a GraphQL mutation that generates an admin token. You must use a REST endpoint such as POST /V1/tfa/provider/google/authenticate instead. Generate the admin token shows how to use this endpoint. By default, an admin token is valid for 4 hours. You can change these values from Admin by selecting Stores > Settings > Configuration > Services > OAuth > Access Token Expiration > Admin Token Lifetime . Session cookies The client's browser will use a session cookie if the server provides one. Prior to version 2.4.5, Commerce automatically generated session cookies even if an authorization token was specified. Browser-based applications that make GraphQL calls can continue implementing these cookies without changing the default setting. If you use cookies, avoid specifying Authorization headers to prevent problems caused by using two different authorization methods. Adobe recommends that you do not use session cookies when developing a Commerce-based application. If you adhere to this best practice, you should configure GraphQL so that the server doesn't generate them. Disabling cookies also prevents system file locks and race conditions on server resources. These problems cause slower HTTP GET request throughputs under peak traffic conditions. Run the following command to disable session cookies for GraphQL: bin/magento config:set graphql/session/disable 1 To re-enable these cookies, run: bin/magento config:set graphql/session/disable 0 data-slots=text data-backgroundcolor=gray Thanks to Atwix for contributing this topic!",
+      "published_label": null
+    },
+    {
+      "url": "https://developer.adobe.com/commerce/webapi/graphql/reference/",
+      "requested_url": "https://developer.adobe.com/commerce/webapi/graphql/reference/",
+      "status": 200,
+      "title": "GraphQL API reference (https://developer.adobe.com/commerce/webapi/graphql/reference/)",
+      "text": "GraphQL API reference GraphQL API reference The Adobe Commerce and Magento Open Source GraphQL API provides a flexible, powerful, and efficient alternative to REST and SOAP web APIs for frontend development. The API is organized around a single GraphQL endpoint that provides access to the full range of Adobe Commerce and Magento Open Source features. See the following page for the full reference documentation for the Adobe Commerce and Magento Open Source GraphQL API schema: SaaS only GraphQL API reference PaaS only 2.4.9 GraphQL API reference PaaS only 2.4.8 GraphQL API reference PaaS only 2.4.7 GraphQL API reference PaaS only 2.4.6 GraphQL API reference",
+      "published_label": null
+    },
+    {
+      "url": "https://experienceleague.adobe.com/en/docs/commerce-admin/start/commerce-account/commerce-account-create?lang=en",
+      "requested_url": "https://experienceleague.adobe.com/en/docs/commerce-admin/start/commerce-account/commerce-account-create?lang=en",
+      "status": 200,
+      "title": "Create and access your Commerce account | Adobe Commerce (https://experienceleague.adobe.com/en/docs/commerce-admin/start/commerce-account/commerce-account-create?lang=en)",
+      "text": "Create and access your Commerce account | Adobe Commerce Documentation Getting Started [PaaS only]{class=\"badge informative\" title=\"Applies to Adobe Commerce on Cloud projects (Adobe-managed PaaS infrastructure) and on-premises projects only.\"} Access your Commerce account Last update: October 8, 2026 Topics: Accounts User Account CREATED FOR: Intermediate Beginner User Admin Leader A Commerce account is your central access point for managing Adobe Commerce services for Adobe Commerce projects deployed on cloud infrastructure or on-premises. From the account dashboard, you can view subscriptions, manage Commerce Services API keys, review historical billing information, and collaborate with other users in your organization. If you need to submit your first ticket or manage your Adobe Commerce relationship — rather than working within a specific storefront — start by creating or accessing your Commerce account. You can access your Commerce account from the Commerce website. From the account dashboard, you can view information related to the products and services you have purchased and provide Shared Access to other users. Some information, such as Commerce Services API keys, is visible only to license owners. NOTE The Billing History section on the Commerce account page displays only invoices created before the billing system update. If newer invoices are not listed, they have been transitioned to the new system and are not accessible from this page. {width=\"700\"} Your Commerce account login is separate from your store Admin login. You will normally use different credentials for each, and access to each system is managed independently. However, a user who wants to streamline their login to Adobe Commerce and Adobe Business products can configure their Adobe ID to log in to the store Admin: Configure the Commerce Admin Integration with Adobe ID in the IMS Integration Guide for Commerce . NOTE After you create your account, it is recommended that you use Two-factor Authentication (TFA) to secure your account . Log in to your Commerce account An Adobe ID is required to access your Commerce account. If you have an existing Commerce account but have not signed in since August 2022, you must create an Adobe ID during the sign-in process. You must complete this step before you can log in to your account. WARNING If you cannot find the Commerce organization when submitting an Adobe Commerce support case , it usually means one of the following: the Account Owner has not created an Adobe ID, or an Adobe ID exists but is not linked to the Commerce account. Go to the Commerce site. Click Sign in with Adobe ID . {width=\"700\"} Enter your email address and click Continue . note tip TIP If you used an email address that is associated with an existing Commerce account MAGEID, the sign-in process automatically links it to your Adobe ID. Create a Commerce account Anyone can create a free Commerce account. The email address that you use can only be associated with one Commerce account. NOTE Use an Adobe ID to create and access a Commerce account. If you don’t have a Commerce account, you can create one during the sign-up process. If you already have a Commerce account but you do not have an Adobe ID, see log in to a Commerce account . Go to the Commerce site . Click Sign in with Adobe ID . If you don’t have an Adobe ID, click Create an account . Otherwise, skip to step 7. {width=\"700\"} Complete the sign-up form. {width=\"700\"} Click Create account . Enter the verification code sent to your email address. {width=\"700\"} After your Adobe ID is created and verified, return to https://account.magento.com/. A MAGE ID will be generated and automatically linked to your Adobe ID. Reset your password Go to the Commerce site . Click Sign in with Adobe ID . Click Get help signing in . {width=\"700\"} Click Reset your password . {width=\"700\"} Enter your email address. Click Continue . Providing Shared Access to your Commerce account Shared Access allows you to grant trusted users—such as colleagues, partners, or administrators—permission to manage your Adobe Commerce relationship on your behalf without using your personal login. This includes allowing others to open and track support cases. See the Share a Commerce account section of Adobe Commerce Getting Started Guide for detailed steps on setting up a shared account. For detailed instructions on submitting a Commerce support case, see the Adobe Commerce Help Center user guide . Summary Scenario What’s happening What to do with Adobe ID What to do for MAGE ID / Commerce account Outcome New to Adobe and Commerce No Adobe ID, no MAGE ID Create an Adobe ID when prompted during sign-in to https://account.magento.com After Adobe ID is created, sign in again to https://account.magento.com A Commerce account is created and a MAGE ID is generated and linked to the Adobe ID Has Adobe ID, but no MAGE ID yet Uses other Adobe products only Sign in with Adobe ID at https://account.magento.com First successful sign-in creates the Commerce account and MAGE ID MAGE ID is created and linked automatically Legacy Commerce customer with old MAGE ID Has a historical MAGE ID but no Adobe ID Create an Adobe ID at https://account.adobe.com using the same email as the existing MAGE ID Sign in to https://account.magento.com using “Sign in with Adobe ID” Existing MAGE ID is linked to the new Adobe ID Adobe ID and MAGE ID exist but not linked Emails for Adobe ID and Commerce differ Align the Adobe ID email to match the Commerce account email (or vice versa, depending on ownership) After emails match, sign in via “Sign in with Adobe ID” at https://account.magento.com Adobe ID becomes the login; the MAGE ID remains the entitlement identifier Has Adobe ID but “no MAGE ID” Never signed in to https://account.magento.com Use the existing Adobe ID Sign in at https://account.magento.com for the first time This first sign-in generates and links a MAGE ID Uses only cloud project login (accounts.magento.cloud) Can access cloud project but not classic Commerce account Continue using Adobe ID for cloud project If Marketplace/licenses are needed, also sign in at https://account.magento.com with the same Adobe ID A classic Commerce account (with MAGE ID) is created and linked If a user believes they should have Commerce entitlements but does not see a MAGE ID, the default next step is to sign in at https://account.magento.com using their Adobe ID so that a Commerce account and MAGE ID can be created or correctly linked. recommendation-more-help commerce-admin-help-getting-started",
+      "published_label": "last month"
+    }
+  ],
+  "claims": {
+    "auth": {
+      "value": [
+        "OAuth 2.0",
+        "Bearer token"
+      ],
+      "sources": [
+        "https://developer.adobe.com/commerce/webapi/rest/authentication/"
+      ],
+      "evidence": [
+        {
+          "value": "OAuth 2.0",
+          "url": "https://developer.adobe.com/commerce/webapi/rest/authentication/",
+          "excerpt": "API authentication is handled through Adobe's Identity Management System (IMS) through standardized OAuth 2 protocols. This authentication system supports both interactive user-based workflows and automated server-to-server integrations, ensuring secure and appropriate access for differ",
+          "published_label": null
+        },
+        {
+          "value": "Bearer token",
+          "url": "https://developer.adobe.com/commerce/webapi/rest/authentication/",
+          "excerpt": "t environment Adobe Developer Console project configuration API testing tools Access tokens Use the bearer token type for API authorization Include your access token in the Authorization header of REST API requests Familiarize yourself with token lifecycle management and renewal processes Re",
+          "published_label": null
+        }
+      ],
+      "reason": "Provisional extraction: validate scope and completeness against the cited page."
+    },
+    "credential_gate": {
+      "value": "unknown",
+      "sources": [],
+      "evidence": [],
+      "reason": "No sufficiently specific positive evidence extracted; review targeted search results."
+    },
+    "api_surface": {
+      "value": [
+        "REST",
+        "GraphQL"
+      ],
+      "sources": [
+        "https://developer.adobe.com/commerce/webapi/rest/reference/",
+        "https://developer.adobe.com/commerce/webapi/rest/authentication/",
+        "https://developer.adobe.com/commerce/webapi/graphql/reference/"
+      ],
+      "evidence": [
+        {
+          "value": "REST",
+          "url": "https://developer.adobe.com/commerce/webapi/rest/reference/",
+          "excerpt": "REST API reference REST API reference This comprehensive reference provides detailed documentation for all available REST API endpoints in Adobe Commerce and Magento Open Source. Each endp",
+          "published_label": null
+        },
+        {
+          "value": "REST",
+          "url": "https://developer.adobe.com/commerce/webapi/rest/authentication/",
+          "excerpt": "-only.md REST Authentication in Adobe Commerce as a Cloud Service Adobe Commerce as a Cloud Service REST API authentication is handled through Adobe's Identity Management System (IMS) through standardized OAuth 2 protocols. This authentication system supports both interactive user-based ",
+          "published_label": null
+        },
+        {
+          "value": "GraphQL",
+          "url": "https://developer.adobe.com/commerce/webapi/graphql/reference/",
+          "excerpt": "GraphQL API reference GraphQL API reference The Adobe Commerce and Magento Open Source GraphQL API provides a flexible, powerful, and efficient alternative to REST and SOAP web APIs for front",
+          "published_label": null
+        }
+      ],
+      "reason": "Provisional extraction: validate scope and completeness against the cited page."
+    },
+    "official_mcp": {
+      "value": "unknown",
+      "sources": [],
+      "evidence": [],
+      "reason": "No sufficiently specific positive evidence extracted; review targeted search results."
+    },
+    "composio_toolkit": {
+      "value": "unknown",
+      "sources": [],
+      "evidence": [],
+      "reason": "No exact or reviewed alias match; absence is not established."
+    },
+    "verdict": {
+      "value": "unknown",
+      "sources": [],
+      "evidence": [],
+      "reason": "A supported access path, authentication method and API surface were not all extracted."
+    }
+  },
+  "validation": [
+    "All claims are provisional",
+    "No vendor MCP inference from Composio catalog",
+    "Negated MCP or client-only source is not counted as vendor-server proof"
+  ]
+}

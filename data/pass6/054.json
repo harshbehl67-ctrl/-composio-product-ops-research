@@ -1,0 +1,104 @@
+{
+  "app": {
+    "number": 54,
+    "name": "MrScraper",
+    "category": "Data, SEO and Scraping",
+    "hint": "docs.mrscraper.com"
+  },
+  "replayed_at": "2026-11-23T18:17:23.053682+00:00",
+  "source_passes": [
+    "data/pass2/054.json",
+    "data/pass4/054.json"
+  ],
+  "source_search": "data/new_search/054.json",
+  "publication_date_note": "Published labels are retained exactly as supplied by search; missing labels are null. Relative labels must not be treated as exact publication dates.",
+  "claims": {
+    "auth": {
+      "value": [
+        "API token",
+        "Bearer token"
+      ],
+      "sources": [
+        "https://docs.mrscraper.com/docs/api/authentication",
+        "https://docs.mrscraper.com/docs/getting-started/api-token",
+        "https://docs.mrscraper.com/docs/api/v3/authentication/verify-token"
+      ],
+      "evidence": [
+        {
+          "value": "API token",
+          "url": "https://docs.mrscraper.com/docs/api/authentication",
+          "excerpt": "enticate requests to the MrScraper API using API tokens and request headers. The MrScraper API uses API token authentication to secure all endpoints. Every request must include a valid API token in the HTTP request headers. Getting Your API Token API tokens are managed directly from your ",
+          "published_label": null
+        },
+        {
+          "value": "Bearer token",
+          "url": "https://docs.mrscraper.com/docs/api/authentication",
+          "excerpt": "ts For Marketplace endpoints , authenticate using the standard RFC 6750 Authorization header with a Bearer token: Authorization : Bearer <MRSCRAPER_API_TOKEN> Verify Token To test your authentication and confirm that your token is valid, make a request to the /subscription-accounts endpoint:",
+          "published_label": null
+        },
+        {
+          "value": "API token",
+          "url": "https://docs.mrscraper.com/docs/getting-started/api-token",
+          "excerpt": "tation Documentation Core Features Dashboard Getting Started Overview Quickstart Web Search Scraper API Token Plan CLI MCP Server Billing Features Workflow Workflow API Access Bulk Scraping Proxy Marketplace Schedule S3 Storage Scraping Tips Cookie Team Guides Common Use Case Optimizing C",
+          "published_label": null
+        },
+        {
+          "value": "API token",
+          "url": "https://docs.mrscraper.com/docs/api/v3/authentication/verify-token",
+          "excerpt": "Verify API Token | MrScraper Documentation API Reference API Reference Dashboard Introduction API Overview Authentication Pagination Response Headers Error Handling Web Search Web Search GET Scrap",
+          "published_label": null
+        }
+      ],
+      "reason": "Provisional extraction: validate scope and completeness against the cited page."
+    },
+    "credential_gate": {
+      "value": "unknown",
+      "sources": [],
+      "evidence": [],
+      "reason": "No sufficiently specific positive evidence extracted; review targeted search results."
+    },
+    "api_surface": {
+      "value": "unknown",
+      "sources": [],
+      "evidence": [],
+      "reason": "No sufficiently specific positive evidence extracted; review targeted search results."
+    },
+    "official_mcp": {
+      "value": "yes (provisional)",
+      "sources": [
+        "https://docs.mrscraper.com/docs/getting-started/mcp-server"
+      ],
+      "evidence": [
+        {
+          "value": "yes (provisional)",
+          "url": "https://docs.mrscraper.com/docs/getting-started/mcp-server",
+          "excerpt": "Database Webhook Zapier ClawHub x402 n8n Dify Scalekit SDKs MCP Server Official MrScraper MCP server for retrieving web pages, web search, and account usage. Connect AI clients or run the open-source server locally. MrScraper MCP is the official Model Context ",
+          "published_label": null,
+          "context_warning": "Review vendor ownership, dates, and scope."
+        }
+      ],
+      "reason": "Provisional; check source date, scope, and vendor ownership."
+    },
+    "composio_toolkit": {
+      "value": "listed",
+      "sources": [
+        "https://docs.composio.dev/toolkits/mrscraper"
+      ],
+      "evidence": [],
+      "reason": "Catalog match; scope needs review."
+    },
+    "verdict": {
+      "value": "unknown",
+      "sources": [],
+      "evidence": [],
+      "reason": "A supported access path, authentication method and API surface were not all extracted."
+    }
+  },
+  "validation": [
+    "Automatic extraction is provisional and not a verified final claim",
+    "Unknown is not evidence of absence",
+    "No Composio-to-vendor-MCP inference",
+    "Basic authentication may be endpoint-specific",
+    "Client-only and negated statements are not positive MCP evidence"
+  ]
+}

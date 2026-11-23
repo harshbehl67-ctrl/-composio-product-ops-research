@@ -1,0 +1,141 @@
+{
+  "app": {
+    "number": 38,
+    "name": "Pinterest",
+    "category": "Marketing, Ads, Email and Social",
+    "hint": "developers.pinterest.com"
+  },
+  "replayed_at": "2026-11-23T18:17:22.370544+00:00",
+  "source_passes": [
+    "data/pass2/038.json",
+    "data/pass4/038.json"
+  ],
+  "source_search": "data/new_search/038.json",
+  "publication_date_note": "Published labels are retained exactly as supplied by search; missing labels are null. Relative labels must not be treated as exact publication dates.",
+  "claims": {
+    "auth": {
+      "value": [
+        "OAuth 2.0",
+        "Basic authentication (OAuth client or endpoint-specific)"
+      ],
+      "sources": [
+        "https://developer.pinterest.com/docs/getting-started/set-up-authentication-and-authorization/",
+        "https://dev.pinterest.com/docs/getting-started/set-up-authentication-and-authorization/",
+        "https://developers.pinterest.com/docs/getting-started/set-up-authentication-and-authorization/"
+      ],
+      "evidence": [
+        {
+          "value": "OAuth 2.0",
+          "url": "https://developer.pinterest.com/docs/getting-started/set-up-authentication-and-authorization/",
+          "excerpt": "fect how you generate an access token . Our implementation of grant types and access tokens follows OAuth 2.0 specifications. To learn more about OAuth and grant types, see the OAuth 2.0 Authorization Framework RFC . Authorization Code grant What this type is for: This grant type is desig",
+          "published_label": null
+        },
+        {
+          "value": "Basic authentication (OAuth client or endpoint-specific)",
+          "url": "https://developer.pinterest.com/docs/getting-started/set-up-authentication-and-authorization/",
+          "excerpt": " (latest) in the left navigation panel. Then select Generate access token . Authentication Use HTTP Basic Authentication: Username: client_id Password: client_secret Authorization Header Authorization: Basic {base64-encoded_string_made_of client_id:client_secret} For example, if your client_id is 12",
+          "published_label": null
+        },
+        {
+          "value": "OAuth 2.0",
+          "url": "https://dev.pinterest.com/docs/getting-started/set-up-authentication-and-authorization/",
+          "excerpt": "fect how you generate an access token . Our implementation of grant types and access tokens follows OAuth 2.0 specifications. To learn more about OAuth and grant types, see the OAuth 2.0 Authorization Framework RFC . Authorization Code grant What this type is for: This grant type is desig",
+          "published_label": null
+        },
+        {
+          "value": "Basic authentication (OAuth client or endpoint-specific)",
+          "url": "https://dev.pinterest.com/docs/getting-started/set-up-authentication-and-authorization/",
+          "excerpt": " (latest) in the left navigation panel. Then select Generate access token . Authentication Use HTTP Basic Authentication: Username: client_id Password: client_secret Authorization Header Authorization: Basic {base64-encoded_string_made_of client_id:client_secret} For example, if your client_id is 12",
+          "published_label": null
+        },
+        {
+          "value": "OAuth 2.0",
+          "url": "https://developers.pinterest.com/docs/getting-started/set-up-authentication-and-authorization/",
+          "excerpt": "fect how you generate an access token . Our implementation of grant types and access tokens follows OAuth 2.0 specifications. To learn more about OAuth and grant types, see the OAuth 2.0 Authorization Framework RFC . Authorization Code grant What this type is for: This grant type is desig",
+          "published_label": null
+        },
+        {
+          "value": "Basic authentication (OAuth client or endpoint-specific)",
+          "url": "https://developers.pinterest.com/docs/getting-started/set-up-authentication-and-authorization/",
+          "excerpt": " (latest) in the left navigation panel. Then select Generate access token . Authentication Use HTTP Basic Authentication: Username: client_id Password: client_secret Authorization Header Authorization: Basic {base64-encoded_string_made_of client_id:client_secret} For example, if your client_id is 12",
+          "published_label": null
+        }
+      ],
+      "reason": "Provisional extraction: validate scope and completeness against the cited page."
+    },
+    "credential_gate": {
+      "value": "unknown",
+      "sources": [],
+      "evidence": [],
+      "reason": "No sufficiently specific positive evidence extracted; review targeted search results."
+    },
+    "api_surface": {
+      "value": [
+        "REST"
+      ],
+      "sources": [
+        "https://developer.pinterest.com/docs/getting-started/set-up-authentication-and-authorization/",
+        "https://dev.pinterest.com/docs/getting-started/set-up-authentication-and-authorization/",
+        "https://developers.pinterest.com/docs/getting-started/set-up-authentication-and-authorization/"
+      ],
+      "evidence": [
+        {
+          "value": "REST",
+          "url": "https://developer.pinterest.com/docs/getting-started/set-up-authentication-and-authorization/",
+          "excerpt": "dpoint with the Pinterest Postman collection . On the collection site, select OAuth under Pinterest REST API (latest) in the left navigation panel. Then select Generate access token . Try out this endpoint with the Pinterest Postman collection . On the collection site, select OAuth under",
+          "published_label": null
+        },
+        {
+          "value": "REST",
+          "url": "https://dev.pinterest.com/docs/getting-started/set-up-authentication-and-authorization/",
+          "excerpt": "dpoint with the Pinterest Postman collection . On the collection site, select OAuth under Pinterest REST API (latest) in the left navigation panel. Then select Generate access token . Try out this endpoint with the Pinterest Postman collection . On the collection site, select OAuth under",
+          "published_label": null
+        },
+        {
+          "value": "REST",
+          "url": "https://developers.pinterest.com/docs/getting-started/set-up-authentication-and-authorization/",
+          "excerpt": "dpoint with the Pinterest Postman collection . On the collection site, select OAuth under Pinterest REST API (latest) in the left navigation panel. Then select Generate access token . Try out this endpoint with the Pinterest Postman collection . On the collection site, select OAuth under",
+          "published_label": null
+        }
+      ],
+      "reason": "Provisional extraction: validate scope and completeness against the cited page."
+    },
+    "official_mcp": {
+      "value": "yes (provisional)",
+      "sources": [
+        "https://developer.pinterest.com/about-pinterest-mcp/"
+      ],
+      "evidence": [
+        {
+          "value": "yes (provisional)",
+          "url": "https://developer.pinterest.com/about-pinterest-mcp/",
+          "excerpt": "t Developers Skip to content New announcement Your AI just got a new superpower Pinterest MCP Server brings the power of Pinterest data directly into the AI assistants, copilots, and agentic workflows you already use. Turn natural-language questions into fast,",
+          "published_label": null,
+          "context_warning": "Review vendor ownership, dates, and scope."
+        }
+      ],
+      "reason": "Provisional; check source date, scope, and vendor ownership."
+    },
+    "composio_toolkit": {
+      "value": "listed",
+      "sources": [
+        "https://docs.composio.dev/toolkits/pinterest"
+      ],
+      "evidence": [],
+      "reason": "Catalog match; scope needs review."
+    },
+    "verdict": {
+      "value": "unknown",
+      "sources": [],
+      "evidence": [],
+      "reason": "A supported access path, authentication method and API surface were not all extracted."
+    }
+  },
+  "validation": [
+    "Automatic extraction is provisional and not a verified final claim",
+    "Unknown is not evidence of absence",
+    "No Composio-to-vendor-MCP inference",
+    "Basic authentication may be endpoint-specific",
+    "Client-only and negated statements are not positive MCP evidence"
+  ]
+}

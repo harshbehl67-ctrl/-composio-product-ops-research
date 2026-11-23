@@ -1,0 +1,133 @@
+{
+  "app": {
+    "number": 6,
+    "name": "Podio",
+    "category": "CRM and Sales",
+    "hint": "podio.com"
+  },
+  "replayed_at": "2026-11-23T18:16:35.984707+00:00",
+  "source_passes": [
+    "data/pass2/006.json",
+    "data/pass4/006.json"
+  ],
+  "source_search": "data/new_search/006.json",
+  "publication_date_note": "Published labels are retained exactly as supplied by search; missing labels are null. Relative labels must not be treated as exact publication dates.",
+  "claims": {
+    "auth": {
+      "value": [
+        "OAuth 2.0",
+        "API key"
+      ],
+      "sources": [
+        "https://developers.podio.com/authentication",
+        "https://developers.podio.com/authentication/server_side",
+        "https://developers.podio.com/doc/oauth-authorization/get-access-token-22359",
+        "https://developers.podio.com/api-key",
+        "https://developers.podio.com/doc/oauth-authorization",
+        "https://developers.podio.com/authentication/username_password"
+      ],
+      "evidence": [
+        {
+          "value": "OAuth 2.0",
+          "url": "https://developers.podio.com/authentication",
+          "excerpt": "er Forums Partner Extensions Terms of Use How to authenticate with Podio API The Podio API uses the OAuth2 protocol for authentication. This allows external apps to request authorization to Podio without having direct access to the user's password. Our API supports different OAuth flow",
+          "published_label": null
+        },
+        {
+          "value": "API key",
+          "url": "https://developers.podio.com/authentication",
+          "excerpt": "Authentication - Podio API Documentation Getting started Get an API key Authentication Scopes & Permissions Server-side flow Client-side flow Username & password flow App authentication flow API Reference Tutorials Client Libraries Developer Forums Pa",
+          "published_label": null
+        },
+        {
+          "value": "OAuth 2.0",
+          "url": "https://developers.podio.com/authentication/server_side",
+          "excerpt": "E_STRING Example: Ruby Sinatra The following code example is written in Ruby, using Sinatra and the OAuth2 gem: require 'rubygems' require 'sinatra' require 'oauth2' require 'json' def podio_client client_id = 'YOUR_CLIENT_ID' client_secret = 'YOUR_CLIENT_SECRET' OAuth2 :: Client . new",
+          "published_label": null
+        },
+        {
+          "value": "API key",
+          "url": "https://developers.podio.com/authentication/server_side",
+          "excerpt": "Authentication: Server-side flow - Podio API Documentation Getting started Get an API key Authentication Scopes & Permissions Server-side flow Client-side flow Username & password flow App authentication flow API Reference Tutorials Client Libraries Developer Forums Pa",
+          "published_label": null
+        },
+        {
+          "value": "OAuth 2.0",
+          "url": "https://developers.podio.com/doc/oauth-authorization/get-access-token-22359",
+          "excerpt": "d the apps login token This operation can return a wide variety of error codes. For details see the OAuth 2 specification. Usage Ruby Gem o_auth.rb Podio :: OAuth . get_access_token ( attributes ) Parameters app_id The id of the app to login as, if using \" app \" grant type app_token The",
+          "published_label": null
+        },
+        {
+          "value": "API key",
+          "url": "https://developers.podio.com/doc/oauth-authorization/get-access-token-22359",
+          "excerpt": "OAuth authorization | Get access token - Podio API Documentation Getting started Get an API key Authentication API Reference Actions Alerts App market Applications Batch Calendar Comments Contacts Conversations Devices Email Embeds Files Flows Forms Friends Grants Hooks Impo",
+          "published_label": null
+        },
+        {
+          "value": "API key",
+          "url": "https://developers.podio.com/api-key",
+          "excerpt": "Get API key - Podio API Documentation Getting started Get an API key Authentication API Reference Tutorials Client Libraries Developer Forums Partner Extensions Terms of Use Get API key Gener",
+          "published_label": null
+        },
+        {
+          "value": "OAuth 2.0",
+          "url": "https://developers.podio.com/doc/oauth-authorization",
+          "excerpt": "uthorization Operations Get access token Get scope Invalidate grant Invalidate tokens This API uses OAuth 2.0 (http://oauth.net/2/) for authentication users of the API. Currently supported is draft-10 of the specification. It is recommended to read http://tools.ietf.org/html/draft-ietf-oa",
+          "published_label": null
+        },
+        {
+          "value": "API key",
+          "url": "https://developers.podio.com/doc/oauth-authorization",
+          "excerpt": "OAuth authorization | API Documentation - Podio API Documentation Getting started Get an API key Authentication API Reference Actions Alerts App market Applications Batch Calendar Comments Contacts Conversations Devices Email Embeds Files Flows Forms Friends Grants Hooks Impo",
+          "published_label": null
+        },
+        {
+          "value": "API key",
+          "url": "https://developers.podio.com/authentication/username_password",
+          "excerpt": "Authentication: Username & password flow - Podio API Documentation Getting started Get an API key Authentication Scopes & Permissions Server-side flow Client-side flow Username & password flow App authentication flow API Reference Tutorials Client Libraries Developer Forums Pa",
+          "published_label": null
+        }
+      ],
+      "reason": "Provisional extraction: validate scope and completeness against the cited page."
+    },
+    "credential_gate": {
+      "value": "unknown",
+      "sources": [],
+      "evidence": [],
+      "reason": "No sufficiently specific positive evidence extracted; review targeted search results."
+    },
+    "api_surface": {
+      "value": "unknown",
+      "sources": [],
+      "evidence": [],
+      "reason": "No sufficiently specific positive evidence extracted; review targeted search results."
+    },
+    "official_mcp": {
+      "value": "unknown",
+      "sources": [],
+      "evidence": [],
+      "reason": "No sufficiently specific positive evidence extracted; review targeted search results."
+    },
+    "composio_toolkit": {
+      "value": "listed",
+      "sources": [
+        "https://docs.composio.dev/toolkits/podio"
+      ],
+      "evidence": [],
+      "reason": "Catalog match; scope needs review."
+    },
+    "verdict": {
+      "value": "unknown",
+      "sources": [],
+      "evidence": [],
+      "reason": "A supported access path, authentication method and API surface were not all extracted."
+    }
+  },
+  "validation": [
+    "Automatic extraction is provisional and not a verified final claim",
+    "Unknown is not evidence of absence",
+    "No Composio-to-vendor-MCP inference",
+    "Basic authentication may be endpoint-specific",
+    "Client-only and negated statements are not positive MCP evidence"
+  ]
+}

@@ -1,0 +1,101 @@
+{
+  "app": {
+    "number": 82,
+    "name": "Plaid",
+    "category": "Finance and Fintech",
+    "hint": "plaid.com/docs"
+  },
+  "replayed_at": "2026-11-23T18:16:39.582946+00:00",
+  "source_passes": [
+    "data/pass2/082.json",
+    "data/pass4/082.json"
+  ],
+  "source_search": "data/new_search/082.json",
+  "publication_date_note": "Published labels are retained exactly as supplied by search; missing labels are null. Relative labels must not be treated as exact publication dates.",
+  "claims": {
+    "auth": {
+      "value": [
+        "OAuth 2.0",
+        "Bearer token"
+      ],
+      "sources": [
+        "https://plaid.com/core-exchange/docs/reference/authentication/"
+      ],
+      "evidence": [
+        {
+          "value": "OAuth 2.0",
+          "url": "https://plaid.com/core-exchange/docs/reference/authentication/",
+          "excerpt": "n, for example curl -H 'Authorization: Bearer <ACCESS_TOKEN>' . Plaid obtains that token through an OAuth 2.0 authorization code flow , with OpenID Connect (OIDC) strongly recommended. As the Data Provider, you implement the authorization server and Plaid acts as the OAuth client. Plaid d",
+          "published_label": null
+        },
+        {
+          "value": "Bearer token",
+          "url": "https://plaid.com/core-exchange/docs/reference/authentication/",
+          "excerpt": "Authentication options for the Core Exchange API The Core Exchange API accepts an access token as a bearer token, for example curl -H 'Authorization: Bearer <ACCESS_TOKEN>' . Plaid obtains that token through an OAuth 2.0 authorization code flow , with OpenID Connect (OIDC) strongly recommend",
+          "published_label": null
+        }
+      ],
+      "reason": "Provisional extraction: validate scope and completeness against the cited page."
+    },
+    "credential_gate": {
+      "value": "unknown",
+      "sources": [],
+      "evidence": [],
+      "reason": "No sufficiently specific positive evidence extracted; review targeted search results."
+    },
+    "api_surface": {
+      "value": [
+        "REST"
+      ],
+      "sources": [
+        "https://plaid.com/docs/api/?trk=article-ssr-frontend-pulse_little-text-block"
+      ],
+      "evidence": [
+        {
+          "value": "REST",
+          "url": "https://plaid.com/docs/api/?trk=article-ssr-frontend-pulse_little-text-block",
+          "excerpt": "when reporting crypto balances. OpenAPI definition file OpenAPI is a standard format for describing RESTful APIs that allows those APIs to be integrated with tools for a wide variety of applications, including testing, client library generation, IDE integration, and more. The Plaid API is sp",
+          "published_label": null
+        }
+      ],
+      "reason": "Provisional extraction: validate scope and completeness against the cited page."
+    },
+    "official_mcp": {
+      "value": "yes (provisional)",
+      "sources": [
+        "https://plaid.com/docs/resources/mcp/"
+      ],
+      "evidence": [
+        {
+          "value": "yes (provisional)",
+          "url": "https://plaid.com/docs/resources/mcp/",
+          "excerpt": " Pssst -- I also moonlight as your IDE's research librarian! Plug me in via the Plaid MCP Server . Note: Bill isn't perfect. He's just a robot platypus that reads our docs for fun. You should treat his answers with the same healthy skepticism you might tre",
+          "published_label": null,
+          "context_warning": "Review vendor ownership, dates, and scope."
+        }
+      ],
+      "reason": "Provisional; check source date, scope, and vendor ownership."
+    },
+    "composio_toolkit": {
+      "value": "listed",
+      "sources": [
+        "https://docs.composio.dev/toolkits/plaid"
+      ],
+      "evidence": [],
+      "reason": "Catalog match; scope needs review."
+    },
+    "verdict": {
+      "value": "unknown",
+      "sources": [],
+      "evidence": [],
+      "reason": "A supported access path, authentication method and API surface were not all extracted."
+    }
+  },
+  "validation": [
+    "Automatic extraction is provisional and not a verified final claim",
+    "Unknown is not evidence of absence",
+    "No Composio-to-vendor-MCP inference",
+    "Basic authentication may be endpoint-specific",
+    "Client-only and negated statements are not positive MCP evidence"
+  ]
+}

@@ -1,0 +1,103 @@
+{
+  "app": {
+    "number": 86,
+    "name": "QuickBooks",
+    "category": "Finance and Fintech",
+    "hint": "developer.intuit.com"
+  },
+  "replayed_at": "2026-11-23T18:42:07.318122+00:00",
+  "source_passes": [
+    "data/pass2/086.json",
+    "data/pass4/086.json"
+  ],
+  "source_searches": [
+    "data/new_search/086.json",
+    "data/pass4_search/086.json"
+  ],
+  "publication_date_note": "Search publication labels are retained exactly; null means no label was available. Relative labels are not exact dates.",
+  "claims": {
+    "auth": {
+      "value": [
+        "OAuth 2.0",
+        "Session authentication",
+        "Bearer token"
+      ],
+      "status": "provisional",
+      "sources": [
+        "https://static.developer.intuit.com/output_html/qbo/docs/develop/authentication-and-authorization/faq.html",
+        "https://static.developer.intuit.com/output_html/qbo/docs/develop/authentication-and-authorization/oauth-2.0.html"
+      ],
+      "evidence": [
+        {
+          "value": "OAuth 2.0",
+          "url": "https://static.developer.intuit.com/output_html/qbo/docs/develop/authentication-and-authorization/faq.html",
+          "excerpt": "Authorization FAQ Hereâs a deeper dive into the OAuth 2.0 and authorization process to connect apps with the Intuit Financial Ecosystem. Do I need to authorize my app to integrate it with QuickBooks? Yes. The first step is to c",
+          "published_label": null
+        },
+        {
+          "value": "Session authentication",
+          "url": "https://static.developer.intuit.com/output_html/qbo/docs/develop/authentication-and-authorization/faq.html",
+          "excerpt": "Authorization FAQ Hereâs a deeper dive into the OAuth 2.0 and authorization process to connect apps with the Intuit Financial Ecosystem. Do I need to authorize my app to integrate it with QuickBooks? Yes. The first step is to create an app on the Intuit Developer Platform. This",
+          "published_label": null
+        },
+        {
+          "value": "OAuth 2.0",
+          "url": "https://static.developer.intuit.com/output_html/qbo/docs/develop/authentication-and-authorization/oauth-2.0.html",
+          "excerpt": "Disablement for the Intuit Developer Group Upgrading your apps to support TLS 1.2 Set up OAuth 2.0 Use the OAuth 2.0 protocol to implement authentication and authorization. Authorization is essential for both testing via sandbox companies and production apps. Weâll",
+          "published_label": null
+        },
+        {
+          "value": "Bearer token",
+          "url": "https://static.developer.intuit.com/output_html/qbo/docs/develop/authentication-and-authorization/oauth-2.0.html",
+          "excerpt": "for access and refresh tokens: .NET Java PHP Node.js Python Ruby 1 2 3 4 5 // Get OAuth2 Bearer token var tokenResponse = await auth2Client . GetBearerTokenAsync ( code ); //retrieve access_token and refresh_token tokenResponse . AccessToken tokenResponse . RefreshToken",
+          "published_label": null
+        }
+      ],
+      "reason": "Provisional extraction; validate scope and completeness against cited pages."
+    },
+    "credential_gate": {
+      "value": "unknown",
+      "status": "provisional",
+      "sources": [],
+      "evidence": [],
+      "reason": "No sufficiently specific official evidence extracted."
+    },
+    "api_surface": {
+      "value": "unknown",
+      "status": "provisional",
+      "sources": [],
+      "evidence": [],
+      "reason": "No sufficiently specific official evidence extracted."
+    },
+    "official_mcp": {
+      "value": "unknown",
+      "status": "provisional",
+      "sources": [],
+      "evidence": [],
+      "reason": "No sufficiently specific official evidence extracted."
+    },
+    "composio_toolkit": {
+      "value": "listed",
+      "status": "provisional",
+      "sources": [
+        "https://docs.composio.dev/toolkits/quickbooks"
+      ],
+      "evidence": [],
+      "reason": "Catalog match only; not vendor MCP evidence."
+    },
+    "verdict": {
+      "value": "unknown",
+      "status": "provisional",
+      "sources": [],
+      "evidence": [],
+      "reason": "No sufficiently specific official evidence extracted."
+    }
+  },
+  "validation": [
+    "Automatic extraction is provisional until independently reviewed",
+    "Unknown is not evidence of absence",
+    "Composio evidence cannot establish vendor MCP",
+    "Client-only and negated MCP statements are not vendor-server proof",
+    "API breadth is a text-coverage heuristic, not an endpoint census"
+  ]
+}

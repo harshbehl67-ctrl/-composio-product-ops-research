@@ -1,0 +1,163 @@
+{
+  "app": {
+    "number": 75,
+    "name": "Asana",
+    "category": "Productivity and Project Management",
+    "hint": "developers.asana.com"
+  },
+  "replayed_at": "2026-11-23T18:41:38.033508+00:00",
+  "source_passes": [
+    "data/pass2/075.json",
+    "data/pass4/075.json"
+  ],
+  "source_searches": [
+    "data/new_search/075.json",
+    "data/pass4_search/075.json"
+  ],
+  "publication_date_note": "Search publication labels are retained exactly; null means no label was available. Relative labels are not exact dates.",
+  "claims": {
+    "auth": {
+      "value": [
+        "OAuth 2.0",
+        "API key",
+        "API token",
+        "Bearer token",
+        "Session authentication"
+      ],
+      "status": "provisional",
+      "sources": [
+        "https://developers.asana.com/docs/authentication",
+        "https://developers.asana.com/docs/integrating-with-asanas-mcp-server",
+        "https://developers.asana.com/docs/personal-access-token",
+        "https://developers.asana.com/docs/oauth"
+      ],
+      "evidence": [
+        {
+          "value": "OAuth 2.0",
+          "url": "https://developers.asana.com/docs/authentication",
+          "excerpt": "Connect OpenID Connect (OIDC) is an open authentication protocol that works on top of the OAuth 2.0. The purpose of OIDC is for users to provide one set of credentials and access multiple sites. If you want to allow users to log into your app using their Asana account,",
+          "published_label": null
+        },
+        {
+          "value": "OAuth 2.0",
+          "url": "https://developers.asana.com/docs/integrating-with-asanas-mcp-server",
+          "excerpt": "logic Revoke tokens when they're no longer needed For additional security resources, see: OAuth 2.0 Security Best Current Practice Prevent Attacks and Redirect Users with OAuth 2.0 State Parameters Scopes / permissions Asana MCP access is currently user-based. All acti",
+          "published_label": null
+        },
+        {
+          "value": "API key",
+          "url": "https://developers.asana.com/docs/personal-access-token",
+          "excerpt": "ccess token (PAT) contains your security credentials for the Asana platform. Much like an API key, generating a PAT allows you to access (i.e., make requests to) the Asana REST API upon successful authentication. A user can create many, but not unlimited, personal ac",
+          "published_label": null
+        },
+        {
+          "value": "API token",
+          "url": "https://developers.asana.com/docs/personal-access-token",
+          "excerpt": "\" In the above snippet, replace ACCESS_TOKEN with your PAT. ⚠️ Note on token format Asana API tokens should be treated as opaque. Token formats may change without notice. Validating a token’s format on the client side could result in unexpected breakages. This applies",
+          "published_label": null
+        },
+        {
+          "value": "OAuth 2.0",
+          "url": "https://developers.asana.com/docs/oauth",
+          "excerpt": "OAuth on the Asana platform (i.e., through this guide), feel free to review the official OAuth 2.0 specification . Overview of the OAuth process This section describes the overall OAuth process (i.e., with the authorization code grant flow, which is the most common).",
+          "published_label": null
+        },
+        {
+          "value": "API token",
+          "url": "https://developers.asana.com/docs/oauth",
+          "excerpt": "ived refresh_token from the original token exchange request. 🚧 Note on token format Asana API tokens should be treated as opaque. Token formats may change without notice. Validating a token’s format on the client side could result in unexpected breakages. This applies",
+          "published_label": null
+        },
+        {
+          "value": "Bearer token",
+          "url": "https://developers.asana.com/docs/oauth",
+          "excerpt": "revoking a token is POST https://app.asana.com/-/oauth_revoke Once an access token (i.e., bearer token) has been obtained, your application can make API requests on behalf of the user 📘 Open source examples You can access an open source examples for OAuth servers, provide",
+          "published_label": null
+        },
+        {
+          "value": "Session authentication",
+          "url": "https://developers.asana.com/docs/oauth",
+          "excerpt": "OAuth For AI agents: the docs index is at https://developers.asana.com/llms.txt. Append .md to any documentation page URL to get its markdown version. At its core, OAuth (\"Open Authorization\") is a mechanism for applications to access the Asana API on behalf of a user, all withou",
+          "published_label": null
+        }
+      ],
+      "reason": "Provisional extraction; validate scope and completeness against cited pages."
+    },
+    "credential_gate": {
+      "value": "unknown",
+      "status": "provisional",
+      "sources": [],
+      "evidence": [],
+      "reason": "No sufficiently specific official evidence extracted."
+    },
+    "api_surface": {
+      "value": "REST; narrow documented surface",
+      "status": "provisional",
+      "sources": [
+        "https://developers.asana.com/docs/personal-access-token",
+        "https://developers.asana.com/reference/rest-api-reference"
+      ],
+      "evidence": [
+        {
+          "value": [
+            "REST"
+          ],
+          "breadth": "narrow",
+          "url": "https://developers.asana.com/docs/personal-access-token",
+          "excerpt": "Personal access token For AI agents: the docs index is at https://developers.asana.com/llms.txt. Append .md to any documentation page URL to get its markdown version. Overview A personal access token (PAT) contains your security credentials for the Asana platform. Much like an AP",
+          "published_label": null
+        },
+        {
+          "value": [
+            "REST"
+          ],
+          "breadth": "narrow",
+          "url": "https://developers.asana.com/reference/rest-api-reference",
+          "excerpt": "Overview For AI agents: the docs index is at https://developers.asana.com/llms.txt. Append .md to any documentation page URL to get its markdown version. This is the interface for interacting with the Asana platform. This reference is generated from our OpenAPI Specification , an",
+          "published_label": null
+        }
+      ],
+      "reason": "Provisional extraction; validate scope and completeness against cited pages."
+    },
+    "official_mcp": {
+      "value": "vendor_server",
+      "status": "provisional",
+      "sources": [
+        "https://developers.asana.com/docs/using-asanas-mcp-server?frame=0"
+      ],
+      "evidence": [
+        {
+          "value": "vendor_server",
+          "url": "https://developers.asana.com/docs/using-asanas-mcp-server?frame=0",
+          "excerpt": "for your admin to unblock the app for your domain when trying to authorize. Connecting to Asana's MCP Server The Asana MCP V2 server is available at: https://mcp.asana.com/v2/mcp . This server requires authentication with your Asana account. When connecting, you'll be prompted to authorize the application to acces",
+          "published_label": null,
+          "context_note": "Vendor-owned server statement; review date and access scope."
+        }
+      ],
+      "reason": "Provisional; check date, ownership and access scope."
+    },
+    "composio_toolkit": {
+      "value": "listed",
+      "status": "provisional",
+      "sources": [
+        "https://docs.composio.dev/toolkits/asana"
+      ],
+      "evidence": [],
+      "reason": "Catalog match only; not vendor MCP evidence."
+    },
+    "verdict": {
+      "value": "unknown",
+      "status": "provisional",
+      "sources": [],
+      "evidence": [],
+      "reason": "No sufficiently specific official evidence extracted."
+    }
+  },
+  "validation": [
+    "Automatic extraction is provisional until independently reviewed",
+    "Unknown is not evidence of absence",
+    "Composio evidence cannot establish vendor MCP",
+    "Client-only and negated MCP statements are not vendor-server proof",
+    "API breadth is a text-coverage heuristic, not an endpoint census"
+  ]
+}

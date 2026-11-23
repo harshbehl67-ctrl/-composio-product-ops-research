@@ -1,0 +1,237 @@
+{
+  "app": {
+    "number": 76,
+    "name": "Monday.com",
+    "category": "Productivity and Project Management",
+    "hint": "developer.monday.com"
+  },
+  "replayed_at": "2026-11-23T18:42:06.725278+00:00",
+  "source_passes": [
+    "data/pass2/076.json",
+    "data/pass4/076.json"
+  ],
+  "source_searches": [
+    "data/new_search/076.json",
+    "data/pass4_search/076.json"
+  ],
+  "publication_date_note": "Search publication labels are retained exactly; null means no label was available. Relative labels are not exact dates.",
+  "claims": {
+    "auth": {
+      "value": [
+        "API token",
+        "API key",
+        "OAuth 2.0",
+        "Bearer token"
+      ],
+      "status": "provisional",
+      "sources": [
+        "https://developer.monday.com/api-reference/docs/authentication",
+        "https://support.monday.com/hc/en-us/articles/360005144659-Does-monday-com-have-an-API",
+        "https://developer.monday.com/api-reference/docs/integrate-with-monday-mcp",
+        "https://developer.monday.com/apps/docs/choosing-auth",
+        "https://developer.monday.com/api-reference/docs/basics"
+      ],
+      "evidence": [
+        {
+          "value": "API token",
+          "url": "https://developer.monday.com/api-reference/docs/authentication",
+          "excerpt": "on page URL to get its markdown version. The monday.com platform API utilizes personal V2 API tokens to authenticate requests and identify the user making the call. These tokens are unique to each user and have no explicit length. Personal tokens allow you to interact",
+          "published_label": null
+        },
+        {
+          "value": "API key",
+          "url": "https://support.monday.com/hc/en-us/articles/360005144659-Does-monday-com-have-an-API",
+          "excerpt": "ent to api.monday.com/v2. Be sure to use the application/json content type, and pass your API key as an \"Authorization\" parameter in the headers: {\n    \"Content-Type\" : \"application/json\",\n    \"Authorization\" : \"mySuperSecretAPIKey\"\n} The request body is where your q",
+          "published_label": null
+        },
+        {
+          "value": "API token",
+          "url": "https://support.monday.com/hc/en-us/articles/360005144659-Does-monday-com-have-an-API",
+          "excerpt": "r data. You can also test your queries in our GraphQL explorer . Authenticating with your API Token Any request to our API must be accompanied by an API Token to verify who you are. API for admins Each admin on the account has their own API Token, so make sure to keep",
+          "published_label": null
+        },
+        {
+          "value": "OAuth 2.0",
+          "url": "https://developer.monday.com/api-reference/docs/integrate-with-monday-mcp",
+          "excerpt": "tructure for you. Server URL: https://mcp.monday.com/mcp Transport: Streamable HTTP Auth: OAuth 2.0 or Bearer token with a personal API token 🚧 SSE transport is deprecated and not supported. Older guides and configs may still reference https://mcp.monday.com/sse or an",
+          "published_label": null
+        },
+        {
+          "value": "API token",
+          "url": "https://developer.monday.com/api-reference/docs/integrate-with-monday-mcp",
+          "excerpt": "monday.com/mcp Transport: Streamable HTTP Auth: OAuth 2.0 or Bearer token with a personal API token 🚧 SSE transport is deprecated and not supported. Older guides and configs may still reference https://mcp.monday.com/sse or an SSE-based transport. The hosted Platform M",
+          "published_label": null
+        },
+        {
+          "value": "Bearer token",
+          "url": "https://developer.monday.com/api-reference/docs/integrate-with-monday-mcp",
+          "excerpt": "you. Server URL: https://mcp.monday.com/mcp Transport: Streamable HTTP Auth: OAuth 2.0 or Bearer token with a personal API token 🚧 SSE transport is deprecated and not supported. Older guides and configs may still reference https://mcp.monday.com/sse or an SSE-based transp",
+          "published_label": null
+        },
+        {
+          "value": "OAuth 2.0",
+          "url": "https://developer.monday.com/apps/docs/choosing-auth",
+          "excerpt": "Choosing an authentication method For AI agents: the docs index is at https://developer.monday.com/apps/llms.txt. The index for every project on this site is at https://developer.monday.com/llms.txt. Append .md to any documentation page URL to get its markdown version. Introducti",
+          "published_label": null
+        },
+        {
+          "value": "API key",
+          "url": "https://developer.monday.com/apps/docs/choosing-auth",
+          "excerpt": "s Authentication has the following advantages: Your app does not need to store and manage API keys You can host client-side apps fully on monday servers Your users do not need to take additional steps to authorize your app or supply an API key Seamless authentication",
+          "published_label": null
+        },
+        {
+          "value": "API token",
+          "url": "https://developer.monday.com/apps/docs/choosing-auth",
+          "excerpt": "ation. To successfully authenticate with our GraphQL API, every request should include an API token in the request’s “Authorization” header. Generally speaking, there are four ways your app can get an access token to use: Seamless Authentication using monday SDK Seamle",
+          "published_label": null
+        },
+        {
+          "value": "API token",
+          "url": "https://developer.monday.com/api-reference/docs/basics",
+          "excerpt": "s are all able to utilize the monday.com API. Admins and members have access to their own API tokens . Guests cannot access an API key but can utilize API features through other authentication methods, like OAuth or a shortLivedToken. Viewers , users who have been deac",
+          "published_label": null
+        }
+      ],
+      "reason": "Provisional extraction; validate scope and completeness against cited pages."
+    },
+    "credential_gate": {
+      "value": [
+        "self_serve_free",
+        "admin_approval",
+        "self_serve_trial"
+      ],
+      "status": "provisional",
+      "sources": [
+        "https://developer.monday.com/api-reference/docs/authentication",
+        "https://developer.monday.com/api-reference/docs/integrate-with-monday-mcp",
+        "https://developer.monday.com/api-reference/docs/getting-started",
+        "https://developer.monday.com/api-reference/docs/basics"
+      ],
+      "evidence": [
+        {
+          "value": "self_serve_free",
+          "url": "https://developer.monday.com/api-reference/docs/authentication",
+          "excerpt": "ith your platform-level permissions. If you don't have a monday.com account yet, create a free developer account to get an API token and start testing. Token permissions Personal tokens mirror all permission levels set in the monday.com UI, including board , column , item , or acco",
+          "published_label": null
+        },
+        {
+          "value": "admin_approval",
+          "url": "https://developer.monday.com/api-reference/docs/integrate-with-monday-mcp",
+          "excerpt": "//mcp.monday.com/mcp Additional connection A DCR client registers, then the user requests admin approval for the connection and its redirect URIs. See Dynamic connectors . Related resources: Authenticate with an API token Control MCP access with your own OAuth app Make your",
+          "published_label": null
+        },
+        {
+          "value": "self_serve_trial",
+          "url": "https://developer.monday.com/api-reference/docs/getting-started",
+          "excerpt": "rkdown version. Setting up a monday.com account The first step is to sign up and create a trial account . For building and testing apps or API integrations, use a developer account ( sign up ). If you already have a monday.com account, skip to the next step! Enable Develop",
+          "published_label": null
+        },
+        {
+          "value": "self_serve_free",
+          "url": "https://developer.monday.com/api-reference/docs/basics",
+          "excerpt": "For building and testing apps or API integrations without touching production data, use a free developer account . What monday products does the API support? The platform API currently supports the monday work management, dev, sales CRM, and service products. It currently does not",
+          "published_label": null
+        }
+      ],
+      "reason": "Provisional extraction; validate scope and completeness against cited pages."
+    },
+    "api_surface": {
+      "value": "GraphQL, REST; broad documented surface",
+      "status": "provisional",
+      "sources": [
+        "https://support.monday.com/hc/en-us/articles/360005144659-Does-monday-com-have-an-API",
+        "https://developer.monday.com/api-reference/docs/integrate-with-monday-mcp",
+        "https://developer.monday.com/api-reference/docs/getting-started",
+        "https://developer.monday.com/apps/docs/choosing-auth",
+        "https://developer.monday.com/api-reference/docs/basics"
+      ],
+      "evidence": [
+        {
+          "value": [
+            "GraphQL"
+          ],
+          "breadth": "narrow",
+          "url": "https://support.monday.com/hc/en-us/articles/360005144659-Does-monday-com-have-an-API",
+          "excerpt": "Does monday.com have an API? – Support How can we help you? Does monday.com have an API? Connect & automate 4 min read Yes, it does! Our API is built on GraphQL and will give you a ton of flexibility for accessing and changing information in your monday.com account. Tip: For more",
+          "published_label": null
+        },
+        {
+          "value": [
+            "GraphQL"
+          ],
+          "breadth": "broad",
+          "url": "https://developer.monday.com/api-reference/docs/integrate-with-monday-mcp",
+          "excerpt": "Integrate with the monday MCP server For AI agents: the docs index is at https://developer.monday.com/api-reference/llms.txt. The index for every project on this site is at https://developer.monday.com/llms.txt. Append .md to any documentation page URL to get its markdown version",
+          "published_label": null
+        },
+        {
+          "value": [
+            "REST",
+            "GraphQL"
+          ],
+          "breadth": "moderate",
+          "url": "https://developer.monday.com/api-reference/docs/getting-started",
+          "excerpt": "Making your first request For AI agents: the docs index is at https://developer.monday.com/api-reference/llms.txt. The index for every project on this site is at https://developer.monday.com/llms.txt. Append .md to any documentation page URL to get its markdown version. Setting u",
+          "published_label": null
+        },
+        {
+          "value": [
+            "GraphQL"
+          ],
+          "breadth": "moderate",
+          "url": "https://developer.monday.com/apps/docs/choosing-auth",
+          "excerpt": "Choosing an authentication method For AI agents: the docs index is at https://developer.monday.com/apps/llms.txt. The index for every project on this site is at https://developer.monday.com/llms.txt. Append .md to any documentation page URL to get its markdown version. Introducti",
+          "published_label": null
+        },
+        {
+          "value": [
+            "GraphQL"
+          ],
+          "breadth": "moderate",
+          "url": "https://developer.monday.com/api-reference/docs/basics",
+          "excerpt": "The basics For AI agents: the docs index is at https://developer.monday.com/api-reference/llms.txt. The index for every project on this site is at https://developer.monday.com/llms.txt. Append .md to any documentation page URL to get its markdown version. Stop! Before you scroll.",
+          "published_label": null
+        }
+      ],
+      "reason": "Provisional extraction; validate scope and completeness against cited pages."
+    },
+    "official_mcp": {
+      "value": "unknown",
+      "status": "provisional",
+      "sources": [],
+      "evidence": [],
+      "reason": "No sufficiently specific official evidence extracted."
+    },
+    "composio_toolkit": {
+      "value": "listed",
+      "status": "provisional",
+      "sources": [
+        "https://docs.composio.dev/toolkits/monday"
+      ],
+      "evidence": [],
+      "reason": "Catalog match only; not vendor MCP evidence."
+    },
+    "verdict": {
+      "value": "gated_build_candidate",
+      "status": "provisional",
+      "sources": [
+        "https://developer.monday.com/api-reference/docs/authentication",
+        "https://support.monday.com/hc/en-us/articles/360005144659-Does-monday-com-have-an-API",
+        "https://developer.monday.com/api-reference/docs/integrate-with-monday-mcp",
+        "https://developer.monday.com/apps/docs/choosing-auth",
+        "https://developer.monday.com/api-reference/docs/basics",
+        "https://developer.monday.com/api-reference/docs/getting-started"
+      ],
+      "evidence": [],
+      "reason": "Inferred only from extracted auth, API and access evidence; independent review required."
+    }
+  },
+  "validation": [
+    "Automatic extraction is provisional until independently reviewed",
+    "Unknown is not evidence of absence",
+    "Composio evidence cannot establish vendor MCP",
+    "Client-only and negated MCP statements are not vendor-server proof",
+    "API breadth is a text-coverage heuristic, not an endpoint census"
+  ]
+}

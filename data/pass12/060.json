@@ -1,0 +1,204 @@
+{
+  "app": {
+    "number": 60,
+    "name": "Clay",
+    "category": "Data, SEO and Scraping",
+    "hint": "clay.com"
+  },
+  "replayed_at": "2026-11-23T18:45:52.935803+00:00",
+  "source_passes": [
+    "data/pass2/060.json",
+    "data/pass4/060.json"
+  ],
+  "source_searches": [
+    "data/new_search/060.json",
+    "data/pass4_search/060.json"
+  ],
+  "publication_date_note": "Search publication labels are retained exactly; null means no label was available. Relative labels are not exact dates.",
+  "claims": {
+    "auth": {
+      "value": [
+        "API key",
+        "Bearer token"
+      ],
+      "status": "provisional",
+      "sources": [
+        "https://university.clay.com/docs/http-api-with-jwt-authentication-integration-overview",
+        "https://university.clay.com/docs/guide-find-clay-api-key",
+        "https://university.clay.com/docs/plans-and-billing",
+        "https://university.clay.com/docs/http-api-integration-overview",
+        "https://university.clay.com/docs/clay-api-cli",
+        "https://university.clay.com/docs/ip-access-restrictions"
+      ],
+      "evidence": [
+        {
+          "value": "API key",
+          "url": "https://university.clay.com/docs/http-api-with-jwt-authentication-integration-overview",
+          "excerpt": "Account required? Optional Required What the account stores Header key-value pairs (e.g., API keys, permanent bearer tokens) Username, password, and token endpoint URL Token expiry handled? N/A Auto-refreshed every ~55 minutes ‍ Use standard HTTP API when the API acc",
+          "published_label": null
+        },
+        {
+          "value": "Bearer token",
+          "url": "https://university.clay.com/docs/http-api-with-jwt-authentication-integration-overview",
+          "excerpt": "tional Required What the account stores Header key-value pairs (e.g., API keys, permanent bearer tokens) Username, password, and token endpoint URL Token expiry handled? N/A Auto-refreshed every ~55 minutes ‍ Use standard HTTP API when the API accepts static credentials (",
+          "published_label": null
+        },
+        {
+          "value": "API key",
+          "url": "https://university.clay.com/docs/guide-find-clay-api-key",
+          "excerpt": "Find your Clay API key - Clay Docs Skip to main Review your year with Clay on Clayback.clay.com University home page Search University or ask AI. Learn your way. ⌘ K ​ Open workspace Log in Si",
+          "published_label": null
+        },
+        {
+          "value": "API key",
+          "url": "https://university.clay.com/docs/plans-and-billing",
+          "excerpt": "any and person profile, email, phone number, and custom AI enrichments). The more private API keys you use, the fewer data credits you'll spend per record. Table of contents TOC Heading TOC Heading Plan Explore other docs Gen AI Clay MCP in ChatGPT Connect the Clay M",
+          "published_label": null
+        },
+        {
+          "value": "API key",
+          "url": "https://university.clay.com/docs/http-api-integration-overview",
+          "excerpt": "as source. Storing authentication credentials at the workspace level Instead of entering API keys or bearer tokens manually in the Headers field each time, you can save your auth credentials in an HTTP API (Headers) account . Clay encrypts and stores the headers at",
+          "published_label": null
+        },
+        {
+          "value": "Bearer token",
+          "url": "https://university.clay.com/docs/http-api-integration-overview",
+          "excerpt": "Storing authentication credentials at the workspace level Instead of entering API keys or bearer tokens manually in the Headers field each time, you can save your auth credentials in an HTTP API (Headers) account . Clay encrypts and stores the headers at the workspace lev",
+          "published_label": null
+        },
+        {
+          "value": "API key",
+          "url": "https://university.clay.com/docs/clay-api-cli",
+          "excerpt": "Installing Clay Plugin (API & CLI) - Clay Docs Skip to main Review your year with Clay on Clayback.clay.com University home page Search University or ask AI. Learn your way. ⌘ K ​ Open workspace Log in Sign up All docs / Getting started / Installing Clay Plugin (API & CLI) Instal",
+          "published_label": null
+        },
+        {
+          "value": "API key",
+          "url": "https://university.clay.com/docs/ip-access-restrictions",
+          "excerpt": "Clay in a browser, including opening tables and workbooks. API: Requests made with a Clay API key or an authorized connection, including MCP connections from AI agents and the Clay CLI, Clay's command-line tool. When a restriction is on, requests from an address that",
+          "published_label": null
+        }
+      ],
+      "reason": "Provisional extraction; validate scope and completeness against cited pages."
+    },
+    "credential_gate": {
+      "value": [
+        "paid_plan",
+        "self_serve_trial"
+      ],
+      "status": "provisional",
+      "sources": [
+        "https://university.clay.com/docs/plans-and-billing",
+        "https://university.clay.com/docs/clay-api-cli"
+      ],
+      "evidence": [
+        {
+          "value": "paid_plan",
+          "url": "https://university.clay.com/docs/plans-and-billing",
+          "excerpt": "nrichments aren't available during the trial period. To access this feature, upgrade to a paid plan. If your team wants to do a trial, each team member can create their own trial account to explore Clay independently. FAQs How do I track my actions and data credits usa",
+          "published_label": null
+        },
+        {
+          "value": "self_serve_trial",
+          "url": "https://university.clay.com/docs/plans-and-billing",
+          "excerpt": "and click Save Changes to finish updating your billing info. Trials Clay offers a 14-day free trial with 1,000 data credits, giving you access to webhooks, CRM integrations, email sequencers, and HTTP API capabilities. Phone number enrichments aren't available during t",
+          "published_label": null
+        },
+        {
+          "value": "paid_plan",
+          "url": "https://university.clay.com/docs/clay-api-cli",
+          "excerpt": "and Pro — keep a yearly period that resets on January 1 UTC instead. Moving to a current paid plan or to Enterprise switches the workspace to the rolling window. Going over a limit returns an HTTP 402 response that names the limit you hit, and period-limit errors also",
+          "published_label": null
+        }
+      ],
+      "reason": "Provisional extraction; validate scope and completeness against cited pages."
+    },
+    "api_surface": {
+      "value": "HTTP API; broad documented surface",
+      "status": "provisional",
+      "sources": [
+        "https://university.clay.com/docs/http-api-with-jwt-authentication-integration-overview",
+        "https://university.clay.com/docs/plans-and-billing",
+        "https://university.clay.com/docs/http-api-integration-overview"
+      ],
+      "evidence": [
+        {
+          "value": [
+            "HTTP API"
+          ],
+          "breadth": "broad",
+          "url": "https://university.clay.com/docs/http-api-with-jwt-authentication-integration-overview",
+          "excerpt": "HTTP API with JWT authentication - Clay Docs Skip to main Review your year with Clay on Clayback.clay.com University home page Search University or ask AI. Learn your way. ⌘ K ​ Open workspace Log in Sign up All docs / Getting started / HTTP API with JWT authentication HTTP API w",
+          "published_label": null
+        },
+        {
+          "value": [
+            "HTTP API"
+          ],
+          "breadth": "broad",
+          "url": "https://university.clay.com/docs/plans-and-billing",
+          "excerpt": "Plans & billing - Clay Docs Skip to main Review your year with Clay on Clayback.clay.com University home page Search University or ask AI. Learn your way. ⌘ K ​ Open workspace Log in Sign up All docs / Settings & admin / Plans & billing Plans & billing We'll walk through each of ",
+          "published_label": null
+        },
+        {
+          "value": [
+            "HTTP API"
+          ],
+          "breadth": "broad",
+          "url": "https://university.clay.com/docs/http-api-integration-overview",
+          "excerpt": "HTTP API - Clay Docs Skip to main Review your year with Clay on Clayback.clay.com University home page Search University or ask AI. Learn your way. ⌘ K ​ Open workspace Log in Sign up All docs / Getting started / HTTP API HTTP API Facilitate seamless integration and connectivity ",
+          "published_label": null
+        }
+      ],
+      "reason": "Provisional extraction; validate scope and completeness against cited pages."
+    },
+    "official_mcp": {
+      "value": "vendor_server",
+      "status": "provisional",
+      "sources": [
+        "https://university.clay.com/docs/connect-to-clay-mcp"
+      ],
+      "evidence": [
+        {
+          "value": "vendor_server",
+          "url": "https://university.clay.com/docs/connect-to-clay-mcp",
+          "excerpt": "ect your platform to Clay MCP Register your platform as an OAuth client and connect it to Clay's MCP server. Overview Clay exposes a Model Context Protocol (MCP) server that lets an external platform — an AI assistant, IDE, agent host, or partner product — run Clay's find-and-enrich tools and custom functions on behalf of a signed-in Clay user. D",
+          "published_label": null,
+          "context_note": "Vendor-owned server statement; review date and access scope."
+        }
+      ],
+      "reason": "Provisional; check date, ownership and access scope."
+    },
+    "composio_toolkit": {
+      "value": "listed",
+      "status": "provisional",
+      "sources": [
+        "https://docs.composio.dev/toolkits/clay"
+      ],
+      "evidence": [],
+      "reason": "Catalog match only; not vendor MCP evidence."
+    },
+    "verdict": {
+      "value": "gated_build_candidate",
+      "status": "provisional",
+      "sources": [
+        "https://university.clay.com/docs/http-api-with-jwt-authentication-integration-overview",
+        "https://university.clay.com/docs/guide-find-clay-api-key",
+        "https://university.clay.com/docs/plans-and-billing",
+        "https://university.clay.com/docs/http-api-integration-overview",
+        "https://university.clay.com/docs/clay-api-cli",
+        "https://university.clay.com/docs/ip-access-restrictions"
+      ],
+      "evidence": [],
+      "reason": "Inferred only from extracted auth, API and access evidence; independent review required."
+    }
+  },
+  "validation": [
+    "Automatic extraction is provisional until independently reviewed",
+    "Unknown is not evidence of absence",
+    "Composio evidence cannot establish vendor MCP",
+    "Client-only and negated MCP statements are not vendor-server proof",
+    "API breadth is a text-coverage heuristic, not an endpoint census"
+  ]
+}

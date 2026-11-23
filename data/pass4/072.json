@@ -1,0 +1,190 @@
+{
+  "app": {
+    "number": 72,
+    "name": "Airtable",
+    "category": "Productivity and Project Management",
+    "hint": "airtable.com/developers"
+  },
+  "checked_at": "2026-11-23T18:15:23.761952+00:00",
+  "prior_source": "data/pass2/072.json",
+  "search_source": "data/pass4_search/072.json",
+  "new_candidates": [
+    {
+      "url": "https://support.airtable.com/articles/6292134965-getting-started-with-airtable-s-web-api",
+      "title": "Getting started with Airtable's Web API (https://support.airtable.com/articles/6292134965-getting-started-with-airtable-s-web-api)",
+      "published_label": "3 months ago"
+    },
+    {
+      "url": "https://support.airtable.com/articles/7735693959-Managing-API-call-limits-in-Airtable",
+      "title": "Managing API call limits in Airtable (https://support.airtable.com/articles/7735693959-Managing-API-call-limits-in-Airtable)",
+      "published_label": "last month"
+    },
+    {
+      "url": "https://www.airtable.com/guides/scale/using-airtable-api?www=97909",
+      "title": "Using Airtable’s API | Airtable (https://www.airtable.com/guides/scale/using-airtable-api?www=97909)",
+      "published_label": null
+    },
+    {
+      "url": "https://support.airtable.com/articles/6478728818-low-code-integrations-common-troubleshooting",
+      "title": "Low-code integrations - Common troubleshooting (https://support.airtable.com/articles/6478728818-low-code-integrations-common-troubleshooting)",
+      "published_label": "3 months ago"
+    },
+    {
+      "url": "https://support.airtable.com/articles/2111090641-airtable-api-common-troubleshooting",
+      "title": "Airtable API: Common troubleshooting (https://support.airtable.com/articles/2111090641-airtable-api-common-troubleshooting)",
+      "published_label": "3 months ago"
+    },
+    {
+      "url": "https://www.airtable.com/guides/scale/using-airtable-api",
+      "title": "Using Airtable’s API | Airtable (https://www.airtable.com/guides/scale/using-airtable-api)",
+      "published_label": null
+    },
+    {
+      "url": "https://support.airtable.com/articles/7735693959-managing-api-call-limits-in-airtable",
+      "title": "Managing API call limits in Airtable (https://support.airtable.com/articles/7735693959-managing-api-call-limits-in-airtable)",
+      "published_label": "last month"
+    },
+    {
+      "url": "https://support.airtable.com/articles/6811769763-Third-party-integrations-via-OAuth-overview",
+      "title": "Third-party integrations via OAuth overview (https://support.airtable.com/articles/6811769763-Third-party-integrations-via-OAuth-overview)",
+      "published_label": "3 months ago"
+    }
+  ],
+  "selected": [
+    {
+      "url": "https://support.airtable.com/articles/6811769763-Third-party-integrations-via-OAuth-overview",
+      "title": "Third-party integrations via OAuth overview (https://support.airtable.com/articles/6811769763-Third-party-integrations-via-OAuth-overview)",
+      "published_label": "3 months ago"
+    },
+    {
+      "url": "https://support.airtable.com/articles/6292134965-getting-started-with-airtable-s-web-api",
+      "title": "Getting started with Airtable's Web API (https://support.airtable.com/articles/6292134965-getting-started-with-airtable-s-web-api)",
+      "published_label": "3 months ago"
+    }
+  ],
+  "new_pages": [
+    {
+      "url": "https://support.airtable.com/articles/6811769763-Third-party-integrations-via-OAuth-overview",
+      "requested_url": "https://support.airtable.com/articles/6811769763-Third-party-integrations-via-OAuth-overview",
+      "status": 200,
+      "title": "Third-party integrations via OAuth overview (https://support.airtable.com/articles/6811769763-Third-party-integrations-via-OAuth-overview)",
+      "text": "Third-party integrations via OAuth overview | Airtable Help Center Contact support Sign up for free Third-party integrations via OAuth overview Last updated 3 months ago Plan availability All plan types Permissions Owner or Creator permissions are required to perform the actions outlined in this article Platform(s) Web/Browser, Mac app, and Windows app If you are a developer looking to build an OAuth integration with Airtable and this is your first time testing OAuth functionality we recommend reading through the OAuth reference and utilizing the example setup repo . Understanding third-party services and OAuth OAuth integrations allow users to grant API access to their Airtable resources with third-party services. Third-party integration calls are initiated by the third-party requesting access to your Airtable resources. In addition, with OAuth Integrations, users can control what resources third parties can access or revoke access at any time. Granting access to Airtable workspaces & bases When authorizing a third-party request, you can view the following: The third-party requesting access to your data. A list of actions the third party is requesting to perform. A list of workspaces and bases that an integration can access if or when shared. To grant access to a third party: Click Add a base . Select the base(s) or workspace(s) from the list of available options. Chose the level of access you're granting: For one or more specific workspaces: All current and future bases in this workspace. One or more individual bases. All current and future bases in all current and future workspaces. Enterprise admins can also grant access to all of their enterprise's bases and workspaces by selecting Add an enterprise . Click Authorize . After authorizing access, you will be redirected back to the third-party service’s website. Access to workspaces and bases can be updated at any time. See the Managing integrations section below for instructions on how to update access for an integration. Managing integrations Users can have multiple authorization grants per third-party service. Airtable offers users and admins access to a complete list of authorized OAuth integrations , with the ability to make changes and updates to past authorizations. General user/owner access Visit your Airtable homepage . Click Account in the top right corner and select Integrations . Choose Third-party integrations . Click the > arrow under Third-party integrations . After clicking the > arrow , users can manage, revoke access, and remove integrations. And from the same dialogue screen, users can also grant access by clicking Add a base and Save changes . Access for admins Admins can view and revoke OAuth authorization grants for users and service accounts from their enterprise Admin Panel. To manage access for users and service accounts: Click a user’s name from the Users page to access the User Detail page. Click the Third-party integrations tab. Click … on the right side of an integration to manage that integration. Revoke access is available for all users internal to your enterprise. Edit permissions is available for service accounts only. By clicking Edit permissions , admins can access an account's integration details. Admins can also grant access by clicking Add a base and Save changes . The Admin Panel offers the ability to manage access to third-party integrations across organizations using the API access for third-party integrations in the Enterprise Admin Panel. Check out this article for more information. User Detail pages are also accessible by clicking the Service Accounts tab. Understanding authorization scope and impact Each OAuth authorization you create represents a distinct connection between a third-party service and your Airtable resources. It's important to understand how these authorizations work: Authorization tokens and base access - When you authorize a third-party integration, you're creating an authorization token that grants access to specific bases or workspaces. A single authorization token can provide access to: One or more individual bases All bases in one or more workspaces All bases across all workspaces Impact of revoking an authorization When you revoke an authorization, it affects all bases and workspaces connected through that authorization token. The revocation doesn't apply to just one base—it removes the third-party's access to everything granted through that specific authorization. If you need to remove access for only certain bases while keeping the integration active for others, modify the base access settings within the authorization details rather than revoking the entire authorization. \"No longer a collaborator\" message When reviewing your authorized integrations, you may see bases listed where you're \"no longer a collaborator.\" This occurs when: You originally authorized an integration and granted it access to specific bases You were subsequently removed as a collaborator from those bases If you’re removed as a collaborator from previously authorized bases, the token won’t have access to those bases while that access is missing. If you’re re-added, token access can automatically resume for those resources (subject to token scope). Revoking still removes access for everything tied to that token. Managing multiple authorizations Users can create multiple authorization grants for the same third-party service. This can be useful when you want to: Separate access for different projects or teams Grant different permission levels to the same service for different bases Maintain distinct authorizations for organizational purposes However, each authorization counts toward the 20-per-user-per-integration limit. To stay within this limit, regularly audit your authorizations and revoke any that are no longer needed. Limitations The OAuth limit is 20 for a single user. In other words, a single user can authorize the same integration no more than 20 times. In these instances, you may see this warning message: You have reached the maximum access authorizations for this integration. You cannot authorize this integration again until you revoke at least one of the authorizations If a user hits this error, they will need to revoke at least one authorization before being able to authorize a new one. You can do this by clicking your account avatar > Integrations > Third-party integrations > Clicking on one integration to revoke > Revoke access . After hitting your third-party limit of 20 authorizations (Zapier, etc.), you are notified your limit has been reached. What Airtable counts are distinct authorizations from an integration for “active” users. Conversely, there is no real limit on how many integrations you can authorize. FAQs Can I programmatically revoke an OAuth refresh token via the API? No. Airtable does not expose a dedicated API endpoint for programmatically revoking OAuth refresh tokens. Token revocation is handled through these supported methods: Manual user revocation — a user can revoke an integration's access from their account avatar → Integrations → Third-party integrations → select the integration → Revoke access. Enterprise admin revocation — enterprise admins can revoke a user's or service account's third-party integration access from the admin panel. Automatic invalidation — refresh tokens are automatically invalidated after 60 days of inactivity. What automatically causes an OAuth refresh token to be revoked or invalidated? Beyond manual and admin revocation, Airtable invalidates a refresh token after 60 days of inactivity, and its OAuth safety rules will revoke a token if it's reused after rotation, retried after the duplicate-refresh grace period, or sent with incorrect client credentials. Once revoked, the user must re-authorize the integration. For details, see Troubleshooting disconnected OAuth integrations . Related Articles Options for integrating with Airtable Using Zapier to integrate Airtable with other services Visualizing records from Airtable in Tableau Integrating HubSpot with Airtable Visualizing Airtable records in Microsoft Power BI & Power Query",
+      "published_label": "3 months ago"
+    },
+    {
+      "url": "https://support.airtable.com/articles/6292134965-getting-started-with-airtable-s-web-api",
+      "requested_url": "https://support.airtable.com/articles/6292134965-getting-started-with-airtable-s-web-api",
+      "status": 200,
+      "title": "Getting started with Airtable's Web API (https://support.airtable.com/articles/6292134965-getting-started-with-airtable-s-web-api)",
+      "text": "Getting started with Airtable's Web API | Airtable Help Center Contact support Sign up for free Getting started with Airtable's Web API Last updated 3 months ago Plan availability All plan types with varying call limitations Permissions Generally, workspace Owner or base Creator permissions are useful for working with Airtable's Web API. Enterprise Scale and Business customers will also find that having admin permissions is necessary to access certain information via API calls. Platform(s) Web/Browser, Mac app, and Windows app API record limits You can access the documentation for the Web API here , or directly from your base by clicking on the Help button in the upper right-hand corner while you are logged in on a laptop or desktop. This will bring up a list of additional resources. You will find a link to the API documentation at the bottom of that list. When you list records with Airtable's API, you won't necessarily get all of them at once. Instead, you will receive them in pages of up to 100 records at a time. As soon as a table has more than 100 records, you will need to make multiple requests, one per page. If your table has 501 records, the results will be spread across 6 pages, and therefore 6 HTTP requests are needed to fully capture all of that table's records. Your first request might look something like this with your base's app id appxxx and the table name : https://api.airtable.com/v0/appxxx/TableName You will get the first page of records (under the \"records\" key), but if there is another page, you'll also get an \"offset\" that would look something like this: \"offset\": \"itrSJ1l4jlPyxEG6c/recxxx\" To fetch the next page (in other words, the next 100 records), you'll include that offset as a query parameter. For example: https://api.airtable.com/v0/appxxx/TableName?offset=itrSJ1l4jlPyxEG6c%2Frecxxx This will give you the records from the next page. If there's another page, you'll repeat the process—grab the offset and put it in the offset query parameter. When the response doesn't include an offset anymore, you know you've reached the last page and can stop. You can use the pageSize parameter to change the number from 100 to a smaller number like 50, but 100 is the maximum and most users do not change this. FAQs What can I do with the Airtable Web API? Consult the Web API Scopes documentation where you'll find a list of the various Web API endpoints and how each one functions. How do I get started with Airtable’s Web API? We recommend that you start with the Web API introduction here . Is there a Web API rate limit? Yes, the Web API has a rate limit of 5 requests per second, per base. This limit is the same across all pricing tiers and increased rate limits are not currently available. For more information, see the \"Rate Limits\" section of the API documentation . Are there API call limits? Yes. These vary by plan type: Free plan - 1000 calls per workspace per month Team plan - 100,000 calls per workspace per month Business and Enterprise plans - Unlimited API calls (Still subject to other limits such as the rate limits discussed above) When I fetch records with Airtable’s Web API, some of my fields are missing. Why is that? Returned records do not include any fields with \"empty\" values, e.g. \"\" , [] , or false . If you need to get the names of all fields in your table, you can create one record with all fields populated, and make a request to fetch that record. Can I get information about my base, such as the base schema, with the Web API? Yes. The base schema scope is covered here . Can I create a new base using the Web API? Yes. The \"Create base\" endpoint (POST /v0/meta/bases) is available on all plans — Free, Team, Business, and Enterprise Scale— when you authenticate with a Personal Access Token (PAT) or OAuth token. You can use it to create a new base in any workspace where you have the appropriate permissions. For more information about the Web API and authentication methods, see the Airtable Web API documentation . Legacy API key caveat: If you're still using the deprecated API key authentication method, the Create base endpoint is restricted to Enterprise accounts with the Enterprise API feature enabled. Airtable phased out API key auth in favor of PATs and OAuth, so migrating to one of those methods will remove this restriction. Why does “GET /v0/meta/bases” returns an empty list {\"bases\":[]} when my PAT has schema.bases:read? A correct scope with an empty result usually means the token can't see any bases, not that your request is malformed. For enterprise users, the most common cause is an org-level setting — \"Block API access to organization-owned bases and workspaces\" in the admin panel — which prevents your PAT from accessing organization-owned bases until you're on the allowlist. Importantly, this block returns an empty list rather than an error, which can look like a scope or query problem. A telltale sign: when editing your token's access, if the only option is \"All Resources\" and you can't add an individual base, your org's API restriction is likely in effect. To resolve it, ask an internal Airtable admin to add you (or your service account) to the allowlist for that setting (see Settings – Airtable admin panel). Also confirm the bases you expect to see are ones your user account can actually access, since the token can only return those Is there an endpoint to read a single table's schema? The only schema endpoint is GET /v0/meta/bases/{baseId}/tables, which returns the schema for every table in the base (requiring the schema.bases:read scope). There is no dedicated \"get one table's schema\" GET endpoint. On a large base this response can be big and slow, so to avoid timeouts: Cache the schema instead of fetching it on every run. Table schemas change rarely compared to data. Fetch the base schema once, cache it, and refetch only on a schedule or when a write actually fails due to a schema mismatch — this removes the per-run cost entirely. Parse out the one table you need from the response client-side. You still download the whole-base schema, but combined with caching the frequency is low. Handle the request robustly: set generous timeouts and use retry with backoff, and stay within the 5 requests/second per-base limit. If reading a single table's schema cheaply is important to your workflow, let support know so it can be added to the feature request for a per-table schema endpoint. Related Articles Airtable Web API - Using filterByFormula or sort parameters Service accounts overview Airtable API: Common troubleshooting Managing API call limits in Airtable Airtable API Deprecation Guidelines",
+      "published_label": "3 months ago"
+    }
+  ],
+  "claims": {
+    "auth": {
+      "value": [
+        "API key"
+      ],
+      "sources": [
+        "https://support.airtable.com/articles/9934989703-creating-personal-access-tokens",
+        "https://support.airtable.com/articles/9934989703-Creating-personal-access-tokens"
+      ],
+      "evidence": [
+        {
+          "value": "API key",
+          "url": "https://support.airtable.com/articles/9934989703-creating-personal-access-tokens",
+          "excerpt": "about configuring your token's access, refer to the personal access tokens guide . How do I find my API key? On Jan 18, 2023, we began the deprecating user API keys, completing the deprecation process on Feb 1, 2024, meaning: API Keys can no longer access the Airtable API. Webhooks crea",
+          "published_label": null
+        },
+        {
+          "value": "API key",
+          "url": "https://support.airtable.com/articles/9934989703-Creating-personal-access-tokens",
+          "excerpt": "about configuring your token's access, refer to the personal access tokens guide . How do I find my API key? On Jan 18, 2023, we began the deprecating user API keys, completing the deprecation process on Feb 1, 2024, meaning: API Keys can no longer access the Airtable API. Webhooks crea",
+          "published_label": null
+        }
+      ],
+      "reason": "Provisional extraction: validate scope and completeness against the cited page."
+    },
+    "credential_gate": {
+      "value": "unknown",
+      "sources": [],
+      "evidence": [],
+      "reason": "No sufficiently specific positive evidence extracted; review targeted search results."
+    },
+    "api_surface": {
+      "value": [
+        "REST"
+      ],
+      "sources": [
+        "https://support.airtable.com/articles/2111090641-Airtable-API%3A-Common-troubleshooting",
+        "https://www.airtable.com/platform/mcp"
+      ],
+      "evidence": [
+        {
+          "value": "REST",
+          "url": "https://support.airtable.com/articles/2111090641-Airtable-API%3A-Common-troubleshooting",
+          "excerpt": "26, Viewer (Restricted) users can't create, update, or delete records through the API—this includes REST API calls, personal access tokens, OAuth apps, and MCP connectors (such as Airtable for Claude). Read requests and comments still work normally. Troubleshooting steps - Check the lice",
+          "published_label": null
+        },
+        {
+          "value": "REST",
+          "url": "https://www.airtable.com/platform/mcp",
+          "excerpt": "nit, the same way they block API access. What are the rate limits? MCP runs through the same public REST API, so the standard limits apply: 5 requests per second per base and 50 requests per second per token. Records an agent creates count against your base's normal record limits.",
+          "published_label": null
+        }
+      ],
+      "reason": "Provisional extraction: validate scope and completeness against the cited page."
+    },
+    "official_mcp": {
+      "value": "unknown",
+      "sources": [
+        "https://support.airtable.com/articles/9897799762-using-the-airtable-mcp-server",
+        "https://support.airtable.com/articles/9897799762-Using-the-Airtable-MCP-server",
+        "https://www.airtable.com/platform/mcp"
+      ],
+      "evidence": [
+        {
+          "value": "no per source; date and scope need review",
+          "url": "https://support.airtable.com/articles/9897799762-using-the-airtable-mcp-server",
+          "excerpt": "Limitations and dependencies \" above. What happens if I try to update a field I don't have permission to modify? The MCP server will return an error, just as the Airtable API would. Your AI assistant should communicate this limitation to you. Are there additional cos",
+          "published_label": null,
+          "context_warning": "Explicit negation; do not infer a current universal absence."
+        },
+        {
+          "value": "no per source; date and scope need review",
+          "url": "https://support.airtable.com/articles/9897799762-Using-the-Airtable-MCP-server",
+          "excerpt": "Limitations and dependencies \" above. What happens if I try to update a field I don't have permission to modify? The MCP server will return an error, just as the Airtable API would. Your AI assistant should communicate this limitation to you. Are there additional cos",
+          "published_label": null,
+          "context_warning": "Explicit negation; do not infer a current universal absence."
+        },
+        {
+          "value": "yes (provisional)",
+          "url": "https://www.airtable.com/platform/mcp",
+          "excerpt": "ake updates – no base access needed You have questions? We have answers What is Airtable's MCP server? A hosted service at mcp.airtable.com/mcp that lets any MCP-compatible AI client read and act on live Airtable data and structure. Your agent can query records",
+          "published_label": null,
+          "context_warning": "Review vendor ownership, dates, and scope."
+        }
+      ],
+      "reason": "Conflicting positive and negative sources require dated review."
+    },
+    "composio_toolkit": {
+      "value": "listed",
+      "sources": [
+        "https://docs.composio.dev/toolkits/airtable"
+      ],
+      "evidence": [],
+      "reason": "Catalog match; scope needs review."
+    },
+    "verdict": {
+      "value": "unknown",
+      "sources": [],
+      "evidence": [],
+      "reason": "A supported access path, authentication method and API surface were not all extracted."
+    }
+  },
+  "validation": [
+    "All claims are provisional",
+    "No vendor MCP inference from Composio catalog",
+    "Negated MCP or client-only source is not counted as vendor-server proof"
+  ]
+}

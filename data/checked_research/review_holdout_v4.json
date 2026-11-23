@@ -1,0 +1,952 @@
+{
+  "sample": "seeded random holdout selected after pass12 froze",
+  "records": [
+    {
+      "app": "Discord",
+      "category": "Communications and Messaging",
+      "field": "auth",
+      "pass12_answer": [
+        "API key"
+      ],
+      "pass12_sources": [
+        "https://support-dev.discord.com/hc/en-us/articles/8562894815383-Discord-Developer-Terms-of-Service",
+        "https://support-dev.discord.com/hc/en-us/articles/25280523748759-2022-Discord-Developer-Terms-of-Service"
+      ],
+      "rating": "partial",
+      "review_note": "The current API reference names bot tokens and OAuth2 bearer tokens; Basic client ID/secret authentication is restricted to OAuth2 token endpoints. 'API key' is only a generic umbrella and omits the actual mechanisms.",
+      "independent_sources": [
+        "https://docs.discord.com/developers/reference"
+      ],
+      "correction": "Bot token and OAuth 2.0 bearer token; Basic authentication with client ID/secret applies only to OAuth2 token endpoints."
+    },
+    {
+      "app": "Discord",
+      "category": "Communications and Messaging",
+      "field": "credential_gate",
+      "pass12_answer": [
+        "admin_approval",
+        "partner_or_sales"
+      ],
+      "pass12_sources": [
+        "https://support-dev.discord.com/hc/en-us/articles/8563934450327-Discord-Developer-Policy",
+        "https://support-dev.discord.com/hc/en-us/articles/8562894815383-Discord-Developer-Terms-of-Service",
+        "https://support-dev.discord.com/hc/en-us/articles/25280499088279-2022-Discord-Developer-Policy",
+        "https://support-dev.discord.com/hc/en-us/articles/25280523748759-2022-Discord-Developer-Terms-of-Service"
+      ],
+      "rating": "partial",
+      "review_note": "Developer-portal setup is self-serve for ordinary apps. Verification above 100 guilds, privileged-intent review above 10,000 unique users, and certain partner-only scopes are conditional gates, not requirements for every integration.",
+      "independent_sources": [
+        "https://docs.discord.com/developers/events/gateway#privileged-intents"
+      ],
+      "correction": "mixed: self-serve normal API access, with conditional app verification, privileged-intent approval, guild authorization, and partner-only scopes."
+    },
+    {
+      "app": "Discord",
+      "category": "Communications and Messaging",
+      "field": "api_surface",
+      "pass12_answer": "unknown",
+      "pass12_sources": [],
+      "rating": "abstained",
+      "review_note": "Pass-12 abstained. The official reference documents a broad REST API at discord.com/api plus a separate Gateway WebSocket API for real-time events.",
+      "independent_sources": [
+        "https://docs.discord.com/developers/reference"
+      ],
+      "correction": "REST; broad documented surface, plus Gateway WebSocket for real-time events."
+    },
+    {
+      "app": "Discord",
+      "category": "Communications and Messaging",
+      "field": "official_mcp",
+      "pass12_answer": "unknown",
+      "pass12_sources": [],
+      "rating": "abstained",
+      "review_note": "Pass-12 abstained. Discord's 2026-03-09 change log announces an MCP server for its documentation, but the reviewed vendor sources do not establish an official Discord product-data MCP server.",
+      "independent_sources": [
+        "https://docs.discord.com/developers/change-log"
+      ],
+      "correction": "no_vendor_server_documented for Discord product data; a documentation-only MCP server is available at https://docs.discord.com/mcp."
+    },
+    {
+      "app": "Discord",
+      "category": "Communications and Messaging",
+      "field": "composio_toolkit",
+      "pass12_answer": "listed",
+      "pass12_sources": [
+        "https://docs.composio.dev/toolkits/discord"
+      ],
+      "rating": "correct",
+      "review_note": "The official Composio catalog lists Discord as slug DISCORD with OAuth2, 28 tools and 1 trigger, version 20261116_00.",
+      "independent_sources": [
+        "https://docs.composio.dev/toolkits/discord"
+      ],
+      "correction": "listed."
+    },
+    {
+      "app": "Discord",
+      "category": "Communications and Messaging",
+      "field": "verdict",
+      "pass12_answer": "unknown",
+      "pass12_sources": [],
+      "rating": "abstained",
+      "review_note": "Pass-12 abstained. Self-serve app creation, documented REST/Gateway surfaces, and conditional rather than universal approvals support a build candidate.",
+      "independent_sources": [
+        "https://docs.discord.com/developers/reference",
+        "https://docs.discord.com/developers/events/gateway#privileged-intents"
+      ],
+      "correction": "documented_build_candidate."
+    },
+    {
+      "app": "higgsfield",
+      "category": "AI, Research and Media-native",
+      "field": "auth",
+      "pass12_answer": [
+        "API key"
+      ],
+      "pass12_sources": [
+        "https://higgsfield.ai/creator-hub/help-center/integrations/what-is-the-higgsfield-api",
+        "https://higgsfield.ai/creator-hub/help-center/integrations/what-is-higgsfield-mcp?fpr=lax-8e2251",
+        "https://higgsfield.ai/creator-hub/help-center/integrations/what-is-the-higgsfield-api?fpr=adtestbench",
+        "https://higgsfield.ai/blog/higgsfield-api?trk=article-ssr-frontend-pulse_little-text-block"
+      ],
+      "rating": "partial",
+      "review_note": "REST uses an API key ID and secret in an Authorization: Key header, while the hosted MCP connector uses OAuth and explicitly does not use an API key. The answer is correct only for REST and incomplete at app level.",
+      "independent_sources": [
+        "https://higgsfield.ai/creator-hub/help-center/integrations/what-is-the-higgsfield-api",
+        "https://docs.higgsfield.ai/docs",
+        "https://higgsfield.ai/creator-hub/help-center/integrations/what-is-higgsfield-mcp"
+      ],
+      "correction": "API key ID/secret for REST and OAuth 2.0 for the hosted MCP connector."
+    },
+    {
+      "app": "higgsfield",
+      "category": "AI, Research and Media-native",
+      "field": "credential_gate",
+      "pass12_answer": "unknown",
+      "pass12_sources": [],
+      "rating": "abstained",
+      "review_note": "Pass-12 abstained. REST requires a separate API account and prepaid USD balance with a $5 minimum top-up, but no website subscription; MCP requires an existing account, plan credits, and an active paid subscription.",
+      "independent_sources": [
+        "https://higgsfield.ai/creator-hub/help-center/integrations/what-is-the-higgsfield-api",
+        "https://higgsfield.ai/creator-hub/help-center/integrations/what-is-higgsfield-mcp"
+      ],
+      "correction": "mixed: self-serve REST account with prepaid usage balance; paid-plan and credits gate for MCP."
+    },
+    {
+      "app": "higgsfield",
+      "category": "AI, Research and Media-native",
+      "field": "api_surface",
+      "pass12_answer": "REST; broad documented surface",
+      "pass12_sources": [
+        "https://higgsfield.ai/creator-hub/help-center/integrations/what-is-the-higgsfield-api",
+        "https://higgsfield.ai/creator-hub/help-center/integrations/what-is-the-higgsfield-api?fpr=adtestbench",
+        "https://higgsfield.ai/blog/higgsfield-api?trk=article-ssr-frontend-pulse_little-text-block"
+      ],
+      "rating": "correct",
+      "review_note": "Official documentation describes REST at api.higgsfield.ai and one key for 50+ image/video models, with generation, reference, status, and style operations. The broad documented surface is supported.",
+      "independent_sources": [
+        "https://higgsfield.ai/creator-hub/help-center/integrations/what-is-the-higgsfield-api",
+        "https://docs.higgsfield.ai/docs"
+      ],
+      "correction": "REST; broad documented surface."
+    },
+    {
+      "app": "higgsfield",
+      "category": "AI, Research and Media-native",
+      "field": "official_mcp",
+      "pass12_answer": "unknown",
+      "pass12_sources": [],
+      "rating": "abstained",
+      "review_note": "Pass-12 abstained. The official MCP page documents a hosted connector at https://mcp.higgsfield.ai/mcp using OAuth, establishing a vendor server.",
+      "independent_sources": [
+        "https://higgsfield.ai/creator-hub/help-center/integrations/what-is-higgsfield-mcp"
+      ],
+      "correction": "vendor_server."
+    },
+    {
+      "app": "higgsfield",
+      "category": "AI, Research and Media-native",
+      "field": "composio_toolkit",
+      "pass12_answer": "listed",
+      "pass12_sources": [
+        "https://docs.composio.dev/toolkits/higgsfield"
+      ],
+      "rating": "correct",
+      "review_note": "The official Composio catalog lists Higgsfield as slug HIGGSFIELD with API_KEY authentication and 14 tools, version 20261111_00.",
+      "independent_sources": [
+        "https://docs.composio.dev/toolkits/higgsfield"
+      ],
+      "correction": "listed."
+    },
+    {
+      "app": "higgsfield",
+      "category": "AI, Research and Media-native",
+      "field": "verdict",
+      "pass12_answer": "unknown",
+      "pass12_sources": [],
+      "rating": "abstained",
+      "review_note": "Pass-12 abstained. A broad REST API and vendor MCP exist, but usable access requires a prepaid REST balance or a paid MCP plan and credits.",
+      "independent_sources": [
+        "https://higgsfield.ai/creator-hub/help-center/integrations/what-is-the-higgsfield-api",
+        "https://higgsfield.ai/creator-hub/help-center/integrations/what-is-higgsfield-mcp"
+      ],
+      "correction": "gated_build_candidate."
+    },
+    {
+      "app": "Salesforce",
+      "category": "CRM and Sales",
+      "field": "auth",
+      "pass12_answer": "unknown",
+      "pass12_sources": [],
+      "rating": "abstained",
+      "review_note": "Pass-12 abstained. Official Salesforce OAuth documentation supports OAuth 2.0 for REST integrations, with access scoped to the connected user and app. Citation updated from the retired OAuth overview route to the current official OAuth and Connected Apps guide.",
+      "independent_sources": [
+        "https://developer.salesforce.com/docs/platform/api-rest/guide/intro-oauth-and-connected-apps.html"
+      ],
+      "correction": "OAuth 2.0."
+    },
+    {
+      "app": "Salesforce",
+      "category": "CRM and Sales",
+      "field": "credential_gate",
+      "pass12_answer": "unknown",
+      "pass12_sources": [],
+      "rating": "abstained",
+      "review_note": "Pass-12 abstained. Salesforce offers free Developer Edition and Trailhead Playground access for development; production-org connected-app or external-client-app installation may require administrator approval. Citation updated from the intermittently empty signup form to the official Developer Edition quickstart.",
+      "independent_sources": [
+        "https://developer.salesforce.com/docs/platform/connect-rest-api/guide/quickstart_dev_org.html",
+        "https://trailhead.salesforce.com/content/learn/modules/api_basics/api_basics_rest"
+      ],
+      "correction": "self_serve_free for development; administrator approval may apply to production-org app installation."
+    },
+    {
+      "app": "Salesforce",
+      "category": "CRM and Sales",
+      "field": "api_surface",
+      "pass12_answer": "unknown",
+      "pass12_sources": [],
+      "rating": "abstained",
+      "review_note": "Pass-12 abstained. Official REST documentation covers metadata, record CRUD, queries/search, and SOQL with JSON/XML, supporting a broad documented API surface.",
+      "independent_sources": [
+        "https://trailhead.salesforce.com/content/learn/modules/api_basics/api_basics_rest"
+      ],
+      "correction": "REST; broad documented surface, with additional SOAP, Bulk, and GraphQL APIs."
+    },
+    {
+      "app": "Salesforce",
+      "category": "CRM and Sales",
+      "field": "official_mcp",
+      "pass12_answer": "unknown",
+      "pass12_sources": [],
+      "rating": "abstained",
+      "review_note": "Pass-12 abstained. Salesforce's 2026-04-29 hosted-MCP general-availability announcement and DX MCP documentation establish vendor servers; Agentforce acting as an MCP client is not the basis for this correction.",
+      "independent_sources": [
+        "https://developer.salesforce.com/blogs/2026/04/salesforce-hosted-mcp-servers-are-now-generally-available",
+        "https://developer.salesforce.com/docs/platform/sfdx-dev/guide/sfdx-dev-mcp.html"
+      ],
+      "correction": "vendor_server: Salesforce-hosted MCP servers and Salesforce DX MCP, with tool scope varying by server."
+    },
+    {
+      "app": "Salesforce",
+      "category": "CRM and Sales",
+      "field": "composio_toolkit",
+      "pass12_answer": "listed",
+      "pass12_sources": [
+        "https://docs.composio.dev/toolkits/salesforce"
+      ],
+      "rating": "correct",
+      "review_note": "The official Composio catalog lists Salesforce as slug SALESFORCE with OAuth2 and S2S OAuth2, 595 tools and 7 triggers, version 20261119_00.",
+      "independent_sources": [
+        "https://docs.composio.dev/toolkits/salesforce"
+      ],
+      "correction": "listed."
+    },
+    {
+      "app": "Salesforce",
+      "category": "CRM and Sales",
+      "field": "verdict",
+      "pass12_answer": "unknown",
+      "pass12_sources": [],
+      "rating": "abstained",
+      "review_note": "Pass-12 abstained. OAuth, free developer access, and broad APIs support direct building; production app approval is org-specific rather than a universal partner gate. Citation updated from the retired OAuth overview route to the current official OAuth and Connected Apps guide. Citation updated from the intermittently empty signup form to the official Developer Edition quickstart.",
+      "independent_sources": [
+        "https://developer.salesforce.com/docs/platform/api-rest/guide/intro-oauth-and-connected-apps.html",
+        "https://developer.salesforce.com/docs/platform/connect-rest-api/guide/quickstart_dev_org.html",
+        "https://trailhead.salesforce.com/content/learn/modules/api_basics/api_basics_rest"
+      ],
+      "correction": "documented_build_candidate."
+    },
+    {
+      "app": "Zoho CRM",
+      "category": "CRM and Sales",
+      "field": "auth",
+      "pass12_answer": [
+        "OAuth 2.0",
+        "Bearer token"
+      ],
+      "pass12_sources": [
+        "https://www.zoho.com/crm/developer/docs/api/v8/access-refresh.html",
+        "https://www.zoho.com/crm/developer/docs/api/graphql/graphql-authorization.html"
+      ],
+      "rating": "correct",
+      "review_note": "OAuth 2.0 issues scoped access tokens that are sent as Bearer tokens. 'OAuth 2.0' and 'Bearer token' describe the authorization flow and header form rather than unrelated credentials.",
+      "independent_sources": [
+        "https://www.zoho.com/crm/developer/docs/api/v8/oauth-overview.html",
+        "https://www.zoho.com/crm/developer/docs/api/v8/access-refresh.html",
+        "https://www.zoho.com/crm/developer/docs/api/graphql/graphql-authorization.html"
+      ],
+      "correction": "OAuth 2.0 with Bearer access tokens; Bearer is the OAuth access-token transport."
+    },
+    {
+      "app": "Zoho CRM",
+      "category": "CRM and Sales",
+      "field": "credential_gate",
+      "pass12_answer": "unknown",
+      "pass12_sources": [],
+      "rating": "abstained",
+      "review_note": "Pass-12 abstained. Zoho CRM Free Edition is free forever for up to three users and explicitly supports API integrations; OAuth clients can be registered through the Zoho Developer Console.",
+      "independent_sources": [
+        "https://www.zoho.com/crm/zohocrm-pricing-free.html",
+        "https://www.zoho.com/crm/developer/docs/api/v8/register-client.html"
+      ],
+      "correction": "self_serve_free."
+    },
+    {
+      "app": "Zoho CRM",
+      "category": "CRM and Sales",
+      "field": "api_surface",
+      "pass12_answer": "REST, GraphQL; narrow documented surface",
+      "pass12_sources": [
+        "https://www.zoho.com/crm/developer/docs/api/graphql/graphql-authorization.html",
+        "https://www.zoho.com/crm/developer/docs/api/graphql/getting-started.html"
+      ],
+      "rating": "partial",
+      "review_note": "REST and GraphQL are supported, but 'narrow' is contradicted by the documented Metadata, Core CRUD, Composite, Bulk, Notification, and Query APIs.",
+      "independent_sources": [
+        "https://www.zoho.com/crm/developer/docs/api/v8/",
+        "https://www.zoho.com/crm/developer/docs/api/graphql/getting-started.html"
+      ],
+      "correction": "REST, GraphQL; broad documented surface."
+    },
+    {
+      "app": "Zoho CRM",
+      "category": "CRM and Sales",
+      "field": "official_mcp",
+      "pass12_answer": "unknown",
+      "pass12_sources": [],
+      "rating": "abstained",
+      "review_note": "Pass-12 abstained. Zoho documents four pre-built CRM MCP servers for Data Insights, Data Operations, Module Customization, and Workflow & Process Automation, using OAuth and CRM user permissions.",
+      "independent_sources": [
+        "https://www.zoho.com/crm/developer/docs/mcp/overview.html"
+      ],
+      "correction": "vendor_server."
+    },
+    {
+      "app": "Zoho CRM",
+      "category": "CRM and Sales",
+      "field": "composio_toolkit",
+      "pass12_answer": "unknown",
+      "pass12_sources": [],
+      "rating": "abstained",
+      "review_note": "Pass-12 abstained. The official Composio Zoho catalog page explicitly represents Zoho CRM under slug ZOHO with OAuth2 and 115 tools, version 20261119_00.",
+      "independent_sources": [
+        "https://docs.composio.dev/toolkits/zoho"
+      ],
+      "correction": "listed."
+    },
+    {
+      "app": "Zoho CRM",
+      "category": "CRM and Sales",
+      "field": "verdict",
+      "pass12_answer": "unknown",
+      "pass12_sources": [],
+      "rating": "abstained",
+      "review_note": "Pass-12 abstained. OAuth, a free tier, and broad REST/GraphQL APIs support direct integration without partner outreach.",
+      "independent_sources": [
+        "https://www.zoho.com/crm/developer/docs/api/v8/oauth-overview.html",
+        "https://www.zoho.com/crm/zohocrm-pricing-free.html",
+        "https://www.zoho.com/crm/developer/docs/api/v8/"
+      ],
+      "correction": "documented_build_candidate."
+    },
+    {
+      "app": "YouTube Transcript",
+      "category": "AI, Research and Media-native",
+      "field": "auth",
+      "pass12_answer": [
+        "OAuth 2.0",
+        "API key",
+        "Bearer token"
+      ],
+      "pass12_sources": [
+        "https://transcriptapi.com/docs/mcp/",
+        "https://transcriptapi.com/docs/getting-started/javascript/",
+        "https://transcriptapi.com/docs/api/"
+      ],
+      "rating": "partial",
+      "review_note": "REST authenticates with an API key in a Bearer header; the hosted MCP server additionally supports OAuth 2.1. API key and Bearer token are not separate mechanisms, and the OAuth version and MCP-specific scope were omitted.",
+      "independent_sources": [
+        "https://transcriptapi.com/docs/api/",
+        "https://transcriptapi.com/docs/mcp/"
+      ],
+      "correction": "API key as Bearer token for REST and other MCP clients; OAuth 2.1 for supported MCP clients."
+    },
+    {
+      "app": "YouTube Transcript",
+      "category": "AI, Research and Media-native",
+      "field": "credential_gate",
+      "pass12_answer": "unknown",
+      "pass12_sources": [],
+      "rating": "abstained",
+      "review_note": "Pass-12 abstained. Official MCP documentation states that new accounts receive 100 free credits and paid plans start at $5 per month; account and key signup is self-serve.",
+      "independent_sources": [
+        "https://transcriptapi.com/docs/mcp/"
+      ],
+      "correction": "self_serve_free, with usage-based paid upgrades."
+    },
+    {
+      "app": "YouTube Transcript",
+      "category": "AI, Research and Media-native",
+      "field": "api_surface",
+      "pass12_answer": "REST; broad documented surface",
+      "pass12_sources": [
+        "https://transcriptapi.com/docs/mcp/"
+      ],
+      "rating": "correct",
+      "review_note": "The official REST reference at /api/v2 documents twelve GET endpoint families for transcripts, metadata, search, channels, playlists, posts, and sections.",
+      "independent_sources": [
+        "https://transcriptapi.com/docs/api/"
+      ],
+      "correction": "REST; broad documented surface."
+    },
+    {
+      "app": "YouTube Transcript",
+      "category": "AI, Research and Media-native",
+      "field": "official_mcp",
+      "pass12_answer": "unknown",
+      "pass12_sources": [],
+      "rating": "abstained",
+      "review_note": "Pass-12 abstained. The official hosted remote MCP server at https://transcriptapi.com/mcp exposes 12 tools and uses the same account, keys, and credits as REST.",
+      "independent_sources": [
+        "https://transcriptapi.com/docs/mcp/"
+      ],
+      "correction": "vendor_server."
+    },
+    {
+      "app": "YouTube Transcript",
+      "category": "AI, Research and Media-native",
+      "field": "composio_toolkit",
+      "pass12_answer": "listed",
+      "pass12_sources": [
+        "https://docs.composio.dev/toolkits/youtube_transcript"
+      ],
+      "rating": "correct",
+      "review_note": "The official Composio catalog lists YouTube Transcript as slug YOUTUBE_TRANSCRIPT with API_KEY authentication and 9 tools, version 20261014_00.",
+      "independent_sources": [
+        "https://docs.composio.dev/toolkits/youtube_transcript"
+      ],
+      "correction": "listed."
+    },
+    {
+      "app": "YouTube Transcript",
+      "category": "AI, Research and Media-native",
+      "field": "verdict",
+      "pass12_answer": "unknown",
+      "pass12_sources": [],
+      "rating": "abstained",
+      "review_note": "Pass-12 abstained. Self-serve free credits, bearer API authentication, and a broad documented REST surface support direct building.",
+      "independent_sources": [
+        "https://transcriptapi.com/docs/api/",
+        "https://transcriptapi.com/docs/mcp/"
+      ],
+      "correction": "documented_build_candidate."
+    },
+    {
+      "app": "Gladly",
+      "category": "Support and Helpdesk",
+      "field": "auth",
+      "pass12_answer": [
+        "API token",
+        "API key",
+        "Basic authentication",
+        "Bearer token"
+      ],
+      "pass12_sources": [
+        "https://help.gladly.com/implementation/docs/get-your-api-tokens",
+        "https://help.gladly.com/generate-api-tokens-and-create-webhooks",
+        "https://help.gladly.com/docs/set-up-mcp-connections",
+        "https://help.gladly.com/docs/what-are-mcp-connections",
+        "https://help.gladly.com/docs/generate-api-tokens-and-create-webhooks/",
+        "https://help.gladly.com/docs/api-export-tool"
+      ],
+      "rating": "partial",
+      "review_note": "Gladly REST uses user-associated API tokens through token-based Basic authentication. API-key and bearer options in MCP-connection docs authenticate Gladly to external MCP servers and do not establish general Gladly REST API-key or bearer authentication.",
+      "independent_sources": [
+        "https://help.gladly.com/developer-tutorials/docs/setup-and-testing",
+        "https://developer.gladly.com/rest/",
+        "https://help.gladly.com/docs/set-up-mcp-connections"
+      ],
+      "correction": "API token and Basic authentication, specifically token-based Basic for Gladly REST."
+    },
+    {
+      "app": "Gladly",
+      "category": "Support and Helpdesk",
+      "field": "credential_gate",
+      "pass12_answer": "unknown",
+      "pass12_sources": [],
+      "rating": "abstained",
+      "review_note": "Pass-12 abstained. An administrator must grant API User permission to the designated user before REST credentials can be used; this is an administrator-approval gate rather than a paid-plan gate.",
+      "independent_sources": [
+        "https://help.gladly.com/developer-tutorials/docs/setup-and-testing"
+      ],
+      "correction": "admin_approval."
+    },
+    {
+      "app": "Gladly",
+      "category": "Support and Helpdesk",
+      "field": "api_surface",
+      "pass12_answer": "REST; broad documented surface",
+      "pass12_sources": [
+        "https://help.gladly.com/docs/api-export-tool",
+        "https://help.gladly.com/developer-tutorials/docs/technical-planning/"
+      ],
+      "rating": "correct",
+      "review_note": "The official REST reference and API Export Tool cover agents, conversations, customers, topics, items, reports, users, and bulk/configuration operations, supporting a broad REST surface.",
+      "independent_sources": [
+        "https://developer.gladly.com/rest/",
+        "https://help.gladly.com/docs/api-export-tool"
+      ],
+      "correction": "REST; broad documented surface."
+    },
+    {
+      "app": "Gladly",
+      "category": "Support and Helpdesk",
+      "field": "official_mcp",
+      "pass12_answer": "client_only",
+      "pass12_sources": [
+        "https://help.gladly.com/docs/set-up-mcp-connections",
+        "https://help.gladly.com/docs/mcp-connection-1"
+      ],
+      "rating": "correct",
+      "review_note": "Gladly documentation describes Gladly AI connecting to external MCP servers with none, bearer, API-key, or OAuth options; it does not document a Gladly-hosted product-data MCP server.",
+      "independent_sources": [
+        "https://help.gladly.com/docs/what-are-mcp-connections",
+        "https://help.gladly.com/docs/set-up-mcp-connections"
+      ],
+      "correction": "client_only."
+    },
+    {
+      "app": "Gladly",
+      "category": "Support and Helpdesk",
+      "field": "composio_toolkit",
+      "pass12_answer": "unknown",
+      "pass12_sources": [],
+      "rating": "abstained",
+      "review_note": "Pass-12 abstained. The complete official Composio catalog states 1,841 toolkits and contains no Gladly entry; absence was established by catalog enumeration rather than a guessed 404 URL.",
+      "independent_sources": [
+        "https://docs.composio.dev/toolkits"
+      ],
+      "correction": "not_listed."
+    },
+    {
+      "app": "Gladly",
+      "category": "Support and Helpdesk",
+      "field": "verdict",
+      "pass12_answer": "unknown",
+      "pass12_sources": [],
+      "rating": "abstained",
+      "review_note": "Pass-12 abstained. A broad REST API exists, but an administrator-controlled API User permission gates access; this supports a gated rather than partner-only candidate.",
+      "independent_sources": [
+        "https://help.gladly.com/developer-tutorials/docs/setup-and-testing",
+        "https://developer.gladly.com/rest/"
+      ],
+      "correction": "gated_build_candidate."
+    },
+    {
+      "app": "Xero",
+      "category": "Finance and Fintech",
+      "field": "auth",
+      "pass12_answer": [
+        "OAuth 2.0"
+      ],
+      "pass12_sources": [
+        "https://devblog.xero.com/the-xero-remote-mcp-is-now-generally-available-06008f6ab2a7?gi=8073db1cd816",
+        "https://developer.xero.com/documentation/guides/oauth2/overview"
+      ],
+      "rating": "correct",
+      "review_note": "Xero documents OAuth 2.0 authorization-code and client-credentials flows; app registration provides client ID/secret and access tokens are JWTs sent in the Authorization header.",
+      "independent_sources": [
+        "https://developer.xero.com/documentation/guides/oauth2/overview/"
+      ],
+      "correction": "OAuth 2.0."
+    },
+    {
+      "app": "Xero",
+      "category": "Finance and Fintech",
+      "field": "credential_gate",
+      "pass12_answer": [
+        "paid_plan"
+      ],
+      "pass12_sources": [
+        "https://devblog.xero.com/the-xero-remote-mcp-is-now-generally-available-06008f6ab2a7?gi=8073db1cd816"
+      ],
+      "rating": "incorrect",
+      "review_note": "A paid Core plan is required for commercial Remote MCP, not ordinary Xero API development. The official getting-started guide offers a free account and demo company, so an app-level paid_plan gate is overbroad.",
+      "independent_sources": [
+        "https://developer.xero.com/documentation/getting-started-guide/",
+        "https://developer.xero.com/faq/remote-mcp",
+        "https://devblog.xero.com/the-xero-remote-mcp-is-now-generally-available-06008f6ab2a7"
+      ],
+      "correction": "self_serve_free for ordinary API development; paid Core or above only for commercial Remote MCP, with a Starter demo-organisation exception."
+    },
+    {
+      "app": "Xero",
+      "category": "Finance and Fintech",
+      "field": "api_surface",
+      "pass12_answer": "unknown",
+      "pass12_sources": [],
+      "rating": "abstained",
+      "review_note": "Pass-12 abstained. Official API navigation spans Accounting, Assets, Bank Feeds, Files, Finance, Payroll AU/NZ/UK, Projects, App Store, and eInvoicing, supporting a broad REST surface.",
+      "independent_sources": [
+        "https://developer.xero.com/documentation/api/accounting/overview",
+        "https://developer.xero.com/documentation/api/assets/overview"
+      ],
+      "correction": "REST; broad documented surface."
+    },
+    {
+      "app": "Xero",
+      "category": "Finance and Fintech",
+      "field": "official_mcp",
+      "pass12_answer": "unknown",
+      "pass12_sources": [],
+      "rating": "abstained",
+      "review_note": "Pass-12 abstained. Xero documents a hosted Remote MCP server run by Xero, using the same OAuth 2.0 sign-in, permissions, and rate limits as the Xero API.",
+      "independent_sources": [
+        "https://developer.xero.com/documentation/guides/remote-mcp/overview",
+        "https://developer.xero.com/faq/remote-mcp"
+      ],
+      "correction": "vendor_server."
+    },
+    {
+      "app": "Xero",
+      "category": "Finance and Fintech",
+      "field": "composio_toolkit",
+      "pass12_answer": "listed",
+      "pass12_sources": [
+        "https://docs.composio.dev/toolkits/xero"
+      ],
+      "rating": "correct",
+      "review_note": "The official Composio catalog lists Xero as slug XERO with OAuth2 and 109 tools, version 20261120_00.",
+      "independent_sources": [
+        "https://docs.composio.dev/toolkits/xero"
+      ],
+      "correction": "listed."
+    },
+    {
+      "app": "Xero",
+      "category": "Finance and Fintech",
+      "field": "verdict",
+      "pass12_answer": "unknown",
+      "pass12_sources": [],
+      "rating": "abstained",
+      "review_note": "Pass-12 abstained. A free developer account and demo company, OAuth, and broad APIs support direct building; the paid Core condition is limited to commercial Remote MCP.",
+      "independent_sources": [
+        "https://developer.xero.com/documentation/guides/oauth2/overview/",
+        "https://developer.xero.com/documentation/getting-started-guide/",
+        "https://developer.xero.com/documentation/api/accounting/overview"
+      ],
+      "correction": "documented_build_candidate."
+    },
+    {
+      "app": "Snowflake",
+      "category": "Developer, Infra and Data platforms",
+      "field": "auth",
+      "pass12_answer": [
+        "OAuth 2.0",
+        "Basic authentication",
+        "Bearer token"
+      ],
+      "pass12_sources": [
+        "https://docs.snowflake.com/en/user-guide/api-authentication",
+        "https://docs.snowflake.com/en/user-guide/snowflake-cortex/cortex-agents-mcp",
+        "https://docs.snowflake.com/en/en/developer-guide/snowflake-rest-api/authentication",
+        "https://docs.snowflake.com/en/developer-guide/snowflake-rest-api/authentication"
+      ],
+      "rating": "partial",
+      "review_note": "OAuth and bearer transport are supported, but Basic authentication in the cited external-API page concerns Snowflake connecting outward, not ordinary incoming REST. Current incoming authentication also includes key-pair JWT, programmatic access tokens, and workload identity federation.",
+      "independent_sources": [
+        "https://docs.snowflake.com/en/developer-guide/snowflake-rest-api/authentication",
+        "https://docs.snowflake.com/en/user-guide/api-authentication",
+        "https://docs.snowflake.com/en/user-guide/programmatic-access-tokens"
+      ],
+      "correction": "OAuth 2.0 and Bearer token, including key-pair JWT, programmatic access token, and workload identity federation; Basic only for outbound external API authentication and secrets."
+    },
+    {
+      "app": "Snowflake",
+      "category": "Developer, Infra and Data platforms",
+      "field": "credential_gate",
+      "pass12_answer": [
+        "partner_or_sales"
+      ],
+      "pass12_sources": [
+        "https://docs.snowflake.com/en/user-guide/programmatic-access-tokens"
+      ],
+      "rating": "incorrect",
+      "review_note": "Human users need no special privilege to generate their own PAT, and the partner language concerns GitHub secret scanning rather than a credential gate. Snowflake instead offers a free self-service trial with paid continuation and feature-specific restrictions.",
+      "independent_sources": [
+        "https://docs.snowflake.com/en/user-guide/programmatic-access-tokens",
+        "https://docs.snowflake.com/en/user-guide/admin-trial-account"
+      ],
+      "correction": "self_serve_trial: 30-day or free-usage-limited trial, self-service paid upgrade, and a credit-card requirement to enable AI features on the trial."
+    },
+    {
+      "app": "Snowflake",
+      "category": "Developer, Infra and Data platforms",
+      "field": "api_surface",
+      "pass12_answer": "REST; broad documented surface",
+      "pass12_sources": [
+        "https://docs.snowflake.com/en/en/sql-reference/sql/create-mcp-server",
+        "https://docs.snowflake.com/en/user-guide/snowflake-cortex/cortex-agents-mcp",
+        "https://docs.snowflake.com/en/user-guide/programmatic-access-tokens",
+        "https://docs.snowflake.com/en/en/developer-guide/snowflake-rest-api/authentication",
+        "https://docs.snowflake.com/en/sql-reference/sql/create-mcp-server",
+        "https://docs.snowflake.com/en/developer-guide/snowflake-rest-api/authentication",
+        "https://docs.snowflake.com/en/api-reference"
+      ],
+      "rating": "correct",
+      "review_note": "The official REST API reference spans accounts, users, roles, grants, warehouses, databases, schemas, tables, stages, pipes, notebooks, containers, functions, security, tasks, integrations, and tags.",
+      "independent_sources": [
+        "https://docs.snowflake.com/en/api-reference",
+        "https://docs.snowflake.com/en/developer-guide/snowflake-rest-api/authentication"
+      ],
+      "correction": "REST; broad documented surface."
+    },
+    {
+      "app": "Snowflake",
+      "category": "Developer, Infra and Data platforms",
+      "field": "official_mcp",
+      "pass12_answer": "client_only",
+      "pass12_sources": [
+        "https://docs.snowflake.com/en/user-guide/snowflake-cortex/cortex-agents-mcp"
+      ],
+      "rating": "incorrect",
+      "review_note": "The official page is titled 'Snowflake-managed MCP server' and lets authenticated clients discover and invoke Cortex Analyst, Cortex Search, Cortex Agents, custom tools, and SQL against account data. This is a vendor server, not client-only.",
+      "independent_sources": [
+        "https://docs.snowflake.com/en/user-guide/snowflake-cortex/cortex-agents-mcp"
+      ],
+      "correction": "vendor_server."
+    },
+    {
+      "app": "Snowflake",
+      "category": "Developer, Infra and Data platforms",
+      "field": "composio_toolkit",
+      "pass12_answer": "listed",
+      "pass12_sources": [
+        "https://docs.composio.dev/toolkits/snowflake"
+      ],
+      "rating": "correct",
+      "review_note": "The official Composio catalog lists Snowflake as slug SNOWFLAKE with OAuth2 and 17 tools, version 20261101_00.",
+      "independent_sources": [
+        "https://docs.composio.dev/toolkits/snowflake"
+      ],
+      "correction": "listed."
+    },
+    {
+      "app": "Snowflake",
+      "category": "Developer, Infra and Data platforms",
+      "field": "verdict",
+      "pass12_answer": "partner_outreach",
+      "pass12_sources": [
+        "https://docs.snowflake.com/en/user-guide/api-authentication",
+        "https://docs.snowflake.com/en/user-guide/snowflake-cortex/cortex-agents-mcp",
+        "https://docs.snowflake.com/en/en/developer-guide/snowflake-rest-api/authentication",
+        "https://docs.snowflake.com/en/developer-guide/snowflake-rest-api/authentication",
+        "https://docs.snowflake.com/en/en/sql-reference/sql/create-mcp-server",
+        "https://docs.snowflake.com/en/user-guide/programmatic-access-tokens",
+        "https://docs.snowflake.com/en/sql-reference/sql/create-mcp-server",
+        "https://docs.snowflake.com/en/api-reference"
+      ],
+      "rating": "incorrect",
+      "review_note": "partner_outreach does not follow: self-service trial and upgrade, OAuth/PAT access, and broad REST are documented, while account/RBAC setup and AI feature gates are not partner-or-sales requirements.",
+      "independent_sources": [
+        "https://docs.snowflake.com/en/user-guide/admin-trial-account",
+        "https://docs.snowflake.com/en/developer-guide/snowflake-rest-api/authentication",
+        "https://docs.snowflake.com/en/user-guide/snowflake-cortex/cortex-agents-mcp"
+      ],
+      "correction": "gated_build_candidate: self-serve trial or paid continuation with account, role, privilege, and feature-specific gates; not partner_outreach."
+    },
+    {
+      "app": "Sentry",
+      "category": "Developer, Infra and Data platforms",
+      "field": "auth",
+      "pass12_answer": [
+        "OAuth 2.0",
+        "API key",
+        "Bearer token",
+        "Basic authentication"
+      ],
+      "pass12_sources": [
+        "https://docs.sentry.io/api/auth/",
+        "https://docs.sentry.io/api/users/retrieve-the-current-credentials/"
+      ],
+      "rating": "partial",
+      "review_note": "OAuth2 and bearer authentication tokens are current. API keys are legacy and disabled for new accounts, and legacy Basic uses the API key as username with an empty password rather than a separate modern general-purpose method.",
+      "independent_sources": [
+        "https://docs.sentry.io/api/auth/"
+      ],
+      "correction": "OAuth 2.0 and Bearer authentication tokens; legacy API key and Basic authentication only for existing accounts."
+    },
+    {
+      "app": "Sentry",
+      "category": "Developer, Infra and Data platforms",
+      "field": "credential_gate",
+      "pass12_answer": "unknown",
+      "pass12_sources": [],
+      "rating": "abstained",
+      "review_note": "Pass-12 abstained. Sentry offers a free Developer plan forever and a 14-day Business trial without a credit card, supporting self-serve access.",
+      "independent_sources": [
+        "https://sentry.io/pricing/",
+        "https://sentry.io/signup/"
+      ],
+      "correction": "self_serve_free."
+    },
+    {
+      "app": "Sentry",
+      "category": "Developer, Infra and Data platforms",
+      "field": "api_surface",
+      "pass12_answer": "unknown",
+      "pass12_sources": [],
+      "rating": "abstained",
+      "review_note": "Pass-12 abstained. Web API v0 covers organizations, teams, projects, issues/events, releases, integrations, alerts/monitors, users, and exports, supporting a broad REST surface.",
+      "independent_sources": [
+        "https://docs.sentry.io/api/"
+      ],
+      "correction": "REST; broad documented surface."
+    },
+    {
+      "app": "Sentry",
+      "category": "Developer, Infra and Data platforms",
+      "field": "official_mcp",
+      "pass12_answer": "unknown",
+      "pass12_sources": [],
+      "rating": "abstained",
+      "review_note": "Pass-12 abstained. Official mcp.sentry.dev provides OAuth-authenticated remote MCP plus local stdio through 'sentry mcp' and self-hosted support, with product-data and documentation tools.",
+      "independent_sources": [
+        "https://mcp.sentry.dev/"
+      ],
+      "correction": "vendor_server."
+    },
+    {
+      "app": "Sentry",
+      "category": "Developer, Infra and Data platforms",
+      "field": "composio_toolkit",
+      "pass12_answer": "listed",
+      "pass12_sources": [
+        "https://docs.composio.dev/toolkits/sentry"
+      ],
+      "rating": "correct",
+      "review_note": "The official Composio catalog lists Sentry as slug SENTRY with OAuth2, Composio-managed OAuth, and 212 tools, version 20261116_00.",
+      "independent_sources": [
+        "https://docs.composio.dev/toolkits/sentry"
+      ],
+      "correction": "listed."
+    },
+    {
+      "app": "Sentry",
+      "category": "Developer, Infra and Data platforms",
+      "field": "verdict",
+      "pass12_answer": "unknown",
+      "pass12_sources": [],
+      "rating": "abstained",
+      "review_note": "Pass-12 abstained. OAuth/bearer authentication, free Developer access, and a broad REST API support direct building without partner outreach.",
+      "independent_sources": [
+        "https://docs.sentry.io/api/auth/",
+        "https://sentry.io/pricing/",
+        "https://docs.sentry.io/api/"
+      ],
+      "correction": "documented_build_candidate."
+    },
+    {
+      "app": "Lark (Larksuite)",
+      "category": "Communications and Messaging",
+      "field": "auth",
+      "pass12_answer": "unknown",
+      "pass12_sources": [],
+      "rating": "abstained",
+      "review_note": "Pass-12 abstained. Lark uses OAuth/user authorization for user tokens and App ID/App Secret to obtain tenant/app tokens; API calls use Bearer access tokens, with identity and scope determined by token type.",
+      "independent_sources": [
+        "https://open.larksuite.com/document/server-docs/getting-started/api-access-token/app-access-token-development-guide",
+        "https://open.larksuite.com/document/server-docs/getting-started/overview-of-app-scopes"
+      ],
+      "correction": "OAuth 2.0/user authorization plus Bearer tenant_access_token and user_access_token; App ID/App Secret exchange for app and tenant tokens."
+    },
+    {
+      "app": "Lark (Larksuite)",
+      "category": "Communications and Messaging",
+      "field": "credential_gate",
+      "pass12_answer": "unknown",
+      "pass12_sources": [],
+      "rating": "abstained",
+      "review_note": "Pass-12 abstained. Exempt self-built permissions and testing can be self-serve, but sensitive production permissions require app-administrator approval; store apps add platform review and tenant-administrator installation.",
+      "independent_sources": [
+        "https://open.larksuite.com/document/server-docs/getting-started/overview-of-app-scopes"
+      ],
+      "correction": "mixed: self-serve testing and exempt permissions; administrator approval for sensitive production scopes and store-app installation."
+    },
+    {
+      "app": "Lark (Larksuite)",
+      "category": "Communications and Messaging",
+      "field": "api_surface",
+      "pass12_answer": "unknown",
+      "pass12_sources": [],
+      "rating": "abstained",
+      "review_note": "Pass-12 abstained. Official REST endpoints cover messaging, including rich/card/media messages, and Bitable apps, tables, views, records, fields, dashboards, roles, and workflows, supporting a broad REST surface.",
+      "independent_sources": [
+        "https://open.larksuite.com/document/server-docs/im-v1/message/create",
+        "https://open.larksuite.com/document/server-docs/docs/bitable-v1/bitable-overview"
+      ],
+      "correction": "REST; broad documented surface."
+    },
+    {
+      "app": "Lark (Larksuite)",
+      "category": "Communications and Messaging",
+      "field": "official_mcp",
+      "pass12_answer": "unknown",
+      "pass12_sources": [],
+      "rating": "abstained",
+      "review_note": "Pass-12 abstained. The official OpenAPI MCP is a CLI-configurable vendor server for real Lark product data, including docs, messages, groups, calendars, and Bitable; local/stdio operation still qualifies as a vendor server.",
+      "independent_sources": [
+        "https://open.larksuite.com/document/uAjLw4CM/ukTMukTMukTM/mcp_integration/mcp_introduction",
+        "https://github.com/larksuite/lark-openapi-mcp"
+      ],
+      "correction": "vendor_server."
+    },
+    {
+      "app": "Lark (Larksuite)",
+      "category": "Communications and Messaging",
+      "field": "composio_toolkit",
+      "pass12_answer": "unknown",
+      "pass12_sources": [],
+      "rating": "abstained",
+      "review_note": "Pass-12 abstained. The official Composio catalog lists Lark as slug LARK with OAuth2, 451 tools, and no triggers, version 00000000_00.",
+      "independent_sources": [
+        "https://docs.composio.dev/toolkits/lark"
+      ],
+      "correction": "listed."
+    },
+    {
+      "app": "Lark (Larksuite)",
+      "category": "Communications and Messaging",
+      "field": "verdict",
+      "pass12_answer": "unknown",
+      "pass12_sources": [],
+      "rating": "abstained",
+      "review_note": "Pass-12 abstained. Broad REST and official MCP support building, but production sensitive scopes and store-app installation can require administrator approval.",
+      "independent_sources": [
+        "https://open.larksuite.com/document/server-docs/getting-started/api-access-token/app-access-token-development-guide",
+        "https://open.larksuite.com/document/server-docs/getting-started/overview-of-app-scopes",
+        "https://open.larksuite.com/document/server-docs/im-v1/message/create"
+      ],
+      "correction": "gated_build_candidate."
+    }
+  ]
+}

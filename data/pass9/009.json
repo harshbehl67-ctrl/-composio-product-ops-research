@@ -1,0 +1,143 @@
+{
+  "app": {
+    "number": 9,
+    "name": "Copper",
+    "category": "CRM and Sales",
+    "hint": "copper.com"
+  },
+  "replayed_at": "2026-11-23T18:41:29.947114+00:00",
+  "source_passes": [
+    "data/pass2/009.json",
+    "data/pass4/009.json"
+  ],
+  "source_searches": [
+    "data/new_search/009.json",
+    "data/pass4_search/009.json"
+  ],
+  "publication_date_note": "Search publication labels are retained exactly; null means no label was available. Relative labels are not exact dates.",
+  "claims": {
+    "auth": {
+      "value": [
+        "OAuth 2.0",
+        "API key",
+        "API token"
+      ],
+      "status": "provisional",
+      "sources": [
+        "https://www.developer.copper.com/introduction/authentication.html",
+        "https://developer.copper.com/introduction/oauth/index.html",
+        "https://www.developer.copper.com/introduction/oauth/index.html",
+        "https://www.developer.copper.com/introduction/oauth/flow.html",
+        "https://www.developer.copper.com/introduction/oauth/quickstart.html",
+        "https://support.copper.com/en/articles/8823347-generating-an-api-key"
+      ],
+      "evidence": [
+        {
+          "value": "OAuth 2.0",
+          "url": "https://www.developer.copper.com/introduction/authentication.html",
+          "excerpt": "Overview - Copper Developer API Skip to content Authentication ¶ There are two ways to access the Copper Developer API: API keys and OAuth2.0 .\nAPI Keys are suitable for individual users, while OAuth2.0 is the preferred approach for partner integrations. API Keys ¶ The Dev API us",
+          "published_label": null
+        },
+        {
+          "value": "API key",
+          "url": "https://www.developer.copper.com/introduction/authentication.html",
+          "excerpt": "I Skip to content Authentication ¶ There are two ways to access the Copper Developer API: API keys and OAuth2.0 .\nAPI Keys are suitable for individual users, while OAuth2.0 is the preferred approach for partner integrations. API Keys ¶ The Dev API uses token based au",
+          "published_label": null
+        },
+        {
+          "value": "API token",
+          "url": "https://www.developer.copper.com/introduction/authentication.html",
+          "excerpt": "same time.\nAdmins can see all user generated tokens and generate new ones. To generate an API token, in the Copper web app go to System settings > API Keys and click the 'GENERATE API KEY' \nbutton. Copper allows you to label each key for its unique purpose. You'll need",
+          "published_label": null
+        },
+        {
+          "value": "OAuth 2.0",
+          "url": "https://developer.copper.com/introduction/oauth/index.html",
+          "excerpt": "dded in the future 8. Client Libraries ¶ Although it's entirely feasible to implement the OAuth 2.0 flow through plain REST,\nit's advisable to leverage a library tailored to your chosen application language or framework. Language Library Python requests-oauthlib Java S",
+          "published_label": null
+        },
+        {
+          "value": "API key",
+          "url": "https://developer.copper.com/introduction/oauth/index.html",
+          "excerpt": "eloper API via OAuth2.0 .\nThis authentication method is an alternative to Copper's legacy API Keys ,\nand is particularly well-suited for third-party integrations looking to create a seamless and secure\nlink between their users and Copper. OAuth2.0 offers several adva",
+          "published_label": null
+        },
+        {
+          "value": "OAuth 2.0",
+          "url": "https://www.developer.copper.com/introduction/oauth/index.html",
+          "excerpt": "dded in the future 8. Client Libraries ¶ Although it's entirely feasible to implement the OAuth 2.0 flow through plain REST,\nit's advisable to leverage a library tailored to your chosen application language or framework. Language Library Python requests-oauthlib Java S",
+          "published_label": null
+        },
+        {
+          "value": "API key",
+          "url": "https://www.developer.copper.com/introduction/oauth/index.html",
+          "excerpt": "eloper API via OAuth2.0 .\nThis authentication method is an alternative to Copper's legacy API Keys ,\nand is particularly well-suited for third-party integrations looking to create a seamless and secure\nlink between their users and Copper. OAuth2.0 offers several adva",
+          "published_label": null
+        },
+        {
+          "value": "OAuth 2.0",
+          "url": "https://www.developer.copper.com/introduction/oauth/flow.html",
+          "excerpt": "t Copper OAuth2.0 Flow ¶ 1. Introduction ¶ Third-party integrations may take advantage of OAuth 2.0 for the purpose of authorizing and authenticating access to the Copper Developer API. Employing the widely used Authorization Code Grant flow, Copper ensures a seamless",
+          "published_label": null
+        },
+        {
+          "value": "OAuth 2.0",
+          "url": "https://www.developer.copper.com/introduction/oauth/quickstart.html",
+          "excerpt": "Quickstart Guide - Copper Developer API Skip to content OAuth2.0 Quickstart Guide ¶ Introduction ¶ This basic example demonstrates how to get started with Copper OAuth2.0.\nFor a detailed documentation of each step, click here . Prerequisites ¶ Your application provides an HTTPS c",
+          "published_label": null
+        },
+        {
+          "value": "API key",
+          "url": "https://support.copper.com/en/articles/8823347-generating-an-api-key",
+          "excerpt": "Generating an API Key | Copper Help Center Copyright (c) 2023, Intercom, Inc. (legal@intercom.io) with Reserved Font Name \"Inter\".\n      This Font Software is licensed under the SIL Open Font",
+          "published_label": "1.7 years ago"
+        }
+      ],
+      "reason": "Provisional extraction; validate scope and completeness against cited pages."
+    },
+    "credential_gate": {
+      "value": "unknown",
+      "status": "provisional",
+      "sources": [],
+      "evidence": [],
+      "reason": "No sufficiently specific official evidence extracted."
+    },
+    "api_surface": {
+      "value": "unknown",
+      "status": "provisional",
+      "sources": [],
+      "evidence": [],
+      "reason": "No sufficiently specific official evidence extracted."
+    },
+    "official_mcp": {
+      "value": "unknown",
+      "status": "provisional",
+      "sources": [],
+      "evidence": [],
+      "reason": "No sufficiently specific official evidence extracted."
+    },
+    "composio_toolkit": {
+      "value": "listed",
+      "status": "provisional",
+      "sources": [
+        "https://docs.composio.dev/toolkits/copper"
+      ],
+      "evidence": [],
+      "reason": "Catalog match only; not vendor MCP evidence."
+    },
+    "verdict": {
+      "value": "unknown",
+      "status": "provisional",
+      "sources": [],
+      "evidence": [],
+      "reason": "No sufficiently specific official evidence extracted."
+    }
+  },
+  "validation": [
+    "Automatic extraction is provisional until independently reviewed",
+    "Unknown is not evidence of absence",
+    "Composio evidence cannot establish vendor MCP",
+    "Client-only and negated MCP statements are not vendor-server proof",
+    "API breadth is a text-coverage heuristic, not an endpoint census"
+  ]
+}

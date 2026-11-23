@@ -1,0 +1,146 @@
+{
+  "app": {
+    "number": 17,
+    "name": "Plain",
+    "category": "Support and Helpdesk",
+    "hint": "plain.com"
+  },
+  "replayed_at": "2026-11-23T18:16:36.369363+00:00",
+  "source_passes": [
+    "data/pass2/017.json",
+    "data/pass4/017.json"
+  ],
+  "source_search": "data/new_search/017.json",
+  "publication_date_note": "Published labels are retained exactly as supplied by search; missing labels are null. Relative labels must not be treated as exact publication dates.",
+  "claims": {
+    "auth": {
+      "value": [
+        "API key"
+      ],
+      "sources": [
+        "https://help.plain.com/article/does-the-plain-mcp-server-support-api-key-authentication-h7d83qtfdzxo4h49x4oyklwx"
+      ],
+      "evidence": [
+        {
+          "value": "API key",
+          "url": "https://help.plain.com/article/does-the-plain-mcp-server-support-api-key-authentication-h7d83qtfdzxo4h49x4oyklwx",
+          "excerpt": "AI Agents - Does the Plain MCP server support API key authentication? | Help Center How can I help you? This conversation will be visible to Plain employees Does the Plain MCP server support API key authentication? Updated 2 Sep 2026",
+          "published_label": "2 months ago"
+        }
+      ],
+      "reason": "Provisional extraction: validate scope and completeness against the cited page."
+    },
+    "credential_gate": {
+      "value": [
+        "free or trial developer credential path"
+      ],
+      "sources": [
+        "https://www.plain.com/blog/api-first-support-platforms"
+      ],
+      "evidence": [
+        {
+          "value": "free or trial developer credential path",
+          "url": "https://www.plain.com/blog/api-first-support-platforms",
+          "excerpt": " API add-ons. Ari is charged per resolution (100 credits, from the plan's monthly allowance). 7-day free trial, no credit card required. 2. Zendesk â Comprehensive REST API with Scale Constraints Zendesk has the broadest API surface in the category, covering tickets, users, organizations, help center articles, satisfaction ratings, and more across hundreds of endpoints. Its integration marketplace inc",
+          "published_label": "8 months ago"
+        }
+      ],
+      "reason": "Provisional extraction: validate scope and completeness against the cited page."
+    },
+    "api_surface": {
+      "value": [
+        "GraphQL",
+        "REST"
+      ],
+      "sources": [
+        "https://help.plain.com/article/does-the-plain-mcp-server-support-api-key-authentication-h7d83qtfdzxo4h49x4oyklwx",
+        "https://changelog.plain.com/blog/mcp-customer-support-2026",
+        "https://www.plain.com/blog/api-first-support-platforms"
+      ],
+      "evidence": [
+        {
+          "value": "GraphQL",
+          "url": "https://help.plain.com/article/does-the-plain-mcp-server-support-api-key-authentication-h7d83qtfdzxo4h49x4oyklwx",
+          "excerpt": "n data without individual Viewer accounts, build a lightweight custom MCP server that wraps Plain's GraphQL API with a single machine user API key. In Settings, open Machine Users and create a machine user with read-only permissions. Generate an API key for that machine user. Build an MCP s",
+          "published_label": "2 months ago"
+        },
+        {
+          "value": "GraphQL",
+          "url": "https://changelog.plain.com/blog/mcp-customer-support-2026",
+          "excerpt": "AI client to reach Zendesk. MCP sits on top of the API a platform already has. For Plain that's the GraphQL API , which is why API-first infrastructure matters for AI agents : an MCP server can only expose what the API underneath can do. On our evaluation calls, buyers who ask about MCP usu",
+          "published_label": "8 months ago"
+        },
+        {
+          "value": "REST",
+          "url": "https://www.plain.com/blog/api-first-support-platforms",
+          "excerpt": "rver, typed SDK Plain Largest integration marketplace and broadest channel coverage Zendesk Highest REST API rate limits (10,000 rpm) Intercom Custom channel connectivity (Channels API) Front Free tier with API access Freshdesk CRM-first custom data modeling Kustomer Unified support + pr",
+          "published_label": "8 months ago"
+        },
+        {
+          "value": "GraphQL",
+          "url": "https://www.plain.com/blog/api-first-support-platforms",
+          "excerpt": "depth, SDK quality, AI agent connectivity â it is in a class of its own. The only platform with a GraphQL API, no restrictive rate limits, native MCP server support, full API-UI parity, and an open-source typed TypeScript SDK. The table below is for teams that have specific requirements t",
+          "published_label": "8 months ago"
+        }
+      ],
+      "reason": "Provisional extraction: validate scope and completeness against the cited page."
+    },
+    "official_mcp": {
+      "value": "yes (provisional)",
+      "sources": [
+        "https://help.plain.com/article/does-the-plain-mcp-server-support-api-key-authentication-h7d83qtfdzxo4h49x4oyklwx",
+        "https://changelog.plain.com/blog/mcp-server",
+        "https://changelog.plain.com/blog/mcp-customer-support-2026"
+      ],
+      "evidence": [
+        {
+          "value": "yes (provisional)",
+          "url": "https://help.plain.com/article/does-the-plain-mcp-server-support-api-key-authentication-h7d83qtfdzxo4h49x4oyklwx",
+          "excerpt": "AI Agents - Does the Plain MCP server support API key authentication? | Help Center How can I help you? This conversation will be visible to Plain employees Does the Plain MCP server support API ke",
+          "published_label": "2 months ago",
+          "context_warning": "Review vendor ownership, dates, and scope."
+        },
+        {
+          "value": "yes (provisional)",
+          "url": "https://changelog.plain.com/blog/mcp-server",
+          "excerpt": "Plain â Plain's MCP Server: Connect Any AI Tool to Your Support Data Product Solutions Resources Customers Pricing Sign in Book a demo Blog / Product Plain's MCP Server: Connect Any AI T",
+          "published_label": "8 months ago",
+          "context_warning": "Review vendor ownership, dates, and scope."
+        },
+        {
+          "value": "yes (provisional)",
+          "url": "https://changelog.plain.com/blog/mcp-customer-support-2026",
+          "excerpt": "ction carries that person's permissions and no one else's. As of November 2026, Plain's MCP server has 400+ tools . What is MCP for customer support? MCP (Model Context Protocol) is an open standard for connecting AI applications to outside systems. A platfo",
+          "published_label": "8 months ago",
+          "context_warning": "Review vendor ownership, dates, and scope."
+        }
+      ],
+      "reason": "Provisional; check source date, scope, and vendor ownership."
+    },
+    "composio_toolkit": {
+      "value": "listed",
+      "sources": [
+        "https://docs.composio.dev/toolkits/plain"
+      ],
+      "evidence": [],
+      "reason": "Catalog match; scope needs review."
+    },
+    "verdict": {
+      "value": "provisional: investigate documented access condition",
+      "sources": [
+        "https://www.plain.com/blog/api-first-support-platforms",
+        "https://help.plain.com/article/does-the-plain-mcp-server-support-api-key-authentication-h7d83qtfdzxo4h49x4oyklwx",
+        "https://changelog.plain.com/blog/mcp-customer-support-2026"
+      ],
+      "evidence": [],
+      "reason": "Do not promote this inference without claim-specific review."
+    }
+  },
+  "validation": [
+    "Automatic extraction is provisional and not a verified final claim",
+    "Unknown is not evidence of absence",
+    "No Composio-to-vendor-MCP inference",
+    "Basic authentication may be endpoint-specific",
+    "Client-only and negated statements are not positive MCP evidence"
+  ]
+}

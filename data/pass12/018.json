@@ -1,0 +1,104 @@
+{
+  "app": {
+    "number": 18,
+    "name": "Help Scout",
+    "category": "Support and Helpdesk",
+    "hint": "helpscout.com"
+  },
+  "replayed_at": "2026-11-23T18:45:48.050025+00:00",
+  "source_passes": [
+    "data/pass2/018.json",
+    "data/pass4/018.json"
+  ],
+  "source_searches": [
+    "data/new_search/018.json",
+    "data/pass4_search/018.json"
+  ],
+  "publication_date_note": "Search publication labels are retained exactly; null means no label was available. Relative labels are not exact dates.",
+  "claims": {
+    "auth": {
+      "value": [
+        "OAuth 2.0",
+        "API key",
+        "Basic authentication"
+      ],
+      "status": "provisional",
+      "sources": [
+        "https://developer.helpscout.com/mailbox-api/overview/authentication/",
+        "https://developer.helpscout.com/docs-api/",
+        "https://docs.helpscout.com/article/1779-help-scout-mcp-server"
+      ],
+      "evidence": [
+        {
+          "value": "OAuth 2.0",
+          "url": "https://developer.helpscout.com/mailbox-api/overview/authentication/",
+          "excerpt": "n Manual Workflows Update workflow status Changelog This is an HTTPS-only API and it uses OAuth 2.0 authorization , implementing Authorization Code and Client Credential flows.\nAll requests have to be authenticated via the Authorization header: curl -H \"Authorization:",
+          "published_label": null
+        },
+        {
+          "value": "API key",
+          "url": "https://developer.helpscout.com/docs-api/",
+          "excerpt": "lbackConfiguration Category Collection Person Redirect Site SiteRestriction Overview Your API Key Each User has a Docs API key. To generate, view, or regenerate the API key,\nclick your avatar in the top right of your account, then click Your Profile . Next, click Sec",
+          "published_label": null
+        },
+        {
+          "value": "Basic authentication",
+          "url": "https://developer.helpscout.com/docs-api/",
+          "excerpt": "ed upon the role of the user to which the API key is tied. The API key is passed via HTTP Basic Authentication and goes in the username field. A dummy password, such as X, goes in the password field. To try the API via curl on the command-line, the general form used would be: cur",
+          "published_label": null
+        },
+        {
+          "value": "API key",
+          "url": "https://docs.helpscout.com/article/1779-help-scout-mcp-server",
+          "excerpt": "Limitations below. To allow AI Agents to search your Docs knowledge base, you need a Docs API key. On HIPAA-enabled accounts, your BAA with Help Scout doesn't cover your AI provider. See HIPAA accounts below before connecting. Add the Connector in Claude Help Scout i",
+          "published_label": null
+        }
+      ],
+      "reason": "Provisional extraction; validate scope and completeness against cited pages."
+    },
+    "credential_gate": {
+      "value": "unknown",
+      "status": "provisional",
+      "sources": [],
+      "evidence": [],
+      "reason": "No sufficiently specific official evidence extracted."
+    },
+    "api_surface": {
+      "value": "unknown",
+      "status": "provisional",
+      "sources": [],
+      "evidence": [],
+      "reason": "No sufficiently specific official evidence extracted."
+    },
+    "official_mcp": {
+      "value": "unknown",
+      "status": "provisional",
+      "sources": [],
+      "evidence": [],
+      "reason": "No sufficiently specific official evidence extracted."
+    },
+    "composio_toolkit": {
+      "value": "listed",
+      "status": "provisional",
+      "sources": [
+        "https://docs.composio.dev/toolkits/help_scout"
+      ],
+      "evidence": [],
+      "reason": "Catalog match only; not vendor MCP evidence."
+    },
+    "verdict": {
+      "value": "unknown",
+      "status": "provisional",
+      "sources": [],
+      "evidence": [],
+      "reason": "No sufficiently specific official evidence extracted."
+    }
+  },
+  "validation": [
+    "Automatic extraction is provisional until independently reviewed",
+    "Unknown is not evidence of absence",
+    "Composio evidence cannot establish vendor MCP",
+    "Client-only and negated MCP statements are not vendor-server proof",
+    "API breadth is a text-coverage heuristic, not an endpoint census"
+  ]
+}

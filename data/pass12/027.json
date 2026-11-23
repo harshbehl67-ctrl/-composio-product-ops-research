@@ -1,0 +1,89 @@
+{
+  "app": {
+    "number": 27,
+    "name": "Telegram",
+    "category": "Communications and Messaging",
+    "hint": "core.telegram.org"
+  },
+  "replayed_at": "2026-11-23T18:45:49.182214+00:00",
+  "source_passes": [
+    "data/pass2/027.json",
+    "data/pass4/027.json"
+  ],
+  "source_searches": [
+    "data/new_search/027.json",
+    "data/pass4_search/027.json"
+  ],
+  "publication_date_note": "Search publication labels are retained exactly; null means no label was available. Relative labels are not exact dates.",
+  "claims": {
+    "auth": {
+      "value": "unknown",
+      "status": "provisional",
+      "sources": [],
+      "evidence": [],
+      "reason": "No sufficiently specific official evidence extracted."
+    },
+    "credential_gate": {
+      "value": [
+        "partner_or_sales"
+      ],
+      "status": "provisional",
+      "sources": [
+        "https://telegram.org/tos/bot-developers?setln=pt-br",
+        "https://telegram.org/tos/bot-developers"
+      ],
+      "evidence": [
+        {
+          "value": "partner_or_sales",
+          "url": "https://telegram.org/tos/bot-developers?setln=pt-br",
+          "excerpt": "y. These terms and your engagement with Bot Platform do not establish any form of agency, partnership, employment or joint venture between you and Telegram. You are expressly forbidden from representing yourself as anything other than an independent third-party as it per",
+          "published_label": null
+        },
+        {
+          "value": "partner_or_sales",
+          "url": "https://telegram.org/tos/bot-developers",
+          "excerpt": "y. These terms and your engagement with Bot Platform do not establish any form of agency, partnership, employment or joint venture between you and Telegram. You are expressly forbidden from representing yourself as anything other than an independent third-party as it per",
+          "published_label": null
+        }
+      ],
+      "reason": "Provisional extraction; validate scope and completeness against cited pages."
+    },
+    "api_surface": {
+      "value": "unknown",
+      "status": "provisional",
+      "sources": [],
+      "evidence": [],
+      "reason": "No sufficiently specific official evidence extracted."
+    },
+    "official_mcp": {
+      "value": "unknown",
+      "status": "provisional",
+      "sources": [],
+      "evidence": [],
+      "reason": "No sufficiently specific official evidence extracted."
+    },
+    "composio_toolkit": {
+      "value": "listed",
+      "status": "provisional",
+      "sources": [
+        "https://docs.composio.dev/toolkits/telegram"
+      ],
+      "evidence": [],
+      "reason": "Catalog match only; not vendor MCP evidence."
+    },
+    "verdict": {
+      "value": "unknown",
+      "status": "provisional",
+      "sources": [],
+      "evidence": [],
+      "reason": "No sufficiently specific official evidence extracted."
+    }
+  },
+  "validation": [
+    "Automatic extraction is provisional until independently reviewed",
+    "Unknown is not evidence of absence",
+    "Composio evidence cannot establish vendor MCP",
+    "Client-only and negated MCP statements are not vendor-server proof",
+    "API breadth is a text-coverage heuristic, not an endpoint census"
+  ]
+}

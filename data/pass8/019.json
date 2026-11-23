@@ -1,0 +1,164 @@
+{
+  "app": {
+    "number": 19,
+    "name": "Gorgias",
+    "category": "Support and Helpdesk",
+    "hint": "gorgias.com"
+  },
+  "replayed_at": "2026-11-23T18:41:02.888992+00:00",
+  "source_passes": [
+    "data/pass2/019.json",
+    "data/pass4/019.json"
+  ],
+  "source_searches": [
+    "data/new_search/019.json",
+    "data/pass4_search/019.json"
+  ],
+  "publication_date_note": "Search publication labels are retained exactly; null means no label was available. Relative labels are not exact dates.",
+  "claims": {
+    "auth": {
+      "value": [
+        "OAuth 2.0",
+        "API key",
+        "Basic authentication"
+      ],
+      "status": "provisional",
+      "sources": [
+        "https://developers.gorgias.com/reference/authentication",
+        "https://developers.gorgias.com/docs/access-tokens-api-keys",
+        "https://docs.gorgias.com/en-US/rest-api-208286"
+      ],
+      "evidence": [
+        {
+          "value": "OAuth 2.0",
+          "url": "https://developers.gorgias.com/reference/authentication",
+          "excerpt": "Authentication For AI agents: the docs index is at https://developers.gorgias.com/llms.txt. Append .md to any documentation page URL to get its markdown version. The Gorgias API supports two authentication methods: 🔐 Private app → API key 👥 Public app → OAuth2 Using OAuth2 is man",
+          "published_label": null
+        },
+        {
+          "value": "API key",
+          "url": "https://developers.gorgias.com/reference/authentication",
+          "excerpt": "ts markdown version. The Gorgias API supports two authentication methods: 🔐 Private app → API key 👥 Public app → OAuth2 Using OAuth2 is mandatory for public apps. For testing purposes, you can perform requests directly from the API Reference using your API keys. Go t",
+          "published_label": null
+        },
+        {
+          "value": "OAuth 2.0",
+          "url": "https://developers.gorgias.com/docs/access-tokens-api-keys",
+          "excerpt": "Access Tokens (API Keys) For AI agents: the docs index is at https://developers.gorgias.com/llms.txt. Append .md to any documentation page URL to get its markdown version. 👉 Please remember that the API key authentication method can be used only for private apps . If you plan to ",
+          "published_label": null
+        },
+        {
+          "value": "API key",
+          "url": "https://developers.gorgias.com/docs/access-tokens-api-keys",
+          "excerpt": "Access Tokens (API Keys) For AI agents: the docs index is at https://developers.gorgias.com/llms.txt. Append .md to any documentation page URL to get its markdown version. 👉 Please remember th",
+          "published_label": null
+        },
+        {
+          "value": "Basic authentication",
+          "url": "https://developers.gorgias.com/docs/access-tokens-api-keys",
+          "excerpt": "--header 'Authorization: Basic base64encode(USERNAME:API_KEY)' 👉 Since we're using HTTP Basic Authentication , the USERNAME:API_KEY pair has to be a base64 encoded string. Note the : between the USERNAME and API_KEY is a separator used to differentiate between the username and",
+          "published_label": null
+        },
+        {
+          "value": "API key",
+          "url": "https://docs.gorgias.com/en-US/rest-api-208286",
+          "excerpt": "ntication with three pieces of information: your base API URL, your email address, and an API key. You can find and manage all three from the REST API settings page in your helpdesk. Note: API keys are tied to your individual account, not to the helpdesk as a whole.",
+          "published_label": null
+        },
+        {
+          "value": "Basic authentication",
+          "url": "https://docs.gorgias.com/en-US/rest-api-208286",
+          "excerpt": "e data in your helpdesk programmatically. To authenticate API requests, Gorgias uses HTTP Basic Authentication with three pieces of information: your base API URL, your email address, and an API key. You can find and manage all three from the REST API settings page in your helpde",
+          "published_label": null
+        }
+      ],
+      "reason": "Provisional extraction; validate scope and completeness against cited pages."
+    },
+    "credential_gate": {
+      "value": "unknown",
+      "status": "provisional",
+      "sources": [],
+      "evidence": [],
+      "reason": "No sufficiently specific official evidence extracted."
+    },
+    "api_surface": {
+      "value": "REST; narrow documented surface",
+      "status": "provisional",
+      "sources": [
+        "https://developers.gorgias.com/docs/access-tokens-api-keys",
+        "https://docs.gorgias.com/en-US/rest-api-208286",
+        "https://docs.gorgias.com/en-US/articles/developer-resources-18370",
+        "https://developers.gorgias.com/reference/introduction"
+      ],
+      "evidence": [
+        {
+          "value": [
+            "REST"
+          ],
+          "breadth": "narrow",
+          "url": "https://developers.gorgias.com/docs/access-tokens-api-keys",
+          "excerpt": "Access Tokens (API Keys) For AI agents: the docs index is at https://developers.gorgias.com/llms.txt. Append .md to any documentation page URL to get its markdown version. 👉 Please remember that the API key authentication method can be used only for private apps . If you plan to ",
+          "published_label": null
+        },
+        {
+          "value": [
+            "REST"
+          ],
+          "breadth": "narrow",
+          "url": "https://docs.gorgias.com/en-US/rest-api-208286",
+          "excerpt": "Access your Gorgias REST API credentials Search All articles Access your Gorgias REST API credentials Updated 5 months ago The Gorgias REST API lets you read and write data in your helpdesk programmatically. To authenticate API requests, Gorgias uses HTTP Basic Authentication wit",
+          "published_label": null
+        },
+        {
+          "value": [
+            "REST"
+          ],
+          "breadth": "narrow",
+          "url": "https://docs.gorgias.com/en-US/articles/developer-resources-18370",
+          "excerpt": "Developer resources Search All articles Developer resources Access your Gorgias REST API credentials Gorgias has an open REST API - go to Settings → You → REST API to access your unique credentials. You can also take a look at our developer documentation for more information. Bui",
+          "published_label": null
+        },
+        {
+          "value": [
+            "REST"
+          ],
+          "breadth": "narrow",
+          "url": "https://developers.gorgias.com/reference/introduction",
+          "excerpt": "Introduction For AI agents: the docs index is at https://developers.gorgias.com/llms.txt. Append .md to any documentation page URL to get its markdown version. 📘 Before you start Please make sure to check out our Quickstart guide to make sure you understand the difference between",
+          "published_label": null
+        }
+      ],
+      "reason": "Provisional extraction; validate scope and completeness against cited pages."
+    },
+    "official_mcp": {
+      "value": "unknown",
+      "status": "provisional",
+      "sources": [],
+      "evidence": [],
+      "reason": "No sufficiently specific official evidence extracted."
+    },
+    "composio_toolkit": {
+      "value": "listed",
+      "status": "provisional",
+      "sources": [
+        "https://docs.composio.dev/toolkits/gorgias"
+      ],
+      "evidence": [],
+      "reason": "Catalog match only; not vendor MCP evidence."
+    },
+    "verdict": {
+      "value": "unknown",
+      "status": "provisional",
+      "sources": [],
+      "evidence": [],
+      "reason": "No sufficiently specific official evidence extracted."
+    }
+  },
+  "validation": [
+    "Automatic extraction is provisional until independently reviewed",
+    "Unknown is not evidence of absence",
+    "Composio evidence cannot establish vendor MCP",
+    "Client-only and negated MCP statements are not vendor-server proof",
+    "API breadth is a text-coverage heuristic, not an endpoint census"
+  ]
+}

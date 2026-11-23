@@ -1,0 +1,120 @@
+{
+  "app": {
+    "number": 97,
+    "name": "higgsfield",
+    "category": "AI, Research and Media-native",
+    "hint": "higgsfield.ai/cli (content suite)"
+  },
+  "checked_at": "2026-11-23T18:15:44.132823+00:00",
+  "prior_source": "data/pass2/097.json",
+  "search_source": "data/pass4_search/097.json",
+  "new_candidates": [
+    {
+      "url": "https://higgsfield.ai/blog/higgsfield-api?trk=article-ssr-frontend-pulse_little-text-block",
+      "title": "Meet the Higgsfield API: How It Works and What You Get (https://higgsfield.ai/blog/higgsfield-api?trk=article-ssr-frontend-pulse_little-text-block)",
+      "published_label": "2 months ago"
+    },
+    {
+      "url": "https://higgsfield.ai/blog/generate-ai-videos-higgsfield-api",
+      "title": "How To Generate AI Videos Straight From the Higgsfield API (https://higgsfield.ai/blog/generate-ai-videos-higgsfield-api)",
+      "published_label": "2 months ago"
+    },
+    {
+      "url": "https://higgsfield.ai/higgsfield-api",
+      "title": "Higgsfield API | Generative Video & Image Models via API (https://higgsfield.ai/higgsfield-api)",
+      "published_label": null
+    },
+    {
+      "url": "https://higgsfield.ai/creator-hub/help-center/integrations/how-do-i-connect-higgsfield-to-ai-agent?fpr=lax-8e2251",
+      "title": "How to Connect Higgsfield to Claude or ChatGPT (https://higgsfield.ai/creator-hub/help-center/integrations/how-do-i-connect-higgsfield-to-ai-agent?fpr=lax-8e2251)",
+      "published_label": "3 months ago"
+    }
+  ],
+  "selected": [
+    {
+      "url": "https://higgsfield.ai/blog/higgsfield-api?trk=article-ssr-frontend-pulse_little-text-block",
+      "title": "Meet the Higgsfield API: How It Works and What You Get (https://higgsfield.ai/blog/higgsfield-api?trk=article-ssr-frontend-pulse_little-text-block)",
+      "published_label": "2 months ago"
+    }
+  ],
+  "new_pages": [
+    {
+      "url": "https://higgsfield.ai/blog/higgsfield-api?trk=article-ssr-frontend-pulse_little-text-block",
+      "requested_url": "https://higgsfield.ai/blog/higgsfield-api?trk=article-ssr-frontend-pulse_little-text-block",
+      "status": 200,
+      "title": "Meet the Higgsfield API: How It Works and What You Get (https://higgsfield.ai/blog/higgsfield-api?trk=article-ssr-frontend-pulse_little-text-block)",
+      "text": "Meet the Higgsfield API: How It Works and What You Get Back The Higgsfield API is a self-serve API for developers that provides direct access to more than 50 current video and image generation models with pay-as-you-go billing in US dollars. There is no subscription: you top up a balance, pay per generation at published rates, and spending stops automatically at zero. The sections below cover billing, models, pricing, and setup. Your browser does not support the video. What Is the Higgsfield API The Higgsfield API gives developers programmatic access to a curated catalog of video and image generation models. If you are building a product that generates video or images, you normally assemble model access from several providers, each with its own billing logic, expiration rules, and rate structures. Estimating what a month of production traffic will cost becomes a separate task. The Higgsfield API is built around a different setup: one key, one balance in US dollars, and a public price list, so you can calculate your costs on your own volume before you commit to anything. The API is a separate product from the higgsfield.ai website. A plan on higgsfield.ai does not affect API access, and API usage is billed independently. Which Models Are Available The Higgsfield API provides access to more than 50 current video and image generation models. The catalog includes the Seedance, Kling, Wan, MiniMax, LTX, PixVerse, Recraft, Ideogram, and Grok families, along with Higgsfield's own models: Soul 2, Soul Cinema, DoP, and Marketing Studio Image. The catalog stays compact on purpose. It carries the current versions of the models most creators and businesses already work with, across both video and image generation, so picking a few models from one catalog can cover most of a production pipeline. Each model page includes: Published price, supported resolutions, durations, and release date Ready code samples and a Copy for agent option A quick model overview and a comparison table of related models Choosing a model for a specific task takes minutes: the overview and comparison table on each model page narrow the options before you write any code. How to Get Started Setting up access takes four steps: Create an account and choose between personal and company use. Add a payment method and top up your balance. Create your first API key. The key is shown once at creation, so store it securely. Creating a key unlocks 20 concurrent requests. Integrate using the Python or TypeScript SDK, or call the REST API directly from any language with an HTTP client. Each model page includes ready code samples, plus prepared setup prompts for Claude Code, Cursor, and ChatGPT (Codex) that configure the integration from a single instruction. Generation requests run asynchronously: you submit a request and receive a request ID right away, while the generation runs in the background. Poll the status or wait for a webhook, then download the completed output. Setup, billing, and storage details are collected in the Help Center guide . What Generation Costs Video generation on the Higgsfield API starts at a few cents per second of output, and image generation is priced per image. Each model has a fixed published rate for every configuration. The table below shows starting rates for several popular models from the catalog. Rates vary with resolution and audio, and the pricing page lists current rates for every model and configuration. What Generation Costs Model Type Starting rate Marketing Studio Image Image $0.0059 / image Soul 2 Image $0.0032 / image Soul Cinema Image $0.0032 / image DoP Video $0.125 / generation Kling 2.5 Video $0.042 / sec Kling 2.6 Video $0.07 / sec Seedance 2.5 Video $0.0738 / sec Kling 3.0 Video $0.112 / sec PixVerse 6 Video $0.115 / sec MiniMax H3 Video $0.13 / sec LTX 2.5 Pro Video $0.17 / sec Wan 3.0 Video $0.20 / sec Seedance 2.0 Video $0.9332 / sec At these rates, a 10-second clip on Kling 3.0 costs $1.12, and the same clip on Kling 2.6 costs $0.70. Failed requests are not charged: billing applies only to successful completions, and the cost of a failed generation is refunded automatically. Teams that already run generation workloads elsewhere can put these rates against their own traffic and see the comparison on real volume. How Billing Works The Higgsfield API is billed in US dollars per generation, with no subscription at any level. The billing model follows five principles: Billing is per request. You add a payment method, top up a balance, and each generation deducts its cost from the balance. Access does not require a plan or a seat fee. The balance is held in US dollars. Every price is listed in dollars as well, so the rate on the pricing page is the rate you pay. Prices are public. Every model's rate is listed openly: video models are priced per second of output, image models per image. Self-serve pricing follows the published model rates. The price per generation is the rate on the pricing page, at any top-up amount. Spending stops at zero. When the balance runs out, requests pause until the next top-up, and the balance cannot go negative. An auto top-up option keeps production workloads running without interruption. Because every rate is published, cost planning happens before integration: multiply a listed rate by your expected volume, and you have your monthly estimate. The same calculation works for teams that already run generation workloads and want to see the numbers on their own volume first. Where the API Fits Higgsfield is an AI-native creative suite, and the API is its entry point for developers. The API is how Higgsfield handles integration: generation running inside your own product, billed in dollars. Teams that prefer a visual workflow use the same models on the higgsfield.ai website. For agent workflows, Higgsfield connects to AI agents through MCP and plugin integrations, so you can pick the agent you already work with. The API is the developer option: it gives a product direct programmatic control over generation. Meet the Higgsfield API: How It Works and What You Get Get Your API Key Got any questions left? Do I need a Higgsfield subscription to use the API? No. The API is a standalone product with its own dollar balance. A plan on higgsfield.ai neither grants API access nor changes API pricing. Does the API balance expire? Yes. Funds expire one year after they are added to the balance, so plan larger top-ups with this period in mind. How is the Higgsfield API different from Higgsfield MCP? Higgsfield MCP connects Claude to an existing Higgsfield account, and the Higgsfield plugin does the same for ChatGPT; both spend plan credits. The API is a separate developer product billed in dollars per request, designed for building generation into your own applications. Who is the Higgsfield API for? Developers and teams building generation into their own products. Both personal and company use are supported: every account starts with a personal organization, and you can create a team organization and invite people to it. Switching between workspaces happens through the profile icon, under Organization. Where can I track API usage and spending? The API dashboard includes an Analytics section with total spend and request counts over time, plus CSV export for reporting. The Billing section shows the current balance, payment methods, and invoices. How long are generations stored? Generated output files are stored and accessible for a minimum of 7 days from creation. Files may be removed from Higgsfield servers at any time after this period, so download completed outputs to your own storage for long-term retention. Does the API support concurrent requests? Yes. Each account has a concurrency limit that defines how many generations can run in parallel, and the limit increases with the account's top-up volume. Can generated content be used commercially? Yes. Content generated through the Higgsfield API can be used in commercial products, ads, and client work. by Higgsfield Contents Discover more View all Guides MCP for Marketers: Creatives Without Leaving the Chat 7 min · Aug 17, 2026 Comparisons Seedance 2.5 Pricing: Full Breakdown of Credits, Plans, and Cost per Clip 12 min · Oct 20, 2026",
+      "published_label": "2 months ago"
+    }
+  ],
+  "claims": {
+    "auth": {
+      "value": "unknown",
+      "sources": [],
+      "evidence": [],
+      "reason": "No sufficiently specific positive evidence extracted; review targeted search results."
+    },
+    "credential_gate": {
+      "value": "unknown",
+      "sources": [],
+      "evidence": [],
+      "reason": "No sufficiently specific positive evidence extracted; review targeted search results."
+    },
+    "api_surface": {
+      "value": [
+        "REST"
+      ],
+      "sources": [
+        "https://higgsfield.ai/creator-hub/help-center/integrations/what-is-the-higgsfield-api",
+        "https://higgsfield.ai/creator-hub/help-center/integrations/what-is-the-higgsfield-api?fpr=adtestbench",
+        "https://higgsfield.ai/blog/higgsfield-api?trk=article-ssr-frontend-pulse_little-text-block"
+      ],
+      "evidence": [
+        {
+          "value": "REST",
+          "url": "https://higgsfield.ai/creator-hub/help-center/integrations/what-is-the-higgsfield-api",
+          "excerpt": "ing a key unlocks 20 concurrent requests. Connect through the Python or TypeScript SDK, or call the REST API directly from any language with an HTTP client, sending requests to api.higgsfield.ai . Each model page carries sample code, and if you work through a coding agent, ready setup pr",
+          "published_label": null
+        },
+        {
+          "value": "REST",
+          "url": "https://higgsfield.ai/creator-hub/help-center/integrations/what-is-the-higgsfield-api?fpr=adtestbench",
+          "excerpt": "ing a key unlocks 20 concurrent requests. Connect through the Python or TypeScript SDK, or call the REST API directly from any language with an HTTP client, sending requests to api.higgsfield.ai . Each model page carries sample code, and if you work through a coding agent, ready setup pr",
+          "published_label": null
+        },
+        {
+          "value": "REST",
+          "url": "https://higgsfield.ai/blog/higgsfield-api?trk=article-ssr-frontend-pulse_little-text-block",
+          "excerpt": "ing a key unlocks 20 concurrent requests. Integrate using the Python or TypeScript SDK, or call the REST API directly from any language with an HTTP client. Each model page includes ready code samples, plus prepared setup prompts for Claude Code, Cursor, and ChatGPT (Codex) that configur",
+          "published_label": "2 months ago"
+        }
+      ],
+      "reason": "Provisional extraction: validate scope and completeness against the cited page."
+    },
+    "official_mcp": {
+      "value": "unknown",
+      "sources": [],
+      "evidence": [],
+      "reason": "No sufficiently specific positive evidence extracted; review targeted search results."
+    },
+    "composio_toolkit": {
+      "value": "listed",
+      "sources": [
+        "https://docs.composio.dev/toolkits/higgsfield"
+      ],
+      "evidence": [],
+      "reason": "Catalog match; scope needs review."
+    },
+    "verdict": {
+      "value": "unknown",
+      "sources": [],
+      "evidence": [],
+      "reason": "A supported access path, authentication method and API surface were not all extracted."
+    }
+  },
+  "validation": [
+    "All claims are provisional",
+    "No vendor MCP inference from Composio catalog",
+    "Negated MCP or client-only source is not counted as vendor-server proof"
+  ]
+}

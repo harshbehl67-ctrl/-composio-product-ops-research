@@ -1,0 +1,105 @@
+{
+  "app": {
+    "number": 64,
+    "name": "Cloudflare",
+    "category": "Developer, Infra and Data platforms",
+    "hint": "developers.cloudflare.com/api"
+  },
+  "replayed_at": "2026-11-23T18:17:23.567102+00:00",
+  "source_passes": [
+    "data/pass2/064.json",
+    "data/pass4/064.json"
+  ],
+  "source_search": "data/new_search/064.json",
+  "publication_date_note": "Published labels are retained exactly as supplied by search; missing labels are null. Relative labels must not be treated as exact publication dates.",
+  "claims": {
+    "auth": {
+      "value": [
+        "API key",
+        "API token",
+        "OAuth 2.0"
+      ],
+      "sources": [
+        "https://developers.cloudflare.com/fundamentals/api/get-started/token-formats/",
+        "https://developers.cloudflare.com/fundamentals/api/how-to/create-via-api/",
+        "https://developers.cloudflare.com/cloudflare-one/access-controls/authenticate-agents/"
+      ],
+      "evidence": [
+        {
+          "value": "API key",
+          "url": "https://developers.cloudflare.com/fundamentals/api/get-started/token-formats/",
+          "excerpt": "distinct prefix followed by 40 characters and a checksum. Credential type Description Format Global API Key Global key tied to your user account (full access) cfk_[40 characters][checksum] User API Token Scoped token you create for specific permissions cfut_[40 characters][checksum] Acc",
+          "published_label": null
+        },
+        {
+          "value": "API token",
+          "url": "https://developers.cloudflare.com/fundamentals/api/get-started/token-formats/",
+          "excerpt": "lobal API Key Global key tied to your user account (full access) cfk_[40 characters][checksum] User API Token Scoped token you create for specific permissions cfut_[40 characters][checksum] Account API Token Token owned by the account, not tied to a specific user cfat_[40 characters][chec",
+          "published_label": null
+        },
+        {
+          "value": "API token",
+          "url": "https://developers.cloudflare.com/fundamentals/api/how-to/create-via-api/",
+          "excerpt": " via API Generate new API tokens on the fly via the API. Before you can do this, you must create an API token in the Cloudflare dashboard that can create subsequent tokens. Note To create user-owned API tokens, use the Create additional tokens template. The User > API Tokens > Edit permis",
+          "published_label": "last month"
+        },
+        {
+          "value": "OAuth 2.0",
+          "url": "https://developers.cloudflare.com/cloudflare-one/access-controls/authenticate-agents/",
+          "excerpt": "s to automatically detect Cloudflare Access-protected resources and authenticate using the standard OAuth 2.0 flow with PKCE (RFC 9728). --- name : access-oauth description : \"Detect Cloudflare Access-protected websites and authenticate via the standard OAuth 2.0 flow (RFC 9728 resource m",
+          "published_label": "7 months ago"
+        }
+      ],
+      "reason": "Provisional extraction: validate scope and completeness against the cited page."
+    },
+    "credential_gate": {
+      "value": "unknown",
+      "sources": [],
+      "evidence": [],
+      "reason": "No sufficiently specific positive evidence extracted; review targeted search results."
+    },
+    "api_surface": {
+      "value": "unknown",
+      "sources": [],
+      "evidence": [],
+      "reason": "No sufficiently specific positive evidence extracted; review targeted search results."
+    },
+    "official_mcp": {
+      "value": "yes (provisional)",
+      "sources": [
+        "https://developers.cloudflare.com/cloudflare-one/access-controls/ai-controls/mcp-portals/?ref=runtimewire"
+      ],
+      "evidence": [
+        {
+          "value": "yes (provisional)",
+          "url": "https://developers.cloudflare.com/cloudflare-one/access-controls/ai-controls/mcp-portals/?ref=runtimewire",
+          "excerpt": "er a full setup or a partial ( CNAME ) setup An identity provider configured on Cloudflare Zero Trust Add an MCP server Add individual MCP servers to Cloudflare Access to bring them under centralized management. To add an MCP server: In the Cloudflare dashboard âï¸ , go to Ze",
+          "published_label": "2 weeks ago",
+          "context_warning": "Review vendor ownership, dates, and scope."
+        }
+      ],
+      "reason": "Provisional; check source date, scope, and vendor ownership."
+    },
+    "composio_toolkit": {
+      "value": "listed",
+      "sources": [
+        "https://docs.composio.dev/toolkits/cloudflare"
+      ],
+      "evidence": [],
+      "reason": "Catalog match; scope needs review."
+    },
+    "verdict": {
+      "value": "unknown",
+      "sources": [],
+      "evidence": [],
+      "reason": "A supported access path, authentication method and API surface were not all extracted."
+    }
+  },
+  "validation": [
+    "Automatic extraction is provisional and not a verified final claim",
+    "Unknown is not evidence of absence",
+    "No Composio-to-vendor-MCP inference",
+    "Basic authentication may be endpoint-specific",
+    "Client-only and negated statements are not positive MCP evidence"
+  ]
+}

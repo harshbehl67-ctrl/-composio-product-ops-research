@@ -1,0 +1,148 @@
+{
+  "app": {
+    "number": 1,
+    "name": "Salesforce",
+    "category": "CRM and Sales",
+    "hint": "salesforce.com"
+  },
+  "checked_at": "2026-11-23T18:14:53.961936+00:00",
+  "prior_source": "data/pass2/001.json",
+  "search_source": "data/pass4_search/001.json",
+  "new_candidates": [
+    {
+      "url": "https://developer.salesforce.com/docs/platform/graphql/references",
+      "title": "Salesforce Developers (https://developer.salesforce.com/docs/platform/graphql/references)",
+      "published_label": null
+    },
+    {
+      "url": "https://developer.salesforce.com/docs/platform/graphql/guide/authorization.html",
+      "title": "Salesforce Developers (https://developer.salesforce.com/docs/platform/graphql/guide/authorization.html)",
+      "published_label": null
+    },
+    {
+      "url": "https://trailhead.salesforce.com/content/learn/modules/api_basics/api_basics_overview",
+      "title": "Salesforce Platform API Integration Guide (https://trailhead.salesforce.com/content/learn/modules/api_basics/api_basics_overview)",
+      "published_label": null
+    },
+    {
+      "url": "https://developer.salesforce.com/docs/platform/graphql/guide/requests-and-responses.html",
+      "title": "Salesforce Developers (https://developer.salesforce.com/docs/platform/graphql/guide/requests-and-responses.html)",
+      "published_label": null
+    },
+    {
+      "url": "https://developer.salesforce.com/docs/platform/graphql/guide/graphql-about.html",
+      "title": "Salesforce Developers (https://developer.salesforce.com/docs/platform/graphql/guide/graphql-about.html)",
+      "published_label": null
+    },
+    {
+      "url": "https://developer.salesforce.com/docs/platform/connect-rest-api/guide/quickstart.html",
+      "title": "Salesforce Developers (https://developer.salesforce.com/docs/platform/connect-rest-api/guide/quickstart.html)",
+      "published_label": null
+    },
+    {
+      "url": "https://resources.docs.salesforce.com/latest/latest/en-us/sfdc/pdf/api_rest.pdf",
+      "title": "REST API Developer Guide (https://resources.docs.salesforce.com/latest/latest/en-us/sfdc/pdf/api_rest.pdf)",
+      "published_label": "7 months ago"
+    },
+    {
+      "url": "https://developer.salesforce.com/docs/platform/graphql/guide/get-started-graphql.html",
+      "title": "Salesforce Developers (https://developer.salesforce.com/docs/platform/graphql/guide/get-started-graphql.html)",
+      "published_label": null
+    },
+    {
+      "url": "https://developer.salesforce.com/docs/platform/api-rest/guide/intro-rest.html",
+      "title": "Salesforce Developers (https://developer.salesforce.com/docs/platform/api-rest/guide/intro-rest.html)",
+      "published_label": null
+    },
+    {
+      "url": "https://resources.docs.salesforce.com/latest/latest/en-us/sfdc/pdf/sfdx_cli_reference.pdf",
+      "title": "Salesforce CLI Command Reference (https://resources.docs.salesforce.com/latest/latest/en-us/sfdc/pdf/sfdx_cli_reference.pdf)",
+      "published_label": "7 months ago"
+    },
+    {
+      "url": "https://developer.salesforce.com/docs/platform/api-rest/guide/quickstart-dev-org.html",
+      "title": "Salesforce Developers (https://developer.salesforce.com/docs/platform/api-rest/guide/quickstart-dev-org.html)",
+      "published_label": null
+    },
+    {
+      "url": "https://developer.salesforce.com/docs/platform/api/guide/sforce-api-quickstart-steps-obtain-dev-org.html",
+      "title": "Salesforce Developers (https://developer.salesforce.com/docs/platform/api/guide/sforce-api-quickstart-steps-obtain-dev-org.html)",
+      "published_label": null
+    }
+  ],
+  "selected": [
+    {
+      "url": "https://developer.salesforce.com/docs/platform/graphql/guide/authorization.html",
+      "title": "Salesforce Developers (https://developer.salesforce.com/docs/platform/graphql/guide/authorization.html)",
+      "published_label": null
+    },
+    {
+      "url": "https://developer.salesforce.com/docs/platform/graphql/references",
+      "title": "Salesforce Developers (https://developer.salesforce.com/docs/platform/graphql/references)",
+      "published_label": null
+    }
+  ],
+  "new_pages": [
+    {
+      "url": "https://developer.salesforce.com/docs/platform/graphql/guide/authorization.html",
+      "requested_url": "https://developer.salesforce.com/docs/platform/graphql/guide/authorization.html",
+      "status": 403,
+      "title": "Salesforce Developers (https://developer.salesforce.com/docs/platform/graphql/guide/authorization.html)",
+      "text": "Oops Something went wrong Reference id: 0.4976cd17.1795457692.102cd26f",
+      "published_label": null
+    },
+    {
+      "url": "https://developer.salesforce.com/docs/platform/graphql/references",
+      "requested_url": "https://developer.salesforce.com/docs/platform/graphql/references",
+      "status": 403,
+      "title": "Salesforce Developers (https://developer.salesforce.com/docs/platform/graphql/references)",
+      "text": "Oops Something went wrong Reference id: 0.5c76cd17.1795457692.1917ce16",
+      "published_label": null
+    }
+  ],
+  "claims": {
+    "auth": {
+      "value": "unknown",
+      "sources": [],
+      "evidence": [],
+      "reason": "No sufficiently specific positive evidence extracted; review targeted search results."
+    },
+    "credential_gate": {
+      "value": "unknown",
+      "sources": [],
+      "evidence": [],
+      "reason": "No sufficiently specific positive evidence extracted; review targeted search results."
+    },
+    "api_surface": {
+      "value": "unknown",
+      "sources": [],
+      "evidence": [],
+      "reason": "No sufficiently specific positive evidence extracted; review targeted search results."
+    },
+    "official_mcp": {
+      "value": "unknown",
+      "sources": [],
+      "evidence": [],
+      "reason": "No sufficiently specific positive evidence extracted; review targeted search results."
+    },
+    "composio_toolkit": {
+      "value": "listed",
+      "sources": [
+        "https://docs.composio.dev/toolkits/salesforce"
+      ],
+      "evidence": [],
+      "reason": "Catalog match; scope needs review."
+    },
+    "verdict": {
+      "value": "unknown",
+      "sources": [],
+      "evidence": [],
+      "reason": "A supported access path, authentication method and API surface were not all extracted."
+    }
+  },
+  "validation": [
+    "All claims are provisional",
+    "No vendor MCP inference from Composio catalog",
+    "Negated MCP or client-only source is not counted as vendor-server proof"
+  ]
+}

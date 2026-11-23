@@ -1,0 +1,179 @@
+{
+  "app": {
+    "number": 77,
+    "name": "ClickUp",
+    "category": "Productivity and Project Management",
+    "hint": "clickup.com/api"
+  },
+  "replayed_at": "2026-11-23T18:45:16.989619+00:00",
+  "source_passes": [
+    "data/pass2/077.json",
+    "data/pass4/077.json"
+  ],
+  "source_searches": [
+    "data/new_search/077.json",
+    "data/pass4_search/077.json"
+  ],
+  "publication_date_note": "Search publication labels are retained exactly; null means no label was available. Relative labels are not exact dates.",
+  "claims": {
+    "auth": {
+      "value": [
+        "OAuth 2.0",
+        "API key",
+        "API token"
+      ],
+      "status": "provisional",
+      "sources": [
+        "https://developer.clickup.com/docs/authentication",
+        "https://developer.clickup.com/docs/Getting%20Started",
+        "https://developer.clickup.com/docs/connect-an-ai-assistant-to-clickups-mcp-server",
+        "https://help.clickup.com/hc/en-us/articles/33335772678423-What-is-ClickUp-MCP",
+        "https://developer.clickup.com/docs/trytheapi",
+        "https://help.clickup.com/hc/en-us/articles/6303422883095-Create-your-own-app-with-the-ClickUp-API"
+      ],
+      "evidence": [
+        {
+          "value": "OAuth 2.0",
+          "url": "https://developer.clickup.com/docs/authentication",
+          "excerpt": "n token for accessing their ClickUp resources. OAuth resources and specs: Authentication: OAuth 2.0 Grant Type: Authorization Code . Learn more . Authorization URL: https://app.clickup.com/api Access Token URL: https://api.clickup.com/api/v2/oauth/token 👀 Note ClickUp",
+          "published_label": null
+        },
+        {
+          "value": "API key",
+          "url": "https://developer.clickup.com/docs/authentication",
+          "excerpt": "/v2/oauth/token 👀 Note ClickUp uses the authorization code grant type . Use your personal API key to use the Try-It feature in the API docs. Step 1: Create an OAuth app Only Workspace owners or admins can create OAuth apps. Log in to ClickUp. In the upper-right corne",
+          "published_label": null
+        },
+        {
+          "value": "API token",
+          "url": "https://developer.clickup.com/docs/authentication",
+          "excerpt": "I, you must authenticate every request. For personal use, authenticate with your personal API token . For apps or integrations that other people use, use the OAuth flow , allowing users to authorize Workspaces for your app. Include the token in the Authorization header",
+          "published_label": null
+        },
+        {
+          "value": "API key",
+          "url": "https://developer.clickup.com/docs/Getting%20Started",
+          "excerpt": "can all be executed against your ClickUp account. Eith provide the UI with your personal API key or login and your credentials will be prefilled. The following guides give a quickstart on how to use the ClickUp API and expand on the features available. Sample Applic",
+          "published_label": null
+        },
+        {
+          "value": "API token",
+          "url": "https://developer.clickup.com/docs/Getting%20Started",
+          "excerpt": "I, you must authenticate every request. For personal use, authenticate with your personal API token . For apps or integrations that other people use, use the OAuth flow , allowing users to authorize Workspaces for your app. Include the token in the Authorization header",
+          "published_label": null
+        },
+        {
+          "value": "OAuth 2.0",
+          "url": "https://developer.clickup.com/docs/connect-an-ai-assistant-to-clickups-mcp-server",
+          "excerpt": "ClickUp's MCP Server For AI agents: the docs index is at https://developer.clickup.com/llms.txt. Append .md to any documentation page URL to get its markdown version. The Model Context Protocol (MCP) is a secure, standardized framework that lets external AI agents interact with C",
+          "published_label": null
+        },
+        {
+          "value": "API key",
+          "url": "https://developer.clickup.com/docs/connect-an-ai-assistant-to-clickups-mcp-server",
+          "excerpt": "end the 24 hour limit. Rate limits cannot be reset. FAQ Q. Can I authenticate with my own API keys or Auth access tokens? A. No, you cannot authenticate using your own API keys or Auth access tokens. We only support OAuth for authentication. Q. Why can't I delete thi",
+          "published_label": null
+        },
+        {
+          "value": "OAuth 2.0",
+          "url": "https://help.clickup.com/hc/en-us/articles/33335772678423-What-is-ClickUp-MCP",
+          "excerpt": "What is ClickUp MCP? – ClickUp Help Skip to main content Search Ask me anything Your AI models and agents can use our official MCP (Model Context Protocol) server to access your ClickUp data in a simple and secure way. It's designed to work seamlessly with popular AI assistants l",
+          "published_label": null
+        },
+        {
+          "value": "API key",
+          "url": "https://help.clickup.com/hc/en-us/articles/33335772678423-What-is-ClickUp-MCP",
+          "excerpt": "ow many MCP calls my Workspace has used? Not at this time. Can I authenticate with my own API keys or access tokens? No, only OAuth is supported. OAuth is an industry-standard protocol that provides secure, delegated access. It lets you grant limited access to your r",
+          "published_label": null
+        },
+        {
+          "value": "API key",
+          "url": "https://developer.clickup.com/docs/trytheapi",
+          "excerpt": "Click \"Try It\" to make the request Authentication Under Credentials , paste your personal API key to authenticate your requests. All API calls are made against the Workspace from which the API token was generated. Updated about 1 year ago Did this page help you? Yes",
+          "published_label": null
+        },
+        {
+          "value": "API token",
+          "url": "https://developer.clickup.com/docs/trytheapi",
+          "excerpt": "n the right side of each endpoint. Requests are made against the Workspace from which the API token was generated. Navigate to any endpoint in the Reference section Look for the \"Try It\" panel on the right side Fill in the required parameters and customize optional one",
+          "published_label": null
+        },
+        {
+          "value": "OAuth 2.0",
+          "url": "https://help.clickup.com/hc/en-us/articles/6303422883095-Create-your-own-app-with-the-ClickUp-API",
+          "excerpt": "create an app that integrates with ClickUp? Give your users the ability to sign in using OAuth 2.0! Be sure to also check out our API documentation ! What you'll need The ClickUp API is available on all ClickUp plans . Workspace owners or admins can manage integration",
+          "published_label": null
+        },
+        {
+          "value": "API token",
+          "url": "https://help.clickup.com/hc/en-us/articles/6303422883095-Create-your-own-app-with-the-ClickUp-API",
+          "excerpt": "in the Workspace. Members and limited members with full edit permissions can use personal API tokens. Limited members with view-only permissions cannot access or manage the API. OAuth 2 flow When you want to develop an application that others can use, you must use an O",
+          "published_label": null
+        }
+      ],
+      "reason": "Provisional extraction; validate scope and completeness against cited pages."
+    },
+    "credential_gate": {
+      "value": "unknown",
+      "status": "provisional",
+      "sources": [],
+      "evidence": [],
+      "reason": "No sufficiently specific official evidence extracted."
+    },
+    "api_surface": {
+      "value": "unknown",
+      "status": "provisional",
+      "sources": [],
+      "evidence": [],
+      "reason": "No sufficiently specific official evidence extracted."
+    },
+    "official_mcp": {
+      "value": "vendor_server",
+      "status": "provisional",
+      "sources": [
+        "https://developer.clickup.com/docs/connect-an-ai-assistant-to-clickups-mcp-server",
+        "https://help.clickup.com/hc/en-us/articles/33335772678423-What-is-ClickUp-MCP"
+      ],
+      "evidence": [
+        {
+          "value": "vendor_server",
+          "url": "https://developer.clickup.com/docs/connect-an-ai-assistant-to-clickups-mcp-server",
+          "excerpt": "c AI features in their preferred apps, all while keeping security and user control tight. ClickUp's MCP Server is available on all plans . Setup instructions Learn how to setup your AI assistant with ClickUp's MCP server. Our MCP server URL is https://mcp.clickup.com/mcp . What you can do Wit",
+          "published_label": null,
+          "context_note": "Vendor-owned server statement; review date and access scope."
+        },
+        {
+          "value": "vendor_server",
+          "url": "https://help.clickup.com/hc/en-us/articles/33335772678423-What-is-ClickUp-MCP",
+          "excerpt": "files and images to Channel messages, Posts, and Channel thread replies. Available tools ClickUp's MCP server enables AI assistants like ChatGPT, Claude, Cursor, or VS Code, to integrate with ClickUp's tools and data. This means your AI assistant can now execute actions, retrieve inform",
+          "published_label": null,
+          "context_note": "Vendor-owned server statement; review date and access scope."
+        }
+      ],
+      "reason": "Provisional; check date, ownership and access scope."
+    },
+    "composio_toolkit": {
+      "value": "listed",
+      "status": "provisional",
+      "sources": [
+        "https://docs.composio.dev/toolkits/clickup"
+      ],
+      "evidence": [],
+      "reason": "Catalog match only; not vendor MCP evidence."
+    },
+    "verdict": {
+      "value": "unknown",
+      "status": "provisional",
+      "sources": [],
+      "evidence": [],
+      "reason": "No sufficiently specific official evidence extracted."
+    }
+  },
+  "validation": [
+    "Automatic extraction is provisional until independently reviewed",
+    "Unknown is not evidence of absence",
+    "Composio evidence cannot establish vendor MCP",
+    "Client-only and negated MCP statements are not vendor-server proof",
+    "API breadth is a text-coverage heuristic, not an endpoint census"
+  ]
+}

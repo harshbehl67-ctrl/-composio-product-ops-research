@@ -1,0 +1,156 @@
+{
+  "app": {
+    "number": 6,
+    "name": "Podio",
+    "category": "CRM and Sales",
+    "hint": "podio.com"
+  },
+  "checked_at": "2026-11-23T18:14:54.308597+00:00",
+  "prior_source": "data/pass2/006.json",
+  "search_source": "data/pass4_search/006.json",
+  "new_candidates": [
+    {
+      "url": "https://developers.podio.com/index/api",
+      "title": "Concepts and conventions: Conventions and structure of the API - Podio API Documentation (https://developers.podio.com/index/api)",
+      "published_label": null
+    },
+    {
+      "url": "https://developers.podio.com/doc/reference",
+      "title": "Reference | API Documentation - Podio API Documentation (https://developers.podio.com/doc/reference)",
+      "published_label": null
+    }
+  ],
+  "selected": [
+    {
+      "url": "https://developers.podio.com/index/api",
+      "title": "Concepts and conventions: Conventions and structure of the API - Podio API Documentation (https://developers.podio.com/index/api)",
+      "published_label": null
+    }
+  ],
+  "new_pages": [
+    {
+      "url": "https://developers.podio.com/index/api",
+      "requested_url": "https://developers.podio.com/index/api",
+      "status": 200,
+      "title": "Concepts and conventions: Conventions and structure of the API - Podio API Documentation (https://developers.podio.com/index/api)",
+      "text": "Concepts and conventions: Conventions and structure of the API - Podio API Documentation Getting started The core concepts of Podio API conventions and structure Rate limits FAQ Get an API key Authentication API Reference Tutorials Client Libraries Developer Forums Partner Extensions Terms of Use Concepts and conventions: Conventions and structure of the API Structure and conventions The API is available at https://api.podio.com . It is RESTful and uses json as the exchange format. SSL is mandatory and used for all communication. OAuth2 is used for authorization and authentication. HTTP methods & URLs The API uses the following HTTP methods for object manipulation: GET Used for object retrieval POST Used for object creation and object actions PUT Used for object update DELETE Used for object deletion The API is slash-aware, meaning a URL with a trailing slash is not the same as one without it. If the ressource you are working on is a list of objects, a trailing slash should be added. If not, no trailing slash should be added. E.g. /widget/space/1/ has a trailing slash because the resource returns a list of widgets on the given space. When creating a new widget the same resource is used, just with a POST, as you are adding to that list. When operating on a single widget /widget/1 is used, as the resource is a single object. Formats The following section lists the formats and conventions used when exchanging data with the API. JSON The JSON standard is followed fully in all exhanges with the API. This means that the API can only receive JSON lists or objects and not scalar values. JSON values must be of the correct type. IDs and numbers in general must be integers, not strings. Boolean values must be bool values, not strings or numbers. Boolean parameters The exception to the above is that boolean parameters to GET operations uses \"0\" to indicate false and \"1\" to indicate true . For all other operations, it must still be a bool. Date and time Since JSON does not have a type for dates and times, they are exchanged as strings. Dates must be formatted as YYYY-MM-DD and datetimes must be formatted as YYYY-MM-DD HH:MM:SS. Dates and times are always in UTC, except for user entered dates and times. Users entered dates are regarded as naive/local, meaning they are not timezone aware. Currently the only user entered dates are date values for items. Locales User locales follow the ISO 639-1 standard . Timezones Timezones are represented using their full name, and not abbreviations. E.g. Copenhagen is \"Europe/Copenhagen\". For a full list see Wikipedia . Contact identifiers Some API operations asks you to provide a contact identifier. E.g. when assigning a task to someone. In the simplest case can provide an array of user_ids . If you need to use a contact identifier to point to a person who's not yet a Podio user you can use an expanded format. The advantage is that you can e.g. assign a task to a non-Podio user and the person will automatically be invited to Podio etc. The format is an array of objects. The possible contact types are: \"user\" (id: user_id), \"profile\" (id: profile_id), \"mail\" (id: e-mail address), \"space\" (id: space_id), \"external\" (id: see example below). Examples: [ { \"type\" : \"user\" , \"id\" : 3 }, { \"type\" : \"profile\" , \"id\" : 123456 }, { \"type\" : \"mail\" , \"id\" : \"example@example.com\" }, { \"type\" : \"space\" , \"id\" : 123456 }, { \"type\" : \"external\" , \"id\" : { \"linked_account_id\" : 123 , \"external_contact_id\" : \"my_ext_id\" }}, ] When dealing with people who are Podio users you should always provide their user_id or profile_id rather than an email address. This avoids duplicate user accounts in cases where the person is using a different email than you are anticipating. By-line references Almost all objects returned from the API have references to the entity that created the object, updated the object, etc. In the operation details there will simply be a reference to this guide, which details the data returned from by-lines. The below contains an example of how this looks for a created_by reference. { \"type\" : \"The type of the entity, either 'user' or 'app'\" , \"id\" : \"The id of the entity, either the id of the user or the id of the app\" , \"avatar_type\" : \"The type of the avatar, either 'file' or 'icon'\" , \"avatar_id\" : \"The id of the avatar, either the id of the file or the id of the icon\" , \"name\" : \"The name of the entity, either the name of the user or the name of the app\" , \"link\" : \"The link to the profile page, if any\" } Bundling responses using fields parameter It can often be useful to include more or less content in responses than the defaults provided by Podio. E.g. by default a request to Filter Items does not include the files of each individual item or when you get a single item you might want to include the app the item belongs to in the response. To solve those cases you can use a fields parameter in your URL. // Include \"votes\" when getting a single item / item / { item_id } ? fields = votes // Include files when getting filtered items / item / app / { app_id } / filter /? fields = items . fields ( files ) // Include the full app when getting an item / item / { item_id } ? fields = app . view ( full ) These examples show the three main ways to use the fields parameter: Include additional attributes on the object you are getting (such as votes on an item) Include additional attributes on objects from a nested property (such as including files on the items property) Use a standard view instead of listing all fields (such as including the full app on an item). Typical values are micro, mini, full You can use nesting to get additional fields on any number of sub-properties. E.g. you can get the full app and the full space when fetching a single item: // Include the full app and the full space when getting an item / item / { item_id } ? fields = app . view ( full ) . fields ( space . view ( full )) Using fields to bundle objects can be a way to drastically reduce the amount of API requests you have to make.",
+      "published_label": null
+    }
+  ],
+  "claims": {
+    "auth": {
+      "value": [
+        "OAuth 2.0",
+        "API key"
+      ],
+      "sources": [
+        "https://developers.podio.com/authentication",
+        "https://developers.podio.com/authentication/server_side",
+        "https://developers.podio.com/doc/oauth-authorization/get-access-token-22359",
+        "https://developers.podio.com/api-key",
+        "https://developers.podio.com/doc/oauth-authorization",
+        "https://developers.podio.com/authentication/username_password"
+      ],
+      "evidence": [
+        {
+          "value": "OAuth 2.0",
+          "url": "https://developers.podio.com/authentication",
+          "excerpt": "er Forums Partner Extensions Terms of Use How to authenticate with Podio API The Podio API uses the OAuth2 protocol for authentication. This allows external apps to request authorization to Podio without having direct access to the user's password. Our API supports different OAuth flow",
+          "published_label": null
+        },
+        {
+          "value": "API key",
+          "url": "https://developers.podio.com/authentication",
+          "excerpt": "Authentication - Podio API Documentation Getting started Get an API key Authentication Scopes & Permissions Server-side flow Client-side flow Username & password flow App authentication flow API Reference Tutorials Client Libraries Developer Forums Pa",
+          "published_label": null
+        },
+        {
+          "value": "OAuth 2.0",
+          "url": "https://developers.podio.com/authentication/server_side",
+          "excerpt": "E_STRING Example: Ruby Sinatra The following code example is written in Ruby, using Sinatra and the OAuth2 gem: require 'rubygems' require 'sinatra' require 'oauth2' require 'json' def podio_client client_id = 'YOUR_CLIENT_ID' client_secret = 'YOUR_CLIENT_SECRET' OAuth2 :: Client . new",
+          "published_label": null
+        },
+        {
+          "value": "API key",
+          "url": "https://developers.podio.com/authentication/server_side",
+          "excerpt": "Authentication: Server-side flow - Podio API Documentation Getting started Get an API key Authentication Scopes & Permissions Server-side flow Client-side flow Username & password flow App authentication flow API Reference Tutorials Client Libraries Developer Forums Pa",
+          "published_label": null
+        },
+        {
+          "value": "OAuth 2.0",
+          "url": "https://developers.podio.com/doc/oauth-authorization/get-access-token-22359",
+          "excerpt": "d the apps login token This operation can return a wide variety of error codes. For details see the OAuth 2 specification. Usage Ruby Gem o_auth.rb Podio :: OAuth . get_access_token ( attributes ) Parameters app_id The id of the app to login as, if using \" app \" grant type app_token The",
+          "published_label": null
+        },
+        {
+          "value": "API key",
+          "url": "https://developers.podio.com/doc/oauth-authorization/get-access-token-22359",
+          "excerpt": "OAuth authorization | Get access token - Podio API Documentation Getting started Get an API key Authentication API Reference Actions Alerts App market Applications Batch Calendar Comments Contacts Conversations Devices Email Embeds Files Flows Forms Friends Grants Hooks Impo",
+          "published_label": null
+        },
+        {
+          "value": "API key",
+          "url": "https://developers.podio.com/api-key",
+          "excerpt": "Get API key - Podio API Documentation Getting started Get an API key Authentication API Reference Tutorials Client Libraries Developer Forums Partner Extensions Terms of Use Get API key Gener",
+          "published_label": null
+        },
+        {
+          "value": "OAuth 2.0",
+          "url": "https://developers.podio.com/doc/oauth-authorization",
+          "excerpt": "uthorization Operations Get access token Get scope Invalidate grant Invalidate tokens This API uses OAuth 2.0 (http://oauth.net/2/) for authentication users of the API. Currently supported is draft-10 of the specification. It is recommended to read http://tools.ietf.org/html/draft-ietf-oa",
+          "published_label": null
+        },
+        {
+          "value": "API key",
+          "url": "https://developers.podio.com/doc/oauth-authorization",
+          "excerpt": "OAuth authorization | API Documentation - Podio API Documentation Getting started Get an API key Authentication API Reference Actions Alerts App market Applications Batch Calendar Comments Contacts Conversations Devices Email Embeds Files Flows Forms Friends Grants Hooks Impo",
+          "published_label": null
+        },
+        {
+          "value": "API key",
+          "url": "https://developers.podio.com/authentication/username_password",
+          "excerpt": "Authentication: Username & password flow - Podio API Documentation Getting started Get an API key Authentication Scopes & Permissions Server-side flow Client-side flow Username & password flow App authentication flow API Reference Tutorials Client Libraries Developer Forums Pa",
+          "published_label": null
+        }
+      ],
+      "reason": "Provisional extraction: validate scope and completeness against the cited page."
+    },
+    "credential_gate": {
+      "value": "unknown",
+      "sources": [],
+      "evidence": [],
+      "reason": "No sufficiently specific positive evidence extracted; review targeted search results."
+    },
+    "api_surface": {
+      "value": "unknown",
+      "sources": [],
+      "evidence": [],
+      "reason": "No sufficiently specific positive evidence extracted; review targeted search results."
+    },
+    "official_mcp": {
+      "value": "unknown",
+      "sources": [],
+      "evidence": [],
+      "reason": "No sufficiently specific positive evidence extracted; review targeted search results."
+    },
+    "composio_toolkit": {
+      "value": "listed",
+      "sources": [
+        "https://docs.composio.dev/toolkits/podio"
+      ],
+      "evidence": [],
+      "reason": "Catalog match; scope needs review."
+    },
+    "verdict": {
+      "value": "unknown",
+      "sources": [],
+      "evidence": [],
+      "reason": "A supported access path, authentication method and API surface were not all extracted."
+    }
+  },
+  "validation": [
+    "All claims are provisional",
+    "No vendor MCP inference from Composio catalog",
+    "Negated MCP or client-only source is not counted as vendor-server proof"
+  ]
+}

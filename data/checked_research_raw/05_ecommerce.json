@@ -1,0 +1,1766 @@
+{
+  "category": "Ecommerce",
+  "checked_at": "2026-11-24",
+  "records": [
+    {
+      "number": 41,
+      "app": "Shopify",
+      "category": "Ecommerce",
+      "summary": "Shopify documents broad GraphQL Admin and legacy REST APIs, several scoped authentication models, and an available local developer MCP server. The remote store-management Shopify MCP is documented but not publicly available; Composio lists an exact Shopify toolkit.",
+      "blocker": "Merchant-store development requires organization permissions or a Partner account, and the generally available remote store-management MCP is not yet public. The available Dev MCP server is local and scoped to developer resources rather than store operations.",
+      "next_action": "Create or obtain a Shopify app in the Dev Dashboard, secure its client credentials, request only required API scopes, and use a permissioned development store. Use the local Dev MCP for documentation work and re-check the remote Shopify MCP page before planning store-management automation.",
+      "fields": {
+        "auth": {
+          "value": [
+            "GraphQL Admin API and Partner API: OAuth access token in X-Shopify-Access-Token",
+            "Storefront API: public, private, or tokenless storefront access",
+            "Customer Account API: OAuth 2.0 with PKCE for buyer account data"
+          ],
+          "status": "checked",
+          "reason": "Shopify documents access-token authentication for apps acting for merchants or organizations, separate Storefront API access modes, and a buyer-scoped Customer Account API exception. The authentication documentation is undated.",
+          "evidence": [
+            {
+              "url": "https://shopify.dev/docs/api/usage/authentication",
+              "title": "Shopify API authentication",
+              "quote": "To call a Shopify API, your code sends an access token in a request header to authenticate the identity that token represents (your app or a buyer) and authorize what that identity can access.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            },
+            {
+              "url": "https://shopify.dev/docs/api/usage/authentication",
+              "title": "Shopify merchant and organization authentication",
+              "quote": "Most Shopify APIs, including the GraphQL Admin API, Storefront API, and Partner API, authenticate your app acting on behalf of a merchant or organization.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            },
+            {
+              "url": "https://shopify.dev/docs/api/usage/authentication",
+              "title": "Shopify Customer Account API authentication",
+              "quote": "The Customer Account API is the exception. It authenticates a buyer accessing their own account data, such as their orders and addresses.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            }
+          ]
+        },
+        "credential_gate": {
+          "value": "admin_approval",
+          "gate_class": "admin_approval",
+          "details": {
+            "gate_class": "admin_approval"
+          },
+          "status": "checked",
+          "reason": "App client credentials are available in the Dev Dashboard, but creating development stores requires a Partner account or a merchant store with developer permissions and the organization-level permissions to create dev stores. This supports an admin/permission gate, not an unconditional self-serve free-access claim; the guidance is undated.",
+          "evidence": [
+            {
+              "url": "https://shopify.dev/docs/apps/build/authentication-authorization/manage-credentials",
+              "title": "Shopify app credential management",
+              "quote": "Your app's client credentials consist of a client ID and a client secret.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            },
+            {
+              "url": "https://shopify.dev/docs/apps/build/stores/development-stores",
+              "title": "Shopify development-store prerequisites",
+              "quote": "A Shopify Partner account or a merchant store with developer permissions.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            },
+            {
+              "url": "https://shopify.dev/docs/apps/build/stores/development-stores",
+              "title": "Shopify development-store organization permissions",
+              "quote": "The required permissions to create dev stores in your organization",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            }
+          ]
+        },
+        "api_surface": {
+          "value": "GraphQL and REST; broad store-data surface",
+          "status": "checked",
+          "reason": "The GraphQL Admin API is the recommended primary API for products, orders, customers, inventory, and metafields, while the legacy REST Admin API remains available. The API overview is undated.",
+          "evidence": [
+            {
+              "url": "https://shopify.dev/docs/apps/build/apis",
+              "title": "Shopify API overview",
+              "quote": "The REST Admin API is legacy. New apps should use the GraphQL Admin API, which is where new features ship.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            },
+            {
+              "url": "https://shopify.dev/docs/apps/build/apis",
+              "title": "Shopify Admin API resource breadth",
+              "quote": "Reading and writing store data: products, orders, customers, inventory, metafields. The primary API for most apps.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            }
+          ],
+          "api_types": [
+            "GraphQL",
+            "REST"
+          ],
+          "breadth": "broad",
+          "details": {
+            "api_types": [
+              "GraphQL",
+              "REST"
+            ],
+            "breadth": "broad"
+          }
+        },
+        "official_mcp": {
+          "value": "vendor_server",
+          "mcp_mode": "local",
+          "status": "checked",
+          "reason": "Shopify documents its Dev MCP server as a local, unauthenticated server for developer resources. This is distinct from the remote store-management Shopify MCP, whose documentation says it is not publicly available yet; both pages are undated.",
+          "evidence": [
+            {
+              "url": "https://shopify.dev/docs/api/ai-toolkit",
+              "title": "Shopify AI Toolkit and Dev MCP server",
+              "quote": "If you prefer MCP, you can connect to Shopify's developer resources through the Dev MCP server. The server runs locally and doesn't require authentication.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            }
+          ]
+        },
+        "composio_toolkit": {
+          "value": "listed_exact",
+          "status": "checked",
+          "reason": "Composio's current catalog lists the exact Shopify toolkit under slug SHOPIFY with 478 tools and 45 triggers. The toolkit page is undated and its version identifier is not a publication date.",
+          "evidence": [
+            {
+              "url": "https://docs.composio.dev/toolkits/shopify.md",
+              "title": "Composio Shopify toolkit",
+              "quote": "- **Slug:** `SHOPIFY`",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            },
+            {
+              "url": "https://docs.composio.dev/toolkits/shopify.md",
+              "title": "Composio Shopify toolkit size",
+              "quote": "- **Tools:** 478",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            }
+          ]
+        },
+        "verdict": {
+          "value": "gated_build_candidate",
+          "status": "checked",
+          "reason": "Shopify has checked broad API and authentication evidence, but practical merchant-store development is permission-gated. The only currently available vendor MCP evidenced here is the local developer server, not the unlaunched remote store-management server; the load-bearing pages are undated.",
+          "evidence": [
+            {
+              "url": "https://shopify.dev/docs/apps/build/apis",
+              "title": "Shopify API build surface",
+              "quote": "The REST Admin API is legacy. New apps should use the GraphQL Admin API, which is where new features ship.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            },
+            {
+              "url": "https://shopify.dev/docs/apps/build/stores/development-stores",
+              "title": "Shopify development-store access gate",
+              "quote": "The required permissions to create dev stores in your organization",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "number": 42,
+      "app": "WooCommerce",
+      "category": "Ecommerce",
+      "summary": "WooCommerce provides a broad WordPress-backed REST API with consumer-key authentication and a developer-preview MCP adapter supporting remote HTTP and local STDIO. The platform is free to use, although hosting, extensions, and payment processing can cost money; Composio has no exact WooCommerce catalog entry.",
+      "blocker": "MCP is still in developer preview and requires a separately installed adapter. Remote MCP uses a WordPress Application Password rather than WooCommerce REST API keys, and store operation still depends on WordPress hosting and administrative access.",
+      "next_action": "Install WooCommerce, create a WordPress user with least-privilege capabilities, and generate REST keys in WooCommerce settings. For MCP, install the adapter and provision an Application Password for remote access or a WP-CLI user for local STDIO.",
+      "fields": {
+        "auth": {
+          "value": [
+            "WooCommerce REST API: Consumer Key as username and Consumer Secret as password over HTTP Basic Auth",
+            "WooCommerce REST API: documented query-string credential fallback",
+            "WooCommerce REST API: OAuth 1.0a one-legged authentication over HTTP",
+            "Generated REST keys: constrained by the WordPress user's roles and capabilities"
+          ],
+          "status": "checked",
+          "reason": "WooCommerce documents key generation for a WordPress user, Basic Auth using the consumer key and secret, query-string and OAuth 1.0a alternatives, and WordPress capability enforcement. The authentication page is undated.",
+          "evidence": [
+            {
+              "url": "https://developer.woocommerce.com/docs/apis/rest-api/authentication",
+              "title": "WooCommerce REST API key creation",
+              "quote": "To create or manage keys for a specific WordPress user, go to WooCommerce > Settings > Advanced > REST API.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            },
+            {
+              "url": "https://developer.woocommerce.com/docs/apis/rest-api/authentication",
+              "title": "WooCommerce REST API Basic authentication",
+              "quote": "You may use HTTP Basic Auth by providing the REST API Consumer Key as the username and the REST API Consumer Secret as the password.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            },
+            {
+              "url": "https://developer.woocommerce.com/docs/apis/rest-api/authentication",
+              "title": "WooCommerce REST key permissions",
+              "quote": "Use of the REST API with the generated keys will conform to that user's WordPress roles and capabilities.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            }
+          ]
+        },
+        "credential_gate": {
+          "value": "self_serve_free",
+          "gate_class": "self_serve_free",
+          "details": {
+            "gate_class": "self_serve_free"
+          },
+          "status": "checked",
+          "reason": "WooCommerce is free to download and use, and an administrator can generate REST keys in the store settings. Hosting, extensions, and payment processing remain separate costs. The pricing page was published 2026-04-23 and updated 2026-10-19; the key-creation guide is undated.",
+          "evidence": [
+            {
+              "url": "https://woocommerce.com/pricing/",
+              "title": "WooCommerce pricing",
+              "quote": "WooCommerce is free to download and use, and you choose where to invest your budget from there. Get everything you need and nothing you don’t, with total transparency and no tiers or surprise fees.",
+              "retrieved_at": "2026-11-24",
+              "published_at": "2026-10-19",
+              "published_label": "published 2026-04-23; updated 2026-10-19"
+            },
+            {
+              "url": "https://developer.woocommerce.com/docs/apis/rest-api/authentication",
+              "title": "WooCommerce self-serve API key creation",
+              "quote": "Click the \"Add Key\" button.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            }
+          ]
+        },
+        "api_surface": {
+          "value": "REST; broad commerce resource surface",
+          "status": "checked",
+          "reason": "The recommended /wp-json/wc/v3 REST API covers coupons, customers, orders, refunds, fulfillments, products, variations, reports, taxes, webhooks, settings, payment gateways, shipping, and system status. The REST reference is undated.",
+          "evidence": [
+            {
+              "url": "https://developer.woocommerce.com/docs/apis/rest-api/v3/",
+              "title": "WooCommerce REST API v3",
+              "quote": "The current and recommended version of the WooCommerce REST API. Use `/wp-json/wc/v3/` endpoints for all new integrations.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            },
+            {
+              "url": "https://developer.woocommerce.com/docs/apis/rest-api/v3/",
+              "title": "WooCommerce product resource breadth",
+              "quote": "The products API allows you to create, view, update, and delete individual, or a batch, of products.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            }
+          ],
+          "api_types": [
+            "REST"
+          ],
+          "breadth": "broad",
+          "details": {
+            "api_types": [
+              "REST"
+            ],
+            "breadth": "broad"
+          }
+        },
+        "official_mcp": {
+          "value": "vendor_server",
+          "mcp_mode": "both",
+          "status": "checked",
+          "reason": "WooCommerce documents a developer-preview MCP implementation with remote HTTP and local STDIO connections. Remote access uses a WordPress Application Password, local access uses WP-CLI, and the adapter is not bundled; the MCP documentation is undated.",
+          "evidence": [
+            {
+              "url": "https://developer.woocommerce.com/docs/features/mcp/",
+              "title": "WooCommerce MCP developer preview",
+              "quote": "The MCP implementation in WooCommerce is currently in developer preview.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            },
+            {
+              "url": "https://developer.woocommerce.com/docs/features/mcp/",
+              "title": "WooCommerce remote MCP authentication",
+              "quote": "Remote HTTP connections authenticate using a WordPress username and an Application Password. Do not use your account password or a WooCommerce REST API key.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            },
+            {
+              "url": "https://developer.woocommerce.com/docs/features/mcp/",
+              "title": "WooCommerce local MCP authentication",
+              "quote": "Local STDIO connections authenticate through WP-CLI using the configured --user and do not require an Application Password.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            }
+          ]
+        },
+        "composio_toolkit": {
+          "value": "not_listed",
+          "status": "checked",
+          "reason": "The complete current Composio toolkits catalog contains no exact WooCommerce or approved-alias entry. Generic WordPress or other store toolkits are not treated as substitutes; the catalog is undated.",
+          "evidence": [
+            {
+              "url": "https://docs.composio.dev/toolkits.md",
+              "title": "Composio complete toolkits catalog",
+              "quote": "Composio supports 1841 toolkits for building AI agents.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            },
+            {
+              "url": "https://docs.composio.dev/toolkits.md",
+              "title": "Composio all-toolkits table",
+              "quote": "## All Toolkits",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            }
+          ]
+        },
+        "verdict": {
+          "value": "documented_build_candidate",
+          "status": "checked",
+          "reason": "A free self-serve platform, documented REST key creation, and a broad REST API make WooCommerce a build candidate. MCP remains a separately installed developer preview with distinct credentials; the API and MCP documentation are undated.",
+          "evidence": [
+            {
+              "url": "https://woocommerce.com/pricing/",
+              "title": "WooCommerce free platform access",
+              "quote": "Free, with no monthly subscription.",
+              "retrieved_at": "2026-11-24",
+              "published_at": "2026-10-19",
+              "published_label": "published 2026-04-23; updated 2026-10-19"
+            },
+            {
+              "url": "https://developer.woocommerce.com/docs/apis/rest-api/v3/",
+              "title": "WooCommerce REST build surface",
+              "quote": "The current and recommended version of the WooCommerce REST API. Use `/wp-json/wc/v3/` endpoints for all new integrations.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "number": 43,
+      "app": "BigCommerce",
+      "category": "Ecommerce",
+      "summary": "BigCommerce documents broad REST Store Management and Storefront APIs plus GraphQL Storefront, self-serve trial credentials, and vendor MCP servers. Storefront MCP is generally available while Store Management MCP is labeled early access; Composio lists an exact BigCommerce toolkit.",
+      "blocker": "A free trial is available for testing, but production access depends on a BigCommerce plan. Store Management MCP remains early access even though stores can enable it without an invitation.",
+      "next_action": "Create a trial store, generate scoped API credentials in Settings > API Accounts, and test REST or GraphQL calls. Evaluate Storefront MCP for buyer-facing workflows and enable Store Management MCP separately for administrative automation.",
+      "fields": {
+        "auth": {
+          "value": [
+            "BigCommerce REST APIs: store-level, app-level, or account-level OAuth API accounts",
+            "Store-level requests: API account access_token in X-Auth-Token",
+            "Store Management MCP: BigCommerce login using OAuth 2.1 with PKCE"
+          ],
+          "status": "checked",
+          "reason": "BigCommerce documents three OAuth-based API account types and the X-Auth-Token header for store-level credentials. Store Management MCP uses a separate OAuth 2.1 login flow; both documentation pages are undated.",
+          "evidence": [
+            {
+              "url": "https://docs.bigcommerce.com/developer/docs/overview/api-fundamentals/api-accounts",
+              "title": "BigCommerce API accounts",
+              "quote": "BigCommerce offers three types of OAuth-based API accounts to developers who wish to use BigCommerce's REST APIs: store-level credentials, app-level credentials, and account-level credentials.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            },
+            {
+              "url": "https://docs.bigcommerce.com/developer/docs/overview/api-fundamentals/api-accounts",
+              "title": "BigCommerce store-level token header",
+              "quote": "Use the X-Auth-Token header to pass the API account's access_token instead of the Authorization header.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            }
+          ]
+        },
+        "credential_gate": {
+          "value": "self_serve_trial",
+          "gate_class": "self_serve_trial",
+          "details": {
+            "gate_class": "self_serve_trial"
+          },
+          "status": "checked",
+          "reason": "Developers can sign up for a free trial store and create scoped API credentials in its control panel without affecting live data. This supports trial access rather than an unconditional free-production claim; the quick-start and API-account pages are undated.",
+          "evidence": [
+            {
+              "url": "https://docs.bigcommerce.com/developer/docs/overview/quick-start",
+              "title": "BigCommerce API quick start",
+              "quote": "Sign up for a free BigCommerce trial store to test API calls and build integrations without affecting live data.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            },
+            {
+              "url": "https://docs.bigcommerce.com/developer/docs/overview/quick-start",
+              "title": "BigCommerce scoped credential creation",
+              "quote": "Navigate to Settings > API Accounts in your store control panel. Create credentials with the scopes you need.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            }
+          ]
+        },
+        "api_surface": {
+          "value": "REST and GraphQL; broad store and storefront surface",
+          "status": "checked",
+          "reason": "BigCommerce documents REST Store Management, REST Storefront, and GraphQL Storefront APIs for managing store data, authenticating customers, and querying product information. The API overview is undated.",
+          "evidence": [
+            {
+              "url": "https://docs.bigcommerce.com/developer/api-reference/about-our-apis",
+              "title": "BigCommerce API overview",
+              "quote": "BigCommerce has several APIs that let you manage store data, authenticate customers, make client-side queries for product information, and more.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            },
+            {
+              "url": "https://docs.bigcommerce.com/developer/api-reference/about-our-apis",
+              "title": "BigCommerce GraphQL Storefront API",
+              "quote": "GraphQL Storefront API",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            }
+          ],
+          "api_types": [
+            "REST",
+            "GraphQL"
+          ],
+          "breadth": "broad",
+          "details": {
+            "api_types": [
+              "REST",
+              "GraphQL"
+            ],
+            "breadth": "broad"
+          }
+        },
+        "official_mcp": {
+          "value": "vendor_server",
+          "mcp_mode": "early_access",
+          "status": "checked",
+          "reason": "BigCommerce operates per-store Storefront MCP endpoints and an administrative Store Management MCP endpoint. Storefront MCP is generally available, while Store Management MCP is explicitly early access but available to all stores; the MCP overview is undated. The separate Docs MCP server cannot read or change store data.",
+          "evidence": [
+            {
+              "url": "https://docs.bigcommerce.com/developer/api-reference/mcp/overview/",
+              "title": "BigCommerce Storefront MCP",
+              "quote": "Each storefront gets its own MCP server URL. Agents connect to that URL directly. No API account or admin credentials are involved.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            },
+            {
+              "url": "https://docs.bigcommerce.com/developer/api-reference/mcp/overview/",
+              "title": "BigCommerce Store Management MCP",
+              "quote": "Agents connect to https://api.bigcommerce.com/mcp, sign in through the standard BigCommerce login (OAuth 2.1 with PKCE), and then the user chooses which store to connect.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            },
+            {
+              "url": "https://docs.bigcommerce.com/developer/api-reference/mcp/overview/",
+              "title": "BigCommerce Store Management MCP availability",
+              "quote": "Store Management MCP is in early access and available to all stores.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            }
+          ]
+        },
+        "composio_toolkit": {
+          "value": "listed_exact",
+          "status": "checked",
+          "reason": "Composio's current catalog lists the exact BigCommerce toolkit under slug BIGCOMMERCE with 532 tools. The toolkit page is undated and its version identifier is not a publication date.",
+          "evidence": [
+            {
+              "url": "https://docs.composio.dev/toolkits/bigcommerce.md",
+              "title": "Composio BigCommerce toolkit",
+              "quote": "- **Slug:** `BIGCOMMERCE`",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            },
+            {
+              "url": "https://docs.composio.dev/toolkits/bigcommerce.md",
+              "title": "Composio BigCommerce toolkit size",
+              "quote": "- **Tools:** 532",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            }
+          ]
+        },
+        "verdict": {
+          "value": "documented_build_candidate",
+          "status": "checked",
+          "reason": "Self-serve trial credentials, broad REST and GraphQL APIs, and vendor MCP documentation make BigCommerce a documented build candidate. Production requires a plan and administrative MCP remains early access; the load-bearing documentation is undated.",
+          "evidence": [
+            {
+              "url": "https://docs.bigcommerce.com/developer/docs/overview/quick-start",
+              "title": "BigCommerce trial access",
+              "quote": "Sign up for a free BigCommerce trial store to test API calls and build integrations without affecting live data.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            },
+            {
+              "url": "https://docs.bigcommerce.com/developer/api-reference/mcp/overview/",
+              "title": "BigCommerce MCP availability",
+              "quote": "Store Management MCP is in early access and available to all stores.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "number": 44,
+      "app": "Salesforce Commerce Cloud",
+      "category": "Ecommerce",
+      "summary": "Salesforce B2C Commerce documents broad SCAPI Admin REST APIs, Account Manager client-credentials authorization, SLAS shopper authorization, and a local B2C MCP toolset. Administrative access requires an Account Manager administrator and approved client/scopes; Composio has no exact Commerce Cloud entry.",
+      "blocker": "SCAPI Admin access requires an Account Manager API client, the Salesforce Commerce API role, instance access, and scopes. Shopper APIs use a separate SLAS client model, and the B2C MCP is configured as a local server.",
+      "next_action": "Have an Account Manager administrator create a least-privilege API client, assign the Commerce API role and required instance/scopes, then test SCAPI Admin calls. Configure the local B2C MCP separately and use SLAS credentials for shopper-facing APIs.",
+      "fields": {
+        "auth": {
+          "value": [
+            "SCAPI Admin APIs: Account Manager API client ID and client secret using OAuth client_credentials",
+            "SCAPI Admin APIs: scoped JWT access token for approved instances",
+            "Shopper APIs: SLAS public or private OAuth client and access token"
+          ],
+          "status": "checked",
+          "reason": "Salesforce separates Account Manager authentication for SCAPI Admin APIs from SLAS authentication for Shopper APIs. Admin APIs support only client_credentials; SLAS public clients generate no secret while private clients do. The authorization pages are undated.",
+          "evidence": [
+            {
+              "url": "https://developer.salesforce.com/docs/commerce/commerce-api/guide/authorization-for-admin-apis.html",
+              "title": "Salesforce SCAPI Admin authorization",
+              "quote": "Note that only the client_credentials grant type is supported for accessing SCAPI Admin APIs.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            },
+            {
+              "url": "https://developer.salesforce.com/docs/commerce/commerce-api/guide/authorization-for-shopper-apis.html",
+              "title": "Salesforce SLAS shopper authorization",
+              "quote": "Shopper APIs are secured with the Shopper Login and API Access Service (SLAS), but SCAPI Admin APIs are secured with Account Manager (AM) instead.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            },
+            {
+              "url": "https://developer.salesforce.com/docs/commerce/commerce-api/guide/authorization-for-shopper-apis.html",
+              "title": "Salesforce SLAS client secret model",
+              "quote": "Choosing PWA Kit or SFRA or Mobile creates a public client (no secret generated). Choosing BFF or Web App creates a private client (secret generated automatically).",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            }
+          ]
+        },
+        "credential_gate": {
+          "value": "admin_approval",
+          "gate_class": "admin_approval",
+          "details": {
+            "gate_class": "admin_approval"
+          },
+          "status": "checked",
+          "reason": "An Account Manager administrator must create the SCAPI Admin API client and configure organization, role, instance, and scope access. Shopper-client setup also names the Account Administrator role. The authorization documentation is undated.",
+          "evidence": [
+            {
+              "url": "https://developer.salesforce.com/docs/commerce/commerce-api/guide/authorization-for-admin-apis.html",
+              "title": "Salesforce SCAPI Admin API client prerequisite",
+              "quote": "To use the SCAPI Admin APIs, you (or someone with administrator access) must first create an API client by following these steps:",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            },
+            {
+              "url": "https://developer.salesforce.com/docs/commerce/commerce-api/guide/authorization-for-shopper-apis.html",
+              "title": "Salesforce Account Administrator requirement",
+              "quote": "The Account Administrator role in Account Manager. If you get stuck, ask an administrator on your team for help or contact Support.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            }
+          ]
+        },
+        "api_surface": {
+          "value": "REST; broad commerce administration surface",
+          "status": "checked",
+          "reason": "SCAPI Admin APIs expose assignments, catalogs, customers, inventory availability, orders, products, and additional commerce resources through scoped Account Manager access. The authorization reference is undated.",
+          "evidence": [
+            {
+              "url": "https://developer.salesforce.com/docs/commerce/commerce-api/guide/authorization-for-admin-apis.html",
+              "title": "Salesforce SCAPI Admin API breadth",
+              "quote": "With an access token from Account Manager (and the correct scopes), access any of the SCAPI Admin APIs, including:",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            }
+          ],
+          "api_types": [
+            "REST"
+          ],
+          "breadth": "broad",
+          "details": {
+            "api_types": [
+              "REST"
+            ],
+            "breadth": "broad"
+          }
+        },
+        "official_mcp": {
+          "value": "vendor_server",
+          "mcp_mode": "local",
+          "status": "checked",
+          "reason": "Salesforce documents B2C MCP for official documentation search, live cartridge debugging, logs, deployment, and general SCAPI Admin API access. Manual configuration uses the local @salesforce/b2c-dx-mcp server command; the tooling page is undated.",
+          "evidence": [
+            {
+              "url": "https://developer.salesforce.com/docs/commerce/sfra/guide/b2c-developer-tooling.html",
+              "title": "Salesforce B2C MCP capabilities",
+              "quote": "B2C MCP: Connect your assistant to B2C Commerce tools, official documentation search, and workflow skills. Investigate issues, debug live cartridge code, or work with B2C Commerce data through SCAPI Admin APIs.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            },
+            {
+              "url": "https://developer.salesforce.com/docs/commerce/sfra/guide/b2c-developer-tooling.html",
+              "title": "Salesforce B2C local MCP command",
+              "quote": "For clients that require manual MCP configuration, use npx with arguments --yes @salesforce/b2c-dx-mcp as the local server command.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            }
+          ]
+        },
+        "composio_toolkit": {
+          "value": "not_listed",
+          "status": "checked",
+          "reason": "The complete current Composio toolkits catalog contains no exact Salesforce Commerce Cloud or approved-alias entry. The generic Salesforce toolkit is a different product and is not a substitute; the catalog is undated.",
+          "evidence": [
+            {
+              "url": "https://docs.composio.dev/toolkits.md",
+              "title": "Composio complete toolkits catalog",
+              "quote": "Composio supports 1841 toolkits for building AI agents.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            },
+            {
+              "url": "https://docs.composio.dev/toolkits.md",
+              "title": "Composio all-toolkits table",
+              "quote": "## All Toolkits",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            }
+          ]
+        },
+        "verdict": {
+          "value": "gated_build_candidate",
+          "status": "checked",
+          "reason": "Broad SCAPI REST APIs and a local vendor MCP are documented, but administrative credentials require Account Manager approval, role assignment, instance access, and scopes. The load-bearing Salesforce documentation is undated.",
+          "evidence": [
+            {
+              "url": "https://developer.salesforce.com/docs/commerce/commerce-api/guide/authorization-for-admin-apis.html",
+              "title": "Salesforce administrative API gate",
+              "quote": "To use the SCAPI Admin APIs, you (or someone with administrator access) must first create an API client by following these steps:",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            },
+            {
+              "url": "https://developer.salesforce.com/docs/commerce/commerce-api/guide/authorization-for-admin-apis.html",
+              "title": "Salesforce commerce API breadth",
+              "quote": "With an access token from Account Manager (and the correct scopes), access any of the SCAPI Admin APIs, including:",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "number": 45,
+      "app": "Magento (Adobe Commerce)",
+      "category": "Ecommerce",
+      "summary": "Adobe Commerce and Magento Open Source document broad REST and GraphQL APIs, deployment-specific authentication, and local development MCP tools. PaaS/Open Source integrations can be merchant-created, while Adobe Commerce as a Cloud Service requires an IMS-enabled license and administrative setup; Composio has no exact entry.",
+      "blocker": "Authentication differs materially between PaaS/Open Source and Adobe Commerce as a Cloud Service. SaaS requires Adobe IMS OAuth setup and an Organization Admin, and the documented MCP tools are development-focused rather than a general store-management server.",
+      "next_action": "Identify the deployment model first. For PaaS/Open Source, create an Admin integration with least-privilege API resources; for SaaS, use Adobe Developer Console and IMS OAuth 2 credentials with the commerce.accs scope. Install the development MCP tools separately if useful.",
+      "fields": {
+        "auth": {
+          "value": [
+            "Adobe Commerce PaaS and Magento Open Source: integration consumer key/secret and access token using OAuth 1.0a",
+            "Adobe Commerce PaaS and Magento Open Source: admin/customer token-based and session-based authentication",
+            "Adobe Commerce as a Cloud Service: Adobe IMS OAuth 2.0 server-to-server or user access tokens"
+          ],
+          "status": "checked",
+          "reason": "Adobe documents OAuth 1.0a integration credentials and token/session methods for PaaS/Open Source, but Adobe Commerce as a Cloud Service uses IMS OAuth 2 and does not support the traditional admin/integration token generation flow. The authentication pages are undated.",
+          "evidence": [
+            {
+              "url": "https://developer.adobe.com/commerce/webapi/get-started/authentication/gs-authentication-oauth",
+              "title": "Adobe Commerce OAuth 1.0a integration",
+              "quote": "OAuth authentication with Adobe Commerce and Magento Open Source is based on OAuth 1.0a, an open standard for secure API authentication.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            },
+            {
+              "url": "https://developer.adobe.com/commerce/webapi/get-started/authentication/gs-authentication-oauth",
+              "title": "Adobe Commerce integration credential creation",
+              "quote": "The merchant creates an integration from Admin. Commerce generates a consumer key and a consumer secret.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            },
+            {
+              "url": "https://developer.adobe.com/commerce/webapi/rest/authentication/",
+              "title": "Adobe Commerce as a Cloud Service authentication",
+              "quote": "Adobe Commerce as a Cloud Service REST API authentication is handled through Adobe's Identity Management System (IMS) through standardized OAuth 2 protocols.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            }
+          ]
+        },
+        "credential_gate": {
+          "value": "mixed",
+          "gate_class": "mixed",
+          "details": {
+            "gate_class": "mixed"
+          },
+          "status": "checked",
+          "reason": "PaaS/Open Source merchants can create an integration in Admin, while Adobe Commerce as a Cloud Service requires a Commerce license, Developer Console access, and Organization Admin/server-authentication setup. Pricing was not established from the cited official pages; the authentication and prerequisite pages are undated.",
+          "evidence": [
+            {
+              "url": "https://developer.adobe.com/commerce/webapi/get-started/authentication/gs-authentication-oauth",
+              "title": "Adobe Commerce merchant-created integration",
+              "quote": "The merchant creates an integration from Admin. Commerce generates a consumer key and a consumer secret.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            },
+            {
+              "url": "https://developer.adobe.com/commerce/webapi/rest/authentication/server-to-server",
+              "title": "Adobe Commerce as a Cloud Service server authentication prerequisites",
+              "quote": "Adobe Organization Admin account",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            },
+            {
+              "url": "https://developer.adobe.com/commerce/webapi/rest/authentication/server-to-server",
+              "title": "Adobe Commerce as a Cloud Service IMS token creation",
+              "quote": "To authenticate with the Adobe Commerce as a Cloud Service REST APIs, you need to generate an IMS access token using your client credentials.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            }
+          ]
+        },
+        "api_surface": {
+          "value": "REST and GraphQL; broad commerce surface",
+          "status": "checked",
+          "reason": "Adobe Commerce documents REST APIs and two GraphQL implementations for headless storefronts and mobile applications, including catalog, B2B, search, and recommendation schemas. The GraphQL and REST authentication references are undated.",
+          "evidence": [
+            {
+              "url": "https://developer.adobe.com/commerce/webapi/graphql/",
+              "title": "Adobe Commerce GraphQL overview",
+              "quote": "Adobe Commerce provides two comprehensive GraphQL implementations that serve as the ideal foundation for building next-generation commerce experiences, including headless storefronts and sophisticated mobile applications.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            },
+            {
+              "url": "https://developer.adobe.com/commerce/webapi/rest/authentication/",
+              "title": "Adobe Commerce REST authentication",
+              "quote": "Adobe Commerce as a Cloud Service REST API authentication is handled through Adobe's Identity Management System (IMS) through standardized OAuth 2 protocols.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            }
+          ],
+          "api_types": [
+            "REST",
+            "GraphQL"
+          ],
+          "breadth": "broad",
+          "details": {
+            "api_types": [
+              "REST",
+              "GraphQL"
+            ],
+            "breadth": "broad"
+          }
+        },
+        "official_mcp": {
+          "value": "vendor_server",
+          "mcp_mode": "local",
+          "status": "checked",
+          "reason": "Adobe documents Commerce Developer and App Builder MCP servers configured for local development, including skills and retrieval-augmented generation. The scope is application development rather than an explicitly documented general store-management MCP; the coding-tools page is undated.",
+          "evidence": [
+            {
+              "url": "https://developer.adobe.com/commerce/extensibility/developer-agent/coding-tools",
+              "title": "Adobe Commerce development MCP tools",
+              "quote": "Commerce Developer MCP Server",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            },
+            {
+              "url": "https://developer.adobe.com/commerce/extensibility/developer-agent/coding-tools",
+              "title": "Adobe Commerce MCP integration",
+              "quote": "MCP server integration for Adobe Commerce development",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            }
+          ]
+        },
+        "composio_toolkit": {
+          "value": "not_listed",
+          "status": "checked",
+          "reason": "The complete current Composio toolkits catalog contains no exact Magento, Adobe Commerce, or approved-alias entry. Generic commerce toolkits are not treated as substitutes; the catalog is undated.",
+          "evidence": [
+            {
+              "url": "https://docs.composio.dev/toolkits.md",
+              "title": "Composio complete toolkits catalog",
+              "quote": "Composio supports 1841 toolkits for building AI agents.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            },
+            {
+              "url": "https://docs.composio.dev/toolkits.md",
+              "title": "Composio all-toolkits table",
+              "quote": "## All Toolkits",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            }
+          ]
+        },
+        "verdict": {
+          "value": "gated_build_candidate",
+          "status": "checked",
+          "reason": "Broad REST and GraphQL APIs support a build, but the credential path depends on deployment and includes merchant integration creation or licensed IMS administrative setup. The documented vendor MCP is local and development-focused; the load-bearing pages are undated.",
+          "evidence": [
+            {
+              "url": "https://developer.adobe.com/commerce/webapi/graphql/",
+              "title": "Adobe Commerce API build surface",
+              "quote": "Adobe Commerce provides two comprehensive GraphQL implementations that serve as the ideal foundation for building next-generation commerce experiences, including headless storefronts and sophisticated mobile applications.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            },
+            {
+              "url": "https://developer.adobe.com/commerce/webapi/rest/authentication/server-to-server",
+              "title": "Adobe Commerce SaaS administrative gate",
+              "quote": "Adobe Organization Admin account",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "number": 46,
+      "app": "Squarespace",
+      "category": "Ecommerce",
+      "summary": "Squarespace documents broad Commerce REST APIs, API-key and OAuth 2 authentication, and a remote Commerce MCP server. Custom API-key apps require Commerce Advanced, while new OAuth apps can obtain demo credentials instantly but need review for production; Composio has no exact Squarespace entry.",
+      "blocker": "Custom Commerce API-key applications require Commerce Advanced. New self-service OAuth applications enter Demo Mode until Squarespace approves them, and Commerce MCP tools are currently limited to Claude and ChatGPT with read-only orders and no payment/refund/fulfillment actions.",
+      "next_action": "Choose Commerce Advanced API-key access or self-service OAuth. Generate demo credentials, test the required Commerce endpoints, request production review, and verify that the intended MCP client and permissions cover the workflow without expecting order writes or payment actions.",
+      "fields": {
+        "auth": {
+          "value": [
+            "Squarespace Commerce APIs: merchant-generated API key with selected permissions",
+            "Squarespace APIs: OAuth 2.0 authorization code flow with access and refresh tokens",
+            "Squarespace Commerce MCP: Squarespace account sign-in and user-granted permissions"
+          ],
+          "status": "checked",
+          "reason": "Squarespace supports generated Commerce API keys or OAuth client registration, and its OAuth documentation specifies short-lived access tokens with refresh tokens. Commerce MCP requires account sign-in. The Commerce authentication and OAuth pages are undated.",
+          "evidence": [
+            {
+              "url": "https://commerce-apis.squarespace.com/commerce-apis/authentication-and-permissions",
+              "title": "Squarespace Commerce authentication options",
+              "quote": "Depending on your development needs, you can use a generated API key or start the OAuth process with Squarespace to become a registered OAuth client.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            },
+            {
+              "url": "https://developers.squarespace.com/oauth",
+              "title": "Squarespace OAuth 2.0",
+              "quote": "Squarespace uses OAuth 2.0 to authorize third-party applications to integrate with Squarespace and consume Squarespace APIs.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            }
+          ]
+        },
+        "credential_gate": {
+          "value": "mixed",
+          "gate_class": "mixed",
+          "details": {
+            "gate_class": "mixed"
+          },
+          "status": "checked",
+          "reason": "Custom Commerce API-key applications require Commerce Advanced. Since 2026-07-27, new OAuth applications can generate credentials immediately for development but enter Demo Mode and require Squarespace review for production. The change notice is dated 2026-07-27; the Commerce API-key page is undated.",
+          "evidence": [
+            {
+              "url": "https://developers.squarespace.com/changes/self-service-oauth-credential-management",
+              "title": "Squarespace self-service OAuth credential management",
+              "quote": "Starting Monday, July 27, 2026, Squarespace is transitioning to a self-service model for OAuth credential management, empowering developers to build and maintain integrations with greater speed and autonomy.",
+              "retrieved_at": "2026-11-24",
+              "published_at": "2026-07-27",
+              "published_label": "published 2026-07-27"
+            },
+            {
+              "url": "https://developers.squarespace.com/changes/self-service-oauth-credential-management",
+              "title": "Squarespace OAuth demo mode and production review",
+              "quote": "To ensure platform security while maintaining developer speed, all new applications created via the self-service tool will enter Demo Mode by default.",
+              "retrieved_at": "2026-11-24",
+              "published_at": "2026-07-27",
+              "published_label": "published 2026-07-27"
+            },
+            {
+              "url": "https://commerce-apis.squarespace.com/commerce-apis/authentication-and-permissions",
+              "title": "Squarespace Commerce Advanced requirement",
+              "quote": "With Squarespace's Commerce Advanced plan, you can develop a custom application for a Squarespace merchant site.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            }
+          ]
+        },
+        "api_surface": {
+          "value": "REST; broad commerce resource surface",
+          "status": "checked",
+          "reason": "Squarespace Commerce APIs use HTTPS and REST principles across inventory, orders, products, profiles, transactions, and webhook subscriptions. The API overview is undated.",
+          "evidence": [
+            {
+              "url": "https://commerce-apis.squarespace.com/commerce-apis/overview",
+              "title": "Squarespace Commerce API overview",
+              "quote": "All Commerce APIs are built on HTTPS and designed with REST principles in mind. Every endpoint uses HTTPS features such as authentication, standard verbs, and standard response status codes.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            },
+            {
+              "url": "https://commerce-apis.squarespace.com/commerce-apis/overview",
+              "title": "Squarespace Commerce product management",
+              "quote": "Products API: Manage physical, service, gift card, and download products, including their images and variants (if supported).",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            }
+          ],
+          "api_types": [
+            "REST"
+          ],
+          "breadth": "broad",
+          "details": {
+            "api_types": [
+              "REST"
+            ],
+            "breadth": "broad"
+          }
+        },
+        "official_mcp": {
+          "value": "vendor_server",
+          "mcp_mode": "remote",
+          "status": "checked",
+          "reason": "Squarespace operates a remote Commerce MCP endpoint requiring Squarespace sign-in. Commerce tools are currently limited to Claude and ChatGPT; orders are read-only, and the tools cannot take payments, issue refunds, or fulfill orders. The MCP overview is undated.",
+          "evidence": [
+            {
+              "url": "https://developers.squarespace.com/mcp/overview",
+              "title": "Squarespace remote MCP server",
+              "quote": "The Squarespace MCP server is a remote server. There's nothing to install. Your MCP client connects directly to:",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            },
+            {
+              "url": "https://developers.squarespace.com/mcp/overview",
+              "title": "Squarespace Commerce MCP authentication",
+              "quote": "The Commerce tools read and change a website, so they need you to sign in with your Squarespace account.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            },
+            {
+              "url": "https://developers.squarespace.com/mcp/overview",
+              "title": "Squarespace Commerce MCP limitations",
+              "quote": "Commerce tools don't move money. They can create and update contacts and products, but they can't take payments, issue refunds, or fulfill orders. Orders are read-only.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            }
+          ]
+        },
+        "composio_toolkit": {
+          "value": "not_listed",
+          "status": "checked",
+          "reason": "The complete current Composio toolkits catalog contains no exact Squarespace or approved-alias entry. The catalog is undated.",
+          "evidence": [
+            {
+              "url": "https://docs.composio.dev/toolkits.md",
+              "title": "Composio complete toolkits catalog",
+              "quote": "Composio supports 1841 toolkits for building AI agents.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            },
+            {
+              "url": "https://docs.composio.dev/toolkits.md",
+              "title": "Composio all-toolkits table",
+              "quote": "## All Toolkits",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            }
+          ]
+        },
+        "verdict": {
+          "value": "gated_build_candidate",
+          "status": "checked",
+          "reason": "Broad Commerce REST APIs and a remote vendor MCP are documented, but API-key access requires Commerce Advanced and production OAuth requires review after Demo Mode. MCP client and action limitations further constrain automation; the load-bearing API and MCP pages are undated.",
+          "evidence": [
+            {
+              "url": "https://developers.squarespace.com/changes/self-service-oauth-credential-management",
+              "title": "Squarespace production OAuth review gate",
+              "quote": "When you are ready to take your integration live, simply request a review directly from the app details page in your dashboard.",
+              "retrieved_at": "2026-11-24",
+              "published_at": "2026-07-27",
+              "published_label": "published 2026-07-27"
+            },
+            {
+              "url": "https://commerce-apis.squarespace.com/commerce-apis/overview",
+              "title": "Squarespace Commerce API build surface",
+              "quote": "All Commerce APIs are built on HTTPS and designed with REST principles in mind. Every endpoint uses HTTPS features such as authentication, standard verbs, and standard response status codes.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "number": 47,
+      "app": "Ecwid",
+      "category": "Ecommerce",
+      "summary": "Ecwid documents a broad REST API with OAuth 2 public-app tokens and custom-app access tokens. API access requires a paid plan, with a selective free developer upgrade, and official documentation exposes an MCP server for searching and reading docs rather than managing stores; Composio has no exact Ecwid entry.",
+      "blocker": "Only paid-plan stores can access the API, subject to a selective developer upgrade. The documented MCP server is documentation-only, so it does not establish store-management MCP coverage.",
+      "next_action": "Use a paid Ecwid plan or request the documented developer upgrade, create a custom app in the admin dashboard, and generate a secret token with least-privilege permissions for REST testing. Treat the documentation MCP as a research aid, not a store automation server.",
+      "fields": {
+        "auth": {
+          "value": [
+            "Ecwid public apps: OAuth 2.0 access token",
+            "Ecwid custom apps for the owner's store: public or secret access token",
+            "Ecwid REST API: access token in the Authorization header"
+          ],
+          "status": "checked",
+          "reason": "Ecwid requires an access token for every REST request. Public apps use OAuth 2.0, while owners can skip OAuth and obtain a custom-app token directly; secret tokens provide full REST access subject to permissions. The documentation is undated.",
+          "evidence": [
+            {
+              "url": "https://docs.ecwid.com/get-started/make-your-first-api-request",
+              "title": "Ecwid REST API authentication",
+              "quote": "All requests to Ecwid REST API require an access token. Ecwid uses OAuth 2.0 to provide secure access to the store data for public apps. If you customize your own store, however, you can skip OAuth and easily get an access token for your store.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            }
+          ]
+        },
+        "credential_gate": {
+          "value": "paid_plan",
+          "gate_class": "paid_plan",
+          "details": {
+            "gate_class": "paid_plan"
+          },
+          "status": "checked",
+          "reason": "Ecwid explicitly limits API access to paid-plan stores. The same undated setup page documents a selective free paid-plan upgrade for qualifying developers who contact support, so the general gate remains paid_plan rather than universally free.",
+          "evidence": [
+            {
+              "url": "https://docs.ecwid.com/get-started/set-up-your-dev-environment-in-ecwid",
+              "title": "Ecwid API access plan requirement",
+              "quote": "Only stores on paid plans can access API.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            },
+            {
+              "url": "https://docs.ecwid.com/get-started/set-up-your-dev-environment-in-ecwid",
+              "title": "Ecwid custom-app API access management",
+              "quote": "You can manage API access to your store data right in the Ecwid admin, through the app dashboard.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            }
+          ]
+        },
+        "api_surface": {
+          "value": "REST; broad store-data surface",
+          "status": "checked",
+          "reason": "The Ecwid REST API exposes store profile, orders, products, customers, categories, discounts, payment and shipping methods, and storefront settings. The API reference is undated.",
+          "evidence": [
+            {
+              "url": "https://docs.ecwid.com/api-reference",
+              "title": "Ecwid REST API reference",
+              "quote": "Ecwid REST API allows you to access and manage any store data, payment and shipping methods, and storefront settings.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            }
+          ],
+          "api_types": [
+            "REST"
+          ],
+          "breadth": "broad",
+          "details": {
+            "api_types": [
+              "REST"
+            ],
+            "breadth": "broad"
+          }
+        },
+        "official_mcp": {
+          "value": "vendor_server",
+          "mcp_mode": "unknown",
+          "status": "checked",
+          "reason": "Ecwid's official documentation pages advertise an MCP server that lets agents search and read the documentation. No transport mode or store-management capability is established by that statement, so the scope is documentation-only and mode remains unknown; the pages are undated.",
+          "evidence": [
+            {
+              "url": "https://docs.ecwid.com/api-reference",
+              "title": "Ecwid documentation MCP server",
+              "quote": "Agents can also search and read this documentation through its MCP server",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            }
+          ]
+        },
+        "composio_toolkit": {
+          "value": "not_listed",
+          "status": "checked",
+          "reason": "The complete current Composio toolkits catalog contains no exact Ecwid or approved-alias entry. The catalog is undated.",
+          "evidence": [
+            {
+              "url": "https://docs.composio.dev/toolkits.md",
+              "title": "Composio complete toolkits catalog",
+              "quote": "Composio supports 1841 toolkits for building AI agents.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            },
+            {
+              "url": "https://docs.composio.dev/toolkits.md",
+              "title": "Composio all-toolkits table",
+              "quote": "## All Toolkits",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            }
+          ]
+        },
+        "verdict": {
+          "value": "gated_build_candidate",
+          "status": "checked",
+          "reason": "Ecwid has checked broad REST and authentication evidence, but normal API access requires a paid plan. The only documented MCP is for documentation search and reading, not store management; the load-bearing pages are undated.",
+          "evidence": [
+            {
+              "url": "https://docs.ecwid.com/get-started/set-up-your-dev-environment-in-ecwid",
+              "title": "Ecwid API paid-plan gate",
+              "quote": "Only stores on paid plans can access API.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            },
+            {
+              "url": "https://docs.ecwid.com/api-reference",
+              "title": "Ecwid REST build surface",
+              "quote": "Ecwid REST API allows you to access and manage any store data, payment and shipping methods, and storefront settings.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "number": 48,
+      "app": "Gumroad",
+      "category": "Ecommerce",
+      "summary": "Gumroad documents a scoped OAuth 2.0 REST API for digital products, sales, subscribers, licenses, payouts, and related resources, plus remote vendor MCP connectors. Account access has no monthly platform fee but transaction fees apply; Composio lists an exact Gumroad toolkit.",
+      "blocker": "MCP availability varies by assistant: Claude, Cursor, ChatGPT, and Antigravity are listed as available, while Muse is submitted but not yet available. MCP uses connector-specific OAuth URLs and permissions rather than the REST application's credentials.",
+      "next_action": "Create a Gumroad application or generate a personal access token for REST testing, request only needed scopes, and verify transaction fees. For MCP, choose a supported assistant, use its published connector URL, review OAuth permissions, and revoke access in Gumroad settings when finished.",
+      "fields": {
+        "auth": {
+          "value": [
+            "Gumroad own-account REST API: manually generated access token",
+            "Gumroad general-use REST API: OAuth application ID/secret and user authorization",
+            "Gumroad REST API: scoped OAuth 2.0 access tokens",
+            "Gumroad MCP: connector-specific remote OAuth authorization and granted permissions"
+          ],
+          "status": "checked",
+          "reason": "Gumroad allows own-account users to generate an access token directly, while general-use integrations register an OAuth application and authorize each user. MCP connectors use separate remote OAuth URLs and permission grants. The API, application-help, and MCP pages are undated.",
+          "evidence": [
+            {
+              "url": "https://gumroad.com/help/article/280-create-application-api",
+              "title": "Gumroad application and access-token creation",
+              "quote": "However, if you only want to use the API on your own Gumroad account, you can manually generate an access token, which is a simpler process.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            },
+            {
+              "url": "https://gumroad.com/api",
+              "title": "Gumroad OAuth API introduction",
+              "quote": "To start using the API, you'll need to register your OAuth application. Note: The Verify License API endpoint does not require an OAuth application.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            },
+            {
+              "url": "https://gumroad.com/mcp",
+              "title": "Gumroad MCP OAuth authorization",
+              "quote": "Every assistant connects to its own URL and asks for OAuth access to your Gumroad account. Each connector page lists the exact address to paste.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            }
+          ]
+        },
+        "credential_gate": {
+          "value": "self_serve_free",
+          "gate_class": "self_serve_free",
+          "details": {
+            "gate_class": "self_serve_free"
+          },
+          "status": "checked",
+          "reason": "Gumroad charges no monthly platform fee and lets account holders create an application or generate a personal token directly. Transaction fees still apply, and the pricing and application-help pages do not state a separate API fee; both pages are undated.",
+          "evidence": [
+            {
+              "url": "https://gumroad.com/pricing",
+              "title": "Gumroad pricing model",
+              "quote": "Unlike other platforms, Gumroad doesn't charge you a monthly fee. Instead, our fees are deducted as a small percentage of every sale, so we only make money when you do.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            },
+            {
+              "url": "https://gumroad.com/help/article/280-create-application-api",
+              "title": "Gumroad self-serve application creation",
+              "quote": "First, sign in to your Gumroad account. Then, go to advanced settings. Here, you'll see a form to create a new application.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            }
+          ]
+        },
+        "api_surface": {
+          "value": "REST; moderate digital-commerce surface",
+          "status": "checked",
+          "reason": "The OAuth 2.0 API is REST/JSON and covers products, variants, offer codes, custom fields, sales, refunds, subscribers, licenses, resource subscriptions, payouts, tax forms, earnings, emails, and workflows. This is broad within digital commerce but narrower than a general hosted-store administration API; the API reference is undated.",
+          "evidence": [
+            {
+              "url": "https://gumroad.com/api",
+              "title": "Gumroad REST API",
+              "quote": "The Gumroad OAuth API is based around REST. We return JSON for every request, including errors.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            },
+            {
+              "url": "https://gumroad.com/api",
+              "title": "Gumroad API methods",
+              "quote": "Gumroad's OAuth 2.0 API lets you see information about your products, as well as you can add, edit, and delete offer codes, variants, and custom fields. Finally, you can see a user's public information and subscribe to be notified of their sales.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            }
+          ],
+          "api_types": [
+            "REST"
+          ],
+          "breadth": "moderate",
+          "details": {
+            "api_types": [
+              "REST"
+            ],
+            "breadth": "moderate"
+          }
+        },
+        "official_mcp": {
+          "value": "vendor_server",
+          "mcp_mode": "remote",
+          "status": "checked",
+          "reason": "Gumroad publishes remote MCP connector URLs and OAuth discovery metadata for store data and actions. Claude, Cursor, ChatGPT, and Antigravity are listed as available, while Muse is not yet available. The MCP and discovery pages are undated.",
+          "evidence": [
+            {
+              "url": "https://gumroad.com/mcp",
+              "title": "Gumroad remote MCP connectors",
+              "quote": "Add Gumroad from your assistant’s connector directory, or open its connector settings and add a remote MCP server using the URL from its connector page.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            },
+            {
+              "url": "https://gumroad.com/.well-known/mcp.json",
+              "title": "Gumroad MCP discovery metadata",
+              "quote": "\"mcp\": \"https://gumroad.com/muse/v1/mcp\",",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            },
+            {
+              "url": "https://gumroad.com/mcp",
+              "title": "Gumroad MCP action approval",
+              "quote": "New products start as unpublished drafts. With product access, the connector can publish or unpublish them. Review these actions in your MCP client.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            }
+          ]
+        },
+        "composio_toolkit": {
+          "value": "listed_exact",
+          "status": "checked",
+          "reason": "Composio's current catalog lists the exact Gumroad toolkit under slug GUMROAD with 13 tools and managed OAuth available. The toolkit page is undated and its version identifier is not a publication date.",
+          "evidence": [
+            {
+              "url": "https://docs.composio.dev/toolkits/gumroad.md",
+              "title": "Composio Gumroad toolkit",
+              "quote": "- **Slug:** `GUMROAD`",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            },
+            {
+              "url": "https://docs.composio.dev/toolkits/gumroad.md",
+              "title": "Composio Gumroad managed OAuth",
+              "quote": "- **Composio-managed OAuth available?** Yes",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            }
+          ]
+        },
+        "verdict": {
+          "value": "documented_build_candidate",
+          "status": "checked",
+          "reason": "Self-serve credentials, a no-monthly-fee platform model, documented REST resources, and remote vendor MCP endpoints make Gumroad a build candidate. Transaction fees, assistant-specific MCP availability, and scoped permissions remain caveats; the load-bearing pages are undated.",
+          "evidence": [
+            {
+              "url": "https://gumroad.com/api",
+              "title": "Gumroad REST API build surface",
+              "quote": "The Gumroad OAuth API is based around REST. We return JSON for every request, including errors.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            },
+            {
+              "url": "https://gumroad.com/pricing",
+              "title": "Gumroad no monthly platform fee",
+              "quote": "Unlike other platforms, Gumroad doesn't charge you a monthly fee. Instead, our fees are deducted as a small percentage of every sale, so we only make money when you do.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "number": 49,
+      "app": "Amazon Selling Partner",
+      "category": "Ecommerce",
+      "summary": "Amazon's Selling Partner API provides broad REST operations and GraphQL reporting through Data Kiosk, with LWA OAuth, private self-authorization, and Restricted Data Tokens. Production access requires Amazon developer-profile approval; an official Selling Partner plugin exists, but retrieved official pages do not identify it as an MCP server.",
+      "blocker": "Production SP-API applications require an approved developer profile and approved roles, with seller authorization for public apps. The Selling Partner plugin is separate from Amazon Ads MCP and its MCP protocol status remains unresolved; the plugin page is undated.",
+      "next_action": "Create a developer profile, test with a sandbox application while review proceeds, then register a production client and obtain role and selling-partner authorization. Implement LWA and RDT flows, and do not assume the Selling Partner plugin is an MCP server without explicit official protocol documentation.",
+      "fields": {
+        "auth": {
+          "value": [
+            "Public SP-API applications: OAuth 2.0 through Login with Amazon with selling-partner authorization",
+            "Private SP-API applications: self-authorization through Seller Central, Vendor Central, or Solution Provider Portal",
+            "SP-API requests: LWA access token obtained with application credentials or a refresh token",
+            "Restricted/PII operations: Restricted Data Token instead of an LWA access token",
+            "Current SP-API requests: no mandatory AWS Signature Version 4 or IAM registration"
+          ],
+          "status": "checked",
+          "reason": "Amazon documents public OAuth 2.0 authorization, private self-authorization, LWA token issuance and expiry, and RDT use for restricted operations. Its changelog confirms AWS Signature Version 4 and IAM are no longer required; the undated changelog is used only for that enduring protocol change, not as publication-date evidence.",
+          "evidence": [
+            {
+              "url": "https://developer-docs.amazon.com/sp-api/docs/authorizing-selling-partner-api-applications",
+              "title": "Amazon SP-API application authorization",
+              "quote": "Authorization method: OAuth 2.0 through Login with Amazon (LWA).",
+              "retrieved_at": "2026-11-24",
+              "published_at": "2026-11-23",
+              "published_label": "updated 2026-11-23"
+            },
+            {
+              "url": "https://developer-docs.amazon.com/sp-api/docs/authorizing-selling-partner-api-applications",
+              "title": "Amazon private SP-API self-authorization",
+              "quote": "Authorization method: Self-authorization.",
+              "retrieved_at": "2026-11-24",
+              "published_at": "2026-11-23",
+              "published_label": "updated 2026-11-23"
+            },
+            {
+              "url": "https://developer-docs.amazon.com/sp-api/docs/connecting-to-the-selling-partner-api",
+              "title": "Amazon LWA token lifetime",
+              "quote": "An LWA access token expires one hour after it is issued.",
+              "retrieved_at": "2026-11-24",
+              "published_at": "2026-09-09",
+              "published_label": "updated 2026-09-09"
+            },
+            {
+              "url": "https://developer-docs.amazon.com/sp-api/lang-es_ES/changelog/sp-api-will-no-longer-require-aws-iam-or-aws-signature-version-4",
+              "title": "Amazon SP-API AWS signing removal",
+              "quote": "Starting October 2, 2023, SP-API no longer requires the use of AWS Identity and Access Management (IAM) or AWS Signature Version 4, which means developers will not need to register for IAM resources or sign SP-API requests with AWS Signature Version 4.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            }
+          ]
+        },
+        "credential_gate": {
+          "value": "admin_approval",
+          "gate_class": "admin_approval",
+          "details": {
+            "gate_class": "admin_approval"
+          },
+          "status": "checked",
+          "reason": "Application registration requires a primary account user, Amazon reviews the developer profile, and production application registration requires an approved profile. Sandbox applications can be tested while review is pending. The registration, review, sandbox, and production pages were updated 2026-09-09.",
+          "evidence": [
+            {
+              "url": "https://developer-docs.amazon.com/sp-api/docs/registering-your-application",
+              "title": "Amazon SP-API application registration",
+              "quote": "You must be a primary account user to complete registration.",
+              "retrieved_at": "2026-11-24",
+              "published_at": "2026-09-09",
+              "published_label": "updated 2026-09-09"
+            },
+            {
+              "url": "https://developer-docs.amazon.com/sp-api/docs/onboarding-step-3-create-a-developer-profile",
+              "title": "Amazon developer-profile review",
+              "quote": "Amazon reviews your application and sends you an email to the email address associated with your developer profile.",
+              "retrieved_at": "2026-11-24",
+              "published_at": "2026-09-09",
+              "published_label": "updated 2026-09-09"
+            },
+            {
+              "url": "https://developer-docs.amazon.com/sp-api/docs/onboarding-step-7-register-your-first-production-application",
+              "title": "Amazon production application approval gate",
+              "quote": "After your developer profile is approved, you can register an application.",
+              "retrieved_at": "2026-11-24",
+              "published_at": "2026-09-09",
+              "published_label": "updated 2026-09-09"
+            }
+          ]
+        },
+        "api_surface": {
+          "value": "REST and GraphQL; broad selling-partner surface",
+          "status": "checked",
+          "reason": "The SP-API reference spans catalog items, orders, listings, inventory, fulfillment, finances, reports, sales, product pricing, promotions, and many additional seller and vendor APIs. Data Kiosk adds an official GraphQL reporting API. The reference was updated 2026-10-28; the Data Kiosk guide was updated 2026-10-20.",
+          "evidence": [
+            {
+              "url": "https://developer-docs.amazon.com/sp-api/reference/welcome-to-api-references",
+              "title": "Amazon Selling Partner API reference",
+              "quote": "Welcome to the Selling Partner API reference.",
+              "retrieved_at": "2026-11-24",
+              "published_at": "2026-10-28",
+              "published_label": "updated 2026-10-28"
+            },
+            {
+              "url": "https://developer-docs.amazon.com/sp-api/reference/welcome-to-api-references",
+              "title": "Amazon SP-API operation specifications",
+              "quote": "Each operation has request and response schemas, as well as examples.",
+              "retrieved_at": "2026-11-24",
+              "published_at": "2026-10-28",
+              "published_label": "updated 2026-10-28"
+            },
+            {
+              "url": "https://developer-docs.amazon.com/sp-api/docs/data-kiosk-api-v2023-11-15-use-case-guide",
+              "title": "Amazon Data Kiosk GraphQL reporting",
+              "quote": "Data Kiosk uses GraphQL, which allows dynamic report generation and advanced filtering and querying capabilities.",
+              "retrieved_at": "2026-11-24",
+              "published_at": "2026-10-20",
+              "published_label": "updated 2026-10-20"
+            }
+          ],
+          "api_types": [
+            "REST",
+            "GraphQL"
+          ],
+          "breadth": "broad",
+          "details": {
+            "api_types": [
+              "REST",
+              "GraphQL"
+            ],
+            "breadth": "broad"
+          }
+        },
+        "official_mcp": {
+          "value": "unknown",
+          "mcp_mode": "unknown",
+          "status": "unknown",
+          "reason": "Official pages confirm a vendor Selling Partner plugin for AWS Quick and Claude, but no retrieved rendered page identifies that plugin as an MCP server or supplies an MCP endpoint. Amazon explicitly separates it from the Amazon Ads MCP Server, which uses different OAuth flows and credentials. MCP protocol status therefore remains unknown rather than inferred from the word plugin.",
+          "evidence": [
+            {
+              "url": "https://sell.amazon.com/blog/announcements/amazons-selling-partner-plugin-ads-mcp",
+              "title": "Amazon Selling Partner plugin and Ads MCP separation",
+              "quote": "You’ll need to authorize the Selling Partner Plugin and the Ads MCP Server independently. They use separate OAuth flows, separate application credentials, and separate consent processes.",
+              "retrieved_at": "2026-11-24",
+              "published_at": "2026-11-19",
+              "published_label": "published 2026-11-19"
+            },
+            {
+              "url": "https://aws.amazon.com/blogs/machine-learning/run-your-whole-selling-business-in-aws-quick/",
+              "title": "AWS Quick Selling Partner plugin integration",
+              "quote": "The Selling Partner plugin and Amazon Ads MCP bring the Amazon selling and advertising data into Quick.",
+              "retrieved_at": "2026-11-24",
+              "published_at": "2026-11-19",
+              "published_label": "published 2026-11-19"
+            }
+          ]
+        },
+        "composio_toolkit": {
+          "value": "not_listed",
+          "status": "checked",
+          "reason": "The complete current Composio toolkits catalog contains no exact Amazon Selling Partner or approved-alias entry. The generic Amazon toolkit is a different product and is not a substitute; the catalog is undated.",
+          "evidence": [
+            {
+              "url": "https://docs.composio.dev/toolkits.md",
+              "title": "Composio complete toolkits catalog",
+              "quote": "Composio supports 1841 toolkits for building AI agents.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            },
+            {
+              "url": "https://docs.composio.dev/toolkits.md",
+              "title": "Composio all-toolkits table",
+              "quote": "## All Toolkits",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            }
+          ]
+        },
+        "verdict": {
+          "value": "gated_build_candidate",
+          "status": "checked",
+          "reason": "Broad REST and GraphQL SP-API surfaces with documented LWA and restricted-data authorization make Amazon a gated build candidate. Production use requires Amazon developer-profile approval and role/selling-partner authorization; this verdict does not rely on the unresolved Selling Partner plugin MCP status.",
+          "evidence": [
+            {
+              "url": "https://developer-docs.amazon.com/sp-api/docs/onboarding-step-7-register-your-first-production-application",
+              "title": "Amazon production SP-API gate",
+              "quote": "After your developer profile is approved, you can register an application.",
+              "retrieved_at": "2026-11-24",
+              "published_at": "2026-09-09",
+              "published_label": "updated 2026-09-09"
+            },
+            {
+              "url": "https://developer-docs.amazon.com/sp-api/reference/welcome-to-api-references",
+              "title": "Amazon SP-API build surface",
+              "quote": "Each operation has request and response schemas, as well as examples.",
+              "retrieved_at": "2026-11-24",
+              "published_at": "2026-10-28",
+              "published_label": "updated 2026-10-28"
+            },
+            {
+              "url": "https://developer-docs.amazon.com/sp-api/docs/data-kiosk-api-v2023-11-15-use-case-guide",
+              "title": "Amazon GraphQL reporting surface",
+              "quote": "Data Kiosk uses GraphQL, which allows dynamic report generation and advanced filtering and querying capabilities.",
+              "retrieved_at": "2026-11-24",
+              "published_at": "2026-10-20",
+              "published_label": "updated 2026-10-20"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "number": 50,
+      "app": "fanbasis",
+      "category": "Ecommerce",
+      "summary": "Fanbasis exposes an official API documentation site behind a password login, but the accessible official material does not reveal authentication methods, credential provisioning, API surface, pricing, or MCP support. The complete Composio catalog has no exact fanbasis toolkit.",
+      "blocker": "The official developer documentation requires a password, and the accepted-domain sitemap exposes no public API, authentication, pricing, or MCP pages. A login wall is not evidence that no public API exists.",
+      "next_action": "Request Fanbasis developer documentation access or official API credentials, then verify the API reference, authentication, access terms, and any MCP documentation directly. Re-run the Composio catalog check before implementation.",
+      "fields": {
+        "auth": {
+          "value": "unknown",
+          "status": "unknown",
+          "reason": "Targeted official attempts reached the Fanbasis API Docs login and the accepted-domain sitemap, but the password-protected documentation exposes no authentication methods or token flows. The login page and sitemap are undated as API evidence, so auth remains unknown.",
+          "evidence": [
+            {
+              "url": "https://dev-docs.fanbasis.com/",
+              "title": "Fanbasis API Docs login",
+              "quote": "Sign in to access API Docs",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            },
+            {
+              "url": "https://fanbasis.com/sitemap.xml",
+              "title": "Fanbasis official sitemap",
+              "quote": "<loc>https://www.fanbasis.com/faqs</loc>",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            }
+          ]
+        },
+        "credential_gate": {
+          "value": "unknown",
+          "status": "unknown",
+          "reason": "The official API documentation is password-gated and the sitemap provides no accessible credential-creation, plan, or pricing information. This does not establish free, paid, partner, or no-public-API access; both attempted sources are undated as access-policy evidence.",
+          "evidence": [
+            {
+              "url": "https://dev-docs.fanbasis.com/",
+              "title": "Fanbasis API Docs access wall",
+              "quote": "Sign in to access API Docs",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            },
+            {
+              "url": "https://fanbasis.com/sitemap.xml",
+              "title": "Fanbasis official sitemap access-policy attempt",
+              "quote": "<loc>https://www.fanbasis.com/faqs</loc>",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            }
+          ]
+        },
+        "api_surface": {
+          "value": "unknown",
+          "status": "unknown",
+          "reason": "The official API Docs site requires a password and the sitemap lists no accessible API reference, endpoint schema, or protocol documentation. API type and breadth therefore remain unknown; both attempted sources are undated as API-surface evidence.",
+          "evidence": [
+            {
+              "url": "https://dev-docs.fanbasis.com/",
+              "title": "Fanbasis API reference access wall",
+              "quote": "Sign in to access API Docs",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            },
+            {
+              "url": "https://fanbasis.com/sitemap.xml",
+              "title": "Fanbasis official sitemap API-reference attempt",
+              "quote": "<loc>https://www.fanbasis.com/faqs</loc>",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            }
+          ]
+        },
+        "official_mcp": {
+          "value": "unknown",
+          "mcp_mode": "unknown",
+          "status": "unknown",
+          "reason": "Targeted review of the official Fanbasis sitemap found no MCP or developer-documentation URL, and the discovered API Docs site is password-protected with no accessible MCP statement. No server, client-only, or explicit-negation conclusion is supported; both attempted sources are undated.",
+          "evidence": [
+            {
+              "url": "https://dev-docs.fanbasis.com/",
+              "title": "Fanbasis developer documentation access attempt",
+              "quote": "Sign in to access API Docs",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            },
+            {
+              "url": "https://fanbasis.com/sitemap.xml",
+              "title": "Fanbasis official sitemap MCP attempt",
+              "quote": "<loc>https://www.fanbasis.com/faqs</loc>",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            }
+          ]
+        },
+        "composio_toolkit": {
+          "value": "not_listed",
+          "status": "checked",
+          "reason": "The complete current Composio toolkits catalog contains no exact fanbasis or approved-alias entry. The catalog is undated.",
+          "evidence": [
+            {
+              "url": "https://docs.composio.dev/toolkits.md",
+              "title": "Composio complete toolkits catalog",
+              "quote": "Composio supports 1841 toolkits for building AI agents.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            },
+            {
+              "url": "https://docs.composio.dev/toolkits.md",
+              "title": "Composio all-toolkits table",
+              "quote": "## All Toolkits",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            }
+          ]
+        },
+        "verdict": {
+          "value": "unknown",
+          "status": "unknown",
+          "reason": "A checked build verdict is not possible because official authentication, credential-gate, and API-surface details are inaccessible behind the Fanbasis documentation login. The attempted official sources are undated and do not justify a no-public-API conclusion.",
+          "evidence": [
+            {
+              "url": "https://dev-docs.fanbasis.com/",
+              "title": "Fanbasis unresolved API documentation",
+              "quote": "Sign in to access API Docs",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            },
+            {
+              "url": "https://fanbasis.com/sitemap.xml",
+              "title": "Fanbasis unresolved official-source attempt",
+              "quote": "<loc>https://www.fanbasis.com/faqs</loc>",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

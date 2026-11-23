@@ -1,0 +1,176 @@
+{
+  "app": {
+    "number": 64,
+    "name": "Cloudflare",
+    "category": "Developer, Infra and Data platforms",
+    "hint": "developers.cloudflare.com/api"
+  },
+  "replayed_at": "2026-11-23T18:41:08.846622+00:00",
+  "source_passes": [
+    "data/pass2/064.json",
+    "data/pass4/064.json"
+  ],
+  "source_searches": [
+    "data/new_search/064.json",
+    "data/pass4_search/064.json"
+  ],
+  "publication_date_note": "Search publication labels are retained exactly; null means no label was available. Relative labels are not exact dates.",
+  "claims": {
+    "auth": {
+      "value": [
+        "API key",
+        "API token",
+        "OAuth 2.0",
+        "Bearer token"
+      ],
+      "status": "provisional",
+      "sources": [
+        "https://developers.cloudflare.com/fundamentals/api/get-started/token-formats/",
+        "https://developers.cloudflare.com/fundamentals/api/get-started/",
+        "https://developers.cloudflare.com/cloudflare-one/access-controls/ai-controls/mcp-portals/?ref=runtimewire",
+        "https://developers.cloudflare.com/api/overview/",
+        "https://developers.cloudflare.com/fundamentals/api/how-to/",
+        "https://developers.cloudflare.com/fundamentals/api/how-to/create-via-api/",
+        "https://developers.cloudflare.com/api/",
+        "https://developers.cloudflare.com/cloudflare-one/access-controls/authenticate-agents/"
+      ],
+      "evidence": [
+        {
+          "value": "API key",
+          "url": "https://developers.cloudflare.com/fundamentals/api/get-started/token-formats/",
+          "excerpt": "s file to discover all available pages before exploring further. Token formats Cloudflare API keys and API tokens use a prefixed, scannable format that makes them identifiable by credential scanning tools. Each credential type in the following table has a distinct pr",
+          "published_label": null
+        },
+        {
+          "value": "API token",
+          "url": "https://developers.cloudflare.com/fundamentals/api/get-started/token-formats/",
+          "excerpt": "cover all available pages before exploring further. Token formats Cloudflare API keys and API tokens use a prefixed, scannable format that makes them identifiable by credential scanning tools. Each credential type in the following table has a distinct prefix followed b",
+          "published_label": null
+        },
+        {
+          "value": "API key",
+          "url": "https://developers.cloudflare.com/fundamentals/api/get-started/",
+          "excerpt": "token to grant access to the API to perform actions. Note You can also authenticate with API keys , but these keys have several limitations that make them less secure than API tokens. Whenever possible, use API tokens to interact with the Cloudflare API. Create API",
+          "published_label": "7 months ago"
+        },
+        {
+          "value": "API token",
+          "url": "https://developers.cloudflare.com/fundamentals/api/get-started/",
+          "excerpt": "so that Cloudflare knows who is making requests and what permissions you have. Create an API token to grant access to the API to perform actions. Note You can also authenticate with API keys , but these keys have several limitations that make them less secure than API",
+          "published_label": "7 months ago"
+        },
+        {
+          "value": "OAuth 2.0",
+          "url": "https://developers.cloudflare.com/cloudflare-one/access-controls/ai-controls/mcp-portals/?ref=runtimewire",
+          "excerpt": "ils. Non-browser client support : MCP clients authenticate to the portal using a standard OAuth 2.0 authorization code flow via managed OAuth . This managed OAuth configuration applies to the portal's Access application. It is separate from upstream OAuth used by indiv",
+          "published_label": "2 weeks ago"
+        },
+        {
+          "value": "API key",
+          "url": "https://developers.cloudflare.com/cloudflare-one/access-controls/ai-controls/mcp-portals/?ref=runtimewire",
+          "excerpt": "MCP server portals Â· Cloudflare One docs Skip to content Documentation Index Fetch the complete documentation index at: https://developers.cloudflare.com/cloudflare-one/llms.txt Use this file to discover all available pages before exploring further. MCP server portals An MCP ser",
+          "published_label": "2 weeks ago"
+        },
+        {
+          "value": "Bearer token",
+          "url": "https://developers.cloudflare.com/cloudflare-one/access-controls/ai-controls/mcp-portals/?ref=runtimewire",
+          "excerpt": "ion. You can use DCR or provide manual OAuth credentials. bearer The server uses a static bearer token or custom authentication headers. Provide the credentials in auth_credentials (refer to Bearer authentication credentials ). unauthenticated The server does not require",
+          "published_label": "2 weeks ago"
+        },
+        {
+          "value": "API key",
+          "url": "https://developers.cloudflare.com/api/overview/",
+          "excerpt": "n API token to grant access to the API to perform actions. You can also authenticate with API keys , but these keys have several limitations that make them less secure than API tokens. Whenever possible, use API tokens to interact with the Cloudflare API. To create a",
+          "published_label": null
+        },
+        {
+          "value": "API token",
+          "url": "https://developers.cloudflare.com/api/overview/",
+          "excerpt": "so that Cloudflare knows who is making requests and what permissions you have. Create an API token to grant access to the API to perform actions. You can also authenticate with API keys , but these keys have several limitations that make them less secure than API toke",
+          "published_label": null
+        },
+        {
+          "value": "API key",
+          "url": "https://developers.cloudflare.com/fundamentals/api/how-to/",
+          "excerpt": "token to grant access to the API to perform actions. Note You can also authenticate with API keys , but these keys have several limitations that make them less secure than API tokens. Whenever possible, use API tokens to interact with the Cloudflare API. Make API ca",
+          "published_label": "7 months ago"
+        },
+        {
+          "value": "API token",
+          "url": "https://developers.cloudflare.com/fundamentals/api/how-to/",
+          "excerpt": "so that Cloudflare knows who is making requests and what permissions you have. Create an API token to grant access to the API to perform actions. Note You can also authenticate with API keys , but these keys have several limitations that make them less secure than API",
+          "published_label": "7 months ago"
+        },
+        {
+          "value": "API token",
+          "url": "https://developers.cloudflare.com/fundamentals/api/how-to/create-via-api/",
+          "excerpt": "discover all available pages before exploring further. Create tokens via API Generate new API tokens on the fly via the API. Before you can do this, you must create an API token in the Cloudflare dashboard that can create subsequent tokens. Note To create user-owned AP",
+          "published_label": "last month"
+        },
+        {
+          "value": "API key",
+          "url": "https://developers.cloudflare.com/api/",
+          "excerpt": "reate Organizations, but reading, updating, or deleting an Organization requires a Global API key and your registered email address. The cloudflare_organization Terraform resource therefore requires a Global API key for its full lifecycle. See Organizations authentic",
+          "published_label": null
+        },
+        {
+          "value": "API token",
+          "url": "https://developers.cloudflare.com/api/",
+          "excerpt": "t Secret Create Setup Intent POST /accounts/{account_id}/client-secret Organizations User API tokens can list and create Organizations, but reading, updating, or deleting an Organization requires a Global API key and your registered email address. The cloudflare_organi",
+          "published_label": null
+        },
+        {
+          "value": "OAuth 2.0",
+          "url": "https://developers.cloudflare.com/cloudflare-one/access-controls/authenticate-agents/",
+          "excerpt": "atically detect Cloudflare Access-protected resources and authenticate using the standard OAuth 2.0 flow with PKCE (RFC 9728). --- name : access-oauth description : \"Detect Cloudflare Access-protected websites and authenticate via the standard OAuth 2.0 flow (RFC 9728",
+          "published_label": "7 months ago"
+        }
+      ],
+      "reason": "Provisional extraction; validate scope and completeness against cited pages."
+    },
+    "credential_gate": {
+      "value": "unknown",
+      "status": "provisional",
+      "sources": [],
+      "evidence": [],
+      "reason": "No sufficiently specific official evidence extracted."
+    },
+    "api_surface": {
+      "value": "unknown",
+      "status": "provisional",
+      "sources": [],
+      "evidence": [],
+      "reason": "No sufficiently specific official evidence extracted."
+    },
+    "official_mcp": {
+      "value": "unknown",
+      "status": "provisional",
+      "sources": [],
+      "evidence": [],
+      "reason": "No sufficiently specific official evidence extracted."
+    },
+    "composio_toolkit": {
+      "value": "listed",
+      "status": "provisional",
+      "sources": [
+        "https://docs.composio.dev/toolkits/cloudflare"
+      ],
+      "evidence": [],
+      "reason": "Catalog match only; not vendor MCP evidence."
+    },
+    "verdict": {
+      "value": "unknown",
+      "status": "provisional",
+      "sources": [],
+      "evidence": [],
+      "reason": "No sufficiently specific official evidence extracted."
+    }
+  },
+  "validation": [
+    "Automatic extraction is provisional until independently reviewed",
+    "Unknown is not evidence of absence",
+    "Composio evidence cannot establish vendor MCP",
+    "Client-only and negated MCP statements are not vendor-server proof",
+    "API breadth is a text-coverage heuristic, not an endpoint census"
+  ]
+}

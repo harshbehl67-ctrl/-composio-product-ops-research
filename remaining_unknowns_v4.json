@@ -1,0 +1,124 @@
+[
+  {
+    "number": 50,
+    "app": "fanbasis",
+    "fields": {
+      "auth": {
+        "reason": "FanBasis became Commas on 2026-07-14. Current first-party Commas pages document APIs, SDKs, and an MCP beta but publish no OAuth, API-key, bearer-token, or other authentication flow. The legacy Fanbasis API Docs site remains password-protected, so authentication cannot be verified from accessible official text. The rebrand page is undated as a publication; the login and product pages are undated.",
+        "attempted_sources": [
+          {
+            "url": "https://commas.com/fanbasis-is-now-commas",
+            "title": "FanBasis is now Commas",
+            "quote": "On July 14, 2026, FanBasis became Commas. The name changed. The company did not.",
+            "retrieved_at": "2026-11-24",
+            "published_at": null,
+            "published_label": "rebrand effective 2026-07-14; page undated"
+          },
+          {
+            "url": "https://commas.com/",
+            "title": "Commas APIs and SDKs",
+            "quote": "Embedded checkouts, multi-rail payouts, APIs and SDKs. Everything you'd replace Stripe with, plus BNPL, recovery and lower effective rates.",
+            "retrieved_at": "2026-11-24",
+            "published_at": null,
+            "published_label": "undated"
+          },
+          {
+            "url": "https://dev-docs.fanbasis.com/",
+            "title": "FanBasis API Docs login",
+            "quote": "Sign in to access API Docs",
+            "retrieved_at": "2026-11-24",
+            "published_at": null,
+            "published_label": "undated"
+          }
+        ]
+      },
+      "credential_gate": {
+        "reason": "The current Commas Enterprise page markets APIs and a dedicated implementation engineer, but it does not state API credential issuance, pricing, approval, or whether API access is self-serve or sales-gated. The legacy Fanbasis API Docs site requires a password. Public account opening is not enough to classify API access. The reviewed pages are undated.",
+        "attempted_sources": [
+          {
+            "url": "https://commas.com/enterprises",
+            "title": "Commas Enterprise API access",
+            "quote": "APIs and embeddable components, live in days not quarters.",
+            "retrieved_at": "2026-11-24",
+            "published_at": null,
+            "published_label": "undated"
+          },
+          {
+            "url": "https://commas.com/enterprises",
+            "title": "Commas Enterprise implementation support",
+            "quote": "Embedded checkout, smart routing, B2B financing and a dedicated implementation engineer behind your volume.",
+            "retrieved_at": "2026-11-24",
+            "published_at": null,
+            "published_label": "undated"
+          },
+          {
+            "url": "https://dev-docs.fanbasis.com/",
+            "title": "FanBasis API Docs access wall",
+            "quote": "Sign in to access API Docs",
+            "retrieved_at": "2026-11-24",
+            "published_at": null,
+            "published_label": "undated"
+          }
+        ]
+      },
+      "api_surface": {
+        "reason": "Current first-party Commas pages confirm APIs and SDKs, but no accessible official page publishes REST, GraphQL, HTTP, gRPC, SOAP, endpoint schemas, or resource breadth. The legacy Fanbasis API Docs v3 site is password-protected, and the tested Commas /api, /docs, /mcp, and /developers routes return 404. API type and breadth therefore remain unknown rather than inferred from the word API.",
+        "attempted_sources": [
+          {
+            "url": "https://commas.com/",
+            "title": "Commas APIs and SDKs",
+            "quote": "Embedded checkouts, multi-rail payouts, APIs and SDKs. Everything you'd replace Stripe with, plus BNPL, recovery and lower effective rates.",
+            "retrieved_at": "2026-11-24",
+            "published_at": null,
+            "published_label": "undated"
+          },
+          {
+            "url": "https://dev-docs.fanbasis.com/",
+            "title": "FanBasis API Docs login",
+            "quote": "Sign in to access API Docs",
+            "retrieved_at": "2026-11-24",
+            "published_at": null,
+            "published_label": "undated"
+          },
+          {
+            "url": "https://commas.com/api",
+            "title": "Commas API route attempt",
+            "quote": "Sorry, the page you're looking for doesn't exist or has been moved.",
+            "retrieved_at": "2026-11-24",
+            "published_at": null,
+            "published_label": "undated"
+          }
+        ]
+      },
+      "verdict": {
+        "reason": "A checked build verdict is not supportable because current public Commas pages do not resolve API authentication, credential access, or API protocol/breadth, and the legacy API Docs site is password-protected. The MCP beta is documented but lacks public connection and access details. This does not establish that no public API exists. The reviewed pages are undated; the rebrand was effective 2026-07-14.",
+        "attempted_sources": [
+          {
+            "url": "https://commas.com/fanbasis-is-now-commas",
+            "title": "FanBasis is now Commas",
+            "quote": "On July 14, 2026, FanBasis became Commas. The name changed. The company did not.",
+            "retrieved_at": "2026-11-24",
+            "published_at": null,
+            "published_label": "rebrand effective 2026-07-14; page undated"
+          },
+          {
+            "url": "https://commas.com/",
+            "title": "Commas MCP beta",
+            "quote": "MCP beta Run Commas from your AI assistant. Create checkout links, issue refunds and pull your numbers in plain English.",
+            "retrieved_at": "2026-11-24",
+            "published_at": null,
+            "published_label": "beta; undated"
+          },
+          {
+            "url": "https://dev-docs.fanbasis.com/",
+            "title": "FanBasis API Docs access wall",
+            "quote": "Sign in to access API Docs",
+            "retrieved_at": "2026-11-24",
+            "published_at": null,
+            "published_label": "undated"
+          }
+        ]
+      }
+    }
+  }
+]

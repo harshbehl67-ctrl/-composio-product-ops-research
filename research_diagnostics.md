@@ -1,31 +1,83 @@
-# Diagnosis and second experiment
+# Research diagnostics and final validation
 
 ## Why the baseline abstained
 
-`research.py` did not contain an extraction prompt or a model call. It searched once per app, fetched at most one hint-domain URL, and then unconditionally assigned `unknown` (or `unclear`) to every substantive field. A validation rule also marked every row as needing review. Thus the 0/60 sample coverage was intentional code behavior, not measured model uncertainty. In addition, the domain-discovery pass often selected a vendor homepage, login page, or unrelated product page; a matching domain alone did not establish a claim. Developer documentation may also live on a separate vendor-controlled domain.
+`research.py` did not contain an extraction prompt or model call. It searched once per app, fetched at most one hint-domain URL, and unconditionally assigned `unknown` or `unclear` to substantive fields. The 0/60 sample coverage was intentional code behavior, not measured model uncertainty. Domain discovery often selected homepages, login pages, or unrelated product pages, and developer documentation frequently lives on a separate vendor-controlled domain.
 
-The original `data/001.json` through `data/100.json` remain unchanged. The baseline sample had 0/60 answered claims, so accuracy among answered claims has denominator zero and is undefined.
+The original `data/001.json`–`data/100.json` remain unchanged. Baseline answered-claim accuracy is undefined (0/0).
 
-## New pass
+## Why relevant documentation still produced blanks
 
-The new discovery run saved three targeted queries per app (authentication and credentials; API access and pricing; official MCP) and the web-search response under `data/new_search/`. `improved_pass.py` selects candidate vendor domains and documentation-like paths, fetches up to six pages per app, saves retrieved text and errors, and extracts positive authentication, API-surface and MCP matches with source excerpts. It independently checks the saved Composio catalog. It does not infer absence from a failed search. The original saved new pass is `data/pass2/`; forced reruns use timestamped files under `data/pass2_reruns/`.
+The first targeted extractor was deterministic. Its domain rule required both a vendor-root match and an API/documentation-like path, discarding official pricing, credential-creation, review, and MCP pages on other paths. Candidate selection spent its six-page budget on topic labels rather than guaranteed coverage of the five required source types. JavaScript shells, redirects, 403 responses, navigation removal, and truncation further reduced usable text.
 
-The extractor is deterministic and has **no LLM extraction prompt**. Its claims are tentative, not individually verified. It did not implement access-tier or verdict classification, so those fields remain unknown in the saved pass even if the targeted search surfaced useful evidence. Its domain and text rules can misclassify scope or product identity. `refine_access.py` separately indexes access-related phrases for 26/100 apps, but the examples include false matches and are not automatically promoted to facts.
+Extraction added a second bottleneck. Authentication was scanned only on authentication-looking pages. API recognition required exact “REST API” or “GraphQL API” phrases, missing “HTTP API”, “RESTful APIs”, “GraphQL Admin API”, and explicitly negated REST statements. There was no breadth classifier, access-tier implementation, or verdict implementation in pass 2. MCP matching was a positive keyword/brand-proximity test: it could not distinguish a vendor server from a client connection, handled negation incompletely, and did not retain source dates systematically.
 
-The 100-app new pass produced provisional answers for authentication on 56/100, API surface on 28/100, vendor MCP on 65/100, and Composio catalog matches on 77/100. Its 476 HTTP attempts returned 457 HTTP 200 responses, 18 HTTP 403 responses, and one network error. Eleven apps had no candidate that passed the selection rule. These figures measure extraction and retrieval coverage, not claim accuracy or verified vendor capabilities. A 200 response does not establish that the page supports a claim.
+The 100-app new pass provisionally answered authentication for 56 apps, API surface for 28, vendor MCP for 65, and Composio catalog matches for 77. These were extraction counts, not verified findings.
 
-## Independent AI-assisted review
+## Context-aware replay
 
-`pass2_review.json` records a deliberately chosen sample of ten apps, one from each category, with six fields each. The new pass answered 26/60 and abstained on 34/60. Of the 26 answered claims, the independent review rated 19 correct, seven partial, zero incorrect and zero unresolved. Strict full-credit accuracy is 19/26 (73.1%). With partial answers assigned 0.5, the weighted result is (19 + 7×0.5)/26 = 22.5/26 (86.5%). This is a targeted sample, not a random holdout or population estimate; the original baseline has no calculable answered-claim accuracy to compare against it.
+`context_pass_v4.py` broadens official-source ownership, scans API evidence beyond authentication-looking pages, recognizes REST/GraphQL/HTTP/gRPC/SOAP with clause-local negation, estimates breadth from documented resource terms, and extracts free/trial/paid/admin/partner access conditions. MCP classification separates `vendor_server`, `client_only`, `no_vendor_server_documented`, and `unknown`; Composio cannot establish vendor MCP.
 
-Examples: Zendesk's extracted MCP answer was positive, but its citation described Zendesk as a **client** of external servers. Independent vendor documentation establishes Zendesk's own MCP server through Zendesk Bridge in early access, so the answer received partial credit with the correct source. Notion had a similar client/server citation error. Slack's extraction included Basic authentication for an OAuth token endpoint as though it were a general API method, and omitted the scope of that detail. GitHub's extracted Basic-only answer missed personal access tokens and app tokens. Exact original new-pass answers, citations, ratings, corrections, and review sources are in `pass2_review.json`.
+The corrected frozen replay is `data/pass12/`. It provisionally answered auth 77, access 31, API surface 41, vendor MCP 30, Composio toolkit 77, and verdict 15. These remain extraction counts. Earlier defective passes are preserved.
 
-## What is still incomplete
+## Final checked dataset
 
-`manual_facts.json` records independently reviewed, scoped access findings and product-ops inferences. `reviewed_dataset.json` combines these with prior checked evidence without changing either frozen pass. It has 15 scoped buildability decisions and 85 unknown verdicts; `remaining_unknowns.json` records the reason for each unresolved field. The new pass's 65 provisional MCP matches and 56 provisional auth matches have not been verified across all 100 apps, so they must not be presented as population findings. No paid account, real credential, production integration, random holdout or full accessibility audit was used.
+All ten category files are complete and strictly validated:
 
-The targeted searches were performed with the connected web-search service, which is not a standalone command supplied in this repository. The logged queries and outputs are saved, and the extractor can be rerun against those saved results. Credential-shaped strings found in several files of retrieved public material were redacted before pushing; `redaction_log.json` records the affected files and match counts without retaining the strings.
+- 100 unique apps across ten categories.
+- 496/500 vendor-field claims checked.
+- 100/100 Composio toolkit claims checked.
+- 64 documented build candidates, 30 gated candidates, 3 partner/sales, 2 wrapper/CLI, 1 unresolved.
+- 92 vendor-operated MCP servers and 8 scoped no-vendor-server documentation findings.
+- 69 exact Composio listings, 11 alias listings, 20 point-in-time no-listing findings.
 
-Aircall provides an out-of-sample negation error: its current FAQ says it did not offer an MCP server at the time of writing, whereas the new extractor returned yes after matching the words MCP server. The corrected, dated vendor statement is in `manual_facts.json`; this out-of-sample finding is not included in the 26-claim sample score.
+The only unresolved core fields are Fanbasis authentication, credential gate, API surface, and verdict. Fanbasis became Commas on 2026-07-14. Current first-party pages document APIs/SDKs and an MCP beta, but omit API authentication, credential issuance, protocol, and endpoint breadth. The legacy Fanbasis API Docs site is password-protected. The MCP finding is checked; the remaining unknowns are specific to inaccessible API details.
 
-One bearer-shaped example from the public Zendesk authentication documentation was already present in `data/review_sources/73874c42bbc1e9a0.json` in commit `3fe2521`, which was pushed before the broader bearer-pattern check. It has been redacted in the current working tree; the earlier commit remains in Git history. It was drawn from public documentation and has not been established to be a live credential.
+## Source and link verification
+
+`verify_checked_sources.py` validates only visible HTML text or explicit Markdown/plain-text/JSON/XML artifacts. Scripts, navigation, hidden elements, and raw HTML do not validate quotations. It normalizes Markdown links, Unicode hyphens, punctuation spacing, and missing server charsets.
+
+Final results:
+
+- 592 unique dataset evidence URLs.
+- 10 direct non-200/error results: nine checked Salesforce/PitchBook URLs with exact rendered-browser keeps, plus one unknown Fanbasis `/api` attempt retained as a 404.
+- 96 quotations not reproduced by direct fetch; all are covered by 120 exact rendered-browser keeps.
+- Zero unreviewed checked HTTP failures and zero unreviewed checked quotation failures.
+- `link_checks_v4.json`: zero broken checked-evidence links; one failed attempted lookup retained for an unknown claim.
+- `independent_link_checks_v4.json`: 123 unique independent-review URLs; four direct Salesforce 403 responses are rendered-browser verified; zero unresolved.
+
+A 200 response alone never establishes truth, and a browser-rendered quote does not establish live account access.
+
+## Independent six-field review
+
+The deliberately selected ten-category sample remains separate from the seeded random holdout (`20261124`), drawn after pass 12 froze.
+
+| Cohort | Answered | Correct | Partial | Incorrect | Abstained | Strict | Half-credit |
+|---|---:|---:|---:|---:|---:|---:|---:|
+| Selected sample | 33/60 | 19 | 12 | 2 | 27 | 19/33 (57.6%) | 25/33 (75.8%) |
+| Random holdout | 26/60 | 14 | 8 | 4 | 34 | 14/26 (53.8%) | 18/26 (69.2%) |
+
+Abstained and unresolved claims are excluded from accuracy denominators. The baseline answered 0/60, so its accuracy is undefined (0/0); no baseline improvement is claimed. Exact ratings, corrections, and independent sources are in `independent_review_v4.json`.
+
+## Publication safeguards
+
+- Exact owner/repository allowlisting on GitHub and shared code hosts; arbitrary `github.io` sites are rejected.
+- Unknown claims cannot retain positive gate, API, MCP, or listing metadata.
+- Checked `not_listed` requires complete-catalog evidence and a scoped search note.
+- `no_vendor_server_documented` requires an explicit review basis: scoped documentation review or explicit negation.
+- The public page payload uses an allowlist and excludes raw passes, search responses, page text, and auth config.
+- JSON/CSV exports are parsed and checked for 100 unique apps, required fields, raw-key exclusion, and formula-shaped cells.
+- Source-review application is idempotent, including chained replacements and reclassifications.
+- All final category files and generated artifacts are eligible for the hash manifest.
+
+## Security review
+
+The bearer-shaped value in the first Git commit exactly matches a publicly labeled Zendesk documentation example. It was not established as a user-owned credential, so no history rewrite or revocation was performed. `security_example_review.json` records the finding.
+
+`scan_secrets.py` stores only file, line, category, and SHA-256 fingerprint. Final scan: 1,728 files, 42 credential-shaped occurrences, all inside preserved research, zero outside. The public page payload excludes those raw passes.
+
+## Regression and browser tests
+
+The Python suite has 41 passing tests. Playwright passes at 1440px and 390px for 100 rows, all filters, empty search, sorting, keyboard evidence details, no horizontal overflow, parsed JSON/CSV exports, raw-research exclusion, and the 60-claim holdout view. No script errors were observed.
+
+No live token, paid plan, admin approval, partner agreement, production connection, Composio SDK runtime, or MCP runtime was tested.

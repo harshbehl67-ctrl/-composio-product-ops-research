@@ -1,0 +1,164 @@
+{
+  "app": {
+    "number": 79,
+    "name": "Smartsheet",
+    "category": "Productivity and Project Management",
+    "hint": "smartsheet.com/developers"
+  },
+  "replayed_at": "2026-11-23T18:41:11.004715+00:00",
+  "source_passes": [
+    "data/pass2/079.json",
+    "data/pass4/079.json"
+  ],
+  "source_searches": [
+    "data/new_search/079.json",
+    "data/pass4_search/079.json"
+  ],
+  "publication_date_note": "Search publication labels are retained exactly; null means no label was available. Relative labels are not exact dates.",
+  "claims": {
+    "auth": {
+      "value": [
+        "OAuth 2.0",
+        "API key",
+        "API token"
+      ],
+      "status": "provisional",
+      "sources": [
+        "https://developers.smartsheet.com/api/smartsheet/guides/basics/authentication",
+        "https://www.smartsheet.com/content-center/product-insights/product-updates/introducing-smartsheet-mcp-server",
+        "https://help.smartsheet.com/articles/2482389-generate-API-key",
+        "https://developers.smartsheet.com/ai-mcp/smartsheet/install-the-smartsheet-mcp-server",
+        "https://www.smartsheet.com/content-center/smartsheet-mcp-server-now-generally-available"
+      ],
+      "evidence": [
+        {
+          "value": "OAuth 2.0",
+          "url": "https://developers.smartsheet.com/api/smartsheet/guides/basics/authentication",
+          "excerpt": "s typically best to use OAuth with Smartsheet. Note that the Smartsheet implementation of OAuth 2.0 is a 3-legged process, which requires human intervention. See OAuth Walkthrough for details. If your scenario is strictly machine-to-machine, execute raw token requests",
+          "published_label": null
+        },
+        {
+          "value": "API key",
+          "url": "https://developers.smartsheet.com/api/smartsheet/guides/basics/authentication",
+          "excerpt": "nnect to VS Code Install MCP server on VS Code The API authenticates using access tokens (API keys). You can generate access tokens in the Smartsheet UI. Important: Smartsheet Gov and Smartsheet Regions Europe use separate tokens from Smartsheet.com. Each API request",
+          "published_label": null
+        },
+        {
+          "value": "OAuth 2.0",
+          "url": "https://www.smartsheet.com/content-center/product-insights/product-updates/introducing-smartsheet-mcp-server",
+          "excerpt": ": User authenticates — Connect your Smartsheet account to any MCP-compliant AI client via OAuth 2.0 or personal access token for custom agent integrations. User asks a question — Natural-language query: \"What's blocking my Q3 launch?\" or \"List all high-priority tasks d",
+          "published_label": null
+        },
+        {
+          "value": "API token",
+          "url": "https://www.smartsheet.com/content-center/product-insights/product-updates/introducing-smartsheet-mcp-server",
+          "excerpt": "nce from day one, not bolted on after launch. Authentication: OAuth 2.0 with configurable API token scopes, or personal access tokens for custom agent integrations. The same proven authentication model developers already use with the Smartsheet API. Permission enforcem",
+          "published_label": null
+        },
+        {
+          "value": "API token",
+          "url": "https://help.smartsheet.com/articles/2482389-generate-API-key",
+          "excerpt": "Generate an API access token | Smartsheet Learning Center Skip to main content To learn more about Smartsheet Regions, click here .  USM Content User model Legacy model Info Generate an API access token A Smarsheet API access token allows you to access and manage your organizati",
+          "published_label": null
+        },
+        {
+          "value": "API token",
+          "url": "https://developers.smartsheet.com/ai-mcp/smartsheet/install-the-smartsheet-mcp-server",
+          "excerpt": "n requires: Network access to a Smartsheet production server environment Valid Smartsheet API token, unless you're connecting an AI tool that supports Smartsheet's OAuth, such as ChatGPT (web or mobile), Claude AI, Claude Desktop, Gemini Enterprise Plus, or Microsoft 3",
+          "published_label": null
+        },
+        {
+          "value": "OAuth 2.0",
+          "url": "https://www.smartsheet.com/content-center/smartsheet-mcp-server-now-generally-available",
+          "excerpt": "ettings > Connectors. For all other MCP-compliant tools, use the MCP Server endpoint with OAuth 2.0 or a personal access token. Check out Smartsheet MCP Server Documentation and our blog for the full details. Environment Availability: Commercial US, Commercial EU, Comm",
+          "published_label": "8 months ago"
+        }
+      ],
+      "reason": "Provisional extraction; validate scope and completeness against cited pages."
+    },
+    "credential_gate": {
+      "value": "unknown",
+      "status": "provisional",
+      "sources": [],
+      "evidence": [],
+      "reason": "No sufficiently specific official evidence extracted."
+    },
+    "api_surface": {
+      "value": "REST; moderate documented surface",
+      "status": "provisional",
+      "sources": [
+        "https://www.smartsheet.com/content-center/product-insights/product-updates/introducing-smartsheet-mcp-server",
+        "https://www.smartsheet.com/content-center/smartsheet-mcp-server-now-generally-available"
+      ],
+      "evidence": [
+        {
+          "value": [
+            "REST"
+          ],
+          "breadth": "moderate",
+          "url": "https://www.smartsheet.com/content-center/product-insights/product-updates/introducing-smartsheet-mcp-server",
+          "excerpt": "Smartsheet API now speaks AI: Introducing Smartsheet MCP server for every MCP-compliant AI tool | Smartsheet Skip to main content Article Smartsheet API now speaks AI: Introducing Smartsheet MCP server for every MCP-compliant AI tool GJ Galina Jordanowa March 24, 2026 Share on Fa",
+          "published_label": null
+        },
+        {
+          "value": [
+            "REST"
+          ],
+          "breadth": "moderate",
+          "url": "https://www.smartsheet.com/content-center/smartsheet-mcp-server-now-generally-available",
+          "excerpt": "Smartsheet MCP Server now generally available! | Smartsheet Skip to main content Article Smartsheet MCP Server now generally available! PM Product Marketing March 24, 2026 You can now connect Smartsheet to any MCP-compliant AI tool through the new Smartsheet MCP Server — an open,",
+          "published_label": "8 months ago"
+        }
+      ],
+      "reason": "Provisional extraction; validate scope and completeness against cited pages."
+    },
+    "official_mcp": {
+      "value": "vendor_server",
+      "status": "provisional",
+      "sources": [
+        "https://www.smartsheet.com/content-center/product-insights/product-updates/introducing-smartsheet-mcp-server",
+        "https://help.smartsheet.com/articles/2483670-smartsheet-mcp-server"
+      ],
+      "evidence": [
+        {
+          "value": "vendor_server",
+          "url": "https://www.smartsheet.com/content-center/product-insights/product-updates/introducing-smartsheet-mcp-server",
+          "excerpt": "Smartsheet API now speaks AI: Introducing Smartsheet MCP server for every MCP-compliant AI tool | Smartsheet Skip to main content Article Smartsheet API now speaks AI: Introducing Smartsheet MCP server for every MCP-compliant AI tool",
+          "published_label": null,
+          "context_note": "Vendor-owned server statement; review date and access scope."
+        },
+        {
+          "value": "vendor_server",
+          "url": "https://help.smartsheet.com/articles/2483670-smartsheet-mcp-server",
+          "excerpt": "rn more about Smartsheet Regions, click here .  USM Content User model Legacy model Info Smartsheet MCP Server overview The Smartsheet Model Context Protocol (MCP) Server enables you to manage projects and Smartsheet data from within Smart Assist and AI assistants, such as Claude, ChatGPT, Microsoft 365 Copilot, Gemini Enterprise Plus, Cursor, an",
+          "published_label": null,
+          "context_note": "Vendor-owned server statement; review date and access scope."
+        }
+      ],
+      "reason": "Provisional; check date, ownership and access scope."
+    },
+    "composio_toolkit": {
+      "value": "listed",
+      "status": "provisional",
+      "sources": [
+        "https://docs.composio.dev/toolkits/smartsheet"
+      ],
+      "evidence": [],
+      "reason": "Catalog match only; not vendor MCP evidence."
+    },
+    "verdict": {
+      "value": "unknown",
+      "status": "provisional",
+      "sources": [],
+      "evidence": [],
+      "reason": "No sufficiently specific official evidence extracted."
+    }
+  },
+  "validation": [
+    "Automatic extraction is provisional until independently reviewed",
+    "Unknown is not evidence of absence",
+    "Composio evidence cannot establish vendor MCP",
+    "Client-only and negated MCP statements are not vendor-server proof",
+    "API breadth is a text-coverage heuristic, not an endpoint census"
+  ]
+}

@@ -1,0 +1,201 @@
+{
+  "app": {
+    "number": 36,
+    "name": "Klaviyo",
+    "category": "Marketing, Ads, Email and Social",
+    "hint": "developers.klaviyo.com"
+  },
+  "checked_at": "2026-11-23T18:15:05.604196+00:00",
+  "prior_source": "data/pass2/036.json",
+  "search_source": "data/pass4_search/036.json",
+  "new_candidates": [
+    {
+      "url": "https://developers.klaviyo.com/en/v1-2/docs/retrieve-api-credentials",
+      "title": "Obtain API credentials (https://developers.klaviyo.com/en/v1-2/docs/retrieve-api-credentials)",
+      "published_label": null
+    },
+    {
+      "url": "https://academy.klaviyo.com/en-us/courses/manage-your-klaviyo-account-settings-and-integrations/lessons/manage-user-roles",
+      "title": "Manage user roles - Manage your Klaviyo account settings and integrations | Klaviyo Academy (https://academy.klaviyo.com/en-us/courses/manage-your-klaviyo-account-settings-and-integrations/lessons/manage-user-roles)",
+      "published_label": null
+    },
+    {
+      "url": "https://developers.klaviyo.com/en/v2024-05-15/docs/retrieve_api_credentials",
+      "title": "Obtain API credentials (https://developers.klaviyo.com/en/v2024-05-15/docs/retrieve_api_credentials)",
+      "published_label": null
+    },
+    {
+      "url": "https://developers.klaviyo.com/en/v2026-07-15/reference/api_overview",
+      "title": "API overview (https://developers.klaviyo.com/en/v2026-07-15/reference/api_overview)",
+      "published_label": null
+    },
+    {
+      "url": "https://developers.klaviyo.com/en/v2026-01-15/docs/authenticate_",
+      "title": "Authenticate API requests (https://developers.klaviyo.com/en/v2026-01-15/docs/authenticate_)",
+      "published_label": null
+    },
+    {
+      "url": "https://developers.klaviyo.com/en/v1-2/docs/getting-started",
+      "title": "Get started with Klaviyo (https://developers.klaviyo.com/en/v1-2/docs/getting-started)",
+      "published_label": null
+    },
+    {
+      "url": "https://developers.klaviyo.com/en/v2024-07-15/docs/authenticate_",
+      "title": "Authenticate (https://developers.klaviyo.com/en/v2024-07-15/docs/authenticate_)",
+      "published_label": null
+    },
+    {
+      "url": "https://developers.klaviyo.com/en/v2023-10-15/docs/retrieve_api_credentials",
+      "title": "Obtain API credentials (https://developers.klaviyo.com/en/v2023-10-15/docs/retrieve_api_credentials)",
+      "published_label": null
+    },
+    {
+      "url": "https://developers.klaviyo.com/en/v1-2/reference/api-overview",
+      "title": "API Overview (https://developers.klaviyo.com/en/v1-2/reference/api-overview)",
+      "published_label": null
+    },
+    {
+      "url": "https://developers.klaviyo.com/en/v2025-01-15/reference/api_overview",
+      "title": "API overview (https://developers.klaviyo.com/en/v2025-01-15/reference/api_overview)",
+      "published_label": null
+    },
+    {
+      "url": "https://developers.klaviyo.com/en/v2024-02-15/docs/authenticate_",
+      "title": "Authenticate (https://developers.klaviyo.com/en/v2024-02-15/docs/authenticate_)",
+      "published_label": null
+    },
+    {
+      "url": "https://developers.klaviyo.com/en/docs/get_started",
+      "title": "Get started with Klaviyo (https://developers.klaviyo.com/en/docs/get_started)",
+      "published_label": null
+    },
+    {
+      "url": "https://developers.klaviyo.com/en/v2025-04-15/docs/authenticate_",
+      "title": "Authenticate API requests (https://developers.klaviyo.com/en/v2025-04-15/docs/authenticate_)",
+      "published_label": null
+    },
+    {
+      "url": "https://developers.klaviyo.com/en/v2024-02-15/docs/get_started",
+      "title": "Get started with Klaviyo (https://developers.klaviyo.com/en/v2024-02-15/docs/get_started)",
+      "published_label": null
+    }
+  ],
+  "selected": [
+    {
+      "url": "https://developers.klaviyo.com/en/v1-2/docs/retrieve-api-credentials",
+      "title": "Obtain API credentials (https://developers.klaviyo.com/en/v1-2/docs/retrieve-api-credentials)",
+      "published_label": null
+    },
+    {
+      "url": "https://developers.klaviyo.com/en/v2024-05-15/docs/retrieve_api_credentials",
+      "title": "Obtain API credentials (https://developers.klaviyo.com/en/v2024-05-15/docs/retrieve_api_credentials)",
+      "published_label": null
+    }
+  ],
+  "new_pages": [
+    {
+      "url": "https://developers.klaviyo.com/en/docs/retrieve-api-credentials",
+      "requested_url": "https://developers.klaviyo.com/en/v1-2/docs/retrieve-api-credentials",
+      "status": 404,
+      "title": "Obtain API credentials (https://developers.klaviyo.com/en/v1-2/docs/retrieve-api-credentials)",
+      "text": "Page not found | Klaviyo API Reference Skip to content An index of every page is at https://developers.klaviyo.com/llms.txt. Browse the API reference If you're an agent, llms.txt lists every resource in the reference, with links to each endpoint's Markdown page.",
+      "published_label": null
+    },
+    {
+      "url": "https://developers.klaviyo.com/en/docs/retrieve_api_credentials",
+      "requested_url": "https://developers.klaviyo.com/en/v2024-05-15/docs/retrieve_api_credentials",
+      "status": 404,
+      "title": "Obtain API credentials (https://developers.klaviyo.com/en/v2024-05-15/docs/retrieve_api_credentials)",
+      "text": "Page not found | Klaviyo API Reference Skip to content An index of every page is at https://developers.klaviyo.com/llms.txt. Browse the API reference If you're an agent, llms.txt lists every resource in the reference, with links to each endpoint's Markdown page.",
+      "published_label": null
+    }
+  ],
+  "claims": {
+    "auth": {
+      "value": [
+        "API key"
+      ],
+      "sources": [
+        "https://developers.klaviyo.com/en/docs/authenticate_"
+      ],
+      "evidence": [
+        {
+          "value": "API key",
+          "url": "https://developers.klaviyo.com/en/docs/authenticate_",
+          "excerpt": "thentication All /api endpoints use API private keys to authenticate requests. If you do not use an API key for your requests, or if you use a key from the wrong account, your call will return an error. A 401 error indicates an invalid or missing API key. OAuth If you are a tech partner",
+          "published_label": null
+        }
+      ],
+      "reason": "Provisional extraction: validate scope and completeness against the cited page."
+    },
+    "credential_gate": {
+      "value": "unknown",
+      "sources": [],
+      "evidence": [],
+      "reason": "No sufficiently specific positive evidence extracted; review targeted search results."
+    },
+    "api_surface": {
+      "value": "unknown",
+      "sources": [],
+      "evidence": [],
+      "reason": "No sufficiently specific positive evidence extracted; review targeted search results."
+    },
+    "official_mcp": {
+      "value": "yes (provisional)",
+      "sources": [
+        "https://developers.klaviyo.com/en/docs/klaviyo_mcp_server",
+        "https://developers.klaviyo.com/en/docs/connect_to_the_klaviyo_mcp_server"
+      ],
+      "evidence": [
+        {
+          "value": "yes (provisional)",
+          "url": "https://developers.klaviyo.com/en/docs/klaviyo_mcp_server",
+          "excerpt": "Klaviyo MCP server | Klaviyo Developers Skip to content This page is available as Markdown at https://developers.klaviyo.com/en/docs/klaviyo_mcp_server.md. An index of every page",
+          "published_label": null,
+          "context_warning": "Review vendor ownership, dates, and scope."
+        },
+        {
+          "value": "yes (provisional)",
+          "url": "https://developers.klaviyo.com/en/docs/klaviyo_mcp_server",
+          "excerpt": "Klaviyo MCP server | Klaviyo Developers Skip to content This page is available as Markdown at https://developers.klaviyo.com/en/docs/klaviyo_mcp_server.md. An index of every page",
+          "published_label": null,
+          "context_warning": "Review vendor ownership, dates, and scope."
+        },
+        {
+          "value": "yes (provisional)",
+          "url": "https://developers.klaviyo.com/en/docs/connect_to_the_klaviyo_mcp_server",
+          "excerpt": "https://developers.klaviyo.com/llms.txt. You will learn To communicate with the Klaviyo MCP server, each MCP client needs specific configuration. This page walks you through configuring various MCP clients for both the remote-hosted MCP server (recommended) ",
+          "published_label": null,
+          "context_warning": "Review vendor ownership, dates, and scope."
+        },
+        {
+          "value": "yes (provisional)",
+          "url": "https://developers.klaviyo.com/en/docs/klaviyo_mcp_server",
+          "excerpt": "Klaviyo MCP server | Klaviyo Developers Skip to content This page is available as Markdown at https://developers.klaviyo.com/en/docs/klaviyo_mcp_server.md. An index of every page",
+          "published_label": null,
+          "context_warning": "Review vendor ownership, dates, and scope."
+        }
+      ],
+      "reason": "Provisional; check source date, scope, and vendor ownership."
+    },
+    "composio_toolkit": {
+      "value": "listed",
+      "sources": [
+        "https://docs.composio.dev/toolkits/klaviyo"
+      ],
+      "evidence": [],
+      "reason": "Catalog match; scope needs review."
+    },
+    "verdict": {
+      "value": "unknown",
+      "sources": [],
+      "evidence": [],
+      "reason": "A supported access path, authentication method and API surface were not all extracted."
+    }
+  },
+  "validation": [
+    "All claims are provisional",
+    "No vendor MCP inference from Composio catalog",
+    "Negated MCP or client-only source is not counted as vendor-server proof"
+  ]
+}

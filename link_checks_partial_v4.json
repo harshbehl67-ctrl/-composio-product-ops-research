@@ -1,0 +1,3313 @@
+[
+  {
+    "url": "https://airtable.com/developers/web/api/introduction",
+    "uses": [
+      {
+        "app": "Airtable",
+        "field": "api_surface",
+        "claim_status": "checked"
+      },
+      {
+        "app": "Airtable",
+        "field": "verdict",
+        "claim_status": "checked"
+      }
+    ],
+    "status": 200,
+    "final_url": "https://airtable.com/developers/web/api/introduction"
+  },
+  {
+    "url": "https://api.github.com/repos/sherlock-project/sherlock/git/trees/master?recursive=1",
+    "uses": [
+      {
+        "app": "Sherlock",
+        "field": "official_mcp",
+        "claim_status": "unknown"
+      }
+    ],
+    "status": 200,
+    "final_url": "https://api.github.com/repos/sherlock-project/sherlock/git/trees/master?recursive=1"
+  },
+  {
+    "url": "https://apify.com/pricing",
+    "uses": [
+      {
+        "app": "Apify",
+        "field": "credential_gate",
+        "claim_status": "checked"
+      },
+      {
+        "app": "Apify",
+        "field": "credential_gate",
+        "claim_status": "checked"
+      },
+      {
+        "app": "Apify",
+        "field": "credential_gate",
+        "claim_status": "checked"
+      },
+      {
+        "app": "Apify",
+        "field": "verdict",
+        "claim_status": "checked"
+      }
+    ],
+    "status": 200,
+    "final_url": "https://apify.com/pricing"
+  },
+  {
+    "url": "https://brightdata.com/pricing/mcp-server",
+    "uses": [
+      {
+        "app": "Bright Data",
+        "field": "official_mcp",
+        "claim_status": "checked"
+      }
+    ],
+    "status": 200,
+    "final_url": "https://brightdata.com/pricing/mcp-server"
+  },
+  {
+    "url": "https://coda.io/developers/apis/v1",
+    "uses": [
+      {
+        "app": "Coda",
+        "field": "auth",
+        "claim_status": "checked"
+      },
+      {
+        "app": "Coda",
+        "field": "auth",
+        "claim_status": "checked"
+      },
+      {
+        "app": "Coda",
+        "field": "credential_gate",
+        "claim_status": "checked"
+      },
+      {
+        "app": "Coda",
+        "field": "credential_gate",
+        "claim_status": "checked"
+      },
+      {
+        "app": "Coda",
+        "field": "api_surface",
+        "claim_status": "checked"
+      },
+      {
+        "app": "Coda",
+        "field": "api_surface",
+        "claim_status": "checked"
+      },
+      {
+        "app": "Coda",
+        "field": "verdict",
+        "claim_status": "checked"
+      },
+      {
+        "app": "Coda",
+        "field": "verdict",
+        "claim_status": "checked"
+      }
+    ],
+    "status": 200,
+    "final_url": "https://coda.io/developers/apis/v1"
+  },
+  {
+    "url": "https://coda.io/resources/guides/getting_started_with_coda_mcp",
+    "uses": [
+      {
+        "app": "Coda",
+        "field": "official_mcp",
+        "claim_status": "checked"
+      }
+    ],
+    "status": 200,
+    "final_url": "https://coda.io/resources/guides/getting_started_with_coda_mcp"
+  },
+  {
+    "url": "https://dataforseo.com/help-center/dfs-dashboard-how-to-find-everything",
+    "uses": [
+      {
+        "app": "DataForSEO",
+        "field": "auth",
+        "claim_status": "checked"
+      }
+    ],
+    "status": 200,
+    "final_url": "https://dataforseo.com/help-center/dfs-dashboard-how-to-find-everything"
+  },
+  {
+    "url": "https://dataforseo.com/help-center/how-does-your-free-unlimited-trial-work",
+    "uses": [
+      {
+        "app": "DataForSEO",
+        "field": "credential_gate",
+        "claim_status": "checked"
+      },
+      {
+        "app": "DataForSEO",
+        "field": "verdict",
+        "claim_status": "checked"
+      }
+    ],
+    "status": 200,
+    "final_url": "https://dataforseo.com/help-center/how-does-your-free-unlimited-trial-work"
+  },
+  {
+    "url": "https://dataforseo.com/help-center/setting-up-the-official-dataforseo-mcp-server-simple-guide",
+    "uses": [
+      {
+        "app": "DataForSEO",
+        "field": "official_mcp",
+        "claim_status": "checked"
+      },
+      {
+        "app": "DataForSEO",
+        "field": "official_mcp",
+        "claim_status": "checked"
+      },
+      {
+        "app": "DataForSEO",
+        "field": "official_mcp",
+        "claim_status": "checked"
+      }
+    ],
+    "status": 200,
+    "final_url": "https://dataforseo.com/help-center/setting-up-the-official-dataforseo-mcp-server-simple-guide"
+  },
+  {
+    "url": "https://developer.atlassian.com/cloud/jira/platform/basic-auth-for-rest-apis/",
+    "uses": [
+      {
+        "app": "Jira",
+        "field": "auth",
+        "claim_status": "checked"
+      },
+      {
+        "app": "Jira",
+        "field": "verdict",
+        "claim_status": "checked"
+      }
+    ],
+    "status": 200,
+    "final_url": "https://developer.atlassian.com/cloud/jira/platform/basic-auth-for-rest-apis/"
+  },
+  {
+    "url": "https://developer.atlassian.com/cloud/jira/platform/oauth-2-3lo-apps/",
+    "uses": [
+      {
+        "app": "Jira",
+        "field": "auth",
+        "claim_status": "checked"
+      },
+      {
+        "app": "Jira",
+        "field": "credential_gate",
+        "claim_status": "checked"
+      }
+    ],
+    "status": 200,
+    "final_url": "https://developer.atlassian.com/cloud/jira/platform/oauth-2-3lo-apps/"
+  },
+  {
+    "url": "https://developer.atlassian.com/cloud/jira/platform/rest/v3/intro/",
+    "uses": [
+      {
+        "app": "Jira",
+        "field": "api_surface",
+        "claim_status": "checked"
+      },
+      {
+        "app": "Jira",
+        "field": "api_surface",
+        "claim_status": "checked"
+      }
+    ],
+    "status": 200,
+    "final_url": "https://developer.atlassian.com/cloud/jira/platform/rest/v3/intro/"
+  },
+  {
+    "url": "https://developer.clickup.com/docs/Getting%20Started",
+    "uses": [
+      {
+        "app": "ClickUp",
+        "field": "api_surface",
+        "claim_status": "checked"
+      }
+    ],
+    "status": 200,
+    "final_url": "https://developer.clickup.com/docs/Getting%20Started"
+  },
+  {
+    "url": "https://developer.clickup.com/docs/apis-available-by-plan",
+    "uses": [
+      {
+        "app": "ClickUp",
+        "field": "credential_gate",
+        "claim_status": "checked"
+      },
+      {
+        "app": "ClickUp",
+        "field": "credential_gate",
+        "claim_status": "checked"
+      },
+      {
+        "app": "ClickUp",
+        "field": "verdict",
+        "claim_status": "checked"
+      }
+    ],
+    "status": 200,
+    "final_url": "https://developer.clickup.com/docs/apis-available-by-plan"
+  },
+  {
+    "url": "https://developer.clickup.com/docs/authentication",
+    "uses": [
+      {
+        "app": "ClickUp",
+        "field": "auth",
+        "claim_status": "checked"
+      },
+      {
+        "app": "ClickUp",
+        "field": "auth",
+        "claim_status": "checked"
+      }
+    ],
+    "status": 200,
+    "final_url": "https://developer.clickup.com/docs/authentication"
+  },
+  {
+    "url": "https://developer.clickup.com/docs/connect-an-ai-assistant-to-clickups-mcp-server",
+    "uses": [
+      {
+        "app": "ClickUp",
+        "field": "official_mcp",
+        "claim_status": "checked"
+      },
+      {
+        "app": "ClickUp",
+        "field": "official_mcp",
+        "claim_status": "checked"
+      }
+    ],
+    "status": 200,
+    "final_url": "https://developer.clickup.com/docs/connect-an-ai-assistant-to-clickups-mcp-server"
+  },
+  {
+    "url": "https://developer.clickup.com/reference/createdocpublic",
+    "uses": [
+      {
+        "app": "ClickUp",
+        "field": "verdict",
+        "claim_status": "checked"
+      }
+    ],
+    "status": 200,
+    "final_url": "https://developer.clickup.com/reference/createdocpublic"
+  },
+  {
+    "url": "https://developer.clickup.com/reference/gettasks",
+    "uses": [
+      {
+        "app": "ClickUp",
+        "field": "api_surface",
+        "claim_status": "checked"
+      }
+    ],
+    "status": 200,
+    "final_url": "https://developer.clickup.com/reference/gettasks"
+  },
+  {
+    "url": "https://developer.monday.com/api-reference/docs/authentication",
+    "uses": [
+      {
+        "app": "Monday.com",
+        "field": "auth",
+        "claim_status": "checked"
+      },
+      {
+        "app": "Monday.com",
+        "field": "verdict",
+        "claim_status": "checked"
+      }
+    ],
+    "status": 200,
+    "final_url": "https://developer.monday.com/api-reference/docs/authentication"
+  },
+  {
+    "url": "https://developer.monday.com/api-reference/docs/basics",
+    "uses": [
+      {
+        "app": "Monday.com",
+        "field": "api_surface",
+        "claim_status": "checked"
+      },
+      {
+        "app": "Monday.com",
+        "field": "api_surface",
+        "claim_status": "checked"
+      }
+    ],
+    "status": 200,
+    "final_url": "https://developer.monday.com/api-reference/docs/basics"
+  },
+  {
+    "url": "https://developer.monday.com/api-reference/docs/integrate-with-monday-mcp",
+    "uses": [
+      {
+        "app": "Monday.com",
+        "field": "official_mcp",
+        "claim_status": "checked"
+      },
+      {
+        "app": "Monday.com",
+        "field": "official_mcp",
+        "claim_status": "checked"
+      }
+    ],
+    "status": 200,
+    "final_url": "https://developer.monday.com/api-reference/docs/integrate-with-monday-mcp"
+  },
+  {
+    "url": "https://developer.monday.com/api-reference/docs/rate-limits",
+    "uses": [
+      {
+        "app": "Monday.com",
+        "field": "credential_gate",
+        "claim_status": "checked"
+      },
+      {
+        "app": "Monday.com",
+        "field": "credential_gate",
+        "claim_status": "checked"
+      },
+      {
+        "app": "Monday.com",
+        "field": "verdict",
+        "claim_status": "checked"
+      }
+    ],
+    "status": 200,
+    "final_url": "https://developer.monday.com/api-reference/docs/rate-limits"
+  },
+  {
+    "url": "https://developer.monday.com/apps/docs/choosing-auth",
+    "uses": [
+      {
+        "app": "Monday.com",
+        "field": "auth",
+        "claim_status": "checked"
+      }
+    ],
+    "status": 200,
+    "final_url": "https://developer.monday.com/apps/docs/choosing-auth"
+  },
+  {
+    "url": "https://developers.asana.com/docs/authentication",
+    "uses": [
+      {
+        "app": "Asana",
+        "field": "auth",
+        "claim_status": "checked"
+      }
+    ],
+    "status": 200,
+    "final_url": "https://developers.asana.com/docs/authentication"
+  },
+  {
+    "url": "https://developers.asana.com/docs/oauth",
+    "uses": [
+      {
+        "app": "Asana",
+        "field": "auth",
+        "claim_status": "checked"
+      }
+    ],
+    "status": 200,
+    "final_url": "https://developers.asana.com/docs/oauth"
+  },
+  {
+    "url": "https://developers.asana.com/docs/personal-access-token",
+    "uses": [
+      {
+        "app": "Asana",
+        "field": "credential_gate",
+        "claim_status": "checked"
+      },
+      {
+        "app": "Asana",
+        "field": "api_surface",
+        "claim_status": "checked"
+      }
+    ],
+    "status": 200,
+    "final_url": "https://developers.asana.com/docs/personal-access-token"
+  },
+  {
+    "url": "https://developers.asana.com/docs/using-asanas-mcp-server",
+    "uses": [
+      {
+        "app": "Asana",
+        "field": "official_mcp",
+        "claim_status": "checked"
+      },
+      {
+        "app": "Asana",
+        "field": "official_mcp",
+        "claim_status": "checked"
+      }
+    ],
+    "status": 200,
+    "final_url": "https://developers.asana.com/docs/using-asanas-mcp-server"
+  },
+  {
+    "url": "https://developers.asana.com/reference/overview",
+    "uses": [
+      {
+        "app": "Asana",
+        "field": "credential_gate",
+        "claim_status": "checked"
+      },
+      {
+        "app": "Asana",
+        "field": "api_surface",
+        "claim_status": "checked"
+      },
+      {
+        "app": "Asana",
+        "field": "verdict",
+        "claim_status": "checked"
+      },
+      {
+        "app": "Asana",
+        "field": "verdict",
+        "claim_status": "checked"
+      }
+    ],
+    "status": 200,
+    "final_url": "https://developers.asana.com/docs/overview"
+  },
+  {
+    "url": "https://developers.clay.com/",
+    "uses": [
+      {
+        "app": "Clay",
+        "field": "api_surface",
+        "claim_status": "checked"
+      }
+    ],
+    "status": 200,
+    "final_url": "https://developers.clay.com/"
+  },
+  {
+    "url": "https://developers.clay.com/api-reference/search/create-a-search-from-a-clay-search-query.md",
+    "uses": [
+      {
+        "app": "Clay",
+        "field": "api_surface",
+        "claim_status": "checked"
+      }
+    ],
+    "status": 200,
+    "final_url": "https://developers.clay.com/api-reference/search/create-a-search-from-a-clay-search-query.md"
+  },
+  {
+    "url": "https://developers.clay.com/openapi.json",
+    "uses": [
+      {
+        "app": "Clay",
+        "field": "api_surface",
+        "claim_status": "checked"
+      },
+      {
+        "app": "Clay",
+        "field": "api_surface",
+        "claim_status": "checked"
+      }
+    ],
+    "status": 200,
+    "final_url": "https://developers.clay.com/openapi.json"
+  },
+  {
+    "url": "https://developers.clay.com/public-api/authentication.md",
+    "uses": [
+      {
+        "app": "Clay",
+        "field": "auth",
+        "claim_status": "checked"
+      },
+      {
+        "app": "Clay",
+        "field": "auth",
+        "claim_status": "checked"
+      },
+      {
+        "app": "Clay",
+        "field": "verdict",
+        "claim_status": "checked"
+      }
+    ],
+    "status": 200,
+    "final_url": "https://developers.clay.com/public-api/authentication.md"
+  },
+  {
+    "url": "https://developers.fathom.ai/api-overview",
+    "uses": [
+      {
+        "app": "Fathom",
+        "field": "auth",
+        "claim_status": "checked"
+      },
+      {
+        "app": "Fathom",
+        "field": "api_surface",
+        "claim_status": "checked"
+      }
+    ],
+    "status": 200,
+    "final_url": "https://developers.fathom.ai/api-overview"
+  },
+  {
+    "url": "https://developers.fathom.ai/mcp-docs",
+    "uses": [
+      {
+        "app": "Fathom",
+        "field": "official_mcp",
+        "claim_status": "checked"
+      },
+      {
+        "app": "Fathom",
+        "field": "official_mcp",
+        "claim_status": "checked"
+      },
+      {
+        "app": "Fathom",
+        "field": "verdict",
+        "claim_status": "checked"
+      }
+    ],
+    "status": 200,
+    "final_url": "https://developers.fathom.ai/mcp-docs"
+  },
+  {
+    "url": "https://developers.fathom.ai/oauth",
+    "uses": [
+      {
+        "app": "Fathom",
+        "field": "auth",
+        "claim_status": "checked"
+      }
+    ],
+    "status": 200,
+    "final_url": "https://developers.fathom.ai/oauth"
+  },
+  {
+    "url": "https://developers.fathom.ai/quickstart",
+    "uses": [
+      {
+        "app": "Fathom",
+        "field": "auth",
+        "claim_status": "checked"
+      }
+    ],
+    "status": 200,
+    "final_url": "https://developers.fathom.ai/quickstart"
+  },
+  {
+    "url": "https://developers.google.com/notebook/docs",
+    "uses": [
+      {
+        "app": "NotebookLM",
+        "field": "credential_gate",
+        "claim_status": "checked"
+      },
+      {
+        "app": "NotebookLM",
+        "field": "api_surface",
+        "claim_status": "checked"
+      },
+      {
+        "app": "NotebookLM",
+        "field": "verdict",
+        "claim_status": "checked"
+      }
+    ],
+    "status": 200,
+    "final_url": "https://developers.google.com/notebook/docs"
+  },
+  {
+    "url": "https://developers.google.com/notebook/docs/authentication",
+    "uses": [
+      {
+        "app": "NotebookLM",
+        "field": "auth",
+        "claim_status": "checked"
+      },
+      {
+        "app": "NotebookLM",
+        "field": "auth",
+        "claim_status": "checked"
+      },
+      {
+        "app": "NotebookLM",
+        "field": "auth",
+        "claim_status": "checked"
+      }
+    ],
+    "status": 200,
+    "final_url": "https://developers.google.com/notebook/docs/authentication"
+  },
+  {
+    "url": "https://developers.google.com/notebook/docs/mcp",
+    "uses": [
+      {
+        "app": "NotebookLM",
+        "field": "official_mcp",
+        "claim_status": "checked"
+      },
+      {
+        "app": "NotebookLM",
+        "field": "official_mcp",
+        "claim_status": "checked"
+      },
+      {
+        "app": "NotebookLM",
+        "field": "official_mcp",
+        "claim_status": "checked"
+      }
+    ],
+    "status": 200,
+    "final_url": "https://developers.google.com/notebook/docs/mcp"
+  },
+  {
+    "url": "https://developers.google.com/notebook/docs/rate-limits",
+    "uses": [
+      {
+        "app": "NotebookLM",
+        "field": "credential_gate",
+        "claim_status": "checked"
+      },
+      {
+        "app": "NotebookLM",
+        "field": "verdict",
+        "claim_status": "checked"
+      }
+    ],
+    "status": 200,
+    "final_url": "https://developers.google.com/notebook/docs/rate-limits"
+  },
+  {
+    "url": "https://developers.google.com/notebook/reference/rest",
+    "uses": [
+      {
+        "app": "NotebookLM",
+        "field": "api_surface",
+        "claim_status": "checked"
+      }
+    ],
+    "status": 200,
+    "final_url": "https://developers.google.com/notebook/reference/rest"
+  },
+  {
+    "url": "https://developers.grain.com/authentication.html",
+    "uses": [
+      {
+        "app": "Grain",
+        "field": "auth",
+        "claim_status": "checked"
+      },
+      {
+        "app": "Grain",
+        "field": "auth",
+        "claim_status": "checked"
+      },
+      {
+        "app": "Grain",
+        "field": "auth",
+        "claim_status": "checked"
+      },
+      {
+        "app": "Grain",
+        "field": "auth",
+        "claim_status": "checked"
+      },
+      {
+        "app": "Grain",
+        "field": "official_mcp",
+        "claim_status": "checked"
+      }
+    ],
+    "status": 200,
+    "final_url": "https://developers.grain.com/authentication.html"
+  },
+  {
+    "url": "https://developers.grain.com/endpoints.html",
+    "uses": [
+      {
+        "app": "Grain",
+        "field": "api_surface",
+        "claim_status": "checked"
+      }
+    ],
+    "status": 200,
+    "final_url": "https://developers.grain.com/endpoints.html"
+  },
+  {
+    "url": "https://developers.grain.com/mcp/faq.html",
+    "uses": [
+      {
+        "app": "Grain",
+        "field": "official_mcp",
+        "claim_status": "checked"
+      },
+      {
+        "app": "Grain",
+        "field": "official_mcp",
+        "claim_status": "checked"
+      },
+      {
+        "app": "Grain",
+        "field": "verdict",
+        "claim_status": "checked"
+      }
+    ],
+    "status": 200,
+    "final_url": "https://developers.grain.com/mcp/faq.html"
+  },
+  {
+    "url": "https://developers.grain.com/versions.html",
+    "uses": [
+      {
+        "app": "Grain",
+        "field": "api_surface",
+        "claim_status": "checked"
+      }
+    ],
+    "status": 200,
+    "final_url": "https://developers.grain.com/versions.html"
+  },
+  {
+    "url": "https://developers.notion.com/guides/authorization/overview",
+    "uses": [
+      {
+        "app": "Notion",
+        "field": "auth",
+        "claim_status": "checked"
+      },
+      {
+        "app": "Notion",
+        "field": "credential_gate",
+        "claim_status": "checked"
+      }
+    ],
+    "status": 200,
+    "final_url": "https://developers.notion.com/guides/authorization/overview"
+  },
+  {
+    "url": "https://developers.notion.com/guides/connections-and-tokens",
+    "uses": [
+      {
+        "app": "Notion",
+        "field": "auth",
+        "claim_status": "checked"
+      },
+      {
+        "app": "Notion",
+        "field": "api_surface",
+        "claim_status": "checked"
+      }
+    ],
+    "status": 200,
+    "final_url": "https://developers.notion.com/guides/connections-and-tokens/overview"
+  },
+  {
+    "url": "https://developers.notion.com/guides/mcp/get-started-with-mcp",
+    "uses": [
+      {
+        "app": "Notion",
+        "field": "official_mcp",
+        "claim_status": "checked"
+      },
+      {
+        "app": "Notion",
+        "field": "official_mcp",
+        "claim_status": "checked"
+      }
+    ],
+    "status": 200,
+    "final_url": "https://developers.notion.com/guides/mcp/get-started-with-mcp"
+  },
+  {
+    "url": "https://developers.notion.com/reference/intro",
+    "uses": [
+      {
+        "app": "Notion",
+        "field": "api_surface",
+        "claim_status": "checked"
+      },
+      {
+        "app": "Notion",
+        "field": "verdict",
+        "claim_status": "checked"
+      }
+    ],
+    "status": 200,
+    "final_url": "https://developers.notion.com/reference/intro"
+  },
+  {
+    "url": "https://developers.smartsheet.com/ai-mcp/smartsheet/install-the-smartsheet-mcp-server",
+    "uses": [
+      {
+        "app": "Smartsheet",
+        "field": "official_mcp",
+        "claim_status": "checked"
+      }
+    ],
+    "status": 200,
+    "final_url": "https://developers.smartsheet.com/ai-mcp/smartsheet/install-the-smartsheet-mcp-server"
+  },
+  {
+    "url": "https://developers.smartsheet.com/api/smartsheet/guides/getting-started",
+    "uses": [
+      {
+        "app": "Smartsheet",
+        "field": "auth",
+        "claim_status": "checked"
+      },
+      {
+        "app": "Smartsheet",
+        "field": "auth",
+        "claim_status": "checked"
+      }
+    ],
+    "status": 200,
+    "final_url": "https://developers.smartsheet.com/api/smartsheet/guides/getting-started"
+  },
+  {
+    "url": "https://developers.smartsheet.com/api/smartsheet/introduction",
+    "uses": [
+      {
+        "app": "Smartsheet",
+        "field": "credential_gate",
+        "claim_status": "checked"
+      },
+      {
+        "app": "Smartsheet",
+        "field": "api_surface",
+        "claim_status": "checked"
+      },
+      {
+        "app": "Smartsheet",
+        "field": "api_surface",
+        "claim_status": "checked"
+      },
+      {
+        "app": "Smartsheet",
+        "field": "verdict",
+        "claim_status": "checked"
+      }
+    ],
+    "status": 200,
+    "final_url": "https://developers.smartsheet.com/api/smartsheet/introduction"
+  },
+  {
+    "url": "https://devin.ai/pricing",
+    "uses": [
+      {
+        "app": "Devin",
+        "field": "credential_gate",
+        "claim_status": "checked"
+      },
+      {
+        "app": "Devin",
+        "field": "credential_gate",
+        "claim_status": "checked"
+      },
+      {
+        "app": "Devin",
+        "field": "verdict",
+        "claim_status": "checked"
+      },
+      {
+        "app": "Devin",
+        "field": "verdict",
+        "claim_status": "checked"
+      }
+    ],
+    "status": 200,
+    "final_url": "https://devin.ai/pricing"
+  },
+  {
+    "url": "https://docs.ahrefs.com/api/docs/api-keys-creation-and-management.md",
+    "uses": [
+      {
+        "app": "Ahrefs",
+        "field": "auth",
+        "claim_status": "checked"
+      },
+      {
+        "app": "Ahrefs",
+        "field": "credential_gate",
+        "claim_status": "checked"
+      },
+      {
+        "app": "Ahrefs",
+        "field": "verdict",
+        "claim_status": "checked"
+      }
+    ],
+    "status": 200,
+    "final_url": "https://docs.ahrefs.com/api/docs/api-keys-creation-and-management.md"
+  },
+  {
+    "url": "https://docs.ahrefs.com/api/docs/free-test-queries.md",
+    "uses": [
+      {
+        "app": "Ahrefs",
+        "field": "credential_gate",
+        "claim_status": "checked"
+      }
+    ],
+    "status": 200,
+    "final_url": "https://docs.ahrefs.com/api/docs/free-test-queries.md"
+  },
+  {
+    "url": "https://docs.ahrefs.com/api/docs/introduction.md",
+    "uses": [
+      {
+        "app": "Ahrefs",
+        "field": "api_surface",
+        "claim_status": "checked"
+      }
+    ],
+    "status": 200,
+    "final_url": "https://docs.ahrefs.com/api/docs/introduction.md"
+  },
+  {
+    "url": "https://docs.ahrefs.com/llms.txt",
+    "uses": [
+      {
+        "app": "Ahrefs",
+        "field": "auth",
+        "claim_status": "checked"
+      },
+      {
+        "app": "Ahrefs",
+        "field": "api_surface",
+        "claim_status": "checked"
+      }
+    ],
+    "status": 200,
+    "final_url": "https://docs.ahrefs.com/llms.txt"
+  },
+  {
+    "url": "https://docs.ahrefs.com/mcp/docs/introduction.md",
+    "uses": [
+      {
+        "app": "Ahrefs",
+        "field": "official_mcp",
+        "claim_status": "checked"
+      },
+      {
+        "app": "Ahrefs",
+        "field": "official_mcp",
+        "claim_status": "checked"
+      },
+      {
+        "app": "Ahrefs",
+        "field": "official_mcp",
+        "claim_status": "checked"
+      },
+      {
+        "app": "Ahrefs",
+        "field": "verdict",
+        "claim_status": "checked"
+      }
+    ],
+    "status": 200,
+    "final_url": "https://docs.ahrefs.com/mcp/docs/introduction.md"
+  },
+  {
+    "url": "https://docs.apify.com/api/v2",
+    "uses": [
+      {
+        "app": "Apify",
+        "field": "auth",
+        "claim_status": "checked"
+      },
+      {
+        "app": "Apify",
+        "field": "auth",
+        "claim_status": "checked"
+      },
+      {
+        "app": "Apify",
+        "field": "api_surface",
+        "claim_status": "checked"
+      },
+      {
+        "app": "Apify",
+        "field": "api_surface",
+        "claim_status": "checked"
+      },
+      {
+        "app": "Apify",
+        "field": "verdict",
+        "claim_status": "checked"
+      }
+    ],
+    "status": 200,
+    "final_url": "https://docs.apify.com/api/v2"
+  },
+  {
+    "url": "https://docs.apify.com/integrations/api",
+    "uses": [
+      {
+        "app": "Apify",
+        "field": "auth",
+        "claim_status": "checked"
+      }
+    ],
+    "status": 200,
+    "final_url": "https://docs.apify.com/integrations/api"
+  },
+  {
+    "url": "https://docs.apify.com/mcp",
+    "uses": [
+      {
+        "app": "Apify",
+        "field": "official_mcp",
+        "claim_status": "checked"
+      },
+      {
+        "app": "Apify",
+        "field": "official_mcp",
+        "claim_status": "checked"
+      },
+      {
+        "app": "Apify",
+        "field": "official_mcp",
+        "claim_status": "checked"
+      },
+      {
+        "app": "Apify",
+        "field": "official_mcp",
+        "claim_status": "checked"
+      },
+      {
+        "app": "Apify",
+        "field": "verdict",
+        "claim_status": "checked"
+      }
+    ],
+    "status": 200,
+    "final_url": "https://docs.apify.com/mcp"
+  },
+  {
+    "url": "https://docs.brightdata.com/api-reference/authentication",
+    "uses": [
+      {
+        "app": "Bright Data",
+        "field": "auth",
+        "claim_status": "checked"
+      },
+      {
+        "app": "Bright Data",
+        "field": "auth",
+        "claim_status": "checked"
+      },
+      {
+        "app": "Bright Data",
+        "field": "credential_gate",
+        "claim_status": "checked"
+      },
+      {
+        "app": "Bright Data",
+        "field": "credential_gate",
+        "claim_status": "checked"
+      }
+    ],
+    "status": 200,
+    "final_url": "https://docs.brightdata.com/api-reference/authentication"
+  },
+  {
+    "url": "https://docs.brightdata.com/general/account/billing-and-pricing/free-tier",
+    "uses": [
+      {
+        "app": "Bright Data",
+        "field": "credential_gate",
+        "claim_status": "checked"
+      },
+      {
+        "app": "Bright Data",
+        "field": "credential_gate",
+        "claim_status": "checked"
+      },
+      {
+        "app": "Bright Data",
+        "field": "verdict",
+        "claim_status": "checked"
+      }
+    ],
+    "status": 200,
+    "final_url": "https://docs.brightdata.com/general/account/billing-and-pricing/free-tier"
+  },
+  {
+    "url": "https://docs.brightdata.com/llms.txt",
+    "uses": [
+      {
+        "app": "Bright Data",
+        "field": "api_surface",
+        "claim_status": "checked"
+      },
+      {
+        "app": "Bright Data",
+        "field": "api_surface",
+        "claim_status": "checked"
+      },
+      {
+        "app": "Bright Data",
+        "field": "verdict",
+        "claim_status": "checked"
+      }
+    ],
+    "status": 200,
+    "final_url": "https://docs.brightdata.com/llms.txt"
+  },
+  {
+    "url": "https://docs.brightdata.com/mcp-server/overview",
+    "uses": [
+      {
+        "app": "Bright Data",
+        "field": "official_mcp",
+        "claim_status": "checked"
+      },
+      {
+        "app": "Bright Data",
+        "field": "verdict",
+        "claim_status": "checked"
+      }
+    ],
+    "status": 200,
+    "final_url": "https://docs.brightdata.com/products/mcp-server/overview"
+  },
+  {
+    "url": "https://docs.brightdata.com/mcp-server/remote/quickstart",
+    "uses": [
+      {
+        "app": "Bright Data",
+        "field": "auth",
+        "claim_status": "checked"
+      }
+    ],
+    "status": 200,
+    "final_url": "https://docs.brightdata.com/products/mcp-server/remote/quickstart"
+  },
+  {
+    "url": "https://docs.brightdata.com/products/mcp-server/local/quickstart",
+    "uses": [
+      {
+        "app": "Bright Data",
+        "field": "official_mcp",
+        "claim_status": "checked"
+      }
+    ],
+    "status": 200,
+    "final_url": "https://docs.brightdata.com/products/mcp-server/local/quickstart"
+  },
+  {
+    "url": "https://docs.brightdata.com/products/mcp-server/remote/quickstart",
+    "uses": [
+      {
+        "app": "Bright Data",
+        "field": "official_mcp",
+        "claim_status": "checked"
+      }
+    ],
+    "status": 200,
+    "final_url": "https://docs.brightdata.com/products/mcp-server/remote/quickstart"
+  },
+  {
+    "url": "https://docs.composio.dev/toolkits.md",
+    "uses": [
+      {
+        "app": "SE Ranking",
+        "field": "composio_toolkit",
+        "claim_status": "checked"
+      },
+      {
+        "app": "Sherlock",
+        "field": "composio_toolkit",
+        "claim_status": "checked"
+      },
+      {
+        "app": "Waterfall.io",
+        "field": "composio_toolkit",
+        "claim_status": "checked"
+      },
+      {
+        "app": "Reducto",
+        "field": "composio_toolkit",
+        "claim_status": "checked"
+      },
+      {
+        "app": "Mermaid CLI",
+        "field": "composio_toolkit",
+        "claim_status": "checked"
+      }
+    ],
+    "status": 200,
+    "final_url": "https://docs.composio.dev/toolkits.md"
+  },
+  {
+    "url": "https://docs.composio.dev/toolkits/ahrefs",
+    "uses": [
+      {
+        "app": "Ahrefs",
+        "field": "composio_toolkit",
+        "claim_status": "checked"
+      }
+    ],
+    "status": 200,
+    "final_url": "https://docs.composio.dev/toolkits/ahrefs"
+  },
+  {
+    "url": "https://docs.composio.dev/toolkits/airtable",
+    "uses": [
+      {
+        "app": "Airtable",
+        "field": "composio_toolkit",
+        "claim_status": "checked"
+      }
+    ],
+    "status": 200,
+    "final_url": "https://docs.composio.dev/toolkits/airtable"
+  },
+  {
+    "url": "https://docs.composio.dev/toolkits/apify",
+    "uses": [
+      {
+        "app": "Apify",
+        "field": "composio_toolkit",
+        "claim_status": "checked"
+      }
+    ],
+    "status": 200,
+    "final_url": "https://docs.composio.dev/toolkits/apify"
+  },
+  {
+    "url": "https://docs.composio.dev/toolkits/asana",
+    "uses": [
+      {
+        "app": "Asana",
+        "field": "composio_toolkit",
+        "claim_status": "checked"
+      }
+    ],
+    "status": 200,
+    "final_url": "https://docs.composio.dev/toolkits/asana"
+  },
+  {
+    "url": "https://docs.composio.dev/toolkits/brightdata",
+    "uses": [
+      {
+        "app": "Bright Data",
+        "field": "composio_toolkit",
+        "claim_status": "checked"
+      }
+    ],
+    "status": 200,
+    "final_url": "https://docs.composio.dev/toolkits/brightdata"
+  },
+  {
+    "url": "https://docs.composio.dev/toolkits/clay",
+    "uses": [
+      {
+        "app": "Clay",
+        "field": "composio_toolkit",
+        "claim_status": "checked"
+      }
+    ],
+    "status": 200,
+    "final_url": "https://docs.composio.dev/toolkits/clay"
+  },
+  {
+    "url": "https://docs.composio.dev/toolkits/clickup",
+    "uses": [
+      {
+        "app": "ClickUp",
+        "field": "composio_toolkit",
+        "claim_status": "checked"
+      }
+    ],
+    "status": 200,
+    "final_url": "https://docs.composio.dev/toolkits/clickup"
+  },
+  {
+    "url": "https://docs.composio.dev/toolkits/coda",
+    "uses": [
+      {
+        "app": "Coda",
+        "field": "composio_toolkit",
+        "claim_status": "checked"
+      }
+    ],
+    "status": 200,
+    "final_url": "https://docs.composio.dev/toolkits/coda"
+  },
+  {
+    "url": "https://docs.composio.dev/toolkits/consensus",
+    "uses": [
+      {
+        "app": "Consensus",
+        "field": "composio_toolkit",
+        "claim_status": "checked"
+      },
+      {
+        "app": "Consensus",
+        "field": "composio_toolkit",
+        "claim_status": "checked"
+      }
+    ],
+    "status": 200,
+    "final_url": "https://docs.composio.dev/toolkits/consensus"
+  },
+  {
+    "url": "https://docs.composio.dev/toolkits/dataforseo",
+    "uses": [
+      {
+        "app": "DataForSEO",
+        "field": "composio_toolkit",
+        "claim_status": "checked"
+      }
+    ],
+    "status": 200,
+    "final_url": "https://docs.composio.dev/toolkits/dataforseo"
+  },
+  {
+    "url": "https://docs.composio.dev/toolkits/devin_mcp",
+    "uses": [
+      {
+        "app": "Devin",
+        "field": "composio_toolkit",
+        "claim_status": "checked"
+      },
+      {
+        "app": "Devin",
+        "field": "composio_toolkit",
+        "claim_status": "checked"
+      }
+    ],
+    "status": 200,
+    "final_url": "https://docs.composio.dev/toolkits/devin_mcp"
+  },
+  {
+    "url": "https://docs.composio.dev/toolkits/fathom",
+    "uses": [
+      {
+        "app": "Fathom",
+        "field": "composio_toolkit",
+        "claim_status": "checked"
+      },
+      {
+        "app": "Fathom",
+        "field": "composio_toolkit",
+        "claim_status": "checked"
+      }
+    ],
+    "status": 200,
+    "final_url": "https://docs.composio.dev/toolkits/fathom"
+  },
+  {
+    "url": "https://docs.composio.dev/toolkits/firecrawl",
+    "uses": [
+      {
+        "app": "Firecrawl",
+        "field": "composio_toolkit",
+        "claim_status": "checked"
+      }
+    ],
+    "status": 200,
+    "final_url": "https://docs.composio.dev/toolkits/firecrawl"
+  },
+  {
+    "url": "https://docs.composio.dev/toolkits/grain",
+    "uses": [
+      {
+        "app": "Grain",
+        "field": "composio_toolkit",
+        "claim_status": "checked"
+      },
+      {
+        "app": "Grain",
+        "field": "composio_toolkit",
+        "claim_status": "checked"
+      }
+    ],
+    "status": 200,
+    "final_url": "https://docs.composio.dev/toolkits/grain"
+  },
+  {
+    "url": "https://docs.composio.dev/toolkits/harvest",
+    "uses": [
+      {
+        "app": "Harvest",
+        "field": "composio_toolkit",
+        "claim_status": "checked"
+      }
+    ],
+    "status": 200,
+    "final_url": "https://docs.composio.dev/toolkits/harvest"
+  },
+  {
+    "url": "https://docs.composio.dev/toolkits/higgsfield",
+    "uses": [
+      {
+        "app": "higgsfield",
+        "field": "composio_toolkit",
+        "claim_status": "checked"
+      },
+      {
+        "app": "higgsfield",
+        "field": "composio_toolkit",
+        "claim_status": "checked"
+      }
+    ],
+    "status": 200,
+    "final_url": "https://docs.composio.dev/toolkits/higgsfield"
+  },
+  {
+    "url": "https://docs.composio.dev/toolkits/jira",
+    "uses": [
+      {
+        "app": "Jira",
+        "field": "composio_toolkit",
+        "claim_status": "checked"
+      }
+    ],
+    "status": 200,
+    "final_url": "https://docs.composio.dev/toolkits/jira"
+  },
+  {
+    "url": "https://docs.composio.dev/toolkits/linear",
+    "uses": [
+      {
+        "app": "Linear",
+        "field": "composio_toolkit",
+        "claim_status": "checked"
+      }
+    ],
+    "status": 200,
+    "final_url": "https://docs.composio.dev/toolkits/linear"
+  },
+  {
+    "url": "https://docs.composio.dev/toolkits/monday",
+    "uses": [
+      {
+        "app": "Monday.com",
+        "field": "composio_toolkit",
+        "claim_status": "checked"
+      }
+    ],
+    "status": 200,
+    "final_url": "https://docs.composio.dev/toolkits/monday"
+  },
+  {
+    "url": "https://docs.composio.dev/toolkits/mrscraper",
+    "uses": [
+      {
+        "app": "MrScraper",
+        "field": "composio_toolkit",
+        "claim_status": "checked"
+      }
+    ],
+    "status": 200,
+    "final_url": "https://docs.composio.dev/toolkits/mrscraper"
+  },
+  {
+    "url": "https://docs.composio.dev/toolkits/notebook_lm",
+    "uses": [
+      {
+        "app": "NotebookLM",
+        "field": "composio_toolkit",
+        "claim_status": "checked"
+      },
+      {
+        "app": "NotebookLM",
+        "field": "composio_toolkit",
+        "claim_status": "checked"
+      }
+    ],
+    "status": 200,
+    "final_url": "https://docs.composio.dev/toolkits/notebook_lm"
+  },
+  {
+    "url": "https://docs.composio.dev/toolkits/notion",
+    "uses": [
+      {
+        "app": "Notion",
+        "field": "composio_toolkit",
+        "claim_status": "checked"
+      }
+    ],
+    "status": 200,
+    "final_url": "https://docs.composio.dev/toolkits/notion"
+  },
+  {
+    "url": "https://docs.composio.dev/toolkits/otter_ai_mcp",
+    "uses": [
+      {
+        "app": "Otter AI",
+        "field": "composio_toolkit",
+        "claim_status": "checked"
+      },
+      {
+        "app": "Otter AI",
+        "field": "composio_toolkit",
+        "claim_status": "checked"
+      }
+    ],
+    "status": 200,
+    "final_url": "https://docs.composio.dev/toolkits/otter_ai_mcp"
+  },
+  {
+    "url": "https://docs.composio.dev/toolkits/smartsheet",
+    "uses": [
+      {
+        "app": "Smartsheet",
+        "field": "composio_toolkit",
+        "claim_status": "checked"
+      }
+    ],
+    "status": 200,
+    "final_url": "https://docs.composio.dev/toolkits/smartsheet"
+  },
+  {
+    "url": "https://docs.composio.dev/toolkits/youtube_transcript",
+    "uses": [
+      {
+        "app": "YouTube Transcript",
+        "field": "composio_toolkit",
+        "claim_status": "checked"
+      },
+      {
+        "app": "YouTube Transcript",
+        "field": "composio_toolkit",
+        "claim_status": "checked"
+      }
+    ],
+    "status": 200,
+    "final_url": "https://docs.composio.dev/toolkits/youtube_transcript"
+  },
+  {
+    "url": "https://docs.dataforseo.com/v3/",
+    "uses": [
+      {
+        "app": "DataForSEO",
+        "field": "api_surface",
+        "claim_status": "checked"
+      },
+      {
+        "app": "DataForSEO",
+        "field": "api_surface",
+        "claim_status": "checked"
+      },
+      {
+        "app": "DataForSEO",
+        "field": "api_surface",
+        "claim_status": "checked"
+      },
+      {
+        "app": "DataForSEO",
+        "field": "verdict",
+        "claim_status": "checked"
+      }
+    ],
+    "status": 200,
+    "final_url": "https://docs.dataforseo.com/v3/"
+  },
+  {
+    "url": "https://docs.dataforseo.com/v3/auth/",
+    "uses": [
+      {
+        "app": "DataForSEO",
+        "field": "auth",
+        "claim_status": "checked"
+      }
+    ],
+    "status": 200,
+    "final_url": "https://docs.dataforseo.com/v3/auth/"
+  },
+  {
+    "url": "https://docs.devin.ai/admin/billing/self-serve",
+    "uses": [
+      {
+        "app": "Devin",
+        "field": "credential_gate",
+        "claim_status": "checked"
+      },
+      {
+        "app": "Devin",
+        "field": "verdict",
+        "claim_status": "checked"
+      }
+    ],
+    "status": 200,
+    "final_url": "https://docs.devin.ai/admin/billing/self-serve"
+  },
+  {
+    "url": "https://docs.devin.ai/api-reference/authentication",
+    "uses": [
+      {
+        "app": "Devin",
+        "field": "auth",
+        "claim_status": "checked"
+      },
+      {
+        "app": "Devin",
+        "field": "auth",
+        "claim_status": "checked"
+      },
+      {
+        "app": "Devin",
+        "field": "auth",
+        "claim_status": "checked"
+      }
+    ],
+    "status": 200,
+    "final_url": "https://docs.devin.ai/api-reference/authentication"
+  },
+  {
+    "url": "https://docs.devin.ai/api-reference/overview.md",
+    "uses": [
+      {
+        "app": "Devin",
+        "field": "api_surface",
+        "claim_status": "checked"
+      },
+      {
+        "app": "Devin",
+        "field": "api_surface",
+        "claim_status": "checked"
+      }
+    ],
+    "status": 200,
+    "final_url": "https://docs.devin.ai/api-reference/overview.md"
+  },
+  {
+    "url": "https://docs.devin.ai/api-reference/v3/overview.md",
+    "uses": [
+      {
+        "app": "Devin",
+        "field": "api_surface",
+        "claim_status": "checked"
+      }
+    ],
+    "status": 200,
+    "final_url": "https://docs.devin.ai/api-reference/v3/overview.md"
+  },
+  {
+    "url": "https://docs.devin.ai/work-with-devin/devin-mcp.md",
+    "uses": [
+      {
+        "app": "Devin",
+        "field": "official_mcp",
+        "claim_status": "checked"
+      },
+      {
+        "app": "Devin",
+        "field": "official_mcp",
+        "claim_status": "checked"
+      },
+      {
+        "app": "Devin",
+        "field": "official_mcp",
+        "claim_status": "checked"
+      }
+    ],
+    "status": 200,
+    "final_url": "https://docs.devin.ai/work-with-devin/devin-mcp.md"
+  },
+  {
+    "url": "https://docs.firecrawl.dev/api-reference/v2-introduction",
+    "uses": [
+      {
+        "app": "Firecrawl",
+        "field": "auth",
+        "claim_status": "checked"
+      },
+      {
+        "app": "Firecrawl",
+        "field": "api_surface",
+        "claim_status": "checked"
+      },
+      {
+        "app": "Firecrawl",
+        "field": "api_surface",
+        "claim_status": "checked"
+      }
+    ],
+    "status": 200,
+    "final_url": "https://docs.firecrawl.dev/api-reference/v2-introduction"
+  },
+  {
+    "url": "https://docs.firecrawl.dev/authentication",
+    "uses": [
+      {
+        "app": "Firecrawl",
+        "field": "auth",
+        "claim_status": "checked"
+      },
+      {
+        "app": "Firecrawl",
+        "field": "auth",
+        "claim_status": "checked"
+      },
+      {
+        "app": "Firecrawl",
+        "field": "verdict",
+        "claim_status": "checked"
+      }
+    ],
+    "status": 200,
+    "final_url": "https://docs.firecrawl.dev/authentication"
+  },
+  {
+    "url": "https://docs.firecrawl.dev/mcp-server",
+    "uses": [
+      {
+        "app": "Firecrawl",
+        "field": "official_mcp",
+        "claim_status": "checked"
+      },
+      {
+        "app": "Firecrawl",
+        "field": "official_mcp",
+        "claim_status": "checked"
+      }
+    ],
+    "status": 200,
+    "final_url": "https://docs.firecrawl.dev/mcp-server"
+  },
+  {
+    "url": "https://docs.firecrawl.dev/mcp-server/local",
+    "uses": [
+      {
+        "app": "Firecrawl",
+        "field": "official_mcp",
+        "claim_status": "checked"
+      },
+      {
+        "app": "Firecrawl",
+        "field": "official_mcp",
+        "claim_status": "checked"
+      },
+      {
+        "app": "Firecrawl",
+        "field": "verdict",
+        "claim_status": "checked"
+      }
+    ],
+    "status": 200,
+    "final_url": "https://docs.firecrawl.dev/mcp-server/local"
+  },
+  {
+    "url": "https://docs.higgsfield.ai/docs",
+    "uses": [
+      {
+        "app": "higgsfield",
+        "field": "api_surface",
+        "claim_status": "checked"
+      }
+    ],
+    "status": 200,
+    "final_url": "https://docs.higgsfield.ai/docs"
+  },
+  {
+    "url": "https://docs.higgsfield.ai/docs/api-reference/overview.md",
+    "uses": [
+      {
+        "app": "higgsfield",
+        "field": "api_surface",
+        "claim_status": "checked"
+      }
+    ],
+    "status": 200,
+    "final_url": "https://docs.higgsfield.ai/docs/api-reference/overview.md"
+  },
+  {
+    "url": "https://docs.higgsfield.ai/docs/quickstart.md",
+    "uses": [
+      {
+        "app": "higgsfield",
+        "field": "auth",
+        "claim_status": "checked"
+      }
+    ],
+    "status": 200,
+    "final_url": "https://docs.higgsfield.ai/docs/quickstart.md"
+  },
+  {
+    "url": "https://docs.mrscraper.com/docs/api/authentication",
+    "uses": [
+      {
+        "app": "MrScraper",
+        "field": "auth",
+        "claim_status": "checked"
+      },
+      {
+        "app": "MrScraper",
+        "field": "auth",
+        "claim_status": "checked"
+      }
+    ],
+    "status": 200,
+    "final_url": "https://docs.mrscraper.com/docs/api/authentication"
+  },
+  {
+    "url": "https://docs.mrscraper.com/docs/api/overview",
+    "uses": [
+      {
+        "app": "MrScraper",
+        "field": "auth",
+        "claim_status": "checked"
+      },
+      {
+        "app": "MrScraper",
+        "field": "api_surface",
+        "claim_status": "checked"
+      },
+      {
+        "app": "MrScraper",
+        "field": "api_surface",
+        "claim_status": "checked"
+      },
+      {
+        "app": "MrScraper",
+        "field": "api_surface",
+        "claim_status": "checked"
+      },
+      {
+        "app": "MrScraper",
+        "field": "verdict",
+        "claim_status": "checked"
+      }
+    ],
+    "status": 200,
+    "final_url": "https://docs.mrscraper.com/docs/api/overview"
+  },
+  {
+    "url": "https://docs.mrscraper.com/docs/getting-started/billing",
+    "uses": [
+      {
+        "app": "MrScraper",
+        "field": "credential_gate",
+        "claim_status": "checked"
+      },
+      {
+        "app": "MrScraper",
+        "field": "credential_gate",
+        "claim_status": "checked"
+      }
+    ],
+    "status": 200,
+    "final_url": "https://docs.mrscraper.com/docs/getting-started/billing"
+  },
+  {
+    "url": "https://docs.mrscraper.com/docs/getting-started/mcp-server",
+    "uses": [
+      {
+        "app": "MrScraper",
+        "field": "official_mcp",
+        "claim_status": "checked"
+      },
+      {
+        "app": "MrScraper",
+        "field": "official_mcp",
+        "claim_status": "checked"
+      },
+      {
+        "app": "MrScraper",
+        "field": "official_mcp",
+        "claim_status": "checked"
+      },
+      {
+        "app": "MrScraper",
+        "field": "verdict",
+        "claim_status": "checked"
+      }
+    ],
+    "status": 200,
+    "final_url": "https://docs.mrscraper.com/docs/getting-started/mcp-server"
+  },
+  {
+    "url": "https://docs.reducto.ai/agent-guide",
+    "uses": [
+      {
+        "app": "Reducto",
+        "field": "api_surface",
+        "claim_status": "checked"
+      },
+      {
+        "app": "Reducto",
+        "field": "api_surface",
+        "claim_status": "checked"
+      }
+    ],
+    "status": 200,
+    "final_url": "https://docs.reducto.ai/agent-guide"
+  },
+  {
+    "url": "https://docs.reducto.ai/mcp-server",
+    "uses": [
+      {
+        "app": "Reducto",
+        "field": "auth",
+        "claim_status": "checked"
+      },
+      {
+        "app": "Reducto",
+        "field": "auth",
+        "claim_status": "checked"
+      },
+      {
+        "app": "Reducto",
+        "field": "official_mcp",
+        "claim_status": "checked"
+      },
+      {
+        "app": "Reducto",
+        "field": "official_mcp",
+        "claim_status": "checked"
+      },
+      {
+        "app": "Reducto",
+        "field": "verdict",
+        "claim_status": "checked"
+      }
+    ],
+    "status": 200,
+    "final_url": "https://docs.reducto.ai/mcp-server"
+  },
+  {
+    "url": "https://docs.reducto.ai/quickstart",
+    "uses": [
+      {
+        "app": "Reducto",
+        "field": "auth",
+        "claim_status": "checked"
+      },
+      {
+        "app": "Reducto",
+        "field": "credential_gate",
+        "claim_status": "checked"
+      }
+    ],
+    "status": 200,
+    "final_url": "https://docs.reducto.ai/quickstart"
+  },
+  {
+    "url": "https://docs.waterfall.io/",
+    "uses": [
+      {
+        "app": "Waterfall.io",
+        "field": "api_surface",
+        "claim_status": "checked"
+      }
+    ],
+    "status": 200,
+    "final_url": "https://docs.waterfall.io/v1/introduction"
+  },
+  {
+    "url": "https://docs.waterfall.io/llms.txt",
+    "uses": [
+      {
+        "app": "Waterfall.io",
+        "field": "official_mcp",
+        "claim_status": "unknown"
+      }
+    ],
+    "status": 200,
+    "final_url": "https://docs.waterfall.io/llms.txt"
+  },
+  {
+    "url": "https://docs.waterfall.io/sitemap.xml",
+    "uses": [
+      {
+        "app": "Waterfall.io",
+        "field": "official_mcp",
+        "claim_status": "unknown"
+      }
+    ],
+    "status": 200,
+    "final_url": "https://docs.waterfall.io/sitemap.xml"
+  },
+  {
+    "url": "https://docs.waterfall.io/v1/api-keys-create",
+    "uses": [
+      {
+        "app": "Waterfall.io",
+        "field": "auth",
+        "claim_status": "checked"
+      },
+      {
+        "app": "Waterfall.io",
+        "field": "credential_gate",
+        "claim_status": "checked"
+      },
+      {
+        "app": "Waterfall.io",
+        "field": "api_surface",
+        "claim_status": "checked"
+      },
+      {
+        "app": "Waterfall.io",
+        "field": "verdict",
+        "claim_status": "checked"
+      }
+    ],
+    "status": 200,
+    "final_url": "https://docs.waterfall.io/v1/api-keys-create"
+  },
+  {
+    "url": "https://docs.waterfall.io/v1/authentication",
+    "uses": [
+      {
+        "app": "Waterfall.io",
+        "field": "auth",
+        "claim_status": "checked"
+      }
+    ],
+    "status": 200,
+    "final_url": "https://docs.waterfall.io/v1/authentication"
+  },
+  {
+    "url": "https://docs.waterfall.io/v1/book-demo",
+    "uses": [
+      {
+        "app": "Waterfall.io",
+        "field": "credential_gate",
+        "claim_status": "checked"
+      },
+      {
+        "app": "Waterfall.io",
+        "field": "verdict",
+        "claim_status": "checked"
+      }
+    ],
+    "status": 200,
+    "final_url": "https://docs.waterfall.io/v1/book-demo"
+  },
+  {
+    "url": "https://docs.waterfall.io/v1/openapi-spec",
+    "uses": [
+      {
+        "app": "Waterfall.io",
+        "field": "api_surface",
+        "claim_status": "checked"
+      }
+    ],
+    "status": 200,
+    "final_url": "https://docs.waterfall.io/v1/openapi-spec"
+  },
+  {
+    "url": "https://docs.waterfall.io/v1/skills-overview",
+    "uses": [
+      {
+        "app": "Waterfall.io",
+        "field": "official_mcp",
+        "claim_status": "unknown"
+      }
+    ],
+    "status": 200,
+    "final_url": "https://docs.waterfall.io/v1/skills-overview"
+  },
+  {
+    "url": "https://help.ahrefs.com/en/articles/13913559-getting-started-with-ahrefs-mcp",
+    "uses": [
+      {
+        "app": "Ahrefs",
+        "field": "official_mcp",
+        "claim_status": "checked"
+      }
+    ],
+    "status": 200,
+    "final_url": "https://help.ahrefs.com/en/articles/13913559-getting-started-with-ahrefs-mcp"
+  },
+  {
+    "url": "https://help.ahrefs.com/en/articles/6559232-about-api-v3",
+    "uses": [
+      {
+        "app": "Ahrefs",
+        "field": "credential_gate",
+        "claim_status": "checked"
+      },
+      {
+        "app": "Ahrefs",
+        "field": "verdict",
+        "claim_status": "checked"
+      }
+    ],
+    "status": 200,
+    "final_url": "https://help.ahrefs.com/en/articles/6559232-about-api-v3"
+  },
+  {
+    "url": "https://help.fathom.video/en/articles/8368641",
+    "uses": [
+      {
+        "app": "Fathom",
+        "field": "credential_gate",
+        "claim_status": "checked"
+      },
+      {
+        "app": "Fathom",
+        "field": "api_surface",
+        "claim_status": "checked"
+      }
+    ],
+    "status": 200,
+    "final_url": "https://help.fathom.video/en/articles/8368641"
+  },
+  {
+    "url": "https://help.getharvest.com/api-v2/",
+    "uses": [
+      {
+        "app": "Harvest",
+        "field": "api_surface",
+        "claim_status": "checked"
+      }
+    ],
+    "status": 200,
+    "final_url": "https://help.getharvest.com/api-v2/"
+  },
+  {
+    "url": "https://help.getharvest.com/api-v2/authentication-api/authentication/authentication/",
+    "uses": [
+      {
+        "app": "Harvest",
+        "field": "auth",
+        "claim_status": "checked"
+      },
+      {
+        "app": "Harvest",
+        "field": "auth",
+        "claim_status": "checked"
+      }
+    ],
+    "status": 200,
+    "final_url": "https://help.getharvest.com/api-v2/authentication-api/authentication/authentication/"
+  },
+  {
+    "url": "https://help.getharvest.com/api-v2/introduction/overview/general/",
+    "uses": [
+      {
+        "app": "Harvest",
+        "field": "api_surface",
+        "claim_status": "checked"
+      },
+      {
+        "app": "Harvest",
+        "field": "verdict",
+        "claim_status": "checked"
+      }
+    ],
+    "status": 200,
+    "final_url": "https://help.getharvest.com/api-v2/introduction/overview/general/"
+  },
+  {
+    "url": "https://help.otter.ai/api/v2/help_center/en-us/articles/35287607569687.json",
+    "uses": [
+      {
+        "app": "Otter AI",
+        "field": "auth",
+        "claim_status": "checked"
+      },
+      {
+        "app": "Otter AI",
+        "field": "auth",
+        "claim_status": "checked"
+      },
+      {
+        "app": "Otter AI",
+        "field": "official_mcp",
+        "claim_status": "checked"
+      },
+      {
+        "app": "Otter AI",
+        "field": "official_mcp",
+        "claim_status": "checked"
+      },
+      {
+        "app": "Otter AI",
+        "field": "verdict",
+        "claim_status": "checked"
+      }
+    ],
+    "status": 200,
+    "final_url": "https://help.otter.ai/api/v2/help_center/en-us/articles/35287607569687.json"
+  },
+  {
+    "url": "https://help.otter.ai/api/v2/help_center/en-us/articles/36130822688279.json",
+    "uses": [
+      {
+        "app": "Otter AI",
+        "field": "auth",
+        "claim_status": "checked"
+      },
+      {
+        "app": "Otter AI",
+        "field": "credential_gate",
+        "claim_status": "checked"
+      },
+      {
+        "app": "Otter AI",
+        "field": "api_surface",
+        "claim_status": "checked"
+      },
+      {
+        "app": "Otter AI",
+        "field": "api_surface",
+        "claim_status": "checked"
+      },
+      {
+        "app": "Otter AI",
+        "field": "verdict",
+        "claim_status": "checked"
+      }
+    ],
+    "status": 200,
+    "final_url": "https://help.otter.ai/api/v2/help_center/en-us/articles/36130822688279.json"
+  },
+  {
+    "url": "https://help.otter.ai/api/v2/help_center/en-us/articles/4412365535895.json",
+    "uses": [
+      {
+        "app": "Otter AI",
+        "field": "credential_gate",
+        "claim_status": "checked"
+      }
+    ],
+    "status": 200,
+    "final_url": "https://help.otter.ai/api/v2/help_center/en-us/articles/4412365535895.json"
+  },
+  {
+    "url": "https://higgsfield.ai/creator-hub/help-center/integrations/what-is-higgsfield-mcp",
+    "uses": [
+      {
+        "app": "higgsfield",
+        "field": "auth",
+        "claim_status": "checked"
+      },
+      {
+        "app": "higgsfield",
+        "field": "official_mcp",
+        "claim_status": "checked"
+      },
+      {
+        "app": "higgsfield",
+        "field": "official_mcp",
+        "claim_status": "checked"
+      },
+      {
+        "app": "higgsfield",
+        "field": "verdict",
+        "claim_status": "checked"
+      }
+    ],
+    "status": 200,
+    "final_url": "https://higgsfield.ai/creator-hub/help-center/integrations/what-is-higgsfield-mcp"
+  },
+  {
+    "url": "https://higgsfield.ai/creator-hub/help-center/integrations/what-is-the-higgsfield-api",
+    "uses": [
+      {
+        "app": "higgsfield",
+        "field": "credential_gate",
+        "claim_status": "checked"
+      },
+      {
+        "app": "higgsfield",
+        "field": "credential_gate",
+        "claim_status": "checked"
+      },
+      {
+        "app": "higgsfield",
+        "field": "api_surface",
+        "claim_status": "checked"
+      },
+      {
+        "app": "higgsfield",
+        "field": "verdict",
+        "claim_status": "checked"
+      }
+    ],
+    "status": 200,
+    "final_url": "https://higgsfield.ai/creator-hub/help-center/integrations/what-is-the-higgsfield-api"
+  },
+  {
+    "url": "https://linear.app/developers/graphql",
+    "uses": [
+      {
+        "app": "Linear",
+        "field": "auth",
+        "claim_status": "checked"
+      },
+      {
+        "app": "Linear",
+        "field": "api_surface",
+        "claim_status": "checked"
+      },
+      {
+        "app": "Linear",
+        "field": "api_surface",
+        "claim_status": "checked"
+      },
+      {
+        "app": "Linear",
+        "field": "verdict",
+        "claim_status": "checked"
+      }
+    ],
+    "status": 200,
+    "final_url": "https://linear.app/developers/graphql"
+  },
+  {
+    "url": "https://linear.app/developers/oauth-2-0-authentication",
+    "uses": [
+      {
+        "app": "Linear",
+        "field": "auth",
+        "claim_status": "checked"
+      }
+    ],
+    "status": 200,
+    "final_url": "https://linear.app/developers/oauth-2-0-authentication"
+  },
+  {
+    "url": "https://linear.app/docs/mcp",
+    "uses": [
+      {
+        "app": "Linear",
+        "field": "official_mcp",
+        "claim_status": "checked"
+      },
+      {
+        "app": "Linear",
+        "field": "official_mcp",
+        "claim_status": "checked"
+      }
+    ],
+    "status": 200,
+    "final_url": "https://linear.app/docs/mcp"
+  },
+  {
+    "url": "https://linear.app/docs/security-and-access",
+    "uses": [
+      {
+        "app": "Linear",
+        "field": "credential_gate",
+        "claim_status": "checked"
+      }
+    ],
+    "status": 200,
+    "final_url": "https://linear.app/docs/security-and-access"
+  },
+  {
+    "url": "https://linear.app/pricing",
+    "uses": [
+      {
+        "app": "Linear",
+        "field": "credential_gate",
+        "claim_status": "checked"
+      },
+      {
+        "app": "Linear",
+        "field": "verdict",
+        "claim_status": "checked"
+      }
+    ],
+    "status": 200,
+    "final_url": "https://linear.app/pricing"
+  },
+  {
+    "url": "https://mermaid.js.org/config/mermaidCLI.html",
+    "uses": [
+      {
+        "app": "Mermaid CLI",
+        "field": "credential_gate",
+        "claim_status": "checked"
+      }
+    ],
+    "status": 200,
+    "final_url": "https://mermaid.js.org/config/mermaidCLI.html"
+  },
+  {
+    "url": "https://mermaid.js.org/ecosystem/integrations-community.html",
+    "uses": [
+      {
+        "app": "Mermaid CLI",
+        "field": "official_mcp",
+        "claim_status": "unknown"
+      },
+      {
+        "app": "Mermaid CLI",
+        "field": "official_mcp",
+        "claim_status": "unknown"
+      }
+    ],
+    "status": 200,
+    "final_url": "https://mermaid.js.org/ecosystem/integrations-community.html"
+  },
+  {
+    "url": "https://mrscraper.com/pricing",
+    "uses": [
+      {
+        "app": "MrScraper",
+        "field": "credential_gate",
+        "claim_status": "checked"
+      },
+      {
+        "app": "MrScraper",
+        "field": "verdict",
+        "claim_status": "checked"
+      }
+    ],
+    "status": 200,
+    "final_url": "https://mrscraper.com/pricing"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/Consensus-NLP/consensus-api/main/README.md",
+    "uses": [
+      {
+        "app": "Consensus",
+        "field": "auth",
+        "claim_status": "checked"
+      },
+      {
+        "app": "Consensus",
+        "field": "credential_gate",
+        "claim_status": "checked"
+      },
+      {
+        "app": "Consensus",
+        "field": "api_surface",
+        "claim_status": "checked"
+      },
+      {
+        "app": "Consensus",
+        "field": "verdict",
+        "claim_status": "checked"
+      }
+    ],
+    "status": 200,
+    "final_url": "https://raw.githubusercontent.com/Consensus-NLP/consensus-api/main/README.md"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/Consensus-NLP/consensus-mcp/main/README.md",
+    "uses": [
+      {
+        "app": "Consensus",
+        "field": "auth",
+        "claim_status": "checked"
+      },
+      {
+        "app": "Consensus",
+        "field": "official_mcp",
+        "claim_status": "checked"
+      },
+      {
+        "app": "Consensus",
+        "field": "official_mcp",
+        "claim_status": "checked"
+      },
+      {
+        "app": "Consensus",
+        "field": "verdict",
+        "claim_status": "checked"
+      }
+    ],
+    "status": 200,
+    "final_url": "https://raw.githubusercontent.com/Consensus-NLP/consensus-mcp/main/README.md"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/firecrawl/firecrawl-docs/main/ai-onboarding.mdx",
+    "uses": [
+      {
+        "app": "Firecrawl",
+        "field": "api_surface",
+        "claim_status": "checked"
+      }
+    ],
+    "status": 200,
+    "final_url": "https://raw.githubusercontent.com/firecrawl/firecrawl-docs/main/ai-onboarding.mdx"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/firecrawl/firecrawl-docs/main/billing.mdx",
+    "uses": [
+      {
+        "app": "Firecrawl",
+        "field": "credential_gate",
+        "claim_status": "checked"
+      },
+      {
+        "app": "Firecrawl",
+        "field": "credential_gate",
+        "claim_status": "checked"
+      },
+      {
+        "app": "Firecrawl",
+        "field": "verdict",
+        "claim_status": "checked"
+      }
+    ],
+    "status": 200,
+    "final_url": "https://raw.githubusercontent.com/firecrawl/firecrawl-docs/main/billing.mdx"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/mermaid-js/mermaid-cli/master/LICENSE",
+    "uses": [
+      {
+        "app": "Mermaid CLI",
+        "field": "credential_gate",
+        "claim_status": "checked"
+      },
+      {
+        "app": "Mermaid CLI",
+        "field": "verdict",
+        "claim_status": "checked"
+      }
+    ],
+    "status": 200,
+    "final_url": "https://raw.githubusercontent.com/mermaid-js/mermaid-cli/master/LICENSE"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/mermaid-js/mermaid-cli/master/README.md",
+    "uses": [
+      {
+        "app": "Mermaid CLI",
+        "field": "auth",
+        "claim_status": "checked"
+      },
+      {
+        "app": "Mermaid CLI",
+        "field": "auth",
+        "claim_status": "checked"
+      },
+      {
+        "app": "Mermaid CLI",
+        "field": "api_surface",
+        "claim_status": "checked"
+      },
+      {
+        "app": "Mermaid CLI",
+        "field": "api_surface",
+        "claim_status": "checked"
+      },
+      {
+        "app": "Mermaid CLI",
+        "field": "official_mcp",
+        "claim_status": "unknown"
+      },
+      {
+        "app": "Mermaid CLI",
+        "field": "verdict",
+        "claim_status": "checked"
+      }
+    ],
+    "status": 200,
+    "final_url": "https://raw.githubusercontent.com/mermaid-js/mermaid-cli/master/README.md"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/sherlock-project/sherlock/master/.actor/README.md",
+    "uses": [
+      {
+        "app": "Sherlock",
+        "field": "api_surface",
+        "claim_status": "checked"
+      },
+      {
+        "app": "Sherlock",
+        "field": "api_surface",
+        "claim_status": "checked"
+      },
+      {
+        "app": "Sherlock",
+        "field": "verdict",
+        "claim_status": "checked"
+      }
+    ],
+    "status": 200,
+    "final_url": "https://raw.githubusercontent.com/sherlock-project/sherlock/master/.actor/README.md"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/sherlock-project/sherlock/master/docs/README.md",
+    "uses": [
+      {
+        "app": "Sherlock",
+        "field": "auth",
+        "claim_status": "checked"
+      },
+      {
+        "app": "Sherlock",
+        "field": "api_surface",
+        "claim_status": "checked"
+      },
+      {
+        "app": "Sherlock",
+        "field": "verdict",
+        "claim_status": "checked"
+      }
+    ],
+    "status": 200,
+    "final_url": "https://raw.githubusercontent.com/sherlock-project/sherlock/master/docs/README.md"
+  },
+  {
+    "url": "https://reducto.ai/developers",
+    "uses": [
+      {
+        "app": "Reducto",
+        "field": "api_surface",
+        "claim_status": "checked"
+      }
+    ],
+    "status": 200,
+    "final_url": "https://reducto.ai/developers"
+  },
+  {
+    "url": "https://reducto.ai/pricing",
+    "uses": [
+      {
+        "app": "Reducto",
+        "field": "credential_gate",
+        "claim_status": "checked"
+      },
+      {
+        "app": "Reducto",
+        "field": "verdict",
+        "claim_status": "checked"
+      }
+    ],
+    "status": 200,
+    "final_url": "https://reducto.ai/pricing"
+  },
+  {
+    "url": "https://seranking.com/api-pricing.html",
+    "uses": [
+      {
+        "app": "SE Ranking",
+        "field": "credential_gate",
+        "claim_status": "checked"
+      },
+      {
+        "app": "SE Ranking",
+        "field": "credential_gate",
+        "claim_status": "checked"
+      },
+      {
+        "app": "SE Ranking",
+        "field": "verdict",
+        "claim_status": "checked"
+      }
+    ],
+    "status": 200,
+    "final_url": "https://seranking.com/api-pricing.html"
+  },
+  {
+    "url": "https://seranking.com/api/data/getting-started/",
+    "uses": [
+      {
+        "app": "SE Ranking",
+        "field": "auth",
+        "claim_status": "checked"
+      },
+      {
+        "app": "SE Ranking",
+        "field": "auth",
+        "claim_status": "checked"
+      },
+      {
+        "app": "SE Ranking",
+        "field": "auth",
+        "claim_status": "checked"
+      }
+    ],
+    "status": 200,
+    "final_url": "https://seranking.com/api/data/getting-started/"
+  },
+  {
+    "url": "https://seranking.com/api/how-to-get-api/",
+    "uses": [
+      {
+        "app": "SE Ranking",
+        "field": "auth",
+        "claim_status": "checked"
+      },
+      {
+        "app": "SE Ranking",
+        "field": "api_surface",
+        "claim_status": "checked"
+      }
+    ],
+    "status": 200,
+    "final_url": "https://seranking.com/api/how-to-get-api/"
+  },
+  {
+    "url": "https://seranking.com/api/integrations/mcp/",
+    "uses": [
+      {
+        "app": "SE Ranking",
+        "field": "official_mcp",
+        "claim_status": "checked"
+      },
+      {
+        "app": "SE Ranking",
+        "field": "official_mcp",
+        "claim_status": "checked"
+      },
+      {
+        "app": "SE Ranking",
+        "field": "official_mcp",
+        "claim_status": "checked"
+      },
+      {
+        "app": "SE Ranking",
+        "field": "official_mcp",
+        "claim_status": "checked"
+      }
+    ],
+    "status": 200,
+    "final_url": "https://seranking.com/api/integrations/mcp/"
+  },
+  {
+    "url": "https://seranking.com/api/project/getting-started/",
+    "uses": [
+      {
+        "app": "SE Ranking",
+        "field": "api_surface",
+        "claim_status": "checked"
+      },
+      {
+        "app": "SE Ranking",
+        "field": "verdict",
+        "claim_status": "checked"
+      }
+    ],
+    "status": 200,
+    "final_url": "https://seranking.com/api/project/getting-started/"
+  },
+  {
+    "url": "https://sherlockproject.xyz/installation",
+    "uses": [
+      {
+        "app": "Sherlock",
+        "field": "auth",
+        "claim_status": "checked"
+      },
+      {
+        "app": "Sherlock",
+        "field": "credential_gate",
+        "claim_status": "checked"
+      },
+      {
+        "app": "Sherlock",
+        "field": "verdict",
+        "claim_status": "checked"
+      }
+    ],
+    "status": 200,
+    "final_url": "https://sherlockproject.xyz/installation"
+  },
+  {
+    "url": "https://sherlockproject.xyz/llms.txt",
+    "uses": [
+      {
+        "app": "Sherlock",
+        "field": "credential_gate",
+        "claim_status": "checked"
+      },
+      {
+        "app": "Sherlock",
+        "field": "official_mcp",
+        "claim_status": "unknown"
+      }
+    ],
+    "status": 200,
+    "final_url": "https://sherlockproject.xyz/llms.txt"
+  },
+  {
+    "url": "https://sherlockproject.xyz/sitemap.xml",
+    "uses": [
+      {
+        "app": "Sherlock",
+        "field": "official_mcp",
+        "claim_status": "unknown"
+      }
+    ],
+    "status": 200,
+    "final_url": "https://sherlockproject.xyz/sitemap.xml"
+  },
+  {
+    "url": "https://support.airtable.com/docs/creating-personal-access-tokens",
+    "uses": [
+      {
+        "app": "Airtable",
+        "field": "auth",
+        "claim_status": "checked"
+      },
+      {
+        "app": "Airtable",
+        "field": "auth",
+        "claim_status": "checked"
+      },
+      {
+        "app": "Airtable",
+        "field": "credential_gate",
+        "claim_status": "checked"
+      },
+      {
+        "app": "Airtable",
+        "field": "credential_gate",
+        "claim_status": "checked"
+      },
+      {
+        "app": "Airtable",
+        "field": "verdict",
+        "claim_status": "checked"
+      }
+    ],
+    "status": 200,
+    "final_url": "https://support.airtable.com/articles/9934989703-creating-personal-access-tokens"
+  },
+  {
+    "url": "https://support.airtable.com/docs/using-the-airtable-mcp-server",
+    "uses": [
+      {
+        "app": "Airtable",
+        "field": "official_mcp",
+        "claim_status": "checked"
+      },
+      {
+        "app": "Airtable",
+        "field": "official_mcp",
+        "claim_status": "checked"
+      }
+    ],
+    "status": 200,
+    "final_url": "https://support.airtable.com/articles/9897799762-using-the-airtable-mcp-server"
+  },
+  {
+    "url": "https://support.atlassian.com/atlassian-account/docs/manage-api-tokens-for-your-atlassian-account/",
+    "uses": [
+      {
+        "app": "Jira",
+        "field": "auth",
+        "claim_status": "checked"
+      }
+    ],
+    "status": 200,
+    "final_url": "https://support.atlassian.com/atlassian-account/docs/manage-api-tokens-for-your-atlassian-account/"
+  },
+  {
+    "url": "https://support.atlassian.com/atlassian-ai-gateway/docs/get-started-with-the-atlassian-remote-mcp-server/",
+    "uses": [
+      {
+        "app": "Jira",
+        "field": "official_mcp",
+        "claim_status": "checked"
+      },
+      {
+        "app": "Jira",
+        "field": "official_mcp",
+        "claim_status": "checked"
+      }
+    ],
+    "status": 200,
+    "final_url": "https://support.atlassian.com/atlassian-ai-gateway/docs/get-started-with-the-atlassian-remote-mcp-server/"
+  },
+  {
+    "url": "https://support.getharvest.com/hc/en-us/articles/360048180732-The-Harvest-API",
+    "uses": [
+      {
+        "app": "Harvest",
+        "field": "credential_gate",
+        "claim_status": "checked"
+      },
+      {
+        "app": "Harvest",
+        "field": "credential_gate",
+        "claim_status": "checked"
+      },
+      {
+        "app": "Harvest",
+        "field": "verdict",
+        "claim_status": "checked"
+      }
+    ],
+    "status": 200,
+    "final_url": "https://support.getharvest.com/hc/en-us/articles/360048180732-The-Harvest-API"
+  },
+  {
+    "url": "https://support.getharvest.com/hc/en-us/articles/46293697226381-Harvest-MCP",
+    "uses": [
+      {
+        "app": "Harvest",
+        "field": "official_mcp",
+        "claim_status": "checked"
+      },
+      {
+        "app": "Harvest",
+        "field": "official_mcp",
+        "claim_status": "checked"
+      }
+    ],
+    "status": 200,
+    "final_url": "https://support.getharvest.com/hc/en-us/articles/46293697226381-Harvest-MCP"
+  },
+  {
+    "url": "https://support.grain.com/en/articles/15507288-grain-api",
+    "uses": [
+      {
+        "app": "Grain",
+        "field": "credential_gate",
+        "claim_status": "checked"
+      },
+      {
+        "app": "Grain",
+        "field": "credential_gate",
+        "claim_status": "checked"
+      },
+      {
+        "app": "Grain",
+        "field": "api_surface",
+        "claim_status": "checked"
+      },
+      {
+        "app": "Grain",
+        "field": "api_surface",
+        "claim_status": "checked"
+      },
+      {
+        "app": "Grain",
+        "field": "verdict",
+        "claim_status": "checked"
+      }
+    ],
+    "status": 200,
+    "final_url": "https://support.grain.com/en/articles/15507288-grain-api"
+  },
+  {
+    "url": "https://transcriptapi.com/docs/api/",
+    "uses": [
+      {
+        "app": "YouTube Transcript",
+        "field": "auth",
+        "claim_status": "checked"
+      },
+      {
+        "app": "YouTube Transcript",
+        "field": "api_surface",
+        "claim_status": "checked"
+      },
+      {
+        "app": "YouTube Transcript",
+        "field": "api_surface",
+        "claim_status": "checked"
+      }
+    ],
+    "status": 200,
+    "final_url": "https://transcriptapi.com/docs/api/"
+  },
+  {
+    "url": "https://transcriptapi.com/docs/getting-started/javascript/",
+    "uses": [
+      {
+        "app": "YouTube Transcript",
+        "field": "credential_gate",
+        "claim_status": "checked"
+      },
+      {
+        "app": "YouTube Transcript",
+        "field": "credential_gate",
+        "claim_status": "checked"
+      },
+      {
+        "app": "YouTube Transcript",
+        "field": "api_surface",
+        "claim_status": "checked"
+      },
+      {
+        "app": "YouTube Transcript",
+        "field": "verdict",
+        "claim_status": "checked"
+      }
+    ],
+    "status": 200,
+    "final_url": "https://transcriptapi.com/docs/getting-started/javascript/"
+  },
+  {
+    "url": "https://transcriptapi.com/docs/mcp/",
+    "uses": [
+      {
+        "app": "YouTube Transcript",
+        "field": "auth",
+        "claim_status": "checked"
+      },
+      {
+        "app": "YouTube Transcript",
+        "field": "official_mcp",
+        "claim_status": "checked"
+      },
+      {
+        "app": "YouTube Transcript",
+        "field": "official_mcp",
+        "claim_status": "checked"
+      },
+      {
+        "app": "YouTube Transcript",
+        "field": "verdict",
+        "claim_status": "checked"
+      }
+    ],
+    "status": 200,
+    "final_url": "https://transcriptapi.com/docs/mcp/"
+  },
+  {
+    "url": "https://university.clay.com/docs/clay-api-cli",
+    "uses": [
+      {
+        "app": "Clay",
+        "field": "credential_gate",
+        "claim_status": "checked"
+      },
+      {
+        "app": "Clay",
+        "field": "credential_gate",
+        "claim_status": "checked"
+      },
+      {
+        "app": "Clay",
+        "field": "official_mcp",
+        "claim_status": "checked"
+      },
+      {
+        "app": "Clay",
+        "field": "verdict",
+        "claim_status": "checked"
+      }
+    ],
+    "status": 200,
+    "final_url": "https://university.clay.com/docs/clay-api-cli"
+  },
+  {
+    "url": "https://university.clay.com/docs/clay-mcp-in-chatgpt",
+    "uses": [
+      {
+        "app": "Clay",
+        "field": "official_mcp",
+        "claim_status": "checked"
+      }
+    ],
+    "status": 200,
+    "final_url": "https://university.clay.com/docs/clay-mcp-in-chatgpt"
+  },
+  {
+    "url": "https://university.clay.com/docs/connect-to-clay-mcp",
+    "uses": [
+      {
+        "app": "Clay",
+        "field": "official_mcp",
+        "claim_status": "checked"
+      },
+      {
+        "app": "Clay",
+        "field": "official_mcp",
+        "claim_status": "checked"
+      },
+      {
+        "app": "Clay",
+        "field": "official_mcp",
+        "claim_status": "checked"
+      },
+      {
+        "app": "Clay",
+        "field": "official_mcp",
+        "claim_status": "checked"
+      },
+      {
+        "app": "Clay",
+        "field": "verdict",
+        "claim_status": "checked"
+      }
+    ],
+    "status": 200,
+    "final_url": "https://university.clay.com/docs/connect-to-clay-mcp"
+  },
+  {
+    "url": "https://university.clay.com/docs/guide-find-clay-api-key",
+    "uses": [
+      {
+        "app": "Clay",
+        "field": "auth",
+        "claim_status": "checked"
+      }
+    ],
+    "status": 200,
+    "final_url": "https://university.clay.com/docs/guide-find-clay-api-key"
+  },
+  {
+    "url": "https://www.atlassian.com/software/jira/pricing",
+    "uses": [
+      {
+        "app": "Jira",
+        "field": "credential_gate",
+        "claim_status": "checked"
+      },
+      {
+        "app": "Jira",
+        "field": "verdict",
+        "claim_status": "checked"
+      }
+    ],
+    "status": 200,
+    "final_url": "https://www.atlassian.com/software/jira/pricing"
+  },
+  {
+    "url": "https://www.clay.com/pricing",
+    "uses": [
+      {
+        "app": "Clay",
+        "field": "credential_gate",
+        "claim_status": "checked"
+      }
+    ],
+    "status": 200,
+    "final_url": "https://www.clay.com/pricing"
+  },
+  {
+    "url": "https://www.consensus.app/home/api/",
+    "uses": [
+      {
+        "app": "Consensus",
+        "field": "credential_gate",
+        "claim_status": "checked"
+      },
+      {
+        "app": "Consensus",
+        "field": "api_surface",
+        "claim_status": "checked"
+      },
+      {
+        "app": "Consensus",
+        "field": "api_surface",
+        "claim_status": "checked"
+      },
+      {
+        "app": "Consensus",
+        "field": "official_mcp",
+        "claim_status": "checked"
+      }
+    ],
+    "status": 200,
+    "final_url": "https://www.consensus.app/home/api/"
+  },
+  {
+    "url": "https://www.fathom.ai/features/api",
+    "uses": [
+      {
+        "app": "Fathom",
+        "field": "credential_gate",
+        "claim_status": "checked"
+      },
+      {
+        "app": "Fathom",
+        "field": "credential_gate",
+        "claim_status": "checked"
+      },
+      {
+        "app": "Fathom",
+        "field": "verdict",
+        "claim_status": "checked"
+      }
+    ],
+    "status": 200,
+    "final_url": "https://www.fathom.ai/features/api"
+  },
+  {
+    "url": "https://www.firecrawl.dev/pricing",
+    "uses": [
+      {
+        "app": "Firecrawl",
+        "field": "credential_gate",
+        "claim_status": "checked"
+      }
+    ],
+    "status": 200,
+    "final_url": "https://www.firecrawl.dev/pricing"
+  },
+  {
+    "url": "https://www.notion.com/help/add-and-manage-connections-with-the-api",
+    "uses": [
+      {
+        "app": "Notion",
+        "field": "credential_gate",
+        "claim_status": "checked"
+      },
+      {
+        "app": "Notion",
+        "field": "verdict",
+        "claim_status": "checked"
+      }
+    ],
+    "status": 200,
+    "final_url": "https://www.notion.com/help/add-and-manage-connections-with-the-api"
+  },
+  {
+    "url": "https://www.smartsheet.com/content-center/product-insights/product-updates/introducing-smartsheet-mcp-server",
+    "uses": [
+      {
+        "app": "Smartsheet",
+        "field": "official_mcp",
+        "claim_status": "checked"
+      }
+    ],
+    "status": 200,
+    "final_url": "https://www.smartsheet.com/content-center/product-insights/product-updates/introducing-smartsheet-mcp-server"
+  },
+  {
+    "url": "https://www.waterfall.io/",
+    "uses": [
+      {
+        "app": "Waterfall.io",
+        "field": "auth",
+        "claim_status": "checked"
+      }
+    ],
+    "status": 200,
+    "final_url": "https://www.waterfall.io/"
+  },
+  {
+    "url": "https://www.waterfall.io/pricing",
+    "uses": [
+      {
+        "app": "Waterfall.io",
+        "field": "credential_gate",
+        "claim_status": "checked"
+      },
+      {
+        "app": "Waterfall.io",
+        "field": "credential_gate",
+        "claim_status": "checked"
+      },
+      {
+        "app": "Waterfall.io",
+        "field": "verdict",
+        "claim_status": "checked"
+      }
+    ],
+    "status": 200,
+    "final_url": "https://www.waterfall.io/pricing"
+  }
+]

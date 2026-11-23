@@ -1,0 +1,82 @@
+{
+  "app": {
+    "number": 28,
+    "name": "WhatsApp Business",
+    "category": "Communications and Messaging",
+    "hint": "developers.facebook.com/docs/whatsapp"
+  },
+  "replayed_at": "2026-11-23T18:41:03.904553+00:00",
+  "source_passes": [
+    "data/pass2/028.json",
+    "data/pass4/028.json"
+  ],
+  "source_searches": [
+    "data/new_search/028.json",
+    "data/pass4_search/028.json"
+  ],
+  "publication_date_note": "Search publication labels are retained exactly; null means no label was available. Relative labels are not exact dates.",
+  "claims": {
+    "auth": {
+      "value": [
+        "OAuth 2.0"
+      ],
+      "status": "provisional",
+      "sources": [
+        "https://developers.facebook.com/docs/graph-api/reference/whats-app-business-account/"
+      ],
+      "evidence": [
+        {
+          "value": "OAuth 2.0",
+          "url": "https://developers.facebook.com/docs/graph-api/reference/whats-app-business-account/",
+          "excerpt": "rmissions error 2500 Error parsing graph query 131031 Business Account locked 190 Invalid OAuth 2.0 Access Token 131000 Something went wrong 200005 Template Insights are not available yet for this WhatsApp Business account Creating You can't perform this operation on t",
+          "published_label": null
+        }
+      ],
+      "reason": "Provisional extraction; validate scope and completeness against cited pages."
+    },
+    "credential_gate": {
+      "value": "unknown",
+      "status": "provisional",
+      "sources": [],
+      "evidence": [],
+      "reason": "No sufficiently specific official evidence extracted."
+    },
+    "api_surface": {
+      "value": "unknown",
+      "status": "provisional",
+      "sources": [],
+      "evidence": [],
+      "reason": "No sufficiently specific official evidence extracted."
+    },
+    "official_mcp": {
+      "value": "unknown",
+      "status": "provisional",
+      "sources": [],
+      "evidence": [],
+      "reason": "No sufficiently specific official evidence extracted."
+    },
+    "composio_toolkit": {
+      "value": "listed",
+      "status": "provisional",
+      "sources": [
+        "https://docs.composio.dev/toolkits/whatsapp"
+      ],
+      "evidence": [],
+      "reason": "Catalog match only; not vendor MCP evidence."
+    },
+    "verdict": {
+      "value": "unknown",
+      "status": "provisional",
+      "sources": [],
+      "evidence": [],
+      "reason": "No sufficiently specific official evidence extracted."
+    }
+  },
+  "validation": [
+    "Automatic extraction is provisional until independently reviewed",
+    "Unknown is not evidence of absence",
+    "Composio evidence cannot establish vendor MCP",
+    "Client-only and negated MCP statements are not vendor-server proof",
+    "API breadth is a text-coverage heuristic, not an endpoint census"
+  ]
+}

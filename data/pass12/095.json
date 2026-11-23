@@ -1,0 +1,80 @@
+{
+  "app": {
+    "number": 95,
+    "name": "Reducto",
+    "category": "AI, Research and Media-native",
+    "hint": "reducto.ai (document parsing)"
+  },
+  "replayed_at": "2026-11-23T18:45:56.803895+00:00",
+  "source_passes": [
+    "data/pass2/095.json",
+    "data/pass4/095.json"
+  ],
+  "source_searches": [
+    "data/new_search/095.json",
+    "data/pass4_search/095.json"
+  ],
+  "publication_date_note": "Search publication labels are retained exactly; null means no label was available. Relative labels are not exact dates.",
+  "claims": {
+    "auth": {
+      "value": [
+        "API key"
+      ],
+      "status": "provisional",
+      "sources": [
+        "https://reducto.ai/developers"
+      ],
+      "evidence": [
+        {
+          "value": "API key",
+          "url": "https://reducto.ai/developers",
+          "excerpt": "nd edit 30+ file types. Production-ready structured JSON in minutes, not months. Get your API key Read the docs Python Node.js cURL from reducto import Reducto client = Reducto() result = client.parse.run( input = \"https://cdn.reducto.ai/samples/fidelity-example.pdf\"",
+          "published_label": null
+        }
+      ],
+      "reason": "Provisional extraction; validate scope and completeness against cited pages."
+    },
+    "credential_gate": {
+      "value": "unknown",
+      "status": "provisional",
+      "sources": [],
+      "evidence": [],
+      "reason": "No sufficiently specific official evidence extracted."
+    },
+    "api_surface": {
+      "value": "unknown",
+      "status": "provisional",
+      "sources": [],
+      "evidence": [],
+      "reason": "No sufficiently specific official evidence extracted."
+    },
+    "official_mcp": {
+      "value": "unknown",
+      "status": "provisional",
+      "sources": [],
+      "evidence": [],
+      "reason": "No sufficiently specific official evidence extracted."
+    },
+    "composio_toolkit": {
+      "value": "unknown",
+      "status": "provisional",
+      "sources": [],
+      "evidence": [],
+      "reason": "No sufficiently specific official evidence extracted."
+    },
+    "verdict": {
+      "value": "unknown",
+      "status": "provisional",
+      "sources": [],
+      "evidence": [],
+      "reason": "No sufficiently specific official evidence extracted."
+    }
+  },
+  "validation": [
+    "Automatic extraction is provisional until independently reviewed",
+    "Unknown is not evidence of absence",
+    "Composio evidence cannot establish vendor MCP",
+    "Client-only and negated MCP statements are not vendor-server proof",
+    "API breadth is a text-coverage heuristic, not an endpoint census"
+  ]
+}

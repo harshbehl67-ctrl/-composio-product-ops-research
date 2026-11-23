@@ -1,0 +1,155 @@
+{
+  "app": {
+    "number": 6,
+    "name": "Podio",
+    "category": "CRM and Sales",
+    "hint": "podio.com"
+  },
+  "replayed_at": "2026-11-23T18:41:01.607383+00:00",
+  "source_passes": [
+    "data/pass2/006.json",
+    "data/pass4/006.json"
+  ],
+  "source_searches": [
+    "data/new_search/006.json",
+    "data/pass4_search/006.json"
+  ],
+  "publication_date_note": "Search publication labels are retained exactly; null means no label was available. Relative labels are not exact dates.",
+  "claims": {
+    "auth": {
+      "value": [
+        "OAuth 2.0",
+        "API key"
+      ],
+      "status": "provisional",
+      "sources": [
+        "https://developers.podio.com/authentication",
+        "https://developers.podio.com/authentication/server_side",
+        "https://developers.podio.com/doc/oauth-authorization/get-access-token-22359",
+        "https://developers.podio.com/api-key",
+        "https://developers.podio.com/doc/oauth-authorization",
+        "https://developers.podio.com/authentication/username_password",
+        "https://developers.podio.com/index/api"
+      ],
+      "evidence": [
+        {
+          "value": "OAuth 2.0",
+          "url": "https://developers.podio.com/authentication",
+          "excerpt": "Authentication - Podio API Documentation Getting started Get an API key Authentication Scopes & Permissions Server-side flow Client-side flow Username & password flow App authentication flow API Reference Tutorials Client Libraries Developer Forums Partner Extensions Terms of Use",
+          "published_label": null
+        },
+        {
+          "value": "API key",
+          "url": "https://developers.podio.com/authentication",
+          "excerpt": "Authentication - Podio API Documentation Getting started Get an API key Authentication Scopes & Permissions Server-side flow Client-side flow Username & password flow App authentication flow API Reference Tutorials Client Libraries Developer",
+          "published_label": null
+        },
+        {
+          "value": "OAuth 2.0",
+          "url": "https://developers.podio.com/authentication/server_side",
+          "excerpt": "Authentication: Server-side flow - Podio API Documentation Getting started Get an API key Authentication Scopes & Permissions Server-side flow Client-side flow Username & password flow App authentication flow API Reference Tutorials Client Libraries Developer Forums Partner Exten",
+          "published_label": null
+        },
+        {
+          "value": "API key",
+          "url": "https://developers.podio.com/authentication/server_side",
+          "excerpt": "Authentication: Server-side flow - Podio API Documentation Getting started Get an API key Authentication Scopes & Permissions Server-side flow Client-side flow Username & password flow App authentication flow API Reference Tutorials Client Libraries Developer",
+          "published_label": null
+        },
+        {
+          "value": "OAuth 2.0",
+          "url": "https://developers.podio.com/doc/oauth-authorization/get-access-token-22359",
+          "excerpt": "OAuth authorization | Get access token - Podio API Documentation Getting started Get an API key Authentication API Reference Actions Alerts App market Applications Batch Calendar Comments Contacts Conversations Devices Email Embeds Files Flows Forms Friends Grants Hooks Importer ",
+          "published_label": null
+        },
+        {
+          "value": "API key",
+          "url": "https://developers.podio.com/doc/oauth-authorization/get-access-token-22359",
+          "excerpt": "OAuth authorization | Get access token - Podio API Documentation Getting started Get an API key Authentication API Reference Actions Alerts App market Applications Batch Calendar Comments Contacts Conversations Devices Email Embeds Files Flows Forms Friends Grants",
+          "published_label": null
+        },
+        {
+          "value": "API key",
+          "url": "https://developers.podio.com/api-key",
+          "excerpt": "Get API key - Podio API Documentation Getting started Get an API key Authentication API Reference Tutorials Client Libraries Developer Forums Partner Extensions Terms of Use Get API",
+          "published_label": null
+        },
+        {
+          "value": "OAuth 2.0",
+          "url": "https://developers.podio.com/doc/oauth-authorization",
+          "excerpt": "on Operations Get access token Get scope Invalidate grant Invalidate tokens This API uses OAuth 2.0 (http://oauth.net/2/) for authentication users of the API. Currently supported is draft-10 of the specification. It is recommended to read http://tools.ietf.org/html/dra",
+          "published_label": null
+        },
+        {
+          "value": "API key",
+          "url": "https://developers.podio.com/doc/oauth-authorization",
+          "excerpt": "OAuth authorization | API Documentation - Podio API Documentation Getting started Get an API key Authentication API Reference Actions Alerts App market Applications Batch Calendar Comments Contacts Conversations Devices Email Embeds Files Flows Forms Friends Grants",
+          "published_label": null
+        },
+        {
+          "value": "API key",
+          "url": "https://developers.podio.com/authentication/username_password",
+          "excerpt": "Authentication: Username & password flow - Podio API Documentation Getting started Get an API key Authentication Scopes & Permissions Server-side flow Client-side flow Username & password flow App authentication flow API Reference Tutorials Client Libraries Developer",
+          "published_label": null
+        },
+        {
+          "value": "OAuth 2.0",
+          "url": "https://developers.podio.com/index/api",
+          "excerpt": "Concepts and conventions: Conventions and structure of the API - Podio API Documentation Getting started The core concepts of Podio API conventions and structure Rate limits FAQ Get an API key Authentication API Reference Tutorials Client Libraries Developer Forums Partner Extens",
+          "published_label": null
+        },
+        {
+          "value": "API key",
+          "url": "https://developers.podio.com/index/api",
+          "excerpt": "g started The core concepts of Podio API conventions and structure Rate limits FAQ Get an API key Authentication API Reference Tutorials Client Libraries Developer Forums Partner Extensions Terms of Use Concepts and conventions: Conventions and structure of the API S",
+          "published_label": null
+        }
+      ],
+      "reason": "Provisional extraction; validate scope and completeness against cited pages."
+    },
+    "credential_gate": {
+      "value": "unknown",
+      "status": "provisional",
+      "sources": [],
+      "evidence": [],
+      "reason": "No sufficiently specific official evidence extracted."
+    },
+    "api_surface": {
+      "value": "unknown",
+      "status": "provisional",
+      "sources": [],
+      "evidence": [],
+      "reason": "No sufficiently specific official evidence extracted."
+    },
+    "official_mcp": {
+      "value": "unknown",
+      "status": "provisional",
+      "sources": [],
+      "evidence": [],
+      "reason": "No sufficiently specific official evidence extracted."
+    },
+    "composio_toolkit": {
+      "value": "listed",
+      "status": "provisional",
+      "sources": [
+        "https://docs.composio.dev/toolkits/podio"
+      ],
+      "evidence": [],
+      "reason": "Catalog match only; not vendor MCP evidence."
+    },
+    "verdict": {
+      "value": "unknown",
+      "status": "provisional",
+      "sources": [],
+      "evidence": [],
+      "reason": "No sufficiently specific official evidence extracted."
+    }
+  },
+  "validation": [
+    "Automatic extraction is provisional until independently reviewed",
+    "Unknown is not evidence of absence",
+    "Composio evidence cannot establish vendor MCP",
+    "Client-only and negated MCP statements are not vendor-server proof",
+    "API breadth is a text-coverage heuristic, not an endpoint census"
+  ]
+}

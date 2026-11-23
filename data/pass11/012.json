@@ -1,0 +1,189 @@
+{
+  "app": {
+    "number": 12,
+    "name": "Intercom",
+    "category": "Support and Helpdesk",
+    "hint": "intercom.com"
+  },
+  "replayed_at": "2026-11-23T18:45:07.747571+00:00",
+  "source_passes": [
+    "data/pass2/012.json",
+    "data/pass4/012.json"
+  ],
+  "source_searches": [
+    "data/new_search/012.json",
+    "data/pass4_search/012.json"
+  ],
+  "publication_date_note": "Search publication labels are retained exactly; null means no label was available. Relative labels are not exact dates.",
+  "claims": {
+    "auth": {
+      "value": [
+        "API key",
+        "API token",
+        "Bearer token",
+        "OAuth 2.0"
+      ],
+      "status": "provisional",
+      "sources": [
+        "https://developers.intercom.com/docs/build-an-integration/learn-more/authentication",
+        "https://developers.intercom.com/docs/references/preview/rest-api/api.intercom.io/auth-tokens",
+        "https://developers.intercom.com/docs/guides/mcp",
+        "https://www.intercom.com/help/en/articles/9071694-intercom-developer-faqs",
+        "https://www.intercom.com/help/en/articles/11461635-add-mcp-connectors-for-popular-apps-or-custom-mcps"
+      ],
+      "evidence": [
+        {
+          "value": "API key",
+          "url": "https://developers.intercom.com/docs/build-an-integration/learn-more/authentication",
+          "excerpt": "ata (for example, through an integration you've built) You currently ask people for their API Keys to request resources on their behalf You want to make it easier for your customers to share their customers' data with you OAuth Flow Getting Started with OAuth To set",
+          "published_label": null
+        },
+        {
+          "value": "API key",
+          "url": "https://developers.intercom.com/docs/references/preview/rest-api/api.intercom.io/auth-tokens",
+          "excerpt": "tring or null The name given to the credential when it was created. Example : \"Fulfilment API key\" description string or null An optional description of what the credential is used for. Example : \"Used by the order status connector\" token_type string or null How the",
+          "published_label": null
+        },
+        {
+          "value": "API token",
+          "url": "https://developers.intercom.com/docs/guides/mcp",
+          "excerpt": ": Browser-based authentication with a consent step, described below Bearer Token : Direct API token authentication What to expect during OAuth When you connect a client with OAuth, your browser shows two screens in order: The Intercom MCP consent page. This names the a",
+          "published_label": null
+        },
+        {
+          "value": "Bearer token",
+          "url": "https://developers.intercom.com/docs/guides/mcp",
+          "excerpt": "e the connection acts as: the admin who authorized an OAuth connection, or the teammate a Bearer token belongs to. The author can't be set per call. update_article Update an existing article. At least one field to update must be provided. Required Parameters: id : The art",
+          "published_label": null
+        },
+        {
+          "value": "API token",
+          "url": "https://www.intercom.com/help/en/articles/9071694-intercom-developer-faqs",
+          "excerpt": "Intercom developer FAQs | Intercom Help Skip to main content Overview Getting Started Operator Fin AI Agent Channels Inbox Workflows Knowledge Reports Outbound Contacts Workforce Management Apps & Integrations Mobile SDKs Community Academy Security & Privacy Use this article to s",
+          "published_label": null
+        },
+        {
+          "value": "OAuth 2.0",
+          "url": "https://www.intercom.com/help/en/articles/11461635-add-mcp-connectors-for-popular-apps-or-custom-mcps",
+          "excerpt": "pes (OAuth or Token based). Security Connecting Fin to external systems is done securely: OAuth 2.0: Connections to third-party MCP servers are authenticated using OAuth 2.0 , an industry-standard protocol for authorization. Granular Permissions: During the OAuth proce",
+          "published_label": null
+        }
+      ],
+      "reason": "Provisional extraction; validate scope and completeness against cited pages."
+    },
+    "credential_gate": {
+      "value": "unknown",
+      "status": "provisional",
+      "sources": [],
+      "evidence": [],
+      "reason": "No sufficiently specific official evidence extracted."
+    },
+    "api_surface": {
+      "value": "REST; broad documented surface",
+      "status": "provisional",
+      "sources": [
+        "https://developers.intercom.com/docs/build-an-integration/learn-more/authentication",
+        "https://developers.intercom.com/docs/references/preview/rest-api/api.intercom.io/auth-tokens",
+        "https://developers.intercom.com/docs/guides/mcp",
+        "https://developers.intercom.com/docs",
+        "https://developers.intercom.com/docs/references/introduction"
+      ],
+      "evidence": [
+        {
+          "value": [
+            "REST"
+          ],
+          "breadth": "moderate",
+          "url": "https://developers.intercom.com/docs/build-an-integration/learn-more/authentication",
+          "excerpt": "Authentication | Intercom and Fin Developer Platform Skip to content Version All versions Get Started Overview Set up a Workspace Authentication Build an App Build a Messenger App Build an App using Sheets Build an Inbox App Developer Guides Messenger Inbox Contacts Tickets Help ",
+          "published_label": null
+        },
+        {
+          "value": [
+            "REST"
+          ],
+          "breadth": "broad",
+          "url": "https://developers.intercom.com/docs/references/preview/rest-api/api.intercom.io/auth-tokens",
+          "excerpt": "Auth Tokens | Intercom and Fin Developer Platform Skip to content Version Preview Get Started Overview Set up a Workspace Authentication Build an App Build a Messenger App Build an App using Sheets Build an Inbox App Developer Guides Messenger Inbox Contacts Tickets Help Center R",
+          "published_label": null
+        },
+        {
+          "value": [
+            "REST"
+          ],
+          "breadth": "broad",
+          "url": "https://developers.intercom.com/docs/guides/mcp",
+          "excerpt": "Model Context Protocol (MCP) | Intercom and Fin Developer Platform Skip to content Version All versions Get Started Overview Set up a Workspace Authentication Build an App Build a Messenger App Build an App using Sheets Build an Inbox App Developer Guides Messenger Inbox Contacts",
+          "published_label": null
+        },
+        {
+          "value": [
+            "REST"
+          ],
+          "breadth": "broad",
+          "url": "https://developers.intercom.com/docs",
+          "excerpt": "Overview | Intercom and Fin Developer Platform Skip to content Version All versions Get Started Overview Set up a Workspace Authentication Build an App Build a Messenger App Build an App using Sheets Build an Inbox App Developer Guides Messenger Inbox Contacts Tickets Help Center",
+          "published_label": null
+        },
+        {
+          "value": [
+            "REST"
+          ],
+          "breadth": "broad",
+          "url": "https://developers.intercom.com/docs/references/introduction",
+          "excerpt": "Introduction | Intercom and Fin Developer Platform Skip to content Version v2.18 Get Started Overview Set up a Workspace Authentication Build an App Build a Messenger App Build an App using Sheets Build an Inbox App Developer Guides Messenger Inbox Contacts Tickets Help Center Re",
+          "published_label": null
+        }
+      ],
+      "reason": "Provisional extraction; validate scope and completeness against cited pages."
+    },
+    "official_mcp": {
+      "value": "unknown",
+      "status": "provisional",
+      "sources": [
+        "https://developers.intercom.com/docs/guides/mcp",
+        "https://www.intercom.com/help/en/articles/11461635-add-mcp-connectors-for-popular-apps-or-custom-mcps"
+      ],
+      "evidence": [
+        {
+          "value": "vendor_server",
+          "url": "https://developers.intercom.com/docs/guides/mcp",
+          "excerpt": "ely access and interact with your Intercom data whenever helpful. Region availability The Intercom MCP server is available for US and EU hosted workspaces. AU hosted workspaces are not yet supported. Connect using the endpoint that matches your workspace's hosted region — see the connection",
+          "published_label": null,
+          "context_note": "Vendor-owned server statement; review date and access scope."
+        },
+        {
+          "value": "client_only",
+          "url": "https://www.intercom.com/help/en/articles/11461635-add-mcp-connectors-for-popular-apps-or-custom-mcps",
+          "excerpt": "Add MCP connectors for popular apps or custom MCPs | Intercom Help Skip to main content Overview Getting Started Operator Fin AI Agent Channels Inbox Workflows Knowledge Reports Outbound Contacts Workforce Management Apps & Integrations Mobile SDKs Community Academy Security & Privacy Fin can now connect directly to your other business tools, like project management (Linear) or billing s",
+          "published_label": null,
+          "context_note": "Passage describes a client connection to external servers."
+        }
+      ],
+      "reason": "Conflicting or undated MCP evidence requires review."
+    },
+    "composio_toolkit": {
+      "value": "listed",
+      "status": "provisional",
+      "sources": [
+        "https://docs.composio.dev/toolkits/intercom"
+      ],
+      "evidence": [],
+      "reason": "Catalog match only; not vendor MCP evidence."
+    },
+    "verdict": {
+      "value": "unknown",
+      "status": "provisional",
+      "sources": [],
+      "evidence": [],
+      "reason": "No sufficiently specific official evidence extracted."
+    }
+  },
+  "validation": [
+    "Automatic extraction is provisional until independently reviewed",
+    "Unknown is not evidence of absence",
+    "Composio evidence cannot establish vendor MCP",
+    "Client-only and negated MCP statements are not vendor-server proof",
+    "API breadth is a text-coverage heuristic, not an endpoint census"
+  ]
+}

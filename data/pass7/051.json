@@ -1,0 +1,122 @@
+{
+  "app": {
+    "number": 51,
+    "name": "DataForSEO",
+    "category": "Data, SEO and Scraping",
+    "hint": "docs.dataforseo.com"
+  },
+  "replayed_at": "2026-11-23T18:19:19.100685+00:00",
+  "source_passes": [
+    "data/pass2/051.json",
+    "data/pass4/051.json"
+  ],
+  "source_search": "data/new_search/051.json",
+  "publication_date_note": "Published labels are retained exactly as supplied by search; missing labels are null. Relative labels must not be treated as exact publication dates.",
+  "claims": {
+    "auth": {
+      "value": [
+        "API token",
+        "Basic authentication",
+        "API key"
+      ],
+      "sources": [
+        "https://docs.dataforseo.com/v3/auth/",
+        "https://dataforseo.com/help-center/how-to-authenticate-with-dataforseo-google-search-serp-api-api-key-setup-and-code-examples"
+      ],
+      "evidence": [
+        {
+          "value": "API token",
+          "url": "https://docs.dataforseo.com/v3/auth/",
+          "excerpt": ", REST API platforms, and all major frameworks. Regardless of the programming language, your unique API token should be passed in the ‘Authorization’ header within the request in the following format: Authorization: Basic login:password Instead of “login” and “password”, use your API cred",
+          "published_label": null
+        },
+        {
+          "value": "Basic authentication",
+          "url": "https://docs.dataforseo.com/v3/auth/",
+          "excerpt": "ed automatically by DataForSEO and is different from your account password. DataForSEO is using the Basic Authentication , which makes it possible to call our APIs with almost any programming language, Postman app, REST API platforms, and all major frameworks. Regardless of the programming language,",
+          "published_label": null
+        },
+        {
+          "value": "API key",
+          "url": "https://dataforseo.com/help-center/how-to-authenticate-with-dataforseo-google-search-serp-api-api-key-setup-and-code-examples",
+          "excerpt": "How to Authenticate with DataForSEO Google Search SERP API: API Key Setup and Code Examples – DataForSEO Help Center Search the Help Center Search Can’t find an answer? Get AI guidance on your account, billing, or implementation. AI Chat → Add as ",
+          "published_label": null
+        },
+        {
+          "value": "Basic authentication",
+          "url": "https://dataforseo.com/help-center/how-to-authenticate-with-dataforseo-google-search-serp-api-api-key-setup-and-code-examples",
+          "excerpt": "stom GPTs, and cURL. The setup is simpler than the words around it suggest, even if API key, token, Basic Auth, and Base64 sound intimidating when you’re not a developer. Authentication is one of the easier parts of working with our APIs. You set up one credential pair, encode it once, and",
+          "published_label": null
+        }
+      ],
+      "reason": "Provisional extraction: validate scope and completeness against the cited page."
+    },
+    "credential_gate": {
+      "value": "unknown",
+      "sources": [],
+      "evidence": [],
+      "reason": "No sufficiently specific positive evidence extracted; review targeted search results."
+    },
+    "api_surface": {
+      "value": [
+        "REST"
+      ],
+      "sources": [
+        "https://docs.dataforseo.com/v3/auth/",
+        "https://dataforseo.com/blog/a-kickstart-guide-to-using-dataforseo-apis"
+      ],
+      "evidence": [
+        {
+          "value": "REST",
+          "url": "https://docs.dataforseo.com/v3/auth/",
+          "excerpt": "ation , which makes it possible to call our APIs with almost any programming language, Postman app, REST API platforms, and all major frameworks. Regardless of the programming language, your unique API token should be passed in the ‘Authorization’ header within the request in the followi",
+          "published_label": null
+        },
+        {
+          "value": "REST",
+          "url": "https://dataforseo.com/blog/a-kickstart-guide-to-using-dataforseo-apis",
+          "excerpt": "arning more about APIs for SEO software development, check out this informative blog post. What are REST APIs DataForSEO specializes in REST APIs . REST, or Representational State Transfer, is the most popular approach to building web APIs based on six principles: Uniform interface (UI) –",
+          "published_label": "2.8 years ago"
+        }
+      ],
+      "reason": "Provisional extraction: validate scope and completeness against the cited page."
+    },
+    "official_mcp": {
+      "value": "yes (provisional)",
+      "sources": [
+        "https://dataforseo.com/help-center/dataforseo-new-mcp-server-and-cli-connection-a-quickstart-guide"
+      ],
+      "evidence": [
+        {
+          "value": "yes (provisional)",
+          "url": "https://dataforseo.com/help-center/dataforseo-new-mcp-server-and-cli-connection-a-quickstart-guide",
+          "excerpt": "DataForSEO New MCP Server and CLI Connection: A Quickstart Guide – DataForSEO Help Center Search the Help Center Search Can’t find an answer? Get AI guidance on your account, billing, o",
+          "published_label": "3 months ago",
+          "context_warning": "Review vendor ownership, dates, and scope."
+        }
+      ],
+      "reason": "Provisional; check source date, scope, and vendor ownership."
+    },
+    "composio_toolkit": {
+      "value": "listed",
+      "sources": [
+        "https://docs.composio.dev/toolkits/dataforseo"
+      ],
+      "evidence": [],
+      "reason": "Catalog match; scope needs review."
+    },
+    "verdict": {
+      "value": "unknown",
+      "sources": [],
+      "evidence": [],
+      "reason": "A supported access path, authentication method and API surface were not all extracted."
+    }
+  },
+  "validation": [
+    "Automatic extraction is provisional and not a verified final claim",
+    "Unknown is not evidence of absence",
+    "No Composio-to-vendor-MCP inference",
+    "Basic authentication may be endpoint-specific",
+    "Client-only and negated statements are not positive MCP evidence"
+  ]
+}

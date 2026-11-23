@@ -1,0 +1,1983 @@
+{
+  "checked_at": "2026-11-24",
+  "method": "Headless Chromium rendered body innerText; no raw HTML or credentials.",
+  "results": [
+    {
+      "url": "https://aircall.io/pricing/",
+      "uses": [
+        {
+          "app": "Aircall",
+          "field": "credential_gate",
+          "claim_status": "checked",
+          "quote": "All plans include API access and 250+ integrations. Aircall also offers an open API and webhook framework for custom integrations.",
+          "quote_exact": true,
+          "quote_token_exact": true,
+          "raw_html_only_match": true,
+          "start_fragment_found": false,
+          "end_fragment_found": false,
+          "excerpt": "th 250+ tools including Salesforce, HubSpot, Zendesk, Intercom, Pipedrive, Microsoft Dynamics, Shopify, and Monday.com. All plans include API access and 250+ integrations. Aircall also offers an open API and webhook framework for custom integrations. Does Aircall offer annual and monthly billing? Yes. Aircall offers both annual and monthly billing. Annual plans include a 25% discount compared to monthly pricing. All plans require a minimum of 3 licenses regardless of billing cycle. Ready for better conversations? GET FREE ACCESS TALK TO SALES The customer communication and intelligence platform FOLLOW US MOBILE A"
+        },
+        {
+          "app": "Aircall",
+          "field": "credential_gate",
+          "claim_status": "checked",
+          "quote": "All plans require a minimum of 3 licenses regardless of billing cycle.",
+          "quote_exact": true,
+          "quote_token_exact": true,
+          "raw_html_only_match": true,
+          "start_fragment_found": false,
+          "end_fragment_found": false,
+          "excerpt": "? Yes. Aircall offers both annual and monthly billing. Annual plans include a 25% discount compared to monthly pricing. All plans require a minimum of 3 licenses regardless of billing cycle. Ready for better conversations? GET FREE ACCESS TALK TO SALES The customer communication and intelligence platform FOLLOW US MOBILE APP Solutions CALL CENTER SUPPORT SALES PHONE SYSTEM ECOMMERCE NON-PROFITS Product INTEGRATIONS QUALITY AND RELIABILITY APPS PRICING COUNTRY COVERAGE LOCAL PHONE NUMBERS Features POWERDIALER IVR CALL ROUTING CALL CENTER ANALYTICS CTI INTEGRATION CLICK TO DIAL WHATSAPP IN AIRCALL AI Agents AI VOIC"
+        },
+        {
+          "app": "Aircall",
+          "field": "verdict",
+          "claim_status": "checked",
+          "quote": "All plans include API access and 250+ integrations. Aircall also offers an open API and webhook framework for custom integrations.",
+          "quote_exact": true,
+          "quote_token_exact": true,
+          "raw_html_only_match": true,
+          "start_fragment_found": false,
+          "end_fragment_found": false,
+          "excerpt": "th 250+ tools including Salesforce, HubSpot, Zendesk, Intercom, Pipedrive, Microsoft Dynamics, Shopify, and Monday.com. All plans include API access and 250+ integrations. Aircall also offers an open API and webhook framework for custom integrations. Does Aircall offer annual and monthly billing? Yes. Aircall offers both annual and monthly billing. Annual plans include a 25% discount compared to monthly pricing. All plans require a minimum of 3 licenses regardless of billing cycle. Ready for better conversations? GET FREE ACCESS TALK TO SALES The customer communication and intelligence platform FOLLOW US MOBILE A"
+        },
+        {
+          "app": "Aircall",
+          "field": "verdict",
+          "claim_status": "checked",
+          "quote": "All plans require a minimum of 3 licenses regardless of billing cycle.",
+          "quote_exact": true,
+          "quote_token_exact": true,
+          "raw_html_only_match": true,
+          "start_fragment_found": false,
+          "end_fragment_found": false,
+          "excerpt": "? Yes. Aircall offers both annual and monthly billing. Annual plans include a 25% discount compared to monthly pricing. All plans require a minimum of 3 licenses regardless of billing cycle. Ready for better conversations? GET FREE ACCESS TALK TO SALES The customer communication and intelligence platform FOLLOW US MOBILE APP Solutions CALL CENTER SUPPORT SALES PHONE SYSTEM ECOMMERCE NON-PROFITS Product INTEGRATIONS QUALITY AND RELIABILITY APPS PRICING COUNTRY COVERAGE LOCAL PHONE NUMBERS Features POWERDIALER IVR CALL ROUTING CALL CENTER ANALYTICS CTI INTEGRATION CLICK TO DIAL WHATSAPP IN AIRCALL AI Agents AI VOIC"
+        }
+      ],
+      "status": 200,
+      "final_url": "https://aircall.io/pricing/",
+      "title": "Aircall Pricing & Plans: AI-Powered Calling, Voice Agents & 250+ Integrations | Aircall"
+    },
+    {
+      "url": "https://commas.com/",
+      "uses": [
+        {
+          "app": "fanbasis",
+          "field": "official_mcp",
+          "claim_status": "checked",
+          "quote": "MCP beta Run Commas from your AI assistant. Create checkout links, issue refunds and pull your numbers in plain English.",
+          "quote_exact": true,
+          "quote_token_exact": true,
+          "raw_html_only_match": false,
+          "start_fragment_found": false,
+          "end_fragment_found": false,
+          "excerpt": "multi-rail payouts, APIs and SDKs. Everything you'd replace Stripe with, plus BNPL, recovery and lower effective rates. MCP beta Run Commas from your AI assistant. Create checkout links, issue refunds and pull your numbers in plain English. Qualifier Enriches every lead with income, credit and net worth, so your closers chase the right buyers and your checkout offers the right financing. Testimonials Online businesses that left broken stacks Switching to Commas helped them recover lost revenue, simplify their stack, and scale without friction. When I look at a platform, I look at whether it can scale and whether "
+        }
+      ],
+      "status": 200,
+      "final_url": "https://commas.com/",
+      "title": "Commas | Where you make money on the internet"
+    },
+    {
+      "url": "https://developer.helpscout.com/llms.txt",
+      "uses": [
+        {
+          "app": "Help Scout",
+          "field": "api_surface",
+          "claim_status": "checked",
+          "quote": "## Inbox API 2.0 (Primary API)\n\nThe primary REST API for managing Help Scout conversations, customers, and support operations.",
+          "quote_exact": false,
+          "quote_token_exact": false,
+          "raw_html_only_match": false,
+          "start_fragment_found": false,
+          "end_fragment_found": true,
+          "excerpt": ""
+        }
+      ],
+      "status": 200,
+      "final_url": "https://developer.helpscout.com/llms.txt",
+      "title": ""
+    },
+    {
+      "url": "https://developer.intuit.com/app/developer/qbo/docs/release-notes/general-release-notes",
+      "uses": [
+        {
+          "app": "QuickBooks",
+          "field": "official_mcp",
+          "claim_status": "checked",
+          "quote": "We've introduced Intuit Developer Plugin, an AI-assisted tool to help set up your developer workspace, create an app, configure scopes, authenticate, and make your first QuickBooks API call. See Build with Intuit Developer Plugin to get started.",
+          "quote_exact": false,
+          "quote_token_exact": false,
+          "raw_html_only_match": false,
+          "start_fragment_found": false,
+          "end_fragment_found": false,
+          "excerpt": ""
+        }
+      ],
+      "status": 200,
+      "final_url": "https://developer.intuit.com/app/developer/qbo/docs/release-notes/general-release-notes",
+      "title": "Intuit Developer"
+    },
+    {
+      "url": "https://developer.salesforce.com/docs/commerce/commerce-api/guide/authorization-for-admin-apis.html",
+      "uses": [
+        {
+          "app": "Salesforce Commerce Cloud",
+          "field": "auth",
+          "claim_status": "checked",
+          "quote": "Note that only the client_credentials grant type is supported for accessing SCAPI Admin APIs.",
+          "quote_exact": true,
+          "quote_token_exact": true,
+          "excerpt": ""
+        },
+        {
+          "app": "Salesforce Commerce Cloud",
+          "field": "credential_gate",
+          "claim_status": "checked",
+          "quote": "To use the SCAPI Admin APIs, you (or someone with administrator access) must first create an API client by following these steps:",
+          "quote_exact": true,
+          "quote_token_exact": true,
+          "excerpt": "this guide and read on. Your list is needed when it comes time to populate the Allowed Scopes field in Account Manager. To use the SCAPI Admin APIs, you (or someone with administrator access) must first create an API client by following these steps: Log in to Account Manager. Click API Client from the left navigation. Click Add API Client. In the Display Name field, enter unique and descriptive name for the API client. Example: Admin Client for Pia Larson. In the Password field, enter a secure password. In the Confirm Password field, reenter the password. Save the password (also known as the client secret) in a p"
+        },
+        {
+          "app": "Salesforce Commerce Cloud",
+          "field": "api_surface",
+          "claim_status": "checked",
+          "quote": "With an access token from Account Manager (and the correct scopes), access any of the SCAPI Admin APIs, including:",
+          "quote_exact": true,
+          "quote_token_exact": true,
+          "excerpt": "e is supported for accessing SCAPI Admin APIs. A successful request returns your access token as part of a JSON object: With an access token from Account Manager (and the correct scopes), access any of the SCAPI Admin APIs, including: Assignments, Catalogs, Customers, Inventory Availability, Orders, Products, and 8 more. Now that you have set up your API client in Account Manager and know how to get an access token for SCAPI Admin APIs, it's time to make some API requests! Learn how to formulate your API requests with the last guide in the Get Started series: Base URL and Request Formation. To learn how to access"
+        },
+        {
+          "app": "Salesforce Commerce Cloud",
+          "field": "verdict",
+          "claim_status": "checked",
+          "quote": "To use the SCAPI Admin APIs, you (or someone with administrator access) must first create an API client by following these steps:",
+          "quote_exact": true,
+          "quote_token_exact": true,
+          "excerpt": "this guide and read on. Your list is needed when it comes time to populate the Allowed Scopes field in Account Manager. To use the SCAPI Admin APIs, you (or someone with administrator access) must first create an API client by following these steps: Log in to Account Manager. Click API Client from the left navigation. Click Add API Client. In the Display Name field, enter unique and descriptive name for the API client. Example: Admin Client for Pia Larson. In the Password field, enter a secure password. In the Confirm Password field, reenter the password. Save the password (also known as the client secret) in a p"
+        },
+        {
+          "app": "Salesforce Commerce Cloud",
+          "field": "verdict",
+          "claim_status": "checked",
+          "quote": "With an access token from Account Manager (and the correct scopes), access any of the SCAPI Admin APIs, including:",
+          "quote_exact": true,
+          "quote_token_exact": true,
+          "excerpt": "e is supported for accessing SCAPI Admin APIs. A successful request returns your access token as part of a JSON object: With an access token from Account Manager (and the correct scopes), access any of the SCAPI Admin APIs, including: Assignments, Catalogs, Customers, Inventory Availability, Orders, Products, and 8 more. Now that you have set up your API client in Account Manager and know how to get an access token for SCAPI Admin APIs, it's time to make some API requests! Learn how to formulate your API requests with the last guide in the Get Started series: Base URL and Request Formation. To learn how to access"
+        }
+      ],
+      "status": 200,
+      "final_url": "https://developer.salesforce.com/docs/commerce/commerce-api/guide/authorization-for-admin-apis.html",
+      "title": "Authorization for SCAPI Admin APIs | SCAPI | B2C Commerce API | Salesforce Developers"
+    },
+    {
+      "url": "https://developer.salesforce.com/docs/commerce/commerce-api/guide/authorization-for-shopper-apis.html",
+      "uses": [
+        {
+          "app": "Salesforce Commerce Cloud",
+          "field": "auth",
+          "claim_status": "checked",
+          "quote": "Shopper APIs are secured with the Shopper Login and API Access Service (SLAS), but SCAPI Admin APIs are secured with Account Manager (AM) instead.",
+          "quote_exact": true,
+          "quote_token_exact": true,
+          "excerpt": "n how to set up the Shopper Login and API Access Service (SLAS) so that you can request access tokens for Shopper APIs. Shopper APIs are secured with the Shopper Login and API Access Service (SLAS), but SCAPI Admin APIs are secured with Account Manager (AM) instead. This guide only covers how to access the Shopper APIs. To learn how to access the SCAPI Admin APIs, see Authorization for Admin APIs. To get you up and running as fast as possible, the instructions provided here use a web application called the SLAS Admin UI. If you require additional configuration options or are building automated setup tools, also u"
+        },
+        {
+          "app": "Salesforce Commerce Cloud",
+          "field": "auth",
+          "claim_status": "checked",
+          "quote": "Choosing PWA Kit or SFRA or Mobile creates a public client (no secret generated). Choosing BFF or Web App creates a private client (secret generated automatically).",
+          "quote_exact": true,
+          "quote_token_exact": true,
+          "excerpt": " Choose Tenant... and select a B2C Commerce instance. Select an app type with the \"Which App Type will be used?\" field: Choosing PWA Kit or SFRA or Mobile creates a public client (no secret generated). Choosing BFF or Web App creates a private client (secret generated automatically). Click Submit. Now use your SLAS client to request an access token for Shopper APIs. If your app type is BFF or Web App (private client), the automatically generated secret is displayed at the top of the results page. To initialize an Agentforce session, obtain a SLAS shopper access token that includes the sfcc.shopper-agents.rw scope"
+        },
+        {
+          "app": "Salesforce Commerce Cloud",
+          "field": "credential_gate",
+          "claim_status": "checked",
+          "quote": "The Account Administrator role in Account Manager. If you get stuck, ask an administrator on your team for help or contact Support.",
+          "quote_exact": true,
+          "quote_token_exact": true,
+          "excerpt": "building automated setup tools, also use the SLAS Admin API instead of the UI. To do this task, you need: Your AM token The Account Administrator role in Account Manager. If you get stuck, ask an administrator on your team for help or contact Support. For each user performing the SLAS administration tasks described in this guide, follow these steps to set up their roles and filters: Log in to Account Manager. Click User from the left navigation. Click the user's ID. Scroll down to Roles and click Add. Enter \"slas\" in the filter search box. (If you see no results, the role has likely been added already, so click C"
+        }
+      ],
+      "status": 200,
+      "final_url": "https://developer.salesforce.com/docs/commerce/commerce-api/guide/authorization-for-shopper-apis.html",
+      "title": "Authorization for Shopper APIs | SCAPI | B2C Commerce API | Salesforce Developers"
+    },
+    {
+      "url": "https://developer.salesforce.com/docs/commerce/sfra/guide/b2c-developer-tooling.html",
+      "uses": [
+        {
+          "app": "Salesforce Commerce Cloud",
+          "field": "official_mcp",
+          "claim_status": "checked",
+          "quote": "B2C MCP: Connect your assistant to B2C Commerce tools, official documentation search, and workflow skills. Investigate issues, debug live cartridge code, or work with B2C Commerce data through SCAPI Admin APIs.",
+          "quote_exact": true,
+          "quote_token_exact": true,
+          "excerpt": ""
+        },
+        {
+          "app": "Salesforce Commerce Cloud",
+          "field": "official_mcp",
+          "claim_status": "checked",
+          "quote": "For clients that require manual MCP configuration, use npx with arguments --yes @salesforce/b2c-dx-mcp as the local server command.",
+          "quote_exact": true,
+          "quote_token_exact": true,
+          "excerpt": "MCP guide for complete setup instructions and supported AI assistants. The plugins use the open Agent Plugins standard. For clients that require manual MCP configuration, use npx with arguments --yes @salesforce/b2c-dx-mcp as the local server command. The MCP provides official B2C Commerce documentation search, live cartridge debugging, log investigation, deployment tools, and general-purpose SCAPI Admin API access. Your assistant can combine API requests and summarize the results, such as reviewing products and their category assignments. Available actions depend on the credentials and permissions you configure."
+        }
+      ],
+      "status": 200,
+      "final_url": "https://developer.salesforce.com/docs/commerce/sfra/guide/b2c-developer-tooling.html",
+      "title": "Agentic B2C Developer Toolkit | B2C Commerce | B2C Commerce Storefront Reference Architecture | Salesforce Developers"
+    },
+    {
+      "url": "https://developer.vonage.com/en/messages/overview",
+      "uses": [
+        {
+          "app": "Vonage",
+          "field": "api_surface",
+          "claim_status": "checked",
+          "quote": "The Vonage Messages API integrates with SMS, MMS, RCS, WhatsApp, Messenger, Viber, and Email allowing you to communicate with your customers on the channels they like.",
+          "quote_exact": true,
+          "quote_token_exact": true,
+          "raw_html_only_match": true,
+          "start_fragment_found": false,
+          "end_fragment_found": false,
+          "excerpt": "nd payments Troubleshooting & error codes Try it out Pricing Related Blog Posts Documentation Messages API Messages API The Vonage Messages API integrates with SMS, MMS, RCS, WhatsApp, Messenger, Viber, and Email allowing you to communicate with your customers on the channels they like. Multichannel communication Multimedia messaging Cost-effective chat experience Easily develop and test Get instant access to insights JWT authentication See pricing Try it out Use cases SDKs API Reference Ready to Start Building ? Experience seamless connectivity, real-time messaging, and crystal-clear voice and video calls-all at"
+        }
+      ],
+      "status": 200,
+      "final_url": "https://developer.vonage.com/en/messages/overview",
+      "title": "Vonage Messages API (SMS & MMS) | Vonage API Documentation"
+    },
+    {
+      "url": "https://developer.xero.com/faq",
+      "uses": [
+        {
+          "app": "Xero",
+          "field": "auth",
+          "claim_status": "checked",
+          "quote": "The Xero API does not support basic API Key authentication. Our API uses OAuth 2.0 which means you need to register your app to get a client id and client secret which you use to access the API.",
+          "quote_exact": true,
+          "quote_token_exact": true,
+          "raw_html_only_match": false,
+          "start_fragment_found": false,
+          "end_fragment_found": false,
+          "excerpt": "ss or refresh tokens. You will however need a ClientID and a Client Secret. Getting started Can you give me an API key? The Xero API does not support basic API Key authentication. Our API uses OAuth 2.0 which means you need to register your app to get a client id and client secret which you use to access the API. How can I try out the API? The quickest way to try out the API is to set up your demo company and dive into the API Explorer . Most of the API functionality is supported and you can quickly start playing with real calls against demo data. How do I connect Xero to my Salesforce/SQL Database/thing you have"
+        },
+        {
+          "app": "Xero",
+          "field": "auth",
+          "claim_status": "checked",
+          "quote": "No, we've implemented short-lived tokens with long-lived authorizations as is best practice for OAuth 2.0. All Xero access tokens expire after 30 minutes. Refresh tokens allow your app to obtain new access tokens without involving a user again. Alternatively, if you'd prefer not to have to manage a refresh token, you might be interested in the premium, Custom Connection option. It utilises the client credentials grant type and only requires your client id and client secret to request new access tokens.",
+          "quote_exact": true,
+          "quote_token_exact": true,
+          "raw_html_only_match": false,
+          "start_fragment_found": false,
+          "end_fragment_found": false,
+          "excerpt": ""
+        },
+        {
+          "app": "Xero",
+          "field": "api_surface",
+          "claim_status": "checked",
+          "quote": "We've got SDKs to cover the most used technologies in the community, but we'll never cater for everyone. If we don't support your particular tech then check out our developer forum archive , or connect with other developers on Stack Overflow . You can also use our OpenAPI spec to generate your own SDK.",
+          "quote_exact": true,
+          "quote_token_exact": true,
+          "raw_html_only_match": false,
+          "start_fragment_found": false,
+          "end_fragment_found": false,
+          "excerpt": ""
+        },
+        {
+          "app": "Xero",
+          "field": "api_surface",
+          "claim_status": "checked",
+          "quote": "You can do more than one thing in a single request: For example, you can create more than one Invoice in a single PUT or POST Invoices API call.",
+          "quote_exact": true,
+          "quote_token_exact": true,
+          "raw_html_only_match": true,
+          "start_fragment_found": false,
+          "end_fragment_found": false,
+          "excerpt": "ro API rate limits, can in fact work within the limits by analysing the structure of how you intend to use the Xero API You can do more than one thing in a single request: For example, you can create more than one Invoice in a single PUT or POST Invoices API call. While there is no upper limit in the number of nodes that can be sent at one time, a ceiling of about 50 nodes per request is practical - this will ensure a request does not exceed the maximum size of 3.5MB. You should also review our notes on summarizing validation errors . What if I need to retrieve large amounts of data from Xero? If you are hitting "
+        },
+        {
+          "app": "Xero",
+          "field": "api_surface",
+          "claim_status": "checked",
+          "quote": "You can use pagination to retrieve line item details for 100 items (e.g. Invoices) at a time. Endpoints on the Accounting API that currently support pagination include invoices , contacts , bank transactions and manual journals . All major endpoints on the Payroll, Files and Assets APIs also support paging.",
+          "quote_exact": true,
+          "quote_token_exact": true,
+          "raw_html_only_match": false,
+          "start_fragment_found": false,
+          "end_fragment_found": false,
+          "excerpt": "because you retrieve a large amount of data from Xero there are a couple of features you should be taking advantage of: You can use pagination to retrieve line item details for 100 items (e.g. Invoices) at a time. Endpoints on the Accounting API that currently support pagination include invoices , contacts , bank transactions and manual journals . All major endpoints on the Payroll, Files and Assets APIs also support paging. Use the If-Modified-Since header to retrieve only what's changed since your previous request What is the best way to handle rate limits on my side? If you exceed a rate limit you will receive"
+        },
+        {
+          "app": "Xero",
+          "field": "verdict",
+          "claim_status": "checked",
+          "quote": "The Xero API does not support basic API Key authentication. Our API uses OAuth 2.0 which means you need to register your app to get a client id and client secret which you use to access the API.",
+          "quote_exact": true,
+          "quote_token_exact": true,
+          "raw_html_only_match": false,
+          "start_fragment_found": false,
+          "end_fragment_found": false,
+          "excerpt": "ss or refresh tokens. You will however need a ClientID and a Client Secret. Getting started Can you give me an API key? The Xero API does not support basic API Key authentication. Our API uses OAuth 2.0 which means you need to register your app to get a client id and client secret which you use to access the API. How can I try out the API? The quickest way to try out the API is to set up your demo company and dive into the API Explorer . Most of the API functionality is supported and you can quickly start playing with real calls against demo data. How do I connect Xero to my Salesforce/SQL Database/thing you have"
+        },
+        {
+          "app": "Xero",
+          "field": "verdict",
+          "claim_status": "checked",
+          "quote": "You can use pagination to retrieve line item details for 100 items (e.g. Invoices) at a time. Endpoints on the Accounting API that currently support pagination include invoices , contacts , bank transactions and manual journals . All major endpoints on the Payroll, Files and Assets APIs also support paging.",
+          "quote_exact": true,
+          "quote_token_exact": true,
+          "raw_html_only_match": false,
+          "start_fragment_found": false,
+          "end_fragment_found": false,
+          "excerpt": "because you retrieve a large amount of data from Xero there are a couple of features you should be taking advantage of: You can use pagination to retrieve line item details for 100 items (e.g. Invoices) at a time. Endpoints on the Accounting API that currently support pagination include invoices , contacts , bank transactions and manual journals . All major endpoints on the Payroll, Files and Assets APIs also support paging. Use the If-Modified-Since header to retrieve only what's changed since your previous request What is the best way to handle rate limits on my side? If you exceed a rate limit you will receive"
+        }
+      ],
+      "status": 200,
+      "final_url": "https://developer.xero.com/faq",
+      "title": "Xero Developer Frequently asked questions — Xero Developer"
+    },
+    {
+      "url": "https://developer.xero.com/faq/AI-Toolkit",
+      "uses": [
+        {
+          "app": "Xero",
+          "field": "official_mcp",
+          "claim_status": "checked",
+          "quote": "Can I use any LLM to access the MCP Server? Xero's MCP Server will work with any MCP client that supports local/STDIO MCP servers. Depending on your MCP Client you might be able to support many different LLMs. All testing has been done using Claude Desktop and Cursor.",
+          "quote_exact": true,
+          "quote_token_exact": true,
+          "raw_html_only_match": false,
+          "start_fragment_found": false,
+          "end_fragment_found": false,
+          "excerpt": " Policy Updates Remote MCP Xero Ecosystem Security Requirements Update Xero Functionality Main content start AI Toolkit Can I use any LLM to access the MCP Server? Xero's MCP Server will work with any MCP client that supports local/STDIO MCP servers. Depending on your MCP Client you might be able to support many different LLMs. All testing has been done using Claude Desktop and Cursor. Do I need development experience for using the Agentic Toolkit? Yes, some development or programming experience is needed, as the toolkit consists of programmatic tools and APIs used to build AI agents. What is an AI Agent? An AI a"
+        }
+      ],
+      "status": 200,
+      "final_url": "https://developer.xero.com/faq/AI-Toolkit",
+      "title": "AI Toolkit FAQs — Xero Developer"
+    },
+    {
+      "url": "https://developer.xero.com/faq/oauth2",
+      "uses": [
+        {
+          "app": "Xero",
+          "field": "auth",
+          "claim_status": "checked",
+          "quote": "Will OAuth 2.0 support desktop/mobile/single-page apps that can’t keep a client secret confidential? Xero supports the Proof Key for Code Exchange (PKCE) extension to the authorization code flow. This allows native apps to securely connect to our API without needing to store a client secret. Single page apps are not currently supported.",
+          "quote_exact": true,
+          "quote_token_exact": true,
+          "raw_html_only_match": false,
+          "start_fragment_found": false,
+          "end_fragment_found": false,
+          "excerpt": ""
+        },
+        {
+          "app": "Xero",
+          "field": "auth",
+          "claim_status": "checked",
+          "quote": "What is the expiration for a refresh token? Unused refresh tokens expire after 60 days. If you don’t refresh your access token within 60 days the user will need to reauthorise your app. When you perform a token refresh, you should replace your existing refresh token with the new one returned in the response. If, for whatever reason, you don't receive the response you can retry refreshing your existing refresh token for a grace period of 30 minutes.",
+          "quote_exact": true,
+          "quote_token_exact": true,
+          "raw_html_only_match": false,
+          "start_fragment_found": false,
+          "end_fragment_found": false,
+          "excerpt": "d the user through the authorization flow again to get a code that can be exchanged for a new access and refresh token. What is the expiration for a refresh token? Unused refresh tokens expire after 60 days. If you don't refresh your access token within 60 days the user will need to reauthorise your app. When you perform a token refresh, you should replace your existing refresh token with the new one returned in the response. If, for whatever reason, you don't receive the response you can retry refreshing your existing refresh token for a grace period of 30 minutes. What is the expiration for an access token? 30 minutes. Will OAuth 2.0 support desktop/mobile/single-page apps that can"
+        }
+      ],
+      "status": 200,
+      "final_url": "https://developer.xero.com/faq/oauth2",
+      "title": "OAuth 2.0 FAQs — Xero Developer"
+    },
+    {
+      "url": "https://developer.xero.com/faq/remote-mcp",
+      "uses": [
+        {
+          "app": "Xero",
+          "field": "credential_gate",
+          "claim_status": "checked",
+          "quote": "Yes, apps on Starter plan can use it with the demo organisation. You can connect, run the tools, and decide whether it's worth upgrading to Core. Real customer organisations need the Core plan or above.",
+          "quote_exact": true,
+          "quote_token_exact": true,
+          "raw_html_only_match": true,
+          "start_fragment_found": false,
+          "end_fragment_found": false,
+          "excerpt": ""
+        },
+        {
+          "app": "Xero",
+          "field": "official_mcp",
+          "claim_status": "checked",
+          "quote": "The Developer Remote MCP is for developers & builders building custom agents and apps. It can be used with any MCP compatible client and offers tools that reads and writes Xero data. It supports multiple organisations with user consent.",
+          "quote_exact": true,
+          "quote_token_exact": true,
+          "raw_html_only_match": false,
+          "start_fragment_found": false,
+          "end_fragment_found": false,
+          "excerpt": "ement page in the Developer Portal. See Managing Connections . How is this different from the Xero connector in Claude? The Developer Remote MCP is for developers & builders building custom agents and apps. It can be used with any MCP compatible client and offers tools that reads and writes Xero data. It supports multiple organisations with user consent. What are the rate limits? Rate limits are the same as Xero APIs. Today that's 1,000 calls per day per organisation on the Starter plan and 5,000 per day per organisation on the Core plan and above, per the pricing page . What model should I use? Use a model with "
+        },
+        {
+          "app": "Xero",
+          "field": "official_mcp",
+          "claim_status": "checked",
+          "quote": "What's the server URL? https://api.xero.com/mcp/v1",
+          "quote_exact": true,
+          "quote_token_exact": true,
+          "raw_html_only_match": false,
+          "start_fragment_found": false,
+          "end_fragment_found": false,
+          "excerpt": ""
+        },
+        {
+          "app": "Xero",
+          "field": "official_mcp",
+          "claim_status": "checked",
+          "quote": "Does my client need to support OAuth? Yes. The server authorises through Xero's OAuth 2.0 flow with PKCE, so your client needs to be able to start that flow.",
+          "quote_exact": true,
+          "quote_token_exact": true,
+          "raw_html_only_match": false,
+          "start_fragment_found": false,
+          "end_fragment_found": false,
+          "excerpt": "ion rules haven't changed. Apps on Plus, Advanced and Enterprise must be certified, whether or not they use Remote MCP. Does my client need to support OAuth? Yes. The server authorises through Xero's OAuth 2.0 flow with PKCE, so your client needs to be able to start that flow. Does the server ask the user to confirm before changing Xero data? The tools on V1 do not elicit user confirmation. Always ask your agent to confirm with you before writing anything back to Xero. How do I disconnect an organisation or revoke access? The user who authorized can disconnect access from their Connected Apps page in the Xero App"
+        },
+        {
+          "app": "Xero",
+          "field": "official_mcp",
+          "claim_status": "checked",
+          "quote": "Do I need a Custom Connection? No. Custom Connections apps are not eligible to access the Remote MCP Server.",
+          "quote_exact": true,
+          "quote_token_exact": true,
+          "raw_html_only_match": false,
+          "start_fragment_found": false,
+          "end_fragment_found": false,
+          "excerpt": "ed in your API fee exemption. To apply, go to Manage plan for your app in the Developer Portal and select Get in touch. Do I need a Custom Connection? No. Custom Connections apps are not eligible to access the Remote MCP Server. Does a tool call run against one organisation or several? One. Each call runs against a single organisation. Does certification apply? Certification rules haven't changed. Apps on Plus, Advanced and Enterprise must be certified, whether or not they use Remote MCP. Does my client need to support OAuth? Yes. The server authorises through Xero's OAuth 2.0 flow with PKCE, so your client needs"
+        },
+        {
+          "app": "Xero",
+          "field": "verdict",
+          "claim_status": "checked",
+          "quote": "Yes, apps on Starter plan can use it with the demo organisation. You can connect, run the tools, and decide whether it's worth upgrading to Core. Real customer organisations need the Core plan or above.",
+          "quote_exact": true,
+          "quote_token_exact": true,
+          "raw_html_only_match": true,
+          "start_fragment_found": false,
+          "end_fragment_found": false,
+          "excerpt": ""
+        }
+      ],
+      "status": 200,
+      "final_url": "https://developer.xero.com/faq/remote-mcp",
+      "title": "Remote MCP FAQs — Xero Developer"
+    },
+    {
+      "url": "https://developers.intercom.com/docs/build-an-integration/getting-started",
+      "uses": [
+        {
+          "app": "Intercom",
+          "field": "credential_gate",
+          "claim_status": "checked",
+          "quote": "If you are building a private app for your paid Intercom workspace, log in through the Intercom app sign in and then go to the Developer Hub to create an app for that workspace, which we will show you in the next step.",
+          "quote_exact": false,
+          "quote_token_exact": false,
+          "raw_html_only_match": false,
+          "start_fragment_found": true,
+          "end_fragment_found": false,
+          "excerpt": " development purposes only. You can create as many development workspaces as you would like. For private app developers If you are building a private app for your paid Intercom workspace, log in through the Intercom app sign in and then go to the Developer Hub to create an app for that workspace, which we will show in the next step. You may create a development workspace if you wish for testing purposes. However, this is not recommended if your account is in the Europe or Australia regions because you will not be able to install development workspace apps into your paid workspace. Development Workspace Limitation"
+        },
+        {
+          "app": "Intercom",
+          "field": "verdict",
+          "claim_status": "checked",
+          "quote": "If you are building a private app for your paid Intercom workspace, log in through the Intercom app sign in and then go to the Developer Hub to create an app for that workspace, which we will show you in the next step.",
+          "quote_exact": false,
+          "quote_token_exact": false,
+          "raw_html_only_match": false,
+          "start_fragment_found": true,
+          "end_fragment_found": false,
+          "excerpt": " development purposes only. You can create as many development workspaces as you would like. For private app developers If you are building a private app for your paid Intercom workspace, log in through the Intercom app sign in and then go to the Developer Hub to create an app for that workspace, which we will show in the next step. You may create a development workspace if you wish for testing purposes. However, this is not recommended if your account is in the Europe or Australia regions because you will not be able to install development workspace apps into your paid workspace. Development Workspace Limitation"
+        }
+      ],
+      "status": 200,
+      "final_url": "https://developers.intercom.com/docs/build-an-integration/getting-started",
+      "title": "Set up a Workspace | Intercom and Fin Developer Platform"
+    },
+    {
+      "url": "https://docs.ecwid.com/api-reference",
+      "uses": [
+        {
+          "app": "Ecwid",
+          "field": "official_mcp",
+          "claim_status": "checked",
+          "quote": "Agents can also search and read this documentation through its MCP server",
+          "quote_exact": true,
+          "quote_token_exact": true,
+          "raw_html_only_match": false,
+          "start_fragment_found": true,
+          "end_fragment_found": false,
+          "excerpt": "ocumentation index, see llms.txt. Markdown versions of documentation pages are available by appending .md to page URLs. Agents can also search and read this documentation through its MCP server. Skip to content Ctrl K Ask Contact API support Build apps Site Themes REST API Reference Storefronts (JS API) Webhook automations Discounts Guides Changelog REST API REST API overview REST API error codes Store Profile Orders Products Categories Customers Discounts Domains Dictionaries Staff accounts Application Batch requests Shipping options Payment options Checkout extra fields Storefront widget details ON THIS PAGE Ge"
+        }
+      ],
+      "status": 200,
+      "final_url": "https://docs.ecwid.com/api-reference",
+      "title": "REST API overview | REST API Reference | Ecwid Documentation"
+    },
+    {
+      "url": "https://docs.sendgrid.com/mcp",
+      "uses": [
+        {
+          "app": "SendGrid",
+          "field": "official_mcp",
+          "claim_status": "checked",
+          "quote": "Error 404\nOops! Page not found\nThis page isn't available. It might have moved, or you may not have permission to view it.",
+          "quote_exact": true,
+          "quote_token_exact": true,
+          "excerpt": ""
+        }
+      ],
+      "status": 404,
+      "final_url": "https://www.twilio.com/docs/sendgrid/mcp",
+      "title": "Docs: API Reference, Tutorials, and Integration | SendGrid Docs | Twilio"
+    },
+    {
+      "url": "https://docs.snowflake.com/en/user-guide/programmatic-access-tokens",
+      "uses": [
+        {
+          "app": "Snowflake",
+          "field": "auth",
+          "claim_status": "checked",
+          "quote": "For human users (with TYPE=PERSON), you do not need any special privileges to generate, modify, drop, or display a programmatic access token for yourself .",
+          "quote_exact": false,
+          "quote_token_exact": true,
+          "raw_html_only_match": false,
+          "start_fragment_found": true,
+          "end_fragment_found": false,
+          "excerpt": ""
+        }
+      ],
+      "status": 200,
+      "final_url": "https://docs.snowflake.com/en/user-guide/programmatic-access-tokens",
+      "title": "Using programmatic access tokens for authentication | Snowflake Documentation"
+    },
+    {
+      "url": "https://guide.nmi.com/",
+      "uses": [
+        {
+          "app": "Paygent Connect",
+          "field": "api_surface",
+          "claim_status": "checked",
+          "quote": "Onboard and manage merchants with tools and APIs designed to simplify their journey.",
+          "quote_exact": true,
+          "quote_token_exact": true,
+          "raw_html_only_match": false,
+          "start_fragment_found": false,
+          "end_fragment_found": false,
+          "excerpt": " devices and solutions. Get the devices you need to test and launch payments faster. Explore Solutions Merchant Sign Up Onboard and manage merchants with tools and APIs designed to simplify their journey. Explore Solutions Value Added Solutions Enhance your payment processing with fraud prevention, tokenization, and other value-added solutions. Explore Solutions Reporting Monitor, reconcile, and optimize payment operations using powerful reporting tools and APIs. Explore Solutions Account Management Build fully white-label payment experiences with full control over merchant accounts and gateway settings tailored "
+        }
+      ],
+      "status": 200,
+      "final_url": "https://guide.nmi.com/",
+      "title": "Pathfinder"
+    },
+    {
+      "url": "https://gumroad.com/api",
+      "uses": [
+        {
+          "app": "Gumroad",
+          "field": "auth",
+          "claim_status": "checked",
+          "quote": "To start using the API, you'll need to register your OAuth application. Note: The Verify License API endpoint does not require an OAuth application.",
+          "quote_exact": true,
+          "quote_token_exact": true,
+          "raw_html_only_match": false,
+          "start_fragment_found": false,
+          "end_fragment_found": false,
+          "excerpt": ""
+        },
+        {
+          "app": "Gumroad",
+          "field": "api_surface",
+          "claim_status": "checked",
+          "quote": "The Gumroad OAuth API is based around REST. We return JSON for every request, including errors.",
+          "quote_exact": true,
+          "quote_token_exact": true,
+          "raw_html_only_match": false,
+          "start_fragment_found": false,
+          "end_fragment_found": false,
+          "excerpt": "hows the matching gumroad invocation next to its cURL example. Run gumroad <command> --help for the full list of flags. The Gumroad OAuth API is based around REST. We return JSON for every request, including errors. To start using the API, you'll need to register your OAuth application. Note: The Verify License API endpoint does not require an OAuth application. After creating an application, you'll be given a unique application id and application secret. Authentication On the application page, click Generate access token to get the token you will use with the API. Scopes We've provided the following scopes that "
+        },
+        {
+          "app": "Gumroad",
+          "field": "api_surface",
+          "claim_status": "checked",
+          "quote": "Gumroad's OAuth 2.0 API lets you see information about your products, as well as you can add, edit, and delete offer codes, variants, and custom fields. Finally, you can see a user's public information and subscribe to be notified of their sales.",
+          "quote_exact": true,
+          "quote_token_exact": true,
+          "raw_html_only_match": false,
+          "start_fragment_found": false,
+          "end_fragment_found": false,
+          "excerpt": ""
+        },
+        {
+          "app": "Gumroad",
+          "field": "verdict",
+          "claim_status": "checked",
+          "quote": "The Gumroad OAuth API is based around REST. We return JSON for every request, including errors.",
+          "quote_exact": true,
+          "quote_token_exact": true,
+          "raw_html_only_match": false,
+          "start_fragment_found": false,
+          "end_fragment_found": false,
+          "excerpt": "hows the matching gumroad invocation next to its cURL example. Run gumroad <command> --help for the full list of flags. The Gumroad OAuth API is based around REST. We return JSON for every request, including errors. To start using the API, you'll need to register your OAuth application. Note: The Verify License API endpoint does not require an OAuth application. After creating an application, you'll be given a unique application id and application secret. Authentication On the application page, click Generate access token to get the token you will use with the API. Scopes We've provided the following scopes that "
+        }
+      ],
+      "status": 200,
+      "final_url": "https://gumroad.com/api",
+      "title": "API"
+    },
+    {
+      "url": "https://gumroad.com/help/article/280-create-application-api",
+      "uses": [
+        {
+          "app": "Gumroad",
+          "field": "auth",
+          "claim_status": "checked",
+          "quote": "However, if you only want to use the API on your own Gumroad account, you can manually generate an access token, which is a simpler process.",
+          "quote_exact": true,
+          "quote_token_exact": true,
+          "raw_html_only_match": true,
+          "start_fragment_found": false,
+          "end_fragment_found": false,
+          "excerpt": ""
+        },
+        {
+          "app": "Gumroad",
+          "field": "credential_gate",
+          "claim_status": "checked",
+          "quote": "First, sign in to your Gumroad account. Then, go to advanced settings. Here, you'll see a form to create a new application.",
+          "quote_exact": true,
+          "quote_token_exact": true,
+          "raw_html_only_match": false,
+          "start_fragment_found": false,
+          "end_fragment_found": false,
+          "excerpt": ""
+        }
+      ],
+      "status": 200,
+      "final_url": "https://gumroad.com/help/article/280-create-application-api",
+      "title": "Create an application for the API - Gumroad Help Center"
+    },
+    {
+      "url": "https://gumroad.com/mcp",
+      "uses": [
+        {
+          "app": "Gumroad",
+          "field": "auth",
+          "claim_status": "checked",
+          "quote": "Every assistant connects to its own URL and asks for OAuth access to your Gumroad account. Each connector page lists the exact address to paste.",
+          "quote_exact": true,
+          "quote_token_exact": true,
+          "raw_html_only_match": true,
+          "start_fragment_found": false,
+          "end_fragment_found": false,
+          "excerpt": "d MCP for ChatGPT Available now in ChatGPT's plugin directory. Listed in ChatGPT's plugin directory. Set up Gumroad MCP Every assistant connects to its own URL and asks for OAuth access to your Gumroad account. Each connector page lists the exact address to paste. Set up Gumroad MCP How do you connect? Setup takes three steps in the assistant you use. You stay signed in to Gumroad, and you can revoke access whenever you want. 1. Add the connector Add Gumroad from your assistant's connector directory, or open its connector settings and add a remote MCP server using the URL from its connector page. Gumroad MCP for "
+        },
+        {
+          "app": "Gumroad",
+          "field": "official_mcp",
+          "claim_status": "checked",
+          "quote": "Add Gumroad from your assistant’s connector directory, or open its connector settings and add a remote MCP server using the URL from its connector page.",
+          "quote_exact": true,
+          "quote_token_exact": true,
+          "raw_html_only_match": true,
+          "start_fragment_found": false,
+          "end_fragment_found": false,
+          "excerpt": ""
+        },
+        {
+          "app": "Gumroad",
+          "field": "official_mcp",
+          "claim_status": "checked",
+          "quote": "New products start as unpublished drafts. With product access, the connector can publish or unpublish them. Review these actions in your MCP client.",
+          "quote_exact": true,
+          "quote_token_exact": true,
+          "raw_html_only_match": true,
+          "start_fragment_found": false,
+          "end_fragment_found": false,
+          "excerpt": "mails, and payouts, according to the permissions you grant. You can grant some and not others. Can it publish products? New products start as unpublished drafts. With product access, the connector can publish or unpublish them. Review these actions in your MCP client. How do customers buy? Share your product's Gumroad link. Customers pay through Gumroad checkout. The MCP server does not take payments in your chat. How do I revoke access? Revoke the connection any time in Settings > Applications. Disconnecting the connector in your chat app does not revoke its access token, so revoke it here to end the connection."
+        }
+      ],
+      "status": 200,
+      "final_url": "https://gumroad.com/mcp",
+      "title": "Gumroad MCP | Sell digital products from your AI assistant"
+    },
+    {
+      "url": "https://gumroad.com/pricing",
+      "uses": [
+        {
+          "app": "Gumroad",
+          "field": "credential_gate",
+          "claim_status": "checked",
+          "quote": "Unlike other platforms, Gumroad doesn't charge you a monthly fee. Instead, our fees are deducted as a small percentage of every sale, so we only make money when you do.",
+          "quote_exact": true,
+          "quote_token_exact": true,
+          "raw_html_only_match": true,
+          "start_fragment_found": false,
+          "end_fragment_found": false,
+          "excerpt": ""
+        },
+        {
+          "app": "Gumroad",
+          "field": "verdict",
+          "claim_status": "checked",
+          "quote": "Unlike other platforms, Gumroad doesn't charge you a monthly fee. Instead, our fees are deducted as a small percentage of every sale, so we only make money when you do.",
+          "quote_exact": true,
+          "quote_token_exact": true,
+          "raw_html_only_match": true,
+          "start_fragment_found": false,
+          "end_fragment_found": false,
+          "excerpt": ""
+        }
+      ],
+      "status": 200,
+      "final_url": "https://gumroad.com/pricing",
+      "title": "Gumroad pricing: 10% + 50¢ direct, 30% via Discover"
+    },
+    {
+      "url": "https://help.front.com/en/articles/4883136",
+      "uses": [
+        {
+          "app": "Front",
+          "field": "official_mcp",
+          "claim_status": "checked",
+          "quote": "If you want to use Front in an MCP client that doesn't (yet) have an official directory listing — or you're building your own internal agent — your workspace admin can create a private developer app in Front and use its credentials to connect.",
+          "quote_exact": false,
+          "quote_token_exact": false,
+          "raw_html_only_match": false,
+          "start_fragment_found": true,
+          "end_fragment_found": true,
+          "excerpt": "ill connect today using the custom path below. Option 2: Custom connection (available now in any MCP-compatible client) If you want to use Front in an MCP client that doesn't (yet) have an official directory listing - or if you're building your own internal agent - your workspace admin can create a private developer app in Front and use its credentials to connect. Setup involves creating the app in Front, configuring OAuth scopes, and pointing your MCP client at mcp.frontapp.com/mcp. Full instructions live in the Front Developer Portal. How are permissions controlled? For both connection options, Front admins can"
+        }
+      ],
+      "status": 200,
+      "final_url": "https://help.front.com/en/articles/4883136",
+      "title": "Get started with Front's MCP server"
+    },
+    {
+      "url": "https://help.gladly.com/developer-tutorials/docs/default-api-rate-limits.md",
+      "uses": [
+        {
+          "app": "Gladly",
+          "field": "api_surface",
+          "claim_status": "checked",
+          "quote": "Note that individual APIs may have their own API Rate Limit and will be documented as such. Otherwise, the following default rate limits apply.",
+          "quote_exact": false,
+          "quote_token_exact": false,
+          "raw_html_only_match": false,
+          "start_fragment_found": false,
+          "end_fragment_found": true,
+          "excerpt": "# Default API Rate Limits Organizations that send many requests quickly may see error responses as status code **429**. Note that individual APIs may have their API Rate Limit and will be documented as such. Otherwise, the following default rate limits apply. | **Method** | **Request Limit** | **Concurrency Limit** | | --- | --- | --- | | GET | 10 Requests per second | Not Applicable | | POST | 10 Requests per second | Not Applicable | | PUT | 10 Requests per second | Not Applicable | | PATCH | 10 Requests per second | Not Applicable | | DELETE | 10 Requests per second | Not Applicable | See Default Rate Limit to"
+        }
+      ],
+      "status": 200,
+      "final_url": "https://help.gladly.com/developer-tutorials/docs/default-api-rate-limits.md",
+      "title": ""
+    },
+    {
+      "url": "https://help.gladly.com/developer-tutorials/docs/setup-and-testing/",
+      "uses": [
+        {
+          "app": "Gladly",
+          "field": "credential_gate",
+          "claim_status": "checked",
+          "quote": "To allow a user to create API tokens and access the API:\n\n1. Log in to your **Gladly instance**.\n2. Open the **menu** on the top left-hand portion of the page.\n3. Navigate to **Settings > Users**.\n4. Search and click on the user profile that should have access.\n5. You'll see a permission called **API User**. Select it, while keeping the user's Agent role intact.\n6. Click **Save** to give access.",
+          "quote_exact": false,
+          "quote_token_exact": false,
+          "raw_html_only_match": false,
+          "start_fragment_found": true,
+          "end_fragment_found": true,
+          "excerpt": "aps to API access in the Authentication section below. Of course, the API User will also have access to Gladly overall. To allow a user to create API tokens and access the API: Log in to your Gladly instance. Open the menu on the top left-hand corner of the page. Navigate to Settings > Users. Search and click the user profile that should have access. You'll see a permission called API User. Select it, while keeping the user's Agent role intact. Click Save to give access. We recommend creating a dedicated user to make API calls whose account won't be used for Agent and organization management. This will help with future audits of "
+        }
+      ],
+      "status": 200,
+      "final_url": "https://help.gladly.com/developer-tutorials/docs/setup-and-testing",
+      "title": "Setup and Testing"
+    },
+    {
+      "url": "https://help.gohighlevel.com/support/solutions/articles/155000005741-how-to-setup-and-use-the-highlevel-mcp-server",
+      "uses": [
+        {
+          "app": "GoHighLevel",
+          "field": "official_mcp",
+          "claim_status": "checked",
+          "quote": "A single-sub-account connection is bound to the sub-account you choose during OAuth authorization for the lifetime of that connection.\n\nWhere agency-wide access is available, you can connect once and work across the sub-accounts selected during installation.",
+          "quote_exact": false,
+          "quote_token_exact": false,
+          "raw_html_only_match": false,
+          "start_fragment_found": true,
+          "end_fragment_found": true,
+          "excerpt": ""
+        }
+      ],
+      "status": 200,
+      "final_url": "https://help.gohighlevel.com/support/solutions/articles/155000005741-how-to-setup-and-use-the-highlevel-mcp-server",
+      "title": "Guide on How to Setup and Use the HighLevel MCP Server : HighLevel Support Portal"
+    },
+    {
+      "url": "https://mcp-proxy-external.pitchbook.com/",
+      "uses": [
+        {
+          "app": "PitchBook",
+          "field": "official_mcp",
+          "claim_status": "checked",
+          "quote": "PitchBook MCP Gateway Production Environment\nSecure Access to PitchBook's MCP Servers",
+          "quote_exact": true,
+          "quote_token_exact": true,
+          "raw_html_only_match": false,
+          "start_fragment_found": false,
+          "end_fragment_found": false,
+          "excerpt": "PitchBook MCP External Gateway Status Metrics Sign In PitchBook MCP Gateway Production Environment Secure Access to PitchBook's MCP Servers Gateway Status Developer Platform Features Technical capabilities for secure MCP server integration and management sf-sandboxer SF Sandboxer Platform Access Points Direct access to key system endpoints and developer tools OAuth Login Secure authentication with Okta Health Check Server and connection status Metrics Prometheus monitoring data Available Tools Browse all connected MCP tools Create Toolsets Build cu"
+        }
+      ],
+      "status": 200,
+      "final_url": "https://mcp-proxy-external.pitchbook.com/",
+      "title": "MCP Proxy - Model Context Protocol Server"
+    },
+    {
+      "url": "https://mcp-proxy-external.pitchbook.com/oauth/login?redirect=%2Ftools&show=true",
+      "uses": [
+        {
+          "app": "PitchBook",
+          "field": "auth",
+          "claim_status": "checked",
+          "quote": "Sign in to access PitchBook MCP External Gateway\nSign in with OAuth 2.0",
+          "quote_exact": true,
+          "quote_token_exact": true,
+          "raw_html_only_match": false,
+          "start_fragment_found": false,
+          "end_fragment_found": false,
+          "excerpt": "PitchBook MCP External Gateway Status Metrics Sign In Welcome Back Sign in to access PitchBook MCP External Gateway Sign in with OAuth 2.0 Enterprise Authentication PitchBook MCP External Gateway Authentication Required Secure authentication is required to access PitchBook MCP External Gateway secure data. Your credentials are protected with enterprise-grade security. End-to-end encryption Multi-factor authentication Session management Audit logging Protected by OAuth 2.0 • System Status"
+        },
+        {
+          "app": "PitchBook",
+          "field": "official_mcp",
+          "claim_status": "checked",
+          "quote": "Sign in to access PitchBook MCP External Gateway\nSign in with OAuth 2.0",
+          "quote_exact": true,
+          "quote_token_exact": true,
+          "raw_html_only_match": false,
+          "start_fragment_found": false,
+          "end_fragment_found": false,
+          "excerpt": "PitchBook MCP External Gateway Status Metrics Sign In Welcome Back Sign in to access PitchBook MCP External Gateway Sign in with OAuth 2.0 Enterprise Authentication PitchBook MCP External Gateway Authentication Required Secure authentication is required to access PitchBook MCP External Gateway secure data. Your credentials are protected with enterprise-grade security. End-to-end encryption Multi-factor authentication Session management Audit logging Protected by OAuth 2.0 • System Status"
+        }
+      ],
+      "status": 200,
+      "final_url": "https://mcp-proxy-external.pitchbook.com/oauth/login?redirect=%2Ftools&show=true",
+      "title": "Sign In - MCP Proxy"
+    },
+    {
+      "url": "https://mcp.podio.com/health",
+      "uses": [
+        {
+          "app": "Podio",
+          "field": "official_mcp",
+          "claim_status": "checked",
+          "quote": "{\"status\":\"healthy\",\"service\":\"Podio External MCP Server\",\"version\":\"2.0.0\",\"mode\":\"mcp_external\",\"transport\":\"streamable-http\",\"auth\":\"oauth2_authorization_code\",\"sessionMode\":\"stateless\",\"sessions\":\"n/a\",\"timestamp\":\"2026-11-23T22:04:19.570Z\"}",
+          "quote_exact": false,
+          "quote_token_exact": false,
+          "raw_html_only_match": false,
+          "start_fragment_found": true,
+          "end_fragment_found": false,
+          "excerpt": ""
+        }
+      ],
+      "status": 200,
+      "final_url": "https://mcp.podio.com/health",
+      "title": ""
+    },
+    {
+      "url": "https://pitchbook.com/help/PitchBook-api",
+      "uses": [
+        {
+          "app": "PitchBook",
+          "field": "auth",
+          "claim_status": "checked",
+          "quote": "Our team will work with you to understand the insights and data you’re looking for and help you establish the API connection through an API key or authentication token. Available data for each entity type is packaged across several endpoints so you can map the data to your desired format and structure.",
+          "quote_exact": true,
+          "quote_token_exact": true,
+          "excerpt": "This section on PitchBook also allows you to reach out to our Direct Data team to request access to the API. Next steps Our team will work with you to understand the insights and data you're looking for and help you establish the API connection through an API key or authentication token. Available data for each entity type is packaged across several endpoints so you can map the data to your desired format and structure. Experience the PitchBook Platform firsthand Discover how PitchBook's leading tools and capabilities can strengthen your due diligence workflows. Tour the platform PitchBook API and Data Feed Overv"
+        },
+        {
+          "app": "PitchBook",
+          "field": "credential_gate",
+          "claim_status": "checked",
+          "quote": "Our API is a separate offering from the PitchBook Platform that requires a standalone contract agreement.",
+          "quote_exact": true,
+          "quote_token_exact": true,
+          "excerpt": "D Help: PitchBook API Find information about PitchBook's API solution and discover how it can meet your business needs. Our API is a separate offering from the PitchBook Platform that requires a standalone contract agreement. TABLE OF CONTENTS Overview PitchBook's API solution allows you to call specific PitchBook data into your internal business systems on demand. This flexible solution means you have access to PitchBook's expansive database. It's the ideal integration for CRM enrichment, allowing you to extract data on an ad-hoc basis that meets the needs of your organization. You can explore a specific entity "
+        },
+        {
+          "app": "PitchBook",
+          "field": "credential_gate",
+          "claim_status": "checked",
+          "quote": "To start your API connection, you will need to send a request directly to our Direct Data team",
+          "quote_exact": true,
+          "quote_token_exact": true,
+          "excerpt": ""
+        },
+        {
+          "app": "PitchBook",
+          "field": "api_surface",
+          "claim_status": "checked",
+          "quote": "The PitchBook API is a RESTful implementation that most HTTP clients can easily access in your chosen language or via a web browser. Every call will use the same base URL: https://api.pitchbook.com",
+          "quote_exact": true,
+          "quote_token_exact": true,
+          "excerpt": "u want to see past and present financial data. RESTful API is a system requirement. How the API works Accessing the API The PitchBook API is a RESTful implementation that most HTTP clients can easily access in your chosen language or via a web browser. Every call will use the same base URL: https://api.pitchbook.com Available data points The API solution offers a variety of relational endpoints, including financing details, deal stock information, as well as AI-powered VC exit predictor data. See the full list from our API Endpoints Overview document. Create your API connection To start your API connection, you w"
+        },
+        {
+          "app": "PitchBook",
+          "field": "api_surface",
+          "claim_status": "checked",
+          "quote": "The API solution offers a variety of relational endpoints, including financing details, deal stock information, as well as AI-powered VC exit predictor data.",
+          "quote_exact": true,
+          "quote_token_exact": true,
+          "excerpt": "n language or via a web browser. Every call will use the same base URL: https://api.pitchbook.com Available data points The API solution offers a variety of relational endpoints, including financing details, deal stock information, as well as AI-powered VC exit predictor data. See the full list from our API Endpoints Overview document. Create your API connection To start your API connection, you will need to send a request directly to our Direct Data team through this link. Or if you're a PitchBook client, you can also head to the Plugins & Apps section from the My PitchBook section of the left-hand sidebar on th"
+        },
+        {
+          "app": "PitchBook",
+          "field": "verdict",
+          "claim_status": "checked",
+          "quote": "Our API is a separate offering from the PitchBook Platform that requires a standalone contract agreement.",
+          "quote_exact": true,
+          "quote_token_exact": true,
+          "excerpt": "D Help: PitchBook API Find information about PitchBook's API solution and discover how it can meet your business needs. Our API is a separate offering from the PitchBook Platform that requires a standalone contract agreement. TABLE OF CONTENTS Overview PitchBook's API solution allows you to call specific PitchBook data into your internal business systems on demand. This flexible solution means you have access to PitchBook's expansive database. It's the ideal integration for CRM enrichment, allowing you to extract data on an ad-hoc basis that meets the needs of your organization. You can explore a specific entity "
+        }
+      ],
+      "status": 200,
+      "final_url": "https://pitchbook.com/help/PitchBook-api",
+      "title": "Help: PitchBook API - PitchBook"
+    },
+    {
+      "url": "https://pitchbook.com/help/data-feed-api-crm-direct-data-solutions",
+      "uses": [
+        {
+          "app": "PitchBook",
+          "field": "credential_gate",
+          "claim_status": "checked",
+          "quote": "Contact your account manager\nA member of the PitchBook team will shortly be in touch by email with the next steps.",
+          "quote_exact": false,
+          "quote_token_exact": true,
+          "excerpt": ""
+        }
+      ],
+      "status": 200,
+      "final_url": "https://pitchbook.com/help/data-feed-api-crm-direct-data-solutions",
+      "title": "Help: Data Feed, API, and CRM: Direct Data solutions - PitchBook"
+    },
+    {
+      "url": "https://pitchbook.com/media/press-releases/pitchbook-launches-an-agentic-platform-assistant-and-new-pitchbook-data-mcp-to-meet-investors-rapidly-evolving-workflow-needs",
+      "uses": [
+        {
+          "app": "PitchBook",
+          "field": "credential_gate",
+          "claim_status": "checked",
+          "quote": "The PitchBook Data MCP is currently live and available to customers upon request.",
+          "quote_exact": true,
+          "quote_token_exact": true,
+          "excerpt": "e same trust they rely on inside PitchBook: Grounding and accuracy consistent with the platform investors already know. The PitchBook Data MCP is currently live and available to customers upon request. One Grounded Dataset Powering How Investors Work PitchBook AI and PitchBook Data MCP build on a series of releases PitchBook is launching this year to match the speed AI has brought to private markets with the grounded intelligence needed to act on it. These enhancements build on PitchBook's broader AI and ML strategy, which includes building AI experiences directly within its platform, expanding integrations with "
+        },
+        {
+          "app": "PitchBook",
+          "field": "official_mcp",
+          "claim_status": "checked",
+          "quote": "October 14, 2026",
+          "quote_exact": true,
+          "quote_token_exact": true,
+          "excerpt": ""
+        },
+        {
+          "app": "PitchBook",
+          "field": "official_mcp",
+          "claim_status": "checked",
+          "quote": "PitchBook Data MCP puts its trusted data into the systems investors have already built. PitchBook Data MCP gives investment teams native, secure access to a subset of PitchBook’s dataset, including company, deal, investor, and fund data, directly inside their own proprietary tools and models.",
+          "quote_exact": true,
+          "quote_token_exact": true,
+          "excerpt": "\" PitchBook Data MCP: PitchBook Intelligence, Natively in Investors' Own Systems Alongside PitchBook AI's enhancements, PitchBook Data MCP puts its trusted data into the systems investors have already built. PitchBook Data MCP gives investment teams native, secure access to a subset of PitchBook's dataset, including company, deal, investor, and fund data, directly inside their own proprietary tools and models. PitchBook already powers connected experiences with ChatGPT, Claude, Gemini, Copilot, Perplexity, Rogo, Samaya AI and ModelML; PitchBook Data MCP extends that same grounded access to any AI tool a firm uses"
+        },
+        {
+          "app": "PitchBook",
+          "field": "official_mcp",
+          "claim_status": "checked",
+          "quote": "The PitchBook Data MCP is currently live and available to customers upon request.",
+          "quote_exact": true,
+          "quote_token_exact": true,
+          "excerpt": "e same trust they rely on inside PitchBook: Grounding and accuracy consistent with the platform investors already know. The PitchBook Data MCP is currently live and available to customers upon request. One Grounded Dataset Powering How Investors Work PitchBook AI and PitchBook Data MCP build on a series of releases PitchBook is launching this year to match the speed AI has brought to private markets with the grounded intelligence needed to act on it. These enhancements build on PitchBook's broader AI and ML strategy, which includes building AI experiences directly within its platform, expanding integrations with "
+        },
+        {
+          "app": "PitchBook",
+          "field": "verdict",
+          "claim_status": "checked",
+          "quote": "The PitchBook Data MCP is currently live and available to customers upon request.",
+          "quote_exact": true,
+          "quote_token_exact": true,
+          "excerpt": "e same trust they rely on inside PitchBook: Grounding and accuracy consistent with the platform investors already know. The PitchBook Data MCP is currently live and available to customers upon request. One Grounded Dataset Powering How Investors Work PitchBook AI and PitchBook Data MCP build on a series of releases PitchBook is launching this year to match the speed AI has brought to private markets with the grounded intelligence needed to act on it. These enhancements build on PitchBook's broader AI and ML strategy, which includes building AI experiences directly within its platform, expanding integrations with "
+        }
+      ],
+      "status": 200,
+      "final_url": "https://pitchbook.com/media/press-releases/pitchbook-launches-an-agentic-platform-assistant-and-new-pitchbook-data-mcp-to-meet-investors-rapidly-evolving-workflow-needs",
+      "title": "PitchBook Launches an Agentic Platform Assistant and New PitchBook Data MCP to Meet Investors' Rapidly Evolving Workflow Needs | PitchBook"
+    },
+    {
+      "url": "https://pitchbook.com/pricing",
+      "uses": [
+        {
+          "app": "PitchBook",
+          "field": "credential_gate",
+          "claim_status": "checked",
+          "quote": "Pricing options vary depending on how many seats you need and your firm type. Another primary consideration is whether you’re interested in additional premium offerings, such as Direct Data or CRM Integration. Find out what the cost for you might look like by getting in touch with a representative today.",
+          "quote_exact": true,
+          "quote_token_exact": true,
+          "excerpt": "nvestment professionals, anyone can find value in our platform's extensive capital market data, research, and insights. Pricing options vary depending on how many seats you need and your firm type. Another primary consideration is whether you're interested in additional premium offerings, such as Direct Data or CRM Integration. Find out what the cost for you might look like by getting in touch with a representative today. Can individuals use PitchBook? PitchBook is geared towards sophisticated investment professionals, but almost anyone could find value in our premium, hard-to-find data covering the private, publ"
+        }
+      ],
+      "status": 200,
+      "final_url": "https://pitchbook.com/pricing",
+      "title": "PitchBook Pricing: Plans, Cost, and Subscriptions - PitchBook"
+    },
+    {
+      "url": "https://pitchbook.com/products/direct-access-data/api",
+      "uses": [
+        {
+          "app": "PitchBook",
+          "field": "api_surface",
+          "claim_status": "checked",
+          "quote": "Our RESTful API utilizes JSON and is system agnostic, so you can integrate it into custom applications and CRMs to bring the industry’s best data directly into your workflow.",
+          "quote_exact": true,
+          "quote_token_exact": true,
+          "excerpt": "aged across several endpoints so you can get all the data you need‍-and none that you don't. Streamline your operations Our RESTful API utilizes JSON and is system agnostic, so you can integrate it into custom applications and CRMs to bring the industry's best data directly into your workflow. Provide your team with the right data to more easily analyze trends and build predictive models-right in your existing systems. Discover what you can do with PitchBook Private Market Intel Fundraising Sourcing Investments Due Diligence Business Development Networking Deal Execution Benchmarking Asset Allocation Access Pitch"
+        },
+        {
+          "app": "PitchBook",
+          "field": "api_surface",
+          "claim_status": "checked",
+          "quote": "Call data on all PitchBook entity types including deals, investors, funds, people, limited partners and service providers.",
+          "quote_exact": true,
+          "quote_token_exact": true,
+          "excerpt": "ical inflection points such as funding rounds, executive changes or liquidity events to stay on top of market activity. Call data on all PitchBook entity types including deals, investors, funds, people, limited partners and service providers. Customized solutions for the way you work Our team of experts will work with you to ensure your organization can bridge any gap of understanding to place insights and data where they can make the biggest business impact. Available data for each entity type is conveniently packaged across several endpoints so you can get all the data you need‍-and none that you don't. Streaml"
+        },
+        {
+          "app": "PitchBook",
+          "field": "verdict",
+          "claim_status": "checked",
+          "quote": "Our RESTful API utilizes JSON and is system agnostic, so you can integrate it into custom applications and CRMs to bring the industry’s best data directly into your workflow.",
+          "quote_exact": true,
+          "quote_token_exact": true,
+          "excerpt": "aged across several endpoints so you can get all the data you need‍-and none that you don't. Streamline your operations Our RESTful API utilizes JSON and is system agnostic, so you can integrate it into custom applications and CRMs to bring the industry's best data directly into your workflow. Provide your team with the right data to more easily analyze trends and build predictive models-right in your existing systems. Discover what you can do with PitchBook Private Market Intel Fundraising Sourcing Investments Due Diligence Business Development Networking Deal Execution Benchmarking Asset Allocation Access Pitch"
+        },
+        {
+          "app": "PitchBook",
+          "field": "verdict",
+          "claim_status": "checked",
+          "quote": "Call data on all PitchBook entity types including deals, investors, funds, people, limited partners and service providers.",
+          "quote_exact": true,
+          "quote_token_exact": true,
+          "excerpt": "ical inflection points such as funding rounds, executive changes or liquidity events to stay on top of market activity. Call data on all PitchBook entity types including deals, investors, funds, people, limited partners and service providers. Customized solutions for the way you work Our team of experts will work with you to ensure your organization can bridge any gap of understanding to place insights and data where they can make the biggest business impact. Available data for each entity type is conveniently packaged across several endpoints so you can get all the data you need‍-and none that you don't. Streaml"
+        }
+      ],
+      "status": 200,
+      "final_url": "https://pitchbook.com/products/direct-access-data/api",
+      "title": "API: Flexibly call down data on demand - PitchBook"
+    },
+    {
+      "url": "https://pitchbook.com/products/pitchbooks-ai-capabilities",
+      "uses": [
+        {
+          "app": "PitchBook",
+          "field": "official_mcp",
+          "claim_status": "checked",
+          "quote": "PitchBook Data MCP gives your team secure, native access to select company, deal, investor, and fund data in the proprietary tools your firm has built or the commercial LLMs it uses. It brings the grounded access available through our LLM partners to the systems where your team is already asking questions, without a separate integration to maintain.",
+          "quote_exact": true,
+          "quote_token_exact": true,
+          "excerpt": "atable Skill, and automate the repetition with Agents, with reasoning and sources shown as it works. PitchBook Data MCP PitchBook Data MCP gives your team secure, native access to select company, deal, investor, and fund data in the proprietary tools your firm has built or the commercial LLMs it uses. It brings the grounded access available through our LLM partners to the systems where your team is already asking questions, without a separate integration to maintain. \"We can now quickly access the data we need without searching multiple sources, which has allowed us to focus on analyzing and advising rather than "
+        }
+      ],
+      "status": 200,
+      "final_url": "https://pitchbook.com/products/pitchbooks-ai-capabilities",
+      "title": "AI & Machine Learning for Private Markets - PitchBook"
+    },
+    {
+      "url": "https://pumble.com/pricing",
+      "uses": [
+        {
+          "app": "Pumble",
+          "field": "credential_gate",
+          "claim_status": "checked",
+          "quote": "Start using Pumble for free, and upgrade when you need more features.",
+          "quote_exact": true,
+          "quote_token_exact": true,
+          "raw_html_only_match": true,
+          "start_fragment_found": false,
+          "end_fragment_found": false,
+          "excerpt": ""
+        },
+        {
+          "app": "Pumble",
+          "field": "credential_gate",
+          "claim_status": "checked",
+          "quote": "$ 0\n\nfor unlimited number of users",
+          "quote_exact": true,
+          "quote_token_exact": true,
+          "raw_html_only_match": false,
+          "start_fragment_found": false,
+          "end_fragment_found": false,
+          "excerpt": "$27.97 per user / month SAVE 53% *Bundle does not include Data regions for Clockify Request DEMO FREE Communication US$ 0 for unlimited number of users Get started Unlimited message history Unlimited channels Voice and video messages 1:1 meetings (voice and video) Clockify and Plaky integrations Basic workspace analytics New Import from Slack 10 GB storage per workspace Export content Quote messages New Up to 3 apps & integrations We use your general location to display prices in the most relevant currency for your region. This information is processed in real-time, is not used to identify or track you, and is no"
+        },
+        {
+          "app": "Pumble",
+          "field": "verdict",
+          "claim_status": "checked",
+          "quote": "Start using Pumble for free, and upgrade when you need more features.",
+          "quote_exact": true,
+          "quote_token_exact": true,
+          "raw_html_only_match": true,
+          "start_fragment_found": false,
+          "end_fragment_found": false,
+          "excerpt": ""
+        }
+      ],
+      "status": 200,
+      "final_url": "https://pumble.com/pricing",
+      "title": "Pricing - Pumble™"
+    },
+    {
+      "url": "https://slack.com/pricing",
+      "uses": [
+        {
+          "app": "Slack",
+          "field": "credential_gate",
+          "claim_status": "checked",
+          "quote": "Or start with the basics for free, and upgrade at any time.",
+          "quote_exact": true,
+          "quote_token_exact": true,
+          "raw_html_only_match": true,
+          "start_fragment_found": false,
+          "end_fragment_found": false,
+          "excerpt": " Enterprise Resources Pricing Sign in TALK TO SALES GET STARTED Choose a paid subscription that's built for businesses. Or start with the basics for free, and upgrade at any time. The world's leading businesses rely on Slack Free A simpler way to chat and collaborate ₹0 Free forever GET STARTED 90 days of message history Up to ten apps 1:1 meetings 1:1 external messages Basic AI AI conversation summaries Slackbot AI workflow generation AI search AI daily recaps AI file summaries Frontline teams (add-on) SAML-based single sign-on SCIM user management EMM integration support Native data loss prevention Pro Drive pr"
+        },
+        {
+          "app": "Slack",
+          "field": "verdict",
+          "claim_status": "checked",
+          "quote": "Or start with the basics for free, and upgrade at any time.",
+          "quote_exact": true,
+          "quote_token_exact": true,
+          "raw_html_only_match": true,
+          "start_fragment_found": false,
+          "end_fragment_found": false,
+          "excerpt": " Enterprise Resources Pricing Sign in TALK TO SALES GET STARTED Choose a paid subscription that's built for businesses. Or start with the basics for free, and upgrade at any time. The world's leading businesses rely on Slack Free A simpler way to chat and collaborate ₹0 Free forever GET STARTED 90 days of message history Up to ten apps 1:1 meetings 1:1 external messages Basic AI AI conversation summaries Slackbot AI workflow generation AI search AI daily recaps AI file summaries Frontline teams (add-on) SAML-based single sign-on SCIM user management EMM integration support Native data loss prevention Pro Drive pr"
+        }
+      ],
+      "status": 200,
+      "final_url": "https://slack.com/intl/en-in/pricing",
+      "title": "Slack pricing for subscriptions: Find the right fit for your team | Slack"
+    },
+    {
+      "url": "https://supabase.com/docs/reference/api/introduction",
+      "uses": [
+        {
+          "app": "Supabase",
+          "field": "auth",
+          "claim_status": "checked",
+          "quote": "OAuth2 allows your application to generate tokens on behalf of a Supabase user, providing secure and limited access to their account without requiring their credentials.",
+          "quote_exact": true,
+          "quote_token_exact": true,
+          "raw_html_only_match": true,
+          "start_fragment_found": false,
+          "end_fragment_found": false,
+          "excerpt": "l access tokens, visit your account page. See Personal access tokens for the permission each endpoint requires. OAuth2: OAuth2 allows your application to generate tokens on behalf of a Supabase user, providing secure and limited access to their account without requiring their credentials. Use this if you're building a third-party app that needs to create or manage Supabase projects on behalf of your users. Tokens generated via OAuth2 are short-lived and tied to specific scopes to ensure your app can only perform actions that are explicitly approved by the user. See Build a Supabase Integration to set up OAuth2 fo"
+        }
+      ],
+      "status": 200,
+      "final_url": "https://supabase.com/docs/reference/api/introduction",
+      "title": "Introduction | Management API Reference | Supabase Docs"
+    },
+    {
+      "url": "https://support.aircall.io/en-gb/articles/39677926959517",
+      "uses": [
+        {
+          "app": "Aircall",
+          "field": "official_mcp",
+          "claim_status": "checked",
+          "quote": "Important: Aircall MCP is currently in beta. To join the beta, contact your Account Manager.",
+          "quote_exact": true,
+          "quote_token_exact": true,
+          "raw_html_only_match": false,
+          "start_fragment_found": false,
+          "end_fragment_found": false,
+          "excerpt": ""
+        }
+      ],
+      "status": 200,
+      "final_url": "https://support.aircall.io/en-gb/articles/39677926959517",
+      "title": "Aircall Help Center | Using Aircall MCP with AI assistants (beta)"
+    },
+    {
+      "url": "https://support.aircall.io/en-gb/articles/40626452723101",
+      "uses": [
+        {
+          "app": "Aircall",
+          "field": "official_mcp",
+          "claim_status": "checked",
+          "quote": "Aircall MCP Server (Beta)\n\nThe Aircall MCP Server is a secure bridge that feeds Aircall information to AI assistants like Claude and ChatGPT.",
+          "quote_exact": false,
+          "quote_token_exact": false,
+          "raw_html_only_match": false,
+          "start_fragment_found": false,
+          "end_fragment_found": true,
+          "excerpt": ""
+        }
+      ],
+      "status": 200,
+      "final_url": "https://support.aircall.io/en-gb/articles/40626452723101",
+      "title": "Aircall Help Center | Release Notes - October 2026"
+    },
+    {
+      "url": "https://support.liveagent.com/802463-rest-api",
+      "uses": [
+        {
+          "app": "LiveAgent",
+          "field": "api_surface",
+          "claim_status": "checked",
+          "quote": "REST API\n\n### API key\n\n### API v1\n\n### API v3",
+          "quote_exact": false,
+          "quote_token_exact": false,
+          "raw_html_only_match": false,
+          "start_fragment_found": false,
+          "end_fragment_found": false,
+          "excerpt": ""
+        }
+      ],
+      "status": 200,
+      "final_url": "https://support.liveagent.com/802463-REST-API?r=1",
+      "title": "REST API"
+    },
+    {
+      "url": "https://support.liveagent.com/840770-complete-api-reference",
+      "uses": [
+        {
+          "app": "LiveAgent",
+          "field": "api_surface",
+          "claim_status": "checked",
+          "quote": "API version 1\nAgents\nApplication\nCompanies\nConversations\nCustomers\nCustomers groups",
+          "quote_exact": false,
+          "quote_token_exact": false,
+          "raw_html_only_match": false,
+          "start_fragment_found": false,
+          "end_fragment_found": false,
+          "excerpt": ""
+        }
+      ],
+      "status": 200,
+      "final_url": "https://support.liveagent.com/840770-Complete-API-reference?r=1",
+      "title": "Complete API reference"
+    },
+    {
+      "url": "https://support.zendesk.com/hc/en-us/articles/11400026079130-Connecting-external-AI-agents-to-the-Zendesk-MCP-server-or-Zendesk-AI-agents-EAP",
+      "uses": [
+        {
+          "app": "Zendesk",
+          "field": "official_mcp",
+          "claim_status": "checked",
+          "quote": "Zendesk Bridge and external AI agents are currently in an early access program (EAP). During the EAP, Zendesk Bridge and external AI agents are available without charge. However, plan packaging and pricing might change when the feature becomes generally available. To participate, join the External AI EAP.",
+          "quote_exact": true,
+          "quote_token_exact": true,
+          "raw_html_only_match": false,
+          "start_fragment_found": true,
+          "end_fragment_found": false,
+          "excerpt": "firmation required before changes are made. Monitor agent activity in transaction logs and the observability dashboard. Zendesk Bridge and external AI agents are currently in an early access program (EAP). During the EAP, Zendesk Bridge and external AI agents are available without charge. However, plan packaging and pricing might change when the feature becomes generally available. To participate, join the External AI EAP. Zendesk Bridge provides a way to establish governed connections between the Zendesk MCP Server or Zendesk AI agents and external AI agents your organization uses, including Claude, ChatGPT, Mic"
+        },
+        {
+          "app": "Zendesk",
+          "field": "official_mcp",
+          "claim_status": "checked",
+          "quote": "Example: https://example.zendesk.com/mcp",
+          "quote_exact": true,
+          "quote_token_exact": true,
+          "raw_html_only_match": false,
+          "start_fragment_found": false,
+          "end_fragment_found": false,
+          "excerpt": ""
+        }
+      ],
+      "status": 200,
+      "final_url": "https://support.zendesk.com/hc/en-us/articles/11400026079130-Connecting-external-AI-agents-to-the-Zendesk-MCP-server-or-Zendesk-AI-agents-EAP",
+      "title": "Connecting external AI agents to the Zendesk MCP server or Zendesk AI agents (EAP) – Zendesk help"
+    },
+    {
+      "url": "https://www.gopaygent.com/",
+      "uses": [
+        {
+          "app": "Paygent Connect",
+          "field": "auth",
+          "claim_status": "checked",
+          "quote": "Authorization: Bearer pgt_live_xxx",
+          "quote_exact": true,
+          "quote_token_exact": true,
+          "raw_html_only_match": false,
+          "start_fragment_found": false,
+          "end_fragment_found": false,
+          "excerpt": ""
+        },
+        {
+          "app": "Paygent Connect",
+          "field": "api_surface",
+          "claim_status": "checked",
+          "quote": "Build marketplace payments, revenue sharing, and automated onboarding with Paygent Connect.",
+          "quote_exact": true,
+          "quote_token_exact": true,
+          "raw_html_only_match": false,
+          "start_fragment_found": false,
+          "end_fragment_found": false,
+          "excerpt": ""
+        },
+        {
+          "app": "Paygent Connect",
+          "field": "api_surface",
+          "claim_status": "checked",
+          "quote": "Accept payments, create customers, send payouts, and automate everything.",
+          "quote_exact": true,
+          "quote_token_exact": true,
+          "raw_html_only_match": false,
+          "start_fragment_found": false,
+          "end_fragment_found": false,
+          "excerpt": ""
+        },
+        {
+          "app": "Paygent Connect",
+          "field": "api_surface",
+          "claim_status": "checked",
+          "quote": "Clean, predictable, and fully documented REST APIs for every payment workflow.",
+          "quote_exact": true,
+          "quote_token_exact": true,
+          "raw_html_only_match": false,
+          "start_fragment_found": false,
+          "end_fragment_found": false,
+          "excerpt": ""
+        },
+        {
+          "app": "Paygent Connect",
+          "field": "api_surface",
+          "claim_status": "checked",
+          "quote": "Real-time event notifications with retry logic and delivery guarantees.",
+          "quote_exact": true,
+          "quote_token_exact": true,
+          "raw_html_only_match": false,
+          "start_fragment_found": false,
+          "end_fragment_found": false,
+          "excerpt": ""
+        },
+        {
+          "app": "Paygent Connect",
+          "field": "verdict",
+          "claim_status": "checked",
+          "quote": "Authorization: Bearer pgt_live_xxx",
+          "quote_exact": true,
+          "quote_token_exact": true,
+          "raw_html_only_match": false,
+          "start_fragment_found": false,
+          "end_fragment_found": false,
+          "excerpt": ""
+        },
+        {
+          "app": "Paygent Connect",
+          "field": "verdict",
+          "claim_status": "checked",
+          "quote": "Clean, predictable, and fully documented REST APIs for every payment workflow.",
+          "quote_exact": true,
+          "quote_token_exact": true,
+          "raw_html_only_match": false,
+          "start_fragment_found": false,
+          "end_fragment_found": false,
+          "excerpt": ""
+        }
+      ],
+      "status": 200,
+      "final_url": "https://www.gopaygent.com/",
+      "title": "Paygent | Merchant Payments and Tapn Tap-to-Pay Solutions"
+    },
+    {
+      "url": "https://www.gopaygent.com/developers/docs",
+      "uses": [
+        {
+          "app": "Paygent Connect",
+          "field": "api_surface",
+          "claim_status": "checked",
+          "quote": "Deep dive into the Pathfinder API, Collect.js, and Three-Step Redirect logic.",
+          "quote_exact": true,
+          "quote_token_exact": true,
+          "raw_html_only_match": false,
+          "start_fragment_found": false,
+          "end_fragment_found": false,
+          "excerpt": "Skip to content Products Developers Pricing Resources Log in Get started API REFERENCE Developer Documentation Deep dive into the Pathfinder API, Collect.js, and Three-Step Redirect logic. Collect.js Tokenize payment data securely directly from the client browser. Never let raw PAN data touch your servers, achieving the easiest SAQ-A PCI compliance. Read the Guide CollectJS.configure({ paymentType: \"cc\", callback: function(response) { if (response.error) { handleError(response); } else { submitTokenToServer(response.token); } } }); Ready to upgrade your infrastructure? Get access to wholesale rates and p"
+        },
+        {
+          "app": "Paygent Connect",
+          "field": "official_mcp",
+          "claim_status": "checked",
+          "quote": "Deep dive into the Pathfinder API, Collect.js, and Three-Step Redirect logic.",
+          "quote_exact": true,
+          "quote_token_exact": true,
+          "raw_html_only_match": false,
+          "start_fragment_found": false,
+          "end_fragment_found": false,
+          "excerpt": "Skip to content Products Developers Pricing Resources Log in Get started API REFERENCE Developer Documentation Deep dive into the Pathfinder API, Collect.js, and Three-Step Redirect logic. Collect.js Tokenize payment data securely directly from the client browser. Never let raw PAN data touch your servers, achieving the easiest SAQ-A PCI compliance. Read the Guide CollectJS.configure({ paymentType: \"cc\", callback: function(response) { if (response.error) { handleError(response); } else { submitTokenToServer(response.token); } } }); Ready to upgrade your infrastructure? Get access to wholesale rates and p"
+        }
+      ],
+      "status": 200,
+      "final_url": "https://www.gopaygent.com/developers/docs",
+      "title": "Paygent | The Premier Stripe & PayPal Alternative for API Payments"
+    },
+    {
+      "url": "https://www.gopaygent.com/developers/mcp",
+      "uses": [
+        {
+          "app": "Paygent Connect",
+          "field": "official_mcp",
+          "claim_status": "checked",
+          "quote": "404\nPage not found\n\nThe page you're looking for doesn't exist or has been moved. Let's get you back on track.",
+          "quote_exact": true,
+          "quote_token_exact": true,
+          "raw_html_only_match": false,
+          "start_fragment_found": false,
+          "end_fragment_found": false,
+          "excerpt": "Skip to content Products Developers Pricing Resources Log in Get started 404 Page not found The page you're looking for doesn't exist or has been moved. Let's get you back on track. Back to Home Contact Support POPULAR PAGES Pricing Payments Documentation Tapn Blog Status The intelligent payment gateway for modern businesses. Products Payments Subscriptions Connect Radar Billing Terminal Developers Documentation API Reference Webhooks Status Company Blog Partners Contact Security Resources Pricing Case Studies Guides © 2026 Paygent, Inc. All rights reserved. Privacy "
+        }
+      ],
+      "status": 200,
+      "final_url": "https://www.gopaygent.com/developers/mcp",
+      "title": "Paygent | The Premier Stripe & PayPal Alternative for API Payments"
+    },
+    {
+      "url": "https://www.gopaygent.com/developers/sdk",
+      "uses": [
+        {
+          "app": "Paygent Connect",
+          "field": "official_mcp",
+          "claim_status": "checked",
+          "quote": "Pre-built integrations for iOS, Android, and Windows/Linux environments.",
+          "quote_exact": true,
+          "quote_token_exact": true,
+          "raw_html_only_match": false,
+          "start_fragment_found": false,
+          "end_fragment_found": false,
+          "excerpt": ""
+        }
+      ],
+      "status": 200,
+      "final_url": "https://www.gopaygent.com/developers/sdk",
+      "title": "Paygent | The Premier Stripe & PayPal Alternative for API Payments"
+    },
+    {
+      "url": "https://www.gopaygent.com/pricing",
+      "uses": [
+        {
+          "app": "Paygent Connect",
+          "field": "credential_gate",
+          "claim_status": "checked",
+          "quote": "We offer a sandbox environment with full API access at no cost. You can test transactions, webhooks, and integrations before going live. No credit card required to start.",
+          "quote_exact": false,
+          "quote_token_exact": false,
+          "raw_html_only_match": false,
+          "start_fragment_found": false,
+          "end_fragment_found": false,
+          "excerpt": ""
+        },
+        {
+          "app": "Paygent Connect",
+          "field": "credential_gate",
+          "claim_status": "checked",
+          "quote": "PAYGENT PLATFORM\nDeveloper & B2B\n\nFor SaaS, Wholesalers, and Platforms.\n\nMONTHLY GATEWAY\n\n$15\n\nPER TRANSACTION\n\n$0.10",
+          "quote_exact": true,
+          "quote_token_exact": true,
+          "raw_html_only_match": false,
+          "start_fragment_found": false,
+          "end_fragment_found": false,
+          "excerpt": ""
+        },
+        {
+          "app": "Paygent Connect",
+          "field": "verdict",
+          "claim_status": "checked",
+          "quote": "We offer a sandbox environment with full API access at no cost. You can test transactions, webhooks, and integrations before going live. No credit card required to start.",
+          "quote_exact": false,
+          "quote_token_exact": false,
+          "raw_html_only_match": false,
+          "start_fragment_found": false,
+          "end_fragment_found": false,
+          "excerpt": ""
+        },
+        {
+          "app": "Paygent Connect",
+          "field": "verdict",
+          "claim_status": "checked",
+          "quote": "PAYGENT PLATFORM\nDeveloper & B2B\n\nFor SaaS, Wholesalers, and Platforms.\n\nMONTHLY GATEWAY\n\n$15\n\nPER TRANSACTION\n\n$0.10",
+          "quote_exact": true,
+          "quote_token_exact": true,
+          "raw_html_only_match": false,
+          "start_fragment_found": false,
+          "end_fragment_found": false,
+          "excerpt": ""
+        }
+      ],
+      "status": 200,
+      "final_url": "https://www.gopaygent.com/pricing",
+      "title": "Paygent | The Premier Stripe & PayPal Alternative for API Payments"
+    },
+    {
+      "url": "https://www.gopaygent.com/products/connect",
+      "uses": [
+        {
+          "app": "Paygent Connect",
+          "field": "credential_gate",
+          "claim_status": "checked",
+          "quote": "Use the Pathfinder API to completely automate underwriting and onboarding within your own application.",
+          "quote_exact": true,
+          "quote_token_exact": true,
+          "raw_html_only_match": false,
+          "start_fragment_found": false,
+          "end_fragment_found": false,
+          "excerpt": "CE API Platform The embedded finance infrastructure for SaaS platforms and vertical software. Board Merchants Instantly Use the Pathfinder API to completely automate underwriting and onboarding within your own application. Automated Underwriting Zero-friction onboarding lets your users accept payments within minutes, not days. Split Payments Route funds between multiple parties automatically and handle complex marketplace payouts. White-Label Control Maintain your brand identity. You control the UI, we handle the compliance and routing. Ready to upgrade your infrastructure? Get access to wholesale rates and power"
+        }
+      ],
+      "status": 200,
+      "final_url": "https://www.gopaygent.com/products/connect",
+      "title": "Paygent | The Premier Stripe & PayPal Alternative for API Payments"
+    },
+    {
+      "url": "https://www.gopaygent.com/signup",
+      "uses": [
+        {
+          "app": "Paygent Connect",
+          "field": "credential_gate",
+          "claim_status": "checked",
+          "quote": "MERCHANT SIGNUP\nCreate Your Account\n\nJoin Paygent and get access to the TapN Soft POS and industry-leading payment gateways.",
+          "quote_exact": true,
+          "quote_token_exact": true,
+          "raw_html_only_match": false,
+          "start_fragment_found": false,
+          "end_fragment_found": false,
+          "excerpt": "Skip to content Products Developers Pricing Resources Log in Get started MERCHANT SIGNUP Create Your Account Join Paygent and get access to the TapN Soft POS and industry-leading payment gateways. Legal Business Name * First Name * Last Name * Business Email * Phone Number Get Started By signing up, you agree to Paygent's Terms of Service and Privacy Policy. Ready to upgrade your infrastructure? Get access to wholesale rates and powerful developer tools instantly. Start Building Now The intelligent payment gateway for modern businesses. Products Payments Subscription"
+        }
+      ],
+      "status": 200,
+      "final_url": "https://www.gopaygent.com/signup",
+      "title": "Get Started with Paygent | Merchant Onboarding Request"
+    },
+    {
+      "url": "https://www.gopaygent.com/terms",
+      "uses": [
+        {
+          "app": "Paygent Connect",
+          "field": "credential_gate",
+          "claim_status": "checked",
+          "quote": "Provide accurate business and beneficial ownership information during onboarding.",
+          "quote_exact": true,
+          "quote_token_exact": true,
+          "raw_html_only_match": false,
+          "start_fragment_found": false,
+          "end_fragment_found": false,
+          "excerpt": "logy provider facilitating communication between merchants, acquiring banks, and card networks. 3. Merchant Obligations Provide accurate business and beneficial ownership information during onboarding. Comply with all applicable card network rules (Visa, Mastercard, Discover, Amex). Maintain PCI DSS compliance appropriate to your integration method. Not use the platform for prohibited activities including illegal goods, unlicensed financial services, or transactions that violate OFAC sanctions. Respond to chargebacks and disputes within the required timeframes. 4. Fees & Billing Transaction fees, monthly platform"
+        },
+        {
+          "app": "Paygent Connect",
+          "field": "verdict",
+          "claim_status": "checked",
+          "quote": "Provide accurate business and beneficial ownership information during onboarding.",
+          "quote_exact": true,
+          "quote_token_exact": true,
+          "raw_html_only_match": false,
+          "start_fragment_found": false,
+          "end_fragment_found": false,
+          "excerpt": "logy provider facilitating communication between merchants, acquiring banks, and card networks. 3. Merchant Obligations Provide accurate business and beneficial ownership information during onboarding. Comply with all applicable card network rules (Visa, Mastercard, Discover, Amex). Maintain PCI DSS compliance appropriate to your integration method. Not use the platform for prohibited activities including illegal goods, unlicensed financial services, or transactions that violate OFAC sanctions. Respond to chargebacks and disputes within the required timeframes. 4. Fees & Billing Transaction fees, monthly platform"
+        }
+      ],
+      "status": 200,
+      "final_url": "https://www.gopaygent.com/terms",
+      "title": "Paygent | The Premier Stripe & PayPal Alternative for API Payments"
+    },
+    {
+      "url": "https://www.gorgias.com/pricing",
+      "uses": [
+        {
+          "app": "Gorgias",
+          "field": "credential_gate",
+          "claim_status": "checked",
+          "quote": "Yes, the Gorgias trial gives you access to all features so you can fully test the platform before committing.",
+          "quote_exact": false,
+          "quote_token_exact": false,
+          "raw_html_only_match": true,
+          "start_fragment_found": false,
+          "end_fragment_found": false,
+          "excerpt": ""
+        },
+        {
+          "app": "Gorgias",
+          "field": "credential_gate",
+          "claim_status": "checked",
+          "quote": "The Gorgias trial period lasts 7 days.",
+          "quote_exact": false,
+          "quote_token_exact": false,
+          "raw_html_only_match": true,
+          "start_fragment_found": false,
+          "end_fragment_found": false,
+          "excerpt": ""
+        },
+        {
+          "app": "Gorgias",
+          "field": "credential_gate",
+          "claim_status": "checked",
+          "quote": "No, you don't need to enter payment info to start the Gorgias trial (/signup).",
+          "quote_exact": false,
+          "quote_token_exact": false,
+          "raw_html_only_match": true,
+          "start_fragment_found": false,
+          "end_fragment_found": false,
+          "excerpt": ""
+        },
+        {
+          "app": "Gorgias",
+          "field": "verdict",
+          "claim_status": "checked",
+          "quote": "Yes, the Gorgias trial gives you access to all features so you can fully test the platform before committing.",
+          "quote_exact": false,
+          "quote_token_exact": false,
+          "raw_html_only_match": true,
+          "start_fragment_found": false,
+          "end_fragment_found": false,
+          "excerpt": ""
+        }
+      ],
+      "status": 200,
+      "final_url": "https://www.gorgias.com/pricing",
+      "title": "Gorgias Pricing - AI-Powered Ecommerce CX Platform Plans"
+    },
+    {
+      "url": "https://www.ipayx.ai/docs/api",
+      "uses": [
+        {
+          "app": "iPayX",
+          "field": "auth",
+          "claim_status": "checked",
+          "quote": "Every request requires a Bearer token in the `Authorization` header. Keys start with `ipx_live_`.",
+          "quote_exact": false,
+          "quote_token_exact": true,
+          "raw_html_only_match": false,
+          "start_fragment_found": false,
+          "end_fragment_found": false,
+          "excerpt": "ates · audit/document Signed webhooks HMAC-SHA256 · audit.completed Marketplace ready Zapier · n8n · MCP Authentication Every request requires a Bearer token in the Authorization header. Keys start with ipx_live_. HTTP Authorization: Bearer ipx_live_xxxxxxxxxxxx Base URL URL https://hvujzsdwcoweirroubeh.supabase.co/functions/v1/fx-public-api-v1 POST /audit Run a forensic audit on a single transaction. Returns a 1-10 score, hidden spread vs mid-market, and estimated loss. cURL JavaScript Python bash curl -X POST https://hvujzsdwcoweirroubeh.supabase.co/functions/v1/fx-public-api-v1/audit \\ -H \"Authorization: Beare"
+        },
+        {
+          "app": "iPayX",
+          "field": "api_surface",
+          "claim_status": "checked",
+          "quote": "REST API · v1",
+          "quote_exact": true,
+          "quote_token_exact": true,
+          "raw_html_only_match": false,
+          "start_fragment_found": false,
+          "end_fragment_found": false,
+          "excerpt": ""
+        },
+        {
+          "app": "iPayX",
+          "field": "api_surface",
+          "claim_status": "checked",
+          "quote": "3 endpoints\n\naudit · rates · audit/document",
+          "quote_exact": true,
+          "quote_token_exact": true,
+          "raw_html_only_match": false,
+          "start_fragment_found": false,
+          "end_fragment_found": false,
+          "excerpt": ""
+        },
+        {
+          "app": "iPayX",
+          "field": "api_surface",
+          "claim_status": "checked",
+          "quote": "Signed webhooks\n\nHMAC-SHA256 · audit.completed",
+          "quote_exact": true,
+          "quote_token_exact": true,
+          "raw_html_only_match": false,
+          "start_fragment_found": false,
+          "end_fragment_found": false,
+          "excerpt": ""
+        },
+        {
+          "app": "iPayX",
+          "field": "verdict",
+          "claim_status": "checked",
+          "quote": "Every request requires a Bearer token in the `Authorization` header. Keys start with `ipx_live_`.",
+          "quote_exact": false,
+          "quote_token_exact": true,
+          "raw_html_only_match": false,
+          "start_fragment_found": false,
+          "end_fragment_found": false,
+          "excerpt": "ates · audit/document Signed webhooks HMAC-SHA256 · audit.completed Marketplace ready Zapier · n8n · MCP Authentication Every request requires a Bearer token in the Authorization header. Keys start with ipx_live_. HTTP Authorization: Bearer ipx_live_xxxxxxxxxxxx Base URL URL https://hvujzsdwcoweirroubeh.supabase.co/functions/v1/fx-public-api-v1 POST /audit Run a forensic audit on a single transaction. Returns a 1-10 score, hidden spread vs mid-market, and estimated loss. cURL JavaScript Python bash curl -X POST https://hvujzsdwcoweirroubeh.supabase.co/functions/v1/fx-public-api-v1/audit \\ -H \"Authorization: Beare"
+        },
+        {
+          "app": "iPayX",
+          "field": "verdict",
+          "claim_status": "checked",
+          "quote": "3 endpoints\n\naudit · rates · audit/document",
+          "quote_exact": true,
+          "quote_token_exact": true,
+          "raw_html_only_match": false,
+          "start_fragment_found": false,
+          "end_fragment_found": false,
+          "excerpt": ""
+        }
+      ],
+      "status": 200,
+      "final_url": "https://www.ipayx.ai/docs/api",
+      "title": "FX Audit API Docs · iPayX Protocol"
+    },
+    {
+      "url": "https://www.ipayx.ai/docs/mcp-server",
+      "uses": [
+        {
+          "app": "iPayX",
+          "field": "credential_gate",
+          "claim_status": "checked",
+          "quote": "**Free tier:** 10 audits / day per API key.",
+          "quote_exact": false,
+          "quote_token_exact": true,
+          "raw_html_only_match": false,
+          "start_fragment_found": false,
+          "end_fragment_found": false,
+          "excerpt": ""
+        },
+        {
+          "app": "iPayX",
+          "field": "credential_gate",
+          "claim_status": "checked",
+          "quote": "**Paid tier ($199):** unlimited audits, priority routing.",
+          "quote_exact": false,
+          "quote_token_exact": true,
+          "raw_html_only_match": false,
+          "start_fragment_found": false,
+          "end_fragment_found": false,
+          "excerpt": ""
+        },
+        {
+          "app": "iPayX",
+          "field": "official_mcp",
+          "claim_status": "checked",
+          "quote": "Production MCP: `https://hvujzsdwcoweirroubeh.supabase.co/functions/v1/mcp-server`",
+          "quote_exact": false,
+          "quote_token_exact": true,
+          "raw_html_only_match": false,
+          "start_fragment_found": false,
+          "end_fragment_found": false,
+          "excerpt": ""
+        }
+      ],
+      "status": 200,
+      "final_url": "https://www.ipayx.ai/docs/mcp-server",
+      "title": "iPayX MCP Server — Documentation"
+    },
+    {
+      "url": "https://www.ipayx.ai/mcp-config",
+      "uses": [
+        {
+          "app": "iPayX",
+          "field": "auth",
+          "claim_status": "checked",
+          "quote": "No account or API key required. Transaction audits and forensic reports share 3 free audits per IP per calendar month (UTC). Rate lookups and comparisons are free without an audit quota.",
+          "quote_exact": true,
+          "quote_token_exact": true,
+          "raw_html_only_match": false,
+          "start_fragment_found": false,
+          "end_fragment_found": false,
+          "excerpt": "epSeek, Qwen, MiniMax, Copilot, Cursor, n8n - real-time forensic FX audit. MCP SERVER URL https://mcp.ipayx.ai/mcp Copy No account or API key required. Transaction audits and forensic reports share 3 free audits per IP per calendar month (UTC). Rate lookups and comparisons are free without an audit quota. Add to Claude Settings → Connectors → Add custom connector Server URL: https://mcp.ipayx.ai/mcp Pick your AI client Claude (Anthropic) ChatGPT (OpenAI) Grok (xAI) Perplexity DeepSeek Qwen (Alibaba) MiniMax Microsoft Copilot Studio Cursor / Windsurf / Zed / Continue Cline n8n / Zapier / Pipedream Desktop: claude_"
+        },
+        {
+          "app": "iPayX",
+          "field": "credential_gate",
+          "claim_status": "checked",
+          "quote": "No account or API key required. Transaction audits and forensic reports share 3 free audits per IP per calendar month (UTC). Rate lookups and comparisons are free without an audit quota.",
+          "quote_exact": true,
+          "quote_token_exact": true,
+          "raw_html_only_match": false,
+          "start_fragment_found": false,
+          "end_fragment_found": false,
+          "excerpt": "epSeek, Qwen, MiniMax, Copilot, Cursor, n8n - real-time forensic FX audit. MCP SERVER URL https://mcp.ipayx.ai/mcp Copy No account or API key required. Transaction audits and forensic reports share 3 free audits per IP per calendar month (UTC). Rate lookups and comparisons are free without an audit quota. Add to Claude Settings → Connectors → Add custom connector Server URL: https://mcp.ipayx.ai/mcp Pick your AI client Claude (Anthropic) ChatGPT (OpenAI) Grok (xAI) Perplexity DeepSeek Qwen (Alibaba) MiniMax Microsoft Copilot Studio Cursor / Windsurf / Zed / Continue Cline n8n / Zapier / Pipedream Desktop: claude_"
+        },
+        {
+          "app": "iPayX",
+          "field": "official_mcp",
+          "claim_status": "checked",
+          "quote": "One MCP server. Claude, ChatGPT, Grok, Perplexity, DeepSeek, Qwen, MiniMax, Copilot, Cursor, n8n — real-time forensic FX audit.",
+          "quote_exact": true,
+          "quote_token_exact": true,
+          "raw_html_only_match": false,
+          "start_fragment_found": false,
+          "end_fragment_found": false,
+          "excerpt": ""
+        },
+        {
+          "app": "iPayX",
+          "field": "official_mcp",
+          "claim_status": "checked",
+          "quote": "MCP Server URL\n\n`https://mcp.ipayx.ai/mcp` Copy",
+          "quote_exact": false,
+          "quote_token_exact": true,
+          "raw_html_only_match": false,
+          "start_fragment_found": false,
+          "end_fragment_found": false,
+          "excerpt": ""
+        },
+        {
+          "app": "iPayX",
+          "field": "official_mcp",
+          "claim_status": "checked",
+          "quote": "Read-only server. It never moves money.",
+          "quote_exact": true,
+          "quote_token_exact": true,
+          "raw_html_only_match": false,
+          "start_fragment_found": false,
+          "end_fragment_found": false,
+          "excerpt": ""
+        }
+      ],
+      "status": 200,
+      "final_url": "https://www.ipayx.ai/mcp",
+      "title": "iPayX MCP — Forensic FX audit for Claude, ChatGPT, Grok, Perplexity"
+    },
+    {
+      "url": "https://www.ipayx.ai/pricing",
+      "uses": [
+        {
+          "app": "iPayX",
+          "field": "credential_gate",
+          "claim_status": "checked",
+          "quote": "Free audit included. Upgrade to PDF reports or production-grade API.",
+          "quote_exact": true,
+          "quote_token_exact": true,
+          "raw_html_only_match": false,
+          "start_fragment_found": false,
+          "end_fragment_found": false,
+          "excerpt": ""
+        },
+        {
+          "app": "iPayX",
+          "field": "credential_gate",
+          "claim_status": "checked",
+          "quote": "You have 3 free audits.",
+          "quote_exact": true,
+          "quote_token_exact": true,
+          "raw_html_only_match": false,
+          "start_fragment_found": false,
+          "end_fragment_found": false,
+          "excerpt": " PDF reports or production-grade API. Back to home iPayX Pricing Pricing Four options. No jargon, no hidden tiers. Free You have 3 free audits. $0 3 audits, lifetime FX Score 1-10 Automatic markup detection Multi-bank (PDF / CSV) Start free MOST POPULAR Credit Pack 100 100 audits. Never expire. Use them at your own pace. $99 USD One-time payment · $0.99 / audit 100 credits added instantly No subscription No expiration date Full PDF reports Buy pack - $99 Unlimited Unlimited audits. For teams running audits every week. $299 USD / mo Cancel anytime Unlimited audits Priority support access All Pack features included"
+        },
+        {
+          "app": "iPayX",
+          "field": "credential_gate",
+          "claim_status": "checked",
+          "quote": "$299USD / mo",
+          "quote_exact": false,
+          "quote_token_exact": false,
+          "raw_html_only_match": false,
+          "start_fragment_found": false,
+          "end_fragment_found": false,
+          "excerpt": ""
+        },
+        {
+          "app": "iPayX",
+          "field": "verdict",
+          "claim_status": "checked",
+          "quote": "Free audit included. Upgrade to PDF reports or production-grade API.",
+          "quote_exact": true,
+          "quote_token_exact": true,
+          "raw_html_only_match": false,
+          "start_fragment_found": false,
+          "end_fragment_found": false,
+          "excerpt": ""
+        }
+      ],
+      "status": 200,
+      "final_url": "https://www.ipayx.ai/pricing",
+      "title": "Pricing — iPayX Forensic Reports & FX Audit API"
+    },
+    {
+      "url": "https://www.liveagent.com/pricing/",
+      "uses": [
+        {
+          "app": "LiveAgent",
+          "field": "credential_gate",
+          "claim_status": "checked",
+          "quote": "API keys\n\n1\n\n5\n\n10\n\nUnlimited\n\nLet third-party apps retrieve and push data and manage tickets from outside LiveAgent.",
+          "quote_exact": false,
+          "quote_token_exact": false,
+          "raw_html_only_match": false,
+          "start_fragment_found": false,
+          "end_fragment_found": false,
+          "excerpt": "d Event rules 50 150 500 Unlimited Time rules - Not included 30 100 Unlimited Custom roles - Not included 2 5 Unlimited API keys 1 5 10 Unlimited Custom ticket filters per agent 300 500 1,000 Unlimited Ticket history Unlimited Unlimited Unlimited Unlimited Hide extra limits 7,000+ businesses worldwide rely on LiveAgent LiveAgent is reliable, reasonably priced, and simply a great choice for any fast-paced online business! Allan Bjerkan · Norske Automaten We have been using LiveAgent since Spring 2016 and we love that we can attend everything from any computer and the customers get served by the same agent Ville Ma"
+        },
+        {
+          "app": "LiveAgent",
+          "field": "official_mcp",
+          "claim_status": "checked",
+          "quote": "Business and Enterprise: connect LiveAgent’s MCP server to external AI tools such as Claude.",
+          "quote_exact": false,
+          "quote_token_exact": false,
+          "raw_html_only_match": true,
+          "start_fragment_found": false,
+          "end_fragment_found": false,
+          "excerpt": ""
+        }
+      ],
+      "status": 200,
+      "final_url": "https://www.liveagent.com/pricing/",
+      "title": "LiveAgent Pricing & Plans: AI on Every Plan, 30-Day Free Trial"
+    },
+    {
+      "url": "https://www.zendesk.com/pricing/",
+      "uses": [
+        {
+          "app": "Zendesk",
+          "field": "credential_gate",
+          "claim_status": "checked",
+          "quote": "Zendesk offers a free trial so you can explore the product before committing to a paid plan. During the 14-day trial period:",
+          "quote_exact": true,
+          "quote_token_exact": true,
+          "raw_html_only_match": true,
+          "start_fragment_found": false,
+          "end_fragment_found": false,
+          "excerpt": "renewal, depending on your subscription terms. Learn more here or contact us for details. How does the free trial work? Zendesk offers a free trial so you can explore the product before committing to a paid plan. During the 14-day trial period: Default plan: you'll have access to all features on the Zendesk Customer Service Suite Professional plan for 14 days. If you want to trial a specific plan, contact us. If you want to trial an Employee Service Suite plan see here. Add-ons: Copilot is included by default. If you'd like to try other add-ons please contact Sales. AI access: trial access to AI features is avail"
+        },
+        {
+          "app": "Zendesk",
+          "field": "verdict",
+          "claim_status": "checked",
+          "quote": "Zendesk offers a free trial so you can explore the product before committing to a paid plan. During the 14-day trial period:",
+          "quote_exact": true,
+          "quote_token_exact": true,
+          "raw_html_only_match": true,
+          "start_fragment_found": false,
+          "end_fragment_found": false,
+          "excerpt": "renewal, depending on your subscription terms. Learn more here or contact us for details. How does the free trial work? Zendesk offers a free trial so you can explore the product before committing to a paid plan. During the 14-day trial period: Default plan: you'll have access to all features on the Zendesk Customer Service Suite Professional plan for 14 days. If you want to trial a specific plan, contact us. If you want to trial an Employee Service Suite plan see here. Add-ons: Copilot is included by default. If you'd like to try other add-ons please contact Sales. AI access: trial access to AI features is avail"
+        }
+      ],
+      "status": 200,
+      "final_url": "https://www.zendesk.com/in/pricing/#georedirect",
+      "title": "Zendesk Pricing Plans | Starting from £15/month | Zendesk India"
+    }
+  ]
+}

@@ -1,0 +1,181 @@
+{
+  "app": {
+    "number": 2,
+    "name": "HubSpot",
+    "category": "CRM and Sales",
+    "hint": "hubspot.com"
+  },
+  "replayed_at": "2026-11-23T18:45:07.175457+00:00",
+  "source_passes": [
+    "data/pass2/002.json",
+    "data/pass4/002.json"
+  ],
+  "source_searches": [
+    "data/new_search/002.json",
+    "data/pass4_search/002.json"
+  ],
+  "publication_date_note": "Search publication labels are retained exactly; null means no label was available. Relative labels are not exact dates.",
+  "claims": {
+    "auth": {
+      "value": [
+        "OAuth 2.0",
+        "Bearer token",
+        "API key",
+        "API token"
+      ],
+      "status": "provisional",
+      "sources": [
+        "https://developers.hubspot.com/changelog/new-oauth-v3-api-endpoints-and-standardized-error-responses",
+        "https://developers.hubspot.com/blog/harnessing-the-power-of-hubspots-public-apis-with-postman",
+        "https://developers.hubspot.com/changelog/remote-hubspot-mcp-server-is-now-generally-available",
+        "https://developers.hubspot.com/docs/apps/developer-platform/build-apps/integrate-with-the-remote-hubspot-mcp-server",
+        "https://developers.hubspot.com/ai-tools/mcp?faq=5",
+        "https://community.hubspot.com/t/remote-hubspot-mcp-server-is-now-generally-available/148286",
+        "https://developers.hubspot.com/blog/hubspot-service-keys-the-right-api-credential-for-data-integrations",
+        "https://community.hubspot.com/t/new-oauth-v3-api-endpoints-and-standardized-error-responses/145422"
+      ],
+      "evidence": [
+        {
+          "value": "OAuth 2.0",
+          "url": "https://developers.hubspot.com/changelog/new-oauth-v3-api-endpoints-and-standardized-error-responses",
+          "excerpt": "ed error response formatting. What's Changing? New Oauth v3 Token Endpoints To align with OAuth 2.0 security best practices, we have introduced two new v3 OAuth API endpoints designed to keep sensitive credentials out of server logs and browser histories. POST /v3/toke",
+          "published_label": "10 months ago"
+        },
+        {
+          "value": "OAuth 2.0",
+          "url": "https://developers.hubspot.com/blog/harnessing-the-power-of-hubspots-public-apis-with-postman",
+          "excerpt": "the OAuth token from HubSpot . This is done by creating an app in HubSpot, setting up the OAuth 2.0 settings, and then authorizing the app to get the token. Step 2: Add the OAuth token to Postman: Within the Postman UI, navigate to the API tab, and select the API conta",
+          "published_label": "3.0 years ago"
+        },
+        {
+          "value": "Bearer token",
+          "url": "https://developers.hubspot.com/blog/harnessing-the-power-of-hubspots-public-apis-with-postman",
+          "excerpt": "t to access, and then click on the \"Authorization\" tab. From the \"Type\" dropdown, select \"Bearer Token\". Paste your private app access token in the blank field, and click “Save authorization.” Send an API Request Once you've forked the API with the API endpoint you need a",
+          "published_label": "3.0 years ago"
+        },
+        {
+          "value": "OAuth 2.0",
+          "url": "https://developers.hubspot.com/changelog/remote-hubspot-mcp-server-is-now-generally-available",
+          "excerpt": "Remote HubSpot MCP server is now generally available Skip to main content Skip to footer HubSpot Developer Changelog Home › HubSpot Developer Changelog › Remote HubSpot MCP server is now generally available Remote HubSpot MCP server is now generally available Announced: Apr 13, 2",
+          "published_label": "7 months ago"
+        },
+        {
+          "value": "OAuth 2.0",
+          "url": "https://developers.hubspot.com/docs/apps/developer-platform/build-apps/integrate-with-the-remote-hubspot-mcp-server",
+          "excerpt": "Integrate AI tools with the HubSpot MCP server - HubSpot docs Documentation Index Fetch the complete documentation index at: /docs/llms.txt Use this file to discover all available pages before exploring further. Skip to main content The HubSpot Model Context Protocol (MCP) server",
+          "published_label": "7 months ago"
+        },
+        {
+          "value": "OAuth 2.0",
+          "url": "https://developers.hubspot.com/ai-tools/mcp?faq=5",
+          "excerpt": "r follow the same distribution limits as other HubSpot apps.  HubSpot MCP server supports OAuth 2.0. Later in 2025, we will align with MCP specification requirements for OAuth 2.1 support. MCP clients connecting to our server will need to implement OAuth 2.1 authentica",
+          "published_label": null
+        },
+        {
+          "value": "OAuth 2.0",
+          "url": "https://community.hubspot.com/t/remote-hubspot-mcp-server-is-now-generally-available/148286",
+          "excerpt": "Remote HubSpot MCP server is now generally available - Developer Announcements - HubSpot Community Remote HubSpot MCP server is now generally available Develop, Build & Integrate Developer Announcements announcement jmclaren April 13, 2026,  5:16pm 1 Original Changelog post: Remo",
+          "published_label": "7 months ago"
+        },
+        {
+          "value": "API key",
+          "url": "https://developers.hubspot.com/blog/hubspot-service-keys-the-right-api-credential-for-data-integrations",
+          "excerpt": "Keys → create a key, name it, add scopes,  copy/paste it, and use it as a Bearer token or API key. What you gain compared to legacy private apps: Rotation without disruption. You can rotate a Service Key without rebuilding the integration from scratch. Audit logging.",
+          "published_label": "6 months ago"
+        },
+        {
+          "value": "API token",
+          "url": "https://developers.hubspot.com/blog/hubspot-service-keys-the-right-api-credential-for-data-integrations",
+          "excerpt": "eneral technical admin or ops person who’s never touched a terminal but has been managing API tokens for your team’s data pipelines or systems, you might not even know yet that things have changed. This post is for all three of you! The CLI-and-project model is the rig",
+          "published_label": "6 months ago"
+        },
+        {
+          "value": "Bearer token",
+          "url": "https://developers.hubspot.com/blog/hubspot-service-keys-the-right-api-credential-for-data-integrations",
+          "excerpt": "oards are technical, but not developers. They know their way around API documentation and bearer tokens, but they’re not running hs project deploy from their terminal. For this group, Service Keys are the missing puzzle piece. What Service Keys actually are Service Keys a",
+          "published_label": "6 months ago"
+        },
+        {
+          "value": "OAuth 2.0",
+          "url": "https://community.hubspot.com/t/new-oauth-v3-api-endpoints-and-standardized-error-responses/145422",
+          "excerpt": "ed error response formatting. What’s Changing? New Oauth v3 Token Endpoints To align with OAuth 2.0 security best practices, we have introduced two new v3 OAuth API endpoints designed to keep sensitive credentials out of server logs and browser histories. POST /v3/toke",
+          "published_label": "10 months ago"
+        }
+      ],
+      "reason": "Provisional extraction; validate scope and completeness against cited pages."
+    },
+    "credential_gate": {
+      "value": [
+        "self_serve_free"
+      ],
+      "status": "provisional",
+      "sources": [
+        "https://developers.hubspot.com/blog/harnessing-the-power-of-hubspots-public-apis-with-postman"
+      ],
+      "evidence": [
+        {
+          "value": "self_serve_free",
+          "url": "https://developers.hubspot.com/blog/harnessing-the-power-of-hubspots-public-apis-with-postman",
+          "excerpt": "eloper test account. Need a HubSpot account? Create a test account after signing up for a free developer account . A HubSpot app associated with your HubSpot account (the app can be either public or private ). Please note that you must be a Super Admin to install a public app in a",
+          "published_label": "3.0 years ago"
+        }
+      ],
+      "reason": "Provisional extraction; validate scope and completeness against cited pages."
+    },
+    "api_surface": {
+      "value": "unknown",
+      "status": "provisional",
+      "sources": [],
+      "evidence": [],
+      "reason": "No sufficiently specific official evidence extracted."
+    },
+    "official_mcp": {
+      "value": "vendor_server",
+      "status": "provisional",
+      "sources": [
+        "https://developers.hubspot.com/docs/apps/developer-platform/build-apps/integrate-with-the-remote-hubspot-mcp-server",
+        "https://developers.hubspot.com/ai-tools/mcp?faq=5"
+      ],
+      "evidence": [
+        {
+          "value": "vendor_server",
+          "url": "https://developers.hubspot.com/docs/apps/developer-platform/build-apps/integrate-with-the-remote-hubspot-mcp-server",
+          "excerpt": "without requiring users to understand complex API structures. For developers, the remote HubSpot MCP server provides secure, granular access to HubSpot CRM data through AI agents and third-party applications, and allows teams to build custom workflows, automate reporting, and integrate",
+          "published_label": "7 months ago",
+          "context_note": "Vendor-owned server statement; review date and access scope."
+        },
+        {
+          "value": "vendor_server",
+          "url": "https://developers.hubspot.com/ai-tools/mcp?faq=5",
+          "excerpt": "mbedding HubSpot context into an agentic tool you're building, there's a server for that. HubSpot MCP server (Remote) The HubSpot MCP server enables you to give any MCP-compatible AI tool or agent secure read and write access to your HubSpot CRM data — contacts, deals, engagements, and more. Integrate with HubSpot MC",
+          "published_label": null,
+          "context_note": "Vendor-owned server statement; review date and access scope."
+        }
+      ],
+      "reason": "Provisional; check date, ownership and access scope."
+    },
+    "composio_toolkit": {
+      "value": "listed",
+      "status": "provisional",
+      "sources": [
+        "https://docs.composio.dev/toolkits/hubspot"
+      ],
+      "evidence": [],
+      "reason": "Catalog match only; not vendor MCP evidence."
+    },
+    "verdict": {
+      "value": "unknown",
+      "status": "provisional",
+      "sources": [],
+      "evidence": [],
+      "reason": "No sufficiently specific official evidence extracted."
+    }
+  },
+  "validation": [
+    "Automatic extraction is provisional until independently reviewed",
+    "Unknown is not evidence of absence",
+    "Composio evidence cannot establish vendor MCP",
+    "Client-only and negated MCP statements are not vendor-server proof",
+    "API breadth is a text-coverage heuristic, not an endpoint census"
+  ]
+}

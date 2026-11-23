@@ -1,0 +1,125 @@
+{
+  "app": {
+    "number": 81,
+    "name": "Stripe",
+    "category": "Finance and Fintech",
+    "hint": "stripe.com/docs/api"
+  },
+  "replayed_at": "2026-11-23T18:41:38.300210+00:00",
+  "source_passes": [
+    "data/pass2/081.json",
+    "data/pass4/081.json"
+  ],
+  "source_searches": [
+    "data/new_search/081.json",
+    "data/pass4_search/081.json"
+  ],
+  "publication_date_note": "Search publication labels are retained exactly; null means no label was available. Relative labels are not exact dates.",
+  "claims": {
+    "auth": {
+      "value": [
+        "API key",
+        "Bearer token"
+      ],
+      "status": "provisional",
+      "sources": [
+        "https://stripe.com/in/legal/api-key-security",
+        "https://support.stripe.com/questions/what-are-stripe-api-keys-and-how-to-find-them",
+        "https://docs.stripe.com/mcp"
+      ],
+      "evidence": [
+        {
+          "value": "API key",
+          "url": "https://stripe.com/in/legal/api-key-security",
+          "excerpt": "User Notice—API Key Security Last updated: August 14, 2026 Your Stripe API key is a credential that authenticates your account to Stripe - it is how Stripe verifies that a request is coming",
+          "published_label": "3 months ago"
+        },
+        {
+          "value": "API key",
+          "url": "https://support.stripe.com/questions/what-are-stripe-api-keys-and-how-to-find-them",
+          "excerpt": "What are Stripe API keys and how to find them : Stripe: Help & Support JavaScript is currently disabled You need JavaScript for the best experience on Stripe. Please enable it in your browser s",
+          "published_label": null
+        },
+        {
+          "value": "API key",
+          "url": "https://support.stripe.com/questions/what-are-stripe-api-keys-and-how-to-find-them",
+          "excerpt": "What are Stripe API keys and how to find them : Stripe: Help & Support JavaScript is currently disabled You need JavaScript for the best experience on Stripe. Please enable it in your browser s",
+          "published_label": null
+        },
+        {
+          "value": "API key",
+          "url": "https://docs.stripe.com/mcp",
+          "excerpt": "th : Use OAuth when a client accesses Stripe on behalf of your Stripe user account. Agent API keys : Use an agent API key when an AI application needs independent, persistent access to Stripe. When you connect an MCP client with OAuth, the client opens Stripe’s OAuth",
+          "published_label": null
+        },
+        {
+          "value": "Bearer token",
+          "url": "https://docs.stripe.com/mcp",
+          "excerpt": "dentify agent API keys in the Dashboard by the Agent badge. Pass the agent API key as the bearer token in the Authorization header of your request. If you’re replacing an existing key, test the new configuration in a sandbox, then expire the old key. Update API key authen",
+          "published_label": null
+        },
+        {
+          "value": "API key",
+          "url": "https://support.stripe.com/questions/what-are-stripe-api-keys-and-how-to-find-them",
+          "excerpt": "What are Stripe API keys and how to find them : Stripe: Help & Support JavaScript is currently disabled You need JavaScript for the best experience on Stripe. Please enable it in your browser s",
+          "published_label": null
+        }
+      ],
+      "reason": "Provisional extraction; validate scope and completeness against cited pages."
+    },
+    "credential_gate": {
+      "value": "unknown",
+      "status": "provisional",
+      "sources": [],
+      "evidence": [],
+      "reason": "No sufficiently specific official evidence extracted."
+    },
+    "api_surface": {
+      "value": "unknown",
+      "status": "provisional",
+      "sources": [],
+      "evidence": [],
+      "reason": "No sufficiently specific official evidence extracted."
+    },
+    "official_mcp": {
+      "value": "vendor_server",
+      "status": "provisional",
+      "sources": [
+        "https://docs.stripe.com/mcp"
+      ],
+      "evidence": [
+        {
+          "value": "vendor_server",
+          "url": "https://docs.stripe.com/mcp",
+          "excerpt": "and submit in the Dashboard. See Prepare an Atlas application with an agent or CLI . The Stripe MCP server exposes multiple APIs that you can call with the stripe _ api _ read and stripe _ api _ write tools. This access makes much of the API available through MCP without increasing t",
+          "published_label": null,
+          "context_note": "Vendor-owned server statement; review date and access scope."
+        }
+      ],
+      "reason": "Provisional; check date, ownership and access scope."
+    },
+    "composio_toolkit": {
+      "value": "listed",
+      "status": "provisional",
+      "sources": [
+        "https://docs.composio.dev/toolkits/stripe"
+      ],
+      "evidence": [],
+      "reason": "Catalog match only; not vendor MCP evidence."
+    },
+    "verdict": {
+      "value": "unknown",
+      "status": "provisional",
+      "sources": [],
+      "evidence": [],
+      "reason": "No sufficiently specific official evidence extracted."
+    }
+  },
+  "validation": [
+    "Automatic extraction is provisional until independently reviewed",
+    "Unknown is not evidence of absence",
+    "Composio evidence cannot establish vendor MCP",
+    "Client-only and negated MCP statements are not vendor-server proof",
+    "API breadth is a text-coverage heuristic, not an endpoint census"
+  ]
+}

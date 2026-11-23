@@ -1,0 +1,176 @@
+{
+  "app": {
+    "number": 13,
+    "name": "Freshdesk",
+    "category": "Support and Helpdesk",
+    "hint": "freshdesk.com"
+  },
+  "replayed_at": "2026-11-23T18:45:47.171941+00:00",
+  "source_passes": [
+    "data/pass2/013.json",
+    "data/pass4/013.json"
+  ],
+  "source_searches": [
+    "data/new_search/013.json",
+    "data/pass4_search/013.json"
+  ],
+  "publication_date_note": "Search publication labels are retained exactly; null means no label was available. Relative labels are not exact dates.",
+  "claims": {
+    "auth": {
+      "value": [
+        "OAuth 2.0",
+        "API key"
+      ],
+      "status": "provisional",
+      "sources": [
+        "https://developers.freshdesk.com/api/",
+        "https://support.freshdesk.com/support/solutions/articles/50000012670-model-context-protocol-mcp-integration-in-freshdesk-eap-",
+        "https://support.freshdesk.com/support/solutions/articles/50000014411-freshworks-mcp-security",
+        "https://support.freshdesk.com/support/solutions/articles/50000014407-mcp-integration-frequently-asked-questions-faq-",
+        "https://support.freshdesk.com/support/solutions/articles/50000012670-model-context-protocol-mcp-integration-in-freshdesk",
+        "https://support.freshdesk.com/support/solutions/articles/225435-where-can-i-find-my-api-key",
+        "https://developer.freshdesk.com/api/"
+      ],
+      "evidence": [
+        {
+          "value": "OAuth 2.0",
+          "url": "https://developers.freshdesk.com/api/",
+          "excerpt": "osed 5 Priority Value Low 1 Medium 2 High 3 Urgent 4 Create a Ticket post /api/v2/tickets OAuth 2.0 Scope 1 freshdesk.tickets.create Parameters Attribute Type Description name string Name of the requester requester_id † number User ID of the requester. For existing con",
+          "published_label": null
+        },
+        {
+          "value": "API key",
+          "url": "https://developers.freshdesk.com/api/",
+          "excerpt": "e a Service Account /api/v2/agents/[id] Delete a Service Account /api/v2/agents/[id] List API Keys /api/v2/agents/[id]/api_keys Create an API Key /api/v2/agents/[id]/api_keys View an API Key /api/v2/agents/[id]/api_keys/[api_key_id] Enable or Disable an API Key /api/",
+          "published_label": null
+        },
+        {
+          "value": "API key",
+          "url": "https://support.freshdesk.com/support/solutions/articles/50000012670-model-context-protocol-mcp-integration-in-freshdesk-eap-",
+          "excerpt": "ly, Freshdesk allows you to authenticate requests involved in MCP integration by using an API key only. TABLE OF CONTENTS Supported plans and limits Supported MCP integrations Option 1: Set up MCP integration with Claude Code Option 2: Set up MCP integration with Cla",
+          "published_label": null
+        },
+        {
+          "value": "API key",
+          "url": "https://support.freshdesk.com/support/solutions/articles/50000014411-freshworks-mcp-security",
+          "excerpt": "a separate identity model and does not grant access beyond what the authenticated user or API key is permitted to perform. Info : For an overview of MCP integration, including setup and configuration steps, see the MCP integration article . TABLE OF CONTENTS Deployme",
+          "published_label": null
+        },
+        {
+          "value": "API key",
+          "url": "https://support.freshdesk.com/support/solutions/articles/50000014407-mcp-integration-frequently-asked-questions-faq-",
+          "excerpt": "onnect your preferred MCP-compatible client to Freshdesk using the MCP server URL and the API key provided in your Freshdesk administrator settings. Setup and configuration How do I find my MCP settings in Freshdesk? Go to Admin Settings > Apps & Integrations > MCP .",
+          "published_label": null
+        },
+        {
+          "value": "API key",
+          "url": "https://support.freshdesk.com/support/solutions/articles/50000012670-model-context-protocol-mcp-integration-in-freshdesk",
+          "excerpt": "ly, Freshdesk allows you to authenticate requests involved in MCP integration by using an API key only. TABLE OF CONTENTS Supported plans and limits Supported MCP integrations Option 1: Set up MCP integration with Claude Code Option 2: Set up MCP integration with Cla",
+          "published_label": null
+        },
+        {
+          "value": "API key",
+          "url": "https://support.freshdesk.com/support/solutions/articles/225435-where-can-i-find-my-api-key",
+          "excerpt": "Where can I find my API key? : Freshdesk Support Login Support home › Resources Community › Video Library › Agent Training › Products Freshservice › Freshdesk › Freshchat › Freshcaller › Freshsales",
+          "published_label": null
+        },
+        {
+          "value": "OAuth 2.0",
+          "url": "https://developer.freshdesk.com/api/",
+          "excerpt": "osed 5 Priority Value Low 1 Medium 2 High 3 Urgent 4 Create a Ticket post /api/v2/tickets OAuth 2.0 Scope 1 freshdesk.tickets.create Parameters Attribute Type Description name string Name of the requester requester_id † number User ID of the requester. For existing con",
+          "published_label": null
+        },
+        {
+          "value": "API key",
+          "url": "https://developer.freshdesk.com/api/",
+          "excerpt": "e a Service Account /api/v2/agents/[id] Delete a Service Account /api/v2/agents/[id] List API Keys /api/v2/agents/[id]/api_keys Create an API Key /api/v2/agents/[id]/api_keys View an API Key /api/v2/agents/[id]/api_keys/[api_key_id] Enable or Disable an API Key /api/",
+          "published_label": null
+        }
+      ],
+      "reason": "Provisional extraction; validate scope and completeness against cited pages."
+    },
+    "credential_gate": {
+      "value": [
+        "self_serve_trial"
+      ],
+      "status": "provisional",
+      "sources": [
+        "https://support.freshdesk.com/support/solutions/articles/50000012670-model-context-protocol-mcp-integration-in-freshdesk-eap-",
+        "https://support.freshdesk.com/support/solutions/articles/50000014411-freshworks-mcp-security",
+        "https://support.freshdesk.com/support/solutions/articles/50000014407-mcp-integration-frequently-asked-questions-faq-",
+        "https://support.freshdesk.com/support/solutions/articles/50000012670-model-context-protocol-mcp-integration-in-freshdesk",
+        "https://support.freshdesk.com/support/solutions/articles/225435-where-can-i-find-my-api-key"
+      ],
+      "evidence": [
+        {
+          "value": "self_serve_trial",
+          "url": "https://support.freshdesk.com/support/solutions/articles/50000012670-model-context-protocol-mcp-integration-in-freshdesk-eap-",
+          "excerpt": "ws Freshdesk Omni The agentic AI solution for modern, omnichannel customer service. Start free trial Learn more",
+          "published_label": null
+        },
+        {
+          "value": "self_serve_trial",
+          "url": "https://support.freshdesk.com/support/solutions/articles/50000014411-freshworks-mcp-security",
+          "excerpt": "ts Freshdesk Omni The agentic AI solution for modern, omnichannel customer service. Start free trial Learn more",
+          "published_label": null
+        },
+        {
+          "value": "self_serve_trial",
+          "url": "https://support.freshdesk.com/support/solutions/articles/50000014407-mcp-integration-frequently-asked-questions-faq-",
+          "excerpt": "o? Freshdesk Omni The agentic AI solution for modern, omnichannel customer service. Start free trial Learn more",
+          "published_label": null
+        },
+        {
+          "value": "self_serve_trial",
+          "url": "https://support.freshdesk.com/support/solutions/articles/50000012670-model-context-protocol-mcp-integration-in-freshdesk",
+          "excerpt": "ws Freshdesk Omni The agentic AI solution for modern, omnichannel customer service. Start free trial Learn more",
+          "published_label": null
+        },
+        {
+          "value": "self_serve_trial",
+          "url": "https://support.freshdesk.com/support/solutions/articles/225435-where-can-i-find-my-api-key",
+          "excerpt": "al Freshdesk Omni The agentic AI solution for modern, omnichannel customer service. Start free trial Learn more",
+          "published_label": null
+        }
+      ],
+      "reason": "Provisional extraction; validate scope and completeness against cited pages."
+    },
+    "api_surface": {
+      "value": "unknown",
+      "status": "provisional",
+      "sources": [],
+      "evidence": [],
+      "reason": "No sufficiently specific official evidence extracted."
+    },
+    "official_mcp": {
+      "value": "unknown",
+      "status": "provisional",
+      "sources": [],
+      "evidence": [],
+      "reason": "No sufficiently specific official evidence extracted."
+    },
+    "composio_toolkit": {
+      "value": "listed",
+      "status": "provisional",
+      "sources": [
+        "https://docs.composio.dev/toolkits/freshdesk"
+      ],
+      "evidence": [],
+      "reason": "Catalog match only; not vendor MCP evidence."
+    },
+    "verdict": {
+      "value": "unknown",
+      "status": "provisional",
+      "sources": [],
+      "evidence": [],
+      "reason": "No sufficiently specific official evidence extracted."
+    }
+  },
+  "validation": [
+    "Automatic extraction is provisional until independently reviewed",
+    "Unknown is not evidence of absence",
+    "Composio evidence cannot establish vendor MCP",
+    "Client-only and negated MCP statements are not vendor-server proof",
+    "API breadth is a text-coverage heuristic, not an endpoint census"
+  ]
+}

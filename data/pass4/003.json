@@ -1,0 +1,176 @@
+{
+  "app": {
+    "number": 3,
+    "name": "Pipedrive",
+    "category": "CRM and Sales",
+    "hint": "pipedrive.com"
+  },
+  "checked_at": "2026-11-23T18:14:57.503242+00:00",
+  "prior_source": "data/pass2/003.json",
+  "search_source": "data/pass4_search/003.json",
+  "new_candidates": [
+    {
+      "url": "https://support.pipedrive.com/en/article/what-is-api",
+      "title": "What is API? - Knowledge Base | Pipedrive (https://support.pipedrive.com/en/article/what-is-api)",
+      "published_label": "2 months ago"
+    },
+    {
+      "url": "https://developers.pipedrive.com/docs/api/v1?trk=public_profile_project-button",
+      "title": "Pipedrive API Reference and Documentation (https://developers.pipedrive.com/docs/api/v1?trk=public_profile_project-button)",
+      "published_label": null
+    },
+    {
+      "url": "https://support.pipedrive.com/en/article/can-all-users-access-the-pipedrive-api",
+      "title": "Can all users access the Pipedrive API? - Knowledge Base | Pipedrive (https://support.pipedrive.com/en/article/can-all-users-access-the-pipedrive-api)",
+      "published_label": "2 months ago"
+    },
+    {
+      "url": "https://support.pipedrive.com/en/article/how-can-i-create-my-own-app-or-integration",
+      "title": "How can I create my own app or integration? - Knowledge Base | Pipedrive (https://support.pipedrive.com/en/article/how-can-i-create-my-own-app-or-integration)",
+      "published_label": "2 months ago"
+    },
+    {
+      "url": "https://www.pipedrive.com/en/features/crm-api",
+      "title": "CRM API | REST API integration | Pipedrive (https://www.pipedrive.com/en/features/crm-api)",
+      "published_label": null
+    },
+    {
+      "url": "https://support.pipedrive.com/en/article/how-can-i-create-my-own-app-or-integration?category=integrations",
+      "title": "How can I create my own app or integration? - Knowledge Base | Pipedrive (https://support.pipedrive.com/en/article/how-can-i-create-my-own-app-or-integration?category=integrations)",
+      "published_label": null
+    },
+    {
+      "url": "https://support.pipedrive.com/en/article/how-can-i-find-my-personal-api-key?preview=eyJ0aW1lc3RhbXAiOjE2MzU2MDI2MzUsImNoZWNrc3VtIjoiMWU2YWVkNjMzYzM4YmUxMDM4OTQ1Y2JhM2FkYTVjOTEifQ%3D%3D",
+      "title": "How can I find my personal API key? - Knowledge Base | Pipedrive (https://support.pipedrive.com/en/article/how-can-i-find-my-personal-api-key?preview=eyJ0aW1lc3RhbXAiOjE2MzU2MDI2MzUsImNoZWNrc3VtIjoiMWU2YWVkNjMzYzM4YmUxMDM4OTQ1Y2JhM2FkYTVjOTEifQ%3D%3D)",
+      "published_label": "2 months ago"
+    },
+    {
+      "url": "https://support.pipedrive.com/en/article/how-can-i-create-my-own-app-or-integration?category=integraciones",
+      "title": "How can I create my own app or integration? - Knowledge Base | Pipedrive (https://support.pipedrive.com/en/article/how-can-i-create-my-own-app-or-integration?category=integraciones)",
+      "published_label": null
+    }
+  ],
+  "selected": [
+    {
+      "url": "https://support.pipedrive.com/en/article/what-is-api",
+      "title": "What is API? - Knowledge Base | Pipedrive (https://support.pipedrive.com/en/article/what-is-api)",
+      "published_label": "2 months ago"
+    },
+    {
+      "url": "https://support.pipedrive.com/en/article/can-all-users-access-the-pipedrive-api",
+      "title": "Can all users access the Pipedrive API? - Knowledge Base | Pipedrive (https://support.pipedrive.com/en/article/can-all-users-access-the-pipedrive-api)",
+      "published_label": "2 months ago"
+    }
+  ],
+  "new_pages": [
+    {
+      "url": "https://support.pipedrive.com/en/article/what-is-api",
+      "requested_url": "https://support.pipedrive.com/en/article/what-is-api",
+      "status": 200,
+      "title": "What is API? - Knowledge Base | Pipedrive (https://support.pipedrive.com/en/article/what-is-api)",
+      "text": "What is API? - Knowledge Base | Pipedrive Knowledge Base All categories Marketplace apps Blog Knowledge Base Academy Knowledge Base results : 0 No results found. Knowledge Base / Integrations / Marketplace integrations / What is API? Topics What is API? SR Steven Reinartz Last updated: September 3, 2026 Note: For a more in-depth guide about how API is used in Pipedrive, visit our CRM API page. Pipedrive offers a variety of automated features and third-party integrations that can make your work easier and more efficient. But if you want more advanced communication between your website and Pipedrive account, you might be interested in API . What is API? Note: API can be complex to set up and use, and is a tool mostly used by software developers. If you’re new to API, we highly recommend visiting our Developer's corner for more detailed information. In simple terms, API (application programming interface) is a way for two or more applications to communicate. This can be simple, like retrieving some data from an external database, or more complicated if you need to manipulate data in bulk, but API is a bridge that connects businesses to save employees time. Basic API Terms Here’s a short list of terms and definitions related to API. API call the act of sending a request to your API after setting up an endpoint API endpoint the end of each touchpoint in an API interaction. API request when a developer adds an endpoint to a URL and uses that endpoint to call a server or database. API key a unique identifier used during API requests to ensure a person or software is who it says it is. API integration a connection between two or more applications to exchange data using API. JSON (JavaScript Object Notation) is an API format that uses JavaScript. Using API often requires at least a basic understanding of scripting language. Note: For more information about which users can access API in your account, check out this article. Common API use cases Here are some common applications of API for web pages. Integrating internal and external systems Adding additional functionality Bringing costs down Improving internal security Note: For a more in-depth look at API use cases, check out this webpage . How does API work in Pipedrive? Note: To keep your data secure, it‘s extremely important that your API token is not shared with others. If you believe someone has access to your API token, click “Generate new token“ to create a new one. You’ll need to update any existing API connections with the new token afterward. To create an API connection between your Pipedrive account and another application, find your personal API key by going to Settings > Personal preferences > API . Once you have your token, you’ll need a platform to facilitate your API requests, like Postman . Setting up Postman Note: Postman isn’t a Pipedrive tool, but it can be used to execute API actions with your Pipedrive account. For an in-depth guide to Postman and how it works, check out their web page. To use Postman as your API platform, follow this link to our Developer’s corner, then either download Postman using the provided link or click “Run in Postman“ if you’ve already downloaded it. After you “fork collection,“ you’ll be taken to the Postman workspace, where you can see the available API requests through Pipedrive on the left. Creating an API request usually requires a few things: Your API token An endpoint (i.e deals) An HTTP verb (i.e GET) Note: Pipedrive uses RESTful API Reference, and you can access it along with a list of endpoints and their descriptions on this developer’s page. To see the list of endpoints, click the arrow next to API Reference at the top of the page. Was this article helpful? Yes No Related articles Got any questions? Contact us",
+      "published_label": "2 months ago"
+    },
+    {
+      "url": "https://support.pipedrive.com/en/article/can-all-users-access-the-pipedrive-api",
+      "requested_url": "https://support.pipedrive.com/en/article/can-all-users-access-the-pipedrive-api",
+      "status": 200,
+      "title": "Can all users access the Pipedrive API? - Knowledge Base | Pipedrive (https://support.pipedrive.com/en/article/can-all-users-access-the-pipedrive-api)",
+      "text": "Can all users access the Pipedrive API? - Knowledge Base | Pipedrive Knowledge Base All categories Marketplace apps Blog Knowledge Base Academy Knowledge Base results : 0 No results found. Knowledge Base / Account settings / Personal settings / Can all users access ... Can all users access the Pipedrive API? BF Breandan Flood Last updated: September 3, 2026 By default, all users in any company account can access the Pipedrive API information for their account. If you would like to turn off this ability for the global regular users in your Pipedrive account, an admin user can go to Settings > Manage Users > Permission sets . Select the “Global regular user” permission set and scroll down to the “Tools and setup” section. Then, de-select the “ Access their own API token” option to revoke access to the API. Note: Disabling access to the API will impact users’ ability to export data from their Pipedrive company account and install integrations and apps from the Pipedrive Marketplace , unless the integration doesn’t need the API token and uses OAuth instead. Was this article helpful? Yes No Related articles Got any questions? Contact us",
+      "published_label": "2 months ago"
+    }
+  ],
+  "claims": {
+    "auth": {
+      "value": [
+        "OAuth 2.0",
+        "API key"
+      ],
+      "sources": [
+        "https://developers.pipedrive.com/docs/api/v1/Oauth",
+        "https://support.pipedrive.com/en/article/what-is-the-api-key-for"
+      ],
+      "evidence": [
+        {
+          "value": "OAuth 2.0",
+          "url": "https://developers.pipedrive.com/docs/api/v1/Oauth",
+          "excerpt": "m search Lead fields Lead labels Leads Lead sources Legacy teams Mailbox Meetings Note fields Notes OAuth 2.0 Requesting authorization GET /oauth/authorize Getting the tokens POST /oauth/token Refreshing the tokens POST /oauth/token Organization fields Organization relationships Organizat",
+          "published_label": null
+        },
+        {
+          "value": "API key",
+          "url": "https://support.pipedrive.com/en/article/what-is-the-api-key-for",
+          "excerpt": "What is the API key for? - Knowledge Base | Pipedrive Knowledge Base All categories Marketplace apps Blog Knowledge Base Academy Knowledge Base results : 0 No results found. Knowledge Base / Account ",
+          "published_label": null
+        }
+      ],
+      "reason": "Provisional extraction: validate scope and completeness against the cited page."
+    },
+    "credential_gate": {
+      "value": "unknown",
+      "sources": [],
+      "evidence": [],
+      "reason": "No sufficiently specific positive evidence extracted; review targeted search results."
+    },
+    "api_surface": {
+      "value": [
+        "REST"
+      ],
+      "sources": [
+        "https://support.pipedrive.com/en/article/what-is-api"
+      ],
+      "evidence": [
+        {
+          "value": "REST",
+          "url": "https://support.pipedrive.com/en/article/what-is-api",
+          "excerpt": "es a few things: Your API token An endpoint (i.e deals) An HTTP verb (i.e GET) Note: Pipedrive uses RESTful API Reference, and you can access it along with a list of endpoints and their descriptions on this developer’s page. To see the list of endpoints, click the arrow next to API Referenc",
+          "published_label": "2 months ago"
+        }
+      ],
+      "reason": "Provisional extraction: validate scope and completeness against the cited page."
+    },
+    "official_mcp": {
+      "value": "yes (provisional)",
+      "sources": [
+        "https://www.pipedrive.com/en/newsroom/pipedrive-launches-native-mcp-server-bringing-crm-workflows-directly-into-ai-assistants",
+        "https://www.pipedrive.com/en/features/mcp-server"
+      ],
+      "evidence": [
+        {
+          "value": "yes (provisional)",
+          "url": "https://www.pipedrive.com/en/newsroom/pipedrive-launches-native-mcp-server-bringing-crm-workflows-directly-into-ai-assistants",
+          "excerpt": "Pipedrive launches native MCP server, bringing CRM workflows directly into AI assistants | Pipedrive Skip to main content Pipedrive launches native MCP server, bringing CRM workflows directly into",
+          "published_label": null,
+          "context_warning": "Review vendor ownership, dates, and scope."
+        },
+        {
+          "value": "yes (provisional)",
+          "url": "https://www.pipedrive.com/en/features/mcp-server",
+          "excerpt": "Pipedrive MCP Server | Connect Claude & ChatGPT to Your CRM | Pipedrive Skip to main content Connect your AI assistant to Pipedrive with MCP Empower AI assistants like ChatGPT and ",
+          "published_label": null,
+          "context_warning": "Review vendor ownership, dates, and scope."
+        }
+      ],
+      "reason": "Provisional; check source date, scope, and vendor ownership."
+    },
+    "composio_toolkit": {
+      "value": "listed",
+      "sources": [
+        "https://docs.composio.dev/toolkits/pipedrive"
+      ],
+      "evidence": [],
+      "reason": "Catalog match; scope needs review."
+    },
+    "verdict": {
+      "value": "unknown",
+      "sources": [],
+      "evidence": [],
+      "reason": "A supported access path, authentication method and API surface were not all extracted."
+    }
+  },
+  "validation": [
+    "All claims are provisional",
+    "No vendor MCP inference from Composio catalog",
+    "Negated MCP or client-only source is not counted as vendor-server proof"
+  ]
+}

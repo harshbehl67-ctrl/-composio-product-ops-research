@@ -1,0 +1,531 @@
+[
+  {
+    "app": "Pipedrive",
+    "field": "auth",
+    "value": "OAuth 2.0 and API token",
+    "url": "https://developers.pipedrive.com/docs/api/v1/Oauth",
+    "additional_sources": [
+      "https://support.pipedrive.com/en/article/what-is-the-api-key-for"
+    ],
+    "note": "AI-assisted source review of retrieved vendor documentation; scope is limited to the named API or credential path.",
+    "checked_date": "2026-11-23"
+  },
+  {
+    "app": "Attio",
+    "field": "auth",
+    "value": "API key",
+    "url": "https://attio.com/help/reference/apps/generating-an-api-key",
+    "additional_sources": [],
+    "note": "AI-assisted source review of retrieved vendor documentation; scope is limited to the named API or credential path.",
+    "checked_date": "2026-11-23"
+  },
+  {
+    "app": "Podio",
+    "field": "auth",
+    "value": "OAuth 2.0",
+    "url": "https://developers.podio.com/authentication",
+    "additional_sources": [],
+    "note": "AI-assisted source review of retrieved vendor documentation; scope is limited to the named API or credential path.",
+    "checked_date": "2026-11-23"
+  },
+  {
+    "app": "Zoho CRM",
+    "field": "auth",
+    "value": "OAuth 2.0 bearer access token",
+    "url": "https://www.zoho.com/crm/developer/docs/api/v8/access-refresh.html",
+    "additional_sources": [],
+    "note": "AI-assisted source review of retrieved vendor documentation; scope is limited to the named API or credential path.",
+    "checked_date": "2026-11-23"
+  },
+  {
+    "app": "Close",
+    "field": "auth",
+    "value": "API key using HTTP Basic authentication",
+    "url": "https://developer.close.com/api/overview/api-key-authentication",
+    "additional_sources": [],
+    "note": "AI-assisted source review of retrieved vendor documentation; scope is limited to the named API or credential path.",
+    "checked_date": "2026-11-23"
+  },
+  {
+    "app": "Copper",
+    "field": "auth",
+    "value": "OAuth 2.0 and API key",
+    "url": "https://www.developer.copper.com/introduction/authentication.html",
+    "additional_sources": [],
+    "note": "AI-assisted source review of retrieved vendor documentation; scope is limited to the named API or credential path.",
+    "checked_date": "2026-11-23"
+  },
+  {
+    "app": "DealCloud",
+    "field": "auth",
+    "value": "OAuth 2.0 bearer token and API key for the documented token flow",
+    "url": "https://api.docs.dealcloud.com/docs/token",
+    "additional_sources": [
+      "https://api.docs.dealcloud.com/docs/apikeys"
+    ],
+    "note": "AI-assisted source review of retrieved vendor documentation; scope is limited to the named API or credential path.",
+    "checked_date": "2026-11-23"
+  },
+  {
+    "app": "Freshdesk",
+    "field": "auth",
+    "value": "API key",
+    "url": "https://support.freshdesk.com/support/solutions/articles/225435-where-can-i-find-my-api-key",
+    "additional_sources": [],
+    "note": "AI-assisted source review of retrieved vendor documentation; scope is limited to the named API or credential path.",
+    "checked_date": "2026-11-23"
+  },
+  {
+    "app": "Pylon",
+    "field": "auth",
+    "value": "Bearer API token",
+    "url": "https://docs.usepylon.com/pylon-docs/developer/api/authentication",
+    "additional_sources": [],
+    "note": "AI-assisted source review of retrieved vendor documentation; scope is limited to the named API or credential path.",
+    "checked_date": "2026-11-23"
+  },
+  {
+    "app": "LiveAgent",
+    "field": "auth",
+    "value": "API key; details vary by API version",
+    "url": "https://faq.liveagent.com/916372-API-v1-vs-API-v3-in-LiveAgent-Key-Differences-Authentication-and-Resolving-ApiKey-Errors",
+    "additional_sources": [],
+    "note": "AI-assisted source review of retrieved vendor documentation; scope is limited to the named API or credential path.",
+    "checked_date": "2026-11-23"
+  },
+  {
+    "app": "Help Scout",
+    "field": "auth",
+    "value": "OAuth 2.0 for Mailbox API",
+    "url": "https://developer.helpscout.com/mailbox-api/overview/authentication/",
+    "additional_sources": [],
+    "note": "AI-assisted source review of retrieved vendor documentation; scope is limited to the named API or credential path.",
+    "checked_date": "2026-11-23"
+  },
+  {
+    "app": "Gorgias",
+    "field": "auth",
+    "value": "OAuth 2.0 for public apps; API key / Basic for the private path",
+    "url": "https://developers.gorgias.com/reference/authentication",
+    "additional_sources": [
+      "https://developers.gorgias.com/docs/access-tokens-api-keys"
+    ],
+    "note": "AI-assisted source review of retrieved vendor documentation; scope is limited to the named API or credential path.",
+    "checked_date": "2026-11-23"
+  },
+  {
+    "app": "Gladly",
+    "field": "auth",
+    "value": "API token for the documented API User path",
+    "url": "https://help.gladly.com/implementation/docs/get-your-api-tokens",
+    "additional_sources": [],
+    "note": "AI-assisted source review of retrieved vendor documentation; scope is limited to the named API or credential path.",
+    "checked_date": "2026-11-23"
+  },
+  {
+    "app": "Twilio",
+    "field": "auth",
+    "value": "HTTP Basic with API key SID and secret",
+    "url": "https://www.twilio.com/docs/iam/credentials/api",
+    "additional_sources": [],
+    "note": "AI-assisted source review of retrieved vendor documentation; scope is limited to the named API or credential path.",
+    "checked_date": "2026-11-23"
+  },
+  {
+    "app": "Zoho Cliq",
+    "field": "auth",
+    "value": "OAuth 2.0",
+    "url": "https://www.zoho.com/cliq/help/restapi/v3/oauth/",
+    "additional_sources": [],
+    "note": "AI-assisted source review of retrieved vendor documentation; scope is limited to the named API or credential path.",
+    "checked_date": "2026-11-23"
+  },
+  {
+    "app": "Pumble",
+    "field": "auth",
+    "value": "API key for the API addon",
+    "url": "https://pumble.com/help/integrations/automation-workflow-integrations/api-keys-integration/",
+    "additional_sources": [],
+    "note": "AI-assisted source review of retrieved vendor documentation; scope is limited to the named API or credential path.",
+    "checked_date": "2026-11-23"
+  },
+  {
+    "app": "Aircall",
+    "field": "auth",
+    "value": "Basic authentication and OAuth for REST API",
+    "url": "https://developer.aircall.io/docs/authentication",
+    "additional_sources": [],
+    "note": "AI-assisted source review of retrieved vendor documentation; scope is limited to the named API or credential path.",
+    "checked_date": "2026-11-23"
+  },
+  {
+    "app": "MongoDB Atlas",
+    "field": "auth",
+    "value": "OAuth 2.0 service account tokens or legacy API keys for Atlas Administration API",
+    "url": "https://www.mongodb.com/docs/atlas/api/api-authentication/",
+    "additional_sources": [],
+    "note": "AI-assisted source review of retrieved vendor documentation; scope is limited to the named API or credential path.",
+    "checked_date": "2026-11-23"
+  },
+  {
+    "app": "Linear",
+    "field": "auth",
+    "value": "OAuth 2.0 for third-party integrations",
+    "url": "https://linear.app/developers/oauth-2-0-authentication",
+    "additional_sources": [],
+    "note": "AI-assisted source review of retrieved vendor documentation; scope is limited to the named API or credential path.",
+    "checked_date": "2026-11-23"
+  },
+  {
+    "app": "Asana",
+    "field": "auth",
+    "value": "OAuth 2.0 and personal access token",
+    "url": "https://developers.asana.com/docs/oauth",
+    "additional_sources": [
+      "https://developers.asana.com/docs/personal-access-token"
+    ],
+    "note": "AI-assisted source review of retrieved vendor documentation; scope is limited to the named API or credential path.",
+    "checked_date": "2026-11-23"
+  },
+  {
+    "app": "Monday.com",
+    "field": "auth",
+    "value": "API token and OAuth 2.0",
+    "url": "https://developer.monday.com/api-reference/docs/authentication",
+    "additional_sources": [
+      "https://developer.monday.com/apps/docs/choosing-auth"
+    ],
+    "note": "AI-assisted source review of retrieved vendor documentation; scope is limited to the named API or credential path.",
+    "checked_date": "2026-11-23"
+  },
+  {
+    "app": "ClickUp",
+    "field": "auth",
+    "value": "Personal API token or OAuth 2.0",
+    "url": "https://developer.clickup.com/docs/authentication",
+    "additional_sources": [],
+    "note": "AI-assisted source review of retrieved vendor documentation; scope is limited to the named API or credential path.",
+    "checked_date": "2026-11-23"
+  },
+  {
+    "app": "Smartsheet",
+    "field": "auth",
+    "value": "OAuth 2.0 or API access token",
+    "url": "https://developers.smartsheet.com/api/smartsheet/guides/basics/authentication",
+    "additional_sources": [
+      "https://help.smartsheet.com/articles/2482389-generate-API-key"
+    ],
+    "note": "AI-assisted source review of retrieved vendor documentation; scope is limited to the named API or credential path.",
+    "checked_date": "2026-11-23"
+  },
+  {
+    "app": "QuickBooks",
+    "field": "auth",
+    "value": "OAuth 2.0",
+    "url": "https://static.developer.intuit.com/output_html/qbo/docs/develop/authentication-and-authorization/faq.html",
+    "additional_sources": [],
+    "note": "AI-assisted source review of retrieved vendor documentation; scope is limited to the named API or credential path.",
+    "checked_date": "2026-11-23"
+  },
+  {
+    "app": "Grain",
+    "field": "auth",
+    "value": "OAuth 2.0 and personal or workspace bearer tokens",
+    "url": "https://developers.grain.com/authentication.html",
+    "additional_sources": [],
+    "note": "AI-assisted source review of retrieved vendor documentation; scope is limited to the named API or credential path.",
+    "checked_date": "2026-11-23"
+  },
+  {
+    "app": "Slack",
+    "field": "api_surface",
+    "value": "HTTP Web API; Slack documentation explicitly says it is not a REST API",
+    "url": "https://docs.slack.dev/apis/web-api/",
+    "additional_sources": [],
+    "note": "The context pass previously misread a negated REST statement.",
+    "checked_date": "2026-11-23"
+  },
+  {
+    "app": "Shopify",
+    "field": "api_surface",
+    "value": "GraphQL Admin API and legacy REST Admin API",
+    "url": "https://shopify.dev/docs/api/usage/authentication",
+    "additional_sources": [
+      "https://shopify.dev/docs/api/admin-rest"
+    ],
+    "note": "API type and scope reviewed; REST Admin API has legacy status.",
+    "checked_date": "2026-11-23"
+  },
+  {
+    "app": "Pipedrive",
+    "field": "api_surface",
+    "value": "REST API; includes deal endpoints; breadth otherwise unassessed",
+    "url": "https://support.pipedrive.com/en/article/what-is-api",
+    "additional_sources": [],
+    "note": "AI-assisted review of retrieved vendor page; breadth is not inferred from the API label.",
+    "checked_date": "2026-11-23"
+  },
+  {
+    "app": "Zoho CRM",
+    "field": "api_surface",
+    "value": "REST and GraphQL APIs; breadth otherwise unassessed",
+    "url": "https://www.zoho.com/crm/developer/docs/api/graphql/graphql-authorization.html",
+    "additional_sources": [],
+    "note": "AI-assisted review of retrieved vendor page; breadth is not inferred from the API label.",
+    "checked_date": "2026-11-23"
+  },
+  {
+    "app": "Close",
+    "field": "api_surface",
+    "value": "REST API for internal scripts and product integrations; breadth otherwise unassessed",
+    "url": "https://developer.close.com/integrations",
+    "additional_sources": [],
+    "note": "AI-assisted review of retrieved vendor page; breadth is not inferred from the API label.",
+    "checked_date": "2026-11-23"
+  },
+  {
+    "app": "DealCloud",
+    "field": "api_surface",
+    "value": "Documented REST API with endpoint reference; breadth otherwise unassessed",
+    "url": "https://api.docs.dealcloud.com/docs",
+    "additional_sources": [],
+    "note": "AI-assisted review of retrieved vendor page; breadth is not inferred from the API label.",
+    "checked_date": "2026-11-23"
+  },
+  {
+    "app": "Pylon",
+    "field": "api_surface",
+    "value": "REST API; bearer-token path documented; breadth otherwise unassessed",
+    "url": "https://support.usepylon.com/articles/2407390554-connecting-to-the-pylon-mcp-server",
+    "additional_sources": [],
+    "note": "AI-assisted review of retrieved vendor page; breadth is not inferred from the API label.",
+    "checked_date": "2026-11-23"
+  },
+  {
+    "app": "LiveAgent",
+    "field": "api_surface",
+    "value": "REST API; breadth otherwise unassessed",
+    "url": "https://support.liveagent.com/802463-REST-API",
+    "additional_sources": [],
+    "note": "AI-assisted review of retrieved vendor page; breadth is not inferred from the API label.",
+    "checked_date": "2026-11-23"
+  },
+  {
+    "app": "Plain",
+    "field": "api_surface",
+    "value": "GraphQL API; extracted REST mention concerned another vendor",
+    "url": "https://help.plain.com/article/does-the-plain-mcp-server-support-api-key-authentication-h7d83qtfdzxo4h49x4oyklwx",
+    "additional_sources": [],
+    "note": "AI-assisted review of retrieved vendor page; breadth is not inferred from the API label.",
+    "checked_date": "2026-11-23"
+  },
+  {
+    "app": "Gorgias",
+    "field": "api_surface",
+    "value": "REST API; breadth otherwise unassessed",
+    "url": "https://developers.gorgias.com/docs/access-tokens-api-keys",
+    "additional_sources": [],
+    "note": "AI-assisted review of retrieved vendor page; breadth is not inferred from the API label.",
+    "checked_date": "2026-11-23"
+  },
+  {
+    "app": "Gladly",
+    "field": "api_surface",
+    "value": "REST APIs; breadth otherwise unassessed",
+    "url": "https://help.gladly.com/docs/api-export-tool",
+    "additional_sources": [],
+    "note": "AI-assisted review of retrieved vendor page; breadth is not inferred from the API label.",
+    "checked_date": "2026-11-23"
+  },
+  {
+    "app": "Twilio",
+    "field": "api_surface",
+    "value": "REST API; breadth otherwise unassessed",
+    "url": "https://www.twilio.com/docs/iam/credentials/api",
+    "additional_sources": [],
+    "note": "AI-assisted review of retrieved vendor page; breadth is not inferred from the API label.",
+    "checked_date": "2026-11-23"
+  },
+  {
+    "app": "Zoho Cliq",
+    "field": "api_surface",
+    "value": "REST API documentation; breadth otherwise unassessed",
+    "url": "https://www.zoho.com/cliq/help/restapi/v2/introduction/",
+    "additional_sources": [],
+    "note": "AI-assisted review of retrieved vendor page; breadth is not inferred from the API label.",
+    "checked_date": "2026-11-23"
+  },
+  {
+    "app": "Aircall",
+    "field": "api_surface",
+    "value": "REST API; breadth otherwise unassessed",
+    "url": "https://developer.aircall.io/docs/authentication",
+    "additional_sources": [],
+    "note": "AI-assisted review of retrieved vendor page; breadth is not inferred from the API label.",
+    "checked_date": "2026-11-23"
+  },
+  {
+    "app": "Pinterest",
+    "field": "api_surface",
+    "value": "REST API; breadth otherwise unassessed",
+    "url": "https://developer.pinterest.com/docs/getting-started/set-up-authentication-and-authorization/",
+    "additional_sources": [],
+    "note": "AI-assisted review of retrieved vendor page; breadth is not inferred from the API label.",
+    "checked_date": "2026-11-23"
+  },
+  {
+    "app": "WooCommerce",
+    "field": "api_surface",
+    "value": "WordPress REST API authentication; breadth otherwise unassessed",
+    "url": "https://developer.woocommerce.com/docs/apis/rest-api/authentication",
+    "additional_sources": [],
+    "note": "AI-assisted review of retrieved vendor page; breadth is not inferred from the API label.",
+    "checked_date": "2026-11-23"
+  },
+  {
+    "app": "BigCommerce",
+    "field": "api_surface",
+    "value": "REST APIs; GraphQL availability and breadth not assessed in this source",
+    "url": "https://docs.bigcommerce.com/developer/docs/overview/api-fundamentals/api-accounts",
+    "additional_sources": [],
+    "note": "AI-assisted review of retrieved vendor page; breadth is not inferred from the API label.",
+    "checked_date": "2026-11-23"
+  },
+  {
+    "app": "Magento (Adobe Commerce)",
+    "field": "api_surface",
+    "value": "REST and GraphQL APIs for Adobe Commerce and Magento Open Source; breadth otherwise unassessed",
+    "url": "https://developer.adobe.com/commerce/webapi/rest/reference/",
+    "additional_sources": [
+      "https://developer.adobe.com/commerce/webapi/graphql/reference/"
+    ],
+    "note": "AI-assisted review of retrieved vendor page; breadth is not inferred from the API label.",
+    "checked_date": "2026-11-23"
+  },
+  {
+    "app": "Ecwid",
+    "field": "api_surface",
+    "value": "REST API; breadth otherwise unassessed",
+    "url": "https://docs.ecwid.com/get-started/make-your-first-api-request",
+    "additional_sources": [],
+    "note": "AI-assisted review of retrieved vendor page; breadth is not inferred from the API label.",
+    "checked_date": "2026-11-23"
+  },
+  {
+    "app": "Vercel",
+    "field": "api_surface",
+    "value": "REST API; breadth otherwise unassessed",
+    "url": "https://vercel.com/docs/sign-in-with-vercel/tokens",
+    "additional_sources": [],
+    "note": "AI-assisted review of retrieved vendor page; breadth is not inferred from the API label.",
+    "checked_date": "2026-11-23"
+  },
+  {
+    "app": "Netlify",
+    "field": "api_surface",
+    "value": "REST API for deployment, forms and related site-management operations",
+    "url": "https://docs.netlify.com/api-and-cli-guides/api-guides/get-started-with-api/",
+    "additional_sources": [],
+    "note": "AI-assisted review of retrieved vendor page; breadth is not inferred from the API label.",
+    "checked_date": "2026-11-23"
+  },
+  {
+    "app": "Supabase",
+    "field": "api_surface",
+    "value": "Auto-generated database REST API; other interfaces not assessed",
+    "url": "https://supabase.com/docs/guides/auth",
+    "additional_sources": [],
+    "note": "AI-assisted review of retrieved vendor page; breadth is not inferred from the API label.",
+    "checked_date": "2026-11-23"
+  },
+  {
+    "app": "Neo4j",
+    "field": "api_surface",
+    "value": "GraphQL API through Neo4j GraphQL library; deployment and breadth need review",
+    "url": "https://neo4j.com/docs/graphql/current/aura-graphql/api-usage/",
+    "additional_sources": [],
+    "note": "AI-assisted review of retrieved vendor page; breadth is not inferred from the API label.",
+    "checked_date": "2026-11-23"
+  },
+  {
+    "app": "Datadog",
+    "field": "api_surface",
+    "value": "HTTP REST API; breadth otherwise unassessed",
+    "url": "https://docs.datadoghq.com/api",
+    "additional_sources": [],
+    "note": "AI-assisted review of retrieved vendor page; breadth is not inferred from the API label.",
+    "checked_date": "2026-11-23"
+  },
+  {
+    "app": "Airtable",
+    "field": "api_surface",
+    "value": "REST API; breadth otherwise unassessed",
+    "url": "https://support.airtable.com/articles/2111090641-Airtable-API%3A-Common-troubleshooting",
+    "additional_sources": [],
+    "note": "AI-assisted review of retrieved vendor page; breadth is not inferred from the API label.",
+    "checked_date": "2026-11-23"
+  },
+  {
+    "app": "Linear",
+    "field": "api_surface",
+    "value": "GraphQL API; breadth otherwise unassessed",
+    "url": "https://linear.app/developers/oauth-2-0-authentication",
+    "additional_sources": [],
+    "note": "AI-assisted review of retrieved vendor page; breadth is not inferred from the API label.",
+    "checked_date": "2026-11-23"
+  },
+  {
+    "app": "Jira",
+    "field": "api_surface",
+    "value": "REST API for Jira Data Center; cloud APIs require separate scope review",
+    "url": "https://developer.atlassian.com/server/jira/platform/basic-authentication/",
+    "additional_sources": [],
+    "note": "AI-assisted review of retrieved vendor page; breadth is not inferred from the API label.",
+    "checked_date": "2026-11-23"
+  },
+  {
+    "app": "Monday.com",
+    "field": "api_surface",
+    "value": "GraphQL API; extracted REST mention is a comparison, not evidence of a monday REST API",
+    "url": "https://developer.monday.com/api-reference/docs/getting-started",
+    "additional_sources": [],
+    "note": "AI-assisted review of retrieved vendor page; breadth is not inferred from the API label.",
+    "checked_date": "2026-11-23"
+  },
+  {
+    "app": "Smartsheet",
+    "field": "api_surface",
+    "value": "REST API infrastructure documented; breadth otherwise unassessed",
+    "url": "https://www.smartsheet.com/content-center/product-insights/product-updates/introducing-smartsheet-mcp-server",
+    "additional_sources": [],
+    "note": "AI-assisted review of retrieved vendor page; breadth is not inferred from the API label.",
+    "checked_date": "2026-11-23"
+  },
+  {
+    "app": "NotebookLM",
+    "field": "api_surface",
+    "value": "NotebookLM Enterprise notebooks REST API, requiring Gemini Enterprise; consumer NotebookLM API not established",
+    "url": "https://docs.cloud.google.com/gemini/enterprise/notebooklm-enterprise/docs/api-notebooks",
+    "additional_sources": [],
+    "note": "AI-assisted review of retrieved vendor page; breadth is not inferred from the API label.",
+    "checked_date": "2026-11-23"
+  },
+  {
+    "app": "higgsfield",
+    "field": "api_surface",
+    "value": "REST API for model requests; breadth otherwise unassessed",
+    "url": "https://higgsfield.ai/creator-hub/help-center/integrations/what-is-the-higgsfield-api",
+    "additional_sources": [],
+    "note": "AI-assisted review of retrieved vendor page; breadth is not inferred from the API label.",
+    "checked_date": "2026-11-23"
+  },
+  {
+    "app": "YouTube Transcript",
+    "field": "api_surface",
+    "value": "TranscriptAPI REST API; breadth otherwise unassessed",
+    "url": "https://transcriptapi.com/docs/mcp/",
+    "additional_sources": [],
+    "note": "AI-assisted review of retrieved vendor page; breadth is not inferred from the API label.",
+    "checked_date": "2026-11-23"
+  }
+]

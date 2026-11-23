@@ -1,0 +1,245 @@
+{
+  "number": 86,
+  "app": "QuickBooks",
+  "category": "Finance and Fintech",
+  "summary": "QuickBooks Online documents OAuth 2.0, app credential creation, a free Builder tier with production approval and paid upgrades, and a broad GraphQL API; Intuit's official GitHub repository also documents a local stdio MCP server using OAuth 2.0, but no Intuit-hosted remote endpoint was verified.",
+  "blocker": "Production credentials require questionnaire approval and a public HTTPS OAuth callback for the initial MCP handshake; the documented vendor MCP server is local stdio, and no Intuit-hosted remote endpoint was verified.",
+  "next_action": "Prototype the official local MCP server in a QuickBooks sandbox using a registered Intuit app and localhost OAuth redirect; for production, complete the Production Key questionnaire, configure a public HTTPS callback for initial authorization, and retain GraphQL as the direct API option.",
+  "fields": {
+    "auth": {
+      "status": "checked",
+      "value": [
+        "OAuth 2.0 authorization code (user consent and realmID binding)",
+        "OAuth 2.0 access token (QuickBooks Online API calls)",
+        "OAuth 2.0 refresh token (rolling 100-day expiry)",
+        "HTTP Basic client ID and client secret (OAuth token endpoint)",
+        "Intuit Developer Portal app credentials (live and sandbox sets)"
+      ],
+      "reason": "Undated static Intuit OAuth and credential-creation pages document authorization-code exchange, access and refresh tokens, client authentication, and separate live/sandbox credentials.",
+      "evidence": [
+        {
+          "url": "https://static.developer.intuit.com/output_html/qbo/docs/develop/authentication-and-authorization/oauth-2.0.html",
+          "title": "OAuth 2.0 - QuickBooks Online",
+          "quote": "Use the OAuth 2.0 protocol to implement authentication and authorization. Authorization is essential for both testing via sandbox companies and production apps.",
+          "retrieved_at": "2026-11-24",
+          "published_at": null,
+          "published_label": "undated"
+        },
+        {
+          "url": "https://static.developer.intuit.com/output_html/qbo/docs/develop/authentication-and-authorization/oauth-2.0.html",
+          "title": "OAuth 2.0 - QuickBooks Online",
+          "quote": "Your app sends the authorization code back to the Intuit OAuth 2.0 Server and exchanges it for access and refresh tokens.",
+          "retrieved_at": "2026-11-24",
+          "published_at": null,
+          "published_label": "undated"
+        },
+        {
+          "url": "https://static.developer.intuit.com/output_html/qbo/docs/develop/authentication-and-authorization/oauth-2.0.html",
+          "title": "OAuth 2.0 - QuickBooks Online",
+          "quote": "Refresh tokens have a rolling expiry of 100 days.",
+          "retrieved_at": "2026-11-24",
+          "published_at": null,
+          "published_label": "undated"
+        },
+        {
+          "url": "https://static.developer.intuit.com/output_html/qbo/docs/get-started/get-client-id-and-client-secret.html",
+          "title": "Get a client ID and client secret",
+          "quote": "Each app has two sets of credentials: one for live production code and another for sandbox and testing environments.",
+          "retrieved_at": "2026-11-24",
+          "published_at": null,
+          "published_label": "undated"
+        }
+      ]
+    },
+    "credential_gate": {
+      "status": "checked",
+      "value": "mixed",
+      "gate_class": "mixed",
+      "reason": "The Intuit Partner FAQ dated 2026-10-29 documents a no-charge Builder tier and free sandbox metering, while the undated credential guide requires Production Key questionnaire approval and the FAQ documents paid upgrades above the cap.",
+      "evidence": [
+        {
+          "url": "https://static.developer.intuit.com/output_html/qbo/docs/get-started/partner-faq.html",
+          "title": "Intuit App Partner Program FAQ",
+          "quote": "By default, all partners will begin in the Builder tier and be afforded 500,000 CorePlus API calls per month without incurring any charges. Any subsequent calls made above this allotment will be blocked. To make additional API calls beyond this allotment, partners can upgrade to the Silver tier by providing a valid payment method in their account on the Intuit Developer Portal within your Workspace.",
+          "retrieved_at": "2026-11-24",
+          "published_at": "2026-10-29",
+          "published_label": "Last updated: 2026-10-29"
+        },
+        {
+          "url": "https://static.developer.intuit.com/output_html/qbo/docs/get-started/partner-faq.html",
+          "title": "Intuit App Partner Program FAQ",
+          "quote": "No. You don’t need to provide a payment method if you are at the Builder tier.",
+          "retrieved_at": "2026-11-24",
+          "published_at": "2026-10-29",
+          "published_label": "Last updated: 2026-10-29"
+        },
+        {
+          "url": "https://static.developer.intuit.com/output_html/qbo/docs/get-started/get-client-id-and-client-secret.html",
+          "title": "Get a client ID and client secret",
+          "quote": "The client ID and client secret will be accessible only after completing the Production Key questionnaire and its approval. For apps without a completed questionnaire, the questionnaire will be visible when you select Production in Step 6.",
+          "retrieved_at": "2026-11-24",
+          "published_at": null,
+          "published_label": "undated"
+        }
+      ]
+    },
+    "api_surface": {
+      "status": "checked",
+      "value": "GraphQL; broad documented surface",
+      "api_types": [
+        "GraphQL"
+      ],
+      "breadth": "broad",
+      "reason": "Undated static Intuit GraphQL documentation identifies the QuickBooks Online GraphQL API, its single endpoint, and company, account, transaction, contact, invoice, bill, query, mutation, and pagination coverage.",
+      "evidence": [
+        {
+          "url": "https://static.developer.intuit.com/output_html/qbo/docs/learn/learn-about-graphql/graphql-basics.html",
+          "title": "GraphQL basics - QuickBooks Online",
+          "quote": "The QuickBooks Online GraphQL API uses the GraphQL API framework. Here’s a brief overview.",
+          "retrieved_at": "2026-11-24",
+          "published_at": null,
+          "published_label": "undated"
+        },
+        {
+          "url": "https://static.developer.intuit.com/output_html/qbo/docs/learn/learn-about-graphql/graphql-basics.html",
+          "title": "GraphQL basics - QuickBooks Online",
+          "quote": "For the QuickBooks GraphQL API, use queries to get data for accounts, transactions, and other resources. Specify the exact fields you want the server to return in the query body.",
+          "retrieved_at": "2026-11-24",
+          "published_at": null,
+          "published_label": "undated"
+        },
+        {
+          "url": "https://static.developer.intuit.com/output_html/qbo/docs/develop/develop-with-graphql/graphql-api.html",
+          "title": "Develop your app with the GraphQL API",
+          "quote": "As shown in this simple example, all GraphQL requests are served from a single endpoint. No matter what is requested, from transactions to contacts, the endpoint will be the same.",
+          "retrieved_at": "2026-11-24",
+          "published_at": null,
+          "published_label": "undated"
+        }
+      ]
+    },
+    "official_mcp": {
+      "status": "checked",
+      "value": "vendor_server",
+      "mcp_mode": "local",
+      "server_url": null,
+      "transport": "stdio",
+      "authentication": [
+        "OAuth 2.0 with an Intuit Developer Portal app and a one-time browser OAuth handshake"
+      ],
+      "reason": "Intuit's official intuit/quickbooks-online-mcp-server repository, with commits through 2026-09-15, documents a local MCP server that runs over stdio and authenticates to QuickBooks Online using OAuth 2.0 after registering an Intuit Developer Portal app. No Intuit-hosted remote MCP endpoint was verified; the official Intuit Developer Plugin material documents onboarding rather than a server.",
+      "evidence": [
+        {
+          "url": "https://github.com/intuit/quickbooks-online-mcp-server",
+          "title": "GitHub - intuit/quickbooks-online-mcp-server: The QuickBooks MCP Server lets AI assistants access QuickBooks data via a standard interface. It uses the Model Context Protocol to expose QBO features as callable tools, enabling developers to build AI apps that fetch real-time QBO data through MCP. · GitHub",
+          "quote": "This MCP server provides complete QuickBooks Online API integration for Claude Code and other MCP-compatible clients.",
+          "retrieved_at": "2026-11-24",
+          "published_at": null,
+          "published_label": "undated"
+        },
+        {
+          "url": "https://github.com/intuit/quickbooks-online-mcp-server",
+          "title": "GitHub - intuit/quickbooks-online-mcp-server: The QuickBooks MCP Server lets AI assistants access QuickBooks data via a standard interface. It uses the Model Context Protocol to expose QBO features as callable tools, enabling developers to build AI apps that fetch real-time QBO data through MCP. · GitHub",
+          "quote": "Note: this is a local MCP server. It runs as a stdio subprocess on the developer's or partner's machine and authenticates to a QuickBooks Online company.",
+          "retrieved_at": "2026-11-24",
+          "published_at": null,
+          "published_label": "undated"
+        },
+        {
+          "url": "https://github.com/intuit/quickbooks-online-mcp-server",
+          "title": "GitHub - intuit/quickbooks-online-mcp-server: The QuickBooks MCP Server lets AI assistants access QuickBooks data via a standard interface. It uses the Model Context Protocol to expose QBO features as callable tools, enabling developers to build AI apps that fetch real-time QBO data through MCP. · GitHub",
+          "quote": "This server uses OAuth 2.0 to authenticate to a QuickBooks Online company. You'll set up an app on the Intuit Developer Portal and connect it to either a sandbox (for development) or your production QBO company.",
+          "retrieved_at": "2026-11-24",
+          "published_at": null,
+          "published_label": "undated"
+        },
+        {
+          "url": "https://github.com/intuit/quickbooks-online-mcp-server",
+          "title": "GitHub - intuit/quickbooks-online-mcp-server: The QuickBooks MCP Server lets AI assistants access QuickBooks data via a standard interface. It uses the Model Context Protocol to expose QBO features as callable tools, enabling developers to build AI apps that fetch real-time QBO data through MCP. · GitHub",
+          "quote": "Before you start: This MCP server is easy to run once authenticated, but QuickBooks Online integration is gated by Intuit's OAuth app setup. You must register an app on the Intuit Developer Portal and complete a one-time, browser-based OAuth handshake. Sandbox supports http://localhost redirect URIs; production requires a public HTTPS callback for the initial authorization.",
+          "retrieved_at": "2026-11-24",
+          "published_at": null,
+          "published_label": "undated"
+        },
+        {
+          "url": "https://github.com/intuit/quickbooks-online-mcp-server/commits/main/",
+          "title": "Commits · intuit/quickbooks-online-mcp-server · GitHub",
+          "quote": "Commits on Sep 15, 2026\nfix: make tests and CI cross-platform (#136)",
+          "retrieved_at": "2026-11-24",
+          "published_at": "2026-09-15",
+          "published_label": "latest commit dated Sep 15, 2026"
+        },
+        {
+          "url": "https://developer.intuit.com/app/developer/qbo/docs/release-notes/general-release-notes",
+          "title": "QuickBooks Online release notes · QuickBooks Online",
+          "quote": "We've introduced Intuit Developer Plugin, an AI-assisted tool to help set up your developer workspace, create an app, configure scopes, authenticate, and make your first QuickBooks API call. See Build with Intuit Developer Plugin to get started.",
+          "retrieved_at": "2026-11-24",
+          "published_at": null,
+          "published_label": "October 2026 release notes"
+        },
+        {
+          "url": "https://static.developer.intuit.com/output_html/qbo/docs/get-started/mcp-connector.html",
+          "title": "Build with Intuit Developer Plugin",
+          "quote": "Intuit Developer Plugin is an AI-assisted onboarding experience for developers building with Intuit APIs.",
+          "retrieved_at": "2026-11-24",
+          "published_at": null,
+          "published_label": "undated"
+        }
+      ]
+    },
+    "composio_toolkit": {
+      "status": "checked",
+      "value": "listed_exact",
+      "reason": "The current complete Composio catalog contains the exact QuickBooks toolkit and `QUICKBOOKS` slug.",
+      "evidence": [
+        {
+          "url": "https://docs.composio.dev/toolkits.md",
+          "title": "Composio Toolkits",
+          "quote": "| [QuickBooks](/toolkits/quickbooks.md) | `QUICKBOOKS` | 119 | 0 | OAUTH2 | Yes |",
+          "retrieved_at": "2026-11-24",
+          "published_at": null,
+          "published_label": "undated"
+        }
+      ]
+    },
+    "verdict": {
+      "status": "checked",
+      "value": "gated_build_candidate",
+      "reason": "OAuth, a free Builder tier, and a broad GraphQL API support development, but production approval and paid upgrades gate launch; the undated API and credential pages and the dated 2026-10-29 access FAQ require rechecking.",
+      "evidence": [
+        {
+          "url": "https://static.developer.intuit.com/output_html/qbo/docs/develop/authentication-and-authorization/oauth-2.0.html",
+          "title": "OAuth 2.0 - QuickBooks Online",
+          "quote": "Your app needs access tokens to make API calls and interact with QuickBooks Online data.",
+          "retrieved_at": "2026-11-24",
+          "published_at": null,
+          "published_label": "undated"
+        },
+        {
+          "url": "https://static.developer.intuit.com/output_html/qbo/docs/learn/learn-about-graphql/graphql-basics.html",
+          "title": "GraphQL basics - QuickBooks Online",
+          "quote": "The QuickBooks Online GraphQL API uses the GraphQL API framework. Here’s a brief overview.",
+          "retrieved_at": "2026-11-24",
+          "published_at": null,
+          "published_label": "undated"
+        },
+        {
+          "url": "https://static.developer.intuit.com/output_html/qbo/docs/get-started/partner-faq.html",
+          "title": "Intuit App Partner Program FAQ",
+          "quote": "By default, all partners will begin in the Builder tier and be afforded 500,000 CorePlus API calls per month without incurring any charges. Any subsequent calls made above this allotment will be blocked.",
+          "retrieved_at": "2026-11-24",
+          "published_at": "2026-10-29",
+          "published_label": "Last updated: 2026-10-29"
+        },
+        {
+          "url": "https://static.developer.intuit.com/output_html/qbo/docs/get-started/get-client-id-and-client-secret.html",
+          "title": "Get a client ID and client secret",
+          "quote": "The client ID and client secret will be accessible only after completing the Production Key questionnaire and its approval.",
+          "retrieved_at": "2026-11-24",
+          "published_at": null,
+          "published_label": "undated"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,122 @@
+{
+  "app": {
+    "number": 52,
+    "name": "SE Ranking",
+    "category": "Data, SEO and Scraping",
+    "hint": "seranking.com/api"
+  },
+  "replayed_at": "2026-11-23T18:45:52.157123+00:00",
+  "source_passes": [
+    "data/pass2/052.json",
+    "data/pass4/052.json"
+  ],
+  "source_searches": [
+    "data/new_search/052.json",
+    "data/pass4_search/052.json"
+  ],
+  "publication_date_note": "Search publication labels are retained exactly; null means no label was available. Relative labels are not exact dates.",
+  "claims": {
+    "auth": {
+      "value": [
+        "API key",
+        "OAuth 2.0"
+      ],
+      "status": "provisional",
+      "sources": [
+        "https://help.seranking.com/hc/en-us/articles/22447958135068-Getting-Started-with-SE-Ranking-s-API",
+        "https://seranking.com/api/integrations/mcp/",
+        "https://seranking.com/api/project/getting-started/",
+        "https://seranking.com/api/how-to-get-api/",
+        "https://seranking.com/api/data/getting-started/",
+        "https://help.seranking.com/hc/en-us/articles/21824256441756-How-to-connect-SE-Ranking-s-Data-API-to-Make"
+      ],
+      "evidence": [
+        {
+          "value": "API key",
+          "url": "https://help.seranking.com/hc/en-us/articles/22447958135068-Getting-Started-with-SE-Ranking-s-API",
+          "excerpt": "omate reports and scale workflows The Data API and Project API are unified under a single API key. One key provides access to both Data and Project endpoints through the same api.seranking.com gateway. API-only interface If your account has a standalone Data API lice",
+          "published_label": null
+        },
+        {
+          "value": "OAuth 2.0",
+          "url": "https://seranking.com/api/integrations/mcp/",
+          "excerpt": "SE Ranking MCP: Setup & Configuration API API integrations / MCP Server Documentation MCP Server Documentation New to SE Ranking MCP? What it does, pricing and use cases Start with 100K free credits → SE Ranking SEO MCP New · MCP Hub Explore the MCP Hub Whether you’re connecting ",
+          "published_label": null
+        },
+        {
+          "value": "API key",
+          "url": "https://seranking.com/api/integrations/mcp/",
+          "excerpt": "able through MCP. Setup is the same for every product. Use your SE Ranking account, or an API key generated in the API Dashboard of your SE Ranking or SE Visible account. Setup Instructions General Our MCP server supports Streamable HTTP transports. This transport us",
+          "published_label": null
+        },
+        {
+          "value": "API key",
+          "url": "https://seranking.com/api/project/getting-started/",
+          "excerpt": "d Getting started API access and keys In order to use the API, it is necessary to have an API key from the SE Ranking user account. The API key must be transferred via the token parameter for each invoked method or via the Authorization HTTP header. If an API method",
+          "published_label": null
+        },
+        {
+          "value": "API key",
+          "url": "https://seranking.com/api/how-to-get-api/",
+          "excerpt": "ng audits). Access is tied to your main subscription limits. One key, both APIs. A single API key authenticates every endpoint across the Data API and the Project API. There is no separate “Data key” and “Project key”: you generate one key and use it everywhere. What",
+          "published_label": null
+        },
+        {
+          "value": "API key",
+          "url": "https://seranking.com/api/data/getting-started/",
+          "excerpt": "ticated. The base URL for all endpoints is: Copy https://api.seranking.com 1. Obtain your API key First, you’ll need to generate a unique API key from your account dashboard. 1. Navigate to the API Dashboard . You can access this by clicking the API icon in the main",
+          "published_label": null
+        },
+        {
+          "value": "API key",
+          "url": "https://help.seranking.com/hc/en-us/articles/21824256441756-How-to-connect-SE-Ranking-s-Data-API-to-Make",
+          "excerpt": "any code. To use the integration, you must have an active SE Ranking account and a valid API key. Getting Access to the Data API Access to the Data API is available during the 14-day SE Ranking trial and is included in the Growth and Enterprise plans, each providing",
+          "published_label": null
+        }
+      ],
+      "reason": "Provisional extraction; validate scope and completeness against cited pages."
+    },
+    "credential_gate": {
+      "value": "unknown",
+      "status": "provisional",
+      "sources": [],
+      "evidence": [],
+      "reason": "No sufficiently specific official evidence extracted."
+    },
+    "api_surface": {
+      "value": "unknown",
+      "status": "provisional",
+      "sources": [],
+      "evidence": [],
+      "reason": "No sufficiently specific official evidence extracted."
+    },
+    "official_mcp": {
+      "value": "unknown",
+      "status": "provisional",
+      "sources": [],
+      "evidence": [],
+      "reason": "No sufficiently specific official evidence extracted."
+    },
+    "composio_toolkit": {
+      "value": "unknown",
+      "status": "provisional",
+      "sources": [],
+      "evidence": [],
+      "reason": "No sufficiently specific official evidence extracted."
+    },
+    "verdict": {
+      "value": "unknown",
+      "status": "provisional",
+      "sources": [],
+      "evidence": [],
+      "reason": "No sufficiently specific official evidence extracted."
+    }
+  },
+  "validation": [
+    "Automatic extraction is provisional until independently reviewed",
+    "Unknown is not evidence of absence",
+    "Composio evidence cannot establish vendor MCP",
+    "Client-only and negated MCP statements are not vendor-server proof",
+    "API breadth is a text-coverage heuristic, not an endpoint census"
+  ]
+}

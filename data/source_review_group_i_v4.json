@@ -1,0 +1,28 @@
+{
+  "checked_at": "2026-11-24",
+  "method": "Installed Chrome rendered visible text; no raw HTML or credentials.",
+  "audit_summary": {
+    "flagged_uses": 1,
+    "actions": 1,
+    "replace": 1,
+    "keep": 0,
+    "unresolved": 0,
+    "note": "Pylon reordered its Professional plan card; the replacement is the current contiguous visible plan text."
+  },
+  "actions": [
+    {
+      "app": "Pylon",
+      "field": "credential_gate",
+      "decision": "replace",
+      "old_url": "https://www.usepylon.com/pricing",
+      "old_quote": "Professional\n\n$89/seat\n\non an annual contract\n\n[Book a demo](https://www.usepylon.com/schedule-demo)\n\nIncludes:\n\nViewer seats\n\nCore support\n\nOut-of-the-box Analytics\n\nAutomations\n\nSkills\n\nBroadcasts\n\nMCP\n\nAPI\n\nIntegrations",
+      "new_url": "https://www.usepylon.com/pricing",
+      "new_title": "Pylon Professional plan",
+      "new_quote": "PROFESSIONAL Includes: Viewer seats Core support Out-of-the-box Analytics Automations Skills Broadcasts MCP API Integrations $89/seat on an annual contract Book a demo",
+      "published_at": null,
+      "published_label": "undated",
+      "review_note": "The current rendered pricing page places the feature list before the price and removes the Markdown link target from visible text. The replacement preserves the paid Professional plan, API/MCP inclusion, and annual price in one exact contiguous excerpt."
+    }
+  ],
+  "unresolved": []
+}

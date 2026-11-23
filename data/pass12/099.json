@@ -1,0 +1,128 @@
+{
+  "app": {
+    "number": 99,
+    "name": "YouTube Transcript",
+    "category": "AI, Research and Media-native",
+    "hint": "transcriptapi.com"
+  },
+  "replayed_at": "2026-11-23T18:45:57.079270+00:00",
+  "source_passes": [
+    "data/pass2/099.json",
+    "data/pass4/099.json"
+  ],
+  "source_searches": [
+    "data/new_search/099.json",
+    "data/pass4_search/099.json"
+  ],
+  "publication_date_note": "Search publication labels are retained exactly; null means no label was available. Relative labels are not exact dates.",
+  "claims": {
+    "auth": {
+      "value": [
+        "OAuth 2.0",
+        "API key",
+        "Bearer token"
+      ],
+      "status": "provisional",
+      "sources": [
+        "https://transcriptapi.com/docs/mcp/",
+        "https://transcriptapi.com/docs/getting-started/javascript/",
+        "https://transcriptapi.com/docs/api/"
+      ],
+      "evidence": [
+        {
+          "value": "OAuth 2.0",
+          "url": "https://transcriptapi.com/docs/mcp/",
+          "excerpt": "MCP (Model Context Protocol) | TranscriptAPI.com Skip to content MCP (Model Context Protocol) Use TranscriptAPI to fetch transcripts, search YouTube, browse channels, and list playlists â all from within your AI assistant via Model Context Protocol (MCP). Claude Tutorial Comple",
+          "published_label": null
+        },
+        {
+          "value": "API key",
+          "url": "https://transcriptapi.com/docs/mcp/",
+          "excerpt": "aylistâs videos. There is nothing to install or host. The server uses the same account, API keys, and credits as the REST API . Server URL: https://transcriptapi.com/mcp Authentication: OAuth 2.1 (Claude, ChatGPT) or an API key sent as a Bearer token (OpenAI Agent",
+          "published_label": null
+        },
+        {
+          "value": "Bearer token",
+          "url": "https://transcriptapi.com/docs/mcp/",
+          "excerpt": "transcriptapi.com/mcp Authentication: OAuth 2.1 (Claude, ChatGPT) or an API key sent as a Bearer token (OpenAI Agent Builder and other clients). See Authentication . Tools: 12, covering transcripts, video info and metadata, search, channels, and playlists. See Available T",
+          "published_label": null
+        },
+        {
+          "value": "API key",
+          "url": "https://transcriptapi.com/docs/getting-started/javascript/",
+          "excerpt": "e Python and cURL quick starts. Before you start Section titled âBefore you startâ An API key. Sign up to get 100 free credits (no card required), then copy a key from the API Keys dashboard . Node.js 18 or newer , which includes fetch . Check with node --version",
+          "published_label": "3 days ago"
+        },
+        {
+          "value": "API key",
+          "url": "https://transcriptapi.com/docs/api/",
+          "excerpt": "cript?video_url=dQw4w9WgXcQ \" \\ -H \" Authorization: Bearer YOUR_API_KEY \" Donât have an API key yet? Get one from your dashboard . Expected Response: { \"video_id\" : \" dQw4w9WgXcQ \" , \"language\" : \" en \" , \"transcript\" : [ { \"text\" : \" Never gonna give you up \" , \"s",
+          "published_label": null
+        },
+        {
+          "value": "Bearer token",
+          "url": "https://transcriptapi.com/docs/api/",
+          "excerpt": "interactive Swagger UI . Authentication Section titled âAuthenticationâ The API uses Bearer token authentication. Include your API key in the Authorization header of every request: Authorization: Bearer YOUR_API_KEY Example: Terminal window curl -X GET \" https://tran",
+          "published_label": null
+        }
+      ],
+      "reason": "Provisional extraction; validate scope and completeness against cited pages."
+    },
+    "credential_gate": {
+      "value": "unknown",
+      "status": "provisional",
+      "sources": [],
+      "evidence": [],
+      "reason": "No sufficiently specific official evidence extracted."
+    },
+    "api_surface": {
+      "value": "REST; broad documented surface",
+      "status": "provisional",
+      "sources": [
+        "https://transcriptapi.com/docs/mcp/"
+      ],
+      "evidence": [
+        {
+          "value": [
+            "REST"
+          ],
+          "breadth": "broad",
+          "url": "https://transcriptapi.com/docs/mcp/",
+          "excerpt": "MCP (Model Context Protocol) | TranscriptAPI.com Skip to content MCP (Model Context Protocol) Use TranscriptAPI to fetch transcripts, search YouTube, browse channels, and list playlists â all from within your AI assistant via Model Context Protocol (MCP). Claude Tutorial Comple",
+          "published_label": null
+        }
+      ],
+      "reason": "Provisional extraction; validate scope and completeness against cited pages."
+    },
+    "official_mcp": {
+      "value": "unknown",
+      "status": "provisional",
+      "sources": [],
+      "evidence": [],
+      "reason": "No sufficiently specific official evidence extracted."
+    },
+    "composio_toolkit": {
+      "value": "listed",
+      "status": "provisional",
+      "sources": [
+        "https://docs.composio.dev/toolkits/youtube_transcript"
+      ],
+      "evidence": [],
+      "reason": "Catalog match only; not vendor MCP evidence."
+    },
+    "verdict": {
+      "value": "unknown",
+      "status": "provisional",
+      "sources": [],
+      "evidence": [],
+      "reason": "No sufficiently specific official evidence extracted."
+    }
+  },
+  "validation": [
+    "Automatic extraction is provisional until independently reviewed",
+    "Unknown is not evidence of absence",
+    "Composio evidence cannot establish vendor MCP",
+    "Client-only and negated MCP statements are not vendor-server proof",
+    "API breadth is a text-coverage heuristic, not an endpoint census"
+  ]
+}

@@ -1,0 +1,57 @@
+{
+  "app": {
+    "number": 58,
+    "name": "Sherlock",
+    "category": "Data, SEO and Scraping",
+    "hint": "github.com/sherlock-project/sherlock"
+  },
+  "checked_at": "2026-11-23T18:15:11.537997+00:00",
+  "prior_source": "data/pass2/058.json",
+  "search_source": "data/pass4_search/058.json",
+  "new_candidates": [],
+  "selected": [],
+  "new_pages": [],
+  "claims": {
+    "auth": {
+      "value": "unknown",
+      "sources": [],
+      "evidence": [],
+      "reason": "No sufficiently specific positive evidence extracted; review targeted search results."
+    },
+    "credential_gate": {
+      "value": "unknown",
+      "sources": [],
+      "evidence": [],
+      "reason": "No sufficiently specific positive evidence extracted; review targeted search results."
+    },
+    "api_surface": {
+      "value": "unknown",
+      "sources": [],
+      "evidence": [],
+      "reason": "No sufficiently specific positive evidence extracted; review targeted search results."
+    },
+    "official_mcp": {
+      "value": "unknown",
+      "sources": [],
+      "evidence": [],
+      "reason": "No sufficiently specific positive evidence extracted; review targeted search results."
+    },
+    "composio_toolkit": {
+      "value": "unknown",
+      "sources": [],
+      "evidence": [],
+      "reason": "No exact or reviewed alias match; absence is not established."
+    },
+    "verdict": {
+      "value": "unknown",
+      "sources": [],
+      "evidence": [],
+      "reason": "A supported access path, authentication method and API surface were not all extracted."
+    }
+  },
+  "validation": [
+    "All claims are provisional",
+    "No vendor MCP inference from Composio catalog",
+    "Negated MCP or client-only source is not counted as vendor-server proof"
+  ]
+}

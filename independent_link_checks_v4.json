@@ -1,0 +1,1963 @@
+[
+  {
+    "url": "https://devblog.xero.com/the-xero-remote-mcp-is-now-generally-available-06008f6ab2a7",
+    "uses": [
+      {
+        "sample": "random_holdout",
+        "app": "Xero",
+        "field": "credential_gate"
+      }
+    ],
+    "status": 200,
+    "final_url": "https://devblog.xero.com/the-xero-remote-mcp-is-now-generally-available-06008f6ab2a7?gi=eb30eb27aca7"
+  },
+  {
+    "url": "https://developer.gladly.com/rest/",
+    "uses": [
+      {
+        "sample": "random_holdout",
+        "app": "Gladly",
+        "field": "auth"
+      },
+      {
+        "sample": "random_holdout",
+        "app": "Gladly",
+        "field": "api_surface"
+      },
+      {
+        "sample": "random_holdout",
+        "app": "Gladly",
+        "field": "verdict"
+      }
+    ],
+    "status": 200,
+    "final_url": "https://developer.gladly.com/rest/"
+  },
+  {
+    "url": "https://developer.salesforce.com/blogs/2026/04/salesforce-hosted-mcp-servers-are-now-generally-available",
+    "uses": [
+      {
+        "sample": "random_holdout",
+        "app": "Salesforce",
+        "field": "official_mcp"
+      }
+    ],
+    "status": 403,
+    "final_url": "https://developer.salesforce.com/blogs/2026/04/salesforce-hosted-mcp-servers-are-now-generally-available",
+    "browser_review": {
+      "url": "https://developer.salesforce.com/blogs/2026/04/salesforce-hosted-mcp-servers-are-now-generally-available",
+      "method": "installed Chrome rendered page; HTTP 200 and visible article body",
+      "note": "Direct requests returned 403, but the rendered official Salesforce Developers Blog article loaded with its GA announcement and MCP details."
+    }
+  },
+  {
+    "url": "https://developer.salesforce.com/docs/platform/api-rest/guide/intro-oauth-and-connected-apps.html",
+    "uses": [
+      {
+        "sample": "random_holdout",
+        "app": "Salesforce",
+        "field": "auth"
+      },
+      {
+        "sample": "random_holdout",
+        "app": "Salesforce",
+        "field": "verdict"
+      }
+    ],
+    "status": 403,
+    "final_url": "https://developer.salesforce.com/docs/platform/api-rest/guide/intro-oauth-and-connected-apps.html",
+    "browser_review": {
+      "url": "https://developer.salesforce.com/docs/platform/api-rest/guide/intro-oauth-and-connected-apps.html",
+      "method": "installed Chrome rendered page; HTTP 200 and visible OAuth guide",
+      "note": "Current official replacement for the retired OAuth overview route; rendered page documents OAuth 2.0 and external client/connected apps."
+    }
+  },
+  {
+    "url": "https://developer.salesforce.com/docs/platform/connect-rest-api/guide/quickstart_dev_org.html",
+    "uses": [
+      {
+        "sample": "random_holdout",
+        "app": "Salesforce",
+        "field": "credential_gate"
+      },
+      {
+        "sample": "random_holdout",
+        "app": "Salesforce",
+        "field": "verdict"
+      }
+    ],
+    "status": 403,
+    "final_url": "https://developer.salesforce.com/docs/platform/connect-rest-api/guide/quickstart_dev_org.html",
+    "browser_review": {
+      "url": "https://developer.salesforce.com/docs/platform/connect-rest-api/guide/quickstart_dev_org.html",
+      "method": "installed Chrome rendered page; HTTP 200 and visible Developer Edition quickstart",
+      "note": "Official replacement for the intermittently empty signup form; rendered page states Developer Edition is free for testing and development."
+    }
+  },
+  {
+    "url": "https://developer.salesforce.com/docs/platform/sfdx-dev/guide/sfdx-dev-mcp.html",
+    "uses": [
+      {
+        "sample": "random_holdout",
+        "app": "Salesforce",
+        "field": "official_mcp"
+      }
+    ],
+    "status": 403,
+    "final_url": "https://developer.salesforce.com/docs/platform/sfdx-dev/guide/sfdx-dev-mcp.html",
+    "browser_review": {
+      "url": "https://developer.salesforce.com/docs/platform/sfdx-dev/guide/sfdx-dev-mcp.html",
+      "method": "installed Chrome rendered page; HTTP 200 and visible DX MCP guide",
+      "note": "Direct requests returned 403, but the rendered official Salesforce DX guide loaded with MCP server and tool documentation."
+    }
+  },
+  {
+    "url": "https://developer.xero.com/documentation/api/accounting/overview",
+    "uses": [
+      {
+        "sample": "random_holdout",
+        "app": "Xero",
+        "field": "api_surface"
+      },
+      {
+        "sample": "random_holdout",
+        "app": "Xero",
+        "field": "verdict"
+      }
+    ],
+    "status": 200,
+    "final_url": "https://developer.xero.com/documentation/api/accounting/overview"
+  },
+  {
+    "url": "https://developer.xero.com/documentation/api/assets/overview",
+    "uses": [
+      {
+        "sample": "random_holdout",
+        "app": "Xero",
+        "field": "api_surface"
+      }
+    ],
+    "status": 200,
+    "final_url": "https://developer.xero.com/documentation/api/assets/overview"
+  },
+  {
+    "url": "https://developer.xero.com/documentation/getting-started-guide/",
+    "uses": [
+      {
+        "sample": "random_holdout",
+        "app": "Xero",
+        "field": "credential_gate"
+      },
+      {
+        "sample": "random_holdout",
+        "app": "Xero",
+        "field": "verdict"
+      }
+    ],
+    "status": 200,
+    "final_url": "https://developer.xero.com/documentation/getting-started-guide/"
+  },
+  {
+    "url": "https://developer.xero.com/documentation/guides/oauth2/overview/",
+    "uses": [
+      {
+        "sample": "random_holdout",
+        "app": "Xero",
+        "field": "auth"
+      },
+      {
+        "sample": "random_holdout",
+        "app": "Xero",
+        "field": "verdict"
+      }
+    ],
+    "status": 200,
+    "final_url": "https://developer.xero.com/documentation/guides/oauth2/overview/"
+  },
+  {
+    "url": "https://developer.xero.com/documentation/guides/remote-mcp/overview",
+    "uses": [
+      {
+        "sample": "random_holdout",
+        "app": "Xero",
+        "field": "official_mcp"
+      }
+    ],
+    "status": 200,
+    "final_url": "https://developer.xero.com/documentation/guides/remote-mcp/overview"
+  },
+  {
+    "url": "https://developer.xero.com/faq/remote-mcp",
+    "uses": [
+      {
+        "sample": "random_holdout",
+        "app": "Xero",
+        "field": "credential_gate"
+      },
+      {
+        "sample": "random_holdout",
+        "app": "Xero",
+        "field": "official_mcp"
+      }
+    ],
+    "status": 200,
+    "final_url": "https://developer.xero.com/faq/remote-mcp"
+  },
+  {
+    "url": "https://developer.zendesk.com/api-reference/",
+    "uses": [
+      {
+        "sample": "selected_sample",
+        "app": "Zendesk",
+        "field": "api_surface"
+      },
+      {
+        "sample": "selected_sample",
+        "app": "Zendesk",
+        "field": "verdict"
+      }
+    ],
+    "status": 200,
+    "final_url": "https://developer.zendesk.com/api-reference/"
+  },
+  {
+    "url": "https://developer.zendesk.com/api-reference/introduction/security-and-auth/",
+    "uses": [
+      {
+        "sample": "selected_sample",
+        "app": "Zendesk",
+        "field": "auth"
+      },
+      {
+        "sample": "selected_sample",
+        "app": "Zendesk",
+        "field": "credential_gate"
+      },
+      {
+        "sample": "selected_sample",
+        "app": "Zendesk",
+        "field": "verdict"
+      }
+    ],
+    "status": 200,
+    "final_url": "https://developer.zendesk.com/api-reference/introduction/security-and-auth/"
+  },
+  {
+    "url": "https://developer.zendesk.com/documentation/conversations/getting-started/api-authentication/",
+    "uses": [
+      {
+        "sample": "selected_sample",
+        "app": "Zendesk",
+        "field": "auth"
+      }
+    ],
+    "status": 200,
+    "final_url": "https://developer.zendesk.com/documentation/conversations/getting-started/api-authentication/"
+  },
+  {
+    "url": "https://developers.google.com/google-ads/api/docs/api-policy/access-levels",
+    "uses": [
+      {
+        "sample": "selected_sample",
+        "app": "Google Ads",
+        "field": "credential_gate"
+      },
+      {
+        "sample": "selected_sample",
+        "app": "Google Ads",
+        "field": "verdict"
+      }
+    ],
+    "status": 200,
+    "final_url": "https://developers.google.com/google-ads/api/docs/api-policy/access-levels"
+  },
+  {
+    "url": "https://developers.google.com/google-ads/api/docs/api-policy/developer-token",
+    "uses": [
+      {
+        "sample": "selected_sample",
+        "app": "Google Ads",
+        "field": "credential_gate"
+      }
+    ],
+    "status": 200,
+    "final_url": "https://developers.google.com/google-ads/api/docs/api-policy/developer-token"
+  },
+  {
+    "url": "https://developers.google.com/google-ads/api/docs/developer-toolkit/mcp-server",
+    "uses": [
+      {
+        "sample": "selected_sample",
+        "app": "Google Ads",
+        "field": "auth"
+      },
+      {
+        "sample": "selected_sample",
+        "app": "Google Ads",
+        "field": "api_surface"
+      },
+      {
+        "sample": "selected_sample",
+        "app": "Google Ads",
+        "field": "official_mcp"
+      }
+    ],
+    "status": 200,
+    "final_url": "https://developers.google.com/google-ads/api/docs/developer-toolkit/mcp-server"
+  },
+  {
+    "url": "https://developers.google.com/google-ads/api/rest/auth",
+    "uses": [
+      {
+        "sample": "selected_sample",
+        "app": "Google Ads",
+        "field": "auth"
+      }
+    ],
+    "status": 200,
+    "final_url": "https://developers.google.com/google-ads/api/rest/auth"
+  },
+  {
+    "url": "https://developers.google.com/google-ads/api/rest/overview",
+    "uses": [
+      {
+        "sample": "selected_sample",
+        "app": "Google Ads",
+        "field": "api_surface"
+      },
+      {
+        "sample": "selected_sample",
+        "app": "Google Ads",
+        "field": "verdict"
+      }
+    ],
+    "status": 200,
+    "final_url": "https://developers.google.com/google-ads/api/rest/overview"
+  },
+  {
+    "url": "https://developers.hubspot.com/changelog/service-keys",
+    "uses": [
+      {
+        "sample": "selected_sample",
+        "app": "HubSpot",
+        "field": "auth"
+      },
+      {
+        "sample": "selected_sample",
+        "app": "HubSpot",
+        "field": "verdict"
+      }
+    ],
+    "status": 200,
+    "final_url": "https://developers.hubspot.com/changelog/service-keys"
+  },
+  {
+    "url": "https://developers.hubspot.com/docs",
+    "uses": [
+      {
+        "sample": "selected_sample",
+        "app": "HubSpot",
+        "field": "api_surface"
+      }
+    ],
+    "status": 200,
+    "final_url": "https://developers.hubspot.com/docs"
+  },
+  {
+    "url": "https://developers.hubspot.com/docs/api",
+    "uses": [
+      {
+        "sample": "selected_sample",
+        "app": "HubSpot",
+        "field": "api_surface"
+      },
+      {
+        "sample": "selected_sample",
+        "app": "HubSpot",
+        "field": "verdict"
+      }
+    ],
+    "status": 200,
+    "final_url": "https://developers.hubspot.com/docs/api-reference/latest/overview"
+  },
+  {
+    "url": "https://developers.hubspot.com/docs/apps/developer-platform/build-apps/authentication/account-service-keys",
+    "uses": [
+      {
+        "sample": "selected_sample",
+        "app": "HubSpot",
+        "field": "auth"
+      },
+      {
+        "sample": "selected_sample",
+        "app": "HubSpot",
+        "field": "credential_gate"
+      },
+      {
+        "sample": "selected_sample",
+        "app": "HubSpot",
+        "field": "verdict"
+      }
+    ],
+    "status": 200,
+    "final_url": "https://developers.hubspot.com/docs/apps/developer-platform/build-apps/authentication/account-service-keys"
+  },
+  {
+    "url": "https://developers.hubspot.com/docs/apps/developer-platform/build-apps/authentication/overview",
+    "uses": [
+      {
+        "sample": "selected_sample",
+        "app": "HubSpot",
+        "field": "auth"
+      }
+    ],
+    "status": 200,
+    "final_url": "https://developers.hubspot.com/docs/apps/developer-platform/build-apps/authentication/overview"
+  },
+  {
+    "url": "https://developers.hubspot.com/docs/apps/developer-platform/build-apps/authentication/scopes",
+    "uses": [
+      {
+        "sample": "selected_sample",
+        "app": "HubSpot",
+        "field": "credential_gate"
+      }
+    ],
+    "status": 200,
+    "final_url": "https://developers.hubspot.com/docs/apps/developer-platform/build-apps/authentication/scopes"
+  },
+  {
+    "url": "https://developers.hubspot.com/docs/apps/developer-platform/build-apps/integrate-with-the-remote-hubspot-mcp-server",
+    "uses": [
+      {
+        "sample": "selected_sample",
+        "app": "HubSpot",
+        "field": "official_mcp"
+      }
+    ],
+    "status": 200,
+    "final_url": "https://developers.hubspot.com/docs/apps/developer-platform/build-apps/integrate-with-the-remote-hubspot-mcp-server"
+  },
+  {
+    "url": "https://developers.hubspot.com/docs/apps/legacy-apps/private-apps/overview",
+    "uses": [
+      {
+        "sample": "selected_sample",
+        "app": "HubSpot",
+        "field": "auth"
+      }
+    ],
+    "status": 200,
+    "final_url": "https://developers.hubspot.com/docs/apps/legacy-apps/private-apps/overview"
+  },
+  {
+    "url": "https://developers.notion.com/docs/authorization",
+    "uses": [
+      {
+        "sample": "selected_sample",
+        "app": "Notion",
+        "field": "auth"
+      },
+      {
+        "sample": "selected_sample",
+        "app": "Notion",
+        "field": "credential_gate"
+      },
+      {
+        "sample": "selected_sample",
+        "app": "Notion",
+        "field": "verdict"
+      }
+    ],
+    "status": 200,
+    "final_url": "https://developers.notion.com/guides/authorization/overview"
+  },
+  {
+    "url": "https://developers.notion.com/guides/mcp/get-started-with-mcp",
+    "uses": [
+      {
+        "sample": "selected_sample",
+        "app": "Notion",
+        "field": "credential_gate"
+      },
+      {
+        "sample": "selected_sample",
+        "app": "Notion",
+        "field": "official_mcp"
+      },
+      {
+        "sample": "selected_sample",
+        "app": "Notion",
+        "field": "verdict"
+      }
+    ],
+    "status": 200,
+    "final_url": "https://developers.notion.com/guides/mcp/get-started-with-mcp"
+  },
+  {
+    "url": "https://developers.notion.com/guides/mcp/overview",
+    "uses": [
+      {
+        "sample": "selected_sample",
+        "app": "Notion",
+        "field": "official_mcp"
+      }
+    ],
+    "status": 200,
+    "final_url": "https://developers.notion.com/guides/mcp/overview"
+  },
+  {
+    "url": "https://developers.notion.com/reference/intro",
+    "uses": [
+      {
+        "sample": "selected_sample",
+        "app": "Notion",
+        "field": "auth"
+      },
+      {
+        "sample": "selected_sample",
+        "app": "Notion",
+        "field": "api_surface"
+      },
+      {
+        "sample": "selected_sample",
+        "app": "Notion",
+        "field": "verdict"
+      }
+    ],
+    "status": 200,
+    "final_url": "https://developers.notion.com/reference/intro"
+  },
+  {
+    "url": "https://docs.apify.com/api/v2",
+    "uses": [
+      {
+        "sample": "selected_sample",
+        "app": "Apify",
+        "field": "auth"
+      },
+      {
+        "sample": "selected_sample",
+        "app": "Apify",
+        "field": "api_surface"
+      },
+      {
+        "sample": "selected_sample",
+        "app": "Apify",
+        "field": "verdict"
+      }
+    ],
+    "status": 200,
+    "final_url": "https://docs.apify.com/api/v2"
+  },
+  {
+    "url": "https://docs.apify.com/integrations/api",
+    "uses": [
+      {
+        "sample": "selected_sample",
+        "app": "Apify",
+        "field": "credential_gate"
+      },
+      {
+        "sample": "selected_sample",
+        "app": "Apify",
+        "field": "api_surface"
+      },
+      {
+        "sample": "selected_sample",
+        "app": "Apify",
+        "field": "verdict"
+      }
+    ],
+    "status": 200,
+    "final_url": "https://docs.apify.com/integrations/api"
+  },
+  {
+    "url": "https://docs.apify.com/mcp",
+    "uses": [
+      {
+        "sample": "selected_sample",
+        "app": "Apify",
+        "field": "auth"
+      },
+      {
+        "sample": "selected_sample",
+        "app": "Apify",
+        "field": "official_mcp"
+      },
+      {
+        "sample": "selected_sample",
+        "app": "Apify",
+        "field": "verdict"
+      }
+    ],
+    "status": 200,
+    "final_url": "https://docs.apify.com/mcp"
+  },
+  {
+    "url": "https://docs.composio.dev/toolkits",
+    "uses": [
+      {
+        "sample": "selected_sample",
+        "app": "Reducto",
+        "field": "composio_toolkit"
+      },
+      {
+        "sample": "selected_sample",
+        "app": "Reducto",
+        "field": "verdict"
+      },
+      {
+        "sample": "random_holdout",
+        "app": "Gladly",
+        "field": "composio_toolkit"
+      }
+    ],
+    "status": 200,
+    "final_url": "https://docs.composio.dev/toolkits"
+  },
+  {
+    "url": "https://docs.composio.dev/toolkits/apify",
+    "uses": [
+      {
+        "sample": "selected_sample",
+        "app": "Apify",
+        "field": "composio_toolkit"
+      }
+    ],
+    "status": 200,
+    "final_url": "https://docs.composio.dev/toolkits/apify"
+  },
+  {
+    "url": "https://docs.composio.dev/toolkits/discord",
+    "uses": [
+      {
+        "sample": "random_holdout",
+        "app": "Discord",
+        "field": "composio_toolkit"
+      }
+    ],
+    "status": 200,
+    "final_url": "https://docs.composio.dev/toolkits/discord"
+  },
+  {
+    "url": "https://docs.composio.dev/toolkits/github",
+    "uses": [
+      {
+        "sample": "selected_sample",
+        "app": "GitHub",
+        "field": "composio_toolkit"
+      }
+    ],
+    "status": 200,
+    "final_url": "https://docs.composio.dev/toolkits/github"
+  },
+  {
+    "url": "https://docs.composio.dev/toolkits/googleads",
+    "uses": [
+      {
+        "sample": "selected_sample",
+        "app": "Google Ads",
+        "field": "composio_toolkit"
+      }
+    ],
+    "status": 200,
+    "final_url": "https://docs.composio.dev/toolkits/googleads"
+  },
+  {
+    "url": "https://docs.composio.dev/toolkits/higgsfield",
+    "uses": [
+      {
+        "sample": "random_holdout",
+        "app": "higgsfield",
+        "field": "composio_toolkit"
+      }
+    ],
+    "status": 200,
+    "final_url": "https://docs.composio.dev/toolkits/higgsfield"
+  },
+  {
+    "url": "https://docs.composio.dev/toolkits/hubspot",
+    "uses": [
+      {
+        "sample": "selected_sample",
+        "app": "HubSpot",
+        "field": "composio_toolkit"
+      }
+    ],
+    "status": 200,
+    "final_url": "https://docs.composio.dev/toolkits/hubspot"
+  },
+  {
+    "url": "https://docs.composio.dev/toolkits/lark",
+    "uses": [
+      {
+        "sample": "random_holdout",
+        "app": "Lark (Larksuite)",
+        "field": "composio_toolkit"
+      }
+    ],
+    "status": 200,
+    "final_url": "https://docs.composio.dev/toolkits/lark"
+  },
+  {
+    "url": "https://docs.composio.dev/toolkits/notion",
+    "uses": [
+      {
+        "sample": "selected_sample",
+        "app": "Notion",
+        "field": "composio_toolkit"
+      }
+    ],
+    "status": 200,
+    "final_url": "https://docs.composio.dev/toolkits/notion"
+  },
+  {
+    "url": "https://docs.composio.dev/toolkits/salesforce",
+    "uses": [
+      {
+        "sample": "random_holdout",
+        "app": "Salesforce",
+        "field": "composio_toolkit"
+      }
+    ],
+    "status": 200,
+    "final_url": "https://docs.composio.dev/toolkits/salesforce"
+  },
+  {
+    "url": "https://docs.composio.dev/toolkits/sentry",
+    "uses": [
+      {
+        "sample": "random_holdout",
+        "app": "Sentry",
+        "field": "composio_toolkit"
+      }
+    ],
+    "status": 200,
+    "final_url": "https://docs.composio.dev/toolkits/sentry"
+  },
+  {
+    "url": "https://docs.composio.dev/toolkits/shopify",
+    "uses": [
+      {
+        "sample": "selected_sample",
+        "app": "Shopify",
+        "field": "composio_toolkit"
+      },
+      {
+        "sample": "selected_sample",
+        "app": "Shopify",
+        "field": "verdict"
+      }
+    ],
+    "status": 200,
+    "final_url": "https://docs.composio.dev/toolkits/shopify"
+  },
+  {
+    "url": "https://docs.composio.dev/toolkits/slack",
+    "uses": [
+      {
+        "sample": "selected_sample",
+        "app": "Slack",
+        "field": "composio_toolkit"
+      }
+    ],
+    "status": 200,
+    "final_url": "https://docs.composio.dev/toolkits/slack"
+  },
+  {
+    "url": "https://docs.composio.dev/toolkits/snowflake",
+    "uses": [
+      {
+        "sample": "random_holdout",
+        "app": "Snowflake",
+        "field": "composio_toolkit"
+      }
+    ],
+    "status": 200,
+    "final_url": "https://docs.composio.dev/toolkits/snowflake"
+  },
+  {
+    "url": "https://docs.composio.dev/toolkits/stripe",
+    "uses": [
+      {
+        "sample": "selected_sample",
+        "app": "Stripe",
+        "field": "composio_toolkit"
+      },
+      {
+        "sample": "selected_sample",
+        "app": "Stripe",
+        "field": "verdict"
+      }
+    ],
+    "status": 200,
+    "final_url": "https://docs.composio.dev/toolkits/stripe"
+  },
+  {
+    "url": "https://docs.composio.dev/toolkits/xero",
+    "uses": [
+      {
+        "sample": "random_holdout",
+        "app": "Xero",
+        "field": "composio_toolkit"
+      }
+    ],
+    "status": 200,
+    "final_url": "https://docs.composio.dev/toolkits/xero"
+  },
+  {
+    "url": "https://docs.composio.dev/toolkits/youtube_transcript",
+    "uses": [
+      {
+        "sample": "random_holdout",
+        "app": "YouTube Transcript",
+        "field": "composio_toolkit"
+      }
+    ],
+    "status": 200,
+    "final_url": "https://docs.composio.dev/toolkits/youtube_transcript"
+  },
+  {
+    "url": "https://docs.composio.dev/toolkits/zendesk",
+    "uses": [
+      {
+        "sample": "selected_sample",
+        "app": "Zendesk",
+        "field": "composio_toolkit"
+      }
+    ],
+    "status": 200,
+    "final_url": "https://docs.composio.dev/toolkits/zendesk"
+  },
+  {
+    "url": "https://docs.composio.dev/toolkits/zoho",
+    "uses": [
+      {
+        "sample": "random_holdout",
+        "app": "Zoho CRM",
+        "field": "composio_toolkit"
+      }
+    ],
+    "status": 200,
+    "final_url": "https://docs.composio.dev/toolkits/zoho"
+  },
+  {
+    "url": "https://docs.discord.com/developers/change-log",
+    "uses": [
+      {
+        "sample": "random_holdout",
+        "app": "Discord",
+        "field": "official_mcp"
+      }
+    ],
+    "status": 200,
+    "final_url": "https://docs.discord.com/developers/change-log"
+  },
+  {
+    "url": "https://docs.discord.com/developers/events/gateway#privileged-intents",
+    "uses": [
+      {
+        "sample": "random_holdout",
+        "app": "Discord",
+        "field": "credential_gate"
+      },
+      {
+        "sample": "random_holdout",
+        "app": "Discord",
+        "field": "verdict"
+      }
+    ],
+    "status": 200,
+    "final_url": "https://docs.discord.com/developers/events/gateway#privileged-intents"
+  },
+  {
+    "url": "https://docs.discord.com/developers/reference",
+    "uses": [
+      {
+        "sample": "random_holdout",
+        "app": "Discord",
+        "field": "auth"
+      },
+      {
+        "sample": "random_holdout",
+        "app": "Discord",
+        "field": "api_surface"
+      },
+      {
+        "sample": "random_holdout",
+        "app": "Discord",
+        "field": "verdict"
+      }
+    ],
+    "status": 200,
+    "final_url": "https://docs.discord.com/developers/reference"
+  },
+  {
+    "url": "https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/managing-your-personal-access-tokens",
+    "uses": [
+      {
+        "sample": "selected_sample",
+        "app": "GitHub",
+        "field": "credential_gate"
+      }
+    ],
+    "status": 200,
+    "final_url": "https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/managing-your-personal-access-tokens"
+  },
+  {
+    "url": "https://docs.github.com/en/rest/about-the-rest-api/comparing-githubs-rest-api-and-graphql-api",
+    "uses": [
+      {
+        "sample": "selected_sample",
+        "app": "GitHub",
+        "field": "api_surface"
+      },
+      {
+        "sample": "selected_sample",
+        "app": "GitHub",
+        "field": "verdict"
+      }
+    ],
+    "status": 200,
+    "final_url": "https://docs.github.com/en/rest/about-the-rest-api/comparing-githubs-rest-api-and-graphql-api"
+  },
+  {
+    "url": "https://docs.github.com/en/rest/authentication/authenticating-to-the-rest-api",
+    "uses": [
+      {
+        "sample": "selected_sample",
+        "app": "GitHub",
+        "field": "auth"
+      },
+      {
+        "sample": "selected_sample",
+        "app": "GitHub",
+        "field": "credential_gate"
+      },
+      {
+        "sample": "selected_sample",
+        "app": "GitHub",
+        "field": "verdict"
+      }
+    ],
+    "status": 200,
+    "final_url": "https://docs.github.com/en/rest/authentication/authenticating-to-the-rest-api"
+  },
+  {
+    "url": "https://docs.github.com/en/rest/authentication/keeping-your-api-credentials-secure",
+    "uses": [
+      {
+        "sample": "selected_sample",
+        "app": "GitHub",
+        "field": "auth"
+      }
+    ],
+    "status": 200,
+    "final_url": "https://docs.github.com/en/rest/authentication/keeping-your-api-credentials-secure"
+  },
+  {
+    "url": "https://docs.github.com/en/rest/using-the-rest-api/getting-started-with-the-rest-api",
+    "uses": [
+      {
+        "sample": "selected_sample",
+        "app": "GitHub",
+        "field": "api_surface"
+      }
+    ],
+    "status": 200,
+    "final_url": "https://docs.github.com/en/rest/using-the-rest-api/getting-started-with-the-rest-api"
+  },
+  {
+    "url": "https://docs.higgsfield.ai/docs",
+    "uses": [
+      {
+        "sample": "random_holdout",
+        "app": "higgsfield",
+        "field": "auth"
+      },
+      {
+        "sample": "random_holdout",
+        "app": "higgsfield",
+        "field": "api_surface"
+      }
+    ],
+    "status": 200,
+    "final_url": "https://docs.higgsfield.ai/docs"
+  },
+  {
+    "url": "https://docs.reducto.ai/api-reference/api/sections/parse/operations/parse",
+    "uses": [
+      {
+        "sample": "selected_sample",
+        "app": "Reducto",
+        "field": "api_surface"
+      }
+    ],
+    "status": 200,
+    "final_url": "https://docs.reducto.ai/api-reference/api/sections/parse/operations/parse"
+  },
+  {
+    "url": "https://docs.reducto.ai/mcp-server",
+    "uses": [
+      {
+        "sample": "selected_sample",
+        "app": "Reducto",
+        "field": "auth"
+      },
+      {
+        "sample": "selected_sample",
+        "app": "Reducto",
+        "field": "official_mcp"
+      },
+      {
+        "sample": "selected_sample",
+        "app": "Reducto",
+        "field": "verdict"
+      }
+    ],
+    "status": 200,
+    "final_url": "https://docs.reducto.ai/mcp-server"
+  },
+  {
+    "url": "https://docs.reducto.ai/overview",
+    "uses": [
+      {
+        "sample": "selected_sample",
+        "app": "Reducto",
+        "field": "api_surface"
+      }
+    ],
+    "status": 200,
+    "final_url": "https://docs.reducto.ai/overview"
+  },
+  {
+    "url": "https://docs.reducto.ai/quickstart",
+    "uses": [
+      {
+        "sample": "selected_sample",
+        "app": "Reducto",
+        "field": "auth"
+      },
+      {
+        "sample": "selected_sample",
+        "app": "Reducto",
+        "field": "credential_gate"
+      }
+    ],
+    "status": 200,
+    "final_url": "https://docs.reducto.ai/quickstart"
+  },
+  {
+    "url": "https://docs.sentry.io/api/",
+    "uses": [
+      {
+        "sample": "random_holdout",
+        "app": "Sentry",
+        "field": "api_surface"
+      },
+      {
+        "sample": "random_holdout",
+        "app": "Sentry",
+        "field": "verdict"
+      }
+    ],
+    "status": 200,
+    "final_url": "https://docs.sentry.io/api/"
+  },
+  {
+    "url": "https://docs.sentry.io/api/auth/",
+    "uses": [
+      {
+        "sample": "random_holdout",
+        "app": "Sentry",
+        "field": "auth"
+      },
+      {
+        "sample": "random_holdout",
+        "app": "Sentry",
+        "field": "verdict"
+      }
+    ],
+    "status": 200,
+    "final_url": "https://docs.sentry.io/api/auth/"
+  },
+  {
+    "url": "https://docs.slack.dev/ai/slack-mcp-server",
+    "uses": [
+      {
+        "sample": "selected_sample",
+        "app": "Slack",
+        "field": "official_mcp"
+      }
+    ],
+    "status": 200,
+    "final_url": "https://docs.slack.dev/ai/slack-mcp-server/"
+  },
+  {
+    "url": "https://docs.slack.dev/apis/web-api/",
+    "uses": [
+      {
+        "sample": "selected_sample",
+        "app": "Slack",
+        "field": "auth"
+      },
+      {
+        "sample": "selected_sample",
+        "app": "Slack",
+        "field": "api_surface"
+      },
+      {
+        "sample": "selected_sample",
+        "app": "Slack",
+        "field": "verdict"
+      }
+    ],
+    "status": 200,
+    "final_url": "https://docs.slack.dev/apis/web-api/"
+  },
+  {
+    "url": "https://docs.slack.dev/authentication/enterprise-managed-authorization",
+    "uses": [
+      {
+        "sample": "selected_sample",
+        "app": "Slack",
+        "field": "credential_gate"
+      },
+      {
+        "sample": "selected_sample",
+        "app": "Slack",
+        "field": "verdict"
+      }
+    ],
+    "status": 200,
+    "final_url": "https://docs.slack.dev/authentication/enterprise-managed-authorization/"
+  },
+  {
+    "url": "https://docs.slack.dev/authentication/installing-with-oauth",
+    "uses": [
+      {
+        "sample": "selected_sample",
+        "app": "Slack",
+        "field": "credential_gate"
+      }
+    ],
+    "status": 200,
+    "final_url": "https://docs.slack.dev/authentication/installing-with-oauth/"
+  },
+  {
+    "url": "https://docs.slack.dev/authentication/tokens",
+    "uses": [
+      {
+        "sample": "selected_sample",
+        "app": "Slack",
+        "field": "auth"
+      },
+      {
+        "sample": "selected_sample",
+        "app": "Slack",
+        "field": "verdict"
+      }
+    ],
+    "status": 200,
+    "final_url": "https://docs.slack.dev/authentication/tokens/"
+  },
+  {
+    "url": "https://docs.slack.dev/reference/methods/oauth.access",
+    "uses": [
+      {
+        "sample": "selected_sample",
+        "app": "Slack",
+        "field": "auth"
+      }
+    ],
+    "status": 200,
+    "final_url": "https://docs.slack.dev/reference/methods/oauth.access/"
+  },
+  {
+    "url": "https://docs.snowflake.com/en/api-reference",
+    "uses": [
+      {
+        "sample": "random_holdout",
+        "app": "Snowflake",
+        "field": "api_surface"
+      }
+    ],
+    "status": 200,
+    "final_url": "https://docs.snowflake.com/en/api-reference"
+  },
+  {
+    "url": "https://docs.snowflake.com/en/developer-guide/snowflake-rest-api/authentication",
+    "uses": [
+      {
+        "sample": "random_holdout",
+        "app": "Snowflake",
+        "field": "auth"
+      },
+      {
+        "sample": "random_holdout",
+        "app": "Snowflake",
+        "field": "api_surface"
+      },
+      {
+        "sample": "random_holdout",
+        "app": "Snowflake",
+        "field": "verdict"
+      }
+    ],
+    "status": 200,
+    "final_url": "https://docs.snowflake.com/en/developer-guide/snowflake-rest-api/authentication"
+  },
+  {
+    "url": "https://docs.snowflake.com/en/user-guide/admin-trial-account",
+    "uses": [
+      {
+        "sample": "random_holdout",
+        "app": "Snowflake",
+        "field": "credential_gate"
+      },
+      {
+        "sample": "random_holdout",
+        "app": "Snowflake",
+        "field": "verdict"
+      }
+    ],
+    "status": 200,
+    "final_url": "https://docs.snowflake.com/en/user-guide/admin-trial-account"
+  },
+  {
+    "url": "https://docs.snowflake.com/en/user-guide/api-authentication",
+    "uses": [
+      {
+        "sample": "random_holdout",
+        "app": "Snowflake",
+        "field": "auth"
+      }
+    ],
+    "status": 200,
+    "final_url": "https://docs.snowflake.com/en/user-guide/api-authentication"
+  },
+  {
+    "url": "https://docs.snowflake.com/en/user-guide/programmatic-access-tokens",
+    "uses": [
+      {
+        "sample": "random_holdout",
+        "app": "Snowflake",
+        "field": "auth"
+      },
+      {
+        "sample": "random_holdout",
+        "app": "Snowflake",
+        "field": "credential_gate"
+      }
+    ],
+    "status": 200,
+    "final_url": "https://docs.snowflake.com/en/user-guide/programmatic-access-tokens"
+  },
+  {
+    "url": "https://docs.snowflake.com/en/user-guide/snowflake-cortex/cortex-agents-mcp",
+    "uses": [
+      {
+        "sample": "random_holdout",
+        "app": "Snowflake",
+        "field": "official_mcp"
+      },
+      {
+        "sample": "random_holdout",
+        "app": "Snowflake",
+        "field": "verdict"
+      }
+    ],
+    "status": 200,
+    "final_url": "https://docs.snowflake.com/en/user-guide/snowflake-cortex/cortex-agents-mcp"
+  },
+  {
+    "url": "https://docs.stripe.com/api",
+    "uses": [
+      {
+        "sample": "selected_sample",
+        "app": "Stripe",
+        "field": "api_surface"
+      },
+      {
+        "sample": "selected_sample",
+        "app": "Stripe",
+        "field": "verdict"
+      }
+    ],
+    "status": 200,
+    "final_url": "https://docs.stripe.com/api"
+  },
+  {
+    "url": "https://docs.stripe.com/api/authentication",
+    "uses": [
+      {
+        "sample": "selected_sample",
+        "app": "Stripe",
+        "field": "auth"
+      }
+    ],
+    "status": 200,
+    "final_url": "https://docs.stripe.com/api/authentication"
+  },
+  {
+    "url": "https://docs.stripe.com/keys",
+    "uses": [
+      {
+        "sample": "selected_sample",
+        "app": "Stripe",
+        "field": "auth"
+      },
+      {
+        "sample": "selected_sample",
+        "app": "Stripe",
+        "field": "credential_gate"
+      }
+    ],
+    "status": 200,
+    "final_url": "https://docs.stripe.com/keys"
+  },
+  {
+    "url": "https://docs.stripe.com/mcp",
+    "uses": [
+      {
+        "sample": "selected_sample",
+        "app": "Stripe",
+        "field": "auth"
+      },
+      {
+        "sample": "selected_sample",
+        "app": "Stripe",
+        "field": "credential_gate"
+      },
+      {
+        "sample": "selected_sample",
+        "app": "Stripe",
+        "field": "official_mcp"
+      },
+      {
+        "sample": "selected_sample",
+        "app": "Stripe",
+        "field": "verdict"
+      }
+    ],
+    "status": 200,
+    "final_url": "https://docs.stripe.com/mcp"
+  },
+  {
+    "url": "https://github.com/github/github-mcp-server",
+    "uses": [
+      {
+        "sample": "selected_sample",
+        "app": "GitHub",
+        "field": "official_mcp"
+      },
+      {
+        "sample": "selected_sample",
+        "app": "GitHub",
+        "field": "verdict"
+      }
+    ],
+    "status": 200,
+    "final_url": "https://github.com/github/github-mcp-server"
+  },
+  {
+    "url": "https://github.com/larksuite/lark-openapi-mcp",
+    "uses": [
+      {
+        "sample": "random_holdout",
+        "app": "Lark (Larksuite)",
+        "field": "official_mcp"
+      }
+    ],
+    "status": 200,
+    "final_url": "https://github.com/larksuite/lark-openapi-mcp"
+  },
+  {
+    "url": "https://help.gladly.com/developer-tutorials/docs/setup-and-testing",
+    "uses": [
+      {
+        "sample": "random_holdout",
+        "app": "Gladly",
+        "field": "auth"
+      },
+      {
+        "sample": "random_holdout",
+        "app": "Gladly",
+        "field": "credential_gate"
+      },
+      {
+        "sample": "random_holdout",
+        "app": "Gladly",
+        "field": "verdict"
+      }
+    ],
+    "status": 200,
+    "final_url": "https://help.gladly.com/developer-tutorials/docs/setup-and-testing"
+  },
+  {
+    "url": "https://help.gladly.com/docs/api-export-tool",
+    "uses": [
+      {
+        "sample": "random_holdout",
+        "app": "Gladly",
+        "field": "api_surface"
+      }
+    ],
+    "status": 200,
+    "final_url": "https://help.gladly.com/docs/api-export-tool"
+  },
+  {
+    "url": "https://help.gladly.com/docs/set-up-mcp-connections",
+    "uses": [
+      {
+        "sample": "random_holdout",
+        "app": "Gladly",
+        "field": "auth"
+      },
+      {
+        "sample": "random_holdout",
+        "app": "Gladly",
+        "field": "official_mcp"
+      }
+    ],
+    "status": 200,
+    "final_url": "https://help.gladly.com/docs/set-up-mcp-connections"
+  },
+  {
+    "url": "https://help.gladly.com/docs/what-are-mcp-connections",
+    "uses": [
+      {
+        "sample": "random_holdout",
+        "app": "Gladly",
+        "field": "official_mcp"
+      }
+    ],
+    "status": 200,
+    "final_url": "https://help.gladly.com/docs/what-are-mcp-connections"
+  },
+  {
+    "url": "https://higgsfield.ai/creator-hub/help-center/integrations/what-is-higgsfield-mcp",
+    "uses": [
+      {
+        "sample": "random_holdout",
+        "app": "higgsfield",
+        "field": "auth"
+      },
+      {
+        "sample": "random_holdout",
+        "app": "higgsfield",
+        "field": "credential_gate"
+      },
+      {
+        "sample": "random_holdout",
+        "app": "higgsfield",
+        "field": "official_mcp"
+      },
+      {
+        "sample": "random_holdout",
+        "app": "higgsfield",
+        "field": "verdict"
+      }
+    ],
+    "status": 200,
+    "final_url": "https://higgsfield.ai/creator-hub/help-center/integrations/what-is-higgsfield-mcp"
+  },
+  {
+    "url": "https://higgsfield.ai/creator-hub/help-center/integrations/what-is-the-higgsfield-api",
+    "uses": [
+      {
+        "sample": "random_holdout",
+        "app": "higgsfield",
+        "field": "auth"
+      },
+      {
+        "sample": "random_holdout",
+        "app": "higgsfield",
+        "field": "credential_gate"
+      },
+      {
+        "sample": "random_holdout",
+        "app": "higgsfield",
+        "field": "api_surface"
+      },
+      {
+        "sample": "random_holdout",
+        "app": "higgsfield",
+        "field": "verdict"
+      }
+    ],
+    "status": 200,
+    "final_url": "https://higgsfield.ai/creator-hub/help-center/integrations/what-is-the-higgsfield-api"
+  },
+  {
+    "url": "https://mcp.sentry.dev/",
+    "uses": [
+      {
+        "sample": "random_holdout",
+        "app": "Sentry",
+        "field": "official_mcp"
+      }
+    ],
+    "status": 200,
+    "final_url": "https://mcp.sentry.dev/"
+  },
+  {
+    "url": "https://open.larksuite.com/document/server-docs/docs/bitable-v1/bitable-overview",
+    "uses": [
+      {
+        "sample": "random_holdout",
+        "app": "Lark (Larksuite)",
+        "field": "api_surface"
+      }
+    ],
+    "status": 200,
+    "final_url": "https://open.larksuite.com/document/server-docs/docs/bitable-v1/bitable-overview"
+  },
+  {
+    "url": "https://open.larksuite.com/document/server-docs/getting-started/api-access-token/app-access-token-development-guide",
+    "uses": [
+      {
+        "sample": "random_holdout",
+        "app": "Lark (Larksuite)",
+        "field": "auth"
+      },
+      {
+        "sample": "random_holdout",
+        "app": "Lark (Larksuite)",
+        "field": "verdict"
+      }
+    ],
+    "status": 200,
+    "final_url": "https://open.larksuite.com/document/server-docs/getting-started/api-access-token/app-access-token-development-guide"
+  },
+  {
+    "url": "https://open.larksuite.com/document/server-docs/getting-started/overview-of-app-scopes",
+    "uses": [
+      {
+        "sample": "random_holdout",
+        "app": "Lark (Larksuite)",
+        "field": "auth"
+      },
+      {
+        "sample": "random_holdout",
+        "app": "Lark (Larksuite)",
+        "field": "credential_gate"
+      },
+      {
+        "sample": "random_holdout",
+        "app": "Lark (Larksuite)",
+        "field": "verdict"
+      }
+    ],
+    "status": 200,
+    "final_url": "https://open.larksuite.com/document/server-docs/getting-started/overview-of-app-scopes"
+  },
+  {
+    "url": "https://open.larksuite.com/document/server-docs/im-v1/message/create",
+    "uses": [
+      {
+        "sample": "random_holdout",
+        "app": "Lark (Larksuite)",
+        "field": "api_surface"
+      },
+      {
+        "sample": "random_holdout",
+        "app": "Lark (Larksuite)",
+        "field": "verdict"
+      }
+    ],
+    "status": 200,
+    "final_url": "https://open.larksuite.com/document/server-docs/im-v1/message/create"
+  },
+  {
+    "url": "https://open.larksuite.com/document/uAjLw4CM/ukTMukTMukTM/mcp_integration/mcp_introduction",
+    "uses": [
+      {
+        "sample": "random_holdout",
+        "app": "Lark (Larksuite)",
+        "field": "official_mcp"
+      }
+    ],
+    "status": 200,
+    "final_url": "https://open.larksuite.com/document/uAjLw4CM/ukTMukTMukTM/mcp_integration/mcp_introduction"
+  },
+  {
+    "url": "https://reducto.ai/developers",
+    "uses": [
+      {
+        "sample": "selected_sample",
+        "app": "Reducto",
+        "field": "auth"
+      },
+      {
+        "sample": "selected_sample",
+        "app": "Reducto",
+        "field": "credential_gate"
+      },
+      {
+        "sample": "selected_sample",
+        "app": "Reducto",
+        "field": "api_surface"
+      },
+      {
+        "sample": "selected_sample",
+        "app": "Reducto",
+        "field": "verdict"
+      }
+    ],
+    "status": 200,
+    "final_url": "https://reducto.ai/developers"
+  },
+  {
+    "url": "https://sentry.io/pricing/",
+    "uses": [
+      {
+        "sample": "random_holdout",
+        "app": "Sentry",
+        "field": "credential_gate"
+      },
+      {
+        "sample": "random_holdout",
+        "app": "Sentry",
+        "field": "verdict"
+      }
+    ],
+    "status": 200,
+    "final_url": "https://sentry.io/pricing/"
+  },
+  {
+    "url": "https://sentry.io/signup/",
+    "uses": [
+      {
+        "sample": "random_holdout",
+        "app": "Sentry",
+        "field": "credential_gate"
+      }
+    ],
+    "status": 200,
+    "final_url": "https://sentry.io/signup/"
+  },
+  {
+    "url": "https://shopify.dev/docs/api/admin-graphql",
+    "uses": [
+      {
+        "sample": "selected_sample",
+        "app": "Shopify",
+        "field": "api_surface"
+      },
+      {
+        "sample": "selected_sample",
+        "app": "Shopify",
+        "field": "verdict"
+      }
+    ],
+    "status": 200,
+    "final_url": "https://shopify.dev/docs/api/admin-graphql/latest"
+  },
+  {
+    "url": "https://shopify.dev/docs/api/admin-rest",
+    "uses": [
+      {
+        "sample": "selected_sample",
+        "app": "Shopify",
+        "field": "api_surface"
+      }
+    ],
+    "status": 200,
+    "final_url": "https://shopify.dev/docs/api/admin-rest"
+  },
+  {
+    "url": "https://shopify.dev/docs/api/shopify-mcp",
+    "uses": [
+      {
+        "sample": "selected_sample",
+        "app": "Shopify",
+        "field": "official_mcp"
+      }
+    ],
+    "status": 200,
+    "final_url": "https://shopify.dev/docs/api/shopify-mcp"
+  },
+  {
+    "url": "https://shopify.dev/docs/apps/build/authentication-authorization",
+    "uses": [
+      {
+        "sample": "selected_sample",
+        "app": "Shopify",
+        "field": "auth"
+      },
+      {
+        "sample": "selected_sample",
+        "app": "Shopify",
+        "field": "credential_gate"
+      },
+      {
+        "sample": "selected_sample",
+        "app": "Shopify",
+        "field": "verdict"
+      }
+    ],
+    "status": 200,
+    "final_url": "https://shopify.dev/docs/apps/build/authentication-authorization"
+  },
+  {
+    "url": "https://shopify.dev/docs/apps/build/authentication-authorization/id-tokens",
+    "uses": [
+      {
+        "sample": "selected_sample",
+        "app": "Shopify",
+        "field": "auth"
+      }
+    ],
+    "status": 200,
+    "final_url": "https://shopify.dev/docs/apps/build/authentication-authorization/id-tokens"
+  },
+  {
+    "url": "https://support.zendesk.com/hc/en-us/articles/10840968198042-Announcing-the-removal-of-API-tokens-as-an-authentication-method-for-API-requests",
+    "uses": [
+      {
+        "sample": "selected_sample",
+        "app": "Zendesk",
+        "field": "auth"
+      },
+      {
+        "sample": "selected_sample",
+        "app": "Zendesk",
+        "field": "verdict"
+      }
+    ],
+    "status": 200,
+    "final_url": "https://support.zendesk.com/hc/en-us/articles/10840968198042-Announcing-the-removal-of-API-tokens-as-an-authentication-method-for-API-requests"
+  },
+  {
+    "url": "https://support.zendesk.com/hc/en-us/articles/11105393853210-Announcing-the-general-availability-of-the-MCP-client",
+    "uses": [
+      {
+        "sample": "selected_sample",
+        "app": "Zendesk",
+        "field": "official_mcp"
+      }
+    ],
+    "status": 200,
+    "final_url": "https://support.zendesk.com/hc/en-us/articles/11105393853210-Announcing-the-general-availability-of-the-MCP-client"
+  },
+  {
+    "url": "https://support.zendesk.com/hc/en-us/articles/11400026079130-Connecting-external-AI-agents-to-the-Zendesk-MCP-server-or-Zendesk-AI-agents-EAP",
+    "uses": [
+      {
+        "sample": "selected_sample",
+        "app": "Zendesk",
+        "field": "official_mcp"
+      }
+    ],
+    "status": 200,
+    "final_url": "https://support.zendesk.com/hc/en-us/articles/11400026079130-Connecting-external-AI-agents-to-the-Zendesk-MCP-server-or-Zendesk-AI-agents-EAP"
+  },
+  {
+    "url": "https://support.zendesk.com/hc/en-us/articles/8662004958746-Turning-on-and-off-API-access",
+    "uses": [
+      {
+        "sample": "selected_sample",
+        "app": "Zendesk",
+        "field": "credential_gate"
+      }
+    ],
+    "status": 200,
+    "final_url": "https://support.zendesk.com/hc/en-us/articles/8662004958746-Turning-on-and-off-API-access"
+  },
+  {
+    "url": "https://trailhead.salesforce.com/content/learn/modules/api_basics/api_basics_rest",
+    "uses": [
+      {
+        "sample": "random_holdout",
+        "app": "Salesforce",
+        "field": "credential_gate"
+      },
+      {
+        "sample": "random_holdout",
+        "app": "Salesforce",
+        "field": "api_surface"
+      },
+      {
+        "sample": "random_holdout",
+        "app": "Salesforce",
+        "field": "verdict"
+      }
+    ],
+    "status": 200,
+    "final_url": "https://trailhead.salesforce.com/content/learn/modules/api_basics/api_basics_rest"
+  },
+  {
+    "url": "https://transcriptapi.com/docs/api/",
+    "uses": [
+      {
+        "sample": "random_holdout",
+        "app": "YouTube Transcript",
+        "field": "auth"
+      },
+      {
+        "sample": "random_holdout",
+        "app": "YouTube Transcript",
+        "field": "api_surface"
+      },
+      {
+        "sample": "random_holdout",
+        "app": "YouTube Transcript",
+        "field": "verdict"
+      }
+    ],
+    "status": 200,
+    "final_url": "https://transcriptapi.com/docs/api/"
+  },
+  {
+    "url": "https://transcriptapi.com/docs/mcp/",
+    "uses": [
+      {
+        "sample": "random_holdout",
+        "app": "YouTube Transcript",
+        "field": "auth"
+      },
+      {
+        "sample": "random_holdout",
+        "app": "YouTube Transcript",
+        "field": "credential_gate"
+      },
+      {
+        "sample": "random_holdout",
+        "app": "YouTube Transcript",
+        "field": "official_mcp"
+      },
+      {
+        "sample": "random_holdout",
+        "app": "YouTube Transcript",
+        "field": "verdict"
+      }
+    ],
+    "status": 200,
+    "final_url": "https://transcriptapi.com/docs/mcp/"
+  },
+  {
+    "url": "https://www.notion.com/help/create-integrations-with-the-notion-api",
+    "uses": [
+      {
+        "sample": "selected_sample",
+        "app": "Notion",
+        "field": "credential_gate"
+      }
+    ],
+    "status": 200,
+    "final_url": "https://www.notion.com/help/create-integrations-with-the-notion-api"
+  },
+  {
+    "url": "https://www.zoho.com/crm/developer/docs/api/graphql/getting-started.html",
+    "uses": [
+      {
+        "sample": "random_holdout",
+        "app": "Zoho CRM",
+        "field": "api_surface"
+      }
+    ],
+    "status": 200,
+    "final_url": "https://www.zoho.com/crm/developer/docs/api/graphql/getting-started.html"
+  },
+  {
+    "url": "https://www.zoho.com/crm/developer/docs/api/graphql/graphql-authorization.html",
+    "uses": [
+      {
+        "sample": "random_holdout",
+        "app": "Zoho CRM",
+        "field": "auth"
+      }
+    ],
+    "status": 200,
+    "final_url": "https://www.zoho.com/crm/developer/docs/api/graphql/graphql-authorization.html"
+  },
+  {
+    "url": "https://www.zoho.com/crm/developer/docs/api/v8/",
+    "uses": [
+      {
+        "sample": "random_holdout",
+        "app": "Zoho CRM",
+        "field": "api_surface"
+      },
+      {
+        "sample": "random_holdout",
+        "app": "Zoho CRM",
+        "field": "verdict"
+      }
+    ],
+    "status": 200,
+    "final_url": "https://www.zoho.com/crm/developer/docs/api/v8/"
+  },
+  {
+    "url": "https://www.zoho.com/crm/developer/docs/api/v8/access-refresh.html",
+    "uses": [
+      {
+        "sample": "random_holdout",
+        "app": "Zoho CRM",
+        "field": "auth"
+      }
+    ],
+    "status": 200,
+    "final_url": "https://www.zoho.com/crm/developer/docs/api/v8/access-refresh.html"
+  },
+  {
+    "url": "https://www.zoho.com/crm/developer/docs/api/v8/oauth-overview.html",
+    "uses": [
+      {
+        "sample": "random_holdout",
+        "app": "Zoho CRM",
+        "field": "auth"
+      },
+      {
+        "sample": "random_holdout",
+        "app": "Zoho CRM",
+        "field": "verdict"
+      }
+    ],
+    "status": 200,
+    "final_url": "https://www.zoho.com/crm/developer/docs/api/v8/oauth-overview.html"
+  },
+  {
+    "url": "https://www.zoho.com/crm/developer/docs/api/v8/register-client.html",
+    "uses": [
+      {
+        "sample": "random_holdout",
+        "app": "Zoho CRM",
+        "field": "credential_gate"
+      }
+    ],
+    "status": 200,
+    "final_url": "https://www.zoho.com/crm/developer/docs/api/v8/register-client.html"
+  },
+  {
+    "url": "https://www.zoho.com/crm/developer/docs/mcp/overview.html",
+    "uses": [
+      {
+        "sample": "random_holdout",
+        "app": "Zoho CRM",
+        "field": "official_mcp"
+      }
+    ],
+    "status": 200,
+    "final_url": "https://www.zoho.com/crm/developer/docs/mcp/overview.html"
+  },
+  {
+    "url": "https://www.zoho.com/crm/zohocrm-pricing-free.html",
+    "uses": [
+      {
+        "sample": "random_holdout",
+        "app": "Zoho CRM",
+        "field": "credential_gate"
+      },
+      {
+        "sample": "random_holdout",
+        "app": "Zoho CRM",
+        "field": "verdict"
+      }
+    ],
+    "status": 200,
+    "final_url": "https://www.zoho.com/crm/zohocrm-pricing-free.html"
+  }
+]

@@ -1,0 +1,260 @@
+{
+  "app": {
+    "number": 43,
+    "name": "BigCommerce",
+    "category": "Ecommerce",
+    "hint": "developer.bigcommerce.com"
+  },
+  "checked_at": "2026-11-23T18:15:16.893253+00:00",
+  "prior_source": "data/pass2/043.json",
+  "search_source": "data/pass4_search/043.json",
+  "new_candidates": [
+    {
+      "url": "https://docs.bigcommerce.com/developer/docs/overview/quick-start",
+      "title": "BigCommerce Developers | BigCommerce Docs (https://docs.bigcommerce.com/developer/docs/overview/quick-start)",
+      "published_label": null
+    },
+    {
+      "url": "https://docs.bigcommerce.com/developer/api-reference/about-our-apis",
+      "title": "About Our APIs | BigCommerce Docs (https://docs.bigcommerce.com/developer/api-reference/about-our-apis)",
+      "published_label": null
+    },
+    {
+      "url": "https://docs.bigcommerce.com/developer/api-reference/graphql/overview",
+      "title": "GraphQL API Overview | BigCommerce Docs (https://docs.bigcommerce.com/developer/api-reference/graphql/overview)",
+      "published_label": null
+    },
+    {
+      "url": "https://support.bigcommerce.com/s/article/Store-API-Accounts?language=en_US",
+      "title": "Managing API Accounts and Webhooks (https://support.bigcommerce.com/s/article/Store-API-Accounts?language=en_US)",
+      "published_label": null
+    },
+    {
+      "url": "https://docs.bigcommerce.com/developer/api-reference/rest/overview",
+      "title": "REST API Overview | BigCommerce Docs (https://docs.bigcommerce.com/developer/api-reference/rest/overview)",
+      "published_label": null
+    },
+    {
+      "url": "https://docs.bigcommerce.com/developer/api-reference/rest/admin/overview",
+      "title": "Admin REST APIs | BigCommerce Docs (https://docs.bigcommerce.com/developer/api-reference/rest/admin/overview)",
+      "published_label": null
+    },
+    {
+      "url": "https://docs.bigcommerce.com/developer/docs/overview/quick-start?ajs_aid=65978abf-4042-4db2-bebb-540bfc5f1af2",
+      "title": "BigCommerce Developers | BigCommerce Docs (https://docs.bigcommerce.com/developer/docs/overview/quick-start?ajs_aid=65978abf-4042-4db2-bebb-540bfc5f1af2)",
+      "published_label": null
+    },
+    {
+      "url": "https://docs.bigcommerce.com/developer/learn/courses/graphql-storefront-api/auth/authentication",
+      "title": "Authentication | BigCommerce Docs (https://docs.bigcommerce.com/developer/learn/courses/graphql-storefront-api/auth/authentication)",
+      "published_label": null
+    },
+    {
+      "url": "https://docs.bigcommerce.com/developer/docs/storefront/guides/graphql-storefront-api/authentication",
+      "title": "Authenticating requests to the GraphQL Storefront API | BigCommerce Docs (https://docs.bigcommerce.com/developer/docs/storefront/guides/graphql-storefront-api/authentication)",
+      "published_label": null
+    },
+    {
+      "url": "https://docs.bigcommerce.com/developer/docs/b2b-edition/getting-started/authentication",
+      "title": "Authentication for hosted storefronts | BigCommerce Docs (https://docs.bigcommerce.com/developer/docs/b2b-edition/getting-started/authentication)",
+      "published_label": null
+    },
+    {
+      "url": "https://docs.bigcommerce.com/developer/learn/courses/intro-to-bc-development/apis/admin-apis",
+      "title": "Admin APIs | BigCommerce Docs (https://docs.bigcommerce.com/developer/learn/courses/intro-to-bc-development/apis/admin-apis)",
+      "published_label": null
+    },
+    {
+      "url": "https://docs.bigcommerce.com/developer/api-reference/graphql/account/overview",
+      "title": "GraphQL Account API overview | BigCommerce Docs (https://docs.bigcommerce.com/developer/api-reference/graphql/account/overview)",
+      "published_label": null
+    },
+    {
+      "url": "https://docs.bigcommerce.com/developer/learn/courses/b2b-graphql/overview/authentication",
+      "title": "Authentication | BigCommerce Docs (https://docs.bigcommerce.com/developer/learn/courses/b2b-graphql/overview/authentication)",
+      "published_label": null
+    },
+    {
+      "url": "https://docs.bigcommerce.com/developer/learn/courses/stencil-core/overview/lab-setup",
+      "title": "Lab - Getting Started | BigCommerce Docs (https://docs.bigcommerce.com/developer/learn/courses/stencil-core/overview/lab-setup)",
+      "published_label": null
+    },
+    {
+      "url": "https://docs.bigcommerce.com/developer/api-reference/rest/storefront/overview",
+      "title": "Storefront REST APIs | BigCommerce Docs (https://docs.bigcommerce.com/developer/api-reference/rest/storefront/overview)",
+      "published_label": null
+    },
+    {
+      "url": "https://docs.bigcommerce.com/developer/learn/courses/b2b-core/rest/lab-setup",
+      "title": "Lab - API Account and Postman Setup | BigCommerce Docs (https://docs.bigcommerce.com/developer/learn/courses/b2b-core/rest/lab-setup)",
+      "published_label": null
+    },
+    {
+      "url": "https://docs.bigcommerce.com/developer/learn/courses/graphql-storefront-api/auth/lab-setup",
+      "title": "Lab - Authentication and Postman Setup | BigCommerce Docs (https://docs.bigcommerce.com/developer/learn/courses/graphql-storefront-api/auth/lab-setup)",
+      "published_label": null
+    }
+  ],
+  "selected": [
+    {
+      "url": "https://docs.bigcommerce.com/developer/learn/courses/graphql-storefront-api/auth/authentication",
+      "title": "Authentication | BigCommerce Docs (https://docs.bigcommerce.com/developer/learn/courses/graphql-storefront-api/auth/authentication)",
+      "published_label": null
+    },
+    {
+      "url": "https://docs.bigcommerce.com/developer/api-reference/about-our-apis",
+      "title": "About Our APIs | BigCommerce Docs (https://docs.bigcommerce.com/developer/api-reference/about-our-apis)",
+      "published_label": null
+    }
+  ],
+  "new_pages": [
+    {
+      "url": "https://docs.bigcommerce.com/developer/learn/courses/graphql-storefront-api/auth/authentication",
+      "requested_url": "https://docs.bigcommerce.com/developer/learn/courses/graphql-storefront-api/auth/authentication",
+      "status": 200,
+      "title": "Authentication | BigCommerce Docs (https://docs.bigcommerce.com/developer/learn/courses/graphql-storefront-api/auth/authentication)",
+      "text": "Authentication | BigCommerce Docs For AI agents: a documentation index is available at the root level at /llms.txt. Append /llms.txt to any URL for a page-level index, or .md for the markdown version of any page. Skip to navigation On this page Correlating Requests Creating a Standard Token Creating a Private Token Private token access scopes Authenticating with an Auto-Generated Stencil Token Customer Access Tokens Headers Login Mutation Body Headers loginWithCustomerLoginJwt Mutation Body Example Request Headers Customer Impersonation Tokens Example Request Headers Revoke A Token Customer Logout Mutation Resources Scroll to top This page is for Developer. Plan: Developer Foundations Lesson 6 of 28 · 30 min The GraphQL API authorizes requests with a bearer token sent via the HTTP Authorization header: POST https :// { bigcommerce_storefront_domain } . com / graphql Accept : application / json Content - Type : application / json Authorization : Bearer { token } We’ll cover the methods for creating this token, as well as how to utilize the auto-generated token that is available in Stencil and Script Manager code. Correlating Requests In addition to the bearer token for authentication, it may be wise in some cases to provide an X-Correlation-Id header. When multiple GraphQL requests are critical to a single operation within your application, providing the same value for this header is used to indicate that relationship to BigCommerce, where it might be used for request routing. The X-Correlation-Id value should be in UUID format. POST https :// { bigcommerce_storefront_domain } . com / graphql Accept : application / json Content - Type : application / json Authorization : Bearer { token } X - Correlation - Id : 074 c7d82 -235 c -4 dfd - b32a -65269 dfcd36b Creating a Standard Token Standard tokens are for client-side requests only . You can create a token for use by any storefront on any domain, as long as you indicate the appropriate allowed origin(s) in the token request. Standard tokens were previously used for server-side requests as well, but this has recently changed. Standard tokens are now client-side only . For server-to-server integrations, use Private Tokens instead. In general, this type of GraphQL Storefront API token is not considered sensitive, and it is safe to expose in web browsers, for example, in HTML documents. In a client-side context, this token can only expose information that an individual shopper is already privy to when browsing a storefront or allow them to perform actions that shoppers can perform (e.g., creating a shopper cart). Standard tokens maintain user context (such as for customer-specific pricing or cart/checkout management) via a BigCommerce-provided session cookie. It is possible to create a long-lived token that does not expire, which is appropriate if you wish to create a token once and store it in an application environment. In the interest of better security, it is recommended to create shorter-lived tokens and rotate them periodically by calling this API to generate a new one before the old one expires. Standard tokens can be created using the Storefront API Token endpoint: POST https://api.bigcommerce.com/stores/{store_hash}/v3/storefront/api-token { \" channel_id \" : 1 , // int (must be a valid channel ID on the store) \" expires_at \" : 1602288000 , // integer unix timestamp in seconds (required) \" allowed_cors_origins \" : [ // array (accepts 2 origins currently) \" https://example.com \" ] } The allowed_cors_origins array currently accepts up to two origins. You will need multiple tokens if you have more origins. Multi-Storefront The channel_id for the default Stencil storefront is 1. For more information about using the GraphQL Storefront API on custom channels, consult the FAQ section on alternate channels in the BC Developer Documentation. Creating a Private Token Private tokens are designed for server-to-server integrations. They are exclusively for server-side requests and cannot be used in browsers. Use Private Tokens for: Server-to-server integrations Headless requests (no session/cookie validation) Modern headless storefronts making server-side requests Do not use Private Tokens for: Browser-based applications (requests will be rejected) Client-side requests Private token access scopes Scopes are required when creating a private token and restrict which GraphQL fields the token can access. See Private token access scopes in the BigCommerce documentation for the full list of available scopes and the fields they cover. You must specify scopes when creating a private token. Private tokens can be created using the Private Storefront API Token endpoint: POST https://api.bigcommerce.com/stores/{store_hash}/v3/storefront/api-token-private { \" channel_id \" : 1 , // int (must be a valid channel ID on the store) \" expires_at \" : 1602288000 , // integer unix timestamp in seconds (required) \" scopes \" : [ // access scope identifiers (required) \" Unauthenticated \" , \" Customer \" , \" B2B \" ] } Private tokens do not support the allowed_cors_origins field because they are server-to-server only and cannot be used from browsers. Authenticating with an Auto-Generated Stencil Token Stencil code has access to an automatically created GraphQL Storefront token that is used for queries in YAML Front Matter and can also be passed along for use in client-side code. Client code in BigCommerce Stencil themes or Script Manager can be passed a token at render time with the {{settings.storefront_api.token}} Handlebars object. Customer Access Tokens The customer access token is a unique identifier that is associated with a specific customer’s account. This token is used in combination with a Private Token, provided in a special header, to provide an individual customer context for a request. You can only obtain and use a customer access token for server-to-server requests . There are two ways to create a customer access token: The login mutation - This supports a typical login scenario, explicitly requiring a customer’s login credentials in order to obtain the customer access token for their account. Headers POST https :// {{ storeDomain }} / graphql Authorization : Bearer { Private Token } Accept : application / json Content - Type : application / json Login Mutation Body mutation Login ( $email : String ! , $pass : String ! ) { login( email : $email , password : $pass) { result customer { entityId email } customerAccessToken { value expiresAt } } } If successful, the login mutation above will return the customer’s ID, email address, and a customer access token that is specifically for their account. The loginWithCustomerLoginJwt mutation - This supports a single sign-on workflow in which a trusted application authenticates a customer without requiring their credentials. This utilizes the steps described for the Customer Login API to create a JWT. Headers POST https :// {{ storeDomain }} / graphql Authorization : Bearer { Private Token } Accept : application / json Content - Type : application / json loginWithCustomerLoginJwt Mutation Body mutation Login ( $jwt : String ! ) { loginWithCustomerLoginJwt( jwt : $jwt) { customer { entityId email } customerAccessToken { value expiresAt } } } Similar to the regular login mutation, the loginWithCustomerLoginJwt mutation will return the customer’s ID, email address, and a customer access token associated with their specific account. However a customer access token was obtained, this token is passed in the X-Bc-Customer-Access-Token header with any GraphQL request to provide the customer context. When this header is provided, requests and the data they mutate or return are tailored to the customer, whether that involves returning differentiated pricing for products, determining the ownership of a new cart, or querying the customer’s address or order information. Example Request Headers POST https :// {{ storeDomain }} / graphql Authorization : Bearer { Private Token } Accept : application / json Content - Type : application / json X - Bc - Customer - Access - Token : { Customer access token } Customer Impersonation Tokens Customer impersonation tokens (CIT) are an alternative to Private tokens, also used as the Bearer token to authenticate GraphQL requests. A CIT has the ability to “impersonate” any customer context just by providing a customer’s ID in a special header. Customer impersonation tokens can only be used in server-side requests. Because of their elevated privileges, they should be considered a sensitive credential similar to an OAuth token for BigCommerce’s administrative APIs and never exposed to end users. Requests from browsers using a customer impersonation token will be rejected. Using a customer impersonation token in combination with a customer ID is an alternative way of providing customer context, in contrast with using a Private token with a customer access token. This is a legacy approach, and because of the elevated privileges of a CIT, the customer access token approach is the preferred method. You can generate customer impersonation token using the following endpoint: POST https://api.bigcommerce.com/stores/{store_hash}/v3/storefront/api-token-customer-impersonation { \" channel_id \" : 1 , \" expires_at \" : 1602288000 } Like Private tokens, customer impersonation tokens do not require allowed origins to be designated, since they are never used in a client-side context. Customer Impersonation Token authenticated requests made to the GraphQL API receive store information from the perspective of the customer corresponding to the customer ID specified in the X-Bc-Customer-Id header sent with the GraphQL POST request. CITs are not customer-specific; they and are generally long-lived and stored as static configuration in the applications that use them. Example Request Headers POST https :// {{ storeDomain }} / graphql Authorization : Bearer { Customer Impersonation Token } Accept : application / json Content - Type : application / json X - Bc - Customer - Id : 123 Revoke A Token If a token is compromised and you wish to invalidate the Storefront API connection for your token, you can make a DELETE request to the /api-token endpoint. Use this in emergencies, and do not revoke tokens unnecessarily. Instead, it is best practice to use a shorter expiration and allow them to expire naturally. Use the following endpoint to revoke a token in the case of an emergency: DELETE https://api.bigcommerce.com/stores/[store_hash]/v3/storefront/api-token Customer Logout Mutation You can use the following logout mutation to sign out of a customer account: mutation Logout { logout { result } } This will clear the session cookie in a client-side context, which has the effect of logging out the shopper, and will also destroy the session on the BigCommerce back-end for both client-side and server-side contexts. Resources Create a Storefront Token Create a Private Token GraphQL Storefront API - Authentication",
+      "published_label": null
+    },
+    {
+      "url": "https://docs.bigcommerce.com/developer/api-reference/about-our-apis",
+      "requested_url": "https://docs.bigcommerce.com/developer/api-reference/about-our-apis",
+      "status": 200,
+      "title": "About Our APIs | BigCommerce Docs (https://docs.bigcommerce.com/developer/api-reference/about-our-apis)",
+      "text": "About Our APIs | BigCommerce Docs For AI agents: a documentation index is available at the root level at /llms.txt. Append /llms.txt to any URL for a page-level index, or .md for the markdown version of any page. Skip to navigation On this page Available APIs REST Store Management APIs REST Storefront API GraphQL Storefront API Customer Login API Current Customer API API authentication and context Scroll to top This page is for Developer. The BigCommerce suite of APIs empowers you to create apps, automate store processes, and build headless ecommerce solutions. If you’re new to building BigCommerce apps, we recommend that you start by exploring the App Marketplace to get a feel for what’s possible. When you’re ready to play with our APIs, check out the API Request Quick Start . Available APIs BigCommerce has several APIs that let you manage store data, authenticate customers, make client-side queries for product information, and more. You can download generated OpenAPI specification files for API references in JSON or YAML. For details, see OpenAPI Specifications . REST Store Management APIs BigCommerce’s Store Management and Payment APIs (for example, the Catalog API ) allow you to manage transactions, modify store data, and act as store administrator. Example use cases include the following: Add and update products in a store Update a customer’s order and change the order status Create a coupon Manage a customer’s store account details REST Storefront API The REST Storefront API lets you manage customer carts, checkouts, and order information client-side. Example use cases include the following: Add an item with JavaScript to a shopper’s cart from a Stencil storefront Programmatically retrieve and display information to a customer about their recent order Update the billing address of a checkout Clear a customer’s current cart GraphQL Storefront API BigCommerce’s GraphQL Storefront API lets you query and mutate products, customers, and carts, then launch a checkout on a headless storefront as well as from a native storefront’s frontend. Example use cases include the following: Add additional product data to a Stencil storefront Access customer data on the frontend of a site Manage shopper’s carts on a headless storefront Fetch category and brand details from a store’s frontend Customer Login API The Customer Login API lets you programmatically sign customers in to a BigCommerce storefront. Example use cases include the following: Sign customers in to a BigCommerce store from a third-party account or a headless storefront Enable login using credentials other than email and password, such as a phone number Integrate a BigCommerce store with an SSO provider Current Customer API BigCommerce’s Current Customer API lets you determine which customer is logged in to a storefront during a session. Confirm a customer’s identity in the browser Validate a customer’s identity to display specific information to them from an external app API authentication and context Make BigCommerce API requests in the context of the storefront , BigCommerce API server , or app server . Each of the following APIs listings links to its section of our Authentication and Example Requests article, which contains the base URL of the API in question. API or Use Case Context GraphQL Account API , including Users server GraphQL Admin API server GraphQL Storefront API storefront REST Management API server REST Storefront API storefront Customer Login API storefront Current Customer API storefront Payments API server Apps that host REST Provider APIs (provider apps) server Apps hosted in the store control panel (single-click apps) server Single-store frontend scripts storefront Headless storefronts with backend or request proxy server Serverless headless storefronts storefront, GraphQL-only",
+      "published_label": null
+    }
+  ],
+  "claims": {
+    "auth": {
+      "value": [
+        "API token",
+        "Bearer token"
+      ],
+      "sources": [
+        "https://docs.bigcommerce.com/developer/api-reference/rest/b2b/management/authentication",
+        "https://docs.bigcommerce.com/developer/learn/courses/graphql-storefront-api/auth/authentication"
+      ],
+      "evidence": [
+        {
+          "value": "API token",
+          "url": "https://docs.bigcommerce.com/developer/api-reference/rest/b2b/management/authentication",
+          "excerpt": "sts made by individuals or integrations to the server. All Server to Server API requests require an API token in the header of the request. When using the X-Auth-Token header with B2B Edition Server to Server API requests, the X-Store-Hash header is also required. See B2B Authentication f",
+          "published_label": null
+        },
+        {
+          "value": "API token",
+          "url": "https://docs.bigcommerce.com/developer/learn/courses/graphql-storefront-api/auth/authentication",
+          "excerpt": "ver-to-server integrations, use Private Tokens instead. In general, this type of GraphQL Storefront API token is not considered sensitive, and it is safe to expose in web browsers, for example, in HTML documents. In a client-side context, this token can only expose information that an ind",
+          "published_label": null
+        },
+        {
+          "value": "Bearer token",
+          "url": "https://docs.bigcommerce.com/developer/learn/courses/graphql-storefront-api/auth/authentication",
+          "excerpt": "per. Plan: Developer Foundations Lesson 6 of 28 · 30 min The GraphQL API authorizes requests with a bearer token sent via the HTTP Authorization header: POST https :// { bigcommerce_storefront_domain } . com / graphql Accept : application / json Content - Type : application / json Authorizat",
+          "published_label": null
+        }
+      ],
+      "reason": "Provisional extraction: validate scope and completeness against the cited page."
+    },
+    "credential_gate": {
+      "value": "unknown",
+      "sources": [],
+      "evidence": [],
+      "reason": "No sufficiently specific positive evidence extracted; review targeted search results."
+    },
+    "api_surface": {
+      "value": [
+        "GraphQL",
+        "REST"
+      ],
+      "sources": [
+        "https://www.bigcommerce.com/articles/b2b-ecommerce/mcp-b2b-ecommerce/",
+        "https://docs.bigcommerce.com/developer/docs/overview/api-fundamentals/api-accounts",
+        "https://docs.bigcommerce.com/developer/changelog/2026/10/8",
+        "https://docs.bigcommerce.com/developer/learn/courses/graphql-storefront-api/auth/authentication",
+        "https://docs.bigcommerce.com/developer/api-reference/about-our-apis"
+      ],
+      "evidence": [
+        {
+          "value": "GraphQL",
+          "url": "https://www.bigcommerce.com/articles/b2b-ecommerce/mcp-b2b-ecommerce/",
+          "excerpt": "Fadyen Digital (September 2026) None REST and GraphQL: the system of record. B2B Edition's REST and GraphQL APIs remain the system of record for companies, price lists, invoices, and orders. Again, MCP is a layer agents use to act on that data, not a replacement for ERP or PIM integration. H",
+          "published_label": null
+        },
+        {
+          "value": "REST",
+          "url": "https://docs.bigcommerce.com/developer/docs/overview/api-fundamentals/api-accounts",
+          "excerpt": "Commerce offers three types of OAuth-based API accounts to developers who wish to use BigCommerce’s REST APIs: store-level credentials, app-level credentials, and account-level credentials. This section describes the difference between the three, how to obtain and revoke account credentia",
+          "published_label": null
+        },
+        {
+          "value": "GraphQL",
+          "url": "https://docs.bigcommerce.com/developer/docs/overview/api-fundamentals/api-accounts",
+          "excerpt": "API account App-level API account Account-level API account GraphQL Account API , including Users × GraphQL Admin API × × GraphQL Storefront API × B2B REST Management API × REST Store Management APIs × × REST Storefront API × Customer Login API × Current Customer API × Payments API × × Apps that ",
+          "published_label": null
+        },
+        {
+          "value": "GraphQL",
+          "url": "https://docs.bigcommerce.com/developer/changelog/2026/10/8",
+          "excerpt": "ncement October 8, 2026 GraphQL Enhancement Shipping option selection strategy for checkouts in the GraphQL Storefront API BigCommerce is rolling out an optional shippingOptionSelectionStrategy field on checkout shipping consignments in the GraphQL Storefront API, so a caller can have a shipping optio",
+          "published_label": null
+        },
+        {
+          "value": "GraphQL",
+          "url": "https://docs.bigcommerce.com/developer/learn/courses/graphql-storefront-api/auth/authentication",
+          "excerpt": "s Scroll to top This page is for Developer. Plan: Developer Foundations Lesson 6 of 28 · 30 min The GraphQL API authorizes requests with a bearer token sent via the HTTP Authorization header: POST https :// { bigcommerce_storefront_domain } . com / graphql Accept : application / json Conten",
+          "published_label": null
+        },
+        {
+          "value": "REST",
+          "url": "https://docs.bigcommerce.com/developer/api-reference/about-our-apis",
+          "excerpt": "hQL Account API , including Users server GraphQL Admin API server GraphQL Storefront API storefront REST Management API server REST Storefront API storefront Customer Login API storefront Current Customer API storefront Payments API server Apps that host REST Provider APIs (provider apps) server Ap",
+          "published_label": null
+        },
+        {
+          "value": "GraphQL",
+          "url": "https://docs.bigcommerce.com/developer/api-reference/about-our-apis",
+          "excerpt": "page. Skip to navigation On this page Available APIs REST Store Management APIs REST Storefront API GraphQL Storefront API Customer Login API Current Customer API API authentication and context Scroll to top This page is for Developer. The BigCommerce suite of APIs empowers you to create apps, automat",
+          "published_label": null
+        }
+      ],
+      "reason": "Provisional extraction: validate scope and completeness against the cited page."
+    },
+    "official_mcp": {
+      "value": "yes (provisional)",
+      "sources": [
+        "https://www.bigcommerce.com/articles/b2b-ecommerce/mcp-b2b-ecommerce/"
+      ],
+      "evidence": [
+        {
+          "value": "yes (provisional)",
+          "url": "https://www.bigcommerce.com/articles/b2b-ecommerce/mcp-b2b-ecommerce/",
+          "excerpt": "'s B2B Storefront tool set adds 12 shopping-list tools and 5 quote tools to the BigCommerce MCP server, and it's available now in early access (beta). Contract pricing, custom catalogs, company roles, and payment terms are set in B2B Edition, and sales reps stil",
+          "published_label": null,
+          "context_warning": "Review vendor ownership, dates, and scope."
+        }
+      ],
+      "reason": "Provisional; check source date, scope, and vendor ownership."
+    },
+    "composio_toolkit": {
+      "value": "listed",
+      "sources": [
+        "https://docs.composio.dev/toolkits/bigcommerce"
+      ],
+      "evidence": [],
+      "reason": "Catalog match; scope needs review."
+    },
+    "verdict": {
+      "value": "unknown",
+      "sources": [],
+      "evidence": [],
+      "reason": "A supported access path, authentication method and API surface were not all extracted."
+    }
+  },
+  "validation": [
+    "All claims are provisional",
+    "No vendor MCP inference from Composio catalog",
+    "Negated MCP or client-only source is not counted as vendor-server proof"
+  ]
+}

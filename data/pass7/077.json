@@ -1,0 +1,113 @@
+{
+  "app": {
+    "number": 77,
+    "name": "ClickUp",
+    "category": "Productivity and Project Management",
+    "hint": "clickup.com/api"
+  },
+  "replayed_at": "2026-11-23T18:19:20.518633+00:00",
+  "source_passes": [
+    "data/pass2/077.json",
+    "data/pass4/077.json"
+  ],
+  "source_search": "data/new_search/077.json",
+  "publication_date_note": "Published labels are retained exactly as supplied by search; missing labels are null. Relative labels must not be treated as exact publication dates.",
+  "claims": {
+    "auth": {
+      "value": [
+        "OAuth 2.0",
+        "API key",
+        "API token"
+      ],
+      "sources": [
+        "https://developer.clickup.com/docs/authentication"
+      ],
+      "evidence": [
+        {
+          "value": "OAuth 2.0",
+          "url": "https://developer.clickup.com/docs/authentication",
+          "excerpt": "ens never expire. Build Apps for others - OAuth Flow To allow others to use your app, implement the OAuth2 flow so each user has their own token for accessing their ClickUp resources. OAuth resources and specs: Authentication: OAuth 2.0 Grant Type: Authorization Code . Learn more . Aut",
+          "published_label": null
+        },
+        {
+          "value": "API key",
+          "url": "https://developer.clickup.com/docs/authentication",
+          "excerpt": "up.com/api/v2/oauth/token 👀 Note ClickUp uses the authorization code grant type . Use your personal API key to use the Try-It feature in the API docs. Step 1: Create an OAuth app Only Workspace owners or admins can create OAuth apps. Log in to ClickUp. In the upper-right corner, click y",
+          "published_label": null
+        },
+        {
+          "value": "API token",
+          "url": "https://developer.clickup.com/docs/authentication",
+          "excerpt": "ClickUp API, you must authenticate every request. For personal use, authenticate with your personal API token . For apps or integrations that other people use, use the OAuth flow , allowing users to authorize Workspaces for your app. Include the token in the Authorization header of your r",
+          "published_label": null
+        }
+      ],
+      "reason": "Provisional extraction: validate scope and completeness against the cited page."
+    },
+    "credential_gate": {
+      "value": "unknown",
+      "sources": [],
+      "evidence": [],
+      "reason": "No sufficiently specific positive evidence extracted; review targeted search results."
+    },
+    "api_surface": {
+      "value": "unknown",
+      "sources": [],
+      "evidence": [],
+      "reason": "No sufficiently specific positive evidence extracted; review targeted search results."
+    },
+    "official_mcp": {
+      "value": "yes (provisional)",
+      "sources": [
+        "https://developer.clickup.com/docs/connect-an-ai-assistant-to-clickups-mcp-server",
+        "https://help.clickup.com/hc/en-us/articles/33335772678423-What-is-ClickUp-MCP",
+        "https://developer.clickup.com/docs/connect-an-ai-assistant-to-clickups-mcp-server-1"
+      ],
+      "evidence": [
+        {
+          "value": "yes (provisional)",
+          "url": "https://developer.clickup.com/docs/connect-an-ai-assistant-to-clickups-mcp-server",
+          "excerpt": "ClickUp's MCP Server For AI agents: the docs index is at https://developer.clickup.com/llms.txt. Append .md to any documentation page URL to get its markdown version. The Model Con",
+          "published_label": null,
+          "context_warning": "Review vendor ownership, dates, and scope."
+        },
+        {
+          "value": "yes (provisional)",
+          "url": "https://help.clickup.com/hc/en-us/articles/33335772678423-What-is-ClickUp-MCP",
+          "excerpt": " Cursor, and Claude. ClickUp MCP is available on all plans . You can set up the ClickUp MCP server with any app that supports MCP servers, like Claude, Cursor, or VS Code. Workspaces are being upgraded to our new plans. Not all Workspaces have been upgraded ",
+          "published_label": null,
+          "context_warning": "Review vendor ownership, dates, and scope."
+        },
+        {
+          "value": "yes (provisional)",
+          "url": "https://developer.clickup.com/docs/connect-an-ai-assistant-to-clickups-mcp-server-1",
+          "excerpt": "ons for some of the most popular AI assistants. Claude Set up Claude to use the ClickUp MCP server! Pro, Team, Enterprise If you're on the Pro, Team, or Enterprise plan: In a browser or the desktop app, navigate to Settings in the sidebar. Scroll to Connecto",
+          "published_label": null,
+          "context_warning": "Review vendor ownership, dates, and scope."
+        }
+      ],
+      "reason": "Provisional; check source date, scope, and vendor ownership."
+    },
+    "composio_toolkit": {
+      "value": "listed",
+      "sources": [
+        "https://docs.composio.dev/toolkits/clickup"
+      ],
+      "evidence": [],
+      "reason": "Catalog match; scope needs review."
+    },
+    "verdict": {
+      "value": "unknown",
+      "sources": [],
+      "evidence": [],
+      "reason": "A supported access path, authentication method and API surface were not all extracted."
+    }
+  },
+  "validation": [
+    "Automatic extraction is provisional and not a verified final claim",
+    "Unknown is not evidence of absence",
+    "No Composio-to-vendor-MCP inference",
+    "Basic authentication may be endpoint-specific",
+    "Client-only and negated statements are not positive MCP evidence"
+  ]
+}

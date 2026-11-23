@@ -1,0 +1,25 @@
+{
+  "checked_at": "2026-11-24",
+  "verified": [
+    {
+      "url": "https://developer.salesforce.com/blogs/2026/04/salesforce-hosted-mcp-servers-are-now-generally-available",
+      "method": "installed Chrome rendered page; HTTP 200 and visible article body",
+      "note": "Direct requests returned 403, but the rendered official Salesforce Developers Blog article loaded with its GA announcement and MCP details."
+    },
+    {
+      "url": "https://developer.salesforce.com/docs/platform/api-rest/guide/intro-oauth-and-connected-apps.html",
+      "method": "installed Chrome rendered page; HTTP 200 and visible OAuth guide",
+      "note": "Current official replacement for the retired OAuth overview route; rendered page documents OAuth 2.0 and external client/connected apps."
+    },
+    {
+      "url": "https://developer.salesforce.com/docs/platform/connect-rest-api/guide/quickstart_dev_org.html",
+      "method": "installed Chrome rendered page; HTTP 200 and visible Developer Edition quickstart",
+      "note": "Official replacement for the intermittently empty signup form; rendered page states Developer Edition is free for testing and development."
+    },
+    {
+      "url": "https://developer.salesforce.com/docs/platform/sfdx-dev/guide/sfdx-dev-mcp.html",
+      "method": "installed Chrome rendered page; HTTP 200 and visible DX MCP guide",
+      "note": "Direct requests returned 403, but the rendered official Salesforce DX guide loaded with MCP server and tool documentation."
+    }
+  ]
+}

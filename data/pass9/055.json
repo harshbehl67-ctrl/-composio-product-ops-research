@@ -1,0 +1,169 @@
+{
+  "app": {
+    "number": 55,
+    "name": "Apify",
+    "category": "Data, SEO and Scraping",
+    "hint": "docs.apify.com"
+  },
+  "replayed_at": "2026-11-23T18:41:34.712662+00:00",
+  "source_passes": [
+    "data/pass2/055.json",
+    "data/pass4/055.json"
+  ],
+  "source_searches": [
+    "data/new_search/055.json",
+    "data/pass4_search/055.json"
+  ],
+  "publication_date_note": "Search publication labels are retained exactly; null means no label was available. Relative labels are not exact dates.",
+  "claims": {
+    "auth": {
+      "value": [
+        "API token",
+        "Bearer token",
+        "OAuth 2.0",
+        "API key"
+      ],
+      "status": "provisional",
+      "sources": [
+        "https://docs.apify.com/mcp",
+        "https://docs.apify.com/integrations/api",
+        "https://docs.apify.com/cli/docs/reference",
+        "https://docs.apify.com/api/v2",
+        "https://docs.apify.com/api/v2/getting-started"
+      ],
+      "evidence": [
+        {
+          "value": "API token",
+          "url": "https://docs.apify.com/mcp",
+          "excerpt": "ecification. The official MCP documentation maintains a list of compatible clients. Apify API token (optional) - Only needed for the local stdio server or the Bearer token option . The recommended remote connection signs you in with OAuth instead. Create an API token i",
+          "published_label": null
+        },
+        {
+          "value": "Bearer token",
+          "url": "https://docs.apify.com/mcp",
+          "excerpt": "tible clients. Apify API token (optional) - Only needed for the local stdio server or the Bearer token option . The recommended remote connection signs you in with OAuth instead. Create an API token in Apify Console. Connect and authorize To discover Actors and search the",
+          "published_label": null
+        },
+        {
+          "value": "API token",
+          "url": "https://docs.apify.com/integrations/api",
+          "excerpt": "icial API clients implement best practices such as exponential backoff and rate limiting. API token To access the Apify API in your integrations, you need to authenticate using your secret API token. You manage your tokens on the API & Integrations page in Apify Consol",
+          "published_label": null
+        },
+        {
+          "value": "OAuth 2.0",
+          "url": "https://docs.apify.com/cli/docs/reference",
+          "excerpt": "Command reference | CLI | Apify Documentation Skip to main content Version: 1.14 On this page Command reference Copy for LLM The Apify CLI provides tools for managing your Apify projects and resources from the command line. Use these commands to develop Actors locally, deploy the",
+          "published_label": null
+        },
+        {
+          "value": "API token",
+          "url": "https://docs.apify.com/cli/docs/reference",
+          "excerpt": "ESCRIPTION Log in, log out, switch between stored accounts, and inspect your stored Apify API token. Also available as ` apify login ` and ` apify logout ` . SUBCOMMANDS auth login   Authenticates your Apify account and saves credentials to '~/.apify/auth.json' . auth",
+          "published_label": null
+        },
+        {
+          "value": "API key",
+          "url": "https://docs.apify.com/api/v2",
+          "excerpt": "e refers to a resource in the API token owner's account. Authentication HTTP: Bearer Auth API Key: apiKey Bearer token provided in the Authorization header (e.g., Authorization: Bearer your_token —recommended). For details, see the Authorization header on MDN. Use yo",
+          "published_label": null
+        },
+        {
+          "value": "API token",
+          "url": "https://docs.apify.com/api/v2",
+          "excerpt": "int, append ?method=POST to the URL of your GET request. Authentication You can create an API token on the Integrations page in the\nApify Console. The Console shows the token only once, right after you create\nor rotate it, so copy it and store it somewhere safe. For de",
+          "published_label": null
+        },
+        {
+          "value": "Bearer token",
+          "url": "https://docs.apify.com/api/v2",
+          "excerpt": "pify\nAgent General Interface (AGI) at https://agi.apify.com . Use that token as a regular Bearer token. Basic usage To run an Actor, send a POST request to the Run Actor endpoint using either the\nActor ID code (e.g. vKg4IjxZbEYTYeW8T ) or its name (e.g. janedoe~my-actor )",
+          "published_label": null
+        },
+        {
+          "value": "API token",
+          "url": "https://docs.apify.com/api/v2/getting-started",
+          "excerpt": "sing the API, check if you have all the necessary prerequisites: An Apify account with an API token. Most requests need to be authenticated with the Apify API token passed via the Authorization HTTP header. For details, see Authentication . A tool to make HTTP requests",
+          "published_label": null
+        }
+      ],
+      "reason": "Provisional extraction; validate scope and completeness against cited pages."
+    },
+    "credential_gate": {
+      "value": "unknown",
+      "status": "provisional",
+      "sources": [],
+      "evidence": [],
+      "reason": "No sufficiently specific official evidence extracted."
+    },
+    "api_surface": {
+      "value": "REST; narrow documented surface",
+      "status": "provisional",
+      "sources": [
+        "https://docs.apify.com/integrations/api",
+        "https://docs.apify.com/api"
+      ],
+      "evidence": [
+        {
+          "value": [
+            "REST"
+          ],
+          "breadth": "narrow",
+          "url": "https://docs.apify.com/integrations/api",
+          "excerpt": "API integration | Platform | Apify Documentation Skip to main content On this page API integration Copy for LLM All aspects of the Apify platform can be controlled via a REST API, which is described in detail in the API Reference .\nIf you want to use the Apify API from JavaScript",
+          "published_label": null
+        },
+        {
+          "value": [
+            "REST"
+          ],
+          "breadth": "narrow",
+          "url": "https://docs.apify.com/api",
+          "excerpt": "Apify Documentation Skip to main content REST API The Apify API is built around HTTP REST, uses predictable resource-oriented URLs, returns JSON-encoded responses, and uses standard HTTP response codes, authentication, and verbs. View API reference cURL # Prepare Actor input and ",
+          "published_label": null
+        }
+      ],
+      "reason": "Provisional extraction; validate scope and completeness against cited pages."
+    },
+    "official_mcp": {
+      "value": "vendor_server",
+      "status": "provisional",
+      "sources": [
+        "https://docs.apify.com/mcp"
+      ],
+      "evidence": [
+        {
+          "value": "vendor_server",
+          "url": "https://docs.apify.com/mcp",
+          "excerpt": "Apify MCP server | Platform | Apify Documentation Skip to main content On this page Apify MCP server Copy for LLM The Apify's MCP server ( mcp.apify.com ) allows AI applications and agents to interact with the Apify platform\nusing Model Context Protocol (MCP). The MCP server enables AI agents to\ndiscover and run Actors from Apify",
+          "published_label": null,
+          "context_note": "Vendor-owned server statement; review date and access scope."
+        }
+      ],
+      "reason": "Provisional; check date, ownership and access scope."
+    },
+    "composio_toolkit": {
+      "value": "listed",
+      "status": "provisional",
+      "sources": [
+        "https://docs.composio.dev/toolkits/apify"
+      ],
+      "evidence": [],
+      "reason": "Catalog match only; not vendor MCP evidence."
+    },
+    "verdict": {
+      "value": "unknown",
+      "status": "provisional",
+      "sources": [],
+      "evidence": [],
+      "reason": "No sufficiently specific official evidence extracted."
+    }
+  },
+  "validation": [
+    "Automatic extraction is provisional until independently reviewed",
+    "Unknown is not evidence of absence",
+    "Composio evidence cannot establish vendor MCP",
+    "Client-only and negated MCP statements are not vendor-server proof",
+    "API breadth is a text-coverage heuristic, not an endpoint census"
+  ]
+}

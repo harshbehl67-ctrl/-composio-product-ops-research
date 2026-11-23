@@ -1,0 +1,184 @@
+{
+  "app": {
+    "number": 73,
+    "name": "Linear",
+    "category": "Productivity and Project Management",
+    "hint": "developers.linear.app"
+  },
+  "replayed_at": "2026-11-23T18:45:55.632138+00:00",
+  "source_passes": [
+    "data/pass2/073.json",
+    "data/pass4/073.json"
+  ],
+  "source_searches": [
+    "data/new_search/073.json",
+    "data/pass4_search/073.json"
+  ],
+  "publication_date_note": "Search publication labels are retained exactly; null means no label was available. Relative labels are not exact dates.",
+  "claims": {
+    "auth": {
+      "value": [
+        "OAuth 2.0",
+        "API token",
+        "Basic authentication (OAuth client or endpoint-specific)",
+        "API key",
+        "Bearer token"
+      ],
+      "status": "provisional",
+      "sources": [
+        "https://linear.app/developers/oauth-2-0-authentication",
+        "https://linear.app/docs/mcp",
+        "https://linear.app/docs/mcp?_bhiiv=opp_7ac3aca5-17a9-4fa5-bbbc-ed1e29d3fb7f_45a6ac79&bhcl_id=c12aa583-53e2-486a-bded-dea27921063f_SUBSCRIBER_ID_%2525252525252525257B%2525252525252525257Bemail_address_id%2525252525252525257D%2525252525252525257D&newsletter=the_prohuman",
+        "https://linear.app/docs/mcp?4c18c78a_page=3&ef207e20_page=2",
+        "https://linear.app/docs/api-and-webhooks?noRedirect=1"
+      ],
+      "evidence": [
+        {
+          "value": "OAuth 2.0",
+          "url": "https://linear.app/developers/oauth-2-0-authentication",
+          "excerpt": "Skip to content → OAuth 2.0 authentication Linear supports OAuth2 authentication, which is recommended if you’re building applications to integrate with Linear. It is highly recommended you create",
+          "published_label": null
+        },
+        {
+          "value": "API token",
+          "url": "https://linear.app/developers/oauth-2-0-authentication",
+          "excerpt": "Skip to content → OAuth 2.0 authentication Linear supports OAuth2 authentication, which is recommended if you’re building applications to integrate with Linear. It is highly recommended you create a workspace for the purpose of managing the OAuth2 Application, as each admin user ",
+          "published_label": null
+        },
+        {
+          "value": "Basic authentication (OAuth client or endpoint-specific)",
+          "url": "https://linear.app/developers/oauth-2-0-authentication",
+          "excerpt": "revoked, complete authorization again. For authorization, you have two options: Use HTTP basic authentication by passing a Base64-encoded client_id:client_secret string as an authorization header: Authorization: Basic <base64(client_id:client_secret)> Pass client_id and client_s",
+          "published_label": null
+        },
+        {
+          "value": "OAuth 2.0",
+          "url": "https://linear.app/docs/mcp",
+          "excerpt": "MCP server – Linear Docs Skip to content → MCP server The Model Context Protocol (MCP) server provides a standardized interface that allows any compatible AI model or agent to access your Linear data in a simple and secure way. Connect to our MCP server natively in Claude, Cursor",
+          "published_label": null
+        },
+        {
+          "value": "API key",
+          "url": "https://linear.app/docs/mcp",
+          "excerpt": "mic client registration. You can also authenticate directly with a bearer token or Linear API key — see the FAQ for details. Read-write access is provided through https://mcp.linear.app/mcp by default. For read-only access, you have two options: Connect to https://mc",
+          "published_label": null
+        },
+        {
+          "value": "Bearer token",
+          "url": "https://linear.app/docs/mcp",
+          "excerpt": "ses OAuth 2.1 with dynamic client registration. You can also authenticate directly with a bearer token or Linear API key — see the FAQ for details. Read-write access is provided through https://mcp.linear.app/mcp by default. For read-only access, you have two options: Con",
+          "published_label": null
+        },
+        {
+          "value": "OAuth 2.0",
+          "url": "https://linear.app/docs/mcp?_bhiiv=opp_7ac3aca5-17a9-4fa5-bbbc-ed1e29d3fb7f_45a6ac79&bhcl_id=c12aa583-53e2-486a-bded-dea27921063f_SUBSCRIBER_ID_%2525252525252525257B%2525252525252525257Bemail_address_id%2525252525252525257D%2525252525252525257D&newsletter=the_prohuman",
+          "excerpt": "MCP server – Linear Docs Skip to content → MCP server The Model Context Protocol (MCP) server provides a standardized interface that allows any compatible AI model or agent to access your Linear data in a simple and secure way. Connect to our MCP server natively in Claude, Cursor",
+          "published_label": null
+        },
+        {
+          "value": "API key",
+          "url": "https://linear.app/docs/mcp?_bhiiv=opp_7ac3aca5-17a9-4fa5-bbbc-ed1e29d3fb7f_45a6ac79&bhcl_id=c12aa583-53e2-486a-bded-dea27921063f_SUBSCRIBER_ID_%2525252525252525257B%2525252525252525257Bemail_address_id%2525252525252525257D%2525252525252525257D&newsletter=the_prohuman",
+          "excerpt": "mic client registration. You can also authenticate directly with a bearer token or Linear API key — see the FAQ for details. Read-write access is provided through https://mcp.linear.app/mcp by default. For read-only access, you have two options: Connect to https://mc",
+          "published_label": null
+        },
+        {
+          "value": "Bearer token",
+          "url": "https://linear.app/docs/mcp?_bhiiv=opp_7ac3aca5-17a9-4fa5-bbbc-ed1e29d3fb7f_45a6ac79&bhcl_id=c12aa583-53e2-486a-bded-dea27921063f_SUBSCRIBER_ID_%2525252525252525257B%2525252525252525257Bemail_address_id%2525252525252525257D%2525252525252525257D&newsletter=the_prohuman",
+          "excerpt": "ses OAuth 2.1 with dynamic client registration. You can also authenticate directly with a bearer token or Linear API key — see the FAQ for details. Read-write access is provided through https://mcp.linear.app/mcp by default. For read-only access, you have two options: Con",
+          "published_label": null
+        },
+        {
+          "value": "OAuth 2.0",
+          "url": "https://linear.app/docs/mcp?4c18c78a_page=3&ef207e20_page=2",
+          "excerpt": "MCP server – Linear Docs Skip to content → MCP server The Model Context Protocol (MCP) server provides a standardized interface that allows any compatible AI model or agent to access your Linear data in a simple and secure way. Connect to our MCP server natively in Claude, Cursor",
+          "published_label": null
+        },
+        {
+          "value": "API key",
+          "url": "https://linear.app/docs/mcp?4c18c78a_page=3&ef207e20_page=2",
+          "excerpt": "mic client registration. You can also authenticate directly with a bearer token or Linear API key — see the FAQ for details. Read-write access is provided through https://mcp.linear.app/mcp by default. For read-only access, you have two options: Connect to https://mc",
+          "published_label": null
+        },
+        {
+          "value": "Bearer token",
+          "url": "https://linear.app/docs/mcp?4c18c78a_page=3&ef207e20_page=2",
+          "excerpt": "ses OAuth 2.1 with dynamic client registration. You can also authenticate directly with a bearer token or Linear API key — see the FAQ for details. Read-write access is provided through https://mcp.linear.app/mcp by default. For read-only access, you have two options: Con",
+          "published_label": null
+        },
+        {
+          "value": "API key",
+          "url": "https://linear.app/docs/api-and-webhooks?noRedirect=1",
+          "excerpt": "ve a question the docs don’t answer, post it in the #api channel in our Slack community . API Keys ⁠ Admins can choose whether or not Members can create their own API keys from Settings > Administration > API > Member API keys. This setting will not apply to Admins w",
+          "published_label": null
+        }
+      ],
+      "reason": "Provisional extraction; validate scope and completeness against cited pages."
+    },
+    "credential_gate": {
+      "value": "unknown",
+      "status": "provisional",
+      "sources": [],
+      "evidence": [],
+      "reason": "No sufficiently specific official evidence extracted."
+    },
+    "api_surface": {
+      "value": "GraphQL; broad documented surface",
+      "status": "provisional",
+      "sources": [
+        "https://linear.app/developers/oauth-2-0-authentication",
+        "https://linear.app/docs/api-and-webhooks?noRedirect=1"
+      ],
+      "evidence": [
+        {
+          "value": [
+            "GraphQL"
+          ],
+          "breadth": "broad",
+          "url": "https://linear.app/developers/oauth-2-0-authentication",
+          "excerpt": "Skip to content → OAuth 2.0 authentication Linear supports OAuth2 authentication, which is recommended if you’re building applications to integrate with Linear. It is highly recommended you create a workspace for the purpose of managing the OAuth2 Application, as each admin user ",
+          "published_label": null
+        },
+        {
+          "value": [
+            "GraphQL"
+          ],
+          "breadth": "broad",
+          "url": "https://linear.app/docs/api-and-webhooks?noRedirect=1",
+          "excerpt": "Skip to content → API and Webhooks Linear’s GraphQL API and webhooks lets you extend Linear’s functionality beyond what we provide out of the box. Overview ⁠ Linear’s public API is built using GraphQL. It’s the same API we use internally for developing our applications. Linear’s ",
+          "published_label": null
+        }
+      ],
+      "reason": "Provisional extraction; validate scope and completeness against cited pages."
+    },
+    "official_mcp": {
+      "value": "unknown",
+      "status": "provisional",
+      "sources": [],
+      "evidence": [],
+      "reason": "No sufficiently specific official evidence extracted."
+    },
+    "composio_toolkit": {
+      "value": "listed",
+      "status": "provisional",
+      "sources": [
+        "https://docs.composio.dev/toolkits/linear"
+      ],
+      "evidence": [],
+      "reason": "Catalog match only; not vendor MCP evidence."
+    },
+    "verdict": {
+      "value": "unknown",
+      "status": "provisional",
+      "sources": [],
+      "evidence": [],
+      "reason": "No sufficiently specific official evidence extracted."
+    }
+  },
+  "validation": [
+    "Automatic extraction is provisional until independently reviewed",
+    "Unknown is not evidence of absence",
+    "Composio evidence cannot establish vendor MCP",
+    "Client-only and negated MCP statements are not vendor-server proof",
+    "API breadth is a text-coverage heuristic, not an endpoint census"
+  ]
+}

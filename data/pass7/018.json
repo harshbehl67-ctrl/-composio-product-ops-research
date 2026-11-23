@@ -1,0 +1,94 @@
+{
+  "app": {
+    "number": 18,
+    "name": "Help Scout",
+    "category": "Support and Helpdesk",
+    "hint": "helpscout.com"
+  },
+  "replayed_at": "2026-11-23T18:19:17.621161+00:00",
+  "source_passes": [
+    "data/pass2/018.json",
+    "data/pass4/018.json"
+  ],
+  "source_search": "data/new_search/018.json",
+  "publication_date_note": "Published labels are retained exactly as supplied by search; missing labels are null. Relative labels must not be treated as exact publication dates.",
+  "claims": {
+    "auth": {
+      "value": [
+        "OAuth 2.0"
+      ],
+      "sources": [
+        "https://developer.helpscout.com/mailbox-api/overview/authentication/"
+      ],
+      "evidence": [
+        {
+          "value": "OAuth 2.0",
+          "url": "https://developer.helpscout.com/mailbox-api/overview/authentication/",
+          "excerpt": "rkflows Run Manual Workflows Update workflow status Changelog This is an HTTPS-only API and it uses OAuth 2.0 authorization , implementing Authorization Code and Client Credential flows.\nAll requests have to be authenticated via the Authorization header: curl -H \"Authorization: Bearer [RE",
+          "published_label": null
+        }
+      ],
+      "reason": "Provisional extraction: validate scope and completeness against the cited page."
+    },
+    "credential_gate": {
+      "value": [
+        "paid plan API condition"
+      ],
+      "sources": [
+        "https://docs.helpscout.com/article/1140-mailbox-api"
+      ],
+      "evidence": [
+        {
+          "value": "paid plan API condition",
+          "url": "https://docs.helpscout.com/article/1140-mailbox-api",
+          "excerpt": "calls per minute All endpoints available Pro Up to 800 calls per minute All endpoints available The Free plan does not include access to the API or integrations. Links to Specific Documentation The developer documentation is your definitive source for complete information. https://developer.helpscout.com/mailbox-api/ will ",
+          "published_label": "1.9 years ago"
+        }
+      ],
+      "reason": "Provisional extraction: validate scope and completeness against the cited page."
+    },
+    "api_surface": {
+      "value": "unknown",
+      "sources": [],
+      "evidence": [],
+      "reason": "No sufficiently specific positive evidence extracted; review targeted search results."
+    },
+    "official_mcp": {
+      "value": "yes (provisional)",
+      "sources": [
+        "https://docs.helpscout.com/article/1779-help-scout-mcp-server"
+      ],
+      "evidence": [
+        {
+          "value": "yes (provisional)",
+          "url": "https://docs.helpscout.com/article/1779-help-scout-mcp-server",
+          "excerpt": "tomize > Connectors > Add > and click Add custom connector . Name the connector Help Scout . Set the remote MCP server URL to https://mcp.helpscout.net/mcp . Leave Advanced settings empty. The OAuth Client ID and Client Secret fields are optional; the connector registers itself",
+          "published_label": null,
+          "context_warning": "Review vendor ownership, dates, and scope."
+        }
+      ],
+      "reason": "Provisional; check source date, scope, and vendor ownership."
+    },
+    "composio_toolkit": {
+      "value": "listed",
+      "sources": [
+        "https://docs.composio.dev/toolkits/help_scout"
+      ],
+      "evidence": [],
+      "reason": "Catalog match; scope needs review."
+    },
+    "verdict": {
+      "value": "unknown",
+      "sources": [],
+      "evidence": [],
+      "reason": "A supported access path, authentication method and API surface were not all extracted."
+    }
+  },
+  "validation": [
+    "Automatic extraction is provisional and not a verified final claim",
+    "Unknown is not evidence of absence",
+    "No Composio-to-vendor-MCP inference",
+    "Basic authentication may be endpoint-specific",
+    "Client-only and negated statements are not positive MCP evidence"
+  ]
+}

@@ -1,0 +1,73 @@
+{
+  "app": {
+    "number": 96,
+    "name": "Devin",
+    "category": "AI, Research and Media-native",
+    "hint": "docs.devin.ai (MCP)"
+  },
+  "replayed_at": "2026-11-23T18:16:39.824661+00:00",
+  "source_passes": [
+    "data/pass2/096.json",
+    "data/pass4/096.json"
+  ],
+  "source_search": "data/new_search/096.json",
+  "publication_date_note": "Published labels are retained exactly as supplied by search; missing labels are null. Relative labels must not be treated as exact publication dates.",
+  "claims": {
+    "auth": {
+      "value": [
+        "API key"
+      ],
+      "sources": [
+        "https://docs.devin.ai/es/api-reference/authentication"
+      ],
+      "evidence": [
+        {
+          "value": "API key",
+          "url": "https://docs.devin.ai/es/api-reference/authentication",
+          "excerpt": "usuario de servicio mediante la API (beta) Solución de problemas 401 No autorizado Posibles causas: API key no válida o caducada Falta el encabezado Authorization Formato incorrecto del token Bearer Usar una API key heredada ( apk_ / apk_user_ ) con Devin MCP : solo se admiten las clave",
+          "published_label": null
+        }
+      ],
+      "reason": "Provisional extraction: validate scope and completeness against the cited page."
+    },
+    "credential_gate": {
+      "value": "unknown",
+      "sources": [],
+      "evidence": [],
+      "reason": "No sufficiently specific positive evidence extracted; review targeted search results."
+    },
+    "api_surface": {
+      "value": "unknown",
+      "sources": [],
+      "evidence": [],
+      "reason": "No sufficiently specific positive evidence extracted; review targeted search results."
+    },
+    "official_mcp": {
+      "value": "unknown",
+      "sources": [],
+      "evidence": [],
+      "reason": "No sufficiently specific positive evidence extracted; review targeted search results."
+    },
+    "composio_toolkit": {
+      "value": "listed",
+      "sources": [
+        "https://docs.composio.dev/toolkits/devin_mcp"
+      ],
+      "evidence": [],
+      "reason": "Catalog match; scope needs review."
+    },
+    "verdict": {
+      "value": "unknown",
+      "sources": [],
+      "evidence": [],
+      "reason": "A supported access path, authentication method and API surface were not all extracted."
+    }
+  },
+  "validation": [
+    "Automatic extraction is provisional and not a verified final claim",
+    "Unknown is not evidence of absence",
+    "No Composio-to-vendor-MCP inference",
+    "Basic authentication may be endpoint-specific",
+    "Client-only and negated statements are not positive MCP evidence"
+  ]
+}

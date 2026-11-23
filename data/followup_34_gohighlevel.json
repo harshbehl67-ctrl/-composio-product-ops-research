@@ -1,0 +1,314 @@
+{
+  "number": 34,
+  "app": "GoHighLevel",
+  "category": "Marketing, Ads, Email and Social",
+  "summary": "GoHighLevel documents a broad REST API authenticated with OAuth 2.0 access tokens or scoped Private Integration Tokens at sub-account/location or agency level. Ongoing API access requires a paid HighLevel plan (14-day trial; Starter $97/month), and some endpoints require Founder eligibility. HighLevel operates remote Streamable HTTP MCP endpoints for supported AI clients; multi-sub-account agency use is rolling out and each request targets one authorized sub-account. Composio's preserved listing is the location-scoped HIGHLEVEL_LOCATION alias.",
+  "blocker": "Useful access requires a paid HighLevel subscription, endpoint eligibility, scopes, and account permissions; restricted endpoints need a higher-tier plan. The preserved Composio alias is single-location, not agency-wide. MCP client/connector support does not mean HighLevel operates an MCP client, and bulk agency installation is not universally available.",
+  "next_action": "Start with a HighLevel trial or paid account, create a least-privilege Private Integration Token for one location (or register a Marketplace OAuth app for user-authorized/agency use), verify endpoint plan eligibility, and test REST calls. For MCP, use the current client-specific HTTPS endpoint, approve only needed scopes/sub-accounts, and confirm bulk installation before agency-wide automation; use HIGHLEVEL_LOCATION only for one location.",
+  "verified_official_domains": [
+    "gohighlevel.com",
+    "leadconnectorhq.com",
+    "highlevel.stoplight.io"
+  ],
+  "fields": {
+    "auth": {
+      "status": "checked",
+      "value": [
+        "OAuth 2.0 access token; Bearer authentication with sub-account/location or agency/company user type and authorized scopes",
+        "Private Integration Token; Bearer authentication created at agency or sub-account level with selected scopes",
+        "Legacy API V1 key; end-of-support since 2025-12-31 and not recommended for new integrations"
+      ],
+      "reason": "Current official authorization and API pages document OAuth 2.0 and Private Integration Tokens, Bearer transport, and distinct sub-account versus agency credentials. The dated API page says legacy key generation is being phased out and V1 is end-of-support. Direct retrieval of the targeted Stoplight OAuth2/get-started routes still returned only Stoplight CSS/application shell and no readable HighLevel auth text; no sign-in was attempted, so substantive claims use the current HighLevel help and marketplace documentation.",
+      "evidence": [
+        {
+          "url": "https://marketplace.gohighlevel.com/docs/Authorization/authorization_doc",
+          "title": "Authorization",
+          "quote": "HighLevel currently supports two types of authorization:\n\n*   [Private Integration Token](/docs/Authorization/PrivateIntegrationsToken)\n*   [OAuth 2.0 Flow](/docs/Authorization/OAuth2.0)",
+          "retrieved_at": "2026-11-24",
+          "published_at": null,
+          "published_label": "undated"
+        },
+        {
+          "url": "https://marketplace.gohighlevel.com/docs/ghl/oauth/oauth-2-0-v-3",
+          "title": "OAuth 2.0 v3",
+          "quote": "HTTP: Bearer Auth\n\nUse the Access Token generated with user type as Sub-Account (OR) Private Integration Token of Sub-Account.\n\nSecurity Scheme Type:\n\nhttp\n\nHTTP Authorization Scheme:\n\nbearer\n\nBearer format:\n\nJWT",
+          "retrieved_at": "2026-11-24",
+          "published_at": null,
+          "published_label": "undated"
+        },
+        {
+          "url": "https://marketplace.gohighlevel.com/docs/ghl/oauth/oauth-2-0-v-3",
+          "title": "OAuth 2.0 v3 agency scope",
+          "quote": "Use the Access Token generated with user type as Agency (OR) Private Integration Token of Agency.",
+          "retrieved_at": "2026-11-24",
+          "published_at": null,
+          "published_label": "undated"
+        },
+        {
+          "url": "https://help.gohighlevel.com/support/solutions/articles/155000003054-private-integrations-everything-you-need-to-know",
+          "title": "Private Integrations: Everything you need to know",
+          "quote": "You can create up to 20 Private Integration Tokens at both the Agency and Sub-Account levels.",
+          "retrieved_at": "2026-11-24",
+          "published_at": "2026-11-16",
+          "published_label": "modified 2026-11-16"
+        },
+        {
+          "url": "https://help.gohighlevel.com/support/solutions/articles/48001060529-highlevel-api-documentation",
+          "title": "HighLevel API Documentation",
+          "quote": "New legacy API key generation is being phased out. Private Integration Tokens and OAuth 2.0 are the recommended authentication methods.",
+          "retrieved_at": "2026-11-24",
+          "published_at": "2026-11-16",
+          "published_label": "modified 2026-11-16"
+        }
+      ]
+    },
+    "credential_gate": {
+      "status": "checked",
+      "value": "paid_plan",
+      "gate_class": "paid_plan",
+      "details": {
+        "gate_class": "paid_plan",
+        "trial": "14-day free trial",
+        "entry_price": "$97/month Starter",
+        "restricted_endpoints": "Founder or endpoint-specific eligibility required"
+      },
+      "reason": "A 14-day trial is available, but ongoing API access is tied to paid plans: Starter $97, Unlimited $297, and Founder $497 per month. OAuth 2.0, Private Integration Tokens, and standard endpoints are available across plans, while restricted endpoints require higher-tier eligibility; token scopes and account permissions still apply. The API and private-integration pages were modified 2026-11-16; the pricing page is undated.",
+      "evidence": [
+        {
+          "url": "https://www.gohighlevel.com/pricing",
+          "title": "HighLevel Pricing",
+          "quote": "Start with a FREE 14-day trial on any plan below!",
+          "retrieved_at": "2026-11-24",
+          "published_at": null,
+          "published_label": "undated"
+        },
+        {
+          "url": "https://help.gohighlevel.com/support/solutions/articles/48001060529-highlevel-api-documentation",
+          "title": "HighLevel API Documentation plan prices",
+          "quote": "API Capability\n\nStarter ($97/month)\n\nUnlimited ($297/month)\n\nFounder ($497/month)",
+          "retrieved_at": "2026-11-24",
+          "published_at": "2026-11-16",
+          "published_label": "modified 2026-11-16"
+        },
+        {
+          "url": "https://help.gohighlevel.com/support/solutions/articles/48001060529-highlevel-api-documentation",
+          "title": "HighLevel API Documentation plan access",
+          "quote": "HighLevel offers API access across its subscription plans, including Starter, Unlimited, and Founder.\n\nBoth OAuth 2.0 and Private Integration Tokens (PIT) are available across plans. However, access to specific API endpoints depends on subscription eligibility, permissions, and scopes.",
+          "retrieved_at": "2026-11-24",
+          "published_at": "2026-11-16",
+          "published_label": "modified 2026-11-16"
+        },
+        {
+          "url": "https://help.gohighlevel.com/support/solutions/articles/155000003054-private-integrations-everything-you-need-to-know",
+          "title": "Private Integrations endpoint restrictions",
+          "quote": "Having a Private Integration Token does not automatically grant access to every API endpoint. Access also depends on the subscription plan, assigned scopes, account permissions, and endpoint-specific requirements.",
+          "retrieved_at": "2026-11-24",
+          "published_at": "2026-11-16",
+          "published_label": "modified 2026-11-16"
+        },
+        {
+          "url": "https://help.gohighlevel.com/support/solutions/articles/155000003054-private-integrations-everything-you-need-to-know",
+          "title": "Private Integrations higher-tier endpoints",
+          "quote": "Certain API operations require higher-tier access. The API documentation currently identifies the following Agency Pro-restricted endpoints:\n\n*   **Create Sub-Account:** Create new sub-accounts programmatically.\n*   **Enable SaaS for Sub-Account:** Enable SaaS functionality for a sub-account.",
+          "retrieved_at": "2026-11-24",
+          "published_at": "2026-11-16",
+          "published_label": "modified 2026-11-16"
+        }
+      ]
+    },
+    "api_surface": {
+      "status": "checked",
+      "value": "REST; broad documented surface",
+      "api_types": [
+        "REST"
+      ],
+      "breadth": "broad",
+      "details": {
+        "api_types": [
+          "REST"
+        ],
+        "breadth": "broad",
+        "current_version": "v3 for supported endpoints; v2 OAuth API also documented",
+        "legacy_version": "API V1 end-of-support 2025-12-31"
+      },
+      "reason": "The official portal calls this complete REST API documentation and the dated API help lists contacts, conversations, calendars, workflows, payments, webhooks, and more. The v3 reference uses a /v3 route prefix. This supports broad documented REST coverage, not a claim that every endpoint is available on every plan. API V1 is end-of-support. Marketplace reference pages are undated; the API help page was modified 2026-11-16.",
+      "evidence": [
+        {
+          "url": "https://marketplace.gohighlevel.com/docs/",
+          "title": "HighLevel API Documentation",
+          "quote": "Complete REST API documentation for the HighLevel CRM platform.Build powerful integrations with our comprehensive developer resources.",
+          "retrieved_at": "2026-11-24",
+          "published_at": null,
+          "published_label": "undated"
+        },
+        {
+          "url": "https://help.gohighlevel.com/support/solutions/articles/48001060529-highlevel-api-documentation",
+          "title": "HighLevel API Documentation resource breadth",
+          "quote": "The APIs support contacts, conversations, calendars, workflows, payments, webhooks, and more.",
+          "retrieved_at": "2026-11-24",
+          "published_at": "2026-11-16",
+          "published_label": "modified 2026-11-16"
+        },
+        {
+          "url": "https://marketplace.gohighlevel.com/docs/ghl/oauth/oauth-2-0-v-3",
+          "title": "OAuth 2.0 v3 route prefix",
+          "quote": "All APIs available via `/v3` route prefix with AIP-compliant responses.",
+          "retrieved_at": "2026-11-24",
+          "published_at": null,
+          "published_label": "undated"
+        },
+        {
+          "url": "https://help.gohighlevel.com/support/solutions/articles/48001060529-highlevel-api-documentation",
+          "title": "HighLevel API V1 support status",
+          "quote": "API V1 reached end-of-support on December 31, 2025. Existing integrations may continue working, but API V1 no longer receives updates or technical support. Developers are encouraged to use supported API versions.",
+          "retrieved_at": "2026-11-24",
+          "published_at": "2026-11-16",
+          "published_label": "modified 2026-11-16"
+        }
+      ]
+    },
+    "official_mcp": {
+      "status": "checked",
+      "value": "vendor_server",
+      "mcp_mode": "remote",
+      "server_urls": [
+        "https://services.leadconnectorhq.com/mcp/anthropic/v2",
+        "https://services.leadconnectorhq.com/mcp/openai/v2/",
+        "https://services.leadconnectorhq.com/mcp/cursor/v2",
+        "https://services.leadconnectorhq.com/mcp/muse/v2/"
+      ],
+      "authentication": "HighLevel login and OAuth consent with selected sub-account(s) and scopes; current client connections require no manually created API key or Private Integration Token",
+      "details": {
+        "direction": "HighLevel-operated remote server consumed by supported AI clients/connectors",
+        "client_connector_distinction": "HighLevel Managed Agents also connects to third-party MCP servers; that client-side connector support is separate and was not counted as vendor-server evidence.",
+        "agency_scope": "Single sub-account by default; multi-sub-account agency installation is rolling out; every request targets one authorized sub-account"
+      },
+      "reason": "The 2026-11-15 official setup guide names the HighLevel/LeadConnector MCP Server, gives client-specific HTTPS endpoints, and requires OAuth consent. The undated marketplace reference explicitly describes remote Streamable HTTP servers and more than 700 actions. Supported clients consume HighLevel's server; Managed Agents' third-party MCP connectors are client behavior and were not substituted. The later 2026-11-15 guide says agency-wide connections are rolling out through bulk installation, while every request remains scoped to one authorized sub-account.",
+      "evidence": [
+        {
+          "url": "https://help.gohighlevel.com/support/solutions/articles/155000005741-how-to-setup-and-use-the-highlevel-mcp-server",
+          "title": "How to Setup and Use the HighLevel MCP Server",
+          "quote": "The HighLevel MCP Server, also called the LeadConnector MCP Server, connects through OAuth: sign in, choose the sub-account or sub-accounts to include, and approve the requested permissions.",
+          "retrieved_at": "2026-11-24",
+          "published_at": "2026-11-15",
+          "published_label": "modified 2026-11-15"
+        },
+        {
+          "url": "https://help.gohighlevel.com/support/solutions/articles/155000005741-how-to-setup-and-use-the-highlevel-mcp-server",
+          "title": "HighLevel MCP connection endpoints",
+          "quote": "**Claude.ai, Claude Code, and Claude Cowork**\n\n`https://services.leadconnectorhq.com/mcp/anthropic/v2`\n\n**ChatGPT, Codex, and other compatible OpenAI clients**\n\n`https://services.leadconnectorhq.com/mcp/openai/v2/`\n\n**Cursor**\n\n`https://services.leadconnectorhq.com/mcp/cursor/v2`",
+          "retrieved_at": "2026-11-24",
+          "published_at": "2026-11-15",
+          "published_label": "modified 2026-11-15"
+        },
+        {
+          "url": "https://marketplace.gohighlevel.com/docs/other/mcp/",
+          "title": "HighLevel MCP Server transport",
+          "quote": "MCP (Model Context Protocol) is an open standard for connecting AI assistants to the apps you use. HighLevel uses it to connect compatible assistants that support remote Streamable HTTP servers and HighLevel’s sign-in flow.",
+          "retrieved_at": "2026-11-24",
+          "published_at": null,
+          "published_label": "undated"
+        },
+        {
+          "url": "https://marketplace.gohighlevel.com/docs/other/mcp/",
+          "title": "HighLevel MCP Server authentication",
+          "quote": "You connect by signing in with your HighLevel login, choosing your sub-account(s), and approving the requested permissions. There’s no key to create, paste, or rotate.",
+          "retrieved_at": "2026-11-24",
+          "published_at": null,
+          "published_label": "undated"
+        },
+        {
+          "url": "https://help.gohighlevel.com/support/solutions/articles/155000005741-how-to-setup-and-use-the-highlevel-mcp-server",
+          "title": "HighLevel MCP sub-account and agency scope",
+          "quote": "A single-sub-account connection is bound to the sub-account you choose during OAuth authorization for the lifetime of that connection.\n\nWhere agency-wide access is available, you can connect once and work across the sub-accounts selected during installation.",
+          "retrieved_at": "2026-11-24",
+          "published_at": "2026-11-15",
+          "published_label": "modified 2026-11-15"
+        },
+        {
+          "url": "https://help.gohighlevel.com/support/solutions/articles/155000005741-how-to-setup-and-use-the-highlevel-mcp-server",
+          "title": "HighLevel MCP agency rollout limits",
+          "quote": "Every request targets one sub-account and is authorized against your installation. The connection cannot access sub-accounts you did not include.\n\nAvailability: Single-sub-account connections are available today. Agency-wide connections are rolling out through the multi-sub-account, or bulk, installation option. If installation offers only one sub-account, the multi-sub-account option is not enabled for your app yet.",
+          "retrieved_at": "2026-11-24",
+          "published_at": "2026-11-15",
+          "published_label": "modified 2026-11-15"
+        },
+        {
+          "url": "https://marketplace.gohighlevel.com/docs/other/mcp/",
+          "title": "HighLevel MCP operation coverage",
+          "quote": "The table covers **717 supported actions across 38 feature areas**, grouped by the HighLevel menu. Available actions depend on your connection’s permissions and the features enabled in your sub-account.",
+          "retrieved_at": "2026-11-24",
+          "published_at": null,
+          "published_label": "undated"
+        }
+      ]
+    },
+    "composio_toolkit": {
+      "value": "listed_alias",
+      "details": {
+        "slug": "HIGHLEVEL_LOCATION",
+        "catalog_name": "HighLevel Location",
+        "scope": "single sub-account/location"
+      },
+      "status": "checked",
+      "reason": "The current Composio catalog and toolkit page list HighLevel Location, a location-scoped alias for GoHighLevel rather than an exact GoHighLevel product label. The page states that agency-wide access requires the separate HighLevel Agency toolkit. The page is undated; its Version value is not a publication date.",
+      "evidence": [
+        {
+          "url": "https://docs.composio.dev/toolkits/highlevel_location.md",
+          "title": "Composio HighLevel Location toolkit",
+          "quote": "# HighLevel Location\nHighLevel provides Location-scoped CRM, marketing, conversations, calendars, payments, and business automation APIs.\n- **Category:** crm\n- **Auth:** OAUTH2, BEARER_TOKEN\n- **Composio-managed OAuth available?** No\n- **Tools:** 555\n- **Triggers:** 0\n- **Slug:** `HIGHLEVEL_LOCATION`",
+          "retrieved_at": "2026-11-24",
+          "published_at": null,
+          "published_label": "undated"
+        },
+        {
+          "url": "https://docs.composio.dev/toolkits/highlevel_location.md",
+          "title": "Composio HighLevel Location scope",
+          "quote": "The Location toolkit connects to a single sub-account (HighLevel calls these locations). For agency-wide access, use the HighLevel Agency toolkit instead.",
+          "retrieved_at": "2026-11-24",
+          "published_at": null,
+          "published_label": "undated"
+        }
+      ]
+    },
+    "verdict": {
+      "status": "checked",
+      "value": "gated_build_candidate",
+      "reason": "Broad REST coverage, modern OAuth/Private Integration Token authentication, and a HighLevel-operated remote MCP server support a gated build candidate. Ongoing use requires a paid HighLevel plan; endpoint eligibility, scopes, permissions, and the MCP bulk-install rollout constrain automation. Composio's preserved alias remains location-scoped. The pricing and marketplace reference pages are undated; the cited API/MCP support pages are dated 2026-11-15 and 2026-11-16.",
+      "evidence": [
+        {
+          "url": "https://help.gohighlevel.com/support/solutions/articles/48001060529-highlevel-api-documentation",
+          "title": "HighLevel API Documentation resource breadth",
+          "quote": "The APIs support contacts, conversations, calendars, workflows, payments, webhooks, and more.",
+          "retrieved_at": "2026-11-24",
+          "published_at": "2026-11-16",
+          "published_label": "modified 2026-11-16"
+        },
+        {
+          "url": "https://help.gohighlevel.com/support/solutions/articles/48001060529-highlevel-api-documentation",
+          "title": "HighLevel API Documentation plan access",
+          "quote": "HighLevel offers API access across its subscription plans, including Starter, Unlimited, and Founder.\n\nBoth OAuth 2.0 and Private Integration Tokens (PIT) are available across plans. However, access to specific API endpoints depends on subscription eligibility, permissions, and scopes.",
+          "retrieved_at": "2026-11-24",
+          "published_at": "2026-11-16",
+          "published_label": "modified 2026-11-16"
+        },
+        {
+          "url": "https://help.gohighlevel.com/support/solutions/articles/155000003054-private-integrations-everything-you-need-to-know",
+          "title": "Private Integrations endpoint restrictions",
+          "quote": "Having a Private Integration Token does not automatically grant access to every API endpoint. Access also depends on the subscription plan, assigned scopes, account permissions, and endpoint-specific requirements.",
+          "retrieved_at": "2026-11-24",
+          "published_at": "2026-11-16",
+          "published_label": "modified 2026-11-16"
+        },
+        {
+          "url": "https://help.gohighlevel.com/support/solutions/articles/155000005741-how-to-setup-and-use-the-highlevel-mcp-server",
+          "title": "How to Setup and Use the HighLevel MCP Server",
+          "quote": "The HighLevel MCP Server, also called the LeadConnector MCP Server, connects through OAuth: sign in, choose the sub-account or sub-accounts to include, and approve the requested permissions.",
+          "retrieved_at": "2026-11-24",
+          "published_at": "2026-11-15",
+          "published_label": "modified 2026-11-15"
+        }
+      ]
+    }
+  }
+}

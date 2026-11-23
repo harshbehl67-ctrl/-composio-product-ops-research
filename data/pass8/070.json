@@ -1,0 +1,110 @@
+{
+  "app": {
+    "number": 70,
+    "name": "Sentry",
+    "category": "Developer, Infra and Data platforms",
+    "hint": "docs.sentry.io/api"
+  },
+  "replayed_at": "2026-11-23T18:41:10.175828+00:00",
+  "source_passes": [
+    "data/pass2/070.json",
+    "data/pass4/070.json"
+  ],
+  "source_searches": [
+    "data/new_search/070.json",
+    "data/pass4_search/070.json"
+  ],
+  "publication_date_note": "Search publication labels are retained exactly; null means no label was available. Relative labels are not exact dates.",
+  "claims": {
+    "auth": {
+      "value": [
+        "OAuth 2.0",
+        "API key",
+        "Bearer token",
+        "Basic authentication"
+      ],
+      "status": "provisional",
+      "sources": [
+        "https://docs.sentry.io/api/auth/",
+        "https://docs.sentry.io/api/users/retrieve-the-current-credentials/"
+      ],
+      "evidence": [
+        {
+          "value": "OAuth 2.0",
+          "url": "https://docs.sentry.io/api/auth/",
+          "excerpt": "API Authentication | Sentry Docs Skip to content Open Main Menu API Reference Authentication Paginating Results Permissions & Scopes Rate Limits Requests Crons Dashboards Discover & Performance Environments Events & Issues Explore Flags Integration Platform Integrations Investiga",
+          "published_label": null
+        },
+        {
+          "value": "API key",
+          "url": "https://docs.sentry.io/api/auth/",
+          "excerpt": "effectively. For the string format of auth tokens, organization tokens, DSNs, and legacy API keys, see Token and Credential Formats . For example, when the documentation says: Bash Copied curl -H 'Authorization: Bearer {TOKEN}' https://sentry.io/api/0/organizations/",
+          "published_label": null
+        },
+        {
+          "value": "Bearer token",
+          "url": "https://docs.sentry.io/api/auth/",
+          "excerpt": "erally very limited and an endpoint will describe if its supported. This works similar to Bearer token authentication, but uses your DSN (Client Key). Bash Copied curl -H 'Authorization: DSN {DSN}' https://sentry.io/api/0/ { organization_slug } / { project_slug } /user-re",
+          "published_label": null
+        },
+        {
+          "value": "Basic authentication",
+          "url": "https://docs.sentry.io/api/auth/",
+          "excerpt": "API Authentication | Sentry Docs Skip to content Open Main Menu API Reference Authentication Paginating Results Permissions & Scopes Rate Limits Requests Crons Dashboards Discover & Performance Environments Events & Issues Explore Flags Integration Platform Integrations Investiga",
+          "published_label": null
+        },
+        {
+          "value": "API key",
+          "url": "https://docs.sentry.io/api/users/retrieve-the-current-credentials/",
+          "excerpt": "r is null for anonymous requests and for credentials that don't belong\nto a user, such as API keys and organization auth tokens. Scopes You need to authenticate via bearer auth token. <auth_token> requires one of the following scopes: Bash Copied curl https://sentry.",
+          "published_label": null
+        }
+      ],
+      "reason": "Provisional extraction; validate scope and completeness against cited pages."
+    },
+    "credential_gate": {
+      "value": "unknown",
+      "status": "provisional",
+      "sources": [],
+      "evidence": [],
+      "reason": "No sufficiently specific official evidence extracted."
+    },
+    "api_surface": {
+      "value": "unknown",
+      "status": "provisional",
+      "sources": [],
+      "evidence": [],
+      "reason": "No sufficiently specific official evidence extracted."
+    },
+    "official_mcp": {
+      "value": "unknown",
+      "status": "provisional",
+      "sources": [],
+      "evidence": [],
+      "reason": "No sufficiently specific official evidence extracted."
+    },
+    "composio_toolkit": {
+      "value": "listed",
+      "status": "provisional",
+      "sources": [
+        "https://docs.composio.dev/toolkits/sentry"
+      ],
+      "evidence": [],
+      "reason": "Catalog match only; not vendor MCP evidence."
+    },
+    "verdict": {
+      "value": "unknown",
+      "status": "provisional",
+      "sources": [],
+      "evidence": [],
+      "reason": "No sufficiently specific official evidence extracted."
+    }
+  },
+  "validation": [
+    "Automatic extraction is provisional until independently reviewed",
+    "Unknown is not evidence of absence",
+    "Composio evidence cannot establish vendor MCP",
+    "Client-only and negated MCP statements are not vendor-server proof",
+    "API breadth is a text-coverage heuristic, not an endpoint census"
+  ]
+}

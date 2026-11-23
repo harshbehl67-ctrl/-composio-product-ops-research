@@ -1,0 +1,120 @@
+{
+  "app": {
+    "number": 30,
+    "name": "Vonage",
+    "category": "Communications and Messaging",
+    "hint": "developer.vonage.com"
+  },
+  "replayed_at": "2026-11-23T18:41:59.983958+00:00",
+  "source_passes": [
+    "data/pass2/030.json",
+    "data/pass4/030.json"
+  ],
+  "source_searches": [
+    "data/new_search/030.json",
+    "data/pass4_search/030.json"
+  ],
+  "publication_date_note": "Search publication labels are retained exactly; null means no label was available. Relative labels are not exact dates.",
+  "claims": {
+    "auth": {
+      "value": [
+        "API key",
+        "Basic authentication",
+        "OAuth 2.0"
+      ],
+      "status": "provisional",
+      "sources": [
+        "https://developer.vonage.com/en/verify/concepts/authentication",
+        "https://developer.vonage.com/en/getting-started-network/guides/server-authentication",
+        "https://developer.vonage.com/en/dashboard/control/api-settings"
+      ],
+      "evidence": [
+        {
+          "value": "API key",
+          "url": "https://developer.vonage.com/en/verify/concepts/authentication",
+          "excerpt": "testing / POC JWT Bearer Production Basic Authentication Basic Authentication sends your API Key and API Secret Base64-encoded in the Authorization header. You can find these credentials in your API settings in the Vonage Dashboard. It is the simplest way to get sta",
+          "published_label": null
+        },
+        {
+          "value": "Basic authentication",
+          "url": "https://developer.vonage.com/en/verify/concepts/authentication",
+          "excerpt": "tion Skip to Main Content Authentication Verify API supports two types of authentication: Basic Authentication JWT When should you use Basic Authentication or JWT? Verify supports two authentication methods: Basic authentication and JWT Bearer authentication. Understanding the di",
+          "published_label": null
+        },
+        {
+          "value": "OAuth 2.0",
+          "url": "https://developer.vonage.com/en/getting-started-network/guides/server-authentication",
+          "excerpt": "all . Make an OIDC Request OpenID Connect (OIDC) is an identity layer built on top of the OAuth 2.0 protocol, which provides a way to verify a user's identity using the JWT token. POST https://api-eu.vonage.com/oauth2/bc-authorize Copy curl - X POST https : //api-eu.vo",
+          "published_label": null
+        },
+        {
+          "value": "API key",
+          "url": "https://developer.vonage.com/en/dashboard/control/api-settings",
+          "excerpt": "ou to manage your API credentials, configure webhooks, and control SMS API behavior. Each API key has its own set of credentials and configuration. Access API Settings Log in to your Vonage Dashboard Navigate to Settings → API Settings in the left sidebar. Select an",
+          "published_label": null
+        }
+      ],
+      "reason": "Provisional extraction; validate scope and completeness against cited pages."
+    },
+    "credential_gate": {
+      "value": "unknown",
+      "status": "provisional",
+      "sources": [],
+      "evidence": [],
+      "reason": "No sufficiently specific official evidence extracted."
+    },
+    "api_surface": {
+      "value": "unknown",
+      "status": "provisional",
+      "sources": [],
+      "evidence": [],
+      "reason": "No sufficiently specific official evidence extracted."
+    },
+    "official_mcp": {
+      "value": "vendor_server",
+      "status": "provisional",
+      "sources": [
+        "https://developer.vonage.com/en/mcp-server/technical-details",
+        "https://developer.vonage.com/en/mcp-server/overview"
+      ],
+      "evidence": [
+        {
+          "value": "vendor_server",
+          "url": "https://developer.vonage.com/en/mcp-server/technical-details",
+          "excerpt": "Technical Details Skip to Main Content Technical Details The Vonage MCP Server allows AI agents and developer tools to interact with Vonage APIs through the Model Context Protocol (MCP) — an open standard that defines how large language models (LLMs) disc",
+          "published_label": null,
+          "context_note": "Vendor-owned server statement; review date and access scope."
+        },
+        {
+          "value": "vendor_server",
+          "url": "https://developer.vonage.com/en/mcp-server/overview",
+          "excerpt": "e MCP Server Overview | Vonage MCP Server Documenation Skip to Main Content Documentation Vonage MCP Server Vonage MCP Server The Vonage MCP Server enables AI agents and developer tools to discover, describe, and use Vonage capabilities via the Model Context Protocol. Agent-native docs search (Documentation MCP) Tool discov",
+          "published_label": null,
+          "context_note": "Vendor-owned server statement; review date and access scope."
+        }
+      ],
+      "reason": "Provisional; check date, ownership and access scope."
+    },
+    "composio_toolkit": {
+      "value": "unknown",
+      "status": "provisional",
+      "sources": [],
+      "evidence": [],
+      "reason": "No sufficiently specific official evidence extracted."
+    },
+    "verdict": {
+      "value": "unknown",
+      "status": "provisional",
+      "sources": [],
+      "evidence": [],
+      "reason": "No sufficiently specific official evidence extracted."
+    }
+  },
+  "validation": [
+    "Automatic extraction is provisional until independently reviewed",
+    "Unknown is not evidence of absence",
+    "Composio evidence cannot establish vendor MCP",
+    "Client-only and negated MCP statements are not vendor-server proof",
+    "API breadth is a text-coverage heuristic, not an endpoint census"
+  ]
+}

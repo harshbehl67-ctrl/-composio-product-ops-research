@@ -1,0 +1,233 @@
+{
+  "app": {
+    "number": 8,
+    "name": "Close",
+    "category": "CRM and Sales",
+    "hint": "close.com"
+  },
+  "replayed_at": "2026-11-23T18:41:57.502846+00:00",
+  "source_passes": [
+    "data/pass2/008.json",
+    "data/pass4/008.json"
+  ],
+  "source_searches": [
+    "data/new_search/008.json",
+    "data/pass4_search/008.json"
+  ],
+  "publication_date_note": "Search publication labels are retained exactly; null means no label was available. Relative labels are not exact dates.",
+  "claims": {
+    "auth": {
+      "value": [
+        "API key",
+        "Basic authentication",
+        "OAuth 2.0"
+      ],
+      "status": "provisional",
+      "sources": [
+        "https://developer.close.com/api/overview/api-key-authentication",
+        "https://developer.close.com/mcp/",
+        "https://help.close.com/integrations/close-mcp-server",
+        "https://close.com/changelog/access-levels-and-admin-controls-for-api-keys",
+        "https://developer.close.com/mcp",
+        "https://developer.close.com/api/overview",
+        "https://help.close.com/integrations/api-keys-oauth",
+        "https://developer.close.com/integrations"
+      ],
+      "evidence": [
+        {
+          "value": "API key",
+          "url": "https://developer.close.com/api/overview/api-key-authentication",
+          "excerpt": "Authentication with API keys | Close | Developer API Documentation For AI agents: a documentation index is available at the root level at /llms.txt. Append /llms.txt to any URL for a page-level ind",
+          "published_label": null
+        },
+        {
+          "value": "Basic authentication",
+          "url": "https://developer.close.com/api/overview/api-key-authentication",
+          "excerpt": "tion. Perform API calls with API key API keys use HTTP Basic client side authentication .\nBasic authentication is a simple authentication scheme built into the HTTP\nprotocol. To use it, send your HTTP requests with an Authorization header that\ncontains the word Basic followed by",
+          "published_label": null
+        },
+        {
+          "value": "OAuth 2.0",
+          "url": "https://developer.close.com/mcp/",
+          "excerpt": "MCP Server The MCP server URL is https://mcp.close.com/mcp and has “HTTP Streamable” and “OAuth 2.0 Dynamic Client Registration (DCR)” support. We recommend accessing the MCP server via OAuth 2.0 using a supported MCP client (e.g. Claude, ChatGPT, Cursor, etc). If you",
+          "published_label": null
+        },
+        {
+          "value": "API key",
+          "url": "https://developer.close.com/mcp/",
+          "excerpt": "tup, create an OAuth application to authenticate using OAuth 2.0 or authenticate using an API key and include the following headers in your request: Close-API-Key: {{ Your Close API Key }} Close-Scope: {{ mcp.read, mcp.write_safe, or mcp.write_destructive }} The Clos",
+          "published_label": null
+        },
+        {
+          "value": "OAuth 2.0",
+          "url": "https://help.close.com/integrations/close-mcp-server",
+          "excerpt": "MCP Server The MCP server URL is https://mcp.close.com/mcp and has “HTTP Streamable” and “OAuth 2.0 Dynamic Client Registration (DCR)” support. We recommend accessing the MCP server via OAuth 2.0 using a supported MCP client (ex: Claude, ChatGPT, Cursor, etc). If you p",
+          "published_label": null
+        },
+        {
+          "value": "API key",
+          "url": "https://help.close.com/integrations/close-mcp-server",
+          "excerpt": "tup, create an OAuth application to authenticate using OAuth 2.0 or authenticate using an API key and include the following Headers in your request: Close-API-Key : {{ Your Close API Key }} Close-Scope : {{ mcp.read, mcp.write_safe, or mcp.write_destructive }} The Cl",
+          "published_label": null
+        },
+        {
+          "value": "API key",
+          "url": "https://close.com/changelog/access-levels-and-admin-controls-for-api-keys",
+          "excerpt": "Access levels and Admin controls for API keys | Close changelog Skip to content Scale with agents + AI: 2027 roadmap preview webinar. Register now → Product Updates If you’re a tech-enabled team who needs to scale",
+          "published_label": "last week"
+        },
+        {
+          "value": "OAuth 2.0",
+          "url": "https://developer.close.com/mcp",
+          "excerpt": "MCP Server The MCP server URL is https://mcp.close.com/mcp and has “HTTP Streamable” and “OAuth 2.0 Dynamic Client Registration (DCR)” support. We recommend accessing the MCP server via OAuth 2.0 using a supported MCP client (e.g. Claude, ChatGPT, Cursor, etc). If you",
+          "published_label": null
+        },
+        {
+          "value": "API key",
+          "url": "https://developer.close.com/mcp",
+          "excerpt": "tup, create an OAuth application to authenticate using OAuth 2.0 or authenticate using an API key and include the following headers in your request: Close-API-Key: {{ Your Close API Key }} Close-Scope: {{ mcp.read, mcp.write_safe, or mcp.write_destructive }} The Clos",
+          "published_label": null
+        },
+        {
+          "value": "OAuth 2.0",
+          "url": "https://developer.close.com/api/overview",
+          "excerpt": "ntegrations. Use HTTP Basic Auth with your API key as the username and an empty password. OAuth 2.0 — Best for user-facing integrations. Core concepts Concept Description Leads Companies or organizations — the primary object in Close. Contain contacts, tasks, opportuni",
+          "published_label": null
+        },
+        {
+          "value": "API key",
+          "url": "https://developer.close.com/api/overview",
+          "excerpt": "odies. Authentication All API requests require authentication. Two methods are supported: API Keys — Best for scripts, internal tools, and server-side integrations. Use HTTP Basic Auth with your API key as the username and an empty password. OAuth 2.0 — Best for user",
+          "published_label": null
+        },
+        {
+          "value": "Basic authentication",
+          "url": "https://developer.close.com/api/overview",
+          "excerpt": "API Overview | Close | Developer API Documentation For AI agents: a documentation index is available at the root level at /llms.txt. Append /llms.txt to any URL for a page-level index, or .md for the markdown version of any page. Skip to navigation On this page Authentication Cor",
+          "published_label": null
+        },
+        {
+          "value": "API key",
+          "url": "https://help.close.com/integrations/api-keys-oauth",
+          "excerpt": "API Keys & OAuth | Close Help Center For AI agents: a documentation index is available at the root level at /llms.txt. Append /llms.txt to any URL for a page-level index, or .md",
+          "published_label": null
+        },
+        {
+          "value": "OAuth 2.0",
+          "url": "https://developer.close.com/integrations",
+          "excerpt": "n Settings → Developer → API Keys and then follow API keys to authenticate your requests. OAuth 2.0 — Lets each user authorize your app to act on their behalf. Strongly recommended for user-facing integrations that multiple users will authenticate to. See Creating an O",
+          "published_label": null
+        },
+        {
+          "value": "API key",
+          "url": "https://developer.close.com/integrations",
+          "excerpt": "tication method There are two ways to authenticate with the Close REST API or MCP server. API keys — A key is tied to a specific user and organization. Great for scripts, internal tools, import jobs, and automations. Generate one in Settings → Developer → API Keys an",
+          "published_label": null
+        }
+      ],
+      "reason": "Provisional extraction; validate scope and completeness against cited pages."
+    },
+    "credential_gate": {
+      "value": [
+        "paid_plan"
+      ],
+      "status": "provisional",
+      "sources": [
+        "https://help.close.com/integrations/close-mcp-server"
+      ],
+      "evidence": [
+        {
+          "value": "paid_plan",
+          "url": "https://help.close.com/integrations/close-mcp-server",
+          "excerpt": "e some example use cases: Claude (Web, Desktop) - Paid plans Connectors requires a Claude paid plan In order to access Claude’s Connectors library that includes Close, you must be on a paid plan. Navigate to Settings by clicking your name in the bottom left sidebar on",
+          "published_label": null
+        }
+      ],
+      "reason": "Provisional extraction; validate scope and completeness against cited pages."
+    },
+    "api_surface": {
+      "value": "REST; moderate documented surface",
+      "status": "provisional",
+      "sources": [
+        "https://developer.close.com/integrations"
+      ],
+      "evidence": [
+        {
+          "value": [
+            "REST"
+          ],
+          "breadth": "moderate",
+          "url": "https://developer.close.com/integrations",
+          "excerpt": "Build an Integration | Close | Developer API Documentation For AI agents: a documentation index is available at the root level at /llms.txt. Append /llms.txt to any URL for a page-level index, or .md for the markdown version of any page. Skip to navigation On this page Choose an ",
+          "published_label": null
+        }
+      ],
+      "reason": "Provisional extraction; validate scope and completeness against cited pages."
+    },
+    "official_mcp": {
+      "value": "vendor_server",
+      "status": "provisional",
+      "sources": [
+        "https://developer.close.com/mcp/",
+        "https://help.close.com/integrations/close-mcp-server",
+        "https://developer.close.com/mcp"
+      ],
+      "evidence": [
+        {
+          "value": "vendor_server",
+          "url": "https://developer.close.com/mcp/",
+          "excerpt": "Close MCP Server | Close | Developer API Documentation For AI agents: a documentation index is available at the root level at /llms.txt. Append /llms.txt to any URL for a page-level index, or .md for the markdown version of any page. Skip to navigation On this page Accessin",
+          "published_label": null,
+          "context_note": "Vendor-owned server statement; review date and access scope."
+        },
+        {
+          "value": "vendor_server",
+          "url": "https://help.close.com/integrations/close-mcp-server",
+          "excerpt": "Close MCP Server | Close Help Center For AI agents: a documentation index is available at the root level at /llms.txt. Append /llms.txt to any URL for a page-level index, or .md for the markdown version of any page. Skip to navigation On this page Accessin",
+          "published_label": null,
+          "context_note": "Vendor-owned server statement; review date and access scope."
+        },
+        {
+          "value": "vendor_server",
+          "url": "https://developer.close.com/mcp",
+          "excerpt": "Close MCP Server | Close | Developer API Documentation For AI agents: a documentation index is available at the root level at /llms.txt. Append /llms.txt to any URL for a page-level index, or .md for the markdown version of any page. Skip to navigation On this page Accessin",
+          "published_label": null,
+          "context_note": "Vendor-owned server statement; review date and access scope."
+        }
+      ],
+      "reason": "Provisional; check date, ownership and access scope."
+    },
+    "composio_toolkit": {
+      "value": "listed",
+      "status": "provisional",
+      "sources": [
+        "https://docs.composio.dev/toolkits/close"
+      ],
+      "evidence": [],
+      "reason": "Catalog match only; not vendor MCP evidence."
+    },
+    "verdict": {
+      "value": "gated_build_candidate",
+      "status": "provisional",
+      "sources": [
+        "https://developer.close.com/api/overview/api-key-authentication",
+        "https://developer.close.com/mcp/",
+        "https://help.close.com/integrations/close-mcp-server",
+        "https://close.com/changelog/access-levels-and-admin-controls-for-api-keys",
+        "https://developer.close.com/mcp",
+        "https://developer.close.com/api/overview",
+        "https://help.close.com/integrations/api-keys-oauth",
+        "https://developer.close.com/integrations"
+      ],
+      "evidence": [],
+      "reason": "Inferred only from extracted auth, API and access evidence; independent review required."
+    }
+  },
+  "validation": [
+    "Automatic extraction is provisional until independently reviewed",
+    "Unknown is not evidence of absence",
+    "Composio evidence cannot establish vendor MCP",
+    "Client-only and negated MCP statements are not vendor-server proof",
+    "API breadth is a text-coverage heuristic, not an endpoint census"
+  ]
+}

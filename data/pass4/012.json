@@ -1,0 +1,195 @@
+{
+  "app": {
+    "number": 12,
+    "name": "Intercom",
+    "category": "Support and Helpdesk",
+    "hint": "intercom.com"
+  },
+  "checked_at": "2026-11-23T18:14:55.278797+00:00",
+  "prior_source": "data/pass2/012.json",
+  "search_source": "data/pass4_search/012.json",
+  "new_candidates": [
+    {
+      "url": "https://developers.intercom.com/docs/references/introduction",
+      "title": "Introduction | Intercom and Fin Developer Platform (https://developers.intercom.com/docs/references/introduction)",
+      "published_label": null
+    },
+    {
+      "url": "https://developers.intercom.com/docs/build-an-integration/learn-more/rest-apis",
+      "title": "About our REST API | Intercom and Fin Developer Platform (https://developers.intercom.com/docs/build-an-integration/learn-more/rest-apis)",
+      "published_label": null
+    },
+    {
+      "url": "https://developers.intercom.com/docs/references/rest-api/api.intercom.io",
+      "title": "Intercom API | Intercom and Fin Developer Platform (https://developers.intercom.com/docs/references/rest-api/api.intercom.io)",
+      "published_label": null
+    },
+    {
+      "url": "https://developers.intercom.com/docs/build-an-integration/learn-more/rest-apis/api-changelog",
+      "title": "About the API Changelogs | Intercom and Fin Developer Platform (https://developers.intercom.com/docs/build-an-integration/learn-more/rest-apis/api-changelog)",
+      "published_label": null
+    },
+    {
+      "url": "https://developers.intercom.com/docs/build-an-integration/learn-more/rest-apis/sdks-plugins",
+      "title": "SDKs and Developer Tools | Intercom and Fin Developer Platform (https://developers.intercom.com/docs/build-an-integration/learn-more/rest-apis/sdks-plugins)",
+      "published_label": null
+    },
+    {
+      "url": "https://developers.intercom.com/docs/references/2.11/rest-api/api.intercom.io",
+      "title": "Intercom API | Intercom and Fin Developer Platform (https://developers.intercom.com/docs/references/2.11/rest-api/api.intercom.io)",
+      "published_label": null
+    },
+    {
+      "url": "https://developers.intercom.com/docs/build-an-integration/getting-started",
+      "title": "Set up a Workspace | Intercom and Fin Developer Platform (https://developers.intercom.com/docs/build-an-integration/getting-started)",
+      "published_label": null
+    }
+  ],
+  "selected": [
+    {
+      "url": "https://developers.intercom.com/docs/references/introduction",
+      "title": "Introduction | Intercom and Fin Developer Platform (https://developers.intercom.com/docs/references/introduction)",
+      "published_label": null
+    }
+  ],
+  "new_pages": [
+    {
+      "url": "https://developers.intercom.com/docs/references/introduction",
+      "requested_url": "https://developers.intercom.com/docs/references/introduction",
+      "status": 200,
+      "title": "Introduction | Intercom and Fin Developer Platform (https://developers.intercom.com/docs/references/introduction)",
+      "text": "Introduction | Intercom and Fin Developer Platform Skip to content Version v2.18 Get Started Overview Set up a Workspace Authentication Build an App Build a Messenger App Build an App using Sheets Build an Inbox App Developer Guides Messenger Inbox Contacts Tickets Help Center Reporting Using the APIs Webhooks Fin Agent API News Center Domains Model Context Protocol (MCP) References Object Model REST API Reference Introduction Changelog (2.18) Intercom API Admins AI Content Articles Audiences Auth Tokens Away Status Reasons Banners Brands Calls Companies Contacts Content Content Snippets Conversations Conversations Attributes Custom Object Instances Data Attributes Data Connectors Data Events Data Export Ecommerce Connectors Dynamic Content Emails Fin Agent Folders Help Center Internal Articles IP Allowlist Jobs Macros Messages News Notes Office Hours Reporting Data Export Roles Segments Subscription Types Switch Tags Teams Ticket States Ticket Type Attributes Ticket Types Tickets Visitors WhatsApp Workflows Models Errors Canvas Kit Reference Webhook Topics Public Apps & App Store Configure OAuth Build and Publish Apps App Store Guidelines Home / REST API Reference Introduction Changelog (2.18) Intercom API Admins AI Content Articles Audiences Auth Tokens Away Status Reasons Banners Brands Calls Companies Contacts Content Content Snippets Conversations Conversations Attributes Custom Object Instances Data Attributes Data Connectors Data Events Data Export Ecommerce Connectors Dynamic Content Emails Fin Agent Folders Help Center Internal Articles IP Allowlist Jobs Macros Messages News Notes Office Hours Reporting Data Export Roles Segments Subscription Types Switch Tags Teams Ticket States Ticket Type Attributes Ticket Types Tickets Visitors WhatsApp Workflows Models / Introduction Introduction Copy This is documentation for version 2.18 of the REST API. All changes to version 2.18 can be viewed in the Changelog . See Unversioned changes for updates released across versions. To change your version see our versioning page . Looking to integrate Fin into your own platform? Check out the Fin Agent API guide. This API reference is auto-generated from an OpenAPI specification . It is also interactive, which means you can now make calls to Intercom API directly from the docs. If you'd like to chat with other Intercom customers who are integrating with our API, you can ask a question in the Intercom Community . For more information about Intercom products, you can visit our product documentation . AI Content Admins Articles Away Status Reasons Brands Calls Companies Contacts Conversations Data Attributes Data Events Data Export Emails Fin Agent API Help Center Internal Articles Jobs Messages News Notes Reporting Data Export Segments Subscription Types Switch Tags Teams Ticket Type Attributes Ticket Types Ticket States Tickets Visitors Models Errors Was this page helpful? Object Model Previous page Changelog (2.18) Next page",
+      "published_label": null
+    }
+  ],
+  "claims": {
+    "auth": {
+      "value": [
+        "API key"
+      ],
+      "sources": [
+        "https://developers.intercom.com/docs/references/preview/rest-api/api.intercom.io/auth-tokens"
+      ],
+      "evidence": [
+        {
+          "value": "API key",
+          "url": "https://developers.intercom.com/docs/references/preview/rest-api/api.intercom.io/auth-tokens",
+          "excerpt": "45\" name string or null The name given to the credential when it was created. Example : \"Fulfilment API key\" description string or null An optional description of what the credential is used for. Example : \"Used by the order status connector\" token_type string or null How the credential",
+          "published_label": null
+        }
+      ],
+      "reason": "Provisional extraction: validate scope and completeness against the cited page."
+    },
+    "credential_gate": {
+      "value": [
+        "approval required"
+      ],
+      "sources": [
+        "https://developers.intercom.com/docs"
+      ],
+      "evidence": [
+        {
+          "value": "approval required",
+          "url": "https://developers.intercom.com/docs",
+          "excerpt": "ld specifically for your Intercom workspace that only access your own data. You can build a private app using your Access Token and it does not require a review. Install apps from the App Store Your team probably needs to integrate with other tools; we might have an app for it. Install connectors to tools you already use, like: Slack Stri",
+          "published_label": null
+        }
+      ],
+      "reason": "Provisional extraction: validate scope and completeness against the cited page."
+    },
+    "api_surface": {
+      "value": [
+        "REST"
+      ],
+      "sources": [
+        "https://developers.intercom.com/docs/build-an-integration/learn-more/authentication",
+        "https://developers.intercom.com/docs/references/preview/rest-api/api.intercom.io/auth-tokens",
+        "https://developers.intercom.com/docs/guides/mcp",
+        "https://developers.intercom.com/docs",
+        "https://developers.intercom.com/docs/references/introduction"
+      ],
+      "evidence": [
+        {
+          "value": "REST",
+          "url": "https://developers.intercom.com/docs/build-an-integration/learn-more/authentication",
+          "excerpt": "PIs Webhooks Fin Agent API News Center Domains Model Context Protocol (MCP) References Object Model REST API Reference Canvas Kit Reference Webhook Topics Public Apps & App Store Configure OAuth Build and Publish Apps App Store Guidelines Home / Authentication Authentication Copy To acce",
+          "published_label": null
+        },
+        {
+          "value": "REST",
+          "url": "https://developers.intercom.com/docs/references/preview/rest-api/api.intercom.io/auth-tokens",
+          "excerpt": "PIs Webhooks Fin Agent API News Center Domains Model Context Protocol (MCP) References Object Model REST API Reference Preview Introduction Changelog (Preview) Intercom API Admins AI Content Articles Away Status Reasons Audiences Auth Tokens Auth Token schema Create Auth Token Request sc",
+          "published_label": null
+        },
+        {
+          "value": "REST",
+          "url": "https://developers.intercom.com/docs/guides/mcp",
+          "excerpt": "PIs Webhooks Fin Agent API News Center Domains Model Context Protocol (MCP) References Object Model REST API Reference Canvas Kit Reference Webhook Topics Public Apps & App Store Configure OAuth Build and Publish Apps App Store Guidelines Home / Model Context Protocol (M... Model Context",
+          "published_label": null
+        },
+        {
+          "value": "REST",
+          "url": "https://developers.intercom.com/docs",
+          "excerpt": "PIs Webhooks Fin Agent API News Center Domains Model Context Protocol (MCP) References Object Model REST API Reference Canvas Kit Reference Webhook Topics Public Apps & App Store Configure OAuth Build and Publish Apps App Store Guidelines Home / Overview Overview Copy The Intercom Develo",
+          "published_label": null
+        },
+        {
+          "value": "REST",
+          "url": "https://developers.intercom.com/docs/references/introduction",
+          "excerpt": "PIs Webhooks Fin Agent API News Center Domains Model Context Protocol (MCP) References Object Model REST API Reference Introduction Changelog (2.18) Intercom API Admins AI Content Articles Audiences Auth Tokens Away Status Reasons Banners Brands Calls Companies Contacts Content Content S",
+          "published_label": null
+        }
+      ],
+      "reason": "Provisional extraction: validate scope and completeness against the cited page."
+    },
+    "official_mcp": {
+      "value": "yes (provisional)",
+      "sources": [
+        "https://developers.intercom.com/docs/guides/mcp",
+        "https://www.intercom.com/help/en/articles/11461635-add-mcp-connectors-for-popular-apps-or-custom-mcps"
+      ],
+      "evidence": [
+        {
+          "value": "yes (provisional)",
+          "url": "https://developers.intercom.com/docs/guides/mcp",
+          "excerpt": " and interact with your Intercom data whenever helpful. Region availability The Intercom MCP server is available for US and EU hosted workspaces. AU hosted workspaces are not yet supported. Connect using the endpoint that matches your workspace's hosted regio",
+          "published_label": null,
+          "context_warning": "Review vendor ownership, dates, and scope."
+        },
+        {
+          "value": "yes (provisional)",
+          "url": "https://www.intercom.com/help/en/articles/11461635-add-mcp-connectors-for-popular-apps-or-custom-mcps",
+          "excerpt": "cation Settings page in Intercom. Once authorized, you'll be redirected back to Intercom. The connected MCP server will now appear in your list of data connectors, usually with \"(0)\" indicating no tools have been added yet (e.g., \"Linear (0)\") 2. Connect a Custom MCP server",
+          "published_label": null,
+          "context_warning": "Review vendor ownership, dates, and scope."
+        }
+      ],
+      "reason": "Provisional; check source date, scope, and vendor ownership."
+    },
+    "composio_toolkit": {
+      "value": "listed",
+      "sources": [
+        "https://docs.composio.dev/toolkits/intercom"
+      ],
+      "evidence": [],
+      "reason": "Catalog match; scope needs review."
+    },
+    "verdict": {
+      "value": "provisional: investigate documented access condition",
+      "sources": [
+        "https://developers.intercom.com/docs",
+        "https://developers.intercom.com/docs/build-an-integration/learn-more/authentication",
+        "https://developers.intercom.com/docs/references/preview/rest-api/api.intercom.io/auth-tokens",
+        "https://developers.intercom.com/docs/guides/mcp",
+        "https://developers.intercom.com/docs/references/introduction"
+      ],
+      "evidence": [],
+      "reason": "Do not promote this inference without claim-specific review."
+    }
+  },
+  "validation": [
+    "All claims are provisional",
+    "No vendor MCP inference from Composio catalog",
+    "Negated MCP or client-only source is not counted as vendor-server proof"
+  ]
+}

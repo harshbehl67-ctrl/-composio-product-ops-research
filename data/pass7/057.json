@@ -1,0 +1,107 @@
+{
+  "app": {
+    "number": 57,
+    "name": "Bright Data",
+    "category": "Data, SEO and Scraping",
+    "hint": "brightdata.com"
+  },
+  "replayed_at": "2026-11-23T18:19:19.298702+00:00",
+  "source_passes": [
+    "data/pass2/057.json",
+    "data/pass4/057.json"
+  ],
+  "source_search": "data/new_search/057.json",
+  "publication_date_note": "Published labels are retained exactly as supplied by search; missing labels are null. Relative labels must not be treated as exact publication dates.",
+  "claims": {
+    "auth": {
+      "value": "unknown",
+      "sources": [],
+      "evidence": [],
+      "reason": "No sufficiently specific positive evidence extracted; review targeted search results."
+    },
+    "credential_gate": {
+      "value": "unknown",
+      "sources": [],
+      "evidence": [],
+      "reason": "No sufficiently specific positive evidence extracted; review targeted search results."
+    },
+    "api_surface": {
+      "value": [
+        "REST"
+      ],
+      "sources": [
+        "https://brightdata.com/blog/ai/bright-data-openapi-specs"
+      ],
+      "evidence": [
+        {
+          "value": "REST",
+          "url": "https://brightdata.com/blog/ai/bright-data-openapi-specs",
+          "excerpt": "Specification? The OpenAPI Specification (OAS) is a language-agnostic, open standard for describing RESTful APIs. It provides a structured, machine-readable format (typically YAML or JSON) to define an API’s operations, parameters, responses, security schemes, and other characteristics. Expl",
+          "published_label": null
+        }
+      ],
+      "reason": "Provisional extraction: validate scope and completeness against the cited page."
+    },
+    "official_mcp": {
+      "value": "yes (provisional)",
+      "sources": [
+        "https://docs.brightdata.com/products/mcp-server/overview",
+        "https://brightdata.com/pricing/mcp-server",
+        "https://brightdata.com/ai/mcp-server",
+        "https://brightdata.com/blog/ai/warp-cli-with-web-mcp"
+      ],
+      "evidence": [
+        {
+          "value": "yes (provisional)",
+          "url": "https://docs.brightdata.com/products/mcp-server/overview",
+          "excerpt": "nfrastructure you’re reading about right now (up to $20K value). Learn more The Bright Data MCP server gives AI agents and assistants real-time access to public web data through the Model Context Protocol (MCP). Connect it to Claude, Cursor or any MCP-compatible",
+          "published_label": null,
+          "context_warning": "Review vendor ownership, dates, and scope."
+        },
+        {
+          "value": "yes (provisional)",
+          "url": "https://brightdata.com/pricing/mcp-server",
+          "excerpt": "especting requests to exercise privacy rights and more. MCP Pricing FAQ What is Bright Data MCP Server? Bright Data MCP (Model Context Protocol) is a server that enables LLMs, AI agents, and applications to access, discover, and extract web data in real-time. It",
+          "published_label": null,
+          "context_warning": "Review vendor ownership, dates, and scope."
+        },
+        {
+          "value": "yes (provisional)",
+          "url": "https://brightdata.com/ai/mcp-server",
+          "excerpt": "The Bright Data MCP Server - Start with a Free Plan Accessibility Menu skip to content NEW! Start with Bright Data's Web MCP and get 5,000\n               free monthly requests Start free",
+          "published_label": null,
+          "context_warning": "Review vendor ownership, dates, and scope."
+        },
+        {
+          "value": "yes (provisional)",
+          "url": "https://brightdata.com/blog/ai/warp-cli-with-web-mcp",
+          "excerpt": "How to Connect Warp CLI with Bright Data’s Web MCP Server Accessibility Menu skip to content NEW! Start with Bright Data's Web MCP and get 5,000\n               free monthly requests Start free Blog / AI AI Warp CLI wi",
+          "published_label": null,
+          "context_warning": "Review vendor ownership, dates, and scope."
+        }
+      ],
+      "reason": "Provisional; check source date, scope, and vendor ownership."
+    },
+    "composio_toolkit": {
+      "value": "listed",
+      "sources": [
+        "https://docs.composio.dev/toolkits/brightdata"
+      ],
+      "evidence": [],
+      "reason": "Catalog match; scope needs review."
+    },
+    "verdict": {
+      "value": "unknown",
+      "sources": [],
+      "evidence": [],
+      "reason": "A supported access path, authentication method and API surface were not all extracted."
+    }
+  },
+  "validation": [
+    "Automatic extraction is provisional and not a verified final claim",
+    "Unknown is not evidence of absence",
+    "No Composio-to-vendor-MCP inference",
+    "Basic authentication may be endpoint-specific",
+    "Client-only and negated statements are not positive MCP evidence"
+  ]
+}

@@ -1,0 +1,147 @@
+{
+  "app": {
+    "number": 2,
+    "name": "HubSpot",
+    "category": "CRM and Sales",
+    "hint": "hubspot.com"
+  },
+  "replayed_at": "2026-11-23T18:16:35.917224+00:00",
+  "source_passes": [
+    "data/pass2/002.json",
+    "data/pass4/002.json"
+  ],
+  "source_search": "data/new_search/002.json",
+  "publication_date_note": "Published labels are retained exactly as supplied by search; missing labels are null. Relative labels must not be treated as exact publication dates.",
+  "claims": {
+    "auth": {
+      "value": [
+        "OAuth 2.0",
+        "API key",
+        "API token",
+        "Bearer token"
+      ],
+      "sources": [
+        "https://developers.hubspot.com/changelog/new-oauth-v3-api-endpoints-and-standardized-error-responses",
+        "https://developers.hubspot.com/blog/hubspot-service-keys-the-right-api-credential-for-data-integrations",
+        "https://community.hubspot.com/t/new-oauth-v3-api-endpoints-and-standardized-error-responses/145422"
+      ],
+      "evidence": [
+        {
+          "value": "OAuth 2.0",
+          "url": "https://developers.hubspot.com/changelog/new-oauth-v3-api-endpoints-and-standardized-error-responses",
+          "excerpt": " and updated error response formatting. What's Changing? New Oauth v3 Token Endpoints To align with OAuth 2.0 security best practices, we have introduced two new v3 OAuth API endpoints designed to keep sensitive credentials out of server logs and browser histories. POST /v3/token: Handles",
+          "published_label": "10 months ago"
+        },
+        {
+          "value": "API key",
+          "url": "https://developers.hubspot.com/blog/hubspot-service-keys-the-right-api-credential-for-data-integrations",
+          "excerpt": "→ Service Keys → create a key, name it, add scopes,  copy/paste it, and use it as a Bearer token or API key. What you gain compared to legacy private apps: Rotation without disruption. You can rotate a Service Key without rebuilding the integration from scratch. Audit logging. Last-used",
+          "published_label": "6 months ago"
+        },
+        {
+          "value": "API token",
+          "url": "https://developers.hubspot.com/blog/hubspot-service-keys-the-right-api-credential-for-data-integrations",
+          "excerpt": "hin a new Environment . In a BI tool or data connector, paste the key wherever the tool asks for an API token or authorization credential. Most tools that connect to HubSpot via API will have a “Bearer token” or “API key” field in their connection settings. In a Python or Node script, you",
+          "published_label": "6 months ago"
+        },
+        {
+          "value": "Bearer token",
+          "url": "https://developers.hubspot.com/blog/hubspot-service-keys-the-right-api-credential-for-data-integrations",
+          "excerpt": "nd managed in your HubSpot Settings, where you can define the scopes, copy the key, and use it as a Bearer token in whatever client you’re working on - that’s it! Who Service Keys are for and who they’re not for Service Keys are a good fit when: You’re connecting HubSpot to a data warehouse ",
+          "published_label": "6 months ago"
+        },
+        {
+          "value": "OAuth 2.0",
+          "url": "https://community.hubspot.com/t/new-oauth-v3-api-endpoints-and-standardized-error-responses/145422",
+          "excerpt": " and updated error response formatting. What’s Changing? New Oauth v3 Token Endpoints To align with OAuth 2.0 security best practices, we have introduced two new v3 OAuth API endpoints designed to keep sensitive credentials out of server logs and browser histories. POST /v3/token: Handles",
+          "published_label": "10 months ago"
+        }
+      ],
+      "reason": "Provisional extraction: validate scope and completeness against the cited page."
+    },
+    "credential_gate": {
+      "value": [
+        "free or trial developer credential path"
+      ],
+      "sources": [
+        "https://developers.hubspot.com/blog/harnessing-the-power-of-hubspots-public-apis-with-postman"
+      ],
+      "evidence": [
+        {
+          "value": "free or trial developer credential path",
+          "url": "https://developers.hubspot.com/blog/harnessing-the-power-of-hubspots-public-apis-with-postman",
+          "excerpt": "ubSpot developer test account. Need a HubSpot account? Create a test account after signing up for a free developer account . A HubSpot app associated with your HubSpot account (the app can be either public or private ). Please note that you must be a Super Admin to install a public app in a HubSpot account or create a private app. If you’re unsure which app to u",
+          "published_label": "3.0 years ago"
+        }
+      ],
+      "reason": "Provisional extraction: validate scope and completeness against the cited page."
+    },
+    "api_surface": {
+      "value": "unknown",
+      "sources": [],
+      "evidence": [],
+      "reason": "No sufficiently specific positive evidence extracted; review targeted search results."
+    },
+    "official_mcp": {
+      "value": "yes (provisional)",
+      "sources": [
+        "https://developers.hubspot.com/changelog/remote-hubspot-mcp-server-is-now-generally-available",
+        "https://developers.hubspot.com/docs/apps/developer-platform/build-apps/integrate-with-the-remote-hubspot-mcp-server",
+        "https://developers.hubspot.com/ai-tools/mcp?faq=5",
+        "https://community.hubspot.com/t/remote-hubspot-mcp-server-is-now-generally-available/148286"
+      ],
+      "evidence": [
+        {
+          "value": "yes (provisional)",
+          "url": "https://developers.hubspot.com/changelog/remote-hubspot-mcp-server-is-now-generally-available",
+          "excerpt": "Remote HubSpot MCP server is now generally available Skip to main content Skip to footer HubSpot Developer Changelog Home › HubSpot Developer Changelog › Remote HubSpot MCP server is no",
+          "published_label": "7 months ago",
+          "context_warning": "Review vendor ownership, dates, and scope."
+        },
+        {
+          "value": "yes (provisional)",
+          "url": "https://developers.hubspot.com/docs/apps/developer-platform/build-apps/integrate-with-the-remote-hubspot-mcp-server",
+          "excerpt": "Integrate AI tools with the HubSpot MCP server - HubSpot docs Documentation Index Fetch the complete documentation index at: /docs/llms.txt Use this file to discover all available pages before exploring fur",
+          "published_label": "7 months ago",
+          "context_warning": "Review vendor ownership, dates, and scope."
+        },
+        {
+          "value": "yes (provisional)",
+          "url": "https://developers.hubspot.com/ai-tools/mcp?faq=5",
+          "excerpt": "HubSpot MCP Server Skip to main content Skip to footer Enable your agents and dev tools to  interact with HubSpot. HubSpot offers two distinct MCP (Model Context Protocol) server",
+          "published_label": null,
+          "context_warning": "Review vendor ownership, dates, and scope."
+        },
+        {
+          "value": "yes (provisional)",
+          "url": "https://community.hubspot.com/t/remote-hubspot-mcp-server-is-now-generally-available/148286",
+          "excerpt": "Remote HubSpot MCP server is now generally available - Developer Announcements - HubSpot Community Remote HubSpot MCP server is now generally available Develop, Build & Integrate Develo",
+          "published_label": "7 months ago",
+          "context_warning": "Review vendor ownership, dates, and scope."
+        }
+      ],
+      "reason": "Provisional; check source date, scope, and vendor ownership."
+    },
+    "composio_toolkit": {
+      "value": "listed",
+      "sources": [
+        "https://docs.composio.dev/toolkits/hubspot"
+      ],
+      "evidence": [],
+      "reason": "Catalog match; scope needs review."
+    },
+    "verdict": {
+      "value": "unknown",
+      "sources": [],
+      "evidence": [],
+      "reason": "A supported access path, authentication method and API surface were not all extracted."
+    }
+  },
+  "validation": [
+    "Automatic extraction is provisional and not a verified final claim",
+    "Unknown is not evidence of absence",
+    "No Composio-to-vendor-MCP inference",
+    "Basic authentication may be endpoint-specific",
+    "Client-only and negated statements are not positive MCP evidence"
+  ]
+}

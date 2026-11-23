@@ -1,0 +1,176 @@
+{
+  "app": {
+    "number": 65,
+    "name": "Supabase",
+    "category": "Developer, Infra and Data platforms",
+    "hint": "supabase.com/docs"
+  },
+  "replayed_at": "2026-11-23T18:41:36.325759+00:00",
+  "source_passes": [
+    "data/pass2/065.json",
+    "data/pass4/065.json"
+  ],
+  "source_searches": [
+    "data/new_search/065.json",
+    "data/pass4_search/065.json"
+  ],
+  "publication_date_note": "Search publication labels are retained exactly; null means no label was available. Relative labels are not exact dates.",
+  "claims": {
+    "auth": {
+      "value": [
+        "API key",
+        "OAuth 2.0"
+      ],
+      "status": "provisional",
+      "sources": [
+        "https://supabase.com/docs/guides/functions/auth-headers",
+        "https://supabase.com/docs/guides/getting-started/api-keys",
+        "https://supabase.com/docs/guides/ai-tools/byo-mcp",
+        "https://supabase.com/docs/guides/ai-tools/mcp?client=windsurf",
+        "https://supabase.com/docs/guides/auth",
+        "https://supabase.com/docs/guides/api",
+        "https://supabase.com/docs/guides/platform/access-control"
+      ],
+      "evidence": [
+        {
+          "value": "API key",
+          "url": "https://supabase.com/docs/guides/functions/auth-headers",
+          "excerpt": "Auth apikey sb_publishable_... or sb_secret_... Calls from clients or services Don't send API keys as bearer tokens A common mistake is sending a publishable or secret key as a bearer token: Authorization: Bearer sb_publishable_... . The new API keys are not JWTs. Th",
+          "published_label": "today"
+        },
+        {
+          "value": "API key",
+          "url": "https://supabase.com/docs/guides/getting-started/api-keys",
+          "excerpt": "API keys | Supabase Docs Skip to content Updated Nov 18, 2026 Every request to your Supabase project carries an API key. The key identifies what is calling your project: a web p",
+          "published_label": "today"
+        },
+        {
+          "value": "OAuth 2.0",
+          "url": "https://supabase.com/docs/guides/ai-tools/byo-mcp",
+          "excerpt": "Deploy MCP servers | Supabase Docs Skip to content Updated Nov 20, 2026 Build and deploy Model Context Protocol (MCP) servers on Supabase using Edge Functions . MCP clients such as Claude, ChatGPT, Cursor, or VS Code call the tools you define. This guide has two parts. Deploy a p",
+          "published_label": "2 days ago"
+        },
+        {
+          "value": "API key",
+          "url": "https://supabase.com/docs/guides/ai-tools/mcp?client=windsurf",
+          "excerpt": "rl - Get the API URL for a project get_publishable_keys - Get publishable and legacy anon API keys for a project generate_typescript_types - Generate TypeScript types from schema Edge Functions list_edge_functions - List all Edge Functions get_edge_function - Get a s",
+          "published_label": "last week"
+        },
+        {
+          "value": "OAuth 2.0",
+          "url": "https://supabase.com/docs/guides/auth",
+          "excerpt": "Auth | Supabase Docs Skip to content Updated Nov 11, 2026 Supabase Auth makes it easy to implement authentication and authorization in your app. We provide client SDKs, API endpoints, and pre-built web UI components to help you create and manage users. Your users can use many pop",
+          "published_label": "3 days ago"
+        },
+        {
+          "value": "API key",
+          "url": "https://supabase.com/docs/guides/api",
+          "excerpt": "ind the API URL in the Integrations > Data API section of the Dashboard. You can find the API Keys in the Settings > API Keys section of the Dashboard. Features Supabase provides a RESTful API using PostgREST , a thin API layer on top of Postgres.\nIt exposes everythi",
+          "published_label": "today"
+        },
+        {
+          "value": "API key",
+          "url": "https://supabase.com/docs/guides/platform/access-control",
+          "excerpt": "Update Network Restrictions View Create Delete Network Bans View Unban API Configuration API Keys Read service key Read anon key JWT Secret View Generate new API settings View Update Auth Configuration Auth Settings View Update SMTP Settings View Update Advanced Set",
+          "published_label": "2 weeks ago"
+        }
+      ],
+      "reason": "Provisional extraction; validate scope and completeness against cited pages."
+    },
+    "credential_gate": {
+      "value": [
+        "paid_plan"
+      ],
+      "status": "provisional",
+      "sources": [
+        "https://supabase.com/docs/guides/ai-tools/mcp?client=windsurf"
+      ],
+      "evidence": [
+        {
+          "value": "paid_plan",
+          "url": "https://supabase.com/docs/guides/ai-tools/mcp?client=windsurf",
+          "excerpt": "flow Docs search_docs - Search Supabase documentation Branching (experimental) Requires a paid plan. create_branch / list_branches / delete_branch - Branch management merge_branch / reset_branch / rebase_branch - Branch operations Feedback Disabled in read-only mode (",
+          "published_label": "last week"
+        }
+      ],
+      "reason": "Provisional extraction; validate scope and completeness against cited pages."
+    },
+    "api_surface": {
+      "value": "REST; moderate documented surface",
+      "status": "provisional",
+      "sources": [
+        "https://supabase.com/docs/guides/auth",
+        "https://supabase.com/docs/guides/api"
+      ],
+      "evidence": [
+        {
+          "value": [
+            "REST"
+          ],
+          "breadth": "moderate",
+          "url": "https://supabase.com/docs/guides/auth",
+          "excerpt": "Auth | Supabase Docs Skip to content Updated Nov 11, 2026 Supabase Auth makes it easy to implement authentication and authorization in your app. We provide client SDKs, API endpoints, and pre-built web UI components to help you create and manage users. Your users can use many pop",
+          "published_label": "3 days ago"
+        },
+        {
+          "value": [
+            "REST"
+          ],
+          "breadth": "narrow",
+          "url": "https://supabase.com/docs/guides/api",
+          "excerpt": "Data REST API | Supabase Docs Skip to content Updated Nov 18, 2026 Supabase auto-generates an API directly from your database schema allowing you to connect to your database through a restful interface, directly from the browser. The API is auto-generated from your database and i",
+          "published_label": "today"
+        }
+      ],
+      "reason": "Provisional extraction; validate scope and completeness against cited pages."
+    },
+    "official_mcp": {
+      "value": "vendor_server",
+      "status": "provisional",
+      "sources": [
+        "https://supabase.com/docs/guides/ai-tools/mcp?client=windsurf"
+      ],
+      "evidence": [
+        {
+          "value": "vendor_server",
+          "url": "https://supabase.com/docs/guides/ai-tools/mcp?client=windsurf",
+          "excerpt": "n be combined: https://mcp.supabase.com/mcp ?project_ref=abc123&read_only=true When using Supabase CLI for local development, the MCP server is available at http://localhost:54321/mcp . With the experimental [experimental] stack setting on, local projects use assigned ports instead, so read the MCP URL from the output of",
+          "published_label": "last week",
+          "context_note": "Vendor-owned server statement; review date and access scope."
+        }
+      ],
+      "reason": "Provisional; check date, ownership and access scope."
+    },
+    "composio_toolkit": {
+      "value": "listed",
+      "status": "provisional",
+      "sources": [
+        "https://docs.composio.dev/toolkits/supabase"
+      ],
+      "evidence": [],
+      "reason": "Catalog match only; not vendor MCP evidence."
+    },
+    "verdict": {
+      "value": "gated_build_candidate",
+      "status": "provisional",
+      "sources": [
+        "https://supabase.com/docs/guides/functions/auth-headers",
+        "https://supabase.com/docs/guides/getting-started/api-keys",
+        "https://supabase.com/docs/guides/ai-tools/byo-mcp",
+        "https://supabase.com/docs/guides/ai-tools/mcp?client=windsurf",
+        "https://supabase.com/docs/guides/auth",
+        "https://supabase.com/docs/guides/api",
+        "https://supabase.com/docs/guides/platform/access-control"
+      ],
+      "evidence": [],
+      "reason": "Inferred only from extracted auth, API and access evidence; independent review required."
+    }
+  },
+  "validation": [
+    "Automatic extraction is provisional until independently reviewed",
+    "Unknown is not evidence of absence",
+    "Composio evidence cannot establish vendor MCP",
+    "Client-only and negated MCP statements are not vendor-server proof",
+    "API breadth is a text-coverage heuristic, not an endpoint census"
+  ]
+}

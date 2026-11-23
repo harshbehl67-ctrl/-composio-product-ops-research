@@ -1,0 +1,206 @@
+{
+  "app": {
+    "number": 23,
+    "name": "Zoho Cliq",
+    "category": "Communications and Messaging",
+    "hint": "zoho.com/cliq"
+  },
+  "checked_at": "2026-11-23T18:14:59.742394+00:00",
+  "prior_source": "data/pass2/023.json",
+  "search_source": "data/pass4_search/023.json",
+  "new_candidates": [
+    {
+      "url": "https://www.zoho.com/cliq/integrations.html",
+      "title": "Whats new in Cliq | Zoho Cliq (https://www.zoho.com/cliq/integrations.html)",
+      "published_label": null
+    },
+    {
+      "url": "https://www.zoho.com/cliq/help/platform/getting-started-with-cliq-platform-new.html",
+      "title": "Getting Started with Zoho Cliq Developer Platform (https://www.zoho.com/cliq/help/platform/getting-started-with-cliq-platform-new.html)",
+      "published_label": null
+    },
+    {
+      "url": "https://www.zoho.com/cliq/help/platform/getting-started-with-cliq-platform.html",
+      "title": "Getting Started with Zoho Cliq Developer Platform (https://www.zoho.com/cliq/help/platform/getting-started-with-cliq-platform.html)",
+      "published_label": null
+    },
+    {
+      "url": "https://www.zoho.com/cliq/help/platform/faq.html",
+      "title": "Developers FAQ | Cliq (https://www.zoho.com/cliq/help/platform/faq.html)",
+      "published_label": null
+    },
+    {
+      "url": "https://www.zoho.com/cliq/help/restapi/v3/oascliq/",
+      "title": "OpenAPI Specification (OAS) | Zoho Cliq | API Documentation (https://www.zoho.com/cliq/help/restapi/v3/oascliq/)",
+      "published_label": null
+    },
+    {
+      "url": "https://www.zoho.com/cliq/help/restapi/v3/registerclient/",
+      "title": "Register your application | Zoho Cliq | API Documentation (https://www.zoho.com/cliq/help/restapi/v3/registerclient/)",
+      "published_label": null
+    },
+    {
+      "url": "https://www.zoho.com/cliq/developers-changelog.html",
+      "title": "Whats new in Cliq | Zoho Cliq (https://www.zoho.com/cliq/developers-changelog.html)",
+      "published_label": null
+    },
+    {
+      "url": "https://www.zoho.com/cliq/help/developers.html",
+      "title": "Help - Developer Chat Tools & Documentation | Cliq (https://www.zoho.com/cliq/help/developers.html)",
+      "published_label": null
+    },
+    {
+      "url": "https://www.zoho.com/cliq/help/restapi/v2/users/",
+      "title": "Users | Zoho Cliq | API Documentation (https://www.zoho.com/cliq/help/restapi/v2/users/)",
+      "published_label": null
+    },
+    {
+      "url": "https://www.zoho.com/cliq/help/restapi/v2/oauth/",
+      "title": "Introduction to OAuth 2.0 | Zoho Cliq | API Documentation (https://www.zoho.com/cliq/help/restapi/v2/oauth/)",
+      "published_label": null
+    }
+  ],
+  "selected": [
+    {
+      "url": "https://www.zoho.com/cliq/help/restapi/v2/oauth/",
+      "title": "Introduction to OAuth 2.0 | Zoho Cliq | API Documentation (https://www.zoho.com/cliq/help/restapi/v2/oauth/)",
+      "published_label": null
+    },
+    {
+      "url": "https://www.zoho.com/cliq/help/restapi/v3/oascliq/",
+      "title": "OpenAPI Specification (OAS) | Zoho Cliq | API Documentation (https://www.zoho.com/cliq/help/restapi/v3/oascliq/)",
+      "published_label": null
+    }
+  ],
+  "new_pages": [
+    {
+      "url": "https://www.zoho.com/cliq/help/restapi/v2/oauth/",
+      "requested_url": "https://www.zoho.com/cliq/help/restapi/v2/oauth/",
+      "status": 200,
+      "title": "Introduction to OAuth 2.0 | Zoho Cliq | API Documentation (https://www.zoho.com/cliq/help/restapi/v2/oauth/)",
+      "text": "Introduction to OAuth 2.0 | Zoho Cliq | API Documentation API Docs / No Results Found V2 V2 V3 (Latest) Resources Help Docs FAQ Developer Platform Extensions Developer Community Plans & Pricing Access Zoho Cliq Sign In API Docs Versions V2 V3 (Latest) Resources Help Docs FAQ Developer Platform Extensions Developer Community Plans & Pricing Access Zoho Cliq Sign In Introduction to OAuth 2.0 Introduction Overview Authentication Networks Multiple Data Centers Authentication Introduction to OAuth 2.0 Overview Terminologies Scopes Register your application Overview API Reference HTTP Methods Overview Pagination Overview Token Reference Errors Overview Glossary Overview CHAT_ID MESSAGE_ID THREAD_CHAT_ID SCHEDULED_MESSAGE_ID FILE_ID CHANNEL_ID CHANNEL_UNIQUE_NAME REMINDER_ID EVENT_ID BOT_UNIQUE_NAME BOT_ID SLASH_COMMAND_ID MESSAGE_ACTION_ID EXTENSION_ID EXTENSION_KEY EXTENSION_PROPERTY_KEY_NAME FUNCTION_ID WIDGET_ID MAP_ID DATASTORE_ID DATABASE_UNIQUE_NAME RECORD_ID USER_ID EMAIL_ID STATUS_ID USER_FIELD_ID DEPARTMENT_ID DESIGNATION_ID TEAM_ID ROLE_ID OpenAPI Specification (OAS) OpenAPI Specification (OAS) Overview Why use the OAS? Swagger API Hub Download OAS Postman Collection Postman Collection Overview What's in the collection? Why use the collection? Prerequisites Using the collection Keeping your fork up to date Data center configuration User & Organization Management Users Overview Add Users Retrieve all users Update user details Retrieve a particular user Fetch list of user teams List user field layouts User Status Overview Add a new status Retrieve all statuses Add a transient status Delete transient status Retrieve current status Retrieve a user's status Update current status Delete status Userfields Overview Add a userfield Get all userfields Update a userfield Retrieve a particular userfield Delete a userfield Roles Overview Create a Role Get Roles Edit a Role Retrieve role details Delete a Role Update permissions of a role Get permissions of a role Add users to a role Get users in a role Delete users from a role Departments Overview Create a Department List all Departments Update Department Get Department Details Delete Department Add Department Members Get Department Members Delete Department Members Designations Overview Create a Designation List all Designations Update Designation Get Designation Details Delete Designation Add Designation Members Get Designation Members Delete Designation Members Teams Overview Create a Team List all Teams Update a Team Retrieve a Team Delete a Team Add Team Members Get Team Members Delete Team Members Communication & Collaboration Chats Overview Retrieve all direct chats Retrieve the members of a chat Mute a chat Unmute a chat Pin a message Retrieve a pinned message Unpin a message Leave a group chat Messages Overview Get Messages Post message in a channel with CHANNEL_UNIQUE_NAME Post message in a channel with CHANNEL_ID Post message to a channel as bot Post message to a bot Post message in chat Post message to a user with EMAIL_ID Post message to a user with ZUID Edit a message Retrieve a message Delete a message Add a reaction Get Reactions Delete a reaction Threads Overview Create and send a thread message Send a message to an existing thread Get threads of a channel Auto follow Add followers to a thread Get thread followers Remove followers from a thread Get non-followers of a thread Join (follow) a thread Leave (unfollow) a thread Update the state of a thread Get main message of a thread Channels Overview Create a channel List all channels Update a channel Retrieve a channel Delete a channel Add Channel Members Get Channel Members Delete Channel Members Add a Bot to a Channel Update a channel member's role Approve a Channel Reject a Channel Join a Channel Leave a Channel Archive a Channel Unarchive a Channel Scheduled Messages Overview Send a scheduled message Get the list of scheduled messages Update a scheduled message Reminders Overview Create a reminder Get list of all reminders Update a reminder Retrieve a reminder Delete a reminder Delete Reminders Delete completed reminders Mark a reminder as complete Mark a reminder as incomplete Snooze a reminder Dismiss a snoozed reminder Assign users to a reminder Unassign a user from a reminder Remind assignee Remind assignees Message Components Message Content Overview Plain text Table List Label Image Charts Graphs Mentions Overview Mentioning a User Silent mentions Mentioning a Channel Mentioning all users in a channel Mentioning available users in a Channel Mentioning a Team Buttons Overview Message card buttons Confirmation popup Instant buttons Message Cards Overview Post a Message Card to a Channel Post a Message Card to a User Post a Message Card to a Chat Meetings & Events Calls & Meetings Overview History Get Participants Events Overview Get Calendars Create an Event Get Events Edit an Event Get Event Details Delete an Event Update an Event Status Upload Attachments to Event Calendar Remote Work Remote Work Overview Get remote status Trigger Remote Check in Trigger Remote Check out Developer Platform Bots Overview Retrieve Bot Subscribers Trigger Bot Calls Icons Databases Overview Add a record List records Update a record Retrieve a record Delete a record Widget Map Tickers Overview Add/Update a ticker Delete tickers File and Data Management Files Overview Get Files Share files to a channel Share files to a bot Share files in a chat Share files to a user Maintenance - Bulk Export Overview Export Conversations Export Channels Export Members in a Conversation Export Messages Customization Custom Domain Overview Add a custom domain Verify a custom domain Retrieve a custom domain Delete a custom domain Custom Email Overview Update mail configuration Retrieve global mail configuration Reset mail configuration Custom Themes Overview Create custom theme Get all themes Update custom theme Get specific theme Delete custom theme OAuth 2.0 workflow AI Tools Open in ChatGPT Open in ChatGPT to ask questions about this page Open in Claude Open in Claude to ask questions about this page Copy as Markdown Copy this page as markdown to use with AI assistants View as Markdown Open this page as markdown in a new tab Step 1: Register your app and get OAuth credentials The first step in using OAuth authentication is registering your app with the Zoho API console . Once you register your client, you will get a Client ID and Client secret for your application. This Client ID and Client secret are used to authorize your app's OAuth requests. Ensure the redirect URI used in OAuth requests exactly matches the one configured in the API Console. Note: Head to https://www.zoho.com/accounts/protocol/oauth.html to know in detail about authenticating with Zoho APIs and types of clients. Step 2: Obtain an access token An access token is an OAuth token that allows access to Zoho's protected resources. The method for generating an access token depends on the type of application. For instance, server-based applications can use the authorization code flow, while client-based applications can utilize the implicit flow. However, in all cases, the access token is provided only after the user grants permission through consent. Access tokens are always assigned specific scopes, which are outlined in the request, and these scopes will be presented to the user during the permission request process. Auth, access token, and refresh token URLs Authorization URL (get auth code): https://accounts.zoho.{dc}/oauth/v2/auth Access token URL: https://accounts.zoho.{dc}/oauth/v2/token Refresh token URL: https://accounts.zoho.{dc}/oauth/v2/token Example (India DC): https://accounts.zoho.in/oauth/v2/token Generate auth code (required once) GET https://accounts.zoho.{dc}/oauth/v2/auth \\\n  ?scope=ZohoCliq.Channels.READ \\\n  &client_id={client_id} \\\n  &response_type=code \\\n    &state={csrf_token} \\\n  &access_type=offline \\\n  &prompt=consent \\\n  &redirect_uri={redirect_uri} Use a unique state value per authorization request and validate the same value in the callback response to prevent CSRF attacks. Generate access token + refresh token curl --request POST \\\n  --url 'https://accounts.zoho.{dc}/oauth/v2/token' \\\n  --data 'grant_type=authorization_code' \\\n  --data 'client_id={client_id}' \\\n  --data 'client_secret={client_secret}' \\\n  --data 'redirect_uri={redirect_uri}' \\\n  --data 'code={authorization_code}' Response fields to store: access_token , refresh_token , expires_in , api_domain . Use api_domain when constructing Zoho service API requests. Step 3: Access the resource using the access token After your app has the access token, it can access Zoho's protected resources. Upon providing the access token to the resource server, your app will be granted access according to the scopes defined in the request. Zoho's OAuth implementation usesÂ the Bearer authentication scheme; hence, when making API calls, the access token must be passed in theÂ AuthorizationÂ header with the prefixÂ \"Zoho-oauthtoken\". Step 4: Refresh the access token when it expires Access tokens are valid for 1 hour. Use the stored refresh token to generate a new access token. curl --request POST \\\n  --url 'https://accounts.zoho.{dc}/oauth/v2/token' \\\n  --data 'grant_type=refresh_token' \\\n  --data 'client_id={client_id}' \\\n  --data 'client_secret={client_secret}' \\\n  --data 'refresh_token={refresh_token}' Step 5: Revoke unwanted tokens If a refresh token is no longer needed or seems to be compromised, it can be revoked and rendered invalid. This is done by making an API request to https://accounts.zoho.{dc}/oauth/v2/token/revoke (endpoint path: /oauth/v2/token/revoke ). Once the revocation is successful, the refresh token can no longer be used to generate access tokens, and any existing access tokens that were created using this refresh token will also become invalid. curl --request POST \\\n  --url 'https://accounts.zoho.{dc}/oauth/v2/token/revoke' \\\n  --data 'token={refresh_token}' ð OAuth 2.0 Terminologies The following are the terms you need to know before you start using the Zoho Cliq APIs. Term Description Protected Resources A protected resource is any data or functionality within Zoho Cliq that requires authorized access. For example, when a client application needs to retrieve channel information through the Zoho Cliq API, the channels module serves as a protected resource. These resources are secured through OAuth authentication, ensuring that only authorized clients can access sensitive data and perform operations on behalf of users. Resource Server The server where the protected resources are stored, and to where the client must make API calls is called the resource server. In our case, the Zoho Cliq app which has the resource the client wants to access represents the resource server. Resource Owner Resource owner is the user who can grant permission to the client and in turn access to the protected resource of their Zoho Cliq account. Client The application that needs access to the protected resource is called the client. The client can be a server-based application, a single page JavaScript application, a mobile/desktop application, or a non-browser limited input application. The client can make API requests to the resource server after successful authorization by the authorization server on behalf of the user. Client ID A unique identifier for your application which you can receive when registering your application in the Zoho API console. Client Secret A unique secret key for your application which you can receive when registering your application in the Zoho API console. Client secret is known only between your application and Zoho, therefore, must be kept confidential. (Client secret is not needed for client-based applications and will not be provided). Authentication Server The server which grants access tokens and refresh tokens on behalf of the resource owner (i.e., the user), for the client to access protected resources is called the authorization server. In our case, Zoho Accounts is the authorization server. Authentication Code For server-based applications and mobile-based applications, access tokens cannot be generated directly. Instead, the client must first get an authorization code from the authorization server (Zoho Accounts), and then exchange it for an access token. The lifetime of authorization code is only two minutes and can be used only once. Tokens Description Access Token Access tokens are granted by the authorization server (Zoho Accounts) and are used by the client to access the protected resources. It contains information about the user and the scopes. It essentially tells the resource owner that the bearer of this token has been authorized by the user to access the protected resource as per the scope defined. The validity of an access token is 1 hour and can be used only once. Refresh Token Refresh tokens are used to generate a new access token after the old one expires. Refresh tokens are granted by the authorization server (Zoho Accounts) and can be stored by the client to generate access tokens whenever required. Note : Access tokens are sensitive and must be kept confidential because they determine your level of access to APIs. Never share your access tokens in public forums, public repositories, or in your website's client-side code, such as HTML or JavaScript. Exposing your access tokens can lead to data theft, loss, or corruption. Scopes Scope determines which protected resource of an end-user a client has requested access to. A scope has three parameters: service name, scope name, and operation type. The format to define a scope is scope = service_name.scope_name.operation_type Operation type: CREATE, READ, UPDATE, DELETE, ALL List of scopes available in Zoho : Scope Description Available Operation Types Channels Grants permission to create, read, update, and delete channels in Zoho Cliq. ZohoCliq.Channels.CREATE, ZohoCliq.Channels.READ, ZohoCliq.Channels.UPDATE, ZohoCliq.Channels.DELETE Chats Grants permission to create, read, modify, and delete chats in Zoho Cliq. ZohoCliq.Chats.CREATE, ZohoCliq.Chats.READ, ZohoCliq.Chats.UPDATE, ZohoCliq.Chats.DELETE Messages Grants permission to create, read, update, and delete messages across conversations in Zoho Cliq. ZohoCliq.Messages.CREATE, ZohoCliq.Messages.READ, ZohoCliq.Messages.UPDATE, ZohoCliq.Messages.DELETE Attachments Grants permission to read attachments shared within chats and channels. ZohoCliq.Attachments.CREATE, ZohoCliq.Attachments.READ, ZohoCliq.Attachments.UPDATE Reminders Grants permission to create, read, update, delete, and manage reminders in Zoho Cliq. ZohoCliq.Reminders.CREATE, ZohoCliq.Reminders.READ, ZohoCliq.Reminders.UPDATE, ZohoCliq.Reminders.DELETE, ZohoCliq.Reminders.ALL Bots Grants permission to read bot information configured in Zoho Cliq. ZohoCliq.Bots.CREATE, ZohoCliq.Bots.READ, ZohoCliq.Bots.UPDATE, ZohoCliq.Bots.DELETE Webhooks Grants permission to post and update messages directly to conversations using incoming webhooks. ZohoCliq.Webhooks.CREATE, ZohoCliq.Webhooks.UPDATE Message Actions Grants permission to create, read, and delete custom message actions in Zoho Cliq. ZohoCliq.messageactions.CREATE, ZohoCliq.messageactions.READ, ZohoCliq.messageactions.UPDATE, ZohoCliq.messageactions.DELETE Organization Grants permission to create roles and manage organization-level settings in Zoho Cliq. ZohoCliq.Organisation.CREATE, ZohoCliq.Organisation.READ, ZohoCliq.Organisation.UPDATE, ZohoCliq.Organisation.DELETE Teams Grants permission to create, read, update, and delete teams within Zoho Cliq. ZohoCliq.Teams.CREATE, ZohoCliq.Teams.READ, ZohoCliq.Teams.UPDATE, ZohoCliq.Teams.DELETE Departments Grants permission to create, read, update, and delete departments. ZohoCliq.Departments.CREATE, ZohoCliq.Departments.READ, ZohoCliq.Departments.UPDATE, ZohoCliq.Departments.DELETE Designations Grants permission to create, read, update, and delete designations in the organization. ZohoCliq.Designations.CREATE, ZohoCliq.Designations.READ, ZohoCliq.Designations.UPDATE, ZohoCliq.Designations.DELETE Users Grants permission to create, read, and update users in Zoho Cliq. ZohoCliq.Users.CREATE, ZohoCliq.Users.READ, ZohoCliq.Users.UPDATE User Fields Grants permission to manage custom user fields including create, update, and delete operations. ZohoCliq.UserFields.CREATE, ZohoCliq.Userfields.UPDATE, ZohoCliq.Userfields.DELETE Profile Grants permission to create, read, update, and delete user profile information. ZohoCliq.Profile.CREATE, ZohoCliq.Profile.READ, ZohoCliq.Profile.UPDATE, ZohoCliq.Profile.DELETE Storage Data Grants permission to create, read, update, and delete application database storage in Zoho Cliq. ZohoCliq.StorageData.ALL, ZohoCliq.StorageData.CREATE, ZohoCliq.StorageData.READ, ZohoCliq.StorageData.UPDATE, ZohoCliq.StorageData.DELETE Media Sessions Grants permission to read information about calls and meetings conducted in Zoho Cliq. ZohoCliq.MediaSession.READ Applications Grants permission to update and delete application configuration and metadata. ZohoCliq.Applications.UPDATE, ZohoCliq.Applications.DELETE Organization Channels Grants permission to read all channels across the organization in Zoho Cliq. ZohoCliq.OrganizationChannels.READ Organization Chats Grants permission to read all chats across the organization in Zoho Cliq. ZohoCliq.OrganizationChats.READ Organization Messages Grants permission to read all messages across the organization in Zoho Cliq. ZohoCliq.OrganizationMessages.READ Calendar Events Grants permission to create, read, update, manage, and search calendar events in Zoho Calendar. ZohoCliq.CalendarEvents.ALL, ZohoCalendar.calendar.ALL, ZohoCalendar.event.ALL, ZohoCalendar.search.READ Zoho People Grants permission to read employee forms, employee information, and manage attendance records. ZohoPeople.forms.READ, ZohoPeople.employee.READ, ZohoPeople.attendance.READ, ZohoPeople.attendance.UPDATE",
+      "published_label": null
+    },
+    {
+      "url": "https://www.zoho.com/cliq/help/restapi/v3/oascliq/",
+      "requested_url": "https://www.zoho.com/cliq/help/restapi/v3/oascliq/",
+      "status": 200,
+      "title": "OpenAPI Specification (OAS) | Zoho Cliq | API Documentation (https://www.zoho.com/cliq/help/restapi/v3/oascliq/)",
+      "text": "OpenAPI Specification (OAS) | Zoho Cliq | API Documentation API Docs / No Results Found V3 (Latest) V2 V3 (Latest) Resources Help Docs FAQ Developer Platform Extensions Developer Community Plans & Pricing Access Zoho Cliq Sign In API Docs Versions V2 V3 (Latest) Resources Help Docs FAQ Developer Platform Extensions Developer Community Plans & Pricing Access Zoho Cliq Sign In OpenAPI Specification (OAS) Introduction Overview What's new in v3 Authentication Networks Multiple Data Centers Authentication Introduction to OAuth 2.0 Overview Terminologies Scopes Register your application Overview API Reference HTTP Methods Overview Pagination Overview next_token sync_token Combining Tokens Best Practices Errors Overview Glossary Overview CHAT_ID MESSAGE_ID THREAD_CHAT_ID SCHEDULED_MESSAGE_ID FILE_ID CHANNEL_ID CHANNEL_UNIQUE_NAME REMINDER_ID EVENT_ID BOT_UNIQUE_NAME BOT_ID SLASH_COMMAND_ID MESSAGE_ACTION_ID EXTENSION_ID EXTENSION_KEY EXTENSION_PROPERTY_KEY_NAME FUNCTION_ID WIDGET_ID MAP_ID DATASTORE_ID DATABASE_UNIQUE_NAME RECORD_ID USER_ID EMAIL_ID STATUS_ID USER_FIELD_ID DEPARTMENT_ID DESIGNATION_ID TEAM_ID ROLE_ID OpenAPI Specification (OAS) OpenAPI Specification (OAS) Overview Why use the OAS? Swagger API Hub Download OAS Postman Collection Postman Collection Overview What's in the collection? Why use the collection? Prerequisites Using the collection Keeping your fork up to date Data center configuration Communication & Collaboration Chats Overview Create chat Mark Multiple Chats as Read or Clear Unread Count Retrieve all direct chats Search chats Update chat title or history status Retrieve chat details Update Chat Read or Unread Status Clear Local Chat History Close a chat Add members to a chat Retrieve members of a chat Remove members from a chat Fork a chat Send Typing Indicator Leave a chat Mute a chat Unmute a chat Messages Overview Post message in chat Delete multiple messages Post message in a channel with CHANNEL_UNIQUE_NAME Post message in a channel with CHANNEL_ID Forward Messages Search Messages Report messages in a chat or channel Edit a message in a chat Threads Overview Create and send a thread message with CHANNEL_ID Create and send a thread message with CHAT_ID Create and send a thread message with CHANNEL_UNIQUE_NAME Send a message to an existing thread Update the state of a thread Retrieve thread details Get main message of a thread Add followers to a thread Get thread followers Remove followers from a thread Get non-followers of a thread Join (follow) a thread Leave (unfollow) a thread Retrieve members of a thread Leave a thread Mute a thread Unmute a thread List threads in a chat Scheduled Messages Overview List all scheduled messages Send scheduled messages now Bulk reschedule scheduled messages List scheduled messages in a chat Delete all scheduled messages in a chat Edit a scheduled message Delete a scheduled message Channels Overview Create a channel List channels Update channel meta Change channel status Get a specific channel Delete a channel Update channel configurations Get channel configurations Update channel permissions Get channel permissions Add Members Bulk update member roles List channel members Bulk remove members Update a single member's role Remove a single member Mute/unmute or pin/unpin a channel Get my membership Reminders Overview Get reminders in a chat Update reminder status Trigger reminder notification to assignees Batch edit reminders Pin Messages Overview Add a pinned message Reorder pinned messages Get pinned messages Delete pinned messages Get primary pinned message My Pins and Chat Folders Overview Create a chat folder Retrieve chat folders Remove pinned chats across chat folders Modify a chat folder Delete a chat folder Reorder a chat within a chat folder Reorder a chat folder Replace chats in a chat folder Pin a chat to a chat folder Unpin a chat Stars Overview Star a Message or Update Star Type List starred messages Unstar a Message Attachments Overview Upload and share attachments List attachments Edit an attachment Get an attachment Download an attachment file Hashtags Overview List hashtags Get a hashtag Follow a hashtag Unfollow a hashtag Message Components Message Content Overview Plain text Table List Label Image Charts Graphs Mentions Overview Retrieve Mentions and Replies Mentioning a User Silent mentions Mentioning a Channel Mentioning all users in a channel Mentioning available users in a Channel Mentioning a Team Buttons Overview Message card buttons Confirmation popup Instant buttons Message Cards Overview Post a message card to a channel Post a message card to a chat Developer Platform Bots Overview Create a bot List all bots Update an existing bot Retrieve details of a specific bot Delete a specific bot Send a bot message Send an incoming webhook message to a bot Trigger Bot Calls Create a handler for a specific bot Update a handler for a specific bot Get details of a specific bot handler Delete a handler from a specific bot Associate bot to a channel List all subscribers of a specific bot List execution records of a specific bot handler Icons Overview Slash Commands Overview Create a slash command List all commands Update a slash command Get a command Delete a slash command Create a handler for a specific command Update a handler for a specific command Get details of a specific command handler Delete a handler from a specific command List execution records of a specific slash command handler Message Actions Overview Create a new message action List all message actions Update an existing message action Get details of a specific message action Delete a specific message action Update a handler for a specific message action Get details of a specific message action handler List execution records of a specific message action handler Functions Overview Create a new function List all functions Update an existing function Get details of a specific function Delete a specific function Create a handler for a specific function Update a handler for a specific function Get details of a specific function handler Delete a handler from a specific function List execution records of a specific function handler Datastores Overview Create a datastore List all datastores Edit a datastore Get a datastore Delete a datastore Add fields to a datastore Edit datastore fields Delete fields of a datastore Add records to a datastore Bulk update records in a datastore List records from a datastore Delete records from a datastore Update a record in a datastore Get a record from a datastore Delete a record from a datastore Export datastore records Schedulers Overview Create a scheduler List all schedulers Edit a scheduler Get a specific scheduler Delete a scheduler Enable a scheduler Disable a scheduler Update a handler for a specific scheduler Get details of a specific scheduler handler List execution records of a specific scheduler handler Extensions Overview Install an extension Upgrade an extension Add or update extension properties Get extension properties Get a specific extension property Delete a specific extension property Create a handler for a specific extension Update a handler for a specific extension Get details of a specific extension handler Delete a handler from a specific extension List execution records of a specific extension handler Settings & Preferences DND Settings Overview Update DND preferences Get DND preferences Mobile Settings Overview Update mobile settings Get mobile settings User Preferences Overview Update user preferences Get user preferences Keyboard Shortcuts Overview Update keyboard shortcuts Fetch all keyboard shortcuts Delete keyboard shortcuts customization Auto Responder Settings Overview Update auto responder settings Get auto responder settings Custom Domain Overview Add custom domain Activate or deactivate custom domain Retrieve custom domain Delete custom domain Custom Email Overview Add custom email configuration Update custom email configuration Retrieve custom email configuration Delete custom email configuration OpenAPI Specification (OAS) AI Tools Open in ChatGPT Open in ChatGPT to ask questions about this page Open in Claude Open in Claude to ask questions about this page Copy as Markdown Copy this page as markdown to use with AI assistants View as Markdown Open this page as markdown in a new tab An OpenAPI Specification (OAS) is a standardized method for describing RESTful APIs. It outlines the API's structure, authentication methods, endpoints, and request and response formats in either JSON or YAML. You can download the OpenAPI specification file below, which can be used to interact with various API elements. Why Use the OpenAPI Specification? The OpenAPI Specification is designed to provide the following: API Endpoints : It specifies the request URL and HTTP methods, detailing optional and mandatory parameters for making API calls. Additionally, it lists the response formats for all possible HTTP response codes. Authorization : The specification supports OAuth 2.0 authentication, ensuring secure access to the API. Request and Response Formats : It offers standardized request formats for GET, POST, PUT, and DELETE operations. Detailed response schemas describe the data structures returned and error handling guidelines to assist developers in debugging API requests. Swagger API Hub The Swagger UI tool allows users to visualize and interact with the API in a format that's easy to read and understand. The Swagger Hub and Swagger Editor are the de facto editor tools for designing and working with APIs using the OpenAPI Specification. Here, we have used Swagger's API hub to demonstrate how to use the OpenAPI Specification version 3.0.0 specification for Zoho Cliq APIs. For further reference: Swagger and OpenAPI Documentation Swagger UI Swagger Editor Download OAS Zoho Cliq utilizes the OpenAPI Specification (OAS) to outline the functionality and actions of each API in a format compatible with various programming languages. All of Cliq's APIs are documented in the OpenAPI specification, which can be downloaded as a YAML file below: Download Complete OAS for Zoho Cliq APIs Download",
+      "published_label": null
+    }
+  ],
+  "claims": {
+    "auth": {
+      "value": [
+        "OAuth 2.0"
+      ],
+      "sources": [
+        "https://www.zoho.com/cliq/help/restapi/v3/oauth/",
+        "https://www.zoho.com/cliq/help/restapi/v2/oauth/"
+      ],
+      "evidence": [
+        {
+          "value": "OAuth 2.0",
+          "url": "https://www.zoho.com/cliq/help/restapi/v3/oauth/",
+          "excerpt": "Introduction to OAuth 2.0 | Zoho Cliq | API Documentation API Docs / No Results Found V3 (Latest) V2 V3 (Latest) Resources Help Docs FAQ Developer Platform Extensions Developer Community Plans & Pricing Ac",
+          "published_label": null
+        },
+        {
+          "value": "OAuth 2.0",
+          "url": "https://www.zoho.com/cliq/help/restapi/v2/oauth/",
+          "excerpt": "Introduction to OAuth 2.0 | Zoho Cliq | API Documentation API Docs / No Results Found V2 V2 V3 (Latest) Resources Help Docs FAQ Developer Platform Extensions Developer Community Plans & Pricing Access Zoho",
+          "published_label": null
+        }
+      ],
+      "reason": "Provisional extraction: validate scope and completeness against the cited page."
+    },
+    "credential_gate": {
+      "value": "unknown",
+      "sources": [],
+      "evidence": [],
+      "reason": "No sufficiently specific positive evidence extracted; review targeted search results."
+    },
+    "api_surface": {
+      "value": [
+        "REST"
+      ],
+      "sources": [
+        "https://www.zoho.com/cliq/help/restapi/v2/introduction/",
+        "https://www.zoho.com/cliq/help/restapi/v3/introduction/",
+        "https://www.zoho.com/cliq/help/restapi/v2/",
+        "https://www.zoho.com/cliq/help/restapi/v3/oascliq/"
+      ],
+      "evidence": [
+        {
+          "value": "REST",
+          "url": "https://www.zoho.com/cliq/help/restapi/v2/introduction/",
+          "excerpt": "te custom theme Get all themes Update custom theme Get specific theme Delete custom theme Zoho Cliq REST API Documentation AI Tools Open in ChatGPT Open in ChatGPT to ask questions about this page Open in Claude Open in Claude to ask questions about this page Copy as Markdown Copy this p",
+          "published_label": null
+        },
+        {
+          "value": "REST",
+          "url": "https://www.zoho.com/cliq/help/restapi/v3/introduction/",
+          "excerpt": "email configuration Retrieve custom email configuration Delete custom email configuration Zoho Cliq REST API Documentation AI Tools Open in ChatGPT Open in ChatGPT to ask questions about this page Open in Claude Open in Claude to ask questions about this page Copy as Markdown Copy this p",
+          "published_label": null
+        },
+        {
+          "value": "REST",
+          "url": "https://www.zoho.com/cliq/help/restapi/v2/",
+          "excerpt": "Rest API documentation | Cliq REST API Documentation Access\r\n            Cliq Pricing Help Center Introduction About Cliq REST API Authentication OAuth Token OpenAPI Specification (OAS) HT",
+          "published_label": null
+        },
+        {
+          "value": "REST",
+          "url": "https://www.zoho.com/cliq/help/restapi/v3/oascliq/",
+          "excerpt": "age as markdown in a new tab An OpenAPI Specification (OAS) is a standardized method for describing RESTful APIs. It outlines the API's structure, authentication methods, endpoints, and request and response formats in either JSON or YAML. You can download the OpenAPI specification file below",
+          "published_label": null
+        }
+      ],
+      "reason": "Provisional extraction: validate scope and completeness against the cited page."
+    },
+    "official_mcp": {
+      "value": "yes (provisional)",
+      "sources": [
+        "https://www.zoho.com/cliq/mcp-server.html",
+        "https://www.zoho.com/cliq/help/platform/zoho-cliq-mcp.html"
+      ],
+      "evidence": [
+        {
+          "value": "yes (provisional)",
+          "url": "https://www.zoho.com/cliq/mcp-server.html",
+          "excerpt": "Bring AI into your workflow with Zoho Cliqâs Model Context Protocol (MCP) Zoho Cliq MCP Server Supported clients + more Bring AI to where your work lives. With Zoho Cliq's Model Context Protocol (MCP), AI in Cliq goes beyond conversation by letting your ",
+          "published_label": null,
+          "context_warning": "Review vendor ownership, dates, and scope."
+        },
+        {
+          "value": "yes (provisional)",
+          "url": "https://www.zoho.com/cliq/help/platform/zoho-cliq-mcp.html",
+          "excerpt": "Guide to Zoho Cliq's MCP Server Guide to Zoho Cliq's MCP Server Note: Explore Zoho MCP , and if you encounter any issues, please contact support@zohomcp.com or support@zohocliq.com for assistance. What is MCP? Model Context",
+          "published_label": null,
+          "context_warning": "Review vendor ownership, dates, and scope."
+        }
+      ],
+      "reason": "Provisional; check source date, scope, and vendor ownership."
+    },
+    "composio_toolkit": {
+      "value": "listed",
+      "sources": [
+        "https://docs.composio.dev/toolkits/zoho_cliq"
+      ],
+      "evidence": [],
+      "reason": "Catalog match; scope needs review."
+    },
+    "verdict": {
+      "value": "unknown",
+      "sources": [],
+      "evidence": [],
+      "reason": "A supported access path, authentication method and API surface were not all extracted."
+    }
+  },
+  "validation": [
+    "All claims are provisional",
+    "No vendor MCP inference from Composio catalog",
+    "Negated MCP or client-only source is not counted as vendor-server proof"
+  ]
+}

@@ -1,0 +1,103 @@
+{
+  "app": {
+    "number": 49,
+    "name": "Amazon Selling Partner",
+    "category": "Ecommerce",
+    "hint": "developer-docs.amazon.com/sp-api"
+  },
+  "checked_at": "2026-11-23T18:15:10.335198+00:00",
+  "prior_source": "data/pass2/049.json",
+  "search_source": "data/pass4_search/049.json",
+  "new_candidates": [
+    {
+      "url": "https://developer-docs.shipping.amazon.com/apis/docs/registering-as-a-developer",
+      "title": "Registering as a developer (https://developer-docs.shipping.amazon.com/apis/docs/registering-as-a-developer)",
+      "published_label": null
+    },
+    {
+      "url": "https://sell.amazon.com/developers?lang=en-US",
+      "title": "Selling Partner API (SP-API) | Sell on Amazon (https://sell.amazon.com/developers?lang=en-US)",
+      "published_label": null
+    },
+    {
+      "url": "https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-gen-ai-selling-partner-api/integrating-sp-api.html",
+      "title": "Integrating the Amazon Selling Partner API - AWS Prescriptive Guidance (https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-gen-ai-selling-partner-api/integrating-sp-api.html)",
+      "published_label": null
+    },
+    {
+      "url": "https://docs.aws.amazon.com/pdfs/prescriptive-guidance/latest/strategy-gen-ai-selling-partner-api/strategy-gen-ai-selling-partner-api.pdf",
+      "title": "AWS Prescriptive Guidance - Enabling business reporting and generative AI capabilities for Amazon selling partners (https://docs.aws.amazon.com/pdfs/prescriptive-guidance/latest/strategy-gen-ai-selling-partner-api/strategy-gen-ai-selling-partner-api.pdf)",
+      "published_label": "last year"
+    }
+  ],
+  "selected": [
+    {
+      "url": "https://developer-docs.shipping.amazon.com/apis/docs/registering-as-a-developer",
+      "title": "Registering as a developer (https://developer-docs.shipping.amazon.com/apis/docs/registering-as-a-developer)",
+      "published_label": null
+    }
+  ],
+  "new_pages": [
+    {
+      "url": "https://developer-docs.shipping.amazon.com/apis/docs/registering-as-a-developer",
+      "requested_url": "https://developer-docs.shipping.amazon.com/apis/docs/registering-as-a-developer",
+      "status": 200,
+      "title": "Registering as a developer (https://developer-docs.shipping.amazon.com/apis/docs/registering-as-a-developer)",
+      "text": "Registering as a developer You must register as a Selling Partner API developer before you can register your Selling Partner API application . The way you register as a developer varies slightly depending on the type of application that you create. For the purposes of registering as a developer, applications are grouped into three types: All public applications. Applications that are publicly available and are authorized by a seller or by a vendor. Private seller applications. Applications for sellers that are available only to your organization, and are self-authorized. Private vendor applications. Applications for vendors that are available only to your organization, and are self-authorized. For more information, see Terminology . The following procedures show you how to register as a developer, depending on the type of application you want to create. To register as a developer (for all public applications) Sign into Seller Central using the credentials that you want to associate with your developer account. In the Partner Network menu, click Develop Apps . The Developer Central page appears. If you have not yet completed a developer profile for this selling account, click Proceed to Developer Profile . Otherwise click the Your Developer Profile link. Complete the form. In the Data Access section, in the dropdown box, select My organization builds and offers publicly available applications . To register as a developer (for private seller applications) Sign into Seller Central using the credentials that you want to associate with your developer account. In the Partner Network menu, click Develop Apps . The Developer Central page appears. If you have not yet completed a developer profile for this selling account, click Proceed to Developer Profile . Otherwise click the Your Developer Profile link. Complete the form. In the Data Access section, in the dropdown box, select My organization sells on Amazon, and I only want to integrate to manage my own business only . To register as a developer (for private vendor applications) Go to Vendor Central for your marketplace. See Vendor Central URLs for a list of URLs by marketplace. Sign in using the credentials for the Vendor Central account with the vendor group that you want your application to access. For more information about vendor groups, see About Vendor Groups . In the Integration menu, click API Integration . The Developer Central page appears. If you have not yet completed a developer profile for this vendor account, click Proceed to Developer Profile . Otherwise click the Your Developer Profile link. Complete the form. In the Data Access section, in the dropdown box, select My organization sells on Amazon, and I only want to integrate to manage my own business only . Updated almost 3 years ago Did this page help you? Yes No",
+      "published_label": null
+    }
+  ],
+  "claims": {
+    "auth": {
+      "value": "unknown",
+      "sources": [],
+      "evidence": [],
+      "reason": "No sufficiently specific positive evidence extracted; review targeted search results."
+    },
+    "credential_gate": {
+      "value": "unknown",
+      "sources": [],
+      "evidence": [],
+      "reason": "No sufficiently specific positive evidence extracted; review targeted search results."
+    },
+    "api_surface": {
+      "value": "unknown",
+      "sources": [],
+      "evidence": [],
+      "reason": "No sufficiently specific positive evidence extracted; review targeted search results."
+    },
+    "official_mcp": {
+      "value": "yes (provisional)",
+      "sources": [
+        "https://sell.amazon.com/blog/announcements/amazons-selling-partner-plugin-ads-mcp"
+      ],
+      "evidence": [
+        {
+          "value": "yes (provisional)",
+          "url": "https://sell.amazon.com/blog/announcements/amazons-selling-partner-plugin-ads-mcp",
+          "excerpt": "swer questions but actively help manage holiday operations and advertising: the Amazon Selling Partner plugin and the Amazon Ads MCP Server. Used together in AWS Quick, they let sellers check inventory, adjust campaigns, optimize listings, act on performance data, and more. And there’s never been a",
+          "published_label": null,
+          "context_warning": "Review vendor ownership, dates, and scope."
+        }
+      ],
+      "reason": "Provisional; check source date, scope, and vendor ownership."
+    },
+    "composio_toolkit": {
+      "value": "unknown",
+      "sources": [],
+      "evidence": [],
+      "reason": "No exact or reviewed alias match; absence is not established."
+    },
+    "verdict": {
+      "value": "unknown",
+      "sources": [],
+      "evidence": [],
+      "reason": "A supported access path, authentication method and API surface were not all extracted."
+    }
+  },
+  "validation": [
+    "All claims are provisional",
+    "No vendor MCP inference from Composio catalog",
+    "Negated MCP or client-only source is not counted as vendor-server proof"
+  ]
+}

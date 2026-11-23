@@ -1,0 +1,1850 @@
+{
+  "category": "Support and Helpdesk",
+  "checked_at": "2026-11-24",
+  "records": [
+    {
+      "number": 11,
+      "app": "Zendesk",
+      "category": "Support and Helpdesk",
+      "summary": "Zendesk documents a broad REST platform, is migrating core API authentication from deprecated API tokens to OAuth, offers a self-serve trial, and operates an early-access MCP server.",
+      "blocker": "API tokens are being retired and all stop working on April 30, 2027. Local OAuth-client and token creation requires admin or Manage APIs permission; multi-customer global OAuth clients require Zendesk approval, and the MCP server remains in early access.",
+      "next_action": "Create a local OAuth client in Admin Center, request least-privilege scopes, implement token refresh, migrate before the API-token deadline, and join the External AI EAP before connecting the MCP server.",
+      "fields": {
+        "auth": {
+          "status": "checked",
+          "value": [
+            "OAuth access tokens for core Zendesk APIs",
+            "Deprecated API tokens using HTTP Basic authentication during migration"
+          ],
+          "reason": "Current Zendesk documentation requires OAuth access tokens for API requests and marks API-token/basic authentication as deprecated. OAuth clients are instance-scoped, can be created in Admin Center by an admin, and tokens can be scoped; global OAuth clients require separate Zendesk approval.",
+          "evidence": [
+            {
+              "url": "https://developer.zendesk.com/api-reference/introduction/security-and-auth/",
+              "title": "Security and authentication",
+              "quote": "You must be a verified user to make API requests. Zendesk supports using OAuth access tokens to authenticate API requests.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            },
+            {
+              "url": "https://developer.zendesk.com/api-reference/introduction/security-and-auth/",
+              "title": "Security and authentication",
+              "quote": "Note: If you're an existing Zendesk customer and are currently using basic authentication or API tokens, you will have to migrate to OAuth access tokens for improved security and compatibility with future requirements.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            },
+            {
+              "url": "https://developer.zendesk.com/documentation/authentication/creating-and-using-oauth-tokens-with-the-api/",
+              "title": "Creating and using OAuth access tokens with the API",
+              "quote": "To create an OAuth client using Admin Center, see Registering your application with Zendesk in Zendesk help. You must be signed in as an admin. When creating a client for creating an OAuth token with the API, you don't need to specify any Redirect URLs.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            },
+            {
+              "url": "https://developer.zendesk.com/documentation/marketplace/building-a-marketplace-app/set-up-a-global-oauth-client/",
+              "title": "Set up a global OAuth client",
+              "quote": "You must request a global OAuth client from Zendesk to create global OAuth tokens. For security reasons, Zendesk doesn't allow developers to create their own global OAuth clients.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            }
+          ]
+        },
+        "credential_gate": {
+          "status": "checked",
+          "value": "self_serve_trial",
+          "gate_class": "self_serve_trial",
+          "reason": "Zendesk offers a 14-day self-serve trial, and a trial administrator can create a local OAuth client. The separate global-client approval path applies to multi-customer distribution rather than initial API credential creation. The pricing page is undated.",
+          "evidence": [
+            {
+              "url": "https://www.zendesk.com/pricing/",
+              "title": "Zendesk Pricing",
+              "quote": "Zendesk offers a free trial so you can explore the product before committing to a paid plan. During the 14-day trial period:",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            },
+            {
+              "url": "https://developer.zendesk.com/documentation/authentication/creating-and-using-oauth-tokens-with-the-api/",
+              "title": "Creating and using OAuth access tokens with the API",
+              "quote": "To create an OAuth client using Admin Center, see Registering your application with Zendesk in Zendesk help. You must be signed in as an admin.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            }
+          ]
+        },
+        "api_surface": {
+          "status": "checked",
+          "value": "REST; broad documented surface",
+          "api_types": ["REST"],
+          "breadth": "broad",
+          "reason": "Official documentation explicitly identifies the Zendesk Support REST API and describes tickets, users, organizations, custom objects, workflows, Help Center, Voice, Live Chat, Sales CRM, and other API families. The cited introduction and common-tasks pages are undated.",
+          "evidence": [
+            {
+              "url": "https://developer.zendesk.com/documentation/ticketing/getting-started/common-tasks-for-the-zendesk-support-api/",
+              "title": "Common tasks for the Zendesk Support API",
+              "quote": "If you're planning on using the Zendesk REST API with Zendesk Support, it's important to know what you want to do and the best way to accomplish it. This article covers common tasks performed with the Zendesk API, and lists the APIs and endpoints to use in your projects.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            },
+            {
+              "url": "https://developer.zendesk.com/api-reference/ticketing/introduction/",
+              "title": "Support API introduction",
+              "quote": "This is the reference documentation for the Zendesk Support API, which is also known as the Ticketing API. You can use the Support API with tickets, users, organizations, custom objects, and manage ticket workflows.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            }
+          ]
+        },
+        "official_mcp": {
+          "status": "checked",
+          "value": "vendor_server",
+          "mcp_mode": "early_access",
+          "reason": "Zendesk operates a tenant MCP server and documents a governed Bridge connection for external AI agents. The server is in an early access program, so the mode is early_access rather than generally available remote access.",
+          "evidence": [
+            {
+              "url": "https://support.zendesk.com/hc/en-us/articles/11400026079130-Connecting-external-AI-agents-to-the-Zendesk-MCP-server-or-Zendesk-AI-agents-EAP",
+              "title": "Connecting external AI agents to the Zendesk MCP server or Zendesk AI agents (EAP)",
+              "quote": "Zendesk Bridge and external AI agents are currently in an early access program (EAP). During the EAP, Zendesk Bridge and external AI agents are available without charge. However, plan packaging and pricing might change when the feature becomes generally available. To participate, join the External AI EAP.",
+              "retrieved_at": "2026-11-24",
+              "published_at": "2026-10-21",
+              "published_label": "Published October 21, 2026; updated November 18, 2026"
+            },
+            {
+              "url": "https://support.zendesk.com/hc/en-us/articles/11400026079130-Connecting-external-AI-agents-to-the-Zendesk-MCP-server-or-Zendesk-AI-agents-EAP",
+              "title": "Connecting external AI agents to the Zendesk MCP server or Zendesk AI agents (EAP)",
+              "quote": "Zendesk Bridge provides a way to establish governed connections between the Zendesk MCP Server or Zendesk AI agents and external AI agents your organization uses, including Claude, ChatGPT, Microsoft Copilot, Gemini, or AI agents you build yourself.",
+              "retrieved_at": "2026-11-24",
+              "published_at": "2026-10-21",
+              "published_label": "Published October 21, 2026; updated November 18, 2026"
+            },
+            {
+              "url": "https://support.zendesk.com/hc/en-us/articles/11400026079130-Connecting-external-AI-agents-to-the-Zendesk-MCP-server-or-Zendesk-AI-agents-EAP",
+              "title": "Connecting external AI agents to the Zendesk MCP server or Zendesk AI agents (EAP)",
+              "quote": "Example: https://example.zendesk.com/mcp",
+              "retrieved_at": "2026-11-24",
+              "published_at": "2026-10-21",
+              "published_label": "Published October 21, 2026; updated November 18, 2026"
+            }
+          ]
+        },
+        "composio_toolkit": {
+          "status": "checked",
+          "value": "listed_exact",
+          "reason": "The current complete Composio catalog lists the exact Zendesk toolkit with slug ZENDESK. The catalog metadata is undated.",
+          "evidence": [
+            {
+              "url": "https://docs.composio.dev/toolkits.md",
+              "title": "Toolkits",
+              "quote": "| [Zendesk](/toolkits/zendesk.md) | `ZENDESK` | 484 | 2 | OAUTH2 | Yes |",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            }
+          ]
+        },
+        "verdict": {
+          "status": "checked",
+          "value": "documented_build_candidate",
+          "reason": "A self-serve trial and broad documented REST surface make Zendesk a build candidate. Implement OAuth rather than retiring API tokens, and treat the MCP server as EAP. The trial pricing evidence is undated.",
+          "evidence": [
+            {
+              "url": "https://www.zendesk.com/pricing/",
+              "title": "Zendesk Pricing",
+              "quote": "Zendesk offers a free trial so you can explore the product before committing to a paid plan. During the 14-day trial period:",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            },
+            {
+              "url": "https://developer.zendesk.com/documentation/ticketing/getting-started/common-tasks-for-the-zendesk-support-api/",
+              "title": "Common tasks for the Zendesk Support API",
+              "quote": "If you're planning on using the Zendesk REST API with Zendesk Support, it's important to know what you want to do and the best way to accomplish it.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "number": 12,
+      "app": "Intercom",
+      "category": "Support and Helpdesk",
+      "summary": "Intercom provides a broad REST API, distinct private-app access-token and public-app OAuth paths, free development workspaces, paid production workspaces, and a hosted remote MCP server.",
+      "blocker": "Free development workspaces cannot become production workspaces. Production integrations require a paid workspace, and MCP OAuth redirect URIs need a separate allowlist request even when registered in the Developer Hub.",
+      "next_action": "Build and test with a free development workspace, create the appropriate private app or OAuth public app, move production use to a paid workspace, and request an MCP redirect allowlist entry when using OAuth.",
+      "fields": {
+        "auth": {
+          "status": "checked",
+          "value": [
+            "Workspace access token for private apps",
+            "OAuth access token for public apps"
+          ],
+          "reason": "Intercom distinguishes a private-app Access Token for the developer's own workspace from OAuth for public apps that access other workspaces. Both are supplied in the Authorization header. The authentication page is undated.",
+          "evidence": [
+            {
+              "url": "https://developers.intercom.com/docs/build-an-integration/learn-more/authentication",
+              "title": "Authentication",
+              "quote": "An Access Token is for if you're using the API to access data in your own Intercom workspace, in other words, building a private app.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            },
+            {
+              "url": "https://developers.intercom.com/docs/build-an-integration/learn-more/authentication",
+              "title": "Authentication",
+              "quote": "OAuth is for if you're building a public app that accesses other people's Intercom data.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            },
+            {
+              "url": "https://developers.intercom.com/docs/build-an-integration/learn-more/authentication",
+              "title": "Authentication",
+              "quote": "We provide you with an Access Token as soon as you create an app on your workspace.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            }
+          ]
+        },
+        "credential_gate": {
+          "status": "checked",
+          "value": "mixed",
+          "gate_class": "mixed",
+          "reason": "Development workspaces are free but development-only and cannot be converted to production. Private apps for production require a paid Intercom workspace, while app creation is self-service in either workspace type. The setup documentation is undated.",
+          "evidence": [
+            {
+              "url": "https://developers.intercom.com/docs/build-an-integration/getting-started",
+              "title": "Set up a Workspace",
+              "quote": "Development workspaces are free and intended for development purposes only.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            },
+            {
+              "url": "https://developers.intercom.com/docs/build-an-integration/getting-started",
+              "title": "Set up a Workspace",
+              "quote": "If you are building a private app for your paid Intercom workspace, log in through the Intercom app sign in and then go to the Developer Hub to create an app for that workspace, which we will show you in the next step.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            },
+            {
+              "url": "https://developers.intercom.com/docs/build-an-integration/getting-started",
+              "title": "Set up a Workspace",
+              "quote": "Cannot be converted into production workspaces.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            }
+          ]
+        },
+        "api_surface": {
+          "status": "checked",
+          "value": "REST; broad documented surface",
+          "api_types": ["REST"],
+          "breadth": "broad",
+          "reason": "Intercom describes its REST API as a core platform building block for retrieving and updating account data and integrating Intercom into other products. The REST overview is undated.",
+          "evidence": [
+            {
+              "url": "https://developers.intercom.com/docs/build-an-integration/learn-more/rest-apis",
+              "title": "About our REST API",
+              "quote": "Our REST API is a core building block of the Intercom Platform. You can use it to retrieve and update information from your own Intercom account, or to integrate Intercom into your own product. It's completely up to you and your custom use case.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            },
+            {
+              "url": "https://developers.intercom.com/docs/build-an-integration/learn-more/rest-apis",
+              "title": "About our REST API",
+              "quote": "All API requests are sent over HTTPS.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            }
+          ]
+        },
+        "official_mcp": {
+          "status": "checked",
+          "value": "vendor_server",
+          "mcp_mode": "remote",
+          "reason": "Intercom hosts regional remote MCP servers for US and EU workspaces. The server supports browser OAuth or direct bearer-token authentication, and OAuth redirect URIs require MCP-specific allowlisting. The MCP guide is undated.",
+          "evidence": [
+            {
+              "url": "https://developers.intercom.com/docs/guides/mcp",
+              "title": "Model Context Protocol (MCP)",
+              "quote": "Intercom hosts a remote MCP server that follows the authenticated remote MCP specification (docs). This server handles requests from AI tools and provides access to Intercom data through a secure interface.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            },
+            {
+              "url": "https://developers.intercom.com/docs/guides/mcp",
+              "title": "Model Context Protocol (MCP)",
+              "quote": "The Intercom MCP server is available for US and EU hosted workspaces. AU hosted workspaces are not yet supported. Connect using the endpoint that matches your workspace's hosted region — see the connection URLs below.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            },
+            {
+              "url": "https://developers.intercom.com/docs/guides/mcp",
+              "title": "Model Context Protocol (MCP)",
+              "quote": "Submitting your app for review in the Developer Hub doesn't add its redirect URI to the MCP server allowlist, even though you register the URI there. If your app connects to the MCP server with OAuth, request an allowlist entry as well.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            }
+          ]
+        },
+        "composio_toolkit": {
+          "status": "checked",
+          "value": "listed_exact",
+          "reason": "The current complete Composio catalog lists the exact Intercom toolkit with slug INTERCOM; the separate Intercom MCP product was not substituted. The catalog metadata is undated.",
+          "evidence": [
+            {
+              "url": "https://docs.composio.dev/toolkits.md",
+              "title": "Toolkits",
+              "quote": "| [Intercom](/toolkits/intercom.md) | `INTERCOM` | 138 | 0 | OAUTH2 | Yes |",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            }
+          ]
+        },
+        "verdict": {
+          "status": "checked",
+          "value": "gated_build_candidate",
+          "reason": "The REST API supports a build candidate, but free access is limited to non-production development workspaces and production requires a paid workspace. MCP adds regional and redirect-allowlist constraints. The setup and API sources are undated.",
+          "evidence": [
+            {
+              "url": "https://developers.intercom.com/docs/build-an-integration/getting-started",
+              "title": "Set up a Workspace",
+              "quote": "Development workspaces are free and intended for development purposes only.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            },
+            {
+              "url": "https://developers.intercom.com/docs/build-an-integration/getting-started",
+              "title": "Set up a Workspace",
+              "quote": "If you are building a private app for your paid Intercom workspace, log in through the Intercom app sign in and then go to the Developer Hub to create an app for that workspace, which we will show you in the next step.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            },
+            {
+              "url": "https://developers.intercom.com/docs/build-an-integration/learn-more/rest-apis",
+              "title": "About our REST API",
+              "quote": "Our REST API is a core building block of the Intercom Platform.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "number": 13,
+      "app": "Freshdesk",
+      "category": "Support and Helpdesk",
+      "summary": "Freshdesk documents a broad REST API authenticated with per-agent API keys, provides trial API access with limits, restricts API/MCP availability by plan and role, and operates a GA remote MCP server.",
+      "blocker": "API functionality is unavailable on Sprout, current MCP access is limited to Growth, Pro, and Enterprise, and MCP accepts API keys only. Agent/admin roles and user permissions constrain what credentials can do.",
+      "next_action": "Use an eligible Growth-or-higher plan for production MCP, create an appropriately permissioned agent/admin API key, test REST operations within trial limits, and connect the tenant-specific MCP endpoint over HTTPS.",
+      "fields": {
+        "auth": {
+          "status": "checked",
+          "value": [
+            "Personal per-agent API key",
+            "HTTP Basic-style authentication using the API key and a dummy password",
+            "Role-based API permissions"
+          ],
+          "reason": "The current Freshdesk API reference documents personal API-key authentication without a password and states that data access follows the Freshdesk user's role permissions. The MCP-only OAuth restriction is not applied to the core REST API. The API reference is undated.",
+          "evidence": [
+            {
+              "url": "https://developers.freshdesk.com/api/",
+              "title": "Freshdesk Api Reference",
+              "quote": "You can use your personal API key to authenticate the request. If you use the API key, there is no need for a password. You can use any set of characters as a dummy password.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            },
+            {
+              "url": "https://developers.freshdesk.com/api/",
+              "title": "Freshdesk Api Reference",
+              "quote": "No, your ability to access data depends on the permissions available to your Freshdesk user profile. For example, if your Freshdesk Agent Role is \"Newbie Agent\" who is only allowed to view tickets but not reply to them, then you will not be able to use the APIs to reply to a ticket.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            }
+          ]
+        },
+        "credential_gate": {
+          "status": "checked",
+          "value": "mixed",
+          "gate_class": "mixed",
+          "reason": "Trial users receive an API allowance, but API functionality is not available on Sprout and GA MCP is limited to Growth, Pro, and Enterprise. This supports trial testing but gates production API/MCP use by plan and role. The core API reference is undated; the MCP page was modified October 5, 2026.",
+          "evidence": [
+            {
+              "url": "https://developers.freshdesk.com/api/",
+              "title": "Freshdesk Api Reference",
+              "quote": "For all trial users, there is a default API limit of 50 calls/minute.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            },
+            {
+              "url": "https://support.freshdesk.com/support/solutions/articles/225435-where-can-i-find-my-api-key",
+              "title": "Where can I find my API key?",
+              "quote": "**Note:** If your account is on the **Sprout** plan, the API key and the API functionality will NOT be available.",
+              "retrieved_at": "2026-11-24",
+              "published_at": "2024-04-30",
+              "published_label": "Modified April 30, 2024"
+            },
+            {
+              "url": "https://support.freshdesk.com/support/solutions/articles/50000012670-model-context-protocol-mcp-integration-in-freshdesk",
+              "title": "Model Context Protocol (MCP) integration in Freshdesk",
+              "quote": "Supported plans\n\nRate limits (actions per minute)\n\nIncluded MCP actions (per account, annually)\n\nGrowth\n\n25\n\n1,200\n\nPro\n\n50\n\n6,000\n\nEnterprise\n\n100\n\n12,000",
+              "retrieved_at": "2026-11-24",
+              "published_at": "2026-10-05",
+              "published_label": "Modified October 5, 2026"
+            }
+          ]
+        },
+        "api_surface": {
+          "status": "checked",
+          "value": "REST; broad documented surface",
+          "api_types": ["REST"],
+          "breadth": "broad",
+          "reason": "Freshdesk explicitly classifies its APIs as REST, supports CRUD operations over JSON/HTTPS, and maintains a broad helpdesk API reference. The API reference is undated; its changelog is not treated as a page publication date.",
+          "evidence": [
+            {
+              "url": "https://developers.freshdesk.com/api/",
+              "title": "Freshdesk Api Reference",
+              "quote": "Freshdesk's APIs belong to the **Representational State Transfer (REST)** category. They allow you to perform 'RESTful' operations such as reading, modifying, adding or deleting data from your helpdesk.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            },
+            {
+              "url": "https://developers.freshdesk.com/api/",
+              "title": "Freshdesk Api Reference",
+              "quote": "Freshdesk APIs are plain JSON over HTTP and use the following HTTP verbs:",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            }
+          ]
+        },
+        "official_mcp": {
+          "status": "checked",
+          "value": "vendor_server",
+          "mcp_mode": "remote",
+          "reason": "Freshworks operates a tenant-specific Freshdesk MCP server over HTTPS. It became generally available on September 10, 2026, supports Growth/Pro/Enterprise, and currently accepts API-key authentication only with role-based authorization.",
+          "evidence": [
+            {
+              "url": "https://support.freshdesk.com/support/solutions/articles/50000012670-model-context-protocol-mcp-integration-in-freshdesk",
+              "title": "Model Context Protocol (MCP) integration in Freshdesk",
+              "quote": "The Freshworks Model Context Protocol (MCP) server enables AI tools like Cursor and Claude to securely connect and interact with Freshdesk. The MCP server acts as middleware to expose specific capabilities, such as creating tickets, by using public APIs and supported authentication methods.",
+              "retrieved_at": "2026-11-24",
+              "published_at": "2026-10-05",
+              "published_label": "Modified October 5, 2026"
+            },
+            {
+              "url": "https://support.freshdesk.com/support/solutions/articles/50000014411-freshworks-mcp-security",
+              "title": "Freshworks MCP security",
+              "quote": "The Freshworks MCP server is exposed as a tenant-specific endpoint:\n\nhttps://<your-freshdesk-domain>/mcp",
+              "retrieved_at": "2026-11-24",
+              "published_at": "2026-09-10",
+              "published_label": "Modified September 10, 2026"
+            },
+            {
+              "url": "https://support.freshdesk.com/support/solutions/articles/50000014411-freshworks-mcp-security",
+              "title": "Freshworks MCP security",
+              "quote": "Freshworks MCP for Freshdesk currently supports API key authentication only.",
+              "retrieved_at": "2026-11-24",
+              "published_at": "2026-09-10",
+              "published_label": "Modified September 10, 2026"
+            }
+          ]
+        },
+        "composio_toolkit": {
+          "status": "checked",
+          "value": "listed_exact",
+          "reason": "The current complete Composio catalog lists the exact Freshdesk toolkit with slug FRESHDESK. The catalog metadata is undated.",
+          "evidence": [
+            {
+              "url": "https://docs.composio.dev/toolkits.md",
+              "title": "Toolkits",
+              "quote": "| [Freshdesk](/toolkits/freshdesk.md) | `FRESHDESK` | 184 | 0 | API_KEY | — |",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            }
+          ]
+        },
+        "verdict": {
+          "status": "checked",
+          "value": "gated_build_candidate",
+          "reason": "Freshdesk's broad REST API supports development, and trial users have an API allowance, but production API/MCP use is plan- and role-gated. MCP is GA rather than early access. The core API source is undated.",
+          "evidence": [
+            {
+              "url": "https://developers.freshdesk.com/api/",
+              "title": "Freshdesk Api Reference",
+              "quote": "For all trial users, there is a default API limit of 50 calls/minute.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            },
+            {
+              "url": "https://support.freshdesk.com/support/solutions/articles/50000012670-model-context-protocol-mcp-integration-in-freshdesk",
+              "title": "Model Context Protocol (MCP) integration in Freshdesk",
+              "quote": "Starting September 10, 2026, the Freshworks MCP integration is generally available. The rate limits and monthly action allowances for each plan are outlined below.",
+              "retrieved_at": "2026-11-24",
+              "published_at": "2026-10-05",
+              "published_label": "Modified October 5, 2026"
+            },
+            {
+              "url": "https://developers.freshdesk.com/api/",
+              "title": "Freshdesk Api Reference",
+              "quote": "Freshdesk's APIs belong to the **Representational State Transfer (REST)** category.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "number": 14,
+      "app": "Front",
+      "category": "Support and Helpdesk",
+      "summary": "Front offers a free developer account, a broad Core API with company-admin-managed permission-scoped API tokens or OAuth for partner integrations, and a vendor-operated remote MCP server for conversation data.",
+      "blocker": "API tokens can be managed only by a Front company admin. A custom MCP connection requires a workspace admin to create a private developer app and configure OAuth scopes, and each teammate remains limited by their Front role.",
+      "next_action": "Create a free developer account, have a company admin create a permission-scoped API token for private testing or use OAuth for partner distribution, and have a workspace admin configure a private developer app for the remote MCP server.",
+      "fields": {
+        "auth": {
+          "status": "checked",
+          "value": [
+            "Company-scoped API tokens created by admins with granular resource permissions",
+            "OAuth access tokens for public integrations",
+            "Optional OAuth for private integrations"
+          ],
+          "reason": "Front's Core API supports API tokens and OAuth. API tokens are company-level, admin-managed, and permission-granular; OAuth is required for public integrations and optional for private use. Partner integrations that update customer data generally must use OAuth unless Front grants an exception.",
+          "evidence": [
+            {
+              "url": "https://dev.frontapp.com/docs/core-api-getting-started",
+              "title": "Getting Started with the Core API",
+              "quote": "OAuth is required if you are creating a public integration for all Front clients, but is optional if you are creating an integration for private use.",
+              "retrieved_at": "2026-11-24",
+              "published_at": "2025-02-07",
+              "published_label": "Updated February 7, 2025"
+            },
+            {
+              "url": "https://dev.frontapp.com/docs/create-and-revoke-api-tokens",
+              "title": "API tokens",
+              "quote": "API tokens apply at a company level rather than being tied to a specific user, so anyone at your company with admin privileges will see the token you create.",
+              "retrieved_at": "2026-11-24",
+              "published_at": "2026-10-14",
+              "published_label": "Updated October 14, 2026"
+            },
+            {
+              "url": "https://dev.frontapp.com/docs/create-and-revoke-api-tokens",
+              "title": "API tokens",
+              "quote": "You must be an admin to create or manage API tokens.",
+              "retrieved_at": "2026-11-24",
+              "published_at": "2026-10-14",
+              "published_label": "Updated October 14, 2026"
+            },
+            {
+              "url": "https://dev.frontapp.com/docs/create-and-revoke-api-tokens",
+              "title": "API tokens",
+              "quote": "If you selected to access resources, you can granularly specify what access the token has to each resources (read, write, delete, and send).",
+              "retrieved_at": "2026-11-24",
+              "published_at": "2026-10-14",
+              "published_label": "Updated October 14, 2026"
+            }
+          ]
+        },
+        "credential_gate": {
+          "status": "checked",
+          "value": "self_serve_free",
+          "gate_class": "self_serve_free",
+          "reason": "Front provides a self-serve developer account and free developer environment for building with its APIs, limited to three teammates. Admin token creation is an in-account permission step rather than a vendor sales gate; public distribution has a separate partner process.",
+          "evidence": [
+            {
+              "url": "https://dev.frontapp.com/docs/welcome",
+              "title": "Welcome",
+              "quote": "You can create a developer account by signing up here. You’ll get access to a free developer environment that will provide everything you need to begin building with our APIs. Developer accounts are limited to 3 teammates, so we recommend sharing credentials using a team email like engineering@ if you have more developers working on your team.",
+              "retrieved_at": "2026-11-24",
+              "published_at": "2026-11-14",
+              "published_label": "Updated November 14, 2026"
+            }
+          ]
+        },
+        "api_surface": {
+          "status": "checked",
+          "value": "HTTP API; broad documented surface",
+          "api_types": ["HTTP API"],
+          "breadth": "broad",
+          "reason": "Front documents a comprehensive Core API with control over entities from contacts to comments, a fixed HTTPS base URL, JSON communication, OAuth2.0, and API tokens. The reference does not explicitly label the protocol REST, so HTTP API is used conservatively.",
+          "evidence": [
+            {
+              "url": "https://dev.frontapp.com/reference/introduction",
+              "title": "Introduction",
+              "quote": "Here is Front's Core API, a backend API that gives comprehensive control over all entities in Front from Contacts to Comments.",
+              "retrieved_at": "2026-11-24",
+              "published_at": "2025-06-26",
+              "published_label": "Updated June 26, 2025"
+            },
+            {
+              "url": "https://dev.frontapp.com/reference/introduction",
+              "title": "Introduction",
+              "quote": "Front supports OAuth2.0 as well as API Tokens. To learn more about authenticating with Front, see our guide on authentication.",
+              "retrieved_at": "2026-11-24",
+              "published_at": "2025-06-26",
+              "published_label": "Updated June 26, 2025"
+            },
+            {
+              "url": "https://dev.frontapp.com/reference/introduction",
+              "title": "Introduction",
+              "quote": "API calls will always work with `https://api2.frontapp.com` as the base URL.",
+              "retrieved_at": "2026-11-24",
+              "published_at": "2025-06-26",
+              "published_label": "Updated June 26, 2025"
+            }
+          ]
+        },
+        "official_mcp": {
+          "status": "checked",
+          "value": "vendor_server",
+          "mcp_mode": "remote",
+          "reason": "Front operates a remote Streamable HTTP MCP server for conversation data, authenticated with OAuth 2.1 and PKCE and scoped to the authorizing teammate. A distinct Admin MCP server is in open beta; that beta status is not applied to the primary server.",
+          "evidence": [
+            {
+              "url": "https://dev.frontapp.com/docs/mcp-server",
+              "title": "MCP Server",
+              "quote": "Front's MCP server (`mcp.frontapp.com/mcp`) lets AI agents act on Front conversation data using a single OAuth-authenticated endpoint. Agents authenticate as a specific Front user, with permissions matching that user's role (user-scoped authorization).",
+              "retrieved_at": "2026-11-24",
+              "published_at": "2026-11-23",
+              "published_label": "Updated November 23, 2026"
+            },
+            {
+              "url": "https://dev.frontapp.com/docs/mcp-server",
+              "title": "MCP Server",
+              "quote": "| **Endpoint** | `https://mcp.frontapp.com/mcp` |\n| **Transport** | Streamable HTTP |\n| **Auth** | OAuth 2.1 + PKCE required |\n| **Who can connect** | Any teammate |\n| **Scopes** | `read`, `write`, `send` |",
+              "retrieved_at": "2026-11-24",
+              "published_at": "2026-11-23",
+              "published_label": "Updated November 23, 2026"
+            },
+            {
+              "url": "https://dev.frontapp.com/docs/mcp-server",
+              "title": "MCP Server",
+              "quote": "Front does not support Dynamic Client Registration. Your AI assistant must support a confidential connection that sends an OAuth client ID and secret.",
+              "retrieved_at": "2026-11-24",
+              "published_at": "2026-11-23",
+              "published_label": "Updated November 23, 2026"
+            },
+            {
+              "url": "https://dev.frontapp.com/docs/admin-mcp-server",
+              "title": "Admin MCP Server",
+              "quote": "The Admin MCP server is in open beta\nThe Admin MCP server is free on all plans during the beta. Tool names and parameters may change before general availability.",
+              "retrieved_at": "2026-11-24",
+              "published_at": "2026-11-23",
+              "published_label": "Updated November 23, 2026"
+            }
+          ]
+        },
+        "composio_toolkit": {
+          "status": "checked",
+          "value": "listed_exact",
+          "reason": "The current complete Composio catalog lists the exact Front toolkit with slug FRONT. The catalog metadata is undated.",
+          "evidence": [
+            {
+              "url": "https://docs.composio.dev/toolkits.md",
+              "title": "Toolkits",
+              "quote": "| [Front](/toolkits/front.md) | `FRONT` | 180 | 0 | API_KEY, OAUTH2 | No |",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            }
+          ]
+        },
+        "verdict": {
+          "status": "checked",
+          "value": "documented_build_candidate",
+          "reason": "A free developer environment and broad documented Core API make Front a build candidate for private integrations. Public distribution requires OAuth/partner handling, and MCP requires a confidential OAuth client without DCR.",
+          "evidence": [
+            {
+              "url": "https://dev.frontapp.com/docs/welcome",
+              "title": "Welcome",
+              "quote": "You can create a developer account by signing up here. You’ll get access to a free developer environment that will provide everything you need to begin building with our APIs.",
+              "retrieved_at": "2026-11-24",
+              "published_at": "2026-11-14",
+              "published_label": "Updated November 14, 2026"
+            },
+            {
+              "url": "https://dev.frontapp.com/reference/introduction",
+              "title": "Introduction",
+              "quote": "Here is Front's Core API, a backend API that gives comprehensive control over all entities in Front from Contacts to Comments.",
+              "retrieved_at": "2026-11-24",
+              "published_at": "2025-06-26",
+              "published_label": "Updated June 26, 2025"
+            },
+            {
+              "url": "https://dev.frontapp.com/docs/mcp-server",
+              "title": "MCP Server",
+              "quote": "Front does not support Dynamic Client Registration. Your AI assistant must support a confidential connection that sends an OAuth client ID and secret.",
+              "retrieved_at": "2026-11-24",
+              "published_at": "2026-11-23",
+              "published_label": "Updated November 23, 2026"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "number": 15,
+      "app": "Pylon",
+      "category": "Support and Helpdesk",
+      "summary": "Pylon documents a broad REST API with admin-created, role-controlled bearer tokens, includes API and MCP in paid plans, and operates an OAuth-only remote MCP server for Member or Admin seats.",
+      "blocker": "API and MCP access are paid-plan features, REST tokens can be created only by admins, and MCP requires OAuth plus a Member or Admin seat. Pylon's trial is arranged by a sales representative rather than being a documented self-serve signup.",
+      "next_action": "Select an eligible paid plan, have an admin create a role-controlled REST token with an optional IP allowlist, and use browser OAuth from a Member/Admin account for the remote MCP server.",
+      "fields": {
+        "auth": {
+          "status": "checked",
+          "value": [
+            "Bearer API tokens for the REST API",
+            "Role-controlled token access with optional IP allowlist",
+            "Admin-created tokens acting as a bot or teammate"
+          ],
+          "reason": "Pylon's REST API uses bearer tokens generated in the dashboard. Only admins can create/manage them; a token can have its own role or act as a teammate/bot, and access is controlled by role rather than separate OAuth scopes. The authentication documentation is undated.",
+          "evidence": [
+            {
+              "url": "https://docs.usepylon.com/pylon-docs/developer/api/authentication",
+              "title": "Authentication",
+              "quote": "The Pylon API uses Bearer authentication. This means you’ll need to pass your API token in the header of your request:",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            },
+            {
+              "url": "https://docs.usepylon.com/pylon-docs/developer/api/authentication",
+              "title": "Authentication",
+              "quote": "Only Admins can create and manage API tokens.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            },
+            {
+              "url": "https://docs.usepylon.com/pylon-docs/developer/api/authentication",
+              "title": "Authentication",
+              "quote": "Tokens don't expire, and their access is controlled only by the role. There are no separate scopes.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            }
+          ]
+        },
+        "credential_gate": {
+          "status": "checked",
+          "value": "paid_plan",
+          "gate_class": "paid_plan",
+          "reason": "Pylon's pricing includes API and MCP in its paid Professional, Advanced, and Enterprise offerings. Free trials exist, but a sales representative sets up the demo organization, so this is not classified as self-serve trial access. The pricing page is undated.",
+          "evidence": [
+            {
+              "url": "https://www.usepylon.com/pricing",
+              "title": "Pricing for B2B Support Teams | Pylon",
+              "quote": "Professional\n\n$89/seat\n\non an annual contract\n\n[Book a demo](https://www.usepylon.com/schedule-demo)\n\nIncludes:\n\nViewer seats\n\nCore support\n\nOut-of-the-box Analytics\n\nAutomations\n\nSkills\n\nBroadcasts\n\nMCP\n\nAPI\n\nIntegrations",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            },
+            {
+              "url": "https://www.usepylon.com/pricing",
+              "title": "Pricing for B2B Support Teams | Pylon",
+              "quote": "Pylon offers free trials for prospects. Your sales representative will work with you on setting up the demo organization.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            }
+          ]
+        },
+        "api_surface": {
+          "status": "checked",
+          "value": "REST; broad documented surface",
+          "api_types": ["REST"],
+          "breadth": "broad",
+          "reason": "Pylon's pricing table explicitly labels REST API, and the official API reference enumerates accounts, activities, attachments, audit logs, call recordings, contacts, custom fields/objects, email, feature requests, issues, knowledge base, macros, messages, surveys, tags, tasks/projects, teams, ticket forms, training data, roles, and users. These API pages are undated.",
+          "evidence": [
+            {
+              "url": "https://www.usepylon.com/pricing",
+              "title": "Pricing for B2B Support Teams | Pylon",
+              "quote": "REST API\n\n✓\n\n✓\n\n✓",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            },
+            {
+              "url": "https://docs.usepylon.com/pylon-docs/developer/api/api-reference.md",
+              "title": "API reference",
+              "quote": "# API reference\n\nDocumentation on available endpoints.\n\n{% content-ref url=\"/pages/p8ob9ltBUxVeCDOEzQwc\" %}\n[Accounts](https://docs.usepylon.com/pylon-docs/developer/api/api-reference/accounts.md)\n{% endcontent-ref %}\n\n{% content-ref url=\"/pages/zkunuHMRUjK6mOYh47nn\" %}\n[Activities](https://docs.usepylon.com/pylon-docs/developer/api/api-reference/accounts/activities.md)\n{% endcontent-ref %}",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            },
+            {
+              "url": "https://docs.usepylon.com/pylon-docs/developer/api/api-reference.md",
+              "title": "API reference",
+              "quote": "{% content-ref url=\"/pages/NPfOcz5AucnSzTNb4yd7\" %}\n[Feature Requests](https://docs.usepylon.com/pylon-docs/developer/api/api-reference/feature-requests.md)\n{% endcontent-ref %}\n\n{% content-ref url=\"/pages/8mk22XjvSufBoIhiVhze\" %}\n[Issues](https://docs.usepylon.com/pylon-docs/developer/api/api-reference/issues.md)\n{% endcontent-ref %}\n\n{% content-ref url=\"/pages/cLw3xzUPs8vCI4qrTM8n\" %}\n[Knowledge Base](https://docs.usepylon.com/pylon-docs/developer/api/api-reference/knowledge-base.md)\n{% endcontent-ref %}",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            }
+          ]
+        },
+        "official_mcp": {
+          "status": "checked",
+          "value": "vendor_server",
+          "mcp_mode": "remote",
+          "reason": "Pylon operates an HTTPS remote MCP server using OAuth with the user's Pylon permissions. API keys and machine-to-machine credentials are not supported for MCP, and a Member or Admin seat is required. The support page's relative update label is not an exact date, so it is treated as undated.",
+          "evidence": [
+            {
+              "url": "https://support.usepylon.com/articles/2407390554-connecting-to-the-pylon-mcp-server",
+              "title": "How do I connect to the Pylon MCP Server?",
+              "quote": "The Pylon MCP server at https://mcp.usepylon.com provides AI tools access to your Pylon data. The endpoint uses HTTPS, so the connection is protected with TLS. It uses OAuth authentication with your Pylon account.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            },
+            {
+              "url": "https://support.usepylon.com/articles/2407390554-connecting-to-the-pylon-mcp-server",
+              "title": "How do I connect to the Pylon MCP Server?",
+              "quote": "The application you connect to Pylon's MCP will only have access to data you would have access to in Pylon, and will read and write on behalf of you.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            },
+            {
+              "url": "https://support.usepylon.com/articles/2407390554-connecting-to-the-pylon-mcp-server",
+              "title": "How do I connect to the Pylon MCP Server?",
+              "quote": "**Seat requirement:** You need a **Member** or **Admin** seat to connect to the MCP server. Viewer and Integration users cannot authenticate and will see an \"Authorization failed\" error.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            }
+          ]
+        },
+        "composio_toolkit": {
+          "status": "checked",
+          "value": "listed_alias",
+          "reason": "The current complete Composio catalog lists Pylon MCP with slug PYLON_MCP, matching the repository's Pylon alias. No exact Pylon toolkit row is present, and no different product was substituted. The catalog metadata is undated.",
+          "evidence": [
+            {
+              "url": "https://docs.composio.dev/toolkits.md",
+              "title": "Toolkits",
+              "quote": "| [Pylon MCP](/toolkits/pylon_mcp.md) | `PYLON_MCP` | 12 | 0 | DCR_OAUTH | No |",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            }
+          ]
+        },
+        "verdict": {
+          "status": "checked",
+          "value": "gated_build_candidate",
+          "reason": "Pylon's broad REST API is a viable build candidate, but access requires a paid plan and admin-created role-controlled tokens; MCP additionally requires OAuth and a Member/Admin seat. Pricing, API, and MCP sources are undated.",
+          "evidence": [
+            {
+              "url": "https://www.usepylon.com/pricing",
+              "title": "Pricing for B2B Support Teams | Pylon",
+              "quote": "Pylon offers free trials for prospects. Your sales representative will work with you on setting up the demo organization.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            },
+            {
+              "url": "https://docs.usepylon.com/pylon-docs/developer/api/authentication",
+              "title": "Authentication",
+              "quote": "Only Admins can create and manage API tokens.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            },
+            {
+              "url": "https://docs.usepylon.com/pylon-docs/developer/api/api-reference.md",
+              "title": "API reference",
+              "quote": "Documentation on available endpoints.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "number": 16,
+      "app": "LiveAgent",
+      "category": "Support and Helpdesk",
+      "summary": "LiveAgent documents broad REST APIs with admin-created permissioned API keys, supports trial API testing, operates a remote MCP server on Business and Enterprise plans, and has no exact Composio catalog listing.",
+      "blocker": "The external MCP server is limited to Business and Enterprise plans, while core API keys are available across paid plans. The current complete Composio catalog has no LiveAgent product or alias.",
+      "next_action": "Use the 30-day trial to test REST API v3 with an admin-created permissioned key, upgrade to Business or Enterprise if external MCP is required, and implement against the vendor APIs directly because no exact Composio toolkit is listed.",
+      "fields": {
+        "auth": {
+          "status": "checked",
+          "value": [
+            "Admin-created API keys for LiveAgent REST APIs",
+            "Configurable per-key permissions",
+            "Request-header API-key authentication"
+          ],
+          "reason": "LiveAgent's API-key documentation identifies keys as integration identities, places creation under Configuration > System > API for admins, supports per-key permissions, and requires the key in request headers. MCP bearer tokens are a separate credential path.",
+          "evidence": [
+            {
+              "url": "https://support.liveagent.com/741982-API-key",
+              "title": "API key",
+              "quote": "API key is an identity of your LiveAgent (like your username and password) which you can use to build your own custom integration solutions.",
+              "retrieved_at": "2026-11-24",
+              "published_at": "2021-03-16",
+              "published_label": "Updated March 16, 2021"
+            },
+            {
+              "url": "https://support.liveagent.com/741982-API-key",
+              "title": "API key",
+              "quote": "While logged in as an admin navigate to Configuration> System> API which loads the API v3 section where you find existing API keys or add a new one.",
+              "retrieved_at": "2026-11-24",
+              "published_at": "2021-03-16",
+              "published_label": "Updated March 16, 2021"
+            },
+            {
+              "url": "https://support.liveagent.com/741982-API-key",
+              "title": "API key",
+              "quote": "When adding a new API key in v3 you have an option to define permissions for this key (as you can have more keys you can also give different keys to different people with different permissions).",
+              "retrieved_at": "2026-11-24",
+              "published_at": "2021-03-16",
+              "published_label": "Updated March 16, 2021"
+            }
+          ]
+        },
+        "credential_gate": {
+          "status": "checked",
+          "value": "self_serve_trial",
+          "gate_class": "self_serve_trial",
+          "reason": "Every plan starts with a 30-day no-credit-card trial, API keys are listed across paid plans, and official API documentation recommends a free trial account for testing. Core REST access is therefore self-serve trial-gated; external MCP is separately limited to Business and Enterprise.",
+          "evidence": [
+            {
+              "url": "https://www.liveagent.com/pricing/",
+              "title": "LiveAgent Pricing & Plans: AI on Every Plan, 30-Day Free Trial",
+              "quote": "Yes. Every plan starts with a 30-day free trial, and no credit card is required. When the trial ends, upgrade to a paid plan to keep your account and everything you set up.",
+              "retrieved_at": "2026-11-24",
+              "published_at": "2026-11-23",
+              "published_label": "Published January 29, 2019; modified November 23, 2026"
+            },
+            {
+              "url": "https://www.liveagent.com/pricing/",
+              "title": "LiveAgent Pricing & Plans: AI on Every Plan, 30-Day Free Trial",
+              "quote": "API keys\n\n1\n\n5\n\n10\n\nUnlimited\n\nLet third-party apps retrieve and push data and manage tickets from outside LiveAgent.",
+              "retrieved_at": "2026-11-24",
+              "published_at": "2026-11-23",
+              "published_label": "Published January 29, 2019; modified November 23, 2026"
+            },
+            {
+              "url": "https://support.liveagent.com/567924-Documentation",
+              "title": "Documentation",
+              "quote": "Consider registering a new free Trial account for testing purposes, before using API with your live account.",
+              "retrieved_at": "2026-11-24",
+              "published_at": "2023-04-14",
+              "published_label": "Updated April 14, 2023"
+            }
+          ]
+        },
+        "api_surface": {
+          "status": "checked",
+          "value": "REST; broad documented surface",
+          "api_types": ["REST"],
+          "breadth": "broad",
+          "reason": "LiveAgent explicitly maintains a REST API section with v1 and v3 documentation, and its complete reference covers agents, companies, conversations, customers, customer groups, messages, tags, and custom fields. The complete reference is undated; the documentation landing page was updated April 14, 2023.",
+          "evidence": [
+            {
+              "url": "https://support.liveagent.com/802463-rest-api",
+              "title": "REST API",
+              "quote": "REST API\n\n### API key\n\n### API v1\n\n### API v3",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            },
+            {
+              "url": "https://support.liveagent.com/840770-complete-api-reference",
+              "title": "Complete API reference",
+              "quote": "API version 1\nAgents\nApplication\nCompanies\nConversations\nCustomers\nCustomers groups",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            },
+            {
+              "url": "https://support.liveagent.com/567924-Documentation",
+              "title": "Documentation",
+              "quote": "Choose the object (agents, tickets, .) & method (get, post, delete) and press the \"Try it out\" button",
+              "retrieved_at": "2026-11-24",
+              "published_at": "2023-04-14",
+              "published_label": "Updated April 14, 2023"
+            }
+          ]
+        },
+        "official_mcp": {
+          "status": "checked",
+          "value": "vendor_server",
+          "mcp_mode": "remote",
+          "reason": "LiveAgent exposes a built-in remote Streamable HTTP MCP server using OAuth 2.1 with PKCE or a manually generated MCP bearer token, acting with the agent's identity and permissions. Pricing limits external MCP to Business and Enterprise. The MCP integration article is undated.",
+          "evidence": [
+            {
+              "url": "https://support.liveagent.com/647358-MCP-Integration-for-agents",
+              "title": "MCP Integration for agents",
+              "quote": "LiveAgent exposes a built-in **MCP server** (Model Context Protocol) that lets you connect external AI tools, such as ChatGPT, Claude Desktop, Cursor, claude.ai, FlowHunt, or any other MCP-compatible client, directly with your LiveAgent account.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            },
+            {
+              "url": "https://support.liveagent.com/647358-MCP-Integration-for-agents",
+              "title": "MCP Integration for agents",
+              "quote": "**MCP server URL**\n\nhttps://<your-liveagent-domain>/api/mcp\n\n**Transport protocol**\n\nStreamable HTTP\n\n**Authentication**\n\nOAuth 2.1 (Authorization Code + PKCE) or Bearer token",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            },
+            {
+              "url": "https://www.liveagent.com/pricing/",
+              "title": "LiveAgent Pricing & Plans: AI on Every Plan, 30-Day Free Trial",
+              "quote": "Business and Enterprise: connect LiveAgent’s MCP server to external AI tools such as Claude.",
+              "retrieved_at": "2026-11-24",
+              "published_at": "2026-11-23",
+              "published_label": "Published January 29, 2019; modified November 23, 2026"
+            }
+          ]
+        },
+        "composio_toolkit": {
+          "status": "checked",
+          "value": "not_listed",
+          "reason": "No LiveAgent product appears in the current complete Composio catalog, and the repository alias file contains no LiveAgent alias. The complete catalog states its total toolkit count; no different product was substituted. The catalog is undated.",
+          "evidence": [
+            {
+              "url": "https://docs.composio.dev/toolkits.md",
+              "title": "Toolkits",
+              "quote": "Composio supports 1841 toolkits for building AI agents.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            }
+          ]
+        },
+        "verdict": {
+          "status": "checked",
+          "value": "documented_build_candidate",
+          "reason": "A no-card trial, documented trial API testing, and broad REST coverage make LiveAgent a core-API build candidate. External MCP requires Business or Enterprise, and no exact Composio toolkit is listed.",
+          "evidence": [
+            {
+              "url": "https://www.liveagent.com/pricing/",
+              "title": "LiveAgent Pricing & Plans: AI on Every Plan, 30-Day Free Trial",
+              "quote": "Yes. Every plan starts with a 30-day free trial, and no credit card is required.",
+              "retrieved_at": "2026-11-24",
+              "published_at": "2026-11-23",
+              "published_label": "Published January 29, 2019; modified November 23, 2026"
+            },
+            {
+              "url": "https://support.liveagent.com/567924-Documentation",
+              "title": "Documentation",
+              "quote": "Consider registering a new free Trial account for testing purposes, before using API with your live account.",
+              "retrieved_at": "2026-11-24",
+              "published_at": "2023-04-14",
+              "published_label": "Updated April 14, 2023"
+            },
+            {
+              "url": "https://support.liveagent.com/802463-rest-api",
+              "title": "REST API",
+              "quote": "REST API",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "number": 17,
+      "app": "Plain",
+      "category": "Support and Helpdesk",
+      "summary": "Plain provides a broad GraphQL API with permission-scoped machine-user keys and OAuth apps, a seven-day no-card trial, and a remote OAuth-only vendor MCP server tied to individual user permissions.",
+      "blocker": "The vendor MCP server supports OAuth only and requires each connecting person to have a Plain account; GraphQL API keys are separate machine-user credentials. Production member seats are paid even though Viewer seats are free.",
+      "next_action": "Start the seven-day trial, create a machine user with least-privilege API-key permissions for GraphQL automation, or use per-user browser OAuth for the remote MCP server.",
+      "fields": {
+        "auth": {
+          "status": "checked",
+          "value": [
+            "Permission-scoped API keys for machine users",
+            "OAuth apps for calls made as a workspace user"
+          ],
+          "reason": "Plain's GraphQL API accepts API keys as bearer tokens and allows fine-grained permissions per machine-user key. OAuth apps are available when calling the API as a user. These core API credentials are distinct from the MCP server's OAuth-only authentication.",
+          "evidence": [
+            {
+              "url": "https://www.plain.com/docs/graphql/authentication",
+              "title": "Authentication",
+              "quote": "A machine user can have several API keys, so you can rotate them without downtime. Each API key carries its own fine-grained permissions.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            },
+            {
+              "url": "https://www.plain.com/docs/graphql/authentication",
+              "title": "Authentication",
+              "quote": "To call the API as a user in your workspace, use an OAuth app.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            },
+            {
+              "url": "https://www.plain.com/docs/graphql/introduction",
+              "title": "Introduction",
+              "quote": "Authorization: Bearer YOUR_TOKEN where the token is your API key.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            }
+          ]
+        },
+        "credential_gate": {
+          "status": "checked",
+          "value": "self_serve_trial",
+          "gate_class": "self_serve_trial",
+          "reason": "Plain offers a self-serve seven-day trial without a credit card, and machine users/API keys can be created in workspace settings. Production member seats are paid; Viewer seats are free but do not replace integration credentials. The pricing page is dated November 23, 2026, while the detailed billing page is undated.",
+          "evidence": [
+            {
+              "url": "https://www.plain.com/pricing",
+              "title": "Plain Pricing — Plans from $45/user/month | 7-Day Free Trial",
+              "quote": "7 day free trial\n\nNo credit card required",
+              "retrieved_at": "2026-11-24",
+              "published_at": "2026-11-23",
+              "published_label": "Published November 23, 2026"
+            },
+            {
+              "url": "https://www.plain.com/docs/product/billing/pricing.md",
+              "title": "Pricing",
+              "quote": "Plain has 3 plans: Foundation, Horizon, and Frontier. Each plan charges a price for every member seat, the seat a user needs to reply to customers, and includes a monthly allowance of credits for your workspace. Viewer seats are free and unlimited on every plan. Every plan starts with a free 7-day trial, and the trial doesn't need a credit card.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            },
+            {
+              "url": "https://www.plain.com/docs/graphql/authentication",
+              "title": "Authentication",
+              "quote": "Go to **Settings → Machine users & agents** and click **Add machine user**. Pick **API User** and click **Continue**.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            }
+          ]
+        },
+        "api_surface": {
+          "status": "checked",
+          "value": "GraphQL; broad documented surface",
+          "api_types": ["GraphQL"],
+          "breadth": "broad",
+          "reason": "Plain states that its own product runs on the same GraphQL API with no UI/API capability limitations, supports common GraphQL clients, and provides a schema plus extensive operation documentation. The GraphQL documentation is undated.",
+          "evidence": [
+            {
+              "url": "https://www.plain.com/docs/graphql/introduction",
+              "title": "Introduction",
+              "quote": "Plain itself is built on this same GraphQL API. This means that there are **no limitations** in what can be done via the API vs the UI.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            },
+            {
+              "url": "https://www.plain.com/docs/graphql/introduction",
+              "title": "Introduction",
+              "quote": "Our API is compatible with all common GraphQL clients with the following details:\n\n* **API URL:** `https://core-api.uk.plain.com/graphql/v1`\n* **Allowed method**: POST",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            }
+          ]
+        },
+        "official_mcp": {
+          "status": "checked",
+          "value": "vendor_server",
+          "mcp_mode": "remote",
+          "reason": "Plain operates a remote HTTP MCP server at mcp.plain.com. It uses OAuth and inherits the connecting user's permissions; API keys are not used for the vendor MCP server. The MCP documentation is undated, while the separate OAuth-only clarification was updated September 2, 2026.",
+          "evidence": [
+            {
+              "url": "https://www.plain.com/docs/agents/mcp-server",
+              "title": "MCP server",
+              "quote": "The Plain MCP server at `https://mcp.plain.com/mcp` lets tools like Claude, ChatGPT, and Cursor work with your support data directly.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            },
+            {
+              "url": "https://www.plain.com/docs/agents/mcp-server",
+              "title": "MCP server",
+              "quote": "MCP clients that run locally (not in the browser) can connect to Plain if they support remote HTTP servers. Point it at `https://mcp.plain.com/mcp` and complete the OAuth flow when prompted.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            },
+            {
+              "url": "https://www.plain.com/docs/agents/mcp-server",
+              "title": "MCP server",
+              "quote": "Plain MCP uses OAuth to allow your MCP server connection to share the same context as your normal web app user. No additional managing of permissions required. This means replies to threads will appear as though they come from your user.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            },
+            {
+              "url": "https://help.plain.com/article/does-the-plain-mcp-server-support-api-key-authentication-h7d83qtfdzxo4h49x4oyklwx",
+              "title": "Does the Plain MCP server support API key authentication?",
+              "quote": "No. The Plain Model Context Protocol (MCP) server at `https://mcp.plain.com/mcp` supports OAuth only.",
+              "retrieved_at": "2026-11-24",
+              "published_at": "2026-09-02",
+              "published_label": "Published and updated September 2, 2026"
+            }
+          ]
+        },
+        "composio_toolkit": {
+          "status": "checked",
+          "value": "listed_exact",
+          "reason": "The current complete Composio catalog lists the exact Plain toolkit with slug PLAIN; the separate Plain MCP product was not substituted. The catalog metadata is undated.",
+          "evidence": [
+            {
+              "url": "https://docs.composio.dev/toolkits.md",
+              "title": "Toolkits",
+              "quote": "| [Plain](/toolkits/plain.md) | `PLAIN` | 120 | 11 | API_KEY | — |",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            }
+          ]
+        },
+        "verdict": {
+          "status": "checked",
+          "value": "documented_build_candidate",
+          "reason": "A no-card trial, self-service machine-user credentials, and a broad GraphQL API make Plain a build candidate. Vendor MCP is OAuth-only and per-user, while production member seats are paid. The detailed billing documentation is undated.",
+          "evidence": [
+            {
+              "url": "https://www.plain.com/pricing",
+              "title": "Plain Pricing — Plans from $45/user/month | 7-Day Free Trial",
+              "quote": "7 day free trial\n\nNo credit card required",
+              "retrieved_at": "2026-11-24",
+              "published_at": "2026-11-23",
+              "published_label": "Published November 23, 2026"
+            },
+            {
+              "url": "https://www.plain.com/docs/graphql/introduction",
+              "title": "Introduction",
+              "quote": "Plain itself is built on this same GraphQL API. This means that there are **no limitations** in what can be done via the API vs the UI.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            },
+            {
+              "url": "https://www.plain.com/docs/product/billing/pricing.md",
+              "title": "Pricing",
+              "quote": "Every plan starts with a free 7-day trial, and the trial doesn't need a credit card.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "number": 18,
+      "app": "Help Scout",
+      "category": "Support and Helpdesk",
+      "summary": "Help Scout provides broad REST APIs with Mailbox OAuth and separate Docs API keys, requires an API-enabled paid plan, and operates a GA remote MCP server whose new connections are read-only.",
+      "blocker": "API access is included only on Standard, Plus, and Pro plans. New MCP connections are read-only, report tools require Plus or Pro, and Docs tools require a separate Docs API key and permission.",
+      "next_action": "Choose an API-enabled plan, create a Mailbox OAuth app, provision Docs permissions and a Docs API key if needed, and connect the remote MCP server with read-only expectations.",
+      "fields": {
+        "auth": {
+          "status": "checked",
+          "value": [
+            "Mailbox API OAuth 2.0 Authorization Code access tokens",
+            "Mailbox API OAuth 2.0 Client Credentials access tokens",
+            "Per-user Docs API key used as the HTTP Basic username"
+          ],
+          "reason": "Help Scout's Mailbox API uses OAuth 2.0 Authorization Code for external integrations and Client Credentials for internal integrations. Its Docs API is separate and uses a per-user API key through HTTP Basic authentication, with permissions granted by an owner/admin.",
+          "evidence": [
+            {
+              "url": "https://developer.helpscout.com/mailbox-api/overview/authentication/",
+              "title": "Authentication",
+              "quote": "This is an HTTPS-only API and it uses OAuth 2.0 authorization, implementing Authorization Code and Client Credential flows.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            },
+            {
+              "url": "https://developer.helpscout.com/mailbox-api/overview/authentication/",
+              "title": "Authentication",
+              "quote": "The Authorization Code flow is typically used for integrations to be used by other Help Scout users. The Client Credentials flow is meant for internal integrations.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            },
+            {
+              "url": "https://developer.helpscout.com/docs-api/",
+              "title": "Docs API Overview",
+              "quote": "The API key is passed via HTTP Basic Authentication and goes in the username field. A dummy password, such as X, goes in the password field.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            }
+          ]
+        },
+        "credential_gate": {
+          "status": "checked",
+          "value": "paid_plan",
+          "gate_class": "paid_plan",
+          "reason": "The dated MCP documentation states that API access is included on Standard, Plus, and Pro and that Light Users cannot connect because they lack API access. Free access is not listed as API-enabled, so API credential use is classified as paid-plan gated.",
+          "evidence": [
+            {
+              "url": "https://docs.helpscout.com/article/1779-help-scout-mcp-server",
+              "title": "Connect your AI Agent to Help Scout via MCP",
+              "quote": "Your Help Scout account must have API access, which is included on the Standard, Plus, and Pro plans.",
+              "retrieved_at": "2026-11-24",
+              "published_at": "2026-10-16",
+              "published_label": "Updated October 16, 2026"
+            },
+            {
+              "url": "https://docs.helpscout.com/article/1779-help-scout-mcp-server",
+              "title": "Connect your AI Agent to Help Scout via MCP",
+              "quote": "Light Users can't connect because they don't have API access.",
+              "retrieved_at": "2026-11-24",
+              "published_at": "2026-10-16",
+              "published_label": "Updated October 16, 2026"
+            }
+          ]
+        },
+        "api_surface": {
+          "status": "checked",
+          "value": "REST; broad documented surface",
+          "api_types": ["REST"],
+          "breadth": "broad",
+          "reason": "Help Scout's official documentation index explicitly calls the Inbox API 2.0 its primary REST API and documents conversations, customers, reports, mailboxes, webhooks, users, teams, workflows, tags, properties, Docs API, and Chat API resources. The index is undated.",
+          "evidence": [
+            {
+              "url": "https://developer.helpscout.com/llms.txt",
+              "title": "Help Scout developer documentation",
+              "quote": "## Inbox API 2.0 (Primary API)\n\nThe primary REST API for managing Help Scout conversations, customers, and support operations.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            },
+            {
+              "url": "https://developer.helpscout.com/mailbox-api/",
+              "title": "Inbox API 2.0",
+              "quote": "Welcome to the second generation of our Inbox API. This is an HTTPS-only API, with OAuth 2 authentication and CORS support running at:\n\n    https://api.helpscout.net/v2",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            }
+          ]
+        },
+        "official_mcp": {
+          "status": "checked",
+          "value": "vendor_server",
+          "mcp_mode": "remote",
+          "reason": "Help Scout operates a remote MCP server with per-user OAuth sign-in and user-scoped data access. The connector is generally available, not early access; new connections are read-only, report tools require Plus or Pro, and Docs tools require a separate Docs API key.",
+          "evidence": [
+            {
+              "url": "https://docs.helpscout.com/article/1779-help-scout-mcp-server",
+              "title": "Connect your AI Agent to Help Scout via MCP",
+              "quote": "Help Scout MCP gives AI assistants secure, official access to Help Scout data. You can connect Claude, ChatGPT, Cursor, and your own internal AI tools directly to Help Scout to pull up conversations, customer details, mailbox data, and Docs content.",
+              "retrieved_at": "2026-11-24",
+              "published_at": "2026-10-16",
+              "published_label": "Updated October 16, 2026"
+            },
+            {
+              "url": "https://docs.helpscout.com/article/1779-help-scout-mcp-server",
+              "title": "Connect your AI Agent to Help Scout via MCP",
+              "quote": "Set the remote MCP server URL to `https://mcp.helpscout.net/mcp`",
+              "retrieved_at": "2026-11-24",
+              "published_at": "2026-10-16",
+              "published_label": "Updated October 16, 2026"
+            },
+            {
+              "url": "https://docs.helpscout.com/article/1779-help-scout-mcp-server",
+              "title": "Connect your AI Agent to Help Scout via MCP",
+              "quote": "**Read-only access.** Connections created today are read-only;  your AI Agent can find and summarize information, but it can't reply to customers, add notes, change tags, or edit Docs articles.",
+              "retrieved_at": "2026-11-24",
+              "published_at": "2026-10-16",
+              "published_label": "Updated October 16, 2026"
+            },
+            {
+              "url": "https://docs.helpscout.com/article/1779-help-scout-mcp-server",
+              "title": "Connect your AI Agent to Help Scout via MCP",
+              "quote": "Inbox tools connect automatically when you authorize the integration. Enabling Docs tools requires an additional step because the Docs API uses its own API key.",
+              "retrieved_at": "2026-11-24",
+              "published_at": "2026-10-16",
+              "published_label": "Updated October 16, 2026"
+            }
+          ]
+        },
+        "composio_toolkit": {
+          "status": "checked",
+          "value": "listed_exact",
+          "reason": "The current complete Composio catalog lists the exact Help Scout toolkit with slug HELP_SCOUT. The catalog metadata is undated.",
+          "evidence": [
+            {
+              "url": "https://docs.composio.dev/toolkits.md",
+              "title": "Toolkits",
+              "quote": "| [Help Scout](/toolkits/help_scout.md) | `HELP_SCOUT` | 129 | 0 | OAUTH2 | No |",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            }
+          ]
+        },
+        "verdict": {
+          "status": "checked",
+          "value": "gated_build_candidate",
+          "reason": "Help Scout's broad REST API supports a build candidate, but API access requires Standard, Plus, or Pro. MCP is GA but new connections are read-only and Docs access needs a separate key. The API documentation index is undated.",
+          "evidence": [
+            {
+              "url": "https://docs.helpscout.com/article/1779-help-scout-mcp-server",
+              "title": "Connect your AI Agent to Help Scout via MCP",
+              "quote": "Your Help Scout account must have API access, which is included on the Standard, Plus, and Pro plans.",
+              "retrieved_at": "2026-11-24",
+              "published_at": "2026-10-16",
+              "published_label": "Updated October 16, 2026"
+            },
+            {
+              "url": "https://developer.helpscout.com/llms.txt",
+              "title": "Help Scout developer documentation",
+              "quote": "The primary REST API for managing Help Scout conversations, customers, and support operations.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            },
+            {
+              "url": "https://docs.helpscout.com/article/1779-help-scout-mcp-server",
+              "title": "Connect your AI Agent to Help Scout via MCP",
+              "quote": "**Read-only access.** Connections created today are read-only;  your AI Agent can find and summarize information, but it can't reply to customers, add notes, change tags, or edit Docs articles.",
+              "retrieved_at": "2026-11-24",
+              "published_at": "2026-10-16",
+              "published_label": "Updated October 16, 2026"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "number": 19,
+      "app": "Gorgias",
+      "category": "Support and Helpdesk",
+      "summary": "Gorgias provides a broad REST API with user-bound API keys for private apps and OAuth2 for reviewed public apps, offers a seven-day all-features trial, and operates a paid-plan remote MCP server that remains in open beta.",
+      "blocker": "Public apps require Gorgias review and OAuth2 developer-portal registration. MCP is limited to paid plans and remains in open beta, although core private-app API access can be tested during the all-features trial.",
+      "next_action": "Create a private access token during the trial, use REST API permissions appropriate to the integration user, pursue OAuth review for public distribution, and use a paid plan when connecting the open-beta MCP server.",
+      "fields": {
+        "auth": {
+          "status": "checked",
+          "value": [
+            "User-bound API keys for private apps using HTTP Basic authentication",
+            "OAuth2 access tokens for public apps"
+          ],
+          "reason": "Gorgias permits API-key authentication only for private apps and requires OAuth2 for public apps. Each access token is tied to a user and inherits that user's permissions; admins can generate and revoke tokens in account settings.",
+          "evidence": [
+            {
+              "url": "https://developers.gorgias.com/docs/access-tokens-api-keys",
+              "title": "Access Tokens (API Keys)",
+              "quote": "Please remember that the API key authentication method can be used only for private apps. If you plan to build a public app you have to use OAuth2.",
+              "retrieved_at": "2026-11-24",
+              "published_at": "2025-09-16",
+              "published_label": "Updated September 16, 2025"
+            },
+            {
+              "url": "https://developers.gorgias.com/docs/access-tokens-api-keys",
+              "title": "Access Tokens (API Keys)",
+              "quote": "Each access token (or API key) is tied to a specific user and has the same permissions as the user that holds them. Requests made with an access token will act on behalf of a user and will have access to the resources their permissions allow.",
+              "retrieved_at": "2026-11-24",
+              "published_at": "2025-09-16",
+              "published_label": "Updated September 16, 2025"
+            },
+            {
+              "url": "https://developers.gorgias.com/docs/access-tokens-api-keys",
+              "title": "Access Tokens (API Keys)",
+              "quote": "How do I get my API key?\n\n1. Log in to your Gorgias account\n2. Navigate to Settings → REST API\n3. Click the Create API key button",
+              "retrieved_at": "2026-11-24",
+              "published_at": "2025-09-16",
+              "published_label": "Updated September 16, 2025"
+            }
+          ]
+        },
+        "credential_gate": {
+          "status": "checked",
+          "value": "self_serve_trial",
+          "gate_class": "self_serve_trial",
+          "reason": "Gorgias offers a seven-day trial without payment information and states that the trial includes all features. Private apps need no special creation process and can use access tokens. Public-app review and paid-plan MCP are separate distribution/feature gates. The pricing page is undated.",
+          "evidence": [
+            {
+              "url": "https://www.gorgias.com/pricing",
+              "title": "Gorgias Pricing - AI-Powered Ecommerce CX Platform Plans",
+              "quote": "Yes, the Gorgias trial gives you access to all features so you can fully test the platform before committing.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            },
+            {
+              "url": "https://www.gorgias.com/pricing",
+              "title": "Gorgias Pricing - AI-Powered Ecommerce CX Platform Plans",
+              "quote": "The Gorgias trial period lasts 7 days.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            },
+            {
+              "url": "https://www.gorgias.com/pricing",
+              "title": "Gorgias Pricing - AI-Powered Ecommerce CX Platform Plans",
+              "quote": "No, you don't need to enter payment info to start the Gorgias trial (/signup).",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            },
+            {
+              "url": "https://developers.gorgias.com/docs/private-vs-public-app",
+              "title": "Private vs. Public App",
+              "quote": "You don't need to follow any special process to create a private app.",
+              "retrieved_at": "2026-11-24",
+              "published_at": "2025-09-16",
+              "published_label": "Updated September 16, 2025"
+            }
+          ]
+        },
+        "api_surface": {
+          "status": "checked",
+          "value": "REST; broad documented surface",
+          "api_types": ["REST"],
+          "breadth": "broad",
+          "reason": "Gorgias explicitly structures its API around REST with resource-oriented URLs, JSON, standard HTTP verbs/codes, and a complete REST reference. Undocumented resources and operations are considered non-existing.",
+          "evidence": [
+            {
+              "url": "https://developers.gorgias.com/reference/introduction",
+              "title": "Introduction",
+              "quote": "The Gorgias API is structured with REST in mind. Our API has predictable resource-oriented URLs, accepts JSON-encoded request bodies, returns JSON-encoded responses, and uses standard HTTP response codes, authentication, and verbs.",
+              "retrieved_at": "2026-11-24",
+              "published_at": "2025-12-18",
+              "published_label": "Updated December 18, 2025"
+            },
+            {
+              "url": "https://developers.gorgias.com/reference/introduction",
+              "title": "Introduction",
+              "quote": "On this page, you'll find the complete REST API reference, examples, definitions of objects, and guides.",
+              "retrieved_at": "2026-11-24",
+              "published_at": "2025-12-18",
+              "published_label": "Updated December 18, 2025"
+            }
+          ]
+        },
+        "official_mcp": {
+          "status": "checked",
+          "value": "vendor_server",
+          "mcp_mode": "early_access",
+          "reason": "Gorgias operates a first-party remote MCP endpoint with OAuth authorization and role-scoped actions. The official blog updated October 5, 2026 still describes MCP as open beta for paid-plan customers, so early_access is retained rather than assuming GA from a later setup article that omits the beta label.",
+          "evidence": [
+            {
+              "url": "https://www.gorgias.com/blog/gorgias-mcp",
+              "title": "How to Connect Gorgias to Claude or ChatGPT (6 Workflows to Try Right Now)",
+              "quote": "**Availability:** Currently in open beta, open to all paid plan customers.",
+              "retrieved_at": "2026-11-24",
+              "published_at": "2026-10-05",
+              "published_label": "Updated October 5, 2026; created May 28, 2026"
+            },
+            {
+              "url": "https://www.gorgias.com/blog/gorgias-mcp",
+              "title": "How to Connect Gorgias to Claude or ChatGPT (6 Workflows to Try Right Now)",
+              "quote": "The Gorgias MCP provides a first-party bridge, giving you a secure, direct connection between your chosen AI assistant and your Gorgias account.",
+              "retrieved_at": "2026-11-24",
+              "published_at": "2026-10-05",
+              "published_label": "Updated October 5, 2026; created May 28, 2026"
+            },
+            {
+              "url": "https://helpcenter.gorgias.com/en-US/connect-your-ai-assistant-to-the-gorgias-mcp-6310546",
+              "title": "Connect your AI assistant to the Gorgias MCP",
+              "quote": "Gorgias MCP works with any MCP-compatible AI client. The setup process varies by client, but the connection URL is the same: https://mcp.gorgias.com/mcp",
+              "retrieved_at": "2026-11-24",
+              "published_at": "2026-10-26",
+              "published_label": "Updated October 26, 2026"
+            },
+            {
+              "url": "https://helpcenter.gorgias.com/en-US/connect-your-ai-assistant-to-the-gorgias-mcp-6310546",
+              "title": "Connect your AI assistant to the Gorgias MCP",
+              "quote": "Everyone can connect the Gorgias MCP, but the actions you can take with your AI assistant depend on the role assigned to your user in Gorgias.",
+              "retrieved_at": "2026-11-24",
+              "published_at": "2026-10-26",
+              "published_label": "Updated October 26, 2026"
+            }
+          ]
+        },
+        "composio_toolkit": {
+          "status": "checked",
+          "value": "listed_exact",
+          "reason": "The current complete Composio catalog lists the exact Gorgias toolkit with slug GORGIAS. The catalog metadata is undated.",
+          "evidence": [
+            {
+              "url": "https://docs.composio.dev/toolkits.md",
+              "title": "Toolkits",
+              "quote": "| [Gorgias](/toolkits/gorgias.md) | `GORGIAS` | 51 | 0 | API_KEY, OAUTH2 | Yes |",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            }
+          ]
+        },
+        "verdict": {
+          "status": "checked",
+          "value": "documented_build_candidate",
+          "reason": "The all-features no-card trial, private-app access-token path, and broad REST API make Gorgias a core build candidate. Public distribution requires review/OAuth2, and MCP is paid-plan open beta. The trial pricing evidence is undated.",
+          "evidence": [
+            {
+              "url": "https://www.gorgias.com/pricing",
+              "title": "Gorgias Pricing - AI-Powered Ecommerce CX Platform Plans",
+              "quote": "Yes, the Gorgias trial gives you access to all features so you can fully test the platform before committing.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            },
+            {
+              "url": "https://developers.gorgias.com/docs/private-vs-public-app",
+              "title": "Private vs. Public App",
+              "quote": "You don't need to follow any special process to create a private app.",
+              "retrieved_at": "2026-11-24",
+              "published_at": "2025-09-16",
+              "published_label": "Updated September 16, 2025"
+            },
+            {
+              "url": "https://developers.gorgias.com/reference/introduction",
+              "title": "Introduction",
+              "quote": "The Gorgias API is structured with REST in mind.",
+              "retrieved_at": "2026-11-24",
+              "published_at": "2025-12-18",
+              "published_label": "Updated December 18, 2025"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "number": 20,
+      "app": "Gladly",
+      "category": "Support and Helpdesk",
+      "summary": "Gladly documents a REST API with administrator-provisioned API Users and environment-bound tokens, provides sandbox testing through CSM/support when needed, and operates a closed-beta remote MCP server for eligible roles.",
+      "blocker": "An administrator must provision a dedicated integration user with API User permission before tokens can be created. A sandbox may require CSM/support, MCP is closed beta and enabled organization-wide by Gladly, and the complete Composio catalog has no exact Gladly toolkit.",
+      "next_action": "Have an administrator create a dedicated API User and token, request sandbox access and organization-level MCP enablement from the Gladly account team, and test REST operations with an eligible MCP role if participating in beta.",
+      "fields": {
+        "auth": {
+          "status": "checked",
+          "value": [
+            "User- and environment-bound API tokens",
+            "Token-based HTTP Basic authentication using the Gladly username and API token",
+            "Administrator-granted API User permission"
+          ],
+          "reason": "Gladly requires API tokens for REST access and documents token-based Basic Authentication over HTTPS. Tokens are tied to one user and environment, and only users granted API User permission can create/use them.",
+          "evidence": [
+            {
+              "url": "https://help.gladly.com/developer-tutorials/docs/setup-and-testing/",
+              "title": "Setup and Testing",
+              "quote": "Gladly API uses token-based Basic Authentication. API tokens are associated with designated Gladly users. Your user must have the API user permission to create and use an API token.",
+              "retrieved_at": "2026-11-24",
+              "published_at": "2025-02-01",
+              "published_label": "Published and updated February 1, 2025"
+            },
+            {
+              "url": "https://help.gladly.com/generate-api-tokens-and-create-webhooks/",
+              "title": "Generate API Tokens and Create Webhooks",
+              "quote": "API tokens are tied to a single user account and a particular environment. For example, an API token attached to Gladly user developer@customer.com in the Sandbox environment is not valid for developer@customer.com in the Production environment.",
+              "retrieved_at": "2026-11-24",
+              "published_at": "2025-02-13",
+              "published_label": "Published and updated February 13, 2025"
+            },
+            {
+              "url": "https://help.gladly.com/developer-tutorials/docs/setup-and-testing/",
+              "title": "Setup and Testing",
+              "quote": "The credentials must be passed via an Authorization HTTP header. All requests must be made over HTTPS.",
+              "retrieved_at": "2026-11-24",
+              "published_at": "2025-02-01",
+              "published_label": "Published and updated February 1, 2025"
+            }
+          ]
+        },
+        "credential_gate": {
+          "status": "checked",
+          "value": "admin_approval",
+          "gate_class": "admin_approval",
+          "reason": "Gladly documents that users need the API User role to create tokens and instructs administrators to create a dedicated integration user with API User plus Agent and/or Administrator roles. Sandbox purchase/enablement may also involve CSM/support, but core API credential creation is administrator-gated rather than universally sales-gated.",
+          "evidence": [
+            {
+              "url": "https://help.gladly.com/generate-api-tokens-and-create-webhooks/",
+              "title": "Generate API Tokens and Create Webhooks",
+              "quote": "For integrations not built by Gladly, a Gladly Administrator should create a new user with an API role + Agent and/or Administrator (check with your integration partner to confirm the required roles) account for each integration.",
+              "retrieved_at": "2026-11-24",
+              "published_at": "2025-02-13",
+              "published_label": "Published and updated February 13, 2025"
+            },
+            {
+              "url": "https://help.gladly.com/developer-tutorials/docs/setup-and-testing/",
+              "title": "Setup and Testing",
+              "quote": "To allow a user to create API tokens and access the API:\n\n1. Log in to your **Gladly instance**.\n2. Open the **menu** on the top left-hand portion of the page.\n3. Navigate to **Settings > Users**.\n4. Search and click on the user profile that should have access.\n5. You'll see a permission called **API User**. Select it, while keeping the user's Agent role intact.\n6. Click **Save** to give access.",
+              "retrieved_at": "2026-11-24",
+              "published_at": "2025-02-01",
+              "published_label": "Published and updated February 1, 2025"
+            },
+            {
+              "url": "https://help.gladly.com/developer-tutorials/docs/setup-and-testing/",
+              "title": "Setup and Testing",
+              "quote": "If you do not have a sandbox environment and are interested in purchasing one, please contact your Gladly CSM or Gladly Support team.",
+              "retrieved_at": "2026-11-24",
+              "published_at": "2025-02-01",
+              "published_label": "Published and updated February 1, 2025"
+            }
+          ]
+        },
+        "api_surface": {
+          "status": "checked",
+          "value": "REST; moderate documented surface",
+          "api_types": ["REST"],
+          "breadth": "moderate",
+          "reason": "Official Help Center documentation explicitly identifies the Gladly REST API, REST semantics, JSON, HTTPS, standard HTTP verbs, webhooks, rate limits, customers, answers, FAQs, tasks, and conversations. The direct developer REST reference failed to render, so breadth is conservatively moderate rather than broad.",
+          "evidence": [
+            {
+              "url": "https://help.gladly.com/developer-tutorials/docs/technical-planning.md",
+              "title": "Technical Planning",
+              "quote": "Resources follow REST semantics and utilize industry-standard HTTP verbs, response codes, and authentication schemes. In addition, all responses and payloads are in JSON with consistent error codes and formats.",
+              "retrieved_at": "2026-11-24",
+              "published_at": "2026-01-13",
+              "published_label": "Published and updated January 13, 2026"
+            },
+            {
+              "url": "https://help.gladly.com/developer-tutorials/docs/technical-planning.md",
+              "title": "Technical Planning",
+              "quote": "Gladly also provides Webhooks you can utilize to notify you in real-time as Events happen in Gladly.",
+              "retrieved_at": "2026-11-24",
+              "published_at": "2026-01-13",
+              "published_label": "Published and updated January 13, 2026"
+            },
+            {
+              "url": "https://help.gladly.com/developer-tutorials/docs/default-api-rate-limits.md",
+              "title": "Default API Rate Limits",
+              "quote": "Note that individual APIs may have their own API Rate Limit and will be documented as such. Otherwise, the following default rate limits apply.",
+              "retrieved_at": "2026-11-24",
+              "published_at": "2025-11-11",
+              "published_label": "Published and updated November 11, 2025"
+            },
+            {
+              "url": "https://help.gladly.com/developer-tutorials/docs/creating-conversation-and-tasks-in-gladly.md",
+              "title": "Creating Conversations and Tasks in Gladly",
+              "quote": "There are two ways that you can initiate new work for an Agent in Gladly via an integration:\n\n- Create Task API\n- Sending an Email to Gladly to generate a routable conversation item.",
+              "retrieved_at": "2026-11-24",
+              "published_at": "2026-01-19",
+              "published_label": "Published and updated January 19, 2026"
+            }
+          ]
+        },
+        "official_mcp": {
+          "status": "checked",
+          "value": "vendor_server",
+          "mcp_mode": "early_access",
+          "reason": "Gladly operates a tenant-specific remote MCP endpoint for Claude, with browser sign-in, consent, and the connecting user's permissions. Access is organization-wide during a closed beta and limited to specified eligible roles, so early_access is the correct mode. This is distinct from Gladly's client-only external MCP connections feature.",
+          "evidence": [
+            {
+              "url": "https://help.gladly.com/docs/set-up-the-gladly-mcp-for-claude",
+              "title": "Set up the Gladly MCP for Claude",
+              "quote": "Connect Claude to your Gladly organization so you can investigate sessions, improve Guides and Workflows, and test changes in plain English. Setup takes about 5 minutes and doesn't require any downloads.",
+              "retrieved_at": "2026-11-24",
+              "published_at": "2026-11-18",
+              "published_label": "Published and updated November 18, 2026"
+            },
+            {
+              "url": "https://help.gladly.com/docs/set-up-the-gladly-mcp-for-claude",
+              "title": "Set up the Gladly MCP for Claude",
+              "quote": "| `acme.us-1.gladly.com` | `https://mcp.us-1.gladly.com/acme/mcp` |",
+              "retrieved_at": "2026-11-24",
+              "published_at": "2026-11-18",
+              "published_label": "Published and updated November 18, 2026"
+            },
+            {
+              "url": "https://help.gladly.com/product-docs/docs/what-is-the-gladly-mcp-for-claude",
+              "title": "What is the Gladly MCP for Claude?",
+              "quote": "Your organization is in the beta. Gladly has enabled MCP access for your organization.",
+              "retrieved_at": "2026-11-24",
+              "published_at": "2026-11-18",
+              "published_label": "Published and updated November 18, 2026"
+            },
+            {
+              "url": "https://help.gladly.com/product-docs/docs/what-is-the-gladly-mcp-for-claude",
+              "title": "What is the Gladly MCP for Claude?",
+              "quote": "During the closed beta, MCP access is on or off for the whole organization. Anyone who can connect can both read and save changes, so only give the eligible roles to people you trust to edit your AI setup.",
+              "retrieved_at": "2026-11-24",
+              "published_at": "2026-11-18",
+              "published_label": "Published and updated November 18, 2026"
+            }
+          ]
+        },
+        "composio_toolkit": {
+          "status": "checked",
+          "value": "not_listed",
+          "reason": "No Gladly product appears in the current complete Composio catalog, and the repository alias file contains no Gladly alias. The complete catalog states its total toolkit count; no different product was substituted. The catalog is undated.",
+          "evidence": [
+            {
+              "url": "https://docs.composio.dev/toolkits.md",
+              "title": "Toolkits",
+              "quote": "Composio supports 1841 toolkits for building AI agents.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            }
+          ]
+        },
+        "verdict": {
+          "status": "checked",
+          "value": "gated_build_candidate",
+          "reason": "Gladly's documented REST API supports a build candidate, but administrator-provisioned API Users are required and sandbox access may involve CSM/support. MCP is closed beta and organization-enabled, and no exact Composio toolkit is listed.",
+          "evidence": [
+            {
+              "url": "https://help.gladly.com/generate-api-tokens-and-create-webhooks/",
+              "title": "Generate API Tokens and Create Webhooks",
+              "quote": "API tokens are required to use Gladly APIs for security and authentication purposes. Tokens can be accessed and created by users who at least have an API user role.",
+              "retrieved_at": "2026-11-24",
+              "published_at": "2025-02-13",
+              "published_label": "Published and updated February 13, 2025"
+            },
+            {
+              "url": "https://help.gladly.com/developer-tutorials/docs/technical-planning.md",
+              "title": "Technical Planning",
+              "quote": "Resources follow REST semantics and utilize industry-standard HTTP verbs, response codes, and authentication schemes.",
+              "retrieved_at": "2026-11-24",
+              "published_at": "2026-01-13",
+              "published_label": "Published and updated January 13, 2026"
+            },
+            {
+              "url": "https://help.gladly.com/product-docs/docs/what-is-the-gladly-mcp-for-claude",
+              "title": "What is the Gladly MCP for Claude?",
+              "quote": "During the closed beta, MCP access is on or off for the whole organization.",
+              "retrieved_at": "2026-11-24",
+              "published_at": "2026-11-18",
+              "published_label": "Published and updated November 18, 2026"
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

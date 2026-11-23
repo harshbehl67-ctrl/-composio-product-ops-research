@@ -1,0 +1,102 @@
+{
+  "app": {
+    "number": 46,
+    "name": "Squarespace",
+    "category": "Ecommerce",
+    "hint": "developers.squarespace.com"
+  },
+  "replayed_at": "2026-11-23T18:19:18.841483+00:00",
+  "source_passes": [
+    "data/pass2/046.json",
+    "data/pass4/046.json"
+  ],
+  "source_search": "data/new_search/046.json",
+  "publication_date_note": "Published labels are retained exactly as supplied by search; missing labels are null. Relative labels must not be treated as exact publication dates.",
+  "claims": {
+    "auth": {
+      "value": [
+        "OAuth 2.0",
+        "API key"
+      ],
+      "sources": [
+        "https://commerce-apis.squarespace.com/commerce-apis/authentication-and-permissions",
+        "https://support.squarespace.com/hc/en-us/articles/236297987-Squarespace-API-keys",
+        "https://commerce-apis.squarespace.com/oauth"
+      ],
+      "evidence": [
+        {
+          "value": "OAuth 2.0",
+          "url": "https://commerce-apis.squarespace.com/commerce-apis/authentication-and-permissions",
+          "excerpt": "h client process by filling out this form .\nOnce you've obtained OAuth credentials, you can use our OAuth 2.0 Guide to learn how to authorize your application to integrate with Squarespace and use Squarespace APIs. Next steps Make requests to Commerce APIs Read the FAQ for answers to comm",
+          "published_label": null
+        },
+        {
+          "value": "API key",
+          "url": "https://commerce-apis.squarespace.com/commerce-apis/authentication-and-permissions",
+          "excerpt": "ch Commerce API below.\nThen, depending on your development needs,\nauthenticate requests by using an API key or OAuth access token. Remember: Requests only have access to data for\nthe website that owns the API key or OAuth access token. API permission levels Forms API Read Only : View fo",
+          "published_label": null
+        },
+        {
+          "value": "API key",
+          "url": "https://support.squarespace.com/hc/en-us/articles/236297987-Squarespace-API-keys",
+          "excerpt": "can build direct integrations with other software, with a wide variety of use cases. Create a Forms API key to use our integration with Zapier, or create commerce API keys to build your own custom commerce tools. Using the data we provide access to through our API, you can: Connect to a",
+          "published_label": "2 months ago"
+        },
+        {
+          "value": "OAuth 2.0",
+          "url": "https://commerce-apis.squarespace.com/oauth",
+          "excerpt": "ypes Template Annotations Style Editor Error Reporting URL Queries Accessing Squarespace APIs using OAuth 2.0 Squarespace uses OAuth 2.0 to authorize third-party applications to integrate with Squarespace and consume Squarespace APIs. Terms Client Third-party application that needs to mak",
+          "published_label": null
+        }
+      ],
+      "reason": "Provisional extraction: validate scope and completeness against the cited page."
+    },
+    "credential_gate": {
+      "value": "unknown",
+      "sources": [],
+      "evidence": [],
+      "reason": "No sufficiently specific positive evidence extracted; review targeted search results."
+    },
+    "api_surface": {
+      "value": "unknown",
+      "sources": [],
+      "evidence": [],
+      "reason": "No sufficiently specific positive evidence extracted; review targeted search results."
+    },
+    "official_mcp": {
+      "value": "yes (provisional)",
+      "sources": [
+        "https://developers.squarespace.com/mcp/overview"
+      ],
+      "evidence": [
+        {
+          "value": "yes (provisional)",
+          "url": "https://developers.squarespace.com/mcp/overview",
+          "excerpt": "Squarespace Developer Platform: APIs, Apps, and Docs Menu Overview of the Squarespace MCP Server The Squarespace MCP server connects AI assistants to Squarespace. It's built on the Model Context Protocol , an open standard for connecting AI applications to outside tools, so assistan",
+          "published_label": null,
+          "context_warning": "Review vendor ownership, dates, and scope."
+        }
+      ],
+      "reason": "Provisional; check source date, scope, and vendor ownership."
+    },
+    "composio_toolkit": {
+      "value": "unknown",
+      "sources": [],
+      "evidence": [],
+      "reason": "No exact or reviewed alias match; absence is not established."
+    },
+    "verdict": {
+      "value": "unknown",
+      "sources": [],
+      "evidence": [],
+      "reason": "A supported access path, authentication method and API surface were not all extracted."
+    }
+  },
+  "validation": [
+    "Automatic extraction is provisional and not a verified final claim",
+    "Unknown is not evidence of absence",
+    "No Composio-to-vendor-MCP inference",
+    "Basic authentication may be endpoint-specific",
+    "Client-only and negated statements are not positive MCP evidence"
+  ]
+}

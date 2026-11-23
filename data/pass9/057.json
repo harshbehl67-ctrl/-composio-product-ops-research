@@ -1,0 +1,191 @@
+{
+  "app": {
+    "number": 57,
+    "name": "Bright Data",
+    "category": "Data, SEO and Scraping",
+    "hint": "brightdata.com"
+  },
+  "replayed_at": "2026-11-23T18:41:34.887349+00:00",
+  "source_passes": [
+    "data/pass2/057.json",
+    "data/pass4/057.json"
+  ],
+  "source_searches": [
+    "data/new_search/057.json",
+    "data/pass4_search/057.json"
+  ],
+  "publication_date_note": "Search publication labels are retained exactly; null means no label was available. Relative labels are not exact dates.",
+  "claims": {
+    "auth": {
+      "value": [
+        "API key",
+        "API token",
+        "Bearer token"
+      ],
+      "status": "provisional",
+      "sources": [
+        "https://brightdata.com/pricing/crawl-api",
+        "https://brightdata.com/pricing/mcp-server",
+        "https://brightdata.com/blog/ai/warp-cli-with-web-mcp",
+        "https://brightdata.com/blog/ai/bright-data-openapi-specs"
+      ],
+      "evidence": [
+        {
+          "value": "API key",
+          "url": "https://brightdata.com/pricing/crawl-api",
+          "excerpt": "ntrol panel, which provides comprehensive documentation and a user-friendly dashboard for API key management and settings. This approach minimizes setup requirements, allowing immediate access to a platform that is highly scalable and reliable for web data extraction",
+          "published_label": null
+        },
+        {
+          "value": "API key",
+          "url": "https://brightdata.com/pricing/mcp-server",
+          "excerpt": "ver/overview) to understand the API, request structure, and supported features. [Get your API key](https://brightdata.com/cp/setting/users) [ Try out the MCP Smithery playground ](https://smithery.ai/server/@luminati-io/brightdata-mcp/tools) to test and experiment wi",
+          "published_label": null
+        },
+        {
+          "value": "API token",
+          "url": "https://brightdata.com/pricing/mcp-server",
+          "excerpt": "there is a limit of 5000 request per month. Where do I get my API keys? You can get your API token from the [user settings page](https://brightdata.com/cp/setting/users) in your Bright Data account. Make sure you have an account on [brightdata.com](https://brightdata.",
+          "published_label": null
+        },
+        {
+          "value": "API key",
+          "url": "https://brightdata.com/blog/ai/warp-cli-with-web-mcp",
+          "excerpt": "d on your system (available for macOS, Linux, and Windows). A Bright Data account with an API key ready (do not worry, you will be guided through creating one if you do not have it yet). Also, optional but helpful background knowledge is: A general understanding of h",
+          "published_label": null
+        },
+        {
+          "value": "API token",
+          "url": "https://brightdata.com/blog/ai/warp-cli-with-web-mcp",
+          "excerpt": "Scraping Infrastructure ” page. You should see the two zones listed there. Note: If your API token does not have Admin permissions, these zones may not be created automatically. In that case, you can set them up manually and specify their names using environment varia",
+          "published_label": null
+        },
+        {
+          "value": "API key",
+          "url": "https://brightdata.com/blog/ai/bright-data-openapi-specs",
+          "excerpt": "ters).\n        \"401\":\n          description: Unauthorized (invalid or missing Bright Data API key). Note : The securitySchemes section specifies a security scheme that uses HTTP bearer authentication . In detail, clients must send a BRIGHT_DATA_API_KEY as a bearer to",
+          "published_label": null
+        },
+        {
+          "value": "Bearer token",
+          "url": "https://brightdata.com/blog/ai/bright-data-openapi-specs",
+          "excerpt": "uses HTTP bearer authentication . In detail, clients must send a BRIGHT_DATA_API_KEY as a bearer token in the Authorization header when calling the API. At the same time, most AI platforms already include built‑in authentication methods and may ignore that specification f",
+          "published_label": null
+        }
+      ],
+      "reason": "Provisional extraction; validate scope and completeness against cited pages."
+    },
+    "credential_gate": {
+      "value": [
+        "partner_or_sales",
+        "self_serve_trial"
+      ],
+      "status": "provisional",
+      "sources": [
+        "https://brightdata.com/pricing/crawl-api",
+        "https://brightdata.com/pricing/mcp-server",
+        "https://brightdata.com/products/fetch-api"
+      ],
+      "evidence": [
+        {
+          "value": "partner_or_sales",
+          "url": "https://brightdata.com/pricing/crawl-api",
+          "excerpt": "flows, thus facilitating easy adoption in developer environments. Not sure what you need? Contact sales",
+          "published_label": null
+        },
+        {
+          "value": "self_serve_trial",
+          "url": "https://brightdata.com/pricing/crawl-api",
+          "excerpt": "without a monthly commitment 380K Requests $ 1.3 /1K Requests $ 499 Billed monthly Start free trial Tailored for teams looking to scale their operations 900K Requests $ 1.1 /1K Requests $ 999 Billed monthly Start free trial Designed for large teams with extensive opera",
+          "published_label": null
+        },
+        {
+          "value": "partner_or_sales",
+          "url": "https://brightdata.com/pricing/mcp-server",
+          "excerpt": "ase see: https://docs.brightdata.com/mcp-server/remote/quickstart Not sure what you need? Contact sales",
+          "published_label": null
+        },
+        {
+          "value": "partner_or_sales",
+          "url": "https://brightdata.com/products/fetch-api",
+          "excerpt": "les proxies, CAPTCHAs and blocking, so you get page content ready for your LLM or parser. Contact sales Start free 5K free records/month · Credit card not required Trusted by 50,000+ customers worldwide How it works From URL to clean data in 3 steps No proxies to configure",
+          "published_label": null
+        }
+      ],
+      "reason": "Provisional extraction; validate scope and completeness against cited pages."
+    },
+    "api_surface": {
+      "value": "REST; moderate documented surface",
+      "status": "provisional",
+      "sources": [
+        "https://brightdata.com/blog/ai/bright-data-openapi-specs"
+      ],
+      "evidence": [
+        {
+          "value": [
+            "REST"
+          ],
+          "breadth": "moderate",
+          "url": "https://brightdata.com/blog/ai/bright-data-openapi-specs",
+          "excerpt": "OpenAPI Specs: AI Integration with SERP & Unlocker APIs Accessibility Menu skip to content Sign-up now and we’ll match your first deposit dollar for dollar, up to $500! Start now Blog / AI AI Bright Data OpenAPI Specifications for Integration in AI as Tools Discover how Bright Da",
+          "published_label": null
+        }
+      ],
+      "reason": "Provisional extraction; validate scope and completeness against cited pages."
+    },
+    "official_mcp": {
+      "value": "vendor_server",
+      "status": "provisional",
+      "sources": [
+        "https://brightdata.com/pricing/mcp-server",
+        "https://brightdata.com/blog/ai/warp-cli-with-web-mcp"
+      ],
+      "evidence": [
+        {
+          "value": "vendor_server",
+          "url": "https://brightdata.com/pricing/mcp-server",
+          "excerpt": "d CCPA – respecting requests to exercise privacy rights and more. MCP Pricing FAQ What is Bright Data MCP Server? Bright Data MCP (Model Context Protocol) is a server that enables LLMs, AI agents, and applications to access, discover, and extract web data in real-time. It allows MCP clients like Claude Desktop, Cursor, and Windsurf to search the w",
+          "published_label": null,
+          "context_note": "Vendor-owned server statement; review date and access scope."
+        },
+        {
+          "value": "vendor_server",
+          "url": "https://brightdata.com/blog/ai/warp-cli-with-web-mcp",
+          "excerpt": "nformation to give you accurate, up-to-date assistance? That is exactly what you get with Bright Data MCP server . This open-source server ( now with a free tier! ) provides 60+ AI-ready tools for web interaction and data collection. Bright Data MCP Integration Here are two of the core tools available on the Bright Data MCP server: search_en",
+          "published_label": null,
+          "context_note": "Vendor-owned server statement; review date and access scope."
+        }
+      ],
+      "reason": "Provisional; check date, ownership and access scope."
+    },
+    "composio_toolkit": {
+      "value": "listed",
+      "status": "provisional",
+      "sources": [
+        "https://docs.composio.dev/toolkits/brightdata"
+      ],
+      "evidence": [],
+      "reason": "Catalog match only; not vendor MCP evidence."
+    },
+    "verdict": {
+      "value": "partner_outreach",
+      "status": "provisional",
+      "sources": [
+        "https://brightdata.com/pricing/crawl-api",
+        "https://brightdata.com/pricing/mcp-server",
+        "https://brightdata.com/blog/ai/warp-cli-with-web-mcp",
+        "https://brightdata.com/blog/ai/bright-data-openapi-specs",
+        "https://brightdata.com/products/fetch-api"
+      ],
+      "evidence": [],
+      "reason": "Inferred only from extracted auth, API and access evidence; independent review required."
+    }
+  },
+  "validation": [
+    "Automatic extraction is provisional until independently reviewed",
+    "Unknown is not evidence of absence",
+    "Composio evidence cannot establish vendor MCP",
+    "Client-only and negated MCP statements are not vendor-server proof",
+    "API breadth is a text-coverage heuristic, not an endpoint census"
+  ]
+}

@@ -1,0 +1,1779 @@
+{
+  "category": "Finance and Fintech",
+  "checked_at": "2026-11-24",
+  "records": [
+    {
+      "number": 81,
+      "app": "Stripe",
+      "category": "Finance and Fintech",
+      "summary": "Stripe documents a broad REST API with Dashboard-managed API keys, free sandbox development, pay-as-you-go production pricing, and a vendor-operated remote MCP server.",
+      "blocker": "Production use requires live-mode credentials and incurs transaction fees; Stripe MCP changes key eligibility on 11 January 2027.",
+      "next_action": "Create a restricted test key, validate required payment operations in a sandbox, and use OAuth or an agent API key for MCP before the 2027 key cutoff.",
+      "fields": {
+        "auth": {
+          "status": "checked",
+          "value": [
+            "API key (REST HTTP Basic username; test and live modes)",
+            "OAuth 2.0 (Stripe MCP user delegation)",
+            "Agent API key (independent Stripe MCP access)"
+          ],
+          "reason": "Official authentication documentation requires API keys and HTTP Basic Auth; the official MCP page separately documents OAuth and agent API keys. These pages are undated.",
+          "evidence": [
+            {
+              "url": "https://docs.stripe.com/api/authentication",
+              "title": "API authentication - Stripe Docs",
+              "quote": "The Stripe API uses API keys to authenticate requests. You can view and manage your API keys in the Stripe Dashboard.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            },
+            {
+              "url": "https://docs.stripe.com/api/authentication",
+              "title": "API authentication - Stripe Docs",
+              "quote": "The Stripe API authenticates requests using HTTP Basic Auth. Provide your API key as the basic auth username value. You don’t need to provide a password.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            },
+            {
+              "url": "https://docs.stripe.com/mcp",
+              "title": "Stripe MCP",
+              "quote": "Stripe’s MCP server supports two authentication methods:\n\n1. **OAuth**: Use OAuth when a client accesses Stripe on behalf of your Stripe user account.\n2. **Agent API keys**: Use an agent API key when an AI application needs independent, persistent access to Stripe.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            }
+          ]
+        },
+        "credential_gate": {
+          "status": "checked",
+          "value": "self_serve_free",
+          "gate_class": "self_serve_free",
+          "reason": "Dashboard-managed keys and sandbox access support self-serve development, while the undated pricing page states there are no monthly fees; production transaction fees still apply.",
+          "evidence": [
+            {
+              "url": "https://stripe.com/pricing",
+              "title": "Stripe pricing",
+              "quote": "Access a complete payments platform with simple, pay-as-you-go pricing. No setup fees, monthly fees, or hidden fees.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            },
+            {
+              "url": "https://docs.stripe.com/api",
+              "title": "Stripe API reference",
+              "quote": "You can use the Stripe API in sandboxes without affecting your live data or interacting with banking networks.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            },
+            {
+              "url": "https://docs.stripe.com/api/authentication",
+              "title": "API authentication - Stripe Docs",
+              "quote": "Test mode secret keys start with `sk_test_` and have unrestricted access to their sandboxes. In live mode, you configure a restricted API key (starts with `rk_live_`) with specific API permissions.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            }
+          ]
+        },
+        "api_surface": {
+          "status": "checked",
+          "value": "REST; broad documented surface",
+          "api_types": ["REST"],
+          "breadth": "broad",
+          "reason": "The undated official API reference explicitly identifies REST and describes resource-oriented URLs, form-encoded requests, JSON responses, standard HTTP behavior, and sandbox coverage.",
+          "evidence": [
+            {
+              "url": "https://docs.stripe.com/api",
+              "title": "Stripe API reference",
+              "quote": "The Stripe API is organized around [REST](https://en.wikipedia.org/wiki/Representational_State_Transfer).",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            }
+          ]
+        },
+        "official_mcp": {
+          "status": "checked",
+          "value": "vendor_server",
+          "mcp_mode": "remote",
+          "reason": "The undated official page says Stripe operates an MCP server and identifies `https://mcp.stripe.com` as its server URL. A dated transition notice requires OAuth or agent API keys before 11 January 2027.",
+          "evidence": [
+            {
+              "url": "https://docs.stripe.com/mcp",
+              "title": "Stripe MCP",
+              "quote": "Let your AI agents interact with the Stripe API by using our MCP server.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            },
+            {
+              "url": "https://docs.stripe.com/mcp",
+              "title": "Stripe MCP",
+              "quote": "MCP is an open protocol supported by many clients. Follow your client’s MCP setup instructions and use `https://mcp.stripe.com` as the server URL.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            },
+            {
+              "url": "https://docs.stripe.com/mcp",
+              "title": "Stripe MCP",
+              "quote": "Starting 11 January 2027, Stripe MCP will no longer accept full-access secret keys or non-agent restricted API keys. Migrate to an agent API key or reconnect with OAuth before that date. Requests using an unsupported key receive a `401` response with an OAuth discovery challenge.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            }
+          ]
+        },
+        "composio_toolkit": {
+          "status": "checked",
+          "value": "listed_exact",
+          "reason": "The current complete Composio catalog contains the exact Stripe toolkit and `STRIPE` slug; the separate Stripe MCP product was not substituted.",
+          "evidence": [
+            {
+              "url": "https://docs.composio.dev/toolkits.md",
+              "title": "Composio Toolkits",
+              "quote": "| [Stripe](/toolkits/stripe.md) | `STRIPE` | 435 | 40 | API_KEY, OAUTH2 | Yes |",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            }
+          ]
+        },
+        "verdict": {
+          "status": "checked",
+          "value": "documented_build_candidate",
+          "reason": "Checked OAuth/API-key authentication, a self-serve sandbox path, and a broad REST API support an immediate prototype; the undated pricing and API pages require separate production-fee and live-key review.",
+          "evidence": [
+            {
+              "url": "https://docs.stripe.com/api/authentication",
+              "title": "API authentication - Stripe Docs",
+              "quote": "The Stripe API uses API keys to authenticate requests. You can view and manage your API keys in the Stripe Dashboard.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            },
+            {
+              "url": "https://docs.stripe.com/api",
+              "title": "Stripe API reference",
+              "quote": "The Stripe API is organized around [REST](https://en.wikipedia.org/wiki/Representational_State_Transfer).",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            },
+            {
+              "url": "https://stripe.com/pricing",
+              "title": "Stripe pricing",
+              "quote": "Access a complete payments platform with simple, pay-as-you-go pricing. No setup fees, monthly fees, or hidden fees.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "number": 82,
+      "app": "Plaid",
+      "category": "Finance and Fintech",
+      "summary": "Plaid provides a broad REST API through Dashboard-issued client credentials, a self-serve Trial for eligible new teams, and both remote Dashboard and local development MCP servers.",
+      "blocker": "Trial eligibility is limited to new US/Canada teams created on or after 15 April 2026; production MCP requires approved Production access and at least one Plaid product.",
+      "next_action": "Create a Dashboard app, test in Sandbox, apply for the Trial if eligible, and confirm Production approval before using Dashboard MCP.",
+      "fields": {
+        "auth": {
+          "status": "checked",
+          "value": [
+            "Plaid client_id and secret (request body or PLAID-CLIENT-ID/PLAID-SECRET headers)"
+          ],
+          "reason": "The undated official API overview states that almost all endpoints require a client_id and secret and identifies the supported header names.",
+          "evidence": [
+            {
+              "url": "https://plaid.com/docs/api/",
+              "title": "Plaid API overview",
+              "quote": "Almost all Plaid API endpoints require a `client_id` and `secret`. These may be sent either in the request body or in the headers `PLAID-CLIENT-ID` and `PLAID-SECRET`.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            },
+            {
+              "url": "https://plaid.com/docs/quickstart/",
+              "title": "Plaid Quickstart",
+              "quote": "You'll have two different API keys, and there are two different Plaid environments. Today we'll start in the Sandbox environment. View the API Keys section of the Dashboard to find your Sandbox secret.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            }
+          ]
+        },
+        "credential_gate": {
+          "status": "checked",
+          "value": "self_serve_trial",
+          "gate_class": "self_serve_trial",
+          "reason": "The undated billing page offers a self-serve Trial to new US/Canada teams created on or after 15 April 2026, with ten Production Items before a paid upgrade is required.",
+          "evidence": [
+            {
+              "url": "https://plaid.com/docs/account/billing/",
+              "title": "Plaid billing",
+              "quote": "Free Trial plans are available to new Plaid teams (US/Canada only) created on or after April 15, 2026.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            },
+            {
+              "url": "https://plaid.com/docs/account/billing/",
+              "title": "Plaid billing",
+              "quote": "To start a Trial plan, create a Dashboard account and verify your email address.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            },
+            {
+              "url": "https://plaid.com/docs/account/billing/",
+              "title": "Plaid billing",
+              "quote": "You can create 10 Production Items on a Trial plan. After creating 10 Items in Production, you must upgrade to a paid plan to create more Production Items.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            }
+          ]
+        },
+        "api_surface": {
+          "status": "checked",
+          "value": "REST; broad documented surface",
+          "api_types": ["REST"],
+          "breadth": "broad",
+          "reason": "The undated official API overview documents JSON-over-HTTP POST requests and identifies the Plaid API as RESTful through its OpenAPI specification, with broad product and endpoint coverage.",
+          "evidence": [
+            {
+              "url": "https://plaid.com/docs/api/",
+              "title": "Plaid API overview",
+              "quote": "The Plaid API is JSON over HTTP. Requests are POST requests, and responses are JSON, with errors indicated in response bodies as `error_code` and `error_type` (use these in preference to HTTP status codes for identifying application-level errors).",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            },
+            {
+              "url": "https://plaid.com/docs/api/",
+              "title": "Plaid API overview",
+              "quote": "OpenAPI is a standard format for describing RESTful APIs that allows those APIs to be integrated with tools for a wide variety of applications, including testing, client library generation, IDE integration, and more.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            }
+          ]
+        },
+        "official_mcp": {
+          "status": "checked",
+          "value": "vendor_server",
+          "mcp_mode": "both",
+          "reason": "The undated official MCP page explicitly offers a Plaid-hosted remote Dashboard MCP server and a local development MCP server. The remote server requires Production approval and is under active development.",
+          "evidence": [
+            {
+              "url": "https://plaid.com/docs/resources/mcp/",
+              "title": "Plaid MCP servers",
+              "quote": "Plaid offers two Model Context Protocol (MCP) servers:\n\n* The Dashboard MCP server is a remote MCP server hosted by Plaid. It provides Production diagnostics and analytics tools, including tools for debugging Items, reviewing Link conversion data, and checking usage metrics.\n* The Plaid AI coding toolkit includes a local MCP server for development.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            },
+            {
+              "url": "https://plaid.com/docs/resources/mcp/",
+              "title": "Plaid MCP servers",
+              "quote": "The Dashboard MCP server works with Production data only. Your team must be approved for Production access with at least one Plaid product to use the MCP server.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            },
+            {
+              "url": "https://plaid.com/docs/resources/mcp/",
+              "title": "Plaid MCP servers",
+              "quote": "The Dashboard MCP server is under active development. Breaking changes may occur, and Plaid currently provides limited support.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            }
+          ]
+        },
+        "composio_toolkit": {
+          "status": "checked",
+          "value": "listed_exact",
+          "reason": "The current complete Composio catalog contains the exact Plaid toolkit and `PLAID` slug; the separate Plaid MCP product was not substituted.",
+          "evidence": [
+            {
+              "url": "https://docs.composio.dev/toolkits.md",
+              "title": "Composio Toolkits",
+              "quote": "| [Plaid](/toolkits/plaid.md) | `PLAID` | 70 | 0 | API_KEY | — |",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            }
+          ]
+        },
+        "verdict": {
+          "status": "checked",
+          "value": "documented_build_candidate",
+          "reason": "Dashboard credentials, a documented Trial path, and a broad REST API support a build candidate for eligible teams; the undated billing and API pages require eligibility and Production-access checks before launch.",
+          "evidence": [
+            {
+              "url": "https://plaid.com/docs/quickstart/",
+              "title": "Plaid Quickstart",
+              "quote": "You'll have two different API keys, and there are two different Plaid environments. Today we'll start in the Sandbox environment. View the API Keys section of the Dashboard to find your Sandbox secret.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            },
+            {
+              "url": "https://plaid.com/docs/account/billing/",
+              "title": "Plaid billing",
+              "quote": "Using a Trial plan, you can use Plaid with real production data for free.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            },
+            {
+              "url": "https://plaid.com/docs/api/",
+              "title": "Plaid API overview",
+              "quote": "The Plaid API is JSON over HTTP. Requests are POST requests, and responses are JSON, with errors indicated in response bodies as `error_code` and `error_type` (use these in preference to HTTP status codes for identifying application-level errors).",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "number": 83,
+      "app": "Binance",
+      "category": "Finance and Fintech",
+      "summary": "The validator-approved Binance documentation root was researched, but its rendered pages only redirect to a documentation host that is not accepted by the local official-source validator.",
+      "blocker": "Approved official documentation URLs expose no rendered authentication, pricing, API, or MCP content, so no vendor claim can be checked from search snippets.",
+      "next_action": "Obtain a verifiable official-source allowlist update for developers.binance.com or an approved static Binance document, then repeat authentication, access, API, and MCP checks.",
+      "fields": {
+        "auth": {
+          "status": "unknown",
+          "value": "unknown",
+          "reason": "Targeted attempts at the approved Binance documentation root returned only undated redirect text to developers.binance.com; that host is not accepted by the validator, and search snippets cannot establish authentication.",
+          "evidence": [
+            {
+              "url": "https://binance-docs.github.io/apidocs/spot/en/#general-info",
+              "title": "Binance Spot API documentation - approved root",
+              "quote": "Redirecting to https://developers.binance.com/docs/binance-spot-api-docs",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            },
+            {
+              "url": "https://binance-docs.github.io/apidocs/spot/en/index.html",
+              "title": "Binance Spot API documentation index - approved root",
+              "quote": "Redirecting to https://developers.binance.com/docs/binance-spot-api-docs",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            }
+          ]
+        },
+        "credential_gate": {
+          "status": "unknown",
+          "value": "unknown",
+          "gate_class": "unknown",
+          "reason": "The approved Binance documentation paths yielded only undated redirects, leaving credential creation, account approval, regional eligibility, and pricing unresolved after targeted attempts.",
+          "evidence": [
+            {
+              "url": "https://binance-docs.github.io/apidocs/",
+              "title": "Binance API documentation - approved root",
+              "quote": "Redirecting to https://developers.binance.com",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            },
+            {
+              "url": "https://binance-docs.github.io/apidocs/spot/en/#general-info",
+              "title": "Binance Spot API documentation - approved root",
+              "quote": "Redirecting to https://developers.binance.com/docs/binance-spot-api-docs",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            }
+          ]
+        },
+        "api_surface": {
+          "status": "unknown",
+          "value": "unknown",
+          "api_types": [],
+          "breadth": "unknown",
+          "reason": "No usable rendered API reference was available from the validator-approved Binance root; redirect-only responses do not prove API absence or establish API type and breadth.",
+          "evidence": [
+            {
+              "url": "https://binance-docs.github.io/apidocs/spot/en/index.html",
+              "title": "Binance Spot API documentation index - approved root",
+              "quote": "Redirecting to https://developers.binance.com/docs/binance-spot-api-docs",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            }
+          ]
+        },
+        "official_mcp": {
+          "status": "unknown",
+          "value": "unknown",
+          "mcp_mode": "unknown",
+          "reason": "The approved Binance documentation root provided only undated redirects, so official MCP ownership and mode could not be established; inaccessibility is not evidence that no server exists.",
+          "evidence": [
+            {
+              "url": "https://binance-docs.github.io/apidocs/",
+              "title": "Binance API documentation - approved root",
+              "quote": "Redirecting to https://developers.binance.com",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            },
+            {
+              "url": "https://binance-docs.github.io/apidocs/spot/en/#general-info",
+              "title": "Binance Spot API documentation - approved root",
+              "quote": "Redirecting to https://developers.binance.com/docs/binance-spot-api-docs",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            }
+          ]
+        },
+        "composio_toolkit": {
+          "status": "checked",
+          "value": "not_listed",
+          "reason": "The current complete Composio catalog of 1,841 toolkits contains no exact Binance toolkit row or approved alias; namesake and MCP-specific products were not substituted.",
+          "evidence": [
+            {
+              "url": "https://docs.composio.dev/toolkits.md",
+              "title": "Composio Toolkits",
+              "quote": "Composio supports 1841 toolkits for building AI agents.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            },
+            {
+              "url": "https://docs.composio.dev/toolkits.md",
+              "title": "Composio Toolkits",
+              "quote": "## All Toolkits\n\n| Toolkit | Slug | Tools | Triggers | Auth | Managed App |",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            }
+          ]
+        },
+        "verdict": {
+          "status": "unknown",
+          "value": "unknown",
+          "reason": "Authentication, credential access, and API surface remain unresolved because the approved official documentation root returns only undated redirects; no build or absence verdict is supportable.",
+          "evidence": [
+            {
+              "url": "https://binance-docs.github.io/apidocs/",
+              "title": "Binance API documentation - approved root",
+              "quote": "Redirecting to https://developers.binance.com",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            },
+            {
+              "url": "https://binance-docs.github.io/apidocs/spot/en/index.html",
+              "title": "Binance Spot API documentation index - approved root",
+              "quote": "Redirecting to https://developers.binance.com/docs/binance-spot-api-docs",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "number": 84,
+      "app": "Paygent Connect",
+      "category": "Finance and Fintech",
+      "summary": "Paygent Connect's product identity could not be authenticated from official rendered documentation; the candidate paygent.com domain redirects to a parked-domain lander.",
+      "blocker": "Without an authenticated product identity, API, credential, pricing, and MCP claims cannot be attributed safely to Paygent Connect.",
+      "next_action": "Confirm the canonical Paygent Connect vendor domain and obtain current official API and access documentation before attempting integration research again.",
+      "fields": {
+        "auth": {
+          "status": "unknown",
+          "value": "unknown",
+          "reason": "The validator-approved bare `paygent` host could not be fetched as a valid URL; candidate www.paygent.com rendered only an undated redirect to a parked-domain lander, so no Paygent Connect authentication documentation was identifiable.",
+          "evidence": [
+            {
+              "url": "https://paygent",
+              "title": "Paygent validator-approved root",
+              "quote": "",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            }
+          ]
+        },
+        "credential_gate": {
+          "status": "unknown",
+          "value": "unknown",
+          "gate_class": "unknown",
+          "reason": "The validator-approved bare `paygent` host was invalid for fetching, and candidate www.paygent.com led to an undated parked-domain redirect; no Paygent Connect credential-creation or pricing content was identifiable.",
+          "evidence": [
+            {
+              "url": "https://paygent",
+              "title": "Paygent validator-approved root",
+              "quote": "",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            }
+          ]
+        },
+        "api_surface": {
+          "status": "unknown",
+          "value": "unknown",
+          "api_types": [],
+          "breadth": "unknown",
+          "reason": "The validator-approved bare `paygent` host was invalid for fetching, while candidate www.paygent.com exposed no rendered API reference beyond an undated parked-domain redirect; neither a public API nor its absence is established.",
+          "evidence": [
+            {
+              "url": "https://paygent",
+              "title": "Paygent validator-approved root",
+              "quote": "",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            }
+          ]
+        },
+        "official_mcp": {
+          "status": "unknown",
+          "value": "unknown",
+          "mcp_mode": "unknown",
+          "reason": "The validator-approved bare `paygent` host was invalid for fetching, and candidate www.paygent.com yielded only an undated parked-domain redirect; no attributable MCP documentation establishes a vendor server or its absence.",
+          "evidence": [
+            {
+              "url": "https://paygent",
+              "title": "Paygent validator-approved root",
+              "quote": "",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            }
+          ]
+        },
+        "composio_toolkit": {
+          "status": "checked",
+          "value": "not_listed",
+          "reason": "The current complete Composio catalog contains no exact Paygent Connect or Paygent toolkit row and no approved alias; a different product was not substituted.",
+          "evidence": [
+            {
+              "url": "https://docs.composio.dev/toolkits.md",
+              "title": "Composio Toolkits",
+              "quote": "Composio supports 1841 toolkits for building AI agents.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            },
+            {
+              "url": "https://docs.composio.dev/toolkits.md",
+              "title": "Composio Toolkits",
+              "quote": "## All Toolkits\n\n| Toolkit | Slug | Tools | Triggers | Auth | Managed App |",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            }
+          ]
+        },
+        "verdict": {
+          "status": "unknown",
+          "value": "unknown",
+          "reason": "Product identity, authentication, credential access, and API surface remain unresolved because the approved bare `paygent` root is invalid for fetching and candidate www.paygent.com is an undated parked-domain redirect; no build or absence verdict is supportable.",
+          "evidence": [
+            {
+              "url": "https://paygent",
+              "title": "Paygent validator-approved root",
+              "quote": "",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "number": 85,
+      "app": "iPayX",
+      "category": "Finance and Fintech",
+      "summary": "iPayX documents a narrow three-endpoint bearer-authenticated FX audit REST API and a separate public read-only remote MCP server; free evaluation coexists with paid production options.",
+      "blocker": "Undated official pages conflict on free quotas, paid price, and MCP endpoint: three lifetime audits versus ten daily keyed audits versus three monthly public-MCP audits, and $199 versus $299 per month.",
+      "next_action": "Confirm current quota, price, and endpoint directly with iPayX, then test the public MCP and request a production API key for higher-volume forensic audits.",
+      "fields": {
+        "auth": {
+          "status": "checked",
+          "value": [
+            "Bearer API key (REST Authorization header; keys start with ipx_live_)",
+            "No account or API key (public remote MCP evaluation)"
+          ],
+          "reason": "The undated REST reference requires a bearer token, while the separate undated public MCP configuration explicitly permits use without an account or API key.",
+          "evidence": [
+            {
+              "url": "https://www.ipayx.ai/docs/api",
+              "title": "iPayX FX Audit API",
+              "quote": "Every request requires a Bearer token in the `Authorization` header. Keys start with `ipx_live_`.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            },
+            {
+              "url": "https://www.ipayx.ai/mcp-config",
+              "title": "Connect iPayX to your AI agent",
+              "quote": "No account or API key required. Transaction audits and forensic reports share 3 free audits per IP per calendar month (UTC). Rate lookups and comparisons are free without an audit quota.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            }
+          ]
+        },
+        "credential_gate": {
+          "status": "checked",
+          "value": "mixed",
+          "gate_class": "mixed",
+          "reason": "Undated official pages combine no-key public MCP evaluation and free audits with paid production API options, but disagree on quotas and price; the mixed classification preserves that conflict rather than selecting one offer.",
+          "evidence": [
+            {
+              "url": "https://www.ipayx.ai/mcp-config",
+              "title": "Connect iPayX to your AI agent",
+              "quote": "No account or API key required. Transaction audits and forensic reports share 3 free audits per IP per calendar month (UTC). Rate lookups and comparisons are free without an audit quota.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            },
+            {
+              "url": "https://www.ipayx.ai/pricing",
+              "title": "iPayX pricing",
+              "quote": "Free audit included. Upgrade to PDF reports or production-grade API.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            },
+            {
+              "url": "https://www.ipayx.ai/pricing",
+              "title": "iPayX pricing",
+              "quote": "You have 3 free audits.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            },
+            {
+              "url": "https://www.ipayx.ai/pricing",
+              "title": "iPayX pricing",
+              "quote": "$299USD / mo",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            },
+            {
+              "url": "https://www.ipayx.ai/docs/mcp-server",
+              "title": "iPayX MCP server",
+              "quote": "**Free tier:** 10 audits / day per API key.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            },
+            {
+              "url": "https://www.ipayx.ai/docs/mcp-server",
+              "title": "iPayX MCP server",
+              "quote": "**Paid tier ($199):** unlimited audits, priority routing.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            }
+          ]
+        },
+        "api_surface": {
+          "status": "checked",
+          "value": "REST; narrow documented surface",
+          "api_types": ["REST"],
+          "breadth": "narrow",
+          "reason": "The undated official reference labels the product REST API v1, specifies OpenAPI 3.1, and lists exactly three endpoints plus a signed audit-completed webhook.",
+          "evidence": [
+            {
+              "url": "https://www.ipayx.ai/docs/api",
+              "title": "iPayX FX Audit API",
+              "quote": "REST API · v1",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            },
+            {
+              "url": "https://www.ipayx.ai/docs/api",
+              "title": "iPayX FX Audit API",
+              "quote": "3 endpoints\n\naudit · rates · audit/document",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            },
+            {
+              "url": "https://www.ipayx.ai/docs/api",
+              "title": "iPayX FX Audit API",
+              "quote": "Signed webhooks\n\nHMAC-SHA256 · audit.completed",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            }
+          ]
+        },
+        "official_mcp": {
+          "status": "checked",
+          "value": "vendor_server",
+          "mcp_mode": "remote",
+          "reason": "Undated official iPayX pages document a vendor-operated read-only MCP server. The public Streamable HTTP endpoint is `https://mcp.ipayx.ai/mcp`; the authenticated documentation lists a different Supabase MCP endpoint, so both are preserved without conflation.",
+          "evidence": [
+            {
+              "url": "https://www.ipayx.ai/mcp-config",
+              "title": "Connect iPayX to your AI agent",
+              "quote": "One MCP server. Claude, ChatGPT, Grok, Perplexity, DeepSeek, Qwen, MiniMax, Copilot, Cursor, n8n — real-time forensic FX audit.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            },
+            {
+              "url": "https://www.ipayx.ai/mcp-config",
+              "title": "Connect iPayX to your AI agent",
+              "quote": "MCP Server URL\n\n`https://mcp.ipayx.ai/mcp` Copy",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            },
+            {
+              "url": "https://www.ipayx.ai/mcp-config",
+              "title": "Connect iPayX to your AI agent",
+              "quote": "Read-only server. It never moves money.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            },
+            {
+              "url": "https://www.ipayx.ai/docs/mcp-server",
+              "title": "iPayX MCP server",
+              "quote": "Production MCP: `https://hvujzsdwcoweirroubeh.supabase.co/functions/v1/mcp-server`",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            }
+          ]
+        },
+        "composio_toolkit": {
+          "status": "checked",
+          "value": "not_listed",
+          "reason": "The current complete Composio catalog contains no exact iPayX toolkit row or approved alias; the vendor's own MCP documentation was not treated as a Composio listing.",
+          "evidence": [
+            {
+              "url": "https://docs.composio.dev/toolkits.md",
+              "title": "Composio Toolkits",
+              "quote": "Composio supports 1841 toolkits for building AI agents.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            },
+            {
+              "url": "https://docs.composio.dev/toolkits.md",
+              "title": "Composio Toolkits",
+              "quote": "## All Toolkits\n\n| Toolkit | Slug | Tools | Triggers | Auth | Managed App |",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            }
+          ]
+        },
+        "verdict": {
+          "status": "checked",
+          "value": "gated_build_candidate",
+          "reason": "The documented REST API and remote vendor MCP support a prototype, but paid production use is gated and the undated official quota, price, and endpoint conflicts must be resolved before relying on limits or billing.",
+          "evidence": [
+            {
+              "url": "https://www.ipayx.ai/docs/api",
+              "title": "iPayX FX Audit API",
+              "quote": "Every request requires a Bearer token in the `Authorization` header. Keys start with `ipx_live_`.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            },
+            {
+              "url": "https://www.ipayx.ai/docs/api",
+              "title": "iPayX FX Audit API",
+              "quote": "3 endpoints\n\naudit · rates · audit/document",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            },
+            {
+              "url": "https://www.ipayx.ai/pricing",
+              "title": "iPayX pricing",
+              "quote": "Free audit included. Upgrade to PDF reports or production-grade API.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "number": 86,
+      "app": "QuickBooks",
+      "category": "Finance and Fintech",
+      "summary": "QuickBooks Online documents OAuth 2.0, app credential creation, a free Builder tier with production approval and paid upgrades, and a broad GraphQL API; vendor MCP ownership remains unverified.",
+      "blocker": "Production credentials require questionnaire approval; official MCP pages were inaccessible or documented only an onboarding plugin, not a verifiable Intuit-operated MCP server.",
+      "next_action": "Build against GraphQL in a sandbox, complete the Production Key questionnaire, and obtain current Intuit MCP server documentation before selecting an MCP deployment mode.",
+      "fields": {
+        "auth": {
+          "status": "checked",
+          "value": [
+            "OAuth 2.0 authorization code (user consent and realmID binding)",
+            "OAuth 2.0 access token (QuickBooks Online API calls)",
+            "OAuth 2.0 refresh token (rolling 100-day expiry)",
+            "HTTP Basic client ID and client secret (OAuth token endpoint)",
+            "Intuit Developer Portal app credentials (live and sandbox sets)"
+          ],
+          "reason": "Undated static Intuit OAuth and credential-creation pages document authorization-code exchange, access and refresh tokens, client authentication, and separate live/sandbox credentials.",
+          "evidence": [
+            {
+              "url": "https://static.developer.intuit.com/output_html/qbo/docs/develop/authentication-and-authorization/oauth-2.0.html",
+              "title": "OAuth 2.0 - QuickBooks Online",
+              "quote": "Use the OAuth 2.0 protocol to implement authentication and authorization. Authorization is essential for both testing via sandbox companies and production apps.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            },
+            {
+              "url": "https://static.developer.intuit.com/output_html/qbo/docs/develop/authentication-and-authorization/oauth-2.0.html",
+              "title": "OAuth 2.0 - QuickBooks Online",
+              "quote": "Your app sends the authorization code back to the Intuit OAuth 2.0 Server and exchanges it for access and refresh tokens.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            },
+            {
+              "url": "https://static.developer.intuit.com/output_html/qbo/docs/develop/authentication-and-authorization/oauth-2.0.html",
+              "title": "OAuth 2.0 - QuickBooks Online",
+              "quote": "Refresh tokens have a rolling expiry of 100 days.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            },
+            {
+              "url": "https://static.developer.intuit.com/output_html/qbo/docs/get-started/get-client-id-and-client-secret.html",
+              "title": "Get a client ID and client secret",
+              "quote": "Each app has two sets of credentials: one for live production code and another for sandbox and testing environments.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            }
+          ]
+        },
+        "credential_gate": {
+          "status": "checked",
+          "value": "mixed",
+          "gate_class": "mixed",
+          "reason": "The Intuit Partner FAQ dated 2026-10-29 documents a no-charge Builder tier and free sandbox metering, while the undated credential guide requires Production Key questionnaire approval and the FAQ documents paid upgrades above the cap.",
+          "evidence": [
+            {
+              "url": "https://static.developer.intuit.com/output_html/qbo/docs/get-started/partner-faq.html",
+              "title": "Intuit App Partner Program FAQ",
+              "quote": "By default, all partners will begin in the Builder tier and be afforded 500,000 CorePlus API calls per month without incurring any charges. Any subsequent calls made above this allotment will be blocked. To make additional API calls beyond this allotment, partners can upgrade to the Silver tier by providing a valid payment method in their account on the Intuit Developer Portal within your Workspace.",
+              "retrieved_at": "2026-11-24",
+              "published_at": "2026-10-29",
+              "published_label": "Last updated: 2026-10-29"
+            },
+            {
+              "url": "https://static.developer.intuit.com/output_html/qbo/docs/get-started/partner-faq.html",
+              "title": "Intuit App Partner Program FAQ",
+              "quote": "No. You don’t need to provide a payment method if you are at the Builder tier.",
+              "retrieved_at": "2026-11-24",
+              "published_at": "2026-10-29",
+              "published_label": "Last updated: 2026-10-29"
+            },
+            {
+              "url": "https://static.developer.intuit.com/output_html/qbo/docs/get-started/get-client-id-and-client-secret.html",
+              "title": "Get a client ID and client secret",
+              "quote": "The client ID and client secret will be accessible only after completing the Production Key questionnaire and its approval. For apps without a completed questionnaire, the questionnaire will be visible when you select Production in Step 6.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            }
+          ]
+        },
+        "api_surface": {
+          "status": "checked",
+          "value": "GraphQL; broad documented surface",
+          "api_types": ["GraphQL"],
+          "breadth": "broad",
+          "reason": "Undated static Intuit GraphQL documentation identifies the QuickBooks Online GraphQL API, its single endpoint, and company, account, transaction, contact, invoice, bill, query, mutation, and pagination coverage.",
+          "evidence": [
+            {
+              "url": "https://static.developer.intuit.com/output_html/qbo/docs/learn/learn-about-graphql/graphql-basics.html",
+              "title": "GraphQL basics - QuickBooks Online",
+              "quote": "The QuickBooks Online GraphQL API uses the GraphQL API framework. Here’s a brief overview.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            },
+            {
+              "url": "https://static.developer.intuit.com/output_html/qbo/docs/learn/learn-about-graphql/graphql-basics.html",
+              "title": "GraphQL basics - QuickBooks Online",
+              "quote": "For the QuickBooks GraphQL API, use queries to get data for accounts, transactions, and other resources. Specify the exact fields you want the server to return in the query body.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            },
+            {
+              "url": "https://static.developer.intuit.com/output_html/qbo/docs/develop/develop-with-graphql/graphql-api.html",
+              "title": "Develop your app with the GraphQL API",
+              "quote": "As shown in this simple example, all GraphQL requests are served from a single endpoint. No matter what is requested, from transactions to contacts, the endpoint will be the same.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            }
+          ]
+        },
+        "official_mcp": {
+          "status": "unknown",
+          "value": "unknown",
+          "mcp_mode": "unknown",
+          "reason": "Official MCP documentation returned a JavaScript shell or HTTP 403, while the accessible undated connector guide describes an onboarding plugin rather than an Intuit-operated server; ownership and local/remote mode remain unverified.",
+          "evidence": [
+            {
+              "url": "https://developer.intuit.com/app/developer/qbo/docs/develop/mcp-server",
+              "title": "QuickBooks MCP server documentation attempt",
+              "quote": "",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            },
+            {
+              "url": "https://static.developer.intuit.com/output_html/qbo/docs/develop/mcp-server.html",
+              "title": "QuickBooks MCP server static documentation attempt",
+              "quote": "",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            },
+            {
+              "url": "https://static.developer.intuit.com/output_html/qbo/docs/get-started/mcp-connector.html",
+              "title": "Build with Intuit Developer Plugin",
+              "quote": "Intuit Developer Plugin is an AI-assisted onboarding experience for developers building with Intuit APIs. It guides you through the setup flow for your first API call:",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            }
+          ]
+        },
+        "composio_toolkit": {
+          "status": "checked",
+          "value": "listed_exact",
+          "reason": "The current complete Composio catalog contains the exact QuickBooks toolkit and `QUICKBOOKS` slug.",
+          "evidence": [
+            {
+              "url": "https://docs.composio.dev/toolkits.md",
+              "title": "Composio Toolkits",
+              "quote": "| [QuickBooks](/toolkits/quickbooks.md) | `QUICKBOOKS` | 119 | 0 | OAUTH2 | Yes |",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            }
+          ]
+        },
+        "verdict": {
+          "status": "checked",
+          "value": "gated_build_candidate",
+          "reason": "OAuth, a free Builder tier, and a broad GraphQL API support development, but production approval and paid upgrades gate launch; the undated API and credential pages and the dated 2026-10-29 access FAQ require rechecking.",
+          "evidence": [
+            {
+              "url": "https://static.developer.intuit.com/output_html/qbo/docs/develop/authentication-and-authorization/oauth-2.0.html",
+              "title": "OAuth 2.0 - QuickBooks Online",
+              "quote": "Your app needs access tokens to make API calls and interact with QuickBooks Online data.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            },
+            {
+              "url": "https://static.developer.intuit.com/output_html/qbo/docs/learn/learn-about-graphql/graphql-basics.html",
+              "title": "GraphQL basics - QuickBooks Online",
+              "quote": "The QuickBooks Online GraphQL API uses the GraphQL API framework. Here’s a brief overview.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            },
+            {
+              "url": "https://static.developer.intuit.com/output_html/qbo/docs/get-started/partner-faq.html",
+              "title": "Intuit App Partner Program FAQ",
+              "quote": "By default, all partners will begin in the Builder tier and be afforded 500,000 CorePlus API calls per month without incurring any charges. Any subsequent calls made above this allotment will be blocked.",
+              "retrieved_at": "2026-11-24",
+              "published_at": "2026-10-29",
+              "published_label": "Last updated: 2026-10-29"
+            },
+            {
+              "url": "https://static.developer.intuit.com/output_html/qbo/docs/get-started/get-client-id-and-client-secret.html",
+              "title": "Get a client ID and client secret",
+              "quote": "The client ID and client secret will be accessible only after completing the Production Key questionnaire and its approval.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "number": 87,
+      "app": "Xero",
+      "category": "Finance and Fintech",
+      "summary": "Xero documents OAuth 2.0 with PKCE, a no-charge Starter developer plan, broad HTTP APIs across Accounting, Payroll, Files and Assets, and both local/STDIO and remote vendor MCP servers.",
+      "blocker": "Remote MCP supports Starter only with a demo organisation; real customer organisations require Core or above, and remote MCP is unavailable to Custom Connections apps.",
+      "next_action": "Register an OAuth app, test with a demo company, and use Core or above before connecting real organisations to remote MCP.",
+      "fields": {
+        "auth": {
+          "status": "checked",
+          "value": [
+            "OAuth 2.0 authorization code with PKCE (native apps)",
+            "OAuth 2.0 client ID and client secret (registered server apps)",
+            "OAuth 2.0 access token (30-minute API access)",
+            "OAuth 2.0 refresh token (60-day unused expiry)"
+          ],
+          "reason": "Undated official Xero FAQs document app registration, OAuth 2.0, PKCE for native apps, 30-minute access tokens, and refresh-token expiry after 60 days without a refresh.",
+          "evidence": [
+            {
+              "url": "https://developer.xero.com/faq",
+              "title": "Xero Developer Frequently asked questions",
+              "quote": "Our API uses OAuth 2.0 which means you need to register your app to get a client id and client secret which you use to access the API.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            },
+            {
+              "url": "https://developer.xero.com/faq/oauth2",
+              "title": "OAuth 2.0 FAQ - Xero Developer",
+              "quote": "Xero supports the Proof Key for Code Exchange (PKCE) extension to the authorization code flow. This allows native apps to securely connect to our API without needing to store a client secret. Single page apps are not currently supported.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            },
+            {
+              "url": "https://developer.xero.com/faq",
+              "title": "Xero Developer Frequently asked questions",
+              "quote": "All Xero access tokens expire after 30 minutes. Refresh tokens allow your app to obtain new access tokens without involving a user again.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            },
+            {
+              "url": "https://developer.xero.com/faq/oauth2",
+              "title": "OAuth 2.0 FAQ - Xero Developer",
+              "quote": "Unused refresh tokens expire after 60 days. If you don’t refresh your access token within 60 days the user will need to reauthorise your app.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            }
+          ]
+        },
+        "credential_gate": {
+          "status": "checked",
+          "value": "self_serve_free",
+          "gate_class": "self_serve_free",
+          "reason": "The undated official pricing page lists a Starter plan with no monthly fee, five connections, unlimited API ingress, and no payment method; paid plans are optional upgrades for scale and real-organisation remote MCP.",
+          "evidence": [
+            {
+              "url": "https://developer.xero.com/pricing",
+              "title": "Xero Developer Pricing and Policies",
+              "quote": "Plans have been created to enable early innovation and create an accessible entry point for developers just getting started. As your app scales, requiring additional benefits, you can easily move through the plans.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            },
+            {
+              "url": "https://developer.xero.com/pricing",
+              "title": "Xero Developer Pricing and Policies",
+              "quote": "Payments are accepted via registered credit card. Your card details will be required when moving from the Starter to the Core plan.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            },
+            {
+              "url": "https://developer.xero.com/faq",
+              "title": "Xero Developer Frequently asked questions",
+              "quote": "Yes, apps on Starter plan can use it with the demo organisation. You can connect, run the tools, and decide whether it's worth upgrading to Core. Real customer organisations need the Core plan or above.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            }
+          ]
+        },
+        "api_surface": {
+          "status": "checked",
+          "value": "HTTP API; broad documented surface",
+          "api_types": ["HTTP API"],
+          "breadth": "broad",
+          "reason": "Undated official FAQ text documents HTTP PUT/POST calls, an OpenAPI specification, and major endpoints across Accounting, Payroll, Files and Assets; normalized conservatively as HTTP API because usable rendered text did not explicitly label it REST.",
+          "evidence": [
+            {
+              "url": "https://developer.xero.com/faq",
+              "title": "Xero Developer Frequently asked questions",
+              "quote": "You can also use our OpenAPI spec to generate your own SDK.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            },
+            {
+              "url": "https://developer.xero.com/faq",
+              "title": "Xero Developer Frequently asked questions",
+              "quote": "you can create more than one Invoice in a single PUT or POST Invoices API call.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            },
+            {
+              "url": "https://developer.xero.com/faq",
+              "title": "Xero Developer Frequently asked questions",
+              "quote": "All major endpoints on the Payroll, Files and Assets APIs also support paging.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            }
+          ]
+        },
+        "official_mcp": {
+          "status": "checked",
+          "value": "vendor_server",
+          "mcp_mode": "both",
+          "reason": "Undated official FAQs document Xero's local/STDIO MCP server and Developer Remote MCP at `https://api.xero.com/mcp/v1` with Xero OAuth 2.0 PKCE. Remote access is demo-only on Starter, Core-and-above for real organisations, and excluded for Custom Connections.",
+          "evidence": [
+            {
+              "url": "https://developer.xero.com/faq/AI-Toolkit",
+              "title": "AI Toolkit FAQ - Xero Developer",
+              "quote": "Xero's MCP Server will work with any MCP client that supports local/STDIO MCP servers.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            },
+            {
+              "url": "https://developer.xero.com/faq",
+              "title": "Xero Developer Frequently asked questions",
+              "quote": "The Developer Remote MCP is for developers & builders building custom agents and apps. It can be used with any MCP compatible client and offers tools that reads and writes Xero data. It supports multiple organisations with user consent.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            },
+            {
+              "url": "https://developer.xero.com/faq",
+              "title": "Xero Developer Frequently asked questions",
+              "quote": "https://api.xero.com/mcp/v1",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            },
+            {
+              "url": "https://developer.xero.com/faq",
+              "title": "Xero Developer Frequently asked questions",
+              "quote": "Yes. The server authorises through Xero's OAuth 2.0 flow with PKCE, so your client needs to be able to start that flow.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            },
+            {
+              "url": "https://developer.xero.com/faq",
+              "title": "Xero Developer Frequently asked questions",
+              "quote": "No. Custom Connections apps are not eligible to access the Remote MCP Server.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            }
+          ]
+        },
+        "composio_toolkit": {
+          "status": "checked",
+          "value": "listed_exact",
+          "reason": "The current complete Composio catalog contains the exact Xero toolkit and `XERO` slug.",
+          "evidence": [
+            {
+              "url": "https://docs.composio.dev/toolkits.md",
+              "title": "Composio Toolkits",
+              "quote": "| [Xero](/toolkits/xero.md) | `XERO` | 109 | 0 | OAUTH2 | No |",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            }
+          ]
+        },
+        "verdict": {
+          "status": "checked",
+          "value": "documented_build_candidate",
+          "reason": "OAuth app registration, a no-charge Starter tier, and broad documented APIs permit a demo-backed prototype; the undated pricing and FAQ pages require Core or above before real-organisation remote MCP use.",
+          "evidence": [
+            {
+              "url": "https://developer.xero.com/faq",
+              "title": "Xero Developer Frequently asked questions",
+              "quote": "Our API uses OAuth 2.0 which means you need to register your app to get a client id and client secret which you use to access the API.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            },
+            {
+              "url": "https://developer.xero.com/pricing",
+              "title": "Xero Developer Pricing and Policies",
+              "quote": "Payments are accepted via registered credit card. Your card details will be required when moving from the Starter to the Core plan.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            },
+            {
+              "url": "https://developer.xero.com/faq",
+              "title": "Xero Developer Frequently asked questions",
+              "quote": "All major endpoints on the Payroll, Files and Assets APIs also support paging.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            },
+            {
+              "url": "https://developer.xero.com/faq",
+              "title": "Xero Developer Frequently asked questions",
+              "quote": "Yes, apps on Starter plan can use it with the demo organisation. You can connect, run the tools, and decide whether it's worth upgrading to Core. Real customer organisations need the Core plan or above.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "number": 88,
+      "app": "Brex",
+      "category": "Finance and Fintech",
+      "summary": "Brex documents admin-provisioned user tokens, a broad REST/OpenAPI API, and a beta remote vendor MCP server with per-user OAuth authorization.",
+      "blocker": "Developer API and MCP access require an account admin or card admin to accept the Developer API agreement; MCP also requires enabling the Brex in AI assistants beta.",
+      "next_action": "Have an account admin accept the Developer API agreement, enable the beta, provision a scoped user token for REST, and test employee OAuth authorization to the hosted MCP server.",
+      "fields": {
+        "auth": {
+          "status": "checked",
+          "value": [
+            "Brex user token (own-account API request headers; admin-provisioned)",
+            "OAuth 2.0 user authorization (Brex MCP per-employee access)"
+          ],
+          "reason": "Undated official authentication documentation requires a Dashboard-generated user token for API calls; the undated MCP page distinguishes per-user OAuth from admin-provisioned Developer API tokens.",
+          "evidence": [
+            {
+              "url": "https://developer.brex.com/guides/authentication",
+              "title": "Authentication - Brex Developer",
+              "quote": "To start making calls to Brex APIs, generate a user token from your Brex dashboard and pass it along in your API call headers.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            },
+            {
+              "url": "https://developer.brex.com/docs/mcp",
+              "title": "Brex MCP",
+              "quote": "Once enabled, all users in your Brex account can connect to the MCP server with their own credentials. This is different from the Brex Developer API, which requires admin-provisioned API tokens. Any employee can authorize via OAuth and access tools based on their Brex capabilities.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            }
+          ]
+        },
+        "credential_gate": {
+          "status": "checked",
+          "value": "admin_approval",
+          "gate_class": "admin_approval",
+          "reason": "The undated official guides require an account admin or card admin, acceptance of the Developer API agreement, and beta enablement; this is an administrator gate rather than a public self-serve key flow.",
+          "evidence": [
+            {
+              "url": "https://developer.brex.com/guides/authentication",
+              "title": "Authentication - Brex Developer",
+              "quote": "Sign in to dashboard.brex.com as an account admin or card admin.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            },
+            {
+              "url": "https://developer.brex.com/guides/authentication",
+              "title": "Authentication - Brex Developer",
+              "quote": "If your company has not accepted the developer API agreement, please review the terms and conditions. These must be accepted to use the developer API.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            },
+            {
+              "url": "https://developer.brex.com/docs/mcp",
+              "title": "Brex MCP",
+              "quote": "1. **Accept the Developer API agreement.** An account admin or card admin must accept the Developer API agreement in **Settings → Developer**.\n2. **Enable the beta.** Go to **Settings → Beta features** in the Brex Dashboard and select **Brex in AI assistants**.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            }
+          ]
+        },
+        "api_surface": {
+          "status": "checked",
+          "value": "REST; broad documented surface",
+          "api_types": ["REST"],
+          "breadth": "broad",
+          "reason": "The undated official developer overview explicitly identifies REST and OpenAPI and lists broad Accounting, Budgets, Expenses, Payments, Team, Transactions, Travel, Onboarding, Fields, and Webhooks APIs.",
+          "evidence": [
+            {
+              "url": "https://developer.brex.com/",
+              "title": "Brex Developer",
+              "quote": "Brex APIs use the REST architecture, are defined using the OpenAPI specification and use standard HTTP response codes and verbs. All APIs accept and return JSON and require HTTPS.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            },
+            {
+              "url": "https://developer.brex.com/",
+              "title": "Brex Developer",
+              "quote": "Explore our guides and review our API documentation to see how you can integrate with Brex.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            }
+          ]
+        },
+        "official_mcp": {
+          "status": "checked",
+          "value": "vendor_server",
+          "mcp_mode": "remote",
+          "reason": "The undated official Brex page describes a Brex MCP server hosted at `https://api.brex.com/mcp`; it is beta, requires admin agreement and beta enablement, and supports employee OAuth with capability-based access.",
+          "evidence": [
+            {
+              "url": "https://developer.brex.com/docs/mcp",
+              "title": "Brex MCP",
+              "quote": "The Brex MCP server lets AI assistants interact directly with your Brex account: manage expenses, look up users, check cards, review banking transactions, track bills, and more through natural language.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            },
+            {
+              "url": "https://developer.brex.com/docs/mcp",
+              "title": "Brex MCP",
+              "quote": "The server is hosted at `https://api.brex.com/mcp` and supports any MCP-compatible client.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            },
+            {
+              "url": "https://developer.brex.com/docs/mcp",
+              "title": "Brex MCP",
+              "quote": "Beta",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            },
+            {
+              "url": "https://developer.brex.com/docs/mcp",
+              "title": "Brex MCP",
+              "quote": "The MCP server's tools may change as we continue developing new use cases and features.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            }
+          ]
+        },
+        "composio_toolkit": {
+          "status": "checked",
+          "value": "listed_exact",
+          "reason": "The current complete Composio catalog contains the exact Brex toolkit and `BREX` slug.",
+          "evidence": [
+            {
+              "url": "https://docs.composio.dev/toolkits.md",
+              "title": "Composio Toolkits",
+              "quote": "| [Brex](/toolkits/brex.md) | `BREX` | 84 | 0 | OAUTH2, API_KEY | No |",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            }
+          ]
+        },
+        "verdict": {
+          "status": "checked",
+          "value": "gated_build_candidate",
+          "reason": "Documented user-token authentication and a broad REST API support a build, but admin agreement and beta activation gate access; all cited vendor pages are undated and the MCP surface is explicitly beta.",
+          "evidence": [
+            {
+              "url": "https://developer.brex.com/guides/authentication",
+              "title": "Authentication - Brex Developer",
+              "quote": "Sign in to dashboard.brex.com as an account admin or card admin.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            },
+            {
+              "url": "https://developer.brex.com/",
+              "title": "Brex Developer",
+              "quote": "Brex APIs use the REST architecture, are defined using the OpenAPI specification and use standard HTTP response codes and verbs. All APIs accept and return JSON and require HTTPS.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            },
+            {
+              "url": "https://developer.brex.com/docs/mcp",
+              "title": "Brex MCP",
+              "quote": "The MCP server's tools may change as we continue developing new use cases and features.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "number": 89,
+      "app": "Ramp",
+      "category": "Finance and Fintech",
+      "summary": "Ramp documents admin-approved developer apps, OAuth 2.0 client credentials and authorization code flows, a broad HTTP API reference, and a vendor-hosted remote MCP server.",
+      "blocker": "Developer app creation and organization-wide authorization require an admin or Business Owner; MCP connections act as the signed-in user and expire after 30 days.",
+      "next_action": "Have a Ramp admin create a developer app, request sandbox access, implement least-privilege scopes, and test remote MCP with read-only access before requesting broader permissions.",
+      "fields": {
+        "auth": {
+          "status": "checked",
+          "value": [
+            "OAuth 2.0 Client Credentials (internal server-to-server integrations)",
+            "OAuth 2.0 Authorization Code with user consent (third-party integrations)",
+            "OAuth 2.0 Refresh Token (authorization-code integrations)",
+            "HTTP Basic client ID and client secret (token endpoint)",
+            "Bearer access token (Ramp API requests)"
+          ],
+          "reason": "Undated official quickstart and authorization guides document app credentials, OAuth 2.0 grant types, HTTP Basic client authentication, bearer access tokens, scopes, and token lifetimes.",
+          "evidence": [
+            {
+              "url": "https://docs.ramp.com/llms-guides/authorization.txt",
+              "title": "Ramp authorization",
+              "quote": "Ramp uses OAuth 2.0. Your app gets an access token from `/developer/v1/token`, authenticating with its client ID and secret (typically HTTP Basic Auth), and scopes control what the token can access.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            },
+            {
+              "url": "https://docs.ramp.com/llms-guides/authorization.txt",
+              "title": "Ramp authorization",
+              "quote": "| **Client Credentials** | Internal integrations, server-to-server | None required |\n| **Authorization Code** | Third-party apps, public integrations | Authorized user consent required |\n| **Refresh Token** | Renew access after an Authorization Code grant | None after the initial authorization |",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            },
+            {
+              "url": "https://docs.ramp.com/llms-guides/getting-started.txt",
+              "title": "Ramp Developer API quickstart",
+              "quote": "With your credentials, request an access token. Ramp authenticates this `/developer/v1/token` request with HTTP Basic Auth: base64-encode `client_id:client_secret` and send it in the `Authorization` header. The token authenticates your API requests.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            },
+            {
+              "url": "https://docs.ramp.com/llms-guides/getting-started.txt",
+              "title": "Ramp Developer API quickstart",
+              "quote": "Client Credentials access tokens expire after 10 days. Client Credentials grants do not return a refresh token; request a new access token when the current token expires.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            }
+          ]
+        },
+        "credential_gate": {
+          "status": "checked",
+          "value": "admin_approval",
+          "gate_class": "admin_approval",
+          "reason": "Undated official quickstart and authorization guides require Ramp admin access to create a developer app and Admin or Business Owner approval for whole-business access; sandbox access is requested rather than publicly provisioned.",
+          "evidence": [
+            {
+              "url": "https://docs.ramp.com/llms-guides/getting-started.txt",
+              "title": "Ramp Developer API quickstart",
+              "quote": "This guide assumes you are a Ramp customer with **admin** access to your dashboard.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            },
+            {
+              "url": "https://docs.ramp.com/llms-guides/getting-started.txt",
+              "title": "Ramp Developer API quickstart",
+              "quote": "First, you'll need to create a developer app to get your API credentials.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            },
+            {
+              "url": "https://docs.ramp.com/llms-guides/authorization.txt",
+              "title": "Ramp authorization",
+              "quote": "For apps that access the whole business, an Admin or Business Owner must approve. Other users see \"An admin must connect this app.\" For apps that act as an individual user, an admin must first enable the app for the organization in **Manage Access**.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            }
+          ]
+        },
+        "api_surface": {
+          "status": "checked",
+          "value": "HTTP API; broad documented surface",
+          "api_types": ["HTTP API"],
+          "breadth": "broad",
+          "reason": "The undated official machine-readable API reference contains extensive operations across accounting, AI spend, users, transactions, vendors, bills, receipts, and cards; normalized as HTTP API because the rendered reference did not explicitly label REST.",
+          "evidence": [
+            {
+              "url": "https://docs.ramp.com/llms-api.txt",
+              "title": "Ramp API reference",
+              "quote": "title: List general ledger accounts\npath: /developer/v1/accounting/accounts\ndescription: No description",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            },
+            {
+              "url": "https://docs.ramp.com/llms-api.txt",
+              "title": "Ramp API reference",
+              "quote": "title: List vendors\npath: /developer/v1/accounting/vendors\ndescription: No description",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            },
+            {
+              "url": "https://docs.ramp.com/llms-api.txt",
+              "title": "Ramp API reference",
+              "quote": "title: List Ramp users with estimated AI spend during the requested period\npath: /developer/v1/ai-spend/team",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            },
+            {
+              "url": "https://docs.ramp.com/llms-api.txt",
+              "title": "Ramp API reference",
+              "quote": "title: List physical cards\npath: /developer/v1/cards/physical\ndescription: Returns a paginated list of physical cards for the business. Cards can be filtered\nby user, activation status, termination status, and display name.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            }
+          ]
+        },
+        "official_mcp": {
+          "status": "checked",
+          "value": "vendor_server",
+          "mcp_mode": "remote",
+          "reason": "The undated official Ramp MCP guide documents a vendor server at `https://mcp.ramp.com/mcp`; each connection uses the signed-in user's permissions, supports full or read-only access, and expires after 30 days.",
+          "evidence": [
+            {
+              "url": "https://docs.ramp.com/llms-guides/ramp-mcp.txt",
+              "title": "Ramp MCP",
+              "quote": "Ramp MCP connects AI tools such as Claude, ChatGPT, and Cursor to your Ramp account. Each connection acts as the signed-in user, with that user's Ramp permissions.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            },
+            {
+              "url": "https://docs.ramp.com/llms-guides/ramp-mcp.txt",
+              "title": "Ramp MCP",
+              "quote": "claude mcp add --transport http ramp https://mcp.ramp.com/mcp",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            },
+            {
+              "url": "https://docs.ramp.com/llms-guides/ramp-mcp.txt",
+              "title": "Ramp MCP",
+              "quote": "When you sign in, choose **Full access** or **Read-only**. Connections expire after 30 days; reconnect to renew.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            }
+          ]
+        },
+        "composio_toolkit": {
+          "status": "checked",
+          "value": "listed_exact",
+          "reason": "The current complete Composio catalog contains the exact Ramp toolkit and `RAMP` slug; the separate Ramp MCP product was not substituted.",
+          "evidence": [
+            {
+              "url": "https://docs.composio.dev/toolkits.md",
+              "title": "Composio Toolkits",
+              "quote": "| [Ramp](/toolkits/ramp.md) | `RAMP` | 186 | 0 | OAUTH2 | No |",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            }
+          ]
+        },
+        "verdict": {
+          "status": "checked",
+          "value": "gated_build_candidate",
+          "reason": "OAuth grant documentation and a broad API reference support implementation, but admin app creation, sandbox approval, and organization authorization gate access; all cited vendor pages are undated.",
+          "evidence": [
+            {
+              "url": "https://docs.ramp.com/llms-guides/authorization.txt",
+              "title": "Ramp authorization",
+              "quote": "Ramp uses OAuth 2.0. Your app gets an access token from `/developer/v1/token`, authenticating with its client ID and secret (typically HTTP Basic Auth), and scopes control what the token can access.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            },
+            {
+              "url": "https://docs.ramp.com/llms-api.txt",
+              "title": "Ramp API reference",
+              "quote": "title: List physical cards\npath: /developer/v1/cards/physical\ndescription: Returns a paginated list of physical cards for the business. Cards can be filtered\nby user, activation status, termination status, and display name.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            },
+            {
+              "url": "https://docs.ramp.com/llms-guides/getting-started.txt",
+              "title": "Ramp Developer API quickstart",
+              "quote": "This guide assumes you are a Ramp customer with **admin** access to your dashboard.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "number": 90,
+      "app": "PitchBook",
+      "category": "Finance and Fintech",
+      "summary": "The current complete Composio catalog lists PitchBook, but official PitchBook API, authentication, access, and MCP pages returned HTTP 403 and could not be verified from rendered content.",
+      "blocker": "Official product and help pages were inaccessible, so search snippets cannot substantiate API availability, credential gates, or PitchBook Data MCP ownership and mode.",
+      "next_action": "Request accessible official PitchBook API and Data MCP documentation or vendor confirmation, then verify authentication, entitlement, endpoint coverage, and server deployment mode.",
+      "fields": {
+        "auth": {
+          "status": "unknown",
+          "value": "unknown",
+          "reason": "Targeted official PitchBook API and product pages returned HTTP 403 with no rendered content, leaving authentication methods unresolved; undated search snippets are not accepted evidence.",
+          "evidence": [
+            {
+              "url": "https://pitchbook.com/help/PitchBook-api",
+              "title": "PitchBook API help - attempted official source",
+              "quote": "",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            },
+            {
+              "url": "https://pitchbook.com/products/pitchbooks-ai-capabilities",
+              "title": "PitchBook AI capabilities - attempted official source",
+              "quote": "",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            }
+          ]
+        },
+        "credential_gate": {
+          "status": "unknown",
+          "value": "unknown",
+          "gate_class": "unknown",
+          "reason": "Official PitchBook help and product pages returned HTTP 403, so credential creation, subscription entitlement, partner approval, and pricing could not be verified from rendered official content.",
+          "evidence": [
+            {
+              "url": "https://pitchbook.com/help/data-feed-api-crm-direct-data-solutions",
+              "title": "PitchBook data feed and API help - attempted official source",
+              "quote": "",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            },
+            {
+              "url": "https://pitchbook.com/data",
+              "title": "PitchBook data - attempted official source",
+              "quote": "",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            }
+          ]
+        },
+        "api_surface": {
+          "status": "unknown",
+          "value": "unknown",
+          "api_types": [],
+          "breadth": "unknown",
+          "reason": "The official PitchBook API help page returned HTTP 403 and no rendered reference was available; inaccessible documentation cannot establish API type, breadth, or absence.",
+          "evidence": [
+            {
+              "url": "https://pitchbook.com/help/PitchBook-api",
+              "title": "PitchBook API help - attempted official source",
+              "quote": "",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            },
+            {
+              "url": "https://pitchbook.com/help/data-feed-api-crm-direct-data-solutions",
+              "title": "PitchBook data feed and API help - attempted official source",
+              "quote": "",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            }
+          ]
+        },
+        "official_mcp": {
+          "status": "unknown",
+          "value": "unknown",
+          "mcp_mode": "unknown",
+          "reason": "The official PitchBook Data MCP press release and AI product page returned HTTP 403; snippets cannot prove vendor operation, local or remote mode, access terms, or a publication date.",
+          "evidence": [
+            {
+              "url": "https://pitchbook.com/media/press-releases/pitchbook-launches-an-agentic-platform-assistant-and-new-pitchbook-data-mcp-to-meet-investors-rapidly-evolving-workflow-needs",
+              "title": "PitchBook Data MCP press release - attempted official source",
+              "quote": "",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            },
+            {
+              "url": "https://www.pitchbook.com/products/pitchbooks-ai-capabilities",
+              "title": "PitchBook AI capabilities - attempted official source",
+              "quote": "",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            }
+          ]
+        },
+        "composio_toolkit": {
+          "status": "checked",
+          "value": "listed_exact",
+          "reason": "The current complete Composio catalog contains the exact PitchBook toolkit and `PITCHBOOK` slug.",
+          "evidence": [
+            {
+              "url": "https://docs.composio.dev/toolkits.md",
+              "title": "Composio Toolkits",
+              "quote": "| [PitchBook](/toolkits/pitchbook.md) | `PITCHBOOK` | 130 | 0 | API_KEY | — |",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            }
+          ]
+        },
+        "verdict": {
+          "status": "unknown",
+          "value": "unknown",
+          "reason": "Authentication, credential access, and API surface remain unresolved because official PitchBook pages returned HTTP 403; a Composio listing alone does not establish vendor build readiness or terms.",
+          "evidence": [
+            {
+              "url": "https://pitchbook.com/help/PitchBook-api",
+              "title": "PitchBook API help - attempted official source",
+              "quote": "",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            },
+            {
+              "url": "https://pitchbook.com/products/pitchbooks-ai-capabilities",
+              "title": "PitchBook AI capabilities - attempted official source",
+              "quote": "",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

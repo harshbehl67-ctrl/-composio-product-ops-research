@@ -1,0 +1,2514 @@
+{
+  "category": "Finance and Fintech",
+  "checked_at": "2026-11-24",
+  "records": [
+    {
+      "number": 81,
+      "app": "Stripe",
+      "category": "Finance and Fintech",
+      "summary": "Stripe documents a broad REST API with Dashboard-managed API keys, free sandbox development, pay-as-you-go production pricing, and a vendor-operated remote MCP server.",
+      "blocker": "Production use requires live-mode credentials and incurs transaction fees; Stripe MCP changes key eligibility on 11 January 2027.",
+      "next_action": "Create a restricted test key, validate required payment operations in a sandbox, and use OAuth or an agent API key for MCP before the 2027 key cutoff.",
+      "fields": {
+        "auth": {
+          "status": "checked",
+          "value": [
+            "API key (REST HTTP Basic username; test and live modes)",
+            "OAuth 2.0 (Stripe MCP user delegation)",
+            "Agent API key (independent Stripe MCP access)"
+          ],
+          "reason": "Official authentication documentation requires API keys and HTTP Basic Auth; the official MCP page separately documents OAuth and agent API keys. These pages are undated.",
+          "evidence": [
+            {
+              "url": "https://docs.stripe.com/api/authentication",
+              "title": "API authentication - Stripe Docs",
+              "quote": "The Stripe API uses API keys to authenticate requests. You can view and manage your API keys in the Stripe Dashboard.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            },
+            {
+              "url": "https://docs.stripe.com/api/authentication",
+              "title": "API authentication - Stripe Docs",
+              "quote": "The Stripe API authenticates requests using HTTP Basic Auth. Provide your API key as the basic auth username value. You don’t need to provide a password.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            },
+            {
+              "url": "https://docs.stripe.com/mcp",
+              "title": "Stripe MCP",
+              "quote": "Stripe’s MCP server supports two authentication methods:\n\n1. **OAuth**: Use OAuth when a client accesses Stripe on behalf of your Stripe user account.\n2. **Agent API keys**: Use an agent API key when an AI application needs independent, persistent access to Stripe.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            }
+          ]
+        },
+        "credential_gate": {
+          "status": "checked",
+          "value": "self_serve_free",
+          "gate_class": "self_serve_free",
+          "reason": "Dashboard-managed keys and sandbox access support self-serve development, while the undated pricing page states there are no monthly fees; production transaction fees still apply.",
+          "evidence": [
+            {
+              "url": "https://stripe.com/pricing",
+              "title": "Stripe pricing",
+              "quote": "Access a complete payments platform with simple, pay-as-you-go pricing. No setup fees, monthly fees, or hidden fees.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            },
+            {
+              "url": "https://docs.stripe.com/api",
+              "title": "Stripe API reference",
+              "quote": "You can use the Stripe API in sandboxes without affecting your live data or interacting with banking networks.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            },
+            {
+              "url": "https://docs.stripe.com/api/authentication",
+              "title": "API authentication - Stripe Docs",
+              "quote": "Test mode secret keys start with `sk_test_` and have unrestricted access to their sandboxes. In live mode, you configure a restricted API key (starts with `rk_live_`) with specific API permissions.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            }
+          ]
+        },
+        "api_surface": {
+          "status": "checked",
+          "value": "REST; broad documented surface",
+          "api_types": [
+            "REST"
+          ],
+          "breadth": "broad",
+          "reason": "The undated official API reference explicitly identifies REST and describes resource-oriented URLs, form-encoded requests, JSON responses, standard HTTP behavior, and sandbox coverage.",
+          "evidence": [
+            {
+              "url": "https://docs.stripe.com/api",
+              "title": "Stripe API reference",
+              "quote": "The Stripe API is organized around [REST](https://en.wikipedia.org/wiki/Representational_State_Transfer).",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            }
+          ]
+        },
+        "official_mcp": {
+          "status": "checked",
+          "value": "vendor_server",
+          "mcp_mode": "remote",
+          "reason": "The undated official page says Stripe operates an MCP server and identifies `https://mcp.stripe.com` as its server URL. A dated transition notice requires OAuth or agent API keys before 11 January 2027.",
+          "evidence": [
+            {
+              "url": "https://docs.stripe.com/mcp",
+              "title": "Stripe MCP",
+              "quote": "Let your AI agents interact with the Stripe API by using our MCP server.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            },
+            {
+              "url": "https://docs.stripe.com/mcp",
+              "title": "Stripe MCP",
+              "quote": "MCP is an open protocol supported by many clients. Follow your client’s MCP setup instructions and use `https://mcp.stripe.com` as the server URL.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            },
+            {
+              "url": "https://docs.stripe.com/mcp",
+              "title": "Stripe MCP",
+              "quote": "Starting 11 January 2027, Stripe MCP will no longer accept full-access secret keys or non-agent restricted API keys. Migrate to an agent API key or reconnect with OAuth before that date. Requests using an unsupported key receive a `401` response with an OAuth discovery challenge.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            }
+          ]
+        },
+        "composio_toolkit": {
+          "status": "checked",
+          "value": "listed_exact",
+          "reason": "The current complete Composio catalog contains the exact Stripe toolkit and `STRIPE` slug; the separate Stripe MCP product was not substituted.",
+          "evidence": [
+            {
+              "url": "https://docs.composio.dev/toolkits.md",
+              "title": "Composio Toolkits",
+              "quote": "| [Stripe](/toolkits/stripe.md) | `STRIPE` | 435 | 40 | API_KEY, OAUTH2 | Yes |",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            }
+          ]
+        },
+        "verdict": {
+          "status": "checked",
+          "value": "documented_build_candidate",
+          "reason": "Checked OAuth/API-key authentication, a self-serve sandbox path, and a broad REST API support an immediate prototype; the undated pricing and API pages require separate production-fee and live-key review.",
+          "evidence": [
+            {
+              "url": "https://docs.stripe.com/api/authentication",
+              "title": "API authentication - Stripe Docs",
+              "quote": "The Stripe API uses API keys to authenticate requests. You can view and manage your API keys in the Stripe Dashboard.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            },
+            {
+              "url": "https://docs.stripe.com/api",
+              "title": "Stripe API reference",
+              "quote": "The Stripe API is organized around [REST](https://en.wikipedia.org/wiki/Representational_State_Transfer).",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            },
+            {
+              "url": "https://stripe.com/pricing",
+              "title": "Stripe pricing",
+              "quote": "Access a complete payments platform with simple, pay-as-you-go pricing. No setup fees, monthly fees, or hidden fees.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "number": 82,
+      "app": "Plaid",
+      "category": "Finance and Fintech",
+      "summary": "Plaid provides a broad REST API through Dashboard-issued client credentials, a self-serve Trial for eligible new teams, and both remote Dashboard and local development MCP servers.",
+      "blocker": "Trial eligibility is limited to new US/Canada teams created on or after 15 April 2026; production MCP requires approved Production access and at least one Plaid product.",
+      "next_action": "Create a Dashboard app, test in Sandbox, apply for the Trial if eligible, and confirm Production approval before using Dashboard MCP.",
+      "fields": {
+        "auth": {
+          "status": "checked",
+          "value": [
+            "Plaid client_id and secret (request body or PLAID-CLIENT-ID/PLAID-SECRET headers)"
+          ],
+          "reason": "The undated official API overview states that almost all endpoints require a client_id and secret and identifies the supported header names.",
+          "evidence": [
+            {
+              "url": "https://plaid.com/docs/api/",
+              "title": "Plaid API overview",
+              "quote": "Almost all Plaid API endpoints require a `client_id` and `secret`. These may be sent either in the request body or in the headers `PLAID-CLIENT-ID` and `PLAID-SECRET`.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            },
+            {
+              "url": "https://plaid.com/docs/quickstart/",
+              "title": "Plaid Quickstart",
+              "quote": "You'll have two different API keys, and there are two different Plaid environments. Today we'll start in the Sandbox environment. View the API Keys section of the Dashboard to find your Sandbox secret.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            }
+          ]
+        },
+        "credential_gate": {
+          "status": "checked",
+          "value": "self_serve_trial",
+          "gate_class": "self_serve_trial",
+          "reason": "The undated billing page offers a self-serve Trial to new US/Canada teams created on or after 15 April 2026, with ten Production Items before a paid upgrade is required.",
+          "evidence": [
+            {
+              "url": "https://plaid.com/docs/account/billing/",
+              "title": "Plaid billing",
+              "quote": "Free Trial plans are available to new Plaid teams (US/Canada only) created on or after April 15, 2026.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            },
+            {
+              "url": "https://plaid.com/docs/account/billing/",
+              "title": "Plaid billing",
+              "quote": "To start a Trial plan, create a Dashboard account and verify your email address.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            },
+            {
+              "url": "https://plaid.com/docs/account/billing/",
+              "title": "Plaid billing",
+              "quote": "You can create 10 Production Items on a Trial plan. After creating 10 Items in Production, you must upgrade to a paid plan to create more Production Items.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            }
+          ]
+        },
+        "api_surface": {
+          "status": "checked",
+          "value": "REST; broad documented surface",
+          "api_types": [
+            "REST"
+          ],
+          "breadth": "broad",
+          "reason": "The undated official API overview documents JSON-over-HTTP POST requests and identifies the Plaid API as RESTful through its OpenAPI specification, with broad product and endpoint coverage.",
+          "evidence": [
+            {
+              "url": "https://plaid.com/docs/api/",
+              "title": "Plaid API overview",
+              "quote": "The Plaid API is JSON over HTTP. Requests are POST requests, and responses are JSON, with errors indicated in response bodies as `error_code` and `error_type` (use these in preference to HTTP status codes for identifying application-level errors).",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            },
+            {
+              "url": "https://plaid.com/docs/api/",
+              "title": "Plaid API overview",
+              "quote": "OpenAPI is a standard format for describing RESTful APIs that allows those APIs to be integrated with tools for a wide variety of applications, including testing, client library generation, IDE integration, and more.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            }
+          ]
+        },
+        "official_mcp": {
+          "status": "checked",
+          "value": "vendor_server",
+          "mcp_mode": "both",
+          "reason": "The undated official MCP page explicitly offers a Plaid-hosted remote Dashboard MCP server and a local development MCP server. The remote server requires Production approval and is under active development.",
+          "evidence": [
+            {
+              "url": "https://plaid.com/docs/resources/mcp/",
+              "title": "Plaid MCP servers",
+              "quote": "Plaid offers two Model Context Protocol (MCP) servers:\n\n* The Dashboard MCP server is a remote MCP server hosted by Plaid. It provides Production diagnostics and analytics tools, including tools for debugging Items, reviewing Link conversion data, and checking usage metrics.\n* The Plaid AI coding toolkit includes a local MCP server for development.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            },
+            {
+              "url": "https://plaid.com/docs/resources/mcp/",
+              "title": "Plaid MCP servers",
+              "quote": "The Dashboard MCP server works with Production data only. Your team must be approved for Production access with at least one Plaid product to use the MCP server.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            },
+            {
+              "url": "https://plaid.com/docs/resources/mcp/",
+              "title": "Plaid MCP servers",
+              "quote": "The Dashboard MCP server is under active development. Breaking changes may occur, and Plaid currently provides limited support.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            }
+          ]
+        },
+        "composio_toolkit": {
+          "status": "checked",
+          "value": "listed_exact",
+          "reason": "The current complete Composio catalog contains the exact Plaid toolkit and `PLAID` slug; the separate Plaid MCP product was not substituted.",
+          "evidence": [
+            {
+              "url": "https://docs.composio.dev/toolkits.md",
+              "title": "Composio Toolkits",
+              "quote": "| [Plaid](/toolkits/plaid.md) | `PLAID` | 70 | 0 | API_KEY | — |",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            }
+          ]
+        },
+        "verdict": {
+          "status": "checked",
+          "value": "documented_build_candidate",
+          "reason": "Dashboard credentials, a documented Trial path, and a broad REST API support a build candidate for eligible teams; the undated billing and API pages require eligibility and Production-access checks before launch.",
+          "evidence": [
+            {
+              "url": "https://plaid.com/docs/quickstart/",
+              "title": "Plaid Quickstart",
+              "quote": "You'll have two different API keys, and there are two different Plaid environments. Today we'll start in the Sandbox environment. View the API Keys section of the Dashboard to find your Sandbox secret.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            },
+            {
+              "url": "https://plaid.com/docs/account/billing/",
+              "title": "Plaid billing",
+              "quote": "Using a Trial plan, you can use Plaid with real production data for free.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            },
+            {
+              "url": "https://plaid.com/docs/api/",
+              "title": "Plaid API overview",
+              "quote": "The Plaid API is JSON over HTTP. Requests are POST requests, and responses are JSON, with errors indicated in response bodies as `error_code` and `error_type` (use these in preference to HTTP status codes for identifying application-level errors).",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "number": 83,
+      "app": "Binance",
+      "category": "Finance and Fintech",
+      "summary": "Binance's current official developer text documents broad Spot REST and WebSocket market-data APIs, signed Ed25519/RSA/HMAC API-key authentication, and a Binance-operated remote MCP server scoped to an Agentic sub-account. The preserved complete-catalog review still finds no Composio Binance toolkit, and vendor MCP evidence does not establish a Composio listing.",
+      "blocker": "Public market-data access needs no credentials, but signed account/trading access requires an eligible Binance account and a restricted API key. The Binance MCP server is remote-only, requires a funded Agentic sub-account, exposes no withdrawal scope, and is tied to supported clients and a content snapshot dated 2026-08-17.",
+      "next_action": "Prototype unauthenticated market data at data-api.binance.vision, then use a least-privilege Ed25519 key without withdrawals for private Spot operations. For MCP, verify current regional/account eligibility and the supported-client flow, authorize only required scopes, and fund an isolated Agentic sub-account without relying on withdrawal capabilities.",
+      "fields": {
+        "auth": {
+          "status": "checked",
+          "value": [
+            "Unauthenticated public Spot market-data HTTP/WebSocket endpoints",
+            "Spot signed API key (X-MBX-APIKEY): Ed25519 recommended; RSA supported; HMAC supported but deprecated",
+            "Binance Agentic account authorization for the remote MCP connection"
+          ],
+          "reason": "The undated Market Data Only page explicitly excludes authentication for public data. The undated Spot security documentation requires API keys plus signatures for secure endpoints, and the undated key-types page recommends Ed25519 while marking HMAC deprecated. The MCP documentation snapshot dated 2026-08-17 separately requires Binance account authorization; neither API-key nor MCP authentication is inferred from Composio.",
+          "evidence": [
+            {
+              "url": "https://developers.binance.com/en/docs/products/spot/faqs/market_data_only.md",
+              "title": "Market Data Only URLs",
+              "quote": "These URLs do not require any authentication (i.e. The API key is not necessary) and serve only public market data.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            },
+            {
+              "url": "https://developers.binance.com/en/docs/products/spot/rest-api.md",
+              "title": "General REST API Information",
+              "quote": "Secure endpoints require a valid API key to be specified and authenticated.\n  - API keys can be created on the\n    [API Management](https://www.binance.com/en/support/faq/360002502072) page of your Binance\n    account.\n  - **Both API key and secret key are sensitive.** Never share them with anyone.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            },
+            {
+              "url": "https://developers.binance.com/en/docs/products/spot/rest-api.md",
+              "title": "General REST API Information",
+              "quote": "- `SIGNED` endpoints require an additional parameter, `signature`, to be sent in the `query string`\n  or `request body`.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            },
+            {
+              "url": "https://developers.binance.com/en/docs/products/spot/faqs/api_key_types.md",
+              "title": "API Key Types",
+              "quote": "Binance APIs require an API key to access authenticated endpoints for trading, account history, etc.\n\nWe support several types of API keys:\n\n- Ed25519 (recommended)\n- HMAC\n- RSA",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            },
+            {
+              "url": "https://developers.binance.com/en/docs/products/spot/faqs/api_key_types.md",
+              "title": "API Key Types",
+              "quote": "**HMAC keys are deprecated.** We recommend to migrate to asymmetric API keys, such as Ed25519 or\nRSA.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            },
+            {
+              "url": "https://developers.binance.com/en/docs/agent-native/mcp-server/agentic.md",
+              "title": "Binance MCP Server",
+              "quote": "**Step 4:** Authenticate to authorize the connection.",
+              "retrieved_at": "2026-11-24",
+              "published_at": "2026-08-17",
+              "published_label": "documentation content snapshot synced 2026-08-17"
+            }
+          ]
+        },
+        "credential_gate": {
+          "status": "checked",
+          "value": "self_serve_free",
+          "gate_class": "self_serve_free",
+          "reason": "Public Spot market data is explicitly credential-free, so the checked gate is scoped to that usable no-credential surface rather than claimed to cover private trading. Secure Spot endpoints require account-created keys and explicit TRADE permission. The MCP path requires login, selected scopes, and a funded Agentic sub-account. No paid API plan or universal regional eligibility is established; the key-types and MCP-access pages are undated, while the MCP content snapshot is dated 2026-08-17.",
+          "evidence": [
+            {
+              "url": "https://developers.binance.com/en/docs/products/spot/faqs/market_data_only.md",
+              "title": "Market Data Only URLs",
+              "quote": "These URLs do not require any authentication (i.e. The API key is not necessary) and serve only public market data.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            },
+            {
+              "url": "https://developers.binance.com/en/docs/products/spot/rest-api.md",
+              "title": "General REST API Information",
+              "quote": "- By default, an API key cannot `TRADE`. You need to enable trading in API Management first.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            },
+            {
+              "url": "https://developers.binance.com/en/docs/agent-native/mcp-server/agentic.md",
+              "title": "Binance MCP Server",
+              "quote": "When you connect, you choose which scopes to grant. Start with the least you need:\n\n- **Market data** (public, no auth) — tickers, order books, candles, funding\n- **Account** — Agentic sub-account balance, positions, bills; optional read-only view of your main\n  account\n- **Trade** — spot, margin, convert, futures (only what you grant and your account is authorized\n  for)\n- **Transfer** — move funds between wallets inside the same Agentic sub-account only",
+              "retrieved_at": "2026-11-24",
+              "published_at": "2026-08-17",
+              "published_label": "documentation content snapshot synced 2026-08-17"
+            },
+            {
+              "url": "https://developers.binance.com/en/docs/agent-native/mcp-server/agentic.md",
+              "title": "Binance MCP Server",
+              "quote": "Your agent trades inside a dedicated sub-account, isolated from your main account. If you don't have\none, the onboarding flow prompts you to create one when you first authorize.\n\nThe sub-account starts empty. Before your agent can trade, you must transfer funds into it yourself\nfrom the Binance web UI",
+              "retrieved_at": "2026-11-24",
+              "published_at": "2026-08-17",
+              "published_label": "documentation content snapshot synced 2026-08-17"
+            }
+          ]
+        },
+        "api_surface": {
+          "status": "checked",
+          "value": "Broad documented Spot REST and WebSocket surface; broad",
+          "api_types": [
+            "HTTP API",
+            "WebSocket API",
+            "WebSocket Streams"
+          ],
+          "breadth": "broad",
+          "reason": "The undated official REST page documents HTTPS base endpoints, JSON responses, and signed trade/account/order operations. The undated Market Data Only page documents unauthenticated REST market endpoints and WebSocket streams for tickers, order books, candles, aggregate trades, exchange information, and server time, while excluding User Data Streams. This supports a broad Spot-only claim, not an unverified claim about every Binance product.",
+          "evidence": [
+            {
+              "url": "https://developers.binance.com/en/docs/products/spot/rest-api.md",
+              "title": "General REST API Information",
+              "quote": "The following base endpoints are available. Please use whichever works best for your setup:\n  - **https://api.binance.com**\n  - **https://api-gcp.binance.com**\n  - **https://api1.binance.com**\n  - **https://api2.binance.com**\n  - **https://api3.binance.com**\n  - **https://api4.binance.com**\n- The last 4 endpoints in the point above (`api1`-`api4`) should give better performance but have\n  less stability.\n- Responses are in JSON by default.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            },
+            {
+              "url": "https://developers.binance.com/en/docs/products/spot/rest-api.md",
+              "title": "General REST API Information",
+              "quote": "| `TRADE`       | Trading on the exchange, placing and canceling orders                      |\n| `USER_DATA`   | Private account information, such as order status and your trading history |\n| `USER_STREAM` | Managing User Data Stream subscriptions                                    |",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            },
+            {
+              "url": "https://developers.binance.com/en/docs/products/spot/faqs/market_data_only.md",
+              "title": "Market Data Only URLs",
+              "quote": "On the RESTful API, these are the endpoints you can request on `data-api.binance.vision`:\n\n- [GET /api/v3/aggTrades](/catalog/core-trading-spot-trading/api/rest-api/market#agg-trades)\n- [GET /api/v3/avgPrice](/catalog/core-trading-spot-trading/api/rest-api/market#avg-price)\n- [GET /api/v3/depth](/catalog/core-trading-spot-trading/api/rest-api/market#depth)\n- [GET /api/v3/exchangeInfo](/catalog/core-trading-spot-trading/api/rest-api/general#exchange-info)\n- [GET /api/v3/klines](/catalog/core-trading-spot-trading/api/rest-api/market#klines)\n- [GET /api/v3/ping](/catalog/core-trading-spot-trading/api/rest-api/general#ping)\n- [GET /api/v3/ticker](/catalog/core-trading-spot-trading/api/rest-api/market#ticker)",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            },
+            {
+              "url": "https://developers.binance.com/en/docs/products/spot/faqs/market_data_only.md",
+              "title": "Market Data Only URLs",
+              "quote": "- [GET /api/v3/ticker/24hr](/catalog/core-trading-spot-trading/api/rest-api/market#ticker24hr)\n- [GET /api/v3/ticker/bookTicker](/catalog/core-trading-spot-trading/api/rest-api/market#ticker-book-ticker)\n- [GET /api/v3/ticker/price](/catalog/core-trading-spot-trading/api/rest-api/market#ticker-price)\n- [GET /api/v3/time](/catalog/core-trading-spot-trading/api/rest-api/general#time)\n- [GET /api/v3/trades](/catalog/core-trading-spot-trading/api/rest-api/market#get-trades)\n- [GET /api/v3/uiKlines](/catalog/core-trading-spot-trading/api/rest-api/market#ui-klines)",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            },
+            {
+              "url": "https://developers.binance.com/en/docs/products/spot/faqs/market_data_only.md",
+              "title": "Market Data Only URLs",
+              "quote": "Public market data can also be retrieved through the websocket market data using the URL\n`data-stream.binance.vision`. The streams available through this domain are the same that can be\nfound in the [WebSocket Market Streams](../web-socket-streams.md) documentation.\n\nNote that User Data Streams **cannot** be accessed through this URL.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            }
+          ]
+        },
+        "official_mcp": {
+          "status": "checked",
+          "value": "vendor_server",
+          "mcp_mode": "remote",
+          "server_urls": [
+            "https://agent.binance.com/mcp/agentic"
+          ],
+          "authentication": "Binance account authorization with user-selected scopes; supported AI client/connector flow",
+          "reason": "Official Binance MCP documentation explicitly says the server is operated by Binance's AI team, gives a hosted HTTPS endpoint and HTTP transport, and requires account authorization. It is a vendor server consumed by clients/connectors, not a Binance MCP client. The documentation is a content snapshot synced 2026-08-17; account and trade scopes operate only in an Agentic sub-account and withdrawal scope is never available.",
+          "evidence": [
+            {
+              "url": "https://developers.binance.com/en/docs/agent-native/mcp-server/agentic.md",
+              "title": "Binance MCP Server",
+              "quote": "This MCP server is operated by Binance's AI team; mirrored here as our discovery entry point.",
+              "retrieved_at": "2026-11-24",
+              "published_at": "2026-08-17",
+              "published_label": "documentation content snapshot synced 2026-08-17"
+            },
+            {
+              "url": "https://developers.binance.com/en/docs/agent-native/mcp-server/agentic.md",
+              "title": "Binance MCP Server",
+              "quote": "Connect your AI agent to Binance with a single URL. Your agent can read market data, check balances, trade Spot / Margin / Convert / USDⓈ-M / COIN-M Futures, and move funds between wallets inside a dedicated Agentic sub-account — no local install, no API keys on your device.",
+              "retrieved_at": "2026-11-24",
+              "published_at": "2026-08-17",
+              "published_label": "documentation content snapshot synced 2026-08-17"
+            },
+            {
+              "url": "https://developers.binance.com/en/docs/agent-native/mcp-server/agentic.md",
+              "title": "Binance MCP Server",
+              "quote": "**Step 2:** Run the following command to add the Binance MCP server:\n\n```bash\nclaude mcp add binance-mcp-server --transport http https://agent.binance.com/mcp/agentic\n```",
+              "retrieved_at": "2026-11-24",
+              "published_at": "2026-08-17",
+              "published_label": "documentation content snapshot synced 2026-08-17"
+            },
+            {
+              "url": "https://developers.binance.com/en/docs/agent-native/mcp-server/agentic.md",
+              "title": "Binance MCP Server",
+              "quote": "**Step 4:** Authenticate to authorize the connection.",
+              "retrieved_at": "2026-11-24",
+              "published_at": "2026-08-17",
+              "published_label": "documentation content snapshot synced 2026-08-17"
+            },
+            {
+              "url": "https://developers.binance.com/en/docs/agent-native/mcp-server/agentic.md",
+              "title": "Binance MCP Server",
+              "quote": "There is **no withdrawal scope**. Your agent can never move funds out of the sub-account to an\nexternal address.",
+              "retrieved_at": "2026-11-24",
+              "published_at": "2026-08-17",
+              "published_label": "documentation content snapshot synced 2026-08-17"
+            }
+          ]
+        },
+        "composio_toolkit": {
+          "status": "checked",
+          "value": "not_listed",
+          "reason": "The preserved 2026-11-24 review of the complete Composio catalog of 1,841 toolkits found no exact Binance toolkit row or approved alias; namesake and MCP-specific products were not substituted. The complete catalog was not re-proven for this follow-up, and the official Binance vendor MCP server is not evidence of a Composio toolkit.",
+          "evidence": [
+            {
+              "url": "https://docs.composio.dev/toolkits.md",
+              "title": "Composio Toolkits",
+              "quote": "Composio supports 1841 toolkits for building AI agents.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            },
+            {
+              "url": "https://docs.composio.dev/toolkits.md",
+              "title": "Composio Toolkits",
+              "quote": "## All Toolkits\n\n| Toolkit | Slug | Tools | Triggers | Auth | Managed App |",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            }
+          ]
+        },
+        "verdict": {
+          "status": "checked",
+          "value": "documented_build_candidate",
+          "reason": "Credential-free public Spot market data and the broad documented REST/WebSocket surface support a build candidate without claiming that private access is ungated. Secure Spot operations need account-issued keys and enabled permissions; the vendor remote MCP additionally requires authorization and a funded Agentic sub-account. The undated API pages and MCP content snapshot dated 2026-08-17 require current eligibility and scope checks before private use.",
+          "evidence": [
+            {
+              "url": "https://developers.binance.com/en/docs/products/spot/faqs/market_data_only.md",
+              "title": "Market Data Only URLs",
+              "quote": "These URLs do not require any authentication (i.e. The API key is not necessary) and serve only public market data.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            },
+            {
+              "url": "https://developers.binance.com/en/docs/products/spot/rest-api.md",
+              "title": "General REST API Information",
+              "quote": "- By default, an API key cannot `TRADE`. You need to enable trading in API Management first.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            },
+            {
+              "url": "https://developers.binance.com/en/docs/agent-native/mcp-server/agentic.md",
+              "title": "Binance MCP Server",
+              "quote": "This MCP server is operated by Binance's AI team; mirrored here as our discovery entry point.",
+              "retrieved_at": "2026-11-24",
+              "published_at": "2026-08-17",
+              "published_label": "documentation content snapshot synced 2026-08-17"
+            },
+            {
+              "url": "https://developers.binance.com/en/docs/agent-native/mcp-server/agentic.md",
+              "title": "Binance MCP Server",
+              "quote": "Your agent trades inside a dedicated sub-account, isolated from your main account. If you don't have\none, the onboarding flow prompts you to create one when you first authorize.\n\nThe sub-account starts empty. Before your agent can trade, you must transfer funds into it yourself\nfrom the Binance web UI",
+              "retrieved_at": "2026-11-24",
+              "published_at": "2026-08-17",
+              "published_label": "documentation content snapshot synced 2026-08-17"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "number": 84,
+      "app": "Paygent Connect",
+      "category": "Finance and Fintech",
+      "summary": "Paygent Connect documents a bearer-authenticated REST payment overview, a free sandbox, and paid production access with merchant onboarding on its first-party gopaygent.com and branded gateway domains. The reviewed official documentation does not document a Paygent-operated MCP server.",
+      "blocker": "Public pages stop at overviews: no public endpoint schema or API-key issuance workflow was found, and the homepage's example API host returned a TLS-name error on 2026-11-24. Production also involves merchant onboarding and paid processing, so a live integration is not yet verified.",
+      "next_action": "Obtain a working official endpoint reference and sandbox credential-issuance flow from Paygent, confirm current production pricing and merchant approval, then test sandbox tokenization, payments, and webhooks. Request MCP documentation only if Paygent confirms a vendor server; do not substitute NMI's documentation MCP.",
+      "fields": {
+        "auth": {
+          "status": "checked",
+          "value": [
+            "Bearer API key in the Authorization header (official homepage cURL example; placeholder pgt_live_xxx)"
+          ],
+          "reason": "The undated official homepage displays an API request using an Authorization: Bearer header with the placeholder pgt_live_xxx. This verifies only the authentication method shown in that example, not a formal authentication reference, key issuance, scopes, rotation, or current reachability of the example API host. The separate Paygent-branded merchant portal uses a username/password control-panel login; that is not evidence of API-key authentication.",
+          "evidence": [
+            {
+              "url": "https://www.gopaygent.com/",
+              "title": "Paygent | Merchant Payments and Tapn Tap-to-Pay Solutions",
+              "quote": "Authorization: Bearer pgt_live_xxx",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated",
+              "verification_method": "headless Chromium rendered body innerText (installed Chrome; no raw HTML)",
+              "verification_note": "The rendered official page reproduced the normalized quotation. Direct HTTP retrieval missed JavaScript-rendered, redirect-sensitive, or charset-sensitive content; no search snippet or hidden raw HTML was used.",
+              "verified_at": "2026-11-24",
+              "source_review": "The rendered official page reproduced the normalized quotation. Direct HTTP retrieval missed JavaScript-rendered, redirect-sensitive, or charset-sensitive content; no search snippet or hidden raw HTML was used."
+            },
+            {
+              "url": "https://paygent.transactiongateway.com/",
+              "title": "Payment Gateway",
+              "quote": "Merchant Login\n\nTo access your control panel, please enter your username and password in the fields below.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            }
+          ]
+        },
+        "credential_gate": {
+          "status": "checked",
+          "value": "mixed",
+          "gate_class": "mixed",
+          "reason": "The undated pricing FAQ explicitly offers a no-cost sandbox with full API access and no credit card, while the same page lists Paygent Platform production pricing of a $15 monthly gateway fee plus $0.10 per transaction. Signup is a merchant onboarding request, Connect documents automated underwriting/onboarding, and the Terms updated 2026-04-23 require accurate business and beneficial-ownership information. This supports mixed free-sandbox/paid-production access rather than unrestricted self-serve production; public API-key issuance steps remain undocumented.",
+          "evidence": [
+            {
+              "url": "https://www.gopaygent.com/",
+              "title": "Paygent developer platform",
+              "quote": "Start for free No credit card required. Free plan available.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated",
+              "original_url": "https://www.gopaygent.com/pricing",
+              "source_review": "The current first-party homepage visibly states free no-card access. Direct HTTP retrieval returns a JavaScript shell; the rendered page reproduces the normalized quotation.",
+              "verification_method": "installed Chrome rendered body innerText after extended wait (no raw HTML)",
+              "verification_note": "The current first-party homepage visibly states free no-card access. Direct HTTP retrieval returns a JavaScript shell; the rendered page reproduces the normalized quotation.",
+              "verified_at": "2026-11-24"
+            },
+            {
+              "url": "https://www.gopaygent.com/pricing",
+              "title": "Paygent | The Premier Stripe & PayPal Alternative for API Payments",
+              "quote": "PAYGENT PLATFORM\nDeveloper & B2B\n\nFor SaaS, Wholesalers, and Platforms.\n\nMONTHLY GATEWAY\n\n$15\n\nPER TRANSACTION\n\n$0.10",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated",
+              "verification_method": "headless Chromium rendered body innerText (installed Chrome; no raw HTML)",
+              "verification_note": "The rendered official page reproduced the normalized quotation. Direct HTTP retrieval missed JavaScript-rendered, redirect-sensitive, or charset-sensitive content; no search snippet or hidden raw HTML was used.",
+              "verified_at": "2026-11-24",
+              "source_review": "The rendered official page reproduced the normalized quotation. Direct HTTP retrieval missed JavaScript-rendered, redirect-sensitive, or charset-sensitive content; no search snippet or hidden raw HTML was used."
+            },
+            {
+              "url": "https://www.gopaygent.com/signup",
+              "title": "Get Started with Paygent | Merchant Onboarding Request",
+              "quote": "MERCHANT SIGNUP\nCreate Your Account\n\nJoin Paygent and get access to the TapN Soft POS and industry-leading payment gateways.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated",
+              "verification_method": "headless Chromium rendered body innerText (installed Chrome; no raw HTML)",
+              "verification_note": "The rendered official page reproduced the normalized quotation. Direct HTTP retrieval missed JavaScript-rendered, redirect-sensitive, or charset-sensitive content; no search snippet or hidden raw HTML was used.",
+              "verified_at": "2026-11-24",
+              "source_review": "The rendered official page reproduced the normalized quotation. Direct HTTP retrieval missed JavaScript-rendered, redirect-sensitive, or charset-sensitive content; no search snippet or hidden raw HTML was used."
+            },
+            {
+              "url": "https://www.gopaygent.com/products/connect",
+              "title": "Paygent | The Premier Stripe & PayPal Alternative for API Payments",
+              "quote": "Use the Pathfinder API to completely automate underwriting and onboarding within your own application.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated",
+              "verification_method": "headless Chromium rendered body innerText (installed Chrome; no raw HTML)",
+              "verification_note": "The rendered official page reproduced the normalized quotation. Direct HTTP retrieval missed JavaScript-rendered, redirect-sensitive, or charset-sensitive content; no search snippet or hidden raw HTML was used.",
+              "verified_at": "2026-11-24",
+              "source_review": "The rendered official page reproduced the normalized quotation. Direct HTTP retrieval missed JavaScript-rendered, redirect-sensitive, or charset-sensitive content; no search snippet or hidden raw HTML was used."
+            },
+            {
+              "url": "https://www.gopaygent.com/terms",
+              "title": "Paygent | The Premier Stripe & PayPal Alternative for API Payments",
+              "quote": "Provide accurate business and beneficial ownership information during onboarding.",
+              "retrieved_at": "2026-11-24",
+              "published_at": "2026-04-23",
+              "published_label": "Last updated: April 23, 2026",
+              "verification_method": "headless Chromium rendered body innerText (installed Chrome; no raw HTML)",
+              "verification_note": "The rendered official page reproduced the normalized quotation. Direct HTTP retrieval missed JavaScript-rendered, redirect-sensitive, or charset-sensitive content; no search snippet or hidden raw HTML was used.",
+              "verified_at": "2026-11-24",
+              "source_review": "The rendered official page reproduced the normalized quotation. Direct HTTP retrieval missed JavaScript-rendered, redirect-sensitive, or charset-sensitive content; no search snippet or hidden raw HTML was used."
+            }
+          ]
+        },
+        "api_surface": {
+          "status": "checked",
+          "value": "REST; moderate documented surface at overview level, without a public endpoint schema",
+          "api_types": [
+            "REST"
+          ],
+          "breadth": "moderate",
+          "reason": "Paygent's undated homepage and Connect page document REST APIs for payments, customers, payouts, automated merchant onboarding, and event notifications; the developer page names Pathfinder, Collect.js, and Three-Step Redirect. NMI's official Pathfinder guide corroborates merchant-management APIs for the same named stack, but the accessible NMI pages reviewed do not name Paygent, so the NMI relationship rests on Paygent's own documentation and branded gateway portal rather than an NMI statement naming Paygent. Moderate describes the named operation families, not a verified endpoint count: the API Reference navigation resolves to an SDK page and no public endpoint schema was found.",
+          "evidence": [
+            {
+              "url": "https://www.gopaygent.com/",
+              "title": "Paygent | Merchant Payments and Tapn Tap-to-Pay Solutions",
+              "quote": "Build marketplace payments, revenue sharing, and automated onboarding with Paygent Connect.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated",
+              "verification_method": "headless Chromium rendered body innerText (installed Chrome; no raw HTML)",
+              "verification_note": "The rendered official page reproduced the normalized quotation. Direct HTTP retrieval missed JavaScript-rendered, redirect-sensitive, or charset-sensitive content; no search snippet or hidden raw HTML was used.",
+              "verified_at": "2026-11-24",
+              "source_review": "The rendered official page reproduced the normalized quotation. Direct HTTP retrieval missed JavaScript-rendered, redirect-sensitive, or charset-sensitive content; no search snippet or hidden raw HTML was used."
+            },
+            {
+              "url": "https://www.gopaygent.com/",
+              "title": "Paygent | Merchant Payments and Tapn Tap-to-Pay Solutions",
+              "quote": "Accept payments, create customers, send payouts, and automate everything.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated",
+              "verification_method": "headless Chromium rendered body innerText (installed Chrome; no raw HTML)",
+              "verification_note": "The rendered official page reproduced the normalized quotation. Direct HTTP retrieval missed JavaScript-rendered, redirect-sensitive, or charset-sensitive content; no search snippet or hidden raw HTML was used.",
+              "verified_at": "2026-11-24",
+              "source_review": "The rendered official page reproduced the normalized quotation. Direct HTTP retrieval missed JavaScript-rendered, redirect-sensitive, or charset-sensitive content; no search snippet or hidden raw HTML was used."
+            },
+            {
+              "url": "https://www.gopaygent.com/",
+              "title": "Paygent | Merchant Payments and Tapn Tap-to-Pay Solutions",
+              "quote": "Clean, predictable, and fully documented REST APIs for every payment workflow.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated",
+              "verification_method": "headless Chromium rendered body innerText (installed Chrome; no raw HTML)",
+              "verification_note": "The rendered official page reproduced the normalized quotation. Direct HTTP retrieval missed JavaScript-rendered, redirect-sensitive, or charset-sensitive content; no search snippet or hidden raw HTML was used.",
+              "verified_at": "2026-11-24",
+              "source_review": "The rendered official page reproduced the normalized quotation. Direct HTTP retrieval missed JavaScript-rendered, redirect-sensitive, or charset-sensitive content; no search snippet or hidden raw HTML was used."
+            },
+            {
+              "url": "https://www.gopaygent.com/",
+              "title": "Paygent | Merchant Payments and Tapn Tap-to-Pay Solutions",
+              "quote": "Real-time event notifications with retry logic and delivery guarantees.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated",
+              "verification_method": "headless Chromium rendered body innerText (installed Chrome; no raw HTML)",
+              "verification_note": "The rendered official page reproduced the normalized quotation. Direct HTTP retrieval missed JavaScript-rendered, redirect-sensitive, or charset-sensitive content; no search snippet or hidden raw HTML was used.",
+              "verified_at": "2026-11-24",
+              "source_review": "The rendered official page reproduced the normalized quotation. Direct HTTP retrieval missed JavaScript-rendered, redirect-sensitive, or charset-sensitive content; no search snippet or hidden raw HTML was used."
+            },
+            {
+              "url": "https://www.gopaygent.com/developers/docs",
+              "title": "Paygent | The Premier Stripe & PayPal Alternative for API Payments",
+              "quote": "Deep dive into the Pathfinder API, Collect.js, and Three-Step Redirect logic.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated",
+              "verification_method": "headless Chromium rendered body innerText (installed Chrome; no raw HTML)",
+              "verification_note": "The rendered official page reproduced the normalized quotation. Direct HTTP retrieval missed JavaScript-rendered, redirect-sensitive, or charset-sensitive content; no search snippet or hidden raw HTML was used.",
+              "verified_at": "2026-11-24",
+              "source_review": "The rendered official page reproduced the normalized quotation. Direct HTTP retrieval missed JavaScript-rendered, redirect-sensitive, or charset-sensitive content; no search snippet or hidden raw HTML was used."
+            },
+            {
+              "url": "https://guide.nmi.com/",
+              "title": "Pathfinder",
+              "quote": "Onboard and manage merchants with tools and APIs designed to simplify their journey.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated",
+              "verification_method": "headless Chromium rendered body innerText (installed Chrome; no raw HTML)",
+              "verification_note": "The rendered official page reproduced the normalized quotation. Direct HTTP retrieval missed JavaScript-rendered, redirect-sensitive, or charset-sensitive content; no search snippet or hidden raw HTML was used.",
+              "verified_at": "2026-11-24",
+              "source_review": "The rendered official page reproduced the normalized quotation. Direct HTTP retrieval missed JavaScript-rendered, redirect-sensitive, or charset-sensitive content; no search snippet or hidden raw HTML was used."
+            }
+          ]
+        },
+        "official_mcp": {
+          "status": "checked",
+          "value": "no_vendor_server_documented",
+          "review_basis": "scoped_documentation_review",
+          "mcp_mode": "unknown",
+          "reason": "Scoped documentation review of Paygent's official developer docs, SDK page, MCP route, sitemap, and NMI's underlying platform documentation found no vendor server for Paygent Connect. The Paygent MCP route returns 404 and the sitemap lists no MCP URL; NMI's separate Developer Docs MCP is explicitly limited to NMI documentation and is not attributed to Paygent. This is a point-in-time documentation finding, not a universal absence claim. The reviewed Paygent pages are undated; NMI metadata shows updatedAt 2026-10-28 without a publication date.",
+          "evidence": [
+            {
+              "url": "https://www.gopaygent.com/developers/docs",
+              "title": "Paygent | The Premier Stripe & PayPal Alternative for API Payments",
+              "quote": "Deep dive into the Pathfinder API, Collect.js, and Three-Step Redirect logic.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated",
+              "verification_method": "headless Chromium rendered body innerText (installed Chrome; no raw HTML)",
+              "verification_note": "The rendered official page reproduced the normalized quotation. Direct HTTP retrieval missed JavaScript-rendered, redirect-sensitive, or charset-sensitive content; no search snippet or hidden raw HTML was used.",
+              "verified_at": "2026-11-24",
+              "source_review": "The rendered official page reproduced the normalized quotation. Direct HTTP retrieval missed JavaScript-rendered, redirect-sensitive, or charset-sensitive content; no search snippet or hidden raw HTML was used."
+            },
+            {
+              "url": "https://www.gopaygent.com/developers/sdk",
+              "title": "Paygent | The Premier Stripe & PayPal Alternative for API Payments",
+              "quote": "Pre-built integrations for iOS, Android, and Windows/Linux environments.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated",
+              "verification_method": "headless Chromium rendered body innerText (installed Chrome; no raw HTML)",
+              "verification_note": "The rendered official page reproduced the normalized quotation. Direct HTTP retrieval missed JavaScript-rendered, redirect-sensitive, or charset-sensitive content; no search snippet or hidden raw HTML was used.",
+              "verified_at": "2026-11-24",
+              "source_review": "The rendered official page reproduced the normalized quotation. Direct HTTP retrieval missed JavaScript-rendered, redirect-sensitive, or charset-sensitive content; no search snippet or hidden raw HTML was used."
+            },
+            {
+              "url": "https://www.gopaygent.com/developers/mcp",
+              "title": "Paygent | The Premier Stripe & PayPal Alternative for API Payments",
+              "quote": "404\nPage not found\n\nThe page you're looking for doesn't exist or has been moved. Let's get you back on track.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated",
+              "verification_method": "headless Chromium rendered body innerText (installed Chrome; no raw HTML)",
+              "verification_note": "The rendered official page reproduced the normalized quotation. Direct HTTP retrieval missed JavaScript-rendered, redirect-sensitive, or charset-sensitive content; no search snippet or hidden raw HTML was used.",
+              "verified_at": "2026-11-24",
+              "source_review": "The rendered official page reproduced the normalized quotation. Direct HTTP retrieval missed JavaScript-rendered, redirect-sensitive, or charset-sensitive content; no search snippet or hidden raw HTML was used."
+            },
+            {
+              "url": "https://www.gopaygent.com/sitemap.xml",
+              "title": "Paygent Sitemap developer URLs",
+              "quote": "<loc>https://paygent.transactiongateway.com/developers/docs</loc>\n<changefreq>daily</changefreq>\n<priority>0.9</priority>\n</url>\n<url>\n<loc>https://paygent.transactiongateway.com/developers/sdk</loc>\n<changefreq>monthly</changefreq>\n<priority>0.7</priority>",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            },
+            {
+              "url": "https://docs.nmi.com/docs/mcp.md",
+              "title": "Developer Docs MCP",
+              "quote": "The NMI Developer Docs MCP provides access to NMI developer documentation only. It does not connect to your NMI account, transaction data, or gateway configuration.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "official page metadata updatedAt 2026-10-28T16:32:14.000Z; no publication date shown"
+            }
+          ]
+        },
+        "composio_toolkit": {
+          "status": "checked",
+          "value": "not_listed",
+          "reason": "The preserved 2026-11-24 complete-catalog review of 1,841 Composio toolkits found no exact Paygent Connect or Paygent toolkit row and no approved alias; NMI, namesake Paygent products, and vendor MCPs were not substituted. The full catalog was not re-fetched for this follow-up, so this remains the preserved checked not-listed result.",
+          "evidence": [
+            {
+              "url": "https://docs.composio.dev/toolkits.md",
+              "title": "Composio Toolkits",
+              "quote": "Composio supports 1841 toolkits for building AI agents.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            },
+            {
+              "url": "https://docs.composio.dev/toolkits.md",
+              "title": "Composio Toolkits",
+              "quote": "## All Toolkits\n\n| Toolkit | Slug | Tools | Triggers | Auth | Managed App |",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            }
+          ]
+        },
+        "verdict": {
+          "status": "checked",
+          "value": "gated_build_candidate",
+          "reason": "Undated official first-party pages document a REST payment platform and bearer-key example, with a no-card full-API sandbox for prototyping. Production has $15/month plus $0.10/transaction pricing and merchant onboarding/ownership requirements, while the endpoint schema, working API host, and key issuance remain unverified. The Terms were updated 2026-04-23. This supports a gated build candidate rather than a verified ready-to-build integration; neither a Paygent-specific MCP nor a Composio toolkit is established.",
+          "evidence": [
+            {
+              "url": "https://www.gopaygent.com/",
+              "title": "Paygent | Merchant Payments and Tapn Tap-to-Pay Solutions",
+              "quote": "Authorization: Bearer pgt_live_xxx",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated",
+              "verification_method": "headless Chromium rendered body innerText (installed Chrome; no raw HTML)",
+              "verification_note": "The rendered official page reproduced the normalized quotation. Direct HTTP retrieval missed JavaScript-rendered, redirect-sensitive, or charset-sensitive content; no search snippet or hidden raw HTML was used.",
+              "verified_at": "2026-11-24",
+              "source_review": "The rendered official page reproduced the normalized quotation. Direct HTTP retrieval missed JavaScript-rendered, redirect-sensitive, or charset-sensitive content; no search snippet or hidden raw HTML was used."
+            },
+            {
+              "url": "https://www.gopaygent.com/",
+              "title": "Paygent | Merchant Payments and Tapn Tap-to-Pay Solutions",
+              "quote": "Clean, predictable, and fully documented REST APIs for every payment workflow.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated",
+              "verification_method": "headless Chromium rendered body innerText (installed Chrome; no raw HTML)",
+              "verification_note": "The rendered official page reproduced the normalized quotation. Direct HTTP retrieval missed JavaScript-rendered, redirect-sensitive, or charset-sensitive content; no search snippet or hidden raw HTML was used.",
+              "verified_at": "2026-11-24",
+              "source_review": "The rendered official page reproduced the normalized quotation. Direct HTTP retrieval missed JavaScript-rendered, redirect-sensitive, or charset-sensitive content; no search snippet or hidden raw HTML was used."
+            },
+            {
+              "url": "https://www.gopaygent.com/",
+              "title": "Paygent developer platform",
+              "quote": "Start for free No credit card required. Free plan available.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated",
+              "original_url": "https://www.gopaygent.com/pricing",
+              "source_review": "The current first-party homepage visibly states free no-card access. Direct HTTP retrieval returns a JavaScript shell; the rendered page reproduces the normalized quotation.",
+              "verification_method": "installed Chrome rendered body innerText after extended wait (no raw HTML)",
+              "verification_note": "The current first-party homepage visibly states free no-card access. Direct HTTP retrieval returns a JavaScript shell; the rendered page reproduces the normalized quotation.",
+              "verified_at": "2026-11-24"
+            },
+            {
+              "url": "https://www.gopaygent.com/pricing",
+              "title": "Paygent | The Premier Stripe & PayPal Alternative for API Payments",
+              "quote": "PAYGENT PLATFORM\nDeveloper & B2B\n\nFor SaaS, Wholesalers, and Platforms.\n\nMONTHLY GATEWAY\n\n$15\n\nPER TRANSACTION\n\n$0.10",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated",
+              "verification_method": "headless Chromium rendered body innerText (installed Chrome; no raw HTML)",
+              "verification_note": "The rendered official page reproduced the normalized quotation. Direct HTTP retrieval missed JavaScript-rendered, redirect-sensitive, or charset-sensitive content; no search snippet or hidden raw HTML was used.",
+              "verified_at": "2026-11-24",
+              "source_review": "The rendered official page reproduced the normalized quotation. Direct HTTP retrieval missed JavaScript-rendered, redirect-sensitive, or charset-sensitive content; no search snippet or hidden raw HTML was used."
+            },
+            {
+              "url": "https://www.gopaygent.com/terms",
+              "title": "Paygent | The Premier Stripe & PayPal Alternative for API Payments",
+              "quote": "Provide accurate business and beneficial ownership information during onboarding.",
+              "retrieved_at": "2026-11-24",
+              "published_at": "2026-04-23",
+              "published_label": "Last updated: April 23, 2026",
+              "verification_method": "headless Chromium rendered body innerText (installed Chrome; no raw HTML)",
+              "verification_note": "The rendered official page reproduced the normalized quotation. Direct HTTP retrieval missed JavaScript-rendered, redirect-sensitive, or charset-sensitive content; no search snippet or hidden raw HTML was used.",
+              "verified_at": "2026-11-24",
+              "source_review": "The rendered official page reproduced the normalized quotation. Direct HTTP retrieval missed JavaScript-rendered, redirect-sensitive, or charset-sensitive content; no search snippet or hidden raw HTML was used."
+            }
+          ]
+        }
+      }
+    },
+    {
+      "number": 85,
+      "app": "iPayX",
+      "category": "Finance and Fintech",
+      "summary": "iPayX documents a narrow three-endpoint bearer-authenticated FX audit REST API and a separate public read-only remote MCP server; free evaluation coexists with paid production options.",
+      "blocker": "Undated official pages conflict on free quotas, paid price, and MCP endpoint: three lifetime audits versus ten daily keyed audits versus three monthly public-MCP audits, and $199 versus $299 per month.",
+      "next_action": "Confirm current quota, price, and endpoint directly with iPayX, then test the public MCP and request a production API key for higher-volume forensic audits.",
+      "fields": {
+        "auth": {
+          "status": "checked",
+          "value": [
+            "Bearer API key (REST Authorization header; keys start with ipx_live_)",
+            "No account or API key (public remote MCP evaluation)"
+          ],
+          "reason": "The undated REST reference requires a bearer token, while the separate undated public MCP configuration explicitly permits use without an account or API key.",
+          "evidence": [
+            {
+              "url": "https://www.ipayx.ai/docs/api",
+              "title": "iPayX FX Audit API",
+              "quote": "Every request requires a Bearer token in the `Authorization` header. Keys start with `ipx_live_`.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated",
+              "verification_method": "headless Chromium rendered body innerText (installed Chrome; no raw HTML)",
+              "verification_note": "The rendered official page reproduced the normalized quotation. Direct HTTP retrieval missed JavaScript-rendered, redirect-sensitive, or charset-sensitive content; no search snippet or hidden raw HTML was used.",
+              "verified_at": "2026-11-24",
+              "source_review": "The rendered official page reproduced the normalized quotation. Direct HTTP retrieval missed JavaScript-rendered, redirect-sensitive, or charset-sensitive content; no search snippet or hidden raw HTML was used."
+            },
+            {
+              "url": "https://www.ipayx.ai/mcp-config",
+              "title": "Connect iPayX to your AI agent",
+              "quote": "No account or API key required. Transaction audits and forensic reports share 3 free audits per IP per calendar month (UTC). Rate lookups and comparisons are free without an audit quota.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated",
+              "verification_method": "headless Chromium rendered body innerText (installed Chrome; no raw HTML)",
+              "verification_note": "The rendered official page reproduced the normalized quotation. Direct HTTP retrieval missed JavaScript-rendered, redirect-sensitive, or charset-sensitive content; no search snippet or hidden raw HTML was used.",
+              "verified_at": "2026-11-24",
+              "source_review": "The rendered official page reproduced the normalized quotation. Direct HTTP retrieval missed JavaScript-rendered, redirect-sensitive, or charset-sensitive content; no search snippet or hidden raw HTML was used."
+            }
+          ]
+        },
+        "credential_gate": {
+          "status": "checked",
+          "value": "mixed",
+          "gate_class": "mixed",
+          "reason": "Undated official pages combine no-key public MCP evaluation and free audits with paid production API options, but disagree on quotas and price; the mixed classification preserves that conflict rather than selecting one offer.",
+          "evidence": [
+            {
+              "url": "https://www.ipayx.ai/mcp-config",
+              "title": "Connect iPayX to your AI agent",
+              "quote": "No account or API key required. Transaction audits and forensic reports share 3 free audits per IP per calendar month (UTC). Rate lookups and comparisons are free without an audit quota.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated",
+              "verification_method": "headless Chromium rendered body innerText (installed Chrome; no raw HTML)",
+              "verification_note": "The rendered official page reproduced the normalized quotation. Direct HTTP retrieval missed JavaScript-rendered, redirect-sensitive, or charset-sensitive content; no search snippet or hidden raw HTML was used.",
+              "verified_at": "2026-11-24",
+              "source_review": "The rendered official page reproduced the normalized quotation. Direct HTTP retrieval missed JavaScript-rendered, redirect-sensitive, or charset-sensitive content; no search snippet or hidden raw HTML was used."
+            },
+            {
+              "url": "https://www.ipayx.ai/pricing",
+              "title": "iPayX pricing",
+              "quote": "Free audit included. Upgrade to PDF reports or production-grade API.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated",
+              "verification_method": "headless Chromium rendered body innerText (installed Chrome; no raw HTML)",
+              "verification_note": "The rendered official page reproduced the normalized quotation. Direct HTTP retrieval missed JavaScript-rendered, redirect-sensitive, or charset-sensitive content; no search snippet or hidden raw HTML was used.",
+              "verified_at": "2026-11-24",
+              "source_review": "The rendered official page reproduced the normalized quotation. Direct HTTP retrieval missed JavaScript-rendered, redirect-sensitive, or charset-sensitive content; no search snippet or hidden raw HTML was used."
+            },
+            {
+              "url": "https://www.ipayx.ai/pricing",
+              "title": "iPayX pricing",
+              "quote": "You have 3 free audits.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated",
+              "verification_method": "headless Chromium rendered body innerText (installed Chrome; no raw HTML)",
+              "verification_note": "The rendered official page reproduced the normalized quotation. Direct HTTP retrieval missed JavaScript-rendered, redirect-sensitive, or charset-sensitive content; no search snippet or hidden raw HTML was used.",
+              "verified_at": "2026-11-24",
+              "source_review": "The rendered official page reproduced the normalized quotation. Direct HTTP retrieval missed JavaScript-rendered, redirect-sensitive, or charset-sensitive content; no search snippet or hidden raw HTML was used."
+            },
+            {
+              "url": "https://www.ipayx.ai/pricing",
+              "title": "iPayX pricing",
+              "quote": "$299USD / mo",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated",
+              "verification_method": "headless Chromium rendered body innerText after extended wait (installed Chrome; no raw HTML)",
+              "verification_note": "The current rendered pricing page shows \"$299 USD / mo\"; whitespace normalization reproduces the stored quotation. The shorter batch wait missed dynamically inserted pricing text.",
+              "verified_at": "2026-11-24",
+              "source_review": "The current rendered pricing page shows \"$299 USD / mo\"; whitespace normalization reproduces the stored quotation. The shorter batch wait missed dynamically inserted pricing text."
+            },
+            {
+              "url": "https://www.ipayx.ai/docs/mcp-server",
+              "title": "iPayX MCP server",
+              "quote": "**Free tier:** 10 audits / day per API key.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated",
+              "verification_method": "headless Chromium rendered body innerText (installed Chrome; no raw HTML)",
+              "verification_note": "The rendered official page reproduced the normalized quotation. Direct HTTP retrieval missed JavaScript-rendered, redirect-sensitive, or charset-sensitive content; no search snippet or hidden raw HTML was used.",
+              "verified_at": "2026-11-24",
+              "source_review": "The rendered official page reproduced the normalized quotation. Direct HTTP retrieval missed JavaScript-rendered, redirect-sensitive, or charset-sensitive content; no search snippet or hidden raw HTML was used."
+            },
+            {
+              "url": "https://www.ipayx.ai/docs/mcp-server",
+              "title": "iPayX MCP server",
+              "quote": "**Paid tier ($199):** unlimited audits, priority routing.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated",
+              "verification_method": "headless Chromium rendered body innerText (installed Chrome; no raw HTML)",
+              "verification_note": "The rendered official page reproduced the normalized quotation. Direct HTTP retrieval missed JavaScript-rendered, redirect-sensitive, or charset-sensitive content; no search snippet or hidden raw HTML was used.",
+              "verified_at": "2026-11-24",
+              "source_review": "The rendered official page reproduced the normalized quotation. Direct HTTP retrieval missed JavaScript-rendered, redirect-sensitive, or charset-sensitive content; no search snippet or hidden raw HTML was used."
+            }
+          ]
+        },
+        "api_surface": {
+          "status": "checked",
+          "value": "REST; narrow documented surface",
+          "api_types": [
+            "REST"
+          ],
+          "breadth": "narrow",
+          "reason": "The undated official reference labels the product REST API v1, specifies OpenAPI 3.1, and lists exactly three endpoints plus a signed audit-completed webhook.",
+          "evidence": [
+            {
+              "url": "https://www.ipayx.ai/docs/api",
+              "title": "iPayX FX Audit API",
+              "quote": "REST API · v1",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated",
+              "verification_method": "headless Chromium rendered body innerText (installed Chrome; no raw HTML)",
+              "verification_note": "The rendered official page reproduced the normalized quotation. Direct HTTP retrieval missed JavaScript-rendered, redirect-sensitive, or charset-sensitive content; no search snippet or hidden raw HTML was used.",
+              "verified_at": "2026-11-24",
+              "source_review": "The rendered official page reproduced the normalized quotation. Direct HTTP retrieval missed JavaScript-rendered, redirect-sensitive, or charset-sensitive content; no search snippet or hidden raw HTML was used."
+            },
+            {
+              "url": "https://www.ipayx.ai/docs/api",
+              "title": "iPayX FX Audit API",
+              "quote": "3 endpoints\n\naudit · rates · audit/document",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated",
+              "verification_method": "headless Chromium rendered body innerText (installed Chrome; no raw HTML)",
+              "verification_note": "The rendered official page reproduced the normalized quotation. Direct HTTP retrieval missed JavaScript-rendered, redirect-sensitive, or charset-sensitive content; no search snippet or hidden raw HTML was used.",
+              "verified_at": "2026-11-24",
+              "source_review": "The rendered official page reproduced the normalized quotation. Direct HTTP retrieval missed JavaScript-rendered, redirect-sensitive, or charset-sensitive content; no search snippet or hidden raw HTML was used."
+            },
+            {
+              "url": "https://www.ipayx.ai/docs/api",
+              "title": "iPayX FX Audit API",
+              "quote": "Signed webhooks\n\nHMAC-SHA256 · audit.completed",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated",
+              "verification_method": "headless Chromium rendered body innerText (installed Chrome; no raw HTML)",
+              "verification_note": "The rendered official page reproduced the normalized quotation. Direct HTTP retrieval missed JavaScript-rendered, redirect-sensitive, or charset-sensitive content; no search snippet or hidden raw HTML was used.",
+              "verified_at": "2026-11-24",
+              "source_review": "The rendered official page reproduced the normalized quotation. Direct HTTP retrieval missed JavaScript-rendered, redirect-sensitive, or charset-sensitive content; no search snippet or hidden raw HTML was used."
+            }
+          ]
+        },
+        "official_mcp": {
+          "status": "checked",
+          "value": "vendor_server",
+          "mcp_mode": "remote",
+          "reason": "Undated official iPayX pages document a vendor-operated read-only MCP server. The public Streamable HTTP endpoint is `https://mcp.ipayx.ai/mcp`; the authenticated documentation lists a different Supabase MCP endpoint, so both are preserved without conflation.",
+          "evidence": [
+            {
+              "url": "https://www.ipayx.ai/mcp-config",
+              "title": "Connect iPayX to your AI agent",
+              "quote": "One MCP server. Claude, ChatGPT, Grok, Perplexity, DeepSeek, Qwen, MiniMax, Copilot, Cursor, n8n — real-time forensic FX audit.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated",
+              "verification_method": "headless Chromium rendered body innerText (installed Chrome; no raw HTML)",
+              "verification_note": "The rendered official page reproduced the normalized quotation. Direct HTTP retrieval missed JavaScript-rendered, redirect-sensitive, or charset-sensitive content; no search snippet or hidden raw HTML was used.",
+              "verified_at": "2026-11-24",
+              "source_review": "The rendered official page reproduced the normalized quotation. Direct HTTP retrieval missed JavaScript-rendered, redirect-sensitive, or charset-sensitive content; no search snippet or hidden raw HTML was used."
+            },
+            {
+              "url": "https://www.ipayx.ai/mcp-config",
+              "title": "Connect iPayX to your AI agent",
+              "quote": "MCP Server URL\n\n`https://mcp.ipayx.ai/mcp` Copy",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated",
+              "verification_method": "headless Chromium rendered body innerText (installed Chrome; no raw HTML)",
+              "verification_note": "The rendered official page reproduced the normalized quotation. Direct HTTP retrieval missed JavaScript-rendered, redirect-sensitive, or charset-sensitive content; no search snippet or hidden raw HTML was used.",
+              "verified_at": "2026-11-24",
+              "source_review": "The rendered official page reproduced the normalized quotation. Direct HTTP retrieval missed JavaScript-rendered, redirect-sensitive, or charset-sensitive content; no search snippet or hidden raw HTML was used."
+            },
+            {
+              "url": "https://www.ipayx.ai/mcp-config",
+              "title": "Connect iPayX to your AI agent",
+              "quote": "Read-only server. It never moves money.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated",
+              "verification_method": "headless Chromium rendered body innerText (installed Chrome; no raw HTML)",
+              "verification_note": "The rendered official page reproduced the normalized quotation. Direct HTTP retrieval missed JavaScript-rendered, redirect-sensitive, or charset-sensitive content; no search snippet or hidden raw HTML was used.",
+              "verified_at": "2026-11-24",
+              "source_review": "The rendered official page reproduced the normalized quotation. Direct HTTP retrieval missed JavaScript-rendered, redirect-sensitive, or charset-sensitive content; no search snippet or hidden raw HTML was used."
+            },
+            {
+              "url": "https://www.ipayx.ai/docs/mcp-server",
+              "title": "iPayX MCP server",
+              "quote": "Production MCP: `https://hvujzsdwcoweirroubeh.supabase.co/functions/v1/mcp-server`",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated",
+              "verification_method": "headless Chromium rendered body innerText (installed Chrome; no raw HTML)",
+              "verification_note": "The rendered official page reproduced the normalized quotation. Direct HTTP retrieval missed JavaScript-rendered, redirect-sensitive, or charset-sensitive content; no search snippet or hidden raw HTML was used.",
+              "verified_at": "2026-11-24",
+              "source_review": "The rendered official page reproduced the normalized quotation. Direct HTTP retrieval missed JavaScript-rendered, redirect-sensitive, or charset-sensitive content; no search snippet or hidden raw HTML was used."
+            }
+          ]
+        },
+        "composio_toolkit": {
+          "status": "checked",
+          "value": "not_listed",
+          "reason": "The current complete Composio catalog contains no exact iPayX toolkit row or approved alias; the vendor's own MCP documentation was not treated as a Composio listing.",
+          "evidence": [
+            {
+              "url": "https://docs.composio.dev/toolkits.md",
+              "title": "Composio Toolkits",
+              "quote": "Composio supports 1841 toolkits for building AI agents.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            },
+            {
+              "url": "https://docs.composio.dev/toolkits.md",
+              "title": "Composio Toolkits",
+              "quote": "## All Toolkits\n\n| Toolkit | Slug | Tools | Triggers | Auth | Managed App |",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            }
+          ]
+        },
+        "verdict": {
+          "status": "checked",
+          "value": "gated_build_candidate",
+          "reason": "The documented REST API and remote vendor MCP support a prototype, but paid production use is gated and the undated official quota, price, and endpoint conflicts must be resolved before relying on limits or billing.",
+          "evidence": [
+            {
+              "url": "https://www.ipayx.ai/docs/api",
+              "title": "iPayX FX Audit API",
+              "quote": "Every request requires a Bearer token in the `Authorization` header. Keys start with `ipx_live_`.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated",
+              "verification_method": "headless Chromium rendered body innerText (installed Chrome; no raw HTML)",
+              "verification_note": "The rendered official page reproduced the normalized quotation. Direct HTTP retrieval missed JavaScript-rendered, redirect-sensitive, or charset-sensitive content; no search snippet or hidden raw HTML was used.",
+              "verified_at": "2026-11-24",
+              "source_review": "The rendered official page reproduced the normalized quotation. Direct HTTP retrieval missed JavaScript-rendered, redirect-sensitive, or charset-sensitive content; no search snippet or hidden raw HTML was used."
+            },
+            {
+              "url": "https://www.ipayx.ai/docs/api",
+              "title": "iPayX FX Audit API",
+              "quote": "3 endpoints\n\naudit · rates · audit/document",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated",
+              "verification_method": "headless Chromium rendered body innerText (installed Chrome; no raw HTML)",
+              "verification_note": "The rendered official page reproduced the normalized quotation. Direct HTTP retrieval missed JavaScript-rendered, redirect-sensitive, or charset-sensitive content; no search snippet or hidden raw HTML was used.",
+              "verified_at": "2026-11-24",
+              "source_review": "The rendered official page reproduced the normalized quotation. Direct HTTP retrieval missed JavaScript-rendered, redirect-sensitive, or charset-sensitive content; no search snippet or hidden raw HTML was used."
+            },
+            {
+              "url": "https://www.ipayx.ai/pricing",
+              "title": "iPayX pricing",
+              "quote": "Free audit included. Upgrade to PDF reports or production-grade API.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated",
+              "verification_method": "headless Chromium rendered body innerText (installed Chrome; no raw HTML)",
+              "verification_note": "The rendered official page reproduced the normalized quotation. Direct HTTP retrieval missed JavaScript-rendered, redirect-sensitive, or charset-sensitive content; no search snippet or hidden raw HTML was used.",
+              "verified_at": "2026-11-24",
+              "source_review": "The rendered official page reproduced the normalized quotation. Direct HTTP retrieval missed JavaScript-rendered, redirect-sensitive, or charset-sensitive content; no search snippet or hidden raw HTML was used."
+            }
+          ]
+        }
+      }
+    },
+    {
+      "number": 86,
+      "app": "QuickBooks",
+      "category": "Finance and Fintech",
+      "summary": "QuickBooks Online documents OAuth 2.0, app credential creation, a free Builder tier with production approval and paid upgrades, and a broad GraphQL API; Intuit's official GitHub repository also documents a local stdio MCP server using OAuth 2.0, but no Intuit-hosted remote endpoint was verified.",
+      "blocker": "Production credentials require questionnaire approval and a public HTTPS OAuth callback for the initial MCP handshake; the documented vendor MCP server is local stdio, and no Intuit-hosted remote endpoint was verified.",
+      "next_action": "Prototype the official local MCP server in a QuickBooks sandbox using a registered Intuit app and localhost OAuth redirect; for production, complete the Production Key questionnaire, configure a public HTTPS callback for initial authorization, and retain GraphQL as the direct API option.",
+      "fields": {
+        "auth": {
+          "status": "checked",
+          "value": [
+            "OAuth 2.0 authorization code (user consent and realmID binding)",
+            "OAuth 2.0 access token (QuickBooks Online API calls)",
+            "OAuth 2.0 refresh token (rolling 100-day expiry)",
+            "HTTP Basic client ID and client secret (OAuth token endpoint)",
+            "Intuit Developer Portal app credentials (live and sandbox sets)"
+          ],
+          "reason": "Undated static Intuit OAuth and credential-creation pages document authorization-code exchange, access and refresh tokens, client authentication, and separate live/sandbox credentials.",
+          "evidence": [
+            {
+              "url": "https://static.developer.intuit.com/output_html/qbo/docs/develop/authentication-and-authorization/oauth-2.0.html",
+              "title": "OAuth 2.0 - QuickBooks Online",
+              "quote": "Use the OAuth 2.0 protocol to implement authentication and authorization. Authorization is essential for both testing via sandbox companies and production apps.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            },
+            {
+              "url": "https://static.developer.intuit.com/output_html/qbo/docs/develop/authentication-and-authorization/oauth-2.0.html",
+              "title": "OAuth 2.0 - QuickBooks Online",
+              "quote": "Your app sends the authorization code back to the Intuit OAuth 2.0 Server and exchanges it for access and refresh tokens.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            },
+            {
+              "url": "https://static.developer.intuit.com/output_html/qbo/docs/develop/authentication-and-authorization/oauth-2.0.html",
+              "title": "OAuth 2.0 - QuickBooks Online",
+              "quote": "Refresh tokens have a rolling expiry of 100 days.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            },
+            {
+              "url": "https://static.developer.intuit.com/output_html/qbo/docs/get-started/get-client-id-and-client-secret.html",
+              "title": "Get a client ID and client secret",
+              "quote": "Each app has two sets of credentials: one for live production code and another for sandbox and testing environments.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            }
+          ]
+        },
+        "credential_gate": {
+          "status": "checked",
+          "value": "mixed",
+          "gate_class": "mixed",
+          "reason": "The Intuit Partner FAQ dated 2026-10-29 documents a no-charge Builder tier and free sandbox metering, while the undated credential guide requires Production Key questionnaire approval and the FAQ documents paid upgrades above the cap.",
+          "evidence": [
+            {
+              "url": "https://static.developer.intuit.com/output_html/qbo/docs/get-started/partner-faq.html",
+              "title": "Intuit App Partner Program FAQ",
+              "quote": "By default, all partners will begin in the Builder tier and be afforded 500,000 CorePlus API calls per month without incurring any charges. Any subsequent calls made above this allotment will be blocked. To make additional API calls beyond this allotment, partners can upgrade to the Silver tier by providing a valid payment method in their account on the Intuit Developer Portal within your Workspace.",
+              "retrieved_at": "2026-11-24",
+              "published_at": "2026-10-29",
+              "published_label": "Last updated: 2026-10-29"
+            },
+            {
+              "url": "https://static.developer.intuit.com/output_html/qbo/docs/get-started/partner-faq.html",
+              "title": "Intuit App Partner Program FAQ",
+              "quote": "No. You don’t need to provide a payment method if you are at the Builder tier.",
+              "retrieved_at": "2026-11-24",
+              "published_at": "2026-10-29",
+              "published_label": "Last updated: 2026-10-29"
+            },
+            {
+              "url": "https://static.developer.intuit.com/output_html/qbo/docs/get-started/get-client-id-and-client-secret.html",
+              "title": "Get a client ID and client secret",
+              "quote": "The client ID and client secret will be accessible only after completing the Production Key questionnaire and its approval. For apps without a completed questionnaire, the questionnaire will be visible when you select Production in Step 6.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            }
+          ]
+        },
+        "api_surface": {
+          "status": "checked",
+          "value": "GraphQL; broad documented surface",
+          "api_types": [
+            "GraphQL"
+          ],
+          "breadth": "broad",
+          "reason": "Undated static Intuit GraphQL documentation identifies the QuickBooks Online GraphQL API, its single endpoint, and company, account, transaction, contact, invoice, bill, query, mutation, and pagination coverage.",
+          "evidence": [
+            {
+              "url": "https://static.developer.intuit.com/output_html/qbo/docs/learn/learn-about-graphql/graphql-basics.html",
+              "title": "GraphQL basics - QuickBooks Online",
+              "quote": "The QuickBooks Online GraphQL API uses the GraphQL API framework. Here’s a brief overview.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            },
+            {
+              "url": "https://static.developer.intuit.com/output_html/qbo/docs/learn/learn-about-graphql/graphql-basics.html",
+              "title": "GraphQL basics - QuickBooks Online",
+              "quote": "For the QuickBooks GraphQL API, use queries to get data for accounts, transactions, and other resources. Specify the exact fields you want the server to return in the query body.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            },
+            {
+              "url": "https://static.developer.intuit.com/output_html/qbo/docs/develop/develop-with-graphql/graphql-api.html",
+              "title": "Develop your app with the GraphQL API",
+              "quote": "As shown in this simple example, all GraphQL requests are served from a single endpoint. No matter what is requested, from transactions to contacts, the endpoint will be the same.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            }
+          ]
+        },
+        "official_mcp": {
+          "status": "checked",
+          "value": "vendor_server",
+          "mcp_mode": "local",
+          "server_url": null,
+          "transport": "stdio",
+          "authentication": [
+            "OAuth 2.0 with an Intuit Developer Portal app and a one-time browser OAuth handshake"
+          ],
+          "reason": "Intuit's official intuit/quickbooks-online-mcp-server repository, with commits through 2026-09-15, documents a local MCP server that runs over stdio and authenticates to QuickBooks Online using OAuth 2.0 after registering an Intuit Developer Portal app. No Intuit-hosted remote MCP endpoint was verified; the official Intuit Developer Plugin material documents onboarding rather than a server.",
+          "evidence": [
+            {
+              "url": "https://github.com/intuit/quickbooks-online-mcp-server",
+              "title": "GitHub - intuit/quickbooks-online-mcp-server: The QuickBooks MCP Server lets AI assistants access QuickBooks data via a standard interface. It uses the Model Context Protocol to expose QBO features as callable tools, enabling developers to build AI apps that fetch real-time QBO data through MCP. · GitHub",
+              "quote": "This MCP server provides complete QuickBooks Online API integration for Claude Code and other MCP-compatible clients.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            },
+            {
+              "url": "https://github.com/intuit/quickbooks-online-mcp-server",
+              "title": "GitHub - intuit/quickbooks-online-mcp-server: The QuickBooks MCP Server lets AI assistants access QuickBooks data via a standard interface. It uses the Model Context Protocol to expose QBO features as callable tools, enabling developers to build AI apps that fetch real-time QBO data through MCP. · GitHub",
+              "quote": "Note: this is a local MCP server. It runs as a stdio subprocess on the developer's or partner's machine and authenticates to a QuickBooks Online company.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            },
+            {
+              "url": "https://github.com/intuit/quickbooks-online-mcp-server",
+              "title": "GitHub - intuit/quickbooks-online-mcp-server: The QuickBooks MCP Server lets AI assistants access QuickBooks data via a standard interface. It uses the Model Context Protocol to expose QBO features as callable tools, enabling developers to build AI apps that fetch real-time QBO data through MCP. · GitHub",
+              "quote": "This server uses OAuth 2.0 to authenticate to a QuickBooks Online company. You'll set up an app on the Intuit Developer Portal and connect it to either a sandbox (for development) or your production QBO company.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            },
+            {
+              "url": "https://github.com/intuit/quickbooks-online-mcp-server",
+              "title": "GitHub - intuit/quickbooks-online-mcp-server: The QuickBooks MCP Server lets AI assistants access QuickBooks data via a standard interface. It uses the Model Context Protocol to expose QBO features as callable tools, enabling developers to build AI apps that fetch real-time QBO data through MCP. · GitHub",
+              "quote": "Before you start: This MCP server is easy to run once authenticated, but QuickBooks Online integration is gated by Intuit's OAuth app setup. You must register an app on the Intuit Developer Portal and complete a one-time, browser-based OAuth handshake. Sandbox supports http://localhost redirect URIs; production requires a public HTTPS callback for the initial authorization.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            },
+            {
+              "url": "https://github.com/intuit/quickbooks-online-mcp-server/commits/main/",
+              "title": "Commits · intuit/quickbooks-online-mcp-server · GitHub",
+              "quote": "Commits on Sep 15, 2026\nfix: make tests and CI cross-platform (#136)",
+              "retrieved_at": "2026-11-24",
+              "published_at": "2026-09-15",
+              "published_label": "latest commit dated Sep 15, 2026"
+            },
+            {
+              "url": "https://static.developer.intuit.com/output_html/qbo/docs/get-started/mcp-connector.html",
+              "title": "Build with Intuit Developer Plugin",
+              "quote": "Intuit Developer Plugin is an AI-assisted onboarding experience for developers building with Intuit APIs.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            }
+          ]
+        },
+        "composio_toolkit": {
+          "status": "checked",
+          "value": "listed_exact",
+          "reason": "The current complete Composio catalog contains the exact QuickBooks toolkit and `QUICKBOOKS` slug.",
+          "evidence": [
+            {
+              "url": "https://docs.composio.dev/toolkits.md",
+              "title": "Composio Toolkits",
+              "quote": "| [QuickBooks](/toolkits/quickbooks.md) | `QUICKBOOKS` | 119 | 0 | OAUTH2 | Yes |",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            }
+          ]
+        },
+        "verdict": {
+          "status": "checked",
+          "value": "gated_build_candidate",
+          "reason": "OAuth, a free Builder tier, and a broad GraphQL API support development, but production approval and paid upgrades gate launch; the undated API and credential pages and the dated 2026-10-29 access FAQ require rechecking.",
+          "evidence": [
+            {
+              "url": "https://static.developer.intuit.com/output_html/qbo/docs/develop/authentication-and-authorization/oauth-2.0.html",
+              "title": "OAuth 2.0 - QuickBooks Online",
+              "quote": "Your app needs access tokens to make API calls and interact with QuickBooks Online data.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            },
+            {
+              "url": "https://static.developer.intuit.com/output_html/qbo/docs/learn/learn-about-graphql/graphql-basics.html",
+              "title": "GraphQL basics - QuickBooks Online",
+              "quote": "The QuickBooks Online GraphQL API uses the GraphQL API framework. Here’s a brief overview.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            },
+            {
+              "url": "https://static.developer.intuit.com/output_html/qbo/docs/get-started/partner-faq.html",
+              "title": "Intuit App Partner Program FAQ",
+              "quote": "By default, all partners will begin in the Builder tier and be afforded 500,000 CorePlus API calls per month without incurring any charges. Any subsequent calls made above this allotment will be blocked.",
+              "retrieved_at": "2026-11-24",
+              "published_at": "2026-10-29",
+              "published_label": "Last updated: 2026-10-29"
+            },
+            {
+              "url": "https://static.developer.intuit.com/output_html/qbo/docs/get-started/get-client-id-and-client-secret.html",
+              "title": "Get a client ID and client secret",
+              "quote": "The client ID and client secret will be accessible only after completing the Production Key questionnaire and its approval.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "number": 87,
+      "app": "Xero",
+      "category": "Finance and Fintech",
+      "summary": "Xero documents OAuth 2.0 with PKCE, a no-charge Starter developer plan, broad HTTP APIs across Accounting, Payroll, Files and Assets, and both local/STDIO and remote vendor MCP servers.",
+      "blocker": "Remote MCP supports Starter only with a demo organisation; real customer organisations require Core or above, and remote MCP is unavailable to Custom Connections apps.",
+      "next_action": "Register an OAuth app, test with a demo company, and use Core or above before connecting real organisations to remote MCP.",
+      "fields": {
+        "auth": {
+          "status": "checked",
+          "value": [
+            "OAuth 2.0 authorization code with PKCE (native apps)",
+            "OAuth 2.0 client ID and client secret (registered server apps)",
+            "OAuth 2.0 access token (30-minute API access)",
+            "OAuth 2.0 refresh token (60-day unused expiry)"
+          ],
+          "reason": "Undated official Xero FAQs document app registration, OAuth 2.0, PKCE for native apps, 30-minute access tokens, and refresh-token expiry after 60 days without a refresh.",
+          "evidence": [
+            {
+              "url": "https://developer.xero.com/faq",
+              "title": "Xero Developer Frequently asked questions",
+              "quote": "The Xero API does not support basic API Key authentication. Our API uses OAuth 2.0 which means you need to register your app to get a client id and client secret which you use to access the API.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated",
+              "original_url": "https://developer.xero.com/faq",
+              "source_review": "The rendered official page reproduced the normalized quotation. Direct HTTP retrieval missed JavaScript-rendered, redirect-sensitive, or charset-sensitive content; no search snippet or hidden raw HTML was used.",
+              "verification_method": "headless Chromium rendered body innerText (installed Chrome; no raw HTML)",
+              "verification_note": "The rendered official page reproduced the normalized quotation. Direct HTTP retrieval missed JavaScript-rendered, redirect-sensitive, or charset-sensitive content; no search snippet or hidden raw HTML was used.",
+              "verified_at": "2026-11-24"
+            },
+            {
+              "url": "https://developer.xero.com/faq/oauth2",
+              "title": "OAuth 2.0 FAQ - Xero Developer",
+              "quote": "Will OAuth 2.0 support desktop/mobile/single-page apps that can’t keep a client secret confidential? Xero supports the Proof Key for Code Exchange (PKCE) extension to the authorization code flow. This allows native apps to securely connect to our API without needing to store a client secret. Single page apps are not currently supported.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated",
+              "original_url": "https://developer.xero.com/faq/oauth2",
+              "source_review": "The rendered official page reproduced the normalized quotation. Direct HTTP retrieval missed JavaScript-rendered, redirect-sensitive, or charset-sensitive content; no search snippet or hidden raw HTML was used.",
+              "verification_method": "headless Chromium rendered body innerText (installed Chrome; no raw HTML)",
+              "verification_note": "The rendered official page reproduced the normalized quotation. Direct HTTP retrieval missed JavaScript-rendered, redirect-sensitive, or charset-sensitive content; no search snippet or hidden raw HTML was used.",
+              "verified_at": "2026-11-24"
+            },
+            {
+              "url": "https://developer.xero.com/faq",
+              "title": "Xero Developer Frequently asked questions",
+              "quote": "No, we've implemented short-lived tokens with long-lived authorizations as is best practice for OAuth 2.0. All Xero access tokens expire after 30 minutes. Refresh tokens allow your app to obtain new access tokens without involving a user again. Alternatively, if you'd prefer not to have to manage a refresh token, you might be interested in the premium, Custom Connection option. It utilises the client credentials grant type and only requires your client id and client secret to request new access tokens.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated",
+              "original_url": "https://developer.xero.com/faq",
+              "source_review": "The rendered official page reproduced the normalized quotation. Direct HTTP retrieval missed JavaScript-rendered, redirect-sensitive, or charset-sensitive content; no search snippet or hidden raw HTML was used.",
+              "verification_method": "headless Chromium rendered body innerText (installed Chrome; no raw HTML)",
+              "verification_note": "The rendered official page reproduced the normalized quotation. Direct HTTP retrieval missed JavaScript-rendered, redirect-sensitive, or charset-sensitive content; no search snippet or hidden raw HTML was used.",
+              "verified_at": "2026-11-24"
+            },
+            {
+              "url": "https://developer.xero.com/faq/oauth2",
+              "title": "OAuth 2.0 FAQ - Xero Developer",
+              "quote": "What is the expiration for a refresh token? Unused refresh tokens expire after 60 days. If you don’t refresh your access token within 60 days the user will need to reauthorise your app. When you perform a token refresh, you should replace your existing refresh token with the new one returned in the response. If, for whatever reason, you don't receive the response you can retry refreshing your existing refresh token for a grace period of 30 minutes.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated",
+              "original_url": "https://developer.xero.com/faq/oauth2",
+              "source_review": "The rendered official page reproduced the normalized quotation. Direct HTTP retrieval missed JavaScript-rendered, redirect-sensitive, or charset-sensitive content; no search snippet or hidden raw HTML was used.",
+              "verification_method": "headless Chromium rendered body innerText (installed Chrome; no raw HTML)",
+              "verification_note": "The rendered official page reproduced the normalized quotation. Direct HTTP retrieval missed JavaScript-rendered, redirect-sensitive, or charset-sensitive content; no search snippet or hidden raw HTML was used.",
+              "verified_at": "2026-11-24"
+            }
+          ]
+        },
+        "credential_gate": {
+          "status": "checked",
+          "value": "self_serve_free",
+          "gate_class": "self_serve_free",
+          "reason": "The undated official pricing page lists a Starter plan with no monthly fee, five connections, unlimited API ingress, and no payment method; paid plans are optional upgrades for scale and real-organisation remote MCP.",
+          "evidence": [
+            {
+              "url": "https://developer.xero.com/pricing",
+              "title": "Xero Developer Pricing and Policies",
+              "quote": "Plans have been created to enable early innovation and create an accessible entry point for developers just getting started. As your app scales, requiring additional benefits, you can easily move through the plans.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            },
+            {
+              "url": "https://developer.xero.com/pricing",
+              "title": "Xero Developer Pricing and Policies",
+              "quote": "Payments are accepted via registered credit card. Your card details will be required when moving from the Starter to the Core plan.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            },
+            {
+              "url": "https://developer.xero.com/faq/remote-mcp",
+              "title": "Remote MCP FAQs — Xero Developer",
+              "quote": "Yes, apps on Starter plan can use it with the demo organisation. You can connect, run the tools, and decide whether it's worth upgrading to Core. Real customer organisations need the Core plan or above.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated",
+              "original_url": "https://developer.xero.com/faq",
+              "source_review": "The rendered official page reproduced the normalized quotation. Direct HTTP retrieval missed JavaScript-rendered, redirect-sensitive, or charset-sensitive content; no search snippet or hidden raw HTML was used.",
+              "verification_method": "headless Chromium rendered body innerText (installed Chrome; no raw HTML)",
+              "verification_note": "The rendered official page reproduced the normalized quotation. Direct HTTP retrieval missed JavaScript-rendered, redirect-sensitive, or charset-sensitive content; no search snippet or hidden raw HTML was used.",
+              "verified_at": "2026-11-24"
+            }
+          ]
+        },
+        "api_surface": {
+          "status": "checked",
+          "value": "HTTP API; broad documented surface",
+          "api_types": [
+            "HTTP API"
+          ],
+          "breadth": "broad",
+          "reason": "Undated official FAQ text documents HTTP PUT/POST calls, an OpenAPI specification, and major endpoints across Accounting, Payroll, Files and Assets; normalized conservatively as HTTP API because usable rendered text did not explicitly label it REST.",
+          "evidence": [
+            {
+              "url": "https://developer.xero.com/faq",
+              "title": "Xero Developer Frequently asked questions",
+              "quote": "We've got SDKs to cover the most used technologies in the community, but we'll never cater for everyone. If we don't support your particular tech then check out our developer forum archive , or connect with other developers on Stack Overflow . You can also use our OpenAPI spec to generate your own SDK.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated",
+              "original_url": "https://developer.xero.com/faq",
+              "source_review": "The rendered official page reproduced the normalized quotation. Direct HTTP retrieval missed JavaScript-rendered, redirect-sensitive, or charset-sensitive content; no search snippet or hidden raw HTML was used.",
+              "verification_method": "headless Chromium rendered body innerText (installed Chrome; no raw HTML)",
+              "verification_note": "The rendered official page reproduced the normalized quotation. Direct HTTP retrieval missed JavaScript-rendered, redirect-sensitive, or charset-sensitive content; no search snippet or hidden raw HTML was used.",
+              "verified_at": "2026-11-24"
+            },
+            {
+              "url": "https://developer.xero.com/faq",
+              "title": "Xero Developer Frequently asked questions",
+              "quote": "You can do more than one thing in a single request: For example, you can create more than one Invoice in a single PUT or POST Invoices API call.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated",
+              "original_url": "https://developer.xero.com/faq",
+              "source_review": "The rendered official page reproduced the normalized quotation. Direct HTTP retrieval missed JavaScript-rendered, redirect-sensitive, or charset-sensitive content; no search snippet or hidden raw HTML was used.",
+              "verification_method": "headless Chromium rendered body innerText (installed Chrome; no raw HTML)",
+              "verification_note": "The rendered official page reproduced the normalized quotation. Direct HTTP retrieval missed JavaScript-rendered, redirect-sensitive, or charset-sensitive content; no search snippet or hidden raw HTML was used.",
+              "verified_at": "2026-11-24"
+            },
+            {
+              "url": "https://developer.xero.com/faq",
+              "title": "Xero Developer Frequently asked questions",
+              "quote": "You can use pagination to retrieve line item details for 100 items (e.g. Invoices) at a time. Endpoints on the Accounting API that currently support pagination include invoices , contacts , bank transactions and manual journals . All major endpoints on the Payroll, Files and Assets APIs also support paging.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated",
+              "original_url": "https://developer.xero.com/faq",
+              "source_review": "The rendered official page reproduced the normalized quotation. Direct HTTP retrieval missed JavaScript-rendered, redirect-sensitive, or charset-sensitive content; no search snippet or hidden raw HTML was used.",
+              "verification_method": "headless Chromium rendered body innerText (installed Chrome; no raw HTML)",
+              "verification_note": "The rendered official page reproduced the normalized quotation. Direct HTTP retrieval missed JavaScript-rendered, redirect-sensitive, or charset-sensitive content; no search snippet or hidden raw HTML was used.",
+              "verified_at": "2026-11-24"
+            }
+          ]
+        },
+        "official_mcp": {
+          "status": "checked",
+          "value": "vendor_server",
+          "mcp_mode": "both",
+          "reason": "Undated official FAQs document Xero's local/STDIO MCP server and Developer Remote MCP at `https://api.xero.com/mcp/v1` with Xero OAuth 2.0 PKCE. Remote access is demo-only on Starter, Core-and-above for real organisations, and excluded for Custom Connections.",
+          "evidence": [
+            {
+              "url": "https://developer.xero.com/faq/AI-Toolkit",
+              "title": "AI Toolkit FAQ - Xero Developer",
+              "quote": "Can I use any LLM to access the MCP Server? Xero's MCP Server will work with any MCP client that supports local/STDIO MCP servers. Depending on your MCP Client you might be able to support many different LLMs. All testing has been done using Claude Desktop and Cursor.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated",
+              "original_url": "https://developer.xero.com/faq/AI-Toolkit",
+              "source_review": "The rendered official page reproduced the normalized quotation. Direct HTTP retrieval missed JavaScript-rendered, redirect-sensitive, or charset-sensitive content; no search snippet or hidden raw HTML was used.",
+              "verification_method": "headless Chromium rendered body innerText (installed Chrome; no raw HTML)",
+              "verification_note": "The rendered official page reproduced the normalized quotation. Direct HTTP retrieval missed JavaScript-rendered, redirect-sensitive, or charset-sensitive content; no search snippet or hidden raw HTML was used.",
+              "verified_at": "2026-11-24"
+            },
+            {
+              "url": "https://developer.xero.com/faq/remote-mcp",
+              "title": "Remote MCP FAQs — Xero Developer",
+              "quote": "The Developer Remote MCP is for developers & builders building custom agents and apps. It can be used with any MCP compatible client and offers tools that reads and writes Xero data. It supports multiple organisations with user consent.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated",
+              "original_url": "https://developer.xero.com/faq",
+              "source_review": "The rendered official page reproduced the normalized quotation. Direct HTTP retrieval missed JavaScript-rendered, redirect-sensitive, or charset-sensitive content; no search snippet or hidden raw HTML was used.",
+              "verification_method": "headless Chromium rendered body innerText (installed Chrome; no raw HTML)",
+              "verification_note": "The rendered official page reproduced the normalized quotation. Direct HTTP retrieval missed JavaScript-rendered, redirect-sensitive, or charset-sensitive content; no search snippet or hidden raw HTML was used.",
+              "verified_at": "2026-11-24"
+            },
+            {
+              "url": "https://developer.xero.com/faq/remote-mcp",
+              "title": "Remote MCP FAQs — Xero Developer",
+              "quote": "What's the server URL? https://api.xero.com/mcp/v1",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated",
+              "original_url": "https://developer.xero.com/faq",
+              "source_review": "The rendered official page reproduced the normalized quotation. Direct HTTP retrieval missed JavaScript-rendered, redirect-sensitive, or charset-sensitive content; no search snippet or hidden raw HTML was used.",
+              "verification_method": "headless Chromium rendered body innerText (installed Chrome; no raw HTML)",
+              "verification_note": "The rendered official page reproduced the normalized quotation. Direct HTTP retrieval missed JavaScript-rendered, redirect-sensitive, or charset-sensitive content; no search snippet or hidden raw HTML was used.",
+              "verified_at": "2026-11-24"
+            },
+            {
+              "url": "https://developer.xero.com/faq/remote-mcp",
+              "title": "Remote MCP FAQs — Xero Developer",
+              "quote": "Does my client need to support OAuth? Yes. The server authorises through Xero's OAuth 2.0 flow with PKCE, so your client needs to be able to start that flow.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated",
+              "original_url": "https://developer.xero.com/faq",
+              "source_review": "The rendered official page reproduced the normalized quotation. Direct HTTP retrieval missed JavaScript-rendered, redirect-sensitive, or charset-sensitive content; no search snippet or hidden raw HTML was used.",
+              "verification_method": "headless Chromium rendered body innerText (installed Chrome; no raw HTML)",
+              "verification_note": "The rendered official page reproduced the normalized quotation. Direct HTTP retrieval missed JavaScript-rendered, redirect-sensitive, or charset-sensitive content; no search snippet or hidden raw HTML was used.",
+              "verified_at": "2026-11-24"
+            },
+            {
+              "url": "https://developer.xero.com/faq/remote-mcp",
+              "title": "Remote MCP FAQs — Xero Developer",
+              "quote": "Do I need a Custom Connection? No. Custom Connections apps are not eligible to access the Remote MCP Server.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated",
+              "original_url": "https://developer.xero.com/faq",
+              "source_review": "The rendered official page reproduced the normalized quotation. Direct HTTP retrieval missed JavaScript-rendered, redirect-sensitive, or charset-sensitive content; no search snippet or hidden raw HTML was used.",
+              "verification_method": "headless Chromium rendered body innerText (installed Chrome; no raw HTML)",
+              "verification_note": "The rendered official page reproduced the normalized quotation. Direct HTTP retrieval missed JavaScript-rendered, redirect-sensitive, or charset-sensitive content; no search snippet or hidden raw HTML was used.",
+              "verified_at": "2026-11-24"
+            }
+          ]
+        },
+        "composio_toolkit": {
+          "status": "checked",
+          "value": "listed_exact",
+          "reason": "The current complete Composio catalog contains the exact Xero toolkit and `XERO` slug.",
+          "evidence": [
+            {
+              "url": "https://docs.composio.dev/toolkits.md",
+              "title": "Composio Toolkits",
+              "quote": "| [Xero](/toolkits/xero.md) | `XERO` | 109 | 0 | OAUTH2 | No |",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            }
+          ]
+        },
+        "verdict": {
+          "status": "checked",
+          "value": "documented_build_candidate",
+          "reason": "OAuth app registration, a no-charge Starter tier, and broad documented APIs permit a demo-backed prototype; the undated pricing and FAQ pages require Core or above before real-organisation remote MCP use.",
+          "evidence": [
+            {
+              "url": "https://developer.xero.com/faq",
+              "title": "Xero Developer Frequently asked questions",
+              "quote": "The Xero API does not support basic API Key authentication. Our API uses OAuth 2.0 which means you need to register your app to get a client id and client secret which you use to access the API.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated",
+              "original_url": "https://developer.xero.com/faq",
+              "source_review": "The rendered official page reproduced the normalized quotation. Direct HTTP retrieval missed JavaScript-rendered, redirect-sensitive, or charset-sensitive content; no search snippet or hidden raw HTML was used.",
+              "verification_method": "headless Chromium rendered body innerText (installed Chrome; no raw HTML)",
+              "verification_note": "The rendered official page reproduced the normalized quotation. Direct HTTP retrieval missed JavaScript-rendered, redirect-sensitive, or charset-sensitive content; no search snippet or hidden raw HTML was used.",
+              "verified_at": "2026-11-24"
+            },
+            {
+              "url": "https://developer.xero.com/pricing",
+              "title": "Xero Developer Pricing and Policies",
+              "quote": "Payments are accepted via registered credit card. Your card details will be required when moving from the Starter to the Core plan.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            },
+            {
+              "url": "https://developer.xero.com/faq",
+              "title": "Xero Developer Frequently asked questions",
+              "quote": "You can use pagination to retrieve line item details for 100 items (e.g. Invoices) at a time. Endpoints on the Accounting API that currently support pagination include invoices , contacts , bank transactions and manual journals . All major endpoints on the Payroll, Files and Assets APIs also support paging.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated",
+              "original_url": "https://developer.xero.com/faq",
+              "source_review": "The rendered official page reproduced the normalized quotation. Direct HTTP retrieval missed JavaScript-rendered, redirect-sensitive, or charset-sensitive content; no search snippet or hidden raw HTML was used.",
+              "verification_method": "headless Chromium rendered body innerText (installed Chrome; no raw HTML)",
+              "verification_note": "The rendered official page reproduced the normalized quotation. Direct HTTP retrieval missed JavaScript-rendered, redirect-sensitive, or charset-sensitive content; no search snippet or hidden raw HTML was used.",
+              "verified_at": "2026-11-24"
+            },
+            {
+              "url": "https://developer.xero.com/faq/remote-mcp",
+              "title": "Remote MCP FAQs — Xero Developer",
+              "quote": "Yes, apps on Starter plan can use it with the demo organisation. You can connect, run the tools, and decide whether it's worth upgrading to Core. Real customer organisations need the Core plan or above.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated",
+              "original_url": "https://developer.xero.com/faq",
+              "source_review": "The rendered official page reproduced the normalized quotation. Direct HTTP retrieval missed JavaScript-rendered, redirect-sensitive, or charset-sensitive content; no search snippet or hidden raw HTML was used.",
+              "verification_method": "headless Chromium rendered body innerText (installed Chrome; no raw HTML)",
+              "verification_note": "The rendered official page reproduced the normalized quotation. Direct HTTP retrieval missed JavaScript-rendered, redirect-sensitive, or charset-sensitive content; no search snippet or hidden raw HTML was used.",
+              "verified_at": "2026-11-24"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "number": 88,
+      "app": "Brex",
+      "category": "Finance and Fintech",
+      "summary": "Brex documents admin-provisioned user tokens, a broad REST/OpenAPI API, and a beta remote vendor MCP server with per-user OAuth authorization.",
+      "blocker": "Developer API and MCP access require an account admin or card admin to accept the Developer API agreement; MCP also requires enabling the Brex in AI assistants beta.",
+      "next_action": "Have an account admin accept the Developer API agreement, enable the beta, provision a scoped user token for REST, and test employee OAuth authorization to the hosted MCP server.",
+      "fields": {
+        "auth": {
+          "status": "checked",
+          "value": [
+            "Brex user token (own-account API request headers; admin-provisioned)",
+            "OAuth 2.0 user authorization (Brex MCP per-employee access)"
+          ],
+          "reason": "Undated official authentication documentation requires a Dashboard-generated user token for API calls; the undated MCP page distinguishes per-user OAuth from admin-provisioned Developer API tokens.",
+          "evidence": [
+            {
+              "url": "https://developer.brex.com/guides/authentication",
+              "title": "Authentication - Brex Developer",
+              "quote": "To start making calls to Brex APIs, generate a user token from your Brex dashboard and pass it along in your API call headers.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            },
+            {
+              "url": "https://developer.brex.com/docs/mcp",
+              "title": "Brex MCP",
+              "quote": "Once enabled, all users in your Brex account can connect to the MCP server with their own credentials. This is different from the Brex Developer API, which requires admin-provisioned API tokens. Any employee can authorize via OAuth and access tools based on their Brex capabilities.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            }
+          ]
+        },
+        "credential_gate": {
+          "status": "checked",
+          "value": "admin_approval",
+          "gate_class": "admin_approval",
+          "reason": "The undated official guides require an account admin or card admin, acceptance of the Developer API agreement, and beta enablement; this is an administrator gate rather than a public self-serve key flow.",
+          "evidence": [
+            {
+              "url": "https://developer.brex.com/guides/authentication",
+              "title": "Authentication - Brex Developer",
+              "quote": "Sign in to dashboard.brex.com as an account admin or card admin.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            },
+            {
+              "url": "https://developer.brex.com/guides/authentication",
+              "title": "Authentication - Brex Developer",
+              "quote": "If your company has not accepted the developer API agreement, please review the terms and conditions. These must be accepted to use the developer API.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            },
+            {
+              "url": "https://developer.brex.com/docs/mcp",
+              "title": "Brex MCP",
+              "quote": "1. **Accept the Developer API agreement.** An account admin or card admin must accept the Developer API agreement in **Settings → Developer**.\n2. **Enable the beta.** Go to **Settings → Beta features** in the Brex Dashboard and select **Brex in AI assistants**.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            }
+          ]
+        },
+        "api_surface": {
+          "status": "checked",
+          "value": "REST; broad documented surface",
+          "api_types": [
+            "REST"
+          ],
+          "breadth": "broad",
+          "reason": "The undated official developer overview explicitly identifies REST and OpenAPI and lists broad Accounting, Budgets, Expenses, Payments, Team, Transactions, Travel, Onboarding, Fields, and Webhooks APIs.",
+          "evidence": [
+            {
+              "url": "https://developer.brex.com/",
+              "title": "Brex Developer",
+              "quote": "Brex APIs use the REST architecture, are defined using the OpenAPI specification and use standard HTTP response codes and verbs. All APIs accept and return JSON and require HTTPS.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            },
+            {
+              "url": "https://developer.brex.com/",
+              "title": "Brex Developer",
+              "quote": "Explore our guides and review our API documentation to see how you can integrate with Brex.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            }
+          ]
+        },
+        "official_mcp": {
+          "status": "checked",
+          "value": "vendor_server",
+          "mcp_mode": "remote",
+          "reason": "The undated official Brex page describes a Brex MCP server hosted at `https://api.brex.com/mcp`; it is beta, requires admin agreement and beta enablement, and supports employee OAuth with capability-based access.",
+          "evidence": [
+            {
+              "url": "https://developer.brex.com/docs/mcp",
+              "title": "Brex MCP",
+              "quote": "The Brex MCP server lets AI assistants interact directly with your Brex account: manage expenses, look up users, check cards, review banking transactions, track bills, and more through natural language.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            },
+            {
+              "url": "https://developer.brex.com/docs/mcp",
+              "title": "Brex MCP",
+              "quote": "The server is hosted at `https://api.brex.com/mcp` and supports any MCP-compatible client.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            },
+            {
+              "url": "https://developer.brex.com/docs/mcp",
+              "title": "Brex MCP",
+              "quote": "Beta",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            },
+            {
+              "url": "https://developer.brex.com/docs/mcp",
+              "title": "Brex MCP",
+              "quote": "The MCP server's tools may change as we continue developing new use cases and features.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            }
+          ]
+        },
+        "composio_toolkit": {
+          "status": "checked",
+          "value": "listed_exact",
+          "reason": "The current complete Composio catalog contains the exact Brex toolkit and `BREX` slug.",
+          "evidence": [
+            {
+              "url": "https://docs.composio.dev/toolkits.md",
+              "title": "Composio Toolkits",
+              "quote": "| [Brex](/toolkits/brex.md) | `BREX` | 84 | 0 | OAUTH2, API_KEY | No |",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            }
+          ]
+        },
+        "verdict": {
+          "status": "checked",
+          "value": "gated_build_candidate",
+          "reason": "Documented user-token authentication and a broad REST API support a build, but admin agreement and beta activation gate access; all cited vendor pages are undated and the MCP surface is explicitly beta.",
+          "evidence": [
+            {
+              "url": "https://developer.brex.com/guides/authentication",
+              "title": "Authentication - Brex Developer",
+              "quote": "Sign in to dashboard.brex.com as an account admin or card admin.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            },
+            {
+              "url": "https://developer.brex.com/",
+              "title": "Brex Developer",
+              "quote": "Brex APIs use the REST architecture, are defined using the OpenAPI specification and use standard HTTP response codes and verbs. All APIs accept and return JSON and require HTTPS.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            },
+            {
+              "url": "https://developer.brex.com/docs/mcp",
+              "title": "Brex MCP",
+              "quote": "The MCP server's tools may change as we continue developing new use cases and features.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "number": 89,
+      "app": "Ramp",
+      "category": "Finance and Fintech",
+      "summary": "Ramp documents admin-approved developer apps, OAuth 2.0 client credentials and authorization code flows, a broad HTTP API reference, and a vendor-hosted remote MCP server.",
+      "blocker": "Developer app creation and organization-wide authorization require an admin or Business Owner; MCP connections act as the signed-in user and expire after 30 days.",
+      "next_action": "Have a Ramp admin create a developer app, request sandbox access, implement least-privilege scopes, and test remote MCP with read-only access before requesting broader permissions.",
+      "fields": {
+        "auth": {
+          "status": "checked",
+          "value": [
+            "OAuth 2.0 Client Credentials (internal server-to-server integrations)",
+            "OAuth 2.0 Authorization Code with user consent (third-party integrations)",
+            "OAuth 2.0 Refresh Token (authorization-code integrations)",
+            "HTTP Basic client ID and client secret (token endpoint)",
+            "Bearer access token (Ramp API requests)"
+          ],
+          "reason": "Undated official quickstart and authorization guides document app credentials, OAuth 2.0 grant types, HTTP Basic client authentication, bearer access tokens, scopes, and token lifetimes.",
+          "evidence": [
+            {
+              "url": "https://docs.ramp.com/llms-guides/authorization.txt",
+              "title": "Ramp authorization",
+              "quote": "Ramp uses OAuth 2.0. Your app gets an access token from `/developer/v1/token`, authenticating with its client ID and secret (typically HTTP Basic Auth), and scopes control what the token can access.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            },
+            {
+              "url": "https://docs.ramp.com/llms-guides/authorization.txt",
+              "title": "Ramp authorization",
+              "quote": "| **Client Credentials** | Internal integrations, server-to-server | None required |\n| **Authorization Code** | Third-party apps, public integrations | Authorized user consent required |\n| **Refresh Token** | Renew access after an Authorization Code grant | None after the initial authorization |",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            },
+            {
+              "url": "https://docs.ramp.com/llms-guides/getting-started.txt",
+              "title": "Ramp Developer API quickstart",
+              "quote": "With your credentials, request an access token. Ramp authenticates this `/developer/v1/token` request with HTTP Basic Auth: base64-encode `client_id:client_secret` and send it in the `Authorization` header. The token authenticates your API requests.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            },
+            {
+              "url": "https://docs.ramp.com/llms-guides/getting-started.txt",
+              "title": "Ramp Developer API quickstart",
+              "quote": "Client Credentials access tokens expire after 10 days. Client Credentials grants do not return a refresh token; request a new access token when the current token expires.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            }
+          ]
+        },
+        "credential_gate": {
+          "status": "checked",
+          "value": "admin_approval",
+          "gate_class": "admin_approval",
+          "reason": "Undated official quickstart and authorization guides require Ramp admin access to create a developer app and Admin or Business Owner approval for whole-business access; sandbox access is requested rather than publicly provisioned.",
+          "evidence": [
+            {
+              "url": "https://docs.ramp.com/llms-guides/getting-started.txt",
+              "title": "Ramp Developer API quickstart",
+              "quote": "This guide assumes you are a Ramp customer with **admin** access to your dashboard.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            },
+            {
+              "url": "https://docs.ramp.com/llms-guides/getting-started.txt",
+              "title": "Ramp Developer API quickstart",
+              "quote": "First, you'll need to create a developer app to get your API credentials.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            },
+            {
+              "url": "https://docs.ramp.com/llms-guides/authorization.txt",
+              "title": "Ramp authorization",
+              "quote": "For apps that access the whole business, an Admin or Business Owner must approve. Other users see \"An admin must connect this app.\" For apps that act as an individual user, an admin must first enable the app for the organization in **Manage Access**.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            }
+          ]
+        },
+        "api_surface": {
+          "status": "checked",
+          "value": "HTTP API; broad documented surface",
+          "api_types": [
+            "HTTP API"
+          ],
+          "breadth": "broad",
+          "reason": "The undated official machine-readable API reference contains extensive operations across accounting, AI spend, users, transactions, vendors, bills, receipts, and cards; normalized as HTTP API because the rendered reference did not explicitly label REST.",
+          "evidence": [
+            {
+              "url": "https://docs.ramp.com/llms-api.txt",
+              "title": "Ramp API reference",
+              "quote": "title: List general ledger accounts\npath: /developer/v1/accounting/accounts\ndescription: No description",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            },
+            {
+              "url": "https://docs.ramp.com/llms-api.txt",
+              "title": "Ramp API reference",
+              "quote": "title: List vendors\npath: /developer/v1/accounting/vendors\ndescription: No description",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            },
+            {
+              "url": "https://docs.ramp.com/llms-api.txt",
+              "title": "Ramp API reference",
+              "quote": "title: List Ramp users with estimated AI spend during the requested period\npath: /developer/v1/ai-spend/team",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            },
+            {
+              "url": "https://docs.ramp.com/llms-api.txt",
+              "title": "Ramp API reference",
+              "quote": "title: List physical cards\npath: /developer/v1/cards/physical\ndescription: Returns a paginated list of physical cards for the business. Cards can be filtered\nby user, activation status, termination status, and display name.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            }
+          ]
+        },
+        "official_mcp": {
+          "status": "checked",
+          "value": "vendor_server",
+          "mcp_mode": "remote",
+          "reason": "The undated official Ramp MCP guide documents a vendor server at `https://mcp.ramp.com/mcp`; each connection uses the signed-in user's permissions, supports full or read-only access, and expires after 30 days.",
+          "evidence": [
+            {
+              "url": "https://docs.ramp.com/llms-guides/ramp-mcp.txt",
+              "title": "Ramp MCP",
+              "quote": "Ramp MCP connects AI tools such as Claude, ChatGPT, and Cursor to your Ramp account. Each connection acts as the signed-in user, with that user's Ramp permissions.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            },
+            {
+              "url": "https://docs.ramp.com/llms-guides/ramp-mcp.txt",
+              "title": "Ramp MCP",
+              "quote": "claude mcp add --transport http ramp https://mcp.ramp.com/mcp",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            },
+            {
+              "url": "https://docs.ramp.com/llms-guides/ramp-mcp.txt",
+              "title": "Ramp MCP",
+              "quote": "When you sign in, choose **Full access** or **Read-only**. Connections expire after 30 days; reconnect to renew.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            }
+          ]
+        },
+        "composio_toolkit": {
+          "status": "checked",
+          "value": "listed_exact",
+          "reason": "The current complete Composio catalog contains the exact Ramp toolkit and `RAMP` slug; the separate Ramp MCP product was not substituted.",
+          "evidence": [
+            {
+              "url": "https://docs.composio.dev/toolkits.md",
+              "title": "Composio Toolkits",
+              "quote": "| [Ramp](/toolkits/ramp.md) | `RAMP` | 186 | 0 | OAUTH2 | No |",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            }
+          ]
+        },
+        "verdict": {
+          "status": "checked",
+          "value": "gated_build_candidate",
+          "reason": "OAuth grant documentation and a broad API reference support implementation, but admin app creation, sandbox approval, and organization authorization gate access; all cited vendor pages are undated.",
+          "evidence": [
+            {
+              "url": "https://docs.ramp.com/llms-guides/authorization.txt",
+              "title": "Ramp authorization",
+              "quote": "Ramp uses OAuth 2.0. Your app gets an access token from `/developer/v1/token`, authenticating with its client ID and secret (typically HTTP Basic Auth), and scopes control what the token can access.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            },
+            {
+              "url": "https://docs.ramp.com/llms-api.txt",
+              "title": "Ramp API reference",
+              "quote": "title: List physical cards\npath: /developer/v1/cards/physical\ndescription: Returns a paginated list of physical cards for the business. Cards can be filtered\nby user, activation status, termination status, and display name.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            },
+            {
+              "url": "https://docs.ramp.com/llms-guides/getting-started.txt",
+              "title": "Ramp Developer API quickstart",
+              "quote": "This guide assumes you are a Ramp customer with **admin** access to your dashboard.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "number": 90,
+      "app": "PitchBook",
+      "category": "Finance and Fintech",
+      "summary": "PitchBook documents a broad REST/JSON API behind a standalone Direct Data contract, vendor-provisioned API key or token access, and an official PitchBook Data MCP product available to customers upon request.",
+      "blocker": "API access is not self-serve: the Direct Data contract, custom pricing, sandbox, and credentials require vendor engagement, while Data MCP requires customer access. Public pages do not specify the REST credential header or token format, or a Data MCP endpoint and transport; the separately branded PitchBook MCP gateway requires OAuth 2.0.",
+      "next_action": "Contact PitchBook Direct Data or the account manager for the standalone API agreement, custom pricing, sandbox, and key/token provisioning; request Data MCP access plus its endpoint, transport, OAuth/entitlement details, and tool coverage before building.",
+      "fields": {
+        "auth": {
+          "status": "checked",
+          "value": [
+            "PitchBook REST API: vendor-provisioned API key or authentication token; public help does not state the header or token format",
+            "PitchBook MCP External Gateway: OAuth 2.0 sign-in, separate from the REST API"
+          ],
+          "reason": "The undated official API help says the Direct Data team establishes an API connection through an API key or authentication token. The undated official MCP gateway sign-in page separately requires OAuth 2.0; it is not evidence of REST API OAuth or of Composio credential handling.",
+          "evidence": [
+            {
+              "url": "https://pitchbook.com/help/PitchBook-api",
+              "title": "Help: PitchBook API - PitchBook",
+              "quote": "Our team will work with you to understand the insights and data you’re looking for and help you establish the API connection through an API key or authentication token. Available data for each entity type is packaged across several endpoints so you can map the data to your desired format and structure.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated",
+              "verification_method": "headless Chromium rendered body innerText (installed Chrome; no raw HTML)",
+              "verification_note": "The rendered official page reproduced the normalized quotation. Direct HTTP retrieval missed JavaScript-rendered, redirect-sensitive, or charset-sensitive content; no search snippet or hidden raw HTML was used.",
+              "verified_at": "2026-11-24",
+              "source_review": "The rendered official page reproduced the normalized quotation. Direct HTTP retrieval missed JavaScript-rendered, redirect-sensitive, or charset-sensitive content; no search snippet or hidden raw HTML was used."
+            },
+            {
+              "url": "https://mcp-proxy-external.pitchbook.com/oauth/login?redirect=%2Ftools&show=true",
+              "title": "Sign In - MCP Proxy - PitchBook",
+              "quote": "Sign in to access PitchBook MCP External Gateway\nSign in with OAuth 2.0",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated",
+              "verification_method": "headless Chromium rendered body innerText (installed Chrome; no raw HTML)",
+              "verification_note": "The rendered official page reproduced the normalized quotation. Direct HTTP retrieval missed JavaScript-rendered, redirect-sensitive, or charset-sensitive content; no search snippet or hidden raw HTML was used.",
+              "verified_at": "2026-11-24",
+              "source_review": "The rendered official page reproduced the normalized quotation. Direct HTTP retrieval missed JavaScript-rendered, redirect-sensitive, or charset-sensitive content; no search snippet or hidden raw HTML was used."
+            }
+          ]
+        },
+        "credential_gate": {
+          "status": "checked",
+          "value": "partner_or_sales",
+          "gate_class": "partner_or_sales",
+          "reason": "The undated API help requires a standalone contract and directs prospects to the Direct Data team; the undated Direct Data help routes setup through an account manager, and the undated pricing page requires representative contact. The press release dated 2026-10-14 says Data MCP is available to customers upon request. These are vendor-mediated gates, not a public self-serve key flow.",
+          "evidence": [
+            {
+              "url": "https://pitchbook.com/help/PitchBook-api",
+              "title": "Help: PitchBook API - PitchBook",
+              "quote": "Our API is a separate offering from the PitchBook Platform that requires a standalone contract agreement.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated",
+              "verification_method": "headless Chromium rendered body innerText (installed Chrome; no raw HTML)",
+              "verification_note": "The rendered official page reproduced the normalized quotation. Direct HTTP retrieval missed JavaScript-rendered, redirect-sensitive, or charset-sensitive content; no search snippet or hidden raw HTML was used.",
+              "verified_at": "2026-11-24",
+              "source_review": "The rendered official page reproduced the normalized quotation. Direct HTTP retrieval missed JavaScript-rendered, redirect-sensitive, or charset-sensitive content; no search snippet or hidden raw HTML was used."
+            },
+            {
+              "url": "https://pitchbook.com/help/PitchBook-api",
+              "title": "Help: PitchBook API - PitchBook",
+              "quote": "To start your API connection, you will need to send a request directly to our Direct Data team",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated",
+              "verification_method": "headless Chromium rendered body innerText (installed Chrome; no raw HTML)",
+              "verification_note": "The rendered official page reproduced the normalized quotation. Direct HTTP retrieval missed JavaScript-rendered, redirect-sensitive, or charset-sensitive content; no search snippet or hidden raw HTML was used.",
+              "verified_at": "2026-11-24",
+              "source_review": "The rendered official page reproduced the normalized quotation. Direct HTTP retrieval missed JavaScript-rendered, redirect-sensitive, or charset-sensitive content; no search snippet or hidden raw HTML was used."
+            },
+            {
+              "url": "https://pitchbook.com/help/data-feed-api-crm-direct-data-solutions",
+              "title": "Help: Data Feed, API, and CRM: Direct Data solutions - PitchBook",
+              "quote": "Contact your account manager\nA member of the PitchBook team will shortly be in touch by email with the next steps.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated",
+              "verification_method": "headless Chromium rendered body innerText (installed Chrome; no raw HTML)",
+              "verification_note": "The rendered official page reproduced the normalized quotation. Direct HTTP retrieval missed JavaScript-rendered, redirect-sensitive, or charset-sensitive content; no search snippet or hidden raw HTML was used.",
+              "verified_at": "2026-11-24",
+              "source_review": "The rendered official page reproduced the normalized quotation. Direct HTTP retrieval missed JavaScript-rendered, redirect-sensitive, or charset-sensitive content; no search snippet or hidden raw HTML was used."
+            },
+            {
+              "url": "https://pitchbook.com/pricing",
+              "title": "PitchBook Pricing: Plans, Cost, and Subscriptions - PitchBook",
+              "quote": "Pricing options vary depending on how many seats you need and your firm type. Another primary consideration is whether you’re interested in additional premium offerings, such as Direct Data or CRM Integration. Find out what the cost for you might look like by getting in touch with a representative today.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated",
+              "verification_method": "headless Chromium rendered body innerText (installed Chrome; no raw HTML)",
+              "verification_note": "The rendered official page reproduced the normalized quotation. Direct HTTP retrieval missed JavaScript-rendered, redirect-sensitive, or charset-sensitive content; no search snippet or hidden raw HTML was used.",
+              "verified_at": "2026-11-24",
+              "source_review": "The rendered official page reproduced the normalized quotation. Direct HTTP retrieval missed JavaScript-rendered, redirect-sensitive, or charset-sensitive content; no search snippet or hidden raw HTML was used."
+            },
+            {
+              "url": "https://pitchbook.com/media/press-releases/pitchbook-launches-an-agentic-platform-assistant-and-new-pitchbook-data-mcp-to-meet-investors-rapidly-evolving-workflow-needs",
+              "title": "PitchBook Launches an Agentic Platform Assistant and New PitchBook Data MCP to Meet Investors’ Rapidly Evolving Workflow Needs | PitchBook",
+              "quote": "The PitchBook Data MCP is currently live and available to customers upon request.",
+              "retrieved_at": "2026-11-24",
+              "published_at": "2026-10-14",
+              "published_label": "published 2026-10-14",
+              "verification_method": "headless Chromium rendered body innerText (installed Chrome; no raw HTML)",
+              "verification_note": "The rendered official page reproduced the normalized quotation. Direct HTTP retrieval missed JavaScript-rendered, redirect-sensitive, or charset-sensitive content; no search snippet or hidden raw HTML was used.",
+              "verified_at": "2026-11-24",
+              "source_review": "The rendered official page reproduced the normalized quotation. Direct HTTP retrieval missed JavaScript-rendered, redirect-sensitive, or charset-sensitive content; no search snippet or hidden raw HTML was used."
+            }
+          ]
+        },
+        "api_surface": {
+          "status": "checked",
+          "value": "REST; broad documented surface",
+          "api_types": [
+            "REST"
+          ],
+          "breadth": "broad",
+          "reason": "The undated official API product page explicitly identifies a RESTful JSON API and coverage across deals, investors, funds, people, limited partners, and service providers. The undated API help also documents multiple relational endpoints and the https://api.pitchbook.com base URL. This supports broad documented entity coverage, not a public endpoint census.",
+          "evidence": [
+            {
+              "url": "https://pitchbook.com/products/direct-access-data/api",
+              "title": "API: Flexibly call down data on demand - PitchBook",
+              "quote": "Our RESTful API utilizes JSON and is system agnostic, so you can integrate it into custom applications and CRMs to bring the industry’s best data directly into your workflow.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated",
+              "verification_method": "headless Chromium rendered body innerText (installed Chrome; no raw HTML)",
+              "verification_note": "The rendered official page reproduced the normalized quotation. Direct HTTP retrieval missed JavaScript-rendered, redirect-sensitive, or charset-sensitive content; no search snippet or hidden raw HTML was used.",
+              "verified_at": "2026-11-24",
+              "source_review": "The rendered official page reproduced the normalized quotation. Direct HTTP retrieval missed JavaScript-rendered, redirect-sensitive, or charset-sensitive content; no search snippet or hidden raw HTML was used."
+            },
+            {
+              "url": "https://pitchbook.com/products/direct-access-data/api",
+              "title": "API: Flexibly call down data on demand - PitchBook",
+              "quote": "Call data on all PitchBook entity types including deals, investors, funds, people, limited partners and service providers.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated",
+              "verification_method": "headless Chromium rendered body innerText (installed Chrome; no raw HTML)",
+              "verification_note": "The rendered official page reproduced the normalized quotation. Direct HTTP retrieval missed JavaScript-rendered, redirect-sensitive, or charset-sensitive content; no search snippet or hidden raw HTML was used.",
+              "verified_at": "2026-11-24",
+              "source_review": "The rendered official page reproduced the normalized quotation. Direct HTTP retrieval missed JavaScript-rendered, redirect-sensitive, or charset-sensitive content; no search snippet or hidden raw HTML was used."
+            },
+            {
+              "url": "https://pitchbook.com/help/PitchBook-api",
+              "title": "Help: PitchBook API - PitchBook",
+              "quote": "The PitchBook API is a RESTful implementation that most HTTP clients can easily access in your chosen language or via a web browser. Every call will use the same base URL: https://api.pitchbook.com",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated",
+              "verification_method": "headless Chromium rendered body innerText (installed Chrome; no raw HTML)",
+              "verification_note": "The rendered official page reproduced the normalized quotation. Direct HTTP retrieval missed JavaScript-rendered, redirect-sensitive, or charset-sensitive content; no search snippet or hidden raw HTML was used.",
+              "verified_at": "2026-11-24",
+              "source_review": "The rendered official page reproduced the normalized quotation. Direct HTTP retrieval missed JavaScript-rendered, redirect-sensitive, or charset-sensitive content; no search snippet or hidden raw HTML was used."
+            },
+            {
+              "url": "https://pitchbook.com/help/PitchBook-api",
+              "title": "Help: PitchBook API - PitchBook",
+              "quote": "The API solution offers a variety of relational endpoints, including financing details, deal stock information, as well as AI-powered VC exit predictor data.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated",
+              "verification_method": "headless Chromium rendered body innerText (installed Chrome; no raw HTML)",
+              "verification_note": "The rendered official page reproduced the normalized quotation. Direct HTTP retrieval missed JavaScript-rendered, redirect-sensitive, or charset-sensitive content; no search snippet or hidden raw HTML was used.",
+              "verified_at": "2026-11-24",
+              "source_review": "The rendered official page reproduced the normalized quotation. Direct HTTP retrieval missed JavaScript-rendered, redirect-sensitive, or charset-sensitive content; no search snippet or hidden raw HTML was used."
+            }
+          ]
+        },
+        "official_mcp": {
+          "status": "checked",
+          "value": "vendor_server",
+          "mcp_mode": "unknown",
+          "reason": "PitchBook’s press release visibly dated October 14, 2026 announces PitchBook Data MCP, describes PitchBook data delivered directly into investors’ own tools and models, and says it is live for customers upon request; the undated AI page corroborates the vendor product. The official PitchBook MCP External Gateway separately identifies a production environment and OAuth 2.0 sign-in. No visible Data MCP text publishes an endpoint or explicitly labels transport local or remote, and the gateway is not explicitly linked to Data MCP, so mode remains unknown rather than conflating products. Direct retrieval of the API help and press release returned HTTP 403, but the in-app browser rendered those and the other targeted official pages without a bot challenge; no sign-in was attempted.",
+          "evidence": [
+            {
+              "url": "https://pitchbook.com/media/press-releases/pitchbook-launches-an-agentic-platform-assistant-and-new-pitchbook-data-mcp-to-meet-investors-rapidly-evolving-workflow-needs",
+              "title": "PitchBook Launches an Agentic Platform Assistant and New PitchBook Data MCP to Meet Investors’ Rapidly Evolving Workflow Needs | PitchBook",
+              "quote": "October 14, 2026",
+              "retrieved_at": "2026-11-24",
+              "published_at": "2026-10-14",
+              "published_label": "published 2026-10-14",
+              "verification_method": "headless Chromium rendered body innerText (installed Chrome; no raw HTML)",
+              "verification_note": "The rendered official page reproduced the normalized quotation. Direct HTTP retrieval missed JavaScript-rendered, redirect-sensitive, or charset-sensitive content; no search snippet or hidden raw HTML was used.",
+              "verified_at": "2026-11-24",
+              "source_review": "The rendered official page reproduced the normalized quotation. Direct HTTP retrieval missed JavaScript-rendered, redirect-sensitive, or charset-sensitive content; no search snippet or hidden raw HTML was used."
+            },
+            {
+              "url": "https://pitchbook.com/media/press-releases/pitchbook-launches-an-agentic-platform-assistant-and-new-pitchbook-data-mcp-to-meet-investors-rapidly-evolving-workflow-needs",
+              "title": "PitchBook Launches an Agentic Platform Assistant and New PitchBook Data MCP to Meet Investors’ Rapidly Evolving Workflow Needs | PitchBook",
+              "quote": "PitchBook Data MCP puts its trusted data into the systems investors have already built. PitchBook Data MCP gives investment teams native, secure access to a subset of PitchBook’s dataset, including company, deal, investor, and fund data, directly inside their own proprietary tools and models.",
+              "retrieved_at": "2026-11-24",
+              "published_at": "2026-10-14",
+              "published_label": "published 2026-10-14",
+              "verification_method": "headless Chromium rendered body innerText (installed Chrome; no raw HTML)",
+              "verification_note": "The rendered official page reproduced the normalized quotation. Direct HTTP retrieval missed JavaScript-rendered, redirect-sensitive, or charset-sensitive content; no search snippet or hidden raw HTML was used.",
+              "verified_at": "2026-11-24",
+              "source_review": "The rendered official page reproduced the normalized quotation. Direct HTTP retrieval missed JavaScript-rendered, redirect-sensitive, or charset-sensitive content; no search snippet or hidden raw HTML was used."
+            },
+            {
+              "url": "https://pitchbook.com/media/press-releases/pitchbook-launches-an-agentic-platform-assistant-and-new-pitchbook-data-mcp-to-meet-investors-rapidly-evolving-workflow-needs",
+              "title": "PitchBook Launches an Agentic Platform Assistant and New PitchBook Data MCP to Meet Investors’ Rapidly Evolving Workflow Needs | PitchBook",
+              "quote": "The PitchBook Data MCP is currently live and available to customers upon request.",
+              "retrieved_at": "2026-11-24",
+              "published_at": "2026-10-14",
+              "published_label": "published 2026-10-14",
+              "verification_method": "headless Chromium rendered body innerText (installed Chrome; no raw HTML)",
+              "verification_note": "The rendered official page reproduced the normalized quotation. Direct HTTP retrieval missed JavaScript-rendered, redirect-sensitive, or charset-sensitive content; no search snippet or hidden raw HTML was used.",
+              "verified_at": "2026-11-24",
+              "source_review": "The rendered official page reproduced the normalized quotation. Direct HTTP retrieval missed JavaScript-rendered, redirect-sensitive, or charset-sensitive content; no search snippet or hidden raw HTML was used."
+            },
+            {
+              "url": "https://pitchbook.com/products/pitchbooks-ai-capabilities",
+              "title": "AI & Machine Learning for Private Markets - PitchBook",
+              "quote": "PitchBook Data MCP gives your team secure, native access to select company, deal, investor, and fund data in the proprietary tools your firm has built or the commercial LLMs it uses. It brings the grounded access available through our LLM partners to the systems where your team is already asking questions, without a separate integration to maintain.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated",
+              "verification_method": "headless Chromium rendered body innerText (installed Chrome; no raw HTML)",
+              "verification_note": "The rendered official page reproduced the normalized quotation. Direct HTTP retrieval missed JavaScript-rendered, redirect-sensitive, or charset-sensitive content; no search snippet or hidden raw HTML was used.",
+              "verified_at": "2026-11-24",
+              "source_review": "The rendered official page reproduced the normalized quotation. Direct HTTP retrieval missed JavaScript-rendered, redirect-sensitive, or charset-sensitive content; no search snippet or hidden raw HTML was used."
+            },
+            {
+              "url": "https://mcp-proxy-external.pitchbook.com/",
+              "title": "MCP Proxy - Model Context Protocol Server",
+              "quote": "PitchBook MCP Gateway Production Environment\nSecure Access to PitchBook's MCP Servers",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated",
+              "verification_method": "headless Chromium rendered body innerText (installed Chrome; no raw HTML)",
+              "verification_note": "The rendered official page reproduced the normalized quotation. Direct HTTP retrieval missed JavaScript-rendered, redirect-sensitive, or charset-sensitive content; no search snippet or hidden raw HTML was used.",
+              "verified_at": "2026-11-24",
+              "source_review": "The rendered official page reproduced the normalized quotation. Direct HTTP retrieval missed JavaScript-rendered, redirect-sensitive, or charset-sensitive content; no search snippet or hidden raw HTML was used."
+            },
+            {
+              "url": "https://mcp-proxy-external.pitchbook.com/oauth/login?redirect=%2Ftools&show=true",
+              "title": "Sign In - MCP Proxy - PitchBook",
+              "quote": "Sign in to access PitchBook MCP External Gateway\nSign in with OAuth 2.0",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated",
+              "verification_method": "headless Chromium rendered body innerText (installed Chrome; no raw HTML)",
+              "verification_note": "The rendered official page reproduced the normalized quotation. Direct HTTP retrieval missed JavaScript-rendered, redirect-sensitive, or charset-sensitive content; no search snippet or hidden raw HTML was used.",
+              "verified_at": "2026-11-24",
+              "source_review": "The rendered official page reproduced the normalized quotation. Direct HTTP retrieval missed JavaScript-rendered, redirect-sensitive, or charset-sensitive content; no search snippet or hidden raw HTML was used."
+            }
+          ]
+        },
+        "composio_toolkit": {
+          "status": "checked",
+          "value": "listed_exact",
+          "reason": "The current complete Composio catalog contains the exact PitchBook toolkit and `PITCHBOOK` slug.",
+          "evidence": [
+            {
+              "url": "https://docs.composio.dev/toolkits.md",
+              "title": "Composio Toolkits",
+              "quote": "| [PitchBook](/toolkits/pitchbook.md) | `PITCHBOOK` | 130 | 0 | API_KEY | — |",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            }
+          ]
+        },
+        "verdict": {
+          "status": "checked",
+          "value": "partner_outreach",
+          "reason": "The documented broad REST/JSON API and official vendor MCP product justify partner outreach, but the standalone API contract, custom pricing, vendor-provisioned credentials, and customer-request MCP access prevent a self-serve build. The REST credential wire format and Data MCP endpoint/transport remain unpublished. The press release is dated 2026-10-14; the other cited vendor pages are undated.",
+          "evidence": [
+            {
+              "url": "https://pitchbook.com/help/PitchBook-api",
+              "title": "Help: PitchBook API - PitchBook",
+              "quote": "Our API is a separate offering from the PitchBook Platform that requires a standalone contract agreement.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated",
+              "verification_method": "headless Chromium rendered body innerText (installed Chrome; no raw HTML)",
+              "verification_note": "The rendered official page reproduced the normalized quotation. Direct HTTP retrieval missed JavaScript-rendered, redirect-sensitive, or charset-sensitive content; no search snippet or hidden raw HTML was used.",
+              "verified_at": "2026-11-24",
+              "source_review": "The rendered official page reproduced the normalized quotation. Direct HTTP retrieval missed JavaScript-rendered, redirect-sensitive, or charset-sensitive content; no search snippet or hidden raw HTML was used."
+            },
+            {
+              "url": "https://pitchbook.com/products/direct-access-data/api",
+              "title": "API: Flexibly call down data on demand - PitchBook",
+              "quote": "Our RESTful API utilizes JSON and is system agnostic, so you can integrate it into custom applications and CRMs to bring the industry’s best data directly into your workflow.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated",
+              "verification_method": "headless Chromium rendered body innerText (installed Chrome; no raw HTML)",
+              "verification_note": "The rendered official page reproduced the normalized quotation. Direct HTTP retrieval missed JavaScript-rendered, redirect-sensitive, or charset-sensitive content; no search snippet or hidden raw HTML was used.",
+              "verified_at": "2026-11-24",
+              "source_review": "The rendered official page reproduced the normalized quotation. Direct HTTP retrieval missed JavaScript-rendered, redirect-sensitive, or charset-sensitive content; no search snippet or hidden raw HTML was used."
+            },
+            {
+              "url": "https://pitchbook.com/products/direct-access-data/api",
+              "title": "API: Flexibly call down data on demand - PitchBook",
+              "quote": "Call data on all PitchBook entity types including deals, investors, funds, people, limited partners and service providers.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated",
+              "verification_method": "headless Chromium rendered body innerText (installed Chrome; no raw HTML)",
+              "verification_note": "The rendered official page reproduced the normalized quotation. Direct HTTP retrieval missed JavaScript-rendered, redirect-sensitive, or charset-sensitive content; no search snippet or hidden raw HTML was used.",
+              "verified_at": "2026-11-24",
+              "source_review": "The rendered official page reproduced the normalized quotation. Direct HTTP retrieval missed JavaScript-rendered, redirect-sensitive, or charset-sensitive content; no search snippet or hidden raw HTML was used."
+            },
+            {
+              "url": "https://pitchbook.com/media/press-releases/pitchbook-launches-an-agentic-platform-assistant-and-new-pitchbook-data-mcp-to-meet-investors-rapidly-evolving-workflow-needs",
+              "title": "PitchBook Launches an Agentic Platform Assistant and New PitchBook Data MCP to Meet Investors’ Rapidly Evolving Workflow Needs | PitchBook",
+              "quote": "The PitchBook Data MCP is currently live and available to customers upon request.",
+              "retrieved_at": "2026-11-24",
+              "published_at": "2026-10-14",
+              "published_label": "published 2026-10-14",
+              "verification_method": "headless Chromium rendered body innerText (installed Chrome; no raw HTML)",
+              "verification_note": "The rendered official page reproduced the normalized quotation. Direct HTTP retrieval missed JavaScript-rendered, redirect-sensitive, or charset-sensitive content; no search snippet or hidden raw HTML was used.",
+              "verified_at": "2026-11-24",
+              "source_review": "The rendered official page reproduced the normalized quotation. Direct HTTP retrieval missed JavaScript-rendered, redirect-sensitive, or charset-sensitive content; no search snippet or hidden raw HTML was used."
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

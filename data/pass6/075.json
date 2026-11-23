@@ -1,0 +1,161 @@
+{
+  "app": {
+    "number": 75,
+    "name": "Asana",
+    "category": "Productivity and Project Management",
+    "hint": "developers.asana.com"
+  },
+  "replayed_at": "2026-11-23T18:17:24.234903+00:00",
+  "source_passes": [
+    "data/pass2/075.json",
+    "data/pass4/075.json"
+  ],
+  "source_search": "data/new_search/075.json",
+  "publication_date_note": "Published labels are retained exactly as supplied by search; missing labels are null. Relative labels must not be treated as exact publication dates.",
+  "claims": {
+    "auth": {
+      "value": [
+        "OAuth 2.0",
+        "API key",
+        "API token",
+        "Bearer token"
+      ],
+      "sources": [
+        "https://developers.asana.com/docs/authentication",
+        "https://developers.asana.com/docs/personal-access-token",
+        "https://developers.asana.com/docs/oauth"
+      ],
+      "evidence": [
+        {
+          "value": "OAuth 2.0",
+          "url": "https://developers.asana.com/docs/authentication",
+          "excerpt": " . OpenID Connect OpenID Connect (OIDC) is an open authentication protocol that works on top of the OAuth 2.0. The purpose of OIDC is for users to provide one set of credentials and access multiple sites. If you want to allow users to log into your app using their Asana account, the OpenI",
+          "published_label": null
+        },
+        {
+          "value": "API key",
+          "url": "https://developers.asana.com/docs/personal-access-token",
+          "excerpt": "personal access token (PAT) contains your security credentials for the Asana platform. Much like an API key, generating a PAT allows you to access (i.e., make requests to) the Asana REST API upon successful authentication. A user can create many, but not unlimited, personal access token",
+          "published_label": null
+        },
+        {
+          "value": "OAuth 2.0",
+          "url": "https://developers.asana.com/docs/oauth",
+          "excerpt": "how to use OAuth on the Asana platform (i.e., through this guide), feel free to review the official OAuth 2.0 specification . Overview of the OAuth process This section describes the overall OAuth process (i.e., with the authorization code grant flow, which is the most common). 📘 OAuth li",
+          "published_label": null
+        },
+        {
+          "value": "API token",
+          "url": "https://developers.asana.com/docs/oauth",
+          "excerpt": ". Token introspection endpoint The token introspection endpoint provides information about an Asana API token: The API endpoint for token introspection is : POST https://app.asana.com/-/token_info Request POST https://app.asana.com/-/token_info with standard form-encoded request body: Req",
+          "published_label": null
+        },
+        {
+          "value": "Bearer token",
+          "url": "https://developers.asana.com/docs/oauth",
+          "excerpt": "point for revoking a token is POST https://app.asana.com/-/oauth_revoke Once an access token (i.e., bearer token) has been obtained, your application can make API requests on behalf of the user 📘 Open source examples You can access an open source examples for OAuth servers, provided in the f",
+          "published_label": null
+        }
+      ],
+      "reason": "Provisional extraction: validate scope and completeness against the cited page."
+    },
+    "credential_gate": {
+      "value": "unknown",
+      "sources": [],
+      "evidence": [],
+      "reason": "No sufficiently specific positive evidence extracted; review targeted search results."
+    },
+    "api_surface": {
+      "value": [
+        "REST"
+      ],
+      "sources": [
+        "https://developers.asana.com/docs/mcp-tools-reference",
+        "https://developers.asana.com/docs/personal-access-token",
+        "https://developers.asana.com/reference/rest-api-reference"
+      ],
+      "evidence": [
+        {
+          "value": "REST",
+          "url": "https://developers.asana.com/docs/mcp-tools-reference",
+          "excerpt": " work across multiple workspaces, you need separate sessions. MCP tokens do not work with the Asana REST API. Tokens issued for MCP apps are valid only for the MCP server. For standard API access, create a separate app and authenticate through the standard OAuth flow. App visibility can ",
+          "published_label": null
+        },
+        {
+          "value": "REST",
+          "url": "https://developers.asana.com/docs/personal-access-token",
+          "excerpt": "orm. Much like an API key, generating a PAT allows you to access (i.e., make requests to) the Asana REST API upon successful authentication. A user can create many, but not unlimited, personal access tokens. When creating a token, you must give it a description to help you remember what ",
+          "published_label": null
+        },
+        {
+          "value": "REST",
+          "url": "https://developers.asana.com/reference/rest-api-reference",
+          "excerpt": " API reference for app components , click here . 📘 Quick start To begin making requests against the REST API, see the quick start guide. Usage The Asana API is a REST ful interface with predictable resource-oriented URLs, accepts JSON or form-encoded requests, returns JSON, and uses stan",
+          "published_label": null
+        }
+      ],
+      "reason": "Provisional extraction: validate scope and completeness against the cited page."
+    },
+    "official_mcp": {
+      "value": "yes (provisional)",
+      "sources": [
+        "https://developers.asana.com/docs/mcp-tools-reference",
+        "https://developers.asana.com/docs/integrating-with-asanas-mcp-server",
+        "https://developers.asana.com/docs/using-asanas-mcp-server?frame=0",
+        "https://developers.asana.com/docs/mcp-server"
+      ],
+      "evidence": [
+        {
+          "value": "yes (provisional)",
+          "url": "https://developers.asana.com/docs/mcp-tools-reference",
+          "excerpt": ".txt. Append .md to any documentation page URL to get its markdown version. The Asana V2 MCP server exposes a set of tools that allow AI assistants to read from and write to your Asana workspace. This page describes the tools, what they do, and when to use th",
+          "published_label": null,
+          "context_warning": "Review vendor ownership, dates, and scope."
+        },
+        {
+          "value": "yes (provisional)",
+          "url": "https://developers.asana.com/docs/integrating-with-asanas-mcp-server",
+          "excerpt": "Integrating with Asana's MCP Server For AI agents: the docs index is at https://developers.asana.com/llms.txt. Append .md to any documentation page URL to get its markdown version. Overview The A",
+          "published_label": null,
+          "context_warning": "Review vendor ownership, dates, and scope."
+        },
+        {
+          "value": "yes (provisional)",
+          "url": "https://developers.asana.com/docs/using-asanas-mcp-server?frame=0",
+          "excerpt": "Using Asana's MCP Server For AI agents: the docs index is at https://developers.asana.com/llms.txt. Append .md to any documentation page URL to get its markdown version. Overview Asana",
+          "published_label": null,
+          "context_warning": "Review vendor ownership, dates, and scope."
+        },
+        {
+          "value": "yes (provisional)",
+          "url": "https://developers.asana.com/docs/mcp-server",
+          "excerpt": "ough various AI platforms and tools that support MCP. To learn more, see: Using Asana's MCP Server Using Asana's Command MCP Server Compatible MCP Clients Integrating with Asana's MCP Server MCP Tools Reference Updated about 2 months ago Did this page help you? Yes No Copy Page",
+          "published_label": null,
+          "context_warning": "Review vendor ownership, dates, and scope."
+        }
+      ],
+      "reason": "Provisional; check source date, scope, and vendor ownership."
+    },
+    "composio_toolkit": {
+      "value": "listed",
+      "sources": [
+        "https://docs.composio.dev/toolkits/asana"
+      ],
+      "evidence": [],
+      "reason": "Catalog match; scope needs review."
+    },
+    "verdict": {
+      "value": "unknown",
+      "sources": [],
+      "evidence": [],
+      "reason": "A supported access path, authentication method and API surface were not all extracted."
+    }
+  },
+  "validation": [
+    "Automatic extraction is provisional and not a verified final claim",
+    "Unknown is not evidence of absence",
+    "No Composio-to-vendor-MCP inference",
+    "Basic authentication may be endpoint-specific",
+    "Client-only and negated statements are not positive MCP evidence"
+  ]
+}

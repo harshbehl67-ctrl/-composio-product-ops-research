@@ -1,0 +1,130 @@
+{
+  "app": {
+    "number": 23,
+    "name": "Zoho Cliq",
+    "category": "Communications and Messaging",
+    "hint": "zoho.com/cliq"
+  },
+  "replayed_at": "2026-11-23T18:16:36.580159+00:00",
+  "source_passes": [
+    "data/pass2/023.json",
+    "data/pass4/023.json"
+  ],
+  "source_search": "data/new_search/023.json",
+  "publication_date_note": "Published labels are retained exactly as supplied by search; missing labels are null. Relative labels must not be treated as exact publication dates.",
+  "claims": {
+    "auth": {
+      "value": [
+        "OAuth 2.0"
+      ],
+      "sources": [
+        "https://www.zoho.com/cliq/help/restapi/v3/oauth/",
+        "https://www.zoho.com/cliq/help/restapi/v2/oauth/"
+      ],
+      "evidence": [
+        {
+          "value": "OAuth 2.0",
+          "url": "https://www.zoho.com/cliq/help/restapi/v3/oauth/",
+          "excerpt": "Introduction to OAuth 2.0 | Zoho Cliq | API Documentation API Docs / No Results Found V3 (Latest) V2 V3 (Latest) Resources Help Docs FAQ Developer Platform Extensions Developer Community Plans & Pricing Ac",
+          "published_label": null
+        },
+        {
+          "value": "OAuth 2.0",
+          "url": "https://www.zoho.com/cliq/help/restapi/v2/oauth/",
+          "excerpt": "Introduction to OAuth 2.0 | Zoho Cliq | API Documentation API Docs / No Results Found V2 V2 V3 (Latest) Resources Help Docs FAQ Developer Platform Extensions Developer Community Plans & Pricing Access Zoho",
+          "published_label": null
+        }
+      ],
+      "reason": "Provisional extraction: validate scope and completeness against the cited page."
+    },
+    "credential_gate": {
+      "value": "unknown",
+      "sources": [],
+      "evidence": [],
+      "reason": "No sufficiently specific positive evidence extracted; review targeted search results."
+    },
+    "api_surface": {
+      "value": [
+        "REST"
+      ],
+      "sources": [
+        "https://www.zoho.com/cliq/help/restapi/v2/introduction/",
+        "https://www.zoho.com/cliq/help/restapi/v3/introduction/",
+        "https://www.zoho.com/cliq/help/restapi/v2/",
+        "https://www.zoho.com/cliq/help/restapi/v3/oascliq/"
+      ],
+      "evidence": [
+        {
+          "value": "REST",
+          "url": "https://www.zoho.com/cliq/help/restapi/v2/introduction/",
+          "excerpt": "te custom theme Get all themes Update custom theme Get specific theme Delete custom theme Zoho Cliq REST API Documentation AI Tools Open in ChatGPT Open in ChatGPT to ask questions about this page Open in Claude Open in Claude to ask questions about this page Copy as Markdown Copy this p",
+          "published_label": null
+        },
+        {
+          "value": "REST",
+          "url": "https://www.zoho.com/cliq/help/restapi/v3/introduction/",
+          "excerpt": "email configuration Retrieve custom email configuration Delete custom email configuration Zoho Cliq REST API Documentation AI Tools Open in ChatGPT Open in ChatGPT to ask questions about this page Open in Claude Open in Claude to ask questions about this page Copy as Markdown Copy this p",
+          "published_label": null
+        },
+        {
+          "value": "REST",
+          "url": "https://www.zoho.com/cliq/help/restapi/v2/",
+          "excerpt": "Rest API documentation | Cliq REST API Documentation Access\r\n            Cliq Pricing Help Center Introduction About Cliq REST API Authentication OAuth Token OpenAPI Specification (OAS) HT",
+          "published_label": null
+        },
+        {
+          "value": "REST",
+          "url": "https://www.zoho.com/cliq/help/restapi/v3/oascliq/",
+          "excerpt": "age as markdown in a new tab An OpenAPI Specification (OAS) is a standardized method for describing RESTful APIs. It outlines the API's structure, authentication methods, endpoints, and request and response formats in either JSON or YAML. You can download the OpenAPI specification file below",
+          "published_label": null
+        }
+      ],
+      "reason": "Provisional extraction: validate scope and completeness against the cited page."
+    },
+    "official_mcp": {
+      "value": "yes (provisional)",
+      "sources": [
+        "https://www.zoho.com/cliq/mcp-server.html",
+        "https://www.zoho.com/cliq/help/platform/zoho-cliq-mcp.html"
+      ],
+      "evidence": [
+        {
+          "value": "yes (provisional)",
+          "url": "https://www.zoho.com/cliq/mcp-server.html",
+          "excerpt": "Bring AI into your workflow with Zoho Cliqâs Model Context Protocol (MCP) Zoho Cliq MCP Server Supported clients + more Bring AI to where your work lives. With Zoho Cliq's Model Context Protocol (MCP), AI in Cliq goes beyond conversation by letting your ",
+          "published_label": null,
+          "context_warning": "Review vendor ownership, dates, and scope."
+        },
+        {
+          "value": "yes (provisional)",
+          "url": "https://www.zoho.com/cliq/help/platform/zoho-cliq-mcp.html",
+          "excerpt": "Guide to Zoho Cliq's MCP Server Guide to Zoho Cliq's MCP Server Note: Explore Zoho MCP , and if you encounter any issues, please contact support@zohomcp.com or support@zohocliq.com for assistance. What is MCP? Model Context",
+          "published_label": null,
+          "context_warning": "Review vendor ownership, dates, and scope."
+        }
+      ],
+      "reason": "Provisional; check source date, scope, and vendor ownership."
+    },
+    "composio_toolkit": {
+      "value": "listed",
+      "sources": [
+        "https://docs.composio.dev/toolkits/zoho_cliq"
+      ],
+      "evidence": [],
+      "reason": "Catalog match; scope needs review."
+    },
+    "verdict": {
+      "value": "unknown",
+      "sources": [],
+      "evidence": [],
+      "reason": "A supported access path, authentication method and API surface were not all extracted."
+    }
+  },
+  "validation": [
+    "Automatic extraction is provisional and not a verified final claim",
+    "Unknown is not evidence of absence",
+    "No Composio-to-vendor-MCP inference",
+    "Basic authentication may be endpoint-specific",
+    "Client-only and negated statements are not positive MCP evidence"
+  ]
+}

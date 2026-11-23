@@ -1,0 +1,192 @@
+{
+  "app": {
+    "number": 69,
+    "name": "Datadog",
+    "category": "Developer, Infra and Data platforms",
+    "hint": "docs.datadoghq.com/api"
+  },
+  "replayed_at": "2026-11-23T18:19:20.173234+00:00",
+  "source_passes": [
+    "data/pass2/069.json",
+    "data/pass4/069.json"
+  ],
+  "source_search": "data/new_search/069.json",
+  "publication_date_note": "Published labels are retained exactly as supplied by search; missing labels are null. Relative labels must not be treated as exact publication dates.",
+  "claims": {
+    "auth": {
+      "value": [
+        "OAuth 2.0",
+        "API key",
+        "Bearer token"
+      ],
+      "sources": [
+        "https://docs.datadoghq.com/api/latest/authentication/",
+        "https://docs.datadoghq.com/extend/authorization/oauth2_in_datadog/",
+        "https://docs.datadoghq.com/account_management/personal-access-tokens/"
+      ],
+      "evidence": [
+        {
+          "value": "OAuth 2.0",
+          "url": "https://docs.datadoghq.com/api/latest/authentication/",
+          "excerpt": "ams Integration Model Lab API Monitors Nebius Cloud Integration Network Device Monitoring Notebooks OAuth2 Client Public Observability Pipelines OCI Integration Okta Integration On-Call On-Call Paging OpenAI Codex Integration Opsgenie Integration Org Authorized Clients Org Connections ",
+          "published_label": null
+        },
+        {
+          "value": "API key",
+          "url": "https://docs.datadoghq.com/api/latest/authentication/",
+          "excerpt": " APM APM Retention Filters APM Trace App Builder Application Security Audit Authentication Validate API key AuthN Mappings AWS Integration AWS Logs Integration Azure Integration Bits AI Bits Security Analyst Change Management ChatGPT Enterprise Integration CI Visibility GitHub Accounts ",
+          "published_label": null
+        },
+        {
+          "value": "OAuth 2.0",
+          "url": "https://docs.datadoghq.com/extend/authorization/oauth2_in_datadog/",
+          "excerpt": "OAuth2 in Datadog For AI agents: A markdown version of this page is available at https://docs.datadoghq.com/extend/authorization/oauth2_in_datadog.md .\nA documentation index is available",
+          "published_label": null
+        },
+        {
+          "value": "API key",
+          "url": "https://docs.datadoghq.com/extend/authorization/oauth2_in_datadog/",
+          "excerpt": "d build your request URL as https://api.<domain>/api/v1/events . Some endpoints may also require an API key, which is created in Step 8. Call the API Key Creation endpoint to generate an API key that allows you to send data on behalf of Datadog users. If the API_KEYS_WRITE scope has not",
+          "published_label": null
+        },
+        {
+          "value": "OAuth 2.0",
+          "url": "https://docs.datadoghq.com/account_management/personal-access-tokens/",
+          "excerpt": "nced Configuration Data Collected Integrated Libraries Troubleshooting Extend Datadog Authorization OAuth2 in Datadog Authorization Endpoints DogStatsD Datagram Format Unix Domain Socket High Throughput Data Data Aggregation DogStatsD Mapper Custom Checks Writing a Custom Agent Check W",
+          "published_label": null
+        },
+        {
+          "value": "API key",
+          "url": "https://docs.datadoghq.com/account_management/personal-access-tokens/",
+          "excerpt": "hat authenticates Datadog API calls. Unlike application keys, PATs do not need to be paired with an API key. They are short-lived and scoped by default, giving you tighter control over what each token can access and how long it remains valid. With PATs, you can: Authenticate API calls w",
+          "published_label": null
+        },
+        {
+          "value": "Bearer token",
+          "url": "https://docs.datadoghq.com/account_management/personal-access-tokens/",
+          "excerpt": "Token PATs support two authentication methods. Authorization header (recommended) Pass the PAT as a Bearer token in the Authorization header. This method does not require an API key: curl -X GET \" /api/v2/users\" \\ -H \"Authorization: Bearer <YOUR_PAT>\" Application key header Pass the PAT in t",
+          "published_label": null
+        }
+      ],
+      "reason": "Provisional extraction: validate scope and completeness against the cited page."
+    },
+    "credential_gate": {
+      "value": "unknown",
+      "sources": [],
+      "evidence": [],
+      "reason": "No sufficiently specific positive evidence extracted; review targeted search results."
+    },
+    "api_surface": {
+      "value": [
+        "REST"
+      ],
+      "sources": [
+        "https://docs.datadoghq.com/api",
+        "https://docs.datadoghq.com/mcp_server/setup/?lang_pref=en",
+        "https://docs.datadoghq.com/account_management/rbac/mcp_access/",
+        "https://docs.datadoghq.com/mcp_server/",
+        "https://docs.datadoghq.com/api/latest/",
+        "https://docs.datadoghq.com/extend/authorization/oauth2_in_datadog/",
+        "https://docs.datadoghq.com/account_management/personal-access-tokens/"
+      ],
+      "evidence": [
+        {
+          "value": "REST",
+          "url": "https://docs.datadoghq.com/api",
+          "excerpt": "S1 US3 US5 EU AP1 AP2 UK1 US1-FED US2-FED API Reference Copy page Copied The Datadog API is an HTTP REST API. The API uses resource-oriented URLs to call the API, uses status codes to indicate the success or failure of requests, returns JSON from all requests, and uses standard HTTP resp",
+          "published_label": null
+        },
+        {
+          "value": "REST",
+          "url": "https://docs.datadoghq.com/mcp_server/setup/?lang_pref=en",
+          "excerpt": " EKS Azure AKS GCP GKE Docker (Local) Datadog Operator Ingest Datadog Agent Observability Pipelines REST API Configure Indexes Ingress Lambda Search Offloading Operate Sizing Object Storage Request Estimation Autoscaling Monitoring Search Logs Production Best Practices Disk Buffer Durabi",
+          "published_label": null
+        },
+        {
+          "value": "REST",
+          "url": "https://docs.datadoghq.com/account_management/rbac/mcp_access/",
+          "excerpt": " EKS Azure AKS GCP GKE Docker (Local) Datadog Operator Ingest Datadog Agent Observability Pipelines REST API Configure Indexes Ingress Lambda Search Offloading Operate Sizing Object Storage Request Estimation Autoscaling Monitoring Search Logs Production Best Practices Disk Buffer Durabi",
+          "published_label": null
+        },
+        {
+          "value": "REST",
+          "url": "https://docs.datadoghq.com/mcp_server/",
+          "excerpt": " EKS Azure AKS GCP GKE Docker (Local) Datadog Operator Ingest Datadog Agent Observability Pipelines REST API Configure Indexes Ingress Lambda Search Offloading Operate Sizing Object Storage Request Estimation Autoscaling Monitoring Search Logs Production Best Practices Disk Buffer Durabi",
+          "published_label": null
+        },
+        {
+          "value": "REST",
+          "url": "https://docs.datadoghq.com/api/latest/",
+          "excerpt": "S1 US3 US5 EU AP1 AP2 UK1 US1-FED US2-FED API Reference Copy page Copied The Datadog API is an HTTP REST API. The API uses resource-oriented URLs to call the API, uses status codes to indicate the success or failure of requests, returns JSON from all requests, and uses standard HTTP resp",
+          "published_label": null
+        },
+        {
+          "value": "REST",
+          "url": "https://docs.datadoghq.com/extend/authorization/oauth2_in_datadog/",
+          "excerpt": " EKS Azure AKS GCP GKE Docker (Local) Datadog Operator Ingest Datadog Agent Observability Pipelines REST API Configure Indexes Ingress Lambda Search Offloading Operate Sizing Object Storage Request Estimation Autoscaling Monitoring Search Logs Production Best Practices Disk Buffer Durabi",
+          "published_label": null
+        },
+        {
+          "value": "REST",
+          "url": "https://docs.datadoghq.com/account_management/personal-access-tokens/",
+          "excerpt": " EKS Azure AKS GCP GKE Docker (Local) Datadog Operator Ingest Datadog Agent Observability Pipelines REST API Configure Indexes Ingress Lambda Search Offloading Operate Sizing Object Storage Request Estimation Autoscaling Monitoring Search Logs Production Best Practices Disk Buffer Durabi",
+          "published_label": null
+        }
+      ],
+      "reason": "Provisional extraction: validate scope and completeness against the cited page."
+    },
+    "official_mcp": {
+      "value": "unknown",
+      "sources": [
+        "https://docs.datadoghq.com/mcp_server/setup/?lang_pref=en",
+        "https://docs.datadoghq.com/account_management/rbac/mcp_access/",
+        "https://docs.datadoghq.com/mcp_server/"
+      ],
+      "evidence": [
+        {
+          "value": "no per source; date and scope need review",
+          "url": "https://docs.datadoghq.com/mcp_server/setup/?lang_pref=en",
+          "excerpt": "uides Help Set Up the Datadog MCP Server Docs > Datadog MCP Server > Set Up the Datadog MCP Server This product is not supported for your selected Datadog site . ( ). Learn how to set up and configure the Datadog MCP Server, which lets you retrieve telemetry insights ",
+          "published_label": null,
+          "context_warning": "Explicit negation; do not infer a current universal absence."
+        },
+        {
+          "value": "yes (provisional)",
+          "url": "https://docs.datadoghq.com/account_management/rbac/mcp_access/",
+          "excerpt": "for MCP Docs > Account Management > Access Control > Access Control for MCP The Datadog MCP Server lets AI agents and clients, such as Claude Code, Cursor, and ChatGPT, read and act on Datadog data on behalf of a signed-in user. You can control which users c",
+          "published_label": null,
+          "context_warning": "Review vendor ownership, dates, and scope."
+        },
+        {
+          "value": "no per source; date and scope need review",
+          "url": "https://docs.datadoghq.com/mcp_server/",
+          "excerpt": "ring Tracing PCI Compliance HIPAA Compliance Data Retention Periods Guides Help Datadog MCP Server Docs > Datadog MCP Server This product is not supported for your selected Datadog site . ( ). The Datadog MCP Server acts as a bridge between your observability data in Datadog and any AI agents ",
+          "published_label": null,
+          "context_warning": "Explicit negation; do not infer a current universal absence."
+        }
+      ],
+      "reason": "Conflicting positive and negative sources require dated review."
+    },
+    "composio_toolkit": {
+      "value": "listed",
+      "sources": [
+        "https://docs.composio.dev/toolkits/datadog"
+      ],
+      "evidence": [],
+      "reason": "Catalog match; scope needs review."
+    },
+    "verdict": {
+      "value": "unknown",
+      "sources": [],
+      "evidence": [],
+      "reason": "A supported access path, authentication method and API surface were not all extracted."
+    }
+  },
+  "validation": [
+    "Automatic extraction is provisional and not a verified final claim",
+    "Unknown is not evidence of absence",
+    "No Composio-to-vendor-MCP inference",
+    "Basic authentication may be endpoint-specific",
+    "Client-only and negated statements are not positive MCP evidence"
+  ]
+}

@@ -1,0 +1,303 @@
+{
+  "app": {
+    "number": 69,
+    "name": "Datadog",
+    "category": "Developer, Infra and Data platforms",
+    "hint": "docs.datadoghq.com/api"
+  },
+  "replayed_at": "2026-11-23T18:42:05.988082+00:00",
+  "source_passes": [
+    "data/pass2/069.json",
+    "data/pass4/069.json"
+  ],
+  "source_searches": [
+    "data/new_search/069.json",
+    "data/pass4_search/069.json"
+  ],
+  "publication_date_note": "Search publication labels are retained exactly; null means no label was available. Relative labels are not exact dates.",
+  "claims": {
+    "auth": {
+      "value": [
+        "OAuth 2.0",
+        "API key",
+        "Bearer token"
+      ],
+      "status": "provisional",
+      "sources": [
+        "https://docs.datadoghq.com/api/latest/authentication/",
+        "https://docs.datadoghq.com/api",
+        "https://docs.datadoghq.com/mcp_server/setup/?lang_pref=en",
+        "https://docs.datadoghq.com/account_management/rbac/mcp_access/",
+        "https://docs.datadoghq.com/mcp_server/",
+        "https://docs.datadoghq.com/api/latest/",
+        "https://docs.datadoghq.com/extend/authorization/oauth2_in_datadog/",
+        "https://docs.datadoghq.com/api/latest/key-management/",
+        "https://docs.datadoghq.com/account_management/personal-access-tokens/"
+      ],
+      "evidence": [
+        {
+          "value": "OAuth 2.0",
+          "url": "https://docs.datadoghq.com/api/latest/authentication/",
+          "excerpt": "Authentication - Datadog API For AI agents: A markdown version of this page is available at https://docs.datadoghq.com/api/latest/authentication.md . A documentation index is available at /llms.txt . Home Docs API / Overview Authorization Scopes for OAuth Clients Rate Limits Usin",
+          "published_label": null
+        },
+        {
+          "value": "API key",
+          "url": "https://docs.datadoghq.com/api/latest/authentication/",
+          "excerpt": "etention Filters APM Trace App Builder Application Security Audit Authentication Validate API key AuthN Mappings AWS Integration AWS Logs Integration Azure Integration Bits AI Bits Security Analyst Change Management ChatGPT Enterprise Integration CI Visibility GitHub",
+          "published_label": null
+        },
+        {
+          "value": "OAuth 2.0",
+          "url": "https://docs.datadoghq.com/api",
+          "excerpt": "Datadog API Reference For AI agents: A markdown version of this page is available at https://docs.datadoghq.com/api/latest.md . A documentation index is available at /llms.txt . Home Docs API / Overview Authorization Scopes for OAuth Clients Rate Limits Using the API Changelog Ac",
+          "published_label": null
+        },
+        {
+          "value": "API key",
+          "url": "https://docs.datadoghq.com/api",
+          "excerpt": "ss the Datadog platform programmatically. Getting started Authenticate to the API with an API key using the header DD-API-KEY . For some endpoints, you also need an Application key , which uses the header DD-APPLICATION-KEY . To try out the API Note : To authenticate",
+          "published_label": null
+        },
+        {
+          "value": "OAuth 2.0",
+          "url": "https://docs.datadoghq.com/mcp_server/setup/?lang_pref=en",
+          "excerpt": "roved origins, even if they have the required permissions. Authentication For most users, OAuth 2.0 is the recommended authentication method, and your MCP client handles it during setup. Use one of the header-based methods below only when you cannot complete the OAuth",
+          "published_label": null
+        },
+        {
+          "value": "API key",
+          "url": "https://docs.datadoghq.com/mcp_server/setup/?lang_pref=en",
+          "excerpt": "ting the plugin, run /reload in Pi. See the plugin repository for all available commands, API key authentication for headless usage, and configuration options. Datadog MCP Server is not supported for your selected site ( ). For Copilot, install the Datadog Copilot pl",
+          "published_label": null
+        },
+        {
+          "value": "Bearer token",
+          "url": "https://docs.datadoghq.com/mcp_server/setup/?lang_pref=en",
+          "excerpt": "ss Token (PAT) or Service Access Token (SAT) is the preferred option. Pass the token as a bearer token in the Authorization header. No API key is required. For example, based on your selected Datadog site ( ): {\n  \"mcpServers\": {\n    \"datadog\": {\n      \"type\": \"http\",",
+          "published_label": null
+        },
+        {
+          "value": "OAuth 2.0",
+          "url": "https://docs.datadoghq.com/account_management/rbac/mcp_access/",
+          "excerpt": "Access Control for MCP Home Docs API Agents Essentials Getting Started Agent API APM Tracing Containers Autodiscovery Datadog Operator Dashboards Database Monitoring Datadog Datadog Site DevSecOps Incident Management Integrations AWS Azure Google Cloud OCI Terraform Stripe Intern",
+          "published_label": null
+        },
+        {
+          "value": "API key",
+          "url": "https://docs.datadoghq.com/account_management/rbac/mcp_access/",
+          "excerpt": "P connections that authenticate through OAuth. A user who configures an AI client with an API key and application key, or with a personal or service access token, bypasses the OAuth application’s scopes. That connection has the access of the key or token instead. To",
+          "published_label": null
+        },
+        {
+          "value": "OAuth 2.0",
+          "url": "https://docs.datadoghq.com/mcp_server/",
+          "excerpt": "Datadog MCP Server For AI agents: A markdown version of this page is available at https://docs.datadoghq.com/mcp_server.md .\nA documentation index is available at /llms.txt . Home Docs API Agents Essentials Getting Started Agent API APM Tracing Containers Autodiscovery Datadog Op",
+          "published_label": null
+        },
+        {
+          "value": "OAuth 2.0",
+          "url": "https://docs.datadoghq.com/api/latest/",
+          "excerpt": "Datadog API Reference For AI agents: A markdown version of this page is available at https://docs.datadoghq.com/api/latest.md . A documentation index is available at /llms.txt . Home Docs API / Overview Authorization Scopes for OAuth Clients Rate Limits Using the API Changelog Ac",
+          "published_label": null
+        },
+        {
+          "value": "API key",
+          "url": "https://docs.datadoghq.com/api/latest/",
+          "excerpt": "ss the Datadog platform programmatically. Getting started Authenticate to the API with an API key using the header DD-API-KEY . For some endpoints, you also need an Application key , which uses the header DD-APPLICATION-KEY . To try out the API Note : To authenticate",
+          "published_label": null
+        },
+        {
+          "value": "OAuth 2.0",
+          "url": "https://docs.datadoghq.com/extend/authorization/oauth2_in_datadog/",
+          "excerpt": "rther Reading Additional helpful documentation, links, and articles: Learn how to use the OAuth 2.0 authorization endpoints DOCUMENTATION Language English English Français 日本語 한국어 Español Datadog Site US1 US3 US5 EU AP1 AP2 UK1 US1-FED US2-FED Edit Copy Copied On this",
+          "published_label": null
+        },
+        {
+          "value": "API key",
+          "url": "https://docs.datadoghq.com/extend/authorization/oauth2_in_datadog/",
+          "excerpt": "ur request URL as https://api.<domain>/api/v1/events . Some endpoints may also require an API key, which is created in Step 8. Call the API Key Creation endpoint to generate an API key that allows you to send data on behalf of Datadog users. If the API_KEYS_WRITE sco",
+          "published_label": null
+        },
+        {
+          "value": "OAuth 2.0",
+          "url": "https://docs.datadoghq.com/api/latest/key-management/",
+          "excerpt": "Key Management - Datadog API For AI agents: A markdown version of this page is available at https://docs.datadoghq.com/api/latest/key-management.md . A documentation index is available at /llms.txt . Home Docs API / Overview Authorization Scopes for OAuth Clients Rate Limits Usin",
+          "published_label": null
+        },
+        {
+          "value": "API key",
+          "url": "https://docs.datadoghq.com/api/latest/key-management/",
+          "excerpt": "s Incidents Integrations IP Allowlist IP Ranges Jira Integration Key Management Delete an API key Get all API keys Create an API key Edit an API key Get API key Delete an application key Get all application keys Create an application key Edit an application key Get a",
+          "published_label": null
+        },
+        {
+          "value": "OAuth 2.0",
+          "url": "https://docs.datadoghq.com/account_management/personal-access-tokens/",
+          "excerpt": "Personal Access Tokens For AI agents: A markdown version of this page is available at https://docs.datadoghq.com/account_management/personal-access-tokens.md .\nA documentation index is available at /llms.txt . Home Docs API Agents Essentials Getting Started Agent API APM Tracing ",
+          "published_label": null
+        },
+        {
+          "value": "API key",
+          "url": "https://docs.datadoghq.com/account_management/personal-access-tokens/",
+          "excerpt": "ticates Datadog API calls. Unlike application keys, PATs do not need to be paired with an API key. They are short-lived and scoped by default, giving you tighter control over what each token can access and how long it remains valid. With PATs, you can: Authenticate A",
+          "published_label": null
+        },
+        {
+          "value": "Bearer token",
+          "url": "https://docs.datadoghq.com/account_management/personal-access-tokens/",
+          "excerpt": "support two authentication methods. Authorization header (recommended) Pass the PAT as a Bearer token in the Authorization header. This method does not require an API key: curl -X GET \" /api/v2/users\" \\ -H \"Authorization: Bearer <YOUR_PAT>\" Application key header Pass th",
+          "published_label": null
+        }
+      ],
+      "reason": "Provisional extraction; validate scope and completeness against cited pages."
+    },
+    "credential_gate": {
+      "value": "unknown",
+      "status": "provisional",
+      "sources": [],
+      "evidence": [],
+      "reason": "No sufficiently specific official evidence extracted."
+    },
+    "api_surface": {
+      "value": "REST, HTTP API; broad documented surface",
+      "status": "provisional",
+      "sources": [
+        "https://docs.datadoghq.com/api",
+        "https://docs.datadoghq.com/mcp_server/setup/?lang_pref=en",
+        "https://docs.datadoghq.com/account_management/rbac/mcp_access/",
+        "https://docs.datadoghq.com/mcp_server/",
+        "https://docs.datadoghq.com/api/latest/",
+        "https://docs.datadoghq.com/extend/authorization/oauth2_in_datadog/",
+        "https://docs.datadoghq.com/account_management/personal-access-tokens/"
+      ],
+      "evidence": [
+        {
+          "value": [
+            "REST"
+          ],
+          "breadth": "broad",
+          "url": "https://docs.datadoghq.com/api",
+          "excerpt": "Datadog API Reference For AI agents: A markdown version of this page is available at https://docs.datadoghq.com/api/latest.md . A documentation index is available at /llms.txt . Home Docs API / Overview Authorization Scopes for OAuth Clients Rate Limits Using the API Changelog Ac",
+          "published_label": null
+        },
+        {
+          "value": [
+            "REST",
+            "HTTP API"
+          ],
+          "breadth": "broad",
+          "url": "https://docs.datadoghq.com/mcp_server/setup/?lang_pref=en",
+          "excerpt": "Set Up the Datadog MCP Server For AI agents: A markdown version of this page is available at https://docs.datadoghq.com/mcp_server/setup.md .\nA documentation index is available at /llms.txt . Home Docs API Agents Essentials Getting Started Agent API APM Tracing Containers Autodis",
+          "published_label": null
+        },
+        {
+          "value": [
+            "REST",
+            "HTTP API"
+          ],
+          "breadth": "broad",
+          "url": "https://docs.datadoghq.com/account_management/rbac/mcp_access/",
+          "excerpt": "Access Control for MCP Home Docs API Agents Essentials Getting Started Agent API APM Tracing Containers Autodiscovery Datadog Operator Dashboards Database Monitoring Datadog Datadog Site DevSecOps Incident Management Integrations AWS Azure Google Cloud OCI Terraform Stripe Intern",
+          "published_label": null
+        },
+        {
+          "value": [
+            "REST",
+            "HTTP API"
+          ],
+          "breadth": "broad",
+          "url": "https://docs.datadoghq.com/mcp_server/",
+          "excerpt": "Datadog MCP Server For AI agents: A markdown version of this page is available at https://docs.datadoghq.com/mcp_server.md .\nA documentation index is available at /llms.txt . Home Docs API Agents Essentials Getting Started Agent API APM Tracing Containers Autodiscovery Datadog Op",
+          "published_label": null
+        },
+        {
+          "value": [
+            "REST"
+          ],
+          "breadth": "broad",
+          "url": "https://docs.datadoghq.com/api/latest/",
+          "excerpt": "Datadog API Reference For AI agents: A markdown version of this page is available at https://docs.datadoghq.com/api/latest.md . A documentation index is available at /llms.txt . Home Docs API / Overview Authorization Scopes for OAuth Clients Rate Limits Using the API Changelog Ac",
+          "published_label": null
+        },
+        {
+          "value": [
+            "REST",
+            "HTTP API"
+          ],
+          "breadth": "broad",
+          "url": "https://docs.datadoghq.com/extend/authorization/oauth2_in_datadog/",
+          "excerpt": "OAuth2 in Datadog For AI agents: A markdown version of this page is available at https://docs.datadoghq.com/extend/authorization/oauth2_in_datadog.md .\nA documentation index is available at /llms.txt . Home Docs API Agents Essentials Getting Started Agent API APM Tracing Containe",
+          "published_label": null
+        },
+        {
+          "value": [
+            "REST",
+            "HTTP API"
+          ],
+          "breadth": "broad",
+          "url": "https://docs.datadoghq.com/account_management/personal-access-tokens/",
+          "excerpt": "Personal Access Tokens For AI agents: A markdown version of this page is available at https://docs.datadoghq.com/account_management/personal-access-tokens.md .\nA documentation index is available at /llms.txt . Home Docs API Agents Essentials Getting Started Agent API APM Tracing ",
+          "published_label": null
+        }
+      ],
+      "reason": "Provisional extraction; validate scope and completeness against cited pages."
+    },
+    "official_mcp": {
+      "value": "unknown",
+      "status": "provisional",
+      "sources": [
+        "https://docs.datadoghq.com/mcp_server/setup/?lang_pref=en",
+        "https://docs.datadoghq.com/account_management/rbac/mcp_access/",
+        "https://docs.datadoghq.com/mcp_server/"
+      ],
+      "evidence": [
+        {
+          "value": "no_vendor_server_documented",
+          "url": "https://docs.datadoghq.com/mcp_server/setup/?lang_pref=en",
+          "excerpt": "HIPAA Compliance Data Retention Periods Guides Help Set Up the Datadog MCP Server Docs > Datadog MCP Server > Set Up the Datadog MCP Server This product is not supported for your selected Datadog site . ( ). Learn how to set up and configure the Datadog MCP Server, which lets you retrieve telemetry insights and manage platform features d",
+          "published_label": null,
+          "context_note": "Explicit dated/scoped negation; not a universal absence claim."
+        },
+        {
+          "value": "vendor_server",
+          "url": "https://docs.datadoghq.com/account_management/rbac/mcp_access/",
+          "excerpt": "s Control for MCP Docs > Account Management > Access Control > Access Control for MCP The Datadog MCP Server lets AI agents and clients, such as Claude Code, Cursor, and ChatGPT, read and act on Datadog data on behalf of a signed-in user. You can control which users can access the M",
+          "published_label": null,
+          "context_note": "Vendor-owned server statement; review date and access scope."
+        },
+        {
+          "value": "no_vendor_server_documented",
+          "url": "https://docs.datadoghq.com/mcp_server/",
+          "excerpt": "tic Monitoring Tracing PCI Compliance HIPAA Compliance Data Retention Periods Guides Help Datadog MCP Server Docs > Datadog MCP Server This product is not supported for your selected Datadog site . ( ). The Datadog MCP Server acts as a bridge between your observability data in Datadog and any AI agents that support the Model Context",
+          "published_label": null,
+          "context_note": "Explicit dated/scoped negation; not a universal absence claim."
+        }
+      ],
+      "reason": "Conflicting or undated MCP evidence requires review."
+    },
+    "composio_toolkit": {
+      "value": "listed",
+      "status": "provisional",
+      "sources": [
+        "https://docs.composio.dev/toolkits/datadog"
+      ],
+      "evidence": [],
+      "reason": "Catalog match only; not vendor MCP evidence."
+    },
+    "verdict": {
+      "value": "unknown",
+      "status": "provisional",
+      "sources": [],
+      "evidence": [],
+      "reason": "No sufficiently specific official evidence extracted."
+    }
+  },
+  "validation": [
+    "Automatic extraction is provisional until independently reviewed",
+    "Unknown is not evidence of absence",
+    "Composio evidence cannot establish vendor MCP",
+    "Client-only and negated MCP statements are not vendor-server proof",
+    "API breadth is a text-coverage heuristic, not an endpoint census"
+  ]
+}

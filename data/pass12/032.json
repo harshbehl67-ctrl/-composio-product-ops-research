@@ -1,0 +1,94 @@
+{
+  "app": {
+    "number": 32,
+    "name": "Meta Ads",
+    "category": "Marketing, Ads, Email and Social",
+    "hint": "developers.facebook.com/docs/marketing-apis"
+  },
+  "replayed_at": "2026-11-23T18:45:49.787365+00:00",
+  "source_passes": [
+    "data/pass2/032.json",
+    "data/pass4/032.json"
+  ],
+  "source_searches": [
+    "data/new_search/032.json",
+    "data/pass4_search/032.json"
+  ],
+  "publication_date_note": "Search publication labels are retained exactly; null means no label was available. Relative labels are not exact dates.",
+  "claims": {
+    "auth": {
+      "value": "unknown",
+      "status": "provisional",
+      "sources": [],
+      "evidence": [],
+      "reason": "No sufficiently specific official evidence extracted."
+    },
+    "credential_gate": {
+      "value": [
+        "admin_approval"
+      ],
+      "status": "provisional",
+      "sources": [
+        "https://developers.facebook.com/docs/graph-api/overview/rate-limiting/"
+      ],
+      "evidence": [
+        {
+          "value": "admin_approval",
+          "url": "https://developers.facebook.com/docs/graph-api/overview/rate-limiting/",
+          "excerpt": "more rate limiting quota, upgrade to Advanced Access of Ads Management Standard Access in App Review. Ad Insights Ads Management Catalog Custom Audience Instagram Platform Lead Generation Messenger Pages Spark AR Commerce Effect Management WhatsApp Business Management A",
+          "published_label": null
+        }
+      ],
+      "reason": "Provisional extraction; validate scope and completeness against cited pages."
+    },
+    "api_surface": {
+      "value": "REST; moderate documented surface",
+      "status": "provisional",
+      "sources": [
+        "https://developers.facebook.com/docs"
+      ],
+      "evidence": [
+        {
+          "value": [
+            "REST"
+          ],
+          "breadth": "moderate",
+          "url": "https://developers.facebook.com/docs",
+          "excerpt": "Meta Developer Documentation | Meta APIs, SDKs & Guides Meta Developer Documentation Learn the basics of how to send and receive data from the Meta social graph and how to implement the APIs, Platforms, Products, and SDKs to fit your application needs. Meta App Development Regist",
+          "published_label": null
+        }
+      ],
+      "reason": "Provisional extraction; validate scope and completeness against cited pages."
+    },
+    "official_mcp": {
+      "value": "unknown",
+      "status": "provisional",
+      "sources": [],
+      "evidence": [],
+      "reason": "No sufficiently specific official evidence extracted."
+    },
+    "composio_toolkit": {
+      "value": "listed",
+      "status": "provisional",
+      "sources": [
+        "https://docs.composio.dev/toolkits/metaads"
+      ],
+      "evidence": [],
+      "reason": "Catalog match only; not vendor MCP evidence."
+    },
+    "verdict": {
+      "value": "unknown",
+      "status": "provisional",
+      "sources": [],
+      "evidence": [],
+      "reason": "No sufficiently specific official evidence extracted."
+    }
+  },
+  "validation": [
+    "Automatic extraction is provisional until independently reviewed",
+    "Unknown is not evidence of absence",
+    "Composio evidence cannot establish vendor MCP",
+    "Client-only and negated MCP statements are not vendor-server proof",
+    "API breadth is a text-coverage heuristic, not an endpoint census"
+  ]
+}

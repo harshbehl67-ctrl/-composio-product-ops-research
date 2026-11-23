@@ -1,0 +1,188 @@
+{
+  "app": {
+    "number": 15,
+    "name": "Pylon",
+    "category": "Support and Helpdesk",
+    "hint": "usepylon.com"
+  },
+  "replayed_at": "2026-11-23T18:41:02.461123+00:00",
+  "source_passes": [
+    "data/pass2/015.json",
+    "data/pass4/015.json"
+  ],
+  "source_searches": [
+    "data/new_search/015.json",
+    "data/pass4_search/015.json"
+  ],
+  "publication_date_note": "Search publication labels are retained exactly; null means no label was available. Relative labels are not exact dates.",
+  "claims": {
+    "auth": {
+      "value": [
+        "API token",
+        "API key",
+        "Bearer token",
+        "Basic authentication",
+        "OAuth 2.0"
+      ],
+      "status": "provisional",
+      "sources": [
+        "https://docs.usepylon.com/pylon-docs/developer/api/authentication",
+        "https://support.usepylon.com/articles/4735104435-how-do-i-create-an-api-token",
+        "https://support.usepylon.com/articles/2407390554-connecting-to-the-pylon-mcp-server",
+        "https://support.usepylon.com/articles/1478561037-how-do-i-connect-a-custom-mcp-to-pylon",
+        "https://www.usepylon.com/integrations/mcp",
+        "https://www.usepylon.com/blog/connect-pylon-chatgpt-mcp",
+        "https://docs.usepylon.com/pylon-docs/developer/api"
+      ],
+      "evidence": [
+        {
+          "value": "API token",
+          "url": "https://docs.usepylon.com/pylon-docs/developer/api/authentication",
+          "excerpt": "n this page The Pylon API uses Bearer authentication. This means you’ll need to pass your API token in the header of your request: Copy Authorization: Bearer <token> Generate an API token in the Pylon dashboard . API regions Pylon’s API is available in two regions. Use",
+          "published_label": null
+        },
+        {
+          "value": "API token",
+          "url": "https://support.usepylon.com/articles/4735104435-how-do-i-create-an-api-token",
+          "excerpt": "How do I create a Pylon API token? | Pylon Knowledge Base Docs Changelog Go to Pylon Docs Changelog Go to Pylon How do I create a Pylon API token? Last updated 2 months ago Applies to: Pylon API access T",
+          "published_label": "2 months ago"
+        },
+        {
+          "value": "API key",
+          "url": "https://support.usepylon.com/articles/2407390554-connecting-to-the-pylon-mcp-server",
+          "excerpt": "icate. Authentication Flow Note: The Pylon MCP server only supports OAuth authentication. API key authentication is not currently available, which may affect usage in remote environments or platforms that don't support OAuth for remote connections. Current capabiliti",
+          "published_label": "3 weeks ago"
+        },
+        {
+          "value": "API token",
+          "url": "https://support.usepylon.com/articles/2407390554-connecting-to-the-pylon-mcp-server",
+          "excerpt": "gration or automation, use the Pylon REST API instead of MCP. The REST API accepts Bearer API tokens, but that authentication method does not apply to the Pylon MCP server. Session Expiry and Reconnecting OAuth sessions expire periodically. The exact duration varies by",
+          "published_label": "3 weeks ago"
+        },
+        {
+          "value": "API key",
+          "url": "https://support.usepylon.com/articles/1478561037-how-do-i-connect-a-custom-mcp-to-pylon",
+          "excerpt": "How do I connect a custom MCP to Pylon? | Pylon Knowledge Base Docs Changelog Go to Pylon Docs Changelog Go to Pylon How do I connect a custom MCP to Pylon? Last updated 20 days ago If a system you use exposes an MCP server, an admin can add it to Pylon as a custom MCP connector.",
+          "published_label": "3 weeks ago"
+        },
+        {
+          "value": "Bearer token",
+          "url": "https://support.usepylon.com/articles/1478561037-how-do-i-connect-a-custom-mcp-to-pylon",
+          "excerpt": "your internal MCP details. Select the authentication method the server supports: OAuth , Bearer token , API-Key , X-API-Key , or Basic auth , and complete the fields shown. Add Custom headers only if the server requires non-authentication metadata. Click Save , then comp",
+          "published_label": "3 weeks ago"
+        },
+        {
+          "value": "Basic authentication",
+          "url": "https://support.usepylon.com/articles/1478561037-how-do-i-connect-a-custom-mcp-to-pylon",
+          "excerpt": "token methods - the connector form also supports bearer token, API-Key , X-Api-Key , and Basic authentication for MCP servers that accept those headers. For OAuth-based MCP connections, a connector can obtain its OAuth client in one of two ways: Dynamic Client Registration - if",
+          "published_label": "3 weeks ago"
+        },
+        {
+          "value": "OAuth 2.0",
+          "url": "https://www.usepylon.com/integrations/mcp",
+          "excerpt": "ool’s MCP settings, or for ChatGPT install the Pylon app from Settings > Plugins. Auth is OAuth 2.0 or an API token. Transport is Streamable HTTP (stateless). US server: mcp.usepylon.com EU server: mcp.eu.usepylon.com See Pylon’s MCP docs for the full tool list. See th",
+          "published_label": null
+        },
+        {
+          "value": "API token",
+          "url": "https://www.usepylon.com/integrations/mcp",
+          "excerpt": "Point a supported MCP client at your regional Pylon MCP URL, sign in with OAuth or use an API token, and work issues, accounts, contacts, and your knowledge base from the AI tool you already use. For ChatGPT, you can also install Pylon’s native ChatGPT app from Setting",
+          "published_label": null
+        },
+        {
+          "value": "OAuth 2.0",
+          "url": "https://www.usepylon.com/blog/connect-pylon-chatgpt-mcp",
+          "excerpt": "s published in docs: US: https://mcp.usepylon.com EU: https://mcp.eu.usepylon.com Auth is OAuth 2.0 or an API token. Transport is Streamable HTTP (stateless). Source: Pylon MCP . ChatGPT side: install the Pylon app In ChatGPT, open Settings > Plugins . Some older views",
+          "published_label": "2 weeks ago"
+        },
+        {
+          "value": "API token",
+          "url": "https://www.usepylon.com/blog/connect-pylon-chatgpt-mcp",
+          "excerpt": "ocs: US: https://mcp.usepylon.com EU: https://mcp.eu.usepylon.com Auth is OAuth 2.0 or an API token. Transport is Streamable HTTP (stateless). Source: Pylon MCP . ChatGPT side: install the Pylon app In ChatGPT, open Settings > Plugins . Some older views, including very",
+          "published_label": "2 weeks ago"
+        },
+        {
+          "value": "API token",
+          "url": "https://docs.usepylon.com/pylon-docs/developer/api",
+          "excerpt": "programmatically access and take action on data within Pylon. Only Admin users can create API tokens. To learn more about Admins, see Roles & User Management . Some common use cases for our API include: Fetching information about customers Fetching information about is",
+          "published_label": null
+        }
+      ],
+      "reason": "Provisional extraction; validate scope and completeness against cited pages."
+    },
+    "credential_gate": {
+      "value": "unknown",
+      "status": "provisional",
+      "sources": [],
+      "evidence": [],
+      "reason": "No sufficiently specific official evidence extracted."
+    },
+    "api_surface": {
+      "value": "REST; moderate documented surface",
+      "status": "provisional",
+      "sources": [
+        "https://support.usepylon.com/articles/2407390554-connecting-to-the-pylon-mcp-server"
+      ],
+      "evidence": [
+        {
+          "value": [
+            "REST"
+          ],
+          "breadth": "moderate",
+          "url": "https://support.usepylon.com/articles/2407390554-connecting-to-the-pylon-mcp-server",
+          "excerpt": "How do I connect to the Pylon MCP Server? | Pylon Knowledge Base Docs Changelog Go to Pylon Docs Changelog Go to Pylon How do I connect to the Pylon MCP Server? Last updated 25 days ago The Pylon MCP server at https://mcp.usepylon.com provides AI tools access to your Pylon data. ",
+          "published_label": "3 weeks ago"
+        }
+      ],
+      "reason": "Provisional extraction; validate scope and completeness against cited pages."
+    },
+    "official_mcp": {
+      "value": "unknown",
+      "status": "provisional",
+      "sources": [
+        "https://support.usepylon.com/articles/2407390554-connecting-to-the-pylon-mcp-server",
+        "https://www.usepylon.com/integrations/mcp"
+      ],
+      "evidence": [
+        {
+          "value": "vendor_server",
+          "url": "https://support.usepylon.com/articles/2407390554-connecting-to-the-pylon-mcp-server",
+          "excerpt": "wledge Base Docs Changelog Go to Pylon Docs Changelog Go to Pylon How do I connect to the Pylon MCP Server? Last updated 25 days ago The Pylon MCP server at https://mcp.usepylon.com provides AI tools access to your Pylon data. The endpoint uses HTTPS, so the connection is protected with TLS. It uses OAuth authentication with your Pylon account. The applicati",
+          "published_label": "3 weeks ago",
+          "context_note": "Vendor-owned server statement; review date and access scope."
+        },
+        {
+          "value": "client_only",
+          "url": "https://www.usepylon.com/integrations/mcp",
+          "excerpt": "Pylon MCP server: connect ChatGPT, Claude, and Cursor The support metrics that matter in the age of AI Register now Pylon MCP server Connect ChatGPT, Claude, and Cursor to Pylon. Work issues, accounts, contacts, and your knowledge base with the permissions you already have. Thank you! Your submission has been received! Oops! Something went wrong while submitting the form. Trusted by 1,80",
+          "published_label": null,
+          "context_note": "Passage describes a client connection to external servers."
+        }
+      ],
+      "reason": "Conflicting or undated MCP evidence requires review."
+    },
+    "composio_toolkit": {
+      "value": "listed",
+      "status": "provisional",
+      "sources": [
+        "https://docs.composio.dev/toolkits/pylon_mcp"
+      ],
+      "evidence": [],
+      "reason": "Catalog match only; not vendor MCP evidence."
+    },
+    "verdict": {
+      "value": "unknown",
+      "status": "provisional",
+      "sources": [],
+      "evidence": [],
+      "reason": "No sufficiently specific official evidence extracted."
+    }
+  },
+  "validation": [
+    "Automatic extraction is provisional until independently reviewed",
+    "Unknown is not evidence of absence",
+    "Composio evidence cannot establish vendor MCP",
+    "Client-only and negated MCP statements are not vendor-server proof",
+    "API breadth is a text-coverage heuristic, not an endpoint census"
+  ]
+}

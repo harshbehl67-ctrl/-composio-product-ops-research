@@ -1,0 +1,242 @@
+{
+  "app": {
+    "number": 79,
+    "name": "Smartsheet",
+    "category": "Productivity and Project Management",
+    "hint": "smartsheet.com/developers"
+  },
+  "checked_at": "2026-11-23T18:15:37.092690+00:00",
+  "prior_source": "data/pass2/079.json",
+  "search_source": "data/pass4_search/079.json",
+  "new_candidates": [
+    {
+      "url": "https://developers.smartsheet.com/api/smartsheet/introduction",
+      "title": "Smartsheet API introduction (https://developers.smartsheet.com/api/smartsheet/introduction)",
+      "published_label": null
+    },
+    {
+      "url": "https://developers.smartsheet.com/api/smartsheet/openapi/home",
+      "title": "Home (https://developers.smartsheet.com/api/smartsheet/openapi/home)",
+      "published_label": null
+    },
+    {
+      "url": "https://developers.smartsheet.com/api/smartsheet/guides/getting-started",
+      "title": "Get Started (https://developers.smartsheet.com/api/smartsheet/guides/getting-started)",
+      "published_label": null
+    },
+    {
+      "url": "https://developers.smartsheet.com/api/smartsheet/openapi/tokens",
+      "title": "Tokens (https://developers.smartsheet.com/api/smartsheet/openapi/tokens)",
+      "published_label": null
+    },
+    {
+      "url": "https://developers.smartsheet.com/api/smartsheet/openapi/tokens/tokens-getorrefresh",
+      "title": "Gets or refreshes an access token (https://developers.smartsheet.com/api/smartsheet/openapi/tokens/tokens-getorrefresh)",
+      "published_label": null
+    },
+    {
+      "url": "https://developers.smartsheet.com/api/smartsheet/openapi/sheets/sheet",
+      "title": "Sheet (https://developers.smartsheet.com/api/smartsheet/openapi/sheets/sheet)",
+      "published_label": null
+    },
+    {
+      "url": "https://www.smartsheet.com/content-center/best-practices/tips-tricks/api-getting-started",
+      "title": "5 steps for getting started with the Smartsheet API | Smartsheet (https://www.smartsheet.com/content-center/best-practices/tips-tricks/api-getting-started)",
+      "published_label": null
+    },
+    {
+      "url": "https://developers.smartsheet.com/api/smartsheet/openapi/events",
+      "title": "Events (https://developers.smartsheet.com/api/smartsheet/openapi/events)",
+      "published_label": null
+    },
+    {
+      "url": "https://developers.smartsheet.com/api/smartsheet/openapi/workspaces/list-workspaces",
+      "title": "List workspaces (https://developers.smartsheet.com/api/smartsheet/openapi/workspaces/list-workspaces)",
+      "published_label": null
+    },
+    {
+      "url": "https://developers.smartsheet.com/api/smartsheet/openapi/serverinfo/serverinfo-get",
+      "title": "Gets application constants. (https://developers.smartsheet.com/api/smartsheet/openapi/serverinfo/serverinfo-get)",
+      "published_label": null
+    },
+    {
+      "url": "https://developers.smartsheet.com/api/smartsheet/guides/basics",
+      "title": "Basics (https://developers.smartsheet.com/api/smartsheet/guides/basics)",
+      "published_label": null
+    },
+    {
+      "url": "https://www.smartsheet.com/sites/default/files/2019-10/Smartsheet%20Has%20an%20API%20What%20is%20That%20and%20Why%20Would%20I%20Want%20to%20Use%20it.pdf",
+      "title": "Registration (https://www.smartsheet.com/sites/default/files/2019-10/Smartsheet%20Has%20an%20API%20What%20is%20That%20and%20Why%20Would%20I%20Want%20to%20Use%20it.pdf)",
+      "published_label": null
+    },
+    {
+      "url": "https://www.smartsheet.com/sites/default/files/haymaker/SmartsheetDeveloperProgramAgreement.pdf",
+      "title": "SMARTSHEET (https://www.smartsheet.com/sites/default/files/haymaker/SmartsheetDeveloperProgramAgreement.pdf)",
+      "published_label": "8 months ago"
+    },
+    {
+      "url": "https://www.smartsheet.com/sites/default/files/2023-09/tc3_the_smartsheet_api.pdf",
+      "title": "smartsheetENGAGE 20 (https://www.smartsheet.com/sites/default/files/2023-09/tc3_the_smartsheet_api.pdf)",
+      "published_label": "8 months ago"
+    }
+  ],
+  "selected": [
+    {
+      "url": "https://developers.smartsheet.com/api/smartsheet/openapi/tokens",
+      "title": "Tokens (https://developers.smartsheet.com/api/smartsheet/openapi/tokens)",
+      "published_label": null
+    },
+    {
+      "url": "https://developers.smartsheet.com/api/smartsheet/introduction",
+      "title": "Smartsheet API introduction (https://developers.smartsheet.com/api/smartsheet/introduction)",
+      "published_label": null
+    },
+    {
+      "url": "https://developers.smartsheet.com/api/smartsheet/openapi/tokens/tokens-getorrefresh",
+      "title": "Gets or refreshes an access token (https://developers.smartsheet.com/api/smartsheet/openapi/tokens/tokens-getorrefresh)",
+      "published_label": null
+    }
+  ],
+  "new_pages": [
+    {
+      "url": "https://developers.smartsheet.com/api/smartsheet/openapi/tokens",
+      "requested_url": "https://developers.smartsheet.com/api/smartsheet/openapi/tokens",
+      "status": 200,
+      "title": "Tokens (https://developers.smartsheet.com/api/smartsheet/openapi/tokens)",
+      "text": "Tokens",
+      "published_label": null
+    },
+    {
+      "url": "https://developers.smartsheet.com/api/smartsheet/introduction",
+      "requested_url": "https://developers.smartsheet.com/api/smartsheet/introduction",
+      "status": 200,
+      "title": "Smartsheet API introduction (https://developers.smartsheet.com/api/smartsheet/introduction)",
+      "text": "Smartsheet API introduction Skip to content Smartsheet API Introduction Get started Guides Event types Webhook event types Error codes Changelog OpenAPI Reference Alternate Email addresses Attachments Automation Rules Cell Images Cells Columns Comments Contacts Cross-sheet References Dashboards Discussions Events Favorites Folders Governance Group Members Groups Home Imports Proofs Reports Rows Search Send via Email Server Info Sharing Sheet Summary Sheets Tokens Update Requests Users Webhooks Workspaces Schemas Last updated 3 months ago Smartsheet API introduction Copy Copy for LLM Copy page as Markdown for LLMs View as Markdown Open this page as Markdown Open in ChatGPT Get insights from ChatGPT Open in Claude Get insights from Claude Connect to Cursor Install MCP server on Cursor Connect to VS Code Install MCP server on VS Code The Smartsheet API enables you to programmatically access and manage your organization's Smartsheet resources. The API Reference includes object schemas, operation specifications, and code snippets for Sheets , Folders , Users , and more. Required plan: Business, Enterprise, or Advanced Work Management Developer Agreement: The Developer Agreement governs the use of the Smartsheet API and Smartsheet software development kits (SDKs) 🚀 What's new! Smartsheet MCP server: Connect Smartsheet to AI clients like Claude, Cursor, and Codex, and use 30+ tools to manage your sheets, rows, columns, and more through natural-language prompts. Get the details here . Report CRUD endpoints: Manage the entire lifecycle of a report with the new endpoints . Explore creating a row report here . Asset path endpoints: Get locations of sheets, reports, dashboards, and folders, for context and to explore related assets. Learn more here . Try the API You can call operations from within the site via our Try it request editor. It's just that easy to start using the API! Go to the Get started article (next) for a quickstart video and guidance on making your first API call. Base URL Smartsheet: https://api.smartsheet.com/2.0 Important: Smartsheet Gov and Smartsheet Regions Europe use the respective base URLs: Smartsheet Gov: https://api.smartsheetgov.com/2.0 Smartsheet Regions Europe: https://api.smartsheet.eu/2.0 Smartsheet Regions Australia: https://api.smartsheet.au/2.0 Client SDKs Smartsheet provides client libraries that make it easy to call the API from your preferred language. The SDKs handle authentication, request formatting, and response parsing so you can focus on building your integration. You'll find SDK code examples alongside REST snippets throughout the API documentation. Language Reference Docs Project Repository JavaScript / Node.js - smartsheet-javascript-sdk Python docs smartsheet-python-sdk Java docs smartsheet-java-sdk C# docs smartsheet-csharp-sdk Ready to start using the API? What's next? Get started calling operations via our Try it request editor. Basics explains the fundamentals of using the Smartsheet API OpenAPI Reference : skip ahead to learn about resource endpoints and objects, including Sheets , Cells , Folders , and more Client SDKs : use our JavaScript, Python, Java, or C# libraries for a streamlined integration experience Was this helpful? Get started Next page On this page 🚀 What's new! Try the API Base URL Client SDKs What's next? Ask AI",
+      "published_label": null
+    },
+    {
+      "url": "https://developers.smartsheet.com/api/smartsheet/openapi/tokens/tokens-getorrefresh",
+      "requested_url": "https://developers.smartsheet.com/api/smartsheet/openapi/tokens/tokens-getorrefresh",
+      "status": 200,
+      "title": "Gets or refreshes an access token (https://developers.smartsheet.com/api/smartsheet/openapi/tokens/tokens-getorrefresh)",
+      "text": "Gets or refreshes an access token",
+      "published_label": null
+    }
+  ],
+  "claims": {
+    "auth": {
+      "value": [
+        "OAuth 2.0",
+        "API token"
+      ],
+      "sources": [
+        "https://developers.smartsheet.com/api/smartsheet/guides/basics/authentication",
+        "https://help.smartsheet.com/articles/2482389-generate-API-key"
+      ],
+      "evidence": [
+        {
+          "value": "OAuth 2.0",
+          "url": "https://developers.smartsheet.com/api/smartsheet/guides/basics/authentication",
+          "excerpt": "ction, it's typically best to use OAuth with Smartsheet. Note that the Smartsheet implementation of OAuth 2.0 is a 3-legged process, which requires human intervention. See OAuth Walkthrough for details. If your scenario is strictly machine-to-machine, execute raw token requests over HTTPS",
+          "published_label": null
+        },
+        {
+          "value": "API token",
+          "url": "https://help.smartsheet.com/articles/2482389-generate-API-key",
+          "excerpt": "Generate an API access token | Smartsheet Learning Center Skip to main content To learn more about Smartsheet Regions, click here .  USM Content User model Legacy model Info Generate an API access token A Sm",
+          "published_label": null
+        }
+      ],
+      "reason": "Provisional extraction: validate scope and completeness against the cited page."
+    },
+    "credential_gate": {
+      "value": "unknown",
+      "sources": [],
+      "evidence": [],
+      "reason": "No sufficiently specific positive evidence extracted; review targeted search results."
+    },
+    "api_surface": {
+      "value": [
+        "REST"
+      ],
+      "sources": [
+        "https://www.smartsheet.com/content-center/product-insights/product-updates/introducing-smartsheet-mcp-server",
+        "https://www.smartsheet.com/content-center/smartsheet-mcp-server-now-generally-available"
+      ],
+      "evidence": [
+        {
+          "value": "REST",
+          "url": "https://www.smartsheet.com/content-center/product-insights/product-updates/introducing-smartsheet-mcp-server",
+          "excerpt": " user-level permissions, and returns contextually rich, intelligent responses — powered by the same REST API infrastructure processing 1 billion calls daily. No custom integration code. No data exports. No copy-pasting sheet contents into a chat window and hoping for the best. How the MC",
+          "published_label": null
+        },
+        {
+          "value": "REST",
+          "url": "https://www.smartsheet.com/content-center/smartsheet-mcp-server-now-generally-available",
+          "excerpt": "tural-language questions about your project data. The MCP Server routes requests through Smartsheet REST API, pulling structured data with rich metadata — row relationships, column types, cell history, comments — all respecting the authenticated user's permissions. The MCP Server is also",
+          "published_label": null
+        }
+      ],
+      "reason": "Provisional extraction: validate scope and completeness against the cited page."
+    },
+    "official_mcp": {
+      "value": "yes (provisional)",
+      "sources": [
+        "https://www.smartsheet.com/content-center/product-insights/product-updates/introducing-smartsheet-mcp-server",
+        "https://help.smartsheet.com/articles/2483670-smartsheet-mcp-server",
+        "https://developers.smartsheet.com/ai-mcp/smartsheet/install-the-smartsheet-mcp-server",
+        "https://www.smartsheet.com/content-center/smartsheet-mcp-server-now-generally-available"
+      ],
+      "evidence": [
+        {
+          "value": "yes (provisional)",
+          "url": "https://www.smartsheet.com/content-center/product-insights/product-updates/introducing-smartsheet-mcp-server",
+          "excerpt": "Smartsheet API now speaks AI: Introducing Smartsheet MCP server for every MCP-compliant AI tool | Smartsheet Skip to main content Article Smartsheet API now speaks AI: Introducing Smartsheet MCP server for every MCP-complia",
+          "published_label": null,
+          "context_warning": "Review vendor ownership, dates, and scope."
+        },
+        {
+          "value": "yes (provisional)",
+          "url": "https://help.smartsheet.com/articles/2483670-smartsheet-mcp-server",
+          "excerpt": "Smartsheet MCP Server overview | Smartsheet Learning Center Skip to main content To learn more about Smartsheet Regions, click here .  USM Content User model Legacy model Info Smar",
+          "published_label": null,
+          "context_warning": "Review vendor ownership, dates, and scope."
+        },
+        {
+          "value": "yes (provisional)",
+          "url": "https://developers.smartsheet.com/ai-mcp/smartsheet/install-the-smartsheet-mcp-server",
+          "excerpt": "Install the Smartsheet MCP server Skip to content AI & MCP Introduction Quickstart Install the MCP server Connect Claude Code Connect Codex Connect Cursor Connect Gemini CLI Manually configure ",
+          "published_label": null,
+          "context_warning": "Review vendor ownership, dates, and scope."
+        },
+        {
+          "value": "yes (provisional)",
+          "url": "https://www.smartsheet.com/content-center/smartsheet-mcp-server-now-generally-available",
+          "excerpt": "Smartsheet MCP Server now generally available! | Smartsheet Skip to main content Article Smartsheet MCP Server now generally available! PM Product Marketing March 24, 2026 You can n",
+          "published_label": null,
+          "context_warning": "Review vendor ownership, dates, and scope."
+        }
+      ],
+      "reason": "Provisional; check source date, scope, and vendor ownership."
+    },
+    "composio_toolkit": {
+      "value": "listed",
+      "sources": [
+        "https://docs.composio.dev/toolkits/smartsheet"
+      ],
+      "evidence": [],
+      "reason": "Catalog match; scope needs review."
+    },
+    "verdict": {
+      "value": "unknown",
+      "sources": [],
+      "evidence": [],
+      "reason": "A supported access path, authentication method and API surface were not all extracted."
+    }
+  },
+  "validation": [
+    "All claims are provisional",
+    "No vendor MCP inference from Composio catalog",
+    "Negated MCP or client-only source is not counted as vendor-server proof"
+  ]
+}

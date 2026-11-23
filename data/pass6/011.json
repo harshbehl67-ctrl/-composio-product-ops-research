@@ -1,0 +1,133 @@
+{
+  "app": {
+    "number": 11,
+    "name": "Zendesk",
+    "category": "Support and Helpdesk",
+    "hint": "zendesk.com"
+  },
+  "replayed_at": "2026-11-23T18:17:21.310722+00:00",
+  "source_passes": [
+    "data/pass2/011.json",
+    "data/pass4/011.json"
+  ],
+  "source_search": "data/new_search/011.json",
+  "publication_date_note": "Published labels are retained exactly as supplied by search; missing labels are null. Relative labels must not be treated as exact publication dates.",
+  "claims": {
+    "auth": {
+      "value": [
+        "API token",
+        "Basic authentication",
+        "API key",
+        "OAuth 2.0"
+      ],
+      "sources": [
+        "https://support.zendesk.com/hc/en-us/articles/4408831452954-How-can-I-authenticate-API-requests",
+        "https://developer.zendesk.com/api-reference/introduction/security-and-auth/",
+        "https://support.zendesk.com/hc/en-us/articles/4408889192858-Managing-API-token-access-to-the-Zendesk-API",
+        "https://developer.zendesk.com/documentation/conversations/getting-started/api-authentication/",
+        "https://developer.zendesk.com/documentation/live-chat/getting-started/auth/"
+      ],
+      "evidence": [
+        {
+          "value": "API token",
+          "url": "https://support.zendesk.com/hc/en-us/articles/4408831452954-How-can-I-authenticate-API-requests",
+          "excerpt": " requests, use basic authentication with your email address and password, your email address and an API token, or an OAuth access token. All authentication methods set the authorization header differently. Credentials sent in the payload or URL aren't processed. Each option is listed belo",
+          "published_label": null
+        },
+        {
+          "value": "Basic authentication",
+          "url": "https://support.zendesk.com/hc/en-us/articles/4408831452954-How-can-I-authenticate-API-requests",
+          "excerpt": "r You must be a verified user to make authenticated API requests. To authenticate API requests, use basic authentication with your email address and password, your email address and an API token, or an OAuth access token. All authentication methods set the authorization header differently. Credentia",
+          "published_label": null
+        },
+        {
+          "value": "API token",
+          "url": "https://developer.zendesk.com/api-reference/introduction/security-and-auth/",
+          "excerpt": "enticated with an OAuth access token . The requests are not supported if the request uses a Zendesk API token. For more information and a tutorial, see Making cross-origin, browser-side API requests . Topics covered in this section: OAuth access token Global OAuth access token API token S",
+          "published_label": null
+        },
+        {
+          "value": "Basic authentication",
+          "url": "https://developer.zendesk.com/api-reference/introduction/security-and-auth/",
+          "excerpt": " to authenticate API requests. Note: If you're an existing Zendesk customer and are currently using basic authentication or API tokens, you will have to migrate to OAuth access tokens for improved security and compatibility with future requirements. If you plan on distributing an app, integration, o",
+          "published_label": null
+        },
+        {
+          "value": "API token",
+          "url": "https://support.zendesk.com/hc/en-us/articles/4408889192858-Managing-API-token-access-to-the-Zendesk-API",
+          "excerpt": "Managing API token access to the Zendesk API – Zendesk help Users can use an API token to authenticate API requests. API tokens are auto-generated passwords that you can use with your email address ",
+          "published_label": null
+        },
+        {
+          "value": "API key",
+          "url": "https://developer.zendesk.com/documentation/conversations/getting-started/api-authentication/",
+          "excerpt": "add an expiry time to your credentials. Both authentication methods will require you to generate an API key in Admin Center. For instructions on how to generate an API key, see app-scoped keys and integration-scoped keys in Zendesk help. Access scopes The table below summarizes the vari",
+          "published_label": null
+        },
+        {
+          "value": "Basic authentication",
+          "url": "https://developer.zendesk.com/documentation/conversations/getting-started/api-authentication/",
+          "excerpt": "ions API . Authentication methods The Sunshine Conversations API supports two authentication types: basic authentication and bearer tokens (via JWT). While basic authentication is recommended in most cases, JWTs may still be useful in certain circumstances, for instance if you would like to add an e",
+          "published_label": null
+        },
+        {
+          "value": "OAuth 2.0",
+          "url": "https://developer.zendesk.com/documentation/live-chat/getting-started/auth/",
+          "excerpt": "per Docs Live Chat Getting Started OAuth Authentication Copy page OAuth Authentication You must use OAuth2 to authenticate all your API requests to Zendesk Chat. OAuth provides a secure way for your application to access your account data without requiring sensitive information such as",
+          "published_label": null
+        }
+      ],
+      "reason": "Provisional extraction: validate scope and completeness against the cited page."
+    },
+    "credential_gate": {
+      "value": [
+        "administrator controls credential"
+      ],
+      "sources": [
+        "https://support.zendesk.com/hc/en-us/articles/4408889192858-Managing-API-token-access-to-the-Zendesk-API"
+      ],
+      "evidence": [
+        {
+          "value": "administrator controls credential",
+          "url": "https://support.zendesk.com/hc/en-us/articles/4408889192858-Managing-API-token-access-to-the-Zendesk-API",
+          "excerpt": "iewing audit logs for an API token (Enterprise) Generating API tokens To generate an API token, you must be an administrator and API token access must be turned on in your account. To generate an API token In Admin Center , click Apps and integrations in the sidebar, then select APIs > API tokens . A list of API tokens appears. Click Add API token . (Optional) Enter a Description fo",
+          "published_label": null
+        }
+      ],
+      "reason": "Provisional extraction: validate scope and completeness against the cited page."
+    },
+    "api_surface": {
+      "value": "unknown",
+      "sources": [],
+      "evidence": [],
+      "reason": "No sufficiently specific positive evidence extracted; review targeted search results."
+    },
+    "official_mcp": {
+      "value": "unknown",
+      "sources": [],
+      "evidence": [],
+      "reason": "No sufficiently specific positive evidence extracted; review targeted search results."
+    },
+    "composio_toolkit": {
+      "value": "listed",
+      "sources": [
+        "https://docs.composio.dev/toolkits/zendesk"
+      ],
+      "evidence": [],
+      "reason": "Catalog match; scope needs review."
+    },
+    "verdict": {
+      "value": "unknown",
+      "sources": [],
+      "evidence": [],
+      "reason": "A supported access path, authentication method and API surface were not all extracted."
+    }
+  },
+  "validation": [
+    "Automatic extraction is provisional and not a verified final claim",
+    "Unknown is not evidence of absence",
+    "No Composio-to-vendor-MCP inference",
+    "Basic authentication may be endpoint-specific",
+    "Client-only and negated statements are not positive MCP evidence"
+  ]
+}

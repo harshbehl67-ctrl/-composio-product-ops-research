@@ -1,0 +1,13 @@
+{
+  "checked_at": "2026-11-24",
+  "files": [
+    "06_data_seo.json",
+    "08_productivity.json",
+    "10_ai_media.json"
+  ],
+  "record_count": 30,
+  "error_count": 1,
+  "errors": [
+    "Expected 100 unique assigned apps, found 30 records and 30 unique names"
+  ]
+}

@@ -1,0 +1,508 @@
+{
+  "checked_at": "2026-11-24",
+  "method": "Read-only direct-request audit of current official rendered pages and official Markdown/plain-text variants for the assigned apps. No shared browser or search-snippet evidence was used. Hidden HTML, scripts, and client bundles were not accepted as evidence.",
+  "audit_summary": {
+    "flagged_uses": 46,
+    "actions": 28,
+    "replace": 28,
+    "keep": 0,
+    "reclassify": 0,
+    "record_update": 0,
+    "unresolved": 18,
+    "note": "All 28 non-iPayX uses have accessible official replacement citations; four Datadog/Sentry actions supersede interim normalized citations already present in the category records. All 18 iPayX uses remain unresolved because the official routes returned only a React shell and the Markdown variants returned 404; raw bundle matches were not accepted."
+  },
+  "actions": [
+    {
+      "app": "Xero",
+      "field": "auth",
+      "decision": "replace",
+      "old_url": "https://developer.xero.com/faq",
+      "old_quote": "Our API uses OAuth 2.0 which means you need to register your app to get a client id and client secret which you use to access the API.",
+      "new_url": "https://developer.xero.com/faq",
+      "new_title": "Xero Developer Frequently asked questions",
+      "new_quote": "The Xero API does not support basic API Key authentication. Our API uses OAuth 2.0 which means you need to register your app to get a client id and client secret which you use to access the API.",
+      "published_at": null,
+      "published_label": "undated",
+      "review_note": "The strict checker removed the main element because overflow-x-hidden matched its hidden-class regex. The passage is in a normal visible paragraph; this replacement adds the preceding explicit API-key negation while preserving OAuth registration and client credentials."
+    },
+    {
+      "app": "Xero",
+      "field": "auth",
+      "decision": "replace",
+      "old_url": "https://developer.xero.com/faq",
+      "old_quote": "All Xero access tokens expire after 30 minutes. Refresh tokens allow your app to obtain new access tokens without involving a user again.",
+      "new_url": "https://developer.xero.com/faq",
+      "new_title": "Xero Developer Frequently asked questions",
+      "new_quote": "No, we've implemented short-lived tokens with long-lived authorizations as is best practice for OAuth 2.0. All Xero access tokens expire after 30 minutes. Refresh tokens allow your app to obtain new access tokens without involving a user again. Alternatively, if you'd prefer not to have to manage a refresh token, you might be interested in the premium, Custom Connection option. It utilises the client credentials grant type and only requires your client id and client secret to request new access tokens.",
+      "published_at": null,
+      "published_label": "undated",
+      "review_note": "The strict checker falsely treated overflow-x-hidden as hidden. This full visible paragraph preserves 30-minute access tokens, refresh-token purpose, and the separately scoped Custom Connection alternative."
+    },
+    {
+      "app": "Xero",
+      "field": "credential_gate",
+      "decision": "replace",
+      "old_url": "https://developer.xero.com/faq",
+      "old_quote": "Yes, apps on Starter plan can use it with the demo organisation. You can connect, run the tools, and decide whether it's worth upgrading to Core. Real customer organisations need the Core plan or above.",
+      "new_url": "https://developer.xero.com/faq/remote-mcp",
+      "new_title": "Remote MCP FAQs — Xero Developer",
+      "new_quote": "Yes, apps on Starter plan can use it with the demo organisation. You can connect, run the tools, and decide whether it's worth upgrading to Core. Real customer organisations need the Core plan or above.",
+      "published_at": null,
+      "published_label": "undated",
+      "review_note": "The broad FAQ was affected by the overflow-x-hidden checker false positive. The current dedicated Remote MCP FAQ renders the same exact visible Starter/demo versus Core/real-organisation distinction."
+    },
+    {
+      "app": "Xero",
+      "field": "api_surface",
+      "decision": "replace",
+      "old_url": "https://developer.xero.com/faq",
+      "old_quote": "You can also use our OpenAPI spec to generate your own SDK.",
+      "new_url": "https://developer.xero.com/faq",
+      "new_title": "Xero Developer Frequently asked questions",
+      "new_quote": "We've got SDKs to cover the most used technologies in the community, but we'll never cater for everyone. If we don't support your particular tech then check out our developer forum archive , or connect with other developers on Stack Overflow . You can also use our OpenAPI spec to generate your own SDK.",
+      "published_at": null,
+      "published_label": "undated",
+      "review_note": "The strict checker falsely treated overflow-x-hidden as hidden. This complete visible paragraph retains the OpenAPI SDK-generation statement and its context."
+    },
+    {
+      "app": "Xero",
+      "field": "api_surface",
+      "decision": "replace",
+      "old_url": "https://developer.xero.com/faq",
+      "old_quote": "you can create more than one Invoice in a single PUT or POST Invoices API call.",
+      "new_url": "https://developer.xero.com/faq",
+      "new_title": "Xero Developer Frequently asked questions",
+      "new_quote": "You can do more than one thing in a single request: For example, you can create more than one Invoice in a single PUT or POST Invoices API call.",
+      "published_at": null,
+      "published_label": "undated",
+      "review_note": "The strict checker falsely treated overflow-x-hidden as hidden. This complete visible sentence restores the omitted lead-in and preserves multi-Invoice PUT/POST support."
+    },
+    {
+      "app": "Xero",
+      "field": "api_surface",
+      "decision": "replace",
+      "old_url": "https://developer.xero.com/faq",
+      "old_quote": "All major endpoints on the Payroll, Files and Assets APIs also support paging.",
+      "new_url": "https://developer.xero.com/faq",
+      "new_title": "Xero Developer Frequently asked questions",
+      "new_quote": "You can use pagination to retrieve line item details for 100 items (e.g. Invoices) at a time. Endpoints on the Accounting API that currently support pagination include invoices , contacts , bank transactions and manual journals . All major endpoints on the Payroll, Files and Assets APIs also support paging.",
+      "published_at": null,
+      "published_label": "undated",
+      "review_note": "The strict checker falsely treated overflow-x-hidden as hidden. This full visible paragraph preserves Accounting pagination examples and Payroll/Files/Assets paging support."
+    },
+    {
+      "app": "Xero",
+      "field": "official_mcp",
+      "decision": "replace",
+      "old_url": "https://developer.xero.com/faq",
+      "old_quote": "The Developer Remote MCP is for developers & builders building custom agents and apps. It can be used with any MCP compatible client and offers tools that reads and writes Xero data. It supports multiple organisations with user consent.",
+      "new_url": "https://developer.xero.com/faq/remote-mcp",
+      "new_title": "Remote MCP FAQs — Xero Developer",
+      "new_quote": "The Developer Remote MCP is for developers & builders building custom agents and apps. It can be used with any MCP compatible client and offers tools that reads and writes Xero data. It supports multiple organisations with user consent.",
+      "published_at": null,
+      "published_label": "undated",
+      "review_note": "The current dedicated Remote MCP FAQ renders this exact vendor-server description, including read/write tools and multi-organisation user consent; it replaces the broad FAQ citation affected by the checker false positive."
+    },
+    {
+      "app": "Xero",
+      "field": "official_mcp",
+      "decision": "replace",
+      "old_url": "https://developer.xero.com/faq",
+      "old_quote": "https://api.xero.com/mcp/v1",
+      "new_url": "https://developer.xero.com/faq/remote-mcp",
+      "new_title": "Remote MCP FAQs — Xero Developer",
+      "new_quote": "What's the server URL? https://api.xero.com/mcp/v1",
+      "published_at": null,
+      "published_label": "undated",
+      "review_note": "The current dedicated Remote MCP FAQ visibly pairs the endpoint with its question. This replaces the bare URL and avoids the broad-page hidden-class false positive."
+    },
+    {
+      "app": "Xero",
+      "field": "official_mcp",
+      "decision": "replace",
+      "old_url": "https://developer.xero.com/faq",
+      "old_quote": "Yes. The server authorises through Xero's OAuth 2.0 flow with PKCE, so your client needs to be able to start that flow.",
+      "new_url": "https://developer.xero.com/faq/remote-mcp",
+      "new_title": "Remote MCP FAQs — Xero Developer",
+      "new_quote": "Does my client need to support OAuth? Yes. The server authorises through Xero's OAuth 2.0 flow with PKCE, so your client needs to be able to start that flow.",
+      "published_at": null,
+      "published_label": "undated",
+      "review_note": "The current dedicated Remote MCP FAQ renders this exact question-and-answer passage, preserving OAuth 2.0 with PKCE and client-flow directionality."
+    },
+    {
+      "app": "Xero",
+      "field": "official_mcp",
+      "decision": "replace",
+      "old_url": "https://developer.xero.com/faq",
+      "old_quote": "No. Custom Connections apps are not eligible to access the Remote MCP Server.",
+      "new_url": "https://developer.xero.com/faq/remote-mcp",
+      "new_title": "Remote MCP FAQs — Xero Developer",
+      "new_quote": "Do I need a Custom Connection? No. Custom Connections apps are not eligible to access the Remote MCP Server.",
+      "published_at": null,
+      "published_label": "undated",
+      "review_note": "The current dedicated Remote MCP FAQ renders this exact scoped negation. The replacement keeps the Custom Connections exclusion explicit."
+    },
+    {
+      "app": "Xero",
+      "field": "verdict",
+      "decision": "replace",
+      "old_url": "https://developer.xero.com/faq",
+      "old_quote": "Our API uses OAuth 2.0 which means you need to register your app to get a client id and client secret which you use to access the API.",
+      "new_url": "https://developer.xero.com/faq",
+      "new_title": "Xero Developer Frequently asked questions",
+      "new_quote": "The Xero API does not support basic API Key authentication. Our API uses OAuth 2.0 which means you need to register your app to get a client id and client secret which you use to access the API.",
+      "published_at": null,
+      "published_label": "undated",
+      "review_note": "The strict checker removed the main element because overflow-x-hidden matched its hidden-class regex. The passage is in a normal visible paragraph; this replacement adds the preceding explicit API-key negation while preserving OAuth registration and client credentials."
+    },
+    {
+      "app": "Xero",
+      "field": "verdict",
+      "decision": "replace",
+      "old_url": "https://developer.xero.com/faq",
+      "old_quote": "All major endpoints on the Payroll, Files and Assets APIs also support paging.",
+      "new_url": "https://developer.xero.com/faq",
+      "new_title": "Xero Developer Frequently asked questions",
+      "new_quote": "You can use pagination to retrieve line item details for 100 items (e.g. Invoices) at a time. Endpoints on the Accounting API that currently support pagination include invoices , contacts , bank transactions and manual journals . All major endpoints on the Payroll, Files and Assets APIs also support paging.",
+      "published_at": null,
+      "published_label": "undated",
+      "review_note": "The strict checker falsely treated overflow-x-hidden as hidden. This full visible paragraph preserves Accounting pagination examples and Payroll/Files/Assets paging support."
+    },
+    {
+      "app": "Xero",
+      "field": "verdict",
+      "decision": "replace",
+      "old_url": "https://developer.xero.com/faq",
+      "old_quote": "Yes, apps on Starter plan can use it with the demo organisation. You can connect, run the tools, and decide whether it's worth upgrading to Core. Real customer organisations need the Core plan or above.",
+      "new_url": "https://developer.xero.com/faq/remote-mcp",
+      "new_title": "Remote MCP FAQs — Xero Developer",
+      "new_quote": "Yes, apps on Starter plan can use it with the demo organisation. You can connect, run the tools, and decide whether it's worth upgrading to Core. Real customer organisations need the Core plan or above.",
+      "published_at": null,
+      "published_label": "undated",
+      "review_note": "The broad FAQ was affected by the overflow-x-hidden checker false positive. The current dedicated Remote MCP FAQ renders the same exact visible Starter/demo versus Core/real-organisation distinction."
+    },
+    {
+      "app": "Xero",
+      "field": "official_mcp",
+      "decision": "replace",
+      "old_url": "https://developer.xero.com/faq/AI-Toolkit",
+      "old_quote": "Xero's MCP Server will work with any MCP client that supports local/STDIO MCP servers.",
+      "new_url": "https://developer.xero.com/faq/AI-Toolkit",
+      "new_title": "AI Toolkit FAQ - Xero Developer",
+      "new_quote": "Can I use any LLM to access the MCP Server? Xero's MCP Server will work with any MCP client that supports local/STDIO MCP servers. Depending on your MCP Client you might be able to support many different LLMs. All testing has been done using Claude Desktop and Cursor.",
+      "published_at": null,
+      "published_label": "undated",
+      "review_note": "The strict checker falsely treated overflow-x-hidden as hidden. This complete visible question-and-answer passage preserves local/STDIO client support and identifies the tested clients."
+    },
+    {
+      "app": "Xero",
+      "field": "auth",
+      "decision": "replace",
+      "old_url": "https://developer.xero.com/faq/oauth2",
+      "old_quote": "Xero supports the Proof Key for Code Exchange (PKCE) extension to the authorization code flow. This allows native apps to securely connect to our API without needing to store a client secret. Single page apps are not currently supported.",
+      "new_url": "https://developer.xero.com/faq/oauth2",
+      "new_title": "OAuth 2.0 FAQ - Xero Developer",
+      "new_quote": "Will OAuth 2.0 support desktop/mobile/single-page apps that can’t keep a client secret confidential? Xero supports the Proof Key for Code Exchange (PKCE) extension to the authorization code flow. This allows native apps to securely connect to our API without needing to store a client secret. Single page apps are not currently supported.",
+      "published_at": null,
+      "published_label": "undated",
+      "review_note": "The strict checker falsely treated overflow-x-hidden as hidden. This complete visible question-and-answer passage preserves native-app PKCE, no stored client secret, and the single-page-app negation."
+    },
+    {
+      "app": "Xero",
+      "field": "auth",
+      "decision": "replace",
+      "old_url": "https://developer.xero.com/faq/oauth2",
+      "old_quote": "Unused refresh tokens expire after 60 days. If you don’t refresh your access token within 60 days the user will need to reauthorise your app.",
+      "new_url": "https://developer.xero.com/faq/oauth2",
+      "new_title": "OAuth 2.0 FAQ - Xero Developer",
+      "new_quote": "What is the expiration for a refresh token? Unused refresh tokens expire after 60 days. If you don’t refresh your access token within 60 days the user will need to reauthorise your app. When you perform a token refresh, you should replace your existing refresh token with the new one returned in the response. If, for whatever reason, you don't receive the response you can retry refreshing your existing refresh token for a grace period of 30 minutes.",
+      "published_at": null,
+      "published_label": "undated",
+      "review_note": "The strict checker falsely treated overflow-x-hidden as hidden. This complete visible FAQ block preserves 60-day unused expiry, reauthorization, refresh-token rotation, and the 30-minute retry grace period."
+    },
+    {
+      "app": "Sentry",
+      "field": "official_mcp",
+      "decision": "replace",
+      "old_url": "https://docs.sentry.io/product/snapshots/agentic-workflow.md",
+      "old_quote": "Sentry's [MCP server](https://mcp.sentry.dev) connects your AI assistant to Sentry over the Model Context Protocol. Follow the setup and authentication instructions there for your client (Claude Code, Cursor, VS Code, and others).\n\nConnect using one of these endpoints:\n\n* `https://mcp.sentry.dev/mcp`: base endpoint\n* `https://mcp.sentry.dev/mcp/{organizationSlug}`: scoped to one organization\n* `https://mcp.sentry.dev/mcp/{organizationSlug}/{projectSlug}`: scoped to one project (recommended)\n\nThe first connection starts an OAuth flow to link your Sentry account.",
+      "new_url": "https://docs.sentry.io/product/snapshots/agentic-workflow/",
+      "new_title": "Agentic Workflow | Sentry Docs",
+      "new_quote": "Sentry's MCP server connects your AI assistant to Sentry over the Model Context Protocol. Follow the setup and authentication instructions there for your client (Claude Code, Cursor, VS Code, and others). The Sentry MCP has been optimized to retrieve Snapshot results for agentic workflows. If you'd like, you can also fetch the data via the REST API and expose scripts to agents. Connect using one of these endpoints: https://mcp.sentry.dev/mcp : base endpoint https://mcp.sentry.dev/mcp/{organizationSlug} : scoped to one organization https://mcp.sentry.dev/mcp/{organizationSlug}/{projectSlug} : scoped to one project (recommended) The first connection starts an OAuth flow to link your Sentry account.",
+      "published_at": null,
+      "published_label": "undated",
+      "review_note": "The current Markdown page adds intervening Snapshot/REST text. The replacement uses the contiguous rendered HTML passage and preserves Sentry-operated MCP directionality, base/organization/project endpoints, and first-connection OAuth."
+    },
+    {
+      "app": "Snowflake",
+      "field": "auth",
+      "decision": "replace",
+      "old_url": "https://docs.snowflake.com/en/user-guide/programmatic-access-tokens.md",
+      "old_quote": "For human users (with TYPE=PERSON), you do not need any special privileges to generate, modify, drop, or display a programmatic access token for yourself.\n\nBy default, a programmatic access token expires after 15 days.",
+      "new_url": "https://docs.snowflake.com/en/user-guide/programmatic-access-tokens",
+      "new_title": "Using programmatic access tokens for authentication | Snowflake Documentation",
+      "new_quote": "For human users (with TYPE=PERSON), you do not need any special privileges to generate, modify, drop, or display a programmatic access token for yourself .",
+      "published_at": null,
+      "published_label": "undated",
+      "review_note": "The old quote joined distant privilege and expiration sections, and the Markdown artifact contains an inline HTML span. This exact rendered privilege sentence supports self-management of a human user's own PAT; the same current page separately retains the 15-day default expiration statement."
+    },
+    {
+      "app": "Sentry",
+      "field": "credential_gate",
+      "decision": "replace",
+      "old_url": "https://sentry.io/pricing/",
+      "old_quote": "developer For solo devs working on small projects Free $0 Limited to one user One user Error Monitoring and Tracing Alerts and notifications via email 10 custom dashboards MCP access",
+      "new_url": "https://sentry.io/pricing/index.md",
+      "new_title": "Pricing: Free Developer Plan, Pay as You Grow",
+      "new_quote": "### Developer (Free) For solo devs working on small projects. - One user - Error Monitoring and Tracing - Alerts and notifications via email - 10 custom dashboards - MCP access",
+      "published_at": null,
+      "published_label": "undated",
+      "review_note": "The prior normalized citation flattened hidden pricing-card HTML. The official pricing Markdown variant is directly accessible, and this exact contiguous plan section preserves the free Developer plan, solo-developer scope, one-user limit, and MCP access."
+    },
+    {
+      "app": "Sentry",
+      "field": "verdict",
+      "decision": "replace",
+      "old_url": "https://sentry.io/pricing/",
+      "old_quote": "developer For solo devs working on small projects Free $0 Limited to one user One user Error Monitoring and Tracing Alerts and notifications via email 10 custom dashboards MCP access",
+      "new_url": "https://sentry.io/pricing/index.md",
+      "new_title": "Pricing: Free Developer Plan, Pay as You Grow",
+      "new_quote": "### Developer (Free) For solo devs working on small projects. - One user - Error Monitoring and Tracing - Alerts and notifications via email - 10 custom dashboards - MCP access",
+      "published_at": null,
+      "published_label": "undated",
+      "review_note": "The prior normalized citation flattened hidden pricing-card HTML. The official pricing Markdown variant is directly accessible, and this exact contiguous plan section preserves the free Developer plan, solo-developer scope, one-user limit, and MCP access."
+    },
+    {
+      "app": "Supabase",
+      "field": "api_surface",
+      "decision": "replace",
+      "old_url": "https://supabase.com/docs/guides/api",
+      "old_quote": "Supabase auto-generates an API directly from your database schema allowing you to connect to your database through a restful interface, directly from the browser.\n\nSupabase provides a RESTful API using [PostgREST](https://postgrest.org/), a thin API layer on top of Postgres.",
+      "new_url": "https://supabase.com/docs/guides/api",
+      "new_title": "Data REST API | Supabase Docs",
+      "new_quote": "Supabase auto-generates an API directly from your database schema allowing you to connect to your database through a restful interface, directly from the browser.",
+      "published_at": "2026-11-18",
+      "published_label": "updated",
+      "review_note": "The old quote joined separate paragraphs. This exact visible sentence supports schema-generated REST access; the current page displays Updated Nov 18, 2026."
+    },
+    {
+      "app": "Supabase",
+      "field": "auth",
+      "decision": "replace",
+      "old_url": "https://supabase.com/docs/reference/api/introduction",
+      "old_quote": "**OAuth2:** OAuth2 allows your application to generate tokens on behalf of a Supabase user, providing secure and limited access to their account without requiring their credentials.",
+      "new_url": "https://supabase.com/docs/reference/api/introduction",
+      "new_title": "Introduction | Management API Reference | Supabase Docs",
+      "new_quote": "OAuth2 allows your application to generate tokens on behalf of a Supabase user, providing secure and limited access to their account without requiring their credentials.",
+      "published_at": null,
+      "published_label": "undated",
+      "review_note": "The old quote retained Markdown bold markers. The current rendered Management API page contains this exact visible OAuth2 user-delegation sentence."
+    },
+    {
+      "app": "Vercel",
+      "field": "auth",
+      "decision": "replace",
+      "old_url": "https://vercel.com/docs/accounts/access-tokens",
+      "old_quote": "Every token carries a scope that determines which resources it can reach.\n\nPass the token as a Bearer token in the `Authorization` header of your request.",
+      "new_url": "https://vercel.com/docs/accounts/access-tokens",
+      "new_title": "Access tokens",
+      "new_quote": "Use a scoped token with the API Pass the token as a Bearer token in the Authorization header of your request.",
+      "published_at": "2026-11-14",
+      "published_label": "updated",
+      "review_note": "The old quote joined distant sections and retained Markdown backticks. This contiguous rendered heading-and-sentence passage preserves scoped-token and Bearer-header meaning; the official page remains updated 2026-11-14."
+    },
+    {
+      "app": "Datadog",
+      "field": "credential_gate",
+      "decision": "replace",
+      "old_url": "https://www.datadoghq.com/pricing/",
+      "old_quote": "Starting At $ 500 Per 500 credits, per month* Start Free Trial",
+      "new_url": "https://www.datadoghq.com/pricing/",
+      "new_title": "Datadog Pricing",
+      "new_quote": "Start Free Trial",
+      "published_at": null,
+      "published_label": "undated",
+      "review_note": "The prior normalized citation joined price text to a responsive CTA that is not contiguous after hidden nodes are excluded. This exact standalone Start Free Trial call to action remains in accessible server-rendered main pricing content and supports self-service trial access without asserting a duration."
+    },
+    {
+      "app": "Datadog",
+      "field": "verdict",
+      "decision": "replace",
+      "old_url": "https://www.datadoghq.com/pricing/",
+      "old_quote": "Starting At $ 500 Per 500 credits, per month* Start Free Trial",
+      "new_url": "https://www.datadoghq.com/pricing/",
+      "new_title": "Datadog Pricing",
+      "new_quote": "Start Free Trial",
+      "published_at": null,
+      "published_label": "undated",
+      "review_note": "The prior normalized citation joined price text to a responsive CTA that is not contiguous after hidden nodes are excluded. This exact standalone Start Free Trial call to action remains in accessible server-rendered main pricing content and supports self-service trial access without asserting a duration."
+    },
+    {
+      "app": "MongoDB Atlas",
+      "field": "auth",
+      "decision": "replace",
+      "old_url": "https://www.mongodb.com/docs/atlas/api/api-authentication.md",
+      "old_quote": "Service accounts provide improved security over API (Application Programming Interface) keys by using the industry standard [OAuth 2.0](https://oauth.net/2/) protocol with the [Client Credentials flow.](https://www.oauth.com/oauth2-servers/access-tokens/client-credentials/)\n\nEach service account belongs to exactly one organization, and you can grant it access to any number of projects within that organization.",
+      "new_url": "https://www.mongodb.com/docs/atlas/api/api-authentication/",
+      "new_title": "Atlas Administration API Authentication Methods - Atlas - MongoDB Docs",
+      "new_quote": "Service accounts provide improved security over API keys by using the industry standard OAuth 2.0 protocol with the Client Credentials flow. A service account lets you manage permissions and create access tokens that authenticate API requests. Each service account has a client ID and a rotatable secret that function as a username and a password for creating access tokens.",
+      "published_at": null,
+      "published_label": "undated",
+      "review_note": "The old quote stitched distant Markdown passages. The current rendered official page contains this contiguous OAuth 2.0 Client Credentials and token-creation passage; organization/project scope remains documented separately on the same page."
+    },
+    {
+      "app": "Neo4j",
+      "field": "auth",
+      "decision": "replace",
+      "old_url": "https://neo4j.com/docs/aura/api/authentication/",
+      "old_quote": "The Aura API uses OAuth 2.0 for API authentication.\n\nAll tiers can create Aura API credentials. API credentials are linked to the user account, inheriting its capabilities and roles. The API credentials never expire unless you delete them.",
+      "new_url": "https://neo4j.com/docs/aura/api/authentication/",
+      "new_title": "Authentication - Neo4j Aura",
+      "new_quote": "The Aura API uses OAuth 2.0 for API authentication. Creating credentials All tiers can create Aura API credentials. API credentials are linked to the user account, inheriting its capabilities and roles. The API credentials never expire unless you delete them.",
+      "published_at": null,
+      "published_label": "undated",
+      "review_note": "The current rendered guide inserts the visible Creating credentials heading between the old quote's paragraphs. This contiguous visible-text replacement preserves OAuth 2.0, all-tier creation, inherited capabilities and roles, and non-expiry unless deleted."
+    },
+    {
+      "app": "Neo4j",
+      "field": "official_mcp",
+      "decision": "replace",
+      "old_url": "https://neo4j.com/docs/mcp/current/installation/",
+      "old_quote": "## Install with PyPI\n\n```bash\nuvx neo4j-mcp-server\n```",
+      "new_url": "https://neo4j.com/docs/mcp/current/installation/",
+      "new_title": "Installation - Neo4j MCP",
+      "new_quote": "Install with PyPI uvx neo4j-mcp-server",
+      "published_at": null,
+      "published_label": "undated",
+      "review_note": "The old citation reproduced Markdown fences rather than rendered page text. The current official HTML page visibly presents the PyPI heading and uvx neo4j-mcp-server command."
+    }
+  ],
+  "unresolved": [
+    {
+      "app": "iPayX",
+      "field": "auth",
+      "old_url": "https://www.ipayx.ai/docs/api",
+      "old_quote": "Every request requires a Bearer token in the `Authorization` header. Keys start with `ipx_live_`.",
+      "reason": "Direct request returned only the iPayX React shell/title; the queued passage was not present in accessible visible text. The official .md variant returned 404. Requires later sequential browser review; raw bundle/script matches were not accepted."
+    },
+    {
+      "app": "iPayX",
+      "field": "api_surface",
+      "old_url": "https://www.ipayx.ai/docs/api",
+      "old_quote": "REST API · v1",
+      "reason": "Direct request returned only the iPayX React shell/title; the queued passage was not present in accessible visible text. The official .md variant returned 404. Requires later sequential browser review; raw bundle/script matches were not accepted."
+    },
+    {
+      "app": "iPayX",
+      "field": "api_surface",
+      "old_url": "https://www.ipayx.ai/docs/api",
+      "old_quote": "3 endpoints\n\naudit · rates · audit/document",
+      "reason": "Direct request returned only the iPayX React shell/title; the queued passage was not present in accessible visible text. The official .md variant returned 404. Requires later sequential browser review; raw bundle/script matches were not accepted."
+    },
+    {
+      "app": "iPayX",
+      "field": "api_surface",
+      "old_url": "https://www.ipayx.ai/docs/api",
+      "old_quote": "Signed webhooks\n\nHMAC-SHA256 · audit.completed",
+      "reason": "Direct request returned only the iPayX React shell/title; the queued passage was not present in accessible visible text. The official .md variant returned 404. Requires later sequential browser review; raw bundle/script matches were not accepted."
+    },
+    {
+      "app": "iPayX",
+      "field": "verdict",
+      "old_url": "https://www.ipayx.ai/docs/api",
+      "old_quote": "Every request requires a Bearer token in the `Authorization` header. Keys start with `ipx_live_`.",
+      "reason": "Direct request returned only the iPayX React shell/title; the queued passage was not present in accessible visible text. The official .md variant returned 404. Requires later sequential browser review; raw bundle/script matches were not accepted."
+    },
+    {
+      "app": "iPayX",
+      "field": "verdict",
+      "old_url": "https://www.ipayx.ai/docs/api",
+      "old_quote": "3 endpoints\n\naudit · rates · audit/document",
+      "reason": "Direct request returned only the iPayX React shell/title; the queued passage was not present in accessible visible text. The official .md variant returned 404. Requires later sequential browser review; raw bundle/script matches were not accepted."
+    },
+    {
+      "app": "iPayX",
+      "field": "credential_gate",
+      "old_url": "https://www.ipayx.ai/docs/mcp-server",
+      "old_quote": "**Free tier:** 10 audits / day per API key.",
+      "reason": "Direct request returned only the iPayX React shell/title; the queued passage was not present in accessible visible text. The official .md variant returned 404. Requires later sequential browser review; raw bundle/script matches were not accepted."
+    },
+    {
+      "app": "iPayX",
+      "field": "credential_gate",
+      "old_url": "https://www.ipayx.ai/docs/mcp-server",
+      "old_quote": "**Paid tier ($199):** unlimited audits, priority routing.",
+      "reason": "Direct request returned only the iPayX React shell/title; the queued passage was not present in accessible visible text. The official .md variant returned 404. Requires later sequential browser review; raw bundle/script matches were not accepted."
+    },
+    {
+      "app": "iPayX",
+      "field": "official_mcp",
+      "old_url": "https://www.ipayx.ai/docs/mcp-server",
+      "old_quote": "Production MCP: `https://hvujzsdwcoweirroubeh.supabase.co/functions/v1/mcp-server`",
+      "reason": "Direct request returned only the iPayX React shell/title; the queued passage was not present in accessible visible text. The official .md variant returned 404. Requires later sequential browser review; raw bundle/script matches were not accepted."
+    },
+    {
+      "app": "iPayX",
+      "field": "auth",
+      "old_url": "https://www.ipayx.ai/mcp-config",
+      "old_quote": "No account or API key required. Transaction audits and forensic reports share 3 free audits per IP per calendar month (UTC). Rate lookups and comparisons are free without an audit quota.",
+      "reason": "Direct request returned only the iPayX React shell/title; the queued passage was not present in accessible visible text. The official .md variant returned 404. Requires later sequential browser review; raw bundle/script matches were not accepted."
+    },
+    {
+      "app": "iPayX",
+      "field": "credential_gate",
+      "old_url": "https://www.ipayx.ai/mcp-config",
+      "old_quote": "No account or API key required. Transaction audits and forensic reports share 3 free audits per IP per calendar month (UTC). Rate lookups and comparisons are free without an audit quota.",
+      "reason": "Direct request returned only the iPayX React shell/title; the queued passage was not present in accessible visible text. The official .md variant returned 404. Requires later sequential browser review; raw bundle/script matches were not accepted."
+    },
+    {
+      "app": "iPayX",
+      "field": "official_mcp",
+      "old_url": "https://www.ipayx.ai/mcp-config",
+      "old_quote": "One MCP server. Claude, ChatGPT, Grok, Perplexity, DeepSeek, Qwen, MiniMax, Copilot, Cursor, n8n — real-time forensic FX audit.",
+      "reason": "Direct request returned only the iPayX React shell/title; the queued passage was not present in accessible visible text. The official .md variant returned 404. Requires later sequential browser review; raw bundle/script matches were not accepted."
+    },
+    {
+      "app": "iPayX",
+      "field": "official_mcp",
+      "old_url": "https://www.ipayx.ai/mcp-config",
+      "old_quote": "MCP Server URL\n\n`https://mcp.ipayx.ai/mcp` Copy",
+      "reason": "Direct request returned only the iPayX React shell/title; the queued passage was not present in accessible visible text. The official .md variant returned 404. Requires later sequential browser review; raw bundle/script matches were not accepted."
+    },
+    {
+      "app": "iPayX",
+      "field": "official_mcp",
+      "old_url": "https://www.ipayx.ai/mcp-config",
+      "old_quote": "Read-only server. It never moves money.",
+      "reason": "Direct request returned only the iPayX React shell/title; the queued passage was not present in accessible visible text. The official .md variant returned 404. Requires later sequential browser review; raw bundle/script matches were not accepted."
+    },
+    {
+      "app": "iPayX",
+      "field": "credential_gate",
+      "old_url": "https://www.ipayx.ai/pricing",
+      "old_quote": "Free audit included. Upgrade to PDF reports or production-grade API.",
+      "reason": "Direct request returned only the iPayX React shell/title; the queued passage was not present in accessible visible text. The official .md variant returned 404. Requires later sequential browser review; raw bundle/script matches were not accepted."
+    },
+    {
+      "app": "iPayX",
+      "field": "credential_gate",
+      "old_url": "https://www.ipayx.ai/pricing",
+      "old_quote": "You have 3 free audits.",
+      "reason": "Direct request returned only the iPayX React shell/title; the queued passage was not present in accessible visible text. The official .md variant returned 404. Requires later sequential browser review; raw bundle/script matches were not accepted."
+    },
+    {
+      "app": "iPayX",
+      "field": "credential_gate",
+      "old_url": "https://www.ipayx.ai/pricing",
+      "old_quote": "$299USD / mo",
+      "reason": "Direct request returned only the iPayX React shell/title; the queued passage was not present in accessible visible text. The official .md variant returned 404. Requires later sequential browser review; raw bundle/script matches were not accepted."
+    },
+    {
+      "app": "iPayX",
+      "field": "verdict",
+      "old_url": "https://www.ipayx.ai/pricing",
+      "old_quote": "Free audit included. Upgrade to PDF reports or production-grade API.",
+      "reason": "Direct request returned only the iPayX React shell/title; the queued passage was not present in accessible visible text. The official .md variant returned 404. Requires later sequential browser review; raw bundle/script matches were not accepted."
+    }
+  ]
+}

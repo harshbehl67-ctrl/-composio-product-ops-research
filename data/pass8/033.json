@@ -1,0 +1,96 @@
+{
+  "app": {
+    "number": 33,
+    "name": "LinkedIn Ads",
+    "category": "Marketing, Ads, Email and Social",
+    "hint": "learn.microsoft.com/linkedin/marketing"
+  },
+  "replayed_at": "2026-11-23T18:41:04.710081+00:00",
+  "source_passes": [
+    "data/pass2/033.json",
+    "data/pass4/033.json"
+  ],
+  "source_searches": [
+    "data/new_search/033.json",
+    "data/pass4_search/033.json"
+  ],
+  "publication_date_note": "Search publication labels are retained exactly; null means no label was available. Relative labels are not exact dates.",
+  "claims": {
+    "auth": {
+      "value": [
+        "OAuth 2.0"
+      ],
+      "status": "provisional",
+      "sources": [
+        "https://learn.microsoft.com/en-us/linkedin/marketing/integrations/ads/getting-started?view=li-lms-2026-07",
+        "https://learn.microsoft.com/en-gb/linkedin/shared/authentication/getting-access",
+        "https://learn.microsoft.com/he-il/linkedin/shared/authentication/getting-access?context=linkedin%2Fcontext&view=li-lms-2026-10"
+      ],
+      "evidence": [
+        {
+          "value": "OAuth 2.0",
+          "url": "https://learn.microsoft.com/en-us/linkedin/marketing/integrations/ads/getting-started?view=li-lms-2026-07",
+          "excerpt": "migrated and have questions, submit a request on the LinkedIn Developer Support Portal . OAuth 2.0 and Permission Scopes All LinkedIn API endpoints have access limitations called permission \"Scopes\", which define what your app can do on a user's behalf. OAuth 2.0 Scop",
+          "published_label": null
+        },
+        {
+          "value": "OAuth 2.0",
+          "url": "https://learn.microsoft.com/en-gb/linkedin/shared/authentication/getting-access",
+          "excerpt": "ting Access to LinkedIn APIs Feedback Summarize this article for me The LinkedIn API uses OAuth 2.0 for user authorization and API authentication. Applications must be authorized and authenticated before they can fetch data from LinkedIn or get access to member data. T",
+          "published_label": null
+        },
+        {
+          "value": "OAuth 2.0",
+          "url": "https://learn.microsoft.com/he-il/linkedin/shared/authentication/getting-access?context=linkedin%2Fcontext&view=li-lms-2026-10",
+          "excerpt": "××¨××× ××ª××××ª . Getting Access to LinkedIn APIs ××©×× The LinkedIn API uses OAuth 2.0 for user authorization and API authentication. Applications must be authorized and authenticated before they can fetch data from LinkedIn or get access to member data. T",
+          "published_label": "1.4 years ago"
+        }
+      ],
+      "reason": "Provisional extraction; validate scope and completeness against cited pages."
+    },
+    "credential_gate": {
+      "value": "unknown",
+      "status": "provisional",
+      "sources": [],
+      "evidence": [],
+      "reason": "No sufficiently specific official evidence extracted."
+    },
+    "api_surface": {
+      "value": "unknown",
+      "status": "provisional",
+      "sources": [],
+      "evidence": [],
+      "reason": "No sufficiently specific official evidence extracted."
+    },
+    "official_mcp": {
+      "value": "unknown",
+      "status": "provisional",
+      "sources": [],
+      "evidence": [],
+      "reason": "No sufficiently specific official evidence extracted."
+    },
+    "composio_toolkit": {
+      "value": "listed",
+      "status": "provisional",
+      "sources": [
+        "https://docs.composio.dev/toolkits/linkedin_ads"
+      ],
+      "evidence": [],
+      "reason": "Catalog match only; not vendor MCP evidence."
+    },
+    "verdict": {
+      "value": "unknown",
+      "status": "provisional",
+      "sources": [],
+      "evidence": [],
+      "reason": "No sufficiently specific official evidence extracted."
+    }
+  },
+  "validation": [
+    "Automatic extraction is provisional until independently reviewed",
+    "Unknown is not evidence of absence",
+    "Composio evidence cannot establish vendor MCP",
+    "Client-only and negated MCP statements are not vendor-server proof",
+    "API breadth is a text-coverage heuristic, not an endpoint census"
+  ]
+}

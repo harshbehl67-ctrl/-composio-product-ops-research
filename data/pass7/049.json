@@ -1,0 +1,70 @@
+{
+  "app": {
+    "number": 49,
+    "name": "Amazon Selling Partner",
+    "category": "Ecommerce",
+    "hint": "developer-docs.amazon.com/sp-api"
+  },
+  "replayed_at": "2026-11-23T18:19:18.889183+00:00",
+  "source_passes": [
+    "data/pass2/049.json",
+    "data/pass4/049.json"
+  ],
+  "source_search": "data/new_search/049.json",
+  "publication_date_note": "Published labels are retained exactly as supplied by search; missing labels are null. Relative labels must not be treated as exact publication dates.",
+  "claims": {
+    "auth": {
+      "value": "unknown",
+      "sources": [],
+      "evidence": [],
+      "reason": "No sufficiently specific positive evidence extracted; review targeted search results."
+    },
+    "credential_gate": {
+      "value": "unknown",
+      "sources": [],
+      "evidence": [],
+      "reason": "No sufficiently specific positive evidence extracted; review targeted search results."
+    },
+    "api_surface": {
+      "value": "unknown",
+      "sources": [],
+      "evidence": [],
+      "reason": "No sufficiently specific positive evidence extracted; review targeted search results."
+    },
+    "official_mcp": {
+      "value": "yes (provisional)",
+      "sources": [
+        "https://sell.amazon.com/blog/announcements/amazons-selling-partner-plugin-ads-mcp"
+      ],
+      "evidence": [
+        {
+          "value": "yes (provisional)",
+          "url": "https://sell.amazon.com/blog/announcements/amazons-selling-partner-plugin-ads-mcp",
+          "excerpt": "swer questions but actively help manage holiday operations and advertising: the Amazon Selling Partner plugin and the Amazon Ads MCP Server. Used together in AWS Quick, they let sellers check inventory, adjust campaigns, optimize listings, act on performance data, and more. And there’s never been a",
+          "published_label": "4 days ago",
+          "context_warning": "Review vendor ownership, dates, and scope."
+        }
+      ],
+      "reason": "Provisional; check source date, scope, and vendor ownership."
+    },
+    "composio_toolkit": {
+      "value": "unknown",
+      "sources": [],
+      "evidence": [],
+      "reason": "No exact or reviewed alias match; absence is not established."
+    },
+    "verdict": {
+      "value": "unknown",
+      "sources": [],
+      "evidence": [],
+      "reason": "A supported access path, authentication method and API surface were not all extracted."
+    }
+  },
+  "validation": [
+    "Automatic extraction is provisional and not a verified final claim",
+    "Unknown is not evidence of absence",
+    "No Composio-to-vendor-MCP inference",
+    "Basic authentication may be endpoint-specific",
+    "Client-only and negated statements are not positive MCP evidence"
+  ]
+}

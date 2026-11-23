@@ -1,0 +1,777 @@
+{
+  "records": [
+    {
+      "number": 6,
+      "app": "Podio",
+      "category": "CRM and Sales",
+      "summary": "Podio provides a broad RESTful JSON API to free and paid accounts and operates a remote MCP server at https://mcp.podio.com/mcp. The MCP server is in beta and supports Podio account OAuth sign-in or a dedicated Podio API key configured as OAuth client credentials.",
+      "blocker": "MCP is beta and the shared default credentials are limited to approximately 30-40 test requests; production use should use a dedicated Podio API key. REST remains available to free accounts within base rate limits unless an API add-on is purchased.",
+      "next_action": "For MCP, connect an MCP-compatible client to https://mcp.podio.com/mcp, authorize with a Podio account for evaluation, and create a dedicated Podio API key with redirect URL https://mcp.podio.com for production-oriented testing. Continue using OAuth2/app authentication for direct REST integration.",
+      "fields": {
+        "auth": {
+          "value": [
+            "OAuth2 server-side, client-side, username/password, or app authentication flow",
+            "Podio application API key and Client ID/Client Secret",
+            "OAuth2 access token in Authorization header; refresh token supported"
+          ],
+          "status": "checked",
+          "reason": "Podio documents OAuth2, application registration with Client ID and Client Secret, four OAuth flows, access/refresh tokens, and the Authorization: OAuth2 ACCESS_TOKEN header. The authentication page is undated.",
+          "evidence": [
+            {
+              "url": "https://developers.podio.com/authentication",
+              "title": "How to Authenticate with Podio API",
+              "quote": "The Podio API uses the OAuth2 protocol for authentication. This allows external apps to request authorization to Podio without having direct access to the user's password.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            },
+            {
+              "url": "https://developers.podio.com/authentication",
+              "title": "Podio Application Registration",
+              "quote": "Before you can use the Podio API you must register your application. Your application is assigned a unique identifier, called \"Client ID\", together with a \"Client Secret\".",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            },
+            {
+              "url": "https://developers.podio.com/authentication",
+              "title": "Podio Access Token Header",
+              "quote": "Authorization: OAuth2 ACCESS_TOKEN",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            }
+          ]
+        },
+        "credential_gate": {
+          "value": "self_serve_free",
+          "gate_class": "self_serve_free",
+          "status": "checked",
+          "reason": "Podio's FAQ explicitly says both paid and free accounts have full API access with no extra charge within base rate limits. The FAQ is undated; higher limits require a paid API add-on.",
+          "evidence": [
+            {
+              "url": "https://developers.podio.com/index/faq",
+              "title": "Podio API Frequently Asked Questions",
+              "quote": "The Podio API is available to use for both paid and free Podio accounts. Both have full access to the API and the same base rate Limit A and Limit B apply.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            }
+          ]
+        },
+        "api_surface": {
+          "value": "REST; broad documented surface",
+          "api_types": [
+            "REST"
+          ],
+          "breadth": "broad",
+          "status": "checked",
+          "reason": "Podio documents a RESTful JSON API with GET, POST, PUT, and DELETE operations and API areas spanning applications, contacts, files, items, tasks, calendar, conversations, search, organizations, users, and more. The API pages are undated.",
+          "evidence": [
+            {
+              "url": "https://developers.podio.com/index/api",
+              "title": "Podio API Conventions and Structure",
+              "quote": "The API is available at https://api.podio.com. It is RESTful and uses json as the exchange format. SSL is mandatory and used for all communication. OAuth2 is used for authorization and authentication.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            },
+            {
+              "url": "https://developers.podio.com/doc",
+              "title": "Podio API Reference",
+              "quote": "Our API is split up into different areas, that each contains a subset of methods grouped by functionality.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            }
+          ]
+        },
+        "official_mcp": {
+          "value": "vendor_server",
+          "mcp_mode": "remote",
+          "server_url": "https://mcp.podio.com/mcp",
+          "transport": "Streamable HTTP",
+          "authentication": [
+            "Podio account OAuth authorization using shared default credentials for limited evaluation",
+            "Podio API key Client ID and Client Secret used as MCP OAuth client credentials"
+          ],
+          "lifecycle": "Beta; shared default credentials are limited to approximately 30-40 requests, with a dedicated API key recommended for production use.",
+          "status": "checked",
+          "reason": "Progress's official Podio integration guide identifies Podio's MCP server, live endpoint, OAuth endpoints, and beta status. The official mcp.podio.com health response independently reports service Podio External MCP Server, streamable-http transport, and oauth2_authorization_code. The guide and live health response are undated; this is a vendor-operated remote server, not client-only guidance.",
+          "evidence": [
+            {
+              "url": "https://www.progress.com/podio/documentation/using-podio/ai-and-mcp/podio-mcp-server-integration-guide",
+              "title": "Podio MCP Server — Integration Guide",
+              "quote": "The Podio MCP (Model Context Protocol) Server connects AI assistants — **ChatGPT, Microsoft Copilot Studio, Claude Desktop**, and any other MCP-compatible platform — directly to your Podio data.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            },
+            {
+              "url": "https://www.progress.com/podio/documentation/using-podio/ai-and-mcp/podio-mcp-server-integration-guide",
+              "title": "Podio MCP Server endpoint and OAuth",
+              "quote": "- **MCP Server URL:** `https://mcp.podio.com/mcp`\n- **Authorization URL:** `https://mcp.podio.com/oauth/authorize`\n- **Token URL:** `https://mcp.podio.com/oauth/token`",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            },
+            {
+              "url": "https://www.progress.com/podio/documentation/using-podio/ai-and-mcp/podio-mcp-server-integration-guide",
+              "title": "Podio MCP Server beta notice",
+              "quote": "The Podio MCP Server is currently in *beta* and is intended for evaluation and testing. Features, limits, and behavior may change before general availability.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            },
+            {
+              "url": "https://mcp.podio.com/health",
+              "title": "Podio MCP server health metadata",
+              "quote": "{\"status\":\"healthy\",\"service\":\"Podio External MCP Server\",\"version\":\"2.0.0\",\"mode\":\"mcp_external\",\"transport\":\"streamable-http\",\"auth\":\"oauth2_authorization_code\",\"sessionMode\":\"stateless\",\"sessions\":\"n/a\",\"timestamp\":\"2026-11-23T22:04:19.570Z\"}",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated live health response"
+            }
+          ]
+        },
+        "composio_toolkit": {
+          "value": "listed_exact",
+          "status": "checked",
+          "reason": "The current Composio toolkit catalog contains an exact Podio row with the PODIO slug and OAuth2 authentication. The catalog is undated.",
+          "evidence": [
+            {
+              "url": "https://docs.composio.dev/toolkits.md",
+              "title": "Composio Toolkits Catalog",
+              "quote": "| [Podio](/toolkits/podio.md) | `PODIO` | 143 | 0 | OAUTH2 | No |",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            }
+          ]
+        },
+        "verdict": {
+          "value": "documented_build_candidate",
+          "status": "checked",
+          "reason": "Free-account REST access, documented OAuth2/API-key setup, and a broad API reference make Podio a documented REST build candidate; the official remote MCP server adds a beta integration path. The vendor API and MCP guide are undated, and MCP evaluation limits require rechecking.",
+          "evidence": [
+            {
+              "url": "https://developers.podio.com/index/faq",
+              "title": "Podio API Frequently Asked Questions",
+              "quote": "The Podio API is available to use for both paid and free Podio accounts. Both have full access to the API",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            },
+            {
+              "url": "https://developers.podio.com/index/api",
+              "title": "Podio API Conventions and Structure",
+              "quote": "The API is available at https://api.podio.com. It is RESTful and uses json as the exchange format.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "number": 58,
+      "app": "Sherlock",
+      "category": "Data, SEO and Scraping",
+      "summary": "Sherlock is the open-source Sherlock Project CLI for username searches across social networks. Official documentation describes local package, Docker, and source installation, not a vendor API or MCP server; a third-party Apify Actor wraps the CLI.",
+      "blocker": "No Sherlock-operated public API, credential flow, or MCP server is documented. The Apify Actor API belongs to a third-party wrapper, and no exact or reviewed alias listing for Sherlock appears in Composio's complete catalog retrieved 2026-11-24.",
+      "next_action": "Prototype with pipx install sherlock-project, Docker, or a source install and run the CLI locally. If hosted execution is required, evaluate the netmilk/sherlock Apify Actor separately rather than assuming a Sherlock vendor API or MCP server.",
+      "fields": {
+        "auth": {
+          "value": [
+            "No account or API authentication for local CLI execution"
+          ],
+          "status": "checked",
+          "reason": "The official installation and usage documentation describes a locally installed CLI and does not document a Sherlock account, API key, or direct vendor API authentication method. The empty array is scoped to the absence of a direct vendor API; authentication on upstream social networks is outside this product surface. The installation page has sitemap lastmod 2026-02-28; the raw README is undated apart from its repository commit context.",
+          "evidence": [
+            {
+              "url": "https://sherlockproject.xyz/installation",
+              "title": "Sherlock installation",
+              "quote": "pipx install sherlock-project",
+              "retrieved_at": "2026-11-24",
+              "published_at": "2026-02-28",
+              "published_label": "Sitemap lastmod 2026-02-28"
+            },
+            {
+              "url": "https://raw.githubusercontent.com/sherlock-project/sherlock/master/docs/README.md",
+              "title": "Sherlock Project README",
+              "quote": "To search for only one user:\n\nsherlock user123",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated file; repository master commit 2026-11-01",
+              "verification_method": "browser_and_raw_official_source_review",
+              "verification_note": "The official repository/community Actor documentation contains this exact wording and code example; it remains third-party evidence, not a Sherlock-operated API.",
+              "verified_at": "2026-11-24",
+              "source_review": "The official repository/community Actor documentation contains this exact wording and code example; it remains third-party evidence, not a Sherlock-operated API."
+            }
+          ]
+        },
+        "credential_gate": {
+          "value": "no_public_api",
+          "status": "checked",
+          "reason": "Official access is through local package, Docker, or source installation, with no vendor account or API-key gate documented. The complete official documentation index lists installation, usage, supported sites, contribution, and adding-sites pages only. The installation page has sitemap lastmod 2026-02-28; the documentation index is undated.",
+          "evidence": [
+            {
+              "url": "https://sherlockproject.xyz/installation",
+              "title": "Sherlock installation",
+              "quote": "docker run --rm -t sherlock/sherlock user123",
+              "retrieved_at": "2026-11-24",
+              "published_at": "2026-02-28",
+              "published_label": "Sitemap lastmod 2026-02-28"
+            },
+            {
+              "url": "https://sherlockproject.xyz/llms.txt",
+              "title": "Sherlock Project documentation index",
+              "quote": "- [Installation](https://sherlockproject.xyz/installation.md)\n- [Usage](https://sherlockproject.xyz/usage.md)\n- [List of supported sites](https://sherlockproject.xyz/sites.md): Sherlock currently supports **400+** sites\n- [How to contribute](https://sherlockproject.xyz/contribute.md): Join over **200+** contributers to improve Sherlock. Each and every contribution is greatly valued!\n- [Adding sites](https://sherlockproject.xyz/adding-sites.md)",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            }
+          ],
+          "gate_class": "no_public_api",
+          "details": {
+            "gate_class": "no_public_api"
+          }
+        },
+        "api_surface": {
+          "value": "No public API documented",
+          "status": "checked",
+          "reason": "The official product is a CLI that writes local results. The repository's Apify Actor example calls api.apify.com and is explicitly a wrapper associated with netmilk, not a Sherlock-operated API. The official documentation index contains no API reference. The README and Actor file are undated apart from repository master commit 2026-11-01.",
+          "evidence": [
+            {
+              "url": "https://raw.githubusercontent.com/sherlock-project/sherlock/master/docs/README.md",
+              "title": "Sherlock Project README",
+              "quote": "Accounts found will be stored in an individual text file with the corresponding username (e.g user123.txt).",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated file; repository master commit 2026-11-01"
+            },
+            {
+              "url": "https://raw.githubusercontent.com/sherlock-project/sherlock/master/.actor/README.md",
+              "title": "Sherlock Apify Actor wrapper",
+              "quote": "This Actor wraps the Sherlock Project to provide serverless username reconnaissance across social networks in the cloud.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated file; repository master commit 2026-11-01",
+              "verification_method": "browser_and_raw_official_source_review",
+              "verification_note": "The official repository/community Actor documentation contains this exact wording and code example; it remains third-party evidence, not a Sherlock-operated API.",
+              "verified_at": "2026-11-24",
+              "source_review": "The official repository/community Actor documentation contains this exact wording and code example; it remains third-party evidence, not a Sherlock-operated API."
+            },
+            {
+              "url": "https://raw.githubusercontent.com/sherlock-project/sherlock/master/.actor/README.md",
+              "title": "Sherlock Apify Actor API example",
+              "quote": "https://api.apify.com/v2/acts/YOUR_USERNAME~sherlock/run",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated file; repository master commit 2026-11-01"
+            }
+          ],
+          "api_types": [],
+          "breadth": "no_public_api",
+          "details": {
+            "api_types": [],
+            "breadth": "no_public_api"
+          }
+        },
+        "official_mcp": {
+          "value": "no_vendor_server_documented",
+          "review_basis": "scoped_documentation_review",
+          "mcp_mode": "unknown",
+          "status": "checked",
+          "reason": "Thorough targeted review of Sherlock's complete official documentation index, sitemap, installation and usage pages, and the complete sherlock-project/sherlock repository tree and source archive at master commit 2026-11-01 found no vendor MCP server, MCP-client integration, endpoint, package, or documentation. The product is a local CLI; the repository's Apify Actor is a third-party wrapper. This is a point-in-time finding scoped to Sherlock's documented product surface, not a universal claim that no Sherlock-related server can exist. The documentation index is undated.",
+          "evidence": [
+            {
+              "url": "https://sherlockproject.xyz/llms.txt",
+              "title": "Sherlock Project documentation index — no MCP server page listed",
+              "quote": "# Sherlock Project\n\n- [Installation](https://sherlockproject.xyz/installation.md)\n- [Usage](https://sherlockproject.xyz/usage.md)\n- [List of supported sites](https://sherlockproject.xyz/sites.md): Sherlock currently supports **400+** sites\n- [How to contribute](https://sherlockproject.xyz/contribute.md): Join over **200+** contributers to improve Sherlock. Each and every contribution is greatly valued!\n- [Adding sites](https://sherlockproject.xyz/adding-sites.md)",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            },
+            {
+              "url": "https://api.github.com/repos/sherlock-project/sherlock/git/trees/c588d7c8b476df9f9c84912a05d1430fb8cdcdae?recursive=1",
+              "title": "Sherlock complete repository tree — no MCP-named files",
+              "quote": "\"truncated\":false",
+              "retrieved_at": "2026-11-24",
+              "published_at": "2026-11-01",
+              "published_label": "Repository master commit 2026-11-01",
+              "verification_method": "complete_official_tree_and_source_archive_review",
+              "verification_note": "The complete tree contains 67 entries and no path containing mcp or model-context; an in-memory scan of the complete source archive found zero MCP or Model Context Protocol text hits."
+            },
+            {
+              "url": "https://sherlockproject.xyz/installation",
+              "title": "Sherlock installation — no MCP server documented",
+              "quote": "pipx install sherlock-project",
+              "retrieved_at": "2026-11-24",
+              "published_at": "2026-02-28",
+              "published_label": "Sitemap lastmod 2026-02-28"
+            }
+          ]
+        },
+        "composio_toolkit": {
+          "value": "not_listed",
+          "status": "checked",
+          "reason": "The complete official Composio toolkit catalog retrieved 2026-11-24 was searched for Sherlock and reviewed aliases; unrelated products named Sherlock were excluded and no exact or alias listing was found. This is a point-in-time catalog result. The catalog is undated.",
+          "evidence": [
+            {
+              "url": "https://docs.composio.dev/toolkits.md",
+              "title": "Composio complete toolkit catalog",
+              "quote": "Composio supports 1841 toolkits for building AI agents.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            }
+          ]
+        },
+        "verdict": {
+          "value": "wrapper_or_cli",
+          "status": "checked",
+          "reason": "The direct product is an installable MIT-licensed CLI with local execution and output, while the only documented hosted API example is a third-party Apify Actor wrapper. With no Sherlock-operated public API, wrapper_or_cli is the consistent verdict. The installation page has sitemap lastmod 2026-02-28; raw repository files are undated apart from master commit 2026-11-01.",
+          "evidence": [
+            {
+              "url": "https://sherlockproject.xyz/installation",
+              "title": "Sherlock installation",
+              "quote": "pipx install sherlock-project",
+              "retrieved_at": "2026-11-24",
+              "published_at": "2026-02-28",
+              "published_label": "Sitemap lastmod 2026-02-28"
+            },
+            {
+              "url": "https://raw.githubusercontent.com/sherlock-project/sherlock/master/docs/README.md",
+              "title": "Sherlock Project README",
+              "quote": "Hunt down social media accounts by username across 400+ social networks",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated file; repository master commit 2026-11-01"
+            },
+            {
+              "url": "https://raw.githubusercontent.com/sherlock-project/sherlock/master/.actor/README.md",
+              "title": "Sherlock Apify Actor wrapper",
+              "quote": "This Actor wraps the Sherlock Project to provide serverless username reconnaissance across social networks in the cloud.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated file; repository master commit 2026-11-01",
+              "verification_method": "browser_and_raw_official_source_review",
+              "verification_note": "The official repository/community Actor documentation contains this exact wording and code example; it remains third-party evidence, not a Sherlock-operated API.",
+              "verified_at": "2026-11-24",
+              "source_review": "The official repository/community Actor documentation contains this exact wording and code example; it remains third-party evidence, not a Sherlock-operated API."
+            }
+          ]
+        }
+      }
+    },
+    {
+      "number": 59,
+      "app": "Waterfall.io",
+      "category": "Data, SEO and Scraping",
+      "summary": "Waterfall.io is Waterfall Data's B2B contact and company enrichment REST API. It uses x-api-key authentication, requires reviewed approval and contract access, and documents direct HTTP Agent Skills rather than an MCP server.",
+      "blocker": "API access is approval-only and priced after a customer-data benchmark; initial keys come through the team and sub-key management can require Enterprise enablement. No vendor MCP server was documented in the official index, and no exact or reviewed alias Composio listing appears in the complete catalog retrieved 2026-11-24.",
+      "next_action": "Submit a representative sample for the free benchmark and request API access. After approval, obtain the master key, confirm enabled endpoints and key-management permissions, and test the documented contact-enrichment quickstart over direct HTTPS rather than assuming MCP support.",
+      "fields": {
+        "auth": {
+          "value": [
+            "api_key"
+          ],
+          "status": "checked",
+          "reason": "Current authentication documentation, quickstart, and OpenAPI metadata require the Waterfall API key in x-api-key. The homepage still contains older x-waterfall-api-key examples, but the current dated documentation and OpenAPI specification consistently use x-api-key, so the homepage examples are treated as stale/conflicting. Authentication has sitemap lastmod 2026-10-23; the homepage is undated.",
+          "evidence": [
+            {
+              "url": "https://docs.waterfall.io/v1/authentication",
+              "title": "Waterfall API authentication",
+              "quote": "Authenticate data and account API requests with your Waterfall API key in the `x-api-key` header. Contact the team for API access and pricing.",
+              "retrieved_at": "2026-11-24",
+              "published_at": "2026-10-23",
+              "published_label": "Sitemap lastmod 2026-10-23"
+            },
+            {
+              "url": "https://docs.waterfall.io/v1/api-keys-create",
+              "title": "Waterfall API key creation",
+              "quote": "To access the API, provide your API key in `x-api-key`.",
+              "retrieved_at": "2026-11-24",
+              "published_at": "2026-10-23",
+              "published_label": "Sitemap lastmod 2026-10-23"
+            },
+            {
+              "url": "https://www.waterfall.io/",
+              "title": "Waterfall.io homepage",
+              "quote": "--header 'x-waterfall-api-key: YOURKEY'",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            }
+          ]
+        },
+        "credential_gate": {
+          "value": "partner_or_sales",
+          "status": "checked",
+          "reason": "The official access page says API access is available by approval and every request is reviewed by the team. The OpenAPI description says the API key is provided in the contract, and pricing is quoted after benchmarking the customer's records. The free benchmark is an evaluation service, not a self-serve API trial. The access page has sitemap lastmod 2026-10-23; website pricing is undated.",
+          "evidence": [
+            {
+              "url": "https://docs.waterfall.io/v1/book-demo",
+              "title": "Get Waterfall API access",
+              "quote": "API access is available by approval. Request a key through the email field on the Waterfall website, or book a call to discuss your workflow. A member of our team reviews every access request.",
+              "retrieved_at": "2026-11-24",
+              "published_at": "2026-10-23",
+              "published_label": "Sitemap lastmod 2026-10-23"
+            },
+            {
+              "url": "https://docs.waterfall.io/v1/api-keys-create",
+              "title": "Waterfall OpenAPI contract access",
+              "quote": "To access the API, you need the API key provided in your contract. You can ask for multiple API keys for different teams' usage.",
+              "retrieved_at": "2026-11-24",
+              "published_at": "2026-10-23",
+              "published_label": "Sitemap lastmod 2026-10-23"
+            },
+            {
+              "url": "https://www.waterfall.io/pricing",
+              "title": "Waterfall.io pricing",
+              "quote": "Per-credit rates depend on the endpoints you use and the volume you commit to. We quote after running a benchmark on a sample of your own records, because a list price set against someone else's file tells you nothing about what your file will cost.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            },
+            {
+              "url": "https://www.waterfall.io/pricing",
+              "title": "Waterfall.io free benchmark",
+              "quote": "Before anything is signed we run a benchmark on your data at no cost: send a sample of records your current vendors missed and we return coverage and cost per result against what you are paying today.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            }
+          ],
+          "gate_class": "partner_or_sales",
+          "details": {
+            "gate_class": "partner_or_sales"
+          }
+        },
+        "api_surface": {
+          "value": "REST; moderate documented surface",
+          "status": "checked",
+          "reason": "Waterfall publishes an OpenAPI 3.1 specification, version 1.7.0, for HTTPS endpoints at api.waterfall.io. The current introduction lists thirteen focused contact/company enrichment, verification, reporting, webhook, and key-management families with sync and async behavior. Although the vendor calls the spec broad, moderate better reflects a specialized enrichment suite rather than a general platform API. The introduction has sitemap lastmod 2026-10-23; the OpenAPI Spec page has sitemap lastmod 2026-03-03.",
+          "evidence": [
+            {
+              "url": "https://docs.waterfall.io/v1/openapi-spec",
+              "title": "Waterfall OpenAPI specification",
+              "quote": "The full OpenAPI 3.1 specification for the Waterfall API is available for download. Use it to generate client SDKs, import into Postman, or explore the schema.",
+              "retrieved_at": "2026-11-24",
+              "published_at": "2026-03-03",
+              "published_label": "Sitemap lastmod 2026-03-03"
+            },
+            {
+              "url": "https://docs.waterfall.io/v1/api-keys-create",
+              "title": "Waterfall OpenAPI metadata",
+              "quote": "openapi: 3.1.0\ninfo:\n  title: Waterfall\n  version: 1.7.0",
+              "retrieved_at": "2026-11-24",
+              "published_at": "2026-10-23",
+              "published_label": "Sitemap lastmod 2026-10-23"
+            },
+            {
+              "url": "https://docs.waterfall.io/",
+              "title": "Waterfall API introduction",
+              "quote": "| [Prospector](https://docs.waterfall.io/v1/prospector-launcher.md) | Async | Find people at a company by domain and title filters, with available emails and optional phones. |\n| [Search Contact](https://docs.waterfall.io/v1/search-contact-launcher.md) | Sync | Find profiles by LinkedIn, company, or supported company-set and role filters. Emails and phones are excluded. |\n| [Search Company](https://docs.waterfall.io/v1/search-company-launcher.md) | Sync | Find companies by industry, headquarters country, or headcount range. Preview. |\n| [Contact Enrichment](https://docs.waterfall.io/v1/contact-enrichment-launcher.md) | Async | Find profile data and available contact details from an email, LinkedIn identifier, or name and company domain. |",
+              "retrieved_at": "2026-11-24",
+              "published_at": "2026-10-23",
+              "published_label": "Sitemap lastmod 2026-10-23"
+            }
+          ],
+          "api_types": [
+            "REST"
+          ],
+          "breadth": "moderate",
+          "details": {
+            "api_types": [
+              "REST"
+            ],
+            "breadth": "moderate"
+          }
+        },
+        "official_mcp": {
+          "value": "no_vendor_server_documented",
+          "review_basis": "scoped_documentation_review",
+          "mcp_mode": "unknown",
+          "status": "checked",
+          "reason": "Thorough targeted review of Waterfall's complete official documentation index, sitemap, full llms-full.txt, OpenAPI 3.1 specification, Agent Skills overview, direct-API guide, and FAQ found no vendor MCP server or MCP-client configuration. The documented agent path is instructions for direct HTTP API calls with x-api-key, not MCP. This is a point-in-time finding scoped to Waterfall's documented product surface, not a universal absence claim. The index is undated; skills and sitemap entries carry lastmod 2026-10-23.",
+          "evidence": [
+            {
+              "url": "https://docs.waterfall.io/llms.txt",
+              "title": "Waterfall documentation index — no MCP server page listed",
+              "quote": "- [Use Waterfall with an agent](https://docs.waterfall.io/v1/skills-overview.md): Run contact and company lookups with an agent, or build Waterfall into your application using the official API skills.\n- [Run a Waterfall lookup with an agent](https://docs.waterfall.io/v1/skills-direct-api.md): Use the waterfall-direct-api skill to retrieve contact or company data and verify emails through Waterfall HTTP API calls.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            },
+            {
+              "url": "https://docs.waterfall.io/v1/skills-overview",
+              "title": "Waterfall Agent Skills — no MCP server documented",
+              "quote": "Use an agent to look up contact and company data, verify emails, or build Waterfall into your application. Waterfall provides two skills: one for making API calls during a task, and one for creating integration code you maintain.",
+              "retrieved_at": "2026-11-24",
+              "published_at": "2026-10-23",
+              "published_label": "Sitemap lastmod 2026-10-23"
+            },
+            {
+              "url": "https://docs.waterfall.io/v1/skills-direct-api",
+              "title": "Waterfall direct API skill — HTTP calls, no MCP server documented",
+              "quote": "Use `waterfall-direct-api` when you want an agent to retrieve data for a task now: a contact lookup, a company lookup, a verification check, or a small evaluation. The skill guides HTTP requests, authentication, result handling, pagination, and errors.",
+              "retrieved_at": "2026-11-24",
+              "published_at": "2026-10-23",
+              "published_label": "Sitemap lastmod 2026-10-23"
+            },
+            {
+              "url": "https://docs.waterfall.io/v1/openapi-spec",
+              "title": "Waterfall OpenAPI specification — no MCP server endpoint documented",
+              "quote": "The full OpenAPI 3.1 specification for the Waterfall API is available for download. Use it to generate client SDKs, import into Postman, or explore the schema.",
+              "retrieved_at": "2026-11-24",
+              "published_at": "2026-03-03",
+              "published_label": "Sitemap lastmod 2026-03-03",
+              "verification_method": "official_full_docs_and_openapi_text_review",
+              "verification_note": "The complete llms-full.txt and downloaded OpenAPI specification contained zero MCP or Model Context Protocol text hits."
+            }
+          ]
+        },
+        "composio_toolkit": {
+          "value": "not_listed",
+          "status": "checked",
+          "reason": "The complete official Composio toolkit catalog retrieved 2026-11-24 was searched for Waterfall.io, Waterfall, and reviewed slug variants; no exact or alias listing was found. The product was kept scoped to Waterfall Data's enrichment API rather than unrelated Waterfall products. This is a point-in-time catalog result; the catalog is undated.",
+          "evidence": [
+            {
+              "url": "https://docs.composio.dev/toolkits.md",
+              "title": "Composio complete toolkit catalog",
+              "quote": "Composio supports 1841 toolkits for building AI agents.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            }
+          ]
+        },
+        "verdict": {
+          "value": "partner_outreach",
+          "status": "checked",
+          "reason": "The checked gate is partner_or_sales because API access requires team review, a contract key, and benchmark-based pricing. That controlled vocabulary requires partner_outreach. The free benchmark does not create a self-serve trial, and the REST API is otherwise documented. The access page has sitemap lastmod 2026-10-23; website pricing is undated.",
+          "evidence": [
+            {
+              "url": "https://docs.waterfall.io/v1/book-demo",
+              "title": "Get Waterfall API access",
+              "quote": "API access is available by approval. Request a key through the email field on the Waterfall website, or book a call to discuss your workflow. A member of our team reviews every access request.",
+              "retrieved_at": "2026-11-24",
+              "published_at": "2026-10-23",
+              "published_label": "Sitemap lastmod 2026-10-23"
+            },
+            {
+              "url": "https://docs.waterfall.io/v1/api-keys-create",
+              "title": "Waterfall OpenAPI contract access",
+              "quote": "To access the API, you need the API key provided in your contract.",
+              "retrieved_at": "2026-11-24",
+              "published_at": "2026-10-23",
+              "published_label": "Sitemap lastmod 2026-10-23"
+            },
+            {
+              "url": "https://www.waterfall.io/pricing",
+              "title": "Waterfall.io pricing",
+              "quote": "We quote after running a benchmark on a sample of your own records, because a list price set against someone else's file tells you nothing about what your file will cost.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "number": 98,
+      "app": "Mermaid CLI",
+      "category": "AI, Research and Media-native",
+      "summary": "Mermaid CLI is an MIT-licensed local command-line and Node.js wrapper that converts Mermaid definitions into SVG, PNG, or PDF. No hosted public API or vendor MCP server is documented for the CLI.",
+      "blocker": "No vendor MCP server is documented for Mermaid CLI; community Mermaid MCP integrations and Mermaid Flow external MCP connectors are not proof of a CLI server. No exact or reviewed alias listing for Mermaid CLI appears in Composio's complete catalog retrieved 2026-11-24; Mermaid Chart is a different product.",
+      "next_action": "Install @mermaid-js/mermaid-cli locally and use mmdc for file-to-diagram conversion. Composio's checked catalog has no Mermaid CLI listing; verify future coverage rather than substituting Mermaid Chart or community servers.",
+      "fields": {
+        "auth": {
+          "value": [
+            "none for local CLI execution"
+          ],
+          "status": "checked",
+          "reason": "The official README documents local npm installation and file conversion without an account, API key, OAuth flow, or hosted credential. This no-auth statement is scoped to local CLI execution. The README is undated.",
+          "evidence": [
+            {
+              "url": "https://raw.githubusercontent.com/mermaid-js/mermaid-cli/master/README.md",
+              "title": "Mermaid CLI installation and usage",
+              "quote": "npm install -g @mermaid-js/mermaid-cli",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": null
+            },
+            {
+              "url": "https://raw.githubusercontent.com/mermaid-js/mermaid-cli/master/README.md",
+              "title": "Mermaid CLI local conversion",
+              "quote": "It takes a mermaid definition file as input and generates an SVG/PNG/PDF file as output. There's basic support for converting mermaid code blocks embedded within Markdown files.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": null
+            }
+          ]
+        },
+        "credential_gate": {
+          "value": "self_serve_free",
+          "status": "checked",
+          "reason": "The official package is MIT-licensed and permits free local use, modification, and distribution. No account or paid credential is required for local execution. The README and license publication are undated; the copyright range is not treated as a publication date.",
+          "evidence": [
+            {
+              "url": "https://raw.githubusercontent.com/mermaid-js/mermaid-cli/master/LICENSE",
+              "title": "Mermaid CLI MIT License",
+              "quote": "Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the \"Software\"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": null
+            },
+            {
+              "url": "https://mermaid.js.org/config/mermaidCLI.html",
+              "title": "Mermaid CLI official documentation redirect",
+              "quote": "mermaid CLI has been moved to [mermaid-cli](https://github.com/mermaid-js/mermaid-cli). Please read its documentation instead.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": null,
+              "verification_method": "browser_and_raw_official_source_review",
+              "verification_note": "The official Mermaid configuration page contains this exact move notice and link to the mermaid-cli repository.",
+              "verified_at": "2026-11-24",
+              "source_review": "The official Mermaid configuration page contains this exact move notice and link to the mermaid-cli repository."
+            }
+          ],
+          "gate_class": "self_serve_free",
+          "details": {
+            "gate_class": "self_serve_free"
+          }
+        },
+        "api_surface": {
+          "value": "No public API documented",
+          "status": "checked",
+          "reason": "The official CLI documentation describes a local command-line and Node.js API for rendering files, not a hosted public web API. No REST, GraphQL, HTTP API, gRPC, or SOAP service is documented for Mermaid CLI. The official README is undated.",
+          "evidence": [
+            {
+              "url": "https://raw.githubusercontent.com/mermaid-js/mermaid-cli/master/README.md",
+              "title": "Mermaid CLI local wrapper",
+              "quote": "This is a command-line interface (CLI) for [mermaid](https://mermaid.js.org/). It takes a mermaid definition file as input and generates an SVG/PNG/PDF file as output.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": null
+            },
+            {
+              "url": "https://raw.githubusercontent.com/mermaid-js/mermaid-cli/master/README.md",
+              "title": "Mermaid CLI Node.js API",
+              "quote": "It's possible to call `mermaid-cli` via a Node.JS API.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": null
+            }
+          ],
+          "api_types": [],
+          "breadth": "no_public_api",
+          "details": {
+            "api_types": [],
+            "breadth": "no_public_api"
+          }
+        },
+        "official_mcp": {
+          "value": "no_vendor_server_documented",
+          "review_basis": "scoped_documentation_review",
+          "mcp_mode": "unknown",
+          "status": "checked",
+          "reason": "Thorough targeted review of the official Mermaid CLI redirect, README, complete mermaid-js/mermaid-cli repository tree and source archive at master commit 2026-11-02, and Mermaid's official integrations and Agentflow documentation found no vendor server for Mermaid CLI or CLI MCP-client setup. The README documents local CLI/Node.js rendering; MCP server entries are community integrations, while Agentflow connectors are outside services used by Mermaid Flow, not a server operated by mermaid-cli. This is a point-in-time finding scoped to Mermaid CLI, not a universal claim about all Mermaid products. The pages and README are undated apart from repository commit context.",
+          "evidence": [
+            {
+              "url": "https://raw.githubusercontent.com/mermaid-js/mermaid-cli/1423a0d7967d275a9d360ba0617f569550827c8b/README.md",
+              "title": "Mermaid CLI README — no MCP server documented",
+              "quote": "This is a command-line interface (CLI) for [mermaid](https://mermaid.js.org/). It takes a mermaid definition file as input and generates an SVG/PNG/PDF file as output. There's basic support for converting mermaid code blocks embedded within Markdown files.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated file; repository master commit 2026-11-02"
+            },
+            {
+              "url": "https://mermaid.js.org/config/mermaidCLI.html",
+              "title": "Mermaid CLI documentation redirect — no MCP server documentation",
+              "quote": "mermaid CLI has been moved to [mermaid-cli](https://github.com/mermaid-js/mermaid-cli). Please read its documentation instead.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            },
+            {
+              "url": "https://mermaid.js.org/ecosystem/integrations-community.html",
+              "title": "Mermaid community integrations — no MCP server listed for Mermaid CLI",
+              "quote": "We're excited about the growth of the Mermaid community, and the number of plugins and integrations that have been created by the community.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            },
+            {
+              "url": "https://mermaid.js.org/ecosystem/integrations-community.html",
+              "title": "Mermaid community MCP listing — no MCP server operated by Mermaid CLI",
+              "quote": "* [MCP Server Mermaid](https://github.com/hustcc/mcp-mermaid) - Generate mermaid diagram and chart with AI MCP dynamically.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            },
+            {
+              "url": "https://mermaid.js.org/agentflow/shapes/connector",
+              "title": "Mermaid Agentflow connector — no MCP server operated by Mermaid CLI",
+              "quote": "A connector is an outside service, reached over MCP, that the tasks linked to it can use.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            },
+            {
+              "url": "https://api.github.com/repos/mermaid-js/mermaid-cli/git/trees/1423a0d7967d275a9d360ba0617f569550827c8b?recursive=1",
+              "title": "Mermaid CLI complete repository tree — no MCP-named files",
+              "quote": "\"truncated\":false",
+              "retrieved_at": "2026-11-24",
+              "published_at": "2026-11-02",
+              "published_label": "Repository master commit 2026-11-02",
+              "verification_method": "complete_official_tree_and_source_archive_review",
+              "verification_note": "The complete tree contains 105 entries and no path containing mcp or model-context; an in-memory scan of the complete source archive found zero MCP or Model Context Protocol text hits."
+            }
+          ]
+        },
+        "composio_toolkit": {
+          "value": "not_listed",
+          "status": "checked",
+          "reason": "The complete official Composio toolkit catalog retrieved 2026-11-24 was searched for Mermaid CLI and reviewed aliases; no exact or alias listing was found. Mermaid Chart MCP is a different product and was not substituted. This is a point-in-time catalog result; the catalog is undated.",
+          "evidence": [
+            {
+              "url": "https://docs.composio.dev/toolkits.md",
+              "title": "Composio complete toolkit catalog",
+              "quote": "Composio supports 1841 toolkits for building AI agents.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            }
+          ]
+        },
+        "verdict": {
+          "value": "wrapper_or_cli",
+          "status": "checked",
+          "reason": "The official product is a free local CLI/Node.js wrapper with no documented hosted public API or vendor MCP server, so wrapper_or_cli is the consistent verdict. Composio is not listed in the checked 2026-11-24 catalog; neither MCP coverage nor a vendor server is inferred. The README, license, and CLI documentation are undated apart from repository commit context.",
+          "evidence": [
+            {
+              "url": "https://raw.githubusercontent.com/mermaid-js/mermaid-cli/master/README.md",
+              "title": "Mermaid CLI wrapper behavior",
+              "quote": "This is a command-line interface (CLI) for [mermaid](https://mermaid.js.org/). It takes a mermaid definition file as input and generates an SVG/PNG/PDF file as output.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": null
+            },
+            {
+              "url": "https://raw.githubusercontent.com/mermaid-js/mermaid-cli/master/LICENSE",
+              "title": "Mermaid CLI MIT License",
+              "quote": "MIT License",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": null
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

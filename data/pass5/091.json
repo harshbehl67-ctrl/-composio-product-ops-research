@@ -1,0 +1,73 @@
+{
+  "app": {
+    "number": 91,
+    "name": "NotebookLM",
+    "category": "AI, Research and Media-native",
+    "hint": "cloud.google.com/gemini (Enterprise API)"
+  },
+  "replayed_at": "2026-11-23T18:16:39.755155+00:00",
+  "source_passes": [
+    "data/pass2/091.json",
+    "data/pass4/091.json"
+  ],
+  "source_search": "data/new_search/091.json",
+  "publication_date_note": "Published labels are retained exactly as supplied by search; missing labels are null. Relative labels must not be treated as exact publication dates.",
+  "claims": {
+    "auth": {
+      "value": "unknown",
+      "sources": [],
+      "evidence": [],
+      "reason": "No sufficiently specific positive evidence extracted; review targeted search results."
+    },
+    "credential_gate": {
+      "value": "unknown",
+      "sources": [],
+      "evidence": [],
+      "reason": "No sufficiently specific positive evidence extracted; review targeted search results."
+    },
+    "api_surface": {
+      "value": [
+        "REST"
+      ],
+      "sources": [
+        "https://docs.cloud.google.com/gemini/enterprise/notebooklm-enterprise/docs/api-notebooks"
+      ],
+      "evidence": [
+        {
+          "value": "REST",
+          "url": "https://docs.cloud.google.com/gemini/enterprise/notebooklm-enterprise/docs/api-notebooks",
+          "excerpt": "rint-access-token generates an access token for your user\naccount. The projects.locations.notebooks REST\nAPI methods on\nthis page require an authenticated user account with an active\nGemini Notebook Enterprise license. Use the US multi-regional endpoint If your Gemini Notebook Enterprise",
+          "published_label": null
+        }
+      ],
+      "reason": "Provisional extraction: validate scope and completeness against the cited page."
+    },
+    "official_mcp": {
+      "value": "unknown",
+      "sources": [],
+      "evidence": [],
+      "reason": "No sufficiently specific positive evidence extracted; review targeted search results."
+    },
+    "composio_toolkit": {
+      "value": "listed",
+      "sources": [
+        "https://docs.composio.dev/toolkits/notebook_lm"
+      ],
+      "evidence": [],
+      "reason": "Catalog match; scope needs review."
+    },
+    "verdict": {
+      "value": "unknown",
+      "sources": [],
+      "evidence": [],
+      "reason": "A supported access path, authentication method and API surface were not all extracted."
+    }
+  },
+  "validation": [
+    "Automatic extraction is provisional and not a verified final claim",
+    "Unknown is not evidence of absence",
+    "No Composio-to-vendor-MCP inference",
+    "Basic authentication may be endpoint-specific",
+    "Client-only and negated statements are not positive MCP evidence"
+  ]
+}

@@ -1,0 +1,192 @@
+{
+  "app": {
+    "number": 51,
+    "name": "DataForSEO",
+    "category": "Data, SEO and Scraping",
+    "hint": "docs.dataforseo.com"
+  },
+  "replayed_at": "2026-11-23T18:42:02.625193+00:00",
+  "source_passes": [
+    "data/pass2/051.json",
+    "data/pass4/051.json"
+  ],
+  "source_searches": [
+    "data/new_search/051.json",
+    "data/pass4_search/051.json"
+  ],
+  "publication_date_note": "Search publication labels are retained exactly; null means no label was available. Relative labels are not exact dates.",
+  "claims": {
+    "auth": {
+      "value": [
+        "API token",
+        "Basic authentication",
+        "API key"
+      ],
+      "status": "provisional",
+      "sources": [
+        "https://docs.dataforseo.com/v3/auth/",
+        "https://dataforseo.com/help-center/getting-started-with-google-search-engine-api-documentation",
+        "https://dataforseo.com/help-center/dataforseo-new-mcp-server-and-cli-connection-a-quickstart-guide",
+        "https://dataforseo.com/help-center/common-first-errors-with-dataforseo-api-and-how-to-fix-them",
+        "https://dataforseo.com/help-center/how-to-authenticate-with-dataforseo-google-search-serp-api-api-key-setup-and-code-examples",
+        "https://dataforseo.com/blog/a-kickstart-guide-to-using-dataforseo-apis"
+      ],
+      "evidence": [
+        {
+          "value": "API token",
+          "url": "https://docs.dataforseo.com/v3/auth/",
+          "excerpt": "platforms, and all major frameworks. Regardless of the programming language, your unique API token should be passed in the ‘Authorization’ header within the request in the following format: Authorization: Basic login:password Instead of “login” and “password”, use you",
+          "published_label": null
+        },
+        {
+          "value": "Basic authentication",
+          "url": "https://docs.dataforseo.com/v3/auth/",
+          "excerpt": "ically by DataForSEO and is different from your account password. DataForSEO is using the Basic Authentication , which makes it possible to call our APIs with almost any programming language, Postman app, REST API platforms, and all major frameworks. Regardless of the programming",
+          "published_label": null
+        },
+        {
+          "value": "API key",
+          "url": "https://dataforseo.com/help-center/getting-started-with-google-search-engine-api-documentation",
+          "excerpt": "rted. For more detailed instructions on specific steps, see our authentication guide with API key setup and code examples for credential configuration, or follow the step-by-step guide to scraping Google search results with Python for a Python-based walkthrough of th",
+          "published_label": null
+        },
+        {
+          "value": "Basic authentication",
+          "url": "https://dataforseo.com/help-center/getting-started-with-google-search-engine-api-documentation",
+          "excerpt": "Getting Started with DataForSEO Google Organic SERP API: Parameters, Endpoints, and Response Structure – DataForSEO Help Center Search the Help Center Search Can’t find an answer? Get AI guidance on your account, billing, or implementation. AI Chat → Add as a preferred source on ",
+          "published_label": null
+        },
+        {
+          "value": "API key",
+          "url": "https://dataforseo.com/help-center/dataforseo-new-mcp-server-and-cli-connection-a-quickstart-guide",
+          "excerpt": "DataForSEO New MCP Server and CLI Connection: A Quickstart Guide – DataForSEO Help Center Search the Help Center Search Can’t find an answer? Get AI guidance on your account, billing, or implementation. AI Chat → Add as a preferred source on Google DataForSEO New MCP Server and C",
+          "published_label": "3 months ago"
+        },
+        {
+          "value": "Basic authentication",
+          "url": "https://dataforseo.com/help-center/common-first-errors-with-dataforseo-api-and-how-to-fix-them",
+          "excerpt": "I login is the email address you used for registration. Credential encoding error. We use Basic authentication, so the Authorization header should contain Basic , a space, and the base64-encoded login:password string. An extra space or line break in the encoded string makes the r",
+          "published_label": null
+        },
+        {
+          "value": "API key",
+          "url": "https://dataforseo.com/help-center/how-to-authenticate-with-dataforseo-google-search-serp-api-api-key-setup-and-code-examples",
+          "excerpt": "How to Authenticate with DataForSEO Google Search SERP API: API Key Setup and Code Examples – DataForSEO Help Center Search the Help Center Search Can’t find an answer? Get AI guidance on your account, billing, or implementation. AI Chat",
+          "published_label": null
+        },
+        {
+          "value": "Basic authentication",
+          "url": "https://dataforseo.com/help-center/how-to-authenticate-with-dataforseo-google-search-serp-api-api-key-setup-and-code-examples",
+          "excerpt": "o log into the dashboard. This one authenticates your API requests. Basic Auth. Short for Basic Authentication. Instead of a single API key string, you send your API login and password with every request. It’s the simplest authentication pattern on the web, which is why we picked",
+          "published_label": null
+        },
+        {
+          "value": "API key",
+          "url": "https://dataforseo.com/blog/a-kickstart-guide-to-using-dataforseo-apis",
+          "excerpt": "some concepts you should understand when working with DataForSEO APIs. Authorization and API key Commercial APIs commonly require authorization before you can access their functionality, such indicating an API key. To access DataForSEO APIs, you should use your uniq",
+          "published_label": "2.8 years ago"
+        }
+      ],
+      "reason": "Provisional extraction; validate scope and completeness against cited pages."
+    },
+    "credential_gate": {
+      "value": [
+        "self_serve_free",
+        "self_serve_trial"
+      ],
+      "status": "provisional",
+      "sources": [
+        "https://docs.dataforseo.com/v3/auth/",
+        "https://dataforseo.com/help-center/how-to-authenticate-with-dataforseo-google-search-serp-api-api-key-setup-and-code-examples",
+        "https://dataforseo.com/blog/a-kickstart-guide-to-using-dataforseo-apis"
+      ],
+      "evidence": [
+        {
+          "value": "self_serve_free",
+          "url": "https://docs.dataforseo.com/v3/auth/",
+          "excerpt": "\"login:password\"))) }\r\n            };\r\n\r\n            // do something\r\n        }\r\n    }\r\n} Create a free account with DataForSEO, then go to the API Access tab in the account dashboard to find your API login and password, which you’ll need to authenticate and use the DataForSEO API",
+          "published_label": null
+        },
+        {
+          "value": "self_serve_free",
+          "url": "https://dataforseo.com/help-center/how-to-authenticate-with-dataforseo-google-search-serp-api-api-key-setup-and-code-examples",
+          "excerpt": "below before the full setup. DataForSEO API key: FAQ How do I get my DataForSEO API key? Create a free account, log in, and open the API Access tab in the dashboard sidebar. Our system generates your API login and API password, and the two, encoded in Base64, are your API key. On",
+          "published_label": null
+        },
+        {
+          "value": "self_serve_trial",
+          "url": "https://dataforseo.com/blog/a-kickstart-guide-to-using-dataforseo-apis",
+          "excerpt": "dy to leverage the potential of DataForSEO APIs, but don’t have an account? Sign up for a free trial now and collect valuable SEO and marketing insights with your first API request! Share: New DataForSEO Research Paper Download ↓ Put Your SEO Workflow on Autopilot Ready",
+          "published_label": "2.8 years ago"
+        }
+      ],
+      "reason": "Provisional extraction; validate scope and completeness against cited pages."
+    },
+    "api_surface": {
+      "value": "REST; broad documented surface",
+      "status": "provisional",
+      "sources": [
+        "https://docs.dataforseo.com/v3/auth/",
+        "https://dataforseo.com/blog/a-kickstart-guide-to-using-dataforseo-apis"
+      ],
+      "evidence": [
+        {
+          "value": [
+            "REST"
+          ],
+          "breadth": "moderate",
+          "url": "https://docs.dataforseo.com/v3/auth/",
+          "excerpt": "Authentication | DataForSEO API v3 Authentication from client import RestClient\r\n#You can download this file from here https://cdn.dataforseo.com/v3/examples/python/python_Client.zip\r\n\r\n#Instead of 'login' and 'password' use your credentials from https://app.dataforseo.com/api-ac",
+          "published_label": null
+        },
+        {
+          "value": [
+            "REST"
+          ],
+          "breadth": "broad",
+          "url": "https://dataforseo.com/blog/a-kickstart-guide-to-using-dataforseo-apis",
+          "excerpt": "A Kickstart Guide to Using DataForSEO APIs – DataForSEO A Kickstart Guide to Using DataForSEO APIs Best Practices By Irene T. 02.02.2024 Table of Contents While you can’t see them, APIs are everywhere, continuously working in the background to fuel a myriad of digital functionali",
+          "published_label": "2.8 years ago"
+        }
+      ],
+      "reason": "Provisional extraction; validate scope and completeness against cited pages."
+    },
+    "official_mcp": {
+      "value": "unknown",
+      "status": "provisional",
+      "sources": [],
+      "evidence": [],
+      "reason": "No sufficiently specific official evidence extracted."
+    },
+    "composio_toolkit": {
+      "value": "listed",
+      "status": "provisional",
+      "sources": [
+        "https://docs.composio.dev/toolkits/dataforseo"
+      ],
+      "evidence": [],
+      "reason": "Catalog match only; not vendor MCP evidence."
+    },
+    "verdict": {
+      "value": "documented_build_candidate",
+      "status": "provisional",
+      "sources": [
+        "https://docs.dataforseo.com/v3/auth/",
+        "https://dataforseo.com/help-center/getting-started-with-google-search-engine-api-documentation",
+        "https://dataforseo.com/help-center/dataforseo-new-mcp-server-and-cli-connection-a-quickstart-guide",
+        "https://dataforseo.com/help-center/common-first-errors-with-dataforseo-api-and-how-to-fix-them",
+        "https://dataforseo.com/help-center/how-to-authenticate-with-dataforseo-google-search-serp-api-api-key-setup-and-code-examples",
+        "https://dataforseo.com/blog/a-kickstart-guide-to-using-dataforseo-apis"
+      ],
+      "evidence": [],
+      "reason": "Inferred only from extracted auth, API and access evidence; independent review required."
+    }
+  },
+  "validation": [
+    "Automatic extraction is provisional until independently reviewed",
+    "Unknown is not evidence of absence",
+    "Composio evidence cannot establish vendor MCP",
+    "Client-only and negated MCP statements are not vendor-server proof",
+    "API breadth is a text-coverage heuristic, not an endpoint census"
+  ]
+}

@@ -1,0 +1,130 @@
+{
+  "app": {
+    "number": 12,
+    "name": "Intercom",
+    "category": "Support and Helpdesk",
+    "hint": "intercom.com"
+  },
+  "replayed_at": "2026-11-23T18:19:17.168906+00:00",
+  "source_passes": [
+    "data/pass2/012.json",
+    "data/pass4/012.json"
+  ],
+  "source_search": "data/new_search/012.json",
+  "publication_date_note": "Published labels are retained exactly as supplied by search; missing labels are null. Relative labels must not be treated as exact publication dates.",
+  "claims": {
+    "auth": {
+      "value": [
+        "API key"
+      ],
+      "sources": [
+        "https://developers.intercom.com/docs/references/preview/rest-api/api.intercom.io/auth-tokens"
+      ],
+      "evidence": [
+        {
+          "value": "API key",
+          "url": "https://developers.intercom.com/docs/references/preview/rest-api/api.intercom.io/auth-tokens",
+          "excerpt": "45\" name string or null The name given to the credential when it was created. Example : \"Fulfilment API key\" description string or null An optional description of what the credential is used for. Example : \"Used by the order status connector\" token_type string or null How the credential",
+          "published_label": null
+        }
+      ],
+      "reason": "Provisional extraction: validate scope and completeness against the cited page."
+    },
+    "credential_gate": {
+      "value": "unknown",
+      "sources": [],
+      "evidence": [],
+      "reason": "No sufficiently specific positive evidence extracted; review targeted search results."
+    },
+    "api_surface": {
+      "value": [
+        "REST"
+      ],
+      "sources": [
+        "https://developers.intercom.com/docs/build-an-integration/learn-more/authentication",
+        "https://developers.intercom.com/docs/references/preview/rest-api/api.intercom.io/auth-tokens",
+        "https://developers.intercom.com/docs/guides/mcp",
+        "https://developers.intercom.com/docs",
+        "https://developers.intercom.com/docs/references/introduction"
+      ],
+      "evidence": [
+        {
+          "value": "REST",
+          "url": "https://developers.intercom.com/docs/build-an-integration/learn-more/authentication",
+          "excerpt": "PIs Webhooks Fin Agent API News Center Domains Model Context Protocol (MCP) References Object Model REST API Reference Canvas Kit Reference Webhook Topics Public Apps & App Store Configure OAuth Build and Publish Apps App Store Guidelines Home / Authentication Authentication Copy To acce",
+          "published_label": null
+        },
+        {
+          "value": "REST",
+          "url": "https://developers.intercom.com/docs/references/preview/rest-api/api.intercom.io/auth-tokens",
+          "excerpt": "PIs Webhooks Fin Agent API News Center Domains Model Context Protocol (MCP) References Object Model REST API Reference Preview Introduction Changelog (Preview) Intercom API Admins AI Content Articles Away Status Reasons Audiences Auth Tokens Auth Token schema Create Auth Token Request sc",
+          "published_label": null
+        },
+        {
+          "value": "REST",
+          "url": "https://developers.intercom.com/docs/guides/mcp",
+          "excerpt": "PIs Webhooks Fin Agent API News Center Domains Model Context Protocol (MCP) References Object Model REST API Reference Canvas Kit Reference Webhook Topics Public Apps & App Store Configure OAuth Build and Publish Apps App Store Guidelines Home / Model Context Protocol (M... Model Context",
+          "published_label": null
+        },
+        {
+          "value": "REST",
+          "url": "https://developers.intercom.com/docs",
+          "excerpt": "PIs Webhooks Fin Agent API News Center Domains Model Context Protocol (MCP) References Object Model REST API Reference Canvas Kit Reference Webhook Topics Public Apps & App Store Configure OAuth Build and Publish Apps App Store Guidelines Home / Overview Overview Copy The Intercom Develo",
+          "published_label": null
+        },
+        {
+          "value": "REST",
+          "url": "https://developers.intercom.com/docs/references/introduction",
+          "excerpt": "PIs Webhooks Fin Agent API News Center Domains Model Context Protocol (MCP) References Object Model REST API Reference Introduction Changelog (2.18) Intercom API Admins AI Content Articles Audiences Auth Tokens Away Status Reasons Banners Brands Calls Companies Contacts Content Content S",
+          "published_label": null
+        }
+      ],
+      "reason": "Provisional extraction: validate scope and completeness against the cited page."
+    },
+    "official_mcp": {
+      "value": "yes (provisional)",
+      "sources": [
+        "https://developers.intercom.com/docs/guides/mcp",
+        "https://www.intercom.com/help/en/articles/11461635-add-mcp-connectors-for-popular-apps-or-custom-mcps"
+      ],
+      "evidence": [
+        {
+          "value": "yes (provisional)",
+          "url": "https://developers.intercom.com/docs/guides/mcp",
+          "excerpt": " and interact with your Intercom data whenever helpful. Region availability The Intercom MCP server is available for US and EU hosted workspaces. AU hosted workspaces are not yet supported. Connect using the endpoint that matches your workspace's hosted regio",
+          "published_label": null,
+          "context_warning": "Review vendor ownership, dates, and scope."
+        },
+        {
+          "value": "yes (provisional)",
+          "url": "https://www.intercom.com/help/en/articles/11461635-add-mcp-connectors-for-popular-apps-or-custom-mcps",
+          "excerpt": "cation Settings page in Intercom. Once authorized, you'll be redirected back to Intercom. The connected MCP server will now appear in your list of data connectors, usually with \"(0)\" indicating no tools have been added yet (e.g., \"Linear (0)\") 2. Connect a Custom MCP server",
+          "published_label": null,
+          "context_warning": "Review vendor ownership, dates, and scope."
+        }
+      ],
+      "reason": "Provisional; check source date, scope, and vendor ownership."
+    },
+    "composio_toolkit": {
+      "value": "listed",
+      "sources": [
+        "https://docs.composio.dev/toolkits/intercom"
+      ],
+      "evidence": [],
+      "reason": "Catalog match; scope needs review."
+    },
+    "verdict": {
+      "value": "unknown",
+      "sources": [],
+      "evidence": [],
+      "reason": "A supported access path, authentication method and API surface were not all extracted."
+    }
+  },
+  "validation": [
+    "Automatic extraction is provisional and not a verified final claim",
+    "Unknown is not evidence of absence",
+    "No Composio-to-vendor-MCP inference",
+    "Basic authentication may be endpoint-specific",
+    "Client-only and negated statements are not positive MCP evidence"
+  ]
+}

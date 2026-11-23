@@ -1,0 +1,73 @@
+{
+  "app": {
+    "number": 32,
+    "name": "Meta Ads",
+    "category": "Marketing, Ads, Email and Social",
+    "hint": "developers.facebook.com/docs/marketing-apis"
+  },
+  "replayed_at": "2026-11-23T18:16:36.979191+00:00",
+  "source_passes": [
+    "data/pass2/032.json",
+    "data/pass4/032.json"
+  ],
+  "source_search": "data/new_search/032.json",
+  "publication_date_note": "Published labels are retained exactly as supplied by search; missing labels are null. Relative labels must not be treated as exact publication dates.",
+  "claims": {
+    "auth": {
+      "value": "unknown",
+      "sources": [],
+      "evidence": [],
+      "reason": "No sufficiently specific positive evidence extracted; review targeted search results."
+    },
+    "credential_gate": {
+      "value": "unknown",
+      "sources": [],
+      "evidence": [],
+      "reason": "No sufficiently specific positive evidence extracted; review targeted search results."
+    },
+    "api_surface": {
+      "value": [
+        "REST"
+      ],
+      "sources": [
+        "https://developers.facebook.com/docs"
+      ],
+      "evidence": [
+        {
+          "value": "REST",
+          "url": "https://developers.facebook.com/docs",
+          "excerpt": " your app. Docs Graph API The primary way for apps to read and write to the Meta social graph. Docs Rest API Modern, flexible, and developer-friendly way to build and integrate with Meta’s diverse platforms. Docs Meta Model API Access Muse Spark on Meta Model API. Start building agentic,",
+          "published_label": null
+        }
+      ],
+      "reason": "Provisional extraction: validate scope and completeness against the cited page."
+    },
+    "official_mcp": {
+      "value": "unknown",
+      "sources": [],
+      "evidence": [],
+      "reason": "No sufficiently specific positive evidence extracted; review targeted search results."
+    },
+    "composio_toolkit": {
+      "value": "listed",
+      "sources": [
+        "https://docs.composio.dev/toolkits/metaads"
+      ],
+      "evidence": [],
+      "reason": "Catalog match; scope needs review."
+    },
+    "verdict": {
+      "value": "unknown",
+      "sources": [],
+      "evidence": [],
+      "reason": "A supported access path, authentication method and API surface were not all extracted."
+    }
+  },
+  "validation": [
+    "Automatic extraction is provisional and not a verified final claim",
+    "Unknown is not evidence of absence",
+    "No Composio-to-vendor-MCP inference",
+    "Basic authentication may be endpoint-specific",
+    "Client-only and negated statements are not positive MCP evidence"
+  ]
+}

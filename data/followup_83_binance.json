@@ -1,0 +1,276 @@
+{
+  "number": 83,
+  "app": "Binance",
+  "category": "Finance and Fintech",
+  "summary": "Binance's current official developer text documents broad Spot REST and WebSocket market-data APIs, signed Ed25519/RSA/HMAC API-key authentication, and a Binance-operated remote MCP server scoped to an Agentic sub-account. The preserved complete-catalog review still finds no Composio Binance toolkit, and vendor MCP evidence does not establish a Composio listing.",
+  "blocker": "Public market-data access needs no credentials, but signed account/trading access requires an eligible Binance account and a restricted API key. The Binance MCP server is remote-only, requires a funded Agentic sub-account, exposes no withdrawal scope, and is tied to supported clients and a content snapshot dated 2026-08-17.",
+  "next_action": "Prototype unauthenticated market data at data-api.binance.vision, then use a least-privilege Ed25519 key without withdrawals for private Spot operations. For MCP, verify current regional/account eligibility and the supported-client flow, authorize only required scopes, and fund an isolated Agentic sub-account without relying on withdrawal capabilities.",
+  "fields": {
+    "auth": {
+      "status": "checked",
+      "value": [
+        "Unauthenticated public Spot market-data HTTP/WebSocket endpoints",
+        "Spot signed API key (X-MBX-APIKEY): Ed25519 recommended; RSA supported; HMAC supported but deprecated",
+        "Binance Agentic account authorization for the remote MCP connection"
+      ],
+      "reason": "The undated Market Data Only page explicitly excludes authentication for public data. The undated Spot security documentation requires API keys plus signatures for secure endpoints, and the undated key-types page recommends Ed25519 while marking HMAC deprecated. The MCP documentation snapshot dated 2026-08-17 separately requires Binance account authorization; neither API-key nor MCP authentication is inferred from Composio.",
+      "evidence": [
+        {
+          "url": "https://developers.binance.com/en/docs/products/spot/faqs/market_data_only.md",
+          "title": "Market Data Only URLs",
+          "quote": "These URLs do not require any authentication (i.e. The API key is not necessary) and serve only public market data.",
+          "retrieved_at": "2026-11-24",
+          "published_at": null,
+          "published_label": "undated"
+        },
+        {
+          "url": "https://developers.binance.com/en/docs/products/spot/rest-api.md",
+          "title": "General REST API Information",
+          "quote": "Secure endpoints require a valid API key to be specified and authenticated.\n  - API keys can be created on the\n    [API Management](https://www.binance.com/en/support/faq/360002502072) page of your Binance\n    account.\n  - **Both API key and secret key are sensitive.** Never share them with anyone.",
+          "retrieved_at": "2026-11-24",
+          "published_at": null,
+          "published_label": "undated"
+        },
+        {
+          "url": "https://developers.binance.com/en/docs/products/spot/rest-api.md",
+          "title": "General REST API Information",
+          "quote": "- `SIGNED` endpoints require an additional parameter, `signature`, to be sent in the `query string`\n  or `request body`.",
+          "retrieved_at": "2026-11-24",
+          "published_at": null,
+          "published_label": "undated"
+        },
+        {
+          "url": "https://developers.binance.com/en/docs/products/spot/faqs/api_key_types.md",
+          "title": "API Key Types",
+          "quote": "Binance APIs require an API key to access authenticated endpoints for trading, account history, etc.\n\nWe support several types of API keys:\n\n- Ed25519 (recommended)\n- HMAC\n- RSA",
+          "retrieved_at": "2026-11-24",
+          "published_at": null,
+          "published_label": "undated"
+        },
+        {
+          "url": "https://developers.binance.com/en/docs/products/spot/faqs/api_key_types.md",
+          "title": "API Key Types",
+          "quote": "**HMAC keys are deprecated.** We recommend to migrate to asymmetric API keys, such as Ed25519 or\nRSA.",
+          "retrieved_at": "2026-11-24",
+          "published_at": null,
+          "published_label": "undated"
+        },
+        {
+          "url": "https://developers.binance.com/en/docs/agent-native/mcp-server/agentic.md",
+          "title": "Binance MCP Server",
+          "quote": "**Step 4:** Authenticate to authorize the connection.",
+          "retrieved_at": "2026-11-24",
+          "published_at": "2026-08-17",
+          "published_label": "documentation content snapshot synced 2026-08-17"
+        }
+      ]
+    },
+    "credential_gate": {
+      "status": "checked",
+      "value": "self_serve_free",
+      "gate_class": "self_serve_free",
+      "reason": "Public Spot market data is explicitly credential-free, so the checked gate is scoped to that usable no-credential surface rather than claimed to cover private trading. Secure Spot endpoints require account-created keys and explicit TRADE permission. The MCP path requires login, selected scopes, and a funded Agentic sub-account. No paid API plan or universal regional eligibility is established; the key-types and MCP-access pages are undated, while the MCP content snapshot is dated 2026-08-17.",
+      "evidence": [
+        {
+          "url": "https://developers.binance.com/en/docs/products/spot/faqs/market_data_only.md",
+          "title": "Market Data Only URLs",
+          "quote": "These URLs do not require any authentication (i.e. The API key is not necessary) and serve only public market data.",
+          "retrieved_at": "2026-11-24",
+          "published_at": null,
+          "published_label": "undated"
+        },
+        {
+          "url": "https://developers.binance.com/en/docs/products/spot/rest-api.md",
+          "title": "General REST API Information",
+          "quote": "- By default, an API key cannot `TRADE`. You need to enable trading in API Management first.",
+          "retrieved_at": "2026-11-24",
+          "published_at": null,
+          "published_label": "undated"
+        },
+        {
+          "url": "https://developers.binance.com/en/docs/agent-native/mcp-server/agentic.md",
+          "title": "Binance MCP Server",
+          "quote": "When you connect, you choose which scopes to grant. Start with the least you need:\n\n- **Market data** (public, no auth) — tickers, order books, candles, funding\n- **Account** — Agentic sub-account balance, positions, bills; optional read-only view of your main\n  account\n- **Trade** — spot, margin, convert, futures (only what you grant and your account is authorized\n  for)\n- **Transfer** — move funds between wallets inside the same Agentic sub-account only",
+          "retrieved_at": "2026-11-24",
+          "published_at": "2026-08-17",
+          "published_label": "documentation content snapshot synced 2026-08-17"
+        },
+        {
+          "url": "https://developers.binance.com/en/docs/agent-native/mcp-server/agentic.md",
+          "title": "Binance MCP Server",
+          "quote": "Your agent trades inside a dedicated sub-account, isolated from your main account. If you don't have\none, the onboarding flow prompts you to create one when you first authorize.\n\nThe sub-account starts empty. Before your agent can trade, you must transfer funds into it yourself\nfrom the Binance web UI",
+          "retrieved_at": "2026-11-24",
+          "published_at": "2026-08-17",
+          "published_label": "documentation content snapshot synced 2026-08-17"
+        }
+      ]
+    },
+    "api_surface": {
+      "status": "checked",
+      "value": "Broad documented Spot REST and WebSocket surface; broad",
+      "api_types": [
+        "HTTP API",
+        "WebSocket API",
+        "WebSocket Streams"
+      ],
+      "breadth": "broad",
+      "reason": "The undated official REST page documents HTTPS base endpoints, JSON responses, and signed trade/account/order operations. The undated Market Data Only page documents unauthenticated REST market endpoints and WebSocket streams for tickers, order books, candles, aggregate trades, exchange information, and server time, while excluding User Data Streams. This supports a broad Spot-only claim, not an unverified claim about every Binance product.",
+      "evidence": [
+        {
+          "url": "https://developers.binance.com/en/docs/products/spot/rest-api.md",
+          "title": "General REST API Information",
+          "quote": "The following base endpoints are available. Please use whichever works best for your setup:\n  - **https://api.binance.com**\n  - **https://api-gcp.binance.com**\n  - **https://api1.binance.com**\n  - **https://api2.binance.com**\n  - **https://api3.binance.com**\n  - **https://api4.binance.com**\n- The last 4 endpoints in the point above (`api1`-`api4`) should give better performance but have\n  less stability.\n- Responses are in JSON by default.",
+          "retrieved_at": "2026-11-24",
+          "published_at": null,
+          "published_label": "undated"
+        },
+        {
+          "url": "https://developers.binance.com/en/docs/products/spot/rest-api.md",
+          "title": "General REST API Information",
+          "quote": "| `TRADE`       | Trading on the exchange, placing and canceling orders                      |\n| `USER_DATA`   | Private account information, such as order status and your trading history |\n| `USER_STREAM` | Managing User Data Stream subscriptions                                    |",
+          "retrieved_at": "2026-11-24",
+          "published_at": null,
+          "published_label": "undated"
+        },
+        {
+          "url": "https://developers.binance.com/en/docs/products/spot/faqs/market_data_only.md",
+          "title": "Market Data Only URLs",
+          "quote": "On the RESTful API, these are the endpoints you can request on `data-api.binance.vision`:\n\n- [GET /api/v3/aggTrades](/catalog/core-trading-spot-trading/api/rest-api/market#agg-trades)\n- [GET /api/v3/avgPrice](/catalog/core-trading-spot-trading/api/rest-api/market#avg-price)\n- [GET /api/v3/depth](/catalog/core-trading-spot-trading/api/rest-api/market#depth)\n- [GET /api/v3/exchangeInfo](/catalog/core-trading-spot-trading/api/rest-api/general#exchange-info)\n- [GET /api/v3/klines](/catalog/core-trading-spot-trading/api/rest-api/market#klines)\n- [GET /api/v3/ping](/catalog/core-trading-spot-trading/api/rest-api/general#ping)\n- [GET /api/v3/ticker](/catalog/core-trading-spot-trading/api/rest-api/market#ticker)",
+          "retrieved_at": "2026-11-24",
+          "published_at": null,
+          "published_label": "undated"
+        },
+        {
+          "url": "https://developers.binance.com/en/docs/products/spot/faqs/market_data_only.md",
+          "title": "Market Data Only URLs",
+          "quote": "- [GET /api/v3/ticker/24hr](/catalog/core-trading-spot-trading/api/rest-api/market#ticker24hr)\n- [GET /api/v3/ticker/bookTicker](/catalog/core-trading-spot-trading/api/rest-api/market#ticker-book-ticker)\n- [GET /api/v3/ticker/price](/catalog/core-trading-spot-trading/api/rest-api/market#ticker-price)\n- [GET /api/v3/time](/catalog/core-trading-spot-trading/api/rest-api/general#time)\n- [GET /api/v3/trades](/catalog/core-trading-spot-trading/api/rest-api/market#get-trades)\n- [GET /api/v3/uiKlines](/catalog/core-trading-spot-trading/api/rest-api/market#ui-klines)",
+          "retrieved_at": "2026-11-24",
+          "published_at": null,
+          "published_label": "undated"
+        },
+        {
+          "url": "https://developers.binance.com/en/docs/products/spot/faqs/market_data_only.md",
+          "title": "Market Data Only URLs",
+          "quote": "Public market data can also be retrieved through the websocket market data using the URL\n`data-stream.binance.vision`. The streams available through this domain are the same that can be\nfound in the [WebSocket Market Streams](../web-socket-streams.md) documentation.\n\nNote that User Data Streams **cannot** be accessed through this URL.",
+          "retrieved_at": "2026-11-24",
+          "published_at": null,
+          "published_label": "undated"
+        }
+      ]
+    },
+    "official_mcp": {
+      "status": "checked",
+      "value": "vendor_server",
+      "mcp_mode": "remote",
+      "server_urls": [
+        "https://agent.binance.com/mcp/agentic"
+      ],
+      "authentication": "Binance account authorization with user-selected scopes; supported AI client/connector flow",
+      "reason": "Official Binance MCP documentation explicitly says the server is operated by Binance's AI team, gives a hosted HTTPS endpoint and HTTP transport, and requires account authorization. It is a vendor server consumed by clients/connectors, not a Binance MCP client. The documentation is a content snapshot synced 2026-08-17; account and trade scopes operate only in an Agentic sub-account and withdrawal scope is never available.",
+      "evidence": [
+        {
+          "url": "https://developers.binance.com/en/docs/agent-native/mcp-server/agentic.md",
+          "title": "Binance MCP Server",
+          "quote": "This MCP server is operated by Binance's AI team; mirrored here as our discovery entry point.",
+          "retrieved_at": "2026-11-24",
+          "published_at": "2026-08-17",
+          "published_label": "documentation content snapshot synced 2026-08-17"
+        },
+        {
+          "url": "https://developers.binance.com/en/docs/agent-native/mcp-server/agentic.md",
+          "title": "Binance MCP Server",
+          "quote": "Connect your AI agent to Binance with a single URL. Your agent can read market data, check balances, trade Spot / Margin / Convert / USDⓈ-M / COIN-M Futures, and move funds between wallets inside a dedicated Agentic sub-account — no local install, no API keys on your device.",
+          "retrieved_at": "2026-11-24",
+          "published_at": "2026-08-17",
+          "published_label": "documentation content snapshot synced 2026-08-17"
+        },
+        {
+          "url": "https://developers.binance.com/en/docs/agent-native/mcp-server/agentic.md",
+          "title": "Binance MCP Server",
+          "quote": "**Step 2:** Run the following command to add the Binance MCP server:\n\n```bash\nclaude mcp add binance-mcp-server --transport http https://agent.binance.com/mcp/agentic\n```",
+          "retrieved_at": "2026-11-24",
+          "published_at": "2026-08-17",
+          "published_label": "documentation content snapshot synced 2026-08-17"
+        },
+        {
+          "url": "https://developers.binance.com/en/docs/agent-native/mcp-server/agentic.md",
+          "title": "Binance MCP Server",
+          "quote": "**Step 4:** Authenticate to authorize the connection.",
+          "retrieved_at": "2026-11-24",
+          "published_at": "2026-08-17",
+          "published_label": "documentation content snapshot synced 2026-08-17"
+        },
+        {
+          "url": "https://developers.binance.com/en/docs/agent-native/mcp-server/agentic.md",
+          "title": "Binance MCP Server",
+          "quote": "There is **no withdrawal scope**. Your agent can never move funds out of the sub-account to an\nexternal address.",
+          "retrieved_at": "2026-11-24",
+          "published_at": "2026-08-17",
+          "published_label": "documentation content snapshot synced 2026-08-17"
+        }
+      ]
+    },
+    "composio_toolkit": {
+      "status": "checked",
+      "value": "not_listed",
+      "reason": "The preserved 2026-11-24 review of the complete Composio catalog of 1,841 toolkits found no exact Binance toolkit row or approved alias; namesake and MCP-specific products were not substituted. The complete catalog was not re-proven for this follow-up, and the official Binance vendor MCP server is not evidence of a Composio toolkit.",
+      "evidence": [
+        {
+          "url": "https://docs.composio.dev/toolkits.md",
+          "title": "Composio Toolkits",
+          "quote": "Composio supports 1841 toolkits for building AI agents.",
+          "retrieved_at": "2026-11-24",
+          "published_at": null,
+          "published_label": "undated"
+        },
+        {
+          "url": "https://docs.composio.dev/toolkits.md",
+          "title": "Composio Toolkits",
+          "quote": "## All Toolkits\n\n| Toolkit | Slug | Tools | Triggers | Auth | Managed App |",
+          "retrieved_at": "2026-11-24",
+          "published_at": null,
+          "published_label": "undated"
+        }
+      ]
+    },
+    "verdict": {
+      "status": "checked",
+      "value": "documented_build_candidate",
+      "reason": "Credential-free public Spot market data and the broad documented REST/WebSocket surface support a build candidate without claiming that private access is ungated. Secure Spot operations need account-issued keys and enabled permissions; the vendor remote MCP additionally requires authorization and a funded Agentic sub-account. The undated API pages and MCP content snapshot dated 2026-08-17 require current eligibility and scope checks before private use.",
+      "evidence": [
+        {
+          "url": "https://developers.binance.com/en/docs/products/spot/faqs/market_data_only.md",
+          "title": "Market Data Only URLs",
+          "quote": "These URLs do not require any authentication (i.e. The API key is not necessary) and serve only public market data.",
+          "retrieved_at": "2026-11-24",
+          "published_at": null,
+          "published_label": "undated"
+        },
+        {
+          "url": "https://developers.binance.com/en/docs/products/spot/rest-api.md",
+          "title": "General REST API Information",
+          "quote": "- By default, an API key cannot `TRADE`. You need to enable trading in API Management first.",
+          "retrieved_at": "2026-11-24",
+          "published_at": null,
+          "published_label": "undated"
+        },
+        {
+          "url": "https://developers.binance.com/en/docs/agent-native/mcp-server/agentic.md",
+          "title": "Binance MCP Server",
+          "quote": "This MCP server is operated by Binance's AI team; mirrored here as our discovery entry point.",
+          "retrieved_at": "2026-11-24",
+          "published_at": "2026-08-17",
+          "published_label": "documentation content snapshot synced 2026-08-17"
+        },
+        {
+          "url": "https://developers.binance.com/en/docs/agent-native/mcp-server/agentic.md",
+          "title": "Binance MCP Server",
+          "quote": "Your agent trades inside a dedicated sub-account, isolated from your main account. If you don't have\none, the onboarding flow prompts you to create one when you first authorize.\n\nThe sub-account starts empty. Before your agent can trade, you must transfer funds into it yourself\nfrom the Binance web UI",
+          "retrieved_at": "2026-11-24",
+          "published_at": "2026-08-17",
+          "published_label": "documentation content snapshot synced 2026-08-17"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,129 @@
+{
+  "app": {
+    "number": 29,
+    "name": "Aircall",
+    "category": "Communications and Messaging",
+    "hint": "aircall.io"
+  },
+  "replayed_at": "2026-11-23T18:19:18.020370+00:00",
+  "source_passes": [
+    "data/pass2/029.json",
+    "data/pass4/029.json"
+  ],
+  "source_search": "data/new_search/029.json",
+  "publication_date_note": "Published labels are retained exactly as supplied by search; missing labels are null. Relative labels must not be treated as exact publication dates.",
+  "claims": {
+    "auth": {
+      "value": [
+        "Basic authentication",
+        "API key",
+        "API token"
+      ],
+      "sources": [
+        "https://developer.aircall.io/docs/authentication",
+        "https://developers.aircall.io/tutorials/basic-authentication"
+      ],
+      "evidence": [
+        {
+          "value": "Basic authentication",
+          "url": "https://developer.aircall.io/docs/authentication",
+          "excerpt": " its markdown version. Getting Started Aircall supports two ways to authenticate with the REST API: Basic Authentication and OAuth. Use Basic Authentication when you are connecting your own internal tools or private integration to Aircall. Use OAuth when your app needs to access Aircall data on beha",
+          "published_label": null
+        },
+        {
+          "value": "API key",
+          "url": "https://developers.aircall.io/tutorials/basic-authentication",
+          "excerpt": ". You can create some in your Company's Settings page. In the API Keys section , click on Add a new API key . Aircall will generate two strings, representing the Basic Authentication username and password . Once generated and before closing the modal, copy and paste those credentials so",
+          "published_label": null
+        },
+        {
+          "value": "API token",
+          "url": "https://developers.aircall.io/tutorials/basic-authentication",
+          "excerpt": "Get started with Aircall OAuth tutorial! Steps Basic Authentication description Get your API ID and API Token credentials Create a Base64 encoded string with your API credentials Use this encoded string in your HTTP requests 1 - Basic Authentication description Every request to Aircall Pu",
+          "published_label": null
+        },
+        {
+          "value": "Basic authentication",
+          "url": "https://developers.aircall.io/tutorials/basic-authentication",
+          "excerpt": "Basic Authentication | Aircall Explore All Getting started Advanced Open source Categories authentication calls data sync messages partners webhooks workflow Basic Authentication Detailed step-by-step",
+          "published_label": null
+        }
+      ],
+      "reason": "Provisional extraction: validate scope and completeness against the cited page."
+    },
+    "credential_gate": {
+      "value": "unknown",
+      "sources": [],
+      "evidence": [],
+      "reason": "No sufficiently specific positive evidence extracted; review targeted search results."
+    },
+    "api_surface": {
+      "value": [
+        "REST"
+      ],
+      "sources": [
+        "https://developer.aircall.io/docs/authentication",
+        "https://developers.aircall.io/api-references",
+        "https://aircall.io/call-center-software-features/webhooks-api/"
+      ],
+      "evidence": [
+        {
+          "value": "REST",
+          "url": "https://developer.aircall.io/docs/authentication",
+          "excerpt": "URL to get its markdown version. Getting Started Aircall supports two ways to authenticate with the REST API: Basic Authentication and OAuth. Use Basic Authentication when you are connecting your own internal tools or private integration to Aircall. Use OAuth when your app needs to acces",
+          "published_label": null
+        },
+        {
+          "value": "REST",
+          "url": "https://developers.aircall.io/api-references",
+          "excerpt": "API References | Aircall icon-light Created with Sketch. icon-dark Created with Sketch. REST API Authentication Introduction OAuth ï¹£ Technology Partners Basic Auth ï¹£ Aircall customers Rate limiting Pagination Errors Versioning Versioning Strategy Content-Type Announcement",
+          "published_label": null
+        },
+        {
+          "value": "REST",
+          "url": "https://aircall.io/call-center-software-features/webhooks-api/",
+          "excerpt": "Webhooks & API | Aircall Webhooks & API Every business has unique needs. Use our REST API and Webhooks to create customized workflows between Aircall and your tech stack. GET FREE ACCESS REQUEST A DEMO 24,000+ COMPANIES TRUST AIRCALL to power their customer communicati",
+          "published_label": null
+        }
+      ],
+      "reason": "Provisional extraction: validate scope and completeness against the cited page."
+    },
+    "official_mcp": {
+      "value": "no per dated source (provisional)",
+      "sources": [
+        "https://developer.aircall.io/docs/mcp-faqs"
+      ],
+      "evidence": [
+        {
+          "value": "no per source; date and scope need review",
+          "url": "https://developer.aircall.io/docs/mcp-faqs",
+          "excerpt": "tact for more information. Does Aircall offer an MCP server As of this writting we don't offer an MCP servier but stay tuned. We might have news soon. Updated 3 months ago Did this page help you? Yes No Copy Page",
+          "published_label": null,
+          "context_warning": "Explicit negation; do not infer a current universal absence."
+        }
+      ],
+      "reason": "Provisional; check source date, scope, and vendor ownership."
+    },
+    "composio_toolkit": {
+      "value": "listed",
+      "sources": [
+        "https://docs.composio.dev/toolkits/aircall"
+      ],
+      "evidence": [],
+      "reason": "Catalog match; scope needs review."
+    },
+    "verdict": {
+      "value": "unknown",
+      "sources": [],
+      "evidence": [],
+      "reason": "A supported access path, authentication method and API surface were not all extracted."
+    }
+  },
+  "validation": [
+    "Automatic extraction is provisional and not a verified final claim",
+    "Unknown is not evidence of absence",
+    "No Composio-to-vendor-MCP inference",
+    "Basic authentication may be endpoint-specific",
+    "Client-only and negated statements are not positive MCP evidence"
+  ]
+}

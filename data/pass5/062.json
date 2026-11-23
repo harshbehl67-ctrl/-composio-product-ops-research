@@ -1,0 +1,131 @@
+{
+  "app": {
+    "number": 62,
+    "name": "Vercel",
+    "category": "Developer, Infra and Data platforms",
+    "hint": "vercel.com/docs/rest-api"
+  },
+  "replayed_at": "2026-11-23T18:16:38.260672+00:00",
+  "source_passes": [
+    "data/pass2/062.json",
+    "data/pass4/062.json"
+  ],
+  "source_search": "data/new_search/062.json",
+  "publication_date_note": "Published labels are retained exactly as supplied by search; missing labels are null. Relative labels must not be treated as exact publication dates.",
+  "claims": {
+    "auth": {
+      "value": [
+        "Bearer token"
+      ],
+      "sources": [
+        "https://vercel.com/docs/sign-in-with-vercel/tokens",
+        "https://vercel.com/docs/sign-in-with-vercel/authorization-server-api"
+      ],
+      "evidence": [
+        {
+          "value": "Bearer token",
+          "url": "https://vercel.com/docs/sign-in-with-vercel/tokens",
+          "excerpt": "r application code to fetch the user's data, it must be included in the `Authorization` header as a Bearer token.\n\n```ts filename=\"Fetching the users data with the Access Token\"\nconst result = await fetch('https://api.vercel.com/v2/user', {\n  method: 'GET',\n  headers: {\n    Authorization: `B",
+          "published_label": "last year"
+        },
+        {
+          "value": "Bearer token",
+          "url": "https://vercel.com/docs/sign-in-with-vercel/authorization-server-api",
+          "excerpt": " about the signed-in user. You must authenticate to this endpoint by including an access token as a bearer token in the Authorization header.\n\nThe endpoint returns a JSON response with consented OpenID claims:\n\n```json filename=\"User Info Endpoint response\"\n{\n  \"sub\": \"345e869043f1e55f8bdc83",
+          "published_label": "11 months ago"
+        }
+      ],
+      "reason": "Provisional extraction: validate scope and completeness against the cited page."
+    },
+    "credential_gate": {
+      "value": "unknown",
+      "sources": [],
+      "evidence": [],
+      "reason": "No sufficiently specific positive evidence extracted; review targeted search results."
+    },
+    "api_surface": {
+      "value": [
+        "REST"
+      ],
+      "sources": [
+        "https://vercel.com/docs/sign-in-with-vercel/tokens",
+        "https://vercel.com/docs/rest-api",
+        "https://vercel.com/docs/integrations/create-integration/vercel-api-integrations"
+      ],
+      "evidence": [
+        {
+          "value": "REST",
+          "url": "https://vercel.com/docs/sign-in-with-vercel/tokens",
+          "excerpt": " on Vercel on behalf of the user trying to sign in. It is used to authenticate requests to Vercel's REST API. Access Tokens use an opaque format that ensures they are not readable by humans, are secure, and have server side validation to ensure they are not tampered with.\n\n```plaintext f",
+          "published_label": "last year"
+        },
+        {
+          "value": "REST",
+          "url": "https://vercel.com/docs/rest-api",
+          "excerpt": "---\ntitle: Vercel REST API Reference\nproduct: vercel\nurl: /docs/rest-api\ncanonical_url: \"https://vercel.com/docs/rest-api\"\nlast_updated: 2026-11-23\ntype: reference\nprerequisites:\n  []\nrelated:\n  - /docs/res",
+          "published_label": null
+        },
+        {
+          "value": "REST",
+          "url": "https://vercel.com/docs/integrations/create-integration/vercel-api-integrations",
+          "excerpt": "---\ntitle: Building Integrations with Vercel REST API\nproduct: vercel\nurl: /docs/integrations/create-integration/vercel-api-integrations\ncanonical_url: \"https://vercel.com/docs/integrations/create-integration/vercel-api-integrations\"",
+          "published_label": "9 months ago"
+        }
+      ],
+      "reason": "Provisional extraction: validate scope and completeness against the cited page."
+    },
+    "official_mcp": {
+      "value": "yes (provisional)",
+      "sources": [
+        "https://vercel.com/docs/agent-resources/vercel-mcp",
+        "https://vercel.com/docs/mcp",
+        "https://vercel.com/changelog/chatgpt-is-now-supported-on-vercel-mcp"
+      ],
+      "evidence": [
+        {
+          "value": "yes (provisional)",
+          "url": "https://vercel.com/docs/agent-resources/vercel-mcp",
+          "excerpt": "\n\n```bash\nnpx -y add-mcp https://mcp.vercel.com -g\n```\n\n## What is Vercel MCP?\n\nVercel MCP is Vercel's official MCP server. It's a remote MCP with OAuth that gives AI tools secure access to your Vercel projects available at:\n\n`https://mcp.vercel.com`\n\nIt integrates with popular AI ",
+          "published_label": "9 months ago",
+          "context_warning": "Review vendor ownership, dates, and scope."
+        },
+        {
+          "value": "yes (provisional)",
+          "url": "https://vercel.com/docs/mcp",
+          "excerpt": "ve-of-mcp-building-for-llms-not-developers)\n- [Using xmcp with Next.js](https://vercel.com/kb/guide/using-xmcp-with-nextjs) — Add an MCP server to an existing Next.js app with xmcp. Create typed tools, add authentication, and deploy to Vercel as\n- [Add MCP Apps to your AI SDK application](https://verce",
+          "published_label": "9 months ago",
+          "context_warning": "Review vendor ownership, dates, and scope."
+        },
+        {
+          "value": "yes (provisional)",
+          "url": "https://vercel.com/changelog/chatgpt-is-now-supported-on-vercel-mcp",
+          "excerpt": " Add Vercel MCP Open ChatGPT settings In the Connectors tab, click Create Name: Vercel MCP server URL: https://mcp.vercel.com . Authentication: OAuth Click Create You should now be able to select Vercel as a connector in Developer Mode chats. With Vercel MC",
+          "published_label": "1.2 years ago",
+          "context_warning": "Review vendor ownership, dates, and scope."
+        }
+      ],
+      "reason": "Provisional; check source date, scope, and vendor ownership."
+    },
+    "composio_toolkit": {
+      "value": "listed",
+      "sources": [
+        "https://docs.composio.dev/toolkits/vercel"
+      ],
+      "evidence": [],
+      "reason": "Catalog match; scope needs review."
+    },
+    "verdict": {
+      "value": "unknown",
+      "sources": [],
+      "evidence": [],
+      "reason": "A supported access path, authentication method and API surface were not all extracted."
+    }
+  },
+  "validation": [
+    "Automatic extraction is provisional and not a verified final claim",
+    "Unknown is not evidence of absence",
+    "No Composio-to-vendor-MCP inference",
+    "Basic authentication may be endpoint-specific",
+    "Client-only and negated statements are not positive MCP evidence"
+  ]
+}

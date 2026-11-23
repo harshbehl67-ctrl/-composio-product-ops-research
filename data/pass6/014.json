@@ -1,0 +1,73 @@
+{
+  "app": {
+    "number": 14,
+    "name": "Front",
+    "category": "Support and Helpdesk",
+    "hint": "front.com"
+  },
+  "replayed_at": "2026-11-23T18:17:21.483058+00:00",
+  "source_passes": [
+    "data/pass2/014.json",
+    "data/pass4/014.json"
+  ],
+  "source_search": "data/new_search/014.json",
+  "publication_date_note": "Published labels are retained exactly as supplied by search; missing labels are null. Relative labels must not be treated as exact publication dates.",
+  "claims": {
+    "auth": {
+      "value": "unknown",
+      "sources": [],
+      "evidence": [],
+      "reason": "No sufficiently specific positive evidence extracted; review targeted search results."
+    },
+    "credential_gate": {
+      "value": [
+        "free or trial developer credential path"
+      ],
+      "sources": [
+        "https://community.front.com/developer-q-a-37/how-can-i-get-access-to-a-developer-account-given-that-i-am-already-a-front-customer-with-an-existing-user-acount-93"
+      ],
+      "evidence": [
+        {
+          "value": "free or trial developer credential path",
+          "url": "https://community.front.com/developer-q-a-37/how-can-i-get-access-to-a-developer-account-given-that-i-am-already-a-front-customer-with-an-existing-user-acount-93",
+          "excerpt": " Developer Relations Answer Community Manager 3 years ago Dec 9, 2022 12:57 AM UTC You can create a free developer account on our Developer Portal . If you’re an admin in your existing Front instance, you can certainly access the settings that would allow you to perform developer actions like creating apps that use ou",
+          "published_label": "4.0 years ago"
+        }
+      ],
+      "reason": "Provisional extraction: validate scope and completeness against the cited page."
+    },
+    "api_surface": {
+      "value": "unknown",
+      "sources": [],
+      "evidence": [],
+      "reason": "No sufficiently specific positive evidence extracted; review targeted search results."
+    },
+    "official_mcp": {
+      "value": "unknown",
+      "sources": [],
+      "evidence": [],
+      "reason": "No sufficiently specific positive evidence extracted; review targeted search results."
+    },
+    "composio_toolkit": {
+      "value": "listed",
+      "sources": [
+        "https://docs.composio.dev/toolkits/front"
+      ],
+      "evidence": [],
+      "reason": "Catalog match; scope needs review."
+    },
+    "verdict": {
+      "value": "unknown",
+      "sources": [],
+      "evidence": [],
+      "reason": "A supported access path, authentication method and API surface were not all extracted."
+    }
+  },
+  "validation": [
+    "Automatic extraction is provisional and not a verified final claim",
+    "Unknown is not evidence of absence",
+    "No Composio-to-vendor-MCP inference",
+    "Basic authentication may be endpoint-specific",
+    "Client-only and negated statements are not positive MCP evidence"
+  ]
+}

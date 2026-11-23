@@ -1,0 +1,152 @@
+{
+  "app": {
+    "number": 41,
+    "name": "Shopify",
+    "category": "Ecommerce",
+    "hint": "shopify.dev"
+  },
+  "replayed_at": "2026-11-23T18:17:22.416931+00:00",
+  "source_passes": [
+    "data/pass2/041.json",
+    "data/pass4/041.json"
+  ],
+  "source_search": "data/new_search/041.json",
+  "publication_date_note": "Published labels are retained exactly as supplied by search; missing labels are null. Relative labels must not be treated as exact publication dates.",
+  "claims": {
+    "auth": {
+      "value": [
+        "OAuth 2.0"
+      ],
+      "sources": [
+        "https://shopify.dev/docs/api/usage/authentication"
+      ],
+      "evidence": [
+        {
+          "value": "OAuth 2.0",
+          "url": "https://shopify.dev/docs/api/usage/authentication",
+          "excerpt": " token X-Shopify-Access-Token Customer Account API A buyer, on their own behalf Buyer signs in with OAuth 2.0 and PKCE Authorization The table covers the most commonly used APIs. For a complete list, see the Shopify API reference . Your app's client ID and client secret are on its Setting",
+          "published_label": null
+        }
+      ],
+      "reason": "Provisional extraction: validate scope and completeness against the cited page."
+    },
+    "credential_gate": {
+      "value": "unknown",
+      "sources": [],
+      "evidence": [],
+      "reason": "No sufficiently specific positive evidence extracted; review targeted search results."
+    },
+    "api_surface": {
+      "value": [
+        "GraphQL",
+        "REST"
+      ],
+      "sources": [
+        "https://shopify.dev/docs/api/usage/authentication",
+        "https://shopify.dev/docs/api/shopify-mcp",
+        "https://shopify.dev/docs/api/usage/access-scopes",
+        "https://shopify.dev/docs/api",
+        "https://shopify.dev/docs/api/ai-toolkit",
+        "https://shopify.dev/docs/apps/build/authentication-authorization",
+        "https://shopify.dev/docs/apps/build/apis",
+        "https://shopify.dev/docs/apps/build/authentication-authorization/access-tokens"
+      ],
+      "evidence": [
+        {
+          "value": "GraphQL",
+          "url": "https://shopify.dev/docs/api/usage/authentication",
+          "excerpt": "API Which token you use depends on whose data you're working with. Most Shopify APIs, including the GraphQL Admin API , Storefront API , and Partner API , authenticate your app acting on behalf of a merchant or organization. The token represents your app and the access a merchant granted it. The ",
+          "published_label": null
+        },
+        {
+          "value": "GraphQL",
+          "url": "https://shopify.dev/docs/api/shopify-mcp",
+          "excerpt": "agents and platforms. Anchor to What Shopify MCP can do What Shopify MCP can do Shopify MCP exposes GraphQL Admin API queries and mutations, so an agent can read and update a store's data on the merchant's behalf. It also includes tools for common jobs, such as: Signing up for Shopify and creatin",
+          "published_label": null
+        },
+        {
+          "value": "REST",
+          "url": "https://shopify.dev/docs/api/usage/access-scopes",
+          "excerpt": "a your app can read and write. This guide lists available access scopes, grouped by scope type. The REST Admin API uses authenticated access scopes too, listed in access scopes for the REST Admin API . Anchor to How it works How it works Shopify grants access scopes only to public or custom ap",
+          "published_label": null
+        },
+        {
+          "value": "GraphQL",
+          "url": "https://shopify.dev/docs/api/usage/access-scopes",
+          "excerpt": "ed data. Scope type Description Example use cases Authenticated Controls access to resources in the GraphQL Admin API , Web Pixel API , and Payments Apps API . Use authenticated access scopes to interact with a store on behalf of a user. Creating products Managing discount codes Unauthenticated C",
+          "published_label": null
+        },
+        {
+          "value": "GraphQL",
+          "url": "https://shopify.dev/docs/api",
+          "excerpt": " requests let you safely retry a request that might have failed. Global IDs identify objects in the GraphQL APIs, cursor-based pagination walks long lists of them, and the search query syntax filters those lists. Dev tools Anchor to Set up your development environment Set up your development",
+          "published_label": null
+        },
+        {
+          "value": "GraphQL",
+          "url": "https://shopify.dev/docs/api/ai-toolkit",
+          "excerpt": "it's agent skills directly. The shopify skill covers every Shopify developer surface, including the GraphQL Admin API, Shopify Functions, Polaris, Liquid, Hydrogen, and Shopify CLI. Your agent reads the guidance for a surface only when a task needs it. You can view the skill on GitHub . To instal",
+          "published_label": null
+        },
+        {
+          "value": "GraphQL",
+          "url": "https://shopify.dev/docs/apps/build/authentication-authorization",
+          "excerpt": "About app authentication Skip to main content Collapse sidebar Shopify apps call the GraphQL Admin API to read and write store data on behalf of merchants. Before your app can make those calls, it needs to authenticate: prove which app is calling, which merchant approved it, and wh",
+          "published_label": null
+        },
+        {
+          "value": "REST",
+          "url": "https://shopify.dev/docs/apps/build/apis",
+          "excerpt": "rganization data, such as app installs and payouts. Your backend Your Partner organization Note The REST Admin API is legacy. New apps should use the GraphQL Admin API, which is where new features ship. Note : The REST Admin API is legacy. New apps should use the GraphQL Admin API, which is wh",
+          "published_label": null
+        },
+        {
+          "value": "GraphQL",
+          "url": "https://shopify.dev/docs/apps/build/apis",
+          "excerpt": "ght one for what you're building. The full API reference has the schemas and every field. Anchor to GraphQL APIs Graph QL APIs These APIs are GraphQL endpoints that you send HTTP requests to. Some can be called only from your backend, because they authenticate with a secret token that the me",
+          "published_label": null
+        },
+        {
+          "value": "REST",
+          "url": "https://shopify.dev/docs/apps/build/authentication-authorization/access-tokens",
+          "excerpt": "or public apps, the requirement began on April 1, 2026.) If your app calls the GraphQL Admin API or REST Admin API and uses traditional non-expiring offline tokens, see Migrate to expiring offline access tokens . Offline access tokens are required : All apps created on or after December 1, 202",
+          "published_label": null
+        },
+        {
+          "value": "GraphQL",
+          "url": "https://shopify.dev/docs/apps/build/authentication-authorization/access-tokens",
+          "excerpt": " revoke access without rotating your app's core credentials. This page covers access tokens for the GraphQL Admin API , which authenticates requests with a token sent in the X-Shopify-Access-Token header. Other Shopify APIs issue their own token types and use their own headers. For which token an",
+          "published_label": null
+        }
+      ],
+      "reason": "Provisional extraction: validate scope and completeness against the cited page."
+    },
+    "official_mcp": {
+      "value": "unknown",
+      "sources": [],
+      "evidence": [],
+      "reason": "No sufficiently specific positive evidence extracted; review targeted search results."
+    },
+    "composio_toolkit": {
+      "value": "listed",
+      "sources": [
+        "https://docs.composio.dev/toolkits/shopify"
+      ],
+      "evidence": [],
+      "reason": "Catalog match; scope needs review."
+    },
+    "verdict": {
+      "value": "unknown",
+      "sources": [],
+      "evidence": [],
+      "reason": "A supported access path, authentication method and API surface were not all extracted."
+    }
+  },
+  "validation": [
+    "Automatic extraction is provisional and not a verified final claim",
+    "Unknown is not evidence of absence",
+    "No Composio-to-vendor-MCP inference",
+    "Basic authentication may be endpoint-specific",
+    "Client-only and negated statements are not positive MCP evidence"
+  ]
+}

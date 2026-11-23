@@ -1,0 +1,140 @@
+{
+  "app": {
+    "number": 66,
+    "name": "Neo4j",
+    "category": "Developer, Infra and Data platforms",
+    "hint": "neo4j.com/docs/api"
+  },
+  "replayed_at": "2026-11-23T18:42:04.849440+00:00",
+  "source_passes": [
+    "data/pass2/066.json",
+    "data/pass4/066.json"
+  ],
+  "source_searches": [
+    "data/new_search/066.json",
+    "data/pass4_search/066.json"
+  ],
+  "publication_date_note": "Search publication labels are retained exactly; null means no label was available. Relative labels are not exact dates.",
+  "claims": {
+    "auth": {
+      "value": [
+        "Bearer token",
+        "Basic authentication",
+        "OAuth 2.0",
+        "API key"
+      ],
+      "status": "provisional",
+      "sources": [
+        "https://neo4j.com/docs/query-api/current/authentication-authorization/",
+        "https://neo4j.com/docs/http-api/current/authentication-authorization/",
+        "https://neo4j.com/developer/genai-ecosystem/model-context-protocol-mcp/",
+        "https://neo4j.com/docs/graphql/current/aura-graphql/api-usage/"
+      ],
+      "evidence": [
+        {
+          "value": "Bearer token",
+          "url": "https://neo4j.com/docs/query-api/current/authentication-authorization/",
+          "excerpt": "c bmVvNGo6dmVyeXNlY3JldA== Bearer authentication The header format to authenticate with a bearer token is: Authorization: Bearer <token> where <token> is base64-encoded. Most services provide tokens already base64-decoded, so ensure you don’t base64-encode them again. Bea",
+          "published_label": null
+        },
+        {
+          "value": "Basic authentication",
+          "url": "https://neo4j.com/docs/query-api/current/authentication-authorization/",
+          "excerpt": "tication is disabled on the server, requests can be sent without an Authorization header. Basic authentication The header format for basic authentication follows the standard format (RFC 7617), with UTF-8 encoding: Authorization: Basic <base64(<username>:<password>)> Example 1. B",
+          "published_label": null
+        },
+        {
+          "value": "Bearer token",
+          "url": "https://neo4j.com/docs/http-api/current/authentication-authorization/",
+          "excerpt": "c bmVvNGo6dmVyeXNlY3JldA== Bearer authentication The header format to authenticate with a bearer token is: Authorization: Bearer <base64(token)> Example 2. Bearer authentication To authenticate with the token xbhkjnlvianztghqwawxqfe , first base64-encode it: eGJoa2pubHZpY",
+          "published_label": null
+        },
+        {
+          "value": "Basic authentication",
+          "url": "https://neo4j.com/docs/http-api/current/authentication-authorization/",
+          "excerpt": "tication is disabled on the server, requests can be sent without an Authorization header. Basic authentication The header format for basic authentication follows the standard format (RFC 7617): Authorization: Basic <base64(username:password)> Example 1. Basic authentication To au",
+          "published_label": null
+        },
+        {
+          "value": "OAuth 2.0",
+          "url": "https://neo4j.com/developer/genai-ecosystem/model-context-protocol-mcp/",
+          "excerpt": "Model Context Protocol (MCP) Integrations for the Neo4j Graph Database - Developer Guides Skip to content Developer Guides Is this page helpful? Edit this page Model Context Protocol (MCP) Integrations for the Neo4j Graph Database What is the Model Context Protocol The Model Cont",
+          "published_label": null
+        },
+        {
+          "value": "API key",
+          "url": "https://neo4j.com/docs/graphql/current/aura-graphql/api-usage/",
+          "excerpt": "raphQL requests to it.\nAs all requests are subject to authentication, you must include an API key or JWT token. With an API key authentication provider Add x-api-key: YOUR_API_KEY to the header of the request.\nFor example, with cURL: curl --location <YOUR_GRAPHQL_API",
+          "published_label": null
+        }
+      ],
+      "reason": "Provisional extraction; validate scope and completeness against cited pages."
+    },
+    "credential_gate": {
+      "value": "unknown",
+      "status": "provisional",
+      "sources": [],
+      "evidence": [],
+      "reason": "No sufficiently specific official evidence extracted."
+    },
+    "api_surface": {
+      "value": "HTTP API, GraphQL; moderate documented surface",
+      "status": "provisional",
+      "sources": [
+        "https://neo4j.com/docs/http-api/current/authentication-authorization/",
+        "https://neo4j.com/docs/graphql/current/aura-graphql/api-usage/"
+      ],
+      "evidence": [
+        {
+          "value": [
+            "HTTP API"
+          ],
+          "breadth": "moderate",
+          "url": "https://neo4j.com/docs/http-api/current/authentication-authorization/",
+          "excerpt": "Authorize requests - HTTP API Skip to content HTTP API Product Version Version 2026.10 (Current) Version 5 Version 4.4 Is this page helpful? Raise an issue Authorize requests Not available on Aura Deprecated in 5.26 The process for authorizing requests to the Neo4j HTTP API is no",
+          "published_label": null
+        },
+        {
+          "value": [
+            "GraphQL"
+          ],
+          "breadth": "narrow",
+          "url": "https://neo4j.com/docs/graphql/current/aura-graphql/api-usage/",
+          "excerpt": "Using your GraphQL API - Neo4j GraphQL Library Skip to content Neo4j GraphQL Library Product Version Version 7 (Current) Version 6 Version 5 (LTS) Version 4 Version 3 Is this page helpful? Raise an issue Using your GraphQL API This is the documentation of the GraphQL Library vers",
+          "published_label": null
+        }
+      ],
+      "reason": "Provisional extraction; validate scope and completeness against cited pages."
+    },
+    "official_mcp": {
+      "value": "unknown",
+      "status": "provisional",
+      "sources": [],
+      "evidence": [],
+      "reason": "No sufficiently specific official evidence extracted."
+    },
+    "composio_toolkit": {
+      "value": "listed",
+      "status": "provisional",
+      "sources": [
+        "https://docs.composio.dev/toolkits/neo4j"
+      ],
+      "evidence": [],
+      "reason": "Catalog match only; not vendor MCP evidence."
+    },
+    "verdict": {
+      "value": "unknown",
+      "status": "provisional",
+      "sources": [],
+      "evidence": [],
+      "reason": "No sufficiently specific official evidence extracted."
+    }
+  },
+  "validation": [
+    "Automatic extraction is provisional until independently reviewed",
+    "Unknown is not evidence of absence",
+    "Composio evidence cannot establish vendor MCP",
+    "Client-only and negated MCP statements are not vendor-server proof",
+    "API breadth is a text-coverage heuristic, not an endpoint census"
+  ]
+}

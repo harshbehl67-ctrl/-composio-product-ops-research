@@ -1,0 +1,180 @@
+{
+  "app": {
+    "number": 54,
+    "name": "MrScraper",
+    "category": "Data, SEO and Scraping",
+    "hint": "docs.mrscraper.com"
+  },
+  "replayed_at": "2026-11-23T18:42:02.841500+00:00",
+  "source_passes": [
+    "data/pass2/054.json",
+    "data/pass4/054.json"
+  ],
+  "source_searches": [
+    "data/new_search/054.json",
+    "data/pass4_search/054.json"
+  ],
+  "publication_date_note": "Search publication labels are retained exactly; null means no label was available. Relative labels are not exact dates.",
+  "claims": {
+    "auth": {
+      "value": [
+        "API token",
+        "Bearer token",
+        "OAuth 2.0",
+        "API key"
+      ],
+      "status": "provisional",
+      "sources": [
+        "https://docs.mrscraper.com/docs/api/authentication",
+        "https://docs.mrscraper.com/docs/api/overview",
+        "https://docs.mrscraper.com/docs/getting-started/mcp-server",
+        "https://docs.mrscraper.com/docs/getting-started/api-token",
+        "https://docs.mrscraper.com/docs/getting-started/quickstart",
+        "https://docs.mrscraper.com/docs/getting-started/cli",
+        "https://docs.mrscraper.com/docs/api/v3/authentication/verify-token",
+        "https://docs.mrscraper.com/docs/features/activating-api"
+      ],
+      "evidence": [
+        {
+          "value": "API token",
+          "url": "https://docs.mrscraper.com/docs/api/authentication",
+          "excerpt": "ult Analytic Authentication Learn how to authenticate requests to the MrScraper API using API tokens and request headers. The MrScraper API uses API token authentication to secure all endpoints. Every request must include a valid API token in the HTTP request headers.",
+          "published_label": null
+        },
+        {
+          "value": "Bearer token",
+          "url": "https://docs.mrscraper.com/docs/api/authentication",
+          "excerpt": "ketplace endpoints , authenticate using the standard RFC 6750 Authorization header with a Bearer token: Authorization : Bearer <MRSCRAPER_API_TOKEN> Verify Token To test your authentication and confirm that your token is valid, make a request to the /subscription-accounts",
+          "published_label": null
+        },
+        {
+          "value": "API token",
+          "url": "https://docs.mrscraper.com/docs/api/overview",
+          "excerpt": "returned in JSON format. Authentication All API endpoints require authentication using an API token passed in the x-api-token header. See the Authentication page for details. Pagination List endpoints support pagination to handle large datasets efficiently. See the Pag",
+          "published_label": null
+        },
+        {
+          "value": "OAuth 2.0",
+          "url": "https://docs.mrscraper.com/docs/getting-started/mcp-server",
+          "excerpt": "MCP Server | MrScraper Documentation Documentation Core Features Dashboard Getting Started Overview Quickstart Web Search Scraper API Token Plan CLI MCP Server Billing Features Workflow Workflow API Access Bulk Scraping Proxy Marketplace Schedule S3 Storage Scraping Tips Cookie T",
+          "published_label": null
+        },
+        {
+          "value": "API key",
+          "url": "https://docs.mrscraper.com/docs/getting-started/mcp-server",
+          "excerpt": "MCP\nApps. Requirements A MrScraper account An MCP client with Streamable HTTP support An API key only when the client cannot use\nOAuth 2.1 or when running the server locally Quick start with the hosted server Add the hosted endpoint Configure a Streamable HTTP serve",
+          "published_label": null
+        },
+        {
+          "value": "API token",
+          "url": "https://docs.mrscraper.com/docs/getting-started/mcp-server",
+          "excerpt": "umentation Core Features Dashboard Getting Started Overview Quickstart Web Search Scraper API Token Plan CLI MCP Server Billing Features Workflow Workflow API Access Bulk Scraping Proxy Marketplace Schedule S3 Storage Scraping Tips Cookie Team Guides Common Use Case Op",
+          "published_label": null
+        },
+        {
+          "value": "Bearer token",
+          "url": "https://docs.mrscraper.com/docs/getting-started/mcp-server",
+          "excerpt": "uth, create an API key ,\nstore it through the client's secret mechanism, and send it as a bearer token: { \"mcpServers\" : { \"mrscraper\" : { \"type\" : \"http\" , \"url\" : \"https://mcp.mrscraper.com/mcp\" , \"headers\" : { \"Authorization\" : \"Bearer YOUR_MRSCRAPER_API_KEY\" } } } } F",
+          "published_label": null
+        },
+        {
+          "value": "API token",
+          "url": "https://docs.mrscraper.com/docs/getting-started/api-token",
+          "excerpt": "umentation Core Features Dashboard Getting Started Overview Quickstart Web Search Scraper API Token Plan CLI MCP Server Billing Features Workflow Workflow API Access Bulk Scraping Proxy Marketplace Schedule S3 Storage Scraping Tips Cookie Team Guides Common Use Case Op",
+          "published_label": null
+        },
+        {
+          "value": "API key",
+          "url": "https://docs.mrscraper.com/docs/getting-started/quickstart",
+          "excerpt": ". Make Your First API Request Before You Start Create a MrScraper account and obtain your API key from the Scraper API before following this guide. In this quickstart, you'll scrape a Walmart product page using the General AI Agent to get the following data: Product",
+          "published_label": null
+        },
+        {
+          "value": "API token",
+          "url": "https://docs.mrscraper.com/docs/getting-started/quickstart",
+          "excerpt": "umentation Core Features Dashboard Getting Started Overview Quickstart Web Search Scraper API Token Plan CLI MCP Server Billing Features Workflow Workflow API Access Bulk Scraping Proxy Marketplace Schedule S3 Storage Scraping Tips Cookie Team Guides Common Use Case Op",
+          "published_label": null
+        },
+        {
+          "value": "API key",
+          "url": "https://docs.mrscraper.com/docs/getting-started/cli",
+          "excerpt": "n commands. Requirements Node.js 20 or newer A MrScraper account for browser login, or an API key for non-interactive use Package information This page documents version 0.7.1 . Version 0.7.0 replaced scraperAPI with scrape-html , scrape-markdown , and get-screenshot",
+          "published_label": null
+        },
+        {
+          "value": "API token",
+          "url": "https://docs.mrscraper.com/docs/getting-started/cli",
+          "excerpt": "umentation Core Features Dashboard Getting Started Overview Quickstart Web Search Scraper API Token Plan CLI MCP Server Billing Features Workflow Workflow API Access Bulk Scraping Proxy Marketplace Schedule S3 Storage Scraping Tips Cookie Team Guides Common Use Case Op",
+          "published_label": null
+        },
+        {
+          "value": "API token",
+          "url": "https://docs.mrscraper.com/docs/api/v3/authentication/verify-token",
+          "excerpt": "Verify API Token | MrScraper Documentation API Reference API Reference Dashboard Introduction API Overview Authentication Pagination Response Headers Error Handling Web Search Web Search",
+          "published_label": null
+        },
+        {
+          "value": "API token",
+          "url": "https://docs.mrscraper.com/docs/features/activating-api",
+          "excerpt": "umentation Core Features Dashboard Getting Started Overview Quickstart Web Search Scraper API Token Plan CLI MCP Server Billing Features Workflow Workflow API Access Bulk Scraping Proxy Marketplace Schedule S3 Storage Scraping Tips Cookie Team Guides Common Use Case Op",
+          "published_label": null
+        }
+      ],
+      "reason": "Provisional extraction; validate scope and completeness against cited pages."
+    },
+    "credential_gate": {
+      "value": "unknown",
+      "status": "provisional",
+      "sources": [],
+      "evidence": [],
+      "reason": "No sufficiently specific official evidence extracted."
+    },
+    "api_surface": {
+      "value": "unknown",
+      "status": "provisional",
+      "sources": [],
+      "evidence": [],
+      "reason": "No sufficiently specific official evidence extracted."
+    },
+    "official_mcp": {
+      "value": "vendor_server",
+      "status": "provisional",
+      "sources": [
+        "https://docs.mrscraper.com/docs/getting-started/mcp-server"
+      ],
+      "evidence": [
+        {
+          "value": "vendor_server",
+          "url": "https://docs.mrscraper.com/docs/getting-started/mcp-server",
+          "excerpt": "craper.\nIt connects AI clients to web page retrieval, web search, and your account\nusage. MrScraper MCP server source code on GitHub · Install the @mrscraper/mcp npm package The server exposes seven tools: status Return the raw account status API response without summarizing, redacting body fields, or adding calculated fields. scrapeHtml Retrieve the raw HTML",
+          "published_label": null,
+          "context_note": "Vendor-owned server statement; review date and access scope."
+        }
+      ],
+      "reason": "Provisional; check date, ownership and access scope."
+    },
+    "composio_toolkit": {
+      "value": "listed",
+      "status": "provisional",
+      "sources": [
+        "https://docs.composio.dev/toolkits/mrscraper"
+      ],
+      "evidence": [],
+      "reason": "Catalog match only; not vendor MCP evidence."
+    },
+    "verdict": {
+      "value": "unknown",
+      "status": "provisional",
+      "sources": [],
+      "evidence": [],
+      "reason": "No sufficiently specific official evidence extracted."
+    }
+  },
+  "validation": [
+    "Automatic extraction is provisional until independently reviewed",
+    "Unknown is not evidence of absence",
+    "Composio evidence cannot establish vendor MCP",
+    "Client-only and negated MCP statements are not vendor-server proof",
+    "API breadth is a text-coverage heuristic, not an endpoint census"
+  ]
+}

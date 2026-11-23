@@ -1,0 +1,105 @@
+{
+  "app": {
+    "number": 36,
+    "name": "Klaviyo",
+    "category": "Marketing, Ads, Email and Social",
+    "hint": "developers.klaviyo.com"
+  },
+  "replayed_at": "2026-11-23T18:16:37.055234+00:00",
+  "source_passes": [
+    "data/pass2/036.json",
+    "data/pass4/036.json"
+  ],
+  "source_search": "data/new_search/036.json",
+  "publication_date_note": "Published labels are retained exactly as supplied by search; missing labels are null. Relative labels must not be treated as exact publication dates.",
+  "claims": {
+    "auth": {
+      "value": [
+        "API key"
+      ],
+      "sources": [
+        "https://developers.klaviyo.com/en/docs/authenticate_"
+      ],
+      "evidence": [
+        {
+          "value": "API key",
+          "url": "https://developers.klaviyo.com/en/docs/authenticate_",
+          "excerpt": "thentication All /api endpoints use API private keys to authenticate requests. If you do not use an API key for your requests, or if you use a key from the wrong account, your call will return an error. A 401 error indicates an invalid or missing API key. OAuth If you are a tech partner",
+          "published_label": null
+        }
+      ],
+      "reason": "Provisional extraction: validate scope and completeness against the cited page."
+    },
+    "credential_gate": {
+      "value": "unknown",
+      "sources": [],
+      "evidence": [],
+      "reason": "No sufficiently specific positive evidence extracted; review targeted search results."
+    },
+    "api_surface": {
+      "value": "unknown",
+      "sources": [],
+      "evidence": [],
+      "reason": "No sufficiently specific positive evidence extracted; review targeted search results."
+    },
+    "official_mcp": {
+      "value": "yes (provisional)",
+      "sources": [
+        "https://developers.klaviyo.com/en/docs/klaviyo_mcp_server",
+        "https://developers.klaviyo.com/en/docs/connect_to_the_klaviyo_mcp_server"
+      ],
+      "evidence": [
+        {
+          "value": "yes (provisional)",
+          "url": "https://developers.klaviyo.com/en/docs/klaviyo_mcp_server",
+          "excerpt": "Klaviyo MCP server | Klaviyo Developers Skip to content This page is available as Markdown at https://developers.klaviyo.com/en/docs/klaviyo_mcp_server.md. An index of every page",
+          "published_label": null,
+          "context_warning": "Review vendor ownership, dates, and scope."
+        },
+        {
+          "value": "yes (provisional)",
+          "url": "https://developers.klaviyo.com/en/docs/klaviyo_mcp_server",
+          "excerpt": "Klaviyo MCP server | Klaviyo Developers Skip to content This page is available as Markdown at https://developers.klaviyo.com/en/docs/klaviyo_mcp_server.md. An index of every page",
+          "published_label": null,
+          "context_warning": "Review vendor ownership, dates, and scope."
+        },
+        {
+          "value": "yes (provisional)",
+          "url": "https://developers.klaviyo.com/en/docs/connect_to_the_klaviyo_mcp_server",
+          "excerpt": "https://developers.klaviyo.com/llms.txt. You will learn To communicate with the Klaviyo MCP server, each MCP client needs specific configuration. This page walks you through configuring various MCP clients for both the remote-hosted MCP server (recommended) ",
+          "published_label": null,
+          "context_warning": "Review vendor ownership, dates, and scope."
+        },
+        {
+          "value": "yes (provisional)",
+          "url": "https://developers.klaviyo.com/en/docs/klaviyo_mcp_server",
+          "excerpt": "Klaviyo MCP server | Klaviyo Developers Skip to content This page is available as Markdown at https://developers.klaviyo.com/en/docs/klaviyo_mcp_server.md. An index of every page",
+          "published_label": null,
+          "context_warning": "Review vendor ownership, dates, and scope."
+        }
+      ],
+      "reason": "Provisional; check source date, scope, and vendor ownership."
+    },
+    "composio_toolkit": {
+      "value": "listed",
+      "sources": [
+        "https://docs.composio.dev/toolkits/klaviyo"
+      ],
+      "evidence": [],
+      "reason": "Catalog match; scope needs review."
+    },
+    "verdict": {
+      "value": "unknown",
+      "sources": [],
+      "evidence": [],
+      "reason": "A supported access path, authentication method and API surface were not all extracted."
+    }
+  },
+  "validation": [
+    "Automatic extraction is provisional and not a verified final claim",
+    "Unknown is not evidence of absence",
+    "No Composio-to-vendor-MCP inference",
+    "Basic authentication may be endpoint-specific",
+    "Client-only and negated statements are not positive MCP evidence"
+  ]
+}

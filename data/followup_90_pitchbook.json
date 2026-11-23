@@ -1,0 +1,237 @@
+{
+  "number": 90,
+  "app": "PitchBook",
+  "category": "Finance and Fintech",
+  "summary": "PitchBook documents a broad REST/JSON API behind a standalone Direct Data contract, vendor-provisioned API key or token access, and an official PitchBook Data MCP product available to customers upon request.",
+  "blocker": "API access is not self-serve: the Direct Data contract, custom pricing, sandbox, and credentials require vendor engagement, while Data MCP requires customer access. Public pages do not specify the REST credential header or token format, or a Data MCP endpoint and transport; the separately branded PitchBook MCP gateway requires OAuth 2.0.",
+  "next_action": "Contact PitchBook Direct Data or the account manager for the standalone API agreement, custom pricing, sandbox, and key/token provisioning; request Data MCP access plus its endpoint, transport, OAuth/entitlement details, and tool coverage before building.",
+  "fields": {
+    "auth": {
+      "status": "checked",
+      "value": [
+        "PitchBook REST API: vendor-provisioned API key or authentication token; public help does not state the header or token format",
+        "PitchBook MCP External Gateway: OAuth 2.0 sign-in, separate from the REST API"
+      ],
+      "reason": "The undated official API help says the Direct Data team establishes an API connection through an API key or authentication token. The undated official MCP gateway sign-in page separately requires OAuth 2.0; it is not evidence of REST API OAuth or of Composio credential handling.",
+      "evidence": [
+        {
+          "url": "https://pitchbook.com/help/PitchBook-api",
+          "title": "Help: PitchBook API - PitchBook",
+          "quote": "Our team will work with you to understand the insights and data you’re looking for and help you establish the API connection through an API key or authentication token. Available data for each entity type is packaged across several endpoints so you can map the data to your desired format and structure.",
+          "retrieved_at": "2026-11-24",
+          "published_at": null,
+          "published_label": "undated"
+        },
+        {
+          "url": "https://mcp-proxy-external.pitchbook.com/oauth/login?redirect=%2Ftools&show=true",
+          "title": "Sign In - MCP Proxy - PitchBook",
+          "quote": "Sign in to access PitchBook MCP External Gateway\nSign in with OAuth 2.0",
+          "retrieved_at": "2026-11-24",
+          "published_at": null,
+          "published_label": "undated"
+        }
+      ]
+    },
+    "credential_gate": {
+      "status": "checked",
+      "value": "partner_or_sales",
+      "gate_class": "partner_or_sales",
+      "reason": "The undated API help requires a standalone contract and directs prospects to the Direct Data team; the undated Direct Data help routes setup through an account manager, and the undated pricing page requires representative contact. The press release dated 2026-10-14 says Data MCP is available to customers upon request. These are vendor-mediated gates, not a public self-serve key flow.",
+      "evidence": [
+        {
+          "url": "https://pitchbook.com/help/PitchBook-api",
+          "title": "Help: PitchBook API - PitchBook",
+          "quote": "Our API is a separate offering from the PitchBook Platform that requires a standalone contract agreement.",
+          "retrieved_at": "2026-11-24",
+          "published_at": null,
+          "published_label": "undated"
+        },
+        {
+          "url": "https://pitchbook.com/help/PitchBook-api",
+          "title": "Help: PitchBook API - PitchBook",
+          "quote": "To start your API connection, you will need to send a request directly to our Direct Data team",
+          "retrieved_at": "2026-11-24",
+          "published_at": null,
+          "published_label": "undated"
+        },
+        {
+          "url": "https://pitchbook.com/help/data-feed-api-crm-direct-data-solutions",
+          "title": "Help: Data Feed, API, and CRM: Direct Data solutions - PitchBook",
+          "quote": "Contact your account manager\nA member of the PitchBook team will shortly be in touch by email with the next steps.",
+          "retrieved_at": "2026-11-24",
+          "published_at": null,
+          "published_label": "undated"
+        },
+        {
+          "url": "https://pitchbook.com/pricing",
+          "title": "PitchBook Pricing: Plans, Cost, and Subscriptions - PitchBook",
+          "quote": "Pricing options vary depending on how many seats you need and your firm type. Another primary consideration is whether you’re interested in additional premium offerings, such as Direct Data or CRM Integration. Find out what the cost for you might look like by getting in touch with a representative today.",
+          "retrieved_at": "2026-11-24",
+          "published_at": null,
+          "published_label": "undated"
+        },
+        {
+          "url": "https://pitchbook.com/media/press-releases/pitchbook-launches-an-agentic-platform-assistant-and-new-pitchbook-data-mcp-to-meet-investors-rapidly-evolving-workflow-needs",
+          "title": "PitchBook Launches an Agentic Platform Assistant and New PitchBook Data MCP to Meet Investors’ Rapidly Evolving Workflow Needs | PitchBook",
+          "quote": "The PitchBook Data MCP is currently live and available to customers upon request.",
+          "retrieved_at": "2026-11-24",
+          "published_at": "2026-10-14",
+          "published_label": "published 2026-10-14"
+        }
+      ]
+    },
+    "api_surface": {
+      "status": "checked",
+      "value": "REST; broad documented surface",
+      "api_types": [
+        "REST"
+      ],
+      "breadth": "broad",
+      "reason": "The undated official API product page explicitly identifies a RESTful JSON API and coverage across deals, investors, funds, people, limited partners, and service providers. The undated API help also documents multiple relational endpoints and the https://api.pitchbook.com base URL. This supports broad documented entity coverage, not a public endpoint census.",
+      "evidence": [
+        {
+          "url": "https://pitchbook.com/products/direct-access-data/api",
+          "title": "API: Flexibly call down data on demand - PitchBook",
+          "quote": "Our RESTful API utilizes JSON and is system agnostic, so you can integrate it into custom applications and CRMs to bring the industry’s best data directly into your workflow.",
+          "retrieved_at": "2026-11-24",
+          "published_at": null,
+          "published_label": "undated"
+        },
+        {
+          "url": "https://pitchbook.com/products/direct-access-data/api",
+          "title": "API: Flexibly call down data on demand - PitchBook",
+          "quote": "Call data on all PitchBook entity types including deals, investors, funds, people, limited partners and service providers.",
+          "retrieved_at": "2026-11-24",
+          "published_at": null,
+          "published_label": "undated"
+        },
+        {
+          "url": "https://pitchbook.com/help/PitchBook-api",
+          "title": "Help: PitchBook API - PitchBook",
+          "quote": "The PitchBook API is a RESTful implementation that most HTTP clients can easily access in your chosen language or via a web browser. Every call will use the same base URL: https://api.pitchbook.com",
+          "retrieved_at": "2026-11-24",
+          "published_at": null,
+          "published_label": "undated"
+        },
+        {
+          "url": "https://pitchbook.com/help/PitchBook-api",
+          "title": "Help: PitchBook API - PitchBook",
+          "quote": "The API solution offers a variety of relational endpoints, including financing details, deal stock information, as well as AI-powered VC exit predictor data.",
+          "retrieved_at": "2026-11-24",
+          "published_at": null,
+          "published_label": "undated"
+        }
+      ]
+    },
+    "official_mcp": {
+      "status": "checked",
+      "value": "vendor_server",
+      "mcp_mode": "unknown",
+      "reason": "PitchBook’s press release visibly dated October 14, 2026 announces PitchBook Data MCP, describes PitchBook data delivered directly into investors’ own tools and models, and says it is live for customers upon request; the undated AI page corroborates the vendor product. The official PitchBook MCP External Gateway separately identifies a production environment and OAuth 2.0 sign-in. No visible Data MCP text publishes an endpoint or explicitly labels transport local or remote, and the gateway is not explicitly linked to Data MCP, so mode remains unknown rather than conflating products. Direct retrieval of the API help and press release returned HTTP 403, but the in-app browser rendered those and the other targeted official pages without a bot challenge; no sign-in was attempted.",
+      "evidence": [
+        {
+          "url": "https://pitchbook.com/media/press-releases/pitchbook-launches-an-agentic-platform-assistant-and-new-pitchbook-data-mcp-to-meet-investors-rapidly-evolving-workflow-needs",
+          "title": "PitchBook Launches an Agentic Platform Assistant and New PitchBook Data MCP to Meet Investors’ Rapidly Evolving Workflow Needs | PitchBook",
+          "quote": "October 14, 2026",
+          "retrieved_at": "2026-11-24",
+          "published_at": "2026-10-14",
+          "published_label": "published 2026-10-14"
+        },
+        {
+          "url": "https://pitchbook.com/media/press-releases/pitchbook-launches-an-agentic-platform-assistant-and-new-pitchbook-data-mcp-to-meet-investors-rapidly-evolving-workflow-needs",
+          "title": "PitchBook Launches an Agentic Platform Assistant and New PitchBook Data MCP to Meet Investors’ Rapidly Evolving Workflow Needs | PitchBook",
+          "quote": "PitchBook Data MCP puts its trusted data into the systems investors have already built. PitchBook Data MCP gives investment teams native, secure access to a subset of PitchBook’s dataset, including company, deal, investor, and fund data, directly inside their own proprietary tools and models.",
+          "retrieved_at": "2026-11-24",
+          "published_at": "2026-10-14",
+          "published_label": "published 2026-10-14"
+        },
+        {
+          "url": "https://pitchbook.com/media/press-releases/pitchbook-launches-an-agentic-platform-assistant-and-new-pitchbook-data-mcp-to-meet-investors-rapidly-evolving-workflow-needs",
+          "title": "PitchBook Launches an Agentic Platform Assistant and New PitchBook Data MCP to Meet Investors’ Rapidly Evolving Workflow Needs | PitchBook",
+          "quote": "The PitchBook Data MCP is currently live and available to customers upon request.",
+          "retrieved_at": "2026-11-24",
+          "published_at": "2026-10-14",
+          "published_label": "published 2026-10-14"
+        },
+        {
+          "url": "https://pitchbook.com/products/pitchbooks-ai-capabilities",
+          "title": "AI & Machine Learning for Private Markets - PitchBook",
+          "quote": "PitchBook Data MCP gives your team secure, native access to select company, deal, investor, and fund data in the proprietary tools your firm has built or the commercial LLMs it uses. It brings the grounded access available through our LLM partners to the systems where your team is already asking questions, without a separate integration to maintain.",
+          "retrieved_at": "2026-11-24",
+          "published_at": null,
+          "published_label": "undated"
+        },
+        {
+          "url": "https://mcp-proxy-external.pitchbook.com/",
+          "title": "MCP Proxy - Model Context Protocol Server",
+          "quote": "PitchBook MCP Gateway Production Environment\nSecure Access to PitchBook's MCP Servers",
+          "retrieved_at": "2026-11-24",
+          "published_at": null,
+          "published_label": "undated"
+        },
+        {
+          "url": "https://mcp-proxy-external.pitchbook.com/oauth/login?redirect=%2Ftools&show=true",
+          "title": "Sign In - MCP Proxy - PitchBook",
+          "quote": "Sign in to access PitchBook MCP External Gateway\nSign in with OAuth 2.0",
+          "retrieved_at": "2026-11-24",
+          "published_at": null,
+          "published_label": "undated"
+        }
+      ]
+    },
+    "composio_toolkit": {
+      "status": "checked",
+      "value": "listed_exact",
+      "reason": "The current complete Composio catalog contains the exact PitchBook toolkit and `PITCHBOOK` slug.",
+      "evidence": [
+        {
+          "url": "https://docs.composio.dev/toolkits.md",
+          "title": "Composio Toolkits",
+          "quote": "| [PitchBook](/toolkits/pitchbook.md) | `PITCHBOOK` | 130 | 0 | API_KEY | — |",
+          "retrieved_at": "2026-11-24",
+          "published_at": null,
+          "published_label": "undated"
+        }
+      ]
+    },
+    "verdict": {
+      "status": "checked",
+      "value": "partner_outreach",
+      "reason": "The documented broad REST/JSON API and official vendor MCP product justify partner outreach, but the standalone API contract, custom pricing, vendor-provisioned credentials, and customer-request MCP access prevent a self-serve build. The REST credential wire format and Data MCP endpoint/transport remain unpublished. The press release is dated 2026-10-14; the other cited vendor pages are undated.",
+      "evidence": [
+        {
+          "url": "https://pitchbook.com/help/PitchBook-api",
+          "title": "Help: PitchBook API - PitchBook",
+          "quote": "Our API is a separate offering from the PitchBook Platform that requires a standalone contract agreement.",
+          "retrieved_at": "2026-11-24",
+          "published_at": null,
+          "published_label": "undated"
+        },
+        {
+          "url": "https://pitchbook.com/products/direct-access-data/api",
+          "title": "API: Flexibly call down data on demand - PitchBook",
+          "quote": "Our RESTful API utilizes JSON and is system agnostic, so you can integrate it into custom applications and CRMs to bring the industry’s best data directly into your workflow.",
+          "retrieved_at": "2026-11-24",
+          "published_at": null,
+          "published_label": "undated"
+        },
+        {
+          "url": "https://pitchbook.com/products/direct-access-data/api",
+          "title": "API: Flexibly call down data on demand - PitchBook",
+          "quote": "Call data on all PitchBook entity types including deals, investors, funds, people, limited partners and service providers.",
+          "retrieved_at": "2026-11-24",
+          "published_at": null,
+          "published_label": "undated"
+        },
+        {
+          "url": "https://pitchbook.com/media/press-releases/pitchbook-launches-an-agentic-platform-assistant-and-new-pitchbook-data-mcp-to-meet-investors-rapidly-evolving-workflow-needs",
+          "title": "PitchBook Launches an Agentic Platform Assistant and New PitchBook Data MCP to Meet Investors’ Rapidly Evolving Workflow Needs | PitchBook",
+          "quote": "The PitchBook Data MCP is currently live and available to customers upon request.",
+          "retrieved_at": "2026-11-24",
+          "published_at": "2026-10-14",
+          "published_label": "published 2026-10-14"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,129 @@
+{
+  "app": {
+    "number": 88,
+    "name": "Brex",
+    "category": "Finance and Fintech",
+    "hint": "developer.brex.com"
+  },
+  "replayed_at": "2026-11-23T18:41:38.673140+00:00",
+  "source_passes": [
+    "data/pass2/088.json",
+    "data/pass4/088.json"
+  ],
+  "source_searches": [
+    "data/new_search/088.json",
+    "data/pass4_search/088.json"
+  ],
+  "publication_date_note": "Search publication labels are retained exactly; null means no label was available. Relative labels are not exact dates.",
+  "claims": {
+    "auth": {
+      "value": [
+        "API key",
+        "OAuth 2.0",
+        "API token",
+        "Bearer token"
+      ],
+      "status": "provisional",
+      "sources": [
+        "https://www.brex.com/legal/developer-portal",
+        "https://developer.brex.com/guides/partner_authentication",
+        "https://www.brex.com/support/brex-api"
+      ],
+      "evidence": [
+        {
+          "value": "API key",
+          "url": "https://www.brex.com/legal/developer-portal",
+          "excerpt": "nd the Brex APIs documentation. We will assign you with keys or other credentials (“ Brex API Keys ”) to enable your access to and use of the Brex APIs. We may issue, activate, suspend, re-activate, or deactivate your Brex API Keys to ensure usage of the Brex APIs co",
+          "published_label": "6 months ago"
+        },
+        {
+          "value": "OAuth 2.0",
+          "url": "https://developer.brex.com/guides/partner_authentication",
+          "excerpt": "enid : Required to make an OpenID Connect request. offline_access : Required to obtain an OAuth 2.0 Refresh Token. The scopes page describes how scopes work in the Brex API and the scopes required for each API. Auth server The base URL for the requests is: Production:",
+          "published_label": null
+        },
+        {
+          "value": "API token",
+          "url": "https://developer.brex.com/guides/partner_authentication",
+          "excerpt": "token from the API, pass the authorization code along with authentication details to the API token endpoint. Here is an cURL example request: curl '{staging or production base auth URL}/v1/token' \\ --header 'Content-Type: application/x-www-form-urlencoded' \\ --data-ur",
+          "published_label": null
+        },
+        {
+          "value": "Bearer token",
+          "url": "https://developer.brex.com/guides/partner_authentication",
+          "excerpt": "e user to re-authorize the request. 4. Using an access token Add your <ACCESS_TOKEN> as a bearer token into the request header of any API calls you are making on behalf of the customer. Request header: Authorization: Bearer <ACCESS_TOKEN> 5. Getting a new access token and",
+          "published_label": null
+        },
+        {
+          "value": "API token",
+          "url": "https://www.brex.com/support/brex-api",
+          "excerpt": "elp to keep your Brex data secure through the API: Only account or card admins can create API tokens in the dashboard. You can restrict scopes to only allow the functionality you need to access via API. All account and card admins on the account receive an email confir",
+          "published_label": null
+        }
+      ],
+      "reason": "Provisional extraction; validate scope and completeness against cited pages."
+    },
+    "credential_gate": {
+      "value": [
+        "partner_or_sales"
+      ],
+      "status": "provisional",
+      "sources": [
+        "https://www.brex.com/journal/brex-mcp-connect-brex-to-ai-tools",
+        "https://www.brex.com/legal/developer-portal"
+      ],
+      "evidence": [
+        {
+          "value": "partner_or_sales",
+          "url": "https://www.brex.com/journal/brex-mcp-connect-brex-to-ai-tools",
+          "excerpt": "How Brex + Capital One will accelerate how we serve startups Brex's CEO explains how our partnership with Capital One will make Brex even better for startups. More speed, more investment, same founder focus. Evaluating burn reduction vs. growth investment When runway ti",
+          "published_label": null
+        },
+        {
+          "value": "partner_or_sales",
+          "url": "https://www.brex.com/legal/developer-portal",
+          "excerpt": "tors. Nothing contained in this Agreement will be construed as creating or constituting a partnership, joint venture or agency between the Parties to this Agreement. Each Party will be deemed an independent contractor with respect to the other Party in fulfillment of the",
+          "published_label": "6 months ago"
+        }
+      ],
+      "reason": "Provisional extraction; validate scope and completeness against cited pages."
+    },
+    "api_surface": {
+      "value": "unknown",
+      "status": "provisional",
+      "sources": [],
+      "evidence": [],
+      "reason": "No sufficiently specific official evidence extracted."
+    },
+    "official_mcp": {
+      "value": "unknown",
+      "status": "provisional",
+      "sources": [],
+      "evidence": [],
+      "reason": "No sufficiently specific official evidence extracted."
+    },
+    "composio_toolkit": {
+      "value": "listed",
+      "status": "provisional",
+      "sources": [
+        "https://docs.composio.dev/toolkits/brex"
+      ],
+      "evidence": [],
+      "reason": "Catalog match only; not vendor MCP evidence."
+    },
+    "verdict": {
+      "value": "unknown",
+      "status": "provisional",
+      "sources": [],
+      "evidence": [],
+      "reason": "No sufficiently specific official evidence extracted."
+    }
+  },
+  "validation": [
+    "Automatic extraction is provisional until independently reviewed",
+    "Unknown is not evidence of absence",
+    "Composio evidence cannot establish vendor MCP",
+    "Client-only and negated MCP statements are not vendor-server proof",
+    "API breadth is a text-coverage heuristic, not an endpoint census"
+  ]
+}

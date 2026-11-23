@@ -1,0 +1,93 @@
+{
+  "app": {
+    "number": 24,
+    "name": "Lark (Larksuite)",
+    "category": "Communications and Messaging",
+    "hint": "open.larksuite.com"
+  },
+  "checked_at": "2026-11-23T18:14:57.545157+00:00",
+  "prior_source": "data/pass2/024.json",
+  "search_source": "data/pass4_search/024.json",
+  "new_candidates": [
+    {
+      "url": "https://open.larksuite.com/document/ukTMukTMukTM/uUDN04SN0QjL1QDN/docs-v1",
+      "title": "Get docs content - Server API - Documentation - Lark Developer (https://open.larksuite.com/document/ukTMukTMukTM/uUDN04SN0QjL1QDN/docs-v1)",
+      "published_label": null
+    },
+    {
+      "url": "https://open.larksuite.com/document/server-docs/im-v1/faq",
+      "title": "FAQs - Server API - Documentation - Lark Developer (https://open.larksuite.com/document/server-docs/im-v1/faq)",
+      "published_label": "2.5 years ago"
+    },
+    {
+      "url": "https://open.larksuite.com/document/uAjLw4CM/ukTMukTMukTM/reference/im-v1/introduction",
+      "title": "Overview - Server API - Documentation - Lark Developer (https://open.larksuite.com/document/uAjLw4CM/ukTMukTMukTM/reference/im-v1/introduction)",
+      "published_label": "2.5 years ago"
+    },
+    {
+      "url": "https://open.larksuite.com/document/mcp_open_tools",
+      "title": "Overview of Lark Agent Integration Capabilities - Lark CLI - Documentation - Lark Developer (https://open.larksuite.com/document/mcp_open_tools)",
+      "published_label": "6 months ago"
+    }
+  ],
+  "selected": [
+    {
+      "url": "https://open.larksuite.com/document/ukTMukTMukTM/uUDN04SN0QjL1QDN/docs-v1",
+      "title": "Get docs content - Server API - Documentation - Lark Developer (https://open.larksuite.com/document/ukTMukTMukTM/uUDN04SN0QjL1QDN/docs-v1)",
+      "published_label": null
+    }
+  ],
+  "new_pages": [
+    {
+      "url": "https://open.larksuite.com/document/ukTMukTMukTM/uUDN04SN0QjL1QDN/docs-v1",
+      "requested_url": "https://open.larksuite.com/document/ukTMukTMukTM/uUDN04SN0QjL1QDN/docs-v1",
+      "status": 200,
+      "title": "Get docs content - Server API - Documentation - Lark Developer (https://open.larksuite.com/document/ukTMukTMukTM/uUDN04SN0QjL1QDN/docs-v1)",
+      "text": "开发文档 - Lark开放平台",
+      "published_label": null
+    }
+  ],
+  "claims": {
+    "auth": {
+      "value": "unknown",
+      "sources": [],
+      "evidence": [],
+      "reason": "No sufficiently specific positive evidence extracted; review targeted search results."
+    },
+    "credential_gate": {
+      "value": "unknown",
+      "sources": [],
+      "evidence": [],
+      "reason": "No sufficiently specific positive evidence extracted; review targeted search results."
+    },
+    "api_surface": {
+      "value": "unknown",
+      "sources": [],
+      "evidence": [],
+      "reason": "No sufficiently specific positive evidence extracted; review targeted search results."
+    },
+    "official_mcp": {
+      "value": "unknown",
+      "sources": [],
+      "evidence": [],
+      "reason": "No sufficiently specific positive evidence extracted; review targeted search results."
+    },
+    "composio_toolkit": {
+      "value": "unknown",
+      "sources": [],
+      "evidence": [],
+      "reason": "No exact or reviewed alias match; absence is not established."
+    },
+    "verdict": {
+      "value": "unknown",
+      "sources": [],
+      "evidence": [],
+      "reason": "A supported access path, authentication method and API surface were not all extracted."
+    }
+  },
+  "validation": [
+    "All claims are provisional",
+    "No vendor MCP inference from Composio catalog",
+    "Negated MCP or client-only source is not counted as vendor-server proof"
+  ]
+}

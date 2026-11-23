@@ -1,0 +1,114 @@
+{
+  "app": {
+    "number": 16,
+    "name": "LiveAgent",
+    "category": "Support and Helpdesk",
+    "hint": "liveagent.com"
+  },
+  "replayed_at": "2026-11-23T18:45:08.223645+00:00",
+  "source_passes": [
+    "data/pass2/016.json",
+    "data/pass4/016.json"
+  ],
+  "source_searches": [
+    "data/new_search/016.json",
+    "data/pass4_search/016.json"
+  ],
+  "publication_date_note": "Search publication labels are retained exactly; null means no label was available. Relative labels are not exact dates.",
+  "claims": {
+    "auth": {
+      "value": [
+        "API key",
+        "OAuth 2.0",
+        "Bearer token"
+      ],
+      "status": "provisional",
+      "sources": [
+        "https://faq.liveagent.com/916372-API-v1-vs-API-v3-in-LiveAgent-Key-Differences-Authentication-and-Resolving-ApiKey-Errors",
+        "https://support.liveagent.com/647358-MCP-Integration-for-agents",
+        "https://support.liveagent.com/802463-REST-API"
+      ],
+      "evidence": [
+        {
+          "value": "API key",
+          "url": "https://faq.liveagent.com/916372-API-v1-vs-API-v3-in-LiveAgent-Key-Differences-Authentication-and-Resolving-ApiKey-Errors",
+          "excerpt": "between API v1 and API v3 authentication in LiveAgent, how to obtain and use the correct API key for each version, and how to resolve the ApiKey not found (403) error when calling API endpoints. Understanding API v1 and API v3 Keys LiveAgent supports two API version",
+          "published_label": null
+        },
+        {
+          "value": "OAuth 2.0",
+          "url": "https://support.liveagent.com/647358-MCP-Integration-for-agents",
+          "excerpt": "MCP Integration for agents MCP Integration for agents Home > Technical Support > Features and functions > AI > AI features > MCP Integration for agents LiveAgent exposes a built-in MCP server (Model Context Protocol) that lets you connect external AI tools, such as ChatGPT, Claud",
+          "published_label": null
+        },
+        {
+          "value": "Bearer token",
+          "url": "https://support.liveagent.com/647358-MCP-Integration-for-agents",
+          "excerpt": "iscovers the authorization server automatically and redirects you to a consent screen, or Bearer token , where you generate an MCP access token in your profile and paste it into the AI tool's configuration manually. Finding MCP Integration in your profile Click your avata",
+          "published_label": null
+        },
+        {
+          "value": "API key",
+          "url": "https://support.liveagent.com/802463-REST-API",
+          "excerpt": "REST API REST API Home > Technical Support > LiveAgent API > REST API API key What is an API key\n\n API key is an identity of your LiveAgent (like your username and password) which you can use to build your own custom integration solutions. Never g",
+          "published_label": null
+        }
+      ],
+      "reason": "Provisional extraction; validate scope and completeness against cited pages."
+    },
+    "credential_gate": {
+      "value": "unknown",
+      "status": "provisional",
+      "sources": [],
+      "evidence": [],
+      "reason": "No sufficiently specific official evidence extracted."
+    },
+    "api_surface": {
+      "value": "REST; narrow documented surface",
+      "status": "provisional",
+      "sources": [
+        "https://support.liveagent.com/802463-REST-API"
+      ],
+      "evidence": [
+        {
+          "value": [
+            "REST"
+          ],
+          "breadth": "narrow",
+          "url": "https://support.liveagent.com/802463-REST-API",
+          "excerpt": "REST API REST API Home > Technical Support > LiveAgent API > REST API API key What is an API key\n\n API key is an identity of your LiveAgent (like your username and password) which you can use to build your own custom integration solutions. Never give it to anybody you don't trust",
+          "published_label": null
+        }
+      ],
+      "reason": "Provisional extraction; validate scope and completeness against cited pages."
+    },
+    "official_mcp": {
+      "value": "unknown",
+      "status": "provisional",
+      "sources": [],
+      "evidence": [],
+      "reason": "No sufficiently specific official evidence extracted."
+    },
+    "composio_toolkit": {
+      "value": "unknown",
+      "status": "provisional",
+      "sources": [],
+      "evidence": [],
+      "reason": "No sufficiently specific official evidence extracted."
+    },
+    "verdict": {
+      "value": "unknown",
+      "status": "provisional",
+      "sources": [],
+      "evidence": [],
+      "reason": "No sufficiently specific official evidence extracted."
+    }
+  },
+  "validation": [
+    "Automatic extraction is provisional until independently reviewed",
+    "Unknown is not evidence of absence",
+    "Composio evidence cannot establish vendor MCP",
+    "Client-only and negated MCP statements are not vendor-server proof",
+    "API breadth is a text-coverage heuristic, not an endpoint census"
+  ]
+}

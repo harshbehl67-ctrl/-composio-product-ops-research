@@ -1,0 +1,103 @@
+{
+  "app": {
+    "number": 92,
+    "name": "Otter AI",
+    "category": "AI, Research and Media-native",
+    "hint": "help.otter.ai (MCP server)"
+  },
+  "replayed_at": "2026-11-23T18:45:17.747209+00:00",
+  "source_passes": [
+    "data/pass2/092.json",
+    "data/pass4/092.json"
+  ],
+  "source_searches": [
+    "data/new_search/092.json",
+    "data/pass4_search/092.json"
+  ],
+  "publication_date_note": "Search publication labels are retained exactly; null means no label was available. Relative labels are not exact dates.",
+  "claims": {
+    "auth": {
+      "value": [
+        "API key",
+        "Bearer token"
+      ],
+      "status": "provisional",
+      "sources": [
+        "https://help.otter.ai/hc/en-us/articles/36130822688279-Otter-ai-Public-API",
+        "https://help.otter.ai/hc/en-us/articles/35287607569687-Otter-MCP-Server",
+        "https://help.otter.ai/hc/en-us/articles/27616131311127-Connect-Otter-to-Zapier"
+      ],
+      "evidence": [
+        {
+          "value": "API key",
+          "url": "https://help.otter.ai/hc/en-us/articles/36130822688279-Otter-ai-Public-API",
+          "excerpt": "ng through results, and understanding usage limits. Authentication Create and manage your API keys All API requests require authentication using Bearer token authentication. Follow the steps below to create your API key. Go to Integrations → Developer . Click Create",
+          "published_label": null
+        },
+        {
+          "value": "Bearer token",
+          "url": "https://help.otter.ai/hc/en-us/articles/36130822688279-Otter-ai-Public-API",
+          "excerpt": "hentication Create and manage your API keys All API requests require authentication using Bearer token authentication. Follow the steps below to create your API key. Go to Integrations → Developer . Click Create key. Click Copy and store the API key in a safe place. Note:",
+          "published_label": null
+        },
+        {
+          "value": "API key",
+          "url": "https://help.otter.ai/hc/en-us/articles/35287607569687-Otter-MCP-Server",
+          "excerpt": "is not yet available. Connect Otter MCP on the web version of ChatGPT . Is there a public API key for me to set up Otter MCP for my AI application? We currently do not have a public API key at this time. Contact our Otter Support team for help setting up Otter MCP wi",
+          "published_label": null
+        },
+        {
+          "value": "API key",
+          "url": "https://help.otter.ai/hc/en-us/articles/27616131311127-Connect-Otter-to-Zapier",
+          "excerpt": "Zapier. Create a new Zap. Under Account , click Sign in . If you have already created an API key, skip to step 6 . Note: Make sure Otter.ai is selected as the App before signing in. Go to the Account Settings → Developer . Note: The Developer tab may not be availabl",
+          "published_label": null
+        }
+      ],
+      "reason": "Provisional extraction; validate scope and completeness against cited pages."
+    },
+    "credential_gate": {
+      "value": "unknown",
+      "status": "provisional",
+      "sources": [],
+      "evidence": [],
+      "reason": "No sufficiently specific official evidence extracted."
+    },
+    "api_surface": {
+      "value": "unknown",
+      "status": "provisional",
+      "sources": [],
+      "evidence": [],
+      "reason": "No sufficiently specific official evidence extracted."
+    },
+    "official_mcp": {
+      "value": "unknown",
+      "status": "provisional",
+      "sources": [],
+      "evidence": [],
+      "reason": "No sufficiently specific official evidence extracted."
+    },
+    "composio_toolkit": {
+      "value": "listed",
+      "status": "provisional",
+      "sources": [
+        "https://docs.composio.dev/toolkits/otter_ai_mcp"
+      ],
+      "evidence": [],
+      "reason": "Catalog match only; not vendor MCP evidence."
+    },
+    "verdict": {
+      "value": "unknown",
+      "status": "provisional",
+      "sources": [],
+      "evidence": [],
+      "reason": "No sufficiently specific official evidence extracted."
+    }
+  },
+  "validation": [
+    "Automatic extraction is provisional until independently reviewed",
+    "Unknown is not evidence of absence",
+    "Composio evidence cannot establish vendor MCP",
+    "Client-only and negated MCP statements are not vendor-server proof",
+    "API breadth is a text-coverage heuristic, not an endpoint census"
+  ]
+}

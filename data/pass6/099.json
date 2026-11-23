@@ -1,0 +1,83 @@
+{
+  "app": {
+    "number": 99,
+    "name": "YouTube Transcript",
+    "category": "AI, Research and Media-native",
+    "hint": "transcriptapi.com"
+  },
+  "replayed_at": "2026-11-23T18:17:24.715913+00:00",
+  "source_passes": [
+    "data/pass2/099.json",
+    "data/pass4/099.json"
+  ],
+  "source_search": "data/new_search/099.json",
+  "publication_date_note": "Published labels are retained exactly as supplied by search; missing labels are null. Relative labels must not be treated as exact publication dates.",
+  "claims": {
+    "auth": {
+      "value": "unknown",
+      "sources": [],
+      "evidence": [],
+      "reason": "No sufficiently specific positive evidence extracted; review targeted search results."
+    },
+    "credential_gate": {
+      "value": "unknown",
+      "sources": [],
+      "evidence": [],
+      "reason": "No sufficiently specific positive evidence extracted; review targeted search results."
+    },
+    "api_surface": {
+      "value": [
+        "REST"
+      ],
+      "sources": [
+        "https://transcriptapi.com/docs/mcp/"
+      ],
+      "evidence": [
+        {
+          "value": "REST",
+          "url": "https://transcriptapi.com/docs/mcp/",
+          "excerpt": "There is nothing to install or host. The server uses the same account, API keys, and credits as the REST API . Server URL: https://transcriptapi.com/mcp Authentication: OAuth 2.1 (Claude, ChatGPT) or an API key sent as a Bearer token (OpenAI Agent Builder and other clients). See Authenti",
+          "published_label": null
+        }
+      ],
+      "reason": "Provisional extraction: validate scope and completeness against the cited page."
+    },
+    "official_mcp": {
+      "value": "yes (provisional)",
+      "sources": [
+        "https://transcriptapi.com/docs/mcp/"
+      ],
+      "evidence": [
+        {
+          "value": "yes (provisional)",
+          "url": "https://transcriptapi.com/docs/mcp/",
+          "excerpt": "l Learn how to set up TranscriptAPI with OpenAI Agent Builder for AI\nworkflows. YouTube Transcript MCP Server Section titled âYouTube Transcript MCP Serverâ TranscriptAPI runs a hosted (remote) MCP server at https://transcriptapi.com/mcp . Add that URL to an MCP cl",
+          "published_label": null,
+          "context_warning": "Review vendor ownership, dates, and scope."
+        }
+      ],
+      "reason": "Provisional; check source date, scope, and vendor ownership."
+    },
+    "composio_toolkit": {
+      "value": "listed",
+      "sources": [
+        "https://docs.composio.dev/toolkits/youtube_transcript"
+      ],
+      "evidence": [],
+      "reason": "Catalog match; scope needs review."
+    },
+    "verdict": {
+      "value": "unknown",
+      "sources": [],
+      "evidence": [],
+      "reason": "A supported access path, authentication method and API surface were not all extracted."
+    }
+  },
+  "validation": [
+    "Automatic extraction is provisional and not a verified final claim",
+    "Unknown is not evidence of absence",
+    "No Composio-to-vendor-MCP inference",
+    "Basic authentication may be endpoint-specific",
+    "Client-only and negated statements are not positive MCP evidence"
+  ]
+}

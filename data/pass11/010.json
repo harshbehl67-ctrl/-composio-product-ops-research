@@ -1,0 +1,167 @@
+{
+  "app": {
+    "number": 10,
+    "name": "DealCloud",
+    "category": "CRM and Sales",
+    "hint": "api.docs.dealcloud.com"
+  },
+  "replayed_at": "2026-11-23T18:45:07.564806+00:00",
+  "source_passes": [
+    "data/pass2/010.json",
+    "data/pass4/010.json"
+  ],
+  "source_searches": [
+    "data/new_search/010.json",
+    "data/pass4_search/010.json"
+  ],
+  "publication_date_note": "Search publication labels are retained exactly; null means no label was available. Relative labels are not exact dates.",
+  "claims": {
+    "auth": {
+      "value": [
+        "OAuth 2.0",
+        "API key",
+        "Bearer token"
+      ],
+      "status": "provisional",
+      "sources": [
+        "https://api.docs.dealcloud.com/docs/token",
+        "https://api.docs.dealcloud.com/mcp/getting-started",
+        "https://api.docs.dealcloud.com/mcp/connections",
+        "https://api.docs.dealcloud.com/docs",
+        "https://api.docs.dealcloud.com/mcp",
+        "https://api.docs.dealcloud.com/docs/apikeys",
+        "https://api.docs.dealcloud.com/sdk/python-1.X/configuration/authentication",
+        "https://api.docs.dealcloud.com/docs/publications/getting_started"
+      ],
+      "evidence": [
+        {
+          "value": "OAuth 2.0",
+          "url": "https://api.docs.dealcloud.com/docs/token",
+          "excerpt": "Requesting an OAuth2 Bearer Token - DealCloud API Docs API Reference Getting Started API Keys Authorization Token Pagination Rate Limits Status Codes and Handling Core Schema EntryTypes All Entry Types Entry Type by ID Fields All Fields Fields by EntryType Field by ID Multiple Fi",
+          "published_label": null
+        },
+        {
+          "value": "API key",
+          "url": "https://api.docs.dealcloud.com/docs/token",
+          "excerpt": "Requesting an OAuth2 Bearer Token - DealCloud API Docs API Reference Getting Started API Keys Authorization Token Pagination Rate Limits Status Codes and Handling Core Schema EntryTypes All Entry Types Entry Type by ID Fields All Fields Fields by EntryType Field",
+          "published_label": null
+        },
+        {
+          "value": "Bearer token",
+          "url": "https://api.docs.dealcloud.com/docs/token",
+          "excerpt": "Requesting an OAuth2 Bearer Token - DealCloud API Docs API Reference Getting Started API Keys Authorization Token Pagination Rate Limits Status Codes and Handling Core Schema EntryTypes All Entry Types E",
+          "published_label": null
+        },
+        {
+          "value": "API key",
+          "url": "https://api.docs.dealcloud.com/mcp/getting-started",
+          "excerpt": "Getting Started with DealCloud MCP - DealCloud API Docs API Reference Getting Started API Keys Authorization Token Pagination Rate Limits Status Codes and Handling Core Schema EntryTypes All Entry Types Entry Type by ID Fields All Fields Fields by EntryType Field",
+          "published_label": null
+        },
+        {
+          "value": "OAuth 2.0",
+          "url": "https://api.docs.dealcloud.com/mcp/connections",
+          "excerpt": "rrent MCP spec, including hosted platforms and local agents. Connections authenticate via OAuth 2.0. DealCloud MCP advertises its OAuth configuration through standard .well-known discovery endpoints, so clients that support dynamic discovery connect automatically, with",
+          "published_label": null
+        },
+        {
+          "value": "API key",
+          "url": "https://api.docs.dealcloud.com/mcp/connections",
+          "excerpt": "Connecting AI Clients - DealCloud API Docs API Reference Getting Started API Keys Authorization Token Pagination Rate Limits Status Codes and Handling Core Schema EntryTypes All Entry Types Entry Type by ID Fields All Fields Fields by EntryType Field",
+          "published_label": null
+        },
+        {
+          "value": "API key",
+          "url": "https://api.docs.dealcloud.com/docs",
+          "excerpt": "Docs - DealCloud API Docs API Reference Getting Started API Keys Authorization Token Pagination Rate Limits Status Codes and Handling Core Schema EntryTypes All Entry Types Entry Type by ID Fields All Fields Fields by EntryType Field",
+          "published_label": null
+        },
+        {
+          "value": "API key",
+          "url": "https://api.docs.dealcloud.com/mcp",
+          "excerpt": "DealCloud MCP Server - DealCloud API Docs API Reference Getting Started API Keys Authorization Token Pagination Rate Limits Status Codes and Handling Core Schema EntryTypes All Entry Types Entry Type by ID Fields All Fields Fields by EntryType Field",
+          "published_label": null
+        },
+        {
+          "value": "API key",
+          "url": "https://api.docs.dealcloud.com/docs/apikeys",
+          "excerpt": "Obtaining an API Key - DealCloud API Docs API Reference Getting Started API Keys Authorization Token Pagination Rate Limits Status Codes and Handling Core Schema EntryTypes All Entry Types E",
+          "published_label": null
+        },
+        {
+          "value": "OAuth 2.0",
+          "url": "https://api.docs.dealcloud.com/sdk/python-1.X/configuration/authentication",
+          "excerpt": "Authentication - DealCloud API Docs API Reference Getting Started API Keys Authorization Token Pagination Rate Limits Status Codes and Handling Core Schema EntryTypes All Entry Types Entry Type by ID Fields All Fields Fields by EntryType Field by ID Multiple Field IDs Choice Fiel",
+          "published_label": null
+        },
+        {
+          "value": "API key",
+          "url": "https://api.docs.dealcloud.com/sdk/python-1.X/configuration/authentication",
+          "excerpt": "Authentication - DealCloud API Docs API Reference Getting Started API Keys Authorization Token Pagination Rate Limits Status Codes and Handling Core Schema EntryTypes All Entry Types Entry Type by ID Fields All Fields Fields by EntryType Field",
+          "published_label": null
+        },
+        {
+          "value": "API key",
+          "url": "https://api.docs.dealcloud.com/docs/publications/getting_started",
+          "excerpt": "Getting Started - DealCloud API Docs API Reference Getting Started API Keys Authorization Token Pagination Rate Limits Status Codes and Handling Core Schema EntryTypes All Entry Types Entry Type by ID Fields All Fields Fields by EntryType Field",
+          "published_label": null
+        }
+      ],
+      "reason": "Provisional extraction; validate scope and completeness against cited pages."
+    },
+    "credential_gate": {
+      "value": "unknown",
+      "status": "provisional",
+      "sources": [],
+      "evidence": [],
+      "reason": "No sufficiently specific official evidence extracted."
+    },
+    "api_surface": {
+      "value": "REST; moderate documented surface",
+      "status": "provisional",
+      "sources": [
+        "https://api.docs.dealcloud.com/docs"
+      ],
+      "evidence": [
+        {
+          "value": [
+            "REST"
+          ],
+          "breadth": "moderate",
+          "url": "https://api.docs.dealcloud.com/docs",
+          "excerpt": "Docs - DealCloud API Docs API Reference Getting Started API Keys Authorization Token Pagination Rate Limits Status Codes and Handling Core Schema EntryTypes All Entry Types Entry Type by ID Fields All Fields Fields by EntryType Field by ID Multiple Field IDs Choice Field Values S",
+          "published_label": null
+        }
+      ],
+      "reason": "Provisional extraction; validate scope and completeness against cited pages."
+    },
+    "official_mcp": {
+      "value": "unknown",
+      "status": "provisional",
+      "sources": [],
+      "evidence": [],
+      "reason": "No sufficiently specific official evidence extracted."
+    },
+    "composio_toolkit": {
+      "value": "unknown",
+      "status": "provisional",
+      "sources": [],
+      "evidence": [],
+      "reason": "No sufficiently specific official evidence extracted."
+    },
+    "verdict": {
+      "value": "unknown",
+      "status": "provisional",
+      "sources": [],
+      "evidence": [],
+      "reason": "No sufficiently specific official evidence extracted."
+    }
+  },
+  "validation": [
+    "Automatic extraction is provisional until independently reviewed",
+    "Unknown is not evidence of absence",
+    "Composio evidence cannot establish vendor MCP",
+    "Client-only and negated MCP statements are not vendor-server proof",
+    "API breadth is a text-coverage heuristic, not an endpoint census"
+  ]
+}

@@ -1,0 +1,129 @@
+{
+  "app": {
+    "number": 21,
+    "name": "Slack",
+    "category": "Communications and Messaging",
+    "hint": "slack.com"
+  },
+  "replayed_at": "2026-11-23T18:16:36.484848+00:00",
+  "source_passes": [
+    "data/pass2/021.json",
+    "data/pass4/021.json"
+  ],
+  "source_search": "data/new_search/021.json",
+  "publication_date_note": "Published labels are retained exactly as supplied by search; missing labels are null. Relative labels must not be treated as exact publication dates.",
+  "claims": {
+    "auth": {
+      "value": [
+        "OAuth 2.0",
+        "API token",
+        "Basic authentication (OAuth client or endpoint-specific)"
+      ],
+      "sources": [
+        "https://docs.slack.dev/authentication/installing-with-oauth/",
+        "https://docs.slack.dev/reference/methods/oauth.access/",
+        "https://docs.slack.dev/authentication/"
+      ],
+      "evidence": [
+        {
+          "value": "OAuth 2.0",
+          "url": "https://docs.slack.dev/authentication/installing-with-oauth/",
+          "excerpt": "er Docs guide Skip to main content Copy as markdown On this page Slack apps are installed with a v2 OAuth 2.0 flow. Your app can act with its own identity instead of acting on behalf of users, without requesting excessive permissions that could cause installations to be rejected. OAuth 2.",
+          "published_label": null
+        },
+        {
+          "value": "API token",
+          "url": "https://docs.slack.dev/reference/methods/oauth.access/",
+          "excerpt": "or granular permissions Slack apps This method allows you to exchange a temporary OAuth code for an API access token. This is the third step of the OAuth authentication flow . We strongly recommend supplying the Client ID and Client Secret using the HTTP Basic authentication scheme, as discussed",
+          "published_label": null
+        },
+        {
+          "value": "Basic authentication (OAuth client or endpoint-specific)",
+          "url": "https://docs.slack.dev/reference/methods/oauth.access/",
+          "excerpt": "ret as parameters in your request and instead supply the Client ID and Client Secret using the HTTP Basic authentication scheme. Example: 2141029472.691202649728 client_secret string Optional Issued when you created your application. If possible, avoid sending client_id and client_secret as paramete",
+          "published_label": null
+        },
+        {
+          "value": "OAuth 2.0",
+          "url": "https://docs.slack.dev/authentication/",
+          "excerpt": "tools and best practices, you’ll have a secure, smooth authentication flow. Whether you’re handling OAuth 2.0 , verifying requests , or setting up Sign in with Slack , we’ve got you covered. Authentication basics ​ Before your app can access Slack data or interact with Slack workspaces, i",
+          "published_label": null
+        }
+      ],
+      "reason": "Provisional extraction: validate scope and completeness against the cited page."
+    },
+    "credential_gate": {
+      "value": "unknown",
+      "sources": [],
+      "evidence": [],
+      "reason": "No sufficiently specific positive evidence extracted; review targeted search results."
+    },
+    "api_surface": {
+      "value": "unknown",
+      "sources": [],
+      "evidence": [],
+      "reason": "No sufficiently specific positive evidence extracted; review targeted search results."
+    },
+    "official_mcp": {
+      "value": "yes (provisional)",
+      "sources": [
+        "https://docs.slack.dev/changelog/2026/02/17/slack-mcp/",
+        "https://slack.com/intl/en-in/help/articles/48855576908307-Guide-to-MCP-in-Slack",
+        "https://slack.com/intl/en-gb/help/articles/48855576908307-Guide-to-MCP-in-Slack",
+        "https://docs.slack.dev/ai/slack-mcp-server/"
+      ],
+      "evidence": [
+        {
+          "value": "yes (provisional)",
+          "url": "https://docs.slack.dev/changelog/2026/02/17/slack-mcp/",
+          "excerpt": "Announcing the Slack MCP server and Real-time Search API | Slack Developer Docs changelog Skip to main content We're excited to announce the release of not one, but two , major components des",
+          "published_label": "9 months ago",
+          "context_warning": "Review vendor ownership, dates, and scope."
+        },
+        {
+          "value": "yes (provisional)",
+          "url": "https://slack.com/intl/en-in/help/articles/48855576908307-Guide-to-MCP-in-Slack",
+          "excerpt": "ork for connecting AI applications with other software systems. You can use the Slack MCP server to connect AI tools to Slack, or set Slackbot up as an MCP client so that it can take actions in other apps. How MCP works in Slack The Slack MCP server provid",
+          "published_label": null,
+          "context_warning": "Review vendor ownership, dates, and scope."
+        },
+        {
+          "value": "yes (provisional)",
+          "url": "https://slack.com/intl/en-gb/help/articles/48855576908307-Guide-to-MCP-in-Slack",
+          "excerpt": "ork for connecting AI applications with other software systems. You can use the Slack MCP server to connect AI tools to Slack, or set Slackbot up as an MCP client so that it can take actions in other apps. How MCP works in Slack The Slack MCP server provid",
+          "published_label": null,
+          "context_warning": "Review vendor ownership, dates, and scope."
+        },
+        {
+          "value": "yes (provisional)",
+          "url": "https://docs.slack.dev/ai/slack-mcp-server/",
+          "excerpt": "eveloper Docs guide Skip to main content Copy as markdown On this page With the Slack MCP server, your integrated apps can search channels, send messages, and perform other Slack actions through MCP clients. Workspace admins can approve and manage all MCP ",
+          "published_label": null,
+          "context_warning": "Review vendor ownership, dates, and scope."
+        }
+      ],
+      "reason": "Provisional; check source date, scope, and vendor ownership."
+    },
+    "composio_toolkit": {
+      "value": "listed",
+      "sources": [
+        "https://docs.composio.dev/toolkits/slack"
+      ],
+      "evidence": [],
+      "reason": "Catalog match; scope needs review."
+    },
+    "verdict": {
+      "value": "unknown",
+      "sources": [],
+      "evidence": [],
+      "reason": "A supported access path, authentication method and API surface were not all extracted."
+    }
+  },
+  "validation": [
+    "Automatic extraction is provisional and not a verified final claim",
+    "Unknown is not evidence of absence",
+    "No Composio-to-vendor-MCP inference",
+    "Basic authentication may be endpoint-specific",
+    "Client-only and negated statements are not positive MCP evidence"
+  ]
+}

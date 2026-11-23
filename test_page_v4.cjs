@@ -1,0 +1,113 @@
+const {chromium} = require('playwright');
+const fs = require('fs');
+const path = require('path');
+const {pathToFileURL} = require('url');
+
+const forbiddenKeys = new Set(['first_pass', 'provisional_pass12', 'composio_auth_config', 'raw_pass', 'pass12', 'pages', 'page_text', 'raw_text', 'response', 'search_response']);
+function assertNoRawKeys(value, location = 'root') {
+  if (Array.isArray(value)) return value.forEach((item, index) => assertNoRawKeys(item, `${location}[${index}]`));
+  if (!value || typeof value !== 'object') return;
+  for (const [key, item] of Object.entries(value)) {
+    if (forbiddenKeys.has(key) || key.startsWith('raw_')) throw Error(`Raw research leaked at ${location}.${key}`);
+    assertNoRawKeys(item, `${location}.${key}`);
+  }
+}
+function parseCsv(text) {
+  const rows = [];
+  let row = [], field = '', quoted = false;
+  for (let index = 0; index < text.length; index++) {
+    const char = text[index];
+    if (quoted) {
+      if (char === '"' && text[index + 1] === '"') { field += '"'; index++; }
+      else if (char === '"') quoted = false;
+      else field += char;
+    } else if (char === '"') quoted = true;
+    else if (char === ',') { row.push(field); field = ''; }
+    else if (char === '\n') { row.push(field); rows.push(row); row = []; field = ''; }
+    else if (char !== '\r') field += char;
+  }
+  if (field || row.length) { row.push(field); rows.push(row); }
+  return rows;
+}
+
+let browser;
+(async () => {
+  try {
+    browser = await chromium.launch({executablePath: 'C:/Program Files/Google/Chrome/Application/chrome.exe', headless: true});
+    for (const width of [1440, 390]) {
+    const page = await browser.newPage({viewport: {width, height: 900}, acceptDownloads: true});
+    const errors = [];
+    page.on('pageerror', error => errors.push(error.message));
+    await page.goto(process.env.CASE_URL || pathToFileURL(path.resolve('index.html')).href);
+    await page.locator('#rows tr').first().waitFor();
+    if (await page.locator('#rows tr').count() !== 100) throw Error('Wrong initial count');
+    const viewport = await page.evaluate(() => ({ scroll: document.documentElement.scrollWidth, inner: window.innerWidth }));
+    if (viewport.scroll > viewport.inner + 1) throw Error(`Page overflows horizontally at ${width}px`);
+    await page.screenshot({path: `page-v4-top-${width}.png`, fullPage: false});
+    await page.locator('#search').fill('Slack');
+    const searchCount = await page.locator('#rows tr').count();
+    if (searchCount === 0 || searchCount === 100) throw Error('Search failed');
+    const searchRows = await page.locator('#rows tr').allInnerTexts();
+    if (!searchRows.every(text => text.toLowerCase().includes('slack'))) throw Error('Search returned unrelated rows');
+    await page.locator('#search').fill('');
+    await page.locator('#category').selectOption({label: 'CRM and Sales'});
+    if (await page.locator('#rows tr').count() !== 10) throw Error('Category filter failed');
+    await page.locator('#category').selectOption('');
+    if (await page.locator('#rows tr').count() !== 100) throw Error('Category reset failed');
+    await page.locator('#gate').selectOption('self_serve_free');
+    const gateRows = await page.locator('#rows tr').count();
+    if (gateRows === 0 || gateRows === 100 || !(await page.locator('#rows tr').allInnerTexts()).every(text => text.includes('Self-serve free'))) throw Error('Access filter failed');
+    await page.locator('#gate').selectOption('');
+    await page.locator('#verdict').selectOption('partner_outreach');
+    const verdictRows = await page.locator('#rows tr').count();
+    if (verdictRows === 0 || verdictRows === 100 || !(await page.locator('#rows tr').allInnerTexts()).every(text => text.includes('Partner / sales outreach'))) throw Error('Verdict filter failed');
+    await page.locator('#verdict').selectOption('');
+    await page.locator('#mcp').selectOption('no_vendor_server_documented');
+    const mcpRows = await page.locator('#rows tr').count();
+    if (mcpRows === 0 || mcpRows === 100 || !(await page.locator('#rows tr').allInnerTexts()).every(text => text.includes('No server documented'))) throw Error('MCP filter failed');
+    await page.locator('#mcp').selectOption('');
+    await page.locator('#search').fill('zzzz-no-matching-app');
+    if (await page.locator('#rows tr').count() !== 0 || !(await page.locator('#count').innerText()).startsWith('0 of 100')) throw Error('Empty search state failed');
+    await page.locator('#search').fill('');
+    const first = await page.locator('#rows tr').first().locator('td b').first().innerText();
+    await page.locator('#sort').click();
+    await page.waitForFunction(previous => document.querySelector('#rows tr td b')?.textContent !== previous, first, {timeout: 5000});
+    if (first === await page.locator('#rows tr').first().locator('td b').first().innerText()) throw Error('Sort failed');
+    await page.locator('#sort').click();
+    await page.waitForFunction(previous => document.querySelector('#rows tr td b')?.textContent === previous, first, {timeout: 5000});
+    const [download] = await Promise.all([page.waitForEvent('download'), page.locator('#json').click()]);
+    if (download.suggestedFilename() !== 'checked-dataset-v4.json') throw Error('JSON export failed');
+    const exported = JSON.parse(fs.readFileSync(await download.path(), 'utf8'));
+    if (exported.length !== 100 || new Set(exported.map(item => item.app)).size !== 100) throw Error('JSON export record count failed');
+    const requiredFields = ['auth', 'credential_gate', 'api_surface', 'official_mcp', 'composio_toolkit', 'verdict'];
+    for (const item of exported) {
+      if (!item.app || !item.category || !item.fields || requiredFields.some(field => !item.fields[field])) throw Error('JSON export schema failed');
+      if (Object.keys(item.fields).some(field => !requiredFields.includes(field))) throw Error('JSON export has unexpected fields');
+    }
+    assertNoRawKeys(exported, 'json');
+    const [csv] = await Promise.all([page.waitForEvent('download'), page.locator('#csv').click()]);
+    if (csv.suggestedFilename() !== 'checked-dataset-v4.csv') throw Error('CSV export failed');
+    const csvRows = parseCsv(fs.readFileSync(await csv.path(), 'utf8'));
+    if (csvRows.length !== 101 || csvRows[0].length !== 11 || csvRows.slice(1).some(row => row.length !== 11)) throw Error('CSV export shape failed');
+    if (csvRows.slice(1).map(row => row[0]).sort().join('\n') !== exported.map(item => item.app).sort().join('\n')) throw Error('CSV export apps differ from JSON');
+    if (csvRows.slice(1).some(row => row.some(value => /^[=+\-@\t\r]/.test(value)))) throw Error('CSV export contains formula-shaped cells');
+    await page.locator('#rows tr').first().locator('summary').focus();
+    await page.keyboard.press('Enter');
+    if (!(await page.locator('#rows tr').first().locator('details').evaluate(el => el.open))) throw Error('Keyboard details failed');
+    const fieldLabels = await page.locator('#rows tr').first().locator('.rowdetails > p').evaluateAll(nodes => nodes.slice(0, 6).map(node => node.querySelector('b')?.textContent));
+    if (fieldLabels.length !== 6 || !fieldLabels.includes('Authentication:')) throw Error('Evidence does not expose six fields');
+    if (await page.locator('#rows tr').first().locator('.quote').count() === 0) throw Error('Evidence quotations are not visible');
+    const expandedViewport = await page.evaluate(() => ({ scroll: document.documentElement.scrollWidth, inner: window.innerWidth }));
+    if (expandedViewport.scroll > expandedViewport.inner + 1) throw Error(`Expanded evidence overflows horizontally at ${width}px`);
+    await page.locator('#cohort').evaluate(element => { element.closest('details').open = true; });
+    await page.locator('#cohort').selectOption({label: 'Random holdout'});
+    if (await page.locator('#reviewrows tr').count() !== 60) throw Error('Review cohort filter failed');
+    if (errors.length) throw Error(errors.join('\n'));
+    await page.screenshot({path: `page-v4-${width}.png`, fullPage: false});
+    console.log(`PASS ${width}px: 100 rows, all filters, empty search, sort, JSON/CSV export, keyboard details, no horizontal overflow, 60 holdout reviews, no script errors`);
+    await page.close();
+  }
+  } finally {
+    if (browser) await browser.close();
+  }
+})().catch(error => { console.error(error); process.exitCode = 1; });

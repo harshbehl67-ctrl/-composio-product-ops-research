@@ -1,0 +1,198 @@
+{
+  "app": {
+    "number": 10,
+    "name": "DealCloud",
+    "category": "CRM and Sales",
+    "hint": "api.docs.dealcloud.com"
+  },
+  "checked_at": "2026-11-23T18:14:59.259345+00:00",
+  "prior_source": "data/pass2/010.json",
+  "search_source": "data/pass4_search/010.json",
+  "new_candidates": [
+    {
+      "url": "https://api.docs.dealcloud.com/docs/publications/getting_started",
+      "title": "Getting Started - DealCloud API Docs (https://api.docs.dealcloud.com/docs/publications/getting_started)",
+      "published_label": null
+    },
+    {
+      "url": "https://api.docs.dealcloud.com/docs/publications",
+      "title": "Publications - DealCloud API Docs (https://api.docs.dealcloud.com/docs/publications)",
+      "published_label": null
+    },
+    {
+      "url": "https://api.docs.dealcloud.com/docs/schema",
+      "title": "Schema APIs - DealCloud API Docs (https://api.docs.dealcloud.com/docs/schema)",
+      "published_label": null
+    },
+    {
+      "url": "https://api.docs.dealcloud.com/docs/data",
+      "title": "Data APIs - DealCloud API Docs (https://api.docs.dealcloud.com/docs/data)",
+      "published_label": null
+    },
+    {
+      "url": "https://api.docs.dealcloud.com/sdk/python-1.X/configuration/authentication",
+      "title": "Authentication - DealCloud API Docs (https://api.docs.dealcloud.com/sdk/python-1.X/configuration/authentication)",
+      "published_label": null
+    },
+    {
+      "url": "https://api.docs.dealcloud.com/sdk/intapp-rest-client/reference/api-reference",
+      "title": "API Reference - DealCloud API Docs (https://api.docs.dealcloud.com/sdk/intapp-rest-client/reference/api-reference)",
+      "published_label": null
+    },
+    {
+      "url": "https://api.docs.dealcloud.com/docs/data/rows/get",
+      "title": "Get Data - DealCloud API Docs (https://api.docs.dealcloud.com/docs/data/rows/get)",
+      "published_label": null
+    },
+    {
+      "url": "https://api.docs.dealcloud.com/docs/management/create_user",
+      "title": "Create User - DealCloud API Docs (https://api.docs.dealcloud.com/docs/management/create_user)",
+      "published_label": null
+    },
+    {
+      "url": "https://api.docs.dealcloud.com/docs/management",
+      "title": "User Management APIs - DealCloud API Docs (https://api.docs.dealcloud.com/docs/management)",
+      "published_label": null
+    },
+    {
+      "url": "https://api.docs.dealcloud.com/docs/management/invite_user",
+      "title": "Invite or Add Users - DealCloud API Docs (https://api.docs.dealcloud.com/docs/management/invite_user)",
+      "published_label": null
+    }
+  ],
+  "selected": [
+    {
+      "url": "https://api.docs.dealcloud.com/sdk/python-1.X/configuration/authentication",
+      "title": "Authentication - DealCloud API Docs (https://api.docs.dealcloud.com/sdk/python-1.X/configuration/authentication)",
+      "published_label": null
+    },
+    {
+      "url": "https://api.docs.dealcloud.com/docs/publications/getting_started",
+      "title": "Getting Started - DealCloud API Docs (https://api.docs.dealcloud.com/docs/publications/getting_started)",
+      "published_label": null
+    }
+  ],
+  "new_pages": [
+    {
+      "url": "https://api.docs.dealcloud.com/sdk/python-1.X/configuration/authentication",
+      "requested_url": "https://api.docs.dealcloud.com/sdk/python-1.X/configuration/authentication",
+      "status": 200,
+      "title": "Authentication - DealCloud API Docs (https://api.docs.dealcloud.com/sdk/python-1.X/configuration/authentication)",
+      "text": "Authentication - DealCloud API Docs API Reference Getting Started API Keys Authorization Token Pagination Rate Limits Status Codes and Handling Core Schema EntryTypes All Entry Types Entry Type by ID Fields All Fields Fields by EntryType Field by ID Multiple Field IDs Choice Field Values Site Metadata Currencies Field Types Field Units Filter Operations Mappings Mappings Types System Entry Types System Field Types Time Zones Users Data Cells Get Data List Entries List Entries using Filters Create, Update or Upsert Rows Query Get Update Create List Views Get Data using View History History or All History Historical Data Files Delete Merge Template Reports Get Template Generate Get Report User Management Create User Get User Get Users by ID Update User Delete User Get All User Groups Get User Group by ID Create Users Proxy Get User Proxy Invite Users User Activity Other Publications Getting Started Topics Poll Acknowledge Event Types Data Schema User Bootstrap Site Backups Request Backup Retrieve Backups Delete Encryption Relationship Intelligence POST Emails POST Meetings GET Status GET Settings Schema Contracts MCP Getting Started AI Clients Authentication Available Tools Custom MCP Servers SDKs Python SDK v1.X Getting Started Getting Started Installation Quick Start Migration Guide Configuration Configuration Configuration Files Authentication Advanced Configuration Tracing & Telemetry API Reference Schema API Overview Objects Fields Metadata Types Mappings & Contracts Users & Currencies Schema Export Data API Overview Reading Data Read Operations Basic Reads Reading from Views Query Syntax Streaming Reads Typed Data (Pydantic) Reference Fields Polars Integration Writing Data Write Operations Insert Data Update Data Upsert Data Delete Data ID Mapping Advanced Cell Operations Delta Synchronization Files API Overview Download Files Upload Files Bulk Export User Management Overview User Management Groups Backups API Backups API History API History API Publications API Publications API Merge API Merge API Relationship Intelligence Relationship Intelligence Advanced Topics Advanced Async Operations Error Handling Error Enrichment Performance Tuning Logging & Debugging Troubleshooting & FAQ Reference API Reference Data Models Constants Utilities & helpers Exceptions Changelog License Intapp REST Client Getting Started Getting Started Installation Quick Start Configuration Configuration Authentication Retry Configuration Connection Pooling SSL/TLS Logging Advanced Topics Advanced Async Operations Pagination Streaming File Download Parallel Requests Error Handling Tracing & Telemetry Request Hooks Reference Reference Configuration Models Exceptions API Reference Changelog License Python (Legacy) v0.1.9 Installation Authentication Usage Schema Data License C# Installation Authentication Logging Usage Schema Data License Guides How to Create a User How to Download Files How to Upload Files How to Backlink DMS Documents Real-Time Events from DealCloud Audit Trail for Read Events Feedback (opens in a new tab) API Reference Getting Started API Keys Authorization Token Pagination Rate Limits Status Codes and Handling Core Schema EntryTypes All Entry Types Entry Type by ID Fields All Fields Fields by EntryType Field by ID Multiple Field IDs Choice Field Values Site Metadata Currencies Field Types Field Units Filter Operations Mappings Mappings Types System Entry Types System Field Types Time Zones Users Data Cells Get Data List Entries List Entries using Filters Create, Update or Upsert Rows Query Get Update Create List Views Get Data using View History History or All History Historical Data Files Delete Merge Template Reports Get Template Generate Get Report User Management Create User Get User Get Users by ID Update User Delete User Get All User Groups Get User Group by ID Create Users Proxy Get User Proxy Invite Users User Activity Other Publications Getting Started Topics Poll Acknowledge Event Types Data Schema User Bootstrap Site Backups Request Backup Retrieve Backups Delete Encryption Relationship Intelligence POST Emails POST Meetings GET Status GET Settings Schema Contracts MCP Getting Started AI Clients Authentication Available Tools Custom MCP Servers SDKs Python SDK v1.X Getting Started Getting Started Installation Quick Start Migration Guide Configuration Configuration Configuration Files Authentication Quick Start Choose Your Authentication Method Authentication Methods Configuration Formats Token Management Multi-Environment Setup Security Best Practices Next Steps Advanced Configuration Tracing & Telemetry API Reference Schema API Overview Objects Fields Metadata Types Mappings & Contracts Users & Currencies Schema Export Data API Overview Reading Data Read Operations Basic Reads Reading from Views Query Syntax Streaming Reads Typed Data (Pydantic) Reference Fields Polars Integration Writing Data Write Operations Insert Data Update Data Upsert Data Delete Data ID Mapping Advanced Cell Operations Delta Synchronization Files API Overview Download Files Upload Files Bulk Export User Management Overview User Management Groups Backups API Backups API History API History API Publications API Publications API Merge API Merge API Relationship Intelligence Relationship Intelligence Advanced Topics Advanced Async Operations Error Handling Error Enrichment Performance Tuning Logging & Debugging Troubleshooting & FAQ Reference API Reference Data Models Constants Utilities & helpers Exceptions Changelog License Intapp REST Client Getting Started Getting Started Installation Quick Start Configuration Configuration Authentication Retry Configuration Connection Pooling SSL/TLS Logging Advanced Topics Advanced Async Operations Pagination Streaming File Download Parallel Requests Error Handling Tracing & Telemetry Request Hooks Reference Reference Configuration Models Exceptions API Reference Changelog License Python (Legacy) v0.1.9 Installation Authentication Usage Schema Data License C# Installation Authentication Logging Usage Schema Data License Guides How to Create a User How to Download Files How to Upload Files How to Backlink DMS Documents Real-Time Events from DealCloud Audit Trail for Read Events Light SDKs Python SDK v1.X Configuration Authentication Authentication The DealCloud SDK uses OAuth2 client credentials for authentication. HTTP calls go through intapp-rest-client ( RestClient ); advanced options (timeouts, retries, logging) align with that library unless overridden by DealCloudConfig . This page covers all available authentication methods for the DealCloud SDK. Quick Start Use DealCloudConfig (OAuth2 client credentials) and DealCloud.from_config_object() : from dealcloud_sdk import DealCloud , DealCloudConfig config = DealCloudConfig ( siteUrl = \"yoursite.dealcloud.com\" , clientId = 12345 , clientSecret = \"your-client-secret\" , ) dc = DealCloud . from_config_object (config) Full options (timeouts, retries, query settings) and vault-backed setups are covered in Configuration Files . ⚠️ Security : Never commit credentials to version control. Load secrets from a vault or environment, or use config files that stay out of git. 📦 Legacy shortcut: DealCloud(site_url=..., client_id=..., client_secret=...) still works for small scripts and migration from older samples; prefer DealCloudConfig for anything you maintain long term. Choose Your Authentication Method Select based on your deployment environment: Deployment Type Recommended Method Why Kubernetes / Containers Environment Variables Native secret injection, no file mounting Azure / AWS / GCP Environment Variables + Secrets Manager Cloud-native secret rotation Enterprise / On-Prem JSON/YAML Config File Centralized config management, full settings Local Development .env File Easy to manage, git-ignored Multi-Environment JSON/YAML with Nested Configs Single file, multiple environments CI/CD Pipelines Environment Variables Injected by pipeline, no file artifacts 💡 Preference : Both JSON/YAML config files and environment variables support all advanced settings. Choose based on your deployment needs - environment variables work great for containers and CI/CD, while config files are ideal for centralized configuration management. Authentication Methods Environment Variables Best for containerized deployments (Kubernetes, Docker, ECS) and CI/CD pipelines. from dealcloud_sdk import DealCloud # Uses default environment variable names dc = DealCloud . from_env () Default environment variable names: Required Credentials Variable Description DC_SDK_SITE_URL Your DealCloud site URL DC_SDK_CLIENT_ID API Client ID DC_SDK_CLIENT_SECRET API Client Secret Optional Configuration Settings Variable Type Default Description DC_SDK_CONNECTOR_TIMEOUT_SECONDS int 100 HTTP request timeout in seconds DC_SDK_QUERY_PAGE_SIZE int 1000 Records per page for row operations DC_SDK_QUERY_CELL_PAGINATION_LIMIT int 9000 Cells per page for cell operations DC_SDK_QUERY_DELETE_PAGE_SIZE int 10000 Records per delete batch DC_SDK_CONCURRENCY_LIMIT_READ int 2 Max concurrent read requests DC_SDK_CONCURRENCY_LIMIT_DELETE int 2 Max concurrent delete requests DC_SDK_CONCURRENCY_LIMIT_CREATE int 2 Max concurrent create/update requests DC_SDK_RETRY_TOO_MANY_REQUESTS int 5 Retries for HTTP 429 DC_SDK_RETRY_INTERNAL_SERVER_ERROR int 2 Retries for HTTP 500 DC_SDK_RETRY_SERVICE_UNAVAILABLE int 2 Retries for HTTP 503 DC_SDK_RETRY_BAD_GATEWAY int 2 Retries for HTTP 502 DC_SDK_RETRY_GATEWAY_TIMEOUT int 2 Retries for HTTP 504 DC_SDK_RETRY_BACKOFF_FACTOR float 2.0 Exponential backoff multiplier DC_SDK_RETRY_MAX_BACKOFF_SECONDS float 300.0 Maximum wait between retries Kubernetes Example # k8s-deployment.yaml apiVersion : apps/v1 kind : Deployment spec : template : spec : containers : - name : my-app env : # Required credentials - name : DC_SDK_SITE_URL value : \"yoursite.dealcloud.com\" - name : DC_SDK_CLIENT_ID valueFrom : secretKeyRef : name : dealcloud-credentials key : client-id - name : DC_SDK_CLIENT_SECRET valueFrom : secretKeyRef : name : dealcloud-credentials key : client-secret # Optional: Performance tuning - name : DC_SDK_CONNECTOR_TIMEOUT_SECONDS value : \"120\" - name : DC_SDK_QUERY_PAGE_SIZE value : \"2000\" - name : DC_SDK_CONCURRENCY_LIMIT_READ value : \"4\" # Optional: Retry configuration - name : DC_SDK_RETRY_TOO_MANY_REQUESTS value : \"10\" Custom Variable Names dc = DealCloud . from_env ( site_url_env_name = \"MY_DC_URL\" , client_id_env_name = \"MY_DC_CLIENT\" , client_secret_env_name = \"MY_DC_SECRET\" ) Local Development with .env Files With python-dotenv (opens in a new tab) : Minimal configuration (credentials only): # .env file (add to .gitignore!) DC_SDK_SITE_URL = yoursite.dealcloud.com DC_SDK_CLIENT_ID = 12345 DC_SDK_CLIENT_SECRET = your-secret Full configuration (all settings): # .env file (add to .gitignore!) DC_SDK_SITE_URL = yoursite.dealcloud.com DC_SDK_CLIENT_ID = 12345 DC_SDK_CLIENT_SECRET = your-secret # Optional: Customize timeouts and performance DC_SDK_CONNECTOR_TIMEOUT_SECONDS = 120 DC_SDK_QUERY_PAGE_SIZE = 2000 DC_SDK_CONCURRENCY_LIMIT_READ = 4 # Optional: Customize retry behavior DC_SDK_RETRY_TOO_MANY_REQUESTS = 10 DC_SDK_RETRY_BACKOFF_FACTOR = 2.5 from dotenv import load_dotenv from dealcloud_sdk import DealCloud load_dotenv () # Load .env file dc = DealCloud . from_env () # Automatically uses all configured environment variables 💡 Full Configuration Support : Environment variables now support all configuration options available in JSON/YAML files. You can mix and match - only set the environment variables you want to customize, and defaults will be used for the rest. JSON Configuration File (Full Settings) Best for enterprise deployments requiring full configuration control. Full Config (Recommended) Legacy Format Multi-Environment { \"siteUrl\" : \"yoursite.dealcloud.com\" , \"clientId\" : 12345 , \"clientSecret\" : \"your-secret\" , \"connectorTimeoutSeconds\" : 100 , \"querySettings\" : { \"pageSize\" : 1000 } , \"responseRetrySettings\" : { \"tooManyRequests\" : 5 , \"internalServerError\" : 2 , \"backoffFactor\" : 2 } } dc = DealCloud . from_json ( \"config.json\" ) This format supports all configuration options including timeouts, pagination, and retry settings. YAML Configuration File YAML format for human-readable configuration. Preferred for DevOps teams familiar with Kubernetes/Helm. Full Config (Recommended) Multi-Environment # config.yaml siteUrl : yoursite.dealcloud.com clientId : 12345 clientSecret : your-secret connectorTimeoutSeconds : 100 querySettings : pageSize : 1000 responseRetrySettings : tooManyRequests : 5 internalServerError : 2 backoffFactor : 2 dc = DealCloud . from_yaml ( \"config.yaml\" ) 💡 YAML support requires the yaml extra: pip : pip install dealcloud-sdk[yaml] uv : uv add dealcloud-sdk[yaml] poetry : poetry add dealcloud-sdk -E yaml Pydantic Config Object For programmatic configuration: from dealcloud_sdk import DealCloud , DealCloudConfig config = DealCloudConfig ( siteUrl = \"yoursite.dealcloud.com\" , clientId = 12345 , clientSecret = \"your-secret\" , connectorTimeoutSeconds = 120 , querySettings = { \"pageSize\" : 500 } ) dc = DealCloud . from_config_object (config) For a config file path, use DealCloud.from_config(\"dealcloud_config.json\") instead. Configuration Formats The SDK supports two configuration formats and auto-detects which is being used: Format Case Style Full Settings Recommended For camelCase camelCase ✅ Yes New projects snake_case snake_case ❌ Credentials only Backward compatibility 💡 The camelCase format matches our DealCloud .NET SDK, enabling shared config files across Python and .NET projects. camelCase Format (Recommended) { \"siteUrl\" : \"yoursite.dealcloud.com\" , \"clientId\" : 12345 , \"clientSecret\" : \"your-secret\" , \"connectorTimeoutSeconds\" : 100 , \"querySettings\" : { \"pageSize\" : 1000 } , \"responseRetrySettings\" : { \"tooManyRequests\" : 5 , \"internalServerError\" : 2 , \"backoffFactor\" : 2 } } This format supports all advanced configuration options. snake_case Format (Backward Compatible) { \"site_url\" : \"yoursite.dealcloud.com\" , \"client_id\" : 12345 , \"client_secret\" : \"your-secret\" } Use this if migrating from an older Python SDK version. Advanced settings require the camelCase format. Token Management The SDK automatically handles OAuth2 token management: Automatic Token Refresh : Tokens are refreshed before expiration Thread-Safe : Token management is thread-safe for concurrent requests No Manual Management : You never need to handle tokens directly from dealcloud_sdk import DealCloud , DealCloudConfig # Tokens are managed automatically config = DealCloudConfig ( siteUrl = \"yoursite.dealcloud.com\" , clientId = 12345 , clientSecret = \"your-secret\" , ) dc = DealCloud . from_config_object (config) # Make requests without worrying about tokens data = dc . read_data ( \"Company\" , output = \"pandas\" ) # Token obtained automatically data2 = dc . read_data ( \"Contact\" , output = \"pandas\" ) # Token reused or refreshed Multi-Environment Setup Pattern for managing multiple DealCloud environments: from dealcloud_sdk import DealCloud import os def get_client ( env : str = \"production\" ) -> DealCloud: \"\"\"Get DealCloud client for specified environment.\"\"\" config_map = { \"production\" : \"config/prod.json\" , \"staging\" : \"config/staging.json\" , \"development\" : \"config/dev.json\" } config_file = config_map . get (env) if not config_file : raise ValueError ( f \"Unknown environment: { env } \" ) return DealCloud . from_json (config_file) # Usage dc_prod = get_client ( \"production\" ) dc_staging = get_client ( \"staging\" ) Security Best Practices By Deployment Type Cloud / Kubernetes On-Premises Local Development Cloud-Native Secrets Management # AWS - Use Secrets Manager import boto3 import json def get_dc_client (): client = boto3 . client ( 'secretsmanager' ) secret = json . loads ( client. get_secret_value (SecretId = 'dealcloud/prod' )[ 'SecretString' ] ) return DealCloud ( site_url = secret[ 'siteUrl' ], client_id = secret[ 'clientId' ], client_secret = secret[ 'clientSecret' ] ) # Azure - Use Key Vault from azure . identity import DefaultAzureCredential from azure . keyvault . secrets import SecretClient def get_dc_client (): credential = DefaultAzureCredential () kv = SecretClient (vault_url = \"https://myvault.vault.azure.net/\" , credential = credential) return DealCloud ( site_url = kv. get_secret ( \"dc-site-url\" ).value, client_id = kv. get_secret ( \"dc-client-id\" ).value, client_secret = kv. get_secret ( \"dc-client-secret\" ).value ) General Guidelines Never hardcode credentials in source code Match auth method to deployment - see table above Restrict file permissions on config files ( chmod 600 ) Rotate credentials regularly (quarterly recommended) Use separate credentials for dev/staging/production Audit API access using DealCloud's activity logs Next Steps Configuration Files - Detailed configuration options Advanced Configuration - Timeouts, retry, concurrency Tracing - OpenTelemetry integration Configuration Files Advanced Configuration",
+      "published_label": null
+    },
+    {
+      "url": "https://api.docs.dealcloud.com/docs/publications/getting_started",
+      "requested_url": "https://api.docs.dealcloud.com/docs/publications/getting_started",
+      "status": 200,
+      "title": "Getting Started - DealCloud API Docs (https://api.docs.dealcloud.com/docs/publications/getting_started)",
+      "text": "Getting Started - DealCloud API Docs API Reference Getting Started API Keys Authorization Token Pagination Rate Limits Status Codes and Handling Core Schema EntryTypes All Entry Types Entry Type by ID Fields All Fields Fields by EntryType Field by ID Multiple Field IDs Choice Field Values Site Metadata Currencies Field Types Field Units Filter Operations Mappings Mappings Types System Entry Types System Field Types Time Zones Users Data Cells Get Data List Entries List Entries using Filters Create, Update or Upsert Rows Query Get Update Create List Views Get Data using View History History or All History Historical Data Files Delete Merge Template Reports Get Template Generate Get Report User Management Create User Get User Get Users by ID Update User Delete User Get All User Groups Get User Group by ID Create Users Proxy Get User Proxy Invite Users User Activity Other Publications Getting Started Topics Poll Acknowledge Event Types Data Schema User Bootstrap Site Backups Request Backup Retrieve Backups Delete Encryption Relationship Intelligence POST Emails POST Meetings GET Status GET Settings Schema Contracts MCP Getting Started AI Clients Authentication Available Tools Custom MCP Servers SDKs Python SDK v1.X Getting Started Getting Started Installation Quick Start Migration Guide Configuration Configuration Configuration Files Authentication Advanced Configuration Tracing & Telemetry API Reference Schema API Overview Objects Fields Metadata Types Mappings & Contracts Users & Currencies Schema Export Data API Overview Reading Data Read Operations Basic Reads Reading from Views Query Syntax Streaming Reads Typed Data (Pydantic) Reference Fields Polars Integration Writing Data Write Operations Insert Data Update Data Upsert Data Delete Data ID Mapping Advanced Cell Operations Delta Synchronization Files API Overview Download Files Upload Files Bulk Export User Management Overview User Management Groups Backups API Backups API History API History API Publications API Publications API Merge API Merge API Relationship Intelligence Relationship Intelligence Advanced Topics Advanced Async Operations Error Handling Error Enrichment Performance Tuning Logging & Debugging Troubleshooting & FAQ Reference API Reference Data Models Constants Utilities & helpers Exceptions Changelog License Intapp REST Client Getting Started Getting Started Installation Quick Start Configuration Configuration Authentication Retry Configuration Connection Pooling SSL/TLS Logging Advanced Topics Advanced Async Operations Pagination Streaming File Download Parallel Requests Error Handling Tracing & Telemetry Request Hooks Reference Reference Configuration Models Exceptions API Reference Changelog License Python (Legacy) v0.1.9 Installation Authentication Usage Schema Data License C# Installation Authentication Logging Usage Schema Data License Guides How to Create a User How to Download Files How to Upload Files How to Backlink DMS Documents Real-Time Events from DealCloud Audit Trail for Read Events Feedback (opens in a new tab) API Reference Getting Started API Keys Authorization Token Pagination Rate Limits Status Codes and Handling Core Schema EntryTypes All Entry Types Entry Type by ID Fields All Fields Fields by EntryType Field by ID Multiple Field IDs Choice Field Values Site Metadata Currencies Field Types Field Units Filter Operations Mappings Mappings Types System Entry Types System Field Types Time Zones Users Data Cells Get Data List Entries List Entries using Filters Create, Update or Upsert Rows Query Get Update Create List Views Get Data using View History History or All History Historical Data Files Delete Merge Template Reports Get Template Generate Get Report User Management Create User Get User Get Users by ID Update User Delete User Get All User Groups Get User Group by ID Create Users Proxy Get User Proxy Invite Users User Activity Other Publications Getting Started Topics Poll Acknowledge Event Types Data Schema User Bootstrap Site Backups Request Backup Retrieve Backups Delete Encryption Relationship Intelligence POST Emails POST Meetings GET Status GET Settings Schema Contracts MCP Getting Started AI Clients Authentication Available Tools Custom MCP Servers SDKs Python SDK v1.X Getting Started Getting Started Installation Quick Start Migration Guide Configuration Configuration Configuration Files Authentication Advanced Configuration Tracing & Telemetry API Reference Schema API Overview Objects Fields Metadata Types Mappings & Contracts Users & Currencies Schema Export Data API Overview Reading Data Read Operations Basic Reads Reading from Views Query Syntax Streaming Reads Typed Data (Pydantic) Reference Fields Polars Integration Writing Data Write Operations Insert Data Update Data Upsert Data Delete Data ID Mapping Advanced Cell Operations Delta Synchronization Files API Overview Download Files Upload Files Bulk Export User Management Overview User Management Groups Backups API Backups API History API History API Publications API Publications API Merge API Merge API Relationship Intelligence Relationship Intelligence Advanced Topics Advanced Async Operations Error Handling Error Enrichment Performance Tuning Logging & Debugging Troubleshooting & FAQ Reference API Reference Data Models Constants Utilities & helpers Exceptions Changelog License Intapp REST Client Getting Started Getting Started Installation Quick Start Configuration Configuration Authentication Retry Configuration Connection Pooling SSL/TLS Logging Advanced Topics Advanced Async Operations Pagination Streaming File Download Parallel Requests Error Handling Tracing & Telemetry Request Hooks Reference Reference Configuration Models Exceptions API Reference Changelog License Python (Legacy) v0.1.9 Installation Authentication Usage Schema Data License C# Installation Authentication Logging Usage Schema Data License Guides How to Create a User How to Download Files How to Upload Files How to Backlink DMS Documents Real-Time Events from DealCloud Audit Trail for Read Events Light API Reference Publications Getting Started Getting Started Enabling Publications Get in touch with your account manager to have Publications enabled on your site. Once enabled, you will have a new capability under User Management > Capabilities. Users accessing Publications will need to belong to a user group where the Publications and API capabilities are enabled. Configuring Publications Once the above steps are completed, navigate to Tools > Publications from the menu bar. From here, you can configure, view, and modify your Publication topics. You can also access your Publications Swagger by clicking the Open Swagger link. Default Publication Topics You will see 3 default topics automatically available to you. These are available out of the box. default-data - all data updates from the system (i.e. creating records, modifying records, deleting records) default-schema - all system/schema updates made to Object Management of the site default-users - all user/user-group updates made to User Management of the site Default topics cannot be modified or deleted. You can consume from these topics if you're interested in consuming all data from DealCloud relevant to that event type. See more about event types here . Custom Publication Topics You also have the ability to create custom Publication topics. Custom topics allow you to select which objects and field updates you care about versus consuming all updates from the default-data topic. Only messages relevant to the selected objects & fields will get sent to your custom topic. Click \"Create Publication\" and start choosing the objects. By default, all fields will be selected once you enable an object. Optionally, you can filter by fields and only include the fields you care about to receive  updates from. Making Publication API Requests Here's a sample workflow of calling the Publication APIs. Retrieve Token First, call the token endpoint to retrieve an OAuth token. Note, the Publication APIs uses the same token as all other APIs. You must provide the scope publish when calling the token endpoint to generate a token that is authorized to call the Publication APIs. Request Sample POST {baseUrl}/api/rest/v1/oauth/token Content-Type : application/x-www-form-urlencoded scope=publish & grant_type= client_credentials & client_id= 106 & client_secret= 1356GYNU Call GET /topics Call the Topics endpoint to see a list of available topics. GET {baseUrl}/api/rest/v1/publication/topics Authorization : Bearer {{token}} Poll a Topic Start a connection with a topic to begin receiving the events. Continue to poll this endpoint at the frequency and volume you may need. POST {baseUrl}/api/rest/v1/publication/topics Authorization : Bearer {{token}} Content-Type : application/json { \"Topics\" : [ \"my-topic\" ] , \"TimeOut\" : 30000 , \"Count\" : 1 } Acknowledge Messages ( Optional ) You may acknowledge messages once you've processed them. At the start of a new session, the messages will start from the last acknowledged message. POST {baseUrl}/api/rest/v1/publication/acknowledge Authorization : Bearer {{token}} Content-Type : application/json [ { \"Name\" : \"data\" , \"Offset\" : 3 } ] Publications Topics",
+      "published_label": null
+    }
+  ],
+  "claims": {
+    "auth": {
+      "value": [
+        "OAuth 2.0",
+        "Bearer token",
+        "API key"
+      ],
+      "sources": [
+        "https://api.docs.dealcloud.com/docs/token",
+        "https://api.docs.dealcloud.com/docs/apikeys",
+        "https://api.docs.dealcloud.com/sdk/python-1.X/configuration/authentication"
+      ],
+      "evidence": [
+        {
+          "value": "OAuth 2.0",
+          "url": "https://api.docs.dealcloud.com/docs/token",
+          "excerpt": "Requesting an OAuth2 Bearer Token - DealCloud API Docs API Reference Getting Started API Keys Authorization Token Pagination Rate Limits Status Codes and Handling Core Schema EntryTypes All Entry Type",
+          "published_label": null
+        },
+        {
+          "value": "Bearer token",
+          "url": "https://api.docs.dealcloud.com/docs/token",
+          "excerpt": "Requesting an OAuth2 Bearer Token - DealCloud API Docs API Reference Getting Started API Keys Authorization Token Pagination Rate Limits Status Codes and Handling Core Schema EntryTypes All Entry Types Entry Type ",
+          "published_label": null
+        },
+        {
+          "value": "API key",
+          "url": "https://api.docs.dealcloud.com/docs/apikeys",
+          "excerpt": "Obtaining an API Key - DealCloud API Docs API Reference Getting Started API Keys Authorization Token Pagination Rate Limits Status Codes and Handling Core Schema EntryTypes All Entry Types Entry Type ",
+          "published_label": null
+        },
+        {
+          "value": "OAuth 2.0",
+          "url": "https://api.docs.dealcloud.com/sdk/python-1.X/configuration/authentication",
+          "excerpt": "vents Light SDKs Python SDK v1.X Configuration Authentication Authentication The DealCloud SDK uses OAuth2 client credentials for authentication. HTTP calls go through intapp-rest-client ( RestClient ); advanced options (timeouts, retries, logging) align with that library unless overri",
+          "published_label": null
+        }
+      ],
+      "reason": "Provisional extraction: validate scope and completeness against the cited page."
+    },
+    "credential_gate": {
+      "value": "unknown",
+      "sources": [],
+      "evidence": [],
+      "reason": "No sufficiently specific positive evidence extracted; review targeted search results."
+    },
+    "api_surface": {
+      "value": [
+        "REST"
+      ],
+      "sources": [
+        "https://api.docs.dealcloud.com/docs"
+      ],
+      "evidence": [
+        {
+          "value": "REST",
+          "url": "https://api.docs.dealcloud.com/docs",
+          "excerpt": "eference Docs Welcome to the DealCloud API Docs! This site provides a comprehensive overview of our REST APIs, their capabilities, and available endpoints. Whether you're building custom integrations, automating workflows, or exploring advanced use cases, you'll find detailed guidance, ex",
+          "published_label": null
+        }
+      ],
+      "reason": "Provisional extraction: validate scope and completeness against the cited page."
+    },
+    "official_mcp": {
+      "value": "yes (provisional)",
+      "sources": [
+        "https://api.docs.dealcloud.com/mcp/getting-started",
+        "https://api.docs.dealcloud.com/mcp"
+      ],
+      "evidence": [
+        {
+          "value": "yes (provisional)",
+          "url": "https://api.docs.dealcloud.com/mcp/getting-started",
+          "excerpt": " with MCP Access capability enabled for end-user connection. Default MCP Server DealCloud provides a default MCP Server out-of-the-box without any configuration required. It exposes your site's full schema and is the fastest way to get connected. Copy the MCP endpoint URL from T",
+          "published_label": null,
+          "context_warning": "Review vendor ownership, dates, and scope."
+        },
+        {
+          "value": "yes (provisional)",
+          "url": "https://api.docs.dealcloud.com/mcp",
+          "excerpt": "DealCloud MCP Server - DealCloud API Docs API Reference Getting Started API Keys Authorization Token Pagination Rate Limits Status Codes and Handling Core Schema EntryTypes All Ent",
+          "published_label": null,
+          "context_warning": "Review vendor ownership, dates, and scope."
+        }
+      ],
+      "reason": "Provisional; check source date, scope, and vendor ownership."
+    },
+    "composio_toolkit": {
+      "value": "unknown",
+      "sources": [],
+      "evidence": [],
+      "reason": "No exact or reviewed alias match; absence is not established."
+    },
+    "verdict": {
+      "value": "unknown",
+      "sources": [],
+      "evidence": [],
+      "reason": "A supported access path, authentication method and API surface were not all extracted."
+    }
+  },
+  "validation": [
+    "All claims are provisional",
+    "No vendor MCP inference from Composio catalog",
+    "Negated MCP or client-only source is not counted as vendor-server proof"
+  ]
+}

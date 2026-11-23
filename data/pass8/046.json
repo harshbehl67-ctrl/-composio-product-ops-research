@@ -1,0 +1,119 @@
+{
+  "app": {
+    "number": 46,
+    "name": "Squarespace",
+    "category": "Ecommerce",
+    "hint": "developers.squarespace.com"
+  },
+  "replayed_at": "2026-11-23T18:41:06.291588+00:00",
+  "source_passes": [
+    "data/pass2/046.json",
+    "data/pass4/046.json"
+  ],
+  "source_searches": [
+    "data/new_search/046.json",
+    "data/pass4_search/046.json"
+  ],
+  "publication_date_note": "Search publication labels are retained exactly; null means no label was available. Relative labels are not exact dates.",
+  "claims": {
+    "auth": {
+      "value": [
+        "OAuth 2.0",
+        "API key"
+      ],
+      "status": "provisional",
+      "sources": [
+        "https://commerce-apis.squarespace.com/commerce-apis/authentication-and-permissions",
+        "https://support.squarespace.com/hc/en-us/articles/236297987-Squarespace-API-keys",
+        "https://commerce-apis.squarespace.com/oauth"
+      ],
+      "evidence": [
+        {
+          "value": "OAuth 2.0",
+          "url": "https://commerce-apis.squarespace.com/commerce-apis/authentication-and-permissions",
+          "excerpt": "rocess by filling out this form .\nOnce you've obtained OAuth credentials, you can use our OAuth 2.0 Guide to learn how to authorize your application to integrate with Squarespace and use Squarespace APIs. Next steps Make requests to Commerce APIs Read the FAQ for answe",
+          "published_label": null
+        },
+        {
+          "value": "API key",
+          "url": "https://commerce-apis.squarespace.com/commerce-apis/authentication-and-permissions",
+          "excerpt": "e API below.\nThen, depending on your development needs,\nauthenticate requests by using an API key or OAuth access token. Remember: Requests only have access to data for\nthe website that owns the API key or OAuth access token. API permission levels Forms API Read Only",
+          "published_label": null
+        },
+        {
+          "value": "API key",
+          "url": "https://support.squarespace.com/hc/en-us/articles/236297987-Squarespace-API-keys",
+          "excerpt": "Squarespace API keys – Squarespace Help Center Gathering resources... Followers: Asked: Updated: Followers: You need to sign in to view this page. Search Results All Categories Clear Search",
+          "published_label": "2 months ago"
+        },
+        {
+          "value": "OAuth 2.0",
+          "url": "https://commerce-apis.squarespace.com/oauth",
+          "excerpt": "ate Annotations Style Editor Error Reporting URL Queries Accessing Squarespace APIs using OAuth 2.0 Squarespace uses OAuth 2.0 to authorize third-party applications to integrate with Squarespace and consume Squarespace APIs. Terms Client Third-party application that ne",
+          "published_label": null
+        }
+      ],
+      "reason": "Provisional extraction; validate scope and completeness against cited pages."
+    },
+    "credential_gate": {
+      "value": [
+        "partner_or_sales"
+      ],
+      "status": "provisional",
+      "sources": [
+        "https://support.squarespace.com/hc/en-us/articles/41325887099533-Developer-Tools-APIs-at-Squarespace",
+        "https://support.squarespace.com/hc/en-us/articles/41325887099533-Developer-Tools-APIs-at-Squarespace?campaign=Grow&channel=sqsp_circle&source=article&subcampaign=CD26-building-products&subchannel=circle_blog"
+      ],
+      "evidence": [
+        {
+          "value": "partner_or_sales",
+          "url": "https://support.squarespace.com/hc/en-us/articles/41325887099533-Developer-Tools-APIs-at-Squarespace",
+          "excerpt": "date. Some of these Developer Tools are available for use by all developers, and some are invite-only. Use of our Developer Tools and participation in any Squarespace developer programs are subject to the Squarespace Developer Terms . Each API contains multiple endpoints",
+          "published_label": "last week"
+        },
+        {
+          "value": "partner_or_sales",
+          "url": "https://support.squarespace.com/hc/en-us/articles/41325887099533-Developer-Tools-APIs-at-Squarespace?campaign=Grow&channel=sqsp_circle&source=article&subcampaign=CD26-building-products&subchannel=circle_blog",
+          "excerpt": "date. Some of these Developer Tools are available for use by all developers, and some are invite-only. Use of our Developer Tools and participation in any Squarespace developer programs are subject to the Squarespace Developer Terms . Each API contains multiple endpoints",
+          "published_label": null
+        }
+      ],
+      "reason": "Provisional extraction; validate scope and completeness against cited pages."
+    },
+    "api_surface": {
+      "value": "unknown",
+      "status": "provisional",
+      "sources": [],
+      "evidence": [],
+      "reason": "No sufficiently specific official evidence extracted."
+    },
+    "official_mcp": {
+      "value": "unknown",
+      "status": "provisional",
+      "sources": [],
+      "evidence": [],
+      "reason": "No sufficiently specific official evidence extracted."
+    },
+    "composio_toolkit": {
+      "value": "unknown",
+      "status": "provisional",
+      "sources": [],
+      "evidence": [],
+      "reason": "No sufficiently specific official evidence extracted."
+    },
+    "verdict": {
+      "value": "unknown",
+      "status": "provisional",
+      "sources": [],
+      "evidence": [],
+      "reason": "No sufficiently specific official evidence extracted."
+    }
+  },
+  "validation": [
+    "Automatic extraction is provisional until independently reviewed",
+    "Unknown is not evidence of absence",
+    "Composio evidence cannot establish vendor MCP",
+    "Client-only and negated MCP statements are not vendor-server proof",
+    "API breadth is a text-coverage heuristic, not an endpoint census"
+  ]
+}

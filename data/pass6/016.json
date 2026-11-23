@@ -1,0 +1,92 @@
+{
+  "app": {
+    "number": 16,
+    "name": "LiveAgent",
+    "category": "Support and Helpdesk",
+    "hint": "liveagent.com"
+  },
+  "replayed_at": "2026-11-23T18:17:21.531136+00:00",
+  "source_passes": [
+    "data/pass2/016.json",
+    "data/pass4/016.json"
+  ],
+  "source_search": "data/new_search/016.json",
+  "publication_date_note": "Published labels are retained exactly as supplied by search; missing labels are null. Relative labels must not be treated as exact publication dates.",
+  "claims": {
+    "auth": {
+      "value": [
+        "API key"
+      ],
+      "sources": [
+        "https://faq.liveagent.com/916372-API-v1-vs-API-v3-in-LiveAgent-Key-Differences-Authentication-and-Resolving-ApiKey-Errors"
+      ],
+      "evidence": [
+        {
+          "value": "API key",
+          "url": "https://faq.liveagent.com/916372-API-v1-vs-API-v3-in-LiveAgent-Key-Differences-Authentication-and-Resolving-ApiKey-Errors",
+          "excerpt": "difference between API v1 and API v3 authentication in LiveAgent, how to obtain and use the correct API key for each version, and how to resolve the ApiKey not found (403) error when calling API endpoints. Understanding API v1 and API v3 Keys LiveAgent supports two API versions — API v1",
+          "published_label": null
+        }
+      ],
+      "reason": "Provisional extraction: validate scope and completeness against the cited page."
+    },
+    "credential_gate": {
+      "value": "unknown",
+      "sources": [],
+      "evidence": [],
+      "reason": "No sufficiently specific positive evidence extracted; review targeted search results."
+    },
+    "api_surface": {
+      "value": [
+        "REST"
+      ],
+      "sources": [
+        "https://support.liveagent.com/802463-REST-API"
+      ],
+      "evidence": [
+        {
+          "value": "REST",
+          "url": "https://support.liveagent.com/802463-REST-API",
+          "excerpt": "REST API REST API Home > Technical Support > LiveAgent API > REST API API key What is an API key\n\n API key is an identity of your LiveAgent (like your username and password) which you can ",
+          "published_label": null
+        }
+      ],
+      "reason": "Provisional extraction: validate scope and completeness against the cited page."
+    },
+    "official_mcp": {
+      "value": "yes (provisional)",
+      "sources": [
+        "https://support.liveagent.com/578762-MCP-Tools-Reference?r=1"
+      ],
+      "evidence": [
+        {
+          "value": "yes (provisional)",
+          "url": "https://support.liveagent.com/578762-MCP-Tools-Reference?r=1",
+          "excerpt": " features > MCP tools reference This article documents the tools exposed by the LiveAgent MCP server, including the exact parameters each tool accepts and the exact fields it returns. A personal MCP connection offers every tool the agent's role has the privile",
+          "published_label": null,
+          "context_warning": "Review vendor ownership, dates, and scope."
+        }
+      ],
+      "reason": "Provisional; check source date, scope, and vendor ownership."
+    },
+    "composio_toolkit": {
+      "value": "unknown",
+      "sources": [],
+      "evidence": [],
+      "reason": "No exact or reviewed alias match; absence is not established."
+    },
+    "verdict": {
+      "value": "unknown",
+      "sources": [],
+      "evidence": [],
+      "reason": "A supported access path, authentication method and API surface were not all extracted."
+    }
+  },
+  "validation": [
+    "Automatic extraction is provisional and not a verified final claim",
+    "Unknown is not evidence of absence",
+    "No Composio-to-vendor-MCP inference",
+    "Basic authentication may be endpoint-specific",
+    "Client-only and negated statements are not positive MCP evidence"
+  ]
+}

@@ -1,0 +1,98 @@
+{
+  "app": {
+    "number": 60,
+    "name": "Clay",
+    "category": "Data, SEO and Scraping",
+    "hint": "clay.com"
+  },
+  "replayed_at": "2026-11-23T18:17:23.218777+00:00",
+  "source_passes": [
+    "data/pass2/060.json",
+    "data/pass4/060.json"
+  ],
+  "source_search": "data/new_search/060.json",
+  "publication_date_note": "Published labels are retained exactly as supplied by search; missing labels are null. Relative labels must not be treated as exact publication dates.",
+  "claims": {
+    "auth": {
+      "value": [
+        "API key",
+        "Bearer token"
+      ],
+      "sources": [
+        "https://university.clay.com/docs/http-api-with-jwt-authentication-integration-overview",
+        "https://university.clay.com/docs/guide-find-clay-api-key"
+      ],
+      "evidence": [
+        {
+          "value": "API key",
+          "url": "https://university.clay.com/docs/http-api-with-jwt-authentication-integration-overview",
+          "excerpt": "uto-refreshed every ~55 minutes ‍ Use standard HTTP API when the API accepts static credentials (an API key, a permanent bearer token). Use HTTP API with JWT Authentication when the API issues a dynamically generated JWT — common in enterprise APIs like Gong and Snov.io . Setting up you",
+          "published_label": null
+        },
+        {
+          "value": "Bearer token",
+          "url": "https://university.clay.com/docs/http-api-with-jwt-authentication-integration-overview",
+          "excerpt": "55 minutes ‍ Use standard HTTP API when the API accepts static credentials (an API key, a permanent bearer token). Use HTTP API with JWT Authentication when the API issues a dynamically generated JWT — common in enterprise APIs like Gong and Snov.io . Setting up your JWT account Before addin",
+          "published_label": null
+        },
+        {
+          "value": "API key",
+          "url": "https://university.clay.com/docs/guide-find-clay-api-key",
+          "excerpt": "Find your Clay API key - Clay Docs Skip to main Review your year with Clay on Clayback.clay.com University home page Search University or ask AI. Learn your way. ⌘ K ​ Open workspace Log in Sign up All ",
+          "published_label": null
+        }
+      ],
+      "reason": "Provisional extraction: validate scope and completeness against the cited page."
+    },
+    "credential_gate": {
+      "value": [
+        "free or trial developer credential path"
+      ],
+      "sources": [
+        "https://university.clay.com/docs/plans-and-billing"
+      ],
+      "evidence": [
+        {
+          "value": "free or trial developer credential path",
+          "url": "https://university.clay.com/docs/plans-and-billing",
+          "excerpt": "ur changes and click Save Changes to finish updating your billing info. Trials Clay offers a 14-day free trial with 1,000 data credits, giving you access to webhooks, CRM integrations, email sequencers, and HTTP API capabilities. Phone number enrichments aren't available during the trial period. To access this feature, upgrade to a paid plan. If your team wants to do a trial, each team member",
+          "published_label": null
+        }
+      ],
+      "reason": "Provisional extraction: validate scope and completeness against the cited page."
+    },
+    "api_surface": {
+      "value": "unknown",
+      "sources": [],
+      "evidence": [],
+      "reason": "No sufficiently specific positive evidence extracted; review targeted search results."
+    },
+    "official_mcp": {
+      "value": "unknown",
+      "sources": [],
+      "evidence": [],
+      "reason": "No sufficiently specific positive evidence extracted; review targeted search results."
+    },
+    "composio_toolkit": {
+      "value": "listed",
+      "sources": [
+        "https://docs.composio.dev/toolkits/clay"
+      ],
+      "evidence": [],
+      "reason": "Catalog match; scope needs review."
+    },
+    "verdict": {
+      "value": "unknown",
+      "sources": [],
+      "evidence": [],
+      "reason": "A supported access path, authentication method and API surface were not all extracted."
+    }
+  },
+  "validation": [
+    "Automatic extraction is provisional and not a verified final claim",
+    "Unknown is not evidence of absence",
+    "No Composio-to-vendor-MCP inference",
+    "Basic authentication may be endpoint-specific",
+    "Client-only and negated statements are not positive MCP evidence"
+  ]
+}

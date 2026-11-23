@@ -1,0 +1,158 @@
+{
+  "app": {
+    "number": 35,
+    "name": "Mailchimp",
+    "category": "Marketing, Ads, Email and Social",
+    "hint": "mailchimp.com/developer"
+  },
+  "replayed_at": "2026-11-23T18:41:32.592500+00:00",
+  "source_passes": [
+    "data/pass2/035.json",
+    "data/pass4/035.json"
+  ],
+  "source_searches": [
+    "data/new_search/035.json",
+    "data/pass4_search/035.json"
+  ],
+  "publication_date_note": "Search publication labels are retained exactly; null means no label was available. Relative labels are not exact dates.",
+  "claims": {
+    "auth": {
+      "value": [
+        "OAuth 2.0",
+        "API key",
+        "Bearer token",
+        "Basic authentication"
+      ],
+      "status": "provisional",
+      "sources": [
+        "https://mailchimp.com/developer/marketing/api-concepts/authentication/",
+        "https://mailchimp.com/legal/api_use/",
+        "https://mailchimp.com/developer/marketing/build/ai-tools/mcp-server/",
+        "https://mailchimp.com/developer/marketing/api-concepts/authentication/api-keys",
+        "https://mailchimp.com/developer/transactional/guides/how-to-use-mailchimps-transactional-messaging-mcp/",
+        "https://mailchimp.com/developer/marketing/build/get-started/create-an-account",
+        "https://mailchimp.com/developer/marketing/build/start-developing/set-up-an-oauth-app?msockid=29bdc574f2e667260679d34cf3e666e1",
+        "https://mailchimp.com/help/about-api-keys/?msockid=0e143ff0b0f06f6f2f7e2987b1416ef5"
+      ],
+      "evidence": [
+        {
+          "value": "OAuth 2.0",
+          "url": "https://mailchimp.com/developer/marketing/api-concepts/authentication/",
+          "excerpt": "Authentication | Mailchimp | Developer For AI agents: a documentation index is available at the root level at /llms.txt. Append /llms.txt to any URL for a page-level index, or .md for the markdown version of any page. Skip to navigation On this page Choose a credential Authentica",
+          "published_label": null
+        },
+        {
+          "value": "API key",
+          "url": "https://mailchimp.com/developer/marketing/api-concepts/authentication/",
+          "excerpt": "ion of any page. Skip to navigation On this page Choose a credential Authenticate with an API key or OAuth 2 token User access and revocation Scroll to top This page is for Mailchimp Marketing API. Every request to the Marketing API carries a credential. There are tw",
+          "published_label": null
+        },
+        {
+          "value": "Bearer token",
+          "url": "https://mailchimp.com/developer/marketing/api-concepts/authentication/",
+          "excerpt": "curl --request GET \\ --url ' https://api.mailchimp.com/3.0/ ' \\ --header ' Authorization: Bearer TOKEN ' User access and revocation Authentication is tied to the user who created the API key or authorized the\nOAuth 2 app, not to the account. If that user is removed from t",
+          "published_label": null
+        },
+        {
+          "value": "Basic authentication",
+          "url": "https://mailchimp.com/developer/marketing/api-concepts/authentication/",
+          "excerpt": "cess tokens are sent the same way. We’ll refer to both\nas tokens. You can use either HTTP Basic Authentication or Bearer Authentication. HTTP Basic Authentication passes the token as the password, with any string as\nthe username: curl --request GET \\ --url ' https://api.mailchimp",
+          "published_label": null
+        },
+        {
+          "value": "API key",
+          "url": "https://mailchimp.com/legal/api_use/",
+          "excerpt": "em in our Terms. 1. Login You'll only access the Integration Interfaces using OAuth or an API key. If you have an Integration, then users must have the option to log in via OAuth or their API key. You won't prompt users to provide their Mailchimp username, password,",
+          "published_label": null
+        },
+        {
+          "value": "OAuth 2.0",
+          "url": "https://mailchimp.com/developer/marketing/build/ai-tools/mcp-server/",
+          "excerpt": "MCP server | Mailchimp | Developer For AI agents: a documentation index is available at the root level at /llms.txt. Append /llms.txt to any URL for a page-level index, or .md for the markdown version of any page. Skip to navigation On this page Connect your agent Other ways agen",
+          "published_label": null
+        },
+        {
+          "value": "API key",
+          "url": "https://mailchimp.com/developer/marketing/api-concepts/authentication/api-keys",
+          "excerpt": "API keys | Mailchimp | Developer For AI agents: a documentation index is available at the root level at /llms.txt. Append /llms.txt to any URL for a page-level index, or .md for",
+          "published_label": null
+        },
+        {
+          "value": "API key",
+          "url": "https://mailchimp.com/developer/transactional/guides/how-to-use-mailchimps-transactional-messaging-mcp/",
+          "excerpt": "e some of the MCP actions, we recommend to have the following setup in advance: Create an API key Authenticate a sending domain If you are using Transactional SMS, have an SMS number setup How do I set up the MCP? The MCP server URL is https://mandrillapp.com/mcp . S",
+          "published_label": null
+        },
+        {
+          "value": "API key",
+          "url": "https://mailchimp.com/developer/marketing/build/get-started/create-an-account",
+          "excerpt": "el of Mailchimp plan you have. Once you have an account and are logged in, you can get an API key and begin making calls to the API .",
+          "published_label": null
+        },
+        {
+          "value": "OAuth 2.0",
+          "url": "https://mailchimp.com/developer/marketing/build/start-developing/set-up-an-oauth-app?msockid=29bdc574f2e667260679d34cf3e666e1",
+          "excerpt": "Set up an OAuth app | Mailchimp | Developer For AI agents: a documentation index is available at the root level at /llms.txt. Append /llms.txt to any URL for a page-level index, or .md for the markdown version of any page. Skip to navigation On this page What you’ll need Register",
+          "published_label": null
+        },
+        {
+          "value": "API key",
+          "url": "https://mailchimp.com/developer/marketing/build/start-developing/set-up-an-oauth-app?msockid=29bdc574f2e667260679d34cf3e666e1",
+          "excerpt": "s and why\nit has the steps it does, see OAuth 2 . What you’ll need A Mailchimp account An API key ,\nif you want to test against your own account first A redirect URI for your application, the URL Mailchimp sends users back\nto after they authorize your application. It",
+          "published_label": null
+        },
+        {
+          "value": "API key",
+          "url": "https://mailchimp.com/help/about-api-keys/?msockid=0e143ff0b0f06f6f2f7e2987b1416ef5",
+          "excerpt": "About API Keys | Mailchimp Skip to main content Save 50% for 12 months - limited time offer. Get started today. Get the job done with a pro From training to full-service marketing, ou",
+          "published_label": null
+        }
+      ],
+      "reason": "Provisional extraction; validate scope and completeness against cited pages."
+    },
+    "credential_gate": {
+      "value": "unknown",
+      "status": "provisional",
+      "sources": [],
+      "evidence": [],
+      "reason": "No sufficiently specific official evidence extracted."
+    },
+    "api_surface": {
+      "value": "unknown",
+      "status": "provisional",
+      "sources": [],
+      "evidence": [],
+      "reason": "No sufficiently specific official evidence extracted."
+    },
+    "official_mcp": {
+      "value": "unknown",
+      "status": "provisional",
+      "sources": [],
+      "evidence": [],
+      "reason": "No sufficiently specific official evidence extracted."
+    },
+    "composio_toolkit": {
+      "value": "listed",
+      "status": "provisional",
+      "sources": [
+        "https://docs.composio.dev/toolkits/mailchimp"
+      ],
+      "evidence": [],
+      "reason": "Catalog match only; not vendor MCP evidence."
+    },
+    "verdict": {
+      "value": "unknown",
+      "status": "provisional",
+      "sources": [],
+      "evidence": [],
+      "reason": "No sufficiently specific official evidence extracted."
+    }
+  },
+  "validation": [
+    "Automatic extraction is provisional until independently reviewed",
+    "Unknown is not evidence of absence",
+    "Composio evidence cannot establish vendor MCP",
+    "Client-only and negated MCP statements are not vendor-server proof",
+    "API breadth is a text-coverage heuristic, not an endpoint census"
+  ]
+}

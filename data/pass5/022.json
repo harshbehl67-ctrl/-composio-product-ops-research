@@ -1,0 +1,150 @@
+{
+  "app": {
+    "number": 22,
+    "name": "Twilio",
+    "category": "Communications and Messaging",
+    "hint": "twilio.com"
+  },
+  "replayed_at": "2026-11-23T18:16:36.516850+00:00",
+  "source_passes": [
+    "data/pass2/022.json",
+    "data/pass4/022.json"
+  ],
+  "source_search": "data/new_search/022.json",
+  "publication_date_note": "Published labels are retained exactly as supplied by search; missing labels are null. Relative labels must not be treated as exact publication dates.",
+  "claims": {
+    "auth": {
+      "value": [
+        "API key",
+        "Basic authentication"
+      ],
+      "sources": [
+        "https://www.twilio.com/docs/iam/credentials/api",
+        "https://www.twilio.com/docs/iam/api-keys",
+        "https://www.twilio.com/docs/iam/access-tokens",
+        "https://www.twilio.com/docs/iam/api-keys/keys-in-console"
+      ],
+      "evidence": [
+        {
+          "value": "API key",
+          "url": "https://www.twilio.com/docs/iam/credentials/api",
+          "excerpt": "lio APIs, Twilio supports HTTP Basic authentication (link takes you to an external page) . Use your API key SID as the username and your API key secret as the password. You can create an API key in the Twilio Console or using the API . Learn more about Twilio API authentication . List p",
+          "published_label": null
+        },
+        {
+          "value": "Basic authentication",
+          "url": "https://www.twilio.com/docs/iam/credentials/api",
+          "excerpt": "sitive Feedback Negative Feedback To authenticate requests to the Twilio APIs, Twilio supports HTTP Basic authentication (link takes you to an external page) . Use your API key SID as the username and your API key secret as the password. You can create an API key in the Twilio Console or using the A",
+          "published_label": null
+        },
+        {
+          "value": "API key",
+          "url": "https://www.twilio.com/docs/iam/api-keys",
+          "excerpt": "the Guide to Basic API Security Best Practices blog post (link takes you to an external page) . The API key types are Main , Standard , and Restricted (Key resource v1 only). The following table describes each type: Key type Access permissions Create in Console Create with REST API Main",
+          "published_label": null
+        },
+        {
+          "value": "API key",
+          "url": "https://www.twilio.com/docs/iam/access-tokens",
+          "excerpt": "Your application can choose this identifier. The default SDK implementation includes the SID of the API key used to generate the token and a unique random string. iss is the issuer — the API key containing the secret used to sign the token. sub is the SID of the Twilio Account to which ",
+          "published_label": null
+        },
+        {
+          "value": "API key",
+          "url": "https://www.twilio.com/docs/iam/api-keys/keys-in-console",
+          "excerpt": "thenticate to Twilio's REST API and to create and revoke Access Tokens . (information) Info If your API key requires access to the Accounts ( /Accounts ) or Keys ( /Accounts/{SID}/Keys , /v1/Keys ) endpoints, then you'll need to use a Main key. You can create Main keys only in the Twili",
+          "published_label": null
+        }
+      ],
+      "reason": "Provisional extraction: validate scope and completeness against the cited page."
+    },
+    "credential_gate": {
+      "value": "unknown",
+      "sources": [],
+      "evidence": [],
+      "reason": "No sufficiently specific positive evidence extracted; review targeted search results."
+    },
+    "api_surface": {
+      "value": [
+        "REST"
+      ],
+      "sources": [
+        "https://www.twilio.com/docs/iam/credentials/api",
+        "https://www.twilio.com/docs/iam/api-keys",
+        "https://www.twilio.com/docs/usage/requests-to-twilio",
+        "https://www.twilio.com/docs/iam/access-tokens",
+        "https://www.twilio.com/docs/iam/api-keys/keys-in-console"
+      ],
+      "evidence": [
+        {
+          "value": "REST",
+          "url": "https://www.twilio.com/docs/iam/credentials/api",
+          "excerpt": "REST API: Credentials | Twilio Skip to content Skip to navigation Skip to topbar Go to the Twilio Docs home page Twilio Docs Search Search Page tools Copy as markdown Useful for sharing or",
+          "published_label": null
+        },
+        {
+          "value": "REST",
+          "url": "https://www.twilio.com/docs/iam/api-keys",
+          "excerpt": "ew Positive Feedback Negative Feedback API keys are the preferred way to authenticate with Twilio's REST APIs . With API keys, you control which users and applications have access to your Twilio Account's API resources, and you can revoke access at your discretion. If your Twilio applicat",
+          "published_label": null
+        },
+        {
+          "value": "REST",
+          "url": "https://www.twilio.com/docs/usage/requests-to-twilio",
+          "excerpt": " The following table describes each type: Key type Access permissions Create in Console Create with REST API Main Full access to all Twilio API resources. Equivalent to using your Account SID and Auth Token for API requests. Yes No Standard Access to all Twilio API resources, except for ",
+          "published_label": null
+        },
+        {
+          "value": "REST",
+          "url": "https://www.twilio.com/docs/iam/access-tokens",
+          "excerpt": " . You can create API keys from the Twilio Console (link takes you to an external page) or with the REST API . Note : You can create Access Tokens using Main and Standard API Keys. Creating Access Tokens is not yet supported with Restricted API Keys. (warning) Warning If you are creating",
+          "published_label": null
+        },
+        {
+          "value": "REST",
+          "url": "https://www.twilio.com/docs/iam/api-keys/keys-in-console",
+          "excerpt": "eate and manage all of your API keys in the Twilio Console. To create and manage API keys using the REST API, refer to Key resource v1 . API keys represent the required credentials that you'll use to authenticate to Twilio's REST API and to create and revoke Access Tokens . (information)",
+          "published_label": null
+        }
+      ],
+      "reason": "Provisional extraction: validate scope and completeness against the cited page."
+    },
+    "official_mcp": {
+      "value": "yes (provisional)",
+      "sources": [
+        "https://www.twilio.com/docs/ai/mcp"
+      ],
+      "evidence": [
+        {
+          "value": "yes (provisional)",
+          "url": "https://www.twilio.com/docs/ai/mcp",
+          "excerpt": "Twilio MCP server | Twilio Skip to content Skip to navigation Skip to topbar Go to the Twilio Docs home page Twilio Docs Search Search Page tools Copy as markdown Useful for sha",
+          "published_label": null,
+          "context_warning": "Review vendor ownership, dates, and scope."
+        }
+      ],
+      "reason": "Provisional; check source date, scope, and vendor ownership."
+    },
+    "composio_toolkit": {
+      "value": "listed",
+      "sources": [
+        "https://docs.composio.dev/toolkits/twilio"
+      ],
+      "evidence": [],
+      "reason": "Catalog match; scope needs review."
+    },
+    "verdict": {
+      "value": "unknown",
+      "sources": [],
+      "evidence": [],
+      "reason": "A supported access path, authentication method and API surface were not all extracted."
+    }
+  },
+  "validation": [
+    "Automatic extraction is provisional and not a verified final claim",
+    "Unknown is not evidence of absence",
+    "No Composio-to-vendor-MCP inference",
+    "Basic authentication may be endpoint-specific",
+    "Client-only and negated statements are not positive MCP evidence"
+  ]
+}

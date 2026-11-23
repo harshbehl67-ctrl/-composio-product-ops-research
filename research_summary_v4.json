@@ -1,0 +1,292 @@
+{
+  "checked_at": "2026-11-24",
+  "apps": 100,
+  "coverage": {
+    "auth": {
+      "checked": 99,
+      "unknown": 1
+    },
+    "credential_gate": {
+      "checked": 99,
+      "unknown": 1
+    },
+    "api_surface": {
+      "checked": 99,
+      "unknown": 1
+    },
+    "official_mcp": {
+      "checked": 100,
+      "unknown": 0
+    },
+    "composio_toolkit": {
+      "checked": 100,
+      "unknown": 0
+    },
+    "verdict": {
+      "checked": 99,
+      "unknown": 1
+    }
+  },
+  "auth_methods": {
+    "Bearer token": 37,
+    "Access token": 72,
+    "OAuth 2.0": 69,
+    "API key": 36,
+    "Basic authentication": 22,
+    "Other documented method": 24,
+    "Session authentication": 1,
+    "No authentication": 3
+  },
+  "credential_gates": {
+    "self_serve_free": 49,
+    "mixed": 17,
+    "self_serve_trial": 13,
+    "admin_approval": 7,
+    "paid_plan": 9,
+    "unknown": 1,
+    "no_public_api": 1,
+    "partner_or_sales": 3
+  },
+  "api_types": {
+    "REST": 79,
+    "SOAP": 1,
+    "GraphQL": 13,
+    "HTTP API": 14,
+    "WebSocket API": 1,
+    "WebSocket Streams": 1
+  },
+  "api_breadth": {
+    "broad": 85,
+    "moderate": 10,
+    "unknown": 1,
+    "no_public_api": 2,
+    "narrow": 2
+  },
+  "official_mcp": {
+    "vendor_server": 92,
+    "no_vendor_server_documented": 8
+  },
+  "composio_toolkit": {
+    "listed_exact": 69,
+    "listed_alias": 11,
+    "not_listed": 20
+  },
+  "verdicts": {
+    "documented_build_candidate": 64,
+    "gated_build_candidate": 30,
+    "unknown": 1,
+    "wrapper_or_cli": 2,
+    "partner_outreach": 3
+  },
+  "blockers": {
+    "none_documented_for_prototype": 61,
+    "credential_access_gate": 33,
+    "unresolved_official_evidence": 1,
+    "wrapper_required": 2,
+    "partnership_or_sales": 3
+  },
+  "categories": {
+    "CRM and Sales": {
+      "apps": 10,
+      "verdicts": {
+        "documented_build_candidate": 9,
+        "gated_build_candidate": 1
+      },
+      "gates": {
+        "self_serve_free": 6,
+        "mixed": 1,
+        "self_serve_trial": 2,
+        "admin_approval": 1
+      }
+    },
+    "Support and Helpdesk": {
+      "apps": 10,
+      "verdicts": {
+        "documented_build_candidate": 5,
+        "gated_build_candidate": 5
+      },
+      "gates": {
+        "self_serve_trial": 4,
+        "mixed": 2,
+        "self_serve_free": 1,
+        "paid_plan": 2,
+        "admin_approval": 1
+      }
+    },
+    "Communications and Messaging": {
+      "apps": 10,
+      "verdicts": {
+        "documented_build_candidate": 7,
+        "gated_build_candidate": 3
+      },
+      "gates": {
+        "self_serve_free": 5,
+        "self_serve_trial": 2,
+        "mixed": 2,
+        "paid_plan": 1
+      }
+    },
+    "Marketing, Ads, Email and Social": {
+      "apps": 10,
+      "verdicts": {
+        "gated_build_candidate": 6,
+        "documented_build_candidate": 4
+      },
+      "gates": {
+        "mixed": 6,
+        "paid_plan": 1,
+        "self_serve_free": 3
+      }
+    },
+    "Ecommerce": {
+      "apps": 10,
+      "verdicts": {
+        "gated_build_candidate": 6,
+        "documented_build_candidate": 3,
+        "unknown": 1
+      },
+      "gates": {
+        "admin_approval": 3,
+        "self_serve_free": 2,
+        "self_serve_trial": 1,
+        "mixed": 2,
+        "paid_plan": 1,
+        "unknown": 1
+      }
+    },
+    "Data, SEO and Scraping": {
+      "apps": 10,
+      "verdicts": {
+        "documented_build_candidate": 7,
+        "gated_build_candidate": 1,
+        "wrapper_or_cli": 1,
+        "partner_outreach": 1
+      },
+      "gates": {
+        "self_serve_free": 6,
+        "self_serve_trial": 1,
+        "paid_plan": 1,
+        "no_public_api": 1,
+        "partner_or_sales": 1
+      }
+    },
+    "Developer, Infra and Data platforms": {
+      "apps": 10,
+      "verdicts": {
+        "documented_build_candidate": 10
+      },
+      "gates": {
+        "self_serve_free": 8,
+        "self_serve_trial": 2
+      }
+    },
+    "Productivity and Project Management": {
+      "apps": 10,
+      "verdicts": {
+        "documented_build_candidate": 9,
+        "gated_build_candidate": 1
+      },
+      "gates": {
+        "self_serve_free": 9,
+        "paid_plan": 1
+      }
+    },
+    "Finance and Fintech": {
+      "apps": 10,
+      "verdicts": {
+        "documented_build_candidate": 4,
+        "gated_build_candidate": 5,
+        "partner_outreach": 1
+      },
+      "gates": {
+        "self_serve_free": 3,
+        "self_serve_trial": 1,
+        "mixed": 3,
+        "admin_approval": 2,
+        "partner_or_sales": 1
+      }
+    },
+    "AI, Research and Media-native": {
+      "apps": 10,
+      "verdicts": {
+        "documented_build_candidate": 6,
+        "partner_outreach": 1,
+        "gated_build_candidate": 2,
+        "wrapper_or_cli": 1
+      },
+      "gates": {
+        "self_serve_free": 6,
+        "partner_or_sales": 1,
+        "paid_plan": 2,
+        "mixed": 1
+      }
+    }
+  },
+  "documented_easy_wins": [
+    "Salesforce",
+    "HubSpot",
+    "Pipedrive",
+    "Attio",
+    "Podio",
+    "Zoho CRM",
+    "Close",
+    "Copper",
+    "Zendesk",
+    "Front",
+    "LiveAgent",
+    "Plain",
+    "Gorgias",
+    "Slack",
+    "Twilio",
+    "Zoho Cliq",
+    "Pumble",
+    "Discord",
+    "Telegram",
+    "Vonage",
+    "Mailchimp",
+    "Klaviyo",
+    "systeme.io",
+    "WooCommerce",
+    "BigCommerce",
+    "Gumroad",
+    "DataForSEO",
+    "SE Ranking",
+    "MrScraper",
+    "Apify",
+    "Firecrawl",
+    "Bright Data",
+    "Clay",
+    "GitHub",
+    "Vercel",
+    "Netlify",
+    "Cloudflare",
+    "Supabase",
+    "Neo4j",
+    "Snowflake",
+    "MongoDB Atlas",
+    "Datadog",
+    "Sentry",
+    "Notion",
+    "Airtable",
+    "Linear",
+    "Jira",
+    "Asana",
+    "Monday.com",
+    "ClickUp",
+    "Coda",
+    "Harvest",
+    "Stripe",
+    "Plaid",
+    "Binance",
+    "Xero",
+    "Fathom",
+    "Consensus",
+    "Reducto",
+    "YouTube Transcript"
+  ],
+  "notes": [
+    "Counts describe checked documentation, not live credential tests.",
+    "Unknown is not evidence of absence.",
+    "Composio toolkit listings are separate from vendor-operated MCP servers."
+  ]
+}

@@ -1,0 +1,133 @@
+{
+  "app": {
+    "number": 52,
+    "name": "SE Ranking",
+    "category": "Data, SEO and Scraping",
+    "hint": "seranking.com/api"
+  },
+  "checked_at": "2026-11-23T18:15:09.650074+00:00",
+  "prior_source": "data/pass2/052.json",
+  "search_source": "data/pass4_search/052.json",
+  "new_candidates": [
+    {
+      "url": "https://help.seranking.com/hc/en-us/articles/21824256441756-How-to-connect-SE-Ranking-s-Data-API-to-Make",
+      "title": "How to connect SE Ranking’s Data API to Make – Knowledge Base (https://help.seranking.com/hc/en-us/articles/21824256441756-How-to-connect-SE-Ranking-s-Data-API-to-Make)",
+      "published_label": null
+    },
+    {
+      "url": "https://help.seranking.com/hc/en-us/articles/21850333996956-Set-up-the-SE-Ranking-Project-API-on-Make",
+      "title": "Set up the SE Ranking Project API on Make – Knowledge Base (https://help.seranking.com/hc/en-us/articles/21850333996956-Set-up-the-SE-Ranking-Project-API-on-Make)",
+      "published_label": null
+    },
+    {
+      "url": "https://help.seranking.com/hc/en-us/articles/26182120787740-SE-Ranking-s-API-FAQ",
+      "title": "SE Ranking's API FAQ – Knowledge Base (https://help.seranking.com/hc/en-us/articles/26182120787740-SE-Ranking-s-API-FAQ)",
+      "published_label": null
+    },
+    {
+      "url": "https://help.seranking.com/hc/en-us/articles/21487397355420-API-credit-costs",
+      "title": "API credit costs – Knowledge Base (https://help.seranking.com/hc/en-us/articles/21487397355420-API-credit-costs)",
+      "published_label": null
+    },
+    {
+      "url": "https://help.seranking.com/hc/en-us/articles/28449005578012-SE-Ranking-API-Comparison-Project-API-vs-Data-API",
+      "title": "SE Ranking API Comparison: Project API vs. Data API – Knowledge Base (https://help.seranking.com/hc/en-us/articles/28449005578012-SE-Ranking-API-Comparison-Project-API-vs-Data-API)",
+      "published_label": null
+    },
+    {
+      "url": "https://help.seranking.com/hc/en-us/articles/25945946059548-SE-Ranking-API-Use-Cases-Overview",
+      "title": "SE Ranking API Use Cases: Overview – Knowledge Base (https://help.seranking.com/hc/en-us/articles/25945946059548-SE-Ranking-API-Use-Cases-Overview)",
+      "published_label": null
+    },
+    {
+      "url": "https://seranking.com/api.html",
+      "title": "SEO API by SE Ranking: SEO & AEO Data at Scale (https://seranking.com/api.html)",
+      "published_label": null
+    },
+    {
+      "url": "https://help.seranking.com/hc/en-us/articles/26158902552348-Build-autonomous-SEO-Agents-using-the-SE-Ranking-API",
+      "title": "Build autonomous SEO Agents using the SE Ranking API – Knowledge Base (https://help.seranking.com/hc/en-us/articles/26158902552348-Build-autonomous-SEO-Agents-using-the-SE-Ranking-API)",
+      "published_label": null
+    },
+    {
+      "url": "https://seranking.com/api/data/quickstarts/",
+      "title": "Quickstart guides - SE Ranking API Documentation (https://seranking.com/api/data/quickstarts/)",
+      "published_label": null
+    },
+    {
+      "url": "https://seranking.com/api/data/reference/",
+      "title": "SE Ranking API Reference - SE Ranking API Documentation (https://seranking.com/api/data/reference/)",
+      "published_label": null
+    }
+  ],
+  "selected": [
+    {
+      "url": "https://help.seranking.com/hc/en-us/articles/21824256441756-How-to-connect-SE-Ranking-s-Data-API-to-Make",
+      "title": "How to connect SE Ranking’s Data API to Make – Knowledge Base (https://help.seranking.com/hc/en-us/articles/21824256441756-How-to-connect-SE-Ranking-s-Data-API-to-Make)",
+      "published_label": null
+    }
+  ],
+  "new_pages": [
+    {
+      "url": "https://help.seranking.com/hc/en-us/articles/21824256441756-How-to-connect-SE-Ranking-s-Data-API-to-Make",
+      "requested_url": "https://help.seranking.com/hc/en-us/articles/21824256441756-How-to-connect-SE-Ranking-s-Data-API-to-Make",
+      "status": 200,
+      "title": "How to connect SE Ranking’s Data API to Make – Knowledge Base (https://help.seranking.com/hc/en-us/articles/21824256441756-How-to-connect-SE-Ranking-s-Data-API-to-Make)",
+      "text": "How to connect SE Ranking’s Data API to Make – Knowledge Base Explore SE Ranking Tool Solutions API Articles in this section API credit costs Getting Started with SE Ranking's API SE Ranking API Comparison: Project API vs. Data API How to build automated SEO workflows with SE Ranking MCP and GA4 SE Ranking integration with n8n How to connect SE Ranking’s Data API to Make Set up the SE Ranking Project API on Make The API package is available as a standalone product — no active\n          SE Ranking subscription is required. Start with a 14-day trial\n          that includes 100,000 free API credits . Paid plans include monthly Data API credits for testing: Core (25,000/month), Growth & Enterprise (100,000/month). Legacy v7 plans: Essential (10,000/month),\n          Pro (25,000/month),\n          Business & Enterprise (100,000/month). Legacy v1-v6: Essential and Pro plans do not include API access.\n          To use the API, please purchase the API add-on. The SE Ranking Data API integration enables you to build powerful no-code automations such as backlink exports, keyword lookups, and domain audits without writing any code. To use the integration, you must have an active SE Ranking account and a valid API key. Getting Access to the Data API Access to the Data API is available during the 14-day SE Ranking trial and is included in the Growth and Enterprise plans, each providing 100,000 Data API credits . Legacy Business plans also include 100,000 credits. The API can be enabled upon request by contacting support via in-app chat or by emailing api@seranking.com . Once enabled, you can generate your API key from the API Dashboard. Please note: For login or access-related issues, contact api@seranking.com . Available Modules SE Ranking’s Make integration includes more than 40 modules grouped across core SEO areas. These modules allow you to automate data retrieval, analysis, and reporting workflows. Module Features Backlinks Search backlinks, domains, and authority Track new and lost links over time Export backlink data via scheduled automations Keyword Research Discover related, long-tail, and question-based keywords Retrieve metrics such as search volume, CPC, and keyword\n              difficulty Domain Analysis Access organic and paid traffic data per domain Compare domains, analyze authority, and review ad history Account Check subscription status, validity period, and remaining\n              API credits Documentation & Resources For technical specifications, endpoint references, and integration examples, consult the official resources: Step-by-step guide in SE Ranking Documentation Make Documentation SE Ranking Data Integrations",
+      "published_label": null
+    }
+  ],
+  "claims": {
+    "auth": {
+      "value": "unknown",
+      "sources": [],
+      "evidence": [],
+      "reason": "No sufficiently specific positive evidence extracted; review targeted search results."
+    },
+    "credential_gate": {
+      "value": "unknown",
+      "sources": [],
+      "evidence": [],
+      "reason": "No sufficiently specific positive evidence extracted; review targeted search results."
+    },
+    "api_surface": {
+      "value": "unknown",
+      "sources": [],
+      "evidence": [],
+      "reason": "No sufficiently specific positive evidence extracted; review targeted search results."
+    },
+    "official_mcp": {
+      "value": "yes (provisional)",
+      "sources": [
+        "https://seranking.com/api/integrations/mcp/"
+      ],
+      "evidence": [
+        {
+          "value": "yes (provisional)",
+          "url": "https://seranking.com/api/integrations/mcp/",
+          "excerpt": "des a standardized interface that allows any compatible AI model to access your SE Ranking and SE Visible data simply and securely. MCP server server follows the authenticated remote MCP spec, so it’s centrally hosted and managed. Connect in one click in Claude or ChatGPT , natively in Cursor and othe",
+          "published_label": null,
+          "context_warning": "Review vendor ownership, dates, and scope."
+        }
+      ],
+      "reason": "Provisional; check source date, scope, and vendor ownership."
+    },
+    "composio_toolkit": {
+      "value": "unknown",
+      "sources": [],
+      "evidence": [],
+      "reason": "No exact or reviewed alias match; absence is not established."
+    },
+    "verdict": {
+      "value": "unknown",
+      "sources": [],
+      "evidence": [],
+      "reason": "A supported access path, authentication method and API surface were not all extracted."
+    }
+  },
+  "validation": [
+    "All claims are provisional",
+    "No vendor MCP inference from Composio catalog",
+    "Negated MCP or client-only source is not counted as vendor-server proof"
+  ]
+}

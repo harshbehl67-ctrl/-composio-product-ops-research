@@ -1,0 +1,82 @@
+{
+  "app": {
+    "number": 96,
+    "name": "Devin",
+    "category": "AI, Research and Media-native",
+    "hint": "docs.devin.ai (MCP)"
+  },
+  "replayed_at": "2026-11-23T18:45:56.818002+00:00",
+  "source_passes": [
+    "data/pass2/096.json",
+    "data/pass4/096.json"
+  ],
+  "source_searches": [
+    "data/new_search/096.json",
+    "data/pass4_search/096.json"
+  ],
+  "publication_date_note": "Search publication labels are retained exactly; null means no label was available. Relative labels are not exact dates.",
+  "claims": {
+    "auth": {
+      "value": [
+        "API key"
+      ],
+      "status": "provisional",
+      "sources": [
+        "https://docs.devin.ai/es/api-reference/authentication"
+      ],
+      "evidence": [
+        {
+          "value": "API key",
+          "url": "https://docs.devin.ai/es/api-reference/authentication",
+          "excerpt": "nformación, consulta Tokens de acceso personal . Autenticación heredada (desaprobada) Las API keys heredadas están desaprobadas. Usa la API v3 con autenticación de usuario de servicio. Consulta la guía de migración . Las API keys heredadas se usan con las API v1 y v2",
+          "published_label": null
+        }
+      ],
+      "reason": "Provisional extraction; validate scope and completeness against cited pages."
+    },
+    "credential_gate": {
+      "value": "unknown",
+      "status": "provisional",
+      "sources": [],
+      "evidence": [],
+      "reason": "No sufficiently specific official evidence extracted."
+    },
+    "api_surface": {
+      "value": "unknown",
+      "status": "provisional",
+      "sources": [],
+      "evidence": [],
+      "reason": "No sufficiently specific official evidence extracted."
+    },
+    "official_mcp": {
+      "value": "unknown",
+      "status": "provisional",
+      "sources": [],
+      "evidence": [],
+      "reason": "No sufficiently specific official evidence extracted."
+    },
+    "composio_toolkit": {
+      "value": "listed",
+      "status": "provisional",
+      "sources": [
+        "https://docs.composio.dev/toolkits/devin_mcp"
+      ],
+      "evidence": [],
+      "reason": "Catalog match only; not vendor MCP evidence."
+    },
+    "verdict": {
+      "value": "unknown",
+      "status": "provisional",
+      "sources": [],
+      "evidence": [],
+      "reason": "No sufficiently specific official evidence extracted."
+    }
+  },
+  "validation": [
+    "Automatic extraction is provisional until independently reviewed",
+    "Unknown is not evidence of absence",
+    "Composio evidence cannot establish vendor MCP",
+    "Client-only and negated MCP statements are not vendor-server proof",
+    "API breadth is a text-coverage heuristic, not an endpoint census"
+  ]
+}

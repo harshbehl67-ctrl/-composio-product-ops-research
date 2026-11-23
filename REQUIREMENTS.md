@@ -1,18 +1,24 @@
 # Assignment checklist
 
-| Requirement | Current location / status |
+| Requirement | Final location / status |
 |---|---|
-| Exact 100 apps | `apps.json`; assertion in `assess.py` |
-| Agent/script across list, raw baseline | `research.py` and `data/001.json`–`data/100.json`; source discovery performed, full claim extraction not complete |
-| Candidate review | `candidate_triage.json` indexes 100 apps; unreviewed candidates remain and most claims are unknown |
-| Composio catalog vs vendor MCP | `reviewed_dataset.json` and page table; 77 catalog matches (61 exact + 16 alias), 23 unknown; 46 positive vendor MCP cases reviewed, one dated negative, and 53 unresolved; early-access and product scope differ |
-| Six-field category sample | `pass2_review.json`, ten apps / 60 fields; new pass answered 26, with 19 correct, 7 partial, 34 abstained |
-| First-pass accuracy | Baseline: 0/60 answered, accuracy 0/0 undefined. New pass: 22.5/26 weighted (86.5%); sample is deliberately selected and not population accuracy |
-| Category and decision patterns | Page matrix shows 85 verdicts unknown; 15 scoped documented or inferred decisions; substantive patterns are not yet justified |
-| Workflow and corrections | Page research and accuracy sections; scripts and logs in project |
-| Single page and interaction | `index.html`; tested at 1440px and 390px, filters/sort/JSON/CSV/keyboard details |
-| Source links | `link_checks.json`: 157 checked; 154 HTTP successes and three HTTP 403 responses to the direct checker at check time (all three opened through the web reader); this does not verify claim truth |
-| Live link / repository | Repository pushed and opened at https://github.com/harshbehl67-ctrl/-composio-product-ops-research; case-study deployment remains incomplete |
-| Submission readiness | Not ready: 85 app verdicts unknown, most required fields incomplete, sample and holdout incomplete |
+| Exact 100 apps across ten categories | `apps.json`; `assemble_checked_v4.py` validates 100 unique assigned apps |
+| Agent/script across the list with raw baseline | `research.py`; immutable `data/001.json`–`data/100.json`; later frozen passes under `data/pass*` |
+| Candidate review and claim-specific sources | All 100 records in `data/checked_research/`; 496/500 vendor claims checked |
+| API reference, authentication, credentials, access/pricing, MCP | Official first-party evidence per field in `checked_dataset_v4.json`; exact quotes and dates retained |
+| Context corrections | `context_pass_v4.py`; client/server direction, clause-local negation, publication labels, ownership checks, and Composio separation |
+| Composio catalog vs vendor MCP | 69 exact, 11 alias, 20 scoped not-listed findings; 92 vendor servers and 8 scoped no-server findings reported separately |
+| Buildability, blocker, next action | 64 documented, 30 gated, 3 partner, 2 wrapper/CLI, 1 unresolved; every record has blocker and next action |
+| Six-field category sample | `review_selected_v4.json`; 33/60 answered, strict 19/33, half-credit 25/33 |
+| Random holdout | `review_holdout_v4.json`; seed 20261124, 26/60 answered, strict 14/26, half-credit 18/26 |
+| Baseline accuracy | 0/60 answered; accuracy undefined (0/0); no improvement claim |
+| Category and decision patterns | `research_summary_v4.json` and generated category matrix in `index.html` |
+| Workflow and corrections | Runnable commands in `README.md`; exact actions in `source_review_v4.json` and group logs |
+| Single page and interaction | `index.html`; 1440px/390px Playwright tests pass for filters, sort, empty search, keyboard details, exports, and overflow |
+| Source links | `link_checks_v4.json`: 592 URLs, zero broken checked links; `independent_link_checks_v4.json`: 123 URLs, zero unresolved |
+| Historical bearer-shaped string | `security_example_review.json`: exact public Zendesk documentation example; no evidence of a user-owned credential, so history was not rewritten |
+| Secret scan | `secret_scan_v4.json`: 1,728 files, 42 preserved-research occurrences, zero outside preserved research |
+| Live link / repository | Source: https://github.com/harshbehl67-ctrl/-composio-product-ops-research; GitHub Pages live verification pending |
+| Submission readiness | Research, page, validation, and browser tests complete; publication awaits final Pages live test |
 
-The new targeted search and tentative extraction cover all 100 apps, but individual claim-level review remains incomplete. See `research_diagnostics.md` and `remaining_unknowns.json`.
+The only unresolved core fields are Fanbasis authentication, credential gate, API surface, and verdict. Current first-party Commas pages document the Fanbasis rebrand, APIs/SDKs, and an MCP beta, but do not publish those API details; the legacy Fanbasis API Docs site remains password-protected. This is a specific evidence boundary, not a generic incomplete-research label.

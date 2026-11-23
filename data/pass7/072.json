@@ -1,0 +1,124 @@
+{
+  "app": {
+    "number": 72,
+    "name": "Airtable",
+    "category": "Productivity and Project Management",
+    "hint": "airtable.com/developers"
+  },
+  "replayed_at": "2026-11-23T18:19:20.310168+00:00",
+  "source_passes": [
+    "data/pass2/072.json",
+    "data/pass4/072.json"
+  ],
+  "source_search": "data/new_search/072.json",
+  "publication_date_note": "Published labels are retained exactly as supplied by search; missing labels are null. Relative labels must not be treated as exact publication dates.",
+  "claims": {
+    "auth": {
+      "value": [
+        "API key"
+      ],
+      "sources": [
+        "https://support.airtable.com/articles/9934989703-creating-personal-access-tokens",
+        "https://support.airtable.com/articles/9934989703-Creating-personal-access-tokens"
+      ],
+      "evidence": [
+        {
+          "value": "API key",
+          "url": "https://support.airtable.com/articles/9934989703-creating-personal-access-tokens",
+          "excerpt": "about configuring your token's access, refer to the personal access tokens guide . How do I find my API key? On Jan 18, 2023, we began the deprecating user API keys, completing the deprecation process on Feb 1, 2024, meaning: API Keys can no longer access the Airtable API. Webhooks crea",
+          "published_label": "last week"
+        },
+        {
+          "value": "API key",
+          "url": "https://support.airtable.com/articles/9934989703-Creating-personal-access-tokens",
+          "excerpt": "about configuring your token's access, refer to the personal access tokens guide . How do I find my API key? On Jan 18, 2023, we began the deprecating user API keys, completing the deprecation process on Feb 1, 2024, meaning: API Keys can no longer access the Airtable API. Webhooks crea",
+          "published_label": "last week"
+        }
+      ],
+      "reason": "Provisional extraction: validate scope and completeness against the cited page."
+    },
+    "credential_gate": {
+      "value": "unknown",
+      "sources": [],
+      "evidence": [],
+      "reason": "No sufficiently specific positive evidence extracted; review targeted search results."
+    },
+    "api_surface": {
+      "value": [
+        "REST"
+      ],
+      "sources": [
+        "https://support.airtable.com/articles/2111090641-Airtable-API%3A-Common-troubleshooting",
+        "https://www.airtable.com/platform/mcp"
+      ],
+      "evidence": [
+        {
+          "value": "REST",
+          "url": "https://support.airtable.com/articles/2111090641-Airtable-API%3A-Common-troubleshooting",
+          "excerpt": "26, Viewer (Restricted) users can't create, update, or delete records through the API—this includes REST API calls, personal access tokens, OAuth apps, and MCP connectors (such as Airtable for Claude). Read requests and comments still work normally. Troubleshooting steps - Check the lice",
+          "published_label": null
+        },
+        {
+          "value": "REST",
+          "url": "https://www.airtable.com/platform/mcp",
+          "excerpt": "nit, the same way they block API access. What are the rate limits? MCP runs through the same public REST API, so the standard limits apply: 5 requests per second per base and 50 requests per second per token. Records an agent creates count against your base's normal record limits.",
+          "published_label": null
+        }
+      ],
+      "reason": "Provisional extraction: validate scope and completeness against the cited page."
+    },
+    "official_mcp": {
+      "value": "yes (provisional)",
+      "sources": [
+        "https://support.airtable.com/articles/9897799762-using-the-airtable-mcp-server",
+        "https://support.airtable.com/articles/9897799762-Using-the-Airtable-MCP-server",
+        "https://www.airtable.com/platform/mcp"
+      ],
+      "evidence": [
+        {
+          "value": "yes (provisional)",
+          "url": "https://support.airtable.com/articles/9897799762-using-the-airtable-mcp-server",
+          "excerpt": "Using the Airtable MCP server | Airtable Help Center Contact support Sign up for free Using the Airtable MCP server Last updated 13 days ago Plan availability All plans Permissions Your MCP",
+          "published_label": "2 weeks ago",
+          "context_warning": "Review vendor ownership, dates, and scope."
+        },
+        {
+          "value": "yes (provisional)",
+          "url": "https://support.airtable.com/articles/9897799762-Using-the-Airtable-MCP-server",
+          "excerpt": "Using the Airtable MCP server | Airtable Help Center Contact support Sign up for free Using the Airtable MCP server Last updated 13 days ago Plan availability All plans Permissions Your MCP",
+          "published_label": "2 weeks ago",
+          "context_warning": "Review vendor ownership, dates, and scope."
+        },
+        {
+          "value": "yes (provisional)",
+          "url": "https://www.airtable.com/platform/mcp",
+          "excerpt": "ake updates – no base access needed You have questions? We have answers What is Airtable's MCP server? A hosted service at mcp.airtable.com/mcp that lets any MCP-compatible AI client read and act on live Airtable data and structure. Your agent can query records",
+          "published_label": null,
+          "context_warning": "Review vendor ownership, dates, and scope."
+        }
+      ],
+      "reason": "Provisional; check source date, scope, and vendor ownership."
+    },
+    "composio_toolkit": {
+      "value": "listed",
+      "sources": [
+        "https://docs.composio.dev/toolkits/airtable"
+      ],
+      "evidence": [],
+      "reason": "Catalog match; scope needs review."
+    },
+    "verdict": {
+      "value": "unknown",
+      "sources": [],
+      "evidence": [],
+      "reason": "A supported access path, authentication method and API surface were not all extracted."
+    }
+  },
+  "validation": [
+    "Automatic extraction is provisional and not a verified final claim",
+    "Unknown is not evidence of absence",
+    "No Composio-to-vendor-MCP inference",
+    "Basic authentication may be endpoint-specific",
+    "Client-only and negated statements are not positive MCP evidence"
+  ]
+}

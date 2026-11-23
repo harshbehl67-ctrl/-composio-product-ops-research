@@ -1,0 +1,291 @@
+{
+  "app": {
+    "number": 74,
+    "name": "Jira",
+    "category": "Productivity and Project Management",
+    "hint": "developer.atlassian.com"
+  },
+  "checked_at": "2026-11-23T18:15:32.144464+00:00",
+  "prior_source": "data/pass2/074.json",
+  "search_source": "data/pass4_search/074.json",
+  "new_candidates": [
+    {
+      "url": "https://developer.atlassian.com/cloud/jira/platform/rest/v3/intro",
+      "title": "The Jira Cloud platform REST API (https://developer.atlassian.com/cloud/jira/platform/rest/v3/intro)",
+      "published_label": null
+    },
+    {
+      "url": "https://support.atlassian.com/atlassian-account/docs/manage-api-tokens-for-your-atlassian-account/",
+      "title": "Manage API tokens for your Atlassian account | Atlassian Support (https://support.atlassian.com/atlassian-account/docs/manage-api-tokens-for-your-atlassian-account/)",
+      "published_label": null
+    },
+    {
+      "url": "https://docs.atlassian.com/software/jira/docs/api/REST/1000.100.0/",
+      "title": "JIRA 1000.100.0 (https://docs.atlassian.com/software/jira/docs/api/REST/1000.100.0/)",
+      "published_label": null
+    },
+    {
+      "url": "https://developer.atlassian.com/server/jira/platform/jira-rest-api-example-basic-authentication-6291732/",
+      "title": "JIRA REST API Example Basic Authentication 6291732 (https://developer.atlassian.com/server/jira/platform/jira-rest-api-example-basic-authentication-6291732/)",
+      "published_label": null
+    },
+    {
+      "url": "https://developer.atlassian.com/cloud/jira/platform/rest/v2/",
+      "title": "The Jira Cloud platform REST API (https://developer.atlassian.com/cloud/jira/platform/rest/v2/)",
+      "published_label": null
+    },
+    {
+      "url": "https://developer.atlassian.com/cloud/jira/platform/rest/v2/intro",
+      "title": "The Jira Cloud platform REST API (https://developer.atlassian.com/cloud/jira/platform/rest/v2/intro)",
+      "published_label": null
+    },
+    {
+      "url": "https://support.atlassian.com/atlassian-account/docs/manage-api-tokens-for-your-atlassian-account",
+      "title": "Manage API tokens for your Atlassian account | Atlassian Support (https://support.atlassian.com/atlassian-account/docs/manage-api-tokens-for-your-atlassian-account)",
+      "published_label": null
+    },
+    {
+      "url": "https://developer.atlassian.com/server/jira/platform/rest/v10007/",
+      "title": "The Jira Data Center REST API (https://developer.atlassian.com/server/jira/platform/rest/v10007/)",
+      "published_label": null
+    },
+    {
+      "url": "https://support.atlassian.com/user-management/docs/manage-api-tokens-for-service-accounts/",
+      "title": "Manage API tokens for service accounts | Atlassian Support (https://support.atlassian.com/user-management/docs/manage-api-tokens-for-service-accounts/)",
+      "published_label": null
+    },
+    {
+      "url": "https://developer.atlassian.com/server/jira/platform/rest/v10006/",
+      "title": "The Jira Data Center REST API (https://developer.atlassian.com/server/jira/platform/rest/v10006/)",
+      "published_label": null
+    },
+    {
+      "url": "https://developer.atlassian.com/server/jira/platform/rest/v10001/",
+      "title": "The Jira Data Center REST API (https://developer.atlassian.com/server/jira/platform/rest/v10001/)",
+      "published_label": null
+    },
+    {
+      "url": "https://docs.atlassian.com/software/jira/docs/api/REST/1000.1488.1/",
+      "title": "JIRA Cloud REST API Reference (https://docs.atlassian.com/software/jira/docs/api/REST/1000.1488.1/)",
+      "published_label": null
+    },
+    {
+      "url": "https://support.atlassian.com/organization-administration/docs/manage-an-organization-with-the-admin-apis/",
+      "title": "Manage an organization with the admin APIs | Atlassian Support (https://support.atlassian.com/organization-administration/docs/manage-an-organization-with-the-admin-apis/)",
+      "published_label": null
+    },
+    {
+      "url": "https://support.atlassian.com/user-management/docs/create-oauth-2-0-credential-for-service-accounts/",
+      "title": "Create OAuth 2.0 credential for service accounts | Atlassian Support (https://support.atlassian.com/user-management/docs/create-oauth-2-0-credential-for-service-accounts/)",
+      "published_label": null
+    },
+    {
+      "url": "https://community.atlassian.com/forums/discussion/1063103/api-access-available-with-trial",
+      "title": "API access available with trial? - Atlassian (https://community.atlassian.com/forums/discussion/1063103/api-access-available-with-trial)",
+      "published_label": "7.6 years ago"
+    },
+    {
+      "url": "https://www.atlassian.com/dam/jcr%3A2a287b5d-7ca4-4e32-a40a-a998ffeb727a/Getting_Started_Guide-Building_Integrations.pdf?cdnVersion=1320",
+      "title": "Getting Started Guide-Building Integrations (https://www.atlassian.com/dam/jcr%3A2a287b5d-7ca4-4e32-a40a-a998ffeb727a/Getting_Started_Guide-Building_Integrations.pdf?cdnVersion=1320)",
+      "published_label": "6 months ago"
+    }
+  ],
+  "selected": [
+    {
+      "url": "https://support.atlassian.com/atlassian-account/docs/manage-api-tokens-for-your-atlassian-account/",
+      "title": "Manage API tokens for your Atlassian account | Atlassian Support (https://support.atlassian.com/atlassian-account/docs/manage-api-tokens-for-your-atlassian-account/)",
+      "published_label": null
+    },
+    {
+      "url": "https://developer.atlassian.com/cloud/jira/platform/rest/v3/intro",
+      "title": "The Jira Cloud platform REST API (https://developer.atlassian.com/cloud/jira/platform/rest/v3/intro)",
+      "published_label": null
+    },
+    {
+      "url": "https://community.atlassian.com/forums/discussion/1063103/api-access-available-with-trial",
+      "title": "API access available with trial? - Atlassian (https://community.atlassian.com/forums/discussion/1063103/api-access-available-with-trial)",
+      "published_label": "7.6 years ago"
+    }
+  ],
+  "new_pages": [
+    {
+      "url": "https://support.atlassian.com/atlassian-account/docs/manage-api-tokens-for-your-atlassian-account/",
+      "requested_url": "https://support.atlassian.com/atlassian-account/docs/manage-api-tokens-for-your-atlassian-account/",
+      "status": 200,
+      "title": "Manage API tokens for your Atlassian account | Atlassian Support (https://support.atlassian.com/atlassian-account/docs/manage-api-tokens-for-your-atlassian-account/)",
+      "text": "Manage API tokens for your Atlassian account | Atlassian Support Skip to main content Atlassian accounts Documentation Get access to your Atlassian cloud products Log in to your Atlassian account Supported browsers for Atlassian cloud apps Troubleshoot login issues with your Atlassian account Login issues related to browser cookies Password reset issues Email address verification issues Account issues related to a private Apple email address Login issues related to two-step verification Login issues related to single sign-on (SSO) Login issues related to an incorrect email address error Login issues related to a locked Atlassian account Login issues related to identity verification Switch between multiple Atlassian accounts Verify your identity Manage your Atlassian account What is an Atlassian account? Create an Atlassian account Manage your personal profile Manage your language preferences Update your profile and visibility settings Access your personal data Delete your Atlassian account Manage third-party accounts linked to your Atlassian account Log in with a third-party account Log in with SAML single sign-on Manage linked third-party accounts Manage your email and notification preferences Keep your Atlassian account secure Manage API tokens for your Atlassian account Manage recently used devices for your Atlassian account Manage two-step verification for your Atlassian account Protect your Atlassian account Access your Atlassian account with a passkey Manage API tokens for your Atlassian account After December 15, 2024, we set new API tokens to expire in one year by default. When you create an API token, you can set the expiration date to be from one day up to one year. After March 13, 2025, we set API tokens you created before December 15, 2024 to expire in one year. These API tokens will expire between March 14 and May 12, 2026. You can use an API token to authenticate a script with an Atlassian cloud app . You generate the token from your Atlassian account, then copy and paste it into a script. If you use two-step verification to authenticate, your script needs to use a REST API token to authenticate. How to use an API token A primary use case for API tokens is to allow scripts to access REST APIs for Atlassian cloud app s using HTTP basic authentication. Depending on the details of the HTTP library you use, you can replace your password with the token. For example, when using curl , you could do something like this: ## URL for API Tokens curl -v https://mysite.atlassian.net --user me@example.com:my-api-token ## URLs for API tokens with scopes for Jira and Confluence curl -v https://api.atlassian.com/ex/jira/{cloudId} --user me@example.com:my-api-token curl -v https://api.atlassian.com/ex/confluence/{cloudId} --user me@example.com:my-api-token In this example, me@example.com is the email address for the Atlassian account you're using to create the token. We use a varied API token length tokens rather than fixed length to ensure tokens are more secure and reliable. If your script relies on fixed API token length, check that it can handle a variable length instead. What are scopes for API tokens? You can specify what actions an API token has permission to perform - these are called scopes. The scope for an API token defines the levels of access to data in your Jira and Confluence apps. Scopes enhance security by allowing you to define specific permissions for API tokens. When you create an API token from your Atlassian account, you can select the scopes for the API token. You can create an API token with or without scopes. We recommend you create an API token with scopes  because it's more secure. Create an API token with scopes When you select scopes for an API token, you give the token permission to perform certain actions. You can allow APIs to view, write, and delete content in Jira and Confluence. If you need to use an app that does not currently support API token with scopes, you can create a token without scopes. Take me to Jira scopes Take me to Confluence scopes You need to call the Atlassian API to use API tokens with scopes for Jira  {{ https://api.atlassian.com/ex/jira/{cloudId }} or Confluence {{ https://api.atlassian.com/ex/confluence/{cloudId }}. How to construct a request to call the API To create an API token with scopes: Log in to https://id.atlassian.com/manage-profile/security/api-tokens . Select Create API token with scopes. Give your API token a name that describes its purpose. Select an expiration date for the API token. Token expiration is 1 to 365 days. Select the app you’d like the API token to access. Select the scopes to determine what the API token can do in Jira or Confluence. Select Create . Select Copy to clipboard , then paste the token to your script, or save it somewhere safe. You can't recover the API token after you’re done with this step. We recommend saving your API token in a password manager. Create an API token with scopes and Forge apps API token scopes control what your API token can do when it directly calls Jira or Confluence APIs. Some Jira API requests can also trigger Forge app functionality as part of processing the request (for example, when a JQL search invokes a Forge JQL function). In these cases, the API token scopes apply to the original Jira API request, while the Forge app invocation is controlled by the permissions granted to the app, including the permissions declared by the app and approved during installation. This means a Forge app may act using its own granted app permissions, even when the Jira API request was made with an API token that has specific scopes. Verify your identity to create or manage API tokens When you use a password or third-party to log in, we ask you to verify your identity before you create or manage API tokens. We email you a one-time passcode. How to verify your identity When you log in with single sign-on or a service account, you don’t need to verify your identity. Idle session duration When you verify your identity, we create a session for you. When you’re idle for more than 30 minutes, then you need to verify your identity. Create an API token API tokens with an infinite lifespan pose a data security risk. To improve data security, by default we set API tokens to expire in one year. When you create an API token, you can set the expiration date to be from one day up to one year. When you log in using a password or third-party login, we ask you to verify your identity before you can create API tokens. We'll email you a one-time passcode. How to verify your identity Create an API token from your Atlassian account: Log in to https://id.atlassian.com/manage-profile/security/api-tokens . Select Create API token . Give your API token a name that describes what it does. Select an expiration date for the API token. Token expiration is 1 to 365 days. Select Create . Select Copy to clipboard , then paste the token to your script, or save it somewhere safe. You can't recover the API token after you’re done with this step. We recommend you save your API token in a password manager. Take me to Jira classic scopes Take me to Confluence classic scopes Create an API token for a service account You must create a service account before you can create a token for the service account. When you create an API token for a service account, the service account can authenticate and run scripts for the apps you give them access to. When you create a token you must select scopes for the token. To create an API token for a service account: Go to Atlassian Administration . Select your organization if you have more than one. Select Directory , then Service accounts . For the service account, select Actions , then Create credential . Choose Authentication type then API token. Select API scopes to choose what the API token can do in your app. Review your API token scope information. Select Create to save the API token. Copy your API token and save it somewhere safe. You can't recover the API token later. As a security precaution, we don't store your API key value. Revoke an API token When you revoke a token it no longer works and we permanently remove it from your account. If you revoke an existing API token, you can replace it with a new token. When you log in using a password or third-party login, we ask you to verify your identity before you can revoke API tokens. We'll email you a one-time passcode. How to verify your identity To revoke an API token: Log in to https://id.atlassian.com/manage-profile/security/api-tokens . Select Revoke for the API token that you want to revoke. To revoke all API tokens for your account, select Revoke all API tokens . API token settings You can use API tokens with Confluence Cloud, Jira Cloud, Jira Align REST APIs, and Bitbucket Cloud. Setting Description Token name Give your token a name that explains what it does. Token expiration By default we set tokens to expire in one year. This applies to current and new tokens. When you create an API token, you can change the token to expire from one to 365 days. Was this helpful? Yes No It wasn't accurate It wasn't clear It wasn't relevant Provide feedback about this article Still need help? The Atlassian Community is here for you. Ask the Community Keep your Atlassian account secure Manage API tokens for your Atlassian account Manage recently used devices for your Atlassian account Manage two-step verification for your Atlassian account Protect your Atlassian account Access your Atlassian account with a passkey On this page How to use an API token What are scopes for API tokens? Create an API token with scopes Create an API token with scopes and Forge apps Verify your identity to create or manage API tokens Idle session duration Create an API token Create an API token for a service account Revoke an API token API token settings Community Questions, discussions, and articles",
+      "published_label": null
+    },
+    {
+      "url": "https://developer.atlassian.com/cloud/jira/platform/rest/v3/intro",
+      "requested_url": "https://developer.atlassian.com/cloud/jira/platform/rest/v3/intro",
+      "status": 200,
+      "title": "The Jira Cloud platform REST API (https://developer.atlassian.com/cloud/jira/platform/rest/v3/intro)",
+      "text": "The Jira Cloud platform REST API Developer Documentation Resources News and Updates Get Support Sign in Developer Get Support Sign in DOCUMENTATION Cloud Data Center Resources News and Updates Get support Sign in Developer Sign in DOCUMENTATION Cloud Data Center Resources News and Updates Get support Sign in REST API v3 About Version Authentication and authorization Permissions Expansion, pagination, and ordering Timestamps Special headers Anonymous operations Asynchronous operations Experimental features Status codes Agents Announcement banner App data policies App migration App properties Application roles Audit records Avatars Classification levels Dashboards Dynamic modules Field schemes Filter sharing Filters Group and user picker Groups Issue attachments Issue bulk operations Issue comment properties Issue comments Issue custom field associations Issue custom field configuration (apps) Issue custom field contexts Issue custom field options Issue custom field options (apps) Issue custom field values (apps) Issue field configurations Issue fields Issue link types Issue links Issue navigator settings Issue notification schemes Issue panels Issue priorities Issue properties Issue redaction Issue remote links Issue resolutions Issue search Issue security level Issue security schemes Issue type properties Issue type schemes Issue type screen schemes Issue types Issue votes Issue watchers Issue worklog properties Issue worklogs Issues JQL JQL functions (apps) Jira expressions Jira settings Labels License metrics Migration of Connect modules to Forge Myself Permission schemes Permissions Plans Policies Priority schemes Project avatars Project categories Project classification levels Project components Project email Project features Project key and name validation Project permission schemes Project properties Project role actors Project roles Project templates Project types Project versions Projects Screen schemes Screen tab fields Screen tabs Screens Server info Service Registry Status Tasks Teams in plan Time tracking UI modifications (apps) User properties User search Users Webhooks Workflow scheme drafts Workflow scheme project associations Workflow schemes Workflow status categories Workflow statuses Workflow transition rules Workflows Other operations Rate this page: Unusable Poor Okay Good Excellent",
+      "published_label": null
+    },
+    {
+      "url": "https://community.atlassian.com/forums/discussion/1063103/api-access-available-with-trial",
+      "requested_url": "https://community.atlassian.com/forums/discussion/1063103/api-access-available-with-trial",
+      "status": 200,
+      "title": "API access available with trial? - Atlassian (https://community.atlassian.com/forums/discussion/1063103/api-access-available-with-trial)",
+      "text": "API access available with trial? - Atlassian Home Q&A Jira API access available with trial? Adam Smye-Rumsby Just signed up for 7-day trial of JIRA cloud.   Trying to test the API, doing a POST to /rest/api/3/issue using Basic auth with the credentials I specified when signing up for the trial.  Receive a 401 Unauthorized error in response however.  Do trials include API access?  Thanks. Accepted answers All comments Daniel Eads Hey Adam, welcome to the Community and glad you're really digging in to Jira on your trial! You should be able to interact with the API during your trial. However, we've been making changes to how the APIs are authorized which might have not been apparent in documentation you read. Instead of using the password for your user account, you'll want to generate a token from  id.atlassian.com and use that for the password in your Basic Auth configuration. From our document about generating API tokens : Log in to https://id.atlassian.com/manage/api-tokens . Click Create API token . From the dialog that appears, enter a memorable and concise Label for your token and click Create . Click Copy to clipboard , then paste the token to your script, or elsewhere to save: Note: For security reasons it isn't possible to view the token after closing the creation dialog; if necessary, create a new token. You should store the token securely, just as for any password. Hope that helps get you rocking with the API, and let me know if you have more questions! Cheers, Daniel Welcome! It looks like you're new here. Sign in or register to get started. Sign In Register Quick Links My Followed Content Unanswered Notification Preferences FAQ Find more posts tagged with jira jira-cloud",
+      "published_label": "7.6 years ago"
+    }
+  ],
+  "claims": {
+    "auth": {
+      "value": [
+        "OAuth 2.0",
+        "Basic authentication",
+        "API token",
+        "API key"
+      ],
+      "sources": [
+        "https://developer.atlassian.com/server/jira/platform/basic-authentication/",
+        "https://developer.atlassian.com/cloud/jira/platform/basic-auth-for-rest-apis/?trk=article-ssr-frontend-pulse_little-text-block",
+        "https://developer.atlassian.com/developer-guide/auth/",
+        "https://support.atlassian.com/atlassian-account/docs/manage-api-tokens-for-your-atlassian-account/"
+      ],
+      "evidence": [
+        {
+          "value": "OAuth 2.0",
+          "url": "https://developer.atlassian.com/server/jira/platform/basic-authentication/",
+          "excerpt": "d manual calls to the REST APIs. Otherwise, consider using one of the following methods: OAuth 1.0a OAuth 2.0 Personal access token Overview Jiraâs REST API is protected by the same restrictions that are provided via Jiraâs standard web\ninterface. This means that if you do not log in,",
+          "published_label": null
+        },
+        {
+          "value": "Basic authentication",
+          "url": "https://developer.atlassian.com/server/jira/platform/basic-authentication/",
+          "excerpt": "Basic authentication Developer Documentation Resources News and Updates Get Support Sign in Developer Get Support Sign in DOCUMENTATION Cloud Data Center Resources News and Updates Get support Sign in",
+          "published_label": null
+        },
+        {
+          "value": "OAuth 2.0",
+          "url": "https://developer.atlassian.com/cloud/jira/platform/basic-auth-for-rest-apis/?trk=article-ssr-frontend-pulse_little-text-block",
+          "excerpt": ", consider building an app: Forge apps and Connect apps use more secure methods for authentication: OAuth 2.0 and JWT respectively.\nIn addition, authentication is built into the app frameworks, so you don't need to configure it.\nSee Security for Forge apps and Security for Connect apps . ",
+          "published_label": null
+        },
+        {
+          "value": "API token",
+          "url": "https://developer.atlassian.com/cloud/jira/platform/basic-auth-for-rest-apis/?trk=article-ssr-frontend-pulse_little-text-block",
+          "excerpt": " can authenticate themselves using basic authentication with an Atlassian account email address\nand API token .\nAuthentication using passwords has been deprecated. Basic authentication is not as secure as other methods. We recommend using it for simple scripts and\nmanual calls to the REST",
+          "published_label": null
+        },
+        {
+          "value": "Basic authentication",
+          "url": "https://developer.atlassian.com/cloud/jira/platform/basic-auth-for-rest-apis/?trk=article-ssr-frontend-pulse_little-text-block",
+          "excerpt": "Basic auth for REST APIs Developer Documentation Resources News and Updates Get Support Sign in Developer Get Support Sign in DOCUMENTATION Cloud Data Center Resources News and Updates Get s",
+          "published_label": null
+        },
+        {
+          "value": "OAuth 2.0",
+          "url": "https://developer.atlassian.com/developer-guide/auth/",
+          "excerpt": "ssian's latest app development platform, handles authentication for your app using managed APIs and OAuth 2.0 protocols.\nTo find out if Forge is right for your project, see the comparison of cloud development options and the Forge security overview . If you are building a Jira or Confluen",
+          "published_label": null
+        },
+        {
+          "value": "Basic authentication",
+          "url": "https://developer.atlassian.com/developer-guide/auth/",
+          "excerpt": " (identity) Authorization (access) Private use of REST APIs, such as testing or personal scripting. Basic authentication The appâs access level is the same as the user who generated the token . \n        Administrators canât revoke this access without disabling the user who generated the token. I",
+          "published_label": null
+        },
+        {
+          "value": "API key",
+          "url": "https://support.atlassian.com/atlassian-account/docs/manage-api-tokens-for-your-atlassian-account/",
+          "excerpt": "omewhere safe. You can't recover the API token later. As a security precaution, we don't store your API key value. Revoke an API token When you revoke a token it no longer works and we permanently remove it from your account. If you revoke an existing API token, you can replace it with ",
+          "published_label": null
+        },
+        {
+          "value": "API token",
+          "url": "https://support.atlassian.com/atlassian-account/docs/manage-api-tokens-for-your-atlassian-account/",
+          "excerpt": "After December 15, 2024, we set new API tokens to expire in one year by default. When you create an API token, you can set the expiration date to be from one day up to one year. After March 13, 2025, we set API tokens you created before December 15, 2024 to expire in one year. These API t",
+          "published_label": null
+        },
+        {
+          "value": "Basic authentication",
+          "url": "https://support.atlassian.com/atlassian-account/docs/manage-api-tokens-for-your-atlassian-account/",
+          "excerpt": "se case for API tokens is to allow scripts to access REST APIs for Atlassian cloud app s using HTTP basic authentication. Depending on the details of the HTTP library you use, you can replace your password with the token. For example, when using curl , you could do something like this: ## URL for AP",
+          "published_label": null
+        }
+      ],
+      "reason": "Provisional extraction: validate scope and completeness against the cited page."
+    },
+    "credential_gate": {
+      "value": "unknown",
+      "sources": [],
+      "evidence": [],
+      "reason": "No sufficiently specific positive evidence extracted; review targeted search results."
+    },
+    "api_surface": {
+      "value": [
+        "REST"
+      ],
+      "sources": [
+        "https://developer.atlassian.com/server/jira/platform/basic-authentication/",
+        "https://developer.atlassian.com/cloud/jira/platform/basic-auth-for-rest-apis/?trk=article-ssr-frontend-pulse_little-text-block",
+        "https://developer.atlassian.com/developer-guide/auth/",
+        "https://support.atlassian.com/atlassian-account/docs/manage-api-tokens-for-your-atlassian-account/",
+        "https://developer.atlassian.com/cloud/jira/platform/rest/v3/intro"
+      ],
+      "evidence": [
+        {
+          "value": "REST",
+          "url": "https://developer.atlassian.com/server/jira/platform/basic-authentication/",
+          "excerpt": "and Updates Get support Sign in Last updated Nov 5, 2026 Basic authentication Learn how to make the REST API requests to Jira Data Center using basic authentication with a username and password. If youâre looking for information about Jira Cloud basic authentication, check out the depr",
+          "published_label": null
+        },
+        {
+          "value": "REST",
+          "url": "https://developer.atlassian.com/cloud/jira/platform/basic-auth-for-rest-apis/?trk=article-ssr-frontend-pulse_little-text-block",
+          "excerpt": "Basic auth for REST APIs Developer Documentation Resources News and Updates Get Support Sign in Developer Get Support Sign in DOCUMENTATION Cloud Data Center Resources News and Updates Get support Sign in",
+          "published_label": null
+        },
+        {
+          "value": "REST",
+          "url": "https://developer.atlassian.com/developer-guide/auth/",
+          "excerpt": "t projects: Development goal Authentication method (identity) Authorization (access) Private use of REST APIs, such as testing or personal scripting. Basic authentication The appâs access level is the same as the user who generated the token . \n        Administrators canât revoke this",
+          "published_label": null
+        },
+        {
+          "value": "REST",
+          "url": "https://support.atlassian.com/atlassian-account/docs/manage-api-tokens-for-your-atlassian-account/",
+          "excerpt": "aste it into a script. If you use two-step verification to authenticate, your script needs to use a REST API token to authenticate. How to use an API token A primary use case for API tokens is to allow scripts to access REST APIs for Atlassian cloud app s using HTTP basic authentication.",
+          "published_label": null
+        },
+        {
+          "value": "REST",
+          "url": "https://developer.atlassian.com/cloud/jira/platform/rest/v3/intro",
+          "excerpt": "The Jira Cloud platform REST API Developer Documentation Resources News and Updates Get Support Sign in Developer Get Support Sign in DOCUMENTATION Cloud Data Center Resources News and Updates Get support Sign in",
+          "published_label": null
+        }
+      ],
+      "reason": "Provisional extraction: validate scope and completeness against the cited page."
+    },
+    "official_mcp": {
+      "value": "unknown",
+      "sources": [],
+      "evidence": [],
+      "reason": "No sufficiently specific positive evidence extracted; review targeted search results."
+    },
+    "composio_toolkit": {
+      "value": "listed",
+      "sources": [
+        "https://docs.composio.dev/toolkits/jira"
+      ],
+      "evidence": [],
+      "reason": "Catalog match; scope needs review."
+    },
+    "verdict": {
+      "value": "unknown",
+      "sources": [],
+      "evidence": [],
+      "reason": "A supported access path, authentication method and API surface were not all extracted."
+    }
+  },
+  "validation": [
+    "All claims are provisional",
+    "No vendor MCP inference from Composio catalog",
+    "Negated MCP or client-only source is not counted as vendor-server proof"
+  ]
+}

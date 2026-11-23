@@ -1,0 +1,78 @@
+{
+  "checked_at": "2026-11-24",
+  "method": "Direct official JSON/visible-text retrieval and targeted installed-Chrome rendering after extended wait; no raw HTML or credentials.",
+  "audit_summary": {
+    "flagged_uses": 6,
+    "actions": 6,
+    "replace": 2,
+    "reclassify": 0,
+    "keep": 4,
+    "unresolved": 0,
+    "note": "Two non-contiguous or dynamic quotations are replaced with stable exact text; four dynamically rendered pricing quotations are preserved as explicit browser keeps."
+  },
+  "actions": [
+    {
+      "app": "GoHighLevel",
+      "field": "official_mcp",
+      "decision": "replace",
+      "old_url": "https://help.gohighlevel.com/support/solutions/articles/155000005741-how-to-setup-and-use-the-highlevel-mcp-server",
+      "old_quote": "A single-sub-account connection is bound to the sub-account you choose during OAuth authorization for the lifetime of that connection.\n\nWhere agency-wide access is available, you can connect once and work across the sub-accounts selected during installation.",
+      "new_url": "https://help.gohighlevel.com/support/solutions/articles/155000005741-how-to-setup-and-use-the-highlevel-mcp-server",
+      "new_title": "HighLevel MCP single-sub-account scope",
+      "new_quote": "A single-sub-account connection is bound to the sub-account you choose during OAuth authorization for the lifetime of that connection.",
+      "published_at": null,
+      "published_label": "Modified on Sun, 15 Nov, 2026 at 2:10 AM",
+      "review_note": "The current page inserts the 'Agency connection' heading and additional instructions between the two old sentences. The replacement is the exact contiguous single-sub-account sentence; separate existing evidence already covers agency-wide rollout."
+    },
+    {
+      "app": "Podio",
+      "field": "official_mcp",
+      "decision": "replace",
+      "old_url": "https://mcp.podio.com/health",
+      "old_quote": "{\"status\":\"healthy\",\"service\":\"Podio External MCP Server\",\"version\":\"2.0.0\",\"mode\":\"mcp_external\",\"transport\":\"streamable-http\",\"auth\":\"oauth2_authorization_code\",\"sessionMode\":\"stateless\",\"sessions\":\"n/a\",\"timestamp\":\"2026-11-23T22:04:19.570Z\"}",
+      "new_url": "https://mcp.podio.com/health",
+      "new_title": "Podio External MCP Server health",
+      "new_quote": "\"status\":\"healthy\",\"service\":\"Podio External MCP Server\",\"version\":\"2.0.0\",\"mode\":\"mcp_external\",\"transport\":\"streamable-http\",\"auth\":\"oauth2_authorization_code\"",
+      "published_at": null,
+      "published_label": "live health artifact; timestamp changes per request",
+      "review_note": "The official JSON health artifact is a valid raw source, but its timestamp changes on every request. The replacement quotes the stable contiguous service, version, mode, transport, and authentication fields without the volatile timestamp."
+    },
+    {
+      "app": "Paygent Connect",
+      "field": "credential_gate",
+      "decision": "keep",
+      "old_url": "https://www.gopaygent.com/",
+      "old_quote": "Start for free No credit card required. Free plan available.",
+      "verification_method": "installed Chrome rendered body innerText after extended wait (no raw HTML)",
+      "review_note": "The current first-party homepage visibly states free no-card access. Direct HTTP retrieval returns a JavaScript shell; the rendered page reproduces the normalized quotation."
+    },
+    {
+      "app": "Paygent Connect",
+      "field": "verdict",
+      "decision": "keep",
+      "old_url": "https://www.gopaygent.com/",
+      "old_quote": "Start for free No credit card required. Free plan available.",
+      "verification_method": "installed Chrome rendered body innerText after extended wait (no raw HTML)",
+      "review_note": "The current first-party homepage visibly states free no-card access. Direct HTTP retrieval returns a JavaScript shell; the rendered page reproduces the normalized quotation."
+    },
+    {
+      "app": "LiveAgent",
+      "field": "credential_gate",
+      "decision": "keep",
+      "old_url": "https://www.liveagent.com/pricing/",
+      "old_quote": "API keys 1 5 10 Unlimited",
+      "verification_method": "installed Chrome rendered body innerText after extended wait (no raw HTML)",
+      "review_note": "The current official pricing comparison visibly renders the API-key row with plan counts. Direct HTTP retrieval misses the dynamically rendered table."
+    },
+    {
+      "app": "LiveAgent",
+      "field": "official_mcp",
+      "decision": "keep",
+      "old_url": "https://www.liveagent.com/pricing/",
+      "old_quote": "AI MCP server for your own AI tools",
+      "verification_method": "installed Chrome rendered body innerText after extended wait (no raw HTML)",
+      "review_note": "The current official Business plan visibly lists an AI MCP server for the customer's own AI tools. Direct HTTP retrieval misses the dynamically rendered plan details."
+    }
+  ],
+  "unresolved": []
+}

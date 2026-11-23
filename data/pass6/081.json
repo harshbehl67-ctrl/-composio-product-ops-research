@@ -1,0 +1,83 @@
+{
+  "app": {
+    "number": 81,
+    "name": "Stripe",
+    "category": "Finance and Fintech",
+    "hint": "stripe.com/docs/api"
+  },
+  "replayed_at": "2026-11-23T18:17:24.351293+00:00",
+  "source_passes": [
+    "data/pass2/081.json",
+    "data/pass4/081.json"
+  ],
+  "source_search": "data/new_search/081.json",
+  "publication_date_note": "Published labels are retained exactly as supplied by search; missing labels are null. Relative labels must not be treated as exact publication dates.",
+  "claims": {
+    "auth": {
+      "value": [
+        "API key"
+      ],
+      "sources": [
+        "https://stripe.com/in/legal/api-key-security"
+      ],
+      "evidence": [
+        {
+          "value": "API key",
+          "url": "https://stripe.com/in/legal/api-key-security",
+          "excerpt": "User Notice—API Key Security Last updated: August 14, 2026 Your Stripe API key is a credential that authenticates your account to Stripe - it is how Stripe verifies that a request is coming from you.",
+          "published_label": "3 months ago"
+        }
+      ],
+      "reason": "Provisional extraction: validate scope and completeness against the cited page."
+    },
+    "credential_gate": {
+      "value": "unknown",
+      "sources": [],
+      "evidence": [],
+      "reason": "No sufficiently specific positive evidence extracted; review targeted search results."
+    },
+    "api_surface": {
+      "value": "unknown",
+      "sources": [],
+      "evidence": [],
+      "reason": "No sufficiently specific positive evidence extracted; review targeted search results."
+    },
+    "official_mcp": {
+      "value": "yes (provisional)",
+      "sources": [
+        "https://docs.stripe.com/mcp"
+      ],
+      "evidence": [
+        {
+          "value": "yes (provisional)",
+          "url": "https://docs.stripe.com/mcp",
+          "excerpt": "odel Context Protocol (MCP) Public preview Let your AI agents interact with the Stripe API by using our MCP server. Ask about this page Copy for LLM View as Markdown Set up agent The Stripe Model Context Protocol (MCP) server provides tools that AI agents can use to interac",
+          "published_label": null,
+          "context_warning": "Review vendor ownership, dates, and scope."
+        }
+      ],
+      "reason": "Provisional; check source date, scope, and vendor ownership."
+    },
+    "composio_toolkit": {
+      "value": "listed",
+      "sources": [
+        "https://docs.composio.dev/toolkits/stripe"
+      ],
+      "evidence": [],
+      "reason": "Catalog match; scope needs review."
+    },
+    "verdict": {
+      "value": "unknown",
+      "sources": [],
+      "evidence": [],
+      "reason": "A supported access path, authentication method and API surface were not all extracted."
+    }
+  },
+  "validation": [
+    "Automatic extraction is provisional and not a verified final claim",
+    "Unknown is not evidence of absence",
+    "No Composio-to-vendor-MCP inference",
+    "Basic authentication may be endpoint-specific",
+    "Client-only and negated statements are not positive MCP evidence"
+  ]
+}

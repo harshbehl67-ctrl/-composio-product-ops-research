@@ -1,0 +1,110 @@
+{
+  "app": {
+    "number": 3,
+    "name": "Pipedrive",
+    "category": "CRM and Sales",
+    "hint": "pipedrive.com"
+  },
+  "replayed_at": "2026-11-23T18:19:16.928109+00:00",
+  "source_passes": [
+    "data/pass2/003.json",
+    "data/pass4/003.json"
+  ],
+  "source_search": "data/new_search/003.json",
+  "publication_date_note": "Published labels are retained exactly as supplied by search; missing labels are null. Relative labels must not be treated as exact publication dates.",
+  "claims": {
+    "auth": {
+      "value": [
+        "OAuth 2.0",
+        "API key"
+      ],
+      "sources": [
+        "https://developers.pipedrive.com/docs/api/v1/Oauth",
+        "https://support.pipedrive.com/en/article/what-is-the-api-key-for"
+      ],
+      "evidence": [
+        {
+          "value": "OAuth 2.0",
+          "url": "https://developers.pipedrive.com/docs/api/v1/Oauth",
+          "excerpt": "m search Lead fields Lead labels Leads Lead sources Legacy teams Mailbox Meetings Note fields Notes OAuth 2.0 Requesting authorization GET /oauth/authorize Getting the tokens POST /oauth/token Refreshing the tokens POST /oauth/token Organization fields Organization relationships Organizat",
+          "published_label": null
+        },
+        {
+          "value": "API key",
+          "url": "https://support.pipedrive.com/en/article/what-is-the-api-key-for",
+          "excerpt": "What is the API key for? - Knowledge Base | Pipedrive Knowledge Base All categories Marketplace apps Blog Knowledge Base Academy Knowledge Base results : 0 No results found. Knowledge Base / Account ",
+          "published_label": "2 months ago"
+        }
+      ],
+      "reason": "Provisional extraction: validate scope and completeness against the cited page."
+    },
+    "credential_gate": {
+      "value": "unknown",
+      "sources": [],
+      "evidence": [],
+      "reason": "No sufficiently specific positive evidence extracted; review targeted search results."
+    },
+    "api_surface": {
+      "value": [
+        "REST"
+      ],
+      "sources": [
+        "https://support.pipedrive.com/en/article/what-is-api"
+      ],
+      "evidence": [
+        {
+          "value": "REST",
+          "url": "https://support.pipedrive.com/en/article/what-is-api",
+          "excerpt": "es a few things: Your API token An endpoint (i.e deals) An HTTP verb (i.e GET) Note: Pipedrive uses RESTful API Reference, and you can access it along with a list of endpoints and their descriptions on this developer’s page. To see the list of endpoints, click the arrow next to API Referenc",
+          "published_label": "2 months ago"
+        }
+      ],
+      "reason": "Provisional extraction: validate scope and completeness against the cited page."
+    },
+    "official_mcp": {
+      "value": "yes (provisional)",
+      "sources": [
+        "https://www.pipedrive.com/en/newsroom/pipedrive-launches-native-mcp-server-bringing-crm-workflows-directly-into-ai-assistants",
+        "https://www.pipedrive.com/en/features/mcp-server"
+      ],
+      "evidence": [
+        {
+          "value": "yes (provisional)",
+          "url": "https://www.pipedrive.com/en/newsroom/pipedrive-launches-native-mcp-server-bringing-crm-workflows-directly-into-ai-assistants",
+          "excerpt": "Pipedrive launches native MCP server, bringing CRM workflows directly into AI assistants | Pipedrive Skip to main content Pipedrive launches native MCP server, bringing CRM workflows directly into",
+          "published_label": "4 months ago",
+          "context_warning": "Review vendor ownership, dates, and scope."
+        },
+        {
+          "value": "yes (provisional)",
+          "url": "https://www.pipedrive.com/en/features/mcp-server",
+          "excerpt": "Pipedrive MCP Server | Connect Claude & ChatGPT to Your CRM | Pipedrive Skip to main content Connect your AI assistant to Pipedrive with MCP Empower AI assistants like ChatGPT and ",
+          "published_label": null,
+          "context_warning": "Review vendor ownership, dates, and scope."
+        }
+      ],
+      "reason": "Provisional; check source date, scope, and vendor ownership."
+    },
+    "composio_toolkit": {
+      "value": "listed",
+      "sources": [
+        "https://docs.composio.dev/toolkits/pipedrive"
+      ],
+      "evidence": [],
+      "reason": "Catalog match; scope needs review."
+    },
+    "verdict": {
+      "value": "unknown",
+      "sources": [],
+      "evidence": [],
+      "reason": "A supported access path, authentication method and API surface were not all extracted."
+    }
+  },
+  "validation": [
+    "Automatic extraction is provisional and not a verified final claim",
+    "Unknown is not evidence of absence",
+    "No Composio-to-vendor-MCP inference",
+    "Basic authentication may be endpoint-specific",
+    "Client-only and negated statements are not positive MCP evidence"
+  ]
+}

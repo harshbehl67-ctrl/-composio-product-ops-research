@@ -1,0 +1,166 @@
+{
+  "app": {
+    "number": 44,
+    "name": "Salesforce Commerce Cloud",
+    "category": "Ecommerce",
+    "hint": "developer.salesforce.com/docs/commerce"
+  },
+  "checked_at": "2026-11-23T18:15:06.526510+00:00",
+  "prior_source": "data/pass2/044.json",
+  "search_source": "data/pass4_search/044.json",
+  "new_candidates": [
+    {
+      "url": "https://developer.salesforce.com/docs/commerce/commerce-api/guide/use-admin-api.html",
+      "title": "Salesforce Developers (https://developer.salesforce.com/docs/commerce/commerce-api/guide/use-admin-api.html)",
+      "published_label": null
+    },
+    {
+      "url": "https://developer.salesforce.com/docs/commerce/commerce-solutions/guide/api-doc.html",
+      "title": "Salesforce Developers (https://developer.salesforce.com/docs/commerce/commerce-solutions/guide/api-doc.html)",
+      "published_label": null
+    },
+    {
+      "url": "https://developer.salesforce.com/docs/commerce/b2c-commerce/guide/api-doc.html",
+      "title": "Salesforce Developers (https://developer.salesforce.com/docs/commerce/b2c-commerce/guide/api-doc.html)",
+      "published_label": null
+    },
+    {
+      "url": "https://developer.salesforce.com/docs/commerce/b2c-commerce/guide/scapi-get-started.html",
+      "title": "Salesforce Developers (https://developer.salesforce.com/docs/commerce/b2c-commerce/guide/scapi-get-started.html)",
+      "published_label": null
+    },
+    {
+      "url": "https://developer.salesforce.com/docs/commerce/commerce-api/guide/authorization-for-admin-apis.html",
+      "title": "Salesforce Developers (https://developer.salesforce.com/docs/commerce/commerce-api/guide/authorization-for-admin-apis.html)",
+      "published_label": null
+    },
+    {
+      "url": "https://trailhead.salesforce.com/content/learn/modules/api_basics/api_basics_overview",
+      "title": "Salesforce Platform API Integration Guide (https://trailhead.salesforce.com/content/learn/modules/api_basics/api_basics_overview)",
+      "published_label": null
+    },
+    {
+      "url": "https://developer.salesforce.com/docs/commerce/b2c-commerce/references/b2c-commerce-ocapi/apiexplorer.html",
+      "title": "Salesforce Developers (https://developer.salesforce.com/docs/commerce/b2c-commerce/references/b2c-commerce-ocapi/apiexplorer.html)",
+      "published_label": null
+    },
+    {
+      "url": "https://developer.salesforce.com/docs/commerce/b2c-commerce/guide/authorization.html",
+      "title": "Salesforce Developers (https://developer.salesforce.com/docs/commerce/b2c-commerce/guide/authorization.html)",
+      "published_label": null
+    },
+    {
+      "url": "https://resources.docs.salesforce.com/latest/latest/en-us/sfdc/pdf/api_rest.pdf",
+      "title": "REST API Developer Guide (https://resources.docs.salesforce.com/latest/latest/en-us/sfdc/pdf/api_rest.pdf)",
+      "published_label": "7 months ago"
+    },
+    {
+      "url": "https://developer.salesforce.com/docs/commerce/commerce-api/guide/get-started.html",
+      "title": "Salesforce Developers (https://developer.salesforce.com/docs/commerce/commerce-api/guide/get-started.html)",
+      "published_label": null
+    },
+    {
+      "url": "https://developer.salesforce.com/docs/commerce/b2c-commerce/guide/base-url.html",
+      "title": "Salesforce Developers (https://developer.salesforce.com/docs/commerce/b2c-commerce/guide/base-url.html)",
+      "published_label": null
+    },
+    {
+      "url": "https://developer.salesforce.com/docs/commerce/commerce-solutions/guide/authorization-for-shopper-apis.html",
+      "title": "Salesforce Developers (https://developer.salesforce.com/docs/commerce/commerce-solutions/guide/authorization-for-shopper-apis.html)",
+      "published_label": null
+    },
+    {
+      "url": "https://developer.salesforce.com/docs/commerce/b2c-commerce/guide/setting-up-your-local-environment.html",
+      "title": "Salesforce Developers (https://developer.salesforce.com/docs/commerce/b2c-commerce/guide/setting-up-your-local-environment.html)",
+      "published_label": null
+    },
+    {
+      "url": "https://resources.docs.salesforce.com/latest/latest/en-us/sfdc/pdf/sfdx_cli_reference.pdf",
+      "title": "Salesforce CLI Command Reference (https://resources.docs.salesforce.com/latest/latest/en-us/sfdc/pdf/sfdx_cli_reference.pdf)",
+      "published_label": "7 months ago"
+    },
+    {
+      "url": "https://resources.docs.salesforce.com/latest/latest/en-us/sfdc/pdf/api_action.pdf",
+      "title": "Actions Developer Guide (https://resources.docs.salesforce.com/latest/latest/en-us/sfdc/pdf/api_action.pdf)",
+      "published_label": "7 months ago"
+    },
+    {
+      "url": "https://resources.docs.salesforce.com/latest/latest/en-us/sfdc/pdf/apex_api.pdf",
+      "title": "SOAP API Developer Guide (https://resources.docs.salesforce.com/latest/latest/en-us/sfdc/pdf/apex_api.pdf)",
+      "published_label": "7 months ago"
+    }
+  ],
+  "selected": [
+    {
+      "url": "https://developer.salesforce.com/docs/commerce/commerce-api/guide/authorization-for-admin-apis.html",
+      "title": "Salesforce Developers (https://developer.salesforce.com/docs/commerce/commerce-api/guide/authorization-for-admin-apis.html)",
+      "published_label": null
+    },
+    {
+      "url": "https://developer.salesforce.com/docs/commerce/commerce-api/guide/use-admin-api.html",
+      "title": "Salesforce Developers (https://developer.salesforce.com/docs/commerce/commerce-api/guide/use-admin-api.html)",
+      "published_label": null
+    }
+  ],
+  "new_pages": [
+    {
+      "url": "https://developer.salesforce.com/docs/commerce/commerce-api/guide/authorization-for-admin-apis.html",
+      "requested_url": "https://developer.salesforce.com/docs/commerce/commerce-api/guide/authorization-for-admin-apis.html",
+      "status": 403,
+      "title": "Salesforce Developers (https://developer.salesforce.com/docs/commerce/commerce-api/guide/authorization-for-admin-apis.html)",
+      "text": "Oops Something went wrong Reference id: 0.4976cd17.1795457704.102cd6c9",
+      "published_label": null
+    },
+    {
+      "url": "https://developer.salesforce.com/docs/commerce/commerce-api/guide/use-admin-api.html",
+      "requested_url": "https://developer.salesforce.com/docs/commerce/commerce-api/guide/use-admin-api.html",
+      "status": 403,
+      "title": "Salesforce Developers (https://developer.salesforce.com/docs/commerce/commerce-api/guide/use-admin-api.html)",
+      "text": "Oops Something went wrong Reference id: 0.5c76cd17.1795457705.1917d2c6",
+      "published_label": null
+    }
+  ],
+  "claims": {
+    "auth": {
+      "value": "unknown",
+      "sources": [],
+      "evidence": [],
+      "reason": "No sufficiently specific positive evidence extracted; review targeted search results."
+    },
+    "credential_gate": {
+      "value": "unknown",
+      "sources": [],
+      "evidence": [],
+      "reason": "No sufficiently specific positive evidence extracted; review targeted search results."
+    },
+    "api_surface": {
+      "value": "unknown",
+      "sources": [],
+      "evidence": [],
+      "reason": "No sufficiently specific positive evidence extracted; review targeted search results."
+    },
+    "official_mcp": {
+      "value": "unknown",
+      "sources": [],
+      "evidence": [],
+      "reason": "No sufficiently specific positive evidence extracted; review targeted search results."
+    },
+    "composio_toolkit": {
+      "value": "unknown",
+      "sources": [],
+      "evidence": [],
+      "reason": "No exact or reviewed alias match; absence is not established."
+    },
+    "verdict": {
+      "value": "unknown",
+      "sources": [],
+      "evidence": [],
+      "reason": "A supported access path, authentication method and API surface were not all extracted."
+    }
+  },
+  "validation": [
+    "All claims are provisional",
+    "No vendor MCP inference from Composio catalog",
+    "Negated MCP or client-only source is not counted as vendor-server proof"
+  ]
+}

@@ -1,0 +1,179 @@
+{
+  "app": {
+    "number": 47,
+    "name": "Ecwid",
+    "category": "Ecommerce",
+    "hint": "api-docs.ecwid.com"
+  },
+  "replayed_at": "2026-11-23T18:41:34.136111+00:00",
+  "source_passes": [
+    "data/pass2/047.json",
+    "data/pass4/047.json"
+  ],
+  "source_searches": [
+    "data/new_search/047.json",
+    "data/pass4_search/047.json"
+  ],
+  "publication_date_note": "Search publication labels are retained exactly; null means no label was available. Relative labels are not exact dates.",
+  "claims": {
+    "auth": {
+      "value": [
+        "OAuth 2.0",
+        "Bearer token",
+        "API key"
+      ],
+      "status": "provisional",
+      "sources": [
+        "https://docs.ecwid.com/get-started/make-your-first-api-request",
+        "https://docs.ecwid.com/api-reference",
+        "https://docs.ecwid.com/get-started/api-glossary"
+      ],
+      "evidence": [
+        {
+          "value": "OAuth 2.0",
+          "url": "https://docs.ecwid.com/get-started/make-your-first-api-request",
+          "excerpt": "ort team On this page All requests to Ecwid REST API require an access token . Ecwid uses OAuth 2.0 to provide secure access to the store data for public apps. If you customize your own store, however, you can skip OAuth and easily get an access token for your store. T",
+          "published_label": null
+        },
+        {
+          "value": "Bearer token",
+          "url": "https://docs.ecwid.com/get-started/make-your-first-api-request",
+          "excerpt": "ample, the Postman app . Add store ID to the request path , your secret access token as a Bearer Token on the Authorization tab , and click Send : That’s it. You should receive a JSON-formatted response with details about products in your store. Next steps Congratulations",
+          "published_label": null
+        },
+        {
+          "value": "OAuth 2.0",
+          "url": "https://docs.ecwid.com/api-reference",
+          "excerpt": "and manage any store data, payment and shipping methods, and storefront settings. We use OAuth 2.0 authorization simplified for single-store customizations, JSON-formatted data, and a clear structure. Please note that our REST API has rate limits . We accept up to 600",
+          "published_label": null
+        },
+        {
+          "value": "API key",
+          "url": "https://docs.ecwid.com/get-started/api-glossary",
+          "excerpt": "he app to add a new online payment method to the checkout. Learn more about access scopes API keys Unchangeable and unique credentials for app authentication and decoding some API requests. Every application has two API keys: client_id (app ID) and client_secret (app",
+          "published_label": null
+        }
+      ],
+      "reason": "Provisional extraction; validate scope and completeness against cited pages."
+    },
+    "credential_gate": {
+      "value": [
+        "partner_or_sales"
+      ],
+      "status": "provisional",
+      "sources": [
+        "https://support.ecwid.com/hc/en-us/articles/5427022336796-Ecwid-developer-program-for-selling-apps",
+        "https://support.ecwid.com/hc/en-us/articles/4938302203932-Adding-more-features-to-your-store-via-Ecwid-s-API"
+      ],
+      "evidence": [
+        {
+          "value": "partner_or_sales",
+          "url": "https://support.ecwid.com/hc/en-us/articles/5427022336796-Ecwid-developer-program-for-selling-apps",
+          "excerpt": "ndow) Sign up (opens in new window) Ecwid Help Center Knowledge Base Ecwid overview Ecwid partnership programs Knowledge base Guides Academy Video tutorials Try searching for: Recently viewed articles: Table of contents esc to close Ecwid developer program for selling ap",
+          "published_label": null
+        },
+        {
+          "value": "partner_or_sales",
+          "url": "https://support.ecwid.com/hc/en-us/articles/4938302203932-Adding-more-features-to-your-store-via-Ecwid-s-API",
+          "excerpt": "Artisans ECWID Ecwid 101 Features Ecwid Reviews Demo Pricing Compare Ecwid For developers Partner program Experts API Documentation Status monitoring FEATURES Buy Now Button Point-of-Sale Digital products Subscriptions Store management Security Payment gateways Store managem",
+          "published_label": null
+        }
+      ],
+      "reason": "Provisional extraction; validate scope and completeness against cited pages."
+    },
+    "api_surface": {
+      "value": "REST; moderate documented surface",
+      "status": "provisional",
+      "sources": [
+        "https://docs.ecwid.com/get-started/make-your-first-api-request",
+        "https://docs.ecwid.com/api-reference",
+        "https://docs.ecwid.com/get-started/api-glossary",
+        "https://support.ecwid.com/hc/en-us/articles/4938302203932-Adding-more-features-to-your-store-via-Ecwid-s-API",
+        "https://docs.ecwid.com/api-reference/advanced/rest-api-calls"
+      ],
+      "evidence": [
+        {
+          "value": [
+            "REST"
+          ],
+          "breadth": "narrow",
+          "url": "https://docs.ecwid.com/get-started/make-your-first-api-request",
+          "excerpt": "Make your first API request | Ecwid Documentation For the complete documentation index, see llms.txt . Markdown versions of documentation pages are available by appending .md to page URLs. Skip to content AI Assistant I'm here to help you with the docs. What is this page about? W",
+          "published_label": null
+        },
+        {
+          "value": [
+            "REST"
+          ],
+          "breadth": "narrow",
+          "url": "https://docs.ecwid.com/api-reference",
+          "excerpt": "REST API overview | REST API Reference | Ecwid Documentation For the complete documentation index, see llms.txt . Markdown versions of documentation pages are available by appending .md to page URLs. Skip to content AI Assistant I'm here to help you with the docs. What is this pa",
+          "published_label": null
+        },
+        {
+          "value": [
+            "REST"
+          ],
+          "breadth": "narrow",
+          "url": "https://docs.ecwid.com/get-started/api-glossary",
+          "excerpt": "API glossary | Ecwid Documentation For the complete documentation index, see llms.txt . Markdown versions of documentation pages are available by appending .md to page URLs. Skip to content AI Assistant I'm here to help you with the docs. What is this page about? What should I re",
+          "published_label": null
+        },
+        {
+          "value": [
+            "REST"
+          ],
+          "breadth": "narrow",
+          "url": "https://support.ecwid.com/hc/en-us/articles/4938302203932-Adding-more-features-to-your-store-via-Ecwid-s-API",
+          "excerpt": "Adding more features to your store via Ecwid's API – Ecwid Help Center Help Center Ecommerce Website Instant Site Domains Resources Video tutorials Guides Webinars Status monitor API documentation What’s new Contact us Deutsch Español Français Français (Canada) Italiano Nederland",
+          "published_label": null
+        },
+        {
+          "value": [
+            "REST"
+          ],
+          "breadth": "moderate",
+          "url": "https://docs.ecwid.com/api-reference/advanced/rest-api-calls",
+          "excerpt": "REST API calls | REST API Reference | Ecwid Documentation For the complete documentation index, see llms.txt . Markdown versions of documentation pages are available by appending .md to page URLs. Skip to content AI Assistant I'm here to help you with the docs. What is this page ",
+          "published_label": null
+        }
+      ],
+      "reason": "Provisional extraction; validate scope and completeness against cited pages."
+    },
+    "official_mcp": {
+      "value": "unknown",
+      "status": "provisional",
+      "sources": [],
+      "evidence": [],
+      "reason": "No sufficiently specific official evidence extracted."
+    },
+    "composio_toolkit": {
+      "value": "unknown",
+      "status": "provisional",
+      "sources": [],
+      "evidence": [],
+      "reason": "No sufficiently specific official evidence extracted."
+    },
+    "verdict": {
+      "value": "partner_outreach",
+      "status": "provisional",
+      "sources": [
+        "https://docs.ecwid.com/get-started/make-your-first-api-request",
+        "https://docs.ecwid.com/api-reference",
+        "https://docs.ecwid.com/get-started/api-glossary",
+        "https://support.ecwid.com/hc/en-us/articles/4938302203932-Adding-more-features-to-your-store-via-Ecwid-s-API",
+        "https://docs.ecwid.com/api-reference/advanced/rest-api-calls",
+        "https://support.ecwid.com/hc/en-us/articles/5427022336796-Ecwid-developer-program-for-selling-apps"
+      ],
+      "evidence": [],
+      "reason": "Inferred only from extracted auth, API and access evidence; independent review required."
+    }
+  },
+  "validation": [
+    "Automatic extraction is provisional until independently reviewed",
+    "Unknown is not evidence of absence",
+    "Composio evidence cannot establish vendor MCP",
+    "Client-only and negated MCP statements are not vendor-server proof",
+    "API breadth is a text-coverage heuristic, not an endpoint census"
+  ]
+}

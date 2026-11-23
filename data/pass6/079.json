@@ -1,0 +1,133 @@
+{
+  "app": {
+    "number": 79,
+    "name": "Smartsheet",
+    "category": "Productivity and Project Management",
+    "hint": "smartsheet.com/developers"
+  },
+  "replayed_at": "2026-11-23T18:17:24.326532+00:00",
+  "source_passes": [
+    "data/pass2/079.json",
+    "data/pass4/079.json"
+  ],
+  "source_search": "data/new_search/079.json",
+  "publication_date_note": "Published labels are retained exactly as supplied by search; missing labels are null. Relative labels must not be treated as exact publication dates.",
+  "claims": {
+    "auth": {
+      "value": [
+        "OAuth 2.0",
+        "API token"
+      ],
+      "sources": [
+        "https://developers.smartsheet.com/api/smartsheet/guides/basics/authentication",
+        "https://help.smartsheet.com/articles/2482389-generate-API-key"
+      ],
+      "evidence": [
+        {
+          "value": "OAuth 2.0",
+          "url": "https://developers.smartsheet.com/api/smartsheet/guides/basics/authentication",
+          "excerpt": "ction, it's typically best to use OAuth with Smartsheet. Note that the Smartsheet implementation of OAuth 2.0 is a 3-legged process, which requires human intervention. See OAuth Walkthrough for details. If your scenario is strictly machine-to-machine, execute raw token requests over HTTPS",
+          "published_label": null
+        },
+        {
+          "value": "API token",
+          "url": "https://help.smartsheet.com/articles/2482389-generate-API-key",
+          "excerpt": "Generate an API access token | Smartsheet Learning Center Skip to main content To learn more about Smartsheet Regions, click here .  USM Content User model Legacy model Info Generate an API access token A Sm",
+          "published_label": null
+        }
+      ],
+      "reason": "Provisional extraction: validate scope and completeness against the cited page."
+    },
+    "credential_gate": {
+      "value": "unknown",
+      "sources": [],
+      "evidence": [],
+      "reason": "No sufficiently specific positive evidence extracted; review targeted search results."
+    },
+    "api_surface": {
+      "value": [
+        "REST"
+      ],
+      "sources": [
+        "https://www.smartsheet.com/content-center/product-insights/product-updates/introducing-smartsheet-mcp-server",
+        "https://www.smartsheet.com/content-center/smartsheet-mcp-server-now-generally-available"
+      ],
+      "evidence": [
+        {
+          "value": "REST",
+          "url": "https://www.smartsheet.com/content-center/product-insights/product-updates/introducing-smartsheet-mcp-server",
+          "excerpt": " user-level permissions, and returns contextually rich, intelligent responses — powered by the same REST API infrastructure processing 1 billion calls daily. No custom integration code. No data exports. No copy-pasting sheet contents into a chat window and hoping for the best. How the MC",
+          "published_label": null
+        },
+        {
+          "value": "REST",
+          "url": "https://www.smartsheet.com/content-center/smartsheet-mcp-server-now-generally-available",
+          "excerpt": "tural-language questions about your project data. The MCP Server routes requests through Smartsheet REST API, pulling structured data with rich metadata — row relationships, column types, cell history, comments — all respecting the authenticated user's permissions. The MCP Server is also",
+          "published_label": "8 months ago"
+        }
+      ],
+      "reason": "Provisional extraction: validate scope and completeness against the cited page."
+    },
+    "official_mcp": {
+      "value": "yes (provisional)",
+      "sources": [
+        "https://www.smartsheet.com/content-center/product-insights/product-updates/introducing-smartsheet-mcp-server",
+        "https://help.smartsheet.com/articles/2483670-smartsheet-mcp-server",
+        "https://developers.smartsheet.com/ai-mcp/smartsheet/install-the-smartsheet-mcp-server",
+        "https://www.smartsheet.com/content-center/smartsheet-mcp-server-now-generally-available"
+      ],
+      "evidence": [
+        {
+          "value": "yes (provisional)",
+          "url": "https://www.smartsheet.com/content-center/product-insights/product-updates/introducing-smartsheet-mcp-server",
+          "excerpt": "Smartsheet API now speaks AI: Introducing Smartsheet MCP server for every MCP-compliant AI tool | Smartsheet Skip to main content Article Smartsheet API now speaks AI: Introducing Smartsheet MCP server for every MCP-complia",
+          "published_label": null,
+          "context_warning": "Review vendor ownership, dates, and scope."
+        },
+        {
+          "value": "yes (provisional)",
+          "url": "https://help.smartsheet.com/articles/2483670-smartsheet-mcp-server",
+          "excerpt": "Smartsheet MCP Server overview | Smartsheet Learning Center Skip to main content To learn more about Smartsheet Regions, click here .  USM Content User model Legacy model Info Smar",
+          "published_label": null,
+          "context_warning": "Review vendor ownership, dates, and scope."
+        },
+        {
+          "value": "yes (provisional)",
+          "url": "https://developers.smartsheet.com/ai-mcp/smartsheet/install-the-smartsheet-mcp-server",
+          "excerpt": "Install the Smartsheet MCP server Skip to content AI & MCP Introduction Quickstart Install the MCP server Connect Claude Code Connect Codex Connect Cursor Connect Gemini CLI Manually configure ",
+          "published_label": null,
+          "context_warning": "Review vendor ownership, dates, and scope."
+        },
+        {
+          "value": "yes (provisional)",
+          "url": "https://www.smartsheet.com/content-center/smartsheet-mcp-server-now-generally-available",
+          "excerpt": "Smartsheet MCP Server now generally available! | Smartsheet Skip to main content Article Smartsheet MCP Server now generally available! PM Product Marketing March 24, 2026 You can n",
+          "published_label": "8 months ago",
+          "context_warning": "Review vendor ownership, dates, and scope."
+        }
+      ],
+      "reason": "Provisional; check source date, scope, and vendor ownership."
+    },
+    "composio_toolkit": {
+      "value": "listed",
+      "sources": [
+        "https://docs.composio.dev/toolkits/smartsheet"
+      ],
+      "evidence": [],
+      "reason": "Catalog match; scope needs review."
+    },
+    "verdict": {
+      "value": "unknown",
+      "sources": [],
+      "evidence": [],
+      "reason": "A supported access path, authentication method and API surface were not all extracted."
+    }
+  },
+  "validation": [
+    "Automatic extraction is provisional and not a verified final claim",
+    "Unknown is not evidence of absence",
+    "No Composio-to-vendor-MCP inference",
+    "Basic authentication may be endpoint-specific",
+    "Client-only and negated statements are not positive MCP evidence"
+  ]
+}

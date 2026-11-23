@@ -1,0 +1,109 @@
+{
+  "app": {
+    "number": 100,
+    "name": "Grain",
+    "category": "AI, Research and Media-native",
+    "hint": "grain.com (meeting notes)"
+  },
+  "replayed_at": "2026-11-23T18:16:39.907558+00:00",
+  "source_passes": [
+    "data/pass2/100.json",
+    "data/pass4/100.json"
+  ],
+  "source_search": "data/new_search/100.json",
+  "publication_date_note": "Published labels are retained exactly as supplied by search; missing labels are null. Relative labels must not be treated as exact publication dates.",
+  "claims": {
+    "auth": {
+      "value": [
+        "OAuth 2.0",
+        "Bearer token"
+      ],
+      "sources": [
+        "https://developers.grain.com/authentication.html"
+      ],
+      "evidence": [
+        {
+          "value": "OAuth 2.0",
+          "url": "https://developers.grain.com/authentication.html",
+          "excerpt": "Doesn't expire, and can be revoked at any time. OAuth Token personal , workspace Issued through the OAuth2 Flow . Expires, must be refreshed. Scope personal Provides the same access level as the user who authorized the token. workspace Provides FULL DATA ACCESS of the workspace. Can be",
+          "published_label": null
+        },
+        {
+          "value": "Bearer token",
+          "url": "https://developers.grain.com/authentication.html",
+          "excerpt": "ing Calls To authenticate API calls, the client must add the following header: Copy Authorization : Bearer TOKEN where TOKEN is obtained by one of the methods below. Token Types There are three types of tokens which can have one of two access scopes. Type Scope Personal Access Token ( PAT ) ",
+          "published_label": null
+        }
+      ],
+      "reason": "Provisional extraction: validate scope and completeness against the cited page."
+    },
+    "credential_gate": {
+      "value": [
+        "administrator controls credential"
+      ],
+      "sources": [
+        "https://support.grain.com/en/articles/15507288-grain-api"
+      ],
+      "evidence": [
+        {
+          "value": "administrator controls credential",
+          "url": "https://support.grain.com/en/articles/15507288-grain-api",
+          "excerpt": " every plan, including Free. Workspace API access is available on Business and Enterprise plans and requires admin access to generate. Can I access recordings I did not attend? With a Personal Access Token, you can only access recordings within your own permission level. With a Workspace Access Token, you can access all recordings in the workspace. Can I upload recordings from other",
+          "published_label": null
+        }
+      ],
+      "reason": "Provisional extraction: validate scope and completeness against the cited page."
+    },
+    "api_surface": {
+      "value": "unknown",
+      "sources": [],
+      "evidence": [],
+      "reason": "No sufficiently specific positive evidence extracted; review targeted search results."
+    },
+    "official_mcp": {
+      "value": "yes (provisional)",
+      "sources": [
+        "https://support.grain.com/en/articles/14811968-grain-mcp",
+        "https://developers.grain.com/mcp/"
+      ],
+      "evidence": [
+        {
+          "value": "yes (provisional)",
+          "url": "https://support.grain.com/en/articles/14811968-grain-mcp",
+          "excerpt": "ning priorities, performance trends Business or Enterprise FAQ Is my data safe? Grain's MCP server uses OAuth and HTTPS. Developers can also connect with a personal access token; see the developer docs . Your data stays in your Grain account and is processed",
+          "published_label": null,
+          "context_warning": "Review vendor ownership, dates, and scope."
+        },
+        {
+          "value": "yes (provisional)",
+          "url": "https://developers.grain.com/mcp/",
+          "excerpt": "Official Grain MCP Server: Quick Start Guide â Grain Developers Official Grain MCP Server: Quick Start Guide The Grain MCP (Model Context Protocol) connects Claude.ai (and other AI ch",
+          "published_label": null,
+          "context_warning": "Review vendor ownership, dates, and scope."
+        }
+      ],
+      "reason": "Provisional; check source date, scope, and vendor ownership."
+    },
+    "composio_toolkit": {
+      "value": "listed",
+      "sources": [
+        "https://docs.composio.dev/toolkits/grain"
+      ],
+      "evidence": [],
+      "reason": "Catalog match; scope needs review."
+    },
+    "verdict": {
+      "value": "unknown",
+      "sources": [],
+      "evidence": [],
+      "reason": "A supported access path, authentication method and API surface were not all extracted."
+    }
+  },
+  "validation": [
+    "Automatic extraction is provisional and not a verified final claim",
+    "Unknown is not evidence of absence",
+    "No Composio-to-vendor-MCP inference",
+    "Basic authentication may be endpoint-specific",
+    "Client-only and negated statements are not positive MCP evidence"
+  ]
+}

@@ -1,0 +1,246 @@
+{
+  "app": {
+    "number": 74,
+    "name": "Jira",
+    "category": "Productivity and Project Management",
+    "hint": "developer.atlassian.com"
+  },
+  "replayed_at": "2026-11-23T18:45:16.776514+00:00",
+  "source_passes": [
+    "data/pass2/074.json",
+    "data/pass4/074.json"
+  ],
+  "source_searches": [
+    "data/new_search/074.json",
+    "data/pass4_search/074.json"
+  ],
+  "publication_date_note": "Search publication labels are retained exactly; null means no label was available. Relative labels are not exact dates.",
+  "claims": {
+    "auth": {
+      "value": [
+        "OAuth 2.0",
+        "Basic authentication",
+        "API token",
+        "API key"
+      ],
+      "status": "provisional",
+      "sources": [
+        "https://developer.atlassian.com/server/jira/platform/basic-authentication/",
+        "https://developer.atlassian.com/cloud/jira/platform/basic-auth-for-rest-apis/?trk=article-ssr-frontend-pulse_little-text-block",
+        "https://support.atlassian.com/security-and-access-policies/docs/control-atlassian-mcp-server-settings/",
+        "https://support.atlassian.com/security-and-access-policies/docs/understand-atlassian-mcp-server/",
+        "https://support.atlassian.com/atlassian-ai-gateway/docs/get-started-with-the-atlassian-remote-mcp-server/",
+        "https://developer.atlassian.com/developer-guide/auth/",
+        "https://support.atlassian.com/atlassian-account/docs/manage-api-tokens-for-your-atlassian-account/",
+        "https://community.atlassian.com/forums/discussion/1063103/api-access-available-with-trial"
+      ],
+      "evidence": [
+        {
+          "value": "OAuth 2.0",
+          "url": "https://developer.atlassian.com/server/jira/platform/basic-authentication/",
+          "excerpt": "alls to the REST APIs. Otherwise, consider using one of the following methods: OAuth 1.0a OAuth 2.0 Personal access token Overview Jiraâs REST API is protected by the same restrictions that are provided via Jiraâs standard web\ninterface. This means that if you do n",
+          "published_label": null
+        },
+        {
+          "value": "Basic authentication",
+          "url": "https://developer.atlassian.com/server/jira/platform/basic-authentication/",
+          "excerpt": "Basic authentication Developer Documentation Resources News and Updates Get Support Sign in Developer Get Support Sign in DOCUMENTATION Cloud Data Center Resources News and Updates Get suppo",
+          "published_label": null
+        },
+        {
+          "value": "OAuth 2.0",
+          "url": "https://developer.atlassian.com/cloud/jira/platform/basic-auth-for-rest-apis/?trk=article-ssr-frontend-pulse_little-text-block",
+          "excerpt": "building an app: Forge apps and Connect apps use more secure methods for authentication: OAuth 2.0 and JWT respectively.\nIn addition, authentication is built into the app frameworks, so you don't need to configure it.\nSee Security for Forge apps and Security for Conne",
+          "published_label": null
+        },
+        {
+          "value": "API token",
+          "url": "https://developer.atlassian.com/cloud/jira/platform/basic-auth-for-rest-apis/?trk=article-ssr-frontend-pulse_little-text-block",
+          "excerpt": "nticate themselves using basic authentication with an Atlassian account email address\nand API token .\nAuthentication using passwords has been deprecated. Basic authentication is not as secure as other methods. We recommend using it for simple scripts and\nmanual calls t",
+          "published_label": null
+        },
+        {
+          "value": "Basic authentication",
+          "url": "https://developer.atlassian.com/cloud/jira/platform/basic-auth-for-rest-apis/?trk=article-ssr-frontend-pulse_little-text-block",
+          "excerpt": "auth for REST APIs This page shows you how REST clients can authenticate themselves using basic authentication with an Atlassian account email address\nand API token .\nAuthentication using passwords has been deprecated. Basic authentication is not as secure as other methods. We re",
+          "published_label": null
+        },
+        {
+          "value": "OAuth 2.0",
+          "url": "https://support.atlassian.com/security-and-access-policies/docs/control-atlassian-mcp-server-settings/",
+          "excerpt": "Control Atlassian MCP server settings | Atlassian Support Skip to main content Security and access policies Documentation Learn about security solutions and standards How do I keep my organization secure? Understand Atlassian Guard Atlassian Guard app and plan availability Suppor",
+          "published_label": null
+        },
+        {
+          "value": "API key",
+          "url": "https://support.atlassian.com/security-and-access-policies/docs/control-atlassian-mcp-server-settings/",
+          "excerpt": "ead governed by your IP allowlist configuration and the scopes granted to their tokens or API keys. IP allowlists – Your organization’s IP allowlists still control where users and tools can connect from. Requests made through Atlassian MCP must originate from an IP a",
+          "published_label": null
+        },
+        {
+          "value": "API token",
+          "url": "https://support.atlassian.com/security-and-access-policies/docs/control-atlassian-mcp-server-settings/",
+          "excerpt": "Export users from a site Export managed accounts Export accounts from domains Track user API tokens in your organization Understand user API tokens View API token activity Revoke user API tokens Manage data residency Understand data residency Move Atlassian app data t",
+          "published_label": null
+        },
+        {
+          "value": "OAuth 2.0",
+          "url": "https://support.atlassian.com/security-and-access-policies/docs/understand-atlassian-mcp-server/",
+          "excerpt": "Understand Atlassian MCP server | Atlassian Support Skip to main content Security and access policies Documentation Learn about security solutions and standards How do I keep my organization secure? Understand Atlassian Guard Atlassian Guard app and plan availability Supported se",
+          "published_label": null
+        },
+        {
+          "value": "API token",
+          "url": "https://support.atlassian.com/security-and-access-policies/docs/understand-atlassian-mcp-server/",
+          "excerpt": "Export users from a site Export managed accounts Export accounts from domains Track user API tokens in your organization Understand user API tokens View API token activity Revoke user API tokens Manage data residency Understand data residency Move Atlassian app data t",
+          "published_label": null
+        },
+        {
+          "value": "OAuth 2.0",
+          "url": "https://support.atlassian.com/atlassian-ai-gateway/docs/get-started-with-the-atlassian-remote-mcp-server/",
+          "excerpt": "Get started with the Atlassian MCP server | Atlassian AI Gateway | Atlassian Support Skip to main content Atlassian AI Gateway Cloud Documentation Connect AI to Atlassian apps Use Agent2Agent connections Connect Rovo to Gemini via Google Cloud Marketplace Set up Agent2Agent conne",
+          "published_label": null
+        },
+        {
+          "value": "API token",
+          "url": "https://support.atlassian.com/atlassian-ai-gateway/docs/get-started-with-the-atlassian-remote-mcp-server/",
+          "excerpt": "server Authentication and authorization Configure OAuth 2.1 Configure authentication via API token Supported tools Set up clients Use Rovo search and fetch in the Atlassian MCP server Troubleshoot and verify your setup How to upgrade from Atlassian MCP v1 to Atlassian",
+          "published_label": null
+        },
+        {
+          "value": "OAuth 2.0",
+          "url": "https://developer.atlassian.com/developer-guide/auth/",
+          "excerpt": "test app development platform, handles authentication for your app using managed APIs and OAuth 2.0 protocols.\nTo find out if Forge is right for your project, see the comparison of cloud development options and the Forge security overview . If you are building a Jira o",
+          "published_label": "5.9 years ago"
+        },
+        {
+          "value": "Basic authentication",
+          "url": "https://developer.atlassian.com/developer-guide/auth/",
+          "excerpt": ") Authorization (access) Private use of REST APIs, such as testing or personal scripting. Basic authentication The appâs access level is the same as the user who generated the token . \n        Administrators canât revoke this access without disabling the user who generated th",
+          "published_label": "5.9 years ago"
+        },
+        {
+          "value": "API token",
+          "url": "https://support.atlassian.com/atlassian-account/docs/manage-api-tokens-for-your-atlassian-account/",
+          "excerpt": "Manage API tokens for your Atlassian account | Atlassian Support Skip to main content Atlassian accounts Documentation Get access to your Atlassian cloud products Log in to your Atlassia",
+          "published_label": null
+        },
+        {
+          "value": "Basic authentication",
+          "url": "https://support.atlassian.com/atlassian-account/docs/manage-api-tokens-for-your-atlassian-account/",
+          "excerpt": "r API tokens is to allow scripts to access REST APIs for Atlassian cloud app s using HTTP basic authentication. Depending on the details of the HTTP library you use, you can replace your password with the token. For example, when using curl , you could do something like this: ##",
+          "published_label": null
+        },
+        {
+          "value": "API token",
+          "url": "https://community.atlassian.com/forums/discussion/1063103/api-access-available-with-trial",
+          "excerpt": "hat for the password in your Basic Auth configuration. From our document about generating API tokens : Log in to https://id.atlassian.com/manage/api-tokens . Click Create API token . From the dialog that appears, enter a memorable and concise Label for your token and c",
+          "published_label": "7.6 years ago"
+        },
+        {
+          "value": "Basic authentication",
+          "url": "https://community.atlassian.com/forums/discussion/1063103/api-access-available-with-trial",
+          "excerpt": "API access available with trial? - Atlassian Home Q&A Jira API access available with trial? Adam Smye-Rumsby Just signed up for 7-day trial of JIRA cloud.   Trying to test the API, doing a POST to /rest/api/3/issue using Basic auth with the credentials I specified when signing up",
+          "published_label": "7.6 years ago"
+        }
+      ],
+      "reason": "Provisional extraction; validate scope and completeness against cited pages."
+    },
+    "credential_gate": {
+      "value": "unknown",
+      "status": "provisional",
+      "sources": [],
+      "evidence": [],
+      "reason": "No sufficiently specific official evidence extracted."
+    },
+    "api_surface": {
+      "value": "REST; moderate documented surface",
+      "status": "provisional",
+      "sources": [
+        "https://developer.atlassian.com/server/jira/platform/basic-authentication/",
+        "https://developer.atlassian.com/cloud/jira/platform/basic-auth-for-rest-apis/?trk=article-ssr-frontend-pulse_little-text-block",
+        "https://developer.atlassian.com/developer-guide/auth/",
+        "https://support.atlassian.com/atlassian-account/docs/manage-api-tokens-for-your-atlassian-account/",
+        "https://developer.atlassian.com/cloud/jira/platform/rest/v3/intro"
+      ],
+      "evidence": [
+        {
+          "value": [
+            "REST"
+          ],
+          "breadth": "narrow",
+          "url": "https://developer.atlassian.com/server/jira/platform/basic-authentication/",
+          "excerpt": "Basic authentication Developer Documentation Resources News and Updates Get Support Sign in Developer Get Support Sign in DOCUMENTATION Cloud Data Center Resources News and Updates Get support Sign in Developer Sign in DOCUMENTATION Cloud Data Center Resources News and Updates Ge",
+          "published_label": null
+        },
+        {
+          "value": [
+            "REST"
+          ],
+          "breadth": "moderate",
+          "url": "https://developer.atlassian.com/cloud/jira/platform/basic-auth-for-rest-apis/?trk=article-ssr-frontend-pulse_little-text-block",
+          "excerpt": "Basic auth for REST APIs Developer Documentation Resources News and Updates Get Support Sign in Developer Get Support Sign in DOCUMENTATION Cloud Data Center Resources News and Updates Get support Sign in Developer Sign in DOCUMENTATION Cloud Data Center Resources News and Update",
+          "published_label": null
+        },
+        {
+          "value": [
+            "REST"
+          ],
+          "breadth": "moderate",
+          "url": "https://developer.atlassian.com/developer-guide/auth/",
+          "excerpt": "Authentication and authorization for developers Developer Documentation Resources News and Updates Get Support Sign in Developer Get Support Sign in DOCUMENTATION Cloud Data Center Resources News and Updates Get support Sign in Developer Sign in DOCUMENTATION Cloud Data Center Re",
+          "published_label": "5.9 years ago"
+        },
+        {
+          "value": [
+            "REST"
+          ],
+          "breadth": "moderate",
+          "url": "https://support.atlassian.com/atlassian-account/docs/manage-api-tokens-for-your-atlassian-account/",
+          "excerpt": "Manage API tokens for your Atlassian account | Atlassian Support Skip to main content Atlassian accounts Documentation Get access to your Atlassian cloud products Log in to your Atlassian account Supported browsers for Atlassian cloud apps Troubleshoot login issues with your Atla",
+          "published_label": null
+        },
+        {
+          "value": [
+            "REST"
+          ],
+          "breadth": "moderate",
+          "url": "https://developer.atlassian.com/cloud/jira/platform/rest/v3/intro",
+          "excerpt": "The Jira Cloud platform REST API Developer Documentation Resources News and Updates Get Support Sign in Developer Get Support Sign in DOCUMENTATION Cloud Data Center Resources News and Updates Get support Sign in Developer Sign in DOCUMENTATION Cloud Data Center Resources News an",
+          "published_label": null
+        }
+      ],
+      "reason": "Provisional extraction; validate scope and completeness against cited pages."
+    },
+    "official_mcp": {
+      "value": "unknown",
+      "status": "provisional",
+      "sources": [],
+      "evidence": [],
+      "reason": "No sufficiently specific official evidence extracted."
+    },
+    "composio_toolkit": {
+      "value": "listed",
+      "status": "provisional",
+      "sources": [
+        "https://docs.composio.dev/toolkits/jira"
+      ],
+      "evidence": [],
+      "reason": "Catalog match only; not vendor MCP evidence."
+    },
+    "verdict": {
+      "value": "unknown",
+      "status": "provisional",
+      "sources": [],
+      "evidence": [],
+      "reason": "No sufficiently specific official evidence extracted."
+    }
+  },
+  "validation": [
+    "Automatic extraction is provisional until independently reviewed",
+    "Unknown is not evidence of absence",
+    "Composio evidence cannot establish vendor MCP",
+    "Client-only and negated MCP statements are not vendor-server proof",
+    "API breadth is a text-coverage heuristic, not an endpoint census"
+  ]
+}

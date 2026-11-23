@@ -1,0 +1,156 @@
+{
+  "app": {
+    "number": 68,
+    "name": "MongoDB Atlas",
+    "category": "Developer, Infra and Data platforms",
+    "hint": "mongodb.com/docs/atlas/api"
+  },
+  "replayed_at": "2026-11-23T18:41:36.799040+00:00",
+  "source_passes": [
+    "data/pass2/068.json",
+    "data/pass4/068.json"
+  ],
+  "source_searches": [
+    "data/new_search/068.json",
+    "data/pass4_search/068.json"
+  ],
+  "publication_date_note": "Search publication labels are retained exactly; null means no label was available. Relative labels are not exact dates.",
+  "claims": {
+    "auth": {
+      "value": [
+        "OAuth 2.0",
+        "API key"
+      ],
+      "status": "provisional",
+      "sources": [
+        "https://www.mongodb.com/docs/atlas/api/api-authentication/",
+        "https://www.mongodb.com/docs/api/doc/atlas-admin-api-v2/authentication",
+        "https://www.mongodb.com/docs/atlas/configure-api-access/?interface=atlas-api&programmatic-access=service-account",
+        "https://www.mongodb.com/docs/atlas/architecture/current/auth/authentication/",
+        "https://www.mongodb.com/docs/atlas/configure-api-access/",
+        "https://www.mongodb.com/docs/atlas/configure-api-access/?interface=atlas-ui&programmatic-access=api-key"
+      ],
+      "evidence": [
+        {
+          "value": "OAuth 2.0",
+          "url": "https://www.mongodb.com/docs/atlas/api/api-authentication/",
+          "excerpt": "tration API accepts the following authentication methods: Service account access tokens ( OAuth 2.0) API keys ( HTTP Digest Authentication) To learn how to use service accounts and API keys to configure programmatic access to your Atlas organizations and projects, see",
+          "published_label": null
+        },
+        {
+          "value": "API key",
+          "url": "https://www.mongodb.com/docs/atlas/api/api-authentication/",
+          "excerpt": "thentication Methods Copy page Important We recommend you use service accounts instead of API keys to authenticate to the Atlas Administration API. API keys are a legacy authentication method. To use the Atlas Administration API to manage your Atlas clusters, you mus",
+          "published_label": null
+        },
+        {
+          "value": "OAuth 2.0",
+          "url": "https://www.mongodb.com/docs/api/doc/atlas-admin-api-v2/authentication",
+          "excerpt": "Authentication | Atlas Admin API v2 documentation For AI agents: a documentation index is available at https://www.mongodb.com/docs/api/doc/atlas-admin-api-v2/llms.txt .\n  Markdown versions of each page are available by sending an Accept: text/markdown header,\n  or by appending .",
+          "published_label": null
+        },
+        {
+          "value": "OAuth 2.0",
+          "url": "https://www.mongodb.com/docs/atlas/configure-api-access/?interface=atlas-api&programmatic-access=service-account",
+          "excerpt": "equests with one of the following authentication methods: Service account access tokens ( OAuth 2.0) API keys ( HTTP Digest Authentication) To learn about these methods, see Atlas Administration API Authentication Methods. The following sections describe how to use ser",
+          "published_label": null
+        },
+        {
+          "value": "API key",
+          "url": "https://www.mongodb.com/docs/atlas/configure-api-access/?interface=atlas-api&programmatic-access=service-account",
+          "excerpt": "h one of the following authentication methods: Service account access tokens ( OAuth 2.0) API keys ( HTTP Digest Authentication) To learn about these methods, see Atlas Administration API Authentication Methods. The following sections describe how to use service acco",
+          "published_label": null
+        },
+        {
+          "value": "OAuth 2.0",
+          "url": "https://www.mongodb.com/docs/atlas/architecture/current/auth/authentication/",
+          "excerpt": "nage Atlas database users using Azure Managed Identities, Google Service Accounts, or any OAuth 2.0-compliant service. These authentication mechanisms simplify management and enhance security by allowing for passwordless access to the Atlas database. AWS IAM Role Authe",
+          "published_label": null
+        },
+        {
+          "value": "API key",
+          "url": "https://www.mongodb.com/docs/atlas/architecture/current/auth/authentication/",
+          "excerpt": "ce Accounts . For development and test environments, you can also use Service Accounts or API Keys. Authentication Types The following sections provide details about the authentication methods used when accessing the Atlas UI, Atlas Database, or the Atlas Administrat",
+          "published_label": null
+        },
+        {
+          "value": "OAuth 2.0",
+          "url": "https://www.mongodb.com/docs/atlas/configure-api-access/",
+          "excerpt": "equests with one of the following authentication methods: Service account access tokens ( OAuth 2.0) API keys ( HTTP Digest Authentication) To learn about these methods, see Atlas Administration API Authentication Methods. The following sections describe how to use ser",
+          "published_label": null
+        },
+        {
+          "value": "API key",
+          "url": "https://www.mongodb.com/docs/atlas/configure-api-access/",
+          "excerpt": "h one of the following authentication methods: Service account access tokens ( OAuth 2.0) API keys ( HTTP Digest Authentication) To learn about these methods, see Atlas Administration API Authentication Methods. The following sections describe how to use service acco",
+          "published_label": null
+        },
+        {
+          "value": "OAuth 2.0",
+          "url": "https://www.mongodb.com/docs/atlas/configure-api-access/?interface=atlas-ui&programmatic-access=api-key",
+          "excerpt": "equests with one of the following authentication methods: Service account access tokens ( OAuth 2.0) API keys ( HTTP Digest Authentication) To learn about these methods, see Atlas Administration API Authentication Methods. The following sections describe how to use ser",
+          "published_label": null
+        },
+        {
+          "value": "API key",
+          "url": "https://www.mongodb.com/docs/atlas/configure-api-access/?interface=atlas-ui&programmatic-access=api-key",
+          "excerpt": "h one of the following authentication methods: Service account access tokens ( OAuth 2.0) API keys ( HTTP Digest Authentication) To learn about these methods, see Atlas Administration API Authentication Methods. The following sections describe how to use service acco",
+          "published_label": null
+        }
+      ],
+      "reason": "Provisional extraction; validate scope and completeness against cited pages."
+    },
+    "credential_gate": {
+      "value": "unknown",
+      "status": "provisional",
+      "sources": [],
+      "evidence": [],
+      "reason": "No sufficiently specific official evidence extracted."
+    },
+    "api_surface": {
+      "value": "unknown",
+      "status": "provisional",
+      "sources": [],
+      "evidence": [],
+      "reason": "No sufficiently specific official evidence extracted."
+    },
+    "official_mcp": {
+      "value": "no_vendor_server_documented",
+      "status": "provisional",
+      "sources": [
+        "https://www.mongodb.com/docs/mcp-server/overview/?msockid=3b66bbb3af6963150203ad3fae3f6222"
+      ],
+      "evidence": [
+        {
+          "value": "no_vendor_server_documented",
+          "url": "https://www.mongodb.com/docs/mcp-server/overview/?msockid=3b66bbb3af6963150203ad3fae3f6222",
+          "excerpt": "al rotation. MongoDB hosts, runs, and maintains the MongoDB MCP Server in Atlas. There is no MCP server infrastructure for you to deploy, upgrade, or operate. Supported Database Deployments Self-Managed (On-premises) and Atlas (Cloud) Atlas (Cloud) only Access Control Leve",
+          "published_label": null,
+          "context_note": "Explicit dated/scoped negation; not a universal absence claim."
+        }
+      ],
+      "reason": "Provisional; check date, ownership and access scope."
+    },
+    "composio_toolkit": {
+      "value": "unknown",
+      "status": "provisional",
+      "sources": [],
+      "evidence": [],
+      "reason": "No sufficiently specific official evidence extracted."
+    },
+    "verdict": {
+      "value": "unknown",
+      "status": "provisional",
+      "sources": [],
+      "evidence": [],
+      "reason": "No sufficiently specific official evidence extracted."
+    }
+  },
+  "validation": [
+    "Automatic extraction is provisional until independently reviewed",
+    "Unknown is not evidence of absence",
+    "Composio evidence cannot establish vendor MCP",
+    "Client-only and negated MCP statements are not vendor-server proof",
+    "API breadth is a text-coverage heuristic, not an endpoint census"
+  ]
+}

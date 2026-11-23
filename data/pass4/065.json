@@ -1,0 +1,276 @@
+{
+  "app": {
+    "number": 65,
+    "name": "Supabase",
+    "category": "Developer, Infra and Data platforms",
+    "hint": "supabase.com/docs"
+  },
+  "checked_at": "2026-11-23T18:15:19.799379+00:00",
+  "prior_source": "data/pass2/065.json",
+  "search_source": "data/pass4_search/065.json",
+  "new_candidates": [
+    {
+      "url": "https://supabase.com/docs/guides/graphql",
+      "title": "GraphQL | Supabase Docs (https://supabase.com/docs/guides/graphql)",
+      "published_label": "today"
+    },
+    {
+      "url": "https://supabase.com/docs/guides/api",
+      "title": "Data REST API | Supabase Docs (https://supabase.com/docs/guides/api)",
+      "published_label": "today"
+    },
+    {
+      "url": "https://supabase.com/docs/guides/auth",
+      "title": "Auth | Supabase Docs (https://supabase.com/docs/guides/auth)",
+      "published_label": "3 days ago"
+    },
+    {
+      "url": "https://supabase.com/docs/guides/api/creating-routes",
+      "title": "Creating API Routes | Supabase Docs (https://supabase.com/docs/guides/api/creating-routes)",
+      "published_label": "today"
+    },
+    {
+      "url": "https://supabase.com/docs/guides/auth/third-party/overview",
+      "title": "Third-party auth | Supabase Docs (https://supabase.com/docs/guides/auth/third-party/overview)",
+      "published_label": "last month"
+    },
+    {
+      "url": "https://supabase.com/docs",
+      "title": "Supabase Docs (https://supabase.com/docs)",
+      "published_label": "today"
+    },
+    {
+      "url": "https://supabase.com/docs/guides/auth/architecture",
+      "title": "Auth architecture | Supabase Docs (https://supabase.com/docs/guides/auth/architecture)",
+      "published_label": "today"
+    },
+    {
+      "url": "https://supabase.com/docs/guides/getting-started/architecture",
+      "title": "Architecture | Supabase Docs (https://supabase.com/docs/guides/getting-started/architecture)",
+      "published_label": "today"
+    },
+    {
+      "url": "https://supabase.com/docs/guides/database/connecting-to-postgres",
+      "title": "Connect to your database | Supabase Docs (https://supabase.com/docs/guides/database/connecting-to-postgres)",
+      "published_label": "2 days ago"
+    },
+    {
+      "url": "https://supabase.com/docs/reference/api/introduction",
+      "title": "Introduction | Management API Reference | Supabase Docs (https://supabase.com/docs/reference/api/introduction)",
+      "published_label": "2 days ago"
+    },
+    {
+      "url": "https://supabase.com/docs/guides/auth/users",
+      "title": "Users | Supabase Docs (https://supabase.com/docs/guides/auth/users)",
+      "published_label": "today"
+    },
+    {
+      "url": "https://supabase.com/docs/guides/platform/access-control",
+      "title": "Access Control | Supabase Docs (https://supabase.com/docs/guides/platform/access-control)",
+      "published_label": "2 weeks ago"
+    },
+    {
+      "url": "https://supabase.com/docs/guides/getting-started/migrating-to-new-api-keys",
+      "title": "Migrating to publishable and secret API keys | Supabase Docs (https://supabase.com/docs/guides/getting-started/migrating-to-new-api-keys)",
+      "published_label": "2 days ago"
+    },
+    {
+      "url": "https://supabase.com/docs/reference/javascript/admin-api",
+      "title": "JavaScript: Overview | Supabase Docs (https://supabase.com/docs/reference/javascript/admin-api)",
+      "published_label": null
+    },
+    {
+      "url": "https://supabase.com/docs/guides/getting-started/api-keys?trk=article-ssr-frontend-pulse_little-text-block",
+      "title": "API keys | Supabase Docs (https://supabase.com/docs/guides/getting-started/api-keys?trk=article-ssr-frontend-pulse_little-text-block)",
+      "published_label": "2 days ago"
+    },
+    {
+      "url": "https://supabase.com/docs/guides/platform/personal-access-tokens",
+      "title": "Personal Access Tokens | Supabase Docs (https://supabase.com/docs/guides/platform/personal-access-tokens)",
+      "published_label": "today"
+    },
+    {
+      "url": "https://supabase.com/docs/reference/cli/supabase-config",
+      "title": "CLI Reference | Supabase Docs (https://supabase.com/docs/reference/cli/supabase-config)",
+      "published_label": "3 days ago"
+    },
+    {
+      "url": "https://supabase.com/docs/reference/cli/supabase-orgs-create",
+      "title": "CLI Reference | Supabase Docs (https://supabase.com/docs/reference/cli/supabase-orgs-create)",
+      "published_label": null
+    }
+  ],
+  "selected": [
+    {
+      "url": "https://supabase.com/docs/guides/auth",
+      "title": "Auth | Supabase Docs (https://supabase.com/docs/guides/auth)",
+      "published_label": "3 days ago"
+    },
+    {
+      "url": "https://supabase.com/docs/guides/api",
+      "title": "Data REST API | Supabase Docs (https://supabase.com/docs/guides/api)",
+      "published_label": "today"
+    },
+    {
+      "url": "https://supabase.com/docs/guides/platform/access-control",
+      "title": "Access Control | Supabase Docs (https://supabase.com/docs/guides/platform/access-control)",
+      "published_label": "2 weeks ago"
+    }
+  ],
+  "new_pages": [
+    {
+      "url": "https://supabase.com/docs/guides/auth",
+      "requested_url": "https://supabase.com/docs/guides/auth",
+      "status": 200,
+      "title": "Auth | Supabase Docs (https://supabase.com/docs/guides/auth)",
+      "text": "Auth | Supabase Docs Skip to content Updated Nov 11, 2026 Supabase Auth makes it easy to implement authentication and authorization in your app. We provide client SDKs, API endpoints, and pre-built web UI components to help you create and manage users. Your users can use many popular Auth methods, including password , magic link , one-time password (OTP) , social sign-in , and single sign-on (SSO) . About authentication and authorization Authentication and authorization are the core responsibilities of any Auth system. Authentication means checking that a user is who they say they are. Authorization means checking what resources a user is allowed to access. Supabase Auth uses JSON Web Tokens (JWTs) for authentication. For a complete reference of all JWT fields, see the JWT Fields Reference . Auth integrates with Supabase's database features, making it easy to use Row Level Security (RLS) for authorization. The Supabase ecosystem You can use Supabase Auth as a standalone product, but it's also built to integrate with the Supabase ecosystem. Auth uses your project's Postgres database under the hood, storing user data and other Auth information in a special schema. You can connect this data to your own tables using triggers and foreign key references. Auth also enables access control to your database's automatically generated REST API . When using Supabase SDKs, your data requests are automatically sent with the user's Auth Token. The Auth Token scopes database access on a row-by-row level when used along with RLS policies . Get started Start here if you're new to Supabase Auth: Auth with email and password Sign up and sign in users with email and password. Server-side rendering Create a Supabase client for SSR frameworks like Next.js and SvelteKit. Which package to use supabase-js vs @supabase/ssr vs @supabase/server — which to use on the server. Row Level Security Use RLS policies to authorize data access from the client. Providers Supabase Auth works with many popular Auth methods, including social sign-in and phone sign-in with third-party providers. See the following sections for a list of supported third-party providers. Social sign-in Apple Azure (Microsoft) Bitbucket Discord Facebook Figma GitHub GitLab Google Kakao Keycloak LinkedIn Notion Slack Spotify Twitter Twitch WorkOS Zoom To add a provider that isn't listed, use Custom OAuth/OIDC Providers . It works with any OAuth2 or OIDC-compatible identity provider. Phone sign-in MessageBird Twilio Vonage Pricing Charges apply to Monthly Active Users (MAU), Monthly Active Third-Party Users (Third-Party MAU), and Monthly Active SSO Users (SSO MAU) and Advanced MFA Add-ons. For a detailed breakdown of how these charges are calculated, refer to the following pages. Pricing MAU : How MAU usage is measured and billed. Pricing Third-Party MAU : How third-party auth MAU is measured and billed. Pricing SSO MAU : How SSO MAU usage is measured and billed. Advanced MFA - Phone : How Advanced MFA Phone add-on usage is measured and billed. Next steps Once you've covered the basics, these guides help with other use cases and features: Email (Magic link or OTP) Sign up and sign in users with a Magic Link or email OTP instead of a password. Enterprise SSO Add Single Sign-On for enterprise applications with SAML 2.0. User sessions Control session lifetime, refresh tokens, and multi-device sign-in behavior. Third-party auth Use Clerk, Auth0, Firebase Auth, Cognito, or WorkOS JWTs with Supabase APIs. Multi-factor authentication Add a second factor to user sign-in with TOTP or phone. JWTs Understand how Supabase Auth issues and validates JWTs. Auth Hooks Customize Auth behavior with Postgres functions at key lifecycle points. Watch video guide Is this helpful? No Yes AI tools Connect your AI agent Ask ChatGPT Ask Claude Copy as Markdown Prefer on Google",
+      "published_label": "3 days ago"
+    },
+    {
+      "url": "https://supabase.com/docs/guides/api",
+      "requested_url": "https://supabase.com/docs/guides/api",
+      "status": 200,
+      "title": "Data REST API | Supabase Docs (https://supabase.com/docs/guides/api)",
+      "text": "Data REST API | Supabase Docs Skip to content Updated Nov 18, 2026 Supabase auto-generates an API directly from your database schema allowing you to connect to your database through a restful interface, directly from the browser. The API is auto-generated from your database and is designed to get you building as fast as possible, without writing a single line of code. You can use them directly from the browser (two-tier architecture), or as a complement to your own API server (three-tier architecture). Looking for your Data API URL and Keys? You can find the API URL in the Integrations > Data API section of the Dashboard. You can find the API Keys in the Settings > API Keys section of the Dashboard. Features Supabase provides a RESTful API using PostgREST , a thin API layer on top of Postgres.\nIt exposes everything you need from a CRUD API at the URL https://<project_ref>.supabase.co/rest/v1/ . The REST interface is automatically reflected from your database's schema and is: Instant and auto-generated: As you update your database the changes are immediately accessible through your API. Self documenting: Supabase generates documentation in the Dashboard which updates as you make database changes. Secure: The API is configured to work with Postgres's Row Level Security , provisioned behind an API gateway with key-auth enabled. Fast: Our benchmarks for basic reads are more than 300% faster than Firebase. The API is a very thin layer on top of Postgres, which does most of the heavy lifting. Scalable: The API can serve thousands of simultaneous requests, and works well for Serverless workloads. The reflected API is designed to retain as much of Postgres' capability as possible including: Basic CRUD operations (Create/Read/Update/Delete) Arbitrarily deep relationships among tables/views, functions that return table types can also nest related tables/views. Works with Postgres Views, Materialized Views and Foreign Tables Works with Postgres Functions User defined computed columns and computed relationships The Postgres security model - including Row Level Security, Roles, and Grants. The REST API resolves all requests to a single SQL statement leading to fast response times and high throughput. Is this helpful? No Yes AI tools Connect your AI agent Ask ChatGPT Ask Claude Copy as Markdown Prefer on Google",
+      "published_label": "today"
+    },
+    {
+      "url": "https://supabase.com/docs/guides/platform/access-control",
+      "requested_url": "https://supabase.com/docs/guides/platform/access-control",
+      "status": 200,
+      "title": "Access Control | Supabase Docs (https://supabase.com/docs/guides/platform/access-control)",
+      "text": "Access Control | Supabase Docs Skip to content Updated Nov 6, 2026 Supabase provides granular access controls to manage permissions across your organizations and projects. For each organization and project, a member can have one of the following roles: Owner : full access to everything in organization and project resources. Administrator : full access to everything in organization and project resources except updating organization settings, transferring projects outside of the organization, and adding new owners. Developer : read-only access to organization resources, full content access to project resources but cannot change any project settings. Read-Only : read-only access to organization and project resources. No-access : no access to any organization or project resources by default. Use this for members who should only see the specific projects they're granted a project-scoped role on. Read-Only and No-access roles are only available on the Team and Enterprise plans . When you first create an account, a default organization is created for you and you'll be assigned as the Owner . Any organizations you create will assign you as Owner as well. Manage organization members To invite others to collaborate, visit your organization's team settings to send an invite link to another user's email. The invite is valid for 24 hours. For project scoped roles, you may only assign a role to a single project for the user when sending the invite. You can assign roles to multiple projects after the user accepts the invite. Invites sent from a SAML SSO account can only be accepted by another SAML SSO account from the same identity provider. This is a security measure to prevent accidental invites to accounts not managed by your enterprise's identity provider. Viewing organization members using the Management API You can also view organization members using the Management API: 1 # Get your access token from https://supabase.com/dashboard/account/tokens 2 export SUPABASE_ACCESS_TOKEN = \" your-access-token \" 3 export ORG_ID = \" your-organization-id \" 4 5 # List organization members 6 curl \" https://api.supabase.com/v1/organizations/ $ORG_ID /members \" \\ 7 -H \" Authorization: Bearer $SUPABASE_ACCESS_TOKEN \" Transferring ownership of an organization Each Supabase organization must have at least one owner. If your organization has other owners then you can relinquish ownership and leave the organization by clicking Leave team in your organization's team settings . Otherwise, you'll need to invite a user as Owner , and they need to accept the invitation, or promote an existing organization member to Owner before you can leave the organization. Organization scoped roles vs project scoped roles Project scoped roles are only available on the Team and Enterprise plans . Each member in the organization can be assigned a role that is scoped either to the entire organization or to specific projects. If a member has an organization-level role, they will have the corresponding permissions across all current and future projects within that organization. If a member is assigned a project-scoped role, they will only have access to the specific projects they've been assigned to. They will not be able to view, access, or even see other projects within the organization on the Supabase Dashboard. This allows for more granular control, ensuring that users only have visibility and access to the projects relevant to their role. To default a member to zero project access and grant access on a per-project basis, assign them the organization-level No access role, then grant project-scoped roles for the specific projects they need. The No-access role is omitted from the permission tables below since it has none of the listed permissions by default. Organization permissions across roles The table below shows the actions each role can take on the resources belonging to the organization. Resource Action Owner Administrator Developer Read-Only 1 Organization Organization Management Update Delete OpenAI Telemetry Configuration 2 Update Members Organization Members List Owner Add Remove Administrator Add Remove Developer Add Remove Owner (Project-Scoped) Add Remove Administrator (Project-Scoped) Add Remove Developer (Project-Scoped) Add Remove Invite Revoke Resend Accept 3 Billing Invoices List Billing Email View Update Subscription View Update Billing Address View Update Tax Codes View Update Payment Methods View Update Usage View Integrations (Org Settings) Authorize GitHub - Add GitHub Repositories - GitHub Connections Create Update Delete View Vercel Connections Create Update Delete View OAuth Apps OAuth Apps Create Update Delete List Audit Logs View Audit logs - Legal Documents SOC2 Type 2 Report Download Security Questionnaire Download Project permissions across roles The table below shows the actions each role can take on the resources belonging to the project. Resource Action Owner Admin Developer Read-Only 4 5 Project Project Management Transfer Create Delete Update (Name) Pause Restore Restart Custom Domains View Update Data (Database) View Manage Infrastructure Read Replicas List Create Delete Add-ons Update Integrations Authorize GitHub - Add GitHub Repositories - GitHub Connections Create Update Delete View Vercel Connections Create Update Delete View Database Configuration Reset Password - Pooling Settings View Update SSL Configuration View Update Disk Size Configuration View Update Network Restrictions View Create Delete Network Bans View Unban API Configuration API Keys Read service key Read anon key JWT Secret View Generate new API settings View Update Auth Configuration Auth Settings View Update SMTP Settings View Update Advanced Settings View Update Storage Configuration Upload Limit View Update S3 Access Keys View Create Delete Edge Functions Configuration Secrets View 6 Create Delete SQL Editor Queries Create Update Delete View List Run 7 Database Scheduled Backups View Download Restore Physical backups (PITR) View Restore Authentication Users Create Delete List Send OTP Send password recovery Send magic link Remove MFA factors Providers View Update Rate Limits View Update Email Templates View Update URL Configuration View Update Hooks View Create Delete Storage Buckets Create Update Delete View List Files Create (Upload) Update Delete List Edge Functions Edge Functions Update Delete View List Reports Custom Report Create Update Delete View List Logs & Analytics Queries Create Update Delete View List Run Branching Production Branch Read Write Development Branches List Create 8 Update Delete Footnotes Available on the Team and Enterprise Plans. ↩ Sending anonymous data to OpenAI is opt in and can improve Studio AI Assistant's responses. ↩ Invites sent from a SSO account can only be accepted by another SSO account coming from the same identity provider. This is a security measure that prevents accidental invites to accounts not managed by your company's enterprise systems. ↩ Available on the Team and Enterprise Plans. ↩ Listed permissions are for the API and Dashboard. ↩ Read-Only role is able to access secrets. ↩ Limited to executing SELECT queries. SQL Query Snippets run by the Read-Only role are run against the database using the supabase_read_only_user . This role has the predefined Postgres role pg_read_all_data . ↩ When using dashboard branching without a GitHub integration, the first branch creation also registers the project's production branch — a one-time step that requires Owner or Administrator. See Branching via the dashboard for details. Developers can create, update, and delete branches normally after that. ↩ Is this helpful? No Yes AI tools Connect your AI agent Ask ChatGPT Ask Claude Copy as Markdown Prefer on Google",
+      "published_label": "2 weeks ago"
+    }
+  ],
+  "claims": {
+    "auth": {
+      "value": [
+        "API key",
+        "Bearer token",
+        "OAuth 2.0"
+      ],
+      "sources": [
+        "https://supabase.com/docs/guides/functions/auth-headers",
+        "https://supabase.com/docs/guides/getting-started/api-keys",
+        "https://supabase.com/docs/guides/auth"
+      ],
+      "evidence": [
+        {
+          "value": "API key",
+          "url": "https://supabase.com/docs/guides/functions/auth-headers",
+          "excerpt": "ey on apikey passes the check too. The check alone doesn't authenticate a caller that sends only an API key. Reserve Authorization for user tokens, and send API keys on apikey . To move off legacy keys entirely, migrate to the @supabase/server SDK as shown in Securing Edge Functions . U",
+          "published_label": null
+        },
+        {
+          "value": "Bearer token",
+          "url": "https://supabase.com/docs/guides/functions/auth-headers",
+          "excerpt": "s Don't send API keys as bearer tokens A common mistake is sending a publishable or secret key as a bearer token: Authorization: Bearer sb_publishable_... . The new API keys are not JWTs. The platform check still accepts them, but your handler can't verify them as JWTs. Instead, put API keys",
+          "published_label": null
+        },
+        {
+          "value": "API key",
+          "url": "https://supabase.com/docs/guides/getting-started/api-keys",
+          "excerpt": "upabase Docs Skip to content Updated Nov 18, 2026 Every request to your Supabase project carries an API key. The key identifies what is calling your project: a web page, a mobile app, a server, or an Edge Function. Supabase Auth identifies who is calling, when someone is signed in. This",
+          "published_label": null
+        },
+        {
+          "value": "OAuth 2.0",
+          "url": "https://supabase.com/docs/guides/auth",
+          "excerpt": "orkOS Zoom To add a provider that isn't listed, use Custom OAuth/OIDC Providers . It works with any OAuth2 or OIDC-compatible identity provider. Phone sign-in MessageBird Twilio Vonage Pricing Charges apply to Monthly Active Users (MAU), Monthly Active Third-Party Users (Third-Party MA",
+          "published_label": "3 days ago"
+        }
+      ],
+      "reason": "Provisional extraction: validate scope and completeness against the cited page."
+    },
+    "credential_gate": {
+      "value": "unknown",
+      "sources": [],
+      "evidence": [],
+      "reason": "No sufficiently specific positive evidence extracted; review targeted search results."
+    },
+    "api_surface": {
+      "value": [
+        "REST"
+      ],
+      "sources": [
+        "https://supabase.com/docs/guides/auth",
+        "https://supabase.com/docs/guides/api"
+      ],
+      "evidence": [
+        {
+          "value": "REST",
+          "url": "https://supabase.com/docs/guides/auth",
+          "excerpt": "foreign key references. Auth also enables access control to your database's automatically generated REST API . When using Supabase SDKs, your data requests are automatically sent with the user's Auth Token. The Auth Token scopes database access on a row-by-row level when used along with ",
+          "published_label": "3 days ago"
+        },
+        {
+          "value": "REST",
+          "url": "https://supabase.com/docs/guides/api",
+          "excerpt": "Data REST API | Supabase Docs Skip to content Updated Nov 18, 2026 Supabase auto-generates an API directly from your database schema allowing you to connect to your database through a restful i",
+          "published_label": "today"
+        }
+      ],
+      "reason": "Provisional extraction: validate scope and completeness against the cited page."
+    },
+    "official_mcp": {
+      "value": "yes (provisional)",
+      "sources": [
+        "https://supabase.com/features/mcp-server",
+        "https://supabase.com/docs/guides/self-hosting/enable-mcp",
+        "https://supabase.com/docs/guides/ai-tools/byo-mcp",
+        "https://supabase.com/docs/guides/ai-tools/mcp?client=windsurf"
+      ],
+      "evidence": [
+        {
+          "value": "yes (provisional)",
+          "url": "https://supabase.com/features/mcp-server",
+          "excerpt": "bining LLMs and databases in real-world projects. Integration capabilities with Supabase MCP Server The MCP Server integrates seamlessly with popular AI tools and the broader Supabase ecosystem: Cursor. Connect your IDE directly to Supabase for AI-driven development workflo",
+          "published_label": null,
+          "context_warning": "Review vendor ownership, dates, and scope."
+        },
+        {
+          "value": "yes (provisional)",
+          "url": "https://supabase.com/docs/guides/self-hosting/enable-mcp",
+          "excerpt": "r, etc.) and verify access to the MCP tools. For example, you can ask: \"What is Supabase anon key? Use the Supabase MCP server tools.\" Troubleshooting If you are unable to connect to the MCP server: Confirm the Docker bridge gateway IP is correctly added to the API gateway configuratio",
+          "published_label": null,
+          "context_warning": "Review vendor ownership, dates, and scope."
+        },
+        {
+          "value": "yes (provisional)",
+          "url": "https://supabase.com/docs/guides/ai-tools/byo-mcp",
+          "excerpt": "urity (RLS) policies. This is the MCP server your app exposes to its users. The Supabase MCP server is different: it connects your own coding agent to your project so you can build the app. Prerequisites Docker or a compatible runtime, running (for local deve",
+          "published_label": null,
+          "context_warning": "Review vendor ownership, dates, and scope."
+        },
+        {
+          "value": "yes (provisional)",
+          "url": "https://supabase.com/docs/guides/ai-tools/mcp?client=windsurf",
+          "excerpt": "Supabase MCP Server | Supabase Docs Skip to content Updated Nov 18, 2026 The Model Context Protocol (MCP) is a standard for connecting Large Language Models (LLMs) to platforms li",
+          "published_label": null,
+          "context_warning": "Review vendor ownership, dates, and scope."
+        }
+      ],
+      "reason": "Provisional; check source date, scope, and vendor ownership."
+    },
+    "composio_toolkit": {
+      "value": "listed",
+      "sources": [
+        "https://docs.composio.dev/toolkits/supabase"
+      ],
+      "evidence": [],
+      "reason": "Catalog match; scope needs review."
+    },
+    "verdict": {
+      "value": "unknown",
+      "sources": [],
+      "evidence": [],
+      "reason": "A supported access path, authentication method and API surface were not all extracted."
+    }
+  },
+  "validation": [
+    "All claims are provisional",
+    "No vendor MCP inference from Composio catalog",
+    "Negated MCP or client-only source is not counted as vendor-server proof"
+  ]
+}

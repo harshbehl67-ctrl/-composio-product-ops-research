@@ -1,0 +1,221 @@
+{
+  "app": {
+    "number": 21,
+    "name": "Slack",
+    "category": "Communications and Messaging",
+    "hint": "slack.com"
+  },
+  "checked_at": "2026-11-23T18:15:02.813589+00:00",
+  "prior_source": "data/pass2/021.json",
+  "search_source": "data/pass4_search/021.json",
+  "new_candidates": [
+    {
+      "url": "https://docs.slack.dev/apis/web-api/",
+      "title": "Slack Web API | Slack Developer Docs (https://docs.slack.dev/apis/web-api/)",
+      "published_label": null
+    },
+    {
+      "url": "https://docs.slack.dev/apis/",
+      "title": "Slack APIs | Slack Developer Docs (https://docs.slack.dev/apis/)",
+      "published_label": null
+    },
+    {
+      "url": "https://docs.slack.dev/authentication/",
+      "title": "Authentication overview | Slack Developer Docs (https://docs.slack.dev/authentication/)",
+      "published_label": null
+    },
+    {
+      "url": "https://docs.slack.dev/tools/slack-cli/reference/commands/slack_api/",
+      "title": "slack api | Slack Developer Docs (https://docs.slack.dev/tools/slack-cli/reference/commands/slack_api/)",
+      "published_label": null
+    },
+    {
+      "url": "https://docs.slack.dev/tools/node-slack-sdk/web-api/",
+      "title": "Web API | Slack Developer Docs (https://docs.slack.dev/tools/node-slack-sdk/web-api/)",
+      "published_label": null
+    },
+    {
+      "url": "https://slack.com/help/articles/1500003875981-Manage-your-Enterprise-organization-with-APIs",
+      "title": "Manage your Enterprise organization with APIs | Slack (https://slack.com/help/articles/1500003875981-Manage-your-Enterprise-organization-with-APIs)",
+      "published_label": null
+    },
+    {
+      "url": "https://slack.com/terms/api",
+      "title": "Slack API Terms of Service | Legal | Slack (https://slack.com/terms/api)",
+      "published_label": "1.1 years ago"
+    },
+    {
+      "url": "https://docs.slack.dev/apis/web-api/using-web-api-with-postman/",
+      "title": "Using the Web API with Postman | Slack Developer Docs (https://docs.slack.dev/apis/web-api/using-web-api-with-postman/)",
+      "published_label": null
+    },
+    {
+      "url": "https://docs.slack.dev/authentication/authorizing-with-postman",
+      "title": "Authorizing with Postman | Slack Developer Docs (https://docs.slack.dev/authentication/authorizing-with-postman)",
+      "published_label": null
+    },
+    {
+      "url": "https://docs.slack.dev/authentication/authorizing-with-postman/",
+      "title": "Authorizing with Postman | Slack Developer Docs (https://docs.slack.dev/authentication/authorizing-with-postman/)",
+      "published_label": null
+    },
+    {
+      "url": "https://docs.slack.dev/tools/developer-sandboxes",
+      "title": "Developer sandboxes | Slack Developer Docs (https://docs.slack.dev/tools/developer-sandboxes)",
+      "published_label": null
+    }
+  ],
+  "selected": [
+    {
+      "url": "https://docs.slack.dev/authentication/",
+      "title": "Authentication overview | Slack Developer Docs (https://docs.slack.dev/authentication/)",
+      "published_label": null
+    },
+    {
+      "url": "https://docs.slack.dev/apis/web-api/",
+      "title": "Slack Web API | Slack Developer Docs (https://docs.slack.dev/apis/web-api/)",
+      "published_label": null
+    }
+  ],
+  "new_pages": [
+    {
+      "url": "https://docs.slack.dev/authentication/",
+      "requested_url": "https://docs.slack.dev/authentication/",
+      "status": 200,
+      "title": "Authentication overview | Slack Developer Docs (https://docs.slack.dev/authentication/)",
+      "text": "Authentication overview | Slack Developer Docs guide Skip to main content Copy as markdown On this page Authentication is a critical part of the development process, but it doesn’t have to be daunting. With the right tools and best practices, you’ll have a secure, smooth authentication flow. Whether you’re handling OAuth 2.0 , verifying requests , or setting up Sign in with Slack , we’ve got you covered. Authentication basics ​ Before your app can access Slack data or interact with Slack workspaces, it must go through an authentication process. This involves obtaining the necessary tokens and permissions for your app to function properly. Slack apps use OAuth scopes to govern what they can access. These are added in the app settings when building an app. You will attach these scopes to your tokens. Check out tokens to learn more. You can rotate those tokens too! Find out how on the Using token rotation page. Key concepts ​ OAuth 2.0 : Learn how to use OAuth 2.0 to securely authenticate users and request access tokens. Tokens : Understand the different types of tokens your app can use (user tokens, bot tokens, and app tokens) and how to manage them, as well as employ token rotation and expiry to keep things fresh. Security best practices : Learn about security practices for managing authentication, such as validating tokens, handling sensitive data, and protecting your app from unauthorized access. Reference ​ Scopes and Permissions : Find the right permissions for your app to ensure access is limited to only the necessary data. Copy as markdown Authentication basics Key concepts Reference",
+      "published_label": null
+    },
+    {
+      "url": "https://docs.slack.dev/apis/web-api/",
+      "requested_url": "https://docs.slack.dev/apis/web-api/",
+      "status": 200,
+      "title": "Slack Web API | Slack Developer Docs (https://docs.slack.dev/apis/web-api/)",
+      "text": "Slack Web API | Slack Developer Docs guide Skip to main content Copy as markdown On this page The Slack Web API is an interface for querying information from and enacting change in a Slack workspace. Use it for individual queries, or as part of a more complex tapestry of platform features in a Slack app. Web API methods Basic overview ​ The Web API is a collection of HTTP RPC-style methods , all with URLs in the form https://slack.com/api/METHOD_FAMILY.method . While it's not a REST API, those familiar with REST should be at home with its foundations in HTTP. Use HTTPS, SSL, and TLS v1.2 or above when calling all methods. Learn more about our SSL and TLS requirements . Each method has a series of arguments informing the execution of your intentions. Pass arguments as: GET querystring parameters, POST parameters presented as application/x-www-form-urlencoded , or a mix of both GET and POST parameters Don't send a request body with GET or HEAD requests. Starting February 17th, 2027, these requests return an HTTP 400 error (HTTP 403 once enforced at the CloudFront edge). Learn more in the changelog entry . Most write methods allow arguments with application/json attributes. Some methods, such as chat.postMessage and dialog.open , feature arguments that accept an associative JSON array. However, these methods can be difficult to properly construct when using a application/x-www-form-urlencoded Content-type, so we strongly recommend using JSON-encoded bodies instead. POST bodies ​ When sending a HTTP POST, you may present your arguments as either standard POST parameters, or you may use JSON instead. URL-encoded bodies ​ When sending URL-encoded data, set your HTTP Content-type header to application/x-www-form-urlencoded and present your key/value pairs according to RFC-3986 . For example, a POST request to the conversations.create method might look something like this: POST /api/conversations.create Content-type: application/x-www-form-urlencoded token=xoxp-xxxxxxxxx-xxxx&name=something-urgent JSON-encoded bodies ​ For write methods that support JSON , you may alternatively send your HTTP POST data as Content-type: application/json . There are some ground rules: You must explicitly set the Content-type HTTP header to application/json . We won't interpret your POST body as such without it. You must transmit your token as a bearer token in the Authorization HTTP header. You cannot send your token as part of the query string or as an attribute in your posted JSON. Do not mix arguments between query string, URL-encoded POST body, and JSON attributes. Choose one approach per request. Providing an explicitly null value for an attribute will result in whichever default behavior is assigned to it. For example, to send the same request above to the conversations.create method with a JSON POST body, send something like this: POST /api/conversations.create Content-type: application/json Authorization: Bearer xoxp-xxxxxxxxx-xxxx {\"name\":\"something-urgent\"} Note how we present the token with the string Bearer pre-pended to it, indicating the OAuth 2.0 authentication scheme. Consult your favorite HTTP tool or library's manual for further detail on setting HTTP headers. Here's a more complicated example — posting a message with menus using chat.postMessage : POST /api/chat.postMessage Content-type: application/json Authorization: Bearer xoxp-xxxxxxxxx-xxxx {\"channel\":\"C123ABC456\",\"text\":\"I hope the tour went well, Mr. Wonka.\",\"attachments\":[{\"text\":\"Who wins the lifetime supply of chocolate?\",\"fallback\":\"You could be telling the computer exactly what it can do with a lifetime supply of chocolate.\",\"color\":\"#3AA3E3\",\"attachment_type\":\"default\",\"callback_id\":\"select_simple_1234\",\"actions\":[{\"name\":\"winners_list\",\"text\":\"Who should win?\",\"type\":\"select\",\"data_source\":\"users\"}]}]} The attachments argument is sent a straightforward JSON array. Here's how to do that with cURL : curl -X POST -H 'Authorization: Bearer xoxb-1234-56789abcdefghijklmnop' \\ -H 'Content-type: application/json' \\ --data '{\"channel\":\"C123ABC456\",\"text\":\"I hope the tour went well, Mr. Wonka.\",\"attachments\": [{\"text\":\"Who wins the lifetime supply of chocolate?\",\"fallback\":\"You could be telling the computer exactly what it can do with a lifetime supply of chocolate.\",\"color\":\"#3AA3E3\",\"attachment_type\":\"default\",\"callback_id\":\"select_simple_1234\",\"actions\":[{\"name\":\"winners_list\",\"text\":\"Who should win?\",\"type\":\"select\",\"data_source\":\"users\"}]}]}' \\ https://slack.com/api/chat.postMessage< Errors specific to passing JSON ​ If the posted JSON is invalid, you'll receive one of the following errors in response: invalid_json : The JSON you've included in your POST body cannot be parsed. This might be because it's actually not JSON, or perhaps you did not correctly set your HTTP Content-type header. Ensure your JSON attribute keys are strings wrapped with double-quote ( \" ) characters. json_not_object : We could understand that your code was JSON-like enough to parse it, but it's not actually a JSON hash of attribute key/value pairs. Perhaps you sent us an array, or just a string or a number. In both cases, you'll need to revise your JSON or how you're transmitting your data to resolve the error condition. Evaluating responses ​ All Web API responses contain a JSON object, which will always contain a top-level boolean property ok that indicates success or failure. For failure results, the error property will contain a short machine-readable error code. In the case of problematic calls that could still be completed successfully, ok will be true and the warning property will contain a short machine-readable warning code (or comma-separated list of them, in the case of multiple warnings). See the following examples: { \"ok\" : true , \"stuff\" : \"This is good\" } { \"ok\" : false , \"error\" : \"something_bad\" } { \"ok\" : true , \"warning\" : \"something_problematic\" , \"stuff\" : \"Your requested information\" } Other properties are defined in the documentation for each relevant method. There's a lot of \"stuff\" to unpack, including these types and other method or domain-specific curiosities. Authentication ​ Authenticate your Web API requests by providing a bearer token , which identifies a single user or bot user relationship. Register your application with Slack to obtain credentials for use with our OAuth 2.0 implementation, which allows you to negotiate tokens on behalf of users and workspaces. We prefer tokens to be sent in the Authorization HTTP header of your outbound requests. However, you may also pass tokens in all Web API calls as a POST body parameter called token . Tokens cannot be sent as a query parameter. Treat tokens with care Never share tokens with other users or applications. Do not publish tokens in public code repositories. Review token safety tips . HTTPS, SSL, and TLS ​ Slack requires HTTPS, SSL, and TLS v1.2 or above. The platform and the Web API are governed by the same rules. Learn more about our deprecation of early TLS versions . Stay safe and secure. All TLS connections must use the SNI extension . Lastly, TLS connections must support at least one of the following cipher suites: TLS 1.2: ECDHE-RSA-AES128-GCM-SHA256 ECDHE-RSA-CHACHA20-POLY1305 ECDHE-RSA-AES256-GCM-SHA384 TLS 1.3: TLS_AES_128_GCM_SHA256 TLS_AES_256_GCM_SHA384 TLS_CHACHA20_POLY1305_SHA256 Slack uses certificates issued by publicly trusted certificate authorities, including DigiCert, Let's Encrypt, and Amazon Trust Services. These certificates can be rotated or reissued by a different authority at any time without notice, and Slack doesn't support pinning certificates, intermediates, or certificate authorities. Rely on the default system trust store instead, so that a certificate rotation doesn't interrupt your app. Methods ​ With over 200 methods, surely there's one right for you. You can find them all in the reference , where you can filter by method family. Copy as markdown Basic overview POST bodies Evaluating responses Authentication HTTPS, SSL, and TLS Methods",
+      "published_label": null
+    }
+  ],
+  "claims": {
+    "auth": {
+      "value": [
+        "OAuth 2.0",
+        "API token",
+        "Basic authentication (OAuth client or endpoint-specific)"
+      ],
+      "sources": [
+        "https://docs.slack.dev/authentication/installing-with-oauth/",
+        "https://docs.slack.dev/reference/methods/oauth.access/",
+        "https://docs.slack.dev/authentication/"
+      ],
+      "evidence": [
+        {
+          "value": "OAuth 2.0",
+          "url": "https://docs.slack.dev/authentication/installing-with-oauth/",
+          "excerpt": "er Docs guide Skip to main content Copy as markdown On this page Slack apps are installed with a v2 OAuth 2.0 flow. Your app can act with its own identity instead of acting on behalf of users, without requesting excessive permissions that could cause installations to be rejected. OAuth 2.",
+          "published_label": null
+        },
+        {
+          "value": "API token",
+          "url": "https://docs.slack.dev/reference/methods/oauth.access/",
+          "excerpt": "or granular permissions Slack apps This method allows you to exchange a temporary OAuth code for an API access token. This is the third step of the OAuth authentication flow . We strongly recommend supplying the Client ID and Client Secret using the HTTP Basic authentication scheme, as discussed",
+          "published_label": null
+        },
+        {
+          "value": "Basic authentication (OAuth client or endpoint-specific)",
+          "url": "https://docs.slack.dev/reference/methods/oauth.access/",
+          "excerpt": "ret as parameters in your request and instead supply the Client ID and Client Secret using the HTTP Basic authentication scheme. Example: 2141029472.691202649728 client_secret string Optional Issued when you created your application. If possible, avoid sending client_id and client_secret as paramete",
+          "published_label": null
+        },
+        {
+          "value": "OAuth 2.0",
+          "url": "https://docs.slack.dev/authentication/",
+          "excerpt": "tools and best practices, you’ll have a secure, smooth authentication flow. Whether you’re handling OAuth 2.0 , verifying requests , or setting up Sign in with Slack , we’ve got you covered. Authentication basics ​ Before your app can access Slack data or interact with Slack workspaces, i",
+          "published_label": null
+        }
+      ],
+      "reason": "Provisional extraction: validate scope and completeness against the cited page."
+    },
+    "credential_gate": {
+      "value": "unknown",
+      "sources": [],
+      "evidence": [],
+      "reason": "No sufficiently specific positive evidence extracted; review targeted search results."
+    },
+    "api_surface": {
+      "value": [
+        "REST"
+      ],
+      "sources": [
+        "https://docs.slack.dev/apis/web-api/"
+      ],
+      "evidence": [
+        {
+          "value": "REST",
+          "url": "https://docs.slack.dev/apis/web-api/",
+          "excerpt": "e methods , all with URLs in the form https://slack.com/api/METHOD_FAMILY.method . While it's not a REST API, those familiar with REST should be at home with its foundations in HTTP. Use HTTPS, SSL, and TLS v1.2 or above when calling all methods. Learn more about our SSL and TLS requirem",
+          "published_label": null
+        }
+      ],
+      "reason": "Provisional extraction: validate scope and completeness against the cited page."
+    },
+    "official_mcp": {
+      "value": "yes (provisional)",
+      "sources": [
+        "https://docs.slack.dev/changelog/2026/02/17/slack-mcp/",
+        "https://slack.com/intl/en-in/help/articles/48855576908307-Guide-to-MCP-in-Slack",
+        "https://slack.com/intl/en-gb/help/articles/48855576908307-Guide-to-MCP-in-Slack",
+        "https://docs.slack.dev/ai/slack-mcp-server/"
+      ],
+      "evidence": [
+        {
+          "value": "yes (provisional)",
+          "url": "https://docs.slack.dev/changelog/2026/02/17/slack-mcp/",
+          "excerpt": "Announcing the Slack MCP server and Real-time Search API | Slack Developer Docs changelog Skip to main content We're excited to announce the release of not one, but two , major components des",
+          "published_label": null,
+          "context_warning": "Review vendor ownership, dates, and scope."
+        },
+        {
+          "value": "yes (provisional)",
+          "url": "https://slack.com/intl/en-in/help/articles/48855576908307-Guide-to-MCP-in-Slack",
+          "excerpt": "ork for connecting AI applications with other software systems. You can use the Slack MCP server to connect AI tools to Slack, or set Slackbot up as an MCP client so that it can take actions in other apps. How MCP works in Slack The Slack MCP server provid",
+          "published_label": null,
+          "context_warning": "Review vendor ownership, dates, and scope."
+        },
+        {
+          "value": "yes (provisional)",
+          "url": "https://slack.com/intl/en-gb/help/articles/48855576908307-Guide-to-MCP-in-Slack",
+          "excerpt": "ork for connecting AI applications with other software systems. You can use the Slack MCP server to connect AI tools to Slack, or set Slackbot up as an MCP client so that it can take actions in other apps. How MCP works in Slack The Slack MCP server provid",
+          "published_label": null,
+          "context_warning": "Review vendor ownership, dates, and scope."
+        },
+        {
+          "value": "yes (provisional)",
+          "url": "https://docs.slack.dev/ai/slack-mcp-server/",
+          "excerpt": "eveloper Docs guide Skip to main content Copy as markdown On this page With the Slack MCP server, your integrated apps can search channels, send messages, and perform other Slack actions through MCP clients. Workspace admins can approve and manage all MCP ",
+          "published_label": null,
+          "context_warning": "Review vendor ownership, dates, and scope."
+        }
+      ],
+      "reason": "Provisional; check source date, scope, and vendor ownership."
+    },
+    "composio_toolkit": {
+      "value": "listed",
+      "sources": [
+        "https://docs.composio.dev/toolkits/slack"
+      ],
+      "evidence": [],
+      "reason": "Catalog match; scope needs review."
+    },
+    "verdict": {
+      "value": "unknown",
+      "sources": [],
+      "evidence": [],
+      "reason": "A supported access path, authentication method and API surface were not all extracted."
+    }
+  },
+  "validation": [
+    "All claims are provisional",
+    "No vendor MCP inference from Composio catalog",
+    "Negated MCP or client-only source is not counted as vendor-server proof"
+  ]
+}

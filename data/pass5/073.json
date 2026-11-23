@@ -1,0 +1,147 @@
+{
+  "app": {
+    "number": 73,
+    "name": "Linear",
+    "category": "Productivity and Project Management",
+    "hint": "developers.linear.app"
+  },
+  "replayed_at": "2026-11-23T18:16:39.254014+00:00",
+  "source_passes": [
+    "data/pass2/073.json",
+    "data/pass4/073.json"
+  ],
+  "source_search": "data/new_search/073.json",
+  "publication_date_note": "Published labels are retained exactly as supplied by search; missing labels are null. Relative labels must not be treated as exact publication dates.",
+  "claims": {
+    "auth": {
+      "value": [
+        "OAuth 2.0",
+        "API token",
+        "Basic authentication (OAuth client or endpoint-specific)"
+      ],
+      "sources": [
+        "https://linear.app/developers/oauth-2-0-authentication"
+      ],
+      "evidence": [
+        {
+          "value": "OAuth 2.0",
+          "url": "https://linear.app/developers/oauth-2-0-authentication",
+          "excerpt": "Skip to content → OAuth 2.0 authentication Linear supports OAuth2 authentication, which is recommended if you’re building applications to integrate with Linear. It is highly recommended you create a workspac",
+          "published_label": null
+        },
+        {
+          "value": "API token",
+          "url": "https://linear.app/developers/oauth-2-0-authentication",
+          "excerpt": "1.1 Exchange code for an access token ⁠ After receiving the code , you can exchange it for a Linear API access token: POST https://api.linear.app/oauth/token HTTP/1.1 Pass parameters in body as URL-encoded form submission , where the Content-Type header must be application/x-www-form-urlencoded ",
+          "published_label": null
+        },
+        {
+          "value": "Basic authentication (OAuth client or endpoint-specific)",
+          "url": "https://linear.app/developers/oauth-2-0-authentication",
+          "excerpt": "ires or is revoked, complete authorization again. For authorization, you have two options: Use HTTP basic authentication by passing a Base64-encoded client_id:client_secret string as an authorization header: Authorization: Basic <base64(client_id:client_secret)> Pass client_id and client_secret as p",
+          "published_label": null
+        }
+      ],
+      "reason": "Provisional extraction: validate scope and completeness against the cited page."
+    },
+    "credential_gate": {
+      "value": "unknown",
+      "sources": [],
+      "evidence": [],
+      "reason": "No sufficiently specific positive evidence extracted; review targeted search results."
+    },
+    "api_surface": {
+      "value": [
+        "GraphQL"
+      ],
+      "sources": [
+        "https://linear.app/developers/oauth-2-0-authentication",
+        "https://linear.app/docs/api-and-webhooks?noRedirect=1"
+      ],
+      "evidence": [
+        {
+          "value": "GraphQL",
+          "url": "https://linear.app/developers/oauth-2-0-authentication",
+          "excerpt": "ke an API request ⁠ Once you have obtained a valid access token, you can make a request to Linear’s GraphQL API. You can initialize the Linear Client with the access token: const client = new LinearClient({ accessToken: response.access_token })\nconst me = await client.viewer Or pass the tok",
+          "published_label": null
+        },
+        {
+          "value": "GraphQL",
+          "url": "https://linear.app/docs/api-and-webhooks?noRedirect=1",
+          "excerpt": "Skip to content → API and Webhooks Linear’s GraphQL API and webhooks lets you extend Linear’s functionality beyond what we provide out of the box. Overview ⁠ Linear’s public API is built using GraphQL. It’s the same API we use internal",
+          "published_label": null
+        }
+      ],
+      "reason": "Provisional extraction: validate scope and completeness against the cited page."
+    },
+    "official_mcp": {
+      "value": "yes (provisional)",
+      "sources": [
+        "https://linear.app/docs/mcp",
+        "https://linear.app/docs/mcp?_bhiiv=opp_7ac3aca5-17a9-4fa5-bbbc-ed1e29d3fb7f_45a6ac79&bhcl_id=c12aa583-53e2-486a-bded-dea27921063f_SUBSCRIBER_ID_%2525252525252525257B%2525252525252525257Bemail_address_id%2525252525252525257D%2525252525252525257D&newsletter=the_prohuman",
+        "https://linear.app/docs/mcp?4c18c78a_page=3&ef207e20_page=2",
+        "https://linear.app/changelog/2025-05-01-mcp",
+        "https://linear.app/integrations/vs-code-mcp"
+      ],
+      "evidence": [
+        {
+          "value": "yes (provisional)",
+          "url": "https://linear.app/docs/mcp",
+          "excerpt": "MCP server – Linear Docs Skip to content → MCP server The Model Context Protocol (MCP) server provides a standardized interface that allows any compatible AI model or agent to access your Linear data in a simple a",
+          "published_label": null,
+          "context_warning": "Review vendor ownership, dates, and scope."
+        },
+        {
+          "value": "yes (provisional)",
+          "url": "https://linear.app/docs/mcp?_bhiiv=opp_7ac3aca5-17a9-4fa5-bbbc-ed1e29d3fb7f_45a6ac79&bhcl_id=c12aa583-53e2-486a-bded-dea27921063f_SUBSCRIBER_ID_%2525252525252525257B%2525252525252525257Bemail_address_id%2525252525252525257D%2525252525252525257D&newsletter=the_prohuman",
+          "excerpt": "MCP server – Linear Docs Skip to content → MCP server The Model Context Protocol (MCP) server provides a standardized interface that allows any compatible AI model or agent to access your Linear data in a simple a",
+          "published_label": null,
+          "context_warning": "Review vendor ownership, dates, and scope."
+        },
+        {
+          "value": "yes (provisional)",
+          "url": "https://linear.app/docs/mcp?4c18c78a_page=3&ef207e20_page=2",
+          "excerpt": "MCP server – Linear Docs Skip to content → MCP server The Model Context Protocol (MCP) server provides a standardized interface that allows any compatible AI model or agent to access your Linear data in a simple a",
+          "published_label": null,
+          "context_warning": "Review vendor ownership, dates, and scope."
+        },
+        {
+          "value": "yes (provisional)",
+          "url": "https://linear.app/changelog/2025-05-01-mcp",
+          "excerpt": "Linear MCP server – Changelog Skip to content → Changelog May 1, 2025 Share Linear MCP server ⁠ Your AI models and agents can use our official MCP server to access your Linear d",
+          "published_label": "1.6 years ago",
+          "context_warning": "Review vendor ownership, dates, and scope."
+        },
+        {
+          "value": "yes (provisional)",
+          "url": "https://linear.app/integrations/vs-code-mcp",
+          "excerpt": "ar Skip to content → Integrations Visual Studio Code MCP Connect VS Code to the Linear MCP server Overview ⁠ With the official MCP extension (or any agent toolkit), VS Code users can wire Linear into their AI workflows—letting prompts open issues or pull ba",
+          "published_label": null,
+          "context_warning": "Review vendor ownership, dates, and scope."
+        }
+      ],
+      "reason": "Provisional; check source date, scope, and vendor ownership."
+    },
+    "composio_toolkit": {
+      "value": "listed",
+      "sources": [
+        "https://docs.composio.dev/toolkits/linear"
+      ],
+      "evidence": [],
+      "reason": "Catalog match; scope needs review."
+    },
+    "verdict": {
+      "value": "unknown",
+      "sources": [],
+      "evidence": [],
+      "reason": "A supported access path, authentication method and API surface were not all extracted."
+    }
+  },
+  "validation": [
+    "Automatic extraction is provisional and not a verified final claim",
+    "Unknown is not evidence of absence",
+    "No Composio-to-vendor-MCP inference",
+    "Basic authentication may be endpoint-specific",
+    "Client-only and negated statements are not positive MCP evidence"
+  ]
+}

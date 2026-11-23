@@ -1,0 +1,1021 @@
+{
+  "checked_at": "2026-11-24",
+  "method": "Headless Chromium rendered body innerText; no raw HTML or credentials.",
+  "audit_summary": {
+    "flagged_uses": 134,
+    "keep": 112,
+    "unresolved": 22,
+    "note": "Only rendered visible-text matches were kept; unmatched uses remain in the final review queue. The later SendGrid review removed the broken 404 citation, so its earlier rendered-404 keep was superseded."
+  },
+  "actions": [
+    {
+      "app": "Aircall",
+      "field": "credential_gate",
+      "decision": "keep",
+      "old_url": "https://aircall.io/pricing/",
+      "old_quote": "All plans include API access and 250+ integrations. Aircall also offers an open API and webhook framework for custom integrations.",
+      "verification_method": "headless Chromium rendered body innerText (installed Chrome; no raw HTML)",
+      "review_note": "The rendered official page reproduced the normalized quotation. Direct HTTP retrieval missed JavaScript-rendered, redirect-sensitive, or charset-sensitive content; no search snippet or hidden raw HTML was used."
+    },
+    {
+      "app": "Aircall",
+      "field": "credential_gate",
+      "decision": "keep",
+      "old_url": "https://aircall.io/pricing/",
+      "old_quote": "All plans require a minimum of 3 licenses regardless of billing cycle.",
+      "verification_method": "headless Chromium rendered body innerText (installed Chrome; no raw HTML)",
+      "review_note": "The rendered official page reproduced the normalized quotation. Direct HTTP retrieval missed JavaScript-rendered, redirect-sensitive, or charset-sensitive content; no search snippet or hidden raw HTML was used."
+    },
+    {
+      "app": "Aircall",
+      "field": "verdict",
+      "decision": "keep",
+      "old_url": "https://aircall.io/pricing/",
+      "old_quote": "All plans include API access and 250+ integrations. Aircall also offers an open API and webhook framework for custom integrations.",
+      "verification_method": "headless Chromium rendered body innerText (installed Chrome; no raw HTML)",
+      "review_note": "The rendered official page reproduced the normalized quotation. Direct HTTP retrieval missed JavaScript-rendered, redirect-sensitive, or charset-sensitive content; no search snippet or hidden raw HTML was used."
+    },
+    {
+      "app": "Aircall",
+      "field": "verdict",
+      "decision": "keep",
+      "old_url": "https://aircall.io/pricing/",
+      "old_quote": "All plans require a minimum of 3 licenses regardless of billing cycle.",
+      "verification_method": "headless Chromium rendered body innerText (installed Chrome; no raw HTML)",
+      "review_note": "The rendered official page reproduced the normalized quotation. Direct HTTP retrieval missed JavaScript-rendered, redirect-sensitive, or charset-sensitive content; no search snippet or hidden raw HTML was used."
+    },
+    {
+      "app": "fanbasis",
+      "field": "official_mcp",
+      "decision": "keep",
+      "old_url": "https://commas.com/",
+      "old_quote": "MCP beta Run Commas from your AI assistant. Create checkout links, issue refunds and pull your numbers in plain English.",
+      "verification_method": "headless Chromium rendered body innerText (installed Chrome; no raw HTML)",
+      "review_note": "The rendered official page reproduced the normalized quotation. Direct HTTP retrieval missed JavaScript-rendered, redirect-sensitive, or charset-sensitive content; no search snippet or hidden raw HTML was used."
+    },
+    {
+      "app": "Salesforce Commerce Cloud",
+      "field": "auth",
+      "decision": "keep",
+      "old_url": "https://developer.salesforce.com/docs/commerce/commerce-api/guide/authorization-for-admin-apis.html",
+      "old_quote": "Note that only the client_credentials grant type is supported for accessing SCAPI Admin APIs.",
+      "verification_method": "headless Chromium rendered body innerText (installed Chrome; no raw HTML)",
+      "review_note": "The rendered official page reproduced the normalized quotation. Direct HTTP retrieval missed JavaScript-rendered, redirect-sensitive, or charset-sensitive content; no search snippet or hidden raw HTML was used."
+    },
+    {
+      "app": "Salesforce Commerce Cloud",
+      "field": "credential_gate",
+      "decision": "keep",
+      "old_url": "https://developer.salesforce.com/docs/commerce/commerce-api/guide/authorization-for-admin-apis.html",
+      "old_quote": "To use the SCAPI Admin APIs, you (or someone with administrator access) must first create an API client by following these steps:",
+      "verification_method": "headless Chromium rendered body innerText (installed Chrome; no raw HTML)",
+      "review_note": "The rendered official page reproduced the normalized quotation. Direct HTTP retrieval missed JavaScript-rendered, redirect-sensitive, or charset-sensitive content; no search snippet or hidden raw HTML was used."
+    },
+    {
+      "app": "Salesforce Commerce Cloud",
+      "field": "api_surface",
+      "decision": "keep",
+      "old_url": "https://developer.salesforce.com/docs/commerce/commerce-api/guide/authorization-for-admin-apis.html",
+      "old_quote": "With an access token from Account Manager (and the correct scopes), access any of the SCAPI Admin APIs, including:",
+      "verification_method": "headless Chromium rendered body innerText (installed Chrome; no raw HTML)",
+      "review_note": "The rendered official page reproduced the normalized quotation. Direct HTTP retrieval missed JavaScript-rendered, redirect-sensitive, or charset-sensitive content; no search snippet or hidden raw HTML was used."
+    },
+    {
+      "app": "Salesforce Commerce Cloud",
+      "field": "verdict",
+      "decision": "keep",
+      "old_url": "https://developer.salesforce.com/docs/commerce/commerce-api/guide/authorization-for-admin-apis.html",
+      "old_quote": "To use the SCAPI Admin APIs, you (or someone with administrator access) must first create an API client by following these steps:",
+      "verification_method": "headless Chromium rendered body innerText (installed Chrome; no raw HTML)",
+      "review_note": "The rendered official page reproduced the normalized quotation. Direct HTTP retrieval missed JavaScript-rendered, redirect-sensitive, or charset-sensitive content; no search snippet or hidden raw HTML was used."
+    },
+    {
+      "app": "Salesforce Commerce Cloud",
+      "field": "verdict",
+      "decision": "keep",
+      "old_url": "https://developer.salesforce.com/docs/commerce/commerce-api/guide/authorization-for-admin-apis.html",
+      "old_quote": "With an access token from Account Manager (and the correct scopes), access any of the SCAPI Admin APIs, including:",
+      "verification_method": "headless Chromium rendered body innerText (installed Chrome; no raw HTML)",
+      "review_note": "The rendered official page reproduced the normalized quotation. Direct HTTP retrieval missed JavaScript-rendered, redirect-sensitive, or charset-sensitive content; no search snippet or hidden raw HTML was used."
+    },
+    {
+      "app": "Salesforce Commerce Cloud",
+      "field": "auth",
+      "decision": "keep",
+      "old_url": "https://developer.salesforce.com/docs/commerce/commerce-api/guide/authorization-for-shopper-apis.html",
+      "old_quote": "Shopper APIs are secured with the Shopper Login and API Access Service (SLAS), but SCAPI Admin APIs are secured with Account Manager (AM) instead.",
+      "verification_method": "headless Chromium rendered body innerText (installed Chrome; no raw HTML)",
+      "review_note": "The rendered official page reproduced the normalized quotation. Direct HTTP retrieval missed JavaScript-rendered, redirect-sensitive, or charset-sensitive content; no search snippet or hidden raw HTML was used."
+    },
+    {
+      "app": "Salesforce Commerce Cloud",
+      "field": "auth",
+      "decision": "keep",
+      "old_url": "https://developer.salesforce.com/docs/commerce/commerce-api/guide/authorization-for-shopper-apis.html",
+      "old_quote": "Choosing PWA Kit or SFRA or Mobile creates a public client (no secret generated). Choosing BFF or Web App creates a private client (secret generated automatically).",
+      "verification_method": "headless Chromium rendered body innerText (installed Chrome; no raw HTML)",
+      "review_note": "The rendered official page reproduced the normalized quotation. Direct HTTP retrieval missed JavaScript-rendered, redirect-sensitive, or charset-sensitive content; no search snippet or hidden raw HTML was used."
+    },
+    {
+      "app": "Salesforce Commerce Cloud",
+      "field": "credential_gate",
+      "decision": "keep",
+      "old_url": "https://developer.salesforce.com/docs/commerce/commerce-api/guide/authorization-for-shopper-apis.html",
+      "old_quote": "The Account Administrator role in Account Manager. If you get stuck, ask an administrator on your team for help or contact Support.",
+      "verification_method": "headless Chromium rendered body innerText (installed Chrome; no raw HTML)",
+      "review_note": "The rendered official page reproduced the normalized quotation. Direct HTTP retrieval missed JavaScript-rendered, redirect-sensitive, or charset-sensitive content; no search snippet or hidden raw HTML was used."
+    },
+    {
+      "app": "Salesforce Commerce Cloud",
+      "field": "official_mcp",
+      "decision": "keep",
+      "old_url": "https://developer.salesforce.com/docs/commerce/sfra/guide/b2c-developer-tooling.html",
+      "old_quote": "B2C MCP: Connect your assistant to B2C Commerce tools, official documentation search, and workflow skills. Investigate issues, debug live cartridge code, or work with B2C Commerce data through SCAPI Admin APIs.",
+      "verification_method": "headless Chromium rendered body innerText (installed Chrome; no raw HTML)",
+      "review_note": "The rendered official page reproduced the normalized quotation. Direct HTTP retrieval missed JavaScript-rendered, redirect-sensitive, or charset-sensitive content; no search snippet or hidden raw HTML was used."
+    },
+    {
+      "app": "Salesforce Commerce Cloud",
+      "field": "official_mcp",
+      "decision": "keep",
+      "old_url": "https://developer.salesforce.com/docs/commerce/sfra/guide/b2c-developer-tooling.html",
+      "old_quote": "For clients that require manual MCP configuration, use npx with arguments --yes @salesforce/b2c-dx-mcp as the local server command.",
+      "verification_method": "headless Chromium rendered body innerText (installed Chrome; no raw HTML)",
+      "review_note": "The rendered official page reproduced the normalized quotation. Direct HTTP retrieval missed JavaScript-rendered, redirect-sensitive, or charset-sensitive content; no search snippet or hidden raw HTML was used."
+    },
+    {
+      "app": "Vonage",
+      "field": "api_surface",
+      "decision": "keep",
+      "old_url": "https://developer.vonage.com/en/messages/overview",
+      "old_quote": "The Vonage Messages API integrates with SMS, MMS, RCS, WhatsApp, Messenger, Viber, and Email allowing you to communicate with your customers on the channels they like.",
+      "verification_method": "headless Chromium rendered body innerText (installed Chrome; no raw HTML)",
+      "review_note": "The rendered official page reproduced the normalized quotation. Direct HTTP retrieval missed JavaScript-rendered, redirect-sensitive, or charset-sensitive content; no search snippet or hidden raw HTML was used."
+    },
+    {
+      "app": "Xero",
+      "field": "auth",
+      "decision": "keep",
+      "old_url": "https://developer.xero.com/faq",
+      "old_quote": "The Xero API does not support basic API Key authentication. Our API uses OAuth 2.0 which means you need to register your app to get a client id and client secret which you use to access the API.",
+      "verification_method": "headless Chromium rendered body innerText (installed Chrome; no raw HTML)",
+      "review_note": "The rendered official page reproduced the normalized quotation. Direct HTTP retrieval missed JavaScript-rendered, redirect-sensitive, or charset-sensitive content; no search snippet or hidden raw HTML was used."
+    },
+    {
+      "app": "Xero",
+      "field": "auth",
+      "decision": "keep",
+      "old_url": "https://developer.xero.com/faq",
+      "old_quote": "No, we've implemented short-lived tokens with long-lived authorizations as is best practice for OAuth 2.0. All Xero access tokens expire after 30 minutes. Refresh tokens allow your app to obtain new access tokens without involving a user again. Alternatively, if you'd prefer not to have to manage a refresh token, you might be interested in the premium, Custom Connection option. It utilises the client credentials grant type and only requires your client id and client secret to request new access tokens.",
+      "verification_method": "headless Chromium rendered body innerText (installed Chrome; no raw HTML)",
+      "review_note": "The rendered official page reproduced the normalized quotation. Direct HTTP retrieval missed JavaScript-rendered, redirect-sensitive, or charset-sensitive content; no search snippet or hidden raw HTML was used."
+    },
+    {
+      "app": "Xero",
+      "field": "api_surface",
+      "decision": "keep",
+      "old_url": "https://developer.xero.com/faq",
+      "old_quote": "We've got SDKs to cover the most used technologies in the community, but we'll never cater for everyone. If we don't support your particular tech then check out our developer forum archive , or connect with other developers on Stack Overflow . You can also use our OpenAPI spec to generate your own SDK.",
+      "verification_method": "headless Chromium rendered body innerText (installed Chrome; no raw HTML)",
+      "review_note": "The rendered official page reproduced the normalized quotation. Direct HTTP retrieval missed JavaScript-rendered, redirect-sensitive, or charset-sensitive content; no search snippet or hidden raw HTML was used."
+    },
+    {
+      "app": "Xero",
+      "field": "api_surface",
+      "decision": "keep",
+      "old_url": "https://developer.xero.com/faq",
+      "old_quote": "You can do more than one thing in a single request: For example, you can create more than one Invoice in a single PUT or POST Invoices API call.",
+      "verification_method": "headless Chromium rendered body innerText (installed Chrome; no raw HTML)",
+      "review_note": "The rendered official page reproduced the normalized quotation. Direct HTTP retrieval missed JavaScript-rendered, redirect-sensitive, or charset-sensitive content; no search snippet or hidden raw HTML was used."
+    },
+    {
+      "app": "Xero",
+      "field": "api_surface",
+      "decision": "keep",
+      "old_url": "https://developer.xero.com/faq",
+      "old_quote": "You can use pagination to retrieve line item details for 100 items (e.g. Invoices) at a time. Endpoints on the Accounting API that currently support pagination include invoices , contacts , bank transactions and manual journals . All major endpoints on the Payroll, Files and Assets APIs also support paging.",
+      "verification_method": "headless Chromium rendered body innerText (installed Chrome; no raw HTML)",
+      "review_note": "The rendered official page reproduced the normalized quotation. Direct HTTP retrieval missed JavaScript-rendered, redirect-sensitive, or charset-sensitive content; no search snippet or hidden raw HTML was used."
+    },
+    {
+      "app": "Xero",
+      "field": "verdict",
+      "decision": "keep",
+      "old_url": "https://developer.xero.com/faq",
+      "old_quote": "The Xero API does not support basic API Key authentication. Our API uses OAuth 2.0 which means you need to register your app to get a client id and client secret which you use to access the API.",
+      "verification_method": "headless Chromium rendered body innerText (installed Chrome; no raw HTML)",
+      "review_note": "The rendered official page reproduced the normalized quotation. Direct HTTP retrieval missed JavaScript-rendered, redirect-sensitive, or charset-sensitive content; no search snippet or hidden raw HTML was used."
+    },
+    {
+      "app": "Xero",
+      "field": "verdict",
+      "decision": "keep",
+      "old_url": "https://developer.xero.com/faq",
+      "old_quote": "You can use pagination to retrieve line item details for 100 items (e.g. Invoices) at a time. Endpoints on the Accounting API that currently support pagination include invoices , contacts , bank transactions and manual journals . All major endpoints on the Payroll, Files and Assets APIs also support paging.",
+      "verification_method": "headless Chromium rendered body innerText (installed Chrome; no raw HTML)",
+      "review_note": "The rendered official page reproduced the normalized quotation. Direct HTTP retrieval missed JavaScript-rendered, redirect-sensitive, or charset-sensitive content; no search snippet or hidden raw HTML was used."
+    },
+    {
+      "app": "Xero",
+      "field": "official_mcp",
+      "decision": "keep",
+      "old_url": "https://developer.xero.com/faq/AI-Toolkit",
+      "old_quote": "Can I use any LLM to access the MCP Server? Xero's MCP Server will work with any MCP client that supports local/STDIO MCP servers. Depending on your MCP Client you might be able to support many different LLMs. All testing has been done using Claude Desktop and Cursor.",
+      "verification_method": "headless Chromium rendered body innerText (installed Chrome; no raw HTML)",
+      "review_note": "The rendered official page reproduced the normalized quotation. Direct HTTP retrieval missed JavaScript-rendered, redirect-sensitive, or charset-sensitive content; no search snippet or hidden raw HTML was used."
+    },
+    {
+      "app": "Xero",
+      "field": "auth",
+      "decision": "keep",
+      "old_url": "https://developer.xero.com/faq/oauth2",
+      "old_quote": "Will OAuth 2.0 support desktop/mobile/single-page apps that can’t keep a client secret confidential? Xero supports the Proof Key for Code Exchange (PKCE) extension to the authorization code flow. This allows native apps to securely connect to our API without needing to store a client secret. Single page apps are not currently supported.",
+      "verification_method": "headless Chromium rendered body innerText (installed Chrome; no raw HTML)",
+      "review_note": "The rendered official page reproduced the normalized quotation. Direct HTTP retrieval missed JavaScript-rendered, redirect-sensitive, or charset-sensitive content; no search snippet or hidden raw HTML was used."
+    },
+    {
+      "app": "Xero",
+      "field": "auth",
+      "decision": "keep",
+      "old_url": "https://developer.xero.com/faq/oauth2",
+      "old_quote": "What is the expiration for a refresh token? Unused refresh tokens expire after 60 days. If you don’t refresh your access token within 60 days the user will need to reauthorise your app. When you perform a token refresh, you should replace your existing refresh token with the new one returned in the response. If, for whatever reason, you don't receive the response you can retry refreshing your existing refresh token for a grace period of 30 minutes.",
+      "verification_method": "headless Chromium rendered body innerText (installed Chrome; no raw HTML)",
+      "review_note": "The rendered official page reproduced the normalized quotation. Direct HTTP retrieval missed JavaScript-rendered, redirect-sensitive, or charset-sensitive content; no search snippet or hidden raw HTML was used."
+    },
+    {
+      "app": "Xero",
+      "field": "credential_gate",
+      "decision": "keep",
+      "old_url": "https://developer.xero.com/faq/remote-mcp",
+      "old_quote": "Yes, apps on Starter plan can use it with the demo organisation. You can connect, run the tools, and decide whether it's worth upgrading to Core. Real customer organisations need the Core plan or above.",
+      "verification_method": "headless Chromium rendered body innerText (installed Chrome; no raw HTML)",
+      "review_note": "The rendered official page reproduced the normalized quotation. Direct HTTP retrieval missed JavaScript-rendered, redirect-sensitive, or charset-sensitive content; no search snippet or hidden raw HTML was used."
+    },
+    {
+      "app": "Xero",
+      "field": "official_mcp",
+      "decision": "keep",
+      "old_url": "https://developer.xero.com/faq/remote-mcp",
+      "old_quote": "The Developer Remote MCP is for developers & builders building custom agents and apps. It can be used with any MCP compatible client and offers tools that reads and writes Xero data. It supports multiple organisations with user consent.",
+      "verification_method": "headless Chromium rendered body innerText (installed Chrome; no raw HTML)",
+      "review_note": "The rendered official page reproduced the normalized quotation. Direct HTTP retrieval missed JavaScript-rendered, redirect-sensitive, or charset-sensitive content; no search snippet or hidden raw HTML was used."
+    },
+    {
+      "app": "Xero",
+      "field": "official_mcp",
+      "decision": "keep",
+      "old_url": "https://developer.xero.com/faq/remote-mcp",
+      "old_quote": "What's the server URL? https://api.xero.com/mcp/v1",
+      "verification_method": "headless Chromium rendered body innerText (installed Chrome; no raw HTML)",
+      "review_note": "The rendered official page reproduced the normalized quotation. Direct HTTP retrieval missed JavaScript-rendered, redirect-sensitive, or charset-sensitive content; no search snippet or hidden raw HTML was used."
+    },
+    {
+      "app": "Xero",
+      "field": "official_mcp",
+      "decision": "keep",
+      "old_url": "https://developer.xero.com/faq/remote-mcp",
+      "old_quote": "Does my client need to support OAuth? Yes. The server authorises through Xero's OAuth 2.0 flow with PKCE, so your client needs to be able to start that flow.",
+      "verification_method": "headless Chromium rendered body innerText (installed Chrome; no raw HTML)",
+      "review_note": "The rendered official page reproduced the normalized quotation. Direct HTTP retrieval missed JavaScript-rendered, redirect-sensitive, or charset-sensitive content; no search snippet or hidden raw HTML was used."
+    },
+    {
+      "app": "Xero",
+      "field": "official_mcp",
+      "decision": "keep",
+      "old_url": "https://developer.xero.com/faq/remote-mcp",
+      "old_quote": "Do I need a Custom Connection? No. Custom Connections apps are not eligible to access the Remote MCP Server.",
+      "verification_method": "headless Chromium rendered body innerText (installed Chrome; no raw HTML)",
+      "review_note": "The rendered official page reproduced the normalized quotation. Direct HTTP retrieval missed JavaScript-rendered, redirect-sensitive, or charset-sensitive content; no search snippet or hidden raw HTML was used."
+    },
+    {
+      "app": "Xero",
+      "field": "verdict",
+      "decision": "keep",
+      "old_url": "https://developer.xero.com/faq/remote-mcp",
+      "old_quote": "Yes, apps on Starter plan can use it with the demo organisation. You can connect, run the tools, and decide whether it's worth upgrading to Core. Real customer organisations need the Core plan or above.",
+      "verification_method": "headless Chromium rendered body innerText (installed Chrome; no raw HTML)",
+      "review_note": "The rendered official page reproduced the normalized quotation. Direct HTTP retrieval missed JavaScript-rendered, redirect-sensitive, or charset-sensitive content; no search snippet or hidden raw HTML was used."
+    },
+    {
+      "app": "Ecwid",
+      "field": "official_mcp",
+      "decision": "keep",
+      "old_url": "https://docs.ecwid.com/api-reference",
+      "old_quote": "Agents can also search and read this documentation through its MCP server",
+      "verification_method": "headless Chromium rendered body innerText (installed Chrome; no raw HTML)",
+      "review_note": "The rendered official page reproduced the normalized quotation. Direct HTTP retrieval missed JavaScript-rendered, redirect-sensitive, or charset-sensitive content; no search snippet or hidden raw HTML was used."
+    },
+    {
+      "app": "Snowflake",
+      "field": "auth",
+      "decision": "keep",
+      "old_url": "https://docs.snowflake.com/en/user-guide/programmatic-access-tokens",
+      "old_quote": "For human users (with TYPE=PERSON), you do not need any special privileges to generate, modify, drop, or display a programmatic access token for yourself .",
+      "verification_method": "headless Chromium rendered body innerText (installed Chrome; no raw HTML)",
+      "review_note": "The rendered official page reproduced the normalized quotation. Direct HTTP retrieval missed JavaScript-rendered, redirect-sensitive, or charset-sensitive content; no search snippet or hidden raw HTML was used."
+    },
+    {
+      "app": "Paygent Connect",
+      "field": "api_surface",
+      "decision": "keep",
+      "old_url": "https://guide.nmi.com/",
+      "old_quote": "Onboard and manage merchants with tools and APIs designed to simplify their journey.",
+      "verification_method": "headless Chromium rendered body innerText (installed Chrome; no raw HTML)",
+      "review_note": "The rendered official page reproduced the normalized quotation. Direct HTTP retrieval missed JavaScript-rendered, redirect-sensitive, or charset-sensitive content; no search snippet or hidden raw HTML was used."
+    },
+    {
+      "app": "Gumroad",
+      "field": "auth",
+      "decision": "keep",
+      "old_url": "https://gumroad.com/api",
+      "old_quote": "To start using the API, you'll need to register your OAuth application. Note: The Verify License API endpoint does not require an OAuth application.",
+      "verification_method": "headless Chromium rendered body innerText (installed Chrome; no raw HTML)",
+      "review_note": "The rendered official page reproduced the normalized quotation. Direct HTTP retrieval missed JavaScript-rendered, redirect-sensitive, or charset-sensitive content; no search snippet or hidden raw HTML was used."
+    },
+    {
+      "app": "Gumroad",
+      "field": "api_surface",
+      "decision": "keep",
+      "old_url": "https://gumroad.com/api",
+      "old_quote": "The Gumroad OAuth API is based around REST. We return JSON for every request, including errors.",
+      "verification_method": "headless Chromium rendered body innerText (installed Chrome; no raw HTML)",
+      "review_note": "The rendered official page reproduced the normalized quotation. Direct HTTP retrieval missed JavaScript-rendered, redirect-sensitive, or charset-sensitive content; no search snippet or hidden raw HTML was used."
+    },
+    {
+      "app": "Gumroad",
+      "field": "api_surface",
+      "decision": "keep",
+      "old_url": "https://gumroad.com/api",
+      "old_quote": "Gumroad's OAuth 2.0 API lets you see information about your products, as well as you can add, edit, and delete offer codes, variants, and custom fields. Finally, you can see a user's public information and subscribe to be notified of their sales.",
+      "verification_method": "headless Chromium rendered body innerText (installed Chrome; no raw HTML)",
+      "review_note": "The rendered official page reproduced the normalized quotation. Direct HTTP retrieval missed JavaScript-rendered, redirect-sensitive, or charset-sensitive content; no search snippet or hidden raw HTML was used."
+    },
+    {
+      "app": "Gumroad",
+      "field": "verdict",
+      "decision": "keep",
+      "old_url": "https://gumroad.com/api",
+      "old_quote": "The Gumroad OAuth API is based around REST. We return JSON for every request, including errors.",
+      "verification_method": "headless Chromium rendered body innerText (installed Chrome; no raw HTML)",
+      "review_note": "The rendered official page reproduced the normalized quotation. Direct HTTP retrieval missed JavaScript-rendered, redirect-sensitive, or charset-sensitive content; no search snippet or hidden raw HTML was used."
+    },
+    {
+      "app": "Gumroad",
+      "field": "auth",
+      "decision": "keep",
+      "old_url": "https://gumroad.com/help/article/280-create-application-api",
+      "old_quote": "However, if you only want to use the API on your own Gumroad account, you can manually generate an access token, which is a simpler process.",
+      "verification_method": "headless Chromium rendered body innerText (installed Chrome; no raw HTML)",
+      "review_note": "The rendered official page reproduced the normalized quotation. Direct HTTP retrieval missed JavaScript-rendered, redirect-sensitive, or charset-sensitive content; no search snippet or hidden raw HTML was used."
+    },
+    {
+      "app": "Gumroad",
+      "field": "credential_gate",
+      "decision": "keep",
+      "old_url": "https://gumroad.com/help/article/280-create-application-api",
+      "old_quote": "First, sign in to your Gumroad account. Then, go to advanced settings. Here, you'll see a form to create a new application.",
+      "verification_method": "headless Chromium rendered body innerText (installed Chrome; no raw HTML)",
+      "review_note": "The rendered official page reproduced the normalized quotation. Direct HTTP retrieval missed JavaScript-rendered, redirect-sensitive, or charset-sensitive content; no search snippet or hidden raw HTML was used."
+    },
+    {
+      "app": "Gumroad",
+      "field": "auth",
+      "decision": "keep",
+      "old_url": "https://gumroad.com/mcp",
+      "old_quote": "Every assistant connects to its own URL and asks for OAuth access to your Gumroad account. Each connector page lists the exact address to paste.",
+      "verification_method": "headless Chromium rendered body innerText (installed Chrome; no raw HTML)",
+      "review_note": "The rendered official page reproduced the normalized quotation. Direct HTTP retrieval missed JavaScript-rendered, redirect-sensitive, or charset-sensitive content; no search snippet or hidden raw HTML was used."
+    },
+    {
+      "app": "Gumroad",
+      "field": "official_mcp",
+      "decision": "keep",
+      "old_url": "https://gumroad.com/mcp",
+      "old_quote": "Add Gumroad from your assistant’s connector directory, or open its connector settings and add a remote MCP server using the URL from its connector page.",
+      "verification_method": "headless Chromium rendered body innerText (installed Chrome; no raw HTML)",
+      "review_note": "The rendered official page reproduced the normalized quotation. Direct HTTP retrieval missed JavaScript-rendered, redirect-sensitive, or charset-sensitive content; no search snippet or hidden raw HTML was used."
+    },
+    {
+      "app": "Gumroad",
+      "field": "official_mcp",
+      "decision": "keep",
+      "old_url": "https://gumroad.com/mcp",
+      "old_quote": "New products start as unpublished drafts. With product access, the connector can publish or unpublish them. Review these actions in your MCP client.",
+      "verification_method": "headless Chromium rendered body innerText (installed Chrome; no raw HTML)",
+      "review_note": "The rendered official page reproduced the normalized quotation. Direct HTTP retrieval missed JavaScript-rendered, redirect-sensitive, or charset-sensitive content; no search snippet or hidden raw HTML was used."
+    },
+    {
+      "app": "Gumroad",
+      "field": "credential_gate",
+      "decision": "keep",
+      "old_url": "https://gumroad.com/pricing",
+      "old_quote": "Unlike other platforms, Gumroad doesn't charge you a monthly fee. Instead, our fees are deducted as a small percentage of every sale, so we only make money when you do.",
+      "verification_method": "headless Chromium rendered body innerText (installed Chrome; no raw HTML)",
+      "review_note": "The rendered official page reproduced the normalized quotation. Direct HTTP retrieval missed JavaScript-rendered, redirect-sensitive, or charset-sensitive content; no search snippet or hidden raw HTML was used."
+    },
+    {
+      "app": "Gumroad",
+      "field": "verdict",
+      "decision": "keep",
+      "old_url": "https://gumroad.com/pricing",
+      "old_quote": "Unlike other platforms, Gumroad doesn't charge you a monthly fee. Instead, our fees are deducted as a small percentage of every sale, so we only make money when you do.",
+      "verification_method": "headless Chromium rendered body innerText (installed Chrome; no raw HTML)",
+      "review_note": "The rendered official page reproduced the normalized quotation. Direct HTTP retrieval missed JavaScript-rendered, redirect-sensitive, or charset-sensitive content; no search snippet or hidden raw HTML was used."
+    },
+    {
+      "app": "PitchBook",
+      "field": "official_mcp",
+      "decision": "keep",
+      "old_url": "https://mcp-proxy-external.pitchbook.com/",
+      "old_quote": "PitchBook MCP Gateway Production Environment\nSecure Access to PitchBook's MCP Servers",
+      "verification_method": "headless Chromium rendered body innerText (installed Chrome; no raw HTML)",
+      "review_note": "The rendered official page reproduced the normalized quotation. Direct HTTP retrieval missed JavaScript-rendered, redirect-sensitive, or charset-sensitive content; no search snippet or hidden raw HTML was used."
+    },
+    {
+      "app": "PitchBook",
+      "field": "auth",
+      "decision": "keep",
+      "old_url": "https://mcp-proxy-external.pitchbook.com/oauth/login?redirect=%2Ftools&show=true",
+      "old_quote": "Sign in to access PitchBook MCP External Gateway\nSign in with OAuth 2.0",
+      "verification_method": "headless Chromium rendered body innerText (installed Chrome; no raw HTML)",
+      "review_note": "The rendered official page reproduced the normalized quotation. Direct HTTP retrieval missed JavaScript-rendered, redirect-sensitive, or charset-sensitive content; no search snippet or hidden raw HTML was used."
+    },
+    {
+      "app": "PitchBook",
+      "field": "official_mcp",
+      "decision": "keep",
+      "old_url": "https://mcp-proxy-external.pitchbook.com/oauth/login?redirect=%2Ftools&show=true",
+      "old_quote": "Sign in to access PitchBook MCP External Gateway\nSign in with OAuth 2.0",
+      "verification_method": "headless Chromium rendered body innerText (installed Chrome; no raw HTML)",
+      "review_note": "The rendered official page reproduced the normalized quotation. Direct HTTP retrieval missed JavaScript-rendered, redirect-sensitive, or charset-sensitive content; no search snippet or hidden raw HTML was used."
+    },
+    {
+      "app": "PitchBook",
+      "field": "auth",
+      "decision": "keep",
+      "old_url": "https://pitchbook.com/help/PitchBook-api",
+      "old_quote": "Our team will work with you to understand the insights and data you’re looking for and help you establish the API connection through an API key or authentication token. Available data for each entity type is packaged across several endpoints so you can map the data to your desired format and structure.",
+      "verification_method": "headless Chromium rendered body innerText (installed Chrome; no raw HTML)",
+      "review_note": "The rendered official page reproduced the normalized quotation. Direct HTTP retrieval missed JavaScript-rendered, redirect-sensitive, or charset-sensitive content; no search snippet or hidden raw HTML was used."
+    },
+    {
+      "app": "PitchBook",
+      "field": "credential_gate",
+      "decision": "keep",
+      "old_url": "https://pitchbook.com/help/PitchBook-api",
+      "old_quote": "Our API is a separate offering from the PitchBook Platform that requires a standalone contract agreement.",
+      "verification_method": "headless Chromium rendered body innerText (installed Chrome; no raw HTML)",
+      "review_note": "The rendered official page reproduced the normalized quotation. Direct HTTP retrieval missed JavaScript-rendered, redirect-sensitive, or charset-sensitive content; no search snippet or hidden raw HTML was used."
+    },
+    {
+      "app": "PitchBook",
+      "field": "credential_gate",
+      "decision": "keep",
+      "old_url": "https://pitchbook.com/help/PitchBook-api",
+      "old_quote": "To start your API connection, you will need to send a request directly to our Direct Data team",
+      "verification_method": "headless Chromium rendered body innerText (installed Chrome; no raw HTML)",
+      "review_note": "The rendered official page reproduced the normalized quotation. Direct HTTP retrieval missed JavaScript-rendered, redirect-sensitive, or charset-sensitive content; no search snippet or hidden raw HTML was used."
+    },
+    {
+      "app": "PitchBook",
+      "field": "api_surface",
+      "decision": "keep",
+      "old_url": "https://pitchbook.com/help/PitchBook-api",
+      "old_quote": "The PitchBook API is a RESTful implementation that most HTTP clients can easily access in your chosen language or via a web browser. Every call will use the same base URL: https://api.pitchbook.com",
+      "verification_method": "headless Chromium rendered body innerText (installed Chrome; no raw HTML)",
+      "review_note": "The rendered official page reproduced the normalized quotation. Direct HTTP retrieval missed JavaScript-rendered, redirect-sensitive, or charset-sensitive content; no search snippet or hidden raw HTML was used."
+    },
+    {
+      "app": "PitchBook",
+      "field": "api_surface",
+      "decision": "keep",
+      "old_url": "https://pitchbook.com/help/PitchBook-api",
+      "old_quote": "The API solution offers a variety of relational endpoints, including financing details, deal stock information, as well as AI-powered VC exit predictor data.",
+      "verification_method": "headless Chromium rendered body innerText (installed Chrome; no raw HTML)",
+      "review_note": "The rendered official page reproduced the normalized quotation. Direct HTTP retrieval missed JavaScript-rendered, redirect-sensitive, or charset-sensitive content; no search snippet or hidden raw HTML was used."
+    },
+    {
+      "app": "PitchBook",
+      "field": "verdict",
+      "decision": "keep",
+      "old_url": "https://pitchbook.com/help/PitchBook-api",
+      "old_quote": "Our API is a separate offering from the PitchBook Platform that requires a standalone contract agreement.",
+      "verification_method": "headless Chromium rendered body innerText (installed Chrome; no raw HTML)",
+      "review_note": "The rendered official page reproduced the normalized quotation. Direct HTTP retrieval missed JavaScript-rendered, redirect-sensitive, or charset-sensitive content; no search snippet or hidden raw HTML was used."
+    },
+    {
+      "app": "PitchBook",
+      "field": "credential_gate",
+      "decision": "keep",
+      "old_url": "https://pitchbook.com/help/data-feed-api-crm-direct-data-solutions",
+      "old_quote": "Contact your account manager\nA member of the PitchBook team will shortly be in touch by email with the next steps.",
+      "verification_method": "headless Chromium rendered body innerText (installed Chrome; no raw HTML)",
+      "review_note": "The rendered official page reproduced the normalized quotation. Direct HTTP retrieval missed JavaScript-rendered, redirect-sensitive, or charset-sensitive content; no search snippet or hidden raw HTML was used."
+    },
+    {
+      "app": "PitchBook",
+      "field": "credential_gate",
+      "decision": "keep",
+      "old_url": "https://pitchbook.com/media/press-releases/pitchbook-launches-an-agentic-platform-assistant-and-new-pitchbook-data-mcp-to-meet-investors-rapidly-evolving-workflow-needs",
+      "old_quote": "The PitchBook Data MCP is currently live and available to customers upon request.",
+      "verification_method": "headless Chromium rendered body innerText (installed Chrome; no raw HTML)",
+      "review_note": "The rendered official page reproduced the normalized quotation. Direct HTTP retrieval missed JavaScript-rendered, redirect-sensitive, or charset-sensitive content; no search snippet or hidden raw HTML was used."
+    },
+    {
+      "app": "PitchBook",
+      "field": "official_mcp",
+      "decision": "keep",
+      "old_url": "https://pitchbook.com/media/press-releases/pitchbook-launches-an-agentic-platform-assistant-and-new-pitchbook-data-mcp-to-meet-investors-rapidly-evolving-workflow-needs",
+      "old_quote": "October 14, 2026",
+      "verification_method": "headless Chromium rendered body innerText (installed Chrome; no raw HTML)",
+      "review_note": "The rendered official page reproduced the normalized quotation. Direct HTTP retrieval missed JavaScript-rendered, redirect-sensitive, or charset-sensitive content; no search snippet or hidden raw HTML was used."
+    },
+    {
+      "app": "PitchBook",
+      "field": "official_mcp",
+      "decision": "keep",
+      "old_url": "https://pitchbook.com/media/press-releases/pitchbook-launches-an-agentic-platform-assistant-and-new-pitchbook-data-mcp-to-meet-investors-rapidly-evolving-workflow-needs",
+      "old_quote": "PitchBook Data MCP puts its trusted data into the systems investors have already built. PitchBook Data MCP gives investment teams native, secure access to a subset of PitchBook’s dataset, including company, deal, investor, and fund data, directly inside their own proprietary tools and models.",
+      "verification_method": "headless Chromium rendered body innerText (installed Chrome; no raw HTML)",
+      "review_note": "The rendered official page reproduced the normalized quotation. Direct HTTP retrieval missed JavaScript-rendered, redirect-sensitive, or charset-sensitive content; no search snippet or hidden raw HTML was used."
+    },
+    {
+      "app": "PitchBook",
+      "field": "official_mcp",
+      "decision": "keep",
+      "old_url": "https://pitchbook.com/media/press-releases/pitchbook-launches-an-agentic-platform-assistant-and-new-pitchbook-data-mcp-to-meet-investors-rapidly-evolving-workflow-needs",
+      "old_quote": "The PitchBook Data MCP is currently live and available to customers upon request.",
+      "verification_method": "headless Chromium rendered body innerText (installed Chrome; no raw HTML)",
+      "review_note": "The rendered official page reproduced the normalized quotation. Direct HTTP retrieval missed JavaScript-rendered, redirect-sensitive, or charset-sensitive content; no search snippet or hidden raw HTML was used."
+    },
+    {
+      "app": "PitchBook",
+      "field": "verdict",
+      "decision": "keep",
+      "old_url": "https://pitchbook.com/media/press-releases/pitchbook-launches-an-agentic-platform-assistant-and-new-pitchbook-data-mcp-to-meet-investors-rapidly-evolving-workflow-needs",
+      "old_quote": "The PitchBook Data MCP is currently live and available to customers upon request.",
+      "verification_method": "headless Chromium rendered body innerText (installed Chrome; no raw HTML)",
+      "review_note": "The rendered official page reproduced the normalized quotation. Direct HTTP retrieval missed JavaScript-rendered, redirect-sensitive, or charset-sensitive content; no search snippet or hidden raw HTML was used."
+    },
+    {
+      "app": "PitchBook",
+      "field": "credential_gate",
+      "decision": "keep",
+      "old_url": "https://pitchbook.com/pricing",
+      "old_quote": "Pricing options vary depending on how many seats you need and your firm type. Another primary consideration is whether you’re interested in additional premium offerings, such as Direct Data or CRM Integration. Find out what the cost for you might look like by getting in touch with a representative today.",
+      "verification_method": "headless Chromium rendered body innerText (installed Chrome; no raw HTML)",
+      "review_note": "The rendered official page reproduced the normalized quotation. Direct HTTP retrieval missed JavaScript-rendered, redirect-sensitive, or charset-sensitive content; no search snippet or hidden raw HTML was used."
+    },
+    {
+      "app": "PitchBook",
+      "field": "api_surface",
+      "decision": "keep",
+      "old_url": "https://pitchbook.com/products/direct-access-data/api",
+      "old_quote": "Our RESTful API utilizes JSON and is system agnostic, so you can integrate it into custom applications and CRMs to bring the industry’s best data directly into your workflow.",
+      "verification_method": "headless Chromium rendered body innerText (installed Chrome; no raw HTML)",
+      "review_note": "The rendered official page reproduced the normalized quotation. Direct HTTP retrieval missed JavaScript-rendered, redirect-sensitive, or charset-sensitive content; no search snippet or hidden raw HTML was used."
+    },
+    {
+      "app": "PitchBook",
+      "field": "api_surface",
+      "decision": "keep",
+      "old_url": "https://pitchbook.com/products/direct-access-data/api",
+      "old_quote": "Call data on all PitchBook entity types including deals, investors, funds, people, limited partners and service providers.",
+      "verification_method": "headless Chromium rendered body innerText (installed Chrome; no raw HTML)",
+      "review_note": "The rendered official page reproduced the normalized quotation. Direct HTTP retrieval missed JavaScript-rendered, redirect-sensitive, or charset-sensitive content; no search snippet or hidden raw HTML was used."
+    },
+    {
+      "app": "PitchBook",
+      "field": "verdict",
+      "decision": "keep",
+      "old_url": "https://pitchbook.com/products/direct-access-data/api",
+      "old_quote": "Our RESTful API utilizes JSON and is system agnostic, so you can integrate it into custom applications and CRMs to bring the industry’s best data directly into your workflow.",
+      "verification_method": "headless Chromium rendered body innerText (installed Chrome; no raw HTML)",
+      "review_note": "The rendered official page reproduced the normalized quotation. Direct HTTP retrieval missed JavaScript-rendered, redirect-sensitive, or charset-sensitive content; no search snippet or hidden raw HTML was used."
+    },
+    {
+      "app": "PitchBook",
+      "field": "verdict",
+      "decision": "keep",
+      "old_url": "https://pitchbook.com/products/direct-access-data/api",
+      "old_quote": "Call data on all PitchBook entity types including deals, investors, funds, people, limited partners and service providers.",
+      "verification_method": "headless Chromium rendered body innerText (installed Chrome; no raw HTML)",
+      "review_note": "The rendered official page reproduced the normalized quotation. Direct HTTP retrieval missed JavaScript-rendered, redirect-sensitive, or charset-sensitive content; no search snippet or hidden raw HTML was used."
+    },
+    {
+      "app": "PitchBook",
+      "field": "official_mcp",
+      "decision": "keep",
+      "old_url": "https://pitchbook.com/products/pitchbooks-ai-capabilities",
+      "old_quote": "PitchBook Data MCP gives your team secure, native access to select company, deal, investor, and fund data in the proprietary tools your firm has built or the commercial LLMs it uses. It brings the grounded access available through our LLM partners to the systems where your team is already asking questions, without a separate integration to maintain.",
+      "verification_method": "headless Chromium rendered body innerText (installed Chrome; no raw HTML)",
+      "review_note": "The rendered official page reproduced the normalized quotation. Direct HTTP retrieval missed JavaScript-rendered, redirect-sensitive, or charset-sensitive content; no search snippet or hidden raw HTML was used."
+    },
+    {
+      "app": "Pumble",
+      "field": "credential_gate",
+      "decision": "keep",
+      "old_url": "https://pumble.com/pricing",
+      "old_quote": "Start using Pumble for free, and upgrade when you need more features.",
+      "verification_method": "headless Chromium rendered body innerText (installed Chrome; no raw HTML)",
+      "review_note": "The rendered official page reproduced the normalized quotation. Direct HTTP retrieval missed JavaScript-rendered, redirect-sensitive, or charset-sensitive content; no search snippet or hidden raw HTML was used."
+    },
+    {
+      "app": "Pumble",
+      "field": "credential_gate",
+      "decision": "keep",
+      "old_url": "https://pumble.com/pricing",
+      "old_quote": "$ 0\n\nfor unlimited number of users",
+      "verification_method": "headless Chromium rendered body innerText (installed Chrome; no raw HTML)",
+      "review_note": "The rendered official page reproduced the normalized quotation. Direct HTTP retrieval missed JavaScript-rendered, redirect-sensitive, or charset-sensitive content; no search snippet or hidden raw HTML was used."
+    },
+    {
+      "app": "Pumble",
+      "field": "verdict",
+      "decision": "keep",
+      "old_url": "https://pumble.com/pricing",
+      "old_quote": "Start using Pumble for free, and upgrade when you need more features.",
+      "verification_method": "headless Chromium rendered body innerText (installed Chrome; no raw HTML)",
+      "review_note": "The rendered official page reproduced the normalized quotation. Direct HTTP retrieval missed JavaScript-rendered, redirect-sensitive, or charset-sensitive content; no search snippet or hidden raw HTML was used."
+    },
+    {
+      "app": "Slack",
+      "field": "credential_gate",
+      "decision": "keep",
+      "old_url": "https://slack.com/pricing",
+      "old_quote": "Or start with the basics for free, and upgrade at any time.",
+      "verification_method": "headless Chromium rendered body innerText (installed Chrome; no raw HTML)",
+      "review_note": "The rendered official page reproduced the normalized quotation. Direct HTTP retrieval missed JavaScript-rendered, redirect-sensitive, or charset-sensitive content; no search snippet or hidden raw HTML was used."
+    },
+    {
+      "app": "Slack",
+      "field": "verdict",
+      "decision": "keep",
+      "old_url": "https://slack.com/pricing",
+      "old_quote": "Or start with the basics for free, and upgrade at any time.",
+      "verification_method": "headless Chromium rendered body innerText (installed Chrome; no raw HTML)",
+      "review_note": "The rendered official page reproduced the normalized quotation. Direct HTTP retrieval missed JavaScript-rendered, redirect-sensitive, or charset-sensitive content; no search snippet or hidden raw HTML was used."
+    },
+    {
+      "app": "Supabase",
+      "field": "auth",
+      "decision": "keep",
+      "old_url": "https://supabase.com/docs/reference/api/introduction",
+      "old_quote": "OAuth2 allows your application to generate tokens on behalf of a Supabase user, providing secure and limited access to their account without requiring their credentials.",
+      "verification_method": "headless Chromium rendered body innerText (installed Chrome; no raw HTML)",
+      "review_note": "The rendered official page reproduced the normalized quotation. Direct HTTP retrieval missed JavaScript-rendered, redirect-sensitive, or charset-sensitive content; no search snippet or hidden raw HTML was used."
+    },
+    {
+      "app": "Aircall",
+      "field": "official_mcp",
+      "decision": "keep",
+      "old_url": "https://support.aircall.io/en-gb/articles/39677926959517",
+      "old_quote": "Important: Aircall MCP is currently in beta. To join the beta, contact your Account Manager.",
+      "verification_method": "headless Chromium rendered body innerText (installed Chrome; no raw HTML)",
+      "review_note": "The rendered official page reproduced the normalized quotation. Direct HTTP retrieval missed JavaScript-rendered, redirect-sensitive, or charset-sensitive content; no search snippet or hidden raw HTML was used."
+    },
+    {
+      "app": "Zendesk",
+      "field": "official_mcp",
+      "decision": "keep",
+      "old_url": "https://support.zendesk.com/hc/en-us/articles/11400026079130-Connecting-external-AI-agents-to-the-Zendesk-MCP-server-or-Zendesk-AI-agents-EAP",
+      "old_quote": "Zendesk Bridge and external AI agents are currently in an early access program (EAP). During the EAP, Zendesk Bridge and external AI agents are available without charge. However, plan packaging and pricing might change when the feature becomes generally available. To participate, join the External AI EAP.",
+      "verification_method": "headless Chromium rendered body innerText (installed Chrome; no raw HTML)",
+      "review_note": "The rendered official page reproduced the normalized quotation. Direct HTTP retrieval missed JavaScript-rendered, redirect-sensitive, or charset-sensitive content; no search snippet or hidden raw HTML was used."
+    },
+    {
+      "app": "Zendesk",
+      "field": "official_mcp",
+      "decision": "keep",
+      "old_url": "https://support.zendesk.com/hc/en-us/articles/11400026079130-Connecting-external-AI-agents-to-the-Zendesk-MCP-server-or-Zendesk-AI-agents-EAP",
+      "old_quote": "Example: https://example.zendesk.com/mcp",
+      "verification_method": "headless Chromium rendered body innerText (installed Chrome; no raw HTML)",
+      "review_note": "The rendered official page reproduced the normalized quotation. Direct HTTP retrieval missed JavaScript-rendered, redirect-sensitive, or charset-sensitive content; no search snippet or hidden raw HTML was used."
+    },
+    {
+      "app": "Paygent Connect",
+      "field": "auth",
+      "decision": "keep",
+      "old_url": "https://www.gopaygent.com/",
+      "old_quote": "Authorization: Bearer pgt_live_xxx",
+      "verification_method": "headless Chromium rendered body innerText (installed Chrome; no raw HTML)",
+      "review_note": "The rendered official page reproduced the normalized quotation. Direct HTTP retrieval missed JavaScript-rendered, redirect-sensitive, or charset-sensitive content; no search snippet or hidden raw HTML was used."
+    },
+    {
+      "app": "Paygent Connect",
+      "field": "api_surface",
+      "decision": "keep",
+      "old_url": "https://www.gopaygent.com/",
+      "old_quote": "Build marketplace payments, revenue sharing, and automated onboarding with Paygent Connect.",
+      "verification_method": "headless Chromium rendered body innerText (installed Chrome; no raw HTML)",
+      "review_note": "The rendered official page reproduced the normalized quotation. Direct HTTP retrieval missed JavaScript-rendered, redirect-sensitive, or charset-sensitive content; no search snippet or hidden raw HTML was used."
+    },
+    {
+      "app": "Paygent Connect",
+      "field": "api_surface",
+      "decision": "keep",
+      "old_url": "https://www.gopaygent.com/",
+      "old_quote": "Accept payments, create customers, send payouts, and automate everything.",
+      "verification_method": "headless Chromium rendered body innerText (installed Chrome; no raw HTML)",
+      "review_note": "The rendered official page reproduced the normalized quotation. Direct HTTP retrieval missed JavaScript-rendered, redirect-sensitive, or charset-sensitive content; no search snippet or hidden raw HTML was used."
+    },
+    {
+      "app": "Paygent Connect",
+      "field": "api_surface",
+      "decision": "keep",
+      "old_url": "https://www.gopaygent.com/",
+      "old_quote": "Clean, predictable, and fully documented REST APIs for every payment workflow.",
+      "verification_method": "headless Chromium rendered body innerText (installed Chrome; no raw HTML)",
+      "review_note": "The rendered official page reproduced the normalized quotation. Direct HTTP retrieval missed JavaScript-rendered, redirect-sensitive, or charset-sensitive content; no search snippet or hidden raw HTML was used."
+    },
+    {
+      "app": "Paygent Connect",
+      "field": "api_surface",
+      "decision": "keep",
+      "old_url": "https://www.gopaygent.com/",
+      "old_quote": "Real-time event notifications with retry logic and delivery guarantees.",
+      "verification_method": "headless Chromium rendered body innerText (installed Chrome; no raw HTML)",
+      "review_note": "The rendered official page reproduced the normalized quotation. Direct HTTP retrieval missed JavaScript-rendered, redirect-sensitive, or charset-sensitive content; no search snippet or hidden raw HTML was used."
+    },
+    {
+      "app": "Paygent Connect",
+      "field": "verdict",
+      "decision": "keep",
+      "old_url": "https://www.gopaygent.com/",
+      "old_quote": "Authorization: Bearer pgt_live_xxx",
+      "verification_method": "headless Chromium rendered body innerText (installed Chrome; no raw HTML)",
+      "review_note": "The rendered official page reproduced the normalized quotation. Direct HTTP retrieval missed JavaScript-rendered, redirect-sensitive, or charset-sensitive content; no search snippet or hidden raw HTML was used."
+    },
+    {
+      "app": "Paygent Connect",
+      "field": "verdict",
+      "decision": "keep",
+      "old_url": "https://www.gopaygent.com/",
+      "old_quote": "Clean, predictable, and fully documented REST APIs for every payment workflow.",
+      "verification_method": "headless Chromium rendered body innerText (installed Chrome; no raw HTML)",
+      "review_note": "The rendered official page reproduced the normalized quotation. Direct HTTP retrieval missed JavaScript-rendered, redirect-sensitive, or charset-sensitive content; no search snippet or hidden raw HTML was used."
+    },
+    {
+      "app": "Paygent Connect",
+      "field": "api_surface",
+      "decision": "keep",
+      "old_url": "https://www.gopaygent.com/developers/docs",
+      "old_quote": "Deep dive into the Pathfinder API, Collect.js, and Three-Step Redirect logic.",
+      "verification_method": "headless Chromium rendered body innerText (installed Chrome; no raw HTML)",
+      "review_note": "The rendered official page reproduced the normalized quotation. Direct HTTP retrieval missed JavaScript-rendered, redirect-sensitive, or charset-sensitive content; no search snippet or hidden raw HTML was used."
+    },
+    {
+      "app": "Paygent Connect",
+      "field": "official_mcp",
+      "decision": "keep",
+      "old_url": "https://www.gopaygent.com/developers/docs",
+      "old_quote": "Deep dive into the Pathfinder API, Collect.js, and Three-Step Redirect logic.",
+      "verification_method": "headless Chromium rendered body innerText (installed Chrome; no raw HTML)",
+      "review_note": "The rendered official page reproduced the normalized quotation. Direct HTTP retrieval missed JavaScript-rendered, redirect-sensitive, or charset-sensitive content; no search snippet or hidden raw HTML was used."
+    },
+    {
+      "app": "Paygent Connect",
+      "field": "official_mcp",
+      "decision": "keep",
+      "old_url": "https://www.gopaygent.com/developers/mcp",
+      "old_quote": "404\nPage not found\n\nThe page you're looking for doesn't exist or has been moved. Let's get you back on track.",
+      "verification_method": "headless Chromium rendered body innerText (installed Chrome; no raw HTML)",
+      "review_note": "The rendered official page reproduced the normalized quotation. Direct HTTP retrieval missed JavaScript-rendered, redirect-sensitive, or charset-sensitive content; no search snippet or hidden raw HTML was used."
+    },
+    {
+      "app": "Paygent Connect",
+      "field": "official_mcp",
+      "decision": "keep",
+      "old_url": "https://www.gopaygent.com/developers/sdk",
+      "old_quote": "Pre-built integrations for iOS, Android, and Windows/Linux environments.",
+      "verification_method": "headless Chromium rendered body innerText (installed Chrome; no raw HTML)",
+      "review_note": "The rendered official page reproduced the normalized quotation. Direct HTTP retrieval missed JavaScript-rendered, redirect-sensitive, or charset-sensitive content; no search snippet or hidden raw HTML was used."
+    },
+    {
+      "app": "Paygent Connect",
+      "field": "credential_gate",
+      "decision": "keep",
+      "old_url": "https://www.gopaygent.com/pricing",
+      "old_quote": "PAYGENT PLATFORM\nDeveloper & B2B\n\nFor SaaS, Wholesalers, and Platforms.\n\nMONTHLY GATEWAY\n\n$15\n\nPER TRANSACTION\n\n$0.10",
+      "verification_method": "headless Chromium rendered body innerText (installed Chrome; no raw HTML)",
+      "review_note": "The rendered official page reproduced the normalized quotation. Direct HTTP retrieval missed JavaScript-rendered, redirect-sensitive, or charset-sensitive content; no search snippet or hidden raw HTML was used."
+    },
+    {
+      "app": "Paygent Connect",
+      "field": "verdict",
+      "decision": "keep",
+      "old_url": "https://www.gopaygent.com/pricing",
+      "old_quote": "PAYGENT PLATFORM\nDeveloper & B2B\n\nFor SaaS, Wholesalers, and Platforms.\n\nMONTHLY GATEWAY\n\n$15\n\nPER TRANSACTION\n\n$0.10",
+      "verification_method": "headless Chromium rendered body innerText (installed Chrome; no raw HTML)",
+      "review_note": "The rendered official page reproduced the normalized quotation. Direct HTTP retrieval missed JavaScript-rendered, redirect-sensitive, or charset-sensitive content; no search snippet or hidden raw HTML was used."
+    },
+    {
+      "app": "Paygent Connect",
+      "field": "credential_gate",
+      "decision": "keep",
+      "old_url": "https://www.gopaygent.com/products/connect",
+      "old_quote": "Use the Pathfinder API to completely automate underwriting and onboarding within your own application.",
+      "verification_method": "headless Chromium rendered body innerText (installed Chrome; no raw HTML)",
+      "review_note": "The rendered official page reproduced the normalized quotation. Direct HTTP retrieval missed JavaScript-rendered, redirect-sensitive, or charset-sensitive content; no search snippet or hidden raw HTML was used."
+    },
+    {
+      "app": "Paygent Connect",
+      "field": "credential_gate",
+      "decision": "keep",
+      "old_url": "https://www.gopaygent.com/signup",
+      "old_quote": "MERCHANT SIGNUP\nCreate Your Account\n\nJoin Paygent and get access to the TapN Soft POS and industry-leading payment gateways.",
+      "verification_method": "headless Chromium rendered body innerText (installed Chrome; no raw HTML)",
+      "review_note": "The rendered official page reproduced the normalized quotation. Direct HTTP retrieval missed JavaScript-rendered, redirect-sensitive, or charset-sensitive content; no search snippet or hidden raw HTML was used."
+    },
+    {
+      "app": "Paygent Connect",
+      "field": "credential_gate",
+      "decision": "keep",
+      "old_url": "https://www.gopaygent.com/terms",
+      "old_quote": "Provide accurate business and beneficial ownership information during onboarding.",
+      "verification_method": "headless Chromium rendered body innerText (installed Chrome; no raw HTML)",
+      "review_note": "The rendered official page reproduced the normalized quotation. Direct HTTP retrieval missed JavaScript-rendered, redirect-sensitive, or charset-sensitive content; no search snippet or hidden raw HTML was used."
+    },
+    {
+      "app": "Paygent Connect",
+      "field": "verdict",
+      "decision": "keep",
+      "old_url": "https://www.gopaygent.com/terms",
+      "old_quote": "Provide accurate business and beneficial ownership information during onboarding.",
+      "verification_method": "headless Chromium rendered body innerText (installed Chrome; no raw HTML)",
+      "review_note": "The rendered official page reproduced the normalized quotation. Direct HTTP retrieval missed JavaScript-rendered, redirect-sensitive, or charset-sensitive content; no search snippet or hidden raw HTML was used."
+    },
+    {
+      "app": "iPayX",
+      "field": "auth",
+      "decision": "keep",
+      "old_url": "https://www.ipayx.ai/docs/api",
+      "old_quote": "Every request requires a Bearer token in the `Authorization` header. Keys start with `ipx_live_`.",
+      "verification_method": "headless Chromium rendered body innerText (installed Chrome; no raw HTML)",
+      "review_note": "The rendered official page reproduced the normalized quotation. Direct HTTP retrieval missed JavaScript-rendered, redirect-sensitive, or charset-sensitive content; no search snippet or hidden raw HTML was used."
+    },
+    {
+      "app": "iPayX",
+      "field": "api_surface",
+      "decision": "keep",
+      "old_url": "https://www.ipayx.ai/docs/api",
+      "old_quote": "REST API · v1",
+      "verification_method": "headless Chromium rendered body innerText (installed Chrome; no raw HTML)",
+      "review_note": "The rendered official page reproduced the normalized quotation. Direct HTTP retrieval missed JavaScript-rendered, redirect-sensitive, or charset-sensitive content; no search snippet or hidden raw HTML was used."
+    },
+    {
+      "app": "iPayX",
+      "field": "api_surface",
+      "decision": "keep",
+      "old_url": "https://www.ipayx.ai/docs/api",
+      "old_quote": "3 endpoints\n\naudit · rates · audit/document",
+      "verification_method": "headless Chromium rendered body innerText (installed Chrome; no raw HTML)",
+      "review_note": "The rendered official page reproduced the normalized quotation. Direct HTTP retrieval missed JavaScript-rendered, redirect-sensitive, or charset-sensitive content; no search snippet or hidden raw HTML was used."
+    },
+    {
+      "app": "iPayX",
+      "field": "api_surface",
+      "decision": "keep",
+      "old_url": "https://www.ipayx.ai/docs/api",
+      "old_quote": "Signed webhooks\n\nHMAC-SHA256 · audit.completed",
+      "verification_method": "headless Chromium rendered body innerText (installed Chrome; no raw HTML)",
+      "review_note": "The rendered official page reproduced the normalized quotation. Direct HTTP retrieval missed JavaScript-rendered, redirect-sensitive, or charset-sensitive content; no search snippet or hidden raw HTML was used."
+    },
+    {
+      "app": "iPayX",
+      "field": "verdict",
+      "decision": "keep",
+      "old_url": "https://www.ipayx.ai/docs/api",
+      "old_quote": "Every request requires a Bearer token in the `Authorization` header. Keys start with `ipx_live_`.",
+      "verification_method": "headless Chromium rendered body innerText (installed Chrome; no raw HTML)",
+      "review_note": "The rendered official page reproduced the normalized quotation. Direct HTTP retrieval missed JavaScript-rendered, redirect-sensitive, or charset-sensitive content; no search snippet or hidden raw HTML was used."
+    },
+    {
+      "app": "iPayX",
+      "field": "verdict",
+      "decision": "keep",
+      "old_url": "https://www.ipayx.ai/docs/api",
+      "old_quote": "3 endpoints\n\naudit · rates · audit/document",
+      "verification_method": "headless Chromium rendered body innerText (installed Chrome; no raw HTML)",
+      "review_note": "The rendered official page reproduced the normalized quotation. Direct HTTP retrieval missed JavaScript-rendered, redirect-sensitive, or charset-sensitive content; no search snippet or hidden raw HTML was used."
+    },
+    {
+      "app": "iPayX",
+      "field": "credential_gate",
+      "decision": "keep",
+      "old_url": "https://www.ipayx.ai/docs/mcp-server",
+      "old_quote": "**Free tier:** 10 audits / day per API key.",
+      "verification_method": "headless Chromium rendered body innerText (installed Chrome; no raw HTML)",
+      "review_note": "The rendered official page reproduced the normalized quotation. Direct HTTP retrieval missed JavaScript-rendered, redirect-sensitive, or charset-sensitive content; no search snippet or hidden raw HTML was used."
+    },
+    {
+      "app": "iPayX",
+      "field": "credential_gate",
+      "decision": "keep",
+      "old_url": "https://www.ipayx.ai/docs/mcp-server",
+      "old_quote": "**Paid tier ($199):** unlimited audits, priority routing.",
+      "verification_method": "headless Chromium rendered body innerText (installed Chrome; no raw HTML)",
+      "review_note": "The rendered official page reproduced the normalized quotation. Direct HTTP retrieval missed JavaScript-rendered, redirect-sensitive, or charset-sensitive content; no search snippet or hidden raw HTML was used."
+    },
+    {
+      "app": "iPayX",
+      "field": "official_mcp",
+      "decision": "keep",
+      "old_url": "https://www.ipayx.ai/docs/mcp-server",
+      "old_quote": "Production MCP: `https://hvujzsdwcoweirroubeh.supabase.co/functions/v1/mcp-server`",
+      "verification_method": "headless Chromium rendered body innerText (installed Chrome; no raw HTML)",
+      "review_note": "The rendered official page reproduced the normalized quotation. Direct HTTP retrieval missed JavaScript-rendered, redirect-sensitive, or charset-sensitive content; no search snippet or hidden raw HTML was used."
+    },
+    {
+      "app": "iPayX",
+      "field": "auth",
+      "decision": "keep",
+      "old_url": "https://www.ipayx.ai/mcp-config",
+      "old_quote": "No account or API key required. Transaction audits and forensic reports share 3 free audits per IP per calendar month (UTC). Rate lookups and comparisons are free without an audit quota.",
+      "verification_method": "headless Chromium rendered body innerText (installed Chrome; no raw HTML)",
+      "review_note": "The rendered official page reproduced the normalized quotation. Direct HTTP retrieval missed JavaScript-rendered, redirect-sensitive, or charset-sensitive content; no search snippet or hidden raw HTML was used."
+    },
+    {
+      "app": "iPayX",
+      "field": "credential_gate",
+      "decision": "keep",
+      "old_url": "https://www.ipayx.ai/mcp-config",
+      "old_quote": "No account or API key required. Transaction audits and forensic reports share 3 free audits per IP per calendar month (UTC). Rate lookups and comparisons are free without an audit quota.",
+      "verification_method": "headless Chromium rendered body innerText (installed Chrome; no raw HTML)",
+      "review_note": "The rendered official page reproduced the normalized quotation. Direct HTTP retrieval missed JavaScript-rendered, redirect-sensitive, or charset-sensitive content; no search snippet or hidden raw HTML was used."
+    },
+    {
+      "app": "iPayX",
+      "field": "official_mcp",
+      "decision": "keep",
+      "old_url": "https://www.ipayx.ai/mcp-config",
+      "old_quote": "One MCP server. Claude, ChatGPT, Grok, Perplexity, DeepSeek, Qwen, MiniMax, Copilot, Cursor, n8n — real-time forensic FX audit.",
+      "verification_method": "headless Chromium rendered body innerText (installed Chrome; no raw HTML)",
+      "review_note": "The rendered official page reproduced the normalized quotation. Direct HTTP retrieval missed JavaScript-rendered, redirect-sensitive, or charset-sensitive content; no search snippet or hidden raw HTML was used."
+    },
+    {
+      "app": "iPayX",
+      "field": "official_mcp",
+      "decision": "keep",
+      "old_url": "https://www.ipayx.ai/mcp-config",
+      "old_quote": "MCP Server URL\n\n`https://mcp.ipayx.ai/mcp` Copy",
+      "verification_method": "headless Chromium rendered body innerText (installed Chrome; no raw HTML)",
+      "review_note": "The rendered official page reproduced the normalized quotation. Direct HTTP retrieval missed JavaScript-rendered, redirect-sensitive, or charset-sensitive content; no search snippet or hidden raw HTML was used."
+    },
+    {
+      "app": "iPayX",
+      "field": "official_mcp",
+      "decision": "keep",
+      "old_url": "https://www.ipayx.ai/mcp-config",
+      "old_quote": "Read-only server. It never moves money.",
+      "verification_method": "headless Chromium rendered body innerText (installed Chrome; no raw HTML)",
+      "review_note": "The rendered official page reproduced the normalized quotation. Direct HTTP retrieval missed JavaScript-rendered, redirect-sensitive, or charset-sensitive content; no search snippet or hidden raw HTML was used."
+    },
+    {
+      "app": "iPayX",
+      "field": "credential_gate",
+      "decision": "keep",
+      "old_url": "https://www.ipayx.ai/pricing",
+      "old_quote": "Free audit included. Upgrade to PDF reports or production-grade API.",
+      "verification_method": "headless Chromium rendered body innerText (installed Chrome; no raw HTML)",
+      "review_note": "The rendered official page reproduced the normalized quotation. Direct HTTP retrieval missed JavaScript-rendered, redirect-sensitive, or charset-sensitive content; no search snippet or hidden raw HTML was used."
+    },
+    {
+      "app": "iPayX",
+      "field": "credential_gate",
+      "decision": "keep",
+      "old_url": "https://www.ipayx.ai/pricing",
+      "old_quote": "You have 3 free audits.",
+      "verification_method": "headless Chromium rendered body innerText (installed Chrome; no raw HTML)",
+      "review_note": "The rendered official page reproduced the normalized quotation. Direct HTTP retrieval missed JavaScript-rendered, redirect-sensitive, or charset-sensitive content; no search snippet or hidden raw HTML was used."
+    },
+    {
+      "app": "iPayX",
+      "field": "verdict",
+      "decision": "keep",
+      "old_url": "https://www.ipayx.ai/pricing",
+      "old_quote": "Free audit included. Upgrade to PDF reports or production-grade API.",
+      "verification_method": "headless Chromium rendered body innerText (installed Chrome; no raw HTML)",
+      "review_note": "The rendered official page reproduced the normalized quotation. Direct HTTP retrieval missed JavaScript-rendered, redirect-sensitive, or charset-sensitive content; no search snippet or hidden raw HTML was used."
+    },
+    {
+      "app": "Zendesk",
+      "field": "credential_gate",
+      "decision": "keep",
+      "old_url": "https://www.zendesk.com/pricing/",
+      "old_quote": "Zendesk offers a free trial so you can explore the product before committing to a paid plan. During the 14-day trial period:",
+      "verification_method": "headless Chromium rendered body innerText (installed Chrome; no raw HTML)",
+      "review_note": "The rendered official page reproduced the normalized quotation. Direct HTTP retrieval missed JavaScript-rendered, redirect-sensitive, or charset-sensitive content; no search snippet or hidden raw HTML was used."
+    },
+    {
+      "app": "Zendesk",
+      "field": "verdict",
+      "decision": "keep",
+      "old_url": "https://www.zendesk.com/pricing/",
+      "old_quote": "Zendesk offers a free trial so you can explore the product before committing to a paid plan. During the 14-day trial period:",
+      "verification_method": "headless Chromium rendered body innerText (installed Chrome; no raw HTML)",
+      "review_note": "The rendered official page reproduced the normalized quotation. Direct HTTP retrieval missed JavaScript-rendered, redirect-sensitive, or charset-sensitive content; no search snippet or hidden raw HTML was used."
+    }
+  ],
+  "unresolved": []
+}

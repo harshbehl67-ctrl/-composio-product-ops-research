@@ -1,0 +1,228 @@
+{
+  "app": {
+    "number": 68,
+    "name": "MongoDB Atlas",
+    "category": "Developer, Infra and Data platforms",
+    "hint": "mongodb.com/docs/atlas/api"
+  },
+  "checked_at": "2026-11-23T18:15:32.652972+00:00",
+  "prior_source": "data/pass2/068.json",
+  "search_source": "data/pass4_search/068.json",
+  "new_candidates": [
+    {
+      "url": "https://www.mongodb.com/docs/atlas/configure-api-access/",
+      "title": "Get Started with the Atlas Administration API - Atlas - MongoDB Docs (https://www.mongodb.com/docs/atlas/configure-api-access/)",
+      "published_label": null
+    },
+    {
+      "url": "https://www.mongodb.com/docs/atlas/configure-api-access/?interface=atlas-ui&programmatic-access=api-key",
+      "title": "Get Started with the Atlas Administration API - Atlas - MongoDB Docs (https://www.mongodb.com/docs/atlas/configure-api-access/?interface=atlas-ui&programmatic-access=api-key)",
+      "published_label": null
+    },
+    {
+      "url": "https://www.mongodb.com/docs/atlas/configure-api-access/?interface=atlas-ui&programmatic-access=service-account",
+      "title": "Get Started with the Atlas Administration API - Atlas - MongoDB Docs (https://www.mongodb.com/docs/atlas/configure-api-access/?interface=atlas-ui&programmatic-access=service-account)",
+      "published_label": null
+    },
+    {
+      "url": "https://www.mongodb.com/docs/atlas/reference/api-resources-spec/v2/",
+      "title": "Introduction | Atlas Admin API v2 documentation (https://www.mongodb.com/docs/atlas/reference/api-resources-spec/v2/)",
+      "published_label": "5 days ago"
+    },
+    {
+      "url": "https://www.mongodb.com/docs/atlas/architecture/current/auth/authentication/",
+      "title": "Guidance for Atlas Authentication - Atlas Architecture Center - MongoDB Docs (https://www.mongodb.com/docs/atlas/architecture/current/auth/authentication/)",
+      "published_label": null
+    },
+    {
+      "url": "https://www.mongodb.com/docs/atlas/api/api-authentication/?msockid=23693c46da786f1224f72aa3dbc86e21",
+      "title": "Atlas Administration API Authentication Methods - Atlas - MongoDB Docs (https://www.mongodb.com/docs/atlas/api/api-authentication/?msockid=23693c46da786f1224f72aa3dbc86e21)",
+      "published_label": null
+    },
+    {
+      "url": "https://www.mongodb.com/docs/atlas/tutorial/create-atlas-account/?msockid=0835d42476946f79196fc26777e56e27",
+      "title": "Create an Atlas Account - Atlas - MongoDB Docs (https://www.mongodb.com/docs/atlas/tutorial/create-atlas-account/?msockid=0835d42476946f79196fc26777e56e27)",
+      "published_label": null
+    },
+    {
+      "url": "https://www.mongodb.com/docs/api/doc/atlas-admin-api-v2/2024-10-23",
+      "title": "Atlas Admin API v2 documentation (2024-10-23) (https://www.mongodb.com/docs/api/doc/atlas-admin-api-v2/2024-10-23)",
+      "published_label": "last month"
+    },
+    {
+      "url": "https://www.mongodb.com/docs/atlas/api/atlas-admin-api-ref/",
+      "title": "Atlas Administration API Reference - Atlas - MongoDB Docs (https://www.mongodb.com/docs/atlas/api/atlas-admin-api-ref/)",
+      "published_label": null
+    },
+    {
+      "url": "https://www.mongodb.com/docs/api/doc/atlas-admin-api-v2/group/endpoint-alerts",
+      "title": "Introduction | Atlas Admin API v2 documentation (https://www.mongodb.com/docs/api/doc/atlas-admin-api-v2/group/endpoint-alerts)",
+      "published_label": null
+    },
+    {
+      "url": "https://www.mongodb.com/docs/api/doc/atlas-admin-api-v2/2023-10-01/group/endpoint-global-clusters",
+      "title": "Introduction | Atlas Admin API v2 documentation (2023-10-01) (https://www.mongodb.com/docs/api/doc/atlas-admin-api-v2/2023-10-01/group/endpoint-global-clusters)",
+      "published_label": null
+    },
+    {
+      "url": "https://www.mongodb.com/docs/atlas/configure-api-access-org/?interface=atlas-ui&programmatic-access=service-account",
+      "title": "Manage Programmatic Access to an Organization - Atlas - MongoDB Docs (https://www.mongodb.com/docs/atlas/configure-api-access-org/?interface=atlas-ui&programmatic-access=service-account)",
+      "published_label": null
+    },
+    {
+      "url": "https://www.mongodb.com/docs/api/",
+      "title": "MongoDB REST APIs (https://www.mongodb.com/docs/api/)",
+      "published_label": null
+    },
+    {
+      "url": "https://www.mongodb.com/docs/atlas/configure-api-access/?interface=atlas-cli&programmatic-access=api-key",
+      "title": "Get Started with the Atlas Administration API - Atlas - MongoDB Docs (https://www.mongodb.com/docs/atlas/configure-api-access/?interface=atlas-cli&programmatic-access=api-key)",
+      "published_label": null
+    },
+    {
+      "url": "https://www.mongodb.com/docs/atlas/configure-api-access/?sc_channel=el&trk=03c1d8d1-c89b-441e-82ac-a61268342870",
+      "title": "Get Started with the Atlas Administration API - Atlas - MongoDB Docs (https://www.mongodb.com/docs/atlas/configure-api-access/?sc_channel=el&trk=03c1d8d1-c89b-441e-82ac-a61268342870)",
+      "published_label": null
+    },
+    {
+      "url": "https://www.mongodb.com/docs/api/doc/atlas-admin-api-v2/2024-05-30/operation/operation-getgroupcluster",
+      "title": "Introduction | Atlas Admin API v2 documentation (2024-05-30) (https://www.mongodb.com/docs/api/doc/atlas-admin-api-v2/2024-05-30/operation/operation-getgroupcluster)",
+      "published_label": null
+    }
+  ],
+  "selected": [
+    {
+      "url": "https://www.mongodb.com/docs/atlas/architecture/current/auth/authentication/",
+      "title": "Guidance for Atlas Authentication - Atlas Architecture Center - MongoDB Docs (https://www.mongodb.com/docs/atlas/architecture/current/auth/authentication/)",
+      "published_label": null
+    },
+    {
+      "url": "https://www.mongodb.com/docs/atlas/configure-api-access/",
+      "title": "Get Started with the Atlas Administration API - Atlas - MongoDB Docs (https://www.mongodb.com/docs/atlas/configure-api-access/)",
+      "published_label": null
+    },
+    {
+      "url": "https://www.mongodb.com/docs/atlas/configure-api-access/?interface=atlas-ui&programmatic-access=api-key",
+      "title": "Get Started with the Atlas Administration API - Atlas - MongoDB Docs (https://www.mongodb.com/docs/atlas/configure-api-access/?interface=atlas-ui&programmatic-access=api-key)",
+      "published_label": null
+    }
+  ],
+  "new_pages": [
+    {
+      "url": "https://www.mongodb.com/docs/atlas/architecture/current/auth/authentication/",
+      "requested_url": "https://www.mongodb.com/docs/atlas/architecture/current/auth/authentication/",
+      "status": 200,
+      "title": "Guidance for Atlas Authentication - Atlas Architecture Center - MongoDB Docs (https://www.mongodb.com/docs/atlas/architecture/current/auth/authentication/)",
+      "text": "Guidance for Atlas Authentication - Atlas Architecture Center - MongoDB Docs For AI agents: a documentation index is available at https://www.mongodb.com/docs/llms.txt — markdown versions of all pages are available by appending .md to any URL path. Docs Menu Ask MongoDB AI Guidance for Atlas Authentication Copy page MongoDB Atlas supports a variety of authentication methods to ensure robust security. Atlas requires all users to authenticate to access the Atlas UI, Atlas databases, and  the Atlas Administration API. Note The MongoDB Atlas Shared Responsibility Model defines the complementary duties of MongoDB and its customers in maintaining a secure and resilient data environment. Under this framework, MongoDB manages the security and operational integrity of the underlying platform, while customers are responsible for the configuration, management, and data policies of their specific deployments. For a detailed breakdown of ownership across security and operational excellence, see Shared Responsibility Model. Note In this context, a \"user\" can be a human or an application. We refer to human users as \"Workforce Identity\" and applications as \"Workload Identity\". Two factors determine which authentication types to use: The identity type (human or machine) The resource that the identity needs access to. The resource can be one of the following: Atlas UI, Atlas Database, or Atlas APIs. Atlas UI Authentication Workforce Users Use IP access restrictions, and then: Use Federated Authentication with an SAML 2.0 identity provider, such as Okta, Microsoft Entra ID, or Ping Identity, and Use Atlas credentials with Multi-factor Authentication (MFA) . You should always use the most secure form of MFA available, such as a hardware key or biometrics. Workload Users This only applies to Workforce users. Atlas Database Authentication Workforce Users Use Workforce Identity Federation. For development and test environments, you can also use SCRAM . Consider creating temporary database\nusers with just-in-time database access. Workload Users Use one of the following: Workload Identity Federation AWS-IAM authentication X.509 certificates For development and test environments, you can also use X.509 certificates or SCRAM. Atlas API Authentication Note This applies to both Workforce and Workload users. Use Service Accounts . For development and test environments, you can also use Service Accounts or API Keys. Authentication Types The following sections provide details about the authentication methods used when accessing the Atlas UI, Atlas Database, or the Atlas Administration API. Federated Authentication Federated authentication allows you to manage all authentication to the Atlas UI across multiple systems and applications through a central identity provider, which reduces user management complexity. With federated authentication, you can enforce security policies such as password complexity, credential rotation, and MFA within your identity provider's tools. For the Atlas UI, you can use any compatible identity provider such as Okta, Microsoft Entra ID, or Ping Identity. Workforce Identity Federation Workforce Identity Federation allows you to manage all authentication to the Atlas database through your identity provider. To learn more, see Set up Workforce Identity Federation with OIDC. Workload Identity Federation Workload Identity Federation enables applications running in cloud environments like Azure and Google Cloud to authenticate with Atlas without the need to manage separate database user credentials. With Workload Identity Federation, you can manage Atlas database users using Azure Managed Identities, Google Service Accounts, or any OAuth 2.0-compliant service. These authentication mechanisms simplify management and enhance security by allowing for passwordless access to the Atlas database. AWS IAM Role Authentication You can also authenticate through AWS IAM roles. To learn more, see AWS IAM Authentication. To learn more, see Set up Workload Identity Federation with OAuth 2.0 and Configure Federated Authentication. Multi-Factor Authentication For any human user that has access to the Atlas control plane, we require MFA for enhanced security. Atlas supports the following MFA methods as secondary identification: Security keys Biometrics OTP authenticators Push notifications with Okta Verify Email Note If you are using Federated Auth, you configure and manage MFA in the IdP . If you are using Atlas credentials, MFA is configured and managed within Atlas . MFA is required when using Atlas credentials. To learn more, see Manage Your Multi-Factor Authentication Options. X.509 Client Certificates X.509 certificates provide the security of mutual TLS, making them suitable for staging and production environments, and you can bring your own certificate authority for use with X.509. The disadvantage of X.509 is that you must manage certificates and the security of these certificates on the application side, while Workload Identity Federation allows for password-less access and easier application security. To learn more, see X.509. SCRAM Password Authentication Atlas clusters support SCRAM password authentication for user authentication, but we recommend SCRAM only for use in development and test environments. If you leverage X.509 or SCRAM authentication, we recommend that you use a third-party secrets manager like HashiCorp Vault or AWS Secrets Manager to generate and store complex database credentials. To learn more, see SCRAM. Service Accounts Service accounts use industry-standard OAuth2.0 to securely authenticate with Atlas through the Atlas Administration API. We recommend that you use service accounts instead of API keys when possible because they provide added security through short-lived access tokens and required credential rotations. You can manage programmatic access for service accounts by using the Atlas UI, Atlas CLI, Atlas Administration API, and Terraform. API Keys Service accounts are the preferred method of authentication. Atlas provides legacy support for API key-based authentication for managing programmatic access. API key-based authentication uses HTTP Digest authentication to protect requests. To further enhance security and minimize the risk of unauthorized access: Follow best practices for rotating API keys regularly. To learn how to rotate these keys with HashiCorp Vault , for example, see the Hashicorp documentation. Use the IP access list for your API keys. To learn more, see Require an IP Access List for the Atlas Administration API. To learn more, see Atlas Administration API Authentication Methods. Secrets Management We recommend using a third-party secrets manager like HashiCorp Vault or AWS Secrets Manager to generate and store complex database credentials. A secrets manager can generate database credentials dynamically based on configured roles for Atlas databases. To learn more, see the blog Manage\nMongoDB Atlas Database Secrets in HashiCorp Vault. Deployments To learn our recommendations for deployments that relate to authentication, see Guidance for Atlas Orgs, Projects, and Clusters. Additional Security Measures To further enhance security and minimize the risk of unauthorized access, consider these additional security measures: Rotate service account secrets before they expire. Use an IP access list for your service accounts. Assign the least privileged Atlas role required for the service account's intended purpose to adhere to the principle of least privilege. To learn more, see Service Accounts Overview. Back Authorization and Authentication Next Authorization Rate this page On this page Atlas UI Authentication Atlas Database Authentication Atlas API Authentication Authentication Types Federated Authentication AWS IAM Role Authentication Multi-Factor Authentication X.509 Client Certificates SCRAM Password Authentication Service Accounts API Keys Secrets Management Deployments Additional Security Measures On this page Atlas UI Authentication Atlas Database Authentication Atlas API Authentication Authentication Types Federated Authentication AWS IAM Role Authentication Multi-Factor Authentication X.509 Client Certificates SCRAM Password Authentication Service Accounts API Keys Secrets Management Deployments Additional Security Measures Documentation Database Atlas Agent Engine Voyage AI Models",
+      "published_label": null
+    },
+    {
+      "url": "https://www.mongodb.com/docs/atlas/configure-api-access/",
+      "requested_url": "https://www.mongodb.com/docs/atlas/configure-api-access/",
+      "status": 200,
+      "title": "Get Started with the Atlas Administration API - Atlas - MongoDB Docs (https://www.mongodb.com/docs/atlas/configure-api-access/)",
+      "text": "Get Started with the Atlas Administration API - Atlas - MongoDB Docs For AI agents: a documentation index is available at https://www.mongodb.com/docs/llms.txt — markdown versions of all pages are available by appending .md to any URL path. Docs Menu Ask MongoDB AI Get Started with the Atlas Administration API Copy page Interface Atlas UI Atlas Administration API Atlas CLI Authentication Method Important Each Atlas Administration API has its own resources and requires initial setup. You can access the Atlas Administration API servers through the public Internet only. The Atlas Administration API is not available over connections that use network peering or private endpoints. To learn more, see Atlas Programmatic Access. The Atlas Administration API follows the principles of the REST architectural style to expose a number of internal resources which enable programmatic access to administrative features in Atlas. To learn more about the Atlas Administration API, see Atlas Administration API Reference. The Atlas Administration API doesn't provide access to the data stored in your clusters. To read or write data in a database, you must authenticate to your cluster using the credentials for a database\nuser with the appropriate read or write roles . You can use the Atlas Administration API to create and manage database users. To use the Atlas Administration API to manage your Atlas clusters, you must authenticate your API requests with one of the following authentication methods: Service account access tokens ( OAuth 2.0) API keys ( HTTP Digest Authentication) To learn about these methods, see Atlas Administration API Authentication Methods. The following sections describe how to use service accounts and API keys to configure programmatic access to your Atlas organizations and projects. Note The MongoDB Atlas Shared Responsibility Model defines the complementary duties of MongoDB and its customers in maintaining a secure and resilient data environment. Under this framework, MongoDB manages the security and operational integrity of the underlying platform, while customers are responsible for the configuration, management, and data policies of their specific deployments. For a detailed breakdown of ownership across security and operational excellence, see Shared Responsibility Model. Before You Begin Before configuring programmatic access, confirm the following: You have an Atlas account. To create one, see Create an Atlas Account. An Atlas organization exists. To create one, see Create an Organization. Required Access To create a service account or API keys for an organization, you must have Organization Owner access to that organization. To grant a service account access to a project, you must have Organization Owner access to the organization that owns the project. To grant API keys access to a project, you must have Project Owner access for that project. Optional: Require an IP Access List When you create an organization using the Atlas UI, Atlas requires an IP access list for the Atlas Administration API. This limits API requests to only those from the location-based IP or CIDR addresses that you specify in the IP access list. If you make a request to the Atlas Administration API without an IP access list entry, the server responds with a 403 status code. If you disable this feature, you can make API requests from any address on the Internet as long as the IP access list is empty. Once you add an IP access list entry, only requests originating from that IP address can make requests. Note IP access lists apply to using service account access tokens, not creating or revoking them. You can generate a token from any IP address, but you can only use it to call the API if your IP address is on the access list. Note IP access lists apply only to programmatic API keys and service accounts. They don't apply to other types of access to the Atlas Administration API, such as the Atlas CLI or delegated access granted through Atlas App Connections. Delegated access includes third-party partner applications, MongoDB applications such as MongoDB Compass , and Model Context Protocol (MCP) clients. If your organization requires all Atlas Administration API traffic to originate from specific addresses, don't enable delegated app access for that organization. Delegated access settings for partner applications and MCP clients are off by default in existing organizations. To set your organization to require IP access lists for every Atlas Administration API request after organization creation, follow these steps: 1 In Atlas , go to the Organization Settings page. If it's not already displayed, select your desired organization from the Organizations menu in the navigation bar. In the sidebar, click Organization Settings . The Organization Settings page displays. 2 Toggle the Require IP Access List for the Atlas Administration API setting to On . Grant Programmatic Access to an Organization Grant Programmatic Access to a Project To learn more about these two authentication methods, see Atlas Administration API Authentication Methods. To give API keys access to a project, you must have Project Access Manager or Project Owner access for that project. Add Project Access from a Project If you haven't already created a service account or API keys for an organization, you can create them for a project to grant that project access to the Atlas Administration API. The service account or API keys that you create for a project are automatically added to the parent organization with the permission Organization Member . Make an API Request The Atlas Administration API uses one of two authentication methods to authenticate requests: service account or API keys. You'll need the keys or secret that you saved when configuring your preferred authentication method to complete the following procedures. All Atlas Administration API endpoints have the following base URL: https://cloud.mongodb.com/api/atlas/<version> Important MongoDB uses HTTPS URLs to increase security. Using HTTP URLs will return a 301 status code. Tip Atlas Administration API Specification Atlas Administration API Error Codes Alternatively, you can use any tool that supports OpenAPI v3\nspecification to generate code samples or mock servers. For example, you can import the Atlas Admin API Specification into Postman to generate curl commands. Warning Using an HTTP URL with Postman will return a 301 status code as expected. However, in this scenario, Postman may automatically retry the request with HTTPS, but simultaneously strip the header and body from the retry request. This will return a 401 status code instead of 301, making it difficult to determine why the request failed. To use Postman to generate curl commands: 1 In the MongoDB Atlas Administration API documentation , click Download source in the navigation bar. 2 Right-click the OpenAPI specification format you want to download and copy the link. 3 Open Postman and click File , then Import . The Import window displays. 4 In the Import window, click Link and paste the download link that you copied in step 2. 5 Click Continue , then Import . 6 For the request for which you want to generate a curl command, click </> on the right and select cURL from the Code snippet dropdown. Next Steps To learn more about the Atlas Administration API, see Atlas Administration API Reference. To manage programmatic access to the Atlas Administration API, see any of the following procedures: Manage Programmatic Access to an Organization. Manage Programmatic Access to Multiple Organizations. Manage Programmatic Access to a Project. Rotate Service Account Secrets. Back Administration API Next Organization Access Rate this page On this page Before You Begin Required Access Optional: Require an IP Access List Grant Programmatic Access to an Organization Grant Programmatic Access to a Project Make an API Request Next Steps On this page Before You Begin Required Access Optional: Require an IP Access List Grant Programmatic Access to an Organization Grant Programmatic Access to a Project Make an API Request Next Steps Documentation Database Atlas Agent Engine Voyage AI Models",
+      "published_label": null
+    },
+    {
+      "url": "https://www.mongodb.com/docs/atlas/configure-api-access/?interface=atlas-ui&programmatic-access=api-key",
+      "requested_url": "https://www.mongodb.com/docs/atlas/configure-api-access/?interface=atlas-ui&programmatic-access=api-key",
+      "status": 200,
+      "title": "Get Started with the Atlas Administration API - Atlas - MongoDB Docs (https://www.mongodb.com/docs/atlas/configure-api-access/?interface=atlas-ui&programmatic-access=api-key)",
+      "text": "Get Started with the Atlas Administration API - Atlas - MongoDB Docs For AI agents: a documentation index is available at https://www.mongodb.com/docs/llms.txt — markdown versions of all pages are available by appending .md to any URL path. Docs Menu Ask MongoDB AI Get Started with the Atlas Administration API Copy page Interface Atlas UI Atlas Administration API Atlas CLI Authentication Method Important Each Atlas Administration API has its own resources and requires initial setup. You can access the Atlas Administration API servers through the public Internet only. The Atlas Administration API is not available over connections that use network peering or private endpoints. To learn more, see Atlas Programmatic Access. The Atlas Administration API follows the principles of the REST architectural style to expose a number of internal resources which enable programmatic access to administrative features in Atlas. To learn more about the Atlas Administration API, see Atlas Administration API Reference. The Atlas Administration API doesn't provide access to the data stored in your clusters. To read or write data in a database, you must authenticate to your cluster using the credentials for a database\nuser with the appropriate read or write roles . You can use the Atlas Administration API to create and manage database users. To use the Atlas Administration API to manage your Atlas clusters, you must authenticate your API requests with one of the following authentication methods: Service account access tokens ( OAuth 2.0) API keys ( HTTP Digest Authentication) To learn about these methods, see Atlas Administration API Authentication Methods. The following sections describe how to use service accounts and API keys to configure programmatic access to your Atlas organizations and projects. Note The MongoDB Atlas Shared Responsibility Model defines the complementary duties of MongoDB and its customers in maintaining a secure and resilient data environment. Under this framework, MongoDB manages the security and operational integrity of the underlying platform, while customers are responsible for the configuration, management, and data policies of their specific deployments. For a detailed breakdown of ownership across security and operational excellence, see Shared Responsibility Model. Before You Begin Before configuring programmatic access, confirm the following: You have an Atlas account. To create one, see Create an Atlas Account. An Atlas organization exists. To create one, see Create an Organization. Required Access To create a service account or API keys for an organization, you must have Organization Owner access to that organization. To grant a service account access to a project, you must have Organization Owner access to the organization that owns the project. To grant API keys access to a project, you must have Project Owner access for that project. Optional: Require an IP Access List When you create an organization using the Atlas UI, Atlas requires an IP access list for the Atlas Administration API. This limits API requests to only those from the location-based IP or CIDR addresses that you specify in the IP access list. If you make a request to the Atlas Administration API without an IP access list entry, the server responds with a 403 status code. If you disable this feature, you can make API requests from any address on the Internet as long as the IP access list is empty. Once you add an IP access list entry, only requests originating from that IP address can make requests. Note IP access lists apply to using service account access tokens, not creating or revoking them. You can generate a token from any IP address, but you can only use it to call the API if your IP address is on the access list. Note IP access lists apply only to programmatic API keys and service accounts. They don't apply to other types of access to the Atlas Administration API, such as the Atlas CLI or delegated access granted through Atlas App Connections. Delegated access includes third-party partner applications, MongoDB applications such as MongoDB Compass , and Model Context Protocol (MCP) clients. If your organization requires all Atlas Administration API traffic to originate from specific addresses, don't enable delegated app access for that organization. Delegated access settings for partner applications and MCP clients are off by default in existing organizations. To set your organization to require IP access lists for every Atlas Administration API request after organization creation, follow these steps: 1 In Atlas , go to the Organization Settings page. If it's not already displayed, select your desired organization from the Organizations menu in the navigation bar. In the sidebar, click Organization Settings . The Organization Settings page displays. 2 Toggle the Require IP Access List for the Atlas Administration API setting to On . Grant Programmatic Access to an Organization Grant Programmatic Access to a Project To learn more about these two authentication methods, see Atlas Administration API Authentication Methods. To give API keys access to a project, you must have Project Access Manager or Project Owner access for that project. Add Project Access from a Project If you haven't already created a service account or API keys for an organization, you can create them for a project to grant that project access to the Atlas Administration API. The service account or API keys that you create for a project are automatically added to the parent organization with the permission Organization Member . Make an API Request The Atlas Administration API uses one of two authentication methods to authenticate requests: service account or API keys. You'll need the keys or secret that you saved when configuring your preferred authentication method to complete the following procedures. All Atlas Administration API endpoints have the following base URL: https://cloud.mongodb.com/api/atlas/<version> Important MongoDB uses HTTPS URLs to increase security. Using HTTP URLs will return a 301 status code. Tip Atlas Administration API Specification Atlas Administration API Error Codes Alternatively, you can use any tool that supports OpenAPI v3\nspecification to generate code samples or mock servers. For example, you can import the Atlas Admin API Specification into Postman to generate curl commands. Warning Using an HTTP URL with Postman will return a 301 status code as expected. However, in this scenario, Postman may automatically retry the request with HTTPS, but simultaneously strip the header and body from the retry request. This will return a 401 status code instead of 301, making it difficult to determine why the request failed. To use Postman to generate curl commands: 1 In the MongoDB Atlas Administration API documentation , click Download source in the navigation bar. 2 Right-click the OpenAPI specification format you want to download and copy the link. 3 Open Postman and click File , then Import . The Import window displays. 4 In the Import window, click Link and paste the download link that you copied in step 2. 5 Click Continue , then Import . 6 For the request for which you want to generate a curl command, click </> on the right and select cURL from the Code snippet dropdown. Next Steps To learn more about the Atlas Administration API, see Atlas Administration API Reference. To manage programmatic access to the Atlas Administration API, see any of the following procedures: Manage Programmatic Access to an Organization. Manage Programmatic Access to Multiple Organizations. Manage Programmatic Access to a Project. Rotate Service Account Secrets. Back Administration API Next Organization Access Rate this page On this page Before You Begin Required Access Optional: Require an IP Access List Grant Programmatic Access to an Organization Grant Programmatic Access to a Project Make an API Request Next Steps On this page Before You Begin Required Access Optional: Require an IP Access List Grant Programmatic Access to an Organization Grant Programmatic Access to a Project Make an API Request Next Steps Documentation Database Atlas Agent Engine Voyage AI Models",
+      "published_label": null
+    }
+  ],
+  "claims": {
+    "auth": {
+      "value": [
+        "OAuth 2.0",
+        "API key"
+      ],
+      "sources": [
+        "https://www.mongodb.com/docs/atlas/api/api-authentication/",
+        "https://www.mongodb.com/docs/api/doc/atlas-admin-api-v2/authentication",
+        "https://www.mongodb.com/docs/atlas/architecture/current/auth/authentication/",
+        "https://www.mongodb.com/docs/atlas/configure-api-access/?interface=atlas-ui&programmatic-access=api-key"
+      ],
+      "evidence": [
+        {
+          "value": "OAuth 2.0",
+          "url": "https://www.mongodb.com/docs/atlas/api/api-authentication/",
+          "excerpt": "as Administration API accepts the following authentication methods: Service account access tokens ( OAuth 2.0) API keys ( HTTP Digest Authentication) To learn how to use service accounts and API keys to configure programmatic access to your Atlas organizations and projects, see the Atlas ",
+          "published_label": null
+        },
+        {
+          "value": "OAuth 2.0",
+          "url": "https://www.mongodb.com/docs/api/doc/atlas-admin-api-v2/authentication",
+          "excerpt": "entication The API accepts 2 different authentication methods: Digest auth (http) Service accounts (oauth2) Digest auth (http) Send a digest token\n      \n      in the Authorization HTTP header\n      to authenticate with the API. Service accounts (oauth2) Learn more about Service Accoun",
+          "published_label": null
+        },
+        {
+          "value": "OAuth 2.0",
+          "url": "https://www.mongodb.com/docs/atlas/architecture/current/auth/authentication/",
+          "excerpt": "you can manage Atlas database users using Azure Managed Identities, Google Service Accounts, or any OAuth 2.0-compliant service. These authentication mechanisms simplify management and enhance security by allowing for passwordless access to the Atlas database. AWS IAM Role Authentication ",
+          "published_label": null
+        },
+        {
+          "value": "API key",
+          "url": "https://www.mongodb.com/docs/atlas/architecture/current/auth/authentication/",
+          "excerpt": "Keys Service accounts are the preferred method of authentication. Atlas provides legacy support for API key-based authentication for managing programmatic access. API key-based authentication uses HTTP Digest authentication to protect requests. To further enhance security and minimize t",
+          "published_label": null
+        },
+        {
+          "value": "OAuth 2.0",
+          "url": "https://www.mongodb.com/docs/atlas/configure-api-access/?interface=atlas-ui&programmatic-access=api-key",
+          "excerpt": "your API requests with one of the following authentication methods: Service account access tokens ( OAuth 2.0) API keys ( HTTP Digest Authentication) To learn about these methods, see Atlas Administration API Authentication Methods. The following sections describe how to use service accou",
+          "published_label": null
+        }
+      ],
+      "reason": "Provisional extraction: validate scope and completeness against the cited page."
+    },
+    "credential_gate": {
+      "value": "unknown",
+      "sources": [],
+      "evidence": [],
+      "reason": "No sufficiently specific positive evidence extracted; review targeted search results."
+    },
+    "api_surface": {
+      "value": "unknown",
+      "sources": [],
+      "evidence": [],
+      "reason": "No sufficiently specific positive evidence extracted; review targeted search results."
+    },
+    "official_mcp": {
+      "value": "yes (provisional)",
+      "sources": [
+        "https://www.mongodb.com/docs/mcp-server/overview/?msockid=3b66bbb3af6963150203ad3fae3f6222"
+      ],
+      "evidence": [
+        {
+          "value": "yes (provisional)",
+          "url": "https://www.mongodb.com/docs/mcp-server/overview/?msockid=3b66bbb3af6963150203ad3fae3f6222",
+          "excerpt": "types: Local MCP for MongoDB MCP Server, which you run and manage yourself, and MongoDB Atlas Managed MCP Server, which MongoDB hosts and manages for you in Atlas. To learn more, see What is the MongoDB MCP Server? below. This page describes key concepts and use cases. If",
+          "published_label": null,
+          "context_warning": "Review vendor ownership, dates, and scope."
+        }
+      ],
+      "reason": "Provisional; check source date, scope, and vendor ownership."
+    },
+    "composio_toolkit": {
+      "value": "unknown",
+      "sources": [],
+      "evidence": [],
+      "reason": "No exact or reviewed alias match; absence is not established."
+    },
+    "verdict": {
+      "value": "unknown",
+      "sources": [],
+      "evidence": [],
+      "reason": "A supported access path, authentication method and API surface were not all extracted."
+    }
+  },
+  "validation": [
+    "All claims are provisional",
+    "No vendor MCP inference from Composio catalog",
+    "Negated MCP or client-only source is not counted as vendor-server proof"
+  ]
+}

@@ -1,0 +1,172 @@
+{
+  "app": {
+    "number": 74,
+    "name": "Jira",
+    "category": "Productivity and Project Management",
+    "hint": "developer.atlassian.com"
+  },
+  "replayed_at": "2026-11-23T18:17:24.194737+00:00",
+  "source_passes": [
+    "data/pass2/074.json",
+    "data/pass4/074.json"
+  ],
+  "source_search": "data/new_search/074.json",
+  "publication_date_note": "Published labels are retained exactly as supplied by search; missing labels are null. Relative labels must not be treated as exact publication dates.",
+  "claims": {
+    "auth": {
+      "value": [
+        "OAuth 2.0",
+        "Basic authentication",
+        "API token",
+        "API key"
+      ],
+      "sources": [
+        "https://developer.atlassian.com/server/jira/platform/basic-authentication/",
+        "https://developer.atlassian.com/cloud/jira/platform/basic-auth-for-rest-apis/?trk=article-ssr-frontend-pulse_little-text-block",
+        "https://developer.atlassian.com/developer-guide/auth/",
+        "https://support.atlassian.com/atlassian-account/docs/manage-api-tokens-for-your-atlassian-account/"
+      ],
+      "evidence": [
+        {
+          "value": "OAuth 2.0",
+          "url": "https://developer.atlassian.com/server/jira/platform/basic-authentication/",
+          "excerpt": "d manual calls to the REST APIs. Otherwise, consider using one of the following methods: OAuth 1.0a OAuth 2.0 Personal access token Overview Jiraâs REST API is protected by the same restrictions that are provided via Jiraâs standard web\ninterface. This means that if you do not log in,",
+          "published_label": null
+        },
+        {
+          "value": "Basic authentication",
+          "url": "https://developer.atlassian.com/server/jira/platform/basic-authentication/",
+          "excerpt": "Basic authentication Developer Documentation Resources News and Updates Get Support Sign in Developer Get Support Sign in DOCUMENTATION Cloud Data Center Resources News and Updates Get support Sign in",
+          "published_label": null
+        },
+        {
+          "value": "OAuth 2.0",
+          "url": "https://developer.atlassian.com/cloud/jira/platform/basic-auth-for-rest-apis/?trk=article-ssr-frontend-pulse_little-text-block",
+          "excerpt": ", consider building an app: Forge apps and Connect apps use more secure methods for authentication: OAuth 2.0 and JWT respectively.\nIn addition, authentication is built into the app frameworks, so you don't need to configure it.\nSee Security for Forge apps and Security for Connect apps . ",
+          "published_label": null
+        },
+        {
+          "value": "API token",
+          "url": "https://developer.atlassian.com/cloud/jira/platform/basic-auth-for-rest-apis/?trk=article-ssr-frontend-pulse_little-text-block",
+          "excerpt": " can authenticate themselves using basic authentication with an Atlassian account email address\nand API token .\nAuthentication using passwords has been deprecated. Basic authentication is not as secure as other methods. We recommend using it for simple scripts and\nmanual calls to the REST",
+          "published_label": null
+        },
+        {
+          "value": "Basic authentication",
+          "url": "https://developer.atlassian.com/cloud/jira/platform/basic-auth-for-rest-apis/?trk=article-ssr-frontend-pulse_little-text-block",
+          "excerpt": "Basic auth for REST APIs Developer Documentation Resources News and Updates Get Support Sign in Developer Get Support Sign in DOCUMENTATION Cloud Data Center Resources News and Updates Get s",
+          "published_label": null
+        },
+        {
+          "value": "OAuth 2.0",
+          "url": "https://developer.atlassian.com/developer-guide/auth/",
+          "excerpt": "ssian's latest app development platform, handles authentication for your app using managed APIs and OAuth 2.0 protocols.\nTo find out if Forge is right for your project, see the comparison of cloud development options and the Forge security overview . If you are building a Jira or Confluen",
+          "published_label": "5.9 years ago"
+        },
+        {
+          "value": "Basic authentication",
+          "url": "https://developer.atlassian.com/developer-guide/auth/",
+          "excerpt": " (identity) Authorization (access) Private use of REST APIs, such as testing or personal scripting. Basic authentication The appâs access level is the same as the user who generated the token . \n        Administrators canât revoke this access without disabling the user who generated the token. I",
+          "published_label": "5.9 years ago"
+        },
+        {
+          "value": "API key",
+          "url": "https://support.atlassian.com/atlassian-account/docs/manage-api-tokens-for-your-atlassian-account/",
+          "excerpt": "omewhere safe. You can't recover the API token later. As a security precaution, we don't store your API key value. Revoke an API token When you revoke a token it no longer works and we permanently remove it from your account. If you revoke an existing API token, you can replace it with ",
+          "published_label": null
+        },
+        {
+          "value": "API token",
+          "url": "https://support.atlassian.com/atlassian-account/docs/manage-api-tokens-for-your-atlassian-account/",
+          "excerpt": "After December 15, 2024, we set new API tokens to expire in one year by default. When you create an API token, you can set the expiration date to be from one day up to one year. After March 13, 2025, we set API tokens you created before December 15, 2024 to expire in one year. These API t",
+          "published_label": null
+        },
+        {
+          "value": "Basic authentication",
+          "url": "https://support.atlassian.com/atlassian-account/docs/manage-api-tokens-for-your-atlassian-account/",
+          "excerpt": "se case for API tokens is to allow scripts to access REST APIs for Atlassian cloud app s using HTTP basic authentication. Depending on the details of the HTTP library you use, you can replace your password with the token. For example, when using curl , you could do something like this: ## URL for AP",
+          "published_label": null
+        }
+      ],
+      "reason": "Provisional extraction: validate scope and completeness against the cited page."
+    },
+    "credential_gate": {
+      "value": "unknown",
+      "sources": [],
+      "evidence": [],
+      "reason": "No sufficiently specific positive evidence extracted; review targeted search results."
+    },
+    "api_surface": {
+      "value": [
+        "REST"
+      ],
+      "sources": [
+        "https://developer.atlassian.com/server/jira/platform/basic-authentication/",
+        "https://developer.atlassian.com/cloud/jira/platform/basic-auth-for-rest-apis/?trk=article-ssr-frontend-pulse_little-text-block",
+        "https://developer.atlassian.com/developer-guide/auth/",
+        "https://support.atlassian.com/atlassian-account/docs/manage-api-tokens-for-your-atlassian-account/",
+        "https://developer.atlassian.com/cloud/jira/platform/rest/v3/intro"
+      ],
+      "evidence": [
+        {
+          "value": "REST",
+          "url": "https://developer.atlassian.com/server/jira/platform/basic-authentication/",
+          "excerpt": "and Updates Get support Sign in Last updated Nov 5, 2026 Basic authentication Learn how to make the REST API requests to Jira Data Center using basic authentication with a username and password. If youâre looking for information about Jira Cloud basic authentication, check out the depr",
+          "published_label": null
+        },
+        {
+          "value": "REST",
+          "url": "https://developer.atlassian.com/cloud/jira/platform/basic-auth-for-rest-apis/?trk=article-ssr-frontend-pulse_little-text-block",
+          "excerpt": "Basic auth for REST APIs Developer Documentation Resources News and Updates Get Support Sign in Developer Get Support Sign in DOCUMENTATION Cloud Data Center Resources News and Updates Get support Sign in",
+          "published_label": null
+        },
+        {
+          "value": "REST",
+          "url": "https://developer.atlassian.com/developer-guide/auth/",
+          "excerpt": "t projects: Development goal Authentication method (identity) Authorization (access) Private use of REST APIs, such as testing or personal scripting. Basic authentication The appâs access level is the same as the user who generated the token . \n        Administrators canât revoke this",
+          "published_label": "5.9 years ago"
+        },
+        {
+          "value": "REST",
+          "url": "https://support.atlassian.com/atlassian-account/docs/manage-api-tokens-for-your-atlassian-account/",
+          "excerpt": "aste it into a script. If you use two-step verification to authenticate, your script needs to use a REST API token to authenticate. How to use an API token A primary use case for API tokens is to allow scripts to access REST APIs for Atlassian cloud app s using HTTP basic authentication.",
+          "published_label": null
+        },
+        {
+          "value": "REST",
+          "url": "https://developer.atlassian.com/cloud/jira/platform/rest/v3/intro",
+          "excerpt": "The Jira Cloud platform REST API Developer Documentation Resources News and Updates Get Support Sign in Developer Get Support Sign in DOCUMENTATION Cloud Data Center Resources News and Updates Get support Sign in",
+          "published_label": null
+        }
+      ],
+      "reason": "Provisional extraction: validate scope and completeness against the cited page."
+    },
+    "official_mcp": {
+      "value": "unknown",
+      "sources": [],
+      "evidence": [],
+      "reason": "No sufficiently specific positive evidence extracted; review targeted search results."
+    },
+    "composio_toolkit": {
+      "value": "listed",
+      "sources": [
+        "https://docs.composio.dev/toolkits/jira"
+      ],
+      "evidence": [],
+      "reason": "Catalog match; scope needs review."
+    },
+    "verdict": {
+      "value": "unknown",
+      "sources": [],
+      "evidence": [],
+      "reason": "A supported access path, authentication method and API surface were not all extracted."
+    }
+  },
+  "validation": [
+    "Automatic extraction is provisional and not a verified final claim",
+    "Unknown is not evidence of absence",
+    "No Composio-to-vendor-MCP inference",
+    "Basic authentication may be endpoint-specific",
+    "Client-only and negated statements are not positive MCP evidence"
+  ]
+}

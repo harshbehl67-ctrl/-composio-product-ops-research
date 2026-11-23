@@ -1,0 +1,80 @@
+{
+  "app": {
+    "number": 33,
+    "name": "LinkedIn Ads",
+    "category": "Marketing, Ads, Email and Social",
+    "hint": "learn.microsoft.com/linkedin/marketing"
+  },
+  "replayed_at": "2026-11-23T18:19:18.225208+00:00",
+  "source_passes": [
+    "data/pass2/033.json",
+    "data/pass4/033.json"
+  ],
+  "source_search": "data/new_search/033.json",
+  "publication_date_note": "Published labels are retained exactly as supplied by search; missing labels are null. Relative labels must not be treated as exact publication dates.",
+  "claims": {
+    "auth": {
+      "value": [
+        "OAuth 2.0"
+      ],
+      "sources": [
+        "https://learn.microsoft.com/en-gb/linkedin/shared/authentication/getting-access",
+        "https://learn.microsoft.com/he-il/linkedin/shared/authentication/getting-access?context=linkedin%2Fcontext&view=li-lms-2026-10"
+      ],
+      "evidence": [
+        {
+          "value": "OAuth 2.0",
+          "url": "https://learn.microsoft.com/en-gb/linkedin/shared/authentication/getting-access",
+          "excerpt": "ries . Getting Access to LinkedIn APIs Feedback Summarize this article for me The LinkedIn API uses OAuth 2.0 for user authorization and API authentication. Applications must be authorized and authenticated before they can fetch data from LinkedIn or get access to member data. This page s",
+          "published_label": null
+        },
+        {
+          "value": "OAuth 2.0",
+          "url": "https://learn.microsoft.com/he-il/linkedin/shared/authentication/getting-access?context=linkedin%2Fcontext&view=li-lms-2026-10",
+          "excerpt": "×©× ××ª ×××¨××× ××ª××××ª . Getting Access to LinkedIn APIs ××©×× The LinkedIn API uses OAuth 2.0 for user authorization and API authentication. Applications must be authorized and authenticated before they can fetch data from LinkedIn or get access to member data. This page s",
+          "published_label": "1.4 years ago"
+        }
+      ],
+      "reason": "Provisional extraction: validate scope and completeness against the cited page."
+    },
+    "credential_gate": {
+      "value": "unknown",
+      "sources": [],
+      "evidence": [],
+      "reason": "No sufficiently specific positive evidence extracted; review targeted search results."
+    },
+    "api_surface": {
+      "value": "unknown",
+      "sources": [],
+      "evidence": [],
+      "reason": "No sufficiently specific positive evidence extracted; review targeted search results."
+    },
+    "official_mcp": {
+      "value": "unknown",
+      "sources": [],
+      "evidence": [],
+      "reason": "No sufficiently specific positive evidence extracted; review targeted search results."
+    },
+    "composio_toolkit": {
+      "value": "listed",
+      "sources": [
+        "https://docs.composio.dev/toolkits/linkedin_ads"
+      ],
+      "evidence": [],
+      "reason": "Catalog match; scope needs review."
+    },
+    "verdict": {
+      "value": "unknown",
+      "sources": [],
+      "evidence": [],
+      "reason": "A supported access path, authentication method and API surface were not all extracted."
+    }
+  },
+  "validation": [
+    "Automatic extraction is provisional and not a verified final claim",
+    "Unknown is not evidence of absence",
+    "No Composio-to-vendor-MCP inference",
+    "Basic authentication may be endpoint-specific",
+    "Client-only and negated statements are not positive MCP evidence"
+  ]
+}

@@ -1,0 +1,165 @@
+{
+  "app": {
+    "number": 71,
+    "name": "Notion",
+    "category": "Productivity and Project Management",
+    "hint": "developers.notion.com"
+  },
+  "replayed_at": "2026-11-23T18:45:16.389370+00:00",
+  "source_passes": [
+    "data/pass2/071.json",
+    "data/pass4/071.json"
+  ],
+  "source_searches": [
+    "data/new_search/071.json",
+    "data/pass4_search/071.json"
+  ],
+  "publication_date_note": "Search publication labels are retained exactly; null means no label was available. Relative labels are not exact dates.",
+  "claims": {
+    "auth": {
+      "value": [
+        "API key",
+        "API token",
+        "Bearer token"
+      ],
+      "status": "provisional",
+      "sources": [
+        "https://www.notion.com/help/create-integrations-with-the-notion-api",
+        "https://www.notion.com/help/mcp-connections-for-custom-agents?trk=article-ssr-frontend-pulse_little-text-block",
+        "https://www.notion.com/help/mcp-connections-for-custom-agents",
+        "https://www.notion.com/en-gb/help/mcp-connections-for-custom-agents?nxtPslug=mcp-connections-for-custom-agents",
+        "https://www.notion.com/en-gb/help/create-integrations-with-the-notion-api?nxtPslug=create-integrations-with-the-notion-api",
+        "https://www.notion.com/en-gb/help/create-integrations-with-the-notion-api"
+      ],
+      "evidence": [
+        {
+          "value": "API key",
+          "url": "https://www.notion.com/help/create-integrations-with-the-notion-api",
+          "excerpt": "imited set of triggers. Learn more Notion API File upload API Best practices for handling API keys Up next See live, synced visualizations of links from popular platforms right in your workspace — no need to switch between apps or lose context. Read more →",
+          "published_label": null
+        },
+        {
+          "value": "API token",
+          "url": "https://www.notion.com/help/create-integrations-with-the-notion-api",
+          "excerpt": "connection has one or more owners, and every owner can manage the connection and get its API token. Who can create a connection depends on your plan and your workspace's settings. Learn more about enterprise connection settings → Looking for admin tokens? The tokens o",
+          "published_label": null
+        },
+        {
+          "value": "API key",
+          "url": "https://www.notion.com/help/mcp-connections-for-custom-agents?trk=article-ssr-frontend-pulse_little-text-block",
+          "excerpt": "or both of the following sign-in methods: OAuth Header-based authentication (for example, API keys or bearer tokens) Some OAuth servers don't support dynamic client registration (DCR) . This means Notion must pre-register a client application with the third-party ser",
+          "published_label": null
+        },
+        {
+          "value": "Bearer token",
+          "url": "https://www.notion.com/help/mcp-connections-for-custom-agents?trk=article-ssr-frontend-pulse_little-text-block",
+          "excerpt": "he following sign-in methods: OAuth Header-based authentication (for example, API keys or bearer tokens) Some OAuth servers don't support dynamic client registration (DCR) . This means Notion must pre-register a client application with the third-party service before OAuth",
+          "published_label": null
+        },
+        {
+          "value": "API key",
+          "url": "https://www.notion.com/help/mcp-connections-for-custom-agents",
+          "excerpt": "or both of the following sign-in methods: OAuth Header-based authentication (for example, API keys or bearer tokens) Some OAuth servers don't support dynamic client registration (DCR) . This means Notion must pre-register a client application with the third-party ser",
+          "published_label": null
+        },
+        {
+          "value": "Bearer token",
+          "url": "https://www.notion.com/help/mcp-connections-for-custom-agents",
+          "excerpt": "he following sign-in methods: OAuth Header-based authentication (for example, API keys or bearer tokens) Some OAuth servers don't support dynamic client registration (DCR) . This means Notion must pre-register a client application with the third-party service before OAuth",
+          "published_label": null
+        },
+        {
+          "value": "API key",
+          "url": "https://www.notion.com/en-gb/help/mcp-connections-for-custom-agents?nxtPslug=mcp-connections-for-custom-agents",
+          "excerpt": "or both of the following sign-in methods: OAuth Header-based authentication (for example, API keys or bearer tokens) Some OAuth servers don't support dynamic client registration (DCR) . This means Notion must pre-register a client application with the third-party ser",
+          "published_label": null
+        },
+        {
+          "value": "Bearer token",
+          "url": "https://www.notion.com/en-gb/help/mcp-connections-for-custom-agents?nxtPslug=mcp-connections-for-custom-agents",
+          "excerpt": "he following sign-in methods: OAuth Header-based authentication (for example, API keys or bearer tokens) Some OAuth servers don't support dynamic client registration (DCR) . This means Notion must pre-register a client application with the third-party service before OAuth",
+          "published_label": null
+        },
+        {
+          "value": "API key",
+          "url": "https://www.notion.com/en-gb/help/create-integrations-with-the-notion-api?nxtPslug=create-integrations-with-the-notion-api",
+          "excerpt": "imited set of triggers. Learn more Notion API File upload API Best practices for handling API keys Up next See live, synced visualisations of links from popular platforms right in your workspace — no need to switch between apps or lose context. Read more →",
+          "published_label": null
+        },
+        {
+          "value": "API token",
+          "url": "https://www.notion.com/en-gb/help/create-integrations-with-the-notion-api?nxtPslug=create-integrations-with-the-notion-api",
+          "excerpt": "connection has one or more owners, and every owner can manage the connection and get its API token. Who can create a connection depends on your plan and your workspace’s settings. Learn more about enterprise connection settings → Looking for admin tokens? The tokens o",
+          "published_label": null
+        },
+        {
+          "value": "API key",
+          "url": "https://www.notion.com/en-gb/help/create-integrations-with-the-notion-api",
+          "excerpt": "imited set of triggers. Learn more Notion API File upload API Best practices for handling API keys Up next See live, synced visualisations of links from popular platforms right in your workspace — no need to switch between apps or lose context. Read more →",
+          "published_label": null
+        },
+        {
+          "value": "API token",
+          "url": "https://www.notion.com/en-gb/help/create-integrations-with-the-notion-api",
+          "excerpt": "connection has one or more owners, and every owner can manage the connection and get its API token. Who can create a connection depends on your plan and your workspace’s settings. Learn more about enterprise connection settings → Looking for admin tokens? The tokens o",
+          "published_label": null
+        }
+      ],
+      "reason": "Provisional extraction; validate scope and completeness against cited pages."
+    },
+    "credential_gate": {
+      "value": "unknown",
+      "status": "provisional",
+      "sources": [],
+      "evidence": [],
+      "reason": "No sufficiently specific official evidence extracted."
+    },
+    "api_surface": {
+      "value": "unknown",
+      "status": "provisional",
+      "sources": [],
+      "evidence": [],
+      "reason": "No sufficiently specific official evidence extracted."
+    },
+    "official_mcp": {
+      "value": "client_only",
+      "status": "provisional",
+      "sources": [
+        "https://www.notion.com/en-gb/help/connect-mcp-servers-to-your-notion-agent"
+      ],
+      "evidence": [
+        {
+          "value": "client_only",
+          "url": "https://www.notion.com/en-gb/help/connect-mcp-servers-to-your-notion-agent",
+          "excerpt": "Connect MCP Servers to your Notion Agent Search help centre Your Notion Agent can connect to other apps you use through MCP (Model Context Protocol) Servers. MCP is a common way for AI tools to connect to other apps. If an app has an MCP Server, you can connect it to your Notion Agent. Once you connect an MCP Server, your Notion Agent can look up i",
+          "published_label": null,
+          "context_note": "Source describes connecting to external MCP servers, not operating a vendor server."
+        }
+      ],
+      "reason": "Provisional; check date, ownership and access scope."
+    },
+    "composio_toolkit": {
+      "value": "listed",
+      "status": "provisional",
+      "sources": [
+        "https://docs.composio.dev/toolkits/notion"
+      ],
+      "evidence": [],
+      "reason": "Catalog match only; not vendor MCP evidence."
+    },
+    "verdict": {
+      "value": "unknown",
+      "status": "provisional",
+      "sources": [],
+      "evidence": [],
+      "reason": "No sufficiently specific official evidence extracted."
+    }
+  },
+  "validation": [
+    "Automatic extraction is provisional until independently reviewed",
+    "Unknown is not evidence of absence",
+    "Composio evidence cannot establish vendor MCP",
+    "Client-only and negated MCP statements are not vendor-server proof",
+    "API breadth is a text-coverage heuristic, not an endpoint census"
+  ]
+}

@@ -1,0 +1,120 @@
+{
+  "app": {
+    "number": 30,
+    "name": "Vonage",
+    "category": "Communications and Messaging",
+    "hint": "developer.vonage.com"
+  },
+  "replayed_at": "2026-11-23T18:17:22.021194+00:00",
+  "source_passes": [
+    "data/pass2/030.json",
+    "data/pass4/030.json"
+  ],
+  "source_search": "data/new_search/030.json",
+  "publication_date_note": "Published labels are retained exactly as supplied by search; missing labels are null. Relative labels must not be treated as exact publication dates.",
+  "claims": {
+    "auth": {
+      "value": [
+        "API key",
+        "Basic authentication",
+        "OAuth 2.0"
+      ],
+      "sources": [
+        "https://developer.vonage.com/en/verify/concepts/authentication",
+        "https://developer.vonage.com/en/getting-started-network/guides/server-authentication"
+      ],
+      "evidence": [
+        {
+          "value": "API key",
+          "url": "https://developer.vonage.com/en/verify/concepts/authentication",
+          "excerpt": "Auth Quick testing / POC JWT Bearer Production Basic Authentication Basic Authentication sends your API Key and API Secret Base64-encoded in the Authorization header. You can find these credentials in your API settings in the Vonage Dashboard. It is the simplest way to get started with ",
+          "published_label": null
+        },
+        {
+          "value": "Basic authentication",
+          "url": "https://developer.vonage.com/en/verify/concepts/authentication",
+          "excerpt": " Documentation Skip to Main Content Authentication Verify API supports two types of authentication: Basic Authentication JWT When should you use Basic Authentication or JWT? Verify supports two authentication methods: Basic authentication and JWT Bearer authentication. Understanding the differences ",
+          "published_label": null
+        },
+        {
+          "value": "OAuth 2.0",
+          "url": "https://developer.vonage.com/en/getting-started-network/guides/server-authentication",
+          "excerpt": " the API call . Make an OIDC Request OpenID Connect (OIDC) is an identity layer built on top of the OAuth 2.0 protocol, which provides a way to verify a user's identity using the JWT token. POST https://api-eu.vonage.com/oauth2/bc-authorize Copy curl - X POST https : //api-eu.vonage.com/o",
+          "published_label": null
+        }
+      ],
+      "reason": "Provisional extraction: validate scope and completeness against the cited page."
+    },
+    "credential_gate": {
+      "value": "unknown",
+      "sources": [],
+      "evidence": [],
+      "reason": "No sufficiently specific positive evidence extracted; review targeted search results."
+    },
+    "api_surface": {
+      "value": "unknown",
+      "sources": [],
+      "evidence": [],
+      "reason": "No sufficiently specific positive evidence extracted; review targeted search results."
+    },
+    "official_mcp": {
+      "value": "yes (provisional)",
+      "sources": [
+        "https://developer.vonage.com/en/mcp-server/how-to-guides/install-tooling-mcp-server",
+        "https://developer.vonage.com/en/mcp-server/technical-details",
+        "https://developer.vonage.com/en/mcp-server/how-to-guides/install-documentation-mcp-server",
+        "https://developer.vonage.com/en/mcp-server/overview"
+      ],
+      "evidence": [
+        {
+          "value": "yes (provisional)",
+          "url": "https://developer.vonage.com/en/mcp-server/how-to-guides/install-tooling-mcp-server",
+          "excerpt": "How to Install the Vonage Server API Bindings MCP Server Skip to Main Content How to Install the Vonage Server API Bindings MCP Server The Vonage Server API Bindings MCP Server , also known as the Tooling MCP Server,",
+          "published_label": null,
+          "context_warning": "Review vendor ownership, dates, and scope."
+        },
+        {
+          "value": "yes (provisional)",
+          "url": "https://developer.vonage.com/en/mcp-server/technical-details",
+          "excerpt": "Technical Details Skip to Main Content Technical Details The Vonage MCP Server allows AI agents and developer tools to interact with Vonage APIs through the Model Context Protocol (MCP) — an open standard that defines how large language m",
+          "published_label": null,
+          "context_warning": "Review vendor ownership, dates, and scope."
+        },
+        {
+          "value": "yes (provisional)",
+          "url": "https://developer.vonage.com/en/mcp-server/how-to-guides/install-documentation-mcp-server",
+          "excerpt": "How to Install the Vonage Documentation MCP Server Skip to Main Content How to Install the Vonage Documentation MCP Server The Vonage Documentation MCP Server lets you query official Vonage API documentation di",
+          "published_label": null,
+          "context_warning": "Review vendor ownership, dates, and scope."
+        },
+        {
+          "value": "yes (provisional)",
+          "url": "https://developer.vonage.com/en/mcp-server/overview",
+          "excerpt": "Vonage MCP Server Overview | Vonage MCP Server Documenation Skip to Main Content Documentation Vonage MCP Server Vonage MCP Server The Vonage MCP Server enables AI agents and developer tools to discover, de",
+          "published_label": null,
+          "context_warning": "Review vendor ownership, dates, and scope."
+        }
+      ],
+      "reason": "Provisional; check source date, scope, and vendor ownership."
+    },
+    "composio_toolkit": {
+      "value": "unknown",
+      "sources": [],
+      "evidence": [],
+      "reason": "No exact or reviewed alias match; absence is not established."
+    },
+    "verdict": {
+      "value": "unknown",
+      "sources": [],
+      "evidence": [],
+      "reason": "A supported access path, authentication method and API surface were not all extracted."
+    }
+  },
+  "validation": [
+    "Automatic extraction is provisional and not a verified final claim",
+    "Unknown is not evidence of absence",
+    "No Composio-to-vendor-MCP inference",
+    "Basic authentication may be endpoint-specific",
+    "Client-only and negated statements are not positive MCP evidence"
+  ]
+}

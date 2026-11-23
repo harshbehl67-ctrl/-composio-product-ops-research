@@ -1,0 +1,261 @@
+{
+  "app": {
+    "number": 41,
+    "name": "Shopify",
+    "category": "Ecommerce",
+    "hint": "shopify.dev"
+  },
+  "checked_at": "2026-11-23T18:15:18.060025+00:00",
+  "prior_source": "data/pass2/041.json",
+  "search_source": "data/pass4_search/041.json",
+  "new_candidates": [
+    {
+      "url": "https://shopify.dev/docs/apps/build/apis",
+      "title": "APIs for apps (https://shopify.dev/docs/apps/build/apis)",
+      "published_label": null
+    },
+    {
+      "url": "https://shopify.dev/docs/apps/build/authentication-authorization",
+      "title": "About app authentication (https://shopify.dev/docs/apps/build/authentication-authorization)",
+      "published_label": null
+    },
+    {
+      "url": "https://shopify.dev/docs/api?assistant=1",
+      "title": "Shopify APIs, libraries, and tools (https://shopify.dev/docs/api?assistant=1)",
+      "published_label": null
+    },
+    {
+      "url": "https://shopify.dev/docs/api/admin-graphql/latest",
+      "title": "GraphQL Admin API reference (https://shopify.dev/docs/api/admin-graphql/latest)",
+      "published_label": null
+    },
+    {
+      "url": "https://shopify.dev/docs/api/admin-rest",
+      "title": "REST Admin API reference (https://shopify.dev/docs/api/admin-rest)",
+      "published_label": null
+    },
+    {
+      "url": "https://shopify.dev/docs/api/admin-rest/latest",
+      "title": "REST Admin API reference (https://shopify.dev/docs/api/admin-rest/latest)",
+      "published_label": null
+    },
+    {
+      "url": "https://shopify.dev/docs/apps/build/authentication-authorization/access-tokens",
+      "title": "Access tokens (https://shopify.dev/docs/apps/build/authentication-authorization/access-tokens)",
+      "published_label": null
+    },
+    {
+      "url": "https://shopify.dev/docs/api/admin-graphql/2026-07",
+      "title": "GraphQL Admin API reference (https://shopify.dev/docs/api/admin-graphql/2026-07)",
+      "published_label": null
+    },
+    {
+      "url": "https://shopify.dev/docs/api/admin-graphql/2026-01",
+      "title": "GraphQL Admin API reference (https://shopify.dev/docs/api/admin-graphql/2026-01)",
+      "published_label": null
+    },
+    {
+      "url": "https://shopify.dev/docs/api/storefront/latest",
+      "title": "Storefront API reference (https://shopify.dev/docs/api/storefront/latest)",
+      "published_label": null
+    },
+    {
+      "url": "https://shopify.dev/docs/apps/build/authentication-authorization/manage-credentials",
+      "title": "Manage your app credentials (https://shopify.dev/docs/apps/build/authentication-authorization/manage-credentials)",
+      "published_label": null
+    },
+    {
+      "url": "https://shopify.dev/docs/apps/build/authentication-authorization/legacy/admin-custom-apps",
+      "title": "Maintain admin-created custom apps (https://shopify.dev/docs/apps/build/authentication-authorization/legacy/admin-custom-apps)",
+      "published_label": null
+    },
+    {
+      "url": "https://shopify.dev/docs/storefronts/headless/building-with-the-customer-account-api/getting-started",
+      "title": "Getting started with the Customer Account API (https://shopify.dev/docs/storefronts/headless/building-with-the-customer-account-api/getting-started)",
+      "published_label": null
+    },
+    {
+      "url": "https://shopify.dev/docs/apps/build/dev-dashboard/user-permissions",
+      "title": "User permissions (https://shopify.dev/docs/apps/build/dev-dashboard/user-permissions)",
+      "published_label": null
+    }
+  ],
+  "selected": [
+    {
+      "url": "https://shopify.dev/docs/apps/build/authentication-authorization",
+      "title": "About app authentication (https://shopify.dev/docs/apps/build/authentication-authorization)",
+      "published_label": null
+    },
+    {
+      "url": "https://shopify.dev/docs/apps/build/apis",
+      "title": "APIs for apps (https://shopify.dev/docs/apps/build/apis)",
+      "published_label": null
+    },
+    {
+      "url": "https://shopify.dev/docs/apps/build/authentication-authorization/access-tokens",
+      "title": "Access tokens (https://shopify.dev/docs/apps/build/authentication-authorization/access-tokens)",
+      "published_label": null
+    }
+  ],
+  "new_pages": [
+    {
+      "url": "https://shopify.dev/docs/apps/build/authentication-authorization",
+      "requested_url": "https://shopify.dev/docs/apps/build/authentication-authorization",
+      "status": 200,
+      "title": "About app authentication (https://shopify.dev/docs/apps/build/authentication-authorization)",
+      "text": "About app authentication Skip to main content Collapse sidebar Shopify apps call the GraphQL Admin API to read and write store data on behalf of merchants. Before your app can make those calls, it needs to authenticate: prove which app is calling, which merchant approved it, and what the app is allowed to do. This section covers how that authentication works for apps calling the GraphQL Admin API, and points you to the setup path for the kind of app you're building. Other Shopify APIs issue their own token types and use their own headers, so if you're authenticating requests to the Storefront API or the Customer Account API, see Shopify API authentication instead. You don't implement OAuth by hand for most apps. Shopify CLI and the Shopify app templates handle the token flow for you. Anchor to What you can do What you can do Call the GraphQL Admin API as an installed app, limited to the access scopes a merchant approved. Call the GraphQL Admin API directly from your app's frontend with Direct API access , where App Bridge authenticates each request. Run background jobs and scheduled tasks, and subscribe to webhooks, using an offline access token that persists across sessions. Attribute actions to a specific staff member and enforce per-user permissions using online access tokens. Give a subsystem limited, scoped access to Shopify APIs without sharing your app's full credentials, using delegate access tokens . Anchor to How it works How it works For any app with a backend of its own, authentication follows the same three steps: Your app gets an access token for the store it's calling. Your app sends the token in the X-Shopify-Access-Token header on every GraphQL Admin API request. Shopify returns the data the token's access scopes allow, or an error if the request doesn't meet an access requirement . What differs is how your app gets that token: Most apps get one after a merchant installs the app and approves its scopes. After installation and scope approval, an app can request tokens for later server-side work with client credentials (including a signed client assertion ) without another merchant session or approval step. This works for stores in your organization, and for any store that has installed an app with public distribution that uses a client assertion. Extension-only apps have no backend and never hold a token. Shopify authenticates their requests through Direct API access . Choosing an approach maps each option to its setup guide. Anchor to Access requirements Access requirements Every GraphQL Admin API request is checked against a few different requirements. Most apps only need the first two: A valid access token : Your app holds a token for the store it's calling and sends it in the X-Shopify-Access-Token header. The access scope the field requires : Each field and mutation names the scope that grants it, and your app's token carries the scopes the merchant approved. Refer to access scopes . For a small number of scopes, Shopify's approval : Shopify grants some access scopes to individual apps rather than to every app that declares them. Access scopes lists which ones and how to request each. An online access token's staff permissions : Apps get offline access tokens by default, but if your app requests an online access token instead, it's narrowed to what the staff member who authorized it can do, so a request can be refused even when your app holds the scope. Approval to use protected customer data : Fields that return a customer's personal data need a separate approval if your app is public. A custom app has that access automatically, though an admin-created custom app's access to name, address, phone, and email fields varies by plan. Refer to protected customer data . Anchor to Key terminology Key terminology These terms come up across Shopify's authentication flows and throughout the rest of this section. Anchor to Authentication and authorization Authentication and authorization Authentication proves which identity is making a request. Authorization determines what that identity is allowed to do. On each API request, the access token does both: it identifies your app, and its access scopes determine what it can access. Some flows authenticate a user first. For example, embedded apps validate an ID token , then exchange it for an access token. Anchor to Access token Access token The credential your code sends on each GraphQL Admin API request, in the X-Shopify-Access-Token header. Online or offline describes a token's lifetime: online tokens last as long as a staff member's session, while offline tokens persist across sessions. See access tokens . Anchor to ID token ID token A short-lived JWT that proves a request comes from an authenticated Shopify user. App Bridge issues one to the frontend of an app running inside the Shopify admin, and your app usually exchanges it for an access token rather than sending it to an API. App Bridge 2.0 and older documentation call the same credential a session token. See ID tokens , or Set up session tokens with App Bridge 2.0 if that's the version your app uses. Anchor to Grant Grant The OAuth flow your app uses to get an access token. Shopify supports three, and which one applies depends on where your app runs and whose stores it acts on: Token exchange , for apps that run inside the Shopify admin. Your app exchanges an ID token for an access token without redirecting the merchant. Authorization code grant , for apps that run outside the Shopify admin. The merchant is redirected to Shopify to approve access, then back to your app with a code that your app exchanges for an access token. Client credentials grant , for server-side work without a merchant session. Apps can authenticate with a client secret for stores in their organization, or with a client assertion signed with their private key. Public-distribution apps using a client assertion can request tokens for any store that has installed them. Choosing an approach maps each grant to its setup guide. Anchor to Shopify managed installation Shopify managed installation The installation method where Shopify installs your app and updates its access scopes without calling your app. You declare the scopes your app needs in its shopify.app.toml configuration file and push it to Shopify, which then handles the merchant's approval. Apps built with Shopify CLI use managed installation by default, which is why they don't implement the authorization code grant. Anchor to Client ID and client secret Client ID and client secret The credentials that identify your app, issued when you create it. The client ID is public. The client secret isn't: it proves a request comes from your app, so keep it server-side and never ship it in client code. Don't confuse them with the client credentials grant, which is one of the flows that uses them. See manage your app credentials . Anchor to Access scopes Access scopes A named unit of access that a merchant grants your app, such as read_products or write_orders . The scopes on an access token determine what that token can read and write. Any scope that writes a resource also grants read access to it, so request the write scope only when your app needs both. Scopes are one of several access requirements a request has to meet. See manage access scopes . Anchor to Choosing an approach Choosing an approach Most apps are embedded, meaning they run inside the Shopify admin, and building one with Shopify CLI is the recommended path. Apps that aren't embedded might run outside the Shopify admin, or act only on stores in your own organization. How your app gets an access token depends on where it runs and whose stores it acts on, and an app with no backend of its own doesn't get one at all: If your app How it authenticates Set it up Runs in the Shopify admin and is built with Shopify CLI Token exchange Authentication for apps built with Shopify CLI Runs in the Shopify admin but doesn't use a Shopify app template Token exchange Authenticate an embedded app without a template Runs outside the Shopify admin Authorization code grant Authenticate a standalone or API-only app Is a server-side integration that acts on your own stores Client credentials grant Authenticate an app for stores in your organization Needs to act on stores that have installed it, without a merchant session, such as for background jobs Client credentials grant with a client assertion Get application-only access tokens for installed stores Is extension-only, with no backend of its own Direct API access , so there's no token to get Build an extension-only app The client credentials grant works only for stores in your organization, unless your app has public distribution and authenticates with a client assertion. Every other option works on any merchant's stores, including your clients'. For information about getting your app onto stores outside your own organization, see About app distribution . Whichever token route you use, your app sends the token it ends up with in the same header, and the GraphQL Admin API calls it makes with that token are the same. If you're building without a template, Shopify's official libraries can handle token exchange, request verification, and GraphQL Admin API calls for you. Info The table above doesn't cover apps created directly in the Shopify admin. Shopify generates an access token for these apps when the merchant installs them. You can no longer create these apps, but if you maintain one, see Maintain admin-created custom apps . Info : The table above doesn't cover apps created directly in the Shopify admin. Shopify generates an access token for these apps when the merchant installs them. You can no longer create these apps, but if you maintain one, see Maintain admin-created custom apps . Was this page helpful? Yes No",
+      "published_label": null
+    },
+    {
+      "url": "https://shopify.dev/docs/apps/build/apis",
+      "requested_url": "https://shopify.dev/docs/apps/build/apis",
+      "status": 200,
+      "title": "APIs for apps (https://shopify.dev/docs/apps/build/apis)",
+      "text": "APIs for apps Skip to main content Collapse sidebar Your app's code runs in a few different places: on your own backend or storefront, in extensions that Shopify renders, and in Shopify Functions that run inside Shopify. Each place has its own kind of API, with its own authentication and limits. This page organizes Shopify's APIs by where the code that calls them runs, so you can find the right one for what you're building. The full API reference has the schemas and every field. Anchor to GraphQL APIs Graph QL APIs These APIs are GraphQL endpoints that you send HTTP requests to. Some can be called only from your backend, because they authenticate with a secret token that the merchant granted your app. Others support public clients, so a browser or a mobile app can query them directly. API Use it for Called from Authenticated as GraphQL Admin API Reading and writing store data: products, orders, customers, inventory, metafields. The primary API for most apps. Your backend The app, with an access token and the access scopes the merchant granted Storefront API Buyer-facing storefronts and carts, including headless and custom storefronts. A browser or mobile app with public access, or your backend with private access A public or private storefront token Customer Account API Logged-in buyer data: order history, profile, addresses. A public client (web or mobile, using PKCE) or a confidential client on your backend The buyer, through customer accounts ShopifyQL Analytics queries against store data, in an SQL-like language. Your backend, through the GraphQL Admin API The app Payments Apps API Payments partners resolving and rejecting payment sessions. Your backend The payments app Partner API Your own Partner organization data, such as app installs and payouts. Your backend Your Partner organization Note The REST Admin API is legacy. New apps should use the GraphQL Admin API, which is where new features ship. Note : The REST Admin API is legacy. New apps should use the GraphQL Admin API, which is where new features ship. Anchor to Webhooks and events Webhooks and events Instead of polling for changes, your app subscribes to them. Shopify sends each change to an endpoint that you own, and your app verifies and processes the delivery. Webhooks are the production mechanism today. Subscribe to a topic, and Shopify posts each change to your endpoint. Events is the successor to webhooks, in developer preview on the unstable API version for a subset of topics. It adds triggers that narrow deliveries and a GraphQL query that shapes each payload. Use it for early testing, and keep webhooks for the topics it doesn't cover yet. App Events flow in the other direction: your app reports its own activity, and each event lands in the Dev Dashboard alongside your webhook and Function logs. Anchor to Extension APIs Extension APIs An app extension is code that Shopify renders inside its own UI. Each surface gives extensions a JavaScript API scoped to what that surface can do, such as reading the current order, adding a banner, blocking progress, or opening a modal. Shopify authenticates those calls for you, so there's no token to manage, and you build the UI itself from Polaris web components . Surface Extension API Fetching more data App Home, embedded in the admin App Bridge , or App Home UI extensions for extension-only apps The GraphQL Admin API from front-end code, in both models Admin actions, blocks and print actions Admin extensions API Direct API access to the GraphQL Admin API, and an authorization header added for you on any fetch() to your app's own URL Checkout and Thank you Checkout UI extensions API A session token the extension attaches to calls to your own backend, which your server verifies before it trusts the request Customer accounts Customer account UI extensions API A session token , verified by your server the same way Point of Sale POS UI extensions API The Direct Access API for the GraphQL Admin API, and a session token for calls to your own backend Online store Liquid in a theme app extension , rather than a JavaScript API. Product metafields and shop metaobjects are available in the render The Ajax API or the Storefront API, for anything fetched after the page loads Storefront analytics Web Pixels API Anchor to Function APIs Function APIs A Shopify Function runs inside Shopify's backend during operations like checkout and cart calculations, where a network call would be too slow. Because of that, Functions don't call APIs over the network by default. Instead, you declare an input query against the Shopify Function APIs schema for your target. Shopify runs the query, passes the result to your WebAssembly module as JSON, and expects a typed result back. There's no endpoint, no token, and no rate limit. If your Function needs external data, then use network access . You describe the HTTP request in a fetch target, and Shopify performs the request, retries it on transient failures, and passes the response to your run target. Shopify enables network access for each target individually, so check the availability table for the target you're building. Anchor to Next steps Next steps Make your first authenticated call in the Build an app tutorial. Understand how your app gets an access token and which scopes it needs. Review API usage for the behaviors that are specific to Shopify's GraphQL APIs, including rate limits, global IDs, and versioning. Browse the GraphQL Admin API reference for the objects, queries, and mutations available to your app. Was this page helpful? Yes No",
+      "published_label": null
+    },
+    {
+      "url": "https://shopify.dev/docs/apps/build/authentication-authorization/access-tokens",
+      "requested_url": "https://shopify.dev/docs/apps/build/authentication-authorization/access-tokens",
+      "status": 200,
+      "title": "Access tokens (https://shopify.dev/docs/apps/build/authentication-authorization/access-tokens)",
+      "text": "Access tokens Skip to main content Collapse sidebar An access token is a credential your app sends with each API request. It authenticates your app to the API and carries a set of access scopes that authorize what your app can access. Shopify enforces those scopes on every request, returning only the data they allow. Your app obtains a token through an authorization flow called a grant, such as token exchange , then includes it in a request header on each call. Because a token is scoped to a specific set of permissions and can expire or be revoked, a leaked token exposes only what it was granted, and you can revoke access without rotating your app's core credentials. This page covers access tokens for the GraphQL Admin API , which authenticates requests with a token sent in the X-Shopify-Access-Token header. Other Shopify APIs issue their own token types and use their own headers. For which token and header each API expects, see Shopify API authentication . If you're setting up authentication for an app, start with About app authentication , which guides you to the flow for your app type. This page is the reference for the token types and grants themselves. Anchor to Access tokens and ID tokens Access tokens and ID tokens An access token and an ID token do two different jobs: Access token : Authenticates your app. It proves your app is allowed to call the API, and its access scopes determine what your app can read and write. ID token : Authenticates the user. It proves that a logged-in Shopify user is making the request from a specific store. It carries no permissions, and you can't use it to call a Shopify API. Your app gets the ID token first, then exchanges it for an access token. The ID token is how Shopify vouches for the user, and the access token is what your app sends on every GraphQL Admin API request. Anchor to Access token types Access token types The token type sets a token's lifetime and scope. Match it to what your app does: Offline access tokens : These are the default. They persist across sessions and cover the work your app does on its own authority, with no user session behind it, such as webhooks, scheduled jobs, and other background tasks. Online access tokens : Your app requests these explicitly. Use them for interactive workflows during a staff member's active session, so requests respect that user's permissions and are attributed to them. Delegate access tokens : These are optional. Use them to give a subsystem scoped, limited access without sharing your app's full credentials. Use an online access token when a staff member views or updates store data through your app during an active session. For background processing and server-to-server operations that run independently of a user session, use an offline access token or, when your app and store are eligible, the client credentials grant . Offline and online access tokens are opaque strings that begin with shpat_ , whichever grant produced them. Delegate access tokens begin with shppa_ . Anchor to Offline access tokens Offline access tokens Offline access tokens persist beyond a merchant's session, and are what your app gets by default. In an embedded app, the app template sets one up for you. See Authentication for apps built with Shopify CLI . Shopify keeps one current expiring offline token per app and store: when your app acquires a new one through token exchange or the authorization code grant, older expiring offline tokens for the same app and store are retired. Retired access tokens stay valid until their expires_in duration ends so in-progress requests can complete. Refreshing a token follows its own rules. See Token refresh . Offline access tokens are required All apps created on or after December 1, 2026 must use expiring offline access tokens. (For public apps, the requirement began on April 1, 2026.) If your app calls the GraphQL Admin API or REST Admin API and uses traditional non-expiring offline tokens, see Migrate to expiring offline access tokens . Offline access tokens are required : All apps created on or after December 1, 2026 must use expiring offline access tokens. (For public apps, the requirement began on April 1, 2026.) If your app calls the GraphQL Admin API or REST Admin API and uses traditional non-expiring offline tokens, see Migrate to expiring offline access tokens . Caution Public apps that still use non-expiring offline access tokens are delisted and blocked from new installs on January 1, 2027. Their GraphQL Admin API and REST Admin API requests are rejected from April 1, 2027. This timeline doesn't apply to custom apps or apps created by merchants, but those created on or after December 1, 2026 must use expiring offline access tokens from the start. If your app still requests non-expiring tokens, see Migrate to expiring offline access tokens . Caution : Public apps that still use non-expiring offline access tokens are delisted and blocked from new installs on January 1, 2027. Their GraphQL Admin API and REST Admin API requests are rejected from April 1, 2027. This timeline doesn't apply to custom apps or apps created by merchants, but those created on or after December 1, 2026 must use expiring offline access tokens from the start. If your app still requests non-expiring tokens, see Migrate to expiring offline access tokens . Anchor to Online access tokens Online access tokens Online access tokens are tied to the staff member who opened your app, and their lifespan matches that user's web session. Use one for interactive workflows during that user's active session, so requests respect their permission level and are attributed to them. How you request one depends on how your app authenticates: apps built with Shopify CLI declare it in their configuration, and apps running their own authorization code grant add a parameter to the authorization URL. See Authentication for apps built with Shopify CLI or Request an online access token . An online token expires after 24 hours or when the user logs out of the Shopify admin, whichever comes first. Logging out revokes every online token minted during that web session, not just the current one. A user can also revoke their own access to your app at any time, which doesn't affect other users' tokens. Because each online token is evaluated against one user's permissions, a GraphQL Admin API request returns ACCESS_DENIED in errors[n].extensions.code when the token is valid but the user lacks access, and 401 Unauthorized after the token expires. If your app caches data, scope the cache per user. The online token response includes an associated_user object describing the staff member who authorized it, alongside associated_user_scope (the intersection of your app's scopes and that user's permissions): id : Uniquely identifies the user. Use it to key per-user data. account_owner : true when the user owns the Shopify account. collaborator : true when the user is a collaborator rather than a staff member. email_verified : Whether the user's email is verified. The email field is always present, so trust it only when email_verified is true . This intersection applies to users who sign in after the app is installed. Installation itself is stricter: if your app requests online access and isn't yet installed on the store, the user installing it must have every scope your app requires, or the installation fails. Anchor to Delegate access tokens Delegate access tokens A delegate access token derives from your app's offline access token and carries only the scopes you specify. Use one when your app is split across server-side subsystems, so each one holds only what it needs. For example, a background job that processes orders doesn't need read access to products. See Delegate API access . Anchor to Token lifetimes Token lifetimes Some access tokens expire and some don't. A non-expiring token stays valid until the app is uninstalled or its credentials are revoked. Expiring offline access tokens come with a refresh_token that your app uses to get a new access token before the current one expires, without user interaction. The other expiring tokens have no refresh token: your app renews an online access token by re-running token exchange, and a client credentials token by requesting a new one with the same grant. Expiring tokens limit the damage of a leak, because a stolen token stops working on its own. An IP allowlist limits it further. With one in place, your tokens only work for GraphQL and REST Admin API requests from the addresses you list. Use expiring offline access tokens for public apps calling the GraphQL Admin API. For how refresh works, see Token refresh . The following table lists how long each token lasts. Info Read the expires_in value from the token response rather than hard-coding a duration, so your app keeps working if a lifetime changes. Info : Read the expires_in value from the token response rather than hard-coding a duration, so your app keeps working if a lifetime changes. Token Lifetime Expiring offline access token 1 hour ( expires_in is 3600 ) Refresh token for an expiring offline access token 90 days ( refresh_token_expires_in is 7776000 ) when issued. Using it to refresh can shorten it. See Token refresh . Non-expiring offline access token No expiry. Valid until the app is uninstalled or its client secret is revoked. Online access token 24 hours, or until the user logs out of the Shopify admin, whichever comes first Access token from the client credentials grant for a store in your organization 24 hours ( expires_in is 86399 ) Application-only access token from the client credentials grant with a client assertion Up to 1 hour ( expires_in is at most 3600 ) for an app with public distribution. 24 hours for other apps. Delegate access token Inherits the parent token's remaining lifetime, or the shorter expiresIn you request Anchor to Refresh, rotation, and revocation Refresh, rotation, and revocation Several actions and events renew or end an access token or the credentials behind it. They're easy to confuse, so the following table describes how each one works, including who triggers it, and where to learn more. Operation How it works Learn more Token refresh A Shopify app template refreshes an access token before it expires so your app keeps working without re-authenticating. If your app doesn't use a template, it refreshes tokens itself. How token refresh works Token retirement Shopify automatically retires your previous expiring offline token as your app acquires or refreshes tokens. On a refresh, the previous refresh token remains usable until your app uses the new refresh token, or until 30 days after its first use or its original expiry, whichever comes first. Token refresh Secret rotation You can rotate your app's client secret, which invalidates access tokens tied to the old secret and requires every store's token to be refreshed. It's a deliberate operation, not part of normal token renewal. Application-only access tokens aren't tied to the client secret, so rotation doesn't affect them. Rotate your client secret Public key revocation You can revoke one of your app's public keys. Shopify starts rejecting client assertions signed with it, and the application-only access tokens issued with it, shortly after you revoke it. Tokens issued with your app's other public key or with its client secret aren't affected. Manage public keys Scope revocation Your app can give back optional access scopes it no longer needs, or a merchant can revoke ones they granted, narrowing what a token can do without ending access. Only optional scopes that were dynamically granted qualify. Revoke granted scopes dynamically Token revocation A merchant uninstalling your app ends the access of all your app's tokens for that store. Revoking your client secret ends the access of the tokens your app got with that secret, and revoking a public key does the same for the tokens issued with that key. Requests then return 401 . Your app must obtain a new valid access token before making further requests. Response and error codes Anchor to Token refresh Token refresh Apps built from a Shopify app template refresh access tokens automatically, so most apps never refresh tokens themselves. You only implement refresh if your app doesn't use a template, and how you do it depends on context: When no merchant session is active, such as for background jobs and webhooks, use the stored refresh_token to renew an expiring offline token server-side, without user interaction. See Refresh an expiring offline token . When a token expires during an active merchant session, or when your app uses session-bound online tokens, acquire a new token instead of refreshing one. Re-run token exchange with the ID token from the current request, or send the merchant through the authorization code grant if your app isn't embedded. For a store with no API work, such as a dormant or frozen store, you don't need to refresh every hour. Refresh at least once before the refresh token's 90-day expiry to keep access without the merchant reopening your app. Don't do the two at the same time for the same store. Acquiring a token and refreshing one each retire the other's result, so one of the two tokens your app receives is already invalid when it arrives. Anchor to How refresh token rotation works How refresh token rotation works Every refresh returns a new access token and a new refresh token. Store both securely, and use the new refresh token in the next refresh request. Shopify doesn't invalidate the refresh token your app presented at the moment it issues the replacement. The presented refresh token stays usable until the earliest of the following: Your app uses the newer refresh token. Presenting it proves your app received it, so Shopify retires the previous one immediately. This is the normal case, and it happens on your app's next refresh. Your app acquires a new token. Token exchange and the authorization code grant retire every other refresh token for the app on the store right away. 30 days after your app first used that token to refresh. This caps how long an app that ignores the tokens it receives can keep refreshing from the same one. The original 90-day expiry. Anchor to Get an access token Get an access token Which grant you use depends on where your app runs and whose stores it acts on. All grants exchange their inputs for an access token at the same OAuth token endpoint: 1 POST https://{shop}.myshopify.com/admin/oauth/access_token Info Apps created directly in the Shopify admin don't use a grant. Shopify generates the access token when the merchant installs the app. You can no longer create these apps, but if you maintain one, see Maintain admin-created custom apps . Info : Apps created directly in the Shopify admin don't use a grant. Shopify generates the access token when the merchant installs the app. You can no longer create these apps, but if you maintain one, see Maintain admin-created custom apps . Anchor to Token exchange grant Token exchange grant Embedded apps, running inside the Shopify admin, use this grant to exchange an ID token for an access token, without redirecting the merchant, either through an app template or directly. Send a POST request to the token endpoint with the following parameters in the body. For a walkthrough, see Authentication for apps built with Shopify CLI . Token exchange parameters Parameter Description client_id required The client ID for the app. client_secret required The client secret for the app. grant_type required The value urn:ietf:params:oauth:grant-type:token-exchange indicates that token exchange is being performed. subject_token required The ID token that represents the identity and active session of the merchant using the app. subject_token_type required The value urn:ietf:params:oauth:token-type:id_token indicates that the subject token is an ID token. requested_token_type urn:shopify:params:oauth:token-type:offline-access-token (default) for an offline access token. urn:shopify:params:oauth:token-type:online-access-token for an online access token. expiring Only applies when requested_token_type is offline. Set to 1 for an expiring offline token, or 0 (default) for a non-expiring one. If the ID token is expired or otherwise invalid, then the request fails with 400 Bad Request . Get a fresh ID token from App Bridge and retry the exchange. ID tokens are short-lived, so request one per exchange instead of caching it. See ID token claims . Anchor to Authorization code grant Authorization code grant Standalone apps, running outside the Shopify admin, use this grant to exchange an authorization code for an access token: the app redirects the merchant to Shopify, then exchanges the returned code. Send a POST request to the token endpoint with the following parameters in the body. For the full flow, including the authorization redirect and security checks, see Authenticate a standalone or API-only app . Authorization code exchange parameters Parameter Description client_id required The client ID for the app. client_secret required The client secret for the app. code required The authorization code provided in the redirect. expiring Only applies when the initial authorization request was for an offline token. Set to 1 for an expiring offline token, or 0 (default) for a non-expiring one. Anchor to Client credentials grant Client credentials grant Server-side integrations acting on your own stores use this grant to exchange your app's own credentials for an access token, with no merchant interaction. Instead of its client secret, an app can authenticate with a client assertion: a short-lived JWT that it signs with its own private key. An app with public distribution can then also get an application-only access token for any store that has installed it, without a merchant session. See Authenticate with a client assertion . To authenticate with your client secret, send a POST request to the token endpoint with the following parameters in the body. For the setup steps, see Authenticate an app for stores in your organization . Client credentials parameters Parameter Description client_id required The client ID for the app. client_secret required The client secret for the app. grant_type required Must be set to client_credentials . Shopify ignores a scope parameter in this request. The token carries all the access scopes that the store granted to your app installation, which might be broader than the scopes you send. The scope field in the response reports what the token carries. For a store in your organization, the access token from this grant is valid for 24 hours ( expires_in is 86399 ). To refresh it, send the same request again. Anchor to Authenticate with a client assertion Authenticate with a client assertion To get an application-only access token , send a POST request to the token endpoint with the following form-encoded parameters in the body. Client credentials parameters with a client assertion Parameter Description client_assertion required A new JWT for this request, signed with the private key that matches one of your app's active public keys . For the required header and claims, see Create a client assertion . client_assertion_type required Must be set to urn:ietf:params:oauth:client-assertion-type:jwt-bearer . client_id required The client ID for the app. grant_type required Must be set to client_credentials . As with a client secret, Shopify ignores a scope parameter, and the token carries all the access scopes that the store granted to your app installation. The response contains access_token , scope , and expires_in , with no refresh token. The access token is valid for up to one hour for an app with public distribution, and 24 hours for other apps. Read expires_in instead of assuming a lifetime, and sign a new assertion to request a new token. Shopify can return the token it already issued for the same store in the same minute, with its original expiry. Anchor to Next steps Next steps Learn what ID tokens are, the claims your app validates, and how they're exchanged for access tokens. Understand the access scopes you request and what each one grants. Keep the client ID and client secret behind your tokens secure, and learn what rotating the secret does to tokens already in use. Was this page helpful? Yes No",
+      "published_label": null
+    }
+  ],
+  "claims": {
+    "auth": {
+      "value": [
+        "OAuth 2.0"
+      ],
+      "sources": [
+        "https://shopify.dev/docs/api/usage/authentication"
+      ],
+      "evidence": [
+        {
+          "value": "OAuth 2.0",
+          "url": "https://shopify.dev/docs/api/usage/authentication",
+          "excerpt": " token X-Shopify-Access-Token Customer Account API A buyer, on their own behalf Buyer signs in with OAuth 2.0 and PKCE Authorization The table covers the most commonly used APIs. For a complete list, see the Shopify API reference . Your app's client ID and client secret are on its Setting",
+          "published_label": null
+        }
+      ],
+      "reason": "Provisional extraction: validate scope and completeness against the cited page."
+    },
+    "credential_gate": {
+      "value": "unknown",
+      "sources": [],
+      "evidence": [],
+      "reason": "No sufficiently specific positive evidence extracted; review targeted search results."
+    },
+    "api_surface": {
+      "value": [
+        "GraphQL",
+        "REST"
+      ],
+      "sources": [
+        "https://shopify.dev/docs/api/usage/authentication",
+        "https://shopify.dev/docs/api/shopify-mcp",
+        "https://shopify.dev/docs/api/usage/access-scopes",
+        "https://shopify.dev/docs/api",
+        "https://shopify.dev/docs/api/ai-toolkit",
+        "https://shopify.dev/docs/apps/build/authentication-authorization",
+        "https://shopify.dev/docs/apps/build/apis",
+        "https://shopify.dev/docs/apps/build/authentication-authorization/access-tokens"
+      ],
+      "evidence": [
+        {
+          "value": "GraphQL",
+          "url": "https://shopify.dev/docs/api/usage/authentication",
+          "excerpt": "API Which token you use depends on whose data you're working with. Most Shopify APIs, including the GraphQL Admin API , Storefront API , and Partner API , authenticate your app acting on behalf of a merchant or organization. The token represents your app and the access a merchant granted it. The ",
+          "published_label": null
+        },
+        {
+          "value": "GraphQL",
+          "url": "https://shopify.dev/docs/api/shopify-mcp",
+          "excerpt": "agents and platforms. Anchor to What Shopify MCP can do What Shopify MCP can do Shopify MCP exposes GraphQL Admin API queries and mutations, so an agent can read and update a store's data on the merchant's behalf. It also includes tools for common jobs, such as: Signing up for Shopify and creatin",
+          "published_label": null
+        },
+        {
+          "value": "REST",
+          "url": "https://shopify.dev/docs/api/usage/access-scopes",
+          "excerpt": "a your app can read and write. This guide lists available access scopes, grouped by scope type. The REST Admin API uses authenticated access scopes too, listed in access scopes for the REST Admin API . Anchor to How it works How it works Shopify grants access scopes only to public or custom ap",
+          "published_label": null
+        },
+        {
+          "value": "GraphQL",
+          "url": "https://shopify.dev/docs/api/usage/access-scopes",
+          "excerpt": "ed data. Scope type Description Example use cases Authenticated Controls access to resources in the GraphQL Admin API , Web Pixel API , and Payments Apps API . Use authenticated access scopes to interact with a store on behalf of a user. Creating products Managing discount codes Unauthenticated C",
+          "published_label": null
+        },
+        {
+          "value": "GraphQL",
+          "url": "https://shopify.dev/docs/api",
+          "excerpt": " requests let you safely retry a request that might have failed. Global IDs identify objects in the GraphQL APIs, cursor-based pagination walks long lists of them, and the search query syntax filters those lists. Dev tools Anchor to Set up your development environment Set up your development",
+          "published_label": null
+        },
+        {
+          "value": "GraphQL",
+          "url": "https://shopify.dev/docs/api/ai-toolkit",
+          "excerpt": "it's agent skills directly. The shopify skill covers every Shopify developer surface, including the GraphQL Admin API, Shopify Functions, Polaris, Liquid, Hydrogen, and Shopify CLI. Your agent reads the guidance for a surface only when a task needs it. You can view the skill on GitHub . To instal",
+          "published_label": null
+        },
+        {
+          "value": "GraphQL",
+          "url": "https://shopify.dev/docs/apps/build/authentication-authorization",
+          "excerpt": "About app authentication Skip to main content Collapse sidebar Shopify apps call the GraphQL Admin API to read and write store data on behalf of merchants. Before your app can make those calls, it needs to authenticate: prove which app is calling, which merchant approved it, and wh",
+          "published_label": null
+        },
+        {
+          "value": "REST",
+          "url": "https://shopify.dev/docs/apps/build/apis",
+          "excerpt": "rganization data, such as app installs and payouts. Your backend Your Partner organization Note The REST Admin API is legacy. New apps should use the GraphQL Admin API, which is where new features ship. Note : The REST Admin API is legacy. New apps should use the GraphQL Admin API, which is wh",
+          "published_label": null
+        },
+        {
+          "value": "GraphQL",
+          "url": "https://shopify.dev/docs/apps/build/apis",
+          "excerpt": "ght one for what you're building. The full API reference has the schemas and every field. Anchor to GraphQL APIs Graph QL APIs These APIs are GraphQL endpoints that you send HTTP requests to. Some can be called only from your backend, because they authenticate with a secret token that the me",
+          "published_label": null
+        },
+        {
+          "value": "REST",
+          "url": "https://shopify.dev/docs/apps/build/authentication-authorization/access-tokens",
+          "excerpt": "or public apps, the requirement began on April 1, 2026.) If your app calls the GraphQL Admin API or REST Admin API and uses traditional non-expiring offline tokens, see Migrate to expiring offline access tokens . Offline access tokens are required : All apps created on or after December 1, 202",
+          "published_label": null
+        },
+        {
+          "value": "GraphQL",
+          "url": "https://shopify.dev/docs/apps/build/authentication-authorization/access-tokens",
+          "excerpt": " revoke access without rotating your app's core credentials. This page covers access tokens for the GraphQL Admin API , which authenticates requests with a token sent in the X-Shopify-Access-Token header. Other Shopify APIs issue their own token types and use their own headers. For which token an",
+          "published_label": null
+        }
+      ],
+      "reason": "Provisional extraction: validate scope and completeness against the cited page."
+    },
+    "official_mcp": {
+      "value": "unknown",
+      "sources": [],
+      "evidence": [],
+      "reason": "No sufficiently specific positive evidence extracted; review targeted search results."
+    },
+    "composio_toolkit": {
+      "value": "listed",
+      "sources": [
+        "https://docs.composio.dev/toolkits/shopify"
+      ],
+      "evidence": [],
+      "reason": "Catalog match; scope needs review."
+    },
+    "verdict": {
+      "value": "unknown",
+      "sources": [],
+      "evidence": [],
+      "reason": "A supported access path, authentication method and API surface were not all extracted."
+    }
+  },
+  "validation": [
+    "All claims are provisional",
+    "No vendor MCP inference from Composio catalog",
+    "Negated MCP or client-only source is not counted as vendor-server proof"
+  ]
+}

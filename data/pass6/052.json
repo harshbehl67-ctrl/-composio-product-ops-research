@@ -1,0 +1,70 @@
+{
+  "app": {
+    "number": 52,
+    "name": "SE Ranking",
+    "category": "Data, SEO and Scraping",
+    "hint": "seranking.com/api"
+  },
+  "replayed_at": "2026-11-23T18:17:22.982543+00:00",
+  "source_passes": [
+    "data/pass2/052.json",
+    "data/pass4/052.json"
+  ],
+  "source_search": "data/new_search/052.json",
+  "publication_date_note": "Published labels are retained exactly as supplied by search; missing labels are null. Relative labels must not be treated as exact publication dates.",
+  "claims": {
+    "auth": {
+      "value": "unknown",
+      "sources": [],
+      "evidence": [],
+      "reason": "No sufficiently specific positive evidence extracted; review targeted search results."
+    },
+    "credential_gate": {
+      "value": "unknown",
+      "sources": [],
+      "evidence": [],
+      "reason": "No sufficiently specific positive evidence extracted; review targeted search results."
+    },
+    "api_surface": {
+      "value": "unknown",
+      "sources": [],
+      "evidence": [],
+      "reason": "No sufficiently specific positive evidence extracted; review targeted search results."
+    },
+    "official_mcp": {
+      "value": "yes (provisional)",
+      "sources": [
+        "https://seranking.com/api/integrations/mcp/"
+      ],
+      "evidence": [
+        {
+          "value": "yes (provisional)",
+          "url": "https://seranking.com/api/integrations/mcp/",
+          "excerpt": "des a standardized interface that allows any compatible AI model to access your SE Ranking and SE Visible data simply and securely. MCP server server follows the authenticated remote MCP spec, so it’s centrally hosted and managed. Connect in one click in Claude or ChatGPT , natively in Cursor and othe",
+          "published_label": null,
+          "context_warning": "Review vendor ownership, dates, and scope."
+        }
+      ],
+      "reason": "Provisional; check source date, scope, and vendor ownership."
+    },
+    "composio_toolkit": {
+      "value": "unknown",
+      "sources": [],
+      "evidence": [],
+      "reason": "No exact or reviewed alias match; absence is not established."
+    },
+    "verdict": {
+      "value": "unknown",
+      "sources": [],
+      "evidence": [],
+      "reason": "A supported access path, authentication method and API surface were not all extracted."
+    }
+  },
+  "validation": [
+    "Automatic extraction is provisional and not a verified final claim",
+    "Unknown is not evidence of absence",
+    "No Composio-to-vendor-MCP inference",
+    "Basic authentication may be endpoint-specific",
+    "Client-only and negated statements are not positive MCP evidence"
+  ]
+}

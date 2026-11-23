@@ -1,0 +1,266 @@
+{
+  "app": {
+    "number": 76,
+    "name": "Monday.com",
+    "category": "Productivity and Project Management",
+    "hint": "developer.monday.com"
+  },
+  "checked_at": "2026-11-23T18:15:40.951903+00:00",
+  "prior_source": "data/pass2/076.json",
+  "search_source": "data/pass4_search/076.json",
+  "new_candidates": [
+    {
+      "url": "https://developer.monday.com/api-reference/docs/basics",
+      "title": "The basics (https://developer.monday.com/api-reference/docs/basics)",
+      "published_label": null
+    },
+    {
+      "url": "https://developer.monday.com/api-reference",
+      "title": "monday.com Platform API (https://developer.monday.com/api-reference)",
+      "published_label": null
+    },
+    {
+      "url": "https://developer.monday.com/api-reference/docs/introduction-to-graphql",
+      "title": "GraphQL overview (https://developer.monday.com/api-reference/docs/introduction-to-graphql)",
+      "published_label": null
+    },
+    {
+      "url": "https://developer.monday.com/api-reference/reference/about-the-api-reference",
+      "title": "About the API Reference (https://developer.monday.com/api-reference/reference/about-the-api-reference)",
+      "published_label": null
+    },
+    {
+      "url": "https://developer.monday.com/apps/docs/choosing-auth",
+      "title": "Choosing an authentication method (https://developer.monday.com/apps/docs/choosing-auth)",
+      "published_label": null
+    },
+    {
+      "url": "https://developer.monday.com/apps/docs/mondayapi",
+      "title": "monday.api (https://developer.monday.com/apps/docs/mondayapi)",
+      "published_label": null
+    },
+    {
+      "url": "https://developer.monday.com/api-reference/docs/the-developer-center",
+      "title": "The Developer Center (https://developer.monday.com/api-reference/docs/the-developer-center)",
+      "published_label": null
+    },
+    {
+      "url": "https://developer.monday.com/apps/docs/integration-authorization",
+      "title": "Authentication (https://developer.monday.com/apps/docs/integration-authorization)",
+      "published_label": null
+    },
+    {
+      "url": "https://support.monday.com/hc/en-us/articles/360013483119-API-Quickstart-Tutorial-Python",
+      "title": "API Quickstart Tutorial - Python – Support (https://support.monday.com/hc/en-us/articles/360013483119-API-Quickstart-Tutorial-Python)",
+      "published_label": null
+    },
+    {
+      "url": "https://developer.monday.com/apps/docs/the-developer-center",
+      "title": "The Developer Center (https://developer.monday.com/apps/docs/the-developer-center)",
+      "published_label": null
+    },
+    {
+      "url": "https://developer.monday.com/api-reference/",
+      "title": "monday.com Platform API (https://developer.monday.com/api-reference/)",
+      "published_label": null
+    },
+    {
+      "url": "https://developer.monday.com/apps/docs/intro",
+      "title": "What is a monday app? (https://developer.monday.com/apps/docs/intro)",
+      "published_label": null
+    },
+    {
+      "url": "https://developer.monday.com/api-reference/docs/developer-sandbox",
+      "title": "Developer Sandbox Account (https://developer.monday.com/api-reference/docs/developer-sandbox)",
+      "published_label": null
+    }
+  ],
+  "selected": [
+    {
+      "url": "https://developer.monday.com/apps/docs/choosing-auth",
+      "title": "Choosing an authentication method (https://developer.monday.com/apps/docs/choosing-auth)",
+      "published_label": null
+    },
+    {
+      "url": "https://developer.monday.com/api-reference/docs/basics",
+      "title": "The basics (https://developer.monday.com/api-reference/docs/basics)",
+      "published_label": null
+    }
+  ],
+  "new_pages": [
+    {
+      "url": "https://developer.monday.com/apps/docs/choosing-auth",
+      "requested_url": "https://developer.monday.com/apps/docs/choosing-auth",
+      "status": 200,
+      "title": "Choosing an authentication method (https://developer.monday.com/apps/docs/choosing-auth)",
+      "text": "Choosing an authentication method For AI agents: the docs index is at https://developer.monday.com/apps/llms.txt. The index for every project on this site is at https://developer.monday.com/llms.txt. Append .md to any documentation page URL to get its markdown version. Introduction Determining which authentication method to use in your app can be difficult and confusing. When designing your app, you should consider what data it needs to access. Any data that comes from a user’s monday.com account must be accessed via the monday GraphQL API. Additionally, if your app accesses data from other platforms, you should consider their authentication protocols as well. How do you authenticate with the monday API? The monday API uses token-based authentication. To successfully authenticate with our GraphQL API, every request should include an API token in the request’s “Authorization” header. Generally speaking, there are four ways your app can get an access token to use: Seamless Authentication using monday SDK Seamless Authentication using shortTermToken Using an OAuth Access Token Using a user’s global API token Method 1: Seamless Authentication We offer two mechanisms for seamless authentication, which eliminate most of the overhead of user and token management in your app. We recommend using Seamless Authentication if your app only needs to make API calls when a user is interacting with it. Using Seamless Authentication has the following advantages: Your app does not need to store and manage API keys You can host client-side apps fully on monday servers Your users do not need to take additional steps to authorize your app or supply an API key Seamless authentication in a view app using the monday SDK If you have a view app, use the SeamlessApiClient SDK methods to make API calls on behalf of the logged-in user. The iframe your app is running in will handle authentication and no API keys are needed. JavaScript const seamlessApiClient = new SeamlessApiClient();\ntry {\n  const data = await seamlessApiClient.request(`query { boards(ids: 12345) { id name } }`);\n} catch (error) { \n  console.log(error.response.errors)\n} Seamless authentication only works when your app is open in an iframe. If you need to make API calls from the server-side, use an OAuth token. 📘 TIP If you need to make API calls in the background or upload files, we recommend implementing OAuth and Permissions . Seamless Authentication in integration recipes using shortLivedToken You can also use seamless authentication in integration recipes. Every request from the monday server to your app will be accompanied with a JSON web token in the Authorization header. When you decode the JWT token, you will see a shortLivedToken that is valid for 5 minutes and can be used to authenticate against the monday.com API. When is seamless authentication not an option for me? Seamless authentication will work for almost every app use case. However, there are a few exceptions: If your app needs to make API calls without user input If your integration needs to make API calls for longer than 5 minutes after the monday server sends you a request If your client-side app needs to make an API call from the backend/server-side. Method 2: Using OAuth to issue access tokens Your app can also use OAuth to get authentication tokens. Simply put, OAuth allows your app to ask for user authorization before accessing their account, and will receive an API key once authorized. If your app needs to store a user’s API token or make API calls in the background, OAuth is a good option. Benefits of OAuth: Quick and painless permission-granting for your app users Ability to make API calls in the background for an extended period of time and without user input Tokens are scoped to your app automatically and you don’t have to worry about deleting the token when your app is uninstalled To implement OAuth in a board view or a dashboard widget, you will need to establish the logic in your backend to retrieve an access token (that will give you access to a user’s data) from our token endpoint: https://auth.monday.com/oauth2/token . To implement OAuth in your integration recipe, you will need to set up an authorization URL on your own server that will initiate the process of obtaining an access token. For more detailed information on this process, we recommend reading our oauth and permissions article . Method 3: Using a user’s global API token 🚧 Marketplace approval Any app that utilizes this authentication method will not be approved for our marketplace. Learn more about submission guidelines here . If you’re looking to build a quick app that prioritizes easy development over security (for example, something only your team uses), you can store a user’s API token. Each user has a global API token that can be accessed by going to their Avatar > Developers tab, and your app can use this to authenticate with the API. We don’t recommend this method for most apps, for the following reasons: The API token is not scoped (ie, it can do everything) The user only has one token at a time -- if they regenerate it, your app will break The API token is permissioned to a particular user & can only do actions that user can do 📘 Join our developer community! We've created a community specifically for our devs where you can search through previous topics to find solutions, ask new questions, hear about new features and updates, and learn tips and tricks from other devs. Come join in on the fun! 😎 Updated about 1 year ago What’s Next You have now learned the various ways of implementing and using different authentication methods within the monday apps framework. API Documentation Authorization for integration recipes OAuth and Permissions Did this page help you? Yes No Copy Page",
+      "published_label": null
+    },
+    {
+      "url": "https://developer.monday.com/api-reference/docs/basics",
+      "requested_url": "https://developer.monday.com/api-reference/docs/basics",
+      "status": 200,
+      "title": "The basics (https://developer.monday.com/api-reference/docs/basics)",
+      "text": "The basics For AI agents: the docs index is at https://developer.monday.com/api-reference/llms.txt. The index for every project on this site is at https://developer.monday.com/llms.txt. Append .md to any documentation page URL to get its markdown version. Stop! Before you scroll... Get your answer faster. Ask our AI assistant any question about the monday API and get an instant answer. → Welcome to monday.com, a work OS where teams create and shape their own workflows in minutes, code-free. Our mission is to help teams outdo their best, fulfilling their potential, and collaborating more effectively. The monday GraphQL API is part of the monday apps framework . It is an application layer that allows apps to read and update data inside a monday.com account. It supports operations boards, items, column values, users, workspaces, and more. Why use the API? There are countless use cases for the API, including: Accessing board data to render a custom report inside a monday.com dashboard Creating a new item on a board when a record is created on another system Importing data from another source programmatically With the monday apps framework, developers can package their own web apps and integrations as native monday.com building blocks. Who can use the API? Admin , member , and guest users are all able to utilize the monday.com API. Admins and members have access to their own API tokens . Guests cannot access an API key but can utilize API features through other authentication methods, like OAuth or a shortLivedToken. Viewers , users who have been deactivated or disabled, users with unconfirmed emails, or users on student accounts cannot access the API. For building and testing apps or API integrations without touching production data, use a free developer account . What monday products does the API support? The platform API currently supports the monday work management, dev, sales CRM, and service products. It currently does not support Workforms. How does GraphQL work? The monday.com API is built with GraphQL, a flexible query language that allows you to return as much or as little data as you need. GraphQL is an application layer that parses the query you send it and returns (or changes) data accordingly. To learn more about the fundamental GraphQL components, check out our GraphQL overview ! 📘 Join our developer community! We've created a community specifically for our devs where you can search through previous topics to find solutions, ask new questions, hear about new features and updates, and learn tips and tricks from other devs. Come join in on the fun! 😎 Updated about 2 months ago Did this page help you? Yes No Copy Page",
+      "published_label": null
+    }
+  ],
+  "claims": {
+    "auth": {
+      "value": [
+        "API token",
+        "OAuth 2.0",
+        "API key"
+      ],
+      "sources": [
+        "https://developer.monday.com/api-reference/docs/authentication",
+        "https://developer.monday.com/apps/docs/choosing-auth"
+      ],
+      "evidence": [
+        {
+          "value": "API token",
+          "url": "https://developer.monday.com/api-reference/docs/authentication",
+          "excerpt": " permissions. If you don't have a monday.com account yet, create a free developer account to get an API token and start testing. Token permissions Personal tokens mirror all permission levels set in the monday.com UI, including board , column , item , or account access. For example: If yo",
+          "published_label": null
+        },
+        {
+          "value": "OAuth 2.0",
+          "url": "https://developer.monday.com/apps/docs/choosing-auth",
+          "excerpt": "token (that will give you access to a user’s data) from our token endpoint: https://auth.monday.com/oauth2/token . To implement OAuth in your integration recipe, you will need to set up an authorization URL on your own server that will initiate the process of obtaining an access token.",
+          "published_label": null
+        },
+        {
+          "value": "API key",
+          "url": "https://developer.monday.com/apps/docs/choosing-auth",
+          "excerpt": "n monday servers Your users do not need to take additional steps to authorize your app or supply an API key Seamless authentication in a view app using the monday SDK If you have a view app, use the SeamlessApiClient SDK methods to make API calls on behalf of the logged-in user. The ifr",
+          "published_label": null
+        },
+        {
+          "value": "API token",
+          "url": "https://developer.monday.com/apps/docs/choosing-auth",
+          "excerpt": " authentication. To successfully authenticate with our GraphQL API, every request should include an API token in the request’s “Authorization” header. Generally speaking, there are four ways your app can get an access token to use: Seamless Authentication using monday SDK Seamless Authent",
+          "published_label": null
+        }
+      ],
+      "reason": "Provisional extraction: validate scope and completeness against the cited page."
+    },
+    "credential_gate": {
+      "value": [
+        "free or trial developer credential path"
+      ],
+      "sources": [
+        "https://developer.monday.com/api-reference/docs/authentication",
+        "https://developer.monday.com/api-reference/docs/basics"
+      ],
+      "evidence": [
+        {
+          "value": "free or trial developer credential path",
+          "url": "https://developer.monday.com/api-reference/docs/authentication",
+          "excerpt": "nsistent with your platform-level permissions. If you don't have a monday.com account yet, create a free developer account to get an API token and start testing. Token permissions Personal tokens mirror all permission levels set in the monday.com UI, including board , column , item , or account access. For example: If you don't have permission t",
+          "published_label": null
+        },
+        {
+          "value": "free or trial developer credential path",
+          "url": "https://developer.monday.com/api-reference/docs/basics",
+          "excerpt": " the API. For building and testing apps or API integrations without touching production data, use a free developer account . What monday products does the API support? The platform API currently supports the monday work management, dev, sales CRM, and service products. It currently does not support Workforms. How does GraphQL work? The monday.com API is built wi",
+          "published_label": null
+        }
+      ],
+      "reason": "Provisional extraction: validate scope and completeness against the cited page."
+    },
+    "api_surface": {
+      "value": [
+        "GraphQL",
+        "REST"
+      ],
+      "sources": [
+        "https://support.monday.com/hc/en-us/articles/360005144659-Does-monday-com-have-an-API",
+        "https://developer.monday.com/api-reference/docs/integrate-with-monday-mcp",
+        "https://developer.monday.com/api-reference/docs/getting-started",
+        "https://developer.monday.com/apps/docs/choosing-auth",
+        "https://developer.monday.com/api-reference/docs/basics"
+      ],
+      "evidence": [
+        {
+          "value": "GraphQL",
+          "url": "https://support.monday.com/hc/en-us/articles/360005144659-Does-monday-com-have-an-API",
+          "excerpt": "ns, which have read and write access to every board on an account, are not supported. Accessing our GraphQL API You can test queries and mutations before implementing them in your application, using the query editor included directly in the platform. To use the API explorer, go to the API e",
+          "published_label": null
+        },
+        {
+          "value": "GraphQL",
+          "url": "https://developer.monday.com/api-reference/docs/integrate-with-monday-mcp",
+          "excerpt": "d configuration Specifying an API version The MCP server executes tool calls against the monday.com GraphQL API. You can pin a specific API version using the Api-Version header: JSON {\n  \"mcpServers\": {\n    \"monday-mcp\": {\n      \"url\": \"https://mcp.monday.com/mcp\",\n      \"headers\": {\n      ",
+          "published_label": null
+        },
+        {
+          "value": "REST",
+          "url": "https://developer.monday.com/api-reference/docs/getting-started",
+          "excerpt": "chema here or in our API playground . GraphQL APIs use a single endpoint for all operations (unlike REST APIs). Our API endpoint is: https://api.monday.com/v2 Requests to the API should follow these rules: POST request with a JSON-formatted body Access token must be sent in the Authorizat",
+          "published_label": null
+        },
+        {
+          "value": "GraphQL",
+          "url": "https://developer.monday.com/api-reference/docs/getting-started",
+          "excerpt": " the monday.com building blocks, you can explore our GraphQL schema here or in our API playground . GraphQL APIs use a single endpoint for all operations (unlike REST APIs). Our API endpoint is: https://api.monday.com/v2 Requests to the API should follow these rules: POST request with a JSON",
+          "published_label": null
+        },
+        {
+          "value": "GraphQL",
+          "url": "https://developer.monday.com/apps/docs/choosing-auth",
+          "excerpt": "eds to access. Any data that comes from a user’s monday.com account must be accessed via the monday GraphQL API. Additionally, if your app accesses data from other platforms, you should consider their authentication protocols as well. How do you authenticate with the monday API? The monday ",
+          "published_label": null
+        },
+        {
+          "value": "GraphQL",
+          "url": "https://developer.monday.com/api-reference/docs/basics",
+          "excerpt": " teams outdo their best, fulfilling their potential, and collaborating more effectively. The monday GraphQL API is part of the monday apps framework . It is an application layer that allows apps to read and update data inside a monday.com account. It supports operations boards, items, colum",
+          "published_label": null
+        }
+      ],
+      "reason": "Provisional extraction: validate scope and completeness against the cited page."
+    },
+    "official_mcp": {
+      "value": "yes (provisional)",
+      "sources": [
+        "https://developer.monday.com/api-reference/docs/integrate-with-monday-mcp"
+      ],
+      "evidence": [
+        {
+          "value": "yes (provisional)",
+          "url": "https://developer.monday.com/api-reference/docs/integrate-with-monday-mcp",
+          "excerpt": "r own MCP client — an AI assistant, agent platform, or product feature — to the monday.com hosted MCP server. Pick an authentication path below, then follow the linked guide for setup details. Overview The hosted MCP server is the recommended way to connect to monday.",
+          "published_label": null,
+          "context_warning": "Review vendor ownership, dates, and scope."
+        }
+      ],
+      "reason": "Provisional; check source date, scope, and vendor ownership."
+    },
+    "composio_toolkit": {
+      "value": "listed",
+      "sources": [
+        "https://docs.composio.dev/toolkits/monday"
+      ],
+      "evidence": [],
+      "reason": "Catalog match; scope needs review."
+    },
+    "verdict": {
+      "value": "provisional: investigate documented access condition",
+      "sources": [
+        "https://developer.monday.com/api-reference/docs/authentication",
+        "https://developer.monday.com/api-reference/docs/basics",
+        "https://support.monday.com/hc/en-us/articles/360005144659-Does-monday-com-have-an-API",
+        "https://developer.monday.com/api-reference/docs/integrate-with-monday-mcp",
+        "https://developer.monday.com/api-reference/docs/getting-started",
+        "https://developer.monday.com/apps/docs/choosing-auth"
+      ],
+      "evidence": [],
+      "reason": "Do not promote this inference without claim-specific review."
+    }
+  },
+  "validation": [
+    "All claims are provisional",
+    "No vendor MCP inference from Composio catalog",
+    "Negated MCP or client-only source is not counted as vendor-server proof"
+  ]
+}

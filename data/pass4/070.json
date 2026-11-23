@@ -1,0 +1,117 @@
+{
+  "app": {
+    "number": 70,
+    "name": "Sentry",
+    "category": "Developer, Infra and Data platforms",
+    "hint": "docs.sentry.io/api"
+  },
+  "checked_at": "2026-11-23T18:15:19.466857+00:00",
+  "prior_source": "data/pass2/070.json",
+  "search_source": "data/pass4_search/070.json",
+  "new_candidates": [
+    {
+      "url": "https://docs.sentry.io/api/projects/create-a-new-project/",
+      "title": "Create a New Project | Sentry Docs (https://docs.sentry.io/api/projects/create-a-new-project/)",
+      "published_label": null
+    },
+    {
+      "url": "https://docs.sentry.io/api/projects/create-a-new-client-key/",
+      "title": "Create a New Client Key | Sentry Docs (https://docs.sentry.io/api/projects/create-a-new-client-key/)",
+      "published_label": null
+    }
+  ],
+  "selected": [
+    {
+      "url": "https://docs.sentry.io/api/projects/create-a-new-project/",
+      "title": "Create a New Project | Sentry Docs (https://docs.sentry.io/api/projects/create-a-new-project/)",
+      "published_label": null
+    }
+  ],
+  "new_pages": [
+    {
+      "url": "https://docs.sentry.io/api/projects/create-a-new-project/",
+      "requested_url": "https://docs.sentry.io/api/projects/create-a-new-project/",
+      "status": 200,
+      "title": "Create a New Project | Sentry Docs (https://docs.sentry.io/api/projects/create-a-new-project/)",
+      "text": "Create a New Project | Sentry Docs Skip to content Open Main Menu API Reference Authentication Paginating Results Permissions & Scopes Rate Limits Requests Crons Dashboards Discover & Performance Environments Events & Issues Explore Flags Integration Platform Integrations Investigations Mobile Builds Monitors & Alerts Notebooks Organizations Profiling Projects Add a Symbol Source to a Project Add a Team to a Project Add Repositories to Seer for a Project Assemble Debug Information Files Create a CODEOWNERS Configuration for a Project Create a Custom Inbound Filter Create a New Client Key Create a New Project Create a Project for an Organization Delete a Client Key Delete a Custom Inbound Filter Delete a Project Delete a Project's CODEOWNERS Configuration Delete a Symbol Source from a Project Delete a Team from a Project Disable Spike Protection Enable Spike Protection Link a Repository to a Project List a Project's Client Keys List a Project's CODEOWNERS Configurations List a Project's Custom Inbound Filters List a Project's Data Filters List a Project's Debug Information Files List a Project's Organization Members List a Project's Service Hooks List a Project's User Feedback List a Project's Users List a Tag's Values List Repositories Configured for Seer List Repositories Linked to a Project Register a New Service Hook Remove a Service Hook Replace Repositories Configured for Seer Resolve a DSN to Its Project Retrieve a Client Key Retrieve a Custom Inbound Filter Retrieve a Project Retrieve a Project's CODEOWNERS Configuration Retrieve a Project's Symbol Sources Retrieve a Service Hook Retrieve Event Counts for a Project Retrieve Ownership Configuration for a Project Submit User Feedback Update a Client Key Update a Custom Inbound Filter Update a Project Update a Project's CODEOWNERS Configuration Update a Project's Symbol Source Update a Service Hook Update an Inbound Data Filter Update Ownership Configuration for a Project Releases Replays SCIM Seer Snapshots Spike Protection Notifications Teams Users Product Changelog Sandbox More Home API Reference Projects Create a New Project Copy page Create a New Project POST /api/0/teams/{organization_id_or_slug}/{team_id_or_slug}/projects/ Create a new project bound to a team. Note: If your organization has disabled member project creation, the org:write scope or the Team Admin role on the team is required. Path Parameters organization_id_or_slug ( string ) REQUIRED The ID or slug of the organization the resource belongs to. team_id_or_slug ( string ) REQUIRED The ID or slug of the team the resource belongs to. Body Parameters name ( string ) REQUIRED The name for the project. slug ( string ) Uniquely identifies a project and is used for the interface.\nIf not provided, it is automatically generated from the name. platform ( string ) The platform for the project. default_rules ( boolean ) Defaults to true where the behavior is to alert the user on every new\nissue. Setting this to false will turn this off and the user must create\ntheir own alerts to be notified of new issues. Scopes You need to authenticate via bearer auth token. <auth_token> requires one of the following scopes: project:admin project:write Bash Copied curl https://sentry.io/api/0/teams/ { organization_id_or_slug } / { team_id_or_slug } /projects/ \\ -H 'Authorization: Bearer <auth_token>' \\ -H 'Content-Type: application/json' \\ -d '{}' RESPONSE SCHEMA 201 400 403 404 409 Copied { \"team\" : { \"id\" : \"2349234102\" , \"name\" : \"Prime Mover\" , \"slug\" : \"prime-mover\" } , \"teams\" : [ { \"id\" : \"2349234102\" , \"name\" : \"Prime Mover\" , \"slug\" : \"prime-mover\" } , { \"id\" : \"47584447\" , \"name\" : \"Powerful Abolitionist\" , \"slug\" : \"powerful-abolitionist\" } ] , \"id\" : \"6758470122493650\" , \"slug\" : \"the-spoiled-yoghurt\" , \"name\" : \"The Spoiled Yoghurt\" , \"isBookmarked\" : false , \"isMember\" : true , \"access\" : [ \"project:read\" , \"event:read\" , \"team:read\" , \"alerts:read\" , \"org:read\" , \"event:write\" , \"project:releases\" , \"member:read\" ] , \"hasAccess\" : true , \"dateCreated\" : \"2023-03-29T15:25:21.344565Z\" , \"environments\" : [ \"production\" ] , \"features\" : [ \"custom-inbound-filters\" , \"discard-groups\" , \"minidump\" , \"rate-limits\" , \"servicehooks\" , \"similarity-indexing\" , \"similarity-indexing-v2\" , \"similarity-view\" , \"similarity-view-v2\" ] , \"firstEvent\" : null , \"firstTransactionEvent\" : true , \"hasSessions\" : false , \"hasProfiles\" : false , \"hasReplays\" : false , \"hasFlags\" : false , \"hasMonitors\" : false , \"hasFeedbacks\" : false , \"hasNewFeedbacks\" : false , \"hasMinifiedStackTrace\" : false , \"hasInsightsHttp\" : true , \"hasInsightsDb\" : false , \"hasInsightsAssets\" : false , \"hasInsightsAppStart\" : false , \"hasInsightsScreenLoad\" : false , \"hasInsightsVitals\" : false , \"hasInsightsCaches\" : true , \"hasInsightsQueues\" : true , \"hasInsightsAgentMonitoring\" : false , \"hasInsightsMCP\" : false , \"hasLogs\" : false , \"hasTraceMetrics\" : false , \"platform\" : \"node-express\" , \"platforms\" : [ ] , \"latestRelease\" : null , \"hasUserReports\" : false , \"latestDeploys\" : null } Was this helpful? Yes 👍 No 👎 How can we improve this page? Email (optional) Submit feedback",
+      "published_label": null
+    }
+  ],
+  "claims": {
+    "auth": {
+      "value": [
+        "OAuth 2.0",
+        "API key",
+        "Bearer token",
+        "Basic authentication"
+      ],
+      "sources": [
+        "https://docs.sentry.io/api/auth/"
+      ],
+      "evidence": [
+        {
+          "value": "OAuth 2.0",
+          "url": "https://docs.sentry.io/api/auth/",
+          "excerpt": "t require a user authentication token are specific to your user, such as Retrieve an Organization . OAuth2 For third-party applications that need to access Sentry on behalf of users, Sentry supports OAuth2 with the authorization code grant type. This allows users to authorize your appl",
+          "published_label": null
+        },
+        {
+          "value": "API key",
+          "url": "https://docs.sentry.io/api/auth/",
+          "excerpt": "tion tokens wherever possible. API keys are passed using HTTP Basic auth where the username is your api key, and the password is an empty value. As an example, to get information about the project which your key is bound to, you might make a request like so: Bash Copied curl -u { API_KE",
+          "published_label": null
+        },
+        {
+          "value": "Bearer token",
+          "url": "https://docs.sentry.io/api/auth/",
+          "excerpt": "his is generally very limited and an endpoint will describe if its supported. This works similar to Bearer token authentication, but uses your DSN (Client Key). Bash Copied curl -H 'Authorization: DSN {DSN}' https://sentry.io/api/0/ { organization_slug } / { project_slug } /user-reports/ cur",
+          "published_label": null
+        },
+        {
+          "value": "Basic authentication",
+          "url": "https://docs.sentry.io/api/auth/",
+          "excerpt": "ew accounts. You should use authentication tokens wherever possible. API keys are passed using HTTP Basic auth where the username is your api key, and the password is an empty value. As an example, to get information about the project which your key is bound to, you might make a request li",
+          "published_label": null
+        }
+      ],
+      "reason": "Provisional extraction: validate scope and completeness against the cited page."
+    },
+    "credential_gate": {
+      "value": "unknown",
+      "sources": [],
+      "evidence": [],
+      "reason": "No sufficiently specific positive evidence extracted; review targeted search results."
+    },
+    "api_surface": {
+      "value": "unknown",
+      "sources": [],
+      "evidence": [],
+      "reason": "No sufficiently specific positive evidence extracted; review targeted search results."
+    },
+    "official_mcp": {
+      "value": "unknown",
+      "sources": [],
+      "evidence": [],
+      "reason": "No sufficiently specific positive evidence extracted; review targeted search results."
+    },
+    "composio_toolkit": {
+      "value": "listed",
+      "sources": [
+        "https://docs.composio.dev/toolkits/sentry"
+      ],
+      "evidence": [],
+      "reason": "Catalog match; scope needs review."
+    },
+    "verdict": {
+      "value": "unknown",
+      "sources": [],
+      "evidence": [],
+      "reason": "A supported access path, authentication method and API surface were not all extracted."
+    }
+  },
+  "validation": [
+    "All claims are provisional",
+    "No vendor MCP inference from Composio catalog",
+    "Negated MCP or client-only source is not counted as vendor-server proof"
+  ]
+}

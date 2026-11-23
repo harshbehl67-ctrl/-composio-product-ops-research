@@ -1,0 +1,203 @@
+{
+  "app": {
+    "number": 2,
+    "name": "HubSpot",
+    "category": "CRM and Sales",
+    "hint": "hubspot.com"
+  },
+  "checked_at": "2026-11-23T18:14:57.968947+00:00",
+  "prior_source": "data/pass2/002.json",
+  "search_source": "data/pass4_search/002.json",
+  "new_candidates": [
+    {
+      "url": "https://developers.hubspot.com/blog/hubspot-service-keys-the-right-api-credential-for-data-integrations",
+      "title": "HubSpot Service Keys: The Right API Credential for Data Integrations (https://developers.hubspot.com/blog/hubspot-service-keys-the-right-api-credential-for-data-integrations)",
+      "published_label": "6 months ago"
+    },
+    {
+      "url": "https://community.hubspot.com/t/new-oauth-v3-api-endpoints-and-standardized-error-responses/145422",
+      "title": "New OAuth v3 API Endpoints and Standardized Error Responses - Developer Announcements - HubSpot Community (https://community.hubspot.com/t/new-oauth-v3-api-endpoints-and-standardized-error-responses/145422)",
+      "published_label": "10 months ago"
+    },
+    {
+      "url": "https://community.hubspot.com/t/catalog-api-response-change-object-entry-removed-name-objects-and-group-crm/153448",
+      "title": "Catalog api response change -object entry removed \"name\": \"Objects\" and \"group\": \"CRM\" - Develop, Build & Integrate - HubSpot Community (https://community.hubspot.com/t/catalog-api-response-change-object-entry-removed-name-objects-and-group-crm/153448)",
+      "published_label": "4 months ago"
+    },
+    {
+      "url": "https://developers.hubspot.com/changelog/v1-oauth-api-deprecation",
+      "title": "v1 OAuth API Deprecation (https://developers.hubspot.com/changelog/v1-oauth-api-deprecation)",
+      "published_label": "6 months ago"
+    },
+    {
+      "url": "https://developers.hubspot.com/changelog/deprecating-support-for-hubspot-v4-apis",
+      "title": "HubSpot v4 APIs Going UnSupported in March 2027 (https://developers.hubspot.com/changelog/deprecating-support-for-hubspot-v4-apis)",
+      "published_label": "6 months ago"
+    },
+    {
+      "url": "https://community.hubspot.com/t/how-to-connect-to-the-open-api-sandbox/143580",
+      "title": "How to connect to the Open API Sandbox - APIs & Integrations - HubSpot Community (https://community.hubspot.com/t/how-to-connect-to-the-open-api-sandbox/143580)",
+      "published_label": "last year"
+    }
+  ],
+  "selected": [
+    {
+      "url": "https://developers.hubspot.com/blog/hubspot-service-keys-the-right-api-credential-for-data-integrations",
+      "title": "HubSpot Service Keys: The Right API Credential for Data Integrations (https://developers.hubspot.com/blog/hubspot-service-keys-the-right-api-credential-for-data-integrations)",
+      "published_label": "6 months ago"
+    },
+    {
+      "url": "https://community.hubspot.com/t/new-oauth-v3-api-endpoints-and-standardized-error-responses/145422",
+      "title": "New OAuth v3 API Endpoints and Standardized Error Responses - Developer Announcements - HubSpot Community (https://community.hubspot.com/t/new-oauth-v3-api-endpoints-and-standardized-error-responses/145422)",
+      "published_label": "10 months ago"
+    }
+  ],
+  "new_pages": [
+    {
+      "url": "https://developers.hubspot.com/blog/hubspot-service-keys-the-right-api-credential-for-data-integrations",
+      "requested_url": "https://developers.hubspot.com/blog/hubspot-service-keys-the-right-api-credential-for-data-integrations",
+      "status": 200,
+      "title": "HubSpot Service Keys: The Right API Credential for Data Integrations (https://developers.hubspot.com/blog/hubspot-service-keys-the-right-api-credential-for-data-integrations)",
+      "text": "HubSpot Service Keys: The Right API Credential for Data Integrations Skip to main content Skip to footer HubSpot Developer Blog Home › Developer Blog › HubSpot Service Keys: The Right API Credential for Data Integrations HubSpot Service Keys: The Right API Credential for Data Integrations May 4, 2026 | Hannah Seligson If you’ve been building on HubSpot for a while, the last year or two has felt like a lot of things moving at once. The legacy public app creation flow is being sunset . The Developer Platform has shifted towards modern development practices that include defining integrations as code - aka, “projects” and using the CLI . Features you used to access in a few clicks now come with a “spin up a local dev environment” prerequisite. That is a meaningful shift, and it doesn’t land the same for everyone. If you’re a Marketplace app developer , you’ve probably already adopted the HubSpot CLI workflow and the transition, which, realistically, is mostly about learning new commands. If you’re a builder who primarily used the HubSpot UI to create private apps directly in HubSpot’s UI to connect with other systems or run a script, then it can feel like the lightweight path you relied on just disappeared. If you’re a general technical admin or ops person who’s never touched a terminal but has been managing API tokens for your team’s data pipelines or systems, you might not even know yet that things have changed. This post is for all three of you! The CLI-and-project model is the right direction for building apps on HubSpot - that’s not changing. But everything is an app, and a lot of what people used legacy private apps for was simpler: pull data, sync to a warehouse, run a scheduled report. For those use cases, there’s now a purpose-built credential called Service Keys , designed specifically for system-to-system data access. What the friction is and what it points to Before we get to the solution, it’s worth naming the friction points clearly because our developer community has been specific about where the confusion lives, and we hear you! The naming issue. “Projects” now refers to several different things depending on who’s talking. There are project-based apps and project themes on the Developer Platform. There is also the Projects object (the to-do and task management feature) inside HubSpot portals. When a developer says “I pushed it to the project,” and a RevOps admin hears “I put it in the project list”, they’re talking about two completely different things. For cross-functional teams, this can create real coordination overhead with confusion. The shift away from UI-based app creation. Before the platform changes, you could create private and public apps entirely within HubSpot’s Settings UI - no CLI, no local setup, no hs init . For more advanced users who understood scopes and token management but didn’t want to commit to a full development workflow, this was the right-sized tool. That path is going away for apps, and that shift is real as well, and Service Keys address the most common reason people used it. The CLI requirement for app creation. If you’re not someone who lives in the terminal - perhaps you’re a data engineer who prefers notebooks or an IT admin comfortable in Setting, but not bash , and being told “the only way to create an app now is via the CLI and a project” can feel like a mismatch for how you work. The learning curve is valid, especially for occasional or lightweight integrations. Non-dev builders, newly served by Service Keys. Many of the people responsible for connecting HubSpot to external tools such as BI platforms, data warehouses, and internal dashboards are technical, but not developers. They know their way around API documentation and bearer tokens, but they’re not running hs project deploy from their terminal. For this group, Service Keys are the missing puzzle piece. What Service Keys actually are Service Keys are account-level API credentials built specifically for system-to-system, data-only integrations. Think of them like a secure password you hand to another piece of software that allows software to read or write your HubSpot data, and you control exactly what it can and can’t touch. They’re managed in the HubSpot UI because that’s the right surface for what they do: scope data access, not building an app. An app is something you would deploy or share with others, such as a product listed in the Marketplace or a tool your customers install and connect to their own HubSpot accounts. If you’re building something like that, you’d use a different credential type. The simplest mental model to keep in mind is that a Service Key is what you’d use when you need stable, scoped API access to HubSpot data, but you’re not building an app. You’re not distributing anything or setting up webhooks. You’re just connecting a tool to HubSpot’s data layer. If you’ve been using legacy apps primarily to generate a token and paste it into a BI tool or a script, Service Keys are the modern, purpose-built replacements for that workflow with better security properties to match. They’re created and managed in your HubSpot Settings, where you can define the scopes, copy the key, and use it as a Bearer token in whatever client you’re working on - that’s it! Who Service Keys are for and who they’re not for Service Keys are a good fit when: You’re connecting HubSpot to a data warehouse or BI tool (Tableau, Power BI, Looker, BigQuery, pipelines, etc.) and need persistent authorized read access to HubSpot data. You’re running internal scripts or reporting jobs, such as cron jobs, nightly syncs, and one-off data pulls, when OAuth’s redirect flow isn’t worth the setup. You’re a technical admin or ops person who manages data integrations in Settings and doesn’t need the full app development workflow to do it. You need lightweight automation where the full system of a project-based app might not be necessary. Service Keys are not the right tool when: Your integration typically has an API endpoint that needs webhooks to respond to real-time events in HubSpot. That still requires a project-based app. You’re building UI extensions or custom app pages inside HubSpot’s UI - this is also project-based. You’re distributing your app to the Marketplace or building for multiple customers. The CLI and projects route remains the only path there. Remember: Service Keys are for managing data. Project-based apps are for building functionality. How Service Keys replace legacy private apps The legacy pattern was straightforward: go to Settings → Integrations → Private Apps → Create a private app, set scopes, copy the access token, and paste it into your integration. That token was long-lived, scoped, and tied to your HubSpot account - it worked! The new pattern is similar in concept but cleaner in practice. Go to Settings → Integrations → Service Keys → create a key OR Go to Development → Keys → Service Keys → create a key, name it, add scopes,  copy/paste it, and use it as a Bearer token or API key. What you gain compared to legacy private apps: Rotation without disruption. You can rotate a Service Key without rebuilding the integration from scratch. Audit logging. Last-used timestamps and activity logs help you track which keys are active and which are stale. Not tied to an individual user. Private apps in the legacy model often ended up owned by whoever created them. Service Keys are account-level credentials, which is a cleaner security posture, especially when folks leave. Scope alignment. Service Key scopes are designed to align with HubSpot’s current permission model, rather than the older private app scope structure. What you don’t get from Service Keys: Webhooks, UI extensions, app pages , and other platform-level features will remain in project-based apps in the foreseeable future. Marketplace distribution. If your legacy private app was only pulling data, this is a clean migration path. If it was going more, read on to the migration checklist below . Creating your first Service Key Before you start, you’ll need Super Admin access or Developer tools access in your HubSpot account to create and manage Service Keys. Step 1: Navigate to Settings → Integrations → Service Keys. Note: Depending on your account configuration, you may also find this under the Development section in the left nav. Step 2: Create the key by clicking Create a service key. Give it a descriptive name, something that tells you what this key is used for, not just “my key”. (Example: “powerbi-contacts-read” or “nightly-deals-sync”). Add the scopes your integration needs, and review them before clicking Create. The principle of least privilege applies here - meaning, only grant what the integration actually needs. Step 3: Use the key. Copy the key immediately after creation, but, like most secrets, make sure not to expose it. If it is exposed, click the Rotate button to rotate the token and generate a new one. Use it as a Bearer token in your HTTP requests: To use the key in Postman , you can either select the Bearer Token type in the Authorization header and paste your key directly into the value field, or assign the token to a variable within a new Environment . In a BI tool or data connector, paste the key wherever the tool asks for an API token or authorization credential. Most tools that connect to HubSpot via API will have a “Bearer token” or “API key” field in their connection settings. In a Python or Node script, you can set the Service key value as an environment variable and reference it from your HTTP client rather than hard-coding it (please, never hard-code secrets). Step 4: Monitor and rotate the Service key by going to Settings → Service Keys, and you can see the last-updated timestamps for each key. When you need to rotate a key for routine security practice or after a suspected exposure, create a new key, update your integration, confirm it’s working, and delete the old key. This keeps downtime to zero! When you still need Projects and the CLI Service Keys are not meant to replace everything. The CLI remains the only path for: Legacy public and marketplace apps : anything you’re distributing to other HubSpot accounts or listing in the Marketplace. Webhooks: real-time event subscriptions that respond to changes in HubSpot data. UI extensions: app cards and record views that appear inside HubSpot’s CRM UI. App pages: standalone web pages hosted within the HubSpot platform. It also helps to understand where Service Keys sit within HubSpot’s broader authentication landscape: OAuth: required for apps distributed to multiple accounts, whether listed on the Marketplace or installed in a specific set of allowlisted accounts. If you had a legacy public app using OAuth, your migration path is a project-based app, not Service Keys. Static auth tokens : for project-based apps installed in a single account. Managed as part of the app lifecycle in your app settings. Service Keys: account-level credentials for data-only integrations. Not tied to an app. Created and managed in Settings. Personal Access Keys: for authenticating the HubSpot CLI during local development. Not for production integrations. Developer API Keys: for specific platform features and endpoints that explicitly require them (e.g., custom channel registration). Not relevant to data integrations or app distribution aspects. Here’s a quick decision framework to reference if you still feel unsure about what to use and when: What you’re trying to do Use Scheduled data sync to a warehouse or BI tool Service Key Scheduled data sync to a warehouse or BI tool with real-time data Project-based app (CLI) Run a scheduled script Service Key Build an app card Project-based app (CLI) Set up webhooks for real-time triggers Project-based app (CLI) List an app in the Marketplace Project-based app (CLI) Migrate a legacy private app that only did data pulls Service Key Migrate a legacy public app using OAuth OAuthProject-based app (CLI) Upgrade an existing legacy private app that only did data pulls Service Key If you’re still feeling unsure about the right path for your specific use case, start by auditing what your integration actually does - the migration checklist below is a great place to start. For everything else, AI-powered tools like the Developer MCP server, Claude, and Codex can help bridge the gap. These tools leverage the HubSpot Developer MCP to help turn your questions into working code, lowering the learning curve as you adopt HubSpot’s modern developer tooling. Common questions from the HubSpot community The feedback from HubSpot builders and admins over the past several months has been consistent. Here’s what we’re hearing the most and how to reframe it. “I miss creating apps directly in the UI” This transition impacts a particular type of developer: the advanced user who had a firm grasp on scopes and tokens, relied on the CLI only when necessary, and primarily managed HubSpot integrations through the portal UI. For those building apps, that specific workflow is being phased out. Service Keys don't bring back in-portal app creation. What they do is give the most common use case that drove it - stable, scoped API access to HubSpot data for a specific integration, and its own purpose-built credential that lives in your Settings. If that’s what you were doing, Service Keys are the right fit. If you were also doing webhooks or UI work through private apps, that part of the workflow belongs in the CLI and projects, and that’s by design. “Local dev feels like overkill for what I’m doing” The honest answer: if you’re syncing data to a warehouse, it’s not the right tool for the job - not because it’s too heavy, but because Service Keys are a better fit for that use case. The CLI and projects are designed for building apps: things with lifecycle management, deployment pipelines, webhooks, UI extensions, and distribution. Data integrations sometimes don’t need that infrastructure. Service Keys exist for the data integration scenario. The CLI exists for the app-building scenario; however, if your integration touches highly sensitive data and you want the full infrastructure of deployment pipelines, approval gates, and code review, that’s a legitimate reason to reach out for it. Using the right tool for the use case is the goal - not avoiding one tool in favor of the other. “I’m not a full-time engineer, is this still for me?” Yes. That’s actually the group Service Keys were specifically designed for. If you’re a RevOps admin, a data engineer, or an IT professional who manages integrations but doesn’t want to write production code and doesn’t use a terminal as a daily tool - Service Keys are yours. You don’t need a developer to create one, you don’t need to fully understand the project structure, and you don’t need to run any commands. You need access to Settings and knowledge of which scopes your integration requires. The complexity of “ build a full app just to get an API token ” was never right for that use case, and Service Keys fix that. Migration checklist to move from legacy private apps to Service Keys If you have an existing legacy private app and you’re deciding what to do with it, work through this checklist in order to help get you started! Step 1: Inventory your legacy private apps. For each app, answer: what does this app actually do? Be specific. Does it make API calls to read or write HubSpot data? Does it use webhooks? Does it have UI components? List the actual functionality, not the intention. Step 2: Choose your migration path. Data reads/writes only, no webhooks, no UI → migrate to Service Keys Uses webhooks, UI extensions, or app pages → plan a project-based app upgrade (this is a separate step, and migration guides can be found on the Developer Documentation) Unclear → audit the app’s actual usage in the logs before deciding. Step 3: Map your scopes. Before creating your Service Key, review the scopes on the legacy private app. Use that as a starting point, but trim any scopes the integration doesn’t actually use. Step 4: Update integrations. Create the Service Key, update the token in each integration that uses your legacy app token, and test. Don’t delete the old app until you’ve tested! Step 5: Monitor, then decommission. Run both in parallel for a short period if you need that extra vote of confidence for your migration. Once you’ve confirmed the Service Key is working as expected, check your logs to verify the data is flowing, then rotate and delete the legacy app. Don’t let decommissioning slip - stale credentials with broad scopes are a major security liability. What next? If you’re ready to create your first Service Key, start by heading over to the Service Key documentation , which covers the current UI flow, available scopes, and rotation procedures in greater detail. If you have any questions or feedback on Service Keys, especially if you have a use case that hasn’t been considered, reach out and submit it via the Developer Feedback Form . About the Author Hannah Seligson is a Developer Advocate who loves to create content to help empower developers with resources and tools to accomplish their development goals! Read More Posts Connect HubSpot's MCP Server With Any AI Tool Securely Nov 12, 2026 Today, you’re not just using your HubSpot data in HubSpot. You’re likely leveraging HubSpot connectors for Claude, Gemini, ChatGPT, and ... Read More BUILD MODE SF & LA: Building with AI shouldn’t mean building alone Oct 29, 2026 You can spend an entire afternoon building with AI without once talking to another person. At BUILD MODE in SF and LA, we got folks out from ... Read More Building the Builder Bar: Challenging Attendees, Built on HubSpot Oct 26, 2026 During UNBOUND this year, we did something different - we gamified actually using the new tools and features to really build on HubSpot for ... Read More",
+      "published_label": "6 months ago"
+    },
+    {
+      "url": "https://community.hubspot.com/t/new-oauth-v3-api-endpoints-and-standardized-error-responses/145422",
+      "requested_url": "https://community.hubspot.com/t/new-oauth-v3-api-endpoints-and-standardized-error-responses/145422",
+      "status": 200,
+      "title": "New OAuth v3 API Endpoints and Standardized Error Responses - Developer Announcements - HubSpot Community (https://community.hubspot.com/t/new-oauth-v3-api-endpoints-and-standardized-error-responses/145422)",
+      "text": "New OAuth v3 API Endpoints and Standardized Error Responses - Developer Announcements - HubSpot Community New OAuth v3 API Endpoints and Standardized Error Responses Develop, Build & Integrate Developer Announcements announcement hseligson January 27, 2026,  2:41pm 1 We are enhancing the security and compliance standards of our Developer Platform with the release of OAuth v3 API endpoints and updated error response formatting. What’s Changing? New Oauth v3 Token Endpoints To align with OAuth 2.0 security best practices, we have introduced two new v3 OAuth API endpoints designed to keep sensitive credentials out of server logs and browser histories. POST /v3/token: Handles authorization code and refresh token requests. POST /v3/introspect: Performs token introspection, replacing the separate v1 path-based token metadata for access tokens and refresh tokens . Standardized OAuth Error Responses We are updating our OAuth error responses to comply with RFC 6749 . This ensures better compatibility with third-party OAuth libraries and simplifies troubleshooting. What’s changed? Previously, responses included HubSpot-specific fields (status and message). Responses now include the standard error and error_description fields. Example Response: // Example Response\n{\n \"error\": \"invalid_grant\",\n \"error_description\": \"refresh token is invalid, expired or revoked\",\n \"status\": \"BAD_REFRESH_TOKEN\",\n \"message\": \"refresh token is invalid, expired or revoked\"\n} Existing fields (status, message) remain for backward compatibility, so existing error handling will continue to function as is. Important Note: These responses will be reflected in both the v1 and v3 OAuth API endpoints. What does this mean for developers? Adopt v3: Start targeting /v3/token and /v3/introspect for all new developments. Update Request Logic: Ensure your application sends credentials in the request body, never in the URL. Error Handling: You can now update your client-side error handling to parse standard OAuth error fields. Important note: There are no changes to the scope, app settings, or the OAuth install process. Sunset Notice for v1 OAuth API Endpoints The v1 OAuth API endpoints will remain operational for now, but they are officially deprecated. We will provide a detailed sunset timeline later in Q1 2026. Please subscribe to the HubSpot Developer Changelog to ensure you receive this update. When is it happening? The v3 OAuth API endpoints are now available for use, and the error standardization is now reflected in both the v3 and v1 OAuth API endpoints. Questions or comments? Join us below in the developer forums for a peer-to-peer discussion. lining November 18, 2026, 10:12am 2 Hi HubSpot team, thanks for the update. I’d like to clarify one point in “Apps must use OAuth v3 endpoints”. The post says all new app listings, certification submissions and recertifications “must use the new OAuth v3 endpoints”, and lists these date-based paths: POST /oauth/2026-03/token POST /oauth/2026-03/token/introspect POST /oauth/2026-03/token/revoke Other official pages use different paths for what they call the v3 endpoints: The Jan 27, 2026 changelog names POST /v3/token and POST /v3/introspect. The API guide at /docs/api-reference/auth-oauth-v3/guide uses POST /oauth/v3/token and POST /oauth/v3/token/introspect. The latest API guide uses POST /oauth/2026-09/token. I checked with invalid credentials: /oauth/v3/token, /oauth/2026-03/token and /oauth/2026-09/token all exist and return the same 400 invalid_request, while /v3/token returns 404. Questions: Does the requirement accept /oauth/v3/token (and /oauth/v3/token/introspect), or does the review expect the date-based paths such as /oauth/2026-03/token? If date-based paths are expected, should we use /oauth/2026-03/ as written in the post, or the latest version (currently /oauth/2026-09/)? Is there a published sunset date for /oauth/v1/token, and for /oauth/v3/… once date-based versions replace it? Are there any request or response differences between /oauth/v3/token and /oauth/2026-03/token that we should know about (for example, hub_id in the token response, or the field names in the introspect request)? Thanks! Berangere November 18, 2026, 11:22am 4 Hi @lining and welcome to the HubSpot Community! We are thrilled you’re here! Thanks for taking the time to flag this and for sharing your testing results! I’ve raised these questions with our internal Team to get clarification on this. I’ll follow up here once I have more information to share. Thanks again for bringing this to our attention! Bérangère, HubSpot Community Manager dsmarion November 18, 2026,  1:43pm 5 @hseligson , I checked with claude and the dev mcp server and there might be some discrepecy with the endpoints - can you give your thoughts? Paths to use: POST /oauth/2026-09/token, /oauth/2026-09/token/introspect and /oauth/2026-09/token/revoke. The post says /v3/…, but I checked HubSpot’s current docs today and they show these date-based paths. Credentials go in the request body, not the URL. Path confusion: the /oauth/v3/… and /oauth/2026-03/… forms also work, but the bare /v3/token path from the announcement returns a 404. /oauth/v1 is deprecated, and HubSpot still hasn’t given a shut-off date. Berangere November 19, 2026, 12:51pm 6 Hi @lining and @dsmarion , I hope that you are well! To get back to you on this, if you haven’t made any updates yet and wanted to be as forward-looking as possible, we’d recommend that you move to /2026-09. I hope this helps! And please let us know if you have any additional questions! Bérangère, HubSpot Community Manager 1 Like Related topics Topic Replies Views Activity Which OAuth token endpoint does App Marketplace listing review accept: /oauth/v3/token or /oauth/202 APIs & Integrations oauth , app-marketplace 2 51 November 5, 2026 V1 OAuth API Deprecation Developer Announcements announcement , api 1 595 October 5, 2026 Improvements to authentication errors for V3 endpoints in developer preview program APIs & Integrations announcements 0 2391 March 11, 2020 Additional details returned when generating OAuth access tokens Developer Announcements announcement , api 0 2315 May 19, 2025 Upcoming: Expiration of OAuth access tokens is changing Developer Announcements announcement , api 6 7261 November 14, 2025",
+      "published_label": "10 months ago"
+    }
+  ],
+  "claims": {
+    "auth": {
+      "value": [
+        "OAuth 2.0",
+        "API key",
+        "API token",
+        "Bearer token"
+      ],
+      "sources": [
+        "https://developers.hubspot.com/changelog/new-oauth-v3-api-endpoints-and-standardized-error-responses",
+        "https://developers.hubspot.com/blog/hubspot-service-keys-the-right-api-credential-for-data-integrations",
+        "https://community.hubspot.com/t/new-oauth-v3-api-endpoints-and-standardized-error-responses/145422"
+      ],
+      "evidence": [
+        {
+          "value": "OAuth 2.0",
+          "url": "https://developers.hubspot.com/changelog/new-oauth-v3-api-endpoints-and-standardized-error-responses",
+          "excerpt": " and updated error response formatting. What's Changing? New Oauth v3 Token Endpoints To align with OAuth 2.0 security best practices, we have introduced two new v3 OAuth API endpoints designed to keep sensitive credentials out of server logs and browser histories. POST /v3/token: Handles",
+          "published_label": null
+        },
+        {
+          "value": "API key",
+          "url": "https://developers.hubspot.com/blog/hubspot-service-keys-the-right-api-credential-for-data-integrations",
+          "excerpt": "→ Service Keys → create a key, name it, add scopes,  copy/paste it, and use it as a Bearer token or API key. What you gain compared to legacy private apps: Rotation without disruption. You can rotate a Service Key without rebuilding the integration from scratch. Audit logging. Last-used",
+          "published_label": "6 months ago"
+        },
+        {
+          "value": "API token",
+          "url": "https://developers.hubspot.com/blog/hubspot-service-keys-the-right-api-credential-for-data-integrations",
+          "excerpt": "hin a new Environment . In a BI tool or data connector, paste the key wherever the tool asks for an API token or authorization credential. Most tools that connect to HubSpot via API will have a “Bearer token” or “API key” field in their connection settings. In a Python or Node script, you",
+          "published_label": "6 months ago"
+        },
+        {
+          "value": "Bearer token",
+          "url": "https://developers.hubspot.com/blog/hubspot-service-keys-the-right-api-credential-for-data-integrations",
+          "excerpt": "nd managed in your HubSpot Settings, where you can define the scopes, copy the key, and use it as a Bearer token in whatever client you’re working on - that’s it! Who Service Keys are for and who they’re not for Service Keys are a good fit when: You’re connecting HubSpot to a data warehouse ",
+          "published_label": "6 months ago"
+        },
+        {
+          "value": "OAuth 2.0",
+          "url": "https://community.hubspot.com/t/new-oauth-v3-api-endpoints-and-standardized-error-responses/145422",
+          "excerpt": " and updated error response formatting. What’s Changing? New Oauth v3 Token Endpoints To align with OAuth 2.0 security best practices, we have introduced two new v3 OAuth API endpoints designed to keep sensitive credentials out of server logs and browser histories. POST /v3/token: Handles",
+          "published_label": "10 months ago"
+        }
+      ],
+      "reason": "Provisional extraction: validate scope and completeness against the cited page."
+    },
+    "credential_gate": {
+      "value": [
+        "free or trial developer credential path"
+      ],
+      "sources": [
+        "https://developers.hubspot.com/blog/harnessing-the-power-of-hubspots-public-apis-with-postman"
+      ],
+      "evidence": [
+        {
+          "value": "free or trial developer credential path",
+          "url": "https://developers.hubspot.com/blog/harnessing-the-power-of-hubspots-public-apis-with-postman",
+          "excerpt": "ubSpot developer test account. Need a HubSpot account? Create a test account after signing up for a free developer account . A HubSpot app associated with your HubSpot account (the app can be either public or private ). Please note that you must be a Super Admin to install a public app in a HubSpot account or create a private app. If you’re unsure which app to u",
+          "published_label": null
+        }
+      ],
+      "reason": "Provisional extraction: validate scope and completeness against the cited page."
+    },
+    "api_surface": {
+      "value": "unknown",
+      "sources": [],
+      "evidence": [],
+      "reason": "No sufficiently specific positive evidence extracted; review targeted search results."
+    },
+    "official_mcp": {
+      "value": "yes (provisional)",
+      "sources": [
+        "https://developers.hubspot.com/changelog/remote-hubspot-mcp-server-is-now-generally-available",
+        "https://developers.hubspot.com/docs/apps/developer-platform/build-apps/integrate-with-the-remote-hubspot-mcp-server",
+        "https://developers.hubspot.com/ai-tools/mcp?faq=5",
+        "https://community.hubspot.com/t/remote-hubspot-mcp-server-is-now-generally-available/148286"
+      ],
+      "evidence": [
+        {
+          "value": "yes (provisional)",
+          "url": "https://developers.hubspot.com/changelog/remote-hubspot-mcp-server-is-now-generally-available",
+          "excerpt": "Remote HubSpot MCP server is now generally available Skip to main content Skip to footer HubSpot Developer Changelog Home › HubSpot Developer Changelog › Remote HubSpot MCP server is no",
+          "published_label": null,
+          "context_warning": "Review vendor ownership, dates, and scope."
+        },
+        {
+          "value": "yes (provisional)",
+          "url": "https://developers.hubspot.com/docs/apps/developer-platform/build-apps/integrate-with-the-remote-hubspot-mcp-server",
+          "excerpt": "Integrate AI tools with the HubSpot MCP server - HubSpot docs Documentation Index Fetch the complete documentation index at: /docs/llms.txt Use this file to discover all available pages before exploring fur",
+          "published_label": null,
+          "context_warning": "Review vendor ownership, dates, and scope."
+        },
+        {
+          "value": "yes (provisional)",
+          "url": "https://developers.hubspot.com/ai-tools/mcp?faq=5",
+          "excerpt": "HubSpot MCP Server Skip to main content Skip to footer Enable your agents and dev tools to  interact with HubSpot. HubSpot offers two distinct MCP (Model Context Protocol) server",
+          "published_label": null,
+          "context_warning": "Review vendor ownership, dates, and scope."
+        },
+        {
+          "value": "yes (provisional)",
+          "url": "https://community.hubspot.com/t/remote-hubspot-mcp-server-is-now-generally-available/148286",
+          "excerpt": "Remote HubSpot MCP server is now generally available - Developer Announcements - HubSpot Community Remote HubSpot MCP server is now generally available Develop, Build & Integrate Develo",
+          "published_label": null,
+          "context_warning": "Review vendor ownership, dates, and scope."
+        }
+      ],
+      "reason": "Provisional; check source date, scope, and vendor ownership."
+    },
+    "composio_toolkit": {
+      "value": "listed",
+      "sources": [
+        "https://docs.composio.dev/toolkits/hubspot"
+      ],
+      "evidence": [],
+      "reason": "Catalog match; scope needs review."
+    },
+    "verdict": {
+      "value": "unknown",
+      "sources": [],
+      "evidence": [],
+      "reason": "A supported access path, authentication method and API surface were not all extracted."
+    }
+  },
+  "validation": [
+    "All claims are provisional",
+    "No vendor MCP inference from Composio catalog",
+    "Negated MCP or client-only source is not counted as vendor-server proof"
+  ]
+}

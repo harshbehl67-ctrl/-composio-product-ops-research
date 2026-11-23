@@ -1,0 +1,94 @@
+{
+  "app": {
+    "number": 70,
+    "name": "Sentry",
+    "category": "Developer, Infra and Data platforms",
+    "hint": "docs.sentry.io/api"
+  },
+  "replayed_at": "2026-11-23T18:19:20.202715+00:00",
+  "source_passes": [
+    "data/pass2/070.json",
+    "data/pass4/070.json"
+  ],
+  "source_search": "data/new_search/070.json",
+  "publication_date_note": "Published labels are retained exactly as supplied by search; missing labels are null. Relative labels must not be treated as exact publication dates.",
+  "claims": {
+    "auth": {
+      "value": [
+        "OAuth 2.0",
+        "API key",
+        "Bearer token",
+        "Basic authentication"
+      ],
+      "sources": [
+        "https://docs.sentry.io/api/auth/"
+      ],
+      "evidence": [
+        {
+          "value": "OAuth 2.0",
+          "url": "https://docs.sentry.io/api/auth/",
+          "excerpt": "t require a user authentication token are specific to your user, such as Retrieve an Organization . OAuth2 For third-party applications that need to access Sentry on behalf of users, Sentry supports OAuth2 with the authorization code grant type. This allows users to authorize your appl",
+          "published_label": null
+        },
+        {
+          "value": "API key",
+          "url": "https://docs.sentry.io/api/auth/",
+          "excerpt": "tion tokens wherever possible. API keys are passed using HTTP Basic auth where the username is your api key, and the password is an empty value. As an example, to get information about the project which your key is bound to, you might make a request like so: Bash Copied curl -u { API_KE",
+          "published_label": null
+        },
+        {
+          "value": "Bearer token",
+          "url": "https://docs.sentry.io/api/auth/",
+          "excerpt": "his is generally very limited and an endpoint will describe if its supported. This works similar to Bearer token authentication, but uses your DSN (Client Key). Bash Copied curl -H 'Authorization: DSN {DSN}' https://sentry.io/api/0/ { organization_slug } / { project_slug } /user-reports/ cur",
+          "published_label": null
+        },
+        {
+          "value": "Basic authentication",
+          "url": "https://docs.sentry.io/api/auth/",
+          "excerpt": "ew accounts. You should use authentication tokens wherever possible. API keys are passed using HTTP Basic auth where the username is your api key, and the password is an empty value. As an example, to get information about the project which your key is bound to, you might make a request li",
+          "published_label": null
+        }
+      ],
+      "reason": "Provisional extraction: validate scope and completeness against the cited page."
+    },
+    "credential_gate": {
+      "value": "unknown",
+      "sources": [],
+      "evidence": [],
+      "reason": "No sufficiently specific positive evidence extracted; review targeted search results."
+    },
+    "api_surface": {
+      "value": "unknown",
+      "sources": [],
+      "evidence": [],
+      "reason": "No sufficiently specific positive evidence extracted; review targeted search results."
+    },
+    "official_mcp": {
+      "value": "unknown",
+      "sources": [],
+      "evidence": [],
+      "reason": "No sufficiently specific positive evidence extracted; review targeted search results."
+    },
+    "composio_toolkit": {
+      "value": "listed",
+      "sources": [
+        "https://docs.composio.dev/toolkits/sentry"
+      ],
+      "evidence": [],
+      "reason": "Catalog match; scope needs review."
+    },
+    "verdict": {
+      "value": "unknown",
+      "sources": [],
+      "evidence": [],
+      "reason": "A supported access path, authentication method and API surface were not all extracted."
+    }
+  },
+  "validation": [
+    "Automatic extraction is provisional and not a verified final claim",
+    "Unknown is not evidence of absence",
+    "No Composio-to-vendor-MCP inference",
+    "Basic authentication may be endpoint-specific",
+    "Client-only and negated statements are not positive MCP evidence"
+  ]
+}

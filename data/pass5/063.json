@@ -1,0 +1,117 @@
+{
+  "app": {
+    "number": 63,
+    "name": "Netlify",
+    "category": "Developer, Infra and Data platforms",
+    "hint": "docs.netlify.com/api"
+  },
+  "replayed_at": "2026-11-23T18:16:38.314088+00:00",
+  "source_passes": [
+    "data/pass2/063.json",
+    "data/pass4/063.json"
+  ],
+  "source_search": "data/new_search/063.json",
+  "publication_date_note": "Published labels are retained exactly as supplied by search; missing labels are null. Relative labels must not be treated as exact publication dates.",
+  "claims": {
+    "auth": {
+      "value": [
+        "OAuth 2.0"
+      ],
+      "sources": [
+        "https://docs.netlify.com/manage/security/secure-access-to-sites/oauth-provider-tokens/"
+      ],
+      "evidence": [
+        {
+          "value": "OAuth 2.0",
+          "url": "https://docs.netlify.com/manage/security/secure-access-to-sites/oauth-provider-tokens/",
+          "excerpt": "on authentication The process of verifying who someone is before letting them access your site. × . OAuth2 is a widely accepted standard used by many services and APIs, but the OAuth authentication process requires a server to send a signed request to the OAuth server, signed with a se",
+          "published_label": null
+        }
+      ],
+      "reason": "Provisional extraction: validate scope and completeness against the cited page."
+    },
+    "credential_gate": {
+      "value": "unknown",
+      "sources": [],
+      "evidence": [],
+      "reason": "No sufficiently specific positive evidence extracted; review targeted search results."
+    },
+    "api_surface": {
+      "value": [
+        "REST"
+      ],
+      "sources": [
+        "https://docs.netlify.com/api-and-cli-guides/api-guides/get-started-with-api/",
+        "https://docs.netlify.com/build/data-and-storage/netlify-database/api/"
+      ],
+      "evidence": [
+        {
+          "value": "REST",
+          "url": "https://docs.netlify.com/api-and-cli-guides/api-guides/get-started-with-api/",
+          "excerpt": "d with the Netlify API Copy page View as Markdown Copy as Markdown View as Markdown Use the Netlify REST API to manage atomic deploys of your sites and apps, manage form submissions, inject JavaScript snippets, manage DNS DNS The system that translates a domain name like yoursite.com int",
+          "published_label": null
+        },
+        {
+          "value": "REST",
+          "url": "https://docs.netlify.com/build/data-and-storage/netlify-database/api/",
+          "excerpt": "} catch ( e ) { await client . query ( \" ROLLBACK \" ); throw e ; } finally { client . release (); } REST API Section titled “REST API” The Netlify REST API exposes endpoints for managing databases, branches, and snapshots programmatically. All endpoints are scoped to a site, are rooted a",
+          "published_label": null
+        }
+      ],
+      "reason": "Provisional extraction: validate scope and completeness against the cited page."
+    },
+    "official_mcp": {
+      "value": "yes (provisional)",
+      "sources": [
+        "https://www.netlify.com/knowledge-base/how-to-build-and-deploy-an-mcp-server-on-netlify/",
+        "https://main--www.netlify.com/knowledge-base/how-to-build-and-deploy-an-mcp-server-on-netlify/",
+        "https://www.netlify.com/press/netlify-launches-official-mcp-server-setting-the-standard-for-agent-native-development/"
+      ],
+      "evidence": [
+        {
+          "value": "yes (provisional)",
+          "url": "https://www.netlify.com/knowledge-base/how-to-build-and-deploy-an-mcp-server-on-netlify/",
+          "excerpt": " before you write any code, because building the wrong one wastes an afternoon. Netlify publishes its own hosted MCP server that lets an AI client operate the Netlify platform on your behalf: create projects, trigger deploys, manage environment variables. You don’t write that one. Y",
+          "published_label": "2 months ago",
+          "context_warning": "Review vendor ownership, dates, and scope."
+        },
+        {
+          "value": "yes (provisional)",
+          "url": "https://main--www.netlify.com/knowledge-base/how-to-build-and-deploy-an-mcp-server-on-netlify/",
+          "excerpt": " before you write any code, because building the wrong one wastes an afternoon. Netlify publishes its own hosted MCP server that lets an AI client operate the Netlify platform on your behalf: create projects, trigger deploys, manage environment variables. You don’t write that one. Y",
+          "published_label": "2 months ago",
+          "context_warning": "Review vendor ownership, dates, and scope."
+        },
+        {
+          "value": "yes (provisional)",
+          "url": "https://www.netlify.com/press/netlify-launches-official-mcp-server-setting-the-standard-for-agent-native-development/",
+          "excerpt": "Netlify Launches official MCP Server Setting the Standard for AI-Native Development | Netlify Meet the new Netlify, where developers, agents, and now anyone with an idea build together. See what’s",
+          "published_label": "1.5 years ago",
+          "context_warning": "Review vendor ownership, dates, and scope."
+        }
+      ],
+      "reason": "Provisional; check source date, scope, and vendor ownership."
+    },
+    "composio_toolkit": {
+      "value": "listed",
+      "sources": [
+        "https://docs.composio.dev/toolkits/netlify_mcp"
+      ],
+      "evidence": [],
+      "reason": "Catalog match; scope needs review."
+    },
+    "verdict": {
+      "value": "unknown",
+      "sources": [],
+      "evidence": [],
+      "reason": "A supported access path, authentication method and API surface were not all extracted."
+    }
+  },
+  "validation": [
+    "Automatic extraction is provisional and not a verified final claim",
+    "Unknown is not evidence of absence",
+    "No Composio-to-vendor-MCP inference",
+    "Basic authentication may be endpoint-specific",
+    "Client-only and negated statements are not positive MCP evidence"
+  ]
+}

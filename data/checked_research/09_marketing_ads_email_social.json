@@ -1,0 +1,2224 @@
+{
+  "category": "Marketing, Ads, Email and Social",
+  "checked_at": "2026-11-24",
+  "records": [
+    {
+      "number": 31,
+      "app": "Google Ads",
+      "category": "Marketing, Ads, Email and Social",
+      "summary": "Google Ads exposes a broad OAuth 2.0 REST API. Developer tokens were sunset on September 9, 2026; API access is now managed through Google Cloud projects, with Test access available after enabling the API and higher access levels subject to review. Google also documents a vendor MCP server with local stdio and remote Streamable HTTP modes.",
+      "blocker": "Production-scale use depends on the Cloud project's access level: Test access is limited to test accounts, while Standard access requires a detailed manual audit. MCP authentication differs between local ADC and remote web-application OAuth.",
+      "next_action": "Create a Google Cloud project, enable the Google Ads API, configure user OAuth or a service account with the adwords scope, and begin with Test access. Apply for Explorer or Standard access as needed; deploy the MCP server locally or on Cloud Run and verify the appropriate OAuth credential path.",
+      "fields": {
+        "auth": {
+          "value": [
+            "OAuth 2.0 user authentication flow; scope https://www.googleapis.com/auth/adwords",
+            "OAuth 2.0 service-account flow; scope https://www.googleapis.com/auth/adwords"
+          ],
+          "status": "checked",
+          "reason": "The current authentication reference documents both OAuth 2.0 user and service-account flows and specifies the adwords scope. The developer-token requirement is obsolete because developer tokens were sunset on September 9, 2026. The cited pages are undated.",
+          "evidence": [
+            {
+              "url": "https://developers.google.com/google-ads/api/rest/auth",
+              "title": "Google Ads API authentication",
+              "quote": "The Google Ads API uses OAuth 2.0 for authorizing API requests. Both OAuth 2.0 user authentication flow and service account flow are supported.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            },
+            {
+              "url": "https://developers.google.com/google-ads/api/rest/auth",
+              "title": "Google Ads API OAuth scope",
+              "quote": "The `scope` to use for Google Ads API access is `https://www.googleapis.com/auth/adwords`.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            },
+            {
+              "url": "https://developers.google.com/google-ads/api/docs/api-policy/developer-token",
+              "title": "Google Ads developer-token sunset",
+              "quote": "Developer tokens were sunset on September 9, 2026.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            }
+          ]
+        },
+        "credential_gate": {
+          "value": "mixed",
+          "gate_class": "mixed",
+          "details": {
+            "gate_class": "mixed"
+          },
+          "status": "checked",
+          "reason": "Enabling the API in a Google Cloud project grants Test access, so initial access is self-serve, but production and higher-volume access require access-level applications and a manual Standard audit. The developer-token sunset changes the gate rather than removing API access. The cited access documentation is undated.",
+          "evidence": [
+            {
+              "url": "https://developers.google.com/google-ads/api/docs/api-policy/access-levels",
+              "title": "Google Ads API access levels",
+              "quote": "After you've enabled Google Ads API, your Google Cloud project is granted Test access.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            },
+            {
+              "url": "https://developers.google.com/google-ads/api/docs/api-policy/access-levels",
+              "title": "Google Ads API Explorer access",
+              "quote": "The Explorer access level allows your Google Cloud project to execute up to 2,880 operations per day against production accounts.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            },
+            {
+              "url": "https://developers.google.com/google-ads/api/docs/api-policy/access-levels",
+              "title": "Google Ads API Standard audit",
+              "quote": "The Standard access application involves a detailed manual audit of your application.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            }
+          ]
+        },
+        "api_surface": {
+          "value": "REST; broad documented surface",
+          "api_types": [
+            "REST"
+          ],
+          "breadth": "broad",
+          "details": {
+            "api_types": [
+              "REST"
+            ],
+            "breadth": "broad"
+          },
+          "status": "checked",
+          "reason": "The official REST interface and resource-design documentation cover hierarchical customers, campaigns, ad groups, ads, keywords, conversion actions, reporting, and many other Google Ads resources. This is a broad REST surface. The cited pages are undated.",
+          "evidence": [
+            {
+              "url": "https://developers.google.com/google-ads/api/rest/auth",
+              "title": "Google Ads API REST interface",
+              "quote": "This page describes how to set these values and documents several additional API-specific HTTP headers that are sent and received when using the REST interface.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            },
+            {
+              "url": "https://developers.google.com/google-ads/api/rest/design/resource-names",
+              "title": "Google Ads API resource hierarchy",
+              "quote": "For example, campaigns, ad groups, ads, and keywords are all sub-resources of a root customer resource.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            }
+          ]
+        },
+        "official_mcp": {
+          "value": "vendor_server",
+          "mcp_mode": "both",
+          "status": "checked",
+          "reason": "Google documents its own Google Ads MCP server as a bridge to the API, with local stdio and remote Streamable HTTP on Cloud Run. Local mode uses Application Default Credentials while remote HTTP uses OAuth 2.0 web-application credentials. The MCP documentation is undated.",
+          "evidence": [
+            {
+              "url": "https://developers.google.com/google-ads/api/docs/developer-toolkit/mcp-server",
+              "title": "Google Ads MCP server",
+              "quote": "The Google Ads MCP server provides a standardized bridge to the Google Ads API.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            },
+            {
+              "url": "https://developers.google.com/google-ads/api/docs/developer-toolkit/mcp-server",
+              "title": "Google Ads MCP transport",
+              "quote": "Transport: Standard input/output (`stdio`) or Streamable HTTP (`streamable-http` on Cloud Run)",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            },
+            {
+              "url": "https://developers.google.com/google-ads/api/docs/developer-toolkit/mcp-server",
+              "title": "Google Ads MCP authentication",
+              "quote": "Authentication: Application Default Credentials (OAuth 2.0 user credentials or service account) for local `stdio`, or OAuth 2.0 Web application credentials for remote HTTP",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            }
+          ]
+        },
+        "composio_toolkit": {
+          "value": "listed_exact",
+          "details": {
+            "slug": "GOOGLEADS",
+            "auth_display": "OAUTH2",
+            "tools": 78
+          },
+          "status": "checked",
+          "reason": "The current Composio toolkit page lists Google Ads under the exact slug GOOGLEADS with 78 tools and OAuth2 authentication. The page is undated; its Version value is not treated as a publication date.",
+          "evidence": [
+            {
+              "url": "https://docs.composio.dev/toolkits/googleads.md",
+              "title": "Composio Google Ads toolkit",
+              "quote": "- **Category:** ads & conversion\n- **Auth:** OAUTH2\n- **Composio-managed OAuth available?** Yes\n- **Tools:** 78\n- **Triggers:** 0\n- **Slug:** `GOOGLEADS`",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            }
+          ]
+        },
+        "verdict": {
+          "value": "gated_build_candidate",
+          "status": "checked",
+          "reason": "OAuth, a broad REST API, self-serve Test access, and a dual-mode vendor MCP are documented, but Standard access requires a manual audit and production use is access-level dependent. The load-bearing Google pages are undated.",
+          "evidence": [
+            {
+              "url": "https://developers.google.com/google-ads/api/docs/api-policy/access-levels",
+              "title": "Google Ads API access gate",
+              "quote": "The Standard access application involves a detailed manual audit of your application.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            },
+            {
+              "url": "https://developers.google.com/google-ads/api/docs/developer-toolkit/mcp-server",
+              "title": "Google Ads MCP build path",
+              "quote": "Transport: Standard input/output (`stdio`) or Streamable HTTP (`streamable-http` on Cloud Run)",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "number": 32,
+      "app": "Meta Ads",
+      "category": "Marketing, Ads, Email and Social",
+      "summary": "Meta Ads is built on the broad Graph API and supports OAuth 2.0 user and system-user access paths. Meta operates a remote Ads MCP server with OAuth, user-access-token, and Employee-role system-user-token authentication. Advanced Marketing API access remains permission- and feature-specific through App Review.",
+      "blocker": "Production permissions require the appropriate Marketing API access tier and App Review; MCP minimum permissions are ads_mcp_management plus ads_read or ads_management, and only Employee-role system-user tokens are supported for the system-user path.",
+      "next_action": "Create or select the relevant Meta app and business assets, configure the least-privilege ads permissions, and choose OAuth, a user access token, or an Employee-role system-user access token. For MCP, connect to the remote Ads server and complete the required permission flow.",
+      "fields": {
+        "auth": {
+          "value": [
+            "OAuth 2.0 access token; ads_read or ads_management plus ads_mcp_management for MCP",
+            "User access token; ads_read or ads_management plus ads_mcp_management for MCP",
+            "Employee-role system-user access token; ads_read or ads_management plus ads_mcp_management for MCP"
+          ],
+          "status": "checked",
+          "reason": "The official Ads MCP getting-started page documents three authentication methods and the required ads permissions. The authorization documentation separately explains advanced-access approval. The cited pages are undated.",
+          "evidence": [
+            {
+              "url": "https://developers.facebook.com/documentation/ads-commerce/ads-ai-connectors/ads-mcp-server/ads-mcp-server-get-started.md",
+              "title": "Meta Ads MCP authentication methods",
+              "quote": "The ads MCP server supports three authentication methods.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            },
+            {
+              "url": "https://developers.facebook.com/documentation/ads-commerce/ads-ai-connectors/ads-mcp-server/ads-mcp-server-get-started.md",
+              "title": "Meta Ads MCP system-user restriction",
+              "quote": "Only Employee-role system user access tokens are supported. Admin-role system user access tokens can't access the ads MCP server.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            },
+            {
+              "url": "https://developers.facebook.com/documentation/ads-commerce/ads-ai-connectors/ads-mcp-server/ads-mcp-server-get-started.md",
+              "title": "Meta Ads MCP required permissions",
+              "quote": "`ads_mcp_management`\n- `ads_read` or `ads_management`",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            }
+          ]
+        },
+        "credential_gate": {
+          "value": "mixed",
+          "gate_class": "mixed",
+          "details": {
+            "gate_class": "mixed"
+          },
+          "status": "checked",
+          "reason": "The Ads MCP does not require owning a Meta app, and user-token access is available, but advanced Marketing API access requires App Review on individual permissions and features. The mixed gate reflects self-serve entry plus reviewed production access. The cited pages are undated.",
+          "evidence": [
+            {
+              "url": "https://developers.facebook.com/documentation/ads-commerce/ads-ai-connectors/ads-mcp-server/ads-mcp-server-get-started.md",
+              "title": "Meta Ads MCP app prerequisite",
+              "quote": "Owning a Meta app is not a prerequisite on using the ads MCP server.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            },
+            {
+              "url": "https://developers.facebook.com/docs/marketing-api/overview/authorization",
+              "title": "Meta Marketing API App Review",
+              "quote": "Advanced access must be approved through the App Review process on an individual permission and feature basis.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            },
+            {
+              "url": "https://developers.facebook.com/docs/marketing-api/overview/authorization",
+              "title": "Meta Marketing API access tier",
+              "quote": "The Marketing API Access Tier controls your rate limits, Business Manager access, and system user capacity.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            }
+          ]
+        },
+        "api_surface": {
+          "value": "HTTP API; broad documented surface",
+          "api_types": [
+            "HTTP API"
+          ],
+          "breadth": "broad",
+          "details": {
+            "api_types": [
+              "HTTP API"
+            ],
+            "breadth": "broad"
+          },
+          "status": "checked",
+          "reason": "The official Graph API overview describes an HTTP-based API used to query data, publish content, manage ads, upload media, and perform a wide variety of tasks. The surface is broad; the current page calls it an HTTP-based Graph API rather than explicitly labeling it GraphQL. The cited page is undated.",
+          "evidence": [
+            {
+              "url": "https://developers.facebook.com/docs/graph-api/overview/",
+              "title": "Meta Graph API overview",
+              "quote": "The Graph API is the primary way to get data into and out of the Facebook platform. It's an HTTP-based API that apps can use to programmatically query data, post new stories, manage ads, upload photos, and perform a wide variety of other tasks.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            }
+          ]
+        },
+        "official_mcp": {
+          "value": "vendor_server",
+          "mcp_mode": "remote",
+          "status": "checked",
+          "reason": "Meta explicitly operates a remote-hosted Ads MCP server for managing Meta ads from an AI agent. The endpoint is remote and works with MCP-compatible clients. The cited MCP pages are undated.",
+          "evidence": [
+            {
+              "url": "https://developers.facebook.com/documentation/ads-commerce/ads-ai-connectors/ads-mcp-server/ads-mcp-server-overview.md",
+              "title": "Meta Ads MCP server overview",
+              "quote": "The ads MCP server is a Meta-hosted Model Context Protocol server that lets you manage Meta ads directly from an AI agent.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            },
+            {
+              "url": "https://developers.facebook.com/documentation/ads-commerce/ads-ai-connectors/ads-mcp-server/ads-mcp-server-overview.md",
+              "title": "Meta Ads MCP remote endpoint",
+              "quote": "The server is remote-hosted at `https://mcp.facebook.com/ads` and works with any MCP-compatible AI agent.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            }
+          ]
+        },
+        "composio_toolkit": {
+          "value": "listed_exact",
+          "details": {
+            "slug": "METAADS",
+            "auth_display": "OAUTH2, API_KEY",
+            "tools": 101
+          },
+          "status": "checked",
+          "reason": "The current Composio toolkit page lists Meta Ads under the exact slug METAADS with 101 tools and OAuth2/API-key authentication. The page is undated; its Version value is not a publication date.",
+          "evidence": [
+            {
+              "url": "https://docs.composio.dev/toolkits/metaads.md",
+              "title": "Composio Meta Ads toolkit",
+              "quote": "# Meta Ads\n\nCreate, edit and get insights from ads across Meta technologies, including Facebook, Instagram, Messenger, WhatsApp and more.\n\n- **Category:** ads & conversion\n- **Auth:** OAUTH2, API_KEY\n- **Composio-managed OAuth available?** Yes\n- **Tools:** 101\n- **Triggers:** 0\n- **Slug:** `METAADS`",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            }
+          ]
+        },
+        "verdict": {
+          "value": "gated_build_candidate",
+          "status": "checked",
+          "reason": "The broad HTTP API, scoped access-token authentication, and Meta-hosted remote MCP are documented, but advanced Marketing API access is gated by permission-specific App Review and access tiers. The cited Meta pages are undated.",
+          "evidence": [
+            {
+              "url": "https://developers.facebook.com/docs/marketing-api/overview/authorization",
+              "title": "Meta Ads production-access review",
+              "quote": "Advanced access must be approved through the App Review process on an individual permission and feature basis.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            },
+            {
+              "url": "https://developers.facebook.com/documentation/ads-commerce/ads-ai-connectors/ads-mcp-server/ads-mcp-server-overview.md",
+              "title": "Meta Ads MCP availability",
+              "quote": "The ads MCP server is a Meta-hosted Model Context Protocol server that lets you manage Meta ads directly from an AI agent.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "number": 33,
+      "app": "LinkedIn Ads",
+      "category": "Marketing, Ads, Email and Social",
+      "summary": "LinkedIn Marketing APIs use three-legged OAuth 2.0 member access tokens and a versioned REST base path. Development access is the starting tier; Standard access requires a Developer Support ticket and LinkedIn review, with some private APIs requiring additional approval. No LinkedIn Ads vendor MCP server is documented in the targeted official Marketing pages.",
+      "blocker": "Only ad accounts explicitly configured in the developer application can be managed. Standard access and private APIs require approval, and two-legged client credentials are unavailable for marketing use cases.",
+      "next_action": "Create a LinkedIn developer application, request the required Marketing API program access and scopes, configure approved ad accounts, and use three-legged OAuth. Start in Development, test against supported accounts, then submit a Standard-access ticket through the Developer Support Portal.",
+      "fields": {
+        "auth": {
+          "value": [
+            "Three-legged OAuth 2.0 member access token; explicit LinkedIn member consent and required marketing scopes"
+          ],
+          "status": "checked",
+          "reason": "LinkedIn documents three-legged OAuth for Marketing APIs and states that the two-legged client-credentials flow is not available for marketing use cases. Required scopes must be granted by the member. The getting-started page is dated 2026-02-11 and the scope documentation is dated 2026-05-15.",
+          "evidence": [
+            {
+              "url": "https://learn.microsoft.com/en-us/linkedin/marketing/getting-started?view=li-lms-2026-10",
+              "title": "LinkedIn Marketing API OAuth tokens",
+              "quote": "Once you have a developer application that has been given access to the LinkedIn Marketing API Program, you're ready to start generating OAuth access tokens to make API calls on behalf of authenticated members.",
+              "retrieved_at": "2026-11-24",
+              "published_at": "2026-02-11",
+              "published_label": "updated 2026-02-11"
+            },
+            {
+              "url": "https://learn.microsoft.com/en-us/linkedin/marketing/getting-started?view=li-lms-2026-10",
+              "title": "LinkedIn Marketing API member consent",
+              "quote": "Before an API call can be made, any required permission scopes must first be granted by the LinkedIn member.",
+              "retrieved_at": "2026-11-24",
+              "published_at": "2026-02-11",
+              "published_label": "updated 2026-02-11"
+            },
+            {
+              "url": "https://learn.microsoft.com/en-us/linkedin/marketing/getting-started?view=li-lms-2026-10",
+              "title": "LinkedIn Marketing API OAuth flow restriction",
+              "quote": "The LinkedIn Advertising API gives you access to the following permissions. All these permission scopes are 3-legged permissions requiring explicit consent from a LinkedIn member. The 2-legged client credentials flow is not available for any marketing use cases.",
+              "retrieved_at": "2026-11-24",
+              "published_at": "2026-02-11",
+              "published_label": "updated 2026-02-11",
+              "original_url": "https://learn.microsoft.com/en-us/linkedin/marketing/overview?view=li-lms-2026-10",
+              "source_review": "The restriction moved from Overview to Key Concepts. The official 2026-10 getting-started page reproduces all three sentences, including the negation, and displays updated 2026-02-11. The Microsoft view parameter is preserved."
+            }
+          ]
+        },
+        "credential_gate": {
+          "value": "mixed",
+          "gate_class": "mixed",
+          "details": {
+            "gate_class": "mixed"
+          },
+          "status": "checked",
+          "reason": "Applications start in Development tier, but Standard access must be requested through a support ticket and LinkedIn may select partners at its discretion. Some private APIs require additional approval. The gate is therefore self-serve entry plus reviewed production access. The cited pages are dated.",
+          "evidence": [
+            {
+              "url": "https://learn.microsoft.com/en-us/linkedin/marketing/integrations/marketing-tiers?view=li-lms-2026-10",
+              "title": "LinkedIn Marketing API access tiers",
+              "quote": "LinkedIn has two tiers of access to our Advertising API: Development and Standard.",
+              "retrieved_at": "2026-11-24",
+              "published_at": "2026-04-08",
+              "published_label": "updated 2026-04-08"
+            },
+            {
+              "url": "https://learn.microsoft.com/en-us/linkedin/marketing/integrations/marketing-tiers?view=li-lms-2026-10",
+              "title": "LinkedIn Development and Standard access requirements",
+              "quote": "Visit your app's Product tab in the Developer Portal to apply for the Advertising API product. Before accessing the Standard Access tier, you must first build and test your application on LinkedIn’s advertising platform.",
+              "retrieved_at": "2026-11-24",
+              "published_at": "2026-04-08",
+              "published_label": "updated 2026-04-08",
+              "original_url": "https://learn.microsoft.com/en-us/linkedin/marketing/integrations/marketing-tiers?view=li-lms-2026-10",
+              "source_review": "The current 2026-10 access-tier page no longer says all applications start in Development. It instead documents applying for the Advertising API and the build/test prerequisite for Standard; the mixed gate is unchanged. The Microsoft view parameter and updated date are retained."
+            },
+            {
+              "url": "https://learn.microsoft.com/en-us/linkedin/marketing/increasing-access?view=li-lms-2026-10",
+              "title": "LinkedIn Standard access request",
+              "quote": "The Standard API Access must be requested via a support ticket to be submitted on the Developer Support Portal.",
+              "retrieved_at": "2026-11-24",
+              "published_at": "2026-10-19",
+              "published_label": "updated 2026-10-19"
+            },
+            {
+              "url": "https://learn.microsoft.com/en-us/linkedin/marketing/increasing-access?view=li-lms-2026-10",
+              "title": "LinkedIn partner selection",
+              "quote": "LinkedIn reserves the right to review applications and select partners at its discretion and a partner might not be upgraded even if they meet these minimum requirements.",
+              "retrieved_at": "2026-11-24",
+              "published_at": "2026-10-19",
+              "published_label": "updated 2026-10-19"
+            }
+          ]
+        },
+        "api_surface": {
+          "value": "REST; broad documented surface",
+          "api_types": [
+            "REST"
+          ],
+          "breadth": "broad",
+          "details": {
+            "api_types": [
+              "REST"
+            ],
+            "breadth": "broad"
+          },
+          "status": "checked",
+          "reason": "LinkedIn documents a versioned REST base path and a broad Marketing API portfolio covering campaigns, creatives, audiences, insights, media planning, company intelligence, and related products. Private products remain approval-gated. The cited pages are dated.",
+          "evidence": [
+            {
+              "url": "https://learn.microsoft.com/en-us/linkedin/marketing/versioning?view=li-lms-2026-10",
+              "title": "LinkedIn Marketing API REST base path",
+              "quote": "LinkedIn’s Marketing APIs first versioned API release was June 2022 under a new base path: `https://api.linkedin.com/rest/`",
+              "retrieved_at": "2026-11-24",
+              "published_at": "2026-11-16",
+              "published_label": "updated 2026-11-16"
+            },
+            {
+              "url": "https://learn.microsoft.com/en-us/linkedin/marketing/overview?view=li-lms-2026-10",
+              "title": "LinkedIn Marketing API product breadth",
+              "quote": "Enable ads management at scale: Build functionality for scalable ads management with Ad Campaigns and Creatives APIs.",
+              "retrieved_at": "2026-11-24",
+              "published_at": "2026-05-15",
+              "published_label": "updated 2026-05-15"
+            },
+            {
+              "url": "https://learn.microsoft.com/en-us/linkedin/marketing/overview?view=li-lms-2026-10",
+              "title": "LinkedIn private Marketing APIs",
+              "quote": "Matched Audiences, Audience Insights, Media Planning API, and Company Intelligence API are private APIs and require additional approval.",
+              "retrieved_at": "2026-11-24",
+              "published_at": "2026-05-15",
+              "published_label": "updated 2026-05-15"
+            }
+          ]
+        },
+        "official_mcp": {
+          "value": "no_vendor_server_documented",
+          "review_basis": "scoped_documentation_review",
+          "mcp_mode": "unknown",
+          "status": "checked",
+          "reason": "Checked against the November 2026 LinkedIn Marketing documentation (view=li-lms-2026-11), its official Marketing table of contents, and LinkedIn's developer product catalog. These sources document OAuth, versioned REST APIs, and AI-use policy, but no LinkedIn-operated MCP server, endpoint, transport, or instructions for LinkedIn acting only as an MCP client. This finding is limited to the reviewed public documentation as of 2026-11-24; it does not assert that no private, unannounced, or future server exists. The Microsoft Learn documentation MCP server, Composio, and third-party repositories were excluded.",
+          "evidence": [
+            {
+              "url": "https://learn.microsoft.com/en-us/linkedin/marketing/versioning?view=li-lms-2026-11",
+              "title": "LMS API Documentation Versioning - LinkedIn | Microsoft Learn",
+              "quote": "LinkedIn’s Marketing APIs first versioned API release was June 2022 under a new base path: `https://api.linkedin.com/rest/`",
+              "retrieved_at": "2026-11-24",
+              "published_at": "2026-11-16",
+              "published_label": "updated 2026-11-16"
+            },
+            {
+              "url": "https://learn.microsoft.com/en-us/linkedin/marketing/getting-started?view=li-lms-2026-11",
+              "title": "Key Concepts - LinkedIn | Microsoft Learn",
+              "quote": "Once you have a developer application that has been given access to the LinkedIn Marketing API Program, you're ready to start generating OAuth access tokens to make API calls on behalf of authenticated members.",
+              "retrieved_at": "2026-11-24",
+              "published_at": "2026-02-11",
+              "published_label": "updated 2026-02-11"
+            },
+            {
+              "url": "https://learn.microsoft.com/en-us/linkedin/marketing/developer-ai-policy?view=li-lms-2026-11",
+              "title": "Developer AI Policy - LinkedIn | Microsoft Learn",
+              "quote": "This Policy outlines the extent to which developers can use AI functionality in connection with the referenced content/data.",
+              "retrieved_at": "2026-11-24",
+              "published_at": "2026-01-14",
+              "published_label": "updated 2026-01-14"
+            },
+            {
+              "url": "https://developer.linkedin.com/product-catalog/marketing/campaign-management",
+              "title": "LinkedIn API | Campaign Management",
+              "quote": "Create, manage, and optimize campaigns",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            }
+          ]
+        },
+        "composio_toolkit": {
+          "value": "listed_exact",
+          "details": {
+            "slug": "LINKEDIN_ADS",
+            "auth_display": "OAUTH2",
+            "tools": 28
+          },
+          "status": "checked",
+          "reason": "The current Composio toolkit page lists Linkedin Ads under the exact product-equivalent slug LINKEDIN_ADS with 28 tools and OAuth2 authentication. The page is undated; its Version value is not a publication date.",
+          "evidence": [
+            {
+              "url": "https://docs.composio.dev/toolkits/linkedin_ads.md",
+              "title": "Composio LinkedIn Ads toolkit",
+              "quote": "# Linkedin Ads\n\nLinkedIn Marketing and Advertising API for managing ad campaigns, analytics, and organization social content\n\n- **Category:** marketing\n- **Auth:** OAUTH2\n- **Composio-managed OAuth available?** No\n- **Tools:** 28\n- **Triggers:** 0\n- **Slug:** `LINKEDIN_ADS`",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            }
+          ]
+        },
+        "verdict": {
+          "value": "gated_build_candidate",
+          "status": "checked",
+          "reason": "Three-legged OAuth and a broad REST API are documented, but Standard access and private APIs require review and support-ticket workflows. The load-bearing LinkedIn pages are dated; no vendor MCP is needed to support the gated REST build verdict.",
+          "evidence": [
+            {
+              "url": "https://learn.microsoft.com/en-us/linkedin/marketing/integrations/marketing-tiers?view=li-lms-2026-10",
+              "title": "LinkedIn gated Marketing API access",
+              "quote": "Visit your app's Product tab in the Developer Portal to apply for the Advertising API product. Before accessing the Standard Access tier, you must first build and test your application on LinkedIn’s advertising platform.",
+              "retrieved_at": "2026-11-24",
+              "published_at": "2026-04-08",
+              "published_label": "updated 2026-04-08",
+              "original_url": "https://learn.microsoft.com/en-us/linkedin/marketing/integrations/marketing-tiers?view=li-lms-2026-10",
+              "source_review": "The former universal starting-tier sentence is absent. The current official 2026-10 page documents the application and Standard-access prerequisites that support the gated build verdict. The Microsoft view parameter and updated date are retained."
+            },
+            {
+              "url": "https://learn.microsoft.com/en-us/linkedin/marketing/versioning?view=li-lms-2026-10",
+              "title": "LinkedIn Marketing API REST availability",
+              "quote": "LinkedIn’s Marketing APIs first versioned API release was June 2022 under a new base path: `https://api.linkedin.com/rest/`",
+              "retrieved_at": "2026-11-24",
+              "published_at": "2026-11-16",
+              "published_label": "updated 2026-11-16"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "number": 34,
+      "app": "GoHighLevel",
+      "category": "Marketing, Ads, Email and Social",
+      "summary": "GoHighLevel documents a broad REST API authenticated with OAuth 2.0 access tokens or scoped Private Integration Tokens at sub-account/location or agency level. Ongoing API access requires a paid HighLevel plan (14-day trial; Starter $97/month), and some endpoints require Founder eligibility. HighLevel operates remote Streamable HTTP MCP endpoints for supported AI clients; multi-sub-account agency use is rolling out and each request targets one authorized sub-account. Composio's preserved listing is the location-scoped HIGHLEVEL_LOCATION alias.",
+      "blocker": "Useful access requires a paid HighLevel subscription, endpoint eligibility, scopes, and account permissions; restricted endpoints need a higher-tier plan. The preserved Composio alias is single-location, not agency-wide. MCP client/connector support does not mean HighLevel operates an MCP client, and bulk agency installation is not universally available.",
+      "next_action": "Start with a HighLevel trial or paid account, create a least-privilege Private Integration Token for one location (or register a Marketplace OAuth app for user-authorized/agency use), verify endpoint plan eligibility, and test REST calls. For MCP, use the current client-specific HTTPS endpoint, approve only needed scopes/sub-accounts, and confirm bulk installation before agency-wide automation; use HIGHLEVEL_LOCATION only for one location.",
+      "verified_official_domains": [
+        "gohighlevel.com",
+        "leadconnectorhq.com",
+        "highlevel.stoplight.io"
+      ],
+      "fields": {
+        "auth": {
+          "status": "checked",
+          "value": [
+            "OAuth 2.0 access token; Bearer authentication with sub-account/location or agency/company user type and authorized scopes",
+            "Private Integration Token; Bearer authentication created at agency or sub-account level with selected scopes",
+            "Legacy API V1 key; end-of-support since 2025-12-31 and not recommended for new integrations"
+          ],
+          "reason": "Current official authorization and API pages document OAuth 2.0 and Private Integration Tokens, Bearer transport, and distinct sub-account versus agency credentials. The dated API page says legacy key generation is being phased out and V1 is end-of-support. Direct retrieval of the targeted Stoplight OAuth2/get-started routes still returned only Stoplight CSS/application shell and no readable HighLevel auth text; no sign-in was attempted, so substantive claims use the current HighLevel help and marketplace documentation.",
+          "evidence": [
+            {
+              "url": "https://marketplace.gohighlevel.com/docs/Authorization/authorization_doc",
+              "title": "Authorization",
+              "quote": "HighLevel currently supports two types of authorization:\n\n*   [Private Integration Token](/docs/Authorization/PrivateIntegrationsToken)\n*   [OAuth 2.0 Flow](/docs/Authorization/OAuth2.0)",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            },
+            {
+              "url": "https://marketplace.gohighlevel.com/docs/ghl/oauth/oauth-2-0-v-3",
+              "title": "OAuth 2.0 v3",
+              "quote": "HTTP: Bearer Auth\n\nUse the Access Token generated with user type as Sub-Account (OR) Private Integration Token of Sub-Account.\n\nSecurity Scheme Type:\n\nhttp\n\nHTTP Authorization Scheme:\n\nbearer\n\nBearer format:\n\nJWT",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            },
+            {
+              "url": "https://marketplace.gohighlevel.com/docs/ghl/oauth/oauth-2-0-v-3",
+              "title": "OAuth 2.0 v3 agency scope",
+              "quote": "Use the Access Token generated with user type as Agency (OR) Private Integration Token of Agency.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            },
+            {
+              "url": "https://help.gohighlevel.com/support/solutions/articles/155000003054-private-integrations-everything-you-need-to-know",
+              "title": "Private Integrations: Everything you need to know",
+              "quote": "You can create up to 20 Private Integration Tokens at both the Agency and Sub-Account levels.",
+              "retrieved_at": "2026-11-24",
+              "published_at": "2026-11-16",
+              "published_label": "modified 2026-11-16"
+            },
+            {
+              "url": "https://help.gohighlevel.com/support/solutions/articles/48001060529-highlevel-api-documentation",
+              "title": "HighLevel API Documentation",
+              "quote": "New legacy API key generation is being phased out. Private Integration Tokens and OAuth 2.0 are the recommended authentication methods.",
+              "retrieved_at": "2026-11-24",
+              "published_at": "2026-11-16",
+              "published_label": "modified 2026-11-16"
+            }
+          ]
+        },
+        "credential_gate": {
+          "status": "checked",
+          "value": "paid_plan",
+          "gate_class": "paid_plan",
+          "details": {
+            "gate_class": "paid_plan",
+            "trial": "14-day free trial",
+            "entry_price": "$97/month Starter",
+            "restricted_endpoints": "Founder or endpoint-specific eligibility required"
+          },
+          "reason": "A 14-day trial is available, but ongoing API access is tied to paid plans: Starter $97, Unlimited $297, and Founder $497 per month. OAuth 2.0, Private Integration Tokens, and standard endpoints are available across plans, while restricted endpoints require higher-tier eligibility; token scopes and account permissions still apply. The API and private-integration pages were modified 2026-11-16; the pricing page is undated.",
+          "evidence": [
+            {
+              "url": "https://www.gohighlevel.com/pricing",
+              "title": "HighLevel Pricing",
+              "quote": "Start with a FREE 14-day trial on any plan below!",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            },
+            {
+              "url": "https://help.gohighlevel.com/support/solutions/articles/48001060529-highlevel-api-documentation",
+              "title": "HighLevel API Documentation plan prices",
+              "quote": "API Capability\n\nStarter ($97/month)\n\nUnlimited ($297/month)\n\nFounder ($497/month)",
+              "retrieved_at": "2026-11-24",
+              "published_at": "2026-11-16",
+              "published_label": "modified 2026-11-16"
+            },
+            {
+              "url": "https://help.gohighlevel.com/support/solutions/articles/48001060529-highlevel-api-documentation",
+              "title": "HighLevel API Documentation plan access",
+              "quote": "HighLevel offers API access across its subscription plans, including Starter, Unlimited, and Founder.\n\nBoth OAuth 2.0 and Private Integration Tokens (PIT) are available across plans. However, access to specific API endpoints depends on subscription eligibility, permissions, and scopes.",
+              "retrieved_at": "2026-11-24",
+              "published_at": "2026-11-16",
+              "published_label": "modified 2026-11-16"
+            },
+            {
+              "url": "https://help.gohighlevel.com/support/solutions/articles/155000003054-private-integrations-everything-you-need-to-know",
+              "title": "Private Integrations endpoint restrictions",
+              "quote": "Having a Private Integration Token does not automatically grant access to every API endpoint. Access also depends on the subscription plan, assigned scopes, account permissions, and endpoint-specific requirements.",
+              "retrieved_at": "2026-11-24",
+              "published_at": "2026-11-16",
+              "published_label": "modified 2026-11-16"
+            },
+            {
+              "url": "https://help.gohighlevel.com/support/solutions/articles/155000003054-private-integrations-everything-you-need-to-know",
+              "title": "Private Integrations higher-tier endpoints",
+              "quote": "Certain API operations require higher-tier access. The API documentation currently identifies the following Agency Pro-restricted endpoints:\n\n*   **Create Sub-Account:** Create new sub-accounts programmatically.\n*   **Enable SaaS for Sub-Account:** Enable SaaS functionality for a sub-account.",
+              "retrieved_at": "2026-11-24",
+              "published_at": "2026-11-16",
+              "published_label": "modified 2026-11-16"
+            }
+          ]
+        },
+        "api_surface": {
+          "status": "checked",
+          "value": "REST; broad documented surface",
+          "api_types": [
+            "REST"
+          ],
+          "breadth": "broad",
+          "details": {
+            "api_types": [
+              "REST"
+            ],
+            "breadth": "broad",
+            "current_version": "v3 for supported endpoints; v2 OAuth API also documented",
+            "legacy_version": "API V1 end-of-support 2025-12-31"
+          },
+          "reason": "The official portal calls this complete REST API documentation and the dated API help lists contacts, conversations, calendars, workflows, payments, webhooks, and more. The v3 reference uses a /v3 route prefix. This supports broad documented REST coverage, not a claim that every endpoint is available on every plan. API V1 is end-of-support. Marketplace reference pages are undated; the API help page was modified 2026-11-16.",
+          "evidence": [
+            {
+              "url": "https://marketplace.gohighlevel.com/docs/",
+              "title": "HighLevel API Documentation",
+              "quote": "Complete REST API documentation for the HighLevel CRM platform.Build powerful integrations with our comprehensive developer resources.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            },
+            {
+              "url": "https://help.gohighlevel.com/support/solutions/articles/48001060529-highlevel-api-documentation",
+              "title": "HighLevel API Documentation resource breadth",
+              "quote": "The APIs support contacts, conversations, calendars, workflows, payments, webhooks, and more.",
+              "retrieved_at": "2026-11-24",
+              "published_at": "2026-11-16",
+              "published_label": "modified 2026-11-16"
+            },
+            {
+              "url": "https://marketplace.gohighlevel.com/docs/ghl/oauth/oauth-2-0-v-3",
+              "title": "OAuth 2.0 v3 route prefix",
+              "quote": "All APIs available via `/v3` route prefix with AIP-compliant responses.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            },
+            {
+              "url": "https://help.gohighlevel.com/support/solutions/articles/48001060529-highlevel-api-documentation",
+              "title": "HighLevel API V1 support status",
+              "quote": "API V1 reached end-of-support on December 31, 2025. Existing integrations may continue working, but API V1 no longer receives updates or technical support. Developers are encouraged to use supported API versions.",
+              "retrieved_at": "2026-11-24",
+              "published_at": "2026-11-16",
+              "published_label": "modified 2026-11-16"
+            }
+          ]
+        },
+        "official_mcp": {
+          "status": "checked",
+          "value": "vendor_server",
+          "mcp_mode": "remote",
+          "server_urls": [
+            "https://services.leadconnectorhq.com/mcp/anthropic/v2",
+            "https://services.leadconnectorhq.com/mcp/openai/v2/",
+            "https://services.leadconnectorhq.com/mcp/cursor/v2",
+            "https://services.leadconnectorhq.com/mcp/muse/v2/"
+          ],
+          "authentication": "HighLevel login and OAuth consent with selected sub-account(s) and scopes; current client connections require no manually created API key or Private Integration Token",
+          "details": {
+            "direction": "HighLevel-operated remote server consumed by supported AI clients/connectors",
+            "client_connector_distinction": "HighLevel Managed Agents also connects to third-party MCP servers; that client-side connector support is separate and was not counted as vendor-server evidence.",
+            "agency_scope": "Single sub-account by default; multi-sub-account agency installation is rolling out; every request targets one authorized sub-account"
+          },
+          "reason": "The 2026-11-15 official setup guide names the HighLevel/LeadConnector MCP Server, gives client-specific HTTPS endpoints, and requires OAuth consent. The undated marketplace reference explicitly describes remote Streamable HTTP servers and more than 700 actions. Supported clients consume HighLevel's server; Managed Agents' third-party MCP connectors are client behavior and were not substituted. The later 2026-11-15 guide says agency-wide connections are rolling out through bulk installation, while every request remains scoped to one authorized sub-account.",
+          "evidence": [
+            {
+              "url": "https://help.gohighlevel.com/support/solutions/articles/155000005741-how-to-setup-and-use-the-highlevel-mcp-server",
+              "title": "How to Setup and Use the HighLevel MCP Server",
+              "quote": "The HighLevel MCP Server, also called the LeadConnector MCP Server, connects through OAuth: sign in, choose the sub-account or sub-accounts to include, and approve the requested permissions.",
+              "retrieved_at": "2026-11-24",
+              "published_at": "2026-11-15",
+              "published_label": "modified 2026-11-15"
+            },
+            {
+              "url": "https://help.gohighlevel.com/support/solutions/articles/155000005741-how-to-setup-and-use-the-highlevel-mcp-server",
+              "title": "HighLevel MCP connection endpoints",
+              "quote": "**Claude.ai, Claude Code, and Claude Cowork**\n\n`https://services.leadconnectorhq.com/mcp/anthropic/v2`\n\n**ChatGPT, Codex, and other compatible OpenAI clients**\n\n`https://services.leadconnectorhq.com/mcp/openai/v2/`\n\n**Cursor**\n\n`https://services.leadconnectorhq.com/mcp/cursor/v2`",
+              "retrieved_at": "2026-11-24",
+              "published_at": "2026-11-15",
+              "published_label": "modified 2026-11-15"
+            },
+            {
+              "url": "https://marketplace.gohighlevel.com/docs/other/mcp/",
+              "title": "HighLevel MCP Server transport",
+              "quote": "MCP (Model Context Protocol) is an open standard for connecting AI assistants to the apps you use. HighLevel uses it to connect compatible assistants that support remote Streamable HTTP servers and HighLevel’s sign-in flow.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            },
+            {
+              "url": "https://marketplace.gohighlevel.com/docs/other/mcp/",
+              "title": "HighLevel MCP Server authentication",
+              "quote": "You connect by signing in with your HighLevel login, choosing your sub-account(s), and approving the requested permissions. There’s no key to create, paste, or rotate.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            },
+            {
+              "url": "https://help.gohighlevel.com/support/solutions/articles/155000005741-how-to-setup-and-use-the-highlevel-mcp-server",
+              "title": "HighLevel MCP single-sub-account scope",
+              "quote": "A single-sub-account connection is bound to the sub-account you choose during OAuth authorization for the lifetime of that connection.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "Modified on Sun, 15 Nov, 2026 at 2:10 AM",
+              "original_url": "https://help.gohighlevel.com/support/solutions/articles/155000005741-how-to-setup-and-use-the-highlevel-mcp-server",
+              "source_review": "The current page inserts the 'Agency connection' heading and additional instructions between the two old sentences. The replacement is the exact contiguous single-sub-account sentence; separate existing evidence already covers agency-wide rollout."
+            },
+            {
+              "url": "https://help.gohighlevel.com/support/solutions/articles/155000005741-how-to-setup-and-use-the-highlevel-mcp-server",
+              "title": "HighLevel MCP agency rollout limits",
+              "quote": "Every request targets one sub-account and is authorized against your installation. The connection cannot access sub-accounts you did not include.\n\nAvailability: Single-sub-account connections are available today. Agency-wide connections are rolling out through the multi-sub-account, or bulk, installation option. If installation offers only one sub-account, the multi-sub-account option is not enabled for your app yet.",
+              "retrieved_at": "2026-11-24",
+              "published_at": "2026-11-15",
+              "published_label": "modified 2026-11-15"
+            },
+            {
+              "url": "https://marketplace.gohighlevel.com/docs/other/mcp/",
+              "title": "HighLevel MCP operation coverage",
+              "quote": "The table covers **717 supported actions across 38 feature areas**, grouped by the HighLevel menu. Available actions depend on your connection’s permissions and the features enabled in your sub-account.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            }
+          ]
+        },
+        "composio_toolkit": {
+          "value": "listed_alias",
+          "details": {
+            "slug": "HIGHLEVEL_LOCATION",
+            "catalog_name": "HighLevel Location",
+            "scope": "single sub-account/location"
+          },
+          "status": "checked",
+          "reason": "The current Composio catalog and toolkit page list HighLevel Location, a location-scoped alias for GoHighLevel rather than an exact GoHighLevel product label. The page states that agency-wide access requires the separate HighLevel Agency toolkit. The page is undated; its Version value is not a publication date.",
+          "evidence": [
+            {
+              "url": "https://docs.composio.dev/toolkits/highlevel_location.md",
+              "title": "Composio HighLevel Location toolkit",
+              "quote": "# HighLevel Location\nHighLevel provides Location-scoped CRM, marketing, conversations, calendars, payments, and business automation APIs.\n- **Category:** crm\n- **Auth:** OAUTH2, BEARER_TOKEN\n- **Composio-managed OAuth available?** No\n- **Tools:** 555\n- **Triggers:** 0\n- **Slug:** `HIGHLEVEL_LOCATION`",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            },
+            {
+              "url": "https://docs.composio.dev/toolkits/highlevel_location.md",
+              "title": "Composio HighLevel Location scope",
+              "quote": "The Location toolkit connects to a single sub-account (HighLevel calls these locations). For agency-wide access, use the HighLevel Agency toolkit instead.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            }
+          ]
+        },
+        "verdict": {
+          "status": "checked",
+          "value": "gated_build_candidate",
+          "reason": "Broad REST coverage, modern OAuth/Private Integration Token authentication, and a HighLevel-operated remote MCP server support a gated build candidate. Ongoing use requires a paid HighLevel plan; endpoint eligibility, scopes, permissions, and the MCP bulk-install rollout constrain automation. Composio's preserved alias remains location-scoped. The pricing and marketplace reference pages are undated; the cited API/MCP support pages are dated 2026-11-15 and 2026-11-16.",
+          "evidence": [
+            {
+              "url": "https://help.gohighlevel.com/support/solutions/articles/48001060529-highlevel-api-documentation",
+              "title": "HighLevel API Documentation resource breadth",
+              "quote": "The APIs support contacts, conversations, calendars, workflows, payments, webhooks, and more.",
+              "retrieved_at": "2026-11-24",
+              "published_at": "2026-11-16",
+              "published_label": "modified 2026-11-16"
+            },
+            {
+              "url": "https://help.gohighlevel.com/support/solutions/articles/48001060529-highlevel-api-documentation",
+              "title": "HighLevel API Documentation plan access",
+              "quote": "HighLevel offers API access across its subscription plans, including Starter, Unlimited, and Founder.\n\nBoth OAuth 2.0 and Private Integration Tokens (PIT) are available across plans. However, access to specific API endpoints depends on subscription eligibility, permissions, and scopes.",
+              "retrieved_at": "2026-11-24",
+              "published_at": "2026-11-16",
+              "published_label": "modified 2026-11-16"
+            },
+            {
+              "url": "https://help.gohighlevel.com/support/solutions/articles/155000003054-private-integrations-everything-you-need-to-know",
+              "title": "Private Integrations endpoint restrictions",
+              "quote": "Having a Private Integration Token does not automatically grant access to every API endpoint. Access also depends on the subscription plan, assigned scopes, account permissions, and endpoint-specific requirements.",
+              "retrieved_at": "2026-11-24",
+              "published_at": "2026-11-16",
+              "published_label": "modified 2026-11-16"
+            },
+            {
+              "url": "https://help.gohighlevel.com/support/solutions/articles/155000005741-how-to-setup-and-use-the-highlevel-mcp-server",
+              "title": "How to Setup and Use the HighLevel MCP Server",
+              "quote": "The HighLevel MCP Server, also called the LeadConnector MCP Server, connects through OAuth: sign in, choose the sub-account or sub-accounts to include, and approve the requested permissions.",
+              "retrieved_at": "2026-11-24",
+              "published_at": "2026-11-15",
+              "published_label": "modified 2026-11-15"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "number": 35,
+      "app": "Mailchimp",
+      "category": "Marketing, Ads, Email and Social",
+      "summary": "Mailchimp offers a broad Marketing REST API authenticated with an API key or OAuth 2.0 access token. A Mailchimp account is required, and basic API access aligns with self-serve account creation while advanced capabilities depend on plan. Mailchimp operates a documentation-search MCP server for Marketing docs and a separate remote Transactional MCP server that can execute Transactional API actions.",
+      "blocker": "The Marketing MCP searches documentation rather than the user's Mailchimp account; executable Transactional MCP access requires an API key with the AI Agents permission group. Some Marketing API capabilities depend on the account's plan.",
+      "next_action": "Create a Mailchimp account, generate an API key or configure OAuth 2.0, and test Marketing REST calls. For account automation use the Transactional MCP server with an AI Agents-enabled key; use the Marketing MCP only for documentation discovery.",
+      "fields": {
+        "auth": {
+          "value": [
+            "Mailchimp account API key; HTTP Basic or Bearer authentication",
+            "OAuth 2.0 access token; HTTP Basic or Bearer authentication"
+          ],
+          "status": "checked",
+          "reason": "Mailchimp documents API-key and OAuth 2.0 token authentication, transported through HTTP Basic or Bearer authentication. API keys authenticate against the user's own account. The cited pages are undated.",
+          "evidence": [
+            {
+              "url": "https://mailchimp.com/developer/marketing/api-concepts/authentication/",
+              "title": "Mailchimp Marketing API authentication",
+              "quote": "Choose between an API key and an OAuth 2 access token, then attach it to a request.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            },
+            {
+              "url": "https://mailchimp.com/developer/marketing/api-concepts/authentication/",
+              "title": "Mailchimp authentication transports",
+              "quote": "You can use either HTTP Basic Authentication or Bearer Authentication.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            },
+            {
+              "url": "https://mailchimp.com/developer/marketing/build/get-started/generate-your-api-key",
+              "title": "Mailchimp API-key account scope",
+              "quote": "An API key authenticates requests against your own Mailchimp account.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated",
+              "original_url": "https://mailchimp.com/developer/marketing/api-concepts/authentication/",
+              "source_review": "The authentication page now phrases API-key scope as 'against the account that created it.' The current official Generate your API key page retains the old own-account sentence verbatim."
+            }
+          ]
+        },
+        "credential_gate": {
+          "value": "self_serve_free",
+          "gate_class": "self_serve_free",
+          "details": {
+            "gate_class": "self_serve_free"
+          },
+          "status": "checked",
+          "reason": "A user can create a Mailchimp account and generate an API key without a documented partner gate, and Mailchimp offers a basic Free plan. Advanced Marketing API capabilities remain plan-dependent, but basic account/API access is self-serve free. The cited pages are undated.",
+          "evidence": [
+            {
+              "url": "https://mailchimp.com/developer/marketing/build/get-started/create-an-account.md",
+              "title": "Mailchimp API account requirement",
+              "quote": "If you don't have a Mailchimp account already, you’ll need to create one in order to use the API.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            },
+            {
+              "url": "https://mailchimp.com/developer/marketing/build/get-started/generate-your-api-key",
+              "title": "Mailchimp API-key creation",
+              "quote": "Navigate to the API Keys section of your Mailchimp account.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated",
+              "original_url": "https://mailchimp.com/developer/marketing/build/get-started/generate-your-api-key.md",
+              "source_review": "The old Markdown URL timed out. The current official HTML page shows the same API Keys navigation step verbatim."
+            },
+            {
+              "url": "https://mailchimp.com/pricing/",
+              "title": "Mailchimp Free plan",
+              "quote": "Cancel or downgrade to our basic Free plan at any time.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            },
+            {
+              "url": "https://mailchimp.com/developer/marketing/build/get-started/create-an-account.md",
+              "title": "Mailchimp plan-dependent API capabilities",
+              "quote": "To use the Marketing API, you need a Mailchimp account. What you can do with the API depends on what level of Mailchimp plan you have.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            }
+          ]
+        },
+        "api_surface": {
+          "value": "REST; broad documented surface",
+          "api_types": [
+            "REST"
+          ],
+          "breadth": "broad",
+          "details": {
+            "api_types": [
+              "REST"
+            ],
+            "breadth": "broad"
+          },
+          "status": "checked",
+          "reason": "Mailchimp states that the Marketing API generally follows REST conventions and exposes account-relative endpoints under the v3 root. The documented surface spans campaigns, audiences, templates, automations, reports, and related Marketing resources. The cited pages are undated.",
+          "evidence": [
+            {
+              "url": "https://mailchimp.com/developer/marketing/api-concepts/api-structure.md",
+              "title": "Mailchimp Marketing API REST structure",
+              "quote": "The Marketing API generally follows REST conventions, with some deviations.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            },
+            {
+              "url": "https://mailchimp.com/developer/marketing/api-concepts/api-structure.md",
+              "title": "Mailchimp Marketing API root",
+              "quote": "The root url for the API is `https://api.mailchimp.com/3.0/`. All API endpoints for your account are available relative to this URL.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            }
+          ]
+        },
+        "official_mcp": {
+          "value": "vendor_server",
+          "mcp_mode": "remote",
+          "status": "checked",
+          "reason": "Mailchimp operates both a documentation-site MCP server and a remote Transactional MCP server. The Marketing MCP is documentation-only, while the Transactional MCP mirrors Transactional API capabilities and requires an AI Agents-enabled key for restricted use. The cited pages are undated.",
+          "evidence": [
+            {
+              "url": "https://mailchimp.com/developer/marketing/build/ai-tools/mcp-server.md",
+              "title": "Mailchimp Marketing MCP documentation scope",
+              "quote": "**This searches documentation, not your Mailchimp account.**",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            },
+            {
+              "url": "https://mailchimp.com/developer/marketing/build/ai-tools/mcp-server.md",
+              "title": "Mailchimp documentation MCP server",
+              "quote": "This documentation site is itself an MCP server.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            },
+            {
+              "url": "https://mailchimp.com/developer/transactional/guides/how-to-use-mailchimps-transactional-messaging-mcp.md",
+              "title": "Mailchimp Transactional MCP execution scope",
+              "quote": "Our MCP specifically allows you to interact with the Transactional Messaging API, give onboarding help regarding Transactional Messaging, and submit feedback.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            },
+            {
+              "url": "https://mailchimp.com/developer/transactional/guides/how-to-use-mailchimps-transactional-messaging-mcp.md",
+              "title": "Mailchimp Transactional MCP server URL",
+              "quote": "The MCP server URL is https://mandrillapp.com/mcp.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            }
+          ]
+        },
+        "composio_toolkit": {
+          "value": "listed_exact",
+          "details": {
+            "slug": "MAILCHIMP",
+            "auth_display": "OAUTH2",
+            "tools": 278,
+            "triggers": 4
+          },
+          "status": "checked",
+          "reason": "The current Composio toolkit page lists Mailchimp under the exact slug MAILCHIMP with 278 tools, four triggers, and OAuth2 authentication. The page is undated; its Version value is not a publication date.",
+          "evidence": [
+            {
+              "url": "https://docs.composio.dev/toolkits/mailchimp.md",
+              "title": "Composio Mailchimp toolkit",
+              "quote": "# Mailchimp\n\nMailchimp is an email marketing and automation platform providing campaign templates, audience segmentation, and performance analytics to drive engagement and conversions\n\n- **Category:** email newsletters\n- **Auth:** OAUTH2\n- **Composio-managed OAuth available?** Yes\n- **Tools:** 278\n- **Triggers:** 4\n- **Slug:** `MAILCHIMP`",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            }
+          ]
+        },
+        "verdict": {
+          "value": "documented_build_candidate",
+          "status": "checked",
+          "reason": "Self-serve account/API-key creation, a broad REST API, and vendor-operated MCP servers are documented. The Marketing MCP must not be mistaken for account execution, and advanced API capabilities are plan-dependent. The cited pages are undated.",
+          "evidence": [
+            {
+              "url": "https://mailchimp.com/developer/marketing/api-concepts/api-structure.md",
+              "title": "Mailchimp REST build surface",
+              "quote": "The Marketing API generally follows REST conventions, with some deviations.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            },
+            {
+              "url": "https://mailchimp.com/developer/transactional/guides/how-to-use-mailchimps-transactional-messaging-mcp.md",
+              "title": "Mailchimp Transactional MCP build path",
+              "quote": "Our MCP mirrors what our API can already do.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            },
+            {
+              "url": "https://mailchimp.com/pricing/",
+              "title": "Mailchimp self-serve entry",
+              "quote": "Cancel or downgrade to our basic Free plan at any time.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "number": 36,
+      "app": "Klaviyo",
+      "category": "Marketing, Ads, Email and Social",
+      "summary": "Klaviyo provides a broad REST API with private-key, OAuth, and public client-key authentication. New accounts start on the free plan, although some features require paid plans or verification. Klaviyo operates both a remote Streamable HTTP MCP server using OAuth dynamic client registration and a local MCP server using a private API key.",
+      "blocker": "Remote MCP access is limited to Owner, Admin, or Manager roles. Private-key creation and management also require an eligible role, and advanced sending or account features can require a paid plan or verification.",
+      "next_action": "Create a Klaviyo account, choose private-key or OAuth authentication for server-side REST calls, and grant only the needed key scopes. Connect the remote MCP server with an Owner/Admin/Manager account or run the local server with a private API key.",
+      "fields": {
+        "auth": {
+          "value": [
+            "Private API key; Authorization: Klaviyo-API-Key",
+            "OAuth 2.0 server-side access token",
+            "Public client-side key; six-character company/site ID"
+          ],
+          "status": "checked",
+          "reason": "Klaviyo explicitly documents three authentication methods: private keys and OAuth for server-side APIs, and public keys for client-side APIs. The authentication page is dated 2026-11-10.",
+          "evidence": [
+            {
+              "url": "https://developers.klaviyo.com/en/docs/authenticate_",
+              "title": "Klaviyo authentication methods",
+              "quote": "Klaviyo provides 3 methods of authentication including private key authentication and OAuth (used to call server-side APIs) and public key authentication (used to call client-side APIs).",
+              "retrieved_at": "2026-11-24",
+              "published_at": "2026-11-10",
+              "published_label": "updated 2026-11-10"
+            },
+            {
+              "url": "https://developers.klaviyo.com/en/docs/authenticate_",
+              "title": "Klaviyo private-key header",
+              "quote": "`Authorization: Klaviyo-API-Key`",
+              "retrieved_at": "2026-11-24",
+              "published_at": "2026-11-10",
+              "published_label": "updated 2026-11-10"
+            }
+          ]
+        },
+        "credential_gate": {
+          "value": "self_serve_free",
+          "gate_class": "self_serve_free",
+          "details": {
+            "gate_class": "self_serve_free"
+          },
+          "status": "checked",
+          "reason": "Every new Klaviyo account starts on the free plan, and a self-serve test account starts with that plan's limits and features. Some advanced features require a paid plan or verification, but basic API credential access is not partner-gated. The cited pages are dated.",
+          "evidence": [
+            {
+              "url": "https://developers.klaviyo.com/en/docs/create_a_test_account",
+              "title": "Klaviyo self-serve test account",
+              "quote": "Like any new Klaviyo account, a new account you create for testing starts on the free plan, with the free plan's usage limits and features.",
+              "retrieved_at": "2026-11-24",
+              "published_at": "2026-11-18",
+              "published_label": "updated 2026-11-18"
+            },
+            {
+              "url": "https://developers.klaviyo.com/en/docs/create_a_test_account.md",
+              "title": "Klaviyo paid-feature caveat",
+              "quote": "Some features require a paid plan, account verification, or both on the account where you use them.",
+              "retrieved_at": "2026-11-24",
+              "published_at": "2026-11-18",
+              "published_label": "updated 2026-11-18",
+              "original_url": "https://developers.klaviyo.com/en/docs/create_a_test_account",
+              "source_review": "The queued Stripe Projects URL/quote pairing is absent from the normalized record; the quote survives on the current test-account page. The official Markdown artifact reproduces it verbatim and displays lastUpdated 2026-11-18, so the action targets the surviving citation."
+            },
+            {
+              "url": "https://developers.klaviyo.com/en/docs/klaviyo_stripe_projects_context",
+              "title": "Klaviyo account tier progression",
+              "quote": "Every account starts on the free plan and grows into paid tiers as volume increases.",
+              "retrieved_at": "2026-11-24",
+              "published_at": "2026-07-08",
+              "published_label": "updated 2026-07-08"
+            }
+          ]
+        },
+        "api_surface": {
+          "value": "REST; broad documented surface",
+          "api_types": [
+            "REST"
+          ],
+          "breadth": "broad",
+          "details": {
+            "api_types": [
+              "REST"
+            ],
+            "breadth": "broad"
+          },
+          "status": "checked",
+          "reason": "Klaviyo's official reference covers every endpoint in the Klaviyo REST API, including authentication, parameters, request and response bodies, and examples. The surface spans profiles, lists, segments, flows, campaigns, metrics, and related resources. The reference revision is dated 2026-10-15.",
+          "evidence": [
+            {
+              "url": "https://developers.klaviyo.com/en/reference/api-overview",
+              "title": "Klaviyo REST API reference",
+              "quote": "Every endpoint in the Klaviyo REST API, with its authentication, parameters, request and response bodies, and an example request. This reference covers API revision 2026-10-15.",
+              "retrieved_at": "2026-11-24",
+              "published_at": "2026-10-15",
+              "published_label": "API revision 2026-10-15"
+            }
+          ]
+        },
+        "official_mcp": {
+          "value": "vendor_server",
+          "mcp_mode": "both",
+          "status": "checked",
+          "reason": "Klaviyo documents its own remote-hosted and local MCP servers. Remote mode uses OAuth with dynamic client registration over Streamable HTTP; local mode uses a private API key. The connection guide is dated 2026-11-06 and the server guide is dated 2026-09-04.",
+          "evidence": [
+            {
+              "url": "https://developers.klaviyo.com/en/docs/connect_to_the_klaviyo_mcp_server",
+              "title": "Klaviyo MCP server modes",
+              "quote": "Configure your MCP client to connect to Klaviyo's remote-hosted or local MCP server.",
+              "retrieved_at": "2026-11-24",
+              "published_at": "2026-11-06",
+              "published_label": "updated 2026-11-06"
+            },
+            {
+              "url": "https://developers.klaviyo.com/en/docs/connect_to_the_klaviyo_mcp_server",
+              "title": "Klaviyo remote MCP endpoint",
+              "quote": "`https://mcp.klaviyo.com/mcp`",
+              "retrieved_at": "2026-11-24",
+              "published_at": "2026-11-06",
+              "published_label": "updated 2026-11-06"
+            },
+            {
+              "url": "https://developers.klaviyo.com/en/docs/connect_to_the_klaviyo_mcp_server",
+              "title": "Klaviyo remote MCP authentication and transport",
+              "quote": "- **Authentication method:** OAuth (with dynamic client registration)\n- **Transport:** Streamable HTTP",
+              "retrieved_at": "2026-11-24",
+              "published_at": "2026-11-06",
+              "published_label": "updated 2026-11-06"
+            },
+            {
+              "url": "https://developers.klaviyo.com/en/docs/klaviyo_mcp_server",
+              "title": "Klaviyo vendor MCP server",
+              "quote": "The Klaviyo Model Context Protocol (MCP) server seamlessly integrates with Klaviyo’s APIs, enabling AI clients to interact with your Klaviyo data.",
+              "retrieved_at": "2026-11-24",
+              "published_at": "2026-09-04",
+              "published_label": "updated 2026-09-04"
+            }
+          ]
+        },
+        "composio_toolkit": {
+          "value": "listed_exact",
+          "details": {
+            "slug": "KLAVIYO",
+            "auth_display": "API_KEY, OAUTH2",
+            "tools": 233
+          },
+          "status": "checked",
+          "reason": "The current Composio toolkit page lists Klaviyo under the exact slug KLAVIYO with 233 tools and API-key/OAuth2 authentication. The page is undated; its Version value is not a publication date.",
+          "evidence": [
+            {
+              "url": "https://docs.composio.dev/toolkits/klaviyo.md",
+              "title": "Composio Klaviyo toolkit",
+              "quote": "# Klaviyo\n\nKlaviyo is a data-driven email and SMS marketing platform that allows e-commerce brands to deliver targeted messages, track conversions, and scale customer relationships\n\n- **Category:** marketing automation\n- **Auth:** API_KEY, OAUTH2\n- **Composio-managed OAuth available?** No\n- **Tools:** 233\n- **Triggers:** 0\n- **Slug:** `KLAVIYO`",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            }
+          ]
+        },
+        "verdict": {
+          "value": "documented_build_candidate",
+          "status": "checked",
+          "reason": "Self-serve free account creation, scoped API authentication, a broad REST reference, and dual-mode vendor MCP servers are documented. Role restrictions and paid-feature caveats are explicit but do not prevent an initial build. The cited pages are dated.",
+          "evidence": [
+            {
+              "url": "https://developers.klaviyo.com/en/docs/create_a_test_account",
+              "title": "Klaviyo self-serve build entry",
+              "quote": "Like any new Klaviyo account, a new account you create for testing starts on the free plan, with the free plan's usage limits and features.",
+              "retrieved_at": "2026-11-24",
+              "published_at": "2026-11-18",
+              "published_label": "updated 2026-11-18"
+            },
+            {
+              "url": "https://developers.klaviyo.com/en/reference/api-overview",
+              "title": "Klaviyo REST build surface",
+              "quote": "Every endpoint in the Klaviyo REST API, with its authentication, parameters, request and response bodies, and an example request. This reference covers API revision 2026-10-15.",
+              "retrieved_at": "2026-11-24",
+              "published_at": "2026-10-15",
+              "published_label": "API revision 2026-10-15"
+            },
+            {
+              "url": "https://developers.klaviyo.com/en/docs/connect_to_the_klaviyo_mcp_server",
+              "title": "Klaviyo MCP build modes",
+              "quote": "Configure your MCP client to connect to Klaviyo's remote-hosted or local MCP server.",
+              "retrieved_at": "2026-11-24",
+              "published_at": "2026-11-06",
+              "published_label": "updated 2026-11-06"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "number": 37,
+      "app": "systeme.io",
+      "category": "Marketing, Ads, Email and Social",
+      "summary": "systeme.io documents a RESTful Public API authenticated by an account-generated X-API-Key header and a remote vendor MCP server authenticated with an MCP key. The service has a self-serve free plan. Dated developer MCP documentation limits the initial MCP release to contact and newsletter management, despite broader undated marketing language.",
+      "blocker": "The Public API guide does not explicitly map every plan tier to API availability, and the dated MCP documentation says only contacts and newsletters are currently exposed. Broad marketing claims should not be treated as proof of wider MCP coverage.",
+      "next_action": "Create a systeme.io account, generate a Public API key for REST or an MCP key for the remote MCP endpoint, and test contact/newsletter operations first. Confirm plan eligibility for additional Public API features before expanding scope. Composio has no systeme.io listing in the complete catalog.",
+      "fields": {
+        "auth": {
+          "value": [
+            "Account-generated Public API key in X-API-Key request header",
+            "Account-generated MCP key in X-MCP-Key header or mcpKey query parameter"
+          ],
+          "status": "checked",
+          "reason": "The Public API guide states that X-API-Key is the only current Public API authentication option. The MCP documentation requires an account-generated MCP key, and the dated ChatGPT guide shows the remote mcpKey connection form. The cited pages are dated or explicitly undated.",
+          "evidence": [
+            {
+              "url": "https://developer.systeme.io/reference/api.md",
+              "title": "systeme.io Public API authentication",
+              "quote": "To authenticate with the Systeme.io Public API, your only option right now is to attach your API key to the `X-API-Key` header of each request.",
+              "retrieved_at": "2026-11-24",
+              "published_at": "2026-06-18",
+              "published_label": "updated 2026-06-18"
+            },
+            {
+              "url": "https://developer.systeme.io/reference/api.md",
+              "title": "systeme.io Public API key creation",
+              "quote": "Simply navigate to the profile settings within your Systeme.io dashboard, and generate a new key under the \"Public API keys\" section.",
+              "retrieved_at": "2026-11-24",
+              "published_at": "2026-06-18",
+              "published_label": "updated 2026-06-18"
+            },
+            {
+              "url": "https://developer.systeme.io/docs/mcp-server",
+              "title": "systeme.io MCP key creation",
+              "quote": "To begin using the Systeme.io MCP server, you must first obtain an MCP key.",
+              "retrieved_at": "2026-11-24",
+              "published_at": "2026-06-08",
+              "published_label": "updated 2026-06-08"
+            },
+            {
+              "url": "https://developer.systeme.io/docs/mcp-server",
+              "title": "systeme.io MCP key transports",
+              "quote": "* **HTTP Header**: Attach your MCP key to the `X-MCP-Key` header.\n* **Query Parameter**: Include your MCP key as the `mcpKey` parameter in the request URL.",
+              "retrieved_at": "2026-11-24",
+              "published_at": "2026-06-08",
+              "published_label": "updated 2026-06-08"
+            },
+            {
+              "url": "https://help.systeme.io/article/11229-how-to-connect-your-systemeio-account-with-chatgpt-using-mcp-keys",
+              "title": "systeme.io ChatGPT MCP key connection",
+              "quote": "https://mcp.systeme.io/mcp?mcpKey=YOUR_KEY",
+              "retrieved_at": "2026-11-24",
+              "published_at": "2026-11-09",
+              "published_label": "updated 2026-11-09"
+            }
+          ]
+        },
+        "credential_gate": {
+          "value": "self_serve_free",
+          "gate_class": "self_serve_free",
+          "details": {
+            "gate_class": "self_serve_free"
+          },
+          "status": "checked",
+          "reason": "systeme.io advertises a free plan without a credit card, and its account dashboard provides self-serve API-key and MCP-key generation. The Public API guide does not state a paid prerequisite, although it does not explicitly map API availability to every plan tier. The pricing page is undated.",
+          "evidence": [
+            {
+              "url": "https://systeme.io/pricing",
+              "title": "systeme.io free-plan entry",
+              "quote": "Start for free now",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            },
+            {
+              "url": "https://systeme.io/pricing",
+              "title": "systeme.io free-plan limits",
+              "quote": "Yes, the free plan supports up to 2,000 contacts, 3 sales funnels, 1 blog, 1 course, 1 affiliate program, and 1 custom domain. Emails sent are unlimited. The free plan never expires and does not require a credit card.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            },
+            {
+              "url": "https://developer.systeme.io/reference/api.md",
+              "title": "systeme.io self-serve Public API key",
+              "quote": "To begin using the Systeme.io Public API, you must first obtain an authentication key.",
+              "retrieved_at": "2026-11-24",
+              "published_at": "2026-06-18",
+              "published_label": "updated 2026-06-18"
+            }
+          ]
+        },
+        "api_surface": {
+          "value": "REST; broad documented surface",
+          "api_types": [
+            "REST"
+          ],
+          "breadth": "broad",
+          "details": {
+            "api_types": [
+              "REST"
+            ],
+            "breadth": "broad"
+          },
+          "status": "checked",
+          "reason": "The Public API guide explicitly says the API follows RESTful conventions and covers contacts, tags, and a variety of other platform operations. The reference and recipes expose multiple resource families. The main guide is dated 2026-06-18 and the contact endpoint is dated 2026-05-29.",
+          "evidence": [
+            {
+              "url": "https://developer.systeme.io/reference/api.md",
+              "title": "systeme.io Public API overview",
+              "quote": "Welcome to this comprehensive guide for the Systeme.io Public API. Our API serves as a bridge, enabling developers to interact with Systeme's core functionalities programmatically. It is meticulously designed to offer a seamless integration experience, allowing you to manage contacts, tags, and a variety of other operations integral to our platform. Adhering to RESTful conventions, our API ensures an intuitive and consistent interaction pattern for all users.",
+              "retrieved_at": "2026-11-24",
+              "published_at": "2026-06-18",
+              "published_label": "updated 2026-06-18"
+            },
+            {
+              "url": "https://developer.systeme.io/reference/post_contact-1.md",
+              "title": "systeme.io contact endpoint",
+              "quote": "Creates a Contact resource.",
+              "retrieved_at": "2026-11-24",
+              "published_at": "2026-05-29",
+              "published_label": "updated 2026-05-29",
+              "original_url": "https://developer.systeme.io/reference/post_contact-1.md",
+              "source_review": "The official Markdown endpoint now titles the operation 'Creates a Contact resource.'; the former 'Create a contact' wording is absent. The page metadata retains updated 2026-05-29."
+            }
+          ]
+        },
+        "official_mcp": {
+          "value": "vendor_server",
+          "mcp_mode": "remote",
+          "status": "checked",
+          "reason": "systeme.io documents its own MCP server as a bridge between the account and MCP-compatible AI environments, with a remote URL and MCP-key authentication. The dated 2026-06-08 developer page limits the initial release to contact and newsletter management. The pricing and marketing pages are undated.",
+          "evidence": [
+            {
+              "url": "https://developer.systeme.io/docs/mcp-server",
+              "title": "systeme.io MCP server",
+              "quote": "Our MCP server acts as a bridge between your Systeme.io account and AI-powered environments (such as ChatGPT, Claude Desktop, or other MCP-compatible clients).",
+              "retrieved_at": "2026-11-24",
+              "published_at": "2026-06-08",
+              "published_label": "updated 2026-06-08"
+            },
+            {
+              "url": "https://developer.systeme.io/docs/mcp-server",
+              "title": "systeme.io MCP initial-release scope",
+              "quote": "The Systeme.io MCP server currently supports **contact and newsletter management**.",
+              "retrieved_at": "2026-11-24",
+              "published_at": "2026-06-08",
+              "published_label": "updated 2026-06-08"
+            },
+            {
+              "url": "https://developer.systeme.io/docs/mcp-server",
+              "title": "systeme.io MCP unsupported features",
+              "quote": "At this stage, these are the only capabilities exposed by the MCP server. Other Systeme.io features are not yet supported.",
+              "retrieved_at": "2026-11-24",
+              "published_at": "2026-06-08",
+              "published_label": "updated 2026-06-08"
+            },
+            {
+              "url": "https://help.systeme.io/article/11229-how-to-connect-your-systemeio-account-with-chatgpt-using-mcp-keys",
+              "title": "systeme.io remote MCP endpoint",
+              "quote": "https://mcp.systeme.io/mcp?mcpKey=YOUR_KEY",
+              "retrieved_at": "2026-11-24",
+              "published_at": "2026-11-09",
+              "published_label": "updated 2026-11-09"
+            }
+          ]
+        },
+        "composio_toolkit": {
+          "value": "not_listed",
+          "details": {
+            "catalog_checked_at": "2026-11-24",
+            "catalog_toolkit_count": 1841
+          },
+          "status": "checked",
+          "reason": "The complete current Composio toolkit catalog was searched for systeme.io and Systeme variants; no exact or alias listing was found. The catalog says it supports 1,841 toolkits, and no different product was substituted. This is a point-in-time catalog result; the catalog page is undated.",
+          "evidence": [
+            {
+              "url": "https://docs.composio.dev/toolkits.md",
+              "title": "Composio complete toolkit catalog",
+              "quote": "Composio supports 1841 toolkits for building AI agents.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            }
+          ]
+        },
+        "verdict": {
+          "value": "documented_build_candidate",
+          "status": "checked",
+          "reason": "Self-serve key generation, a RESTful Public API, and a remote vendor MCP server are documented, so an initial build is supportable. The MCP scope is explicitly limited to contacts/newsletters in dated developer docs, and Public API plan eligibility is not fully mapped. The pricing page is undated.",
+          "evidence": [
+            {
+              "url": "https://developer.systeme.io/reference/api.md",
+              "title": "systeme.io Public API build surface",
+              "quote": "Adhering to RESTful conventions, our API ensures an intuitive and consistent interaction pattern for all users.",
+              "retrieved_at": "2026-11-24",
+              "published_at": "2026-06-18",
+              "published_label": "updated 2026-06-18"
+            },
+            {
+              "url": "https://developer.systeme.io/docs/mcp-server",
+              "title": "systeme.io MCP initial build scope",
+              "quote": "The Systeme.io MCP server is in its initial release. We’re actively improving it by adding more capabilities and strengthening stability and reliability over time.",
+              "retrieved_at": "2026-11-24",
+              "published_at": "2026-06-08",
+              "published_label": "updated 2026-06-08"
+            },
+            {
+              "url": "https://systeme.io/pricing",
+              "title": "systeme.io self-serve build entry",
+              "quote": "Start for free now",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "number": 38,
+      "app": "Pinterest",
+      "category": "Marketing, Ads, Email and Social",
+      "summary": "Pinterest exposes a broad REST API with OAuth 2.0 authorization-code, client-credentials, and refresh-token grants. API access is approval-based: approved apps receive Trial access and Standard access requires review. Pinterest documents its own MCP server, but the current page is prelaunch and asks users to watch for launch.",
+      "blocker": "Trial access is limited and Standard upgrade requires a reviewed demo and compliance with developer guidelines. The MCP server is not yet launched, so early-access marketing should not be treated as generally available execution access.",
+      "next_action": "Register a Pinterest app, request the least-privilege read/write scopes, implement authorization-code OAuth, and test in Trial access. Prepare the OAuth demo and apply for Standard access when production use is needed; monitor the official MCP page for launch availability.",
+      "fields": {
+        "auth": {
+          "value": [
+            "OAuth 2.0 authorization-code access token; scoped read/write permissions",
+            "OAuth 2.0 client-credentials access token; restricted endpoint scope",
+            "OAuth 2.0 refresh-token grant; continuous refresh token"
+          ],
+          "status": "checked",
+          "reason": "Pinterest documents three OAuth 2.0 grant types and explicit scopes for ads, boards, pins, catalogs, billing, business access, and user accounts. Authorization Code provides the full capability set; Client Credentials is more restricted. The cited pages are undated.",
+          "evidence": [
+            {
+              "url": "https://developers.pinterest.com/docs/getting-started/set-up-authentication-and-authorization/",
+              "title": "Pinterest OAuth grant types",
+              "quote": "The Pinterest API supports three grant types, which are methods for authenticating your app and acquiring authorization to access protected resources.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            },
+            {
+              "url": "https://developers.pinterest.com/docs/getting-started/set-up-authentication-and-authorization/",
+              "title": "Pinterest authorization-code scope",
+              "quote": "**What this type is for:** This grant type is designed for web apps that access a user's data on behalf of that user. It is the only grant type that gives you access to the full range of capabilities offered by the Pinterest API. It requires user authentication.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            },
+            {
+              "url": "https://developers.pinterest.com/docs/getting-started/set-up-authentication-and-authorization/",
+              "title": "Pinterest OAuth scopes",
+              "quote": "`ads:read,ads:write,boards:read,boards:write`",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            }
+          ]
+        },
+        "credential_gate": {
+          "value": "mixed",
+          "gate_class": "mixed",
+          "details": {
+            "gate_class": "mixed"
+          },
+          "status": "checked",
+          "reason": "A developer can register an app, but approved apps receive Trial access and Standard access requires a reviewed upgrade request and OAuth demo. The gate combines self-serve app creation with Pinterest approval for production access. The cited pages are undated.",
+          "evidence": [
+            {
+              "url": "https://developers.pinterest.com/docs/key-concepts/access-tiers/",
+              "title": "Pinterest Trial access",
+              "quote": "If approved for API use, your app receives Trial access, which is best for exploring our API features.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            },
+            {
+              "url": "https://developers.pinterest.com/docs/key-concepts/access-tiers/",
+              "title": "Pinterest Standard access review",
+              "quote": "Standard upgrade requests are reviewed regularly. You will receive an email notification once a decision has been made on your app.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            },
+            {
+              "url": "https://developers.pinterest.com/docs/key-concepts/access-tiers/",
+              "title": "Pinterest Standard OAuth demo requirement",
+              "quote": "Prepare a video recording of your app completing an action using the Pinterest API. We will review to verify that you are sending users through the OAuth flow appropriately and not storing any sensitive information.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            }
+          ]
+        },
+        "api_surface": {
+          "value": "REST; broad documented surface",
+          "api_types": [
+            "REST"
+          ],
+          "breadth": "broad",
+          "details": {
+            "api_types": [
+              "REST"
+            ],
+            "breadth": "broad"
+          },
+          "status": "checked",
+          "reason": "Pinterest's official authentication page explicitly labels the current collection Pinterest REST API, and the access-tier documentation lists broad ads, audience, board, Pin, catalog, and analytics operations. The API v5 surface is broad. The cited pages are undated.",
+          "evidence": [
+            {
+              "url": "https://developers.pinterest.com/docs/getting-started/set-up-authentication-and-authorization/",
+              "title": "Pinterest REST API label",
+              "quote": "On the collection site, select **OAuth** under **Pinterest REST API (latest)** in the left navigation panel. Then select **Generate access token**.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            },
+            {
+              "url": "https://developers.pinterest.com/docs/key-concepts/access-tiers/",
+              "title": "Pinterest API v5 breadth",
+              "quote": "The Pinterest API v5 significantly increases the scope of what is possible for you to create as a developer.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            },
+            {
+              "url": "https://developers.pinterest.com/docs/getting-started/set-up-authentication-and-authorization.md",
+              "title": "Pinterest API resource operations and scopes",
+              "quote": "Scopes are the permissions your users give your app to act on their behalf within Pinterest. Each scope allows your app to make different API requests, such as for creating ads or viewing secret boards.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated",
+              "original_url": "https://developers.pinterest.com/docs/key-concepts/access-tiers/",
+              "source_review": "The scope definition moved from access tiers to authentication and authorization. The official Markdown artifact reproduces the old quote verbatim; the HTML route is a JavaScript shell for strict direct retrieval."
+            }
+          ]
+        },
+        "official_mcp": {
+          "value": "vendor_server",
+          "mcp_mode": "early_access",
+          "status": "checked",
+          "reason": "Pinterest documents its own MCP server and says it will bring Pinterest and Ads data into AI tools, but the same page says to be the first to know when it launches. This supports a vendor server in prelaunch/early access rather than a generally available remote endpoint. The page is undated.",
+          "evidence": [
+            {
+              "url": "https://developers.pinterest.com/about-pinterest-mcp/",
+              "title": "Pinterest MCP server",
+              "quote": "Pinterest MCP Server brings the power of Pinterest data directly into the AI assistants, copilots, and agentic workflows you already use.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            },
+            {
+              "url": "https://developers.pinterest.com/about-pinterest-mcp/",
+              "title": "Pinterest MCP prelaunch status",
+              "quote": "Be the first to know when it launches.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            },
+            {
+              "url": "https://developers.pinterest.com/about-pinterest-mcp/",
+              "title": "Pinterest Ads MCP scope",
+              "quote": "Bring Pinterest Ads capabilities into the AI tools your team already uses. Query, analyze, and act through a consistent interface powered by the existing Pinterest API.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            }
+          ]
+        },
+        "composio_toolkit": {
+          "value": "listed_exact",
+          "details": {
+            "slug": "PINTEREST",
+            "auth_display": "OAUTH2",
+            "tools": 27
+          },
+          "status": "checked",
+          "reason": "The current Composio toolkit page lists Pinterest under the exact slug PINTEREST with 27 tools and OAuth2 authentication. The page is undated; its Version value is not a publication date.",
+          "evidence": [
+            {
+              "url": "https://docs.composio.dev/toolkits/pinterest.md",
+              "title": "Composio Pinterest toolkit",
+              "quote": "# Pinterest\n\nPinterest is a visual discovery platform for finding ideas like recipes, home and style inspiration, and more.\n\n- **Category:** social media accounts\n- **Auth:** OAUTH2\n- **Composio-managed OAuth available?** Yes\n- **Tools:** 27\n- **Triggers:** 0\n- **Slug:** `PINTEREST`",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            }
+          ]
+        },
+        "verdict": {
+          "value": "gated_build_candidate",
+          "status": "checked",
+          "reason": "Scoped OAuth and a broad REST API are documented, but Trial and Standard access require Pinterest approval, and the vendor MCP is prelaunch. This supports a gated REST build candidate rather than an immediately available MCP build. The cited pages are undated.",
+          "evidence": [
+            {
+              "url": "https://developers.pinterest.com/docs/key-concepts/access-tiers/",
+              "title": "Pinterest production-access gate",
+              "quote": "Standard upgrade requests are reviewed regularly. You will receive an email notification once a decision has been made on your app.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            },
+            {
+              "url": "https://developers.pinterest.com/docs/getting-started/set-up-authentication-and-authorization/",
+              "title": "Pinterest REST build surface",
+              "quote": "The Pinterest API supports three grant types, which are methods for authenticating your app and acquiring authorization to access protected resources.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            },
+            {
+              "url": "https://developers.pinterest.com/about-pinterest-mcp/",
+              "title": "Pinterest MCP launch caveat",
+              "quote": "Be the first to know when it launches.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "number": 39,
+      "app": "Threads (Meta)",
+      "category": "Marketing, Ads, Email and Social",
+      "summary": "The Threads API uses OAuth 2.0 Threads user access tokens with named scopes and supports posts, media, profiles, replies, discovery, and insights. Testers can grant permissions directly, while ordinary app users require App Review and a published app. Meta's current documentation index lists a Threads MCP server, but the linked overview/get-started pages did not render transport details.",
+      "blocker": "Production use requires App Review for each permission and a published app. The vendor MCP server is documented, but its transport mode cannot be verified from the currently rendered official pages.",
+      "next_action": "Create a Meta app with the Threads use case, configure testers, and request only the needed Threads scopes. Test publishing, replies, and insights; complete App Review and publish the app before serving ordinary users. Verify MCP transport when the official MCP detail pages render substantive content.",
+      "fields": {
+        "auth": {
+          "value": [
+            "OAuth 2.0 Threads user access token; threads_basic",
+            "OAuth 2.0 Threads user access token; threads_content_publish",
+            "OAuth 2.0 Threads user access token; threads_manage_replies and threads_read_replies",
+            "OAuth 2.0 Threads user access token; threads_manage_insights"
+          ],
+          "status": "checked",
+          "reason": "Threads documents OAuth 2.0 user access tokens and scoped permissions for basic access, publishing, replies, and insights. Testers can grant permissions, while other users require App Review. The cited pages are undated.",
+          "evidence": [
+            {
+              "url": "https://developers.facebook.com/docs/threads/get-started/",
+              "title": "Threads API app setup",
+              "quote": "To access the Threads API, create an app and pick the Threads use case.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            },
+            {
+              "url": "https://developers.facebook.com/docs/threads/get-started/",
+              "title": "Threads API OAuth authentication",
+              "quote": "API authentication is handled by Threads user access tokens that conform to the OAuth 2.0 protocol.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            },
+            {
+              "url": "https://developers.facebook.com/docs/threads/get-started/",
+              "title": "Threads tester permissions",
+              "quote": "Threads testers can grant your app these permissions at any time.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            },
+            {
+              "url": "https://developers.facebook.com/docs/threads/get-started/",
+              "title": "Threads App Review requirement",
+              "quote": "For app users without a role on your app to grant your app these permissions, each permission must first be approved through the App Review process, and your app must be published.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            }
+          ]
+        },
+        "credential_gate": {
+          "value": "mixed",
+          "gate_class": "mixed",
+          "details": {
+            "gate_class": "mixed"
+          },
+          "status": "checked",
+          "reason": "Developers can create an app and use testers for self-serve testing, but ordinary users require permission-specific App Review and a published app. The gate is therefore mixed between tester access and reviewed production access. The cited page is undated.",
+          "evidence": [
+            {
+              "url": "https://developers.facebook.com/docs/threads/get-started/",
+              "title": "Threads self-serve tester path",
+              "quote": "Threads testers can grant your app these permissions at any time.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            },
+            {
+              "url": "https://developers.facebook.com/docs/threads/get-started/",
+              "title": "Threads reviewed production path",
+              "quote": "For app users without a role on your app to grant your app these permissions, each permission must first be approved through the App Review process, and your app must be published.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            }
+          ]
+        },
+        "api_surface": {
+          "value": "HTTP API; broad documented surface",
+          "api_types": [
+            "HTTP API"
+          ],
+          "breadth": "broad",
+          "details": {
+            "api_types": [
+              "HTTP API"
+            ],
+            "breadth": "broad"
+          },
+          "status": "checked",
+          "reason": "The official Threads reference lists endpoints for publishing, media, profiles, replies, discovery, and insights, accessed through graph.threads.com or graph.threads.net. The current rendered page does not explicitly label the architecture REST or GraphQL, so the conservative type is HTTP API. The cited pages are undated.",
+          "evidence": [
+            {
+              "url": "https://developers.facebook.com/documentation/threads/reference",
+              "title": "Threads API endpoint surface",
+              "quote": "The Threads API consists of the following endpoints. Refer to each endpoint's reference document for usage requirements.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            },
+            {
+              "url": "https://developers.facebook.com/documentation/threads/reference",
+              "title": "Threads API hosts",
+              "quote": "**Warning:** The Threads API can be accessed by either `graph.threads.com` or `graph.threads.net`.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            },
+            {
+              "url": "https://developers.facebook.com/documentation/threads/llms.txt",
+              "title": "Threads API capabilities documentation index entry",
+              "quote": "The Threads API enables developers to create posts, manage replies, retrieve user profiles, discover content, and access engagement insights on Threads.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated",
+              "original_url": "https://developers.facebook.com/documentation/threads/overview",
+              "source_review": "The current overview no longer contains the former capability sentence. The official full documentation index reproduces it verbatim."
+            }
+          ]
+        },
+        "official_mcp": {
+          "value": "vendor_server",
+          "mcp_mode": "unknown",
+          "status": "checked",
+          "reason": "Meta's current Threads documentation index explicitly lists a Threads MCP server for publishing posts and checking performance. The linked overview and get-started pages rendered only headings, so remote, local, or dual transport cannot be established. The official index is undated.",
+          "evidence": [
+            {
+              "url": "https://developers.facebook.com/documentation/threads/llms.txt",
+              "title": "Threads MCP server documentation index entry",
+              "quote": "Connect your Threads account to an AI assistant with the Threads MCP server to publish posts and check how they perform.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated",
+              "original_url": "https://developers.facebook.com/documentation/threads.md",
+              "source_review": "The former product Markdown page no longer contains the MCP entry. The current official full documentation index lists the Threads MCP server with this exact vendor-server description; transport remains unestablished."
+            }
+          ]
+        },
+        "composio_toolkit": {
+          "value": "listed_alias",
+          "details": {
+            "slug": "THREADS",
+            "catalog_name": "Threads",
+            "auth_display": "OAUTH2",
+            "tools": 24
+          },
+          "status": "checked",
+          "reason": "The current Composio toolkit page lists Threads under slug THREADS, omitting the parenthetical Meta qualifier used by this research record. This is the exact product with a shortened catalog label, so it is classified as listed_alias. The page is undated; its Version value is not a publication date.",
+          "evidence": [
+            {
+              "url": "https://docs.composio.dev/toolkits/threads.md",
+              "title": "Composio Threads toolkit",
+              "quote": "# Threads\n\nThreads is Meta's social network for publishing posts, managing replies, discovering public content, and analyzing profile and post performance.\n\n- **Category:** social media accounts\n- **Auth:** OAUTH2\n- **Composio-managed OAuth available?** No\n- **Tools:** 24\n- **Triggers:** 0\n- **Slug:** `THREADS`",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            }
+          ]
+        },
+        "verdict": {
+          "value": "gated_build_candidate",
+          "status": "checked",
+          "reason": "OAuth authentication and a broad HTTP API are documented, but ordinary-user access requires App Review and publication. The vendor MCP is documented while its transport remains unknown. The load-bearing Threads pages are undated.",
+          "evidence": [
+            {
+              "url": "https://developers.facebook.com/docs/threads/get-started/",
+              "title": "Threads production-access gate",
+              "quote": "For app users without a role on your app to grant your app these permissions, each permission must first be approved through the App Review process, and your app must be published.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            },
+            {
+              "url": "https://developers.facebook.com/documentation/threads/llms.txt",
+              "title": "Threads API build-surface documentation index entry",
+              "quote": "The Threads API enables developers to create posts, manage replies, retrieve user profiles, discover content, and access engagement insights on Threads.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated",
+              "original_url": "https://developers.facebook.com/documentation/threads/overview",
+              "source_review": "The current overview no longer contains the former capability sentence. The official full documentation index reproduces it verbatim and preserves the broad HTTP API basis for the gated build verdict."
+            }
+          ]
+        }
+      }
+    },
+    {
+      "number": 40,
+      "app": "SendGrid",
+      "category": "Marketing, Ads, Email and Social",
+      "summary": "SendGrid's Email API is a documented REST v3 Web API authenticated with permission-scoped API keys sent as Bearer tokens. New accounts can self-serve a 60-day trial with up to 100 Email API emails per day, then need a paid Email API plan to continue sending; upgrade requires two-factor authentication, domain authentication, and a payment method. Composio lists the exact SENDGRID toolkit. No SendGrid-operated execution MCP server was verified: SendGrid's MCP documentation route renders a 404, Twilio's hosted MCP is a read-only documentation server, and the community SendGrid MCP project is third-party.",
+      "blocker": "Sending stops after the 60-day trial unless an Email API plan is purchased. API keys are permission-scoped and displayed only once. No vendor SendGrid execution MCP endpoint or transport was verified, so a build should use the REST API or an official SDK rather than Twilio's documentation MCP or a community server.",
+      "next_action": "Create a SendGrid trial account, enable two-factor authentication, authenticate a sending domain, and create a Restricted Access API key limited to Mail Send plus only the additional scopes required. Prototype POST https://api.sendgrid.com/v3/mail/send with verified sender identities and budget a paid Email API plan before day 60. Recheck official MCP documentation before considering MCP, and do not substitute Twilio's documentation MCP or third-party servers.",
+      "fields": {
+        "auth": {
+          "status": "checked",
+          "value": [
+            "SendGrid Email API v3: API key in an HTTP Authorization header as Bearer <API key>",
+            "Permission-scoped API keys: Full Access, Custom Access, or separate Billing Access; Mail Send can be restricted"
+          ],
+          "reason": "The undated official authentication page requires an HTTP Authorization header containing an API Key and documents Bearer <YOUR_API_KEY_HERE>. The undated API Keys page documents Full Access, Custom Access, Billing Access, creator-permission limits, and one-time key display. The undated Email API quickstart documents a Restricted Access key with Mail Send > Full Access. The docs.sendgrid.com evidence routes rendered through 301 redirects to the corresponding Twilio SendGrid documentation; quotes are from the rendered final pages.",
+          "evidence": [
+            {
+              "url": "https://docs.sendgrid.com/api-reference/how-to-use-the-sendgrid-v3-api/authentication",
+              "resolved_url": "https://www.twilio.com/docs/sendgrid/api-reference/how-to-use-the-sendgrid-v3-api/authentication",
+              "title": "Authentication | SendGrid Docs | Twilio",
+              "quote": "To authenticate, add an HTTP Authorization header to your API request that contains an API Key.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            },
+            {
+              "url": "https://docs.sendgrid.com/api-reference/how-to-use-the-sendgrid-v3-api/authentication",
+              "resolved_url": "https://www.twilio.com/docs/sendgrid/api-reference/how-to-use-the-sendgrid-v3-api/authentication",
+              "title": "Authentication | SendGrid Docs | Twilio",
+              "quote": "To use an API key, include an Authorization header with the value Bearer <YOUR_API_KEY_HERE> in your request. Replace <YOUR_API_KEY_HERE> with your API secret key.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            },
+            {
+              "url": "https://docs.sendgrid.com/ui/account-and-settings/api-keys",
+              "resolved_url": "https://www.twilio.com/docs/sendgrid/ui/account-and-settings/api-keys",
+              "title": "API Keys | SendGrid Docs | Twilio",
+              "quote": "Full Access\tGrants all API endpoints full access to your account.\nCustom Access\tChoose both which API endpoints and which access levels each have to your account.\nBilling Access\tGrants all billing API endpoints full access to your account.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            },
+            {
+              "url": "https://docs.sendgrid.com/ui/account-and-settings/api-keys",
+              "resolved_url": "https://www.twilio.com/docs/sendgrid/ui/account-and-settings/api-keys",
+              "title": "API Keys | SendGrid Docs | Twilio",
+              "quote": "You can't give an API key greater permissions than your own.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            },
+            {
+              "url": "https://docs.sendgrid.com/ui/account-and-settings/api-keys",
+              "resolved_url": "https://www.twilio.com/docs/sendgrid/ui/account-and-settings/api-keys",
+              "title": "API Keys | SendGrid Docs | Twilio",
+              "quote": "The Twilio SendGrid Console displays the API key only once at creation.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            },
+            {
+              "url": "https://docs.sendgrid.com/for-developers/sending-email/email-api-quickstart-for-c",
+              "resolved_url": "https://www.twilio.com/docs/sendgrid/for-developers/sending-email/email-api-quickstart-for-c",
+              "title": "Email API Quickstart for C# | SendGrid Docs | Twilio",
+              "quote": "To complete this tutorial, you can create a Restricted Access API key with Mail Send > Full Access permissions only, which will allow you to send email and schedule emails to be sent later.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            }
+          ]
+        },
+        "credential_gate": {
+          "status": "checked",
+          "value": "mixed",
+          "gate_class": "mixed",
+          "reason": "Self-serve signup starts a 60-day trial with up to 100 Email API emails per day, but sending stops after the trial unless an Email API plan is selected. Before upgrading, Twilio requires verification steps including two-factor authentication, domain authentication, and a payment method. Email API and Marketing Campaigns plans are independent. This combines a self-serve trial with a paid continuation gate. The cited documentation and support article are undated.",
+          "evidence": [
+            {
+              "url": "https://docs.sendgrid.com/ui/account-and-settings/upgrading-your-plan",
+              "resolved_url": "https://www.twilio.com/docs/sendgrid/ui/account-and-settings/upgrading-your-plan",
+              "title": "Upgrade your plan | SendGrid Docs | Twilio",
+              "quote": "During the 60-day free trial period, you can:\n\nSend up to 100 emails per day using the Email API.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            },
+            {
+              "url": "https://docs.sendgrid.com/ui/account-and-settings/upgrading-your-plan",
+              "resolved_url": "https://www.twilio.com/docs/sendgrid/ui/account-and-settings/upgrading-your-plan",
+              "title": "Upgrade your plan | SendGrid Docs | Twilio",
+              "quote": "After the 60-day period, you'll need to upgrade your plans to continue sending emails or to access the Marketing tab in the dashboard.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            },
+            {
+              "url": "https://docs.sendgrid.com/ui/account-and-settings/upgrading-your-plan",
+              "resolved_url": "https://www.twilio.com/docs/sendgrid/ui/account-and-settings/upgrading-your-plan",
+              "title": "Upgrade your plan | SendGrid Docs | Twilio",
+              "quote": "Before upgrading your plan, you must complete the verification steps to unlock your Twilio SendGrid account.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            },
+            {
+              "url": "https://docs.sendgrid.com/ui/account-and-settings/upgrading-your-plan",
+              "resolved_url": "https://www.twilio.com/docs/sendgrid/ui/account-and-settings/upgrading-your-plan",
+              "title": "Upgrade your plan | SendGrid Docs | Twilio",
+              "quote": "Set up Two-Factor Authentication.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            },
+            {
+              "url": "https://docs.sendgrid.com/ui/account-and-settings/upgrading-your-plan",
+              "resolved_url": "https://www.twilio.com/docs/sendgrid/ui/account-and-settings/upgrading-your-plan",
+              "title": "Upgrade your plan | SendGrid Docs | Twilio",
+              "quote": "Set up Domain Authentication.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            },
+            {
+              "url": "https://docs.sendgrid.com/ui/account-and-settings/upgrading-your-plan",
+              "resolved_url": "https://www.twilio.com/docs/sendgrid/ui/account-and-settings/upgrading-your-plan",
+              "title": "Upgrade your plan | SendGrid Docs | Twilio",
+              "quote": "Add a payment method.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            },
+            {
+              "url": "https://docs.sendgrid.com/ui/account-and-settings/upgrading-your-plan",
+              "resolved_url": "https://www.twilio.com/docs/sendgrid/ui/account-and-settings/upgrading-your-plan",
+              "title": "Upgrade your plan | SendGrid Docs | Twilio",
+              "quote": "You can upgrade your Email API and Marketing Campaigns plans independently at any time.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            },
+            {
+              "url": "https://support.sendgrid.com/hc/en-us/articles/35270136965403-Overview-of-60-Day-Free-Trial-Plans-for-New-SendGrid-Accounts",
+              "title": "Overview of 60-Day Free Trial Plans for New SendGrid Accounts",
+              "quote": "After the 60 day trial period, email send via any web API or SMTP integration for the account will stop unless an appropriate \"Email API\" plan is chosen before then via \"Settings > Account Details > Your Products\".",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            }
+          ]
+        },
+        "api_surface": {
+          "status": "checked",
+          "value": "REST; broad documented surface",
+          "api_types": [
+            "REST"
+          ],
+          "breadth": "broad",
+          "reason": "The official v3 API reference explicitly identifies a REST interface and documents transactional email, campaigns, contacts, and statistics. Mail Send is the Email API operation at POST https://api.sendgrid.com/v3/mail/send. The separate Campaigns API page states that it covers the obsolete Legacy Marketing Campaigns API, so legacy campaign endpoints are not conflated with the Email API/Mail Send surface. The cited pages are undated.",
+          "evidence": [
+            {
+              "url": "https://docs.sendgrid.com/api-reference/",
+              "resolved_url": "https://www.twilio.com/docs/sendgrid/api-reference",
+              "title": "SendGrid v3 API reference | SendGrid Docs | Twilio",
+              "quote": "The SendGrid v3 Web API provides a REST interface to send email at scale and ensure your application can handle high volumes.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            },
+            {
+              "url": "https://docs.sendgrid.com/api-reference/",
+              "resolved_url": "https://www.twilio.com/docs/sendgrid/api-reference",
+              "title": "SendGrid v3 API reference | SendGrid Docs | Twilio",
+              "quote": "The SendGrid API endpoints allow you to integrate with your tech stack to send transactional emails, create marketing campaigns, manage your contacts, and monitor the health of your email statistics.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            },
+            {
+              "url": "https://docs.sendgrid.com/api-reference/mail-send/mail-send",
+              "resolved_url": "https://www.twilio.com/docs/sendgrid/api-reference/mail-send/mail-send",
+              "title": "Mail Send | SendGrid Docs | Twilio",
+              "quote": "The Mail Send operation allows you to send email over SendGrid's v3 Web API",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            },
+            {
+              "url": "https://docs.sendgrid.com/for-developers/sending-email/email-api-quickstart-for-c",
+              "resolved_url": "https://www.twilio.com/docs/sendgrid/for-developers/sending-email/email-api-quickstart-for-c",
+              "title": "Email API Quickstart for C# | SendGrid Docs | Twilio",
+              "quote": "The path to the Twilio SendGrid v3 Mail Send endpoint is https://api.sendgrid.com/v3/mail/send.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            },
+            {
+              "url": "https://docs.sendgrid.com/api-reference/campaigns-api/",
+              "resolved_url": "https://www.twilio.com/docs/sendgrid/api-reference/campaigns-api",
+              "title": "Campaigns API | SendGrid Docs | Twilio",
+              "quote": "This covers the obsolete Legacy Marketing Campaigns API.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            }
+          ]
+        },
+        "official_mcp": {
+          "status": "checked",
+          "value": "no_vendor_server_documented",
+          "review_basis": "scoped_documentation_review",
+          "mcp_mode": "unknown",
+          "reason": "Scoped documentation review of SendGrid's official MCP route, merged SendGrid/Twilio product page, and Twilio's official MCP documentation found no vendor server for SendGrid execution. The SendGrid MCP route returns 404 and the product page contains no MCP server text. Twilio's hosted MCP is a read-only documentation server that indexes SendGrid docs but does not connect to an account or execute API calls, so it is not a SendGrid execution server. This is a point-in-time documentation finding, not a universal absence claim. The SendGrid pages are undated; Twilio labels its MCP Public Beta without a publication date.",
+          "evidence": [
+            {
+              "url": "https://sendgrid.com/en-us/mcp",
+              "resolved_url": "https://www.twilio.com/en-us/sendgrid",
+              "title": "SendGrid Email API and Email Marketing Campaigns | Twilio",
+              "quote": "We merged our websites to make things simpler. You can now find all our trusted email solutions, plus everything else Twilio offers, over on Twilio.com.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            },
+            {
+              "url": "https://www.twilio.com/docs/ai/mcp",
+              "title": "Twilio MCP server",
+              "quote": "This server is read-only: it searches and retrieves public API documentation, and it does not connect to a Twilio account or execute any API calls.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "Public Beta; undated"
+            },
+            {
+              "url": "https://www.twilio.com/docs/ai/mcp",
+              "title": "Twilio MCP indexed content",
+              "quote": "Twilio SendGrid docs and support articles",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "Public Beta; undated"
+            }
+          ]
+        },
+        "composio_toolkit": {
+          "value": "listed_exact",
+          "details": {
+            "slug": "SENDGRID",
+            "auth_display": "API_KEY",
+            "tools": 364
+          },
+          "status": "checked",
+          "reason": "The current Composio toolkit page lists SendGrid under the exact slug SENDGRID with 364 tools and API-key authentication. The page is undated; its Version value is not a publication date, and the catalog listing does not establish vendor MCP status.",
+          "evidence": [
+            {
+              "url": "https://docs.composio.dev/toolkits/sendgrid.md",
+              "title": "Composio SendGrid toolkit",
+              "quote": "# SendGrid\n\nSendGrid is a cloud-based email delivery platform providing transactional and marketing email services, with APIs for integration, analytics, and scalability\n\n- **Category:** transactional email\n- **Auth:** API_KEY\n- **Composio-managed OAuth available?** N/A\n- **Tools:** 364\n- **Triggers:** 0\n- **Slug:** `SENDGRID`",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            }
+          ]
+        },
+        "verdict": {
+          "status": "checked",
+          "value": "documented_build_candidate",
+          "reason": "A scoped API-key authentication method, a self-serve 60-day trial, and a broad REST Email API are documented, so a direct REST or official-SDK build is viable. Continued sending requires a paid Email API plan after the trial, with two-factor authentication, domain authentication, and a payment method before upgrade. Legacy Marketing Campaigns is separate and obsolete. No SendGrid execution MCP is verified, so this verdict rests on REST rather than MCP. The load-bearing documentation and support pages are undated.",
+          "evidence": [
+            {
+              "url": "https://docs.sendgrid.com/api-reference/how-to-use-the-sendgrid-v3-api/authentication",
+              "resolved_url": "https://www.twilio.com/docs/sendgrid/api-reference/how-to-use-the-sendgrid-v3-api/authentication",
+              "title": "Authentication | SendGrid Docs | Twilio",
+              "quote": "To use an API key, include an Authorization header with the value Bearer <YOUR_API_KEY_HERE> in your request.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            },
+            {
+              "url": "https://docs.sendgrid.com/api-reference/",
+              "resolved_url": "https://www.twilio.com/docs/sendgrid/api-reference",
+              "title": "SendGrid v3 API reference | SendGrid Docs | Twilio",
+              "quote": "The SendGrid v3 Web API provides a REST interface to send email at scale and ensure your application can handle high volumes.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            },
+            {
+              "url": "https://docs.sendgrid.com/ui/account-and-settings/upgrading-your-plan",
+              "resolved_url": "https://www.twilio.com/docs/sendgrid/ui/account-and-settings/upgrading-your-plan",
+              "title": "Upgrade your plan | SendGrid Docs | Twilio",
+              "quote": "During the 60-day free trial period, you can:\n\nSend up to 100 emails per day using the Email API.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            },
+            {
+              "url": "https://docs.sendgrid.com/ui/account-and-settings/upgrading-your-plan",
+              "resolved_url": "https://www.twilio.com/docs/sendgrid/ui/account-and-settings/upgrading-your-plan",
+              "title": "Upgrade your plan | SendGrid Docs | Twilio",
+              "quote": "After the 60-day period, you'll need to upgrade your plans to continue sending emails or to access the Marketing tab in the dashboard.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

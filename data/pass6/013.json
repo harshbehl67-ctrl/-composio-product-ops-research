@@ -1,0 +1,107 @@
+{
+  "app": {
+    "number": 13,
+    "name": "Freshdesk",
+    "category": "Support and Helpdesk",
+    "hint": "freshdesk.com"
+  },
+  "replayed_at": "2026-11-23T18:17:21.473597+00:00",
+  "source_passes": [
+    "data/pass2/013.json",
+    "data/pass4/013.json"
+  ],
+  "source_search": "data/new_search/013.json",
+  "publication_date_note": "Published labels are retained exactly as supplied by search; missing labels are null. Relative labels must not be treated as exact publication dates.",
+  "claims": {
+    "auth": {
+      "value": [
+        "API key"
+      ],
+      "sources": [
+        "https://support.freshdesk.com/support/solutions/articles/225435-where-can-i-find-my-api-key"
+      ],
+      "evidence": [
+        {
+          "value": "API key",
+          "url": "https://support.freshdesk.com/support/solutions/articles/225435-where-can-i-find-my-api-key",
+          "excerpt": "Where can I find my API key? : Freshdesk Support Login Support home › Resources Community › Video Library › Agent Training › Products Freshservice › Freshdesk › Freshchat › Freshcaller › Freshsales › Freshte",
+          "published_label": null
+        }
+      ],
+      "reason": "Provisional extraction: validate scope and completeness against the cited page."
+    },
+    "credential_gate": {
+      "value": "unknown",
+      "sources": [],
+      "evidence": [],
+      "reason": "No sufficiently specific positive evidence extracted; review targeted search results."
+    },
+    "api_surface": {
+      "value": "unknown",
+      "sources": [],
+      "evidence": [],
+      "reason": "No sufficiently specific positive evidence extracted; review targeted search results."
+    },
+    "official_mcp": {
+      "value": "yes (provisional)",
+      "sources": [
+        "https://support.freshdesk.com/support/solutions/articles/50000012670-model-context-protocol-mcp-integration-in-freshdesk-eap-",
+        "https://support.freshdesk.com/support/solutions/articles/50000014411-freshworks-mcp-security",
+        "https://support.freshdesk.com/support/solutions/articles/50000014407-mcp-integration-frequently-asked-questions-faq-",
+        "https://support.freshdesk.com/support/solutions/articles/50000012670-model-context-protocol-mcp-integration-in-freshdesk"
+      ],
+      "evidence": [
+        {
+          "value": "yes (provisional)",
+          "url": "https://support.freshdesk.com/support/solutions/articles/50000012670-model-context-protocol-mcp-integration-in-freshdesk-eap-",
+          "excerpt": "r enables AI tools like Cursor and Claude to securely connect and interact with Freshdesk. The MCP server acts as middleware to expose specific capabilities, such as creating tickets, by using public APIs and supported authentication methods. This article provides ",
+          "published_label": null,
+          "context_warning": "Review vendor ownership, dates, and scope."
+        },
+        {
+          "value": "yes (provisional)",
+          "url": "https://support.freshdesk.com/support/solutions/articles/50000014411-freshworks-mcp-security",
+          "excerpt": "ns and improves system reliability. Network security All communication with the Freshdesk MCP server is secured over HTTPS. Data is encrypted in transit using TLS. Requests must include valid authentication headers. Communication occurs within Freshdesk’s secu",
+          "published_label": null,
+          "context_warning": "Review vendor ownership, dates, and scope."
+        },
+        {
+          "value": "yes (provisional)",
+          "url": "https://support.freshdesk.com/support/solutions/articles/50000014407-mcp-integration-frequently-asked-questions-faq-",
+          "excerpt": "that supports the MCP standard. Connect your preferred MCP-compatible client to Freshdesk using the MCP server URL and the API key provided in your Freshdesk administrator settings. Setup and configuration How do I find my MCP settings in Freshdesk? Go to Admin Settings",
+          "published_label": null,
+          "context_warning": "Review vendor ownership, dates, and scope."
+        },
+        {
+          "value": "yes (provisional)",
+          "url": "https://support.freshdesk.com/support/solutions/articles/50000012670-model-context-protocol-mcp-integration-in-freshdesk",
+          "excerpt": "r enables AI tools like Cursor and Claude to securely connect and interact with Freshdesk. The MCP server acts as middleware to expose specific capabilities, such as creating tickets, by using public APIs and supported authentication methods. This article provides ",
+          "published_label": null,
+          "context_warning": "Review vendor ownership, dates, and scope."
+        }
+      ],
+      "reason": "Provisional; check source date, scope, and vendor ownership."
+    },
+    "composio_toolkit": {
+      "value": "listed",
+      "sources": [
+        "https://docs.composio.dev/toolkits/freshdesk"
+      ],
+      "evidence": [],
+      "reason": "Catalog match; scope needs review."
+    },
+    "verdict": {
+      "value": "unknown",
+      "sources": [],
+      "evidence": [],
+      "reason": "A supported access path, authentication method and API surface were not all extracted."
+    }
+  },
+  "validation": [
+    "Automatic extraction is provisional and not a verified final claim",
+    "Unknown is not evidence of absence",
+    "No Composio-to-vendor-MCP inference",
+    "Basic authentication may be endpoint-specific",
+    "Client-only and negated statements are not positive MCP evidence"
+  ]
+}

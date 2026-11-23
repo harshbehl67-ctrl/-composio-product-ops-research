@@ -1,0 +1,137 @@
+{
+  "app": {
+    "number": 4,
+    "name": "Attio",
+    "category": "CRM and Sales",
+    "hint": "attio.com"
+  },
+  "checked_at": "2026-11-23T18:14:53.871911+00:00",
+  "prior_source": "data/pass2/004.json",
+  "search_source": "data/pass4_search/004.json",
+  "new_candidates": [
+    {
+      "url": "https://attio.com/help/reference/apps/generating-an-api-key",
+      "title": "Generate an API key | Attio Help Center (https://attio.com/help/reference/apps/generating-an-api-key)",
+      "published_label": null
+    },
+    {
+      "url": "https://attio.com/platform/developers?_rsc=7xpj1",
+      "title": "Developer Platform | Attio (https://attio.com/platform/developers?_rsc=7xpj1)",
+      "published_label": null
+    },
+    {
+      "url": "https://attio.com/help/reference/workspace-settings-billing/billing-and-payments",
+      "title": "Billing and payments | Attio Help Center (https://attio.com/help/reference/workspace-settings-billing/billing-and-payments)",
+      "published_label": null
+    },
+    {
+      "url": "https://attio.com/blog/meet-the-attio-developer-platform",
+      "title": "Attio Developer Platform (https://attio.com/blog/meet-the-attio-developer-platform)",
+      "published_label": null
+    },
+    {
+      "url": "https://attio.com/changelog/2026/updates-to-developer-platform",
+      "title": "Updates to Developer platform | Attio Changelog (https://attio.com/changelog/2026/updates-to-developer-platform)",
+      "published_label": "3 months ago"
+    }
+  ],
+  "selected": [
+    {
+      "url": "https://attio.com/help/reference/apps/generating-an-api-key",
+      "title": "Generate an API key | Attio Help Center (https://attio.com/help/reference/apps/generating-an-api-key)",
+      "published_label": null
+    }
+  ],
+  "new_pages": [
+    {
+      "url": "https://attio.com/help/reference/apps/generating-an-api-key",
+      "requested_url": "https://attio.com/help/reference/apps/generating-an-api-key",
+      "status": 200,
+      "title": "Generate an API key | Attio Help Center (https://attio.com/help/reference/apps/generating-an-api-key)",
+      "text": "Generate an API key | Attio Help Center Help / Reference / Apps / Generate an API key Table of Contents Generate an API key Manage API keys Keeping your data safe Available on all plans. Admins can create and manage API keys. API keys allow you to connect external tools and services to your workspace with secure, scoped access. You can generate access tokens to read, create, or update data in Attio, making it easy to build custom integrations, automate workflows, and sync information across platforms. Generate an API key Copy link In order to generate an API key for your workspace, you must be an admin. If you're not an admin for your workspace, you can ask an admin to complete the following steps: From the dropdown beside your workspace name, click Workspace settings . Click the Developers tab. Click + New access token . Give your new access token a name. Set the appropriate Scopes for the token. Treat access tokens like passwords, as they contain sensitive information. Learn more about keeping your data safe . Manage API keys Copy link Once you've created access tokens, admins can manage them from the Developers page in Workspace settings. Click a token to copy it, or the eye icon to show it. Tokens do not expire, but can be deleted at any time. Click the three dots to the right of a token to find Edit and Delete options. Click Edit to modify the token name or scopes. Learn more about using Attio's API . Keeping your data safe Copy link Your API keys should be treated as highly sensitive information - think of a token like a password. You should only give tokens to services you fully trust. Scopes should be used to limit how much access a token has to your Attio data. Modify the Scopes settings to fine-tune its access. If leaked, tokens could be used maliciously, as they can provide someone with access to all of your Attio data. If you suspect a token has been compromised, delete it and replace it with a new one. Note: Tokens should never be shared with the Attio Support team. We'll never ask you for them. Did this article answer your question? Yes No Search... ⌘K",
+      "published_label": null
+    }
+  ],
+  "claims": {
+    "auth": {
+      "value": [
+        "API key"
+      ],
+      "sources": [
+        "https://attio.com/help/reference/apps/generating-an-api-key"
+      ],
+      "evidence": [
+        {
+          "value": "API key",
+          "url": "https://attio.com/help/reference/apps/generating-an-api-key",
+          "excerpt": "Generate an API key | Attio Help Center Help / Reference / Apps / Generate an API key Table of Contents Generate an API key Manage API keys Keeping your data safe Available on all plans. Admins can c",
+          "published_label": null
+        }
+      ],
+      "reason": "Provisional extraction: validate scope and completeness against the cited page."
+    },
+    "credential_gate": {
+      "value": "unknown",
+      "sources": [],
+      "evidence": [],
+      "reason": "No sufficiently specific positive evidence extracted; review targeted search results."
+    },
+    "api_surface": {
+      "value": "unknown",
+      "sources": [],
+      "evidence": [],
+      "reason": "No sufficiently specific positive evidence extracted; review targeted search results."
+    },
+    "official_mcp": {
+      "value": "yes (provisional)",
+      "sources": [
+        "https://attio.com/apps/mcp",
+        "https://mcp.attio.com/mcp",
+        "https://attio.com/help/reference/how-to-guides/attio-mcp-prompts-and-best-practices"
+      ],
+      "evidence": [
+        {
+          "value": "yes (provisional)",
+          "url": "https://attio.com/apps/mcp",
+          "excerpt": "Category Analytics Resources Website Documentation Support Install app Overview Attio provides a hosted MCP server that gives AI tools secure access to your Attio workspace. It’s designed to work seamlessly with popular AI assistants like Claude, ChatGPT, Cursor, and more. ",
+          "published_label": null,
+          "context_warning": "Review vendor ownership, dates, and scope."
+        },
+        {
+          "value": "yes (provisional)",
+          "url": "https://mcp.attio.com/mcp",
+          "excerpt": "@@@ @@+ +@@@+#@@#\n :@@@@@+   #@@@@+:       :++++++++   :+++:  ++++ ++:   +++++: ATTIO MCP SERVER Connect your AI tools to Attio via Model Context Protocol.\n\n\nSETUP\n-----\n\n**For Claude Desktop or Claude.ai:**\n\n1. Open Settings -> Connectors -> Browse connec",
+          "published_label": null,
+          "context_warning": "Review vendor ownership, dates, and scope."
+        },
+        {
+          "value": "yes (provisional)",
+          "url": "https://attio.com/help/reference/how-to-guides/attio-mcp-prompts-and-best-practices",
+          "excerpt": " assistants securely interact with other systems. Your AI assistant connects to Attio's MCP server, you sign in with your Attio account, and the assistant can then use a set of Attio tools: searching records, creating and updating records, working with notes",
+          "published_label": null,
+          "context_warning": "Review vendor ownership, dates, and scope."
+        }
+      ],
+      "reason": "Provisional; check source date, scope, and vendor ownership."
+    },
+    "composio_toolkit": {
+      "value": "listed",
+      "sources": [
+        "https://docs.composio.dev/toolkits/attio"
+      ],
+      "evidence": [],
+      "reason": "Catalog match; scope needs review."
+    },
+    "verdict": {
+      "value": "unknown",
+      "sources": [],
+      "evidence": [],
+      "reason": "A supported access path, authentication method and API surface were not all extracted."
+    }
+  },
+  "validation": [
+    "All claims are provisional",
+    "No vendor MCP inference from Composio catalog",
+    "Negated MCP or client-only source is not counted as vendor-server proof"
+  ]
+}

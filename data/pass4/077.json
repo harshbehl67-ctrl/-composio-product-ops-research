@@ -1,0 +1,154 @@
+{
+  "app": {
+    "number": 77,
+    "name": "ClickUp",
+    "category": "Productivity and Project Management",
+    "hint": "clickup.com/api"
+  },
+  "checked_at": "2026-11-23T18:15:30.160931+00:00",
+  "prior_source": "data/pass2/077.json",
+  "search_source": "data/pass4_search/077.json",
+  "new_candidates": [
+    {
+      "url": "https://help.clickup.com/hc/en-us/articles/6303422883095-Create-your-own-app-with-the-ClickUp-API",
+      "title": "Create your own app with the ClickUp API – ClickUp Help (https://help.clickup.com/hc/en-us/articles/6303422883095-Create-your-own-app-with-the-ClickUp-API)",
+      "published_label": null
+    },
+    {
+      "url": "https://developer.clickup.com/docs/open-api-spec",
+      "title": "OpenAPI Specification (https://developer.clickup.com/docs/open-api-spec)",
+      "published_label": null
+    },
+    {
+      "url": "https://developer.clickup.com/reference/getaccesstoken",
+      "title": "Get Access Token (https://developer.clickup.com/reference/getaccesstoken)",
+      "published_label": null
+    }
+  ],
+  "selected": [
+    {
+      "url": "https://developer.clickup.com/reference/getaccesstoken",
+      "title": "Get Access Token (https://developer.clickup.com/reference/getaccesstoken)",
+      "published_label": null
+    },
+    {
+      "url": "https://help.clickup.com/hc/en-us/articles/6303422883095-Create-your-own-app-with-the-ClickUp-API",
+      "title": "Create your own app with the ClickUp API – ClickUp Help (https://help.clickup.com/hc/en-us/articles/6303422883095-Create-your-own-app-with-the-ClickUp-API)",
+      "published_label": null
+    }
+  ],
+  "new_pages": [
+    {
+      "url": "https://developer.clickup.com/reference/getaccesstoken",
+      "requested_url": "https://developer.clickup.com/reference/getaccesstoken",
+      "status": 200,
+      "title": "Get Access Token (https://developer.clickup.com/reference/getaccesstoken)",
+      "text": "Get Access Token For AI agents: the docs index is at https://developer.clickup.com/llms.txt. Append .md to any documentation page URL to get its markdown version. Time Status User Agent Retrieving recent requests… Loading Loading… client_id string required OAuth app client id client_secret string required OAuth app client secret code string required Code given in redirect url content-type string enum Defaults to application/json Generated from available request content types application/json application/x-www-form-urlencoded Allowed: application/json application/x-www-form-urlencoded 200 Updated 5 months ago Did this page help you? Yes No Shell Node Ruby PHP Python Loading Loading… Click Try It! to start a request and see the response here! Or choose an example: application/json 200 Updated 5 months ago Did this page help you? Yes No",
+      "published_label": null
+    },
+    {
+      "url": "https://help.clickup.com/hc/en-us/articles/6303422883095-Create-your-own-app-with-the-ClickUp-API",
+      "requested_url": "https://help.clickup.com/hc/en-us/articles/6303422883095-Create-your-own-app-with-the-ClickUp-API",
+      "status": 200,
+      "title": "Create your own app with the ClickUp API – ClickUp Help (https://help.clickup.com/hc/en-us/articles/6303422883095-Create-your-own-app-with-the-ClickUp-API)",
+      "text": "Create your own app with the ClickUp API – ClickUp Help Skip to main content Search Ask me anything Want to create an app that integrates with ClickUp? Give your users the ability to sign in using OAuth 2.0! Be sure to also check out our API documentation ! What you'll need The ClickUp API is available on all ClickUp plans . Workspace owners or admins can manage integration settings and create OAuth apps in the Workspace. Members and limited members with full edit permissions can use personal API tokens. Limited members with view-only permissions cannot access or manage the API. OAuth 2 flow When you want to develop an application that others can use, you must use an OAuth2 authentication flow. With OAuth 2, everyone who uses your app gets assigned an individualized token. Each user can only access the content available to their individual ClickUp user account. If you are unfamiliar with OAuth2, Digital Ocean has put together a great guide that should get you started. We also recommend checking out OAuth's website for additional details. Create an app The first step for using OAuth 2 is to create an app in your Workspace. You must be a Workspace owner or admin to manage integration settings. To create an app in your Workspace: In the upper-left corner, click your Workspace avatar. Select Settings . In the All settings sidebar, select ClickUp API . In the upper-right corner of the ClickUp API Settings page, click Create an App. Enter your app's name and a redirect URL(s). If you're not sure what to use for your redirect URL, take a look at the Redirect URLs guide on OAuth's website. Click Create App . On the next screen, you'll see that a Client ID and Client Secret have been generated. Use the Client ID and Client Secret in your app to create an OAuth 2 authentication flow. Update your redirect URLs If you have a new redirect URL, you can update these settings in your ClickUp Workspace at any time: In the upper-left corner, click your Workspace avatar. Select Settings . In the All settings sidebar, select ClickUp API . Click an existing app to expand its details. Update the redirect URL. Click Save . View or regenerate your client secret To regenerate your client secret: In the upper-left corner, click your Workspace avatar. Select Settings . In the All settings sidebar, select ClickUp API . Click an existing app to expand its details. Click Show to view your current Client Secret. Click Regenerate to create a new Client Secret. Update your app to use the new Client Secret. Authorization token types Tokens permit you to make API calls and integrate with other applications. You can also use apps like Make to create integrations without writing code. Tokens are specific to your ClickUp user account. Anyone with a ClickUp account can generate a personal token. Personal tokens permit access to every Workspace your account has created or joined. Your personal token gives you the same access that you have through a web browser. If you use OAuth2, you can choose to authorize access to specific Workspaces when you first authenticate or when you re-authenticate later. Was this article helpful? Articles in this section Create your own app with the ClickUp API",
+      "published_label": null
+    }
+  ],
+  "claims": {
+    "auth": {
+      "value": [
+        "OAuth 2.0",
+        "API key",
+        "API token"
+      ],
+      "sources": [
+        "https://developer.clickup.com/docs/authentication"
+      ],
+      "evidence": [
+        {
+          "value": "OAuth 2.0",
+          "url": "https://developer.clickup.com/docs/authentication",
+          "excerpt": "ens never expire. Build Apps for others - OAuth Flow To allow others to use your app, implement the OAuth2 flow so each user has their own token for accessing their ClickUp resources. OAuth resources and specs: Authentication: OAuth 2.0 Grant Type: Authorization Code . Learn more . Aut",
+          "published_label": null
+        },
+        {
+          "value": "API key",
+          "url": "https://developer.clickup.com/docs/authentication",
+          "excerpt": "up.com/api/v2/oauth/token 👀 Note ClickUp uses the authorization code grant type . Use your personal API key to use the Try-It feature in the API docs. Step 1: Create an OAuth app Only Workspace owners or admins can create OAuth apps. Log in to ClickUp. In the upper-right corner, click y",
+          "published_label": null
+        },
+        {
+          "value": "API token",
+          "url": "https://developer.clickup.com/docs/authentication",
+          "excerpt": "ClickUp API, you must authenticate every request. For personal use, authenticate with your personal API token . For apps or integrations that other people use, use the OAuth flow , allowing users to authorize Workspaces for your app. Include the token in the Authorization header of your r",
+          "published_label": null
+        }
+      ],
+      "reason": "Provisional extraction: validate scope and completeness against the cited page."
+    },
+    "credential_gate": {
+      "value": "unknown",
+      "sources": [],
+      "evidence": [],
+      "reason": "No sufficiently specific positive evidence extracted; review targeted search results."
+    },
+    "api_surface": {
+      "value": "unknown",
+      "sources": [],
+      "evidence": [],
+      "reason": "No sufficiently specific positive evidence extracted; review targeted search results."
+    },
+    "official_mcp": {
+      "value": "yes (provisional)",
+      "sources": [
+        "https://developer.clickup.com/docs/connect-an-ai-assistant-to-clickups-mcp-server",
+        "https://help.clickup.com/hc/en-us/articles/33335772678423-What-is-ClickUp-MCP",
+        "https://developer.clickup.com/docs/connect-an-ai-assistant-to-clickups-mcp-server-1"
+      ],
+      "evidence": [
+        {
+          "value": "yes (provisional)",
+          "url": "https://developer.clickup.com/docs/connect-an-ai-assistant-to-clickups-mcp-server",
+          "excerpt": "ClickUp's MCP Server For AI agents: the docs index is at https://developer.clickup.com/llms.txt. Append .md to any documentation page URL to get its markdown version. The Model Con",
+          "published_label": null,
+          "context_warning": "Review vendor ownership, dates, and scope."
+        },
+        {
+          "value": "yes (provisional)",
+          "url": "https://help.clickup.com/hc/en-us/articles/33335772678423-What-is-ClickUp-MCP",
+          "excerpt": " Cursor, and Claude. ClickUp MCP is available on all plans . You can set up the ClickUp MCP server with any app that supports MCP servers, like Claude, Cursor, or VS Code. Workspaces are being upgraded to our new plans. Not all Workspaces have been upgraded ",
+          "published_label": null,
+          "context_warning": "Review vendor ownership, dates, and scope."
+        },
+        {
+          "value": "yes (provisional)",
+          "url": "https://developer.clickup.com/docs/connect-an-ai-assistant-to-clickups-mcp-server-1",
+          "excerpt": "ons for some of the most popular AI assistants. Claude Set up Claude to use the ClickUp MCP server! Pro, Team, Enterprise If you're on the Pro, Team, or Enterprise plan: In a browser or the desktop app, navigate to Settings in the sidebar. Scroll to Connecto",
+          "published_label": null,
+          "context_warning": "Review vendor ownership, dates, and scope."
+        }
+      ],
+      "reason": "Provisional; check source date, scope, and vendor ownership."
+    },
+    "composio_toolkit": {
+      "value": "listed",
+      "sources": [
+        "https://docs.composio.dev/toolkits/clickup"
+      ],
+      "evidence": [],
+      "reason": "Catalog match; scope needs review."
+    },
+    "verdict": {
+      "value": "unknown",
+      "sources": [],
+      "evidence": [],
+      "reason": "A supported access path, authentication method and API surface were not all extracted."
+    }
+  },
+  "validation": [
+    "All claims are provisional",
+    "No vendor MCP inference from Composio catalog",
+    "Negated MCP or client-only source is not counted as vendor-server proof"
+  ]
+}

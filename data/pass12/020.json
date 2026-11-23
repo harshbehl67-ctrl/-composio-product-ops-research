@@ -1,0 +1,206 @@
+{
+  "app": {
+    "number": 20,
+    "name": "Gladly",
+    "category": "Support and Helpdesk",
+    "hint": "gladly.com"
+  },
+  "replayed_at": "2026-11-23T18:45:48.204630+00:00",
+  "source_passes": [
+    "data/pass2/020.json",
+    "data/pass4/020.json"
+  ],
+  "source_searches": [
+    "data/new_search/020.json",
+    "data/pass4_search/020.json"
+  ],
+  "publication_date_note": "Search publication labels are retained exactly; null means no label was available. Relative labels are not exact dates.",
+  "claims": {
+    "auth": {
+      "value": [
+        "API token",
+        "API key",
+        "Basic authentication",
+        "Bearer token"
+      ],
+      "status": "provisional",
+      "sources": [
+        "https://help.gladly.com/implementation/docs/get-your-api-tokens",
+        "https://help.gladly.com/generate-api-tokens-and-create-webhooks",
+        "https://help.gladly.com/docs/set-up-mcp-connections",
+        "https://help.gladly.com/docs/what-are-mcp-connections",
+        "https://help.gladly.com/docs/generate-api-tokens-and-create-webhooks/",
+        "https://help.gladly.com/docs/api-export-tool"
+      ],
+      "evidence": [
+        {
+          "value": "API token",
+          "url": "https://help.gladly.com/implementation/docs/get-your-api-tokens",
+          "excerpt": "Get Your API tokens Documentation Index Fetch the complete documentation index at: https://help.gladly.com/llms.txt Use this file to discover all available pages before exploring further.",
+          "published_label": "1.8 years ago"
+        },
+        {
+          "value": "API key",
+          "url": "https://help.gladly.com/generate-api-tokens-and-create-webhooks",
+          "excerpt": "Generate API Tokens and Create Webhooks Documentation Index Fetch the complete documentation index at: https://help.gladly.com/llms.txt Use this file to discover all available pages before exploring further. Generate API Tokens and Create Webhooks Updated on Feb 13, 2025 Publishe",
+          "published_label": "1.8 years ago"
+        },
+        {
+          "value": "API token",
+          "url": "https://help.gladly.com/generate-api-tokens-and-create-webhooks",
+          "excerpt": "Generate API Tokens and Create Webhooks Documentation Index Fetch the complete documentation index at: https://help.gladly.com/llms.txt Use this file to discover all available pages before",
+          "published_label": "1.8 years ago"
+        },
+        {
+          "value": "Basic authentication",
+          "url": "https://help.gladly.com/generate-api-tokens-and-create-webhooks",
+          "excerpt": "Generate API Tokens and Create Webhooks Documentation Index Fetch the complete documentation index at: https://help.gladly.com/llms.txt Use this file to discover all available pages before exploring further. Generate API Tokens and Create Webhooks Updated on Feb 13, 2025 Publishe",
+          "published_label": "1.8 years ago"
+        },
+        {
+          "value": "API key",
+          "url": "https://help.gladly.com/docs/set-up-mcp-connections",
+          "excerpt": "tps://api.example.com/mcp The type of authentication the server uses: none, bearer token, API key, or OAuth (authorization code or client credentials) The credentials for that authentication type Access MCP settings Go to Settings . Under App Developer Tools , select",
+          "published_label": "last week"
+        },
+        {
+          "value": "Bearer token",
+          "url": "https://help.gladly.com/docs/set-up-mcp-connections",
+          "excerpt": "for example https://api.example.com/mcp The type of authentication the server uses: none, bearer token, API key, or OAuth (authorization code or client credentials) The credentials for that authentication type Access MCP settings Go to Settings . Under App Developer Tools",
+          "published_label": "last week"
+        },
+        {
+          "value": "API key",
+          "url": "https://help.gladly.com/docs/what-are-mcp-connections",
+          "excerpt": "s Gladly supports the following authentication types for an MCP server: None Bearer Token API Key OAuth (Authorization Code) OAuth (Client Credentials) Use the type your server requires. If you're not sure which one to use, ask the team that manages the server. Manag",
+          "published_label": "2 weeks ago"
+        },
+        {
+          "value": "Bearer token",
+          "url": "https://help.gladly.com/docs/what-are-mcp-connections",
+          "excerpt": "cation options Gladly supports the following authentication types for an MCP server: None Bearer Token API Key OAuth (Authorization Code) OAuth (Client Credentials) Use the type your server requires. If you're not sure which one to use, ask the team that manages the serve",
+          "published_label": "2 weeks ago"
+        },
+        {
+          "value": "API key",
+          "url": "https://help.gladly.com/docs/generate-api-tokens-and-create-webhooks/",
+          "excerpt": "Generate API Tokens and Create Webhooks Documentation Index Fetch the complete documentation index at: https://help.gladly.com/llms.txt Use this file to discover all available pages before exploring further. Generate API Tokens and Create Webhooks Updated on Feb 13, 2025 Publishe",
+          "published_label": "1.8 years ago"
+        },
+        {
+          "value": "API token",
+          "url": "https://help.gladly.com/docs/generate-api-tokens-and-create-webhooks/",
+          "excerpt": "Generate API Tokens and Create Webhooks Documentation Index Fetch the complete documentation index at: https://help.gladly.com/llms.txt Use this file to discover all available pages before",
+          "published_label": "1.8 years ago"
+        },
+        {
+          "value": "Basic authentication",
+          "url": "https://help.gladly.com/docs/generate-api-tokens-and-create-webhooks/",
+          "excerpt": "Generate API Tokens and Create Webhooks Documentation Index Fetch the complete documentation index at: https://help.gladly.com/llms.txt Use this file to discover all available pages before exploring further. Generate API Tokens and Create Webhooks Updated on Feb 13, 2025 Publishe",
+          "published_label": "1.8 years ago"
+        },
+        {
+          "value": "API key",
+          "url": "https://help.gladly.com/docs/api-export-tool",
+          "excerpt": "sent with each webhook request. These are typically used to pass authentication tokens or API keys to the receiving endpoint (e.g., Authorization, X-Api-Key). Header values are not exported for security reasons — only the key names are shown. This field will be empty",
+          "published_label": "9 months ago"
+        },
+        {
+          "value": "API token",
+          "url": "https://help.gladly.com/docs/api-export-tool",
+          "excerpt": "Enter your Gladly email address which is the same email address you use to access Gladly. API Token – Log into Gladly Team and generate the API Token by going to Setting > API Tokens > Create Token. The token will remain visible for you to copy and paste in to the the",
+          "published_label": "9 months ago"
+        },
+        {
+          "value": "Basic authentication",
+          "url": "https://help.gladly.com/docs/api-export-tool",
+          "excerpt": "API Export Tool (Beta Feature) Documentation Index Fetch the complete documentation index at: https://help.gladly.com/llms.txt Use this file to discover all available pages before exploring further. API Export Tool (Beta Feature) Updated on May 14, 2026 Published on Feb 26, 2026 ",
+          "published_label": "9 months ago"
+        }
+      ],
+      "reason": "Provisional extraction; validate scope and completeness against cited pages."
+    },
+    "credential_gate": {
+      "value": "unknown",
+      "status": "provisional",
+      "sources": [],
+      "evidence": [],
+      "reason": "No sufficiently specific official evidence extracted."
+    },
+    "api_surface": {
+      "value": "REST; broad documented surface",
+      "status": "provisional",
+      "sources": [
+        "https://help.gladly.com/docs/api-export-tool",
+        "https://help.gladly.com/developer-tutorials/docs/technical-planning/"
+      ],
+      "evidence": [
+        {
+          "value": [
+            "REST"
+          ],
+          "breadth": "broad",
+          "url": "https://help.gladly.com/docs/api-export-tool",
+          "excerpt": "API Export Tool (Beta Feature) Documentation Index Fetch the complete documentation index at: https://help.gladly.com/llms.txt Use this file to discover all available pages before exploring further. API Export Tool (Beta Feature) Updated on May 14, 2026 Published on Feb 26, 2026 ",
+          "published_label": "9 months ago"
+        },
+        {
+          "value": [
+            "REST"
+          ],
+          "breadth": "moderate",
+          "url": "https://help.gladly.com/developer-tutorials/docs/technical-planning/",
+          "excerpt": "Technical Planning Documentation Index Fetch the complete documentation index at: https://help.gladly.com/llms.txt Use this file to discover all available pages before exploring further. Technical Planning Updated on Jan 13, 2026 Published on Jan 30, 2025 2 minute(s) read Focus L",
+          "published_label": "1.8 years ago"
+        }
+      ],
+      "reason": "Provisional extraction; validate scope and completeness against cited pages."
+    },
+    "official_mcp": {
+      "value": "client_only",
+      "status": "provisional",
+      "sources": [
+        "https://help.gladly.com/docs/set-up-mcp-connections",
+        "https://help.gladly.com/docs/mcp-connection-1"
+      ],
+      "evidence": [
+        {
+          "value": "client_only",
+          "url": "https://help.gladly.com/docs/set-up-mcp-connections",
+          "excerpt": "Set up MCP connections Documentation Index Fetch the complete documentation index at: https://help.gladly.com/llms.txt Use this file to discover all available pages before exploring further. Set up MCP connections Published on Nov 12, 2026 7 minute(s) read Focus Listen Print Copy page Copy as Markdown for LLMs View as Markdown View the page as plain text Open in ChatGPT Ask ChatGPT about",
+          "published_label": "last week",
+          "context_note": "Passage describes a client connection to external servers."
+        },
+        {
+          "value": "client_only",
+          "url": "https://help.gladly.com/docs/mcp-connection-1",
+          "excerpt": "MCP Connection Documentation Index Fetch the complete documentation index at: https://help.gladly.com/llms.txt Use this file to discover all available pages before exploring further. MCP Connection 1 Sub categories 2 Docs Prev Next What are MCP connections? Updated on  Nov 12, 2026 Published on Nov 7, 2026 An  MCP connection  links Gladly AI to an external system so it can look up inform",
+          "published_label": null,
+          "context_note": "Passage describes a client connection to external servers."
+        }
+      ],
+      "reason": "Provisional; check date, ownership and access scope."
+    },
+    "composio_toolkit": {
+      "value": "unknown",
+      "status": "provisional",
+      "sources": [],
+      "evidence": [],
+      "reason": "No sufficiently specific official evidence extracted."
+    },
+    "verdict": {
+      "value": "unknown",
+      "status": "provisional",
+      "sources": [],
+      "evidence": [],
+      "reason": "No sufficiently specific official evidence extracted."
+    }
+  },
+  "validation": [
+    "Automatic extraction is provisional until independently reviewed",
+    "Unknown is not evidence of absence",
+    "Composio evidence cannot establish vendor MCP",
+    "Client-only and negated MCP statements are not vendor-server proof",
+    "API breadth is a text-coverage heuristic, not an endpoint census"
+  ]
+}

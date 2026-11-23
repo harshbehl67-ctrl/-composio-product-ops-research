@@ -1,0 +1,135 @@
+{
+  "app": {
+    "number": 94,
+    "name": "Consensus",
+    "category": "AI, Research and Media-native",
+    "hint": "consensus.app (OAuth requested)"
+  },
+  "replayed_at": "2026-11-23T18:42:07.709370+00:00",
+  "source_passes": [
+    "data/pass2/094.json",
+    "data/pass4/094.json"
+  ],
+  "source_searches": [
+    "data/new_search/094.json",
+    "data/pass4_search/094.json"
+  ],
+  "publication_date_note": "Search publication labels are retained exactly; null means no label was available. Relative labels are not exact dates.",
+  "claims": {
+    "auth": {
+      "value": [
+        "API key",
+        "OAuth 2.0",
+        "Bearer token"
+      ],
+      "status": "provisional",
+      "sources": [
+        "https://help.consensus.app/en/articles/16516328-the-consensus-api",
+        "https://docs.consensus.app/consensus-mcp",
+        "https://www.consensus.app/home/api/"
+      ],
+      "evidence": [
+        {
+          "value": "API key",
+          "url": "https://help.consensus.app/en/articles/16516328-the-consensus-api",
+          "excerpt": "n, endpoints, parameters, and response details, read our API docs here . How to create an API key You can create and manage API keys from the API & MCP Dashboard. Click your profile icon (bottom-left corner) Select API & MCP Dashboard Open the ' Keys and Clients ' ta",
+          "published_label": "last month"
+        },
+        {
+          "value": "OAuth 2.0",
+          "url": "https://docs.consensus.app/consensus-mcp",
+          "excerpt": "research, and evidence synthesis. Server URL https://mcp.consensus.app/mcp Authentication OAuth 2.0 Type Dynamic Discovery 5 Save and use! Thats it! This custom tool can now be used and shared with other team members. Each team member will be able to connect to their o",
+          "published_label": null
+        },
+        {
+          "value": "API key",
+          "url": "https://docs.consensus.app/consensus-mcp",
+          "excerpt": "us account when they use the tool. A Consensus account is required. It is free to create. API key (Bearer token) Use an API key for clients without OAuth, headless agents, and server-side automations. Send it in the Authorization header on every request to https://mc",
+          "published_label": null
+        },
+        {
+          "value": "Bearer token",
+          "url": "https://docs.consensus.app/consensus-mcp",
+          "excerpt": "t when they use the tool. A Consensus account is required. It is free to create. API key (Bearer token) Use an API key for clients without OAuth, headless agents, and server-side automations. Send it in the Authorization header on every request to https://mcp.consensus.ap",
+          "published_label": null
+        },
+        {
+          "value": "API key",
+          "url": "https://www.consensus.app/home/api/",
+          "excerpt": "one API call away. Bring up-to-date, peer-reviewed citations into your workflows. Create API key Read the docs How Phylo powers drug discovery with Consensus â Peer-reviewed research, one API call away. Bring up-to-date, peer-reviewed citations into your workflows",
+          "published_label": null
+        }
+      ],
+      "reason": "Provisional extraction; validate scope and completeness against cited pages."
+    },
+    "credential_gate": {
+      "value": [
+        "paid_plan"
+      ],
+      "status": "provisional",
+      "sources": [
+        "https://help.consensus.app/en/articles/16516328-the-consensus-api",
+        "https://docs.consensus.app/consensus-mcp",
+        "https://www.consensus.app/home/api/"
+      ],
+      "evidence": [
+        {
+          "value": "paid_plan",
+          "url": "https://help.consensus.app/en/articles/16516328-the-consensus-api",
+          "excerpt": "off. Free users cannot enable additional usage. To access additional usage, upgrade to a paid plan . Common API errors API Error message Cause Fix 401 - Invalid authentication credentials The API key is incorrect, revoked, or isn't being sent using the required header",
+          "published_label": "last month"
+        },
+        {
+          "value": "paid_plan",
+          "url": "https://docs.consensus.app/consensus-mcp",
+          "excerpt": "The thread tools need a signed-in Consensus account or an API key. get_full_text needs a paid plan. Quick start: Search & Threads When to use search, when to start a Thread, and how a Thread runs. Troubleshooting OAuth login is only supported for streamable HTTP serve",
+          "published_label": null
+        },
+        {
+          "value": "paid_plan",
+          "url": "https://www.consensus.app/home/api/",
+          "excerpt": "n the API. The same index, filters and research agent behind Consensus. Included on every paid plan, and Deep includes 5x the usage of Pro. Methods Results Â§ Methods Â· p. 4 â¦an initial loading phase of 20 g/day for 5 days, followed by 5 g/dayâ¦ Â§ Results Â· p. 7",
+          "published_label": null
+        }
+      ],
+      "reason": "Provisional extraction; validate scope and completeness against cited pages."
+    },
+    "api_surface": {
+      "value": "unknown",
+      "status": "provisional",
+      "sources": [],
+      "evidence": [],
+      "reason": "No sufficiently specific official evidence extracted."
+    },
+    "official_mcp": {
+      "value": "unknown",
+      "status": "provisional",
+      "sources": [],
+      "evidence": [],
+      "reason": "No sufficiently specific official evidence extracted."
+    },
+    "composio_toolkit": {
+      "value": "listed",
+      "status": "provisional",
+      "sources": [
+        "https://docs.composio.dev/toolkits/consensus"
+      ],
+      "evidence": [],
+      "reason": "Catalog match only; not vendor MCP evidence."
+    },
+    "verdict": {
+      "value": "unknown",
+      "status": "provisional",
+      "sources": [],
+      "evidence": [],
+      "reason": "No sufficiently specific official evidence extracted."
+    }
+  },
+  "validation": [
+    "Automatic extraction is provisional until independently reviewed",
+    "Unknown is not evidence of absence",
+    "Composio evidence cannot establish vendor MCP",
+    "Client-only and negated MCP statements are not vendor-server proof",
+    "API breadth is a text-coverage heuristic, not an endpoint census"
+  ]
+}

@@ -1,0 +1,211 @@
+{
+  "app": {
+    "number": 7,
+    "name": "Zoho CRM",
+    "category": "CRM and Sales",
+    "hint": "zoho.com/crm"
+  },
+  "checked_at": "2026-11-23T18:14:53.780749+00:00",
+  "prior_source": "data/pass2/007.json",
+  "search_source": "data/pass4_search/007.json",
+  "new_candidates": [
+    {
+      "url": "https://www.zoho.com/crm/developer/docs/",
+      "title": "Developer Resources | Zoho CRM (https://www.zoho.com/crm/developer/docs/)",
+      "published_label": null
+    },
+    {
+      "url": "https://www.zoho.com/crm/developer/docs/api/graphql/getting-started.html",
+      "title": "Getting Started| Online Help-Zoho CRM (https://www.zoho.com/crm/developer/docs/api/graphql/getting-started.html)",
+      "published_label": null
+    },
+    {
+      "url": "https://www.zoho.com/crm/developer/docs/api/graphql/graphql-authorization.html",
+      "title": "GraphQL - Authorization | Online Help - Zoho CRM (https://www.zoho.com/crm/developer/docs/api/graphql/graphql-authorization.html)",
+      "published_label": null
+    },
+    {
+      "url": "https://www.zoho.com/crm/developer/docs/api/graphql/enable-graphql-api.html",
+      "title": "GraphQL Enable Action API | Online Help - Zoho CRM (https://www.zoho.com/crm/developer/docs/api/graphql/enable-graphql-api.html)",
+      "published_label": null
+    },
+    {
+      "url": "https://www.zoho.com/crm/developer/docs/api/v8/openapi-specification.html",
+      "title": "OpenAPI Specification (OAS) for Zoho CRM APIs (https://www.zoho.com/crm/developer/docs/api/v8/openapi-specification.html)",
+      "published_label": null
+    },
+    {
+      "url": "https://www.zoho.com/crm/developer/?src=functions",
+      "title": "Zoho CRM | Developer Tools and API (https://www.zoho.com/crm/developer/?src=functions)",
+      "published_label": null
+    },
+    {
+      "url": "https://www.zoho.com/crm/developer/docs/queries/query-types.html",
+      "title": "Queries - Types | Zoho CRM | Developer Tools (https://www.zoho.com/crm/developer/docs/queries/query-types.html)",
+      "published_label": null
+    },
+    {
+      "url": "https://www.zoho.com/crm/developer/docs/api/v8/api-references.html",
+      "title": "APIs and References | Zoho CRM V8 APIs (https://www.zoho.com/crm/developer/docs/api/v8/api-references.html)",
+      "published_label": null
+    },
+    {
+      "url": "https://www.zoho.com/crm/developer/api.html?source_from=crm-header",
+      "title": "Zoho CRM | API and SDK Library (https://www.zoho.com/crm/developer/api.html?source_from=crm-header)",
+      "published_label": null
+    },
+    {
+      "url": "https://www.zoho.com/crm/developer/docs/api/graphql/graphql-overview.html?source_from=developer-docs",
+      "title": "GraphQL - An overview (https://www.zoho.com/crm/developer/docs/api/graphql/graphql-overview.html?source_from=developer-docs)",
+      "published_label": null
+    },
+    {
+      "url": "https://www.zoho.com/crm/developer/docs/sdk/client-side/javascript-sdk.html",
+      "title": "Client SDK - Javascript | Online Help - Zoho CRM (https://www.zoho.com/crm/developer/docs/sdk/client-side/javascript-sdk.html)",
+      "published_label": null
+    },
+    {
+      "url": "https://www.zoho.com/developer/rest-api.html?version=published",
+      "title": "Zoho REST APIs | Zoho Developer (https://www.zoho.com/developer/rest-api.html?version=published)",
+      "published_label": null
+    },
+    {
+      "url": "https://help.zoho.com/portal/en/kb/crm/faqs/developer-hub/articles/faqs-on-developer-hub",
+      "title": "FAQs on Developer Space (https://help.zoho.com/portal/en/kb/crm/faqs/developer-hub/articles/faqs-on-developer-hub)",
+      "published_label": null
+    },
+    {
+      "url": "https://www.zoho.com/developer/rest-api.html?src=developer-homepage",
+      "title": "Zoho REST APIs | Zoho Developer (https://www.zoho.com/developer/rest-api.html?src=developer-homepage)",
+      "published_label": null
+    },
+    {
+      "url": "https://www.zoho.com/crm/developer/docs/api/v8/purchase-from-dashboard.html",
+      "title": "Increase API Credits from the Dashboard | Zoho CRM API | V8 (https://www.zoho.com/crm/developer/docs/api/v8/purchase-from-dashboard.html)",
+      "published_label": null
+    }
+  ],
+  "selected": [
+    {
+      "url": "https://www.zoho.com/crm/developer/docs/api/graphql/graphql-authorization.html",
+      "title": "GraphQL - Authorization | Online Help - Zoho CRM (https://www.zoho.com/crm/developer/docs/api/graphql/graphql-authorization.html)",
+      "published_label": null
+    },
+    {
+      "url": "https://www.zoho.com/crm/developer/docs/api/graphql/getting-started.html",
+      "title": "Getting Started| Online Help-Zoho CRM (https://www.zoho.com/crm/developer/docs/api/graphql/getting-started.html)",
+      "published_label": null
+    }
+  ],
+  "new_pages": [
+    {
+      "url": "https://www.zoho.com/crm/developer/docs/api/graphql/graphql-authorization.html",
+      "requested_url": "https://www.zoho.com/crm/developer/docs/api/graphql/graphql-authorization.html",
+      "status": 200,
+      "title": "GraphQL - Authorization | Online Help - Zoho CRM (https://www.zoho.com/crm/developer/docs/api/graphql/graphql-authorization.html)",
+      "text": "GraphQL - Authorization | Online Help - Zoho CRM GraphQL - Authorization Zoho CRM GraphQL APIs uses OAuth 2.0 for authorization, same as that of Zoho CRM REST APIs . Refer to OAuth Overview for details. In a single GraphQL API invocation, multiple resources can be queried. However, you need to have proper OAuth scopes to access the corresponding GraphQL resources. Each resource is associated with a particular GraphQL type and should be accessed with token having proper OAuth scope . Required Scopes : ZohoCRM.GraphQL.READ (and) Scope of the corresponding resources Scopes of different resources Resource and its type Required Scope {module}__Connection type ZohoCRM.modules.{module}.READ {module}__data type ZohoCRM.modules.{module}.READ Modules under the _Meta type ZohoCRM.settings.modules.READ ChildRelations under the _Meta type ZohoCRM.settings.child_relationships.READ Layouts under the _Meta type ZohoCRM.settings.layouts.READ RelatedLists under the _Meta type ZohoCRM.settings.related_lists.READ Profiles ZohoCRM.settings.profiles.READ Fields under the _Meta type ZohoCRM.settings.fields.READ CustomViews under the _Meta type ZohoCRM.settings.custom_views.READ Users ZohoCRM.users.READ Roles ZohoCRM.settings.roles.READ Widgets under the _Meta type ZohoCRM.settings.widgets.READ",
+      "published_label": null
+    },
+    {
+      "url": "https://www.zoho.com/crm/developer/docs/api/graphql/getting-started.html",
+      "requested_url": "https://www.zoho.com/crm/developer/docs/api/graphql/getting-started.html",
+      "status": 200,
+      "title": "Getting Started| Online Help-Zoho CRM (https://www.zoho.com/crm/developer/docs/api/graphql/getting-started.html)",
+      "text": "Getting Started| Online Help-Zoho CRM Getting Started You can send your Zoho CRM GraphQL API query using the below end point. GraphQL URL {api-domain}/crm/graphql Use the domain specific API url for {api-domain}. Method POST Required Scopes ZohoCRM.graphql.READ (and) Scope of the corresponding resource Prerequisites Your Zoho CRM's edition must be one of these: Enterprise Zoho One Enterprise CRM Plus Ultimate . GraphQL APIs must be enabled for the your profile through the Enable GraphQL API . Familiarize yourself with the GraphQL schema using the introspection query. To try out GraphQL in Postman application, you can use Postman's GraphQL client . To send GraphQL queries using the Postman GraphQL Client, follow these steps: Select New > GraphQL . Enter the CRM GraphQL endpoint URL in the URL field. In the Authorization tab, provide necessary authorization. In the Query tab, click on the use GraphQL Introspection . You can now use it to view the resources available to you and construct the query. Alternatively, you can also type your query directly in the Query editor. Execute the request by clicking the Query button. You can use this sample query Copied query {\n    Meta {\n        Modules(filter: { api_name: \"Leads\" }) {\n            _data {\n                plural_label\n                presence_sub_menu\n                id\n                properties\n                visibility\n                on_demand_properties\n                web_link\n                api_name\n                module_name\n                description\n                modified_time\n                show_as_tab\n                sequence_number\n                singular_label\n                api_supported\n                generated_type\n                feeds_required\n                business_card_field_limit\n                status\n            }\n        }\n    }\n} Response Copied {\n    \"data\": {\n        \"Meta\": {\n            \"Modules\": {\n                \"_data\": [\n                    {\n                        \"plural_label\": \"Leads\",\n                        \"presence_sub_menu\": true,\n                        \"id\": \"5843104000000002175\",\n                        \"properties\": [\n                            \"$approval_state\",\n                            \"$wizard_connection_path\",\n                            \"$converted_detail\",\n                            \"$cpq_executions\",\n                            \"$currency_symbol\",\n                            \"$zia_owner_assignment\",\n                            \"$review\",\n                            \"$review_process\",\n                            \"$approval\",\n                            \"$in_merge\",\n                            \"$process_flow\",\n                            \"$orchestration\",\n                            \"$pathfinder\",\n                            \"$zia_visions\",\n                            \"$editable\",\n                            \"$field_states\",\n                            \"$locked_for_me\",\n                            \"$has_more\",\n                            \"$sharing_permission\"\n                        ],\n                        \"visibility\": 1,\n                        \"on_demand_properties\": [\n                            \"$blocked_reason\",\n                            \"$client_portal_invited\"\n                        ],\n                        \"web_link\": null,\n                        \"api_name\": \"Leads\",\n                        \"module_name\": \"Leads\",\n                        \"description\": null,\n                        \"modified_time\": \"2024-01-30T20:10:39+05:30\",\n                        \"show_as_tab\": true,\n                        \"sequence_number\": 2,\n                        \"singular_label\": \"Lead\",\n                        \"api_supported\": true,\n                        \"generated_type\": \"default\",\n                        \"feeds_required\": false,\n                        \"business_card_field_limit\": 5,\n                        \"status\": \"visible\"\n                    }\n                ]\n            }\n        }\n    }\n} Each introspection query consumes one credit. If you cannot find GraphQL client in your Postman try updating Postman to the latest version. Alternatively, you can also make GraphQL requests using Postman's regular request interface. To learn more, see Make an HTTP call with GraphQL .",
+      "published_label": null
+    }
+  ],
+  "claims": {
+    "auth": {
+      "value": [
+        "OAuth 2.0",
+        "Bearer token"
+      ],
+      "sources": [
+        "https://www.zoho.com/crm/developer/docs/api/v8/access-refresh.html",
+        "https://www.zoho.com/crm/developer/docs/api/graphql/graphql-authorization.html"
+      ],
+      "evidence": [
+        {
+          "value": "OAuth 2.0",
+          "url": "https://www.zoho.com/crm/developer/docs/api/v8/access-refresh.html",
+          "excerpt": "Access & Refresh Tokens | Zoho CRM API | V8 Generate Access Token and Refresh Token OAuth2.0 requests are usually authenticated with an access token , which is passed as bearer token. To use this access token, you need to construct a normal HTTP request and include it in ",
+          "published_label": null
+        },
+        {
+          "value": "Bearer token",
+          "url": "https://www.zoho.com/crm/developer/docs/api/v8/access-refresh.html",
+          "excerpt": "Refresh Token OAuth2.0 requests are usually authenticated with an access token , which is passed as bearer token. To use this access token, you need to construct a normal HTTP request and include it in an Authorization header along with the value of Bearer. Note You must use your domain-spec",
+          "published_label": null
+        },
+        {
+          "value": "OAuth 2.0",
+          "url": "https://www.zoho.com/crm/developer/docs/api/graphql/graphql-authorization.html",
+          "excerpt": "GraphQL - Authorization | Online Help - Zoho CRM GraphQL - Authorization Zoho CRM GraphQL APIs uses OAuth 2.0 for authorization, same as that of Zoho CRM REST APIs . Refer to OAuth Overview for details. In a single GraphQL API invocation, multiple resources can be queried. However, you ne",
+          "published_label": null
+        }
+      ],
+      "reason": "Provisional extraction: validate scope and completeness against the cited page."
+    },
+    "credential_gate": {
+      "value": "unknown",
+      "sources": [],
+      "evidence": [],
+      "reason": "No sufficiently specific positive evidence extracted; review targeted search results."
+    },
+    "api_surface": {
+      "value": [
+        "REST",
+        "GraphQL"
+      ],
+      "sources": [
+        "https://www.zoho.com/crm/developer/docs/api/graphql/graphql-authorization.html",
+        "https://www.zoho.com/crm/developer/docs/api/graphql/getting-started.html"
+      ],
+      "evidence": [
+        {
+          "value": "REST",
+          "url": "https://www.zoho.com/crm/developer/docs/api/graphql/graphql-authorization.html",
+          "excerpt": "QL - Authorization Zoho CRM GraphQL APIs uses OAuth 2.0 for authorization, same as that of Zoho CRM REST APIs . Refer to OAuth Overview for details. In a single GraphQL API invocation, multiple resources can be queried. However, you need to have proper OAuth scopes to access the correspon",
+          "published_label": null
+        },
+        {
+          "value": "GraphQL",
+          "url": "https://www.zoho.com/crm/developer/docs/api/graphql/graphql-authorization.html",
+          "excerpt": "GraphQL - Authorization | Online Help - Zoho CRM GraphQL - Authorization Zoho CRM GraphQL APIs uses OAuth 2.0 for authorization, same as that of Zoho CRM REST APIs . Refer to OAuth Overview for details. In a single GraphQL API invocation, multiple resources can be queried. ",
+          "published_label": null
+        },
+        {
+          "value": "GraphQL",
+          "url": "https://www.zoho.com/crm/developer/docs/api/graphql/getting-started.html",
+          "excerpt": "Getting Started| Online Help-Zoho CRM Getting Started You can send your Zoho CRM GraphQL API query using the below end point. GraphQL URL {api-domain}/crm/graphql Use the domain specific API url for {api-domain}. Method POST Required Scopes ZohoCRM.graphql.READ (and) Scop",
+          "published_label": null
+        }
+      ],
+      "reason": "Provisional extraction: validate scope and completeness against the cited page."
+    },
+    "official_mcp": {
+      "value": "unknown",
+      "sources": [],
+      "evidence": [],
+      "reason": "No sufficiently specific positive evidence extracted; review targeted search results."
+    },
+    "composio_toolkit": {
+      "value": "unknown",
+      "sources": [],
+      "evidence": [],
+      "reason": "No exact or reviewed alias match; absence is not established."
+    },
+    "verdict": {
+      "value": "unknown",
+      "sources": [],
+      "evidence": [],
+      "reason": "A supported access path, authentication method and API surface were not all extracted."
+    }
+  },
+  "validation": [
+    "All claims are provisional",
+    "No vendor MCP inference from Composio catalog",
+    "Negated MCP or client-only source is not counted as vendor-server proof"
+  ]
+}

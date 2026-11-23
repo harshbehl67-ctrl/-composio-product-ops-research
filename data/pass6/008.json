@@ -1,0 +1,131 @@
+{
+  "app": {
+    "number": 8,
+    "name": "Close",
+    "category": "CRM and Sales",
+    "hint": "close.com"
+  },
+  "replayed_at": "2026-11-23T18:17:21.222491+00:00",
+  "source_passes": [
+    "data/pass2/008.json",
+    "data/pass4/008.json"
+  ],
+  "source_search": "data/new_search/008.json",
+  "publication_date_note": "Published labels are retained exactly as supplied by search; missing labels are null. Relative labels must not be treated as exact publication dates.",
+  "claims": {
+    "auth": {
+      "value": [
+        "API key",
+        "Basic authentication"
+      ],
+      "sources": [
+        "https://developer.close.com/api/overview/api-key-authentication",
+        "https://close.com/changelog/access-levels-and-admin-controls-for-api-keys",
+        "https://help.close.com/integrations/api-keys-oauth"
+      ],
+      "evidence": [
+        {
+          "value": "API key",
+          "url": "https://developer.close.com/api/overview/api-key-authentication",
+          "excerpt": "evel index, or .md for the markdown version of any page. Skip to navigation On this page Getting an API key Perform API calls with API key cURL example Scroll to top API keys are best used for scripts and simple integrations that are internal to\nyour organization. Alternatively, see Aut",
+          "published_label": null
+        },
+        {
+          "value": "Basic authentication",
+          "url": "https://developer.close.com/api/overview/api-key-authentication",
+          "excerpt": "re information. Perform API calls with API key API keys use HTTP Basic client side authentication .\nBasic authentication is a simple authentication scheme built into the HTTP\nprotocol. To use it, send your HTTP requests with an Authorization header that\ncontains the word Basic followed by a space an",
+          "published_label": null
+        },
+        {
+          "value": "API key",
+          "url": "https://close.com/changelog/access-levels-and-admin-controls-for-api-keys",
+          "excerpt": "6 Improvement Access levels and Admin controls for API keys You can now choose how much access each API key gets, and whether or not a Custom Role can create them and at what access level. Pick Read only for tools that just need to look at your Close data, or Read, write, and delete for",
+          "published_label": "last week"
+        },
+        {
+          "value": "API key",
+          "url": "https://help.close.com/integrations/api-keys-oauth",
+          "excerpt": ", or .md for the markdown version of any page. Skip to navigation On this page API keys Creating an API key Access Levels Editing an API key Disabling and enabling an API key Deleting an API key Reviewing existing API keys API key permissions Security User availability (rep visibility) ",
+          "published_label": null
+        }
+      ],
+      "reason": "Provisional extraction: validate scope and completeness against the cited page."
+    },
+    "credential_gate": {
+      "value": "unknown",
+      "sources": [],
+      "evidence": [],
+      "reason": "No sufficiently specific positive evidence extracted; review targeted search results."
+    },
+    "api_surface": {
+      "value": [
+        "REST"
+      ],
+      "sources": [
+        "https://developer.close.com/integrations"
+      ],
+      "evidence": [
+        {
+          "value": "REST",
+          "url": "https://developer.close.com/integrations",
+          "excerpt": " method Internal integration Multi-customer integration Dev/test organization Scroll to top Close’s REST API supports everything from a simple internal script to a full product integration used by thousands of Close customers. If building AI Agent integrations, you may prefer to connect ",
+          "published_label": null
+        }
+      ],
+      "reason": "Provisional extraction: validate scope and completeness against the cited page."
+    },
+    "official_mcp": {
+      "value": "yes (provisional)",
+      "sources": [
+        "https://developer.close.com/mcp/",
+        "https://help.close.com/integrations/close-mcp-server",
+        "https://developer.close.com/mcp"
+      ],
+      "evidence": [
+        {
+          "value": "yes (provisional)",
+          "url": "https://developer.close.com/mcp/",
+          "excerpt": "Close MCP Server | Close | Developer API Documentation For AI agents: a documentation index is available at the root level at /llms.txt. Append /llms.txt to any URL for a page-",
+          "published_label": null,
+          "context_warning": "Review vendor ownership, dates, and scope."
+        },
+        {
+          "value": "yes (provisional)",
+          "url": "https://help.close.com/integrations/close-mcp-server",
+          "excerpt": "Close MCP Server | Close Help Center For AI agents: a documentation index is available at the root level at /llms.txt. Append /llms.txt to any URL for a page-level index, or .m",
+          "published_label": null,
+          "context_warning": "Review vendor ownership, dates, and scope."
+        },
+        {
+          "value": "yes (provisional)",
+          "url": "https://developer.close.com/mcp",
+          "excerpt": "Close MCP Server | Close | Developer API Documentation For AI agents: a documentation index is available at the root level at /llms.txt. Append /llms.txt to any URL for a page-",
+          "published_label": null,
+          "context_warning": "Review vendor ownership, dates, and scope."
+        }
+      ],
+      "reason": "Provisional; check source date, scope, and vendor ownership."
+    },
+    "composio_toolkit": {
+      "value": "listed",
+      "sources": [
+        "https://docs.composio.dev/toolkits/close"
+      ],
+      "evidence": [],
+      "reason": "Catalog match; scope needs review."
+    },
+    "verdict": {
+      "value": "unknown",
+      "sources": [],
+      "evidence": [],
+      "reason": "A supported access path, authentication method and API surface were not all extracted."
+    }
+  },
+  "validation": [
+    "Automatic extraction is provisional and not a verified final claim",
+    "Unknown is not evidence of absence",
+    "No Composio-to-vendor-MCP inference",
+    "Basic authentication may be endpoint-specific",
+    "Client-only and negated statements are not positive MCP evidence"
+  ]
+}

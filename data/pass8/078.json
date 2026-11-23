@@ -1,0 +1,96 @@
+{
+  "app": {
+    "number": 78,
+    "name": "Coda",
+    "category": "Productivity and Project Management",
+    "hint": "coda.io/developers"
+  },
+  "replayed_at": "2026-11-23T18:41:10.922355+00:00",
+  "source_passes": [
+    "data/pass2/078.json",
+    "data/pass4/078.json"
+  ],
+  "source_searches": [
+    "data/new_search/078.json",
+    "data/pass4_search/078.json"
+  ],
+  "publication_date_note": "Search publication labels are retained exactly; null means no label was available. Relative labels are not exact dates.",
+  "claims": {
+    "auth": {
+      "value": [
+        "OAuth 2.0",
+        "API key",
+        "API token"
+      ],
+      "status": "provisional",
+      "sources": [
+        "https://help.coda.io/hc/en-us/articles/44722661982989-Connect-to-the-Coda-MCP"
+      ],
+      "evidence": [
+        {
+          "value": "OAuth 2.0",
+          "url": "https://help.coda.io/hc/en-us/articles/44722661982989-Connect-to-the-Coda-MCP",
+          "excerpt": "Connect to the Coda MCP – Coda Skip to main content The Coda MCP (Model Context Protocol) is a connection layer that enables AI clients - like Cursor, Claude, etc. - to read and write to your Coda docs using plain-language prompts. Instead of clicking through the Coda UI, you des",
+          "published_label": null
+        },
+        {
+          "value": "API key",
+          "url": "https://help.coda.io/hc/en-us/articles/44722661982989-Connect-to-the-Coda-MCP",
+          "excerpt": "read and write to docs\" Server URL : https://coda.io/apis/mcp Authorization : Select the API Key option. Then for the Type choose Header, and for the Header name enter Authorization Once all the above info has been entered, hit Create . You'll then see the newly add",
+          "published_label": null
+        },
+        {
+          "value": "API token",
+          "url": "https://help.coda.io/hc/en-us/articles/44722661982989-Connect-to-the-Coda-MCP",
+          "excerpt": "ick here (or scroll to the API settings section of your account page, then click Generate API token ). Give your token a memorable name, ensure that the restriction type is MCP , and choose the type of access. Then click the Generate API token button to create. Once cr",
+          "published_label": null
+        }
+      ],
+      "reason": "Provisional extraction; validate scope and completeness against cited pages."
+    },
+    "credential_gate": {
+      "value": "unknown",
+      "status": "provisional",
+      "sources": [],
+      "evidence": [],
+      "reason": "No sufficiently specific official evidence extracted."
+    },
+    "api_surface": {
+      "value": "unknown",
+      "status": "provisional",
+      "sources": [],
+      "evidence": [],
+      "reason": "No sufficiently specific official evidence extracted."
+    },
+    "official_mcp": {
+      "value": "unknown",
+      "status": "provisional",
+      "sources": [],
+      "evidence": [],
+      "reason": "No sufficiently specific official evidence extracted."
+    },
+    "composio_toolkit": {
+      "value": "listed",
+      "status": "provisional",
+      "sources": [
+        "https://docs.composio.dev/toolkits/coda"
+      ],
+      "evidence": [],
+      "reason": "Catalog match only; not vendor MCP evidence."
+    },
+    "verdict": {
+      "value": "unknown",
+      "status": "provisional",
+      "sources": [],
+      "evidence": [],
+      "reason": "No sufficiently specific official evidence extracted."
+    }
+  },
+  "validation": [
+    "Automatic extraction is provisional until independently reviewed",
+    "Unknown is not evidence of absence",
+    "Composio evidence cannot establish vendor MCP",
+    "Client-only and negated MCP statements are not vendor-server proof",
+    "API breadth is a text-coverage heuristic, not an endpoint census"
+  ]
+}

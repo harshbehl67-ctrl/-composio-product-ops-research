@@ -1,0 +1,198 @@
+{
+  "app": {
+    "number": 61,
+    "name": "GitHub",
+    "category": "Developer, Infra and Data platforms",
+    "hint": "docs.github.com/rest"
+  },
+  "replayed_at": "2026-11-23T18:41:07.893341+00:00",
+  "source_passes": [
+    "data/pass2/061.json",
+    "data/pass4/061.json"
+  ],
+  "source_searches": [
+    "data/new_search/061.json",
+    "data/pass4_search/061.json"
+  ],
+  "publication_date_note": "Search publication labels are retained exactly; null means no label was available. Relative labels are not exact dates.",
+  "claims": {
+    "auth": {
+      "value": [
+        "Basic authentication"
+      ],
+      "status": "provisional",
+      "sources": [
+        "https://docs.github.com/en/rest/authentication/authenticating-to-the-rest-api?apiVersion=2022-11-28",
+        "https://docs.github.com/en/rest/authentication/authenticating-to-the-rest-api",
+        "https://docs.github.com/en/rest/authentication/authenticating-to-the-rest-api?apiVersion=2026-03-10"
+      ],
+      "evidence": [
+        {
+          "value": "Basic authentication",
+          "url": "https://docs.github.com/en/rest/authentication/authenticating-to-the-rest-api?apiVersion=2022-11-28",
+          "excerpt": "e app has. Access tokens created by apps are automatically authorized for SAML SSO. Using basic authentication Some REST API endpoints for GitHub Apps and OAuth apps require you to use basic authentication to access the endpoint. You will use the app's client ID as the username a",
+          "published_label": null
+        },
+        {
+          "value": "Basic authentication",
+          "url": "https://docs.github.com/en/rest/authentication/authenticating-to-the-rest-api",
+          "excerpt": "e app has. Access tokens created by apps are automatically authorized for SAML SSO. Using basic authentication Some REST API endpoints for GitHub Apps and OAuth apps require you to use basic authentication to access the endpoint. You will use the app's client ID as the username a",
+          "published_label": null
+        },
+        {
+          "value": "Basic authentication",
+          "url": "https://docs.github.com/en/rest/authentication/authenticating-to-the-rest-api?apiVersion=2026-03-10",
+          "excerpt": "e app has. Access tokens created by apps are automatically authorized for SAML SSO. Using basic authentication Some REST API endpoints for GitHub Apps and OAuth apps require you to use basic authentication to access the endpoint. You will use the app's client ID as the username a",
+          "published_label": null
+        }
+      ],
+      "reason": "Provisional extraction; validate scope and completeness against cited pages."
+    },
+    "credential_gate": {
+      "value": "unknown",
+      "status": "provisional",
+      "sources": [],
+      "evidence": [],
+      "reason": "No sufficiently specific official evidence extracted."
+    },
+    "api_surface": {
+      "value": "REST, GraphQL; broad documented surface",
+      "status": "provisional",
+      "sources": [
+        "https://docs.github.com/en/rest/authentication/authenticating-to-the-rest-api?apiVersion=2022-11-28",
+        "https://docs.github.com/en/rest/authentication/authenticating-to-the-rest-api",
+        "https://github.com/github/github-mcp-server",
+        "https://docs.github.com/en/rest/authentication/keeping-your-api-credentials-secure?utm_campaign=secure-coding-agent-access-customer-tickets&utm_medium=content&utm_source=blog",
+        "https://docs.github.com/en/rest/using-the-rest-api/getting-started-with-the-rest-api",
+        "https://docs.github.com/en/rest/authentication/authenticating-to-the-rest-api?apiVersion=2026-03-10",
+        "https://docs.github.com/en/rest/about-the-rest-api/comparing-githubs-rest-api-and-graphql-api?apiVersion=2026-03-10",
+        "https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/managing-your-personal-access-tokens"
+      ],
+      "evidence": [
+        {
+          "value": [
+            "REST"
+          ],
+          "breadth": "narrow",
+          "url": "https://docs.github.com/en/rest/authentication/authenticating-to-the-rest-api?apiVersion=2022-11-28",
+          "excerpt": "Authenticating to the REST API - GitHub Docs Skip to main content Skip to content Collapse sidebar Expand sidebar In this article Authenticating to the REST API You can authenticate to the REST API to access more endpoints and have a higher rate limit. Copy markdown In this artic",
+          "published_label": null
+        },
+        {
+          "value": [
+            "REST"
+          ],
+          "breadth": "narrow",
+          "url": "https://docs.github.com/en/rest/authentication/authenticating-to-the-rest-api",
+          "excerpt": "Authenticating to the REST API - GitHub Docs Skip to main content Skip to content Collapse sidebar Expand sidebar In this article Authenticating to the REST API You can authenticate to the REST API to access more endpoints and have a higher rate limit. Copy markdown In this artic",
+          "published_label": null
+        },
+        {
+          "value": [
+            "REST"
+          ],
+          "breadth": "broad",
+          "url": "https://github.com/github/github-mcp-server",
+          "excerpt": "GitHub - github/github-mcp-server: GitHub's official MCP Server · GitHub Skip to content You signed in with another tab or window. Reload to refresh your session. You signed out in another tab or window. Reload to refresh your session. You switched accounts on another tab or wind",
+          "published_label": null
+        },
+        {
+          "value": [
+            "REST"
+          ],
+          "breadth": "moderate",
+          "url": "https://docs.github.com/en/rest/authentication/keeping-your-api-credentials-secure?utm_campaign=secure-coding-agent-access-customer-tickets&utm_medium=content&utm_source=blog",
+          "excerpt": "Keeping your API credentials secure - GitHub Docs Skip to main content Skip to content Collapse sidebar Expand sidebar In this article Keeping your API credentials secure Follow these best practices to keep your API credentials and tokens secure. Copy markdown In this article Cho",
+          "published_label": null
+        },
+        {
+          "value": [
+            "REST",
+            "GraphQL"
+          ],
+          "breadth": "moderate",
+          "url": "https://docs.github.com/en/rest/using-the-rest-api/getting-started-with-the-rest-api",
+          "excerpt": "Getting started with the REST API - GitHub Docs Skip to main content Skip to content Collapse sidebar Expand sidebar In this article Getting started with the REST API Learn how to use the GitHub REST API. Copy markdown In this article Introduction This article describes how to us",
+          "published_label": null
+        },
+        {
+          "value": [
+            "REST"
+          ],
+          "breadth": "narrow",
+          "url": "https://docs.github.com/en/rest/authentication/authenticating-to-the-rest-api?apiVersion=2026-03-10",
+          "excerpt": "Authenticating to the REST API - GitHub Docs Skip to main content Skip to content Collapse sidebar Expand sidebar In this article Authenticating to the REST API You can authenticate to the REST API to access more endpoints and have a higher rate limit. Copy markdown In this artic",
+          "published_label": null
+        },
+        {
+          "value": [
+            "REST",
+            "GraphQL"
+          ],
+          "breadth": "narrow",
+          "url": "https://docs.github.com/en/rest/about-the-rest-api/comparing-githubs-rest-api-and-graphql-api?apiVersion=2026-03-10",
+          "excerpt": "Comparing GitHub's REST API and GraphQL API - GitHub Docs Skip to main content Skip to content Collapse sidebar Expand sidebar In this article Comparing GitHub's REST API and GraphQL API Learn about GitHub's APIs to extend and customize your GitHub experience. Copy markdown In th",
+          "published_label": null
+        },
+        {
+          "value": [
+            "REST"
+          ],
+          "breadth": "broad",
+          "url": "https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/managing-your-personal-access-tokens",
+          "excerpt": "Managing your personal access tokens - GitHub Docs Skip to main content Skip to content Collapse sidebar Expand sidebar In this article Managing your personal access tokens You can use a personal access token in place of a password when authenticating to GitHub in the command lin",
+          "published_label": null
+        }
+      ],
+      "reason": "Provisional extraction; validate scope and completeness against cited pages."
+    },
+    "official_mcp": {
+      "value": "vendor_server",
+      "status": "provisional",
+      "sources": [
+        "https://github.com/github/github-mcp-server",
+        "https://docs.github.com/en/copilot/how-tos/copilot-in-your-ide/customize-copilot/extend-copilot-with-tools-and-context/set-up-the-github-mcp-server"
+      ],
+      "evidence": [
+        {
+          "value": "vendor_server",
+          "url": "https://github.com/github/github-mcp-server",
+          "excerpt": "til then,\nconsumers can use a pseudo-version from a commit containing this change. Remote GitHub MCP Server The remote GitHub MCP Server is hosted by GitHub and provides the easiest method for getting up and running. If your MCP host does not support remote MCP servers, don't worry! You can use the local version of the GitHub MCP Server",
+          "published_label": null,
+          "context_note": "Vendor-owned server statement; review date and access scope."
+        },
+        {
+          "value": "vendor_server",
+          "url": "https://docs.github.com/en/copilot/how-tos/copilot-in-your-ide/customize-copilot/extend-copilot-with-tools-and-context/set-up-the-github-mcp-server",
+          "excerpt": "nfigure the GitHub Model Context Protocol (MCP) server. Copy markdown In this article The GitHub MCP server is available to all GitHub users regardless of plan type. However, specific tools within the MCP server inherit the same access requirements as their corresponding GitHub features. I",
+          "published_label": null,
+          "context_note": "Vendor-owned server statement; review date and access scope."
+        }
+      ],
+      "reason": "Provisional; check date, ownership and access scope."
+    },
+    "composio_toolkit": {
+      "value": "listed",
+      "status": "provisional",
+      "sources": [
+        "https://docs.composio.dev/toolkits/github"
+      ],
+      "evidence": [],
+      "reason": "Catalog match only; not vendor MCP evidence."
+    },
+    "verdict": {
+      "value": "unknown",
+      "status": "provisional",
+      "sources": [],
+      "evidence": [],
+      "reason": "No sufficiently specific official evidence extracted."
+    }
+  },
+  "validation": [
+    "Automatic extraction is provisional until independently reviewed",
+    "Unknown is not evidence of absence",
+    "Composio evidence cannot establish vendor MCP",
+    "Client-only and negated MCP statements are not vendor-server proof",
+    "API breadth is a text-coverage heuristic, not an endpoint census"
+  ]
+}

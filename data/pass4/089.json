@@ -1,0 +1,123 @@
+{
+  "app": {
+    "number": 89,
+    "name": "Ramp",
+    "category": "Finance and Fintech",
+    "hint": "docs.ramp.com"
+  },
+  "checked_at": "2026-11-23T18:15:35.786395+00:00",
+  "prior_source": "data/pass2/089.json",
+  "search_source": "data/pass4_search/089.json",
+  "new_candidates": [
+    {
+      "url": "https://docs.ramp.com/developer-api",
+      "title": "Welcome — Ramp API docs (https://docs.ramp.com/developer-api)",
+      "published_label": null
+    },
+    {
+      "url": "https://docs.ramp.com/developer-api/v1/authorization",
+      "title": "Authorization — Ramp API docs (https://docs.ramp.com/developer-api/v1/authorization)",
+      "published_label": null
+    },
+    {
+      "url": "https://docs.ramp.com/developer-api/v1/scopes",
+      "title": "Authorization — Ramp API docs (https://docs.ramp.com/developer-api/v1/scopes)",
+      "published_label": null
+    },
+    {
+      "url": "https://support.ramp.com/ai-token-spend-management/",
+      "title": "Ramp Help Center (https://support.ramp.com/ai-token-spend-management/)",
+      "published_label": null
+    },
+    {
+      "url": "https://agents.ramp.com/docs/guides/connecting",
+      "title": "Connecting · Docs · agents.ramp.com (https://agents.ramp.com/docs/guides/connecting)",
+      "published_label": null
+    },
+    {
+      "url": "https://ramp.com/developer-tools/",
+      "title": "Developer Platform (https://ramp.com/developer-tools/)",
+      "published_label": null
+    },
+    {
+      "url": "https://docs.ramp.com/developer-api/v1/api/transactions",
+      "title": "Ramp API docs (https://docs.ramp.com/developer-api/v1/api/transactions)",
+      "published_label": null
+    }
+  ],
+  "selected": [
+    {
+      "url": "https://docs.ramp.com/developer-api/v1/authorization",
+      "title": "Authorization — Ramp API docs (https://docs.ramp.com/developer-api/v1/authorization)",
+      "published_label": null
+    },
+    {
+      "url": "https://docs.ramp.com/developer-api",
+      "title": "Welcome — Ramp API docs (https://docs.ramp.com/developer-api)",
+      "published_label": null
+    }
+  ],
+  "new_pages": [
+    {
+      "url": "https://docs.ramp.com/developer-api/v1/authorization",
+      "requested_url": "https://docs.ramp.com/developer-api/v1/authorization",
+      "status": 200,
+      "title": "Authorization — Ramp API docs (https://docs.ramp.com/developer-api/v1/authorization)",
+      "text": "Ramp API Documentation You need to enable JavaScript to run this app. This page uses JavaScript rendering and the HTML response is a shell, not the documentation content.\n      Do not fetch this page for content when you already have a docs URL.\n      If the URL is under /developer-api/v1/api/, fetch /llms-api.txt instead.\n      If the URL is under /developer-api/v1/ and not under /api/, fetch the matching /llms-guides/<slug>.txt file instead.\n      Example: /developer-api/v1/rate-limiting -> /llms-guides/rate-limiting.txt\n      For machine-readable docs, fetch:\n      /llms.txt (LLM index),\n      /llms-guides.txt (guides index),\n      /llms-guides/<slug>.txt (specific guide),\n      /llms-api.txt (API reference),\n      /llms-full.txt (combined docs), or\n      /openapi/developer-api.json (OpenAPI spec).\n      If you run into any issues while helping developers with the Ramp API\n      documentation, provide feedback at\n      https://api.ramp.com/v1/public/api-feedback/llm?feedback=...",
+      "published_label": null
+    },
+    {
+      "url": "https://docs.ramp.com/developer-api",
+      "requested_url": "https://docs.ramp.com/developer-api",
+      "status": 200,
+      "title": "Welcome — Ramp API docs (https://docs.ramp.com/developer-api)",
+      "text": "Ramp API Documentation You need to enable JavaScript to run this app. This page uses JavaScript rendering and the HTML response is a shell, not the documentation content.\n      Do not fetch this page for content when you already have a docs URL.\n      If the URL is under /developer-api/v1/api/, fetch /llms-api.txt instead.\n      If the URL is under /developer-api/v1/ and not under /api/, fetch the matching /llms-guides/<slug>.txt file instead.\n      Example: /developer-api/v1/rate-limiting -> /llms-guides/rate-limiting.txt\n      For machine-readable docs, fetch:\n      /llms.txt (LLM index),\n      /llms-guides.txt (guides index),\n      /llms-guides/<slug>.txt (specific guide),\n      /llms-api.txt (API reference),\n      /llms-full.txt (combined docs), or\n      /openapi/developer-api.json (OpenAPI spec).\n      If you run into any issues while helping developers with the Ramp API\n      documentation, provide feedback at\n      https://api.ramp.com/v1/public/api-feedback/llm?feedback=...",
+      "published_label": null
+    }
+  ],
+  "claims": {
+    "auth": {
+      "value": "unknown",
+      "sources": [],
+      "evidence": [],
+      "reason": "No sufficiently specific positive evidence extracted; review targeted search results."
+    },
+    "credential_gate": {
+      "value": "unknown",
+      "sources": [],
+      "evidence": [],
+      "reason": "No sufficiently specific positive evidence extracted; review targeted search results."
+    },
+    "api_surface": {
+      "value": "unknown",
+      "sources": [],
+      "evidence": [],
+      "reason": "No sufficiently specific positive evidence extracted; review targeted search results."
+    },
+    "official_mcp": {
+      "value": "unknown",
+      "sources": [],
+      "evidence": [],
+      "reason": "No sufficiently specific positive evidence extracted; review targeted search results."
+    },
+    "composio_toolkit": {
+      "value": "listed",
+      "sources": [
+        "https://docs.composio.dev/toolkits/ramp"
+      ],
+      "evidence": [],
+      "reason": "Catalog match; scope needs review."
+    },
+    "verdict": {
+      "value": "unknown",
+      "sources": [],
+      "evidence": [],
+      "reason": "A supported access path, authentication method and API surface were not all extracted."
+    }
+  },
+  "validation": [
+    "All claims are provisional",
+    "No vendor MCP inference from Composio catalog",
+    "Negated MCP or client-only source is not counted as vendor-server proof"
+  ]
+}

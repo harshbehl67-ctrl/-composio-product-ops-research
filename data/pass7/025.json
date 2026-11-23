@@ -1,0 +1,83 @@
+{
+  "app": {
+    "number": 25,
+    "name": "Pumble",
+    "category": "Communications and Messaging",
+    "hint": "pumble.com"
+  },
+  "replayed_at": "2026-11-23T18:19:17.831094+00:00",
+  "source_passes": [
+    "data/pass2/025.json",
+    "data/pass4/025.json"
+  ],
+  "source_search": "data/new_search/025.json",
+  "publication_date_note": "Published labels are retained exactly as supplied by search; missing labels are null. Relative labels must not be treated as exact publication dates.",
+  "claims": {
+    "auth": {
+      "value": [
+        "API key"
+      ],
+      "sources": [
+        "https://pumble.com/help/integrations/automation-workflow-integrations/api-keys-integration/"
+      ],
+      "evidence": [
+        {
+          "value": "API key",
+          "url": "https://pumble.com/help/integrations/automation-workflow-integrations/api-keys-integration/",
+          "excerpt": "s Pumble Help Center Integrations Pumble API Overview In this article Install API addon Generate an API key Delete API key Valid commands Pumble API Overview 2 min read isidora.komaromi@cake.com Who can use this feature? Owner, Admin, Member Available on all plans By using the Pumble AP",
+          "published_label": null
+        }
+      ],
+      "reason": "Provisional extraction: validate scope and completeness against the cited page."
+    },
+    "credential_gate": {
+      "value": "unknown",
+      "sources": [],
+      "evidence": [],
+      "reason": "No sufficiently specific positive evidence extracted; review targeted search results."
+    },
+    "api_surface": {
+      "value": "unknown",
+      "sources": [],
+      "evidence": [],
+      "reason": "No sufficiently specific positive evidence extracted; review targeted search results."
+    },
+    "official_mcp": {
+      "value": "yes (provisional)",
+      "sources": [
+        "https://pumble.com/help/integrations/automation-workflow-integrations/how-to-use-the-pumble-mcp-server/"
+      ],
+      "evidence": [
+        {
+          "value": "yes (provisional)",
+          "url": "https://pumble.com/help/integrations/automation-workflow-integrations/how-to-use-the-pumble-mcp-server/",
+          "excerpt": "How to use the Pumble MCP server - Pumble Help Integrations Pumble Help Center Integrations How to use the Pumble MCP server In this article How to connect to an MCP server What can you do aft",
+          "published_label": null,
+          "context_warning": "Review vendor ownership, dates, and scope."
+        }
+      ],
+      "reason": "Provisional; check source date, scope, and vendor ownership."
+    },
+    "composio_toolkit": {
+      "value": "listed",
+      "sources": [
+        "https://docs.composio.dev/toolkits/pumble"
+      ],
+      "evidence": [],
+      "reason": "Catalog match; scope needs review."
+    },
+    "verdict": {
+      "value": "unknown",
+      "sources": [],
+      "evidence": [],
+      "reason": "A supported access path, authentication method and API surface were not all extracted."
+    }
+  },
+  "validation": [
+    "Automatic extraction is provisional and not a verified final claim",
+    "Unknown is not evidence of absence",
+    "No Composio-to-vendor-MCP inference",
+    "Basic authentication may be endpoint-specific",
+    "Client-only and negated statements are not positive MCP evidence"
+  ]
+}

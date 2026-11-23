@@ -1,0 +1,97 @@
+{
+  "app": {
+    "number": 88,
+    "name": "Brex",
+    "category": "Finance and Fintech",
+    "hint": "developer.brex.com"
+  },
+  "replayed_at": "2026-11-23T18:17:24.517084+00:00",
+  "source_passes": [
+    "data/pass2/088.json",
+    "data/pass4/088.json"
+  ],
+  "source_search": "data/new_search/088.json",
+  "publication_date_note": "Published labels are retained exactly as supplied by search; missing labels are null. Relative labels must not be treated as exact publication dates.",
+  "claims": {
+    "auth": {
+      "value": [
+        "OAuth 2.0",
+        "API token",
+        "Bearer token"
+      ],
+      "sources": [
+        "https://developer.brex.com/guides/partner_authentication"
+      ],
+      "evidence": [
+        {
+          "value": "OAuth 2.0",
+          "url": "https://developer.brex.com/guides/partner_authentication",
+          "excerpt": " Scopes openid : Required to make an OpenID Connect request. offline_access : Required to obtain an OAuth 2.0 Refresh Token. The scopes page describes how scopes work in the Brex API and the scopes required for each API. Auth server The base URL for the requests is: Production: https://ac",
+          "published_label": null
+        },
+        {
+          "value": "API token",
+          "url": "https://developer.brex.com/guides/partner_authentication",
+          "excerpt": " an access token from the API, pass the authorization code along with authentication details to the API token endpoint. Here is an cURL example request: curl '{staging or production base auth URL}/v1/token' \\ --header 'Content-Type: application/x-www-form-urlencoded' \\ --data-urlencode 'g",
+          "published_label": null
+        },
+        {
+          "value": "Bearer token",
+          "url": "https://developer.brex.com/guides/partner_authentication",
+          "excerpt": "require the user to re-authorize the request. 4. Using an access token Add your <ACCESS_TOKEN> as a bearer token into the request header of any API calls you are making on behalf of the customer. Request header: Authorization: Bearer <ACCESS_TOKEN> 5. Getting a new access token and refresh t",
+          "published_label": null
+        }
+      ],
+      "reason": "Provisional extraction: validate scope and completeness against the cited page."
+    },
+    "credential_gate": {
+      "value": "unknown",
+      "sources": [],
+      "evidence": [],
+      "reason": "No sufficiently specific positive evidence extracted; review targeted search results."
+    },
+    "api_surface": {
+      "value": "unknown",
+      "sources": [],
+      "evidence": [],
+      "reason": "No sufficiently specific positive evidence extracted; review targeted search results."
+    },
+    "official_mcp": {
+      "value": "yes (provisional)",
+      "sources": [
+        "https://www.brex.com/journal/brex-mcp-connect-brex-to-ai-tools"
+      ],
+      "evidence": [
+        {
+          "value": "yes (provisional)",
+          "url": "https://www.brex.com/journal/brex-mcp-connect-brex-to-ai-tools",
+          "excerpt": "r, so you only see what you're authorized to, nothing more. Get started Add the Brex MCP server URL to your client's configuration, authenticate with your Brex account, and start asking questions. For setup instructions, available tools, and the full deve",
+          "published_label": null,
+          "context_warning": "Review vendor ownership, dates, and scope."
+        }
+      ],
+      "reason": "Provisional; check source date, scope, and vendor ownership."
+    },
+    "composio_toolkit": {
+      "value": "listed",
+      "sources": [
+        "https://docs.composio.dev/toolkits/brex"
+      ],
+      "evidence": [],
+      "reason": "Catalog match; scope needs review."
+    },
+    "verdict": {
+      "value": "unknown",
+      "sources": [],
+      "evidence": [],
+      "reason": "A supported access path, authentication method and API surface were not all extracted."
+    }
+  },
+  "validation": [
+    "Automatic extraction is provisional and not a verified final claim",
+    "Unknown is not evidence of absence",
+    "No Composio-to-vendor-MCP inference",
+    "Basic authentication may be endpoint-specific",
+    "Client-only and negated statements are not positive MCP evidence"
+  ]
+}

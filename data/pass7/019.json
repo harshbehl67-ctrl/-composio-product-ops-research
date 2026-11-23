@@ -1,0 +1,163 @@
+{
+  "app": {
+    "number": 19,
+    "name": "Gorgias",
+    "category": "Support and Helpdesk",
+    "hint": "gorgias.com"
+  },
+  "replayed_at": "2026-11-23T18:19:17.643459+00:00",
+  "source_passes": [
+    "data/pass2/019.json",
+    "data/pass4/019.json"
+  ],
+  "source_search": "data/new_search/019.json",
+  "publication_date_note": "Published labels are retained exactly as supplied by search; missing labels are null. Relative labels must not be treated as exact publication dates.",
+  "claims": {
+    "auth": {
+      "value": [
+        "OAuth 2.0",
+        "API key",
+        "Basic authentication"
+      ],
+      "sources": [
+        "https://developers.gorgias.com/reference/authentication",
+        "https://developers.gorgias.com/docs/access-tokens-api-keys",
+        "https://docs.gorgias.com/en-US/rest-api-208286"
+      ],
+      "evidence": [
+        {
+          "value": "OAuth 2.0",
+          "url": "https://developers.gorgias.com/reference/authentication",
+          "excerpt": "ersion. The Gorgias API supports two authentication methods: 🔐 Private app → API key 👥 Public app → OAuth2 Using OAuth2 is mandatory for public apps. For testing purposes, you can perform requests directly from the API Reference using your API keys. Go to any endpoint (e.g: \" Retrieve ",
+          "published_label": null
+        },
+        {
+          "value": "API key",
+          "url": "https://developers.gorgias.com/reference/authentication",
+          "excerpt": "L to get its markdown version. The Gorgias API supports two authentication methods: 🔐 Private app → API key 👥 Public app → OAuth2 Using OAuth2 is mandatory for public apps. For testing purposes, you can perform requests directly from the API Reference using your API keys. Go to any endp",
+          "published_label": null
+        },
+        {
+          "value": "OAuth 2.0",
+          "url": "https://developers.gorgias.com/docs/access-tokens-api-keys",
+          "excerpt": "cation method can be used only for private apps . If you plan to build a public app you have to use OAuth2. Each access token (or API key) is tied to a specific user and has the same permissions as the user that holds them. Requests made with an access token will act on behalf of a use",
+          "published_label": null
+        },
+        {
+          "value": "API key",
+          "url": "https://developers.gorgias.com/docs/access-tokens-api-keys",
+          "excerpt": "t. Append .md to any documentation page URL to get its markdown version. 👉 Please remember that the API key authentication method can be used only for private apps . If you plan to build a public app you have to use OAuth2. Each access token (or API key) is tied to a specific user and h",
+          "published_label": null
+        },
+        {
+          "value": "Basic authentication",
+          "url": "https://developers.gorgias.com/docs/access-tokens-api-keys",
+          "excerpt": "account \\\n  --header 'Authorization: Basic base64encode(USERNAME:API_KEY)' 👉 Since we're using HTTP Basic Authentication , the USERNAME:API_KEY pair has to be a base64 encoded string. Note the : between the USERNAME and API_KEY is a separator used to differentiate between the username and the passwo",
+          "published_label": null
+        },
+        {
+          "value": "API key",
+          "url": "https://docs.gorgias.com/en-US/rest-api-208286",
+          "excerpt": "asic Authentication with three pieces of information: your base API URL, your email address, and an API key. You can find and manage all three from the REST API settings page in your helpdesk. Note: API keys are tied to your individual account, not to the helpdesk as a whole. For full A",
+          "published_label": null
+        },
+        {
+          "value": "Basic authentication",
+          "url": "https://docs.gorgias.com/en-US/rest-api-208286",
+          "excerpt": "d and write data in your helpdesk programmatically. To authenticate API requests, Gorgias uses HTTP Basic Authentication with three pieces of information: your base API URL, your email address, and an API key. You can find and manage all three from the REST API settings page in your helpdesk. Note: ",
+          "published_label": null
+        }
+      ],
+      "reason": "Provisional extraction: validate scope and completeness against the cited page."
+    },
+    "credential_gate": {
+      "value": "unknown",
+      "sources": [],
+      "evidence": [],
+      "reason": "No sufficiently specific positive evidence extracted; review targeted search results."
+    },
+    "api_surface": {
+      "value": [
+        "REST"
+      ],
+      "sources": [
+        "https://developers.gorgias.com/docs/access-tokens-api-keys",
+        "https://docs.gorgias.com/en-US/rest-api-208286",
+        "https://docs.gorgias.com/en-US/articles/developer-resources-18370",
+        "https://developers.gorgias.com/reference/introduction"
+      ],
+      "evidence": [
+        {
+          "value": "REST",
+          "url": "https://developers.gorgias.com/docs/access-tokens-api-keys",
+          "excerpt": "e about roles here . How do I get my API key? Log in to your Gorgias account Navigate to Settings → REST API Click the Create API key button Once you have your credentials, you can start performing requests directly from the API documentation . Request example cURL curl --request GET \\\n ",
+          "published_label": null
+        },
+        {
+          "value": "REST",
+          "url": "https://docs.gorgias.com/en-US/rest-api-208286",
+          "excerpt": "Access your Gorgias REST API credentials Search All articles Access your Gorgias REST API credentials Updated 5 months ago The Gorgias REST API lets you read and write data in your helpdesk programmatically. ",
+          "published_label": null
+        },
+        {
+          "value": "REST",
+          "url": "https://docs.gorgias.com/en-US/articles/developer-resources-18370",
+          "excerpt": "Developer resources Search All articles Developer resources Access your Gorgias REST API credentials Gorgias has an open REST API - go to Settings → You → REST API to access your unique credentials. You can also take a look at our developer documentation for more info",
+          "published_label": null
+        },
+        {
+          "value": "REST",
+          "url": "https://developers.gorgias.com/reference/introduction",
+          "excerpt": "ses standard HTTP response codes, authentication, and verbs. On this page, you'll find the complete REST API reference, examples, definitions of objects, and guides. 🚫 Resources, resources' attributes, and resources' operations not documented in this documentation should not be used and ",
+          "published_label": null
+        }
+      ],
+      "reason": "Provisional extraction: validate scope and completeness against the cited page."
+    },
+    "official_mcp": {
+      "value": "yes (provisional)",
+      "sources": [
+        "https://helpcenter.gorgias.com/en-US/connect-your-ai-assistant-to-the-gorgias-mcp-6310546",
+        "https://docs.gorgias.com/en-US/connect-your-ai-assistant-to-the-gorgias-mcp-6310546"
+      ],
+      "evidence": [
+        {
+          "value": "yes (provisional)",
+          "url": "https://helpcenter.gorgias.com/en-US/connect-your-ai-assistant-to-the-gorgias-mcp-6310546",
+          "excerpt": "client's connectors settings, not opened in a browser tab. When you connect the Gorgias MCP in your AI tool , use this URL as the remote MCP server URL. Can I connect the Gorgias MCP for multiple brands? Each connection works with one Gorgias account. To connect more than one brand in Claude, add a custom ",
+          "published_label": null,
+          "context_warning": "Review vendor ownership, dates, and scope."
+        },
+        {
+          "value": "yes (provisional)",
+          "url": "https://docs.gorgias.com/en-US/connect-your-ai-assistant-to-the-gorgias-mcp-6310546",
+          "excerpt": "client's connectors settings, not opened in a browser tab. When you connect the Gorgias MCP in your AI tool , use this URL as the remote MCP server URL. Can I connect the Gorgias MCP for multiple brands? Each connection works with one Gorgias account. To connect more than one brand in Claude, add a custom ",
+          "published_label": null,
+          "context_warning": "Review vendor ownership, dates, and scope."
+        }
+      ],
+      "reason": "Provisional; check source date, scope, and vendor ownership."
+    },
+    "composio_toolkit": {
+      "value": "listed",
+      "sources": [
+        "https://docs.composio.dev/toolkits/gorgias"
+      ],
+      "evidence": [],
+      "reason": "Catalog match; scope needs review."
+    },
+    "verdict": {
+      "value": "unknown",
+      "sources": [],
+      "evidence": [],
+      "reason": "A supported access path, authentication method and API surface were not all extracted."
+    }
+  },
+  "validation": [
+    "Automatic extraction is provisional and not a verified final claim",
+    "Unknown is not evidence of absence",
+    "No Composio-to-vendor-MCP inference",
+    "Basic authentication may be endpoint-specific",
+    "Client-only and negated statements are not positive MCP evidence"
+  ]
+}

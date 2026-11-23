@@ -1,0 +1,172 @@
+{
+  "app": {
+    "number": 82,
+    "name": "Plaid",
+    "category": "Finance and Fintech",
+    "hint": "plaid.com/docs"
+  },
+  "checked_at": "2026-11-23T18:15:36.864770+00:00",
+  "prior_source": "data/pass2/082.json",
+  "search_source": "data/pass4_search/082.json",
+  "new_candidates": [
+    {
+      "url": "https://plaid.com/docs/api/?trk=article-ssr-frontend-pulse_little-text-block",
+      "title": "API - Overview | Plaid Docs (https://plaid.com/docs/api/?trk=article-ssr-frontend-pulse_little-text-block)",
+      "published_label": null
+    },
+    {
+      "url": "https://plaid.com/docs/auth/add-to-app/",
+      "title": "Auth - Add Auth to your app | Plaid Docs (https://plaid.com/docs/auth/add-to-app/)",
+      "published_label": null
+    },
+    {
+      "url": "https://plaid.com/docs/account/",
+      "title": "Account - Overview | Plaid Docs (https://plaid.com/docs/account/)",
+      "published_label": null
+    },
+    {
+      "url": "https://plaid.com/core-exchange/docs/",
+      "title": "Home - Welcome | Plaid Docs (https://plaid.com/core-exchange/docs/)",
+      "published_label": null
+    },
+    {
+      "url": "https://plaid.com/plaid-exchange/docs/authentication/",
+      "title": "Authentication | Plaid Docs (https://plaid.com/plaid-exchange/docs/authentication/)",
+      "published_label": null
+    },
+    {
+      "url": "https://plaid.com/docs/resources/cli/",
+      "title": "Resources - Plaid CLI | Plaid Docs (https://plaid.com/docs/resources/cli/)",
+      "published_label": null
+    },
+    {
+      "url": "https://plaid.com/docs/api/users/user-apis/",
+      "title": "API - New User API overview | Plaid Docs (https://plaid.com/docs/api/users/user-apis/)",
+      "published_label": null
+    },
+    {
+      "url": "https://plaid.com/plaid-exchange/docs/",
+      "title": "Home - Welcome | Plaid Docs (https://plaid.com/plaid-exchange/docs/)",
+      "published_label": null
+    },
+    {
+      "url": "https://plaid.com/docs/account/teams/",
+      "title": "Account - Teams | Plaid Docs (https://plaid.com/docs/account/teams/)",
+      "published_label": null
+    }
+  ],
+  "selected": [
+    {
+      "url": "https://plaid.com/docs/auth/add-to-app/",
+      "title": "Auth - Add Auth to your app | Plaid Docs (https://plaid.com/docs/auth/add-to-app/)",
+      "published_label": null
+    },
+    {
+      "url": "https://plaid.com/docs/api/?trk=article-ssr-frontend-pulse_little-text-block",
+      "title": "API - Overview | Plaid Docs (https://plaid.com/docs/api/?trk=article-ssr-frontend-pulse_little-text-block)",
+      "published_label": null
+    }
+  ],
+  "new_pages": [
+    {
+      "url": "https://plaid.com/docs/auth/add-to-app/",
+      "requested_url": "https://plaid.com/docs/auth/add-to-app/",
+      "status": 200,
+      "title": "Auth - Add Auth to your app | Plaid Docs (https://plaid.com/docs/auth/add-to-app/)",
+      "text": "Auth - Add Auth to your app | Plaid Docs Close search modal Search the docs Ask Bill! Ask a question... Hi! I'm Bill! You can ask me all about the Plaid API. Try asking questions like: Pssst -- I also moonlight as your IDE's research librarian! Plug me in via the Plaid MCP Server . Note: Bill isn't perfect. He's just a robot platypus that reads our docs for fun. You should treat his answers with the same healthy skepticism you might treat any other answer on the internet. This chat may be logged for quality and training purposes. Please don't send Bill any PII -- he's scared of intimacy. All chats with Bill are subject to Plaid's Privacy Policy. Add Auth to your app Use Auth to connect user bank accounts In this guide, we'll demonstrate how to add Auth to your app so that you can connect to your users' bank accounts and obtain the information needed to set up funds transfers. If you're already familiar with using Plaid and are set up to make calls to the Plaid API, see Getting Auth data . If you're interested in using a Plaid partner, such as Stripe or Dwolla, to process payments, see Moving funds with a payment partner . Prefer to learn by watching? A video guide is\navailable for this topic. Get Plaid API keys and complete application and company profile If you don't already have one, you'll need to create a Plaid developer account . After creating your account, you can find your API keys under Build in the Plaid Dashboard. You will also need to complete your application profile and company profile in the Dashboard. The information in your profile will be shared with users of your application when they manage their connection on the Plaid Portal . Your application profile and company profile must be completed before connecting to certain institutions in Production. Install and initialize Plaid libraries You can use our official server-side client libraries to connect to the Plaid API from your application: Install the Plaid libraries Node â¼ // Install via npm npm install -- save plaid After you've installed Plaid's client libraries, you can initialize them by passing in your client_id , secret , and the environment you wish to connect to (Sandbox or Production). This will make sure the client libraries pass along your client_id and secret with each request, and you won't need to explicitly include them in any other calls. server.js Node â¼ // Using Express const express = require ( 'express' ) ; const app = express ( ) ; app . use ( express . json ( ) ) ; const { Configuration , PlaidApi , PlaidEnvironments } = require ( 'plaid' ) ; const configuration = new Configuration ( { basePath : PlaidEnvironments . sandbox , baseOptions : { headers : { 'PLAID-CLIENT-ID' : process . env . PLAID_CLIENT_ID , 'PLAID-SECRET' : process . env . PLAID_SECRET , } , } , } ) ; const client = new PlaidApi ( configuration ) ; Create an Item using Link These instructions cover Link for web applications. For instructions on using Link in mobile apps, see the Link documentation . Plaid Link is the client-side component that your users interact with to securely connect their bank accounts to your app. An Item is created when a user successfully logs into their financial institution using Link. An Item represents a single login at a financial institution. Items do not represent individual bank accounts, although all bank accounts are associated with an Item. For example, if a user has a single login at a bank that allows them to access both a checking account and a savings account, only a single Item would be associated with both of the accounts. When using Auth, you will typically only need access to the specific bank account that will be used to transfer funds, rather than all of the accounts a user may have at an institution. Because of this, it is recommended that you configure Link with Account Select when using Auth. Configuring Link with Account Select will limit unnecessary access to user accounts. You can enable Account Select from the Dashboard . To create an Item, you'll first need to create a Link token on your application server. You can create a Link token by calling the /link/token/create endpoint. Then, on the client-side of your application, you'll initialize Link using the Link token you created. The code samples below demonstrate how to create a Link token and how to initialize Link using the token. Create a Link token /link/token/create Node â¼ app . post ( '/api/create_link_token' , async function ( request , response ) { // Get the client_user_id by searching for the current user const user = await User . find ( ... ) ; const clientUserId = user . id ; const linkTokenRequest = { user : { // This should correspond to a unique id for the current user. client_user_id : clientUserId , } , client_name : 'Plaid Test App' , products : [ 'auth' ] , language : 'en' , webhook : 'https://webhook.example.com' , redirect_uri : 'https://domainname.com/oauth-page.html' , country_codes : [ 'US' ] , } ; try { const createTokenResponse = await client . linkTokenCreate ( linkTokenRequest ) ; response . json ( createTokenResponse . data ) ; } catch ( error ) { // handle error } } ) ; Initialize Link with the Link token If your use case involves a pay-by-bank payments flow where the end user can choose between paying via a credit card and paying via a bank account, it is highly recommended to use the Embedded experience for Link to increase uptake of pay-by-bank. If your use case is an account opening or funding flow that requires the customer to use a bank account, or has a surcharge for credit card use, use the standard Link experience. Select group for content switcher Account funding (standard Link) Pay by Bank (Embedded Link) app.js const handler = Plaid . create ( { token : ( await $ . post ( '/create_link_token' ) ) . link_token , onSuccess : ( public_token , metadata ) => { // Upon successful linking of a bank account, // Link will return a public token. // Exchange the public token for an access token // to make calls to the Plaid API. $ . post ( '/exchange_public_token' , { public_token : public_token , } ) ; } , onLoad : ( ) => { } , onExit : ( err , metadata ) => { // Optionally capture when your user exited the Link flow. // Storing this information can be helpful for support. } , onEvent : ( eventName , metadata ) => { // Optionally capture Link flow events, streamed through // this callback as your users connect an Item to Plaid. } , } ) ; handler . open ( ) ; The sample code below is for JavaScript. For more examples for other platforms, see Embedded Link . Embedded Institution search - web (HTML) < div id = \" plaid-embedded-link-container \" > </ div > Embedded Institution Search - web (JavaScript) // The container at `#plaid-embedded-link-container` will need to be sized in order to // control the size of the embedded Plaid module const embeddedLinkOpenTarget = document . querySelector ( '#plaid-embedded-link-container' ) ; Plaid . createEmbedded ( { token : 'GENERATED_LINK_TOKEN' , onSuccess : ( public_token , metadata ) => { } , onLoad : ( ) => { } , onExit : ( err , metadata ) => { } , onEvent : ( eventName , metadata ) => { } , } , embeddedLinkOpenTarget , ) ; Obtain an access token When a user successfully links an Item via Link, the onSuccess callback will be called. The onSuccess callback returns a public token . On your application server, exchange the public token for an access token and an Item ID by calling /item/public_token/exchange . The access token will allow you to make authenticated calls to the Plaid API. Store the access token and Item ID in a secure datastore, as they're used to access Item data and identify webhooks, respectively. The access token will remain valid unless you actively expire it via rotation or remove it by calling /item/remove on the corresponding Item. For security purposes, never store the access token in client-side code. The public token is a one-time use token with a lifetime of 30 minutes, so there is no need to store it. Exchange public token for an access token /item/public_token/exchange Node â¼ app . post ( '/api/exchange_public_token' , async function ( request , response , next , ) { const publicToken = request . body . public_token ; try { const tokenResponse = await client . itemPublicTokenExchange ( { public_token : publicToken , } ) ; // These values should be saved to a persistent database and // associated with the currently signed-in user const accessToken = tokenResponse . data . access_token ; const itemID = tokenResponse . data . item_id ; response . json ( { public_token_exchange : 'complete' } ) ; } catch ( error ) { // handle error } } ) ; Getting Auth data Now that you have an access token, you can begin making authenticated calls to the Plaid API. If you are processing payments yourself, call the /auth/get endpoint to retrieve the bank account and bank identification numbers (such as routing numbers, for US accounts) associated with an Item's accounts. You can then supply these to your payment system. If you are using a Plaid partner to move funds, you will not need to call /auth/get . Instead, see Moving funds with a payment partner . /auth/get Node â¼ const { AuthGetRequest } = require ( 'plaid' ) ; // Call /auth/get and retrieve account numbers for an Item const request = { access_token : access_token , } ; try { const response = await plaidClient . authGet ( request ) ; const accountData = response . data . accounts ; if ( response . data . numbers . ach . length > 0 ) { // Handle ACH numbers (US accounts) const achNumbers = response . data . numbers . ach ; } if ( response . data . numbers . eft . length > 0 ) { // Handle EFT numbers (Canadian accounts) const eftNumbers = response . data . numbers . eft ; } if ( response . data . numbers . international . length > 0 ) { // Handle International numbers const internationalNumbers = response . data . numbers . international ; } if ( response . data . numbers . bacs . length > 0 ) { // Handle Bacs numbers (British accounts) const bacsNumbers = response . data . numbers . bacs ; } } catch ( error ) { //handle error } Example response data is below. Note that this is test account data; real accounts would not include all four sets of numbers. /auth/get sample response { \"accounts\" : [ { \"account_id\" : \"vzeNDwK7KQIm4yEog683uElbp9GRLEFXGK98D\" , \"balances\" : { \"available\" : 100 , \"current\" : 110 , \"limit\" : null , \"iso_currency_code\" : \"USD\" , \"unofficial_currency_code\" : null } , \"mask\" : \"9606\" , \"name\" : \"Plaid Checking\" , \"official_name\" : \"Plaid Gold Checking\" , \"subtype\" : \"checking\" , \"type\" : \"depository\" } ] , \"numbers\" : { \"ach\" : [ { \"account\" : \"9900009606\" , \"account_id\" : \"vzeNDwK7KQIm4yEog683uElbp9GRLEFXGK98D\" , \"routing\" : \"011401533\" , \"wire_routing\" : \"021000021\" } ] , \"eft\" : [ { \"account\" : \"111122223333\" , \"account_id\" : \"vzeNDwK7KQIm4yEog683uElbp9GRLEFXGK98D\" , \"institution\" : \"021\" , \"branch\" : \"01140\" } ] , \"international\" : [ { \"account_id\" : \"vzeNDwK7KQIm4yEog683uElbp9GRLEFXGK98D\" , \"bic\" : \"NWBKGB21\" , \"iban\" : \"GB29NWBK60161331926819\" } ] , \"bacs\" : [ { \"account\" : \"31926819\" , \"account_id\" : \"vzeNDwK7KQIm4yEog683uElbp9GRLEFXGK98D\" , \"sort_code\" : \"601613\" } ] } , \"item\" : { \"available_products\" : [ \"balance\" , \"identity\" , \"payment_initiation\" , \"transactions\" ] , \"billed_products\" : [ \"assets\" , \"auth\" ] , \"consent_expiration_time\" : null , \"error\" : null , \"institution_id\" : \"ins_117650\" , \"item_id\" : \"DWVAAPWq4RHGlEaNyGKRTAnPLaEmo8Cvq7na6\" , \"webhook\" : \"https://www.genericwebhookurl.com/webhook\" } , \"request_id\" : \"m8MDnv9okwxFNBV\" } Moving funds with a payment partner You can move money via ACH transfer by pairing Auth with one of Plaid's payment partners. When using a partner to move money, the partner's payments service will initiate the transfer; Plaid does not function as the payment processor. For the full list of payments platforms who have partnered with Plaid to provide ACH money movement, see Auth Partnerships . To move money using a Plaid partner, first create an Item using Link and obtain an access token as described above. Then, instead of calling Plaid's Auth endpoints, call one of Plaid's processor token endpoints to create a processor token. You can then send this processor token to one of Plaid's partners by using endpoints that are specific to the payment platform. Refer to the partner's technical documentation for more information. Using a partner to transfer funds gives you access to payment functionality while freeing you from having to securely store sensitive bank account information. The sample code below demonstrates a call to /processor/token/create using Dwolla as the payment processor. Sample /processor/token/create call Node â¼ const { ProcessorTokenCreateRequest } = require ( 'plaid' ) ; try { // Create a processor token for a specific account id const request : ProcessorTokenCreateRequest = { access_token : accessToken , account_id : accountID , processor : 'dwolla' , } ; const processorTokenResponse = await plaidClient . processorTokenCreate ( request , ) ; const processorToken = processorTokenResponse . data . processor_token ; } catch ( error ) { // handle error } Example code in Plaid Pattern For a real-life example of an app that incorporates Auth, see the Node-based Plaid Pattern Account Funding sample app. Pattern Account Funding is a sample account funding app that fetches Auth data in order to set up funds transfers. The Auth code can be found in items.js . Next steps Once Auth is implemented in your app, see Additional verification methods to make sure your app is supporting the maximum number of institutions and verification methods (US and CA only).",
+      "published_label": null
+    },
+    {
+      "url": "https://plaid.com/docs/api/?trk=article-ssr-frontend-pulse_little-text-block",
+      "requested_url": "https://plaid.com/docs/api/?trk=article-ssr-frontend-pulse_little-text-block",
+      "status": 200,
+      "title": "API - Overview | Plaid Docs (https://plaid.com/docs/api/?trk=article-ssr-frontend-pulse_little-text-block)",
+      "text": "API - Overview | Plaid Docs Close search modal Search the docs Ask Bill! Ask a question... Hi! I'm Bill! You can ask me all about the Plaid API. Try asking questions like: Pssst -- I also moonlight as your IDE's research librarian! Plug me in via the Plaid MCP Server . Note: Bill isn't perfect. He's just a robot platypus that reads our docs for fun. You should treat his answers with the same healthy skepticism you might treat any other answer on the internet. This chat may be logged for quality and training purposes. Please don't send Bill any PII -- he's scared of intimacy. All chats with Bill are subject to Plaid's Privacy Policy. API Reference Comprehensive reference for integrating with Plaid API endpoints API endpoints and webhooks For documentation on specific API endpoints and webhooks, use the navigation menu or search. API access To gain access to the Plaid API, create an account on the Plaid Dashboard . Once you've completed the signup process and acknowledged our terms, we'll provide a live client_id and secret via the Dashboard. API protocols and headers The Plaid API is JSON over HTTP. Requests are POST requests, and responses are JSON, with errors indicated in response bodies as error_code and error_type (use these in preference to HTTP status codes for identifying application-level errors). All responses come as standard JSON, with a small subset returning binary data where appropriate. The Plaid API is served over HTTPS TLS v1.2 to ensure data privacy; HTTP and HTTPS with TLS versions other than 1.2 are not supported. Clients must use an up to date root certificate bundle as the only TLS verification path; certificate pinning should never be used. All requests must include a Content-Type of application/json and the body must be valid JSON. Almost all Plaid API endpoints require a client_id and secret . These may be sent either in the request body or in the headers PLAID-CLIENT-ID and PLAID-SECRET . Every Plaid API response includes a request_id , either in the body or (in the case of endpoints that return binary data, such as /asset_report/pdf/get ) in the response headers. For faster support, include the request_id when contacting support regarding a specific API call. API host https://sandbox.plaid.com (Sandbox) https://production.plaid.com (Production) Plaid has two environments: Sandbox and Production. Items cannot be moved between environments. The Sandbox environment supports only test Items. You can request Production API access via the Dashboard. API status and incidents API status is available at status.plaid.com . API status and incidents are also available programmatically via the following endpoints: https://status.plaid.com/api/v2/status.json for current status https://status.plaid.com/api/v2/incidents.json for current and historical incidents For a complete list of all API status information available programmatically, as well as more information on using these endpoints, see the Incident.io Status API documentation . For information on institution-specific insights, see Troubleshooting institution insights . Storing API data Any token returned by the API is sensitive and should be stored securely. Except for the public_token and link_token , all Plaid tokens are long-lasting and should never be exposed on the client side. Consumer data obtained from the Plaid API is sensitive information and should be managed accordingly. For guidance and best practices on how to store and handle sensitive data, see the Open Finance Data Security Standard . Identifiers used by the Plaid API that do not contain consumer data and are not keys or tokens are designed for usage in less sensitive contexts. The most common of these identifiers are the account_id , item_id , link_session_id , and request_id . These identifiers are commonly used for logging and debugging purposes. API field formats Strings Many string fields returned by Plaid APIs are reported exactly as returned by the financial institution. For this reason, Plaid does not have maximum length limits or standardized formats for strings returned by the API. In practice, field lengths of 280 characters will generally be adequate for storing returned strings, although Plaid does not guarantee this as a maximum string length. Numbers and money Plaid returns all currency values as decimal values in dollars (or the equivalent for the currency being used), rather than as integers. In some cases, it may be possible for a money value returned by the Plaid API to have more than two digits of precision -- this is common, for example, when reporting crypto balances. OpenAPI definition file OpenAPI is a standard format for describing RESTful APIs that allows those APIs to be integrated with tools for a wide variety of applications, including testing, client library generation, IDE integration, and more. The Plaid API is specified in our Plaid OpenAPI GitHub repo . Postman collection The Postman collection is a convenient tool for exploring Plaid API endpoints without writing code. The Postman collection provides pre-formatted requests for almost all of Plaid's API endpoints. All you have to do is fill in your API keys and any arguments. To get started, check out the Plaid Postman Collection Quickstart on GitHub. Client libraries See the client libraries page for more information on Plaid's client libraries.",
+      "published_label": null
+    }
+  ],
+  "claims": {
+    "auth": {
+      "value": [
+        "OAuth 2.0",
+        "Bearer token"
+      ],
+      "sources": [
+        "https://plaid.com/core-exchange/docs/reference/authentication/"
+      ],
+      "evidence": [
+        {
+          "value": "OAuth 2.0",
+          "url": "https://plaid.com/core-exchange/docs/reference/authentication/",
+          "excerpt": "n, for example curl -H 'Authorization: Bearer <ACCESS_TOKEN>' . Plaid obtains that token through an OAuth 2.0 authorization code flow , with OpenID Connect (OIDC) strongly recommended. As the Data Provider, you implement the authorization server and Plaid acts as the OAuth client. Plaid d",
+          "published_label": null
+        },
+        {
+          "value": "Bearer token",
+          "url": "https://plaid.com/core-exchange/docs/reference/authentication/",
+          "excerpt": "Authentication options for the Core Exchange API The Core Exchange API accepts an access token as a bearer token, for example curl -H 'Authorization: Bearer <ACCESS_TOKEN>' . Plaid obtains that token through an OAuth 2.0 authorization code flow , with OpenID Connect (OIDC) strongly recommend",
+          "published_label": null
+        }
+      ],
+      "reason": "Provisional extraction: validate scope and completeness against the cited page."
+    },
+    "credential_gate": {
+      "value": "unknown",
+      "sources": [],
+      "evidence": [],
+      "reason": "No sufficiently specific positive evidence extracted; review targeted search results."
+    },
+    "api_surface": {
+      "value": [
+        "REST"
+      ],
+      "sources": [
+        "https://plaid.com/docs/api/?trk=article-ssr-frontend-pulse_little-text-block"
+      ],
+      "evidence": [
+        {
+          "value": "REST",
+          "url": "https://plaid.com/docs/api/?trk=article-ssr-frontend-pulse_little-text-block",
+          "excerpt": "when reporting crypto balances. OpenAPI definition file OpenAPI is a standard format for describing RESTful APIs that allows those APIs to be integrated with tools for a wide variety of applications, including testing, client library generation, IDE integration, and more. The Plaid API is sp",
+          "published_label": null
+        }
+      ],
+      "reason": "Provisional extraction: validate scope and completeness against the cited page."
+    },
+    "official_mcp": {
+      "value": "yes (provisional)",
+      "sources": [
+        "https://plaid.com/docs/resources/mcp/"
+      ],
+      "evidence": [
+        {
+          "value": "yes (provisional)",
+          "url": "https://plaid.com/docs/resources/mcp/",
+          "excerpt": " Pssst -- I also moonlight as your IDE's research librarian! Plug me in via the Plaid MCP Server . Note: Bill isn't perfect. He's just a robot platypus that reads our docs for fun. You should treat his answers with the same healthy skepticism you might tre",
+          "published_label": null,
+          "context_warning": "Review vendor ownership, dates, and scope."
+        }
+      ],
+      "reason": "Provisional; check source date, scope, and vendor ownership."
+    },
+    "composio_toolkit": {
+      "value": "listed",
+      "sources": [
+        "https://docs.composio.dev/toolkits/plaid"
+      ],
+      "evidence": [],
+      "reason": "Catalog match; scope needs review."
+    },
+    "verdict": {
+      "value": "unknown",
+      "sources": [],
+      "evidence": [],
+      "reason": "A supported access path, authentication method and API surface were not all extracted."
+    }
+  },
+  "validation": [
+    "All claims are provisional",
+    "No vendor MCP inference from Composio catalog",
+    "Negated MCP or client-only source is not counted as vendor-server proof"
+  ]
+}

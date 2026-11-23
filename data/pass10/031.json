@@ -1,0 +1,145 @@
+{
+  "app": {
+    "number": 31,
+    "name": "Google Ads",
+    "category": "Marketing, Ads, Email and Social",
+    "hint": "developers.google.com/google-ads"
+  },
+  "replayed_at": "2026-11-23T18:42:00.334873+00:00",
+  "source_passes": [
+    "data/pass2/031.json",
+    "data/pass4/031.json"
+  ],
+  "source_searches": [
+    "data/new_search/031.json",
+    "data/pass4_search/031.json"
+  ],
+  "publication_date_note": "Search publication labels are retained exactly; null means no label was available. Relative labels are not exact dates.",
+  "claims": {
+    "auth": {
+      "value": [
+        "OAuth 2.0",
+        "Bearer token"
+      ],
+      "status": "provisional",
+      "sources": [
+        "https://developers.google.com/google-ads/api/rest/auth",
+        "https://developers.google.com/google-ads/api/docs/developer-toolkit/mcp-server",
+        "https://developers.google.com/google-ads/api/docs/get-started/make-first-call",
+        "https://developers.google.com/google-ads/api/docs/get-started/make-first-call?hl=en",
+        "https://developers.google.com/google-ads/api/docs/oauth/cloud-project"
+      ],
+      "evidence": [
+        {
+          "value": "OAuth 2.0",
+          "url": "https://developers.google.com/google-ads/api/rest/auth",
+          "excerpt": "ur preferences. Page Summary outlined_flag When calling the Google Ads API, you need both OAuth 2.0 application credentials and a developer token. If making API calls with a Google Ads manager account, you must specify a login-customer-id header. You can use desktop/we",
+          "published_label": null
+        },
+        {
+          "value": "OAuth 2.0",
+          "url": "https://developers.google.com/google-ads/api/docs/developer-toolkit/mcp-server",
+          "excerpt": "ble HTTP\n( streamable-http on Cloud Run) Authentication: Application Default Credentials (OAuth 2.0 user\ncredentials or service account) for local stdio , or OAuth 2.0 Web\napplication credentials for remote HTTP Telemetry: Appends google-ads-mcp/VERSION to the x-goog-a",
+          "published_label": null
+        },
+        {
+          "value": "Bearer token",
+          "url": "https://developers.google.com/google-ads/api/docs/developer-toolkit/mcp-server",
+          "excerpt": "r enforces OAuth 2.0, your client must support the MCP OAuth\nflow or supply an authorized Bearer token: OAuth-enabled clients: In clients that support MCP OAuth discovery (such\nas Antigravity), connecting triggers a Google sign-in prompt to grant the https://www.googleapi",
+          "published_label": null
+        },
+        {
+          "value": "OAuth 2.0",
+          "url": "https://developers.google.com/google-ads/api/docs/get-started/make-first-call",
+          "excerpt": "is for creating, enabling, and using all the Google services,\nincluding managing APIs and OAuth 2.0 API credentials. You can create one\nfrom the Google Cloud Console . API access level: The API access level of your\nGoogle Cloud project controls the number of API calls",
+          "published_label": null
+        },
+        {
+          "value": "OAuth 2.0",
+          "url": "https://developers.google.com/google-ads/api/docs/get-started/make-first-call?hl=en",
+          "excerpt": "is for creating, enabling, and using all the Google services,\nincluding managing APIs and OAuth 2.0 API credentials. You can create one\nfrom the Google Cloud Console . API access level: The API access level of your\nGoogle Cloud project controls the number of API calls",
+          "published_label": null
+        },
+        {
+          "value": "OAuth 2.0",
+          "url": "https://developers.google.com/google-ads/api/docs/oauth/cloud-project",
+          "excerpt": "configuring a Google API Console project for Google Ads API access depends on your chosen OAuth 2.0 authorization scenario (service accounts or user authentication). A Google API Console project is necessary to create OAuth 2.0 credentials and enable the Google Ads API",
+          "published_label": null
+        }
+      ],
+      "reason": "Provisional extraction; validate scope and completeness against cited pages."
+    },
+    "credential_gate": {
+      "value": [
+        "admin_approval"
+      ],
+      "status": "provisional",
+      "sources": [
+        "https://developers.google.com/google-ads/api/docs/get-started/make-first-call",
+        "https://developers.google.com/google-ads/api/docs/get-started/make-first-call?hl=en"
+      ],
+      "evidence": [
+        {
+          "value": "admin_approval",
+          "url": "https://developers.google.com/google-ads/api/docs/get-started/make-first-call",
+          "excerpt": "ant administrator access to a service\n    account during initial setup. If your API calls require administrator\n    access, you can upgrade the access as follows. Click the drop-down arrow next to the access level of the service\n         account in the Access level column. Select Admin from",
+          "published_label": null
+        },
+        {
+          "value": "admin_approval",
+          "url": "https://developers.google.com/google-ads/api/docs/get-started/make-first-call?hl=en",
+          "excerpt": "ant administrator access to a service\n    account during initial setup. If your API calls require administrator\n    access, you can upgrade the access as follows. Click the drop-down arrow next to the access level of the service\n         account in the Access level column. Select Admin from",
+          "published_label": null
+        }
+      ],
+      "reason": "Provisional extraction; validate scope and completeness against cited pages."
+    },
+    "api_surface": {
+      "value": "unknown",
+      "status": "provisional",
+      "sources": [],
+      "evidence": [],
+      "reason": "No sufficiently specific official evidence extracted."
+    },
+    "official_mcp": {
+      "value": "vendor_server",
+      "status": "provisional",
+      "sources": [
+        "https://developers.google.com/google-ads/api/docs/developer-toolkit/mcp-server"
+      ],
+      "evidence": [
+        {
+          "value": "vendor_server",
+          "url": "https://developers.google.com/google-ads/api/docs/developer-toolkit/mcp-server",
+          "excerpt": "s large\nlanguage models (LLMs) securely interact with external data and applications.\nThe Google Ads MCP server provides a standardized bridge to the Google Ads API. It lets\nAI agents retrieve and analyze account data, create assets, upload videos, and\nmanage labels by using natural language. Community resources and support GitHub repository",
+          "published_label": null,
+          "context_note": "Vendor-owned server statement; review date and access scope."
+        }
+      ],
+      "reason": "Provisional; check date, ownership and access scope."
+    },
+    "composio_toolkit": {
+      "value": "listed",
+      "status": "provisional",
+      "sources": [
+        "https://docs.composio.dev/toolkits/googleads"
+      ],
+      "evidence": [],
+      "reason": "Catalog match only; not vendor MCP evidence."
+    },
+    "verdict": {
+      "value": "unknown",
+      "status": "provisional",
+      "sources": [],
+      "evidence": [],
+      "reason": "No sufficiently specific official evidence extracted."
+    }
+  },
+  "validation": [
+    "Automatic extraction is provisional until independently reviewed",
+    "Unknown is not evidence of absence",
+    "Composio evidence cannot establish vendor MCP",
+    "Client-only and negated MCP statements are not vendor-server proof",
+    "API breadth is a text-coverage heuristic, not an endpoint census"
+  ]
+}

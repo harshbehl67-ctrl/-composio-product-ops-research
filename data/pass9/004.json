@@ -1,0 +1,100 @@
+{
+  "app": {
+    "number": 4,
+    "name": "Attio",
+    "category": "CRM and Sales",
+    "hint": "attio.com"
+  },
+  "replayed_at": "2026-11-23T18:41:29.791173+00:00",
+  "source_passes": [
+    "data/pass2/004.json",
+    "data/pass4/004.json"
+  ],
+  "source_searches": [
+    "data/new_search/004.json",
+    "data/pass4_search/004.json"
+  ],
+  "publication_date_note": "Search publication labels are retained exactly; null means no label was available. Relative labels are not exact dates.",
+  "claims": {
+    "auth": {
+      "value": [
+        "API key"
+      ],
+      "status": "provisional",
+      "sources": [
+        "https://attio.com/help/reference/apps/generating-an-api-key"
+      ],
+      "evidence": [
+        {
+          "value": "API key",
+          "url": "https://attio.com/help/reference/apps/generating-an-api-key",
+          "excerpt": "Generate an API key | Attio Help Center Help / Reference / Apps / Generate an API key Table of Contents Generate an API key Manage API keys Keeping your data safe Available on all plans. Ad",
+          "published_label": null
+        }
+      ],
+      "reason": "Provisional extraction; validate scope and completeness against cited pages."
+    },
+    "credential_gate": {
+      "value": [
+        "paid_plan",
+        "self_serve_trial"
+      ],
+      "status": "provisional",
+      "sources": [
+        "https://attio.com/help/reference/workspace-settings-billing/attio-plans-and-features"
+      ],
+      "evidence": [
+        {
+          "value": "paid_plan",
+          "url": "https://attio.com/help/reference/workspace-settings-billing/attio-plans-and-features",
+          "excerpt": "Copy link Ideal for very small teams (up to three seats). For additional seats, choose a paid plan. The Free plan includes the following features. Objects and records Copy link Use Companies and People objects, with an option to enable one additional standard object :",
+          "published_label": null
+        },
+        {
+          "value": "self_serve_trial",
+          "url": "https://attio.com/help/reference/workspace-settings-billing/attio-plans-and-features",
+          "excerpt": "by visiting the Plans page within workspace settings. New workspaces begin with a 14-day free trial of the Pro plan, giving your team time to explore all Pro features before choosing a plan. For a full cost breakdown, including add-ons, visit our Pricing page . Each pl",
+          "published_label": null
+        }
+      ],
+      "reason": "Provisional extraction; validate scope and completeness against cited pages."
+    },
+    "api_surface": {
+      "value": "unknown",
+      "status": "provisional",
+      "sources": [],
+      "evidence": [],
+      "reason": "No sufficiently specific official evidence extracted."
+    },
+    "official_mcp": {
+      "value": "unknown",
+      "status": "provisional",
+      "sources": [],
+      "evidence": [],
+      "reason": "No sufficiently specific official evidence extracted."
+    },
+    "composio_toolkit": {
+      "value": "listed",
+      "status": "provisional",
+      "sources": [
+        "https://docs.composio.dev/toolkits/attio"
+      ],
+      "evidence": [],
+      "reason": "Catalog match only; not vendor MCP evidence."
+    },
+    "verdict": {
+      "value": "unknown",
+      "status": "provisional",
+      "sources": [],
+      "evidence": [],
+      "reason": "No sufficiently specific official evidence extracted."
+    }
+  },
+  "validation": [
+    "Automatic extraction is provisional until independently reviewed",
+    "Unknown is not evidence of absence",
+    "Composio evidence cannot establish vendor MCP",
+    "Client-only and negated MCP statements are not vendor-server proof",
+    "API breadth is a text-coverage heuristic, not an endpoint census"
+  ]
+}

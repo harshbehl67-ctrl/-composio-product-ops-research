@@ -1,0 +1,199 @@
+{
+  "app": {
+    "number": 22,
+    "name": "Twilio",
+    "category": "Communications and Messaging",
+    "hint": "twilio.com"
+  },
+  "replayed_at": "2026-11-23T18:41:31.291284+00:00",
+  "source_passes": [
+    "data/pass2/022.json",
+    "data/pass4/022.json"
+  ],
+  "source_searches": [
+    "data/new_search/022.json",
+    "data/pass4_search/022.json"
+  ],
+  "publication_date_note": "Search publication labels are retained exactly; null means no label was available. Relative labels are not exact dates.",
+  "claims": {
+    "auth": {
+      "value": [
+        "API key",
+        "Basic authentication"
+      ],
+      "status": "provisional",
+      "sources": [
+        "https://www.twilio.com/docs/iam/credentials/api",
+        "https://www.twilio.com/docs/iam/api-keys",
+        "https://www.twilio.com/docs/ai/mcp",
+        "https://www.twilio.com/docs/usage/requests-to-twilio",
+        "https://www.twilio.com/docs/iam/access-tokens",
+        "https://www.twilio.com/docs/iam/api-keys/keys-in-console",
+        "https://www.twilio.com/en-us/changelog/account-api-access-new-roles"
+      ],
+      "evidence": [
+        {
+          "value": "API key",
+          "url": "https://www.twilio.com/docs/iam/credentials/api",
+          "excerpt": "Twilio supports HTTP Basic authentication (link takes you to an external page) . Use your API key SID as the username and your API key secret as the password. You can create an API key in the Twilio Console or using the API . Learn more about Twilio API authenticatio",
+          "published_label": null
+        },
+        {
+          "value": "Basic authentication",
+          "url": "https://www.twilio.com/docs/iam/credentials/api",
+          "excerpt": "dback Negative Feedback To authenticate requests to the Twilio APIs, Twilio supports HTTP Basic authentication (link takes you to an external page) . Use your API key SID as the username and your API key secret as the password. You can create an API key in the Twilio Console or u",
+          "published_label": null
+        },
+        {
+          "value": "API key",
+          "url": "https://www.twilio.com/docs/iam/api-keys",
+          "excerpt": "API keys overview | Twilio Skip to content Skip to navigation Skip to topbar Go to the Twilio Docs home page Twilio Docs Search Search Page tools Copy as markdown Useful for sha",
+          "published_label": null
+        },
+        {
+          "value": "API key",
+          "url": "https://www.twilio.com/docs/ai/mcp",
+          "excerpt": "on, and it does not connect to a Twilio account or execute any API calls. No Account SID, API key, or other credential is required or accepted. How it works how-it-works page anchor Positive Feedback Negative Feedback The MCP server exposes two tools that work togeth",
+          "published_label": null
+        },
+        {
+          "value": "API key",
+          "url": "https://www.twilio.com/docs/usage/requests-to-twilio",
+          "excerpt": "wilio APIs, use HTTP Basic authentication (link takes you to an external page) . Use your API key SID as the username and your API key secret as the password. (information) Regional API credentials Twilio API credentials are region-specific resources. If your account",
+          "published_label": null
+        },
+        {
+          "value": "Basic authentication",
+          "url": "https://www.twilio.com/docs/usage/requests-to-twilio",
+          "excerpt": "nk takes you to an external page) . To authenticate requests to the Twilio APIs, use HTTP Basic authentication (link takes you to an external page) . Use your API key SID as the username and your API key secret as the password. (information) Regional API credentials Twilio API cr",
+          "published_label": null
+        },
+        {
+          "value": "API key",
+          "url": "https://www.twilio.com/docs/iam/access-tokens",
+          "excerpt": "cation can choose this identifier. The default SDK implementation includes the SID of the API key used to generate the token and a unique random string. iss is the issuer — the API key containing the secret used to sign the token. sub is the SID of the Twilio Account",
+          "published_label": null
+        },
+        {
+          "value": "API key",
+          "url": "https://www.twilio.com/docs/iam/api-keys/keys-in-console",
+          "excerpt": "Create API keys in Twilio Console | Twilio Skip to content Skip to navigation Skip to topbar Go to the Twilio Docs home page Twilio Docs Search Search Page tools Copy as markdown Usefu",
+          "published_label": null
+        },
+        {
+          "value": "API key",
+          "url": "https://www.twilio.com/en-us/changelog/account-api-access-new-roles",
+          "excerpt": "ccount API Access Admin and Account API Access Viewer . These roles give access to manage API keys, Auth Tokens, OAuth Apps, Credentials and Connect Apps. Unlike existing general roles , these roles can be assigned at the organization, account, or subaccount level, g",
+          "published_label": "11 months ago"
+        }
+      ],
+      "reason": "Provisional extraction; validate scope and completeness against cited pages."
+    },
+    "credential_gate": {
+      "value": "unknown",
+      "status": "provisional",
+      "sources": [],
+      "evidence": [],
+      "reason": "No sufficiently specific official evidence extracted."
+    },
+    "api_surface": {
+      "value": "REST; moderate documented surface",
+      "status": "provisional",
+      "sources": [
+        "https://www.twilio.com/docs/iam/credentials/api",
+        "https://www.twilio.com/docs/iam/api-keys",
+        "https://www.twilio.com/docs/usage/requests-to-twilio",
+        "https://www.twilio.com/docs/iam/access-tokens",
+        "https://www.twilio.com/docs/iam/api-keys/keys-in-console"
+      ],
+      "evidence": [
+        {
+          "value": [
+            "REST"
+          ],
+          "breadth": "narrow",
+          "url": "https://www.twilio.com/docs/iam/credentials/api",
+          "excerpt": "REST API: Credentials | Twilio Skip to content Skip to navigation Skip to topbar Go to the Twilio Docs home page Twilio Docs Search Search Page tools Copy as markdown Useful for sharing or LLM Copy and view Copy as markdown View as markdown Open in assistant Open in ChatGPT Open ",
+          "published_label": null
+        },
+        {
+          "value": [
+            "REST"
+          ],
+          "breadth": "narrow",
+          "url": "https://www.twilio.com/docs/iam/api-keys",
+          "excerpt": "API keys overview | Twilio Skip to content Skip to navigation Skip to topbar Go to the Twilio Docs home page Twilio Docs Search Search Page tools Copy as markdown Useful for sharing or LLM Copy and view Copy as markdown View as markdown Open in assistant Open in ChatGPT Open in C",
+          "published_label": null
+        },
+        {
+          "value": [
+            "REST"
+          ],
+          "breadth": "moderate",
+          "url": "https://www.twilio.com/docs/usage/requests-to-twilio",
+          "excerpt": "Twilio API requests | Twilio Skip to content Skip to navigation Skip to topbar Go to the Twilio Docs home page Twilio Docs Search Search Page tools Copy as markdown Useful for sharing or LLM Copy and view Copy as markdown View as markdown Open in assistant Open in ChatGPT Open in",
+          "published_label": null
+        },
+        {
+          "value": [
+            "REST"
+          ],
+          "breadth": "moderate",
+          "url": "https://www.twilio.com/docs/iam/access-tokens",
+          "excerpt": "Access Tokens | Twilio Skip to content Skip to navigation Skip to topbar Go to the Twilio Docs home page Twilio Docs Search Search Page tools Copy as markdown Useful for sharing or LLM Copy and view Copy as markdown View as markdown Open in assistant Open in ChatGPT Open in Claud",
+          "published_label": null
+        },
+        {
+          "value": [
+            "REST"
+          ],
+          "breadth": "narrow",
+          "url": "https://www.twilio.com/docs/iam/api-keys/keys-in-console",
+          "excerpt": "Create API keys in Twilio Console | Twilio Skip to content Skip to navigation Skip to topbar Go to the Twilio Docs home page Twilio Docs Search Search Page tools Copy as markdown Useful for sharing or LLM Copy and view Copy as markdown View as markdown Open in assistant Open in C",
+          "published_label": null
+        }
+      ],
+      "reason": "Provisional extraction; validate scope and completeness against cited pages."
+    },
+    "official_mcp": {
+      "value": "vendor_server",
+      "status": "provisional",
+      "sources": [
+        "https://www.twilio.com/docs/ai/mcp"
+      ],
+      "evidence": [
+        {
+          "value": "vendor_server",
+          "url": "https://www.twilio.com/docs/ai/mcp",
+          "excerpt": "n in Claude Open in Cursor Open in Perplexity Build with AI Connect your AI agent Install Twilio Skills Twilio MCP server Positive Feedback Negative Feedback (new) Public Beta Twilio MCP and Twilio Skills are available as Public Beta products, and the information contained in this document is subject to change. This means that some features are not yet implemented and others may be cha",
+          "published_label": null,
+          "context_note": "Vendor-owned server statement; review date and access scope."
+        }
+      ],
+      "reason": "Provisional; check date, ownership and access scope."
+    },
+    "composio_toolkit": {
+      "value": "listed",
+      "status": "provisional",
+      "sources": [
+        "https://docs.composio.dev/toolkits/twilio"
+      ],
+      "evidence": [],
+      "reason": "Catalog match only; not vendor MCP evidence."
+    },
+    "verdict": {
+      "value": "unknown",
+      "status": "provisional",
+      "sources": [],
+      "evidence": [],
+      "reason": "No sufficiently specific official evidence extracted."
+    }
+  },
+  "validation": [
+    "Automatic extraction is provisional until independently reviewed",
+    "Unknown is not evidence of absence",
+    "Composio evidence cannot establish vendor MCP",
+    "Client-only and negated MCP statements are not vendor-server proof",
+    "API breadth is a text-coverage heuristic, not an endpoint census"
+  ]
+}

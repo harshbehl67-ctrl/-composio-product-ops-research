@@ -1,0 +1,135 @@
+{
+  "app": {
+    "number": 53,
+    "name": "Ahrefs",
+    "category": "Data, SEO and Scraping",
+    "hint": "ahrefs.com/api"
+  },
+  "replayed_at": "2026-11-23T18:41:06.700086+00:00",
+  "source_passes": [
+    "data/pass2/053.json",
+    "data/pass4/053.json"
+  ],
+  "source_searches": [
+    "data/new_search/053.json",
+    "data/pass4_search/053.json"
+  ],
+  "publication_date_note": "Search publication labels are retained exactly; null means no label was available. Relative labels are not exact dates.",
+  "claims": {
+    "auth": {
+      "value": [
+        "OAuth 2.0",
+        "API token",
+        "API key"
+      ],
+      "status": "provisional",
+      "sources": [
+        "https://docs.ahrefs.com/en/ahrefs-connect/docs/oauth-guide",
+        "https://docs.ahrefs.com/en/api/docs/api-keys-creation-and-management",
+        "https://docs.ahrefs.com/en/mcp/docs/introduction",
+        "https://help.ahrefs.com/en/articles/13913559-getting-started-with-ahrefs-mcp",
+        "https://docs.ahrefs.com/en/api/docs/introduction?trk=article-ssr-frontend-pulse_little-text-block",
+        "https://docs.ahrefs.com/en/api/docs/introduction"
+      ],
+      "evidence": [
+        {
+          "value": "OAuth 2.0",
+          "url": "https://docs.ahrefs.com/en/ahrefs-connect/docs/oauth-guide",
+          "excerpt": ". To do this, your app must obtain an API access token for that user. Ahrefs Connect uses OAuth 2.0 Authorization Code Flow with Proof Key for Code Exchange (PKCE) . The process has two main steps: 1. Authorize the application Redirect the user to: https://app.ahrefs.c",
+          "published_label": null
+        },
+        {
+          "value": "API token",
+          "url": "https://docs.ahrefs.com/en/ahrefs-connect/docs/oauth-guide",
+          "excerpt": "OAuth guide | Ahrefs for Developers ✕ Products For App Developers For Ahrefs Users Introduction For App Developers How it works How to apply OAuth guide API guide Approval process Apps gallery Terms of service For Ahrefs Users How to manage your integrations OAuth guide All API c",
+          "published_label": null
+        },
+        {
+          "value": "API key",
+          "url": "https://docs.ahrefs.com/en/api/docs/api-keys-creation-and-management",
+          "excerpt": "API keys creation and management | Ahrefs for Developers ✕ Products Reference API Reference Introduction Limits consumption Free test queries API keys creation and management Pa",
+          "published_label": null
+        },
+        {
+          "value": "API key",
+          "url": "https://docs.ahrefs.com/en/mcp/docs/introduction",
+          "excerpt": "onsent screen. Once approved, the connection will appear in your account with a dedicated API key (tagged with MCP scope). New keys created through OAuth for MCP or Ahrefs Connect default to a monthly limit of 200,000 API units per key. Workspace admins can change or",
+          "published_label": null
+        },
+        {
+          "value": "API key",
+          "url": "https://help.ahrefs.com/en/articles/13913559-getting-started-with-ahrefs-mcp",
+          "excerpt": "Ahrefs subscription plan. Is my data secure? Yes. The MCP server uses your private Ahrefs API key to fetch data. Your data is only shared with the AI client you have specifically configured on your local machine. I'm seeing a 401 Authentication error Here are some po",
+          "published_label": "2 months ago"
+        },
+        {
+          "value": "API key",
+          "url": "https://docs.ahrefs.com/en/api/docs/introduction?trk=article-ssr-frontend-pulse_little-text-block",
+          "excerpt": "pers ✕ Products Reference API Reference Introduction Limits consumption Free test queries API keys creation and management Parameters Filter syntax Page type and category classifications Changelog API Site Explorer Competitive Analysis Keywords Explorer Site Audit Ra",
+          "published_label": null
+        },
+        {
+          "value": "API key",
+          "url": "https://docs.ahrefs.com/en/api/docs/introduction",
+          "excerpt": "pers ✕ Products Reference API Reference Introduction Limits consumption Free test queries API keys creation and management Parameters Filter syntax Page type and category classifications Changelog API Site Explorer Competitive Analysis Keywords Explorer Site Audit Ra",
+          "published_label": null
+        }
+      ],
+      "reason": "Provisional extraction; validate scope and completeness against cited pages."
+    },
+    "credential_gate": {
+      "value": "unknown",
+      "status": "provisional",
+      "sources": [],
+      "evidence": [],
+      "reason": "No sufficiently specific official evidence extracted."
+    },
+    "api_surface": {
+      "value": "unknown",
+      "status": "provisional",
+      "sources": [],
+      "evidence": [],
+      "reason": "No sufficiently specific official evidence extracted."
+    },
+    "official_mcp": {
+      "value": "vendor_server",
+      "status": "provisional",
+      "sources": [
+        "https://help.ahrefs.com/en/articles/13913559-getting-started-with-ahrefs-mcp"
+      ],
+      "evidence": [
+        {
+          "value": "vendor_server",
+          "url": "https://help.ahrefs.com/en/articles/13913559-getting-started-with-ahrefs-mcp",
+          "excerpt": "le SEO & marketing data Written by Constance Tan September 22, 2026 Table of contents The Ahrefs MCP server allows you to connect Ahrefs’ API to your AI tool of choice (ChatGPT, Claude, Copilot, etc.) No code required. Just chat in plain English to pull SEO insights, analyze competit",
+          "published_label": "2 months ago",
+          "context_note": "Vendor-owned server statement; review date and access scope."
+        }
+      ],
+      "reason": "Provisional; check date, ownership and access scope."
+    },
+    "composio_toolkit": {
+      "value": "listed",
+      "status": "provisional",
+      "sources": [
+        "https://docs.composio.dev/toolkits/ahrefs"
+      ],
+      "evidence": [],
+      "reason": "Catalog match only; not vendor MCP evidence."
+    },
+    "verdict": {
+      "value": "unknown",
+      "status": "provisional",
+      "sources": [],
+      "evidence": [],
+      "reason": "No sufficiently specific official evidence extracted."
+    }
+  },
+  "validation": [
+    "Automatic extraction is provisional until independently reviewed",
+    "Unknown is not evidence of absence",
+    "Composio evidence cannot establish vendor MCP",
+    "Client-only and negated MCP statements are not vendor-server proof",
+    "API breadth is a text-coverage heuristic, not an endpoint census"
+  ]
+}

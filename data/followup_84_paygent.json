@@ -1,0 +1,261 @@
+{
+  "number": 84,
+  "app": "Paygent Connect",
+  "category": "Finance and Fintech",
+  "summary": "Paygent Connect documents a bearer-authenticated REST payment overview, a free sandbox, and paid production access with merchant onboarding on its first-party gopaygent.com and branded gateway domains. The reviewed official documentation does not document a Paygent-operated MCP server.",
+  "blocker": "Public pages stop at overviews: no public endpoint schema or API-key issuance workflow was found, and the homepage's example API host returned a TLS-name error on 2026-11-24. Production also involves merchant onboarding and paid processing, so a live integration is not yet verified.",
+  "next_action": "Obtain a working official endpoint reference and sandbox credential-issuance flow from Paygent, confirm current production pricing and merchant approval, then test sandbox tokenization, payments, and webhooks. Request MCP documentation only if Paygent confirms a vendor server; do not substitute NMI's documentation MCP.",
+  "fields": {
+    "auth": {
+      "status": "checked",
+      "value": [
+        "Bearer API key in the Authorization header (official homepage cURL example; placeholder pgt_live_xxx)"
+      ],
+      "reason": "The undated official homepage displays an API request using an Authorization: Bearer header with the placeholder pgt_live_xxx. This verifies only the authentication method shown in that example, not a formal authentication reference, key issuance, scopes, rotation, or current reachability of the example API host. The separate Paygent-branded merchant portal uses a username/password control-panel login; that is not evidence of API-key authentication.",
+      "evidence": [
+        {
+          "url": "https://www.gopaygent.com/",
+          "title": "Paygent | Merchant Payments and Tapn Tap-to-Pay Solutions",
+          "quote": "Authorization: Bearer pgt_live_xxx",
+          "retrieved_at": "2026-11-24",
+          "published_at": null,
+          "published_label": "undated"
+        },
+        {
+          "url": "https://paygent.transactiongateway.com/",
+          "title": "Payment Gateway",
+          "quote": "Merchant Login\n\nTo access your control panel, please enter your username and password in the fields below.",
+          "retrieved_at": "2026-11-24",
+          "published_at": null,
+          "published_label": "undated"
+        }
+      ]
+    },
+    "credential_gate": {
+      "status": "checked",
+      "value": "mixed",
+      "gate_class": "mixed",
+      "reason": "The undated pricing FAQ explicitly offers a no-cost sandbox with full API access and no credit card, while the same page lists Paygent Platform production pricing of a $15 monthly gateway fee plus $0.10 per transaction. Signup is a merchant onboarding request, Connect documents automated underwriting/onboarding, and the Terms updated 2026-04-23 require accurate business and beneficial-ownership information. This supports mixed free-sandbox/paid-production access rather than unrestricted self-serve production; public API-key issuance steps remain undocumented.",
+      "evidence": [
+        {
+          "url": "https://www.gopaygent.com/pricing",
+          "title": "Paygent | The Premier Stripe & PayPal Alternative for API Payments",
+          "quote": "We offer a sandbox environment with full API access at no cost. You can test transactions, webhooks, and integrations before going live. No credit card required to start.",
+          "retrieved_at": "2026-11-24",
+          "published_at": null,
+          "published_label": "undated"
+        },
+        {
+          "url": "https://www.gopaygent.com/pricing",
+          "title": "Paygent | The Premier Stripe & PayPal Alternative for API Payments",
+          "quote": "PAYGENT PLATFORM\nDeveloper & B2B\n\nFor SaaS, Wholesalers, and Platforms.\n\nMONTHLY GATEWAY\n\n$15\n\nPER TRANSACTION\n\n$0.10",
+          "retrieved_at": "2026-11-24",
+          "published_at": null,
+          "published_label": "undated"
+        },
+        {
+          "url": "https://www.gopaygent.com/signup",
+          "title": "Get Started with Paygent | Merchant Onboarding Request",
+          "quote": "MERCHANT SIGNUP\nCreate Your Account\n\nJoin Paygent and get access to the TapN Soft POS and industry-leading payment gateways.",
+          "retrieved_at": "2026-11-24",
+          "published_at": null,
+          "published_label": "undated"
+        },
+        {
+          "url": "https://www.gopaygent.com/products/connect",
+          "title": "Paygent | The Premier Stripe & PayPal Alternative for API Payments",
+          "quote": "Use the Pathfinder API to completely automate underwriting and onboarding within your own application.",
+          "retrieved_at": "2026-11-24",
+          "published_at": null,
+          "published_label": "undated"
+        },
+        {
+          "url": "https://www.gopaygent.com/terms",
+          "title": "Paygent | The Premier Stripe & PayPal Alternative for API Payments",
+          "quote": "Provide accurate business and beneficial ownership information during onboarding.",
+          "retrieved_at": "2026-11-24",
+          "published_at": "2026-04-23",
+          "published_label": "Last updated: April 23, 2026"
+        }
+      ]
+    },
+    "api_surface": {
+      "status": "checked",
+      "value": "REST; moderate documented surface at overview level, without a public endpoint schema",
+      "api_types": [
+        "REST"
+      ],
+      "breadth": "moderate",
+      "reason": "Paygent's undated homepage and Connect page document REST APIs for payments, customers, payouts, automated merchant onboarding, and event notifications; the developer page names Pathfinder, Collect.js, and Three-Step Redirect. NMI's official Pathfinder guide corroborates merchant-management APIs for the same named stack, but the accessible NMI pages reviewed do not name Paygent, so the NMI relationship rests on Paygent's own documentation and branded gateway portal rather than an NMI statement naming Paygent. Moderate describes the named operation families, not a verified endpoint count: the API Reference navigation resolves to an SDK page and no public endpoint schema was found.",
+      "evidence": [
+        {
+          "url": "https://www.gopaygent.com/",
+          "title": "Paygent | Merchant Payments and Tapn Tap-to-Pay Solutions",
+          "quote": "Build marketplace payments, revenue sharing, and automated onboarding with Paygent Connect.",
+          "retrieved_at": "2026-11-24",
+          "published_at": null,
+          "published_label": "undated"
+        },
+        {
+          "url": "https://www.gopaygent.com/",
+          "title": "Paygent | Merchant Payments and Tapn Tap-to-Pay Solutions",
+          "quote": "Accept payments, create customers, send payouts, and automate everything.",
+          "retrieved_at": "2026-11-24",
+          "published_at": null,
+          "published_label": "undated"
+        },
+        {
+          "url": "https://www.gopaygent.com/",
+          "title": "Paygent | Merchant Payments and Tapn Tap-to-Pay Solutions",
+          "quote": "Clean, predictable, and fully documented REST APIs for every payment workflow.",
+          "retrieved_at": "2026-11-24",
+          "published_at": null,
+          "published_label": "undated"
+        },
+        {
+          "url": "https://www.gopaygent.com/",
+          "title": "Paygent | Merchant Payments and Tapn Tap-to-Pay Solutions",
+          "quote": "Real-time event notifications with retry logic and delivery guarantees.",
+          "retrieved_at": "2026-11-24",
+          "published_at": null,
+          "published_label": "undated"
+        },
+        {
+          "url": "https://www.gopaygent.com/developers/docs",
+          "title": "Paygent | The Premier Stripe & PayPal Alternative for API Payments",
+          "quote": "Deep dive into the Pathfinder API, Collect.js, and Three-Step Redirect logic.",
+          "retrieved_at": "2026-11-24",
+          "published_at": null,
+          "published_label": "undated"
+        },
+        {
+          "url": "https://guide.nmi.com/",
+          "title": "Pathfinder",
+          "quote": "Onboard and manage merchants with tools and APIs designed to simplify their journey.",
+          "retrieved_at": "2026-11-24",
+          "published_at": null,
+          "published_label": "undated"
+        }
+      ]
+    },
+    "official_mcp": {
+      "status": "checked",
+      "value": "no_vendor_server_documented",
+      "review_basis": "scoped_documentation_review",
+      "mcp_mode": "unknown",
+      "reason": "Scoped documentation review of Paygent's official developer docs, SDK page, MCP route, sitemap, and NMI's underlying platform documentation found no vendor server for Paygent Connect. The Paygent MCP route returns 404 and the sitemap lists no MCP URL; NMI's separate Developer Docs MCP is explicitly limited to NMI documentation and is not attributed to Paygent. This is a point-in-time documentation finding, not a universal absence claim. The reviewed Paygent pages are undated; NMI metadata shows updatedAt 2026-10-28 without a publication date.",
+      "evidence": [
+        {
+          "url": "https://www.gopaygent.com/developers/docs",
+          "title": "Paygent | The Premier Stripe & PayPal Alternative for API Payments",
+          "quote": "Deep dive into the Pathfinder API, Collect.js, and Three-Step Redirect logic.",
+          "retrieved_at": "2026-11-24",
+          "published_at": null,
+          "published_label": "undated"
+        },
+        {
+          "url": "https://www.gopaygent.com/developers/sdk",
+          "title": "Paygent | The Premier Stripe & PayPal Alternative for API Payments",
+          "quote": "Pre-built integrations for iOS, Android, and Windows/Linux environments.",
+          "retrieved_at": "2026-11-24",
+          "published_at": null,
+          "published_label": "undated"
+        },
+        {
+          "url": "https://www.gopaygent.com/developers/mcp",
+          "title": "Paygent | The Premier Stripe & PayPal Alternative for API Payments",
+          "quote": "404\nPage not found\n\nThe page you're looking for doesn't exist or has been moved. Let's get you back on track.",
+          "retrieved_at": "2026-11-24",
+          "published_at": null,
+          "published_label": "undated"
+        },
+        {
+          "url": "https://www.gopaygent.com/sitemap.xml",
+          "title": "Paygent Sitemap developer URLs",
+          "quote": "<loc>https://paygent.transactiongateway.com/developers/docs</loc>\n<changefreq>daily</changefreq>\n<priority>0.9</priority>\n</url>\n<url>\n<loc>https://paygent.transactiongateway.com/developers/sdk</loc>\n<changefreq>monthly</changefreq>\n<priority>0.7</priority>",
+          "retrieved_at": "2026-11-24",
+          "published_at": null,
+          "published_label": "undated"
+        },
+        {
+          "url": "https://docs.nmi.com/docs/mcp.md",
+          "title": "Developer Docs MCP",
+          "quote": "The NMI Developer Docs MCP provides access to NMI developer documentation only. It does not connect to your NMI account, transaction data, or gateway configuration.",
+          "retrieved_at": "2026-11-24",
+          "published_at": null,
+          "published_label": "official page metadata updatedAt 2026-10-28T16:32:14.000Z; no publication date shown"
+        }
+      ]
+    },
+    "composio_toolkit": {
+      "status": "checked",
+      "value": "not_listed",
+      "reason": "The preserved 2026-11-24 complete-catalog review of 1,841 Composio toolkits found no exact Paygent Connect or Paygent toolkit row and no approved alias; NMI, namesake Paygent products, and vendor MCPs were not substituted. The full catalog was not re-fetched for this follow-up, so this remains the preserved checked not-listed result.",
+      "evidence": [
+        {
+          "url": "https://docs.composio.dev/toolkits.md",
+          "title": "Composio Toolkits",
+          "quote": "Composio supports 1841 toolkits for building AI agents.",
+          "retrieved_at": "2026-11-24",
+          "published_at": null,
+          "published_label": "undated"
+        },
+        {
+          "url": "https://docs.composio.dev/toolkits.md",
+          "title": "Composio Toolkits",
+          "quote": "## All Toolkits\n\n| Toolkit | Slug | Tools | Triggers | Auth | Managed App |",
+          "retrieved_at": "2026-11-24",
+          "published_at": null,
+          "published_label": "undated"
+        }
+      ]
+    },
+    "verdict": {
+      "status": "checked",
+      "value": "gated_build_candidate",
+      "reason": "Undated official first-party pages document a REST payment platform and bearer-key example, with a no-card full-API sandbox for prototyping. Production has $15/month plus $0.10/transaction pricing and merchant onboarding/ownership requirements, while the endpoint schema, working API host, and key issuance remain unverified. The Terms were updated 2026-04-23. This supports a gated build candidate rather than a verified ready-to-build integration; neither a Paygent-specific MCP nor a Composio toolkit is established.",
+      "evidence": [
+        {
+          "url": "https://www.gopaygent.com/",
+          "title": "Paygent | Merchant Payments and Tapn Tap-to-Pay Solutions",
+          "quote": "Authorization: Bearer pgt_live_xxx",
+          "retrieved_at": "2026-11-24",
+          "published_at": null,
+          "published_label": "undated"
+        },
+        {
+          "url": "https://www.gopaygent.com/",
+          "title": "Paygent | Merchant Payments and Tapn Tap-to-Pay Solutions",
+          "quote": "Clean, predictable, and fully documented REST APIs for every payment workflow.",
+          "retrieved_at": "2026-11-24",
+          "published_at": null,
+          "published_label": "undated"
+        },
+        {
+          "url": "https://www.gopaygent.com/pricing",
+          "title": "Paygent | The Premier Stripe & PayPal Alternative for API Payments",
+          "quote": "We offer a sandbox environment with full API access at no cost. You can test transactions, webhooks, and integrations before going live. No credit card required to start.",
+          "retrieved_at": "2026-11-24",
+          "published_at": null,
+          "published_label": "undated"
+        },
+        {
+          "url": "https://www.gopaygent.com/pricing",
+          "title": "Paygent | The Premier Stripe & PayPal Alternative for API Payments",
+          "quote": "PAYGENT PLATFORM\nDeveloper & B2B\n\nFor SaaS, Wholesalers, and Platforms.\n\nMONTHLY GATEWAY\n\n$15\n\nPER TRANSACTION\n\n$0.10",
+          "retrieved_at": "2026-11-24",
+          "published_at": null,
+          "published_label": "undated"
+        },
+        {
+          "url": "https://www.gopaygent.com/terms",
+          "title": "Paygent | The Premier Stripe & PayPal Alternative for API Payments",
+          "quote": "Provide accurate business and beneficial ownership information during onboarding.",
+          "retrieved_at": "2026-11-24",
+          "published_at": "2026-04-23",
+          "published_label": "Last updated: April 23, 2026"
+        }
+      ]
+    }
+  }
+}

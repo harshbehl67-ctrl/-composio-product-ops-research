@@ -1,0 +1,101 @@
+{
+  "app": {
+    "number": 31,
+    "name": "Google Ads",
+    "category": "Marketing, Ads, Email and Social",
+    "hint": "developers.google.com/google-ads"
+  },
+  "replayed_at": "2026-11-23T18:16:36.950090+00:00",
+  "source_passes": [
+    "data/pass2/031.json",
+    "data/pass4/031.json"
+  ],
+  "source_search": "data/new_search/031.json",
+  "publication_date_note": "Published labels are retained exactly as supplied by search; missing labels are null. Relative labels must not be treated as exact publication dates.",
+  "claims": {
+    "auth": {
+      "value": [
+        "OAuth 2.0"
+      ],
+      "sources": [
+        "https://developers.google.com/google-ads/api/rest/auth",
+        "https://developers.google.com/google-ads/api/docs/oauth/cloud-project"
+      ],
+      "evidence": [
+        {
+          "value": "OAuth 2.0",
+          "url": "https://developers.google.com/google-ads/api/rest/auth",
+          "excerpt": "ased on your preferences. Page Summary outlined_flag When calling the Google Ads API, you need both OAuth 2.0 application credentials and a developer token. If making API calls with a Google Ads manager account, you must specify a login-customer-id header. You can use desktop/web app flow",
+          "published_label": null
+        },
+        {
+          "value": "OAuth 2.0",
+          "url": "https://developers.google.com/google-ads/api/docs/oauth/cloud-project",
+          "excerpt": "ating and configuring a Google API Console project for Google Ads API access depends on your chosen OAuth 2.0 authorization scenario (service accounts or user authentication). A Google API Console project is necessary to create OAuth 2.0 credentials and enable the Google Ads API, which ar",
+          "published_label": null
+        }
+      ],
+      "reason": "Provisional extraction: validate scope and completeness against the cited page."
+    },
+    "credential_gate": {
+      "value": [
+        "approval required"
+      ],
+      "sources": [
+        "https://developers.google.com/google-ads/api/docs/productionize/access-levels"
+      ],
+      "evidence": [
+        {
+          "value": "approval required",
+          "url": "https://developers.google.com/google-ads/api/docs/productionize/access-levels",
+          "excerpt": "ns Save and categorize content based on your preferences. Page Summary outlined_flag The Google Ads API has access levels tied to the developer token and requires an application review to grant them. Start with Basic Access and apply for Standard Access as your application grows, allowing for the potential review time. The Required Minimum Functionality (RMF) on",
+          "published_label": null
+        }
+      ],
+      "reason": "Provisional extraction: validate scope and completeness against the cited page."
+    },
+    "api_surface": {
+      "value": "unknown",
+      "sources": [],
+      "evidence": [],
+      "reason": "No sufficiently specific positive evidence extracted; review targeted search results."
+    },
+    "official_mcp": {
+      "value": "yes (provisional)",
+      "sources": [
+        "https://developers.google.com/google-ads/api/docs/developer-toolkit/mcp-server"
+      ],
+      "evidence": [
+        {
+          "value": "yes (provisional)",
+          "url": "https://developers.google.com/google-ads/api/docs/developer-toolkit/mcp-server",
+          "excerpt": "Google Ads MCP server: Developer integration guide  |  Google Ads API  |  Google for Developers Skip to main content Google Ads API / English Deutsch Español Español – América Latin",
+          "published_label": null,
+          "context_warning": "Review vendor ownership, dates, and scope."
+        }
+      ],
+      "reason": "Provisional; check source date, scope, and vendor ownership."
+    },
+    "composio_toolkit": {
+      "value": "listed",
+      "sources": [
+        "https://docs.composio.dev/toolkits/googleads"
+      ],
+      "evidence": [],
+      "reason": "Catalog match; scope needs review."
+    },
+    "verdict": {
+      "value": "unknown",
+      "sources": [],
+      "evidence": [],
+      "reason": "A supported access path, authentication method and API surface were not all extracted."
+    }
+  },
+  "validation": [
+    "Automatic extraction is provisional and not a verified final claim",
+    "Unknown is not evidence of absence",
+    "No Composio-to-vendor-MCP inference",
+    "Basic authentication may be endpoint-specific",
+    "Client-only and negated statements are not positive MCP evidence"
+  ]
+}

@@ -1,0 +1,191 @@
+{
+  "app": {
+    "number": 30,
+    "name": "Vonage",
+    "category": "Communications and Messaging",
+    "hint": "developer.vonage.com"
+  },
+  "checked_at": "2026-11-23T18:15:01.630191+00:00",
+  "prior_source": "data/pass2/030.json",
+  "search_source": "data/pass4_search/030.json",
+  "new_candidates": [
+    {
+      "url": "https://developer.vonage.com/en/dashboard/control/api-settings",
+      "title": "API Settings (https://developer.vonage.com/en/dashboard/control/api-settings)",
+      "published_label": null
+    },
+    {
+      "url": "https://developer.vonage.com/en/learning-center/messages~get-started-sms-messages-api/courses/messages~get-started-sms-messages-api~setup/modules/module-1",
+      "title": "Course | Vonage API Developer (https://developer.vonage.com/en/learning-center/messages~get-started-sms-messages-api/courses/messages~get-started-sms-messages-api~setup/modules/module-1)",
+      "published_label": null
+    },
+    {
+      "url": "https://developer.vonage.com/en/voice/voice-api/getting-started?lang=using-dashboard",
+      "title": "Getting Started with Voice API | Vonage API Documentation (https://developer.vonage.com/en/voice/voice-api/getting-started?lang=using-dashboard)",
+      "published_label": null
+    },
+    {
+      "url": "https://developer.vonage.com/en/voice/voice-api/getting-started?source=voice",
+      "title": "Getting Started with Voice API | Vonage API Documentation (https://developer.vonage.com/en/voice/voice-api/getting-started?source=voice)",
+      "published_label": null
+    },
+    {
+      "url": "https://developer.vonage.com/en/getting-started-network/guides/server-authentication",
+      "title": "Server Authentication | Vonage API Documentation (https://developer.vonage.com/en/getting-started-network/guides/server-authentication)",
+      "published_label": null
+    },
+    {
+      "url": "https://developer.vonage.com/en/vonage-business-cloud/getting-started/create-a-developer-account",
+      "title": "Create a Developer Account (https://developer.vonage.com/en/vonage-business-cloud/getting-started/create-a-developer-account)",
+      "published_label": null
+    },
+    {
+      "url": "https://developer.vonage.com/en/getting-started/concepts/authentication",
+      "title": "Authentication - API Concepts | Vonage API Documentation (https://developer.vonage.com/en/getting-started/concepts/authentication)",
+      "published_label": null
+    },
+    {
+      "url": "https://developer.vonage.com/en/getting-started/concepts/authentication?source=number-insight",
+      "title": "Authentication - API Concepts | Vonage API Documentation (https://developer.vonage.com/en/getting-started/concepts/authentication?source=number-insight)",
+      "published_label": null
+    },
+    {
+      "url": "https://developer.vonage.com/api/v1/developer/assets/pdf/EB_DEV_MONGODB-ATLAS.pdf",
+      "title": "Vonage Communications APIs with MongoDB Atlas (https://developer.vonage.com/api/v1/developer/assets/pdf/EB_DEV_MONGODB-ATLAS.pdf)",
+      "published_label": "3.4 years ago"
+    }
+  ],
+  "selected": [
+    {
+      "url": "https://developer.vonage.com/en/getting-started-network/guides/server-authentication",
+      "title": "Server Authentication | Vonage API Documentation (https://developer.vonage.com/en/getting-started-network/guides/server-authentication)",
+      "published_label": null
+    },
+    {
+      "url": "https://developer.vonage.com/en/dashboard/control/api-settings",
+      "title": "API Settings (https://developer.vonage.com/en/dashboard/control/api-settings)",
+      "published_label": null
+    }
+  ],
+  "new_pages": [
+    {
+      "url": "https://developer.vonage.com/en/getting-started-network/guides/server-authentication",
+      "requested_url": "https://developer.vonage.com/en/getting-started-network/guides/server-authentication",
+      "status": 200,
+      "title": "Server Authentication | Vonage API Documentation (https://developer.vonage.com/en/getting-started-network/guides/server-authentication)",
+      "text": "Server Authentication | Vonage API Documentation Skip to Main Content Server Authentication Prerequisites This guide assumes you have completed the following requirements: Network Features capability is enabled in your Vonage application. Follow this guide to read detailed information on how to do it. You have a valid JWT . You can use our online generator to create a JWT using your private key and the ID of your Vonage application, both found in the customer dashboard , or follow the instructions here to use another method. Auth API Reference The OpenAPI specification for the Network Feature auth endpoints is available here . Authentication Flow Making an API call is a three-step process: The backend application requests an authorization id . The backend application uses that authorization id to request a CAMARA access token . Finally, the backend application uses the access token to make the API call . Make an OIDC Request OpenID Connect (OIDC) is an identity layer built on top of the OAuth 2.0 protocol, which provides a way to verify a user's identity using the JWT token. POST https://api-eu.vonage.com/oauth2/bc-authorize Copy curl - X POST https : //api-eu.vonage.com/oauth2/bc-authorize \\ -- header \"Authorization: Bearer $JWT\" \\ -- header \"Content-Type: application/x-www-form-urlencoded\" \\ -- data - urlencode \"login_hint=$PHONE_NUMBER\" \\ -- data - urlencode \"scope=$SCOPE\" Headers Header Description Authorization Must be set to Bearer along with the JWT token generated in the previous step. The JWT must correlate to the App that is approved for the Network Features usage. Content-Type Must be set to application/x-www-form-urlencoded . Body Parameters Parameter Description login_hint (Required) The phone number (including country code) you wish to check, e.g. +447700900000 scope (Required) Scope in string format. If you want to make an API call against a different phone number, you must generate a new access token for that number. Response On success, the response will have a 200 OK status and the following JSON data in the response body: Copy { \"auth_req_id\" : \"$AUTH_REQ_ID\" , \"expires_in\" : 120 , \"interval\" : 2 } Parameter Type Description auth_req_id string The authorization id string you'll need for the next step. expires_in int The number of seconds until the authentication code expires interval int The number of seconds until the next request should be made Request a CAMARA Access Token To request a CAMARA access token, send a POST request to https://api-eu.vonage.com/oauth2/token Copy curl - X POST https : //api-eu.vonage.com/oauth2/token \\ -- header \"Authorization: Bearer $JWT\" \\ -- header \"Content-Type: application/x-www-form-urlencoded\" \\ -- data - urlencode \"auth_req_id=$AUTH_REQ_ID\" \\ -- data - urlencode \"grant_type=urn:openid:params:grant-type:ciba\" Headers Header Description Authorization Must be set to Bearer along with the JWT token generated in the previous step. The JWT must correlate to the App that is approved for the Network Features usage. Content-Type Must be set to application/x-www-form-urlencoded . Body Parameters Parameter Description auth_req_id (Required) This is provided in the response of the previous step . grant_type (Required) Must be set to urn:openid:params:grant-type:ciba . Response On success, the response will have a 200 OK status and the following JSON data in the response body: Copy { \"access_token\" : \"$ACCESS_TOKEN\" , \"token_type\" : \"Bearer\" , \"expires_in\" : 3600 } Parameter Type Description access_token string The access token that will be used during the API calls. token_type string It is always set to Bearer . expires_in int The time period (in seconds) for which the access token is valid. Make the API call All Network Feature calls must contain the following header: Header Description Authorization Must be set to Bearer along with the access token generated in the previous step . Request Example The following example shows how to make an API call to SIM Swap API using the access token: Copy curl - X POST https : //api-eu.vonage.com/camara/sim-swap/v040/check \\ -- header \"Authorization: Bearer $ACCESS_TOKEN\" \\ -- header \"Content-Type: application/json\" \\ -- data $ ' { \"phoneNumber\" : \"'$PHONE_NUMBER'\" , \"maxAge\" : 240 } ' Response Example On success, the response will have a 200 OK status and the following JSON data in the response body: Copy { \"swapped\" : true }",
+      "published_label": null
+    },
+    {
+      "url": "https://developer.vonage.com/en/dashboard/control/api-settings",
+      "requested_url": "https://developer.vonage.com/en/dashboard/control/api-settings",
+      "status": 200,
+      "title": "API Settings (https://developer.vonage.com/en/dashboard/control/api-settings)",
+      "text": "API Settings Skip to Main Content API Settings The API Settings page allows you to manage your API credentials, configure webhooks, and control SMS API behavior. Each API key has its own set of credentials and configuration. Access API Settings Log in to your Vonage Dashboard Navigate to Settings → API Settings in the left sidebar. Select an API key at the top. Once you've selected an API key, Need more API keys? Click Request more API keys to create additional keys for different environments or use cases. API Key & Secret Your API key is displayed at the top of the page in the account dropdown. This is a public identifier used in API requests. You can also give it a Nickname identify it throughout the platform (e.g., \"Production\", \"Development\", \"Testing\"). Your API secrets are shown in the API Key Secret section: API secret 1 - Your primary authentication secret (masked by default) API secret 2 - Your secondary secret for rotation (masked by default) If you don't already have a second API secret, you'll be able to create one here by clicking the 'create new secret' link. Messaging API Type Configure how Vonage handles SMS messages for this API key. Vonage has two different APIs for sending SMS. You can only use one at a time because it changes the format of webhooks you receive. Choose your API: SMS API - Legacy API with simpler webhook format (GET or POST) Messages API - Modern multi-channel API with JSON webhooks Click the appropriate button to select which API you want to use. Per-number webhooks: You can optionally set different inbound webhooks for each of your Vonage numbers by clicking manage on the Your numbers page . SMS API Webhook Format For SMS API only , select the format for delivery receipt (DLR) webhooks: Click the Webhook format dropdown. Choose from: GET - Webhook data sent as URL query parameters POST - Webhook data sent as form-encoded body POST-JSON - Webhook data sent as JSON body (recommended) Delivery Receipts (DLR) Webhooks Receive delivery status updates for outbound SMS messages. In the Delivery receipts (DLR) webhooks field, enter your webhook URL. Example: https://example.com/webhooks/delivery-receipt When an SMS is delivered (or fails), Vonage sends an update to this URL. For webhook payload details, see the SMS API Webhooks Reference . Inbound SMS Webhooks Receive notifications when someone sends an SMS to your Vonage number. In the Inbound SMS webhooks field, enter your webhook URL. Example: https://example.com/webhooks/inbound-sms When someone texts your Vonage number, the message is forwarded to this URL. For webhook payload details, see the SMS API Inbound Message Reference . Messages API Note: These settings are for default webhooks when using the Messages API. For greater security and flexibility we recommend configuring webhooks with an application; learn more in the Messages API documentation . Status Webhooks Receive status updates for outbound messages. In the Status webhooks field, enter your webhook URL. Example: https://example.com/webhooks/status-updates When the status of a message you have sent changes, Vonage sends an update to this URL. For webhook payload details, see the Messages API Webhooks Reference . Inbound Webhooks Receive notifications when a customer sends a message to you. In the Inbound webhooks field, enter your webhook URL. Example: https://example.com/webhooks/inbound-message When someone messages you via any of your Messages API channels, the message is forwarded to this URL. For webhook payload details, see the Messages API Inbound Message Reference . Signed Webhooks Add an optional layer of security to verify that webhook requests are coming from Vonage and haven't been tampered with during transit. Signature Secret A secret key used to generate the signature included in webhook requests. In the Signed webhooks section, view your Signature secret (masked by default). Click the eye icon to reveal the secret. Click the copy icon to copy it to your clipboard. Signature Method Choose the algorithm used to create the webhook signature: Click the Signature method dropdown. Choose from: MD5 HASH signature (legacy, not recommended) MD5 HMAC signature SHA1 HMAC signature SHA-256 HMAC signature (recommended) SHA-512 HMAC signature (most secure) When enabled, incoming webhook requests include a JWT token in the authorization header, which is signed with your signature secret. Learn more about validating signed webhooks . Compliance HIPAA Numbers If your account has been enabled to purchase HIPAA-compliant numbers, you'll see the following notice: This account has been enabled to purchase HIPAA numbers. Go to your campaign page to request and enable a HIPAA compliant number. Contact your Vonage account manager if you need to enable HIPAA compliance for your use case.",
+      "published_label": null
+    }
+  ],
+  "claims": {
+    "auth": {
+      "value": [
+        "API key",
+        "Basic authentication",
+        "OAuth 2.0"
+      ],
+      "sources": [
+        "https://developer.vonage.com/en/verify/concepts/authentication",
+        "https://developer.vonage.com/en/getting-started-network/guides/server-authentication"
+      ],
+      "evidence": [
+        {
+          "value": "API key",
+          "url": "https://developer.vonage.com/en/verify/concepts/authentication",
+          "excerpt": "Auth Quick testing / POC JWT Bearer Production Basic Authentication Basic Authentication sends your API Key and API Secret Base64-encoded in the Authorization header. You can find these credentials in your API settings in the Vonage Dashboard. It is the simplest way to get started with ",
+          "published_label": null
+        },
+        {
+          "value": "Basic authentication",
+          "url": "https://developer.vonage.com/en/verify/concepts/authentication",
+          "excerpt": " Documentation Skip to Main Content Authentication Verify API supports two types of authentication: Basic Authentication JWT When should you use Basic Authentication or JWT? Verify supports two authentication methods: Basic authentication and JWT Bearer authentication. Understanding the differences ",
+          "published_label": null
+        },
+        {
+          "value": "OAuth 2.0",
+          "url": "https://developer.vonage.com/en/getting-started-network/guides/server-authentication",
+          "excerpt": " the API call . Make an OIDC Request OpenID Connect (OIDC) is an identity layer built on top of the OAuth 2.0 protocol, which provides a way to verify a user's identity using the JWT token. POST https://api-eu.vonage.com/oauth2/bc-authorize Copy curl - X POST https : //api-eu.vonage.com/o",
+          "published_label": null
+        }
+      ],
+      "reason": "Provisional extraction: validate scope and completeness against the cited page."
+    },
+    "credential_gate": {
+      "value": "unknown",
+      "sources": [],
+      "evidence": [],
+      "reason": "No sufficiently specific positive evidence extracted; review targeted search results."
+    },
+    "api_surface": {
+      "value": "unknown",
+      "sources": [],
+      "evidence": [],
+      "reason": "No sufficiently specific positive evidence extracted; review targeted search results."
+    },
+    "official_mcp": {
+      "value": "yes (provisional)",
+      "sources": [
+        "https://developer.vonage.com/en/mcp-server/how-to-guides/install-tooling-mcp-server",
+        "https://developer.vonage.com/en/mcp-server/technical-details",
+        "https://developer.vonage.com/en/mcp-server/how-to-guides/install-documentation-mcp-server",
+        "https://developer.vonage.com/en/mcp-server/overview"
+      ],
+      "evidence": [
+        {
+          "value": "yes (provisional)",
+          "url": "https://developer.vonage.com/en/mcp-server/how-to-guides/install-tooling-mcp-server",
+          "excerpt": "How to Install the Vonage Server API Bindings MCP Server Skip to Main Content How to Install the Vonage Server API Bindings MCP Server The Vonage Server API Bindings MCP Server , also known as the Tooling MCP Server,",
+          "published_label": null,
+          "context_warning": "Review vendor ownership, dates, and scope."
+        },
+        {
+          "value": "yes (provisional)",
+          "url": "https://developer.vonage.com/en/mcp-server/technical-details",
+          "excerpt": "Technical Details Skip to Main Content Technical Details The Vonage MCP Server allows AI agents and developer tools to interact with Vonage APIs through the Model Context Protocol (MCP) — an open standard that defines how large language m",
+          "published_label": null,
+          "context_warning": "Review vendor ownership, dates, and scope."
+        },
+        {
+          "value": "yes (provisional)",
+          "url": "https://developer.vonage.com/en/mcp-server/how-to-guides/install-documentation-mcp-server",
+          "excerpt": "How to Install the Vonage Documentation MCP Server Skip to Main Content How to Install the Vonage Documentation MCP Server The Vonage Documentation MCP Server lets you query official Vonage API documentation di",
+          "published_label": null,
+          "context_warning": "Review vendor ownership, dates, and scope."
+        },
+        {
+          "value": "yes (provisional)",
+          "url": "https://developer.vonage.com/en/mcp-server/overview",
+          "excerpt": "Vonage MCP Server Overview | Vonage MCP Server Documenation Skip to Main Content Documentation Vonage MCP Server Vonage MCP Server The Vonage MCP Server enables AI agents and developer tools to discover, de",
+          "published_label": null,
+          "context_warning": "Review vendor ownership, dates, and scope."
+        }
+      ],
+      "reason": "Provisional; check source date, scope, and vendor ownership."
+    },
+    "composio_toolkit": {
+      "value": "unknown",
+      "sources": [],
+      "evidence": [],
+      "reason": "No exact or reviewed alias match; absence is not established."
+    },
+    "verdict": {
+      "value": "unknown",
+      "sources": [],
+      "evidence": [],
+      "reason": "A supported access path, authentication method and API surface were not all extracted."
+    }
+  },
+  "validation": [
+    "All claims are provisional",
+    "No vendor MCP inference from Composio catalog",
+    "Negated MCP or client-only source is not counted as vendor-server proof"
+  ]
+}

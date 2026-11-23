@@ -1,0 +1,139 @@
+{
+  "app": {
+    "number": 20,
+    "name": "Gladly",
+    "category": "Support and Helpdesk",
+    "hint": "gladly.com"
+  },
+  "replayed_at": "2026-11-23T18:19:17.671377+00:00",
+  "source_passes": [
+    "data/pass2/020.json",
+    "data/pass4/020.json"
+  ],
+  "source_search": "data/new_search/020.json",
+  "publication_date_note": "Published labels are retained exactly as supplied by search; missing labels are null. Relative labels must not be treated as exact publication dates.",
+  "claims": {
+    "auth": {
+      "value": [
+        "API token",
+        "API key",
+        "Basic authentication"
+      ],
+      "sources": [
+        "https://help.gladly.com/implementation/docs/get-your-api-tokens",
+        "https://help.gladly.com/generate-api-tokens-and-create-webhooks",
+        "https://help.gladly.com/docs/generate-api-tokens-and-create-webhooks/"
+      ],
+      "evidence": [
+        {
+          "value": "API token",
+          "url": "https://help.gladly.com/implementation/docs/get-your-api-tokens",
+          "excerpt": "ly. Click the menu icon on the top left, then click Settings . Under App Developer Tools , click on API token . Click Create Token . A new token is immediately generated within the page. Add a meaningful name to the token (optional). This is for reference only. Was this doc helpful? Yes N",
+          "published_label": "1.8 years ago"
+        },
+        {
+          "value": "API key",
+          "url": "https://help.gladly.com/generate-api-tokens-and-create-webhooks",
+          "excerpt": " HTTP Headers (Optional) – There are two columns (Header, Value) required for HTTP Headers (e.g., X-API-Key) to be included in every request. Click Add a Header to add a new line. Click to delete a line. Click Save . This will take you back to the Webhooks page, where the webhook you ju",
+          "published_label": "1.8 years ago"
+        },
+        {
+          "value": "API token",
+          "url": "https://help.gladly.com/generate-api-tokens-and-create-webhooks",
+          "excerpt": "ebhooks. API tokens are tied to a single user account and a particular environment. For example, an API token attached to Gladly user developer@customer.com in the Sandbox environment is not valid for developer@customer.com in the Production environment. We recommend creating a dedicated ",
+          "published_label": "1.8 years ago"
+        },
+        {
+          "value": "Basic authentication",
+          "url": "https://help.gladly.com/generate-api-tokens-and-create-webhooks",
+          "excerpt": "tional) – Enter the password for the app you are integrating. Realm (Optional) – Enter realm to run basic auth against. HTTP Headers (Optional) – There are two columns (Header, Value) required for HTTP Headers (e.g., X-API-Key) to be included in every request. Click Add a Header to add a n",
+          "published_label": "1.8 years ago"
+        },
+        {
+          "value": "API key",
+          "url": "https://help.gladly.com/docs/generate-api-tokens-and-create-webhooks/",
+          "excerpt": " HTTP Headers (Optional) – There are two columns (Header, Value) required for HTTP Headers (e.g., X-API-Key) to be included in every request. Click Add a Header to add a new line. Click to delete a line. Click Save . This will take you back to the Webhooks page, where the webhook you ju",
+          "published_label": "1.8 years ago"
+        },
+        {
+          "value": "API token",
+          "url": "https://help.gladly.com/docs/generate-api-tokens-and-create-webhooks/",
+          "excerpt": "ebhooks. API tokens are tied to a single user account and a particular environment. For example, an API token attached to Gladly user developer@customer.com in the Sandbox environment is not valid for developer@customer.com in the Production environment. We recommend creating a dedicated ",
+          "published_label": "1.8 years ago"
+        },
+        {
+          "value": "Basic authentication",
+          "url": "https://help.gladly.com/docs/generate-api-tokens-and-create-webhooks/",
+          "excerpt": "tional) – Enter the password for the app you are integrating. Realm (Optional) – Enter realm to run basic auth against. HTTP Headers (Optional) – There are two columns (Header, Value) required for HTTP Headers (e.g., X-API-Key) to be included in every request. Click Add a Header to add a n",
+          "published_label": "1.8 years ago"
+        }
+      ],
+      "reason": "Provisional extraction: validate scope and completeness against the cited page."
+    },
+    "credential_gate": {
+      "value": "unknown",
+      "sources": [],
+      "evidence": [],
+      "reason": "No sufficiently specific positive evidence extracted; review targeted search results."
+    },
+    "api_surface": {
+      "value": [
+        "REST"
+      ],
+      "sources": [
+        "https://help.gladly.com/docs/api-export-tool",
+        "https://help.gladly.com/developer-tutorials/docs/technical-planning/"
+      ],
+      "evidence": [
+        {
+          "value": "REST",
+          "url": "https://help.gladly.com/docs/api-export-tool",
+          "excerpt": "rt Tool Portal is a web-based application that provides a user-friendly GUI wrapper around Gladly's REST APIs. It enables customers and support teams to perform common API operations without writing code, significantly reducing manual work and technical barriers. Beta testing This tool is",
+          "published_label": "9 months ago"
+        },
+        {
+          "value": "REST",
+          "url": "https://help.gladly.com/developer-tutorials/docs/technical-planning/",
+          "excerpt": "hips, providing Agents with rich Customer context they need to deliver seamless experiences. Gladly REST API You can access the REST API via HTTPS at your organization's Gladly domain, such as Your sandbox environment will be accessible via the URL below where organization is your compan",
+          "published_label": "1.8 years ago"
+        }
+      ],
+      "reason": "Provisional extraction: validate scope and completeness against the cited page."
+    },
+    "official_mcp": {
+      "value": "yes (provisional)",
+      "sources": [
+        "https://help.gladly.com/docs/what-are-mcp-connections"
+      ],
+      "evidence": [
+        {
+          "value": "yes (provisional)",
+          "url": "https://help.gladly.com/docs/what-are-mcp-connections",
+          "excerpt": " question, Gladly AI decides whether one of your MCP tools can help. If it can, Gladly AI calls the tool on your MCP server, reads the response, and uses it to answer the customer. For example, a customer asks, \"Where is my order RT-1001?\" Gladly AI calls an order lookup tool on you",
+          "published_label": "2 weeks ago",
+          "context_warning": "Review vendor ownership, dates, and scope."
+        }
+      ],
+      "reason": "Provisional; check source date, scope, and vendor ownership."
+    },
+    "composio_toolkit": {
+      "value": "unknown",
+      "sources": [],
+      "evidence": [],
+      "reason": "No exact or reviewed alias match; absence is not established."
+    },
+    "verdict": {
+      "value": "unknown",
+      "sources": [],
+      "evidence": [],
+      "reason": "A supported access path, authentication method and API surface were not all extracted."
+    }
+  },
+  "validation": [
+    "Automatic extraction is provisional and not a verified final claim",
+    "Unknown is not evidence of absence",
+    "No Composio-to-vendor-MCP inference",
+    "Basic authentication may be endpoint-specific",
+    "Client-only and negated statements are not positive MCP evidence"
+  ]
+}

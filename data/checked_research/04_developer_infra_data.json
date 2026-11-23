@@ -1,0 +1,1631 @@
+{
+  "category": "Developer, Infra and Data platforms",
+  "checked_at": "2026-11-24",
+  "records": [
+    {
+      "number": 61,
+      "app": "GitHub",
+      "category": "Developer, Infra and Data platforms",
+      "summary": "GitHub exposes broad REST and GraphQL APIs with personal, GitHub App, OAuth, and endpoint-specific authentication. It also provides GitHub-hosted remote and local MCP servers.",
+      "blocker": "Fine-grained organization tokens can require administrator approval, GitHub App endpoints may require Basic authentication with the app client ID and secret, and MCP tools inherit the underlying GitHub feature permissions.",
+      "next_action": "Create a least-privilege personal token for a personal account, or register a GitHub App for organization/user delegation; start with the remote MCP server and request only required scopes.",
+      "fields": {
+        "auth": {
+          "status": "checked",
+          "value": [
+            "Personal access tokens with fine-grained repository and permission scopes (Bearer or token header)",
+            "GitHub App installation tokens and OAuth app tokens for delegated REST API access",
+            "Endpoint-specific HTTP Basic authentication using a GitHub App or OAuth app client ID and client secret"
+          ],
+          "reason": "GitHub documents PAT, GitHub App, OAuth app, and built-in Actions token paths. Modern requests normally use Bearer/token authorization, while some GitHub App and OAuth endpoints specifically require Basic authentication; username/password authentication is unsupported.",
+          "evidence": [
+            {
+              "url": "https://docs.github.com/en/rest/authentication/authenticating-to-the-rest-api",
+              "title": "Authenticating to the REST API",
+              "quote": "To authenticate your request, you will need to provide an authentication token with the required scopes or permissions. There are a few different ways to get a token: You can create a personal access token, generate a token with a GitHub App, or use the built-in `GITHUB_TOKEN` in a GitHub Actions workflow.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            },
+            {
+              "url": "https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/managing-your-personal-access-tokens",
+              "title": "Managing your personal access tokens",
+              "quote": "Each token can be further limited to only access specific repositories for that user or organization.\n\nEach token is granted specific, fine-grained permissions, which offer more control than the scopes granted to personal access tokens (classic).",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            },
+            {
+              "url": "https://docs.github.com/en/rest/authentication/authenticating-to-the-rest-api",
+              "title": "Authenticating to the REST API",
+              "quote": "Some REST API endpoints for GitHub Apps and OAuth apps require you to use basic authentication to access the endpoint. You will use the app's client ID as the username and the app's client secret as the password.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            }
+          ]
+        },
+        "credential_gate": {
+          "status": "checked",
+          "value": "self_serve_free",
+          "gate_class": "self_serve_free",
+          "reason": "The undated official pricing page shows a $0 Free plan for individuals and organizations, and the undated PAT documentation supports self-service token creation for a personal account. Organization policy can still impose administrator approval, so the classification describes the baseline gate rather than every organization.",
+          "evidence": [
+            {
+              "url": "https://docs.github.com/en/organizations/collaborating-with-groups-in-organizations/about-organizations.md",
+              "title": "About organizations",
+              "quote": "You can use organizations for free, with GitHub Free, which includes limited features on private repositories. To get the full feature set on private repositories and additional features at the organization level, including SAML single sign-on and improved support coverage, you can upgrade to GitHub Team or GitHub Enterprise Cloud.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            },
+            {
+              "url": "https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/managing-your-personal-access-tokens",
+              "title": "Managing your personal access tokens",
+              "quote": "If you selected an organization as the resource owner and the organization requires approval for fine-grained personal access tokens, then your token will be marked as `pending` until it is reviewed by an organization administrator.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            }
+          ]
+        },
+        "api_surface": {
+          "status": "checked",
+          "value": "REST and GraphQL; broad documented surface",
+          "api_types": [
+            "REST",
+            "GraphQL"
+          ],
+          "breadth": "broad",
+          "reason": "GitHub explicitly provides both REST and GraphQL APIs and documents official and third-party clients for both. The endpoint catalogs cover repositories, organizations, users, issues, actions, and many other platform resources.",
+          "evidence": [
+            {
+              "url": "https://docs.github.com/en/rest/about-the-rest-api/comparing-githubs-rest-api-and-graphql-api",
+              "title": "Comparing GitHub's REST API and GraphQL API",
+              "quote": "GitHub provides two APIs: a REST API and a GraphQL API. You can interact with both APIs using GitHub CLI, curl, the official Octokit libraries, and third party libraries.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            }
+          ]
+        },
+        "official_mcp": {
+          "status": "checked",
+          "value": "vendor_server",
+          "mcp_mode": "both",
+          "reason": "The undated official setup page says the GitHub MCP server is provided and maintained by GitHub. It distinguishes a GitHub-hosted remote server from a local server hosted on the user's machine, establishing both vendor-server ownership and both deployment modes.",
+          "evidence": [
+            {
+              "url": "https://docs.github.com/en/copilot/how-tos/copilot-in-your-ide/customize-copilot/extend-copilot-with-tools-and-context/set-up-the-github-mcp-server",
+              "title": "Set up the GitHub MCP server",
+              "quote": "The GitHub MCP server is a Model Context Protocol (MCP) server provided and maintained by GitHub.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            },
+            {
+              "url": "https://docs.github.com/en/copilot/how-tos/copilot-in-your-ide/customize-copilot/extend-copilot-with-tools-and-context/set-up-the-github-mcp-server",
+              "title": "Set up the GitHub MCP server",
+              "quote": "The GitHub MCP server in Visual Studio Code can be configured remotely or locally. The remote GitHub MCP server is hosted by GitHub and is the recommended option for most users. The local GitHub MCP server is hosted on your machine and is recommended for users who want to customize their setup or have specific security requirements.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            }
+          ]
+        },
+        "composio_toolkit": {
+          "status": "checked",
+          "value": "listed_exact",
+          "catalog_name": "GitHub",
+          "slug": "GITHUB",
+          "reason": "The current Composio toolkit page is titled GitHub and lists the exact GITHUB slug. The page is undated; its toolkit version is not treated as a publication date.",
+          "evidence": [
+            {
+              "url": "https://docs.composio.dev/toolkits/github",
+              "title": "GitHub",
+              "quote": "- **Auth:** OAUTH2\n- **Composio-managed OAuth available?** Yes\n- **Tools:** 905\n- **Triggers:** 46\n- **Slug:** `GITHUB`\n- **Version:** 20261116_01",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            }
+          ]
+        },
+        "verdict": {
+          "status": "checked",
+          "value": "documented_build_candidate",
+          "reason": "Broad REST/GraphQL APIs, scoped self-service authentication, and a self-serve Free plan make GitHub a documented build candidate. The supporting API and pricing pages are undated, so no publication freshness is inferred from toolkit version strings.",
+          "evidence": [
+            {
+              "url": "https://docs.github.com/en/rest/about-the-rest-api/comparing-githubs-rest-api-and-graphql-api",
+              "title": "Comparing GitHub's REST API and GraphQL API",
+              "quote": "GitHub provides two APIs: a REST API and a GraphQL API. You can interact with both APIs using GitHub CLI, curl, the official Octokit libraries, and third party libraries.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            },
+            {
+              "url": "https://docs.github.com/en/organizations/collaborating-with-groups-in-organizations/about-organizations.md",
+              "title": "About organizations",
+              "quote": "You can use organizations for free, with GitHub Free, which includes limited features on private repositories. To get the full feature set on private repositories and additional features at the organization level, including SAML single sign-on and improved support coverage, you can upgrade to GitHub Team or GitHub Enterprise Cloud.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "number": 62,
+      "app": "Vercel",
+      "category": "Developer, Infra and Data platforms",
+      "summary": "Vercel provides a broad REST API authenticated with scoped access tokens and an official remote OAuth MCP server available on all plans.",
+      "blocker": "Access-token scope determines reachable resources, and some teams require two-factor authentication or SAML before team-scoped tokens can be created. Hobby usage limits still apply.",
+      "next_action": "Create a least-privilege account, team, or project access token and use Bearer authentication; connect to the official remote Vercel MCP server with OAuth for agent workflows.",
+      "fields": {
+        "auth": {
+          "status": "checked",
+          "value": [
+            "Scoped Vercel access tokens for account, team, or project resources (Bearer authorization header)"
+          ],
+          "reason": "Vercel documents self-service access-token creation through the dashboard, REST API, or CLI. Tokens have Full Account, Team, or Project scope and are passed as Bearer tokens; team security policies can restrict creation.",
+          "evidence": [
+            {
+              "url": "https://vercel.com/docs/accounts/access-tokens",
+              "title": "Access Tokens",
+              "quote": "Vercel access tokens authenticate requests to the [Vercel REST API](/docs/rest-api#creating-an-access-token) and the [Vercel CLI](/docs/cli/tokens) on your behalf. You create and manage them on the [Account Tokens page](https://vercel.com/account/tokens), under the Settings area of your account, and you can also create them without the dashboard using the [REST API](/docs/rest-api/authentication/create-an-auth-token) or the CLI.",
+              "retrieved_at": "2026-11-24",
+              "published_at": "2026-11-14",
+              "published_label": "updated"
+            },
+            {
+              "url": "https://vercel.com/docs/accounts/access-tokens",
+              "title": "Access tokens",
+              "quote": "Use a scoped token with the API Pass the token as a Bearer token in the Authorization header of your request.",
+              "retrieved_at": "2026-11-24",
+              "published_at": "2026-11-14",
+              "published_label": "updated",
+              "original_url": "https://vercel.com/docs/accounts/access-tokens",
+              "source_review": "The old quote joined distant sections and retained Markdown backticks. This contiguous rendered heading-and-sentence passage preserves scoped-token and Bearer-header meaning; the official page remains updated 2026-11-14."
+            }
+          ]
+        },
+        "credential_gate": {
+          "status": "checked",
+          "value": "self_serve_free",
+          "gate_class": "self_serve_free",
+          "reason": "The official plans page, updated 2026-11-12, explicitly says the Hobby plan is free and includes CLI, Git integrations, CI/CD, HTTPS, and preview deployments. This establishes self-serve free access, subject to Hobby limits and team token policies.",
+          "evidence": [
+            {
+              "url": "https://vercel.com/docs/plans",
+              "title": "Plans",
+              "quote": "The Hobby plan is free. It includes CLI and personal [Git integrations](/docs/git), built-in CI/CD, [automatic HTTPS/SSL](/docs/cdn-security/encryption), and [previews deployments](/docs/deployments/environments#preview-environment-pre-production) for every Git push.",
+              "retrieved_at": "2026-11-24",
+              "published_at": "2026-11-12",
+              "published_label": "updated"
+            }
+          ]
+        },
+        "api_surface": {
+          "status": "checked",
+          "value": "REST; broad documented surface",
+          "api_types": [
+            "REST"
+          ],
+          "breadth": "broad",
+          "reason": "The official REST API reference supports SDK and direct HTTP interaction with a Vercel account and documents a broad endpoint catalog. It is classified as REST and broad.",
+          "evidence": [
+            {
+              "url": "https://vercel.com/docs/rest-api",
+              "title": "Vercel REST API",
+              "quote": "Interact programmatically with your Vercel account using the SDK or direct HTTP requests.",
+              "retrieved_at": "2026-11-24",
+              "published_at": "2026-11-23",
+              "published_label": "updated"
+            }
+          ]
+        },
+        "official_mcp": {
+          "status": "checked",
+          "value": "vendor_server",
+          "mcp_mode": "remote",
+          "reason": "The official Vercel MCP page, updated 2026-09-15, explicitly identifies Vercel MCP as Vercel's official remote MCP server with OAuth at https://mcp.vercel.com. It is available on all plans.",
+          "evidence": [
+            {
+              "url": "https://vercel.com/docs/agent-resources/vercel-mcp",
+              "title": "Vercel MCP",
+              "quote": "Vercel MCP is Vercel's official MCP server. It's a remote MCP with OAuth that gives AI tools secure access to your Vercel projects available at:\n\n`https://mcp.vercel.com`",
+              "retrieved_at": "2026-11-24",
+              "published_at": "2026-09-15",
+              "published_label": "updated"
+            },
+            {
+              "url": "https://vercel.com/docs/agent-resources/vercel-mcp",
+              "title": "Vercel MCP",
+              "quote": "Vercel MCP is available on all plans and your use is subject to [Vercel's AI Product Terms](/legal/ai-product-terms).",
+              "retrieved_at": "2026-11-24",
+              "published_at": "2026-09-15",
+              "published_label": "updated"
+            }
+          ]
+        },
+        "composio_toolkit": {
+          "status": "checked",
+          "value": "listed_exact",
+          "catalog_name": "Vercel",
+          "slug": "VERCEL",
+          "reason": "The current Composio Vercel page lists the exact VERCEL slug. The page is undated; the toolkit version is not a publication date.",
+          "evidence": [
+            {
+              "url": "https://docs.composio.dev/toolkits/vercel",
+              "title": "Vercel",
+              "quote": "- **Auth:** OAUTH2, API_KEY\n- **Composio-managed OAuth available?** No\n- **Tools:** 414\n- **Triggers:** 0\n- **Slug:** `VERCEL`\n- **Version:** 20261118_00",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            }
+          ]
+        },
+        "verdict": {
+          "status": "checked",
+          "value": "documented_build_candidate",
+          "reason": "Dated official documentation confirms scoped Bearer authentication, a broad REST API, a free Hobby plan, and an all-plans remote OAuth MCP server. Vercel is therefore a documented self-serve build candidate rather than a sales-gated or wrapper-only product.",
+          "evidence": [
+            {
+              "url": "https://vercel.com/docs/rest-api",
+              "title": "Vercel REST API",
+              "quote": "Interact programmatically with your Vercel account using the SDK or direct HTTP requests.",
+              "retrieved_at": "2026-11-24",
+              "published_at": "2026-11-23",
+              "published_label": "updated"
+            },
+            {
+              "url": "https://vercel.com/docs/plans",
+              "title": "Plans",
+              "quote": "The Hobby plan is free. It includes CLI and personal [Git integrations](/docs/git), built-in CI/CD, [automatic HTTPS/SSL](/docs/cdn-security/encryption), and [previews deployments](/docs/deployments/environments#preview-environment-pre-production) for every Git push.",
+              "retrieved_at": "2026-11-24",
+              "published_at": "2026-11-12",
+              "published_label": "updated"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "number": 63,
+      "app": "Netlify",
+      "category": "Developer, Infra and Data platforms",
+      "summary": "Netlify offers a broad REST API, personal and OAuth2 authentication, a self-serve Free plan, and official remote and local MCP servers.",
+      "blocker": "SAML team access for personal tokens is optional and denied by default unless granted during token creation. Composio's NETLIFY_MCP alias is a narrower nine-tool MCP wrapper, not a substitute for the broad REST API.",
+      "next_action": "Create a personal token for direct scripts or register an OAuth application for user delegation; use the REST API for broad coverage and choose Netlify's remote MCP unless local deployment is required.",
+      "fields": {
+        "auth": {
+          "status": "checked",
+          "value": [
+            "OAuth 2.0 application authorization tokens for public integrations (Bearer)",
+            "Personal access tokens for manual or scripted API requests (Bearer), with optional SAML team access"
+          ],
+          "reason": "Netlify's undated API guide says authentication uses OAuth2 over HTTPS, documents self-service personal access token creation, and shows PATs in the Authorization header. Public integrations must use OAuth2 with an application client key and secret.",
+          "evidence": [
+            {
+              "url": "https://docs.netlify.com/api-and-cli-guides/api-guides/get-started-with-api.md",
+              "title": "Get started with the Netlify API",
+              "quote": "Netlify uses OAuth2 for authentication. All requests must use HTTPS.\n\nTo generate a personal access token (PAT):",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            },
+            {
+              "url": "https://docs.netlify.com/api-and-cli-guides/api-guides/get-started-with-api.md",
+              "title": "Get started with the Netlify API",
+              "quote": "To authenticate API requests, include the token in the authorization header:\n\n`Authorization: Bearer <YOUR_PERSONAL_ACCESS_TOKEN>`",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            },
+            {
+              "url": "https://docs.netlify.com/api-and-cli-guides/api-guides/get-started-with-api.md",
+              "title": "Get started with the Netlify API",
+              "quote": "If you're making a public integration with Netlify for others to enjoy, you must use OAuth2. This allows users to authorize your application to use Netlify on their behalf without having to copy/paste API tokens or touch sensitive login info. You'll need an application client key and a client secret to integrate with the Netlify API.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            }
+          ]
+        },
+        "credential_gate": {
+          "status": "checked",
+          "value": "self_serve_free",
+          "gate_class": "self_serve_free",
+          "reason": "The undated official pricing page explicitly offers a Free plan at $0 forever for individuals with a 300-credit limit and deployment from AI, Git, or API. This is a self-serve entry tier, with usage limits rather than a sales gate.",
+          "evidence": [
+            {
+              "url": "https://www.netlify.com/pricing/",
+              "title": "Netlify Pricing",
+              "quote": "### Free — $0 forever\n- **Audience:** Individual\n- **Credits:** 300 credit limit\n- Deploy from AI, Git, or API",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            }
+          ]
+        },
+        "api_surface": {
+          "status": "checked",
+          "value": "REST; broad documented surface",
+          "api_types": [
+            "REST"
+          ],
+          "breadth": "broad",
+          "reason": "The undated official guide identifies the Netlify REST API and describes deployments, forms, JavaScript snippets, DNS, sites, environment variables, files, hooks, and other endpoints. The OpenAPI reference provides the broader endpoint catalog.",
+          "evidence": [
+            {
+              "url": "https://docs.netlify.com/api-and-cli-guides/api-guides/get-started-with-api.md",
+              "title": "Get started with the Netlify API",
+              "quote": "Use the Netlify REST API to manage atomic deploys of your sites and apps, manage form submissions, inject JavaScript snippets, manage DNS, and so much more.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            },
+            {
+              "url": "https://docs.netlify.com/api-and-cli-guides/api-guides/get-started-with-api.md",
+              "title": "Get started with the Netlify API",
+              "quote": "You can browse the [OpenAPI reference for the Netlify API](https://open-api.netlify.com) to explore available endpoints.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            }
+          ]
+        },
+        "official_mcp": {
+          "status": "checked",
+          "value": "vendor_server",
+          "mcp_mode": "both",
+          "reason": "The undated official agent setup page says Netlify offers an MCP server, gives the current remote endpoint, and separately documents installation of Netlify's local MCP. This proves a vendor server in both remote and local modes.",
+          "evidence": [
+            {
+              "url": "https://docs.netlify.com/build/build-with-ai/agent-setup-guides/agent-setup-overview.md",
+              "title": "Agent setup overview",
+              "quote": "Netlify offers an [MCP server](https://github.com/netlify/netlify-mcp), which you can connect to through a connector, plugin, or your agent.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            },
+            {
+              "url": "https://docs.netlify.com/build/build-with-ai/agent-setup-guides/agent-setup-overview.md",
+              "title": "Agent setup overview",
+              "quote": "Use `https://mcp.netlify.com/mcp` for new connections.\n\n### Connect to Netlify's Local MCP server\n\nOur recommendation is to use the remote MCP server to have the most up-to-date version of the MCP capabilities. However, some developers are required to use local MCP servers in their environments. You can use the following command to install Netlify's local MCP:\n\n`npx -y add-mcp \"npx -y @netlify/mcp\"`",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            }
+          ]
+        },
+        "composio_toolkit": {
+          "status": "checked",
+          "value": "listed_alias",
+          "catalog_name": "Netlify MCP",
+          "slug": "NETLIFY_MCP",
+          "reason": "The undated Composio catalog page lists NETLIFY_MCP under the display name Netlify MCP. It is an alias for Netlify's hosted MCP server, but its nine tools are narrower than Netlify's full REST API and should not be treated as equivalent coverage.",
+          "evidence": [
+            {
+              "url": "https://docs.composio.dev/toolkits/netlify_mcp",
+              "title": "Netlify MCP",
+              "quote": "# Netlify MCP\n\nDeploy, inspect, and manage Netlify sites, builds, environment configuration, and development workflows through Netlify's hosted MCP server.\n\n- **Category:** developer tools\n- **Auth:** DCR_OAUTH\n- **Composio-managed OAuth available?** No\n- **Tools:** 9\n- **Triggers:** 0\n- **Slug:** `NETLIFY_MCP`\n- **Version:** 20261018_00",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            }
+          ]
+        },
+        "verdict": {
+          "status": "checked",
+          "value": "documented_build_candidate",
+          "reason": "The undated official REST and pricing pages establish a broad API and self-serve Free access. Netlify is a documented build candidate; the Composio MCP alias remains a narrower wrapper rather than a replacement for direct REST coverage.",
+          "evidence": [
+            {
+              "url": "https://docs.netlify.com/api-and-cli-guides/api-guides/get-started-with-api.md",
+              "title": "Get started with the Netlify API",
+              "quote": "Use the Netlify REST API to manage atomic deploys of your sites and apps, manage form submissions, inject JavaScript snippets, manage DNS, and so much more.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            },
+            {
+              "url": "https://www.netlify.com/pricing/",
+              "title": "Netlify Pricing",
+              "quote": "### Free — $0 forever\n- **Audience:** Individual\n- **Credits:** 300 credit limit\n- Deploy from AI, Git, or API",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "number": 64,
+      "app": "Cloudflare",
+      "category": "Developer, Infra and Data platforms",
+      "summary": "Cloudflare provides broad REST APIs plus a GraphQL Analytics API, scoped user/account API tokens, a self-serve Free plan, and managed remote MCP servers.",
+      "blocker": "Token permissions are policy-scoped and some organization operations require a Global API key. MCP permissions are selected during OAuth, and automation can use scoped user or account tokens.",
+      "next_action": "Create an account API token with only the required account/zone permissions, use Bearer authentication, and connect to Cloudflare's managed API MCP server with OAuth or an appropriately scoped automation token.",
+      "fields": {
+        "auth": {
+          "status": "checked",
+          "value": [
+            "Scoped user API tokens or account-owned service API tokens (Bearer authorization header)"
+          ],
+          "reason": "Cloudflare's token guide, updated 2026-11-06, distinguishes user and account API tokens and requires policies that select resource scope and permissions. The documented request uses an Authorization Bearer header; Global API key use is endpoint-specific and is not presented as the default token path.",
+          "evidence": [
+            {
+              "url": "https://developers.cloudflare.com/fundamentals/api/get-started/create-token/",
+              "title": "Create an API token",
+              "quote": "Determine if you want a user token or an [Account API token](https://developers.cloudflare.com/fundamentals/api/get-started/account-owned-tokens/). Use Account API tokens if you prefer service tokens that are not associated with users and your [desired API endpoints are compatible](https://developers.cloudflare.com/fundamentals/api/get-started/account-owned-tokens/#compatibility-matrix).",
+              "retrieved_at": "2026-11-24",
+              "published_at": "2026-11-06",
+              "published_label": "updated"
+            },
+            {
+              "url": "https://developers.cloudflare.com/fundamentals/api/get-started/create-token/",
+              "title": "Create an API token",
+              "quote": "Create a policy to organize the token's permissions. Select a policy type (*Account*, *User*, or *Zone*), then select resource rules within the policy to specify which resources the permissions apply to, such as specific accounts or zones.\n\nChoose the permissions to grant within the policy. Most permissions offer `Edit` or `Read` access.",
+              "retrieved_at": "2026-11-24",
+              "published_at": "2026-11-06",
+              "published_label": "updated"
+            },
+            {
+              "url": "https://developers.cloudflare.com/fundamentals/api/get-started/create-token/",
+              "title": "Create an API token",
+              "quote": "curl \"https://api.cloudflare.com/client/v4/user/tokens/verify\" \\\n  --header \"Authorization: Bearer <API_TOKEN>\"",
+              "retrieved_at": "2026-11-24",
+              "published_at": "2026-11-06",
+              "published_label": "updated"
+            }
+          ]
+        },
+        "credential_gate": {
+          "status": "checked",
+          "value": "self_serve_free",
+          "gate_class": "self_serve_free",
+          "reason": "The undated official Free plan page says Cloudflare offers a generous free plan and presents a Sign Up Free action. This establishes self-serve free account access, while individual API resources can still have product or permission requirements.",
+          "evidence": [
+            {
+              "url": "https://www.cloudflare.com/plans/free/",
+              "title": "Cloudflare Free Plan",
+              "quote": "Cloudflare always has and always will offer a generous free plan for [many reasons](https://webmasters.stackexchange.com/questions/88659/how-can-cloudflare-offer-a-free-cdn-with-unlimited-bandwidth).",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            },
+            {
+              "url": "https://www.cloudflare.com/plans/free/",
+              "title": "Cloudflare Free Plan",
+              "quote": "Sign Up Free",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            }
+          ]
+        },
+        "api_surface": {
+          "status": "checked",
+          "value": "REST and GraphQL Analytics API; broad documented surface",
+          "api_types": [
+            "REST",
+            "GraphQL"
+          ],
+          "breadth": "broad",
+          "reason": "The official API reference exposes a very broad account, organization, user, zone, DNS, cache, SSL, analytics, load-balancing, and product endpoint surface. Cloudflare separately documents its GraphQL Analytics API, so both REST and GraphQL are included.",
+          "evidence": [
+            {
+              "url": "https://developers.cloudflare.com/api/",
+              "title": "Cloudflare API Documentation",
+              "quote": "Each endpoint's **Security** section lists its supported authentication methods, with **Accepted Permissions** where applicable.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            },
+            {
+              "url": "https://developers.cloudflare.com/analytics/graphql-api/",
+              "title": "GraphQL Analytics API",
+              "quote": "The GraphQL Analytics API provides data regarding HTTP requests passing through Cloudflare's network, as well as data from specific products, such as Firewall or Load Balancing. Network Analytics users also have access to packet-level data. Use the GraphQL Analytics API to select specific datasets and metrics of interest, filter and aggregate the data along various dimensions, and integrate the results with other applications.",
+              "retrieved_at": "2026-11-24",
+              "published_at": "2026-04-23",
+              "published_label": "updated"
+            }
+          ]
+        },
+        "official_mcp": {
+          "status": "checked",
+          "value": "vendor_server",
+          "mcp_mode": "remote",
+          "reason": "Cloudflare's MCP documentation, updated 2026-10-27, says Cloudflare runs managed remote MCP servers. It identifies the Cloudflare API MCP server as providing access to the Cloudflare API and documents OAuth permission selection plus bearer API-token automation.",
+          "evidence": [
+            {
+              "url": "https://developers.cloudflare.com/agents/model-context-protocol/cloudflare/servers-for-cloudflare/",
+              "title": "Servers for Cloudflare",
+              "quote": "Cloudflare runs a catalog of managed remote MCP servers which you can connect to using OAuth on clients like [Claude ↗︎](https://modelcontextprotocol.io/quickstart/user), [Windsurf ↗︎](https://docs.windsurf.com/windsurf/cascade/mcp), our own [AI Playground ↗︎](https://playground.ai.cloudflare.com/) or any [SDK that supports MCP ↗︎](https://github.com/cloudflare/agents/tree/main/packages/agents/src/mcp).",
+              "retrieved_at": "2026-11-24",
+              "published_at": "2026-10-27",
+              "published_label": "updated"
+            },
+            {
+              "url": "https://developers.cloudflare.com/agents/model-context-protocol/cloudflare/servers-for-cloudflare/",
+              "title": "Servers for Cloudflare",
+              "quote": "The [Cloudflare API MCP server ↗︎](https://github.com/cloudflare/mcp) at `https://mcp.cloudflare.com/mcp` is the only MCP server you need to work with Cloudflare. It provides access to the entire [Cloudflare API](https://developers.cloudflare.com/api/) — over 2,500 endpoints across DNS, Workers, R2, Zero Trust, and every other product — and to the Cloudflare developer documentation.",
+              "retrieved_at": "2026-11-24",
+              "published_at": "2026-10-27",
+              "published_label": "updated"
+            }
+          ]
+        },
+        "composio_toolkit": {
+          "status": "checked",
+          "value": "listed_exact",
+          "catalog_name": "Cloudflare",
+          "slug": "CLOUDFLARE",
+          "reason": "The current Composio page lists the exact CLOUDFLARE slug and API-key authentication. The page is undated; its toolkit version is not a publication date.",
+          "evidence": [
+            {
+              "url": "https://docs.composio.dev/toolkits/cloudflare",
+              "title": "Cloudflare",
+              "quote": "# Cloudflare\n\nCloudflare is a global network designed to make everything you connect to the Internet secure, private, fast, and reliable.\n\n- **Category:** security & identity tools\n- **Auth:** API_KEY\n- **Composio-managed OAuth available?** N/A\n- **Tools:** 171\n- **Triggers:** 0\n- **Slug:** `CLOUDFLARE`\n- **Version:** 20261120_00",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            }
+          ]
+        },
+        "verdict": {
+          "status": "checked",
+          "value": "documented_build_candidate",
+          "reason": "Dated official pages establish GraphQL analytics and Cloudflare-managed remote MCP, while the checked API-token and Free-plan fields establish scoped authentication and self-serve access. The pricing evidence remains undated; Cloudflare is a documented build candidate.",
+          "evidence": [
+            {
+              "url": "https://developers.cloudflare.com/analytics/graphql-api/",
+              "title": "GraphQL Analytics API",
+              "quote": "The GraphQL Analytics API provides data regarding HTTP requests passing through Cloudflare's network, as well as data from specific products, such as Firewall or Load Balancing. Network Analytics users also have access to packet-level data. Use the GraphQL Analytics API to select specific datasets and metrics of interest, filter and aggregate the data along various dimensions, and integrate the results with other applications.",
+              "retrieved_at": "2026-11-24",
+              "published_at": "2026-04-23",
+              "published_label": "updated"
+            },
+            {
+              "url": "https://developers.cloudflare.com/agents/model-context-protocol/cloudflare/servers-for-cloudflare/",
+              "title": "Servers for Cloudflare",
+              "quote": "Cloudflare runs a catalog of managed remote MCP servers which you can connect to using OAuth on clients like [Claude ↗︎](https://modelcontextprotocol.io/quickstart/user), [Windsurf ↗︎](https://docs.windsurf.com/windsurf/cascade/mcp), our own [AI Playground ↗︎](https://playground.ai.cloudflare.com/) or any [SDK that supports MCP ↗︎](https://github.com/cloudflare/agents/tree/main/packages/agents/src/mcp).",
+              "retrieved_at": "2026-11-24",
+              "published_at": "2026-10-27",
+              "published_label": "updated"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "number": 65,
+      "app": "Supabase",
+      "category": "Developer, Infra and Data platforms",
+      "summary": "Supabase auto-generates REST and GraphQL APIs from Postgres, supports project keys and scoped Management API credentials, offers a Free plan, and provides hosted plus CLI-local MCP.",
+      "blocker": "Publishable and secret project keys belong in the apikey header, not Authorization Bearer. Management API tokens require organization/project scoping, and legacy anon/service_role keys are being deprecated.",
+      "next_action": "Create a Free project, use publishable or secret keys according to client trust level, create a scoped Management API PAT for administration, and connect to the hosted MCP server with project/read-only restrictions.",
+      "fields": {
+        "auth": {
+          "status": "checked",
+          "value": [
+            "Publishable or secret project API keys in the apikey header for Data and GraphQL APIs",
+            "Scoped Management API personal access tokens for organization and project administration",
+            "Management API OAuth 2.0 user-delegated access tokens"
+          ],
+          "reason": "Supabase distinguishes project API keys from user authentication and instructs callers to send publishable/secret keys on the apikey header. Its undated Management API docs separately support manually generated PATs and OAuth2 tokens for account access.",
+          "evidence": [
+            {
+              "url": "https://supabase.com/docs/guides/api/api-keys",
+              "title": "API Keys",
+              "quote": "Every request to your Supabase project carries an API key. The key identifies what is calling your project: a web page, a mobile app, a server, or an Edge Function. [Supabase Auth](https://supabase.com/docs/guides/auth) identifies who is calling, when someone is signed in.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            },
+            {
+              "url": "https://supabase.com/docs/guides/api/api-keys",
+              "title": "API Keys",
+              "quote": "Send publishable and secret keys on the `apikey` header, not on `Authorization: Bearer`.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            },
+            {
+              "url": "https://supabase.com/docs/guides/platform/personal-access-tokens",
+              "title": "Personal access tokens",
+              "quote": "Personal access tokens (PATs) authenticate you to the [Management API](https://supabase.com/docs/reference/api/introduction) and the tools built on it, like the Supabase CLI and the [MCP server](https://supabase.com/docs/guides/ai-tools/mcp).\n\nWhen you create a token, you scope it to the organizations, projects, and permissions it needs.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            },
+            {
+              "url": "https://supabase.com/docs/reference/api/introduction",
+              "title": "Introduction | Management API Reference | Supabase Docs",
+              "quote": "OAuth2 allows your application to generate tokens on behalf of a Supabase user, providing secure and limited access to their account without requiring their credentials.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated",
+              "original_url": "https://supabase.com/docs/reference/api/introduction",
+              "source_review": "The rendered official page reproduced the normalized quotation. Direct HTTP retrieval missed JavaScript-rendered, redirect-sensitive, or charset-sensitive content; no search snippet or hidden raw HTML was used.",
+              "verification_method": "headless Chromium rendered body innerText (installed Chrome; no raw HTML)",
+              "verification_note": "The rendered official page reproduced the normalized quotation. Direct HTTP retrieval missed JavaScript-rendered, redirect-sensitive, or charset-sensitive content; no search snippet or hidden raw HTML was used.",
+              "verified_at": "2026-11-24"
+            }
+          ]
+        },
+        "credential_gate": {
+          "status": "checked",
+          "value": "self_serve_free",
+          "gate_class": "self_serve_free",
+          "reason": "The undated official pricing page lists a Free plan from $0/month with unlimited API requests and a 500 MB database. It also limits active projects and pauses inactive Free projects, but does not impose a sales gate on baseline API access.",
+          "evidence": [
+            {
+              "url": "https://supabase.com/pricing",
+              "title": "Supabase Pricing",
+              "quote": "### Free - from $0/month\n- Unlimited API requests\n- 50,000 monthly active users\n- 500 MB database size (Shared CPU • 500 MB RAM)\n- 5 GB egress\n- 5 GB cached egress\n- 1 GB file storage\n- Community support\n- Note: Free projects are paused after 1 week of inactivity.\nLimit of 2 active projects.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            }
+          ]
+        },
+        "api_surface": {
+          "status": "checked",
+          "value": "REST and GraphQL; broad documented surface",
+          "api_types": [
+            "REST",
+            "GraphQL"
+          ],
+          "breadth": "broad",
+          "reason": "Supabase's undated API guide says it auto-generates a RESTful PostgREST interface directly from the database schema. Its undated GraphQL guide says the GraphQL API is automatically reflected from the schema using pg_graphql, with CRUD and relationship support.",
+          "evidence": [
+            {
+              "url": "https://supabase.com/docs/guides/api",
+              "title": "Data REST API | Supabase Docs",
+              "quote": "Supabase auto-generates an API directly from your database schema allowing you to connect to your database through a restful interface, directly from the browser.",
+              "retrieved_at": "2026-11-24",
+              "published_at": "2026-11-18",
+              "published_label": "updated",
+              "original_url": "https://supabase.com/docs/guides/api",
+              "source_review": "The old quote joined separate paragraphs. This exact visible sentence supports schema-generated REST access; the current page displays Updated Nov 18, 2026."
+            },
+            {
+              "url": "https://supabase.com/docs/guides/graphql",
+              "title": "GraphQL",
+              "quote": "The Supabase GraphQL API is automatically reflected from your database's schema using [pg_graphql](https://github.com/supabase/pg_graphql). It supports:\n\n- Basic CRUD operations (Create/Read/Update/Delete)\n- Support for Tables, Views, Materialized Views, and Foreign Tables\n- Arbitrarily deep relationships among tables/views",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            }
+          ]
+        },
+        "official_mcp": {
+          "status": "checked",
+          "value": "vendor_server",
+          "mcp_mode": "both",
+          "reason": "The undated Supabase MCP guide identifies a hosted Supabase MCP server at mcp.supabase.com and a local endpoint served by the official Supabase CLI. It also documents organization authentication and project/read-only/feature scoping, establishing both vendor-operated modes.",
+          "evidence": [
+            {
+              "url": "https://supabase.com/docs/guides/ai-tools/mcp",
+              "title": "Supabase MCP server",
+              "quote": "The hosted Supabase MCP server is available at `https://mcp.supabase.com/mcp`. If you're developing locally with the Supabase CLI, use `http://localhost:54321/mcp` instead.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            },
+            {
+              "url": "https://supabase.com/docs/guides/ai-tools/mcp",
+              "title": "Supabase MCP server",
+              "quote": "By default the hosted Supabase MCP server uses [dynamic client registration](https://modelcontextprotocol.io/specification/2025-06-18/basic/authorization#dynamic-client-registration) to authenticate with your Supabase org. This means that you don't need to manually create a personal access token (PAT) or OAuth app to use the server.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            }
+          ]
+        },
+        "composio_toolkit": {
+          "status": "checked",
+          "value": "listed_exact",
+          "catalog_name": "Supabase",
+          "slug": "SUPABASE",
+          "reason": "The current Composio Supabase page lists the exact SUPABASE slug. The page is undated; its toolkit version is not a publication date.",
+          "evidence": [
+            {
+              "url": "https://docs.composio.dev/toolkits/supabase",
+              "title": "Supabase",
+              "quote": "# Supabase\n\nSupabase is an open-source backend-as-a-service providing a Postgres database, authentication, storage, and real-time subscription APIs for building modern applications\n\n- **Category:** developer tools\n- **Auth:** OAUTH2, API_KEY\n- **Composio-managed OAuth available?** Yes\n- **Tools:** 235\n- **Triggers:** 0\n- **Slug:** `SUPABASE`\n- **Version:** 20261116_00",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            }
+          ]
+        },
+        "verdict": {
+          "status": "checked",
+          "value": "documented_build_candidate",
+          "reason": "Undated official documentation establishes generated REST/GraphQL APIs, self-service project and Management API credentials, a Free plan with unlimited API requests, and hosted/local MCP. Supabase is a documented self-serve build candidate.",
+          "evidence": [
+            {
+              "url": "https://supabase.com/docs/guides/api",
+              "title": "API",
+              "quote": "Supabase auto-generates an API directly from your database schema allowing you to connect to your database through a restful interface, directly from the browser.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            },
+            {
+              "url": "https://supabase.com/pricing",
+              "title": "Supabase Pricing",
+              "quote": "### Free - from $0/month\n- Unlimited API requests\n- 50,000 monthly active users\n- 500 MB database size (Shared CPU • 500 MB RAM)\n- 5 GB egress\n- 5 GB cached egress\n- 1 GB file storage\n- Community support\n- Note: Free projects are paused after 1 week of inactivity.\nLimit of 2 active projects.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "number": 66,
+      "app": "Neo4j",
+      "category": "Developer, Infra and Data platforms",
+      "summary": "Neo4j provides an HTTP Query API for Cypher, OAuth 2.0 client-credentials access to the Aura API, a free AuraDB tier, and an officially distributed local MCP server.",
+      "blocker": "Aura API credentials inherit the linked user's roles and capabilities. The free database has node/relationship limits and pauses after inactivity. Neo4j's MCP HTTP mode is deployable by the operator, not verified here as a Neo4j-hosted remote service.",
+      "next_action": "Create Aura API client credentials with an appropriately privileged user, start with AuraDB Free, and install the official neo4j-mcp-server locally over STDIO unless a separately operated HTTP deployment is desired.",
+      "fields": {
+        "auth": {
+          "status": "checked",
+          "value": [
+            "Aura API OAuth 2.0 client credentials with Bearer access tokens",
+            "HTTP Basic authentication with client ID and client secret for the Aura OAuth token endpoint"
+          ],
+          "reason": "The undated Aura authentication guide explicitly requires OAuth 2.0, documents client-credential creation for all tiers, and states that token exchange uses HTTP Basic while API requests use Bearer tokens. Credentials inherit the linked user's capabilities and roles.",
+          "evidence": [
+            {
+              "url": "https://neo4j.com/docs/aura/api/authentication/",
+              "title": "Authentication - Neo4j Aura",
+              "quote": "The Aura API uses OAuth 2.0 for API authentication. Creating credentials All tiers can create Aura API credentials. API credentials are linked to the user account, inheriting its capabilities and roles. The API credentials never expire unless you delete them.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated",
+              "original_url": "https://neo4j.com/docs/aura/api/authentication/",
+              "source_review": "The current rendered guide inserts the visible Creating credentials heading between the old quote's paragraphs. This contiguous visible-text replacement preserves OAuth 2.0, all-tier creation, inherited capabilities and roles, and non-expiry unless deleted."
+            },
+            {
+              "url": "https://neo4j.com/docs/aura/api/authentication/",
+              "title": "Aura API authentication",
+              "quote": "Authentication to the token endpoint uses HTTP Basic Authentication, where the client ID and client secret are provided as the username and password, respectively.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            },
+            {
+              "url": "https://neo4j.com/docs/aura/api/authentication/",
+              "title": "Aura API authentication",
+              "quote": "To authenticate API requests to the [Aura API](https://neo4j.com/docs/aura/platform/api/specification/), you must provide a Bearer Token in the `Authorization` header of each request as shown below:",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            }
+          ]
+        },
+        "credential_gate": {
+          "status": "checked",
+          "value": "self_serve_free",
+          "gate_class": "self_serve_free",
+          "reason": "The official AuraDB Free page, dated 2026-11-03, describes a free forever fully managed cloud database and says no credit card is required. The free tier has graph-size limits and pauses after inactivity, but remains self-service.",
+          "evidence": [
+            {
+              "url": "https://neo4j.com/free-graph-database/",
+              "title": "Free Graph Database",
+              "quote": "The free forever, fully managed cloud database from Neo4j. Learn graphs, prototype your idea, and test your applications with Neo4j’s fast, flexible, and easy-to-use graph database.",
+              "retrieved_at": "2026-11-24",
+              "published_at": "2026-11-03",
+              "published_label": "dated"
+            },
+            {
+              "url": "https://neo4j.com/free-graph-database/",
+              "title": "Free Graph Database",
+              "quote": "No Credit Card Required",
+              "retrieved_at": "2026-11-24",
+              "published_at": "2026-11-03",
+              "published_label": "dated"
+            }
+          ]
+        },
+        "api_surface": {
+          "status": "checked",
+          "value": "HTTP Query API for Cypher; Aura API for account administration",
+          "api_types": [
+            "HTTP API"
+          ],
+          "breadth": "moderate",
+          "reason": "The undated Query API documentation explicitly allows Cypher statements over HTTP and supersedes the deprecated HTTP API. The Aura API adds cloud account administration. This supports an HTTP API classification with moderate breadth without forcing a REST label from an unreadable specification page.",
+          "evidence": [
+            {
+              "url": "https://neo4j.com/docs/query-api/current/",
+              "title": "Query API",
+              "quote": "The Query API allows to execute Cypher statements against a Neo4j server through HTTP requests. This API supersedes the deprecated [HTTP API](https://neo4j.com/docs/http-api/current/).",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            },
+            {
+              "url": "https://neo4j.com/docs/query-api/current/",
+              "title": "Query API",
+              "quote": "**Aura instances** support only HTTPS through port 443.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            }
+          ]
+        },
+        "official_mcp": {
+          "status": "checked",
+          "value": "vendor_server",
+          "mcp_mode": "local",
+          "reason": "Neo4j's undated official MCP docs describe Neo4j MCP and distribute neo4j-mcp-server through PyPI. Configuration documents STDIO as the default and a stateless multi-tenant HTTP mode for customer/shared deployments. Because no Neo4j-hosted remote endpoint was verified, mode is local rather than both.",
+          "evidence": [
+            {
+              "url": "https://neo4j.com/docs/mcp/current/",
+              "title": "Neo4j MCP",
+              "quote": "Neo4j MCP implements the Model Context Protocol (MCP), an open standard that lets applications connect to external data sources and tools. It bridges any MCP-compatible client and your Neo4j instance, giving that client direct, structured access to your graph database.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            },
+            {
+              "url": "https://neo4j.com/docs/mcp/current/installation/",
+              "title": "Installation - Neo4j MCP",
+              "quote": "Install with PyPI uvx neo4j-mcp-server",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated",
+              "original_url": "https://neo4j.com/docs/mcp/current/installation/",
+              "source_review": "The old citation reproduced Markdown fences rather than rendered page text. The current official HTML page visibly presents the PyPI heading and uvx neo4j-mcp-server command."
+            },
+            {
+              "url": "https://neo4j.com/docs/mcp/current/configuration/",
+              "title": "Configure Neo4j MCP",
+              "quote": "The server supports two transport modes:\n\n- **STDIO** (default): Standard input/output mode for desktop clients.\n- **HTTP**: Stateless, multi-tenant mode for web clients and shared deployments.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            }
+          ]
+        },
+        "composio_toolkit": {
+          "status": "checked",
+          "value": "listed_exact",
+          "catalog_name": "Neo4J",
+          "slug": "NEO4J",
+          "reason": "The current Composio page is titled Neo4J and lists the exact NEO4J slug. The page is undated; its toolkit version is not a publication date.",
+          "evidence": [
+            {
+              "url": "https://docs.composio.dev/toolkits/neo4j",
+              "title": "Neo4J",
+              "quote": "# Neo4J\n\nGraph database platform for connected data and real-time analytics\n\n- **Category:** developer tools\n- **Auth:** OAUTH2, BASIC, API_KEY, S2S_OAUTH2\n- **Composio-managed OAuth available?** No\n- **Tools:** 21\n- **Triggers:** 0\n- **Slug:** `NEO4J`\n- **Version:** 20261101_00",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            }
+          ]
+        },
+        "verdict": {
+          "status": "checked",
+          "value": "documented_build_candidate",
+          "reason": "The dated free-tier page and undated Query API documentation establish self-serve access and a documented HTTP API, while checked OAuth authentication supports Aura administration. Neo4j is a documented build candidate; the undated MCP docs support local deployment only.",
+          "evidence": [
+            {
+              "url": "https://neo4j.com/docs/query-api/current/",
+              "title": "Query API",
+              "quote": "The Query API allows to execute Cypher statements against a Neo4j server through HTTP requests. This API supersedes the deprecated [HTTP API](https://neo4j.com/docs/http-api/current/).",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            },
+            {
+              "url": "https://neo4j.com/free-graph-database/",
+              "title": "Free Graph Database",
+              "quote": "The free forever, fully managed cloud database from Neo4j. Learn graphs, prototype your idea, and test your applications with Neo4j’s fast, flexible, and easy-to-use graph database.",
+              "retrieved_at": "2026-11-24",
+              "published_at": "2026-11-03",
+              "published_label": "dated"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "number": 67,
+      "app": "Snowflake",
+      "category": "Developer, Infra and Data platforms",
+      "summary": "Snowflake offers broad REST resource-management APIs, JWT/OAuth/PAT authentication, a 30-day self-service trial, and Snowflake-managed remote MCP servers for Cortex agents.",
+      "blocker": "The trial ends after 30 days or when free usage is depleted. AI features are disabled by default on self-service trials until a credit card is added, PATs are role-scoped, and network/authentication policies can restrict use.",
+      "next_action": "Sign up for the self-service trial, configure least-privilege roles and network policy, generate a role-scoped PAT, and validate REST access before enabling any AI-dependent MCP workflow.",
+      "fields": {
+        "auth": {
+          "status": "checked",
+          "value": [
+            "Key-pair authentication with a generated JWT passed as a Bearer token",
+            "OAuth access tokens passed as Bearer tokens",
+            "Role-scoped programmatic access tokens passed as Bearer tokens"
+          ],
+          "reason": "Snowflake's undated REST authentication guide documents key-pair/JWT, OAuth, and programmatic access token methods. Its undated PAT guide says human users can generate their own tokens without special privileges and can restrict them to a specific role; tokens default to 15-day expiry.",
+          "evidence": [
+            {
+              "url": "https://docs.snowflake.com/en/developer-guide/snowflake-rest-api/authentication.md",
+              "title": "Authenticating Snowflake REST APIs with Snowflake",
+              "quote": "## Using key pair authentication\n\nWhen using key pair authentication, you need to complete the following tasks:\n\n1. [](#label-sfrest-api-setup-authenticating-key-pair)\n2. [](#label-sfrest-api-jwt-token)",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            },
+            {
+              "url": "https://docs.snowflake.com/en/developer-guide/snowflake-rest-api/authentication.md",
+              "title": "Authenticating Snowflake REST APIs with Snowflake",
+              "quote": "Pass the generated token as a bearer token. For example, using cURL:",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            },
+            {
+              "url": "https://docs.snowflake.com/en/developer-guide/snowflake-rest-api/authentication.md",
+              "title": "Authenticating Snowflake REST APIs with Snowflake",
+              "quote": "## Using OAuth\n\nTo use OAuth, follow these steps:\n\n1. Set up OAuth for authentication.\n\n   See [Introduction to OAuth](/user-guide/oauth-intro) for details on how to set up OAuth and get an OAuth token.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            },
+            {
+              "url": "https://docs.snowflake.com/en/user-guide/programmatic-access-tokens",
+              "title": "Using programmatic access tokens for authentication | Snowflake Documentation",
+              "quote": "For human users (with TYPE=PERSON), you do not need any special privileges to generate, modify, drop, or display a programmatic access token for yourself .",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated",
+              "original_url": "https://docs.snowflake.com/en/user-guide/programmatic-access-tokens.md",
+              "source_review": "The rendered official page reproduced the normalized quotation. Direct HTTP retrieval missed JavaScript-rendered, redirect-sensitive, or charset-sensitive content; no search snippet or hidden raw HTML was used.",
+              "verification_method": "headless Chromium rendered body innerText (installed Chrome; no raw HTML)",
+              "verification_note": "The rendered official page reproduced the normalized quotation. Direct HTTP retrieval missed JavaScript-rendered, redirect-sensitive, or charset-sensitive content; no search snippet or hidden raw HTML was used.",
+              "verified_at": "2026-11-24"
+            }
+          ]
+        },
+        "credential_gate": {
+          "status": "checked",
+          "value": "self_serve_trial",
+          "gate_class": "self_serve_trial",
+          "reason": "The undated official trial-account guide says signup requires only a valid email address and no payment information. It states the trial continues for 30 days or until free usage is depleted. AI features are disabled by default until a credit card is added, which is a scoped MCP/AI caveat rather than a sales gate for baseline REST credentials.",
+          "evidence": [
+            {
+              "url": "https://docs.snowflake.com/en/user-guide/admin-trial-account.md",
+              "title": "Trial accounts",
+              "quote": "A Snowflake trial account lets you evaluate/test Snowflake's full range of innovative and powerful features with no cost or contractual obligations. To sign up for a trial account, all you need is a valid email address; no payment information or other qualifying information is required.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            },
+            {
+              "url": "https://docs.snowflake.com/en/user-guide/admin-trial-account.md",
+              "title": "Trial accounts",
+              "quote": "The trial continues for 30 days (from the sign-up date) or until you've depleted your free usage balance, whichever occurs first.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            },
+            {
+              "url": "https://docs.snowflake.com/en/user-guide/admin-trial-account.md",
+              "title": "Trial accounts",
+              "quote": "AI features are disabled by default on self-service trial accounts until you add a credit card to the account.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            }
+          ]
+        },
+        "api_surface": {
+          "status": "checked",
+          "value": "REST; broad documented surface",
+          "api_types": [
+            "REST"
+          ],
+          "breadth": "broad",
+          "reason": "Snowflake's undated REST API overview describes end-to-end automation and integration with Snowflake resources and lists APIs for accounts, users, roles, grants, warehouses, databases, schemas, tables, data loading, security, tasks, integrations, and more. The APIs are OpenAPI-compliant.",
+          "evidence": [
+            {
+              "url": "https://docs.snowflake.com/en/developer-guide/snowflake-rest-api/snowflake-rest-api.md",
+              "title": "Snowflake REST APIs",
+              "quote": "The %sf-rest% suite of APIs enables developers to build end-to-end automation and integration with Snowflake resources. These REST APIs are compliant with the [OpenAPI specification](https://spec.openapis.org/oas/v3.1.0). %sf-rest% enable developers and partners to use the language of their choice to build integrations with Snowflake using the openAPI specifications.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            },
+            {
+              "url": "https://docs.snowflake.com/en/developer-guide/snowflake-rest-api/snowflake-rest-api.md",
+              "title": "Snowflake REST APIs",
+              "quote": "The %sf-rest% supports the following resources through the corresponding APIs. The APIs support CREATE OR ALTER operations for applicable resources.\n\n- Working with accounts\n  - [Accounts](/developer-guide/snowflake-rest-api/account/account-introduction)\n  - [Managed accounts](/developer-guide/snowflake-rest-api/managed-account/managed-account-introduction)\n\n- Working with users, roles, and privileges\n  - [Users](/developer-guide/snowflake-rest-api/users/users-introduction)\n  - [Roles](/developer-guide/snowflake-rest-api/roles/roles-introduction)\n  - [Database roles](/developer-guide/snowflake-rest-api/database-role/database-role-introduction)\n  - [Grants](/developer-guide/snowflake-rest-api/grants/grants-introduction)",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            }
+          ]
+        },
+        "official_mcp": {
+          "status": "checked",
+          "value": "vendor_server",
+          "mcp_mode": "remote",
+          "reason": "The undated Cortex Agents MCP guide explicitly calls the service the Snowflake-managed MCP server and says it retrieves data without separate infrastructure. It documents an account-scoped HTTPS MCP endpoint and Snowflake OAuth, establishing a vendor-hosted remote server.",
+          "evidence": [
+            {
+              "url": "https://docs.snowflake.com/en/user-guide/snowflake-cortex/cortex-agents-mcp.md",
+              "title": "Cortex Agents MCP",
+              "quote": "The Snowflake-managed MCP server lets AI agents securely retrieve data from Snowflake accounts without needing to deploy separate infrastructure.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            },
+            {
+              "url": "https://docs.snowflake.com/en/user-guide/snowflake-cortex/cortex-agents-mcp.md",
+              "title": "Cortex Agents MCP",
+              "quote": "Snowflake OAuth by default, with optional External OAuth so MCP clients can authenticate against your organization's identity provider.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            },
+            {
+              "url": "https://docs.snowflake.com/en/user-guide/snowflake-cortex/cortex-agents-mcp.md",
+              "title": "Cortex Agents MCP",
+              "quote": "`https://<account_url>/api/v2/databases/{database}/schemas/{schema}/mcp-servers/{name}`",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            }
+          ]
+        },
+        "composio_toolkit": {
+          "status": "checked",
+          "value": "listed_exact",
+          "catalog_name": "Snowflake",
+          "slug": "SNOWFLAKE",
+          "reason": "The current Composio Snowflake page lists the exact SNOWFLAKE slug and OAuth2 authentication. The page is undated; its toolkit version is not a publication date.",
+          "evidence": [
+            {
+              "url": "https://docs.composio.dev/toolkits/snowflake",
+              "title": "Snowflake",
+              "quote": "# Snowflake\n\nSnowflake is a cloud-based data warehouse offering elastic scaling, secure data sharing, and SQL analytics across multiple cloud environments\n\n- **Category:** databases\n- **Auth:** OAUTH2\n- **Composio-managed OAuth available?** No\n- **Tools:** 17\n- **Triggers:** 0\n- **Slug:** `SNOWFLAKE`\n- **Version:** 20261101_00",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            }
+          ]
+        },
+        "verdict": {
+          "status": "checked",
+          "value": "documented_build_candidate",
+          "reason": "Undated official documentation establishes a broad REST surface, self-service JWT/OAuth/PAT credentials, and a 30-day self-service trial. Snowflake is a documented build candidate; trial exhaustion and the separate credit-card requirement for AI features are explicit blockers, not partner-only access.",
+          "evidence": [
+            {
+              "url": "https://docs.snowflake.com/en/developer-guide/snowflake-rest-api/snowflake-rest-api.md",
+              "title": "Snowflake REST APIs",
+              "quote": "The %sf-rest% suite of APIs enables developers to build end-to-end automation and integration with Snowflake resources. These REST APIs are compliant with the [OpenAPI specification](https://spec.openapis.org/oas/v3.1.0). %sf-rest% enable developers and partners to use the language of their choice to build integrations with Snowflake using the openAPI specifications.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            },
+            {
+              "url": "https://docs.snowflake.com/en/user-guide/admin-trial-account.md",
+              "title": "Trial accounts",
+              "quote": "You can sign up for a free trial using the [self-service form](https://signup.snowflake.com/) (on the Snowflake website).",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "number": 68,
+      "app": "MongoDB Atlas",
+      "category": "Developer, Infra and Data platforms",
+      "summary": "MongoDB Atlas provides a broad Administration API with OAuth2 service accounts, a free cluster tier, official local MCP, and a MongoDB-hosted Atlas Managed MCP Server.",
+      "blocker": "Creating service accounts or API keys requires Organization Owner access, project grants may require Project Owner access, and API access lists can apply. Free clusters are limited to one per project and expose only a subset of Atlas features.",
+      "next_action": "Create a free Atlas project, assign an owner, configure the Administration API access list, create a least-privilege client-credentials service account, and use the MONGODB toolkit or managed MCP according to workflow needs.",
+      "fields": {
+        "auth": {
+          "status": "checked",
+          "value": [
+            "OAuth 2.0 service-account client credentials with Bearer access tokens",
+            "Legacy Atlas Administration API keys using HTTP Digest Authentication"
+          ],
+          "reason": "MongoDB's undated authentication reference lists OAuth 2.0 service accounts and legacy HTTP Digest API keys. Service accounts use the client-credentials flow, belong to one organization, can access multiple projects, and are constrained by Atlas roles.",
+          "evidence": [
+            {
+              "url": "https://www.mongodb.com/docs/atlas/api/api-authentication.md",
+              "title": "Atlas Administration API authentication",
+              "quote": "The Atlas Administration API accepts the following authentication methods:\n\n- Service account access tokens ([OAuth 2.0](https://oauth.net/2/))\n\n- API keys ([HTTP Digest Authentication](http://en.wikipedia.org/wiki/Digest_access_authentication))",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            },
+            {
+              "url": "https://www.mongodb.com/docs/atlas/api/api-authentication/",
+              "title": "Atlas Administration API Authentication Methods - Atlas - MongoDB Docs",
+              "quote": "Service accounts provide improved security over API keys by using the industry standard OAuth 2.0 protocol with the Client Credentials flow. A service account lets you manage permissions and create access tokens that authenticate API requests. Each service account has a client ID and a rotatable secret that function as a username and a password for creating access tokens.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated",
+              "original_url": "https://www.mongodb.com/docs/atlas/api/api-authentication.md",
+              "source_review": "The old quote stitched distant Markdown passages. The current rendered official page contains this contiguous OAuth 2.0 Client Credentials and token-creation passage; organization/project scope remains documented separately on the same page."
+            },
+            {
+              "url": "https://www.mongodb.com/docs/atlas/api/api-authentication.md",
+              "title": "Atlas Administration API authentication",
+              "quote": "API keys are a legacy method of authenticating to the Atlas Administration API that uses [HTTP Digest Authentication.](http://en.wikipedia.org/wiki/Digest_access_authentication)",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            }
+          ]
+        },
+        "credential_gate": {
+          "status": "checked",
+          "value": "self_serve_free",
+          "gate_class": "self_serve_free",
+          "reason": "The undated official free-cluster guide says Atlas Free clusters never expire and can be created through the CLI, UI, or Administration API. This establishes a self-serve free tier, with one Free cluster per project and feature limitations. Credential creation still requires owner roles.",
+          "evidence": [
+            {
+              "url": "https://www.mongodb.com/docs/atlas/tutorial/deploy-free-tier-cluster.md",
+              "title": "Deploy a Free Cluster",
+              "quote": "Atlas Free clusters (formerly known as `M0`) provide a small-scale development environment to host your data. Free clusters never expire, and provide access to a [subset](https://www.mongodb.com/docs/atlas/reference/free-shared-limitations.md#std-label-atlas-free-tier) of Atlas features and functionality.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            },
+            {
+              "url": "https://www.mongodb.com/docs/atlas/tutorial/deploy-free-tier-cluster.md",
+              "title": "Deploy a Free Cluster",
+              "quote": "You can create Free clusters through the [Atlas CLI](https://www.mongodb.com/docs/atlas/cli/current/), Atlas User Interface, and Atlas Administration API. Select the appropriate tab based on how you would like to create the Free clusters.\n\nYou can deploy **only one** Free cluster per Atlas project.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            },
+            {
+              "url": "https://www.mongodb.com/docs/atlas/configure-api-access.md",
+              "title": "Configure API access",
+              "quote": "To create a service account or API (Application Programming Interface) keys for an organization, you must have [`Organization Owner`](https://www.mongodb.com/docs/atlas/reference/user-roles.md#mongodb-authrole-Organization-Owner) access to that organization.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            }
+          ]
+        },
+        "api_surface": {
+          "status": "checked",
+          "value": "REST; broad documented surface",
+          "api_types": [
+            "REST"
+          ],
+          "breadth": "broad",
+          "reason": "The official Atlas Administration API v2 reference, last updated 2026-11-23, says the API manages all Atlas components and documents extensive cluster, backup, user, alert, audit, search, networking, billing, and administrative endpoints.",
+          "evidence": [
+            {
+              "url": "https://www.mongodb.com/docs/api/doc/atlas-admin-api-v2.md",
+              "title": "MongoDB Atlas Administration API v2",
+              "quote": "The MongoDB Atlas Administration API allows developers to manage all components in MongoDB Atlas.",
+              "retrieved_at": "2026-11-24",
+              "published_at": "2026-11-23",
+              "published_label": "updated"
+            },
+            {
+              "url": "https://www.mongodb.com/docs/atlas/configure-api-access.md",
+              "title": "Configure API access",
+              "quote": "The Atlas Administration API follows the principles of the REST (Representational State Transfer) architectural style to expose a number of internal resources which enable programmatic access to administrative features in Atlas.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            }
+          ]
+        },
+        "official_mcp": {
+          "status": "checked",
+          "value": "vendor_server",
+          "mcp_mode": "both",
+          "reason": "MongoDB's undated MCP overview calls the implementation its official MCP server and distinguishes local MCP from MongoDB Atlas Managed MCP Server. It explicitly says MongoDB hosts and manages the Atlas service at mcp.mongodb.com, while the local option is operated by the user.",
+          "evidence": [
+            {
+              "url": "https://www.mongodb.com/docs/mcp-server/overview.md",
+              "title": "MongoDB MCP Server overview",
+              "quote": "The MongoDB MCP Server is our official MCP server implementation that gives your AI client a set of tools that can be used to interact with your MongoDB data and deployments.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            },
+            {
+              "url": "https://www.mongodb.com/docs/mcp-server/overview.md",
+              "title": "MongoDB MCP Server overview",
+              "quote": "MongoDB offers two deployment types for the MongoDB MCP Server:\n\n- **Local MCP for MongoDB MCP Server**: You run the MCP server yourself and directly manage your AI agent connections and MCP server infrastructure.\n\n- **MongoDB Atlas Managed MCP Server**: MongoDB runs the MCP server in Atlas and manages the AI agent connections and MCP server infrastructure for you.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            },
+            {
+              "url": "https://www.mongodb.com/docs/mcp-server/overview.md",
+              "title": "MongoDB MCP Server overview",
+              "quote": "With MongoDB Atlas Managed MCP Server, MongoDB hosts and manages the MongoDB MCP Server in Atlas instead of requiring you to run the server on your own machine or infrastructure.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            }
+          ]
+        },
+        "composio_toolkit": {
+          "status": "checked",
+          "value": "listed_alias",
+          "catalog_name": "MongoDB",
+          "slug": "MONGODB",
+          "reason": "The undated Composio catalog entry is named MongoDB rather than MongoDB Atlas, but its documented scope explicitly administers Atlas organizations, projects, clusters, users, networking, backups, and related cloud resources through the Atlas Administration API. It is therefore an Atlas alias, not a generic database-driver substitution; MONGODB_MCP is a separate narrower product.",
+          "evidence": [
+            {
+              "url": "https://docs.composio.dev/toolkits/mongodb",
+              "title": "MongoDB",
+              "quote": "# MongoDB\n\nAdminister MongoDB Atlas organizations, projects, clusters, users, networking, backups, and related cloud resources with an Atlas OAuth service account.\n\n- **Category:** databases\n- **Auth:** S2S_OAUTH2\n- **Composio-managed OAuth available?** No\n- **Tools:** 496\n- **Triggers:** 0\n- **Slug:** `MONGODB`\n- **Version:** 20261101_00",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            }
+          ]
+        },
+        "verdict": {
+          "status": "checked",
+          "value": "documented_build_candidate",
+          "reason": "The dated Atlas Administration API reference establishes broad REST coverage, and the undated free-cluster guide establishes self-service free access. Owner-role and access-list requirements are implementation gates, not partner-only access, so MongoDB Atlas is a documented build candidate.",
+          "evidence": [
+            {
+              "url": "https://www.mongodb.com/docs/api/doc/atlas-admin-api-v2.md",
+              "title": "MongoDB Atlas Administration API v2",
+              "quote": "The MongoDB Atlas Administration API allows developers to manage all components in MongoDB Atlas.",
+              "retrieved_at": "2026-11-24",
+              "published_at": "2026-11-23",
+              "published_label": "updated"
+            },
+            {
+              "url": "https://www.mongodb.com/docs/atlas/tutorial/deploy-free-tier-cluster.md",
+              "title": "Deploy a Free Cluster",
+              "quote": "Atlas Free clusters (formerly known as `M0`) provide a small-scale development environment to host your data. Free clusters never expire, and provide access to a [subset](https://www.mongodb.com/docs/atlas/reference/free-shared-limitations.md#std-label-atlas-free-tier) of Atlas features and functionality.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "number": 69,
+      "app": "Datadog",
+      "category": "Developer, Infra and Data platforms",
+      "summary": "Datadog provides a broad HTTP API with API/application keys and scoped PATs, a self-service Free Trial, and a main remote MCP Server that forwards the authenticated user's permissions.",
+      "blocker": "Read requests require an application key or suitable scoped token, writes require an API key, PAT creation requires user_app_keys permission, and the main MCP Server is not supported on GovCloud sites.",
+      "next_action": "Start the self-service trial, create API/application keys or a least-privilege PAT, and configure the remote MCP endpoint for the correct Datadog site with only required toolsets.",
+      "fields": {
+        "auth": {
+          "status": "checked",
+          "value": [
+            "API keys for write/reporting requests, paired with application keys for full-access reads",
+            "Scoped, expiring personal access tokens passed as Bearer tokens without a paired API key"
+          ],
+          "reason": "Datadog's undated authentication docs require an API key for writes and an application key for reads. Its undated PAT documentation provides a scoped, short-lived Bearer alternative that does not need an API key and requires user_app_keys permission to create.",
+          "evidence": [
+            {
+              "url": "https://docs.datadoghq.com/api/latest/authentication.md",
+              "title": "Authentication",
+              "quote": "All requests to Datadog’s API must be authenticated.\nRequests that write data require reporting access and require an `API key`.\nRequests that read data require full access and also require an `application key`.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            },
+            {
+              "url": "https://docs.datadoghq.com/account_management/personal-access-tokens.md",
+              "title": "Personal Access Tokens",
+              "quote": "Personal Access Tokens (PATs) are a credential type that authenticates Datadog API calls. Unlike application keys, PATs do not need to be paired with an API key. They are short-lived and scoped by default, giving you tighter control over what each token can access and how long it remains valid.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            },
+            {
+              "url": "https://docs.datadoghq.com/account_management/personal-access-tokens.md",
+              "title": "Personal Access Tokens",
+              "quote": "Pass the PAT as a Bearer token in the `Authorization` header. This method does not require an API key:",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            }
+          ]
+        },
+        "credential_gate": {
+          "status": "checked",
+          "value": "self_serve_trial",
+          "gate_class": "self_serve_trial",
+          "reason": "The undated official pricing page visibly presents a GET STARTED FREE Free Trial call to action and a Start Free Trial action. This supports self-service trial access; no trial duration is asserted because a rendered duration was not verified.",
+          "evidence": [
+            {
+              "url": "https://www.datadoghq.com/pricing/",
+              "title": "Datadog Pricing",
+              "quote": "Start Free Trial",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated",
+              "original_url": "https://www.datadoghq.com/pricing/",
+              "source_review": "The prior normalized citation joined price text to a responsive CTA that is not contiguous after hidden nodes are excluded. This exact standalone Start Free Trial call to action remains in accessible server-rendered main pricing content and supports self-service trial access without asserting a duration."
+            },
+            {
+              "url": "https://www.datadoghq.com/pricing/",
+              "title": "Datadog Pricing",
+              "quote": "Start Free Trial",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            }
+          ]
+        },
+        "api_surface": {
+          "status": "checked",
+          "value": "HTTP API; broad documented surface",
+          "api_types": [
+            "HTTP API"
+          ],
+          "breadth": "broad",
+          "reason": "Datadog's undated API guide calls the interface the Datadog HTTP API and says it can send data, build visualizations, and manage the account. The reference covers metrics, logs, traces, monitors, dashboards, synthetics, security, users, roles, organizations, keys, and many other resources.",
+          "evidence": [
+            {
+              "url": "https://docs.datadoghq.com/api/latest/using-the-api.md",
+              "title": "Using the Datadog API",
+              "quote": "Use the Datadog HTTP API to access the Datadog platform programmatically. You can use the API to send data to Datadog, build data visualizations, and manage your account.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            }
+          ]
+        },
+        "official_mcp": {
+          "status": "checked",
+          "value": "vendor_server",
+          "mcp_mode": "remote",
+          "reason": "The undated official MCP page identifies the main Datadog MCP Server and says it provides remote access to most Datadog products. The undated setup page supplies regional remote HTTP endpoints. The GovCloud warning is explicitly site-scoped, not a global denial of the server.",
+          "evidence": [
+            {
+              "url": "https://docs.datadoghq.com/mcp_server.md",
+              "title": "Datadog MCP Server",
+              "quote": "The Datadog MCP Server acts as a bridge between your observability data in Datadog and any AI agents that support the [Model Context Protocol (MCP)](https://modelcontextprotocol.io/).",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            },
+            {
+              "url": "https://docs.datadoghq.com/mcp_server.md",
+              "title": "Datadog MCP Server",
+              "quote": "This is the main Datadog MCP Server and is what users typically mean when they ask about setting up \"the Datadog MCP server\". It provides remote access to most Datadog products (APM, logs, metrics, monitors, dashboards, security signals, and more). Default to this page for setup questions.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            },
+            {
+              "url": "https://docs.datadoghq.com/mcp_server/setup.md",
+              "title": "Set Up the Datadog MCP Server",
+              "quote": "Each [Datadog site](https://docs.datadoghq.com/getting_started/site.md) has its own MCP Server endpoint. To build the endpoint for your site, add `mcp.` before your site parameter and append `/v1/mcp`. Use the endpoint that matches the site where your Datadog organization is hosted:",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            }
+          ]
+        },
+        "composio_toolkit": {
+          "status": "checked",
+          "value": "listed_exact",
+          "catalog_name": "Datadog",
+          "slug": "DATADOG",
+          "reason": "The current Composio Datadog page lists the exact DATADOG slug. The page is undated; its toolkit version is not a publication date.",
+          "evidence": [
+            {
+              "url": "https://docs.composio.dev/toolkits/datadog",
+              "title": "Datadog",
+              "quote": "# Datadog\n\nDatadog offers monitoring, observability, and security for cloud-scale applications, unifying metrics, logs, and traces to help teams detect issues and optimize performance\n\n- **Category:** server monitoring\n- **Auth:** OAUTH2, API_KEY, BEARER_TOKEN\n- **Composio-managed OAuth available?** No\n- **Tools:** 256\n- **Triggers:** 0\n- **Slug:** `DATADOG`\n- **Version:** 20261113_00",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            }
+          ]
+        },
+        "verdict": {
+          "status": "checked",
+          "value": "documented_build_candidate",
+          "reason": "Undated official pages establish a broad HTTP API, self-service key/PAT authentication, a self-service Free Trial call to action, and a remote MCP Server. Datadog is a documented build candidate; trial duration remains deliberately unclaimed because the rendered page did not verify it.",
+          "evidence": [
+            {
+              "url": "https://docs.datadoghq.com/api/latest/using-the-api.md",
+              "title": "Using the Datadog API",
+              "quote": "Use the Datadog HTTP API to access the Datadog platform programmatically. You can use the API to send data to Datadog, build data visualizations, and manage your account.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            },
+            {
+              "url": "https://www.datadoghq.com/pricing/",
+              "title": "Datadog Pricing",
+              "quote": "Start Free Trial",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated",
+              "original_url": "https://www.datadoghq.com/pricing/",
+              "source_review": "The prior normalized citation joined price text to a responsive CTA that is not contiguous after hidden nodes are excluded. This exact standalone Start Free Trial call to action remains in accessible server-rendered main pricing content and supports self-service trial access without asserting a duration."
+            }
+          ]
+        }
+      }
+    },
+    {
+      "number": 70,
+      "app": "Sentry",
+      "category": "Developer, Infra and Data platforms",
+      "summary": "Sentry provides a broad web API with user/internal-integration tokens and OAuth2, a free Developer plan, and official remote OAuth plus local STDIO MCP servers.",
+      "blocker": "Legacy API keys are disabled for new accounts, OAuth access tokens are scoped to the organization selected by the user, and the free Developer plan is limited to one user.",
+      "next_action": "Create a scoped personal or internal-integration token, or use OAuth2 for user delegation; connect to Sentry's remote MCP endpoint with OAuth or register the local sentry mcp STDIO server through the official CLI.",
+      "fields": {
+        "auth": {
+          "status": "checked",
+          "value": [
+            "User or internal-integration authentication tokens with assigned scopes (Authorization header)",
+            "OAuth 2.0 authorization-code access tokens for third-party user delegation",
+            "Legacy API keys using HTTP Basic authentication, disabled for new accounts"
+          ],
+          "reason": "Sentry's undated authentication guide documents internal-integration and personal tokens with scopes, OAuth2 authorization-code grants with organization scoping, and legacy Basic API keys that are disabled for new accounts. New integrations should use authentication tokens or OAuth2.",
+          "evidence": [
+            {
+              "url": "https://docs.sentry.io/api/auth.md",
+              "title": "Authentication",
+              "quote": "Authentication tokens are passed using an auth header, and are used to authenticate as a user or organization account with the API.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            },
+            {
+              "url": "https://docs.sentry.io/api/auth.md",
+              "title": "Authentication",
+              "quote": "For third-party applications that need to access Sentry on behalf of users, Sentry supports OAuth2 with the authorization code grant type. This allows users to authorize your application without sharing their credentials.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            },
+            {
+              "url": "https://docs.sentry.io/api/auth.md",
+              "title": "Authentication",
+              "quote": "A Sentry user can belong to multiple organizations. The access token only provides access to the specific organization the user selected during the OAuth flow.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            },
+            {
+              "url": "https://docs.sentry.io/api/auth.md",
+              "title": "Authentication",
+              "quote": "API keys are a legacy means of authenticating. They will still be supported but are disabled for new accounts. You should use **authentication tokens** wherever possible.\n\nAPI keys are passed using HTTP Basic auth where the username is your api key, and the password is an empty value.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            }
+          ]
+        },
+        "credential_gate": {
+          "status": "checked",
+          "value": "self_serve_free",
+          "gate_class": "self_serve_free",
+          "reason": "The undated official pricing page shows a Developer plan at $0 for solo developers, limited to one user, and explicitly includes MCP access. This establishes self-serve free access with user and feature limits.",
+          "evidence": [
+            {
+              "url": "https://sentry.io/pricing/index.md",
+              "title": "Pricing: Free Developer Plan, Pay as You Grow",
+              "quote": "### Developer (Free) For solo devs working on small projects. - One user - Error Monitoring and Tracing - Alerts and notifications via email - 10 custom dashboards - MCP access",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated",
+              "original_url": "https://sentry.io/pricing/",
+              "source_review": "The prior normalized citation flattened hidden pricing-card HTML. The official pricing Markdown variant is directly accessible, and this exact contiguous plan section preserves the free Developer plan, solo-developer scope, one-user limit, and MCP access."
+            }
+          ]
+        },
+        "api_surface": {
+          "status": "checked",
+          "value": "REST; broad documented surface",
+          "api_types": [
+            "REST"
+          ],
+          "breadth": "broad",
+          "reason": "Sentry's undated web API guide says the APIs manage account-level resources and manage/export data. Its endpoint catalog spans organizations, projects, teams, users, issues, events, releases, dashboards, monitors, alerts, crons, integrations, and many other resources.",
+          "evidence": [
+            {
+              "url": "https://docs.sentry.io/api.md",
+              "title": "Sentry API",
+              "quote": "The Sentry web API is used to access the Sentry platform programmatically. You can use the APIs to manage account-level resources, like organizations and teams, as well as manage and export data.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            }
+          ]
+        },
+        "official_mcp": {
+          "status": "checked",
+          "value": "vendor_server",
+          "mcp_mode": "both",
+          "reason": "Sentry's MCP blog post dated 2025-06-10 states that Sentry has an MCP server and supports both remote hosted and local STDIO modes, OAuth, and Streamable HTTP. Its current undated docs give the hosted OAuth endpoint, while the same dated vendor statement preserves evidence for the local mode.",
+          "evidence": [
+            {
+              "url": "https://blog.sentry.io/yes-sentry-has-an-mcp-server-and-its-pretty-good/",
+              "title": "Yes, Sentry has an MCP Server (...and it’s pretty good)",
+              "quote": "The Sentry MCP has support for all the newest fun bells and whistles, including:\n\n*   **Remote hosted (preferred) or local STDIO mode** (we strongly recommend the hosted version. It’s lower friction and you’ll always have the latest functionality/stability)\n*   **OAuth support**to enable logging in via your existing Sentry organization, so you’ll have clear access to your organization and projects\n*   **[Streamable HTTP](https://modelcontextprotocol.io/specification/2025-03-26/basic/transports#streamable-http) with graceful [fallback to SSE](https://modelcontextprotocol.io/specification/2025-03-26/basic/transports#backwards-compatibility)** if your client doesn’t support it",
+              "retrieved_at": "2026-11-24",
+              "published_at": "2025-06-10",
+              "published_label": "2025-06-10"
+            },
+            {
+              "url": "https://docs.sentry.io/product/snapshots/agentic-workflow/",
+              "title": "Agentic Workflow | Sentry Docs",
+              "quote": "Sentry's MCP server connects your AI assistant to Sentry over the Model Context Protocol. Follow the setup and authentication instructions there for your client (Claude Code, Cursor, VS Code, and others). The Sentry MCP has been optimized to retrieve Snapshot results for agentic workflows. If you'd like, you can also fetch the data via the REST API and expose scripts to agents. Connect using one of these endpoints: https://mcp.sentry.dev/mcp : base endpoint https://mcp.sentry.dev/mcp/{organizationSlug} : scoped to one organization https://mcp.sentry.dev/mcp/{organizationSlug}/{projectSlug} : scoped to one project (recommended) The first connection starts an OAuth flow to link your Sentry account.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated",
+              "original_url": "https://docs.sentry.io/product/snapshots/agentic-workflow.md",
+              "source_review": "The current Markdown page adds intervening Snapshot/REST text. The replacement uses the contiguous rendered HTML passage and preserves Sentry-operated MCP directionality, base/organization/project endpoints, and first-connection OAuth."
+            }
+          ]
+        },
+        "composio_toolkit": {
+          "status": "checked",
+          "value": "listed_exact",
+          "catalog_name": "Sentry",
+          "slug": "SENTRY",
+          "reason": "The current Composio Sentry page lists the exact SENTRY slug. The page is undated; its toolkit version is not a publication date.",
+          "evidence": [
+            {
+              "url": "https://docs.composio.dev/toolkits/sentry",
+              "title": "Sentry",
+              "quote": "# Sentry\n\nIntegrate Sentry to manage your error tracking and monitoring.\n\n- **Category:** developer tools\n- **Auth:** OAUTH2\n- **Composio-managed OAuth available?** Yes\n- **Tools:** 212\n- **Triggers:** 0\n- **Slug:** `SENTRY`\n- **Version:** 20261116_00",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            }
+          ]
+        },
+        "verdict": {
+          "status": "checked",
+          "value": "documented_build_candidate",
+          "reason": "Undated official documentation establishes a broad web API, self-service scoped tokens/OAuth2, a free Developer plan, and remote/local MCP. Sentry is a documented self-serve build candidate, with legacy-key and one-user Free-plan limitations called out separately.",
+          "evidence": [
+            {
+              "url": "https://docs.sentry.io/api.md",
+              "title": "Sentry API",
+              "quote": "The Sentry web API is used to access the Sentry platform programmatically. You can use the APIs to manage account-level resources, like organizations and teams, as well as manage and export data.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            },
+            {
+              "url": "https://sentry.io/pricing/index.md",
+              "title": "Pricing: Free Developer Plan, Pay as You Grow",
+              "quote": "### Developer (Free) For solo devs working on small projects. - One user - Error Monitoring and Tracing - Alerts and notifications via email - 10 custom dashboards - MCP access",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated",
+              "original_url": "https://sentry.io/pricing/",
+              "source_review": "The prior normalized citation flattened hidden pricing-card HTML. The official pricing Markdown variant is directly accessible, and this exact contiguous plan section preserves the free Developer plan, solo-developer scope, one-user limit, and MCP access."
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

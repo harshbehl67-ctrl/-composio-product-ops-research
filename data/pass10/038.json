@@ -1,0 +1,213 @@
+{
+  "app": {
+    "number": 38,
+    "name": "Pinterest",
+    "category": "Marketing, Ads, Email and Social",
+    "hint": "developers.pinterest.com"
+  },
+  "replayed_at": "2026-11-23T18:42:00.910371+00:00",
+  "source_passes": [
+    "data/pass2/038.json",
+    "data/pass4/038.json"
+  ],
+  "source_searches": [
+    "data/new_search/038.json",
+    "data/pass4_search/038.json"
+  ],
+  "publication_date_note": "Search publication labels are retained exactly; null means no label was available. Relative labels are not exact dates.",
+  "claims": {
+    "auth": {
+      "value": [
+        "OAuth 2.0",
+        "API token",
+        "Basic authentication (OAuth client or endpoint-specific)"
+      ],
+      "status": "provisional",
+      "sources": [
+        "https://developer.pinterest.com/docs/getting-started/set-up-authentication-and-authorization/",
+        "https://developer.pinterest.com/about-pinterest-mcp/",
+        "https://dev.pinterest.com/docs/getting-started/set-up-authentication-and-authorization/",
+        "https://developers.pinterest.com/docs/getting-started/set-up-authentication-and-authorization/"
+      ],
+      "evidence": [
+        {
+          "value": "OAuth 2.0",
+          "url": "https://developer.pinterest.com/docs/getting-started/set-up-authentication-and-authorization/",
+          "excerpt": "ou generate an access token . Our implementation of grant types and access tokens follows OAuth 2.0 specifications. To learn more about OAuth and grant types, see the OAuth 2.0 Authorization Framework RFC . Authorization Code grant What this type is for: This grant typ",
+          "published_label": null
+        },
+        {
+          "value": "API token",
+          "url": "https://developer.pinterest.com/docs/getting-started/set-up-authentication-and-authorization/",
+          "excerpt": "curity team if a Pinterest access token has been leaked in a developer's code commit. Our API tokens, such as access and refresh tokens, are secrets that developers should not share in their code or repos. A developer hosting their code on GitHub may unintentionally ex",
+          "published_label": null
+        },
+        {
+          "value": "Basic authentication (OAuth client or endpoint-specific)",
+          "url": "https://developer.pinterest.com/docs/getting-started/set-up-authentication-and-authorization/",
+          "excerpt": "in the left navigation panel. Then select Generate access token . Authentication Use HTTP Basic Authentication: Username: client_id Password: client_secret Authorization Header Authorization: Basic {base64-encoded_string_made_of client_id:client_secret} For example, if your clien",
+          "published_label": null
+        },
+        {
+          "value": "OAuth 2.0",
+          "url": "https://developer.pinterest.com/about-pinterest-mcp/",
+          "excerpt": "ith compatibility across tools such as Claude, Cursor, and VS Code. Secure, scoped access OAuth 2.0 authorization and granular permissions keep credentials protected and access appropriately controlled. Less integration work Skip custom API wrappers. The MCP server man",
+          "published_label": null
+        },
+        {
+          "value": "OAuth 2.0",
+          "url": "https://dev.pinterest.com/docs/getting-started/set-up-authentication-and-authorization/",
+          "excerpt": "ou generate an access token . Our implementation of grant types and access tokens follows OAuth 2.0 specifications. To learn more about OAuth and grant types, see the OAuth 2.0 Authorization Framework RFC . Authorization Code grant What this type is for: This grant typ",
+          "published_label": null
+        },
+        {
+          "value": "API token",
+          "url": "https://dev.pinterest.com/docs/getting-started/set-up-authentication-and-authorization/",
+          "excerpt": "curity team if a Pinterest access token has been leaked in a developer's code commit. Our API tokens, such as access and refresh tokens, are secrets that developers should not share in their code or repos. A developer hosting their code on GitHub may unintentionally ex",
+          "published_label": null
+        },
+        {
+          "value": "Basic authentication (OAuth client or endpoint-specific)",
+          "url": "https://dev.pinterest.com/docs/getting-started/set-up-authentication-and-authorization/",
+          "excerpt": "in the left navigation panel. Then select Generate access token . Authentication Use HTTP Basic Authentication: Username: client_id Password: client_secret Authorization Header Authorization: Basic {base64-encoded_string_made_of client_id:client_secret} For example, if your clien",
+          "published_label": null
+        },
+        {
+          "value": "OAuth 2.0",
+          "url": "https://developers.pinterest.com/docs/getting-started/set-up-authentication-and-authorization/",
+          "excerpt": "ou generate an access token . Our implementation of grant types and access tokens follows OAuth 2.0 specifications. To learn more about OAuth and grant types, see the OAuth 2.0 Authorization Framework RFC . Authorization Code grant What this type is for: This grant typ",
+          "published_label": null
+        },
+        {
+          "value": "API token",
+          "url": "https://developers.pinterest.com/docs/getting-started/set-up-authentication-and-authorization/",
+          "excerpt": "curity team if a Pinterest access token has been leaked in a developer's code commit. Our API tokens, such as access and refresh tokens, are secrets that developers should not share in their code or repos. A developer hosting their code on GitHub may unintentionally ex",
+          "published_label": null
+        },
+        {
+          "value": "Basic authentication (OAuth client or endpoint-specific)",
+          "url": "https://developers.pinterest.com/docs/getting-started/set-up-authentication-and-authorization/",
+          "excerpt": "in the left navigation panel. Then select Generate access token . Authentication Use HTTP Basic Authentication: Username: client_id Password: client_secret Authorization Header Authorization: Basic {base64-encoded_string_made_of client_id:client_secret} For example, if your clien",
+          "published_label": null
+        }
+      ],
+      "reason": "Provisional extraction; validate scope and completeness against cited pages."
+    },
+    "credential_gate": {
+      "value": [
+        "partner_or_sales"
+      ],
+      "status": "provisional",
+      "sources": [
+        "https://developer.pinterest.com/docs/getting-started/set-up-authentication-and-authorization/",
+        "https://dev.pinterest.com/docs/getting-started/set-up-authentication-and-authorization/",
+        "https://developers.pinterest.com/docs/getting-started/set-up-authentication-and-authorization/"
+      ],
+      "evidence": [
+        {
+          "value": "partner_or_sales",
+          "url": "https://developer.pinterest.com/docs/getting-started/set-up-authentication-and-authorization/",
+          "excerpt": "rations: Github secret scanner program Pinterest participates in GitHub's secret scanning partner program, which alerts our security team if a Pinterest access token has been leaked in a developer's code commit. Our API tokens, such as access and refresh tokens, are secrets",
+          "published_label": null
+        },
+        {
+          "value": "partner_or_sales",
+          "url": "https://dev.pinterest.com/docs/getting-started/set-up-authentication-and-authorization/",
+          "excerpt": "rations: Github secret scanner program Pinterest participates in GitHub's secret scanning partner program, which alerts our security team if a Pinterest access token has been leaked in a developer's code commit. Our API tokens, such as access and refresh tokens, are secrets",
+          "published_label": null
+        },
+        {
+          "value": "partner_or_sales",
+          "url": "https://developers.pinterest.com/docs/getting-started/set-up-authentication-and-authorization/",
+          "excerpt": "rations: Github secret scanner program Pinterest participates in GitHub's secret scanning partner program, which alerts our security team if a Pinterest access token has been leaked in a developer's code commit. Our API tokens, such as access and refresh tokens, are secrets",
+          "published_label": null
+        }
+      ],
+      "reason": "Provisional extraction; validate scope and completeness against cited pages."
+    },
+    "api_surface": {
+      "value": "REST; broad documented surface",
+      "status": "provisional",
+      "sources": [
+        "https://developer.pinterest.com/docs/getting-started/set-up-authentication-and-authorization/",
+        "https://dev.pinterest.com/docs/getting-started/set-up-authentication-and-authorization/",
+        "https://developers.pinterest.com/docs/getting-started/set-up-authentication-and-authorization/"
+      ],
+      "evidence": [
+        {
+          "value": [
+            "REST"
+          ],
+          "breadth": "broad",
+          "url": "https://developer.pinterest.com/docs/getting-started/set-up-authentication-and-authorization/",
+          "excerpt": "Pinterest Developers Skip to content Set up authentication and authorization Use with AI Pinterest API services are only available to authenticated and authorized users. Make sure your API requests on a user\"s behalf include a current access token that identifies the user and def",
+          "published_label": null
+        },
+        {
+          "value": [
+            "REST"
+          ],
+          "breadth": "broad",
+          "url": "https://dev.pinterest.com/docs/getting-started/set-up-authentication-and-authorization/",
+          "excerpt": "Pinterest Developers Skip to content Set up authentication and authorization Use with AI Pinterest API services are only available to authenticated and authorized users. Make sure your API requests on a user\"s behalf include a current access token that identifies the user and def",
+          "published_label": null
+        },
+        {
+          "value": [
+            "REST"
+          ],
+          "breadth": "broad",
+          "url": "https://developers.pinterest.com/docs/getting-started/set-up-authentication-and-authorization/",
+          "excerpt": "Pinterest Developers Skip to content Set up authentication and authorization Use with AI Pinterest API services are only available to authenticated and authorized users. Make sure your API requests on a user\"s behalf include a current access token that identifies the user and def",
+          "published_label": null
+        }
+      ],
+      "reason": "Provisional extraction; validate scope and completeness against cited pages."
+    },
+    "official_mcp": {
+      "value": "client_only",
+      "status": "provisional",
+      "sources": [
+        "https://developer.pinterest.com/about-pinterest-mcp/"
+      ],
+      "evidence": [
+        {
+          "value": "client_only",
+          "url": "https://developer.pinterest.com/about-pinterest-mcp/",
+          "excerpt": "Pinterest Developers Skip to content New announcement Your AI just got a new superpower Pinterest MCP Server brings the power of Pinterest data directly into the AI assistants, copilots, and agentic workflows you already use. Turn natural-language questions into fast, actionable insights, uncover performance opportunities in moments, and build what's next with more momentum than ever. Mo",
+          "published_label": null,
+          "context_note": "Passage describes a client connection to external servers."
+        }
+      ],
+      "reason": "Provisional; check date, ownership and access scope."
+    },
+    "composio_toolkit": {
+      "value": "listed",
+      "status": "provisional",
+      "sources": [
+        "https://docs.composio.dev/toolkits/pinterest"
+      ],
+      "evidence": [],
+      "reason": "Catalog match only; not vendor MCP evidence."
+    },
+    "verdict": {
+      "value": "partner_outreach",
+      "status": "provisional",
+      "sources": [
+        "https://developer.pinterest.com/docs/getting-started/set-up-authentication-and-authorization/",
+        "https://developer.pinterest.com/about-pinterest-mcp/",
+        "https://dev.pinterest.com/docs/getting-started/set-up-authentication-and-authorization/",
+        "https://developers.pinterest.com/docs/getting-started/set-up-authentication-and-authorization/"
+      ],
+      "evidence": [],
+      "reason": "Inferred only from extracted auth, API and access evidence; independent review required."
+    }
+  },
+  "validation": [
+    "Automatic extraction is provisional until independently reviewed",
+    "Unknown is not evidence of absence",
+    "Composio evidence cannot establish vendor MCP",
+    "Client-only and negated MCP statements are not vendor-server proof",
+    "API breadth is a text-coverage heuristic, not an endpoint census"
+  ]
+}

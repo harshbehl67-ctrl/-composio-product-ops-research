@@ -1,0 +1,213 @@
+{
+  "app": {
+    "number": 67,
+    "name": "Snowflake",
+    "category": "Developer, Infra and Data platforms",
+    "hint": "docs.snowflake.com"
+  },
+  "replayed_at": "2026-11-23T18:41:09.420451+00:00",
+  "source_passes": [
+    "data/pass2/067.json",
+    "data/pass4/067.json"
+  ],
+  "source_searches": [
+    "data/new_search/067.json",
+    "data/pass4_search/067.json"
+  ],
+  "publication_date_note": "Search publication labels are retained exactly; null means no label was available. Relative labels are not exact dates.",
+  "claims": {
+    "auth": {
+      "value": [
+        "OAuth 2.0",
+        "Basic authentication",
+        "Bearer token"
+      ],
+      "status": "provisional",
+      "sources": [
+        "https://docs.snowflake.com/en/user-guide/api-authentication",
+        "https://docs.snowflake.com/en/user-guide/snowflake-cortex/cortex-agents-mcp",
+        "https://docs.snowflake.com/en/en/developer-guide/snowflake-rest-api/authentication",
+        "https://docs.snowflake.com/en/developer-guide/snowflake-rest-api/authentication"
+      ],
+      "evidence": [
+        {
+          "value": "OAuth 2.0",
+          "url": "https://docs.snowflake.com/en/user-guide/api-authentication",
+          "excerpt": "re the authentication credentials are encoded using Base64. Similarly,\nSnowflake supports OAuth 2.0 as specified in RFC 6749 . In Snowflake,\nthe authentication credentials are stored and accessed securely from an object called a secret. The secret is used with a connec",
+          "published_label": null
+        },
+        {
+          "value": "Basic authentication",
+          "url": "https://docs.snowflake.com/en/user-guide/api-authentication",
+          "excerpt": "supports the following methods of authentication while using External\nAPI Authentication: Basic authentication. OAuth with code grant flow. OAuth with client credentials flow. Snowflake supports basic authentication (i.e. username and password) in the API request header as specif",
+          "published_label": null
+        },
+        {
+          "value": "OAuth 2.0",
+          "url": "https://docs.snowflake.com/en/user-guide/snowflake-cortex/cortex-agents-mcp",
+          "excerpt": "n ¶ Configure authentication on the MCP client. The Snowflake-managed MCP server supports OAuth 2.0 aligned with the authorization recommendation in the MCP protocol. The Snowflake-managed MCP server doesn’t support dynamic client registration. By default, MCP servers",
+          "published_label": null
+        },
+        {
+          "value": "Bearer token",
+          "url": "https://docs.snowflake.com/en/en/developer-guide/snowflake-rest-api/authentication",
+          "excerpt": "the same way for both APIs. Using the token in a request ¶ Pass the generated token as a bearer token. For example, using cURL: Copy code curl --location ' https://myorganization-myaccount.snowflakecomputing.com/api/v2/databases ' \\\n  --header \" Authorization: Bearer <JW",
+          "published_label": null
+        },
+        {
+          "value": "Bearer token",
+          "url": "https://docs.snowflake.com/en/developer-guide/snowflake-rest-api/authentication",
+          "excerpt": "the same way for both APIs. Using the token in a request ¶ Pass the generated token as a bearer token. For example, using cURL: Copy code curl --location ' https://myorganization-myaccount.snowflakecomputing.com/api/v2/databases ' \\\n  --header \" Authorization: Bearer <JW",
+          "published_label": null
+        }
+      ],
+      "reason": "Provisional extraction; validate scope and completeness against cited pages."
+    },
+    "credential_gate": {
+      "value": [
+        "partner_or_sales"
+      ],
+      "status": "provisional",
+      "sources": [
+        "https://docs.snowflake.com/en/user-guide/programmatic-access-tokens"
+      ],
+      "evidence": [
+        {
+          "value": "partner_or_sales",
+          "url": "https://docs.snowflake.com/en/user-guide/programmatic-access-tokens",
+          "excerpt": "ling a leaked programmatic access token ¶ Snowflake is part of the GitHub secret scanning partner program .\nIf the secret for a programmatic access token has been checked in to a public GitHub repository, Snowflake is notified and\ndisables the programmatic access token autom",
+          "published_label": null
+        }
+      ],
+      "reason": "Provisional extraction; validate scope and completeness against cited pages."
+    },
+    "api_surface": {
+      "value": "REST; broad documented surface",
+      "status": "provisional",
+      "sources": [
+        "https://docs.snowflake.com/en/en/sql-reference/sql/create-mcp-server",
+        "https://docs.snowflake.com/en/user-guide/snowflake-cortex/cortex-agents-mcp",
+        "https://docs.snowflake.com/en/user-guide/programmatic-access-tokens",
+        "https://docs.snowflake.com/en/en/developer-guide/snowflake-rest-api/authentication",
+        "https://docs.snowflake.com/en/sql-reference/sql/create-mcp-server",
+        "https://docs.snowflake.com/en/developer-guide/snowflake-rest-api/authentication",
+        "https://docs.snowflake.com/en/api-reference"
+      ],
+      "evidence": [
+        {
+          "value": [
+            "REST"
+          ],
+          "breadth": "moderate",
+          "url": "https://docs.snowflake.com/en/en/sql-reference/sql/create-mcp-server",
+          "excerpt": "CREATE MCP SERVER | Snowflake Documentation For AI agents: documentation index at /llms.txt — fetch to discover all Snowflake documentation pages. Markdown version of this page: /en/en/sql-reference/sql/create-mcp-server.md CREATE MCP SERVER ¶ Creates a new MCP (Model Context Pro",
+          "published_label": null
+        },
+        {
+          "value": [
+            "REST"
+          ],
+          "breadth": "broad",
+          "url": "https://docs.snowflake.com/en/user-guide/snowflake-cortex/cortex-agents-mcp",
+          "excerpt": "Snowflake-managed MCP server | Snowflake Documentation For AI agents: documentation index at /llms.txt — fetch to discover all Snowflake documentation pages. Markdown version of this page: /en/user-guide/snowflake-cortex/cortex-agents-mcp.md Snowflake-managed MCP server ¶ Overvie",
+          "published_label": null
+        },
+        {
+          "value": [
+            "REST"
+          ],
+          "breadth": "moderate",
+          "url": "https://docs.snowflake.com/en/user-guide/programmatic-access-tokens",
+          "excerpt": "Using programmatic access tokens for authentication | Snowflake Documentation For AI agents: documentation index at /llms.txt — fetch to discover all Snowflake documentation pages. Markdown version of this page: /en/user-guide/programmatic-access-tokens.md Using programmatic acce",
+          "published_label": null
+        },
+        {
+          "value": [
+            "REST"
+          ],
+          "breadth": "narrow",
+          "url": "https://docs.snowflake.com/en/en/developer-guide/snowflake-rest-api/authentication",
+          "excerpt": "Authenticating Snowflake REST APIs with Snowflake | Snowflake Documentation For AI agents: documentation index at /llms.txt — fetch to discover all Snowflake documentation pages. Markdown version of this page: /en/en/developer-guide/snowflake-rest-api/authentication.md Authentica",
+          "published_label": null
+        },
+        {
+          "value": [
+            "REST"
+          ],
+          "breadth": "moderate",
+          "url": "https://docs.snowflake.com/en/sql-reference/sql/create-mcp-server",
+          "excerpt": "CREATE MCP SERVER | Snowflake Documentation For AI agents: documentation index at /llms.txt — fetch to discover all Snowflake documentation pages. Markdown version of this page: /en/sql-reference/sql/create-mcp-server.md CREATE MCP SERVER ¶ Creates a new MCP (Model Context Protoc",
+          "published_label": null
+        },
+        {
+          "value": [
+            "REST"
+          ],
+          "breadth": "narrow",
+          "url": "https://docs.snowflake.com/en/developer-guide/snowflake-rest-api/authentication",
+          "excerpt": "Authenticating Snowflake REST APIs with Snowflake | Snowflake Documentation For AI agents: documentation index at /llms.txt — fetch to discover all Snowflake documentation pages. Markdown version of this page: /en/developer-guide/snowflake-rest-api/authentication.md Authenticatin",
+          "published_label": null
+        },
+        {
+          "value": [
+            "REST"
+          ],
+          "breadth": "narrow",
+          "url": "https://docs.snowflake.com/en/api-reference",
+          "excerpt": "API Reference | Snowflake Documentation For AI agents: documentation index at /llms.txt — fetch to discover all Snowflake documentation pages. Markdown version of this page: /en/api-reference.md API Reference ¶ These topics provide reference information for the APIs available in ",
+          "published_label": null
+        }
+      ],
+      "reason": "Provisional extraction; validate scope and completeness against cited pages."
+    },
+    "official_mcp": {
+      "value": "client_only",
+      "status": "provisional",
+      "sources": [
+        "https://docs.snowflake.com/en/user-guide/snowflake-cortex/cortex-agents-mcp"
+      ],
+      "evidence": [
+        {
+          "value": "client_only",
+          "url": "https://docs.snowflake.com/en/user-guide/snowflake-cortex/cortex-agents-mcp",
+          "excerpt": "Snowflake-managed MCP server | Snowflake Documentation For AI agents: documentation index at /llms.txt — fetch to discover all Snowflake documentation pages. Markdown version of this page: /en/user-guide/snowflake-cortex/cortex-agents-mcp.md Snowflake-managed MCP server ¶ Overview ¶ Model Context Protocol (MCP) is an open-source standard that lets AI agents securely interact with busines",
+          "published_label": null,
+          "context_note": "Passage describes a client connection to external servers."
+        }
+      ],
+      "reason": "Provisional; check date, ownership and access scope."
+    },
+    "composio_toolkit": {
+      "value": "listed",
+      "status": "provisional",
+      "sources": [
+        "https://docs.composio.dev/toolkits/snowflake"
+      ],
+      "evidence": [],
+      "reason": "Catalog match only; not vendor MCP evidence."
+    },
+    "verdict": {
+      "value": "partner_outreach",
+      "status": "provisional",
+      "sources": [
+        "https://docs.snowflake.com/en/user-guide/api-authentication",
+        "https://docs.snowflake.com/en/user-guide/snowflake-cortex/cortex-agents-mcp",
+        "https://docs.snowflake.com/en/en/developer-guide/snowflake-rest-api/authentication",
+        "https://docs.snowflake.com/en/developer-guide/snowflake-rest-api/authentication",
+        "https://docs.snowflake.com/en/en/sql-reference/sql/create-mcp-server",
+        "https://docs.snowflake.com/en/user-guide/programmatic-access-tokens",
+        "https://docs.snowflake.com/en/sql-reference/sql/create-mcp-server",
+        "https://docs.snowflake.com/en/api-reference"
+      ],
+      "evidence": [],
+      "reason": "Inferred only from extracted auth, API and access evidence; independent review required."
+    }
+  },
+  "validation": [
+    "Automatic extraction is provisional until independently reviewed",
+    "Unknown is not evidence of absence",
+    "Composio evidence cannot establish vendor MCP",
+    "Client-only and negated MCP statements are not vendor-server proof",
+    "API breadth is a text-coverage heuristic, not an endpoint census"
+  ]
+}

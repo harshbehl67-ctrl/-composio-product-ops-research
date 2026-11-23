@@ -1,0 +1,104 @@
+{
+  "app": {
+    "number": 45,
+    "name": "Magento (Adobe Commerce)",
+    "category": "Ecommerce",
+    "hint": "developer.adobe.com/commerce"
+  },
+  "replayed_at": "2026-11-23T18:19:18.625329+00:00",
+  "source_passes": [
+    "data/pass2/045.json",
+    "data/pass4/045.json"
+  ],
+  "source_search": "data/new_search/045.json",
+  "publication_date_note": "Published labels are retained exactly as supplied by search; missing labels are null. Relative labels must not be treated as exact publication dates.",
+  "claims": {
+    "auth": {
+      "value": [
+        "OAuth 2.0",
+        "Bearer token"
+      ],
+      "sources": [
+        "https://developer.adobe.com/commerce/webapi/rest/authentication/"
+      ],
+      "evidence": [
+        {
+          "value": "OAuth 2.0",
+          "url": "https://developer.adobe.com/commerce/webapi/rest/authentication/",
+          "excerpt": "API authentication is handled through Adobe's Identity Management System (IMS) through standardized OAuth 2 protocols. This authentication system supports both interactive user-based workflows and automated server-to-server integrations, ensuring secure and appropriate access for differ",
+          "published_label": null
+        },
+        {
+          "value": "Bearer token",
+          "url": "https://developer.adobe.com/commerce/webapi/rest/authentication/",
+          "excerpt": "t environment Adobe Developer Console project configuration API testing tools Access tokens Use the bearer token type for API authorization Include your access token in the Authorization header of REST API requests Familiarize yourself with token lifecycle management and renewal processes Re",
+          "published_label": null
+        }
+      ],
+      "reason": "Provisional extraction: validate scope and completeness against the cited page."
+    },
+    "credential_gate": {
+      "value": "unknown",
+      "sources": [],
+      "evidence": [],
+      "reason": "No sufficiently specific positive evidence extracted; review targeted search results."
+    },
+    "api_surface": {
+      "value": [
+        "REST",
+        "GraphQL"
+      ],
+      "sources": [
+        "https://developer.adobe.com/commerce/webapi/rest/reference/",
+        "https://developer.adobe.com/commerce/webapi/rest/authentication/",
+        "https://developer.adobe.com/commerce/webapi/graphql/reference/"
+      ],
+      "evidence": [
+        {
+          "value": "REST",
+          "url": "https://developer.adobe.com/commerce/webapi/rest/reference/",
+          "excerpt": "REST API reference REST API reference This comprehensive reference provides detailed documentation for all available REST API endpoints in Adobe Commerce and Magento Open Source. Each endp",
+          "published_label": null
+        },
+        {
+          "value": "REST",
+          "url": "https://developer.adobe.com/commerce/webapi/rest/authentication/",
+          "excerpt": "-only.md REST Authentication in Adobe Commerce as a Cloud Service Adobe Commerce as a Cloud Service REST API authentication is handled through Adobe's Identity Management System (IMS) through standardized OAuth 2 protocols. This authentication system supports both interactive user-based ",
+          "published_label": null
+        },
+        {
+          "value": "GraphQL",
+          "url": "https://developer.adobe.com/commerce/webapi/graphql/reference/",
+          "excerpt": "GraphQL API reference GraphQL API reference The Adobe Commerce and Magento Open Source GraphQL API provides a flexible, powerful, and efficient alternative to REST and SOAP web APIs for front",
+          "published_label": null
+        }
+      ],
+      "reason": "Provisional extraction: validate scope and completeness against the cited page."
+    },
+    "official_mcp": {
+      "value": "unknown",
+      "sources": [],
+      "evidence": [],
+      "reason": "No sufficiently specific positive evidence extracted; review targeted search results."
+    },
+    "composio_toolkit": {
+      "value": "unknown",
+      "sources": [],
+      "evidence": [],
+      "reason": "No exact or reviewed alias match; absence is not established."
+    },
+    "verdict": {
+      "value": "unknown",
+      "sources": [],
+      "evidence": [],
+      "reason": "A supported access path, authentication method and API surface were not all extracted."
+    }
+  },
+  "validation": [
+    "Automatic extraction is provisional and not a verified final claim",
+    "Unknown is not evidence of absence",
+    "No Composio-to-vendor-MCP inference",
+    "Basic authentication may be endpoint-specific",
+    "Client-only and negated statements are not positive MCP evidence"
+  ]
+}

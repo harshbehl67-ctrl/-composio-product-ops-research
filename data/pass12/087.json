@@ -1,0 +1,100 @@
+{
+  "app": {
+    "number": 87,
+    "name": "Xero",
+    "category": "Finance and Fintech",
+    "hint": "developer.xero.com"
+  },
+  "replayed_at": "2026-11-23T18:45:56.405805+00:00",
+  "source_passes": [
+    "data/pass2/087.json",
+    "data/pass4/087.json"
+  ],
+  "source_searches": [
+    "data/new_search/087.json",
+    "data/pass4_search/087.json"
+  ],
+  "publication_date_note": "Search publication labels are retained exactly; null means no label was available. Relative labels are not exact dates.",
+  "claims": {
+    "auth": {
+      "value": [
+        "OAuth 2.0"
+      ],
+      "status": "provisional",
+      "sources": [
+        "https://devblog.xero.com/the-xero-remote-mcp-is-now-generally-available-06008f6ab2a7?gi=8073db1cd816",
+        "https://developer.xero.com/documentation/guides/oauth2/overview"
+      ],
+      "evidence": [
+        {
+          "value": "OAuth 2.0",
+          "url": "https://devblog.xero.com/the-xero-remote-mcp-is-now-generally-available-06008f6ab2a7?gi=8073db1cd816",
+          "excerpt": "the official one Remote MCP is Xero’s official, supported server. It uses Xero’s standard OAuth 2.0 sign-in with PKCE, so users consent to which organisation an AI tool can see, and calls go through the same permissions and rate limits as the rest of the Xero API. The",
+          "published_label": "last month"
+        },
+        {
+          "value": "OAuth 2.0",
+          "url": "https://developer.xero.com/documentation/guides/oauth2/overview",
+          "excerpt": "OAuth 2.0 â Xero Developer This app works with JavaScript enabled.",
+          "published_label": null
+        }
+      ],
+      "reason": "Provisional extraction; validate scope and completeness against cited pages."
+    },
+    "credential_gate": {
+      "value": [
+        "paid_plan"
+      ],
+      "status": "provisional",
+      "sources": [
+        "https://devblog.xero.com/the-xero-remote-mcp-is-now-generally-available-06008f6ab2a7?gi=8073db1cd816"
+      ],
+      "evidence": [
+        {
+          "value": "paid_plan",
+          "url": "https://devblog.xero.com/the-xero-remote-mcp-is-now-generally-available-06008f6ab2a7?gi=8073db1cd816",
+          "excerpt": "t’s supported and maintained by the team that builds the API it sits on. Included in your paid plan , nothing new on your invoice. If your commercial app is on Core or above , Remote MCP is included. There’s no separate fee and no new line item. Tool calls count as API",
+          "published_label": "last month"
+        }
+      ],
+      "reason": "Provisional extraction; validate scope and completeness against cited pages."
+    },
+    "api_surface": {
+      "value": "unknown",
+      "status": "provisional",
+      "sources": [],
+      "evidence": [],
+      "reason": "No sufficiently specific official evidence extracted."
+    },
+    "official_mcp": {
+      "value": "unknown",
+      "status": "provisional",
+      "sources": [],
+      "evidence": [],
+      "reason": "No sufficiently specific official evidence extracted."
+    },
+    "composio_toolkit": {
+      "value": "listed",
+      "status": "provisional",
+      "sources": [
+        "https://docs.composio.dev/toolkits/xero"
+      ],
+      "evidence": [],
+      "reason": "Catalog match only; not vendor MCP evidence."
+    },
+    "verdict": {
+      "value": "unknown",
+      "status": "provisional",
+      "sources": [],
+      "evidence": [],
+      "reason": "No sufficiently specific official evidence extracted."
+    }
+  },
+  "validation": [
+    "Automatic extraction is provisional until independently reviewed",
+    "Unknown is not evidence of absence",
+    "Composio evidence cannot establish vendor MCP",
+    "Client-only and negated MCP statements are not vendor-server proof",
+    "API breadth is a text-coverage heuristic, not an endpoint census"
+  ]
+}

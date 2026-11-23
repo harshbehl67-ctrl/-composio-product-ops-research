@@ -1,0 +1,232 @@
+{
+  "app": {
+    "number": 11,
+    "name": "Zendesk",
+    "category": "Support and Helpdesk",
+    "hint": "zendesk.com"
+  },
+  "checked_at": "2026-11-23T18:14:58.851697+00:00",
+  "prior_source": "data/pass2/011.json",
+  "search_source": "data/pass4_search/011.json",
+  "new_candidates": [
+    {
+      "url": "https://developer.zendesk.com/api-reference/index.html",
+      "title": "API Reference Home | Zendesk Developer Docs (https://developer.zendesk.com/api-reference/index.html)",
+      "published_label": null
+    },
+    {
+      "url": "https://support.zendesk.com/hc/en-us/articles/8662004958746-Turning-on-and-off-API-access",
+      "title": "Turning on and off API access – Zendesk help (https://support.zendesk.com/hc/en-us/articles/8662004958746-Turning-on-and-off-API-access)",
+      "published_label": null
+    },
+    {
+      "url": "https://developer.zendesk.com/documentation/api-basics/getting-started/zendesk-api-resources/",
+      "title": "Zendesk API resources | Zendesk Developer Docs (https://developer.zendesk.com/documentation/api-basics/getting-started/zendesk-api-resources/)",
+      "published_label": null
+    },
+    {
+      "url": "https://developer.zendesk.com/documentation/api-basics/getting-started/getting-a-trial-or-sponsored-account-for-development/",
+      "title": "Getting a trial or sponsored account for development | Zendesk Developer Docs (https://developer.zendesk.com/documentation/api-basics/getting-started/getting-a-trial-or-sponsored-account-for-development/)",
+      "published_label": null
+    },
+    {
+      "url": "https://developer.zendesk.com/documentation/live-chat/getting-started/auth/",
+      "title": "OAuth Authentication | Zendesk Developer Docs (https://developer.zendesk.com/documentation/live-chat/getting-started/auth/)",
+      "published_label": null
+    },
+    {
+      "url": "https://developer.zendesk.com/documentation/api-basics/getting-started/about-the-zendesk-developer-platform/",
+      "title": "About the Zendesk developer platform | Zendesk Developer Docs (https://developer.zendesk.com/documentation/api-basics/getting-started/about-the-zendesk-developer-platform/)",
+      "published_label": null
+    },
+    {
+      "url": "https://developer.zendesk.com/documentation/authentication/api-tokens-to-oauth/",
+      "title": "Using OAuth to authenticate API requests | Zendesk Developer Docs (https://developer.zendesk.com/documentation/authentication/api-tokens-to-oauth/)",
+      "published_label": null
+    },
+    {
+      "url": "https://developer.zendesk.com/documentation/authentication/creating-and-using-oauth-tokens-with-the-api/",
+      "title": "Creating and using OAuth access tokens with the API | Zendesk Developer Docs (https://developer.zendesk.com/documentation/authentication/creating-and-using-oauth-tokens-with-the-api/)",
+      "published_label": null
+    },
+    {
+      "url": "https://support.zendesk.com/hc/en-us/articles/4576088682266-Using-Conversations-API-keys",
+      "title": "Using Conversations API keys – Zendesk help (https://support.zendesk.com/hc/en-us/articles/4576088682266-Using-Conversations-API-keys)",
+      "published_label": null
+    },
+    {
+      "url": "https://developer.zendesk.com/documentation/ticketing/getting-started/zendesk-api-quick-start/",
+      "title": "Ticketing API quick start | Zendesk Developer Docs (https://developer.zendesk.com/documentation/ticketing/getting-started/zendesk-api-quick-start/)",
+      "published_label": null
+    },
+    {
+      "url": "https://developer.zendesk.com/documentation/api-basics/",
+      "title": "API Basics | Zendesk Developer Docs (https://developer.zendesk.com/documentation/api-basics/)",
+      "published_label": null
+    },
+    {
+      "url": "https://cdn.zendesk.com/resources/documentation/Zendesk_REST_api_v1.pdf",
+      "title": "8 | Zendesk® Developer Library | Zendesk® REST API v1 (deprecated) (https://cdn.zendesk.com/resources/documentation/Zendesk_REST_api_v1.pdf)",
+      "published_label": "13.8 years ago"
+    }
+  ],
+  "selected": [
+    {
+      "url": "https://developer.zendesk.com/documentation/live-chat/getting-started/auth/",
+      "title": "OAuth Authentication | Zendesk Developer Docs (https://developer.zendesk.com/documentation/live-chat/getting-started/auth/)",
+      "published_label": null
+    },
+    {
+      "url": "https://developer.zendesk.com/api-reference/index.html",
+      "title": "API Reference Home | Zendesk Developer Docs (https://developer.zendesk.com/api-reference/index.html)",
+      "published_label": null
+    },
+    {
+      "url": "https://support.zendesk.com/hc/en-us/articles/8662004958746-Turning-on-and-off-API-access",
+      "title": "Turning on and off API access – Zendesk help (https://support.zendesk.com/hc/en-us/articles/8662004958746-Turning-on-and-off-API-access)",
+      "published_label": null
+    }
+  ],
+  "new_pages": [
+    {
+      "url": "https://developer.zendesk.com/documentation/live-chat/getting-started/auth/",
+      "requested_url": "https://developer.zendesk.com/documentation/live-chat/getting-started/auth/",
+      "status": 200,
+      "title": "OAuth Authentication | Zendesk Developer Docs (https://developer.zendesk.com/documentation/live-chat/getting-started/auth/)",
+      "text": "OAuth Authentication | Zendesk Developer Docs Live Chat Getting Started OAuth Authentication Copy page OAuth Authentication You must use OAuth2 to authenticate all your API requests to Zendesk Chat. OAuth provides a secure way for your application to access your account data without requiring sensitive information such as usernames and passwords be sent with the requests. Note: You can also use OAuth tokens created using the Zendesk OAuth API . The rest of this guide focuses on creating Chat-specific OAuth tokens, but both token types work with the Chat API. To use OAuth authentication with Chat-specific tokens, you need to register your application with Zendesk Chat by adding an API client. You also need to add some functionality to your application to implement an OAuth authorization flow. Topics covered: Adding an API client Implementing an OAuth authorization flow Adding an API Client You must add an API client in Zendesk Chat to generate OAuth credentials for your application. Depending on the OAuth flow, the client might not have access to all Zendesk Chat accounts. This section describes how to add an API client using the Dashboard in Zendesk Chat. You can also add and manage API clients programmatically with the API. See OAuth Clients . To add a client Sign in as an admin to Zendesk Chat. In the Dashboard, go to Settings > Account , then select the API tab. Click Add API Client . Complete the following fields: Client Name - The name of your client. This name will be visible to users when they are prompted to grant access to your application. Company - This is the company name that users will see when asked to grant access to your application. The information can help them understand who they're granting access to. Redirect URLs - Enter the URL or URLs that Zendesk Chat should use to redirect users after they decide whether to authorize your application to access Zendesk Chat. The URL must be absolute, not relative, and should use HTTPS unless you are using localhost. Click Create API Client . Upon successful creation, a dialog will appear displaying the client id and client secret. Take note of these values as you'll need both to create an OAuth access token later. Save the client secret somewhere safe. For security reasons, the entire string is displayed only once. After closing the dialog, you'll only be able to view the first few characters. Use the client id (also known as the unique identifier) and the client secret in your application as described in this following section. Implementing an OAuth Authorization Flow Zendesk Chat supports several OAuth flows. The first flow, the authorization code grant flow , produces an authorization code after the user grants your app access to their account. Your app can then exchange the authorization code for an access token to use in API requests. The implicit grant flow is similar to the authorization code grant flow, except your app doesn't need to get and exchange an authorization code for an access token. If the user grants access, the token is returned immediately. On the other hand, the confidential grant type is a grant type that doesn't require end user interactions. Refresh tokens are only issued for the authorization code grant flow. Authorization Code Grant Flow This flow is called the authorization code grant flow because you have to get an authorization code before you can request an access token. To implement the authorization code grant flow, you need to add the following functionality to your application: Step 1 - Send the user to the Zendesk Chat authorization page Step 2 - Handle the user's authorization decision Step 3 - Get an access token from Zendesk Chat Step 4 - Use the access token in API calls Step 1 - Send the user to the Zendesk Chat authorization page First, your application must send the user to the Zendesk Chat authorization page. The page asks the user to authorize your application to access Zendesk Chat as if it was them. After the user makes a choice, Zendesk Chat sends the choice and a few other bits of information back to your application. To send the user to the Zendesk Chat authorization page Add a link or button in your application that sends the user to the following URL: https : / / { subdomain } . zendesk . com / oauth2 / chat / authorizations / new The request should be GET, with the following parameters (make sure to URL-encode the parameters): response_type - Required. Zendesk Chat returns an authorization code in the response, so specify code as the response type. Example: response_type=code . redirect_uri - Required. The URL that Zendesk Chat should use to redirect users after they decide whether to authorize your application to access Zendesk Chat.\nThe URL must be absolute, not relative, and should use HTTPS unless you are using localhost. This URL should be one of the URLs you provided during client registration. client_id - Required. The unique identifier you obtained when you registered your application with Zendesk Chat. See the section above. scope - Required. A space-separated list of scopes that control access to the OAuth endpoints. The following scopes are supported: read , write , and chat . Example: scope=read%20write . The read scope gives access to APIs for showing and indexing The write scope gives access to APIs for creating, updating, and deleting The chat scope gives access to the Chat Conversations API state - An arbitrary string included in the response from Zendesk Chat after the user decides whether to grant access. You can use the parameter to guard against cross-site request forgery (CSRF) attacks. In a CSRF attack, the end-user is tricked into clicking a link that performs an action in a web application where the end-user is still authenticated. To guard against this kind of attack, add some value to the state parameter and validate it when it comes back. subdomain - Zendesk Support subdomain. Required if your users access Chat from a Zendesk Support subdomain (such as .zendesk.com/chat ). This value is used to sign in the users. Step 2 - Handle the user's authorization decision Your application must handle the response from Zendesk Chat indicating the user's decision. When the user authorizes the application, the authorization code will be found in the redirected URL parameters, for example: { redirect_uri } ? code = 7xqwtlf3rrdj8uyeb1yf The authorization code is valid only for a short time. If the user decides to deny the application, the URL will contain an error parameter. { redirect_uri } ? error = access_denied Use these values to control the flow of your application. If the URL contains a code parameter, get an access token from Zendesk Chat as described in the following section. This is the token to include in API calls to Zendesk Chat. Step 3 - Get an access token from Zendesk Chat If your application received an authorization code from Zendesk Chat in response to the user granting access, your application can call Zendesk Chat to get an access token. To get the access token, make a POST request to the following endpoint: https : / / { subdomain } . zendesk . com / oauth2 / chat / token Include the following required parameters in the request: grant_type - Specify authorization_code as the value. code - Use the authorization code you received from Zendesk Chat after the user granted access. client_id - Use the unique identifier you received when you registered your application with Zendesk Chat. client_secret - Use the secret value you received when you registered your application with Zendesk Chat. redirect_uri - The URL of the resource that Zendesk Chat should send the access token. It again should be one of the URLs you specified during client registration. scope - Specify read as the value. The request must be over HTTPS and the parameters must be URL-encoded. Using curl curl https:// { subdomain } .zendesk.com/oauth2/chat/token \\ -H \"Content-Type: application/x-www-form-urlencoded\" \\ -d 'grant_type=authorization_code&code={your_code}&client_id={your_client_id} &client_secret={your_client_secret}&redirect_uri={your_redirect_uri}&scope=read%20write' \\ -X POST Example response HTTP / 1.1 200 OK Content - Type : application / json { \"access_token\" : \"gErypPlm4dOVgGRvA1ZzMH5MQ3nLo8bo\" , \"refresh_token\" : \"x4AoIVTmaoZmpl25ZX6vTPL2f0aZXHbn\" , \"token_type\" : \"bearer\" , \"scope\" : \"read\" } Step 4 - Use the access token in API calls The access token is required to make API calls. Set the token in the request's authorization header as follows: Authorization: Bearer {a_valid_access_token} For example, a curl request to show your account details would look as follows: curl https:// { subdomain } .zendesk.com/api/v2/chat/account \\ -H \"Authorization: Bearer gErypPlm4dOVgGRvA1ZzMH5MQ3nLo8bo\" Implicit Grant Flow The implicit grant flow is similar to the authorization code grant flow except there's no step 3.\nAdditionally, you will request an access token instead of an authorization code.\nIn other words, you set the value of the response_type parameter to \"token\" instead of \"code\".\nIf the end-user authorizes access, the token is sent immediately in the redirect URL.\nThe implicit grant flow is meant for browser-based JavaScript apps with no server-side component.\nBecause all the app's source code is loaded in the browser, the client secret can't be kept confidential and isn't used. Example request To send the user to the Zendesk Chat authorization page, follow step 1 of Authorization code grant flow , with a small change to response_type parameter. Zendesk Chat returns a token directly in the response, so specify \"token\" as the response type https : / / { subdomain } . zendesk . com / oauth2 / chat / authorizations / new ? response_type = token & client_id = { your_unique_identifier } & scope = read & redirect_uri = http % 3A % 2F % 2Flocalhost % 2Ftoken Example response If the user grants access to the application, the token is included in the redirect URL. { redirect_url } #access_token = gErypPlm4dOVgGRvA1ZzMH5MQ3nLo8bo & token_type = Bearer & scope = read If the request is malformed, invalid or the user decides not to grant access to the application, the URL contains error and error_description parameters. { redirect_url } #error = access_denied & error_description = The + end - user + or + authorization + server + denied + the + request Confidential Grant Type The Chat API supports the confidential grant type using client credentials. This grant type is recommended primarily for applications that need to access their own resources. It allows you to exchange the id and secret of an OAuth client for an access token.\nWhen making an HTTP request for an access token, an Authorization header is not required. Instead, the authentication and authorization credentials should be included in the body of the request as values of the client_id and client_secret keys.\nActions performed using the access token obtained from this grant type are executed and logged as the administrator who created the OAuth client. This grant type can only be used with a Chat OAuth client that has its client_type property set to \"confidential\".\nWith this setting, you allow the use of the confidential grant type without any additional side effects. The client can still be utilized with other authorization flows.\nTo set the client_type to \"confidential,\" you must use the Update Client API endpoint. There are no options to change the client_type setting through the UI.\nIf you re-save the OAuth client via the UI, this setting will revert to \"public\". Itâs important to use the confidential grant type only if your web application is highly secure and can securely manage the necessary credentials without exposing them on the client side or compromising them in any way.\nThis grant type is not suitable for mobile applications or client-side browser apps. For more details on the concepts of confidential and public OAuth clients, see the OAuth 2.0 Authorization Framework RFC 6749 . Using curl curl https:// { subdomain } .zendesk.com/oauth2/chat/token \\ -H \"Content-Type: application/x-www-form-urlencoded\" \\ -d 'grant_type=client_credentials&client_id={your_client_id}&client_secret={your_client_secret}' \\ -X POST Example response HTTP / 1.1 200 OK Content - Type : application / json { \"access_token\" : \"gErypPlm4dOVgGRvA1ZzMH5MQ3nLo8bo\" , \"token_type\" : \"bearer\" , \"scope\" : \"read\" }",
+      "published_label": null
+    },
+    {
+      "url": "https://developer.zendesk.com/api-reference/index.html",
+      "requested_url": "https://developer.zendesk.com/api-reference/index.html",
+      "status": 200,
+      "title": "API Reference Home | Zendesk Developer Docs (https://developer.zendesk.com/api-reference/index.html)",
+      "text": "API Reference Home | Zendesk Developer Docs API Reference API Reference Welcome to the Zendesk API reference docs. Whether you're an experienced developer and Zendesk user or just starting out, this is where you'll find the documentation you need. Most of our APIs are organized by product capabilities. You'll find APIs for ticketing, help center, live chat, voice, sales CRM as well as some features that span capabilities, such as omnichannel routing and custom data. For each API, you'll find information about who can authenticate requests, detailed descriptions of endpoints, example requests, and other essential information to help you unlock the full potential of Zendesk. Run in Postman To quickly get started with the Zendesk APIs, you can use the Zendesk Public Workspace on Postman. The collection includes all Zendesk APIs except the Sell and Sunshine Conversations APIs. Capabilities Ticketing Work with tickets, users and organizations and manage ticket workflows. Support API JIRA Integration API Help Center Help Center, Knowledge base and Community. Help Center API AI Agents Automate conversations and manage intelligent workflows. AI Agents API Messaging Unify messages from every channel into a single conversation and build interactive experiences. Conversations API Voice Call center software. Talk API Talk Partner Edition API Custom data Connect and understand all your customer data wherever it lives. Custom Objects API Legacy Custom Objects API Omnichannel Access features and functionality that span Zendesk channels. Omnichannel APIs Status Get a list of active incidents and scheduled maintenance that may affect Zendesk availability. Status API Live Chat Live chat and messaging. Chat API Real Time Chat API Chat Conversations API Sales CRM Sales force automation. Sell API Sync API Firehose API Search API Embedding Zendesk Web Widget Control data passed to and from the Web Widget Web Widget (Messaging) API Web Widget (Classic) API Answer Bot Provide Help Center article suggestions for an enquiry. Answer Bot API Android SDK Control data passed to and from the Android SDK Android SDK (Messaging) API iOS SDK Control data passed to and from the iOS SDK iOS SDK (Messaging) API Zendesk SDK for Unity Control data passed to and from the Zendesk SDK for Unity Zendesk SDK for Unity (Messaging) API Extending Zendesk Apps APIs to help you build apps for Zendesk Support, Sell and Chat Apps Core API Apps Support API Apps Sell API Apps Chat API Integration Services APIs and trigger events information for building integrations with Zendesk Integration Services (ZIS) ZIS Configs API Connections API ZIS Inbound Webhooks API ZIS Links API ZIS Registry API Trigger events reference",
+      "published_label": null
+    },
+    {
+      "url": "https://support.zendesk.com/hc/en-us/articles/8662004958746-Turning-on-and-off-API-access",
+      "requested_url": "https://support.zendesk.com/hc/en-us/articles/8662004958746-Turning-on-and-off-API-access",
+      "status": 200,
+      "title": "Turning on and off API access – Zendesk help (https://support.zendesk.com/hc/en-us/articles/8662004958746-Turning-on-and-off-API-access)",
+      "text": "Turning on and off API access – Zendesk help Use the API configuration page to turn on password and API token access to the Zendesk API. For OAuth access, seeUsing OAuth authentication with your application. For more information about the Zendesk API, see theZendesk Developer Documentation. What's my plan? All Suites Team, Growth, Professional, Enterprise, or Enterprise Plus Support Team, Professional, or Enterprise Summary: ◀ ▼ You can activate API access by accepting terms and enabling API token or password access. API tokens protect agent passwords and require enabling before use. End users can have password access turned on or off for authenticated or anonymous API requests. Turning off token or password access disables those authentication methods, requiring reactivation to use them again. OAuth access is managed separately. Location: Admin Center > Apps and integrations > APIs > API\n                                configuration Users can access the Zendesk API using these authentication methods: They can use an auto-generated password called an API token. They can use an OAuth access token, which is different from an\n                              API token. End users can use API password access to make authenticated or anonymous\n                              API requests. Use the API configuration page to turn on password and API token access to\n                  the Zendesk API. For OAuth access, see Using OAuth authentication with your\n                        application . For more information about the Zendesk API, see the Zendesk Developer Documentation . This article includes these sections: Activating API access Turning on and off API token access Turning on and off API password access for end users Related articles: Managing access to the Zendesk\n                              API Developer documentation: Security and authentication Activating API access If you’re accessing the Zendesk API for the first time, you need to accept the Zendesk Terms of Service and the Application Developer and API\n                              Agreement . To activate API access In Admin Center , click Apps and integrations in the sidebar, then select APIs > API\n        configuration . Click the checkbox to accept the terms and agreements. Click Get started . Turning on and off API token access You use API tokens to keep your agent’s passwords safe. When authenticating\n                        with tokens, add /token to the end of your email address. API\n                        token access is disabled by default. You must enable API token access before\n                        users can use API tokens. To turn on token access to the API In Admin Center , click Apps and integrations in the sidebar, then select APIs > API\n        configuration . Select Allow API token access . Click Save . After you turn on API token access, you can generate API access\n                        tokens. See Generating API tokens . To turn off token access to the API In Admin Center , click Apps and integrations in the sidebar, then select APIs > API\n        configuration . Deselect Allow API token access . Click Save . When you turn off token access, your tokens stop working. You’ll need to turn\n                        token access back on to reactivate them. Turning on and off API password access for end users Note: Some older accounts may include a setting for\n                        activating API password access for team members (in addition to API token\n                        access). API password access for team members has\n                        been deprecated and is not supported in new accounts. By default, API password access for end users is turned off. Therefore,\n                        end-user access is considered anonymous. Turning on two-factor\n                              authentication , whether required or optionally enrolled by end\n                        users, does not affect the ability to make API requests using email and\n                        password. To turn on API password access for end users In Admin Center , click Apps and integrations in the sidebar, then select APIs > API\n        configuration . Select Allow password access for end users . Click Save . After turning on API password access, end users can make authenticated or\n                        anonymous API requests. To turn off API password access for end users In Admin Center , click Apps and integrations in the sidebar, then select APIs > API\n        configuration . Deselect Allow password access for end users . Click Save . After turning off API password access, end-user access is considered\n                        anonymous. Powered by Zendesk",
+      "published_label": null
+    }
+  ],
+  "claims": {
+    "auth": {
+      "value": [
+        "API token",
+        "Basic authentication",
+        "API key",
+        "OAuth 2.0"
+      ],
+      "sources": [
+        "https://support.zendesk.com/hc/en-us/articles/4408831452954-How-can-I-authenticate-API-requests",
+        "https://developer.zendesk.com/api-reference/introduction/security-and-auth/",
+        "https://support.zendesk.com/hc/en-us/articles/4408889192858-Managing-API-token-access-to-the-Zendesk-API",
+        "https://developer.zendesk.com/documentation/conversations/getting-started/api-authentication/",
+        "https://developer.zendesk.com/documentation/live-chat/getting-started/auth/"
+      ],
+      "evidence": [
+        {
+          "value": "API token",
+          "url": "https://support.zendesk.com/hc/en-us/articles/4408831452954-How-can-I-authenticate-API-requests",
+          "excerpt": " requests, use basic authentication with your email address and password, your email address and an API token, or an OAuth access token. All authentication methods set the authorization header differently. Credentials sent in the payload or URL aren't processed. Each option is listed belo",
+          "published_label": null
+        },
+        {
+          "value": "Basic authentication",
+          "url": "https://support.zendesk.com/hc/en-us/articles/4408831452954-How-can-I-authenticate-API-requests",
+          "excerpt": "r You must be a verified user to make authenticated API requests. To authenticate API requests, use basic authentication with your email address and password, your email address and an API token, or an OAuth access token. All authentication methods set the authorization header differently. Credentia",
+          "published_label": null
+        },
+        {
+          "value": "API token",
+          "url": "https://developer.zendesk.com/api-reference/introduction/security-and-auth/",
+          "excerpt": "enticated with an OAuth access token . The requests are not supported if the request uses a Zendesk API token. For more information and a tutorial, see Making cross-origin, browser-side API requests . Topics covered in this section: OAuth access token Global OAuth access token API token S",
+          "published_label": null
+        },
+        {
+          "value": "Basic authentication",
+          "url": "https://developer.zendesk.com/api-reference/introduction/security-and-auth/",
+          "excerpt": " to authenticate API requests. Note: If you're an existing Zendesk customer and are currently using basic authentication or API tokens, you will have to migrate to OAuth access tokens for improved security and compatibility with future requirements. If you plan on distributing an app, integration, o",
+          "published_label": null
+        },
+        {
+          "value": "API token",
+          "url": "https://support.zendesk.com/hc/en-us/articles/4408889192858-Managing-API-token-access-to-the-Zendesk-API",
+          "excerpt": "Managing API token access to the Zendesk API – Zendesk help Users can use an API token to authenticate API requests. API tokens are auto-generated passwords that you can use with your email address ",
+          "published_label": null
+        },
+        {
+          "value": "API key",
+          "url": "https://developer.zendesk.com/documentation/conversations/getting-started/api-authentication/",
+          "excerpt": "add an expiry time to your credentials. Both authentication methods will require you to generate an API key in Admin Center. For instructions on how to generate an API key, see app-scoped keys and integration-scoped keys in Zendesk help. Access scopes The table below summarizes the vari",
+          "published_label": null
+        },
+        {
+          "value": "Basic authentication",
+          "url": "https://developer.zendesk.com/documentation/conversations/getting-started/api-authentication/",
+          "excerpt": "ions API . Authentication methods The Sunshine Conversations API supports two authentication types: basic authentication and bearer tokens (via JWT). While basic authentication is recommended in most cases, JWTs may still be useful in certain circumstances, for instance if you would like to add an e",
+          "published_label": null
+        },
+        {
+          "value": "OAuth 2.0",
+          "url": "https://developer.zendesk.com/documentation/live-chat/getting-started/auth/",
+          "excerpt": "per Docs Live Chat Getting Started OAuth Authentication Copy page OAuth Authentication You must use OAuth2 to authenticate all your API requests to Zendesk Chat. OAuth provides a secure way for your application to access your account data without requiring sensitive information such as",
+          "published_label": null
+        }
+      ],
+      "reason": "Provisional extraction: validate scope and completeness against the cited page."
+    },
+    "credential_gate": {
+      "value": [
+        "administrator controls credential"
+      ],
+      "sources": [
+        "https://support.zendesk.com/hc/en-us/articles/4408889192858-Managing-API-token-access-to-the-Zendesk-API"
+      ],
+      "evidence": [
+        {
+          "value": "administrator controls credential",
+          "url": "https://support.zendesk.com/hc/en-us/articles/4408889192858-Managing-API-token-access-to-the-Zendesk-API",
+          "excerpt": "iewing audit logs for an API token (Enterprise) Generating API tokens To generate an API token, you must be an administrator and API token access must be turned on in your account. To generate an API token In Admin Center , click Apps and integrations in the sidebar, then select APIs > API tokens . A list of API tokens appears. Click Add API token . (Optional) Enter a Description fo",
+          "published_label": null
+        }
+      ],
+      "reason": "Provisional extraction: validate scope and completeness against the cited page."
+    },
+    "api_surface": {
+      "value": "unknown",
+      "sources": [],
+      "evidence": [],
+      "reason": "No sufficiently specific positive evidence extracted; review targeted search results."
+    },
+    "official_mcp": {
+      "value": "unknown",
+      "sources": [],
+      "evidence": [],
+      "reason": "No sufficiently specific positive evidence extracted; review targeted search results."
+    },
+    "composio_toolkit": {
+      "value": "listed",
+      "sources": [
+        "https://docs.composio.dev/toolkits/zendesk"
+      ],
+      "evidence": [],
+      "reason": "Catalog match; scope needs review."
+    },
+    "verdict": {
+      "value": "unknown",
+      "sources": [],
+      "evidence": [],
+      "reason": "A supported access path, authentication method and API surface were not all extracted."
+    }
+  },
+  "validation": [
+    "All claims are provisional",
+    "No vendor MCP inference from Composio catalog",
+    "Negated MCP or client-only source is not counted as vendor-server proof"
+  ]
+}

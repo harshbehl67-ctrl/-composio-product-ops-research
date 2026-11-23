@@ -1,0 +1,114 @@
+{
+  "app": {
+    "number": 66,
+    "name": "Neo4j",
+    "category": "Developer, Infra and Data platforms",
+    "hint": "neo4j.com/docs/api"
+  },
+  "replayed_at": "2026-11-23T18:17:23.676600+00:00",
+  "source_passes": [
+    "data/pass2/066.json",
+    "data/pass4/066.json"
+  ],
+  "source_search": "data/new_search/066.json",
+  "publication_date_note": "Published labels are retained exactly as supplied by search; missing labels are null. Relative labels must not be treated as exact publication dates.",
+  "claims": {
+    "auth": {
+      "value": [
+        "Bearer token",
+        "Basic authentication"
+      ],
+      "sources": [
+        "https://neo4j.com/docs/query-api/current/authentication-authorization/",
+        "https://neo4j.com/docs/http-api/current/authentication-authorization/"
+      ],
+      "evidence": [
+        {
+          "value": "Bearer token",
+          "url": "https://neo4j.com/docs/query-api/current/authentication-authorization/",
+          "excerpt": "tion: Basic bmVvNGo6dmVyeXNlY3JldA== Bearer authentication The header format to authenticate with a bearer token is: Authorization: Bearer <token> where <token> is base64-encoded. Most services provide tokens already base64-decoded, so ensure you don’t base64-encode them again. Bearer authen",
+          "published_label": null
+        },
+        {
+          "value": "Basic authentication",
+          "url": "https://neo4j.com/docs/query-api/current/authentication-authorization/",
+          "excerpt": " If authentication is disabled on the server, requests can be sent without an Authorization header. Basic authentication The header format for basic authentication follows the standard format (RFC 7617), with UTF-8 encoding: Authorization: Basic <base64(<username>:<password>)> Example 1. Basic authe",
+          "published_label": null
+        },
+        {
+          "value": "Bearer token",
+          "url": "https://neo4j.com/docs/http-api/current/authentication-authorization/",
+          "excerpt": "tion: Basic bmVvNGo6dmVyeXNlY3JldA== Bearer authentication The header format to authenticate with a bearer token is: Authorization: Bearer <base64(token)> Example 2. Bearer authentication To authenticate with the token xbhkjnlvianztghqwawxqfe , first base64-encode it: eGJoa2pubHZpYW56dGdocXd",
+          "published_label": null
+        },
+        {
+          "value": "Basic authentication",
+          "url": "https://neo4j.com/docs/http-api/current/authentication-authorization/",
+          "excerpt": " If authentication is disabled on the server, requests can be sent without an Authorization header. Basic authentication The header format for basic authentication follows the standard format (RFC 7617): Authorization: Basic <base64(username:password)> Example 1. Basic authentication To authenticate",
+          "published_label": null
+        }
+      ],
+      "reason": "Provisional extraction: validate scope and completeness against the cited page."
+    },
+    "credential_gate": {
+      "value": "unknown",
+      "sources": [],
+      "evidence": [],
+      "reason": "No sufficiently specific positive evidence extracted; review targeted search results."
+    },
+    "api_surface": {
+      "value": [
+        "GraphQL"
+      ],
+      "sources": [
+        "https://neo4j.com/docs/graphql/current/aura-graphql/api-usage/"
+      ],
+      "evidence": [
+        {
+          "value": "GraphQL",
+          "url": "https://neo4j.com/docs/graphql/current/aura-graphql/api-usage/",
+          "excerpt": "Using your GraphQL API - Neo4j GraphQL Library Skip to content Neo4j GraphQL Library Product Version Version 7 (Current) Version 6 Version 5 (LTS) Version 4 Version 3 Is this page helpful? Raise an issu",
+          "published_label": null
+        }
+      ],
+      "reason": "Provisional extraction: validate scope and completeness against the cited page."
+    },
+    "official_mcp": {
+      "value": "yes (provisional)",
+      "sources": [
+        "https://neo4j.com/developer/genai-ecosystem/model-context-protocol-mcp/"
+      ],
+      "evidence": [
+        {
+          "value": "yes (provisional)",
+          "url": "https://neo4j.com/developer/genai-ecosystem/model-context-protocol-mcp/",
+          "excerpt": "e (coming via ADK) OpenAI ChatGPT Desktop (coming soon) Official MCP Server for Neo4j The official MCP Server for Neo4j, is a local MCP server that is downloadable as a binary and works with all types of Neo4j Deployments - Neo4j Aura, Self Managed, Docker, Neo4j Desktop, and Neo4j Sandbox.\nThe reposi",
+          "published_label": null,
+          "context_warning": "Review vendor ownership, dates, and scope."
+        }
+      ],
+      "reason": "Provisional; check source date, scope, and vendor ownership."
+    },
+    "composio_toolkit": {
+      "value": "listed",
+      "sources": [
+        "https://docs.composio.dev/toolkits/neo4j"
+      ],
+      "evidence": [],
+      "reason": "Catalog match; scope needs review."
+    },
+    "verdict": {
+      "value": "unknown",
+      "sources": [],
+      "evidence": [],
+      "reason": "A supported access path, authentication method and API surface were not all extracted."
+    }
+  },
+  "validation": [
+    "Automatic extraction is provisional and not a verified final claim",
+    "Unknown is not evidence of absence",
+    "No Composio-to-vendor-MCP inference",
+    "Basic authentication may be endpoint-specific",
+    "Client-only and negated statements are not positive MCP evidence"
+  ]
+}

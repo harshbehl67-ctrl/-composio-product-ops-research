@@ -1,0 +1,128 @@
+{
+  "app": {
+    "number": 36,
+    "name": "Klaviyo",
+    "category": "Marketing, Ads, Email and Social",
+    "hint": "developers.klaviyo.com"
+  },
+  "replayed_at": "2026-11-23T18:41:32.648774+00:00",
+  "source_passes": [
+    "data/pass2/036.json",
+    "data/pass4/036.json"
+  ],
+  "source_searches": [
+    "data/new_search/036.json",
+    "data/pass4_search/036.json"
+  ],
+  "publication_date_note": "Search publication labels are retained exactly; null means no label was available. Relative labels are not exact dates.",
+  "claims": {
+    "auth": {
+      "value": [
+        "API key"
+      ],
+      "status": "provisional",
+      "sources": [
+        "https://developers.klaviyo.com/en/docs/authenticate_",
+        "https://developers.klaviyo.com/en/reference",
+        "https://developers.klaviyo.com/en/docs/connect_to_the_klaviyo_mcp_server"
+      ],
+      "evidence": [
+        {
+          "value": "API key",
+          "url": "https://developers.klaviyo.com/en/docs/authenticate_",
+          "excerpt": "on All /api endpoints use API private keys to authenticate requests. If you do not use an API key for your requests, or if you use a key from the wrong account, your call will return an error. A 401 error indicates an invalid or missing API key. OAuth If you are a te",
+          "published_label": null
+        },
+        {
+          "value": "API key",
+          "url": "https://developers.klaviyo.com/en/reference",
+          "excerpt": "quick overview of each method. Private key authentication All /api endpoints use private API keys with API key scopes to authenticate requests. If you do not use an API key for your requests, or if you use a key from the wrong account, your call will return an error",
+          "published_label": null
+        },
+        {
+          "value": "API key",
+          "url": "https://developers.klaviyo.com/en/docs/connect_to_the_klaviyo_mcp_server",
+          "excerpt": "p_server.md.\n\nThe server is at https://mcp.klaviyo.com/mcp. It signs in with OAuth, so no API key goes in the configuration.\n\n1. Ask me whether to add it for every project (`~/.cursor/mcp.json`) or only this one (`.cursor/mcp.json`).\n2. In that file, add `\"klaviyo\":",
+          "published_label": null
+        }
+      ],
+      "reason": "Provisional extraction; validate scope and completeness against cited pages."
+    },
+    "credential_gate": {
+      "value": "unknown",
+      "status": "provisional",
+      "sources": [],
+      "evidence": [],
+      "reason": "No sufficiently specific official evidence extracted."
+    },
+    "api_surface": {
+      "value": "unknown",
+      "status": "provisional",
+      "sources": [],
+      "evidence": [],
+      "reason": "No sufficiently specific official evidence extracted."
+    },
+    "official_mcp": {
+      "value": "vendor_server",
+      "status": "provisional",
+      "sources": [
+        "https://developers.klaviyo.com/en/docs/klaviyo_mcp_server",
+        "https://developers.klaviyo.com/en/docs/connect_to_the_klaviyo_mcp_server"
+      ],
+      "evidence": [
+        {
+          "value": "vendor_server",
+          "url": "https://developers.klaviyo.com/en/docs/klaviyo_mcp_server",
+          "excerpt": "Klaviyo MCP server | Klaviyo Developers Skip to content This page is available as Markdown at https://developers.klaviyo.com/en/docs/klaviyo_mcp_server.md. An index of every page is at https://developers.klaviyo.com/llms.txt. You will learn The Kla",
+          "published_label": null,
+          "context_note": "Vendor-owned server statement; review date and access scope."
+        },
+        {
+          "value": "vendor_server",
+          "url": "https://developers.klaviyo.com/en/docs/klaviyo_mcp_server",
+          "excerpt": "Klaviyo MCP server | Klaviyo Developers Skip to content This page is available as Markdown at https://developers.klaviyo.com/en/docs/klaviyo_mcp_server.md. An index of every page is at https://developers.klaviyo.com/llms.txt. You will learn The Kla",
+          "published_label": null,
+          "context_note": "Vendor-owned server statement; review date and access scope."
+        },
+        {
+          "value": "vendor_server",
+          "url": "https://developers.klaviyo.com/en/docs/connect_to_the_klaviyo_mcp_server",
+          "excerpt": "variable to true in your MCP clientâs configuration file. Environment configuration The Klaviyo MCP server provides some configuration options which can be controlled with environment variables. env Options Default value Description READ_ONLY true , false false Setting this value to t",
+          "published_label": null,
+          "context_note": "Vendor-owned server statement; review date and access scope."
+        },
+        {
+          "value": "vendor_server",
+          "url": "https://developers.klaviyo.com/en/docs/klaviyo_mcp_server",
+          "excerpt": "Klaviyo MCP server | Klaviyo Developers Skip to content This page is available as Markdown at https://developers.klaviyo.com/en/docs/klaviyo_mcp_server.md. An index of every page is at https://developers.klaviyo.com/llms.txt. You will learn The Kla",
+          "published_label": null,
+          "context_note": "Vendor-owned server statement; review date and access scope."
+        }
+      ],
+      "reason": "Provisional; check date, ownership and access scope."
+    },
+    "composio_toolkit": {
+      "value": "listed",
+      "status": "provisional",
+      "sources": [
+        "https://docs.composio.dev/toolkits/klaviyo"
+      ],
+      "evidence": [],
+      "reason": "Catalog match only; not vendor MCP evidence."
+    },
+    "verdict": {
+      "value": "unknown",
+      "status": "provisional",
+      "sources": [],
+      "evidence": [],
+      "reason": "No sufficiently specific official evidence extracted."
+    }
+  },
+  "validation": [
+    "Automatic extraction is provisional until independently reviewed",
+    "Unknown is not evidence of absence",
+    "Composio evidence cannot establish vendor MCP",
+    "Client-only and negated MCP statements are not vendor-server proof",
+    "API breadth is a text-coverage heuristic, not an endpoint census"
+  ]
+}

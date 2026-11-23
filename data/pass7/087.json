@@ -1,0 +1,83 @@
+{
+  "app": {
+    "number": 87,
+    "name": "Xero",
+    "category": "Finance and Fintech",
+    "hint": "developer.xero.com"
+  },
+  "replayed_at": "2026-11-23T18:19:20.748457+00:00",
+  "source_passes": [
+    "data/pass2/087.json",
+    "data/pass4/087.json"
+  ],
+  "source_search": "data/new_search/087.json",
+  "publication_date_note": "Published labels are retained exactly as supplied by search; missing labels are null. Relative labels must not be treated as exact publication dates.",
+  "claims": {
+    "auth": {
+      "value": [
+        "OAuth 2.0"
+      ],
+      "sources": [
+        "https://developer.xero.com/documentation/guides/oauth2/overview"
+      ],
+      "evidence": [
+        {
+          "value": "OAuth 2.0",
+          "url": "https://developer.xero.com/documentation/guides/oauth2/overview",
+          "excerpt": "OAuth 2.0 â Xero Developer This app works with JavaScript enabled.",
+          "published_label": null
+        }
+      ],
+      "reason": "Provisional extraction: validate scope and completeness against the cited page."
+    },
+    "credential_gate": {
+      "value": "unknown",
+      "sources": [],
+      "evidence": [],
+      "reason": "No sufficiently specific positive evidence extracted; review targeted search results."
+    },
+    "api_surface": {
+      "value": "unknown",
+      "sources": [],
+      "evidence": [],
+      "reason": "No sufficiently specific positive evidence extracted; review targeted search results."
+    },
+    "official_mcp": {
+      "value": "yes (provisional)",
+      "sources": [
+        "https://devblog.xero.com/the-xero-remote-mcp-is-now-generally-available-06008f6ab2a7?gi=8073db1cd816"
+      ],
+      "evidence": [
+        {
+          "value": "yes (provisional)",
+          "url": "https://devblog.xero.com/the-xero-remote-mcp-is-now-generally-available-06008f6ab2a7?gi=8073db1cd816",
+          "excerpt": "eveloper · The API & app developer programs for global small business platform, Xero. developer.xero.com Remote Mcp Server Mcp Server Xeroapi Xero AI Agent The Xero Remote MCP (Model Context Protocol) now generally available Corey Leung 5 min read · Oct 13, 2026 -- Listen Share Press enter or",
+          "published_label": "last month",
+          "context_warning": "Review vendor ownership, dates, and scope."
+        }
+      ],
+      "reason": "Provisional; check source date, scope, and vendor ownership."
+    },
+    "composio_toolkit": {
+      "value": "listed",
+      "sources": [
+        "https://docs.composio.dev/toolkits/xero"
+      ],
+      "evidence": [],
+      "reason": "Catalog match; scope needs review."
+    },
+    "verdict": {
+      "value": "unknown",
+      "sources": [],
+      "evidence": [],
+      "reason": "A supported access path, authentication method and API surface were not all extracted."
+    }
+  },
+  "validation": [
+    "Automatic extraction is provisional and not a verified final claim",
+    "Unknown is not evidence of absence",
+    "No Composio-to-vendor-MCP inference",
+    "Basic authentication may be endpoint-specific",
+    "Client-only and negated statements are not positive MCP evidence"
+  ]
+}

@@ -1,0 +1,99 @@
+{
+  "app": {
+    "number": 47,
+    "name": "Ecwid",
+    "category": "Ecommerce",
+    "hint": "api-docs.ecwid.com"
+  },
+  "replayed_at": "2026-11-23T18:16:37.562950+00:00",
+  "source_passes": [
+    "data/pass2/047.json",
+    "data/pass4/047.json"
+  ],
+  "source_search": "data/new_search/047.json",
+  "publication_date_note": "Published labels are retained exactly as supplied by search; missing labels are null. Relative labels must not be treated as exact publication dates.",
+  "claims": {
+    "auth": {
+      "value": "unknown",
+      "sources": [],
+      "evidence": [],
+      "reason": "No sufficiently specific positive evidence extracted; review targeted search results."
+    },
+    "credential_gate": {
+      "value": "unknown",
+      "sources": [],
+      "evidence": [],
+      "reason": "No sufficiently specific positive evidence extracted; review targeted search results."
+    },
+    "api_surface": {
+      "value": [
+        "REST"
+      ],
+      "sources": [
+        "https://docs.ecwid.com/get-started/make-your-first-api-request",
+        "https://docs.ecwid.com/api-reference",
+        "https://docs.ecwid.com/get-started/api-glossary",
+        "https://support.ecwid.com/hc/en-us/articles/4938302203932-Adding-more-features-to-your-store-via-Ecwid-s-API",
+        "https://docs.ecwid.com/api-reference/advanced/rest-api-calls"
+      ],
+      "evidence": [
+        {
+          "value": "REST",
+          "url": "https://docs.ecwid.com/get-started/make-your-first-api-request",
+          "excerpt": "blic app Native and external apps Contact Ecwid API support team On this page All requests to Ecwid REST API require an access token . Ecwid uses OAuth 2.0 to provide secure access to the store data for public apps. If you customize your own store, however, you can skip OAuth and easily ",
+          "published_label": null
+        },
+        {
+          "value": "REST",
+          "url": "https://docs.ecwid.com/api-reference",
+          "excerpt": "REST API overview | REST API Reference | Ecwid Documentation For the complete documentation index, see llms.txt . Markdown versions of documentation pages are available by appending .md to",
+          "published_label": null
+        },
+        {
+          "value": "REST",
+          "url": "https://docs.ecwid.com/get-started/api-glossary",
+          "excerpt": " In documentation, reffered as client_secret . Access tokens Secure app credentials for authorizing REST API requests. If an app is installed in several Ecwid stores, it has unique access tokens for every store. There are two tokens: secret_token and public_token . Learn more about app a",
+          "published_label": null
+        },
+        {
+          "value": "REST",
+          "url": "https://support.ecwid.com/hc/en-us/articles/4938302203932-Adding-more-features-to-your-store-via-Ecwid-s-API",
+          "excerpt": "rst app will be created and installed automatically, and you can start making requests to the Ecwid REST API. On the app page, you will find your public and secret access tokens as well as the app keys (Client ID and Client secret). Use our API documentation to develop the feature you ne",
+          "published_label": null
+        },
+        {
+          "value": "REST",
+          "url": "https://docs.ecwid.com/api-reference/advanced/rest-api-calls",
+          "excerpt": "REST API calls | REST API Reference | Ecwid Documentation For the complete documentation index, see llms.txt . Markdown versions of documentation pages are available by appending .md to pa",
+          "published_label": null
+        }
+      ],
+      "reason": "Provisional extraction: validate scope and completeness against the cited page."
+    },
+    "official_mcp": {
+      "value": "unknown",
+      "sources": [],
+      "evidence": [],
+      "reason": "No sufficiently specific positive evidence extracted; review targeted search results."
+    },
+    "composio_toolkit": {
+      "value": "unknown",
+      "sources": [],
+      "evidence": [],
+      "reason": "No exact or reviewed alias match; absence is not established."
+    },
+    "verdict": {
+      "value": "unknown",
+      "sources": [],
+      "evidence": [],
+      "reason": "A supported access path, authentication method and API surface were not all extracted."
+    }
+  },
+  "validation": [
+    "Automatic extraction is provisional and not a verified final claim",
+    "Unknown is not evidence of absence",
+    "No Composio-to-vendor-MCP inference",
+    "Basic authentication may be endpoint-specific",
+    "Client-only and negated statements are not positive MCP evidence"
+  ]
+}

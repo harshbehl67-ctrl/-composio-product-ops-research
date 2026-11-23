@@ -1,0 +1,142 @@
+{
+  "app": {
+    "number": 45,
+    "name": "Magento (Adobe Commerce)",
+    "category": "Ecommerce",
+    "hint": "developer.adobe.com/commerce"
+  },
+  "replayed_at": "2026-11-23T18:45:51.253519+00:00",
+  "source_passes": [
+    "data/pass2/045.json",
+    "data/pass4/045.json"
+  ],
+  "source_searches": [
+    "data/new_search/045.json",
+    "data/pass4_search/045.json"
+  ],
+  "publication_date_note": "Search publication labels are retained exactly; null means no label was available. Relative labels are not exact dates.",
+  "claims": {
+    "auth": {
+      "value": [
+        "API key",
+        "OAuth 2.0",
+        "Bearer token",
+        "Session authentication"
+      ],
+      "status": "provisional",
+      "sources": [
+        "https://experienceleague.adobe.com/en/docs/commerce-admin/start/commerce-account/commerce-account-create",
+        "https://developer.adobe.com/commerce/webapi/rest/authentication/",
+        "https://developer.adobe.com/commerce/webapi/graphql/usage/authorization-tokens",
+        "https://experienceleague.adobe.com/en/docs/commerce-admin/start/commerce-account/commerce-account-create?lang=en"
+      ],
+      "evidence": [
+        {
+          "value": "API key",
+          "url": "https://experienceleague.adobe.com/en/docs/commerce-admin/start/commerce-account/commerce-account-create",
+          "excerpt": "remises. From the account dashboard, you can view subscriptions, manage Commerce Services API keys, review historical billing information, and collaborate with other users in your organization. If you need to submit your first ticket or manage your Adobe Commerce rel",
+          "published_label": null
+        },
+        {
+          "value": "OAuth 2.0",
+          "url": "https://developer.adobe.com/commerce/webapi/rest/authentication/",
+          "excerpt": "Authentication in Adobe Commerce as a Cloud Service data-src=/_includes/saas-only.md REST Authentication in Adobe Commerce as a Cloud Service Adobe Commerce as a Cloud Service REST API authentication is handled through Adobe's Identity Management System (IMS) through standardized",
+          "published_label": null
+        },
+        {
+          "value": "Bearer token",
+          "url": "https://developer.adobe.com/commerce/webapi/rest/authentication/",
+          "excerpt": "ent Adobe Developer Console project configuration API testing tools Access tokens Use the bearer token type for API authorization Include your access token in the Authorization header of REST API requests Familiarize yourself with token lifecycle management and renewal pr",
+          "published_label": null
+        },
+        {
+          "value": "Session authentication",
+          "url": "https://developer.adobe.com/commerce/webapi/graphql/usage/authorization-tokens",
+          "excerpt": "GraphQL authorization GraphQL authorization Adobe Commerce and Magento Open Source provide two mechanisms for authorizing GraphQL calls: Authorization tokens . Commerce generates a JSON Web Token (JWT), a set of cryptographically signed credentials. All calls that perform an acti",
+          "published_label": null
+        },
+        {
+          "value": "API key",
+          "url": "https://experienceleague.adobe.com/en/docs/commerce-admin/start/commerce-account/commerce-account-create?lang=en",
+          "excerpt": "remises. From the account dashboard, you can view subscriptions, manage Commerce Services API keys, review historical billing information, and collaborate with other users in your organization. If you need to submit your first ticket or manage your Adobe Commerce rel",
+          "published_label": "last month"
+        }
+      ],
+      "reason": "Provisional extraction; validate scope and completeness against cited pages."
+    },
+    "credential_gate": {
+      "value": "unknown",
+      "status": "provisional",
+      "sources": [],
+      "evidence": [],
+      "reason": "No sufficiently specific official evidence extracted."
+    },
+    "api_surface": {
+      "value": "REST, GraphQL; moderate documented surface",
+      "status": "provisional",
+      "sources": [
+        "https://developer.adobe.com/commerce/webapi/rest/reference/",
+        "https://developer.adobe.com/commerce/webapi/rest/authentication/",
+        "https://developer.adobe.com/commerce/webapi/graphql/reference/"
+      ],
+      "evidence": [
+        {
+          "value": [
+            "REST"
+          ],
+          "breadth": "narrow",
+          "url": "https://developer.adobe.com/commerce/webapi/rest/reference/",
+          "excerpt": "REST API reference REST API reference This comprehensive reference provides detailed documentation for all available REST API endpoints in Adobe Commerce and Magento Open Source. Each endpoint includes complete parameter descriptions, request/response examples, authentication req",
+          "published_label": null
+        },
+        {
+          "value": [
+            "REST"
+          ],
+          "breadth": "moderate",
+          "url": "https://developer.adobe.com/commerce/webapi/rest/authentication/",
+          "excerpt": "Authentication in Adobe Commerce as a Cloud Service data-src=/_includes/saas-only.md REST Authentication in Adobe Commerce as a Cloud Service Adobe Commerce as a Cloud Service REST API authentication is handled through Adobe's Identity Management System (IMS) through standardized",
+          "published_label": null
+        },
+        {
+          "value": [
+            "GraphQL"
+          ],
+          "breadth": "narrow",
+          "url": "https://developer.adobe.com/commerce/webapi/graphql/reference/",
+          "excerpt": "GraphQL API reference GraphQL API reference The Adobe Commerce and Magento Open Source GraphQL API provides a flexible, powerful, and efficient alternative to REST and SOAP web APIs for frontend development. The API is organized around a single GraphQL endpoint that provides acce",
+          "published_label": null
+        }
+      ],
+      "reason": "Provisional extraction; validate scope and completeness against cited pages."
+    },
+    "official_mcp": {
+      "value": "unknown",
+      "status": "provisional",
+      "sources": [],
+      "evidence": [],
+      "reason": "No sufficiently specific official evidence extracted."
+    },
+    "composio_toolkit": {
+      "value": "unknown",
+      "status": "provisional",
+      "sources": [],
+      "evidence": [],
+      "reason": "No sufficiently specific official evidence extracted."
+    },
+    "verdict": {
+      "value": "unknown",
+      "status": "provisional",
+      "sources": [],
+      "evidence": [],
+      "reason": "No sufficiently specific official evidence extracted."
+    }
+  },
+  "validation": [
+    "Automatic extraction is provisional until independently reviewed",
+    "Unknown is not evidence of absence",
+    "Composio evidence cannot establish vendor MCP",
+    "Client-only and negated MCP statements are not vendor-server proof",
+    "API breadth is a text-coverage heuristic, not an endpoint census"
+  ]
+}

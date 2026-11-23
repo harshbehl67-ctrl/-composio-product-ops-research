@@ -1,0 +1,315 @@
+{
+  "number": 40,
+  "app": "SendGrid",
+  "category": "Marketing, Ads, Email and Social",
+  "summary": "SendGrid's Email API is a documented REST v3 Web API authenticated with permission-scoped API keys sent as Bearer tokens. New accounts can self-serve a 60-day trial with up to 100 Email API emails per day, then need a paid Email API plan to continue sending; upgrade requires two-factor authentication, domain authentication, and a payment method. Composio lists the exact SENDGRID toolkit. No SendGrid-operated execution MCP server was verified: SendGrid's MCP documentation route renders a 404, Twilio's hosted MCP is a read-only documentation server, and the community SendGrid MCP project is third-party.",
+  "blocker": "Sending stops after the 60-day trial unless an Email API plan is purchased. API keys are permission-scoped and displayed only once. No vendor SendGrid execution MCP endpoint or transport was verified, so a build should use the REST API or an official SDK rather than Twilio's documentation MCP or a community server.",
+  "next_action": "Create a SendGrid trial account, enable two-factor authentication, authenticate a sending domain, and create a Restricted Access API key limited to Mail Send plus only the additional scopes required. Prototype POST https://api.sendgrid.com/v3/mail/send with verified sender identities and budget a paid Email API plan before day 60. Recheck official MCP documentation before considering MCP, and do not substitute Twilio's documentation MCP or third-party servers.",
+  "fields": {
+    "auth": {
+      "status": "checked",
+      "value": [
+        "SendGrid Email API v3: API key in an HTTP Authorization header as Bearer <API key>",
+        "Permission-scoped API keys: Full Access, Custom Access, or separate Billing Access; Mail Send can be restricted"
+      ],
+      "reason": "The undated official authentication page requires an HTTP Authorization header containing an API Key and documents Bearer <YOUR_API_KEY_HERE>. The undated API Keys page documents Full Access, Custom Access, Billing Access, creator-permission limits, and one-time key display. The undated Email API quickstart documents a Restricted Access key with Mail Send > Full Access. The docs.sendgrid.com evidence routes rendered through 301 redirects to the corresponding Twilio SendGrid documentation; quotes are from the rendered final pages.",
+      "evidence": [
+        {
+          "url": "https://docs.sendgrid.com/api-reference/how-to-use-the-sendgrid-v3-api/authentication",
+          "resolved_url": "https://www.twilio.com/docs/sendgrid/api-reference/how-to-use-the-sendgrid-v3-api/authentication",
+          "title": "Authentication | SendGrid Docs | Twilio",
+          "quote": "To authenticate, add an HTTP Authorization header to your API request that contains an API Key.",
+          "retrieved_at": "2026-11-24",
+          "published_at": null,
+          "published_label": "undated"
+        },
+        {
+          "url": "https://docs.sendgrid.com/api-reference/how-to-use-the-sendgrid-v3-api/authentication",
+          "resolved_url": "https://www.twilio.com/docs/sendgrid/api-reference/how-to-use-the-sendgrid-v3-api/authentication",
+          "title": "Authentication | SendGrid Docs | Twilio",
+          "quote": "To use an API key, include an Authorization header with the value Bearer <YOUR_API_KEY_HERE> in your request. Replace <YOUR_API_KEY_HERE> with your API secret key.",
+          "retrieved_at": "2026-11-24",
+          "published_at": null,
+          "published_label": "undated"
+        },
+        {
+          "url": "https://docs.sendgrid.com/ui/account-and-settings/api-keys",
+          "resolved_url": "https://www.twilio.com/docs/sendgrid/ui/account-and-settings/api-keys",
+          "title": "API Keys | SendGrid Docs | Twilio",
+          "quote": "Full Access\tGrants all API endpoints full access to your account.\nCustom Access\tChoose both which API endpoints and which access levels each have to your account.\nBilling Access\tGrants all billing API endpoints full access to your account.",
+          "retrieved_at": "2026-11-24",
+          "published_at": null,
+          "published_label": "undated"
+        },
+        {
+          "url": "https://docs.sendgrid.com/ui/account-and-settings/api-keys",
+          "resolved_url": "https://www.twilio.com/docs/sendgrid/ui/account-and-settings/api-keys",
+          "title": "API Keys | SendGrid Docs | Twilio",
+          "quote": "You can't give an API key greater permissions than your own.",
+          "retrieved_at": "2026-11-24",
+          "published_at": null,
+          "published_label": "undated"
+        },
+        {
+          "url": "https://docs.sendgrid.com/ui/account-and-settings/api-keys",
+          "resolved_url": "https://www.twilio.com/docs/sendgrid/ui/account-and-settings/api-keys",
+          "title": "API Keys | SendGrid Docs | Twilio",
+          "quote": "The Twilio SendGrid Console displays the API key only once at creation.",
+          "retrieved_at": "2026-11-24",
+          "published_at": null,
+          "published_label": "undated"
+        },
+        {
+          "url": "https://docs.sendgrid.com/for-developers/sending-email/email-api-quickstart-for-c",
+          "resolved_url": "https://www.twilio.com/docs/sendgrid/for-developers/sending-email/email-api-quickstart-for-c",
+          "title": "Email API Quickstart for C# | SendGrid Docs | Twilio",
+          "quote": "To complete this tutorial, you can create a Restricted Access API key with Mail Send > Full Access permissions only, which will allow you to send email and schedule emails to be sent later.",
+          "retrieved_at": "2026-11-24",
+          "published_at": null,
+          "published_label": "undated"
+        }
+      ]
+    },
+    "credential_gate": {
+      "status": "checked",
+      "value": "mixed",
+      "gate_class": "mixed",
+      "reason": "Self-serve signup starts a 60-day trial with up to 100 Email API emails per day, but sending stops after the trial unless an Email API plan is selected. Before upgrading, Twilio requires verification steps including two-factor authentication, domain authentication, and a payment method. Email API and Marketing Campaigns plans are independent. This combines a self-serve trial with a paid continuation gate. The cited documentation and support article are undated.",
+      "evidence": [
+        {
+          "url": "https://docs.sendgrid.com/ui/account-and-settings/upgrading-your-plan",
+          "resolved_url": "https://www.twilio.com/docs/sendgrid/ui/account-and-settings/upgrading-your-plan",
+          "title": "Upgrade your plan | SendGrid Docs | Twilio",
+          "quote": "During the 60-day free trial period, you can:\n\nSend up to 100 emails per day using the Email API.",
+          "retrieved_at": "2026-11-24",
+          "published_at": null,
+          "published_label": "undated"
+        },
+        {
+          "url": "https://docs.sendgrid.com/ui/account-and-settings/upgrading-your-plan",
+          "resolved_url": "https://www.twilio.com/docs/sendgrid/ui/account-and-settings/upgrading-your-plan",
+          "title": "Upgrade your plan | SendGrid Docs | Twilio",
+          "quote": "After the 60-day period, you'll need to upgrade your plans to continue sending emails or to access the Marketing tab in the dashboard.",
+          "retrieved_at": "2026-11-24",
+          "published_at": null,
+          "published_label": "undated"
+        },
+        {
+          "url": "https://docs.sendgrid.com/ui/account-and-settings/upgrading-your-plan",
+          "resolved_url": "https://www.twilio.com/docs/sendgrid/ui/account-and-settings/upgrading-your-plan",
+          "title": "Upgrade your plan | SendGrid Docs | Twilio",
+          "quote": "Before upgrading your plan, you must complete the verification steps to unlock your Twilio SendGrid account.",
+          "retrieved_at": "2026-11-24",
+          "published_at": null,
+          "published_label": "undated"
+        },
+        {
+          "url": "https://docs.sendgrid.com/ui/account-and-settings/upgrading-your-plan",
+          "resolved_url": "https://www.twilio.com/docs/sendgrid/ui/account-and-settings/upgrading-your-plan",
+          "title": "Upgrade your plan | SendGrid Docs | Twilio",
+          "quote": "Set up Two-Factor Authentication.",
+          "retrieved_at": "2026-11-24",
+          "published_at": null,
+          "published_label": "undated"
+        },
+        {
+          "url": "https://docs.sendgrid.com/ui/account-and-settings/upgrading-your-plan",
+          "resolved_url": "https://www.twilio.com/docs/sendgrid/ui/account-and-settings/upgrading-your-plan",
+          "title": "Upgrade your plan | SendGrid Docs | Twilio",
+          "quote": "Set up Domain Authentication.",
+          "retrieved_at": "2026-11-24",
+          "published_at": null,
+          "published_label": "undated"
+        },
+        {
+          "url": "https://docs.sendgrid.com/ui/account-and-settings/upgrading-your-plan",
+          "resolved_url": "https://www.twilio.com/docs/sendgrid/ui/account-and-settings/upgrading-your-plan",
+          "title": "Upgrade your plan | SendGrid Docs | Twilio",
+          "quote": "Add a payment method.",
+          "retrieved_at": "2026-11-24",
+          "published_at": null,
+          "published_label": "undated"
+        },
+        {
+          "url": "https://docs.sendgrid.com/ui/account-and-settings/upgrading-your-plan",
+          "resolved_url": "https://www.twilio.com/docs/sendgrid/ui/account-and-settings/upgrading-your-plan",
+          "title": "Upgrade your plan | SendGrid Docs | Twilio",
+          "quote": "You can upgrade your Email API and Marketing Campaigns plans independently at any time.",
+          "retrieved_at": "2026-11-24",
+          "published_at": null,
+          "published_label": "undated"
+        },
+        {
+          "url": "https://support.sendgrid.com/hc/en-us/articles/35270136965403-Overview-of-60-Day-Free-Trial-Plans-for-New-SendGrid-Accounts",
+          "title": "Overview of 60-Day Free Trial Plans for New SendGrid Accounts",
+          "quote": "After the 60 day trial period, email send via any web API or SMTP integration for the account will stop unless an appropriate \"Email API\" plan is chosen before then via \"Settings > Account Details > Your Products\".",
+          "retrieved_at": "2026-11-24",
+          "published_at": null,
+          "published_label": "undated"
+        }
+      ]
+    },
+    "api_surface": {
+      "status": "checked",
+      "value": "REST; broad documented surface",
+      "api_types": [
+        "REST"
+      ],
+      "breadth": "broad",
+      "reason": "The official v3 API reference explicitly identifies a REST interface and documents transactional email, campaigns, contacts, and statistics. Mail Send is the Email API operation at POST https://api.sendgrid.com/v3/mail/send. The separate Campaigns API page states that it covers the obsolete Legacy Marketing Campaigns API, so legacy campaign endpoints are not conflated with the Email API/Mail Send surface. The cited pages are undated.",
+      "evidence": [
+        {
+          "url": "https://docs.sendgrid.com/api-reference/",
+          "resolved_url": "https://www.twilio.com/docs/sendgrid/api-reference",
+          "title": "SendGrid v3 API reference | SendGrid Docs | Twilio",
+          "quote": "The SendGrid v3 Web API provides a REST interface to send email at scale and ensure your application can handle high volumes.",
+          "retrieved_at": "2026-11-24",
+          "published_at": null,
+          "published_label": "undated"
+        },
+        {
+          "url": "https://docs.sendgrid.com/api-reference/",
+          "resolved_url": "https://www.twilio.com/docs/sendgrid/api-reference",
+          "title": "SendGrid v3 API reference | SendGrid Docs | Twilio",
+          "quote": "The SendGrid API endpoints allow you to integrate with your tech stack to send transactional emails, create marketing campaigns, manage your contacts, and monitor the health of your email statistics.",
+          "retrieved_at": "2026-11-24",
+          "published_at": null,
+          "published_label": "undated"
+        },
+        {
+          "url": "https://docs.sendgrid.com/api-reference/mail-send/mail-send",
+          "resolved_url": "https://www.twilio.com/docs/sendgrid/api-reference/mail-send/mail-send",
+          "title": "Mail Send | SendGrid Docs | Twilio",
+          "quote": "The Mail Send operation allows you to send email over SendGrid's v3 Web API",
+          "retrieved_at": "2026-11-24",
+          "published_at": null,
+          "published_label": "undated"
+        },
+        {
+          "url": "https://docs.sendgrid.com/for-developers/sending-email/email-api-quickstart-for-c",
+          "resolved_url": "https://www.twilio.com/docs/sendgrid/for-developers/sending-email/email-api-quickstart-for-c",
+          "title": "Email API Quickstart for C# | SendGrid Docs | Twilio",
+          "quote": "The path to the Twilio SendGrid v3 Mail Send endpoint is https://api.sendgrid.com/v3/mail/send.",
+          "retrieved_at": "2026-11-24",
+          "published_at": null,
+          "published_label": "undated"
+        },
+        {
+          "url": "https://docs.sendgrid.com/api-reference/campaigns-api/",
+          "resolved_url": "https://www.twilio.com/docs/sendgrid/api-reference/campaigns-api",
+          "title": "Campaigns API | SendGrid Docs | Twilio",
+          "quote": "This covers the obsolete Legacy Marketing Campaigns API.",
+          "retrieved_at": "2026-11-24",
+          "published_at": null,
+          "published_label": "undated"
+        }
+      ]
+    },
+    "official_mcp": {
+      "status": "checked",
+      "value": "no_vendor_server_documented",
+      "review_basis": "scoped_documentation_review",
+      "mcp_mode": "unknown",
+      "reason": "Scoped documentation review of SendGrid's official MCP route, merged SendGrid/Twilio product page, and Twilio's official MCP documentation found no vendor server for SendGrid execution. The SendGrid MCP route returns 404 and the product page contains no MCP server text. Twilio's hosted MCP is a read-only documentation server that indexes SendGrid docs but does not connect to an account or execute API calls, so it is not a SendGrid execution server. This is a point-in-time documentation finding, not a universal absence claim. The SendGrid pages are undated; Twilio labels its MCP Public Beta without a publication date.",
+      "evidence": [
+        {
+          "url": "https://docs.sendgrid.com/mcp",
+          "resolved_url": "https://www.twilio.com/docs/sendgrid/mcp",
+          "title": "Docs: API Reference, Tutorials, and Integration | SendGrid Docs | Twilio",
+          "quote": "Error 404\nOops! Page not found\nThis page isn't available. It might have moved, or you may not have permission to view it.",
+          "retrieved_at": "2026-11-24",
+          "published_at": null,
+          "published_label": "undated"
+        },
+        {
+          "url": "https://sendgrid.com/en-us/mcp",
+          "resolved_url": "https://www.twilio.com/en-us/sendgrid",
+          "title": "SendGrid Email API and Email Marketing Campaigns | Twilio",
+          "quote": "We merged our websites to make things simpler. You can now find all our trusted email solutions, plus everything else Twilio offers, over on Twilio.com.",
+          "retrieved_at": "2026-11-24",
+          "published_at": null,
+          "published_label": "undated"
+        },
+        {
+          "url": "https://www.twilio.com/docs/ai/mcp",
+          "title": "Twilio MCP server",
+          "quote": "This server is read-only: it searches and retrieves public API documentation, and it does not connect to a Twilio account or execute any API calls.",
+          "retrieved_at": "2026-11-24",
+          "published_at": null,
+          "published_label": "Public Beta; undated"
+        },
+        {
+          "url": "https://www.twilio.com/docs/ai/mcp",
+          "title": "Twilio MCP indexed content",
+          "quote": "Twilio SendGrid docs and support articles",
+          "retrieved_at": "2026-11-24",
+          "published_at": null,
+          "published_label": "Public Beta; undated"
+        }
+      ]
+    },
+    "composio_toolkit": {
+      "value": "listed_exact",
+      "details": {
+        "slug": "SENDGRID",
+        "auth_display": "API_KEY",
+        "tools": 364
+      },
+      "status": "checked",
+      "reason": "The current Composio toolkit page lists SendGrid under the exact slug SENDGRID with 364 tools and API-key authentication. The page is undated; its Version value is not a publication date, and the catalog listing does not establish vendor MCP status.",
+      "evidence": [
+        {
+          "url": "https://docs.composio.dev/toolkits/sendgrid.md",
+          "title": "Composio SendGrid toolkit",
+          "quote": "# SendGrid\n\nSendGrid is a cloud-based email delivery platform providing transactional and marketing email services, with APIs for integration, analytics, and scalability\n\n- **Category:** transactional email\n- **Auth:** API_KEY\n- **Composio-managed OAuth available?** N/A\n- **Tools:** 364\n- **Triggers:** 0\n- **Slug:** `SENDGRID`",
+          "retrieved_at": "2026-11-24",
+          "published_at": null,
+          "published_label": "undated"
+        }
+      ]
+    },
+    "verdict": {
+      "status": "checked",
+      "value": "documented_build_candidate",
+      "reason": "A scoped API-key authentication method, a self-serve 60-day trial, and a broad REST Email API are documented, so a direct REST or official-SDK build is viable. Continued sending requires a paid Email API plan after the trial, with two-factor authentication, domain authentication, and a payment method before upgrade. Legacy Marketing Campaigns is separate and obsolete. No SendGrid execution MCP is verified, so this verdict rests on REST rather than MCP. The load-bearing documentation and support pages are undated.",
+      "evidence": [
+        {
+          "url": "https://docs.sendgrid.com/api-reference/how-to-use-the-sendgrid-v3-api/authentication",
+          "resolved_url": "https://www.twilio.com/docs/sendgrid/api-reference/how-to-use-the-sendgrid-v3-api/authentication",
+          "title": "Authentication | SendGrid Docs | Twilio",
+          "quote": "To use an API key, include an Authorization header with the value Bearer <YOUR_API_KEY_HERE> in your request.",
+          "retrieved_at": "2026-11-24",
+          "published_at": null,
+          "published_label": "undated"
+        },
+        {
+          "url": "https://docs.sendgrid.com/api-reference/",
+          "resolved_url": "https://www.twilio.com/docs/sendgrid/api-reference",
+          "title": "SendGrid v3 API reference | SendGrid Docs | Twilio",
+          "quote": "The SendGrid v3 Web API provides a REST interface to send email at scale and ensure your application can handle high volumes.",
+          "retrieved_at": "2026-11-24",
+          "published_at": null,
+          "published_label": "undated"
+        },
+        {
+          "url": "https://docs.sendgrid.com/ui/account-and-settings/upgrading-your-plan",
+          "resolved_url": "https://www.twilio.com/docs/sendgrid/ui/account-and-settings/upgrading-your-plan",
+          "title": "Upgrade your plan | SendGrid Docs | Twilio",
+          "quote": "During the 60-day free trial period, you can:\n\nSend up to 100 emails per day using the Email API.",
+          "retrieved_at": "2026-11-24",
+          "published_at": null,
+          "published_label": "undated"
+        },
+        {
+          "url": "https://docs.sendgrid.com/ui/account-and-settings/upgrading-your-plan",
+          "resolved_url": "https://www.twilio.com/docs/sendgrid/ui/account-and-settings/upgrading-your-plan",
+          "title": "Upgrade your plan | SendGrid Docs | Twilio",
+          "quote": "After the 60-day period, you'll need to upgrade your plans to continue sending emails or to access the Marketing tab in the dashboard.",
+          "retrieved_at": "2026-11-24",
+          "published_at": null,
+          "published_label": "undated"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,128 @@
+{
+  "app": {
+    "number": 100,
+    "name": "Grain",
+    "category": "AI, Research and Media-native",
+    "hint": "grain.com (meeting notes)"
+  },
+  "replayed_at": "2026-11-23T18:45:57.115244+00:00",
+  "source_passes": [
+    "data/pass2/100.json",
+    "data/pass4/100.json"
+  ],
+  "source_searches": [
+    "data/new_search/100.json",
+    "data/pass4_search/100.json"
+  ],
+  "publication_date_note": "Search publication labels are retained exactly; null means no label was available. Relative labels are not exact dates.",
+  "claims": {
+    "auth": {
+      "value": [
+        "OAuth 2.0",
+        "Bearer token",
+        "API token"
+      ],
+      "status": "provisional",
+      "sources": [
+        "https://developers.grain.com/authentication.html",
+        "https://support.grain.com/en/articles/15507288-grain-api"
+      ],
+      "evidence": [
+        {
+          "value": "OAuth 2.0",
+          "url": "https://developers.grain.com/authentication.html",
+          "excerpt": "Authentication â Grain Developers Authentication Authenticating Calls To authenticate API calls, the client must add the following header: Copy Authorization : Bearer TOKEN where TOKEN is obtained by one of the methods below. Token Types There are three types of tokens which ca",
+          "published_label": null
+        },
+        {
+          "value": "Bearer token",
+          "url": "https://developers.grain.com/authentication.html",
+          "excerpt": "To authenticate API calls, the client must add the following header: Copy Authorization : Bearer TOKEN where TOKEN is obtained by one of the methods below. Token Types There are three types of tokens which can have one of two access scopes. Type Scope Personal Access Toke",
+          "published_label": null
+        },
+        {
+          "value": "OAuth 2.0",
+          "url": "https://support.grain.com/en/articles/15507288-grain-api",
+          "excerpt": "Grain API | Grain Skip to main content Grain API Connect Grain to your own tools and workflows with the Grain public API. Updated over a month ago Table of contents The Grain API lets developers read meeting data, manage recordings, and receive real-time events from Grain program",
+          "published_label": null
+        },
+        {
+          "value": "API token",
+          "url": "https://support.grain.com/en/articles/15507288-grain-api",
+          "excerpt": "ill then transcribe and process as if they were captured natively. Where do I generate my API token? Personal API tokens are generated in Account settings → Integrations → Personal API . They are available on every plan. Workspace API tokens are generated in Workspace",
+          "published_label": null
+        }
+      ],
+      "reason": "Provisional extraction; validate scope and completeness against cited pages."
+    },
+    "credential_gate": {
+      "value": [
+        "admin_approval",
+        "paid_plan"
+      ],
+      "status": "provisional",
+      "sources": [
+        "https://support.grain.com/en/articles/15507288-grain-api",
+        "https://developers.grain.com/mcp/faq.html"
+      ],
+      "evidence": [
+        {
+          "value": "admin_approval",
+          "url": "https://support.grain.com/en/articles/15507288-grain-api",
+          "excerpt": "user owns it. Use this for server-side integrations where you need workspace-wide access. Requires admin access to generate and is available on Business and Enterprise plans. Click here to generate a WAT. OAuth2 : the standard flow for building integrations to be used by any Grain",
+          "published_label": null
+        },
+        {
+          "value": "paid_plan",
+          "url": "https://support.grain.com/en/articles/15507288-grain-api",
+          "excerpt": "Not for personal API access, which is available on every plan, including Free. Workspace API access is available on Business and Enterprise plans and requires admin access to generate. Can I access recordings I did not attend? With a Personal Access Token, you can only access recordin",
+          "published_label": null
+        },
+        {
+          "value": "paid_plan",
+          "url": "https://developers.grain.com/mcp/faq.html",
+          "excerpt": "ns or the ability to connect external tools and data sources. You'll need to upgrade to a paid plan to access the Grain integration and other MCP servers. Q: Are all Grain MCP tools available on every Grain plan? A: Most Grain MCP tools work on all Grain plans (Free, S",
+          "published_label": null
+        }
+      ],
+      "reason": "Provisional extraction; validate scope and completeness against cited pages."
+    },
+    "api_surface": {
+      "value": "unknown",
+      "status": "provisional",
+      "sources": [],
+      "evidence": [],
+      "reason": "No sufficiently specific official evidence extracted."
+    },
+    "official_mcp": {
+      "value": "unknown",
+      "status": "provisional",
+      "sources": [],
+      "evidence": [],
+      "reason": "No sufficiently specific official evidence extracted."
+    },
+    "composio_toolkit": {
+      "value": "listed",
+      "status": "provisional",
+      "sources": [
+        "https://docs.composio.dev/toolkits/grain"
+      ],
+      "evidence": [],
+      "reason": "Catalog match only; not vendor MCP evidence."
+    },
+    "verdict": {
+      "value": "unknown",
+      "status": "provisional",
+      "sources": [],
+      "evidence": [],
+      "reason": "No sufficiently specific official evidence extracted."
+    }
+  },
+  "validation": [
+    "Automatic extraction is provisional until independently reviewed",
+    "Unknown is not evidence of absence",
+    "Composio evidence cannot establish vendor MCP",
+    "Client-only and negated MCP statements are not vendor-server proof",
+    "API breadth is a text-coverage heuristic, not an endpoint census"
+  ]
+}

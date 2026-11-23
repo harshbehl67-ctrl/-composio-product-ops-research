@@ -1,0 +1,91 @@
+{
+  "app": {
+    "number": 14,
+    "name": "Front",
+    "category": "Support and Helpdesk",
+    "hint": "front.com"
+  },
+  "checked_at": "2026-11-23T18:14:55.739175+00:00",
+  "prior_source": "data/pass2/014.json",
+  "search_source": "data/pass4_search/014.json",
+  "new_candidates": [
+    {
+      "url": "https://community.front.com/developer-q-a-37/how-can-i-get-access-to-a-developer-account-given-that-i-am-already-a-front-customer-with-an-existing-user-acount-93",
+      "title": "How can I get access to a developer account given that I am already a Front customer with an existing user acount? | Community (https://community.front.com/developer-q-a-37/how-can-i-get-access-to-a-developer-account-given-that-i-am-already-a-front-customer-with-an-existing-user-acount-93)",
+      "published_label": "4.0 years ago"
+    }
+  ],
+  "selected": [
+    {
+      "url": "https://community.front.com/developer-q-a-37/how-can-i-get-access-to-a-developer-account-given-that-i-am-already-a-front-customer-with-an-existing-user-acount-93",
+      "title": "How can I get access to a developer account given that I am already a Front customer with an existing user acount? | Community (https://community.front.com/developer-q-a-37/how-can-i-get-access-to-a-developer-account-given-that-i-am-already-a-front-customer-with-an-existing-user-acount-93)",
+      "published_label": "4.0 years ago"
+    }
+  ],
+  "new_pages": [
+    {
+      "url": "https://community.front.com/developer-q-a-37/how-can-i-get-access-to-a-developer-account-given-that-i-am-already-a-front-customer-with-an-existing-user-acount-93",
+      "requested_url": "https://community.front.com/developer-q-a-37/how-can-i-get-access-to-a-developer-account-given-that-i-am-already-a-front-customer-with-an-existing-user-acount-93",
+      "status": 200,
+      "title": "How can I get access to a developer account given that I am already a Front customer with an existing user acount? | Community (https://community.front.com/developer-q-a-37/how-can-i-get-access-to-a-developer-account-given-that-i-am-already-a-front-customer-with-an-existing-user-acount-93)",
+      "text": "How can I get access to a developer account given that I am already a Front customer with an existing user acount? | Community Skip to main content New post Login Home Discussions Developers Developer Q&A How can I get access to a developer account given that I am already a Front customer with an existing user acount? Front Developer Fronteer 3 years ago Dec 9, 2022 12:54 AM UTC Please advise where I can find the developer environment within my front connection. developer account Like Reply Follow Share Javier - Developer Relations Answer Community Manager 3 years ago Dec 9, 2022 12:57 AM UTC You can create a free developer account on our Developer Portal . If you’re an admin in your existing Front instance, you can certainly access the settings that would allow you to perform developer actions like creating apps that use our APIs or plugin or channel features within your existing account. However, we generally recommend you create a separate (and free) developer account so that you can test your integrations in an environment that does not contain your production data. Once you are satisfied with your app, you can port it to your non-developer, production instance by creating an app in that instance and updating your integration to use the production credentials. Cheers --Javier Javier - Front Developer Relations View in thread Javier - Developer Relations Answer Community Manager 3 years ago Dec 9, 2022 12:57 AM UTC You can create a free developer account on our Developer Portal . If you’re an admin in your existing Front instance, you can certainly access the settings that would allow you to perform developer actions like creating apps that use our APIs or plugin or channel features within your existing account. However, we generally recommend you create a separate (and free) developer account so that you can test your integrations in an environment that does not contain your production data. Once you are satisfied with your app, you can port it to your non-developer, production instance by creating an app in that instance and updating your integration to use the production credentials. Cheers --Javier Javier - Front Developer Relations Like Reply Powered by Gainsight Terms & Conditions Cookie settings Accessibility statement Sign up Already have an account? Login Use your Front credentials Log in with Front or Username * E-mail address * Company * Job Title * User Type (select all that apply) * Front admin Front end user Developer Partner Other Team Sales Customer Success Operations Support Marketing IT HR Finance Product Other First Name * Last Name (Private) Only you and moderators can see this information * Why are you joining the community? Password * I certify that I am not a bug bounty hunter, and that I have reviewed and accept the Front Community Terms and Conditions and the Front Privacy Notice . I will not engage in any sort of penetration testing. I understand that creating a community account as a bug bounty hunter forfeits my right to receive bounties, and opens me to legal, financial, and criminal prosecution. loginBox.register.email_repeat Register Login to the community No account yet? Create an account Use your Front credentials Log in with Front or Username or Email Password Remember me Log in Forgot password? Enter your E-mail address. We'll send you an e-mail with instructions to reset your password. Enter your e-mail address Send Back to overview",
+      "published_label": "4.0 years ago"
+    }
+  ],
+  "claims": {
+    "auth": {
+      "value": "unknown",
+      "sources": [],
+      "evidence": [],
+      "reason": "No sufficiently specific positive evidence extracted; review targeted search results."
+    },
+    "credential_gate": {
+      "value": [
+        "free or trial developer credential path"
+      ],
+      "sources": [
+        "https://community.front.com/developer-q-a-37/how-can-i-get-access-to-a-developer-account-given-that-i-am-already-a-front-customer-with-an-existing-user-acount-93"
+      ],
+      "evidence": [
+        {
+          "value": "free or trial developer credential path",
+          "url": "https://community.front.com/developer-q-a-37/how-can-i-get-access-to-a-developer-account-given-that-i-am-already-a-front-customer-with-an-existing-user-acount-93",
+          "excerpt": " Developer Relations Answer Community Manager 3 years ago Dec 9, 2022 12:57 AM UTC You can create a free developer account on our Developer Portal . If you’re an admin in your existing Front instance, you can certainly access the settings that would allow you to perform developer actions like creating apps that use ou",
+          "published_label": "4.0 years ago"
+        }
+      ],
+      "reason": "Provisional extraction: validate scope and completeness against the cited page."
+    },
+    "api_surface": {
+      "value": "unknown",
+      "sources": [],
+      "evidence": [],
+      "reason": "No sufficiently specific positive evidence extracted; review targeted search results."
+    },
+    "official_mcp": {
+      "value": "unknown",
+      "sources": [],
+      "evidence": [],
+      "reason": "No sufficiently specific positive evidence extracted; review targeted search results."
+    },
+    "composio_toolkit": {
+      "value": "listed",
+      "sources": [
+        "https://docs.composio.dev/toolkits/front"
+      ],
+      "evidence": [],
+      "reason": "Catalog match; scope needs review."
+    },
+    "verdict": {
+      "value": "unknown",
+      "sources": [],
+      "evidence": [],
+      "reason": "A supported access path, authentication method and API surface were not all extracted."
+    }
+  },
+  "validation": [
+    "All claims are provisional",
+    "No vendor MCP inference from Composio catalog",
+    "Negated MCP or client-only source is not counted as vendor-server proof"
+  ]
+}

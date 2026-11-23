@@ -1,0 +1,170 @@
+{
+  "app": {
+    "number": 82,
+    "name": "Plaid",
+    "category": "Finance and Fintech",
+    "hint": "plaid.com/docs"
+  },
+  "replayed_at": "2026-11-23T18:45:56.289371+00:00",
+  "source_passes": [
+    "data/pass2/082.json",
+    "data/pass4/082.json"
+  ],
+  "source_searches": [
+    "data/new_search/082.json",
+    "data/pass4_search/082.json"
+  ],
+  "publication_date_note": "Search publication labels are retained exactly; null means no label was available. Relative labels are not exact dates.",
+  "claims": {
+    "auth": {
+      "value": [
+        "OAuth 2.0",
+        "Bearer token",
+        "API key"
+      ],
+      "status": "provisional",
+      "sources": [
+        "https://plaid.com/core-exchange/docs/reference/authentication/",
+        "https://plaid.com/docs/quickstart/",
+        "https://plaid.com/docs/auth/add-to-app/",
+        "https://plaid.com/docs/api/?trk=article-ssr-frontend-pulse_little-text-block"
+      ],
+      "evidence": [
+        {
+          "value": "OAuth 2.0",
+          "url": "https://plaid.com/core-exchange/docs/reference/authentication/",
+          "excerpt": "mple curl -H 'Authorization: Bearer <ACCESS_TOKEN>' . Plaid obtains that token through an OAuth 2.0 authorization code flow , with OpenID Connect (OIDC) strongly recommended. As the Data Provider, you implement the authorization server and Plaid acts as the OAuth clien",
+          "published_label": null
+        },
+        {
+          "value": "Bearer token",
+          "url": "https://plaid.com/core-exchange/docs/reference/authentication/",
+          "excerpt": "tion options for the Core Exchange API The Core Exchange API accepts an access token as a bearer token, for example curl -H 'Authorization: Bearer <ACCESS_TOKEN>' . Plaid obtains that token through an OAuth 2.0 authorization code flow , with OpenID Connect (OIDC) strongly",
+          "published_label": null
+        },
+        {
+          "value": "API key",
+          "url": "https://plaid.com/docs/quickstart/",
+          "excerpt": "rt Repo . Let's test out running Plaid locally by cloning the Quickstart app. You'll need\nAPI keys, which you can receive by signing up in the Dashboard . You'll have two different API keys, and there are two different Plaid\nenvironments. Today we'll start in the San",
+          "published_label": null
+        },
+        {
+          "value": "API key",
+          "url": "https://plaid.com/docs/auth/add-to-app/",
+          "excerpt": "rtner . Prefer to learn by watching? A video guide is\navailable for this topic. Get Plaid API keys and complete application and company profile If you don't already have one, you'll need to create a Plaid developer account . After creating your account, you can find",
+          "published_label": null
+        },
+        {
+          "value": "API key",
+          "url": "https://plaid.com/docs/api/?trk=article-ssr-frontend-pulse_little-text-block",
+          "excerpt": "tted requests for almost all of Plaid's API endpoints. All you have to do is fill in your API keys and any arguments. To get started, check out the Plaid Postman Collection Quickstart on GitHub. Client libraries See the client libraries page for more information on P",
+          "published_label": null
+        }
+      ],
+      "reason": "Provisional extraction; validate scope and completeness against cited pages."
+    },
+    "credential_gate": {
+      "value": [
+        "partner_or_sales",
+        "paid_plan",
+        "self_serve_trial"
+      ],
+      "status": "provisional",
+      "sources": [
+        "https://plaid.com/docs/api/products/auth/",
+        "https://plaid.com/docs/account/billing/",
+        "https://plaid.com/docs/resources/"
+      ],
+      "evidence": [
+        {
+          "value": "partner_or_sales",
+          "url": "https://plaid.com/docs/api/products/auth/",
+          "excerpt": "not collected via the Plaid Link flow. This endpoint is currently in Early Availability; contact sales or your Plaid account manager to request access. /auth/verify Request fields Collapse all Your Plaid API client_id . The client_id is required and may be provided either",
+          "published_label": null
+        },
+        {
+          "value": "partner_or_sales",
+          "url": "https://plaid.com/docs/account/billing/",
+          "excerpt": "Growth plans appears before you submit your request. To learn more about Custom pricing, contact sales . Pricing plans Plaid offers four pricing plans: Trial â Best for exploring Plaid or building a hobby project. Free access, with a limit of 10 Production Items. To lea",
+          "published_label": null
+        },
+        {
+          "value": "paid_plan",
+          "url": "https://plaid.com/docs/account/billing/",
+          "excerpt": "ction Items on a Trial plan. After creating 10 Items in Production, you must upgrade to a paid plan to create more Production Items. Removing Items created on a Trial plan (using /item/remove ) will not allow you to create more Items. You can see how many Production It",
+          "published_label": null
+        },
+        {
+          "value": "self_serve_trial",
+          "url": "https://plaid.com/docs/account/billing/",
+          "excerpt": "le proprietorships need a Custom plan. Custom: Everything in Consumer Report. Trial plans Free Trial plans are available to new Plaid teams (US/Canada only) created on or after April 15, 2026. Using a Trial plan, you can use Plaid with real production data for free. To",
+          "published_label": null
+        },
+        {
+          "value": "partner_or_sales",
+          "url": "https://plaid.com/docs/resources/",
+          "excerpt": "ance\". At the enterprise level, Plaid also offers integration packages. For more details, contact sales or your account manager. Partner directory For more information about Plaid partners, see the Partner directory . The Partner directory is not a comprehensive list of al",
+          "published_label": null
+        }
+      ],
+      "reason": "Provisional extraction; validate scope and completeness against cited pages."
+    },
+    "api_surface": {
+      "value": "REST; narrow documented surface",
+      "status": "provisional",
+      "sources": [
+        "https://plaid.com/docs/api/?trk=article-ssr-frontend-pulse_little-text-block"
+      ],
+      "evidence": [
+        {
+          "value": [
+            "REST"
+          ],
+          "breadth": "narrow",
+          "url": "https://plaid.com/docs/api/?trk=article-ssr-frontend-pulse_little-text-block",
+          "excerpt": "API - Overview | Plaid Docs Close search modal Search the docs Ask Bill! Ask a question... Hi! I'm Bill! You can ask me all about the Plaid API. Try asking questions like: Pssst -- I also moonlight as your IDE's research librarian! Plug me in via the Plaid MCP Server . Note: Bill",
+          "published_label": null
+        }
+      ],
+      "reason": "Provisional extraction; validate scope and completeness against cited pages."
+    },
+    "official_mcp": {
+      "value": "unknown",
+      "status": "provisional",
+      "sources": [],
+      "evidence": [],
+      "reason": "No sufficiently specific official evidence extracted."
+    },
+    "composio_toolkit": {
+      "value": "listed",
+      "status": "provisional",
+      "sources": [
+        "https://docs.composio.dev/toolkits/plaid"
+      ],
+      "evidence": [],
+      "reason": "Catalog match only; not vendor MCP evidence."
+    },
+    "verdict": {
+      "value": "partner_outreach",
+      "status": "provisional",
+      "sources": [
+        "https://plaid.com/core-exchange/docs/reference/authentication/",
+        "https://plaid.com/docs/quickstart/",
+        "https://plaid.com/docs/auth/add-to-app/",
+        "https://plaid.com/docs/api/?trk=article-ssr-frontend-pulse_little-text-block",
+        "https://plaid.com/docs/api/products/auth/",
+        "https://plaid.com/docs/account/billing/",
+        "https://plaid.com/docs/resources/"
+      ],
+      "evidence": [],
+      "reason": "Inferred only from extracted auth, API and access evidence; independent review required."
+    }
+  },
+  "validation": [
+    "Automatic extraction is provisional until independently reviewed",
+    "Unknown is not evidence of absence",
+    "Composio evidence cannot establish vendor MCP",
+    "Client-only and negated MCP statements are not vendor-server proof",
+    "API breadth is a text-coverage heuristic, not an endpoint census"
+  ]
+}

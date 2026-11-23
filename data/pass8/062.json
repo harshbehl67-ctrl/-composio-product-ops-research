@@ -1,0 +1,187 @@
+{
+  "app": {
+    "number": 62,
+    "name": "Vercel",
+    "category": "Developer, Infra and Data platforms",
+    "hint": "vercel.com/docs/rest-api"
+  },
+  "replayed_at": "2026-11-23T18:41:08.380312+00:00",
+  "source_passes": [
+    "data/pass2/062.json",
+    "data/pass4/062.json"
+  ],
+  "source_searches": [
+    "data/new_search/062.json",
+    "data/pass4_search/062.json"
+  ],
+  "publication_date_note": "Search publication labels are retained exactly; null means no label was available. Relative labels are not exact dates.",
+  "claims": {
+    "auth": {
+      "value": [
+        "Bearer token",
+        "API key",
+        "Session authentication",
+        "OAuth 2.0",
+        "API token"
+      ],
+      "status": "provisional",
+      "sources": [
+        "https://vercel.com/docs/sign-in-with-vercel/tokens",
+        "https://vercel.com/docs/rest-api",
+        "https://vercel.com/docs/mcp",
+        "https://vercel.com/docs/sign-in-with-vercel/authorization-server-api",
+        "https://vercel.com/docs/integrations/create-integration/vercel-api-integrations"
+      ],
+      "evidence": [
+        {
+          "value": "Bearer token",
+          "url": "https://vercel.com/docs/sign-in-with-vercel/tokens",
+          "excerpt": "ion code to fetch the user's data, it must be included in the `Authorization` header as a Bearer token.\n\n```ts filename=\"Fetching the users data with the Access Token\"\nconst result = await fetch('https://api.vercel.com/v2/user', {\n  method: 'GET',\n  headers: {\n    Authori",
+          "published_label": "last year"
+        },
+        {
+          "value": "API key",
+          "url": "https://vercel.com/docs/rest-api",
+          "excerpt": "(/docs/rest-api/ai-gateway/update-an-ai-gateway-api-key-budget.md) | Update an AI Gateway API key budget |\n\n## Artifacts\n\n| Method | Endpoint | Description |\n|---|---|---|\n| **POST** | [`/v8/artifacts/events`](/docs/rest-api/artifacts/record-an-artifacts-cache-usage-",
+          "published_label": null
+        },
+        {
+          "value": "Session authentication",
+          "url": "https://vercel.com/docs/rest-api",
+          "excerpt": "---\ntitle: Vercel REST API Reference\nproduct: vercel\nurl: /docs/rest-api\ncanonical_url: \"https://vercel.com/docs/rest-api\"\nlast_updated: 2026-11-23\ntype: reference\nprerequisites:\n  []\nrelated:\n  - /docs/rest-api/access-groups/reads-an-access-group.md\n  - /docs/rest-api/access-gro",
+          "published_label": null
+        },
+        {
+          "value": "OAuth 2.0",
+          "url": "https://vercel.com/docs/mcp",
+          "excerpt": "---\ntitle: Model Context Protocol\nproduct: vercel\nurl: /docs/mcp\ncanonical_url: \"https://vercel.com/docs/mcp\"\nlast_updated: 2026-09-18\ntype: integration\nprerequisites:\n  []\nrelated:\n  - /docs/mcp/integrations/ai-sdk\n  - /docs/mcp/deploy-mcp-servers-to-vercel\n  - /docs/agent-resou",
+          "published_label": "9 months ago"
+        },
+        {
+          "value": "Bearer token",
+          "url": "https://vercel.com/docs/sign-in-with-vercel/authorization-server-api",
+          "excerpt": "signed-in user. You must authenticate to this endpoint by including an access token as a bearer token in the Authorization header.\n\nThe endpoint returns a JSON response with consented OpenID claims:\n\n```json filename=\"User Info Endpoint response\"\n{\n  \"sub\": \"345e869043f1",
+          "published_label": "11 months ago"
+        },
+        {
+          "value": "API token",
+          "url": "https://vercel.com/docs/integrations/create-integration/vercel-api-integrations",
+          "excerpt": "pi#authentication) that contains the necessary [scope](#scopes). You can then provide the API token through the [`Authorization` header](/docs/rest-api#authentication).\n\n#### Exchange `code` for Access Token\n\nWhen you create an integration, you define a [redirect URL](",
+          "published_label": "9 months ago"
+        }
+      ],
+      "reason": "Provisional extraction; validate scope and completeness against cited pages."
+    },
+    "credential_gate": {
+      "value": [
+        "paid_plan",
+        "self_serve_trial"
+      ],
+      "status": "provisional",
+      "sources": [
+        "https://vercel.com/docs/plans/pro-plan/trials"
+      ],
+      "evidence": [
+        {
+          "value": "paid_plan",
+          "url": "https://vercel.com/docs/plans/pro-plan/trials",
+          "excerpt": "plan, you must add a payment method to ensure a seamless transition from the trial to the paid plan when your trial ends.\n\nTo add a payment method, navigate to the Billings page through **Settings > Billing**. From this point, you will get billed according to the [numb",
+          "published_label": "10 months ago"
+        },
+        {
+          "value": "self_serve_trial",
+          "url": "https://vercel.com/docs/plans/pro-plan/trials",
+          "excerpt": "- /docs/image-optimization/limits-and-pricing\nsummary: \"Learn all about Vercel's Pro Plan free trial, including features, usage limits, and options post-trial. Learn how to manage your team's projects with...\"\ninstall_vercel_plugin: npx plugins add vercel/vercel-plugin",
+          "published_label": "10 months ago"
+        }
+      ],
+      "reason": "Provisional extraction; validate scope and completeness against cited pages."
+    },
+    "api_surface": {
+      "value": "REST; broad documented surface",
+      "status": "provisional",
+      "sources": [
+        "https://vercel.com/docs/sign-in-with-vercel/tokens",
+        "https://vercel.com/docs/rest-api",
+        "https://vercel.com/docs/integrations/create-integration/vercel-api-integrations"
+      ],
+      "evidence": [
+        {
+          "value": [
+            "REST"
+          ],
+          "breadth": "moderate",
+          "url": "https://vercel.com/docs/sign-in-with-vercel/tokens",
+          "excerpt": "---\ntitle: Tokens\nproduct: vercel\nurl: /docs/sign-in-with-vercel/tokens\ncanonical_url: \"https://vercel.com/docs/sign-in-with-vercel/tokens\"\nlast_updated: 2026-03-30\ntype: how-to\nprerequisites:\n  - /docs/sign-in-with-vercel\nrelated:\n  - /docs/sign-in-with-vercel/authorization-serv",
+          "published_label": "last year"
+        },
+        {
+          "value": [
+            "REST"
+          ],
+          "breadth": "broad",
+          "url": "https://vercel.com/docs/rest-api",
+          "excerpt": "---\ntitle: Vercel REST API Reference\nproduct: vercel\nurl: /docs/rest-api\ncanonical_url: \"https://vercel.com/docs/rest-api\"\nlast_updated: 2026-11-23\ntype: reference\nprerequisites:\n  []\nrelated:\n  - /docs/rest-api/access-groups/reads-an-access-group.md\n  - /docs/rest-api/access-gro",
+          "published_label": null
+        },
+        {
+          "value": [
+            "REST"
+          ],
+          "breadth": "broad",
+          "url": "https://vercel.com/docs/integrations/create-integration/vercel-api-integrations",
+          "excerpt": "---\ntitle: Building Integrations with Vercel REST API\nproduct: vercel\nurl: /docs/integrations/create-integration/vercel-api-integrations\ncanonical_url: \"https://vercel.com/docs/integrations/create-integration/vercel-api-integrations\"\nlast_updated: 2026-09-16\ntype: reference\nprere",
+          "published_label": "9 months ago"
+        }
+      ],
+      "reason": "Provisional extraction; validate scope and completeness against cited pages."
+    },
+    "official_mcp": {
+      "value": "client_only",
+      "status": "provisional",
+      "sources": [
+        "https://vercel.com/docs/mcp"
+      ],
+      "evidence": [
+        {
+          "value": "client_only",
+          "url": "https://vercel.com/docs/mcp",
+          "excerpt": "---\ntitle: Model Context Protocol\nproduct: vercel\nurl: /docs/mcp\ncanonical_url: \"https://vercel.com/docs/mcp\"\nlast_updated: 2026-09-18\ntype: integration\nprerequisites:\n  []\nrelated:\n  - /docs/mcp/integrations/ai-sdk\n  - /docs/mcp/deploy-mcp-servers-to-vercel\n  - /docs/agent-resources/vercel-mcp\n  - /docs/mcp/integrations\n  - /docs/cli/mcp\nsummary: Learn more about MCP and how you can use",
+          "published_label": "9 months ago",
+          "context_note": "Passage describes a client connection to external servers."
+        }
+      ],
+      "reason": "Provisional; check date, ownership and access scope."
+    },
+    "composio_toolkit": {
+      "value": "listed",
+      "status": "provisional",
+      "sources": [
+        "https://docs.composio.dev/toolkits/vercel"
+      ],
+      "evidence": [],
+      "reason": "Catalog match only; not vendor MCP evidence."
+    },
+    "verdict": {
+      "value": "gated_build_candidate",
+      "status": "provisional",
+      "sources": [
+        "https://vercel.com/docs/sign-in-with-vercel/tokens",
+        "https://vercel.com/docs/rest-api",
+        "https://vercel.com/docs/mcp",
+        "https://vercel.com/docs/sign-in-with-vercel/authorization-server-api",
+        "https://vercel.com/docs/integrations/create-integration/vercel-api-integrations",
+        "https://vercel.com/docs/plans/pro-plan/trials"
+      ],
+      "evidence": [],
+      "reason": "Inferred only from extracted auth, API and access evidence; independent review required."
+    }
+  },
+  "validation": [
+    "Automatic extraction is provisional until independently reviewed",
+    "Unknown is not evidence of absence",
+    "Composio evidence cannot establish vendor MCP",
+    "Client-only and negated MCP statements are not vendor-server proof",
+    "API breadth is a text-coverage heuristic, not an endpoint census"
+  ]
+}

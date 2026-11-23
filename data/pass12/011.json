@@ -1,0 +1,186 @@
+{
+  "app": {
+    "number": 11,
+    "name": "Zendesk",
+    "category": "Support and Helpdesk",
+    "hint": "zendesk.com"
+  },
+  "replayed_at": "2026-11-23T18:45:46.709617+00:00",
+  "source_passes": [
+    "data/pass2/011.json",
+    "data/pass4/011.json"
+  ],
+  "source_searches": [
+    "data/new_search/011.json",
+    "data/pass4_search/011.json"
+  ],
+  "publication_date_note": "Search publication labels are retained exactly; null means no label was available. Relative labels are not exact dates.",
+  "claims": {
+    "auth": {
+      "value": [
+        "API token",
+        "Basic authentication",
+        "API key",
+        "Bearer token",
+        "Session authentication",
+        "OAuth 2.0"
+      ],
+      "status": "provisional",
+      "sources": [
+        "https://support.zendesk.com/hc/en-us/articles/4408831452954-How-can-I-authenticate-API-requests",
+        "https://developer.zendesk.com/api-reference/introduction/security-and-auth/",
+        "https://support.zendesk.com/hc/en-us/articles/4408889192858-Managing-API-token-access-to-the-Zendesk-API",
+        "https://developer.zendesk.com/documentation/conversations/getting-started/api-authentication/",
+        "https://developer.zendesk.com/documentation/authentication/",
+        "https://developer.zendesk.com/documentation/live-chat/getting-started/auth/",
+        "https://support.zendesk.com/hc/en-us/articles/8662004958746-Turning-on-and-off-API-access"
+      ],
+      "evidence": [
+        {
+          "value": "API token",
+          "url": "https://support.zendesk.com/hc/en-us/articles/4408831452954-How-can-I-authenticate-API-requests",
+          "excerpt": "How can I authenticate API requests? – Zendesk help Important: Zendesk is removing API tokens as an authentication method. Starting July 28, 2026, unused tokens will automatically deactivate. By April 30, 2027, all API tokens will stop working. See Announcing th",
+          "published_label": null
+        },
+        {
+          "value": "Basic authentication",
+          "url": "https://support.zendesk.com/hc/en-us/articles/4408831452954-How-can-I-authenticate-API-requests",
+          "excerpt": "be a verified user to make authenticated API requests. To authenticate API requests, use basic authentication with your email address and password, your email address and an API token, or an OAuth access token. All authentication methods set the authorization header differently.",
+          "published_label": null
+        },
+        {
+          "value": "API token",
+          "url": "https://developer.zendesk.com/api-reference/introduction/security-and-auth/",
+          "excerpt": "e: If you're an existing Zendesk customer and are currently using basic authentication or API tokens, you will have to migrate to OAuth access tokens for improved security and compatibility with future requirements. If you plan on distributing an app, integration, or b",
+          "published_label": null
+        },
+        {
+          "value": "Basic authentication",
+          "url": "https://developer.zendesk.com/api-reference/introduction/security-and-auth/",
+          "excerpt": "ticate API requests. Note: If you're an existing Zendesk customer and are currently using basic authentication or API tokens, you will have to migrate to OAuth access tokens for improved security and compatibility with future requirements. If you plan on distributing an app, inte",
+          "published_label": null
+        },
+        {
+          "value": "API token",
+          "url": "https://support.zendesk.com/hc/en-us/articles/4408889192858-Managing-API-token-access-to-the-Zendesk-API",
+          "excerpt": "Managing API token access to the Zendesk API – Zendesk help Users can use an API token to authenticate API requests. API tokens are auto-generated passwords that you can use with your emai",
+          "published_label": null
+        },
+        {
+          "value": "API key",
+          "url": "https://developer.zendesk.com/documentation/conversations/getting-started/api-authentication/",
+          "excerpt": "iry time to your credentials. Both authentication methods will require you to generate an API key in Admin Center. For instructions on how to generate an API key, see app-scoped keys and integration-scoped keys in Zendesk help. Access scopes The table below summarize",
+          "published_label": null
+        },
+        {
+          "value": "API token",
+          "url": "https://developer.zendesk.com/documentation/conversations/getting-started/api-authentication/",
+          "excerpt": "tication Copy page Sunshine Conversations' authentication scheme is distinct from Zendesk API tokens . This guide explains specifically how to authenticate requests against the Sunshine Conversations API . Authentication methods The Sunshine Conversations API supports",
+          "published_label": null
+        },
+        {
+          "value": "Bearer token",
+          "url": "https://developer.zendesk.com/documentation/conversations/getting-started/api-authentication/",
+          "excerpt": "he Sunshine Conversations API supports two authentication types: basic authentication and bearer tokens (via JWT). While basic authentication is recommended in most cases, JWTs may still be useful in certain circumstances, for instance if you would like to add an expiry t",
+          "published_label": null
+        },
+        {
+          "value": "Basic authentication",
+          "url": "https://developer.zendesk.com/documentation/conversations/getting-started/api-authentication/",
+          "excerpt": "Authentication methods The Sunshine Conversations API supports two authentication types: basic authentication and bearer tokens (via JWT). While basic authentication is recommended in most cases, JWTs may still be useful in certain circumstances, for instance if you would like t",
+          "published_label": null
+        },
+        {
+          "value": "Session authentication",
+          "url": "https://developer.zendesk.com/documentation/conversations/getting-started/api-authentication/",
+          "excerpt": "API authentication | Zendesk Developer Docs Messaging Getting started API authentication Copy page Sunshine Conversations' authentication scheme is distinct from Zendesk API tokens . This guide explains specifically how to authenticate requests against the Sunshine Conversations ",
+          "published_label": null
+        },
+        {
+          "value": "API token",
+          "url": "https://developer.zendesk.com/documentation/authentication/",
+          "excerpt": "OAuth authentication works and choose the right flow for your integration. Migrating from API tokens to OAuth access tokens Move from API tokens to OAuth with a step-by-step migration guide and rollout timeline. Understanding the differences between API tokens and OAut",
+          "published_label": null
+        },
+        {
+          "value": "OAuth 2.0",
+          "url": "https://developer.zendesk.com/documentation/live-chat/getting-started/auth/",
+          "excerpt": "apps. For more details on the concepts of confidential and public OAuth clients, see the OAuth 2.0 Authorization Framework RFC 6749 . Using curl curl https:// { subdomain } .zendesk.com/oauth2/chat/token \\ -H \"Content-Type: application/x-www-form-urlencoded\" \\ -d 'gra",
+          "published_label": null
+        },
+        {
+          "value": "API token",
+          "url": "https://support.zendesk.com/hc/en-us/articles/8662004958746-Turning-on-and-off-API-access",
+          "excerpt": "and off API access – Zendesk help Use the API configuration page to turn on password and API token access to the Zendesk API. For OAuth access, seeUsing OAuth authentication with your application. For more information about the Zendesk API, see theZendesk Developer Do",
+          "published_label": null
+        }
+      ],
+      "reason": "Provisional extraction; validate scope and completeness against cited pages."
+    },
+    "credential_gate": {
+      "value": [
+        "admin_approval"
+      ],
+      "status": "provisional",
+      "sources": [
+        "https://support.zendesk.com/hc/en-us/articles/4408889192858-Managing-API-token-access-to-the-Zendesk-API"
+      ],
+      "evidence": [
+        {
+          "value": "admin_approval",
+          "url": "https://support.zendesk.com/hc/en-us/articles/4408889192858-Managing-API-token-access-to-the-Zendesk-API",
+          "excerpt": "it logs for an API token (Enterprise) Generating API tokens To generate an API token, you must be an administrator and API token access must be turned on in your account. To generate an API token In Admin Center , click Apps and integrations in the sidebar, then select APIs > API tok",
+          "published_label": null
+        }
+      ],
+      "reason": "Provisional extraction; validate scope and completeness against cited pages."
+    },
+    "api_surface": {
+      "value": "unknown",
+      "status": "provisional",
+      "sources": [],
+      "evidence": [],
+      "reason": "No sufficiently specific official evidence extracted."
+    },
+    "official_mcp": {
+      "value": "client_only",
+      "status": "provisional",
+      "sources": [
+        "https://support.zendesk.com/hc/en-us/articles/11105393853210-Announcing-the-general-availability-of-the-MCP-client"
+      ],
+      "evidence": [
+        {
+          "value": "client_only",
+          "url": "https://support.zendesk.com/hc/en-us/articles/11105393853210-Announcing-the-general-availability-of-the-MCP-client",
+          "excerpt": "Announcing the general availability of the MCP client – Zendesk help Announced on Rollout on August 10, 2026 August 10, 2026 Zendesk is excited to announce the general availability of the MCP client, which makes it possible to use the tools on an MCP server in action flows to fetch data and take actions in external systems. This announcement includ",
+          "published_label": "3 months ago",
+          "context_note": "Source describes connecting to external MCP servers, not operating a vendor server."
+        }
+      ],
+      "reason": "Provisional; check date, ownership and access scope."
+    },
+    "composio_toolkit": {
+      "value": "listed",
+      "status": "provisional",
+      "sources": [
+        "https://docs.composio.dev/toolkits/zendesk"
+      ],
+      "evidence": [],
+      "reason": "Catalog match only; not vendor MCP evidence."
+    },
+    "verdict": {
+      "value": "unknown",
+      "status": "provisional",
+      "sources": [],
+      "evidence": [],
+      "reason": "No sufficiently specific official evidence extracted."
+    }
+  },
+  "validation": [
+    "Automatic extraction is provisional until independently reviewed",
+    "Unknown is not evidence of absence",
+    "Composio evidence cannot establish vendor MCP",
+    "Client-only and negated MCP statements are not vendor-server proof",
+    "API breadth is a text-coverage heuristic, not an endpoint census"
+  ]
+}

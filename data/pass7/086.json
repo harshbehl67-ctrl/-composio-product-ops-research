@@ -1,0 +1,87 @@
+{
+  "app": {
+    "number": 86,
+    "name": "QuickBooks",
+    "category": "Finance and Fintech",
+    "hint": "developer.intuit.com"
+  },
+  "replayed_at": "2026-11-23T18:19:20.732441+00:00",
+  "source_passes": [
+    "data/pass2/086.json",
+    "data/pass4/086.json"
+  ],
+  "source_search": "data/new_search/086.json",
+  "publication_date_note": "Published labels are retained exactly as supplied by search; missing labels are null. Relative labels must not be treated as exact publication dates.",
+  "claims": {
+    "auth": {
+      "value": [
+        "OAuth 2.0",
+        "Bearer token"
+      ],
+      "sources": [
+        "https://static.developer.intuit.com/output_html/qbo/docs/develop/authentication-and-authorization/faq.html",
+        "https://static.developer.intuit.com/output_html/qbo/docs/develop/authentication-and-authorization/oauth-2.0.html"
+      ],
+      "evidence": [
+        {
+          "value": "OAuth 2.0",
+          "url": "https://static.developer.intuit.com/output_html/qbo/docs/develop/authentication-and-authorization/faq.html",
+          "excerpt": "Authorization FAQ Hereâs a deeper dive into the OAuth 2.0 and authorization process to connect apps with the Intuit Financial Ecosystem. Do I need to authorize my app to integrate it with QuickBooks? Yes. The first step is to create an a",
+          "published_label": null
+        },
+        {
+          "value": "OAuth 2.0",
+          "url": "https://static.developer.intuit.com/output_html/qbo/docs/develop/authentication-and-authorization/oauth-2.0.html",
+          "excerpt": ".0 and 1.1 Disablement for the Intuit Developer Group Upgrading your apps to support TLS 1.2 Set up OAuth 2.0 Use the OAuth 2.0 protocol to implement authentication and authorization. Authorization is essential for both testing via sandbox companies and production apps. Weâll show you h",
+          "published_label": null
+        },
+        {
+          "value": "Bearer token",
+          "url": "https://static.developer.intuit.com/output_html/qbo/docs/develop/authentication-and-authorization/oauth-2.0.html",
+          "excerpt": "ation code for access and refresh tokens: .NET Java PHP Node.js Python Ruby 1 2 3 4 5 // Get OAuth2 Bearer token var tokenResponse = await auth2Client . GetBearerTokenAsync ( code ); //retrieve access_token and refresh_token tokenResponse . AccessToken tokenResponse . RefreshToken 1 2 3 4 5 ",
+          "published_label": null
+        }
+      ],
+      "reason": "Provisional extraction: validate scope and completeness against the cited page."
+    },
+    "credential_gate": {
+      "value": "unknown",
+      "sources": [],
+      "evidence": [],
+      "reason": "No sufficiently specific positive evidence extracted; review targeted search results."
+    },
+    "api_surface": {
+      "value": "unknown",
+      "sources": [],
+      "evidence": [],
+      "reason": "No sufficiently specific positive evidence extracted; review targeted search results."
+    },
+    "official_mcp": {
+      "value": "unknown",
+      "sources": [],
+      "evidence": [],
+      "reason": "No sufficiently specific positive evidence extracted; review targeted search results."
+    },
+    "composio_toolkit": {
+      "value": "listed",
+      "sources": [
+        "https://docs.composio.dev/toolkits/quickbooks"
+      ],
+      "evidence": [],
+      "reason": "Catalog match; scope needs review."
+    },
+    "verdict": {
+      "value": "unknown",
+      "sources": [],
+      "evidence": [],
+      "reason": "A supported access path, authentication method and API surface were not all extracted."
+    }
+  },
+  "validation": [
+    "Automatic extraction is provisional and not a verified final claim",
+    "Unknown is not evidence of absence",
+    "No Composio-to-vendor-MCP inference",
+    "Basic authentication may be endpoint-specific",
+    "Client-only and negated statements are not positive MCP evidence"
+  ]
+}

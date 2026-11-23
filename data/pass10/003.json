@@ -1,0 +1,148 @@
+{
+  "app": {
+    "number": 3,
+    "name": "Pipedrive",
+    "category": "CRM and Sales",
+    "hint": "pipedrive.com"
+  },
+  "replayed_at": "2026-11-23T18:41:57.295333+00:00",
+  "source_passes": [
+    "data/pass2/003.json",
+    "data/pass4/003.json"
+  ],
+  "source_searches": [
+    "data/new_search/003.json",
+    "data/pass4_search/003.json"
+  ],
+  "publication_date_note": "Search publication labels are retained exactly; null means no label was available. Relative labels are not exact dates.",
+  "claims": {
+    "auth": {
+      "value": [
+        "OAuth 2.0",
+        "API key",
+        "API token"
+      ],
+      "status": "provisional",
+      "sources": [
+        "https://developers.pipedrive.com/docs/api/v1/Oauth",
+        "https://support.pipedrive.com/en/article/what-is-the-api-key-for",
+        "https://support.pipedrive.com/en/article/can-all-users-access-the-pipedrive-api?category=account-settings",
+        "https://support.pipedrive.com/en/article/what-is-api",
+        "https://support.pipedrive.com/en/article/can-all-users-access-the-pipedrive-api"
+      ],
+      "evidence": [
+        {
+          "value": "OAuth 2.0",
+          "url": "https://developers.pipedrive.com/docs/api/v1/Oauth",
+          "excerpt": "ead fields Lead labels Leads Lead sources Legacy teams Mailbox Meetings Note fields Notes OAuth 2.0 Requesting authorization GET /oauth/authorize Getting the tokens POST /oauth/token Refreshing the tokens POST /oauth/token Organization fields Organization relationships",
+          "published_label": null
+        },
+        {
+          "value": "API key",
+          "url": "https://support.pipedrive.com/en/article/what-is-the-api-key-for",
+          "excerpt": "What is the API key for? - Knowledge Base | Pipedrive Knowledge Base All categories Marketplace apps Blog Knowledge Base Academy Knowledge Base results : 0 No results found. Knowledge Base",
+          "published_label": "2 months ago"
+        },
+        {
+          "value": "API token",
+          "url": "https://support.pipedrive.com/en/article/can-all-users-access-the-pipedrive-api?category=account-settings",
+          "excerpt": "and scroll down to the “Tools and setup” section. Then, de-select the “ Access their own API token” option to revoke access to the API. Note: Disabling access to the API will impact users’ ability to export data from their Pipedrive company account and install integra",
+          "published_label": null
+        },
+        {
+          "value": "API key",
+          "url": "https://support.pipedrive.com/en/article/what-is-api",
+          "excerpt": "developer adds an endpoint to a URL and uses that endpoint to call a server or database. API key a unique identifier used during API requests to ensure a person or software is who it says it is. API integration a connection between two or more applications to exchan",
+          "published_label": "2 months ago"
+        },
+        {
+          "value": "API token",
+          "url": "https://support.pipedrive.com/en/article/what-is-api",
+          "excerpt": "API work in Pipedrive? Note: To keep your data secure, it‘s extremely important that your API token is not shared with others. If you believe someone has access to your API token, click “Generate new token“ to create a new one. You’ll need to update any existing API co",
+          "published_label": "2 months ago"
+        },
+        {
+          "value": "API token",
+          "url": "https://support.pipedrive.com/en/article/can-all-users-access-the-pipedrive-api",
+          "excerpt": "and scroll down to the “Tools and setup” section. Then, de-select the “ Access their own API token” option to revoke access to the API. Note: Disabling access to the API will impact users’ ability to export data from their Pipedrive company account and install integra",
+          "published_label": "2 months ago"
+        }
+      ],
+      "reason": "Provisional extraction; validate scope and completeness against cited pages."
+    },
+    "credential_gate": {
+      "value": "unknown",
+      "status": "provisional",
+      "sources": [],
+      "evidence": [],
+      "reason": "No sufficiently specific official evidence extracted."
+    },
+    "api_surface": {
+      "value": "REST; moderate documented surface",
+      "status": "provisional",
+      "sources": [
+        "https://support.pipedrive.com/en/article/what-is-api"
+      ],
+      "evidence": [
+        {
+          "value": [
+            "REST"
+          ],
+          "breadth": "moderate",
+          "url": "https://support.pipedrive.com/en/article/what-is-api",
+          "excerpt": "What is API? - Knowledge Base | Pipedrive Knowledge Base All categories Marketplace apps Blog Knowledge Base Academy Knowledge Base results : 0 No results found. Knowledge Base / Integrations / Marketplace integrations / What is API? Topics What is API? SR Steven Reinartz Last up",
+          "published_label": "2 months ago"
+        }
+      ],
+      "reason": "Provisional extraction; validate scope and completeness against cited pages."
+    },
+    "official_mcp": {
+      "value": "unknown",
+      "status": "provisional",
+      "sources": [
+        "https://www.pipedrive.com/en/newsroom/pipedrive-launches-native-mcp-server-bringing-crm-workflows-directly-into-ai-assistants",
+        "https://www.pipedrive.com/en/features/mcp-server"
+      ],
+      "evidence": [
+        {
+          "value": "client_only",
+          "url": "https://www.pipedrive.com/en/newsroom/pipedrive-launches-native-mcp-server-bringing-crm-workflows-directly-into-ai-assistants",
+          "excerpt": "Pipedrive launches native MCP server, bringing CRM workflows directly into AI assistants | Pipedrive Skip to main content Pipedrive launches native MCP server, bringing CRM workflows directly into AI assistants New York, June 30, 2026 – Pipedrive , the easy and intelligent CRM for small and medium-sized businesses, today announced the launch of its native Model Context Protocol (MCP) ser",
+          "published_label": "4 months ago",
+          "context_note": "Passage describes a client connection to external servers."
+        },
+        {
+          "value": "vendor_server",
+          "url": "https://www.pipedrive.com/en/features/mcp-server",
+          "excerpt": ". No manual server setup required. Trusted by 100,000+ companies in 179 countries How the Pipedrive MCP server works The Model Context Protocol (MCP) is an open standard that lets AI assistants securely connect to external tools and data sources. With Pipedrive MCP, your AI assistant can securely access and act on your CRM data using natural langu",
+          "published_label": null,
+          "context_note": "Vendor-owned server statement; review date and access scope."
+        }
+      ],
+      "reason": "Conflicting or undated MCP evidence requires review."
+    },
+    "composio_toolkit": {
+      "value": "listed",
+      "status": "provisional",
+      "sources": [
+        "https://docs.composio.dev/toolkits/pipedrive"
+      ],
+      "evidence": [],
+      "reason": "Catalog match only; not vendor MCP evidence."
+    },
+    "verdict": {
+      "value": "unknown",
+      "status": "provisional",
+      "sources": [],
+      "evidence": [],
+      "reason": "No sufficiently specific official evidence extracted."
+    }
+  },
+  "validation": [
+    "Automatic extraction is provisional until independently reviewed",
+    "Unknown is not evidence of absence",
+    "Composio evidence cannot establish vendor MCP",
+    "Client-only and negated MCP statements are not vendor-server proof",
+    "API breadth is a text-coverage heuristic, not an endpoint census"
+  ]
+}

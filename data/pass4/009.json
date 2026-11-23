@@ -1,0 +1,157 @@
+{
+  "app": {
+    "number": 9,
+    "name": "Copper",
+    "category": "CRM and Sales",
+    "hint": "copper.com"
+  },
+  "checked_at": "2026-11-23T18:14:55.270776+00:00",
+  "prior_source": "data/pass2/009.json",
+  "search_source": "data/pass4_search/009.json",
+  "new_candidates": [
+    {
+      "url": "https://support.copper.com/en/articles/8823347-generating-an-api-key",
+      "title": "Generating an API Key | Copper Help Center (https://support.copper.com/en/articles/8823347-generating-an-api-key)",
+      "published_label": "1.7 years ago"
+    },
+    {
+      "url": "https://support.copper.com/en/articles/8823462-api-docs-and-tips",
+      "title": "API Docs and tips | Copper Help Center (https://support.copper.com/en/articles/8823462-api-docs-and-tips)",
+      "published_label": "2.8 years ago"
+    }
+  ],
+  "selected": [
+    {
+      "url": "https://support.copper.com/en/articles/8823347-generating-an-api-key",
+      "title": "Generating an API Key | Copper Help Center (https://support.copper.com/en/articles/8823347-generating-an-api-key)",
+      "published_label": "1.7 years ago"
+    }
+  ],
+  "new_pages": [
+    {
+      "url": "https://support.copper.com/en/articles/8823347-generating-an-api-key",
+      "requested_url": "https://support.copper.com/en/articles/8823347-generating-an-api-key",
+      "status": 200,
+      "title": "Generating an API Key | Copper Help Center (https://support.copper.com/en/articles/8823347-generating-an-api-key)",
+      "text": "Generating an API Key | Copper Help Center Copyright (c) 2023, Intercom, Inc. (legal@intercom.io) with Reserved Font Name \"Inter\".\n      This Font Software is licensed under the SIL Open Font License, Version 1.1. Copyright (c) 2023, Intercom, Inc. (legal@intercom.io) with Reserved Font Name \"Inter\".\n      This Font Software is licensed under the SIL Open Font License, Version 1.1. Skip to main content Copper 101 Playbooks Setup & Customize Import & Export Data Working with Lists Working with Pipelines Email Features & Tools Automate Tasks & Workflows Forms Managing Users Reports Integrations Settings and permissions Subscription and billing Certified service partners Data and privacy Troubleshooting Product updates API Keys can be used to create, read, update, and delete data in Copper. Only Admin users are able to generate API Keys. To generate an API Key... Navigate to Settings > Integrations > API Keys. Click the 'Generate API Key' button. Once your API Key is produced, you'll be able to see when it was generated and give it a label to differentiate its usage from other API Keys you may generate in the future. ​ This page will only show API Keys you've generated; each Admin user can generate their own. You can delete an API key at any time by clicking the trash can icon at the right: We also have API documentation available for more advanced users. ​ Note: For the Zapier integrations, please go to 'Settings' > 'Integrations,' and generate a token there. Have a question? Contact our Customer Success Team using the in-app chat 💬 Did this answer your question? Disappointed Reaction Neutral Reaction Smiley Reaction Related Articles 🎥 Bulk edit Records FAQ's: The Chrome Extension for Gmail and Google Calendar Overview: Compliance Archive Connect Google Workspace to the Compliance Archive Build a Copper Sales Analytics Dashboard with Google Sheets Canvas",
+      "published_label": "1.7 years ago"
+    }
+  ],
+  "claims": {
+    "auth": {
+      "value": [
+        "OAuth 2.0",
+        "API key",
+        "API token"
+      ],
+      "sources": [
+        "https://www.developer.copper.com/introduction/authentication.html",
+        "https://developer.copper.com/introduction/oauth/index.html",
+        "https://www.developer.copper.com/introduction/oauth/index.html",
+        "https://www.developer.copper.com/introduction/oauth/flow.html",
+        "https://www.developer.copper.com/introduction/oauth/quickstart.html",
+        "https://support.copper.com/en/articles/8823347-generating-an-api-key"
+      ],
+      "evidence": [
+        {
+          "value": "OAuth 2.0",
+          "url": "https://www.developer.copper.com/introduction/authentication.html",
+          "excerpt": "kip to content Authentication ¶ There are two ways to access the Copper Developer API: API keys and OAuth2.0 .\nAPI Keys are suitable for individual users, while OAuth2.0 is the preferred approach for partner integrations. API Keys ¶ The Dev API uses token based authentication. You have t",
+          "published_label": null
+        },
+        {
+          "value": "API key",
+          "url": "https://www.developer.copper.com/introduction/authentication.html",
+          "excerpt": "nerate an API token, in the Copper web app go to System settings > API Keys and click the 'GENERATE API KEY' \nbutton. Copper allows you to label each key for its unique purpose. You'll need to generate an API key to make \nan API Request. OAuth2.0 ¶ Click here to get started.",
+          "published_label": null
+        },
+        {
+          "value": "API token",
+          "url": "https://www.developer.copper.com/introduction/authentication.html",
+          "excerpt": "ns at the same time.\nAdmins can see all user generated tokens and generate new ones. To generate an API token, in the Copper web app go to System settings > API Keys and click the 'GENERATE API KEY' \nbutton. Copper allows you to label each key for its unique purpose. You'll need to genera",
+          "published_label": null
+        },
+        {
+          "value": "OAuth 2.0",
+          "url": "https://developer.copper.com/introduction/oauth/index.html",
+          "excerpt": "Overview - Copper Developer API Skip to content Authentication via OAuth2.0 ¶ 1. Introduction ¶ You can now access the Copper Developer API via OAuth2.0 .\nThis authentication method is an alternative to Copper's legacy API Keys ,\nand is particularly well-",
+          "published_label": null
+        },
+        {
+          "value": "API key",
+          "url": "https://developer.copper.com/introduction/oauth/index.html",
+          "excerpt": "eamless and secure\nlink between their users and Copper. OAuth2.0 offers several advantages over the API Key flow: Authentication is open to all users, not just administrators No need to generate and copy API keys from Copper to your application Readily available client libraries help wi",
+          "published_label": null
+        },
+        {
+          "value": "OAuth 2.0",
+          "url": "https://www.developer.copper.com/introduction/oauth/index.html",
+          "excerpt": "Overview - Copper Developer API Skip to content Authentication via OAuth2.0 ¶ 1. Introduction ¶ You can now access the Copper Developer API via OAuth2.0 .\nThis authentication method is an alternative to Copper's legacy API Keys ,\nand is particularly well-",
+          "published_label": null
+        },
+        {
+          "value": "API key",
+          "url": "https://www.developer.copper.com/introduction/oauth/index.html",
+          "excerpt": "eamless and secure\nlink between their users and Copper. OAuth2.0 offers several advantages over the API Key flow: Authentication is open to all users, not just administrators No need to generate and copy API keys from Copper to your application Readily available client libraries help wi",
+          "published_label": null
+        },
+        {
+          "value": "OAuth 2.0",
+          "url": "https://www.developer.copper.com/introduction/oauth/flow.html",
+          "excerpt": "Documentation - Copper Developer API Skip to content Copper OAuth2.0 Flow ¶ 1. Introduction ¶ Third-party integrations may take advantage of OAuth 2.0 for the purpose of authorizing and authenticating access to the Copper Developer API. Employing t",
+          "published_label": null
+        },
+        {
+          "value": "OAuth 2.0",
+          "url": "https://www.developer.copper.com/introduction/oauth/quickstart.html",
+          "excerpt": "Quickstart Guide - Copper Developer API Skip to content OAuth2.0 Quickstart Guide ¶ Introduction ¶ This basic example demonstrates how to get started with Copper OAuth2.0.\nFor a detailed documentation of each step, click here . Prerequisites ¶ ",
+          "published_label": null
+        },
+        {
+          "value": "API key",
+          "url": "https://support.copper.com/en/articles/8823347-generating-an-api-key",
+          "excerpt": "Generating an API Key | Copper Help Center Copyright (c) 2023, Intercom, Inc. (legal@intercom.io) with Reserved Font Name \"Inter\".\n      This Font Software is licensed under the SIL Open Font License, ",
+          "published_label": "1.7 years ago"
+        }
+      ],
+      "reason": "Provisional extraction: validate scope and completeness against the cited page."
+    },
+    "credential_gate": {
+      "value": "unknown",
+      "sources": [],
+      "evidence": [],
+      "reason": "No sufficiently specific positive evidence extracted; review targeted search results."
+    },
+    "api_surface": {
+      "value": "unknown",
+      "sources": [],
+      "evidence": [],
+      "reason": "No sufficiently specific positive evidence extracted; review targeted search results."
+    },
+    "official_mcp": {
+      "value": "unknown",
+      "sources": [],
+      "evidence": [],
+      "reason": "No sufficiently specific positive evidence extracted; review targeted search results."
+    },
+    "composio_toolkit": {
+      "value": "listed",
+      "sources": [
+        "https://docs.composio.dev/toolkits/copper"
+      ],
+      "evidence": [],
+      "reason": "Catalog match; scope needs review."
+    },
+    "verdict": {
+      "value": "unknown",
+      "sources": [],
+      "evidence": [],
+      "reason": "A supported access path, authentication method and API surface were not all extracted."
+    }
+  },
+  "validation": [
+    "All claims are provisional",
+    "No vendor MCP inference from Composio catalog",
+    "Negated MCP or client-only source is not counted as vendor-server proof"
+  ]
+}

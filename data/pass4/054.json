@@ -1,0 +1,180 @@
+{
+  "app": {
+    "number": 54,
+    "name": "MrScraper",
+    "category": "Data, SEO and Scraping",
+    "hint": "docs.mrscraper.com"
+  },
+  "checked_at": "2026-11-23T18:15:17.182939+00:00",
+  "prior_source": "data/pass2/054.json",
+  "search_source": "data/pass4_search/054.json",
+  "new_candidates": [
+    {
+      "url": "https://docs.mrscraper.com/docs/features/activating-api",
+      "title": "Scraper API | MrScraper Documentation (https://docs.mrscraper.com/docs/features/activating-api)",
+      "published_label": null
+    },
+    {
+      "url": "https://docs.mrscraper.com/docs/getting-started/billing",
+      "title": "Billing | MrScraper Documentation (https://docs.mrscraper.com/docs/getting-started/billing)",
+      "published_label": null
+    },
+    {
+      "url": "https://docs.mrscraper.com/docs/getting-started/overview",
+      "title": "Overview | MrScraper Documentation (https://docs.mrscraper.com/docs/getting-started/overview)",
+      "published_label": null
+    },
+    {
+      "url": "https://docs.mrscraper.com/docs/guides/programmatically",
+      "title": "Create and Run a Scraper Programmatically | MrScraper Documentation (https://docs.mrscraper.com/docs/guides/programmatically)",
+      "published_label": null
+    },
+    {
+      "url": "https://docs.mrscraper.com/docs/api/error-handling",
+      "title": "Error Handling | MrScraper Documentation (https://docs.mrscraper.com/docs/api/error-handling)",
+      "published_label": null
+    },
+    {
+      "url": "https://docs.mrscraper.com/docs/getting-started/scraper-api",
+      "title": "Scraper API | MrScraper Documentation (https://docs.mrscraper.com/docs/getting-started/scraper-api)",
+      "published_label": null
+    },
+    {
+      "url": "https://docs.mrscraper.com/docs/api/v3/result/detail",
+      "title": "Get a Detailed Result | MrScraper Documentation (https://docs.mrscraper.com/docs/api/v3/result/detail)",
+      "published_label": null
+    },
+    {
+      "url": "https://docs.mrscraper.com/docs/api/v3/authentication/verify-token",
+      "title": "Verify API Token | MrScraper Documentation (https://docs.mrscraper.com/docs/api/v3/authentication/verify-token)",
+      "published_label": null
+    },
+    {
+      "url": "https://mrscraper.com/web-scraper-api",
+      "title": "Web Scraper API: Turn Any Website Into JSON | MrScraper (https://mrscraper.com/web-scraper-api)",
+      "published_label": null
+    },
+    {
+      "url": "https://docs.mrscraper.com/docs/integrations/n8n/create-scraper",
+      "title": "Create a Scraper | MrScraper Documentation (https://docs.mrscraper.com/docs/integrations/n8n/create-scraper)",
+      "published_label": null
+    }
+  ],
+  "selected": [
+    {
+      "url": "https://docs.mrscraper.com/docs/api/v3/authentication/verify-token",
+      "title": "Verify API Token | MrScraper Documentation (https://docs.mrscraper.com/docs/api/v3/authentication/verify-token)",
+      "published_label": null
+    },
+    {
+      "url": "https://docs.mrscraper.com/docs/features/activating-api",
+      "title": "Scraper API | MrScraper Documentation (https://docs.mrscraper.com/docs/features/activating-api)",
+      "published_label": null
+    }
+  ],
+  "new_pages": [
+    {
+      "url": "https://docs.mrscraper.com/docs/api/v3/authentication/verify-token",
+      "requested_url": "https://docs.mrscraper.com/docs/api/v3/authentication/verify-token",
+      "status": 200,
+      "title": "Verify API Token | MrScraper Documentation (https://docs.mrscraper.com/docs/api/v3/authentication/verify-token)",
+      "text": "Verify API Token | MrScraper Documentation API Reference API Reference Dashboard Introduction API Overview Authentication Pagination Response Headers Error Handling Web Search Web Search GET Scraper API Scrape HTML GET Scrape Markdown GET Get Screenshot GET Scrape Brand Scrape JSON GET Platform Authentication Verify API Token GET Workflow Cancel Bulk Scraping Result Analytic Authentication Verify API Token Verify your API token and retrieve subscription account information, including token usage, limits, and billing details, with the MrScraper API. Verify your API token and retrieve subscription account information including token usage, limits, and billing details. Note Use the Platform API Server ( https://api.app.mrscraper.com ) host when calling this endpoint. loading... GET / api / v1 / subscription-accounts Send Authorization Authorization apiKey x-api-token <token> In: header Response Body 200 application/json 401 application/json cURL JavaScript Go Python Java C# curl -X GET \"https://api.app.mrscraper.com/api/v1/subscription-accounts\" 200 401 { \"message\" : \"Successful operation!\" , \"data\" : { \"id\" : \"string\" , \"tokenLimit\" : 0 , \"tokenUsage\" : 0 , \"stripeSubscriptionId\" : \"string\" , \"userId\" : \"string\" , \"stripeStatus\" : \"string\" , \"quantity\" : 0 , \"endsAt\" : \"2019-08-24T14:15:22Z\" , \"isEnterprise\" : true , \"rateLimit\" : 0 , \"rateTtl\" : 0 , \"isAutoRenew\" : true , \"user\" : { \"id\" : \"string\" , \"name\" : \"string\" , \"email\" : \"string\" , \"latestApiToken\" : \"string\" , \"isVerified\" : true } } } { \"message\" : \"Unauthorized access\" , \"error\" : \"Unauthorized\" } Scrape JSON GET Extract structured, strongly-typed JSON from a single page with the Scrape JSON endpoint, using a natural language prompt instead of CSS selectors or XPath. Rerun a Workflow POST Rerun an existing Workflow by scraperId and url with the MrScraper API, reusing cached results to cut token usage and runtime. curl -X GET \"https://api.app.mrscraper.com/api/v1/subscription-accounts\"",
+      "published_label": null
+    },
+    {
+      "url": "https://docs.mrscraper.com/docs/features/activating-api",
+      "requested_url": "https://docs.mrscraper.com/docs/features/activating-api",
+      "status": 200,
+      "title": "Scraper API | MrScraper Documentation (https://docs.mrscraper.com/docs/features/activating-api)",
+      "text": "Workflow API Access | MrScraper Documentation Documentation Core Features Dashboard Getting Started Overview Quickstart Web Search Scraper API Token Plan CLI MCP Server Billing Features Workflow Workflow API Access Bulk Scraping Proxy Marketplace Schedule S3 Storage Scraping Tips Cookie Team Guides Common Use Case Optimizing Cost Create and Run a Scraper Programmatically Bulk Scraping With Custom Scraper Integrations Email SQL/Database Webhook Zapier ClawHub x402 n8n Dify Scalekit SDKs Workflow API Access Learn how to run any scraper you have created through a MrScraper API endpoint, so you can automate scraping or integrate it into your application. MrScraper lets you run any scraper you've created directly through an API endpoint. This is useful when you want to automate scraping, integrate it into your application, or test requests in tools like Postman. How to Run a Scraper Through the API Setup Steps Open your dashboard and select a scraper you've already created. If you don't have one yet, create it first. In the scraper window, click Settings . Select AI Scraper API Access and slide to activate it. Note This turns off the AI chat for this scraper and enables API mode. After activation, copy the example API request shown on the page. Paste the request into Postman (or another API tool). Note You can replace the URL with any URL you want to scrape. You can also run the scraper directly from Rerun an AI Scraper endpoint . API Request Parameters Parameter Type Location Required Default Description x-api-token string header Yes - Your MrScraper API token scraperId string body Yes - The unique ID of the scraper you activated url string body Yes - The webpage URL you want to scrape maxRetry integer body No 3 Number of retry attempts if the scraping fails maxPages integer body No 0 Maximum number of pages to scrape (useful for listing/pagination). Use this to control how many pages you want to extract from multi-page listings timeout integer body No None Request timeout in seconds. Increase this value if you're scraping many pages or complex websites stream boolean body No false Enable streaming response mode. Highly recommended when scraping multiple pages that may take several minutes. If the connection is interrupted mid-process, you'll still receive the partial data that was already scraped from completed pages About maxPages If the website has fewer pages than maxPages, it will scrape all available pages. Example Request Body Basic Single-Page Scraper { \"scraperId\" : \"1c9f4043-b572-462a-ab94-a330672f1af5\" , \"url\" : \"https://example.com/property\" , \"maxRetry\" : 3 , \"maxPages\" : 1 , \"timeout\" : 300 , \"stream\" : false } Listing Agent API (Multi-Page Scraper) When scraping listings or paginated content, use the maxPages parameter: { \"scraperId\" : \"1c9f4043-b572-462a-ab94-a330672f1af5\" , \"url\" : \"https://www.zillow.com/ky/\" , \"maxRetry\" : 3 , \"maxPages\" : 4 , \"timeout\" : 1100 , \"stream\" : false } Tip Timeout Guidelines: For single-page scraping: 300-600 seconds is usually sufficient For multi-page scraping: Increase timeout proportionally to maxPages (e.g., 1100+ seconds for 4+ pages) If you encounter timeout errors, increase the timeout value Scraping with Streaming Response { \"scraperId\" : \"your-scraper-id\" , \"url\" : \"https://example.com/search\" , \"maxRetry\" : 3 , \"maxPages\" : 10 , \"timeout\" : 2000 , \"stream\" : true } Important When to Use stream: true : When scraping multiple pages ( maxPages > 1) that may take several minutes For long-running scraping jobs to prevent data loss If connection interruptions occur mid-process, you'll still receive partial data from pages that were already scraped Ensures you don't lose all progress if the request is interrupted before completion Common Use Cases Scraping a Single Product Page { \"scraperId\" : \"your-scraper-id\" , \"url\" : \"https://shop.example.com/product/123\" , \"maxRetry\" : 2 } Scraping Real Estate Listings (Multiple Pages) { \"scraperId\" : \"your-scraper-id\" , \"url\" : \"https://www.zillow.com/ky/\" , \"maxRetry\" : 3 , \"maxPages\" : 10 , \"timeout\" : 2000 , \"stream\" : true } Tip For multi-page scraping, always set stream: true to ensure you receive data from completed pages even if the process is interrupted. Best Practices Start with lower maxPages values and increase gradually to test performance Adjust timeout based on website complexity and number of pages Use stream: true for multi-page scraping to prevent data loss if the connection is interrupted Use appropriate retry values (3 is recommended for most cases) Monitor your API usage to stay within rate limits Test with a single page first before running large batch operations Troubleshooting Issue Solution Timeout errors Increase the timeout parameter, especially when using maxPages Failed requests Check maxRetry value and ensure your API token is valid Incomplete data from listings Increase maxPages or verify the URL structure Rate limiting Reduce concurrent requests or contact support for higher limits Need Help? If you encounter issues or need assistance with API integration, contact our support team or check the API Reference for detailed endpoint documentation. Super Mode Learn how to run a Workflow in Super mode, routing requests through a real device for complex websites. Bulk Scraping Learn how to extract data from many URLs in one operation with Bulk Scraping, applying the same scraper configuration to an entire uploaded list. On this page How to Run a Scraper Through the API Setup Steps API Request Parameters Example Request Body Basic Single-Page Scraper Listing Agent API (Multi-Page Scraper) Scraping with Streaming Response Common Use Cases Scraping a Single Product Page Scraping Real Estate Listings (Multiple Pages) Best Practices Troubleshooting",
+      "published_label": null
+    }
+  ],
+  "claims": {
+    "auth": {
+      "value": [
+        "API token",
+        "Bearer token"
+      ],
+      "sources": [
+        "https://docs.mrscraper.com/docs/api/authentication",
+        "https://docs.mrscraper.com/docs/getting-started/api-token",
+        "https://docs.mrscraper.com/docs/api/v3/authentication/verify-token"
+      ],
+      "evidence": [
+        {
+          "value": "API token",
+          "url": "https://docs.mrscraper.com/docs/api/authentication",
+          "excerpt": "enticate requests to the MrScraper API using API tokens and request headers. The MrScraper API uses API token authentication to secure all endpoints. Every request must include a valid API token in the HTTP request headers. Getting Your API Token API tokens are managed directly from your ",
+          "published_label": null
+        },
+        {
+          "value": "Bearer token",
+          "url": "https://docs.mrscraper.com/docs/api/authentication",
+          "excerpt": "ts For Marketplace endpoints , authenticate using the standard RFC 6750 Authorization header with a Bearer token: Authorization : Bearer <MRSCRAPER_API_TOKEN> Verify Token To test your authentication and confirm that your token is valid, make a request to the /subscription-accounts endpoint:",
+          "published_label": null
+        },
+        {
+          "value": "API token",
+          "url": "https://docs.mrscraper.com/docs/getting-started/api-token",
+          "excerpt": "tation Documentation Core Features Dashboard Getting Started Overview Quickstart Web Search Scraper API Token Plan CLI MCP Server Billing Features Workflow Workflow API Access Bulk Scraping Proxy Marketplace Schedule S3 Storage Scraping Tips Cookie Team Guides Common Use Case Optimizing C",
+          "published_label": null
+        },
+        {
+          "value": "API token",
+          "url": "https://docs.mrscraper.com/docs/api/v3/authentication/verify-token",
+          "excerpt": "Verify API Token | MrScraper Documentation API Reference API Reference Dashboard Introduction API Overview Authentication Pagination Response Headers Error Handling Web Search Web Search GET Scrap",
+          "published_label": null
+        }
+      ],
+      "reason": "Provisional extraction: validate scope and completeness against the cited page."
+    },
+    "credential_gate": {
+      "value": "unknown",
+      "sources": [],
+      "evidence": [],
+      "reason": "No sufficiently specific positive evidence extracted; review targeted search results."
+    },
+    "api_surface": {
+      "value": "unknown",
+      "sources": [],
+      "evidence": [],
+      "reason": "No sufficiently specific positive evidence extracted; review targeted search results."
+    },
+    "official_mcp": {
+      "value": "yes (provisional)",
+      "sources": [
+        "https://docs.mrscraper.com/docs/getting-started/mcp-server"
+      ],
+      "evidence": [
+        {
+          "value": "yes (provisional)",
+          "url": "https://docs.mrscraper.com/docs/getting-started/mcp-server",
+          "excerpt": "Database Webhook Zapier ClawHub x402 n8n Dify Scalekit SDKs MCP Server Official MrScraper MCP server for retrieving web pages, web search, and account usage. Connect AI clients or run the open-source server locally. MrScraper MCP is the official Model Context ",
+          "published_label": null,
+          "context_warning": "Review vendor ownership, dates, and scope."
+        }
+      ],
+      "reason": "Provisional; check source date, scope, and vendor ownership."
+    },
+    "composio_toolkit": {
+      "value": "listed",
+      "sources": [
+        "https://docs.composio.dev/toolkits/mrscraper"
+      ],
+      "evidence": [],
+      "reason": "Catalog match; scope needs review."
+    },
+    "verdict": {
+      "value": "unknown",
+      "sources": [],
+      "evidence": [],
+      "reason": "A supported access path, authentication method and API surface were not all extracted."
+    }
+  },
+  "validation": [
+    "All claims are provisional",
+    "No vendor MCP inference from Composio catalog",
+    "Negated MCP or client-only source is not counted as vendor-server proof"
+  ]
+}

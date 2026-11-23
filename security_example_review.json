@@ -1,0 +1,25 @@
+{
+  "file_in_first_commit": "data/review_sources/73874c42bbc1e9a0.json",
+  "first_commit": "3fe2521c58a5bd1ff8130605af1c5fb4413b5450",
+  "source": "https://developer.zendesk.com/api-reference/introduction/security-and-auth/",
+  "checked_date": "2026-11-24",
+  "http_status": 200,
+  "bearer_shaped_values_found": 2,
+  "results": [
+    {
+      "sha256": "51a8c0354fdf76867038c024b754e08c3a30a0756fb71ea1179e93b6175b782d",
+      "exact_match_in_public_page": true,
+      "example_label_nearby": true,
+      "context_redacted": "uide. In your requests, specify the access token in an Authorization header as follows: Authorization : Bearer { access_token } Example: Authorization : Bearer [REDACTED] If you use curl to test different endpoints, you can use the following format: curl https://obscura.zendesk.com/api/v2/users.json \\ -H \"Authorization: Bearer g"
+    },
+    {
+      "sha256": "51a8c0354fdf76867038c024b754e08c3a30a0756fb71ea1179e93b6175b782d",
+      "exact_match_in_public_page": true,
+      "example_label_nearby": true,
+      "context_redacted": "uide. In your requests, specify the access token in an Authorization header as follows: Authorization : Bearer { access_token } Example: Authorization : Bearer [REDACTED] If you use curl to test different endpoints, you can use the following format: curl https://obscura.zendesk.com/api/v2/users.json \\ -H \"Authorization: Bearer g"
+    }
+  ],
+  "finding": "Published example, not established as a user-owned live credential",
+  "history_action": "No history rewrite; preserve original research evidence",
+  "current_tree": "Value remains redacted"
+}

@@ -1,0 +1,1912 @@
+{
+  "category": "Productivity and Project Management",
+  "checked_at": "2026-11-24",
+  "records": [
+    {
+      "number": 71,
+      "app": "Notion",
+      "category": "Productivity and Project Management",
+      "summary": "Notion exposes a documented REST API and a hosted remote MCP server. Its Free plan is self-serve; current Help Center guidance allows both Members and Workspace owners to add connections, subject to plan and workspace settings, and pages must be explicitly shared with the connection.",
+      "blocker": "Connection creation depends on plan and workspace settings, Enterprise owners can restrict member installs, and internal-connection page access must be granted manually. The hosted MCP is current, while the local open-source server is no longer actively maintained; do not build against the retiring SSE endpoint.",
+      "next_action": "Use a personal access token for a user-scoped prototype or a properly configured OAuth integration for multi-user access. Share only the required pages, use the Notion-Version header, and connect MCP through Streamable HTTP at https://mcp.notion.com/mcp.",
+      "fields": {
+        "auth": {
+          "value": [
+            "internal_connection_api_token: One workspace; connection capabilities plus manually shared pages or databases; Bearer authorization.",
+            "personal_access_token: One workspace; acts as the creating user with that user's existing permissions; Bearer authorization.",
+            "oauth2: Scoped or public integration; users authorize selected workspace content and requested capabilities; authorization-code access tokens."
+          ],
+          "status": "checked",
+          "reason": "The official authorization and connection guides distinguish all three current methods and their user/workspace scopes. A generic API-key label would hide important permission and sharing differences.",
+          "evidence": [
+            {
+              "url": "https://developers.notion.com/guides/authorization/overview",
+              "title": "Notion authorization overview",
+              "quote": "Internal connections use a static credential called an internal connection API token, personal access tokens use a user-scoped static token, and OAuth integrations and public integrations use the OAuth 2.0 protocol.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated",
+              "original_url": "https://developers.notion.com/reference/authorization",
+              "source_review": "The old reference URL returns 404. The current official authorization overview reproduces the wording."
+            },
+            {
+              "url": "https://developers.notion.com/guides/connections-and-tokens",
+              "title": "Notion connections and tokens",
+              "quote": "A personal access token uses your existing permissions. An internal connection needs content access granted to it. For OAuth integrations and public integrations, each user grants access during authorization.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            }
+          ]
+        },
+        "credential_gate": {
+          "gate_class": "self_serve_free",
+          "value": "self_serve_free",
+          "status": "checked",
+          "reason": "Notion's current pricing page lists a $0 Free plan, and its current Help Center says both Members and Workspace owners can add connections, with creation depending on plan and workspace settings. Enterprise owners can restrict member installs, and internal-connection page access must still be granted manually. The sources are undated.",
+          "evidence": [
+            {
+              "url": "https://www.notion.com/pricing",
+              "title": "Notion pricing",
+              "quote": "Free $0 per seat/month",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            },
+            {
+              "url": "https://www.notion.com/help/add-and-manage-connections-with-the-api",
+              "title": "Add & manage connections in Notion",
+              "quote": "Both Members and Workspace owners can add connections to a workspace in Settings → Connections .",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            },
+            {
+              "url": "https://www.notion.com/help/add-and-manage-connections-with-the-api",
+              "title": "Notion connection creation settings",
+              "quote": "Who can create a connection depends on your plan and your workspace's settings.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            },
+            {
+              "url": "https://www.notion.com/help/add-and-manage-connections-with-the-api",
+              "title": "Notion Enterprise connection controls",
+              "quote": "On Enterprise plans, workspace owners can restrict which connections members are allowed to install.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            },
+            {
+              "url": "https://developers.notion.com/guides/authorization/overview",
+              "title": "Notion authorization overview",
+              "quote": "Before a connection can interact with your Notion workspace page(s), the page must be manually shared with the connection.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            }
+          ],
+          "details": {
+            "gate_class": "self_serve_free",
+            "requirements": [
+              "Notion lists a Free plan at $0 per seat/month.",
+              "Both Members and Workspace owners can add connections; creators depend on plan and workspace settings.",
+              "Enterprise owners can restrict which connections members may install.",
+              "Internal-connection page access must be granted manually."
+            ]
+          }
+        },
+        "api_surface": {
+          "api_types": [
+            "REST"
+          ],
+          "breadth": "broad",
+          "value": "REST; broad documented surface",
+          "status": "checked",
+          "reason": "The official reference establishes HTTPS REST. Opened documentation covers pages, databases, comments, users, capabilities, and webhooks, supporting broad documentation breadth rather than a narrow single-resource API. The reference is undated.",
+          "evidence": [
+            {
+              "url": "https://developers.notion.com/reference/intro",
+              "title": "Notion API introduction",
+              "quote": "Send requests over HTTPS to `https://api.notion.com`.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            },
+            {
+              "url": "https://developers.notion.com/guides/connections-and-tokens",
+              "title": "Notion connections and tokens",
+              "quote": "Capabilities determine which operations a connection or token can perform, such as reading pages, updating databases, or adding comments.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            }
+          ],
+          "details": {
+            "api_types": [
+              "REST"
+            ],
+            "breadth": "broad",
+            "base_url": "https://api.notion.com/v1",
+            "request_requirements": [
+              "Authorization: Bearer <token>",
+              "Notion-Version header"
+            ]
+          }
+        },
+        "official_mcp": {
+          "value": "vendor_server",
+          "mcp_mode": "remote",
+          "server_url": "https://mcp.notion.com/mcp",
+          "transport": "Streamable HTTP",
+          "authentication": [
+            "OAuth",
+            "MCP token on Business and Enterprise"
+          ],
+          "plan_access": "Every plan, with some features plan-limited",
+          "lifecycle": "Legacy SSE retires February 23, 2027; the local open-source server is no longer actively maintained.",
+          "status": "checked",
+          "reason": "Notion's own developer guide identifies its hosted, actively maintained server and remote URL, so this is not merely client-only guidance. The guide is undated, and its dated retirement statement is retained as a lifecycle constraint.",
+          "evidence": [
+            {
+              "url": "https://developers.notion.com/guides/mcp/get-started-with-mcp",
+              "title": "Connect to Notion MCP",
+              "quote": "Notion MCP (`https://mcp.notion.com/mcp`) is our hosted, actively maintained server. It supports OAuth authorization and MCP tokens, and requires no infrastructure setup.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            },
+            {
+              "url": "https://developers.notion.com/guides/mcp/get-started-with-mcp",
+              "title": "Connect to Notion MCP",
+              "quote": "Notion will retire the legacy HTTP with Server-Sent Events (SSE) endpoint, `https://mcp.notion.com/sse`, on **February 23, 2027**.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            }
+          ]
+        },
+        "composio_toolkit": {
+          "value": "listed_exact",
+          "slug": "NOTION",
+          "auth_display": [
+            "OAUTH2",
+            "API_KEY"
+          ],
+          "tools": 60,
+          "triggers": 8,
+          "version": "20261116_01",
+          "status": "checked",
+          "reason": "The official Composio toolkit page has the exact Notion heading and NOTION slug. Its API_KEY display is catalog terminology and does not replace Notion's more specific token distinctions. The page is undated; the toolkit version is not a publication date.",
+          "evidence": [
+            {
+              "url": "https://docs.composio.dev/toolkits/notion",
+              "title": "Composio Notion toolkit",
+              "quote": "# Notion\n\nNotion centralizes notes, docs, wikis, and tasks in a unified workspace, letting teams build custom workflows for collaboration and knowledge management",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated; toolkit version 20261116_01"
+            }
+          ]
+        },
+        "verdict": {
+          "value": "documented_build_candidate",
+          "status": "checked",
+          "reason": "Current REST authentication, Notion's $0 Free plan, and current connection management support a documented build candidate. The current Help Center allows both Members and Workspace owners to add connections rather than limiting creation to owners on Free/Plus; plan/settings and manual page-sharing constraints still apply. Access evidence is undated.",
+          "evidence": [
+            {
+              "url": "https://www.notion.com/pricing",
+              "title": "Notion pricing",
+              "quote": "Free $0 per seat/month",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            },
+            {
+              "url": "https://www.notion.com/help/add-and-manage-connections-with-the-api",
+              "title": "Add & manage connections in Notion",
+              "quote": "Both Members and Workspace owners can add connections to a workspace in Settings → Connections .",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            },
+            {
+              "url": "https://developers.notion.com/reference/intro",
+              "title": "Notion API introduction",
+              "quote": "For requests to pages, databases, and other workspace resources, send an Authorization: Bearer header with your token and a Notion-Version header .",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "number": 72,
+      "app": "Airtable",
+      "category": "Productivity and Project Management",
+      "summary": "Airtable offers a REST API and vendor-hosted remote MCP. Current API authentication is scoped personal access tokens or OAuth; legacy API keys no longer access the API. PAT creation is available on all plan types, subject to user permissions and enterprise controls.",
+      "blocker": "Legacy API keys are unusable. PAT scopes cannot exceed the creator's workspace/base permissions, and organizations may block API access or require an MCP integration allowlist.",
+      "next_action": "Create a least-privilege PAT in the Airtable developer hub for a prototype, or register OAuth for third-party integrations. Verify organization API restrictions and use the remote MCP endpoint with OAuth or a PAT where appropriate.",
+      "fields": {
+        "auth": {
+          "value": [
+            "personal_access_token: Individual user; selected OAuth-style scopes and selected bases/workspaces; cannot exceed the creator's permissions.",
+            "oauth2: Third-party integration; user-authorized access to permitted Airtable resources."
+          ],
+          "status": "checked",
+          "reason": "The current PAT guide explicitly directs individual use to PATs and third-party integrations to OAuth, and states that legacy API keys can no longer access the API. The guide shows only a relative update label.",
+          "evidence": [
+            {
+              "url": "https://support.airtable.com/docs/creating-personal-access-tokens",
+              "title": "Creating personal access tokens",
+              "quote": "API Keys can no longer access the Airtable API.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "Last updated 10 days ago"
+            },
+            {
+              "url": "https://support.airtable.com/docs/creating-personal-access-tokens",
+              "title": "Creating personal access tokens",
+              "quote": "All users should migrate to personal access tokens for individual use and OAuth for third-party integrations.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "Last updated 10 days ago"
+            }
+          ]
+        },
+        "credential_gate": {
+          "gate_class": "self_serve_free",
+          "value": "self_serve_free",
+          "status": "checked",
+          "reason": "The credential guide explicitly lists all plan types, including Free, for PAT creation. This supports self-service access while preserving organization-level restrictions. The source shows Last updated 10 days ago, not an absolute publication date.",
+          "evidence": [
+            {
+              "url": "https://support.airtable.com/docs/creating-personal-access-tokens",
+              "title": "Creating personal access tokens",
+              "quote": "All plan types. Certain features are only available to Enterprise Scale or Business plan customers.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "Last updated 10 days ago"
+            },
+            {
+              "url": "https://support.airtable.com/docs/creating-personal-access-tokens",
+              "title": "Creating personal access tokens",
+              "quote": "The scopes and access that you can set up with personal access tokens will reflect the permissions that you have in the various workspaces and bases connected to your Airtable account.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "Last updated 10 days ago"
+            }
+          ],
+          "details": {
+            "gate_class": "self_serve_free",
+            "requirements": [
+              "PAT creation is available on all plan types.",
+              "Token scopes/resources are bounded by the creator's permissions.",
+              "Enterprise administrators can restrict API access or impose token-lifetime controls."
+            ]
+          }
+        },
+        "api_surface": {
+          "api_types": [
+            "REST"
+          ],
+          "breadth": "broad",
+          "value": "REST; broad documented surface",
+          "status": "checked",
+          "reason": "Airtable's official reference explicitly says the API closely follows REST. The opened reference and linked scope/resource documentation cover multiple resource families, supporting broad rather than narrow breadth. The reference is undated.",
+          "evidence": [
+            {
+              "url": "https://airtable.com/developers/web/api/introduction",
+              "title": "Airtable API Reference",
+              "quote": "The Airtable API can be used to integrate your data in Airtable with any external system. The API closely follows REST semantics, uses JSON to encode objects, and relies on standard HTTP codes to signal operation outcomes.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            }
+          ],
+          "details": {
+            "api_types": [
+              "REST"
+            ],
+            "breadth": "broad",
+            "format": "JSON over HTTP with standard HTTP status codes",
+            "resource_model": "Bases, tables, records, views/interfaces, schemas, webhooks, and related workspace resources."
+          }
+        },
+        "official_mcp": {
+          "value": "vendor_server",
+          "mcp_mode": "remote",
+          "server_url": "https://mcp.airtable.com/mcp",
+          "transport": "Remote MCP over HTTP",
+          "authentication": [
+            "OAuth",
+            "personal access token"
+          ],
+          "plan_access": "All plans",
+          "permission_model": "Mirrors the user's Airtable permissions; restricted organizations may require allowlisting.",
+          "status": "checked",
+          "reason": "Airtable's own Help Center calls this Airtable's MCP server, lists all plans, and gives the remote server URL. It is vendor-operated, not a Composio inference. The page shows Last updated 14 days ago rather than an absolute date.",
+          "evidence": [
+            {
+              "url": "https://support.airtable.com/docs/using-the-airtable-mcp-server",
+              "title": "Using the Airtable MCP server",
+              "quote": "Airtable’s MCP server lets you connect AI tools directly to your Airtable bases.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "Last updated 14 days ago"
+            },
+            {
+              "url": "https://support.airtable.com/docs/using-the-airtable-mcp-server",
+              "title": "Using the Airtable MCP server",
+              "quote": "Point it at the server URL https://mcp.airtable.com/mcp and choose OAuth as the authentication method",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "Last updated 14 days ago"
+            }
+          ]
+        },
+        "composio_toolkit": {
+          "value": "listed_exact",
+          "slug": "AIRTABLE",
+          "auth_display": [
+            "OAUTH2",
+            "API_KEY"
+          ],
+          "tools": 28,
+          "triggers": 6,
+          "version": "20261116_00",
+          "status": "checked",
+          "reason": "The official Composio page has the exact Airtable heading and AIRTABLE slug. Composio's API_KEY label must not be read as evidence that Airtable's retired legacy keys work. The page is undated.",
+          "evidence": [
+            {
+              "url": "https://docs.composio.dev/toolkits/airtable",
+              "title": "Composio Airtable toolkit",
+              "quote": "# Airtable\n\nAirtable merges spreadsheet functionality with database power, enabling teams to organize projects, track tasks, and collaborate through customizable views, automation, and integrations for data management",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated; toolkit version 20261116_00"
+            }
+          ]
+        },
+        "verdict": {
+          "value": "documented_build_candidate",
+          "status": "checked",
+          "reason": "A current REST API, self-service PAT creation on all plans, and documented OAuth support make Airtable buildable without sales outreach. Use PAT/OAuth rather than the retired legacy key. Access evidence carries a relative update label.",
+          "evidence": [
+            {
+              "url": "https://support.airtable.com/docs/creating-personal-access-tokens",
+              "title": "Creating personal access tokens",
+              "quote": "All plan types. Certain features are only available to Enterprise Scale or Business plan customers.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "Last updated 10 days ago"
+            },
+            {
+              "url": "https://airtable.com/developers/web/api/introduction",
+              "title": "Airtable API Reference",
+              "quote": "The API closely follows REST semantics, uses JSON to encode objects, and relies on standard HTTP codes to signal operation outcomes.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "number": 73,
+      "app": "Linear",
+      "category": "Productivity and Project Management",
+      "summary": "Linear provides an introspectable GraphQL API, personal API keys, OAuth 2.0, and a centrally hosted remote MCP server. API/webhook and MCP access are included on Free, Basic, Business, and Enterprise plans.",
+      "blocker": "Personal API keys and OAuth tokens use different Authorization header forms. OAuth refresh/access-token lifetimes require correct rotation, and Basic authentication in the OAuth documentation is for token-endpoint client authentication, not ordinary GraphQL resource calls.",
+      "next_action": "Use a scoped personal API key for personal scripts and OAuth 2.0 for a multi-user application. Implement refresh-token rotation and least-privilege scopes; use https://mcp.linear.app/mcp for remote MCP or its /readonly endpoint for read-only access.",
+      "fields": {
+        "auth": {
+          "value": [
+            "personal_api_key: Individual account with specific permissions and optional team scoping; Authorization header contains the key directly.",
+            "oauth2_authorization_code: User or app actor with requested read/write/admin or narrower scopes; Bearer access token with refresh-token rotation.",
+            "oauth2_client_credentials: App actor for CI or scheduled automation; access token lasts 30 days and no refresh token is issued."
+          ],
+          "status": "checked",
+          "reason": "Linear's getting-started and OAuth guides distinguish personal keys from OAuth, including actor and grant-type scope. Basic auth is documented only as an option when authorizing token refresh, so it is not promoted to a general GraphQL method. The OAuth page is undated.",
+          "evidence": [
+            {
+              "url": "https://linear.app/developers/graphql",
+              "title": "Linear GraphQL API",
+              "quote": "The Linear API supports personal API keys and OAuth2 authentication.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated",
+              "original_url": "https://linear.app/docs/graphql/get-started",
+              "source_review": "The former getting-started URL returns 404. The current official GraphQL page reproduces the authentication sentence."
+            },
+            {
+              "url": "https://linear.app/developers/oauth-2-0-authentication",
+              "title": "Linear OAuth 2.0 authentication",
+              "quote": "Authorization code | `user` or `app` | 24 hours by default | Exchange the refresh token for a new token pair.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            }
+          ]
+        },
+        "credential_gate": {
+          "gate_class": "self_serve_free",
+          "value": "self_serve_free",
+          "status": "checked",
+          "reason": "The pricing feature table marks API and webhook access Included on all four plans, including Free. The Security & Access guide documents self-service scoped key creation. Both pages are undated.",
+          "evidence": [
+            {
+              "url": "https://linear.app/pricing",
+              "title": "Linear pricing",
+              "quote": "| API and webhook access | Included | Included | Included | Included |",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            },
+            {
+              "url": "https://linear.app/docs/security-and-access",
+              "title": "Linear Security & Access",
+              "quote": "Create API keys for your account with specific permissions, optionally scoped to particular teams.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            }
+          ],
+          "details": {
+            "gate_class": "self_serve_free",
+            "requirements": [
+              "Personal API keys can be created in account Security & Access settings.",
+              "API/webhook access is included on Free, Basic, Business, and Enterprise.",
+              "OAuth app creation is self-service, but requested scopes and actor permissions still constrain access."
+            ]
+          }
+        },
+        "api_surface": {
+          "api_types": [
+            "GraphQL"
+          ],
+          "breadth": "broad",
+          "value": "GraphQL; broad documented surface",
+          "status": "checked",
+          "reason": "The official getting-started page explicitly identifies the public API as GraphQL and says the whole schema is introspectable. Documented queries/mutations span core work objects, supporting broad documentation breadth. The page is undated.",
+          "evidence": [
+            {
+              "url": "https://linear.app/developers/graphql",
+              "title": "Linear GraphQL API",
+              "quote": "Linear's public API is built using GraphQL. It's the same API we use internally for developing our applications.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated",
+              "original_url": "https://linear.app/docs/graphql/get-started",
+              "source_review": "The current official GraphQL page reproduces the API-type and internal-use statement."
+            },
+            {
+              "url": "https://linear.app/developers/graphql",
+              "title": "Linear GraphQL API",
+              "quote": "It supports introspection so you can query the whole schema.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated",
+              "original_url": "https://linear.app/docs/graphql/get-started",
+              "source_review": "The current official GraphQL page reproduces the introspection statement."
+            }
+          ],
+          "details": {
+            "api_types": [
+              "GraphQL"
+            ],
+            "breadth": "broad",
+            "endpoint": "https://api.linear.app/graphql",
+            "capabilities": "Introspection, queries, and mutations across issues, teams, projects, comments, users, and other schema resources."
+          }
+        },
+        "official_mcp": {
+          "value": "vendor_server",
+          "mcp_mode": "remote",
+          "server_url": "https://mcp.linear.app/mcp",
+          "read_only_url": "https://mcp.linear.app/mcp/readonly",
+          "transport": "Streamable HTTP",
+          "authentication": [
+            "OAuth 2.1 with dynamic client registration",
+            "bearer token",
+            "Linear API key"
+          ],
+          "lifecycle": "SSE is a deprecated fallback; use Streamable HTTP.",
+          "status": "checked",
+          "reason": "Linear's official MCP page says the server is centrally hosted and managed and supplies the remote URL and transport. That directly establishes vendor operation. The page is undated, so transport and lifecycle details should be rechecked before deployment.",
+          "evidence": [
+            {
+              "url": "https://linear.app/docs/mcp",
+              "title": "Linear MCP server",
+              "quote": "Linear's MCP server follows the authenticated remote MCP spec, so the server is centrally hosted and managed.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            },
+            {
+              "url": "https://linear.app/docs/mcp",
+              "title": "Linear MCP server",
+              "quote": "Our MCP server uses Streamable HTTP as the primary transport, accessible at the following address. The interactive setup flow uses OAuth 2.1 with dynamic client registration.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            }
+          ]
+        },
+        "composio_toolkit": {
+          "value": "listed_exact",
+          "slug": "LINEAR",
+          "auth_display": [
+            "OAUTH2",
+            "API_KEY"
+          ],
+          "tools": 48,
+          "triggers": 12,
+          "version": "20261116_00",
+          "status": "checked",
+          "reason": "The official Composio page has the exact Linear heading and LINEAR slug. Catalog presence is independent of Linear's own MCP and authentication rules. The page is undated.",
+          "evidence": [
+            {
+              "url": "https://docs.composio.dev/toolkits/linear",
+              "title": "Composio Linear toolkit",
+              "quote": "# Linear\n\nLinear is a streamlined issue tracking and project planning tool for modern teams, featuring fast workflows, keyboard shortcuts, and GitHub integrations",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated; toolkit version 20261116_00"
+            }
+          ]
+        },
+        "verdict": {
+          "value": "documented_build_candidate",
+          "status": "checked",
+          "reason": "A broad GraphQL API and Free-plan API access are explicitly documented, with self-service key and OAuth paths. Token lifecycle and scope handling are implementation work, not a partner/sales gate. Access evidence is undated.",
+          "evidence": [
+            {
+              "url": "https://linear.app/pricing",
+              "title": "Linear pricing",
+              "quote": "| API and webhook access | Included | Included | Included | Included |",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            },
+            {
+              "url": "https://linear.app/developers/graphql",
+              "title": "Linear GraphQL API",
+              "quote": "Linear's public API is built using GraphQL.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated",
+              "original_url": "https://linear.app/docs/graphql/get-started",
+              "source_review": "The current official GraphQL page reproduces the API-type statement used by the verdict."
+            }
+          ]
+        }
+      }
+    },
+    {
+      "number": 74,
+      "app": "Jira",
+      "category": "Productivity and Project Management",
+      "summary": "This record is scoped to Jira Cloud. Jira Cloud documents broad REST v2/v3 APIs, OAuth 2.0 (3LO) for integrations, and email-plus-API-token Basic auth for simple scripts/manual calls. Atlassian also operates a remote MCP server that supports Jira.",
+      "blocker": "For a distributable cloud integration, Atlassian requires a single distributable 3LO app; collecting customer API tokens or instructing customers to create individual 3LO apps does not comply with its cloud-app security requirements. Data Center guidance is out of scope.",
+      "next_action": "Build one distributable OAuth 2.0 (3LO) app with least-privilege Jira scopes, rotating refresh tokens, and accessible-resource/cloudId handling. Reserve API-token Basic auth for scripts/manual calls, and use Atlassian MCP v2 over HTTP with organization-approved authentication.",
+      "fields": {
+        "auth": {
+          "value": [
+            "oauth2_3lo: Jira Cloud external integration acting for an authorizing user; developer-console app, requested API scopes, user permissions, callback URL, and rotating refresh tokens.",
+            "api_token_basic: Individual Atlassian account for simple scripts/manual REST calls; email plus API token using HTTP Basic; scoped tokens are recommended and expire in 1-365 days."
+          ],
+          "status": "checked",
+          "reason": "Atlassian's current Jira Cloud guides distinguish 3LO integration auth from API-token Basic auth and explicitly limit the latter's recommended use. Password auth is deprecated. These pages were last updated November 23, 2026.",
+          "evidence": [
+            {
+              "url": "https://developer.atlassian.com/cloud/jira/platform/oauth-2-3lo-apps/",
+              "title": "Jira Cloud OAuth 2.0 (3LO)",
+              "quote": "OAuth 2.0 (3LO) allows external applications and services to access Atlassian product APIs on a user's behalf. OAuth 2.0 (3LO) apps are created and managed in the developer console.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "Last updated Nov 23, 2026"
+            },
+            {
+              "url": "https://developer.atlassian.com/cloud/jira/platform/basic-auth-for-rest-apis/",
+              "title": "Basic auth for REST APIs",
+              "quote": "Basic authentication is not as secure as other methods. We recommend using it for simple scripts and manual calls to the REST APIs.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "Last updated Nov 23, 2026"
+            },
+            {
+              "url": "https://support.atlassian.com/atlassian-account/docs/manage-api-tokens-for-your-atlassian-account/",
+              "title": "Manage API tokens for your Atlassian account",
+              "quote": "You can use an API token to authenticate a script with an Atlassian cloud app. You generate the token from your Atlassian account, then copy and paste it into a script.",
+              "retrieved_at": "2026-11-24",
+              "published_at": "2020-12-16",
+              "published_label": "Published 2020-12-16; last published 2026-08-14"
+            }
+          ]
+        },
+        "credential_gate": {
+          "gate_class": "self_serve_free",
+          "value": "self_serve_free",
+          "status": "checked",
+          "reason": "Atlassian's official plan comparison documents a Free plan with up to 10 users, and its developer console enables OAuth 2.0 (3LO) for integrations. This is self-service rather than sales-gated, but distributable cloud apps must follow Atlassian's separate security requirements. The support page is undated; OAuth guidance was updated November 23, 2026.",
+          "evidence": [
+            {
+              "url": "https://support.atlassian.com/jira-cloud-administration/docs/explore-jira-cloud-plans/",
+              "title": "Explore Jira Cloud plans",
+              "quote": "On the Free plan you get: Up to 10 users (or 3 agents for Jira Service Management)",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            },
+            {
+              "url": "https://developer.atlassian.com/cloud/jira/platform/oauth-2-3lo-apps/",
+              "title": "Jira Cloud OAuth 2.0 (3LO)",
+              "quote": "Before you can implement OAuth 2.0 (3LO) for your app, you need to enable it for your app using the developer console .",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "Last updated Nov 23, 2026"
+            }
+          ],
+          "details": {
+            "gate_class": "self_serve_free",
+            "requirements": [
+              "Jira Cloud Free supports up to 10 users.",
+              "Developers can enable OAuth 2.0 (3LO) for an app in the Atlassian developer console.",
+              "Users can create account API tokens for script/manual use; production cloud-app distribution must follow Atlassian security requirements."
+            ]
+          }
+        },
+        "api_surface": {
+          "api_types": [
+            "REST"
+          ],
+          "breadth": "broad",
+          "value": "REST; broad documented surface",
+          "status": "checked",
+          "reason": "The official Jira Cloud REST v3 reference and v2 navigation expose many independent API groups, supporting broad documentation breadth. This finding is explicitly Jira Cloud only and does not generalize to Data Center. The reference is undated.",
+          "evidence": [
+            {
+              "url": "https://developer.atlassian.com/cloud/jira/platform/rest/v3/intro/",
+              "title": "Jira Cloud REST API v3",
+              "quote": "*   [Issues](/cloud/jira/platform/rest/v3/api-group-issues/#api-group-issues)",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated",
+              "verification_method": "browser_and_raw_official_source_review",
+              "verification_note": "The official Atlassian page contains these raw Markdown headings and renders the same resource labels; link destinations caused the direct-fetch mismatch.",
+              "verified_at": "2026-11-24",
+              "source_review": "The official Atlassian page contains these raw Markdown headings and renders the same resource labels; link destinations caused the direct-fetch mismatch."
+            },
+            {
+              "url": "https://developer.atlassian.com/cloud/jira/platform/rest/v3/intro/",
+              "title": "Jira Cloud REST API v3",
+              "quote": "*   [JQL](/cloud/jira/platform/rest/v3/api-group-jql/#api-group-jql)",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated",
+              "verification_method": "browser_and_raw_official_source_review",
+              "verification_note": "The official Atlassian page contains these raw Markdown headings and renders the same resource labels; link destinations caused the direct-fetch mismatch.",
+              "verified_at": "2026-11-24",
+              "source_review": "The official Atlassian page contains these raw Markdown headings and renders the same resource labels; link destinations caused the direct-fetch mismatch."
+            }
+          ],
+          "details": {
+            "api_types": [
+              "REST"
+            ],
+            "breadth": "broad",
+            "versions": [
+              "Jira Cloud REST v2",
+              "Jira Cloud REST v3"
+            ],
+            "resource_coverage": "Apps, issues, JQL, permissions, projects, users, webhooks, workflows, filters, and other Jira Cloud resources."
+          }
+        },
+        "official_mcp": {
+          "value": "vendor_server",
+          "mcp_mode": "remote",
+          "server_url": "https://mcp.atlassian.com/v2/mcp",
+          "transport": "HTTP",
+          "authentication": [
+            "OAuth 2.1",
+            "API token where organization policy permits"
+          ],
+          "product_scope": "Jira and other Atlassian products",
+          "permission_model": "Respects users' existing access controls; admins can govern domains, token access, and IP allowlists.",
+          "status": "checked",
+          "reason": "Atlassian's official setup page supplies the vendor server URL and documents OAuth 2.1 and user permissions. This is a vendor-operated remote server, not a Composio-derived claim. The page was published July 4, 2025 and last published November 6, 2026.",
+          "evidence": [
+            {
+              "url": "https://support.atlassian.com/atlassian-ai-gateway/docs/get-started-with-the-atlassian-remote-mcp-server/",
+              "title": "Get started with the Atlassian MCP server",
+              "quote": "Set up Atlassian MCP for this agent using the official setup guide at https://support.atlassian.com/atlassian-ai-gateway/docs/get-started-with-the-atlassian-remote-mcp-server/ and the MCP server URL https://mcp.atlassian.com/v2/mcp.",
+              "retrieved_at": "2026-11-24",
+              "published_at": "2025-07-04",
+              "published_label": "Published 2025-07-04; last published 2026-11-06"
+            },
+            {
+              "url": "https://support.atlassian.com/atlassian-ai-gateway/docs/get-started-with-the-atlassian-remote-mcp-server/",
+              "title": "Get started with the Atlassian MCP server",
+              "quote": "Atlassian MCP is powered by secure OAuth 2.1 authorization, which ensures all actions respect users' existing access controls and permissions.",
+              "retrieved_at": "2026-11-24",
+              "published_at": "2025-07-04",
+              "published_label": "Published 2025-07-04; last published 2026-11-06"
+            }
+          ]
+        },
+        "composio_toolkit": {
+          "value": "listed_exact",
+          "slug": "JIRA",
+          "auth_display": [
+            "OAUTH2",
+            "S2S_OAUTH2",
+            "API_KEY"
+          ],
+          "tools": 171,
+          "triggers": 17,
+          "version": "20261120_00",
+          "status": "checked",
+          "reason": "The official Composio page has the exact Jira heading and JIRA slug. Catalog auth labels and toolkit breadth do not establish Atlassian cloud-app compliance or vendor MCP ownership. The page is undated.",
+          "evidence": [
+            {
+              "url": "https://docs.composio.dev/toolkits/jira",
+              "title": "Composio Jira toolkit",
+              "quote": "# Jira\n\nA tool for bug tracking, issue tracking, and agile project management.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated; toolkit version 20261120_00"
+            }
+          ]
+        },
+        "verdict": {
+          "value": "documented_build_candidate",
+          "status": "checked",
+          "reason": "Jira Cloud has a broad REST API and a Free self-service tier, so it is not a no-API or partner-only candidate. A distributable build must use a single compliant 3LO app rather than customer-by-customer token collection. Pricing is undated; cloud-app guidance was updated November 23, 2026.",
+          "evidence": [
+            {
+              "url": "https://developer.atlassian.com/cloud/jira/platform/basic-auth-for-rest-apis/",
+              "title": "Basic auth for REST APIs",
+              "quote": "Build a single, distributable 3LO app for your integration.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "Last updated Nov 23, 2026"
+            },
+            {
+              "url": "https://support.atlassian.com/jira-cloud-administration/docs/explore-jira-cloud-plans/",
+              "title": "Explore Jira Cloud plans",
+              "quote": "On the Free plan you get: Up to 10 users (or 3 agents for Jira Service Management)",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated",
+              "original_url": "https://www.atlassian.com/software/jira/pricing",
+              "source_review": "The official support page directly displays the Free plan and its 10-user allowance. It replaces the hidden JSON-LD pricing quotation without relying on a browser or structured data."
+            }
+          ]
+        }
+      }
+    },
+    {
+      "number": 75,
+      "app": "Asana",
+      "category": "Productivity and Project Management",
+      "summary": "Asana documents a REST platform, personal access tokens, OAuth 2.0, Enterprise-only service accounts, and a remote V2 MCP server. Developers can test against an existing workspace or a free account.",
+      "blocker": "PATs inherit the generating user's permissions. Service accounts require Enterprise and super-admin creation. MCP app tokens are MCP-specific, and V2 clients must support OAuth and Streamable HTTP; some clients require pre-registration.",
+      "next_action": "Prototype with a PAT in the developer console, then use OAuth 2.0 for multi-user sign-in and registered least-privilege scopes. For MCP, use https://mcp.asana.com/v2/mcp with an OAuth-capable Streamable HTTP client and do not substitute a standard API token.",
+      "fields": {
+        "auth": {
+          "value": [
+            "personal_access_token: Individual user; same API permissions as that user in Asana; long-lived Bearer token generated in the developer console.",
+            "oauth2_authorization_code: Multi-user application; registered redirect URL and approved scopes; one-hour access token plus refresh token.",
+            "service_account_token: Enterprise-only non-user account created by an Asana super admin; organization-wide access subject to service-account scopes."
+          ],
+          "status": "checked",
+          "reason": "Asana's official authentication, PAT, and OAuth guides distinguish user-scoped PATs, OAuth applications, and the Enterprise-only service-account path. OIDC is documented for login, not promoted here as a general API resource-auth method.",
+          "evidence": [
+            {
+              "url": "https://developers.asana.com/docs/authentication",
+              "title": "Asana authentication",
+              "quote": "A personal access token (PAT) is the quickest and simplest way to authenticate in the API.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "Metadata updatedAt 2025-10-13"
+            },
+            {
+              "url": "https://developers.asana.com/docs/oauth",
+              "title": "Asana OAuth",
+              "quote": "Asana supports the authorization code grant flow",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "Metadata updatedAt 2026-10-22"
+            }
+          ]
+        },
+        "credential_gate": {
+          "gate_class": "self_serve_free",
+          "value": "self_serve_free",
+          "status": "checked",
+          "reason": "Asana's developer overview explicitly permits API testing with a free account and PAT. The ordinary user path is self-service; only the optional service-account path has an Enterprise/admin gate. Overview metadata was modified September 11, 2025.",
+          "evidence": [
+            {
+              "url": "https://developers.asana.com/reference/overview",
+              "title": "Build an app with Asana",
+              "quote": "You can test in any of your existing workspaces, create a free account, or request a developer sandbox.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "Metadata dateModified 2025-09-11"
+            },
+            {
+              "url": "https://developers.asana.com/docs/personal-access-token",
+              "title": "Asana personal access token",
+              "quote": "You can generate a personal access token from the Asana developer console.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "Metadata updatedAt 2026-01-22"
+            }
+          ],
+          "details": {
+            "gate_class": "self_serve_free",
+            "requirements": [
+              "A free account or existing workspace can be used to test the API.",
+              "PATs and OAuth apps are created through the developer console.",
+              "Service accounts are Enterprise-only and require an Asana super admin."
+            ]
+          }
+        },
+        "api_surface": {
+          "api_types": [
+            "REST"
+          ],
+          "breadth": "broad",
+          "value": "REST; broad documented surface",
+          "status": "checked",
+          "reason": "The official overview calls REST Asana's primary platform feature, and the reference/guides cover many object and platform API families. That supports broad documentation breadth. Overview metadata was modified September 11, 2025.",
+          "evidence": [
+            {
+              "url": "https://developers.asana.com/reference/overview",
+              "title": "Build an app with Asana",
+              "quote": "The primary feature of Asana’s platform is our rest API, so we recommend getting familiar with how our API works.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "Metadata dateModified 2025-09-11"
+            },
+            {
+              "url": "https://developers.asana.com/docs/personal-access-token",
+              "title": "Asana personal access token",
+              "quote": "Much like an API key, generating a PAT allows you to access (i.e., make requests to) the Asana REST API upon successful authentication.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "Metadata updatedAt 2026-01-22"
+            }
+          ],
+          "details": {
+            "api_types": [
+              "REST"
+            ],
+            "breadth": "broad",
+            "platform_features": [
+              "REST API",
+              "webhooks",
+              "app components",
+              "graph exports",
+              "SCIM and audit-log APIs"
+            ],
+            "resource_model": "Work Graph objects including tasks, projects, portfolios, users, custom fields, and related resources."
+          }
+        },
+        "official_mcp": {
+          "value": "vendor_server",
+          "mcp_mode": "remote",
+          "server_url": "https://mcp.asana.com/v2/mcp",
+          "transport": "Streamable HTTP",
+          "authentication": [
+            "Asana account OAuth",
+            "MCP app token for approved MCP integrations"
+          ],
+          "client_requirements": "OAuth-capable MCP client; V2 does not support dynamic client registration, so pre-registration may be required.",
+          "lifecycle": "Use V2; the older SSE V1 endpoint is deprecated.",
+          "status": "checked",
+          "reason": "Asana's developer guide explicitly offers Asana's MCP server and identifies the V2 remote URL and transport. MCP app tokens are scoped to MCP rather than interchangeable with standard API credentials. Metadata updatedAt is February 20, 2026.",
+          "evidence": [
+            {
+              "url": "https://developers.asana.com/docs/using-asanas-mcp-server",
+              "title": "Using Asana's MCP Server",
+              "quote": "Asana offers a Model Context Protocol (MCP) server that allows AI assistants and other applications to access the Asana Work Graph.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "Metadata updatedAt 2026-02-20"
+            },
+            {
+              "url": "https://developers.asana.com/docs/using-asanas-mcp-server",
+              "title": "Using Asana's MCP Server",
+              "quote": "The Asana MCP V2 server is available at: `https://mcp.asana.com/v2/mcp`.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "Metadata updatedAt 2026-02-20"
+            }
+          ]
+        },
+        "composio_toolkit": {
+          "value": "listed_exact",
+          "slug": "ASANA",
+          "auth_display": [
+            "OAUTH2"
+          ],
+          "tools": 247,
+          "triggers": 6,
+          "version": "20261116_01",
+          "status": "checked",
+          "reason": "The official Composio page has the exact Asana heading and ASANA slug. Its OAuth-only display does not erase Asana's vendor-documented PAT option. The page is undated.",
+          "evidence": [
+            {
+              "url": "https://docs.composio.dev/toolkits/asana",
+              "title": "Composio Asana toolkit",
+              "quote": "# Asana\n\nTool to help teams organize, track, and manage their work.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated; toolkit version 20261116_01"
+            }
+          ]
+        },
+        "verdict": {
+          "value": "documented_build_candidate",
+          "status": "checked",
+          "reason": "Asana's REST API and free-account testing path are official and self-service, and OAuth supports multi-user applications. Enterprise service accounts are optional rather than a universal API gate. Evidence dates are recorded per source.",
+          "evidence": [
+            {
+              "url": "https://developers.asana.com/reference/overview",
+              "title": "Build an app with Asana",
+              "quote": "You can test in any of your existing workspaces, create a free account, or request a developer sandbox.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "Metadata dateModified 2025-09-11"
+            },
+            {
+              "url": "https://developers.asana.com/reference/overview",
+              "title": "Build an app with Asana",
+              "quote": "The primary feature of Asana’s platform is our rest API",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "Metadata dateModified 2025-09-11"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "number": 76,
+      "app": "Monday.com",
+      "category": "Productivity and Project Management",
+      "summary": "monday.com exposes a GraphQL API and a vendor-hosted remote MCP server. Personal V2 API tokens mirror UI permissions, and the API service is free across all plans, including a 200-call daily Free quota.",
+      "blocker": "The platform API is GraphQL, not REST. Global API tokens are unscoped and apps using them will not be approved for the Marketplace; this is a Marketplace restriction, not proof that ordinary API access requires partner approval. MCP dynamic client registration can require customer-admin approval.",
+      "next_action": "Use a personal V2 API token for personal testing or OAuth for a server-side/multi-user integration. Respect GraphQL complexity and daily limits, and connect to https://mcp.monday.com/mcp using Streamable HTTP with OAuth or a Bearer personal API token.",
+      "fields": {
+        "auth": {
+          "value": [
+            "personal_v2_api_token: Individual user; permissions mirror the monday.com UI across boards, columns, items, workspaces, and account resources; Authorization header.",
+            "oauth2: Application integration with user authorization and scoped permissions; recommended for server-side or background API calls.",
+            "global_api_token: Unscoped single user token suitable for quick private apps; not eligible for Marketplace approval."
+          ],
+          "status": "checked",
+          "reason": "The official authentication and auth-choice guides distinguish personal tokens, OAuth, SDK short-lived tokens, and global tokens. Global-token Marketplace ineligibility is kept separate from basic API availability. Pages carry updatedAt metadata, not visible publication dates.",
+          "evidence": [
+            {
+              "url": "https://developer.monday.com/api-reference/docs/authentication",
+              "title": "monday.com authentication",
+              "quote": "The monday.com platform API utilizes personal V2 API tokens to authenticate requests and identify the user making the call.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "Metadata updatedAt 2026-10-06"
+            },
+            {
+              "url": "https://developer.monday.com/apps/docs/choosing-auth",
+              "title": "Choosing an authentication method",
+              "quote": "If you need to make API calls from the server-side, use an OAuth token.",
+              "retrieved_at": "2026-11-24",
+              "published_at": "2025-10-23",
+              "published_label": "Updated 2025-10-23",
+              "original_url": "https://developer.monday.com/api-reference/apps/docs/choosing-auth",
+              "source_review": "The old API-reference path returns 404. The current official apps documentation preserves the wording and displays this update date."
+            }
+          ]
+        },
+        "credential_gate": {
+          "gate_class": "self_serve_free",
+          "value": "self_serve_free",
+          "status": "checked",
+          "reason": "The official rate-limit page resolves the pricing ambiguity by explicitly stating that API service is free across all plans and giving the Free quota. Personal-token creation is self-service. Metadata updatedAt is November 5, 2026, not a publication date.",
+          "evidence": [
+            {
+              "url": "https://developer.monday.com/api-reference/docs/rate-limits",
+              "title": "monday.com rate limits",
+              "quote": "The daily call limit helps prevent disruptions caused by excessive load from individual accounts, maintains the API service as a free feature across all plans, and controls operational costs to continue delivering value to all our users.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "Metadata updatedAt 2026-11-05"
+            },
+            {
+              "url": "https://developer.monday.com/api-reference/docs/rate-limits",
+              "title": "monday.com rate limits",
+              "quote": "| Free           | 200                                       |",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "Metadata updatedAt 2026-11-05"
+            }
+          ],
+          "details": {
+            "gate_class": "self_serve_free",
+            "requirements": [
+              "The API service is a free feature across all plans.",
+              "Free accounts have a 200-call daily limit; higher plans have larger quotas.",
+              "Users with API access can reveal a personal token in Developer Center > API token > Show."
+            ]
+          }
+        },
+        "api_surface": {
+          "api_types": [
+            "GraphQL"
+          ],
+          "breadth": "broad",
+          "value": "GraphQL; broad documented surface",
+          "status": "checked",
+          "reason": "The official API basics explicitly identify GraphQL and enumerate several product/resource families, supporting broad breadth within the stated product scope. A comparative REST mention in secondary leads was not used. Metadata updatedAt is October 6, 2026.",
+          "evidence": [
+            {
+              "url": "https://developer.monday.com/api-reference/docs/basics",
+              "title": "monday.com API basics",
+              "quote": "The monday.com API is built with GraphQL, a flexible query language that allows you to return as much or as little data as you need.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "Metadata updatedAt 2026-10-06"
+            },
+            {
+              "url": "https://developer.monday.com/api-reference/docs/basics",
+              "title": "monday.com API basics",
+              "quote": "It supports operations boards, items, column values, users, workspaces, and more.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "Metadata updatedAt 2026-10-06"
+            }
+          ],
+          "details": {
+            "api_types": [
+              "GraphQL"
+            ],
+            "breadth": "broad",
+            "endpoint": "https://api.monday.com/v2",
+            "product_scope": "Work management, dev, sales CRM, and service; Workforms is explicitly unsupported.",
+            "resource_coverage": "Boards, items, column values, users, workspaces, and more."
+          }
+        },
+        "official_mcp": {
+          "value": "vendor_server",
+          "mcp_mode": "remote",
+          "server_url": "https://mcp.monday.com/mcp",
+          "transport": "Streamable HTTP",
+          "authentication": [
+            "OAuth 2.0",
+            "Bearer personal API token"
+          ],
+          "admin_controls": "Personal-token testing requires no admin approval; dynamic client registration requires customer-admin approval.",
+          "lifecycle": "SSE is deprecated and unsupported.",
+          "status": "checked",
+          "reason": "monday.com's developer guide explicitly calls it the hosted MCP server, supplies its URL/transport, and explains auth-specific admin controls. This establishes vendor operation. Metadata updatedAt is October 19, 2026, not a publication date.",
+          "evidence": [
+            {
+              "url": "https://developer.monday.com/api-reference/docs/integrate-with-monday-mcp",
+              "title": "Integrate with the monday MCP server",
+              "quote": "Connect your MCP client to the monday.com hosted MCP server — choose API token, OAuth, or dynamic client registration",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "Metadata updatedAt 2026-10-19"
+            },
+            {
+              "url": "https://developer.monday.com/api-reference/docs/integrate-with-monday-mcp",
+              "title": "Integrate with the monday MCP server",
+              "quote": "**Server URL:** `https://mcp.monday.com/mcp`\n*   **Transport:** Streamable HTTP\n*   **Auth:** OAuth 2.0 or Bearer token with a personal API token",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "Metadata updatedAt 2026-10-19"
+            }
+          ]
+        },
+        "composio_toolkit": {
+          "value": "listed_alias",
+          "catalog_heading": "Monday",
+          "catalog_description": "monday.com is a customizable work management platform for project planning, collaboration, and automation, supporting agile, sales, marketing, and more",
+          "slug": "MONDAY",
+          "auth_display": [
+            "OAUTH2"
+          ],
+          "tools": 126,
+          "triggers": 17,
+          "version": "20261101_00",
+          "status": "checked",
+          "reason": "The Composio heading is Monday rather than the requested exact name Monday.com, but its description explicitly identifies monday.com and its slug is MONDAY. This is therefore listed_alias, not an unrelated product. The page is undated.",
+          "evidence": [
+            {
+              "url": "https://docs.composio.dev/toolkits/monday",
+              "title": "Composio Monday toolkit",
+              "quote": "# Monday\n\nmonday.com is a customizable work management platform for project planning, collaboration, and automation, supporting agile, sales, marketing, and more",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated; toolkit version 20261101_00"
+            }
+          ]
+        },
+        "verdict": {
+          "value": "documented_build_candidate",
+          "status": "checked",
+          "reason": "The GraphQL API has a documented Free self-service route and personal-token creation. Marketplace restrictions on global tokens do not convert the API into a partner-only product. Access evidence carries November 5, 2026 updatedAt metadata.",
+          "evidence": [
+            {
+              "url": "https://developer.monday.com/api-reference/docs/rate-limits",
+              "title": "monday.com rate limits",
+              "quote": "maintains the API service as a free feature across all plans",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "Metadata updatedAt 2026-11-05"
+            },
+            {
+              "url": "https://developer.monday.com/api-reference/docs/authentication",
+              "title": "monday.com authentication",
+              "quote": "In your monday.com account, click on your profile picture in the top right corner.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "Metadata updatedAt 2026-10-06"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "number": 77,
+      "app": "ClickUp",
+      "category": "Productivity and Project Management",
+      "summary": "ClickUp's public API is available on all plans, with API v2 and some v3 endpoints. Personal tokens and OAuth are supported for the API, while the vendor remote MCP server is OAuth-only and available on all plans.",
+      "blocker": "Some endpoints/parameters are plan-limited, including Enterprise user/guest management. OAuth app creation requires a workspace owner or admin. MCP does not accept personal API keys or API access tokens, and currently has no deletion tools.",
+      "next_action": "Use a personal token for individual API testing or OAuth for an app used by others. Scope the prototype to endpoints available on the target plan. For MCP, use OAuth at https://mcp.clickup.com/mcp and account for its separate rate limits and lack of deletion tools.",
+      "fields": {
+        "auth": {
+          "value": [
+            "personal_api_token: Individual user token created in Settings > Apps > API Token; never expires; used in the Authorization header.",
+            "oauth2_authorization_code: Application used by others; each user authorizes Workspace access; only workspace owners/admins can create OAuth apps; Bearer access token."
+          ],
+          "status": "checked",
+          "reason": "ClickUp's authentication guide explicitly separates personal tokens from OAuth and states token creation location, expiration, and OAuth app role requirements. Its visible Updated 9 months ago label is preserved rather than converted into an invented date.",
+          "evidence": [
+            {
+              "url": "https://developer.clickup.com/docs/authentication",
+              "title": "ClickUp authentication",
+              "quote": "Authenticate to the ClickUp API using a personal token or OAuth.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "Updated 9 months ago"
+            },
+            {
+              "url": "https://developer.clickup.com/docs/authentication",
+              "title": "ClickUp authentication",
+              "quote": "Only Workspace owners or admins can create OAuth apps.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "Updated 9 months ago"
+            }
+          ]
+        },
+        "credential_gate": {
+          "gate_class": "self_serve_free",
+          "value": "self_serve_free",
+          "status": "checked",
+          "reason": "ClickUp's official plan-availability page explicitly says the public API is available on all plans and identifies exceptions. This supports self_serve_free rather than paid_plan for the API overall. Metadata updatedAt is April 13, 2026.",
+          "evidence": [
+            {
+              "url": "https://developer.clickup.com/docs/apis-available-by-plan",
+              "title": "ClickUp API availability by plan",
+              "quote": "Our Public API is available on all [ClickUp Plans](https://clickup.com/pricing) . Some endpoints and parameters are limited by plan.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "Metadata updatedAt 2026-04-13"
+            },
+            {
+              "url": "https://developer.clickup.com/docs/apis-available-by-plan",
+              "title": "ClickUp API availability by plan",
+              "quote": "The following endpoints are only available on the Enterprise Plan:",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "Metadata updatedAt 2026-04-13"
+            }
+          ],
+          "details": {
+            "gate_class": "self_serve_free",
+            "requirements": [
+              "The public API is available on all ClickUp plans.",
+              "Some endpoints and parameters require higher plans.",
+              "Personal tokens are self-service; creating OAuth apps requires a workspace owner or admin."
+            ]
+          }
+        },
+        "api_surface": {
+          "api_types": [
+            "HTTP API"
+          ],
+          "breadth": "broad",
+          "value": "HTTP API; broad documented surface",
+          "status": "checked",
+          "reason": "The current Get Tasks v2 reference describes programmatic resource management and its OpenAPI paths cover tasks and related ClickUp resources. The replacement reference page was updated 2026-07-01; other supporting pages are undated.",
+          "evidence": [
+            {
+              "url": "https://developer.clickup.com/docs/Getting%20Started",
+              "title": "ClickUp API getting started",
+              "quote": "In the API reference section you will find a few individual endpoints that are defined as API v3.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "Metadata updatedAt 2025-09-04"
+            },
+            {
+              "url": "https://developer.clickup.com/reference/gettasks",
+              "title": "ClickUp Get Tasks API reference",
+              "quote": "The ClickUp API enables you to programmatically access and manage your ClickUp resources.",
+              "retrieved_at": "2026-11-24",
+              "published_at": "2026-07-01",
+              "published_label": "Updated 2026-07-01",
+              "original_url": "https://developer.clickup.com/reference/reference-clickup-api",
+              "source_review": "The former reference URL returns 404. The current Get Tasks page embeds the official v2 OpenAPI description and displays this update date."
+            }
+          ],
+          "details": {
+            "api_types": [
+              "HTTP API"
+            ],
+            "breadth": "broad",
+            "versions": [
+              "Public API v2",
+              "selected Public API v3 endpoints"
+            ],
+            "resource_coverage": "Tasks, lists, folders, spaces, goals, comments, custom fields, attachments, views, webhooks, time tracking, users/guests, docs, and chat."
+          }
+        },
+        "official_mcp": {
+          "value": "vendor_server",
+          "mcp_mode": "remote",
+          "server_url": "https://mcp.clickup.com/mcp",
+          "transport": "HTTP",
+          "authentication": [
+            "OAuth 2.1 with PKCE"
+          ],
+          "plan_access": "All plans, with plan-dependent rate limits",
+          "limitations": "Personal API keys/API access tokens are rejected; no deletion tools currently.",
+          "status": "checked",
+          "reason": "ClickUp's official MCP page identifies ClickUp's server, all-plan availability, the remote URL, and OAuth-only auth. API credentials are explicitly not interchangeable with MCP credentials. Metadata updatedAt is October 7, 2026.",
+          "evidence": [
+            {
+              "url": "https://developer.clickup.com/docs/connect-an-ai-assistant-to-clickups-mcp-server",
+              "title": "ClickUp's MCP Server",
+              "quote": "ClickUp's MCP Server is available on <Anchor target=\"_blank\" href=\"https://clickup.com/pricing\">all plans</Anchor>.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "Metadata updatedAt 2026-10-07"
+            },
+            {
+              "url": "https://developer.clickup.com/docs/connect-an-ai-assistant-to-clickups-mcp-server",
+              "title": "ClickUp's MCP Server",
+              "quote": "No, you cannot authenticate using your own API keys or Auth access tokens. We only support OAuth for authentication.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "Metadata updatedAt 2026-10-07"
+            }
+          ]
+        },
+        "composio_toolkit": {
+          "value": "listed_exact",
+          "slug": "CLICKUP",
+          "auth_display": [
+            "OAUTH2",
+            "API_KEY"
+          ],
+          "tools": 165,
+          "triggers": 21,
+          "version": "20261116_00",
+          "status": "checked",
+          "reason": "The official Composio page has the exact ClickUp heading and CLICKUP slug. Its API_KEY catalog option does not imply that ClickUp MCP accepts API keys. The page is undated.",
+          "evidence": [
+            {
+              "url": "https://docs.composio.dev/toolkits/clickup",
+              "title": "Composio ClickUp toolkit",
+              "quote": "# ClickUp\n\nClickUp unifies tasks, docs, goals, and chat in a single platform, allowing teams to plan, organize, and collaborate across projects with customizable workflows",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated; toolkit version 20261116_00"
+            }
+          ]
+        },
+        "verdict": {
+          "value": "documented_build_candidate",
+          "status": "checked",
+          "reason": "Self-service credentials, documented v2 and Public v3 API surfaces, and an official MCP server support a build candidate. The replacement Public API reference was updated 2026-07-01; plan limits and OAuth requirements still apply, and other supporting pages are undated.",
+          "evidence": [
+            {
+              "url": "https://developer.clickup.com/docs/apis-available-by-plan",
+              "title": "ClickUp API availability by plan",
+              "quote": "Our Public API is available on all [ClickUp Plans](https://clickup.com/pricing) . Some endpoints and parameters are limited by plan.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "Metadata updatedAt 2026-04-13"
+            },
+            {
+              "url": "https://developer.clickup.com/reference/createdocpublic",
+              "title": "ClickUp Create a Doc Public API reference",
+              "quote": "This API is exposed to the public internet and is meant to be accessed by third-party integrations.",
+              "retrieved_at": "2026-11-24",
+              "published_at": "2026-07-01",
+              "published_label": "Updated 2026-07-01",
+              "original_url": "https://developer.clickup.com/reference/reference-clickup-api",
+              "source_review": "The former reference URL returns 404. The current Public API v3 Create a Doc page contains this exact scope statement and update date."
+            }
+          ]
+        }
+      }
+    },
+    {
+      "number": 78,
+      "app": "Coda",
+      "category": "Productivity and Project Management",
+      "summary": "Coda now documents its API as Superhuman Docs (formerly Coda). It is a broad RESTful API available free in free and paid workspaces, with Bearer API-token auth. Superhuman Docs also operates an MCP server, but its connection guide's operational details were inaccessible.",
+      "blocker": "The official Generate API tokens and Connect to MCP Help Center pages returned 403 during targeted research. The opened API reference supports Bearer auth and role-limited access, but not the current token-creation click path. The opened MCP guide proves vendor operation but does not expose a server URL, transport, auth method, plan matrix, or admin controls; mcp_mode remains unknown.",
+      "next_action": "Before implementation, obtain readable official Superhuman Docs guidance for API-token creation and MCP connection configuration. Prototype REST only with a properly authorized token and required Doc Maker/Admin role for createDoc; do not guess an MCP URL or assume MCP and API credentials are interchangeable.",
+      "fields": {
+        "auth": {
+          "value": [
+            "api_token_bearer: User-associated API token; workspace role and resource permissions constrain each request; createDoc requires Doc Maker or Admin unless documented workspace settings permit Editor promotion."
+          ],
+          "status": "checked",
+          "reason": "The current official API reference explicitly shows Bearer authorization and role-based token permissions. The separate official token-creation article was attempted but returned 403, so its click path is not asserted. The API reference is undated.",
+          "evidence": [
+            {
+              "url": "https://coda.io/developers/apis/v1",
+              "title": "Superhuman Docs API reference",
+              "quote": "##### Authorizations:\n\n_Bearer_",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated",
+              "original_url": "https://docs.superhuman.com/api-reference",
+              "source_review": "The former docs.superhuman.com URL returns 404. The current official Coda developer API reference reproduces the bearer authorization label."
+            },
+            {
+              "url": "https://coda.io/developers/apis/v1",
+              "title": "Superhuman Docs API reference",
+              "quote": "API usage is subject to the role of the user associated with the API token in the workspace applicable to each API request.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated",
+              "original_url": "https://docs.superhuman.com/api-reference",
+              "source_review": "The current official API reference reproduces the role-scoping sentence."
+            }
+          ]
+        },
+        "credential_gate": {
+          "gate_class": "self_serve_free",
+          "value": "self_serve_free",
+          "status": "checked",
+          "reason": "The official API reference explicitly states free API availability in free and paid workspaces, which establishes the gate class. Token-creation mechanics are a separate unresolved operational detail. The reference is undated.",
+          "evidence": [
+            {
+              "url": "https://coda.io/developers/apis/v1",
+              "title": "Superhuman Docs API reference",
+              "quote": "We make the Superhuman Docs API available to all of our users free of charge, in both free and paid workspaces.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated",
+              "original_url": "https://docs.superhuman.com/api-reference",
+              "source_review": "The current official API reference reproduces the free-workspace access statement."
+            },
+            {
+              "url": "https://coda.io/developers/apis/v1",
+              "title": "Superhuman Docs API reference",
+              "quote": "For the #createDoc endpoint specifically, the owner of the API token must be a Doc Maker (or Admin) in the workspace.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated",
+              "original_url": "https://docs.superhuman.com/api-reference",
+              "source_review": "The current official API reference reproduces the endpoint-specific role gate."
+            }
+          ],
+          "details": {
+            "gate_class": "self_serve_free",
+            "requirements": [
+              "The API is free for all users in both free and paid workspaces.",
+              "API actions remain limited by the token owner's workspace role and permissions.",
+              "createDoc requires Doc Maker or Admin, with documented Editor auto-promotion/domain-join exceptions."
+            ],
+            "unresolved": "The current official token-creation click path could not be read because the Help Center article returned 403."
+          }
+        },
+        "api_surface": {
+          "api_types": [
+            "REST"
+          ],
+          "breadth": "broad",
+          "value": "REST; broad documented surface",
+          "status": "checked",
+          "reason": "The current official reference explicitly calls the API RESTful and lists multiple document/data operations, with an OpenAPI 3.0 specification. This supports broad documentation breadth under the Superhuman Docs name. The reference is undated.",
+          "evidence": [
+            {
+              "url": "https://coda.io/developers/apis/v1",
+              "title": "Superhuman Docs API reference",
+              "quote": "The Superhuman Docs API is a RESTful API that lets you programmatically interact with data in Superhuman Docs (formerly Coda):",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated",
+              "original_url": "https://docs.superhuman.com/api-reference",
+              "source_review": "The current official API reference reproduces the REST scope sentence."
+            },
+            {
+              "url": "https://coda.io/developers/apis/v1",
+              "title": "Superhuman Docs API reference",
+              "quote": "*   List and search documents\n*   Create new docs and copy existing ones\n*   Share and publish docs\n*   Discover pages, tables, formulas, and controls\n*   Read, insert, upsert, update, and delete rows",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated",
+              "original_url": "https://docs.superhuman.com/api-reference",
+              "source_review": "The current official API reference reproduces the document, page, table, and row operation list."
+            }
+          ],
+          "details": {
+            "api_types": [
+              "REST"
+            ],
+            "breadth": "broad",
+            "base_url": "https://coda.io/apis/v1",
+            "resource_coverage": "Documents, pages, tables, formulas, controls, rows, folders, permissions, publishing, and related resources.",
+            "specification": "OpenAPI 3.0 YAML and JSON"
+          }
+        },
+        "official_mcp": {
+          "value": "vendor_server",
+          "mcp_mode": "unknown",
+          "server_url": null,
+          "transport": null,
+          "authentication": null,
+          "plan_access": null,
+          "admin_controls": null,
+          "status": "checked",
+          "reason": "The official guide states that Superhuman Docs runs its own MCP server, which is sufficient for vendor_server. It does not expose operational configuration in readable content, and the linked Help Center connection guide returned 403, so mode is conservatively unknown. The guide has no visible publication date; embedded content metadata says created 2026-03-17 and updated 2026-07-09.",
+          "evidence": [
+            {
+              "url": "https://coda.io/resources/guides/getting_started_with_coda_mcp",
+              "title": "Getting started with Superhuman Docs MCP",
+              "quote": "Under the hood, Superhuman Docs runs an MCP server built on the open Model Context Protocol standard, giving AI clients tools to work directly in your docs.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "No visible publication date; content metadata created 2026-03-17, updated 2026-07-09"
+            }
+          ]
+        },
+        "composio_toolkit": {
+          "value": "listed_exact",
+          "slug": "CODA",
+          "auth_display": [
+            "API_KEY"
+          ],
+          "tools": 110,
+          "triggers": 4,
+          "version": "20261101_00",
+          "status": "checked",
+          "reason": "The official Composio page retains the exact requested Coda heading and CODA slug, even though current vendor docs use Superhuman Docs (formerly Coda). The page is undated and does not resolve vendor MCP configuration.",
+          "evidence": [
+            {
+              "url": "https://docs.composio.dev/toolkits/coda",
+              "title": "Composio Coda toolkit",
+              "quote": "# Coda\n\nCollaborative workspace platform that transforms documents into powerful tools for team productivity and project management",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated; toolkit version 20261101_00"
+            }
+          ]
+        },
+        "verdict": {
+          "value": "documented_build_candidate",
+          "status": "checked",
+          "reason": "A broad REST API, Bearer auth, and explicit free API availability in free workspaces support a documented build candidate. This verdict covers the REST API, not unverified MCP deployment details. The API reference is undated.",
+          "evidence": [
+            {
+              "url": "https://coda.io/developers/apis/v1",
+              "title": "Superhuman Docs API reference",
+              "quote": "We make the Superhuman Docs API available to all of our users free of charge, in both free and paid workspaces.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated",
+              "original_url": "https://docs.superhuman.com/api-reference",
+              "source_review": "The current official API reference reproduces the access statement used by the verdict."
+            },
+            {
+              "url": "https://coda.io/developers/apis/v1",
+              "title": "Superhuman Docs API reference",
+              "quote": "The Superhuman Docs API is a RESTful API that lets you programmatically interact with data in Superhuman Docs (formerly Coda):",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated",
+              "original_url": "https://docs.superhuman.com/api-reference",
+              "source_review": "The current official API reference reproduces the REST scope used by the verdict."
+            }
+          ]
+        }
+      }
+    },
+    {
+      "number": 79,
+      "app": "Smartsheet",
+      "category": "Productivity and Project Management",
+      "summary": "Smartsheet has a broad REST API and vendor-hosted remote MCP, but both require Business, Enterprise, or Advanced Work Management. API access tokens are generated in Personal Settings, and MCP accepts an API token or supported OAuth clients.",
+      "blocker": "API access requires Business, Enterprise, or Advanced Work Management. Regional Smartsheet, Regions, and Gov tokens/servers are not interchangeable, and organization admins may govern MCP and write-tool access.",
+      "next_action": "Confirm a Business, Enterprise, or Advanced Work Management subscription, then generate a token in Personal Settings > API Access for the correct region. Use the matching regional MCP URL with Bearer auth or a supported OAuth client, and enforce least privilege.",
+      "fields": {
+        "auth": {
+          "value": [
+            "personal_access_token: Individual user access token generated in Smartsheet Personal Settings > API Access; Bearer authentication; token is region/environment-specific.",
+            "oauth2: OAuth authorization for supported integrations/clients; permissions remain constrained by the authenticated user."
+          ],
+          "status": "checked",
+          "reason": "Smartsheet's getting-started and MCP installation guides document token generation and OAuth alternatives. Regional tokens are explicitly non-interchangeable. These developer pages are undated.",
+          "evidence": [
+            {
+              "url": "https://developers.smartsheet.com/api/smartsheet/guides/getting-started",
+              "title": "Smartsheet Get Started",
+              "quote": "Select the API Access tab.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            },
+            {
+              "url": "https://developers.smartsheet.com/api/smartsheet/guides/getting-started",
+              "title": "Smartsheet Get Started",
+              "quote": "However, these tokens aren't interchangeable.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            }
+          ]
+        },
+        "credential_gate": {
+          "gate_class": "paid_plan",
+          "value": "paid_plan",
+          "status": "checked",
+          "reason": "The official API introduction explicitly requires Business, Enterprise, or Advanced Work Management, establishing a paid-plan gate. The page displays the relative label Last updated 3 months ago, not an exact publication date. A hidden pricing-page API-calls row was excluded as current visible evidence.",
+          "evidence": [
+            {
+              "url": "https://developers.smartsheet.com/api/smartsheet/introduction",
+              "title": "Smartsheet API introduction",
+              "quote": "Required plan: Business, Enterprise, or Advanced Work Management",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "Last updated 3 months ago"
+            }
+          ],
+          "details": {
+            "gate_class": "paid_plan",
+            "required_plans": [
+              "Business",
+              "Enterprise",
+              "Advanced Work Management"
+            ],
+            "requirements": [
+              "API and MCP access require a qualifying plan.",
+              "Token generation is self-service within an eligible plan and correct region."
+            ]
+          }
+        },
+        "api_surface": {
+          "api_types": [
+            "REST"
+          ],
+          "breadth": "broad",
+          "value": "REST; broad documented surface",
+          "status": "checked",
+          "reason": "The official introduction provides the REST base URL, SDK/REST snippets, and an OpenAPI reference spanning multiple resource families, supporting broad breadth. The page is undated.",
+          "evidence": [
+            {
+              "url": "https://developers.smartsheet.com/api/smartsheet/introduction",
+              "title": "Smartsheet API introduction",
+              "quote": "The Smartsheet API enables you to programmatically access and manage your organization's Smartsheet resources.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            },
+            {
+              "url": "https://developers.smartsheet.com/api/smartsheet/introduction",
+              "title": "Smartsheet API introduction",
+              "quote": "You'll find SDK code examples alongside REST snippets throughout the API documentation.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            }
+          ],
+          "details": {
+            "api_types": [
+              "REST"
+            ],
+            "breadth": "broad",
+            "base_url": "https://api.smartsheet.com/2.0",
+            "resource_coverage": "Sheets, cells, rows, columns, folders, workspaces, users, reports, dashboards, workflows, and related assets.",
+            "regional_bases": [
+              "https://api.smartsheetgov.com/2.0",
+              "https://api.smartsheet.eu/2.0",
+              "https://api.smartsheet.au/2.0"
+            ]
+          }
+        },
+        "official_mcp": {
+          "value": "vendor_server",
+          "mcp_mode": "remote",
+          "server_urls": {
+            "US": "https://mcp.smartsheet.com",
+            "EU": "https://mcp.smartsheet.eu",
+            "AU": "https://mcp.smartsheet.au"
+          },
+          "transport": "HTTP",
+          "authentication": [
+            "API token in Authorization Bearer header",
+            "Smartsheet OAuth for supported clients"
+          ],
+          "plan_access": "Business, Enterprise, or Advanced Work Management",
+          "permission_model": "Respects authenticated-user permissions; admins can govern MCP/write tools.",
+          "status": "checked",
+          "reason": "Smartsheet's official MCP introduction and installation guide identify its server, paid-plan requirement, regional URLs, and authentication. The vendor announcement was published March 24, 2026 and modified May 5, 2026; developer configuration pages are undated.",
+          "evidence": [
+            {
+              "url": "https://developers.smartsheet.com/ai-mcp/smartsheet/install-the-smartsheet-mcp-server",
+              "title": "Install the Smartsheet MCP server",
+              "quote": "Valid Smartsheet API token, unless you're connecting an AI tool that supports Smartsheet's OAuth",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            },
+            {
+              "url": "https://www.smartsheet.com/content-center/product-insights/product-updates/introducing-smartsheet-mcp-server",
+              "title": "Introducing Smartsheet MCP Server",
+              "quote": "The Smartsheet MCP Server is live!",
+              "retrieved_at": "2026-11-24",
+              "published_at": "2026-03-24",
+              "published_label": "Published 2026-03-24; modified 2026-05-05"
+            }
+          ]
+        },
+        "composio_toolkit": {
+          "value": "listed_exact",
+          "slug": "SMARTSHEET",
+          "auth_display": [
+            "OAUTH2",
+            "BEARER_TOKEN"
+          ],
+          "managed_oauth": false,
+          "tools": 185,
+          "triggers": 0,
+          "version": "20261101_00",
+          "status": "checked",
+          "reason": "The official Composio page has the exact Smartsheet heading and SMARTSHEET slug. Composio-managed OAuth is marked No, so custom OAuth setup may be needed; that does not change the vendor paid-plan requirement. The page is undated.",
+          "evidence": [
+            {
+              "url": "https://docs.composio.dev/toolkits/smartsheet",
+              "title": "Composio Smartsheet toolkit",
+              "quote": "# Smartsheet\n\nSmartsheet is a collaborative work management platform for organizing projects, sheets, reports, dashboards, workflows, and teams.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated; toolkit version 20261101_00"
+            }
+          ]
+        },
+        "verdict": {
+          "value": "gated_build_candidate",
+          "status": "checked",
+          "reason": "The REST API is broad and documented, but API/MCP access explicitly requires Business, Enterprise, or Advanced Work Management, so the verdict remains gated_build_candidate. The official API introduction displays the relative update label Last updated 3 months ago; the hidden pricing row was not used.",
+          "evidence": [
+            {
+              "url": "https://developers.smartsheet.com/api/smartsheet/introduction",
+              "title": "Smartsheet API introduction",
+              "quote": "Required plan: Business, Enterprise, or Advanced Work Management",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "Last updated 3 months ago"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "number": 80,
+      "app": "Harvest",
+      "category": "Productivity and Project Management",
+      "summary": "Harvest V2 is a broad REST API available to all accounts, including Free and trial accounts. Current auth is a user-tied PAT or OAuth 2.0; V1 Basic auth is legacy. Harvest also operates a remote MCP server at https://api.harvestapp.com/mcp.",
+      "blocker": "V2 requires an access token, Harvest-Account-Id, and User-Agent; do not use retired V1 Basic auth or put secrets in query strings. API and MCP permissions mirror the user's Harvest role, and MCP invoice creation is draft-only.",
+      "next_action": "Create a PAT in Harvest ID Developers for a personal prototype or register an OAuth 2.0 application for multi-user integrations. Send Authorization, Harvest-Account-Id, and User-Agent headers. For MCP, authorize the remote HTTP connection and verify role-specific permissions before write testing.",
+      "fields": {
+        "auth": {
+          "value": [
+            "personal_access_token: Tied directly to the creating user; created in Harvest ID Developers; all scope by default; requires Harvest-Account-Id and Bearer authorization.",
+            "oauth2: Integration acting for authorizing users; registered application, redirect URL, Harvest/Forecast product and account scopes; access and refresh tokens."
+          ],
+          "status": "checked",
+          "reason": "Harvest's current V2 authentication guide explicitly lists PAT and OAuth2, explains creation in Harvest ID Developers, and says PATs replace V1 Basic Authentication. Query-string token examples exist but are not recommended here. The page is undated.",
+          "evidence": [
+            {
+              "url": "https://help.getharvest.com/api-v2/authentication-api/authentication/authentication/",
+              "title": "Harvest API V2 Authentication",
+              "quote": "The V2 API requires an access token to authenticate requests. There are two options available to you:",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            },
+            {
+              "url": "https://help.getharvest.com/api-v2/authentication-api/authentication/authentication/",
+              "title": "Harvest API V2 Authentication",
+              "quote": "Personal Access Tokens replace the Basic Authentication method that was used in our v1 API, as this is more secure.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            }
+          ]
+        },
+        "credential_gate": {
+          "gate_class": "self_serve_free",
+          "value": "self_serve_free",
+          "status": "checked",
+          "reason": "Harvest's official API support article explicitly includes Free and trial accounts and explains role-based permissions. This resolves the gate without paid access. The article was created August 24, 2020 and updated October 28, 2026.",
+          "evidence": [
+            {
+              "url": "https://support.getharvest.com/hc/en-us/articles/360048180732-The-Harvest-API",
+              "title": "The Harvest API",
+              "quote": "Your Harvest subscription includes API access for all accounts (including free and trial accounts) which can be used to manage your Harvest account.",
+              "retrieved_at": "2026-11-24",
+              "published_at": "2020-08-24",
+              "published_label": "Created 2020-08-24; updated 2026-10-28"
+            },
+            {
+              "url": "https://support.getharvest.com/hc/en-us/articles/360048180732-The-Harvest-API",
+              "title": "The Harvest API",
+              "quote": "All Harvest accounts are able to access the Harvest API.",
+              "retrieved_at": "2026-11-24",
+              "published_at": "2020-08-24",
+              "published_label": "Created 2020-08-24; updated 2026-10-28"
+            }
+          ],
+          "details": {
+            "gate_class": "self_serve_free",
+            "requirements": [
+              "API access is included for all accounts, including Free and trial accounts.",
+              "PATs can be created in Harvest ID Developers; OAuth applications can also be registered there.",
+              "API permissions mirror the user's account role and are checked on each request."
+            ]
+          }
+        },
+        "api_surface": {
+          "api_types": [
+            "REST"
+          ],
+          "breadth": "broad",
+          "value": "REST; broad documented surface",
+          "status": "checked",
+          "reason": "Harvest's official V2 overview explicitly identifies REST, methods, base URL, and required headers; the root reference covers many resource APIs. This supports broad documentation breadth and current V2 scope. The pages are undated.",
+          "evidence": [
+            {
+              "url": "https://help.getharvest.com/api-v2/introduction/overview/general/",
+              "title": "Harvest API V2 Overview",
+              "quote": "The Harvest V2 API is a REST API that allows you to interact with your Harvest account programmatically. You can track time, log expenses, create projects, and more.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            },
+            {
+              "url": "https://help.getharvest.com/api-v2/",
+              "title": "Harvest API V2 Documentation",
+              "quote": "### [Clients API](/api-v2/clients-api)",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated",
+              "verification_method": "browser_and_raw_official_source_review",
+              "verification_note": "The official API index contains this exact raw Markdown heading and renders it as Clients API.",
+              "verified_at": "2026-11-24",
+              "source_review": "The official API index contains this exact raw Markdown heading and renders it as Clients API."
+            }
+          ],
+          "details": {
+            "api_types": [
+              "REST"
+            ],
+            "breadth": "broad",
+            "base_url": "https://api.harvestapp.com/v2",
+            "methods": [
+              "GET",
+              "POST",
+              "PATCH",
+              "DELETE"
+            ],
+            "resource_coverage": "Clients, company, invoices, estimates, expenses, tasks, timesheets, projects, roles, users, reports, PTO, approvals, notifications, reimbursements, imports, integrations, and Forecast.",
+            "request_requirements": [
+              "OAuth2 or PAT",
+              "Harvest-Account-Id",
+              "User-Agent"
+            ]
+          }
+        },
+        "official_mcp": {
+          "value": "vendor_server",
+          "mcp_mode": "remote",
+          "server_url": "https://api.harvestapp.com/mcp",
+          "transport": "HTTP",
+          "authentication": "User signs in to Harvest and authorizes the MCP connection through an OAuth handshake.",
+          "plan_access": "Active Harvest account and MCP-compatible client",
+          "capabilities": "Timers, time entries, reports/budgets, projects/clients/tasks, team assignments, draft invoices, expenses, timesheet approvals, and account settings.",
+          "limitations": "Invoices are draft-only; payment records and invoice PDF links are not exposed through MCP.",
+          "status": "checked",
+          "reason": "Harvest's official MCP support article describes its connection, remote URL, HTTP transport, authorization flow, capabilities, and permission model. This directly establishes vendor operation. The article was created June 1, 2026 and updated November 12, 2026.",
+          "evidence": [
+            {
+              "url": "https://support.getharvest.com/hc/en-us/articles/46293697226381-Harvest-MCP",
+              "title": "Harvest MCP",
+              "quote": "The Harvest MCP is the connection that gives an MCP-compatible assistant — such as Claude — controlled access to your Harvest account, so it can carry out time tracking tasks on your behalf.",
+              "retrieved_at": "2026-11-24",
+              "published_at": "2026-06-01",
+              "published_label": "Created 2026-06-01; updated 2026-11-12"
+            },
+            {
+              "url": "https://support.getharvest.com/hc/en-us/articles/46293697226381-Harvest-MCP",
+              "title": "Harvest MCP",
+              "quote": "claude mcp add --transport http harvest --scope user https://api.harvestapp.com/mcp",
+              "retrieved_at": "2026-11-24",
+              "published_at": "2026-06-01",
+              "published_label": "Created 2026-06-01; updated 2026-11-12"
+            }
+          ]
+        },
+        "composio_toolkit": {
+          "value": "listed_exact",
+          "slug": "HARVEST",
+          "auth_display": [
+            "OAUTH2"
+          ],
+          "managed_oauth": true,
+          "tools": 57,
+          "triggers": 0,
+          "version": "20261030_00",
+          "status": "checked",
+          "reason": "The official Composio page has the exact Harvest heading and HARVEST slug. Its OAuth-only catalog display does not remove Harvest's vendor-documented PAT option. The page is undated.",
+          "evidence": [
+            {
+              "url": "https://docs.composio.dev/toolkits/harvest",
+              "title": "Composio Harvest toolkit",
+              "quote": "# Harvest\n\nHarvest is a time-tracking and invoicing tool designed for teams and freelancers, helping them log billable hours, manage projects, and streamline payments",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated; toolkit version 20261030_00"
+            }
+          ]
+        },
+        "verdict": {
+          "value": "documented_build_candidate",
+          "status": "checked",
+          "reason": "Harvest V2 is a documented broad REST API, and official support explicitly includes Free and trial accounts with self-service PAT/OAuth creation. Role and header requirements are implementation constraints, not a paid or partner gate. The API-access article was updated October 28, 2026.",
+          "evidence": [
+            {
+              "url": "https://support.getharvest.com/hc/en-us/articles/360048180732-The-Harvest-API",
+              "title": "The Harvest API",
+              "quote": "Your Harvest subscription includes API access for all accounts (including free and trial accounts) which can be used to manage your Harvest account.",
+              "retrieved_at": "2026-11-24",
+              "published_at": "2020-08-24",
+              "published_label": "Created 2020-08-24; updated 2026-10-28"
+            },
+            {
+              "url": "https://help.getharvest.com/api-v2/introduction/overview/general/",
+              "title": "Harvest API V2 Overview",
+              "quote": "The Harvest V2 API is a REST API that allows you to interact with your Harvest account programmatically.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

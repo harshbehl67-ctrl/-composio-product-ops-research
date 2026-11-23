@@ -1,0 +1,112 @@
+{
+  "app": {
+    "number": 37,
+    "name": "systeme.io",
+    "category": "Marketing, Ads, Email and Social",
+    "hint": "systeme.io (funnel builder)"
+  },
+  "replayed_at": "2026-11-23T18:45:50.040674+00:00",
+  "source_passes": [
+    "data/pass2/037.json",
+    "data/pass4/037.json"
+  ],
+  "source_searches": [
+    "data/new_search/037.json",
+    "data/pass4_search/037.json"
+  ],
+  "publication_date_note": "Search publication labels are retained exactly; null means no label was available. Relative labels are not exact dates.",
+  "claims": {
+    "auth": {
+      "value": [
+        "API key"
+      ],
+      "status": "provisional",
+      "sources": [
+        "https://systeme.io/dashboard/profile/public-api-settings",
+        "https://help.systeme.io/article/9489-how-to-use-systeme-ios-mcp?sa=sa0024558361f5d7443882b1862ee00908b6e7c72a",
+        "https://help.systeme.io/article/2323-how-to-use-systeme-io-public-api"
+      ],
+      "evidence": [
+        {
+          "value": "API key",
+          "url": "https://systeme.io/dashboard/profile/public-api-settings",
+          "excerpt": "Settings Public API keys Create How to Use Your API Keys: Create and Manage Keys: Here, you can generate new API keys or revoke existing ones. Each key is associated with your account and shoul",
+          "published_label": null
+        },
+        {
+          "value": "API key",
+          "url": "https://help.systeme.io/article/9489-how-to-use-systeme-ios-mcp?sa=sa0024558361f5d7443882b1862ee00908b6e7c72a",
+          "excerpt": "tool, you first need to generate a secure MCP key. Click Settings (1), then select MCP & API keys (2) under Connections in the left-hand menu. Scroll down to the MCP keys section and click Create (3). Give your key a name (4), set an expiration date (5), and click C",
+          "published_label": "last week"
+        },
+        {
+          "value": "API key",
+          "url": "https://help.systeme.io/article/2323-how-to-use-systeme-io-public-api",
+          "excerpt": "will learn how to configure and use the systeme.io public API, including how to generate API keys and what actions you can perform. 1. What is an API? The acronym API stands for \"Application Programming Interface\", a series of instructions by which a platform offers",
+          "published_label": "last month"
+        }
+      ],
+      "reason": "Provisional extraction; validate scope and completeness against cited pages."
+    },
+    "credential_gate": {
+      "value": "unknown",
+      "status": "provisional",
+      "sources": [],
+      "evidence": [],
+      "reason": "No sufficiently specific official evidence extracted."
+    },
+    "api_surface": {
+      "value": "unknown",
+      "status": "provisional",
+      "sources": [],
+      "evidence": [],
+      "reason": "No sufficiently specific official evidence extracted."
+    },
+    "official_mcp": {
+      "value": "vendor_server",
+      "status": "provisional",
+      "sources": [
+        "https://help.systeme.io/article/9489-how-to-use-systeme-ios-mcp?sa=sa0024558361f5d7443882b1862ee00908b6e7c72a",
+        "https://systeme.io/mcp"
+      ],
+      "evidence": [
+        {
+          "value": "vendor_server",
+          "url": "https://help.systeme.io/article/9489-how-to-use-systeme-ios-mcp?sa=sa0024558361f5d7443882b1862ee00908b6e7c72a",
+          "excerpt": "res, allowing you to use AI to manage your contacts, tags, and contact fields. 2. How the systeme.io MCP server works The systeme.io MCP server allows AI applications to access specific contact-management tools within your account. It creates a bridge between: The host : Your AI tool (e.g., ChatGPT, Claude). The server",
+          "published_label": "last week",
+          "context_note": "Vendor-owned server statement; review date and access scope."
+        },
+        {
+          "value": "vendor_server",
+          "url": "https://systeme.io/mcp",
+          "excerpt": "and find what you need, right from the chat Get my free account In 30 seconds What is the systeme.io MCP server? systeme.io includes a built-in MCP server that lets you connect AI tools like ChatGPT or Claude directly to your account .\r\n      Once connected, your AI can access your content to create and manage\r\n      things like fun",
+          "published_label": null,
+          "context_note": "Vendor-owned server statement; review date and access scope."
+        }
+      ],
+      "reason": "Provisional; check date, ownership and access scope."
+    },
+    "composio_toolkit": {
+      "value": "unknown",
+      "status": "provisional",
+      "sources": [],
+      "evidence": [],
+      "reason": "No sufficiently specific official evidence extracted."
+    },
+    "verdict": {
+      "value": "unknown",
+      "status": "provisional",
+      "sources": [],
+      "evidence": [],
+      "reason": "No sufficiently specific official evidence extracted."
+    }
+  },
+  "validation": [
+    "Automatic extraction is provisional until independently reviewed",
+    "Unknown is not evidence of absence",
+    "Composio evidence cannot establish vendor MCP",
+    "Client-only and negated MCP statements are not vendor-server proof",
+    "API breadth is a text-coverage heuristic, not an endpoint census"
+  ]
+}

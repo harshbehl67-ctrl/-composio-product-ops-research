@@ -1,0 +1,93 @@
+{
+  "app": {
+    "number": 14,
+    "name": "Front",
+    "category": "Support and Helpdesk",
+    "hint": "front.com"
+  },
+  "replayed_at": "2026-11-23T18:41:58.153258+00:00",
+  "source_passes": [
+    "data/pass2/014.json",
+    "data/pass4/014.json"
+  ],
+  "source_searches": [
+    "data/new_search/014.json",
+    "data/pass4_search/014.json"
+  ],
+  "publication_date_note": "Search publication labels are retained exactly; null means no label was available. Relative labels are not exact dates.",
+  "claims": {
+    "auth": {
+      "value": [
+        "API token"
+      ],
+      "status": "provisional",
+      "sources": [
+        "https://community.front.com/api-news-updates-40/create-and-manage-apps-directly-in-front-99"
+      ],
+      "evidence": [
+        {
+          "value": "API token",
+          "url": "https://community.front.com/api-news-updates-40/create-and-manage-apps-directly-in-front-99",
+          "excerpt": "ast. Read the full details in the Create, manage, and publish apps topic. Obtain OAuth or API token credentials without requiring assistance from Front Support You no longer have to contact Front Support to obtain OAuth credentials for your apps. You can now obtain you",
+          "published_label": "4.0 years ago"
+        }
+      ],
+      "reason": "Provisional extraction; validate scope and completeness against cited pages."
+    },
+    "credential_gate": {
+      "value": [
+        "self_serve_free"
+      ],
+      "status": "provisional",
+      "sources": [
+        "https://community.front.com/developer-q-a-37/how-can-i-get-access-to-a-developer-account-given-that-i-am-already-a-front-customer-with-an-existing-user-acount-93"
+      ],
+      "evidence": [
+        {
+          "value": "self_serve_free",
+          "url": "https://community.front.com/developer-q-a-37/how-can-i-get-access-to-a-developer-account-given-that-i-am-already-a-front-customer-with-an-existing-user-acount-93",
+          "excerpt": "Relations Answer Community Manager 3 years ago Dec 9, 2022 12:57 AM UTC You can create a free developer account on our Developer Portal . If you’re an admin in your existing Front instance, you can certainly access the settings that would allow you to perform developer actions lik",
+          "published_label": "4.0 years ago"
+        }
+      ],
+      "reason": "Provisional extraction; validate scope and completeness against cited pages."
+    },
+    "api_surface": {
+      "value": "unknown",
+      "status": "provisional",
+      "sources": [],
+      "evidence": [],
+      "reason": "No sufficiently specific official evidence extracted."
+    },
+    "official_mcp": {
+      "value": "unknown",
+      "status": "provisional",
+      "sources": [],
+      "evidence": [],
+      "reason": "No sufficiently specific official evidence extracted."
+    },
+    "composio_toolkit": {
+      "value": "listed",
+      "status": "provisional",
+      "sources": [
+        "https://docs.composio.dev/toolkits/front"
+      ],
+      "evidence": [],
+      "reason": "Catalog match only; not vendor MCP evidence."
+    },
+    "verdict": {
+      "value": "unknown",
+      "status": "provisional",
+      "sources": [],
+      "evidence": [],
+      "reason": "No sufficiently specific official evidence extracted."
+    }
+  },
+  "validation": [
+    "Automatic extraction is provisional until independently reviewed",
+    "Unknown is not evidence of absence",
+    "Composio evidence cannot establish vendor MCP",
+    "Client-only and negated MCP statements are not vendor-server proof",
+    "API breadth is a text-coverage heuristic, not an endpoint census"
+  ]
+}

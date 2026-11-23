@@ -1,0 +1,417 @@
+{
+  "records": [
+    {
+      "number": 33,
+      "app": "LinkedIn Ads",
+      "category": "Marketing, Ads, Email and Social",
+      "summary": "LinkedIn Marketing APIs use three-legged OAuth 2.0 member access tokens and a versioned REST base path. Development access is the starting tier; Standard access requires a Developer Support ticket and LinkedIn review, with some private APIs requiring additional approval. No LinkedIn Ads vendor MCP server is documented in the targeted official Marketing pages.",
+      "blocker": "Only ad accounts explicitly configured in the developer application can be managed. Standard access and private APIs require approval, and two-legged client credentials are unavailable for marketing use cases.",
+      "next_action": "Create a LinkedIn developer application, request the required Marketing API program access and scopes, configure approved ad accounts, and use three-legged OAuth. Start in Development, test against supported accounts, then submit a Standard-access ticket through the Developer Support Portal.",
+      "fields": {
+        "auth": {
+          "value": [
+            "Three-legged OAuth 2.0 member access token; explicit LinkedIn member consent and required marketing scopes"
+          ],
+          "status": "checked",
+          "reason": "LinkedIn documents three-legged OAuth for Marketing APIs and states that the two-legged client-credentials flow is not available for marketing use cases. Required scopes must be granted by the member. The getting-started page is dated 2026-02-11 and the scope documentation is dated 2026-05-15.",
+          "evidence": [
+            {
+              "url": "https://learn.microsoft.com/en-us/linkedin/marketing/getting-started?view=li-lms-2026-10",
+              "title": "LinkedIn Marketing API OAuth tokens",
+              "quote": "Once you have a developer application that has been given access to the LinkedIn Marketing API Program, you're ready to start generating OAuth access tokens to make API calls on behalf of authenticated members.",
+              "retrieved_at": "2026-11-24",
+              "published_at": "2026-02-11",
+              "published_label": "updated 2026-02-11"
+            },
+            {
+              "url": "https://learn.microsoft.com/en-us/linkedin/marketing/getting-started?view=li-lms-2026-10",
+              "title": "LinkedIn Marketing API member consent",
+              "quote": "Before an API call can be made, any required permission scopes must first be granted by the LinkedIn member.",
+              "retrieved_at": "2026-11-24",
+              "published_at": "2026-02-11",
+              "published_label": "updated 2026-02-11"
+            },
+            {
+              "url": "https://learn.microsoft.com/en-us/linkedin/marketing/overview?view=li-lms-2026-10",
+              "title": "LinkedIn Marketing API OAuth flow restriction",
+              "quote": "The LinkedIn Advertising API gives you access to the following permissions. All these permission scopes are 3-legged permissions requiring explicit consent from a LinkedIn member. The 2-legged client credentials flow is not available for any marketing use cases.",
+              "retrieved_at": "2026-11-24",
+              "published_at": "2026-05-15",
+              "published_label": "updated 2026-05-15"
+            }
+          ]
+        },
+        "credential_gate": {
+          "value": "mixed",
+          "gate_class": "mixed",
+          "details": {
+            "gate_class": "mixed"
+          },
+          "status": "checked",
+          "reason": "Applications start in Development tier, but Standard access must be requested through a support ticket and LinkedIn may select partners at its discretion. Some private APIs require additional approval. The gate is therefore self-serve entry plus reviewed production access. The cited pages are dated.",
+          "evidence": [
+            {
+              "url": "https://learn.microsoft.com/en-us/linkedin/marketing/integrations/marketing-tiers?view=li-lms-2026-10",
+              "title": "LinkedIn Marketing API access tiers",
+              "quote": "LinkedIn has two tiers of access to our Advertising API: Development and Standard.",
+              "retrieved_at": "2026-11-24",
+              "published_at": "2026-04-08",
+              "published_label": "updated 2026-04-08"
+            },
+            {
+              "url": "https://learn.microsoft.com/en-us/linkedin/marketing/integrations/marketing-tiers?view=li-lms-2026-10",
+              "title": "LinkedIn Development starting tier",
+              "quote": "All applications start with Development tier. You must apply separately to upgrade to the Standard tier.",
+              "retrieved_at": "2026-11-24",
+              "published_at": "2026-04-08",
+              "published_label": "updated 2026-04-08"
+            },
+            {
+              "url": "https://learn.microsoft.com/en-us/linkedin/marketing/increasing-access?view=li-lms-2026-10",
+              "title": "LinkedIn Standard access request",
+              "quote": "The Standard API Access must be requested via a support ticket to be submitted on the Developer Support Portal.",
+              "retrieved_at": "2026-11-24",
+              "published_at": "2026-10-19",
+              "published_label": "updated 2026-10-19"
+            },
+            {
+              "url": "https://learn.microsoft.com/en-us/linkedin/marketing/increasing-access?view=li-lms-2026-10",
+              "title": "LinkedIn partner selection",
+              "quote": "LinkedIn reserves the right to review applications and select partners at its discretion and a partner might not be upgraded even if they meet these minimum requirements.",
+              "retrieved_at": "2026-11-24",
+              "published_at": "2026-10-19",
+              "published_label": "updated 2026-10-19"
+            }
+          ]
+        },
+        "api_surface": {
+          "value": "REST; broad documented surface",
+          "api_types": [
+            "REST"
+          ],
+          "breadth": "broad",
+          "details": {
+            "api_types": [
+              "REST"
+            ],
+            "breadth": "broad"
+          },
+          "status": "checked",
+          "reason": "LinkedIn documents a versioned REST base path and a broad Marketing API portfolio covering campaigns, creatives, audiences, insights, media planning, company intelligence, and related products. Private products remain approval-gated. The cited pages are dated.",
+          "evidence": [
+            {
+              "url": "https://learn.microsoft.com/en-us/linkedin/marketing/versioning?view=li-lms-2026-10",
+              "title": "LinkedIn Marketing API REST base path",
+              "quote": "LinkedIn’s Marketing APIs first versioned API release was June 2022 under a new base path: `https://api.linkedin.com/rest/`",
+              "retrieved_at": "2026-11-24",
+              "published_at": "2026-11-16",
+              "published_label": "updated 2026-11-16"
+            },
+            {
+              "url": "https://learn.microsoft.com/en-us/linkedin/marketing/overview?view=li-lms-2026-10",
+              "title": "LinkedIn Marketing API product breadth",
+              "quote": "Enable ads management at scale: Build functionality for scalable ads management with Ad Campaigns and Creatives APIs.",
+              "retrieved_at": "2026-11-24",
+              "published_at": "2026-05-15",
+              "published_label": "updated 2026-05-15"
+            },
+            {
+              "url": "https://learn.microsoft.com/en-us/linkedin/marketing/overview?view=li-lms-2026-10",
+              "title": "LinkedIn private Marketing APIs",
+              "quote": "Matched Audiences, Audience Insights, Media Planning API, and Company Intelligence API are private APIs and require additional approval.",
+              "retrieved_at": "2026-11-24",
+              "published_at": "2026-05-15",
+              "published_label": "updated 2026-05-15"
+            }
+          ]
+        },
+        "official_mcp": {
+          "value": "no_vendor_server_documented",
+          "review_basis": "scoped_documentation_review",
+          "mcp_mode": "unknown",
+          "status": "checked",
+          "reason": "Checked against the November 2026 LinkedIn Marketing documentation (view=li-lms-2026-11), its official Marketing table of contents, and LinkedIn's developer product catalog. These sources document OAuth, versioned REST APIs, and AI-use policy, but no LinkedIn-operated MCP server, endpoint, transport, or instructions for LinkedIn acting only as an MCP client. This finding is limited to the reviewed public documentation as of 2026-11-24; it does not assert that no private, unannounced, or future server exists. The Microsoft Learn documentation MCP server, Composio, and third-party repositories were excluded.",
+          "evidence": [
+            {
+              "url": "https://learn.microsoft.com/en-us/linkedin/marketing/versioning?view=li-lms-2026-11",
+              "title": "LMS API Documentation Versioning - LinkedIn | Microsoft Learn",
+              "quote": "LinkedIn’s Marketing APIs first versioned API release was June 2022 under a new base path: `https://api.linkedin.com/rest/`",
+              "retrieved_at": "2026-11-24",
+              "published_at": "2026-11-16",
+              "published_label": "updated 2026-11-16"
+            },
+            {
+              "url": "https://learn.microsoft.com/en-us/linkedin/marketing/getting-started?view=li-lms-2026-11",
+              "title": "Key Concepts - LinkedIn | Microsoft Learn",
+              "quote": "Once you have a developer application that has been given access to the LinkedIn Marketing API Program, you're ready to start generating OAuth access tokens to make API calls on behalf of authenticated members.",
+              "retrieved_at": "2026-11-24",
+              "published_at": "2026-02-11",
+              "published_label": "updated 2026-02-11"
+            },
+            {
+              "url": "https://learn.microsoft.com/en-us/linkedin/marketing/developer-ai-policy?view=li-lms-2026-11",
+              "title": "Developer AI Policy - LinkedIn | Microsoft Learn",
+              "quote": "This Policy outlines the extent to which developers can use AI functionality in connection with the referenced content/data.",
+              "retrieved_at": "2026-11-24",
+              "published_at": "2026-01-14",
+              "published_label": "updated 2026-01-14"
+            },
+            {
+              "url": "https://developer.linkedin.com/product-catalog/marketing/campaign-management",
+              "title": "LinkedIn API | Campaign Management",
+              "quote": "Create, manage, and optimize campaigns",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            }
+          ]
+        },
+        "composio_toolkit": {
+          "value": "listed_exact",
+          "details": {
+            "slug": "LINKEDIN_ADS",
+            "auth_display": "OAUTH2",
+            "tools": 28
+          },
+          "status": "checked",
+          "reason": "The current Composio toolkit page lists Linkedin Ads under the exact product-equivalent slug LINKEDIN_ADS with 28 tools and OAuth2 authentication. The page is undated; its Version value is not a publication date.",
+          "evidence": [
+            {
+              "url": "https://docs.composio.dev/toolkits/linkedin_ads.md",
+              "title": "Composio LinkedIn Ads toolkit",
+              "quote": "# Linkedin Ads\n\nLinkedIn Marketing and Advertising API for managing ad campaigns, analytics, and organization social content\n\n- **Category:** marketing\n- **Auth:** OAUTH2\n- **Composio-managed OAuth available?** No\n- **Tools:** 28\n- **Triggers:** 0\n- **Slug:** `LINKEDIN_ADS`",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            }
+          ]
+        },
+        "verdict": {
+          "value": "gated_build_candidate",
+          "status": "checked",
+          "reason": "Three-legged OAuth and a broad REST API are documented, but Standard access and private APIs require review and support-ticket workflows. The load-bearing LinkedIn pages are dated; no vendor MCP is needed to support the gated REST build verdict.",
+          "evidence": [
+            {
+              "url": "https://learn.microsoft.com/en-us/linkedin/marketing/integrations/marketing-tiers?view=li-lms-2026-10",
+              "title": "LinkedIn Marketing API gated access",
+              "quote": "All applications start with Development tier. You must apply separately to upgrade to the Standard tier.",
+              "retrieved_at": "2026-11-24",
+              "published_at": "2026-04-08",
+              "published_label": "updated 2026-04-08"
+            },
+            {
+              "url": "https://learn.microsoft.com/en-us/linkedin/marketing/versioning?view=li-lms-2026-10",
+              "title": "LinkedIn Marketing API REST availability",
+              "quote": "LinkedIn’s Marketing APIs first versioned API release was June 2022 under a new base path: `https://api.linkedin.com/rest/`",
+              "retrieved_at": "2026-11-24",
+              "published_at": "2026-11-16",
+              "published_label": "updated 2026-11-16"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "number": 27,
+      "app": "Telegram",
+      "category": "Communications and Messaging",
+      "summary": "Telegram's Bot API is a broad HTTP-based interface authenticated by a unique bot token, with GET and POST methods and extensive messaging features. Bots can message users at no cost, subject to broadcast limits. Targeted official review found no Telegram-operated MCP server documented in the Bot Platform sources; this is a scoped documentation finding, not proof of universal absence.",
+      "blocker": "No Telegram-operated MCP server is documented in the reviewed official Bot Platform sources; direct Bot API integration remains available. Bot capabilities also depend on chat membership and administrator-granted rights.",
+      "next_action": "Create a bot through BotFather, protect its token, and build with the Bot API using only the chats and admin rights required. Use the documented Bot API rather than waiting for a Telegram MCP endpoint, and recheck official sources before adopting any future MCP integration.",
+      "fields": {
+        "auth": {
+          "status": "checked",
+          "value": [
+            "Unique bot authentication tokens"
+          ],
+          "reason": "Telegram states that each bot receives a unique authentication token and that bots are connected to a backend through the Bot API after setup with BotFather. The Bot API is dated November 22, 2026; the FAQ is undated.",
+          "evidence": [
+            {
+              "url": "https://core.telegram.org/bots/api",
+              "title": "Telegram Bot API",
+              "quote": "Each bot is given a unique authentication token when it is created.",
+              "retrieved_at": "2026-11-24",
+              "published_at": "2026-11-22",
+              "published_label": "November 22, 2026"
+            },
+            {
+              "url": "https://core.telegram.org/bots/faq",
+              "title": "Telegram Bot FAQ",
+              "quote": "Creating Telegram bots is super-easy, but you will need at least some skills at computer programming. In order for a bot to work, set up a bot account with @BotFather, then connect it to your backend server via our API.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            }
+          ]
+        },
+        "credential_gate": {
+          "status": "checked",
+          "value": "self_serve_free",
+          "gate_class": "self_serve_free",
+          "details": {
+            "gate_class": "self_serve_free"
+          },
+          "reason": "Telegram's FAQ says bots can message their users at no cost, subject to broadcast limits, and BotFather setup is self-service. The legal terms deny a partnership relationship rather than requiring partner approval. The FAQ and terms pages are undated.",
+          "evidence": [
+            {
+              "url": "https://core.telegram.org/bots/faq",
+              "title": "Telegram Bot FAQ",
+              "quote": "By default, bots are able to message their users at no cost – but have limitations on the number of messages they can broadcast in a single interval:",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            },
+            {
+              "url": "https://telegram.org/tos/bot-developers",
+              "title": "Telegram Bot Developer Terms",
+              "quote": "You understand and agree that your association with us is exclusively as a user of our services, functioning as an independent entity. These terms and your engagement with Bot Platform do not establish any form of agency, partnership, employment or joint venture between you and Telegram.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            }
+          ]
+        },
+        "api_surface": {
+          "status": "checked",
+          "value": "HTTP API; broad documented surface",
+          "api_types": [
+            "HTTP API"
+          ],
+          "breadth": "broad",
+          "details": {
+            "api_types": [
+              "HTTP API"
+            ],
+            "breadth": "broad"
+          },
+          "reason": "Telegram explicitly calls the Bot API an HTTP-based interface and documents GET and POST methods plus messaging, multi-platform, access, and lifecycle features. This supports a broad HTTP API classification. The Bot API is dated November 22, 2026; the features page is undated.",
+          "evidence": [
+            {
+              "url": "https://core.telegram.org/bots/api",
+              "title": "Telegram Bot API",
+              "quote": "The Bot API is an HTTP-based interface created for developers keen on building bots for Telegram.",
+              "retrieved_at": "2026-11-24",
+              "published_at": "2026-11-22",
+              "published_label": "November 22, 2026"
+            },
+            {
+              "url": "https://core.telegram.org/bots/api",
+              "title": "Telegram Bot API",
+              "quote": "We support GET and POST HTTP methods.",
+              "retrieved_at": "2026-11-24",
+              "published_at": "2026-11-22",
+              "published_label": "November 22, 2026"
+            },
+            {
+              "url": "https://core.telegram.org/bots/features",
+              "title": "Telegram Bot Features",
+              "quote": "The Bot API provides the messaging, multi-platform presentation, access and lifecycle features – the model, memory and bot logic are flexible and entirely up to you.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            }
+          ]
+        },
+        "official_mcp": {
+          "value": "no_vendor_server_documented",
+          "review_basis": "scoped_documentation_review",
+          "mcp_mode": "unknown",
+          "status": "checked",
+          "reason": "Checked the official Bot API, Bot Features, Bots FAQ, Bot Developer Terms, bot overview, and Serverless documentation. They document Telegram's HTTP Bot API, developer-supplied bot logic and backends, and serverless bot hosting, but no Telegram-operated MCP server, endpoint, transport, or Telegram client-only MCP instructions. This finding is limited to the reviewed public documentation as of 2026-11-24, not a universal absence claim; Composio and third-party MCP repositories were excluded.",
+          "evidence": [
+            {
+              "url": "https://core.telegram.org/bots/api",
+              "title": "Telegram Bot API",
+              "quote": "The Bot API is an HTTP-based interface created for developers keen on building bots for Telegram.",
+              "retrieved_at": "2026-11-24",
+              "published_at": "2026-11-22",
+              "published_label": "November 22, 2026"
+            },
+            {
+              "url": "https://core.telegram.org/bots/features",
+              "title": "Telegram Bot Features",
+              "quote": "The Bot API provides the messaging, multi-platform presentation, access and lifecycle features – the model, memory and bot logic are flexible and entirely up to you.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            },
+            {
+              "url": "https://core.telegram.org/bots/faq",
+              "title": "Bots FAQ",
+              "quote": "Unfortunately, there are no out-of-the-box ways to create a working bot if you are not a developer. But we're sure you'll soon find plenty of bots created by other people to play with.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            },
+            {
+              "url": "https://telegram.org/tos/bot-developers",
+              "title": "Telegram Bot Platform Developer Terms of Service",
+              "quote": "Developers can make their products and services accessible in Telegram apps by building TPA and connecting them to the Telegram platform via Bot API.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            },
+            {
+              "url": "https://core.telegram.org/bots/serverless",
+              "title": "Telegram Serverless",
+              "quote": "Serverless is a general backend for Telegram bots and Mini Apps, not a template for one kind of app.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            }
+          ]
+        },
+        "composio_toolkit": {
+          "status": "checked",
+          "value": "listed_exact",
+          "slug": "TELEGRAM",
+          "auth_display": "API_KEY",
+          "tools": 18,
+          "triggers": 0,
+          "reason": "Composio's Telegram toolkit page is an exact listing with slug TELEGRAM, API-key authentication, 18 tools, and 0 triggers. The page is undated and is used only as Composio catalog evidence.",
+          "evidence": [
+            {
+              "url": "https://docs.composio.dev/toolkits/telegram",
+              "title": "Telegram Composio Toolkit",
+              "quote": "Slug: TELEGRAM",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            }
+          ]
+        },
+        "verdict": {
+          "status": "checked",
+          "value": "documented_build_candidate",
+          "reason": "Telegram is a documented build candidate because the Bot API is broad, bot-token setup is self-service, and bots can message users at no cost subject to limits. No Telegram vendor MCP server is documented in the reviewed official Bot Platform sources, and MCP is not required for this verdict. The Bot API is dated November 22, 2026; the FAQ is undated.",
+          "evidence": [
+            {
+              "url": "https://core.telegram.org/bots/api",
+              "title": "Telegram Bot API",
+              "quote": "The Bot API is an HTTP-based interface created for developers keen on building bots for Telegram.",
+              "retrieved_at": "2026-11-24",
+              "published_at": "2026-11-22",
+              "published_label": "November 22, 2026"
+            },
+            {
+              "url": "https://core.telegram.org/bots/api",
+              "title": "Telegram Bot API",
+              "quote": "Each bot is given a unique authentication token when it is created.",
+              "retrieved_at": "2026-11-24",
+              "published_at": "2026-11-22",
+              "published_label": "November 22, 2026"
+            },
+            {
+              "url": "https://core.telegram.org/bots/faq",
+              "title": "Telegram Bot FAQ",
+              "quote": "By default, bots are able to message their users at no cost – but have limitations on the number of messages they can broadcast in a single interval:",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

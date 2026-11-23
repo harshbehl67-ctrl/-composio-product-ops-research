@@ -1,0 +1,1232 @@
+{
+  "checked_at": "2026-11-24",
+  "note": "Direct visible-text verification failures requiring source review; browser keeps already recorded are excluded.",
+  "results": [
+    {
+      "url": "https://api.docs.dealcloud.com/docs/token",
+      "status": 200,
+      "error": null,
+      "final_url": "https://api.docs.dealcloud.com/docs/token",
+      "uses": [
+        {
+          "app": "DealCloud",
+          "field": "auth",
+          "claim_status": "checked",
+          "quote": "user_management data publish ri_import backup",
+          "quote_exact": false,
+          "quote_token_exact": false,
+          "raw_html_only_match": false,
+          "start_fragment_found": false,
+          "end_fragment_found": false
+        }
+      ]
+    },
+    {
+      "url": "https://api.docs.dealcloud.com/mcp/getting-started",
+      "status": 200,
+      "error": null,
+      "final_url": "https://api.docs.dealcloud.com/mcp/getting-started",
+      "uses": [
+        {
+          "app": "DealCloud",
+          "field": "official_mcp",
+          "claim_status": "checked",
+          "quote": "DealCloud with Celeste license. Manage MCP Servers capability for admins to configure. Celeste Member user group assignment with MCP Access capability enabled for end-user connection.",
+          "quote_exact": false,
+          "quote_token_exact": false,
+          "raw_html_only_match": false,
+          "start_fragment_found": false,
+          "end_fragment_found": true
+        }
+      ]
+    },
+    {
+      "url": "https://attio.com/pricing",
+      "status": 200,
+      "error": null,
+      "final_url": "https://attio.com/pricing",
+      "uses": [
+        {
+          "app": "Attio",
+          "field": "credential_gate",
+          "claim_status": "checked",
+          "quote": "API and webhooks Free Plus Pro Ultra",
+          "quote_exact": false,
+          "quote_token_exact": false,
+          "raw_html_only_match": false,
+          "start_fragment_found": false,
+          "end_fragment_found": false
+        }
+      ]
+    },
+    {
+      "url": "https://developer.close.com/api/overview/api-key-authentication",
+      "status": 200,
+      "error": null,
+      "final_url": "https://developer.close.com/api/overview/api-key-authentication",
+      "uses": [
+        {
+          "app": "Close",
+          "field": "auth",
+          "claim_status": "checked",
+          "quote": "API keys use HTTP Basic client side authentication. The API key acts as the username and the password is always empty.",
+          "quote_exact": false,
+          "quote_token_exact": false,
+          "raw_html_only_match": false,
+          "start_fragment_found": true,
+          "end_fragment_found": true
+        }
+      ]
+    },
+    {
+      "url": "https://developer.close.com/api/overview/oauth-authentication",
+      "status": null,
+      "error": "HTTPSConnectionPool(host='developer.close.com', port=443): Read timed out. (read timeout=25)",
+      "final_url": null,
+      "uses": [
+        {
+          "app": "Close",
+          "field": "auth",
+          "claim_status": "checked",
+          "quote": "To implement authentication with OAuth 2.0, you need to create an OAuth app to get your Client ID and Client Secret."
+        },
+        {
+          "app": "Close",
+          "field": "auth",
+          "claim_status": "checked",
+          "quote": "Send your HTTP requests with an Authorization header that contains the word Bearer followed by a space and the Access Token."
+        }
+      ]
+    },
+    {
+      "url": "https://developer.close.com/mcp/",
+      "status": 200,
+      "error": null,
+      "final_url": "https://developer.close.com/mcp/",
+      "uses": [
+        {
+          "app": "Close",
+          "field": "official_mcp",
+          "claim_status": "checked",
+          "quote": "API-key authentication is supported using `Close-API-Key` and `Close-Scope` headers.",
+          "quote_exact": false,
+          "quote_token_exact": false,
+          "raw_html_only_match": false,
+          "start_fragment_found": false,
+          "end_fragment_found": false
+        }
+      ]
+    },
+    {
+      "url": "https://developer.systeme.io/reference/post_contact-1.md",
+      "status": 200,
+      "error": null,
+      "final_url": "https://developer.systeme.io/reference/post_contact-1.md",
+      "uses": [
+        {
+          "app": "systeme.io",
+          "field": "api_surface",
+          "claim_status": "checked",
+          "quote": "Create a contact",
+          "quote_exact": false,
+          "quote_token_exact": false,
+          "raw_html_only_match": false,
+          "start_fragment_found": false,
+          "end_fragment_found": false
+        }
+      ]
+    },
+    {
+      "url": "https://developer.xero.com/faq",
+      "status": 200,
+      "error": null,
+      "final_url": "https://developer.xero.com/faq",
+      "uses": [
+        {
+          "app": "Xero",
+          "field": "auth",
+          "claim_status": "checked",
+          "quote": "Our API uses OAuth 2.0 which means you need to register your app to get a client id and client secret which you use to access the API.",
+          "quote_exact": false,
+          "quote_token_exact": false,
+          "raw_html_only_match": false,
+          "start_fragment_found": false,
+          "end_fragment_found": false
+        },
+        {
+          "app": "Xero",
+          "field": "auth",
+          "claim_status": "checked",
+          "quote": "All Xero access tokens expire after 30 minutes. Refresh tokens allow your app to obtain new access tokens without involving a user again.",
+          "quote_exact": false,
+          "quote_token_exact": false,
+          "raw_html_only_match": true,
+          "start_fragment_found": false,
+          "end_fragment_found": false
+        },
+        {
+          "app": "Xero",
+          "field": "credential_gate",
+          "claim_status": "checked",
+          "quote": "Yes, apps on Starter plan can use it with the demo organisation. You can connect, run the tools, and decide whether it's worth upgrading to Core. Real customer organisations need the Core plan or above.",
+          "quote_exact": false,
+          "quote_token_exact": false,
+          "raw_html_only_match": true,
+          "start_fragment_found": false,
+          "end_fragment_found": false
+        },
+        {
+          "app": "Xero",
+          "field": "api_surface",
+          "claim_status": "checked",
+          "quote": "You can also use our OpenAPI spec to generate your own SDK.",
+          "quote_exact": false,
+          "quote_token_exact": false,
+          "raw_html_only_match": false,
+          "start_fragment_found": false,
+          "end_fragment_found": false
+        },
+        {
+          "app": "Xero",
+          "field": "api_surface",
+          "claim_status": "checked",
+          "quote": "you can create more than one Invoice in a single PUT or POST Invoices API call.",
+          "quote_exact": false,
+          "quote_token_exact": false,
+          "raw_html_only_match": true,
+          "start_fragment_found": false,
+          "end_fragment_found": false
+        },
+        {
+          "app": "Xero",
+          "field": "api_surface",
+          "claim_status": "checked",
+          "quote": "All major endpoints on the Payroll, Files and Assets APIs also support paging.",
+          "quote_exact": false,
+          "quote_token_exact": false,
+          "raw_html_only_match": true,
+          "start_fragment_found": false,
+          "end_fragment_found": false
+        },
+        {
+          "app": "Xero",
+          "field": "official_mcp",
+          "claim_status": "checked",
+          "quote": "The Developer Remote MCP is for developers & builders building custom agents and apps. It can be used with any MCP compatible client and offers tools that reads and writes Xero data. It supports multiple organisations with user consent.",
+          "quote_exact": false,
+          "quote_token_exact": false,
+          "raw_html_only_match": false,
+          "start_fragment_found": false,
+          "end_fragment_found": false
+        },
+        {
+          "app": "Xero",
+          "field": "official_mcp",
+          "claim_status": "checked",
+          "quote": "https://api.xero.com/mcp/v1",
+          "quote_exact": false,
+          "quote_token_exact": false,
+          "raw_html_only_match": true,
+          "start_fragment_found": false,
+          "end_fragment_found": false
+        },
+        {
+          "app": "Xero",
+          "field": "official_mcp",
+          "claim_status": "checked",
+          "quote": "Yes. The server authorises through Xero's OAuth 2.0 flow with PKCE, so your client needs to be able to start that flow.",
+          "quote_exact": false,
+          "quote_token_exact": false,
+          "raw_html_only_match": true,
+          "start_fragment_found": false,
+          "end_fragment_found": false
+        },
+        {
+          "app": "Xero",
+          "field": "official_mcp",
+          "claim_status": "checked",
+          "quote": "No. Custom Connections apps are not eligible to access the Remote MCP Server.",
+          "quote_exact": false,
+          "quote_token_exact": false,
+          "raw_html_only_match": true,
+          "start_fragment_found": false,
+          "end_fragment_found": false
+        },
+        {
+          "app": "Xero",
+          "field": "verdict",
+          "claim_status": "checked",
+          "quote": "Our API uses OAuth 2.0 which means you need to register your app to get a client id and client secret which you use to access the API.",
+          "quote_exact": false,
+          "quote_token_exact": false,
+          "raw_html_only_match": false,
+          "start_fragment_found": false,
+          "end_fragment_found": false
+        },
+        {
+          "app": "Xero",
+          "field": "verdict",
+          "claim_status": "checked",
+          "quote": "All major endpoints on the Payroll, Files and Assets APIs also support paging.",
+          "quote_exact": false,
+          "quote_token_exact": false,
+          "raw_html_only_match": true,
+          "start_fragment_found": false,
+          "end_fragment_found": false
+        },
+        {
+          "app": "Xero",
+          "field": "verdict",
+          "claim_status": "checked",
+          "quote": "Yes, apps on Starter plan can use it with the demo organisation. You can connect, run the tools, and decide whether it's worth upgrading to Core. Real customer organisations need the Core plan or above.",
+          "quote_exact": false,
+          "quote_token_exact": false,
+          "raw_html_only_match": true,
+          "start_fragment_found": false,
+          "end_fragment_found": false
+        }
+      ]
+    },
+    {
+      "url": "https://developer.xero.com/faq/AI-Toolkit",
+      "status": 200,
+      "error": null,
+      "final_url": "https://developer.xero.com/faq/AI-Toolkit",
+      "uses": [
+        {
+          "app": "Xero",
+          "field": "official_mcp",
+          "claim_status": "checked",
+          "quote": "Xero's MCP Server will work with any MCP client that supports local/STDIO MCP servers.",
+          "quote_exact": false,
+          "quote_token_exact": false,
+          "raw_html_only_match": true,
+          "start_fragment_found": false,
+          "end_fragment_found": false
+        }
+      ]
+    },
+    {
+      "url": "https://developer.xero.com/faq/oauth2",
+      "status": 200,
+      "error": null,
+      "final_url": "https://developer.xero.com/faq/oauth2",
+      "uses": [
+        {
+          "app": "Xero",
+          "field": "auth",
+          "claim_status": "checked",
+          "quote": "Xero supports the Proof Key for Code Exchange (PKCE) extension to the authorization code flow. This allows native apps to securely connect to our API without needing to store a client secret. Single page apps are not currently supported.",
+          "quote_exact": false,
+          "quote_token_exact": false,
+          "raw_html_only_match": true,
+          "start_fragment_found": false,
+          "end_fragment_found": false
+        },
+        {
+          "app": "Xero",
+          "field": "auth",
+          "claim_status": "checked",
+          "quote": "Unused refresh tokens expire after 60 days. If you don’t refresh your access token within 60 days the user will need to reauthorise your app.",
+          "quote_exact": false,
+          "quote_token_exact": false,
+          "raw_html_only_match": true,
+          "start_fragment_found": false,
+          "end_fragment_found": false
+        }
+      ]
+    },
+    {
+      "url": "https://developers.facebook.com/documentation/threads.md",
+      "status": 200,
+      "error": null,
+      "final_url": "https://developers.facebook.com/documentation/threads.md",
+      "uses": [
+        {
+          "app": "Threads (Meta)",
+          "field": "official_mcp",
+          "claim_status": "checked",
+          "quote": "Connect your Threads account to an AI assistant with the Threads MCP server to publish posts and check how they perform.",
+          "quote_exact": false,
+          "quote_token_exact": false,
+          "raw_html_only_match": false,
+          "start_fragment_found": false,
+          "end_fragment_found": false
+        }
+      ]
+    },
+    {
+      "url": "https://developers.facebook.com/documentation/threads/overview",
+      "status": 200,
+      "error": null,
+      "final_url": "https://developers.facebook.com/documentation/threads/overview",
+      "uses": [
+        {
+          "app": "Threads (Meta)",
+          "field": "api_surface",
+          "claim_status": "checked",
+          "quote": "The Threads API enables developers to create posts, manage replies, retrieve user profiles, discover content, and access engagement insights on Threads.",
+          "quote_exact": false,
+          "quote_token_exact": false,
+          "raw_html_only_match": false,
+          "start_fragment_found": false,
+          "end_fragment_found": false
+        },
+        {
+          "app": "Threads (Meta)",
+          "field": "verdict",
+          "claim_status": "checked",
+          "quote": "The Threads API enables developers to create posts, manage replies, retrieve user profiles, discover content, and access engagement insights on Threads.",
+          "quote_exact": false,
+          "quote_token_exact": false,
+          "raw_html_only_match": false,
+          "start_fragment_found": false,
+          "end_fragment_found": false
+        }
+      ]
+    },
+    {
+      "url": "https://developers.hubspot.com/changelog/remote-hubspot-mcp-server-is-now-generally-available",
+      "status": 200,
+      "error": null,
+      "final_url": "https://developers.hubspot.com/changelog/remote-hubspot-mcp-server-is-now-generally-available",
+      "uses": [
+        {
+          "app": "HubSpot",
+          "field": "official_mcp",
+          "claim_status": "checked",
+          "quote": "The remote HubSpot MCP server is graduating from beta and is now generally available to all HubSpot accounts. The HubSpot MCP server connects any MCP-compatible AI tool to your CRM over a secure, HubSpot-hosted connection authenticated via OAuth 2.1 with PKCE.",
+          "quote_exact": false,
+          "quote_token_exact": false,
+          "raw_html_only_match": false,
+          "start_fragment_found": true,
+          "end_fragment_found": true
+        }
+      ]
+    },
+    {
+      "url": "https://developers.klaviyo.com/en/docs/klaviyo_stripe_projects_context",
+      "status": 200,
+      "error": null,
+      "final_url": "https://developers.klaviyo.com/en/docs/klaviyo_stripe_projects_context",
+      "uses": [
+        {
+          "app": "Klaviyo",
+          "field": "credential_gate",
+          "claim_status": "checked",
+          "quote": "Some features require a paid plan, account verification, or both on the account where you use them.",
+          "quote_exact": false,
+          "quote_token_exact": false,
+          "raw_html_only_match": false,
+          "start_fragment_found": false,
+          "end_fragment_found": false
+        }
+      ]
+    },
+    {
+      "url": "https://developers.pinterest.com/docs/key-concepts/access-tiers/",
+      "status": 200,
+      "error": null,
+      "final_url": "https://developers.pinterest.com/docs/key-concepts/access-tiers/",
+      "uses": [
+        {
+          "app": "Pinterest",
+          "field": "api_surface",
+          "claim_status": "checked",
+          "quote": "Scopes are the permissions your users give your app to act on their behalf within Pinterest. Each scope allows your app to make different API requests, such as for creating ads or viewing secret boards.",
+          "quote_exact": false,
+          "quote_token_exact": false,
+          "raw_html_only_match": false,
+          "start_fragment_found": false,
+          "end_fragment_found": false
+        }
+      ]
+    },
+    {
+      "url": "https://docs.sentry.io/product/snapshots/agentic-workflow.md",
+      "status": 200,
+      "error": null,
+      "final_url": "https://docs.sentry.io/product/snapshots/agentic-workflow.md",
+      "uses": [
+        {
+          "app": "Sentry",
+          "field": "official_mcp",
+          "claim_status": "checked",
+          "quote": "Sentry's [MCP server](https://mcp.sentry.dev) connects your AI assistant to Sentry over the Model Context Protocol. Follow the setup and authentication instructions there for your client (Claude Code, Cursor, VS Code, and others).\n\nConnect using one of these endpoints:\n\n* `https://mcp.sentry.dev/mcp`: base endpoint\n* `https://mcp.sentry.dev/mcp/{organizationSlug}`: scoped to one organization\n* `https://mcp.sentry.dev/mcp/{organizationSlug}/{projectSlug}`: scoped to one project (recommended)\n\nThe first connection starts an OAuth flow to link your Sentry account.",
+          "quote_exact": false,
+          "quote_token_exact": false,
+          "raw_html_only_match": false,
+          "start_fragment_found": true,
+          "end_fragment_found": true
+        }
+      ]
+    },
+    {
+      "url": "https://docs.snowflake.com/en/user-guide/programmatic-access-tokens.md",
+      "status": 200,
+      "error": null,
+      "final_url": "https://docs.snowflake.com/en/user-guide/programmatic-access-tokens.md",
+      "uses": [
+        {
+          "app": "Snowflake",
+          "field": "auth",
+          "claim_status": "checked",
+          "quote": "For human users (with TYPE=PERSON), you do not need any special privileges to generate, modify, drop, or display a programmatic access token for yourself.\n\nBy default, a programmatic access token expires after 15 days.",
+          "quote_exact": false,
+          "quote_token_exact": false,
+          "raw_html_only_match": false,
+          "start_fragment_found": true,
+          "end_fragment_found": true
+        }
+      ]
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/linkedin/marketing/integrations/marketing-tiers?view=li-lms-2026-10",
+      "status": 200,
+      "error": null,
+      "final_url": "https://learn.microsoft.com/en-us/linkedin/marketing/integrations/marketing-tiers?view=li-lms-2026-10",
+      "uses": [
+        {
+          "app": "LinkedIn Ads",
+          "field": "credential_gate",
+          "claim_status": "checked",
+          "quote": "All applications start with Development tier. You must apply separately to upgrade to the Standard tier.",
+          "quote_exact": false,
+          "quote_token_exact": false,
+          "raw_html_only_match": false,
+          "start_fragment_found": false,
+          "end_fragment_found": false
+        },
+        {
+          "app": "LinkedIn Ads",
+          "field": "verdict",
+          "claim_status": "checked",
+          "quote": "All applications start with Development tier. You must apply separately to upgrade to the Standard tier.",
+          "quote_exact": false,
+          "quote_token_exact": false,
+          "raw_html_only_match": false,
+          "start_fragment_found": false,
+          "end_fragment_found": false
+        }
+      ]
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/linkedin/marketing/overview?view=li-lms-2026-10",
+      "status": 200,
+      "error": null,
+      "final_url": "https://learn.microsoft.com/en-us/linkedin/marketing/overview?view=li-lms-2026-10",
+      "uses": [
+        {
+          "app": "LinkedIn Ads",
+          "field": "auth",
+          "claim_status": "checked",
+          "quote": "The LinkedIn Advertising API gives you access to the following permissions. All these permission scopes are 3-legged permissions requiring explicit consent from a LinkedIn member. The 2-legged client credentials flow is not available for any marketing use cases.",
+          "quote_exact": false,
+          "quote_token_exact": false,
+          "raw_html_only_match": false,
+          "start_fragment_found": false,
+          "end_fragment_found": false
+        }
+      ]
+    },
+    {
+      "url": "https://mailchimp.com/developer/marketing/api-concepts/authentication/",
+      "status": 200,
+      "error": null,
+      "final_url": "https://mailchimp.com/developer/marketing/api-concepts/authentication/",
+      "uses": [
+        {
+          "app": "Mailchimp",
+          "field": "auth",
+          "claim_status": "checked",
+          "quote": "An API key authenticates requests against your own Mailchimp account.",
+          "quote_exact": false,
+          "quote_token_exact": false,
+          "raw_html_only_match": false,
+          "start_fragment_found": false,
+          "end_fragment_found": false
+        }
+      ]
+    },
+    {
+      "url": "https://mailchimp.com/developer/marketing/build/get-started/generate-your-api-key.md",
+      "status": null,
+      "error": "HTTPSConnectionPool(host='mailchimp.com', port=443): Read timed out. (read timeout=25)",
+      "final_url": null,
+      "uses": [
+        {
+          "app": "Mailchimp",
+          "field": "credential_gate",
+          "claim_status": "checked",
+          "quote": "Navigate to the API Keys section of your Mailchimp account."
+        }
+      ]
+    },
+    {
+      "url": "https://mrscraper.com/pricing",
+      "status": 200,
+      "error": null,
+      "final_url": "https://mrscraper.com/pricing",
+      "uses": [
+        {
+          "app": "MrScraper",
+          "field": "credential_gate",
+          "claim_status": "checked",
+          "quote": "Scraper Free includes 1,000 MrScraper tokens every month at no cost - no credit card required. It's the fastest way to try scraping, proxies and AI extraction before upgrading.",
+          "quote_exact": false,
+          "quote_token_exact": false,
+          "raw_html_only_match": true,
+          "start_fragment_found": false,
+          "end_fragment_found": false
+        },
+        {
+          "app": "MrScraper",
+          "field": "verdict",
+          "claim_status": "checked",
+          "quote": "Scraper Free includes 1,000 MrScraper tokens every month at no cost - no credit card required.",
+          "quote_exact": false,
+          "quote_token_exact": false,
+          "raw_html_only_match": true,
+          "start_fragment_found": false,
+          "end_fragment_found": false
+        }
+      ]
+    },
+    {
+      "url": "https://neo4j.com/docs/aura/api/authentication/",
+      "status": 200,
+      "error": null,
+      "final_url": "https://neo4j.com/docs/aura/api/authentication/",
+      "uses": [
+        {
+          "app": "Neo4j",
+          "field": "auth",
+          "claim_status": "checked",
+          "quote": "The Aura API uses OAuth 2.0 for API authentication.\n\nAll tiers can create Aura API credentials. API credentials are linked to the user account, inheriting its capabilities and roles. The API credentials never expire unless you delete them.",
+          "quote_exact": false,
+          "quote_token_exact": false,
+          "raw_html_only_match": false,
+          "start_fragment_found": true,
+          "end_fragment_found": true
+        }
+      ]
+    },
+    {
+      "url": "https://neo4j.com/docs/mcp/current/installation/",
+      "status": 200,
+      "error": null,
+      "final_url": "https://neo4j.com/docs/mcp/current/installation/",
+      "uses": [
+        {
+          "app": "Neo4j",
+          "field": "official_mcp",
+          "claim_status": "checked",
+          "quote": "## Install with PyPI\n\n```bash\nuvx neo4j-mcp-server\n```",
+          "quote_exact": false,
+          "quote_token_exact": false,
+          "raw_html_only_match": false,
+          "start_fragment_found": false,
+          "end_fragment_found": false
+        }
+      ]
+    },
+    {
+      "url": "https://sentry.io/pricing/",
+      "status": 200,
+      "error": null,
+      "final_url": "https://sentry.io/pricing/",
+      "uses": [
+        {
+          "app": "Sentry",
+          "field": "credential_gate",
+          "claim_status": "checked",
+          "quote": "developer\n\nFor solo devs working on small projects\n\nFree\n\n$0\n\nLimited to one user\n\n*   One user\n*   Error Monitoring and Tracing\n*   Alerts and notifications via email\n*   10 custom dashboards\n*   MCP access",
+          "quote_exact": false,
+          "quote_token_exact": false,
+          "raw_html_only_match": false,
+          "start_fragment_found": false,
+          "end_fragment_found": false
+        },
+        {
+          "app": "Sentry",
+          "field": "verdict",
+          "claim_status": "checked",
+          "quote": "developer\n\nFor solo devs working on small projects\n\nFree\n\n$0\n\nLimited to one user\n\n*   One user\n*   Error Monitoring and Tracing\n*   Alerts and notifications via email\n*   10 custom dashboards\n*   MCP access",
+          "quote_exact": false,
+          "quote_token_exact": false,
+          "raw_html_only_match": false,
+          "start_fragment_found": false,
+          "end_fragment_found": false
+        }
+      ]
+    },
+    {
+      "url": "https://supabase.com/docs/guides/api",
+      "status": 200,
+      "error": null,
+      "final_url": "https://supabase.com/docs/guides/api",
+      "uses": [
+        {
+          "app": "Supabase",
+          "field": "api_surface",
+          "claim_status": "checked",
+          "quote": "Supabase auto-generates an API directly from your database schema allowing you to connect to your database through a restful interface, directly from the browser.\n\nSupabase provides a RESTful API using [PostgREST](https://postgrest.org/), a thin API layer on top of Postgres.",
+          "quote_exact": false,
+          "quote_token_exact": false,
+          "raw_html_only_match": false,
+          "start_fragment_found": true,
+          "end_fragment_found": true
+        }
+      ]
+    },
+    {
+      "url": "https://supabase.com/docs/reference/api/introduction",
+      "status": 200,
+      "error": null,
+      "final_url": "https://supabase.com/docs/reference/api/introduction",
+      "uses": [
+        {
+          "app": "Supabase",
+          "field": "auth",
+          "claim_status": "checked",
+          "quote": "**OAuth2:** OAuth2 allows your application to generate tokens on behalf of a Supabase user, providing secure and limited access to their account without requiring their credentials.",
+          "quote_exact": false,
+          "quote_token_exact": false,
+          "raw_html_only_match": false,
+          "start_fragment_found": false,
+          "end_fragment_found": false
+        }
+      ]
+    },
+    {
+      "url": "https://trailhead.salesforce.com/content/learn/projects/quick-start-connect-postman-to-salesforce/set-up-and-connect-postman",
+      "status": 200,
+      "error": null,
+      "final_url": "https://trailhead.salesforce.com/content/learn/projects/quick-start-connect-postman-to-salesforce/set-up-and-connect-postman",
+      "uses": [
+        {
+          "app": "Salesforce",
+          "field": "auth",
+          "claim_status": "checked",
+          "quote": "Change Grant Type to Authorization Code (With PKCE). You need to authenticate with Salesforce to access the APIs. Authentication grants you an access token that's valid for a certain duration.",
+          "quote_exact": false,
+          "quote_token_exact": false,
+          "raw_html_only_match": false,
+          "start_fragment_found": true,
+          "end_fragment_found": true
+        }
+      ]
+    },
+    {
+      "url": "https://twenty.com/pricing",
+      "status": 200,
+      "error": null,
+      "final_url": "https://twenty.com/pricing",
+      "uses": [
+        {
+          "app": "Twenty",
+          "field": "credential_gate",
+          "claim_status": "checked",
+          "quote": "Sign up for Cloud in under a minute and start your 30-day trial.",
+          "quote_exact": false,
+          "quote_token_exact": false,
+          "raw_html_only_match": true,
+          "start_fragment_found": false,
+          "end_fragment_found": false
+        },
+        {
+          "app": "Twenty",
+          "field": "credential_gate",
+          "claim_status": "checked",
+          "quote": "Self-hosting the open source core is free.",
+          "quote_exact": false,
+          "quote_token_exact": false,
+          "raw_html_only_match": true,
+          "start_fragment_found": false,
+          "end_fragment_found": false
+        },
+        {
+          "app": "Twenty",
+          "field": "official_mcp",
+          "claim_status": "checked",
+          "quote": "Yes. Every Cloud workspace ships with a native MCP server. Connect your AI assistant via OAuth and it can read and write your CRM data in natural language.",
+          "quote_exact": false,
+          "quote_token_exact": false,
+          "raw_html_only_match": true,
+          "start_fragment_found": false,
+          "end_fragment_found": false
+        },
+        {
+          "app": "Twenty",
+          "field": "verdict",
+          "claim_status": "checked",
+          "quote": "Self-hosting the open source core is free.",
+          "quote_exact": false,
+          "quote_token_exact": false,
+          "raw_html_only_match": true,
+          "start_fragment_found": false,
+          "end_fragment_found": false
+        }
+      ]
+    },
+    {
+      "url": "https://vercel.com/docs/accounts/access-tokens",
+      "status": 200,
+      "error": null,
+      "final_url": "https://vercel.com/docs/accounts/access-tokens",
+      "uses": [
+        {
+          "app": "Vercel",
+          "field": "auth",
+          "claim_status": "checked",
+          "quote": "Every token carries a scope that determines which resources it can reach.\n\nPass the token as a Bearer token in the `Authorization` header of your request.",
+          "quote_exact": false,
+          "quote_token_exact": false,
+          "raw_html_only_match": false,
+          "start_fragment_found": true,
+          "end_fragment_found": true
+        }
+      ]
+    },
+    {
+      "url": "https://www.atlassian.com/software/jira/pricing",
+      "status": 200,
+      "error": null,
+      "final_url": "https://www.atlassian.com/software/jira/pricing",
+      "uses": [
+        {
+          "app": "Jira",
+          "field": "credential_gate",
+          "claim_status": "checked",
+          "quote": "\"@type\":\"Offer\",\"name\":\"Free\",\"description\":\"Free forever for 10 users\",\"price\":\"0\",\"priceCurrency\":\"USD\"",
+          "quote_exact": false,
+          "quote_token_exact": false,
+          "raw_html_only_match": true,
+          "start_fragment_found": false,
+          "end_fragment_found": false
+        },
+        {
+          "app": "Jira",
+          "field": "verdict",
+          "claim_status": "checked",
+          "quote": "\"name\":\"Free\",\"description\":\"Free forever for 10 users\",\"price\":\"0\"",
+          "quote_exact": false,
+          "quote_token_exact": false,
+          "raw_html_only_match": true,
+          "start_fragment_found": false,
+          "end_fragment_found": false
+        }
+      ]
+    },
+    {
+      "url": "https://www.consensus.app/home/api/",
+      "status": 200,
+      "error": null,
+      "final_url": "https://www.consensus.app/home/api/",
+      "uses": [
+        {
+          "app": "Consensus",
+          "field": "credential_gate",
+          "claim_status": "checked",
+          "quote": "The same index, filters and research agent behind Consensus. Included on every paid plan, and Deep includes 5x the usage of Pro.",
+          "quote_exact": false,
+          "quote_token_exact": false,
+          "raw_html_only_match": true,
+          "start_fragment_found": false,
+          "end_fragment_found": false
+        },
+        {
+          "app": "Consensus",
+          "field": "api_surface",
+          "claim_status": "checked",
+          "quote": "GET /v1/search",
+          "quote_exact": false,
+          "quote_token_exact": false,
+          "raw_html_only_match": false,
+          "start_fragment_found": false,
+          "end_fragment_found": false
+        },
+        {
+          "app": "Consensus",
+          "field": "api_surface",
+          "claim_status": "checked",
+          "quote": "POST /v1/threads",
+          "quote_exact": false,
+          "quote_token_exact": false,
+          "raw_html_only_match": false,
+          "start_fragment_found": false,
+          "end_fragment_found": false
+        },
+        {
+          "app": "Consensus",
+          "field": "official_mcp",
+          "claim_status": "checked",
+          "quote": "Connect Claude, ChatGPT, Copilot and other MCP clients to the same search, with cited papers in every answer.",
+          "quote_exact": false,
+          "quote_token_exact": false,
+          "raw_html_only_match": true,
+          "start_fragment_found": false,
+          "end_fragment_found": false
+        }
+      ]
+    },
+    {
+      "url": "https://www.datadoghq.com/pricing/",
+      "status": 200,
+      "error": null,
+      "final_url": "https://www.datadoghq.com/pricing/",
+      "uses": [
+        {
+          "app": "Datadog",
+          "field": "credential_gate",
+          "claim_status": "checked",
+          "quote": "GET STARTED FREE Free Trial",
+          "quote_exact": false,
+          "quote_token_exact": false,
+          "raw_html_only_match": false,
+          "start_fragment_found": false,
+          "end_fragment_found": false
+        },
+        {
+          "app": "Datadog",
+          "field": "verdict",
+          "claim_status": "checked",
+          "quote": "GET STARTED FREE Free Trial",
+          "quote_exact": false,
+          "quote_token_exact": false,
+          "raw_html_only_match": false,
+          "start_fragment_found": false,
+          "end_fragment_found": false
+        }
+      ]
+    },
+    {
+      "url": "https://www.ipayx.ai/docs/api",
+      "status": 200,
+      "error": null,
+      "final_url": "https://www.ipayx.ai/docs/api",
+      "uses": [
+        {
+          "app": "iPayX",
+          "field": "auth",
+          "claim_status": "checked",
+          "quote": "Every request requires a Bearer token in the `Authorization` header. Keys start with `ipx_live_`.",
+          "quote_exact": false,
+          "quote_token_exact": false,
+          "raw_html_only_match": false,
+          "start_fragment_found": false,
+          "end_fragment_found": false
+        },
+        {
+          "app": "iPayX",
+          "field": "api_surface",
+          "claim_status": "checked",
+          "quote": "REST API · v1",
+          "quote_exact": false,
+          "quote_token_exact": false,
+          "raw_html_only_match": false,
+          "start_fragment_found": false,
+          "end_fragment_found": false
+        },
+        {
+          "app": "iPayX",
+          "field": "api_surface",
+          "claim_status": "checked",
+          "quote": "3 endpoints\n\naudit · rates · audit/document",
+          "quote_exact": false,
+          "quote_token_exact": false,
+          "raw_html_only_match": false,
+          "start_fragment_found": false,
+          "end_fragment_found": false
+        },
+        {
+          "app": "iPayX",
+          "field": "api_surface",
+          "claim_status": "checked",
+          "quote": "Signed webhooks\n\nHMAC-SHA256 · audit.completed",
+          "quote_exact": false,
+          "quote_token_exact": false,
+          "raw_html_only_match": false,
+          "start_fragment_found": false,
+          "end_fragment_found": false
+        },
+        {
+          "app": "iPayX",
+          "field": "verdict",
+          "claim_status": "checked",
+          "quote": "Every request requires a Bearer token in the `Authorization` header. Keys start with `ipx_live_`.",
+          "quote_exact": false,
+          "quote_token_exact": false,
+          "raw_html_only_match": false,
+          "start_fragment_found": false,
+          "end_fragment_found": false
+        },
+        {
+          "app": "iPayX",
+          "field": "verdict",
+          "claim_status": "checked",
+          "quote": "3 endpoints\n\naudit · rates · audit/document",
+          "quote_exact": false,
+          "quote_token_exact": false,
+          "raw_html_only_match": false,
+          "start_fragment_found": false,
+          "end_fragment_found": false
+        }
+      ]
+    },
+    {
+      "url": "https://www.ipayx.ai/docs/mcp-server",
+      "status": 200,
+      "error": null,
+      "final_url": "https://www.ipayx.ai/docs/mcp-server",
+      "uses": [
+        {
+          "app": "iPayX",
+          "field": "credential_gate",
+          "claim_status": "checked",
+          "quote": "**Free tier:** 10 audits / day per API key.",
+          "quote_exact": false,
+          "quote_token_exact": false,
+          "raw_html_only_match": false,
+          "start_fragment_found": false,
+          "end_fragment_found": false
+        },
+        {
+          "app": "iPayX",
+          "field": "credential_gate",
+          "claim_status": "checked",
+          "quote": "**Paid tier ($199):** unlimited audits, priority routing.",
+          "quote_exact": false,
+          "quote_token_exact": false,
+          "raw_html_only_match": false,
+          "start_fragment_found": false,
+          "end_fragment_found": false
+        },
+        {
+          "app": "iPayX",
+          "field": "official_mcp",
+          "claim_status": "checked",
+          "quote": "Production MCP: `https://hvujzsdwcoweirroubeh.supabase.co/functions/v1/mcp-server`",
+          "quote_exact": false,
+          "quote_token_exact": false,
+          "raw_html_only_match": false,
+          "start_fragment_found": false,
+          "end_fragment_found": false
+        }
+      ]
+    },
+    {
+      "url": "https://www.ipayx.ai/mcp-config",
+      "status": 200,
+      "error": null,
+      "final_url": "https://www.ipayx.ai/mcp-config",
+      "uses": [
+        {
+          "app": "iPayX",
+          "field": "auth",
+          "claim_status": "checked",
+          "quote": "No account or API key required. Transaction audits and forensic reports share 3 free audits per IP per calendar month (UTC). Rate lookups and comparisons are free without an audit quota.",
+          "quote_exact": false,
+          "quote_token_exact": false,
+          "raw_html_only_match": false,
+          "start_fragment_found": false,
+          "end_fragment_found": false
+        },
+        {
+          "app": "iPayX",
+          "field": "credential_gate",
+          "claim_status": "checked",
+          "quote": "No account or API key required. Transaction audits and forensic reports share 3 free audits per IP per calendar month (UTC). Rate lookups and comparisons are free without an audit quota.",
+          "quote_exact": false,
+          "quote_token_exact": false,
+          "raw_html_only_match": false,
+          "start_fragment_found": false,
+          "end_fragment_found": false
+        },
+        {
+          "app": "iPayX",
+          "field": "official_mcp",
+          "claim_status": "checked",
+          "quote": "One MCP server. Claude, ChatGPT, Grok, Perplexity, DeepSeek, Qwen, MiniMax, Copilot, Cursor, n8n — real-time forensic FX audit.",
+          "quote_exact": false,
+          "quote_token_exact": false,
+          "raw_html_only_match": false,
+          "start_fragment_found": false,
+          "end_fragment_found": false
+        },
+        {
+          "app": "iPayX",
+          "field": "official_mcp",
+          "claim_status": "checked",
+          "quote": "MCP Server URL\n\n`https://mcp.ipayx.ai/mcp` Copy",
+          "quote_exact": false,
+          "quote_token_exact": false,
+          "raw_html_only_match": false,
+          "start_fragment_found": false,
+          "end_fragment_found": false
+        },
+        {
+          "app": "iPayX",
+          "field": "official_mcp",
+          "claim_status": "checked",
+          "quote": "Read-only server. It never moves money.",
+          "quote_exact": false,
+          "quote_token_exact": false,
+          "raw_html_only_match": false,
+          "start_fragment_found": false,
+          "end_fragment_found": false
+        }
+      ]
+    },
+    {
+      "url": "https://www.ipayx.ai/pricing",
+      "status": 200,
+      "error": null,
+      "final_url": "https://www.ipayx.ai/pricing",
+      "uses": [
+        {
+          "app": "iPayX",
+          "field": "credential_gate",
+          "claim_status": "checked",
+          "quote": "Free audit included. Upgrade to PDF reports or production-grade API.",
+          "quote_exact": false,
+          "quote_token_exact": false,
+          "raw_html_only_match": false,
+          "start_fragment_found": false,
+          "end_fragment_found": false
+        },
+        {
+          "app": "iPayX",
+          "field": "credential_gate",
+          "claim_status": "checked",
+          "quote": "You have 3 free audits.",
+          "quote_exact": false,
+          "quote_token_exact": false,
+          "raw_html_only_match": false,
+          "start_fragment_found": false,
+          "end_fragment_found": false
+        },
+        {
+          "app": "iPayX",
+          "field": "credential_gate",
+          "claim_status": "checked",
+          "quote": "$299USD / mo",
+          "quote_exact": false,
+          "quote_token_exact": false,
+          "raw_html_only_match": false,
+          "start_fragment_found": false,
+          "end_fragment_found": false
+        },
+        {
+          "app": "iPayX",
+          "field": "verdict",
+          "claim_status": "checked",
+          "quote": "Free audit included. Upgrade to PDF reports or production-grade API.",
+          "quote_exact": false,
+          "quote_token_exact": false,
+          "raw_html_only_match": false,
+          "start_fragment_found": false,
+          "end_fragment_found": false
+        }
+      ]
+    },
+    {
+      "url": "https://www.mongodb.com/docs/atlas/api/api-authentication.md",
+      "status": 200,
+      "error": null,
+      "final_url": "https://www.mongodb.com/docs/atlas/api/api-authentication.md",
+      "uses": [
+        {
+          "app": "MongoDB Atlas",
+          "field": "auth",
+          "claim_status": "checked",
+          "quote": "Service accounts provide improved security over API (Application Programming Interface) keys by using the industry standard [OAuth 2.0](https://oauth.net/2/) protocol with the [Client Credentials flow.](https://www.oauth.com/oauth2-servers/access-tokens/client-credentials/)\n\nEach service account belongs to exactly one organization, and you can grant it access to any number of projects within that organization.",
+          "quote_exact": false,
+          "quote_token_exact": false,
+          "raw_html_only_match": false,
+          "start_fragment_found": true,
+          "end_fragment_found": true
+        }
+      ]
+    },
+    {
+      "url": "https://www.notion.com/help/add-and-manage-connections-with-the-api",
+      "status": 200,
+      "error": null,
+      "final_url": "https://www.notion.com/help/add-and-manage-connections-with-the-api",
+      "uses": [
+        {
+          "app": "Notion",
+          "field": "credential_gate",
+          "claim_status": "checked",
+          "quote": "On Free and Plus plans, only workspace owners can create connections. On Business and Enterprise plans, workspace owners can also let members, or members in certain groups, create them.",
+          "quote_exact": false,
+          "quote_token_exact": false,
+          "raw_html_only_match": true,
+          "start_fragment_found": false,
+          "end_fragment_found": false
+        },
+        {
+          "app": "Notion",
+          "field": "verdict",
+          "claim_status": "checked",
+          "quote": "On Free and Plus plans, only workspace owners can create connections.",
+          "quote_exact": false,
+          "quote_token_exact": false,
+          "raw_html_only_match": true,
+          "start_fragment_found": false,
+          "end_fragment_found": false
+        }
+      ]
+    },
+    {
+      "url": "https://www.pipedrive.com/en/features/mcp-server",
+      "status": 200,
+      "error": null,
+      "final_url": "https://www.pipedrive.com/en/features/mcp-server",
+      "uses": [
+        {
+          "app": "Pipedrive",
+          "field": "official_mcp",
+          "claim_status": "checked",
+          "quote": "Pipedrive MCP is available on all Pipedrive plans. Connect your AI assistant to Pipedrive in minutes via a secure OAuth login.",
+          "quote_exact": false,
+          "quote_token_exact": false,
+          "raw_html_only_match": false,
+          "start_fragment_found": false,
+          "end_fragment_found": true
+        }
+      ]
+    },
+    {
+      "url": "https://www.pipedrive.com/en/newsroom/pipedrive-launches-native-mcp-server-bringing-crm-workflows-directly-into-ai-assistants",
+      "status": 200,
+      "error": null,
+      "final_url": "https://www.pipedrive.com/en/newsroom/pipedrive-launches-native-mcp-server-bringing-crm-workflows-directly-into-ai-assistants",
+      "uses": [
+        {
+          "app": "Pipedrive",
+          "field": "official_mcp",
+          "claim_status": "checked",
+          "quote": "Pipedrive MCP is built and maintained by Pipedrive. Pipedrive MCP is available to customers on all Pipedrive plans.",
+          "quote_exact": false,
+          "quote_token_exact": false,
+          "raw_html_only_match": false,
+          "start_fragment_found": true,
+          "end_fragment_found": true
+        },
+        {
+          "app": "Pipedrive",
+          "field": "verdict",
+          "claim_status": "checked",
+          "quote": "Pipedrive MCP is built and maintained by Pipedrive. Pipedrive MCP is available to customers on all Pipedrive plans.",
+          "quote_exact": false,
+          "quote_token_exact": false,
+          "raw_html_only_match": false,
+          "start_fragment_found": true,
+          "end_fragment_found": true
+        }
+      ]
+    }
+  ]
+}

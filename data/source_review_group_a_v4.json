@@ -1,0 +1,474 @@
+{
+  "checked_at": "2026-11-24",
+  "method": "Read-only direct-request and WebFetch audit of official visible text and official Markdown variants for the assigned apps. No shared browser was used. Hidden HTML, scripts, structured data, and search snippets were not accepted as evidence.",
+  "audit_summary": {
+    "flagged_uses": 24,
+    "actions": 24,
+    "replace": 18,
+    "reclassify": 5,
+    "record_update": 1,
+    "keep": 0,
+    "unresolved": 0,
+    "note": "All 24 assigned uses were resolved with accessible official replacement evidence or complete claim reclassifications. JavaScript-only or hidden-source quotations were not retained."
+  },
+  "actions": [
+    {
+      "app": "DealCloud",
+      "field": "auth",
+      "decision": "replace",
+      "old_url": "https://api.docs.dealcloud.com/docs/token",
+      "old_quote": "user_management data publish ri_import backup",
+      "new_url": "https://api.docs.dealcloud.com/docs/token",
+      "new_title": "DealCloud OAuth Scopes",
+      "new_quote": "Scope Description user_management Required when accessing the User Management API endpoints (api/rest/v1/management) data Required when accessing the Data or Schema API endpoints (api/rest/v4/data or api/rest/v4/schema). publish Required when accessing the Publications API endpoints (api/rest/v1/publication). ri_import Required when accessing the Relationship Intelligence Import API endpoints (api/rest/v1/ri/import). backup Required when accessing the Site Backup API endpoints (api/rest/v4/backups).",
+      "published_at": null,
+      "published_label": "undated",
+      "review_note": "The current official page exposes the scopes as a visible table. The replacement quotes the complete visible table text instead of the old flattened list, preserving every scope and its API mapping."
+    },
+    {
+      "app": "DealCloud",
+      "field": "official_mcp",
+      "decision": "replace",
+      "old_url": "https://api.docs.dealcloud.com/mcp/getting-started",
+      "old_quote": "DealCloud with Celeste license. Manage MCP Servers capability for admins to configure. Celeste Member user group assignment with MCP Access capability enabled for end-user connection.",
+      "new_url": "https://api.docs.dealcloud.com/mcp/getting-started",
+      "new_title": "DealCloud MCP Prerequisites",
+      "new_quote": "Licensing DealCloud with Celeste license. User Permissions Manage MCP Servers capability for admins to configure. Celeste Member user group assignment with MCP Access capability enabled for end-user connection.",
+      "published_at": null,
+      "published_label": "undated",
+      "review_note": "The current official prerequisites table is directly visible. The replacement includes the table labels and exact requirement text; the old quotation omitted those labels."
+    },
+    {
+      "app": "Attio",
+      "field": "credential_gate",
+      "decision": "replace",
+      "old_url": "https://attio.com/pricing",
+      "old_quote": "API and webhooks Free Plus Pro Ultra",
+      "new_url": "https://attio.com/pricing.md",
+      "new_title": "Attio Plan API Access",
+      "new_quote": "| API and webhooks | ✓ | ✓ | ✓ | ✓ |",
+      "published_at": null,
+      "published_label": "undated",
+      "review_note": "The official Markdown pricing variant is directly accessible and its comparison row marks API and webhooks on Free, Plus, Pro, and Ultra. This replaces the old spacing-dependent flattened quotation."
+    },
+    {
+      "app": "Close",
+      "field": "auth",
+      "decision": "replace",
+      "old_url": "https://developer.close.com/api/overview/api-key-authentication",
+      "old_quote": "API keys use HTTP Basic client side authentication. The API key acts as the username and the password is always empty.",
+      "new_url": "https://developer.close.com/api/overview/api-key-authentication.md",
+      "new_title": "Authentication with API keys",
+      "new_quote": "API keys use HTTP Basic client side authentication. Basic authentication is a simple authentication scheme built into the HTTP protocol. To use it, send your HTTP requests with an Authorization header that contains the word Basic followed by a space and a base64-encoded string composed of an api key followed by a colon. The API key acts as the username and the password is always empty.",
+      "published_at": null,
+      "published_label": "undated",
+      "review_note": "The official Markdown page reproduces the full contiguous authentication paragraph. The old quotation skipped the intervening Basic-auth explanation and therefore was not an exact excerpt."
+    },
+    {
+      "app": "Close",
+      "field": "auth",
+      "decision": "replace",
+      "old_url": "https://developer.close.com/api/overview/oauth-authentication",
+      "old_quote": "To implement authentication with OAuth 2.0, you need to create an OAuth app to get your Client ID and Client Secret.",
+      "new_url": "https://developer.close.com/api/overview/oauth-authentication",
+      "new_title": "Authentication with OAuth",
+      "new_quote": "To implement authentication with OAuth 2.0, you need to create an OAuth app to get your Client ID and Client Secret .",
+      "published_at": null,
+      "published_label": "undated",
+      "review_note": "Direct visible-text retrieval confirms the sentence. The replacement preserves the visible-text space before the period that follows the emphasized Client Secret label."
+    },
+    {
+      "app": "Close",
+      "field": "auth",
+      "decision": "replace",
+      "old_url": "https://developer.close.com/api/overview/oauth-authentication",
+      "old_quote": "Send your HTTP requests with an Authorization header that contains the word Bearer followed by a space and the Access Token.",
+      "new_url": "https://developer.close.com/api/overview/oauth-authentication",
+      "new_title": "Close OAuth Access Tokens",
+      "new_quote": "Send your HTTP requests with an Authorization header that contains the word Bearer followed by a space and the Access Token.",
+      "published_at": null,
+      "published_label": "undated",
+      "review_note": "The current official HTML now returns this quotation as exact visible text. A replace action records the direct-fetch verification; no browser keep is claimed."
+    },
+    {
+      "app": "Close",
+      "field": "official_mcp",
+      "decision": "replace",
+      "old_url": "https://developer.close.com/mcp/",
+      "old_quote": "API-key authentication is supported using `Close-API-Key` and `Close-Scope` headers.",
+      "new_url": "https://developer.close.com/mcp.md",
+      "new_title": "Close MCP API-Key Authentication",
+      "new_quote": "Use either OAuth 2.0 or API key authentication via the `Close-API-Key` and `Close-Scope` headers as described above.",
+      "published_at": null,
+      "published_label": "undated",
+      "review_note": "The current official Markdown MCP page contains this exact authentication sentence. It preserves both the OAuth alternative and the API-key header directionality."
+    },
+    {
+      "app": "HubSpot",
+      "field": "official_mcp",
+      "decision": "replace",
+      "old_url": "https://developers.hubspot.com/changelog/remote-hubspot-mcp-server-is-now-generally-available",
+      "old_quote": "The remote HubSpot MCP server is graduating from beta and is now generally available to all HubSpot accounts. The HubSpot MCP server connects any MCP-compatible AI tool to your CRM over a secure, HubSpot-hosted connection authenticated via OAuth 2.1 with PKCE.",
+      "new_url": "https://developers.hubspot.com/changelog/remote-hubspot-mcp-server-is-now-generally-available",
+      "new_title": "Remote HubSpot MCP server is now generally available",
+      "new_quote": "The remote HubSpot MCP server is graduating from beta and is now generally available to all HubSpot accounts. This release adds write capabilities, Activity history, marketing content objects, and organizational context - so any MCP-compatible AI tool can now read from and write to your CRM through natural conversation, with your existing HubSpot permissions respected throughout. What's changing The HubSpot MCP server connects any MCP-compatible AI tool to your CRM over a secure, HubSpot-hosted connection authenticated via OAuth 2.1 with PKCE.",
+      "published_at": "2026-04-15",
+      "published_label": "announced 2026-04-13; updated 2026-04-15",
+      "review_note": "The current changelog separates the two old sentences with release details and a heading. The replacement is the full contiguous visible passage and retains the existing announcement/update dates."
+    },
+    {
+      "app": "Salesforce",
+      "field": "auth",
+      "decision": "replace",
+      "old_url": "https://trailhead.salesforce.com/content/learn/projects/quick-start-connect-postman-to-salesforce/set-up-and-connect-postman",
+      "old_quote": "Change Grant Type to Authorization Code (With PKCE). You need to authenticate with Salesforce to access the APIs. Authentication grants you an access token that's valid for a certain duration.",
+      "new_url": "https://trailhead.salesforce.com/content/learn/projects/quick-start-connect-postman-to-salesforce/set-up-and-connect-postman",
+      "new_title": "Set Up and Connect Postman to Salesforce",
+      "new_quote": "Change Grant Type to Authorization Code (With PKCE) . Authorize Your Org You need to authenticate with Salesforce to access the APIs. Authentication grants you an access token that's valid for a certain duration.",
+      "published_at": null,
+      "published_label": "undated",
+      "review_note": "The current Trailhead page is directly visible. The replacement matches its normalized visible-text spacing around the emphasized grant-type label while preserving PKCE and access-token meaning."
+    },
+    {
+      "app": "Twenty",
+      "field": "credential_gate",
+      "decision": "reclassify",
+      "claim": {
+        "value": "mixed",
+        "gate_class": "mixed",
+        "status": "checked",
+        "reason": "Twenty's current pricing page offers a free trial without a credit card and paid Cloud plans, while its official pricing-plans guide documents a no-cost self-hosted Free plan. The 30-day trial duration is no longer stated in the accessible official text, so the gate remains mixed without asserting a duration. Both pages are undated.",
+        "evidence": [
+          {
+            "url": "https://twenty.com/pricing",
+            "title": "Twenty CRM Pricing",
+            "quote": "Start your free trial today without credit card.",
+            "retrieved_at": "2026-11-24",
+            "published_at": null,
+            "published_label": "undated"
+          },
+          {
+            "url": "https://docs.twenty.com/user-guide/billing/capabilities/pricing-plans.md",
+            "title": "Twenty Pricing Plans",
+            "quote": "Host Twenty on your own infrastructure at no cost:",
+            "retrieved_at": "2026-11-24",
+            "published_at": null,
+            "published_label": "undated"
+          }
+        ],
+        "details": {
+          "gate_class": "mixed",
+          "requirements": [
+            "Cloud offers a self-serve free trial without a credit card; paid Cloud plans follow.",
+            "The self-hosted Free plan can be hosted on the user's own infrastructure at no cost.",
+            "The current accessible official pages do not state a 30-day trial duration."
+          ]
+        }
+      },
+      "review_note": "The old 30-day trial and self-hosting quotations were present only in hidden/raw pricing content. The complete field is reclassified using current visible pricing text and the official Markdown pricing guide; the unsupported duration is removed."
+    },
+    {
+      "app": "Twenty",
+      "field": "official_mcp",
+      "decision": "reclassify",
+      "claim": {
+        "value": "vendor_server",
+        "mcp_mode": "remote",
+        "status": "checked",
+        "reason": "Twenty's official MCP guide says Twenty exposes an MCP server for Cloud and self-hosted workspaces, with Streamable HTTP endpoints and OAuth or API-key authentication. The guide is undated; remote describes the network endpoint even when a local client connects.",
+        "evidence": [
+          {
+            "url": "https://docs.twenty.com/user-guide/ai/capabilities/mcp.md",
+            "title": "Twenty MCP Server",
+            "quote": "Twenty exposes an MCP server so that AI assistants - Claude Desktop, Claude Code, Cursor, ChatGPT, and others - can read and write your CRM data through natural language.",
+            "retrieved_at": "2026-11-24",
+            "published_at": null,
+            "published_label": "undated"
+          },
+          {
+            "url": "https://docs.twenty.com/user-guide/ai/capabilities/mcp.md",
+            "title": "Twenty MCP Cloud Endpoint",
+            "quote": "| **Cloud** | `https://{your-workspace-url}/mcp` (e.g. `https://mycompany.twenty.com/mcp`) |",
+            "retrieved_at": "2026-11-24",
+            "published_at": null,
+            "published_label": "undated"
+          },
+          {
+            "url": "https://docs.twenty.com/user-guide/ai/capabilities/mcp.md",
+            "title": "Twenty MCP Authentication",
+            "quote": "You have two ways to authenticate your MCP client: **OAuth** (recommended) or **API Key**.",
+            "retrieved_at": "2026-11-24",
+            "published_at": null,
+            "published_label": "undated"
+          }
+        ]
+      },
+      "review_note": "The old pricing-page FAQ answer was hidden/raw-only. The complete field is reclassified with the accessible official MCP guide, preserving vendor-server directionality, remote mode, read/write scope, and authentication choices."
+    },
+    {
+      "app": "Twenty",
+      "field": "verdict",
+      "decision": "replace",
+      "old_url": "https://twenty.com/pricing",
+      "old_quote": "Self-hosting the open source core is free.",
+      "new_url": "https://docs.twenty.com/user-guide/billing/capabilities/pricing-plans.md",
+      "new_title": "Twenty Pricing Plans",
+      "new_quote": "Host Twenty on your own infrastructure at no cost:",
+      "published_at": null,
+      "published_label": "undated",
+      "review_note": "The current official pricing guide explicitly documents the no-cost self-hosted Free plan. This replaces the hidden pricing-page FAQ quotation while preserving the free self-hosting basis for the verdict."
+    },
+    {
+      "app": "Jira",
+      "field": "credential_gate",
+      "decision": "reclassify",
+      "claim": {
+        "value": "self_serve_free",
+        "gate_class": "self_serve_free",
+        "status": "checked",
+        "reason": "Atlassian's official plan comparison documents a Free plan with up to 10 users, and its developer console enables OAuth 2.0 (3LO) for integrations. This is self-service rather than sales-gated, but distributable cloud apps must follow Atlassian's separate security requirements. The support page is undated; OAuth guidance was updated November 23, 2026.",
+        "evidence": [
+          {
+            "url": "https://support.atlassian.com/jira-cloud-administration/docs/explore-jira-cloud-plans/",
+            "title": "Explore Jira Cloud plans",
+            "quote": "On the Free plan you get: Up to 10 users (or 3 agents for Jira Service Management)",
+            "retrieved_at": "2026-11-24",
+            "published_at": null,
+            "published_label": "undated"
+          },
+          {
+            "url": "https://developer.atlassian.com/cloud/jira/platform/oauth-2-3lo-apps/",
+            "title": "Jira Cloud OAuth 2.0 (3LO)",
+            "quote": "Before you can implement OAuth 2.0 (3LO) for your app, you need to enable it for your app using the developer console .",
+            "retrieved_at": "2026-11-24",
+            "published_at": null,
+            "published_label": "Last updated Nov 23, 2026"
+          }
+        ],
+        "details": {
+          "gate_class": "self_serve_free",
+          "requirements": [
+            "Jira Cloud Free supports up to 10 users.",
+            "Developers can enable OAuth 2.0 (3LO) for an app in the Atlassian developer console.",
+            "Users can create account API tokens for script/manual use; production cloud-app distribution must follow Atlassian security requirements."
+          ]
+        }
+      },
+      "review_note": "The old quotation was hidden JSON-LD on a JavaScript pricing shell. The complete field is reclassified with Atlassian's visible official support comparison, removing the raw structured-data citation and unsupported explicit zero-USD wording."
+    },
+    {
+      "app": "Jira",
+      "field": "verdict",
+      "decision": "replace",
+      "old_url": "https://www.atlassian.com/software/jira/pricing",
+      "old_quote": "\"name\":\"Free\",\"description\":\"Free forever for 10 users\",\"price\":\"0\"",
+      "new_url": "https://support.atlassian.com/jira-cloud-administration/docs/explore-jira-cloud-plans/",
+      "new_title": "Explore Jira Cloud plans",
+      "new_quote": "On the Free plan you get: Up to 10 users (or 3 agents for Jira Service Management)",
+      "published_at": null,
+      "published_label": "undated",
+      "review_note": "The official support page directly displays the Free plan and its 10-user allowance. It replaces the hidden JSON-LD pricing quotation without relying on a browser or structured data."
+    },
+    {
+      "app": "Consensus",
+      "field": "credential_gate",
+      "decision": "replace",
+      "old_url": "https://www.consensus.app/home/api/",
+      "old_quote": "The same index, filters and research agent behind Consensus. Included on every paid plan, and Deep includes 5x the usage of Pro.",
+      "new_url": "https://raw.githubusercontent.com/Consensus-NLP/consensus-api/main/README.md",
+      "new_title": "Consensus API paid-plan capabilities",
+      "new_quote": "One call returns relevance-ranked papers with DOIs, citation counts, study type, sample size, journal quality (SJR quartile), a plain-language takeaway and, on paid plans, the full-text passages that answer your query.",
+      "published_at": null,
+      "published_label": "undated",
+      "review_note": "The product page is JavaScript-only under direct retrieval. The official API repository provides accessible current evidence that richer full-text results are paid-plan capabilities; the stale 5x marketing wording is not retained."
+    },
+    {
+      "app": "Consensus",
+      "field": "api_surface",
+      "decision": "replace",
+      "old_url": "https://www.consensus.app/home/api/",
+      "old_quote": "GET /v1/search",
+      "new_url": "https://raw.githubusercontent.com/Consensus-NLP/consensus-api/main/README.md",
+      "new_title": "Consensus API search endpoint",
+      "new_quote": "| `GET /v1/search` | Semantic paper search with filters. Synchronous, one call. |",
+      "published_at": null,
+      "published_label": null,
+      "review_note": "The official API repository's accessible endpoint table confirms the current GET /v1/search route and its purpose. The old product-page date is cleared because the replacement repository README is undated."
+    },
+    {
+      "app": "Consensus",
+      "field": "api_surface",
+      "decision": "replace",
+      "old_url": "https://www.consensus.app/home/api/",
+      "old_quote": "POST /v1/threads",
+      "new_url": "https://raw.githubusercontent.com/Consensus-NLP/consensus-api/main/README.md",
+      "new_title": "Consensus API threads endpoint",
+      "new_quote": "| `POST /v1/threads` | Hand a research question to the Consensus research agent. Returns a `thread_id`. |",
+      "published_at": null,
+      "published_label": null,
+      "review_note": "The official API repository's accessible endpoint table confirms POST /v1/threads and the returned thread identifier. The old product-page date is cleared because the replacement README is undated."
+    },
+    {
+      "app": "Consensus",
+      "field": "official_mcp",
+      "decision": "replace",
+      "old_url": "https://www.consensus.app/home/api/",
+      "old_quote": "Connect Claude, ChatGPT, Copilot and other MCP clients to the same search, with cited papers in every answer.",
+      "new_url": "https://raw.githubusercontent.com/Consensus-NLP/consensus-mcp/main/README.md",
+      "new_title": "Consensus hosted MCP deployment",
+      "new_quote": "Any client that supports remote MCP servers (Streamable HTTP) works. Point it at `https://mcp.consensus.app/mcp` and sign in with OAuth, or send an API key as a Bearer token:",
+      "published_at": null,
+      "published_label": "undated",
+      "review_note": "The JavaScript-only product page is replaced by the official MCP repository's accessible remote endpoint and authentication instructions. This preserves vendor-server directionality and Streamable HTTP/OAuth/bearer details."
+    },
+    {
+      "app": "Notion",
+      "field": "credential_gate",
+      "decision": "reclassify",
+      "claim": {
+        "value": "self_serve_free",
+        "gate_class": "self_serve_free",
+        "status": "checked",
+        "reason": "Notion's current pricing page lists a $0 Free plan, and its current Help Center says both Members and Workspace owners can add connections, with creation depending on plan and workspace settings. Enterprise owners can restrict member installs, and internal-connection page access must still be granted manually. The sources are undated.",
+        "evidence": [
+          {
+            "url": "https://www.notion.com/pricing",
+            "title": "Notion pricing",
+            "quote": "Free $0 per seat/month",
+            "retrieved_at": "2026-11-24",
+            "published_at": null,
+            "published_label": "undated"
+          },
+          {
+            "url": "https://www.notion.com/help/add-and-manage-connections-with-the-api",
+            "title": "Add & manage connections in Notion",
+            "quote": "Both Members and Workspace owners can add connections to a workspace in Settings → Connections .",
+            "retrieved_at": "2026-11-24",
+            "published_at": null,
+            "published_label": "undated"
+          },
+          {
+            "url": "https://www.notion.com/help/add-and-manage-connections-with-the-api",
+            "title": "Notion connection creation settings",
+            "quote": "Who can create a connection depends on your plan and your workspace's settings.",
+            "retrieved_at": "2026-11-24",
+            "published_at": null,
+            "published_label": "undated"
+          },
+          {
+            "url": "https://www.notion.com/help/add-and-manage-connections-with-the-api",
+            "title": "Notion Enterprise connection controls",
+            "quote": "On Enterprise plans, workspace owners can restrict which connections members are allowed to install.",
+            "retrieved_at": "2026-11-24",
+            "published_at": null,
+            "published_label": "undated"
+          },
+          {
+            "url": "https://developers.notion.com/guides/authorization/overview",
+            "title": "Notion authorization overview",
+            "quote": "Before a connection can interact with your Notion workspace page(s), the page must be manually shared with the connection.",
+            "retrieved_at": "2026-11-24",
+            "published_at": null,
+            "published_label": "undated"
+          }
+        ],
+        "details": {
+          "gate_class": "self_serve_free",
+          "requirements": [
+            "Notion lists a Free plan at $0 per seat/month.",
+            "Both Members and Workspace owners can add connections; creators depend on plan and workspace settings.",
+            "Enterprise owners can restrict which connections members may install.",
+            "Internal-connection page access must be granted manually."
+          ]
+        }
+      },
+      "review_note": "The old Free/Plus owner-only statement is absent and contradicted by the current visible Help Center. The complete field is reclassified to the current member/owner and plan/settings rules while retaining the self-serve Free classification and manual-sharing constraint."
+    },
+    {
+      "app": "Notion",
+      "field": "verdict",
+      "decision": "reclassify",
+      "claim": {
+        "value": "documented_build_candidate",
+        "status": "checked",
+        "reason": "Current REST authentication, Notion's $0 Free plan, and current connection management support a documented build candidate. The current Help Center allows both Members and Workspace owners to add connections rather than limiting creation to owners on Free/Plus; plan/settings and manual page-sharing constraints still apply. Access evidence is undated.",
+        "evidence": [
+          {
+            "url": "https://www.notion.com/pricing",
+            "title": "Notion pricing",
+            "quote": "Free $0 per seat/month",
+            "retrieved_at": "2026-11-24",
+            "published_at": null,
+            "published_label": "undated"
+          },
+          {
+            "url": "https://www.notion.com/help/add-and-manage-connections-with-the-api",
+            "title": "Add & manage connections in Notion",
+            "quote": "Both Members and Workspace owners can add connections to a workspace in Settings → Connections .",
+            "retrieved_at": "2026-11-24",
+            "published_at": null,
+            "published_label": "undated"
+          },
+          {
+            "url": "https://developers.notion.com/reference/intro",
+            "title": "Notion API introduction",
+            "quote": "For requests to pages, databases, and other workspace resources, send an Authorization: Bearer header with your token and a Notion-Version header .",
+            "retrieved_at": "2026-11-24",
+            "published_at": null,
+            "published_label": "undated"
+          }
+        ]
+      },
+      "review_note": "The verdict's old owner-only quotation is contradicted by the current Help Center. The complete verdict field is reclassified with current Free-plan, connection-management, and REST-authentication evidence; the build-candidate value is unchanged."
+    },
+    {
+      "app": "Notion",
+      "decision": "record_update",
+      "updates": {
+        "summary": "Notion exposes a documented REST API and a hosted remote MCP server. Its Free plan is self-serve; current Help Center guidance allows both Members and Workspace owners to add connections, subject to plan and workspace settings, and pages must be explicitly shared with the connection.",
+        "blocker": "Connection creation depends on plan and workspace settings, Enterprise owners can restrict member installs, and internal-connection page access must be granted manually. The hosted MCP is current, while the local open-source server is no longer actively maintained; do not build against the retiring SSE endpoint."
+      },
+      "review_note": "The top-level summary and blocker repeated the superseded Free/Plus owner-only rule. These complete replacement fields align the record with the reclassified current official evidence."
+    },
+    {
+      "app": "Pipedrive",
+      "field": "official_mcp",
+      "decision": "replace",
+      "old_url": "https://www.pipedrive.com/en/features/mcp-server",
+      "old_quote": "Pipedrive MCP is available on all Pipedrive plans. Connect your AI assistant to Pipedrive in minutes via a secure OAuth login.",
+      "new_url": "https://www.pipedrive.com/en/features/mcp-server",
+      "new_title": "Pipedrive MCP Server",
+      "new_quote": "Connect your AI assistant to Pipedrive in minutes via a secure OAuth login. No coding, APIs, middleware or developer support required.",
+      "published_at": null,
+      "published_label": "undated",
+      "review_note": "The current feature page directly displays the OAuth setup sentence but no longer displays the all-plans sentence. The replacement preserves the page's current OAuth meaning; all-plans availability remains supported by the separate launch announcement."
+    },
+    {
+      "app": "Pipedrive",
+      "field": "official_mcp",
+      "decision": "replace",
+      "old_url": "https://www.pipedrive.com/en/newsroom/pipedrive-launches-native-mcp-server-bringing-crm-workflows-directly-into-ai-assistants",
+      "old_quote": "Pipedrive MCP is built and maintained by Pipedrive. Pipedrive MCP is available to customers on all Pipedrive plans.",
+      "new_url": "https://www.pipedrive.com/en/newsroom/pipedrive-launches-native-mcp-server-bringing-crm-workflows-directly-into-ai-assistants",
+      "new_title": "Pipedrive Launches Native MCP Server",
+      "new_quote": "Unlike custom API integrations or unofficial third-party connectors, Pipedrive MCP is built and maintained by Pipedrive, requires no coding, and works with real-time CRM data. Every action performed through an AI assistant follows the user's existing permissions and is recorded in Pipedrive's change logs for full transparency and accountability. The launch reflects a broader shift in how professionals interact with software. As AI assistants become increasingly central to daily work, businesses are looking for ways to bring trusted business context into those environments without sacrificing security, reliability or control. Pipedrive MCP is available to customers on all Pipedrive plans.",
+      "published_at": "2026-06-30",
+      "published_label": "published 2026-06-30",
+      "review_note": "The current announcement separates the old sentences with additional paragraphs. The replacement quotes the full contiguous visible passage, preserving Pipedrive ownership, real-time data, permissions, and all-plans availability."
+    },
+    {
+      "app": "Pipedrive",
+      "field": "verdict",
+      "decision": "replace",
+      "old_url": "https://www.pipedrive.com/en/newsroom/pipedrive-launches-native-mcp-server-bringing-crm-workflows-directly-into-ai-assistants",
+      "old_quote": "Pipedrive MCP is built and maintained by Pipedrive. Pipedrive MCP is available to customers on all Pipedrive plans.",
+      "new_url": "https://www.pipedrive.com/en/newsroom/pipedrive-launches-native-mcp-server-bringing-crm-workflows-directly-into-ai-assistants",
+      "new_title": "Pipedrive Launches Native MCP Server",
+      "new_quote": "Unlike custom API integrations or unofficial third-party connectors, Pipedrive MCP is built and maintained by Pipedrive, requires no coding, and works with real-time CRM data. Every action performed through an AI assistant follows the user's existing permissions and is recorded in Pipedrive's change logs for full transparency and accountability. The launch reflects a broader shift in how professionals interact with software. As AI assistants become increasingly central to daily work, businesses are looking for ways to bring trusted business context into those environments without sacrificing security, reliability or control. Pipedrive MCP is available to customers on all Pipedrive plans.",
+      "published_at": "2026-06-30",
+      "published_label": "published 2026-06-30",
+      "review_note": "The verdict uses the same current contiguous launch-announcement passage as the MCP field, replacing the old non-contiguous two-sentence quotation and preserving its publication date."
+    }
+  ],
+  "unresolved": []
+}

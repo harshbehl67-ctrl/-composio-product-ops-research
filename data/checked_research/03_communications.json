@@ -1,0 +1,2014 @@
+{
+  "category": "Communications and Messaging",
+  "checked_at": "2026-11-24",
+  "records": [
+    {
+      "number": 21,
+      "app": "Slack",
+      "category": "Communications and Messaging",
+      "summary": "Slack provides a broad HTTP RPC-style Web API authenticated with scoped OAuth 2.0 bot or user bearer tokens. A free workspace tier supports development, and Slack operates a remote MCP server for channel search, messaging, and other actions. MCP eligibility is restricted to Marketplace-published or internal apps, so ordinary unlisted apps cannot use it.",
+      "blocker": "The Slack MCP server is limited to directory-published Marketplace apps or internal apps; unlisted apps are prohibited. Workspace administrators also control app installation and client access.",
+      "next_action": "Build against the Web API with the minimum bot or user scopes. If MCP is required, use an internal app for validation or complete Marketplace publication, then configure confidential OAuth for the Slack MCP server.",
+      "fields": {
+        "auth": {
+          "status": "checked",
+          "value": [
+            "OAuth 2.0 scoped bot bearer tokens",
+            "OAuth 2.0 scoped user bearer tokens"
+          ],
+          "reason": "Slack's v2 OAuth flow issues access tokens for installed apps, with separate bot and optional user scopes. Web API calls transmit the resulting token as a bearer token in the Authorization header. The cited authentication and Web API pages are undated.",
+          "evidence": [
+            {
+              "url": "https://docs.slack.dev/authentication/installing-with-oauth/",
+              "title": "Installing with OAuth",
+              "quote": "Slack apps are installed with a v2 OAuth 2.0 flow.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            },
+            {
+              "url": "https://docs.slack.dev/authentication/installing-with-oauth/",
+              "title": "Installing with OAuth",
+              "quote": "The `scope` list requests scopes for your app's bot user. If you have specific need for a user token (for example, so that you can act on behalf of a user), provide a `user_scope` parameter with requested user scopes instead of, or in addition to, the `scope` parameter.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            },
+            {
+              "url": "https://docs.slack.dev/apis/web-api/",
+              "title": "Slack Web API",
+              "quote": "You must transmit your `token` as a bearer token in the `Authorization` HTTP header.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            }
+          ]
+        },
+        "credential_gate": {
+          "status": "checked",
+          "value": "self_serve_free",
+          "gate_class": "self_serve_free",
+          "details": {
+            "gate_class": "self_serve_free"
+          },
+          "reason": "Slack explicitly offers a free-forever tier and says users can start with the basics for free. App registration and OAuth installation are self-service; the pricing page is undated.",
+          "evidence": [
+            {
+              "url": "https://slack.com/pricing",
+              "title": "Slack Pricing",
+              "quote": "Or start with the basics for free, and upgrade at any time.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated",
+              "verification_method": "headless Chromium rendered body innerText (installed Chrome; no raw HTML)",
+              "verification_note": "The rendered official page reproduced the normalized quotation. Direct HTTP retrieval missed JavaScript-rendered, redirect-sensitive, or charset-sensitive content; no search snippet or hidden raw HTML was used.",
+              "verified_at": "2026-11-24",
+              "source_review": "The rendered official page reproduced the normalized quotation. Direct HTTP retrieval missed JavaScript-rendered, redirect-sensitive, or charset-sensitive content; no search snippet or hidden raw HTML was used."
+            },
+            {
+              "url": "https://slack.com/pricing",
+              "title": "Slack Pricing",
+              "quote": "Free forever",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            }
+          ]
+        },
+        "api_surface": {
+          "status": "checked",
+          "value": "HTTP API; broad documented surface",
+          "api_types": [
+            "HTTP API"
+          ],
+          "breadth": "broad",
+          "details": {
+            "api_types": [
+              "HTTP API"
+            ],
+            "breadth": "broad"
+          },
+          "reason": "The Web API is explicitly a collection of HTTP RPC-style methods and explicitly is not a REST API. Slack documents more than 200 methods, supporting a broad HTTP API classification rather than REST. The page is undated.",
+          "evidence": [
+            {
+              "url": "https://docs.slack.dev/apis/web-api/",
+              "title": "Slack Web API",
+              "quote": "The Web API is a collection of HTTP RPC-style methods, all with URLs in the form `https://slack.com/api/METHOD_FAMILY.method`.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            },
+            {
+              "url": "https://docs.slack.dev/apis/web-api/",
+              "title": "Slack Web API",
+              "quote": "While it's not a REST API, those familiar with REST should be at home with its foundations in HTTP.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            },
+            {
+              "url": "https://docs.slack.dev/apis/web-api/",
+              "title": "Slack Web API",
+              "quote": "With over 200 methods, surely there's one right for you.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            }
+          ]
+        },
+        "official_mcp": {
+          "status": "checked",
+          "value": "vendor_server",
+          "mcp_mode": "remote",
+          "reason": "Slack operates a remote JSON-RPC 2.0 MCP server over Streamable HTTP at https://mcp.slack.com/mcp. It supports confidential OAuth, but only Marketplace-published and internal apps may use MCP; unlisted apps are prohibited. The MCP documentation is undated.",
+          "evidence": [
+            {
+              "url": "https://docs.slack.dev/ai/slack-mcp-server/",
+              "title": "Slack MCP server",
+              "quote": "With the Slack MCP server, your integrated apps can search channels, send messages, and perform other Slack actions through MCP clients.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            },
+            {
+              "url": "https://docs.slack.dev/ai/slack-mcp-server/",
+              "title": "Slack MCP server",
+              "quote": "Slack supports JSON-RPC 2.0 over Streamable HTTP. All requests should be sent to:\n\n`https://mcp.slack.com/mcp`",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            },
+            {
+              "url": "https://docs.slack.dev/ai/slack-mcp-server/",
+              "title": "Slack MCP server",
+              "quote": "Only apps published in the Slack Marketplace and internal apps can use MCP at this time; unlisted apps are prohibited from using MCP.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            }
+          ]
+        },
+        "composio_toolkit": {
+          "status": "checked",
+          "value": "listed_exact",
+          "slug": "SLACK",
+          "auth_display": "OAUTH2",
+          "tools": 174,
+          "triggers": 9,
+          "reason": "Composio's Slack toolkit page is an exact product listing with slug SLACK, OAuth2 authentication, 174 tools, and 9 triggers. The page is undated and is used only as Composio catalog evidence.",
+          "evidence": [
+            {
+              "url": "https://docs.composio.dev/toolkits/slack",
+              "title": "Slack Composio Toolkit",
+              "quote": "Slug: SLACK",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            }
+          ]
+        },
+        "verdict": {
+          "status": "checked",
+          "value": "documented_build_candidate",
+          "reason": "A broad documented HTTP API, scoped OAuth, and a free tier make Slack a documented build candidate. The vendor MCP server is useful but has Marketplace/internal eligibility restrictions. The supporting API and pricing pages are undated.",
+          "evidence": [
+            {
+              "url": "https://docs.slack.dev/apis/web-api/",
+              "title": "Slack Web API",
+              "quote": "With over 200 methods, surely there's one right for you.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            },
+            {
+              "url": "https://slack.com/pricing",
+              "title": "Slack Pricing",
+              "quote": "Or start with the basics for free, and upgrade at any time.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated",
+              "verification_method": "headless Chromium rendered body innerText (installed Chrome; no raw HTML)",
+              "verification_note": "The rendered official page reproduced the normalized quotation. Direct HTTP retrieval missed JavaScript-rendered, redirect-sensitive, or charset-sensitive content; no search snippet or hidden raw HTML was used.",
+              "verified_at": "2026-11-24",
+              "source_review": "The rendered official page reproduced the normalized quotation. Direct HTTP retrieval missed JavaScript-rendered, redirect-sensitive, or charset-sensitive content; no search snippet or hidden raw HTML was used."
+            }
+          ]
+        }
+      }
+    },
+    {
+      "number": 22,
+      "app": "Twilio",
+      "category": "Communications and Messaging",
+      "summary": "Twilio offers broad REST APIs, including Programmable Messaging, authenticated with HTTP Basic credentials or API key SID/secret pairs. Account access starts with a self-serve free trial and production usage is paid. Twilio also operates a hosted remote documentation MCP server in Public Beta, but that server is read-only and does not execute Twilio account API calls.",
+      "blocker": "Production API usage is usage-based paid access. The current Twilio MCP server only searches public documentation and cannot connect to an account or execute API calls.",
+      "next_action": "Create a trial account, generate an API key in the Console, and build the messaging flow with the Programmable Messaging REST API. Use the Twilio MCP server only for documentation assistance; execute account actions through authenticated REST calls.",
+      "fields": {
+        "auth": {
+          "status": "checked",
+          "value": [
+            "HTTP Basic authentication with API key SID and API key secret"
+          ],
+          "reason": "Twilio documents HTTP Basic authentication using an API key SID as username and API key secret as password, and provides self-service API-key management in the Console. The credential pages carry September 2026 dateModified metadata.",
+          "evidence": [
+            {
+              "url": "https://www.twilio.com/docs/iam/credentials/api",
+              "title": "Authenticate requests to Twilio APIs",
+              "quote": "To authenticate requests to the Twilio APIs, Twilio supports HTTP Basic authentication. Use your API key SID as the username and your API key secret as the password.",
+              "retrieved_at": "2026-11-24",
+              "published_at": "2026-09-28",
+              "published_label": "dateModified: 2026-09-28T13:08:32.000Z"
+            },
+            {
+              "url": "https://www.twilio.com/docs/iam/api-keys/keys-in-console",
+              "title": "API keys in the Twilio Console",
+              "quote": "You can create and manage all of your API keys in the Twilio Console.",
+              "retrieved_at": "2026-11-24",
+              "published_at": "2026-09-21",
+              "published_label": "dateModified: 2026-09-21T14:08:23.000Z"
+            }
+          ]
+        },
+        "credential_gate": {
+          "status": "checked",
+          "value": "self_serve_trial",
+          "gate_class": "self_serve_trial",
+          "details": {
+            "gate_class": "self_serve_trial"
+          },
+          "reason": "Twilio explicitly offers a no-credit-card free trial, followed by usage-based paid pricing. The rendered pricing label is only 'Pricing current as of October 2026', so published_at is null rather than inventing a day.",
+          "evidence": [
+            {
+              "url": "https://www.twilio.com/en-us/pricing",
+              "title": "Twilio Pricing",
+              "quote": "Start for free. Then pay as you go.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "Pricing current as of October 2026"
+            },
+            {
+              "url": "https://www.twilio.com/en-us/pricing",
+              "title": "Twilio Pricing",
+              "quote": "Sign up for a free trial—no credit card required",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "Pricing current as of October 2026"
+            },
+            {
+              "url": "https://www.twilio.com/en-us/pricing",
+              "title": "Twilio Pricing",
+              "quote": "Pay as you go with usage-based pricing",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "Pricing current as of October 2026"
+            }
+          ]
+        },
+        "api_surface": {
+          "status": "checked",
+          "value": "REST; broad documented surface",
+          "api_types": [
+            "REST"
+          ],
+          "breadth": "broad",
+          "details": {
+            "api_types": [
+              "REST"
+            ],
+            "breadth": "broad"
+          },
+          "reason": "Twilio directly identifies Programmable Messaging as a REST API and documents HTTPS transport. Its API catalog spans multiple communications products, supporting broad breadth. The Messaging API page carries June 2026 dateModified metadata.",
+          "evidence": [
+            {
+              "url": "https://www.twilio.com/docs/messaging/api",
+              "title": "Programmable Messaging REST API",
+              "quote": "With the Programmable Messaging REST API, you can add messaging capabilities to your application.",
+              "retrieved_at": "2026-11-24",
+              "published_at": "2026-06-09",
+              "published_label": "dateModified: 2026-06-09T22:30:38.000Z"
+            },
+            {
+              "url": "https://www.twilio.com/docs/messaging/api",
+              "title": "Programmable Messaging REST API",
+              "quote": "To ensure data privacy, Twilio serves its APIs over HTTPS.",
+              "retrieved_at": "2026-11-24",
+              "published_at": "2026-06-09",
+              "published_label": "dateModified: 2026-06-09T22:30:38.000Z"
+            }
+          ]
+        },
+        "official_mcp": {
+          "status": "checked",
+          "value": "vendor_server",
+          "mcp_mode": "remote",
+          "reason": "Twilio hosts a remote Public Beta MCP server at mcp.twilio.com/docs. It is read-only and searches public API documentation; it does not connect to a Twilio account or execute API calls. The page was modified November 18, 2026.",
+          "evidence": [
+            {
+              "url": "https://www.twilio.com/docs/ai/mcp",
+              "title": "Twilio MCP",
+              "quote": "Twilio MCP and Twilio Skills are available as Public Beta products, and the information contained in this document is subject to change.",
+              "retrieved_at": "2026-11-24",
+              "published_at": "2026-11-18",
+              "published_label": "dateModified: 2026-11-18T16:35:49.000Z"
+            },
+            {
+              "url": "https://www.twilio.com/docs/ai/mcp",
+              "title": "Twilio MCP",
+              "quote": "This server is read-only: it searches and retrieves public API documentation, and it does not connect to a Twilio account or execute any API calls. No Account SID, API key, or other credential is required or accepted.",
+              "retrieved_at": "2026-11-24",
+              "published_at": "2026-11-18",
+              "published_label": "dateModified: 2026-11-18T16:35:49.000Z"
+            },
+            {
+              "url": "https://www.twilio.com/docs/ai/mcp",
+              "title": "Twilio MCP",
+              "quote": "No installation required: The server is hosted by Twilio at `mcp.twilio.com/docs`—point your IDE at the URL.",
+              "retrieved_at": "2026-11-24",
+              "published_at": "2026-11-18",
+              "published_label": "dateModified: 2026-11-18T16:35:49.000Z"
+            }
+          ]
+        },
+        "composio_toolkit": {
+          "status": "checked",
+          "value": "listed_exact",
+          "slug": "TWILIO",
+          "auth_display": "API_KEY, BASIC, S2S_OAUTH2",
+          "tools": 454,
+          "triggers": 45,
+          "reason": "Composio's Twilio toolkit page is an exact listing with slug TWILIO, API_KEY/BASIC/S2S_OAUTH2 authentication, 454 tools, and 45 triggers. The page is undated and is used only as Composio catalog evidence.",
+          "evidence": [
+            {
+              "url": "https://docs.composio.dev/toolkits/twilio",
+              "title": "Twilio Composio Toolkit",
+              "quote": "Slug: TWILIO",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            }
+          ]
+        },
+        "verdict": {
+          "status": "checked",
+          "value": "documented_build_candidate",
+          "reason": "Twilio is a documented build candidate because its REST API and credential flow are explicit and account access begins with a self-serve trial. Production use is paid, and the vendor MCP server is documentation-only. Pricing has only a month-level October 2026 label.",
+          "evidence": [
+            {
+              "url": "https://www.twilio.com/docs/messaging/api",
+              "title": "Programmable Messaging REST API",
+              "quote": "With the Programmable Messaging REST API, you can add messaging capabilities to your application.",
+              "retrieved_at": "2026-11-24",
+              "published_at": "2026-06-09",
+              "published_label": "dateModified: 2026-06-09T22:30:38.000Z"
+            },
+            {
+              "url": "https://www.twilio.com/en-us/pricing",
+              "title": "Twilio Pricing",
+              "quote": "Sign up for a free trial—no credit card required",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "Pricing current as of October 2026"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "number": 23,
+      "app": "Zoho Cliq",
+      "category": "Communications and Messaging",
+      "summary": "Zoho Cliq provides a broad REST API with OAuth 2.0 scoped access tokens and integration-component API tokens. API support is included on every plan, including Free. Zoho operates an official remote MCP server and generates a unique secure MCP URL for each configured server.",
+      "blocker": "MCP setup requires authenticated credentials for each configured tool and an AI-agent plan that permits integration creation. Each MCP server receives its own generated endpoint URL.",
+      "next_action": "Register a Zoho OAuth client, request only the required scopes, and build with Cliq REST v3. For MCP, create a server through the supported configuration flow and store its generated URL and credentials securely.",
+      "fields": {
+        "auth": {
+          "status": "checked",
+          "value": [
+            "OAuth 2.0 scoped access tokens",
+            "Integration-component API tokens"
+          ],
+          "reason": "Zoho Cliq documents OAuth client registration, scoped access tokens, and the Zoho-oauthtoken Authorization scheme. It also documents API tokens issued with integration components for use as request parameters. The OAuth and FAQ pages are undated.",
+          "evidence": [
+            {
+              "url": "https://www.zoho.com/cliq/help/restapi/v3/oauth/",
+              "title": "Zoho Cliq OAuth",
+              "quote": "The first step in using OAuth authentication is registering your app with the Zoho API console. Once you register your client, you will get a Client ID and Client secret for your application.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            },
+            {
+              "url": "https://www.zoho.com/cliq/help/restapi/v3/oauth/",
+              "title": "Zoho Cliq OAuth",
+              "quote": "After your app has the access token, it can access Zoho's protected resources. Upon providing the access token to the resource server, your app will be granted access according to the scopes defined in the request.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            },
+            {
+              "url": "https://www.zoho.com/cliq/help/platform/faq.html",
+              "title": "Zoho Cliq Developer FAQ",
+              "quote": "API tokens are also provided while creating an application with the integration components. These tokens should be used as a request parameter with the appropriate key for all API Endpoints.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            }
+          ]
+        },
+        "credential_gate": {
+          "status": "checked",
+          "value": "self_serve_free",
+          "gate_class": "self_serve_free",
+          "details": {
+            "gate_class": "self_serve_free"
+          },
+          "reason": "The official plan-comparison table explicitly marks API support Yes for Free, Standard, Professional, and Enterprise. Client registration is self-service. The plan-comparison source is undated; the pricing page carries dateModified 2026-10-13.",
+          "evidence": [
+            {
+              "url": "https://www.zoho.com/cliq/plan-comparison.md",
+              "title": "Zoho Cliq Plan Comparison",
+              "quote": "| **Developer platform** |  |  |  |  |\n| API support | Yes | Yes | Yes | Yes |",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            },
+            {
+              "url": "https://www.zoho.com/cliq/help/restapi/v3/registerclient/",
+              "title": "Register a Zoho Cliq client",
+              "quote": "To access Zoho's resources through the Zoho Cliq APIs, you first need to register your application.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            },
+            {
+              "url": "https://www.zoho.com/cliq/pricing.html",
+              "title": "Zoho Cliq Pricing",
+              "quote": "If you choose to not subscribe to Zoho Cliq after your trial ends, your account will be downgraded to our free plan, where you can continue to communicate and collaborate with your colleagues.",
+              "retrieved_at": "2026-11-24",
+              "published_at": "2026-10-13",
+              "published_label": "dateModified: 2026-10-13"
+            }
+          ]
+        },
+        "api_surface": {
+          "status": "checked",
+          "value": "REST; broad documented surface",
+          "api_types": [
+            "REST"
+          ],
+          "breadth": "broad",
+          "details": {
+            "api_types": [
+              "REST"
+            ],
+            "breadth": "broad"
+          },
+          "reason": "Zoho Cliq explicitly describes REST v3 as RESTful, with resource-oriented URLs, JSON bodies, standard HTTP verbs, and uniform errors. It documents CRUD endpoints across bots, commands, actions, widgets, schedulers, and more. The API introduction is undated.",
+          "evidence": [
+            {
+              "url": "https://www.zoho.com/cliq/help/restapi/v3/introduction/",
+              "title": "Zoho Cliq REST API Introduction",
+              "quote": "Zoho Cliq's REST API is designed based on RESTful architecture principles, enabling seamless communication between your applications and Zoho Cliq.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            },
+            {
+              "url": "https://www.zoho.com/cliq/help/restapi/v3/introduction/",
+              "title": "Zoho Cliq REST API Introduction",
+              "quote": "Every v3 endpoint follows a consistent model with resource-oriented URLs, JSON request/response bodies, standard HTTP verbs, and uniform error structures.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            },
+            {
+              "url": "https://www.zoho.com/cliq/help/restapi/v3/introduction/",
+              "title": "Zoho Cliq REST API Introduction",
+              "quote": "v3 introduces CRUD API endpoints for bots, slash commands, message actions, widgets, schedulers, and more, which were not available in v2.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            }
+          ]
+        },
+        "official_mcp": {
+          "status": "checked",
+          "value": "vendor_server",
+          "mcp_mode": "remote",
+          "reason": "Zoho Cliq explicitly calls its offering an official MCP server for accessing Cliq data. Configuration documentation says the Zoho MCP service generates a unique secure URL each time a server is created; mcp.zoho.com is not asserted here as a fixed endpoint. Both MCP pages are undated.",
+          "evidence": [
+            {
+              "url": "https://www.zoho.com/cliq/help/platform/zoho-cliq-mcp.html",
+              "title": "Zoho Cliq MCP Server",
+              "quote": "The Zoho Cliq MCP Server brings your chats into the world of AI using the Model Context Protocol (MCP).",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            },
+            {
+              "url": "https://www.zoho.com/cliq/help/platform/zoho-cliq-mcp.html",
+              "title": "Zoho Cliq MCP Server",
+              "quote": "Any AI model or agent can use our official MCP server to access your Cliq data and do:",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            },
+            {
+              "url": "https://www.zoho.com/cliq/help/platform/configure-zoho-cliq-mcp.html",
+              "title": "Configure Zoho Cliq MCP",
+              "quote": "A unique and secure URL will be generated by the Zoho MCP service each time you create a Zoho MCP server. This MCP URL will serve as the endpoint invoked when a prompt is executed from your MCP Client.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            }
+          ]
+        },
+        "composio_toolkit": {
+          "status": "checked",
+          "value": "listed_exact",
+          "slug": "ZOHO_CLIQ",
+          "auth_display": "OAUTH2",
+          "tools": 162,
+          "triggers": 0,
+          "reason": "Composio's Zoho Cliq toolkit page is an exact listing with slug ZOHO_CLIQ, OAuth2 authentication, 162 tools, and 0 triggers. The page is undated and is used only as Composio catalog evidence.",
+          "evidence": [
+            {
+              "url": "https://docs.composio.dev/toolkits/zoho_cliq",
+              "title": "Zoho Cliq Composio Toolkit",
+              "quote": "Slug: ZOHO_CLIQ",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            }
+          ]
+        },
+        "verdict": {
+          "status": "checked",
+          "value": "documented_build_candidate",
+          "reason": "Zoho Cliq is a documented build candidate because REST v3 is explicit, OAuth and API-token flows are documented, and API support is included on the Free plan. The vendor MCP server adds a remote option with per-server generated URLs. The supporting API and plan-comparison pages are undated.",
+          "evidence": [
+            {
+              "url": "https://www.zoho.com/cliq/help/restapi/v3/introduction/",
+              "title": "Zoho Cliq REST API Introduction",
+              "quote": "Zoho Cliq's REST API is designed based on RESTful architecture principles, enabling seamless communication between your applications and Zoho Cliq.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            },
+            {
+              "url": "https://www.zoho.com/cliq/plan-comparison.md",
+              "title": "Zoho Cliq Plan Comparison",
+              "quote": "| API support | Yes | Yes | Yes | Yes |",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "number": 24,
+      "app": "Lark (Larksuite)",
+      "category": "Communications and Messaging",
+      "summary": "Lark provides a broad RESTful Open Platform API using app ID/secret credentials and app, tenant, or user access tokens. Access combines self-built app administration with quota and billing constraints: standard basic-API quota is limited, while advanced API use requires a purchased metering pack. Lark offers both a local OpenAPI MCP tool and a remote MCP configuration currently in internal beta and marked not recommended.",
+      "blocker": "Tenant-admin approval is required for self-built app permissions; advanced APIs require a compatible paid plan and metering pack. The remote MCP configuration is internal beta and may require Customer Success Manager enablement.",
+      "next_action": "Create a self-built app, obtain tenant-admin approval for required scopes, and estimate basic versus advanced API consumption. Use the local OpenAPI MCP tool for development, or request internal-beta access before adopting the remote Lark MCP configuration.",
+      "fields": {
+        "auth": {
+          "status": "checked",
+          "value": [
+            "App ID and app secret credentials",
+            "Application access tokens",
+            "Tenant access tokens",
+            "User access tokens"
+          ],
+          "reason": "Lark terminology documents app_id and app_secret generated when an app is created, plus three access-token types: app_access_token, tenant_access_token, and user_access_token. API calls carry the access token in the HTTP Header. The cited documentation is undated.",
+          "evidence": [
+            {
+              "url": "https://open.larksuite.com/document/server-docs/getting-started/terminology",
+              "title": "Lark Open Platform Terminology",
+              "quote": "`app_id` 是Lark开放平台应用的唯一标识。在创建应用时，由系统自动生成，用户不能自行修改。",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            },
+            {
+              "url": "https://open.larksuite.com/document/server-docs/getting-started/terminology",
+              "title": "Lark Open Platform Terminology",
+              "quote": "`app_secret` 是应用的秘钥。在创建应用时，由系统自动生成，在调用某些 API 时，需要将 `app_secret` 作为请求参数之一。",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            },
+            {
+              "url": "https://open.larksuite.com/document/server-docs/getting-started/terminology",
+              "title": "Lark Open Platform Terminology",
+              "quote": "访问凭证也称为 `access_token`，代表应用从平台、租户（公司或者团队）、用户手中获取的授权。访问凭证包括三种：\n\n- 应用访问凭证，参数名为 `app_access_token`。\n- 租户访问凭证，参数名为 `tenant_access_token`。\n- 用户访问凭证，参数名 `user_access_token`。",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            }
+          ]
+        },
+        "credential_gate": {
+          "status": "checked",
+          "value": "mixed",
+          "gate_class": "mixed",
+          "details": {
+            "gate_class": "mixed"
+          },
+          "reason": "Lark combines tenant-admin approval for self-built app permissions with usage constraints. Standard basic API has a monthly quota, while advanced API use requires purchasing a metering pack available only on specified plans. The scope and billing pages are undated; January 8, 2025 is a service-policy effective date, not treated as page publication metadata.",
+          "evidence": [
+            {
+              "url": "https://open.larksuite.com/document/server-docs/getting-started/overview-of-app-scopes",
+              "title": "Overview of Lark App Scopes",
+              "quote": "企业自建应用：应用开发者申请的权限需要通过 租户管理员 的审核。",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            },
+            {
+              "url": "https://open.larksuite.com/document/server-docs/getting-started/overview-of-app-scopes",
+              "title": "Overview of Lark App Scopes",
+              "quote": "当应用通过审核后，所有的 API 权限才会正式生效。",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            },
+            {
+              "url": "https://open.larksuite.com/document/uAjLw4CM/ukTMukTMukTM/api-call-guide/api-billing",
+              "title": "Lark API Billing",
+              "quote": "如果企业自建应用需要调用高级 API，则需先联系我们购买高级 API 计量包，计量包内提供权益点位，调用高级 API 将消耗权益点位。",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            },
+            {
+              "url": "https://open.larksuite.com/document/uAjLw4CM/ukTMukTMukTM/api-call-guide/api-billing",
+              "title": "Lark API Billing",
+              "quote": "标准版 | 单租户下所有企业自建应用的基础 API 调用总量上限为 10,000 次/月，该上限在每个自然月的 1 日刷新。",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            }
+          ]
+        },
+        "api_surface": {
+          "status": "checked",
+          "value": "REST; broad documented surface",
+          "api_types": [
+            "REST"
+          ],
+          "breadth": "broad",
+          "details": {
+            "api_types": [
+              "REST"
+            ],
+            "breadth": "broad"
+          },
+          "reason": "Lark's official API-call guide explicitly states that Open Platform APIs follow RESTful style and carry access tokens in HTTP headers. The wider platform documentation covers many resource domains, supporting broad breadth. The cited process overview is undated.",
+          "evidence": [
+            {
+              "url": "https://open.larksuite.com/document/ukTMukTMukTM/uITNz4iM1MjLyUzM",
+              "title": "Lark API Call Guide",
+              "quote": "Lark开放平台提供的 API 遵循 RESTful 风格，请求 URL 的格式为：",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            },
+            {
+              "url": "https://open.larksuite.com/document/ukTMukTMukTM/uITNz4iM1MjLyUzM",
+              "title": "Lark API Call Guide",
+              "quote": "调用 API 时，需要在 HTTP Header 中携带访问凭证，以便获取权限范围内的资源信息。",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            }
+          ]
+        },
+        "official_mcp": {
+          "status": "checked",
+          "value": "vendor_server",
+          "mcp_mode": "both",
+          "reason": "Lark documents an OpenAPI MCP tool installed locally with the Lark MCP CLI, and a separate remote MCP Server configuration using Streamable HTTP. The remote page is titled 'not recommended', states that configuration is in internal beta, and says Customer Success Manager enablement may be required. Both pages are undated.",
+          "evidence": [
+            {
+              "url": "https://open.larksuite.com/document/uAjLw4CM/ukTMukTMukTM/mcp_integration/mcp_installation",
+              "title": "Install and use Lark OpenAPI MCP tools",
+              "quote": "本文介绍如何在 AI 工具（以 Cursor 为例）内安装并使用 OpenAPI MCP 工具。",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            },
+            {
+              "url": "https://open.larksuite.com/document/uAjLw4CM/ukTMukTMukTM/mcp_integration/mcp_installation",
+              "title": "Install and use Lark OpenAPI MCP tools",
+              "quote": "npx -y @larksuiteoapi/lark-mcp login -a <your_app_id> -s <your_app_secret> -d https://open.larksuite.com/",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            },
+            {
+              "url": "https://open.larksuite.com/document/mcp_open_tools/call-feishu-mcp-server-in-remote-mode",
+              "title": "Call Lark MCP Server in remote mode (not recommended)",
+              "quote": "远程调用 Lark MCP Server（不推荐）",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            },
+            {
+              "url": "https://open.larksuite.com/document/mcp_open_tools/call-feishu-mcp-server-in-remote-mode",
+              "title": "Call Lark MCP Server in remote mode (not recommended)",
+              "quote": "Lark开放平台提供远程 MCP Server 配置功能，支持  Streamable HTTP 传输协议，满足用户在云场景中，安全高效地通过 Cursor 、Trae、Claude、 n8n 等 AI agent 一键集成并使用丰富的Lark开放能力。",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            },
+            {
+              "url": "https://open.larksuite.com/document/mcp_open_tools/call-feishu-mcp-server-in-remote-mode",
+              "title": "Call Lark MCP Server in remote mode (not recommended)",
+              "quote": "远程 MCP Server 配置功能正在内测中，如无法访问配置平台，可联系客户成功经理开通内测。",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            }
+          ]
+        },
+        "composio_toolkit": {
+          "status": "checked",
+          "value": "listed_alias",
+          "slug": "LARK",
+          "auth_display": "OAUTH2",
+          "tools": 451,
+          "triggers": 0,
+          "reason": "Composio lists the product under the shorter catalog name Lark, slug LARK, rather than the full label Lark (Larksuite). Its page documents OAuth2, 451 tools, and 0 triggers. The page is undated and is used only as Composio catalog evidence.",
+          "evidence": [
+            {
+              "url": "https://docs.composio.dev/toolkits/lark",
+              "title": "Lark Composio Toolkit",
+              "quote": "Slug: LARK",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            }
+          ]
+        },
+        "verdict": {
+          "status": "checked",
+          "value": "gated_build_candidate",
+          "reason": "Lark has a documented broad REST API and usable token flows, but tenant-admin approval plus basic/advanced API quotas and paid metering make it a gated build candidate. MCP is available locally, while remote MCP remains internal beta and not recommended. The cited scope and billing pages are undated.",
+          "evidence": [
+            {
+              "url": "https://open.larksuite.com/document/ukTMukTMukTM/uITNz4iM1MjLyUzM",
+              "title": "Lark API Call Guide",
+              "quote": "Lark开放平台提供的 API 遵循 RESTful 风格，请求 URL 的格式为：",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            },
+            {
+              "url": "https://open.larksuite.com/document/server-docs/getting-started/overview-of-app-scopes",
+              "title": "Overview of Lark App Scopes",
+              "quote": "企业自建应用：应用开发者申请的权限需要通过 租户管理员 的审核。",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            },
+            {
+              "url": "https://open.larksuite.com/document/uAjLw4CM/ukTMukTMukTM/api-call-guide/api-billing",
+              "title": "Lark API Billing",
+              "quote": "如果企业自建应用需要调用高级 API，则需先联系我们购买高级 API 计量包，计量包内提供权益点位，调用高级 API 将消耗权益点位。",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "number": 25,
+      "app": "Pumble",
+      "category": "Communications and Messaging",
+      "summary": "Pumble offers a public HTTP API for messages, reactions, and other workspace actions, with API keys generated through an API addon. The API is available on all plans, including Free. Pumble also operates a remote MCP server whose tools depend on the scopes selected when creating an app.",
+      "blocker": "API-key and MCP setup require installing the relevant addon and selecting appropriate scopes. Pumble's linked Swagger host is outside the official pumble.com domain, so it is not used as evidence here.",
+      "next_action": "Install the API addon, generate an API key, and validate message/reaction calls against the HTTP API. For MCP, create an app with least-privilege scopes and configure the remote endpoint with the app key and user or bot token.",
+      "fields": {
+        "auth": {
+          "status": "checked",
+          "value": [
+            "API addon keys for HTTP API access",
+            "MCP app keys with scoped user or bot tokens"
+          ],
+          "reason": "Pumble documents API-key generation through the API addon and separate MCP credentials: App key, user token, and bot token. MCP tool availability depends on selected scopes. The API page was modified June 29, 2026; the MCP page was modified September 24, 2026.",
+          "evidence": [
+            {
+              "url": "https://pumble.com/help/integrations/automation-workflow-integrations/api-keys-integration/",
+              "title": "Pumble API Keys Integration",
+              "quote": "Before you can create an API key, you need to install the API addon on your Pumble workspace.",
+              "retrieved_at": "2026-11-24",
+              "published_at": "2026-06-29",
+              "published_label": "dateModified: 2026-06-29T10:33:30+00:00"
+            },
+            {
+              "url": "https://pumble.com/help/integrations/automation-workflow-integrations/how-to-use-the-pumble-mcp-server/",
+              "title": "How to use the Pumble MCP server",
+              "quote": "When the app is installed, make sure to copy the App key, user token, and bot token.",
+              "retrieved_at": "2026-11-24",
+              "published_at": "2026-09-24",
+              "published_label": "dateModified: 2026-09-24T11:06:25+00:00"
+            },
+            {
+              "url": "https://pumble.com/help/integrations/automation-workflow-integrations/how-to-use-the-pumble-mcp-server/",
+              "title": "How to use the Pumble MCP server",
+              "quote": "The list of available MCP tools is dynamic and depends entirely on the specific scopes you selected when creating an app.",
+              "retrieved_at": "2026-11-24",
+              "published_at": "2026-09-24",
+              "published_label": "dateModified: 2026-09-24T11:06:25+00:00"
+            }
+          ]
+        },
+        "credential_gate": {
+          "status": "checked",
+          "value": "self_serve_free",
+          "gate_class": "self_serve_free",
+          "details": {
+            "gate_class": "self_serve_free"
+          },
+          "reason": "Pumble's API documentation says the feature is available on all plans, and pricing explicitly offers a Free plan for unlimited users. The API addon can be installed from the workspace. The pricing page is undated; the API page carries June 2026 modification metadata.",
+          "evidence": [
+            {
+              "url": "https://pumble.com/help/integrations/automation-workflow-integrations/api-keys-integration/",
+              "title": "Pumble API Keys Integration",
+              "quote": "Who can use this feature?\n\nOwner, Admin, Member\n\nAvailable on all plans",
+              "retrieved_at": "2026-11-24",
+              "published_at": "2026-06-29",
+              "published_label": "dateModified: 2026-06-29T10:33:30+00:00"
+            },
+            {
+              "url": "https://pumble.com/pricing",
+              "title": "Pumble Pricing",
+              "quote": "Start using Pumble for free, and upgrade when you need more features.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated",
+              "verification_method": "headless Chromium rendered body innerText (installed Chrome; no raw HTML)",
+              "verification_note": "The rendered official page reproduced the normalized quotation. Direct HTTP retrieval missed JavaScript-rendered, redirect-sensitive, or charset-sensitive content; no search snippet or hidden raw HTML was used.",
+              "verified_at": "2026-11-24",
+              "source_review": "The rendered official page reproduced the normalized quotation. Direct HTTP retrieval missed JavaScript-rendered, redirect-sensitive, or charset-sensitive content; no search snippet or hidden raw HTML was used."
+            },
+            {
+              "url": "https://pumble.com/pricing",
+              "title": "Pumble Pricing",
+              "quote": "$ 0\n\nfor unlimited number of users",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated",
+              "verification_method": "headless Chromium rendered body innerText (installed Chrome; no raw HTML)",
+              "verification_note": "The rendered official page reproduced the normalized quotation. Direct HTTP retrieval missed JavaScript-rendered, redirect-sensitive, or charset-sensitive content; no search snippet or hidden raw HTML was used.",
+              "verified_at": "2026-11-24",
+              "source_review": "The rendered official page reproduced the normalized quotation. Direct HTTP retrieval missed JavaScript-rendered, redirect-sensitive, or charset-sensitive content; no search snippet or hidden raw HTML was used."
+            }
+          ]
+        },
+        "api_surface": {
+          "status": "checked",
+          "value": "HTTP API; moderate documented surface",
+          "api_types": [
+            "HTTP API"
+          ],
+          "breadth": "moderate",
+          "details": {
+            "api_types": [
+              "HTTP API"
+            ],
+            "breadth": "moderate"
+          },
+          "reason": "Pumble documents simple HTTP requests for sending messages, reactions, and more, with a per-user rate limit. No direct official REST wording was found, so the protocol is conservatively classified as HTTP API and breadth as moderate. The API page was modified June 29, 2026.",
+          "evidence": [
+            {
+              "url": "https://pumble.com/help/integrations/automation-workflow-integrations/api-keys-integration/",
+              "title": "Pumble API Keys Integration",
+              "quote": "By using the Pumble API addon, you can interact with Pumble’s API documentation without using any complex authentication processes. This addon lets you generate an API key that allows you to send messages, reactions, and more via simple HTTP requests.",
+              "retrieved_at": "2026-11-24",
+              "published_at": "2026-06-29",
+              "published_label": "dateModified: 2026-06-29T10:33:30+00:00"
+            },
+            {
+              "url": "https://pumble.com/help/integrations/automation-workflow-integrations/api-keys-integration/",
+              "title": "Pumble API Keys Integration",
+              "quote": "The rate limit is up to 1000 requests per minute per user.",
+              "retrieved_at": "2026-11-24",
+              "published_at": "2026-06-29",
+              "published_label": "dateModified: 2026-06-29T10:33:30+00:00"
+            },
+            {
+              "url": "https://pumble.com/integrations",
+              "title": "Pumble Integrations",
+              "quote": "Yes you can. The Pumble API is publicly available for anyone to explore.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            }
+          ]
+        },
+        "official_mcp": {
+          "status": "checked",
+          "value": "vendor_server",
+          "mcp_mode": "remote",
+          "reason": "Pumble operates a remote MCP server at https://mcp.pumble.com/mcp for third-party AI agents. It uses an App key plus user or bot token, and the tool set depends on app scopes. The MCP setup page was modified September 24, 2026.",
+          "evidence": [
+            {
+              "url": "https://pumble.com/help/integrations/automation-workflow-integrations/how-to-use-the-pumble-mcp-server/",
+              "title": "How to use the Pumble MCP server",
+              "quote": "With the Pumble Model Context Protocol (MCP) server, you can connect third-party AI agents (e.g., Claude, Gemini, Codex) to Pumble and let them access content so they can search messages, find information, and take actions on your behalf.",
+              "retrieved_at": "2026-11-24",
+              "published_at": "2026-09-24",
+              "published_label": "dateModified: 2026-09-24T11:06:25+00:00"
+            },
+            {
+              "url": "https://pumble.com/help/integrations/automation-workflow-integrations/how-to-use-the-pumble-mcp-server/",
+              "title": "How to use the Pumble MCP server",
+              "quote": "To connect your AI assistant to the Pumble MCP server, you will have to create a Pumble addon and take credentials from there.",
+              "retrieved_at": "2026-11-24",
+              "published_at": "2026-09-24",
+              "published_label": "dateModified: 2026-09-24T11:06:25+00:00"
+            },
+            {
+              "url": "https://pumble.com/help/integrations/automation-workflow-integrations/how-to-use-the-pumble-mcp-server/",
+              "title": "How to use the Pumble MCP server",
+              "quote": "\"url\": \"https://mcp.pumble.com/mcp\",",
+              "retrieved_at": "2026-11-24",
+              "published_at": "2026-09-24",
+              "published_label": "dateModified: 2026-09-24T11:06:25+00:00"
+            }
+          ]
+        },
+        "composio_toolkit": {
+          "status": "checked",
+          "value": "listed_exact",
+          "slug": "PUMBLE",
+          "auth_display": "API_KEY",
+          "tools": 9,
+          "triggers": 0,
+          "reason": "Composio's Pumble toolkit page is an exact listing with slug PUMBLE, API-key authentication, 9 tools, and 0 triggers. The page is undated and is used only as Composio catalog evidence.",
+          "evidence": [
+            {
+              "url": "https://docs.composio.dev/toolkits/pumble",
+              "title": "Pumble Composio Toolkit",
+              "quote": "Slug: PUMBLE",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            }
+          ]
+        },
+        "verdict": {
+          "status": "checked",
+          "value": "documented_build_candidate",
+          "reason": "Pumble is a documented build candidate because it has a public HTTP API, self-service API-key creation, and API availability on all plans including Free. The remote vendor MCP server is also documented. Pricing and integrations pages are undated; API and MCP pages carry 2026 modification dates.",
+          "evidence": [
+            {
+              "url": "https://pumble.com/help/integrations/automation-workflow-integrations/api-keys-integration/",
+              "title": "Pumble API Keys Integration",
+              "quote": "By using the Pumble API addon, you can interact with Pumble’s API documentation without using any complex authentication processes. This addon lets you generate an API key that allows you to send messages, reactions, and more via simple HTTP requests.",
+              "retrieved_at": "2026-11-24",
+              "published_at": "2026-06-29",
+              "published_label": "dateModified: 2026-06-29T10:33:30+00:00"
+            },
+            {
+              "url": "https://pumble.com/pricing",
+              "title": "Pumble Pricing",
+              "quote": "Start using Pumble for free, and upgrade when you need more features.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated",
+              "verification_method": "headless Chromium rendered body innerText (installed Chrome; no raw HTML)",
+              "verification_note": "The rendered official page reproduced the normalized quotation. Direct HTTP retrieval missed JavaScript-rendered, redirect-sensitive, or charset-sensitive content; no search snippet or hidden raw HTML was used.",
+              "verified_at": "2026-11-24",
+              "source_review": "The rendered official page reproduced the normalized quotation. Direct HTTP retrieval missed JavaScript-rendered, redirect-sensitive, or charset-sensitive content; no search snippet or hidden raw HTML was used."
+            }
+          ]
+        }
+      }
+    },
+    {
+      "number": 26,
+      "app": "Discord",
+      "category": "Communications and Messaging",
+      "summary": "Discord provides a broad REST API for channels, servers, users, messages, and other resources, authenticated with bot tokens, OAuth2 bearer tokens, or endpoint-specific Basic authentication. Developer onboarding is self-service and supports free test servers; privileged-intent approval applies only when an app reaches 10,000 users. Discord operates a remote MCP server for its developer documentation, not for account actions.",
+      "blocker": "Privileged Intent access requires review once an app reaches 10,000 users. The Discord MCP server is documentation-only and must not be treated as an account-action API server.",
+      "next_action": "Create a developer app and test bot in a non-production server with minimal permissions. Use the REST API for account actions; connect the Discord documentation MCP server only when an AI development tool needs documentation search.",
+      "fields": {
+        "auth": {
+          "status": "checked",
+          "value": [
+            "Bot tokens",
+            "OAuth2 bearer tokens",
+            "Basic authentication for OAuth2 token endpoints"
+          ],
+          "reason": "The API reference enumerates three authentication paths: bot token, OAuth2 bearer token, and Basic authentication using the OAuth2 client ID and secret only for OAuth2 token endpoints. Sample credential values are deliberately excluded. The reference page is undated.",
+          "evidence": [
+            {
+              "url": "https://docs.discord.com/developers/reference",
+              "title": "Discord API Reference",
+              "quote": "Authenticating with the Discord API can be done in one of three ways:\n\n1. Using a bot token found on the Bot page within your app's settings. For more information on bots see bots vs user accounts.\n2. Using an OAuth2 bearer token gained through the OAuth2 API.\n3. Using basic authentication with credentials as the client ID and client secret found on the OAuth2 page of your app's settings in the format `client_id:client_secret` as a Base64 encoded string. Only applicable for OAuth2 API token endpoints.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            }
+          ]
+        },
+        "credential_gate": {
+          "status": "checked",
+          "value": "self_serve_free",
+          "gate_class": "self_serve_free",
+          "details": {
+            "gate_class": "self_serve_free"
+          },
+          "reason": "The official quickstart supports self-service app creation and explicitly allows creation of a free test server. Privileged Intents can be enabled in the Developer Portal below 10,000 users; application review begins at that threshold. The quickstart is undated, and the threshold appears in the June 10, 2026 changelog entry.",
+          "evidence": [
+            {
+              "url": "https://docs.discord.com/developers/quick-start/getting-started",
+              "title": "Building your first Discord Bot",
+              "quote": "First, you'll need to create an app in the developer portal if you don't have one already:",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            },
+            {
+              "url": "https://docs.discord.com/developers/quick-start/getting-started",
+              "title": "Building your first Discord Bot",
+              "quote": "When developing apps, you should build and test on your user account (for user-installable apps) and in a server that isn't actively used by others (for server-installable apps). If you don't have your own server already, you can create one for free.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            },
+            {
+              "url": "https://docs.discord.com/developers/change-log",
+              "title": "Discord Documentation Change Log",
+              "quote": "If your app has fewer than 10,000 users, you can continue accessing Privileged Intents by toggling them on in the Developer Portal. Once your app reaches 10,000 users, you'll need to apply for Privileged Intent access.",
+              "retrieved_at": "2026-11-24",
+              "published_at": "2026-06-10",
+              "published_label": "June 10, 2026"
+            }
+          ]
+        },
+        "api_surface": {
+          "status": "checked",
+          "value": "REST; broad documented surface",
+          "api_types": [
+            "REST"
+          ],
+          "breadth": "broad",
+          "details": {
+            "api_types": [
+              "REST"
+            ],
+            "breadth": "broad"
+          },
+          "reason": "Discord explicitly identifies its API as REST and describes interaction with core resources including channels, servers, users, and messages. This is a broad documented surface. The reference and Overview of Apps pages are undated.",
+          "evidence": [
+            {
+              "url": "https://docs.discord.com/developers/reference",
+              "title": "Discord API Reference",
+              "quote": "The Discord API is a REST API that allows you to interact with Discord data from your own applications. It's the primary way to interact with Discord from your own code.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            },
+            {
+              "url": "https://docs.discord.com/developers/quick-start/overview-of-apps.md",
+              "title": "Overview of Discord Apps",
+              "quote": "The HTTP API is a REST API that lets you interact and modify core Discord resources like channels, servers (or guilds), users, and messages.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            }
+          ]
+        },
+        "official_mcp": {
+          "status": "checked",
+          "value": "vendor_server",
+          "mcp_mode": "remote",
+          "reason": "Discord's March 9, 2026 changelog announces an MCP server at https://docs.discord.com/mcp for AI development tools working with Discord documentation. This is a vendor-operated remote documentation server, not an account-action API server.",
+          "evidence": [
+            {
+              "url": "https://docs.discord.com/developers/change-log",
+              "title": "Discord Documentation Change Log",
+              "quote": "AI & MCP support: Docs now work with AI development tools via Copy-as-Markdown, an LLMs.txt file, and an MCP server, available at `https://docs.discord.com/mcp`",
+              "retrieved_at": "2026-11-24",
+              "published_at": "2026-03-09",
+              "published_label": "March 9, 2026"
+            }
+          ]
+        },
+        "composio_toolkit": {
+          "status": "checked",
+          "value": "listed_exact",
+          "slug": "DISCORD",
+          "auth_display": "OAUTH2",
+          "tools": 28,
+          "triggers": 1,
+          "reason": "Composio's Discord toolkit page is an exact listing with slug DISCORD, OAuth2 authentication, 28 tools, and 1 trigger. The page is undated and is used only as Composio catalog evidence.",
+          "evidence": [
+            {
+              "url": "https://docs.composio.dev/toolkits/discord",
+              "title": "Discord Composio Toolkit",
+              "quote": "Slug: DISCORD",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            }
+          ]
+        },
+        "verdict": {
+          "status": "checked",
+          "value": "documented_build_candidate",
+          "reason": "Discord is a documented build candidate because app creation is self-service, testing can use a free server, and the broad REST API has explicit token flows. Privileged Intents add a scale-dependent review gate, while MCP is documentation-only. The quickstart and API pages are undated; the intent threshold is dated June 10, 2026.",
+          "evidence": [
+            {
+              "url": "https://docs.discord.com/developers/reference",
+              "title": "Discord API Reference",
+              "quote": "The Discord API is a REST API that allows you to interact with Discord data from your own applications. It's the primary way to interact with Discord from your own code.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            },
+            {
+              "url": "https://docs.discord.com/developers/quick-start/getting-started",
+              "title": "Building your first Discord Bot",
+              "quote": "When developing apps, you should build and test on your user account (for user-installable apps) and in a server that isn't actively used by others (for server-installable apps). If you don't have your own server already, you can create one for free.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            },
+            {
+              "url": "https://docs.discord.com/developers/change-log",
+              "title": "Discord Documentation Change Log",
+              "quote": "If your app has fewer than 10,000 users, you can continue accessing Privileged Intents by toggling them on in the Developer Portal. Once your app reaches 10,000 users, you'll need to apply for Privileged Intent access.",
+              "retrieved_at": "2026-11-24",
+              "published_at": "2026-06-10",
+              "published_label": "June 10, 2026"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "number": 27,
+      "app": "Telegram",
+      "category": "Communications and Messaging",
+      "summary": "Telegram's Bot API is a broad HTTP-based interface authenticated by a unique bot token, with GET and POST methods and extensive messaging features. Bots can message users at no cost, subject to broadcast limits. Targeted official review found no Telegram-operated MCP server documented in the Bot Platform sources; this is a scoped documentation finding, not proof of universal absence.",
+      "blocker": "No Telegram-operated MCP server is documented in the reviewed official Bot Platform sources; direct Bot API integration remains available. Bot capabilities also depend on chat membership and administrator-granted rights.",
+      "next_action": "Create a bot through BotFather, protect its token, and build with the Bot API using only the chats and admin rights required. Use the documented Bot API rather than waiting for a Telegram MCP endpoint, and recheck official sources before adopting any future MCP integration.",
+      "fields": {
+        "auth": {
+          "status": "checked",
+          "value": [
+            "Unique bot authentication tokens"
+          ],
+          "reason": "Telegram states that each bot receives a unique authentication token and that bots are connected to a backend through the Bot API after setup with BotFather. The Bot API is dated November 22, 2026; the FAQ is undated.",
+          "evidence": [
+            {
+              "url": "https://core.telegram.org/bots/api",
+              "title": "Telegram Bot API",
+              "quote": "Each bot is given a unique authentication token when it is created.",
+              "retrieved_at": "2026-11-24",
+              "published_at": "2026-11-22",
+              "published_label": "November 22, 2026"
+            },
+            {
+              "url": "https://core.telegram.org/bots/faq",
+              "title": "Telegram Bot FAQ",
+              "quote": "Creating Telegram bots is super-easy, but you will need at least some skills at computer programming. In order for a bot to work, set up a bot account with @BotFather, then connect it to your backend server via our API.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            }
+          ]
+        },
+        "credential_gate": {
+          "status": "checked",
+          "value": "self_serve_free",
+          "gate_class": "self_serve_free",
+          "details": {
+            "gate_class": "self_serve_free"
+          },
+          "reason": "Telegram's FAQ says bots can message their users at no cost, subject to broadcast limits, and BotFather setup is self-service. The legal terms deny a partnership relationship rather than requiring partner approval. The FAQ and terms pages are undated.",
+          "evidence": [
+            {
+              "url": "https://core.telegram.org/bots/faq",
+              "title": "Telegram Bot FAQ",
+              "quote": "By default, bots are able to message their users at no cost – but have limitations on the number of messages they can broadcast in a single interval:",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            },
+            {
+              "url": "https://telegram.org/tos/bot-developers",
+              "title": "Telegram Bot Developer Terms",
+              "quote": "You understand and agree that your association with us is exclusively as a user of our services, functioning as an independent entity. These terms and your engagement with Bot Platform do not establish any form of agency, partnership, employment or joint venture between you and Telegram.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            }
+          ]
+        },
+        "api_surface": {
+          "status": "checked",
+          "value": "HTTP API; broad documented surface",
+          "api_types": [
+            "HTTP API"
+          ],
+          "breadth": "broad",
+          "details": {
+            "api_types": [
+              "HTTP API"
+            ],
+            "breadth": "broad"
+          },
+          "reason": "Telegram explicitly calls the Bot API an HTTP-based interface and documents GET and POST methods plus messaging, multi-platform, access, and lifecycle features. This supports a broad HTTP API classification. The Bot API is dated November 22, 2026; the features page is undated.",
+          "evidence": [
+            {
+              "url": "https://core.telegram.org/bots/api",
+              "title": "Telegram Bot API",
+              "quote": "The Bot API is an HTTP-based interface created for developers keen on building bots for Telegram.",
+              "retrieved_at": "2026-11-24",
+              "published_at": "2026-11-22",
+              "published_label": "November 22, 2026"
+            },
+            {
+              "url": "https://core.telegram.org/bots/api",
+              "title": "Telegram Bot API",
+              "quote": "We support GET and POST HTTP methods.",
+              "retrieved_at": "2026-11-24",
+              "published_at": "2026-11-22",
+              "published_label": "November 22, 2026"
+            },
+            {
+              "url": "https://core.telegram.org/bots/features",
+              "title": "Telegram Bot Features",
+              "quote": "The Bot API provides the messaging, multi-platform presentation, access and lifecycle features – the model, memory and bot logic are flexible and entirely up to you.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            }
+          ]
+        },
+        "official_mcp": {
+          "value": "no_vendor_server_documented",
+          "review_basis": "scoped_documentation_review",
+          "mcp_mode": "unknown",
+          "status": "checked",
+          "reason": "Checked the official Bot API, Bot Features, Bots FAQ, Bot Developer Terms, bot overview, and Serverless documentation. They document Telegram's HTTP Bot API, developer-supplied bot logic and backends, and serverless bot hosting, but no Telegram-operated MCP server, endpoint, transport, or Telegram client-only MCP instructions. This finding is limited to the reviewed public documentation as of 2026-11-24, not a universal absence claim; Composio and third-party MCP repositories were excluded.",
+          "evidence": [
+            {
+              "url": "https://core.telegram.org/bots/api",
+              "title": "Telegram Bot API",
+              "quote": "The Bot API is an HTTP-based interface created for developers keen on building bots for Telegram.",
+              "retrieved_at": "2026-11-24",
+              "published_at": "2026-11-22",
+              "published_label": "November 22, 2026"
+            },
+            {
+              "url": "https://core.telegram.org/bots/features",
+              "title": "Telegram Bot Features",
+              "quote": "The Bot API provides the messaging, multi-platform presentation, access and lifecycle features – the model, memory and bot logic are flexible and entirely up to you.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            },
+            {
+              "url": "https://core.telegram.org/bots/faq",
+              "title": "Bots FAQ",
+              "quote": "Unfortunately, there are no out-of-the-box ways to create a working bot if you are not a developer. But we're sure you'll soon find plenty of bots created by other people to play with.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            },
+            {
+              "url": "https://telegram.org/tos/bot-developers",
+              "title": "Telegram Bot Platform Developer Terms of Service",
+              "quote": "Developers can make their products and services accessible in Telegram apps by building TPA and connecting them to the Telegram platform via Bot API.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            },
+            {
+              "url": "https://core.telegram.org/bots/serverless",
+              "title": "Telegram Serverless",
+              "quote": "Serverless is a general backend for Telegram bots and Mini Apps, not a template for one kind of app.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            }
+          ]
+        },
+        "composio_toolkit": {
+          "status": "checked",
+          "value": "listed_exact",
+          "slug": "TELEGRAM",
+          "auth_display": "API_KEY",
+          "tools": 18,
+          "triggers": 0,
+          "reason": "Composio's Telegram toolkit page is an exact listing with slug TELEGRAM, API-key authentication, 18 tools, and 0 triggers. The page is undated and is used only as Composio catalog evidence.",
+          "evidence": [
+            {
+              "url": "https://docs.composio.dev/toolkits/telegram",
+              "title": "Telegram Composio Toolkit",
+              "quote": "Slug: TELEGRAM",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            }
+          ]
+        },
+        "verdict": {
+          "status": "checked",
+          "value": "documented_build_candidate",
+          "reason": "Telegram is a documented build candidate because the Bot API is broad, bot-token setup is self-service, and bots can message users at no cost subject to limits. No Telegram vendor MCP server is documented in the reviewed official Bot Platform sources, and MCP is not required for this verdict. The Bot API is dated November 22, 2026; the FAQ is undated.",
+          "evidence": [
+            {
+              "url": "https://core.telegram.org/bots/api",
+              "title": "Telegram Bot API",
+              "quote": "The Bot API is an HTTP-based interface created for developers keen on building bots for Telegram.",
+              "retrieved_at": "2026-11-24",
+              "published_at": "2026-11-22",
+              "published_label": "November 22, 2026"
+            },
+            {
+              "url": "https://core.telegram.org/bots/api",
+              "title": "Telegram Bot API",
+              "quote": "Each bot is given a unique authentication token when it is created.",
+              "retrieved_at": "2026-11-24",
+              "published_at": "2026-11-22",
+              "published_label": "November 22, 2026"
+            },
+            {
+              "url": "https://core.telegram.org/bots/faq",
+              "title": "Telegram Bot FAQ",
+              "quote": "By default, bots are able to message their users at no cost – but have limitations on the number of messages they can broadcast in a single interval:",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "number": 28,
+      "app": "WhatsApp Business",
+      "category": "Communications and Messaging",
+      "summary": "WhatsApp Business Cloud API supports messaging, webhooks, groups, and calling through Meta's HTTP API, with temporary test tokens and permanent scoped system-user tokens. Pricing includes 1,000 free service messages per phone number per month and paid usage beyond that. Meta operates a remote WhatsApp Business Tools MCP server in beta with gradual rollout and OAuth sign-in.",
+      "blocker": "Production messaging is metered and business/admin prerequisites apply. The WhatsApp Business Tools MCP server is in beta, may not yet be available to an account, and requires business and app admin access plus accepted Cloud API terms.",
+      "next_action": "Create a Meta developer app and WhatsApp-enabled business asset, generate a permanent system-user token with minimal scopes, and validate messaging within the free service-message allowance. Request beta MCP availability only after satisfying admin and terms prerequisites.",
+      "fields": {
+        "auth": {
+          "status": "checked",
+          "value": [
+            "Temporary Meta access tokens for testing",
+            "Permanent scoped system-user access tokens",
+            "Meta developer-account OAuth for the MCP server"
+          ],
+          "reason": "The Cloud API quickstart provides a temporary test token and instructs developers to create a permanent token for development. The MCP server uses Meta developer account sign-in through OAuth. The get-started and MCP pages are undated.",
+          "evidence": [
+            {
+              "url": "https://developers.facebook.com/documentation/business-messaging/whatsapp/get-started",
+              "title": "WhatsApp Cloud API Get Started",
+              "quote": "Click Generate access token to generate a temporary access token to send a test message.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            },
+            {
+              "url": "https://developers.facebook.com/documentation/business-messaging/whatsapp/get-started",
+              "title": "WhatsApp Cloud API Get Started",
+              "quote": "The temporary access token you created to send the `hello_world` template message expires quickly and is not suitable for development purposes.\n\nSo you should create a permanent token for use across the WhatsApp Business Platform.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            },
+            {
+              "url": "https://developers.facebook.com/documentation/mcp/whatsapp-business-tools-mcp",
+              "title": "WhatsApp Business Tools MCP",
+              "quote": "Attribute | Value\nServer name | WhatsApp Business Tools\nTransport | Streamable HTTP\nEndpoint | https://mcp.facebook.com/whatsapp_business_tools\nAuthentication | Meta developer account sign-in (OAuth)\nClient ID | Not required. The server recognizes supported clients automatically.\nRedirect URI | Not required. You don't create or configure a Meta app for this server.\nSupported clients | Claude Code, Claude Desktop, ChatGPT, Codex CLI, Codex app\nStatus | Beta - interface and tool set may change",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            }
+          ]
+        },
+        "credential_gate": {
+          "status": "checked",
+          "value": "mixed",
+          "gate_class": "mixed",
+          "details": {
+            "gate_class": "mixed"
+          },
+          "reason": "WhatsApp Business combines a free monthly service-message allowance with per-message charges beyond the allowance and admin/business prerequisites. The pricing page is undated; October 1, 2026 is an effective pricing date, not assumed to be publication metadata.",
+          "evidence": [
+            {
+              "url": "https://developers.facebook.com/documentation/business-messaging/whatsapp/pricing",
+              "title": "WhatsApp Business Pricing",
+              "quote": "For each business phone number, Meta provides 1,000 free service messages per month, which do not roll over but reset monthly. Thus, Meta only charges as of the 1,001st service message for each business phone number.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            },
+            {
+              "url": "https://developers.facebook.com/documentation/business-messaging/whatsapp/pricing",
+              "title": "WhatsApp Business Pricing",
+              "quote": "This page reflects pricing updates that became effective as of October 1, 2026 by Messaging account timezone.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            },
+            {
+              "url": "https://developers.facebook.com/documentation/business-messaging/whatsapp/get-started",
+              "title": "WhatsApp Cloud API Get Started",
+              "quote": "Facebook account or managed Meta account\nDeveloper registration\nIf not yet registered, visit the developer registration page and follow the prompts.\nWhatsApp-enabled device for sending and receiving test messages",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            }
+          ]
+        },
+        "api_surface": {
+          "status": "checked",
+          "value": "HTTP API; broad documented surface",
+          "api_types": [
+            "HTTP API"
+          ],
+          "breadth": "broad",
+          "details": {
+            "api_types": [
+              "HTTP API"
+            ],
+            "breadth": "broad"
+          },
+          "reason": "The Cloud API uses HTTPS requests to Meta's Graph API endpoint, but the reviewed page does not establish GraphQL, so it is classified as HTTP API rather than GraphQL. Messaging, webhooks, group management, and calling support broad breadth. The get-started page is undated.",
+          "evidence": [
+            {
+              "url": "https://developers.facebook.com/documentation/business-messaging/whatsapp/get-started",
+              "title": "WhatsApp Cloud API Get Started",
+              "quote": "The WhatsApp Cloud API enables you to send messages and receive webhooks—these are the fundamental building blocks for messaging integration.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            },
+            {
+              "url": "https://developers.facebook.com/documentation/business-messaging/whatsapp/get-started",
+              "title": "WhatsApp Cloud API Get Started",
+              "quote": "Beyond these basics, the API offers additional features such as group creation and management, as well as support for calling.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            }
+          ]
+        },
+        "official_mcp": {
+          "status": "checked",
+          "value": "vendor_server",
+          "mcp_mode": "early_access",
+          "reason": "Meta operates the WhatsApp Business Tools MCP server as a remote Streamable HTTP service at https://mcp.facebook.com/whatsapp_business_tools, using Meta OAuth. The interface and tool set are beta and rollout is gradual, so early_access is used rather than implying general availability. The MCP page is undated.",
+          "evidence": [
+            {
+              "url": "https://developers.facebook.com/documentation/mcp/whatsapp-business-tools-mcp",
+              "title": "WhatsApp Business Tools MCP",
+              "quote": "For developers building on the WhatsApp Business Platform (Cloud API) — the WhatsApp Business Tools MCP server lets your AI agent and IDE assistant manage and debug your WhatsApp Business integration from one place.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            },
+            {
+              "url": "https://developers.facebook.com/documentation/mcp/whatsapp-business-tools-mcp",
+              "title": "WhatsApp Business Tools MCP",
+              "quote": "The interface and tool set of the WhatsApp Business Tools MCP server are in beta and may change.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            },
+            {
+              "url": "https://developers.facebook.com/documentation/mcp/whatsapp-business-tools-mcp",
+              "title": "WhatsApp Business Tools MCP",
+              "quote": "The server is rolling out gradually, so it may not be available to your account yet, even after your client connects.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            },
+            {
+              "url": "https://developers.facebook.com/documentation/mcp/whatsapp-business-tools-mcp",
+              "title": "WhatsApp Business Tools MCP",
+              "quote": "Admin access to a business you want to manage (the MANAGE role).",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            }
+          ]
+        },
+        "composio_toolkit": {
+          "status": "checked",
+          "value": "listed_alias",
+          "slug": "WHATSAPP",
+          "auth_display": "OAUTH2, API_KEY",
+          "tools": 127,
+          "triggers": 1,
+          "reason": "Composio lists the product under WhatsApp, slug WHATSAPP, rather than WhatsApp Business. The page states that the toolkit is for WhatsApp Business API flows and requires a WhatsApp Business Account; personal accounts are unsupported. The page is undated.",
+          "evidence": [
+            {
+              "url": "https://docs.composio.dev/toolkits/whatsapp",
+              "title": "WhatsApp Composio Toolkit",
+              "quote": "Slug: WHATSAPP",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            },
+            {
+              "url": "https://docs.composio.dev/toolkits/whatsapp",
+              "title": "WhatsApp Composio Toolkit",
+              "quote": "No. The WhatsApp toolkit is for WhatsApp Business API flows, so the connected account needs to be backed by a WhatsApp Business Account (WABA). Personal WhatsApp accounts are not supported for these API flows.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            }
+          ]
+        },
+        "verdict": {
+          "status": "checked",
+          "value": "gated_build_candidate",
+          "reason": "WhatsApp Business is a gated build candidate: the Cloud API is broad and supports token-based development, but production messaging is metered and business/admin prerequisites apply. MCP is beta with gradual rollout. The supporting get-started, pricing, and MCP pages are undated.",
+          "evidence": [
+            {
+              "url": "https://developers.facebook.com/documentation/business-messaging/whatsapp/get-started",
+              "title": "WhatsApp Cloud API Get Started",
+              "quote": "The WhatsApp Cloud API enables you to send messages and receive webhooks—these are the fundamental building blocks for messaging integration.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            },
+            {
+              "url": "https://developers.facebook.com/documentation/business-messaging/whatsapp/pricing",
+              "title": "WhatsApp Business Pricing",
+              "quote": "For each business phone number, Meta provides 1,000 free service messages per month, which do not roll over but reset monthly. Thus, Meta only charges as of the 1,001st service message for each business phone number.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "number": 29,
+      "app": "Aircall",
+      "category": "Communications and Messaging",
+      "summary": "Aircall provides a broad REST API and webhooks authenticated by Basic API ID/token credentials for private integrations or OAuth for public apps. All current plans are paid and include API/webhook access, while public-app publishing requires Technology Partner approval. Aircall operates a remote read-only MCP server in beta for calls and conversation intelligence.",
+      "blocker": "A paid Aircall plan with at least three licenses is required. The MCP server is beta, admin-only, read-only, requires Account Manager enrollment, and needs the Aircall AI add-on for conversation-intelligence tools. Public apps also require partner approval.",
+      "next_action": "Use a paid plan and generate Basic API credentials for an internal integration, or pursue Technology Partner approval for a public OAuth app. For MCP, ask the Account Manager for beta enrollment and validate only the read-only call and conversation-intelligence use cases.",
+      "fields": {
+        "auth": {
+          "status": "checked",
+          "value": [
+            "Basic authentication with API ID and API token",
+            "OAuth for public apps",
+            "OAuth for the Aircall MCP server"
+          ],
+          "reason": "Aircall distinguishes Basic authentication for private/internal tools from OAuth for apps acting for other users. Basic credentials are generated in the Dashboard and encoded in the Authorization header. The MCP server uses OAuth. Authentication pages carry November 2026 updatedAt metadata; the MCP support article is undated.",
+          "evidence": [
+            {
+              "url": "https://developer.aircall.io/docs/authentication",
+              "title": "Aircall API Authentication",
+              "quote": "Aircall supports two ways to authenticate with the REST API: Basic Authentication and OAuth.",
+              "retrieved_at": "2026-11-24",
+              "published_at": "2026-11-23",
+              "published_label": "updatedAt: 2026-11-23T12:30:46.000Z"
+            },
+            {
+              "url": "https://developer.aircall.io/docs/authentication",
+              "title": "Aircall API Authentication",
+              "quote": "Use Basic Authentication when you are connecting your own internal tools or private integration to Aircall. Use OAuth when your app needs to access Aircall data on behalf of other users or customers.",
+              "retrieved_at": "2026-11-24",
+              "published_at": "2026-11-23",
+              "published_label": "updatedAt: 2026-11-23T12:30:46.000Z"
+            },
+            {
+              "url": "https://developer.aircall.io/docs/basic-authentication",
+              "title": "Aircall Basic Authentication",
+              "quote": "In the top right corner, click Generate API key.",
+              "retrieved_at": "2026-11-24",
+              "published_at": "2026-11-20",
+              "published_label": "updatedAt: 2026-11-20T12:09:02.000Z"
+            },
+            {
+              "url": "https://support.aircall.io/en-gb/articles/39677926959517",
+              "title": "Aircall MCP",
+              "quote": "You connect Aircall to your AI client once, via OAuth, the same way you'd connect any other app.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            }
+          ]
+        },
+        "credential_gate": {
+          "status": "checked",
+          "value": "paid_plan",
+          "gate_class": "paid_plan",
+          "details": {
+            "gate_class": "paid_plan"
+          },
+          "reason": "Current Aircall pricing lists paid Essentials and Professional plans plus custom Enterprise pricing, and states that all plans include API access and require at least three licenses. Free testing language does not establish a free API plan. Partner approval remains a separate public-app requirement. The pricing page is undated.",
+          "evidence": [
+            {
+              "url": "https://aircall.io/pricing/",
+              "title": "Aircall Pricing",
+              "quote": "All plans include API access and 250+ integrations. Aircall also offers an open API and webhook framework for custom integrations.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated",
+              "verification_method": "headless Chromium rendered body innerText (installed Chrome; no raw HTML)",
+              "verification_note": "The rendered official page reproduced the normalized quotation. Direct HTTP retrieval missed JavaScript-rendered, redirect-sensitive, or charset-sensitive content; no search snippet or hidden raw HTML was used.",
+              "verified_at": "2026-11-24",
+              "source_review": "The rendered official page reproduced the normalized quotation. Direct HTTP retrieval missed JavaScript-rendered, redirect-sensitive, or charset-sensitive content; no search snippet or hidden raw HTML was used."
+            },
+            {
+              "url": "https://aircall.io/pricing/",
+              "title": "Aircall Pricing",
+              "quote": "All plans require a minimum of 3 licenses regardless of billing cycle.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated",
+              "verification_method": "headless Chromium rendered body innerText (installed Chrome; no raw HTML)",
+              "verification_note": "The rendered official page reproduced the normalized quotation. Direct HTTP retrieval missed JavaScript-rendered, redirect-sensitive, or charset-sensitive content; no search snippet or hidden raw HTML was used.",
+              "verified_at": "2026-11-24",
+              "source_review": "The rendered official page reproduced the normalized quotation. Direct HTTP retrieval missed JavaScript-rendered, redirect-sensitive, or charset-sensitive content; no search snippet or hidden raw HTML was used."
+            },
+            {
+              "url": "https://developer.aircall.io/docs/how-to-publish-an-app",
+              "title": "How to publish an Aircall app",
+              "quote": "Before you start building a public app, you need to be approved as an Aircall Technology Partner.",
+              "retrieved_at": "2026-11-24",
+              "published_at": "2026-07-27",
+              "published_label": "updatedAt: 2026-07-27T09:15:58.000Z"
+            }
+          ]
+        },
+        "api_surface": {
+          "status": "checked",
+          "value": "REST; broad documented surface",
+          "api_types": [
+            "REST"
+          ],
+          "breadth": "broad",
+          "details": {
+            "api_types": [
+              "REST"
+            ],
+            "breadth": "broad"
+          },
+          "reason": "Aircall explicitly offers a REST API and webhooks, with documented management of calls, messages, AI agents, users, numbers, and more. This supports broad breadth. The API introduction was updated October 28, 2026.",
+          "evidence": [
+            {
+              "url": "https://developer.aircall.io/docs/introduction",
+              "title": "Aircall API Introduction",
+              "quote": "Connect Aircall to any business tool using our REST API and webhooks.",
+              "retrieved_at": "2026-11-24",
+              "published_at": "2026-10-28",
+              "published_label": "updatedAt: 2026-10-28T12:37:38.000Z"
+            },
+            {
+              "url": "https://developer.aircall.io/docs/introduction",
+              "title": "Aircall API Introduction",
+              "quote": "The foundation for every Aircall integration. Manage calls, messages, AI agents, users, numbers, and more — fully documented with detailed schemas, and request and response examples in the API reference.",
+              "retrieved_at": "2026-11-24",
+              "published_at": "2026-10-28",
+              "published_label": "updatedAt: 2026-10-28T12:37:38.000Z"
+            }
+          ]
+        },
+        "official_mcp": {
+          "status": "checked",
+          "value": "vendor_server",
+          "mcp_mode": "early_access",
+          "reason": "Aircall operates a remote MCP server at https://mcp.aircall.io/mcp using OAuth. It is in beta, requires Account Manager enrollment and an Admin connection, and is read-only for calls and conversation intelligence; the AI add-on is required for conversation-intelligence tools. The current support article is undated.",
+          "evidence": [
+            {
+              "url": "https://support.aircall.io/en-gb/articles/39677926959517",
+              "title": "Aircall MCP",
+              "quote": "Aircall MCP gives an AI assistant, like Claude or ChatGPT, read-only access to your company's calls and conversation intelligence data.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            },
+            {
+              "url": "https://support.aircall.io/en-gb/articles/39677926959517",
+              "title": "Aircall MCP",
+              "quote": "Important: Aircall MCP is currently in beta. To join the beta, contact your Account Manager.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated",
+              "verification_method": "headless Chromium rendered body innerText (installed Chrome; no raw HTML)",
+              "verification_note": "The rendered official page reproduced the normalized quotation. Direct HTTP retrieval missed JavaScript-rendered, redirect-sensitive, or charset-sensitive content; no search snippet or hidden raw HTML was used.",
+              "verified_at": "2026-11-24",
+              "source_review": "The rendered official page reproduced the normalized quotation. Direct HTTP retrieval missed JavaScript-rendered, redirect-sensitive, or charset-sensitive content; no search snippet or hidden raw HTML was used."
+            },
+            {
+              "url": "https://support.aircall.io/en-gb/articles/39677926959517",
+              "title": "Aircall MCP",
+              "quote": "Aircall's MCP server publishes a catalog of tools it can use, such as \"search calls,\" \"get transcripts,\" and \"get sentiment,\" each with a defined input and output.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            }
+          ]
+        },
+        "composio_toolkit": {
+          "status": "checked",
+          "value": "listed_exact",
+          "slug": "AIRCALL",
+          "auth_display": "OAUTH2, BASIC",
+          "tools": 48,
+          "triggers": 0,
+          "reason": "Composio's Aircall toolkit page is an exact listing with slug AIRCALL, OAuth2/BASIC authentication, 48 tools, and 0 triggers. The page is undated and is used only as Composio catalog evidence.",
+          "evidence": [
+            {
+              "url": "https://docs.composio.dev/toolkits/aircall",
+              "title": "Aircall Composio Toolkit",
+              "quote": "Slug: AIRCALL",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            }
+          ]
+        },
+        "verdict": {
+          "status": "checked",
+          "value": "gated_build_candidate",
+          "reason": "Aircall is a gated build candidate because its REST API is broad and private integrations can use self-generated Basic credentials, but all plans are paid and public apps require partner approval. MCP is a restricted read-only beta. The pricing and current MCP support pages are undated; API documentation carries 2026 update dates.",
+          "evidence": [
+            {
+              "url": "https://developer.aircall.io/docs/introduction",
+              "title": "Aircall API Introduction",
+              "quote": "Connect Aircall to any business tool using our REST API and webhooks.",
+              "retrieved_at": "2026-11-24",
+              "published_at": "2026-10-28",
+              "published_label": "updatedAt: 2026-10-28T12:37:38.000Z"
+            },
+            {
+              "url": "https://aircall.io/pricing/",
+              "title": "Aircall Pricing",
+              "quote": "All plans include API access and 250+ integrations. Aircall also offers an open API and webhook framework for custom integrations.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated",
+              "verification_method": "headless Chromium rendered body innerText (installed Chrome; no raw HTML)",
+              "verification_note": "The rendered official page reproduced the normalized quotation. Direct HTTP retrieval missed JavaScript-rendered, redirect-sensitive, or charset-sensitive content; no search snippet or hidden raw HTML was used.",
+              "verified_at": "2026-11-24",
+              "source_review": "The rendered official page reproduced the normalized quotation. Direct HTTP retrieval missed JavaScript-rendered, redirect-sensitive, or charset-sensitive content; no search snippet or hidden raw HTML was used."
+            },
+            {
+              "url": "https://aircall.io/pricing/",
+              "title": "Aircall Pricing",
+              "quote": "All plans require a minimum of 3 licenses regardless of billing cycle.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated",
+              "verification_method": "headless Chromium rendered body innerText (installed Chrome; no raw HTML)",
+              "verification_note": "The rendered official page reproduced the normalized quotation. Direct HTTP retrieval missed JavaScript-rendered, redirect-sensitive, or charset-sensitive content; no search snippet or hidden raw HTML was used.",
+              "verified_at": "2026-11-24",
+              "source_review": "The rendered official page reproduced the normalized quotation. Direct HTTP retrieval missed JavaScript-rendered, redirect-sensitive, or charset-sensitive content; no search snippet or hidden raw HTML was used."
+            }
+          ]
+        }
+      }
+    },
+    {
+      "number": 30,
+      "app": "Vonage",
+      "category": "Communications and Messaging",
+      "summary": "Vonage provides broad HTTP APIs with OpenAPI 3 descriptions across messaging and other communications products. Authentication uses API key/secret Basic credentials or JWTs depending on the product. Accounts receive initial free credit and then pay per request. Vonage operates both a remote Documentation MCP server and a local stdio Tooling/Server API Bindings MCP server. Composio's complete current catalog has no Vonage or Nexmo listing.",
+      "blocker": "API usage is charged per request after initial free credit. The Documentation MCP server only retrieves documentation; account actions require the local Tooling MCP server or direct APIs. No exact Composio toolkit or documented alias was found in the complete catalog.",
+      "next_action": "Create a Vonage account, secure the API key/secret or product-specific JWT key, and prototype with the relevant OpenAPI-described API. Use the remote Documentation MCP server for docs and the local Tooling MCP server for API bindings; do not substitute a different Composio product.",
+      "fields": {
+        "auth": {
+          "status": "checked",
+          "value": [
+            "API key and secret with HTTP Basic authentication",
+            "JSON Web Tokens for products that require JWT authentication"
+          ],
+          "reason": "Vonage documents product-dependent authentication: newer APIs use API key and secret Base64-encoded in the Authorization header, while applicable products use JWTs minted from an application private key and application ID. Sample credentials and JWT values are deliberately excluded. The authentication page is undated.",
+          "evidence": [
+            {
+              "url": "https://developer.vonage.com/en/getting-started/concepts/authentication",
+              "title": "Vonage API Authentication",
+              "quote": "Vonage APIs support different authentication methods depending on which product you are using:",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            },
+            {
+              "url": "https://developer.vonage.com/en/getting-started/concepts/authentication",
+              "title": "Vonage API Authentication",
+              "quote": "A number of newer Vonage APIs require authentication to be done using an API key and secret sent Base64 encoded in the `Authorization` header.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            },
+            {
+              "url": "https://developer.vonage.com/en/getting-started/concepts/authentication",
+              "title": "Vonage API Authentication",
+              "quote": "JSON Web Tokens (JWTs) are a compact, URL-safe means of representing claims to be transferred between two parties.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            },
+            {
+              "url": "https://developer.vonage.com/en/getting-started/concepts/authentication",
+              "title": "Vonage API Authentication",
+              "quote": "Using that `private.key` and the application ID, you can mint a new JWT.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            }
+          ]
+        },
+        "credential_gate": {
+          "status": "checked",
+          "value": "self_serve_trial",
+          "gate_class": "self_serve_trial",
+          "details": {
+            "gate_class": "self_serve_trial"
+          },
+          "reason": "Vonage allows self-service account creation and supplies an API key and secret. API access is charged per request, with initial free credit rather than a documented fixed-duration trial. The getting-started page is undated.",
+          "evidence": [
+            {
+              "url": "https://developer.vonage.com/en/getting-started/overview",
+              "title": "Vonage Getting Started",
+              "quote": "To work with our APIs, you will need to sign up for an account. This will give you an API key and secret that you can use to access our APIs.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            },
+            {
+              "url": "https://developer.vonage.com/en/getting-started/overview",
+              "title": "Vonage Getting Started",
+              "quote": "Access to our APIs is charged on a per-request basis. We’ll give you some free credit when you first open your account and you can top up when you run low.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            }
+          ]
+        },
+        "api_surface": {
+          "status": "checked",
+          "value": "HTTP API; broad documented surface",
+          "api_types": [
+            "HTTP API"
+          ],
+          "breadth": "broad",
+          "details": {
+            "api_types": [
+              "HTTP API"
+            ],
+            "breadth": "broad"
+          },
+          "reason": "Vonage states that all of its APIs have OpenAPI 3 descriptions, and the Messages API alone spans SMS, MMS, RCS, WhatsApp, Messenger, Viber, and Email. This supports a broad HTTP API surface without overclaiming REST or GraphQL. The cited pages are undated.",
+          "evidence": [
+            {
+              "url": "https://developer.vonage.com/en/getting-started/overview",
+              "title": "Vonage Getting Started",
+              "quote": "All Vonage APIs have OpenAPI descriptions that you can take advantage of in your own development process.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            },
+            {
+              "url": "https://developer.vonage.com/en/getting-started/overview",
+              "title": "Vonage Getting Started",
+              "quote": "Each of our APIs has its own OpenAPI specification. You can read more about OpenAPI in our documentation. Our specifications conform to OpenAPI specification version 3, also known as OAS3.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            },
+            {
+              "url": "https://developer.vonage.com/en/messages/overview",
+              "title": "Vonage Messages API",
+              "quote": "The Vonage Messages API integrates with SMS, MMS, RCS, WhatsApp, Messenger, Viber, and Email allowing you to communicate with your customers on the channels they like.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated",
+              "verification_method": "headless Chromium rendered body innerText (installed Chrome; no raw HTML)",
+              "verification_note": "The rendered official page reproduced the normalized quotation. Direct HTTP retrieval missed JavaScript-rendered, redirect-sensitive, or charset-sensitive content; no search snippet or hidden raw HTML was used.",
+              "verified_at": "2026-11-24",
+              "source_review": "The rendered official page reproduced the normalized quotation. Direct HTTP retrieval missed JavaScript-rendered, redirect-sensitive, or charset-sensitive content; no search snippet or hidden raw HTML was used."
+            }
+          ]
+        },
+        "official_mcp": {
+          "status": "checked",
+          "value": "vendor_server",
+          "mcp_mode": "both",
+          "reason": "Vonage operates two distinct MCP servers: a remote Documentation MCP server and a local stdio Server API Bindings/Tooling MCP server. The documentation server is hosted at documentation-mcp.vonage.dev, but evidence URLs use the official developer.vonage.com pages because the endpoint host does not pass the official-domain validator. Documentation is undated; official blogs are dated September 30, 2025 and July 22, 2026.",
+          "evidence": [
+            {
+              "url": "https://developer.vonage.com/en/mcp-server/conceptual-guides/introduction-to-vonage-mcp",
+              "title": "Introduction to Vonage MCP",
+              "quote": "Vonage offers two MCP Servers designed for different purposes:",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            },
+            {
+              "url": "https://developer.vonage.com/en/mcp-server/conceptual-guides/introduction-to-vonage-mcp",
+              "title": "Introduction to Vonage MCP",
+              "quote": "MCP Server\n\nDescription\n\nPurpose\n\nDocumentation MCP Server\n\nLets AI assistants search and return information from the Vonage API Documentation.\n\nQuickly find API details, guides, and code snippets without leaving your IDE.\n\nServer API Bindings MCP Server\n\nAlso known as our Tooling MCP Server, it provides tools for managing Vonage applications, numbers, and reports programmatically.\n\nEnables configuration and account management directly through AI commands.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            },
+            {
+              "url": "https://developer.vonage.com/en/blog/introducing-the-vonage-documentation-mcp-server",
+              "title": "Introducing the Vonage Documentation MCP Server",
+              "quote": "We’re excited to announce the Vonage Documentation MCP Server — a new way to access Vonage docs directly from your development environment or AI assistant.",
+              "retrieved_at": "2026-11-24",
+              "published_at": "2025-09-30",
+              "published_label": "Published on September 30, 2025"
+            },
+            {
+              "url": "https://developer.vonage.com/en/blog/introducing-the-vonage-documentation-mcp-server",
+              "title": "Introducing the Vonage Documentation MCP Server",
+              "quote": "The Vonage Documentation MCP Server is live at https://documentation-mcp.vonage.dev.",
+              "retrieved_at": "2026-11-24",
+              "published_at": "2025-09-30",
+              "published_label": "Published on September 30, 2025"
+            },
+            {
+              "url": "https://developer.vonage.com/en/blog/vonage-mcp-server-update-reports-numbers-and-charts",
+              "title": "Vonage MCP Server update: reports, numbers, and charts",
+              "quote": "The Vonage MCP Server API Bindings let AI assistants use Vonage APIs through the Model Context Protocol (MCP).",
+              "retrieved_at": "2026-11-24",
+              "published_at": "2026-07-22",
+              "published_label": "Published on July 22, 2026"
+            },
+            {
+              "url": "https://developer.vonage.com/en/blog/vonage-mcp-server-update-reports-numbers-and-charts",
+              "title": "Vonage MCP Server update: reports, numbers, and charts",
+              "quote": "`\"type\": \"stdio\"`",
+              "retrieved_at": "2026-11-24",
+              "published_at": "2026-07-22",
+              "published_label": "Published on July 22, 2026"
+            }
+          ]
+        },
+        "composio_toolkit": {
+          "status": "checked",
+          "value": "not_listed",
+          "reason": "The complete current Composio catalog at /toolkits.md was searched case-insensitively for Vonage and Nexmo, and the full V-section was inspected; neither name appears. No documented alias was found, and no different product was substituted. The catalog page is undated.",
+          "evidence": [
+            {
+              "url": "https://docs.composio.dev/toolkits.md",
+              "title": "Composio All Toolkits Catalog",
+              "quote": "Composio supports 1841 toolkits for building AI agents.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            }
+          ]
+        },
+        "verdict": {
+          "status": "checked",
+          "value": "documented_build_candidate",
+          "reason": "Vonage is a documented build candidate because it has broad OpenAPI-described HTTP APIs, explicit authentication, and self-serve account access with initial credit. Per-request charging and product-specific JWT requirements are implementation constraints. The cited official pages are undated; absence from Composio's complete catalog is also based on an undated catalog snapshot.",
+          "evidence": [
+            {
+              "url": "https://developer.vonage.com/en/getting-started/overview",
+              "title": "Vonage Getting Started",
+              "quote": "All Vonage APIs have OpenAPI descriptions that you can take advantage of in your own development process.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            },
+            {
+              "url": "https://developer.vonage.com/en/getting-started/overview",
+              "title": "Vonage Getting Started",
+              "quote": "To work with our APIs, you will need to sign up for an account. This will give you an API key and secret that you can use to access our APIs.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            },
+            {
+              "url": "https://developer.vonage.com/en/getting-started/overview",
+              "title": "Vonage Getting Started",
+              "quote": "Access to our APIs is charged on a per-request basis. We’ll give you some free credit when you first open your account and you can top up when you run low.",
+              "retrieved_at": "2026-11-24",
+              "published_at": null,
+              "published_label": "undated"
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,979 @@
+{
+  "sample": "Deliberately selected ten-category sample used during rule tuning; not a random holdout",
+  "scoring": "strict: correct/scored; half-credit: (correct + 0.5 * partial)/scored; abstained and unresolved excluded",
+  "total_claims": 60,
+  "answered": 28,
+  "ratings": {
+    "partial": 7,
+    "abstained": 32,
+    "correct": 21
+  },
+  "scored_answered": 28,
+  "strict_numerator": 21,
+  "weighted_numerator": 24.5,
+  "strict_accuracy": 0.75,
+  "weighted_accuracy": 0.875,
+  "records": [
+    {
+      "app": "HubSpot",
+      "category": "CRM and Sales",
+      "field": "auth",
+      "pass7_answer": [
+        "OAuth 2.0",
+        "API key",
+        "API token",
+        "Bearer token"
+      ],
+      "pass7_sources": [
+        "https://developers.hubspot.com/changelog/new-oauth-v3-api-endpoints-and-standardized-error-responses",
+        "https://developers.hubspot.com/blog/hubspot-service-keys-the-right-api-credential-for-data-integrations",
+        "https://community.hubspot.com/t/new-oauth-v3-api-endpoints-and-standardized-error-responses/145422"
+      ],
+      "pass7_publication_labels": [
+        "10 months ago",
+        "6 months ago",
+        "6 months ago",
+        "6 months ago",
+        "10 months ago"
+      ],
+      "rating": "partial",
+      "review_note": "OAuth and bearer service keys are documented, but the extracted labels do not distinguish service keys from historical API keys.",
+      "independent_sources": [
+        "https://developers.hubspot.com/changelog/service-keys"
+      ],
+      "correction": "OAuth plus service keys (scope-dependent)"
+    },
+    {
+      "app": "HubSpot",
+      "category": "CRM and Sales",
+      "field": "credential_gate",
+      "pass7_answer": [
+        "free or trial developer credential path"
+      ],
+      "pass7_sources": [
+        "https://developers.hubspot.com/blog/harnessing-the-power-of-hubspots-public-apis-with-postman"
+      ],
+      "pass7_publication_labels": [
+        "3.0 years ago"
+      ],
+      "rating": "partial",
+      "review_note": "Free developer test accounts are documented; installing a public or creating a private app may require a super admin.",
+      "independent_sources": [
+        "https://developers.hubspot.com/blog/harnessing-the-power-of-hubspots-public-apis-with-postman"
+      ],
+      "correction": "Free developer test account; super admin required for public install or private app"
+    },
+    {
+      "app": "HubSpot",
+      "category": "CRM and Sales",
+      "field": "api_surface",
+      "pass7_answer": "unknown",
+      "pass7_sources": [],
+      "pass7_publication_labels": [],
+      "rating": "abstained",
+      "review_note": "The pass did not answer this field.",
+      "independent_sources": [],
+      "correction": "unknown"
+    },
+    {
+      "app": "HubSpot",
+      "category": "CRM and Sales",
+      "field": "official_mcp",
+      "pass7_answer": "yes (provisional)",
+      "pass7_sources": [
+        "https://developers.hubspot.com/changelog/remote-hubspot-mcp-server-is-now-generally-available",
+        "https://developers.hubspot.com/docs/apps/developer-platform/build-apps/integrate-with-the-remote-hubspot-mcp-server",
+        "https://developers.hubspot.com/ai-tools/mcp?faq=5",
+        "https://community.hubspot.com/t/remote-hubspot-mcp-server-is-now-generally-available/148286"
+      ],
+      "pass7_publication_labels": [
+        "7 months ago",
+        "7 months ago",
+        "7 months ago"
+      ],
+      "rating": "correct",
+      "review_note": "The cited positive claim is supported by the independently checked vendor or catalog source.",
+      "independent_sources": [
+        "https://developers.hubspot.com/docs/apps/developer-platform/build-apps/integrate-with-the-remote-hubspot-mcp-server"
+      ],
+      "correction": "yes"
+    },
+    {
+      "app": "HubSpot",
+      "category": "CRM and Sales",
+      "field": "composio_toolkit",
+      "pass7_answer": "listed",
+      "pass7_sources": [
+        "https://docs.composio.dev/toolkits/hubspot"
+      ],
+      "pass7_publication_labels": [],
+      "rating": "correct",
+      "review_note": "The cited positive claim is supported by the independently checked vendor or catalog source.",
+      "independent_sources": [
+        "https://docs.composio.dev/toolkits/hubspot"
+      ],
+      "correction": "listed"
+    },
+    {
+      "app": "HubSpot",
+      "category": "CRM and Sales",
+      "field": "verdict",
+      "pass7_answer": "unknown",
+      "pass7_sources": [],
+      "pass7_publication_labels": [],
+      "rating": "abstained",
+      "review_note": "The pass did not answer this field.",
+      "independent_sources": [
+        "https://developers.hubspot.com/blog/harnessing-the-power-of-hubspots-public-apis-with-postman"
+      ],
+      "correction": "build for developer test; customer super admin may be required for installation"
+    },
+    {
+      "app": "Zendesk",
+      "category": "Support and Helpdesk",
+      "field": "auth",
+      "pass7_answer": [
+        "API token",
+        "Basic authentication",
+        "API key",
+        "OAuth 2.0"
+      ],
+      "pass7_sources": [
+        "https://support.zendesk.com/hc/en-us/articles/4408831452954-How-can-I-authenticate-API-requests",
+        "https://developer.zendesk.com/api-reference/introduction/security-and-auth/",
+        "https://support.zendesk.com/hc/en-us/articles/4408889192858-Managing-API-token-access-to-the-Zendesk-API",
+        "https://developer.zendesk.com/documentation/conversations/getting-started/api-authentication/",
+        "https://developer.zendesk.com/documentation/live-chat/getting-started/auth/"
+      ],
+      "pass7_publication_labels": [],
+      "rating": "partial",
+      "review_note": "The API token and Basic descriptions are legacy migration paths; OAuth is current, and the separate Conversations API key is product-scoped.",
+      "independent_sources": [
+        "https://developer.zendesk.com/api-reference/introduction/security-and-auth/"
+      ],
+      "correction": "OAuth access token; legacy basic/API token subject to migration"
+    },
+    {
+      "app": "Zendesk",
+      "category": "Support and Helpdesk",
+      "field": "credential_gate",
+      "pass7_answer": [
+        "administrator controls credential"
+      ],
+      "pass7_sources": [
+        "https://support.zendesk.com/hc/en-us/articles/4408889192858-Managing-API-token-access-to-the-Zendesk-API"
+      ],
+      "pass7_publication_labels": [],
+      "rating": "partial",
+      "review_note": "The cited administrator requirement is specific to legacy API-token creation; OAuth requirements are separate.",
+      "independent_sources": [
+        "https://support.zendesk.com/hc/en-us/articles/4408889192858-Managing-API-token-access-to-the-Zendesk-API"
+      ],
+      "correction": "Legacy API-token creation requires an administrator; migration to OAuth is required"
+    },
+    {
+      "app": "Zendesk",
+      "category": "Support and Helpdesk",
+      "field": "api_surface",
+      "pass7_answer": "unknown",
+      "pass7_sources": [],
+      "pass7_publication_labels": [],
+      "rating": "abstained",
+      "review_note": "The pass did not answer this field.",
+      "independent_sources": [],
+      "correction": "unknown"
+    },
+    {
+      "app": "Zendesk",
+      "category": "Support and Helpdesk",
+      "field": "official_mcp",
+      "pass7_answer": "unknown",
+      "pass7_sources": [],
+      "pass7_publication_labels": [],
+      "rating": "abstained",
+      "review_note": "The pass did not answer this field.",
+      "independent_sources": [
+        "https://support.zendesk.com/hc/en-us/articles/11400026079130-Connecting-external-AI-agents-to-the-Zendesk-MCP-server-or-Zendesk-AI-agents-EAP"
+      ],
+      "correction": "yes, Zendesk Bridge MCP server (EAP)"
+    },
+    {
+      "app": "Zendesk",
+      "category": "Support and Helpdesk",
+      "field": "composio_toolkit",
+      "pass7_answer": "listed",
+      "pass7_sources": [
+        "https://docs.composio.dev/toolkits/zendesk"
+      ],
+      "pass7_publication_labels": [],
+      "rating": "correct",
+      "review_note": "The cited positive claim is supported by the independently checked vendor or catalog source.",
+      "independent_sources": [
+        "https://docs.composio.dev/toolkits/zendesk"
+      ],
+      "correction": "listed"
+    },
+    {
+      "app": "Zendesk",
+      "category": "Support and Helpdesk",
+      "field": "verdict",
+      "pass7_answer": "unknown",
+      "pass7_sources": [],
+      "pass7_publication_labels": [],
+      "rating": "abstained",
+      "review_note": "The pass did not answer this field.",
+      "independent_sources": [],
+      "correction": "unknown"
+    },
+    {
+      "app": "Slack",
+      "category": "Communications and Messaging",
+      "field": "auth",
+      "pass7_answer": [
+        "OAuth 2.0",
+        "API token",
+        "Basic authentication (OAuth client or endpoint-specific)"
+      ],
+      "pass7_sources": [
+        "https://docs.slack.dev/authentication/installing-with-oauth/",
+        "https://docs.slack.dev/reference/methods/oauth.access/",
+        "https://docs.slack.dev/authentication/"
+      ],
+      "pass7_publication_labels": [],
+      "rating": "correct",
+      "review_note": "The cited positive claim is supported by the independently checked vendor or catalog source.",
+      "independent_sources": [
+        "https://docs.slack.dev/authentication/"
+      ],
+      "correction": "OAuth 2.0 and scoped tokens"
+    },
+    {
+      "app": "Slack",
+      "category": "Communications and Messaging",
+      "field": "credential_gate",
+      "pass7_answer": "unknown",
+      "pass7_sources": [],
+      "pass7_publication_labels": [],
+      "rating": "abstained",
+      "review_note": "The pass did not answer this field.",
+      "independent_sources": [],
+      "correction": "unknown"
+    },
+    {
+      "app": "Slack",
+      "category": "Communications and Messaging",
+      "field": "api_surface",
+      "pass7_answer": "unknown",
+      "pass7_sources": [],
+      "pass7_publication_labels": [],
+      "rating": "abstained",
+      "review_note": "The pass did not answer this field.",
+      "independent_sources": [
+        "https://docs.slack.dev/apis/web-api/"
+      ],
+      "correction": "HTTP Web API; Slack documentation explicitly says it is not a REST API"
+    },
+    {
+      "app": "Slack",
+      "category": "Communications and Messaging",
+      "field": "official_mcp",
+      "pass7_answer": "yes (provisional)",
+      "pass7_sources": [
+        "https://docs.slack.dev/changelog/2026/02/17/slack-mcp/",
+        "https://slack.com/intl/en-in/help/articles/48855576908307-Guide-to-MCP-in-Slack",
+        "https://slack.com/intl/en-gb/help/articles/48855576908307-Guide-to-MCP-in-Slack",
+        "https://docs.slack.dev/ai/slack-mcp-server/"
+      ],
+      "pass7_publication_labels": [
+        "9 months ago"
+      ],
+      "rating": "correct",
+      "review_note": "The cited positive claim is supported by the independently checked vendor or catalog source.",
+      "independent_sources": [
+        "https://docs.slack.dev/ai/slack-mcp-server/"
+      ],
+      "correction": "yes"
+    },
+    {
+      "app": "Slack",
+      "category": "Communications and Messaging",
+      "field": "composio_toolkit",
+      "pass7_answer": "listed",
+      "pass7_sources": [
+        "https://docs.composio.dev/toolkits/slack"
+      ],
+      "pass7_publication_labels": [],
+      "rating": "correct",
+      "review_note": "The cited positive claim is supported by the independently checked vendor or catalog source.",
+      "independent_sources": [
+        "https://docs.composio.dev/toolkits/slack"
+      ],
+      "correction": "listed"
+    },
+    {
+      "app": "Slack",
+      "category": "Communications and Messaging",
+      "field": "verdict",
+      "pass7_answer": "unknown",
+      "pass7_sources": [],
+      "pass7_publication_labels": [],
+      "rating": "abstained",
+      "review_note": "The pass did not answer this field.",
+      "independent_sources": [],
+      "correction": "unknown"
+    },
+    {
+      "app": "Google Ads",
+      "category": "Marketing, Ads, Email and Social",
+      "field": "auth",
+      "pass7_answer": [
+        "OAuth 2.0"
+      ],
+      "pass7_sources": [
+        "https://developers.google.com/google-ads/api/rest/auth",
+        "https://developers.google.com/google-ads/api/docs/oauth/cloud-project"
+      ],
+      "pass7_publication_labels": [],
+      "rating": "correct",
+      "review_note": "The cited positive claim is supported by the independently checked vendor or catalog source.",
+      "independent_sources": [
+        "https://developers.google.com/google-ads/api/rest/auth"
+      ],
+      "correction": [
+        "OAuth 2.0"
+      ]
+    },
+    {
+      "app": "Google Ads",
+      "category": "Marketing, Ads, Email and Social",
+      "field": "credential_gate",
+      "pass7_answer": [
+        "approval required"
+      ],
+      "pass7_sources": [
+        "https://developers.google.com/google-ads/api/docs/productionize/access-levels"
+      ],
+      "pass7_publication_labels": [],
+      "rating": "partial",
+      "review_note": "Production access needs the appropriate approved access level; test access is available without that production approval.",
+      "independent_sources": [
+        "https://developers.google.com/google-ads/api/docs/api-policy/access-levels"
+      ],
+      "correction": "approval for production access"
+    },
+    {
+      "app": "Google Ads",
+      "category": "Marketing, Ads, Email and Social",
+      "field": "api_surface",
+      "pass7_answer": "unknown",
+      "pass7_sources": [],
+      "pass7_publication_labels": [],
+      "rating": "abstained",
+      "review_note": "The pass did not answer this field.",
+      "independent_sources": [],
+      "correction": "unknown"
+    },
+    {
+      "app": "Google Ads",
+      "category": "Marketing, Ads, Email and Social",
+      "field": "official_mcp",
+      "pass7_answer": "yes (provisional)",
+      "pass7_sources": [
+        "https://developers.google.com/google-ads/api/docs/developer-toolkit/mcp-server"
+      ],
+      "pass7_publication_labels": [],
+      "rating": "correct",
+      "review_note": "The cited positive claim is supported by the independently checked vendor or catalog source.",
+      "independent_sources": [
+        "https://developers.google.com/google-ads/api/docs/developer-toolkit/mcp-server"
+      ],
+      "correction": "yes"
+    },
+    {
+      "app": "Google Ads",
+      "category": "Marketing, Ads, Email and Social",
+      "field": "composio_toolkit",
+      "pass7_answer": "listed",
+      "pass7_sources": [
+        "https://docs.composio.dev/toolkits/googleads"
+      ],
+      "pass7_publication_labels": [],
+      "rating": "correct",
+      "review_note": "The cited positive claim is supported by the independently checked vendor or catalog source.",
+      "independent_sources": [
+        "https://docs.composio.dev/toolkits/googleads"
+      ],
+      "correction": "listed"
+    },
+    {
+      "app": "Google Ads",
+      "category": "Marketing, Ads, Email and Social",
+      "field": "verdict",
+      "pass7_answer": "unknown",
+      "pass7_sources": [],
+      "pass7_publication_labels": [],
+      "rating": "abstained",
+      "review_note": "The pass did not answer this field.",
+      "independent_sources": [
+        "https://developers.google.com/google-ads/api/docs/api-policy/access-levels"
+      ],
+      "correction": "needs approval for production access"
+    },
+    {
+      "app": "Shopify",
+      "category": "Ecommerce",
+      "field": "auth",
+      "pass7_answer": [
+        "OAuth 2.0"
+      ],
+      "pass7_sources": [
+        "https://shopify.dev/docs/api/usage/authentication"
+      ],
+      "pass7_publication_labels": [],
+      "rating": "partial",
+      "review_note": "OAuth is valid for relevant flows, but tokens and authorization differ among Admin, Storefront and Customer Account APIs.",
+      "independent_sources": [
+        "https://shopify.dev/docs/api/usage/authentication"
+      ],
+      "correction": "OAuth and API-specific scoped access tokens"
+    },
+    {
+      "app": "Shopify",
+      "category": "Ecommerce",
+      "field": "credential_gate",
+      "pass7_answer": "unknown",
+      "pass7_sources": [],
+      "pass7_publication_labels": [],
+      "rating": "abstained",
+      "review_note": "The pass did not answer this field.",
+      "independent_sources": [
+        "https://shopify.dev/docs/apps/build/stores/development-stores"
+      ],
+      "correction": "Partner account or merchant store with developer permissions; development stores available"
+    },
+    {
+      "app": "Shopify",
+      "category": "Ecommerce",
+      "field": "api_surface",
+      "pass7_answer": [
+        "GraphQL",
+        "REST"
+      ],
+      "pass7_sources": [
+        "https://shopify.dev/docs/api/usage/authentication",
+        "https://shopify.dev/docs/api/shopify-mcp",
+        "https://shopify.dev/docs/api/usage/access-scopes",
+        "https://shopify.dev/docs/api",
+        "https://shopify.dev/docs/api/ai-toolkit",
+        "https://shopify.dev/docs/apps/build/authentication-authorization",
+        "https://shopify.dev/docs/apps/build/apis",
+        "https://shopify.dev/docs/apps/build/authentication-authorization/access-tokens"
+      ],
+      "pass7_publication_labels": [],
+      "rating": "correct",
+      "review_note": "The cited positive claim is supported by the independently checked vendor or catalog source.",
+      "independent_sources": [
+        "https://shopify.dev/docs/api/usage/authentication",
+        "https://shopify.dev/docs/api/admin-rest"
+      ],
+      "correction": "GraphQL Admin API and legacy REST Admin API"
+    },
+    {
+      "app": "Shopify",
+      "category": "Ecommerce",
+      "field": "official_mcp",
+      "pass7_answer": "unknown",
+      "pass7_sources": [],
+      "pass7_publication_labels": [],
+      "rating": "abstained",
+      "review_note": "The pass did not answer this field.",
+      "independent_sources": [],
+      "correction": "unknown"
+    },
+    {
+      "app": "Shopify",
+      "category": "Ecommerce",
+      "field": "composio_toolkit",
+      "pass7_answer": "listed",
+      "pass7_sources": [
+        "https://docs.composio.dev/toolkits/shopify"
+      ],
+      "pass7_publication_labels": [],
+      "rating": "correct",
+      "review_note": "The cited positive claim is supported by the independently checked vendor or catalog source.",
+      "independent_sources": [
+        "https://docs.composio.dev/toolkits/shopify"
+      ],
+      "correction": "listed"
+    },
+    {
+      "app": "Shopify",
+      "category": "Ecommerce",
+      "field": "verdict",
+      "pass7_answer": "unknown",
+      "pass7_sources": [],
+      "pass7_publication_labels": [],
+      "rating": "abstained",
+      "review_note": "The pass did not answer this field.",
+      "independent_sources": [
+        "https://shopify.dev/docs/apps/build/stores/development-stores",
+        "https://shopify.dev/docs/api/usage/authentication"
+      ],
+      "correction": "build with developer store; merchant authorization for production"
+    },
+    {
+      "app": "Apify",
+      "category": "Data, SEO and Scraping",
+      "field": "auth",
+      "pass7_answer": "unknown",
+      "pass7_sources": [],
+      "pass7_publication_labels": [],
+      "rating": "abstained",
+      "review_note": "The pass did not answer this field.",
+      "independent_sources": [
+        "https://docs.apify.com/integrations/api"
+      ],
+      "correction": "API token (Bearer)"
+    },
+    {
+      "app": "Apify",
+      "category": "Data, SEO and Scraping",
+      "field": "credential_gate",
+      "pass7_answer": "unknown",
+      "pass7_sources": [],
+      "pass7_publication_labels": [],
+      "rating": "abstained",
+      "review_note": "The pass did not answer this field.",
+      "independent_sources": [
+        "https://docs.apify.com/agents/quickstart"
+      ],
+      "correction": "Self-serve account; free plan includes monthly credits"
+    },
+    {
+      "app": "Apify",
+      "category": "Data, SEO and Scraping",
+      "field": "api_surface",
+      "pass7_answer": [
+        "REST"
+      ],
+      "pass7_sources": [
+        "https://docs.apify.com/integrations/api",
+        "https://docs.apify.com/api"
+      ],
+      "pass7_publication_labels": [],
+      "rating": "correct",
+      "review_note": "The cited positive claim is supported by the independently checked vendor or catalog source.",
+      "independent_sources": [
+        "https://docs.apify.com/integrations/api"
+      ],
+      "correction": [
+        "REST"
+      ]
+    },
+    {
+      "app": "Apify",
+      "category": "Data, SEO and Scraping",
+      "field": "official_mcp",
+      "pass7_answer": "yes (provisional)",
+      "pass7_sources": [
+        "https://docs.apify.com/mcp"
+      ],
+      "pass7_publication_labels": [],
+      "rating": "correct",
+      "review_note": "The cited positive claim is supported by the independently checked vendor or catalog source.",
+      "independent_sources": [
+        "https://docs.apify.com/mcp"
+      ],
+      "correction": "yes"
+    },
+    {
+      "app": "Apify",
+      "category": "Data, SEO and Scraping",
+      "field": "composio_toolkit",
+      "pass7_answer": "listed",
+      "pass7_sources": [
+        "https://docs.composio.dev/toolkits/apify"
+      ],
+      "pass7_publication_labels": [],
+      "rating": "correct",
+      "review_note": "The cited positive claim is supported by the independently checked vendor or catalog source.",
+      "independent_sources": [
+        "https://docs.composio.dev/toolkits/apify"
+      ],
+      "correction": "listed"
+    },
+    {
+      "app": "Apify",
+      "category": "Data, SEO and Scraping",
+      "field": "verdict",
+      "pass7_answer": "unknown",
+      "pass7_sources": [],
+      "pass7_publication_labels": [],
+      "rating": "abstained",
+      "review_note": "The pass did not answer this field.",
+      "independent_sources": [
+        "https://docs.apify.com/agents/quickstart"
+      ],
+      "correction": "build now for development; usage limits apply"
+    },
+    {
+      "app": "GitHub",
+      "category": "Developer, Infra and Data platforms",
+      "field": "auth",
+      "pass7_answer": [
+        "Basic authentication"
+      ],
+      "pass7_sources": [
+        "https://docs.github.com/en/rest/authentication/authenticating-to-the-rest-api?apiVersion=2022-11-28",
+        "https://docs.github.com/en/rest/authentication/authenticating-to-the-rest-api",
+        "https://docs.github.com/en/rest/authentication/authenticating-to-the-rest-api?apiVersion=2026-03-10"
+      ],
+      "pass7_publication_labels": [],
+      "rating": "partial",
+      "review_note": "Basic applies only to some endpoints; the answer omits personal access tokens, app tokens, and OAuth.",
+      "independent_sources": [
+        "https://docs.github.com/en/rest/authentication/authenticating-to-the-rest-api"
+      ],
+      "correction": "personal access tokens, app tokens, OAuth; Basic for some endpoints"
+    },
+    {
+      "app": "GitHub",
+      "category": "Developer, Infra and Data platforms",
+      "field": "credential_gate",
+      "pass7_answer": "unknown",
+      "pass7_sources": [],
+      "pass7_publication_labels": [],
+      "rating": "abstained",
+      "review_note": "The pass did not answer this field.",
+      "independent_sources": [
+        "https://docs.github.com/en/rest/authentication/authenticating-to-the-rest-api"
+      ],
+      "correction": "Personal access token can be created for personal API use; organization policy may restrict access"
+    },
+    {
+      "app": "GitHub",
+      "category": "Developer, Infra and Data platforms",
+      "field": "api_surface",
+      "pass7_answer": [
+        "REST",
+        "GraphQL"
+      ],
+      "pass7_sources": [
+        "https://docs.github.com/en/rest/authentication/authenticating-to-the-rest-api?apiVersion=2022-11-28",
+        "https://docs.github.com/en/rest/authentication/authenticating-to-the-rest-api",
+        "https://github.com/github/github-mcp-server",
+        "https://docs.github.com/en/rest/authentication/keeping-your-api-credentials-secure?utm_campaign=secure-coding-agent-access-customer-tickets&utm_medium=content&utm_source=blog",
+        "https://docs.github.com/en/rest/using-the-rest-api/getting-started-with-the-rest-api",
+        "https://docs.github.com/en/rest/authentication/authenticating-to-the-rest-api?apiVersion=2026-03-10",
+        "https://docs.github.com/en/rest/about-the-rest-api/comparing-githubs-rest-api-and-graphql-api?apiVersion=2026-03-10",
+        "https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/managing-your-personal-access-tokens"
+      ],
+      "pass7_publication_labels": [],
+      "rating": "correct",
+      "review_note": "The cited positive claim is supported by the independently checked vendor or catalog source.",
+      "independent_sources": [
+        "https://docs.github.com/en/rest/using-the-rest-api/getting-started-with-the-rest-api",
+        "https://docs.github.com/en/graphql"
+      ],
+      "correction": [
+        "REST",
+        "GraphQL"
+      ]
+    },
+    {
+      "app": "GitHub",
+      "category": "Developer, Infra and Data platforms",
+      "field": "official_mcp",
+      "pass7_answer": "yes (provisional)",
+      "pass7_sources": [
+        "https://github.com/github/github-mcp-server",
+        "https://docs.github.com/en/copilot/how-tos/copilot-in-your-ide/customize-copilot/extend-copilot-with-tools-and-context/set-up-the-github-mcp-server"
+      ],
+      "pass7_publication_labels": [],
+      "rating": "correct",
+      "review_note": "The cited positive claim is supported by the independently checked vendor or catalog source.",
+      "independent_sources": [
+        "https://github.com/github/github-mcp-server"
+      ],
+      "correction": "yes"
+    },
+    {
+      "app": "GitHub",
+      "category": "Developer, Infra and Data platforms",
+      "field": "composio_toolkit",
+      "pass7_answer": "listed",
+      "pass7_sources": [
+        "https://docs.composio.dev/toolkits/github"
+      ],
+      "pass7_publication_labels": [],
+      "rating": "correct",
+      "review_note": "The cited positive claim is supported by the independently checked vendor or catalog source.",
+      "independent_sources": [
+        "https://docs.composio.dev/toolkits/github"
+      ],
+      "correction": "listed"
+    },
+    {
+      "app": "GitHub",
+      "category": "Developer, Infra and Data platforms",
+      "field": "verdict",
+      "pass7_answer": "unknown",
+      "pass7_sources": [],
+      "pass7_publication_labels": [],
+      "rating": "abstained",
+      "review_note": "The pass did not answer this field.",
+      "independent_sources": [
+        "https://docs.github.com/en/rest/authentication/authenticating-to-the-rest-api"
+      ],
+      "correction": "build now for personal account; organization access may need approval"
+    },
+    {
+      "app": "Notion",
+      "category": "Productivity and Project Management",
+      "field": "auth",
+      "pass7_answer": "unknown",
+      "pass7_sources": [],
+      "pass7_publication_labels": [],
+      "rating": "abstained",
+      "review_note": "The pass did not answer this field.",
+      "independent_sources": [
+        "https://developers.notion.com/reference/create-view"
+      ],
+      "correction": "The create-view endpoint accepts a bearer auth token"
+    },
+    {
+      "app": "Notion",
+      "category": "Productivity and Project Management",
+      "field": "credential_gate",
+      "pass7_answer": "unknown",
+      "pass7_sources": [],
+      "pass7_publication_labels": [],
+      "rating": "abstained",
+      "review_note": "The pass did not answer this field.",
+      "independent_sources": [
+        "https://www.notion.com/help/create-integrations-with-the-notion-api"
+      ],
+      "correction": "Connection owners can obtain API tokens; creation depends on plan and workspace settings"
+    },
+    {
+      "app": "Notion",
+      "category": "Productivity and Project Management",
+      "field": "api_surface",
+      "pass7_answer": "unknown",
+      "pass7_sources": [],
+      "pass7_publication_labels": [],
+      "rating": "abstained",
+      "review_note": "The pass did not answer this field.",
+      "independent_sources": [],
+      "correction": "unknown"
+    },
+    {
+      "app": "Notion",
+      "category": "Productivity and Project Management",
+      "field": "official_mcp",
+      "pass7_answer": "unknown",
+      "pass7_sources": [],
+      "pass7_publication_labels": [],
+      "rating": "abstained",
+      "review_note": "The pass did not answer this field.",
+      "independent_sources": [
+        "https://www.notion.com/help/notion-mcp"
+      ],
+      "correction": "yes, Notion MCP"
+    },
+    {
+      "app": "Notion",
+      "category": "Productivity and Project Management",
+      "field": "composio_toolkit",
+      "pass7_answer": "listed",
+      "pass7_sources": [
+        "https://docs.composio.dev/toolkits/notion"
+      ],
+      "pass7_publication_labels": [],
+      "rating": "correct",
+      "review_note": "The cited positive claim is supported by the independently checked vendor or catalog source.",
+      "independent_sources": [
+        "https://docs.composio.dev/toolkits/notion"
+      ],
+      "correction": "listed"
+    },
+    {
+      "app": "Notion",
+      "category": "Productivity and Project Management",
+      "field": "verdict",
+      "pass7_answer": "unknown",
+      "pass7_sources": [],
+      "pass7_publication_labels": [],
+      "rating": "abstained",
+      "review_note": "The pass did not answer this field.",
+      "independent_sources": [],
+      "correction": "unknown"
+    },
+    {
+      "app": "Stripe",
+      "category": "Finance and Fintech",
+      "field": "auth",
+      "pass7_answer": [
+        "API key"
+      ],
+      "pass7_sources": [
+        "https://stripe.com/in/legal/api-key-security"
+      ],
+      "pass7_publication_labels": [
+        "3 months ago"
+      ],
+      "rating": "correct",
+      "review_note": "The cited positive claim is supported by the independently checked vendor or catalog source.",
+      "independent_sources": [
+        "https://docs.stripe.com/keys"
+      ],
+      "correction": [
+        "API key"
+      ]
+    },
+    {
+      "app": "Stripe",
+      "category": "Finance and Fintech",
+      "field": "credential_gate",
+      "pass7_answer": "unknown",
+      "pass7_sources": [],
+      "pass7_publication_labels": [],
+      "rating": "abstained",
+      "review_note": "The pass did not answer this field.",
+      "independent_sources": [],
+      "correction": "unknown"
+    },
+    {
+      "app": "Stripe",
+      "category": "Finance and Fintech",
+      "field": "api_surface",
+      "pass7_answer": "unknown",
+      "pass7_sources": [],
+      "pass7_publication_labels": [],
+      "rating": "abstained",
+      "review_note": "The pass did not answer this field.",
+      "independent_sources": [],
+      "correction": "unknown"
+    },
+    {
+      "app": "Stripe",
+      "category": "Finance and Fintech",
+      "field": "official_mcp",
+      "pass7_answer": "yes (provisional)",
+      "pass7_sources": [
+        "https://docs.stripe.com/mcp"
+      ],
+      "pass7_publication_labels": [],
+      "rating": "correct",
+      "review_note": "The cited positive claim is supported by the independently checked vendor or catalog source.",
+      "independent_sources": [
+        "https://docs.stripe.com/mcp"
+      ],
+      "correction": "yes"
+    },
+    {
+      "app": "Stripe",
+      "category": "Finance and Fintech",
+      "field": "composio_toolkit",
+      "pass7_answer": "listed",
+      "pass7_sources": [
+        "https://docs.composio.dev/toolkits/stripe"
+      ],
+      "pass7_publication_labels": [],
+      "rating": "correct",
+      "review_note": "The cited positive claim is supported by the independently checked vendor or catalog source.",
+      "independent_sources": [
+        "https://docs.composio.dev/toolkits/stripe"
+      ],
+      "correction": "listed"
+    },
+    {
+      "app": "Stripe",
+      "category": "Finance and Fintech",
+      "field": "verdict",
+      "pass7_answer": "unknown",
+      "pass7_sources": [],
+      "pass7_publication_labels": [],
+      "rating": "abstained",
+      "review_note": "The pass did not answer this field.",
+      "independent_sources": [],
+      "correction": "unknown"
+    },
+    {
+      "app": "Reducto",
+      "category": "AI, Research and Media-native",
+      "field": "auth",
+      "pass7_answer": "unknown",
+      "pass7_sources": [],
+      "pass7_publication_labels": [],
+      "rating": "abstained",
+      "review_note": "The pass did not answer this field.",
+      "independent_sources": [
+        "https://reducto.ai/developers"
+      ],
+      "correction": "API key"
+    },
+    {
+      "app": "Reducto",
+      "category": "AI, Research and Media-native",
+      "field": "credential_gate",
+      "pass7_answer": "unknown",
+      "pass7_sources": [],
+      "pass7_publication_labels": [],
+      "rating": "abstained",
+      "review_note": "The pass did not answer this field.",
+      "independent_sources": [
+        "https://reducto.ai/developers"
+      ],
+      "correction": "Self-serve signup and API key creation documented; pricing and plan limits unresolved"
+    },
+    {
+      "app": "Reducto",
+      "category": "AI, Research and Media-native",
+      "field": "api_surface",
+      "pass7_answer": "unknown",
+      "pass7_sources": [],
+      "pass7_publication_labels": [],
+      "rating": "abstained",
+      "review_note": "The pass did not answer this field.",
+      "independent_sources": [],
+      "correction": "unknown"
+    },
+    {
+      "app": "Reducto",
+      "category": "AI, Research and Media-native",
+      "field": "official_mcp",
+      "pass7_answer": "unknown",
+      "pass7_sources": [],
+      "pass7_publication_labels": [],
+      "rating": "abstained",
+      "review_note": "The pass did not answer this field.",
+      "independent_sources": [],
+      "correction": "unknown"
+    },
+    {
+      "app": "Reducto",
+      "category": "AI, Research and Media-native",
+      "field": "composio_toolkit",
+      "pass7_answer": "unknown",
+      "pass7_sources": [],
+      "pass7_publication_labels": [],
+      "rating": "abstained",
+      "review_note": "The pass did not answer this field.",
+      "independent_sources": [],
+      "correction": "unknown"
+    },
+    {
+      "app": "Reducto",
+      "category": "AI, Research and Media-native",
+      "field": "verdict",
+      "pass7_answer": "unknown",
+      "pass7_sources": [],
+      "pass7_publication_labels": [],
+      "rating": "abstained",
+      "review_note": "The pass did not answer this field.",
+      "independent_sources": [],
+      "correction": "unknown"
+    }
+  ]
+}

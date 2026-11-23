@@ -1,0 +1,147 @@
+{
+  "app": {
+    "number": 65,
+    "name": "Supabase",
+    "category": "Developer, Infra and Data platforms",
+    "hint": "supabase.com/docs"
+  },
+  "replayed_at": "2026-11-23T18:19:19.816629+00:00",
+  "source_passes": [
+    "data/pass2/065.json",
+    "data/pass4/065.json"
+  ],
+  "source_search": "data/new_search/065.json",
+  "publication_date_note": "Published labels are retained exactly as supplied by search; missing labels are null. Relative labels must not be treated as exact publication dates.",
+  "claims": {
+    "auth": {
+      "value": [
+        "API key",
+        "Bearer token",
+        "OAuth 2.0"
+      ],
+      "sources": [
+        "https://supabase.com/docs/guides/functions/auth-headers",
+        "https://supabase.com/docs/guides/getting-started/api-keys",
+        "https://supabase.com/docs/guides/auth"
+      ],
+      "evidence": [
+        {
+          "value": "API key",
+          "url": "https://supabase.com/docs/guides/functions/auth-headers",
+          "excerpt": "ey on apikey passes the check too. The check alone doesn't authenticate a caller that sends only an API key. Reserve Authorization for user tokens, and send API keys on apikey . To move off legacy keys entirely, migrate to the @supabase/server SDK as shown in Securing Edge Functions . U",
+          "published_label": "today"
+        },
+        {
+          "value": "Bearer token",
+          "url": "https://supabase.com/docs/guides/functions/auth-headers",
+          "excerpt": "s Don't send API keys as bearer tokens A common mistake is sending a publishable or secret key as a bearer token: Authorization: Bearer sb_publishable_... . The new API keys are not JWTs. The platform check still accepts them, but your handler can't verify them as JWTs. Instead, put API keys",
+          "published_label": "today"
+        },
+        {
+          "value": "API key",
+          "url": "https://supabase.com/docs/guides/getting-started/api-keys",
+          "excerpt": "upabase Docs Skip to content Updated Nov 18, 2026 Every request to your Supabase project carries an API key. The key identifies what is calling your project: a web page, a mobile app, a server, or an Edge Function. Supabase Auth identifies who is calling, when someone is signed in. This",
+          "published_label": "today"
+        },
+        {
+          "value": "OAuth 2.0",
+          "url": "https://supabase.com/docs/guides/auth",
+          "excerpt": "orkOS Zoom To add a provider that isn't listed, use Custom OAuth/OIDC Providers . It works with any OAuth2 or OIDC-compatible identity provider. Phone sign-in MessageBird Twilio Vonage Pricing Charges apply to Monthly Active Users (MAU), Monthly Active Third-Party Users (Third-Party MA",
+          "published_label": "3 days ago"
+        }
+      ],
+      "reason": "Provisional extraction: validate scope and completeness against the cited page."
+    },
+    "credential_gate": {
+      "value": "unknown",
+      "sources": [],
+      "evidence": [],
+      "reason": "No sufficiently specific positive evidence extracted; review targeted search results."
+    },
+    "api_surface": {
+      "value": [
+        "REST"
+      ],
+      "sources": [
+        "https://supabase.com/docs/guides/auth",
+        "https://supabase.com/docs/guides/api"
+      ],
+      "evidence": [
+        {
+          "value": "REST",
+          "url": "https://supabase.com/docs/guides/auth",
+          "excerpt": "foreign key references. Auth also enables access control to your database's automatically generated REST API . When using Supabase SDKs, your data requests are automatically sent with the user's Auth Token. The Auth Token scopes database access on a row-by-row level when used along with ",
+          "published_label": "3 days ago"
+        },
+        {
+          "value": "REST",
+          "url": "https://supabase.com/docs/guides/api",
+          "excerpt": "Data REST API | Supabase Docs Skip to content Updated Nov 18, 2026 Supabase auto-generates an API directly from your database schema allowing you to connect to your database through a restful i",
+          "published_label": "today"
+        }
+      ],
+      "reason": "Provisional extraction: validate scope and completeness against the cited page."
+    },
+    "official_mcp": {
+      "value": "yes (provisional)",
+      "sources": [
+        "https://supabase.com/features/mcp-server",
+        "https://supabase.com/docs/guides/self-hosting/enable-mcp",
+        "https://supabase.com/docs/guides/ai-tools/byo-mcp",
+        "https://supabase.com/docs/guides/ai-tools/mcp?client=windsurf"
+      ],
+      "evidence": [
+        {
+          "value": "yes (provisional)",
+          "url": "https://supabase.com/features/mcp-server",
+          "excerpt": "bining LLMs and databases in real-world projects. Integration capabilities with Supabase MCP Server The MCP Server integrates seamlessly with popular AI tools and the broader Supabase ecosystem: Cursor. Connect your IDE directly to Supabase for AI-driven development workflo",
+          "published_label": null,
+          "context_warning": "Review vendor ownership, dates, and scope."
+        },
+        {
+          "value": "yes (provisional)",
+          "url": "https://supabase.com/docs/guides/self-hosting/enable-mcp",
+          "excerpt": "r, etc.) and verify access to the MCP tools. For example, you can ask: \"What is Supabase anon key? Use the Supabase MCP server tools.\" Troubleshooting If you are unable to connect to the MCP server: Confirm the Docker bridge gateway IP is correctly added to the API gateway configuratio",
+          "published_label": "2 days ago",
+          "context_warning": "Review vendor ownership, dates, and scope."
+        },
+        {
+          "value": "yes (provisional)",
+          "url": "https://supabase.com/docs/guides/ai-tools/byo-mcp",
+          "excerpt": "urity (RLS) policies. This is the MCP server your app exposes to its users. The Supabase MCP server is different: it connects your own coding agent to your project so you can build the app. Prerequisites Docker or a compatible runtime, running (for local deve",
+          "published_label": "2 days ago",
+          "context_warning": "Review vendor ownership, dates, and scope."
+        },
+        {
+          "value": "yes (provisional)",
+          "url": "https://supabase.com/docs/guides/ai-tools/mcp?client=windsurf",
+          "excerpt": "Supabase MCP Server | Supabase Docs Skip to content Updated Nov 18, 2026 The Model Context Protocol (MCP) is a standard for connecting Large Language Models (LLMs) to platforms li",
+          "published_label": "last week",
+          "context_warning": "Review vendor ownership, dates, and scope."
+        }
+      ],
+      "reason": "Provisional; check source date, scope, and vendor ownership."
+    },
+    "composio_toolkit": {
+      "value": "listed",
+      "sources": [
+        "https://docs.composio.dev/toolkits/supabase"
+      ],
+      "evidence": [],
+      "reason": "Catalog match; scope needs review."
+    },
+    "verdict": {
+      "value": "unknown",
+      "sources": [],
+      "evidence": [],
+      "reason": "A supported access path, authentication method and API surface were not all extracted."
+    }
+  },
+  "validation": [
+    "Automatic extraction is provisional and not a verified final claim",
+    "Unknown is not evidence of absence",
+    "No Composio-to-vendor-MCP inference",
+    "Basic authentication may be endpoint-specific",
+    "Client-only and negated statements are not positive MCP evidence"
+  ]
+}
