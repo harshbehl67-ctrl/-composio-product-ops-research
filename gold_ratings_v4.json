@@ -1,0 +1,4231 @@
+{
+  "generated_at": "2026-11-24",
+  "label_source": "gold_template.csv; AI labeler/session identity not recorded",
+  "label_provenance": {
+    "schema_version": 1,
+    "gold_labels": {
+      "actor_type": "AI",
+      "labeler_identity": "not recorded",
+      "session_identity": "not recorded",
+      "evidence_source": "frozen page excerpts",
+      "separate_session": "reported in the project record",
+      "agent_answer_exposure": {
+        "reported_status": "The project record says agent answers were not shown during labeling.",
+        "independently_verified": false
+      },
+      "earlier_chat_label_exclusion": {
+        "status": "unverified",
+        "note": "The author had seen assistant answers before; saved artifacts do not establish whether overlapping earlier chat labels were excluded from the AI labeling session."
+      }
+    },
+    "author_spotcheck": {
+      "actor_type": "human author",
+      "independent": false,
+      "blind_to_saved_labels": false,
+      "sample_size": 24,
+      "unit": "gold status only, not full field-value agreement",
+      "clear_status_matches": 15,
+      "clear_status_comparisons": 23,
+      "weak_or_ambiguous": 1,
+      "scope_mismatches": 5,
+      "source": "human_gold_spotcheck_results_v1.json"
+    }
+  },
+  "disclosure": "The saved project record attributes these labels to a separate AI session using frozen page excerpts. The model and session identities were not recorded. The record says agent answers were not shown, but this was not independently verified; exclusion of earlier chat labels is also unverified. Coverage is reported separately over all sampled and scoreable rows. Gold-unscoreable rows remain distinct from agent abstentions on scoreable rows.",
+  "row_quality": {
+    "total_rows": 80,
+    "labeled_found": 60,
+    "labeled_not_stated_in_docs": 14,
+    "labeled_unresolved": 6,
+    "fetch_failed": 1,
+    "fetch_failed_rows": [
+      "Gladly·credential_gate"
+    ],
+    "off_topic": 1,
+    "off_topic_rows": [
+      "Discord·credential_gate"
+    ]
+  },
+  "apps": 20,
+  "pass_sources": {
+    "pass1": "data/pass2 (first extraction)",
+    "pass2": "data/pass7 (after re-search)",
+    "pass3": "checked_dataset_v4.json (final)"
+  },
+  "judgment_fields": [
+    "auth",
+    "credential_gate",
+    "api_surface",
+    "official_mcp"
+  ],
+  "rule_scored_fields": {
+    "composio_toolkit": "compared to composio_catalog.json (fetched_at 2026-11-24)",
+    "verdict": "Buildability is derived from the gold fields, not hand-labelled. 1) If gold auth, gold credential_gate, or gold api_surface is not \"found\", verdict = unknown; an excerpt that does not discuss credential access cannot prove a paid or gated path. 2) Else if the gold credential text names a partner/sales/contact gate, verdict = partner_outreach. 3) Else if the gold api_surface names only a wrapper or CLI, verdict = wrapper_or_cli. 4) Else if the gold credential text names a self-serve free or trial path AND the gold api breadth is broad or moderate, verdict = documented_build_candidate. 5) If self-serve is found but breadth is not stated, verdict = unknown; missing breadth is not evidence of an access gate. 6) Else a paid, approval or partner gate with no self-serve path yields gated_build_candidate; if the excerpt does not establish one of these outcomes, verdict = unknown."
+  },
+  "composio_catalog_fetched_at": "2026-11-24",
+  "rubric": {
+    "coverage": "answered / total sampled rows.",
+    "scoreable_coverage": "answered / rows whose gold status is found or not_stated_in_docs; unresolved gold is excluded.",
+    "precision_strict": "correct / answered.",
+    "precision_half": "(correct + 0.5 * partial) / answered.",
+    "interval": "Wilson 95% interval for integer-success proportions only; no interval is reported for fractional half-credit.",
+    "missing": "abstained = the pass made no claim; unresolved = the gold excerpt did not state the answer.",
+    "cause_categories": [
+      "over_inclusive",
+      "under_inclusive",
+      "wrong_value",
+      "missing_api_type",
+      "wrong_api_type",
+      "breadth_mismatch",
+      "mcp_server_missed",
+      "mcp_false_positive",
+      "mcp_tier_mismatch",
+      "catalog_mismatch",
+      "verdict_mismatch",
+      "unmappable_answer",
+      "abstained_on_scoreable",
+      "gold_unscoreable"
+    ]
+  },
+  "per_field": {
+    "pass1": {
+      "auth": {
+        "total": 20,
+        "scoreable": 19,
+        "answered": 12,
+        "coverage": 0.6,
+        "scoreable_coverage": 0.6316,
+        "scoreable_coverage_ci": [
+          0.4104,
+          0.8085
+        ],
+        "n": 12,
+        "correct": 6,
+        "partial": 6,
+        "incorrect": 0,
+        "abstained": 8,
+        "unresolved": 0,
+        "precision_strict": 0.5,
+        "strict_ci": [
+          0.2538,
+          0.7462
+        ],
+        "precision_half": 0.75,
+        "fixed_half": 0.45,
+        "half_ci": null
+      },
+      "credential_gate": {
+        "total": 20,
+        "scoreable": 7,
+        "answered": 0,
+        "coverage": 0.0,
+        "scoreable_coverage": 0.0,
+        "scoreable_coverage_ci": [
+          0.0,
+          0.3543
+        ],
+        "n": 0,
+        "correct": 0,
+        "partial": 0,
+        "incorrect": 0,
+        "abstained": 20,
+        "unresolved": 0,
+        "precision_strict": null,
+        "strict_ci": [
+          null,
+          null
+        ],
+        "precision_half": null,
+        "fixed_half": 0.0,
+        "half_ci": null
+      },
+      "api_surface": {
+        "total": 20,
+        "scoreable": 16,
+        "answered": 3,
+        "coverage": 0.15,
+        "scoreable_coverage": 0.1875,
+        "scoreable_coverage_ci": [
+          0.0659,
+          0.4301
+        ],
+        "n": 3,
+        "correct": 1,
+        "partial": 2,
+        "incorrect": 0,
+        "abstained": 15,
+        "unresolved": 2,
+        "precision_strict": 0.3333,
+        "strict_ci": [
+          0.0615,
+          0.7923
+        ],
+        "precision_half": 0.6667,
+        "fixed_half": 0.1,
+        "half_ci": null
+      },
+      "official_mcp": {
+        "total": 20,
+        "scoreable": 18,
+        "answered": 11,
+        "coverage": 0.55,
+        "scoreable_coverage": 0.6111,
+        "scoreable_coverage_ci": [
+          0.3862,
+          0.7969
+        ],
+        "n": 11,
+        "correct": 11,
+        "partial": 0,
+        "incorrect": 0,
+        "abstained": 7,
+        "unresolved": 2,
+        "precision_strict": 1.0,
+        "strict_ci": [
+          0.7412,
+          1.0
+        ],
+        "precision_half": 1.0,
+        "fixed_half": 0.55,
+        "half_ci": null
+      },
+      "composio_toolkit": {
+        "total": 20,
+        "scoreable": 20,
+        "answered": 16,
+        "coverage": 0.8,
+        "scoreable_coverage": 0.8,
+        "scoreable_coverage_ci": [
+          0.584,
+          0.9193
+        ],
+        "n": 16,
+        "correct": 16,
+        "partial": 0,
+        "incorrect": 0,
+        "abstained": 4,
+        "unresolved": 0,
+        "precision_strict": 1.0,
+        "strict_ci": [
+          0.8064,
+          1.0
+        ],
+        "precision_half": 1.0,
+        "fixed_half": 0.8,
+        "half_ci": null
+      },
+      "verdict": {
+        "total": 20,
+        "scoreable": 20,
+        "answered": 0,
+        "coverage": 0.0,
+        "scoreable_coverage": 0.0,
+        "scoreable_coverage_ci": [
+          0.0,
+          0.1611
+        ],
+        "n": 0,
+        "correct": 0,
+        "partial": 0,
+        "incorrect": 0,
+        "abstained": 20,
+        "unresolved": 0,
+        "precision_strict": null,
+        "strict_ci": [
+          null,
+          null
+        ],
+        "precision_half": null,
+        "fixed_half": 0.0,
+        "half_ci": null
+      }
+    },
+    "pass2": {
+      "auth": {
+        "total": 20,
+        "scoreable": 19,
+        "answered": 12,
+        "coverage": 0.6,
+        "scoreable_coverage": 0.6316,
+        "scoreable_coverage_ci": [
+          0.4104,
+          0.8085
+        ],
+        "n": 12,
+        "correct": 8,
+        "partial": 4,
+        "incorrect": 0,
+        "abstained": 8,
+        "unresolved": 0,
+        "precision_strict": 0.6667,
+        "strict_ci": [
+          0.3906,
+          0.8619
+        ],
+        "precision_half": 0.8333,
+        "fixed_half": 0.5,
+        "half_ci": null
+      },
+      "credential_gate": {
+        "total": 20,
+        "scoreable": 7,
+        "answered": 1,
+        "coverage": 0.05,
+        "scoreable_coverage": 0.1429,
+        "scoreable_coverage_ci": [
+          0.0257,
+          0.5131
+        ],
+        "n": 1,
+        "correct": 1,
+        "partial": 0,
+        "incorrect": 0,
+        "abstained": 17,
+        "unresolved": 2,
+        "precision_strict": 1.0,
+        "strict_ci": [
+          0.2065,
+          1.0
+        ],
+        "precision_half": 1.0,
+        "fixed_half": 0.05,
+        "half_ci": null
+      },
+      "api_surface": {
+        "total": 20,
+        "scoreable": 16,
+        "answered": 6,
+        "coverage": 0.3,
+        "scoreable_coverage": 0.375,
+        "scoreable_coverage_ci": [
+          0.1848,
+          0.6136
+        ],
+        "n": 6,
+        "correct": 2,
+        "partial": 4,
+        "incorrect": 0,
+        "abstained": 12,
+        "unresolved": 2,
+        "precision_strict": 0.3333,
+        "strict_ci": [
+          0.0968,
+          0.7
+        ],
+        "precision_half": 0.6667,
+        "fixed_half": 0.2,
+        "half_ci": null
+      },
+      "official_mcp": {
+        "total": 20,
+        "scoreable": 18,
+        "answered": 9,
+        "coverage": 0.45,
+        "scoreable_coverage": 0.5,
+        "scoreable_coverage_ci": [
+          0.2903,
+          0.7097
+        ],
+        "n": 9,
+        "correct": 9,
+        "partial": 0,
+        "incorrect": 0,
+        "abstained": 10,
+        "unresolved": 1,
+        "precision_strict": 1.0,
+        "strict_ci": [
+          0.7009,
+          1.0
+        ],
+        "precision_half": 1.0,
+        "fixed_half": 0.45,
+        "half_ci": null
+      },
+      "composio_toolkit": {
+        "total": 20,
+        "scoreable": 20,
+        "answered": 16,
+        "coverage": 0.8,
+        "scoreable_coverage": 0.8,
+        "scoreable_coverage_ci": [
+          0.584,
+          0.9193
+        ],
+        "n": 16,
+        "correct": 16,
+        "partial": 0,
+        "incorrect": 0,
+        "abstained": 4,
+        "unresolved": 0,
+        "precision_strict": 1.0,
+        "strict_ci": [
+          0.8064,
+          1.0
+        ],
+        "precision_half": 1.0,
+        "fixed_half": 0.8,
+        "half_ci": null
+      },
+      "verdict": {
+        "total": 20,
+        "scoreable": 20,
+        "answered": 0,
+        "coverage": 0.0,
+        "scoreable_coverage": 0.0,
+        "scoreable_coverage_ci": [
+          0.0,
+          0.1611
+        ],
+        "n": 0,
+        "correct": 0,
+        "partial": 0,
+        "incorrect": 0,
+        "abstained": 20,
+        "unresolved": 0,
+        "precision_strict": null,
+        "strict_ci": [
+          null,
+          null
+        ],
+        "precision_half": null,
+        "fixed_half": 0.0,
+        "half_ci": null
+      }
+    },
+    "pass3": {
+      "auth": {
+        "total": 20,
+        "scoreable": 19,
+        "answered": 19,
+        "coverage": 0.95,
+        "scoreable_coverage": 1.0,
+        "scoreable_coverage_ci": [
+          0.8318,
+          1.0
+        ],
+        "n": 19,
+        "correct": 12,
+        "partial": 7,
+        "incorrect": 0,
+        "abstained": 0,
+        "unresolved": 1,
+        "precision_strict": 0.6316,
+        "strict_ci": [
+          0.4104,
+          0.8085
+        ],
+        "precision_half": 0.8158,
+        "fixed_half": 0.775,
+        "half_ci": null
+      },
+      "credential_gate": {
+        "total": 20,
+        "scoreable": 7,
+        "answered": 7,
+        "coverage": 0.35,
+        "scoreable_coverage": 1.0,
+        "scoreable_coverage_ci": [
+          0.6457,
+          1.0
+        ],
+        "n": 7,
+        "correct": 1,
+        "partial": 6,
+        "incorrect": 0,
+        "abstained": 0,
+        "unresolved": 13,
+        "precision_strict": 0.1429,
+        "strict_ci": [
+          0.0257,
+          0.5131
+        ],
+        "precision_half": 0.5714,
+        "fixed_half": 0.2,
+        "half_ci": null
+      },
+      "api_surface": {
+        "total": 20,
+        "scoreable": 16,
+        "answered": 16,
+        "coverage": 0.8,
+        "scoreable_coverage": 1.0,
+        "scoreable_coverage_ci": [
+          0.8064,
+          1.0
+        ],
+        "n": 16,
+        "correct": 6,
+        "partial": 10,
+        "incorrect": 0,
+        "abstained": 0,
+        "unresolved": 4,
+        "precision_strict": 0.375,
+        "strict_ci": [
+          0.1848,
+          0.6136
+        ],
+        "precision_half": 0.6875,
+        "fixed_half": 0.55,
+        "half_ci": null
+      },
+      "official_mcp": {
+        "total": 20,
+        "scoreable": 18,
+        "answered": 18,
+        "coverage": 0.9,
+        "scoreable_coverage": 1.0,
+        "scoreable_coverage_ci": [
+          0.8241,
+          1.0
+        ],
+        "n": 18,
+        "correct": 18,
+        "partial": 0,
+        "incorrect": 0,
+        "abstained": 0,
+        "unresolved": 2,
+        "precision_strict": 1.0,
+        "strict_ci": [
+          0.8241,
+          1.0
+        ],
+        "precision_half": 1.0,
+        "fixed_half": 0.9,
+        "half_ci": null
+      },
+      "composio_toolkit": {
+        "total": 20,
+        "scoreable": 20,
+        "answered": 20,
+        "coverage": 1.0,
+        "scoreable_coverage": 1.0,
+        "scoreable_coverage_ci": [
+          0.8389,
+          1.0
+        ],
+        "n": 20,
+        "correct": 20,
+        "partial": 0,
+        "incorrect": 0,
+        "abstained": 0,
+        "unresolved": 0,
+        "precision_strict": 1.0,
+        "strict_ci": [
+          0.8389,
+          1.0
+        ],
+        "precision_half": 1.0,
+        "fixed_half": 1.0,
+        "half_ci": null
+      },
+      "verdict": {
+        "total": 20,
+        "scoreable": 20,
+        "answered": 1,
+        "coverage": 0.05,
+        "scoreable_coverage": 0.05,
+        "scoreable_coverage_ci": [
+          0.0089,
+          0.2361
+        ],
+        "n": 1,
+        "correct": 1,
+        "partial": 0,
+        "incorrect": 0,
+        "abstained": 0,
+        "unresolved": 19,
+        "precision_strict": 1.0,
+        "strict_ci": [
+          0.2065,
+          1.0
+        ],
+        "precision_half": 1.0,
+        "fixed_half": 0.05,
+        "half_ci": null
+      }
+    }
+  },
+  "ratings": {
+    "pass1": {
+      "HubSpot|auth": "partial",
+      "HubSpot|credential_gate": "abstained",
+      "HubSpot|api_surface": "abstained",
+      "HubSpot|official_mcp": "correct",
+      "HubSpot|composio_toolkit": "correct",
+      "HubSpot|verdict": "abstained",
+      "Zendesk|auth": "partial",
+      "Zendesk|credential_gate": "abstained",
+      "Zendesk|api_surface": "abstained",
+      "Zendesk|official_mcp": "correct",
+      "Zendesk|composio_toolkit": "correct",
+      "Zendesk|verdict": "abstained",
+      "Slack|auth": "partial",
+      "Slack|credential_gate": "abstained",
+      "Slack|api_surface": "abstained",
+      "Slack|official_mcp": "correct",
+      "Slack|composio_toolkit": "correct",
+      "Slack|verdict": "abstained",
+      "Google Ads|auth": "partial",
+      "Google Ads|credential_gate": "abstained",
+      "Google Ads|api_surface": "abstained",
+      "Google Ads|official_mcp": "correct",
+      "Google Ads|composio_toolkit": "correct",
+      "Google Ads|verdict": "abstained",
+      "Shopify|auth": "correct",
+      "Shopify|credential_gate": "abstained",
+      "Shopify|api_surface": "abstained",
+      "Shopify|official_mcp": "abstained",
+      "Shopify|composio_toolkit": "correct",
+      "Shopify|verdict": "abstained",
+      "Apify|auth": "abstained",
+      "Apify|credential_gate": "abstained",
+      "Apify|api_surface": "partial",
+      "Apify|official_mcp": "correct",
+      "Apify|composio_toolkit": "correct",
+      "Apify|verdict": "abstained",
+      "GitHub|auth": "partial",
+      "GitHub|credential_gate": "abstained",
+      "GitHub|api_surface": "partial",
+      "GitHub|official_mcp": "unresolved",
+      "GitHub|composio_toolkit": "correct",
+      "GitHub|verdict": "abstained",
+      "Notion|auth": "abstained",
+      "Notion|credential_gate": "abstained",
+      "Notion|api_surface": "abstained",
+      "Notion|official_mcp": "unresolved",
+      "Notion|composio_toolkit": "correct",
+      "Notion|verdict": "abstained",
+      "Stripe|auth": "correct",
+      "Stripe|credential_gate": "abstained",
+      "Stripe|api_surface": "abstained",
+      "Stripe|official_mcp": "correct",
+      "Stripe|composio_toolkit": "correct",
+      "Stripe|verdict": "abstained",
+      "Reducto|auth": "abstained",
+      "Reducto|credential_gate": "abstained",
+      "Reducto|api_surface": "abstained",
+      "Reducto|official_mcp": "abstained",
+      "Reducto|composio_toolkit": "abstained",
+      "Reducto|verdict": "abstained",
+      "Discord|auth": "abstained",
+      "Discord|credential_gate": "abstained",
+      "Discord|api_surface": "abstained",
+      "Discord|official_mcp": "abstained",
+      "Discord|composio_toolkit": "correct",
+      "Discord|verdict": "abstained",
+      "higgsfield|auth": "abstained",
+      "higgsfield|credential_gate": "abstained",
+      "higgsfield|api_surface": "unresolved",
+      "higgsfield|official_mcp": "abstained",
+      "higgsfield|composio_toolkit": "correct",
+      "higgsfield|verdict": "abstained",
+      "Salesforce|auth": "abstained",
+      "Salesforce|credential_gate": "abstained",
+      "Salesforce|api_surface": "abstained",
+      "Salesforce|official_mcp": "abstained",
+      "Salesforce|composio_toolkit": "correct",
+      "Salesforce|verdict": "abstained",
+      "Zoho CRM|auth": "correct",
+      "Zoho CRM|credential_gate": "abstained",
+      "Zoho CRM|api_surface": "abstained",
+      "Zoho CRM|official_mcp": "correct",
+      "Zoho CRM|composio_toolkit": "abstained",
+      "Zoho CRM|verdict": "abstained",
+      "YouTube Transcript|auth": "abstained",
+      "YouTube Transcript|credential_gate": "abstained",
+      "YouTube Transcript|api_surface": "unresolved",
+      "YouTube Transcript|official_mcp": "correct",
+      "YouTube Transcript|composio_toolkit": "correct",
+      "YouTube Transcript|verdict": "abstained",
+      "Gladly|auth": "correct",
+      "Gladly|credential_gate": "abstained",
+      "Gladly|api_surface": "abstained",
+      "Gladly|official_mcp": "correct",
+      "Gladly|composio_toolkit": "abstained",
+      "Gladly|verdict": "abstained",
+      "Xero|auth": "correct",
+      "Xero|credential_gate": "abstained",
+      "Xero|api_surface": "abstained",
+      "Xero|official_mcp": "correct",
+      "Xero|composio_toolkit": "correct",
+      "Xero|verdict": "abstained",
+      "Snowflake|auth": "partial",
+      "Snowflake|credential_gate": "abstained",
+      "Snowflake|api_surface": "correct",
+      "Snowflake|official_mcp": "correct",
+      "Snowflake|composio_toolkit": "correct",
+      "Snowflake|verdict": "abstained",
+      "Sentry|auth": "correct",
+      "Sentry|credential_gate": "abstained",
+      "Sentry|api_surface": "abstained",
+      "Sentry|official_mcp": "abstained",
+      "Sentry|composio_toolkit": "correct",
+      "Sentry|verdict": "abstained",
+      "Lark (Larksuite)|auth": "abstained",
+      "Lark (Larksuite)|credential_gate": "abstained",
+      "Lark (Larksuite)|api_surface": "abstained",
+      "Lark (Larksuite)|official_mcp": "abstained",
+      "Lark (Larksuite)|composio_toolkit": "abstained",
+      "Lark (Larksuite)|verdict": "abstained"
+    },
+    "pass2": {
+      "HubSpot|auth": "correct",
+      "HubSpot|credential_gate": "unresolved",
+      "HubSpot|api_surface": "abstained",
+      "HubSpot|official_mcp": "correct",
+      "HubSpot|composio_toolkit": "correct",
+      "HubSpot|verdict": "abstained",
+      "Zendesk|auth": "correct",
+      "Zendesk|credential_gate": "unresolved",
+      "Zendesk|api_surface": "abstained",
+      "Zendesk|official_mcp": "abstained",
+      "Zendesk|composio_toolkit": "correct",
+      "Zendesk|verdict": "abstained",
+      "Slack|auth": "partial",
+      "Slack|credential_gate": "abstained",
+      "Slack|api_surface": "abstained",
+      "Slack|official_mcp": "correct",
+      "Slack|composio_toolkit": "correct",
+      "Slack|verdict": "abstained",
+      "Google Ads|auth": "partial",
+      "Google Ads|credential_gate": "correct",
+      "Google Ads|api_surface": "abstained",
+      "Google Ads|official_mcp": "correct",
+      "Google Ads|composio_toolkit": "correct",
+      "Google Ads|verdict": "abstained",
+      "Shopify|auth": "correct",
+      "Shopify|credential_gate": "abstained",
+      "Shopify|api_surface": "correct",
+      "Shopify|official_mcp": "abstained",
+      "Shopify|composio_toolkit": "correct",
+      "Shopify|verdict": "abstained",
+      "Apify|auth": "abstained",
+      "Apify|credential_gate": "abstained",
+      "Apify|api_surface": "partial",
+      "Apify|official_mcp": "correct",
+      "Apify|composio_toolkit": "correct",
+      "Apify|verdict": "abstained",
+      "GitHub|auth": "partial",
+      "GitHub|credential_gate": "abstained",
+      "GitHub|api_surface": "partial",
+      "GitHub|official_mcp": "unresolved",
+      "GitHub|composio_toolkit": "correct",
+      "GitHub|verdict": "abstained",
+      "Notion|auth": "abstained",
+      "Notion|credential_gate": "abstained",
+      "Notion|api_surface": "abstained",
+      "Notion|official_mcp": "abstained",
+      "Notion|composio_toolkit": "correct",
+      "Notion|verdict": "abstained",
+      "Stripe|auth": "correct",
+      "Stripe|credential_gate": "abstained",
+      "Stripe|api_surface": "abstained",
+      "Stripe|official_mcp": "correct",
+      "Stripe|composio_toolkit": "correct",
+      "Stripe|verdict": "abstained",
+      "Reducto|auth": "abstained",
+      "Reducto|credential_gate": "abstained",
+      "Reducto|api_surface": "abstained",
+      "Reducto|official_mcp": "abstained",
+      "Reducto|composio_toolkit": "abstained",
+      "Reducto|verdict": "abstained",
+      "Discord|auth": "abstained",
+      "Discord|credential_gate": "abstained",
+      "Discord|api_surface": "abstained",
+      "Discord|official_mcp": "abstained",
+      "Discord|composio_toolkit": "correct",
+      "Discord|verdict": "abstained",
+      "higgsfield|auth": "abstained",
+      "higgsfield|credential_gate": "abstained",
+      "higgsfield|api_surface": "unresolved",
+      "higgsfield|official_mcp": "abstained",
+      "higgsfield|composio_toolkit": "correct",
+      "higgsfield|verdict": "abstained",
+      "Salesforce|auth": "abstained",
+      "Salesforce|credential_gate": "abstained",
+      "Salesforce|api_surface": "abstained",
+      "Salesforce|official_mcp": "abstained",
+      "Salesforce|composio_toolkit": "correct",
+      "Salesforce|verdict": "abstained",
+      "Zoho CRM|auth": "correct",
+      "Zoho CRM|credential_gate": "abstained",
+      "Zoho CRM|api_surface": "partial",
+      "Zoho CRM|official_mcp": "abstained",
+      "Zoho CRM|composio_toolkit": "abstained",
+      "Zoho CRM|verdict": "abstained",
+      "YouTube Transcript|auth": "abstained",
+      "YouTube Transcript|credential_gate": "abstained",
+      "YouTube Transcript|api_surface": "unresolved",
+      "YouTube Transcript|official_mcp": "correct",
+      "YouTube Transcript|composio_toolkit": "correct",
+      "YouTube Transcript|verdict": "abstained",
+      "Gladly|auth": "correct",
+      "Gladly|credential_gate": "abstained",
+      "Gladly|api_surface": "partial",
+      "Gladly|official_mcp": "correct",
+      "Gladly|composio_toolkit": "abstained",
+      "Gladly|verdict": "abstained",
+      "Xero|auth": "correct",
+      "Xero|credential_gate": "abstained",
+      "Xero|api_surface": "abstained",
+      "Xero|official_mcp": "correct",
+      "Xero|composio_toolkit": "correct",
+      "Xero|verdict": "abstained",
+      "Snowflake|auth": "partial",
+      "Snowflake|credential_gate": "abstained",
+      "Snowflake|api_surface": "correct",
+      "Snowflake|official_mcp": "correct",
+      "Snowflake|composio_toolkit": "correct",
+      "Snowflake|verdict": "abstained",
+      "Sentry|auth": "correct",
+      "Sentry|credential_gate": "abstained",
+      "Sentry|api_surface": "abstained",
+      "Sentry|official_mcp": "abstained",
+      "Sentry|composio_toolkit": "correct",
+      "Sentry|verdict": "abstained",
+      "Lark (Larksuite)|auth": "abstained",
+      "Lark (Larksuite)|credential_gate": "abstained",
+      "Lark (Larksuite)|api_surface": "abstained",
+      "Lark (Larksuite)|official_mcp": "abstained",
+      "Lark (Larksuite)|composio_toolkit": "abstained",
+      "Lark (Larksuite)|verdict": "abstained"
+    },
+    "pass3": {
+      "HubSpot|auth": "correct",
+      "HubSpot|credential_gate": "unresolved",
+      "HubSpot|api_surface": "unresolved",
+      "HubSpot|official_mcp": "correct",
+      "HubSpot|composio_toolkit": "correct",
+      "HubSpot|verdict": "unresolved",
+      "Zendesk|auth": "correct",
+      "Zendesk|credential_gate": "unresolved",
+      "Zendesk|api_surface": "correct",
+      "Zendesk|official_mcp": "correct",
+      "Zendesk|composio_toolkit": "correct",
+      "Zendesk|verdict": "unresolved",
+      "Slack|auth": "correct",
+      "Slack|credential_gate": "unresolved",
+      "Slack|api_surface": "correct",
+      "Slack|official_mcp": "correct",
+      "Slack|composio_toolkit": "correct",
+      "Slack|verdict": "unresolved",
+      "Google Ads|auth": "partial",
+      "Google Ads|credential_gate": "partial",
+      "Google Ads|api_surface": "correct",
+      "Google Ads|official_mcp": "correct",
+      "Google Ads|composio_toolkit": "correct",
+      "Google Ads|verdict": "correct",
+      "Shopify|auth": "correct",
+      "Shopify|credential_gate": "unresolved",
+      "Shopify|api_surface": "correct",
+      "Shopify|official_mcp": "correct",
+      "Shopify|composio_toolkit": "correct",
+      "Shopify|verdict": "unresolved",
+      "Apify|auth": "correct",
+      "Apify|credential_gate": "unresolved",
+      "Apify|api_surface": "partial",
+      "Apify|official_mcp": "correct",
+      "Apify|composio_toolkit": "correct",
+      "Apify|verdict": "unresolved",
+      "GitHub|auth": "partial",
+      "GitHub|credential_gate": "unresolved",
+      "GitHub|api_surface": "partial",
+      "GitHub|official_mcp": "unresolved",
+      "GitHub|composio_toolkit": "correct",
+      "GitHub|verdict": "unresolved",
+      "Notion|auth": "correct",
+      "Notion|credential_gate": "unresolved",
+      "Notion|api_surface": "partial",
+      "Notion|official_mcp": "unresolved",
+      "Notion|composio_toolkit": "correct",
+      "Notion|verdict": "unresolved",
+      "Stripe|auth": "partial",
+      "Stripe|credential_gate": "unresolved",
+      "Stripe|api_surface": "partial",
+      "Stripe|official_mcp": "correct",
+      "Stripe|composio_toolkit": "correct",
+      "Stripe|verdict": "unresolved",
+      "Reducto|auth": "partial",
+      "Reducto|credential_gate": "unresolved",
+      "Reducto|api_surface": "partial",
+      "Reducto|official_mcp": "correct",
+      "Reducto|composio_toolkit": "correct",
+      "Reducto|verdict": "unresolved",
+      "Discord|auth": "correct",
+      "Discord|credential_gate": "unresolved",
+      "Discord|api_surface": "partial",
+      "Discord|official_mcp": "correct",
+      "Discord|composio_toolkit": "correct",
+      "Discord|verdict": "unresolved",
+      "higgsfield|auth": "partial",
+      "higgsfield|credential_gate": "correct",
+      "higgsfield|api_surface": "unresolved",
+      "higgsfield|official_mcp": "correct",
+      "higgsfield|composio_toolkit": "correct",
+      "higgsfield|verdict": "unresolved",
+      "Salesforce|auth": "partial",
+      "Salesforce|credential_gate": "unresolved",
+      "Salesforce|api_surface": "correct",
+      "Salesforce|official_mcp": "correct",
+      "Salesforce|composio_toolkit": "correct",
+      "Salesforce|verdict": "unresolved",
+      "Zoho CRM|auth": "correct",
+      "Zoho CRM|credential_gate": "unresolved",
+      "Zoho CRM|api_surface": "partial",
+      "Zoho CRM|official_mcp": "correct",
+      "Zoho CRM|composio_toolkit": "correct",
+      "Zoho CRM|verdict": "unresolved",
+      "YouTube Transcript|auth": "partial",
+      "YouTube Transcript|credential_gate": "partial",
+      "YouTube Transcript|api_surface": "unresolved",
+      "YouTube Transcript|official_mcp": "correct",
+      "YouTube Transcript|composio_toolkit": "correct",
+      "YouTube Transcript|verdict": "unresolved",
+      "Gladly|auth": "correct",
+      "Gladly|credential_gate": "unresolved",
+      "Gladly|api_surface": "partial",
+      "Gladly|official_mcp": "correct",
+      "Gladly|composio_toolkit": "correct",
+      "Gladly|verdict": "unresolved",
+      "Xero|auth": "correct",
+      "Xero|credential_gate": "partial",
+      "Xero|api_surface": "partial",
+      "Xero|official_mcp": "correct",
+      "Xero|composio_toolkit": "correct",
+      "Xero|verdict": "unresolved",
+      "Snowflake|auth": "correct",
+      "Snowflake|credential_gate": "partial",
+      "Snowflake|api_surface": "correct",
+      "Snowflake|official_mcp": "correct",
+      "Snowflake|composio_toolkit": "correct",
+      "Snowflake|verdict": "unresolved",
+      "Sentry|auth": "correct",
+      "Sentry|credential_gate": "partial",
+      "Sentry|api_surface": "unresolved",
+      "Sentry|official_mcp": "correct",
+      "Sentry|composio_toolkit": "correct",
+      "Sentry|verdict": "unresolved",
+      "Lark (Larksuite)|auth": "unresolved",
+      "Lark (Larksuite)|credential_gate": "partial",
+      "Lark (Larksuite)|api_surface": "partial",
+      "Lark (Larksuite)|official_mcp": "correct",
+      "Lark (Larksuite)|composio_toolkit": "correct",
+      "Lark (Larksuite)|verdict": "unresolved"
+    }
+  },
+  "overall": {
+    "pass1": {
+      "judgment_fields": {
+        "total": 80,
+        "scoreable": 60,
+        "answered": 26,
+        "coverage": 0.325,
+        "scoreable_coverage": 0.4333,
+        "scoreable_coverage_ci": [
+          0.3157,
+          0.559
+        ],
+        "n": 26,
+        "correct": 18,
+        "partial": 8,
+        "incorrect": 0,
+        "abstained": 50,
+        "unresolved": 4,
+        "precision_strict": 0.6923,
+        "strict_ci": [
+          0.5001,
+          0.835
+        ],
+        "precision_half": 0.8462,
+        "fixed_half": 0.275,
+        "half_ci": null
+      },
+      "all_six_fields": {
+        "total": 120,
+        "scoreable": 100,
+        "answered": 42,
+        "coverage": 0.35,
+        "scoreable_coverage": 0.42,
+        "scoreable_coverage_ci": [
+          0.328,
+          0.5179
+        ],
+        "n": 42,
+        "correct": 34,
+        "partial": 8,
+        "incorrect": 0,
+        "abstained": 74,
+        "unresolved": 4,
+        "precision_strict": 0.8095,
+        "strict_ci": [
+          0.667,
+          0.9002
+        ],
+        "precision_half": 0.9048,
+        "fixed_half": 0.3167,
+        "half_ci": null
+      }
+    },
+    "pass2": {
+      "judgment_fields": {
+        "total": 80,
+        "scoreable": 60,
+        "answered": 28,
+        "coverage": 0.35,
+        "scoreable_coverage": 0.4667,
+        "scoreable_coverage_ci": [
+          0.3463,
+          0.5911
+        ],
+        "n": 28,
+        "correct": 20,
+        "partial": 8,
+        "incorrect": 0,
+        "abstained": 47,
+        "unresolved": 5,
+        "precision_strict": 0.7143,
+        "strict_ci": [
+          0.5294,
+          0.8475
+        ],
+        "precision_half": 0.8571,
+        "fixed_half": 0.3,
+        "half_ci": null
+      },
+      "all_six_fields": {
+        "total": 120,
+        "scoreable": 100,
+        "answered": 44,
+        "coverage": 0.3667,
+        "scoreable_coverage": 0.44,
+        "scoreable_coverage_ci": [
+          0.3467,
+          0.5377
+        ],
+        "n": 44,
+        "correct": 36,
+        "partial": 8,
+        "incorrect": 0,
+        "abstained": 71,
+        "unresolved": 5,
+        "precision_strict": 0.8182,
+        "strict_ci": [
+          0.6804,
+          0.9049
+        ],
+        "precision_half": 0.9091,
+        "fixed_half": 0.3333,
+        "half_ci": null
+      }
+    },
+    "pass3": {
+      "judgment_fields": {
+        "total": 80,
+        "scoreable": 60,
+        "answered": 60,
+        "coverage": 0.75,
+        "scoreable_coverage": 1.0,
+        "scoreable_coverage_ci": [
+          0.9398,
+          1.0
+        ],
+        "n": 60,
+        "correct": 37,
+        "partial": 23,
+        "incorrect": 0,
+        "abstained": 0,
+        "unresolved": 20,
+        "precision_strict": 0.6167,
+        "strict_ci": [
+          0.4902,
+          0.7291
+        ],
+        "precision_half": 0.8083,
+        "fixed_half": 0.6062,
+        "half_ci": null
+      },
+      "all_six_fields": {
+        "total": 120,
+        "scoreable": 100,
+        "answered": 81,
+        "coverage": 0.675,
+        "scoreable_coverage": 0.81,
+        "scoreable_coverage_ci": [
+          0.7222,
+          0.8749
+        ],
+        "n": 81,
+        "correct": 58,
+        "partial": 23,
+        "incorrect": 0,
+        "abstained": 0,
+        "unresolved": 39,
+        "precision_strict": 0.716,
+        "strict_ci": [
+          0.6098,
+          0.8027
+        ],
+        "precision_half": 0.858,
+        "fixed_half": 0.5792,
+        "half_ci": null
+      }
+    }
+  },
+  "derived_verdicts": {
+    "HubSpot": {
+      "verdict": "unknown",
+      "reason": "credential_gate, api_surface not found in the frozen excerpt"
+    },
+    "Zendesk": {
+      "verdict": "unknown",
+      "reason": "credential_gate not found in the frozen excerpt"
+    },
+    "Slack": {
+      "verdict": "unknown",
+      "reason": "credential_gate not found in the frozen excerpt"
+    },
+    "Google Ads": {
+      "verdict": "gated_build_candidate",
+      "reason": "documented API and explicit paid/approval gate with no self-serve path"
+    },
+    "Shopify": {
+      "verdict": "unknown",
+      "reason": "credential_gate not found in the frozen excerpt"
+    },
+    "Apify": {
+      "verdict": "unknown",
+      "reason": "credential_gate not found in the frozen excerpt"
+    },
+    "GitHub": {
+      "verdict": "unknown",
+      "reason": "credential_gate not found in the frozen excerpt"
+    },
+    "Notion": {
+      "verdict": "unknown",
+      "reason": "credential_gate not found in the frozen excerpt"
+    },
+    "Stripe": {
+      "verdict": "unknown",
+      "reason": "credential_gate not found in the frozen excerpt"
+    },
+    "Reducto": {
+      "verdict": "unknown",
+      "reason": "credential_gate not found in the frozen excerpt"
+    },
+    "Discord": {
+      "verdict": "unknown",
+      "reason": "credential_gate not found in the frozen excerpt"
+    },
+    "higgsfield": {
+      "verdict": "unknown",
+      "reason": "api_surface not found in the frozen excerpt"
+    },
+    "Salesforce": {
+      "verdict": "unknown",
+      "reason": "credential_gate not found in the frozen excerpt"
+    },
+    "Zoho CRM": {
+      "verdict": "unknown",
+      "reason": "credential_gate not found in the frozen excerpt"
+    },
+    "YouTube Transcript": {
+      "verdict": "unknown",
+      "reason": "api_surface not found in the frozen excerpt"
+    },
+    "Gladly": {
+      "verdict": "unknown",
+      "reason": "credential_gate not found in the frozen excerpt"
+    },
+    "Xero": {
+      "verdict": "unknown",
+      "reason": "self-serve access found, but API breadth is not stated"
+    },
+    "Snowflake": {
+      "verdict": "unknown",
+      "reason": "self-serve access found, but API breadth is not stated"
+    },
+    "Sentry": {
+      "verdict": "unknown",
+      "reason": "api_surface not found in the frozen excerpt"
+    },
+    "Lark (Larksuite)": {
+      "verdict": "unknown",
+      "reason": "auth not found in the frozen excerpt"
+    }
+  },
+  "misses": [
+    {
+      "pass": "pass1",
+      "app": "HubSpot",
+      "field": "auth",
+      "rating": "partial",
+      "agent": [
+        "OAuth 2.0"
+      ],
+      "gold": "oauth2 user; oauth2 client credentials; api key / PAT",
+      "gold_status": "found",
+      "cause": "under_inclusive",
+      "labeler_note": "Relied on headings: OAuth (redirectUrls, isUserLevel true), Service keys (pat-na1- token), Developer API keys (hapikey query param), Client credentials (grant_type=client_credentials). The OAuth section never names its grant type, so oauth2 user is read from redirectUrls/isUserLevel. 'Static auth' is not mapped separately. Bearer is transport only."
+    },
+    {
+      "pass": "pass1",
+      "app": "HubSpot",
+      "field": "credential_gate",
+      "rating": "abstained",
+      "agent": "unknown",
+      "gold": "",
+      "gold_status": "unresolved",
+      "cause": "gold_unscoreable",
+      "labeler_note": "Excerpt is the associations guide (scopes, endpoints, per-tier rate limits). Nothing on how credentials are obtained. Only tangential: 'Free and Starter accounts: 100 requests per 10 seconds'."
+    },
+    {
+      "pass": "pass1",
+      "app": "HubSpot",
+      "field": "api_surface",
+      "rating": "abstained",
+      "agent": "unknown",
+      "gold": "",
+      "gold_status": "unresolved",
+      "cause": "gold_unscoreable",
+      "labeler_note": "Excerpt is the auth overview page. It shows curl calls to api.hubapi.com but never names an API style (REST etc.) or describes breadth."
+    },
+    {
+      "pass": "pass1",
+      "app": "HubSpot",
+      "field": "verdict",
+      "rating": "abstained",
+      "agent": "unknown",
+      "gold": "unknown",
+      "gold_status": "derived",
+      "cause": "gold_unscoreable",
+      "labeler_note": "credential_gate, api_surface not found in the frozen excerpt"
+    },
+    {
+      "pass": "pass2",
+      "app": "HubSpot",
+      "field": "credential_gate",
+      "rating": "unresolved",
+      "agent": [
+        "free or trial developer credential path"
+      ],
+      "gold": "",
+      "gold_status": "unresolved",
+      "cause": "gold_unscoreable",
+      "labeler_note": "Excerpt is the associations guide (scopes, endpoints, per-tier rate limits). Nothing on how credentials are obtained. Only tangential: 'Free and Starter accounts: 100 requests per 10 seconds'."
+    },
+    {
+      "pass": "pass2",
+      "app": "HubSpot",
+      "field": "api_surface",
+      "rating": "abstained",
+      "agent": "unknown",
+      "gold": "",
+      "gold_status": "unresolved",
+      "cause": "gold_unscoreable",
+      "labeler_note": "Excerpt is the auth overview page. It shows curl calls to api.hubapi.com but never names an API style (REST etc.) or describes breadth."
+    },
+    {
+      "pass": "pass2",
+      "app": "HubSpot",
+      "field": "verdict",
+      "rating": "abstained",
+      "agent": "unknown",
+      "gold": "unknown",
+      "gold_status": "derived",
+      "cause": "gold_unscoreable",
+      "labeler_note": "credential_gate, api_surface not found in the frozen excerpt"
+    },
+    {
+      "pass": "pass3",
+      "app": "HubSpot",
+      "field": "credential_gate",
+      "rating": "unresolved",
+      "agent": "self_serve_free",
+      "gold": "",
+      "gold_status": "unresolved",
+      "cause": "gold_unscoreable",
+      "labeler_note": "Excerpt is the associations guide (scopes, endpoints, per-tier rate limits). Nothing on how credentials are obtained. Only tangential: 'Free and Starter accounts: 100 requests per 10 seconds'."
+    },
+    {
+      "pass": "pass3",
+      "app": "HubSpot",
+      "field": "api_surface",
+      "rating": "unresolved",
+      "agent": "REST; broad documented surface",
+      "gold": "",
+      "gold_status": "unresolved",
+      "cause": "gold_unscoreable",
+      "labeler_note": "Excerpt is the auth overview page. It shows curl calls to api.hubapi.com but never names an API style (REST etc.) or describes breadth."
+    },
+    {
+      "pass": "pass3",
+      "app": "HubSpot",
+      "field": "verdict",
+      "rating": "unresolved",
+      "agent": "documented_build_candidate",
+      "gold": "unknown",
+      "gold_status": "derived",
+      "cause": "gold_unscoreable",
+      "labeler_note": "credential_gate, api_surface not found in the frozen excerpt"
+    },
+    {
+      "pass": "pass1",
+      "app": "Zendesk",
+      "field": "auth",
+      "rating": "partial",
+      "agent": [
+        "API key",
+        "Basic auth"
+      ],
+      "gold": "oauth2 user; api key / PAT; basic",
+      "gold_status": "found",
+      "cause": "under_inclusive",
+      "labeler_note": "Relied on 'OAuth access token' section, 'API token (deprecated)' section, and the note about migrating off 'basic authentication or API tokens'. OAuth flow type is not named; oauth2 user is the only OAuth label not contradicted. API tokens are sent via Basic header. Excerpt marks API tokens as deprecated."
+    },
+    {
+      "pass": "pass1",
+      "app": "Zendesk",
+      "field": "credential_gate",
+      "rating": "abstained",
+      "agent": "unknown",
+      "gold": "",
+      "gold_status": "not_stated_in_docs",
+      "cause": "gold_unscoreable",
+      "labeler_note": "Pricing page lists plans (Support Team US$19, Suite Team US$55, etc.) and a 14-day Suite Professional trial. It never mentions API credentials or ties them to a plan or trial."
+    },
+    {
+      "pass": "pass1",
+      "app": "Zendesk",
+      "field": "api_surface",
+      "rating": "abstained",
+      "agent": "unknown",
+      "gold": "REST; broad",
+      "gold_status": "found",
+      "cause": "abstained_on_scoreable",
+      "labeler_note": "REST from the first sentence. Broad from 'This is not a definitive guide ... Many more exist.' plus the list of tickets, requests, users, search, audits, metrics, views, organizations, Help Center."
+    },
+    {
+      "pass": "pass1",
+      "app": "Zendesk",
+      "field": "verdict",
+      "rating": "abstained",
+      "agent": "unknown",
+      "gold": "unknown",
+      "gold_status": "derived",
+      "cause": "gold_unscoreable",
+      "labeler_note": "credential_gate not found in the frozen excerpt"
+    },
+    {
+      "pass": "pass2",
+      "app": "Zendesk",
+      "field": "credential_gate",
+      "rating": "unresolved",
+      "agent": [
+        "administrator controls credential"
+      ],
+      "gold": "",
+      "gold_status": "not_stated_in_docs",
+      "cause": "gold_unscoreable",
+      "labeler_note": "Pricing page lists plans (Support Team US$19, Suite Team US$55, etc.) and a 14-day Suite Professional trial. It never mentions API credentials or ties them to a plan or trial."
+    },
+    {
+      "pass": "pass2",
+      "app": "Zendesk",
+      "field": "api_surface",
+      "rating": "abstained",
+      "agent": "unknown",
+      "gold": "REST; broad",
+      "gold_status": "found",
+      "cause": "abstained_on_scoreable",
+      "labeler_note": "REST from the first sentence. Broad from 'This is not a definitive guide ... Many more exist.' plus the list of tickets, requests, users, search, audits, metrics, views, organizations, Help Center."
+    },
+    {
+      "pass": "pass2",
+      "app": "Zendesk",
+      "field": "official_mcp",
+      "rating": "abstained",
+      "agent": "unknown",
+      "gold": "beta/EAP/closed; `https://example.zendesk.com/mcp`",
+      "gold_status": "found",
+      "cause": "abstained_on_scoreable",
+      "labeler_note": "Title ends '(EAP)' and the Q&A says free during the EAP. The agent can create/update tickets and apply macros, so it has actions. The URL is a placeholder pattern ('Example: `https://example.zendesk.com/mcp`'), not a fixed endpoint."
+    },
+    {
+      "pass": "pass2",
+      "app": "Zendesk",
+      "field": "verdict",
+      "rating": "abstained",
+      "agent": "unknown",
+      "gold": "unknown",
+      "gold_status": "derived",
+      "cause": "gold_unscoreable",
+      "labeler_note": "credential_gate not found in the frozen excerpt"
+    },
+    {
+      "pass": "pass3",
+      "app": "Zendesk",
+      "field": "credential_gate",
+      "rating": "unresolved",
+      "agent": "self_serve_trial",
+      "gold": "",
+      "gold_status": "not_stated_in_docs",
+      "cause": "gold_unscoreable",
+      "labeler_note": "Pricing page lists plans (Support Team US$19, Suite Team US$55, etc.) and a 14-day Suite Professional trial. It never mentions API credentials or ties them to a plan or trial."
+    },
+    {
+      "pass": "pass3",
+      "app": "Zendesk",
+      "field": "verdict",
+      "rating": "unresolved",
+      "agent": "documented_build_candidate",
+      "gold": "unknown",
+      "gold_status": "derived",
+      "cause": "gold_unscoreable",
+      "labeler_note": "credential_gate not found in the frozen excerpt"
+    },
+    {
+      "pass": "pass1",
+      "app": "Slack",
+      "field": "auth",
+      "rating": "partial",
+      "agent": [
+        "OAuth 2.0",
+        "Basic auth"
+      ],
+      "gold": "oauth2 user",
+      "gold_status": "found",
+      "cause": "over_inclusive",
+      "labeler_note": "Relied on the authorize and oauth.v2.access steps and the v2_user flow for user tokens. No client-credentials flow appears in this (truncated) excerpt."
+    },
+    {
+      "pass": "pass1",
+      "app": "Slack",
+      "field": "credential_gate",
+      "rating": "abstained",
+      "agent": "unknown",
+      "gold": "",
+      "gold_status": "not_stated_in_docs",
+      "cause": "gold_unscoreable",
+      "labeler_note": "Pricing/feature page. It mentions Slack APIs only as a plan feature (custom workflow steps) and says nothing about obtaining API credentials."
+    },
+    {
+      "pass": "pass1",
+      "app": "Slack",
+      "field": "api_surface",
+      "rating": "abstained",
+      "agent": "unknown",
+      "gold": "broad",
+      "gold_status": "found",
+      "cause": "abstained_on_scoreable",
+      "labeler_note": "Breadth from 'over 200 methods'. The excerpt says 'it's not a REST API', so REST is not assigned. No allowed label fits an HTTP RPC-style API. One word near the first heading is redacted."
+    },
+    {
+      "pass": "pass1",
+      "app": "Slack",
+      "field": "verdict",
+      "rating": "abstained",
+      "agent": "unknown",
+      "gold": "unknown",
+      "gold_status": "derived",
+      "cause": "gold_unscoreable",
+      "labeler_note": "credential_gate not found in the frozen excerpt"
+    },
+    {
+      "pass": "pass2",
+      "app": "Slack",
+      "field": "auth",
+      "rating": "partial",
+      "agent": [
+        "OAuth 2.0",
+        "API token",
+        "Basic authentication (OAuth client or endpoint-specific)"
+      ],
+      "gold": "oauth2 user",
+      "gold_status": "found",
+      "cause": "over_inclusive",
+      "labeler_note": "Relied on the authorize and oauth.v2.access steps and the v2_user flow for user tokens. No client-credentials flow appears in this (truncated) excerpt."
+    },
+    {
+      "pass": "pass2",
+      "app": "Slack",
+      "field": "credential_gate",
+      "rating": "abstained",
+      "agent": "unknown",
+      "gold": "",
+      "gold_status": "not_stated_in_docs",
+      "cause": "gold_unscoreable",
+      "labeler_note": "Pricing/feature page. It mentions Slack APIs only as a plan feature (custom workflow steps) and says nothing about obtaining API credentials."
+    },
+    {
+      "pass": "pass2",
+      "app": "Slack",
+      "field": "api_surface",
+      "rating": "abstained",
+      "agent": "unknown",
+      "gold": "broad",
+      "gold_status": "found",
+      "cause": "abstained_on_scoreable",
+      "labeler_note": "Breadth from 'over 200 methods'. The excerpt says 'it's not a REST API', so REST is not assigned. No allowed label fits an HTTP RPC-style API. One word near the first heading is redacted."
+    },
+    {
+      "pass": "pass2",
+      "app": "Slack",
+      "field": "verdict",
+      "rating": "abstained",
+      "agent": "unknown",
+      "gold": "unknown",
+      "gold_status": "derived",
+      "cause": "gold_unscoreable",
+      "labeler_note": "credential_gate not found in the frozen excerpt"
+    },
+    {
+      "pass": "pass3",
+      "app": "Slack",
+      "field": "credential_gate",
+      "rating": "unresolved",
+      "agent": "self_serve_free",
+      "gold": "",
+      "gold_status": "not_stated_in_docs",
+      "cause": "gold_unscoreable",
+      "labeler_note": "Pricing/feature page. It mentions Slack APIs only as a plan feature (custom workflow steps) and says nothing about obtaining API credentials."
+    },
+    {
+      "pass": "pass3",
+      "app": "Slack",
+      "field": "verdict",
+      "rating": "unresolved",
+      "agent": "documented_build_candidate",
+      "gold": "unknown",
+      "gold_status": "derived",
+      "cause": "gold_unscoreable",
+      "labeler_note": "credential_gate not found in the frozen excerpt"
+    },
+    {
+      "pass": "pass1",
+      "app": "Google Ads",
+      "field": "auth",
+      "rating": "partial",
+      "agent": [
+        "OAuth 2.0"
+      ],
+      "gold": "oauth2 user; JWT-signed",
+      "gold_status": "found",
+      "cause": "under_inclusive",
+      "labeler_note": "User authentication section (client ID, secret, refresh token) maps to oauth2 user. Service accounts section generates a 'JWT claim set' exchanged for an access token, mapped to JWT-signed. The label before 'service account flow' is redacted."
+    },
+    {
+      "pass": "pass1",
+      "app": "Google Ads",
+      "field": "credential_gate",
+      "rating": "abstained",
+      "agent": "unknown",
+      "gold": "prototype: unknown; production: app_review",
+      "gold_status": "found",
+      "cause": "abstained_on_scoreable",
+      "labeler_note": "Enabling the API grants Test access (test accounts only), but no fee is stated, so 'free' is not assigned. Production: Explorer is an application with 'automated review and approval in most cases'. Basic needs brand verification. Standard needs a manual audit (10 business days)."
+    },
+    {
+      "pass": "pass1",
+      "app": "Google Ads",
+      "field": "api_surface",
+      "rating": "abstained",
+      "agent": "unknown",
+      "gold": "REST",
+      "gold_status": "found",
+      "cause": "abstained_on_scoreable",
+      "labeler_note": "Also mentions an 'HTTP/REST' tab. Breadth is not stated in this auth page."
+    },
+    {
+      "pass": "pass1",
+      "app": "Google Ads",
+      "field": "verdict",
+      "rating": "abstained",
+      "agent": "unknown",
+      "gold": "gated_build_candidate",
+      "gold_status": "derived",
+      "cause": "abstained_on_scoreable",
+      "labeler_note": "documented API and explicit paid/approval gate with no self-serve path"
+    },
+    {
+      "pass": "pass2",
+      "app": "Google Ads",
+      "field": "auth",
+      "rating": "partial",
+      "agent": [
+        "OAuth 2.0"
+      ],
+      "gold": "oauth2 user; JWT-signed",
+      "gold_status": "found",
+      "cause": "under_inclusive",
+      "labeler_note": "User authentication section (client ID, secret, refresh token) maps to oauth2 user. Service accounts section generates a 'JWT claim set' exchanged for an access token, mapped to JWT-signed. The label before 'service account flow' is redacted."
+    },
+    {
+      "pass": "pass2",
+      "app": "Google Ads",
+      "field": "api_surface",
+      "rating": "abstained",
+      "agent": "unknown",
+      "gold": "REST",
+      "gold_status": "found",
+      "cause": "abstained_on_scoreable",
+      "labeler_note": "Also mentions an 'HTTP/REST' tab. Breadth is not stated in this auth page."
+    },
+    {
+      "pass": "pass2",
+      "app": "Google Ads",
+      "field": "verdict",
+      "rating": "abstained",
+      "agent": "unknown",
+      "gold": "gated_build_candidate",
+      "gold_status": "derived",
+      "cause": "abstained_on_scoreable",
+      "labeler_note": "documented API and explicit paid/approval gate with no self-serve path"
+    },
+    {
+      "pass": "pass3",
+      "app": "Google Ads",
+      "field": "auth",
+      "rating": "partial",
+      "agent": [
+        "OAuth 2.0 user authentication flow; scope https://www.googleapis.com/auth/adwords",
+        "OAuth 2.0 service-account flow; scope https://www.googleapis.com/auth/adwords"
+      ],
+      "gold": "oauth2 user; JWT-signed",
+      "gold_status": "found",
+      "cause": "under_inclusive",
+      "labeler_note": "User authentication section (client ID, secret, refresh token) maps to oauth2 user. Service accounts section generates a 'JWT claim set' exchanged for an access token, mapped to JWT-signed. The label before 'service account flow' is redacted."
+    },
+    {
+      "pass": "pass3",
+      "app": "Google Ads",
+      "field": "credential_gate",
+      "rating": "partial",
+      "agent": "mixed",
+      "gold": "prototype: unknown; production: app_review",
+      "gold_status": "found",
+      "cause": "unmappable_answer",
+      "labeler_note": "Enabling the API grants Test access (test accounts only), but no fee is stated, so 'free' is not assigned. Production: Explorer is an application with 'automated review and approval in most cases'. Basic needs brand verification. Standard needs a manual audit (10 business days)."
+    },
+    {
+      "pass": "pass1",
+      "app": "Shopify",
+      "field": "credential_gate",
+      "rating": "abstained",
+      "agent": "unknown",
+      "gold": "",
+      "gold_status": "not_stated_in_docs",
+      "cause": "gold_unscoreable",
+      "labeler_note": "Page says where to find client ID/secret in the Dev Dashboard and how to rotate them. It does not say what is needed to get access (cost, review, approval)."
+    },
+    {
+      "pass": "pass1",
+      "app": "Shopify",
+      "field": "api_surface",
+      "rating": "abstained",
+      "agent": "unknown",
+      "gold": "GraphQL; REST",
+      "gold_status": "found",
+      "cause": "abstained_on_scoreable",
+      "labeler_note": "'The REST Admin API is legacy.' REST is listed as legacy, not preferred. Many surfaces are listed, but there is no count or breadth statement, so no breadth label."
+    },
+    {
+      "pass": "pass1",
+      "app": "Shopify",
+      "field": "official_mcp",
+      "rating": "abstained",
+      "agent": "unknown",
+      "gold": "local only",
+      "gold_status": "found",
+      "cause": "abstained_on_scoreable",
+      "labeler_note": "Section 'Install with the Dev MCP server'. It serves developer docs/schema lookup and validation. No hosted URL is stated. The plugin and skills install paths are separate from the MCP server."
+    },
+    {
+      "pass": "pass1",
+      "app": "Shopify",
+      "field": "verdict",
+      "rating": "abstained",
+      "agent": "unknown",
+      "gold": "unknown",
+      "gold_status": "derived",
+      "cause": "gold_unscoreable",
+      "labeler_note": "credential_gate not found in the frozen excerpt"
+    },
+    {
+      "pass": "pass2",
+      "app": "Shopify",
+      "field": "credential_gate",
+      "rating": "abstained",
+      "agent": "unknown",
+      "gold": "",
+      "gold_status": "not_stated_in_docs",
+      "cause": "gold_unscoreable",
+      "labeler_note": "Page says where to find client ID/secret in the Dev Dashboard and how to rotate them. It does not say what is needed to get access (cost, review, approval)."
+    },
+    {
+      "pass": "pass2",
+      "app": "Shopify",
+      "field": "official_mcp",
+      "rating": "abstained",
+      "agent": "unknown",
+      "gold": "local only",
+      "gold_status": "found",
+      "cause": "abstained_on_scoreable",
+      "labeler_note": "Section 'Install with the Dev MCP server'. It serves developer docs/schema lookup and validation. No hosted URL is stated. The plugin and skills install paths are separate from the MCP server."
+    },
+    {
+      "pass": "pass2",
+      "app": "Shopify",
+      "field": "verdict",
+      "rating": "abstained",
+      "agent": "unknown",
+      "gold": "unknown",
+      "gold_status": "derived",
+      "cause": "gold_unscoreable",
+      "labeler_note": "credential_gate not found in the frozen excerpt"
+    },
+    {
+      "pass": "pass3",
+      "app": "Shopify",
+      "field": "credential_gate",
+      "rating": "unresolved",
+      "agent": "admin_approval",
+      "gold": "",
+      "gold_status": "not_stated_in_docs",
+      "cause": "gold_unscoreable",
+      "labeler_note": "Page says where to find client ID/secret in the Dev Dashboard and how to rotate them. It does not say what is needed to get access (cost, review, approval)."
+    },
+    {
+      "pass": "pass3",
+      "app": "Shopify",
+      "field": "verdict",
+      "rating": "unresolved",
+      "agent": "gated_build_candidate",
+      "gold": "unknown",
+      "gold_status": "derived",
+      "cause": "gold_unscoreable",
+      "labeler_note": "credential_gate not found in the frozen excerpt"
+    },
+    {
+      "pass": "pass1",
+      "app": "Apify",
+      "field": "auth",
+      "rating": "abstained",
+      "agent": "unknown",
+      "gold": "api key / PAT",
+      "gold_status": "found",
+      "cause": "abstained_on_scoreable",
+      "labeler_note": "Token is sent as a Bearer header or as a token query parameter. The 'Agentic payments' credentials (x402, Skyfire) have no matching allowed label."
+    },
+    {
+      "pass": "pass1",
+      "app": "Apify",
+      "field": "credential_gate",
+      "rating": "abstained",
+      "agent": "unknown",
+      "gold": "",
+      "gold_status": "not_stated_in_docs",
+      "cause": "gold_unscoreable",
+      "labeler_note": "Pricing page: Free plan has 'No credit card required', plus paid tiers. It never mentions API tokens or credentials."
+    },
+    {
+      "pass": "pass1",
+      "app": "Apify",
+      "field": "api_surface",
+      "rating": "partial",
+      "agent": [
+        "REST"
+      ],
+      "gold": "REST; SDK",
+      "gold_status": "found",
+      "cause": "under_inclusive",
+      "labeler_note": "SDK from the Node.js and Python (stable) and other (experimental) apify-client packages. The word REST is partly redacted, but the link target is Wikipedia's REST article and the text says 'HTTP endpoints'. Breadth not stated."
+    },
+    {
+      "pass": "pass1",
+      "app": "Apify",
+      "field": "verdict",
+      "rating": "abstained",
+      "agent": "unknown",
+      "gold": "unknown",
+      "gold_status": "derived",
+      "cause": "gold_unscoreable",
+      "labeler_note": "credential_gate not found in the frozen excerpt"
+    },
+    {
+      "pass": "pass2",
+      "app": "Apify",
+      "field": "auth",
+      "rating": "abstained",
+      "agent": "unknown",
+      "gold": "api key / PAT",
+      "gold_status": "found",
+      "cause": "abstained_on_scoreable",
+      "labeler_note": "Token is sent as a Bearer header or as a token query parameter. The 'Agentic payments' credentials (x402, Skyfire) have no matching allowed label."
+    },
+    {
+      "pass": "pass2",
+      "app": "Apify",
+      "field": "credential_gate",
+      "rating": "abstained",
+      "agent": "unknown",
+      "gold": "",
+      "gold_status": "not_stated_in_docs",
+      "cause": "gold_unscoreable",
+      "labeler_note": "Pricing page: Free plan has 'No credit card required', plus paid tiers. It never mentions API tokens or credentials."
+    },
+    {
+      "pass": "pass2",
+      "app": "Apify",
+      "field": "api_surface",
+      "rating": "partial",
+      "agent": [
+        "REST"
+      ],
+      "gold": "REST; SDK",
+      "gold_status": "found",
+      "cause": "under_inclusive",
+      "labeler_note": "SDK from the Node.js and Python (stable) and other (experimental) apify-client packages. The word REST is partly redacted, but the link target is Wikipedia's REST article and the text says 'HTTP endpoints'. Breadth not stated."
+    },
+    {
+      "pass": "pass2",
+      "app": "Apify",
+      "field": "verdict",
+      "rating": "abstained",
+      "agent": "unknown",
+      "gold": "unknown",
+      "gold_status": "derived",
+      "cause": "gold_unscoreable",
+      "labeler_note": "credential_gate not found in the frozen excerpt"
+    },
+    {
+      "pass": "pass3",
+      "app": "Apify",
+      "field": "credential_gate",
+      "rating": "unresolved",
+      "agent": "self_serve_free",
+      "gold": "",
+      "gold_status": "not_stated_in_docs",
+      "cause": "gold_unscoreable",
+      "labeler_note": "Pricing page: Free plan has 'No credit card required', plus paid tiers. It never mentions API tokens or credentials."
+    },
+    {
+      "pass": "pass3",
+      "app": "Apify",
+      "field": "api_surface",
+      "rating": "partial",
+      "agent": "REST; broad documented surface",
+      "gold": "REST; SDK",
+      "gold_status": "found",
+      "cause": "under_inclusive",
+      "labeler_note": "SDK from the Node.js and Python (stable) and other (experimental) apify-client packages. The word REST is partly redacted, but the link target is Wikipedia's REST article and the text says 'HTTP endpoints'. Breadth not stated."
+    },
+    {
+      "pass": "pass3",
+      "app": "Apify",
+      "field": "verdict",
+      "rating": "unresolved",
+      "agent": "documented_build_candidate",
+      "gold": "unknown",
+      "gold_status": "derived",
+      "cause": "gold_unscoreable",
+      "labeler_note": "credential_gate not found in the frozen excerpt"
+    },
+    {
+      "pass": "pass1",
+      "app": "GitHub",
+      "field": "auth",
+      "rating": "partial",
+      "agent": [
+        "Basic auth"
+      ],
+      "gold": "api key / PAT; oauth2 user; basic; JWT-signed",
+      "gold_status": "found",
+      "cause": "under_inclusive",
+      "labeler_note": "PATs; OAuth token from an OAuth app; GitHub App tokens. Basic auth (client ID/secret) only for some app endpoints. A JWT is accepted with Bearer. 'Authentication with username and password is not supported.'"
+    },
+    {
+      "pass": "pass1",
+      "app": "GitHub",
+      "field": "credential_gate",
+      "rating": "abstained",
+      "agent": "unknown",
+      "gold": "",
+      "gold_status": "unresolved",
+      "cause": "gold_unscoreable",
+      "labeler_note": "Page is 'About organizations'. It says orgs are free on GitHub Free and mentions paid tiers, but nothing on obtaining API credentials."
+    },
+    {
+      "pass": "pass1",
+      "app": "GitHub",
+      "field": "api_surface",
+      "rating": "partial",
+      "agent": [
+        "REST",
+        "GraphQL"
+      ],
+      "gold": "REST; GraphQL; SDK",
+      "gold_status": "found",
+      "cause": "under_inclusive",
+      "labeler_note": "SDK from 'official Octokit libraries'. Breadth is not stated."
+    },
+    {
+      "pass": "pass1",
+      "app": "GitHub",
+      "field": "official_mcp",
+      "rating": "unresolved",
+      "agent": "yes",
+      "gold": "",
+      "gold_status": "not_stated_in_docs",
+      "cause": "gold_unscoreable",
+      "labeler_note": "Hosted remote server at `https://api.githubcopilot.com/mcp/` is stated ('hosted by GitHub ... recommended'). Local option also exists. Excerpt never lists tools or says whether they can write, so the actions vs read-only tier cannot be assigned."
+    },
+    {
+      "pass": "pass1",
+      "app": "GitHub",
+      "field": "verdict",
+      "rating": "abstained",
+      "agent": "unknown",
+      "gold": "unknown",
+      "gold_status": "derived",
+      "cause": "gold_unscoreable",
+      "labeler_note": "credential_gate not found in the frozen excerpt"
+    },
+    {
+      "pass": "pass2",
+      "app": "GitHub",
+      "field": "auth",
+      "rating": "partial",
+      "agent": [
+        "Basic authentication"
+      ],
+      "gold": "api key / PAT; oauth2 user; basic; JWT-signed",
+      "gold_status": "found",
+      "cause": "under_inclusive",
+      "labeler_note": "PATs; OAuth token from an OAuth app; GitHub App tokens. Basic auth (client ID/secret) only for some app endpoints. A JWT is accepted with Bearer. 'Authentication with username and password is not supported.'"
+    },
+    {
+      "pass": "pass2",
+      "app": "GitHub",
+      "field": "credential_gate",
+      "rating": "abstained",
+      "agent": "unknown",
+      "gold": "",
+      "gold_status": "unresolved",
+      "cause": "gold_unscoreable",
+      "labeler_note": "Page is 'About organizations'. It says orgs are free on GitHub Free and mentions paid tiers, but nothing on obtaining API credentials."
+    },
+    {
+      "pass": "pass2",
+      "app": "GitHub",
+      "field": "api_surface",
+      "rating": "partial",
+      "agent": [
+        "REST",
+        "GraphQL"
+      ],
+      "gold": "REST; GraphQL; SDK",
+      "gold_status": "found",
+      "cause": "under_inclusive",
+      "labeler_note": "SDK from 'official Octokit libraries'. Breadth is not stated."
+    },
+    {
+      "pass": "pass2",
+      "app": "GitHub",
+      "field": "official_mcp",
+      "rating": "unresolved",
+      "agent": "yes (provisional)",
+      "gold": "",
+      "gold_status": "not_stated_in_docs",
+      "cause": "gold_unscoreable",
+      "labeler_note": "Hosted remote server at `https://api.githubcopilot.com/mcp/` is stated ('hosted by GitHub ... recommended'). Local option also exists. Excerpt never lists tools or says whether they can write, so the actions vs read-only tier cannot be assigned."
+    },
+    {
+      "pass": "pass2",
+      "app": "GitHub",
+      "field": "verdict",
+      "rating": "abstained",
+      "agent": "unknown",
+      "gold": "unknown",
+      "gold_status": "derived",
+      "cause": "gold_unscoreable",
+      "labeler_note": "credential_gate not found in the frozen excerpt"
+    },
+    {
+      "pass": "pass3",
+      "app": "GitHub",
+      "field": "auth",
+      "rating": "partial",
+      "agent": [
+        "Personal access tokens with fine-grained repository and permission scopes (Bearer or token header)",
+        "GitHub App installation tokens and OAuth app tokens for delegated REST API access",
+        "Endpoint-specific HTTP Basic authentication using a GitHub App or OAuth app client ID and client secret"
+      ],
+      "gold": "api key / PAT; oauth2 user; basic; JWT-signed",
+      "gold_status": "found",
+      "cause": "under_inclusive",
+      "labeler_note": "PATs; OAuth token from an OAuth app; GitHub App tokens. Basic auth (client ID/secret) only for some app endpoints. A JWT is accepted with Bearer. 'Authentication with username and password is not supported.'"
+    },
+    {
+      "pass": "pass3",
+      "app": "GitHub",
+      "field": "credential_gate",
+      "rating": "unresolved",
+      "agent": "self_serve_free",
+      "gold": "",
+      "gold_status": "unresolved",
+      "cause": "gold_unscoreable",
+      "labeler_note": "Page is 'About organizations'. It says orgs are free on GitHub Free and mentions paid tiers, but nothing on obtaining API credentials."
+    },
+    {
+      "pass": "pass3",
+      "app": "GitHub",
+      "field": "api_surface",
+      "rating": "partial",
+      "agent": "REST and GraphQL; broad documented surface",
+      "gold": "REST; GraphQL; SDK",
+      "gold_status": "found",
+      "cause": "under_inclusive",
+      "labeler_note": "SDK from 'official Octokit libraries'. Breadth is not stated."
+    },
+    {
+      "pass": "pass3",
+      "app": "GitHub",
+      "field": "official_mcp",
+      "rating": "unresolved",
+      "agent": "vendor_server",
+      "gold": "",
+      "gold_status": "not_stated_in_docs",
+      "cause": "gold_unscoreable",
+      "labeler_note": "Hosted remote server at `https://api.githubcopilot.com/mcp/` is stated ('hosted by GitHub ... recommended'). Local option also exists. Excerpt never lists tools or says whether they can write, so the actions vs read-only tier cannot be assigned."
+    },
+    {
+      "pass": "pass3",
+      "app": "GitHub",
+      "field": "verdict",
+      "rating": "unresolved",
+      "agent": "documented_build_candidate",
+      "gold": "unknown",
+      "gold_status": "derived",
+      "cause": "gold_unscoreable",
+      "labeler_note": "credential_gate not found in the frozen excerpt"
+    },
+    {
+      "pass": "pass1",
+      "app": "Notion",
+      "field": "auth",
+      "rating": "abstained",
+      "agent": "unknown",
+      "gold": "api key / PAT; oauth2 user",
+      "gold_status": "found",
+      "cause": "abstained_on_scoreable",
+      "labeler_note": "Internal connection token (Bearer), personal access token, and OAuth integration (authorization code with refresh token). Basic is used only at the OAuth token endpoint (client ID:secret)."
+    },
+    {
+      "pass": "pass1",
+      "app": "Notion",
+      "field": "credential_gate",
+      "rating": "abstained",
+      "agent": "unknown",
+      "gold": "",
+      "gold_status": "not_stated_in_docs",
+      "cause": "gold_unscoreable",
+      "labeler_note": "Pricing page. Mentions Workers (Beta) and 'bespoke integrations' as features, with nothing on how to obtain API credentials."
+    },
+    {
+      "pass": "pass1",
+      "app": "Notion",
+      "field": "api_surface",
+      "rating": "abstained",
+      "agent": "unknown",
+      "gold": "SDK",
+      "gold_status": "found",
+      "cause": "abstained_on_scoreable",
+      "labeler_note": "Excerpt names the JavaScript SDK, curl, and any HTTPS client. It never calls the API REST, and states no breadth."
+    },
+    {
+      "pass": "pass1",
+      "app": "Notion",
+      "field": "official_mcp",
+      "rating": "unresolved",
+      "agent": "yes",
+      "gold": "",
+      "gold_status": "not_stated_in_docs",
+      "cause": "gold_unscoreable",
+      "labeler_note": "Hosted URL `https://mcp.notion.com/mcp` is stated. The excerpt only names read-type tools (notion-search, notion-query-data-sources, notion-connector-search). The file-upload FAQ has no answer text. Write capability is not shown, so the tier is not assigned."
+    },
+    {
+      "pass": "pass1",
+      "app": "Notion",
+      "field": "verdict",
+      "rating": "abstained",
+      "agent": "unknown",
+      "gold": "unknown",
+      "gold_status": "derived",
+      "cause": "gold_unscoreable",
+      "labeler_note": "credential_gate not found in the frozen excerpt"
+    },
+    {
+      "pass": "pass2",
+      "app": "Notion",
+      "field": "auth",
+      "rating": "abstained",
+      "agent": "unknown",
+      "gold": "api key / PAT; oauth2 user",
+      "gold_status": "found",
+      "cause": "abstained_on_scoreable",
+      "labeler_note": "Internal connection token (Bearer), personal access token, and OAuth integration (authorization code with refresh token). Basic is used only at the OAuth token endpoint (client ID:secret)."
+    },
+    {
+      "pass": "pass2",
+      "app": "Notion",
+      "field": "credential_gate",
+      "rating": "abstained",
+      "agent": "unknown",
+      "gold": "",
+      "gold_status": "not_stated_in_docs",
+      "cause": "gold_unscoreable",
+      "labeler_note": "Pricing page. Mentions Workers (Beta) and 'bespoke integrations' as features, with nothing on how to obtain API credentials."
+    },
+    {
+      "pass": "pass2",
+      "app": "Notion",
+      "field": "api_surface",
+      "rating": "abstained",
+      "agent": "unknown",
+      "gold": "SDK",
+      "gold_status": "found",
+      "cause": "abstained_on_scoreable",
+      "labeler_note": "Excerpt names the JavaScript SDK, curl, and any HTTPS client. It never calls the API REST, and states no breadth."
+    },
+    {
+      "pass": "pass2",
+      "app": "Notion",
+      "field": "official_mcp",
+      "rating": "abstained",
+      "agent": "unknown",
+      "gold": "",
+      "gold_status": "not_stated_in_docs",
+      "cause": "gold_unscoreable",
+      "labeler_note": "Hosted URL `https://mcp.notion.com/mcp` is stated. The excerpt only names read-type tools (notion-search, notion-query-data-sources, notion-connector-search). The file-upload FAQ has no answer text. Write capability is not shown, so the tier is not assigned."
+    },
+    {
+      "pass": "pass2",
+      "app": "Notion",
+      "field": "verdict",
+      "rating": "abstained",
+      "agent": "unknown",
+      "gold": "unknown",
+      "gold_status": "derived",
+      "cause": "gold_unscoreable",
+      "labeler_note": "credential_gate not found in the frozen excerpt"
+    },
+    {
+      "pass": "pass3",
+      "app": "Notion",
+      "field": "credential_gate",
+      "rating": "unresolved",
+      "agent": "self_serve_free",
+      "gold": "",
+      "gold_status": "not_stated_in_docs",
+      "cause": "gold_unscoreable",
+      "labeler_note": "Pricing page. Mentions Workers (Beta) and 'bespoke integrations' as features, with nothing on how to obtain API credentials."
+    },
+    {
+      "pass": "pass3",
+      "app": "Notion",
+      "field": "api_surface",
+      "rating": "partial",
+      "agent": "REST; broad documented surface",
+      "gold": "SDK",
+      "gold_status": "found",
+      "cause": "under_inclusive",
+      "labeler_note": "Excerpt names the JavaScript SDK, curl, and any HTTPS client. It never calls the API REST, and states no breadth."
+    },
+    {
+      "pass": "pass3",
+      "app": "Notion",
+      "field": "official_mcp",
+      "rating": "unresolved",
+      "agent": "vendor_server",
+      "gold": "",
+      "gold_status": "not_stated_in_docs",
+      "cause": "gold_unscoreable",
+      "labeler_note": "Hosted URL `https://mcp.notion.com/mcp` is stated. The excerpt only names read-type tools (notion-search, notion-query-data-sources, notion-connector-search). The file-upload FAQ has no answer text. Write capability is not shown, so the tier is not assigned."
+    },
+    {
+      "pass": "pass3",
+      "app": "Notion",
+      "field": "verdict",
+      "rating": "unresolved",
+      "agent": "documented_build_candidate",
+      "gold": "unknown",
+      "gold_status": "derived",
+      "cause": "gold_unscoreable",
+      "labeler_note": "credential_gate not found in the frozen excerpt"
+    },
+    {
+      "pass": "pass1",
+      "app": "Stripe",
+      "field": "credential_gate",
+      "rating": "abstained",
+      "agent": "unknown",
+      "gold": "",
+      "gold_status": "not_stated_in_docs",
+      "cause": "gold_unscoreable",
+      "labeler_note": "Pricing page covering fees and payment products. Nothing on API keys or how to get them."
+    },
+    {
+      "pass": "pass1",
+      "app": "Stripe",
+      "field": "api_surface",
+      "rating": "abstained",
+      "agent": "unknown",
+      "gold": "REST; SDK",
+      "gold_status": "found",
+      "cause": "abstained_on_scoreable",
+      "labeler_note": "SDK from 'official client libraries'. Breadth not stated."
+    },
+    {
+      "pass": "pass1",
+      "app": "Stripe",
+      "field": "verdict",
+      "rating": "abstained",
+      "agent": "unknown",
+      "gold": "unknown",
+      "gold_status": "derived",
+      "cause": "gold_unscoreable",
+      "labeler_note": "credential_gate not found in the frozen excerpt"
+    },
+    {
+      "pass": "pass2",
+      "app": "Stripe",
+      "field": "credential_gate",
+      "rating": "abstained",
+      "agent": "unknown",
+      "gold": "",
+      "gold_status": "not_stated_in_docs",
+      "cause": "gold_unscoreable",
+      "labeler_note": "Pricing page covering fees and payment products. Nothing on API keys or how to get them."
+    },
+    {
+      "pass": "pass2",
+      "app": "Stripe",
+      "field": "api_surface",
+      "rating": "abstained",
+      "agent": "unknown",
+      "gold": "REST; SDK",
+      "gold_status": "found",
+      "cause": "abstained_on_scoreable",
+      "labeler_note": "SDK from 'official client libraries'. Breadth not stated."
+    },
+    {
+      "pass": "pass2",
+      "app": "Stripe",
+      "field": "verdict",
+      "rating": "abstained",
+      "agent": "unknown",
+      "gold": "unknown",
+      "gold_status": "derived",
+      "cause": "gold_unscoreable",
+      "labeler_note": "credential_gate not found in the frozen excerpt"
+    },
+    {
+      "pass": "pass3",
+      "app": "Stripe",
+      "field": "auth",
+      "rating": "partial",
+      "agent": [
+        "API key (REST HTTP Basic username; test and live modes)",
+        "OAuth 2.0 (Stripe MCP user delegation)",
+        "Agent API key (independent Stripe MCP access)"
+      ],
+      "gold": "api key / PAT",
+      "gold_status": "found",
+      "cause": "over_inclusive",
+      "labeler_note": "Keys are sent via HTTP Basic auth (key as username) or Bearer. Workload Identity Federation (short-lived tokens) has no matching label. Basic here is only a transport for the key."
+    },
+    {
+      "pass": "pass3",
+      "app": "Stripe",
+      "field": "credential_gate",
+      "rating": "unresolved",
+      "agent": "self_serve_free",
+      "gold": "",
+      "gold_status": "not_stated_in_docs",
+      "cause": "gold_unscoreable",
+      "labeler_note": "Pricing page covering fees and payment products. Nothing on API keys or how to get them."
+    },
+    {
+      "pass": "pass3",
+      "app": "Stripe",
+      "field": "api_surface",
+      "rating": "partial",
+      "agent": "REST; broad documented surface",
+      "gold": "REST; SDK",
+      "gold_status": "found",
+      "cause": "under_inclusive",
+      "labeler_note": "SDK from 'official client libraries'. Breadth not stated."
+    },
+    {
+      "pass": "pass3",
+      "app": "Stripe",
+      "field": "verdict",
+      "rating": "unresolved",
+      "agent": "documented_build_candidate",
+      "gold": "unknown",
+      "gold_status": "derived",
+      "cause": "gold_unscoreable",
+      "labeler_note": "credential_gate not found in the frozen excerpt"
+    },
+    {
+      "pass": "pass1",
+      "app": "Reducto",
+      "field": "auth",
+      "rating": "abstained",
+      "agent": "unknown",
+      "gold": "api key / PAT",
+      "gold_status": "found",
+      "cause": "abstained_on_scoreable",
+      "labeler_note": "Key is created in Studio and sent via Authorization Bearer in the cURL example (transport). The MCP login flow ends in a saved API key."
+    },
+    {
+      "pass": "pass1",
+      "app": "Reducto",
+      "field": "credential_gate",
+      "rating": "abstained",
+      "agent": "unknown",
+      "gold": "",
+      "gold_status": "not_stated_in_docs",
+      "cause": "gold_unscoreable",
+      "labeler_note": "Quickstart shows account creation and key generation but states no cost, trial, review, or production difference."
+    },
+    {
+      "pass": "pass1",
+      "app": "Reducto",
+      "field": "api_surface",
+      "rating": "abstained",
+      "agent": "unknown",
+      "gold": "REST; SDK",
+      "gold_status": "found",
+      "cause": "abstained_on_scoreable",
+      "labeler_note": "REST from the 'Fastest path' table row and /parse, /extract endpoints. Breadth not stated."
+    },
+    {
+      "pass": "pass1",
+      "app": "Reducto",
+      "field": "official_mcp",
+      "rating": "abstained",
+      "agent": "unknown",
+      "gold": "hosted with actions; `https://mcp.reducto.ai/mcp`",
+      "gold_status": "found",
+      "cause": "abstained_on_scoreable",
+      "labeler_note": "Tools include edit_document (fills forms, modifies PDF/DOCX), upload_file, and extract_data. A local uvx server also exists."
+    },
+    {
+      "pass": "pass1",
+      "app": "Reducto",
+      "field": "composio_toolkit",
+      "rating": "abstained",
+      "agent": "unknown",
+      "gold": "not_listed",
+      "gold_status": "catalog",
+      "cause": "gold_unscoreable",
+      "labeler_note": "Composio catalog snapshot"
+    },
+    {
+      "pass": "pass1",
+      "app": "Reducto",
+      "field": "verdict",
+      "rating": "abstained",
+      "agent": "unknown",
+      "gold": "unknown",
+      "gold_status": "derived",
+      "cause": "gold_unscoreable",
+      "labeler_note": "credential_gate not found in the frozen excerpt"
+    },
+    {
+      "pass": "pass2",
+      "app": "Reducto",
+      "field": "auth",
+      "rating": "abstained",
+      "agent": "unknown",
+      "gold": "api key / PAT",
+      "gold_status": "found",
+      "cause": "abstained_on_scoreable",
+      "labeler_note": "Key is created in Studio and sent via Authorization Bearer in the cURL example (transport). The MCP login flow ends in a saved API key."
+    },
+    {
+      "pass": "pass2",
+      "app": "Reducto",
+      "field": "credential_gate",
+      "rating": "abstained",
+      "agent": "unknown",
+      "gold": "",
+      "gold_status": "not_stated_in_docs",
+      "cause": "gold_unscoreable",
+      "labeler_note": "Quickstart shows account creation and key generation but states no cost, trial, review, or production difference."
+    },
+    {
+      "pass": "pass2",
+      "app": "Reducto",
+      "field": "api_surface",
+      "rating": "abstained",
+      "agent": "unknown",
+      "gold": "REST; SDK",
+      "gold_status": "found",
+      "cause": "abstained_on_scoreable",
+      "labeler_note": "REST from the 'Fastest path' table row and /parse, /extract endpoints. Breadth not stated."
+    },
+    {
+      "pass": "pass2",
+      "app": "Reducto",
+      "field": "official_mcp",
+      "rating": "abstained",
+      "agent": "unknown",
+      "gold": "hosted with actions; `https://mcp.reducto.ai/mcp`",
+      "gold_status": "found",
+      "cause": "abstained_on_scoreable",
+      "labeler_note": "Tools include edit_document (fills forms, modifies PDF/DOCX), upload_file, and extract_data. A local uvx server also exists."
+    },
+    {
+      "pass": "pass2",
+      "app": "Reducto",
+      "field": "composio_toolkit",
+      "rating": "abstained",
+      "agent": "unknown",
+      "gold": "not_listed",
+      "gold_status": "catalog",
+      "cause": "gold_unscoreable",
+      "labeler_note": "Composio catalog snapshot"
+    },
+    {
+      "pass": "pass2",
+      "app": "Reducto",
+      "field": "verdict",
+      "rating": "abstained",
+      "agent": "unknown",
+      "gold": "unknown",
+      "gold_status": "derived",
+      "cause": "gold_unscoreable",
+      "labeler_note": "credential_gate not found in the frozen excerpt"
+    },
+    {
+      "pass": "pass3",
+      "app": "Reducto",
+      "field": "auth",
+      "rating": "partial",
+      "agent": [
+        "REST Studio API key as Bearer token",
+        "Local MCP OAuth device-code login that provisions or reuses an API key"
+      ],
+      "gold": "api key / PAT",
+      "gold_status": "found",
+      "cause": "over_inclusive",
+      "labeler_note": "Key is created in Studio and sent via Authorization Bearer in the cURL example (transport). The MCP login flow ends in a saved API key."
+    },
+    {
+      "pass": "pass3",
+      "app": "Reducto",
+      "field": "credential_gate",
+      "rating": "unresolved",
+      "agent": "self_serve_free",
+      "gold": "",
+      "gold_status": "not_stated_in_docs",
+      "cause": "gold_unscoreable",
+      "labeler_note": "Quickstart shows account creation and key generation but states no cost, trial, review, or production difference."
+    },
+    {
+      "pass": "pass3",
+      "app": "Reducto",
+      "field": "api_surface",
+      "rating": "partial",
+      "agent": "REST; broad documented surface",
+      "gold": "REST; SDK",
+      "gold_status": "found",
+      "cause": "under_inclusive",
+      "labeler_note": "REST from the 'Fastest path' table row and /parse, /extract endpoints. Breadth not stated."
+    },
+    {
+      "pass": "pass3",
+      "app": "Reducto",
+      "field": "verdict",
+      "rating": "unresolved",
+      "agent": "documented_build_candidate",
+      "gold": "unknown",
+      "gold_status": "derived",
+      "cause": "gold_unscoreable",
+      "labeler_note": "credential_gate not found in the frozen excerpt"
+    },
+    {
+      "pass": "pass1",
+      "app": "Discord",
+      "field": "auth",
+      "rating": "abstained",
+      "agent": "unknown",
+      "gold": "api key / PAT; oauth2 user; basic",
+      "gold_status": "found",
+      "cause": "abstained_on_scoreable",
+      "labeler_note": "Bot token mapped to api key / PAT. 'OAuth2 bearer token' mapped to oauth2 user. Basic (client_id:client_secret) is 'Only applicable for OAuth2 API token endpoints'."
+    },
+    {
+      "pass": "pass1",
+      "app": "Discord",
+      "field": "credential_gate",
+      "rating": "abstained",
+      "agent": "unknown",
+      "gold": "",
+      "gold_status": "unresolved",
+      "cause": "gold_unscoreable",
+      "labeler_note": "Excerpt is the marker PAGE_OFF_TOPIC."
+    },
+    {
+      "pass": "pass1",
+      "app": "Discord",
+      "field": "api_surface",
+      "rating": "abstained",
+      "agent": "unknown",
+      "gold": "REST; WebSocket",
+      "gold_status": "found",
+      "cause": "abstained_on_scoreable",
+      "labeler_note": "WebSocket from the heading 'Gateway (WebSocket) API'. Breadth not stated."
+    },
+    {
+      "pass": "pass1",
+      "app": "Discord",
+      "field": "official_mcp",
+      "rating": "abstained",
+      "agent": "unknown",
+      "gold": "read-only/docs",
+      "gold_status": "found",
+      "cause": "abstained_on_scoreable",
+      "labeler_note": "Changelog says the docs work with AI tools via Copy-as-Markdown, an llms.txt file, and an MCP server. The URL is redacted. This is a documentation MCP server, and no API-action MCP server is mentioned."
+    },
+    {
+      "pass": "pass1",
+      "app": "Discord",
+      "field": "verdict",
+      "rating": "abstained",
+      "agent": "unknown",
+      "gold": "unknown",
+      "gold_status": "derived",
+      "cause": "gold_unscoreable",
+      "labeler_note": "credential_gate not found in the frozen excerpt"
+    },
+    {
+      "pass": "pass2",
+      "app": "Discord",
+      "field": "auth",
+      "rating": "abstained",
+      "agent": "unknown",
+      "gold": "api key / PAT; oauth2 user; basic",
+      "gold_status": "found",
+      "cause": "abstained_on_scoreable",
+      "labeler_note": "Bot token mapped to api key / PAT. 'OAuth2 bearer token' mapped to oauth2 user. Basic (client_id:client_secret) is 'Only applicable for OAuth2 API token endpoints'."
+    },
+    {
+      "pass": "pass2",
+      "app": "Discord",
+      "field": "credential_gate",
+      "rating": "abstained",
+      "agent": "unknown",
+      "gold": "",
+      "gold_status": "unresolved",
+      "cause": "gold_unscoreable",
+      "labeler_note": "Excerpt is the marker PAGE_OFF_TOPIC."
+    },
+    {
+      "pass": "pass2",
+      "app": "Discord",
+      "field": "api_surface",
+      "rating": "abstained",
+      "agent": "unknown",
+      "gold": "REST; WebSocket",
+      "gold_status": "found",
+      "cause": "abstained_on_scoreable",
+      "labeler_note": "WebSocket from the heading 'Gateway (WebSocket) API'. Breadth not stated."
+    },
+    {
+      "pass": "pass2",
+      "app": "Discord",
+      "field": "official_mcp",
+      "rating": "abstained",
+      "agent": "unknown",
+      "gold": "read-only/docs",
+      "gold_status": "found",
+      "cause": "abstained_on_scoreable",
+      "labeler_note": "Changelog says the docs work with AI tools via Copy-as-Markdown, an llms.txt file, and an MCP server. The URL is redacted. This is a documentation MCP server, and no API-action MCP server is mentioned."
+    },
+    {
+      "pass": "pass2",
+      "app": "Discord",
+      "field": "verdict",
+      "rating": "abstained",
+      "agent": "unknown",
+      "gold": "unknown",
+      "gold_status": "derived",
+      "cause": "gold_unscoreable",
+      "labeler_note": "credential_gate not found in the frozen excerpt"
+    },
+    {
+      "pass": "pass3",
+      "app": "Discord",
+      "field": "credential_gate",
+      "rating": "unresolved",
+      "agent": "self_serve_free",
+      "gold": "",
+      "gold_status": "unresolved",
+      "cause": "gold_unscoreable",
+      "labeler_note": "Excerpt is the marker PAGE_OFF_TOPIC."
+    },
+    {
+      "pass": "pass3",
+      "app": "Discord",
+      "field": "api_surface",
+      "rating": "partial",
+      "agent": "REST; broad documented surface",
+      "gold": "REST; WebSocket",
+      "gold_status": "found",
+      "cause": "under_inclusive",
+      "labeler_note": "WebSocket from the heading 'Gateway (WebSocket) API'. Breadth not stated."
+    },
+    {
+      "pass": "pass3",
+      "app": "Discord",
+      "field": "verdict",
+      "rating": "unresolved",
+      "agent": "documented_build_candidate",
+      "gold": "unknown",
+      "gold_status": "derived",
+      "cause": "gold_unscoreable",
+      "labeler_note": "credential_gate not found in the frozen excerpt"
+    },
+    {
+      "pass": "pass1",
+      "app": "higgsfield",
+      "field": "auth",
+      "rating": "abstained",
+      "agent": "unknown",
+      "gold": "api key / PAT",
+      "gold_status": "found",
+      "cause": "abstained_on_scoreable",
+      "labeler_note": "Key ID plus secret in a 'Key' scheme header, not Bearer."
+    },
+    {
+      "pass": "pass1",
+      "app": "higgsfield",
+      "field": "credential_gate",
+      "rating": "abstained",
+      "agent": "unknown",
+      "gold": "prototype: paid_plan; production: paid_plan",
+      "gold_status": "found",
+      "cause": "abstained_on_scoreable",
+      "labeler_note": "Prepaid dollar balance, minimum top-up $5, and the page says 'No plan or subscription is involved'. paid_plan is the closest allowed label but is imperfect. Creating a key unlocks 20 concurrent requests."
+    },
+    {
+      "pass": "pass1",
+      "app": "higgsfield",
+      "field": "api_surface",
+      "rating": "unresolved",
+      "agent": [
+        "REST"
+      ],
+      "gold": "",
+      "gold_status": "not_stated_in_docs",
+      "cause": "gold_unscoreable",
+      "labeler_note": "Reference page cites an OpenAPI spec, base URL, and status/cancel operations. It never names the style (REST etc.) or breadth."
+    },
+    {
+      "pass": "pass1",
+      "app": "higgsfield",
+      "field": "official_mcp",
+      "rating": "abstained",
+      "agent": "unknown",
+      "gold": "hosted with actions; `https://mcp.higgsfield.ai/mcp`",
+      "gold_status": "found",
+      "cause": "abstained_on_scoreable",
+      "labeler_note": "Connector URL given. Generation uses plan credits. Unlimited and free generations do not apply through MCP."
+    },
+    {
+      "pass": "pass1",
+      "app": "higgsfield",
+      "field": "verdict",
+      "rating": "abstained",
+      "agent": "unknown",
+      "gold": "unknown",
+      "gold_status": "derived",
+      "cause": "gold_unscoreable",
+      "labeler_note": "api_surface not found in the frozen excerpt"
+    },
+    {
+      "pass": "pass2",
+      "app": "higgsfield",
+      "field": "auth",
+      "rating": "abstained",
+      "agent": "unknown",
+      "gold": "api key / PAT",
+      "gold_status": "found",
+      "cause": "abstained_on_scoreable",
+      "labeler_note": "Key ID plus secret in a 'Key' scheme header, not Bearer."
+    },
+    {
+      "pass": "pass2",
+      "app": "higgsfield",
+      "field": "credential_gate",
+      "rating": "abstained",
+      "agent": "unknown",
+      "gold": "prototype: paid_plan; production: paid_plan",
+      "gold_status": "found",
+      "cause": "abstained_on_scoreable",
+      "labeler_note": "Prepaid dollar balance, minimum top-up $5, and the page says 'No plan or subscription is involved'. paid_plan is the closest allowed label but is imperfect. Creating a key unlocks 20 concurrent requests."
+    },
+    {
+      "pass": "pass2",
+      "app": "higgsfield",
+      "field": "api_surface",
+      "rating": "unresolved",
+      "agent": [
+        "REST"
+      ],
+      "gold": "",
+      "gold_status": "not_stated_in_docs",
+      "cause": "gold_unscoreable",
+      "labeler_note": "Reference page cites an OpenAPI spec, base URL, and status/cancel operations. It never names the style (REST etc.) or breadth."
+    },
+    {
+      "pass": "pass2",
+      "app": "higgsfield",
+      "field": "official_mcp",
+      "rating": "abstained",
+      "agent": "unknown",
+      "gold": "hosted with actions; `https://mcp.higgsfield.ai/mcp`",
+      "gold_status": "found",
+      "cause": "abstained_on_scoreable",
+      "labeler_note": "Connector URL given. Generation uses plan credits. Unlimited and free generations do not apply through MCP."
+    },
+    {
+      "pass": "pass2",
+      "app": "higgsfield",
+      "field": "verdict",
+      "rating": "abstained",
+      "agent": "unknown",
+      "gold": "unknown",
+      "gold_status": "derived",
+      "cause": "gold_unscoreable",
+      "labeler_note": "api_surface not found in the frozen excerpt"
+    },
+    {
+      "pass": "pass3",
+      "app": "higgsfield",
+      "field": "auth",
+      "rating": "partial",
+      "agent": [
+        "REST API key ID and secret in Authorization: Key ID:SECRET header",
+        "MCP OAuth account authorization; no API key"
+      ],
+      "gold": "api key / PAT",
+      "gold_status": "found",
+      "cause": "over_inclusive",
+      "labeler_note": "Key ID plus secret in a 'Key' scheme header, not Bearer."
+    },
+    {
+      "pass": "pass3",
+      "app": "higgsfield",
+      "field": "api_surface",
+      "rating": "unresolved",
+      "agent": "REST; broad documented surface",
+      "gold": "",
+      "gold_status": "not_stated_in_docs",
+      "cause": "gold_unscoreable",
+      "labeler_note": "Reference page cites an OpenAPI spec, base URL, and status/cancel operations. It never names the style (REST etc.) or breadth."
+    },
+    {
+      "pass": "pass3",
+      "app": "higgsfield",
+      "field": "verdict",
+      "rating": "unresolved",
+      "agent": "gated_build_candidate",
+      "gold": "unknown",
+      "gold_status": "derived",
+      "cause": "gold_unscoreable",
+      "labeler_note": "api_surface not found in the frozen excerpt"
+    },
+    {
+      "pass": "pass1",
+      "app": "Salesforce",
+      "field": "auth",
+      "rating": "abstained",
+      "agent": "unknown",
+      "gold": "oauth2 user",
+      "gold_status": "found",
+      "cause": "abstained_on_scoreable",
+      "labeler_note": "Postman setup via an External Client App with a consumer key and secret. The ECA mentions JWT-based tokens, but the label is partly redacted and it is about token format, so JWT-signed is not assigned."
+    },
+    {
+      "pass": "pass1",
+      "app": "Salesforce",
+      "field": "credential_gate",
+      "rating": "abstained",
+      "agent": "unknown",
+      "gold": "",
+      "gold_status": "unresolved",
+      "cause": "gold_unscoreable",
+      "labeler_note": "Page is about creating a Trailhead Playground (a free training Developer Edition org). It does not discuss obtaining API credentials or a production path."
+    },
+    {
+      "pass": "pass1",
+      "app": "Salesforce",
+      "field": "api_surface",
+      "rating": "abstained",
+      "agent": "unknown",
+      "gold": "REST; SOAP; broad",
+      "gold_status": "found",
+      "cause": "abstained_on_scoreable",
+      "labeler_note": "The list continues after SOAP but is redacted, so only REST and SOAP are assigned. Broad from 'a rich set' and '200+ request templates'."
+    },
+    {
+      "pass": "pass1",
+      "app": "Salesforce",
+      "field": "official_mcp",
+      "rating": "abstained",
+      "agent": "unknown",
+      "gold": "hosted with actions",
+      "gold_status": "found",
+      "cause": "abstained_on_scoreable",
+      "labeler_note": "Salesforce-hosted MCP servers. The Headless 360 server is labelled Beta, while Data 360 and Tableau Next servers are not. No server URL is stated."
+    },
+    {
+      "pass": "pass1",
+      "app": "Salesforce",
+      "field": "verdict",
+      "rating": "abstained",
+      "agent": "unknown",
+      "gold": "unknown",
+      "gold_status": "derived",
+      "cause": "gold_unscoreable",
+      "labeler_note": "credential_gate not found in the frozen excerpt"
+    },
+    {
+      "pass": "pass2",
+      "app": "Salesforce",
+      "field": "auth",
+      "rating": "abstained",
+      "agent": "unknown",
+      "gold": "oauth2 user",
+      "gold_status": "found",
+      "cause": "abstained_on_scoreable",
+      "labeler_note": "Postman setup via an External Client App with a consumer key and secret. The ECA mentions JWT-based tokens, but the label is partly redacted and it is about token format, so JWT-signed is not assigned."
+    },
+    {
+      "pass": "pass2",
+      "app": "Salesforce",
+      "field": "credential_gate",
+      "rating": "abstained",
+      "agent": "unknown",
+      "gold": "",
+      "gold_status": "unresolved",
+      "cause": "gold_unscoreable",
+      "labeler_note": "Page is about creating a Trailhead Playground (a free training Developer Edition org). It does not discuss obtaining API credentials or a production path."
+    },
+    {
+      "pass": "pass2",
+      "app": "Salesforce",
+      "field": "api_surface",
+      "rating": "abstained",
+      "agent": "unknown",
+      "gold": "REST; SOAP; broad",
+      "gold_status": "found",
+      "cause": "abstained_on_scoreable",
+      "labeler_note": "The list continues after SOAP but is redacted, so only REST and SOAP are assigned. Broad from 'a rich set' and '200+ request templates'."
+    },
+    {
+      "pass": "pass2",
+      "app": "Salesforce",
+      "field": "official_mcp",
+      "rating": "abstained",
+      "agent": "unknown",
+      "gold": "hosted with actions",
+      "gold_status": "found",
+      "cause": "abstained_on_scoreable",
+      "labeler_note": "Salesforce-hosted MCP servers. The Headless 360 server is labelled Beta, while Data 360 and Tableau Next servers are not. No server URL is stated."
+    },
+    {
+      "pass": "pass2",
+      "app": "Salesforce",
+      "field": "verdict",
+      "rating": "abstained",
+      "agent": "unknown",
+      "gold": "unknown",
+      "gold_status": "derived",
+      "cause": "gold_unscoreable",
+      "labeler_note": "credential_gate not found in the frozen excerpt"
+    },
+    {
+      "pass": "pass3",
+      "app": "Salesforce",
+      "field": "auth",
+      "rating": "partial",
+      "agent": [
+        "OAuth 2.0 authorization code with PKCE; Salesforce access token",
+        "OAuth 2.0 JWT bearer grant for named users; Manage user data via APIs (api) scope"
+      ],
+      "gold": "oauth2 user",
+      "gold_status": "found",
+      "cause": "over_inclusive",
+      "labeler_note": "Postman setup via an External Client App with a consumer key and secret. The ECA mentions JWT-based tokens, but the label is partly redacted and it is about token format, so JWT-signed is not assigned."
+    },
+    {
+      "pass": "pass3",
+      "app": "Salesforce",
+      "field": "credential_gate",
+      "rating": "unresolved",
+      "agent": "self_serve_free",
+      "gold": "",
+      "gold_status": "unresolved",
+      "cause": "gold_unscoreable",
+      "labeler_note": "Page is about creating a Trailhead Playground (a free training Developer Edition org). It does not discuss obtaining API credentials or a production path."
+    },
+    {
+      "pass": "pass3",
+      "app": "Salesforce",
+      "field": "verdict",
+      "rating": "unresolved",
+      "agent": "documented_build_candidate",
+      "gold": "unknown",
+      "gold_status": "derived",
+      "cause": "gold_unscoreable",
+      "labeler_note": "credential_gate not found in the frozen excerpt"
+    },
+    {
+      "pass": "pass1",
+      "app": "Zoho CRM",
+      "field": "credential_gate",
+      "rating": "abstained",
+      "agent": "unknown",
+      "gold": "",
+      "gold_status": "not_stated_in_docs",
+      "cause": "gold_unscoreable",
+      "labeler_note": "API credit and concurrency limits by edition. Mentions a Free Edition and trial editions, but never says what is needed to get API credentials."
+    },
+    {
+      "pass": "pass1",
+      "app": "Zoho CRM",
+      "field": "api_surface",
+      "rating": "abstained",
+      "agent": "unknown",
+      "gold": "REST; SDK",
+      "gold_status": "found",
+      "cause": "abstained_on_scoreable",
+      "labeler_note": "SDK appears only as a navigation item ('Zoho CRM SDKs'). Six API families are listed, but no breadth statement."
+    },
+    {
+      "pass": "pass1",
+      "app": "Zoho CRM",
+      "field": "composio_toolkit",
+      "rating": "abstained",
+      "agent": "unknown",
+      "gold": "listed_alias",
+      "gold_status": "catalog",
+      "cause": "gold_unscoreable",
+      "labeler_note": "Composio catalog snapshot"
+    },
+    {
+      "pass": "pass1",
+      "app": "Zoho CRM",
+      "field": "verdict",
+      "rating": "abstained",
+      "agent": "unknown",
+      "gold": "unknown",
+      "gold_status": "derived",
+      "cause": "gold_unscoreable",
+      "labeler_note": "credential_gate not found in the frozen excerpt"
+    },
+    {
+      "pass": "pass2",
+      "app": "Zoho CRM",
+      "field": "credential_gate",
+      "rating": "abstained",
+      "agent": "unknown",
+      "gold": "",
+      "gold_status": "not_stated_in_docs",
+      "cause": "gold_unscoreable",
+      "labeler_note": "API credit and concurrency limits by edition. Mentions a Free Edition and trial editions, but never says what is needed to get API credentials."
+    },
+    {
+      "pass": "pass2",
+      "app": "Zoho CRM",
+      "field": "api_surface",
+      "rating": "partial",
+      "agent": [
+        "REST",
+        "GraphQL"
+      ],
+      "gold": "REST; SDK",
+      "gold_status": "found",
+      "cause": "under_inclusive",
+      "labeler_note": "SDK appears only as a navigation item ('Zoho CRM SDKs'). Six API families are listed, but no breadth statement."
+    },
+    {
+      "pass": "pass2",
+      "app": "Zoho CRM",
+      "field": "official_mcp",
+      "rating": "abstained",
+      "agent": "unknown",
+      "gold": "hosted with actions",
+      "gold_status": "found",
+      "cause": "abstained_on_scoreable",
+      "labeler_note": "'you don't need to build, host, or maintain any infrastructure' shows it is vendor-hosted. The Data Insights server is read-only, while the Data Operations and Workflow servers write. The text says four servers but describes three. No URL stated."
+    },
+    {
+      "pass": "pass2",
+      "app": "Zoho CRM",
+      "field": "composio_toolkit",
+      "rating": "abstained",
+      "agent": "unknown",
+      "gold": "listed_alias",
+      "gold_status": "catalog",
+      "cause": "gold_unscoreable",
+      "labeler_note": "Composio catalog snapshot"
+    },
+    {
+      "pass": "pass2",
+      "app": "Zoho CRM",
+      "field": "verdict",
+      "rating": "abstained",
+      "agent": "unknown",
+      "gold": "unknown",
+      "gold_status": "derived",
+      "cause": "gold_unscoreable",
+      "labeler_note": "credential_gate not found in the frozen excerpt"
+    },
+    {
+      "pass": "pass3",
+      "app": "Zoho CRM",
+      "field": "credential_gate",
+      "rating": "unresolved",
+      "agent": "self_serve_free",
+      "gold": "",
+      "gold_status": "not_stated_in_docs",
+      "cause": "gold_unscoreable",
+      "labeler_note": "API credit and concurrency limits by edition. Mentions a Free Edition and trial editions, but never says what is needed to get API credentials."
+    },
+    {
+      "pass": "pass3",
+      "app": "Zoho CRM",
+      "field": "api_surface",
+      "rating": "partial",
+      "agent": "REST and GraphQL; broad documented surface, with GraphQL edition restrictions",
+      "gold": "REST; SDK",
+      "gold_status": "found",
+      "cause": "under_inclusive",
+      "labeler_note": "SDK appears only as a navigation item ('Zoho CRM SDKs'). Six API families are listed, but no breadth statement."
+    },
+    {
+      "pass": "pass3",
+      "app": "Zoho CRM",
+      "field": "verdict",
+      "rating": "unresolved",
+      "agent": "documented_build_candidate",
+      "gold": "unknown",
+      "gold_status": "derived",
+      "cause": "gold_unscoreable",
+      "labeler_note": "credential_gate not found in the frozen excerpt"
+    },
+    {
+      "pass": "pass1",
+      "app": "YouTube Transcript",
+      "field": "auth",
+      "rating": "abstained",
+      "agent": "unknown",
+      "gold": "api key / PAT",
+      "gold_status": "found",
+      "cause": "abstained_on_scoreable",
+      "labeler_note": "The credential is the API key from the dashboard, sent as a Bearer token (transport)."
+    },
+    {
+      "pass": "pass1",
+      "app": "YouTube Transcript",
+      "field": "credential_gate",
+      "rating": "abstained",
+      "agent": "unknown",
+      "gold": "prototype: self_serve_free; production: paid_plan",
+      "gold_status": "found",
+      "cause": "abstained_on_scoreable",
+      "labeler_note": "Production: 402 errors with 'no_active_paid_plan' or insufficient credits point to top-up or billing. Internal tension: 100 free credits without a card, yet /youtube/info 'need an active plan'."
+    },
+    {
+      "pass": "pass1",
+      "app": "YouTube Transcript",
+      "field": "api_surface",
+      "rating": "unresolved",
+      "agent": [
+        "REST"
+      ],
+      "gold": "",
+      "gold_status": "not_stated_in_docs",
+      "cause": "gold_unscoreable",
+      "labeler_note": "The excerpt lists 13 HTTP GET endpoints under /api/v2 but never names the style (REST etc.) or says how broad the API is."
+    },
+    {
+      "pass": "pass1",
+      "app": "YouTube Transcript",
+      "field": "verdict",
+      "rating": "abstained",
+      "agent": "unknown",
+      "gold": "unknown",
+      "gold_status": "derived",
+      "cause": "gold_unscoreable",
+      "labeler_note": "api_surface not found in the frozen excerpt"
+    },
+    {
+      "pass": "pass2",
+      "app": "YouTube Transcript",
+      "field": "auth",
+      "rating": "abstained",
+      "agent": "unknown",
+      "gold": "api key / PAT",
+      "gold_status": "found",
+      "cause": "abstained_on_scoreable",
+      "labeler_note": "The credential is the API key from the dashboard, sent as a Bearer token (transport)."
+    },
+    {
+      "pass": "pass2",
+      "app": "YouTube Transcript",
+      "field": "credential_gate",
+      "rating": "abstained",
+      "agent": "unknown",
+      "gold": "prototype: self_serve_free; production: paid_plan",
+      "gold_status": "found",
+      "cause": "abstained_on_scoreable",
+      "labeler_note": "Production: 402 errors with 'no_active_paid_plan' or insufficient credits point to top-up or billing. Internal tension: 100 free credits without a card, yet /youtube/info 'need an active plan'."
+    },
+    {
+      "pass": "pass2",
+      "app": "YouTube Transcript",
+      "field": "api_surface",
+      "rating": "unresolved",
+      "agent": [
+        "REST"
+      ],
+      "gold": "",
+      "gold_status": "not_stated_in_docs",
+      "cause": "gold_unscoreable",
+      "labeler_note": "The excerpt lists 13 HTTP GET endpoints under /api/v2 but never names the style (REST etc.) or says how broad the API is."
+    },
+    {
+      "pass": "pass2",
+      "app": "YouTube Transcript",
+      "field": "verdict",
+      "rating": "abstained",
+      "agent": "unknown",
+      "gold": "unknown",
+      "gold_status": "derived",
+      "cause": "gold_unscoreable",
+      "labeler_note": "api_surface not found in the frozen excerpt"
+    },
+    {
+      "pass": "pass3",
+      "app": "YouTube Transcript",
+      "field": "auth",
+      "rating": "partial",
+      "agent": [
+        "REST API key as Bearer token",
+        "MCP OAuth 2.1 or API key as Bearer token"
+      ],
+      "gold": "api key / PAT",
+      "gold_status": "found",
+      "cause": "over_inclusive",
+      "labeler_note": "The credential is the API key from the dashboard, sent as a Bearer token (transport)."
+    },
+    {
+      "pass": "pass3",
+      "app": "YouTube Transcript",
+      "field": "credential_gate",
+      "rating": "partial",
+      "agent": "self_serve_free",
+      "gold": "prototype: self_serve_free; production: paid_plan",
+      "gold_status": "found",
+      "cause": "under_inclusive",
+      "labeler_note": "Production: 402 errors with 'no_active_paid_plan' or insufficient credits point to top-up or billing. Internal tension: 100 free credits without a card, yet /youtube/info 'need an active plan'."
+    },
+    {
+      "pass": "pass3",
+      "app": "YouTube Transcript",
+      "field": "api_surface",
+      "rating": "unresolved",
+      "agent": "REST; broad documented surface",
+      "gold": "",
+      "gold_status": "not_stated_in_docs",
+      "cause": "gold_unscoreable",
+      "labeler_note": "The excerpt lists 13 HTTP GET endpoints under /api/v2 but never names the style (REST etc.) or says how broad the API is."
+    },
+    {
+      "pass": "pass3",
+      "app": "YouTube Transcript",
+      "field": "verdict",
+      "rating": "unresolved",
+      "agent": "documented_build_candidate",
+      "gold": "unknown",
+      "gold_status": "derived",
+      "cause": "gold_unscoreable",
+      "labeler_note": "api_surface not found in the frozen excerpt"
+    },
+    {
+      "pass": "pass1",
+      "app": "Gladly",
+      "field": "credential_gate",
+      "rating": "abstained",
+      "agent": "unknown",
+      "gold": "",
+      "gold_status": "unresolved",
+      "cause": "gold_unscoreable",
+      "labeler_note": "FETCH_FAILED: HTTP 404."
+    },
+    {
+      "pass": "pass1",
+      "app": "Gladly",
+      "field": "api_surface",
+      "rating": "abstained",
+      "agent": "unknown",
+      "gold": "REST; SDK",
+      "gold_status": "found",
+      "cause": "abstained_on_scoreable",
+      "labeler_note": "SDK from the Web, iOS and Android Chat SDKs. Also lists webhooks, App Platform, Lookup Adaptor. Webhooks are not WebSocket. Breadth not stated."
+    },
+    {
+      "pass": "pass1",
+      "app": "Gladly",
+      "field": "composio_toolkit",
+      "rating": "abstained",
+      "agent": "unknown",
+      "gold": "not_listed",
+      "gold_status": "catalog",
+      "cause": "gold_unscoreable",
+      "labeler_note": "Composio catalog snapshot"
+    },
+    {
+      "pass": "pass1",
+      "app": "Gladly",
+      "field": "verdict",
+      "rating": "abstained",
+      "agent": "unknown",
+      "gold": "unknown",
+      "gold_status": "derived",
+      "cause": "gold_unscoreable",
+      "labeler_note": "credential_gate not found in the frozen excerpt"
+    },
+    {
+      "pass": "pass2",
+      "app": "Gladly",
+      "field": "credential_gate",
+      "rating": "abstained",
+      "agent": "unknown",
+      "gold": "",
+      "gold_status": "unresolved",
+      "cause": "gold_unscoreable",
+      "labeler_note": "FETCH_FAILED: HTTP 404."
+    },
+    {
+      "pass": "pass2",
+      "app": "Gladly",
+      "field": "api_surface",
+      "rating": "partial",
+      "agent": [
+        "REST"
+      ],
+      "gold": "REST; SDK",
+      "gold_status": "found",
+      "cause": "under_inclusive",
+      "labeler_note": "SDK from the Web, iOS and Android Chat SDKs. Also lists webhooks, App Platform, Lookup Adaptor. Webhooks are not WebSocket. Breadth not stated."
+    },
+    {
+      "pass": "pass2",
+      "app": "Gladly",
+      "field": "composio_toolkit",
+      "rating": "abstained",
+      "agent": "unknown",
+      "gold": "not_listed",
+      "gold_status": "catalog",
+      "cause": "gold_unscoreable",
+      "labeler_note": "Composio catalog snapshot"
+    },
+    {
+      "pass": "pass2",
+      "app": "Gladly",
+      "field": "verdict",
+      "rating": "abstained",
+      "agent": "unknown",
+      "gold": "unknown",
+      "gold_status": "derived",
+      "cause": "gold_unscoreable",
+      "labeler_note": "credential_gate not found in the frozen excerpt"
+    },
+    {
+      "pass": "pass3",
+      "app": "Gladly",
+      "field": "credential_gate",
+      "rating": "unresolved",
+      "agent": "admin_approval",
+      "gold": "",
+      "gold_status": "unresolved",
+      "cause": "gold_unscoreable",
+      "labeler_note": "FETCH_FAILED: HTTP 404."
+    },
+    {
+      "pass": "pass3",
+      "app": "Gladly",
+      "field": "api_surface",
+      "rating": "partial",
+      "agent": "REST; moderate documented surface",
+      "gold": "REST; SDK",
+      "gold_status": "found",
+      "cause": "under_inclusive",
+      "labeler_note": "SDK from the Web, iOS and Android Chat SDKs. Also lists webhooks, App Platform, Lookup Adaptor. Webhooks are not WebSocket. Breadth not stated."
+    },
+    {
+      "pass": "pass3",
+      "app": "Gladly",
+      "field": "verdict",
+      "rating": "unresolved",
+      "agent": "gated_build_candidate",
+      "gold": "unknown",
+      "gold_status": "derived",
+      "cause": "gold_unscoreable",
+      "labeler_note": "credential_gate not found in the frozen excerpt"
+    },
+    {
+      "pass": "pass1",
+      "app": "Xero",
+      "field": "credential_gate",
+      "rating": "abstained",
+      "agent": "unknown",
+      "gold": "prototype: self_serve_free; production: paid_plan",
+      "gold_status": "found",
+      "cause": "abstained_on_scoreable",
+      "labeler_note": "Tier table reads 'No charge' for Starter and $35 AUD for Core, in column order. Certification/security assessment prerequisites are named for higher tiers and for journal/XPM/bulk features, but their values are not shown. Prerequisite cells are empty in the excerpt."
+    },
+    {
+      "pass": "pass1",
+      "app": "Xero",
+      "field": "api_surface",
+      "rating": "abstained",
+      "agent": "unknown",
+      "gold": "SDK",
+      "gold_status": "found",
+      "cause": "abstained_on_scoreable",
+      "labeler_note": "Names Accounting, Payroll, Files, Assets APIs, OpenAPI spec, and OAuth 2.0, but the style (REST etc.) and breadth are not stated."
+    },
+    {
+      "pass": "pass1",
+      "app": "Xero",
+      "field": "verdict",
+      "rating": "abstained",
+      "agent": "unknown",
+      "gold": "unknown",
+      "gold_status": "derived",
+      "cause": "gold_unscoreable",
+      "labeler_note": "self-serve access found, but API breadth is not stated"
+    },
+    {
+      "pass": "pass2",
+      "app": "Xero",
+      "field": "credential_gate",
+      "rating": "abstained",
+      "agent": "unknown",
+      "gold": "prototype: self_serve_free; production: paid_plan",
+      "gold_status": "found",
+      "cause": "abstained_on_scoreable",
+      "labeler_note": "Tier table reads 'No charge' for Starter and $35 AUD for Core, in column order. Certification/security assessment prerequisites are named for higher tiers and for journal/XPM/bulk features, but their values are not shown. Prerequisite cells are empty in the excerpt."
+    },
+    {
+      "pass": "pass2",
+      "app": "Xero",
+      "field": "api_surface",
+      "rating": "abstained",
+      "agent": "unknown",
+      "gold": "SDK",
+      "gold_status": "found",
+      "cause": "abstained_on_scoreable",
+      "labeler_note": "Names Accounting, Payroll, Files, Assets APIs, OpenAPI spec, and OAuth 2.0, but the style (REST etc.) and breadth are not stated."
+    },
+    {
+      "pass": "pass2",
+      "app": "Xero",
+      "field": "verdict",
+      "rating": "abstained",
+      "agent": "unknown",
+      "gold": "unknown",
+      "gold_status": "derived",
+      "cause": "gold_unscoreable",
+      "labeler_note": "self-serve access found, but API breadth is not stated"
+    },
+    {
+      "pass": "pass3",
+      "app": "Xero",
+      "field": "credential_gate",
+      "rating": "partial",
+      "agent": "self_serve_free",
+      "gold": "prototype: self_serve_free; production: paid_plan",
+      "gold_status": "found",
+      "cause": "under_inclusive",
+      "labeler_note": "Tier table reads 'No charge' for Starter and $35 AUD for Core, in column order. Certification/security assessment prerequisites are named for higher tiers and for journal/XPM/bulk features, but their values are not shown. Prerequisite cells are empty in the excerpt."
+    },
+    {
+      "pass": "pass3",
+      "app": "Xero",
+      "field": "api_surface",
+      "rating": "partial",
+      "agent": "HTTP API; broad documented surface",
+      "gold": "SDK",
+      "gold_status": "found",
+      "cause": "missing_api_type",
+      "labeler_note": "Names Accounting, Payroll, Files, Assets APIs, OpenAPI spec, and OAuth 2.0, but the style (REST etc.) and breadth are not stated."
+    },
+    {
+      "pass": "pass3",
+      "app": "Xero",
+      "field": "verdict",
+      "rating": "unresolved",
+      "agent": "documented_build_candidate",
+      "gold": "unknown",
+      "gold_status": "derived",
+      "cause": "gold_unscoreable",
+      "labeler_note": "self-serve access found, but API breadth is not stated"
+    },
+    {
+      "pass": "pass1",
+      "app": "Snowflake",
+      "field": "auth",
+      "rating": "partial",
+      "agent": [
+        "OAuth 2.0",
+        "Basic auth",
+        "Bearer token"
+      ],
+      "gold": "JWT-signed; oauth2 user; api key / PAT",
+      "gold_status": "found",
+      "cause": "over_inclusive",
+      "labeler_note": "Key pair generates a JWT. OAuth uses a generated token with --user, but its grant type is not named. PAT is 'Using a programmatic access token (PAT)'. Workload identity federation has no matching label. The intro says 'either of the following' but lists four."
+    },
+    {
+      "pass": "pass1",
+      "app": "Snowflake",
+      "field": "credential_gate",
+      "rating": "abstained",
+      "agent": "unknown",
+      "gold": "prototype: self_serve_trial; production: paid_plan",
+      "gold_status": "found",
+      "cause": "abstained_on_scoreable",
+      "labeler_note": "Trial needs only an email (no payment info). A credit card is needed to upgrade to a paid account. The page is about accounts, not specifically tokens or keys."
+    },
+    {
+      "pass": "pass1",
+      "app": "Snowflake",
+      "field": "verdict",
+      "rating": "abstained",
+      "agent": "unknown",
+      "gold": "unknown",
+      "gold_status": "derived",
+      "cause": "gold_unscoreable",
+      "labeler_note": "self-serve access found, but API breadth is not stated"
+    },
+    {
+      "pass": "pass2",
+      "app": "Snowflake",
+      "field": "auth",
+      "rating": "partial",
+      "agent": [
+        "OAuth 2.0",
+        "Basic authentication",
+        "Bearer token"
+      ],
+      "gold": "JWT-signed; oauth2 user; api key / PAT",
+      "gold_status": "found",
+      "cause": "over_inclusive",
+      "labeler_note": "Key pair generates a JWT. OAuth uses a generated token with --user, but its grant type is not named. PAT is 'Using a programmatic access token (PAT)'. Workload identity federation has no matching label. The intro says 'either of the following' but lists four."
+    },
+    {
+      "pass": "pass2",
+      "app": "Snowflake",
+      "field": "credential_gate",
+      "rating": "abstained",
+      "agent": "unknown",
+      "gold": "prototype: self_serve_trial; production: paid_plan",
+      "gold_status": "found",
+      "cause": "abstained_on_scoreable",
+      "labeler_note": "Trial needs only an email (no payment info). A credit card is needed to upgrade to a paid account. The page is about accounts, not specifically tokens or keys."
+    },
+    {
+      "pass": "pass2",
+      "app": "Snowflake",
+      "field": "verdict",
+      "rating": "abstained",
+      "agent": "unknown",
+      "gold": "unknown",
+      "gold_status": "derived",
+      "cause": "gold_unscoreable",
+      "labeler_note": "self-serve access found, but API breadth is not stated"
+    },
+    {
+      "pass": "pass3",
+      "app": "Snowflake",
+      "field": "credential_gate",
+      "rating": "partial",
+      "agent": "self_serve_trial",
+      "gold": "prototype: self_serve_trial; production: paid_plan",
+      "gold_status": "found",
+      "cause": "under_inclusive",
+      "labeler_note": "Trial needs only an email (no payment info). A credit card is needed to upgrade to a paid account. The page is about accounts, not specifically tokens or keys."
+    },
+    {
+      "pass": "pass3",
+      "app": "Snowflake",
+      "field": "verdict",
+      "rating": "unresolved",
+      "agent": "documented_build_candidate",
+      "gold": "unknown",
+      "gold_status": "derived",
+      "cause": "gold_unscoreable",
+      "labeler_note": "self-serve access found, but API breadth is not stated"
+    },
+    {
+      "pass": "pass1",
+      "app": "Sentry",
+      "field": "credential_gate",
+      "rating": "abstained",
+      "agent": "unknown",
+      "gold": "prototype: self_serve_trial; production: paid_plan",
+      "gold_status": "found",
+      "cause": "abstained_on_scoreable",
+      "labeler_note": "Table: API is No on Developer (free) and Yes on Team and above. The Business plan has a 14-day trial 'with no credit card'. Assumes API row equals API credential access."
+    },
+    {
+      "pass": "pass1",
+      "app": "Sentry",
+      "field": "api_surface",
+      "rating": "abstained",
+      "agent": "unknown",
+      "gold": "",
+      "gold_status": "not_stated_in_docs",
+      "cause": "gold_unscoreable",
+      "labeler_note": "Describes the 'Sentry web API' (v0) and lists about 30 resource sections, but does not name the style (REST etc.) or state breadth."
+    },
+    {
+      "pass": "pass1",
+      "app": "Sentry",
+      "field": "official_mcp",
+      "rating": "abstained",
+      "agent": "unknown",
+      "gold": "hosted with actions; `https://mcp.sentry.dev/mcp`",
+      "gold_status": "found",
+      "cause": "abstained_on_scoreable",
+      "labeler_note": "Blog post, not docs. Tools include creating projects/DSNs and calling Seer. Local STDIO is also supported."
+    },
+    {
+      "pass": "pass1",
+      "app": "Sentry",
+      "field": "verdict",
+      "rating": "abstained",
+      "agent": "unknown",
+      "gold": "unknown",
+      "gold_status": "derived",
+      "cause": "gold_unscoreable",
+      "labeler_note": "api_surface not found in the frozen excerpt"
+    },
+    {
+      "pass": "pass2",
+      "app": "Sentry",
+      "field": "credential_gate",
+      "rating": "abstained",
+      "agent": "unknown",
+      "gold": "prototype: self_serve_trial; production: paid_plan",
+      "gold_status": "found",
+      "cause": "abstained_on_scoreable",
+      "labeler_note": "Table: API is No on Developer (free) and Yes on Team and above. The Business plan has a 14-day trial 'with no credit card'. Assumes API row equals API credential access."
+    },
+    {
+      "pass": "pass2",
+      "app": "Sentry",
+      "field": "api_surface",
+      "rating": "abstained",
+      "agent": "unknown",
+      "gold": "",
+      "gold_status": "not_stated_in_docs",
+      "cause": "gold_unscoreable",
+      "labeler_note": "Describes the 'Sentry web API' (v0) and lists about 30 resource sections, but does not name the style (REST etc.) or state breadth."
+    },
+    {
+      "pass": "pass2",
+      "app": "Sentry",
+      "field": "official_mcp",
+      "rating": "abstained",
+      "agent": "unknown",
+      "gold": "hosted with actions; `https://mcp.sentry.dev/mcp`",
+      "gold_status": "found",
+      "cause": "abstained_on_scoreable",
+      "labeler_note": "Blog post, not docs. Tools include creating projects/DSNs and calling Seer. Local STDIO is also supported."
+    },
+    {
+      "pass": "pass2",
+      "app": "Sentry",
+      "field": "verdict",
+      "rating": "abstained",
+      "agent": "unknown",
+      "gold": "unknown",
+      "gold_status": "derived",
+      "cause": "gold_unscoreable",
+      "labeler_note": "api_surface not found in the frozen excerpt"
+    },
+    {
+      "pass": "pass3",
+      "app": "Sentry",
+      "field": "credential_gate",
+      "rating": "partial",
+      "agent": "self_serve_free",
+      "gold": "prototype: self_serve_trial; production: paid_plan",
+      "gold_status": "found",
+      "cause": "under_inclusive",
+      "labeler_note": "Table: API is No on Developer (free) and Yes on Team and above. The Business plan has a 14-day trial 'with no credit card'. Assumes API row equals API credential access."
+    },
+    {
+      "pass": "pass3",
+      "app": "Sentry",
+      "field": "api_surface",
+      "rating": "unresolved",
+      "agent": "REST; broad documented surface",
+      "gold": "",
+      "gold_status": "not_stated_in_docs",
+      "cause": "gold_unscoreable",
+      "labeler_note": "Describes the 'Sentry web API' (v0) and lists about 30 resource sections, but does not name the style (REST etc.) or state breadth."
+    },
+    {
+      "pass": "pass3",
+      "app": "Sentry",
+      "field": "verdict",
+      "rating": "unresolved",
+      "agent": "documented_build_candidate",
+      "gold": "unknown",
+      "gold_status": "derived",
+      "cause": "gold_unscoreable",
+      "labeler_note": "api_surface not found in the frozen excerpt"
+    },
+    {
+      "pass": "pass1",
+      "app": "Lark (Larksuite)",
+      "field": "auth",
+      "rating": "abstained",
+      "agent": "unknown",
+      "gold": "",
+      "gold_status": "not_stated_in_docs",
+      "cause": "gold_unscoreable",
+      "labeler_note": "Describes app_access_token, tenant_access_token, user_access_token, app_id/app_secret. It never names OAuth, API keys, JWT, etc., so mapping to allowed labels would need outside knowledge."
+    },
+    {
+      "pass": "pass1",
+      "app": "Lark (Larksuite)",
+      "field": "credential_gate",
+      "rating": "abstained",
+      "agent": "unknown",
+      "gold": "prototype: unknown; production: admin_approval, app_review",
+      "gold_status": "found",
+      "cause": "abstained_on_scoreable",
+      "labeler_note": "Custom apps: review-required permissions need tenant admin review, while auto-approval ones take effect immediately. Store apps need Lark platform review plus tenant admin review. Test company or user_access_token debugging skips review, but no cost is stated."
+    },
+    {
+      "pass": "pass1",
+      "app": "Lark (Larksuite)",
+      "field": "api_surface",
+      "rating": "abstained",
+      "agent": "unknown",
+      "gold": "REST; SDK",
+      "gold_status": "found",
+      "cause": "abstained_on_scoreable",
+      "labeler_note": "SDK appears only as a navigation item ('Server SDK'). Breadth not stated."
+    },
+    {
+      "pass": "pass1",
+      "app": "Lark (Larksuite)",
+      "field": "official_mcp",
+      "rating": "abstained",
+      "agent": "unknown",
+      "gold": "local only",
+      "gold_status": "found",
+      "cause": "abstained_on_scoreable",
+      "labeler_note": "Local npx lark-mcp. Tools can create chats and send messages (actions). The navigation lists 'Call Lark MCP server in a remote mode (Deprecated)'. No hosted URL stated."
+    },
+    {
+      "pass": "pass1",
+      "app": "Lark (Larksuite)",
+      "field": "composio_toolkit",
+      "rating": "abstained",
+      "agent": "unknown",
+      "gold": "listed_alias",
+      "gold_status": "catalog",
+      "cause": "gold_unscoreable",
+      "labeler_note": "Composio catalog snapshot"
+    },
+    {
+      "pass": "pass1",
+      "app": "Lark (Larksuite)",
+      "field": "verdict",
+      "rating": "abstained",
+      "agent": "unknown",
+      "gold": "unknown",
+      "gold_status": "derived",
+      "cause": "gold_unscoreable",
+      "labeler_note": "auth not found in the frozen excerpt"
+    },
+    {
+      "pass": "pass2",
+      "app": "Lark (Larksuite)",
+      "field": "auth",
+      "rating": "abstained",
+      "agent": "unknown",
+      "gold": "",
+      "gold_status": "not_stated_in_docs",
+      "cause": "gold_unscoreable",
+      "labeler_note": "Describes app_access_token, tenant_access_token, user_access_token, app_id/app_secret. It never names OAuth, API keys, JWT, etc., so mapping to allowed labels would need outside knowledge."
+    },
+    {
+      "pass": "pass2",
+      "app": "Lark (Larksuite)",
+      "field": "credential_gate",
+      "rating": "abstained",
+      "agent": "unknown",
+      "gold": "prototype: unknown; production: admin_approval, app_review",
+      "gold_status": "found",
+      "cause": "abstained_on_scoreable",
+      "labeler_note": "Custom apps: review-required permissions need tenant admin review, while auto-approval ones take effect immediately. Store apps need Lark platform review plus tenant admin review. Test company or user_access_token debugging skips review, but no cost is stated."
+    },
+    {
+      "pass": "pass2",
+      "app": "Lark (Larksuite)",
+      "field": "api_surface",
+      "rating": "abstained",
+      "agent": "unknown",
+      "gold": "REST; SDK",
+      "gold_status": "found",
+      "cause": "abstained_on_scoreable",
+      "labeler_note": "SDK appears only as a navigation item ('Server SDK'). Breadth not stated."
+    },
+    {
+      "pass": "pass2",
+      "app": "Lark (Larksuite)",
+      "field": "official_mcp",
+      "rating": "abstained",
+      "agent": "unknown",
+      "gold": "local only",
+      "gold_status": "found",
+      "cause": "abstained_on_scoreable",
+      "labeler_note": "Local npx lark-mcp. Tools can create chats and send messages (actions). The navigation lists 'Call Lark MCP server in a remote mode (Deprecated)'. No hosted URL stated."
+    },
+    {
+      "pass": "pass2",
+      "app": "Lark (Larksuite)",
+      "field": "composio_toolkit",
+      "rating": "abstained",
+      "agent": "unknown",
+      "gold": "listed_alias",
+      "gold_status": "catalog",
+      "cause": "gold_unscoreable",
+      "labeler_note": "Composio catalog snapshot"
+    },
+    {
+      "pass": "pass2",
+      "app": "Lark (Larksuite)",
+      "field": "verdict",
+      "rating": "abstained",
+      "agent": "unknown",
+      "gold": "unknown",
+      "gold_status": "derived",
+      "cause": "gold_unscoreable",
+      "labeler_note": "auth not found in the frozen excerpt"
+    },
+    {
+      "pass": "pass3",
+      "app": "Lark (Larksuite)",
+      "field": "auth",
+      "rating": "unresolved",
+      "agent": [
+        "App ID and app secret credentials",
+        "Application access tokens",
+        "Tenant access tokens",
+        "User access tokens"
+      ],
+      "gold": "",
+      "gold_status": "not_stated_in_docs",
+      "cause": "gold_unscoreable",
+      "labeler_note": "Describes app_access_token, tenant_access_token, user_access_token, app_id/app_secret. It never names OAuth, API keys, JWT, etc., so mapping to allowed labels would need outside knowledge."
+    },
+    {
+      "pass": "pass3",
+      "app": "Lark (Larksuite)",
+      "field": "credential_gate",
+      "rating": "partial",
+      "agent": "mixed",
+      "gold": "prototype: unknown; production: admin_approval, app_review",
+      "gold_status": "found",
+      "cause": "unmappable_answer",
+      "labeler_note": "Custom apps: review-required permissions need tenant admin review, while auto-approval ones take effect immediately. Store apps need Lark platform review plus tenant admin review. Test company or user_access_token debugging skips review, but no cost is stated."
+    },
+    {
+      "pass": "pass3",
+      "app": "Lark (Larksuite)",
+      "field": "api_surface",
+      "rating": "partial",
+      "agent": "REST; broad documented surface",
+      "gold": "REST; SDK",
+      "gold_status": "found",
+      "cause": "under_inclusive",
+      "labeler_note": "SDK appears only as a navigation item ('Server SDK'). Breadth not stated."
+    },
+    {
+      "pass": "pass3",
+      "app": "Lark (Larksuite)",
+      "field": "verdict",
+      "rating": "unresolved",
+      "agent": "gated_build_candidate",
+      "gold": "unknown",
+      "gold_status": "derived",
+      "cause": "gold_unscoreable",
+      "labeler_note": "auth not found in the frozen excerpt"
+    }
+  ],
+  "miss_causes": {
+    "api_surface:abstained_on_scoreable": 23,
+    "api_surface:gold_unscoreable": 12,
+    "api_surface:missing_api_type": 1,
+    "api_surface:under_inclusive": 15,
+    "auth:abstained_on_scoreable": 14,
+    "auth:gold_unscoreable": 3,
+    "auth:over_inclusive": 9,
+    "auth:under_inclusive": 8,
+    "composio_toolkit:gold_unscoreable": 8,
+    "credential_gate:abstained_on_scoreable": 13,
+    "credential_gate:gold_unscoreable": 39,
+    "credential_gate:under_inclusive": 4,
+    "credential_gate:unmappable_answer": 2,
+    "official_mcp:abstained_on_scoreable": 16,
+    "official_mcp:gold_unscoreable": 6,
+    "verdict:abstained_on_scoreable": 2,
+    "verdict:gold_unscoreable": 57
+  },
+  "adjudication_queue": [
+    {
+      "pass": "pass1",
+      "app": "HubSpot",
+      "field": "auth",
+      "agent": [
+        "OAuth 2.0"
+      ],
+      "gold": "oauth2 user; oauth2 client credentials; api key / PAT",
+      "rating": "partial",
+      "note": "Relied on headings: OAuth (redirectUrls, isUserLevel true), Service keys (pat-na1- token), Developer API keys (hapikey query param), Client credentials (grant_type=client_credentials). The OAuth section never names its grant type, so oauth2 user is read from redirectUrls/isUserLevel. 'Static auth' is not mapped separately. Bearer is transport only."
+    },
+    {
+      "pass": "pass1",
+      "app": "Zendesk",
+      "field": "auth",
+      "agent": [
+        "API key",
+        "Basic auth"
+      ],
+      "gold": "oauth2 user; api key / PAT; basic",
+      "rating": "partial",
+      "note": "Relied on 'OAuth access token' section, 'API token (deprecated)' section, and the note about migrating off 'basic authentication or API tokens'. OAuth flow type is not named; oauth2 user is the only OAuth label not contradicted. API tokens are sent via Basic header. Excerpt marks API tokens as deprecated."
+    },
+    {
+      "pass": "pass1",
+      "app": "Slack",
+      "field": "auth",
+      "agent": [
+        "OAuth 2.0",
+        "Basic auth"
+      ],
+      "gold": "oauth2 user",
+      "rating": "partial",
+      "note": "Relied on the authorize and oauth.v2.access steps and the v2_user flow for user tokens. No client-credentials flow appears in this (truncated) excerpt."
+    },
+    {
+      "pass": "pass2",
+      "app": "Slack",
+      "field": "auth",
+      "agent": [
+        "OAuth 2.0",
+        "API token",
+        "Basic authentication (OAuth client or endpoint-specific)"
+      ],
+      "gold": "oauth2 user",
+      "rating": "partial",
+      "note": "Relied on the authorize and oauth.v2.access steps and the v2_user flow for user tokens. No client-credentials flow appears in this (truncated) excerpt."
+    },
+    {
+      "pass": "pass1",
+      "app": "Google Ads",
+      "field": "auth",
+      "agent": [
+        "OAuth 2.0"
+      ],
+      "gold": "oauth2 user; JWT-signed",
+      "rating": "partial",
+      "note": "User authentication section (client ID, secret, refresh token) maps to oauth2 user. Service accounts section generates a 'JWT claim set' exchanged for an access token, mapped to JWT-signed. The label before 'service account flow' is redacted."
+    },
+    {
+      "pass": "pass2",
+      "app": "Google Ads",
+      "field": "auth",
+      "agent": [
+        "OAuth 2.0"
+      ],
+      "gold": "oauth2 user; JWT-signed",
+      "rating": "partial",
+      "note": "User authentication section (client ID, secret, refresh token) maps to oauth2 user. Service accounts section generates a 'JWT claim set' exchanged for an access token, mapped to JWT-signed. The label before 'service account flow' is redacted."
+    },
+    {
+      "pass": "pass3",
+      "app": "Google Ads",
+      "field": "auth",
+      "agent": [
+        "OAuth 2.0 user authentication flow; scope https://www.googleapis.com/auth/adwords",
+        "OAuth 2.0 service-account flow; scope https://www.googleapis.com/auth/adwords"
+      ],
+      "gold": "oauth2 user; JWT-signed",
+      "rating": "partial",
+      "note": "User authentication section (client ID, secret, refresh token) maps to oauth2 user. Service accounts section generates a 'JWT claim set' exchanged for an access token, mapped to JWT-signed. The label before 'service account flow' is redacted."
+    },
+    {
+      "pass": "pass3",
+      "app": "Google Ads",
+      "field": "credential_gate",
+      "agent": "mixed",
+      "gold": "prototype: unknown; production: app_review",
+      "rating": "partial",
+      "note": "Enabling the API grants Test access (test accounts only), but no fee is stated, so 'free' is not assigned. Production: Explorer is an application with 'automated review and approval in most cases'. Basic needs brand verification. Standard needs a manual audit (10 business days)."
+    },
+    {
+      "pass": "pass1",
+      "app": "Apify",
+      "field": "api_surface",
+      "agent": [
+        "REST"
+      ],
+      "gold": "REST; SDK",
+      "rating": "partial",
+      "note": "SDK from the Node.js and Python (stable) and other (experimental) apify-client packages. The word REST is partly redacted, but the link target is Wikipedia's REST article and the text says 'HTTP endpoints'. Breadth not stated."
+    },
+    {
+      "pass": "pass2",
+      "app": "Apify",
+      "field": "api_surface",
+      "agent": [
+        "REST"
+      ],
+      "gold": "REST; SDK",
+      "rating": "partial",
+      "note": "SDK from the Node.js and Python (stable) and other (experimental) apify-client packages. The word REST is partly redacted, but the link target is Wikipedia's REST article and the text says 'HTTP endpoints'. Breadth not stated."
+    },
+    {
+      "pass": "pass3",
+      "app": "Apify",
+      "field": "api_surface",
+      "agent": "REST; broad documented surface",
+      "gold": "REST; SDK",
+      "rating": "partial",
+      "note": "SDK from the Node.js and Python (stable) and other (experimental) apify-client packages. The word REST is partly redacted, but the link target is Wikipedia's REST article and the text says 'HTTP endpoints'. Breadth not stated."
+    },
+    {
+      "pass": "pass1",
+      "app": "GitHub",
+      "field": "auth",
+      "agent": [
+        "Basic auth"
+      ],
+      "gold": "api key / PAT; oauth2 user; basic; JWT-signed",
+      "rating": "partial",
+      "note": "PATs; OAuth token from an OAuth app; GitHub App tokens. Basic auth (client ID/secret) only for some app endpoints. A JWT is accepted with Bearer. 'Authentication with username and password is not supported.'"
+    },
+    {
+      "pass": "pass1",
+      "app": "GitHub",
+      "field": "api_surface",
+      "agent": [
+        "REST",
+        "GraphQL"
+      ],
+      "gold": "REST; GraphQL; SDK",
+      "rating": "partial",
+      "note": "SDK from 'official Octokit libraries'. Breadth is not stated."
+    },
+    {
+      "pass": "pass2",
+      "app": "GitHub",
+      "field": "auth",
+      "agent": [
+        "Basic authentication"
+      ],
+      "gold": "api key / PAT; oauth2 user; basic; JWT-signed",
+      "rating": "partial",
+      "note": "PATs; OAuth token from an OAuth app; GitHub App tokens. Basic auth (client ID/secret) only for some app endpoints. A JWT is accepted with Bearer. 'Authentication with username and password is not supported.'"
+    },
+    {
+      "pass": "pass2",
+      "app": "GitHub",
+      "field": "api_surface",
+      "agent": [
+        "REST",
+        "GraphQL"
+      ],
+      "gold": "REST; GraphQL; SDK",
+      "rating": "partial",
+      "note": "SDK from 'official Octokit libraries'. Breadth is not stated."
+    },
+    {
+      "pass": "pass3",
+      "app": "GitHub",
+      "field": "auth",
+      "agent": [
+        "Personal access tokens with fine-grained repository and permission scopes (Bearer or token header)",
+        "GitHub App installation tokens and OAuth app tokens for delegated REST API access",
+        "Endpoint-specific HTTP Basic authentication using a GitHub App or OAuth app client ID and client secret"
+      ],
+      "gold": "api key / PAT; oauth2 user; basic; JWT-signed",
+      "rating": "partial",
+      "note": "PATs; OAuth token from an OAuth app; GitHub App tokens. Basic auth (client ID/secret) only for some app endpoints. A JWT is accepted with Bearer. 'Authentication with username and password is not supported.'"
+    },
+    {
+      "pass": "pass3",
+      "app": "GitHub",
+      "field": "api_surface",
+      "agent": "REST and GraphQL; broad documented surface",
+      "gold": "REST; GraphQL; SDK",
+      "rating": "partial",
+      "note": "SDK from 'official Octokit libraries'. Breadth is not stated."
+    },
+    {
+      "pass": "pass3",
+      "app": "Notion",
+      "field": "api_surface",
+      "agent": "REST; broad documented surface",
+      "gold": "SDK",
+      "rating": "partial",
+      "note": "Excerpt names the JavaScript SDK, curl, and any HTTPS client. It never calls the API REST, and states no breadth."
+    },
+    {
+      "pass": "pass3",
+      "app": "Stripe",
+      "field": "auth",
+      "agent": [
+        "API key (REST HTTP Basic username; test and live modes)",
+        "OAuth 2.0 (Stripe MCP user delegation)",
+        "Agent API key (independent Stripe MCP access)"
+      ],
+      "gold": "api key / PAT",
+      "rating": "partial",
+      "note": "Keys are sent via HTTP Basic auth (key as username) or Bearer. Workload Identity Federation (short-lived tokens) has no matching label. Basic here is only a transport for the key."
+    },
+    {
+      "pass": "pass3",
+      "app": "Stripe",
+      "field": "api_surface",
+      "agent": "REST; broad documented surface",
+      "gold": "REST; SDK",
+      "rating": "partial",
+      "note": "SDK from 'official client libraries'. Breadth not stated."
+    },
+    {
+      "pass": "pass3",
+      "app": "Reducto",
+      "field": "auth",
+      "agent": [
+        "REST Studio API key as Bearer token",
+        "Local MCP OAuth device-code login that provisions or reuses an API key"
+      ],
+      "gold": "api key / PAT",
+      "rating": "partial",
+      "note": "Key is created in Studio and sent via Authorization Bearer in the cURL example (transport). The MCP login flow ends in a saved API key."
+    },
+    {
+      "pass": "pass3",
+      "app": "Reducto",
+      "field": "api_surface",
+      "agent": "REST; broad documented surface",
+      "gold": "REST; SDK",
+      "rating": "partial",
+      "note": "REST from the 'Fastest path' table row and /parse, /extract endpoints. Breadth not stated."
+    },
+    {
+      "pass": "pass3",
+      "app": "Discord",
+      "field": "api_surface",
+      "agent": "REST; broad documented surface",
+      "gold": "REST; WebSocket",
+      "rating": "partial",
+      "note": "WebSocket from the heading 'Gateway (WebSocket) API'. Breadth not stated."
+    },
+    {
+      "pass": "pass3",
+      "app": "higgsfield",
+      "field": "auth",
+      "agent": [
+        "REST API key ID and secret in Authorization: Key ID:SECRET header",
+        "MCP OAuth account authorization; no API key"
+      ],
+      "gold": "api key / PAT",
+      "rating": "partial",
+      "note": "Key ID plus secret in a 'Key' scheme header, not Bearer."
+    },
+    {
+      "pass": "pass3",
+      "app": "Salesforce",
+      "field": "auth",
+      "agent": [
+        "OAuth 2.0 authorization code with PKCE; Salesforce access token",
+        "OAuth 2.0 JWT bearer grant for named users; Manage user data via APIs (api) scope"
+      ],
+      "gold": "oauth2 user",
+      "rating": "partial",
+      "note": "Postman setup via an External Client App with a consumer key and secret. The ECA mentions JWT-based tokens, but the label is partly redacted and it is about token format, so JWT-signed is not assigned."
+    },
+    {
+      "pass": "pass2",
+      "app": "Zoho CRM",
+      "field": "api_surface",
+      "agent": [
+        "REST",
+        "GraphQL"
+      ],
+      "gold": "REST; SDK",
+      "rating": "partial",
+      "note": "SDK appears only as a navigation item ('Zoho CRM SDKs'). Six API families are listed, but no breadth statement."
+    },
+    {
+      "pass": "pass3",
+      "app": "Zoho CRM",
+      "field": "api_surface",
+      "agent": "REST and GraphQL; broad documented surface, with GraphQL edition restrictions",
+      "gold": "REST; SDK",
+      "rating": "partial",
+      "note": "SDK appears only as a navigation item ('Zoho CRM SDKs'). Six API families are listed, but no breadth statement."
+    },
+    {
+      "pass": "pass3",
+      "app": "YouTube Transcript",
+      "field": "auth",
+      "agent": [
+        "REST API key as Bearer token",
+        "MCP OAuth 2.1 or API key as Bearer token"
+      ],
+      "gold": "api key / PAT",
+      "rating": "partial",
+      "note": "The credential is the API key from the dashboard, sent as a Bearer token (transport)."
+    },
+    {
+      "pass": "pass3",
+      "app": "YouTube Transcript",
+      "field": "credential_gate",
+      "agent": "self_serve_free",
+      "gold": "prototype: self_serve_free; production: paid_plan",
+      "rating": "partial",
+      "note": "Production: 402 errors with 'no_active_paid_plan' or insufficient credits point to top-up or billing. Internal tension: 100 free credits without a card, yet /youtube/info 'need an active plan'."
+    },
+    {
+      "pass": "pass2",
+      "app": "Gladly",
+      "field": "api_surface",
+      "agent": [
+        "REST"
+      ],
+      "gold": "REST; SDK",
+      "rating": "partial",
+      "note": "SDK from the Web, iOS and Android Chat SDKs. Also lists webhooks, App Platform, Lookup Adaptor. Webhooks are not WebSocket. Breadth not stated."
+    },
+    {
+      "pass": "pass3",
+      "app": "Gladly",
+      "field": "api_surface",
+      "agent": "REST; moderate documented surface",
+      "gold": "REST; SDK",
+      "rating": "partial",
+      "note": "SDK from the Web, iOS and Android Chat SDKs. Also lists webhooks, App Platform, Lookup Adaptor. Webhooks are not WebSocket. Breadth not stated."
+    },
+    {
+      "pass": "pass3",
+      "app": "Xero",
+      "field": "credential_gate",
+      "agent": "self_serve_free",
+      "gold": "prototype: self_serve_free; production: paid_plan",
+      "rating": "partial",
+      "note": "Tier table reads 'No charge' for Starter and $35 AUD for Core, in column order. Certification/security assessment prerequisites are named for higher tiers and for journal/XPM/bulk features, but their values are not shown. Prerequisite cells are empty in the excerpt."
+    },
+    {
+      "pass": "pass3",
+      "app": "Xero",
+      "field": "api_surface",
+      "agent": "HTTP API; broad documented surface",
+      "gold": "SDK",
+      "rating": "partial",
+      "note": "Names Accounting, Payroll, Files, Assets APIs, OpenAPI spec, and OAuth 2.0, but the style (REST etc.) and breadth are not stated."
+    },
+    {
+      "pass": "pass1",
+      "app": "Snowflake",
+      "field": "auth",
+      "agent": [
+        "OAuth 2.0",
+        "Basic auth",
+        "Bearer token"
+      ],
+      "gold": "JWT-signed; oauth2 user; api key / PAT",
+      "rating": "partial",
+      "note": "Key pair generates a JWT. OAuth uses a generated token with --user, but its grant type is not named. PAT is 'Using a programmatic access token (PAT)'. Workload identity federation has no matching label. The intro says 'either of the following' but lists four."
+    },
+    {
+      "pass": "pass2",
+      "app": "Snowflake",
+      "field": "auth",
+      "agent": [
+        "OAuth 2.0",
+        "Basic authentication",
+        "Bearer token"
+      ],
+      "gold": "JWT-signed; oauth2 user; api key / PAT",
+      "rating": "partial",
+      "note": "Key pair generates a JWT. OAuth uses a generated token with --user, but its grant type is not named. PAT is 'Using a programmatic access token (PAT)'. Workload identity federation has no matching label. The intro says 'either of the following' but lists four."
+    },
+    {
+      "pass": "pass3",
+      "app": "Snowflake",
+      "field": "credential_gate",
+      "agent": "self_serve_trial",
+      "gold": "prototype: self_serve_trial; production: paid_plan",
+      "rating": "partial",
+      "note": "Trial needs only an email (no payment info). A credit card is needed to upgrade to a paid account. The page is about accounts, not specifically tokens or keys."
+    },
+    {
+      "pass": "pass3",
+      "app": "Sentry",
+      "field": "credential_gate",
+      "agent": "self_serve_free",
+      "gold": "prototype: self_serve_trial; production: paid_plan",
+      "rating": "partial",
+      "note": "Table: API is No on Developer (free) and Yes on Team and above. The Business plan has a 14-day trial 'with no credit card'. Assumes API row equals API credential access."
+    },
+    {
+      "pass": "pass3",
+      "app": "Lark (Larksuite)",
+      "field": "credential_gate",
+      "agent": "mixed",
+      "gold": "prototype: unknown; production: admin_approval, app_review",
+      "rating": "partial",
+      "note": "Custom apps: review-required permissions need tenant admin review, while auto-approval ones take effect immediately. Store apps need Lark platform review plus tenant admin review. Test company or user_access_token debugging skips review, but no cost is stated."
+    },
+    {
+      "pass": "pass3",
+      "app": "Lark (Larksuite)",
+      "field": "api_surface",
+      "agent": "REST; broad documented surface",
+      "gold": "REST; SDK",
+      "rating": "partial",
+      "note": "SDK appears only as a navigation item ('Server SDK'). Breadth not stated."
+    }
+  ]
+}

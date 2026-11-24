@@ -2,7 +2,7 @@ const {chromium} = require('playwright');
 const path = require('path');
 const {pathToFileURL} = require('url');
 (async () => {
-  const browser = await chromium.launch({executablePath: 'C:/Program Files/Google/Chrome/Application/chrome.exe', headless: true});
+  const browser = await chromium.launch({executablePath: process.env.PLAYWRIGHT_EXECUTABLE_PATH || undefined, headless: true});
   for (const width of [1440, 390]) {
     const page = await browser.newPage({viewport: {width, height: 850}, acceptDownloads: true});
     const errors = [];
@@ -19,9 +19,9 @@ const {pathToFileURL} = require('url');
     await page.locator('#sort').click();
     if (first === await page.locator('#rows tr').first().innerText()) throw Error('Sort failed');
     const [download] = await Promise.all([page.waitForEvent('download'), page.locator('#json').click()]);
-    if (download.suggestedFilename() !== 'assessed-dataset.json') throw Error('Export failed');
+    if (download.suggestedFilename() !== 'checked-dataset-v4.json') throw Error('Export failed');
     const [csv] = await Promise.all([page.waitForEvent('download'), page.locator('#csv').click()]);
-    if (csv.suggestedFilename() !== 'assessed-dataset.csv') throw Error('CSV export failed');
+    if (csv.suggestedFilename() !== 'checked-dataset-v4.csv') throw Error('CSV export failed');
     await page.locator('#search').focus();
     await page.keyboard.type('Slack');
     if (await page.locator('#rows tr').count() !== 1) throw Error('Keyboard search failed');

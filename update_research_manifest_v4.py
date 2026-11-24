@@ -9,14 +9,20 @@ LOG_FILES = (
     'pass2_review.json', 'pass6_review.json', 'pass7_review.json',
     'security_example_review.json', 'redaction_log.json', 'manual_facts_v3.json',
     'holdout_selection_v4.json', 'independent_review_v4.json', 'source_review_v4.json',
+    'first_pass_review_v4.json', 'composio_sdk_check_v4.json',
+    'replace_rate_limited_sources_v4.py', 'finalize_source_link_followups_v4.py',
 )
 FINAL_FILES = (
     'checked_dataset_v4.json', 'research_summary_v4.json', 'remaining_unknowns_v4.json',
     'validation_report_v4.json', 'source_checks_v4.json', 'link_checks_v4.json',
-    'independent_link_checks_v4.json', 'secret_scan_v4.json', 'index.html',
+    'independent_link_checks_v4.json', 'secret_scan_v4.json', 'gold_ratings_v4.json',
+    'verification.json', 'first_pass_review_v4.json', 'independent_review_v4.json',
+    'README.md', 'REQUIREMENTS.md', 'research_diagnostics.md', 'index.html',
 )
 MUTABLE_FILES = set(FINAL_FILES) | {
     'source_review_v4.json', 'independent_review_v4.json', 'redaction_log.json',
+    'composio_sdk_check_v4.json',
+    'first_pass_review_v4.json',
     'data/pass4/022.json', 'data/pass4_search/062.json',
 }
 MUTABLE_PATTERNS = ('data/checked_research/[0-9][0-9]_*.json', 'data/checked_research/review_*.json')

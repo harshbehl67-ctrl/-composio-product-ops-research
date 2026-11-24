@@ -3517,5 +3517,23 @@
     "source_review_group_g_v4.json",
     "source_review_group_h_v4.json",
     "source_review_group_i_v4.json"
+  ],
+  "link_followups": [
+    {
+      "app": "Sherlock",
+      "field": "official_mcp",
+      "old_url": "https://api.github.com/repos/sherlock-project/sherlock/git/trees/c588d7c8b476df9f9c84912a05d1430fb8cdcdae?recursive=1",
+      "new_url": "https://github.com/sherlock-project/sherlock/tree/c588d7c8b476df9f9c84912a05d1430fb8cdcdae",
+      "reason": "Commit-pinned official GitHub tree replaces the API URL, which now returns rate-limit HTTP 403. The full source archive at this commit was reviewed and contained 67 entries with no MCP or Model Context Protocol path/text hits.",
+      "checked_at": "2026-11-24"
+    },
+    {
+      "app": "Mermaid CLI",
+      "field": "official_mcp",
+      "old_url": "https://api.github.com/repos/mermaid-js/mermaid-cli/git/trees/1423a0d7967d275a9d360ba0617f569550827c8b?recursive=1",
+      "new_url": "https://github.com/mermaid-js/mermaid-cli/tree/1423a0d7967d275a9d360ba0617f569550827c8b",
+      "reason": "Commit-pinned official GitHub tree replaces the API URL, which now returns rate-limit HTTP 403. The full source archive at this commit was reviewed and contained 105 entries with no MCP or Model Context Protocol path/text hits.",
+      "checked_at": "2026-11-24"
+    }
   ]
 }

@@ -1,0 +1,87 @@
+{
+  "completed": true,
+  "transport": "Composio MCP → Firecrawl FIRECRAWL_SCRAPE",
+  "apps": [
+    "Google Ads",
+    "Brex",
+    "Lark (Larksuite)",
+    "Pinterest",
+    "NotebookLM",
+    "Shopify"
+  ],
+  "before": {
+    "Google Ads": {
+      "status": 200,
+      "quote_found": true,
+      "final_url": "https://developers.google.com/google-ads/api/docs/developer-toolkit/mcp-server"
+    },
+    "Brex": {
+      "status": 200,
+      "quote_found": true,
+      "final_url": "https://developer.brex.com/docs/mcp"
+    },
+    "Lark (Larksuite)": {
+      "status": 200,
+      "quote_found": false,
+      "final_url": "https://open.larksuite.com/document/uAjLw4CM/ukTMukTMukTM/mcp_integration/mcp_installation"
+    },
+    "Pinterest": {
+      "status": 200,
+      "quote_found": false,
+      "final_url": "https://developers.pinterest.com/about-pinterest-mcp/"
+    },
+    "NotebookLM": {
+      "status": 200,
+      "quote_found": true,
+      "final_url": "https://developers.google.com/notebook/docs/mcp"
+    },
+    "Shopify": {
+      "status": 200,
+      "quote_found": true,
+      "final_url": "https://shopify.dev/docs/api/ai-toolkit"
+    }
+  },
+  "after": {
+    "Google Ads": {
+      "status": 200,
+      "title": "Google Ads MCP server: Developer integration guide  |  Google Ads API  |  Google for Developers",
+      "content_chars": 38748,
+      "quote_found": true
+    },
+    "Brex": {
+      "status": 200,
+      "title": "Brex MCP",
+      "content_chars": 13831,
+      "quote_found": true
+    },
+    "Lark (Larksuite)": {
+      "status": 200,
+      "title": "Install and use OpenAPI MCP locally - Lark CLI - Documentation - Lark Developer",
+      "content_chars": 23094,
+      "quote_found": false
+    },
+    "Pinterest": {
+      "status": 200,
+      "title": "Pinterest Developers | MCP Server",
+      "content_chars": 3270,
+      "quote_found": true
+    },
+    "NotebookLM": {
+      "status": 200,
+      "title": "Model Context Protocol (MCP)  |  Gemini Notebook API  |  Google for Developers",
+      "content_chars": 14500,
+      "quote_found": true
+    },
+    "Shopify": {
+      "status": 200,
+      "title": "Shopify AI Toolkit",
+      "content_chars": 10889,
+      "quote_found": true
+    }
+  },
+  "summary": {
+    "direct_quote_matches": 4,
+    "firecrawl_quote_matches": 5,
+    "pages": 6
+  }
+}

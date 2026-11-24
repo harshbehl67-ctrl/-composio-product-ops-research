@@ -1,4 +1,14 @@
 node_modules/
 __pycache__/
 *.png
+.local_runs/
 .openai/
+.env
+.env.*
+!.env.example
+composio_session_check.json
+private/
+blind_batches/
+blind_packets.csv
+blind_index.csv
+data/composio_catalog_cache/

@@ -1,0 +1,1640 @@
+{
+  "checked_at": "2026-11-24",
+  "sdk": "composio",
+  "sdk_catalog_count": 1865,
+  "apps_checked": 100,
+  "listed_claims": 80,
+  "listed_confirmed": 80,
+  "listed_mismatch": 0,
+  "not_listed_claims": 20,
+  "not_listed_confirmed": 20,
+  "not_listed_mismatch": 0,
+  "listing_agreement": 100,
+  "listing_agreement_pct": 100.0,
+  "tools_compared": 28,
+  "tools_match": 15,
+  "method": "The SDK lists every toolkit (paginated). For each app the recorded composio_toolkit claim is compared with the SDK: listed_exact/listed_alias should be present under one of the slugs its evidence points at, and not_listed should be absent from all of them. Where the docs page quotes a Tools count, it is compared with the SDK tools_count.",
+  "records": [
+    {
+      "app": "Salesforce",
+      "claim": "listed_exact",
+      "candidates": [
+        "AND",
+        "SALESFORCE"
+      ],
+      "matched_slug": "SALESFORCE",
+      "sdk_present": true,
+      "docs_tools": null,
+      "sdk_tools": 556,
+      "tools_match": null,
+      "sdk_auth_schemes": [
+        "OAUTH2",
+        "S2S_OAUTH2"
+      ],
+      "agree": true
+    },
+    {
+      "app": "HubSpot",
+      "claim": "listed_exact",
+      "candidates": [
+        "AND",
+        "HUBSPOT"
+      ],
+      "matched_slug": "HUBSPOT",
+      "sdk_present": true,
+      "docs_tools": null,
+      "sdk_tools": 354,
+      "tools_match": null,
+      "sdk_auth_schemes": [
+        "OAUTH2",
+        "API_KEY"
+      ],
+      "agree": true
+    },
+    {
+      "app": "Pipedrive",
+      "claim": "listed_exact",
+      "candidates": [
+        "AND",
+        "PIPEDRIVE"
+      ],
+      "matched_slug": "PIPEDRIVE",
+      "sdk_present": true,
+      "docs_tools": null,
+      "sdk_tools": 404,
+      "tools_match": null,
+      "sdk_auth_schemes": [
+        "OAUTH2",
+        "API_KEY"
+      ],
+      "agree": true
+    },
+    {
+      "app": "Attio",
+      "claim": "listed_exact",
+      "candidates": [
+        "AND",
+        "ATTIO"
+      ],
+      "matched_slug": "ATTIO",
+      "sdk_present": true,
+      "docs_tools": null,
+      "sdk_tools": 105,
+      "tools_match": null,
+      "sdk_auth_schemes": [
+        "OAUTH2"
+      ],
+      "agree": true
+    },
+    {
+      "app": "Twenty",
+      "claim": "listed_exact",
+      "candidates": [
+        "AND",
+        "TWENTY"
+      ],
+      "matched_slug": "TWENTY",
+      "sdk_present": true,
+      "docs_tools": null,
+      "sdk_tools": 23,
+      "tools_match": null,
+      "sdk_auth_schemes": [
+        "API_KEY"
+      ],
+      "agree": true
+    },
+    {
+      "app": "Podio",
+      "claim": "listed_exact",
+      "candidates": [
+        "AND",
+        "PODIO"
+      ],
+      "matched_slug": "PODIO",
+      "sdk_present": true,
+      "docs_tools": null,
+      "sdk_tools": 143,
+      "tools_match": null,
+      "sdk_auth_schemes": [
+        "OAUTH2"
+      ],
+      "agree": true
+    },
+    {
+      "app": "Zoho CRM",
+      "claim": "listed_alias",
+      "candidates": [
+        "ZOHO",
+        "ZOHOCRM"
+      ],
+      "matched_slug": "ZOHO",
+      "sdk_present": true,
+      "docs_tools": null,
+      "sdk_tools": 115,
+      "tools_match": null,
+      "sdk_auth_schemes": [
+        "OAUTH2"
+      ],
+      "agree": true
+    },
+    {
+      "app": "Close",
+      "claim": "listed_exact",
+      "candidates": [
+        "AND",
+        "CLOSE"
+      ],
+      "matched_slug": "CLOSE",
+      "sdk_present": true,
+      "docs_tools": null,
+      "sdk_tools": 75,
+      "tools_match": null,
+      "sdk_auth_schemes": [
+        "API_KEY"
+      ],
+      "agree": true
+    },
+    {
+      "app": "Copper",
+      "claim": "listed_exact",
+      "candidates": [
+        "AND",
+        "COPPER"
+      ],
+      "matched_slug": "COPPER",
+      "sdk_present": true,
+      "docs_tools": null,
+      "sdk_tools": 65,
+      "tools_match": null,
+      "sdk_auth_schemes": [
+        "API_KEY"
+      ],
+      "agree": true
+    },
+    {
+      "app": "DealCloud",
+      "claim": "not_listed",
+      "candidates": [
+        "DEALCLOUD"
+      ],
+      "matched_slug": null,
+      "sdk_present": false,
+      "docs_tools": null,
+      "sdk_tools": null,
+      "tools_match": null,
+      "sdk_auth_schemes": null,
+      "agree": true
+    },
+    {
+      "app": "Zendesk",
+      "claim": "listed_exact",
+      "candidates": [
+        "ZENDESK"
+      ],
+      "matched_slug": "ZENDESK",
+      "sdk_present": true,
+      "docs_tools": null,
+      "sdk_tools": 483,
+      "tools_match": null,
+      "sdk_auth_schemes": [
+        "OAUTH2"
+      ],
+      "agree": true
+    },
+    {
+      "app": "Intercom",
+      "claim": "listed_exact",
+      "candidates": [
+        "INTERCOM"
+      ],
+      "matched_slug": "INTERCOM",
+      "sdk_present": true,
+      "docs_tools": null,
+      "sdk_tools": 138,
+      "tools_match": null,
+      "sdk_auth_schemes": [
+        "OAUTH2"
+      ],
+      "agree": true
+    },
+    {
+      "app": "Freshdesk",
+      "claim": "listed_exact",
+      "candidates": [
+        "FRESHDESK"
+      ],
+      "matched_slug": "FRESHDESK",
+      "sdk_present": true,
+      "docs_tools": null,
+      "sdk_tools": 184,
+      "tools_match": null,
+      "sdk_auth_schemes": [
+        "API_KEY"
+      ],
+      "agree": true
+    },
+    {
+      "app": "Front",
+      "claim": "listed_exact",
+      "candidates": [
+        "FRONT"
+      ],
+      "matched_slug": "FRONT",
+      "sdk_present": true,
+      "docs_tools": null,
+      "sdk_tools": 180,
+      "tools_match": null,
+      "sdk_auth_schemes": [
+        "API_KEY",
+        "OAUTH2"
+      ],
+      "agree": true
+    },
+    {
+      "app": "Pylon",
+      "claim": "listed_alias",
+      "candidates": [
+        "PYLON_MCP",
+        "PYLON"
+      ],
+      "matched_slug": "PYLON_MCP",
+      "sdk_present": true,
+      "docs_tools": null,
+      "sdk_tools": 12,
+      "tools_match": null,
+      "sdk_auth_schemes": [
+        "DCR_OAUTH"
+      ],
+      "agree": true
+    },
+    {
+      "app": "LiveAgent",
+      "claim": "not_listed",
+      "candidates": [
+        "LIVEAGENT"
+      ],
+      "matched_slug": null,
+      "sdk_present": false,
+      "docs_tools": null,
+      "sdk_tools": null,
+      "tools_match": null,
+      "sdk_auth_schemes": null,
+      "agree": true
+    },
+    {
+      "app": "Plain",
+      "claim": "listed_exact",
+      "candidates": [
+        "PLAIN"
+      ],
+      "matched_slug": "PLAIN",
+      "sdk_present": true,
+      "docs_tools": null,
+      "sdk_tools": 119,
+      "tools_match": null,
+      "sdk_auth_schemes": [
+        "API_KEY"
+      ],
+      "agree": true
+    },
+    {
+      "app": "Help Scout",
+      "claim": "listed_exact",
+      "candidates": [
+        "HELP_SCOUT",
+        "HELPSCOUT"
+      ],
+      "matched_slug": "HELP_SCOUT",
+      "sdk_present": true,
+      "docs_tools": null,
+      "sdk_tools": 129,
+      "tools_match": null,
+      "sdk_auth_schemes": [
+        "OAUTH2"
+      ],
+      "agree": true
+    },
+    {
+      "app": "Gorgias",
+      "claim": "listed_exact",
+      "candidates": [
+        "GORGIAS"
+      ],
+      "matched_slug": "GORGIAS",
+      "sdk_present": true,
+      "docs_tools": null,
+      "sdk_tools": 51,
+      "tools_match": null,
+      "sdk_auth_schemes": [
+        "API_KEY",
+        "OAUTH2"
+      ],
+      "agree": true
+    },
+    {
+      "app": "Gladly",
+      "claim": "not_listed",
+      "candidates": [
+        "GLADLY"
+      ],
+      "matched_slug": null,
+      "sdk_present": false,
+      "docs_tools": null,
+      "sdk_tools": null,
+      "tools_match": null,
+      "sdk_auth_schemes": null,
+      "agree": true
+    },
+    {
+      "app": "Slack",
+      "claim": "listed_exact",
+      "candidates": [
+        "SLACK"
+      ],
+      "matched_slug": "SLACK",
+      "sdk_present": true,
+      "docs_tools": null,
+      "sdk_tools": 165,
+      "tools_match": null,
+      "sdk_auth_schemes": [
+        "OAUTH2"
+      ],
+      "agree": true
+    },
+    {
+      "app": "Twilio",
+      "claim": "listed_exact",
+      "candidates": [
+        "TWILIO"
+      ],
+      "matched_slug": "TWILIO",
+      "sdk_present": true,
+      "docs_tools": null,
+      "sdk_tools": 452,
+      "tools_match": null,
+      "sdk_auth_schemes": [
+        "API_KEY",
+        "BASIC",
+        "S2S_OAUTH2"
+      ],
+      "agree": true
+    },
+    {
+      "app": "Zoho Cliq",
+      "claim": "listed_exact",
+      "candidates": [
+        "ZOHO_CLIQ",
+        "ZOHOCLIQ"
+      ],
+      "matched_slug": "ZOHO_CLIQ",
+      "sdk_present": true,
+      "docs_tools": null,
+      "sdk_tools": 162,
+      "tools_match": null,
+      "sdk_auth_schemes": [
+        "OAUTH2"
+      ],
+      "agree": true
+    },
+    {
+      "app": "Lark (Larksuite)",
+      "claim": "listed_alias",
+      "candidates": [
+        "LARK",
+        "LARKLARKSUITE"
+      ],
+      "matched_slug": "LARK",
+      "sdk_present": true,
+      "docs_tools": null,
+      "sdk_tools": 451,
+      "tools_match": null,
+      "sdk_auth_schemes": [
+        "OAUTH2"
+      ],
+      "agree": true
+    },
+    {
+      "app": "Pumble",
+      "claim": "listed_exact",
+      "candidates": [
+        "PUMBLE"
+      ],
+      "matched_slug": "PUMBLE",
+      "sdk_present": true,
+      "docs_tools": null,
+      "sdk_tools": 9,
+      "tools_match": null,
+      "sdk_auth_schemes": [
+        "API_KEY"
+      ],
+      "agree": true
+    },
+    {
+      "app": "Discord",
+      "claim": "listed_exact",
+      "candidates": [
+        "DISCORD"
+      ],
+      "matched_slug": "DISCORD",
+      "sdk_present": true,
+      "docs_tools": null,
+      "sdk_tools": 23,
+      "tools_match": null,
+      "sdk_auth_schemes": [
+        "OAUTH2"
+      ],
+      "agree": true
+    },
+    {
+      "app": "Telegram",
+      "claim": "listed_exact",
+      "candidates": [
+        "TELEGRAM"
+      ],
+      "matched_slug": "TELEGRAM",
+      "sdk_present": true,
+      "docs_tools": null,
+      "sdk_tools": 18,
+      "tools_match": null,
+      "sdk_auth_schemes": [
+        "API_KEY"
+      ],
+      "agree": true
+    },
+    {
+      "app": "WhatsApp Business",
+      "claim": "listed_alias",
+      "candidates": [
+        "WHATSAPP",
+        "WHATSAPPBUSINESS"
+      ],
+      "matched_slug": "WHATSAPP",
+      "sdk_present": true,
+      "docs_tools": null,
+      "sdk_tools": 127,
+      "tools_match": null,
+      "sdk_auth_schemes": [
+        "OAUTH2",
+        "API_KEY"
+      ],
+      "agree": true
+    },
+    {
+      "app": "Aircall",
+      "claim": "listed_exact",
+      "candidates": [
+        "AIRCALL"
+      ],
+      "matched_slug": "AIRCALL",
+      "sdk_present": true,
+      "docs_tools": null,
+      "sdk_tools": 48,
+      "tools_match": null,
+      "sdk_auth_schemes": [
+        "OAUTH2",
+        "BASIC"
+      ],
+      "agree": true
+    },
+    {
+      "app": "Vonage",
+      "claim": "not_listed",
+      "candidates": [
+        "VONAGE"
+      ],
+      "matched_slug": null,
+      "sdk_present": false,
+      "docs_tools": null,
+      "sdk_tools": null,
+      "tools_match": null,
+      "sdk_auth_schemes": null,
+      "agree": true
+    },
+    {
+      "app": "Google Ads",
+      "claim": "listed_exact",
+      "candidates": [
+        "GOOGLEADS"
+      ],
+      "matched_slug": "GOOGLEADS",
+      "sdk_present": true,
+      "docs_tools": 78,
+      "sdk_tools": 78,
+      "tools_match": true,
+      "sdk_auth_schemes": [
+        "OAUTH2"
+      ],
+      "agree": true
+    },
+    {
+      "app": "Meta Ads",
+      "claim": "listed_exact",
+      "candidates": [
+        "METAADS"
+      ],
+      "matched_slug": "METAADS",
+      "sdk_present": true,
+      "docs_tools": 101,
+      "sdk_tools": 99,
+      "tools_match": false,
+      "sdk_auth_schemes": [
+        "OAUTH2",
+        "API_KEY"
+      ],
+      "agree": true
+    },
+    {
+      "app": "LinkedIn Ads",
+      "claim": "listed_exact",
+      "candidates": [
+        "LINKEDIN_ADS",
+        "LINKEDINADS"
+      ],
+      "matched_slug": "LINKEDIN_ADS",
+      "sdk_present": true,
+      "docs_tools": 28,
+      "sdk_tools": 28,
+      "tools_match": true,
+      "sdk_auth_schemes": [
+        "OAUTH2"
+      ],
+      "agree": true
+    },
+    {
+      "app": "GoHighLevel",
+      "claim": "listed_alias",
+      "candidates": [
+        "HIGHLEVEL_LOCATION",
+        "GOHIGHLEVEL"
+      ],
+      "matched_slug": "HIGHLEVEL_LOCATION",
+      "sdk_present": true,
+      "docs_tools": 555,
+      "sdk_tools": 554,
+      "tools_match": false,
+      "sdk_auth_schemes": [
+        "OAUTH2",
+        "BEARER_TOKEN"
+      ],
+      "agree": true
+    },
+    {
+      "app": "Mailchimp",
+      "claim": "listed_exact",
+      "candidates": [
+        "MAILCHIMP"
+      ],
+      "matched_slug": "MAILCHIMP",
+      "sdk_present": true,
+      "docs_tools": 278,
+      "sdk_tools": 275,
+      "tools_match": false,
+      "sdk_auth_schemes": [
+        "OAUTH2"
+      ],
+      "agree": true
+    },
+    {
+      "app": "Klaviyo",
+      "claim": "listed_exact",
+      "candidates": [
+        "KLAVIYO"
+      ],
+      "matched_slug": "KLAVIYO",
+      "sdk_present": true,
+      "docs_tools": 233,
+      "sdk_tools": 233,
+      "tools_match": true,
+      "sdk_auth_schemes": [
+        "API_KEY",
+        "OAUTH2"
+      ],
+      "agree": true
+    },
+    {
+      "app": "systeme.io",
+      "claim": "not_listed",
+      "candidates": [
+        "SYSTEMEIO"
+      ],
+      "matched_slug": null,
+      "sdk_present": false,
+      "docs_tools": null,
+      "sdk_tools": null,
+      "tools_match": null,
+      "sdk_auth_schemes": null,
+      "agree": true
+    },
+    {
+      "app": "Pinterest",
+      "claim": "listed_exact",
+      "candidates": [
+        "PINTEREST"
+      ],
+      "matched_slug": "PINTEREST",
+      "sdk_present": true,
+      "docs_tools": 27,
+      "sdk_tools": 27,
+      "tools_match": true,
+      "sdk_auth_schemes": [
+        "OAUTH2"
+      ],
+      "agree": true
+    },
+    {
+      "app": "Threads (Meta)",
+      "claim": "listed_alias",
+      "candidates": [
+        "THREADS",
+        "THREADSMETA"
+      ],
+      "matched_slug": "THREADS",
+      "sdk_present": true,
+      "docs_tools": 24,
+      "sdk_tools": 24,
+      "tools_match": true,
+      "sdk_auth_schemes": [
+        "OAUTH2"
+      ],
+      "agree": true
+    },
+    {
+      "app": "SendGrid",
+      "claim": "listed_exact",
+      "candidates": [
+        "SENDGRID"
+      ],
+      "matched_slug": "SENDGRID",
+      "sdk_present": true,
+      "docs_tools": 364,
+      "sdk_tools": 359,
+      "tools_match": false,
+      "sdk_auth_schemes": [
+        "API_KEY"
+      ],
+      "agree": true
+    },
+    {
+      "app": "Shopify",
+      "claim": "listed_exact",
+      "candidates": [
+        "SHOPIFY"
+      ],
+      "matched_slug": "SHOPIFY",
+      "sdk_present": true,
+      "docs_tools": 478,
+      "sdk_tools": 386,
+      "tools_match": false,
+      "sdk_auth_schemes": [
+        "OAUTH2",
+        "S2S_OAUTH2"
+      ],
+      "agree": true
+    },
+    {
+      "app": "WooCommerce",
+      "claim": "not_listed",
+      "candidates": [
+        "WOOCOMMERCE"
+      ],
+      "matched_slug": null,
+      "sdk_present": false,
+      "docs_tools": null,
+      "sdk_tools": null,
+      "tools_match": null,
+      "sdk_auth_schemes": null,
+      "agree": true
+    },
+    {
+      "app": "BigCommerce",
+      "claim": "listed_exact",
+      "candidates": [
+        "BIGCOMMERCE"
+      ],
+      "matched_slug": "BIGCOMMERCE",
+      "sdk_present": true,
+      "docs_tools": 532,
+      "sdk_tools": 532,
+      "tools_match": true,
+      "sdk_auth_schemes": [
+        "API_KEY",
+        "OAUTH2"
+      ],
+      "agree": true
+    },
+    {
+      "app": "Salesforce Commerce Cloud",
+      "claim": "not_listed",
+      "candidates": [
+        "SALESFORCECOMMERCECLOUD"
+      ],
+      "matched_slug": null,
+      "sdk_present": false,
+      "docs_tools": null,
+      "sdk_tools": null,
+      "tools_match": null,
+      "sdk_auth_schemes": null,
+      "agree": true
+    },
+    {
+      "app": "Magento (Adobe Commerce)",
+      "claim": "not_listed",
+      "candidates": [
+        "MAGENTOADOBECOMMERCE"
+      ],
+      "matched_slug": null,
+      "sdk_present": false,
+      "docs_tools": null,
+      "sdk_tools": null,
+      "tools_match": null,
+      "sdk_auth_schemes": null,
+      "agree": true
+    },
+    {
+      "app": "Squarespace",
+      "claim": "not_listed",
+      "candidates": [
+        "SQUARESPACE"
+      ],
+      "matched_slug": null,
+      "sdk_present": false,
+      "docs_tools": null,
+      "sdk_tools": null,
+      "tools_match": null,
+      "sdk_auth_schemes": null,
+      "agree": true
+    },
+    {
+      "app": "Ecwid",
+      "claim": "not_listed",
+      "candidates": [
+        "ECWID"
+      ],
+      "matched_slug": null,
+      "sdk_present": false,
+      "docs_tools": null,
+      "sdk_tools": null,
+      "tools_match": null,
+      "sdk_auth_schemes": null,
+      "agree": true
+    },
+    {
+      "app": "Gumroad",
+      "claim": "listed_exact",
+      "candidates": [
+        "GUMROAD"
+      ],
+      "matched_slug": "GUMROAD",
+      "sdk_present": true,
+      "docs_tools": null,
+      "sdk_tools": 13,
+      "tools_match": null,
+      "sdk_auth_schemes": [
+        "OAUTH2"
+      ],
+      "agree": true
+    },
+    {
+      "app": "Amazon Selling Partner",
+      "claim": "not_listed",
+      "candidates": [
+        "AMAZONSELLINGPARTNER"
+      ],
+      "matched_slug": null,
+      "sdk_present": false,
+      "docs_tools": null,
+      "sdk_tools": null,
+      "tools_match": null,
+      "sdk_auth_schemes": null,
+      "agree": true
+    },
+    {
+      "app": "fanbasis",
+      "claim": "not_listed",
+      "candidates": [
+        "FANBASIS"
+      ],
+      "matched_slug": null,
+      "sdk_present": false,
+      "docs_tools": null,
+      "sdk_tools": null,
+      "tools_match": null,
+      "sdk_auth_schemes": null,
+      "agree": true
+    },
+    {
+      "app": "DataForSEO",
+      "claim": "listed_exact",
+      "candidates": [
+        "DATAFORSEO"
+      ],
+      "matched_slug": "DATAFORSEO",
+      "sdk_present": true,
+      "docs_tools": 354,
+      "sdk_tools": 354,
+      "tools_match": true,
+      "sdk_auth_schemes": [
+        "BASIC"
+      ],
+      "agree": true
+    },
+    {
+      "app": "SE Ranking",
+      "claim": "not_listed",
+      "candidates": [
+        "VARIANTS",
+        "SERANKING"
+      ],
+      "matched_slug": null,
+      "sdk_present": false,
+      "docs_tools": null,
+      "sdk_tools": null,
+      "tools_match": null,
+      "sdk_auth_schemes": null,
+      "agree": true
+    },
+    {
+      "app": "Ahrefs",
+      "claim": "listed_exact",
+      "candidates": [
+        "AHREFS"
+      ],
+      "matched_slug": "AHREFS",
+      "sdk_present": true,
+      "docs_tools": 46,
+      "sdk_tools": 46,
+      "tools_match": true,
+      "sdk_auth_schemes": [
+        "API_KEY",
+        "OAUTH2"
+      ],
+      "agree": true
+    },
+    {
+      "app": "MrScraper",
+      "claim": "listed_exact",
+      "candidates": [
+        "MRSCRAPER"
+      ],
+      "matched_slug": "MRSCRAPER",
+      "sdk_present": true,
+      "docs_tools": 11,
+      "sdk_tools": 11,
+      "tools_match": true,
+      "sdk_auth_schemes": [
+        "API_KEY"
+      ],
+      "agree": true
+    },
+    {
+      "app": "Apify",
+      "claim": "listed_exact",
+      "candidates": [
+        "APIFY"
+      ],
+      "matched_slug": "APIFY",
+      "sdk_present": true,
+      "docs_tools": 185,
+      "sdk_tools": 184,
+      "tools_match": false,
+      "sdk_auth_schemes": [
+        "API_KEY"
+      ],
+      "agree": true
+    },
+    {
+      "app": "Firecrawl",
+      "claim": "listed_exact",
+      "candidates": [
+        "FIRECRAWL"
+      ],
+      "matched_slug": "FIRECRAWL",
+      "sdk_present": true,
+      "docs_tools": 246,
+      "sdk_tools": 245,
+      "tools_match": false,
+      "sdk_auth_schemes": [
+        "API_KEY"
+      ],
+      "agree": true
+    },
+    {
+      "app": "Bright Data",
+      "claim": "listed_exact",
+      "candidates": [
+        "BRIGHTDATA"
+      ],
+      "matched_slug": "BRIGHTDATA",
+      "sdk_present": true,
+      "docs_tools": 167,
+      "sdk_tools": 167,
+      "tools_match": true,
+      "sdk_auth_schemes": [
+        "API_KEY"
+      ],
+      "agree": true
+    },
+    {
+      "app": "Sherlock",
+      "claim": "not_listed",
+      "candidates": [
+        "SHERLOCK"
+      ],
+      "matched_slug": null,
+      "sdk_present": false,
+      "docs_tools": null,
+      "sdk_tools": null,
+      "tools_match": null,
+      "sdk_auth_schemes": null,
+      "agree": true
+    },
+    {
+      "app": "Waterfall.io",
+      "claim": "not_listed",
+      "candidates": [
+        "VARIANTS",
+        "WATERFALLIO"
+      ],
+      "matched_slug": null,
+      "sdk_present": false,
+      "docs_tools": null,
+      "sdk_tools": null,
+      "tools_match": null,
+      "sdk_auth_schemes": null,
+      "agree": true
+    },
+    {
+      "app": "Clay",
+      "claim": "listed_exact",
+      "candidates": [
+        "CLAY"
+      ],
+      "matched_slug": "CLAY",
+      "sdk_present": true,
+      "docs_tools": 15,
+      "sdk_tools": 15,
+      "tools_match": true,
+      "sdk_auth_schemes": [
+        "API_KEY"
+      ],
+      "agree": true
+    },
+    {
+      "app": "GitHub",
+      "claim": "listed_exact",
+      "candidates": [
+        "GITHUB"
+      ],
+      "matched_slug": "GITHUB",
+      "sdk_present": true,
+      "docs_tools": 905,
+      "sdk_tools": 883,
+      "tools_match": false,
+      "sdk_auth_schemes": [
+        "OAUTH2"
+      ],
+      "agree": true
+    },
+    {
+      "app": "Vercel",
+      "claim": "listed_exact",
+      "candidates": [
+        "VERCEL"
+      ],
+      "matched_slug": "VERCEL",
+      "sdk_present": true,
+      "docs_tools": 414,
+      "sdk_tools": 399,
+      "tools_match": false,
+      "sdk_auth_schemes": [
+        "OAUTH2",
+        "API_KEY"
+      ],
+      "agree": true
+    },
+    {
+      "app": "Netlify",
+      "claim": "listed_alias",
+      "candidates": [
+        "NETLIFY_MCP",
+        "NETLIFY"
+      ],
+      "matched_slug": "NETLIFY_MCP",
+      "sdk_present": true,
+      "docs_tools": 9,
+      "sdk_tools": 9,
+      "tools_match": true,
+      "sdk_auth_schemes": [
+        "DCR_OAUTH"
+      ],
+      "agree": true
+    },
+    {
+      "app": "Cloudflare",
+      "claim": "listed_exact",
+      "candidates": [
+        "CLOUDFLARE",
+        "AND"
+      ],
+      "matched_slug": "CLOUDFLARE",
+      "sdk_present": true,
+      "docs_tools": 171,
+      "sdk_tools": 171,
+      "tools_match": true,
+      "sdk_auth_schemes": [
+        "API_KEY"
+      ],
+      "agree": true
+    },
+    {
+      "app": "Supabase",
+      "claim": "listed_exact",
+      "candidates": [
+        "SUPABASE"
+      ],
+      "matched_slug": "SUPABASE",
+      "sdk_present": true,
+      "docs_tools": 235,
+      "sdk_tools": 230,
+      "tools_match": false,
+      "sdk_auth_schemes": [
+        "OAUTH2",
+        "API_KEY"
+      ],
+      "agree": true
+    },
+    {
+      "app": "Neo4j",
+      "claim": "listed_exact",
+      "candidates": [
+        "NEO4J"
+      ],
+      "matched_slug": "NEO4J",
+      "sdk_present": true,
+      "docs_tools": 21,
+      "sdk_tools": 21,
+      "tools_match": true,
+      "sdk_auth_schemes": [
+        "OAUTH2",
+        "BASIC",
+        "API_KEY",
+        "S2S_OAUTH2"
+      ],
+      "agree": true
+    },
+    {
+      "app": "Snowflake",
+      "claim": "listed_exact",
+      "candidates": [
+        "SNOWFLAKE",
+        "AND"
+      ],
+      "matched_slug": "SNOWFLAKE",
+      "sdk_present": true,
+      "docs_tools": 17,
+      "sdk_tools": 16,
+      "tools_match": false,
+      "sdk_auth_schemes": [
+        "OAUTH2"
+      ],
+      "agree": true
+    },
+    {
+      "app": "MongoDB Atlas",
+      "claim": "listed_alias",
+      "candidates": [
+        "MONGODB",
+        "MONGODBATLAS"
+      ],
+      "matched_slug": "MONGODB",
+      "sdk_present": true,
+      "docs_tools": 496,
+      "sdk_tools": 496,
+      "tools_match": true,
+      "sdk_auth_schemes": [
+        "S2S_OAUTH2"
+      ],
+      "agree": true
+    },
+    {
+      "app": "Datadog",
+      "claim": "listed_exact",
+      "candidates": [
+        "DATADOG"
+      ],
+      "matched_slug": "DATADOG",
+      "sdk_present": true,
+      "docs_tools": 256,
+      "sdk_tools": 255,
+      "tools_match": false,
+      "sdk_auth_schemes": [
+        "OAUTH2",
+        "API_KEY",
+        "BEARER_TOKEN"
+      ],
+      "agree": true
+    },
+    {
+      "app": "Sentry",
+      "claim": "listed_exact",
+      "candidates": [
+        "SENTRY"
+      ],
+      "matched_slug": "SENTRY",
+      "sdk_present": true,
+      "docs_tools": 212,
+      "sdk_tools": 210,
+      "tools_match": false,
+      "sdk_auth_schemes": [
+        "OAUTH2"
+      ],
+      "agree": true
+    },
+    {
+      "app": "Notion",
+      "claim": "listed_exact",
+      "candidates": [
+        "NOTION"
+      ],
+      "matched_slug": "NOTION",
+      "sdk_present": true,
+      "docs_tools": null,
+      "sdk_tools": 59,
+      "tools_match": null,
+      "sdk_auth_schemes": [
+        "OAUTH2",
+        "API_KEY"
+      ],
+      "agree": true
+    },
+    {
+      "app": "Airtable",
+      "claim": "listed_exact",
+      "candidates": [
+        "AIRTABLE"
+      ],
+      "matched_slug": "AIRTABLE",
+      "sdk_present": true,
+      "docs_tools": null,
+      "sdk_tools": 26,
+      "tools_match": null,
+      "sdk_auth_schemes": [
+        "OAUTH2",
+        "API_KEY"
+      ],
+      "agree": true
+    },
+    {
+      "app": "Linear",
+      "claim": "listed_exact",
+      "candidates": [
+        "LINEAR"
+      ],
+      "matched_slug": "LINEAR",
+      "sdk_present": true,
+      "docs_tools": null,
+      "sdk_tools": 47,
+      "tools_match": null,
+      "sdk_auth_schemes": [
+        "OAUTH2",
+        "API_KEY"
+      ],
+      "agree": true
+    },
+    {
+      "app": "Jira",
+      "claim": "listed_exact",
+      "candidates": [
+        "JIRA"
+      ],
+      "matched_slug": "JIRA",
+      "sdk_present": true,
+      "docs_tools": null,
+      "sdk_tools": 166,
+      "tools_match": null,
+      "sdk_auth_schemes": [
+        "OAUTH2",
+        "S2S_OAUTH2",
+        "API_KEY"
+      ],
+      "agree": true
+    },
+    {
+      "app": "Asana",
+      "claim": "listed_exact",
+      "candidates": [
+        "ASANA"
+      ],
+      "matched_slug": "ASANA",
+      "sdk_present": true,
+      "docs_tools": null,
+      "sdk_tools": 247,
+      "tools_match": null,
+      "sdk_auth_schemes": [
+        "OAUTH2"
+      ],
+      "agree": true
+    },
+    {
+      "app": "Monday.com",
+      "claim": "listed_alias",
+      "candidates": [
+        "MONDAY",
+        "IS",
+        "MONDAYCOM"
+      ],
+      "matched_slug": "MONDAY",
+      "sdk_present": true,
+      "docs_tools": null,
+      "sdk_tools": 122,
+      "tools_match": null,
+      "sdk_auth_schemes": [
+        "OAUTH2"
+      ],
+      "agree": true
+    },
+    {
+      "app": "ClickUp",
+      "claim": "listed_exact",
+      "candidates": [
+        "CLICKUP"
+      ],
+      "matched_slug": "CLICKUP",
+      "sdk_present": true,
+      "docs_tools": null,
+      "sdk_tools": 163,
+      "tools_match": null,
+      "sdk_auth_schemes": [
+        "OAUTH2",
+        "API_KEY"
+      ],
+      "agree": true
+    },
+    {
+      "app": "Coda",
+      "claim": "listed_exact",
+      "candidates": [
+        "CODA"
+      ],
+      "matched_slug": "CODA",
+      "sdk_present": true,
+      "docs_tools": null,
+      "sdk_tools": 109,
+      "tools_match": null,
+      "sdk_auth_schemes": [
+        "API_KEY"
+      ],
+      "agree": true
+    },
+    {
+      "app": "Smartsheet",
+      "claim": "listed_exact",
+      "candidates": [
+        "SMARTSHEET"
+      ],
+      "matched_slug": "SMARTSHEET",
+      "sdk_present": true,
+      "docs_tools": null,
+      "sdk_tools": 180,
+      "tools_match": null,
+      "sdk_auth_schemes": [
+        "OAUTH2",
+        "BEARER_TOKEN"
+      ],
+      "agree": true
+    },
+    {
+      "app": "Harvest",
+      "claim": "listed_exact",
+      "candidates": [
+        "HARVEST"
+      ],
+      "matched_slug": "HARVEST",
+      "sdk_present": true,
+      "docs_tools": null,
+      "sdk_tools": 60,
+      "tools_match": null,
+      "sdk_auth_schemes": [
+        "OAUTH2"
+      ],
+      "agree": true
+    },
+    {
+      "app": "Stripe",
+      "claim": "listed_exact",
+      "candidates": [
+        "STRIPE"
+      ],
+      "matched_slug": "STRIPE",
+      "sdk_present": true,
+      "docs_tools": null,
+      "sdk_tools": 428,
+      "tools_match": null,
+      "sdk_auth_schemes": [
+        "API_KEY",
+        "OAUTH2"
+      ],
+      "agree": true
+    },
+    {
+      "app": "Plaid",
+      "claim": "listed_exact",
+      "candidates": [
+        "PLAID"
+      ],
+      "matched_slug": "PLAID",
+      "sdk_present": true,
+      "docs_tools": null,
+      "sdk_tools": 70,
+      "tools_match": null,
+      "sdk_auth_schemes": [
+        "API_KEY"
+      ],
+      "agree": true
+    },
+    {
+      "app": "Binance",
+      "claim": "not_listed",
+      "candidates": [
+        "BINANCE"
+      ],
+      "matched_slug": null,
+      "sdk_present": false,
+      "docs_tools": null,
+      "sdk_tools": null,
+      "tools_match": null,
+      "sdk_auth_schemes": null,
+      "agree": true
+    },
+    {
+      "app": "Paygent Connect",
+      "claim": "not_listed",
+      "candidates": [
+        "PAYGENTCONNECT"
+      ],
+      "matched_slug": null,
+      "sdk_present": false,
+      "docs_tools": null,
+      "sdk_tools": null,
+      "tools_match": null,
+      "sdk_auth_schemes": null,
+      "agree": true
+    },
+    {
+      "app": "iPayX",
+      "claim": "not_listed",
+      "candidates": [
+        "IPAYX"
+      ],
+      "matched_slug": null,
+      "sdk_present": false,
+      "docs_tools": null,
+      "sdk_tools": null,
+      "tools_match": null,
+      "sdk_auth_schemes": null,
+      "agree": true
+    },
+    {
+      "app": "QuickBooks",
+      "claim": "listed_exact",
+      "candidates": [
+        "QUICKBOOKS"
+      ],
+      "matched_slug": "QUICKBOOKS",
+      "sdk_present": true,
+      "docs_tools": null,
+      "sdk_tools": 119,
+      "tools_match": null,
+      "sdk_auth_schemes": [
+        "OAUTH2"
+      ],
+      "agree": true
+    },
+    {
+      "app": "Xero",
+      "claim": "listed_exact",
+      "candidates": [
+        "XERO"
+      ],
+      "matched_slug": "XERO",
+      "sdk_present": true,
+      "docs_tools": null,
+      "sdk_tools": 109,
+      "tools_match": null,
+      "sdk_auth_schemes": [
+        "OAUTH2"
+      ],
+      "agree": true
+    },
+    {
+      "app": "Brex",
+      "claim": "listed_exact",
+      "candidates": [
+        "BREX"
+      ],
+      "matched_slug": "BREX",
+      "sdk_present": true,
+      "docs_tools": null,
+      "sdk_tools": 84,
+      "tools_match": null,
+      "sdk_auth_schemes": [
+        "OAUTH2",
+        "API_KEY"
+      ],
+      "agree": true
+    },
+    {
+      "app": "Ramp",
+      "claim": "listed_exact",
+      "candidates": [
+        "RAMP"
+      ],
+      "matched_slug": "RAMP",
+      "sdk_present": true,
+      "docs_tools": null,
+      "sdk_tools": 186,
+      "tools_match": null,
+      "sdk_auth_schemes": [
+        "OAUTH2"
+      ],
+      "agree": true
+    },
+    {
+      "app": "PitchBook",
+      "claim": "listed_exact",
+      "candidates": [
+        "PITCHBOOK"
+      ],
+      "matched_slug": "PITCHBOOK",
+      "sdk_present": true,
+      "docs_tools": null,
+      "sdk_tools": 130,
+      "tools_match": null,
+      "sdk_auth_schemes": [
+        "API_KEY"
+      ],
+      "agree": true
+    },
+    {
+      "app": "NotebookLM",
+      "claim": "listed_exact",
+      "candidates": [
+        "NOTEBOOK_LM",
+        "NOTEBOOKLM"
+      ],
+      "matched_slug": "NOTEBOOK_LM",
+      "sdk_present": true,
+      "docs_tools": null,
+      "sdk_tools": 11,
+      "tools_match": null,
+      "sdk_auth_schemes": [
+        "OAUTH2"
+      ],
+      "agree": true
+    },
+    {
+      "app": "Otter AI",
+      "claim": "listed_alias",
+      "candidates": [
+        "OTTER_AI_MCP",
+        "OTTERAI"
+      ],
+      "matched_slug": "OTTER_AI_MCP",
+      "sdk_present": true,
+      "docs_tools": null,
+      "sdk_tools": 3,
+      "tools_match": null,
+      "sdk_auth_schemes": [
+        "DCR_OAUTH"
+      ],
+      "agree": true
+    },
+    {
+      "app": "Fathom",
+      "claim": "listed_exact",
+      "candidates": [
+        "FATHOM"
+      ],
+      "matched_slug": "FATHOM",
+      "sdk_present": true,
+      "docs_tools": null,
+      "sdk_tools": 10,
+      "tools_match": null,
+      "sdk_auth_schemes": [
+        "OAUTH2",
+        "API_KEY"
+      ],
+      "agree": true
+    },
+    {
+      "app": "Consensus",
+      "claim": "listed_exact",
+      "candidates": [
+        "CONSENSUS"
+      ],
+      "matched_slug": "CONSENSUS",
+      "sdk_present": true,
+      "docs_tools": null,
+      "sdk_tools": 1,
+      "tools_match": null,
+      "sdk_auth_schemes": [
+        "API_KEY"
+      ],
+      "agree": true
+    },
+    {
+      "app": "Reducto",
+      "claim": "not_listed",
+      "candidates": [
+        "REDUCTO"
+      ],
+      "matched_slug": null,
+      "sdk_present": false,
+      "docs_tools": null,
+      "sdk_tools": null,
+      "tools_match": null,
+      "sdk_auth_schemes": null,
+      "agree": true
+    },
+    {
+      "app": "Devin",
+      "claim": "listed_alias",
+      "candidates": [
+        "DEVIN_MCP",
+        "DEVIN"
+      ],
+      "matched_slug": "DEVIN_MCP",
+      "sdk_present": true,
+      "docs_tools": null,
+      "sdk_tools": 23,
+      "tools_match": null,
+      "sdk_auth_schemes": [
+        "API_KEY"
+      ],
+      "agree": true
+    },
+    {
+      "app": "higgsfield",
+      "claim": "listed_exact",
+      "candidates": [
+        "HIGGSFIELD"
+      ],
+      "matched_slug": "HIGGSFIELD",
+      "sdk_present": true,
+      "docs_tools": null,
+      "sdk_tools": 13,
+      "tools_match": null,
+      "sdk_auth_schemes": [
+        "API_KEY"
+      ],
+      "agree": true
+    },
+    {
+      "app": "Mermaid CLI",
+      "claim": "not_listed",
+      "candidates": [
+        "MERMAIDCLI"
+      ],
+      "matched_slug": null,
+      "sdk_present": false,
+      "docs_tools": null,
+      "sdk_tools": null,
+      "tools_match": null,
+      "sdk_auth_schemes": null,
+      "agree": true
+    },
+    {
+      "app": "YouTube Transcript",
+      "claim": "listed_exact",
+      "candidates": [
+        "YOUTUBE_TRANSCRIPT",
+        "YOUTUBETRANSCRIPT"
+      ],
+      "matched_slug": "YOUTUBE_TRANSCRIPT",
+      "sdk_present": true,
+      "docs_tools": null,
+      "sdk_tools": 9,
+      "tools_match": null,
+      "sdk_auth_schemes": [
+        "API_KEY"
+      ],
+      "agree": true
+    },
+    {
+      "app": "Grain",
+      "claim": "listed_exact",
+      "candidates": [
+        "GRAIN"
+      ],
+      "matched_slug": "GRAIN",
+      "sdk_present": true,
+      "docs_tools": null,
+      "sdk_tools": 17,
+      "tools_match": null,
+      "sdk_auth_schemes": [
+        "API_KEY"
+      ],
+      "agree": true
+    }
+  ]
+}

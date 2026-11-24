@@ -1990,11 +1990,8 @@
     ]
   },
   "baseline": {
-    "total_claims": 60,
-    "answered": 0,
-    "coverage": 0,
-    "strict_accuracy": null,
-    "note": "Original baseline answered 0/60; answered-claim accuracy is undefined (0/0), not 0%."
+    "status": "excluded_no_answer_output",
+    "note": "The empty discovery run is retained in raw data but excluded from accuracy scoring."
   },
-  "comparison_note": "No baseline accuracy-improvement claim is made. Selected and holdout results are separate and are not population estimates."
+  "comparison_note": "The first answer-producing extraction is the baseline. Compare fixed-denominator half-credit and coverage across passes; answered-only strict precision is conditional. Selected and random-holdout results are separate and are not population estimates."
 }

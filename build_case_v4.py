@@ -16,8 +16,12 @@ independent = json.loads((ROOT / 'independent_review_v4.json').read_text(encodin
 first_pass = json.loads((ROOT / 'first_pass_review_v4.json').read_text(encoding='utf-8'))
 sdk_check = json.loads((ROOT / 'composio_sdk_check_v4.json').read_text(encoding='utf-8'))
 gold = json.loads((ROOT / 'gold_ratings_v4.json').read_text(encoding='utf-8'))
+final_gold_incorrect = gold['overall']['pass3']['judgment_fields']['incorrect']
+gold_provenance = json.loads((ROOT / 'gold_provenance_v1.json').read_text(encoding='utf-8'))
 spotcheck = json.loads((ROOT / 'gold_source_recheck_v1.json').read_text(encoding='utf-8'))
 spotcheck_counts = collections.Counter(row['result'] for row in spotcheck['rows'])
+source_adjudication = json.loads((ROOT / 'current_source_adjudication_v1.json').read_text(encoding='utf-8'))
+source_adjudication_count = len(source_adjudication['records'])
 human_spotcheck = json.loads((ROOT / 'human_gold_spotcheck_results_v1.json').read_text(encoding='utf-8'))
 human_spotcheck_summary = human_spotcheck['summary']
 auth_crosscheck = json.loads((ROOT / 'catalog_crosscheck.json').read_text(encoding='utf-8'))
@@ -243,7 +247,7 @@ easy_wins = [row['app'] for row in apps if row['fields']['verdict']['value'] == 
              and row['fields']['credential_gate'].get('gate_class') in ('self_serve_free', 'self_serve_trial')
              and row['fields']['api_surface'].get('breadth') in ('broad', 'moderate')]
 documented_candidates = verdicts.get('documented_build_candidate', 0)
-build_next = datamodel_v2.build_next(model_records)
+build_next = sorted(datamodel_v2.build_next(model_records), key=lambda item: item['app'].casefold())
 build_next_html = '<ul>' + ''.join('<li>' + esc(item['app']) + ' · ' + esc(item['category']) + '</li>'
                                   for item in build_next) + '</ul>'
 human_log_counts = collections.Counter(item.get('field', 'unknown') for item in _model_log)
@@ -285,7 +289,7 @@ for rating in ('correct', 'partial', 'incorrect', 'unresolved'):
 example_cards = ''.join('<article class="card"><span class="rating ' + esc(record['rating']) + '">' + esc(record['rating']) +
                         '</span><h3>' + esc(record['app']) + ' · ' + esc(FIELD_LABELS[record['field']]) + '</h3><p><b>Frozen agent answer:</b> ' +
                         esc(display(record['pass12_answer'])) + '</p><p><b>Review:</b> ' + esc(record['review_note']) + '</p><p><b>Checked correction:</b> ' +
-                        esc(display(record['correction'])) + ('</p><p class="muted">Earlier extraction example; final blind-gold pass had 0 incorrect answers.</p>' if record['app'] == 'Zendesk' and record['rating'] == 'incorrect' else '') + '</article>' for record in examples)
+                        esc(display(record['correction'])) + (f'</p><p class="muted">Earlier extraction example; final AI-labeled-gold pass had {final_gold_incorrect} incorrect answers.</p>' if record['app'] == 'Zendesk' and record['rating'] == 'incorrect' else '') + '</article>' for record in examples)
 
 
 def half_fixed(view):
@@ -315,9 +319,9 @@ def move_row(label, selected_view, holdout_view):
 
 
 movement_html = (
-    '<details><summary>Legacy author self-review (not blind gold)</summary>'
-    '<p class="muted">The blind gold panel above is the scored verification. The cards and table below are my own '
-    'earlier six-field review of the same sample; they are disclosed as self-assessed, not as a blind gold set.</p>'
+    '<details><summary>Earlier author self-review (secondary)</summary>'
+    '<p class="muted">The AI-labeled gold panel above is the scored comparison. The cards and table below are my own '
+    'earlier six-field review of the same sample; they are disclosed as self-assessed, not as independent adjudication.</p>'
     '<div class="notice"><b>How I checked the accuracy.</b> '
     'First my script pulled all six fields for the 60 sampled claims — that is the first pass. '
     'Then I went back over the same 60 claims myself: I searched wider, re-read the dates and the surrounding '
@@ -340,7 +344,7 @@ movement_html = (
 
 GOLD_PASS_NAMES = {'pass1': 'Pass 1 — first extraction', 'pass2': 'Pass 2 — after re-search',
                    'pass3': 'Pass 3 — final (checked dataset)'}
-GOLD_SCOPES = (('judgment_fields', '4 hand-labelled fields'), ('all_six_fields', 'all six fields'))
+GOLD_SCOPES = (('judgment_fields', '4 AI-labeled fields'), ('all_six_fields', 'all six fields'))
 GOLD_FIELD_ORDER = ('auth', 'credential_gate', 'api_surface', 'official_mcp', 'composio_toolkit', 'verdict')
 
 
@@ -352,9 +356,11 @@ def gold_cov(view):
 
 def gold_prec(view, which):
     value = view['precision_strict' if which == 'strict' else 'precision_half']
-    low, high = view['strict_ci' if which == 'strict' else 'half_ci']
     if value is None:
         return '—'
+    if which == 'half':
+        return f'{100 * value:.1f}%'
+    low, high = view['strict_ci']
     return f"{100 * value:.1f}% [{100 * low:.1f}–{100 * high:.1f}%]"
 
 
@@ -369,8 +375,8 @@ def gold_pct(value):
     return '—' if value is None else f'{100 * value:.1f}%'
 
 
-def gold_ci(view, which):
-    low, high = view['strict_ci' if which == 'strict' else 'half_ci']
+def gold_ci(view):
+    low, high = view['strict_ci']
     return f'{100 * low:.1f}–{100 * high:.1f}%'
 
 
@@ -405,9 +411,9 @@ gold_quality = gold['row_quality']
 fetch_rows_text = ', '.join(gold_quality['fetch_failed_rows']) or 'none'
 off_topic_rows_text = ', '.join(gold_quality['off_topic_rows']) or 'none'
 gold_miss_count = len(gold['misses'])
-gold_unscoreable = sum(count for key, count in gold['miss_causes'].items()
-                       if key.endswith(':gold_unscoreable'))
-agent_miss_causes = gold_miss_count - gold_unscoreable
+gold_unscoreable_ratings = sum(count for key, count in gold['miss_causes'].items()
+                               if key.endswith(':gold_unscoreable'))
+agent_miss_causes = gold_miss_count - gold_unscoreable_ratings
 gold_judgment_final = gold['overall']['pass3']['judgment_fields']
 gold_judgment_first = gold['overall']['pass1']['judgment_fields']
 gold_all_final = gold['overall']['pass3']['all_six_fields']
@@ -422,10 +428,10 @@ for cohort_name, result in (('Selected sample', selected), ('Random holdout', ho
         app_number = app_lookup[record['app']]['number']
         pass12_claims = json.loads((ROOT / f"data/pass12/{app_number:03}.json").read_text(encoding='utf-8'))['claims']
         gold_row = gold_labels[(record['app'], record['field'])]
-        blind_rating = __import__('gold_score_v4').grade_judgment(
+        gold_rating = __import__('gold_score_v4').grade_judgment(
             pass12_claims[record['field']]['value'], gold_row['gold_value'], gold_row['gold_status'],
             record['field'], gold_row.get('labeler_note', ''))
-        pairs.append((record['rating'], blind_rating))
+        pairs.append((record['rating'], gold_rating))
     human_agreement[cohort_name] = {'n': len(pairs), 'agree': sum(a == b for a, b in pairs)}
 assert sum(x['n'] for x in human_agreement.values()) == 80
 agreement_total = sum(x['agree'] for x in human_agreement.values())
@@ -477,7 +483,7 @@ for cohort_name, result in (('Selected sample', selected), ('Random holdout', ho
                 label.get('labeler_note', ''))
             ratings[rating] += 1
             total_rows += 1
-            if label['gold_status'] in ('found', 'not_stated_in_docs'):
+            if label['gold_status'] == 'found':
                 scoreable_rows += 1
     answered_rows = sum(ratings[key] for key in ('correct', 'partial', 'incorrect'))
     gold_cohort_scores[cohort_name] = {
@@ -490,7 +496,7 @@ for cohort_name, result in (('Selected sample', selected), ('Random holdout', ho
         'half': pct(ratings['correct'] + 0.5 * ratings['partial'], answered_rows),
     }
 assert sum(item['total'] for item in gold_cohort_scores.values()) == gold['overall']['pass3']['judgment_fields']['total']
-assert sum(item['scoreable'] for item in gold_cohort_scores.values()) == gold['row_quality']['labeled_found'] + gold['row_quality']['labeled_not_stated_in_docs']
+assert sum(item['scoreable'] for item in gold_cohort_scores.values()) == gold['row_quality']['labeled_found']
 selected_score = gold_cohort_scores['Selected sample']
 holdout_score = gold_cohort_scores['Random holdout']
 success_a, total_a = selected_score['correct'], selected_score['answered']
@@ -512,7 +518,8 @@ sdk_scheme_rows = ''.join(f'<li><b>{esc(scheme)}</b> — {count} app assignments
 mcp_tiers = collections.Counter(record['mcp_tier'] for record in model_records)
 assert sum(mcp_tiers.values()) == app_count
 assert set(mcp_tiers).issubset(MCP_TIER_LABELS)
-assert all(1 <= len(record['what_it_does'].split()) <= 10 for record in model_records)
+assert all(1 <= len(record['what_it_does'].split()) <= 10 and len(record['what_it_does']) <= 80
+           for record in model_records)
 assert auth_known_app_count + auth_unrecognized_app_count == app_count
 mcp_tier_rows = ''.join(f'<li><b>{esc(MCP_TIER_LABELS[tier])}</b> — {count}</li>'
                         for tier, count in sorted(mcp_tiers.items()))
@@ -533,22 +540,33 @@ broader_html = '<ol>' + ''.join(f'<li><b>{esc(row["app"])}</b> — {len(row.get(
                                f'{esc(", ".join(row.get("research_not_in_composio", [])))}</li>'
                                for row in broader_apps) + '</ol>'
 
+gold_labeling = gold_provenance['gold_labels']
+label_provenance_note = (
+    f"AI-labeled from {gold_labeling['evidence_source']}; model/session identity {gold_labeling['labeler_identity']}. "
+    f"A separate session is {gold_labeling['separate_session']}. "
+    f"{gold_labeling['agent_answer_exposure']['reported_status']} "
+    f"Earlier chat label exclusion is {gold_labeling['earlier_chat_label_exclusion']['status']}."
+)
+
 gold_panel_html = (
-    f'<h3>Blind gold · {len(gold["judgment_fields"])} labeled fields</h3>'
-    '<div class="notice"><b>Label provenance:</b> labels are recorded as coming from a separate AI session using frozen page excerpts; the model/session identity was not recorded. '
-    'The project record says agent answers were not shown during labeling, but the saved artifacts do not establish whether earlier chat labels were excluded; prior-chat blindness is unverified. '
+    f'<h3>AI-labeled gold · {len(gold["judgment_fields"])} fields</h3>'
+    f'<div class="notice"><b>Label provenance:</b> {esc(label_provenance_note)} '
     f'Gold status across the {gold_judgment_final["total"]} rows: '
     f'<b>{gold_quality["labeled_found"]} found</b>, <b>{gold_quality["labeled_not_stated_in_docs"]} not stated</b>, '
     f'<b>{gold_quality["labeled_unresolved"]} unresolved</b>. The {gold_quality["fetch_failed"]} fetch-failed row '
     f'({esc(fetch_rows_text)}) and {gold_quality["off_topic"]} off-topic row ({esc(off_topic_rows_text)}) remain reported. '
-    f'Unresolved rose from {gold_judgment_first["unresolved"]} to {gold_judgment_final["unresolved"]}: Pass 1 abstained on '
-    f'{gold_judgment_first["abstained"]} rows, hiding some unscoreable gold as abstentions. Pass 3 abstained on '
-    f'{gold_judgment_final["abstained"]} rows, so all {gold_judgment_final["unresolved"]} gold-unscoreable rows surfaced. '
-    "The author's earlier human review matched the gold rating on __HUMAN_AGREE__/__HUMAN_AGREE_N__ rows (__HUMAN_AGREE_PCT__); this is a same-author spot-check, not independent adjudication. These rows were not newly incorrect. Strict precision is conditional on answered rows; half-credit and its CI use answered rows, while fixed half-credit counts every row with unanswered rows at zero.</div>"
+    f'Unresolved ratings rose from {gold_judgment_first["unresolved"]} to {gold_judgment_final["unresolved"]}: Pass 1 abstained on '
+    f'{gold_judgment_first["abstained"]} rows, so some gold-unscoreable rows were recorded as abstentions. Pass 3 abstained on '
+    f'{gold_judgment_final["abstained"]} rows, surfacing all {gold_judgment_final["unresolved"]} gold-unscoreable rows '
+    f'({gold_quality["labeled_not_stated_in_docs"]} not stated, {gold_quality["labeled_unresolved"]} unresolved). '
+    'Strict precision is correct / answered; half-credit is (correct + 0.5 × partial) / answered; fixed-half counts unanswered rows as zero.</div>'
     f'<p>Separate AI source re-check of {len(spotcheck["rows"])} seeded rows: {spotcheck_counts.get("supported", 0)} supported, '
     f'{spotcheck_counts.get("conflict", 0)} current-source conflicts, {spotcheck_counts.get("partial_or_inconclusive", 0)} partial / inconclusive. '
-    f'This was not a human agreement check, was not blind to saved labels, and did not rescore the frozen results. '
+    f'This was an AI source re-check, not a human agreement check; it was not independent of saved labels and did not rescore the frozen results. '
     f'<a href="gold_source_recheck_v1.json">Open the row-level re-check</a>.</p>'
+    f'<p>Current-source follow-up reviewed {source_adjudication_count} known conflicts against current first-party docs. '
+    'This is separate from the frozen-excerpt score and does not silently change its labels. '
+    '<a href="current_source_adjudication_v1.json">Open the current-source adjudication ledger</a>.</p>'
     f'<p>Author-reported human check of {human_spotcheck["sample"]["n"]} rows sampled from '
     f'{human_spotcheck["sample"]["eligible_rows"]} eligible rows: '
     f'{human_spotcheck_summary["status_matches"]}/{human_spotcheck_summary["clear_rows"]} clear status matches '
@@ -558,7 +576,7 @@ gold_panel_html = (
     f'{human_spotcheck_summary["if_weak_counts_as_found_matches"]}/{human_spotcheck_summary["if_weak_counts_as_found_total"]} match '
     f'({human_spotcheck_summary["if_weak_counts_as_found_agreement"]:.1%}). Status only, not full field-value agreement; '
     f'{human_spotcheck_summary["field_scope_mismatches"]} credential-gate quotes address authentication. '
-    f'The author had seen prior assistant answers, so this is not an independent or blind check. '
+    f'The author had seen prior assistant answers, so this check is not independent and was not blind. '
     f'<a href="human_gold_spotcheck_results_v1.json">Open the row-level human-check results</a>; '
     f'<a href="human_gold_spotcheck_queue_v1.json">open the sample queue</a>.</p>'
     f'<div class="notice"><b>{len(FIELD_LABELS)}-field score · secondary:</b> final coverage {gold_cov(gold_all_final)}; strict '
@@ -570,17 +588,17 @@ gold_panel_html = (
     '<th>Half over all rows<br>(abstentions = 0)</th><th>n</th>'
     '<th>correct / partial / incorrect</th><th>Abstained</th><th>Unresolved</th></tr></thead><tbody>'
     + gold_pass_rows + '</tbody></table></div>'
-    '<p class="muted">Strict carries a Wilson 95% interval with n = answered. Half-credit uses a Wilson interval '
-    'with fractional successes, so that interval is an approximation; n is still answered. The per-field table below '
-    'repeats every count for every pass, with the same intervals.</p>'
+    '<p class="muted">Strict precision carries a Wilson 95% interval with n = answered. No interval is reported for fractional half-credit. '
+    'Coverage is answered / all sampled rows; scoreable coverage is answered / rows labeled found. The per-field table below '
+    'repeats every count for every pass.</p>'
     '<details><summary>Per-field breakdown — each pass × each field (coverage, strict, half-credit, n)</summary>'
     '<div class="tablewrap"><table><thead><tr><th>Field</th><th>Pass</th><th>Coverage</th>'
-    '<th>Strict (95% CI)</th><th>Half-credit (95% CI)</th><th>n</th>'
+    '<th>Strict (95% CI)</th><th>Half-credit</th><th>n</th>'
     '<th>correct / partial / incorrect</th><th>Abstained</th><th>Unresolved</th></tr></thead><tbody>'
     + gold_field_rows + '</tbody></table></div></details>'
-    f'<h3>All-pass miss accounting</h3><p>{gold_miss_count} non-correct ratings across the three passes split into '
-    f'{agent_miss_causes} agent-caused misses on scoreable gold and {gold_unscoreable} gold-unscoreable rows. '
-    'This total spans every saved pass and field; it is not the final-pass error count. Causes:</p><ul>' + gold_cause_rows + '</ul>'
+    f'<h3>All-pass miss accounting</h3><p>{gold_miss_count} non-correct ratings across three passes split into '
+    f'{agent_miss_causes} agent-caused misses on scoreable gold and {gold_unscoreable_ratings} gold-unscoreable ratings across passes '
+    f'({gold_quality["labeled_not_stated_in_docs"] + gold_quality["labeled_unresolved"]} distinct gold rows per pass). This is not the final-pass error count. Causes:</p><ul>' + gold_cause_rows + '</ul>'
     f'<details><summary>Inspect all {gold_miss_count} misses</summary><div class="tablewrap"><table class="reviewtable">'
     '<thead><tr><th>Pass</th><th>App / field</th><th>Agent answer</th><th>Gold</th><th>Rating</th><th>Cause</th></tr>'
     '</thead><tbody id="missrows"></tbody></table></div></details>'
@@ -613,12 +631,12 @@ review_payload = json.dumps(review_records, ensure_ascii=False).replace('</', '<
 repo = 'https://github.com/harshbehl67-ctrl/-composio-product-ops-research'
 page = r'''<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="description" content="Official-documentation research across 100 apps: authentication, access, API surface, MCP, buildability, and independent accuracy review."><title>100-app integration evidence | Composio take-home</title><style>
 :root{--ink:#173b31;--paper:#f4f3eb;--line:#d4ddcf;--lime:#d9f99d;--muted:#5b6e62;--white:#fff;--amber:#fff0c2;--red:#ffe0dc;--blue:#dcecff}*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--paper);color:var(--ink);font:16px/1.55 system-ui,-apple-system,sans-serif}a{color:#1f6b49;text-underline-offset:3px}header{background:#153c30;color:#f5f7ee;padding:24px max(5vw,24px) 88px}header a{color:#dcf7c7}.nav{display:flex;justify-content:space-between;gap:20px;font-size:12px;letter-spacing:.12em;text-transform:uppercase}.hero{max-width:1200px;margin:auto;display:grid;grid-template-columns:1.25fr .75fr;gap:44px;align-items:center}h1,h2,h3{font-family:Georgia,serif;font-weight:400;line-height:1.08}h1{font-size:clamp(42px,6.4vw,78px);margin:64px 0 22px}h2{font-size:clamp(32px,4vw,48px);margin:0 0 18px}h3{font-size:24px;margin:0 0 12px}.lead{font-size:19px;max-width:760px;color:#d9e8da}.badge{display:inline-block;background:var(--lime);color:#173b31;border-radius:40px;padding:7px 14px;font-size:12px;font-weight:750}.scene{border:1px solid #79a48a;border-radius:22px;padding:24px;display:grid;gap:12px}.step{border:1px solid #6c967d;border-radius:10px;padding:13px}.step b{color:var(--lime);margin-right:10px}main{max-width:1200px;padding:0 24px;margin:auto}.metrics{display:grid;grid-template-columns:repeat(4,1fr);background:#fff;border:1px solid var(--line);margin-top:-38px}.metric{padding:24px;border-right:1px solid var(--line)}.metric:last-child{border-right:0}.metric strong{display:block;font:36px Georgia,serif}.metric small{color:var(--muted)}section{padding:68px 0;border-bottom:1px solid var(--line)}.kicker{font-size:12px;letter-spacing:.14em;text-transform:uppercase;font-weight:750;color:#52735b}.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.card{background:#fff;border:1px solid var(--line);padding:24px}.card p:last-child{margin-bottom:0}.notice{padding:22px;background:#e7efdc;border-left:4px solid #6b9644}.warning{background:var(--amber);border-left-color:#b37a12}.tablewrap{overflow:auto;border:1px solid var(--line);background:#fff}table{width:100%;border-collapse:collapse;font-size:14px}th,td{padding:12px;border-bottom:1px solid #e2e8dd;text-align:left;vertical-align:top}thead th{font-size:11px;text-transform:uppercase;letter-spacing:.05em;background:#f8faf5}tbody tr:last-child th,tbody tr:last-child td{border-bottom:0}.controls{display:flex;flex-wrap:wrap;gap:12px;margin:22px 0}label{font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:.04em}input,select,button{font:inherit;padding:10px;border:1px solid #a9b9aa;background:#fff;color:var(--ink);border-radius:4px}input{min-width:220px}button{cursor:pointer}.flow{display:flex;flex-wrap:wrap;gap:9px}.flow span{padding:12px 14px;background:#fff;border:1px solid var(--line)}pre{overflow:auto;background:#102d25;color:#e6f4df;padding:18px;border-radius:8px;font-size:13px}.rating{display:inline-block;border-radius:20px;padding:3px 9px;font-size:11px;font-weight:800;text-transform:uppercase;background:#e7ece3}.rating.correct{background:#d9f5d0}.rating.partial{background:var(--amber)}.rating.incorrect{background:var(--red)}.rating.abstained{background:#e8e8e8}.rating.unresolved{background:var(--blue)}details{min-width:150px}summary{cursor:pointer;font-weight:700}.source{display:inline-block;margin:3px 10px 3px 0}.quote{display:block;margin:4px 0 10px;color:var(--muted);font-size:13px}.muted{color:var(--muted)}.pill{display:inline-block;border:1px solid var(--line);border-radius:20px;padding:3px 8px;font-size:12px;background:#fff}.chip{display:inline-block;border:1px solid var(--line);border-radius:20px;padding:2px 7px;margin:2px;font-size:11px;background:#f8faf5}.purpose{display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden;max-width:260px}.unknown{color:#785d18}.checked{color:#216442}.rowdetails p{margin:10px 0}.rowdetails b{font-weight:750}.reviewtable{font-size:13px}footer{padding:42px 0 56px;color:var(--muted)}code{font-family:ui-monospace,monospace}@media(max-width:860px){.hero{grid-template-columns:1fr}.scene{display:none}.metrics{grid-template-columns:repeat(2,1fr)}.metric{border-bottom:1px solid var(--line)}.cards{grid-template-columns:1fr}section{padding:50px 0}h1{margin-top:46px}.nav span{display:none}}@media(max-width:520px){main{padding:0 16px}header{padding-left:16px;padding-right:16px}.metrics{grid-template-columns:1fr}.metric{border-right:0}input{min-width:100%;width:100%}.controls label{width:100%}.controls select,.controls button{width:100%}}@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
-</style></head><body><header><nav class="nav"><span>Composio · AI Product Ops take-home</span><a href="#evidence">Explore 100 apps ↓</a></nav><div class="hero"><div><h1>100 apps. What can an agent actually build?</h1><p class="lead">I read the official docs for 100 apps across ten categories to work out where an agent could really build something — and where it can't, and why. Every claim below links to the first-party source I used.</p><span class="badge">CHECKED 24 NOV 2026 · NO VENDOR CREDENTIALS TESTED</span></div><div class="scene" aria-label="How I worked"><div class="step"><b>01</b>Find each app's official API, auth, access and MCP docs</div><div class="step"><b>02</b>Save the raw passes and the exact quotes</div><div class="step"><b>03</b>Check the dates, the context and who owns the page</div><div class="step"><b>04</b>Score a category sample and a random holdout</div></div></div></header><main><div class="metrics"><div class="metric"><strong>100</strong><small>apps across 10 categories</small></div><div class="metric"><strong>__CHECKED__/500</strong><small>vendor-field answers with a cited source</small></div><div class="metric"><strong>__BUILD__</strong><small>documented build candidates</small></div><div class="metric"><strong>__GOLD_STRICT__</strong><small>blind gold · strict accuracy · half-credit __GOLD_HALF__ [95% CI __GOLD_HALF_CI__] · n=__GOLD_N__ answered<br>Coverage __GOLD_COVERAGE_PCT__ (__GOLD_COVERAGE_COUNT__/__GOLD_SCOREABLE__ scoreable); __HAND_FIELD_COUNT__ fields · 95% CI __GOLD_STRICT_CI__</small></div></div>
+</style></head><body><header><nav class="nav"><span>Composio · AI Product Ops take-home</span><a href="#evidence">Explore 100 apps ↓</a></nav><div class="hero"><div><h1>100 apps. What can an agent actually build?</h1><p class="lead">I read the official docs for 100 apps across ten categories to work out where an agent could really build something — and where it can't, and why. Every claim below links to the first-party source I used.</p><span class="badge">CHECKED 24 NOV 2026 · NO VENDOR CREDENTIALS TESTED</span></div><div class="scene" aria-label="How I worked"><div class="step"><b>01</b>Find each app's official API, auth, access and MCP docs</div><div class="step"><b>02</b>Save the raw passes and the exact quotes</div><div class="step"><b>03</b>Check the dates, the context and who owns the page</div><div class="step"><b>04</b>Score a category sample and a random holdout</div></div></div></header><main><div class="metrics"><div class="metric"><strong>100</strong><small>apps across 10 categories</small></div><div class="metric"><strong>__CHECKED__/500</strong><small>vendor-field answers with a cited source</small></div><div class="metric"><strong>__BUILD__</strong><small>documented build candidates</small></div><div class="metric"><strong>__GOLD_STRICT_PCT__</strong><small>AI-labeled 4-field gold · coverage __GOLD_COVERAGE_COUNT__/__GOLD_TOTAL__ sampled (__GOLD_COVERAGE_PCT__), __GOLD_COVERAGE_COUNT__/__GOLD_SCOREABLE__ scoreable (__GOLD_SCOREABLE_COVERAGE_PCT__) · half-credit __GOLD_HALF__ · n=__GOLD_N__ · __GOLD_INCORRECT__ incorrect · strict 95% CI __GOLD_STRICT_CI__</small></div></div>
 <section><div class="kicker">01 / Headline findings</div><h2>Prototype access and production access are different questions.</h2><div class="notice"><b>Production gates</b> are counted separately: __PRODUCTION_GATE_TOTAL__/__APP_COUNT__ apps document a paid plan, admin approval, app review, or partner / sales requirement (__PRODUCTION_GATE_TEXT__). The blocker ranking below includes only apps with a documented blocker (__BLOCKER_TOTAL__).</div><h3>Prototype vs production access</h3><div class="tablewrap"><table><thead><tr><th>Access path</th><th>Prototype</th><th>Production</th></tr></thead><tbody>__ACCESS_ROWS__</tbody></table></div><h3>Blockers among apps that have one</h3><ul>__BLOCKER_ROWS__</ul><div class="cards"><article class="card"><h3>Authentication chips</h3><p>__AUTH_KNOWN_APPS__/__APP_COUNT__ apps have a recognized auth chip; __AUTH_UNRECOGNIZED__ are labeled none or unresolved. Most common: <b>__TOP_AUTH__</b> (__TOP_AUTH_COUNT__ apps). Chip assignments overlap, so category counts do not sum to app count.</p><ul>__AUTH_CHIP_ROWS__</ul></article><article class="card"><h3>API surface</h3><p>REST is documented for __REST__ apps and GraphQL for __GRAPHQL__. __BROAD__ have a broad surface, __MODERATE__ a moderate one and __NARROW__ a narrow one.</p></article><article class="card"><h3>Vendor MCP tiers</h3><ul>__MCP_TIER_ROWS__</ul><p>Google Ads MCP is local or customer self-hosted on Cloud Run; read-only mode is configurable, with limited propose-and-confirm mutations. Brex is beta, Lark is local, Pinterest is prelaunch, NotebookLM is beta / Early Access Public Preview, and Shopify Dev MCP is local and read-only for docs/schema lookup.</p><p>Composio catalog: __CATALOG_LISTED__ listed, __CATALOG_NOT_LISTED__ not listed. Vendor MCP source review checked __MCP_CHECKED__/__APP_COUNT__ apps; __MCP_UNRESOLVED_TIERS__ MCP tier labels remain unresolved. Source verification and tier classification are separate counts.</p></article></div><h3>Build candidates and easy wins</h3><p>__DOCUMENTED_CANDIDATES__/__APP_COUNT__ apps meet the documented-candidate label; __EASY_WIN_COUNT__ meet the stricter easy-win rule: a documented build candidate with free or trial access for both prototype and production, plus a broad or moderate API.</p>__EASY_WINS__<h3>Build next · catalog gaps among eligible apps (__BUILD_NEXT_COUNT__)</h3>__BUILD_NEXT__</section>
 <section><div class="kicker">02 / Category matrix</div><h2>Ten categories, six honest outcomes.</h2><p>“Documented build candidate” means the docs show a real path to build a working prototype. It does not mean I got a production credential.</p><div class="notice"><h3>Patterns</h3>__PATTERNS__<h4>Production-gate concentration by category</h4><p>Category shares are calculated from the normalized prototype/production rows; an earlier estimate did not reconcile with those app-level fields.</p>__CATEGORY_GATE_LIST__<p>Apps that move from prototype free/trial access to a production gate (__DROP_COUNT__):</p>__DROP_LIST__<h4>Top 10 research-broader auth cross-checks</h4>__BROADER_APPS__</div><div class="tablewrap"><table><thead><tr><th>Category</th><th>Apps</th><th>Documented</th><th>Gated</th><th>Partner</th><th>Wrapper</th><th>No public API</th><th>Unresolved</th></tr></thead><tbody>__MATRIX__</tbody></table></div></section>
 <section><div class="kicker">03 / The research agent</div><h2>Search is just triage. The evidence is the point.</h2><p class="muted">Official-source discovery → frozen evidence → context-aware extraction → independent review → strict assembly gate.</p><div class="cards"><article class="card"><h3>What my script does</h3><p>For each app it searches for the API reference, authentication, credential-creation, access/pricing and MCP docs. It saves every raw pass, pulls out the scoped claims, keeps the publication dates, and throws away client-only or negated MCP “proofs” before anything gets assembled.</p></article><article class="card"><h3>Where review changed classifications</h3><p>__MANUAL_LOG_TOTAL__ decisions are recorded in the model log: __ACCESS_DECISIONS__ prototype/production splits, __MCP_DECISIONS__ MCP tier decisions, and __AUTH_DECISIONS__ auth-chip decisions, plus __OTHER_DECISIONS__ other logged reviews. The gold set records __FETCH_FAILED__ fetch-failed excerpt(s). Documented rebrand(s): __RENAMES__.</p></article><article class="card"><h3>Firecrawl retrieval check</h3><p>__FIRECRAWL_CONNECTION_STATUS__ On a small __FIRECRAWL_TARGET_COUNT__-page illustration (not a benchmark), direct retrieval reproduced __FIRECRAWL_BEFORE_MATCHES__ stored quotes and Firecrawl reproduced __FIRECRAWL_AFTER_MATCHES__. It recovered __FIRECRAWL_RECOVERED__ and lost __FIRECRAWL_LOST__; all pages returned HTTP 200 in both paths: __FIRECRAWL_ALL_200__. Lark remains unmatched in both paths despite successful HTTP responses; this may indicate a stored-quote/page-content discrepancy rather than a fetch failure.</p></article><article class="card"><h3>Composio SDK cross-check</h3><p>Composio SDK/catalog listing agreement is __SDK_AGREEMENT__ of 100 apps (__SDK_LISTED__ listed and __SDK_NOT_LISTED__ not listed); this is separate from vendor MCP source verification. For __SDK_TOOLS_COMPARED__ apps with a documented tool count, __SDK_TOOLS_MATCH__ match the current SDK count; the rest show count drift.</p><p>SDK <code>auth_schemes</code> assignments across listed toolkits (one app may have multiple):</p><ul>__SDK_SCHEME_ROWS__</ul><p>In the __AUTH_CROSSCHECK_CATALOG__ apps in the catalog comparison, auth detail agrees on __AUTH_AGREE__; research is broader on __AUTH_RESEARCH_BROADER__, Composio on __AUTH_COMPOSIO_BROADER__, with __AUTH_NO_OVERLAP__ no-overlap and __AUTH_TRANSPORT_ONLY__ transport-only cases. This compares documented scope; it is not a wrong-claim count.</p></article></div><h3>__FIRECRAWL_TARGET_COUNT__-page Firecrawl-through-Composio illustration</h3><p>This __FIRECRAWL_BEFORE_MATCHES__-versus-__FIRECRAWL_AFTER_MATCHES__ quote-reproduction result is an illustration, not a benchmark or accuracy measurement; page status is checked independently.</p><div class="tablewrap"><table><thead><tr><th>Hard app</th><th>Direct status</th><th>Direct quote</th><th>Firecrawl status</th><th>Firecrawl quote</th></tr></thead><tbody>__FIRECRAWL_ROWS__</tbody></table></div><h3>Runnable proof</h3><pre>python run_submission_demo_v4.py
 python run_one.py --app "Google Ads" --live</pre><p>Run the live check after configuring the Composio session and authorizing Firecrawl. Captured offline output: <a href="run_submission_demo_sample_v4.json">Google Ads demo sample</a>. The full source, saved passes, review logs and validation reports are in the <a href="__REPO__">source repository</a>. You can also export the checked JSON or CSV from the evidence table below.</p></section>
-<section><div class="kicker">04 / Accuracy lab</div><h2>Coverage first. Then accuracy, with real denominators.</h2><div class="notice"><b>__HAND_FIELD_COUNT__ labeled fields: coverage rose from __FIRST_GOLD_COVERAGE__ to __FINAL_GOLD_COVERAGE__; strict precision fell from __FIRST_GOLD_STRICT__ to __FINAL_GOLD_STRICT__ as more rows were answered; there were __FINAL_GOLD_INCORRECT__ incorrect answers.</b> The labels are recorded as produced in a separate AI session; model identity is not recorded, and exclusion of earlier chat labels cannot be verified from saved artifacts. The six-field score is secondary: it adds catalog matching and rule-derived buildability.</div>__GOLD_PANEL____MOVEMENT__<h3>__HAND_FIELD_COUNT__-field gold by cohort</h3><div class="cards"><article class="card"><h3>Selected sample · __GOLD_SELECTED_APPS__ apps</h3><p>__GOLD_SELECTED_ANSWERED__/__GOLD_SELECTED_SCOREABLE__ scoreable gold rows answered (__GOLD_SELECTED_COVERAGE__); strict <b>__GOLD_SELECTED_STRICT__</b>; half-credit <b>__GOLD_SELECTED_HALF__</b>; __GOLD_SELECTED_UNSCOREABLE__ gold-unscoreable excluded.</p></article><article class="card"><h3>Random holdout · __GOLD_HOLDOUT_APPS__ apps</h3><p>__GOLD_HOLDOUT_ANSWERED__/__GOLD_HOLDOUT_SCOREABLE__ scoreable gold rows answered (__GOLD_HOLDOUT_COVERAGE__); strict <b>__GOLD_HOLDOUT_STRICT__</b>; half-credit <b>__GOLD_HOLDOUT_HALF__</b>; __GOLD_HOLDOUT_UNSCOREABLE__ gold-unscoreable excluded.</p></article></div><p>Count units: __DOCUMENTED_CANDIDATES__ is the number of apps labeled documented build candidates; __SELECTED_TOTAL__ is the claim count within each author-review cohort; the blind gold has __GOLD_TOTAL__ rows across both cohorts. Selected/holdout strict gap: __STRICT_GAP__ percentage points (two-sided Fisher exact p=__FISHER_P__; not statistically significant at this sample size). __GOLD_UNSCOREABLE_TOTAL__ gold-unscoreable rows are excluded from __GOLD_SCOREABLE_TOTAL__ scoreable rows.</p><div class="cards"><article class="card"><h3>Selected author review · __SELECTED_APPS__ apps</h3><p>Six claims per app (__SELECTED_TOTAL__ total): __SELECTED_ANSWERED__/__SELECTED_TOTAL__ answered; strict <b>__SELECTED_STRICT__</b>; half-credit <b>__SELECTED_WEIGHTED__</b>.</p><p>Gold-rating agreement on __SEL_AGREE_N__ shared fields: <b>__SEL_AGREE__/__SEL_AGREE_N__</b> (__SEL_AGREE_PCT__).</p></article><article class="card"><h3>Random holdout author review · __HOLDOUT_APPS__ apps</h3><p>Seed __HOLDOUT_SEED__; __HOLDOUT_ANSWERED__/__HOLDOUT_TOTAL__ claims answered; strict <b>__HOLDOUT_STRICT__</b>; half-credit <b>__HOLDOUT_WEIGHTED__</b>.</p><p>Gold-rating agreement on __HOLD_AGREE_N__ shared fields: <b>__HOLD_AGREE__/__HOLD_AGREE_N__</b> (__HOLD_AGREE_PCT__).</p></article><article class="card"><h3>Gold vs author-review agreement</h3><p>Raw exact agreement between the gold ratings and the author's earlier review on __HAND_FIELD_COUNT__ fields: <b>__HUMAN_AGREE__/__HUMAN_AGREE_N__</b> exact matches (__HUMAN_AGREE_PCT__). Raw agreement, not adjudicated consensus.</p></article></div><h3>Hits and misses, shown honestly</h3><div class="cards">__EXAMPLES__</div><details><summary>Inspect all __REVIEW_TOTAL__ author-reviewed claims</summary><div class="controls"><label>Cohort <select id="cohort"><option value="">All reviews</option><option>Selected sample</option><option>Random holdout</option></select></label></div><div class="tablewrap"><table class="reviewtable"><thead><tr><th>Cohort</th><th>App / field</th><th>Frozen answer</th><th>Author rating</th><th>Correction</th><th>Sources</th></tr></thead><tbody id="reviewrows"></tbody></table></div></details></section>
+<section><div class="kicker">04 / Accuracy lab</div><h2>Coverage first. Then accuracy, with real denominators.</h2><div class="notice"><b>__HAND_FIELD_COUNT__ labeled fields: coverage rose from __FIRST_GOLD_COVERAGE__ to __FINAL_GOLD_COVERAGE__; strict precision fell from __FIRST_GOLD_STRICT__ to __FINAL_GOLD_STRICT__ as more rows were answered; there were __FINAL_GOLD_INCORRECT__ incorrect answers.</b> __LABEL_PROVENANCE__ The six-field score is secondary: it adds catalog matching and rule-derived buildability.</div>__GOLD_PANEL____MOVEMENT__<h3>__HAND_FIELD_COUNT__-field gold by cohort</h3><div class="cards"><article class="card"><h3>Selected sample · __GOLD_SELECTED_APPS__ apps</h3><p>__GOLD_SELECTED_ANSWERED__/__GOLD_SELECTED_SCOREABLE__ scoreable gold rows answered (__GOLD_SELECTED_COVERAGE__); strict <b>__GOLD_SELECTED_STRICT__</b>; half-credit <b>__GOLD_SELECTED_HALF__</b>; __GOLD_SELECTED_UNSCOREABLE__ gold-unscoreable excluded.</p></article><article class="card"><h3>Random holdout · __GOLD_HOLDOUT_APPS__ apps</h3><p>__GOLD_HOLDOUT_ANSWERED__/__GOLD_HOLDOUT_SCOREABLE__ scoreable gold rows answered (__GOLD_HOLDOUT_COVERAGE__); strict <b>__GOLD_HOLDOUT_STRICT__</b>; half-credit <b>__GOLD_HOLDOUT_HALF__</b>; __GOLD_HOLDOUT_UNSCOREABLE__ gold-unscoreable excluded.</p></article></div><p>Count units: __DOCUMENTED_CANDIDATES__ is the number of apps labeled documented build candidates; __SELECTED_TOTAL__ is the claim count within each author-review cohort; the AI-labeled gold has __GOLD_TOTAL__ rows across both cohorts. Selected/holdout strict gap: __STRICT_GAP__ percentage points (two-sided Fisher exact p=__FISHER_P__; not statistically significant at this sample size). __GOLD_UNSCOREABLE_TOTAL__ gold-unscoreable rows are excluded from __GOLD_SCOREABLE_TOTAL__ scoreable rows.</p><div class="cards"><article class="card"><h3>Selected author review · __SELECTED_APPS__ apps</h3><p>Six claims per app (__SELECTED_TOTAL__ total): __SELECTED_ANSWERED__/__SELECTED_TOTAL__ answered; strict <b>__SELECTED_STRICT__</b>; half-credit <b>__SELECTED_WEIGHTED__</b>.</p><p>Gold-rating agreement on __SEL_AGREE_N__ shared fields: <b>__SEL_AGREE__/__SEL_AGREE_N__</b> (__SEL_AGREE_PCT__).</p></article><article class="card"><h3>Random holdout author review · __HOLDOUT_APPS__ apps</h3><p>Seed __HOLDOUT_SEED__; __HOLDOUT_ANSWERED__/__HOLDOUT_TOTAL__ claims answered; strict <b>__HOLDOUT_STRICT__</b>; half-credit <b>__HOLDOUT_WEIGHTED__</b>.</p><p>Gold-rating agreement on __HOLD_AGREE_N__ shared fields: <b>__HOLD_AGREE__/__HOLD_AGREE_N__</b> (__HOLD_AGREE_PCT__).</p></article></div><h3>Hits and misses, shown honestly</h3><div class="cards">__EXAMPLES__</div><details><summary>Inspect all __REVIEW_TOTAL__ author-reviewed claims</summary><div class="controls"><label>Cohort <select id="cohort"><option value="">All reviews</option><option>Selected sample</option><option>Random holdout</option></select></label></div><div class="tablewrap"><table class="reviewtable"><thead><tr><th>Cohort</th><th>App / field</th><th>Frozen answer</th><th>Author rating</th><th>Correction</th><th>Sources</th></tr></thead><tbody id="reviewrows"></tbody></table></div></details></section>
 <section id="evidence"><div class="kicker">05 / The __APP_COUNT__ apps</div><h2>Every claim has a source—or a reason.</h2><p>Of __VENDOR_TOTAL__ vendor-field claims, __CHECKED__ are checked and __VENDOR_UNKNOWN__ remain unresolved. Composio listing status is cross-checked separately for __CATALOG__ apps. The __CHECKED__/__VENDOR_TOTAL__ vendor-field answers are answers with a cited source, not a claim that every source passed a quote-reproduction check.</p><div class="tablewrap"><table><thead><tr><th>Field</th><th>Checked</th><th>Unknown</th><th>Coverage</th></tr></thead><tbody>__COVERAGE_ROWS__</tbody></table></div><div class="controls"><label>Search <input id="search" type="search" placeholder="App, purpose or category"></label><label>Category <select id="category"><option value="">All categories</option></select></label><label>Prototype <select id="prototype"><option value="">All prototype access</option></select></label><label>Production <select id="production"><option value="">All production access</option></select></label><label>Verdict <select id="verdict"><option value="">All verdicts</option></select></label><label>MCP <select id="mcp"><option value="">All MCP states</option></select></label><button id="sort">Sort A–Z</button><button id="json">Export JSON</button><button id="csv">Export CSV</button></div><p id="count" aria-live="polite"></p><div class="tablewrap"><table><thead><tr><th>App</th><th>What it does</th><th>Category</th><th>Auth</th><th>Prototype</th><th>Production</th><th>API</th><th>Vendor MCP tier</th><th>Composio</th><th>Verdict</th><th>Evidence</th></tr></thead><tbody id="rows"></tbody></table></div></section>
 <section><div class="kicker">06 / Limits and handoff</div><h2>What this evidence does—and does not—prove.</h2><div class="cards"><article class="card"><h3>Documentation, not credentials</h3><p>I never used a live token, a paid plan, admin approval, a partner agreement or a production connection. If something is gated, that is a real finding, not a failed build.</p></article><article class="card"><h3>Dates and absence</h3><p>Where I could, I kept the page’s published or updated date; when there was none, the field reason says so. “No vendor server documented” only covers the source I cite, and unresolved is not the same as absent.</p></article><article class="card"><h3>Security review</h3><p>The bearer-shaped value in my first Git commit is an exact match for a public Zendesk documentation example. It was not a real user’s credential, so I did not rewrite history or revoke anything.</p></article></div><p>Next step: start with the documented easy wins, send the gated apps to the exact access step each one needs, and put the partner-only apps into outreach. Recheck the time-sensitive pages before building.</p></section><footer><a href="__REPO__">Source repository</a> · Checked 24 November 2026 · All page counts are generated from the checked dataset.</footer></main><script>
 const data=__DATA__,reviews=__REVIEW__,misses=__MISSES__;const $=s=>document.querySelector(s),esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));const safe=u=>/^https?:\/\//i.test(u),vals=v=>Array.isArray(v)?v.join(', '):(typeof v==='object'&&v!==null?JSON.stringify(v):String(v??''));let asc=true;
@@ -626,10 +644,10 @@ const gateNames=__GATES__,verdictNames=__VERDICTS__,mcpNames=__MCP__,composioNam
 [...new Set(data.map(a=>a.category))].forEach(c=>{let o=document.createElement('option');o.value=o.textContent=c;$('#category').append(o)});Object.entries(gateNames).forEach(([v,l])=>{for(const id of ['prototype','production']){let o=document.createElement('option');o.value=v;o.textContent=l;$('#'+id).append(o)}});Object.entries(verdictNames).forEach(([v,l])=>{let o=document.createElement('option');o.value=v;o.textContent=l;$('#verdict').append(o)});Object.entries(mcpNames).forEach(([v,l])=>{let o=document.createElement('option');o.value=v;o.textContent=l;$('#mcp').append(o)});
 function sources(items){return (items||[]).filter(s=>s&&safe(s.url)).map(s=>`<a class="source" href="${esc(s.url)}" target="_blank" rel="noopener">${esc(s.title||'Source')} ↗${s.published_label?` · ${esc(s.published_label)}`:''}${s.published_at?` · ${esc(s.published_at)}`:''}</a>${s.quote?`<span class="quote">“${esc(s.quote)}”</span>`:''}`).join('')}
 function details(row){return `<div class="rowdetails">${Object.entries(row.fields).map(([k,v])=>`<div class="fielddetail"><b>${esc(fieldNames[k])}:</b> <span class="${esc(v.status)}">${esc(vals(v.value))}</span> <em>(${esc(v.status)})</em><br><span class="muted">${esc(v.reason)}</span><br>${sources(v.evidence)}</div>`).join('')}<div class="fielddetail"><b>Blocker:</b> ${esc(row.blocker)}</div><div class="fielddetail"><b>Next action:</b> ${esc(row.next_action)}</div></div>`}
-function render(){let q=$('#search').value.toLowerCase(),list=data.filter(a=>(a.app+' '+a.what_it_does+' '+a.category).toLowerCase().includes(q)&&(!$('#category').value||a.category===$('#category').value)&&(!$('#prototype').value||a.prototype_access===$('#prototype').value)&&(!$('#production').value||a.production_access===$('#production').value)&&(!$('#verdict').value||a.fields.verdict.value===$('#verdict').value)&&(!$('#mcp').value||a.mcp_tier===$('#mcp').value)).sort((a,b)=>asc?a.app.localeCompare(b.app):b.app.localeCompare(a.app));$('#count').textContent=`${list.length} of ${data.length} apps shown`;$('#rows').innerHTML=list.map(a=>`<tr><td><b>${esc(a.app)}</b></td><td><span class="purpose" title="${esc(a.what_it_does)}">${esc(a.what_it_does)}</span></td><td>${esc(a.category)}</td><td>${a.auth_chips.map(x=>`<span class="chip">${esc(x)}</span>`).join('')}</td><td>${esc(gateNames[a.prototype_access]||a.prototype_access)}</td><td>${esc(gateNames[a.production_access]||a.production_access)}</td><td>${esc(a.fields.api_surface.value)}${a.fields.api_surface.breadth?`<br><span class="pill">${esc(a.fields.api_surface.breadth)}</span>`:''}</td><td><span class="chip">${esc(mcpNames[a.mcp_tier]||a.mcp_tier)}</span><br><span class="muted">${esc(a.mcp_updated)}</span></td><td>${esc(composioNames[a.fields.composio_toolkit.value]||a.fields.composio_toolkit.value)}</td><td>${esc(verdictNames[a.fields.verdict.value]||a.fields.verdict.value)}</td><td><details><summary>View evidence</summary>${details(a)}</details></td></tr>`).join('')}
+function render(){let q=$('#search').value.toLowerCase(),list=data.filter(a=>(a.app+' '+a.what_it_does+' '+a.category).toLowerCase().includes(q)&&(!$('#category').value||a.category===$('#category').value)&&(!$('#prototype').value||a.prototype_access===$('#prototype').value)&&(!$('#production').value||a.production_access===$('#production').value)&&(!$('#verdict').value||a.fields.verdict.value===$('#verdict').value)&&(!$('#mcp').value||a.mcp_tier===$('#mcp').value )).sort((a,b)=>asc?a.app.localeCompare(b.app):b.app.localeCompare(a.app));window.currentList=list;$('#count').textContent=`${list.length} of ${data.length} apps shown`;$('#rows').innerHTML=list.map(a=>`<tr><td><b>${esc(a.app)}</b></td><td><span class="purpose" title="${esc(a.what_it_does)}">${esc(a.what_it_does)}</span></td><td>${esc(a.category)}</td><td>${a.auth_chips.map(x=>`<span class="chip">${esc(x)}</span>`).join('')}</td><td>${esc(gateNames[a.prototype_access]||a.prototype_access)}</td><td>${esc(gateNames[a.production_access]||a.production_access)}</td><td>${esc(a.fields.api_surface.value)}${a.fields.api_surface.breadth?`<br><span class="pill">${esc(a.fields.api_surface.breadth)}</span>`:''}</td><td><span class="chip">${esc(mcpNames[a.mcp_tier]||a.mcp_tier)}</span><br><span class="muted">${esc(a.mcp_updated)}</span></td><td>${esc(composioNames[a.fields.composio_toolkit.value]||a.fields.composio_toolkit.value)}</td><td>${esc(verdictNames[a.fields.verdict.value]||a.fields.verdict.value)}</td><td><details><summary>View evidence</summary>${details(a)}</details></td></tr>`).join('')}
 function renderReviews(){let cohort=$('#cohort').value;$('#reviewrows').innerHTML=reviews.filter(r=>!cohort||r.cohort===cohort).map(r=>`<tr><td>${esc(r.cohort)}</td><td><b>${esc(r.app)}</b><br>${esc(fieldNames[r.field])}</td><td>${esc(vals(r.pass12_answer))}</td><td><span class="rating ${esc(r.rating)}">${esc(r.rating)}</span></td><td>${esc(r.review_note)}<br><b>${esc(vals(r.correction))}</b></td><td>${sources((r.independent_sources||[]).map(url=>({url,title:'Official source'})))}</td></tr>`).join('')}
 function renderMisses(){let b=$('#missrows');if(b)b.innerHTML=misses.map(m=>`<tr><td>${esc(m.pass)}</td><td><b>${esc(m.app)}</b><br>${esc(fieldNames[m.field]||m.field)}</td><td>${esc(vals(m.agent))}</td><td>${esc(vals(m.gold))}</td><td><span class="rating ${esc(m.rating)}">${esc(m.rating)}</span></td><td>${esc(m.cause)}</td></tr>`).join('')}
-['search','category','prototype','production','verdict','mcp'].forEach(id=>$('#'+id).addEventListener('input',render));$('#cohort').addEventListener('input',renderReviews);$('#sort').onclick=()=>{asc=!asc;$('#sort').textContent=asc?'Sort A–Z':'Sort Z–A';render()};function save(name,content,type){let a=document.createElement('a');a.href=URL.createObjectURL(new Blob([content],{type}));a.download=name;a.click();setTimeout(()=>URL.revokeObjectURL(a.href),500)}$('#json').onclick=()=>save('checked-dataset-v4.json',JSON.stringify(data,null,2),'application/json');$('#csv').onclick=()=>{let cols=['app','what_it_does','category','auth','prototype_access','production_access','api_surface','official_mcp','composio_toolkit','verdict','blocker','next_action'],quote=x=>'"'+(/^[=+\-@\t\r]/.test(String(x??''))?"'":'')+String(x??'').replaceAll('"','""')+'"';save('checked-dataset-v4.csv',[cols.join(','),...data.map(a=>cols.map(k=>quote(k==='app'?a.app:k==='category'?a.category:k==='what_it_does'?a.what_it_does:k==='blocker'?a.blocker:k==='next_action'?a.next_action:k==='prototype_access'?a.prototype_access:k==='production_access'?a.production_access:a.fields[k]?.value)).join(','))].join('\r\n'),'text/csv')};render();renderReviews();renderMisses();
+['search','category','prototype','production','verdict','mcp'].forEach(id=>$('#'+id).addEventListener('input',render));$('#cohort').addEventListener('input',renderReviews);$('#sort').onclick=()=>{asc=!asc;$('#sort').textContent=asc?'Sort A–Z':'Sort Z–A';render()};function save(name,content,type){let a=document.createElement('a');a.href=URL.createObjectURL(new Blob([content],{type}));a.download=name;a.click();setTimeout(()=>URL.revokeObjectURL(a.href),500)}$('#json').onclick=()=>save('checked-dataset-v4.json',JSON.stringify(window.currentList||data,null,2),'application/json');$('#csv').onclick=()=>{let cols=['app','what_it_does','category','auth','prototype_access','production_access','api_surface','official_mcp','composio_toolkit','verdict','blocker','next_action'],quote=x=>'"'+(/^[=+\-@\t\r]/.test(String(x??''))?"'":'')+String(x??'').replaceAll('"','""')+'"';save('checked-dataset-v4.csv',[cols.join(','),...(window.currentList||data).map(a=>cols.map(k=>quote(k==='app'?a.app:k==='category'?a.category:k==='what_it_does'?a.what_it_does:k==='blocker'?a.blocker:k==='next_action'?a.next_action:k==='prototype_access'?a.prototype_access:k==='production_access'?a.production_access:a.fields[k]?.value)).join(','))].join('\r\n'),'text/csv')};render();renderReviews();renderMisses();
 </script></body></html>'''
 
 # Study-scope figures in reader-facing copy come from the checked artifacts.
@@ -670,7 +688,6 @@ page = page.replace('Inspect all 120 reviewed claims', 'Inspect all __REVIEW_TOT
 page = page.replace('all 120 claims', 'all __REVIEW_TOTAL__ claims')
 page = page.replace('ten apps / 60 fields', '__HOLDOUT_APPS__ apps / __HOLDOUT_TOTAL__ fields')
 page = page.replace('ten apps / 60 claims', '__HOLDOUT_APPS__ apps / __HOLDOUT_TOTAL__ claims')
-page = page.replace('gold set — where the study un-blinds', 'gold set — where the study un-blinds')
 page = page.replace('These 80 app × field rows', 'These __GOLD_TOTAL__ app × field rows')
 page = page.replace('across the 80 rows', 'across the __GOLD_TOTAL__ rows')
 page = page.replace('four hand-labelled fields', '__HAND_FIELD_COUNT__ hand-labelled fields')
@@ -731,13 +748,19 @@ replacements = {
     '__AUTH_NO_OVERLAP__': auth_crosscheck_rows['disagree_no_overlap'],
     '__AUTH_TRANSPORT_ONLY__': auth_crosscheck_rows['research_transport_only'],
     '__GOLD_COVERAGE_PCT__': gold_pct(gold_judgment_final['coverage']),
-    '__GOLD_COVERAGE_COUNT__': gold_judgment_final['answered'], '__GOLD_SCOREABLE__': gold_quality['labeled_found'] + gold_quality['labeled_not_stated_in_docs'], '__GOLD_STRICT__': gold_pct(gold_judgment_final['precision_strict']),
-    '__GOLD_STRICT_CI__': gold_ci(gold_judgment_final, 'strict'), '__GOLD_HALF__': gold_pct(gold_judgment_final['precision_half']),
-    '__GOLD_HALF_CI__': gold_ci(gold_judgment_final, 'half'), '__GOLD_N__': gold_judgment_final['n'],
+    '__GOLD_COVERAGE_COUNT__': gold_judgment_final['answered'], '__GOLD_TOTAL__': gold_judgment_final['total'],
+    '__GOLD_SCOREABLE__': gold_judgment_final['scoreable'],
+    '__GOLD_SCOREABLE_COVERAGE_PCT__': gold_pct(gold_judgment_final['scoreable_coverage']),
+    '__GOLD_STRICT_PCT__': gold_pct(gold_judgment_final['precision_strict']),
+    '__GOLD_STRICT__': gold_prec(gold_judgment_final, 'strict'),
+    '__GOLD_STRICT_CI__': gold_ci(gold_judgment_final), '__GOLD_HALF__': gold_pct(gold_judgment_final['precision_half']),
+    '__GOLD_N__': gold_judgment_final['n'], '__GOLD_INCORRECT__': gold_judgment_final['incorrect'],
+    '__FINAL_GOLD_INCORRECT__': final_gold_incorrect,
+    '__LABEL_PROVENANCE__': esc(label_provenance_note),
+    '__SOURCE_ADJUDICATION_COUNT__': source_adjudication_count,
     '__FIRST_GOLD_COVERAGE__': gold_cov(gold_judgment_first), '__FINAL_GOLD_COVERAGE__': gold_cov(gold_judgment_final),
     '__FIRST_GOLD_STRICT__': gold_pct(gold_judgment_first['precision_strict']),
     '__FINAL_GOLD_STRICT__': gold_pct(gold_judgment_final['precision_strict']),
-    '__FINAL_GOLD_INCORRECT__': gold_judgment_final['incorrect'],
     '__SEL_AGREE__': human_agreement['Selected sample']['agree'], '__SEL_AGREE_N__': human_agreement['Selected sample']['n'],
     '__SEL_AGREE_PCT__': pct(human_agreement['Selected sample']['agree'], human_agreement['Selected sample']['n']),
     '__HOLD_AGREE__': human_agreement['Random holdout']['agree'], '__HOLD_AGREE_N__': human_agreement['Random holdout']['n'],
@@ -779,7 +802,8 @@ replacements = {
 }
 for key, value in replacements.items():
     page = page.replace(key, str(value))
-assert not re.search(r'__[A-Z_]+__', page), 'Unreplaced page placeholder'
+unreplaced = sorted(set(re.findall(r'__[A-Z_]+__', page)))
+assert not unreplaced, f'Unreplaced page placeholders: {unreplaced}'
 assert 'synthetic test row' not in page, 'Synthetic fixture must not be published'
 Path('index.html').write_text(page, encoding='utf-8')
 print('Built index.html from checked_dataset_v4.json')

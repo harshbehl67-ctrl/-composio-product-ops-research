@@ -1,0 +1,2754 @@
+{
+  "source": "composio_catalog.json vs checked_dataset_v4.json (researched auth)",
+  "fetched_at": "2026-11-24",
+  "apps_total": 100,
+  "apps_in_catalog": 80,
+  "apps_not_in_catalog": 20,
+  "by_comparison": {
+    "composio_broader": 6,
+    "research_broader": 41,
+    "agree": 31,
+    "disagree_no_overlap": 1,
+    "research_transport_only": 1
+  },
+  "disagreements": 49,
+  "disagreement_apps": [
+    "Salesforce",
+    "HubSpot",
+    "Attio",
+    "Twenty",
+    "Podio",
+    "Zoho CRM",
+    "Close",
+    "Copper",
+    "Zendesk",
+    "Freshdesk",
+    "Pylon",
+    "Plain",
+    "Help Scout",
+    "Gorgias",
+    "Twilio",
+    "Zoho Cliq",
+    "Lark (Larksuite)",
+    "Discord",
+    "Aircall",
+    "Google Ads",
+    "Mailchimp",
+    "Pinterest",
+    "Shopify",
+    "Ahrefs",
+    "Firecrawl",
+    "GitHub",
+    "Vercel",
+    "Netlify",
+    "Neo4j",
+    "Snowflake",
+    "MongoDB Atlas",
+    "Datadog",
+    "Sentry",
+    "Linear",
+    "Jira",
+    "Asana",
+    "Monday.com",
+    "Smartsheet",
+    "Harvest",
+    "Stripe",
+    "QuickBooks",
+    "Xero",
+    "Ramp",
+    "PitchBook",
+    "Otter AI",
+    "Consensus",
+    "higgsfield",
+    "YouTube Transcript",
+    "Grain"
+  ],
+  "records": [
+    {
+      "app": "Salesforce",
+      "in_catalog": true,
+      "composio_slug": "salesforce",
+      "composio_schemes": [
+        "OAUTH2",
+        "S2S_OAUTH2"
+      ],
+      "composio_methods": [
+        "oauth2",
+        "oauth2_client_creds"
+      ],
+      "composio_transport": [],
+      "researched_methods": [
+        "jwt_signed",
+        "oauth2"
+      ],
+      "researched_transport": [
+        "access_token",
+        "bearer"
+      ],
+      "overlap": [
+        "oauth2"
+      ],
+      "composio_not_in_research": [
+        "oauth2_client_creds"
+      ],
+      "research_not_in_composio": [
+        "jwt_signed"
+      ],
+      "comparison": "composio_broader",
+      "likely_cause": "Composio implements a scheme the research does not mention; the research likely under-reported the vendor’s methods."
+    },
+    {
+      "app": "HubSpot",
+      "in_catalog": true,
+      "composio_slug": "hubspot",
+      "composio_schemes": [
+        "API_KEY",
+        "OAUTH2"
+      ],
+      "composio_methods": [
+        "api_key",
+        "oauth2"
+      ],
+      "composio_transport": [],
+      "researched_methods": [
+        "api_key",
+        "oauth2",
+        "oauth2_client_creds"
+      ],
+      "researched_transport": [
+        "access_token",
+        "bearer"
+      ],
+      "overlap": [
+        "api_key",
+        "oauth2"
+      ],
+      "composio_not_in_research": [],
+      "research_not_in_composio": [
+        "oauth2_client_creds"
+      ],
+      "comparison": "research_broader",
+      "likely_cause": "The research documents methods Composio does not implement; Composio covers a subset, which is expected."
+    },
+    {
+      "app": "Pipedrive",
+      "in_catalog": true,
+      "composio_slug": "pipedrive",
+      "composio_schemes": [
+        "API_KEY",
+        "OAUTH2"
+      ],
+      "composio_methods": [
+        "api_key",
+        "oauth2"
+      ],
+      "composio_transport": [],
+      "researched_methods": [
+        "api_key",
+        "oauth2"
+      ],
+      "researched_transport": [
+        "access_token"
+      ],
+      "overlap": [
+        "api_key",
+        "oauth2"
+      ],
+      "composio_not_in_research": [],
+      "research_not_in_composio": [],
+      "comparison": "agree",
+      "likely_cause": ""
+    },
+    {
+      "app": "Attio",
+      "in_catalog": true,
+      "composio_slug": "attio",
+      "composio_schemes": [
+        "OAUTH2"
+      ],
+      "composio_methods": [
+        "oauth2"
+      ],
+      "composio_transport": [],
+      "researched_methods": [
+        "api_key",
+        "basic",
+        "oauth2"
+      ],
+      "researched_transport": [
+        "bearer"
+      ],
+      "overlap": [
+        "oauth2"
+      ],
+      "composio_not_in_research": [],
+      "research_not_in_composio": [
+        "api_key",
+        "basic"
+      ],
+      "comparison": "research_broader",
+      "likely_cause": "The research documents methods Composio does not implement; Composio covers a subset, which is expected."
+    },
+    {
+      "app": "Twenty",
+      "in_catalog": true,
+      "composio_slug": "twenty",
+      "composio_schemes": [
+        "API_KEY"
+      ],
+      "composio_methods": [
+        "api_key"
+      ],
+      "composio_transport": [],
+      "researched_methods": [
+        "api_key",
+        "oauth2",
+        "oauth2_client_creds"
+      ],
+      "researched_transport": [],
+      "overlap": [
+        "api_key"
+      ],
+      "composio_not_in_research": [],
+      "research_not_in_composio": [
+        "oauth2",
+        "oauth2_client_creds"
+      ],
+      "comparison": "research_broader",
+      "likely_cause": "The research documents methods Composio does not implement; Composio covers a subset, which is expected."
+    },
+    {
+      "app": "Podio",
+      "in_catalog": true,
+      "composio_slug": "podio",
+      "composio_schemes": [
+        "OAUTH2"
+      ],
+      "composio_methods": [
+        "oauth2"
+      ],
+      "composio_transport": [],
+      "researched_methods": [
+        "api_key",
+        "oauth2"
+      ],
+      "researched_transport": [
+        "access_token"
+      ],
+      "overlap": [
+        "oauth2"
+      ],
+      "composio_not_in_research": [],
+      "research_not_in_composio": [
+        "api_key"
+      ],
+      "comparison": "research_broader",
+      "likely_cause": "The research documents methods Composio does not implement; Composio covers a subset, which is expected."
+    },
+    {
+      "app": "Zoho CRM",
+      "in_catalog": true,
+      "composio_slug": "zoho",
+      "composio_schemes": [
+        "OAUTH2"
+      ],
+      "composio_methods": [
+        "oauth2"
+      ],
+      "composio_transport": [],
+      "researched_methods": [
+        "api_key",
+        "oauth2",
+        "oauth2_client_creds"
+      ],
+      "researched_transport": [
+        "access_token",
+        "bearer"
+      ],
+      "overlap": [
+        "oauth2"
+      ],
+      "composio_not_in_research": [],
+      "research_not_in_composio": [
+        "api_key",
+        "oauth2_client_creds"
+      ],
+      "comparison": "research_broader",
+      "likely_cause": "The research documents methods Composio does not implement; Composio covers a subset, which is expected."
+    },
+    {
+      "app": "Close",
+      "in_catalog": true,
+      "composio_slug": "close",
+      "composio_schemes": [
+        "API_KEY"
+      ],
+      "composio_methods": [
+        "api_key"
+      ],
+      "composio_transport": [],
+      "researched_methods": [
+        "api_key",
+        "basic",
+        "oauth2"
+      ],
+      "researched_transport": [
+        "access_token",
+        "bearer"
+      ],
+      "overlap": [
+        "api_key"
+      ],
+      "composio_not_in_research": [],
+      "research_not_in_composio": [
+        "basic",
+        "oauth2"
+      ],
+      "comparison": "research_broader",
+      "likely_cause": "The research documents methods Composio does not implement; Composio covers a subset, which is expected."
+    },
+    {
+      "app": "Copper",
+      "in_catalog": true,
+      "composio_slug": "copper",
+      "composio_schemes": [
+        "API_KEY"
+      ],
+      "composio_methods": [
+        "api_key"
+      ],
+      "composio_transport": [],
+      "researched_methods": [
+        "api_key",
+        "oauth2"
+      ],
+      "researched_transport": [
+        "access_token"
+      ],
+      "overlap": [
+        "api_key"
+      ],
+      "composio_not_in_research": [],
+      "research_not_in_composio": [
+        "oauth2"
+      ],
+      "comparison": "research_broader",
+      "likely_cause": "The research documents methods Composio does not implement; Composio covers a subset, which is expected."
+    },
+    {
+      "app": "DealCloud",
+      "in_catalog": false,
+      "composio_slug": null,
+      "composio_schemes": [],
+      "composio_methods": [],
+      "composio_transport": [],
+      "researched_methods": [
+        "api_key",
+        "oauth2",
+        "oauth2_client_creds"
+      ],
+      "researched_transport": [
+        "access_token",
+        "bearer"
+      ],
+      "overlap": [],
+      "composio_not_in_research": [],
+      "research_not_in_composio": [
+        "api_key",
+        "oauth2",
+        "oauth2_client_creds"
+      ],
+      "comparison": "not_in_catalog",
+      "likely_cause": "No Composio toolkit matched this app, so there is no catalog auth to compare against."
+    },
+    {
+      "app": "Zendesk",
+      "in_catalog": true,
+      "composio_slug": "zendesk",
+      "composio_schemes": [
+        "OAUTH2"
+      ],
+      "composio_methods": [
+        "oauth2"
+      ],
+      "composio_transport": [],
+      "researched_methods": [
+        "api_key",
+        "basic",
+        "oauth2"
+      ],
+      "researched_transport": [
+        "access_token"
+      ],
+      "overlap": [
+        "oauth2"
+      ],
+      "composio_not_in_research": [],
+      "research_not_in_composio": [
+        "api_key",
+        "basic"
+      ],
+      "comparison": "research_broader",
+      "likely_cause": "The research documents methods Composio does not implement; Composio covers a subset, which is expected."
+    },
+    {
+      "app": "Intercom",
+      "in_catalog": true,
+      "composio_slug": "intercom",
+      "composio_schemes": [
+        "OAUTH2"
+      ],
+      "composio_methods": [
+        "oauth2"
+      ],
+      "composio_transport": [],
+      "researched_methods": [
+        "oauth2"
+      ],
+      "researched_transport": [
+        "access_token"
+      ],
+      "overlap": [
+        "oauth2"
+      ],
+      "composio_not_in_research": [],
+      "research_not_in_composio": [],
+      "comparison": "agree",
+      "likely_cause": ""
+    },
+    {
+      "app": "Freshdesk",
+      "in_catalog": true,
+      "composio_slug": "freshdesk",
+      "composio_schemes": [
+        "API_KEY"
+      ],
+      "composio_methods": [
+        "api_key"
+      ],
+      "composio_transport": [],
+      "researched_methods": [
+        "api_key",
+        "basic"
+      ],
+      "researched_transport": [],
+      "overlap": [
+        "api_key"
+      ],
+      "composio_not_in_research": [],
+      "research_not_in_composio": [
+        "basic"
+      ],
+      "comparison": "research_broader",
+      "likely_cause": "The research documents methods Composio does not implement; Composio covers a subset, which is expected."
+    },
+    {
+      "app": "Front",
+      "in_catalog": true,
+      "composio_slug": "front",
+      "composio_schemes": [
+        "API_KEY",
+        "OAUTH2"
+      ],
+      "composio_methods": [
+        "api_key",
+        "oauth2"
+      ],
+      "composio_transport": [],
+      "researched_methods": [
+        "api_key",
+        "oauth2"
+      ],
+      "researched_transport": [
+        "access_token"
+      ],
+      "overlap": [
+        "api_key",
+        "oauth2"
+      ],
+      "composio_not_in_research": [],
+      "research_not_in_composio": [],
+      "comparison": "agree",
+      "likely_cause": ""
+    },
+    {
+      "app": "Pylon",
+      "in_catalog": true,
+      "composio_slug": "pylon_mcp",
+      "composio_schemes": [
+        "DCR_OAUTH"
+      ],
+      "composio_methods": [
+        "oauth2"
+      ],
+      "composio_transport": [],
+      "researched_methods": [
+        "api_key"
+      ],
+      "researched_transport": [
+        "bearer"
+      ],
+      "overlap": [],
+      "composio_not_in_research": [
+        "oauth2"
+      ],
+      "research_not_in_composio": [
+        "api_key"
+      ],
+      "comparison": "disagree_no_overlap",
+      "likely_cause": "Research and Composio share no auth method; check the toolkit mapping, and whether the research missed the scheme Composio implements."
+    },
+    {
+      "app": "LiveAgent",
+      "in_catalog": false,
+      "composio_slug": null,
+      "composio_schemes": [],
+      "composio_methods": [],
+      "composio_transport": [],
+      "researched_methods": [
+        "api_key"
+      ],
+      "researched_transport": [],
+      "overlap": [],
+      "composio_not_in_research": [],
+      "research_not_in_composio": [
+        "api_key"
+      ],
+      "comparison": "not_in_catalog",
+      "likely_cause": "No Composio toolkit matched this app, so there is no catalog auth to compare against."
+    },
+    {
+      "app": "Plain",
+      "in_catalog": true,
+      "composio_slug": "plain",
+      "composio_schemes": [
+        "API_KEY"
+      ],
+      "composio_methods": [
+        "api_key"
+      ],
+      "composio_transport": [],
+      "researched_methods": [
+        "api_key",
+        "oauth2"
+      ],
+      "researched_transport": [],
+      "overlap": [
+        "api_key"
+      ],
+      "composio_not_in_research": [],
+      "research_not_in_composio": [
+        "oauth2"
+      ],
+      "comparison": "research_broader",
+      "likely_cause": "The research documents methods Composio does not implement; Composio covers a subset, which is expected."
+    },
+    {
+      "app": "Help Scout",
+      "in_catalog": true,
+      "composio_slug": "help_scout",
+      "composio_schemes": [
+        "OAUTH2"
+      ],
+      "composio_methods": [
+        "oauth2"
+      ],
+      "composio_transport": [],
+      "researched_methods": [
+        "api_key",
+        "basic",
+        "oauth2",
+        "oauth2_client_creds"
+      ],
+      "researched_transport": [
+        "access_token"
+      ],
+      "overlap": [
+        "oauth2"
+      ],
+      "composio_not_in_research": [],
+      "research_not_in_composio": [
+        "api_key",
+        "basic",
+        "oauth2_client_creds"
+      ],
+      "comparison": "research_broader",
+      "likely_cause": "The research documents methods Composio does not implement; Composio covers a subset, which is expected."
+    },
+    {
+      "app": "Gorgias",
+      "in_catalog": true,
+      "composio_slug": "gorgias",
+      "composio_schemes": [
+        "API_KEY",
+        "OAUTH2"
+      ],
+      "composio_methods": [
+        "api_key",
+        "oauth2"
+      ],
+      "composio_transport": [],
+      "researched_methods": [
+        "api_key",
+        "basic",
+        "oauth2"
+      ],
+      "researched_transport": [
+        "access_token"
+      ],
+      "overlap": [
+        "api_key",
+        "oauth2"
+      ],
+      "composio_not_in_research": [],
+      "research_not_in_composio": [
+        "basic"
+      ],
+      "comparison": "research_broader",
+      "likely_cause": "The research documents methods Composio does not implement; Composio covers a subset, which is expected."
+    },
+    {
+      "app": "Gladly",
+      "in_catalog": false,
+      "composio_slug": null,
+      "composio_schemes": [],
+      "composio_methods": [],
+      "composio_transport": [],
+      "researched_methods": [
+        "api_key",
+        "basic"
+      ],
+      "researched_transport": [],
+      "overlap": [],
+      "composio_not_in_research": [],
+      "research_not_in_composio": [
+        "api_key",
+        "basic"
+      ],
+      "comparison": "not_in_catalog",
+      "likely_cause": "No Composio toolkit matched this app, so there is no catalog auth to compare against."
+    },
+    {
+      "app": "Slack",
+      "in_catalog": true,
+      "composio_slug": "slack",
+      "composio_schemes": [
+        "OAUTH2"
+      ],
+      "composio_methods": [
+        "oauth2"
+      ],
+      "composio_transport": [],
+      "researched_methods": [
+        "oauth2"
+      ],
+      "researched_transport": [
+        "bearer"
+      ],
+      "overlap": [
+        "oauth2"
+      ],
+      "composio_not_in_research": [],
+      "research_not_in_composio": [],
+      "comparison": "agree",
+      "likely_cause": ""
+    },
+    {
+      "app": "Twilio",
+      "in_catalog": true,
+      "composio_slug": "twilio",
+      "composio_schemes": [
+        "API_KEY",
+        "BASIC",
+        "S2S_OAUTH2"
+      ],
+      "composio_methods": [
+        "api_key",
+        "basic",
+        "oauth2_client_creds"
+      ],
+      "composio_transport": [],
+      "researched_methods": [
+        "api_key",
+        "basic"
+      ],
+      "researched_transport": [],
+      "overlap": [
+        "api_key",
+        "basic"
+      ],
+      "composio_not_in_research": [
+        "oauth2_client_creds"
+      ],
+      "research_not_in_composio": [],
+      "comparison": "composio_broader",
+      "likely_cause": "Composio implements a scheme the research does not mention; the research likely under-reported the vendor’s methods."
+    },
+    {
+      "app": "Zoho Cliq",
+      "in_catalog": true,
+      "composio_slug": "zoho_cliq",
+      "composio_schemes": [
+        "OAUTH2"
+      ],
+      "composio_methods": [
+        "oauth2"
+      ],
+      "composio_transport": [],
+      "researched_methods": [
+        "api_key",
+        "oauth2"
+      ],
+      "researched_transport": [
+        "access_token"
+      ],
+      "overlap": [
+        "oauth2"
+      ],
+      "composio_not_in_research": [],
+      "research_not_in_composio": [
+        "api_key"
+      ],
+      "comparison": "research_broader",
+      "likely_cause": "The research documents methods Composio does not implement; Composio covers a subset, which is expected."
+    },
+    {
+      "app": "Lark (Larksuite)",
+      "in_catalog": true,
+      "composio_slug": "lark",
+      "composio_schemes": [
+        "OAUTH2"
+      ],
+      "composio_methods": [
+        "oauth2"
+      ],
+      "composio_transport": [],
+      "researched_methods": [
+        "api_key",
+        "oauth2"
+      ],
+      "researched_transport": [
+        "access_token"
+      ],
+      "overlap": [
+        "oauth2"
+      ],
+      "composio_not_in_research": [],
+      "research_not_in_composio": [
+        "api_key"
+      ],
+      "comparison": "research_broader",
+      "likely_cause": "The research documents methods Composio does not implement; Composio covers a subset, which is expected."
+    },
+    {
+      "app": "Pumble",
+      "in_catalog": true,
+      "composio_slug": "pumble",
+      "composio_schemes": [
+        "API_KEY"
+      ],
+      "composio_methods": [
+        "api_key"
+      ],
+      "composio_transport": [],
+      "researched_methods": [
+        "api_key"
+      ],
+      "researched_transport": [],
+      "overlap": [
+        "api_key"
+      ],
+      "composio_not_in_research": [],
+      "research_not_in_composio": [],
+      "comparison": "agree",
+      "likely_cause": ""
+    },
+    {
+      "app": "Discord",
+      "in_catalog": true,
+      "composio_slug": "discord",
+      "composio_schemes": [
+        "OAUTH2"
+      ],
+      "composio_methods": [
+        "oauth2"
+      ],
+      "composio_transport": [],
+      "researched_methods": [
+        "api_key",
+        "basic",
+        "oauth2"
+      ],
+      "researched_transport": [
+        "bearer"
+      ],
+      "overlap": [
+        "oauth2"
+      ],
+      "composio_not_in_research": [],
+      "research_not_in_composio": [
+        "api_key",
+        "basic"
+      ],
+      "comparison": "research_broader",
+      "likely_cause": "The research documents methods Composio does not implement; Composio covers a subset, which is expected."
+    },
+    {
+      "app": "Telegram",
+      "in_catalog": true,
+      "composio_slug": "telegram",
+      "composio_schemes": [
+        "API_KEY"
+      ],
+      "composio_methods": [
+        "api_key"
+      ],
+      "composio_transport": [],
+      "researched_methods": [
+        "api_key"
+      ],
+      "researched_transport": [],
+      "overlap": [
+        "api_key"
+      ],
+      "composio_not_in_research": [],
+      "research_not_in_composio": [],
+      "comparison": "agree",
+      "likely_cause": ""
+    },
+    {
+      "app": "WhatsApp Business",
+      "in_catalog": true,
+      "composio_slug": "whatsapp",
+      "composio_schemes": [
+        "API_KEY",
+        "OAUTH2"
+      ],
+      "composio_methods": [
+        "api_key",
+        "oauth2"
+      ],
+      "composio_transport": [],
+      "researched_methods": [
+        "api_key",
+        "oauth2"
+      ],
+      "researched_transport": [
+        "access_token"
+      ],
+      "overlap": [
+        "api_key",
+        "oauth2"
+      ],
+      "composio_not_in_research": [],
+      "research_not_in_composio": [],
+      "comparison": "agree",
+      "likely_cause": ""
+    },
+    {
+      "app": "Aircall",
+      "in_catalog": true,
+      "composio_slug": "aircall",
+      "composio_schemes": [
+        "BASIC",
+        "OAUTH2"
+      ],
+      "composio_methods": [
+        "basic",
+        "oauth2"
+      ],
+      "composio_transport": [],
+      "researched_methods": [
+        "api_key",
+        "basic",
+        "oauth2"
+      ],
+      "researched_transport": [],
+      "overlap": [
+        "basic",
+        "oauth2"
+      ],
+      "composio_not_in_research": [],
+      "research_not_in_composio": [
+        "api_key"
+      ],
+      "comparison": "research_broader",
+      "likely_cause": "The research documents methods Composio does not implement; Composio covers a subset, which is expected."
+    },
+    {
+      "app": "Vonage",
+      "in_catalog": false,
+      "composio_slug": null,
+      "composio_schemes": [],
+      "composio_methods": [],
+      "composio_transport": [],
+      "researched_methods": [
+        "api_key",
+        "basic",
+        "jwt_signed"
+      ],
+      "researched_transport": [],
+      "overlap": [],
+      "composio_not_in_research": [],
+      "research_not_in_composio": [
+        "api_key",
+        "basic",
+        "jwt_signed"
+      ],
+      "comparison": "not_in_catalog",
+      "likely_cause": "No Composio toolkit matched this app, so there is no catalog auth to compare against."
+    },
+    {
+      "app": "Google Ads",
+      "in_catalog": true,
+      "composio_slug": "googleads",
+      "composio_schemes": [
+        "OAUTH2"
+      ],
+      "composio_methods": [
+        "oauth2"
+      ],
+      "composio_transport": [],
+      "researched_methods": [
+        "oauth2",
+        "oauth2_service_account"
+      ],
+      "researched_transport": [],
+      "overlap": [
+        "oauth2"
+      ],
+      "composio_not_in_research": [],
+      "research_not_in_composio": [
+        "oauth2_service_account"
+      ],
+      "comparison": "research_broader",
+      "likely_cause": "The research documents methods Composio does not implement; Composio covers a subset, which is expected."
+    },
+    {
+      "app": "Meta Ads",
+      "in_catalog": true,
+      "composio_slug": "metaads",
+      "composio_schemes": [
+        "API_KEY",
+        "OAUTH2"
+      ],
+      "composio_methods": [
+        "api_key",
+        "oauth2"
+      ],
+      "composio_transport": [],
+      "researched_methods": [
+        "api_key",
+        "oauth2"
+      ],
+      "researched_transport": [
+        "access_token"
+      ],
+      "overlap": [
+        "api_key",
+        "oauth2"
+      ],
+      "composio_not_in_research": [],
+      "research_not_in_composio": [],
+      "comparison": "agree",
+      "likely_cause": ""
+    },
+    {
+      "app": "LinkedIn Ads",
+      "in_catalog": true,
+      "composio_slug": "linkedin_ads",
+      "composio_schemes": [
+        "OAUTH2"
+      ],
+      "composio_methods": [
+        "oauth2"
+      ],
+      "composio_transport": [],
+      "researched_methods": [
+        "oauth2"
+      ],
+      "researched_transport": [
+        "access_token"
+      ],
+      "overlap": [
+        "oauth2"
+      ],
+      "composio_not_in_research": [],
+      "research_not_in_composio": [],
+      "comparison": "agree",
+      "likely_cause": ""
+    },
+    {
+      "app": "GoHighLevel",
+      "in_catalog": true,
+      "composio_slug": "highlevel_location",
+      "composio_schemes": [
+        "BEARER_TOKEN",
+        "OAUTH2"
+      ],
+      "composio_methods": [
+        "oauth2"
+      ],
+      "composio_transport": [
+        "bearer"
+      ],
+      "researched_methods": [
+        "oauth2"
+      ],
+      "researched_transport": [
+        "access_token",
+        "bearer"
+      ],
+      "overlap": [
+        "oauth2"
+      ],
+      "composio_not_in_research": [],
+      "research_not_in_composio": [],
+      "comparison": "agree",
+      "likely_cause": ""
+    },
+    {
+      "app": "Mailchimp",
+      "in_catalog": true,
+      "composio_slug": "mailchimp",
+      "composio_schemes": [
+        "OAUTH2"
+      ],
+      "composio_methods": [
+        "oauth2"
+      ],
+      "composio_transport": [],
+      "researched_methods": [
+        "api_key",
+        "basic",
+        "oauth2"
+      ],
+      "researched_transport": [
+        "access_token",
+        "bearer"
+      ],
+      "overlap": [
+        "oauth2"
+      ],
+      "composio_not_in_research": [],
+      "research_not_in_composio": [
+        "api_key",
+        "basic"
+      ],
+      "comparison": "research_broader",
+      "likely_cause": "The research documents methods Composio does not implement; Composio covers a subset, which is expected."
+    },
+    {
+      "app": "Klaviyo",
+      "in_catalog": true,
+      "composio_slug": "klaviyo",
+      "composio_schemes": [
+        "API_KEY",
+        "OAUTH2"
+      ],
+      "composio_methods": [
+        "api_key",
+        "oauth2"
+      ],
+      "composio_transport": [],
+      "researched_methods": [
+        "api_key",
+        "oauth2"
+      ],
+      "researched_transport": [
+        "access_token"
+      ],
+      "overlap": [
+        "api_key",
+        "oauth2"
+      ],
+      "composio_not_in_research": [],
+      "research_not_in_composio": [],
+      "comparison": "agree",
+      "likely_cause": ""
+    },
+    {
+      "app": "systeme.io",
+      "in_catalog": false,
+      "composio_slug": null,
+      "composio_schemes": [],
+      "composio_methods": [],
+      "composio_transport": [],
+      "researched_methods": [
+        "api_key"
+      ],
+      "researched_transport": [],
+      "overlap": [],
+      "composio_not_in_research": [],
+      "research_not_in_composio": [
+        "api_key"
+      ],
+      "comparison": "not_in_catalog",
+      "likely_cause": "No Composio toolkit matched this app, so there is no catalog auth to compare against."
+    },
+    {
+      "app": "Pinterest",
+      "in_catalog": true,
+      "composio_slug": "pinterest",
+      "composio_schemes": [
+        "OAUTH2"
+      ],
+      "composio_methods": [
+        "oauth2"
+      ],
+      "composio_transport": [],
+      "researched_methods": [
+        "oauth2",
+        "oauth2_client_creds"
+      ],
+      "researched_transport": [
+        "access_token"
+      ],
+      "overlap": [
+        "oauth2"
+      ],
+      "composio_not_in_research": [],
+      "research_not_in_composio": [
+        "oauth2_client_creds"
+      ],
+      "comparison": "research_broader",
+      "likely_cause": "The research documents methods Composio does not implement; Composio covers a subset, which is expected."
+    },
+    {
+      "app": "Threads (Meta)",
+      "in_catalog": true,
+      "composio_slug": "threads",
+      "composio_schemes": [
+        "OAUTH2"
+      ],
+      "composio_methods": [
+        "oauth2"
+      ],
+      "composio_transport": [],
+      "researched_methods": [
+        "oauth2"
+      ],
+      "researched_transport": [
+        "access_token"
+      ],
+      "overlap": [
+        "oauth2"
+      ],
+      "composio_not_in_research": [],
+      "research_not_in_composio": [],
+      "comparison": "agree",
+      "likely_cause": ""
+    },
+    {
+      "app": "SendGrid",
+      "in_catalog": true,
+      "composio_slug": "sendgrid",
+      "composio_schemes": [
+        "API_KEY"
+      ],
+      "composio_methods": [
+        "api_key"
+      ],
+      "composio_transport": [],
+      "researched_methods": [
+        "api_key"
+      ],
+      "researched_transport": [
+        "bearer"
+      ],
+      "overlap": [
+        "api_key"
+      ],
+      "composio_not_in_research": [],
+      "research_not_in_composio": [],
+      "comparison": "agree",
+      "likely_cause": ""
+    },
+    {
+      "app": "Shopify",
+      "in_catalog": true,
+      "composio_slug": "shopify",
+      "composio_schemes": [
+        "OAUTH2",
+        "S2S_OAUTH2"
+      ],
+      "composio_methods": [
+        "oauth2",
+        "oauth2_client_creds"
+      ],
+      "composio_transport": [],
+      "researched_methods": [
+        "oauth2"
+      ],
+      "researched_transport": [
+        "access_token"
+      ],
+      "overlap": [
+        "oauth2"
+      ],
+      "composio_not_in_research": [
+        "oauth2_client_creds"
+      ],
+      "research_not_in_composio": [],
+      "comparison": "composio_broader",
+      "likely_cause": "Composio implements a scheme the research does not mention; the research likely under-reported the vendor’s methods."
+    },
+    {
+      "app": "WooCommerce",
+      "in_catalog": false,
+      "composio_slug": null,
+      "composio_schemes": [],
+      "composio_methods": [],
+      "composio_transport": [],
+      "researched_methods": [
+        "api_key",
+        "basic",
+        "oauth2"
+      ],
+      "researched_transport": [],
+      "overlap": [],
+      "composio_not_in_research": [],
+      "research_not_in_composio": [
+        "api_key",
+        "basic",
+        "oauth2"
+      ],
+      "comparison": "not_in_catalog",
+      "likely_cause": "No Composio toolkit matched this app, so there is no catalog auth to compare against."
+    },
+    {
+      "app": "BigCommerce",
+      "in_catalog": true,
+      "composio_slug": "bigcommerce",
+      "composio_schemes": [
+        "API_KEY",
+        "OAUTH2"
+      ],
+      "composio_methods": [
+        "api_key",
+        "oauth2"
+      ],
+      "composio_transport": [],
+      "researched_methods": [
+        "api_key",
+        "oauth2"
+      ],
+      "researched_transport": [
+        "access_token"
+      ],
+      "overlap": [
+        "api_key",
+        "oauth2"
+      ],
+      "composio_not_in_research": [],
+      "research_not_in_composio": [],
+      "comparison": "agree",
+      "likely_cause": ""
+    },
+    {
+      "app": "Salesforce Commerce Cloud",
+      "in_catalog": false,
+      "composio_slug": null,
+      "composio_schemes": [],
+      "composio_methods": [],
+      "composio_transport": [],
+      "researched_methods": [
+        "api_key",
+        "jwt_signed",
+        "oauth2",
+        "oauth2_client_creds"
+      ],
+      "researched_transport": [
+        "access_token"
+      ],
+      "overlap": [],
+      "composio_not_in_research": [],
+      "research_not_in_composio": [
+        "api_key",
+        "jwt_signed",
+        "oauth2",
+        "oauth2_client_creds"
+      ],
+      "comparison": "not_in_catalog",
+      "likely_cause": "No Composio toolkit matched this app, so there is no catalog auth to compare against."
+    },
+    {
+      "app": "Magento (Adobe Commerce)",
+      "in_catalog": false,
+      "composio_slug": null,
+      "composio_schemes": [],
+      "composio_methods": [],
+      "composio_transport": [],
+      "researched_methods": [
+        "api_key",
+        "oauth2",
+        "oauth2_client_creds"
+      ],
+      "researched_transport": [
+        "access_token"
+      ],
+      "overlap": [],
+      "composio_not_in_research": [],
+      "research_not_in_composio": [
+        "api_key",
+        "oauth2",
+        "oauth2_client_creds"
+      ],
+      "comparison": "not_in_catalog",
+      "likely_cause": "No Composio toolkit matched this app, so there is no catalog auth to compare against."
+    },
+    {
+      "app": "Squarespace",
+      "in_catalog": false,
+      "composio_slug": null,
+      "composio_schemes": [],
+      "composio_methods": [],
+      "composio_transport": [],
+      "researched_methods": [
+        "api_key",
+        "oauth2"
+      ],
+      "researched_transport": [],
+      "overlap": [],
+      "composio_not_in_research": [],
+      "research_not_in_composio": [
+        "api_key",
+        "oauth2"
+      ],
+      "comparison": "not_in_catalog",
+      "likely_cause": "No Composio toolkit matched this app, so there is no catalog auth to compare against."
+    },
+    {
+      "app": "Ecwid",
+      "in_catalog": false,
+      "composio_slug": null,
+      "composio_schemes": [],
+      "composio_methods": [],
+      "composio_transport": [],
+      "researched_methods": [
+        "oauth2"
+      ],
+      "researched_transport": [
+        "access_token"
+      ],
+      "overlap": [],
+      "composio_not_in_research": [],
+      "research_not_in_composio": [
+        "oauth2"
+      ],
+      "comparison": "not_in_catalog",
+      "likely_cause": "No Composio toolkit matched this app, so there is no catalog auth to compare against."
+    },
+    {
+      "app": "Gumroad",
+      "in_catalog": true,
+      "composio_slug": "gumroad",
+      "composio_schemes": [
+        "OAUTH2"
+      ],
+      "composio_methods": [
+        "oauth2"
+      ],
+      "composio_transport": [],
+      "researched_methods": [
+        "oauth2"
+      ],
+      "researched_transport": [
+        "access_token"
+      ],
+      "overlap": [
+        "oauth2"
+      ],
+      "composio_not_in_research": [],
+      "research_not_in_composio": [],
+      "comparison": "agree",
+      "likely_cause": ""
+    },
+    {
+      "app": "Amazon Selling Partner",
+      "in_catalog": false,
+      "composio_slug": null,
+      "composio_schemes": [],
+      "composio_methods": [],
+      "composio_transport": [],
+      "researched_methods": [
+        "jwt_signed",
+        "oauth2"
+      ],
+      "researched_transport": [
+        "access_token"
+      ],
+      "overlap": [],
+      "composio_not_in_research": [],
+      "research_not_in_composio": [
+        "jwt_signed",
+        "oauth2"
+      ],
+      "comparison": "not_in_catalog",
+      "likely_cause": "No Composio toolkit matched this app, so there is no catalog auth to compare against."
+    },
+    {
+      "app": "fanbasis",
+      "in_catalog": false,
+      "composio_slug": null,
+      "composio_schemes": [],
+      "composio_methods": [],
+      "composio_transport": [],
+      "researched_methods": [],
+      "researched_transport": [],
+      "overlap": [],
+      "composio_not_in_research": [],
+      "research_not_in_composio": [],
+      "comparison": "not_in_catalog",
+      "likely_cause": "No Composio toolkit matched this app, so there is no catalog auth to compare against."
+    },
+    {
+      "app": "DataForSEO",
+      "in_catalog": true,
+      "composio_slug": "dataforseo",
+      "composio_schemes": [
+        "BASIC"
+      ],
+      "composio_methods": [
+        "basic"
+      ],
+      "composio_transport": [],
+      "researched_methods": [
+        "basic"
+      ],
+      "researched_transport": [],
+      "overlap": [
+        "basic"
+      ],
+      "composio_not_in_research": [],
+      "research_not_in_composio": [],
+      "comparison": "agree",
+      "likely_cause": ""
+    },
+    {
+      "app": "SE Ranking",
+      "in_catalog": false,
+      "composio_slug": null,
+      "composio_schemes": [],
+      "composio_methods": [],
+      "composio_transport": [],
+      "researched_methods": [
+        "api_key"
+      ],
+      "researched_transport": [],
+      "overlap": [],
+      "composio_not_in_research": [],
+      "research_not_in_composio": [
+        "api_key"
+      ],
+      "comparison": "not_in_catalog",
+      "likely_cause": "No Composio toolkit matched this app, so there is no catalog auth to compare against."
+    },
+    {
+      "app": "Ahrefs",
+      "in_catalog": true,
+      "composio_slug": "ahrefs",
+      "composio_schemes": [
+        "API_KEY",
+        "OAUTH2"
+      ],
+      "composio_methods": [
+        "api_key",
+        "oauth2"
+      ],
+      "composio_transport": [],
+      "researched_methods": [
+        "api_key"
+      ],
+      "researched_transport": [],
+      "overlap": [
+        "api_key"
+      ],
+      "composio_not_in_research": [
+        "oauth2"
+      ],
+      "research_not_in_composio": [],
+      "comparison": "composio_broader",
+      "likely_cause": "Composio implements a scheme the research does not mention; the research likely under-reported the vendor’s methods."
+    },
+    {
+      "app": "MrScraper",
+      "in_catalog": true,
+      "composio_slug": "mrscraper",
+      "composio_schemes": [
+        "API_KEY"
+      ],
+      "composio_methods": [
+        "api_key"
+      ],
+      "composio_transport": [],
+      "researched_methods": [
+        "api_key"
+      ],
+      "researched_transport": [],
+      "overlap": [
+        "api_key"
+      ],
+      "composio_not_in_research": [],
+      "research_not_in_composio": [],
+      "comparison": "agree",
+      "likely_cause": ""
+    },
+    {
+      "app": "Apify",
+      "in_catalog": true,
+      "composio_slug": "apify",
+      "composio_schemes": [
+        "API_KEY"
+      ],
+      "composio_methods": [
+        "api_key"
+      ],
+      "composio_transport": [],
+      "researched_methods": [
+        "api_key"
+      ],
+      "researched_transport": [],
+      "overlap": [
+        "api_key"
+      ],
+      "composio_not_in_research": [],
+      "research_not_in_composio": [],
+      "comparison": "agree",
+      "likely_cause": ""
+    },
+    {
+      "app": "Firecrawl",
+      "in_catalog": true,
+      "composio_slug": "firecrawl",
+      "composio_schemes": [
+        "API_KEY"
+      ],
+      "composio_methods": [
+        "api_key"
+      ],
+      "composio_transport": [],
+      "researched_methods": [
+        "api_key",
+        "oauth2"
+      ],
+      "researched_transport": [],
+      "overlap": [
+        "api_key"
+      ],
+      "composio_not_in_research": [],
+      "research_not_in_composio": [
+        "oauth2"
+      ],
+      "comparison": "research_broader",
+      "likely_cause": "The research documents methods Composio does not implement; Composio covers a subset, which is expected."
+    },
+    {
+      "app": "Bright Data",
+      "in_catalog": true,
+      "composio_slug": "brightdata",
+      "composio_schemes": [
+        "API_KEY"
+      ],
+      "composio_methods": [
+        "api_key"
+      ],
+      "composio_transport": [],
+      "researched_methods": [
+        "api_key"
+      ],
+      "researched_transport": [],
+      "overlap": [
+        "api_key"
+      ],
+      "composio_not_in_research": [],
+      "research_not_in_composio": [],
+      "comparison": "agree",
+      "likely_cause": ""
+    },
+    {
+      "app": "Sherlock",
+      "in_catalog": false,
+      "composio_slug": null,
+      "composio_schemes": [],
+      "composio_methods": [],
+      "composio_transport": [],
+      "researched_methods": [
+        "none"
+      ],
+      "researched_transport": [],
+      "overlap": [],
+      "composio_not_in_research": [],
+      "research_not_in_composio": [
+        "none"
+      ],
+      "comparison": "not_in_catalog",
+      "likely_cause": "No Composio toolkit matched this app, so there is no catalog auth to compare against."
+    },
+    {
+      "app": "Waterfall.io",
+      "in_catalog": false,
+      "composio_slug": null,
+      "composio_schemes": [],
+      "composio_methods": [],
+      "composio_transport": [],
+      "researched_methods": [
+        "api_key"
+      ],
+      "researched_transport": [],
+      "overlap": [],
+      "composio_not_in_research": [],
+      "research_not_in_composio": [
+        "api_key"
+      ],
+      "comparison": "not_in_catalog",
+      "likely_cause": "No Composio toolkit matched this app, so there is no catalog auth to compare against."
+    },
+    {
+      "app": "Clay",
+      "in_catalog": true,
+      "composio_slug": "clay",
+      "composio_schemes": [
+        "API_KEY"
+      ],
+      "composio_methods": [
+        "api_key"
+      ],
+      "composio_transport": [],
+      "researched_methods": [
+        "api_key"
+      ],
+      "researched_transport": [],
+      "overlap": [
+        "api_key"
+      ],
+      "composio_not_in_research": [],
+      "research_not_in_composio": [],
+      "comparison": "agree",
+      "likely_cause": ""
+    },
+    {
+      "app": "GitHub",
+      "in_catalog": true,
+      "composio_slug": "github",
+      "composio_schemes": [
+        "OAUTH2"
+      ],
+      "composio_methods": [
+        "oauth2"
+      ],
+      "composio_transport": [],
+      "researched_methods": [
+        "api_key",
+        "basic",
+        "oauth2"
+      ],
+      "researched_transport": [
+        "access_token",
+        "bearer"
+      ],
+      "overlap": [
+        "oauth2"
+      ],
+      "composio_not_in_research": [],
+      "research_not_in_composio": [
+        "api_key",
+        "basic"
+      ],
+      "comparison": "research_broader",
+      "likely_cause": "The research documents methods Composio does not implement; Composio covers a subset, which is expected."
+    },
+    {
+      "app": "Vercel",
+      "in_catalog": true,
+      "composio_slug": "vercel",
+      "composio_schemes": [
+        "API_KEY",
+        "OAUTH2"
+      ],
+      "composio_methods": [
+        "api_key",
+        "oauth2"
+      ],
+      "composio_transport": [],
+      "researched_methods": [],
+      "researched_transport": [
+        "access_token",
+        "bearer"
+      ],
+      "overlap": [],
+      "composio_not_in_research": [
+        "api_key",
+        "oauth2"
+      ],
+      "research_not_in_composio": [],
+      "comparison": "research_transport_only",
+      "likely_cause": "The research documents only a bearer/access-token transport and no underlying method; the catalog names a concrete scheme. A human should confirm whether the credential is really a PAT or OAuth."
+    },
+    {
+      "app": "Netlify",
+      "in_catalog": true,
+      "composio_slug": "netlify_mcp",
+      "composio_schemes": [
+        "DCR_OAUTH"
+      ],
+      "composio_methods": [
+        "oauth2"
+      ],
+      "composio_transport": [],
+      "researched_methods": [
+        "api_key",
+        "oauth2"
+      ],
+      "researched_transport": [
+        "access_token",
+        "bearer"
+      ],
+      "overlap": [
+        "oauth2"
+      ],
+      "composio_not_in_research": [],
+      "research_not_in_composio": [
+        "api_key"
+      ],
+      "comparison": "research_broader",
+      "likely_cause": "The research documents methods Composio does not implement; Composio covers a subset, which is expected."
+    },
+    {
+      "app": "Cloudflare",
+      "in_catalog": true,
+      "composio_slug": "cloudflare",
+      "composio_schemes": [
+        "API_KEY"
+      ],
+      "composio_methods": [
+        "api_key"
+      ],
+      "composio_transport": [],
+      "researched_methods": [
+        "api_key"
+      ],
+      "researched_transport": [
+        "bearer"
+      ],
+      "overlap": [
+        "api_key"
+      ],
+      "composio_not_in_research": [],
+      "research_not_in_composio": [],
+      "comparison": "agree",
+      "likely_cause": ""
+    },
+    {
+      "app": "Supabase",
+      "in_catalog": true,
+      "composio_slug": "supabase",
+      "composio_schemes": [
+        "API_KEY",
+        "OAUTH2"
+      ],
+      "composio_methods": [
+        "api_key",
+        "oauth2"
+      ],
+      "composio_transport": [],
+      "researched_methods": [
+        "api_key",
+        "oauth2"
+      ],
+      "researched_transport": [
+        "access_token"
+      ],
+      "overlap": [
+        "api_key",
+        "oauth2"
+      ],
+      "composio_not_in_research": [],
+      "research_not_in_composio": [],
+      "comparison": "agree",
+      "likely_cause": ""
+    },
+    {
+      "app": "Neo4j",
+      "in_catalog": true,
+      "composio_slug": "neo4j",
+      "composio_schemes": [
+        "API_KEY",
+        "OAUTH2",
+        "S2S_OAUTH2"
+      ],
+      "composio_methods": [
+        "api_key",
+        "oauth2",
+        "oauth2_client_creds"
+      ],
+      "composio_transport": [],
+      "researched_methods": [
+        "api_key",
+        "basic",
+        "oauth2",
+        "oauth2_client_creds"
+      ],
+      "researched_transport": [
+        "access_token",
+        "bearer"
+      ],
+      "overlap": [
+        "api_key",
+        "oauth2",
+        "oauth2_client_creds"
+      ],
+      "composio_not_in_research": [],
+      "research_not_in_composio": [
+        "basic"
+      ],
+      "comparison": "research_broader",
+      "likely_cause": "The research documents methods Composio does not implement; Composio covers a subset, which is expected."
+    },
+    {
+      "app": "Snowflake",
+      "in_catalog": true,
+      "composio_slug": "snowflake",
+      "composio_schemes": [
+        "OAUTH2"
+      ],
+      "composio_methods": [
+        "oauth2"
+      ],
+      "composio_transport": [],
+      "researched_methods": [
+        "jwt_signed",
+        "oauth2"
+      ],
+      "researched_transport": [
+        "access_token",
+        "bearer"
+      ],
+      "overlap": [
+        "oauth2"
+      ],
+      "composio_not_in_research": [],
+      "research_not_in_composio": [
+        "jwt_signed"
+      ],
+      "comparison": "research_broader",
+      "likely_cause": "The research documents methods Composio does not implement; Composio covers a subset, which is expected."
+    },
+    {
+      "app": "MongoDB Atlas",
+      "in_catalog": true,
+      "composio_slug": "mongodb",
+      "composio_schemes": [
+        "S2S_OAUTH2"
+      ],
+      "composio_methods": [
+        "oauth2_client_creds"
+      ],
+      "composio_transport": [],
+      "researched_methods": [
+        "api_key",
+        "basic",
+        "oauth2",
+        "oauth2_client_creds",
+        "oauth2_service_account"
+      ],
+      "researched_transport": [
+        "access_token",
+        "bearer"
+      ],
+      "overlap": [
+        "oauth2_client_creds"
+      ],
+      "composio_not_in_research": [],
+      "research_not_in_composio": [
+        "api_key",
+        "basic",
+        "oauth2",
+        "oauth2_service_account"
+      ],
+      "comparison": "research_broader",
+      "likely_cause": "The research documents methods Composio does not implement; Composio covers a subset, which is expected."
+    },
+    {
+      "app": "Datadog",
+      "in_catalog": true,
+      "composio_slug": "datadog",
+      "composio_schemes": [
+        "API_KEY",
+        "BEARER_TOKEN",
+        "OAUTH2"
+      ],
+      "composio_methods": [
+        "api_key",
+        "oauth2"
+      ],
+      "composio_transport": [
+        "bearer"
+      ],
+      "researched_methods": [
+        "api_key"
+      ],
+      "researched_transport": [
+        "access_token",
+        "bearer"
+      ],
+      "overlap": [
+        "api_key"
+      ],
+      "composio_not_in_research": [
+        "oauth2"
+      ],
+      "research_not_in_composio": [],
+      "comparison": "composio_broader",
+      "likely_cause": "Composio implements a scheme the research does not mention; the research likely under-reported the vendor’s methods."
+    },
+    {
+      "app": "Sentry",
+      "in_catalog": true,
+      "composio_slug": "sentry",
+      "composio_schemes": [
+        "OAUTH2"
+      ],
+      "composio_methods": [
+        "oauth2"
+      ],
+      "composio_transport": [],
+      "researched_methods": [
+        "api_key",
+        "basic",
+        "oauth2"
+      ],
+      "researched_transport": [
+        "access_token"
+      ],
+      "overlap": [
+        "oauth2"
+      ],
+      "composio_not_in_research": [],
+      "research_not_in_composio": [
+        "api_key",
+        "basic"
+      ],
+      "comparison": "research_broader",
+      "likely_cause": "The research documents methods Composio does not implement; Composio covers a subset, which is expected."
+    },
+    {
+      "app": "Notion",
+      "in_catalog": true,
+      "composio_slug": "notion",
+      "composio_schemes": [
+        "API_KEY",
+        "OAUTH2"
+      ],
+      "composio_methods": [
+        "api_key",
+        "oauth2"
+      ],
+      "composio_transport": [],
+      "researched_methods": [
+        "api_key",
+        "oauth2"
+      ],
+      "researched_transport": [
+        "access_token",
+        "bearer"
+      ],
+      "overlap": [
+        "api_key",
+        "oauth2"
+      ],
+      "composio_not_in_research": [],
+      "research_not_in_composio": [],
+      "comparison": "agree",
+      "likely_cause": ""
+    },
+    {
+      "app": "Airtable",
+      "in_catalog": true,
+      "composio_slug": "airtable",
+      "composio_schemes": [
+        "API_KEY",
+        "OAUTH2"
+      ],
+      "composio_methods": [
+        "api_key",
+        "oauth2"
+      ],
+      "composio_transport": [],
+      "researched_methods": [
+        "api_key",
+        "oauth2"
+      ],
+      "researched_transport": [
+        "access_token"
+      ],
+      "overlap": [
+        "api_key",
+        "oauth2"
+      ],
+      "composio_not_in_research": [],
+      "research_not_in_composio": [],
+      "comparison": "agree",
+      "likely_cause": ""
+    },
+    {
+      "app": "Linear",
+      "in_catalog": true,
+      "composio_slug": "linear",
+      "composio_schemes": [
+        "API_KEY",
+        "OAUTH2"
+      ],
+      "composio_methods": [
+        "api_key",
+        "oauth2"
+      ],
+      "composio_transport": [],
+      "researched_methods": [
+        "api_key",
+        "oauth2",
+        "oauth2_client_creds"
+      ],
+      "researched_transport": [
+        "access_token",
+        "bearer"
+      ],
+      "overlap": [
+        "api_key",
+        "oauth2"
+      ],
+      "composio_not_in_research": [],
+      "research_not_in_composio": [
+        "oauth2_client_creds"
+      ],
+      "comparison": "research_broader",
+      "likely_cause": "The research documents methods Composio does not implement; Composio covers a subset, which is expected."
+    },
+    {
+      "app": "Jira",
+      "in_catalog": true,
+      "composio_slug": "jira",
+      "composio_schemes": [
+        "API_KEY",
+        "OAUTH2",
+        "S2S_OAUTH2"
+      ],
+      "composio_methods": [
+        "api_key",
+        "oauth2",
+        "oauth2_client_creds"
+      ],
+      "composio_transport": [],
+      "researched_methods": [
+        "api_key",
+        "basic",
+        "oauth2"
+      ],
+      "researched_transport": [],
+      "overlap": [
+        "api_key",
+        "oauth2"
+      ],
+      "composio_not_in_research": [
+        "oauth2_client_creds"
+      ],
+      "research_not_in_composio": [
+        "basic"
+      ],
+      "comparison": "composio_broader",
+      "likely_cause": "Composio implements a scheme the research does not mention; the research likely under-reported the vendor’s methods."
+    },
+    {
+      "app": "Asana",
+      "in_catalog": true,
+      "composio_slug": "asana",
+      "composio_schemes": [
+        "OAUTH2"
+      ],
+      "composio_methods": [
+        "oauth2"
+      ],
+      "composio_transport": [],
+      "researched_methods": [
+        "api_key",
+        "oauth2",
+        "oauth2_service_account"
+      ],
+      "researched_transport": [
+        "access_token",
+        "bearer"
+      ],
+      "overlap": [
+        "oauth2"
+      ],
+      "composio_not_in_research": [],
+      "research_not_in_composio": [
+        "api_key",
+        "oauth2_service_account"
+      ],
+      "comparison": "research_broader",
+      "likely_cause": "The research documents methods Composio does not implement; Composio covers a subset, which is expected."
+    },
+    {
+      "app": "Monday.com",
+      "in_catalog": true,
+      "composio_slug": "monday",
+      "composio_schemes": [
+        "OAUTH2"
+      ],
+      "composio_methods": [
+        "oauth2"
+      ],
+      "composio_transport": [],
+      "researched_methods": [
+        "api_key",
+        "oauth2"
+      ],
+      "researched_transport": [],
+      "overlap": [
+        "oauth2"
+      ],
+      "composio_not_in_research": [],
+      "research_not_in_composio": [
+        "api_key"
+      ],
+      "comparison": "research_broader",
+      "likely_cause": "The research documents methods Composio does not implement; Composio covers a subset, which is expected."
+    },
+    {
+      "app": "ClickUp",
+      "in_catalog": true,
+      "composio_slug": "clickup",
+      "composio_schemes": [
+        "API_KEY",
+        "OAUTH2"
+      ],
+      "composio_methods": [
+        "api_key",
+        "oauth2"
+      ],
+      "composio_transport": [],
+      "researched_methods": [
+        "api_key",
+        "oauth2"
+      ],
+      "researched_transport": [
+        "access_token",
+        "bearer"
+      ],
+      "overlap": [
+        "api_key",
+        "oauth2"
+      ],
+      "composio_not_in_research": [],
+      "research_not_in_composio": [],
+      "comparison": "agree",
+      "likely_cause": ""
+    },
+    {
+      "app": "Coda",
+      "in_catalog": true,
+      "composio_slug": "coda",
+      "composio_schemes": [
+        "API_KEY"
+      ],
+      "composio_methods": [
+        "api_key"
+      ],
+      "composio_transport": [],
+      "researched_methods": [
+        "api_key"
+      ],
+      "researched_transport": [
+        "bearer"
+      ],
+      "overlap": [
+        "api_key"
+      ],
+      "composio_not_in_research": [],
+      "research_not_in_composio": [],
+      "comparison": "agree",
+      "likely_cause": ""
+    },
+    {
+      "app": "Smartsheet",
+      "in_catalog": true,
+      "composio_slug": "smartsheet",
+      "composio_schemes": [
+        "BEARER_TOKEN",
+        "OAUTH2"
+      ],
+      "composio_methods": [
+        "oauth2"
+      ],
+      "composio_transport": [
+        "bearer"
+      ],
+      "researched_methods": [
+        "api_key",
+        "oauth2"
+      ],
+      "researched_transport": [
+        "access_token",
+        "bearer"
+      ],
+      "overlap": [
+        "oauth2"
+      ],
+      "composio_not_in_research": [],
+      "research_not_in_composio": [
+        "api_key"
+      ],
+      "comparison": "research_broader",
+      "likely_cause": "The research documents methods Composio does not implement; Composio covers a subset, which is expected."
+    },
+    {
+      "app": "Harvest",
+      "in_catalog": true,
+      "composio_slug": "harvest",
+      "composio_schemes": [
+        "OAUTH2"
+      ],
+      "composio_methods": [
+        "oauth2"
+      ],
+      "composio_transport": [],
+      "researched_methods": [
+        "api_key",
+        "oauth2"
+      ],
+      "researched_transport": [
+        "access_token",
+        "bearer"
+      ],
+      "overlap": [
+        "oauth2"
+      ],
+      "composio_not_in_research": [],
+      "research_not_in_composio": [
+        "api_key"
+      ],
+      "comparison": "research_broader",
+      "likely_cause": "The research documents methods Composio does not implement; Composio covers a subset, which is expected."
+    },
+    {
+      "app": "Stripe",
+      "in_catalog": true,
+      "composio_slug": "stripe",
+      "composio_schemes": [
+        "API_KEY",
+        "OAUTH2"
+      ],
+      "composio_methods": [
+        "api_key",
+        "oauth2"
+      ],
+      "composio_transport": [],
+      "researched_methods": [
+        "api_key",
+        "basic",
+        "oauth2"
+      ],
+      "researched_transport": [],
+      "overlap": [
+        "api_key",
+        "oauth2"
+      ],
+      "composio_not_in_research": [],
+      "research_not_in_composio": [
+        "basic"
+      ],
+      "comparison": "research_broader",
+      "likely_cause": "The research documents methods Composio does not implement; Composio covers a subset, which is expected."
+    },
+    {
+      "app": "Plaid",
+      "in_catalog": true,
+      "composio_slug": "plaid",
+      "composio_schemes": [
+        "API_KEY"
+      ],
+      "composio_methods": [
+        "api_key"
+      ],
+      "composio_transport": [],
+      "researched_methods": [
+        "api_key"
+      ],
+      "researched_transport": [],
+      "overlap": [
+        "api_key"
+      ],
+      "composio_not_in_research": [],
+      "research_not_in_composio": [],
+      "comparison": "agree",
+      "likely_cause": ""
+    },
+    {
+      "app": "Binance",
+      "in_catalog": false,
+      "composio_slug": null,
+      "composio_schemes": [],
+      "composio_methods": [],
+      "composio_transport": [],
+      "researched_methods": [
+        "api_key",
+        "jwt_signed"
+      ],
+      "researched_transport": [],
+      "overlap": [],
+      "composio_not_in_research": [],
+      "research_not_in_composio": [
+        "api_key",
+        "jwt_signed"
+      ],
+      "comparison": "not_in_catalog",
+      "likely_cause": "No Composio toolkit matched this app, so there is no catalog auth to compare against."
+    },
+    {
+      "app": "Paygent Connect",
+      "in_catalog": false,
+      "composio_slug": null,
+      "composio_schemes": [],
+      "composio_methods": [],
+      "composio_transport": [],
+      "researched_methods": [
+        "api_key"
+      ],
+      "researched_transport": [
+        "bearer"
+      ],
+      "overlap": [],
+      "composio_not_in_research": [],
+      "research_not_in_composio": [
+        "api_key"
+      ],
+      "comparison": "not_in_catalog",
+      "likely_cause": "No Composio toolkit matched this app, so there is no catalog auth to compare against."
+    },
+    {
+      "app": "iPayX",
+      "in_catalog": false,
+      "composio_slug": null,
+      "composio_schemes": [],
+      "composio_methods": [],
+      "composio_transport": [],
+      "researched_methods": [
+        "api_key"
+      ],
+      "researched_transport": [
+        "bearer"
+      ],
+      "overlap": [],
+      "composio_not_in_research": [],
+      "research_not_in_composio": [
+        "api_key"
+      ],
+      "comparison": "not_in_catalog",
+      "likely_cause": "No Composio toolkit matched this app, so there is no catalog auth to compare against."
+    },
+    {
+      "app": "QuickBooks",
+      "in_catalog": true,
+      "composio_slug": "quickbooks",
+      "composio_schemes": [
+        "OAUTH2"
+      ],
+      "composio_methods": [
+        "oauth2"
+      ],
+      "composio_transport": [],
+      "researched_methods": [
+        "api_key",
+        "basic",
+        "oauth2"
+      ],
+      "researched_transport": [
+        "access_token"
+      ],
+      "overlap": [
+        "oauth2"
+      ],
+      "composio_not_in_research": [],
+      "research_not_in_composio": [
+        "api_key",
+        "basic"
+      ],
+      "comparison": "research_broader",
+      "likely_cause": "The research documents methods Composio does not implement; Composio covers a subset, which is expected."
+    },
+    {
+      "app": "Xero",
+      "in_catalog": true,
+      "composio_slug": "xero",
+      "composio_schemes": [
+        "OAUTH2"
+      ],
+      "composio_methods": [
+        "oauth2"
+      ],
+      "composio_transport": [],
+      "researched_methods": [
+        "api_key",
+        "oauth2"
+      ],
+      "researched_transport": [
+        "access_token"
+      ],
+      "overlap": [
+        "oauth2"
+      ],
+      "composio_not_in_research": [],
+      "research_not_in_composio": [
+        "api_key"
+      ],
+      "comparison": "research_broader",
+      "likely_cause": "The research documents methods Composio does not implement; Composio covers a subset, which is expected."
+    },
+    {
+      "app": "Brex",
+      "in_catalog": true,
+      "composio_slug": "brex",
+      "composio_schemes": [
+        "API_KEY",
+        "OAUTH2"
+      ],
+      "composio_methods": [
+        "api_key",
+        "oauth2"
+      ],
+      "composio_transport": [],
+      "researched_methods": [
+        "api_key",
+        "oauth2"
+      ],
+      "researched_transport": [],
+      "overlap": [
+        "api_key",
+        "oauth2"
+      ],
+      "composio_not_in_research": [],
+      "research_not_in_composio": [],
+      "comparison": "agree",
+      "likely_cause": ""
+    },
+    {
+      "app": "Ramp",
+      "in_catalog": true,
+      "composio_slug": "ramp",
+      "composio_schemes": [
+        "OAUTH2"
+      ],
+      "composio_methods": [
+        "oauth2"
+      ],
+      "composio_transport": [],
+      "researched_methods": [
+        "api_key",
+        "basic",
+        "oauth2",
+        "oauth2_client_creds"
+      ],
+      "researched_transport": [
+        "access_token",
+        "bearer"
+      ],
+      "overlap": [
+        "oauth2"
+      ],
+      "composio_not_in_research": [],
+      "research_not_in_composio": [
+        "api_key",
+        "basic",
+        "oauth2_client_creds"
+      ],
+      "comparison": "research_broader",
+      "likely_cause": "The research documents methods Composio does not implement; Composio covers a subset, which is expected."
+    },
+    {
+      "app": "PitchBook",
+      "in_catalog": true,
+      "composio_slug": "pitchbook",
+      "composio_schemes": [
+        "API_KEY"
+      ],
+      "composio_methods": [
+        "api_key"
+      ],
+      "composio_transport": [],
+      "researched_methods": [
+        "api_key",
+        "oauth2"
+      ],
+      "researched_transport": [],
+      "overlap": [
+        "api_key"
+      ],
+      "composio_not_in_research": [],
+      "research_not_in_composio": [
+        "oauth2"
+      ],
+      "comparison": "research_broader",
+      "likely_cause": "The research documents methods Composio does not implement; Composio covers a subset, which is expected."
+    },
+    {
+      "app": "NotebookLM",
+      "in_catalog": true,
+      "composio_slug": "notebook_lm",
+      "composio_schemes": [
+        "OAUTH2"
+      ],
+      "composio_methods": [
+        "oauth2"
+      ],
+      "composio_transport": [],
+      "researched_methods": [
+        "oauth2"
+      ],
+      "researched_transport": [
+        "bearer"
+      ],
+      "overlap": [
+        "oauth2"
+      ],
+      "composio_not_in_research": [],
+      "research_not_in_composio": [],
+      "comparison": "agree",
+      "likely_cause": ""
+    },
+    {
+      "app": "Otter AI",
+      "in_catalog": true,
+      "composio_slug": "otter_ai_mcp",
+      "composio_schemes": [
+        "DCR_OAUTH"
+      ],
+      "composio_methods": [
+        "oauth2"
+      ],
+      "composio_transport": [],
+      "researched_methods": [
+        "api_key",
+        "oauth2"
+      ],
+      "researched_transport": [
+        "bearer"
+      ],
+      "overlap": [
+        "oauth2"
+      ],
+      "composio_not_in_research": [],
+      "research_not_in_composio": [
+        "api_key"
+      ],
+      "comparison": "research_broader",
+      "likely_cause": "The research documents methods Composio does not implement; Composio covers a subset, which is expected."
+    },
+    {
+      "app": "Fathom",
+      "in_catalog": true,
+      "composio_slug": "fathom",
+      "composio_schemes": [
+        "API_KEY",
+        "OAUTH2"
+      ],
+      "composio_methods": [
+        "api_key",
+        "oauth2"
+      ],
+      "composio_transport": [],
+      "researched_methods": [
+        "api_key",
+        "oauth2"
+      ],
+      "researched_transport": [],
+      "overlap": [
+        "api_key",
+        "oauth2"
+      ],
+      "composio_not_in_research": [],
+      "research_not_in_composio": [],
+      "comparison": "agree",
+      "likely_cause": ""
+    },
+    {
+      "app": "Consensus",
+      "in_catalog": true,
+      "composio_slug": "consensus",
+      "composio_schemes": [
+        "API_KEY"
+      ],
+      "composio_methods": [
+        "api_key"
+      ],
+      "composio_transport": [],
+      "researched_methods": [
+        "api_key",
+        "oauth2"
+      ],
+      "researched_transport": [
+        "bearer"
+      ],
+      "overlap": [
+        "api_key"
+      ],
+      "composio_not_in_research": [],
+      "research_not_in_composio": [
+        "oauth2"
+      ],
+      "comparison": "research_broader",
+      "likely_cause": "The research documents methods Composio does not implement; Composio covers a subset, which is expected."
+    },
+    {
+      "app": "Reducto",
+      "in_catalog": false,
+      "composio_slug": null,
+      "composio_schemes": [],
+      "composio_methods": [],
+      "composio_transport": [],
+      "researched_methods": [
+        "api_key",
+        "oauth2"
+      ],
+      "researched_transport": [
+        "bearer"
+      ],
+      "overlap": [],
+      "composio_not_in_research": [],
+      "research_not_in_composio": [
+        "api_key",
+        "oauth2"
+      ],
+      "comparison": "not_in_catalog",
+      "likely_cause": "No Composio toolkit matched this app, so there is no catalog auth to compare against."
+    },
+    {
+      "app": "Devin",
+      "in_catalog": true,
+      "composio_slug": "devin_mcp",
+      "composio_schemes": [
+        "API_KEY"
+      ],
+      "composio_methods": [
+        "api_key"
+      ],
+      "composio_transport": [],
+      "researched_methods": [
+        "api_key"
+      ],
+      "researched_transport": [
+        "access_token",
+        "bearer"
+      ],
+      "overlap": [
+        "api_key"
+      ],
+      "composio_not_in_research": [],
+      "research_not_in_composio": [],
+      "comparison": "agree",
+      "likely_cause": ""
+    },
+    {
+      "app": "higgsfield",
+      "in_catalog": true,
+      "composio_slug": "higgsfield",
+      "composio_schemes": [
+        "API_KEY"
+      ],
+      "composio_methods": [
+        "api_key"
+      ],
+      "composio_transport": [],
+      "researched_methods": [
+        "api_key",
+        "oauth2"
+      ],
+      "researched_transport": [],
+      "overlap": [
+        "api_key"
+      ],
+      "composio_not_in_research": [],
+      "research_not_in_composio": [
+        "oauth2"
+      ],
+      "comparison": "research_broader",
+      "likely_cause": "The research documents methods Composio does not implement; Composio covers a subset, which is expected."
+    },
+    {
+      "app": "Mermaid CLI",
+      "in_catalog": false,
+      "composio_slug": null,
+      "composio_schemes": [],
+      "composio_methods": [],
+      "composio_transport": [],
+      "researched_methods": [
+        "none"
+      ],
+      "researched_transport": [],
+      "overlap": [],
+      "composio_not_in_research": [],
+      "research_not_in_composio": [
+        "none"
+      ],
+      "comparison": "not_in_catalog",
+      "likely_cause": "No Composio toolkit matched this app, so there is no catalog auth to compare against."
+    },
+    {
+      "app": "YouTube Transcript",
+      "in_catalog": true,
+      "composio_slug": "youtube_transcript",
+      "composio_schemes": [
+        "API_KEY"
+      ],
+      "composio_methods": [
+        "api_key"
+      ],
+      "composio_transport": [],
+      "researched_methods": [
+        "api_key",
+        "oauth2"
+      ],
+      "researched_transport": [
+        "bearer"
+      ],
+      "overlap": [
+        "api_key"
+      ],
+      "composio_not_in_research": [],
+      "research_not_in_composio": [
+        "oauth2"
+      ],
+      "comparison": "research_broader",
+      "likely_cause": "The research documents methods Composio does not implement; Composio covers a subset, which is expected."
+    },
+    {
+      "app": "Grain",
+      "in_catalog": true,
+      "composio_slug": "grain",
+      "composio_schemes": [
+        "API_KEY"
+      ],
+      "composio_methods": [
+        "api_key"
+      ],
+      "composio_transport": [],
+      "researched_methods": [
+        "api_key",
+        "oauth2"
+      ],
+      "researched_transport": [
+        "access_token",
+        "bearer"
+      ],
+      "overlap": [
+        "api_key"
+      ],
+      "composio_not_in_research": [],
+      "research_not_in_composio": [
+        "oauth2"
+      ],
+      "comparison": "research_broader",
+      "likely_cause": "The research documents methods Composio does not implement; Composio covers a subset, which is expected."
+    }
+  ]
+}

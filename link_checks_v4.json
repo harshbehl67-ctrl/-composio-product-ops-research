@@ -161,34 +161,6 @@
     "final_url": "https://api.docs.dealcloud.com/mcp/getting-started"
   },
   {
-    "url": "https://api.github.com/repos/mermaid-js/mermaid-cli/git/trees/1423a0d7967d275a9d360ba0617f569550827c8b?recursive=1",
-    "uses": [
-      {
-        "app": "Mermaid CLI",
-        "field": "official_mcp",
-        "claim_status": "checked",
-        "quote": "\"truncated\":false",
-        "browser_reviewed": false
-      }
-    ],
-    "status": 200,
-    "final_url": "https://api.github.com/repos/mermaid-js/mermaid-cli/git/trees/1423a0d7967d275a9d360ba0617f569550827c8b?recursive=1"
-  },
-  {
-    "url": "https://api.github.com/repos/sherlock-project/sherlock/git/trees/c588d7c8b476df9f9c84912a05d1430fb8cdcdae?recursive=1",
-    "uses": [
-      {
-        "app": "Sherlock",
-        "field": "official_mcp",
-        "claim_status": "checked",
-        "quote": "\"truncated\":false",
-        "browser_reviewed": false
-      }
-    ],
-    "status": 200,
-    "final_url": "https://api.github.com/repos/sherlock-project/sherlock/git/trees/c588d7c8b476df9f9c84912a05d1430fb8cdcdae?recursive=1"
-  },
-  {
     "url": "https://apify.com/pricing",
     "uses": [
       {
@@ -258,7 +230,7 @@
         "app": "Attio",
         "field": "credential_gate",
         "claim_status": "checked",
-        "quote": "| API and webhooks | \u2713 | \u2713 | \u2713 | \u2713 |",
+        "quote": "| API and webhooks | ✓ | ✓ | ✓ | ✓ |",
         "browser_reviewed": false
       }
     ],
@@ -272,7 +244,7 @@
         "app": "Sentry",
         "field": "official_mcp",
         "claim_status": "checked",
-        "quote": "The Sentry MCP has support for all the newest fun bells and whistles, including:\n\n*   **Remote hosted (preferred) or local STDIO mode** (we strongly recommend the hosted version. It\u2019s lower friction and you\u2019ll always have the latest functionality/stability)\n*   **OAuth support**to enable logging in via your existing Sentry organization, so you\u2019ll have clear access to your organization and projects\n*   **[Streamable HTTP](https://modelcontextprotocol.io/specification/2025-03-26/basic/transports#streamable-http) with graceful [fallback to SSE](https://modelcontextprotocol.io/specification/2025-03-26/basic/transports#backwards-compatibility)** if your client doesn\u2019t support it",
+        "quote": "The Sentry MCP has support for all the newest fun bells and whistles, including:\n\n*   **Remote hosted (preferred) or local STDIO mode** (we strongly recommend the hosted version. It’s lower friction and you’ll always have the latest functionality/stability)\n*   **OAuth support**to enable logging in via your existing Sentry organization, so you’ll have clear access to your organization and projects\n*   **[Streamable HTTP](https://modelcontextprotocol.io/specification/2025-03-26/basic/transports#streamable-http) with graceful [fallback to SSE](https://modelcontextprotocol.io/specification/2025-03-26/basic/transports#backwards-compatibility)** if your client doesn’t support it",
         "browser_reviewed": false
       }
     ],
@@ -300,7 +272,7 @@
         "app": "Close",
         "field": "credential_gate",
         "claim_status": "checked",
-        "quote": "Close doesn\u2019t have a free plan, but you can try it free for 14 days with no credit card.",
+        "quote": "Close doesn’t have a free plan, but you can try it free for 14 days with no credit card.",
         "browser_reviewed": false
       },
       {
@@ -314,7 +286,7 @@
         "app": "Close",
         "field": "verdict",
         "claim_status": "checked",
-        "quote": "Close doesn\u2019t have a free plan, but you can try it free for 14 days with no credit card.",
+        "quote": "Close doesn’t have a free plan, but you can try it free for 14 days with no credit card.",
         "browser_reviewed": false
       }
     ],
@@ -608,7 +580,7 @@
         "app": "Telegram",
         "field": "credential_gate",
         "claim_status": "checked",
-        "quote": "By default, bots are able to message their users at no cost \u2013 but have limitations on the number of messages they can broadcast in a single interval:",
+        "quote": "By default, bots are able to message their users at no cost – but have limitations on the number of messages they can broadcast in a single interval:",
         "browser_reviewed": false
       },
       {
@@ -622,7 +594,7 @@
         "app": "Telegram",
         "field": "verdict",
         "claim_status": "checked",
-        "quote": "By default, bots are able to message their users at no cost \u2013 but have limitations on the number of messages they can broadcast in a single interval:",
+        "quote": "By default, bots are able to message their users at no cost – but have limitations on the number of messages they can broadcast in a single interval:",
         "browser_reviewed": false
       }
     ],
@@ -636,14 +608,14 @@
         "app": "Telegram",
         "field": "api_surface",
         "claim_status": "checked",
-        "quote": "The Bot API provides the messaging, multi-platform presentation, access and lifecycle features \u2013 the model, memory and bot logic are flexible and entirely up to you.",
+        "quote": "The Bot API provides the messaging, multi-platform presentation, access and lifecycle features – the model, memory and bot logic are flexible and entirely up to you.",
         "browser_reviewed": false
       },
       {
         "app": "Telegram",
         "field": "official_mcp",
         "claim_status": "checked",
-        "quote": "The Bot API provides the messaging, multi-platform presentation, access and lifecycle features \u2013 the model, memory and bot logic are flexible and entirely up to you.",
+        "quote": "The Bot API provides the messaging, multi-platform presentation, access and lifecycle features – the model, memory and bot logic are flexible and entirely up to you.",
         "browser_reviewed": false
       }
     ],
@@ -1119,7 +1091,7 @@
         "app": "Aircall",
         "field": "api_surface",
         "claim_status": "checked",
-        "quote": "The foundation for every Aircall integration. Manage calls, messages, AI agents, users, numbers, and more \u2014 fully documented with detailed schemas, and request and response examples in the API reference.",
+        "quote": "The foundation for every Aircall integration. Manage calls, messages, AI agents, users, numbers, and more — fully documented with detailed schemas, and request and response examples in the API reference.",
         "browser_reviewed": false
       },
       {
@@ -1259,7 +1231,7 @@
         "app": "Brex",
         "field": "credential_gate",
         "claim_status": "checked",
-        "quote": "1. **Accept the Developer API agreement.** An account admin or card admin must accept the Developer API agreement in **Settings \u2192 Developer**.\n2. **Enable the beta.** Go to **Settings \u2192 Beta features** in the Brex Dashboard and select **Brex in AI assistants**.",
+        "quote": "1. **Accept the Developer API agreement.** An account admin or card admin must accept the Developer API agreement in **Settings → Developer**.\n2. **Enable the beta.** Go to **Settings → Beta features** in the Brex Dashboard and select **Brex in AI assistants**.",
         "browser_reviewed": false
       },
       {
@@ -1462,7 +1434,7 @@
         "app": "Close",
         "field": "api_surface",
         "claim_status": "checked",
-        "quote": "Leads Companies or organizations \u2014 the primary object in Close. Contain contacts, tasks, opportunities, and activities. Contacts Individual people within a lead. Opportunities Potential deals tracked through pipeline stages.",
+        "quote": "Leads Companies or organizations — the primary object in Close. Contain contacts, tasks, opportunities, and activities. Contacts Individual people within a lead. Opportunities Potential deals tracked through pipeline stages.",
         "browser_reviewed": false
       },
       {
@@ -1672,7 +1644,7 @@
         "app": "Monday.com",
         "field": "official_mcp",
         "claim_status": "checked",
-        "quote": "Connect your MCP client to the monday.com hosted MCP server \u2014 choose API token, OAuth, or dynamic client registration",
+        "quote": "Connect your MCP client to the monday.com hosted MCP server — choose API token, OAuth, or dynamic client registration",
         "browser_reviewed": false
       },
       {
@@ -1861,7 +1833,7 @@
         "app": "systeme.io",
         "field": "verdict",
         "claim_status": "checked",
-        "quote": "The Systeme.io MCP server is in its initial release. We\u2019re actively improving it by adding more capabilities and strengthening stability and reliability over time.",
+        "quote": "The Systeme.io MCP server is in its initial release. We’re actively improving it by adding more capabilities and strengthening stability and reliability over time.",
         "browser_reviewed": false
       }
     ],
@@ -1931,7 +1903,7 @@
         "app": "Vonage",
         "field": "official_mcp",
         "claim_status": "checked",
-        "quote": "We\u2019re excited to announce the Vonage Documentation MCP Server \u2014 a new way to access Vonage docs directly from your development environment or AI assistant.",
+        "quote": "We’re excited to announce the Vonage Documentation MCP Server — a new way to access Vonage docs directly from your development environment or AI assistant.",
         "browser_reviewed": false
       },
       {
@@ -2015,7 +1987,7 @@
         "app": "Vonage",
         "field": "credential_gate",
         "claim_status": "checked",
-        "quote": "Access to our APIs is charged on a per-request basis. We\u2019ll give you some free credit when you first open your account and you can top up when you run low.",
+        "quote": "Access to our APIs is charged on a per-request basis. We’ll give you some free credit when you first open your account and you can top up when you run low.",
         "browser_reviewed": false
       },
       {
@@ -2050,7 +2022,7 @@
         "app": "Vonage",
         "field": "verdict",
         "claim_status": "checked",
-        "quote": "Access to our APIs is charged on a per-request basis. We\u2019ll give you some free credit when you first open your account and you can top up when you run low.",
+        "quote": "Access to our APIs is charged on a per-request basis. We’ll give you some free credit when you first open your account and you can top up when you run low.",
         "browser_reviewed": false
       }
     ],
@@ -2260,14 +2232,14 @@
         "app": "Xero",
         "field": "auth",
         "claim_status": "checked",
-        "quote": "Will OAuth 2.0 support desktop/mobile/single-page apps that can\u2019t keep a client secret confidential? Xero supports the Proof Key for Code Exchange (PKCE) extension to the authorization code flow. This allows native apps to securely connect to our API without needing to store a client secret. Single page apps are not currently supported.",
+        "quote": "Will OAuth 2.0 support desktop/mobile/single-page apps that can’t keep a client secret confidential? Xero supports the Proof Key for Code Exchange (PKCE) extension to the authorization code flow. This allows native apps to securely connect to our API without needing to store a client secret. Single page apps are not currently supported.",
         "browser_reviewed": true
       },
       {
         "app": "Xero",
         "field": "auth",
         "claim_status": "checked",
-        "quote": "What is the expiration for a refresh token? Unused refresh tokens expire after 60 days. If you don\u2019t refresh your access token within 60 days the user will need to reauthorise your app. When you perform a token refresh, you should replace your existing refresh token with the new one returned in the response. If, for whatever reason, you don't receive the response you can retry refreshing your existing refresh token for a grace period of 30 minutes.",
+        "quote": "What is the expiration for a refresh token? Unused refresh tokens expire after 60 days. If you don’t refresh your access token within 60 days the user will need to reauthorise your app. When you perform a token refresh, you should replace your existing refresh token with the new one returned in the response. If, for whatever reason, you don't receive the response you can retry refreshing your existing refresh token for a grace period of 30 minutes.",
         "browser_reviewed": true
       }
     ],
@@ -2526,7 +2498,7 @@
         "app": "Asana",
         "field": "api_surface",
         "claim_status": "checked",
-        "quote": "The primary feature of Asana\u2019s platform is our rest API, so we recommend getting familiar with how our API works.",
+        "quote": "The primary feature of Asana’s platform is our rest API, so we recommend getting familiar with how our API works.",
         "browser_reviewed": false
       },
       {
@@ -2540,7 +2512,7 @@
         "app": "Asana",
         "field": "verdict",
         "claim_status": "checked",
-        "quote": "The primary feature of Asana\u2019s platform is our rest API",
+        "quote": "The primary feature of Asana’s platform is our rest API",
         "browser_reviewed": false
       }
     ],
@@ -2561,7 +2533,7 @@
         "app": "Binance",
         "field": "credential_gate",
         "claim_status": "checked",
-        "quote": "When you connect, you choose which scopes to grant. Start with the least you need:\n\n- **Market data** (public, no auth) \u2014 tickers, order books, candles, funding\n- **Account** \u2014 Agentic sub-account balance, positions, bills; optional read-only view of your main\n  account\n- **Trade** \u2014 spot, margin, convert, futures (only what you grant and your account is authorized\n  for)\n- **Transfer** \u2014 move funds between wallets inside the same Agentic sub-account only",
+        "quote": "When you connect, you choose which scopes to grant. Start with the least you need:\n\n- **Market data** (public, no auth) — tickers, order books, candles, funding\n- **Account** — Agentic sub-account balance, positions, bills; optional read-only view of your main\n  account\n- **Trade** — spot, margin, convert, futures (only what you grant and your account is authorized\n  for)\n- **Transfer** — move funds between wallets inside the same Agentic sub-account only",
         "browser_reviewed": false
       },
       {
@@ -2582,7 +2554,7 @@
         "app": "Binance",
         "field": "official_mcp",
         "claim_status": "checked",
-        "quote": "Connect your AI agent to Binance with a single URL. Your agent can read market data, check balances, trade Spot / Margin / Convert / USD\u24c8-M / COIN-M Futures, and move funds between wallets inside a dedicated Agentic sub-account \u2014 no local install, no API keys on your device.",
+        "quote": "Connect your AI agent to Binance with a single URL. Your agent can read market data, check balances, trade Spot / Margin / Convert / USDⓈ-M / COIN-M Futures, and move funds between wallets inside a dedicated Agentic sub-account — no local install, no API keys on your device.",
         "browser_reviewed": false
       },
       {
@@ -2806,7 +2778,7 @@
         "app": "Clay",
         "field": "auth",
         "claim_status": "checked",
-        "quote": "Create one under API and CLI \u2192 API keys, with `clay api-keys create --name \"<key name>\"` in the CLI, or by asking your agent after installing the agent plugin.",
+        "quote": "Create one under API and CLI → API keys, with `clay api-keys create --name \"<key name>\"` in the CLI, or by asking your agent after installing the agent plugin.",
         "browser_reviewed": true
       },
       {
@@ -2827,21 +2799,21 @@
         "app": "Cloudflare",
         "field": "official_mcp",
         "claim_status": "checked",
-        "quote": "Cloudflare runs a catalog of managed remote MCP servers which you can connect to using OAuth on clients like [Claude \u2197\ufe0e](https://modelcontextprotocol.io/quickstart/user), [Windsurf \u2197\ufe0e](https://docs.windsurf.com/windsurf/cascade/mcp), our own [AI Playground \u2197\ufe0e](https://playground.ai.cloudflare.com/) or any [SDK that supports MCP \u2197\ufe0e](https://github.com/cloudflare/agents/tree/main/packages/agents/src/mcp).",
+        "quote": "Cloudflare runs a catalog of managed remote MCP servers which you can connect to using OAuth on clients like [Claude ↗︎](https://modelcontextprotocol.io/quickstart/user), [Windsurf ↗︎](https://docs.windsurf.com/windsurf/cascade/mcp), our own [AI Playground ↗︎](https://playground.ai.cloudflare.com/) or any [SDK that supports MCP ↗︎](https://github.com/cloudflare/agents/tree/main/packages/agents/src/mcp).",
         "browser_reviewed": false
       },
       {
         "app": "Cloudflare",
         "field": "official_mcp",
         "claim_status": "checked",
-        "quote": "The [Cloudflare API MCP server \u2197\ufe0e](https://github.com/cloudflare/mcp) at `https://mcp.cloudflare.com/mcp` is the only MCP server you need to work with Cloudflare. It provides access to the entire [Cloudflare API](https://developers.cloudflare.com/api/) \u2014 over 2,500 endpoints across DNS, Workers, R2, Zero Trust, and every other product \u2014 and to the Cloudflare developer documentation.",
+        "quote": "The [Cloudflare API MCP server ↗︎](https://github.com/cloudflare/mcp) at `https://mcp.cloudflare.com/mcp` is the only MCP server you need to work with Cloudflare. It provides access to the entire [Cloudflare API](https://developers.cloudflare.com/api/) — over 2,500 endpoints across DNS, Workers, R2, Zero Trust, and every other product — and to the Cloudflare developer documentation.",
         "browser_reviewed": false
       },
       {
         "app": "Cloudflare",
         "field": "verdict",
         "claim_status": "checked",
-        "quote": "Cloudflare runs a catalog of managed remote MCP servers which you can connect to using OAuth on clients like [Claude \u2197\ufe0e](https://modelcontextprotocol.io/quickstart/user), [Windsurf \u2197\ufe0e](https://docs.windsurf.com/windsurf/cascade/mcp), our own [AI Playground \u2197\ufe0e](https://playground.ai.cloudflare.com/) or any [SDK that supports MCP \u2197\ufe0e](https://github.com/cloudflare/agents/tree/main/packages/agents/src/mcp).",
+        "quote": "Cloudflare runs a catalog of managed remote MCP servers which you can connect to using OAuth on clients like [Claude ↗︎](https://modelcontextprotocol.io/quickstart/user), [Windsurf ↗︎](https://docs.windsurf.com/windsurf/cascade/mcp), our own [AI Playground ↗︎](https://playground.ai.cloudflare.com/) or any [SDK that supports MCP ↗︎](https://github.com/cloudflare/agents/tree/main/packages/agents/src/mcp).",
         "browser_reviewed": false
       }
     ],
@@ -3100,7 +3072,7 @@
         "app": "WhatsApp Business",
         "field": "api_surface",
         "claim_status": "checked",
-        "quote": "The WhatsApp Cloud API enables you to send messages and receive webhooks\u2014these are the fundamental building blocks for messaging integration.",
+        "quote": "The WhatsApp Cloud API enables you to send messages and receive webhooks—these are the fundamental building blocks for messaging integration.",
         "browser_reviewed": false
       },
       {
@@ -3114,7 +3086,7 @@
         "app": "WhatsApp Business",
         "field": "verdict",
         "claim_status": "checked",
-        "quote": "The WhatsApp Cloud API enables you to send messages and receive webhooks\u2014these are the fundamental building blocks for messaging integration.",
+        "quote": "The WhatsApp Cloud API enables you to send messages and receive webhooks—these are the fundamental building blocks for messaging integration.",
         "browser_reviewed": false
       }
     ],
@@ -3163,7 +3135,7 @@
         "app": "WhatsApp Business",
         "field": "official_mcp",
         "claim_status": "checked",
-        "quote": "For developers building on the WhatsApp Business Platform (Cloud API) \u2014 the WhatsApp Business Tools MCP server lets your AI agent and IDE assistant manage and debug your WhatsApp Business integration from one place.",
+        "quote": "For developers building on the WhatsApp Business Platform (Cloud API) — the WhatsApp Business Tools MCP server lets your AI agent and IDE assistant manage and debug your WhatsApp Business integration from one place.",
         "browser_reviewed": false
       },
       {
@@ -3639,7 +3611,7 @@
         "app": "Gorgias",
         "field": "auth",
         "claim_status": "checked",
-        "quote": "How do I get my API key?\n\n1. Log in to your Gorgias account\n2. Navigate to Settings \u2192 REST API\n3. Click the Create API key button",
+        "quote": "How do I get my API key?\n\n1. Log in to your Gorgias account\n2. Navigate to Settings → REST API\n3. Click the Create API key button",
         "browser_reviewed": false
       }
     ],
@@ -4010,7 +3982,7 @@
         "app": "Intercom",
         "field": "official_mcp",
         "claim_status": "checked",
-        "quote": "The Intercom MCP server is available for US and EU hosted workspaces. AU hosted workspaces are not yet supported. Connect using the endpoint that matches your workspace's hosted region \u2014 see the connection URLs below.",
+        "quote": "The Intercom MCP server is available for US and EU hosted workspaces. AU hosted workspaces are not yet supported. Connect using the endpoint that matches your workspace's hosted region — see the connection URLs below.",
         "browser_reviewed": false
       },
       {
@@ -4122,7 +4094,7 @@
         "app": "Klaviyo",
         "field": "official_mcp",
         "claim_status": "checked",
-        "quote": "The Klaviyo Model Context Protocol (MCP) server seamlessly integrates with Klaviyo\u2019s APIs, enabling AI clients to interact with your Klaviyo data.",
+        "quote": "The Klaviyo Model Context Protocol (MCP) server seamlessly integrates with Klaviyo’s APIs, enabling AI clients to interact with your Klaviyo data.",
         "browser_reviewed": false
       }
     ],
@@ -5060,7 +5032,7 @@
         "app": "Bright Data",
         "field": "credential_gate",
         "claim_status": "checked",
-        "quote": "If you don\u2019t see the 'API key' section, switch to an **admin account**. only admins can generate API keys.",
+        "quote": "If you don’t see the 'API key' section, switch to an **admin account**. only admins can generate API keys.",
         "browser_reviewed": false
       }
     ],
@@ -5221,7 +5193,7 @@
         "app": "Twenty",
         "field": "composio_toolkit",
         "claim_status": "checked",
-        "quote": "| [Twenty](/toolkits/twenty.md) | `TWENTY` | 23 | 0 | API_KEY | \u2014 |",
+        "quote": "| [Twenty](/toolkits/twenty.md) | `TWENTY` | 23 | 0 | API_KEY | — |",
         "browser_reviewed": false
       },
       {
@@ -5242,14 +5214,14 @@
         "app": "Close",
         "field": "composio_toolkit",
         "claim_status": "checked",
-        "quote": "| [Close](/toolkits/close.md) | `CLOSE` | 75 | 45 | API_KEY | \u2014 |",
+        "quote": "| [Close](/toolkits/close.md) | `CLOSE` | 75 | 45 | API_KEY | — |",
         "browser_reviewed": false
       },
       {
         "app": "Copper",
         "field": "composio_toolkit",
         "claim_status": "checked",
-        "quote": "| [Copper](/toolkits/copper.md) | `COPPER` | 65 | 0 | API_KEY | \u2014 |",
+        "quote": "| [Copper](/toolkits/copper.md) | `COPPER` | 65 | 0 | API_KEY | — |",
         "browser_reviewed": false
       },
       {
@@ -5277,7 +5249,7 @@
         "app": "Freshdesk",
         "field": "composio_toolkit",
         "claim_status": "checked",
-        "quote": "| [Freshdesk](/toolkits/freshdesk.md) | `FRESHDESK` | 184 | 0 | API_KEY | \u2014 |",
+        "quote": "| [Freshdesk](/toolkits/freshdesk.md) | `FRESHDESK` | 184 | 0 | API_KEY | — |",
         "browser_reviewed": false
       },
       {
@@ -5305,7 +5277,7 @@
         "app": "Plain",
         "field": "composio_toolkit",
         "claim_status": "checked",
-        "quote": "| [Plain](/toolkits/plain.md) | `PLAIN` | 120 | 11 | API_KEY | \u2014 |",
+        "quote": "| [Plain](/toolkits/plain.md) | `PLAIN` | 120 | 11 | API_KEY | — |",
         "browser_reviewed": false
       },
       {
@@ -5473,7 +5445,7 @@
         "app": "Plaid",
         "field": "composio_toolkit",
         "claim_status": "checked",
-        "quote": "| [Plaid](/toolkits/plaid.md) | `PLAID` | 70 | 0 | API_KEY | \u2014 |",
+        "quote": "| [Plaid](/toolkits/plaid.md) | `PLAID` | 70 | 0 | API_KEY | — |",
         "browser_reviewed": false
       },
       {
@@ -5550,7 +5522,7 @@
         "app": "PitchBook",
         "field": "composio_toolkit",
         "claim_status": "checked",
-        "quote": "| [PitchBook](/toolkits/pitchbook.md) | `PITCHBOOK` | 130 | 0 | API_KEY | \u2014 |",
+        "quote": "| [PitchBook](/toolkits/pitchbook.md) | `PITCHBOOK` | 130 | 0 | API_KEY | — |",
         "browser_reviewed": false
       },
       {
@@ -6488,7 +6460,7 @@
         "app": "Datadog",
         "field": "auth",
         "claim_status": "checked",
-        "quote": "All requests to Datadog\u2019s API must be authenticated.\nRequests that write data require reporting access and require an `API key`.\nRequests that read data require full access and also require an `application key`.",
+        "quote": "All requests to Datadog’s API must be authenticated.\nRequests that write data require reporting access and require an `API key`.\nRequests that read data require full access and also require an `application key`.",
         "browser_reviewed": false
       }
     ],
@@ -6558,7 +6530,7 @@
         "app": "DataForSEO",
         "field": "api_surface",
         "claim_status": "checked",
-        "quote": "DataForSEO API is using\u00a0the [REST](https://en.wikipedia.org/wiki/Representational_state_transfer)\u00a0technology for interchanging data between your application and our service.",
+        "quote": "DataForSEO API is using the [REST](https://en.wikipedia.org/wiki/Representational_state_transfer) technology for interchanging data between your application and our service.",
         "browser_reviewed": true
       },
       {
@@ -6579,7 +6551,7 @@
         "app": "DataForSEO",
         "field": "verdict",
         "claim_status": "checked",
-        "quote": "DataForSEO API is using\u00a0the [REST](https://en.wikipedia.org/wiki/Representational_state_transfer)\u00a0technology for interchanging data between your application and our service.",
+        "quote": "DataForSEO API is using the [REST](https://en.wikipedia.org/wiki/Representational_state_transfer) technology for interchanging data between your application and our service.",
         "browser_reviewed": true
       }
     ],
@@ -6656,14 +6628,14 @@
         "app": "Devin",
         "field": "api_surface",
         "claim_status": "checked",
-        "quote": "For managing resources within a single organization \u2014 sessions, knowledge, playbooks, secrets, and more. This is where most integrations start.",
+        "quote": "For managing resources within a single organization — sessions, knowledge, playbooks, secrets, and more. This is where most integrations start.",
         "browser_reviewed": false
       },
       {
         "app": "Devin",
         "field": "api_surface",
         "claim_status": "checked",
-        "quote": "For cross-organization management \u2014 analytics, audit logs, user management, billing, and infrastructure. Available to enterprise customers.",
+        "quote": "For cross-organization management — analytics, audit logs, user management, billing, and infrastructure. Available to enterprise customers.",
         "browser_reviewed": false
       }
     ],
@@ -8182,7 +8154,7 @@
         "app": "Stripe",
         "field": "auth",
         "claim_status": "checked",
-        "quote": "The Stripe API authenticates requests using HTTP Basic Auth. Provide your API key as the basic auth username value. You don\u2019t need to provide a password.",
+        "quote": "The Stripe API authenticates requests using HTTP Basic Auth. Provide your API key as the basic auth username value. You don’t need to provide a password.",
         "browser_reviewed": false
       },
       {
@@ -8210,7 +8182,7 @@
         "app": "Stripe",
         "field": "auth",
         "claim_status": "checked",
-        "quote": "Stripe\u2019s MCP server supports two authentication methods:\n\n1. **OAuth**: Use OAuth when a client accesses Stripe on behalf of your Stripe user account.\n2. **Agent API keys**: Use an agent API key when an AI application needs independent, persistent access to Stripe.",
+        "quote": "Stripe’s MCP server supports two authentication methods:\n\n1. **OAuth**: Use OAuth when a client accesses Stripe on behalf of your Stripe user account.\n2. **Agent API keys**: Use an agent API key when an AI application needs independent, persistent access to Stripe.",
         "browser_reviewed": false
       },
       {
@@ -8224,7 +8196,7 @@
         "app": "Stripe",
         "field": "official_mcp",
         "claim_status": "checked",
-        "quote": "MCP is an open protocol supported by many clients. Follow your client\u2019s MCP setup instructions and use `https://mcp.stripe.com` as the server URL.",
+        "quote": "MCP is an open protocol supported by many clients. Follow your client’s MCP setup instructions and use `https://mcp.stripe.com` as the server URL.",
         "browser_reviewed": false
       },
       {
@@ -8245,7 +8217,7 @@
         "app": "Twenty",
         "field": "auth",
         "claim_status": "checked",
-        "quote": "Create an API key in Settings \u2192 Developers \u2192 API \u2192 + Create key. Copy it immediately \u2014 it's shown once. Keys can be scoped to a specific role under Settings \u2192 Members \u2192 Roles \u2192 Assignment tab to limit what they can access.",
+        "quote": "Create an API key in Settings → Developers → API → + Create key. Copy it immediately — it's shown once. Keys can be scoped to a specific role under Settings → Members → Roles → Assignment tab to limit what they can access.",
         "browser_reviewed": false
       },
       {
@@ -8280,7 +8252,7 @@
         "app": "Twenty",
         "field": "auth",
         "claim_status": "checked",
-        "quote": "Twenty implements OAuth 2.0 with authorization code + PKCE for user-facing apps and client credentials for server-to-server access. Clients are registered dynamically via RFC 7591 \u2014 no manual setup in a dashboard.",
+        "quote": "Twenty implements OAuth 2.0 with authorization code + PKCE for user-facing apps and client credentials for server-to-server access. Clients are registered dynamically via RFC 7591 — no manual setup in a dashboard.",
         "browser_reviewed": false
       }
     ],
@@ -8371,7 +8343,7 @@
         "app": "Pylon",
         "field": "auth",
         "claim_status": "checked",
-        "quote": "The Pylon API uses Bearer authentication. This means you\u2019ll need to pass your API token in the header of your request:",
+        "quote": "The Pylon API uses Bearer authentication. This means you’ll need to pass your API token in the header of your request:",
         "browser_reviewed": false
       },
       {
@@ -8596,6 +8568,38 @@
     "final_url": "https://github.com/intuit/quickbooks-online-mcp-server/commits/main/"
   },
   {
+    "url": "https://github.com/mermaid-js/mermaid-cli/tree/1423a0d7967d275a9d360ba0617f569550827c8b",
+    "status": 200,
+    "final_url": "https://github.com/mermaid-js/mermaid-cli/tree/1423a0d7967d275a9d360ba0617f569550827c8b",
+    "uses": [
+      {
+        "app": "Mermaid CLI",
+        "field": "official_mcp",
+        "claim_status": "checked",
+        "quote": "README.md",
+        "browser_reviewed": true,
+        "followup_checked_at": "2026-11-24"
+      }
+    ],
+    "followup_note": "Replaced a rate-limited GitHub tree API URL with the official commit-pinned browser page; full source archive review remains documented in source_review_v4.json."
+  },
+  {
+    "url": "https://github.com/sherlock-project/sherlock/tree/c588d7c8b476df9f9c84912a05d1430fb8cdcdae",
+    "status": 200,
+    "final_url": "https://github.com/sherlock-project/sherlock/tree/c588d7c8b476df9f9c84912a05d1430fb8cdcdae",
+    "uses": [
+      {
+        "app": "Sherlock",
+        "field": "official_mcp",
+        "claim_status": "checked",
+        "quote": "Readme",
+        "browser_reviewed": true,
+        "followup_checked_at": "2026-11-24"
+      }
+    ],
+    "followup_note": "Replaced a rate-limited GitHub tree API URL with the official commit-pinned browser page; full source archive review remains documented in source_review_v4.json."
+  },
+  {
     "url": "https://guide.nmi.com/",
     "uses": [
       {
@@ -8693,7 +8697,7 @@
         "app": "Gumroad",
         "field": "official_mcp",
         "claim_status": "checked",
-        "quote": "Add Gumroad from your assistant\u2019s connector directory, or open its connector settings and add a remote MCP server using the URL from its connector page.",
+        "quote": "Add Gumroad from your assistant’s connector directory, or open its connector settings and add a remote MCP server using the URL from its connector page.",
         "browser_reviewed": true
       },
       {
@@ -8861,7 +8865,7 @@
         "app": "Front",
         "field": "api_surface",
         "claim_status": "checked",
-        "quote": "Front\u2019s platform is made up of three primary APIs: Core API, Plugin SDK, and Channel API",
+        "quote": "Front’s platform is made up of three primary APIs: Core API, Plugin SDK, and Channel API",
         "browser_reviewed": false
       },
       {
@@ -8882,7 +8886,7 @@
         "app": "Front",
         "field": "official_mcp",
         "claim_status": "checked",
-        "quote": "Front's MCP server lets you and your teammates connect Front to AI assistants like Claude, ChatGPT, Gemini, and Microsoft Copilot. Once connected, the AI assistant can use your conversations, draft replies, leave internal comments, and take other actions on your behalf \u2014 all while respecting the user permissions set within Front.",
+        "quote": "Front's MCP server lets you and your teammates connect Front to AI assistants like Claude, ChatGPT, Gemini, and Microsoft Copilot. Once connected, the AI assistant can use your conversations, draft replies, leave internal comments, and take other actions on your behalf — all while respecting the user permissions set within Front.",
         "browser_reviewed": false
       },
       {
@@ -9337,7 +9341,7 @@
         "app": "Otter AI",
         "field": "api_surface",
         "claim_status": "checked",
-        "quote": "Otter.ai\u2019s Public API provides programmatic access to retrieve channels, conversations, transcripts, audio, action items, insights, outlines, and workspace details from your Otter account.",
+        "quote": "Otter.ai’s Public API provides programmatic access to retrieve channels, conversations, transcripts, audio, action items, insights, outlines, and workspace details from your Otter account.",
         "browser_reviewed": false
       },
       {
@@ -9589,14 +9593,14 @@
         "app": "LinkedIn Ads",
         "field": "credential_gate",
         "claim_status": "checked",
-        "quote": "Visit your app's Product tab in the Developer Portal to apply for the Advertising API product. Before accessing the Standard Access tier, you must first build and test your application on LinkedIn\u2019s advertising platform.",
+        "quote": "Visit your app's Product tab in the Developer Portal to apply for the Advertising API product. Before accessing the Standard Access tier, you must first build and test your application on LinkedIn’s advertising platform.",
         "browser_reviewed": false
       },
       {
         "app": "LinkedIn Ads",
         "field": "verdict",
         "claim_status": "checked",
-        "quote": "Visit your app's Product tab in the Developer Portal to apply for the Advertising API product. Before accessing the Standard Access tier, you must first build and test your application on LinkedIn\u2019s advertising platform.",
+        "quote": "Visit your app's Product tab in the Developer Portal to apply for the Advertising API product. Before accessing the Standard Access tier, you must first build and test your application on LinkedIn’s advertising platform.",
         "browser_reviewed": false
       }
     ],
@@ -9631,14 +9635,14 @@
         "app": "LinkedIn Ads",
         "field": "api_surface",
         "claim_status": "checked",
-        "quote": "LinkedIn\u2019s Marketing APIs first versioned API release was June 2022 under a new base path: `https://api.linkedin.com/rest/`",
+        "quote": "LinkedIn’s Marketing APIs first versioned API release was June 2022 under a new base path: `https://api.linkedin.com/rest/`",
         "browser_reviewed": false
       },
       {
         "app": "LinkedIn Ads",
         "field": "verdict",
         "claim_status": "checked",
-        "quote": "LinkedIn\u2019s Marketing APIs first versioned API release was June 2022 under a new base path: `https://api.linkedin.com/rest/`",
+        "quote": "LinkedIn’s Marketing APIs first versioned API release was June 2022 under a new base path: `https://api.linkedin.com/rest/`",
         "browser_reviewed": false
       }
     ],
@@ -9652,7 +9656,7 @@
         "app": "LinkedIn Ads",
         "field": "official_mcp",
         "claim_status": "checked",
-        "quote": "LinkedIn\u2019s Marketing APIs first versioned API release was June 2022 under a new base path: `https://api.linkedin.com/rest/`",
+        "quote": "LinkedIn’s Marketing APIs first versioned API release was June 2022 under a new base path: `https://api.linkedin.com/rest/`",
         "browser_reviewed": false
       }
     ],
@@ -9841,7 +9845,7 @@
         "app": "Mailchimp",
         "field": "credential_gate",
         "claim_status": "checked",
-        "quote": "If you don't have a Mailchimp account already, you\u2019ll need to create one in order to use the API.",
+        "quote": "If you don't have a Mailchimp account already, you’ll need to create one in order to use the API.",
         "browser_reviewed": false
       },
       {
@@ -9988,21 +9992,21 @@
         "app": "GoHighLevel",
         "field": "official_mcp",
         "claim_status": "checked",
-        "quote": "MCP (Model Context Protocol) is an open standard for connecting AI assistants to the apps you use. HighLevel uses it to connect compatible assistants that support remote Streamable HTTP servers and HighLevel\u2019s sign-in flow.",
+        "quote": "MCP (Model Context Protocol) is an open standard for connecting AI assistants to the apps you use. HighLevel uses it to connect compatible assistants that support remote Streamable HTTP servers and HighLevel’s sign-in flow.",
         "browser_reviewed": false
       },
       {
         "app": "GoHighLevel",
         "field": "official_mcp",
         "claim_status": "checked",
-        "quote": "You connect by signing in with your HighLevel login, choosing your sub-account(s), and approving the requested permissions. There\u2019s no key to create, paste, or rotate.",
+        "quote": "You connect by signing in with your HighLevel login, choosing your sub-account(s), and approving the requested permissions. There’s no key to create, paste, or rotate.",
         "browser_reviewed": false
       },
       {
         "app": "GoHighLevel",
         "field": "official_mcp",
         "claim_status": "checked",
-        "quote": "The table covers **717 supported actions across 38 feature areas**, grouped by the HighLevel menu. Available actions depend on your connection\u2019s permissions and the features enabled in your sub-account.",
+        "quote": "The table covers **717 supported actions across 38 feature areas**, grouped by the HighLevel menu. Available actions depend on your connection’s permissions and the features enabled in your sub-account.",
         "browser_reviewed": false
       }
     ],
@@ -10042,7 +10046,7 @@
       }
     ],
     "status": 200,
-    "final_url": "https://morningstar.okta.com/oauth2/v1/authorize?access_type=offline&client_id=0oarr5xtcdjYi5pRj4x7&code_challenge=u_42mOIjXmUldcaMeNKmQdchmmsNbL0a9sIFiD7Hwe4&code_challenge_method=S256&redirect_uri=https%3A%2F%2Fmcp-proxy-external.pitchbook.com%2Foauth%2Fcallback&response_type=code&scope=openid+profile+email+groups+offline_access&state=aQNNJR-L9gr_IxV5Ax-DCeDMR8utebJn"
+    "final_url": "https://morningstar.okta.com/oauth2/v1/authorize?access_type=offline&client_id=0oarr5xtcdjYi5pRj4x7&code_challenge=63h_SEDZaT9CJRLCS8ZUAqYfzbVQBNoAyhr0woGsQko&code_challenge_method=S256&redirect_uri=https%3A%2F%2Fmcp-proxy-external.pitchbook.com%2Foauth%2Fcallback&response_type=code&scope=openid+profile+email+groups+offline_access&state=URM_nVL03hrB3-0MW83ndfw5ex_CTULq"
   },
   {
     "url": "https://mcp.podio.com/health",
@@ -10219,7 +10223,7 @@
         "app": "Neo4j",
         "field": "credential_gate",
         "claim_status": "checked",
-        "quote": "The free forever, fully managed cloud database from Neo4j. Learn graphs, prototype your idea, and test your applications with Neo4j\u2019s fast, flexible, and easy-to-use graph database.",
+        "quote": "The free forever, fully managed cloud database from Neo4j. Learn graphs, prototype your idea, and test your applications with Neo4j’s fast, flexible, and easy-to-use graph database.",
         "browser_reviewed": false
       },
       {
@@ -10233,7 +10237,7 @@
         "app": "Neo4j",
         "field": "verdict",
         "claim_status": "checked",
-        "quote": "The free forever, fully managed cloud database from Neo4j. Learn graphs, prototype your idea, and test your applications with Neo4j\u2019s fast, flexible, and easy-to-use graph database.",
+        "quote": "The free forever, fully managed cloud database from Neo4j. Learn graphs, prototype your idea, and test your applications with Neo4j’s fast, flexible, and easy-to-use graph database.",
         "browser_reviewed": false
       }
     ],
@@ -10247,21 +10251,21 @@
         "app": "Lark (Larksuite)",
         "field": "official_mcp",
         "claim_status": "checked",
-        "quote": "\u8fdc\u7a0b\u8c03\u7528 Lark MCP Server\uff08\u4e0d\u63a8\u8350\uff09",
+        "quote": "远程调用 Lark MCP Server（不推荐）",
         "browser_reviewed": false
       },
       {
         "app": "Lark (Larksuite)",
         "field": "official_mcp",
         "claim_status": "checked",
-        "quote": "Lark\u5f00\u653e\u5e73\u53f0\u63d0\u4f9b\u8fdc\u7a0b MCP Server \u914d\u7f6e\u529f\u80fd\uff0c\u652f\u6301  Streamable HTTP \u4f20\u8f93\u534f\u8bae\uff0c\u6ee1\u8db3\u7528\u6237\u5728\u4e91\u573a\u666f\u4e2d\uff0c\u5b89\u5168\u9ad8\u6548\u5730\u901a\u8fc7 Cursor \u3001Trae\u3001Claude\u3001 n8n \u7b49 AI agent \u4e00\u952e\u96c6\u6210\u5e76\u4f7f\u7528\u4e30\u5bcc\u7684Lark\u5f00\u653e\u80fd\u529b\u3002",
+        "quote": "Lark开放平台提供远程 MCP Server 配置功能，支持  Streamable HTTP 传输协议，满足用户在云场景中，安全高效地通过 Cursor 、Trae、Claude、 n8n 等 AI agent 一键集成并使用丰富的Lark开放能力。",
         "browser_reviewed": false
       },
       {
         "app": "Lark (Larksuite)",
         "field": "official_mcp",
         "claim_status": "checked",
-        "quote": "\u8fdc\u7a0b MCP Server \u914d\u7f6e\u529f\u80fd\u6b63\u5728\u5185\u6d4b\u4e2d\uff0c\u5982\u65e0\u6cd5\u8bbf\u95ee\u914d\u7f6e\u5e73\u53f0\uff0c\u53ef\u8054\u7cfb\u5ba2\u6237\u6210\u529f\u7ecf\u7406\u5f00\u901a\u5185\u6d4b\u3002",
+        "quote": "远程 MCP Server 配置功能正在内测中，如无法访问配置平台，可联系客户成功经理开通内测。",
         "browser_reviewed": false
       }
     ],
@@ -10275,21 +10279,21 @@
         "app": "Lark (Larksuite)",
         "field": "credential_gate",
         "claim_status": "checked",
-        "quote": "\u4f01\u4e1a\u81ea\u5efa\u5e94\u7528\uff1a\u5e94\u7528\u5f00\u53d1\u8005\u7533\u8bf7\u7684\u6743\u9650\u9700\u8981\u901a\u8fc7 \u79df\u6237\u7ba1\u7406\u5458 \u7684\u5ba1\u6838\u3002",
+        "quote": "企业自建应用：应用开发者申请的权限需要通过 租户管理员 的审核。",
         "browser_reviewed": false
       },
       {
         "app": "Lark (Larksuite)",
         "field": "credential_gate",
         "claim_status": "checked",
-        "quote": "\u5f53\u5e94\u7528\u901a\u8fc7\u5ba1\u6838\u540e\uff0c\u6240\u6709\u7684 API \u6743\u9650\u624d\u4f1a\u6b63\u5f0f\u751f\u6548\u3002",
+        "quote": "当应用通过审核后，所有的 API 权限才会正式生效。",
         "browser_reviewed": false
       },
       {
         "app": "Lark (Larksuite)",
         "field": "verdict",
         "claim_status": "checked",
-        "quote": "\u4f01\u4e1a\u81ea\u5efa\u5e94\u7528\uff1a\u5e94\u7528\u5f00\u53d1\u8005\u7533\u8bf7\u7684\u6743\u9650\u9700\u8981\u901a\u8fc7 \u79df\u6237\u7ba1\u7406\u5458 \u7684\u5ba1\u6838\u3002",
+        "quote": "企业自建应用：应用开发者申请的权限需要通过 租户管理员 的审核。",
         "browser_reviewed": false
       }
     ],
@@ -10303,21 +10307,21 @@
         "app": "Lark (Larksuite)",
         "field": "auth",
         "claim_status": "checked",
-        "quote": "`app_id` \u662fLark\u5f00\u653e\u5e73\u53f0\u5e94\u7528\u7684\u552f\u4e00\u6807\u8bc6\u3002\u5728\u521b\u5efa\u5e94\u7528\u65f6\uff0c\u7531\u7cfb\u7edf\u81ea\u52a8\u751f\u6210\uff0c\u7528\u6237\u4e0d\u80fd\u81ea\u884c\u4fee\u6539\u3002",
+        "quote": "`app_id` 是Lark开放平台应用的唯一标识。在创建应用时，由系统自动生成，用户不能自行修改。",
         "browser_reviewed": false
       },
       {
         "app": "Lark (Larksuite)",
         "field": "auth",
         "claim_status": "checked",
-        "quote": "`app_secret` \u662f\u5e94\u7528\u7684\u79d8\u94a5\u3002\u5728\u521b\u5efa\u5e94\u7528\u65f6\uff0c\u7531\u7cfb\u7edf\u81ea\u52a8\u751f\u6210\uff0c\u5728\u8c03\u7528\u67d0\u4e9b API \u65f6\uff0c\u9700\u8981\u5c06 `app_secret` \u4f5c\u4e3a\u8bf7\u6c42\u53c2\u6570\u4e4b\u4e00\u3002",
+        "quote": "`app_secret` 是应用的秘钥。在创建应用时，由系统自动生成，在调用某些 API 时，需要将 `app_secret` 作为请求参数之一。",
         "browser_reviewed": false
       },
       {
         "app": "Lark (Larksuite)",
         "field": "auth",
         "claim_status": "checked",
-        "quote": "\u8bbf\u95ee\u51ed\u8bc1\u4e5f\u79f0\u4e3a `access_token`\uff0c\u4ee3\u8868\u5e94\u7528\u4ece\u5e73\u53f0\u3001\u79df\u6237\uff08\u516c\u53f8\u6216\u8005\u56e2\u961f\uff09\u3001\u7528\u6237\u624b\u4e2d\u83b7\u53d6\u7684\u6388\u6743\u3002\u8bbf\u95ee\u51ed\u8bc1\u5305\u62ec\u4e09\u79cd\uff1a\n\n- \u5e94\u7528\u8bbf\u95ee\u51ed\u8bc1\uff0c\u53c2\u6570\u540d\u4e3a `app_access_token`\u3002\n- \u79df\u6237\u8bbf\u95ee\u51ed\u8bc1\uff0c\u53c2\u6570\u540d\u4e3a `tenant_access_token`\u3002\n- \u7528\u6237\u8bbf\u95ee\u51ed\u8bc1\uff0c\u53c2\u6570\u540d `user_access_token`\u3002",
+        "quote": "访问凭证也称为 `access_token`，代表应用从平台、租户（公司或者团队）、用户手中获取的授权。访问凭证包括三种：\n\n- 应用访问凭证，参数名为 `app_access_token`。\n- 租户访问凭证，参数名为 `tenant_access_token`。\n- 用户访问凭证，参数名 `user_access_token`。",
         "browser_reviewed": false
       }
     ],
@@ -10331,21 +10335,21 @@
         "app": "Lark (Larksuite)",
         "field": "credential_gate",
         "claim_status": "checked",
-        "quote": "\u5982\u679c\u4f01\u4e1a\u81ea\u5efa\u5e94\u7528\u9700\u8981\u8c03\u7528\u9ad8\u7ea7 API\uff0c\u5219\u9700\u5148\u8054\u7cfb\u6211\u4eec\u8d2d\u4e70\u9ad8\u7ea7 API \u8ba1\u91cf\u5305\uff0c\u8ba1\u91cf\u5305\u5185\u63d0\u4f9b\u6743\u76ca\u70b9\u4f4d\uff0c\u8c03\u7528\u9ad8\u7ea7 API \u5c06\u6d88\u8017\u6743\u76ca\u70b9\u4f4d\u3002",
+        "quote": "如果企业自建应用需要调用高级 API，则需先联系我们购买高级 API 计量包，计量包内提供权益点位，调用高级 API 将消耗权益点位。",
         "browser_reviewed": false
       },
       {
         "app": "Lark (Larksuite)",
         "field": "credential_gate",
         "claim_status": "checked",
-        "quote": "\u6807\u51c6\u7248 | \u5355\u79df\u6237\u4e0b\u6240\u6709\u4f01\u4e1a\u81ea\u5efa\u5e94\u7528\u7684\u57fa\u7840 API \u8c03\u7528\u603b\u91cf\u4e0a\u9650\u4e3a 10,000 \u6b21/\u6708\uff0c\u8be5\u4e0a\u9650\u5728\u6bcf\u4e2a\u81ea\u7136\u6708\u7684 1 \u65e5\u5237\u65b0\u3002",
+        "quote": "标准版 | 单租户下所有企业自建应用的基础 API 调用总量上限为 10,000 次/月，该上限在每个自然月的 1 日刷新。",
         "browser_reviewed": false
       },
       {
         "app": "Lark (Larksuite)",
         "field": "verdict",
         "claim_status": "checked",
-        "quote": "\u5982\u679c\u4f01\u4e1a\u81ea\u5efa\u5e94\u7528\u9700\u8981\u8c03\u7528\u9ad8\u7ea7 API\uff0c\u5219\u9700\u5148\u8054\u7cfb\u6211\u4eec\u8d2d\u4e70\u9ad8\u7ea7 API \u8ba1\u91cf\u5305\uff0c\u8ba1\u91cf\u5305\u5185\u63d0\u4f9b\u6743\u76ca\u70b9\u4f4d\uff0c\u8c03\u7528\u9ad8\u7ea7 API \u5c06\u6d88\u8017\u6743\u76ca\u70b9\u4f4d\u3002",
+        "quote": "如果企业自建应用需要调用高级 API，则需先联系我们购买高级 API 计量包，计量包内提供权益点位，调用高级 API 将消耗权益点位。",
         "browser_reviewed": false
       }
     ],
@@ -10359,7 +10363,7 @@
         "app": "Lark (Larksuite)",
         "field": "official_mcp",
         "claim_status": "checked",
-        "quote": "\u672c\u6587\u4ecb\u7ecd\u5982\u4f55\u5728 AI \u5de5\u5177\uff08\u4ee5 Cursor \u4e3a\u4f8b\uff09\u5185\u5b89\u88c5\u5e76\u4f7f\u7528 OpenAPI MCP \u5de5\u5177\u3002",
+        "quote": "本文介绍如何在 AI 工具（以 Cursor 为例）内安装并使用 OpenAPI MCP 工具。",
         "browser_reviewed": false
       },
       {
@@ -10380,21 +10384,21 @@
         "app": "Lark (Larksuite)",
         "field": "api_surface",
         "claim_status": "checked",
-        "quote": "Lark\u5f00\u653e\u5e73\u53f0\u63d0\u4f9b\u7684 API \u9075\u5faa RESTful \u98ce\u683c\uff0c\u8bf7\u6c42 URL \u7684\u683c\u5f0f\u4e3a\uff1a",
+        "quote": "Lark开放平台提供的 API 遵循 RESTful 风格，请求 URL 的格式为：",
         "browser_reviewed": false
       },
       {
         "app": "Lark (Larksuite)",
         "field": "api_surface",
         "claim_status": "checked",
-        "quote": "\u8c03\u7528 API \u65f6\uff0c\u9700\u8981\u5728 HTTP Header \u4e2d\u643a\u5e26\u8bbf\u95ee\u51ed\u8bc1\uff0c\u4ee5\u4fbf\u83b7\u53d6\u6743\u9650\u8303\u56f4\u5185\u7684\u8d44\u6e90\u4fe1\u606f\u3002",
+        "quote": "调用 API 时，需要在 HTTP Header 中携带访问凭证，以便获取权限范围内的资源信息。",
         "browser_reviewed": false
       },
       {
         "app": "Lark (Larksuite)",
         "field": "verdict",
         "claim_status": "checked",
-        "quote": "Lark\u5f00\u653e\u5e73\u53f0\u63d0\u4f9b\u7684 API \u9075\u5faa RESTful \u98ce\u683c\uff0c\u8bf7\u6c42 URL \u7684\u683c\u5f0f\u4e3a\uff1a",
+        "quote": "Lark开放平台提供的 API 遵循 RESTful 风格，请求 URL 的格式为：",
         "browser_reviewed": false
       }
     ],
@@ -10422,7 +10426,7 @@
         "app": "PitchBook",
         "field": "auth",
         "claim_status": "checked",
-        "quote": "Our team will work with you to understand the insights and data you\u2019re looking for and help you establish the API connection through an API key or authentication token. Available data for each entity type is packaged across several endpoints so you can map the data to your desired format and structure.",
+        "quote": "Our team will work with you to understand the insights and data you’re looking for and help you establish the API connection through an API key or authentication token. Available data for each entity type is packaged across several endpoints so you can map the data to your desired format and structure.",
         "browser_reviewed": true
       },
       {
@@ -10499,7 +10503,7 @@
         "app": "PitchBook",
         "field": "official_mcp",
         "claim_status": "checked",
-        "quote": "PitchBook Data MCP puts its trusted data into the systems investors have already built. PitchBook Data MCP gives investment teams native, secure access to a subset of PitchBook\u2019s dataset, including company, deal, investor, and fund data, directly inside their own proprietary tools and models.",
+        "quote": "PitchBook Data MCP puts its trusted data into the systems investors have already built. PitchBook Data MCP gives investment teams native, secure access to a subset of PitchBook’s dataset, including company, deal, investor, and fund data, directly inside their own proprietary tools and models.",
         "browser_reviewed": true
       },
       {
@@ -10527,7 +10531,7 @@
         "app": "PitchBook",
         "field": "credential_gate",
         "claim_status": "checked",
-        "quote": "Pricing options vary depending on how many seats you need and your firm type. Another primary consideration is whether you\u2019re interested in additional premium offerings, such as Direct Data or CRM Integration. Find out what the cost for you might look like by getting in touch with a representative today.",
+        "quote": "Pricing options vary depending on how many seats you need and your firm type. Another primary consideration is whether you’re interested in additional premium offerings, such as Direct Data or CRM Integration. Find out what the cost for you might look like by getting in touch with a representative today.",
         "browser_reviewed": true
       }
     ],
@@ -10541,7 +10545,7 @@
         "app": "PitchBook",
         "field": "api_surface",
         "claim_status": "checked",
-        "quote": "Our RESTful API utilizes JSON and is system agnostic, so you can integrate it into custom applications and CRMs to bring the industry\u2019s best data directly into your workflow.",
+        "quote": "Our RESTful API utilizes JSON and is system agnostic, so you can integrate it into custom applications and CRMs to bring the industry’s best data directly into your workflow.",
         "browser_reviewed": true
       },
       {
@@ -10555,7 +10559,7 @@
         "app": "PitchBook",
         "field": "verdict",
         "claim_status": "checked",
-        "quote": "Our RESTful API utilizes JSON and is system agnostic, so you can integrate it into custom applications and CRMs to bring the industry\u2019s best data directly into your workflow.",
+        "quote": "Our RESTful API utilizes JSON and is system agnostic, so you can integrate it into custom applications and CRMs to bring the industry’s best data directly into your workflow.",
         "browser_reviewed": true
       },
       {
@@ -10723,7 +10727,7 @@
         "app": "Pumble",
         "field": "api_surface",
         "claim_status": "checked",
-        "quote": "By using the Pumble API addon, you can interact with Pumble\u2019s API documentation without using any complex authentication processes. This addon lets you generate an API key that allows you to send messages, reactions, and more via simple HTTP requests.",
+        "quote": "By using the Pumble API addon, you can interact with Pumble’s API documentation without using any complex authentication processes. This addon lets you generate an API key that allows you to send messages, reactions, and more via simple HTTP requests.",
         "browser_reviewed": false
       },
       {
@@ -10737,7 +10741,7 @@
         "app": "Pumble",
         "field": "verdict",
         "claim_status": "checked",
-        "quote": "By using the Pumble API addon, you can interact with Pumble\u2019s API documentation without using any complex authentication processes. This addon lets you generate an API key that allows you to send messages, reactions, and more via simple HTTP requests.",
+        "quote": "By using the Pumble API addon, you can interact with Pumble’s API documentation without using any complex authentication processes. This addon lets you generate an API key that allows you to send messages, reactions, and more via simple HTTP requests.",
         "browser_reviewed": false
       }
     ],
@@ -11178,21 +11182,21 @@
         "app": "SE Ranking",
         "field": "credential_gate",
         "claim_status": "checked",
-        "quote": "Yes. The 14-day free trial gives you 100K API credits across all six API endpoints, as well as\u00a0 MCP server access. You also get access to the complete SEO and GEO suite by SE Ranking. No credit card required.",
+        "quote": "Yes. The 14-day free trial gives you 100K API credits across all six API endpoints, as well as  MCP server access. You also get access to the complete SEO and GEO suite by SE Ranking. No credit card required.",
         "browser_reviewed": false
       },
       {
         "app": "SE Ranking",
         "field": "credential_gate",
         "claim_status": "checked",
-        "quote": "Instantly. Your API key is issued immediately after payment. If you are on a free trial, you\u2019ll get an API key once you confirm your email. Find your keys within the API dashboard.",
+        "quote": "Instantly. Your API key is issued immediately after payment. If you are on a free trial, you’ll get an API key once you confirm your email. Find your keys within the API dashboard.",
         "browser_reviewed": false
       },
       {
         "app": "SE Ranking",
         "field": "verdict",
         "claim_status": "checked",
-        "quote": "Yes. The 14-day free trial gives you 100K API credits across all six API endpoints, as well as\u00a0 MCP server access.",
+        "quote": "Yes. The 14-day free trial gives you 100K API credits across all six API endpoints, as well as  MCP server access.",
         "browser_reviewed": false
       }
     ],
@@ -11206,7 +11210,7 @@
         "app": "SE Ranking",
         "field": "auth",
         "claim_status": "checked",
-        "quote": "First, you\u2019ll need to generate a unique API key from your account dashboard.",
+        "quote": "First, you’ll need to generate a unique API key from your account dashboard.",
         "browser_reviewed": false
       },
       {
@@ -11255,7 +11259,7 @@
         "app": "SE Ranking",
         "field": "official_mcp",
         "claim_status": "checked",
-        "quote": "MCP server server follows the authenticated remote MCP spec, so it\u2019s centrally hosted and managed.",
+        "quote": "MCP server server follows the authenticated remote MCP spec, so it’s centrally hosted and managed.",
         "browser_reviewed": false
       },
       {
@@ -11605,7 +11609,7 @@
         "app": "QuickBooks",
         "field": "credential_gate",
         "claim_status": "checked",
-        "quote": "No. You don\u2019t need to provide a payment method if you are at the Builder tier.",
+        "quote": "No. You don’t need to provide a payment method if you are at the Builder tier.",
         "browser_reviewed": false
       },
       {
@@ -11626,7 +11630,7 @@
         "app": "QuickBooks",
         "field": "api_surface",
         "claim_status": "checked",
-        "quote": "The QuickBooks Online GraphQL API uses the GraphQL API framework. Here\u2019s a brief overview.",
+        "quote": "The QuickBooks Online GraphQL API uses the GraphQL API framework. Here’s a brief overview.",
         "browser_reviewed": false
       },
       {
@@ -11640,7 +11644,7 @@
         "app": "QuickBooks",
         "field": "verdict",
         "claim_status": "checked",
-        "quote": "The QuickBooks Online GraphQL API uses the GraphQL API framework. Here\u2019s a brief overview.",
+        "quote": "The QuickBooks Online GraphQL API uses the GraphQL API framework. Here’s a brief overview.",
         "browser_reviewed": false
       }
     ],
@@ -11780,14 +11784,14 @@
         "app": "Supabase",
         "field": "credential_gate",
         "claim_status": "checked",
-        "quote": "### Free - from $0/month\n- Unlimited API requests\n- 50,000 monthly active users\n- 500 MB database size (Shared CPU \u2022 500 MB RAM)\n- 5 GB egress\n- 5 GB cached egress\n- 1 GB file storage\n- Community support\n- Note: Free projects are paused after 1 week of inactivity.\nLimit of 2 active projects.",
+        "quote": "### Free - from $0/month\n- Unlimited API requests\n- 50,000 monthly active users\n- 500 MB database size (Shared CPU • 500 MB RAM)\n- 5 GB egress\n- 5 GB cached egress\n- 1 GB file storage\n- Community support\n- Note: Free projects are paused after 1 week of inactivity.\nLimit of 2 active projects.",
         "browser_reviewed": false
       },
       {
         "app": "Supabase",
         "field": "verdict",
         "claim_status": "checked",
-        "quote": "### Free - from $0/month\n- Unlimited API requests\n- 50,000 monthly active users\n- 500 MB database size (Shared CPU \u2022 500 MB RAM)\n- 5 GB egress\n- 5 GB cached egress\n- 1 GB file storage\n- Community support\n- Note: Free projects are paused after 1 week of inactivity.\nLimit of 2 active projects.",
+        "quote": "### Free - from $0/month\n- Unlimited API requests\n- 50,000 monthly active users\n- 500 MB database size (Shared CPU • 500 MB RAM)\n- 5 GB egress\n- 5 GB cached egress\n- 1 GB file storage\n- Community support\n- Note: Free projects are paused after 1 week of inactivity.\nLimit of 2 active projects.",
         "browser_reviewed": false
       }
     ],
@@ -11878,7 +11882,7 @@
         "app": "Airtable",
         "field": "official_mcp",
         "claim_status": "checked",
-        "quote": "Airtable\u2019s MCP server lets you connect AI tools directly to your Airtable bases.",
+        "quote": "Airtable’s MCP server lets you connect AI tools directly to your Airtable bases.",
         "browser_reviewed": false
       },
       {
@@ -12067,7 +12071,7 @@
         "app": "Harvest",
         "field": "official_mcp",
         "claim_status": "checked",
-        "quote": "The Harvest MCP is the connection that gives an MCP-compatible assistant \u2014 such as Claude \u2014 controlled access to your Harvest account, so it can carry out time tracking tasks on your behalf.",
+        "quote": "The Harvest MCP is the connection that gives an MCP-compatible assistant — such as Claude — controlled access to your Harvest account, so it can carry out time tracking tasks on your behalf.",
         "browser_reviewed": false
       },
       {
@@ -12529,7 +12533,7 @@
         "app": "YouTube Transcript",
         "field": "official_mcp",
         "claim_status": "checked",
-        "quote": "TranscriptAPI runs a hosted (remote) MCP server at `https://transcriptapi.com/mcp`. Add that URL to an MCP client and your AI assistant can fetch YouTube transcripts, search YouTube, and list a channel\u2019s or playlist\u2019s videos. There is nothing to install or host.",
+        "quote": "TranscriptAPI runs a hosted (remote) MCP server at `https://transcriptapi.com/mcp`. Add that URL to an MCP client and your AI assistant can fetch YouTube transcripts, search YouTube, and list a channel’s or playlist’s videos. There is nothing to install or host.",
         "browser_reviewed": true
       },
       {
@@ -12578,14 +12582,14 @@
         "app": "Clay",
         "field": "credential_gate",
         "claim_status": "checked",
-        "quote": "Basic row reads work on any plan. Structured queries \u2014 joins, ranges, and paging past 100 rows \u2014 need API table sync, an Enterprise feature. There are no current plans to support table building from the API or CLI.",
+        "quote": "Basic row reads work on any plan. Structured queries — joins, ranges, and paging past 100 rows — need API table sync, an Enterprise feature. There are no current plans to support table building from the API or CLI.",
         "browser_reviewed": false
       },
       {
         "app": "Clay",
         "field": "official_mcp",
         "claim_status": "checked",
-        "quote": "The Plugin installs Clay\u2019s skills and the Clay CLI into your coding agent. It doesn\u2019t include an MCP server, so installing the Plugin doesn\u2019t give your agent the MCP for Reps toolset \u2014 that connection is set up separately.",
+        "quote": "The Plugin installs Clay’s skills and the Clay CLI into your coding agent. It doesn’t include an MCP server, so installing the Plugin doesn’t give your agent the MCP for Reps toolset — that connection is set up separately.",
         "browser_reviewed": false
       },
       {
@@ -12620,7 +12624,7 @@
         "app": "Clay",
         "field": "official_mcp",
         "claim_status": "checked",
-        "quote": "Clay exposes a Model Context Protocol (MCP) server that lets an external platform \u2014 an AI assistant, IDE, agent host, or partner product \u2014 run Clay's find-and-enrich tools and custom functions on behalf of a signed-in Clay user.",
+        "quote": "Clay exposes a Model Context Protocol (MCP) server that lets an external platform — an AI assistant, IDE, agent host, or partner product — run Clay's find-and-enrich tools and custom functions on behalf of a signed-in Clay user.",
         "browser_reviewed": false
       },
       {
@@ -12634,7 +12638,7 @@
         "app": "Clay",
         "field": "official_mcp",
         "claim_status": "checked",
-        "quote": "Send a `POST` to the registration endpoint, following [RFC 7591](https://datatracker.ietf.org/doc/html/rfc7591). Registration is open \u2014 there is no Clay-side approval step.",
+        "quote": "Send a `POST` to the registration endpoint, following [RFC 7591](https://datatracker.ietf.org/doc/html/rfc7591). Registration is open — there is no Clay-side approval step.",
         "browser_reviewed": true
       },
       {
@@ -12648,7 +12652,7 @@
         "app": "Clay",
         "field": "verdict",
         "claim_status": "checked",
-        "quote": "Clay exposes a Model Context Protocol (MCP) server that lets an external platform \u2014 an AI assistant, IDE, agent host, or partner product \u2014 run Clay's find-and-enrich tools and custom functions on behalf of a signed-in Clay user.",
+        "quote": "Clay exposes a Model Context Protocol (MCP) server that lets an external platform — an AI assistant, IDE, agent host, or partner product — run Clay's find-and-enrich tools and custom functions on behalf of a signed-in Clay user.",
         "browser_reviewed": false
       }
     ],
@@ -12662,7 +12666,7 @@
         "app": "Clay",
         "field": "auth",
         "claim_status": "checked",
-        "quote": "The key is shown only once, when you create it, so copy it somewhere safe. Some older integrations, such as Zapier, still use the legacy key under `Settings \u2192 Account \u2192 API key (legacy)`.",
+        "quote": "The key is shown only once, when you create it, so copy it somewhere safe. Some older integrations, such as Zapier, still use the legacy key under `Settings → Account → API key (legacy)`.",
         "browser_reviewed": false
       }
     ],
@@ -12760,7 +12764,7 @@
         "app": "WooCommerce",
         "field": "credential_gate",
         "claim_status": "checked",
-        "quote": "WooCommerce is free to download and use, and you choose where to invest your budget from there. Get everything you need and nothing you don\u2019t, with total transparency and no tiers or surprise fees.",
+        "quote": "WooCommerce is free to download and use, and you choose where to invest your budget from there. Get everything you need and nothing you don’t, with total transparency and no tiers or surprise fees.",
         "browser_reviewed": false
       },
       {
@@ -12942,7 +12946,7 @@
         "app": "Fathom",
         "field": "credential_gate",
         "claim_status": "checked",
-        "quote": "Generate an API key yourself in Fathom, with no admin approval needed. API keys are issued per user and return the meetings that user can access. Organization-level API keys aren\u2019t available.",
+        "quote": "Generate an API key yourself in Fathom, with no admin approval needed. API keys are issued per user and return the meetings that user can access. Organization-level API keys aren’t available.",
         "browser_reviewed": false
       },
       {
@@ -13243,21 +13247,21 @@
         "app": "iPayX",
         "field": "api_surface",
         "claim_status": "checked",
-        "quote": "REST API \u00b7 v1",
+        "quote": "REST API · v1",
         "browser_reviewed": true
       },
       {
         "app": "iPayX",
         "field": "api_surface",
         "claim_status": "checked",
-        "quote": "3 endpoints\n\naudit \u00b7 rates \u00b7 audit/document",
+        "quote": "3 endpoints\n\naudit · rates · audit/document",
         "browser_reviewed": true
       },
       {
         "app": "iPayX",
         "field": "api_surface",
         "claim_status": "checked",
-        "quote": "Signed webhooks\n\nHMAC-SHA256 \u00b7 audit.completed",
+        "quote": "Signed webhooks\n\nHMAC-SHA256 · audit.completed",
         "browser_reviewed": true
       },
       {
@@ -13271,7 +13275,7 @@
         "app": "iPayX",
         "field": "verdict",
         "claim_status": "checked",
-        "quote": "3 endpoints\n\naudit \u00b7 rates \u00b7 audit/document",
+        "quote": "3 endpoints\n\naudit · rates · audit/document",
         "browser_reviewed": true
       }
     ],
@@ -13327,7 +13331,7 @@
         "app": "iPayX",
         "field": "official_mcp",
         "claim_status": "checked",
-        "quote": "One MCP server. Claude, ChatGPT, Grok, Perplexity, DeepSeek, Qwen, MiniMax, Copilot, Cursor, n8n \u2014 real-time forensic FX audit.",
+        "quote": "One MCP server. Claude, ChatGPT, Grok, Perplexity, DeepSeek, Qwen, MiniMax, Copilot, Cursor, n8n — real-time forensic FX audit.",
         "browser_reviewed": true
       },
       {
@@ -13558,14 +13562,14 @@
         "app": "Netlify",
         "field": "credential_gate",
         "claim_status": "checked",
-        "quote": "### Free \u2014 $0 forever\n- **Audience:** Individual\n- **Credits:** 300 credit limit\n- Deploy from AI, Git, or API",
+        "quote": "### Free — $0 forever\n- **Audience:** Individual\n- **Credits:** 300 credit limit\n- Deploy from AI, Git, or API",
         "browser_reviewed": false
       },
       {
         "app": "Netlify",
         "field": "verdict",
         "claim_status": "checked",
-        "quote": "### Free \u2014 $0 forever\n- **Audience:** Individual\n- **Credits:** 300 credit limit\n- Deploy from AI, Git, or API",
+        "quote": "### Free — $0 forever\n- **Audience:** Individual\n- **Credits:** 300 credit limit\n- Deploy from AI, Git, or API",
         "browser_reviewed": false
       }
     ],
@@ -13579,7 +13583,7 @@
         "app": "Notion",
         "field": "credential_gate",
         "claim_status": "checked",
-        "quote": "Both Members and Workspace owners can add connections to a workspace in Settings \u2192 Connections .",
+        "quote": "Both Members and Workspace owners can add connections to a workspace in Settings → Connections .",
         "browser_reviewed": false
       },
       {
@@ -13600,7 +13604,7 @@
         "app": "Notion",
         "field": "verdict",
         "claim_status": "checked",
-        "quote": "Both Members and Workspace owners can add connections to a workspace in Settings \u2192 Connections .",
+        "quote": "Both Members and Workspace owners can add connections to a workspace in Settings → Connections .",
         "browser_reviewed": false
       }
     ],
@@ -13747,7 +13751,7 @@
         "app": "Plain",
         "field": "credential_gate",
         "claim_status": "checked",
-        "quote": "Go to **Settings \u2192 Machine users & agents** and click **Add machine user**. Pick **API User** and click **Continue**.",
+        "quote": "Go to **Settings → Machine users & agents** and click **Add machine user**. Pick **API User** and click **Continue**.",
         "browser_reviewed": false
       }
     ],
@@ -13838,7 +13842,7 @@
         "app": "Podio",
         "field": "official_mcp",
         "claim_status": "checked",
-        "quote": "The Podio MCP (Model Context Protocol) Server connects AI assistants \u2014 **ChatGPT, Microsoft Copilot Studio, Claude Desktop**, and any other MCP-compatible platform \u2014 directly to your Podio data.",
+        "quote": "The Podio MCP (Model Context Protocol) Server connects AI assistants — **ChatGPT, Microsoft Copilot Studio, Claude Desktop**, and any other MCP-compatible platform — directly to your Podio data.",
         "browser_reviewed": false
       },
       {
@@ -13894,7 +13898,7 @@
         "app": "Twilio",
         "field": "official_mcp",
         "claim_status": "checked",
-        "quote": "No installation required: The server is hosted by Twilio at `mcp.twilio.com/docs`\u2014point your IDE at the URL.",
+        "quote": "No installation required: The server is hosted by Twilio at `mcp.twilio.com/docs`—point your IDE at the URL.",
         "browser_reviewed": false
       },
       {
@@ -13985,7 +13989,7 @@
         "app": "Twilio",
         "field": "credential_gate",
         "claim_status": "checked",
-        "quote": "Sign up for a free trial\u2014no credit card required",
+        "quote": "Sign up for a free trial—no credit card required",
         "browser_reviewed": false
       },
       {
@@ -13999,7 +14003,7 @@
         "app": "Twilio",
         "field": "verdict",
         "claim_status": "checked",
-        "quote": "Sign up for a free trial\u2014no credit card required",
+        "quote": "Sign up for a free trial—no credit card required",
         "browser_reviewed": false
       }
     ],
@@ -14027,7 +14031,7 @@
         "app": "Pylon",
         "field": "api_surface",
         "claim_status": "checked",
-        "quote": "REST API\n\n\u2713\n\n\u2713\n\n\u2713",
+        "quote": "REST API\n\n✓\n\n✓\n\n✓",
         "browser_reviewed": false
       },
       {
@@ -14102,7 +14106,7 @@
       }
     ],
     "status": 200,
-    "final_url": "https://www.zendesk.com/in/pricing/#georedirect"
+    "final_url": "https://www.zendesk.com/pricing/"
   },
   {
     "url": "https://www.zoho.com/cliq/help/platform/configure-zoho-cliq-mcp.html",

@@ -13,11 +13,12 @@ def decoded(url):
   try:return base64.urlsafe_b64decode(q[2:]+'===').decode()
   except Exception:pass
  return url
-def run(app,force=False):
- path=OUT/f"{app['number']:03}.json"
+def run(app,force=False,output_dir=OUT):
+ output_dir=Path(output_dir);output_dir.mkdir(parents=True,exist_ok=True)
+ path=output_dir/f"{app['number']:03}.json"
  if path.exists() and not force:return json.loads(path.read_text(encoding='utf-8'))
  if path.exists() and force:
-  archive=OUT/'reruns'; archive.mkdir(exist_ok=True)
+  archive=output_dir/'reruns'; archive.mkdir(exist_ok=True)
   path=archive/f"{app['number']:03}-{datetime.datetime.now(datetime.timezone.utc).strftime('%Y%m%dT%H%M%S%fZ')}.json"
  log={'app':app,'checked_at':datetime.datetime.now(datetime.timezone.utc).isoformat(),'query':f"{app['name']} developer API authentication documentation",'search_results':[],'retrievals':[],'errors':[]}
  try:
@@ -43,7 +44,7 @@ def run(app,force=False):
  log['validation_errors']=['All claim fields require source-specific review']
  path.write_text(json.dumps(log,ensure_ascii=False,indent=2),encoding='utf-8');return log
 if __name__=='__main__':
- p=argparse.ArgumentParser();p.add_argument('--app');p.add_argument('--limit',type=int);p.add_argument('--force',action='store_true');p.add_argument('--workers',type=int,default=5);a=p.parse_args(); apps=[x for x in APPS if not a.app or x['name'].casefold()==a.app.casefold()];apps=apps[:a.limit] if a.limit else apps
+ p=argparse.ArgumentParser();p.add_argument('--app');p.add_argument('--limit',type=int);p.add_argument('--force',action='store_true');p.add_argument('--workers',type=int,default=5);p.add_argument('--output-dir',type=Path,default=OUT);a=p.parse_args(); apps=[x for x in APPS if not a.app or x['name'].casefold()==a.app.casefold()];apps=apps[:a.limit] if a.limit else apps
  if not apps:raise SystemExit('No matching app')
  with concurrent.futures.ThreadPoolExecutor(max_workers=a.workers) as ex:
-  for log in ex.map(lambda x:run(x,a.force),apps): print(f"{log['app']['number']:03} {log['app']['name']}: {len(log['search_results'])} results, {len(log['retrievals'])} fetched, {len(log['errors'])} errors",flush=True)
+  for log in ex.map(lambda x:run(x,a.force,a.output_dir),apps): print(f"{log['app']['number']:03} {log['app']['name']}: {len(log['search_results'])} results, {len(log['retrievals'])} fetched, {len(log['errors'])} errors",flush=True)

@@ -261,42 +261,6 @@
     "final_url": "https://api.docs.dealcloud.com/mcp/getting-started"
   },
   {
-    "url": "https://api.github.com/repos/mermaid-js/mermaid-cli/git/trees/1423a0d7967d275a9d360ba0617f569550827c8b?recursive=1",
-    "uses": [
-      {
-        "app": "Mermaid CLI",
-        "field": "official_mcp",
-        "claim_status": "checked",
-        "quote": "\"truncated\":false",
-        "quote_exact": true,
-        "quote_token_exact": true,
-        "raw_html_only_match": false,
-        "start_fragment_found": true,
-        "end_fragment_found": true
-      }
-    ],
-    "status": 200,
-    "final_url": "https://api.github.com/repos/mermaid-js/mermaid-cli/git/trees/1423a0d7967d275a9d360ba0617f569550827c8b?recursive=1"
-  },
-  {
-    "url": "https://api.github.com/repos/sherlock-project/sherlock/git/trees/c588d7c8b476df9f9c84912a05d1430fb8cdcdae?recursive=1",
-    "uses": [
-      {
-        "app": "Sherlock",
-        "field": "official_mcp",
-        "claim_status": "checked",
-        "quote": "\"truncated\":false",
-        "quote_exact": true,
-        "quote_token_exact": true,
-        "raw_html_only_match": false,
-        "start_fragment_found": true,
-        "end_fragment_found": true
-      }
-    ],
-    "status": 200,
-    "final_url": "https://api.github.com/repos/sherlock-project/sherlock/git/trees/c588d7c8b476df9f9c84912a05d1430fb8cdcdae?recursive=1"
-  },
-  {
     "url": "https://apify.com/pricing",
     "uses": [
       {
@@ -12457,6 +12421,48 @@
     "final_url": "https://github.com/intuit/quickbooks-online-mcp-server/commits/main/"
   },
   {
+    "url": "https://github.com/mermaid-js/mermaid-cli/tree/1423a0d7967d275a9d360ba0617f569550827c8b",
+    "status": 200,
+    "final_url": "https://github.com/mermaid-js/mermaid-cli/tree/1423a0d7967d275a9d360ba0617f569550827c8b",
+    "uses": [
+      {
+        "app": "Mermaid CLI",
+        "field": "official_mcp",
+        "claim_status": "checked",
+        "quote": "README.md",
+        "browser_reviewed": true,
+        "followup_checked_at": "2026-11-24",
+        "quote_exact": true,
+        "quote_token_exact": true,
+        "raw_html_only_match": false,
+        "start_fragment_found": true,
+        "end_fragment_found": true
+      }
+    ],
+    "followup_note": "Replaced a rate-limited GitHub tree API URL with the official commit-pinned browser page; full source archive review remains documented in source_review_v4.json."
+  },
+  {
+    "url": "https://github.com/sherlock-project/sherlock/tree/c588d7c8b476df9f9c84912a05d1430fb8cdcdae",
+    "status": 200,
+    "final_url": "https://github.com/sherlock-project/sherlock/tree/c588d7c8b476df9f9c84912a05d1430fb8cdcdae",
+    "uses": [
+      {
+        "app": "Sherlock",
+        "field": "official_mcp",
+        "claim_status": "checked",
+        "quote": "Readme",
+        "browser_reviewed": true,
+        "followup_checked_at": "2026-11-24",
+        "quote_exact": true,
+        "quote_token_exact": true,
+        "raw_html_only_match": false,
+        "start_fragment_found": true,
+        "end_fragment_found": true
+      }
+    ],
+    "followup_note": "Replaced a rate-limited GitHub tree API URL with the official commit-pinned browser page; full source archive review remains documented in source_review_v4.json."
+  },
+  {
     "url": "https://guide.nmi.com/",
     "uses": [
       {
@@ -14640,7 +14646,7 @@
       }
     ],
     "status": 200,
-    "final_url": "https://morningstar.okta.com/oauth2/v1/authorize?access_type=offline&client_id=0oarr5xtcdjYi5pRj4x7&code_challenge=pSrqyIeipDuMWpVl5KMFvIcmHFNnc9eZ-Z8MvH_qrrw&code_challenge_method=S256&redirect_uri=https%3A%2F%2Fmcp-proxy-external.pitchbook.com%2Foauth%2Fcallback&response_type=code&scope=openid+profile+email+groups+offline_access&state=jKeQnn7OpdEPTCfE1TU6O8RG62LFrfhV"
+    "final_url": "https://morningstar.okta.com/oauth2/v1/authorize?access_type=offline&client_id=0oarr5xtcdjYi5pRj4x7&code_challenge=BonrN19S05QtUN9bXryGn20SLV2uF5gVqX2kal9Z-k4&code_challenge_method=S256&redirect_uri=https%3A%2F%2Fmcp-proxy-external.pitchbook.com%2Foauth%2Fcallback&response_type=code&scope=openid+profile+email+groups+offline_access&state=sa--1yNoKt2ZD9DxiSVVMVJ9cDikrGgN"
   },
   {
     "url": "https://mcp.podio.com/health",
@@ -15156,15 +15162,15 @@
         "field": "auth",
         "claim_status": "checked",
         "quote": "Merchant Login\n\nTo access your control panel, please enter your username and password in the fields below.",
-        "quote_exact": true,
-        "quote_token_exact": true,
+        "quote_exact": false,
+        "quote_token_exact": false,
         "raw_html_only_match": false,
-        "start_fragment_found": true,
-        "end_fragment_found": true
+        "start_fragment_found": false,
+        "end_fragment_found": false
       }
     ],
     "status": 200,
-    "final_url": "https://paygent.transactiongateway.com/merchants/login.php?cookie_check=1&referrer=L21lcmNoYW50cy9pbmRleC5waHA_&qed=8c1116f4f94cffe72c735939374ddc62203fb68b2f8fae8fb52475074c07fa1a"
+    "final_url": "https://paygent.transactiongateway.com/merchants/login.php?referrer=L21lcmNoYW50cy9pbmRleC5waHA_&qed=8c1116f4f94cffe72c735939374ddc62203fb68b2f8fae8fb52475074c07fa1a"
   },
   {
     "url": "https://pitchbook.com/help/PitchBook-api",
@@ -20801,10 +20807,10 @@
         "claim_status": "checked",
         "quote": "PROFESSIONAL Includes: Viewer seats Core support Out-of-the-box Analytics Automations Skills Broadcasts MCP API Integrations $89/seat on an annual contract Book a demo",
         "quote_exact": false,
-        "quote_token_exact": true,
+        "quote_token_exact": false,
         "raw_html_only_match": false,
         "start_fragment_found": false,
-        "end_fragment_found": true
+        "end_fragment_found": false
       },
       {
         "app": "Pylon",
@@ -20946,7 +20952,7 @@
       }
     ],
     "status": 200,
-    "final_url": "https://www.zendesk.com/in/pricing/#georedirect"
+    "final_url": "https://www.zendesk.com/pricing/"
   },
   {
     "url": "https://www.zoho.com/cliq/help/platform/configure-zoho-cliq-mcp.html",

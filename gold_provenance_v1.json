@@ -1,0 +1,30 @@
+{
+  "schema_version": 1,
+  "gold_labels": {
+    "actor_type": "AI",
+    "labeler_identity": "not recorded",
+    "session_identity": "not recorded",
+    "evidence_source": "frozen page excerpts",
+    "separate_session": "reported in the project record",
+    "agent_answer_exposure": {
+      "reported_status": "The project record says agent answers were not shown during labeling.",
+      "independently_verified": false
+    },
+    "earlier_chat_label_exclusion": {
+      "status": "unverified",
+      "note": "The author had seen assistant answers before; saved artifacts do not establish whether overlapping earlier chat labels were excluded from the AI labeling session."
+    }
+  },
+  "author_spotcheck": {
+    "actor_type": "human author",
+    "independent": false,
+    "blind_to_saved_labels": false,
+    "sample_size": 24,
+    "unit": "gold status only, not full field-value agreement",
+    "clear_status_matches": 15,
+    "clear_status_comparisons": 23,
+    "weak_or_ambiguous": 1,
+    "scope_mismatches": 5,
+    "source": "human_gold_spotcheck_results_v1.json"
+  }
+}

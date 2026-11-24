@@ -1,0 +1,42 @@
+{
+  "checked_at": "2026-11-24",
+  "scope": "Current first-party documentation recheck of three known gold conflicts. This is not a replacement for the frozen-excerpt evaluation.",
+  "records": [
+    {
+      "row_id": "R032",
+      "app": "Notion",
+      "field": "official_mcp",
+      "frozen_gold_status": "not_stated_in_docs",
+      "frozen_gold_value": "",
+      "frozen_record_issue": "The labeler note says a hosted MCP URL is stated, while the stored status is not_stated_in_docs. The frozen packet contains the URL and read/search tool names.",
+      "current_source_url": "https://developers.notion.com/guides/mcp/get-started-with-mcp",
+      "current_source_excerpt": "The remote server URL is https://mcp.notion.com/mcp.",
+      "current_source_assessment": "The official guide documents a remote vendor MCP server. Current docs also say the connected assistant can read and update authorized workspace content.",
+      "disposition": "Historical status/value inconsistency; preserve original score until the reviewer decides whether to issue a separately versioned corrected-gold evaluation."
+    },
+    {
+      "row_id": "R059",
+      "app": "YouTube Transcript",
+      "field": "api_surface",
+      "frozen_gold_status": "not_stated_in_docs",
+      "frozen_gold_value": "",
+      "frozen_record_issue": "The frozen excerpt lists 13 HTTP GET endpoints but does not explicitly name REST or assign a breadth label.",
+      "current_source_url": "https://transcriptapi.com/docs/api/",
+      "current_source_excerpt": "Base URL: https://transcriptapi.com/api/v2; GET /youtube/transcript; GET /youtube/search.",
+      "current_source_assessment": "The current first-party reference documents a v2 HTTP API with transcript, metadata, search, channel, and playlist endpoints. Whether the frozen evidence supports the rubric's REST and broad labels is a judgment call.",
+      "disposition": "Keep the historical label unchanged pending human adjudication of whether protocol and breadth may be inferred from endpoint evidence."
+    },
+    {
+      "row_id": "R072",
+      "app": "Snowflake",
+      "field": "official_mcp",
+      "frozen_gold_status": "found",
+      "frozen_gold_value": "hosted with actions",
+      "author_spotcheck_status": "not_stated_in_docs",
+      "current_source_url": "https://docs.snowflake.com/en/user-guide/snowflake-cortex/cortex-agents-mcp",
+      "current_source_excerpt": "The Snowflake-managed MCP server lets AI agents securely retrieve data from Snowflake accounts without needing to deploy separate infrastructure.",
+      "current_source_assessment": "Current Snowflake documentation clearly describes a Snowflake-managed MCP server and its supported tools. The author's 24-row spot-check disagrees with the gold status; that spot-check was not merged into the gold template.",
+      "disposition": "Gold remains found in the frozen evaluation; retain and disclose the separate author disagreement."
+    }
+  ]
+}

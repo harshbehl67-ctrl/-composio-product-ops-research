@@ -1,0 +1,175 @@
+{
+  "seed": 20261124,
+  "n": 24,
+  "selection": "uniform sample without replacement from 80 gold rows",
+  "rows": [
+    {
+      "row_id": "R001",
+      "sample": "selected_sample",
+      "app": "HubSpot",
+      "field": "auth",
+      "docs_url": "https://developers.hubspot.com/docs/apps/developer-platform/build-apps/authentication/overview"
+    },
+    {
+      "row_id": "R004",
+      "sample": "selected_sample",
+      "app": "HubSpot",
+      "field": "official_mcp",
+      "docs_url": "https://developers.hubspot.com/changelog/remote-hubspot-mcp-server-is-now-generally-available"
+    },
+    {
+      "row_id": "R006",
+      "sample": "selected_sample",
+      "app": "Zendesk",
+      "field": "credential_gate",
+      "docs_url": "https://www.zendesk.com/pricing/"
+    },
+    {
+      "row_id": "R008",
+      "sample": "selected_sample",
+      "app": "Zendesk",
+      "field": "official_mcp",
+      "docs_url": "https://support.zendesk.com/hc/en-us/articles/11400026079130-Connecting-external-AI-agents-to-the-Zendesk-MCP-server-or-Zendesk-AI-agents-EAP"
+    },
+    {
+      "row_id": "R010",
+      "sample": "selected_sample",
+      "app": "Slack",
+      "field": "credential_gate",
+      "docs_url": "https://slack.com/pricing"
+    },
+    {
+      "row_id": "R018",
+      "sample": "selected_sample",
+      "app": "Shopify",
+      "field": "credential_gate",
+      "docs_url": "https://shopify.dev/docs/apps/build/authentication-authorization/manage-credentials"
+    },
+    {
+      "row_id": "R019",
+      "sample": "selected_sample",
+      "app": "Shopify",
+      "field": "api_surface",
+      "docs_url": "https://shopify.dev/docs/apps/build/apis"
+    },
+    {
+      "row_id": "R021",
+      "sample": "selected_sample",
+      "app": "Apify",
+      "field": "auth",
+      "docs_url": "https://docs.apify.com/api/v2"
+    },
+    {
+      "row_id": "R023",
+      "sample": "selected_sample",
+      "app": "Apify",
+      "field": "api_surface",
+      "docs_url": "https://docs.apify.com/api/v2"
+    },
+    {
+      "row_id": "R032",
+      "sample": "selected_sample",
+      "app": "Notion",
+      "field": "official_mcp",
+      "docs_url": "https://developers.notion.com/guides/mcp/get-started-with-mcp"
+    },
+    {
+      "row_id": "R035",
+      "sample": "selected_sample",
+      "app": "Stripe",
+      "field": "api_surface",
+      "docs_url": "https://docs.stripe.com/api"
+    },
+    {
+      "row_id": "R038",
+      "sample": "selected_sample",
+      "app": "Reducto",
+      "field": "credential_gate",
+      "docs_url": "https://docs.reducto.ai/quickstart"
+    },
+    {
+      "row_id": "R046",
+      "sample": "random_holdout",
+      "app": "higgsfield",
+      "field": "credential_gate",
+      "docs_url": "https://higgsfield.ai/creator-hub/help-center/integrations/what-is-the-higgsfield-api"
+    },
+    {
+      "row_id": "R049",
+      "sample": "random_holdout",
+      "app": "Salesforce",
+      "field": "auth",
+      "docs_url": "https://trailhead.salesforce.com/content/learn/projects/quick-start-connect-postman-to-salesforce/set-up-and-connect-postman"
+    },
+    {
+      "row_id": "R051",
+      "sample": "random_holdout",
+      "app": "Salesforce",
+      "field": "api_surface",
+      "docs_url": "https://trailhead.salesforce.com/content/learn/projects/quick-start-connect-postman-to-salesforce/set-up-your-org"
+    },
+    {
+      "row_id": "R055",
+      "sample": "random_holdout",
+      "app": "Zoho CRM",
+      "field": "api_surface",
+      "docs_url": "https://www.zoho.com/crm/developer/docs/api/v8/"
+    },
+    {
+      "row_id": "R057",
+      "sample": "random_holdout",
+      "app": "YouTube Transcript",
+      "field": "auth",
+      "docs_url": "https://transcriptapi.com/docs/api/"
+    },
+    {
+      "row_id": "R058",
+      "sample": "random_holdout",
+      "app": "YouTube Transcript",
+      "field": "credential_gate",
+      "docs_url": "https://transcriptapi.com/docs/getting-started/javascript/"
+    },
+    {
+      "row_id": "R059",
+      "sample": "random_holdout",
+      "app": "YouTube Transcript",
+      "field": "api_surface",
+      "docs_url": "https://transcriptapi.com/docs/api/"
+    },
+    {
+      "row_id": "R060",
+      "sample": "random_holdout",
+      "app": "YouTube Transcript",
+      "field": "official_mcp",
+      "docs_url": "https://transcriptapi.com/docs/mcp/"
+    },
+    {
+      "row_id": "R063",
+      "sample": "random_holdout",
+      "app": "Gladly",
+      "field": "api_surface",
+      "docs_url": "https://help.gladly.com/developer-tutorials/docs/technical-planning.md"
+    },
+    {
+      "row_id": "R065",
+      "sample": "random_holdout",
+      "app": "Xero",
+      "field": "auth",
+      "docs_url": "https://developer.xero.com/faq"
+    },
+    {
+      "row_id": "R079",
+      "sample": "random_holdout",
+      "app": "Lark (Larksuite)",
+      "field": "api_surface",
+      "docs_url": "https://open.larksuite.com/document/ukTMukTMukTM/uITNz4iM1MjLyUzM"
+    },
+    {
+      "row_id": "R080",
+      "sample": "random_holdout",
+      "app": "Lark (Larksuite)",
+      "field": "official_mcp",
+      "docs_url": "https://open.larksuite.com/document/uAjLw4CM/ukTMukTMukTM/mcp_integration/mcp_installation"
+    }
+  ]
+}

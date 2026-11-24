@@ -1,0 +1,1192 @@
+{
+  "checked_at": "2026-11-24",
+  "first_pass": "data/pass2 (first deterministic extraction pass)",
+  "final_pass": "data/pass12 (frozen, independently reviewed)",
+  "rubric": "First-pass answers identical to the reviewed pass-12 answer inherit its rating; changed answers are re-rated against the checked final answer; unknown abstains. Conservative: never more credit than the reviewed answer for the same value.",
+  "metric": "fixed_* scores all 60 sampled claims and gives an unresolved claim zero credit, so a pass cannot score higher by abstaining on hard claims; *_answered scores only the claims a pass answered, which is the reviewer denominator.",
+  "selected_sample": {
+    "sample": "selected_sample",
+    "first_pass": {
+      "total_claims": 60,
+      "answered": 26,
+      "coverage": 0.43333333333333335,
+      "abstained": 34,
+      "unresolved": 0,
+      "ratings": {
+        "correct": 17,
+        "partial": 9,
+        "incorrect": 0,
+        "abstained": 34,
+        "unresolved": 0
+      },
+      "scored_answered": 26,
+      "strict_numerator": 17,
+      "strict_answered": 0.6538461538461539,
+      "weighted_numerator": 21.5,
+      "weighted_answered": 0.8269230769230769,
+      "resolved": 26,
+      "fixed_strict": 0.2833333333333333,
+      "fixed_weighted": 0.35833333333333334
+    },
+    "final_pass": {
+      "total_claims": 60,
+      "answered": 33,
+      "coverage": 0.55,
+      "abstained": 27,
+      "unresolved": 0,
+      "ratings": {
+        "correct": 19,
+        "partial": 12,
+        "incorrect": 2,
+        "abstained": 27,
+        "unresolved": 0
+      },
+      "scored_answered": 33,
+      "strict_numerator": 19,
+      "strict_answered": 0.5757575757575758,
+      "weighted_numerator": 25.0,
+      "weighted_answered": 0.7575757575757576,
+      "resolved": 31,
+      "fixed_strict": 0.31666666666666665,
+      "fixed_weighted": 0.4166666666666667
+    },
+    "records": [
+      {
+        "app": "HubSpot",
+        "field": "auth",
+        "first_answer": [
+          "OAuth 2.0"
+        ],
+        "pass12_answer": [
+          "OAuth 2.0",
+          "Bearer token",
+          "API key",
+          "API token"
+        ],
+        "pass12_rating": "partial",
+        "first_rating": "partial"
+      },
+      {
+        "app": "HubSpot",
+        "field": "credential_gate",
+        "first_answer": "unknown",
+        "pass12_answer": [
+          "self_serve_free"
+        ],
+        "pass12_rating": "partial",
+        "first_rating": "abstained"
+      },
+      {
+        "app": "HubSpot",
+        "field": "api_surface",
+        "first_answer": "unknown",
+        "pass12_answer": "unknown",
+        "pass12_rating": "abstained",
+        "first_rating": "abstained"
+      },
+      {
+        "app": "HubSpot",
+        "field": "official_mcp",
+        "first_answer": "yes",
+        "pass12_answer": "vendor_server",
+        "pass12_rating": "correct",
+        "first_rating": "correct"
+      },
+      {
+        "app": "HubSpot",
+        "field": "composio_toolkit",
+        "first_answer": "listed",
+        "pass12_answer": "listed",
+        "pass12_rating": "correct",
+        "first_rating": "correct"
+      },
+      {
+        "app": "HubSpot",
+        "field": "verdict",
+        "first_answer": "unknown",
+        "pass12_answer": "unknown",
+        "pass12_rating": "abstained",
+        "first_rating": "abstained"
+      },
+      {
+        "app": "Zendesk",
+        "field": "auth",
+        "first_answer": [
+          "API key",
+          "Basic auth"
+        ],
+        "pass12_answer": [
+          "API token",
+          "Basic authentication",
+          "API key",
+          "Bearer token",
+          "Session authentication",
+          "OAuth 2.0"
+        ],
+        "pass12_rating": "partial",
+        "first_rating": "partial"
+      },
+      {
+        "app": "Zendesk",
+        "field": "credential_gate",
+        "first_answer": "unknown",
+        "pass12_answer": [
+          "admin_approval"
+        ],
+        "pass12_rating": "partial",
+        "first_rating": "abstained"
+      },
+      {
+        "app": "Zendesk",
+        "field": "api_surface",
+        "first_answer": "unknown",
+        "pass12_answer": "unknown",
+        "pass12_rating": "abstained",
+        "first_rating": "abstained"
+      },
+      {
+        "app": "Zendesk",
+        "field": "official_mcp",
+        "first_answer": "yes",
+        "pass12_answer": "client_only",
+        "pass12_rating": "incorrect",
+        "first_rating": "correct"
+      },
+      {
+        "app": "Zendesk",
+        "field": "composio_toolkit",
+        "first_answer": "listed",
+        "pass12_answer": "listed",
+        "pass12_rating": "correct",
+        "first_rating": "correct"
+      },
+      {
+        "app": "Zendesk",
+        "field": "verdict",
+        "first_answer": "unknown",
+        "pass12_answer": "unknown",
+        "pass12_rating": "abstained",
+        "first_rating": "abstained"
+      },
+      {
+        "app": "Slack",
+        "field": "auth",
+        "first_answer": [
+          "OAuth 2.0",
+          "Basic auth"
+        ],
+        "pass12_answer": [
+          "OAuth 2.0",
+          "API token",
+          "Bearer token",
+          "Basic authentication (OAuth client or endpoint-specific)"
+        ],
+        "pass12_rating": "partial",
+        "first_rating": "partial"
+      },
+      {
+        "app": "Slack",
+        "field": "credential_gate",
+        "first_answer": "unknown",
+        "pass12_answer": "unknown",
+        "pass12_rating": "abstained",
+        "first_rating": "abstained"
+      },
+      {
+        "app": "Slack",
+        "field": "api_surface",
+        "first_answer": "unknown",
+        "pass12_answer": "unknown",
+        "pass12_rating": "abstained",
+        "first_rating": "abstained"
+      },
+      {
+        "app": "Slack",
+        "field": "official_mcp",
+        "first_answer": "yes",
+        "pass12_answer": "vendor_server",
+        "pass12_rating": "correct",
+        "first_rating": "correct"
+      },
+      {
+        "app": "Slack",
+        "field": "composio_toolkit",
+        "first_answer": "listed",
+        "pass12_answer": "listed",
+        "pass12_rating": "correct",
+        "first_rating": "correct"
+      },
+      {
+        "app": "Slack",
+        "field": "verdict",
+        "first_answer": "unknown",
+        "pass12_answer": "unknown",
+        "pass12_rating": "abstained",
+        "first_rating": "abstained"
+      },
+      {
+        "app": "Google Ads",
+        "field": "auth",
+        "first_answer": [
+          "OAuth 2.0"
+        ],
+        "pass12_answer": [
+          "OAuth 2.0",
+          "Bearer token"
+        ],
+        "pass12_rating": "correct",
+        "first_rating": "partial"
+      },
+      {
+        "app": "Google Ads",
+        "field": "credential_gate",
+        "first_answer": "unknown",
+        "pass12_answer": [
+          "admin_approval"
+        ],
+        "pass12_rating": "partial",
+        "first_rating": "abstained"
+      },
+      {
+        "app": "Google Ads",
+        "field": "api_surface",
+        "first_answer": "unknown",
+        "pass12_answer": "unknown",
+        "pass12_rating": "abstained",
+        "first_rating": "abstained"
+      },
+      {
+        "app": "Google Ads",
+        "field": "official_mcp",
+        "first_answer": "yes",
+        "pass12_answer": "vendor_server",
+        "pass12_rating": "correct",
+        "first_rating": "correct"
+      },
+      {
+        "app": "Google Ads",
+        "field": "composio_toolkit",
+        "first_answer": "listed",
+        "pass12_answer": "listed",
+        "pass12_rating": "correct",
+        "first_rating": "correct"
+      },
+      {
+        "app": "Google Ads",
+        "field": "verdict",
+        "first_answer": "unknown",
+        "pass12_answer": "unknown",
+        "pass12_rating": "abstained",
+        "first_rating": "abstained"
+      },
+      {
+        "app": "Shopify",
+        "field": "auth",
+        "first_answer": [
+          "OAuth 2.0"
+        ],
+        "pass12_answer": [
+          "OAuth 2.0",
+          "Session authentication"
+        ],
+        "pass12_rating": "partial",
+        "first_rating": "partial"
+      },
+      {
+        "app": "Shopify",
+        "field": "credential_gate",
+        "first_answer": "unknown",
+        "pass12_answer": "unknown",
+        "pass12_rating": "abstained",
+        "first_rating": "abstained"
+      },
+      {
+        "app": "Shopify",
+        "field": "api_surface",
+        "first_answer": "unknown",
+        "pass12_answer": "GraphQL, REST; broad documented surface",
+        "pass12_rating": "partial",
+        "first_rating": "abstained"
+      },
+      {
+        "app": "Shopify",
+        "field": "official_mcp",
+        "first_answer": "unknown",
+        "pass12_answer": "unknown",
+        "pass12_rating": "abstained",
+        "first_rating": "abstained"
+      },
+      {
+        "app": "Shopify",
+        "field": "composio_toolkit",
+        "first_answer": "listed",
+        "pass12_answer": "listed",
+        "pass12_rating": "correct",
+        "first_rating": "correct"
+      },
+      {
+        "app": "Shopify",
+        "field": "verdict",
+        "first_answer": "unknown",
+        "pass12_answer": "unknown",
+        "pass12_rating": "abstained",
+        "first_rating": "abstained"
+      },
+      {
+        "app": "Apify",
+        "field": "auth",
+        "first_answer": "unknown",
+        "pass12_answer": [
+          "API token",
+          "Bearer token",
+          "OAuth 2.0",
+          "API key"
+        ],
+        "pass12_rating": "partial",
+        "first_rating": "abstained"
+      },
+      {
+        "app": "Apify",
+        "field": "credential_gate",
+        "first_answer": "unknown",
+        "pass12_answer": "unknown",
+        "pass12_rating": "abstained",
+        "first_rating": "abstained"
+      },
+      {
+        "app": "Apify",
+        "field": "api_surface",
+        "first_answer": [
+          "REST"
+        ],
+        "pass12_answer": "REST; moderate documented surface",
+        "pass12_rating": "correct",
+        "first_rating": "partial"
+      },
+      {
+        "app": "Apify",
+        "field": "official_mcp",
+        "first_answer": "yes",
+        "pass12_answer": "vendor_server",
+        "pass12_rating": "correct",
+        "first_rating": "correct"
+      },
+      {
+        "app": "Apify",
+        "field": "composio_toolkit",
+        "first_answer": "listed",
+        "pass12_answer": "listed",
+        "pass12_rating": "correct",
+        "first_rating": "correct"
+      },
+      {
+        "app": "Apify",
+        "field": "verdict",
+        "first_answer": "unknown",
+        "pass12_answer": "unknown",
+        "pass12_rating": "abstained",
+        "first_rating": "abstained"
+      },
+      {
+        "app": "GitHub",
+        "field": "auth",
+        "first_answer": [
+          "Basic auth"
+        ],
+        "pass12_answer": [
+          "Basic authentication"
+        ],
+        "pass12_rating": "partial",
+        "first_rating": "partial"
+      },
+      {
+        "app": "GitHub",
+        "field": "credential_gate",
+        "first_answer": "unknown",
+        "pass12_answer": "unknown",
+        "pass12_rating": "abstained",
+        "first_rating": "abstained"
+      },
+      {
+        "app": "GitHub",
+        "field": "api_surface",
+        "first_answer": [
+          "REST",
+          "GraphQL"
+        ],
+        "pass12_answer": "REST, GraphQL; broad documented surface",
+        "pass12_rating": "correct",
+        "first_rating": "partial"
+      },
+      {
+        "app": "GitHub",
+        "field": "official_mcp",
+        "first_answer": "yes",
+        "pass12_answer": "vendor_server",
+        "pass12_rating": "correct",
+        "first_rating": "correct"
+      },
+      {
+        "app": "GitHub",
+        "field": "composio_toolkit",
+        "first_answer": "listed",
+        "pass12_answer": "listed",
+        "pass12_rating": "correct",
+        "first_rating": "correct"
+      },
+      {
+        "app": "GitHub",
+        "field": "verdict",
+        "first_answer": "unknown",
+        "pass12_answer": "unknown",
+        "pass12_rating": "abstained",
+        "first_rating": "abstained"
+      },
+      {
+        "app": "Notion",
+        "field": "auth",
+        "first_answer": "unknown",
+        "pass12_answer": [
+          "API key",
+          "API token",
+          "Bearer token"
+        ],
+        "pass12_rating": "partial",
+        "first_rating": "abstained"
+      },
+      {
+        "app": "Notion",
+        "field": "credential_gate",
+        "first_answer": "unknown",
+        "pass12_answer": "unknown",
+        "pass12_rating": "abstained",
+        "first_rating": "abstained"
+      },
+      {
+        "app": "Notion",
+        "field": "api_surface",
+        "first_answer": "unknown",
+        "pass12_answer": "unknown",
+        "pass12_rating": "abstained",
+        "first_rating": "abstained"
+      },
+      {
+        "app": "Notion",
+        "field": "official_mcp",
+        "first_answer": "yes",
+        "pass12_answer": "client_only",
+        "pass12_rating": "incorrect",
+        "first_rating": "correct"
+      },
+      {
+        "app": "Notion",
+        "field": "composio_toolkit",
+        "first_answer": "listed",
+        "pass12_answer": "listed",
+        "pass12_rating": "correct",
+        "first_rating": "correct"
+      },
+      {
+        "app": "Notion",
+        "field": "verdict",
+        "first_answer": "unknown",
+        "pass12_answer": "unknown",
+        "pass12_rating": "abstained",
+        "first_rating": "abstained"
+      },
+      {
+        "app": "Stripe",
+        "field": "auth",
+        "first_answer": [
+          "API key"
+        ],
+        "pass12_answer": [
+          "API key",
+          "Bearer token"
+        ],
+        "pass12_rating": "partial",
+        "first_rating": "partial"
+      },
+      {
+        "app": "Stripe",
+        "field": "credential_gate",
+        "first_answer": "unknown",
+        "pass12_answer": "unknown",
+        "pass12_rating": "abstained",
+        "first_rating": "abstained"
+      },
+      {
+        "app": "Stripe",
+        "field": "api_surface",
+        "first_answer": "unknown",
+        "pass12_answer": "unknown",
+        "pass12_rating": "abstained",
+        "first_rating": "abstained"
+      },
+      {
+        "app": "Stripe",
+        "field": "official_mcp",
+        "first_answer": "yes",
+        "pass12_answer": "vendor_server",
+        "pass12_rating": "correct",
+        "first_rating": "correct"
+      },
+      {
+        "app": "Stripe",
+        "field": "composio_toolkit",
+        "first_answer": "listed",
+        "pass12_answer": "listed",
+        "pass12_rating": "correct",
+        "first_rating": "correct"
+      },
+      {
+        "app": "Stripe",
+        "field": "verdict",
+        "first_answer": "unknown",
+        "pass12_answer": "unknown",
+        "pass12_rating": "abstained",
+        "first_rating": "abstained"
+      },
+      {
+        "app": "Reducto",
+        "field": "auth",
+        "first_answer": "unknown",
+        "pass12_answer": [
+          "API key"
+        ],
+        "pass12_rating": "correct",
+        "first_rating": "abstained"
+      },
+      {
+        "app": "Reducto",
+        "field": "credential_gate",
+        "first_answer": "unknown",
+        "pass12_answer": "unknown",
+        "pass12_rating": "abstained",
+        "first_rating": "abstained"
+      },
+      {
+        "app": "Reducto",
+        "field": "api_surface",
+        "first_answer": "unknown",
+        "pass12_answer": "unknown",
+        "pass12_rating": "abstained",
+        "first_rating": "abstained"
+      },
+      {
+        "app": "Reducto",
+        "field": "official_mcp",
+        "first_answer": "unknown",
+        "pass12_answer": "unknown",
+        "pass12_rating": "abstained",
+        "first_rating": "abstained"
+      },
+      {
+        "app": "Reducto",
+        "field": "composio_toolkit",
+        "first_answer": "unknown",
+        "pass12_answer": "unknown",
+        "pass12_rating": "abstained",
+        "first_rating": "abstained"
+      },
+      {
+        "app": "Reducto",
+        "field": "verdict",
+        "first_answer": "unknown",
+        "pass12_answer": "unknown",
+        "pass12_rating": "abstained",
+        "first_rating": "abstained"
+      }
+    ]
+  },
+  "random_holdout": {
+    "sample": "random_holdout",
+    "first_pass": {
+      "total_claims": 60,
+      "answered": 20,
+      "coverage": 0.3333333333333333,
+      "abstained": 40,
+      "unresolved": 0,
+      "ratings": {
+        "correct": 14,
+        "partial": 6,
+        "incorrect": 0,
+        "abstained": 40,
+        "unresolved": 0
+      },
+      "scored_answered": 20,
+      "strict_numerator": 14,
+      "strict_answered": 0.7,
+      "weighted_numerator": 17.0,
+      "weighted_answered": 0.85,
+      "resolved": 20,
+      "fixed_strict": 0.23333333333333334,
+      "fixed_weighted": 0.2833333333333333
+    },
+    "final_pass": {
+      "total_claims": 60,
+      "answered": 26,
+      "coverage": 0.43333333333333335,
+      "abstained": 34,
+      "unresolved": 0,
+      "ratings": {
+        "correct": 14,
+        "partial": 8,
+        "incorrect": 4,
+        "abstained": 34,
+        "unresolved": 0
+      },
+      "scored_answered": 26,
+      "strict_numerator": 14,
+      "strict_answered": 0.5384615384615384,
+      "weighted_numerator": 18.0,
+      "weighted_answered": 0.6923076923076923,
+      "resolved": 22,
+      "fixed_strict": 0.23333333333333334,
+      "fixed_weighted": 0.3
+    },
+    "records": [
+      {
+        "app": "Discord",
+        "field": "auth",
+        "first_answer": "unknown",
+        "pass12_answer": [
+          "API key"
+        ],
+        "pass12_rating": "partial",
+        "first_rating": "abstained"
+      },
+      {
+        "app": "Discord",
+        "field": "credential_gate",
+        "first_answer": "unknown",
+        "pass12_answer": [
+          "admin_approval",
+          "partner_or_sales"
+        ],
+        "pass12_rating": "partial",
+        "first_rating": "abstained"
+      },
+      {
+        "app": "Discord",
+        "field": "api_surface",
+        "first_answer": "unknown",
+        "pass12_answer": "unknown",
+        "pass12_rating": "abstained",
+        "first_rating": "abstained"
+      },
+      {
+        "app": "Discord",
+        "field": "official_mcp",
+        "first_answer": "unknown",
+        "pass12_answer": "unknown",
+        "pass12_rating": "abstained",
+        "first_rating": "abstained"
+      },
+      {
+        "app": "Discord",
+        "field": "composio_toolkit",
+        "first_answer": "listed",
+        "pass12_answer": "listed",
+        "pass12_rating": "correct",
+        "first_rating": "correct"
+      },
+      {
+        "app": "Discord",
+        "field": "verdict",
+        "first_answer": "unknown",
+        "pass12_answer": "unknown",
+        "pass12_rating": "abstained",
+        "first_rating": "abstained"
+      },
+      {
+        "app": "higgsfield",
+        "field": "auth",
+        "first_answer": "unknown",
+        "pass12_answer": [
+          "API key"
+        ],
+        "pass12_rating": "partial",
+        "first_rating": "abstained"
+      },
+      {
+        "app": "higgsfield",
+        "field": "credential_gate",
+        "first_answer": "unknown",
+        "pass12_answer": "unknown",
+        "pass12_rating": "abstained",
+        "first_rating": "abstained"
+      },
+      {
+        "app": "higgsfield",
+        "field": "api_surface",
+        "first_answer": [
+          "REST"
+        ],
+        "pass12_answer": "REST; broad documented surface",
+        "pass12_rating": "correct",
+        "first_rating": "partial"
+      },
+      {
+        "app": "higgsfield",
+        "field": "official_mcp",
+        "first_answer": "unknown",
+        "pass12_answer": "unknown",
+        "pass12_rating": "abstained",
+        "first_rating": "abstained"
+      },
+      {
+        "app": "higgsfield",
+        "field": "composio_toolkit",
+        "first_answer": "listed",
+        "pass12_answer": "listed",
+        "pass12_rating": "correct",
+        "first_rating": "correct"
+      },
+      {
+        "app": "higgsfield",
+        "field": "verdict",
+        "first_answer": "unknown",
+        "pass12_answer": "unknown",
+        "pass12_rating": "abstained",
+        "first_rating": "abstained"
+      },
+      {
+        "app": "Salesforce",
+        "field": "auth",
+        "first_answer": "unknown",
+        "pass12_answer": "unknown",
+        "pass12_rating": "abstained",
+        "first_rating": "abstained"
+      },
+      {
+        "app": "Salesforce",
+        "field": "credential_gate",
+        "first_answer": "unknown",
+        "pass12_answer": "unknown",
+        "pass12_rating": "abstained",
+        "first_rating": "abstained"
+      },
+      {
+        "app": "Salesforce",
+        "field": "api_surface",
+        "first_answer": "unknown",
+        "pass12_answer": "unknown",
+        "pass12_rating": "abstained",
+        "first_rating": "abstained"
+      },
+      {
+        "app": "Salesforce",
+        "field": "official_mcp",
+        "first_answer": "unknown",
+        "pass12_answer": "unknown",
+        "pass12_rating": "abstained",
+        "first_rating": "abstained"
+      },
+      {
+        "app": "Salesforce",
+        "field": "composio_toolkit",
+        "first_answer": "listed",
+        "pass12_answer": "listed",
+        "pass12_rating": "correct",
+        "first_rating": "correct"
+      },
+      {
+        "app": "Salesforce",
+        "field": "verdict",
+        "first_answer": "unknown",
+        "pass12_answer": "unknown",
+        "pass12_rating": "abstained",
+        "first_rating": "abstained"
+      },
+      {
+        "app": "Zoho CRM",
+        "field": "auth",
+        "first_answer": [
+          "OAuth 2.0",
+          "Bearer token"
+        ],
+        "pass12_answer": [
+          "OAuth 2.0",
+          "Bearer token"
+        ],
+        "pass12_rating": "correct",
+        "first_rating": "correct"
+      },
+      {
+        "app": "Zoho CRM",
+        "field": "credential_gate",
+        "first_answer": "unknown",
+        "pass12_answer": "unknown",
+        "pass12_rating": "abstained",
+        "first_rating": "abstained"
+      },
+      {
+        "app": "Zoho CRM",
+        "field": "api_surface",
+        "first_answer": "unknown",
+        "pass12_answer": "REST, GraphQL; narrow documented surface",
+        "pass12_rating": "partial",
+        "first_rating": "abstained"
+      },
+      {
+        "app": "Zoho CRM",
+        "field": "official_mcp",
+        "first_answer": "yes",
+        "pass12_answer": "unknown",
+        "pass12_rating": "abstained",
+        "first_rating": "correct"
+      },
+      {
+        "app": "Zoho CRM",
+        "field": "composio_toolkit",
+        "first_answer": "unknown",
+        "pass12_answer": "unknown",
+        "pass12_rating": "abstained",
+        "first_rating": "abstained"
+      },
+      {
+        "app": "Zoho CRM",
+        "field": "verdict",
+        "first_answer": "unknown",
+        "pass12_answer": "unknown",
+        "pass12_rating": "abstained",
+        "first_rating": "abstained"
+      },
+      {
+        "app": "YouTube Transcript",
+        "field": "auth",
+        "first_answer": "unknown",
+        "pass12_answer": [
+          "OAuth 2.0",
+          "API key",
+          "Bearer token"
+        ],
+        "pass12_rating": "partial",
+        "first_rating": "abstained"
+      },
+      {
+        "app": "YouTube Transcript",
+        "field": "credential_gate",
+        "first_answer": "unknown",
+        "pass12_answer": "unknown",
+        "pass12_rating": "abstained",
+        "first_rating": "abstained"
+      },
+      {
+        "app": "YouTube Transcript",
+        "field": "api_surface",
+        "first_answer": [
+          "REST"
+        ],
+        "pass12_answer": "REST; broad documented surface",
+        "pass12_rating": "correct",
+        "first_rating": "partial"
+      },
+      {
+        "app": "YouTube Transcript",
+        "field": "official_mcp",
+        "first_answer": "yes",
+        "pass12_answer": "unknown",
+        "pass12_rating": "abstained",
+        "first_rating": "correct"
+      },
+      {
+        "app": "YouTube Transcript",
+        "field": "composio_toolkit",
+        "first_answer": "listed",
+        "pass12_answer": "listed",
+        "pass12_rating": "correct",
+        "first_rating": "correct"
+      },
+      {
+        "app": "YouTube Transcript",
+        "field": "verdict",
+        "first_answer": "unknown",
+        "pass12_answer": "unknown",
+        "pass12_rating": "abstained",
+        "first_rating": "abstained"
+      },
+      {
+        "app": "Gladly",
+        "field": "auth",
+        "first_answer": [
+          "API key",
+          "Basic auth"
+        ],
+        "pass12_answer": [
+          "API token",
+          "API key",
+          "Basic authentication",
+          "Bearer token"
+        ],
+        "pass12_rating": "partial",
+        "first_rating": "partial"
+      },
+      {
+        "app": "Gladly",
+        "field": "credential_gate",
+        "first_answer": "unknown",
+        "pass12_answer": "unknown",
+        "pass12_rating": "abstained",
+        "first_rating": "abstained"
+      },
+      {
+        "app": "Gladly",
+        "field": "api_surface",
+        "first_answer": "unknown",
+        "pass12_answer": "REST; broad documented surface",
+        "pass12_rating": "correct",
+        "first_rating": "abstained"
+      },
+      {
+        "app": "Gladly",
+        "field": "official_mcp",
+        "first_answer": "yes",
+        "pass12_answer": "client_only",
+        "pass12_rating": "correct",
+        "first_rating": "correct"
+      },
+      {
+        "app": "Gladly",
+        "field": "composio_toolkit",
+        "first_answer": "unknown",
+        "pass12_answer": "unknown",
+        "pass12_rating": "abstained",
+        "first_rating": "abstained"
+      },
+      {
+        "app": "Gladly",
+        "field": "verdict",
+        "first_answer": "unknown",
+        "pass12_answer": "unknown",
+        "pass12_rating": "abstained",
+        "first_rating": "abstained"
+      },
+      {
+        "app": "Xero",
+        "field": "auth",
+        "first_answer": [
+          "OAuth 2.0"
+        ],
+        "pass12_answer": [
+          "OAuth 2.0"
+        ],
+        "pass12_rating": "correct",
+        "first_rating": "correct"
+      },
+      {
+        "app": "Xero",
+        "field": "credential_gate",
+        "first_answer": "unknown",
+        "pass12_answer": [
+          "paid_plan"
+        ],
+        "pass12_rating": "incorrect",
+        "first_rating": "abstained"
+      },
+      {
+        "app": "Xero",
+        "field": "api_surface",
+        "first_answer": "unknown",
+        "pass12_answer": "unknown",
+        "pass12_rating": "abstained",
+        "first_rating": "abstained"
+      },
+      {
+        "app": "Xero",
+        "field": "official_mcp",
+        "first_answer": "yes",
+        "pass12_answer": "unknown",
+        "pass12_rating": "abstained",
+        "first_rating": "correct"
+      },
+      {
+        "app": "Xero",
+        "field": "composio_toolkit",
+        "first_answer": "listed",
+        "pass12_answer": "listed",
+        "pass12_rating": "correct",
+        "first_rating": "correct"
+      },
+      {
+        "app": "Xero",
+        "field": "verdict",
+        "first_answer": "unknown",
+        "pass12_answer": "unknown",
+        "pass12_rating": "abstained",
+        "first_rating": "abstained"
+      },
+      {
+        "app": "Snowflake",
+        "field": "auth",
+        "first_answer": [
+          "OAuth 2.0",
+          "Basic auth",
+          "Bearer token"
+        ],
+        "pass12_answer": [
+          "OAuth 2.0",
+          "Basic authentication",
+          "Bearer token"
+        ],
+        "pass12_rating": "partial",
+        "first_rating": "partial"
+      },
+      {
+        "app": "Snowflake",
+        "field": "credential_gate",
+        "first_answer": "unknown",
+        "pass12_answer": [
+          "partner_or_sales"
+        ],
+        "pass12_rating": "incorrect",
+        "first_rating": "abstained"
+      },
+      {
+        "app": "Snowflake",
+        "field": "api_surface",
+        "first_answer": [
+          "REST"
+        ],
+        "pass12_answer": "REST; broad documented surface",
+        "pass12_rating": "correct",
+        "first_rating": "partial"
+      },
+      {
+        "app": "Snowflake",
+        "field": "official_mcp",
+        "first_answer": "yes",
+        "pass12_answer": "client_only",
+        "pass12_rating": "incorrect",
+        "first_rating": "correct"
+      },
+      {
+        "app": "Snowflake",
+        "field": "composio_toolkit",
+        "first_answer": "listed",
+        "pass12_answer": "listed",
+        "pass12_rating": "correct",
+        "first_rating": "correct"
+      },
+      {
+        "app": "Snowflake",
+        "field": "verdict",
+        "first_answer": "unknown",
+        "pass12_answer": "partner_outreach",
+        "pass12_rating": "incorrect",
+        "first_rating": "abstained"
+      },
+      {
+        "app": "Sentry",
+        "field": "auth",
+        "first_answer": [
+          "OAuth 2.0",
+          "API key",
+          "Bearer token",
+          "Basic auth"
+        ],
+        "pass12_answer": [
+          "OAuth 2.0",
+          "API key",
+          "Bearer token",
+          "Basic authentication"
+        ],
+        "pass12_rating": "partial",
+        "first_rating": "partial"
+      },
+      {
+        "app": "Sentry",
+        "field": "credential_gate",
+        "first_answer": "unknown",
+        "pass12_answer": "unknown",
+        "pass12_rating": "abstained",
+        "first_rating": "abstained"
+      },
+      {
+        "app": "Sentry",
+        "field": "api_surface",
+        "first_answer": "unknown",
+        "pass12_answer": "unknown",
+        "pass12_rating": "abstained",
+        "first_rating": "abstained"
+      },
+      {
+        "app": "Sentry",
+        "field": "official_mcp",
+        "first_answer": "unknown",
+        "pass12_answer": "unknown",
+        "pass12_rating": "abstained",
+        "first_rating": "abstained"
+      },
+      {
+        "app": "Sentry",
+        "field": "composio_toolkit",
+        "first_answer": "listed",
+        "pass12_answer": "listed",
+        "pass12_rating": "correct",
+        "first_rating": "correct"
+      },
+      {
+        "app": "Sentry",
+        "field": "verdict",
+        "first_answer": "unknown",
+        "pass12_answer": "unknown",
+        "pass12_rating": "abstained",
+        "first_rating": "abstained"
+      },
+      {
+        "app": "Lark (Larksuite)",
+        "field": "auth",
+        "first_answer": "unknown",
+        "pass12_answer": "unknown",
+        "pass12_rating": "abstained",
+        "first_rating": "abstained"
+      },
+      {
+        "app": "Lark (Larksuite)",
+        "field": "credential_gate",
+        "first_answer": "unknown",
+        "pass12_answer": "unknown",
+        "pass12_rating": "abstained",
+        "first_rating": "abstained"
+      },
+      {
+        "app": "Lark (Larksuite)",
+        "field": "api_surface",
+        "first_answer": "unknown",
+        "pass12_answer": "unknown",
+        "pass12_rating": "abstained",
+        "first_rating": "abstained"
+      },
+      {
+        "app": "Lark (Larksuite)",
+        "field": "official_mcp",
+        "first_answer": "unknown",
+        "pass12_answer": "unknown",
+        "pass12_rating": "abstained",
+        "first_rating": "abstained"
+      },
+      {
+        "app": "Lark (Larksuite)",
+        "field": "composio_toolkit",
+        "first_answer": "unknown",
+        "pass12_answer": "unknown",
+        "pass12_rating": "abstained",
+        "first_rating": "abstained"
+      },
+      {
+        "app": "Lark (Larksuite)",
+        "field": "verdict",
+        "first_answer": "unknown",
+        "pass12_answer": "unknown",
+        "pass12_rating": "abstained",
+        "first_rating": "abstained"
+      }
+    ]
+  },
+  "baseline": {
+    "status": "excluded_no_answer_output",
+    "note": "The empty discovery run is retained in raw data but excluded from accuracy scoring."
+  }
+}

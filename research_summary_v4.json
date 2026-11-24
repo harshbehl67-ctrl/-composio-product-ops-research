@@ -28,8 +28,8 @@
     }
   },
   "auth_methods": {
-    "Bearer token": 37,
     "Access token": 72,
+    "Bearer token": 37,
     "OAuth 2.0": 69,
     "API key": 36,
     "Basic authentication": 22,

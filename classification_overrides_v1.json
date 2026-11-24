@@ -1,0 +1,1263 @@
+{
+  "generated_at": "2026-11-24",
+  "source": "checked_dataset_v4.json field evidence plus datamodel_v2.py mappings",
+  "records": [
+    {
+      "app": "Twenty",
+      "field": "prototype_access/production_access",
+      "actor_type": "authored classification override",
+      "reason": "Validated research classified access as \"mixed\": free trial without a credit card; paid Cloud plans follow.",
+      "evidence": [
+        {
+          "url": "https://twenty.com/pricing",
+          "quote": "Start your free trial today without credit card.",
+          "retrieved_at": "2026-11-24",
+          "published_at": null
+        },
+        {
+          "url": "https://docs.twenty.com/user-guide/billing/capabilities/pricing-plans.md",
+          "quote": "Host Twenty on your own infrastructure at no cost:",
+          "retrieved_at": "2026-11-24",
+          "published_at": null
+        }
+      ],
+      "decision": "prototype=self_serve_trial, production=paid_plan"
+    },
+    {
+      "app": "Copper",
+      "field": "mcp_tier",
+      "actor_type": "authored classification override",
+      "reason": "Named re-tier from saved MCP evidence: Vendor MCP is in beta/early access.",
+      "evidence": [
+        {
+          "url": "https://www.copper.com/mcp",
+          "quote": "Yes. Copper is launching an official MCP server, built and hosted by Copper. The beta launches in November 2026.",
+          "retrieved_at": "2026-11-24",
+          "published_at": null
+        },
+        {
+          "url": "https://www.copper.com/mcp",
+          "quote": "Fill out the beta form on this page to stay in the loop and request early access.",
+          "retrieved_at": "2026-11-24",
+          "published_at": null
+        }
+      ],
+      "decision": "mcp_tier=beta"
+    },
+    {
+      "app": "Zendesk",
+      "field": "mcp_tier",
+      "actor_type": "authored classification override",
+      "reason": "Named re-tier from saved MCP evidence: Vendor MCP is early access (EAP).",
+      "evidence": [
+        {
+          "url": "https://support.zendesk.com/hc/en-us/articles/11400026079130-Connecting-external-AI-agents-to-the-Zendesk-MCP-server-or-Zendesk-AI-agents-EAP",
+          "quote": "Zendesk Bridge and external AI agents are currently in an early access program (EAP). During the EAP, Zendesk Bridge and external AI agents are available without charge. However, plan packaging and pricing might change when the feature becomes generally available. To participate, join the External AI EAP.",
+          "retrieved_at": "2026-11-24",
+          "published_at": "2026-10-21"
+        },
+        {
+          "url": "https://support.zendesk.com/hc/en-us/articles/11400026079130-Connecting-external-AI-agents-to-the-Zendesk-MCP-server-or-Zendesk-AI-agents-EAP",
+          "quote": "Zendesk Bridge provides a way to establish governed connections between the Zendesk MCP Server or Zendesk AI agents and external AI agents your organization uses, including Claude, ChatGPT, Microsoft Copilot, Gemini, or AI agents you build yourself.",
+          "retrieved_at": "2026-11-24",
+          "published_at": "2026-10-21"
+        },
+        {
+          "url": "https://support.zendesk.com/hc/en-us/articles/11400026079130-Connecting-external-AI-agents-to-the-Zendesk-MCP-server-or-Zendesk-AI-agents-EAP",
+          "quote": "Example: https://example.zendesk.com/mcp",
+          "retrieved_at": "2026-11-24",
+          "published_at": "2026-10-21"
+        }
+      ],
+      "decision": "mcp_tier=beta"
+    },
+    {
+      "app": "Intercom",
+      "field": "prototype_access/production_access",
+      "actor_type": "authored classification override",
+      "reason": "Validated research classified access as \"mixed\": development workspaces are free but development-only; production requires a paid workspace.",
+      "evidence": [
+        {
+          "url": "https://developers.intercom.com/docs/build-an-integration/getting-started",
+          "quote": "Development workspaces are free and intended for development purposes only.",
+          "retrieved_at": "2026-11-24",
+          "published_at": null
+        },
+        {
+          "url": "https://developers.intercom.com/docs/build-an-integration/getting-started",
+          "quote": "If you are building a private app for your paid Intercom workspace, log in through the Intercom app sign in and then go to the Developer Hub to create an app for that workspace, which we will show in the next step.",
+          "retrieved_at": "2026-11-24",
+          "published_at": null
+        },
+        {
+          "url": "https://developers.intercom.com/docs/build-an-integration/getting-started",
+          "quote": "Cannot be converted into production workspaces.",
+          "retrieved_at": "2026-11-24",
+          "published_at": null
+        }
+      ],
+      "decision": "prototype=self_serve_free, production=paid_plan"
+    },
+    {
+      "app": "Intercom",
+      "field": "auth_chips",
+      "actor_type": "authored classification override",
+      "reason": "Public apps use OAuth; private workspace apps use access tokens.",
+      "evidence": [
+        {
+          "url": "https://developers.intercom.com/docs/build-an-integration/learn-more/authentication",
+          "quote": "An Access Token is for if you're using the API to access data in your own Intercom workspace, in other words, building a private app.",
+          "retrieved_at": "2026-11-24",
+          "published_at": null
+        },
+        {
+          "url": "https://developers.intercom.com/docs/build-an-integration/learn-more/authentication",
+          "quote": "OAuth is for if you're building a public app that accesses other people's Intercom data.",
+          "retrieved_at": "2026-11-24",
+          "published_at": null
+        },
+        {
+          "url": "https://developers.intercom.com/docs/build-an-integration/learn-more/authentication",
+          "quote": "We provide you with an Access Token as soon as you create an app on your workspace.",
+          "retrieved_at": "2026-11-24",
+          "published_at": null
+        }
+      ],
+      "decision": "api_key_or_pat,oauth2_user"
+    },
+    {
+      "app": "Freshdesk",
+      "field": "prototype_access/production_access",
+      "actor_type": "authored classification override",
+      "reason": "Validated research classified access as \"mixed\": trial users receive an API allowance, but MCP is limited to Growth/Pro/Enterprise.",
+      "evidence": [
+        {
+          "url": "https://developers.freshdesk.com/api/",
+          "quote": "For all trial users, there is a default API limit of 50 calls/minute.",
+          "retrieved_at": "2026-11-24",
+          "published_at": null
+        },
+        {
+          "url": "https://support.freshdesk.com/support/solutions/articles/225435-where-can-i-find-my-api-key",
+          "quote": "**Note:** If your account is on the **Sprout** plan, the API key and the API functionality will NOT be available.",
+          "retrieved_at": "2026-11-24",
+          "published_at": "2024-04-30"
+        },
+        {
+          "url": "https://support.freshdesk.com/support/solutions/articles/50000012670-model-context-protocol-mcp-integration-in-freshdesk",
+          "quote": "Supported plans\n\nRate limits (actions per minute)\n\nIncluded MCP actions (per account, annually)\n\nGrowth\n\n25\n\n1,200\n\nPro\n\n50\n\n6,000\n\nEnterprise\n\n100\n\n12,000",
+          "retrieved_at": "2026-11-24",
+          "published_at": "2026-10-05"
+        }
+      ],
+      "decision": "prototype=self_serve_trial, production=paid_plan"
+    },
+    {
+      "app": "Gladly",
+      "field": "mcp_tier",
+      "actor_type": "authored classification override",
+      "reason": "Named re-tier from saved MCP evidence: Vendor MCP is EAP/early access.",
+      "evidence": [
+        {
+          "url": "https://help.gladly.com/docs/set-up-the-gladly-mcp-for-claude",
+          "quote": "Connect Claude to your Gladly organization so you can investigate sessions, improve Guides and Workflows, and test changes in plain English. Setup takes about 5 minutes and doesn't require any downloads.",
+          "retrieved_at": "2026-11-24",
+          "published_at": "2026-11-18"
+        },
+        {
+          "url": "https://help.gladly.com/docs/set-up-the-gladly-mcp-for-claude",
+          "quote": "| `acme.us-1.gladly.com` | `https://mcp.us-1.gladly.com/acme/mcp` |",
+          "retrieved_at": "2026-11-24",
+          "published_at": "2026-11-18"
+        },
+        {
+          "url": "https://help.gladly.com/product-docs/docs/what-is-the-gladly-mcp-for-claude",
+          "quote": "Your organization is in the beta. Gladly has enabled MCP access for your organization.",
+          "retrieved_at": "2026-11-24",
+          "published_at": "2026-11-18"
+        },
+        {
+          "url": "https://help.gladly.com/product-docs/docs/what-is-the-gladly-mcp-for-claude",
+          "quote": "During the closed beta, MCP access is on or off for the whole organization. Anyone who can connect can both read and save changes, so only give the eligible roles to people you trust to edit your AI setup.",
+          "retrieved_at": "2026-11-24",
+          "published_at": "2026-11-18"
+        }
+      ],
+      "decision": "mcp_tier=beta"
+    },
+    {
+      "app": "Slack",
+      "field": "mcp_usable_by_ordinary_app",
+      "actor_type": "authored classification override",
+      "reason": "Slack MCP is limited to Marketplace / internal apps, so an ordinary third-party app cannot use it.",
+      "evidence": [
+        {
+          "url": "https://docs.slack.dev/ai/slack-mcp-server/",
+          "quote": "With the Slack MCP server, your integrated apps can search channels, send messages, and perform other Slack actions through MCP clients.",
+          "retrieved_at": "2026-11-24",
+          "published_at": null
+        },
+        {
+          "url": "https://docs.slack.dev/ai/slack-mcp-server/",
+          "quote": "Slack supports JSON-RPC 2.0 over Streamable HTTP. All requests should be sent to:\n\n`https://mcp.slack.com/mcp`",
+          "retrieved_at": "2026-11-24",
+          "published_at": null
+        },
+        {
+          "url": "https://docs.slack.dev/ai/slack-mcp-server/",
+          "quote": "Only apps published in the Slack Marketplace and internal apps can use MCP at this time; unlisted apps are prohibited from using MCP.",
+          "retrieved_at": "2026-11-24",
+          "published_at": null
+        }
+      ],
+      "decision": "mcp_usable_by_ordinary_app=false"
+    },
+    {
+      "app": "Twilio",
+      "field": "mcp_tier",
+      "actor_type": "authored classification override",
+      "reason": "Named re-tier from saved MCP evidence: Vendor MCP exposes documentation/read-only lookups, not actions.",
+      "evidence": [
+        {
+          "url": "https://www.twilio.com/docs/ai/mcp",
+          "quote": "Twilio MCP and Twilio Skills are available as Public Beta products, and the information contained in this document is subject to change.",
+          "retrieved_at": "2026-11-24",
+          "published_at": "2026-11-18"
+        },
+        {
+          "url": "https://www.twilio.com/docs/ai/mcp",
+          "quote": "This server is read-only: it searches and retrieves public API documentation, and it does not connect to a Twilio account or execute any API calls. No Account SID, API key, or other credential is required or accepted.",
+          "retrieved_at": "2026-11-24",
+          "published_at": "2026-11-18"
+        },
+        {
+          "url": "https://www.twilio.com/docs/ai/mcp",
+          "quote": "No installation required: The server is hosted by Twilio at `mcp.twilio.com/docs`—point your IDE at the URL.",
+          "retrieved_at": "2026-11-24",
+          "published_at": "2026-11-18"
+        }
+      ],
+      "decision": "mcp_tier=docs_readonly"
+    },
+    {
+      "app": "Lark (Larksuite)",
+      "field": "prototype_access/production_access",
+      "actor_type": "authored classification override",
+      "reason": "Validated research classified access as \"mixed\": tenant-admin approval for self-built app permissions; advanced API needs a metering pack on specified plans.",
+      "evidence": [
+        {
+          "url": "https://open.larksuite.com/document/server-docs/getting-started/overview-of-app-scopes",
+          "quote": "企业自建应用：应用开发者申请的权限需要通过 租户管理员 的审核。",
+          "retrieved_at": "2026-11-24",
+          "published_at": null
+        },
+        {
+          "url": "https://open.larksuite.com/document/server-docs/getting-started/overview-of-app-scopes",
+          "quote": "当应用通过审核后，所有的 API 权限才会正式生效。",
+          "retrieved_at": "2026-11-24",
+          "published_at": null
+        },
+        {
+          "url": "https://open.larksuite.com/document/uAjLw4CM/ukTMukTMukTM/api-call-guide/api-billing",
+          "quote": "如果企业自建应用需要调用高级 API，则需先联系我们购买高级 API 计量包，计量包内提供权益点位，调用高级 API 将消耗权益点位。",
+          "retrieved_at": "2026-11-24",
+          "published_at": null
+        },
+        {
+          "url": "https://open.larksuite.com/document/uAjLw4CM/ukTMukTMukTM/api-call-guide/api-billing",
+          "quote": "标准版 | 单租户下所有企业自建应用的基础 API 调用总量上限为 10,000 次/月，该上限在每个自然月的 1 日刷新。",
+          "retrieved_at": "2026-11-24",
+          "published_at": null
+        }
+      ],
+      "decision": "prototype=admin_approval, production=paid_plan"
+    },
+    {
+      "app": "Lark (Larksuite)",
+      "field": "mcp_tier",
+      "actor_type": "authored classification override",
+      "reason": "Named re-tier from saved MCP evidence: Gold evidence says the OpenAPI MCP runs locally with npx; the separate remote-mode guide is deprecated.",
+      "evidence": [
+        {
+          "url": "https://open.larksuite.com/document/uAjLw4CM/ukTMukTMukTM/mcp_integration/mcp_installation",
+          "quote": "本文介绍如何在 AI 工具（以 Cursor 为例）内安装并使用 OpenAPI MCP 工具。",
+          "retrieved_at": "2026-11-24",
+          "published_at": null
+        },
+        {
+          "url": "https://open.larksuite.com/document/uAjLw4CM/ukTMukTMukTM/mcp_integration/mcp_installation",
+          "quote": "npx -y @larksuiteoapi/lark-mcp login -a <your_app_id> -s <your_app_secret> -d https://open.larksuite.com/",
+          "retrieved_at": "2026-11-24",
+          "published_at": null
+        },
+        {
+          "url": "https://open.larksuite.com/document/mcp_open_tools/call-feishu-mcp-server-in-remote-mode",
+          "quote": "远程调用 Lark MCP Server（不推荐）",
+          "retrieved_at": "2026-11-24",
+          "published_at": null
+        },
+        {
+          "url": "https://open.larksuite.com/document/mcp_open_tools/call-feishu-mcp-server-in-remote-mode",
+          "quote": "Lark开放平台提供远程 MCP Server 配置功能，支持  Streamable HTTP 传输协议，满足用户在云场景中，安全高效地通过 Cursor 、Trae、Claude、 n8n 等 AI agent 一键集成并使用丰富的Lark开放能力。",
+          "retrieved_at": "2026-11-24",
+          "published_at": null
+        },
+        {
+          "url": "https://open.larksuite.com/document/mcp_open_tools/call-feishu-mcp-server-in-remote-mode",
+          "quote": "远程 MCP Server 配置功能正在内测中，如无法访问配置平台，可联系客户成功经理开通内测。",
+          "retrieved_at": "2026-11-24",
+          "published_at": null
+        }
+      ],
+      "decision": "mcp_tier=local"
+    },
+    {
+      "app": "Discord",
+      "field": "mcp_tier",
+      "actor_type": "authored classification override",
+      "reason": "Named re-tier from saved MCP evidence: Vendor MCP is documentation-oriented.",
+      "evidence": [
+        {
+          "url": "https://docs.discord.com/developers/change-log",
+          "quote": "AI & MCP support: Docs now work with AI development tools via Copy-as-Markdown, an LLMs.txt file, and an MCP server, available at `https://docs.discord.com/mcp`",
+          "retrieved_at": "2026-11-24",
+          "published_at": "2026-03-09"
+        }
+      ],
+      "decision": "mcp_tier=docs_readonly"
+    },
+    {
+      "app": "WhatsApp Business",
+      "field": "prototype_access/production_access",
+      "actor_type": "authored classification override",
+      "reason": "Validated research classified access as \"mixed\": free monthly service-message allowance plus per-message charges and business prerequisites.",
+      "evidence": [
+        {
+          "url": "https://developers.facebook.com/documentation/business-messaging/whatsapp/pricing",
+          "quote": "For each business phone number, Meta provides 1,000 free service messages per month, which do not roll over but reset monthly. Thus, Meta only charges as of the 1,001st service message for each business phone number.",
+          "retrieved_at": "2026-11-24",
+          "published_at": null
+        },
+        {
+          "url": "https://developers.facebook.com/documentation/business-messaging/whatsapp/pricing",
+          "quote": "This page reflects pricing updates that became effective as of October 1, 2026 by Messaging account timezone.",
+          "retrieved_at": "2026-11-24",
+          "published_at": null
+        },
+        {
+          "url": "https://developers.facebook.com/documentation/business-messaging/whatsapp/get-started",
+          "quote": "Facebook account or managed Meta account\nDeveloper registration\nIf not yet registered, visit the developer registration page and follow the prompts.\nWhatsApp-enabled device for sending and receiving test messages",
+          "retrieved_at": "2026-11-24",
+          "published_at": null
+        }
+      ],
+      "decision": "prototype=self_serve_free, production=paid_plan"
+    },
+    {
+      "app": "Vonage",
+      "field": "mcp_tier",
+      "actor_type": "authored classification override",
+      "reason": "Named re-tier from saved MCP evidence: Vendor MCP serves reference/documentation material.",
+      "evidence": [
+        {
+          "url": "https://developer.vonage.com/en/mcp-server/conceptual-guides/introduction-to-vonage-mcp",
+          "quote": "Vonage offers two MCP Servers designed for different purposes:",
+          "retrieved_at": "2026-11-24",
+          "published_at": null
+        },
+        {
+          "url": "https://developer.vonage.com/en/mcp-server/conceptual-guides/introduction-to-vonage-mcp",
+          "quote": "MCP Server\n\nDescription\n\nPurpose\n\nDocumentation MCP Server\n\nLets AI assistants search and return information from the Vonage API Documentation.\n\nQuickly find API details, guides, and code snippets without leaving your IDE.\n\nServer API Bindings MCP Server\n\nAlso known as our Tooling MCP Server, it provides tools for managing Vonage applications, numbers, and reports programmatically.\n\nEnables configuration and account management directly through AI commands.",
+          "retrieved_at": "2026-11-24",
+          "published_at": null
+        },
+        {
+          "url": "https://developer.vonage.com/en/blog/introducing-the-vonage-documentation-mcp-server",
+          "quote": "We’re excited to announce the Vonage Documentation MCP Server — a new way to access Vonage docs directly from your development environment or AI assistant.",
+          "retrieved_at": "2026-11-24",
+          "published_at": "2025-09-30"
+        },
+        {
+          "url": "https://developer.vonage.com/en/blog/introducing-the-vonage-documentation-mcp-server",
+          "quote": "The Vonage Documentation MCP Server is live at https://documentation-mcp.vonage.dev.",
+          "retrieved_at": "2026-11-24",
+          "published_at": "2025-09-30"
+        },
+        {
+          "url": "https://developer.vonage.com/en/blog/vonage-mcp-server-update-reports-numbers-and-charts",
+          "quote": "The Vonage MCP Server API Bindings let AI assistants use Vonage APIs through the Model Context Protocol (MCP).",
+          "retrieved_at": "2026-11-24",
+          "published_at": "2026-07-22"
+        },
+        {
+          "url": "https://developer.vonage.com/en/blog/vonage-mcp-server-update-reports-numbers-and-charts",
+          "quote": "`\"type\": \"stdio\"`",
+          "retrieved_at": "2026-11-24",
+          "published_at": "2026-07-22"
+        }
+      ],
+      "decision": "mcp_tier=docs_readonly"
+    },
+    {
+      "app": "Google Ads",
+      "field": "prototype_access/production_access",
+      "actor_type": "authored classification override",
+      "reason": "Validated research classified access as \"mixed\": Cloud project grants Test access; production requires access-level applications and a Standard audit.",
+      "evidence": [
+        {
+          "url": "https://developers.google.com/google-ads/api/docs/api-policy/access-levels",
+          "quote": "After you've enabled Google Ads API, your Google Cloud project is granted Test access.",
+          "retrieved_at": "2026-11-24",
+          "published_at": null
+        },
+        {
+          "url": "https://developers.google.com/google-ads/api/docs/api-policy/access-levels",
+          "quote": "The Explorer access level allows your Google Cloud project to execute up to 2,880 operations per day against production accounts.",
+          "retrieved_at": "2026-11-24",
+          "published_at": null
+        },
+        {
+          "url": "https://developers.google.com/google-ads/api/docs/api-policy/access-levels",
+          "quote": "The Standard access application involves a detailed manual audit of your application.",
+          "retrieved_at": "2026-11-24",
+          "published_at": null
+        }
+      ],
+      "decision": "prototype=self_serve_free, production=app_review"
+    },
+    {
+      "app": "Google Ads",
+      "field": "mcp_tier",
+      "actor_type": "authored classification override",
+      "reason": "Named re-tier from saved MCP evidence: Official package is locally run/self-deployed; the Cloud Run option is customer-deployed, not a vendor-hosted endpoint. Read-only is configurable; propose-and-confirm mutations are also documented.",
+      "evidence": [
+        {
+          "url": "https://developers.google.com/google-ads/api/docs/developer-toolkit/mcp-server",
+          "quote": "The Google Ads MCP server provides a standardized bridge to the Google Ads API.",
+          "retrieved_at": "2026-11-24",
+          "published_at": "2026-11-19"
+        },
+        {
+          "url": "https://developers.google.com/google-ads/api/docs/developer-toolkit/mcp-server",
+          "quote": "Transport: Standard input/output (`stdio`) or Streamable HTTP (`streamable-http` on Cloud Run)",
+          "retrieved_at": "2026-11-24",
+          "published_at": "2026-11-19"
+        },
+        {
+          "url": "https://developers.google.com/google-ads/api/docs/developer-toolkit/mcp-server",
+          "quote": "Authentication: Application Default Credentials (OAuth 2.0 user credentials or service account) for local `stdio`, or OAuth 2.0 Web application credentials for remote HTTP",
+          "retrieved_at": "2026-11-24",
+          "published_at": "2026-11-19"
+        }
+      ],
+      "decision": "mcp_tier=local"
+    },
+    {
+      "app": "Google Ads",
+      "field": "auth_chips",
+      "actor_type": "authored classification override",
+      "reason": "Official auth docs list user OAuth and service-account OAuth flows; this is not OAuth client credentials.",
+      "evidence": [
+        {
+          "url": "https://developers.google.com/google-ads/api/rest/auth",
+          "quote": "The Google Ads API uses OAuth 2.0 for authorizing API requests. Both OAuth 2.0 user authentication flow and service account flow are supported.",
+          "retrieved_at": "2026-11-24",
+          "published_at": null
+        },
+        {
+          "url": "https://developers.google.com/google-ads/api/rest/auth",
+          "quote": "The `scope` to use for Google Ads API access is `https://www.googleapis.com/auth/adwords`.",
+          "retrieved_at": "2026-11-24",
+          "published_at": null
+        },
+        {
+          "url": "https://developers.google.com/google-ads/api/docs/api-policy/developer-token",
+          "quote": "Developer tokens were sunset on September 9, 2026.",
+          "retrieved_at": "2026-11-24",
+          "published_at": null
+        }
+      ],
+      "decision": "oauth2_service_account,oauth2_user"
+    },
+    {
+      "app": "Meta Ads",
+      "field": "prototype_access/production_access",
+      "actor_type": "authored classification override",
+      "reason": "Validated research classified access as \"mixed\": self-serve entry plus reviewed production access (App Review on permissions/features).",
+      "evidence": [
+        {
+          "url": "https://developers.facebook.com/documentation/ads-commerce/ads-ai-connectors/ads-mcp-server/ads-mcp-server-get-started.md",
+          "quote": "Owning a Meta app is not a prerequisite on using the ads MCP server.",
+          "retrieved_at": "2026-11-24",
+          "published_at": null
+        },
+        {
+          "url": "https://developers.facebook.com/docs/marketing-api/overview/authorization",
+          "quote": "Advanced access must be approved through the App Review process on an individual permission and feature basis.",
+          "retrieved_at": "2026-11-24",
+          "published_at": null
+        },
+        {
+          "url": "https://developers.facebook.com/docs/marketing-api/overview/authorization",
+          "quote": "The Marketing API Access Tier controls your rate limits, Business Manager access, and system user capacity.",
+          "retrieved_at": "2026-11-24",
+          "published_at": null
+        }
+      ],
+      "decision": "prototype=self_serve_free, production=app_review"
+    },
+    {
+      "app": "LinkedIn Ads",
+      "field": "prototype_access/production_access",
+      "actor_type": "authored classification override",
+      "reason": "Validated research classified access as \"mixed\": starts in Development tier; Standard access requested by support ticket at LinkedIn discretion.",
+      "evidence": [
+        {
+          "url": "https://learn.microsoft.com/en-us/linkedin/marketing/integrations/marketing-tiers?view=li-lms-2026-10",
+          "quote": "LinkedIn has two tiers of access to our Advertising API: Development and Standard.",
+          "retrieved_at": "2026-11-24",
+          "published_at": "2026-04-08"
+        },
+        {
+          "url": "https://learn.microsoft.com/en-us/linkedin/marketing/integrations/marketing-tiers?view=li-lms-2026-10",
+          "quote": "Visit your app's Product tab in the Developer Portal to apply for the Advertising API product. Before accessing the Standard Access tier, you must first build and test your application on LinkedIn’s advertising platform.",
+          "retrieved_at": "2026-11-24",
+          "published_at": "2026-04-08"
+        },
+        {
+          "url": "https://learn.microsoft.com/en-us/linkedin/marketing/increasing-access?view=li-lms-2026-10",
+          "quote": "The Standard API Access must be requested via a support ticket to be submitted on the Developer Support Portal.",
+          "retrieved_at": "2026-11-24",
+          "published_at": "2026-10-19"
+        },
+        {
+          "url": "https://learn.microsoft.com/en-us/linkedin/marketing/increasing-access?view=li-lms-2026-10",
+          "quote": "LinkedIn reserves the right to review applications and select partners at its discretion and a partner might not be upgraded even if they meet these minimum requirements.",
+          "retrieved_at": "2026-11-24",
+          "published_at": "2026-10-19"
+        }
+      ],
+      "decision": "prototype=self_serve_free, production=app_review"
+    },
+    {
+      "app": "GoHighLevel",
+      "field": "auth_chips",
+      "actor_type": "authored classification override",
+      "reason": "Public integrations use OAuth; private integrations use bearer tokens.",
+      "evidence": [
+        {
+          "url": "https://marketplace.gohighlevel.com/docs/Authorization/authorization_doc",
+          "quote": "HighLevel currently supports two types of authorization:\n\n*   [Private Integration Token](/docs/Authorization/PrivateIntegrationsToken)\n*   [OAuth 2.0 Flow](/docs/Authorization/OAuth2.0)",
+          "retrieved_at": "2026-11-24",
+          "published_at": null
+        },
+        {
+          "url": "https://marketplace.gohighlevel.com/docs/ghl/oauth/oauth-2-0-v-3",
+          "quote": "HTTP: Bearer Auth\n\nUse the Access Token generated with user type as Sub-Account (OR) Private Integration Token of Sub-Account.\n\nSecurity Scheme Type:\n\nhttp\n\nHTTP Authorization Scheme:\n\nbearer\n\nBearer format:\n\nJWT",
+          "retrieved_at": "2026-11-24",
+          "published_at": null
+        },
+        {
+          "url": "https://marketplace.gohighlevel.com/docs/ghl/oauth/oauth-2-0-v-3",
+          "quote": "Use the Access Token generated with user type as Agency (OR) Private Integration Token of Agency.",
+          "retrieved_at": "2026-11-24",
+          "published_at": null
+        },
+        {
+          "url": "https://help.gohighlevel.com/support/solutions/articles/155000003054-private-integrations-everything-you-need-to-know",
+          "quote": "You can create up to 20 Private Integration Tokens at both the Agency and Sub-Account levels.",
+          "retrieved_at": "2026-11-24",
+          "published_at": "2026-11-16"
+        },
+        {
+          "url": "https://help.gohighlevel.com/support/solutions/articles/48001060529-highlevel-api-documentation",
+          "quote": "New legacy API key generation is being phased out. Private Integration Tokens and OAuth 2.0 are the recommended authentication methods.",
+          "retrieved_at": "2026-11-24",
+          "published_at": "2026-11-16"
+        }
+      ],
+      "decision": "api_key_or_pat,oauth2_user"
+    },
+    {
+      "app": "Pinterest",
+      "field": "prototype_access/production_access",
+      "actor_type": "authored classification override",
+      "reason": "Validated research classified access as \"mixed\": register an app for Trial access; Standard access requires a reviewed upgrade request.",
+      "evidence": [
+        {
+          "url": "https://developers.pinterest.com/docs/key-concepts/access-tiers/",
+          "quote": "If approved for API use, your app receives Trial access, which is best for exploring our API features.",
+          "retrieved_at": "2026-11-24",
+          "published_at": null
+        },
+        {
+          "url": "https://developers.pinterest.com/docs/key-concepts/access-tiers/",
+          "quote": "Standard upgrade requests are reviewed regularly. You will receive an email notification once a decision has been made on your app.",
+          "retrieved_at": "2026-11-24",
+          "published_at": null
+        },
+        {
+          "url": "https://developers.pinterest.com/docs/key-concepts/access-tiers/",
+          "quote": "Prepare a video recording of your app completing an action using the Pinterest API. We will review to verify that you are sending users through the OAuth flow appropriately and not storing any sensitive information.",
+          "retrieved_at": "2026-11-24",
+          "published_at": null
+        }
+      ],
+      "decision": "prototype=self_serve_free, production=app_review"
+    },
+    {
+      "app": "Pinterest",
+      "field": "mcp_tier",
+      "actor_type": "authored classification override",
+      "reason": "Named re-tier from saved MCP evidence: Official page asks readers to be first to know when the MCP launches.",
+      "evidence": [
+        {
+          "url": "https://developers.pinterest.com/about-pinterest-mcp/",
+          "quote": "Pinterest MCP Server brings the power of Pinterest data directly into the AI assistants, copilots, and agentic workflows you already use.",
+          "retrieved_at": "2026-11-24",
+          "published_at": null
+        },
+        {
+          "url": "https://developers.pinterest.com/about-pinterest-mcp/",
+          "quote": "Be the first to know when it launches.",
+          "retrieved_at": "2026-11-24",
+          "published_at": null
+        },
+        {
+          "url": "https://developers.pinterest.com/about-pinterest-mcp/",
+          "quote": "Bring Pinterest Ads capabilities into the AI tools your team already uses. Query, analyze, and act through a consistent interface powered by the existing Pinterest API.",
+          "retrieved_at": "2026-11-24",
+          "published_at": null
+        }
+      ],
+      "decision": "mcp_tier=prelaunch"
+    },
+    {
+      "app": "Threads (Meta)",
+      "field": "prototype_access/production_access",
+      "actor_type": "authored classification override",
+      "reason": "Validated research classified access as \"mixed\": create an app and use testers; ordinary users require permission-specific App Review.",
+      "evidence": [
+        {
+          "url": "https://developers.facebook.com/docs/threads/get-started/",
+          "quote": "Threads testers can grant your app these permissions at any time.",
+          "retrieved_at": "2026-11-24",
+          "published_at": null
+        },
+        {
+          "url": "https://developers.facebook.com/docs/threads/get-started/",
+          "quote": "For app users without a role on your app to grant your app these permissions, each permission must first be approved through the App Review process, and your app must be published.",
+          "retrieved_at": "2026-11-24",
+          "published_at": null
+        }
+      ],
+      "decision": "prototype=self_serve_free, production=app_review"
+    },
+    {
+      "app": "SendGrid",
+      "field": "prototype_access/production_access",
+      "actor_type": "authored classification override",
+      "reason": "Validated research classified access as \"mixed\": 60-day trial; sending stops unless an Email API plan is selected.",
+      "evidence": [
+        {
+          "url": "https://docs.sendgrid.com/ui/account-and-settings/upgrading-your-plan",
+          "quote": "During the 60-day free trial period, you can:\n\nSend up to 100 emails per day using the Email API.",
+          "retrieved_at": "2026-11-24",
+          "published_at": null
+        },
+        {
+          "url": "https://docs.sendgrid.com/ui/account-and-settings/upgrading-your-plan",
+          "quote": "After the 60-day period, you'll need to upgrade your plans to continue sending emails or to access the Marketing tab in the dashboard.",
+          "retrieved_at": "2026-11-24",
+          "published_at": null
+        },
+        {
+          "url": "https://docs.sendgrid.com/ui/account-and-settings/upgrading-your-plan",
+          "quote": "Before upgrading your plan, you must complete the verification steps to unlock your Twilio SendGrid account.",
+          "retrieved_at": "2026-11-24",
+          "published_at": null
+        },
+        {
+          "url": "https://docs.sendgrid.com/ui/account-and-settings/upgrading-your-plan",
+          "quote": "Set up Two-Factor Authentication.",
+          "retrieved_at": "2026-11-24",
+          "published_at": null
+        },
+        {
+          "url": "https://docs.sendgrid.com/ui/account-and-settings/upgrading-your-plan",
+          "quote": "Set up Domain Authentication.",
+          "retrieved_at": "2026-11-24",
+          "published_at": null
+        },
+        {
+          "url": "https://docs.sendgrid.com/ui/account-and-settings/upgrading-your-plan",
+          "quote": "Add a payment method.",
+          "retrieved_at": "2026-11-24",
+          "published_at": null
+        },
+        {
+          "url": "https://docs.sendgrid.com/ui/account-and-settings/upgrading-your-plan",
+          "quote": "You can upgrade your Email API and Marketing Campaigns plans independently at any time.",
+          "retrieved_at": "2026-11-24",
+          "published_at": null
+        },
+        {
+          "url": "https://support.sendgrid.com/hc/en-us/articles/35270136965403-Overview-of-60-Day-Free-Trial-Plans-for-New-SendGrid-Accounts",
+          "quote": "After the 60 day trial period, email send via any web API or SMTP integration for the account will stop unless an appropriate \"Email API\" plan is chosen before then via \"Settings > Account Details > Your Products\".",
+          "retrieved_at": "2026-11-24",
+          "published_at": null
+        }
+      ],
+      "decision": "prototype=self_serve_trial, production=paid_plan"
+    },
+    {
+      "app": "Shopify",
+      "field": "mcp_tier",
+      "actor_type": "authored classification override",
+      "reason": "Named re-tier from saved MCP evidence: Dev MCP is a locally run, read-only developer docs/schema server; the separate store-management MCP is not public.",
+      "evidence": [
+        {
+          "url": "https://shopify.dev/docs/api/ai-toolkit",
+          "quote": "If you prefer MCP, you can connect to Shopify's developer resources through the Dev MCP server. The server runs locally and doesn't require authentication.",
+          "retrieved_at": "2026-11-24",
+          "published_at": null
+        }
+      ],
+      "decision": "mcp_tier=local"
+    },
+    {
+      "app": "Magento (Adobe Commerce)",
+      "field": "prototype_access/production_access",
+      "actor_type": "authored classification override",
+      "reason": "Validated research classified access as \"mixed\": PaaS/Open Source create an integration in Admin; Adobe Commerce as a Cloud Service requires a Commerce license.",
+      "evidence": [
+        {
+          "url": "https://developer.adobe.com/commerce/webapi/get-started/authentication/gs-authentication-oauth",
+          "quote": "The merchant creates an integration from Admin. Commerce generates a consumer key and a consumer secret.",
+          "retrieved_at": "2026-11-24",
+          "published_at": null
+        },
+        {
+          "url": "https://developer.adobe.com/commerce/webapi/rest/authentication/server-to-server",
+          "quote": "Adobe Organization Admin account",
+          "retrieved_at": "2026-11-24",
+          "published_at": null
+        },
+        {
+          "url": "https://developer.adobe.com/commerce/webapi/rest/authentication/server-to-server",
+          "quote": "To authenticate with the Adobe Commerce as a Cloud Service REST APIs, you need to generate an IMS access token using your client credentials.",
+          "retrieved_at": "2026-11-24",
+          "published_at": null
+        }
+      ],
+      "decision": "prototype=self_serve_free, production=paid_plan"
+    },
+    {
+      "app": "Magento (Adobe Commerce)",
+      "field": "mcp_tier",
+      "actor_type": "authored classification override",
+      "reason": "Named re-tier from saved MCP evidence: Vendor MCP is a local/self-hosted server.",
+      "evidence": [
+        {
+          "url": "https://developer.adobe.com/commerce/extensibility/developer-agent/coding-tools",
+          "quote": "Commerce Developer MCP Server",
+          "retrieved_at": "2026-11-24",
+          "published_at": null
+        },
+        {
+          "url": "https://developer.adobe.com/commerce/extensibility/developer-agent/coding-tools",
+          "quote": "MCP server integration for Adobe Commerce development",
+          "retrieved_at": "2026-11-24",
+          "published_at": null
+        }
+      ],
+      "decision": "mcp_tier=local"
+    },
+    {
+      "app": "Squarespace",
+      "field": "prototype_access/production_access",
+      "actor_type": "authored classification override",
+      "reason": "Validated research classified access as \"mixed\": OAuth apps generate credentials immediately for development (Demo Mode) and require Squarespace review for production.",
+      "evidence": [
+        {
+          "url": "https://developers.squarespace.com/changes/self-service-oauth-credential-management",
+          "quote": "Starting Monday, July 27, 2026, Squarespace is transitioning to a self-service model for OAuth credential management, empowering developers to build and maintain integrations with greater speed and autonomy.",
+          "retrieved_at": "2026-11-24",
+          "published_at": "2026-07-27"
+        },
+        {
+          "url": "https://developers.squarespace.com/changes/self-service-oauth-credential-management",
+          "quote": "To ensure platform security while maintaining developer speed, all new applications created via the self-service tool will enter Demo Mode by default.",
+          "retrieved_at": "2026-11-24",
+          "published_at": "2026-07-27"
+        },
+        {
+          "url": "https://commerce-apis.squarespace.com/commerce-apis/authentication-and-permissions",
+          "quote": "With Squarespace's Commerce Advanced plan, you can develop a custom application for a Squarespace merchant site.",
+          "retrieved_at": "2026-11-24",
+          "published_at": null
+        }
+      ],
+      "decision": "prototype=self_serve_free, production=app_review"
+    },
+    {
+      "app": "Ecwid",
+      "field": "mcp_tier",
+      "actor_type": "authored classification override",
+      "reason": "Named re-tier from saved MCP evidence: Vendor MCP is documentation/read-only.",
+      "evidence": [
+        {
+          "url": "https://docs.ecwid.com/api-reference",
+          "quote": "Agents can also search and read this documentation through its MCP server",
+          "retrieved_at": "2026-11-24",
+          "published_at": null
+        }
+      ],
+      "decision": "mcp_tier=docs_readonly"
+    },
+    {
+      "app": "Ecwid",
+      "field": "auth_chips",
+      "actor_type": "authored classification override",
+      "reason": "Public apps use OAuth; custom store apps use access tokens.",
+      "evidence": [
+        {
+          "url": "https://docs.ecwid.com/get-started/make-your-first-api-request",
+          "quote": "All requests to Ecwid REST API require an access token. Ecwid uses OAuth 2.0 to provide secure access to the store data for public apps. If you customize your own store, however, you can skip OAuth and easily get an access token for your store.",
+          "retrieved_at": "2026-11-24",
+          "published_at": null
+        }
+      ],
+      "decision": "api_key_or_pat,oauth2_user"
+    },
+    {
+      "app": "Gumroad",
+      "field": "auth_chips",
+      "actor_type": "authored classification override",
+      "reason": "OAuth supports general integrations; account access tokens support own-account API use.",
+      "evidence": [
+        {
+          "url": "https://gumroad.com/help/article/280-create-application-api",
+          "quote": "However, if you only want to use the API on your own Gumroad account, you can manually generate an access token, which is a simpler process.",
+          "retrieved_at": "2026-11-24",
+          "published_at": null
+        },
+        {
+          "url": "https://gumroad.com/api",
+          "quote": "To start using the API, you'll need to register your OAuth application. Note: The Verify License API endpoint does not require an OAuth application.",
+          "retrieved_at": "2026-11-24",
+          "published_at": null
+        },
+        {
+          "url": "https://gumroad.com/mcp",
+          "quote": "Every assistant connects to its own URL and asks for OAuth access to your Gumroad account. Each connector page lists the exact address to paste.",
+          "retrieved_at": "2026-11-24",
+          "published_at": null
+        }
+      ],
+      "decision": "api_key_or_pat,oauth2_user"
+    },
+    {
+      "app": "Amazon Selling Partner",
+      "field": "auth_chips",
+      "actor_type": "authored classification override",
+      "reason": "Selling Partner API uses Login with Amazon OAuth for seller-authorized operations and client credentials for grantless operations; it does not require JWT signing.",
+      "evidence": [
+        {
+          "url": "https://developer-docs.amazon.com/sp-api/docs/authorizing-selling-partner-api-applications",
+          "quote": "Authorization method: OAuth 2.0 through Login with Amazon (LWA).",
+          "retrieved_at": "2026-11-24",
+          "published_at": "2026-11-23"
+        },
+        {
+          "url": "https://developer-docs.amazon.com/sp-api/docs/authorizing-selling-partner-api-applications",
+          "quote": "Authorization method: Self-authorization.",
+          "retrieved_at": "2026-11-24",
+          "published_at": "2026-11-23"
+        },
+        {
+          "url": "https://developer-docs.amazon.com/sp-api/docs/connecting-to-the-selling-partner-api",
+          "quote": "An LWA access token expires one hour after it is issued.",
+          "retrieved_at": "2026-11-24",
+          "published_at": "2026-09-09"
+        },
+        {
+          "url": "https://developer-docs.amazon.com/sp-api/docs/connecting-to-the-selling-partner-api",
+          "quote": "When calling restricted operations, instead of including an LWA access token, you include a Restricted Data Token (RDT).",
+          "retrieved_at": "2026-11-24",
+          "published_at": "2026-09-09"
+        },
+        {
+          "url": "https://developer-docs.amazon.com/sp-api/lang-es_ES/changelog/sp-api-will-no-longer-require-aws-iam-or-aws-signature-version-4",
+          "quote": "SP-API no longer requires AWS IAM or AWS Signature Version 4",
+          "retrieved_at": "2026-11-24",
+          "published_at": "2023-09-26"
+        }
+      ],
+      "decision": "oauth2_client_creds,oauth2_user"
+    },
+    {
+      "app": "Vercel",
+      "field": "auth_chips",
+      "actor_type": "authored classification override",
+      "reason": "Scoped Vercel access tokens are personal access tokens, not an unknown transport.",
+      "evidence": [
+        {
+          "url": "https://vercel.com/docs/accounts/access-tokens",
+          "quote": "Vercel access tokens authenticate requests to the [Vercel REST API](/docs/rest-api#creating-an-access-token) and the [Vercel CLI](/docs/cli/tokens) on your behalf. You create and manage them on the [Account Tokens page](https://vercel.com/account/tokens), under the Settings area of your account, and you can also create them without the dashboard using the [REST API](/docs/rest-api/authentication/create-an-auth-token) or the CLI.",
+          "retrieved_at": "2026-11-24",
+          "published_at": "2026-11-14"
+        },
+        {
+          "url": "https://vercel.com/docs/accounts/access-tokens",
+          "quote": "Use a scoped token with the API Pass the token as a Bearer token in the Authorization header of your request.",
+          "retrieved_at": "2026-11-24",
+          "published_at": "2026-11-14"
+        }
+      ],
+      "decision": "api_key_or_pat"
+    },
+    {
+      "app": "Neo4j",
+      "field": "mcp_tier",
+      "actor_type": "authored classification override",
+      "reason": "Named re-tier from saved MCP evidence: Vendor MCP ships as a local server.",
+      "evidence": [
+        {
+          "url": "https://neo4j.com/docs/mcp/current/",
+          "quote": "Neo4j MCP implements the Model Context Protocol (MCP), an open standard that lets applications connect to external data sources and tools. It bridges any MCP-compatible client and your Neo4j instance, giving that client direct, structured access to your graph database.",
+          "retrieved_at": "2026-11-24",
+          "published_at": null
+        },
+        {
+          "url": "https://neo4j.com/docs/mcp/current/installation/",
+          "quote": "Install with PyPI uvx neo4j-mcp-server",
+          "retrieved_at": "2026-11-24",
+          "published_at": null
+        },
+        {
+          "url": "https://neo4j.com/docs/mcp/current/configuration/",
+          "quote": "The server supports two transport modes:\n\n- **STDIO** (default): Standard input/output mode for desktop clients.\n- **HTTP**: Stateless, multi-tenant mode for web clients and shared deployments.",
+          "retrieved_at": "2026-11-24",
+          "published_at": null
+        }
+      ],
+      "decision": "mcp_tier=local"
+    },
+    {
+      "app": "Snowflake",
+      "field": "auth_chips",
+      "actor_type": "authored classification override",
+      "reason": "Official auth docs list programmatic access tokens, signed key-pair JWTs, and OAuth tokens.",
+      "evidence": [
+        {
+          "url": "https://docs.snowflake.com/en/developer-guide/snowflake-rest-api/authentication.md",
+          "quote": "## Using key pair authentication\n\nWhen using key pair authentication, you need to complete the following tasks:\n\n1. [](#label-sfrest-api-setup-authenticating-key-pair)\n2. [](#label-sfrest-api-jwt-token)",
+          "retrieved_at": "2026-11-24",
+          "published_at": null
+        },
+        {
+          "url": "https://docs.snowflake.com/en/developer-guide/snowflake-rest-api/authentication.md",
+          "quote": "Pass the generated token as a bearer token. For example, using cURL:",
+          "retrieved_at": "2026-11-24",
+          "published_at": null
+        },
+        {
+          "url": "https://docs.snowflake.com/en/developer-guide/snowflake-rest-api/authentication.md",
+          "quote": "## Using OAuth\n\nTo use OAuth, follow these steps:\n\n1. Set up OAuth for authentication.\n\n   See [Introduction to OAuth](/user-guide/oauth-intro) for details on how to set up OAuth and get an OAuth token.",
+          "retrieved_at": "2026-11-24",
+          "published_at": null
+        },
+        {
+          "url": "https://docs.snowflake.com/en/user-guide/programmatic-access-tokens",
+          "quote": "For human users (with TYPE=PERSON), you do not need any special privileges to generate, modify, drop, or display a programmatic access token for yourself .",
+          "retrieved_at": "2026-11-24",
+          "published_at": null
+        }
+      ],
+      "decision": "api_key_or_pat,jwt_signed,oauth2_user"
+    },
+    {
+      "app": "Binance",
+      "field": "auth_chips",
+      "actor_type": "authored classification override",
+      "reason": "Official API docs describe API keys and signed requests using HMAC, RSA, or Ed25519; the signature is not JWT.",
+      "evidence": [
+        {
+          "url": "https://developers.binance.com/en/docs/products/spot/faqs/market_data_only.md",
+          "quote": "These URLs do not require any authentication (i.e. The API key is not necessary) and serve only public market data.",
+          "retrieved_at": "2026-11-24",
+          "published_at": null
+        },
+        {
+          "url": "https://developers.binance.com/en/docs/products/spot/rest-api.md",
+          "quote": "Secure endpoints require a valid API key to be specified and authenticated.\n  - API keys can be created on the\n    [API Management](https://www.binance.com/en/support/faq/360002502072) page of your Binance\n    account.\n  - **Both API key and secret key are sensitive.** Never share them with anyone.",
+          "retrieved_at": "2026-11-24",
+          "published_at": null
+        },
+        {
+          "url": "https://developers.binance.com/en/docs/products/spot/rest-api.md",
+          "quote": "- `SIGNED` endpoints require an additional parameter, `signature`, to be sent in the `query string`\n  or `request body`.",
+          "retrieved_at": "2026-11-24",
+          "published_at": null
+        },
+        {
+          "url": "https://developers.binance.com/en/docs/products/spot/faqs/api_key_types.md",
+          "quote": "Binance APIs require an API key to access authenticated endpoints for trading, account history, etc.\n\nWe support several types of API keys:\n\n- Ed25519 (recommended)\n- HMAC\n- RSA",
+          "retrieved_at": "2026-11-24",
+          "published_at": null
+        },
+        {
+          "url": "https://developers.binance.com/en/docs/products/spot/faqs/api_key_types.md",
+          "quote": "**HMAC keys are deprecated.** We recommend to migrate to asymmetric API keys, such as Ed25519 or\nRSA.",
+          "retrieved_at": "2026-11-24",
+          "published_at": null
+        },
+        {
+          "url": "https://developers.binance.com/en/docs/agent-native/mcp-server/agentic.md",
+          "quote": "**Step 4:** Authenticate to authorize the connection.",
+          "retrieved_at": "2026-11-24",
+          "published_at": "2026-08-17"
+        }
+      ],
+      "decision": "api_key_or_pat,signed_request"
+    },
+    {
+      "app": "Paygent Connect",
+      "field": "prototype_access/production_access",
+      "actor_type": "authored classification override",
+      "reason": "Validated research classified access as \"mixed\": no-cost sandbox with full API access; production carries a $15/month gateway fee plus per-transaction pricing.",
+      "evidence": [
+        {
+          "url": "https://www.gopaygent.com/",
+          "quote": "Start for free No credit card required. Free plan available.",
+          "retrieved_at": "2026-11-24",
+          "published_at": null
+        },
+        {
+          "url": "https://www.gopaygent.com/pricing",
+          "quote": "PAYGENT PLATFORM\nDeveloper & B2B\n\nFor SaaS, Wholesalers, and Platforms.\n\nMONTHLY GATEWAY\n\n$15\n\nPER TRANSACTION\n\n$0.10",
+          "retrieved_at": "2026-11-24",
+          "published_at": null
+        },
+        {
+          "url": "https://www.gopaygent.com/signup",
+          "quote": "MERCHANT SIGNUP\nCreate Your Account\n\nJoin Paygent and get access to the TapN Soft POS and industry-leading payment gateways.",
+          "retrieved_at": "2026-11-24",
+          "published_at": null
+        },
+        {
+          "url": "https://www.gopaygent.com/products/connect",
+          "quote": "Use the Pathfinder API to completely automate underwriting and onboarding within your own application.",
+          "retrieved_at": "2026-11-24",
+          "published_at": null
+        },
+        {
+          "url": "https://www.gopaygent.com/terms",
+          "quote": "Provide accurate business and beneficial ownership information during onboarding.",
+          "retrieved_at": "2026-11-24",
+          "published_at": "2026-04-23"
+        }
+      ],
+      "decision": "prototype=self_serve_free, production=paid_plan"
+    },
+    {
+      "app": "iPayX",
+      "field": "prototype_access/production_access",
+      "actor_type": "authored classification override",
+      "reason": "Validated research classified access as \"mixed\": no-key public MCP evaluation and free audits plus paid production API options.",
+      "evidence": [
+        {
+          "url": "https://www.ipayx.ai/mcp-config",
+          "quote": "No account or API key required. Transaction audits and forensic reports share 3 free audits per IP per calendar month (UTC). Rate lookups and comparisons are free without an audit quota.",
+          "retrieved_at": "2026-11-24",
+          "published_at": null
+        },
+        {
+          "url": "https://www.ipayx.ai/pricing",
+          "quote": "Free audit included. Upgrade to PDF reports or production-grade API.",
+          "retrieved_at": "2026-11-24",
+          "published_at": null
+        },
+        {
+          "url": "https://www.ipayx.ai/pricing",
+          "quote": "You have 3 free audits.",
+          "retrieved_at": "2026-11-24",
+          "published_at": null
+        },
+        {
+          "url": "https://www.ipayx.ai/pricing",
+          "quote": "$299USD / mo",
+          "retrieved_at": "2026-11-24",
+          "published_at": null
+        },
+        {
+          "url": "https://www.ipayx.ai/docs/mcp-server",
+          "quote": "**Free tier:** 10 audits / day per API key.",
+          "retrieved_at": "2026-11-24",
+          "published_at": null
+        },
+        {
+          "url": "https://www.ipayx.ai/docs/mcp-server",
+          "quote": "**Paid tier ($199):** unlimited audits, priority routing.",
+          "retrieved_at": "2026-11-24",
+          "published_at": null
+        }
+      ],
+      "decision": "prototype=self_serve_free, production=paid_plan"
+    },
+    {
+      "app": "QuickBooks",
+      "field": "prototype_access/production_access",
+      "actor_type": "authored classification override",
+      "reason": "Validated research classified access as \"mixed\": no-charge Builder tier and free sandbox; Production Key requires questionnaire approval.",
+      "evidence": [
+        {
+          "url": "https://static.developer.intuit.com/output_html/qbo/docs/get-started/partner-faq.html",
+          "quote": "By default, all partners will begin in the Builder tier and be afforded 500,000 CorePlus API calls per month without incurring any charges. Any subsequent calls made above this allotment will be blocked. To make additional API calls beyond this allotment, partners can upgrade to the Silver tier by providing a valid payment method in their account on the Intuit Developer Portal within your Workspace.",
+          "retrieved_at": "2026-11-24",
+          "published_at": "2026-10-29"
+        },
+        {
+          "url": "https://static.developer.intuit.com/output_html/qbo/docs/get-started/partner-faq.html",
+          "quote": "No. You don’t need to provide a payment method if you are at the Builder tier.",
+          "retrieved_at": "2026-11-24",
+          "published_at": "2026-10-29"
+        },
+        {
+          "url": "https://static.developer.intuit.com/output_html/qbo/docs/get-started/get-client-id-and-client-secret.html",
+          "quote": "The client ID and client secret will be accessible only after completing the Production Key questionnaire and its approval. For apps without a completed questionnaire, the questionnaire will be visible when you select Production in Step 6.",
+          "retrieved_at": "2026-11-24",
+          "published_at": null
+        }
+      ],
+      "decision": "prototype=self_serve_free, production=admin_approval"
+    },
+    {
+      "app": "QuickBooks",
+      "field": "mcp_tier",
+      "actor_type": "authored classification override",
+      "reason": "Named re-tier from saved MCP evidence: Vendor MCP ships as a local server.",
+      "evidence": [
+        {
+          "url": "https://github.com/intuit/quickbooks-online-mcp-server",
+          "quote": "This MCP server provides complete QuickBooks Online API integration for Claude Code and other MCP-compatible clients.",
+          "retrieved_at": "2026-11-24",
+          "published_at": null
+        },
+        {
+          "url": "https://github.com/intuit/quickbooks-online-mcp-server",
+          "quote": "Note: this is a local MCP server. It runs as a stdio subprocess on the developer's or partner's machine and authenticates to a QuickBooks Online company.",
+          "retrieved_at": "2026-11-24",
+          "published_at": null
+        },
+        {
+          "url": "https://github.com/intuit/quickbooks-online-mcp-server",
+          "quote": "This server uses OAuth 2.0 to authenticate to a QuickBooks Online company. You'll set up an app on the Intuit Developer Portal and connect it to either a sandbox (for development) or your production QBO company.",
+          "retrieved_at": "2026-11-24",
+          "published_at": null
+        },
+        {
+          "url": "https://github.com/intuit/quickbooks-online-mcp-server",
+          "quote": "Before you start: This MCP server is easy to run once authenticated, but QuickBooks Online integration is gated by Intuit's OAuth app setup. You must register an app on the Intuit Developer Portal and complete a one-time, browser-based OAuth handshake. Sandbox supports http://localhost redirect URIs; production requires a public HTTPS callback for the initial authorization.",
+          "retrieved_at": "2026-11-24",
+          "published_at": null
+        },
+        {
+          "url": "https://github.com/intuit/quickbooks-online-mcp-server/commits/main/",
+          "quote": "Commits on Sep 15, 2026\nfix: make tests and CI cross-platform (#136)",
+          "retrieved_at": "2026-11-24",
+          "published_at": "2026-09-15"
+        },
+        {
+          "url": "https://static.developer.intuit.com/output_html/qbo/docs/get-started/mcp-connector.html",
+          "quote": "Intuit Developer Plugin is an AI-assisted onboarding experience for developers building with Intuit APIs.",
+          "retrieved_at": "2026-11-24",
+          "published_at": null
+        }
+      ],
+      "decision": "mcp_tier=local"
+    },
+    {
+      "app": "Brex",
+      "field": "mcp_tier",
+      "actor_type": "authored classification override",
+      "reason": "Named re-tier from saved MCP evidence: Official Brex MCP documentation labels the hosted server Beta.",
+      "evidence": [
+        {
+          "url": "https://developer.brex.com/docs/mcp",
+          "quote": "The Brex MCP server lets AI assistants interact directly with your Brex account: manage expenses, look up users, check cards, review banking transactions, track bills, and more through natural language.",
+          "retrieved_at": "2026-11-24",
+          "published_at": null
+        },
+        {
+          "url": "https://developer.brex.com/docs/mcp",
+          "quote": "The server is hosted at `https://api.brex.com/mcp` and supports any MCP-compatible client.",
+          "retrieved_at": "2026-11-24",
+          "published_at": null
+        },
+        {
+          "url": "https://developer.brex.com/docs/mcp",
+          "quote": "Beta",
+          "retrieved_at": "2026-11-24",
+          "published_at": null
+        },
+        {
+          "url": "https://developer.brex.com/docs/mcp",
+          "quote": "The MCP server's tools may change as we continue developing new use cases and features.",
+          "retrieved_at": "2026-11-24",
+          "published_at": null
+        }
+      ],
+      "decision": "mcp_tier=beta"
+    },
+    {
+      "app": "NotebookLM",
+      "field": "mcp_tier",
+      "actor_type": "authored classification override",
+      "reason": "Named re-tier from saved MCP evidence: Official product docs describe NotebookLM as Early Access Public Preview.",
+      "evidence": [
+        {
+          "url": "https://developers.google.com/notebook/docs/mcp",
+          "quote": "The Gemini Notebook API provides a remote Model Context Protocol (MCP) server at `https://notebook.googleapis.com/mcp`.",
+          "retrieved_at": "2026-11-24",
+          "published_at": null
+        },
+        {
+          "url": "https://developers.google.com/notebook/docs/mcp",
+          "quote": "Connecting an MCP-compatible agent or IDE to this endpoint exposes tools for creating notebooks and ingesting sources over Streamable HTTP (JSON-RPC 2.0).",
+          "retrieved_at": "2026-11-24",
+          "published_at": null
+        },
+        {
+          "url": "https://developers.google.com/notebook/docs/mcp",
+          "quote": "File uploads aren't available as an MCP tool. To upload a file, call the REST `UploadSource` endpoint.",
+          "retrieved_at": "2026-11-24",
+          "published_at": null
+        }
+      ],
+      "decision": "mcp_tier=beta"
+    },
+    {
+      "app": "Grain",
+      "field": "prototype_access/production_access",
+      "actor_type": "authored classification override",
+      "reason": "Validated research classified access as \"mixed\": personal access tokens on every plan including Free; workspace tokens require Business/Enterprise and admin access.",
+      "evidence": [
+        {
+          "url": "https://support.grain.com/en/articles/15507288-grain-api",
+          "quote": "**Personal Access Token (PAT)**: grants access on behalf of a single user. The token has the same permissions as the user who generated it. Best for personal automations or testing. Available on every plan, including Free.",
+          "retrieved_at": "2026-11-24",
+          "published_at": "2026-10-26"
+        },
+        {
+          "url": "https://support.grain.com/en/articles/15507288-grain-api",
+          "quote": "**Workspace Access Token (WAT)**: grants access to all data in the workspace, regardless of which user owns it. Use this for server-side integrations where you need workspace-wide access. Requires admin access to generate and is available on Business and Enterprise plans.",
+          "retrieved_at": "2026-11-24",
+          "published_at": "2026-10-26"
+        }
+      ],
+      "decision": "prototype=self_serve_free, production=paid_plan"
+    }
+  ]
+}

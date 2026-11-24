@@ -1,0 +1,13 @@
+{
+  "name": "composio-product-ops-research",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Browser verification for the static Composio research case study",
+  "scripts": {
+    "test:browser": "node test_page.cjs && node test_page_v4.cjs",
+    "test:browser:v4": "node test_page_v4.cjs"
+  },
+  "devDependencies": {
+    "playwright": "1.65.1"
+  }
+}

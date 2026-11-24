@@ -1,6 +1,7 @@
 """Emit credential-shaped findings without retaining or printing the matched values."""
 import hashlib
 import json
+import os
 import re
 import subprocess
 from pathlib import Path
@@ -26,11 +27,34 @@ for path in paths:
             for match in pattern.finditer(line):
                 value = match.group(0)
                 preserved = (path.as_posix() == 'checked_dataset_v4.json' or
-                             (path.parts[0] == 'data' and (len(path.parts) < 2 or path.parts[1] != 'checked_research')))
+                             (path.parts[0] == 'data' and (len(path.parts) < 2 or path.parts[1] != 'checked_research')) or
+                             path.parts[0] == 'private' or
+                             path.parts[0] == 'blind_batches' or
+                             path.name in ('blind_packets.csv', 'blind_index.csv'))
                 findings.append({'file': path.as_posix(), 'line': number, 'kind': kind,
                                  'sha256': hashlib.sha256(value.encode()).hexdigest(),
                                  'preserved_research': preserved})
 unpreserved = [finding for finding in findings if not finding['preserved_research']]
+
+# Fail if the live Composio API key value appears in any commit-eligible file.
+# .env is git-ignored, so it is excluded from the scanned paths; only a real leak is flagged.
+key_value = os.environ.get('COMPOSIO_API_KEY', '').strip()
+env_path = Path('.env')
+if not key_value and env_path.exists():
+    for line in env_path.read_text(encoding='utf-8').splitlines():
+        if line.startswith('COMPOSIO_API_KEY='):
+            key_value = line.split('=', 1)[1].strip()
+if key_value:
+    for path in paths:
+        try:
+            text = path.read_text(encoding='utf-8')
+        except (UnicodeDecodeError, OSError):
+            continue
+        if key_value in text:
+            findings.append({'file': path.as_posix(), 'line': 0, 'kind': 'composio_api_key',
+                             'sha256': hashlib.sha256(key_value.encode()).hexdigest(),
+                             'preserved_research': False})
+    unpreserved = [finding for finding in findings if not finding['preserved_research']]
 report = {'files_scanned': len(paths), 'findings': findings,
           'preserved_occurrences': len(findings) - len(unpreserved),
           'unpreserved_occurrences': len(unpreserved)}

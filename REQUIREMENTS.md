@@ -1,25 +1,23 @@
-# Assignment checklist
+# Assignment checklist and evidence boundaries
 
-| Requirement | Final location / status |
+| Requirement | Evidence / status |
 |---|---|
-| Exact 100 apps across ten categories | `apps.json`; `assemble_checked_v4.py` validates 100 unique assigned apps |
-| Agent/script across the list with raw baseline | `research.py`; immutable `data/001.json`–`data/100.json`; later frozen passes under `data/pass*` |
-| Candidate review and claim-specific sources | All 100 records in `data/checked_research/`; 496/500 vendor claims checked |
-| API reference, authentication, credentials, access/pricing, MCP | Official first-party evidence per field in `checked_dataset_v4.json`; exact quotes and dates retained |
-| Context corrections | `context_pass_v4.py`; client/server direction, clause-local negation, publication labels, ownership checks, and Composio separation |
-| Composio catalog vs vendor MCP | 69 exact, 11 alias, 20 scoped not-listed findings; 92 vendor servers and 8 scoped no-server findings reported separately |
-| Buildability, blocker, next action | 64 documented, 30 gated, 3 partner, 2 wrapper/CLI, 1 unresolved; every record has blocker and next action |
-| Six-field category sample | `review_selected_v4.json`; 33/60 answered, strict 19/33, half-credit 25/33 |
-| Random holdout | `review_holdout_v4.json`; seed 20261124, 26/60 answered, strict 14/26, half-credit 18/26 |
-| Baseline accuracy | 0/60 answered; accuracy undefined (0/0); no improvement claim |
-| Category and decision patterns | `research_summary_v4.json` and generated category matrix in `index.html` |
-| Workflow and corrections | Runnable commands in `README.md`; exact actions in `source_review_v4.json` and group logs |
-| Single page and interaction | `index.html`; 1440px/390px Playwright tests pass for filters, sort, empty search, keyboard details, exports, and overflow |
-| Source links | `link_checks_v4.json`: 592 URLs, zero broken checked links; `independent_link_checks_v4.json`: 123 URLs, zero unresolved |
-| Historical bearer-shaped string | `security_example_review.json`: exact public Zendesk documentation example; no evidence of a user-owned credential, so history was not rewritten |
-| GitHub push protection | Two additional public documentation token examples in raw passes were redacted before the first successful push; `redaction_log.json` records them |
-| Secret scan | `secret_scan_v4.json`: 1,728 files, 42 preserved-research occurrences, zero outside preserved research |
-| Live link / repository | Live and tested: https://harshbehl67-ctrl.github.io/-composio-product-ops-research/; source: https://github.com/harshbehl67-ctrl/-composio-product-ops-research |
-| Submission readiness | Complete and published; the live URL passes the same 1440px/390px Playwright suite with no script errors |
+| 100 apps across ten categories | `apps.json`; validated by `assemble_checked_v4.py` |
+| Research pipeline and saved evidence | `research.py`, immutable collector artifacts, and `data/checked_research/`; live discovery is separate from claim validation |
+| Official evidence for vendor fields | `checked_dataset_v4.json`; 496/500 vendor-field answers have cited sources |
+| Contextual correction and source checks | `context_pass_v4.py`, `source_review_v4.json`, link-check artifacts, and cited claim records |
+| Composio catalog vs vendor MCP | 80 catalog matches (69 exact, 11 aliases), 20 scoped not-listed results; vendor MCP tiers reported independently |
+| Access, blocker, buildability, next action | 64 documented candidates; 60 easy wins. Prototype and production access are separate. Production blockers: paid plan 19, admin approval 8, app review 6, partner/sales 3; counts cover 36 gated apps. |
+| Four-field AI-labeled gold | `gold_ratings_v4.json`, 80 rows from 10 selected and 10 holdout apps. Model/session identity is unrecorded; blinding and exclusion of earlier chat labels are unverified. |
+| Gold accuracy | Final four-field pass: 60/80 answered (75% coverage), 60/60 scoreable answered, 37/60 strict (61.7%, Wilson 95% CI 49.0–72.9%), 80.8% half-credit, zero incorrect. Gold-unscoreable: 14 not stated and 6 unresolved. |
+| Six-field secondary score | `gold_ratings_v4.json`; 3×120 claims. Pass 3: 81/120 scoreable answered (67.5%), strict 71.6% [61.0–80.3], half-credit 85.8% [76.6–91.8], fixed half 57.9%. Across all passes, 232 non-correct ratings split into 107 agent-caused misses and 125 gold-unscoreable ratings. |
+| Human spot-check | `human_gold_spotcheck_results_v1.json`: same-author, non-independent status check of 24 rows. 15/23 clear labels agree (65.2%); one weak case; 16/24 (66.7%) if counted as found. Not full value agreement. |
+| Source conflict review | `current_source_adjudication_v1.json`: three source conflicts recorded separately; frozen labels are not silently changed. |
+| Human-authored override audit | `classification_overrides_v1.json`: classification decisions include reasons and claim-level source evidence where available. |
+| Runnable one-app demo | `python run_submission_demo_v4.py`; output captured in `run_submission_demo_sample_v4.json`. `run_pipeline.py` has offline and live modes; fresh discovery remains separate and requires human review. |
+| Interactive single page | `index.html`; table filters, sorting, responsive layout, and filtered JSON/CSV exports. |
+| Public review and source | GitHub Pages page and public repository linked in `README.md`; deployment is verified after publishing. |
+| Secret handling | `.env` is ignored and excluded from the static page. `scan_secrets.py` checks commit-eligible files without printing matched values. Historical documentation examples are distinguished from secrets. |
+| Tests | Python unit tests and Playwright browser tests are part of the release check. |
 
-The only unresolved core fields are Fanbasis authentication, credential gate, API surface, and verdict. Current first-party Commas pages document the Fanbasis rebrand, APIs/SDKs, and an MCP beta, but do not publish those API details; the legacy Fanbasis API Docs site remains password-protected. This is a specific evidence boundary, not a generic incomplete-research label.
+The gold score is descriptive of a small sample. It is not an independent model benchmark: the labeling model is unknown, the human check is same-author and status-only, and some credential-gate checks cite authentication evidence that may not demonstrate a product-access gate. See the provenance and source-adjudication JSON files for row-level details.

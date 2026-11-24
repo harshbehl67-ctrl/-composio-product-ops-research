@@ -9691,24 +9691,24 @@
             "title": "Google Ads MCP server",
             "quote": "The Google Ads MCP server provides a standardized bridge to the Google Ads API.",
             "retrieved_at": "2026-11-24",
-            "published_at": null,
-            "published_label": "undated"
+            "published_at": "2026-11-19",
+            "published_label": "Updated 2026-11-19 UTC"
           },
           {
             "url": "https://developers.google.com/google-ads/api/docs/developer-toolkit/mcp-server",
             "title": "Google Ads MCP transport",
             "quote": "Transport: Standard input/output (`stdio`) or Streamable HTTP (`streamable-http` on Cloud Run)",
             "retrieved_at": "2026-11-24",
-            "published_at": null,
-            "published_label": "undated"
+            "published_at": "2026-11-19",
+            "published_label": "Updated 2026-11-19 UTC"
           },
           {
             "url": "https://developers.google.com/google-ads/api/docs/developer-toolkit/mcp-server",
             "title": "Google Ads MCP authentication",
             "quote": "Authentication: Application Default Credentials (OAuth 2.0 user credentials or service account) for local `stdio`, or OAuth 2.0 Web application credentials for remote HTTP",
             "retrieved_at": "2026-11-24",
-            "published_at": null,
-            "published_label": "undated"
+            "published_at": "2026-11-19",
+            "published_label": "Updated 2026-11-19 UTC"
           }
         ]
       },
@@ -18545,14 +18545,16 @@
             "published_label": "undated"
           },
           {
-            "url": "https://api.github.com/repos/sherlock-project/sherlock/git/trees/c588d7c8b476df9f9c84912a05d1430fb8cdcdae?recursive=1",
-            "title": "Sherlock complete repository tree — no MCP-named files",
-            "quote": "\"truncated\":false",
+            "url": "https://github.com/sherlock-project/sherlock/tree/c588d7c8b476df9f9c84912a05d1430fb8cdcdae",
+            "title": "Official Sherlock repository tree at reviewed commit",
+            "quote": "Readme",
             "retrieved_at": "2026-11-24",
             "published_at": "2026-11-01",
             "published_label": "Repository master commit 2026-11-01",
-            "verification_method": "complete_official_tree_and_source_archive_review",
-            "verification_note": "The complete tree contains 67 entries and no path containing mcp or model-context; an in-memory scan of the complete source archive found zero MCP or Model Context Protocol text hits."
+            "verification_method": "commit_pinned_source_archive_review",
+            "verification_note": "Commit-pinned official GitHub tree replaces the API URL, which now returns rate-limit HTTP 403. The full source archive at this commit was reviewed and contained 67 entries with no MCP or Model Context Protocol path/text hits.",
+            "source_review": "Commit-pinned official GitHub tree replaces the API URL, which now returns rate-limit HTTP 403. The full source archive at this commit was reviewed and contained 67 entries with no MCP or Model Context Protocol path/text hits.",
+            "verified_at": "2026-11-24"
           },
           {
             "url": "https://sherlockproject.xyz/installation",
@@ -31764,14 +31766,16 @@
             "published_label": "undated"
           },
           {
-            "url": "https://api.github.com/repos/mermaid-js/mermaid-cli/git/trees/1423a0d7967d275a9d360ba0617f569550827c8b?recursive=1",
-            "title": "Mermaid CLI complete repository tree — no MCP-named files",
-            "quote": "\"truncated\":false",
+            "url": "https://github.com/mermaid-js/mermaid-cli/tree/1423a0d7967d275a9d360ba0617f569550827c8b",
+            "title": "Official Mermaid CLI repository tree at reviewed commit",
+            "quote": "README.md",
             "retrieved_at": "2026-11-24",
             "published_at": "2026-11-02",
             "published_label": "Repository master commit 2026-11-02",
-            "verification_method": "complete_official_tree_and_source_archive_review",
-            "verification_note": "The complete tree contains 105 entries and no path containing mcp or model-context; an in-memory scan of the complete source archive found zero MCP or Model Context Protocol text hits."
+            "verification_method": "commit_pinned_source_archive_review",
+            "verification_note": "Commit-pinned official GitHub tree replaces the API URL, which now returns rate-limit HTTP 403. The full source archive at this commit was reviewed and contained 105 entries with no MCP or Model Context Protocol path/text hits.",
+            "source_review": "Commit-pinned official GitHub tree replaces the API URL, which now returns rate-limit HTTP 403. The full source archive at this commit was reviewed and contained 105 entries with no MCP or Model Context Protocol path/text hits.",
+            "verified_at": "2026-11-24"
           }
         ]
       },

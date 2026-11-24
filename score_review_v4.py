@@ -53,9 +53,11 @@ def score(path, expected_apps, label):
 
 outputs['selected_sample'] = score(ROOT / 'data' / 'checked_research' / 'review_selected_v4.json', selection['selected_sample'], 'selected_sample')
 outputs['random_holdout'] = score(ROOT / 'data' / 'checked_research' / 'review_holdout_v4.json', [item['app'] for item in selection['random_holdout']], 'random_holdout')
-outputs['baseline'] = {'total_claims': 60, 'answered': 0, 'coverage': 0, 'strict_accuracy': None,
-                       'note': 'Original baseline answered 0/60; answered-claim accuracy is undefined (0/0), not 0%.'}
-outputs['comparison_note'] = 'No baseline accuracy-improvement claim is made. Selected and holdout results are separate and are not population estimates.'
+outputs['baseline'] = {'status': 'excluded_no_answer_output',
+                       'note': 'The empty discovery run is retained in raw data but excluded from accuracy scoring.'}
+outputs['comparison_note'] = ('The first answer-producing extraction is the baseline. Compare fixed-denominator '
+                              'half-credit and coverage across passes; answered-only strict precision is conditional. '
+                              'Selected and random-holdout results are separate and are not population estimates.')
 Path('independent_review_v4.json').write_text(json.dumps(outputs, indent=2, ensure_ascii=False), encoding='utf-8')
 for label in ('selected_sample', 'random_holdout'):
     result = outputs[label]

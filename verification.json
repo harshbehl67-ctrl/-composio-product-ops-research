@@ -1,0 +1,1290 @@
+{
+  "generated_at": "2026-11-24",
+  "labels": {
+    "source": "gold_template.csv; AI labeler/session identity not recorded; see gold_provenance_v1.json",
+    "provenance": {
+      "schema_version": 1,
+      "gold_labels": {
+        "actor_type": "AI",
+        "labeler_identity": "not recorded",
+        "session_identity": "not recorded",
+        "evidence_source": "frozen page excerpts",
+        "separate_session": "reported in the project record",
+        "agent_answer_exposure": {
+          "reported_status": "The project record says agent answers were not shown during labeling.",
+          "independently_verified": false
+        },
+        "earlier_chat_label_exclusion": {
+          "status": "unverified",
+          "note": "The author had seen assistant answers before; saved artifacts do not establish whether overlapping earlier chat labels were excluded from the AI labeling session."
+        }
+      },
+      "author_spotcheck": {
+        "actor_type": "human author",
+        "independent": false,
+        "blind_to_saved_labels": false,
+        "sample_size": 24,
+        "unit": "gold status only, not full field-value agreement",
+        "clear_status_matches": 15,
+        "clear_status_comparisons": 23,
+        "weak_or_ambiguous": 1,
+        "scope_mismatches": 5,
+        "source": "human_gold_spotcheck_results_v1.json"
+      }
+    },
+    "disclosure": "The saved project record attributes the labels to a separate AI session using frozen excerpts. The model and session identities were not recorded. The record says agent answers were not shown, but that claim was not independently verified; whether earlier chat labels were excluded is unknown. A separate script compares each pass with the saved labels. Only auth, credential_gate, api_surface, and official_mcp are labeled; composio_toolkit is checked against the Composio catalog snapshot (fetched_at 2026-11-24) and verdict is derived by a written rule.",
+    "gold_template": "gold_template.csv",
+    "gold_ratings": "gold_ratings_v4.json",
+    "gold_rows_filled": 80,
+    "gold_rows_total": 80,
+    "hand_labeled_fields": [
+      "auth",
+      "credential_gate",
+      "api_surface",
+      "official_mcp"
+    ],
+    "rule_scored_fields": {
+      "composio_toolkit": "scored against composio_catalog.json (with fetched_at)",
+      "verdict": "derived from the four gold fields by the written buildability rule"
+    },
+    "n": 120,
+    "selected": 60,
+    "holdout": 60,
+    "seed": 20261124
+  },
+  "passes": {
+    "pass1": {
+      "label": "first extraction pass, no verification (data/pass2)",
+      "answers_normalised_identical_to_final": 0.13043478260869565,
+      "combined": {
+        "n": 120,
+        "counts": {
+          "correct": 34,
+          "partial": 8,
+          "incorrect": 0,
+          "abstained": 74,
+          "unresolved": 4
+        },
+        "answered": 46,
+        "resolved": 42,
+        "coverage": 0.38333333333333336,
+        "coverage_ci95": [
+          0.30124387764148153,
+          0.47266085227156884
+        ],
+        "precision_strict_resolved": 0.8095238095238095,
+        "precision_strict_resolved_ci95": [
+          0.6669893264500356,
+          0.9001811039014357
+        ],
+        "precision_half_resolved": 0.9047619047619048,
+        "overall_fixed_strict": 0.2833333333333333,
+        "overall_fixed_strict_ci95": [
+          0.2104050919824472,
+          0.369703692141789
+        ],
+        "overall_fixed_half": 0.31666666666666665
+      },
+      "by_cohort": {
+        "selected_sample": {
+          "n": 60,
+          "counts": {
+            "correct": 17,
+            "partial": 7,
+            "incorrect": 0,
+            "abstained": 34,
+            "unresolved": 2
+          },
+          "answered": 26,
+          "resolved": 24,
+          "coverage": 0.43333333333333335,
+          "coverage_ci95": [
+            0.3157220039440064,
+            0.5589678534530513
+          ],
+          "precision_strict_resolved": 0.7083333333333334,
+          "precision_strict_resolved_ci95": [
+            0.508319363412903,
+            0.8508553966583573
+          ],
+          "precision_half_resolved": 0.8541666666666666,
+          "overall_fixed_strict": 0.2833333333333333,
+          "overall_fixed_strict_ci95": [
+            0.1850667860430859,
+            0.40767525049735165
+          ],
+          "overall_fixed_half": 0.3416666666666667
+        },
+        "random_holdout": {
+          "n": 60,
+          "counts": {
+            "correct": 17,
+            "partial": 1,
+            "incorrect": 0,
+            "abstained": 40,
+            "unresolved": 2
+          },
+          "answered": 20,
+          "resolved": 18,
+          "coverage": 0.3333333333333333,
+          "coverage_ci95": [
+            0.2272909421592783,
+            0.459433701333366
+          ],
+          "precision_strict_resolved": 0.9444444444444444,
+          "precision_strict_resolved_ci95": [
+            0.7424220019799247,
+            0.9901250641690756
+          ],
+          "precision_half_resolved": 0.9722222222222222,
+          "overall_fixed_strict": 0.2833333333333333,
+          "overall_fixed_strict_ci95": [
+            0.1850667860430859,
+            0.40767525049735165
+          ],
+          "overall_fixed_half": 0.2916666666666667
+        }
+      },
+      "by_field": {
+        "auth": {
+          "n": 20,
+          "counts": {
+            "correct": 6,
+            "partial": 6,
+            "incorrect": 0,
+            "abstained": 8,
+            "unresolved": 0
+          },
+          "answered": 12,
+          "resolved": 12,
+          "coverage": 0.6,
+          "coverage_ci95": [
+            0.3865779423152061,
+            0.7811960325858074
+          ],
+          "precision_strict_resolved": 0.5,
+          "precision_strict_resolved_ci95": [
+            0.2537781703934222,
+            0.7462218296065778
+          ],
+          "precision_half_resolved": 0.75,
+          "overall_fixed_strict": 0.3,
+          "overall_fixed_strict_ci95": [
+            0.14547527396899385,
+            0.5189767762289793
+          ],
+          "overall_fixed_half": 0.45
+        },
+        "credential_gate": {
+          "n": 20,
+          "counts": {
+            "correct": 0,
+            "partial": 0,
+            "incorrect": 0,
+            "abstained": 20,
+            "unresolved": 0
+          },
+          "answered": 0,
+          "resolved": 0,
+          "coverage": 0.0,
+          "coverage_ci95": [
+            0.0,
+            0.1611301254949332
+          ],
+          "precision_strict_resolved": null,
+          "precision_strict_resolved_ci95": [
+            null,
+            null
+          ],
+          "precision_half_resolved": null,
+          "overall_fixed_strict": 0.0,
+          "overall_fixed_strict_ci95": [
+            0.0,
+            0.1611301254949332
+          ],
+          "overall_fixed_half": 0.0
+        },
+        "api_surface": {
+          "n": 20,
+          "counts": {
+            "correct": 1,
+            "partial": 2,
+            "incorrect": 0,
+            "abstained": 15,
+            "unresolved": 2
+          },
+          "answered": 5,
+          "resolved": 3,
+          "coverage": 0.25,
+          "coverage_ci95": [
+            0.11186005278940309,
+            0.4687050099580636
+          ],
+          "precision_strict_resolved": 0.3333333333333333,
+          "precision_strict_resolved_ci95": [
+            0.0614903152761605,
+            0.7923450448735121
+          ],
+          "precision_half_resolved": 0.6666666666666666,
+          "overall_fixed_strict": 0.05,
+          "overall_fixed_strict_ci95": [
+            0.008881219432873136,
+            0.23613589351256675
+          ],
+          "overall_fixed_half": 0.1
+        },
+        "official_mcp": {
+          "n": 20,
+          "counts": {
+            "correct": 11,
+            "partial": 0,
+            "incorrect": 0,
+            "abstained": 7,
+            "unresolved": 2
+          },
+          "answered": 13,
+          "resolved": 11,
+          "coverage": 0.65,
+          "coverage_ci95": [
+            0.43285051021946463,
+            0.8188104521320554
+          ],
+          "precision_strict_resolved": 1.0,
+          "precision_strict_resolved_ci95": [
+            0.7411599827511859,
+            1.0
+          ],
+          "precision_half_resolved": 1.0,
+          "overall_fixed_strict": 0.55,
+          "overall_fixed_strict_ci95": [
+            0.3420820083075997,
+            0.7418049791429071
+          ],
+          "overall_fixed_half": 0.55
+        },
+        "composio_toolkit": {
+          "n": 20,
+          "counts": {
+            "correct": 16,
+            "partial": 0,
+            "incorrect": 0,
+            "abstained": 4,
+            "unresolved": 0
+          },
+          "answered": 16,
+          "resolved": 16,
+          "coverage": 0.8,
+          "coverage_ci95": [
+            0.5839782779742401,
+            0.9193436467288
+          ],
+          "precision_strict_resolved": 1.0,
+          "precision_strict_resolved_ci95": [
+            0.8063865817272802,
+            1.0
+          ],
+          "precision_half_resolved": 1.0,
+          "overall_fixed_strict": 0.8,
+          "overall_fixed_strict_ci95": [
+            0.5839782779742401,
+            0.9193436467288
+          ],
+          "overall_fixed_half": 0.8
+        },
+        "verdict": {
+          "n": 20,
+          "counts": {
+            "correct": 0,
+            "partial": 0,
+            "incorrect": 0,
+            "abstained": 20,
+            "unresolved": 0
+          },
+          "answered": 0,
+          "resolved": 0,
+          "coverage": 0.0,
+          "coverage_ci95": [
+            0.0,
+            0.1611301254949332
+          ],
+          "precision_strict_resolved": null,
+          "precision_strict_resolved_ci95": [
+            null,
+            null
+          ],
+          "precision_half_resolved": null,
+          "overall_fixed_strict": 0.0,
+          "overall_fixed_strict_ci95": [
+            0.0,
+            0.1611301254949332
+          ],
+          "overall_fixed_half": 0.0
+        }
+      }
+    },
+    "pass2": {
+      "label": "agent snapshot after targeted re-search, before the final loops (data/pass7)",
+      "answers_normalised_identical_to_final": 0.10204081632653061,
+      "combined": {
+        "n": 120,
+        "counts": {
+          "correct": 36,
+          "partial": 8,
+          "incorrect": 0,
+          "abstained": 71,
+          "unresolved": 5
+        },
+        "answered": 49,
+        "resolved": 44,
+        "coverage": 0.4083333333333333,
+        "coverage_ci95": [
+          0.3245599028350716,
+          0.4977938135251822
+        ],
+        "precision_strict_resolved": 0.8181818181818182,
+        "precision_strict_resolved_ci95": [
+          0.6803916324485767,
+          0.9048730744174144
+        ],
+        "precision_half_resolved": 0.9090909090909091,
+        "overall_fixed_strict": 0.3,
+        "overall_fixed_strict_ci95": [
+          0.22525501338672319,
+          0.38715309503564865
+        ],
+        "overall_fixed_half": 0.3333333333333333
+      },
+      "by_cohort": {
+        "selected_sample": {
+          "n": 60,
+          "counts": {
+            "correct": 20,
+            "partial": 5,
+            "incorrect": 0,
+            "abstained": 32,
+            "unresolved": 3
+          },
+          "answered": 28,
+          "resolved": 25,
+          "coverage": 0.4666666666666667,
+          "coverage_ci95": [
+            0.34627701540988,
+            0.5910679132886489
+          ],
+          "precision_strict_resolved": 0.8,
+          "precision_strict_resolved_ci95": [
+            0.6086866446346177,
+            0.9113954589934752
+          ],
+          "precision_half_resolved": 0.9,
+          "overall_fixed_strict": 0.3333333333333333,
+          "overall_fixed_strict_ci95": [
+            0.2272909421592783,
+            0.459433701333366
+          ],
+          "overall_fixed_half": 0.375
+        },
+        "random_holdout": {
+          "n": 60,
+          "counts": {
+            "correct": 16,
+            "partial": 3,
+            "incorrect": 0,
+            "abstained": 39,
+            "unresolved": 2
+          },
+          "answered": 21,
+          "resolved": 19,
+          "coverage": 0.35,
+          "coverage_ci95": [
+            0.24167601723815488,
+            0.4763761619052249
+          ],
+          "precision_strict_resolved": 0.8421052631578947,
+          "precision_strict_resolved_ci95": [
+            0.6243407235682331,
+            0.9447962896007217
+          ],
+          "precision_half_resolved": 0.9210526315789473,
+          "overall_fixed_strict": 0.26666666666666666,
+          "overall_fixed_strict_ci95": [
+            0.17132496487078852,
+            0.3900895360189135
+          ],
+          "overall_fixed_half": 0.2916666666666667
+        }
+      },
+      "by_field": {
+        "auth": {
+          "n": 20,
+          "counts": {
+            "correct": 8,
+            "partial": 4,
+            "incorrect": 0,
+            "abstained": 8,
+            "unresolved": 0
+          },
+          "answered": 12,
+          "resolved": 12,
+          "coverage": 0.6,
+          "coverage_ci95": [
+            0.3865779423152061,
+            0.7811960325858074
+          ],
+          "precision_strict_resolved": 0.6666666666666666,
+          "precision_strict_resolved_ci95": [
+            0.3906175873976139,
+            0.8618821601026385
+          ],
+          "precision_half_resolved": 0.8333333333333334,
+          "overall_fixed_strict": 0.4,
+          "overall_fixed_strict_ci95": [
+            0.21880396741419272,
+            0.613422057684794
+          ],
+          "overall_fixed_half": 0.5
+        },
+        "credential_gate": {
+          "n": 20,
+          "counts": {
+            "correct": 1,
+            "partial": 0,
+            "incorrect": 0,
+            "abstained": 17,
+            "unresolved": 2
+          },
+          "answered": 3,
+          "resolved": 1,
+          "coverage": 0.15,
+          "coverage_ci95": [
+            0.05236779195949584,
+            0.36042329588695743
+          ],
+          "precision_strict_resolved": 1.0,
+          "precision_strict_resolved_ci95": [
+            0.20654329147389294,
+            1.0
+          ],
+          "precision_half_resolved": 1.0,
+          "overall_fixed_strict": 0.05,
+          "overall_fixed_strict_ci95": [
+            0.008881219432873136,
+            0.23613589351256675
+          ],
+          "overall_fixed_half": 0.05
+        },
+        "api_surface": {
+          "n": 20,
+          "counts": {
+            "correct": 2,
+            "partial": 4,
+            "incorrect": 0,
+            "abstained": 12,
+            "unresolved": 2
+          },
+          "answered": 8,
+          "resolved": 6,
+          "coverage": 0.4,
+          "coverage_ci95": [
+            0.21880396741419272,
+            0.613422057684794
+          ],
+          "precision_strict_resolved": 0.3333333333333333,
+          "precision_strict_resolved_ci95": [
+            0.09676933255921683,
+            0.7000116786584712
+          ],
+          "precision_half_resolved": 0.6666666666666666,
+          "overall_fixed_strict": 0.1,
+          "overall_fixed_strict_ci95": [
+            0.027865893984153206,
+            0.30103820641179335
+          ],
+          "overall_fixed_half": 0.2
+        },
+        "official_mcp": {
+          "n": 20,
+          "counts": {
+            "correct": 9,
+            "partial": 0,
+            "incorrect": 0,
+            "abstained": 10,
+            "unresolved": 1
+          },
+          "answered": 10,
+          "resolved": 9,
+          "coverage": 0.5,
+          "coverage_ci95": [
+            0.2992949144298199,
+            0.7007050855701801
+          ],
+          "precision_strict_resolved": 1.0,
+          "precision_strict_resolved_ci95": [
+            0.7008472464490407,
+            1.0
+          ],
+          "precision_half_resolved": 1.0,
+          "overall_fixed_strict": 0.45,
+          "overall_fixed_strict_ci95": [
+            0.25819502085709295,
+            0.6579179916924003
+          ],
+          "overall_fixed_half": 0.45
+        },
+        "composio_toolkit": {
+          "n": 20,
+          "counts": {
+            "correct": 16,
+            "partial": 0,
+            "incorrect": 0,
+            "abstained": 4,
+            "unresolved": 0
+          },
+          "answered": 16,
+          "resolved": 16,
+          "coverage": 0.8,
+          "coverage_ci95": [
+            0.5839782779742401,
+            0.9193436467288
+          ],
+          "precision_strict_resolved": 1.0,
+          "precision_strict_resolved_ci95": [
+            0.8063865817272802,
+            1.0
+          ],
+          "precision_half_resolved": 1.0,
+          "overall_fixed_strict": 0.8,
+          "overall_fixed_strict_ci95": [
+            0.5839782779742401,
+            0.9193436467288
+          ],
+          "overall_fixed_half": 0.8
+        },
+        "verdict": {
+          "n": 20,
+          "counts": {
+            "correct": 0,
+            "partial": 0,
+            "incorrect": 0,
+            "abstained": 20,
+            "unresolved": 0
+          },
+          "answered": 0,
+          "resolved": 0,
+          "coverage": 0.0,
+          "coverage_ci95": [
+            0.0,
+            0.1611301254949332
+          ],
+          "precision_strict_resolved": null,
+          "precision_strict_resolved_ci95": [
+            null,
+            null
+          ],
+          "precision_half_resolved": null,
+          "overall_fixed_strict": 0.0,
+          "overall_fixed_strict_ci95": [
+            0.0,
+            0.1611301254949332
+          ],
+          "overall_fixed_half": 0.0
+        }
+      }
+    },
+    "pass3": {
+      "label": "final, after automated loops + human review (data/pass12)",
+      "answers_normalised_identical_to_final": 1.0,
+      "combined": {
+        "n": 120,
+        "counts": {
+          "correct": 58,
+          "partial": 23,
+          "incorrect": 0,
+          "abstained": 0,
+          "unresolved": 39
+        },
+        "answered": 120,
+        "resolved": 81,
+        "coverage": 1.0,
+        "coverage_ci95": [
+          0.9689797289440706,
+          1.0
+        ],
+        "precision_strict_resolved": 0.7160493827160493,
+        "precision_strict_resolved_ci95": [
+          0.6098194243380317,
+          0.8027140498067273
+        ],
+        "precision_half_resolved": 0.8580246913580247,
+        "overall_fixed_strict": 0.48333333333333334,
+        "overall_fixed_strict_ci95": [
+          0.3958348942305447,
+          0.5718657814713197
+        ],
+        "overall_fixed_half": 0.5791666666666667
+      },
+      "by_cohort": {
+        "selected_sample": {
+          "n": 60,
+          "counts": {
+            "correct": 29,
+            "partial": 10,
+            "incorrect": 0,
+            "abstained": 0,
+            "unresolved": 21
+          },
+          "answered": 60,
+          "resolved": 39,
+          "coverage": 1.0,
+          "coverage_ci95": [
+            0.9398260695220669,
+            0.9999999999999999
+          ],
+          "precision_strict_resolved": 0.7435897435897436,
+          "precision_strict_resolved_ci95": [
+            0.589180432321585,
+            0.854313741565478
+          ],
+          "precision_half_resolved": 0.8717948717948718,
+          "overall_fixed_strict": 0.48333333333333334,
+          "overall_fixed_strict_ci95": [
+            0.3617484128577001,
+            0.6069240514915643
+          ],
+          "overall_fixed_half": 0.5666666666666667
+        },
+        "random_holdout": {
+          "n": 60,
+          "counts": {
+            "correct": 29,
+            "partial": 13,
+            "incorrect": 0,
+            "abstained": 0,
+            "unresolved": 18
+          },
+          "answered": 60,
+          "resolved": 42,
+          "coverage": 1.0,
+          "coverage_ci95": [
+            0.9398260695220669,
+            0.9999999999999999
+          ],
+          "precision_strict_resolved": 0.6904761904761905,
+          "precision_strict_resolved_ci95": [
+            0.5397372223365942,
+            0.8092907348027727
+          ],
+          "precision_half_resolved": 0.8452380952380952,
+          "overall_fixed_strict": 0.48333333333333334,
+          "overall_fixed_strict_ci95": [
+            0.3617484128577001,
+            0.6069240514915643
+          ],
+          "overall_fixed_half": 0.5916666666666667
+        }
+      },
+      "by_field": {
+        "auth": {
+          "n": 20,
+          "counts": {
+            "correct": 12,
+            "partial": 7,
+            "incorrect": 0,
+            "abstained": 0,
+            "unresolved": 1
+          },
+          "answered": 20,
+          "resolved": 19,
+          "coverage": 1.0,
+          "coverage_ci95": [
+            0.8388698745050668,
+            0.9999999999999999
+          ],
+          "precision_strict_resolved": 0.631578947368421,
+          "precision_strict_resolved_ci95": [
+            0.4103915749815672,
+            0.8085072762372616
+          ],
+          "precision_half_resolved": 0.8157894736842105,
+          "overall_fixed_strict": 0.6,
+          "overall_fixed_strict_ci95": [
+            0.3865779423152061,
+            0.7811960325858074
+          ],
+          "overall_fixed_half": 0.775
+        },
+        "credential_gate": {
+          "n": 20,
+          "counts": {
+            "correct": 1,
+            "partial": 6,
+            "incorrect": 0,
+            "abstained": 0,
+            "unresolved": 13
+          },
+          "answered": 20,
+          "resolved": 7,
+          "coverage": 1.0,
+          "coverage_ci95": [
+            0.8388698745050668,
+            0.9999999999999999
+          ],
+          "precision_strict_resolved": 0.14285714285714285,
+          "precision_strict_resolved_ci95": [
+            0.02567895594897479,
+            0.51313450331903
+          ],
+          "precision_half_resolved": 0.5714285714285714,
+          "overall_fixed_strict": 0.05,
+          "overall_fixed_strict_ci95": [
+            0.008881219432873136,
+            0.23613589351256675
+          ],
+          "overall_fixed_half": 0.2
+        },
+        "api_surface": {
+          "n": 20,
+          "counts": {
+            "correct": 6,
+            "partial": 10,
+            "incorrect": 0,
+            "abstained": 0,
+            "unresolved": 4
+          },
+          "answered": 20,
+          "resolved": 16,
+          "coverage": 1.0,
+          "coverage_ci95": [
+            0.8388698745050668,
+            0.9999999999999999
+          ],
+          "precision_strict_resolved": 0.375,
+          "precision_strict_resolved_ci95": [
+            0.18480982554752806,
+            0.613593529020652
+          ],
+          "precision_half_resolved": 0.6875,
+          "overall_fixed_strict": 0.3,
+          "overall_fixed_strict_ci95": [
+            0.14547527396899385,
+            0.5189767762289793
+          ],
+          "overall_fixed_half": 0.55
+        },
+        "official_mcp": {
+          "n": 20,
+          "counts": {
+            "correct": 18,
+            "partial": 0,
+            "incorrect": 0,
+            "abstained": 0,
+            "unresolved": 2
+          },
+          "answered": 20,
+          "resolved": 18,
+          "coverage": 1.0,
+          "coverage_ci95": [
+            0.8388698745050668,
+            0.9999999999999999
+          ],
+          "precision_strict_resolved": 1.0,
+          "precision_strict_resolved_ci95": [
+            0.8241154494176252,
+            1.0
+          ],
+          "precision_half_resolved": 1.0,
+          "overall_fixed_strict": 0.9,
+          "overall_fixed_strict_ci95": [
+            0.6989617935882066,
+            0.9721341060158468
+          ],
+          "overall_fixed_half": 0.9
+        },
+        "composio_toolkit": {
+          "n": 20,
+          "counts": {
+            "correct": 20,
+            "partial": 0,
+            "incorrect": 0,
+            "abstained": 0,
+            "unresolved": 0
+          },
+          "answered": 20,
+          "resolved": 20,
+          "coverage": 1.0,
+          "coverage_ci95": [
+            0.8388698745050668,
+            0.9999999999999999
+          ],
+          "precision_strict_resolved": 1.0,
+          "precision_strict_resolved_ci95": [
+            0.8388698745050668,
+            0.9999999999999999
+          ],
+          "precision_half_resolved": 1.0,
+          "overall_fixed_strict": 1.0,
+          "overall_fixed_strict_ci95": [
+            0.8388698745050668,
+            0.9999999999999999
+          ],
+          "overall_fixed_half": 1.0
+        },
+        "verdict": {
+          "n": 20,
+          "counts": {
+            "correct": 1,
+            "partial": 0,
+            "incorrect": 0,
+            "abstained": 0,
+            "unresolved": 19
+          },
+          "answered": 20,
+          "resolved": 1,
+          "coverage": 1.0,
+          "coverage_ci95": [
+            0.8388698745050668,
+            0.9999999999999999
+          ],
+          "precision_strict_resolved": 1.0,
+          "precision_strict_resolved_ci95": [
+            0.20654329147389294,
+            1.0
+          ],
+          "precision_half_resolved": 1.0,
+          "overall_fixed_strict": 0.05,
+          "overall_fixed_strict_ci95": [
+            0.008881219432873136,
+            0.23613589351256675
+          ],
+          "overall_fixed_half": 0.05
+        }
+      }
+    }
+  },
+  "pass_note": "The initial discovery run produced no answer-bearing claims and is excluded from accuracy comparisons. Pass 1 is the earliest answer-producing extraction pass (data/pass2). Pass 2 is the mid-pipeline agent snapshot after targeted re-search (data/pass7); on the conservative identity rubric it answers +3 more claims but changes wording, so the fixed half-credit measure moves +1.7 points before the final loops recover it. Pass 3 is the frozen final pass after the automated loops and the author review.",
+  "movement": {
+    "selected_sample": {
+      "pass1_overall_fixed_half": 0.3416666666666667,
+      "pass3_overall_fixed_half": 0.5666666666666667,
+      "delta_overall_fixed_half": 0.22499999999999998,
+      "pass1_coverage": 0.43333333333333335,
+      "pass3_coverage": 1.0
+    },
+    "random_holdout": {
+      "pass1_overall_fixed_half": 0.2916666666666667,
+      "pass3_overall_fixed_half": 0.5916666666666667,
+      "delta_overall_fixed_half": 0.3,
+      "pass1_coverage": 0.3333333333333333,
+      "pass3_coverage": 1.0
+    }
+  },
+  "movement_note": "First-pass to final movement: selected sample 34% -> 57% (22% points), random holdout 29% -> 59% (30% points). The holdout delta is computed on a separate, seeded sample that was not used to tune the rules.",
+  "wilson_note": "This six-field verification uses 120 claims per pass and reports coverage, resolved precision, and fixed-denominator results on that claim set. The four-field labeled gold is a separate 80-row comparison: its sampled coverage is answered/80 and scoreable coverage excludes the six unresolved gold rows. Do not compare those denominators as if they were the same measure. Wilson intervals are used only for integer-success proportions; no Wilson interval is reported for fractional half-credit.",
+  "loops": [
+    {
+      "id": "i",
+      "name": "Quote-must-appear substring check",
+      "kind": "automated",
+      "artifact": "source_checks_v4.json",
+      "script": "verify_checked_sources.py",
+      "result": "1338/1465 quotes reproduced by direct fetch across 592 URLs"
+    },
+    {
+      "id": "ii",
+      "name": "URL liveness",
+      "kind": "automated",
+      "artifact": "source_checks_v4.json + independent_link_checks_v4.json",
+      "script": "verify_checked_sources.py / check_independent_links_v4.py",
+      "result": "10 non-200 evidence URLs; 4 of 123 independent-review URLs failed before fallback"
+    },
+    {
+      "id": "iii",
+      "name": "Composio catalog auth cross-check",
+      "kind": "automated",
+      "artifact": "catalog_crosscheck.json",
+      "script": "catalog_crosscheck.py",
+      "result": "80/100 apps in catalog; 49 auth disagreements logged"
+    },
+    {
+      "id": "iv",
+      "name": "Independent verifier agent",
+      "kind": "human",
+      "artifact": "independent_review_v4.json + source_review_v4.json",
+      "script": "score_review_v4.py / score_first_pass_v4.py",
+      "result": "reviewer scored both cohorts (60 claims each); source audit kept 133, replaced 2, unresolved 1"
+    },
+    {
+      "id": "v",
+      "name": "Browser fallback for JS-rendered pages",
+      "kind": "automated",
+      "artifact": "source_checks_v4.json (manual_review) + data/browser_source_checks_v4.json",
+      "script": "check_independent_links_v4.py --review",
+      "result": "113 quotes kept after headless-Chromium render; 477 raw-HTML-only matches; 4 independent links browser-verified"
+    },
+    {
+      "id": "vi",
+      "name": "Date / deprecation check",
+      "kind": "automated",
+      "artifact": "checked_dataset_v4.json (published_label) + surprise audit below",
+      "script": "verification_v4.py",
+      "result": "4 reviewed claims flagged as legacy/deprecated/stale in the review notes"
+    }
+  ],
+  "failure_taxonomy": [
+    {
+      "app": "Apify",
+      "field": "api_surface",
+      "final_rating": "partial",
+      "cause": "client vs server MCP confusion",
+      "fixed_by_loop": "iv verifier agent / source audit",
+      "note": "SDK from the Node.js and Python (stable) and other (experimental) apify-client packages. The word REST is partly redacted, but the link target is Wikipedia's REST article and the text says 'HTTP endpoints'. Breadth not stated."
+    },
+    {
+      "app": "Discord",
+      "field": "api_surface",
+      "final_rating": "partial",
+      "cause": "other / unclassified",
+      "fixed_by_loop": "iii Composio catalog cross-check",
+      "note": "WebSocket from the heading 'Gateway (WebSocket) API'. Breadth not stated."
+    },
+    {
+      "app": "GitHub",
+      "field": "api_surface",
+      "final_rating": "partial",
+      "cause": "other / unclassified",
+      "fixed_by_loop": "iii Composio catalog cross-check",
+      "note": "SDK from 'official Octokit libraries'. Breadth is not stated."
+    },
+    {
+      "app": "GitHub",
+      "field": "auth",
+      "final_rating": "partial",
+      "cause": "client vs server MCP confusion",
+      "fixed_by_loop": "iii Composio catalog cross-check",
+      "note": "PATs; OAuth token from an OAuth app; GitHub App tokens. Basic auth (client ID/secret) only for some app endpoints. A JWT is accepted with Bearer. 'Authentication with username and password is not supported.'"
+    },
+    {
+      "app": "Gladly",
+      "field": "api_surface",
+      "final_rating": "partial",
+      "cause": "other / unclassified",
+      "fixed_by_loop": "iv verifier agent / source audit",
+      "note": "SDK from the Web, iOS and Android Chat SDKs. Also lists webhooks, App Platform, Lookup Adaptor. Webhooks are not WebSocket. Breadth not stated."
+    },
+    {
+      "app": "Google Ads",
+      "field": "auth",
+      "final_rating": "partial",
+      "cause": "client vs server MCP confusion",
+      "fixed_by_loop": "iii Composio catalog cross-check",
+      "note": "User authentication section (client ID, secret, refresh token) maps to oauth2 user. Service accounts section generates a 'JWT claim set' exchanged for an access token, mapped to JWT-signed. The label before 'service account flow' is redacted."
+    },
+    {
+      "app": "Google Ads",
+      "field": "credential_gate",
+      "final_rating": "partial",
+      "cause": "incomplete coverage",
+      "fixed_by_loop": "iii Composio catalog cross-check",
+      "note": "Enabling the API grants Test access (test accounts only), but no fee is stated, so 'free' is not assigned. Production: Explorer is an application with 'automated review and approval in most cases'. Basic needs brand verification. Standard needs a manual audit (10 business days)."
+    },
+    {
+      "app": "Lark (Larksuite)",
+      "field": "api_surface",
+      "final_rating": "partial",
+      "cause": "incomplete coverage",
+      "fixed_by_loop": "iii Composio catalog cross-check",
+      "note": "SDK appears only as a navigation item ('Server SDK'). Breadth not stated."
+    },
+    {
+      "app": "Lark (Larksuite)",
+      "field": "credential_gate",
+      "final_rating": "partial",
+      "cause": "other / unclassified",
+      "fixed_by_loop": "iii Composio catalog cross-check",
+      "note": "Custom apps: review-required permissions need tenant admin review, while auto-approval ones take effect immediately. Store apps need Lark platform review plus tenant admin review. Test company or user_access_token debugging skips review, but no cost is stated."
+    },
+    {
+      "app": "Notion",
+      "field": "api_surface",
+      "final_rating": "partial",
+      "cause": "client vs server MCP confusion",
+      "fixed_by_loop": "iv verifier agent / source audit",
+      "note": "Excerpt names the JavaScript SDK, curl, and any HTTPS client. It never calls the API REST, and states no breadth."
+    },
+    {
+      "app": "Reducto",
+      "field": "api_surface",
+      "final_rating": "partial",
+      "cause": "other / unclassified",
+      "fixed_by_loop": "iv verifier agent / source audit",
+      "note": "REST from the 'Fastest path' table row and /parse, /extract endpoints. Breadth not stated."
+    },
+    {
+      "app": "Reducto",
+      "field": "auth",
+      "final_rating": "partial",
+      "cause": "transport reported as method",
+      "fixed_by_loop": "iv verifier agent / source audit",
+      "note": "Key is created in Studio and sent via Authorization Bearer in the cURL example (transport). The MCP login flow ends in a saved API key."
+    },
+    {
+      "app": "Salesforce",
+      "field": "auth",
+      "final_rating": "partial",
+      "cause": "client vs server MCP confusion",
+      "fixed_by_loop": "iii Composio catalog cross-check",
+      "note": "Postman setup via an External Client App with a consumer key and secret. The ECA mentions JWT-based tokens, but the label is partly redacted and it is about token format, so JWT-signed is not assigned."
+    },
+    {
+      "app": "Sentry",
+      "field": "credential_gate",
+      "final_rating": "partial",
+      "cause": "trial treated as free",
+      "fixed_by_loop": "iii Composio catalog cross-check",
+      "note": "Table: API is No on Developer (free) and Yes on Team and above. The Business plan has a 14-day trial 'with no credit card'. Assumes API row equals API credential access."
+    },
+    {
+      "app": "Snowflake",
+      "field": "credential_gate",
+      "final_rating": "partial",
+      "cause": "trial treated as free",
+      "fixed_by_loop": "iii Composio catalog cross-check",
+      "note": "Trial needs only an email (no payment info). A credit card is needed to upgrade to a paid account. The page is about accounts, not specifically tokens or keys."
+    },
+    {
+      "app": "Stripe",
+      "field": "api_surface",
+      "final_rating": "partial",
+      "cause": "client vs server MCP confusion",
+      "fixed_by_loop": "iii Composio catalog cross-check",
+      "note": "SDK from 'official client libraries'. Breadth not stated."
+    },
+    {
+      "app": "Stripe",
+      "field": "auth",
+      "final_rating": "partial",
+      "cause": "transport reported as method",
+      "fixed_by_loop": "iii Composio catalog cross-check",
+      "note": "Keys are sent via HTTP Basic auth (key as username) or Bearer. Workload Identity Federation (short-lived tokens) has no matching label. Basic here is only a transport for the key."
+    },
+    {
+      "app": "Xero",
+      "field": "api_surface",
+      "final_rating": "partial",
+      "cause": "other / unclassified",
+      "fixed_by_loop": "v browser fallback",
+      "note": "Names Accounting, Payroll, Files, Assets APIs, OpenAPI spec, and OAuth 2.0, but the style (REST etc.) and breadth are not stated."
+    },
+    {
+      "app": "Xero",
+      "field": "credential_gate",
+      "final_rating": "partial",
+      "cause": "JS-rendered page empty",
+      "fixed_by_loop": "v browser fallback",
+      "note": "Tier table reads 'No charge' for Starter and $35 AUD for Core, in column order. Certification/security assessment prerequisites are named for higher tiers and for journal/XPM/bulk features, but their values are not shown. Prerequisite cells are empty in the excerpt."
+    },
+    {
+      "app": "YouTube Transcript",
+      "field": "auth",
+      "final_rating": "partial",
+      "cause": "transport reported as method",
+      "fixed_by_loop": "iii Composio catalog cross-check",
+      "note": "The credential is the API key from the dashboard, sent as a Bearer token (transport)."
+    },
+    {
+      "app": "YouTube Transcript",
+      "field": "credential_gate",
+      "final_rating": "partial",
+      "cause": "other / unclassified",
+      "fixed_by_loop": "iii Composio catalog cross-check",
+      "note": "Production: 402 errors with 'no_active_paid_plan' or insufficient credits point to top-up or billing. Internal tension: 100 free credits without a card, yet /youtube/info 'need an active plan'."
+    },
+    {
+      "app": "Zoho CRM",
+      "field": "api_surface",
+      "final_rating": "partial",
+      "cause": "incomplete coverage",
+      "fixed_by_loop": "iii Composio catalog cross-check",
+      "note": "SDK appears only as a navigation item ('Zoho CRM SDKs'). Six API families are listed, but no breadth statement."
+    },
+    {
+      "app": "higgsfield",
+      "field": "auth",
+      "final_rating": "partial",
+      "cause": "transport reported as method",
+      "fixed_by_loop": "iii Composio catalog cross-check",
+      "note": "Key ID plus secret in a 'Key' scheme header, not Bearer."
+    }
+  ],
+  "failure_cause_counts": {
+    "client vs server MCP confusion": 6,
+    "other / unclassified": 7,
+    "incomplete coverage": 3,
+    "transport reported as method": 4,
+    "trial treated as free": 2,
+    "JS-rendered page empty": 1
+  },
+  "surprise_audit": [
+    {
+      "app": "Google Ads",
+      "field": "auth",
+      "claim": [
+        "OAuth 2.0 user authentication flow; scope https://www.googleapis.com/auth/adwords",
+        "OAuth 2.0 service-account flow; scope https://www.googleapis.com/auth/adwords"
+      ],
+      "curated": true,
+      "captured_with_browser": false,
+      "live": {
+        "url": "https://developers.google.com/google-ads/api/rest/auth",
+        "status": null,
+        "reproduced": null,
+        "text_length": null,
+        "error": "HTTPSConnectionPool(host='developers.google.com', port=443): Read timed out. (read timeout=25)"
+      },
+      "miss_reason": null
+    },
+    {
+      "app": "Binance",
+      "field": "auth",
+      "claim": [
+        "Unauthenticated public Spot market-data HTTP/WebSocket endpoints",
+        "Spot signed API key (X-MBX-APIKEY): Ed25519 recommended; RSA supported; HMAC supported but deprecated",
+        "Binance Agentic account authorization for the remote MCP connection"
+      ],
+      "curated": true,
+      "captured_with_browser": false,
+      "live": {
+        "url": "https://developers.binance.com/en/docs/products/spot/faqs/market_data_only.md",
+        "status": 200,
+        "reproduced": true,
+        "text_length": 1065
+      },
+      "miss_reason": null
+    },
+    {
+      "app": "Copper",
+      "field": "official_mcp",
+      "claim": "vendor_server",
+      "curated": true,
+      "captured_with_browser": false,
+      "live": {
+        "url": "https://www.copper.com/mcp",
+        "status": 200,
+        "reproduced": true,
+        "text_length": 3157
+      },
+      "miss_reason": null
+    },
+    {
+      "app": "Zendesk",
+      "field": "official_mcp",
+      "claim": "vendor_server",
+      "curated": true,
+      "captured_with_browser": true,
+      "live": {
+        "url": "https://support.zendesk.com/hc/en-us/articles/11400026079130-Connecting-external-AI-agents-to-the-Zendesk-MCP-server-or-Zendesk-AI-agents-EAP",
+        "status": 200,
+        "reproduced": false,
+        "text_length": 116
+      },
+      "miss_reason": "plain HTTP fetch returned almost no readable text; the page is JS-rendered, so this needs the browser-fallback loop rather than counting as a wrong claim"
+    },
+    {
+      "app": "Pinterest",
+      "field": "official_mcp",
+      "claim": "vendor_server",
+      "curated": true,
+      "captured_with_browser": false,
+      "live": {
+        "url": "https://developers.pinterest.com/about-pinterest-mcp/",
+        "status": 200,
+        "reproduced": false,
+        "text_length": 20
+      },
+      "miss_reason": "plain HTTP fetch returned almost no readable text; the page is JS-rendered, so this needs the browser-fallback loop rather than counting as a wrong claim"
+    },
+    {
+      "app": "Slack",
+      "field": "official_mcp",
+      "claim": "vendor_server",
+      "curated": true,
+      "captured_with_browser": false,
+      "live": {
+        "url": "https://docs.slack.dev/ai/slack-mcp-server/",
+        "status": 200,
+        "reproduced": true,
+        "text_length": 9980
+      },
+      "miss_reason": null
+    },
+    {
+      "app": "QuickBooks",
+      "field": "official_mcp",
+      "claim": "vendor_server",
+      "curated": true,
+      "captured_with_browser": false,
+      "live": {
+        "url": "https://github.com/intuit/quickbooks-online-mcp-server",
+        "status": 200,
+        "reproduced": true,
+        "text_length": 15182
+      },
+      "miss_reason": null
+    },
+    {
+      "app": "Shopify",
+      "field": "official_mcp",
+      "claim": "vendor_server",
+      "curated": true,
+      "captured_with_browser": false,
+      "live": {
+        "url": "https://shopify.dev/docs/api/ai-toolkit",
+        "status": 200,
+        "reproduced": true,
+        "text_length": 5485
+      },
+      "miss_reason": null
+    },
+    {
+      "app": "Gladly",
+      "field": "official_mcp",
+      "claim": "vendor_server",
+      "curated": true,
+      "captured_with_browser": false,
+      "live": {
+        "url": "https://help.gladly.com/docs/set-up-the-gladly-mcp-for-claude",
+        "status": 200,
+        "reproduced": true,
+        "text_length": 5321
+      },
+      "miss_reason": null
+    },
+    {
+      "app": "fanbasis",
+      "field": "verdict",
+      "claim": "unknown",
+      "curated": true,
+      "captured_with_browser": false,
+      "live": {
+        "url": "https://commas.com/fanbasis-is-now-commas",
+        "status": 200,
+        "reproduced": true,
+        "text_length": 3980
+      },
+      "miss_reason": null
+    }
+  ],
+  "surprise_note": "The ten claims were chosen by judgment to match the assignment's named surprises, then topped up from a keyword scan (sunset, beta, EAP, rename, deprecated, prelaunch, limited, marketplace) over the checked evidence. Claim values are read from checked_dataset_v4.json; each was re-fetched live on 2026-11-24.",
+  "curated_surprises": [
+    "Google Ads",
+    "Binance",
+    "Copper",
+    "Zendesk",
+    "Pinterest",
+    "Slack",
+    "QuickBooks",
+    "Shopify",
+    "Gladly",
+    "fanbasis"
+  ]
+}
