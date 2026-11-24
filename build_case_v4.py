@@ -15,6 +15,8 @@ actor_attribution = attribution_view.derive_attribution(ROOT)
 actor_attribution_html = attribution_view.render_html(actor_attribution)
 actor_attribution_readme = attribution_view.render_readme(actor_attribution)
 apps = json.loads((ROOT / 'checked_dataset_v4.json').read_text(encoding='utf-8'))
+demo_sample_text = (ROOT / 'run_submission_demo_sample_v4.json').read_text(encoding='utf-8').strip()
+demo_sample = json.loads(demo_sample_text)
 summary = json.loads((ROOT / 'research_summary_v4.json').read_text(encoding='utf-8'))
 independent = json.loads((ROOT / 'independent_review_v4.json').read_text(encoding='utf-8'))
 first_pass = json.loads((ROOT / 'first_pass_review_v4.json').read_text(encoding='utf-8'))
@@ -749,7 +751,7 @@ page = page.replace(
     'I built an agent-led pipeline to research __APP_COUNT__ apps, then reviewed classifications and a documentation-status sample. Every claim below links to the first-party source used.')
 page = page.replace(
     '<a href="#evidence">Explore __APP_COUNT__ apps ↓</a>',
-    '<div class="hero-links"><a href="#evidence">Explore __APP_COUNT__ apps ↓</a><a href="#demo">Run the demo</a><a href="run_submission_demo_sample_v4.json">View captured output</a></div>')
+    '<div class="hero-links"><a href="#evidence">Explore __APP_COUNT__ apps ↓</a><a href="#demo">Run the demo</a><a href="#captured-output">View captured output</a></div>')
 page = page.replace(
     '</div></div></header><main>',
     '</div></div><div class="cards conclusion-cards">__CONCLUSION_CARDS__</div></header><main>', 1)
@@ -764,7 +766,7 @@ page = page.replace(
     '<details><summary>Production-gate categories: __PRODUCTION_GATE_TOTAL__ gates across __CATEGORY_COUNT__ categories; the named four account for __FOCUS_GATED__</summary><p>Category shares are calculated from normalized prototype/production rows; the earlier estimate did not reconcile with app-level fields.</p>__CATEGORY_GATE_LIST__</details><details><summary>Prototype-to-production migration: __DROP_COUNT__ apps</summary>__DROP_LIST__</details><details><summary>Top __BROADER_COUNT__ research-broader auth cross-checks</summary>__BROADER_APPS__</details>')
 page = page.replace(
     '<h3>Runnable proof</h3><pre>python run_submission_demo_v4.py\npython run_pipeline.py --mode offline --app "Google Ads"\npython run_pipeline.py --mode live --app "Google Ads"</pre><p>The combined live command collects fresh evidence and separately revalidates the existing checked record; newly collected material still needs manual review. <code>run_one.py</code> only revalidates a saved checked record. Captured offline output: <a href="run_submission_demo_sample_v4.json">Google Ads demo sample</a>. The full source, saved passes, review logs and validation reports are in the <a href="__REPO__">source repository</a>. You can also export the checked JSON or CSV from the evidence table below.</p>',
-    '<h3 id="demo">Runnable proof</h3><p><a href="__REPO__#readme">Setup and README</a> · Offline demo first; no credentials required.</p><pre>python run_submission_demo_v4.py\npython run_pipeline.py --mode offline --app "Google Ads"</pre><p><a href="run_submission_demo_sample_v4.json">View captured Google Ads output</a>.</p><p><b>Live mode requires configuration.</b> It collects fresh evidence; manually review new evidence before relying on it. <code>run_one.py</code> revalidates an existing checked record; use <code>run_pipeline.py</code> for combined collection and saved-claim revalidation.</p><pre>python run_pipeline.py --mode live --app "Google Ads"</pre><p>The full source, saved passes, review logs and validation reports are in the <a href="__REPO__">source repository</a>. You can also export the checked JSON or CSV from the evidence table below.</p>')
+    '<h3 id="demo">Runnable proof</h3><p><a href="__REPO__#readme">Setup and README</a> · Offline demo first; no credentials required.</p><pre>python run_submission_demo_v4.py\npython run_pipeline.py --mode offline --app "Google Ads"</pre><p><b>Live mode requires configuration.</b> It collects fresh evidence; manually review new evidence before relying on it. <code>run_one.py</code> revalidates an existing checked record; use <code>run_pipeline.py</code> for combined collection and saved-claim revalidation.</p><pre>python run_pipeline.py --mode live --app "Google Ads"</pre><p>The full source, saved passes, review logs and validation reports are in the <a href="__REPO__">source repository</a>. You can also export the checked JSON or CSV from the evidence table below.</p><section class="captured-output" id="captured-output"><h3>Captured offline output · Google Ads</h3><p>This is the saved result of the offline demo: it checks existing research and the saved Composio catalog snapshot without making network requests. It is not fresh live research. <a href="run_submission_demo_sample_v4.json" download>Download the JSON file</a>.</p><pre>__DEMO_CAPTURED_OUTPUT__</pre></section>')
 page = page.replace('<section><div class="kicker">04 / Accuracy lab</div>', '<section id="accuracy"><div class="kicker">04 / Accuracy lab</div>')
 page = page.replace('<div class="notice"><b>__HAND_FIELD_COUNT__ labeled fields:', '__ACCURACY_SUMMARY__<div class="notice"><b>__HAND_FIELD_COUNT__ labeled fields:', 1)
 page = page.replace(
@@ -901,6 +903,7 @@ replacements = {
     '__SDK_LISTED__': sdk_check['listed_claims'], '__SDK_NOT_LISTED__': sdk_check['not_listed_claims'],
     '__SDK_AGREEMENT__': f"{sdk_check['listing_agreement']}/{sdk_check['apps_checked']}",
     '__SDK_TOOLS_COMPARED__': sdk_check['tools_compared'], '__SDK_TOOLS_MATCH__': sdk_check['tools_match'],
+    '__DEMO_CAPTURED_OUTPUT__': html.escape(json.dumps(demo_sample, ensure_ascii=False, indent=2), quote=False),
 }
 actor_insert_before = '<section id="accuracy"><div class="kicker">04 / Accuracy lab'
 assert page.count(actor_insert_before) == 1
