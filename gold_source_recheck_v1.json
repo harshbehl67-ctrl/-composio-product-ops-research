@@ -212,5 +212,5 @@
       "source": "https://open.larksuite.com/document/uAjLw4CM/ukTMukTMukTM/mcp_integration/mcp_installation"
     }
   ],
-  "provenance_limit": "This source re-check was performed by an AI assistant, after the gold labels were visible, and is not a blinded independent annotation or a human check. It cannot establish labeler identity, prior-chat contamination, or historical truth at the frozen-excerpt date. human_log.json contains earlier Google Ads auth/access decisions for an app in the gold set; merge_gold_labels.py copies only private/labels_returned.csv and does not mechanically merge human_log.json, but no labeler/session identity record proves those earlier decisions were excluded from the labeling process."
+  "provenance_limit": "This source re-check was performed by an AI assistant, after the gold labels were visible, and is not a blinded independent annotation or a human check. It cannot establish labeler identity, prior-chat contamination, or historical truth at the frozen-excerpt date. The workspace author-review log contains earlier Google Ads auth/access decisions for an app in the gold set; The workspace merge procedure copies a separate returned-label CSV by row ID and does not mechanically merge the author-review log, but no labeler/session identity record proves those earlier decisions were excluded from the labeling process."
 }
