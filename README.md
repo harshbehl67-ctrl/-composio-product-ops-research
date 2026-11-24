@@ -34,15 +34,12 @@ python run_submission_demo_v4.py
 
 The deterministic offline output is captured in `run_submission_demo_sample_v4.json`. For a live single-app research run, configure `COMPOSIO_API_KEY` in a local `.env` file and use `python run_one.py --app "Stripe"`. Do not commit `.env`; it is ignored by Git.
 
-## Reproduce
+## Reproduce the offline demo
 
-Python 3.10+ and Node.js 18+ are required. Install Python dependencies with `python -m pip install -r requirements.txt`.
+Python 3.10+ is required. Install dependencies with `python -m pip install -r requirements.txt`, then run:
 
 ```bash
-python build_case_v4.py
-python -m unittest discover -v
-node test_page_v4.cjs
-python scan_secrets.py
+python run_submission_demo_v4.py
 ```
 
-The page generator derives counts from `checked_dataset_v4.json`, the access labels, and saved gold-scoring outputs. Source excerpts and detailed research files are retained in the repository; review the staged file list before publishing.
+This runs the Google Ads example against saved evidence and the saved Composio catalog snapshot, with no network requests or credentials. The captured output is in `run_submission_demo_sample_v4.json`. The published `index.html` is self-contained. Rebuilding the research page requires the full local audit inputs and is not needed to run this demo.
