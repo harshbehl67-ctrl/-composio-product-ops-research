@@ -1,0 +1,2478 @@
+{
+  "source": "https://backend.composio.dev/api/v3/toolkits",
+  "fetched_at": "2026-11-24",
+  "apps": 100,
+  "in_composio": 80,
+  "not_in_composio": 20,
+  "records": [
+    {
+      "app": "Salesforce",
+      "category": "CRM and Sales",
+      "claim": "listed_exact",
+      "slug_candidates": [
+        "SALESFORCE"
+      ],
+      "slug_tried": "SALESFORCE",
+      "http_status": 200,
+      "in_composio": true,
+      "composio_slug": "salesforce",
+      "auth_schemes": [
+        "OAUTH2",
+        "S2S_OAUTH2"
+      ],
+      "composio_managed_auth_schemes": [
+        "OAUTH2"
+      ],
+      "no_auth": false,
+      "auth_guide_url": null,
+      "base_url": "https://login.salesforce.com/services/data/v67.0",
+      "enabled": true,
+      "toolkit_type": "api",
+      "tools_count": 556,
+      "triggers_count": 7,
+      "fetched_at": "2026-11-24"
+    },
+    {
+      "app": "HubSpot",
+      "category": "CRM and Sales",
+      "claim": "listed_exact",
+      "slug_candidates": [
+        "HUBSPOT"
+      ],
+      "slug_tried": "HUBSPOT",
+      "http_status": 200,
+      "in_composio": true,
+      "composio_slug": "hubspot",
+      "auth_schemes": [
+        "API_KEY",
+        "OAUTH2"
+      ],
+      "composio_managed_auth_schemes": [
+        "OAUTH2"
+      ],
+      "no_auth": false,
+      "auth_guide_url": null,
+      "base_url": "https://api.hubapi.com",
+      "enabled": true,
+      "toolkit_type": "api",
+      "tools_count": 354,
+      "triggers_count": 2,
+      "fetched_at": "2026-11-24"
+    },
+    {
+      "app": "Pipedrive",
+      "category": "CRM and Sales",
+      "claim": "listed_exact",
+      "slug_candidates": [
+        "PIPEDRIVE"
+      ],
+      "slug_tried": "PIPEDRIVE",
+      "http_status": 200,
+      "in_composio": true,
+      "composio_slug": "pipedrive",
+      "auth_schemes": [
+        "API_KEY",
+        "OAUTH2"
+      ],
+      "composio_managed_auth_schemes": [],
+      "no_auth": false,
+      "auth_guide_url": null,
+      "base_url": "https://{{subdomain}}.pipedrive.com/v1",
+      "enabled": true,
+      "toolkit_type": "api",
+      "tools_count": 404,
+      "triggers_count": 3,
+      "fetched_at": "2026-11-24"
+    },
+    {
+      "app": "Attio",
+      "category": "CRM and Sales",
+      "claim": "listed_exact",
+      "slug_candidates": [
+        "ATTIO"
+      ],
+      "slug_tried": "ATTIO",
+      "http_status": 200,
+      "in_composio": true,
+      "composio_slug": "attio",
+      "auth_schemes": [
+        "OAUTH2"
+      ],
+      "composio_managed_auth_schemes": [
+        "OAUTH2"
+      ],
+      "no_auth": false,
+      "auth_guide_url": null,
+      "base_url": "https://api.attio.com/v2",
+      "enabled": true,
+      "toolkit_type": "api",
+      "tools_count": 105,
+      "triggers_count": 0,
+      "fetched_at": "2026-11-24"
+    },
+    {
+      "app": "Twenty",
+      "category": "CRM and Sales",
+      "claim": "listed_exact",
+      "slug_candidates": [
+        "TWENTY"
+      ],
+      "slug_tried": "TWENTY",
+      "http_status": 200,
+      "in_composio": true,
+      "composio_slug": "twenty",
+      "auth_schemes": [
+        "API_KEY"
+      ],
+      "composio_managed_auth_schemes": [],
+      "no_auth": false,
+      "auth_guide_url": null,
+      "base_url": "https://api.twenty.com/rest",
+      "enabled": true,
+      "toolkit_type": "api",
+      "tools_count": 23,
+      "triggers_count": 0,
+      "fetched_at": "2026-11-24"
+    },
+    {
+      "app": "Podio",
+      "category": "CRM and Sales",
+      "claim": "listed_exact",
+      "slug_candidates": [
+        "PODIO"
+      ],
+      "slug_tried": "PODIO",
+      "http_status": 200,
+      "in_composio": true,
+      "composio_slug": "podio",
+      "auth_schemes": [
+        "OAUTH2"
+      ],
+      "composio_managed_auth_schemes": [],
+      "no_auth": false,
+      "auth_guide_url": null,
+      "base_url": "https://api.podio.com",
+      "enabled": true,
+      "toolkit_type": "api",
+      "tools_count": 143,
+      "triggers_count": 0,
+      "fetched_at": "2026-11-24"
+    },
+    {
+      "app": "Zoho CRM",
+      "category": "CRM and Sales",
+      "claim": "listed_alias",
+      "slug_candidates": [
+        "ZOHO",
+        "ZOHOCRM"
+      ],
+      "slug_tried": "ZOHO",
+      "http_status": 200,
+      "in_composio": true,
+      "composio_slug": "zoho",
+      "auth_schemes": [
+        "OAUTH2"
+      ],
+      "composio_managed_auth_schemes": [
+        "OAUTH2"
+      ],
+      "no_auth": false,
+      "auth_guide_url": null,
+      "base_url": "https://www.zohoapis.com",
+      "enabled": true,
+      "toolkit_type": "api",
+      "tools_count": 115,
+      "triggers_count": 0,
+      "fetched_at": "2026-11-24"
+    },
+    {
+      "app": "Close",
+      "category": "CRM and Sales",
+      "claim": "listed_exact",
+      "slug_candidates": [
+        "CLOSE"
+      ],
+      "slug_tried": "CLOSE",
+      "http_status": 200,
+      "in_composio": true,
+      "composio_slug": "close",
+      "auth_schemes": [
+        "API_KEY"
+      ],
+      "composio_managed_auth_schemes": [],
+      "no_auth": false,
+      "auth_guide_url": null,
+      "base_url": "https://api.close.com/api/v1",
+      "enabled": true,
+      "toolkit_type": "api",
+      "tools_count": 75,
+      "triggers_count": 45,
+      "fetched_at": "2026-11-24"
+    },
+    {
+      "app": "Copper",
+      "category": "CRM and Sales",
+      "claim": "listed_exact",
+      "slug_candidates": [
+        "COPPER"
+      ],
+      "slug_tried": "COPPER",
+      "http_status": 200,
+      "in_composio": true,
+      "composio_slug": "copper",
+      "auth_schemes": [
+        "API_KEY"
+      ],
+      "composio_managed_auth_schemes": [],
+      "no_auth": false,
+      "auth_guide_url": null,
+      "base_url": "https://api.copper.com/developer_api/v1",
+      "enabled": true,
+      "toolkit_type": "api",
+      "tools_count": 65,
+      "triggers_count": 0,
+      "fetched_at": "2026-11-24"
+    },
+    {
+      "app": "DealCloud",
+      "category": "CRM and Sales",
+      "claim": "not_listed",
+      "slug_candidates": [
+        "DEALCLOUD"
+      ],
+      "slug_tried": "DEALCLOUD",
+      "http_status": 404,
+      "in_composio": false,
+      "composio_slug": null,
+      "auth_schemes": [],
+      "composio_managed_auth_schemes": [],
+      "no_auth": null,
+      "auth_guide_url": null,
+      "base_url": null,
+      "enabled": null,
+      "toolkit_type": null,
+      "tools_count": null,
+      "triggers_count": null,
+      "fetched_at": "2026-11-24"
+    },
+    {
+      "app": "Zendesk",
+      "category": "Support and Helpdesk",
+      "claim": "listed_exact",
+      "slug_candidates": [
+        "ZENDESK"
+      ],
+      "slug_tried": "ZENDESK",
+      "http_status": 200,
+      "in_composio": true,
+      "composio_slug": "zendesk",
+      "auth_schemes": [
+        "OAUTH2"
+      ],
+      "composio_managed_auth_schemes": [
+        "OAUTH2"
+      ],
+      "no_auth": false,
+      "auth_guide_url": null,
+      "base_url": "https://{{subdomain}}.zendesk.com",
+      "enabled": true,
+      "toolkit_type": "api",
+      "tools_count": 483,
+      "triggers_count": 2,
+      "fetched_at": "2026-11-24"
+    },
+    {
+      "app": "Intercom",
+      "category": "Support and Helpdesk",
+      "claim": "listed_exact",
+      "slug_candidates": [
+        "INTERCOM"
+      ],
+      "slug_tried": "INTERCOM",
+      "http_status": 200,
+      "in_composio": true,
+      "composio_slug": "intercom",
+      "auth_schemes": [
+        "OAUTH2"
+      ],
+      "composio_managed_auth_schemes": [
+        "OAUTH2"
+      ],
+      "no_auth": false,
+      "auth_guide_url": null,
+      "base_url": "https://api.intercom.io",
+      "enabled": true,
+      "toolkit_type": "api",
+      "tools_count": 138,
+      "triggers_count": 0,
+      "fetched_at": "2026-11-24"
+    },
+    {
+      "app": "Freshdesk",
+      "category": "Support and Helpdesk",
+      "claim": "listed_exact",
+      "slug_candidates": [
+        "FRESHDESK"
+      ],
+      "slug_tried": "FRESHDESK",
+      "http_status": 200,
+      "in_composio": true,
+      "composio_slug": "freshdesk",
+      "auth_schemes": [
+        "API_KEY"
+      ],
+      "composio_managed_auth_schemes": [],
+      "no_auth": false,
+      "auth_guide_url": null,
+      "base_url": "https://{{subdomain}}.freshdesk.com/api/v2",
+      "enabled": true,
+      "toolkit_type": "api",
+      "tools_count": 184,
+      "triggers_count": 0,
+      "fetched_at": "2026-11-24"
+    },
+    {
+      "app": "Front",
+      "category": "Support and Helpdesk",
+      "claim": "listed_exact",
+      "slug_candidates": [
+        "FRONT"
+      ],
+      "slug_tried": "FRONT",
+      "http_status": 200,
+      "in_composio": true,
+      "composio_slug": "front",
+      "auth_schemes": [
+        "API_KEY",
+        "OAUTH2"
+      ],
+      "composio_managed_auth_schemes": [],
+      "no_auth": false,
+      "auth_guide_url": null,
+      "base_url": "https://api2.frontapp.com",
+      "enabled": true,
+      "toolkit_type": "api",
+      "tools_count": 180,
+      "triggers_count": 0,
+      "fetched_at": "2026-11-24"
+    },
+    {
+      "app": "Pylon",
+      "category": "Support and Helpdesk",
+      "claim": "listed_alias",
+      "slug_candidates": [
+        "PYLON_MCP",
+        "PYLON"
+      ],
+      "slug_tried": "PYLON_MCP",
+      "http_status": 200,
+      "in_composio": true,
+      "composio_slug": "pylon_mcp",
+      "auth_schemes": [
+        "DCR_OAUTH"
+      ],
+      "composio_managed_auth_schemes": [],
+      "no_auth": false,
+      "auth_guide_url": null,
+      "base_url": "https://usepylon.com",
+      "enabled": true,
+      "toolkit_type": "mcp",
+      "tools_count": 12,
+      "triggers_count": 0,
+      "fetched_at": "2026-11-24"
+    },
+    {
+      "app": "LiveAgent",
+      "category": "Support and Helpdesk",
+      "claim": "not_listed",
+      "slug_candidates": [
+        "LIVEAGENT"
+      ],
+      "slug_tried": "LIVEAGENT",
+      "http_status": 404,
+      "in_composio": false,
+      "composio_slug": null,
+      "auth_schemes": [],
+      "composio_managed_auth_schemes": [],
+      "no_auth": null,
+      "auth_guide_url": null,
+      "base_url": null,
+      "enabled": null,
+      "toolkit_type": null,
+      "tools_count": null,
+      "triggers_count": null,
+      "fetched_at": "2026-11-24"
+    },
+    {
+      "app": "Plain",
+      "category": "Support and Helpdesk",
+      "claim": "listed_exact",
+      "slug_candidates": [
+        "PLAIN"
+      ],
+      "slug_tried": "PLAIN",
+      "http_status": 200,
+      "in_composio": true,
+      "composio_slug": "plain",
+      "auth_schemes": [
+        "API_KEY"
+      ],
+      "composio_managed_auth_schemes": [],
+      "no_auth": false,
+      "auth_guide_url": null,
+      "base_url": "https://core-api.uk.plain.com/graphql/v1",
+      "enabled": true,
+      "toolkit_type": "api",
+      "tools_count": 119,
+      "triggers_count": 11,
+      "fetched_at": "2026-11-24"
+    },
+    {
+      "app": "Help Scout",
+      "category": "Support and Helpdesk",
+      "claim": "listed_exact",
+      "slug_candidates": [
+        "HELP_SCOUT",
+        "HELPSCOUT"
+      ],
+      "slug_tried": "HELP_SCOUT",
+      "http_status": 200,
+      "in_composio": true,
+      "composio_slug": "help_scout",
+      "auth_schemes": [
+        "OAUTH2"
+      ],
+      "composio_managed_auth_schemes": [],
+      "no_auth": false,
+      "auth_guide_url": null,
+      "base_url": "https://api.helpscout.net/v2",
+      "enabled": true,
+      "toolkit_type": "api",
+      "tools_count": 129,
+      "triggers_count": 0,
+      "fetched_at": "2026-11-24"
+    },
+    {
+      "app": "Gorgias",
+      "category": "Support and Helpdesk",
+      "claim": "listed_exact",
+      "slug_candidates": [
+        "GORGIAS"
+      ],
+      "slug_tried": "GORGIAS",
+      "http_status": 200,
+      "in_composio": true,
+      "composio_slug": "gorgias",
+      "auth_schemes": [
+        "API_KEY",
+        "OAUTH2"
+      ],
+      "composio_managed_auth_schemes": [
+        "OAUTH2"
+      ],
+      "no_auth": false,
+      "auth_guide_url": null,
+      "base_url": "https://{{subdomain}}.gorgias.com",
+      "enabled": true,
+      "toolkit_type": "api",
+      "tools_count": 51,
+      "triggers_count": 0,
+      "fetched_at": "2026-11-24"
+    },
+    {
+      "app": "Gladly",
+      "category": "Support and Helpdesk",
+      "claim": "not_listed",
+      "slug_candidates": [
+        "GLADLY"
+      ],
+      "slug_tried": "GLADLY",
+      "http_status": 404,
+      "in_composio": false,
+      "composio_slug": null,
+      "auth_schemes": [],
+      "composio_managed_auth_schemes": [],
+      "no_auth": null,
+      "auth_guide_url": null,
+      "base_url": null,
+      "enabled": null,
+      "toolkit_type": null,
+      "tools_count": null,
+      "triggers_count": null,
+      "fetched_at": "2026-11-24"
+    },
+    {
+      "app": "Slack",
+      "category": "Communications and Messaging",
+      "claim": "listed_exact",
+      "slug_candidates": [
+        "SLACK"
+      ],
+      "slug_tried": "SLACK",
+      "http_status": 200,
+      "in_composio": true,
+      "composio_slug": "slack",
+      "auth_schemes": [
+        "OAUTH2"
+      ],
+      "composio_managed_auth_schemes": [
+        "OAUTH2"
+      ],
+      "no_auth": false,
+      "auth_guide_url": null,
+      "base_url": "https://slack.com/api",
+      "enabled": true,
+      "toolkit_type": "api",
+      "tools_count": 165,
+      "triggers_count": 9,
+      "fetched_at": "2026-11-24"
+    },
+    {
+      "app": "Twilio",
+      "category": "Communications and Messaging",
+      "claim": "listed_exact",
+      "slug_candidates": [
+        "TWILIO"
+      ],
+      "slug_tried": "TWILIO",
+      "http_status": 200,
+      "in_composio": true,
+      "composio_slug": "twilio",
+      "auth_schemes": [
+        "API_KEY",
+        "BASIC",
+        "S2S_OAUTH2"
+      ],
+      "composio_managed_auth_schemes": [],
+      "no_auth": false,
+      "auth_guide_url": null,
+      "base_url": "https://api.twilio.com",
+      "enabled": true,
+      "toolkit_type": "api",
+      "tools_count": 452,
+      "triggers_count": 45,
+      "fetched_at": "2026-11-24"
+    },
+    {
+      "app": "Zoho Cliq",
+      "category": "Communications and Messaging",
+      "claim": "listed_exact",
+      "slug_candidates": [
+        "ZOHO_CLIQ",
+        "ZOHOCLIQ"
+      ],
+      "slug_tried": "ZOHO_CLIQ",
+      "http_status": 200,
+      "in_composio": true,
+      "composio_slug": "zoho_cliq",
+      "auth_schemes": [
+        "OAUTH2"
+      ],
+      "composio_managed_auth_schemes": [],
+      "no_auth": false,
+      "auth_guide_url": null,
+      "base_url": "https://cliq.zoho.com/api/v2",
+      "enabled": true,
+      "toolkit_type": "api",
+      "tools_count": 162,
+      "triggers_count": 0,
+      "fetched_at": "2026-11-24"
+    },
+    {
+      "app": "Lark (Larksuite)",
+      "category": "Communications and Messaging",
+      "claim": "listed_alias",
+      "slug_candidates": [
+        "LARK",
+        "LARKLARKSUITE"
+      ],
+      "slug_tried": "LARK",
+      "http_status": 200,
+      "in_composio": true,
+      "composio_slug": "lark",
+      "auth_schemes": [
+        "OAUTH2"
+      ],
+      "composio_managed_auth_schemes": [],
+      "no_auth": false,
+      "auth_guide_url": null,
+      "base_url": "https://open.larksuite.com/open-apis",
+      "enabled": true,
+      "toolkit_type": "api",
+      "tools_count": 451,
+      "triggers_count": 0,
+      "fetched_at": "2026-11-24"
+    },
+    {
+      "app": "Pumble",
+      "category": "Communications and Messaging",
+      "claim": "listed_exact",
+      "slug_candidates": [
+        "PUMBLE"
+      ],
+      "slug_tried": "PUMBLE",
+      "http_status": 200,
+      "in_composio": true,
+      "composio_slug": "pumble",
+      "auth_schemes": [
+        "API_KEY"
+      ],
+      "composio_managed_auth_schemes": [],
+      "no_auth": false,
+      "auth_guide_url": null,
+      "base_url": "https://pumble-api-keys.addons.marketplace.cake.com",
+      "enabled": true,
+      "toolkit_type": "api",
+      "tools_count": 9,
+      "triggers_count": 0,
+      "fetched_at": "2026-11-24"
+    },
+    {
+      "app": "Discord",
+      "category": "Communications and Messaging",
+      "claim": "listed_exact",
+      "slug_candidates": [
+        "DISCORD"
+      ],
+      "slug_tried": "DISCORD",
+      "http_status": 200,
+      "in_composio": true,
+      "composio_slug": "discord",
+      "auth_schemes": [
+        "OAUTH2"
+      ],
+      "composio_managed_auth_schemes": [
+        "OAUTH2"
+      ],
+      "no_auth": false,
+      "auth_guide_url": null,
+      "base_url": "https://discord.com/api/v10",
+      "enabled": true,
+      "toolkit_type": "api",
+      "tools_count": 23,
+      "triggers_count": 1,
+      "fetched_at": "2026-11-24"
+    },
+    {
+      "app": "Telegram",
+      "category": "Communications and Messaging",
+      "claim": "listed_exact",
+      "slug_candidates": [
+        "TELEGRAM"
+      ],
+      "slug_tried": "TELEGRAM",
+      "http_status": 200,
+      "in_composio": true,
+      "composio_slug": "telegram",
+      "auth_schemes": [
+        "API_KEY"
+      ],
+      "composio_managed_auth_schemes": [],
+      "no_auth": false,
+      "auth_guide_url": null,
+      "base_url": "https://api.telegram.org",
+      "enabled": true,
+      "toolkit_type": "api",
+      "tools_count": 18,
+      "triggers_count": 0,
+      "fetched_at": "2026-11-24"
+    },
+    {
+      "app": "WhatsApp Business",
+      "category": "Communications and Messaging",
+      "claim": "listed_alias",
+      "slug_candidates": [
+        "WHATSAPP",
+        "WHATSAPPBUSINESS"
+      ],
+      "slug_tried": "WHATSAPP",
+      "http_status": 200,
+      "in_composio": true,
+      "composio_slug": "whatsapp",
+      "auth_schemes": [
+        "API_KEY",
+        "OAUTH2"
+      ],
+      "composio_managed_auth_schemes": [
+        "OAUTH2"
+      ],
+      "no_auth": false,
+      "auth_guide_url": null,
+      "base_url": "https://graph.facebook.com/v22.0",
+      "enabled": true,
+      "toolkit_type": "api",
+      "tools_count": 127,
+      "triggers_count": 1,
+      "fetched_at": "2026-11-24"
+    },
+    {
+      "app": "Aircall",
+      "category": "Communications and Messaging",
+      "claim": "listed_exact",
+      "slug_candidates": [
+        "AIRCALL"
+      ],
+      "slug_tried": "AIRCALL",
+      "http_status": 200,
+      "in_composio": true,
+      "composio_slug": "aircall",
+      "auth_schemes": [
+        "BASIC",
+        "OAUTH2"
+      ],
+      "composio_managed_auth_schemes": [
+        "OAUTH2"
+      ],
+      "no_auth": false,
+      "auth_guide_url": null,
+      "base_url": "https://api.aircall.io/v1",
+      "enabled": true,
+      "toolkit_type": "api",
+      "tools_count": 48,
+      "triggers_count": 0,
+      "fetched_at": "2026-11-24"
+    },
+    {
+      "app": "Vonage",
+      "category": "Communications and Messaging",
+      "claim": "not_listed",
+      "slug_candidates": [
+        "VONAGE"
+      ],
+      "slug_tried": "VONAGE",
+      "http_status": 404,
+      "in_composio": false,
+      "composio_slug": null,
+      "auth_schemes": [],
+      "composio_managed_auth_schemes": [],
+      "no_auth": null,
+      "auth_guide_url": null,
+      "base_url": null,
+      "enabled": null,
+      "toolkit_type": null,
+      "tools_count": null,
+      "triggers_count": null,
+      "fetched_at": "2026-11-24"
+    },
+    {
+      "app": "Google Ads",
+      "category": "Marketing, Ads, Email and Social",
+      "claim": "listed_exact",
+      "slug_candidates": [
+        "GOOGLEADS"
+      ],
+      "slug_tried": "GOOGLEADS",
+      "http_status": 200,
+      "in_composio": true,
+      "composio_slug": "googleads",
+      "auth_schemes": [
+        "OAUTH2"
+      ],
+      "composio_managed_auth_schemes": [
+        "OAUTH2"
+      ],
+      "no_auth": false,
+      "auth_guide_url": null,
+      "base_url": "https://googleads.googleapis.com",
+      "enabled": true,
+      "toolkit_type": "api",
+      "tools_count": 78,
+      "triggers_count": 0,
+      "fetched_at": "2026-11-24"
+    },
+    {
+      "app": "Meta Ads",
+      "category": "Marketing, Ads, Email and Social",
+      "claim": "listed_exact",
+      "slug_candidates": [
+        "METAADS"
+      ],
+      "slug_tried": "METAADS",
+      "http_status": 200,
+      "in_composio": true,
+      "composio_slug": "metaads",
+      "auth_schemes": [
+        "API_KEY",
+        "OAUTH2"
+      ],
+      "composio_managed_auth_schemes": [
+        "OAUTH2"
+      ],
+      "no_auth": false,
+      "auth_guide_url": null,
+      "base_url": "https://graph.facebook.com/v26.0",
+      "enabled": true,
+      "toolkit_type": "api",
+      "tools_count": 99,
+      "triggers_count": 0,
+      "fetched_at": "2026-11-24"
+    },
+    {
+      "app": "LinkedIn Ads",
+      "category": "Marketing, Ads, Email and Social",
+      "claim": "listed_exact",
+      "slug_candidates": [
+        "LINKEDIN_ADS",
+        "LINKEDINADS"
+      ],
+      "slug_tried": "LINKEDIN_ADS",
+      "http_status": 200,
+      "in_composio": true,
+      "composio_slug": "linkedin_ads",
+      "auth_schemes": [
+        "OAUTH2"
+      ],
+      "composio_managed_auth_schemes": [],
+      "no_auth": false,
+      "auth_guide_url": null,
+      "base_url": "https://api.linkedin.com/v2",
+      "enabled": true,
+      "toolkit_type": "api",
+      "tools_count": 28,
+      "triggers_count": 0,
+      "fetched_at": "2026-11-24"
+    },
+    {
+      "app": "GoHighLevel",
+      "category": "Marketing, Ads, Email and Social",
+      "claim": "listed_alias",
+      "slug_candidates": [
+        "HIGHLEVEL_LOCATION",
+        "GOHIGHLEVEL"
+      ],
+      "slug_tried": "HIGHLEVEL_LOCATION",
+      "http_status": 200,
+      "in_composio": true,
+      "composio_slug": "highlevel_location",
+      "auth_schemes": [
+        "BEARER_TOKEN",
+        "OAUTH2"
+      ],
+      "composio_managed_auth_schemes": [],
+      "no_auth": false,
+      "auth_guide_url": null,
+      "base_url": "https://services.leadconnectorhq.com",
+      "enabled": true,
+      "toolkit_type": "api",
+      "tools_count": 554,
+      "triggers_count": 0,
+      "fetched_at": "2026-11-24"
+    },
+    {
+      "app": "Mailchimp",
+      "category": "Marketing, Ads, Email and Social",
+      "claim": "listed_exact",
+      "slug_candidates": [
+        "MAILCHIMP"
+      ],
+      "slug_tried": "MAILCHIMP",
+      "http_status": 200,
+      "in_composio": true,
+      "composio_slug": "mailchimp",
+      "auth_schemes": [
+        "OAUTH2"
+      ],
+      "composio_managed_auth_schemes": [
+        "OAUTH2"
+      ],
+      "no_auth": false,
+      "auth_guide_url": null,
+      "base_url": "https://{{subdomain}}.api.mailchimp.com/3.0",
+      "enabled": true,
+      "toolkit_type": "api",
+      "tools_count": 275,
+      "triggers_count": 4,
+      "fetched_at": "2026-11-24"
+    },
+    {
+      "app": "Klaviyo",
+      "category": "Marketing, Ads, Email and Social",
+      "claim": "listed_exact",
+      "slug_candidates": [
+        "KLAVIYO"
+      ],
+      "slug_tried": "KLAVIYO",
+      "http_status": 200,
+      "in_composio": true,
+      "composio_slug": "klaviyo",
+      "auth_schemes": [
+        "API_KEY",
+        "OAUTH2"
+      ],
+      "composio_managed_auth_schemes": [],
+      "no_auth": false,
+      "auth_guide_url": null,
+      "base_url": "https://a.klaviyo.com",
+      "enabled": true,
+      "toolkit_type": "api",
+      "tools_count": 233,
+      "triggers_count": 0,
+      "fetched_at": "2026-11-24"
+    },
+    {
+      "app": "systeme.io",
+      "category": "Marketing, Ads, Email and Social",
+      "claim": "not_listed",
+      "slug_candidates": [
+        "SYSTEMEIO"
+      ],
+      "slug_tried": "SYSTEMEIO",
+      "http_status": 404,
+      "in_composio": false,
+      "composio_slug": null,
+      "auth_schemes": [],
+      "composio_managed_auth_schemes": [],
+      "no_auth": null,
+      "auth_guide_url": null,
+      "base_url": null,
+      "enabled": null,
+      "toolkit_type": null,
+      "tools_count": null,
+      "triggers_count": null,
+      "fetched_at": "2026-11-24"
+    },
+    {
+      "app": "Pinterest",
+      "category": "Marketing, Ads, Email and Social",
+      "claim": "listed_exact",
+      "slug_candidates": [
+        "PINTEREST"
+      ],
+      "slug_tried": "PINTEREST",
+      "http_status": 200,
+      "in_composio": true,
+      "composio_slug": "pinterest",
+      "auth_schemes": [
+        "OAUTH2"
+      ],
+      "composio_managed_auth_schemes": [
+        "OAUTH2"
+      ],
+      "no_auth": false,
+      "auth_guide_url": null,
+      "base_url": "https://api.pinterest.com/v5",
+      "enabled": true,
+      "toolkit_type": "api",
+      "tools_count": 27,
+      "triggers_count": 0,
+      "fetched_at": "2026-11-24"
+    },
+    {
+      "app": "Threads (Meta)",
+      "category": "Marketing, Ads, Email and Social",
+      "claim": "listed_alias",
+      "slug_candidates": [
+        "THREADS",
+        "THREADSMETA"
+      ],
+      "slug_tried": "THREADS",
+      "http_status": 200,
+      "in_composio": true,
+      "composio_slug": "threads",
+      "auth_schemes": [
+        "OAUTH2"
+      ],
+      "composio_managed_auth_schemes": [],
+      "no_auth": false,
+      "auth_guide_url": null,
+      "base_url": "https://graph.threads.com/v1.0",
+      "enabled": true,
+      "toolkit_type": "api",
+      "tools_count": 24,
+      "triggers_count": 0,
+      "fetched_at": "2026-11-24"
+    },
+    {
+      "app": "SendGrid",
+      "category": "Marketing, Ads, Email and Social",
+      "claim": "listed_exact",
+      "slug_candidates": [
+        "SENDGRID"
+      ],
+      "slug_tried": "SENDGRID",
+      "http_status": 200,
+      "in_composio": true,
+      "composio_slug": "sendgrid",
+      "auth_schemes": [
+        "API_KEY"
+      ],
+      "composio_managed_auth_schemes": [],
+      "no_auth": false,
+      "auth_guide_url": null,
+      "base_url": "https://api.sendgrid.com",
+      "enabled": true,
+      "toolkit_type": "api",
+      "tools_count": 359,
+      "triggers_count": 0,
+      "fetched_at": "2026-11-24"
+    },
+    {
+      "app": "Shopify",
+      "category": "Ecommerce",
+      "claim": "listed_exact",
+      "slug_candidates": [
+        "SHOPIFY"
+      ],
+      "slug_tried": "SHOPIFY",
+      "http_status": 200,
+      "in_composio": true,
+      "composio_slug": "shopify",
+      "auth_schemes": [
+        "OAUTH2",
+        "S2S_OAUTH2"
+      ],
+      "composio_managed_auth_schemes": [],
+      "no_auth": false,
+      "auth_guide_url": null,
+      "base_url": "https://{{subdomain}}.myshopify.com/admin/api/2026-04",
+      "enabled": true,
+      "toolkit_type": "api",
+      "tools_count": 386,
+      "triggers_count": 45,
+      "fetched_at": "2026-11-24"
+    },
+    {
+      "app": "WooCommerce",
+      "category": "Ecommerce",
+      "claim": "not_listed",
+      "slug_candidates": [
+        "WOOCOMMERCE"
+      ],
+      "slug_tried": "WOOCOMMERCE",
+      "http_status": 404,
+      "in_composio": false,
+      "composio_slug": null,
+      "auth_schemes": [],
+      "composio_managed_auth_schemes": [],
+      "no_auth": null,
+      "auth_guide_url": null,
+      "base_url": null,
+      "enabled": null,
+      "toolkit_type": null,
+      "tools_count": null,
+      "triggers_count": null,
+      "fetched_at": "2026-11-24"
+    },
+    {
+      "app": "BigCommerce",
+      "category": "Ecommerce",
+      "claim": "listed_exact",
+      "slug_candidates": [
+        "BIGCOMMERCE"
+      ],
+      "slug_tried": "BIGCOMMERCE",
+      "http_status": 200,
+      "in_composio": true,
+      "composio_slug": "bigcommerce",
+      "auth_schemes": [
+        "API_KEY",
+        "OAUTH2"
+      ],
+      "composio_managed_auth_schemes": [],
+      "no_auth": false,
+      "auth_guide_url": null,
+      "base_url": "https://api.bigcommerce.com/stores/{{base_url_subdomain}}",
+      "enabled": true,
+      "toolkit_type": "api",
+      "tools_count": 532,
+      "triggers_count": 0,
+      "fetched_at": "2026-11-24"
+    },
+    {
+      "app": "Salesforce Commerce Cloud",
+      "category": "Ecommerce",
+      "claim": "not_listed",
+      "slug_candidates": [
+        "SALESFORCECOMMERCECLOUD"
+      ],
+      "slug_tried": "SALESFORCECOMMERCECLOUD",
+      "http_status": 404,
+      "in_composio": false,
+      "composio_slug": null,
+      "auth_schemes": [],
+      "composio_managed_auth_schemes": [],
+      "no_auth": null,
+      "auth_guide_url": null,
+      "base_url": null,
+      "enabled": null,
+      "toolkit_type": null,
+      "tools_count": null,
+      "triggers_count": null,
+      "fetched_at": "2026-11-24"
+    },
+    {
+      "app": "Magento (Adobe Commerce)",
+      "category": "Ecommerce",
+      "claim": "not_listed",
+      "slug_candidates": [
+        "MAGENTOADOBECOMMERCE"
+      ],
+      "slug_tried": "MAGENTOADOBECOMMERCE",
+      "http_status": 404,
+      "in_composio": false,
+      "composio_slug": null,
+      "auth_schemes": [],
+      "composio_managed_auth_schemes": [],
+      "no_auth": null,
+      "auth_guide_url": null,
+      "base_url": null,
+      "enabled": null,
+      "toolkit_type": null,
+      "tools_count": null,
+      "triggers_count": null,
+      "fetched_at": "2026-11-24"
+    },
+    {
+      "app": "Squarespace",
+      "category": "Ecommerce",
+      "claim": "not_listed",
+      "slug_candidates": [
+        "SQUARESPACE"
+      ],
+      "slug_tried": "SQUARESPACE",
+      "http_status": 404,
+      "in_composio": false,
+      "composio_slug": null,
+      "auth_schemes": [],
+      "composio_managed_auth_schemes": [],
+      "no_auth": null,
+      "auth_guide_url": null,
+      "base_url": null,
+      "enabled": null,
+      "toolkit_type": null,
+      "tools_count": null,
+      "triggers_count": null,
+      "fetched_at": "2026-11-24"
+    },
+    {
+      "app": "Ecwid",
+      "category": "Ecommerce",
+      "claim": "not_listed",
+      "slug_candidates": [
+        "ECWID"
+      ],
+      "slug_tried": "ECWID",
+      "http_status": 404,
+      "in_composio": false,
+      "composio_slug": null,
+      "auth_schemes": [],
+      "composio_managed_auth_schemes": [],
+      "no_auth": null,
+      "auth_guide_url": null,
+      "base_url": null,
+      "enabled": null,
+      "toolkit_type": null,
+      "tools_count": null,
+      "triggers_count": null,
+      "fetched_at": "2026-11-24"
+    },
+    {
+      "app": "Gumroad",
+      "category": "Ecommerce",
+      "claim": "listed_exact",
+      "slug_candidates": [
+        "GUMROAD"
+      ],
+      "slug_tried": "GUMROAD",
+      "http_status": 200,
+      "in_composio": true,
+      "composio_slug": "gumroad",
+      "auth_schemes": [
+        "OAUTH2"
+      ],
+      "composio_managed_auth_schemes": [
+        "OAUTH2"
+      ],
+      "no_auth": false,
+      "auth_guide_url": null,
+      "base_url": "https://api.gumroad.com",
+      "enabled": true,
+      "toolkit_type": "api",
+      "tools_count": 13,
+      "triggers_count": 0,
+      "fetched_at": "2026-11-24"
+    },
+    {
+      "app": "Amazon Selling Partner",
+      "category": "Ecommerce",
+      "claim": "not_listed",
+      "slug_candidates": [
+        "AMAZONSELLINGPARTNER"
+      ],
+      "slug_tried": "AMAZONSELLINGPARTNER",
+      "http_status": 404,
+      "in_composio": false,
+      "composio_slug": null,
+      "auth_schemes": [],
+      "composio_managed_auth_schemes": [],
+      "no_auth": null,
+      "auth_guide_url": null,
+      "base_url": null,
+      "enabled": null,
+      "toolkit_type": null,
+      "tools_count": null,
+      "triggers_count": null,
+      "fetched_at": "2026-11-24"
+    },
+    {
+      "app": "fanbasis",
+      "category": "Ecommerce",
+      "claim": "not_listed",
+      "slug_candidates": [
+        "FANBASIS"
+      ],
+      "slug_tried": "FANBASIS",
+      "http_status": 404,
+      "in_composio": false,
+      "composio_slug": null,
+      "auth_schemes": [],
+      "composio_managed_auth_schemes": [],
+      "no_auth": null,
+      "auth_guide_url": null,
+      "base_url": null,
+      "enabled": null,
+      "toolkit_type": null,
+      "tools_count": null,
+      "triggers_count": null,
+      "fetched_at": "2026-11-24"
+    },
+    {
+      "app": "DataForSEO",
+      "category": "Data, SEO and Scraping",
+      "claim": "listed_exact",
+      "slug_candidates": [
+        "DATAFORSEO"
+      ],
+      "slug_tried": "DATAFORSEO",
+      "http_status": 200,
+      "in_composio": true,
+      "composio_slug": "dataforseo",
+      "auth_schemes": [
+        "BASIC"
+      ],
+      "composio_managed_auth_schemes": [],
+      "no_auth": false,
+      "auth_guide_url": null,
+      "base_url": "https://api.dataforseo.com/v3",
+      "enabled": true,
+      "toolkit_type": "api",
+      "tools_count": 354,
+      "triggers_count": 0,
+      "fetched_at": "2026-11-24"
+    },
+    {
+      "app": "SE Ranking",
+      "category": "Data, SEO and Scraping",
+      "claim": "not_listed",
+      "slug_candidates": [
+        "SERANKING"
+      ],
+      "slug_tried": "SERANKING",
+      "http_status": 404,
+      "in_composio": false,
+      "composio_slug": null,
+      "auth_schemes": [],
+      "composio_managed_auth_schemes": [],
+      "no_auth": null,
+      "auth_guide_url": null,
+      "base_url": null,
+      "enabled": null,
+      "toolkit_type": null,
+      "tools_count": null,
+      "triggers_count": null,
+      "fetched_at": "2026-11-24"
+    },
+    {
+      "app": "Ahrefs",
+      "category": "Data, SEO and Scraping",
+      "claim": "listed_exact",
+      "slug_candidates": [
+        "AHREFS"
+      ],
+      "slug_tried": "AHREFS",
+      "http_status": 200,
+      "in_composio": true,
+      "composio_slug": "ahrefs",
+      "auth_schemes": [
+        "API_KEY",
+        "OAUTH2"
+      ],
+      "composio_managed_auth_schemes": [],
+      "no_auth": false,
+      "auth_guide_url": null,
+      "base_url": "https://api.ahrefs.com/v3",
+      "enabled": true,
+      "toolkit_type": "api",
+      "tools_count": 46,
+      "triggers_count": 0,
+      "fetched_at": "2026-11-24"
+    },
+    {
+      "app": "MrScraper",
+      "category": "Data, SEO and Scraping",
+      "claim": "listed_exact",
+      "slug_candidates": [
+        "MRSCRAPER"
+      ],
+      "slug_tried": "MRSCRAPER",
+      "http_status": 200,
+      "in_composio": true,
+      "composio_slug": "mrscraper",
+      "auth_schemes": [
+        "API_KEY"
+      ],
+      "composio_managed_auth_schemes": [],
+      "no_auth": false,
+      "auth_guide_url": null,
+      "base_url": "https://api.app.mrscraper.com",
+      "enabled": true,
+      "toolkit_type": "api",
+      "tools_count": 11,
+      "triggers_count": 0,
+      "fetched_at": "2026-11-24"
+    },
+    {
+      "app": "Apify",
+      "category": "Data, SEO and Scraping",
+      "claim": "listed_exact",
+      "slug_candidates": [
+        "APIFY"
+      ],
+      "slug_tried": "APIFY",
+      "http_status": 200,
+      "in_composio": true,
+      "composio_slug": "apify",
+      "auth_schemes": [
+        "API_KEY"
+      ],
+      "composio_managed_auth_schemes": [],
+      "no_auth": false,
+      "auth_guide_url": null,
+      "base_url": "https://api.apify.com/v2",
+      "enabled": true,
+      "toolkit_type": "api",
+      "tools_count": 184,
+      "triggers_count": 0,
+      "fetched_at": "2026-11-24"
+    },
+    {
+      "app": "Firecrawl",
+      "category": "Data, SEO and Scraping",
+      "claim": "listed_exact",
+      "slug_candidates": [
+        "FIRECRAWL"
+      ],
+      "slug_tried": "FIRECRAWL",
+      "http_status": 200,
+      "in_composio": true,
+      "composio_slug": "firecrawl",
+      "auth_schemes": [
+        "API_KEY"
+      ],
+      "composio_managed_auth_schemes": [],
+      "no_auth": false,
+      "auth_guide_url": null,
+      "base_url": "https://api.firecrawl.dev/v1",
+      "enabled": true,
+      "toolkit_type": "api",
+      "tools_count": 245,
+      "triggers_count": 0,
+      "fetched_at": "2026-11-24"
+    },
+    {
+      "app": "Bright Data",
+      "category": "Data, SEO and Scraping",
+      "claim": "listed_exact",
+      "slug_candidates": [
+        "BRIGHTDATA"
+      ],
+      "slug_tried": "BRIGHTDATA",
+      "http_status": 200,
+      "in_composio": true,
+      "composio_slug": "brightdata",
+      "auth_schemes": [
+        "API_KEY"
+      ],
+      "composio_managed_auth_schemes": [],
+      "no_auth": false,
+      "auth_guide_url": null,
+      "base_url": "https://api.brightdata.com",
+      "enabled": true,
+      "toolkit_type": "api",
+      "tools_count": 167,
+      "triggers_count": 0,
+      "fetched_at": "2026-11-24"
+    },
+    {
+      "app": "Sherlock",
+      "category": "Data, SEO and Scraping",
+      "claim": "not_listed",
+      "slug_candidates": [
+        "SHERLOCK"
+      ],
+      "slug_tried": "SHERLOCK",
+      "http_status": 404,
+      "in_composio": false,
+      "composio_slug": null,
+      "auth_schemes": [],
+      "composio_managed_auth_schemes": [],
+      "no_auth": null,
+      "auth_guide_url": null,
+      "base_url": null,
+      "enabled": null,
+      "toolkit_type": null,
+      "tools_count": null,
+      "triggers_count": null,
+      "fetched_at": "2026-11-24"
+    },
+    {
+      "app": "Waterfall.io",
+      "category": "Data, SEO and Scraping",
+      "claim": "not_listed",
+      "slug_candidates": [
+        "WATERFALLIO"
+      ],
+      "slug_tried": "WATERFALLIO",
+      "http_status": 404,
+      "in_composio": false,
+      "composio_slug": null,
+      "auth_schemes": [],
+      "composio_managed_auth_schemes": [],
+      "no_auth": null,
+      "auth_guide_url": null,
+      "base_url": null,
+      "enabled": null,
+      "toolkit_type": null,
+      "tools_count": null,
+      "triggers_count": null,
+      "fetched_at": "2026-11-24"
+    },
+    {
+      "app": "Clay",
+      "category": "Data, SEO and Scraping",
+      "claim": "listed_exact",
+      "slug_candidates": [
+        "CLAY"
+      ],
+      "slug_tried": "CLAY",
+      "http_status": 200,
+      "in_composio": true,
+      "composio_slug": "clay",
+      "auth_schemes": [
+        "API_KEY"
+      ],
+      "composio_managed_auth_schemes": [],
+      "no_auth": false,
+      "auth_guide_url": null,
+      "base_url": "https://api.clay.com/public/v0",
+      "enabled": true,
+      "toolkit_type": "api",
+      "tools_count": 15,
+      "triggers_count": 0,
+      "fetched_at": "2026-11-24"
+    },
+    {
+      "app": "GitHub",
+      "category": "Developer, Infra and Data platforms",
+      "claim": "listed_exact",
+      "slug_candidates": [
+        "GITHUB"
+      ],
+      "slug_tried": "GITHUB",
+      "http_status": 200,
+      "in_composio": true,
+      "composio_slug": "github",
+      "auth_schemes": [
+        "OAUTH2"
+      ],
+      "composio_managed_auth_schemes": [
+        "OAUTH2"
+      ],
+      "no_auth": false,
+      "auth_guide_url": null,
+      "base_url": "https://api.github.com",
+      "enabled": true,
+      "toolkit_type": "api",
+      "tools_count": 883,
+      "triggers_count": 46,
+      "fetched_at": "2026-11-24"
+    },
+    {
+      "app": "Vercel",
+      "category": "Developer, Infra and Data platforms",
+      "claim": "listed_exact",
+      "slug_candidates": [
+        "VERCEL"
+      ],
+      "slug_tried": "VERCEL",
+      "http_status": 200,
+      "in_composio": true,
+      "composio_slug": "vercel",
+      "auth_schemes": [
+        "API_KEY",
+        "OAUTH2"
+      ],
+      "composio_managed_auth_schemes": [],
+      "no_auth": false,
+      "auth_guide_url": null,
+      "base_url": "https://api.vercel.com",
+      "enabled": true,
+      "toolkit_type": "api",
+      "tools_count": 399,
+      "triggers_count": 0,
+      "fetched_at": "2026-11-24"
+    },
+    {
+      "app": "Netlify",
+      "category": "Developer, Infra and Data platforms",
+      "claim": "listed_alias",
+      "slug_candidates": [
+        "NETLIFY_MCP",
+        "NETLIFY"
+      ],
+      "slug_tried": "NETLIFY_MCP",
+      "http_status": 200,
+      "in_composio": true,
+      "composio_slug": "netlify_mcp",
+      "auth_schemes": [
+        "DCR_OAUTH"
+      ],
+      "composio_managed_auth_schemes": [],
+      "no_auth": false,
+      "auth_guide_url": null,
+      "base_url": "https://www.netlify.com",
+      "enabled": true,
+      "toolkit_type": "mcp",
+      "tools_count": 9,
+      "triggers_count": 0,
+      "fetched_at": "2026-11-24"
+    },
+    {
+      "app": "Cloudflare",
+      "category": "Developer, Infra and Data platforms",
+      "claim": "listed_exact",
+      "slug_candidates": [
+        "CLOUDFLARE"
+      ],
+      "slug_tried": "CLOUDFLARE",
+      "http_status": 200,
+      "in_composio": true,
+      "composio_slug": "cloudflare",
+      "auth_schemes": [
+        "API_KEY"
+      ],
+      "composio_managed_auth_schemes": [],
+      "no_auth": false,
+      "auth_guide_url": null,
+      "base_url": "https://api.cloudflare.com/client/v4",
+      "enabled": true,
+      "toolkit_type": "api",
+      "tools_count": 171,
+      "triggers_count": 0,
+      "fetched_at": "2026-11-24"
+    },
+    {
+      "app": "Supabase",
+      "category": "Developer, Infra and Data platforms",
+      "claim": "listed_exact",
+      "slug_candidates": [
+        "SUPABASE"
+      ],
+      "slug_tried": "SUPABASE",
+      "http_status": 200,
+      "in_composio": true,
+      "composio_slug": "supabase",
+      "auth_schemes": [
+        "API_KEY",
+        "OAUTH2"
+      ],
+      "composio_managed_auth_schemes": [
+        "OAUTH2"
+      ],
+      "no_auth": false,
+      "auth_guide_url": null,
+      "base_url": "https://api.supabase.com",
+      "enabled": true,
+      "toolkit_type": "api",
+      "tools_count": 230,
+      "triggers_count": 0,
+      "fetched_at": "2026-11-24"
+    },
+    {
+      "app": "Neo4j",
+      "category": "Developer, Infra and Data platforms",
+      "claim": "listed_exact",
+      "slug_candidates": [
+        "NEO4J"
+      ],
+      "slug_tried": "NEO4J",
+      "http_status": 200,
+      "in_composio": true,
+      "composio_slug": "neo4j",
+      "auth_schemes": [
+        "API_KEY",
+        "OAUTH2",
+        "S2S_OAUTH2"
+      ],
+      "composio_managed_auth_schemes": [],
+      "no_auth": false,
+      "auth_guide_url": null,
+      "base_url": "https://api.neo4j.io/v1",
+      "enabled": true,
+      "toolkit_type": "api",
+      "tools_count": 21,
+      "triggers_count": 0,
+      "fetched_at": "2026-11-24"
+    },
+    {
+      "app": "Snowflake",
+      "category": "Developer, Infra and Data platforms",
+      "claim": "listed_exact",
+      "slug_candidates": [
+        "SNOWFLAKE"
+      ],
+      "slug_tried": "SNOWFLAKE",
+      "http_status": 200,
+      "in_composio": true,
+      "composio_slug": "snowflake",
+      "auth_schemes": [
+        "OAUTH2"
+      ],
+      "composio_managed_auth_schemes": [],
+      "no_auth": false,
+      "auth_guide_url": null,
+      "base_url": "https://{{subdomain}}.snowflakecomputing.com/api/v2",
+      "enabled": true,
+      "toolkit_type": "api",
+      "tools_count": 16,
+      "triggers_count": 0,
+      "fetched_at": "2026-11-24"
+    },
+    {
+      "app": "MongoDB Atlas",
+      "category": "Developer, Infra and Data platforms",
+      "claim": "listed_alias",
+      "slug_candidates": [
+        "MONGODB",
+        "MONGODBATLAS"
+      ],
+      "slug_tried": "MONGODB",
+      "http_status": 200,
+      "in_composio": true,
+      "composio_slug": "mongodb",
+      "auth_schemes": [
+        "S2S_OAUTH2"
+      ],
+      "composio_managed_auth_schemes": [],
+      "no_auth": false,
+      "auth_guide_url": null,
+      "base_url": "https://cloud.mongodb.com/api/atlas/v2",
+      "enabled": true,
+      "toolkit_type": "api",
+      "tools_count": 496,
+      "triggers_count": 0,
+      "fetched_at": "2026-11-24"
+    },
+    {
+      "app": "Datadog",
+      "category": "Developer, Infra and Data platforms",
+      "claim": "listed_exact",
+      "slug_candidates": [
+        "DATADOG"
+      ],
+      "slug_tried": "DATADOG",
+      "http_status": 200,
+      "in_composio": true,
+      "composio_slug": "datadog",
+      "auth_schemes": [
+        "API_KEY",
+        "BEARER_TOKEN",
+        "OAUTH2"
+      ],
+      "composio_managed_auth_schemes": [],
+      "no_auth": false,
+      "auth_guide_url": null,
+      "base_url": "https://api.datadoghq.com",
+      "enabled": true,
+      "toolkit_type": "api",
+      "tools_count": 255,
+      "triggers_count": 0,
+      "fetched_at": "2026-11-24"
+    },
+    {
+      "app": "Sentry",
+      "category": "Developer, Infra and Data platforms",
+      "claim": "listed_exact",
+      "slug_candidates": [
+        "SENTRY"
+      ],
+      "slug_tried": "SENTRY",
+      "http_status": 200,
+      "in_composio": true,
+      "composio_slug": "sentry",
+      "auth_schemes": [
+        "OAUTH2"
+      ],
+      "composio_managed_auth_schemes": [
+        "OAUTH2"
+      ],
+      "no_auth": false,
+      "auth_guide_url": null,
+      "base_url": "https://sentry.io",
+      "enabled": true,
+      "toolkit_type": "api",
+      "tools_count": 210,
+      "triggers_count": 0,
+      "fetched_at": "2026-11-24"
+    },
+    {
+      "app": "Notion",
+      "category": "Productivity and Project Management",
+      "claim": "listed_exact",
+      "slug_candidates": [
+        "NOTION"
+      ],
+      "slug_tried": "NOTION",
+      "http_status": 200,
+      "in_composio": true,
+      "composio_slug": "notion",
+      "auth_schemes": [
+        "API_KEY",
+        "OAUTH2"
+      ],
+      "composio_managed_auth_schemes": [
+        "OAUTH2"
+      ],
+      "no_auth": false,
+      "auth_guide_url": null,
+      "base_url": "https://api.notion.com",
+      "enabled": true,
+      "toolkit_type": "api",
+      "tools_count": 59,
+      "triggers_count": 8,
+      "fetched_at": "2026-11-24"
+    },
+    {
+      "app": "Airtable",
+      "category": "Productivity and Project Management",
+      "claim": "listed_exact",
+      "slug_candidates": [
+        "AIRTABLE"
+      ],
+      "slug_tried": "AIRTABLE",
+      "http_status": 200,
+      "in_composio": true,
+      "composio_slug": "airtable",
+      "auth_schemes": [
+        "API_KEY",
+        "OAUTH2"
+      ],
+      "composio_managed_auth_schemes": [
+        "OAUTH2"
+      ],
+      "no_auth": false,
+      "auth_guide_url": null,
+      "base_url": "https://api.airtable.com/v0",
+      "enabled": true,
+      "toolkit_type": "api",
+      "tools_count": 26,
+      "triggers_count": 6,
+      "fetched_at": "2026-11-24"
+    },
+    {
+      "app": "Linear",
+      "category": "Productivity and Project Management",
+      "claim": "listed_exact",
+      "slug_candidates": [
+        "LINEAR"
+      ],
+      "slug_tried": "LINEAR",
+      "http_status": 200,
+      "in_composio": true,
+      "composio_slug": "linear",
+      "auth_schemes": [
+        "API_KEY",
+        "OAUTH2"
+      ],
+      "composio_managed_auth_schemes": [
+        "OAUTH2"
+      ],
+      "no_auth": false,
+      "auth_guide_url": null,
+      "base_url": "https://api.linear.app",
+      "enabled": true,
+      "toolkit_type": "api",
+      "tools_count": 47,
+      "triggers_count": 12,
+      "fetched_at": "2026-11-24"
+    },
+    {
+      "app": "Jira",
+      "category": "Productivity and Project Management",
+      "claim": "listed_exact",
+      "slug_candidates": [
+        "JIRA"
+      ],
+      "slug_tried": "JIRA",
+      "http_status": 200,
+      "in_composio": true,
+      "composio_slug": "jira",
+      "auth_schemes": [
+        "API_KEY",
+        "OAUTH2",
+        "S2S_OAUTH2"
+      ],
+      "composio_managed_auth_schemes": [
+        "OAUTH2"
+      ],
+      "no_auth": false,
+      "auth_guide_url": null,
+      "base_url": "https://{{subdomain}}.atlassian.net",
+      "enabled": true,
+      "toolkit_type": "api",
+      "tools_count": 166,
+      "triggers_count": 17,
+      "fetched_at": "2026-11-24"
+    },
+    {
+      "app": "Asana",
+      "category": "Productivity and Project Management",
+      "claim": "listed_exact",
+      "slug_candidates": [
+        "ASANA"
+      ],
+      "slug_tried": "ASANA",
+      "http_status": 200,
+      "in_composio": true,
+      "composio_slug": "asana",
+      "auth_schemes": [
+        "OAUTH2"
+      ],
+      "composio_managed_auth_schemes": [
+        "OAUTH2"
+      ],
+      "no_auth": false,
+      "auth_guide_url": null,
+      "base_url": "https://app.asana.com/api/1.0",
+      "enabled": true,
+      "toolkit_type": "api",
+      "tools_count": 247,
+      "triggers_count": 6,
+      "fetched_at": "2026-11-24"
+    },
+    {
+      "app": "Monday.com",
+      "category": "Productivity and Project Management",
+      "claim": "listed_alias",
+      "slug_candidates": [
+        "MONDAY",
+        "MONDAYCOM"
+      ],
+      "slug_tried": "MONDAY",
+      "http_status": 200,
+      "in_composio": true,
+      "composio_slug": "monday",
+      "auth_schemes": [
+        "OAUTH2"
+      ],
+      "composio_managed_auth_schemes": [
+        "OAUTH2"
+      ],
+      "no_auth": false,
+      "auth_guide_url": null,
+      "base_url": "https://api.monday.com",
+      "enabled": true,
+      "toolkit_type": "api",
+      "tools_count": 122,
+      "triggers_count": 17,
+      "fetched_at": "2026-11-24"
+    },
+    {
+      "app": "ClickUp",
+      "category": "Productivity and Project Management",
+      "claim": "listed_exact",
+      "slug_candidates": [
+        "CLICKUP"
+      ],
+      "slug_tried": "CLICKUP",
+      "http_status": 200,
+      "in_composio": true,
+      "composio_slug": "clickup",
+      "auth_schemes": [
+        "API_KEY",
+        "OAUTH2"
+      ],
+      "composio_managed_auth_schemes": [
+        "OAUTH2"
+      ],
+      "no_auth": false,
+      "auth_guide_url": null,
+      "base_url": "https://api.clickup.com/api/v2",
+      "enabled": true,
+      "toolkit_type": "api",
+      "tools_count": 163,
+      "triggers_count": 21,
+      "fetched_at": "2026-11-24"
+    },
+    {
+      "app": "Coda",
+      "category": "Productivity and Project Management",
+      "claim": "listed_exact",
+      "slug_candidates": [
+        "CODA"
+      ],
+      "slug_tried": "CODA",
+      "http_status": 200,
+      "in_composio": true,
+      "composio_slug": "coda",
+      "auth_schemes": [
+        "API_KEY"
+      ],
+      "composio_managed_auth_schemes": [],
+      "no_auth": false,
+      "auth_guide_url": null,
+      "base_url": "https://coda.io/apis/v1",
+      "enabled": true,
+      "toolkit_type": "api",
+      "tools_count": 109,
+      "triggers_count": 4,
+      "fetched_at": "2026-11-24"
+    },
+    {
+      "app": "Smartsheet",
+      "category": "Productivity and Project Management",
+      "claim": "listed_exact",
+      "slug_candidates": [
+        "SMARTSHEET"
+      ],
+      "slug_tried": "SMARTSHEET",
+      "http_status": 200,
+      "in_composio": true,
+      "composio_slug": "smartsheet",
+      "auth_schemes": [
+        "BEARER_TOKEN",
+        "OAUTH2"
+      ],
+      "composio_managed_auth_schemes": [],
+      "no_auth": false,
+      "auth_guide_url": null,
+      "base_url": "https://api.smartsheet.com/2.0",
+      "enabled": true,
+      "toolkit_type": "api",
+      "tools_count": 180,
+      "triggers_count": 0,
+      "fetched_at": "2026-11-24"
+    },
+    {
+      "app": "Harvest",
+      "category": "Productivity and Project Management",
+      "claim": "listed_exact",
+      "slug_candidates": [
+        "HARVEST"
+      ],
+      "slug_tried": "HARVEST",
+      "http_status": 200,
+      "in_composio": true,
+      "composio_slug": "harvest",
+      "auth_schemes": [
+        "OAUTH2"
+      ],
+      "composio_managed_auth_schemes": [
+        "OAUTH2"
+      ],
+      "no_auth": false,
+      "auth_guide_url": null,
+      "base_url": "https://api.harvestapp.com/v2",
+      "enabled": true,
+      "toolkit_type": "api",
+      "tools_count": 60,
+      "triggers_count": 0,
+      "fetched_at": "2026-11-24"
+    },
+    {
+      "app": "Stripe",
+      "category": "Finance and Fintech",
+      "claim": "listed_exact",
+      "slug_candidates": [
+        "STRIPE"
+      ],
+      "slug_tried": "STRIPE",
+      "http_status": 200,
+      "in_composio": true,
+      "composio_slug": "stripe",
+      "auth_schemes": [
+        "API_KEY",
+        "OAUTH2"
+      ],
+      "composio_managed_auth_schemes": [
+        "OAUTH2"
+      ],
+      "no_auth": false,
+      "auth_guide_url": null,
+      "base_url": "https://api.stripe.com/v1",
+      "enabled": true,
+      "toolkit_type": "api",
+      "tools_count": 428,
+      "triggers_count": 40,
+      "fetched_at": "2026-11-24"
+    },
+    {
+      "app": "Plaid",
+      "category": "Finance and Fintech",
+      "claim": "listed_exact",
+      "slug_candidates": [
+        "PLAID"
+      ],
+      "slug_tried": "PLAID",
+      "http_status": 200,
+      "in_composio": true,
+      "composio_slug": "plaid",
+      "auth_schemes": [
+        "API_KEY"
+      ],
+      "composio_managed_auth_schemes": [],
+      "no_auth": false,
+      "auth_guide_url": null,
+      "base_url": "https://sandbox.plaid.com",
+      "enabled": true,
+      "toolkit_type": "api",
+      "tools_count": 70,
+      "triggers_count": 0,
+      "fetched_at": "2026-11-24"
+    },
+    {
+      "app": "Binance",
+      "category": "Finance and Fintech",
+      "claim": "not_listed",
+      "slug_candidates": [
+        "BINANCE"
+      ],
+      "slug_tried": "BINANCE",
+      "http_status": 404,
+      "in_composio": false,
+      "composio_slug": null,
+      "auth_schemes": [],
+      "composio_managed_auth_schemes": [],
+      "no_auth": null,
+      "auth_guide_url": null,
+      "base_url": null,
+      "enabled": null,
+      "toolkit_type": null,
+      "tools_count": null,
+      "triggers_count": null,
+      "fetched_at": "2026-11-24"
+    },
+    {
+      "app": "Paygent Connect",
+      "category": "Finance and Fintech",
+      "claim": "not_listed",
+      "slug_candidates": [
+        "PAYGENTCONNECT"
+      ],
+      "slug_tried": "PAYGENTCONNECT",
+      "http_status": 404,
+      "in_composio": false,
+      "composio_slug": null,
+      "auth_schemes": [],
+      "composio_managed_auth_schemes": [],
+      "no_auth": null,
+      "auth_guide_url": null,
+      "base_url": null,
+      "enabled": null,
+      "toolkit_type": null,
+      "tools_count": null,
+      "triggers_count": null,
+      "fetched_at": "2026-11-24"
+    },
+    {
+      "app": "iPayX",
+      "category": "Finance and Fintech",
+      "claim": "not_listed",
+      "slug_candidates": [
+        "IPAYX"
+      ],
+      "slug_tried": "IPAYX",
+      "http_status": 404,
+      "in_composio": false,
+      "composio_slug": null,
+      "auth_schemes": [],
+      "composio_managed_auth_schemes": [],
+      "no_auth": null,
+      "auth_guide_url": null,
+      "base_url": null,
+      "enabled": null,
+      "toolkit_type": null,
+      "tools_count": null,
+      "triggers_count": null,
+      "fetched_at": "2026-11-24"
+    },
+    {
+      "app": "QuickBooks",
+      "category": "Finance and Fintech",
+      "claim": "listed_exact",
+      "slug_candidates": [
+        "QUICKBOOKS"
+      ],
+      "slug_tried": "QUICKBOOKS",
+      "http_status": 200,
+      "in_composio": true,
+      "composio_slug": "quickbooks",
+      "auth_schemes": [
+        "OAUTH2"
+      ],
+      "composio_managed_auth_schemes": [
+        "OAUTH2"
+      ],
+      "no_auth": false,
+      "auth_guide_url": null,
+      "base_url": "https://quickbooks.api.intuit.com",
+      "enabled": true,
+      "toolkit_type": "api",
+      "tools_count": 119,
+      "triggers_count": 0,
+      "fetched_at": "2026-11-24"
+    },
+    {
+      "app": "Xero",
+      "category": "Finance and Fintech",
+      "claim": "listed_exact",
+      "slug_candidates": [
+        "XERO"
+      ],
+      "slug_tried": "XERO",
+      "http_status": 200,
+      "in_composio": true,
+      "composio_slug": "xero",
+      "auth_schemes": [
+        "OAUTH2"
+      ],
+      "composio_managed_auth_schemes": [],
+      "no_auth": false,
+      "auth_guide_url": null,
+      "base_url": "https://api.xero.com/connections",
+      "enabled": true,
+      "toolkit_type": "api",
+      "tools_count": 109,
+      "triggers_count": 0,
+      "fetched_at": "2026-11-24"
+    },
+    {
+      "app": "Brex",
+      "category": "Finance and Fintech",
+      "claim": "listed_exact",
+      "slug_candidates": [
+        "BREX"
+      ],
+      "slug_tried": "BREX",
+      "http_status": 200,
+      "in_composio": true,
+      "composio_slug": "brex",
+      "auth_schemes": [
+        "API_KEY",
+        "OAUTH2"
+      ],
+      "composio_managed_auth_schemes": [],
+      "no_auth": false,
+      "auth_guide_url": null,
+      "base_url": "https://platform.brexapis.com",
+      "enabled": true,
+      "toolkit_type": "api",
+      "tools_count": 84,
+      "triggers_count": 0,
+      "fetched_at": "2026-11-24"
+    },
+    {
+      "app": "Ramp",
+      "category": "Finance and Fintech",
+      "claim": "listed_exact",
+      "slug_candidates": [
+        "RAMP"
+      ],
+      "slug_tried": "RAMP",
+      "http_status": 200,
+      "in_composio": true,
+      "composio_slug": "ramp",
+      "auth_schemes": [
+        "OAUTH2"
+      ],
+      "composio_managed_auth_schemes": [],
+      "no_auth": false,
+      "auth_guide_url": null,
+      "base_url": "https://api.ramp.com/developer/v1",
+      "enabled": true,
+      "toolkit_type": "api",
+      "tools_count": 186,
+      "triggers_count": 0,
+      "fetched_at": "2026-11-24"
+    },
+    {
+      "app": "PitchBook",
+      "category": "Finance and Fintech",
+      "claim": "listed_exact",
+      "slug_candidates": [
+        "PITCHBOOK"
+      ],
+      "slug_tried": "PITCHBOOK",
+      "http_status": 200,
+      "in_composio": true,
+      "composio_slug": "pitchbook",
+      "auth_schemes": [
+        "API_KEY"
+      ],
+      "composio_managed_auth_schemes": [],
+      "no_auth": false,
+      "auth_guide_url": null,
+      "base_url": "https://api.pitchbook.com",
+      "enabled": true,
+      "toolkit_type": "api",
+      "tools_count": 130,
+      "triggers_count": 0,
+      "fetched_at": "2026-11-24"
+    },
+    {
+      "app": "NotebookLM",
+      "category": "AI, Research and Media-native",
+      "claim": "listed_exact",
+      "slug_candidates": [
+        "NOTEBOOK_LM",
+        "NOTEBOOKLM"
+      ],
+      "slug_tried": "NOTEBOOK_LM",
+      "http_status": 200,
+      "in_composio": true,
+      "composio_slug": "notebook_lm",
+      "auth_schemes": [
+        "OAUTH2"
+      ],
+      "composio_managed_auth_schemes": [
+        "OAUTH2"
+      ],
+      "no_auth": false,
+      "auth_guide_url": null,
+      "base_url": "https://discoveryengine.googleapis.com/v1alpha/projects/{{prefix_one}}/locations/global",
+      "enabled": true,
+      "toolkit_type": "api",
+      "tools_count": 11,
+      "triggers_count": 0,
+      "fetched_at": "2026-11-24"
+    },
+    {
+      "app": "Otter AI",
+      "category": "AI, Research and Media-native",
+      "claim": "listed_alias",
+      "slug_candidates": [
+        "OTTER_AI_MCP",
+        "OTTERAI"
+      ],
+      "slug_tried": "OTTER_AI_MCP",
+      "http_status": 200,
+      "in_composio": true,
+      "composio_slug": "otter_ai_mcp",
+      "auth_schemes": [
+        "DCR_OAUTH"
+      ],
+      "composio_managed_auth_schemes": [],
+      "no_auth": false,
+      "auth_guide_url": null,
+      "base_url": "https://otter.ai",
+      "enabled": true,
+      "toolkit_type": "mcp",
+      "tools_count": 3,
+      "triggers_count": 0,
+      "fetched_at": "2026-11-24"
+    },
+    {
+      "app": "Fathom",
+      "category": "AI, Research and Media-native",
+      "claim": "listed_exact",
+      "slug_candidates": [
+        "FATHOM"
+      ],
+      "slug_tried": "FATHOM",
+      "http_status": 200,
+      "in_composio": true,
+      "composio_slug": "fathom",
+      "auth_schemes": [
+        "API_KEY",
+        "OAUTH2"
+      ],
+      "composio_managed_auth_schemes": [
+        "OAUTH2"
+      ],
+      "no_auth": false,
+      "auth_guide_url": null,
+      "base_url": "https://fathom.video/external/v1",
+      "enabled": true,
+      "toolkit_type": "api",
+      "tools_count": 10,
+      "triggers_count": 1,
+      "fetched_at": "2026-11-24"
+    },
+    {
+      "app": "Consensus",
+      "category": "AI, Research and Media-native",
+      "claim": "listed_exact",
+      "slug_candidates": [
+        "CONSENSUS"
+      ],
+      "slug_tried": "CONSENSUS",
+      "http_status": 200,
+      "in_composio": true,
+      "composio_slug": "consensus",
+      "auth_schemes": [
+        "API_KEY"
+      ],
+      "composio_managed_auth_schemes": [],
+      "no_auth": false,
+      "auth_guide_url": null,
+      "base_url": "https://api.consensus.app",
+      "enabled": true,
+      "toolkit_type": "api",
+      "tools_count": 1,
+      "triggers_count": 0,
+      "fetched_at": "2026-11-24"
+    },
+    {
+      "app": "Reducto",
+      "category": "AI, Research and Media-native",
+      "claim": "not_listed",
+      "slug_candidates": [
+        "REDUCTO"
+      ],
+      "slug_tried": "REDUCTO",
+      "http_status": 404,
+      "in_composio": false,
+      "composio_slug": null,
+      "auth_schemes": [],
+      "composio_managed_auth_schemes": [],
+      "no_auth": null,
+      "auth_guide_url": null,
+      "base_url": null,
+      "enabled": null,
+      "toolkit_type": null,
+      "tools_count": null,
+      "triggers_count": null,
+      "fetched_at": "2026-11-24"
+    },
+    {
+      "app": "Devin",
+      "category": "AI, Research and Media-native",
+      "claim": "listed_alias",
+      "slug_candidates": [
+        "DEVIN_MCP",
+        "DEVIN"
+      ],
+      "slug_tried": "DEVIN_MCP",
+      "http_status": 200,
+      "in_composio": true,
+      "composio_slug": "devin_mcp",
+      "auth_schemes": [
+        "API_KEY"
+      ],
+      "composio_managed_auth_schemes": [],
+      "no_auth": false,
+      "auth_guide_url": null,
+      "base_url": "https://devin.ai",
+      "enabled": true,
+      "toolkit_type": "mcp",
+      "tools_count": 23,
+      "triggers_count": 0,
+      "fetched_at": "2026-11-24"
+    },
+    {
+      "app": "higgsfield",
+      "category": "AI, Research and Media-native",
+      "claim": "listed_exact",
+      "slug_candidates": [
+        "HIGGSFIELD"
+      ],
+      "slug_tried": "HIGGSFIELD",
+      "http_status": 200,
+      "in_composio": true,
+      "composio_slug": "higgsfield",
+      "auth_schemes": [
+        "API_KEY"
+      ],
+      "composio_managed_auth_schemes": [],
+      "no_auth": false,
+      "auth_guide_url": null,
+      "base_url": "https://platform.higgsfield.ai",
+      "enabled": true,
+      "toolkit_type": "api",
+      "tools_count": 13,
+      "triggers_count": 0,
+      "fetched_at": "2026-11-24"
+    },
+    {
+      "app": "Mermaid CLI",
+      "category": "AI, Research and Media-native",
+      "claim": "not_listed",
+      "slug_candidates": [
+        "MERMAIDCLI"
+      ],
+      "slug_tried": "MERMAIDCLI",
+      "http_status": 404,
+      "in_composio": false,
+      "composio_slug": null,
+      "auth_schemes": [],
+      "composio_managed_auth_schemes": [],
+      "no_auth": null,
+      "auth_guide_url": null,
+      "base_url": null,
+      "enabled": null,
+      "toolkit_type": null,
+      "tools_count": null,
+      "triggers_count": null,
+      "fetched_at": "2026-11-24"
+    },
+    {
+      "app": "YouTube Transcript",
+      "category": "AI, Research and Media-native",
+      "claim": "listed_exact",
+      "slug_candidates": [
+        "YOUTUBE_TRANSCRIPT",
+        "YOUTUBETRANSCRIPT"
+      ],
+      "slug_tried": "YOUTUBE_TRANSCRIPT",
+      "http_status": 200,
+      "in_composio": true,
+      "composio_slug": "youtube_transcript",
+      "auth_schemes": [
+        "API_KEY"
+      ],
+      "composio_managed_auth_schemes": [],
+      "no_auth": false,
+      "auth_guide_url": null,
+      "base_url": "https://www.youtubetranscript.dev",
+      "enabled": true,
+      "toolkit_type": "api",
+      "tools_count": 9,
+      "triggers_count": 0,
+      "fetched_at": "2026-11-24"
+    },
+    {
+      "app": "Grain",
+      "category": "AI, Research and Media-native",
+      "claim": "listed_exact",
+      "slug_candidates": [
+        "GRAIN"
+      ],
+      "slug_tried": "GRAIN",
+      "http_status": 200,
+      "in_composio": true,
+      "composio_slug": "grain",
+      "auth_schemes": [
+        "API_KEY"
+      ],
+      "composio_managed_auth_schemes": [],
+      "no_auth": false,
+      "auth_guide_url": null,
+      "base_url": "https://api.grain.com/_/public-api",
+      "enabled": true,
+      "toolkit_type": "api",
+      "tools_count": 17,
+      "triggers_count": 0,
+      "fetched_at": "2026-11-24"
+    }
+  ]
+}

@@ -1,0 +1,216 @@
+{
+  "checked_at": "2026-11-24",
+  "reviewer_type": "AI assistant source re-check; not a human check",
+  "blind_to_gold": false,
+  "selection": {
+    "method": "Uniform random sample without replacement from the 80 gold rows",
+    "seed": 20261124,
+    "rows": 24,
+    "cohorts": {
+      "selected_sample": 12,
+      "random_holdout": 12
+    }
+  },
+  "comparison_rule": "Compared each saved gold status/value with its cited first-party source as available on 2026-11-24. Supported means the source directly supports the saved label; conflict means current source content directly contradicts it; partial means the source supports only part of the claim or does not settle the full prototype/production or taxonomy distinction. A current-source conflict can reflect source drift since the frozen excerpt was captured.",
+  "summary": {
+    "supported": 16,
+    "conflict": 2,
+    "partial_or_inconclusive": 6,
+    "human_agreement": null
+  },
+  "rows": [
+    {
+      "row_id": "R001",
+      "app": "HubSpot",
+      "field": "auth",
+      "result": "supported",
+      "note": "Current auth overview documents OAuth for multi-account apps and static tokens for one-account installs; separate service-key documentation exists. The saved auth mechanisms are consistent with the documented families.",
+      "source": "https://developers.hubspot.com/docs/apps/developer-platform/build-apps/authentication/overview"
+    },
+    {
+      "row_id": "R004",
+      "app": "HubSpot",
+      "field": "official_mcp",
+      "result": "supported",
+      "note": "Current changelog says the remote HubSpot MCP server is generally available, hosted by HubSpot, OAuth 2.1 PKCE, and supports reads plus selected create/update actions.",
+      "source": "https://developers.hubspot.com/changelog/remote-hubspot-mcp-server-is-now-generally-available"
+    },
+    {
+      "row_id": "R006",
+      "app": "Zendesk",
+      "field": "credential_gate",
+      "result": "partial_or_inconclusive",
+      "note": "The current pricing page describes a 14-day trial and paid plans, but does not explicitly tie API credential issuance to those tiers. The saved not-stated label cannot be fully confirmed or rejected from this page alone.",
+      "source": "https://www.zendesk.com/pricing/"
+    },
+    {
+      "row_id": "R008",
+      "app": "Zendesk",
+      "field": "official_mcp",
+      "result": "supported",
+      "note": "The current help page says Zendesk Bridge/external-agent MCP access is in EAP, currently without charge, and requires a configured account connection; its server URL is tenant-specific.",
+      "source": "https://support.zendesk.com/hc/en-us/articles/11400026079130-Connecting-external-AI-agents-to-the-Zendesk-MCP-server-or-Zendesk-AI-agents-EAP"
+    },
+    {
+      "row_id": "R010",
+      "app": "Slack",
+      "field": "credential_gate",
+      "result": "partial_or_inconclusive",
+      "note": "Slack documents a Free plan with custom apps (up to 10), supporting a free prototype route. This pricing page does not settle all API credential requirements or production access, so the full gate label remains inconclusive.",
+      "source": "https://slack.com/pricing/free"
+    },
+    {
+      "row_id": "R018",
+      "app": "Shopify",
+      "field": "credential_gate",
+      "result": "supported",
+      "note": "The cited credentials page explains where app client credentials are issued and does not state a paid-plan, admin, app-review, or partner gate for credential creation. This is page-level consistency, not proof across all Shopify docs.",
+      "source": "https://shopify.dev/docs/apps/build/authentication-authorization/manage-credentials"
+    },
+    {
+      "row_id": "R019",
+      "app": "Shopify",
+      "field": "api_surface",
+      "result": "supported",
+      "note": "The app API overview lists multiple GraphQL API families and identifies REST Admin API as legacy, supporting GraphQL and REST as documented surfaces.",
+      "source": "https://shopify.dev/docs/apps/build/apis"
+    },
+    {
+      "row_id": "R021",
+      "app": "Apify",
+      "field": "auth",
+      "result": "supported",
+      "note": "The API reference documents API tokens and recommends sending them as Bearer credentials.",
+      "source": "https://docs.apify.com/api/v2"
+    },
+    {
+      "row_id": "R023",
+      "app": "Apify",
+      "field": "api_surface",
+      "result": "supported",
+      "note": "The API reference documents HTTP endpoints and official client libraries whose functions map to API endpoints, consistent with REST plus SDK.",
+      "source": "https://docs.apify.com/api/v2"
+    },
+    {
+      "row_id": "R032",
+      "app": "Notion",
+      "field": "official_mcp",
+      "result": "conflict",
+      "note": "The current official guide explicitly documents the hosted remote MCP server at https://mcp.notion.com/mcp with OAuth and workspace read/update access, contradicting not_stated_in_docs. This may be post-freeze source drift and should be checked against the frozen packet timestamp.",
+      "source": "https://developers.notion.com/guides/mcp/get-started-with-mcp"
+    },
+    {
+      "row_id": "R035",
+      "app": "Stripe",
+      "field": "api_surface",
+      "result": "supported",
+      "note": "The API reference calls the API REST and lists official client libraries, consistent with REST plus SDK.",
+      "source": "https://docs.stripe.com/api"
+    },
+    {
+      "row_id": "R038",
+      "app": "Reducto",
+      "field": "credential_gate",
+      "result": "partial_or_inconclusive",
+      "note": "The cited quickstart provides API onboarding context but does not itself settle the prototype and production access tiers. not_stated_in_docs is only consistent with this page, not the wider docs set.",
+      "source": "https://docs.reducto.ai/quickstart"
+    },
+    {
+      "row_id": "R046",
+      "app": "higgsfield",
+      "field": "credential_gate",
+      "result": "partial_or_inconclusive",
+      "note": "Current vendor docs say API use requires a funded prepaid USD balance and explicitly says there is no API plan or subscription. The saved paid_plan category is a rough proxy, not an exact description of pay-as-you-go access.",
+      "source": "https://higgsfield.ai/creator-hub/help-center/integrations/what-is-the-higgsfield-api"
+    },
+    {
+      "row_id": "R049",
+      "app": "Salesforce",
+      "field": "auth",
+      "result": "supported",
+      "note": "The official Trailhead flow configures Authorization Code with PKCE and obtains an org access token, consistent with user OAuth.",
+      "source": "https://trailhead.salesforce.com/content/learn/projects/quick-start-connect-postman-to-salesforce/set-up-and-connect-postman"
+    },
+    {
+      "row_id": "R051",
+      "app": "Salesforce",
+      "field": "api_surface",
+      "result": "supported",
+      "note": "The official guide lists REST, SOAP, Connect, UI, Analytics, Bulk, Metadata, and Streaming APIs, supporting a broad REST/SOAP surface.",
+      "source": "https://trailhead.salesforce.com/content/learn/projects/quick-start-connect-postman-to-salesforce/set-up-your-org"
+    },
+    {
+      "row_id": "R055",
+      "app": "Zoho CRM",
+      "field": "api_surface",
+      "result": "partial_or_inconclusive",
+      "note": "The cited v8 page confirms REST endpoints and several API families. It does not establish an SDK from the inspected page, so the REST portion is supported but the full REST-plus-SDK label is not fully confirmed.",
+      "source": "https://www.zoho.com/crm/developer/docs/api/v8/"
+    },
+    {
+      "row_id": "R057",
+      "app": "YouTube Transcript",
+      "field": "auth",
+      "result": "supported",
+      "note": "The current API reference explicitly requires Bearer-token authentication using an API key.",
+      "source": "https://transcriptapi.com/docs/api/"
+    },
+    {
+      "row_id": "R058",
+      "app": "YouTube Transcript",
+      "field": "credential_gate",
+      "result": "supported",
+      "note": "The official JavaScript quickstart says signup includes 100 free credits with no card; paid credit use is documented separately.",
+      "source": "https://transcriptapi.com/docs/getting-started/javascript/"
+    },
+    {
+      "row_id": "R059",
+      "app": "YouTube Transcript",
+      "field": "api_surface",
+      "result": "conflict",
+      "note": "The current cited API reference documents numerous HTTPS endpoints (transcript, metadata, search, channel and playlist APIs), contradicting not_stated_in_docs. This may be post-freeze source drift.",
+      "source": "https://transcriptapi.com/docs/api/"
+    },
+    {
+      "row_id": "R060",
+      "app": "YouTube Transcript",
+      "field": "official_mcp",
+      "result": "supported",
+      "note": "The official MCP page documents a hosted server at https://transcriptapi.com/mcp, OAuth/API-key auth, and 12 tools.",
+      "source": "https://transcriptapi.com/docs/mcp/"
+    },
+    {
+      "row_id": "R063",
+      "app": "Gladly",
+      "field": "api_surface",
+      "result": "supported",
+      "note": "Current technical planning docs describe the REST API and explicitly list Web, iOS, and Android Chat SDKs.",
+      "source": "https://help.gladly.com/developer-tutorials/docs/technical-planning/"
+    },
+    {
+      "row_id": "R065",
+      "app": "Xero",
+      "field": "auth",
+      "result": "supported",
+      "note": "Xero's FAQ says API access uses OAuth 2.0, disallows basic API-key auth, and documents client-credentials grants for machine-to-machine cases.",
+      "source": "https://developer.xero.com/faq"
+    },
+    {
+      "row_id": "R079",
+      "app": "Lark (Larksuite)",
+      "field": "api_surface",
+      "result": "partial_or_inconclusive",
+      "note": "The cited Lark page did not render readable text in the browser checker. Current Lark search results confirm RESTful OpenAPI, but the SDK part of the saved label was not independently confirmed from the cited page.",
+      "source": "https://open.larksuite.com/document/ukTMukTMukTM/uITNz4iM1MjLyUzM"
+    },
+    {
+      "row_id": "R080",
+      "app": "Lark (Larksuite)",
+      "field": "official_mcp",
+      "result": "supported",
+      "note": "The official page title and current Lark search result describe installing and using OpenAPI MCP locally; the page itself did not render readable text in the browser checker.",
+      "source": "https://open.larksuite.com/document/uAjLw4CM/ukTMukTMukTM/mcp_integration/mcp_installation"
+    }
+  ],
+  "provenance_limit": "This source re-check was performed by an AI assistant, after the gold labels were visible, and is not a blinded independent annotation or a human check. It cannot establish labeler identity, prior-chat contamination, or historical truth at the frozen-excerpt date. human_log.json contains earlier Google Ads auth/access decisions for an app in the gold set; merge_gold_labels.py copies only private/labels_returned.csv and does not mechanically merge human_log.json, but no labeler/session identity record proves those earlier decisions were excluded from the labeling process."
+}

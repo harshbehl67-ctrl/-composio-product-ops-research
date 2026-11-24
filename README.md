@@ -1,102 +1,48 @@
 # Composio integration evidence
 
-Final official-documentation audit for the [AI Product Ops take-home assignment](https://composio.notion.site/AI-Product-Ops-Intern-The-take-home-assignment-391f261a6dfe80e9946bee899d3a3762). The self-contained case study is `index.html`; every displayed count is generated from `checked_dataset_v4.json`.
+A documentation-based survey of 100 apps across 10 categories for the [AI Product Ops take-home assignment](https://composio.notion.site/AI-Product-Ops-Intern-The-take-home-assignment-391f261a6dfe80e9946bee899d3a3762). The single-file case study is `index.html`; it embeds the app data and exports filtered JSON and CSV from the page.
 
 ## Live page
 
-https://harshbehl67-ctrl.github.io/-composio-product-ops-research/
+[Open the current GitHub Pages URL](https://harshbehl67-ctrl.github.io/-composio-product-ops-research/)
 
-## Results
+The hosted URL must be opened after the reviewed update is published; the existing deployment may still serve an older version.
 
-| Measure | Result |
-|---|---:|
-| Apps / categories | 100 / 10 |
-| Checked vendor-field claims | 496 / 500 |
-| Checked Composio toolkit claims | 100 / 100 |
-| Documented build candidates | 64 |
-| Gated build candidates | 30 |
-| Partner / sales outreach | 3 |
-| Wrapper or CLI path | 2 |
-| Unresolved verdict | 1 |
-| Vendor-operated MCP servers documented | 92 |
-| Scoped no-vendor-server documentation findings | 8 |
-| Composio exact / alias / not listed | 69 / 11 / 20 |
+## Findings
 
-Coverage is 99/100 for authentication, credential access, API surface, and buildability; 100/100 for vendor MCP and Composio toolkit status. The remaining unresolved app is Fanbasis, now Commas: current public pages document APIs and an MCP beta but omit API authentication, credential issuance, protocol, and endpoint breadth, while the legacy API Docs site is password-protected.
+- 100 apps across 10 categories; 496 of 500 vendor-field answers have a cited source.
+- 64 apps meet the documented build-candidate rule; 60 are easy wins with free or trial prototype access and a broad or moderate API.
+- 36 apps document a production gate: paid plan (19), admin approval (8), app review (6), or partner/sales (3).
+- The normalized access table shows free/trial prototype access for 78 apps and free/trial production access for 62; 16 apps move into a production gate.
+- Composio lists 80 of the 100 apps; 20 are not listed. Auth-scheme comparison is reported separately from vendor auth.
+- Vendor MCP research distinguishes hosted actions, docs/read-only, local/self-hosted, beta/EAP, prelaunch, none, and unresolved cases.
+- The Firecrawl-through-Composio result is a small six-page illustration, not a benchmark: direct retrieval reproduced 4 stored quotes and Firecrawl reproduced 5.
 
-These are documentation findings, not live credential tests. No paid account, production token, admin approval, partner agreement, SDK runtime, or MCP runtime was tested.
+## Gold validation and limits
 
-## Evidence model
+The 80-row gold covers four fields across 10 selected apps and 10 random holdout apps. The saved record says labels came from a separate AI session using frozen page excerpts; the model/session identity was not recorded. No independent human check of the gold is recorded. The merge script reads only `private/labels_returned.csv`, not `human_log.json`, so there is no direct mechanical import of that log. However, `human_log.json` contains earlier Google Ads auth/access decisions for an app also in the gold set, and the saved files do not establish whether those earlier chat labels were excluded from the separate labeling session. `gold_source_recheck_v1.json` records an AI source re-check of 24 seeded rows; it is neither a human agreement measure nor blind to the saved labels. It found 16 directly supported rows, 2 current-source conflicts, and 6 partial or inconclusive cases. Some conflicts may reflect source changes since the excerpts were frozen.
 
-Each checked field contains:
+The final pass scored 60/74 scoreable gold rows answered (75.0% coverage), 61.7% strict precision (37/60), 80.8% half-credit (37 correct plus half of 23 partial), and zero incorrect answers. The remaining 6 gold rows are unresolved and 14 are not stated in the frozen evidence. Selected and holdout results are split on the page. These figures are descriptive of this small sample.
 
-- a controlled value and scoped reason;
-- exact official URL, quotation, title, and retrieval date;
-- publication/update date or an explicit undated label;
-- source-review metadata when direct retrieval required rendered-browser verification.
+This is documentation research. Vendor credentials and production integrations were not tested. A Composio-hosted MCP session was used for the research workflow; its search tool discovered Firecrawl tools, but the project did not have an active Firecrawl account connection during that recorded run.
 
-Vendor MCP is classified separately from Composio listings. `no_vendor_server_documented` is a scoped documentation finding, not universal absence. Unknown is retained only where targeted first-party research could not resolve the field.
+## Run the demo
 
-## Preserved research
+```bash
+python run_submission_demo_v4.py
+```
 
-- `data/001.json`–`data/100.json`: immutable baseline discovery pass.
-- `data/pass2/`, `data/pass8/`–`data/pass12/`: frozen extraction/replay passes and reruns.
-- `data/checked_research_raw/`: raw snapshots of all ten final category files before review edits.
-- `data/checked_research/`: reviewed category records and independent selected/holdout review logs.
-- `source_review_v4.json` and `data/source_review_group_*_v4.json`: exact replacements, reclassifications, record updates, and rendered-page keeps.
-- `research_pass_manifest.json`: hash manifest for preserved research artifacts.
-- `security_example_review.json`: first-commit Zendesk bearer-example audit.
-- `redaction_log.json`: public documentation token examples redacted before publication, including two GitHub push-protection findings.
-
-## Independent six-field review
-
-The deliberately selected ten-category sample and seeded random holdout are reported separately.
-
-| Cohort | Answered | Correct | Partial | Incorrect | Abstained | Strict | Half-credit |
-|---|---:|---:|---:|---:|---:|---:|---:|
-| Selected sample | 33/60 | 19 | 12 | 2 | 27 | 19/33 (57.6%) | 25/33 (75.8%) |
-| Random holdout | 26/60 | 14 | 8 | 4 | 34 | 14/26 (53.8%) | 18/26 (69.2%) |
-
-Abstained and unresolved claims are excluded from accuracy denominators. The original baseline answered 0/60, so its answered-claim accuracy is undefined (0/0); no baseline accuracy-improvement claim is made.
+The deterministic offline output is captured in `run_submission_demo_sample_v4.json`. For a live single-app research run, configure `COMPOSIO_API_KEY` in a local `.env` file and use `python run_one.py --app "Stripe"`. Do not commit `.env`; it is ignored by Git.
 
 ## Reproduce
 
-Python 3.10+ and Node.js 18+ are sufficient. Install Python dependencies with `python -m pip install -r requirements.txt`.
+Python 3.10+ and Node.js 18+ are required. Install Python dependencies with `python -m pip install -r requirements.txt`.
 
 ```bash
-python -m unittest discover -v
-python normalize_checked_research_v4.py
-python apply_research_followups_v4.py
-python merge_source_review_v4.py
-python apply_source_review_v4.py
-python assemble_checked_v4.py
-python verify_checked_sources.py --review source_review_v4.json
-python check_links_v4.py --review source_review_v4.json
-python check_independent_links_v4.py --review independent_link_review_v4.json
-python score_review_v4.py
-python scan_secrets.py
 python build_case_v4.py
+python -m unittest discover -v
+node test_page_v4.cjs
+python scan_secrets.py
 ```
 
-The source verifier uses visible HTML text and explicit Markdown/plain-text/JSON/XML artifacts. Raw HTML, scripts, navigation, and hidden elements do not validate quotations. Direct 403/404 results pass only when every checked use has an exact rendered-browser keep.
-
-## Browser tests
-
-The page tests use installed Chrome at the path configured in `test_page_v4.cjs`.
-
-```bash
-python -m http.server 8765 --bind 127.0.0.1
-CASE_URL=http://127.0.0.1:8765 node test_page_v4.cjs
-```
-
-The suite checks 1440px and 390px layouts, all filters, empty search, sorting, keyboard evidence details, no horizontal overflow, parsed JSON/CSV exports, formula-injection neutralization, raw-research exclusion, 100 unique apps, and the 60-claim holdout view.
-
-## Validation summary
-
-- 41 Python regression tests pass.
-- 592 unique dataset evidence URLs: zero broken checked links and zero unreviewed checked quote failures.
-- 123 independent-review URLs: zero unresolved; four Salesforce 403 responses are rendered-browser verified.
-- 1,728 files scanned: 42 credential-shaped occurrences, all inside preserved research; zero outside.
-- Desktop and mobile Playwright tests pass locally and on the live GitHub Pages URL with no script errors.
-
-See `research_diagnostics.md` for the full diagnosis, final counts, and limitations.
+The page generator derives counts from `checked_dataset_v4.json`, the access labels, and saved gold-scoring outputs. Source excerpts and detailed research files are retained in the repository; review the staged file list before publishing.

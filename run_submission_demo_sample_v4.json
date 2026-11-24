@@ -1,0 +1,28 @@
+{
+  "app": "Google Ads",
+  "mode": "offline - saved evidence and catalog snapshot; no network requests",
+  "evidence_urls": 14,
+  "first_party_urls": 14,
+  "quote_checks": "not run offline",
+  "catalog_snapshot": {
+    "in_composio": true,
+    "slug": "googleads",
+    "auth_schemes": [
+      "OAUTH2"
+    ],
+    "snapshot_date": "2026-11-24"
+  },
+  "auth_crosscheck": {
+    "composio_methods": [
+      "oauth2"
+    ],
+    "composio_transport": [],
+    "researched_methods": [
+      "oauth2",
+      "oauth2_service_account"
+    ],
+    "researched_transport": [],
+    "comparison": "research_broader",
+    "likely_cause": "The research documents methods Composio does not implement; Composio covers a subset, which is expected."
+  }
+}
