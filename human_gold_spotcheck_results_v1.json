@@ -1,0 +1,267 @@
+{
+  "checked_at": "2026-11-24",
+  "reviewer": "Author-submitted human documentation check (user supplied row-level verdicts and supporting quotes)",
+  "sample": {
+    "n": 24,
+    "seed": 20261125,
+    "selection": "12 selected and 12 holdout rows, sampled from 47 eligible rows after excluding the earlier AI source-check sample and app/field pairs with prior logged review decisions.",
+    "eligible_rows": 47,
+    "selected_rows": 12,
+    "holdout_rows": 12
+  },
+  "blinding": "Not independently blind: the author had previously seen assistant answers in this project thread. The specific rows excluded the earlier AI source-check sample and overlapping logged author-review pairs, but prior exposure to all project content cannot be ruled out.",
+  "scoring": "Status-only comparison: found/stated and not_stated_in_docs/not stated are compared; the one weak verdict is left ambiguous. The submitted verdicts do not provide complete controlled values for all fields, so full value agreement is not scored.",
+  "summary": {
+    "clear_rows": 23,
+    "status_matches": 15,
+    "status_disagreements": 8,
+    "clear_status_agreement": 0.6521739130434783,
+    "weak_or_ambiguous": 1,
+    "if_weak_counts_as_found_matches": 16,
+    "if_weak_counts_as_found_total": 24,
+    "if_weak_counts_as_found_agreement": 0.6666666666666666,
+    "field_scope_mismatches": 5
+  },
+  "rows": [
+    {
+      "row_id": "R072",
+      "cohort": "random_holdout",
+      "app": "Snowflake",
+      "field": "official_mcp",
+      "human_status": "not_stated_in_docs",
+      "gold_status": "found",
+      "status_agreement": false,
+      "note": "Human verdict says not stated; gold status is found."
+    },
+    {
+      "row_id": "R056",
+      "cohort": "random_holdout",
+      "app": "Zoho CRM",
+      "field": "official_mcp",
+      "human_status": "found",
+      "gold_status": "found",
+      "status_agreement": true,
+      "note": ""
+    },
+    {
+      "row_id": "R025",
+      "cohort": "selected_sample",
+      "app": "GitHub",
+      "field": "auth",
+      "human_status": "found",
+      "gold_status": "found",
+      "status_agreement": true,
+      "note": ""
+    },
+    {
+      "row_id": "R031",
+      "cohort": "selected_sample",
+      "app": "Notion",
+      "field": "api_surface",
+      "human_status": "found",
+      "gold_status": "found",
+      "status_agreement": true,
+      "note": ""
+    },
+    {
+      "row_id": "R033",
+      "cohort": "selected_sample",
+      "app": "Stripe",
+      "field": "auth",
+      "human_status": "found",
+      "gold_status": "found",
+      "status_agreement": true,
+      "note": ""
+    },
+    {
+      "row_id": "R054",
+      "cohort": "random_holdout",
+      "app": "Zoho CRM",
+      "field": "credential_gate",
+      "human_status": "found",
+      "gold_status": "not_stated_in_docs",
+      "status_agreement": false,
+      "note": "Submitted supporting quote addresses authentication, while this row asks about credential/access gating; status-only comparison is not a value-level match."
+    },
+    {
+      "row_id": "R042",
+      "cohort": "random_holdout",
+      "app": "Discord",
+      "field": "credential_gate",
+      "human_status": "found",
+      "gold_status": "unresolved",
+      "status_agreement": false,
+      "note": "Submitted supporting quote addresses authentication, while this row asks about credential/access gating; status-only comparison is not a value-level match."
+    },
+    {
+      "row_id": "R076",
+      "cohort": "random_holdout",
+      "app": "Sentry",
+      "field": "official_mcp",
+      "human_status": "found",
+      "gold_status": "found",
+      "status_agreement": true,
+      "note": ""
+    },
+    {
+      "row_id": "R002",
+      "cohort": "selected_sample",
+      "app": "HubSpot",
+      "field": "credential_gate",
+      "human_status": "found",
+      "gold_status": "unresolved",
+      "status_agreement": false,
+      "note": "Submitted supporting quote addresses authentication, while this row asks about credential/access gating; status-only comparison is not a value-level match."
+    },
+    {
+      "row_id": "R077",
+      "cohort": "random_holdout",
+      "app": "Lark (Larksuite)",
+      "field": "auth",
+      "human_status": "found",
+      "gold_status": "not_stated_in_docs",
+      "status_agreement": false,
+      "note": "Human verdict says found; gold status is not stated."
+    },
+    {
+      "row_id": "R039",
+      "cohort": "selected_sample",
+      "app": "Reducto",
+      "field": "api_surface",
+      "human_status": "found",
+      "gold_status": "found",
+      "status_agreement": true,
+      "note": ""
+    },
+    {
+      "row_id": "R017",
+      "cohort": "selected_sample",
+      "app": "Shopify",
+      "field": "auth",
+      "human_status": "found",
+      "gold_status": "found",
+      "status_agreement": true,
+      "note": ""
+    },
+    {
+      "row_id": "R036",
+      "cohort": "selected_sample",
+      "app": "Stripe",
+      "field": "official_mcp",
+      "human_status": "found",
+      "gold_status": "found",
+      "status_agreement": true,
+      "note": ""
+    },
+    {
+      "row_id": "R067",
+      "cohort": "random_holdout",
+      "app": "Xero",
+      "field": "api_surface",
+      "human_status": "weak",
+      "gold_status": "found",
+      "status_agreement": null,
+      "note": "Marked stated (weak); left ambiguous, not counted in the clear-match denominator."
+    },
+    {
+      "row_id": "R061",
+      "cohort": "random_holdout",
+      "app": "Gladly",
+      "field": "auth",
+      "human_status": "found",
+      "gold_status": "found",
+      "status_agreement": true,
+      "note": ""
+    },
+    {
+      "row_id": "R075",
+      "cohort": "random_holdout",
+      "app": "Sentry",
+      "field": "api_surface",
+      "human_status": "found",
+      "gold_status": "not_stated_in_docs",
+      "status_agreement": false,
+      "note": "Human verdict says found; gold status is not stated."
+    },
+    {
+      "row_id": "R034",
+      "cohort": "selected_sample",
+      "app": "Stripe",
+      "field": "credential_gate",
+      "human_status": "found",
+      "gold_status": "not_stated_in_docs",
+      "status_agreement": false,
+      "note": "Submitted supporting quote addresses authentication, while this row asks about credential/access gating; status-only comparison is not a value-level match."
+    },
+    {
+      "row_id": "R073",
+      "cohort": "random_holdout",
+      "app": "Sentry",
+      "field": "auth",
+      "human_status": "found",
+      "gold_status": "found",
+      "status_agreement": true,
+      "note": ""
+    },
+    {
+      "row_id": "R005",
+      "cohort": "selected_sample",
+      "app": "Zendesk",
+      "field": "auth",
+      "human_status": "found",
+      "gold_status": "found",
+      "status_agreement": true,
+      "note": ""
+    },
+    {
+      "row_id": "R027",
+      "cohort": "selected_sample",
+      "app": "GitHub",
+      "field": "api_surface",
+      "human_status": "found",
+      "gold_status": "found",
+      "status_agreement": true,
+      "note": ""
+    },
+    {
+      "row_id": "R029",
+      "cohort": "selected_sample",
+      "app": "Notion",
+      "field": "auth",
+      "human_status": "found",
+      "gold_status": "found",
+      "status_agreement": true,
+      "note": ""
+    },
+    {
+      "row_id": "R041",
+      "cohort": "random_holdout",
+      "app": "Discord",
+      "field": "auth",
+      "human_status": "found",
+      "gold_status": "found",
+      "status_agreement": true,
+      "note": ""
+    },
+    {
+      "row_id": "R003",
+      "cohort": "selected_sample",
+      "app": "HubSpot",
+      "field": "api_surface",
+      "human_status": "found",
+      "gold_status": "unresolved",
+      "status_agreement": false,
+      "note": "Human verdict says found; gold status is unresolved."
+    },
+    {
+      "row_id": "R074",
+      "cohort": "random_holdout",
+      "app": "Sentry",
+      "field": "credential_gate",
+      "human_status": "found",
+      "gold_status": "found",
+      "status_agreement": true,
+      "note": "Submitted supporting quote addresses authentication, while this row asks about credential/access gating; status-only comparison is not a value-level match."
+    }
+  ]
+}

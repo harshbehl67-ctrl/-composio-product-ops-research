@@ -1,0 +1,175 @@
+{
+  "seed": 20261125,
+  "n": 24,
+  "selection": "12 selected-sample and 12 random-holdout rows sampled without replacement. Excludes rows in the prior AI source re-check and app/field pairs covered by prior logged author-review decisions.",
+  "rows": [
+    {
+      "row_id": "R072",
+      "sample": "random_holdout",
+      "app": "Snowflake",
+      "field": "official_mcp",
+      "docs_url": "https://docs.snowflake.com/en/user-guide/snowflake-cortex/cortex-agents-mcp.md"
+    },
+    {
+      "row_id": "R056",
+      "sample": "random_holdout",
+      "app": "Zoho CRM",
+      "field": "official_mcp",
+      "docs_url": "https://www.zoho.com/crm/developer/docs/mcp/overview.html"
+    },
+    {
+      "row_id": "R025",
+      "sample": "selected_sample",
+      "app": "GitHub",
+      "field": "auth",
+      "docs_url": "https://docs.github.com/en/rest/authentication/authenticating-to-the-rest-api"
+    },
+    {
+      "row_id": "R031",
+      "sample": "selected_sample",
+      "app": "Notion",
+      "field": "api_surface",
+      "docs_url": "https://developers.notion.com/reference/intro"
+    },
+    {
+      "row_id": "R033",
+      "sample": "selected_sample",
+      "app": "Stripe",
+      "field": "auth",
+      "docs_url": "https://docs.stripe.com/api/authentication"
+    },
+    {
+      "row_id": "R054",
+      "sample": "random_holdout",
+      "app": "Zoho CRM",
+      "field": "credential_gate",
+      "docs_url": "https://www.zoho.com/crm/developer/docs/api/v8/api-limits.html"
+    },
+    {
+      "row_id": "R042",
+      "sample": "random_holdout",
+      "app": "Discord",
+      "field": "credential_gate",
+      "docs_url": "https://docs.discord.com/developers/quick-start/getting-started"
+    },
+    {
+      "row_id": "R076",
+      "sample": "random_holdout",
+      "app": "Sentry",
+      "field": "official_mcp",
+      "docs_url": "https://blog.sentry.io/yes-sentry-has-an-mcp-server-and-its-pretty-good/"
+    },
+    {
+      "row_id": "R002",
+      "sample": "selected_sample",
+      "app": "HubSpot",
+      "field": "credential_gate",
+      "docs_url": "https://developers.hubspot.com/docs/api-reference/latest/crm/associations/associate-records/guide"
+    },
+    {
+      "row_id": "R077",
+      "sample": "random_holdout",
+      "app": "Lark (Larksuite)",
+      "field": "auth",
+      "docs_url": "https://open.larksuite.com/document/server-docs/getting-started/terminology"
+    },
+    {
+      "row_id": "R039",
+      "sample": "selected_sample",
+      "app": "Reducto",
+      "field": "api_surface",
+      "docs_url": "https://docs.reducto.ai/agent-guide"
+    },
+    {
+      "row_id": "R017",
+      "sample": "selected_sample",
+      "app": "Shopify",
+      "field": "auth",
+      "docs_url": "https://shopify.dev/docs/api/usage/authentication"
+    },
+    {
+      "row_id": "R036",
+      "sample": "selected_sample",
+      "app": "Stripe",
+      "field": "official_mcp",
+      "docs_url": "https://docs.stripe.com/mcp"
+    },
+    {
+      "row_id": "R067",
+      "sample": "random_holdout",
+      "app": "Xero",
+      "field": "api_surface",
+      "docs_url": "https://developer.xero.com/faq"
+    },
+    {
+      "row_id": "R061",
+      "sample": "random_holdout",
+      "app": "Gladly",
+      "field": "auth",
+      "docs_url": "https://help.gladly.com/developer-tutorials/docs/setup-and-testing/"
+    },
+    {
+      "row_id": "R075",
+      "sample": "random_holdout",
+      "app": "Sentry",
+      "field": "api_surface",
+      "docs_url": "https://docs.sentry.io/api.md"
+    },
+    {
+      "row_id": "R034",
+      "sample": "selected_sample",
+      "app": "Stripe",
+      "field": "credential_gate",
+      "docs_url": "https://stripe.com/pricing"
+    },
+    {
+      "row_id": "R073",
+      "sample": "random_holdout",
+      "app": "Sentry",
+      "field": "auth",
+      "docs_url": "https://docs.sentry.io/api/auth.md"
+    },
+    {
+      "row_id": "R005",
+      "sample": "selected_sample",
+      "app": "Zendesk",
+      "field": "auth",
+      "docs_url": "https://developer.zendesk.com/api-reference/introduction/security-and-auth/"
+    },
+    {
+      "row_id": "R027",
+      "sample": "selected_sample",
+      "app": "GitHub",
+      "field": "api_surface",
+      "docs_url": "https://docs.github.com/en/rest/about-the-rest-api/comparing-githubs-rest-api-and-graphql-api"
+    },
+    {
+      "row_id": "R029",
+      "sample": "selected_sample",
+      "app": "Notion",
+      "field": "auth",
+      "docs_url": "https://developers.notion.com/guides/authorization/overview"
+    },
+    {
+      "row_id": "R041",
+      "sample": "random_holdout",
+      "app": "Discord",
+      "field": "auth",
+      "docs_url": "https://docs.discord.com/developers/reference"
+    },
+    {
+      "row_id": "R003",
+      "sample": "selected_sample",
+      "app": "HubSpot",
+      "field": "api_surface",
+      "docs_url": "https://developers.hubspot.com/docs/apps/developer-platform/build-apps/authentication/overview"
+    },
+    {
+      "row_id": "R074",
+      "sample": "random_holdout",
+      "app": "Sentry",
+      "field": "credential_gate",
+      "docs_url": "https://sentry.io/pricing/index.md"
+    }
+  ]
+}
