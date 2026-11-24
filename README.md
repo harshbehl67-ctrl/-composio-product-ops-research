@@ -11,7 +11,7 @@ The hosted URL must be opened after the reviewed update is published; the existi
 ## Findings
 
 - 100 apps across 10 categories; 496 of 500 vendor-field answers have a cited source.
-- 64 apps meet the documented build-candidate rule; 60 are easy wins with free or trial prototype access and a broad or moderate API.
+- 64 apps meet the documented build-candidate rule; 60 are easy wins: documented candidates with free or trial access for both prototype and production plus a broad or moderate API.
 - 36 apps document a production gate: paid plan (19), admin approval (8), app review (6), or partner/sales (3).
 - The normalized access table shows free/trial prototype access for 78 apps and free/trial production access for 62; 16 apps move into a production gate.
 - Composio lists 80 of the 100 apps; 20 are not listed. Auth-scheme comparison is reported separately from vendor auth.
