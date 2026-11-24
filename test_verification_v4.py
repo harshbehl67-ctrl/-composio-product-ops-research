@@ -59,7 +59,13 @@ class VerificationV4(unittest.TestCase):
         self.assertEqual({loop['id'] for loop in loops}, {'i', 'ii', 'iii', 'iv', 'v', 'vi'})
         for loop in loops:
             self.assertTrue(loop['artifact'])
-            self.assertIn(loop['kind'], ('automated', 'human'))
+            self.assertIn(loop['kind'], ('automated', 'saved_review_record'))
+            self.assertIn(loop['actor_type'], ('script', 'not recorded'))
+        saved_review = next(loop for loop in loops if loop['id'] == 'iv')
+        self.assertEqual(saved_review['actor_type'], 'not recorded')
+        self.assertNotIn('Independent verifier agent', saved_review['name'])
+        self.assertIn('reviewer identity is not recorded', saved_review['result'])
+        self.assertNotIn('human', saved_review['kind'])
 
     def test_failure_taxonomy_has_causes_and_loops(self):
         taxonomy = VERIFICATION['failure_taxonomy']

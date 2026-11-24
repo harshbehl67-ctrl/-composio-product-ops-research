@@ -1,15 +1,19 @@
-"""Research ONE app end to end and verify it: the runnable proof trigger.
+"""Revalidate an app's saved checked record against current sources.
 
     python run_one.py --app "Stripe"
 
-What it does, for a single app of the 100:
-  1. loads the researched record (all six claim fields with value, reason and
+What it does for one app in the 100-app checked dataset:
+  1. loads the existing checked record (all six claim fields with value, reason and
      evidence quotes + URLs);
   2. looks the app up in Composio's own catalog (GET /api/v3/toolkits/{slug});
   3. re-fetches every evidence URL and checks (a) the page is live, (b) it is on
      a first-party domain, and (c) each quote still appears in the page text;
   4. cross-checks Composio's auth schemes against the researched auth;
-  5. prints one JSON object with the quotes, URLs and every verification result.
+  5. prints one JSON object with the saved claims, URLs and each revalidation result.
+
+This command does not collect fresh research or discover new claims. Use
+run_pipeline.py --mode live to collect fresh evidence separately, then revalidate
+the existing checked record; newly collected evidence still needs manual review.
 
 Add --offline to skip the network and only print the stored evidence plus the
 catalog cross-check. The API key is read from .env and never printed.
@@ -64,12 +68,12 @@ def check_url(url: str, quotes: list[str]) -> dict:
 
 
 def main() -> int:
-    parser = argparse.ArgumentParser(description='Research and verify one app end to end.')
+    parser = argparse.ArgumentParser(description='Revalidate the saved checked record for one app.')
     parser.add_argument('--app', required=True, help='App name, e.g. "Stripe"')
     mode = parser.add_mutually_exclusive_group()
     mode.add_argument('--live', action='store_true',
-                      help='Fetch evidence URLs and perform the Composio catalog check (default)')
-    mode.add_argument('--offline', action='store_true', help='Skip network fetch of evidence URLs')
+                      help='Re-fetch saved evidence URLs and check the Composio catalog (default)')
+    mode.add_argument('--offline', action='store_true', help='Use saved evidence and catalog snapshots only')
     args = parser.parse_args()
 
     app = load_app(args.app)

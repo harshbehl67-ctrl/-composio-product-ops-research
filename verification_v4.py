@@ -288,25 +288,26 @@ legacy_flags = [key for key, record in reviewed.items()
                        for word in ('legacy', 'deprecat', 'migrat', 'stale', 'no longer'))]
 
 loops = [
-    {'id': 'i', 'name': 'Quote-must-appear substring check', 'kind': 'automated',
+    {'id': 'i', 'name': 'Quote-must-appear substring check', 'kind': 'automated', 'actor_type': 'script',
      'artifact': 'source_checks_v4.json', 'script': 'verify_checked_sources.py',
      'result': f'{len(reproduced)}/{len(uses_quoted)} quotes reproduced by direct fetch across {urls} URLs'},
-    {'id': 'ii', 'name': 'URL liveness', 'kind': 'automated',
+    {'id': 'ii', 'name': 'URL liveness', 'kind': 'automated', 'actor_type': 'script',
      'artifact': 'source_checks_v4.json + independent_link_checks_v4.json', 'script': 'verify_checked_sources.py / check_independent_links_v4.py',
      'result': f'{len(non_200)} non-200 evidence URLs; {len(link_fail)} of {len(link_checks)} independent-review URLs failed before fallback'},
-    {'id': 'iii', 'name': 'Composio catalog auth cross-check', 'kind': 'automated',
+    {'id': 'iii', 'name': 'Composio catalog auth cross-check', 'kind': 'automated', 'actor_type': 'script',
      'artifact': 'catalog_crosscheck.json', 'script': 'catalog_crosscheck.py',
      'result': f"{crosscheck['apps_in_catalog']}/{crosscheck['apps_total']} apps in catalog; "
                f"{crosscheck['disagreements']} auth disagreements logged"},
-    {'id': 'iv', 'name': 'Independent verifier agent', 'kind': 'human',
+    {'id': 'iv', 'name': 'Saved cohort review scoring (reviewer identity not recorded)',
+     'kind': 'saved_review_record', 'actor_type': 'not recorded',
      'artifact': 'independent_review_v4.json + source_review_v4.json', 'script': 'score_review_v4.py / score_first_pass_v4.py',
-     'result': f"reviewer scored both cohorts (60 claims each); source audit kept {source_review['audit_summary']['keep']}, "
+     'result': f"saved ratings cover both cohorts (60 claims each); reviewer identity is not recorded. Source audit kept {source_review['audit_summary']['keep']}, "
                f"replaced {source_review['audit_summary']['replace']}, unresolved {source_review['audit_summary']['unresolved']}"},
-    {'id': 'v', 'name': 'Browser fallback for JS-rendered pages', 'kind': 'automated',
+    {'id': 'v', 'name': 'Browser fallback for JS-rendered pages', 'kind': 'automated', 'actor_type': 'script',
      'artifact': 'source_checks_v4.json (manual_review) + data/browser_source_checks_v4.json', 'script': 'check_independent_links_v4.py --review',
      'result': f'{len(browser_keeps)} quotes kept after headless-Chromium render; {len(raw_only)} raw-HTML-only matches; '
                f'{len(link_browser)} independent links browser-verified'},
-    {'id': 'vi', 'name': 'Date / deprecation check', 'kind': 'automated',
+    {'id': 'vi', 'name': 'Date / deprecation check', 'kind': 'automated', 'actor_type': 'script',
      'artifact': 'checked_dataset_v4.json (published_label) + surprise audit below', 'script': 'verification_v4.py',
      'result': f'{len(legacy_flags)} reviewed claims flagged as legacy/deprecated/stale in the review notes'},
 ]

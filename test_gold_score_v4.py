@@ -9,10 +9,15 @@ Guards the two fixes requested for Phase 3a:
 The graders return a single rating string ('correct' | 'partial' | 'incorrect' |
 'abstained' | 'unresolved'); a 'partial' is what lands in the adjudication queue.
 """
+import csv
+import json
 import unittest
+from pathlib import Path
 
 import gold_score_v4 as gs
 import gold_set_v4 as gset
+
+ROOT = Path(__file__).resolve().parent
 
 
 class GoldTemplateSchema(unittest.TestCase):
@@ -138,6 +143,26 @@ class VerdictRule(unittest.TestCase):
 
 
 class GoldMetrics(unittest.TestCase):
+    def test_published_scoreable_rubric_matches_four_field_denominator(self):
+        self.assertEqual(
+            gs.RUBRIC['scoreable_coverage'],
+            'For the four judgment fields, answered / rows with gold_status="found"; '
+            'not_stated_in_docs and unresolved rows are gold-unscoreable and excluded. '
+            'For the two rule fields, all sampled rows are scoreable by convention: '
+            'Composio toolkit status comes from the saved catalog snapshot and verdict is rule-derived.'
+        )
+        with (ROOT / 'gold_template.csv').open(encoding='utf-8', newline='') as handle:
+            rows = list(csv.DictReader(handle))
+        found_only = sum(row['gold_status'] == 'found' for row in rows)
+        self.assertEqual(found_only, 60)
+
+        published = json.loads((ROOT / 'gold_ratings_v4.json').read_text(encoding='utf-8'))
+        self.assertEqual(published['rubric']['scoreable_coverage'], gs.RUBRIC['scoreable_coverage'])
+        final = published['overall']['pass3']['judgment_fields']
+        self.assertEqual((final['total'], final['scoreable'], final['answered']), (80, found_only, 60))
+        self.assertEqual(published['per_field']['pass3']['composio_toolkit']['scoreable'], 20)
+        self.assertEqual(published['per_field']['pass3']['verdict']['scoreable'], 20)
+
     def test_sampled_and_scoreable_denominators_are_distinct(self):
         ratings = ['correct'] * 37 + ['partial'] * 23 + ['unresolved'] * 20
         result = gs.summarise(ratings, scoreable_total=60)

@@ -61,7 +61,12 @@ VERDICT_RULE = (
 
 RUBRIC = {
     'coverage': 'answered / total sampled rows.',
-    'scoreable_coverage': 'answered / rows whose gold status is found or not_stated_in_docs; unresolved gold is excluded.',
+    'scoreable_coverage': (
+        'For the four judgment fields, answered / rows with gold_status="found"; '
+        'not_stated_in_docs and unresolved rows are gold-unscoreable and excluded. '
+        'For the two rule fields, all sampled rows are scoreable by convention: '
+        'Composio toolkit status comes from the saved catalog snapshot and verdict is rule-derived.'
+    ),
     'precision_strict': 'correct / answered.',
     'precision_half': '(correct + 0.5 * partial) / answered.',
     'interval': 'Wilson 95% interval for integer-success proportions only; no interval is reported for fractional half-credit.',
