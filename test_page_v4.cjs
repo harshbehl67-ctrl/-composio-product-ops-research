@@ -38,7 +38,17 @@ let browser;
     const page = await browser.newPage({viewport: {width, height: 900}, acceptDownloads: true});
     const errors = [];
     page.on('pageerror', error => errors.push(error.message));
+    page.on('console', message => { if (message.type() === 'error') errors.push(message.text()); });
     await page.goto(process.env.CASE_URL || pathToFileURL(path.resolve('index.html')).href);
+    const actorView = page.locator('#actor-view');
+    await actorView.waitFor({state: 'visible'});
+    const actorText = await actorView.innerText();
+    if (!actorText.includes('Agent and pipeline outputs') || !actorText.includes('Human-in-the-loop work') ||
+        !actorText.includes('Hits and misses by actor') || !actorText.includes('Where a human decision is still needed')) {
+      throw Error('Actor attribution section is incomplete');
+    }
+    const actorBox = await actorView.evaluate(element => ({scroll: element.scrollWidth, client: element.clientWidth}));
+    if (actorBox.scroll > actorBox.client + 1) throw Error(`Actor view overflows horizontally at ${width}px`);
     await page.locator('#rows tr').first().waitFor();
     const pageCopy = await page.locator('body').innerText();
     if (!pageCopy.includes('python run_pipeline.py --mode live --app "Google Ads"')) throw Error('Combined live pipeline command is missing');

@@ -26,6 +26,34 @@ The six-field score is secondary and uses a different denominator. Across three 
 
 Gold labels were AI-produced from frozen excerpts. The model and session identity were not recorded; the evidence that earlier assistant answers were withheld or earlier chat labels excluded is unverified. The author later status-checked 24 rows (12 selected, 12 holdout): 15/23 clear status labels agreed (65.2%), with one weak case; counting it as found gives 16/24 (66.7%). This same-author check is not independent and does not establish full value agreement. Five credential-gate checks rely on authentication evidence whose scope may not establish a gate. Three disputed gold rows remain disclosed separately: R032 Notion and R059 YouTube Transcript await human adjudication; R072 Snowflake remains `found` despite the author's spot-check disagreement. The frozen gold was not silently rewritten. See [`gold_provenance_v1.json`](gold_provenance_v1.json), [`human_gold_spotcheck_results_v1.json`](human_gold_spotcheck_results_v1.json), and [`current_source_adjudication_v1.json`](current_source_adjudication_v1.json).
 
+<!-- BEGIN GENERATED ACTOR ATTRIBUTION -->
+
+## Who did what: agent and human contributions
+
+Counts below are generated from the saved gold source, pass-3 ratings, author-check results, override log, and adjudication ledger. Gold labels and human-check events are separate: a human check does not turn an AI-labeled row into a human label.
+
+### Agent and pipeline output
+
+- **80 AI-attributed gold rows**; `label_source`: `gold_template.csv; AI labeler/session identity not recorded`. The saved record attributes labels to AI; model/session identity is not recorded and earlier-chat exclusion is `unverified`.
+- **40 pipeline-derived rule comparisons** (20 apps × 2 fields: composio_toolkit, verdict); these are catalog/rule outputs, not human labels.
+- Pass 3 scored 80 four-field answers: **37 exact, 23 partial, 0 incorrect**. Another 20 ratings are unscoreable from the frozen reference (14 not stated, 6 unresolved).
+
+### Human-in-the-loop work
+
+- The author log contains **43 authored classification overrides**, separate from the gold labels and the status spot-check.
+- The author checked **24 documentation-status rows** (12 selected, 12 holdout), same-author, non-blind, and status-only: **15/23 clear matches (65.2%), 8 disagreements, 1 weak row**. This is a separate check event; it did not relabel the gold set.
+
+### Hits, misses, and decisions still needed
+
+- **Agent:** 37 exact hits, 23 partial answers, 0 incorrect. The 20 unresolved ratings are not agent errors: 14 references are not stated and 6 are unresolved.
+- **Human status check:** 15 hits, 8 clear misses, 1 weak row across 24 checks; clear-only agreement is 15/23 (65.2%).
+- Improve excerpts or leave 20 frozen references unscored (14 not stated, 6 unresolved).
+- Adjudicate R032 Notion, R059 YouTube Transcript; review the frozen conflicts before issuing a corrected-gold version.
+- Review the author/gold disagreement for R072 Snowflake; do not silently change the frozen label.
+- Re-check 5 credential-gate rows (R054 Zoho CRM, R042 Discord, R002 HubSpot, R034 Stripe, R074 Sentry); auth-only evidence does not establish an access gate.
+
+<!-- END GENERATED ACTOR ATTRIBUTION -->
+
 ## Run the demo
 
 Python 3.10 or newer:

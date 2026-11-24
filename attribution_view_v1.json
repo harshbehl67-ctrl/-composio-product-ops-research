@@ -1,0 +1,117 @@
+{
+  "sources": {
+    "label_source": "gold_template.csv; AI labeler/session identity not recorded",
+    "gold_provenance_actor": "AI",
+    "gold_labeler_identity": "not recorded",
+    "earlier_chat_label_exclusion": "unverified",
+    "human_check_actor": "human author"
+  },
+  "agent_only": {
+    "ai_gold_rows": 80,
+    "pipeline_derived_rule_rows": 40,
+    "pipeline_derived_app_count": 20,
+    "pipeline_derived_fields": [
+      "composio_toolkit",
+      "verdict"
+    ],
+    "authored_classification_override_records": 43
+  },
+  "agent_pass3": {
+    "total_judgment_rows": 80,
+    "scoreable_rows": 60,
+    "answered_scoreable_rows": 60,
+    "exact_hits": 37,
+    "partial": 23,
+    "incorrect": 0,
+    "gold_unscoreable_ratings": 20,
+    "gold_not_stated": 14,
+    "gold_unresolved": 6
+  },
+  "human_spotcheck": {
+    "rows_checked": 24,
+    "selected_rows": 12,
+    "holdout_rows": 12,
+    "same_author": true,
+    "blind": false,
+    "unit": "gold status only, not full field-value agreement",
+    "hits": 15,
+    "clear_misses": 8,
+    "weak": 1,
+    "clear_status_agreement": 0.6521739130434783,
+    "credential_gate_scope_mismatch_rows": [
+      {
+        "row_id": "R054",
+        "app": "Zoho CRM"
+      },
+      {
+        "row_id": "R042",
+        "app": "Discord"
+      },
+      {
+        "row_id": "R002",
+        "app": "HubSpot"
+      },
+      {
+        "row_id": "R034",
+        "app": "Stripe"
+      },
+      {
+        "row_id": "R074",
+        "app": "Sentry"
+      }
+    ]
+  },
+  "human_decisions_needed": {
+    "gold_unscoreable_rows": 20,
+    "gold_not_stated": 14,
+    "gold_unresolved": 6,
+    "pending_adjudications": [
+      {
+        "row_id": "R032",
+        "app": "Notion",
+        "field": "official_mcp",
+        "issue": "The labeler note says a hosted MCP URL is stated, while the stored status is not_stated_in_docs. The frozen packet contains the URL and read/search tool names.",
+        "disposition": "Historical status/value inconsistency; preserve original score until the reviewer decides whether to issue a separately versioned corrected-gold evaluation."
+      },
+      {
+        "row_id": "R059",
+        "app": "YouTube Transcript",
+        "field": "api_surface",
+        "issue": "The frozen excerpt lists 13 HTTP GET endpoints but does not explicitly name REST or assign a breadth label.",
+        "disposition": "Keep the historical label unchanged pending human adjudication of whether protocol and breadth may be inferred from endpoint evidence."
+      }
+    ],
+    "author_spotcheck_disputes": [
+      {
+        "row_id": "R072",
+        "app": "Snowflake",
+        "field": "official_mcp",
+        "frozen_gold_status": "found",
+        "author_spotcheck_status": "not_stated_in_docs",
+        "disposition": "Gold remains found in the frozen evaluation; retain and disclose the separate author disagreement."
+      }
+    ],
+    "credential_gate_scope_mismatch_rows": [
+      {
+        "row_id": "R054",
+        "app": "Zoho CRM"
+      },
+      {
+        "row_id": "R042",
+        "app": "Discord"
+      },
+      {
+        "row_id": "R002",
+        "app": "HubSpot"
+      },
+      {
+        "row_id": "R034",
+        "app": "Stripe"
+      },
+      {
+        "row_id": "R074",
+        "app": "Sentry"
+      }
+    ]
+  }
+}

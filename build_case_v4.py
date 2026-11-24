@@ -8,8 +8,12 @@ from pathlib import Path
 
 import context_pass_v4 as pipeline
 import datamodel_v2
+import attribution_view
 
 ROOT = Path(__file__).resolve().parent
+actor_attribution = attribution_view.derive_attribution(ROOT)
+actor_attribution_html = attribution_view.render_html(actor_attribution)
+actor_attribution_readme = attribution_view.render_readme(actor_attribution)
 apps = json.loads((ROOT / 'checked_dataset_v4.json').read_text(encoding='utf-8'))
 summary = json.loads((ROOT / 'research_summary_v4.json').read_text(encoding='utf-8'))
 independent = json.loads((ROOT / 'independent_review_v4.json').read_text(encoding='utf-8'))
@@ -814,12 +818,18 @@ replacements = {
     '__SDK_AGREEMENT__': f"{sdk_check['listing_agreement']}/{sdk_check['apps_checked']}",
     '__SDK_TOOLS_COMPARED__': sdk_check['tools_compared'], '__SDK_TOOLS_MATCH__': sdk_check['tools_match'],
 }
+actor_insert_before = '<section><div class="kicker">04 / Accuracy lab'
+assert page.count(actor_insert_before) == 1
+page = page.replace(actor_insert_before, actor_attribution_html + actor_insert_before, 1)
 for key, value in replacements.items():
     page = page.replace(key, str(value))
 unreplaced = sorted(set(re.findall(r'__[A-Z_]+__', page)))
 assert not unreplaced, f'Unreplaced page placeholders: {unreplaced}'
 assert 'synthetic test row' not in page, 'Synthetic fixture must not be published'
 Path('index.html').write_text(page, encoding='utf-8')
+Path('attribution_view_v1.json').write_text(
+    json.dumps(actor_attribution, ensure_ascii=False, indent=2) + '\n', encoding='utf-8')
+attribution_view.update_readme(ROOT, actor_attribution_readme)
 print('Built index.html from checked_dataset_v4.json')
 print('Checked vendor claims', checked_vendor, '/500; catalog', catalog_checked, '/100; documented candidates', verdicts.get('documented_build_candidate', 0))
 
