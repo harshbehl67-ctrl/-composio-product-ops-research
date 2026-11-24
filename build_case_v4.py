@@ -285,6 +285,11 @@ assert summary['categories'] == categories
 assert summary['documented_easy_wins'] == easy_wins
 assert auth_crosscheck['apps_total'] == 100 and auth_crosscheck['apps_in_catalog'] == catalog_listed
 easy_win_html = '<ul>' + ''.join('<li>' + esc(name) + '</li>' for name in easy_wins) + '</ul>' if easy_wins else '<p>No app met the strict documented-easy-win rule in this checked set.</p>'
+easy_win_html = (f'<details><summary>{len(easy_wins)} eligible apps; rule: documented build candidate, '
+                 'free/trial for prototype and production, broad/moderate API</summary>'
+                 + easy_win_html + '</details>')
+build_next_html = (f'<details id="build-next"><summary>{len(build_next)} eligible apps missing from the catalog</summary>'
+                   + build_next_html + '</details>')
 
 review_records = []
 for cohort, result in (('Selected sample', selected), ('Random holdout', holdout)):
@@ -332,7 +337,7 @@ def move_row(label, selected_view, holdout_view):
 
 
 movement_html = (
-    '<details><summary>Earlier author self-review (secondary)</summary>'
+    f'<details><summary>Earlier author self-review (secondary): {fp_selected["first_pass"]["total_claims"] + fp_holdout["first_pass"]["total_claims"]} claims; self-assessed, not independent</summary>'
     '<p class="muted">The AI-labeled gold panel above is the scored comparison. The cards and table below are my own '
     'earlier six-field review of the same sample; they are disclosed as self-assessed, not as independent adjudication.</p>'
     '<div class="notice"><b>How I checked the accuracy.</b> '
@@ -552,6 +557,19 @@ broader_apps = sorted((row for row in auth_crosscheck.get('records', [])
 broader_html = '<ol>' + ''.join(f'<li><b>{esc(row["app"])}</b> — {len(row.get("research_not_in_composio", []))}: '
                                f'{esc(", ".join(row.get("research_not_in_composio", [])))}</li>'
                                for row in broader_apps) + '</ol>'
+category_names_for_cards = ('Marketing', 'Ecommerce', 'Support', 'Finance')
+focus_category_text = ', '.join(category_names_for_cards)
+conclusion_cards_html = (
+    '<article class="card" id="conclusion-prototype"><h3>Prototype to production</h3><p><b>'
+    f'{prototype_self_serve} prototype paths → {production_self_serve} production paths; '
+    f'{len(production_gated_names)} apps gain a gate</b></p></article>'
+    '<article class="card"><h3>Gate concentration</h3><p><b>'
+    f'{len(focus_categories)} categories hold {len(focus_gated)} of {production_gate_total} production gates</b>: '
+    f'{esc(focus_category_text)}.</p></article>'
+    '<article class="card"><h3>Catalog gaps</h3><p><b>'
+    f'{len(build_next)} eligible apps are missing from the catalog</b>. '
+    '<a href="#build-next">See the eligible-app list</a>.</p></article>'
+)
 
 gold_labeling = gold_provenance['gold_labels']
 scoreability_note = gold['rubric']['scoreable_coverage']
@@ -575,15 +593,23 @@ gold_panel_html = (
     f'({gold_quality["labeled_not_stated_in_docs"]} not stated, {gold_quality["labeled_unresolved"]} unresolved). '
     'Strict precision is correct / answered; half-credit is (correct + 0.5 × partial) / answered; fixed-half counts unanswered rows as zero.</div>'
     f'<p><b>Scoreability rule:</b> {esc(scoreability_note)}</p>'
+    f'<details><summary>AI source re-check: {len(spotcheck["rows"])} seeded rows; {spotcheck_counts.get("supported", 0)} supported, '
+    f'{spotcheck_counts.get("conflict", 0)} conflicts, {spotcheck_counts.get("partial_or_inconclusive", 0)} partial / inconclusive; not independent or rescored</summary>'
     f'<p>Separate AI source re-check of {len(spotcheck["rows"])} seeded rows: {spotcheck_counts.get("supported", 0)} supported, '
     f'{spotcheck_counts.get("conflict", 0)} current-source conflicts, {spotcheck_counts.get("partial_or_inconclusive", 0)} partial / inconclusive. '
     f'This was an AI source re-check, not a human agreement check; it was not independent of saved labels and did not rescore the frozen results. '
-    f'<a href="gold_source_recheck_v1.json">Open the row-level re-check</a>.</p>'
+    f'<a href="gold_source_recheck_v1.json">Open the row-level re-check</a>.</p></details>'
+    f'<details><summary>Current-source follow-up: {source_adjudication_count} conflicts reviewed; {len(pending_adjudications)} human decisions pending ({esc(pending_adjudication_names)})</summary>'
     f'<p>Current-source follow-up reviewed {source_adjudication_count} known conflicts against current first-party docs. '
     f'{len(pending_adjudications)} rows await a separate human decision ({esc(pending_adjudication_names)}); '
     f'the spot-check disagreement for {esc(spotcheck_dispute_names)} remains disclosed with its frozen label unchanged. '
     'This is separate from the frozen-excerpt score and does not silently change its labels. '
-    '<a href="current_source_adjudication_v1.json">Open the current-source adjudication ledger</a>.</p>'
+    '<a href="current_source_adjudication_v1.json">Open the current-source adjudication ledger</a>.</p></details>'
+    f'<details><summary>Author status check: {human_spotcheck["sample"]["n"]} rows '
+    f'({human_spotcheck["sample"]["selected_rows"]} selected, {human_spotcheck["sample"]["holdout_rows"]} holdout); '
+    f'{human_spotcheck_summary["status_matches"]}/{human_spotcheck_summary["clear_rows"]} clear matches, '
+    f'{human_spotcheck_summary["status_disagreements"]} disagreements, {human_spotcheck_summary["weak_or_ambiguous"]} weak; '
+    'same-author, non-blind, status-only; author had seen prior assistant answers</summary>'
     f'<p>Author-reported human check of {human_spotcheck["sample"]["n"]} rows sampled from '
     f'{human_spotcheck["sample"]["eligible_rows"]} eligible rows: '
     f'{human_spotcheck_summary["status_matches"]}/{human_spotcheck_summary["clear_rows"]} clear status matches '
@@ -595,7 +621,9 @@ gold_panel_html = (
     f'{human_spotcheck_summary["field_scope_mismatches"]} credential-gate quotes address authentication. '
     f'The author had seen prior assistant answers, so this check is not independent and was not blind. '
     f'<a href="human_gold_spotcheck_results_v1.json">Open the row-level human-check results</a>; '
-    f'<a href="human_gold_spotcheck_queue_v1.json">open the sample queue</a>.</p>'
+    f'<a href="human_gold_spotcheck_queue_v1.json">open the sample queue</a>.</p></details>'
+    f'<details><summary>{len(FIELD_LABELS)}-field score · secondary: {gold_all_final["correct"]}/{gold_all_final["n"]} strict; '
+    f'{gold_prec(gold_all_final, "half")} half-credit; n={gold_all_final["n"]}; catalog / verdict-rule fields added</summary>'
     f'<div class="notice"><b>{len(FIELD_LABELS)}-field score · secondary:</b> final coverage {gold_cov(gold_all_final)}; strict '
     f'{gold_prec(gold_all_final, "strict")}; half-credit {gold_prec(gold_all_final, "half")}; '
     f'n={gold_all_final["n"]}; fixed half over all {gold_all_final["total"]} rows {gold_fixed_half(gold_all_final)}. '
@@ -612,10 +640,11 @@ gold_panel_html = (
     '<div class="tablewrap"><table><thead><tr><th>Field</th><th>Pass</th><th>Coverage</th>'
     '<th>Strict (95% CI)</th><th>Half-credit</th><th>n</th>'
     '<th>correct / partial / incorrect</th><th>Abstained</th><th>Unresolved</th></tr></thead><tbody>'
-    + gold_field_rows + '</tbody></table></div></details>'
-    f'<h3>All-pass miss accounting</h3><p>{gold_miss_count} non-correct ratings across three passes split into '
+    + gold_field_rows + '</tbody></table></div></details></details>'
+    f'<details><summary>All-pass miss accounting: {gold_miss_count} non-correct ratings; {agent_miss_causes} agent-caused on scoreable gold, '
+    f'{gold_unscoreable_ratings} gold-unscoreable; not the final-pass error count</summary><p>{gold_miss_count} non-correct ratings across three passes split into '
     f'{agent_miss_causes} agent-caused misses on scoreable gold and {gold_unscoreable_ratings} gold-unscoreable ratings across passes '
-    f'({gold_quality["labeled_not_stated_in_docs"] + gold_quality["labeled_unresolved"]} distinct gold rows per pass). This is not the final-pass error count. Causes:</p><ul>' + gold_cause_rows + '</ul>'
+    f'({gold_quality["labeled_not_stated_in_docs"] + gold_quality["labeled_unresolved"]} distinct gold rows per pass). This is not the final-pass error count. Causes:</p><ul>' + gold_cause_rows + '</ul></details>'
     f'<details><summary>Inspect all {gold_miss_count} misses</summary><div class="tablewrap"><table class="reviewtable">'
     '<thead><tr><th>Pass</th><th>App / field</th><th>Agent answer</th><th>Gold</th><th>Rating</th><th>Cause</th></tr>'
     '</thead><tbody id="missrows"></tbody></table></div></details>'
@@ -625,6 +654,18 @@ gold_misses_payload = json.dumps(
     [{'pass': miss['pass'], 'app': miss['app'], 'field': miss['field'], 'agent': miss['agent'],
       'gold': miss['gold'], 'rating': miss['rating'], 'cause': miss['cause']} for miss in gold['misses']],
     ensure_ascii=False).replace('</', '<\\/')
+
+accuracy_summary_html = (
+    '<div class="cards accuracy-summary">'
+    f'<article class="card"><h3>Strict exact match</h3><p><b>{gold_judgment_final["correct"]}/{gold_judgment_final["scoreable"]}</b> scoreable rows · '
+    f'{gold_pct(gold_judgment_final["precision_strict"])} '
+    f'(Wilson 95% CI {gold_ci(gold_judgment_final)})</p></article>'
+    f'<article class="card"><h3>Scoreable coverage</h3><p><b>{gold_judgment_final["answered"]}/{gold_judgment_final["scoreable"]}</b> rows labeled found · '
+    f'{gold_pct(gold_judgment_final["scoreable_coverage"])}</p></article>'
+    f'<article class="card"><h3>Half-credit</h3><p><b>{gold_pct(gold_judgment_final["precision_half"])}</b> · '
+    f'{gold_judgment_final["correct"]} exact + 0.5 × {gold_judgment_final["partial"]} partial, over {gold_judgment_final["answered"]} answered</p></article>'
+    '</div>'
+)
 
 
 public_apps = []
@@ -700,6 +741,45 @@ page = page.replace('four-field headline', '__HAND_FIELD_COUNT__-field headline'
 page = page.replace('for all 60 claims', 'for all __SELECTED_TOTAL__ claims')
 page = page.replace('same 60 claims', 'same __SELECTED_TOTAL__ claims')
 page = page.replace('out of all 60', 'out of all __SELECTED_TOTAL__')
+page = page.replace(
+    'official docs for __APP_COUNT__ apps across __CATEGORY_COUNT__ categories to work out where an agent could really build something — and where it can\'t, and why.',
+    'I built an agent-led pipeline to research __APP_COUNT__ apps, then reviewed classifications and a documentation-status sample. Every claim below links to the first-party source used.')
+page = page.replace(
+    'I read the I built an agent-led pipeline to research __APP_COUNT__ apps, then reviewed classifications and a documentation-status sample. Every claim below links to the first-party source used. Every claim below links to the first-party source I used.',
+    'I built an agent-led pipeline to research __APP_COUNT__ apps, then reviewed classifications and a documentation-status sample. Every claim below links to the first-party source used.')
+page = page.replace(
+    '<a href="#evidence">Explore __APP_COUNT__ apps ↓</a>',
+    '<div class="hero-links"><a href="#evidence">Explore __APP_COUNT__ apps ↓</a><a href="#demo">Run the demo</a><a href="run_submission_demo_sample_v4.json">View captured output</a></div>')
+page = page.replace(
+    '</div></div></header><main>',
+    '</div></div><div class="cards conclusion-cards">__CONCLUSION_CARDS__</div></header><main>', 1)
+page = page.replace(
+    '<div class="metric"><strong>__GOLD_STRICT_PCT__</strong><small>AI-labeled 4-field gold · coverage __GOLD_COVERAGE_COUNT__/__GOLD_TOTAL__ sampled (__GOLD_COVERAGE_PCT__), __GOLD_COVERAGE_COUNT__/__GOLD_SCOREABLE__ scoreable (__GOLD_SCOREABLE_COVERAGE_PCT__) · half-credit __GOLD_HALF__ · n=__GOLD_N__ · __GOLD_INCORRECT__ incorrect · strict 95% CI __GOLD_STRICT_CI__</small></div>',
+    '<div class="metric"><strong>__GOLD_EXACT_COUNT__/__GOLD_SCOREABLE__ exact</strong><small>__GOLD_STRICT_PCT__ strict match to AI-labeled reference · __GOLD_PARTIAL__ partial · __GOLD_UNSCOREABLE_TOTAL__/__GOLD_TOTAL__ unscoreable · <a href="#accuracy">Accuracy lab</a></small></div>')
+page = page.replace(
+    '<div class="metric"><strong>__CHECKED__/__VENDOR_TOTAL__</strong><small>vendor-field answers with a cited source</small></div>',
+    '<div class="metric"><strong>__CHECKED__/__VENDOR_TOTAL__</strong><small>answers with citations — not accuracy</small></div>')
+page = page.replace(
+    '<h4>Production-gate concentration by category</h4><p>Category shares are calculated from the normalized prototype/production rows; an earlier estimate did not reconcile with those app-level fields.</p>__CATEGORY_GATE_LIST__<p>Apps that move from prototype free/trial access to a production gate (__DROP_COUNT__):</p>__DROP_LIST__<h4>Top 10 research-broader auth cross-checks</h4>__BROADER_APPS__',
+    '<details><summary>Production-gate categories: __PRODUCTION_GATE_TOTAL__ gates across __CATEGORY_COUNT__ categories; the named four account for __FOCUS_GATED__</summary><p>Category shares are calculated from normalized prototype/production rows; the earlier estimate did not reconcile with app-level fields.</p>__CATEGORY_GATE_LIST__</details><details><summary>Prototype-to-production migration: __DROP_COUNT__ apps</summary>__DROP_LIST__</details><details><summary>Top __BROADER_COUNT__ research-broader auth cross-checks</summary>__BROADER_APPS__</details>')
+page = page.replace(
+    '<h3>Runnable proof</h3><pre>python run_submission_demo_v4.py\npython run_pipeline.py --mode offline --app "Google Ads"\npython run_pipeline.py --mode live --app "Google Ads"</pre><p>The combined live command collects fresh evidence and separately revalidates the existing checked record; newly collected material still needs manual review. <code>run_one.py</code> only revalidates a saved checked record. Captured offline output: <a href="run_submission_demo_sample_v4.json">Google Ads demo sample</a>. The full source, saved passes, review logs and validation reports are in the <a href="__REPO__">source repository</a>. You can also export the checked JSON or CSV from the evidence table below.</p>',
+    '<h3 id="demo">Runnable proof</h3><p><a href="__REPO__#readme">Setup and README</a> · Offline demo first; no credentials required.</p><pre>python run_submission_demo_v4.py\npython run_pipeline.py --mode offline --app "Google Ads"</pre><p><a href="run_submission_demo_sample_v4.json">View captured Google Ads output</a>.</p><p><b>Live mode requires configuration.</b> It collects fresh evidence; manually review new evidence before relying on it. <code>run_one.py</code> revalidates an existing checked record; use <code>run_pipeline.py</code> for combined collection and saved-claim revalidation.</p><pre>python run_pipeline.py --mode live --app "Google Ads"</pre><p>The full source, saved passes, review logs and validation reports are in the <a href="__REPO__">source repository</a>. You can also export the checked JSON or CSV from the evidence table below.</p>')
+page = page.replace('<section><div class="kicker">04 / Accuracy lab</div>', '<section id="accuracy"><div class="kicker">04 / Accuracy lab</div>')
+page = page.replace('<div class="notice"><b>__HAND_FIELD_COUNT__ labeled fields:', '__ACCURACY_SUMMARY__<div class="notice"><b>__HAND_FIELD_COUNT__ labeled fields:', 1)
+page = page.replace(
+    '<div class="cards"><article class="card"><h3>Selected author review · __SELECTED_APPS__ apps</h3>',
+    '<details><summary>Selected and holdout author-review panels: __REVIEW_TOTAL__ claims; selected __SELECTED_ANSWERED__/__SELECTED_TOTAL__ answered; holdout __HOLDOUT_ANSWERED__/__HOLDOUT_TOTAL__; self-assessed, not independent</summary><div class="cards"><article class="card"><h3>Selected author review · __SELECTED_APPS__ apps</h3>', 1)
+page = page.replace('</div><h3>Hits and misses, shown honestly</h3>', '</div></details><h3>Hits and misses, shown honestly</h3>', 1)
+page = page.replace(
+    '<div class="tablewrap"><table><thead><tr><th>App</th><th>What it does</th>',
+    '<div class="tablewrap app-matrix-scroll"><table><thead><tr><th>App</th><th>What it does</th>', 1)
+page = page.replace(
+    '<td>${esc(verdictNames[a.fields.verdict.value]||a.fields.verdict.value)}</td><td><details>',
+    '<td>${esc(verdictNames[a.fields.verdict.value]||a.fields.verdict.value)}<small class="row-action" title="Blocker and next action"><b>Blocker:</b> ${esc(a.blocker)}<br><b>Next:</b> ${esc(a.next_action)}</small></td><td><details>')
+page = page.replace(
+    '</style></head>',
+    '.hero-links{display:flex;flex-wrap:wrap;gap:16px;font-size:12px}header .conclusion-cards{max-width:1200px;margin:34px auto 0}.conclusion-cards{margin:24px 0}.accuracy-summary{margin:18px 0}.row-action{display:block;max-width:190px;margin-top:6px;color:var(--muted);font-size:11px;line-height:1.35}.app-matrix-scroll{max-height:72vh;overscroll-behavior:contain}.app-matrix-scroll table{min-width:1080px}.app-matrix-scroll thead th{position:sticky;top:0;z-index:3}.app-matrix-scroll th:first-child,.app-matrix-scroll td:first-child{position:sticky;left:0;z-index:2;background:#fff;min-width:170px}.app-matrix-scroll thead th:first-child{z-index:4;background:#f8faf5}.app-matrix-scroll td:first-child{box-shadow:2px 0 3px #173b3112}.app-matrix-scroll thead th{box-shadow:0 1px 0 var(--line)}@media(max-width:520px){.hero-links{letter-spacing:0;font-size:11px}.row-action{max-width:140px}}\n</style></head>')
 page = page.replace('the 60 sampled claims', 'the __SELECTED_TOTAL__ sampled claims')
 page = page.replace('60 claims and counted', '__SELECTED_TOTAL__ claims and counted')
 page = page.replace('Inspect all 120 reviewed claims', 'Inspect all __REVIEW_TOTAL__ reviewed claims')
@@ -726,6 +806,7 @@ replacements = {
     '__HOLDOUT_TOTAL__': holdout['total_claims'], '__HOLDOUT_APPS__': len({record['app'] for record in holdout['records']}),
     '__HOLDOUT_SEED__': holdout_seed, '__REVIEW_TOTAL__': len(review_records),
     '__BLOCKER_TOTAL__': blocker_total, '__BLOCKER_ROWS__': blocker_rows,
+    '__CONCLUSION_CARDS__': conclusion_cards_html,
     '__ACCESS_ROWS__': access_table_rows,
     '__PRODUCTION_GATE_TOTAL__': production_gate_total,
     '__PRODUCTION_GATE_TEXT__': production_gate_text,
@@ -740,6 +821,7 @@ replacements = {
     '__FOCUS_CATEGORIES__': len(focus_categories), '__FOCUS_GATED__': len(focus_gated), '__FOCUS_GATE_PCT__': pct(len(focus_gated), production_gate_total), '__FOCUS_CATEGORY_SHARE__': pct(len(focus_categories), category_count),
     '__DROP_COUNT__': len(production_gated_names), '__DROP_LIST__': production_drop_html,
     '__CATEGORY_GATE_LIST__': category_gate_html, '__BROADER_APPS__': broader_html,
+    '__BROADER_COUNT__': len(broader_apps), '__FOCUS_GATED__': len(focus_gated),
     '__MANUAL_LOG_TOTAL__': manual_log_total,
     '__ACCESS_DECISIONS__': human_log_counts.get('prototype_access/production_access', 0),
     '__MCP_DECISIONS__': human_log_counts.get('mcp_tier', 0),
@@ -770,6 +852,7 @@ replacements = {
     '__GOLD_SCOREABLE__': gold_judgment_final['scoreable'],
     '__GOLD_SCOREABLE_COVERAGE_PCT__': gold_pct(gold_judgment_final['scoreable_coverage']),
     '__GOLD_STRICT_PCT__': gold_pct(gold_judgment_final['precision_strict']),
+    '__GOLD_EXACT_COUNT__': gold_judgment_final['correct'], '__GOLD_PARTIAL__': gold_judgment_final['partial'],
     '__GOLD_STRICT__': gold_prec(gold_judgment_final, 'strict'),
     '__GOLD_STRICT_CI__': gold_ci(gold_judgment_final), '__GOLD_HALF__': gold_pct(gold_judgment_final['precision_half']),
     '__GOLD_N__': gold_judgment_final['n'], '__GOLD_INCORRECT__': gold_judgment_final['incorrect'],
@@ -804,6 +887,7 @@ replacements = {
     '__MCP_SERVER__': mcp.get('vendor_server', 0), '__MCP_CLIENT__': mcp.get('client_only', 0),
     '__MCP_NO_SERVER__': mcp.get('no_vendor_server_documented', 0), '__MCP_UNKNOWN__': mcp.get('unknown', 0),
     '__EASY_WINS__': easy_win_html, '__MATRIX__': matrix, '__COVERAGE_ROWS__': coverage_rows, '__EXAMPLES__': example_cards,
+    '__ACCURACY_SUMMARY__': accuracy_summary_html,
     '__MOVEMENT__': movement_html,
     '__SELECTED_ANSWERED__': selected['answered'], '__SELECTED_COVERAGE__': pct(selected['answered'], 60),
     '__SELECTED_RATINGS__': ', '.join(f'{key} {value}' for key, value in selected['ratings'].items()),
@@ -818,7 +902,7 @@ replacements = {
     '__SDK_AGREEMENT__': f"{sdk_check['listing_agreement']}/{sdk_check['apps_checked']}",
     '__SDK_TOOLS_COMPARED__': sdk_check['tools_compared'], '__SDK_TOOLS_MATCH__': sdk_check['tools_match'],
 }
-actor_insert_before = '<section><div class="kicker">04 / Accuracy lab'
+actor_insert_before = '<section id="accuracy"><div class="kicker">04 / Accuracy lab'
 assert page.count(actor_insert_before) == 1
 page = page.replace(actor_insert_before, actor_attribution_html + actor_insert_before, 1)
 for key, value in replacements.items():

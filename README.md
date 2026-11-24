@@ -40,13 +40,13 @@ Counts below are generated from the saved gold source, pass-3 ratings, author-ch
 
 ### Human-in-the-loop work
 
-- The author log contains **43 authored classification overrides**, separate from the gold labels and the status spot-check.
+- The author log contains **43 authored classification overrides**, separate from the gold labels and the status spot-check. The 48 model-log decisions and 43 override records are different record sets.
 - The author checked **24 documentation-status rows** (12 selected, 12 holdout), same-author, non-blind, and status-only: **15/23 clear matches (65.2%), 8 disagreements, 1 weak row**. This is a separate check event; it did not relabel the gold set.
 
 ### Hits, misses, and decisions still needed
 
-- **Agent:** 37 exact hits, 23 partial answers, 0 incorrect. The 20 unresolved ratings are not agent errors: 14 references are not stated and 6 are unresolved.
-- **Human status check:** 15 hits, 8 clear misses, 1 weak row across 24 checks; clear-only agreement is 15/23 (65.2%).
+- **Final checked pipeline output:** 37 exact hits, 23 partial answers, 0 incorrect. The 20 ratings cannot be assessed against this reference and are excluded from the accuracy denominator (14 not stated, 6 unresolved).
+- **Human status check:** 15 agreements, 8 disagreements with the frozen AI labels, 1 ambiguous row across 24 checks; clear-only agreement is 15/23 (65.2%).
 - Improve excerpts or leave 20 frozen references unscored (14 not stated, 6 unresolved).
 - Adjudicate R032 Notion, R059 YouTube Transcript; review the frozen conflicts before issuing a corrected-gold version.
 - Review the author/gold disagreement for R072 Snowflake; do not silently change the frozen label.

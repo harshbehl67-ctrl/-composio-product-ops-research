@@ -21,6 +21,7 @@ def derive_attribution(root: Path) -> dict:
     provenance = _read_json(root, 'gold_provenance_v1.json')
     human = _read_json(root, 'human_gold_spotcheck_results_v1.json')
     overrides = _read_json(root, 'classification_overrides_v1.json')
+    human_log = _read_json(root, 'human_log.json')
     adjudication = _read_json(root, 'current_source_adjudication_v1.json')
 
     with (root / 'gold_template.csv').open(encoding='utf-8', newline='') as handle:
@@ -86,6 +87,7 @@ def derive_attribution(root: Path) -> dict:
             'pipeline_derived_app_count': gold['apps'],
             'pipeline_derived_fields': rule_fields,
             'authored_classification_override_records': len(override_rows),
+            'model_log_decision_records': len(human_log['entries']),
         },
         'agent_pass3': {
             'total_judgment_rows': pass3['total'],
@@ -164,21 +166,24 @@ def render_html(view: dict) -> str:
         f'{scores["gold_unscoreable_ratings"]} are unscoreable from the frozen reference.</p>'
         '</article><article class="card"><h3>Human-in-the-loop work</h3>'
         f'<p>The author log contains <b>{agent["authored_classification_override_records"]} authored classification overrides</b>; '
-        'these are separate from the gold labels and the spot-check.</p>'
+        f'these are separate from the gold labels and the spot-check. The {agent["model_log_decision_records"]} decisions in the model log '
+        f'and the {agent["authored_classification_override_records"]} authored override records are different record sets.</p>'
         f'<p>The author then checked <b>{human["rows_checked"]} documentation-status rows</b> '
         f'({human["selected_rows"]} selected, {human["holdout_rows"]} holdout). '
         f'This was same-author, non-blind, and status-only: {human["hits"]}/{human["hits"] + human["clear_misses"]} '
-        f'clear status matches ({human["clear_status_agreement"]:.1%}), {human["clear_misses"]} disagreements, '
-        f'{human["weak"]} weak row. The check is recorded separately; it did not relabel the gold set.</p>'
+        f'clear status matches ({human["clear_status_agreement"]:.1%}): {human["hits"]} agreements, '
+        f'{human["clear_misses"]} disagreements with the frozen AI labels, {human["weak"]} ambiguous row. '
+        'The check is recorded separately; it did not relabel the gold set.</p>'
         '</article></div>'
         '<h3>Hits and misses by actor</h3><div class="cards">'
-        '<article class="card"><h3>Agent · pass 3</h3>'
+        '<article class="card"><h3>Final checked pipeline output</h3>'
         f'<p><b>{scores["exact_hits"]} exact hits</b>; {scores["partial"]} partial answers; '
         f'{scores["incorrect"]} incorrect answers.</p>'
-        f'<p><b>{gold_unscoreable} unresolved ratings</b> are not agent errors: the frozen reference is '
-        f'{scores["gold_not_stated"]} not-stated and {scores["gold_unresolved"]} unresolved rows.</p></article>'
+        f'<p><b>{gold_unscoreable} ratings cannot be assessed against this reference; excluded from the accuracy denominator.</b> '
+        f'The frozen reference is {scores["gold_not_stated"]} not-stated and {scores["gold_unresolved"]} unresolved rows.</p></article>'
         '<article class="card"><h3>Human status check</h3>'
-        f'<p><b>{human["hits"]} hits</b>, {human["clear_misses"]} clear misses, {human["weak"]} weak row '
+        f'<p><b>{human["hits"]} agreements</b>, {human["clear_misses"]} disagreements with the frozen AI labels, '
+        f'{human["weak"]} ambiguous row '
         f'across {human["rows_checked"]} checks. Agreement uses only clear comparisons: '
         f'{human["hits"]}/{human["hits"] + human["clear_misses"]} = {human["clear_status_agreement"]:.1%}.</p>'
         '</article></div>'
@@ -216,13 +221,13 @@ def render_readme(view: dict) -> str:
         '',
         '### Human-in-the-loop work',
         '',
-        f'- The author log contains **{agent["authored_classification_override_records"]} authored classification overrides**, separate from the gold labels and the status spot-check.',
+        f'- The author log contains **{agent["authored_classification_override_records"]} authored classification overrides**, separate from the gold labels and the status spot-check. The {agent["model_log_decision_records"]} model-log decisions and {agent["authored_classification_override_records"]} override records are different record sets.',
         f'- The author checked **{human["rows_checked"]} documentation-status rows** ({human["selected_rows"]} selected, {human["holdout_rows"]} holdout), same-author, non-blind, and status-only: **{human["hits"]}/{human["hits"] + human["clear_misses"]} clear matches ({human["clear_status_agreement"]:.1%}), {human["clear_misses"]} disagreements, {human["weak"]} weak row**. This is a separate check event; it did not relabel the gold set.',
         '',
         '### Hits, misses, and decisions still needed',
         '',
-        f'- **Agent:** {scores["exact_hits"]} exact hits, {scores["partial"]} partial answers, {scores["incorrect"]} incorrect. The {scores["gold_unscoreable_ratings"]} unresolved ratings are not agent errors: {scores["gold_not_stated"]} references are not stated and {scores["gold_unresolved"]} are unresolved.',
-        f'- **Human status check:** {human["hits"]} hits, {human["clear_misses"]} clear misses, {human["weak"]} weak row across {human["rows_checked"]} checks; clear-only agreement is {human["hits"]}/{human["hits"] + human["clear_misses"]} ({human["clear_status_agreement"]:.1%}).',
+        f'- **Final checked pipeline output:** {scores["exact_hits"]} exact hits, {scores["partial"]} partial answers, {scores["incorrect"]} incorrect. The {scores["gold_unscoreable_ratings"]} ratings cannot be assessed against this reference and are excluded from the accuracy denominator ({scores["gold_not_stated"]} not stated, {scores["gold_unresolved"]} unresolved).',
+        f'- **Human status check:** {human["hits"]} agreements, {human["clear_misses"]} disagreements with the frozen AI labels, {human["weak"]} ambiguous row across {human["rows_checked"]} checks; clear-only agreement is {human["hits"]}/{human["hits"] + human["clear_misses"]} ({human["clear_status_agreement"]:.1%}).',
         f'- Improve excerpts or leave {needed["gold_unscoreable_rows"]} frozen references unscored ({needed["gold_not_stated"]} not stated, {needed["gold_unresolved"]} unresolved).',
         f'- Adjudicate {pending_names}; review the frozen conflicts before issuing a corrected-gold version.',
         f'- Review the author/gold disagreement for {disputed_names}; do not silently change the frozen label.',

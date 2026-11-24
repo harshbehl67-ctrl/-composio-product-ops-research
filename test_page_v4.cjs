@@ -49,16 +49,49 @@ let browser;
     }
     const actorBox = await actorView.evaluate(element => ({scroll: element.scrollWidth, client: element.clientWidth}));
     if (actorBox.scroll > actorBox.client + 1) throw Error(`Actor view overflows horizontally at ${width}px`);
+    const conclusionBlock = page.locator('header .conclusion-cards');
+    if (await conclusionBlock.count() !== 1 ||
+        await conclusionBlock.locator('#conclusion-prototype').count() !== 1 ||
+        await page.locator('main .conclusion-cards').count() !== 0) {
+      throw Error('Conclusion cards must be anchored inside the hero header');
+    }
+    const conclusionBox = await conclusionBlock.boundingBox();
+    const viewportHeight = await page.evaluate(() => window.innerHeight);
+    if (!conclusionBox || conclusionBox.y < 0 || conclusionBox.y >= viewportHeight) {
+      throw Error(`Hero conclusion block starts outside the first ${width}px viewport: ${conclusionBox?.y}`);
+    }
     await page.locator('#rows tr').first().waitFor();
     const pageCopy = await page.locator('body').innerText();
     if (!pageCopy.includes('python run_pipeline.py --mode live --app "Google Ads"')) throw Error('Combined live pipeline command is missing');
-    if (!pageCopy.includes('run_one.py only revalidates a saved checked record')) throw Error('run_one boundary is missing');
+    if (!pageCopy.includes('run_one.py revalidates an existing checked record')) throw Error('run_one boundary is missing');
+    if (!pageCopy.includes('37/60 exact') || !pageCopy.includes('61.7% strict match to AI-labeled reference') ||
+        !pageCopy.includes('20/80 unscoreable') || !pageCopy.includes('answers with citations — not accuracy')) {
+      throw Error('Accuracy and citation headline is incomplete');
+    }
+    if (!pageCopy.includes('78 prototype paths → 62 production paths; 16 apps gain a gate') ||
+        !pageCopy.includes('4 categories hold 24 of 36 production gates') ||
+        !pageCopy.includes('7 eligible apps are missing from the catalog')) throw Error('Conclusion cards are incomplete');
+    const heroLinks = (await page.locator('header .hero-links').innerText()).toLowerCase();
+    if (await page.locator('header .hero-links a[href="#evidence"]').count() !== 1 ||
+        !heroLinks.includes('explore') || !heroLinks.includes('run the demo') ||
+        !heroLinks.includes('view captured output')) {
+      throw Error('Hero navigation links are incomplete');
+    }
     if (pageCopy.includes('context-aware extraction → independent review')) throw Error('Unsupported independent-review claim remains');
-    if (!pageCopy.includes('rows await a separate human decision')) throw Error('Pending gold adjudications are not disclosed');
+    if (!pageCopy.includes('human decisions pending') || !pageCopy.includes('R032 Notion') ||
+        !pageCopy.includes('R059 YouTube Transcript')) throw Error('Pending gold adjudications are not disclosed');
     if (!pageCopy.includes('For the four judgment fields, answered / rows with gold_status="found"')) throw Error('Four-field scoreable rubric is missing from page');
     if (await page.locator('#rows tr').count() !== 100) throw Error('Wrong initial count');
     if (await page.locator('#rows .purpose').count() !== 100) throw Error('App purpose missing');
     if (await page.locator('#rows td p').count() !== 0) throw Error('Paragraph found in app table cell');
+    if (await page.locator('#rows .row-action').count() !== 100) throw Error('Visible blocker/next-action line missing');
+    const sticky = await page.locator('.app-matrix-scroll thead th').first().evaluate(el => getComputedStyle(el).position);
+    const stickyApp = await page.locator('.app-matrix-scroll tbody td').first().evaluate(el => getComputedStyle(el).position);
+    if (sticky !== 'sticky' || stickyApp !== 'sticky') throw Error('Matrix header/app column are not sticky');
+    for (const summary of ['60 eligible apps; rule:', '16 apps', 'Top 10 research-broader auth cross-checks',
+      'All-pass miss accounting:']) {
+      if (!pageCopy.includes(summary)) throw Error(`Collapsed audit summary missing: ${summary}`);
+    }
     const firstDataRow = await page.locator('#rows tr').first();
     if (await firstDataRow.locator('td .chip').count() < 2) throw Error('Normalized auth/MCP chips missing');
     if (!['Hosted actions', 'Docs / read-only', 'Local', 'Beta / EAP', 'Prelaunch', 'None documented', 'Unresolved'].includes(
@@ -147,7 +180,7 @@ let browser;
     if (await page.locator('#reviewrows tr').count() !== 60) throw Error('Review cohort filter failed');
     if (errors.length) throw Error(errors.join('\n'));
     await page.screenshot({path: `page-v4-${width}.png`, fullPage: false});
-    console.log(`PASS ${width}px: 100 rows, prototype/production filters, purpose limit, empty search, sort, filtered JSON/CSV export, keyboard details, no horizontal overflow, 60 holdout reviews, no script errors`);
+    console.log(`PASS ${width}px: hero conclusion cards inside first viewport at y=${Math.round(conclusionBox.y)}px; 100 rows, prototype/production filters, purpose limit, empty search, sort, filtered JSON/CSV export, keyboard details, no horizontal overflow, 60 holdout reviews, no script errors`);
     await page.close();
   }
   } finally {
